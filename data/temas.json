@@ -5343,5 +5343,338 @@
         "conteudo": "Sintomas neurológicos focais novos, mesmo em paciente com diagnóstico prévio de transtorno conversivo, devem ser reavaliados clinicamente antes de serem automaticamente atribuídos à condição psiquiátrica de base, para não incorrer no erro de atribuição prematura."
       }
     ]
+  },
+  {
+    "id": "otites-media-externa",
+    "area": "residencia",
+    "categoria": "Otorrinolaringologia",
+    "titulo": "Otite Média Aguda e Otite Externa",
+    "resumo": "Diferenciação pela dor à tração do pavilhão, tratamento antibiótico da OMA e a mastoidite como complicação temida.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAP Clinical Practice Guideline for Acute Otitis Media",
+    "mnemonicos": [
+      {
+        "palavra": "Tração dói na externa",
+        "explicacao": "Dor à tração do pavilhão auricular e à pressão do trago é característica da otite EXTERNA — na otite média aguda, essas manobras não costumam desencadear dor."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Otite média aguda (OMA)",
+        "conteudo": "Inflamação/infecção do ouvido médio, mais comum em crianças pequenas (trompa de Eustáquio mais curta e horizontalizada), geralmente secundária a infecção viral de vias aéreas superiores. Otoscopia com membrana timpânica hiperemiada, abaulada, com perda do triângulo luminoso. Principais agentes: Streptococcus pneumoniae, Haemophilus influenzae não tipável e Moraxella catarrhalis."
+      },
+      {
+        "titulo": "Tratamento da OMA",
+        "conteudo": "A analgesia é essencial em todos os casos. A observação vigilante (sem antibiótico imediato) é aceitável em crianças acima de 2 anos, com sintomas leves e diagnóstico incerto. Amoxicilina em dose elevada é a primeira escolha antibiótica quando indicada."
+      },
+      {
+        "titulo": "Otite externa aguda",
+        "conteudo": "Infecção do canal auditivo externo (\"ouvido de nadador\"), associada a umidade prolongada, trauma local (cotonetes) ou uso de próteses auditivas. Dor à tração do pavilhão auricular e à pressão do trago é o achado que a diferencia da OMA. Tratamento tópico com gotas otológicas (antibiótico +/- corticoide), evitando manipulação do canal."
+      },
+      {
+        "titulo": "Complicações",
+        "conteudo": "A mastoidite aguda (extensão da infecção da OMA para a mastoide, com dor/edema/hiperemia retroauricular e deslocamento do pavilhão) é a complicação supurativa mais temida da OMA, exigindo antibioticoterapia intravenosa e eventual drenagem."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Edema retroauricular com deslocamento do pavilhão auricular</span> associado a otite sugere mastoidite aguda — exige avaliação urgente e antibioticoterapia intravenosa."
+      }
+    ]
+  },
+  {
+    "id": "rinossinusite-faringite",
+    "area": "residencia",
+    "categoria": "Otorrinolaringologia",
+    "titulo": "Rinossinusite Aguda e Faringite",
+    "resumo": "Sinais que sugerem etiologia bacteriana na rinossinusite e os critérios de Centor na faringite estreptocócica.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Otorrinolaringologia; IDSA Clinical Practice Guideline for Group A Streptococcal Pharyngitis",
+    "mnemonicos": [
+      {
+        "palavra": "Centor",
+        "explicacao": "Critérios de Centor para probabilidade de faringite estreptocócica: febre, exsudato amigdaliano, linfadenopatia cervical anterior dolorosa, ausência de tosse — quanto mais critérios presentes, maior a probabilidade de etiologia estreptocócica."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Rinossinusite viral x bacteriana",
+        "conteudo": "A maioria dos quadros de rinossinusite aguda é viral, autolimitada em 7-10 dias. Sinais sugestivos de etiologia bacteriana incluem sintomas persistentes além de 10 dias sem melhora, piora após melhora inicial (padrão bifásico), ou sintomas graves desde o início (febre alta e secreção purulenta com dor facial por pelo menos 3-4 dias consecutivos)."
+      },
+      {
+        "titulo": "Tratamento da rinossinusite bacteriana",
+        "conteudo": "Amoxicilina (associada a clavulanato em áreas de maior resistência ou fatores de risco) é a primeira escolha. A maioria dos casos, mesmo bacterianos, tem resolução espontânea, justificando conduta expectante em quadros leves."
+      },
+      {
+        "titulo": "Faringite estreptocócica",
+        "conteudo": "Causada pelo Streptococcus pyogenes, mais comum em crianças de 5-15 anos. Os critérios de Centor (febre, exsudato amigdaliano, linfadenopatia cervical anterior dolorosa, ausência de tosse) auxiliam na probabilidade pré-teste. O tratamento com penicilina/amoxicilina previne complicações supurativas e não supurativas (febre reumática, glomerulonefrite pós-estreptocócica)."
+      },
+      {
+        "titulo": "Diferenciação viral x bacteriana",
+        "conteudo": "Presença de tosse, coriza e conjuntivite favorece etiologia viral. Ausência de tosse com exsudato e linfadenopatia dolorosa favorece etiologia estreptocócica — teste rápido de antígeno ou cultura de orofaringe confirmam quando disponíveis."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Trismo, sialorreia e voz \"em batata quente\"</span> associados a dor de garganta intensa unilateral sugerem abscesso periamigdaliano — exige avaliação otorrinolaringológica urgente e possível drenagem."
+      }
+    ]
+  },
+  {
+    "id": "perda-auditiva",
+    "area": "residencia",
+    "categoria": "Otorrinolaringologia",
+    "titulo": "Perdas Auditivas: Condutiva x Neurossensorial",
+    "resumo": "Interpretação dos testes de Weber e Rinne, presbiacusia, PAIR e a emergência da surdez súbita.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAO-HNS Clinical Practice Guideline: Sudden Hearing Loss",
+    "mnemonicos": [
+      {
+        "palavra": "Weber lateraliza para o pior na condutiva",
+        "explicacao": "No teste de Weber, o som é percebido mais forte no ouvido PIOR quando a perda é condutiva, e no ouvido MELHOR quando a perda é neurossensorial."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Classificação geral",
+        "conteudo": "Perda auditiva condutiva: problema na condução do som até a cóclea — ouvido externo/médio (ex.: cerume impactado, otite média com efusão, otosclerose). Perda auditiva neurossensorial: problema na cóclea ou no nervo/vias auditivas centrais (ex.: presbiacusia, exposição a ruído, ototoxicidade)."
+      },
+      {
+        "titulo": "Testes de diapasão",
+        "conteudo": "Weber (diapasão no vértex) lateraliza para o ouvido PIOR na perda condutiva, e para o ouvido MELHOR na perda neurossensorial. Rinne compara condução aérea x óssea no mesmo ouvido — Rinne positivo (condução aérea melhor que a óssea) é o padrão normal, mantido na perda neurossensorial; Rinne negativo (condução óssea melhor que a aérea) sugere perda condutiva."
+      },
+      {
+        "titulo": "Presbiacusia",
+        "conteudo": "Perda auditiva neurossensorial bilateral e simétrica associada ao envelhecimento, predominando em frequências agudas, dificultando especialmente a compreensão de fala em ambientes ruidosos."
+      },
+      {
+        "titulo": "Perda auditiva induzida por ruído (PAIR)",
+        "conteudo": "Perda neurossensorial por exposição a ruído intenso (ocupacional ou recreacional), tipicamente com entalhe característico na frequência de 4-6 kHz na audiometria, irreversível e não progressiva após cessada a exposição."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Perda auditiva neurossensorial súbita e unilateral</span> é emergência otológica (surdez súbita), com janela terapêutica estreita para corticoterapia — deve ser encaminhada e tratada o mais rápido possível."
+      }
+    ]
+  },
+  {
+    "id": "vertigem-vppb-meniere",
+    "area": "residencia",
+    "categoria": "Otorrinolaringologia",
+    "titulo": "Vertigem: VPPB e Doença de Menière",
+    "resumo": "Diferenciação entre vertigem periférica e central, e entre VPPB, Menière e neurite vestibular.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAO-HNS Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo",
+    "mnemonicos": [
+      {
+        "palavra": "Segundos é VPPB, dias é neurite",
+        "explicacao": "VPPB: episódios de vertigem que duram apenas segundos, desencadeados pela mudança de posição da cabeça. Neurite vestibular: vertigem contínua e intensa, durando dias."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Vertigem periférica x central",
+        "conteudo": "Periférica (labiríntica): geralmente mais intensa, associada a náusea/vômito importantes, sem outros sinais neurológicos focais. Central (tronco encefálico/cerebelo): costuma ser menos intensa, mas associada a outros sinais neurológicos (diplopia, disartria, ataxia, fraqueza) — a presença destes exige investigação urgente de causa vascular central."
+      },
+      {
+        "titulo": "Vertigem posicional paroxística benigna (VPPB)",
+        "conteudo": "Causa mais comum de vertigem periférica, por deslocamento de otólitos no canal semicircular (mais comumente o posterior). Episódios breves (segundos) desencadeados por mudança de posição da cabeça. A manobra de Dix-Hallpike reproduz o nistagmo característico e confirma o diagnóstico; tratamento com manobra de reposicionamento canalicular (Epley), com alta taxa de resolução."
+      },
+      {
+        "titulo": "Doença de Menière",
+        "conteudo": "Tríade clássica de vertigem episódica (minutos a horas), perda auditiva neurossensorial flutuante e zumbido, frequentemente associada a sensação de plenitude aural. Decorre de hidropsia endolinfática; tratamento com restrição de sódio, diuréticos e, em casos refratários, procedimentos mais invasivos."
+      },
+      {
+        "titulo": "Neurite vestibular",
+        "conteudo": "Vertigem intensa, contínua, de início agudo, durando dias, frequentemente precedida de quadro viral. Sem perda auditiva (neurite vestibular) ou com perda auditiva associada (labirintite) — diferencia-se da VPPB pela duração muito mais prolongada de cada episódio."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Vertigem associada a cefaleia intensa súbita, diplopia, disartria ou ataxia de marcha</span> sugere causa central (AVC de fossa posterior) até prova em contrário e exige neuroimagem urgente."
+      }
+    ]
+  },
+  {
+    "id": "urgencias-orl-epistaxe-corpo-estranho",
+    "area": "residencia",
+    "categoria": "Otorrinolaringologia",
+    "titulo": "Urgências em ORL: Epistaxe e Corpos Estranhos",
+    "resumo": "Manejo da epistaxe anterior x posterior e reconhecimento de corpo estranho nasal/auricular em crianças.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Otorrinolaringologia; American Academy of Otolaryngology — Clinical Practice Guideline: Nosebleed",
+    "mnemonicos": [
+      {
+        "palavra": "Kiesselbach na frente",
+        "explicacao": "O plexo de Kiesselbach, na porção anterior do septo nasal, é a origem da grande maioria das epistaxes — por isso a compressão digital das asas do nariz resolve a maioria dos casos."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Epistaxe anterior",
+        "conteudo": "Origem mais comum de sangramento nasal, tipicamente do plexo de Kiesselbach. Geralmente controlada com compressão digital direta das asas nasais por 10-15 minutos contínuos, com a cabeça inclinada levemente para frente."
+      },
+      {
+        "titulo": "Epistaxe posterior",
+        "conteudo": "Sangramento mais volumoso e de mais difícil controle, mais comum em idosos e hipertensos. Pode exigir tamponamento nasal posterior ou balão específico, e frequentemente necessita avaliação otorrinolaringológica especializada."
+      },
+      {
+        "titulo": "Corpo estranho em nariz/ouvido/via aérea",
+        "conteudo": "Situação frequente em crianças pequenas. Corpo estranho nasal pode causar rinorreia unilateral fétida persistente como único sinal. Corpo estranho em via aérea inferior com obstrução completa é emergência (manobra de Heimlich). Baterias de botão em nariz/ouvido são emergência pela lesão tecidual rápida, exigindo remoção imediata."
+      },
+      {
+        "titulo": "Manejo geral",
+        "conteudo": "A remoção de corpo estranho deve ser feita por profissional com instrumental e visualização adequados, evitando manipulação às cegas que pode empurrar o objeto mais profundamente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Rinorreia unilateral fétida persistente em criança</span> deve levantar suspeita de corpo estranho nasal esquecido, mesmo sem história de introdução relatada pelos cuidadores."
+      }
+    ]
+  },
+  {
+    "id": "olho-vermelho-diagnostico-diferencial",
+    "area": "residencia",
+    "categoria": "Oftalmologia",
+    "titulo": "Olho Vermelho: Diagnóstico Diferencial",
+    "resumo": "Diferenciação entre conjuntivite, ceratite, uveíte anterior e glaucoma agudo de ângulo fechado.",
+    "revisado": false,
+    "fonte": "Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology Preferred Practice Pattern — Conjunctivitis",
+    "mnemonicos": [
+      {
+        "palavra": "Dor e visão ruim = grave",
+        "explicacao": "Olho vermelho SEM dor significativa e SEM alteração da visão costuma ser conjuntivite (benigna); dor importante, fotofobia ou queda da acuidade visual apontam para uma causa mais grave que exige avaliação urgente."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Conjuntivite",
+        "conteudo": "Hiperemia conjuntival difusa, secreção (purulenta na bacteriana, aquosa/mucoide na viral, associada a prurido intenso na alérgica), geralmente sem dor significativa nem alteração da acuidade visual — a mais comum e menos grave causa de olho vermelho."
+      },
+      {
+        "titulo": "Ceratite",
+        "conteudo": "Inflamação/infecção da córnea, com dor importante, fotofobia, sensação de corpo estranho e possível opacidade/infiltrado corneano visível. Ceratite herpética e por uso inadequado de lentes de contato são causas relevantes."
+      },
+      {
+        "titulo": "Uveíte anterior (irite)",
+        "conteudo": "Dor ocular, fotofobia importante, hiperemia predominantemente perilímbica (\"flush ciliar\"), miose e visão turva. Associada a doenças sistêmicas (espondiloartrites, doenças autoimunes) em parte dos casos."
+      },
+      {
+        "titulo": "Glaucoma agudo de ângulo fechado",
+        "conteudo": "Emergência oftalmológica com dor ocular intensa, cefaleia, náusea/vômito, visão turva com halos coloridos ao redor de luzes, pupila em midríase média fixa e não reagente, e globo ocular endurecido à palpação — a pressão intraocular muito elevada exige tratamento imediato para evitar perda visual permanente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Dor ocular intensa associada a diminuição da acuidade visual, fotofobia importante ou pupila irregular/não reagente</span> discrimina causas graves de olho vermelho da conjuntivite simples, e exige avaliação oftalmológica urgente."
+      }
+    ]
+  },
+  {
+    "id": "catarata-erros-refrativos",
+    "area": "residencia",
+    "categoria": "Oftalmologia",
+    "titulo": "Catarata e Erros Refrativos",
+    "resumo": "Catarata como principal causa de cegueira reversível, e a fisiopatologia de miopia, hipermetropia, astigmatismo e presbiopia.",
+    "revisado": false,
+    "fonte": "Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology — Preferred Practice Pattern: Cataract",
+    "mnemonicos": [
+      {
+        "palavra": "Míope perto, Hipermétrope longe",
+        "explicacao": "O míope enxerga melhor de PERTO (imagem forma-se antes da retina); o hipermétrope, com a idade, perde a compensação e passa a ter dificuldade também de perto."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Catarata",
+        "conteudo": "Opacificação do cristalino, principal causa de cegueira reversível no mundo. O fator de risco mais importante é a idade avançada, mas também pode ser congênita, traumática, secundária a diabetes ou uso prolongado de corticoide. Quadro clínico de perda visual progressiva e indolor. O tratamento definitivo é cirúrgico (facoemulsificação com implante de lente intraocular)."
+      },
+      {
+        "titulo": "Miopia",
+        "conteudo": "Dificuldade para enxergar objetos distantes (olho \"longo demais\" ou córnea muito curva, imagem forma-se antes da retina). Corrigida com lentes divergentes (côncavas, negativas)."
+      },
+      {
+        "titulo": "Hipermetropia",
+        "conteudo": "Dificuldade para enxergar objetos próximos, mais evidente com a idade pela perda da capacidade de acomodação (olho \"curto demais\", imagem forma-se atrás da retina). Corrigida com lentes convergentes (convexas, positivas)."
+      },
+      {
+        "titulo": "Astigmatismo e presbiopia",
+        "conteudo": "Astigmatismo decorre de curvatura corneana irregular, causando distorção da imagem em qualquer distância, corrigido com lentes cilíndricas. Presbiopia é a perda fisiológica da capacidade de acomodação relacionada à idade (geralmente a partir dos 40-45 anos), corrigida com lentes de adição positiva."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Perda visual súbita e indolor (diferente da progressão lenta da catarata) deve levantar suspeita de causas vasculares retinianas ou de nervo óptico, exigindo avaliação oftalmológica de urgência, e não ser atribuída a catarata."
+      }
+    ]
+  },
+  {
+    "id": "retinopatia-diabetica-hipertensiva",
+    "area": "residencia",
+    "categoria": "Oftalmologia",
+    "titulo": "Retinopatia Diabética e Hipertensiva",
+    "resumo": "Classificação da retinopatia diabética, rastreamento anual obrigatório e achados da retinopatia hipertensiva.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Diabetes; Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology — Diabetic Retinopathy PPP",
+    "mnemonicos": [
+      {
+        "palavra": "Assintomática até tarde",
+        "explicacao": "A retinopatia diabética costuma ser assintomática até estágios avançados — por isso o rastreamento anual com fundoscopia é indicado mesmo sem qualquer queixa visual do paciente diabético."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Retinopatia diabética",
+        "conteudo": "Complicação microvascular mais comum do diabetes de longa duração, principal causa de cegueira evitável em adultos em idade produtiva. Classificada em não proliferativa (microaneurismas, hemorragias em chama de vela, exsudatos) e proliferativa (neovascularização, maior risco de hemorragia vítrea e descolamento de retina tracional)."
+      },
+      {
+        "titulo": "Edema macular diabético",
+        "conteudo": "Pode ocorrer em qualquer estágio da retinopatia diabética e é a principal causa de perda visual relacionada ao diabetes, independente da progressão para a forma proliferativa. Tratamento com injeções intravítreas de anti-VEGF ou fotocoagulação a laser."
+      },
+      {
+        "titulo": "Rastreamento",
+        "conteudo": "O paciente diabético deve realizar exame de fundo de olho anualmente a partir do diagnóstico (diabetes tipo 2) ou a partir de 5 anos do diagnóstico (diabetes tipo 1), independentemente de sintomas visuais."
+      },
+      {
+        "titulo": "Retinopatia hipertensiva",
+        "conteudo": "Alterações vasculares retinianas por hipertensão arterial crônica ou aguda — estreitamento arteriolar, cruzamentos arteriovenosos patológicos (sinal de Gunn), hemorragias e exsudatos. Papiledema bilateral associado sugere hipertensão maligna/emergência hipertensiva."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Retinopatia diabética proliferativa não tratada</span> tem alto risco de hemorragia vítrea súbita e descolamento de retina, com perda visual grave e potencialmente irreversível."
+      }
+    ]
+  },
+  {
+    "id": "trauma-ocular",
+    "area": "residencia",
+    "categoria": "Oftalmologia",
+    "titulo": "Trauma Ocular",
+    "resumo": "Avaliação inicial, sinais de perfuração de globo ocular e a regra de nunca aplicar pressão sobre o olho aberto.",
+    "revisado": false,
+    "fonte": "Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology — Preferred Practice Pattern: Eye Trauma",
+    "mnemonicos": [
+      {
+        "palavra": "Nunca aperte o globo aberto",
+        "explicacao": "Diante de suspeita de perfuração/ruptura do globo ocular, a regra de ouro é NUNCA exercer qualquer pressão sobre o olho, nem tentar remover corpo estranho empalado — proteger com escudo rígido e encaminhar imediatamente."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Avaliação inicial",
+        "conteudo": "A acuidade visual deve ser aferida e registrada antes de qualquer manipulação (exceto em suspeita de perfuração de globo ocular), sendo o parâmetro prognóstico mais importante. A história detalhada do mecanismo do trauma orienta a suspeita de lesões específicas."
+      },
+      {
+        "titulo": "Corpo estranho corneano/conjuntival superficial",
+        "conteudo": "Sensação de corpo estranho, dor, fotofobia e lacrimejamento. Remoção cuidadosa sob visualização adequada, seguida de avaliação da integridade corneana com fluoresceína."
+      },
+      {
+        "titulo": "Suspeita de perfuração/ruptura de globo ocular",
+        "conteudo": "Sinais incluem câmara anterior rasa ou irregular, pupila em formato de \"gota\" (discórica), extrusão de conteúdo intraocular, hipotonia ocular acentuada — NUNCA aplicar pressão sobre o globo, remover corpo estranho empalado, ou instilar colírios; proteger o olho com escudo rígido e encaminhar com urgência."
+      },
+      {
+        "titulo": "Hifema",
+        "conteudo": "Sangramento na câmara anterior, geralmente por trauma contuso. Risco de ressangramento e elevação da pressão intraocular. Repouso relativo com cabeceira elevada e acompanhamento oftalmológico rigoroso."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Suspeita de perfuração de globo ocular</span> é emergência cirúrgica — qualquer manipulação inadequada pode levar à extrusão do conteúdo intraocular e perda irreversível da visão."
+      }
+    ]
   }
 ]

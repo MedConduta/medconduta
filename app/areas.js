@@ -24,6 +24,11 @@ export const AREA_POR_CATEGORIA = {
   Pediatria: "Pediatria",
   "Medicina Preventiva": "Medicina Preventiva",
   Psiquiatria: "Saúde Mental",
+  Otorrinolaringologia: "Especialidades",
+  Oftalmologia: "Especialidades",
+  "Ortopedia e Traumatologia": "Especialidades",
+  Dermatologia: "Especialidades",
+  Anestesiologia: "Especialidades",
 };
 
 export const ORDEM_AREAS = [
@@ -33,6 +38,7 @@ export const ORDEM_AREAS = [
   "Pediatria",
   "Saúde Mental",
   "Medicina Preventiva",
+  "Especialidades",
   "Outros",
 ];
 
