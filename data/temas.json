@@ -4714,5 +4714,301 @@
         "conteudo": "<span class=\"red-flag\">Desacelerações tardias recorrentes associadas a variabilidade mínima ou ausente</span> (padrão categoria III) indicam sofrimento fetal significativo e exigem interrupção imediata da gestação pela via mais rápida disponível."
       }
     ]
+  },
+  {
+    "id": "prematuridade-rn-baixo-peso",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Prematuridade e Recém-Nascido de Baixo Peso",
+    "resumo": "Classificação por idade gestacional e peso, principais morbidades do prematuro e cuidados específicos.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Pediatria — Manual de Neonatologia; Ministério da Saúde — Atenção à Saúde do Recém-Nascido",
+    "mnemonicos": [
+      {
+        "palavra": "Corticoide antenatal",
+        "explicacao": "A administração de corticoide à gestante em risco de parto prematuro (antes de 34 semanas) acelera a maturação pulmonar fetal, reduzindo significativamente a incidência e a gravidade da síndrome do desconforto respiratório no recém-nascido."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Classificação por idade gestacional",
+        "conteudo": "Pré-termo (<37 semanas), subdividido em pré-termo tardio (34-36 semanas e 6 dias), moderado (32-34 semanas), muito pré-termo (<32 semanas) e extremo (<28 semanas). Termo: 37 a 41 semanas e 6 dias. Pós-termo: ≥42 semanas."
+      },
+      {
+        "titulo": "Classificação por peso ao nascer",
+        "conteudo": "Baixo peso (<2500g), muito baixo peso (<1500g) e extremo baixo peso (<1000g) — independente da idade gestacional, e cruzada com a classificação de adequação peso/idade gestacional (pequeno, adequado ou grande para a idade gestacional)."
+      },
+      {
+        "titulo": "Principais morbidades do prematuro",
+        "conteudo": "Síndrome do desconforto respiratório (deficiência de surfactante), persistência do canal arterial, enterocolite necrosante, hemorragia peri-intraventricular e retinopatia da prematuridade — risco proporcional ao grau de prematuridade e à exposição a oxigênio."
+      },
+      {
+        "titulo": "Cuidados específicos",
+        "conteudo": "O método canguru (contato pele a pele prolongado) melhora vínculo e termorregulação, e reduz o tempo de internação em prematuros estáveis. Triagens específicas (teste do olhinho, exame de fundo de olho para retinopatia, triagem auditiva) são realizadas antes da alta."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Distensão abdominal associada a sangue nas fezes e instabilidade clínica</span> em prematuro levanta suspeita de enterocolite necrosante — emergência que exige suspensão da dieta enteral e investigação/tratamento imediatos."
+      }
+    ]
+  },
+  {
+    "id": "desenvolvimento-neuropsicomotor-crescimento",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Desenvolvimento Neuropsicomotor e Curvas de Crescimento",
+    "resumo": "Marcos do desenvolvimento esperados por idade, sinais de alarme e uso das curvas de crescimento da OMS.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Pediatria — Manual de Vigilância do Desenvolvimento Infantil; Curvas de Crescimento da OMS 2006/2007",
+    "mnemonicos": [
+      {
+        "palavra": "Regressão nunca é normal",
+        "explicacao": "Perder uma habilidade do desenvolvimento já adquirida (por exemplo, uma criança que já andava e para de andar) NUNCA é considerado uma variação normal — é sempre sinal de alarme que exige investigação."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Marcos do desenvolvimento neuropsicomotor",
+        "conteudo": "Sustento cefálico (cerca de 3 meses), sentar sem apoio (cerca de 6 meses), engatinhar (cerca de 8-9 meses), andar sem apoio (cerca de 12-15 meses), primeiras palavras com significado (cerca de 12 meses) e frases de 2 palavras (cerca de 24 meses). Existe variação individual normal, mas atraso significativo em múltiplos domínios merece investigação."
+      },
+      {
+        "titulo": "Sinais de alerta de atraso",
+        "conteudo": "Ausência de sustento cefálico aos 4 meses, ausência de sorriso social aos 3 meses, ausência de palavras aos 18 meses, e perda de habilidades já adquiridas (regressão do desenvolvimento) em qualquer idade — este último especialmente preocupante e sempre exige investigação."
+      },
+      {
+        "titulo": "Curvas de crescimento da OMS",
+        "conteudo": "Utilizadas na Caderneta de Saúde da Criança para monitorar peso, comprimento/estatura, perímetro cefálico e índice de massa corporal por idade e sexo. Percentis muito baixos (escore z < -2) ou queda acentuada no canal de crescimento habitual sinalizam necessidade de investigação."
+      },
+      {
+        "titulo": "Caderneta de Saúde da Criança",
+        "conteudo": "Instrumento de acompanhamento longitudinal que registra vacinação, curvas de crescimento, marcos do desenvolvimento e intercorrências — deve ser preenchida e revisada em toda consulta de puericultura."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Perímetro cefálico com desvio acentuado da curva habitual (micro ou macrocefalia adquirida) e regressão de marcos do desenvolvimento já adquiridos são sinais de alarme que exigem investigação neurológica prioritária."
+      }
+    ]
+  },
+  {
+    "id": "aleitamento-materno-alimentacao-complementar",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Aleitamento Materno e Alimentação Complementar",
+    "resumo": "Recomendações de aleitamento exclusivo até 6 meses, introdução alimentar e contraindicações reais à amamentação.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Guia Alimentar para Crianças Brasileiras Menores de 2 Anos 2019; Sociedade Brasileira de Pediatria",
+    "mnemonicos": [
+      {
+        "palavra": "6 meses exclusivo, 2 anos ou mais",
+        "explicacao": "Aleitamento materno EXCLUSIVO até os 6 meses (nada além do leite materno), com continuidade do aleitamento complementado por outros alimentos até os 2 anos de idade ou mais."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Recomendações de aleitamento materno",
+        "conteudo": "Aleitamento materno exclusivo até os 6 meses de vida (sem água, chás ou outros alimentos), com manutenção do aleitamento complementado por alimentos até os 2 anos ou mais. Benefícios incluem proteção imunológica, vínculo mãe-bebê e redução de morbimortalidade infantil."
+      },
+      {
+        "titulo": "Introdução da alimentação complementar",
+        "conteudo": "Iniciada aos 6 meses, com alimentos amassados/em pedaços, respeitando os sinais de fome e saciedade da criança (alimentação perceptiva). A introdução precoce e variada de alimentos potencialmente alergênicos (ovo, peixe, amendoim) é atualmente recomendada, associada a menor risco de alergia alimentar."
+      },
+      {
+        "titulo": "Contraindicações ao aleitamento materno",
+        "conteudo": "Infecção materna por HIV (contraindicação absoluta no Brasil, onde há acesso a fórmula), uso de determinadas medicações incompatíveis com a amamentação e galactosemia clássica no lactente. A maioria das infecções maternas comuns (gripe, mastite tratada) NÃO contraindica a amamentação."
+      },
+      {
+        "titulo": "Composição do leite materno",
+        "conteudo": "O colostro (dos primeiros dias, rico em imunoglobulinas, principalmente IgA secretora) evolui para o leite maduro. O leite materno tem composição dinâmica, que se adapta à idade e às necessidades da criança."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Ganho de peso inadequado apesar de aleitamento materno referido como exclusivo</span> deve motivar avaliação técnica da pega e do posicionamento durante a mamada, antes de indicar suplementação desnecessária."
+      }
+    ]
+  },
+  {
+    "id": "desnutricao-deficiencias-vitaminicas",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Desnutrição Infantil e Deficiências Vitamínicas",
+    "resumo": "Marasmo x kwashiorkor, avaliação antropométrica e principais deficiências de vitaminas A e D.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Manual de Atendimento da Criança com Desnutrição Grave; OMS — Management of Severe Acute Malnutrition",
+    "mnemonicos": [
+      {
+        "palavra": "Kwashiorkor incha, Marasmo emagrece",
+        "explicacao": "Kwashiorkor (deficiência proteica predominante): edema e distensão abdominal, que podem mascarar a perda de peso real. Marasmo (deficiência calórica global): emagrecimento evidente, sem edema."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Classificação da desnutrição energético-proteica",
+        "conteudo": "Marasmo: deficiência calórica global, perda acentuada de gordura e massa muscular, criança emagrecida mas alerta. Kwashiorkor: deficiência predominantemente proteica, com edema, distensão abdominal, lesões cutâneas e cabelo quebradiço/despigmentado — o edema pode mascarar a perda de peso real."
+      },
+      {
+        "titulo": "Avaliação antropométrica",
+        "conteudo": "Os índices peso/idade, estatura/idade e peso/estatura (ou IMC/idade), comparados às curvas da OMS, classificam desnutrição aguda (peso/estatura baixo), crônica/atraso de crescimento (estatura/idade baixa) e desnutrição grave (escore z < -3)."
+      },
+      {
+        "titulo": "Deficiência de vitamina A",
+        "conteudo": "Principal causa evitável de cegueira infantil no mundo (xeroftalmia), também associada a maior mortalidade por infecções. Suplementação de rotina em áreas de risco, conforme protocolo do Ministério da Saúde."
+      },
+      {
+        "titulo": "Deficiência de vitamina D",
+        "conteudo": "Associada a raquitismo (deformidades ósseas, atraso na fusão de fontanelas, alargamento de punhos/tornozelos). Prevenção com exposição solar adequada e suplementação em grupos de risco (prematuros, aleitamento exclusivo prolongado sem suplementação)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Síndrome de realimentação</span> (distúrbios eletrolíticos graves, especialmente hipofosfatemia) pode ocorrer quando a reposição nutricional em criança gravemente desnutrida é feita de forma agressiva e rápida demais — a reintrodução calórica deve ser gradual e monitorada."
+      }
+    ]
+  },
+  {
+    "id": "crupe-laringotraqueite",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Crupe (Laringotraqueíte Viral Aguda)",
+    "resumo": "Tosse metálica e estridor por edema subglótico viral, escore de Westley e tratamento com corticoide.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Pediatria — Documento Científico sobre Laringite/Crupe; AAP Clinical Practice Guideline",
+    "mnemonicos": [
+      {
+        "palavra": "Tosse de cachorro",
+        "explicacao": "A tosse metálica, característica e facilmente reconhecível do crupe, é classicamente descrita como \"tosse de cachorro (foca)\" — junto ao estridor inspiratório e à rouquidão, compõe a tríade clínica típica."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Etiologia e epidemiologia",
+        "conteudo": "Causada predominantemente por vírus parainfluenza, mais comum entre 6 meses e 3 anos de idade, com pico de incidência no outono/inverno. Causa edema inflamatório da região subglótica."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Tosse metálica (\"tosse de cachorro\"), rouquidão, estridor inspiratório e desconforto respiratório de intensidade variável, geralmente precedidos por sintomas de infecção de vias aéreas superiores. Tipicamente piora à noite."
+      },
+      {
+        "titulo": "Classificação de gravidade",
+        "conteudo": "O escore de Westley (baseado em estridor, retração, entrada de ar, cianose e nível de consciência) orienta a intensidade do tratamento: leve (estridor apenas com agitação), moderado (estridor em repouso) e grave (estridor em repouso com desconforto respiratório importante)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Corticoide (dexametasona, dose única) para todos os graus de gravidade, reduzindo a necessidade de outras intervenções. Nebulização com adrenalina racêmica é reservada para os casos moderados a graves, com necessidade de observação após seu uso pelo risco de efeito rebote."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Estridor em repouso associado a esforço respiratório importante ou alteração do nível de consciência</span> indica crupe grave, com risco de obstrução de via aérea — exige tratamento imediato e monitorização rigorosa."
+      }
+    ]
+  },
+  {
+    "id": "convulsao-febril",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Convulsão Febril",
+    "resumo": "Diferenciação entre convulsão febril simples e complexa, e critérios para investigação adicional.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Pediatria — Documento Científico sobre Convulsão Febril; AAP Clinical Practice Guideline for Febrile Seizures",
+    "mnemonicos": [
+      {
+        "palavra": "Simples: generalizada, curta, única",
+        "explicacao": "Convulsão febril SIMPLES: generalizada, dura menos de 15 minutos, e não se repete em 24 horas — preenchendo os três critérios, o prognóstico é excelente e a investigação pode ser mínima."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição e classificação",
+        "conteudo": "Crise convulsiva associada a febre, em criança entre 6 meses e 5 anos, na ausência de infecção do sistema nervoso central ou outra causa neurológica definida. Classificada em simples (generalizada, duração menor que 15 minutos, sem recorrência em 24h) e complexa (focal, duração maior que 15 minutos, ou recorrência em 24h)."
+      },
+      {
+        "titulo": "Investigação",
+        "conteudo": "Convulsão febril simples em criança com bom estado geral após o episódio geralmente NÃO necessita de exames complementares extensos (incluindo punção lombar de rotina), especialmente após vacinação adequada contra Haemophilus influenzae tipo B e pneumococo. Convulsão febril complexa ou sinais de alarme associados ampliam a necessidade de investigação."
+      },
+      {
+        "titulo": "Punção lombar",
+        "conteudo": "Deve ser considerada em lactentes menores de 12 meses com sinais clínicos sugestivos de meningite, estado vacinal incompleto, uso prévio de antibiótico (que pode mascarar sinais meníngeos) ou quando o exame clínico não é tranquilizador."
+      },
+      {
+        "titulo": "Prognóstico e conduta",
+        "conteudo": "A convulsão febril simples tem excelente prognóstico neurológico, com risco de epilepsia futura apenas discretamente maior que a população geral. A orientação aos pais sobre medidas de controle da febre e o que fazer numa crise é o pilar do manejo — anticonvulsivante profilático contínuo NÃO é recomendado rotineiramente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Crise convulsiva focal, prolongada (maior que 15 minutos) ou com recorrência no mesmo episódio febril</span> caracteriza convulsão febril complexa e exige investigação adicional, diferente da abordagem mais conservadora da convulsão febril simples."
+      }
+    ]
+  },
+  {
+    "id": "maus-tratos-infantil",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Maus-Tratos Infantis: Reconhecimento e Notificação",
+    "resumo": "Sinais de alerta ao exame físico, síndrome do bebê sacudido e o dever de notificação compulsória mesmo diante de suspeita.",
+    "revisado": false,
+    "fonte": "Estatuto da Criança e do Adolescente (Lei 8.069/1990); Sociedade Brasileira de Pediatria — Guia de Atuação frente a Maus-tratos na Infância e Adolescência",
+    "mnemonicos": [
+      {
+        "palavra": "Suspeitou, notificou",
+        "explicacao": "A notificação compulsória de suspeita de maus-tratos infantis não exige certeza diagnóstica — a simples suspeita razoável já obriga o profissional de saúde a notificar, protegendo a criança enquanto a investigação prossegue."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Tipos de maus-tratos",
+        "conteudo": "Físicos (lesões inconsistentes com a história relatada ou com o estágio de desenvolvimento da criança), negligência (a forma mais prevalente, envolvendo omissão de cuidados básicos), abuso sexual e violência psicológica — frequentemente coexistem."
+      },
+      {
+        "titulo": "Sinais de alerta ao exame físico",
+        "conteudo": "Lesões em diferentes estágios de cicatrização, localização atípica (tronco, orelhas, região posterior do corpo), padrões que reproduzem o formato do objeto agressor, fraturas em criança não deambulante, e discrepância entre a gravidade da lesão e o mecanismo relatado pelos cuidadores."
+      },
+      {
+        "titulo": "Síndrome do bebê sacudido",
+        "conteudo": "Hemorragias intracranianas (frequentemente subdurais) e hemorragias retinianas em lactente, sem trauma externo evidente, associadas a sacudidas violentas. Pode se apresentar apenas com irritabilidade, vômitos ou letargia inespecíficos, retardando o diagnóstico."
+      },
+      {
+        "titulo": "Notificação compulsória",
+        "conteudo": "Obrigatória a todo profissional de saúde diante de suspeita — não exige certeza absoluta — de maus-tratos contra criança ou adolescente, independentemente do consentimento da família, conforme o Estatuto da Criança e do Adolescente (ECA). A notificação visa proteção, não é uma acusação penal."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Fratura em criança que ainda não deambula</span>, sem mecanismo de trauma plausível relatado, deve levantar suspeita imediata de maus-tratos e motivar avaliação multidisciplinar e notificação."
+      }
+    ]
+  },
+  {
+    "id": "cardiopatias-congenitas-comuns",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Cardiopatias Congênitas Mais Comuns",
+    "resumo": "Cardiopatias acianóticas x cianóticas, tetralogia de Fallot e o teste do coraçãozinho na triagem neonatal.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Cardiologia e Sociedade Brasileira de Pediatria — Diretriz de Triagem Neonatal Cardiológica; Ministério da Saúde",
+    "mnemonicos": [
+      {
+        "palavra": "Teste do coraçãozinho",
+        "explicacao": "Triagem neonatal obrigatória por oximetria de pulso (membro superior direito e um membro inferior) antes da alta da maternidade, para detectar cardiopatias congênitas críticas antes que o recém-nascido descompense clinicamente."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Classificação geral",
+        "conteudo": "Cardiopatias acianóticas, com shunt esquerda-direita (ex.: comunicação interventricular — a mais comum de todas, comunicação interatrial, persistência do canal arterial) x cianóticas, com shunt direita-esquerda ou mistura (ex.: tetralogia de Fallot — a cardiopatia cianótica mais comum após o período neonatal imediato, transposição de grandes artérias)."
+      },
+      {
+        "titulo": "Comunicação interventricular (CIV)",
+        "conteudo": "Defeitos pequenos frequentemente fecham espontaneamente. Defeitos grandes causam sobrecarga de volume pulmonar, podendo evoluir para hipertensão pulmonar e síndrome de Eisenmenger (inversão do shunt) se não corrigidos a tempo."
+      },
+      {
+        "titulo": "Tetralogia de Fallot",
+        "conteudo": "Associa estenose pulmonar, CIV, dextroposição da aorta e hipertrofia de ventrículo direito. Crises de hipoxemia (\"crises de cianose/hipóxia\") podem ser desencadeadas por choro ou esforço, aliviadas pela posição genupeitoral, que aumenta a resistência vascular sistêmica e reduz o shunt direita-esquerda."
+      },
+      {
+        "titulo": "Triagem neonatal",
+        "conteudo": "O teste do coraçãozinho (oximetria de pulso em membro superior direito e um dos membros inferiores, antes da alta hospitalar) rastreia cardiopatias congênitas críticas dependentes de canal arterial, que podem estar assintomáticas ao nascimento e descompensar após o fechamento fisiológico do canal."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Cianose central que não melhora com oxigênio suplementar</span> em recém-nascido sugere cardiopatia congênita cianótica com shunt direita-esquerda fixo, diferente da cianose de causa respiratória, que tende a melhorar com oxigênio."
+      }
+    ]
   }
 ]
