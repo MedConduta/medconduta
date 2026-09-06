@@ -5676,5 +5676,301 @@
         "conteudo": "<span class=\"red-flag\">Suspeita de perfuração de globo ocular</span> é emergência cirúrgica — qualquer manipulação inadequada pode levar à extrusão do conteúdo intraocular e perda irreversível da visão."
       }
     ]
+  },
+  {
+    "id": "fraturas-luxacoes-comuns",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Fraturas e Luxações Comuns",
+    "resumo": "Fratura de Colles, clavícula e colo femoral, e as regras de Ottawa para radiografia do tornozelo.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; Ottawa Ankle Rules",
+    "mnemonicos": [
+      {
+        "palavra": "FOOSH quebra o rádio",
+        "explicacao": "Fall On Outstretched Hand (queda com a mão espalmada) é o mecanismo clássico da fratura de Colles (extremidade distal do rádio) — típica em idosas com osteoporose e em crianças."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fratura de punho (Colles)",
+        "conteudo": "Fratura da extremidade distal do rádio por queda com a mão espalmada em extensão, tipicamente em mulheres na pós-menopausa (osteoporose) e crianças. Deformidade característica em \"dorso de garfo\". Tratada com redução e imobilização gessada na maioria dos casos; cirurgia se instável/muito desviada."
+      },
+      {
+        "titulo": "Fratura de clavícula",
+        "conteudo": "Fratura mais comum em crianças e adultos jovens, geralmente por queda sobre o ombro ou trauma direto. A maioria (especialmente no terço médio) é tratada conservadoramente com tipoia, sem necessidade de redução cirúrgica."
+      },
+      {
+        "titulo": "Fratura de fêmur proximal",
+        "conteudo": "Comum em idosos após queda de própria altura, especialmente com osteoporose. Membro inferior encurtado e em rotação externa é o achado clássico. Associada a alta morbimortalidade no idoso, geralmente exigindo tratamento cirúrgico precoce (dentro de 24-48h)."
+      },
+      {
+        "titulo": "Entorse/fratura de tornozelo",
+        "conteudo": "As regras de Ottawa orientam a necessidade de radiografia (dor à palpação óssea específica ou incapacidade de dar 4 passos imediatamente após o trauma e na avaliação), evitando radiografias desnecessárias em entorses leves."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Fratura exposta</span> (comunicação com o meio externo) exige profilaxia antibiótica precoce, atualização de vacina antitetânica e desbridamento cirúrgico em tempo hábil, pelo alto risco de osteomielite."
+      }
+    ]
+  },
+  {
+    "id": "lesoes-ligamentares-joelho",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Lesões Ligamentares do Joelho",
+    "resumo": "Lesão do LCA, LCM e menisco, e os testes clínicos que orientam o diagnóstico inicial.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; AAOS Clinical Practice Guideline on ACL Injury",
+    "mnemonicos": [
+      {
+        "palavra": "Estalo + inchaço rápido = LCA",
+        "explicacao": "A combinação de sensação de estalo no momento do trauma seguida de inchaço importante do joelho já nas primeiras horas (hemartrose) é a pista clínica clássica de lesão do ligamento cruzado anterior."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Ligamento cruzado anterior (LCA)",
+        "conteudo": "Lesão mais comum em esportes com mudança brusca de direção ou desaceleração, frequentemente sem contato direto. Sensação de \"estalo\" seguida de dor e edema importante (hemartrose) em poucas horas. O teste de Lachman é o mais sensível para o diagnóstico clínico."
+      },
+      {
+        "titulo": "Ligamento colateral medial (LCM)",
+        "conteudo": "Lesão por estresse em valgo do joelho (força aplicada na face lateral, empurrando o joelho para dentro), comum em esportes de contato. Dor localizada na face medial do joelho, instabilidade em valgo ao exame."
+      },
+      {
+        "titulo": "Menisco",
+        "conteudo": "Lesões associam-se frequentemente a movimento de rotação do joelho em carga. Dor na interlinha articular, sensação de travamento ou bloqueio articular e derrame articular de instalação mais lenta (comparado à hemartrose aguda do LCA)."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "A ressonância magnética é o exame de escolha para confirmar lesões ligamentares e meniscais, mas o diagnóstico inicial é eminentemente clínico, por meio de testes específicos (Lachman e gaveta anterior para LCA, estresse em valgo/varo para colaterais, McMurray para menisco)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Hemartrose de instalação rápida</span> (poucas horas) após trauma esportivo sugere fortemente lesão do LCA e deve motivar avaliação ortopédica especializada, mesmo com exame físico inicial limitado pela dor/edema."
+      }
+    ]
+  },
+  {
+    "id": "artrite-septica-osteomielite",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Infecções Ortopédicas: Artrite Séptica e Osteomielite",
+    "resumo": "Emergência da artrite séptica, tratamento sem aguardar cultura e diferenciação da osteomielite aguda x crônica.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; IDSA Clinical Practice Guidelines for Native Joint Septic Arthritis",
+    "mnemonicos": [
+      {
+        "palavra": "Não espera cultura para tratar artrite séptica",
+        "explicacao": "Diante de forte suspeita clínica, a antibioticoterapia empírica e a drenagem articular devem ser iniciadas imediatamente após a coleta do líquido sinovial — não se aguarda o resultado da cultura, pelo risco de destruição articular irreversível."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Artrite séptica",
+        "conteudo": "Infecção bacteriana do espaço articular, emergência ortopédica pelo risco de destruição rápida e irreversível da cartilagem. Staphylococcus aureus é o agente mais comum em todas as faixas etárias. Monoartrite aguda com dor intensa, edema, calor e limitação acentuada da mobilidade."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "A artrocentese com análise do líquido sinovial é obrigatória e urgente diante da suspeita — celularidade muito elevada com predomínio de neutrófilos, cultura positiva na maioria dos casos. NÃO se deve aguardar confirmação de imagem antes de iniciar o tratamento."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Antibioticoterapia empírica intravenosa imediata (cobrindo Staphylococcus aureus) associada a drenagem/lavagem articular (cirúrgica ou por punções repetidas), sem aguardar resultado de cultura."
+      },
+      {
+        "titulo": "Osteomielite",
+        "conteudo": "Infecção óssea, aguda (hematogênica, mais comum em crianças, tipicamente em metáfise de ossos longos) ou crônica (frequentemente por contiguidade, associada a trauma exposto, cirurgia prévia ou úlceras crônicas como no pé diabético). A ressonância magnética é o exame de imagem mais sensível nas fases iniciais."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Monoartrite aguda com sinais inflamatórios importantes</span> deve ser considerada artrite séptica até prova em contrário, e tratada como emergência ortopédica."
+      }
+    ]
+  },
+  {
+    "id": "ortopedia-pediatrica-quadril-pe",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Ortopedia Pediátrica: Quadril e Pé",
+    "resumo": "Displasia do desenvolvimento do quadril, doença de Perthes, epifisiólise femoral proximal e pé torto congênito.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; AAOS Clinical Practice Guidelines on DDH and SCFE",
+    "mnemonicos": [
+      {
+        "palavra": "Dor no joelho, olhe o quadril",
+        "explicacao": "Em crianças e adolescentes, dor no joelho sem causa local evidente sempre exige exame do quadril ipsilateral — doenças do quadril (Perthes, epifisiólise) classicamente causam dor referida ao joelho."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Displasia do desenvolvimento do quadril (DDQ)",
+        "conteudo": "Instabilidade ou desenvolvimento anormal do quadril no recém-nascido/lactente, com fatores de risco como sexo feminino, apresentação pélvica e história familiar. Testes de Ortolani e Barlow são realizados na triagem neonatal. Ultrassonografia de quadril é o exame de escolha antes dos 4-6 meses."
+      },
+      {
+        "titulo": "Doença de Legg-Calvé-Perthes",
+        "conteudo": "Necrose avascular idiopática da cabeça femoral em crianças, mais comum entre 4-8 anos, predominantemente no sexo masculino. Dor no quadril, coxa ou joelho (dor referida) associada a claudicação, de instalação insidiosa."
+      },
+      {
+        "titulo": "Epifisiólise femoral proximal",
+        "conteudo": "Deslocamento da epífise da cabeça femoral em relação ao colo femoral, tipicamente em adolescentes com obesidade, durante o estirão de crescimento. Dor no quadril ou joelho com claudicação — é considerada urgência ortopédica pelo risco de necrose avascular, exigindo fixação cirúrgica precoce."
+      },
+      {
+        "titulo": "Pé torto congênito",
+        "conteudo": "Deformidade congênita caracterizada por equino, varo do retropé, adução do antepé e cavo. Tratamento inicial pelo método de Ponseti (gessos seriados semanais seguidos de tenotomia percutânea do tendão de Aquiles na maioria dos casos), com excelentes resultados quando iniciado precocemente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Dor no joelho em adolescente com obesidade, sem trauma evidente</span> deve sempre motivar exame cuidadoso do quadril ipsilateral, pela possibilidade de epifisiólise femoral proximal se manifestando como dor referida."
+      }
+    ]
+  },
+  {
+    "id": "dermatoses-inflamatorias",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Dermatoses Inflamatórias: Dermatite Atópica, Psoríase e Acne",
+    "resumo": "Distribuição típica das lesões, sinal de Auspitz na psoríase e tratamento escalonado da acne.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Dermatologia; American Academy of Dermatology Guidelines of Care for Psoriasis and Acne",
+    "mnemonicos": [
+      {
+        "palavra": "Auspitz é psoríase",
+        "explicacao": "O sinal de Auspitz — sangramento puntiforme ao raspar a escama de uma placa cutânea — é característico da psoríase, ajudando a diferenciá-la de outras dermatoses eritemato-descamativas."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Dermatite atópica",
+        "conteudo": "Dermatose inflamatória crônica associada a disfunção da barreira cutânea, frequentemente parte da \"marcha atópica\" (associação com asma e rinite alérgica). Lesões eczematosas pruriginosas, com distribuição típica variando com a idade (face e superfícies extensoras em lactentes; superfícies flexoras em crianças maiores e adultos). Tratamento com hidratação intensiva e corticoide tópico nas exacerbações."
+      },
+      {
+        "titulo": "Psoríase",
+        "conteudo": "Doença inflamatória crônica imunomediada, com placas eritemato-descamativas bem delimitadas, tipicamente em superfícies extensoras, couro cabeludo e região lombossacra. O sinal de Auspitz é característico. Pode associar-se a artrite psoriásica; tratamento tópico nos casos leves, fototerapia ou imunobiológicos nos moderados a graves."
+      },
+      {
+        "titulo": "Acne vulgar",
+        "conteudo": "Doença multifatorial (hiperprodução sebácea, hiperqueratinização folicular, colonização por Cutibacterium acnes, inflamação), predominante na adolescência. Tratamento escalonado conforme gravidade: retinoides tópicos e/ou peróxido de benzoíla nos casos leves, antibióticos tópicos/orais nos moderados, isotretinoína oral reservada para casos graves/nodulocísticos ou refratários."
+      },
+      {
+        "titulo": "Diferenciação eczema x psoríase",
+        "conteudo": "O eczema tende a ter bordas menos definidas e prurido mais intenso. A psoríase tem placas bem delimitadas com descamação prateada característica — a distinção clínica geralmente é possível sem biópsia."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Eritrodermia (acometimento de mais de 90% da superfície corporal) em paciente com dermatite atópica ou psoríase de base é emergência dermatológica, com risco de distúrbios hidroeletrolíticos e térmicos, exigindo internação."
+      }
+    ]
+  },
+  {
+    "id": "infeccoes-cutaneas",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Infecções Cutâneas: Micoses, Piodermites e Viroses",
+    "resumo": "Diferenciação entre impetigo, erisipela/celulite, e o reconhecimento precoce da fasceíte necrotizante.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Dermatologia; IDSA Clinical Practice Guidelines for Skin and Soft Tissue Infections",
+    "mnemonicos": [
+      {
+        "palavra": "Crosta melicérica é impetigo",
+        "explicacao": "As crostas de aspecto amarelo-douradas, semelhantes a mel seco (melicéricas), são o achado clássico e praticamente patognomônico do impetigo."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Micoses superficiais",
+        "conteudo": "Dermatofitoses (tinea corporis, cruris, pedis, capitis) causam lesões anulares com bordas ativas descamativas e clareamento central. Tratamento tópico na maioria dos casos, oral quando extenso ou acomete couro cabeludo/unhas. Candidíase cutânea acomete predominantemente áreas úmidas/intertriginosas."
+      },
+      {
+        "titulo": "Piodermites",
+        "conteudo": "Impetigo: infecção superficial, mais comum em crianças, com crostas melicéricas características. Erisipela/celulite: infecção mais profunda, com eritema, calor, edema e dor — bordas mais bem definidas na erisipela (derme superficial) e mais imprecisas na celulite (derme profunda/tecido subcutâneo)."
+      },
+      {
+        "titulo": "Foliculite, furúnculo e abscesso cutâneo",
+        "conteudo": "Espectro de infecção progressivamente mais profunda do folículo piloso, geralmente por Staphylococcus aureus. Abscessos e furúnculos maiores exigem drenagem cirúrgica, além de antibioticoterapia quando há celulite associada."
+      },
+      {
+        "titulo": "Viroses cutâneas",
+        "conteudo": "Herpes simples (vesículas agrupadas recorrentes, orais ou genitais), herpes-zóster (reativação do vírus varicela-zóster em distribuição dermatomal unilateral, com dor neuropática que pode preceder as lesões) e verrugas virais (HPV cutâneo)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Celulite com progressão rápida, dor desproporcional, bolhas hemorrágicas ou crepitação</span> deve levantar suspeita de fasceíte necrotizante — infecção de partes moles com altíssima mortalidade, exigindo desbridamento cirúrgico de urgência."
+      }
+    ]
+  },
+  {
+    "id": "neoplasias-cutaneas",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Neoplasias Cutâneas: CBC, CEC e Melanoma",
+    "resumo": "Diferenciação entre carcinoma basocelular, espinocelular e melanoma, e a regra do ABCDE.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Dermatologia; Instituto Nacional de Câncer (INCA) — Diretrizes de Câncer de Pele",
+    "mnemonicos": [
+      {
+        "palavra": "ABCDE do melanoma",
+        "explicacao": "Sinais de alerta numa lesão pigmentada: Assimetria, Bordas irregulares, Cor heterogênea, Diâmetro maior que 6mm, Evolução/mudança ao longo do tempo."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Carcinoma basocelular (CBC)",
+        "conteudo": "Neoplasia cutânea maligna mais comum, associada à exposição solar cumulativa, geralmente em áreas fotoexpostas. Crescimento lento, raramente metastatiza. Aspecto clássico de pápula/nódulo perolado, translúcido, com telangiectasias e bordas enroladas, podendo ulcerar centralmente."
+      },
+      {
+        "titulo": "Carcinoma espinocelular (CEC)",
+        "conteudo": "Segunda neoplasia cutânea maligna mais comum, também associada à exposição solar cumulativa, mas com maior potencial de metástase que o CBC. Lesão frequentemente descamativa, hiperqueratósica, podendo ulcerar; a queratose actínica é considerada lesão precursora."
+      },
+      {
+        "titulo": "Melanoma",
+        "conteudo": "Neoplasia cutânea maligna menos comum, porém a mais letal, pela alta capacidade de metástase precoce. A regra do ABCDE orienta o rastreamento de lesões pigmentadas suspeitas: Assimetria, Bordas irregulares, Cor variável, Diâmetro maior que 6mm, Evolução ao longo do tempo."
+      },
+      {
+        "titulo": "Fatores de risco comuns",
+        "conteudo": "Exposição solar (cumulativa para CBC/CEC, intermitente e com queimaduras na infância para melanoma), fototipo claro, imunossupressão e história familiar/pessoal de câncer de pele. A fotoproteção regular é a principal medida preventiva."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Lesão pigmentada com mudança recente de tamanho, cor, formato, ou que sangra/ulcera espontaneamente</span> deve ser biopsiada com prioridade para excluir melanoma."
+      }
+    ]
+  },
+  {
+    "id": "farmacodermias",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Farmacodermias: Reações Cutâneas a Medicamentos",
+    "resumo": "Do exantema morbiliforme benigno à síndrome de Stevens-Johnson/NET e DRESS, reações graves que exigem suspensão imediata.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Dermatologia; UpToDate — Stevens-Johnson Syndrome and Toxic Epidermal Necrolysis",
+    "mnemonicos": [
+      {
+        "palavra": "Nikolsky descola",
+        "explicacao": "O sinal de Nikolsky (descolamento da epiderme à leve pressão tangencial da pele aparentemente normal) é achado de alerta para farmacodermias graves com comprometimento da junção dermoepidérmica, como SSJ/NET."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Exantema morbiliforme",
+        "conteudo": "A farmacodermia mais comum: erupção maculopapular difusa, geralmente iniciada 1-2 semanas após início da medicação, sem acometimento de mucosas ou sinais sistêmicos graves. Resolve com a suspensão do medicamento causador."
+      },
+      {
+        "titulo": "Síndrome de Stevens-Johnson (SSJ) e necrólise epidérmica tóxica (NET)",
+        "conteudo": "Espectro grave de farmacodermia com necrose e descolamento da epiderme, acometimento extenso de mucosas, sinal de Nikolsky positivo. Diferenciadas pela extensão da superfície corporal acometida (SSJ menor que 10%, NET maior que 30%). Mortalidade significativa, principalmente na NET."
+      },
+      {
+        "titulo": "Síndrome DRESS",
+        "conteudo": "Reação grave de hipersensibilidade tardia (2-8 semanas após início do fármaco), com exantema extenso, febre, linfadenopatia, eosinofilia e acometimento de órgãos internos (fígado é o mais comum) — pode ser fatal se não reconhecida e tratada precocemente."
+      },
+      {
+        "titulo": "Principais medicamentos associados",
+        "conteudo": "Anticonvulsivantes (carbamazepina, lamotrigina, fenitoína), alopurinol, sulfonamidas e alguns antibióticos betalactâmicos são os mais associados a farmacodermias graves."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Exantema associado a acometimento de mucosas, dor cutânea desproporcional ou sinal de Nikolsky positivo</span> exige suspensão imediata do medicamento suspeito e avaliação de urgência, pela possibilidade de SSJ/NET."
+      }
+    ]
   }
 ]
