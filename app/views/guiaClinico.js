@@ -1,5 +1,4 @@
 import { fetchJsonCached, escapeHtml } from "../utils.js";
-import { renderClinicalWarning } from "../components/clinicalWarning.js";
 
 /**
  * Renderização compartilhada para os guias de bolso baseados em
@@ -24,7 +23,6 @@ export async function renderListaGuia(container, { dataPath, basePath, eyebrow, 
           <a class="card card--interactive list-card" href="#${basePath}/${item.id}">
             <div class="list-card__top">
               <span class="badge badge--accent">${escapeHtml(item.categoria)}</span>
-              ${item.revisado ? '<span class="validation-flag validation-flag--ok">✓</span>' : '<span class="validation-flag validation-flag--pending">⚠</span>'}
             </div>
             <div class="list-card__title">${escapeHtml(item.titulo)}</div>
             <p class="list-card__meta">${escapeHtml(item.resumo)}</p>
@@ -52,7 +50,6 @@ export async function renderDetalheGuia(container, { id }, { dataPath, basePath,
         <div class="page-header__eyebrow">${escapeHtml(item.categoria)}</div>
         <h1>${escapeHtml(item.titulo)}</h1>
       </div>
-      ${renderClinicalWarning(item)}
       <div class="card">
         <h3>Pontos-chave</h3>
         <ul>${item.pontos.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>

@@ -1,5 +1,4 @@
 import { fetchJsonCached, escapeHtml, uniq } from "../utils.js";
-import { renderClinicalWarning } from "../components/clinicalWarning.js";
 
 function showCopyToast(msg) {
   let toast = document.querySelector(".copy-toast");
@@ -51,7 +50,6 @@ export async function renderLista(container) {
           <a class="card card--interactive list-card" href="#/bolso/prescricoes/${item.id}" data-categoria="${escapeHtml(item.categoria)}">
             <div class="list-card__top">
               <span class="badge badge--accent">${escapeHtml(item.categoria)}</span>
-              ${item.revisado ? '<span class="validation-flag validation-flag--ok">✓</span>' : '<span class="validation-flag validation-flag--pending">⚠</span>'}
             </div>
             <div class="list-card__title">${escapeHtml(item.titulo)}</div>
           </a>`
@@ -89,7 +87,6 @@ export async function renderDetalhe(container, { id }) {
         <div class="page-header__eyebrow">${escapeHtml(item.categoria)}</div>
         <h1>${escapeHtml(item.titulo)}</h1>
       </div>
-      ${renderClinicalWarning(item)}
       <div class="prescription">
         <div class="prescription__header">
           <strong>${escapeHtml(item.titulo)}</strong>

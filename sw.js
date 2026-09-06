@@ -5,7 +5,7 @@
  * são armazenadas em runtime na primeira visita.
  */
 
-const CACHE_VERSION = "medconduta-v7";
+const CACHE_VERSION = "medconduta-v8";
 
 const PRECACHE_URLS = [
   "./",
@@ -26,7 +26,6 @@ const PRECACHE_URLS = [
   "./app/utils.js",
 
   "./app/components/sidebar.js",
-  "./app/components/clinicalWarning.js",
   "./app/components/flowchart.js",
   "./app/components/icons.js",
 

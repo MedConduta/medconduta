@@ -244,39 +244,6 @@
 
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
-/* ---------- Aviso clínico (obrigatório em telas de conteúdo clínico) ---------- */
-
-.clinical-warning {
-  display: flex;
-  gap: var(--space-3);
-  align-items: flex-start;
-  background: var(--color-warning-soft);
-  border: 1px solid var(--color-warning-border);
-  color: var(--color-text);
-  border-radius: var(--radius-md);
-  padding: var(--space-4);
-  margin-bottom: var(--space-5);
-  font-size: var(--fs-sm);
-}
-
-.clinical-warning__icon {
-  flex-shrink: 0;
-  color: var(--color-warning);
-  margin-top: 1px;
-}
-
-.clinical-warning strong { color: var(--color-warning); }
-
-.validation-flag {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: var(--fs-xs);
-  font-weight: var(--fw-medium);
-}
-.validation-flag--pending { color: var(--color-warning); }
-.validation-flag--ok { color: var(--color-success); }
-
 /* ---------- Mnemônico ---------- */
 
 .mnemonic {

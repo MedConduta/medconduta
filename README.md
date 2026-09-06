@@ -30,10 +30,10 @@ Cada item clínico no JSON carrega os campos:
 - `fonte`: referência da fonte usada na validação (ex.: "Diretriz Brasileira de
   Hipertensão 2020, SBC").
 
-Toda tela que exibe conteúdo clínico (temas de conteúdo, fluxogramas, guia de bolso,
-prescrições) mostra um banner de aviso (`app/components/clinicalWarning.js`) reforçando
-esse ponto e indicando se o item já foi marcado como revisado. **Antes de usar este
-projeto para fins reais, revise e valide cada item um a um.**
+O banner de aviso em tela foi removido da interface a pedido do mantenedor do projeto
+(médico), que já tem ciência da necessidade de validação. Os campos `revisado`/`fonte`
+permanecem no JSON para quem quiser controlar o que já foi conferido. **Antes de usar
+este projeto para fins reais, revise e valide cada item um a um.**
 
 ## Estrutura de pastas
 
@@ -53,7 +53,6 @@ MedConduta/
 │   ├── components/
 │   │   ├── sidebar.js            # navegação lateral e bottom-nav mobile
 │   │   ├── icons.js               # ícones SVG inline
-│   │   ├── clinicalWarning.js      # banner obrigatório de aviso clínico
 │   │   └── flowchart.js             # renderização de fluxogramas a partir de JSON
 │   └── views/                        # uma view por seção da navegação
 │       ├── conteudo.js, revisao.js, flashcards.js, fluxogramas.js,

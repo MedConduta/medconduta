@@ -1,5 +1,4 @@
 import { fetchJsonCached, escapeHtml } from "../utils.js";
-import { renderClinicalWarning } from "../components/clinicalWarning.js";
 import { renderFlowchart } from "../components/flowchart.js";
 
 export async function renderLista(container) {
@@ -24,7 +23,6 @@ export async function renderLista(container) {
           <a class="card card--interactive list-card" href="#/residencia/fluxogramas/${f.id}" data-tipo="${f.tipo}">
             <div class="list-card__top">
               <span class="badge badge--${f.tipo}">${f.tipo === "diagnostico" ? "Diagnóstico" : "Tratamento"}</span>
-              ${f.revisado ? '<span class="validation-flag validation-flag--ok">✓</span>' : '<span class="validation-flag validation-flag--pending">⚠</span>'}
             </div>
             <div class="list-card__title">${escapeHtml(f.titulo)}</div>
           </a>`
@@ -64,7 +62,6 @@ export async function renderDetalhe(container, { id }) {
         </div>
         <h1>${escapeHtml(fluxo.titulo)}</h1>
       </div>
-      ${renderClinicalWarning(fluxo)}
       <div class="card">
         ${renderFlowchart(fluxo.fluxo)}
       </div>

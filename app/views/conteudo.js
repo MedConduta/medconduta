@@ -1,5 +1,4 @@
 import { fetchJsonCached, escapeHtml } from "../utils.js";
-import { renderClinicalWarning } from "../components/clinicalWarning.js";
 import { getItem, setItem } from "../db.js";
 
 async function marcarConcluido(temaId, concluido) {
@@ -141,7 +140,6 @@ function renderTemaListItem(tema) {
     <li>
       <a class="content-list__item" href="#/residencia/conteudo/${tema.id}" data-busca="${escapeHtml(busca)}">
         <span class="content-list__title">${escapeHtml(tema.titulo)}</span>
-        ${tema.revisado ? '<span class="validation-flag validation-flag--ok">✓</span>' : '<span class="validation-flag validation-flag--pending">⚠</span>'}
       </a>
     </li>
   `;
@@ -166,8 +164,6 @@ export async function renderDetalhe(container, { id }) {
         <div class="page-header__eyebrow">${escapeHtml(tema.categoria)}</div>
         <h1>${escapeHtml(tema.titulo)}</h1>
       </div>
-
-      ${renderClinicalWarning(tema)}
 
       <div class="btn-row" style="margin-bottom:24px;">
         <button class="btn ${concluido ? "btn--secondary" : "btn--primary"}" id="btn-concluir">
