@@ -2827,5 +2827,634 @@
         "conteudo": "Gestão orientada apenas por metas de produção, sem contextualização local e sem indicadores de resultado, pode gerar distorções — cumprir a meta numérica sem necessariamente melhorar a qualidade do cuidado prestado."
       }
     ]
+  },
+  {
+    "id": "doenca-arterial-coronariana-cronica",
+    "area": "residencia",
+    "categoria": "Cardiologia",
+    "titulo": "Doença Arterial Coronariana Crônica (Angina Estável)",
+    "resumo": "Angina estável: classificação CCS, estratificação diagnóstica por probabilidade pré-teste e tratamento clínico otimizado x revascularização.",
+    "revisado": false,
+    "fonte": "Diretriz da Sociedade Brasileira de Cardiologia sobre Doença Arterial Coronariana Estável 2023; ESC Guidelines for Chronic Coronary Syndromes 2024",
+    "mnemonicos": [
+      {
+        "palavra": "ABCDE",
+        "explicacao": "Pilares do tratamento da doença coronariana crônica: Aspirina/Antianginoso, Betabloqueador/pressão arterial, Colesterol (estatina)/Cigarro (cessar tabagismo), Dieta/Diabetes, Educação/Exercício."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia e apresentação clínica",
+        "conteudo": "A angina típica se manifesta como dor/desconforto retroesternal em aperto, desencadeada por esforço físico ou estresse emocional e aliviada por repouso ou nitrato sublingual em poucos minutos — presença dos três critérios define angina típica; presença de 2 define atípica; 1 ou nenhum, dor não anginosa. A Canadian Cardiovascular Society (CCS) classifica a gravidade em 4 classes conforme o nível de esforço que desencadeia os sintomas."
+      },
+      {
+        "titulo": "Estratificação diagnóstica",
+        "conteudo": "A probabilidade pré-teste (idade, sexo, características da dor) orienta a escolha do exame inicial: teste ergométrico (baixo custo, mas menor sensibilidade), ecocardiograma ou cintilografia miocárdica de estresse (maior acurácia, avalia isquemia induzida), angiotomografia de coronárias (boa em probabilidade baixa-intermediária, alto valor preditivo negativo) ou cateterismo cardíaco direto em alta probabilidade pré-teste."
+      },
+      {
+        "titulo": "Tratamento clínico otimizado",
+        "conteudo": "Antiagregação plaquetária (AAS em dose baixa), estatina de alta potência independentemente do LDH basal, betabloqueador e/ou bloqueador de canal de cálcio para controle sintomático e de frequência cardíaca, e IECA/BRA quando há comorbidades associadas (diabetes, HAS, doença renal crônica, disfunção ventricular)."
+      },
+      {
+        "titulo": "Revascularização",
+        "conteudo": "Indicada quando os sintomas permanecem refratários ao tratamento clínico otimizado, ou em anatomia coronariana de alto risco (lesão significativa de tronco de coronária esquerda, doença multiarterial com disfunção ventricular). A escolha entre angioplastia (intervenção coronária percutânea) e cirurgia de revascularização miocárdica considera a complexidade anatômica (ex.: escore SYNTAX) e comorbidades do paciente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Mudança no padrão da angina</span> — passando a ocorrer em repouso, com frequência ou intensidade crescentes, ou refratária a nitrato — sugere síndrome coronariana aguda e exige investigação e conduta imediatas, não mais o manejo ambulatorial da angina estável."
+      }
+    ]
+  },
+  {
+    "id": "angina-instavel-iamssst",
+    "area": "residencia",
+    "categoria": "Cardiologia",
+    "titulo": "Angina Instável e IAM sem Supra de ST (SCA sem Supra)",
+    "resumo": "Síndrome coronariana aguda sem supra de ST: estratificação de risco (GRACE/TIMI), antitrombóticos e estratégia invasiva x conservadora.",
+    "revisado": false,
+    "fonte": "Diretriz da Sociedade Brasileira de Cardiologia sobre SCA sem Supra de ST 2021; ESC Guidelines for Acute Coronary Syndromes 2023",
+    "mnemonicos": [
+      {
+        "palavra": "GRACE",
+        "explicacao": "Escore de risco em SCA (idade, frequência cardíaca, PA sistólica, creatinina, classe de Killip, parada cardiorrespiratória na admissão, desvio de segmento ST, marcador de necrose miocárdica elevado) que estratifica mortalidade e orienta o momento da estratégia invasiva."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição e diferenciação",
+        "conteudo": "A síndrome coronariana aguda sem supra de ST engloba a angina instável (sem elevação de marcadores de necrose miocárdica) e o IAM sem supra de ST — IAMSSST (com elevação de troponina). Ambas compartilham a mesma fisiopatologia de base: instabilização de placa aterosclerótica com formação de trombo não oclusivo."
+      },
+      {
+        "titulo": "Estratificação de risco",
+        "conteudo": "Escores como GRACE e TIMI estimam prognóstico (mortalidade, reinfarto) e orientam a urgência da estratégia invasiva: pacientes de alto risco (GRACE elevado, troponina positiva, instabilidade elétrica ou hemodinâmica, angina refratária ao tratamento) beneficiam-se de cateterismo cardíaco precoce (idealmente <24h)."
+      },
+      {
+        "titulo": "Tratamento antitrombótico",
+        "conteudo": "Dupla antiagregação plaquetária (AAS associado a um inibidor de P2Y12 — clopidogrel, ticagrelor ou prasugrel) e anticoagulação parenteral (heparina não fracionada ou de baixo peso molecular) são a base do tratamento, independentemente da estratégia (invasiva ou conservadora) escolhida."
+      },
+      {
+        "titulo": "Estratégia invasiva x conservadora",
+        "conteudo": "Pacientes de baixo risco podem ser conduzidos inicialmente de forma conservadora, com teste funcional (ergométrico, cintilografia) antes da alta. Pacientes de risco intermediário a alto são encaminhados a cateterismo cardíaco precoce para definir necessidade de revascularização."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Supradesnivelamento do segmento ST</span> no eletrocardiograma muda completamente a conduta, exigindo reperfusão imediata (terapia do IAM com supra de ST) — a diferenciação eletrocardiográfica precoce entre as duas apresentações da síndrome coronariana aguda é essencial."
+      }
+    ]
+  },
+  {
+    "id": "arritmias-cardiacas-gerais",
+    "area": "residencia",
+    "categoria": "Cardiologia",
+    "titulo": "Arritmias Cardíacas: Bradiarritmias e Taquiarritmias",
+    "resumo": "Bloqueios atrioventriculares, taquicardias supraventriculares e ventriculares, e abordagem inicial guiada pela estabilidade hemodinâmica.",
+    "revisado": false,
+    "fonte": "AHA/ACC/HRS Guideline for Management of Patients With Bradycardia and Cardiac Conduction Delay 2018; ACLS — American Heart Association",
+    "mnemonicos": [
+      {
+        "palavra": "Instável = Choque",
+        "explicacao": "Na abordagem inicial de qualquer taquiarritmia, a pergunta que define a conduta é: o paciente está hemodinamicamente instável (hipotensão, dor torácica, congestão pulmonar, rebaixamento do sensório)? Se sim, cardioversão/desfibrilação elétrica imediata, independentemente do ritmo específico."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Bradiarritmias",
+        "conteudo": "Bloqueios atrioventriculares (BAV): 1º grau (PR prolongado, benigno), 2º grau Mobitz I/Wenckebach (prolongamento progressivo do PR até bloquear, geralmente benigno), 2º grau Mobitz II (bloqueio súbito sem prolongamento prévio, maior risco de progressão para BAV total) e BAV total/3º grau (dissociação completa entre P e QRS) — Mobitz II e BAV total têm indicação de marca-passo definitivo."
+      },
+      {
+        "titulo": "Taquiarritmias supraventriculares",
+        "conteudo": "Taquicardia supraventricular paroxística (mecanismo mais comum: reentrada nodal) responde a manobra vagal e, se refratária, adenosina IV em bolus. Flutter atrial compartilha o mesmo manejo da fibrilação atrial quanto à necessidade de anticoagulação, conforme risco tromboembólico."
+      },
+      {
+        "titulo": "Taquiarritmias ventriculares",
+        "conteudo": "Taquicardia ventricular (sustentada ou não sustentada; monomórfica ou polimórfica) e fibrilação ventricular são potencialmente fatais. Instabilidade hemodinâmica associada exige cardioversão elétrica sincronizada (TV com pulso) ou desfibrilação imediata (TV sem pulso/FV, sem sincronismo)."
+      },
+      {
+        "titulo": "Abordagem inicial",
+        "conteudo": "O primeiro passo diante de qualquer taquiarritmia é avaliar estabilidade hemodinâmica. Se instável, cardioversão/desfibrilação elétrica imediata. Se estável, o tratamento farmacológico é guiado pela largura do QRS (estreito x largo) e pela regularidade do ritmo."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Taquicardia de QRS largo</span> deve ser tratada como taquicardia ventricular até prova em contrário em paciente com cardiopatia estrutural conhecida, mesmo que o paciente esteja momentaneamente estável."
+      }
+    ]
+  },
+  {
+    "id": "valvopatias",
+    "area": "residencia",
+    "categoria": "Cardiologia",
+    "titulo": "Valvopatias: Estenose e Insuficiência Mitral e Aórtica",
+    "resumo": "Ausculta característica, fisiopatologia e indicações de intervenção nas principais valvopatias mitral e aórtica.",
+    "revisado": false,
+    "fonte": "Diretriz Brasileira de Valvopatias 2020 (SBC); ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease 2021",
+    "mnemonicos": [
+      {
+        "palavra": "Sistólico x Diastólico",
+        "explicacao": "Regra prática de ausculta: sopros de ESTenose AÓRTICA e de insuficiência MITRAL são SISTÓLICOS; sopros de insuficiência AÓRTICA e de ESTenose MITRAL são DIASTÓLICOS."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Estenose aórtica",
+        "conteudo": "Geralmente degenerativa/calcificada no idoso (também pode ser congênita — valva bicúspide — em pacientes mais jovens). Sopro sistólico ejetivo em foco aórtico, irradiado para carótidas. A tríade clássica de angina, síncope e dispneia indica pior prognóstico e é indicação de troca valvar, cirúrgica ou por implante percutâneo (TAVI) conforme o risco cirúrgico do paciente."
+      },
+      {
+        "titulo": "Insuficiência aórtica",
+        "conteudo": "Sopro diastólico aspirativo (decrescente) em foco aórtico. Causas incluem doença valvar degenerativa, endocardite infecciosa e dissecção aguda de aorta. Leva a sobrecarga crônica de volume do ventrículo esquerdo, podendo evoluir para dilatação e disfunção ventricular."
+      },
+      {
+        "titulo": "Estenose mitral",
+        "conteudo": "Predominantemente sequela de doença reumática cardíaca. Sopro diastólico em ruflar (rolamento), mais audível em foco mitral com paciente em decúbito lateral esquerdo. Frequentemente associada a fibrilação atrial e risco tromboembólico aumentado pelo estase em átrio esquerdo dilatado."
+      },
+      {
+        "titulo": "Insuficiência mitral",
+        "conteudo": "Sopro holossistólico em foco mitral, irradiado para a axila. Causas incluem prolapso da valva mitral, doença reumática, endocardite infecciosa e disfunção isquêmica de músculo papilar (complicação mecânica do IAM)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Síncope em paciente com estenose aórtica</span> é sinal de mau prognóstico e indicação para intervenção valvar. Febre associada a sopro cardíaco novo levanta a suspeita de endocardite infecciosa e exige investigação (hemoculturas, ecocardiograma)."
+      }
+    ]
+  },
+  {
+    "id": "emergencia-hipertensiva",
+    "area": "residencia",
+    "categoria": "Cardiologia",
+    "titulo": "Crise Hipertensiva: Emergência x Urgência Hipertensiva",
+    "resumo": "Diferenciação entre urgência e emergência hipertensiva pela presença de lesão aguda de órgão-alvo, e metas de redução pressórica conforme o órgão acometido.",
+    "revisado": false,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2025 (SBC/SBN/SBH); AHA/ACC Hypertension Guideline 2017",
+    "mnemonicos": [
+      {
+        "palavra": "Lesão de órgão-alvo = Emergência",
+        "explicacao": "A diferença entre urgência e emergência hipertensiva não é o valor absoluto da PA — é a presença de lesão aguda de órgão-alvo, que define a necessidade de redução imediata com droga parenteral em ambiente monitorado."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definições",
+        "conteudo": "Crise hipertensiva: elevação acentuada da PA, geralmente acima de 180/120 mmHg. Urgência hipertensiva: PA muito elevada SEM evidência de lesão aguda de órgão-alvo. Emergência hipertensiva: PA elevada COM lesão aguda de órgão-alvo em curso — encefalopatia hipertensiva, AVC, edema agudo de pulmão, dissecção aguda de aorta, síndrome coronariana aguda, eclâmpsia."
+      },
+      {
+        "titulo": "Conduta na urgência hipertensiva",
+        "conteudo": "Redução gradual da PA ao longo de 24-48h, com medicação por via oral (ex.: captopril, anlodipino), em regime ambulatorial ou de observação breve — não há indicação de redução rápida ou agressiva da pressão arterial."
+      },
+      {
+        "titulo": "Conduta na emergência hipertensiva",
+        "conteudo": "Internação com medicação parenteral (nitroprussiato de sódio, nitroglicerina, labetalol, conforme o órgão-alvo acometido), com meta de reduzir a PA média em cerca de 25% na primeira hora — exceto em situações com metas específicas (AVC isquêmico e dissecção de aorta)."
+      },
+      {
+        "titulo": "Particularidades por órgão-alvo",
+        "conteudo": "Na dissecção aguda de aorta, a redução da PA e da frequência cardíaca deve ser rápida e agressiva, com betabloqueador administrado antes do vasodilatador (para evitar taquicardia reflexa que aumentaria o estresse de cisalhamento na parede aórtica). No AVC isquêmico agudo, tolera-se PA mais elevada — a trombólise só é considerada se PA <185/110 mmHg."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Reduzir a PA rapidamente demais</span> numa emergência hipertensiva (exceto na dissecção de aorta) pode causar hipoperfusão de órgãos já cronicamente adaptados a pressões mais altas, incluindo isquemia cerebral."
+      }
+    ]
+  },
+  {
+    "id": "derrame-pleural",
+    "area": "residencia",
+    "categoria": "Pneumologia",
+    "titulo": "Derrame Pleural: Transudato x Exsudato",
+    "resumo": "Critérios de Light, principais etiologias e manejo do derrame parapneumônico/empiema.",
+    "revisado": false,
+    "fonte": "Diretriz de Doenças Pleurais da Sociedade Brasileira de Pneumologia e Tisiologia 2022",
+    "mnemonicos": [
+      {
+        "palavra": "Light",
+        "explicacao": "Critérios de Light para exsudato — basta 1 positivo: proteína pleural/sérica >0,5; LDH pleural/sérico >0,6; LDH pleural > 2/3 do limite superior normal do LDH sérico."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Etiologia geral",
+        "conteudo": "Transudatos decorrem de alteração das pressões hidrostática/oncótica sistêmicas — insuficiência cardíaca é a causa mais comum, seguida de cirrose hepática e síndrome nefrótica. Exsudatos decorrem de processo inflamatório, infeccioso ou neoplásico local da pleura — derrame parapneumônico, neoplasia, tuberculose pleural e tromboembolismo pulmonar são causas frequentes."
+      },
+      {
+        "titulo": "Critérios de Light",
+        "conteudo": "Classificam o derrame como exsudato se pelo menos um critério estiver presente: relação proteína pleural/sérica >0,5; relação LDH pleural/sérico >0,6; ou LDH pleural maior que 2/3 do limite superior normal do LDH sérico. Têm alta sensibilidade, mas podem classificar equivocadamente alguns transudatos (ex.: paciente com IC em uso de diurético) como exsudato."
+      },
+      {
+        "titulo": "Derrame parapneumônico e empiema",
+        "conteudo": "Classificado conforme as características bioquímicas e microbiológicas do líquido pleural em não complicado, complicado (necessita drenagem) e empiema (pus franco na cavidade pleural, sempre drenar). pH pleural <7,2 ou glicose <40-60 mg/dL sinalizam derrame complicado que provavelmente exigirá drenagem torácica."
+      },
+      {
+        "titulo": "Abordagem diagnóstica",
+        "conteudo": "A toracocentese diagnóstica está indicada em praticamente todo derrame pleural novo de causa não esclarecida, exceto em quadro clinicamente típico de insuficiência cardíaca congestiva bilateral respondendo ao diurético, situação em que a puncão pode ser adiada."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Empiema (pus franco na cavidade pleural) sempre exige drenagem torácica</span>, associada à antibioticoterapia — não responde ao tratamento com antibiótico isolado."
+      }
+    ]
+  },
+  {
+    "id": "disturbios-sodio",
+    "area": "residencia",
+    "categoria": "Nefrologia",
+    "titulo": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "resumo": "Avaliação por volemia e osmolalidade na hiponatremia, causas de hipernatremia e a regra da correção lenta em ambos os distúrbios.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Nefrologia; UpToDate — Diagnostic Evaluation of Adults With Hyponatremia",
+    "mnemonicos": [
+      {
+        "palavra": "Devagar e sempre",
+        "explicacao": "Tanto a hiponatremia quanto a hipernatremia crônicas devem ser corrigidas LENTAMENTE (cerca de 8-12 mEq/L em 24h) — corrigir o sódio rápido demais, em qualquer direção, machuca o cérebro (mielinólise pontina ou edema cerebral)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Hiponatremia — avaliação inicial",
+        "conteudo": "Classificar por volemia (hipovolêmica, euvolêmica ou hipervolêmica) e por osmolalidade sérica, para distinguir hiponatremia verdadeira/hipotônica de pseudo-hiponatremia (por hiperglicemia ou hiperlipidemia grave). A síndrome de secreção inapropriada de ADH (SIADH) é causa clássica de hiponatremia euvolêmica."
+      },
+      {
+        "titulo": "Hiponatremia — tratamento",
+        "conteudo": "A correção lenta é a regra geral — no máximo 8-10 mEq/L em 24h — pelo risco de síndrome de desmielinização osmótica (mielinólise pontina) quando a correção é rápida demais, especialmente em hiponatremia crônica. Hiponatremia aguda sintomática grave (convulsão, rebaixamento do nível de consciência) pode exigir salina hipertônica com correção inicial mais rápida, sob monitorização estrita."
+      },
+      {
+        "titulo": "Hipernatremia",
+        "conteudo": "Quase sempre reflete déficit de água livre (perda de água maior que a de sódio, ou ganho de sódio). Situações comuns: idosos com acesso restrito à água, diabetes insípido (central ou nefrogênico) e perdas gastrointestinais não repostas adequadamente."
+      },
+      {
+        "titulo": "Hipernatremia — tratamento",
+        "conteudo": "Reposição de água livre, preferencialmente por via oral/enteral quando possível, ou solução hipotônica intravenosa. A correção também deve ser gradual (no máximo 10-12 mEq/L em 24h) para evitar edema cerebral por correção rápida demais."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Correção rápida de hiponatremia crônica</span> é a principal causa evitável de mielinólise pontina — não corrigir rápido demais, mesmo diante de sintomas, sem antes reavaliar a cronicidade do distúrbio."
+      }
+    ]
+  },
+  {
+    "id": "doenca-refluxo-gastroesofagico",
+    "area": "residencia",
+    "categoria": "Gastroenterologia",
+    "titulo": "Doença do Refluxo Gastroesofágico (DRGE)",
+    "resumo": "Sintomas típicos e de alarme, tratamento empírico com IBP e principais complicações (esofagite, Barrett).",
+    "revisado": false,
+    "fonte": "Consenso Brasileiro de Doença do Refluxo Gastroesofágico — FBG 2023; American College of Gastroenterology Guideline for GERD 2022",
+    "mnemonicos": [
+      {
+        "palavra": "Sinais de alarme",
+        "explicacao": "Indicam endoscopia antes de tratar empiricamente: Disfagia, Emagrecimento não intencional, Sangramento/anemia, Idade avançada com sintoma novo, Vômitos persistentes — presença de qualquer um afasta o tratamento puramente empírico."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Sintomas típicos: pirose (queimação retroesternal) e regurgitação. Sintomas atípicos/extraesofágicos: tosse crônica, rouquidão, asma de difícil controle e dor torácica não cardíaca — podem ocorrer mesmo sem os sintomas típicos."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Quadro clínico típico, sem sinais de alarme, permite tratamento empírico com inibidor de bomba de prótons (IBP) sem necessidade de exames complementares iniciais. Endoscopia digestiva alta é reservada para sinais de alarme (disfagia, emagrecimento, sangramento, anemia, idade avançada com sintoma novo) ou refratariedade ao tratamento. pHmetria/impedanciometria esofágica auxilia em casos duvidosos ou refratários."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "IBP em dose padrão por 4-8 semanas é a primeira linha. Medidas comportamentais complementares: elevação da cabeceira da cama, evitar deitar-se nas 2-3h após refeições, perda de peso e redução de gatilhos alimentares (café, álcool, alimentos gordurosos)."
+      },
+      {
+        "titulo": "Complicações",
+        "conteudo": "Esofagite erosiva, estenose péptica e esôfago de Barrett (metaplasia intestinal do epitélio esofágico distal) — este último é fator de risco para adenocarcinoma de esôfago e exige vigilância endoscópica periódica conforme o grau de displasia."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Disfagia progressiva, odinofagia, emagrecimento não intencional, sangramento digestivo ou anemia</span> em paciente com sintomas de refluxo exigem endoscopia digestiva alta para afastar malignidade antes de simplesmente escalar o tratamento clínico."
+      }
+    ]
+  },
+  {
+    "id": "doenca-inflamatoria-intestinal",
+    "area": "residencia",
+    "categoria": "Gastroenterologia",
+    "titulo": "Doença Inflamatória Intestinal: Retocolite Ulcerativa e Doença de Crohn",
+    "resumo": "Diferenças de padrão de acometimento entre RCU e Crohn, manifestações extraintestinais e tratamento escalonado.",
+    "revisado": false,
+    "fonte": "Consenso PANCCO 2023; ECCO Guidelines for Ulcerative Colitis and Crohn's Disease",
+    "mnemonicos": [
+      {
+        "palavra": "Crohn Salteia, Colite Continua",
+        "explicacao": "Doença de Crohn: lesões salteadas (skip lesions), transmurais, da boca ao ânus. Retocolite Ulcerativa: acometimento contínuo, ascendente a partir do reto, restrito à mucosa/submucosa do cólon."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Retocolite ulcerativa",
+        "conteudo": "Acometimento contínuo e ascendente a partir do reto, restrito à mucosa e submucosa do cólon. Sintomas típicos: diarreia sanguinolenta, tenesmo e urgência evacuatória."
+      },
+      {
+        "titulo": "Doença de Crohn",
+        "conteudo": "Acometimento salteado (áreas de mucosa normal entre segmentos afetados), transmural, podendo atingir qualquer segmento do tubo digestivo — da boca ao ânus, mais comumente o íleo terminal. A transmuralidade predispõe a fístulas, estenoses e abscessos, complicações menos típicas da retocolite ulcerativa."
+      },
+      {
+        "titulo": "Manifestações extraintestinais",
+        "conteudo": "Comuns a ambas as doenças: artrite periférica, eritema nodoso, pioderma gangrenoso e uveíte. A colangite esclerosante primária tem associação mais forte com a retocolite ulcerativa."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento",
+        "conteudo": "Colonoscopia com biópsia confirma o diagnóstico e ajuda a diferenciar as duas condições. Tratamento escalonado conforme gravidade: aminossalicilatos para RCU leve, corticoide para indução de remissão na crise, imunomoduladores (azatioprina) e biológicos (anti-TNF, anti-integrina) para manutenção e casos moderados a graves."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Megacólon tóxico</span> (dilatação colônica aguda com toxemia sistêmica) é complicação grave, mais associada à retocolite ulcerativa, com risco de perfuração — exige internação e avaliação cirúrgica imediata."
+      }
+    ]
+  },
+  {
+    "id": "hepatites-virais",
+    "area": "residencia",
+    "categoria": "Gastroenterologia",
+    "titulo": "Hepatites Virais (A, B e C)",
+    "resumo": "Vias de transmissão, marcadores sorológicos da hepatite B e tratamento atual da hepatite C com antivirais de ação direta.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Hepatite B 2023 e Hepatite C 2023",
+    "mnemonicos": [
+      {
+        "palavra": "ABC dos marcadores de Hepatite B",
+        "explicacao": "HBsAg = tem o vírus agora. Anti-HBc IgM = infecção recente (aguda). Anti-HBs = está imune (vacinado ou curado). HBeAg = está replicando/transmitindo bastante."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Hepatite A",
+        "conteudo": "Transmissão fecal-oral. Geralmente autolimitada, sem evolução para cronicidade, e mais grave quando adquirida na idade adulta do que na infância. A vacina contra hepatite A integra o calendário infantil do PNI."
+      },
+      {
+        "titulo": "Hepatite B",
+        "conteudo": "Transmissão parenteral, sexual e vertical (mãe-filho). Marcadores sorológicos essenciais: HBsAg (indica infecção atual), Anti-HBc IgM (infecção aguda recente), Anti-HBs (imunidade, seja vacinal ou pós-infecção) e HBeAg (marcador de replicação viral ativa e maior infectividade). O risco de cronificação é inversamente proporcional à idade da infecção, chegando a 90% em recém-nascidos infectados verticalmente."
+      },
+      {
+        "titulo": "Hepatite C",
+        "conteudo": "Transmissão predominantemente parenteral. Alta taxa de cronificação (cerca de 70-85% dos infectados). Diagnóstico com anti-HCV (triagem) seguido de HCV-RNA (confirma viremia ativa). O tratamento atual com antivirais de ação direta (AAD), em esquemas orais de curta duração (8-12 semanas), alcança cura virológica em mais de 95% dos casos."
+      },
+      {
+        "titulo": "Prevenção",
+        "conteudo": "Vacinação universal contra hepatite B, incluindo dose ao nascer nas primeiras 12-24h de vida para prevenir a transmissão vertical. Não há vacina disponível contra a hepatite C — a prevenção depende de redução de risco de exposição parenteral."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Insuficiência hepática aguda</span> (icterícia + coagulopatia + encefalopatia) é complicação rara, porém grave, mais associada à hepatite B e à hepatite E em gestantes — exige avaliação urgente para transplante hepático."
+      }
+    ]
+  },
+  {
+    "id": "disturbios-adrenais",
+    "area": "residencia",
+    "categoria": "Endocrinologia",
+    "titulo": "Distúrbios da Glândula Adrenal: Insuficiência Adrenal e Síndrome de Cushing",
+    "resumo": "Insuficiência adrenal primária x secundária, crise adrenal e investigação da síndrome de Cushing.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia — Diretrizes de Insuficiência Adrenal e Síndrome de Cushing; Endocrine Society Clinical Practice Guidelines",
+    "mnemonicos": [
+      {
+        "palavra": "Addison bronzeia",
+        "explicacao": "Na insuficiência adrenal PRIMÁRIA (doença de Addison), o ACTH está elevado (perda do feedback negativo do cortisol) e estimula os melanócitos, causando hiperpigmentação cutâneo-mucosa — achado que NÃO ocorre na insuficiência adrenal secundária."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Insuficiência adrenal primária x secundária",
+        "conteudo": "Primária (doença de Addison): destruição do córtex adrenal, sendo a causa autoimune a mais comum; cursa com deficiência tanto de cortisol quanto de aldosterona, e hiperpigmentação cutânea por ACTH elevado. Secundária: deficiência de ACTH hipofisário, ou supressão do eixo por corticoterapia exógena prolongada — poupa a produção de aldosterona (regulada principalmente pelo sistema renina-angiotensina, não pelo ACTH)."
+      },
+      {
+        "titulo": "Crise adrenal",
+        "conteudo": "Emergência endócrina com hipotensão refratária a volume, hiponatremia, hipercalemia (apenas na forma primária, pela deficiência de aldosterona) e hipoglicemia. O tratamento com hidrocortisona intravenosa em dose de estresse deve ser iniciado imediatamente, sem aguardar confirmação laboratorial."
+      },
+      {
+        "titulo": "Síndrome de Cushing",
+        "conteudo": "Excesso de cortisol, de causa exógena (uso crônico de corticoide — a causa mais comum na prática clínica) ou endógena (adenoma hipofisário produtor de ACTH — doença de Cushing, tumor adrenal, ou produção ectópica de ACTH). Quadro clínico: obesidade centrípeta, fácies em lua cheia, giba dorsal, estrias violáceas largas, fraqueza muscular proximal, hipertensão e hiperglicemia."
+      },
+      {
+        "titulo": "Investigação da síndrome de Cushing",
+        "conteudo": "Testes de rastreio: cortisol salivar noturno, cortisol livre urinário de 24h ou teste de supressão com dexametasona em dose baixa. A dosagem de ACTH sérico diferencia a causa ACTH-dependente (hipofisária ou ectópica) da ACTH-independente (adrenal)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Suspender corticoide sistêmico abruptamente</span> após uso prolongado pode precipitar crise adrenal por supressão do eixo hipotálamo-hipófise-adrenal — a retirada deve ser sempre gradual."
+      }
+    ]
+  },
+  {
+    "id": "obesidade",
+    "area": "residencia",
+    "categoria": "Endocrinologia",
+    "titulo": "Obesidade: Diagnóstico e Tratamento",
+    "resumo": "Classificação por IMC, comorbidades associadas e opções terapêuticas do tratamento comportamental à cirurgia bariátrica.",
+    "revisado": false,
+    "fonte": "Diretriz Brasileira de Obesidade — ABESO 2022; AACE/ACE Obesity Clinical Practice Guidelines",
+    "mnemonicos": [
+      {
+        "palavra": "30 é o corte",
+        "explicacao": "IMC ≥30 kg/m² define obesidade; IMC ≥40 (ou ≥35 com comorbidade associada) já indica possível indicação de cirurgia bariátrica após falha do tratamento clínico bem conduzido."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Diagnóstico e classificação",
+        "conteudo": "Índice de massa corporal (IMC) ≥30 kg/m² define obesidade em adultos (sobrepeso: 25-29,9 kg/m²), classificada em grau I (30-34,9), grau II (35-39,9) e grau III/mórbida (≥40). A circunferência abdominal complementa a avaliação do risco cardiometabólico associado à obesidade central."
+      },
+      {
+        "titulo": "Avaliação de comorbidades",
+        "conteudo": "Rastreio obrigatório de diabetes/pré-diabetes, dislipidemia, hipertensão, esteatose hepática, apneia obstrutiva do sono e osteoartrite — condições frequentemente associadas à obesidade e que influenciam a escolha do tratamento."
+      },
+      {
+        "titulo": "Tratamento não farmacológico",
+        "conteudo": "Dieta hipocalórica individualizada, atividade física regular e terapia comportamental são a base do tratamento. A meta inicial de perda de 5-10% do peso corporal já é suficiente para reduzir significativamente o risco cardiometabólico."
+      },
+      {
+        "titulo": "Tratamento farmacológico e cirúrgico",
+        "conteudo": "Análogos de GLP-1 (liraglutida, semaglutida) e agonistas duplos GIP/GLP-1 (tirzepatida) demonstraram eficácia significativa na perda de peso. Cirurgia bariátrica é indicada em IMC ≥40, ou ≥35 associado a comorbidade, após falha do tratamento clínico bem conduzido."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Obesidade grave associada a sinais sugestivos de apneia do sono (sonolência diurna excessiva, ronco alto, pausas respiratórias referidas pelo acompanhante) deve ser investigada com polissonografia, pelo risco cardiovascular associado à apneia não tratada."
+      }
+    ]
+  },
+  {
+    "id": "artrite-reumatoide",
+    "area": "residencia",
+    "categoria": "Reumatologia",
+    "titulo": "Artrite Reumatoide",
+    "resumo": "Poliartrite simétrica de pequenas articulações, critérios diagnósticos ACR/EULAR e estratégia treat-to-target.",
+    "revisado": false,
+    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Artrite Reumatoide 2021; ACR/EULAR Classification Criteria 2010",
+    "mnemonicos": [
+      {
+        "palavra": "Simétrica e Matinal",
+        "explicacao": "Artrite reumatoide: poliartrite SIMÉTRICA de pequenas articulações + rigidez MATINAL prolongada (>1h) são as pistas clínicas centrais que a diferenciam de outras artropatias."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Poliartrite simétrica de pequenas articulações (mãos e punhos, tipicamente poupando as interfalangeanas distais), com rigidez matinal prolongada (mais de 1 hora). Em fases avançadas sem tratamento adequado, podem surgir deformidades características: desvio ulnar, deformidade em pescoço de cisne e em botoeira."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Os critérios ACR/EULAR 2010 combinam número e tipo de articulações acometidas, sorologia (fator reumatoide e anti-CCP — este último mais específico para artrite reumatoide) e provas de atividade inflamatória (PCR/VHS), além da duração dos sintomas. O anti-CCP positivo pode preceder o início dos sintomas e tem valor prognóstico."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "A estratégia \"treat to target\" busca tratar ativamente até atingir a meta de remissão ou baixa atividade de doença. O metotrexato é o DMARD (droga modificadora do curso da doença) sintético de primeira linha; agentes biológicos (anti-TNF e outros) são reservados para falha do tratamento convencional."
+      },
+      {
+        "titulo": "Manifestações extra-articulares",
+        "conteudo": "Nódulos reumatoides subcutâneos, doença pulmonar intersticial, síndrome de Sjögren secundária e, em doença de longa data não controlada, vasculite reumatoide (rara, mas grave)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Instabilidade cervical C1-C2 (subluxação atlantoaxial)</span> pode ocorrer em doença de longa data, exigindo cuidado especial em manipulações da via aérea/intubação, pelo risco de compressão medular."
+      }
+    ]
+  },
+  {
+    "id": "espondiloartrites",
+    "area": "residencia",
+    "categoria": "Reumatologia",
+    "titulo": "Espondiloartrites (Espondilite Anquilosante e Correlatas)",
+    "resumo": "Dor lombar inflamatória, associação com HLA-B27 e as principais espondiloartrites soronegativas.",
+    "revisado": false,
+    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Espondiloartrites 2019; ASAS/EULAR Recommendations for Axial Spondyloarthritis",
+    "mnemonicos": [
+      {
+        "palavra": "PEAR",
+        "explicacao": "As principais espondiloartrites soronegativas associadas ao HLA-B27: Psoriásica, Enteropática (associada a doença inflamatória intestinal), Anquilosante e Reativa."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Características gerais do grupo",
+        "conteudo": "Soronegatividade para fator reumatoide, forte associação com o antígeno HLA-B27, acometimento axial (coluna vertebral e articulações sacroilíacas) e/ou periférico (entesite, dactilite), com possível sobreposição a doenças de pele, intestino e olho."
+      },
+      {
+        "titulo": "Espondilite anquilosante",
+        "conteudo": "Dor lombar de característica inflamatória: início antes dos 40 anos, insidiosa, piora com repouso e melhora com exercício, rigidez matinal maior que 30 minutos. Sacroiliíte é o achado radiológico/de ressonância característico. Em casos avançados sem tratamento, pode evoluir para fusão vertebral (\"coluna em bambu\")."
+      },
+      {
+        "titulo": "Artrite psoriásica",
+        "conteudo": "Associada à psoríase cutânea. Pode se apresentar com dactilite (\"dedo em salsicha\"), acometimento de interfalangeanas distais (diferente do padrão da artrite reumatoide) e alterações ungueais (pitting, onicólise)."
+      },
+      {
+        "titulo": "Artrite reativa",
+        "conteudo": "Artrite asséptica desencadeada por infecção prévia, geralmente geniturinária (ex.: Chlamydia) ou gastrointestinal (Salmonella, Shigella, Campylobacter). Classicamente associada à tríade de artrite, uveíte/conjuntivite e uretrite."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Uveíte anterior aguda recorrente em paciente jovem com dor lombar inflamatória deve levantar suspeita de espondiloartrite e motivar investigação dirigida (HLA-B27, imagem de articulações sacroilíacas)."
+      }
+    ]
+  },
+  {
+    "id": "osteoartrite",
+    "area": "residencia",
+    "categoria": "Reumatologia",
+    "titulo": "Osteoartrite (Artrose)",
+    "resumo": "Dor mecânica, achados radiográficos característicos e tratamento escalonado da osteoartrite.",
+    "revisado": false,
+    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Osteoartrite 2021; OARSI Guidelines for Management of Osteoarthritis",
+    "mnemonicos": [
+      {
+        "palavra": "Heberden Distal, Bouchard Proximal",
+        "explicacao": "Nódulos de Heberden acometem a interfalangeana DISTal; nódulos de Bouchard, a interfalangeana PROximal — achados clássicos de osteoartrite nas mãos, ao contrário do padrão da artrite reumatoide."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia e fatores de risco",
+        "conteudo": "Doença degenerativa articular por desgaste progressivo da cartilagem, associada a idade avançada, obesidade, sobrecarga mecânica ou trauma articular prévio e predisposição genética. Articulações mais acometidas: joelhos, quadris, mãos (interfalangeanas) e coluna vertebral."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor de característica mecânica — piora com o uso/atividade e melhora com repouso —, rigidez matinal breve (menos de 30 minutos, ao contrário da artrite inflamatória), crepitação articular ao exame e, em fases avançadas, deformidade e limitação funcional."
+      },
+      {
+        "titulo": "Achados radiográficos",
+        "conteudo": "Redução do espaço articular, osteófitos marginais, esclerose óssea subcondral e cistos subcondrais. Nas mãos, os nódulos de Heberden (interfalangeana distal) e Bouchard (interfalangeana proximal) são achados clínicos clássicos."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Medidas não farmacológicas (perda de peso, fortalecimento muscular, fisioterapia) são a base do tratamento. Analgésicos (paracetamol) e anti-inflamatórios tópicos ou orais auxiliam no controle sintomático. Infiltração intra-articular e artroplastia são reservadas para casos refratários ou mais avançados."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Dor articular com sinais inflamatórios importantes (calor, rubor, edema exuberante) ou febre associada deve levantar suspeita de artrite séptica ou gotosa, e não simplesmente osteoartrite — situações que exigem investigação urgente."
+      }
+    ]
+  },
+  {
+    "id": "fibromialgia",
+    "area": "residencia",
+    "categoria": "Reumatologia",
+    "titulo": "Fibromialgia",
+    "resumo": "Dor difusa crônica sem sinais objetivos de inflamação, diagnóstico clínico e tratamento multimodal.",
+    "revisado": false,
+    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Fibromialgia 2017; ACR 2016 Revisions to Fibromyalgia Diagnostic Criteria",
+    "mnemonicos": [
+      {
+        "palavra": "Dor sem inflamação",
+        "explicacao": "Fibromialgia causa dor difusa importante, mas sem sinais objetivos de inflamação (exame físico articular e provas inflamatórias normais) — essa dissociação entre queixa e achado objetivo é a marca da doença."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor musculoesquelética crônica generalizada e difusa (duração maior que 3 meses), frequentemente acompanhada de fadiga, sono não reparador, distúrbios cognitivos (\"fibrofog\") e sintomas de ansiedade/depressão associados."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Diagnóstico clínico, sem exame laboratorial ou de imagem confirmatório específico. Os critérios atuais do American College of Rheumatology utilizam um índice de dor generalizada e uma escala de gravidade de sintomas, dispensando a antiga contagem obrigatória de pontos dolorosos (\"tender points\")."
+      },
+      {
+        "titulo": "Diagnóstico diferencial",
+        "conteudo": "Exames complementares são solicitados principalmente para EXCLUIR outras causas de dor difusa — hipotireoidismo, polimialgia reumática, doenças reumatológicas inflamatórias — e não para confirmar o diagnóstico de fibromialgia."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Abordagem multimodal: exercício físico aeróbico regular é a intervenção com melhor evidência de benefício, associado à terapia cognitivo-comportamental. Farmacoterapia (antidepressivos duais como duloxetina, ou gabapentinoides como pregabalina) é reservada para casos que não respondem adequadamente às medidas não farmacológicas."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "A presença de sinais inflamatórios objetivos (sinovite, alterações laboratoriais específicas) não é esperada na fibromialgia e deve motivar a investigação de um diagnóstico alternativo ou concomitante."
+      }
+    ]
+  },
+  {
+    "id": "gota",
+    "area": "residencia",
+    "categoria": "Reumatologia",
+    "titulo": "Gota (Artrite Gotosa)",
+    "resumo": "Crise aguda de monoartrite por depósito de urato, diagnóstico por análise do líquido sinovial e tratamento hipouricemiante crônico.",
+    "revisado": false,
+    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Gota 2017; ACR Guideline for the Management of Gout 2020",
+    "mnemonicos": [
+      {
+        "palavra": "Podagra",
+        "explicacao": "Podagra = crise de gota na primeira articulação metatarsofalangeana — a apresentação mais clássica e reconhecível da doença, embora a gota possa acometer outras articulações."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia",
+        "conteudo": "Depósito de cristais de urato monossódico nas articulações, decorrente de hiperuricemia crônica — por hiperprodução ou, mais comumente, por hipoexcreção renal de ácido úrico. Nem toda hiperuricemia assintomática precisa de tratamento medicamentoso."
+      },
+      {
+        "titulo": "Crise aguda de gota",
+        "conteudo": "Monoartrite de início súbito, extremamente dolorosa, classicamente na primeira articulação metatarsofalangeana (podagra), com sinais inflamatórios exuberantes (calor, rubor, edema). Frequentemente desencadeada por ingestão de álcool, dieta rica em purinas, jejum prolongado ou início recente de tratamento hipouricemiante."
+      },
+      {
+        "titulo": "Diagnóstico definitivo",
+        "conteudo": "Identificação de cristais de urato monossódico (birrefringência negativa à luz polarizada) no líquido sinovial aspirado — padrão-ouro diagnóstico, que também permite excluir artrite séptica concomitante."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Na crise aguda: anti-inflamatório não esteroidal, colchicina ou corticoide, conforme comorbidades do paciente. O tratamento hipouricemiante crônico (alopurinol como primeira linha) é indicado após crises recorrentes, presença de tofos ou nefrolitíase úrica — e NUNCA deve ser iniciado durante a crise aguda, pelo risco de prolongá-la."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Monoartrite aguda associada a febre</span> exige sempre excluir artrite séptica por punção articular antes de assumir se tratar de crise de gota, pois as duas condições podem ser clinicamente indistinguíveis."
+      }
+    ]
   }
 ]
