@@ -19,7 +19,7 @@ const ALLOWED_ORIGINS = [
   "http://127.0.0.1:8744",
 ];
 
-const MODELO_PADRAO = "gemini-2.5-flash-lite";
+const MODELO_PADRAO = "gemini-3.5-flash-lite";
 
 const INSTRUCAO_SISTEMA = `Você é um assistente de estudo para residência médica (R1) dentro do app MedConduta.
 Responda SOMENTE com base no CONTEXTO fornecido pelo usuário (temas, prescrições, PDFs de referência anexados).
