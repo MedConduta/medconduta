@@ -3826,5 +3826,449 @@
         "conteudo": "<span class=\"red-flag\">Atraso na administração de adrenalina</span> é o principal fator associado a desfechos fatais em anafilaxia — na dúvida diagnóstica diante de quadro sugestivo, a conduta é aplicar a adrenalina, não observar e esperar."
       }
     ]
+  },
+  {
+    "id": "tce",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Trauma Cranioencefálico (TCE)",
+    "resumo": "Escala de Coma de Glasgow, principais hematomas intracranianos traumáticos e manejo da hipertensão intracraniana.",
+    "revisado": false,
+    "fonte": "Advanced Trauma Life Support (ATLS) 10ª edição — American College of Surgeons",
+    "mnemonicos": [
+      {
+        "palavra": "Intervalo lúcido = Extradural",
+        "explicacao": "O hematoma EXTRAdural classicamente cursa com um período de lucidez entre o trauma e a deterioração neurológica subsequente, à medida que o hematoma se expande — pista clássica de prova."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Avaliação inicial e Escala de Coma de Glasgow",
+        "conteudo": "A Escala de Coma de Glasgow (abertura ocular, resposta verbal, resposta motora) classifica a gravidade do TCE: leve (13-15), moderado (9-12) e grave (≤8). TCE grave é indicação de via aérea definitiva (intubação orotraqueal) para proteção da via aérea."
+      },
+      {
+        "titulo": "Principais lesões intracranianas",
+        "conteudo": "Hematoma extradural: lesão arterial, classicamente da artéria meníngea média, associada a fratura temporal, com \"intervalo lúcido\" característico antes da deterioração. Hematoma subdural: lesão venosa por ruptura de veias-ponte, mais comum em idosos e etilistas, podendo ser agudo ou crônico. Também podem ocorrer hemorragia subaracnóidea traumática e contusões cerebrais."
+      },
+      {
+        "titulo": "Manejo da hipertensão intracraniana",
+        "conteudo": "Cabeceira elevada a 30°, manter normocapnia (evitar hiperventilação profilática, exceto em herniação iminente), normotermia e normonatremia, com sedação adequada. Manitol ou salina hipertônica são usados diante de sinais de herniação."
+      },
+      {
+        "titulo": "Neuroimagem e indicação cirúrgica",
+        "conteudo": "Tomografia de crânio guiada por critérios clínicos (ex.: Canadian CT Head Rule) no TCE leve. Hematomas com efeito de massa significativo (desvio de linha média, compressão de cisternas) geralmente exigem drenagem cirúrgica de urgência."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Anisocoria com midríase unilateral fixa</span> sugere herniação uncal iminente por lesão expansiva ipsilateral — emergência neurocirúrgica que exige ação imediata."
+      }
+    ]
+  },
+  {
+    "id": "trauma-toracico",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Trauma Torácico: Lesões que Ameaçam a Vida",
+    "resumo": "Pneumotórax hipertensivo, pneumotórax aberto, tamponamento cardíaco e hemotórax maciço — diagnóstico clínico e conduta imediata.",
+    "revisado": false,
+    "fonte": "Advanced Trauma Life Support (ATLS) 10ª edição — American College of Surgeons",
+    "mnemonicos": [
+      {
+        "palavra": "Beck",
+        "explicacao": "Tríade de Beck do tamponamento cardíaco: hipotensão, turgência jugular e abafamento de bulhas cardíacas."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Pneumotórax hipertensivo",
+        "conteudo": "Acúmulo progressivo de ar no espaço pleural com efeito valvular, causando desvio de mediastino e colapso hemodinâmico. Diagnóstico é CLÍNICO, sem aguardar radiografia — turgência jugular, desvio de traqueia, hipotensão e ausência de murmúrio vesicular unilateral. Tratamento imediato: descompressão por agulha seguida de drenagem torácica em selo d'água."
+      },
+      {
+        "titulo": "Pneumotórax aberto",
+        "conteudo": "Ferida \"soprante\" com comunicação da cavidade pleural com o exterior. Tratamento inicial com curativo de três pontas (selado em três lados, permitindo saída de ar mas não entrada), seguido de drenagem torácica definitiva."
+      },
+      {
+        "titulo": "Tamponamento cardíaco",
+        "conteudo": "Tríade de Beck (hipotensão, turgência jugular, abafamento de bulhas cardíacas) associada a pulso paradoxal. Diagnóstico confirmado por ecocardiograma ou FAST à beira do leito. Tratamento definitivo é a toracotomia, com pericardiocentese como medida temporizadora."
+      },
+      {
+        "titulo": "Hemotórax maciço",
+        "conteudo": "Acúmulo de sangue no espaço pleural; drenagem inicial acima de 1500 mL, ou débito acima de 200 mL/h por 2-4h, define indicação de toracotomia. Tratamento com drenagem torácica associada a reposição volêmica."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Desvio de traqueia, turgência jugular e ausência de murmúrio unilateral</span> caracterizam pneumotórax hipertensivo e exigem descompressão imediata por agulha — não aguardar confirmação radiológica."
+      }
+    ]
+  },
+  {
+    "id": "trauma-abdominal",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Trauma Abdominal: Avaliação e Conduta",
+    "resumo": "FAST, manejo não operatório de lesões de órgãos sólidos e indicação de laparotomia de urgência.",
+    "revisado": false,
+    "fonte": "Advanced Trauma Life Support (ATLS) 10ª edição — American College of Surgeons",
+    "mnemonicos": [
+      {
+        "palavra": "FAST",
+        "explicacao": "Focused Assessment with Sonography for Trauma: avalia 4 janelas (pericárdica, hepatorrenal/Morrison, esplenorrenal, pélvica) em busca de líquido livre — paciente instável com FAST positivo vai direto para laparotomia."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Trauma fechado x penetrante",
+        "conteudo": "No trauma fechado (contuso), baço e fígado são os órgãos mais frequentemente lesados. No trauma penetrante, a conduta depende da localização (arma branca x arma de fogo) e da presença de sinais de peritonite ou instabilidade hemodinâmica."
+      },
+      {
+        "titulo": "FAST",
+        "conteudo": "Ultrassonografia à beira do leito para detectar líquido livre (sangue) nas cavidades abdominal, pericárdica e pleural. Paciente instável com FAST positivo tem indicação de laparotomia de urgência, sem necessidade de outros exames."
+      },
+      {
+        "titulo": "Tomografia computadorizada",
+        "conteudo": "Exame de escolha no paciente hemodinamicamente estável, para avaliar lesões de órgãos sólidos e definir manejo não operatório ou cirúrgico."
+      },
+      {
+        "titulo": "Manejo não operatório",
+        "conteudo": "Lesões de baço e fígado em pacientes hemodinamicamente estáveis, sem outros sinais de peritonite, podem ser tratadas de forma conservadora com observação rigorosa — conduta preferencial atual sempre que possível."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Instabilidade hemodinâmica que não responde à reposição volêmica</span> em trauma abdominal é indicação de laparotomia exploradora de urgência, independentemente de exames de imagem adicionais."
+      }
+    ]
+  },
+  {
+    "id": "abdome-agudo-perfurativo",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Abdome Agudo Perfurativo",
+    "resumo": "Úlcera péptica perfurada como principal causa, achado de pneumoperitônio e conduta cirúrgica de urgência.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Cirurgia Geral — Diretrizes de Abdome Agudo; Sabiston Textbook of Surgery",
+    "mnemonicos": [
+      {
+        "palavra": "Ar livre = Perfuração",
+        "explicacao": "Pneumoperitônio (ar livre sob a cúpula diafragmática na radiografia de tórax/abdome em pé) é o achado radiológico clássico que confirma perfuração de víscera oca."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Etiologia",
+        "conteudo": "Úlcera péptica perfurada é a causa mais comum (parede anterior do duodeno ou estômago). Outras causas incluem perfuração de neoplasia, diverticulite complicada e ingestão de corpo estranho."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor abdominal súbita e intensa, seguida de sinais de peritonite generalizada — abdome em tábua, defesa involuntária, descompressão brusca dolorosa — pelo extravasamento de conteúdo gastrointestinal para a cavidade peritoneal."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Radiografia de abdome em pé ou de tórax evidenciando pneumoperitônio confirma a perfuração de víscera oca na maioria dos casos. A tomografia é mais sensível quando a radiografia é inconclusiva."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Cirurgia de urgência (laparotomia ou videolaparoscopia) para controle da fonte — rafia da perfuração e lavagem exaustiva da cavidade — associada a antibioticoterapia de amplo espectro cobrindo flora entérica."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Abdome em tábua com sinais de choque</span> caracteriza abdome agudo perfurativo com peritonite generalizada — a cirurgia não deve ser postergada para investigação prolongada."
+      }
+    ]
+  },
+  {
+    "id": "isquemia-mesenterica-abdome-vascular",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Abdome Agudo Vascular: Isquemia Mesentérica Aguda",
+    "resumo": "Dor desproporcional ao exame físico como pista central, diagnóstico por angiotomografia e revascularização de urgência.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; ESVS Clinical Practice Guidelines on Mesenteric Ischaemia",
+    "mnemonicos": [
+      {
+        "palavra": "Dor desproporcional",
+        "explicacao": "Na isquemia mesentérica aguda, a dor relatada pelo paciente é desproporcionalmente intensa em relação aos achados discretos do exame físico abdominal — essa dissociação é a principal pista clínica na fase inicial, antes da necrose transmural."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Etiologia",
+        "conteudo": "Embolia arterial (origem cardioembólica, ex.: fibrilação atrial — causa mais comum), trombose arterial sobre placa aterosclerótica prévia, trombose venosa mesentérica e isquemia mesentérica não oclusiva (baixo fluxo esplâncnico em estados de choque ou uso de vasopressor)."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor abdominal desproporcional ao exame físico é a pista clássica na fase inicial. Conforme a isquemia progride para necrose transmural, surgem sinais de peritonite, distensão abdominal e sangue nas fezes."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Angiotomografia de abdome é o exame de escolha para avaliar a vasculatura mesentérica. O lactato sérico elevado é marcador indireto de isquemia, porém inespecífico, podendo estar normal em fases iniciais."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Revascularização de urgência (endovascular ou cirúrgica) quando ainda viável, associada a ressuscitação volêmica e antibioticoterapia. Segmentos intestinais já necróticos exigem ressecção cirúrgica."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Dor abdominal desproporcional</span> em paciente com fatores de risco cardiovascular (fibrilação atrial, aterosclerose) deve levantar suspeita imediata de isquemia mesentérica aguda — o atraso diagnóstico aumenta drasticamente a mortalidade."
+      }
+    ]
+  },
+  {
+    "id": "colelitiase-coledocolitiase",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Colelitíase e Coledocolitíase",
+    "resumo": "Cólica biliar x colangite aguda, e o papel da CPRE no diagnóstico e tratamento da coledocolitíase.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Cirurgia Geral; Tokyo Guidelines 2018 for Acute Cholangitis and Cholecystitis",
+    "mnemonicos": [
+      {
+        "palavra": "Charcot",
+        "explicacao": "Tríade de Charcot da colangite aguda: dor em hipocôndrio direito, febre e icterícia — associada a hipotensão e confusão mental compõe a pêntade de Reynolds, que indica colangite supurativa grave."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Colelitíase",
+        "conteudo": "Cálculos na vesícula biliar, geralmente assintomáticos (achado incidental). Quando sintomática, cursa com cólica biliar — dor em hipocôndrio direito/epigástrio, pós-prandial, associada a intolerância a alimentos gordurosos, sem sinais de inflamação sistêmica (diferente da colecistite aguda)."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Ultrassonografia abdominal é o exame de escolha inicial, com alta sensibilidade para cálculos vesiculares."
+      },
+      {
+        "titulo": "Coledocolitíase",
+        "conteudo": "Cálculo no colédoco, podendo ser assintomático ou causar icterícia obstrutiva, colúria e acolia fecal. Risco de complicações graves: colangite aguda (tríade de Charcot) e pancreatite biliar."
+      },
+      {
+        "titulo": "Investigação e tratamento",
+        "conteudo": "Colangiorressonância ou ultrassom endoscópico confirmam o diagnóstico em casos duvidosos. A colangiopancreatografia retrógrada endoscópica (CPRE) permite diagnóstico e tratamento (papilotomia com extração do cálculo) no mesmo procedimento; a colecistectomia geralmente é indicada após resolução do quadro agudo, para prevenir recorrência."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Tríade de Charcot (dor + febre + icterícia)</span> sugere colangite aguda, uma emergência que exige antibioticoterapia imediata e desobstrução biliar urgente, pelo risco de sepse biliar."
+      }
+    ]
+  },
+  {
+    "id": "doenca-hemorroidaria",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Doença Hemorroidária",
+    "resumo": "Hemorroidas internas x externas, graduação do prolapso e escada terapêutica do tratamento clínico à cirurgia.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Coloproctologia; ASCRS Clinical Practice Guidelines for Hemorrhoids",
+    "mnemonicos": [
+      {
+        "palavra": "Interna não dói, Externa dói",
+        "explicacao": "Hemorroida INTERNA (acima da linha pectínea, revestida por mucosa) costuma sangrar sem dor; hemorroida EXTERNA (abaixo da linha pectínea, revestida por pele) é ricamente inervada e dói muito quando trombosada."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Classificação",
+        "conteudo": "Hemorroidas internas: acima da linha pectínea, revestidas por mucosa, geralmente indolores, classificadas em graus I a IV conforme o grau de prolapso. Hemorroidas externas: abaixo da linha pectínea, revestidas por pele anoderme, ricamente inervadas — por isso dolorosas quando trombosadas."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Sangramento vermelho vivo ao evacuar, tipicamente sem dor nas hemorroidas internas, ou dor aguda intensa associada a nódulo perianal palpável, sugestivo de trombose hemorroidária externa."
+      },
+      {
+        "titulo": "Tratamento clínico",
+        "conteudo": "Medidas dietéticas (fibras, hidratação adequada), banho de assento morno, pomadas tópicas e correção do hábito intestinal são a base do tratamento para os graus iniciais."
+      },
+      {
+        "titulo": "Tratamento intervencionista",
+        "conteudo": "Ligadura elástica para hemorroidas internas graus I-III refratárias ao tratamento clínico. Hemorroidectomia cirúrgica reservada para grau IV ou falha de tratamentos menos invasivos. Trombose hemorroidária externa muito dolorosa e recente pode se beneficiar de excisão do trombo em ambiente ambulatorial."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Sangramento retal em paciente acima de 45-50 anos ou com fatores de risco</span> não deve ser atribuído automaticamente a hemorroidas sem antes excluir neoplasia colorretal por meio de exame proctológico/colonoscopia."
+      }
+    ]
+  },
+  {
+    "id": "afeccoes-anorretais-benignas",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Fissura Anal, Fístula Anal e Abscesso Anorretal",
+    "resumo": "Fissura anal por trauma evacuatório, drenagem obrigatória do abscesso e a regra de Goodsall na fístula anal.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Coloproctologia; ASCRS Clinical Practice Guidelines",
+    "mnemonicos": [
+      {
+        "palavra": "Abscesso drena, antibiótico não cura sozinho",
+        "explicacao": "Todo abscesso anorretal (como qualquer abscesso) precisa de drenagem cirúrgica — antibioticoterapia isolada não resolve uma coleção purulenta já formada."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fissura anal",
+        "conteudo": "Laceração linear do canal anal, quase sempre na linha média posterior, causada por trauma evacuatório (constipação, fezes endurecidas). Dor anal intensa em queimação durante e após a evacuação, associada a sangramento vivo discreto. Tratamento inicial clínico: amolecedores fecais, banho de assento e pomadas com nitrato ou bloqueador de canal de cálcio, para reduzir o espasmo esfincteriano."
+      },
+      {
+        "titulo": "Abscesso anorretal",
+        "conteudo": "Coleção purulenta originada geralmente de infecção de glândulas anais criptoglandulares. Dor perianal intensa e contínua, associada a febre e edema/hiperemia local. O tratamento é sempre a drenagem cirúrgica — antibiótico isolado não resolve uma coleção purulenta."
+      },
+      {
+        "titulo": "Fístula anal",
+        "conteudo": "Trajeto anômalo entre o canal anal e a pele perianal, frequentemente sequela de um abscesso anorretal previamente drenado (cerca de metade dos abscessos evolui para fístula). Tratamento cirúrgico: fistulotomia ou técnicas poupadoras de esfíncter, conforme a complexidade do trajeto."
+      },
+      {
+        "titulo": "Regra de Goodsall",
+        "conteudo": "Orienta a localização provável do orifício interno da fístula a partir do orifício externo: fístulas com orifício externo anterior a uma linha transversal imaginária tendem a ter trajeto retilíneo radial; as posteriores tendem a ter trajeto curvo convergindo para a linha média posterior."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Fissura anal atípica (fora da linha média, múltipla, ou que não cicatriza com tratamento adequado) deve levantar suspeita de causa secundária — doença de Crohn, tuberculose, HIV, neoplasia — e não simplesmente fissura idiopática."
+      }
+    ]
+  },
+  {
+    "id": "cancer-colorretal",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Câncer Colorretal: Diagnóstico e Estadiamento",
+    "resumo": "Sequência adenoma-carcinoma, apresentação clínica frequentemente silenciosa e a base do rastreamento por colonoscopia.",
+    "revisado": false,
+    "fonte": "Instituto Nacional de Câncer (INCA) — Diretrizes de Detecção Precoce do Câncer Colorretal; NCCN Guidelines for Colon and Rectal Cancer",
+    "mnemonicos": [
+      {
+        "palavra": "Adenoma vira Carcinoma",
+        "explicacao": "A sequência adenoma-carcinoma é a base biológica do rastreamento: remover o pólipo adenomatoso na colonoscopia interrompe a progressão antes que ele se torne câncer — rastreamento previne, não só detecta."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fatores de risco",
+        "conteudo": "Idade avançada, história familiar/pessoal de pólipos adenomatosos ou câncer colorretal, síndromes hereditárias (polipose adenomatosa familiar, síndrome de Lynch), doença inflamatória intestinal de longa data e fatores dietéticos/estilo de vida (dieta pobre em fibras, rica em carne processada, tabagismo, obesidade)."
+      },
+      {
+        "titulo": "Sequência adenoma-carcinoma",
+        "conteudo": "A maioria dos cânceres colorretais esporádicos se desenvolve a partir de pólipos adenomatosos ao longo de anos, o que fundamenta a eficácia do rastreamento por colonoscopia com polipectomia na prevenção da doença, não apenas na sua detecção precoce."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Frequentemente assintomático em fases iniciais, reforçando a importância do rastreamento. Sintomas incluem mudança do hábito intestinal, sangramento retal/melena, anemia ferropriva inexplicada (especialmente em tumores de cólon direito) e, em fases avançadas, obstrução intestinal ou perda de peso."
+      },
+      {
+        "titulo": "Estadiamento e tratamento",
+        "conteudo": "Colonoscopia com biópsia confirma o diagnóstico. Tomografia de tórax/abdome/pelve avalia extensão locorregional e metástases (fígado e pulmão são os sítios mais comuns). O tratamento cirúrgico (ressecção do segmento acometido com linfadenectomia) é a base, associado a quimioterapia adjuvante conforme o estadiamento."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Anemia ferropriva inexplicada</span> em homem ou mulher na pós-menopausa deve sempre motivar investigação do trato gastrointestinal, incluindo colonoscopia, para excluir neoplasia colorretal, mesmo sem outros sintomas."
+      }
+    ]
+  },
+  {
+    "id": "queimaduras",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Queimaduras: Classificação e Manejo Inicial",
+    "resumo": "Classificação por profundidade, regra dos nove e fórmula de Parkland para reposição volêmica.",
+    "revisado": false,
+    "fonte": "Advanced Burn Life Support (ABLS) — American Burn Association; Sociedade Brasileira de Cirurgia Plástica",
+    "mnemonicos": [
+      {
+        "palavra": "Regra dos 9",
+        "explicacao": "Estimativa rápida da superfície corporal queimada no adulto: cabeça 9%, cada braço 9%, tronco anterior 18%, tronco posterior 18%, cada perna 18%, períneo 1% — soma 100%."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Classificação por profundidade",
+        "conteudo": "Primeiro grau (epiderme, eritema doloroso sem bolhas, ex.: queimadura solar). Segundo grau superficial (derme papilar, bolhas, dolorosa). Segundo grau profundo (derme reticular, sensibilidade reduzida, maior risco de cicatriz). Terceiro grau (espessura total, indolor pela destruição de terminações nervosas, aspecto esbranquiçado/carbonizado, sempre exige enxerto)."
+      },
+      {
+        "titulo": "Cálculo da superfície corporal queimada",
+        "conteudo": "Regra dos nove no adulto: cabeça e cada braço 9%, tronco anterior 18%, tronco posterior 18%, cada perna 18%, períneo 1%. Em crianças, as proporções são ajustadas pela cabeça proporcionalmente maior."
+      },
+      {
+        "titulo": "Reposição volêmica",
+        "conteudo": "Fórmula de Parkland (4 mL x peso em kg x % de superfície corporal queimada, para queimaduras de segundo/terceiro grau acima de determinado percentual): metade do volume calculado nas primeiras 8h contadas a partir do momento da queimadura, e a outra metade nas 16h seguintes."
+      },
+      {
+        "titulo": "Manejo inicial",
+        "conteudo": "Interromper o processo de queimadura (remover roupas, resfriar com água corrente — nunca gelo diretamente), analgesia adequada, avaliação de via aérea em queimaduras faciais/inalação de fumaça e cobertura das lesões com curativo limpo."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Queimadura circunferencial de tórax ou membro</span> pode causar síndrome compartimental por constrição da escara, podendo exigir escarotomia de urgência. Sinais de lesão por inalação (fuligem em vias aéreas, queimadura facial, rouquidão) indicam necessidade de via aérea definitiva precoce, antes que o edema a torne inviável."
+      }
+    ]
+  },
+  {
+    "id": "doenca-arterial-obstrutiva-periferica",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Doença Arterial Obstrutiva Periférica (DAOP)",
+    "resumo": "Claudicação intermitente, índice tornozelo-braquial e diferenciação da isquemia aguda de membro.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; ESC/ESVS Guidelines on Peripheral Arterial Diseases 2024",
+    "mnemonicos": [
+      {
+        "palavra": "6 P's da isquemia aguda",
+        "explicacao": "Na isquemia arterial AGUDA de membro (embolia/trombose), lembrar os 6 P's: Pain (dor), Palidez, Parestesia, Paralisia, Pulseless (sem pulso), Poiquilotermia (frio) — sinal de emergência vascular."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia e fatores de risco",
+        "conteudo": "Aterosclerose das artérias dos membros, predominantemente inferiores, compartilhando fatores de risco com a doença coronariana — tabagismo (o mais fortemente associado), diabetes, hipertensão e dislipidemia."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Claudicação intermitente (dor tipo cãibra na panturrilha/coxa/nádega, desencadeada por caminhar uma distância reproduzível e aliviada pelo repouso) é o sintoma clássico. Em estágios avançados: dor em repouso e lesões tróficas/úlceras que não cicatrizam (isquemia crítica de membro)."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Índice tornozelo-braquial (ITB) — relação entre a pressão sistólica no tornozelo e no braço — é o exame inicial de escolha. ITB <0,9 é diagnóstico de DAOP; ITB <0,4 sugere isquemia crítica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Cessação do tabagismo e controle rigoroso dos fatores de risco cardiovascular são a base em todos os estágios. Exercício supervisionado melhora a distância de claudicação. Antiagregante plaquetário e estatina reduzem eventos cardiovasculares. Revascularização (endovascular ou cirúrgica) é reservada para claudicação incapacitante refratária ou isquemia crítica."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Dor isquêmica em repouso associada a úlcera/necrose e pulsos ausentes</span> caracteriza isquemia crítica de membro, com risco de amputação — exige avaliação vascular urgente para revascularização."
+      }
+    ]
+  },
+  {
+    "id": "insuficiencia-venosa-cronica",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Insuficiência Venosa Crônica e Varizes de Membros Inferiores",
+    "resumo": "Classificação CEAP, quadro clínico da hipertensão venosa e tratamento da úlcera venosa por terapia compressiva.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; Classificação CEAP revisada 2020",
+    "mnemonicos": [
+      {
+        "palavra": "Maléolo medial = Venosa",
+        "explicacao": "A úlcera venosa classicamente se localiza na região do maléolo MEDIAL, ao contrário da úlcera arterial, que tende a acometer extremidades distais (dedos, calcanhar) e áreas de maior pressão/trauma."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia",
+        "conteudo": "Disfunção das válvulas venosas (refluxo) e/ou obstrução do retorno venoso, levando a hipertensão venosa crônica nos membros inferiores. Fatores de risco: predisposição genética, sedentarismo, obesidade, gestações múltiplas e história de trombose venosa profunda prévia (síndrome pós-trombótica)."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Sensação de peso e cansaço nos membros inferiores, que piora ao longo do dia e com ortostatismo prolongado, edema vespertino, varizes visíveis e, em estágios avançados, alterações cutâneas (dermatite ocre, lipodermatoesclerose) até úlcera venosa, tipicamente na região do maléolo medial."
+      },
+      {
+        "titulo": "Classificação CEAP",
+        "conteudo": "Sistema que classifica a doença venosa crônica conforme achados Clínicos (C0-C6, sendo C6 a úlcera ativa), Etiológicos, Anatômicos e Patofisiológicos, padronizando a comunicação e orientando o tratamento."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Medidas conservadoras (elevação dos membros, meias de compressão elástica, atividade física) são a base em todos os estágios. Escleroterapia ou ablação térmica (radiofrequência/laser) para varizes sintomáticas. A úlcera venosa é tratada com curativos adequados e terapia compressiva, sendo esta a principal medida terapêutica para sua cicatrização."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Úlcera de perna que não cicatriza com terapia compressiva adequada, ou com bordas atípicas, deve ser reavaliada quanto a diagnósticos diferenciais (arterial, neuropática, neoplásica) antes de insistir apenas no tratamento venoso."
+      }
+    ]
   }
 ]
