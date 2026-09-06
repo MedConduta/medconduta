@@ -1,0 +1,10 @@
+name = "medconduta-ai"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+# GEMINI_API_KEY NÃO fica aqui — é um secret, configurado com:
+#   npx wrangler secret put GEMINI_API_KEY
+#
+# Para trocar de modelo sem mexer no código, descomente e ajuste:
+# [vars]
+# GEMINI_MODEL = "gemini-2.5-flash-lite"

@@ -50,13 +50,15 @@ MedConduta/
 │   ├── planner.js             # geração da fila do planejador de estudo do dia
 │   ├── theme.js                # alternância de tema claro/escuro/automático
 │   ├── utils.js                 # helpers (escape HTML, fetch com cache, etc.)
+│   ├── ai.js                     # cliente do assistente de IA (fala com o Worker)
+│   ├── rag.js                     # busca de contexto por palavra-chave (RAG simples)
 │   ├── components/
 │   │   ├── sidebar.js            # navegação lateral e bottom-nav mobile
 │   │   ├── icons.js               # ícones SVG inline
 │   │   └── flowchart.js             # renderização de fluxogramas a partir de JSON
 │   └── views/                        # uma view por seção da navegação
-│       ├── conteudo.js, revisao.js, flashcards.js, fluxogramas.js,
-│       │   questoes.js, planejador.js  → Área 1 (Residência)
+│       ├── conteudo.js, assistente.js, revisao.js, flashcards.js,
+│       │   fluxogramas.js, questoes.js, planejador.js  → Área 1 (Residência)
 │       └── guiaClinico.js (compartilhado), guiaAB.js, guiaUrgencia.js,
 │           prescricoes.js               → Área 2 (Guia de bolso)
 ├── data/                    # todo o conteúdo em JSON, separado do código
@@ -72,10 +74,78 @@ MedConduta/
 │   ├── base.css      # reset e tipografia base
 │   ├── layout.css     # sidebar, topbar, bottom-nav, grids responsivos
 │   └── components.css  # cards, badges, flashcards, fluxogramas, prescrições, etc.
-└── icons/
-    ├── icon.svg           # ícone padrão do PWA
-    └── icon-maskable.svg    # variante com área de segurança para ícones "maskable"
+├── icons/
+│   ├── icon.svg           # ícone padrão do PWA
+│   └── icon-maskable.svg    # variante com área de segurança para ícones "maskable"
+└── worker/                   # Worker Cloudflare (proxy gratuito para o Gemini)
+    ├── src/index.js            # código do Worker
+    ├── wrangler.toml             # configuração de deploy
+    └── package.json               # scripts (login, dev, deploy, secret)
 ```
+
+## Assistente de IA (opcional, gratuito)
+
+O MedConduta é um site estático — não tem servidor próprio para guardar uma chave de
+API com segurança. Por isso o assistente de IA usa um **Worker da Cloudflare**
+(hospedagem serverless com plano gratuito) como intermediário: ele guarda a chave do
+Gemini do lado do servidor e só repassa pergunta + contexto, sem nunca expor a chave
+no navegador. Essa arquitetura é o padrão chamado **RAG** (Retrieval-Augmented
+Generation): em vez de depender do que o modelo "sabe" do treinamento (que fica
+desatualizado), o app manda o conteúdo relevante (temas do MedConduta, e no futuro
+PDFs de prescrição/resumos que você adicionar) junto com a pergunta — o modelo responde
+com base nisso, então a atualidade da informação depende do seu conteúdo, não do
+treino do modelo.
+
+**O assistente é 100% opcional** — sem configurar nada, o resto do app funciona
+normalmente. Enquanto não configurado, os botões de IA mostram uma mensagem pedindo
+para configurar.
+
+### Passo a passo para ativar (gratuito)
+
+1. **Gerar uma chave de API do Gemini** (gratuita): acesse
+   [aistudio.google.com/apikey](https://aistudio.google.com/apikey), faça login com
+   uma conta Google e crie uma chave. Guarde-a — ela não deve ir para o repositório.
+2. **Criar uma conta gratuita na Cloudflare**: [dash.cloudflare.com/sign-up](https://dash.cloudflare.com/sign-up).
+3. **Ajustar a origem permitida**: abra `worker/src/index.js` e edite a constante
+   `ALLOWED_ORIGINS` no topo do arquivo, colocando a URL real onde o MedConduta está
+   publicado (ex.: `https://medconduta.github.io` ou seu domínio do GitHub Pages).
+4. No terminal, dentro da pasta `worker/`, rode (cada comando abre o navegador ou pede
+   input — precisa ser rodado por você, interativamente):
+   ```bash
+   npx wrangler login
+   npx wrangler secret put GEMINI_API_KEY
+   npx wrangler deploy
+   ```
+   O último comando imprime uma URL do tipo
+   `https://medconduta-ai.SEUUSUARIO.workers.dev` — essa é a URL do seu assistente.
+5. Abra o MedConduta → **Assistente IA** (na barra lateral) → cole essa URL no campo
+   "Endereço do Worker" → Salvar. Pronto, pode perguntar.
+
+### Limites do plano gratuito
+
+O modelo padrão configurado é o `gemini-2.5-flash-lite`, que no plano gratuito do
+Google permite ~1.000 requisições/dia e 15/minuto — mais que suficiente para uso
+pessoal. Se a Google mudar esses limites ou nomes de modelo no futuro, ajuste a
+constante `MODELO_PADRAO` em `worker/src/index.js` (ou defina `GEMINI_MODEL` em
+`wrangler.toml`), sem precisar mexer no restante do app.
+
+### Segurança
+
+O Worker só aceita requisições da origem configurada em `ALLOWED_ORIGINS` (protege
+contra uso casual por outros sites), mas como o código é público (repositório aberto),
+alguém determinado poderia inspecionar a rede do seu site publicado e chamar o Worker
+diretamente. Para um projeto de uso pessoal isso é um risco aceitável — se algum dia
+virar um problema (a chave do Gemini estourar a cota), a mitigação mais simples é
+adicionar um limite de requisições por IP usando o Cloudflare Workers KV (gratuito),
+não implementado nesta primeira versão para manter o setup simples.
+
+### Próximas funcionalidades planejadas (mesma infraestrutura)
+
+Hoje o assistente cobre: **chat livre** (Assistente IA), **explicar tema em
+profundidade** e **gerar questão de treino** (ambos na tela de cada tema). Ainda não
+implementados, usando a mesma base: gerar flashcards, montar simulados e analisar
+casos clínicos — além de indexar PDFs de prescrição/resumos de cursinho que você
+adicionar (hoje o RAG busca só em `data/temas.json`).
 
 ## Como rodar localmente
 

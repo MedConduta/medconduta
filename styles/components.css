@@ -634,6 +634,92 @@
   color: var(--color-text-secondary);
 }
 
+/* ---------- Assistente de IA ---------- */
+
+.ia-card #ia-resultado:empty { display: none; }
+
+.ia-resposta {
+  white-space: pre-wrap;
+  line-height: var(--lh-normal);
+}
+
+.chat-mensagens {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-height: 480px;
+  overflow-y: auto;
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.chat-msg {
+  max-width: 85%;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.chat-msg--usuario {
+  align-self: flex-end;
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent-soft-border);
+}
+
+.chat-msg--ia { align-self: flex-start; }
+
+.chat-msg--sistema {
+  align-self: center;
+  background: var(--color-bg-subtle);
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+}
+
+.chat-msg--loading { opacity: 0.6; }
+.chat-msg--erro { border-color: var(--color-danger-border); background: var(--color-danger-soft); }
+
+.chat-msg__autor {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.chat-msg__texto {
+  white-space: pre-wrap;
+  line-height: var(--lh-normal);
+}
+
+.chat-msg__aviso {
+  margin-top: var(--space-2);
+  font-size: var(--fs-xs);
+  color: var(--color-warning);
+}
+
+.chat-form {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-end;
+}
+
+.chat-form textarea {
+  flex: 1;
+  resize: vertical;
+  min-height: 44px;
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: var(--fs-sm);
+}
+.chat-form textarea:focus { border-color: var(--color-accent); }
+.chat-form textarea:disabled { opacity: 0.6; }
+
 /* ---------- Copiar feedback ---------- */
 
 .copy-toast {

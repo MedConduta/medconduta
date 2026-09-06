@@ -3,6 +3,7 @@ import { renderSidebarNav, renderBottomNav, updateActiveNav } from "./components
 import { initTheme } from "./theme.js";
 
 import * as conteudo from "./views/conteudo.js";
+import * as assistente from "./views/assistente.js";
 import * as revisao from "./views/revisao.js";
 import * as flashcards from "./views/flashcards.js";
 import * as fluxogramas from "./views/fluxogramas.js";
@@ -25,6 +26,7 @@ function paintNav(path) {
 // ---------- Rotas ----------
 registerRoute("/residencia/conteudo", conteudo.renderLista, { title: "Conteúdo" });
 registerRoute("/residencia/conteudo/:id", conteudo.renderDetalhe, { title: "Conteúdo" });
+registerRoute("/residencia/assistente", assistente.renderAssistente, { title: "Assistente IA" });
 registerRoute("/residencia/revisao", revisao.renderRevisao, { title: "Revisão espaçada" });
 registerRoute("/residencia/flashcards", flashcards.renderLista, { title: "Flashcards" });
 registerRoute("/residencia/flashcards/:deckId", flashcards.renderEstudo, { title: "Flashcards" });

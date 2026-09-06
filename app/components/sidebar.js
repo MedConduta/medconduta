@@ -5,6 +5,7 @@ export const NAV_ITEMS = [
     section: "Residência (estudo)",
     items: [
       { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
+      { path: "/residencia/assistente", label: "Assistente IA", icon: "sparkles" },
       { path: "/residencia/revisao", label: "Revisão espaçada", icon: "brain" },
       { path: "/residencia/flashcards", label: "Flashcards", icon: "layers" },
       { path: "/residencia/fluxogramas", label: "Fluxogramas", icon: "flowchart" },

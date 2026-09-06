@@ -1,5 +1,7 @@
 import { fetchJsonCached, escapeHtml } from "../utils.js";
 import { getItem, setItem } from "../db.js";
+import { askAI, isAiConfigured } from "../ai.js";
+import { formatarTemaComoContexto } from "../rag.js";
 
 async function marcarConcluido(temaId, concluido) {
   await setItem("progresso", { id: temaId, concluido, atualizadoEm: new Date().toISOString() });
@@ -194,6 +196,16 @@ export async function renderDetalhe(container, { id }) {
           )
           .join("")}
       </div>
+
+      <div class="card ia-card" style="margin-top:24px;">
+        <h3 style="margin-top:0;">Assistente de IA</h3>
+        <p class="page-header__desc" style="margin-bottom:16px;">Usa o conteúdo acima como contexto. Requer configurar o assistente uma vez em <a href="#/residencia/assistente">Assistente IA</a>.</p>
+        <div class="btn-row">
+          <button class="btn btn--secondary" id="btn-ia-explicar">Explicar mais / dar exemplo clínico</button>
+          <button class="btn btn--secondary" id="btn-ia-questao">Gerar questão de treino</button>
+        </div>
+        <div id="ia-resultado"></div>
+      </div>
     </div>
   `;
 
@@ -202,4 +214,46 @@ export async function renderDetalhe(container, { id }) {
     await marcarConcluido(tema.id, novoEstado);
     renderDetalhe(container, { id });
   });
+
+  const iaResultado = container.querySelector("#ia-resultado");
+  const btnExplicar = container.querySelector("#btn-ia-explicar");
+  const btnQuestao = container.querySelector("#btn-ia-questao");
+
+  btnExplicar.addEventListener("click", () =>
+    executarTarefaIA(iaResultado, [btnExplicar, btnQuestao], {
+      pergunta: `Explique o tema "${tema.titulo}" com mais profundidade e traga um breve exemplo de caso clínico ilustrativo.`,
+      tarefa: "explicar o tema em mais profundidade, com um exemplo de caso clínico curto ao final",
+      contexto: formatarTemaComoContexto(tema),
+    })
+  );
+
+  btnQuestao.addEventListener("click", () =>
+    executarTarefaIA(iaResultado, [btnExplicar, btnQuestao], {
+      pergunta: `Crie 1 questão de múltipla escolha (estilo prova de residência) sobre "${tema.titulo}", com 4 alternativas (A-D), indique a correta e explique o porquê ao final.`,
+      tarefa: "gerar uma questão de múltipla escolha de treino com gabarito comentado",
+      contexto: formatarTemaComoContexto(tema),
+    })
+  );
+}
+
+async function executarTarefaIA(resultadoEl, botoes, { pergunta, tarefa, contexto }) {
+  if (!(await isAiConfigured())) {
+    resultadoEl.innerHTML = `<div class="explanation-box">⚠ Configure o assistente em <a href="#/residencia/assistente">Assistente IA</a> antes de usar.</div>`;
+    return;
+  }
+  botoes.forEach((b) => (b.disabled = true));
+  resultadoEl.innerHTML = `<div class="explanation-box">Gerando resposta...</div>`;
+  try {
+    const resposta = await askAI({ pergunta, tarefa, contexto });
+    resultadoEl.innerHTML = `
+      <div class="explanation-box">
+        <div class="ia-resposta">${escapeHtml(resposta).replace(/\n/g, "<br>")}</div>
+        <div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial antes de usar.</div>
+      </div>
+    `;
+  } catch (err) {
+    resultadoEl.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
+  } finally {
+    botoes.forEach((b) => (b.disabled = false));
+  }
 }
