@@ -16,6 +16,8 @@ export const AREA_POR_CATEGORIA = {
   Reumatologia: "Clínica Médica",
   "Medicina Intensiva": "Clínica Médica",
   Emergência: "Clínica Médica",
+  Geriatria: "Clínica Médica",
+  Oncologia: "Clínica Médica",
   "Cirurgia Geral": "Cirurgia Geral",
   Ginecologia: "Ginecologia e Obstetrícia",
   Obstetrícia: "Ginecologia e Obstetrícia",

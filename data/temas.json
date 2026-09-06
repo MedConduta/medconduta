@@ -3456,5 +3456,375 @@
         "conteudo": "<span class=\"red-flag\">Monoartrite aguda associada a febre</span> exige sempre excluir artrite séptica por punção articular antes de assumir se tratar de crise de gota, pois as duas condições podem ser clinicamente indistinguíveis."
       }
     ]
+  },
+  {
+    "id": "ists-gonorreia-clamidia-outras",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+    "resumo": "Coinfecção gonococo-clamídia, herpes genital, HPV e a lógica do tratamento sindrômico de ISTs.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com IST (PCDT IST) 2022",
+    "mnemonicos": [
+      {
+        "palavra": "Trate os dois",
+        "explicacao": "Diante de corrimento uretral/cervical sugestivo de gonorreia, trate também clamídia (e vice-versa) — a coinfecção é frequente e o tratamento sindrômico cobre ambas simultaneamente."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Gonorreia e clamídia",
+        "conteudo": "Frequentemente ocorrem em coinfecção. Uretrite/cervicite com corrimento — gonorreia costuma ser mais purulenta, clamídia mais discreta ou assintomática (até 70% das mulheres infectadas). O tratamento preconizado combina ceftriaxona (gonorreia) e azitromicina (clamídia), mesmo sem confirmação laboratorial de ambas, pela alta taxa de coinfecção."
+      },
+      {
+        "titulo": "Herpes genital",
+        "conteudo": "Vesículas dolorosas agrupadas sobre base eritematosa, com tendência a recorrência. Diagnóstico predominantemente clínico. O tratamento com aciclovir ou valaciclovir reduz duração dos episódios e frequência de recorrências, mas não promove cura definitiva (o vírus permanece latente)."
+      },
+      {
+        "titulo": "HPV e condiloma acuminado",
+        "conteudo": "Verrugas genitais são causadas predominantemente por tipos de baixo risco oncogênico (6 e 11). Os tipos de alto risco oncogênico (16 e 18) estão associados ao câncer de colo do útero. O tratamento das lesões visíveis inclui ácido tricloroacético, eletrocauterização ou crioterapia."
+      },
+      {
+        "titulo": "Abordagem sindrômica",
+        "conteudo": "O Ministério da Saúde preconiza o tratamento sindrômico — por síndrome clínica (corrimento uretral, corrimento vaginal, úlcera genital) — já na primeira consulta, sem aguardar resultado laboratorial, para reduzir a cadeia de transmissão."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Toda IST diagnosticada deve motivar a oferta de testagem para outras ISTs (incluindo sífilis e HIV) e a convocação dos parceiros sexuais para tratamento, interrompendo a cadeia de transmissão."
+      }
+    ]
+  },
+  {
+    "id": "arboviroses-zika-chikungunya-febre-amarela",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Zika, Chikungunya e Febre Amarela",
+    "resumo": "Diferenciação clínica entre as principais arboviroses além da dengue e suas complicações características.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde 2024 (capítulos de Chikungunya, Zika e Febre Amarela)",
+    "mnemonicos": [
+      {
+        "palavra": "Artralgia incapacitante = Chikungunya",
+        "explicacao": "A dor articular intensa, simétrica e muitas vezes incapacitante — podendo persistir por meses — é a característica que mais diferencia a chikungunya das demais arboviroses (zika e dengue costumam causar artralgia mais leve)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Chikungunya",
+        "conteudo": "Febre alta de início súbito associada a poliartralgia intensa e simétrica (mãos, punhos, tornozelos), muitas vezes incapacitante. Pode evoluir para fase crônica com artralgia persistente por meses a anos, diferentemente do padrão habitual da dengue."
+      },
+      {
+        "titulo": "Zika",
+        "conteudo": "Quadro geralmente mais brando: febre baixa ou ausente, exantema pruriginoso, hiperemia conjuntival não purulenta e artralgia leve. A principal preocupação é a síndrome congênita do Zika, quando a infecção ocorre durante a gestação (microcefalia e outras malformações do sistema nervoso central fetal)."
+      },
+      {
+        "titulo": "Febre amarela",
+        "conteudo": "Forma leve autolimitada na maioria dos casos. A forma grave (cerca de 15%) cursa com período de intoxicação — icterícia, insuficiência hepática e renal, manifestações hemorrágicas — após uma remissão transitória inicial, com letalidade elevada. Prevenção por vacina de dose única, contraindicada em algumas situações de imunossupressão e alergia grave a ovo."
+      },
+      {
+        "titulo": "Diagnóstico diferencial",
+        "conteudo": "O quadro clínico se sobrepõe na fase aguda febril, exigindo atenção a sinais discriminadores: artralgia intensa incapacitante sugere chikungunya; exantema pruriginoso e conjuntivite sugerem zika; icterícia após período de remissão sugere febre amarela — sempre considerando o contexto epidemiológico local."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Gestante com suspeita de zika</span> deve ser encaminhada para pré-natal de alto risco e investigação de malformações fetais. Febre amarela com icterícia e manifestações hemorrágicas configura forma grave, exigindo internação e suporte intensivo."
+      }
+    ]
+  },
+  {
+    "id": "cefaleias-primarias",
+    "area": "residencia",
+    "categoria": "Neurologia",
+    "titulo": "Cefaleias Primárias: Enxaqueca, Tensional e em Salvas",
+    "resumo": "Diferenciação clínica entre os tipos de cefaleia primária e os sinais de alarme (SNOOP) para cefaleia secundária.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Cefaleia — Recomendações para o Tratamento da Migrânea 2022; International Classification of Headache Disorders (ICHD-3)",
+    "mnemonicos": [
+      {
+        "palavra": "SNOOP",
+        "explicacao": "Sinais de alarme que diferenciam cefaleia secundária de primária: Systemic symptoms, Neurologic signs, Onset thunderclap, Older age (início após os 50 anos), Pattern change (mudança do padrão habitual)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Enxaqueca (migrânea)",
+        "conteudo": "Cefaleia latejante, geralmente unilateral, de moderada a forte intensidade, que piora com atividade física de rotina, associada a náusea/vômito e fotofobia/fonofobia. Pode ou não ser precedida de aura — sintomas neurológicos focais transitórios, mais comumente visuais."
+      },
+      {
+        "titulo": "Cefaleia do tipo tensional",
+        "conteudo": "Dor em aperto/pressão, bilateral, de intensidade leve a moderada, que não piora com atividade física de rotina e sem náusea significativa. É o tipo de cefaleia primária mais prevalente na população geral."
+      },
+      {
+        "titulo": "Cefaleia em salvas",
+        "conteudo": "Dor unilateral periorbitária/temporal, de intensidade muito forte, em crises de curta duração (15-180 minutos), associada a sintomas autonômicos ipsilaterais (lacrimejamento, congestão nasal, ptose, miose). Predomina no sexo masculino, com padrão cíclico característico (\"salvas\")."
+      },
+      {
+        "titulo": "Sinais de alarme (SNOOP) para cefaleia secundária",
+        "conteudo": "Systemic symptoms (febre, perda de peso), Neurologic signs (déficit focal ao exame), Onset thunderclap (pior cefaleia da vida, início súbito em segundos), Older age (início após os 50 anos), Pattern change (mudança do padrão habitual da dor) — presença de qualquer um exige investigação com neuroimagem."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Cefaleia thunderclap</span> (pico de intensidade em segundos a poucos minutos) é emergência neurológica até prova em contrário, com principal suspeita de hemorragia subaracnóidea."
+      }
+    ]
+  },
+  {
+    "id": "demencias",
+    "area": "residencia",
+    "categoria": "Neurologia",
+    "titulo": "Síndromes Demenciais: Alzheimer e Diferenciais",
+    "resumo": "Diferenciação entre demência e delirium, e entre os principais subtipos de demência (Alzheimer, vascular, corpos de Lewy, frontotemporal).",
+    "revisado": false,
+    "fonte": "Academia Brasileira de Neurologia — Diretrizes de Diagnóstico de Demência 2023; NIA-AA Criteria for Alzheimer's Disease",
+    "mnemonicos": [
+      {
+        "palavra": "Demência é crônica, Delirium é agudo",
+        "explicacao": "Demência tem início insidioso e curso crônico progressivo, com nível de consciência preservado; delirium tem início agudo, curso flutuante, e cursa com alteração da atenção/consciência — e quase sempre tem causa clínica tratável por trás."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Diferenciação de delirium",
+        "conteudo": "Demência é um declínio cognitivo crônico e progressivo, geralmente sem rebaixamento do nível de consciência. Delirium é agudo, flutuante ao longo do dia, e cursa com alteração da atenção/consciência. Essa distinção é essencial, pois o delirium costuma ter uma causa clínica subjacente tratável."
+      },
+      {
+        "titulo": "Doença de Alzheimer",
+        "conteudo": "Causa mais comum de demência. Início insidioso com comprometimento predominante da memória episódica recente, progredindo lentamente para outros domínios cognitivos — linguagem, funções executivas, orientação espacial."
+      },
+      {
+        "titulo": "Demência vascular",
+        "conteudo": "Segunda causa mais comum de demência. Início mais abrupto ou em degraus, associado a eventos cerebrovasculares prévios, com déficits focais compatíveis com os territórios vasculares acometidos."
+      },
+      {
+        "titulo": "Demência com corpos de Lewy e frontotemporal",
+        "conteudo": "Corpos de Lewy: flutuação cognitiva, alucinações visuais bem formadas precoces e parkinsonismo. Frontotemporal: alterações comportamentais/de personalidade e de linguagem precoces e proeminentes, com relativa preservação da memória no início do quadro."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Demência de início rápido (semanas a poucos meses)</span> foge do padrão esperado das demências degenerativas e exige investigação de causas reversíveis/tratáveis: hipotireoidismo, deficiência de vitamina B12, hidrocefalia de pressão normal, neoplasia, causas infecciosas ou autoimunes."
+      }
+    ]
+  },
+  {
+    "id": "doencas-desmielinizantes",
+    "area": "residencia",
+    "categoria": "Neurologia",
+    "titulo": "Doenças Desmielinizantes: Esclerose Múltipla",
+    "resumo": "Nevrite óptica e outros surtos focais, critérios de McDonald e tratamento de surto x doença modificadora.",
+    "revisado": false,
+    "fonte": "Academia Brasileira de Neurologia — Consenso de Esclerose Múltipla 2022; McDonald Criteria 2017 Revision",
+    "mnemonicos": [
+      {
+        "palavra": "Espaço e Tempo",
+        "explicacao": "O diagnóstico de esclerose múltipla exige disseminação no ESPAÇO (lesões em locais diferentes do SNC) e no TEMPO (lesões surgindo em momentos diferentes) — sem isso, não se fecha o diagnóstico apenas com um único surto."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Epidemiologia e fisiopatologia",
+        "conteudo": "Doença autoimune que causa desmielinização multifocal do sistema nervoso central. Predomínio em mulheres jovens (20-40 anos), com maior prevalência em regiões de maior latitude."
+      },
+      {
+        "titulo": "Apresentação clínica",
+        "conteudo": "Surtos de disfunção neurológica focal: nevrite óptica (perda visual dolorosa unilateral), mielite transversa parcial, síndromes de tronco encefálico ou cerebelo. Padrão clássico de surto-remissão nas fases iniciais da doença."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Os critérios de McDonald combinam disseminação no espaço (lesões em diferentes localizações do SNC) e no tempo (lesões surgindo em momentos diferentes), evidenciadas por ressonância magnética e apoiadas pela presença de bandas oligoclonais no líquor."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Corticoide em altas doses para o tratamento do surto agudo. Drogas modificadoras de doença (interferons, fingolimode, natalizumabe, entre outras) reduzem a frequência de surtos e a progressão da incapacidade a longo prazo."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Nevrite óptica</span> (perda visual unilateral dolorosa, que piora aos movimentos oculares) em adulto jovem deve levantar suspeita de esclerose múltipla e motivar investigação com ressonância magnética."
+      }
+    ]
+  },
+  {
+    "id": "neoplasias-hematologicas-leucemia-linfoma",
+    "area": "residencia",
+    "categoria": "Hematologia",
+    "titulo": "Neoplasias Hematológicas: Leucemias e Linfomas",
+    "resumo": "Leucemias agudas e crônicas, linfoma de Hodgkin x não Hodgkin e o significado dos sintomas B.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia — Diretrizes de Leucemias e Linfomas; NCCN Guidelines for Hodgkin and Non-Hodgkin Lymphoma",
+    "mnemonicos": [
+      {
+        "palavra": "Sintomas B",
+        "explicacao": "Nos linfomas, os \"sintomas B\" (febre, sudorese noturna profusa, perda de peso significativa) entram no estadiamento e sinalizam doença mais extensa/agressiva — sua presença muda a letra do estádio, de A para B."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Leucemias agudas",
+        "conteudo": "Proliferação de células imaturas (blastos) na medula óssea, com apresentação abrupta: anemia, plaquetopenia (sangramento) e neutropenia funcional (infecções), além de possível infiltração extramedular. A leucemia linfoblástica aguda (LLA) predomina na infância; a leucemia mieloide aguda (LMA) predomina no adulto."
+      },
+      {
+        "titulo": "Leucemias crônicas",
+        "conteudo": "Leucemia linfocítica crônica (LLC): geralmente assintomática, achado incidental de linfocitose em idosos, curso indolente. Leucemia mieloide crônica (LMC): associada ao cromossomo Filadélfia (translocação BCR-ABL), com tratamento atual por inibidores de tirosina quinase (imatinibe e sucessores) e excelente resposta."
+      },
+      {
+        "titulo": "Linfoma de Hodgkin",
+        "conteudo": "Acometimento predominantemente ganglionar, com disseminação contígua e previsível entre cadeias linfonodais adjacentes. A célula de Reed-Sternberg é o achado histológico característico à biópsia. Bom prognóstico geral com quimioterapia."
+      },
+      {
+        "titulo": "Linfomas não Hodgkin",
+        "conteudo": "Grupo heterogêneo, com disseminação não contígua entre cadeias linfonodais. Podem ser indolentes (ex.: linfoma folicular) ou agressivos (ex.: linfoma difuso de grandes células B). A biópsia excisional do linfonodo é essencial para classificação e definição terapêutica."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Sintomas B (febre, sudorese noturna profusa, perda de peso maior que 10% em 6 meses) associados a linfadenopatia indicam maior estadiamento e pior prognóstico nos linfomas, exigindo investigação prioritária."
+      }
+    ]
+  },
+  {
+    "id": "disturbios-coagulacao",
+    "area": "residencia",
+    "categoria": "Hematologia",
+    "titulo": "Distúrbios da Coagulação: Hemofilias, Doença de von Willebrand e CIVD",
+    "resumo": "Interpretação de TP/TTPa e reconhecimento das principais coagulopatias hereditárias e adquiridas.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia — Manual de Coagulopatias; ISTH Guidelines for Diagnosis of DIC",
+    "mnemonicos": [
+      {
+        "palavra": "TTPa Intrínseco, TP Extrínseco",
+        "explicacao": "TTPa avalia a via INTRÍNSECA (fatores VIII, IX, XI, XII — alterada nas hemofilias e no uso de heparina). TP avalia a via EXTRÍNSECA (fator VII — alterada no uso de varfarina e na deficiência de vitamina K)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Hemofilias A e B",
+        "conteudo": "Distúrbios hereditários ligados ao X (deficiência do fator VIII na hemofilia A, do fator IX na hemofilia B), praticamente restritos ao sexo masculino. Sangramentos característicos em articulações (hemartrose) e músculos. TTPa prolongado com TP normal."
+      },
+      {
+        "titulo": "Doença de von Willebrand",
+        "conteudo": "Distúrbio hemorrágico hereditário mais comum, de herança autossômica, afetando igualmente homens e mulheres. Sangramento mucocutâneo predominante (epistaxe, gengivorragia, menorragia), já que o fator de von Willebrand também é necessário para a adesão plaquetária adequada."
+      },
+      {
+        "titulo": "Coagulação intravascular disseminada (CIVD)",
+        "conteudo": "Ativação sistêmica e descontrolada da coagulação, consumindo fatores e plaquetas, com formação de microtrombos e, paradoxalmente, sangramento difuso. Desencadeada por sepse, trauma grave e complicações obstétricas (descolamento de placenta), entre outras. Laboratório: plaquetopenia, prolongamento de TP/TTPa, D-dímero elevado e fibrinogênio baixo."
+      },
+      {
+        "titulo": "Abordagem laboratorial inicial",
+        "conteudo": "TP prolongado isolado sugere deficiência de fator VII ou uso de varfarina. TTPa prolongado isolado sugere hemofilias ou uso de heparina. Prolongamento de ambos sugere deficiência de fatores da via comum ou coagulopatia de consumo (CIVD)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Sangramento difuso associado a plaquetopenia e consumo de fatores</span> em paciente grave (sepse, trauma, complicação obstétrica) deve levantar suspeita imediata de CIVD, com tratamento direcionado à causa de base associado a suporte transfusional."
+      }
+    ]
+  },
+  {
+    "id": "avaliacao-geriatrica-ampla",
+    "area": "residencia",
+    "categoria": "Geriatria",
+    "titulo": "Avaliação Geriátrica Ampla, Quedas e Polifarmácia",
+    "resumo": "Abordagem multidimensional do idoso, síndromes geriátricas e critérios para identificar polifarmácia inadequada.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Geriatria e Gerontologia — Diretrizes de Avaliação Geriátrica Ampla; Critérios de Beers 2023 (American Geriatrics Society)",
+    "mnemonicos": [
+      {
+        "palavra": "TUG",
+        "explicacao": "Timed Up and Go: teste simples de triagem de risco de queda — o idoso se levanta de uma cadeira, caminha 3 metros, retorna e senta; tempo maior que 12-14 segundos sugere risco aumentado de queda."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Avaliação geriátrica ampla (AGA)",
+        "conteudo": "Abordagem multidimensional que avalia capacidade funcional (atividades básicas e instrumentais de vida diária), cognição, humor, mobilidade/equilíbrio, estado nutricional, condições sociais e comorbidades — orienta o plano de cuidado individualizado do idoso, para além do diagnóstico de doenças isoladas."
+      },
+      {
+        "titulo": "Síndromes geriátricas",
+        "conteudo": "Quedas, fragilidade, incontinência, delirium, sarcopenia e polifarmácia são condições multifatoriais frequentemente subdiagnosticadas, cuja identificação ativa é um dos objetivos centrais da AGA."
+      },
+      {
+        "titulo": "Quedas",
+        "conteudo": "Avaliação de risco multifatorial: força muscular, equilíbrio, acuidade visual, uso de medicações psicoativas e ambiente domiciliar. O teste \"Timed Up and Go\" (TUG) é uma triagem funcional simples de risco de queda."
+      },
+      {
+        "titulo": "Polifarmácia",
+        "conteudo": "Uso de 5 ou mais medicamentos, associado a maior risco de interações medicamentosas e eventos adversos. Os critérios de Beers e STOPP/START auxiliam na identificação de medicações potencialmente inapropriadas para idosos, orientando a desprescrição."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Queda recente associada a novo declínio funcional</span> em idoso deve motivar investigação ativa de causas subjacentes (síncope, uso de medicação psicoativa, déficit visual, fraqueza muscular), e não ser atribuída simplesmente ao \"envelhecimento normal\"."
+      }
+    ]
+  },
+  {
+    "id": "oncologia-principios-basicos",
+    "area": "residencia",
+    "categoria": "Oncologia",
+    "titulo": "Oncologia: Princípios Básicos de Estadiamento e Tratamento",
+    "resumo": "Sistema TNM, modalidades terapêuticas e reconhecimento das principais emergências oncológicas.",
+    "revisado": false,
+    "fonte": "União Internacional para o Controle do Câncer (UICC) — TNM Classification of Malignant Tumours, 8ª edição; NCCN Guidelines",
+    "mnemonicos": [
+      {
+        "palavra": "TNM",
+        "explicacao": "Estadiamento oncológico: T (tumor primário), N (linfoNodos regionais), M (Metástase a distância) — a base universal de classificação e prognóstico na maioria dos tumores sólidos."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Sistema TNM",
+        "conteudo": "Estadiamento oncológico baseado em três componentes: T (tamanho/extensão do tumor primário), N (acometimento de linfonodos regionais) e M (presença de metástase a distância). Combinados, definem o estádio clínico (I a IV), que orienta prognóstico e estratégia terapêutica."
+      },
+      {
+        "titulo": "Modalidades terapêuticas",
+        "conteudo": "Cirurgia (tratamento local, muitas vezes curativo em estádios iniciais), radioterapia (tratamento local/locorregional), quimioterapia (tratamento sistêmico citotóxico), terapia-alvo (dirigida a alterações moleculares específicas do tumor) e imunoterapia (potencializa a resposta imune antitumoral, ex.: inibidores de checkpoint)."
+      },
+      {
+        "titulo": "Intenção do tratamento",
+        "conteudo": "Curativo — busca a erradicação da doença — x paliativo — busca controle de sintomas e qualidade de vida quando a cura não é mais possível. A definição da intenção terapêutica orienta toda a discussão de risco-benefício com o paciente."
+      },
+      {
+        "titulo": "Emergências oncológicas",
+        "conteudo": "Síndrome de lise tumoral (após início de quimioterapia em tumores de alta carga proliferativa — hiperpotassemia, hiperfosfatemia, hiperuricemia, hipocalcemia, risco de lesão renal aguda), compressão medular metastática (dor associada a déficit neurológico progressivo, exige ressonância e conduta urgente) e síndrome da veia cava superior."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Neutropenia febril</span> (febre em paciente neutropênico pós-quimioterapia) é emergência oncológica que exige antibioticoterapia empírica de amplo espectro imediata, sem aguardar confirmação microbiológica."
+      }
+    ]
+  },
+  {
+    "id": "emergencias-toxicologicas-anafilaxia",
+    "area": "residencia",
+    "categoria": "Emergência",
+    "titulo": "Emergências Toxicológicas e Anafilaxia",
+    "resumo": "Toxíndromes, antídotos específicos e o tratamento imediato com adrenalina na anafilaxia.",
+    "revisado": false,
+    "fonte": "Associação Brasileira de Alergia e Imunologia — Guia Prático de Anafilaxia 2023; American College of Medical Toxicology",
+    "mnemonicos": [
+      {
+        "palavra": "Seco, quente, vermelho, louco, cego",
+        "explicacao": "Toxíndrome anticolinérgica (ex.: intoxicação por antidepressivos tricíclicos ou anti-histamínicos): pele seca, hipertermia, rubor cutâneo, agitação/delirium e midríase — mnemônico clássico para reconhecer rapidamente à beira do leito."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Abordagem geral das intoxicações exógenas",
+        "conteudo": "Suporte às funções vitais (ABC) é sempre a prioridade inicial, seguido de identificação do agente (história, embalagens, exame físico dirigido a toxíndromes), medidas de descontaminação (carvão ativado em intoxicações orais recentes selecionadas) e uso de antídotos específicos quando disponíveis."
+      },
+      {
+        "titulo": "Principais toxíndromes",
+        "conteudo": "Colinérgica (miose, sialorreia, broncorreia, bradicardia — organofosforados, tratada com atropina), anticolinérgica (\"seco, quente, vermelho, louco, cego\" — antidepressivos tricíclicos, anti-histamínicos), opioide (miose, depressão respiratória, rebaixamento — naloxona como antídoto) e simpaticomimética (agitação, midríase, taquicardia, hipertensão — cocaína, anfetaminas)."
+      },
+      {
+        "titulo": "Intoxicação por paracetamol",
+        "conteudo": "Principal causa de insuficiência hepática aguda induzida por droga. A N-acetilcisteína é o antídoto, com eficácia tempo-dependente — idealmente iniciada até 8h da ingestão, guiada pelo nomograma de Rumack-Matthew."
+      },
+      {
+        "titulo": "Anafilaxia",
+        "conteudo": "Reação de hipersensibilidade sistêmica grave e potencialmente fatal, geralmente envolvendo pele/mucosas associada a comprometimento respiratório e/ou cardiovascular. A adrenalina intramuscular (face lateral da coxa) é o tratamento de primeira linha e não deve ser postergada por dúvida diagnóstica — anti-histamínicos e corticoides são adjuvantes, não substitutos."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Atraso na administração de adrenalina</span> é o principal fator associado a desfechos fatais em anafilaxia — na dúvida diagnóstica diante de quadro sugestivo, a conduta é aplicar a adrenalina, não observar e esperar."
+      }
+    ]
   }
 ]
