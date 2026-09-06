@@ -4566,5 +4566,153 @@
         "conteudo": "Sintomas gastrointestinais vagos persistentes por mais de 2-3 semanas em mulher, especialmente após os 50 anos, sem explicação por causa digestiva evidente, devem motivar avaliação ginecológica e de imagem pélvica."
       }
     ]
+  },
+  {
+    "id": "pre-natal-baixo-alto-risco",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Pré-Natal de Baixo e Alto Risco",
+    "resumo": "Calendário mínimo de consultas, exames de rotina, cálculo de idade gestacional e critérios de encaminhamento ao alto risco.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Protocolo de Pré-Natal de Baixo Risco e Manual de Gestação de Alto Risco 2022; FEBRASGO",
+    "mnemonicos": [
+      {
+        "palavra": "6 consultas no mínimo",
+        "explicacao": "O Ministério da Saúde recomenda no mínimo 6 consultas de pré-natal no ciclo gravídico de baixo risco: 1 no primeiro trimestre, 2 no segundo e 3 no terceiro."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Calendário de consultas e exames de rotina",
+        "conteudo": "No pré-natal de baixo risco, preconiza-se no mínimo 6 consultas (1 no primeiro trimestre, 2 no segundo, 3 no terceiro). Exames de rotina incluem tipagem sanguínea/Rh, hemograma, glicemia de jejum, sorologias (HIV, sífilis, hepatite B, toxoplasmose), urina tipo I e urocultura, repetidos conforme o trimestre."
+      },
+      {
+        "titulo": "Cálculo de idade gestacional e data provável do parto",
+        "conteudo": "Pela data da última menstruação (DUM) quando confiável, ou por ultrassonografia precoce (mais acurada quando realizada no primeiro trimestre). Regra de Naegele para a data provável do parto: somar 7 dias e 9 meses à DUM (ou subtrair 3 meses e somar 7 dias e 1 ano)."
+      },
+      {
+        "titulo": "Critérios de alto risco gestacional",
+        "conteudo": "Condições clínicas prévias (hipertensão crônica, diabetes pré-gestacional, cardiopatias, doenças autoimunes), intercorrências da gestação atual (síndromes hipertensivas, diabetes gestacional, restrição de crescimento fetal, gestação múltipla) e fatores obstétricos prévios (cesáreas anteriores, prematuridade prévia, óbito fetal prévio) indicam encaminhamento a pré-natal especializado."
+      },
+      {
+        "titulo": "Suplementação de rotina",
+        "conteudo": "Ácido fólico, idealmente iniciado antes da concepção e mantido no primeiro trimestre, para prevenção de defeitos de tubo neural. Sulfato ferroso a partir da 20ª semana na ausência de anemia diagnosticada, ou em dose terapêutica quando há anemia confirmada."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Sangramento vaginal, diminuição da movimentação fetal, cefaleia intensa com sintomas visuais, ou edema súbito</span> em qualquer momento da gestação exigem avaliação obstétrica imediata, independentemente do calendário de consultas de rotina."
+      }
+    ]
+  },
+  {
+    "id": "infeccoes-ciclo-gravidico-puerperal",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Infecções no Ciclo Gravídico-Puerperal",
+    "resumo": "Rastreamento e tratamento de ITU, toxoplasmose, sífilis e HIV na gestação para prevenção da transmissão vertical.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Protocolo Clínico de Transmissão Vertical de HIV, Sífilis e Hepatites Virais 2022; FEBRASGO",
+    "mnemonicos": [
+      {
+        "palavra": "TORCH",
+        "explicacao": "Principais infecções congênitas a rastrear/lembrar na gestação: Toxoplasmose, Outras (sífilis, HIV, varicela, parvovírus), Rubéola, Citomegalovírus, Herpes simples."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Infecção do trato urinário na gestação",
+        "conteudo": "A bacteriúria assintomática deve ser sempre tratada na gestação, pelo risco aumentado de pielonefrite e trabalho de parto prematuro. Cistite e pielonefrite seguem princípios semelhantes aos da população geral, com ajuste de antibióticos seguros na gestação."
+      },
+      {
+        "titulo": "Toxoplasmose gestacional",
+        "conteudo": "Rastreamento sorológico de rotina no pré-natal. A infecção aguda materna tem risco de transmissão vertical variável conforme a idade gestacional (maior transmissão, porém menor gravidade, quanto mais tardia na gestação). Tratamento com espiramicina (reduz transmissão) e, se infecção fetal confirmada, esquema tríplice (sulfadiazina, pirimetamina, ácido folínico)."
+      },
+      {
+        "titulo": "Sífilis na gestação",
+        "conteudo": "Rastreamento obrigatório em pelo menos duas ocasiões no pré-natal (idealmente primeiro e terceiro trimestre) e no momento do parto. A penicilina benzatina é o único tratamento comprovadamente eficaz para prevenir a sífilis congênita — o parceiro deve ser tratado simultaneamente."
+      },
+      {
+        "titulo": "HIV na gestação",
+        "conteudo": "Rastreamento no pré-natal com repetição no terceiro trimestre. A terapia antirretroviral combinada reduz drasticamente a transmissão vertical. A via de parto e a profilaxia do recém-nascido dependem da carga viral materna próxima ao parto."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Sífilis materna não tratada ou tratada inadequadamente</span> é a principal causa evitável de sífilis congênita — sempre confirmar o tratamento adequado da gestante E do parceiro antes do parto."
+      }
+    ]
+  },
+  {
+    "id": "hemorragia-2a-metade-gestacao",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Hemorragias da 2ª Metade da Gestação",
+    "resumo": "Diferenciação entre descolamento prematuro de placenta, placenta prévia e rotura uterina.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Protocolo de Hemorragias da Segunda Metade da Gestação; Ministério da Saúde — Manual de Gestação de Alto Risco",
+    "mnemonicos": [
+      {
+        "palavra": "Dolorosa descola, indolor é prévia",
+        "explicacao": "Sangramento COM dor intensa e útero endurecido sugere descolamento prematuro de placenta (DPP); sangramento SEM dor, de repetição, sugere placenta prévia."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Descolamento prematuro de placenta (DPP)",
+        "conteudo": "Separação da placenta normalmente inserida antes do parto, associada a hipertensão/pré-eclâmpsia, trauma abdominal e uso de cocaína. Quadro clássico: dor abdominal súbita e intensa, sangramento vaginal (pode ser oculto), hipertonia uterina (\"útero em madeira\") e sofrimento fetal agudo — emergência obstétrica que geralmente exige interrupção imediata da gestação."
+      },
+      {
+        "titulo": "Placenta prévia",
+        "conteudo": "Implantação da placenta total ou parcialmente sobre o orifício interno do colo uterino. Sangramento vaginal indolor, de início súbito, geralmente sem hipertonia uterina, tipicamente recorrente e progressivo ao longo da gestação. Diagnóstico por ultrassonografia — o toque vaginal é contraindicado até excluir placenta prévia. A via de parto é definida pela relação entre a placenta e o orifício cervical interno."
+      },
+      {
+        "titulo": "Rotura uterina",
+        "conteudo": "Solução de continuidade da parede uterina, mais comum em úteros com cicatriz prévia (cesárea anterior) submetidos a trabalho de parto, especialmente com uso de ocitocina. Quadro de dor abdominal súbita e intensa, parada da atividade uterina, sofrimento fetal grave e sinais de choque hipovolêmico — emergência cirúrgica."
+      },
+      {
+        "titulo": "Diferenciação inicial",
+        "conteudo": "Dor intensa com hipertonia sugere DPP. Sangramento indolor e recorrente sugere placenta prévia. Dor súbita com perda de dinâmica uterina em útero cicatrizado sugere rotura uterina."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">O toque vaginal é contraindicado</span> diante de sangramento da segunda metade da gestação até que a placenta prévia seja excluída por ultrassonografia, pelo risco de provocar hemorragia maciça."
+      }
+    ]
+  },
+  {
+    "id": "cardiotocografia-bem-estar-fetal",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Cardiotocografia e Avaliação do Bem-Estar Fetal",
+    "resumo": "Interpretação de acelerações e desacelerações, classificação em categorias e medidas de ressuscitação intrauterina.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Diretriz de Avaliação da Vitalidade Fetal Intraparto; ACOG Practice Bulletin on Intrapartum Fetal Heart Rate Monitoring",
+    "mnemonicos": [
+      {
+        "palavra": "Tardia = Tardio demais",
+        "explicacao": "Desaceleração TARDIA (que começa depois do pico da contração) é a mais preocupante — sugere insuficiência uteroplacentária e hipóxia fetal, exigindo atenção imediata, diferente da desaceleração precoce (benigna)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Parâmetros avaliados",
+        "conteudo": "Frequência cardíaca fetal basal (normal 110-160 bpm), variabilidade (oscilação da linha de base — sua ausência/redução é o parâmetro mais preocupante para hipóxia fetal), acelerações transitórias (associadas a bem-estar fetal) e desacelerações (classificadas conforme a relação temporal com as contrações uterinas)."
+      },
+      {
+        "titulo": "Tipos de desaceleração",
+        "conteudo": "Precoces: espelham a contração uterina, geralmente por compressão da cabeça fetal — achado benigno. Variáveis: início e duração variáveis em relação à contração, por compressão de cordão — podem ser preocupantes se recorrentes e graves. Tardias: início após o pico da contração, sugerem insuficiência uteroplacentária e são as mais preocupantes para hipóxia fetal."
+      },
+      {
+        "titulo": "Classificação da cardiotocografia",
+        "conteudo": "Categoria I (normal — tranquilizadora, sem necessidade de intervenção imediata). Categoria II (indeterminada — requer vigilância e reavaliação, pode necessitar medidas de ressuscitação intrauterina). Categoria III (anormal — associada a estado ácido-base fetal anormal, exige intervenção imediata, incluindo possível interrupção da gestação)."
+      },
+      {
+        "titulo": "Medidas de ressuscitação intrauterina",
+        "conteudo": "Mudança de decúbito materno (lateral esquerdo), correção de hipotensão materna, suspensão de ocitocina se em uso, oxigenioterapia materna e hidratação — tentativas de reverter um padrão categoria II/III antes de decidir por parto operatório de urgência."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Desacelerações tardias recorrentes associadas a variabilidade mínima ou ausente</span> (padrão categoria III) indicam sofrimento fetal significativo e exigem interrupção imediata da gestação pela via mais rápida disponível."
+      }
+    ]
   }
 ]
