@@ -59,8 +59,9 @@ MedConduta/
 │   │   ├── icons.js               # ícones SVG inline
 │   │   └── flowchart.js             # renderização de fluxogramas a partir de JSON
 │   └── views/                        # uma view por seção da navegação
-│       ├── conteudo.js, assistente.js, revisao.js, flashcards.js,
-│       │   fluxogramas.js, questoes.js, planejador.js  → Área 1 (Residência)
+│       ├── conteudo.js (mostra também flashcards e fluxogramas do tema,
+│       │   via components/flowchart.js), assistente.js, revisao.js,
+│       │   flashcards.js, questoes.js, planejador.js  → Área 1 (Residência)
 │       └── guiaClinico.js (compartilhado), guiaAB.js, guiaUrgencia.js,
 │           prescricoes.js               → Área 2 (Guia de bolso)
 ├── data/                    # todo o conteúdo em JSON, separado do código

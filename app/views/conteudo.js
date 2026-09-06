@@ -5,6 +5,7 @@ import { AREA_POR_CATEGORIA, ORDEM_AREAS, CATEGORIAS_VALIDAS } from "../areas.js
 import { gerarTemaComIA, gerarFlashcardsComIA, gerarQuestaoComIA, avaliarTemaComIA } from "../iaConteudo.js";
 import { askAI } from "../ai.js";
 import { formatarTemaComoContexto } from "../rag.js";
+import { renderFlowchart } from "../components/flowchart.js";
 
 async function marcarConcluido(temaId, concluido) {
   await setItem("progresso", { id: temaId, concluido, atualizadoEm: new Date().toISOString() });
@@ -18,6 +19,16 @@ async function todosOsTemas() {
 async function encontrarTema(id) {
   const temas = await todosOsTemas();
   return temas.find((t) => t.id === id) || null;
+}
+
+async function decksDoTema(temaId) {
+  const [curados, gerados] = await Promise.all([fetchJsonCached("data/flashcards.json"), getAll("ia_flashcards")]);
+  return [...curados, ...gerados].filter((d) => d.temaId === temaId);
+}
+
+async function fluxogramasDoTema(temaId) {
+  const fluxos = await fetchJsonCached("data/fluxogramas.json");
+  return fluxos.filter((f) => f.temaId === temaId);
 }
 
 function agruparPorAreaECategoria(temas) {
@@ -170,6 +181,40 @@ function renderTemaListItem(tema) {
   `;
 }
 
+function renderRelacionados({ decks, fluxos }) {
+  return `
+    <div class="section-block" style="margin-top:24px;">
+      <h3>Flashcards e fluxogramas relacionados</h3>
+      ${decks
+        .map(
+          (deck) => `
+        <a class="card card--interactive list-card" href="#/residencia/flashcards/${deck.id}" style="margin-bottom:12px;">
+          <div class="list-card__top">
+            <span class="badge badge--accent">${deck.cards.length} cards</span>
+            ${deck.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
+          </div>
+          <div class="list-card__title">${escapeHtml(deck.titulo)}</div>
+        </a>`
+        )
+        .join("")}
+      ${fluxos
+        .map(
+          (fluxo) => `
+        <details class="card" style="margin-bottom:12px;">
+          <summary style="cursor:pointer;font-weight:600;">
+            <span class="badge badge--${fluxo.tipo}">${fluxo.tipo === "diagnostico" ? "Diagnóstico" : "Tratamento"}</span>
+            ${escapeHtml(fluxo.titulo)}
+          </summary>
+          <div style="margin-top:16px;">
+            ${renderFlowchart(fluxo.fluxo)}
+          </div>
+        </details>`
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 export async function renderDetalhe(container, { id }) {
   const tema = await encontrarTema(id);
 
@@ -181,6 +226,7 @@ export async function renderDetalhe(container, { id }) {
   const progresso = await getItem("progresso", tema.id);
   const concluido = !!progresso?.concluido;
   const geradoPorIA = tema.origem === "ia";
+  const [decks, fluxos] = await Promise.all([decksDoTema(tema.id), fluxogramasDoTema(tema.id)]);
 
   container.innerHTML = `
     <div class="main__container">
@@ -195,7 +241,6 @@ export async function renderDetalhe(container, { id }) {
         <button class="btn ${concluido ? "btn--secondary" : "btn--primary"}" id="btn-concluir">
           ${concluido ? "✓ Marcado como estudado" : "Marcar como estudado"}
         </button>
-        <a class="btn btn--secondary" href="#/residencia/fluxogramas">Ver fluxogramas relacionados</a>
       </div>
 
       <div class="prose">
@@ -220,6 +265,8 @@ export async function renderDetalhe(container, { id }) {
           )
           .join("")}
       </div>
+
+      ${decks.length || fluxos.length ? renderRelacionados({ decks, fluxos }) : ""}
 
       <div class="card ia-card" style="margin-top:24px;">
         <h3 style="margin-top:0;">Assistente de IA</h3>

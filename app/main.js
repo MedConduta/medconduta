@@ -6,7 +6,6 @@ import * as conteudo from "./views/conteudo.js";
 import * as assistente from "./views/assistente.js";
 import * as revisao from "./views/revisao.js";
 import * as flashcards from "./views/flashcards.js";
-import * as fluxogramas from "./views/fluxogramas.js";
 import * as questoes from "./views/questoes.js";
 import * as planejador from "./views/planejador.js";
 import * as guiaAB from "./views/guiaAB.js";
@@ -30,8 +29,6 @@ registerRoute("/residencia/assistente", assistente.renderAssistente, { title: "A
 registerRoute("/residencia/revisao", revisao.renderRevisao, { title: "Revisão espaçada" });
 registerRoute("/residencia/flashcards", flashcards.renderLista, { title: "Flashcards" });
 registerRoute("/residencia/flashcards/:deckId", flashcards.renderEstudo, { title: "Flashcards" });
-registerRoute("/residencia/fluxogramas", fluxogramas.renderLista, { title: "Fluxogramas" });
-registerRoute("/residencia/fluxogramas/:id", fluxogramas.renderDetalhe, { title: "Fluxogramas" });
 registerRoute("/residencia/questoes", questoes.renderLista, { title: "Questões" });
 registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "Planejador do dia" });
 
