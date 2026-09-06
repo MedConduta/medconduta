@@ -6,9 +6,64 @@ async function marcarConcluido(temaId, concluido) {
   await setItem("progresso", { id: temaId, concluido, atualizadoEm: new Date().toISOString() });
 }
 
+/**
+ * Mapa subespecialidade (campo `categoria` em temas.json) → grande área.
+ * Novas categorias não listadas aqui caem em "Outros", visível assim que
+ * o primeiro tema daquela categoria for adicionado.
+ */
+const AREA_POR_CATEGORIA = {
+  Cardiologia: "Clínica Médica",
+  Endocrinologia: "Clínica Médica",
+  Pneumologia: "Clínica Médica",
+  Nefrologia: "Clínica Médica",
+  Gastroenterologia: "Clínica Médica",
+  Neurologia: "Clínica Médica",
+  Infectologia: "Clínica Médica",
+  Hematologia: "Clínica Médica",
+  Reumatologia: "Clínica Médica",
+  "Medicina Intensiva": "Clínica Médica",
+  Emergência: "Clínica Médica",
+  "Cirurgia Geral": "Cirurgia Geral",
+  Ginecologia: "Ginecologia e Obstetrícia",
+  Obstetrícia: "Ginecologia e Obstetrícia",
+  Pediatria: "Pediatria",
+  "Medicina Preventiva": "Medicina Preventiva",
+};
+
+const ORDEM_AREAS = [
+  "Clínica Médica",
+  "Cirurgia Geral",
+  "Ginecologia e Obstetrícia",
+  "Pediatria",
+  "Medicina Preventiva",
+  "Outros",
+];
+
+function agruparPorAreaECategoria(temas) {
+  const areas = new Map();
+  for (const tema of temas) {
+    const area = AREA_POR_CATEGORIA[tema.categoria] || "Outros";
+    if (!areas.has(area)) areas.set(area, new Map());
+    const categorias = areas.get(area);
+    if (!categorias.has(tema.categoria)) categorias.set(tema.categoria, []);
+    categorias.get(tema.categoria).push(tema);
+  }
+  return [...areas.entries()]
+    .sort((a, b) => ORDEM_AREAS.indexOf(a[0]) - ORDEM_AREAS.indexOf(b[0]))
+    .map(([area, categorias]) => ({
+      area,
+      categorias: [...categorias.entries()]
+        .sort((a, b) => a[0].localeCompare(b[0], "pt-BR"))
+        .map(([categoria, itens]) => ({
+          categoria,
+          temas: itens.sort((a, b) => a.titulo.localeCompare(b.titulo, "pt-BR")),
+        })),
+    }));
+}
+
 export async function renderLista(container) {
   const temas = await fetchJsonCached("data/temas.json");
-  const categorias = [...new Set(temas.map((t) => t.categoria))];
+  const grupos = agruparPorAreaECategoria(temas);
 
   container.innerHTML = `
     <div class="main__container">
@@ -17,38 +72,78 @@ export async function renderLista(container) {
         <h1>Resumos por tema</h1>
         <p class="page-header__desc">Conteúdo estruturado para prática clínica e provas de residência R1, com mnemônicos destacados. Todo o conteúdo clínico é rascunho a validar — veja o aviso em cada tema.</p>
       </div>
-      <div class="tag-filter-bar" role="group" aria-label="Filtrar por categoria">
-        <button class="tag-filter is-active" data-cat="todas">Todas</button>
-        ${categorias.map((c) => `<button class="tag-filter" data-cat="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join("")}
+      <div class="field" style="max-width:360px;">
+        <label for="busca-temas" class="visually-hidden">Buscar tema</label>
+        <input type="text" id="busca-temas" placeholder="Buscar tema (ex.: anemia, HAS, sepse...)" autocomplete="off" />
       </div>
-      <div class="card-grid" id="temas-grid">
-        ${temas.map(renderCardTema).join("")}
+      <div class="content-tree" id="content-tree">
+        ${grupos.map(renderAreaBox).join("")}
       </div>
+      <p class="empty-state" id="busca-vazio" hidden>Nenhum tema encontrado para essa busca.</p>
     </div>
   `;
 
-  container.querySelectorAll(".tag-filter").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      container.querySelectorAll(".tag-filter").forEach((b) => b.classList.remove("is-active"));
-      btn.classList.add("is-active");
-      const cat = btn.dataset.cat;
-      container.querySelectorAll("#temas-grid > a").forEach((card) => {
-        card.style.display = cat === "todas" || card.dataset.categoria === cat ? "" : "none";
+  const input = container.querySelector("#busca-temas");
+  const tree = container.querySelector("#content-tree");
+  const vazio = container.querySelector("#busca-vazio");
+
+  input.addEventListener("input", () => {
+    const termo = input.value.trim().toLowerCase();
+    let algumVisivel = false;
+
+    tree.querySelectorAll(".content-area").forEach((areaEl) => {
+      let areaTemAlgo = false;
+      areaEl.querySelectorAll(".content-group").forEach((groupEl) => {
+        let grupoTemAlgo = false;
+        groupEl.querySelectorAll(".content-list__item").forEach((itemEl) => {
+          const bate = !termo || itemEl.dataset.busca.includes(termo);
+          itemEl.hidden = !bate;
+          if (bate) grupoTemAlgo = true;
+        });
+        groupEl.hidden = !grupoTemAlgo;
+        if (grupoTemAlgo) areaTemAlgo = true;
       });
+      areaEl.hidden = !areaTemAlgo;
+      if (areaTemAlgo) {
+        algumVisivel = true;
+        if (termo) areaEl.open = true;
+      }
     });
+
+    vazio.hidden = algumVisivel;
   });
 }
 
-function renderCardTema(tema) {
+function renderAreaBox({ area, categorias }) {
+  const total = categorias.reduce((acc, c) => acc + c.temas.length, 0);
   return `
-    <a class="card card--interactive list-card" href="#/residencia/conteudo/${tema.id}" data-categoria="${escapeHtml(tema.categoria)}">
-      <div class="list-card__top">
-        <span class="badge badge--accent">${escapeHtml(tema.categoria)}</span>
-        ${tema.revisado ? '<span class="validation-flag validation-flag--ok">✓ revisado</span>' : '<span class="validation-flag validation-flag--pending">⚠ a validar</span>'}
-      </div>
-      <div class="list-card__title">${escapeHtml(tema.titulo)}</div>
-      <p class="list-card__meta">${escapeHtml(tema.resumo)}</p>
-    </a>
+    <details class="card content-area" open>
+      <summary class="content-area__title">${escapeHtml(area)} <span class="content-area__count">${total}</span></summary>
+      ${categorias.map(renderCategoriaGroup).join("")}
+    </details>
+  `;
+}
+
+function renderCategoriaGroup({ categoria, temas }) {
+  return `
+    <div class="content-group">
+      <h3 class="content-group__title">${escapeHtml(categoria)}</h3>
+      <ul class="content-list">
+        ${temas.map(renderTemaListItem).join("")}
+      </ul>
+    </div>
+  `;
+}
+
+function renderTemaListItem(tema) {
+  const busca = `${tema.titulo} ${tema.categoria} ${tema.resumo}`.toLowerCase();
+  return `
+    <li>
+      <a class="content-list__item" href="#/residencia/conteudo/${tema.id}" data-busca="${escapeHtml(busca)}">
+        <span class="content-list__title">${escapeHtml(tema.titulo)}</span>
+        ${tema.revisado ? '<span class="validation-flag validation-flag--ok">✓</span>' : '<span class="validation-flag validation-flag--pending">⚠</span>'}
+      </a>
+    </li>
   `;
 }
 

@@ -1768,5 +1768,73 @@
         "conteudo": "<span class=\"red-flag\">Ideação suicida com plano estruturado e acesso a meios letais</span> caracteriza risco iminente, exigindo intervenção e acompanhamento imediatos."
       }
     ]
+  },
+  {
+    "id": "anemias-carenciais",
+    "area": "residencia",
+    "categoria": "Hematologia",
+    "titulo": "Anemias Carenciais (Ferropriva e Megaloblástica)",
+    "resumo": "Diagnóstico diferencial pelo VCM e reposição nas anemias por deficiência de ferro, B12 e folato.",
+    "revisado": false,
+    "fonte": "",
+    "mnemonicos": [
+      { "palavra": "VCM: MICRO x MACRO", "explicacao": "O volume corpuscular médio (VCM) orienta o diagnóstico diferencial inicial: anemia ferropriva é microcítica (VCM baixo); anemia megaloblástica (B12/folato) é macrocítica (VCM alto)." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Anemia ferropriva",
+        "conteudo": "Causa mais comum de anemia no mundo. Decorre de perda sanguínea crônica, dieta inadequada ou má absorção. Laboratorialmente microcítica e hipocrômica, com ferritina sérica baixa."
+      },
+      {
+        "titulo": "Anemia megaloblástica",
+        "conteudo": "Causada por deficiência de vitamina B12 e/ou ácido fólico, resultando em anemia macrocítica. A deficiência de B12 pode cursar com alterações neurológicas associadas (parestesias, alteração de propriocepção)."
+      },
+      {
+        "titulo": "Investigação diferencial",
+        "conteudo": "Hemograma com índices hematimétricos (VCM, RDW) orienta a investigação inicial, complementada por dosagem de ferritina, vitamina B12 e folato conforme a suspeita."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Reposição de ferro (oral ou parenteral, conforme causa, gravidade e tolerância) na anemia ferropriva; reposição de B12 e/ou folato conforme a deficiência identificada na anemia megaloblástica."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Anemia ferropriva em adulto sem causa dietética evidente</span> exige investigação de sangramento oculto do trato gastrointestinal, incluindo rastreio de neoplasia."
+      }
+    ]
+  },
+  {
+    "id": "anemias-hemoliticas",
+    "area": "residencia",
+    "categoria": "Hematologia",
+    "titulo": "Anemias Hemolíticas",
+    "resumo": "Reconhecimento laboratorial da hemólise e principais causas hereditárias e adquiridas.",
+    "revisado": false,
+    "fonte": "",
+    "mnemonicos": [
+      { "palavra": "TRÍADE DA HEMÓLISE", "explicacao": "Bilirrubina indireta elevada, LDH elevado e haptoglobina baixa, associados a reticulocitose — padrão laboratorial clássico de hemólise, independentemente da causa." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Reconhecimento laboratorial",
+        "conteudo": "Bilirrubina indireta elevada, LDH elevado, haptoglobina reduzida e reticulocitose (resposta medular compensatória) caracterizam o padrão hemolítico."
+      },
+      {
+        "titulo": "Causas hereditárias",
+        "conteudo": "Esferocitose hereditária, anemia falciforme e deficiência de G6PD são causas hereditárias comuns de hemólise."
+      },
+      {
+        "titulo": "Causas adquiridas",
+        "conteudo": "Anemia hemolítica autoimune e microangiopatias trombóticas (como PTT e SHU) são causas adquiridas relevantes."
+      },
+      {
+        "titulo": "Investigação",
+        "conteudo": "Esfregaço de sangue periférico (esquizócitos, esferócitos) e teste de Coombs direto ajudam a diferenciar causas imunes de não imunes."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Queda rápida de hemoglobina com sinais de instabilidade hemodinâmica</span> caracteriza crise hemolítica grave, exigindo suporte transfusional e investigação urgente da causa."
+      }
+    ]
   }
 ]

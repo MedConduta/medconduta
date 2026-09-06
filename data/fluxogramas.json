@@ -1344,5 +1344,73 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-anemias-carenciais-diagnostico",
+    "temaId": "anemias-carenciais",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Anemia — Fluxo diagnóstico pelo VCM",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Anemia identificada no hemograma" },
+      { "tipo": "action", "texto": "Avaliar VCM (volume corpuscular médio)" },
+      {
+        "tipo": "decisao",
+        "texto": "VCM baixo (microcítica)?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Dosar ferritina" }, { "tipo": "end", "texto": "Ferritina baixa confirma anemia ferropriva → investigar causa da perda/má absorção" } ] },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "VCM alto (macrocítica)?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Dosar B12 e folato" }, { "tipo": "end", "texto": "Repor conforme a deficiência identificada" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar outras causas de anemia normocítica" } ] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-anemias-hemoliticas-diagnostico",
+    "temaId": "anemias-hemoliticas",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de hemólise — Fluxo diagnóstico",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Suspeita de hemólise (icterícia + anemia + reticulocitose)" },
+      { "tipo": "action", "texto": "Dosar bilirrubina indireta, LDH, haptoglobina e reticulócitos" },
+      {
+        "tipo": "decisao",
+        "texto": "Padrão laboratorial compatível com hemólise?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Realizar teste de Coombs direto" },
+              {
+                "tipo": "decisao",
+                "texto": "Coombs direto positivo?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Anemia hemolítica autoimune → investigar causa de base" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar causas hereditárias (esferocitose, falciforme, G6PD) ou microangiopáticas" } ] }
+                ]
+              }
+            ]
+          },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar outras causas de anemia" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Queda rápida de hemoglobina com instabilidade hemodinâmica → suporte transfusional urgente" }
+    ]
   }
 ]

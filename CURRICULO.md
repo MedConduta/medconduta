@@ -21,6 +21,7 @@ puramente teóricos (ex.: indicadores de saúde), sem fluxo clínico aplicável.
 - Gastroenterologia: ✅ HDA · ✅ Doença ulcerosa péptica · ✅ Cirrose e complicações · ✅ Pancreatite aguda
 - Neurologia: ✅ AVC isquêmico · ✅ AVC hemorrágico · ✅ Estado de mal epiléptico · ✅ Meningite
 - Infectologia/Emergência: ✅ Sepse · ✅ PCR/ACLS · ✅ Dengue/arboviroses · ✅ Sífilis
+- Hematologia: ✅ Anemias carenciais (ferropriva/megaloblástica) · ✅ Anemias hemolíticas
 
 ## Cirurgia Geral
 
@@ -51,7 +52,7 @@ puramente teóricos (ex.: indicadores de saúde), sem fluxo clínico aplicável.
 
 ---
 
-**Cobertura das 5 grandes áreas concluída** — 44 temas no total. Este roteiro segue
+**Cobertura das 5 grandes áreas concluída** — 55 temas no total. Este roteiro segue
 como referência viva: para aprofundar um tema já coberto (ex.: adicionar mais
 fluxogramas, flashcards ou questões a um tema existente) ou abrir novas subáreas,
 basta indicar a prioridade e seguir o mesmo padrão de arquivos em `/data`.
