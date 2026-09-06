@@ -5972,5 +5972,153 @@
         "conteudo": "<span class=\"red-flag\">Exantema associado a acometimento de mucosas, dor cutânea desproporcional ou sinal de Nikolsky positivo</span> exige suspensão imediata do medicamento suspeito e avaliação de urgência, pela possibilidade de SSJ/NET."
       }
     ]
+  },
+  {
+    "id": "avaliacao-pre-anestesica-asa",
+    "area": "residencia",
+    "categoria": "Anestesiologia",
+    "titulo": "Avaliação Pré-Anestésica e Classificação ASA",
+    "resumo": "Objetivos da avaliação pré-anestésica, classificação ASA de estado físico e preditores de via aérea difícil.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Anestesiologia; American Society of Anesthesiologists — ASA Physical Status Classification System",
+    "mnemonicos": [
+      {
+        "palavra": "ASA sobe com a gravidade",
+        "explicacao": "A classificação ASA é uma escala crescente de risco: quanto maior o número (I a V), mais grave a condição sistêmica do paciente — ASA I é o paciente hígido, ASA V é o paciente moribundo."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Objetivos da avaliação pré-anestésica",
+        "conteudo": "Identificar comorbidades que aumentam o risco perioperatório, otimizar condições clínicas antes da cirurgia, planejar a técnica anestésica mais adequada e informar o paciente sobre riscos — não se resume a \"liberar\" o paciente para cirurgia."
+      },
+      {
+        "titulo": "Classificação do estado físico ASA",
+        "conteudo": "ASA I (paciente saudável), ASA II (doença sistêmica leve, sem limitação funcional), ASA III (doença sistêmica grave com limitação funcional), ASA IV (doença sistêmica grave que é ameaça constante à vida), ASA V (paciente moribundo, não espera sobreviver sem a cirurgia) e ASA VI (morte encefálica, doador de órgãos); o sufixo \"E\" indica cirurgia de emergência."
+      },
+      {
+        "titulo": "Avaliação de via aérea",
+        "conteudo": "Preditores de via aérea difícil incluem classificação de Mallampati, distância tireomentoniana reduzida, limitação de abertura bucal e de extensão cervical, e histórico de intubação difícil prévia — a identificação prévia permite planejamento adequado da estratégia de via aérea."
+      },
+      {
+        "titulo": "Jejum pré-operatório",
+        "conteudo": "Recomendações atuais permitem líquidos claros até 2 horas antes da anestesia (em pacientes sem risco aumentado de aspiração), leite materno até 4 horas, e alimentos sólidos/leite não humano até 6-8 horas."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Preditores de via aérea difícil não identificados previamente</span> aumentam significativamente o risco de complicações graves durante a indução anestésica."
+      }
+    ]
+  },
+  {
+    "id": "via-aerea-dificil",
+    "area": "residencia",
+    "categoria": "Anestesiologia",
+    "titulo": "Manejo da Via Aérea Difícil",
+    "resumo": "Preditores de dificuldade, o algoritmo de via aérea difícil e a prioridade absoluta da oxigenação.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Anestesiologia; American Society of Anesthesiologists Practice Guidelines for Management of the Difficult Airway",
+    "mnemonicos": [
+      {
+        "palavra": "Oxigenar antes de intubar",
+        "explicacao": "Em qualquer algoritmo de via aérea difícil, a prioridade absoluta é manter a oxigenação do paciente — mais importante do que insistir numa técnica específica de intubação que não está funcionando."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição",
+        "conteudo": "Situação clínica em que há dificuldade na ventilação sob máscara facial, na intubação traqueal, ou em ambas — pode ser antecipada (identificada na avaliação pré-anestésica) ou inesperada (surge apenas no momento da indução)."
+      },
+      {
+        "titulo": "Preditores de dificuldade",
+        "conteudo": "Classificação de Mallampati elevada, abertura bucal reduzida, distância tireomentoniana curta, mobilidade cervical limitada, retrognatia, obesidade e história prévia de via aérea difícil — nenhum preditor isolado tem acurácia perfeita, por isso a avaliação combinada é mais confiável."
+      },
+      {
+        "titulo": "Algoritmo de via aérea difícil",
+        "conteudo": "Prioriza sempre a oxigenação do paciente acima de qualquer tentativa específica de intubação. Em caso de falha, o número de tentativas deve ser limitado, avançando para dispositivos supraglóticos (ex.: máscara laríngea) e, em situação extrema de \"não intuba, não ventila\", para via aérea cirúrgica de emergência (cricotireoidostomia)."
+      },
+      {
+        "titulo": "Dispositivos auxiliares",
+        "conteudo": "O videolaringoscópio aumenta a taxa de sucesso na intubação em vias aéreas difíceis previstas, comparado à laringoscopia direta convencional. O bougie (fio-guia) auxilia a intubação quando a visualização da glote é parcial."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Situação \"não intuba, não ventila\"</span> é uma das poucas verdadeiras emergências imediatas em anestesiologia — exige progressão rápida e sem hesitação para via aérea cirúrgica de urgência."
+      }
+    ]
+  },
+  {
+    "id": "farmacologia-anestesicos-locais-gerais",
+    "area": "residencia",
+    "categoria": "Anestesiologia",
+    "titulo": "Farmacologia dos Anestésicos Locais e Gerais",
+    "resumo": "Mecanismo dos anestésicos locais, toxicidade sistêmica (LAST), agentes gerais e a hipertermia maligna.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Anestesiologia; Miller's Anesthesia",
+    "mnemonicos": [
+      {
+        "palavra": "Amidas têm 2 'i', ésteres não",
+        "explicacao": "Os nomes genéricos das amidas (lidocaína, bupivacaína, ropivacaína, prilocaína) têm a letra 'i' duas vezes antes do sufixo -caína; os ésteres (procaína, tetracaína, benzocaína) têm apenas um 'i'."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Mecanismo dos anestésicos locais",
+        "conteudo": "Bloqueiam canais de sódio dependentes de voltagem nas membranas neuronais, impedindo a propagação do potencial de ação. Classificados em ésteres (procaína, tetracaína — maior risco de reações alérgicas) e amidas (lidocaína, bupivacaína, ropivacaína — metabolização hepática, menor risco alérgico)."
+      },
+      {
+        "titulo": "Toxicidade sistêmica dos anestésicos locais (LAST)",
+        "conteudo": "Ocorre por absorção sistêmica excessiva ou injeção intravascular inadvertida. Manifesta-se inicialmente com sintomas neurológicos (formigamento perioral, zumbido, gosto metálico, podendo progredir para convulsões) e, em doses mais altas, toxicidade cardiovascular grave. Tratamento específico com emulsão lipídica intravenosa (\"resgate lipídico\")."
+      },
+      {
+        "titulo": "Anestésicos gerais inalatórios",
+        "conteudo": "Agem predominantemente no sistema nervoso central, causando inibição da consciência, amnésia e imobilidade. A hipertermia maligna é complicação rara, porém potencialmente fatal, desencadeada por agentes halogenados e succinilcolina em indivíduos geneticamente suscetíveis."
+      },
+      {
+        "titulo": "Anestésicos venosos e bloqueadores neuromusculares",
+        "conteudo": "Propofol (indução rápida, também usado para sedação) e opioides (analgesia). Bloqueadores neuromusculares: succinilcolina (despolarizante, ação ultrarrápida) e rocurônio/vecurônio (não despolarizantes) facilitam a intubação, exigindo reversão adequada ao final do procedimento."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Hipertermia maligna</span> (elevação rápida da temperatura, rigidez muscular generalizada, acidose e hipercalemia durante anestesia geral) é emergência com tratamento específico (dantrolene) que não deve ser postergado."
+      }
+    ]
+  },
+  {
+    "id": "manejo-dor-aguda-cronica",
+    "area": "residencia",
+    "categoria": "Anestesiologia",
+    "titulo": "Manejo da Dor Aguda e Crônica",
+    "resumo": "Escada analgésica da OMS, diferenciação entre dor nociceptiva e neuropática, e analgesia multimodal pós-operatória.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Anestesiologia; Organização Mundial da Saúde — WHO Guidelines for the Pharmacological Management of Cancer Pain",
+    "mnemonicos": [
+      {
+        "palavra": "Escada da OMS",
+        "explicacao": "Degrau 1: dor leve, analgésico simples/AINE. Degrau 2: dor moderada, opioide fraco associado ao degrau 1. Degrau 3: dor intensa, opioide forte — subir a escada conforme a intensidade da dor não controlada no degrau anterior."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Escada analgésica da OMS",
+        "conteudo": "Originalmente desenvolvida para dor oncológica, mas amplamente aplicada: degrau 1 (dor leve — analgésicos simples e anti-inflamatórios), degrau 2 (dor moderada — opioides fracos associados ao degrau 1), degrau 3 (dor intensa — opioides fortes). Adjuvantes (antidepressivos, anticonvulsivantes) podem ser associados em qualquer degrau."
+      },
+      {
+        "titulo": "Dor nociceptiva x neuropática",
+        "conteudo": "Nociceptiva: decorre de lesão tecidual real ou potencial (ex.: dor pós-operatória), responde bem a analgésicos convencionais e opioides. Neuropática: decorre de lesão do sistema nervoso somatossensorial (ex.: neuropatia diabética), com características de queimação/choque, respondendo melhor a antidepressivos duais e gabapentinoides."
+      },
+      {
+        "titulo": "Analgesia multimodal no pós-operatório",
+        "conteudo": "Combinação de diferentes classes de analgésicos (anti-inflamatórios, paracetamol, opioides, bloqueios regionais) atuando em mecanismos distintos, reduzindo a dose necessária de cada fármaco e seus efeitos adversos, especialmente dos opioides."
+      },
+      {
+        "titulo": "Dor crônica",
+        "conteudo": "Definida como dor persistente além do tempo esperado de cicatrização tecidual (geralmente acima de 3 meses). Frequentemente multifatorial, com componentes biológicos, psicológicos e sociais entrelaçados, exigindo abordagem multidisciplinar."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "O uso crônico e escalonado de opioides sem reavaliação periódica de eficácia e de sinais de uso problemático expõe o paciente a risco de dependência, exigindo revisão periódica do plano terapêutico."
+      }
+    ]
   }
 ]
