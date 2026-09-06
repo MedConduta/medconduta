@@ -32,10 +32,12 @@
   {
     "id": "deck-sepse",
     "temaId": "sepse",
-    "titulo": "Sepse — Bundle inicial",
+    "titulo": "Sepse — Atualização SSC 2026",
     "cards": [
-      { "id": "sepse-1", "frente": "Quais são os componentes do bundle da primeira hora na sepse?", "verso": "Lactato, culturas, antibiótico de amplo espectro, cristaloide 30 mL/kg (se indicado), vasopressor se necessário." },
-      { "id": "sepse-2", "frente": "Como se define choque séptico?", "verso": "Necessidade de vasopressor para PAM ≥65 mmHg e lactato >2 mmol/L, apesar de volume adequado." }
+      { "id": "sepse-1", "frente": "Pela SSC 2026, qual o tempo-alvo de antibiótico no choque séptico x na sepse sem choque?", "verso": "Choque séptico: até 1 hora. Sepse sem choque: até 3 horas (tempo para melhor caracterização diagnóstica)." },
+      { "id": "sepse-2", "frente": "Como se define choque séptico?", "verso": "Necessidade de vasopressor para PAM ≥65 mmHg e lactato >2 mmol/L, apesar de volume adequado." },
+      { "id": "sepse-3", "frente": "Quais escores a SSC 2026 passou a preferir em vez do qSOFA isolado para rastreio?", "verso": "NEWS, NEWS2 ou MEWS, por maior sensibilidade." },
+      { "id": "sepse-4", "frente": "O que a SSC 2026 reintroduziu para o choque séptico refratário a vasopressor?", "verso": "Corticoide (hidrocortisona), além de vasopressina como adjuvante da noradrenalina." }
     ]
   },
   {
@@ -508,6 +510,134 @@
       { "id": "anh-1", "frente": "Quais os 4 achados laboratoriais clássicos da hemólise?", "verso": "Bilirrubina indireta elevada, LDH elevado, haptoglobina baixa e reticulocitose." },
       { "id": "anh-2", "frente": "Qual exame diferencia anemia hemolítica autoimune de outras causas?", "verso": "Teste de Coombs direto (positivo na autoimune)." },
       { "id": "anh-3", "frente": "Cite uma causa hereditária de anemia hemolítica.", "verso": "Esferocitose hereditária (ou anemia falciforme, ou deficiência de G6PD)." }
+    ]
+  },
+  {
+    "id": "deck-sindrome-nefrotica-nefritica",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "titulo": "Síndromes nefrótica x nefrítica",
+    "cards": [
+      { "id": "snn-1", "frente": "Quais os 3 achados centrais da síndrome nefrótica?", "verso": "Proteinúria maciça (>3,5g/24h), hipoalbuminemia e edema (mnemônico PEE, com hiperlipidemia associada)." },
+      { "id": "snn-2", "frente": "Quais os 3 achados centrais da síndrome nefrítica?", "verso": "Hematúria, hipertensão e oligúria (mnemônico HHO)." },
+      { "id": "snn-3", "frente": "Qual a causa mais comum de síndrome nefrótica em crianças?", "verso": "Doença de lesões mínimas." }
+    ]
+  },
+  {
+    "id": "deck-sdra",
+    "temaId": "sdra",
+    "titulo": "SDRA — Definição de Berlim",
+    "cards": [
+      { "id": "sdra-1", "frente": "Quais os 4 critérios da Definição de Berlim para SDRA?", "verso": "Início agudo (≤7 dias), infiltrado bilateral, hipoxemia não totalmente cardiogênica, classificação por PaO2/FiO2." },
+      { "id": "sdra-2", "frente": "Qual a estratégia ventilatória protetora na SDRA?", "verso": "Volume corrente baixo (~6mL/kg de peso predito), pressão de platô limitada e PEEP adequada." }
+    ]
+  },
+  {
+    "id": "deck-hiv-aids",
+    "temaId": "hiv-aids",
+    "titulo": "HIV/AIDS — TARV e profilaxias",
+    "cards": [
+      { "id": "hiv-1", "frente": "Quando iniciar TARV após diagnóstico de HIV?", "verso": "Para todos os pacientes diagnosticados, independentemente da contagem de CD4." },
+      { "id": "hiv-2", "frente": "Em quanto tempo após exposição de risco a PEP deve ser iniciada?", "verso": "Idealmente em até 72 horas, mantida por 28 dias." }
+    ]
+  },
+  {
+    "id": "deck-les",
+    "temaId": "les",
+    "titulo": "LES — Critérios EULAR/ACR 2019",
+    "cards": [
+      { "id": "les-1", "frente": "Qual o critério de entrada obrigatório nos critérios EULAR/ACR 2019 para LES?", "verso": "FAN positivo (título ≥1:80)." },
+      { "id": "les-2", "frente": "Quais autoanticorpos são mais específicos para LES?", "verso": "Anti-dsDNA e anti-Sm." },
+      { "id": "les-3", "frente": "Qual medicação é base do tratamento para praticamente todos os pacientes com LES?", "verso": "Hidroxicloroquina." }
+    ]
+  },
+  {
+    "id": "deck-tvp",
+    "temaId": "tvp",
+    "titulo": "TVP — Wells e diagnóstico",
+    "cards": [
+      { "id": "tvp-1", "frente": "Qual o exame de escolha para diagnóstico de TVP?", "verso": "Ultrassonografia doppler venosa de membros inferiores." },
+      { "id": "tvp-2", "frente": "Qual o risco de uma TVP proximal não tratada?", "verso": "Embolização para tromboembolismo pulmonar (TEP)." }
+    ]
+  },
+  {
+    "id": "deck-diverticulite",
+    "temaId": "diverticulite",
+    "titulo": "Diverticulite — Classificação de Hinchey",
+    "cards": [
+      { "id": "div-1", "frente": "O que a classificação de Hinchey avalia?", "verso": "A gravidade da diverticulite complicada, de abscesso pericólico (I) a peritonite fecal (IV)." },
+      { "id": "div-2", "frente": "Qual a conduta na diverticulite Hinchey III/IV?", "verso": "Cirurgia de urgência (peritonite difusa)." }
+    ]
+  },
+  {
+    "id": "deck-nodulo-mama",
+    "temaId": "nodulo-mama-ca-mama",
+    "titulo": "Nódulo de mama — BI-RADS",
+    "cards": [
+      { "id": "nm-1", "frente": "O que fazer diante de um nódulo de mama BI-RADS 4 ou 5?", "verso": "Biópsia, pela probabilidade de malignidade." },
+      { "id": "nm-2", "frente": "Qual a periodicidade usual da mamografia de rastreio na população de risco habitual?", "verso": "Bienal, dentro da faixa etária de referência." }
+    ]
+  },
+  {
+    "id": "deck-partograma",
+    "temaId": "assistencia-parto-partograma",
+    "titulo": "Partograma",
+    "cards": [
+      { "id": "part-1", "frente": "Quais os 3 períodos clínicos clássicos do parto?", "verso": "Dilatação, expulsivo e dequitação (seguidos do 4º período de Greenberg)." },
+      { "id": "part-2", "frente": "O que indica o cruzamento da curva de dilatação com a linha de ação no partograma?", "verso": "Necessidade de intervenção ativa (reavaliar via de parto)." }
+    ]
+  },
+  {
+    "id": "deck-diabetes-gestacional",
+    "temaId": "diabetes-gestacional",
+    "titulo": "DMG — Rastreio",
+    "cards": [
+      { "id": "dmg-1", "frente": "Quando é feito o rastreio universal de DMG?", "verso": "TOTG 75g entre 24 e 28 semanas de gestação." },
+      { "id": "dmg-2", "frente": "Qual a droga de escolha quando dieta não controla a DMG?", "verso": "Insulina." }
+    ]
+  },
+  {
+    "id": "deck-climaterio",
+    "temaId": "climaterio",
+    "titulo": "Climatério e menopausa",
+    "cards": [
+      { "id": "cli-1", "frente": "Como se define menopausa?", "verso": "12 meses consecutivos de amenorreia, confirmados retrospectivamente." },
+      { "id": "cli-2", "frente": "O que sempre deve ser investigado em sangramento vaginal pós-menopausa?", "verso": "Neoplasia endometrial." }
+    ]
+  },
+  {
+    "id": "deck-reanimacao-neonatal",
+    "temaId": "reanimacao-neonatal",
+    "titulo": "Reanimação neonatal",
+    "cards": [
+      { "id": "rn-1", "frente": "Quando indicar ventilação com pressão positiva no RN?", "verso": "Apneia/gasping ou FC<100bpm após os passos iniciais." },
+      { "id": "rn-2", "frente": "Quando indicar compressões torácicas no RN?", "verso": "FC<60bpm apesar de VPP adequada por 30 segundos, na relação 3:1." }
+    ]
+  },
+  {
+    "id": "deck-bronquiolite",
+    "temaId": "bronquiolite-viral-aguda",
+    "titulo": "Bronquiolite viral aguda",
+    "cards": [
+      { "id": "bva-1", "frente": "Qual o principal agente etiológico da bronquiolite viral aguda?", "verso": "Vírus sincicial respiratório (VSR)." },
+      { "id": "bva-2", "frente": "Broncodilatadores e corticoides têm benefício de rotina na bronquiolite?", "verso": "Não têm benefício comprovado de rotina nessa faixa etária." }
+    ]
+  },
+  {
+    "id": "deck-estenose-piloro",
+    "temaId": "estenose-hipertrofica-piloro",
+    "titulo": "Estenose hipertrófica do piloro",
+    "cards": [
+      { "id": "ehp-1", "frente": "Qual o distúrbio metabólico clássico na estenose hipertrófica do piloro?", "verso": "Alcalose metabólica hipoclorêmica e hipocalêmica." },
+      { "id": "ehp-2", "frente": "Qual o tratamento definitivo da estenose hipertrófica do piloro?", "verso": "Piloromiotomia, após correção do distúrbio hidroeletrolítico." }
+    ]
+  },
+  {
+    "id": "deck-etica-medica",
+    "temaId": "etica-medica-bioetica",
+    "titulo": "Ética médica e bioética",
+    "cards": [
+      { "id": "em-1", "frente": "Quais os 4 princípios clássicos da bioética?", "verso": "Autonomia, beneficência, não maleficência e justiça." },
+      { "id": "em-2", "frente": "Qual resolução rege o Código de Ética Médica brasileiro atual?", "verso": "Resolução CFM nº 2.217/2018." }
     ]
   }
 ]

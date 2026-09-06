@@ -4,7 +4,7 @@
     "titulo": "Dor torácica / Suspeita de IAM",
     "categoria": "Cardiologia",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretriz de Sindromes Coronarianas Agudas - SBC (2021); ESC Guidelines for Acute Coronary Syndromes (2023)",
     "resumo": "Abordagem inicial na sala de emergência diante de dor torácica sugestiva de síndrome coronariana aguda.",
     "pontos": [
       "ECG de 12 derivações em até 10 minutos da chegada.",
@@ -22,17 +22,17 @@
     "titulo": "Sepse e Choque Séptico",
     "categoria": "Medicina Intensiva",
     "revisado": false,
-    "fonte": "",
-    "resumo": "Pacote de atendimento da primeira hora diante de suspeita de sepse.",
+    "fonte": "Surviving Sepsis Campaign Guidelines 2026 - SCCM/ESICM (traducao ILAS)",
+    "resumo": "Atendimento inicial estratificado por gravidade, conforme a atualização SSC 2026 (substitui o antigo bundle único de 1h).",
     "pontos": [
-      "Medir lactato sérico imediatamente.",
-      "Coletar duas amostras de hemocultura antes do antibiótico (sem atrasá-lo).",
-      "Iniciar antibiótico empírico de amplo espectro conforme foco suspeito.",
-      "Cristaloide balanceado 30 mL/kg em bolus se hipotensão ou lactato ≥4 mmol/L.",
-      "Reavaliar perfusão (PA, diurese, lactato seriado) a cada hora."
+      "Medir lactato sérico imediatamente e coletar hemoculturas antes do antibiótico (sem atrasá-lo).",
+      "Choque séptico: antibiótico empírico em até 1 hora. Sepse sem choque: até 3 horas.",
+      "Cristaloide balanceado ≥30 mL/kg nas primeiras 3h se choque séptico.",
+      "Noradrenalina como vasopressor de 1ª linha; associar vasopressina se doses crescentes.",
+      "Controle do foco infeccioso idealmente em até 6h do diagnóstico."
     ],
     "red_flags": [
-      "PAM < 65 mmHg refratária a volume → iniciar vasopressor e acionar UTI."
+      "PAM < 65 mmHg refratária a volume → vasopressor + considerar corticoide (hidrocortisona) + acionar UTI."
     ]
   },
   {
@@ -40,7 +40,7 @@
     "titulo": "Parada Cardiorrespiratória (PCR)",
     "categoria": "Emergência",
     "revisado": false,
-    "fonte": "",
+    "fonte": "AHA Guidelines for CPR and ECC 2020 (atualizacao focada 2023)",
     "resumo": "Sequência de atendimento imediato à PCR no ambiente hospitalar.",
     "pontos": [
       "Confirmar ausência de resposta, respiração e pulso em até 10 segundos.",
@@ -58,7 +58,7 @@
     "titulo": "Crise Asmática Grave",
     "categoria": "Pneumologia",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Global Initiative for Asthma (GINA) 2026",
     "resumo": "Manejo da crise asmática moderada a grave na emergência.",
     "pontos": [
       "Oxigênio suplementar para SatO2 alvo 93-95%.",
@@ -76,7 +76,7 @@
     "titulo": "Suspeita de AVC Agudo",
     "categoria": "Neurologia",
     "revisado": false,
-    "fonte": "",
+    "fonte": "AHA/ASA Guideline for Early Management of Acute Ischemic Stroke (2019, atualizacao 2023); SBDCV",
     "resumo": "Fluxo inicial diante de déficit neurológico focal agudo.",
     "pontos": [
       "Definir com precisão o horário do último momento visto normal (crítico para elegibilidade de reperfusão).",

@@ -6,9 +6,12 @@
     "titulo": "Hipertensão Arterial Sistêmica (HAS)",
     "resumo": "Diagnóstico, estratificação de risco e tratamento inicial da HAS no adulto.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2025 (SBC/SBN/SBH)",
     "mnemonicos": [
-      { "palavra": "LIFESTYLE", "explicacao": "Mudanças de estilo de vida: Limitar sódio, Interromper tabagismo, Frutas/vegetais (dieta DASH), Exercício físico, Se álcool moderar, Talha (peso) reduzir, Yoga/controle do estresse, Level (monitorar PA), Evitar sedentarismo." }
+      {
+        "palavra": "LIFESTYLE",
+        "explicacao": "Mudanças de estilo de vida: Limitar sódio, Interromper tabagismo, Frutas/vegetais (dieta DASH), Exercício físico, Se álcool moderar, Talha (peso) reduzir, Yoga/controle do estresse, Level (monitorar PA), Evitar sedentarismo."
+      }
     ],
     "secoes": [
       {
@@ -40,9 +43,12 @@
     "titulo": "Diabetes Mellitus Tipo 2 (DM2)",
     "resumo": "Critérios diagnósticos, metas glicêmicas e sequência terapêutica no DM2.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretrizes da Sociedade Brasileira de Diabetes (SBD) 2023-2024; ADA Standards of Care in Diabetes-2026",
     "mnemonicos": [
-      { "palavra": "GLICO 3P", "explicacao": "Sintomas clássicos de hiperglicemia: Poliúria, Polidipsia, Polifagia (com perda de peso paradoxal)." }
+      {
+        "palavra": "GLICO 3P",
+        "explicacao": "Sintomas clássicos de hiperglicemia: Poliúria, Polidipsia, Polifagia (com perda de peso paradoxal)."
+      }
     ],
     "secoes": [
       {
@@ -74,9 +80,12 @@
     "titulo": "Infarto Agudo do Miocárdio (IAM)",
     "resumo": "Abordagem inicial, classificação eletrocardiográfica e terapia de reperfusão.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretriz de Síndromes Coronarianas Agudas sem Supra de ST - SBC (2021); ESC Guidelines for Acute Coronary Syndromes (2023)",
     "mnemonicos": [
-      { "palavra": "MONABCH", "explicacao": "Abordagem inicial da síndrome coronariana aguda: Morfina (se dor refratária), Oxigênio (se SatO2 <90%), Nitrato, AAS, Betabloqueador, Clopidogrel/inibidor P2Y12, Heparina/estatina de alta potência." }
+      {
+        "palavra": "MONABCH",
+        "explicacao": "Abordagem inicial da síndrome coronariana aguda: Morfina (se dor refratária), Oxigênio (se SatO2 <90%), Nitrato, AAS, Betabloqueador, Clopidogrel/inibidor P2Y12, Heparina/estatina de alta potência."
+      }
     ],
     "secoes": [
       {
@@ -102,24 +111,31 @@
     "area": "residencia",
     "categoria": "Medicina Intensiva",
     "titulo": "Sepse e Choque Séptico",
-    "resumo": "Reconhecimento precoce, critérios diagnósticos e pacote de tratamento inicial (bundle de 1 hora).",
+    "resumo": "Reconhecimento precoce, estratificação de risco e tratamento inicial conforme a atualização SSC 2026 (substitui o antigo \"pacote de 1h\" único).",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Surviving Sepsis Campaign Guidelines 2026 - SCCM/ESICM (traducao ILAS)",
     "mnemonicos": [
-      { "palavra": "PACOTE 1H", "explicacao": "Bundle da primeira hora: medir Lactato, coletar Culturas antes do antibiótico, iniciar Antibiótico de amplo espectro, Cristaloide (30 mL/kg se hipotensão/lactato ≥4), Vasopressor se hipotensão persistente." }
+      {
+        "palavra": "ATUALIZAÇÃO SSC 2026",
+        "explicacao": "Muitos cursinhos ainda ensinam só o \"pacote de 1h\" de 2021 igual para todos. A diretriz 2026 estratifica por risco e diferencia o tempo-alvo de antibiótico: choque séptico ≤1h; sepse sem choque ≤3h. Guarde essa diferença — é pegadinha clássica de prova desatualizada."
+      }
     ],
     "secoes": [
       {
         "titulo": "Definição",
-        "conteudo": "Sepse é a disfunção orgânica ameaçadora à vida causada por resposta desregulada do hospedeiro à infecção, identificada por aumento agudo ≥2 pontos no SOFA. Choque séptico é o subgrupo com necessidade de vasopressor para manter PAM ≥65 mmHg e lactato >2 mmol/L, apesar de reposição volêmica adequada."
+        "conteudo": "Sepse é a disfunção orgânica ameaçadora à vida causada por resposta desregulada do hospedeiro à infecção, identificada por aumento agudo ≥2 pontos no SOFA (Sepsis-3, mantido pela SSC 2026). Choque séptico é o subgrupo com necessidade de vasopressor para manter PAM ≥65 mmHg e lactato >2 mmol/L, apesar de reposição volêmica adequada."
       },
       {
-        "titulo": "Rastreio",
-        "conteudo": "Escores de triagem (qSOFA, NEWS) auxiliam a identificação precoce em ambientes fora da UTI, mas não substituem o julgamento clínico nem o SOFA completo para definição."
+        "titulo": "Rastreio e estratificação de risco (atualização 2026)",
+        "conteudo": "A SSC 2026 passou a recomendar escores como NEWS, NEWS2 ou MEWS em vez do qSOFA isolado para rastreio, por maior sensibilidade, e introduziu uma estratificação da probabilidade de sepse (definitiva, provável, possível, improvável) para calibrar a agressividade da investigação e do tratamento — não é mais \"tudo ou nada\"."
       },
       {
-        "titulo": "Tratamento inicial",
-        "conteudo": "Iniciar antibioticoterapia empírica de amplo espectro idealmente na primeira hora, após coleta de culturas (sem atrasar o antibiótico). Ressuscitação volêmica com cristaloides balanceados e reavaliação de perfusão tecidual."
+        "titulo": "Tempo-alvo de antibiótico (diferenciado desde 2026)",
+        "conteudo": "Choque séptico: antibiótico empírico em até 1 hora. Sepse sem choque: até 3 horas, com tempo para melhor caracterização diagnóstica antes de iniciar. Em ambos os casos, coletar culturas antes do antibiótico, sem atrasar o início do tratamento."
+      },
+      {
+        "titulo": "Ressuscitação volêmica e vasopressores",
+        "conteudo": "Cristaloides balanceados, com meta de pelo menos 30 mL/kg nas primeiras 3 horas em caso de choque. Noradrenalina segue como vasopressor de primeira linha; vasopressina pode ser adicionada em doses crescentes de noradrenalina. Corticoide (hidrocortisona) voltou a ser recomendado no choque séptico. Controle do foco infeccioso idealmente em até 6 horas do diagnóstico."
       },
       {
         "titulo": "Sinais de alerta",
@@ -134,9 +150,12 @@
     "titulo": "Parada Cardiorrespiratória (PCR) / ACLS",
     "resumo": "Sequência de suporte avançado de vida em cardiologia e ritmos de PCR.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "AHA Guidelines for CPR and ECC 2020 (atualizacao focada 2023); Diretriz de Ressuscitacao Cardiopulmonar - SBC",
     "mnemonicos": [
-      { "palavra": "H's e T's", "explicacao": "Causas reversíveis de PCR: Hipovolemia, Hipóxia, Hidrogênio (acidose), Hipo/hipercalemia, Hipotermia; Tensão no tórax (pneumotórax hipertensivo), Tamponamento cardíaco, Toxinas, Trombose pulmonar, Trombose coronariana." }
+      {
+        "palavra": "H's e T's",
+        "explicacao": "Causas reversíveis de PCR: Hipovolemia, Hipóxia, Hidrogênio (acidose), Hipo/hipercalemia, Hipotermia; Tensão no tórax (pneumotórax hipertensivo), Tamponamento cardíaco, Toxinas, Trombose pulmonar, Trombose coronariana."
+      }
     ],
     "secoes": [
       {
@@ -160,9 +179,12 @@
     "titulo": "Asma Exacerbada",
     "resumo": "Classificação de gravidade e manejo escalonado da crise asmática.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Global Initiative for Asthma (GINA) 2026",
     "mnemonicos": [
-      { "palavra": "OBA", "explicacao": "Tríade terapêutica inicial da crise asmática: Oxigênio (se hipoxemia), Broncodilatador de curta ação inalatório (repetido), corticoide sistêmico Antiinflamatório precoce." }
+      {
+        "palavra": "OBA",
+        "explicacao": "Tríade terapêutica inicial da crise asmática: Oxigênio (se hipoxemia), Broncodilatador de curta ação inalatório (repetido), corticoide sistêmico Antiinflamatório precoce."
+      }
     ],
     "secoes": [
       {
@@ -186,9 +208,12 @@
     "titulo": "Lesão Renal Aguda (LRA)",
     "resumo": "Critérios diagnósticos (KDIGO), classificação etiológica e abordagem inicial da LRA.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012)",
     "mnemonicos": [
-      { "palavra": "AEIOU", "explicacao": "Indicações de diálise de urgência: Acidose metabólica refratária, Eletrólitos (hipercalemia refratária), Intoxicação exógena dialisável, sObrecarga volêmica refratária, Uremia sintomática (encefalopatia, pericardite urêmica)." }
+      {
+        "palavra": "AEIOU",
+        "explicacao": "Indicações de diálise de urgência: Acidose metabólica refratária, Eletrólitos (hipercalemia refratária), Intoxicação exógena dialisável, sObrecarga volêmica refratária, Uremia sintomática (encefalopatia, pericardite urêmica)."
+      }
     ],
     "secoes": [
       {
@@ -220,9 +245,12 @@
     "titulo": "Hemorragia Digestiva Alta (HDA)",
     "resumo": "Estabilização inicial, terapia farmacológica e papel da endoscopia na HDA.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Federacao Brasileira de Gastroenterologia; ACG Clinical Guideline: Upper Gastrointestinal Bleeding",
     "mnemonicos": [
-      { "palavra": "SANGUE", "explicacao": "Suporte hemodinâmico, Acesso venoso calibroso (2 punções), Nada por via oral, Gasometria/hemograma/tipagem, Uso de IBP em bolus seguido de infusão, Endoscopia digestiva alta em até 24h." }
+      {
+        "palavra": "SANGUE",
+        "explicacao": "Suporte hemodinâmico, Acesso venoso calibroso (2 punções), Nada por via oral, Gasometria/hemograma/tipagem, Uso de IBP em bolus seguido de infusão, Endoscopia digestiva alta em até 24h."
+      }
     ],
     "secoes": [
       {
@@ -254,9 +282,12 @@
     "titulo": "AVC Isquêmico Agudo",
     "resumo": "Reconhecimento precoce, janela terapêutica e manejo inicial do AVC isquêmico.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretrizes da Sociedade Brasileira de Doencas Cerebrovasculares (SBDCV); AHA/ASA Guideline for Early Management of Acute Ischemic Stroke (2019, atualizacao 2023)",
     "mnemonicos": [
-      { "palavra": "FAST", "explicacao": "Reconhecimento rápido de AVC: Face (assimetria facial), Arm (queda de um dos braços), Speech (fala arrastada/alterada), Time (hora do início dos sintomas é crítica para definir elegibilidade terapêutica)." }
+      {
+        "palavra": "FAST",
+        "explicacao": "Reconhecimento rápido de AVC: Face (assimetria facial), Arm (queda de um dos braços), Speech (fala arrastada/alterada), Time (hora do início dos sintomas é crítica para definir elegibilidade terapêutica)."
+      }
     ],
     "secoes": [
       {
@@ -288,9 +319,12 @@
     "titulo": "Pneumonia Adquirida na Comunidade (PAC)",
     "resumo": "Diagnóstico, estratificação de gravidade (CURB-65) e tratamento empírico da PAC.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretrizes Brasileiras para Pneumonia Adquirida na Comunidade - SBPT; IDSA/ATS Community-Acquired Pneumonia Guidelines (2019)",
     "mnemonicos": [
-      { "palavra": "CURB-65", "explicacao": "Confusão mental, Ureia elevada, frequência Respiratória ≥30irpm, PA (Blood pressure) baixa (PAS<90 ou PAD≤60), idade ≥65 anos — cada item vale 1 ponto e orienta a decisão de internação." }
+      {
+        "palavra": "CURB-65",
+        "explicacao": "Confusão mental, Ureia elevada, frequência Respiratória ≥30irpm, PA (Blood pressure) baixa (PAS<90 ou PAD≤60), idade ≥65 anos — cada item vale 1 ponto e orienta a decisão de internação."
+      }
     ],
     "secoes": [
       {
@@ -322,9 +356,12 @@
     "titulo": "Abdome Agudo Inflamatório — Apendicite Aguda",
     "resumo": "Quadro clínico, escore de Alvarado e conduta cirúrgica na apendicite aguda.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "World Society of Emergency Surgery (WSES) Jerusalem Guidelines for Acute Appendicitis (2020); Colegio Brasileiro de Cirurgioes",
     "mnemonicos": [
-      { "palavra": "MANTRELS", "explicacao": "Componentes do escore de Alvarado: Migração da dor para FID, Anorexia, Náusea/vômito, Tenderness (dor à palpação em FID), Rebote doloroso, Elevação da temperatura, Leucocitose, Shift left (desvio à esquerda)." }
+      {
+        "palavra": "MANTRELS",
+        "explicacao": "Componentes do escore de Alvarado: Migração da dor para FID, Anorexia, Náusea/vômito, Tenderness (dor à palpação em FID), Rebote doloroso, Elevação da temperatura, Leucocitose, Shift left (desvio à esquerda)."
+      }
     ],
     "secoes": [
       {
@@ -356,9 +393,12 @@
     "titulo": "Trauma — Avaliação Inicial (ABCDE)",
     "resumo": "Sequência sistematizada de avaliação e estabilização inicial do politraumatizado.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons)",
     "mnemonicos": [
-      { "palavra": "ABCDE", "explicacao": "Airway (via aérea com proteção cervical), Breathing (respiração/ventilação), Circulation (circulação com controle de hemorragia), Disability (avaliação neurológica rápida), Exposure (exposição com controle de hipotermia)." }
+      {
+        "palavra": "ABCDE",
+        "explicacao": "Airway (via aérea com proteção cervical), Breathing (respiração/ventilação), Circulation (circulação com controle de hemorragia), Disability (avaliação neurológica rápida), Exposure (exposição com controle de hipotermia)."
+      }
     ],
     "secoes": [
       {
@@ -390,9 +430,12 @@
     "titulo": "Sangramento Uterino Anormal (SUA)",
     "resumo": "Classificação etiológica (PALM-COEIN) e abordagem inicial do sangramento uterino anormal.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "FIGO PALM-COEIN Classification System (2011); FEBRASGO - Manual de Sangramento Uterino Anormal",
     "mnemonicos": [
-      { "palavra": "PALM-COEIN", "explicacao": "Classificação da FIGO para causas de SUA — estruturais: Pólipo, Adenomiose, Leiomioma, Malignidade/hiperplasia; não estruturais: Coagulopatia, disfunção Ovulatória, Endometrial, Iatrogênica, Não classificada." }
+      {
+        "palavra": "PALM-COEIN",
+        "explicacao": "Classificação da FIGO para causas de SUA — estruturais: Pólipo, Adenomiose, Leiomioma, Malignidade/hiperplasia; não estruturais: Coagulopatia, disfunção Ovulatória, Endometrial, Iatrogênica, Não classificada."
+      }
     ],
     "secoes": [
       {
@@ -424,9 +467,12 @@
     "titulo": "Pré-eclâmpsia e Eclâmpsia",
     "resumo": "Critérios diagnósticos, sinais de gravidade e manejo da pré-eclâmpsia/eclâmpsia.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "FEBRASGO - Manual de Gestacao de Alto Risco; ACOG Practice Bulletin: Gestational Hypertension and Preeclampsia",
     "mnemonicos": [
-      { "palavra": "HELLP", "explicacao": "Complicação grave da pré-eclâmpsia: Hemólise, Elevação de enzimas hepáticas (Liver), Plaquetopenia (Low Platelets) — indica gravidade extrema e necessidade de resolução da gestação." }
+      {
+        "palavra": "HELLP",
+        "explicacao": "Complicação grave da pré-eclâmpsia: Hemólise, Elevação de enzimas hepáticas (Liver), Plaquetopenia (Low Platelets) — indica gravidade extrema e necessidade de resolução da gestação."
+      }
     ],
     "secoes": [
       {
@@ -458,9 +504,12 @@
     "titulo": "Icterícia Neonatal",
     "resumo": "Diferenciação fisiológica x patológica e indicação de fototerapia na icterícia do recém-nascido.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Pediatria (SBP) - Documento Cientifico: Ictericia Neonatal; AAP Clinical Practice Guideline: Hyperbilirubinemia (atualizacao 2022)",
     "mnemonicos": [
-      { "palavra": "REGRA DAS 24H", "explicacao": "Icterícia que aparece nas primeiras 24 horas de vida é sempre considerada patológica até investigação completa, exigindo dosagem imediata de bilirrubina e investigação de causas hemolíticas." }
+      {
+        "palavra": "REGRA DAS 24H",
+        "explicacao": "Icterícia que aparece nas primeiras 24 horas de vida é sempre considerada patológica até investigação completa, exigindo dosagem imediata de bilirrubina e investigação de causas hemolíticas."
+      }
     ],
     "secoes": [
       {
@@ -492,9 +541,12 @@
     "titulo": "Diarreia Aguda e Desidratação na Infância",
     "resumo": "Classificação do grau de desidratação e planos de hidratação (A, B, C) da OMS.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Ministerio da Saude - Manual de Diarreia; OMS/WHO - Planos A, B e C de Hidratacao Oral",
     "mnemonicos": [
-      { "palavra": "PLANOS A-B-C", "explicacao": "Plano A: sem desidratação, hidratação oral em casa. Plano B: desidratação leve/moderada, TRO supervisionada na unidade de saúde. Plano C: desidratação grave/choque, hidratação venosa imediata." }
+      {
+        "palavra": "PLANOS A-B-C",
+        "explicacao": "Plano A: sem desidratação, hidratação oral em casa. Plano B: desidratação leve/moderada, TRO supervisionada na unidade de saúde. Plano C: desidratação grave/choque, hidratação venosa imediata."
+      }
     ],
     "secoes": [
       {
@@ -526,9 +578,12 @@
     "titulo": "Vigilância Epidemiológica e Notificação Compulsória",
     "resumo": "Fluxo de notificação compulsória e papel da vigilância epidemiológica no SUS.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Ministerio da Saude - Guia de Vigilancia em Saude; Lei no 6.259/1975 (Notificacao Compulsoria)",
     "mnemonicos": [
-      { "palavra": "SINAN", "explicacao": "Sistema de Informação de Agravos de Notificação — recebe as fichas de notificação compulsória preenchidas pelos serviços de saúde e alimenta a vigilância epidemiológica em todos os níveis de gestão." }
+      {
+        "palavra": "SINAN",
+        "explicacao": "Sistema de Informação de Agravos de Notificação — recebe as fichas de notificação compulsória preenchidas pelos serviços de saúde e alimenta a vigilância epidemiológica em todos os níveis de gestão."
+      }
     ],
     "secoes": [
       {
@@ -556,9 +611,12 @@
     "titulo": "Insuficiência Cardíaca (IC)",
     "resumo": "Classificação, diagnóstico e os quatro pilares farmacológicos da IC com fração de ejeção reduzida.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretriz Brasileira de Insuficiencia Cardiaca - SBC (2018, atualizacao 2021); ESC Guidelines for Heart Failure (2021)",
     "mnemonicos": [
-      { "palavra": "4 PILARES DA ICFEr", "explicacao": "Classes que reduzem mortalidade na IC com fração de ejeção reduzida e devem ser iniciadas e otimizadas em conjunto: IECA/BRA (ou INRA), Betabloqueador, Antagonista mineralocorticoide (espironolactona), iSGLT2." }
+      {
+        "palavra": "4 PILARES DA ICFEr",
+        "explicacao": "Classes que reduzem mortalidade na IC com fração de ejeção reduzida e devem ser iniciadas e otimizadas em conjunto: IECA/BRA (ou INRA), Betabloqueador, Antagonista mineralocorticoide (espironolactona), iSGLT2."
+      }
     ],
     "secoes": [
       {
@@ -590,9 +648,12 @@
     "titulo": "Colecistite e Colangite Aguda",
     "resumo": "Diagnóstico pelos critérios de Tóquio, tríade de Charcot/pêntade de Reynolds e conduta.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Tokyo Guidelines 2018 (TG18) for Acute Cholangitis and Cholecystitis",
     "mnemonicos": [
-      { "palavra": "TRÍADE DE CHARCOT", "explicacao": "Dor em hipocôndrio direito + Febre + Icterícia sugerem colangite aguda. A associação de hipotensão e confusão mental à tríade compõe a pêntade de Reynolds, indicando colangite grave." }
+      {
+        "palavra": "TRÍADE DE CHARCOT",
+        "explicacao": "Dor em hipocôndrio direito + Febre + Icterícia sugerem colangite aguda. A associação de hipotensão e confusão mental à tríade compõe a pêntade de Reynolds, indicando colangite grave."
+      }
     ],
     "secoes": [
       {
@@ -624,9 +685,12 @@
     "titulo": "Síndrome dos Ovários Policísticos (SOP)",
     "resumo": "Diagnóstico pelos critérios de Rotterdam e abordagem terapêutica conforme objetivo da paciente.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Consenso de Rotterdam (2003); FEBRASGO - Sindrome dos Ovarios Policisticos",
     "mnemonicos": [
-      { "palavra": "ROTTERDAM (2 de 3)", "explicacao": "Diagnóstico de SOP exige 2 dos 3 critérios: oligo/anovulação, hiperandrogenismo clínico/laboratorial e morfologia de ovários policísticos ao USG — sempre excluindo outras causas de hiperandrogenismo." }
+      {
+        "palavra": "ROTTERDAM (2 de 3)",
+        "explicacao": "Diagnóstico de SOP exige 2 dos 3 critérios: oligo/anovulação, hiperandrogenismo clínico/laboratorial e morfologia de ovários policísticos ao USG — sempre excluindo outras causas de hiperandrogenismo."
+      }
     ],
     "secoes": [
       {
@@ -658,9 +722,12 @@
     "titulo": "Hemorragias da 1ª Metade da Gestação",
     "resumo": "Diagnóstico diferencial entre abortamento, gravidez ectópica e doença trofoblástica gestacional.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "FEBRASGO - Manual de Sangramento na Primeira Metade da Gestacao; RCOG Green-top Guideline No. 21 (gravidez ectopica)",
     "mnemonicos": [
-      { "palavra": "AEM", "explicacao": "As 3 principais causas de sangramento no primeiro trimestre: Abortamento, gravidez Ectópica e doença trofoblástica gestacional/Mola — diferenciadas por beta-hCG seriado e ultrassonografia transvaginal." }
+      {
+        "palavra": "AEM",
+        "explicacao": "As 3 principais causas de sangramento no primeiro trimestre: Abortamento, gravidez Ectópica e doença trofoblástica gestacional/Mola — diferenciadas por beta-hCG seriado e ultrassonografia transvaginal."
+      }
     ],
     "secoes": [
       {
@@ -692,9 +759,12 @@
     "titulo": "Puericultura e Calendário Vacinal (PNI)",
     "resumo": "Acompanhamento do crescimento/desenvolvimento e principais vacinas do calendário nacional de imunização.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Pediatria (SBP) - Manual de Puericultura; Programa Nacional de Imunizacoes (PNI), Ministerio da Saude",
     "mnemonicos": [
-      { "palavra": "PESO-ESTATURA-PC", "explicacao": "Os três parâmetros antropométricos avaliados em toda consulta de puericultura: Peso, Estatura/comprimento e Perímetro Cefálico, comparados às curvas de crescimento por idade e sexo." }
+      {
+        "palavra": "PESO-ESTATURA-PC",
+        "explicacao": "Os três parâmetros antropométricos avaliados em toda consulta de puericultura: Peso, Estatura/comprimento e Perímetro Cefálico, comparados às curvas de crescimento por idade e sexo."
+      }
     ],
     "secoes": [
       {
@@ -726,9 +796,12 @@
     "titulo": "Sepse Neonatal",
     "resumo": "Classificação precoce x tardia, fatores de risco e manejo inicial da sepse no recém-nascido.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Pediatria (SBP) - Documento Cientifico sobre Sepse Neonatal",
     "mnemonicos": [
-      { "palavra": "PRECOCE x TARDIA", "explicacao": "Sepse neonatal precoce: até 48-72h de vida, ligada a fatores maternos/intraparto (ex.: colonização por GBS, rotura prematura de membranas). Tardia: após 72h, mais associada a infecção hospitalar." }
+      {
+        "palavra": "PRECOCE x TARDIA",
+        "explicacao": "Sepse neonatal precoce: até 48-72h de vida, ligada a fatores maternos/intraparto (ex.: colonização por GBS, rotura prematura de membranas). Tardia: após 72h, mais associada a infecção hospitalar."
+      }
     ],
     "secoes": [
       {
@@ -760,9 +833,12 @@
     "titulo": "Fibrilação Atrial (FA)",
     "resumo": "Diagnóstico, escore CHA2DS2-VASc para anticoagulação e estratégias de controle de frequência/ritmo.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretriz Brasileira de Fibrilacao Atrial - SBC (2016, atualizacao 2023); ESC Guidelines for Atrial Fibrillation (2024)",
     "mnemonicos": [
-      { "palavra": "CHA2DS2-VASc", "explicacao": "Escore de risco tromboembólico: Congestive heart failure, Hypertension, Age≥75 (2 pontos), Diabetes, Stroke/AIT prévio (2 pontos), Vascular disease, Age 65-74, Sex category (feminino) — orienta a indicação de anticoagulação." }
+      {
+        "palavra": "CHA2DS2-VASc",
+        "explicacao": "Escore de risco tromboembólico: Congestive heart failure, Hypertension, Age≥75 (2 pontos), Diabetes, Stroke/AIT prévio (2 pontos), Vascular disease, Age 65-74, Sex category (feminino) — orienta a indicação de anticoagulação."
+      }
     ],
     "secoes": [
       {
@@ -794,9 +870,12 @@
     "titulo": "DPOC Exacerbado",
     "resumo": "Critérios de Anthonisen, tratamento broncodilatador/corticoide e indicação de antibiótico e ventilação não invasiva.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2025",
     "mnemonicos": [
-      { "palavra": "ANTHONISEN", "explicacao": "3 critérios que definem exacerbação e orientam a antibioticoterapia: aumento da dispneia, aumento do volume do escarro e mudança da purulência do escarro." }
+      {
+        "palavra": "ANTHONISEN",
+        "explicacao": "3 critérios que definem exacerbação e orientam a antibioticoterapia: aumento da dispneia, aumento do volume do escarro e mudança da purulência do escarro."
+      }
     ],
     "secoes": [
       {
@@ -828,9 +907,12 @@
     "titulo": "Cetoacidose Diabética (CAD)",
     "resumo": "Critérios diagnósticos e sequência terapêutica priorizando hidratação, potássio e insulina.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Diabetes (SBD); ADA Standards of Care in Diabetes-2026",
     "mnemonicos": [
-      { "palavra": "HIDRATAR → POTÁSSIO → INSULINA", "explicacao": "Sequência terapêutica da CAD: hidratação venosa vigorosa primeiro, avaliação e correção do potássio antes de iniciar insulina, pois a insulina desloca potássio para dentro da célula e pode precipitar arritmias se houver hipocalemia não corrigida." }
+      {
+        "palavra": "HIDRATAR → POTÁSSIO → INSULINA",
+        "explicacao": "Sequência terapêutica da CAD: hidratação venosa vigorosa primeiro, avaliação e correção do potássio antes de iniciar insulina, pois a insulina desloca potássio para dentro da célula e pode precipitar arritmias se houver hipocalemia não corrigida."
+      }
     ],
     "secoes": [
       {
@@ -862,9 +944,12 @@
     "titulo": "Pancreatite Aguda",
     "resumo": "Critérios diagnósticos (2 de 3), causas mais comuns e avaliação de gravidade.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Classificacao de Atlanta Revisada (2012); IAP/APA Evidence-Based Guidelines for Acute Pancreatitis",
     "mnemonicos": [
-      { "palavra": "2 DE 3", "explicacao": "Diagnóstico de pancreatite aguda exige 2 dos 3 critérios: dor abdominal característica, lipase/amilase ≥3x o limite superior da normalidade, e achados de imagem compatíveis." }
+      {
+        "palavra": "2 DE 3",
+        "explicacao": "Diagnóstico de pancreatite aguda exige 2 dos 3 critérios: dor abdominal característica, lipase/amilase ≥3x o limite superior da normalidade, e achados de imagem compatíveis."
+      }
     ],
     "secoes": [
       {
@@ -896,9 +981,12 @@
     "titulo": "Meningite Bacteriana Aguda",
     "resumo": "Reconhecimento clínico, papel da punção lombar e tratamento antibiótico empírico precoce.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Ministerio da Saude - Guia de Vigilancia em Saude (Meningites); IDSA Practice Guidelines for Bacterial Meningitis",
     "mnemonicos": [
-      { "palavra": "TRÍADE CLÁSSICA", "explicacao": "Febre + Rigidez de nuca + Alteração do nível de consciência — tríade clássica da meningite bacteriana, frequentemente incompleta em idosos e lactentes." }
+      {
+        "palavra": "TRÍADE CLÁSSICA",
+        "explicacao": "Febre + Rigidez de nuca + Alteração do nível de consciência — tríade clássica da meningite bacteriana, frequentemente incompleta em idosos e lactentes."
+      }
     ],
     "secoes": [
       {
@@ -930,9 +1018,12 @@
     "titulo": "Obstrução Intestinal",
     "resumo": "Sinais cardinais, causas mais comuns e conduta conforme sinais de estrangulamento.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "World Society of Emergency Surgery (WSES) Guidelines for Small Bowel Obstruction; Colegio Brasileiro de Cirurgioes",
     "mnemonicos": [
-      { "palavra": "4 SINAIS CARDINAIS", "explicacao": "Dor abdominal em cólica, Distensão abdominal, Vômitos e Parada de eliminação de gases e fezes — os 4 sinais cardinais da obstrução intestinal mecânica." }
+      {
+        "palavra": "4 SINAIS CARDINAIS",
+        "explicacao": "Dor abdominal em cólica, Distensão abdominal, Vômitos e Parada de eliminação de gases e fezes — os 4 sinais cardinais da obstrução intestinal mecânica."
+      }
     ],
     "secoes": [
       {
@@ -964,9 +1055,12 @@
     "titulo": "Hemorragia Pós-Parto (HPP)",
     "resumo": "Causas mais comuns (4 Ts) e sequência de manejo inicial da hemorragia pós-parto.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "FEBRASGO - Manual de Hemorragia Pos-Parto; ACOG Practice Bulletin: Postpartum Hemorrhage",
     "mnemonicos": [
-      { "palavra": "4 T's", "explicacao": "Causas de hemorragia pós-parto: Tônus (atonia uterina — causa mais comum), Trauma (lacerações do trajeto), Tecido (retenção de restos placentários), Trombina (coagulopatia)." }
+      {
+        "palavra": "4 T's",
+        "explicacao": "Causas de hemorragia pós-parto: Tônus (atonia uterina — causa mais comum), Trauma (lacerações do trajeto), Tecido (retenção de restos placentários), Trombina (coagulopatia)."
+      }
     ],
     "secoes": [
       {
@@ -998,9 +1092,12 @@
     "titulo": "Doenças Exantemáticas da Infância",
     "resumo": "Diagnóstico diferencial entre sarampo, rubéola, exantema súbito, eritema infeccioso e varicela.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Pediatria (SBP); Ministerio da Saude - Guia de Vigilancia em Saude (Sarampo/Rubeola)",
     "mnemonicos": [
-      { "palavra": "MANCHAS DE KOPLIK", "explicacao": "Achado patognomônico do sarampo: pequenas manchas esbranquiçadas na mucosa oral que precedem o exantema morbiliforme craniocaudal." }
+      {
+        "palavra": "MANCHAS DE KOPLIK",
+        "explicacao": "Achado patognomônico do sarampo: pequenas manchas esbranquiçadas na mucosa oral que precedem o exantema morbiliforme craniocaudal."
+      }
     ],
     "secoes": [
       {
@@ -1032,9 +1129,12 @@
     "titulo": "Princípios do SUS e Redes de Atenção à Saúde",
     "resumo": "Princípios doutrinários e organizativos do SUS e organização das Redes de Atenção à Saúde (RAS).",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Lei no 8.080/1990 e Lei no 8.142/1990 (Leis Organicas da Saude); Ministerio da Saude - Politica Nacional de Atencao Basica",
     "mnemonicos": [
-      { "palavra": "UEI + RDP", "explicacao": "Doutrinários: Universalidade, Equidade, Integralidade. Organizativos: Regionalização/hierarquização, Descentralização, Participação social (controle social)." }
+      {
+        "palavra": "UEI + RDP",
+        "explicacao": "Doutrinários: Universalidade, Equidade, Integralidade. Organizativos: Regionalização/hierarquização, Descentralização, Participação social (controle social)."
+      }
     ],
     "secoes": [
       {
@@ -1066,9 +1166,12 @@
     "titulo": "Tromboembolismo Pulmonar (TEP)",
     "resumo": "Escore de Wells, papel do D-dímero e conduta terapêutica no TEP.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretriz Brasileira de Tromboembolismo Venoso - SBPT/SBC; ESC Guidelines for Pulmonary Embolism (2019, atualizacao 2024)",
     "mnemonicos": [
-      { "palavra": "WELLS", "explicacao": "Escore de probabilidade pré-teste de TEP: considera sinais de TVP, FC>100, imobilização/cirurgia recente, TEP/TVP prévios, hemoptise, malignidade e ausência de diagnóstico alternativo mais provável." }
+      {
+        "palavra": "WELLS",
+        "explicacao": "Escore de probabilidade pré-teste de TEP: considera sinais de TVP, FC>100, imobilização/cirurgia recente, TEP/TVP prévios, hemoptise, malignidade e ausência de diagnóstico alternativo mais provável."
+      }
     ],
     "secoes": [
       {
@@ -1100,9 +1203,12 @@
     "titulo": "Dissecção Aguda de Aorta",
     "resumo": "Classificação de Stanford e conduta conforme o tipo de dissecção.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "ESC Guidelines on Aortic and Peripheral Arterial Diseases (2024); Diretriz da SBC sobre Doencas da Aorta",
     "mnemonicos": [
-      { "palavra": "STANFORD A x B", "explicacao": "Tipo A: envolve a aorta ascendente — tratamento cirúrgico de urgência. Tipo B: restrita à aorta descendente — tratamento clínico inicial (controle de PA/FC), com cirurgia reservada a complicações." }
+      {
+        "palavra": "STANFORD A x B",
+        "explicacao": "Tipo A: envolve a aorta ascendente — tratamento cirúrgico de urgência. Tipo B: restrita à aorta descendente — tratamento clínico inicial (controle de PA/FC), com cirurgia reservada a complicações."
+      }
     ],
     "secoes": [
       {
@@ -1134,9 +1240,12 @@
     "titulo": "Hipotireoidismo, Hipertireoidismo e Nódulo de Tireoide",
     "resumo": "Padrões de TSH/T4 livre, causas principais e avaliação do nódulo tireoidiano.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia (SBEM); American Thyroid Association (ATA) Guidelines",
     "mnemonicos": [
-      { "palavra": "TSH x T4 LIVRE", "explicacao": "Hipotireoidismo primário: TSH alto + T4 livre baixo. Hipertireoidismo primário: TSH baixo + T4 livre alto. Nas formas centrais (hipofisárias), o TSH não acompanha esse padrão esperado." }
+      {
+        "palavra": "TSH x T4 LIVRE",
+        "explicacao": "Hipotireoidismo primário: TSH alto + T4 livre baixo. Hipertireoidismo primário: TSH baixo + T4 livre alto. Nas formas centrais (hipofisárias), o TSH não acompanha esse padrão esperado."
+      }
     ],
     "secoes": [
       {
@@ -1168,9 +1277,12 @@
     "titulo": "Tuberculose",
     "resumo": "Diagnóstico, esquema básico de tratamento (RIPE) e tratamento diretamente observado.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Ministerio da Saude - Manual de Recomendacoes para o Controle da Tuberculose no Brasil; WHO Consolidated Guidelines on Tuberculosis",
     "mnemonicos": [
-      { "palavra": "RIPE", "explicacao": "Esquema básico de tratamento da tuberculose: Rifampicina, Isoniazida, Pirazinamida e Etambutol nos primeiros 2 meses, seguidos de Rifampicina e Isoniazida por mais 4 meses." }
+      {
+        "palavra": "RIPE",
+        "explicacao": "Esquema básico de tratamento da tuberculose: Rifampicina, Isoniazida, Pirazinamida e Etambutol nos primeiros 2 meses, seguidos de Rifampicina e Isoniazida por mais 4 meses."
+      }
     ],
     "secoes": [
       {
@@ -1202,9 +1314,12 @@
     "titulo": "Doença Renal Crônica (DRC)",
     "resumo": "Classificação KDIGO, causas principais e manejo conservador da DRC.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "KDIGO Clinical Practice Guideline for the Evaluation and Management of CKD (2024); Sociedade Brasileira de Nefrologia (SBN)",
     "mnemonicos": [
-      { "palavra": "KDIGO (G + A)", "explicacao": "Classificação combina a Taxa de Filtração Glomerular (G1 a G5) com o grau de albuminúria (A1 a A3), estimando o risco de progressão e complicações." }
+      {
+        "palavra": "KDIGO (G + A)",
+        "explicacao": "Classificação combina a Taxa de Filtração Glomerular (G1 a G5) com o grau de albuminúria (A1 a A3), estimando o risco de progressão e complicações."
+      }
     ],
     "secoes": [
       {
@@ -1236,9 +1351,12 @@
     "titulo": "Distúrbios Hidroeletrolíticos — Hipercalemia",
     "resumo": "Alterações eletrocardiográficas e as 3 etapas do tratamento da hipercalemia.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Nefrologia (SBN); KDIGO",
     "mnemonicos": [
-      { "palavra": "ESTABILIZAR → REDISTRIBUIR → ELIMINAR", "explicacao": "As 3 etapas do tratamento da hipercalemia: estabilizar a membrana cardíaca (gluconato de cálcio), redistribuir o potássio para dentro da célula (insulina+glicose, beta-2 agonista) e eliminar o excesso de potássio do organismo (diuréticos, resinas, diálise)." }
+      {
+        "palavra": "ESTABILIZAR → REDISTRIBUIR → ELIMINAR",
+        "explicacao": "As 3 etapas do tratamento da hipercalemia: estabilizar a membrana cardíaca (gluconato de cálcio), redistribuir o potássio para dentro da célula (insulina+glicose, beta-2 agonista) e eliminar o excesso de potássio do organismo (diuréticos, resinas, diálise)."
+      }
     ],
     "secoes": [
       {
@@ -1270,9 +1388,12 @@
     "titulo": "Doença Ulcerosa Péptica",
     "resumo": "Causas principais, diagnóstico e erradicação do H. pylori.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Federacao Brasileira de Gastroenterologia; ACG Clinical Guideline: Treatment of Helicobacter pylori Infection",
     "mnemonicos": [
-      { "palavra": "H. PYLORI + AINEs", "explicacao": "As duas principais causas de doença ulcerosa péptica: infecção por Helicobacter pylori e uso de anti-inflamatórios não esteroidais (AINEs)." }
+      {
+        "palavra": "H. PYLORI + AINEs",
+        "explicacao": "As duas principais causas de doença ulcerosa péptica: infecção por Helicobacter pylori e uso de anti-inflamatórios não esteroidais (AINEs)."
+      }
     ],
     "secoes": [
       {
@@ -1304,9 +1425,12 @@
     "titulo": "Cirrose Hepática e suas Complicações",
     "resumo": "Escore de Child-Pugh e manejo das principais complicações da cirrose.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Hepatologia (SBH); AASLD Practice Guidance",
     "mnemonicos": [
-      { "palavra": "CHILD-PUGH", "explicacao": "Escore que classifica a gravidade da cirrose (A, B ou C) considerando bilirrubina, albumina, INR, ascite e encefalopatia — orienta prognóstico e prioridade para transplante." }
+      {
+        "palavra": "CHILD-PUGH",
+        "explicacao": "Escore que classifica a gravidade da cirrose (A, B ou C) considerando bilirrubina, albumina, INR, ascite e encefalopatia — orienta prognóstico e prioridade para transplante."
+      }
     ],
     "secoes": [
       {
@@ -1338,9 +1462,12 @@
     "titulo": "AVC Hemorrágico",
     "resumo": "Reconhecimento clínico, causas principais e manejo inicial do AVC hemorrágico.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Diretrizes da Sociedade Brasileira de Doencas Cerebrovasculares; AHA/ASA Guideline for Management of Spontaneous Intracerebral Hemorrhage (2022)",
     "mnemonicos": [
-      { "palavra": "HAS = CAUSA MAIS COMUM", "explicacao": "A hipertensão arterial mal controlada é a causa mais comum de hemorragia intraparenquimatosa espontânea; a hemorragia subaracnóidea é mais associada à ruptura de aneurisma cerebral." }
+      {
+        "palavra": "HAS = CAUSA MAIS COMUM",
+        "explicacao": "A hipertensão arterial mal controlada é a causa mais comum de hemorragia intraparenquimatosa espontânea; a hemorragia subaracnóidea é mais associada à ruptura de aneurisma cerebral."
+      }
     ],
     "secoes": [
       {
@@ -1372,9 +1499,12 @@
     "titulo": "Crise Convulsiva e Estado de Mal Epiléptico",
     "resumo": "Definição do estado de mal epiléptico e sequência terapêutica escalonada.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Liga Brasileira de Epilepsia; AES/ACEP Guideline for the Treatment of Status Epilepticus (2016)",
     "mnemonicos": [
-      { "palavra": "5 MINUTOS", "explicacao": "Estado de mal epiléptico é definido por crise convulsiva com duração maior que 5 minutos, ou crises repetidas sem recuperação completa da consciência entre elas — deve ser tratado como emergência desde esse ponto." }
+      {
+        "palavra": "5 MINUTOS",
+        "explicacao": "Estado de mal epiléptico é definido por crise convulsiva com duração maior que 5 minutos, ou crises repetidas sem recuperação completa da consciência entre elas — deve ser tratado como emergência desde esse ponto."
+      }
     ],
     "secoes": [
       {
@@ -1406,9 +1536,12 @@
     "titulo": "Dengue e Arboviroses",
     "resumo": "Classificação de risco, sinais de alarme e manejo hidratação conforme gravidade.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Ministerio da Saude - Guia de Manejo Clinico do Dengue; OMS/WHO Dengue Guidelines (2009, atualizacao 2023)",
     "mnemonicos": [
-      { "palavra": "SINAIS DE ALARME", "explicacao": "Dor abdominal intensa, vômitos persistentes, sangramento de mucosa, letargia/irritabilidade, hepatomegalia, e aumento do hematócrito com queda rápida de plaquetas — sinalizam risco de evolução para dengue grave." }
+      {
+        "palavra": "SINAIS DE ALARME",
+        "explicacao": "Dor abdominal intensa, vômitos persistentes, sangramento de mucosa, letargia/irritabilidade, hepatomegalia, e aumento do hematócrito com queda rápida de plaquetas — sinalizam risco de evolução para dengue grave."
+      }
     ],
     "secoes": [
       {
@@ -1440,9 +1573,12 @@
     "titulo": "Infecções Sexualmente Transmissíveis — Sífilis",
     "resumo": "Estágios clínicos, diagnóstico sorológico e tratamento da sífilis, incluindo rastreio na gestação.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Ministerio da Saude - PCDT para Atencao Integral as Pessoas com Infeccoes Sexualmente Transmissiveis; CDC STI Treatment Guidelines",
     "mnemonicos": [
-      { "palavra": "PRIMÁRIA → SECUNDÁRIA → LATENTE → TERCIÁRIA", "explicacao": "Estágios da sífilis: primária (cancro duro indolor), secundária (lesões cutâneo-mucosas disseminadas), latente (assintomática) e terciária (lesões cardiovasculares, neurológicas e gomas)." }
+      {
+        "palavra": "PRIMÁRIA → SECUNDÁRIA → LATENTE → TERCIÁRIA",
+        "explicacao": "Estágios da sífilis: primária (cancro duro indolor), secundária (lesões cutâneo-mucosas disseminadas), latente (assintomática) e terciária (lesões cardiovasculares, neurológicas e gomas)."
+      }
     ],
     "secoes": [
       {
@@ -1474,9 +1610,12 @@
     "titulo": "Hérnias de Parede Abdominal",
     "resumo": "Tipos mais comuns, diferenciação entre encarceramento/estrangulamento e conduta.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "European Hernia Society Guidelines; Colegio Brasileiro de Cirurgioes",
     "mnemonicos": [
-      { "palavra": "REDUTÍVEL → ENCARCERADA → ESTRANGULADA", "explicacao": "Progressão de gravidade de uma hérnia: redutível (retorna à cavidade), encarcerada (irredutível, sem sofrimento vascular) e estrangulada (irredutível com comprometimento vascular — emergência cirúrgica)." }
+      {
+        "palavra": "REDUTÍVEL → ENCARCERADA → ESTRANGULADA",
+        "explicacao": "Progressão de gravidade de uma hérnia: redutível (retorna à cavidade), encarcerada (irredutível, sem sofrimento vascular) e estrangulada (irredutível com comprometimento vascular — emergência cirúrgica)."
+      }
     ],
     "secoes": [
       {
@@ -1508,9 +1647,12 @@
     "titulo": "Cuidados Pré e Pós-operatórios",
     "resumo": "Avaliação de risco cirúrgico, cuidados pós-operatórios e complicações mais comuns.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "American Society of Anesthesiologists (ASA) Physical Status Classification; Colegio Brasileiro de Cirurgioes",
     "mnemonicos": [
-      { "palavra": "ASA I-V", "explicacao": "Classificação do estado físico pré-operatório da Sociedade Americana de Anestesiologia (ASA), de I (paciente saudável) a V (paciente moribundo), utilizada para estimar risco perioperatório." }
+      {
+        "palavra": "ASA I-V",
+        "explicacao": "Classificação do estado físico pré-operatório da Sociedade Americana de Anestesiologia (ASA), de I (paciente saudável) a V (paciente moribundo), utilizada para estimar risco perioperatório."
+      }
     ],
     "secoes": [
       {
@@ -1542,9 +1684,12 @@
     "titulo": "Vulvovaginites e Corrimento Vaginal",
     "resumo": "Diferenciação entre candidíase, vaginose bacteriana e tricomoníase.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "FEBRASGO - Manual de Vulvovaginites; CDC Sexually Transmitted Infections Treatment Guidelines",
     "mnemonicos": [
-      { "palavra": "3 CAUSAS PRINCIPAIS", "explicacao": "Candidíase vulvovaginal (corrimento esbranquiçado grumoso, prurido intenso), vaginose bacteriana (corrimento acinzentado com odor fétido) e tricomoníase (corrimento amarelo-esverdeado, IST)." }
+      {
+        "palavra": "3 CAUSAS PRINCIPAIS",
+        "explicacao": "Candidíase vulvovaginal (corrimento esbranquiçado grumoso, prurido intenso), vaginose bacteriana (corrimento acinzentado com odor fétido) e tricomoníase (corrimento amarelo-esverdeado, IST)."
+      }
     ],
     "secoes": [
       {
@@ -1576,9 +1721,12 @@
     "titulo": "Planejamento Familiar e Métodos Contraceptivos",
     "resumo": "Principais métodos contraceptivos e critérios de elegibilidade conforme perfil de risco.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Ministerio da Saude - Criterios Medicos de Elegibilidade para Uso de Metodos Contraceptivos; WHO Medical Eligibility Criteria for Contraceptive Use",
     "mnemonicos": [
-      { "palavra": "CRITÉRIOS DE ELEGIBILIDADE (OMS)", "explicacao": "Classificam a segurança de cada método contraceptivo conforme características e comorbidades da paciente, de categoria 1 (sem restrição) a 4 (risco inaceitável)." }
+      {
+        "palavra": "CRITÉRIOS DE ELEGIBILIDADE (OMS)",
+        "explicacao": "Classificam a segurança de cada método contraceptivo conforme características e comorbidades da paciente, de categoria 1 (sem restrição) a 4 (risco inaceitável)."
+      }
     ],
     "secoes": [
       {
@@ -1610,9 +1758,12 @@
     "titulo": "IVAS e Otite Média Aguda",
     "resumo": "Diagnóstico da otite média aguda e critérios para tratamento antibiótico x observação.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Pediatria (SBP); AAP Clinical Practice Guideline: Diagnosis and Management of Acute Otitis Media",
     "mnemonicos": [
-      { "palavra": "ABAULAMENTO DA MT", "explicacao": "O abaulamento da membrana timpânica à otoscopia é o achado mais específico para o diagnóstico de otite média aguda, distinguindo-a de uma otite média com efusão simples." }
+      {
+        "palavra": "ABAULAMENTO DA MT",
+        "explicacao": "O abaulamento da membrana timpânica à otoscopia é o achado mais específico para o diagnóstico de otite média aguda, distinguindo-a de uma otite média com efusão simples."
+      }
     ],
     "secoes": [
       {
@@ -1644,9 +1795,12 @@
     "titulo": "Asma na Infância",
     "resumo": "Classificação de controle e tratamento de manutenção da asma em crianças.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Global Initiative for Asthma (GINA) 2026 - secao pediatrica; SBPT",
     "mnemonicos": [
-      { "palavra": "CONTROLADA / PARCIALMENTE / NÃO CONTROLADA", "explicacao": "Classificação de controle da asma conforme frequência de sintomas diurnos, despertares noturnos e uso de medicação de resgate nas últimas semanas — orienta o ajuste do tratamento de manutenção." }
+      {
+        "palavra": "CONTROLADA / PARCIALMENTE / NÃO CONTROLADA",
+        "explicacao": "Classificação de controle da asma conforme frequência de sintomas diurnos, despertares noturnos e uso de medicação de resgate nas últimas semanas — orienta o ajuste do tratamento de manutenção."
+      }
     ],
     "secoes": [
       {
@@ -1678,9 +1832,12 @@
     "titulo": "Indicadores de Saúde e Epidemiologia Descritiva",
     "resumo": "Medidas de frequência e associação, e principais fontes de dados em saúde no Brasil.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Ministerio da Saude - DATASUS; OPAS/OMS Indicadores Basicos de Saude",
     "mnemonicos": [
-      { "palavra": "INCIDÊNCIA x PREVALÊNCIA", "explicacao": "Incidência mede casos NOVOS em um período; prevalência mede o TOTAL de casos existentes em um momento — doenças crônicas de longa duração tendem a ter prevalência bem maior que incidência." }
+      {
+        "palavra": "INCIDÊNCIA x PREVALÊNCIA",
+        "explicacao": "Incidência mede casos NOVOS em um período; prevalência mede o TOTAL de casos existentes em um momento — doenças crônicas de longa duração tendem a ter prevalência bem maior que incidência."
+      }
     ],
     "secoes": [
       {
@@ -1708,9 +1865,12 @@
     "titulo": "Rastreamento de Câncer (Colo, Mama e Colorretal)",
     "resumo": "Faixas etárias e periodicidade recomendadas para os principais programas de rastreamento oncológico.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Instituto Nacional de Cancer (INCA) - Diretrizes de Rastreamento; FEBRASGO",
     "mnemonicos": [
-      { "palavra": "25-64 / 50-69 / 50-75", "explicacao": "Faixas etárias de referência dos principais rastreios: colo do útero (25-64 anos, citologia trienal após 2 exames anuais normais), mama (50-69 anos, mamografia bienal) e colorretal (a partir de 50 anos)." }
+      {
+        "palavra": "25-64 / 50-69 / 50-75",
+        "explicacao": "Faixas etárias de referência dos principais rastreios: colo do útero (25-64 anos, citologia trienal após 2 exames anuais normais), mama (50-69 anos, mamografia bienal) e colorretal (a partir de 50 anos)."
+      }
     ],
     "secoes": [
       {
@@ -1742,9 +1902,12 @@
     "titulo": "Saúde Mental na Atenção Básica",
     "resumo": "Matriciamento, transtornos mentais comuns e avaliação de risco de suicídio na Atenção Básica.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Ministerio da Saude - Caderno de Atencao Basica: Saude Mental; OMS - mhGAP",
     "mnemonicos": [
-      { "palavra": "PERGUNTAR NÃO AUMENTA O RISCO", "explicacao": "Perguntar diretamente sobre ideação suicida não induz nem aumenta o risco de comportamento suicida — pelo contrário, é etapa essencial da avaliação de risco e deve sempre ser feita quando houver suspeita." }
+      {
+        "palavra": "PERGUNTAR NÃO AUMENTA O RISCO",
+        "explicacao": "Perguntar diretamente sobre ideação suicida não induz nem aumenta o risco de comportamento suicida — pelo contrário, é etapa essencial da avaliação de risco e deve sempre ser feita quando houver suspeita."
+      }
     ],
     "secoes": [
       {
@@ -1776,9 +1939,12 @@
     "titulo": "Anemias Carenciais (Ferropriva e Megaloblástica)",
     "resumo": "Diagnóstico diferencial pelo VCM e reposição nas anemias por deficiência de ferro, B12 e folato.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia (SBHH); WHO Guideline on Iron Deficiency Anaemia",
     "mnemonicos": [
-      { "palavra": "VCM: MICRO x MACRO", "explicacao": "O volume corpuscular médio (VCM) orienta o diagnóstico diferencial inicial: anemia ferropriva é microcítica (VCM baixo); anemia megaloblástica (B12/folato) é macrocítica (VCM alto)." }
+      {
+        "palavra": "VCM: MICRO x MACRO",
+        "explicacao": "O volume corpuscular médio (VCM) orienta o diagnóstico diferencial inicial: anemia ferropriva é microcítica (VCM baixo); anemia megaloblástica (B12/folato) é macrocítica (VCM alto)."
+      }
     ],
     "secoes": [
       {
@@ -1810,9 +1976,12 @@
     "titulo": "Anemias Hemolíticas",
     "resumo": "Reconhecimento laboratorial da hemólise e principais causas hereditárias e adquiridas.",
     "revisado": false,
-    "fonte": "",
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia (SBHH); British Society for Haematology Guidelines",
     "mnemonicos": [
-      { "palavra": "TRÍADE DA HEMÓLISE", "explicacao": "Bilirrubina indireta elevada, LDH elevado e haptoglobina baixa, associados a reticulocitose — padrão laboratorial clássico de hemólise, independentemente da causa." }
+      {
+        "palavra": "TRÍADE DA HEMÓLISE",
+        "explicacao": "Bilirrubina indireta elevada, LDH elevado e haptoglobina baixa, associados a reticulocitose — padrão laboratorial clássico de hemólise, independentemente da causa."
+      }
     ],
     "secoes": [
       {
@@ -1834,6 +2003,482 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Queda rápida de hemoglobina com sinais de instabilidade hemodinâmica</span> caracteriza crise hemolítica grave, exigindo suporte transfusional e investigação urgente da causa."
+      }
+    ]
+  },
+  {
+    "id": "sindrome-nefrotica-nefritica",
+    "area": "residencia",
+    "categoria": "Nefrologia",
+    "titulo": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "resumo": "Diferenciação clínico-laboratorial e principais causas de cada síndrome glomerular.",
+    "revisado": false,
+    "fonte": "KDIGO Clinical Practice Guideline for the Management of Glomerular Diseases (2021); Sociedade Brasileira de Nefrologia (SBN)",
+    "mnemonicos": [
+      { "palavra": "NEFRÓTICA = PEE / NEFRÍTICA = HHO", "explicacao": "Nefrótica: Proteinúria maciça, Edema, Elevação de lipídios. Nefrítica: Hematúria, Hipertensão, Oligúria. As duas síndromes glomerulares mais cobradas se diferenciam por esse padrão." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Síndrome nefrótica",
+        "conteudo": "Proteinúria maciça (>3,5 g/24h), hipoalbuminemia, edema e hiperlipidemia. Em crianças, a causa mais comum é a doença de lesões mínimas; em adultos, a glomerulosclerose segmentar e focal e a nefropatia membranosa."
+      },
+      {
+        "titulo": "Síndrome nefrítica",
+        "conteudo": "Hematúria dismórfica, hipertensão, edema e graus variáveis de disfunção renal, com oligúria. A glomerulonefrite pós-estreptocócica é a causa clássica, especialmente em crianças."
+      },
+      {
+        "titulo": "Investigação",
+        "conteudo": "Proteinúria de 24h (ou relação proteína/creatinina urinária), sedimento urinário, dosagem de complemento sérico e biópsia renal conforme indicação clínica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Síndrome nefrótica: diuréticos, IECA/BRA para reduzir proteinúria, corticoide conforme etiologia. Síndrome nefrítica: tratar a causa de base, com controle rigoroso de pressão arterial e volemia."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Edema agudo de pulmão ou perda rápida e progressiva da função renal</span> exigem investigação e tratamento urgentes."
+      }
+    ]
+  },
+  {
+    "id": "sdra",
+    "area": "residencia",
+    "categoria": "Medicina Intensiva",
+    "titulo": "Síndrome do Desconforto Respiratório Agudo (SDRA)",
+    "resumo": "Definição de Berlim, ventilação protetora e manejo da hipoxemia refratária.",
+    "revisado": false,
+    "fonte": "Berlin Definition of ARDS (2012); Diretriz Brasileira de Ventilação Mecânica - AMIB/SBPT",
+    "mnemonicos": [
+      { "palavra": "DEFINIÇÃO DE BERLIM", "explicacao": "SDRA: início agudo (até 7 dias), infiltrado pulmonar bilateral, hipoxemia não totalmente explicada por insuficiência cardíaca ou sobrecarga volêmica, classificada em leve/moderada/grave pela relação PaO2/FiO2." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição de Berlim",
+        "conteudo": "Início agudo dos sintomas (até 7 dias), infiltrado pulmonar bilateral à radiografia/TC, hipoxemia não explicada totalmente por insuficiência cardíaca ou sobrecarga de volume, com gravidade classificada pela relação PaO2/FiO2 (leve, moderada, grave)."
+      },
+      {
+        "titulo": "Causas",
+        "conteudo": "Diretas (pulmonares): pneumonia, aspiração de conteúdo gástrico. Indiretas (extrapulmonares): sepse, pancreatite aguda, politransfusão."
+      },
+      {
+        "titulo": "Ventilação protetora",
+        "conteudo": "Volume corrente baixo (cerca de 6 mL/kg de peso predito), limitação da pressão de platô e PEEP adequada para reduzir a lesão pulmonar induzida pela ventilação."
+      },
+      {
+        "titulo": "Manejo adicional",
+        "conteudo": "Posição prona prolongada em casos moderados a graves, e bloqueio neuromuscular em situações selecionadas de assincronia ventilatória grave."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Hipoxemia refratária apesar de ventilação protetora otimizada e posição prona</span> pode exigir suporte extracorpóreo (ECMO) em centros especializados."
+      }
+    ]
+  },
+  {
+    "id": "hiv-aids",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Infecção pelo HIV e AIDS",
+    "resumo": "Diagnóstico, indicação universal de TARV e profilaxias pré e pós-exposição.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde - PCDT para Manejo da Infecção pelo HIV em Adultos; WHO Consolidated Guidelines on HIV",
+    "mnemonicos": [
+      { "palavra": "TARV PARA TODOS", "explicacao": "O tratamento antirretroviral deve ser iniciado em todo paciente diagnosticado com HIV, independentemente da contagem de CD4 ou de sintomas — quanto mais precoce, melhor o prognóstico e menor a transmissibilidade." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Testes rápidos seguidos de confirmação conforme fluxograma do Ministério da Saúde; carga viral e contagem de CD4 são usadas para estadiamento e monitoramento, não para diagnóstico inicial."
+      },
+      {
+        "titulo": "Tratamento antirretroviral (TARV)",
+        "conteudo": "Indicada para todos os pacientes diagnosticados, independentemente do CD4, com esquema preferencial atual definido pelo protocolo nacional."
+      },
+      {
+        "titulo": "Infecções oportunistas",
+        "conteudo": "O risco aumenta conforme a queda do CD4. Pneumocistose, toxoplasmose cerebral e tuberculose estão entre as mais relevantes no contexto brasileiro."
+      },
+      {
+        "titulo": "Profilaxia pré e pós-exposição",
+        "conteudo": "PrEP (profilaxia pré-exposição) para populações de maior risco, e PEP (profilaxia pós-exposição) iniciada idealmente em até 72 horas após exposição de risco, por 28 dias."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">CD4 muito baixo associado a sintomas neurológicos ou respiratórios</span> exige investigação urgente de infecção oportunista."
+      }
+    ]
+  },
+  {
+    "id": "les",
+    "area": "residencia",
+    "categoria": "Reumatologia",
+    "titulo": "Lúpus Eritematoso Sistêmico (LES)",
+    "resumo": "Quadro clínico multissistêmico, critérios diagnósticos EULAR/ACR 2019 e tratamento de base.",
+    "revisado": false,
+    "fonte": "EULAR/ACR Classification Criteria for SLE (2019); Sociedade Brasileira de Reumatologia (SBR)",
+    "mnemonicos": [
+      { "palavra": "FAN COMO PORTA DE ENTRADA", "explicacao": "Os critérios EULAR/ACR 2019 exigem FAN positivo (título ≥1:80) como critério de entrada obrigatório, associado a critérios clínicos e imunológicos ponderados por peso." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Doença multissistêmica: artrite, eritema malar, fotossensibilidade, serosite (pleurite/pericardite), nefrite lúpica, alterações hematológicas (citopenias) e neurológicas."
+      },
+      {
+        "titulo": "Critérios diagnósticos",
+        "conteudo": "Os critérios EULAR/ACR 2019 exigem FAN positivo como critério de entrada, somado a critérios clínicos e imunológicos com pesos distintos, totalizando pontuação mínima para classificação."
+      },
+      {
+        "titulo": "Autoanticorpos",
+        "conteudo": "FAN tem alta sensibilidade mas baixa especificidade; anti-dsDNA e anti-Sm são mais específicos e auxiliam no diagnóstico e monitoramento de atividade da doença."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Hidroxicloroquina é a base do tratamento para praticamente todos os pacientes; corticoide e imunossupressores são associados conforme gravidade e órgão acometido."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Nefrite lúpica ou acometimento neurológico grave (neurolúpus)</span> exigem tratamento imunossupressor intensivo imediato."
+      }
+    ]
+  },
+  {
+    "id": "tvp",
+    "area": "residencia",
+    "categoria": "Cardiologia",
+    "titulo": "Trombose Venosa Profunda (TVP)",
+    "resumo": "Escore de Wells para TVP, papel do USG doppler e tratamento anticoagulante.",
+    "revisado": false,
+    "fonte": "ESC Guidelines for Pulmonary Embolism and Venous Thromboembolism (2019, atualização 2024); Diretriz Brasileira de Doença Tromboembólica Venosa - SBACV",
+    "mnemonicos": [
+      { "palavra": "WELLS PARA TVP", "explicacao": "Escore específico (diferente do Wells para TEP) que estima a probabilidade pré-teste de TVP, considerando edema assimétrico, empastamento de panturrilha, imobilização recente e história de TVP prévia." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor e edema assimétrico de membro inferior, com empastamento de panturrilha; o sinal de Homans é pouco sensível e específico, não devendo ser usado isoladamente."
+      },
+      {
+        "titulo": "Escore de Wells para TVP",
+        "conteudo": "Estima a probabilidade pré-teste, orientando se o próximo passo deve ser D-dímero (baixa probabilidade) ou USG doppler venoso direto (probabilidade mais alta)."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Ultrassonografia doppler venosa de membros inferiores é o exame de escolha, pela alta sensibilidade e ausência de radiação."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Anticoagulação plena, com anticoagulantes orais diretos como primeira escolha na maioria dos pacientes, pela praticidade posológica."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">TVP proximal (poplítea ou mais alta) não tratada</span> tem risco elevado de embolização para tromboembolismo pulmonar."
+      }
+    ]
+  },
+  {
+    "id": "diverticulite",
+    "area": "residencia",
+    "categoria": "Cirurgia Geral",
+    "titulo": "Doença Diverticular dos Cólons e Diverticulite Aguda",
+    "resumo": "Classificação de Hinchey e conduta conforme gravidade da diverticulite complicada.",
+    "revisado": false,
+    "fonte": "World Society of Emergency Surgery (WSES) Guidelines for Acute Left-Sided Colonic Diverticulitis (2020); Colégio Brasileiro de Cirurgiões",
+    "mnemonicos": [
+      { "palavra": "HINCHEY I-IV", "explicacao": "Classificação de gravidade da diverticulite complicada: I (abscesso pericólico), II (abscesso pélvico/à distância), III (peritonite purulenta), IV (peritonite fecal) — orienta a decisão entre tratamento clínico, drenagem ou cirurgia." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Doença diverticular",
+        "conteudo": "Mais comum no cólon sigmoide, com prevalência crescente conforme a idade; a maioria dos portadores é assintomática."
+      },
+      {
+        "titulo": "Diverticulite aguda",
+        "conteudo": "Dor em fossa ilíaca esquerda, febre e alteração do hábito intestinal, por inflamação/microperfuração de um divertículo."
+      },
+      {
+        "titulo": "Classificação de Hinchey",
+        "conteudo": "Orienta a gravidade e a conduta nos casos complicados, do abscesso pericólico (I) à peritonite fecal generalizada (IV)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Diverticulite não complicada: tratamento ambulatorial, muitas vezes sem antibiótico em casos leves selecionados. Complicada: internação, antibioticoterapia, drenagem percutânea ou cirurgia conforme a classificação de Hinchey."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Sinais de peritonite difusa (Hinchey III/IV)</span> indicam perfuração livre — cirurgia de urgência."
+      }
+    ]
+  },
+  {
+    "id": "nodulo-mama-ca-mama",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Nódulo de Mama e Câncer de Mama",
+    "resumo": "Classificação BI-RADS, rastreamento populacional e conduta conforme suspeita de malignidade.",
+    "revisado": false,
+    "fonte": "Instituto Nacional de Câncer (INCA) - Diretrizes de Rastreamento do Câncer de Mama; NCCN Guidelines for Breast Cancer",
+    "mnemonicos": [
+      { "palavra": "BI-RADS 0-6", "explicacao": "Classifica achados de imagem mamária por risco de malignidade: BI-RADS 3 (provavelmente benigno, seguimento); BI-RADS 4-5 (suspeito, biópsia); BI-RADS 6 (malignidade já confirmada por biópsia)." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Avaliação do nódulo de mama",
+        "conteudo": "Exame clínico das mamas associado a mamografia e/ou ultrassonografia conforme a idade da paciente, com biópsia indicada em achados suspeitos."
+      },
+      {
+        "titulo": "Classificação BI-RADS",
+        "conteudo": "Orienta a conduta: BI-RADS 3 indica seguimento de imagem em intervalo curto; BI-RADS 4 e 5 indicam biópsia pela probabilidade de malignidade."
+      },
+      {
+        "titulo": "Rastreamento populacional",
+        "conteudo": "Mamografia de rastreio recomendada, na população de risco habitual, com periodicidade bienal dentro da faixa etária de referência."
+      },
+      {
+        "titulo": "Tratamento do câncer de mama",
+        "conteudo": "Cirurgia conservadora ou mastectomia, associada a terapias sistêmicas (hormonioterapia, quimioterapia, terapia-alvo) conforme o perfil do tumor (receptores hormonais, HER2)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Nódulo endurecido e fixo, com retração de pele/papila ou linfonodo axilar palpável</span> exige investigação prioritária para excluir malignidade."
+      }
+    ]
+  },
+  {
+    "id": "assistencia-parto-partograma",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Assistência ao Parto e Partograma",
+    "resumo": "Períodos clínicos do parto e uso do partograma para identificar distócias precocemente.",
+    "revisado": false,
+    "fonte": "WHO Recommendations for Intrapartum Care for a Positive Childbirth Experience; FEBRASGO - Manual de Assistência ao Parto",
+    "mnemonicos": [
+      { "palavra": "DILATAÇÃO → EXPULSÃO → DEQUITAÇÃO", "explicacao": "Os três períodos clínicos clássicos do parto, seguidos do quarto período (Greenberg), de observação da hemostasia uterina na primeira hora pós-parto." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Períodos clínicos do parto",
+        "conteudo": "Dilatação (do início do trabalho de parto até dilatação total), expulsivo (até o nascimento) e dequitação (até a saída da placenta), seguidos do quarto período de observação."
+      },
+      {
+        "titulo": "Partograma",
+        "conteudo": "Ferramenta gráfica que acompanha a evolução da dilatação cervical e a descida da apresentação fetal ao longo do tempo, permitindo identificar distócias precocemente."
+      },
+      {
+        "titulo": "Linha de alerta e linha de ação",
+        "conteudo": "O cruzamento da curva de dilatação com a linha de alerta sinaliza necessidade de maior vigilância; o cruzamento da linha de ação indica necessidade de intervenção ativa."
+      },
+      {
+        "titulo": "Manejo ativo do terceiro período",
+        "conteudo": "Uso profilático de ocitocina logo após o nascimento reduz significativamente o risco de hemorragia pós-parto."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Parada secundária da dilatação ou sinais de desproporção cefalopélvica</span> exigem reavaliação imediata da via de parto."
+      }
+    ]
+  },
+  {
+    "id": "diabetes-gestacional",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Diabetes Mellitus Gestacional (DMG)",
+    "resumo": "Rastreio entre 24-28 semanas, critérios diagnósticos e sequência terapêutica.",
+    "revisado": false,
+    "fonte": "FEBRASGO - Diabetes na Gestação; ADA Standards of Care in Diabetes-2026 (secao gestacao)",
+    "mnemonicos": [
+      { "palavra": "TOTG 75g — 24-28 SEMANAS", "explicacao": "O teste oral de tolerância à glicose com 75g é realizado entre 24 e 28 semanas de gestação para rastreio universal do diabetes gestacional, com rastreio mais precoce se houver fatores de risco." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Rastreio",
+        "conteudo": "TOTG 75g entre 24 e 28 semanas de gestação em todas as gestantes; rastreio precoce (1º trimestre) indicado na presença de fatores de risco (obesidade, história prévia de DMG, macrossomia prévia)."
+      },
+      {
+        "titulo": "Critérios diagnósticos",
+        "conteudo": "Diagnóstico confirmado quando um ou mais valores de glicemia (jejum, 1h ou 2h após sobrecarga) atingem os pontos de corte estabelecidos para gestação."
+      },
+      {
+        "titulo": "Tratamento inicial",
+        "conteudo": "Orientação nutricional e atividade física regular são a primeira linha de tratamento, com monitorização domiciliar da glicemia capilar."
+      },
+      {
+        "titulo": "Tratamento farmacológico",
+        "conteudo": "Insulina é a droga de escolha quando dieta e atividade física não são suficientes para o controle glicêmico adequado."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Macrossomia fetal e polidrâmnio</span> sugerem controle glicêmico inadequado e aumentam o risco de complicações no parto."
+      }
+    ]
+  },
+  {
+    "id": "climaterio",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Climatério e Menopausa",
+    "resumo": "Definição, sintomas vasomotores e indicação de terapia hormonal no climatério.",
+    "revisado": false,
+    "fonte": "FEBRASGO - Manual de Climatério; The Menopause Society (NAMS) Position Statement",
+    "mnemonicos": [
+      { "palavra": "12 MESES SEM MENSTRUAR", "explicacao": "A menopausa é confirmada retrospectivamente após 12 meses consecutivos de amenorreia, na ausência de outras causas." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição",
+        "conteudo": "Menopausa é confirmada retrospectivamente após 12 meses consecutivos de amenorreia; climatério é o período de transição hormonal que a antecede e sucede."
+      },
+      {
+        "titulo": "Sintomas climatéricos",
+        "conteudo": "Fogachos, sudorese noturna, atrofia vaginal e alterações do humor são os sintomas mais característicos, decorrentes da queda estrogênica."
+      },
+      {
+        "titulo": "Terapia hormonal",
+        "conteudo": "Indicada para sintomas vasomotores importantes em mulheres sem contraindicação, idealmente iniciada próximo à menopausa (\"janela de oportunidade\"), com menor risco cardiovascular nesse período."
+      },
+      {
+        "titulo": "Rastreios importantes no climatério",
+        "conteudo": "Mamografia, densitometria óssea e avaliação de risco cardiovascular devem ser reforçados nessa faixa etária."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Sangramento vaginal após a menopausa</span> sempre exige investigação para excluir neoplasia endometrial."
+      }
+    ]
+  },
+  {
+    "id": "reanimacao-neonatal",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Reanimação Neonatal na Sala de Parto",
+    "resumo": "Sequência de avaliação e reanimação do recém-nascido logo após o nascimento.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Pediatria (SBP) - Programa de Reanimação Neonatal; AHA/AAP Neonatal Resuscitation Program (NRP), 8a edicao",
+    "mnemonicos": [
+      { "palavra": "AQUECER → POSICIONAR → SECAR/ESTIMULAR", "explicacao": "Os passos iniciais da reanimação neonatal, realizados nos primeiros 30-60 segundos de vida antes de decidir sobre necessidade de ventilação." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Avaliação inicial",
+        "conteudo": "Gestação a termo, respirando ou chorando, e com bom tônus muscular: o recém-nascido pode ser mantido em contato pele a pele com a mãe, sem necessidade de passos adicionais."
+      },
+      {
+        "titulo": "Passos iniciais",
+        "conteudo": "Aquecer, posicionar a via aérea, aspirar secreções se necessário, secar e estimular o recém-nascido que não preenche os critérios de bem-estar ao nascer."
+      },
+      {
+        "titulo": "Ventilação com pressão positiva",
+        "conteudo": "Indicada se o recém-nascido apresenta apneia/respiração em gasping ou frequência cardíaca menor que 100 bpm após os passos iniciais."
+      },
+      {
+        "titulo": "Compressões torácicas",
+        "conteudo": "Indicadas se a frequência cardíaca permanece menor que 60 bpm apesar de ventilação adequada por 30 segundos, na relação de 3:1 com a ventilação."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Frequência cardíaca persistentemente baixa apesar de VPP e compressões adequadas</span> exige considerar adrenalina e investigar causas reversíveis (hipovolemia, pneumotórax)."
+      }
+    ]
+  },
+  {
+    "id": "bronquiolite-viral-aguda",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Bronquiolite Viral Aguda",
+    "resumo": "Diagnóstico clínico e tratamento essencialmente de suporte na bronquiolite do lactente.",
+    "revisado": false,
+    "fonte": "AAP Clinical Practice Guideline: Bronchiolitis; Sociedade Brasileira de Pediatria (SBP)",
+    "mnemonicos": [
+      { "palavra": "VSR EM LACTENTES <2 ANOS", "explicacao": "O vírus sincicial respiratório (VSR) é a causa mais comum de bronquiolite viral aguda, tipicamente no primeiro episódio de sibilância em lactentes menores de 2 anos." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição e etiologia",
+        "conteudo": "Primeiro episódio de sibilância associado a infecção viral (mais comumente pelo VSR) em lactentes menores de 2 anos."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Pródromo catarral (coriza, tosse) seguido de sibilância, taquipneia e tiragem subcostal/intercostal."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Eminentemente clínico; exames complementares (radiografia, testes virais) não são rotineiramente necessários para o diagnóstico ou manejo."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Essencialmente de suporte: oxigênio suplementar se hipoxemia, hidratação adequada. Broncodilatadores e corticoides não têm benefício comprovado de rotina nessa faixa etária."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Apneia, desconforto respiratório grave ou recusa alimentar</span> exigem internação hospitalar."
+      }
+    ]
+  },
+  {
+    "id": "estenose-hipertrofica-piloro",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Estenose Hipertrófica do Piloro",
+    "resumo": "Quadro clínico clássico, distúrbio metabólico associado e tratamento cirúrgico definitivo.",
+    "revisado": false,
+    "fonte": "American Pediatric Surgical Association (APSA) Guidelines; Sociedade Brasileira de Cirurgia Pediátrica",
+    "mnemonicos": [
+      { "palavra": "VÔMITOS EM JATO NÃO BILIOSOS", "explicacao": "Quadro clássico entre a 3ª e 6ª semana de vida: vômitos em jato, não biliosos, progressivos, em lactente que permanece faminto logo após o episódio." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Vômitos não biliosos em jato, progressivos, tipicamente entre a 3ª e a 6ª semana de vida, com o lactente permanecendo faminto logo após o vômito."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Massa palpável em hipocôndrio/epigástrio direito (\"oliva pilórica\") pode ser identificada em parte dos casos, especialmente com o estômago vazio."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Ultrassonografia abdominal é o exame de escolha, avaliando espessura e comprimento do canal pilórico."
+      },
+      {
+        "titulo": "Distúrbio metabólico clássico",
+        "conteudo": "Alcalose metabólica hipoclorêmica e hipocalêmica, decorrente da perda de ácido clorídrico pelos vômitos repetidos."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Correção do distúrbio hidroeletrolítico antes de qualquer intervenção cirúrgica; piloromiotomia é o tratamento definitivo, com excelente prognóstico."
+      }
+    ]
+  },
+  {
+    "id": "etica-medica-bioetica",
+    "area": "residencia",
+    "categoria": "Medicina Preventiva",
+    "titulo": "Ética Médica e Bioética",
+    "resumo": "Princípios da bioética, consentimento informado e Código de Ética Médica brasileiro.",
+    "revisado": false,
+    "fonte": "Conselho Federal de Medicina (CFM) - Código de Ética Médica (Resolução CFM no 2.217/2018); Declaração de Helsinque",
+    "mnemonicos": [
+      { "palavra": "AUTONOMIA - BENEFICÊNCIA - NÃO MALEFICÊNCIA - JUSTIÇA", "explicacao": "Os 4 princípios clássicos da bioética, usados como base para analisar praticamente qualquer dilema ético em provas e na prática clínica." }
+    ],
+    "secoes": [
+      {
+        "titulo": "Princípios da bioética",
+        "conteudo": "Autonomia (respeito à vontade do paciente capaz), beneficência (agir em benefício do paciente), não maleficência (não causar dano) e justiça (distribuição equitativa de recursos e cuidados)."
+      },
+      {
+        "titulo": "Consentimento informado",
+        "conteudo": "Obrigatório para a realização de procedimentos, respeitando a autonomia do paciente, exceto em situações de urgência com risco iminente à vida em que o consentimento não pode ser obtido a tempo."
+      },
+      {
+        "titulo": "Sigilo médico",
+        "conteudo": "Dever ético fundamental, com exceções previstas em lei, como notificação compulsória de doenças e risco concreto a terceiros."
+      },
+      {
+        "titulo": "Código de Ética Médica brasileiro",
+        "conteudo": "Regido pela Resolução CFM nº 2.217/2018, que estabelece os direitos e deveres do médico na relação com pacientes, colegas e a sociedade."
+      },
+      {
+        "titulo": "Situações especiais",
+        "conteudo": "Recusa de tratamento por paciente capaz e informado deve ser respeitada; cuidados paliativos e decisões de final de vida seguem princípios de ortotanásia, sem obstinação terapêutica."
       }
     ]
   }
