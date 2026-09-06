@@ -1,0 +1,290 @@
+/* ==========================================================================
+   MedConduta — Layout (sidebar, topbar, bottom nav, grids responsivos)
+   ========================================================================== */
+
+.app-shell {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  min-height: 100vh;
+}
+
+.app-shell.is-collapsed {
+  grid-template-columns: var(--sidebar-width-collapsed) 1fr;
+}
+
+/* ---------- Sidebar ---------- */
+
+.sidebar {
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4) var(--space-3);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-2) var(--space-5);
+}
+
+.sidebar__brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--fw-semibold);
+  flex-shrink: 0;
+}
+
+.sidebar__brand-name {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-md);
+  white-space: nowrap;
+}
+
+.app-shell.is-collapsed .sidebar__brand-name,
+.app-shell.is-collapsed .nav-section__title,
+.app-shell.is-collapsed .nav-link__label {
+  display: none;
+}
+
+.nav-section + .nav-section {
+  margin-top: var(--space-5);
+}
+
+.nav-section__title {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  padding: 0 var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  transition: background var(--transition-fast), color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.nav-link.is-active {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.nav-link__icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar__footer {
+  margin-top: auto;
+  padding-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sidebar__collapse-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+.sidebar__collapse-btn:hover { background: var(--color-surface-hover); color: var(--color-text); }
+
+/* ---------- Topbar (mobile) ---------- */
+
+.topbar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--topbar-height);
+  padding: 0 var(--space-4);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.topbar__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: var(--fw-semibold);
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+}
+.icon-btn:hover { background: var(--color-surface-hover); }
+
+/* ---------- Main content ---------- */
+
+.main {
+  min-width: 0;
+  padding: var(--space-6) var(--space-6) var(--space-8);
+}
+
+.main__container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: var(--space-5);
+}
+
+.page-header__eyebrow {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.page-header__desc {
+  color: var(--color-text-secondary);
+  max-width: 60ch;
+}
+
+/* ---------- Mobile drawer overlay ---------- */
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 24, 27, 0.4);
+  z-index: 90;
+}
+
+/* ---------- Bottom nav (mobile) ---------- */
+
+.bottom-nav {
+  display: none;
+}
+
+/* ==========================================================================
+   Responsivo
+   ========================================================================== */
+
+@media (max-width: 960px) {
+  .app-shell,
+  .app-shell.is-collapsed {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar { display: flex; }
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: min(84vw, 300px);
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform var(--transition-base);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .app-shell.nav-open .sidebar {
+    transform: translateX(0);
+  }
+
+  .app-shell.nav-open .sidebar-overlay {
+    display: block;
+  }
+
+  .app-shell.is-collapsed .sidebar__brand-name,
+  .app-shell.is-collapsed .nav-section__title,
+  .app-shell.is-collapsed .nav-link__label {
+    display: initial;
+  }
+
+  .sidebar__collapse-btn { display: none; }
+
+  .main {
+    padding: var(--space-4) var(--space-4) calc(var(--bottomnav-height) + var(--space-6));
+  }
+
+  .bottom-nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--bottomnav-height);
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    z-index: 80;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .bottom-nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 0.65rem;
+    color: var(--color-text-muted);
+    min-height: 48px;
+  }
+
+  .bottom-nav__link.is-active { color: var(--color-accent); }
+}
+
+@media (min-width: 961px) {
+  .sidebar-overlay { display: none !important; }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "MedConduta — Estudo e prática clínica",
+  "short_name": "MedConduta",
+  "description": "Plataforma de estudo estruturado para residência (R1) e guia de bolso para prática clínica. Uso educacional — conteúdo clínico é rascunho a validar.",
+  "start_url": "./index.html#/residencia/conteudo",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#3d6f68",
+  "lang": "pt-BR",
+  "categories": ["education", "medical", "reference"],
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

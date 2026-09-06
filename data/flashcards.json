@@ -1,0 +1,493 @@
+[
+  {
+    "id": "deck-has",
+    "temaId": "has",
+    "titulo": "HAS — Diagnóstico e tratamento",
+    "cards": [
+      { "id": "has-1", "frente": "Qual o valor de PA em consultório que define HAS (média de duas medidas, duas ocasiões)?", "verso": "≥ 140/90 mmHg" },
+      { "id": "has-2", "frente": "Quais são as 4 classes de primeira linha para tratamento farmacológico da HAS?", "verso": "Diuréticos tiazídicos, IECA, BRA e bloqueadores de canal de cálcio (BCC)." },
+      { "id": "has-3", "frente": "Quando considerar terapia combinada (dois fármacos) já no início do tratamento da HAS?", "verso": "Quando a PA está ≥20/10 mmHg acima da meta terapêutica." },
+      { "id": "has-4", "frente": "Cite 3 lesões de órgão-alvo pesquisadas na estratificação de risco da HAS.", "verso": "Hipertrofia ventricular esquerda, doença renal crônica e retinopatia hipertensiva." }
+    ]
+  },
+  {
+    "id": "deck-dm2",
+    "temaId": "dm2",
+    "titulo": "DM2 — Diagnóstico e metas",
+    "cards": [
+      { "id": "dm2-1", "frente": "Quais os 4 critérios diagnósticos de DM2?", "verso": "Glicemia de jejum ≥126 mg/dL; TOTG 2h ≥200 mg/dL; HbA1c ≥6,5%; glicemia ao acaso ≥200 mg/dL com sintomas." },
+      { "id": "dm2-2", "frente": "Qual a meta geral de HbA1c para a maioria dos adultos com DM2?", "verso": "< 7%" },
+      { "id": "dm2-3", "frente": "Em quais situações considerar iSGLT2/GLP-1 precocemente, independente do controle glicêmico?", "verso": "Doença cardiovascular estabelecida, alto risco cardiovascular, insuficiência cardíaca ou doença renal crônica." }
+    ]
+  },
+  {
+    "id": "deck-iam",
+    "temaId": "iam",
+    "titulo": "IAM — Manejo inicial",
+    "cards": [
+      { "id": "iam-1", "frente": "O que significa o mnemônico MONABCH na síndrome coronariana aguda?", "verso": "Morfina, Oxigênio, Nitrato, AAS, Betabloqueador, Clopidogrel (P2Y12), Heparina/estatina." },
+      { "id": "iam-2", "frente": "Qual o tempo alvo porta-balão para angioplastia primária no IAMCSST?", "verso": "90–120 minutos do primeiro contato médico." }
+    ]
+  },
+  {
+    "id": "deck-sepse",
+    "temaId": "sepse",
+    "titulo": "Sepse — Bundle inicial",
+    "cards": [
+      { "id": "sepse-1", "frente": "Quais são os componentes do bundle da primeira hora na sepse?", "verso": "Lactato, culturas, antibiótico de amplo espectro, cristaloide 30 mL/kg (se indicado), vasopressor se necessário." },
+      { "id": "sepse-2", "frente": "Como se define choque séptico?", "verso": "Necessidade de vasopressor para PAM ≥65 mmHg e lactato >2 mmol/L, apesar de volume adequado." }
+    ]
+  },
+  {
+    "id": "deck-pcr",
+    "temaId": "pcr-acls",
+    "titulo": "PCR/ACLS — Causas reversíveis",
+    "cards": [
+      { "id": "pcr-1", "frente": "Quais são os 5 H's das causas reversíveis de PCR?", "verso": "Hipovolemia, Hipóxia, Hidrogênio (acidose), Hipo/hipercalemia, Hipotermia." },
+      { "id": "pcr-2", "frente": "Quais são os 5 T's das causas reversíveis de PCR?", "verso": "Tensão no tórax (pneumotórax), Tamponamento cardíaco, Toxinas, Trombose pulmonar, Trombose coronariana." },
+      { "id": "pcr-3", "frente": "Quais os ritmos chocáveis de PCR?", "verso": "Fibrilação ventricular (FV) e taquicardia ventricular sem pulso (TVSP)." }
+    ]
+  },
+  {
+    "id": "deck-asma",
+    "temaId": "asma-exacerbada",
+    "titulo": "Asma exacerbada — Sinais de gravidade",
+    "cards": [
+      { "id": "asma-1", "frente": "Qual achado ausculatório indica gravidade extrema na crise asmática?", "verso": "Tórax silencioso (ausência de sibilos por fluxo aéreo muito reduzido)." },
+      { "id": "asma-2", "frente": "Quais os 3 pilares do tratamento inicial da crise asmática (mnemônico OBA)?", "verso": "Oxigênio, Broncodilatador de curta ação inalatório, corticoide sistêmico Antiinflamatório." }
+    ]
+  },
+  {
+    "id": "deck-lra",
+    "temaId": "lra",
+    "titulo": "LRA — Critérios e indicações de diálise",
+    "cards": [
+      { "id": "lra-1", "frente": "Quais os 3 critérios KDIGO para diagnóstico de LRA?", "verso": "Aumento de creatinina ≥0,3 mg/dL em 48h; OU ≥1,5x o basal em 7 dias; OU débito urinário <0,5 mL/kg/h por 6h." },
+      { "id": "lra-2", "frente": "O que indica o mnemônico AEIOU?", "verso": "Indicações de diálise de urgência: Acidose refratária, Eletrólitos (hipercalemia), Intoxicação dialisável, sObrecarga volêmica, Uremia sintomática." },
+      { "id": "lra-3", "frente": "Qual a causa mais comum de LRA em pacientes hospitalizados?", "verso": "LRA pré-renal por hipovolemia/hipoperfusão, geralmente reversível com correção volêmica." }
+    ]
+  },
+  {
+    "id": "deck-hda",
+    "temaId": "hda",
+    "titulo": "HDA — Manejo inicial",
+    "cards": [
+      { "id": "hda-1", "frente": "Qual a conduta farmacológica inicial na suspeita de HDA, antes da endoscopia?", "verso": "IBP em bolus seguido de infusão contínua." },
+      { "id": "hda-2", "frente": "Em qual prazo a endoscopia digestiva alta deve ser realizada após estabilização?", "verso": "Em até 24 horas." },
+      { "id": "hda-3", "frente": "Que drogas associar quando há suspeita de origem varicosa (hepatopata)?", "verso": "Terlipressina ou octreotide, além de antibioticoprofilaxia." }
+    ]
+  },
+  {
+    "id": "deck-avc",
+    "temaId": "avc-isquemico",
+    "titulo": "AVC isquêmico — Reconhecimento e janela terapêutica",
+    "cards": [
+      { "id": "avc-1", "frente": "O que avalia o mnemônico FAST no reconhecimento de AVC?", "verso": "Face (assimetria), Arm (queda de braço), Speech (fala alterada), Time (hora do início dos sintomas)." },
+      { "id": "avc-2", "frente": "Qual exame de imagem é prioritário antes de definir a estratégia de reperfusão?", "verso": "Tomografia de crânio sem contraste, para excluir hemorragia." }
+    ]
+  },
+  {
+    "id": "deck-pac",
+    "temaId": "pac",
+    "titulo": "PAC — CURB-65",
+    "cards": [
+      { "id": "pac-1", "frente": "O que avalia o escore CURB-65?", "verso": "Confusão mental, Ureia elevada, frequência Respiratória ≥30, PA baixa (Blood pressure), idade ≥65 anos." },
+      { "id": "pac-2", "frente": "Pacientes com CURB-65 = 0-1 devem ser tratados onde?", "verso": "Ambulatorialmente, com amoxicilina ou macrolídeo." }
+    ]
+  },
+  {
+    "id": "deck-abdome-agudo",
+    "temaId": "abdome-agudo",
+    "titulo": "Apendicite aguda — Alvarado (MANTRELS)",
+    "cards": [
+      { "id": "aa-1", "frente": "O que significa o mnemônico MANTRELS?", "verso": "Migração da dor, Anorexia, Náusea/vômito, Tenderness em FID, Rebote, Elevação da temperatura, Leucocitose, Shift left." },
+      { "id": "aa-2", "frente": "Qual o tratamento definitivo da apendicite aguda?", "verso": "Apendicectomia (aberta ou videolaparoscópica) com antibioticoprofilaxia perioperatória." }
+    ]
+  },
+  {
+    "id": "deck-politrauma",
+    "temaId": "politrauma-abcde",
+    "titulo": "Politrauma — ABCDE",
+    "cards": [
+      { "id": "pt-1", "frente": "O que representa cada letra do ABCDE no trauma?", "verso": "Airway, Breathing, Circulation, Disability, Exposure." },
+      { "id": "pt-2", "frente": "O que sugere choque hemorrágico refratário à reposição volêmica inicial?", "verso": "Sangramento não controlado — indica necessidade de cirurgia de controle de danos." }
+    ]
+  },
+  {
+    "id": "deck-sua",
+    "temaId": "sua",
+    "titulo": "SUA — Classificação PALM-COEIN",
+    "cards": [
+      { "id": "sua-1", "frente": "Quais as causas estruturais do PALM-COEIN?", "verso": "Pólipo, Adenomiose, Leiomioma, Malignidade/hiperplasia." },
+      { "id": "sua-2", "frente": "Quais as causas não estruturais do PALM-COEIN?", "verso": "Coagulopatia, disfunção Ovulatória, Endometrial, Iatrogênica, Não classificada." }
+    ]
+  },
+  {
+    "id": "deck-pre-eclampsia",
+    "temaId": "pre-eclampsia",
+    "titulo": "Pré-eclâmpsia/Eclâmpsia — HELLP",
+    "cards": [
+      { "id": "pe-1", "frente": "O que significa o mnemônico HELLP?", "verso": "Hemólise, Elevação de enzimas hepáticas (Liver), Plaquetopenia (Low Platelets)." },
+      { "id": "pe-2", "frente": "Qual a droga de escolha para prevenção/tratamento de convulsões na pré-eclâmpsia grave/eclâmpsia?", "verso": "Sulfato de magnésio." }
+    ]
+  },
+  {
+    "id": "deck-ictericia-neonatal",
+    "temaId": "ictericia-neonatal",
+    "titulo": "Icterícia neonatal — Fisiológica x patológica",
+    "cards": [
+      { "id": "in-1", "frente": "Icterícia neonatal nas primeiras 24h de vida deve ser interpretada como?", "verso": "Sempre patológica, exige investigação imediata (bilirrubina, tipagem, Coombs direto)." },
+      { "id": "in-2", "frente": "Quais sinais sugerem encefalopatia bilirrubínica aguda (kernicterus)?", "verso": "Letargia, hipertonia e choro agudo em recém-nascido ictérico." }
+    ]
+  },
+  {
+    "id": "deck-diarreia-infantil",
+    "temaId": "diarreia-infantil",
+    "titulo": "Diarreia infantil — Planos A/B/C",
+    "cards": [
+      { "id": "di-1", "frente": "O que caracteriza o Plano A de hidratação?", "verso": "Criança sem sinais de desidratação: líquidos adicionais e SRO em casa." },
+      { "id": "di-2", "frente": "Quando indicar o Plano C (hidratação venosa imediata)?", "verso": "Desidratação grave ou choque (letargia, pulsos finos, enchimento capilar lentificado)." }
+    ]
+  },
+  {
+    "id": "deck-vigilancia-epidemiologica",
+    "temaId": "vigilancia-epidemiologica",
+    "titulo": "Vigilância epidemiológica — Notificação compulsória",
+    "cards": [
+      { "id": "ve-1", "frente": "Qual sistema recebe as fichas de notificação compulsória no Brasil?", "verso": "SINAN — Sistema de Informação de Agravos de Notificação." },
+      { "id": "ve-2", "frente": "Qual o prazo típico para notificação de doenças de notificação imediata?", "verso": "Até 24 horas da suspeita." }
+    ]
+  },
+  {
+    "id": "deck-ic",
+    "temaId": "ic",
+    "titulo": "IC — Os 4 pilares da ICFEr",
+    "cards": [
+      { "id": "ic-1", "frente": "Quais os 4 pilares farmacológicos da ICFEr que reduzem mortalidade?", "verso": "IECA/BRA (ou INRA), betabloqueador, antagonista mineralocorticoide e iSGLT2." },
+      { "id": "ic-2", "frente": "O que diferencia ICFEr de ICFEp?", "verso": "Fração de ejeção reduzida (≤40%) x preservada (≥50%), com implicações terapêuticas distintas." },
+      { "id": "ic-3", "frente": "Qual exame laboratorial auxilia no diagnóstico de IC?", "verso": "BNP ou NT-proBNP." }
+    ]
+  },
+  {
+    "id": "deck-colecistite-colangite",
+    "temaId": "colecistite-colangite",
+    "titulo": "Colecistite/Colangite — Charcot e Reynolds",
+    "cards": [
+      { "id": "cc-1", "frente": "O que compõe a tríade de Charcot?", "verso": "Dor em hipocôndrio direito, febre e icterícia." },
+      { "id": "cc-2", "frente": "O que é a pêntade de Reynolds e o que indica?", "verso": "Tríade de Charcot + hipotensão + confusão mental; indica colangite aguda grave." },
+      { "id": "cc-3", "frente": "Qual achado ultrassonográfico sugere colecistite aguda?", "verso": "Espessamento da parede vesicular, com ou sem cálculo impactado, e sinal de Murphy ultrassonográfico." }
+    ]
+  },
+  {
+    "id": "deck-sop",
+    "temaId": "sop",
+    "titulo": "SOP — Critérios de Rotterdam",
+    "cards": [
+      { "id": "sop-1", "frente": "Quantos dos 3 critérios de Rotterdam são necessários para diagnóstico de SOP?", "verso": "Pelo menos 2 dos 3 (oligo/anovulação, hiperandrogenismo, morfologia policística ao USG)." },
+      { "id": "sop-2", "frente": "Qual tratamento indicado se a paciente com SOP deseja engravidar?", "verso": "Indutores de ovulação (ex.: letrozol)." },
+      { "id": "sop-3", "frente": "Por que mulheres com SOP têm maior risco de hiperplasia endometrial?", "verso": "Anovulação crônica leva a estímulo estrogênico sem oposição de progesterona." }
+    ]
+  },
+  {
+    "id": "deck-hemorragia-1a-metade",
+    "temaId": "hemorragia-1a-metade",
+    "titulo": "Hemorragias da 1ª metade da gestação",
+    "cards": [
+      { "id": "h1m-1", "frente": "Quais os 3 principais diagnósticos diferenciais de sangramento no 1º trimestre?", "verso": "Abortamento, gravidez ectópica e doença trofoblástica gestacional (mola)." },
+      { "id": "h1m-2", "frente": "Qual achado ultrassonográfico é clássico da mola hidatiforme?", "verso": "Padrão em \"flocos de neve\", sem embrião identificável." },
+      { "id": "h1m-3", "frente": "Qual sinal de alerta indica possível rotura de gravidez ectópica?", "verso": "Dor abdominal intensa associada a instabilidade hemodinâmica." }
+    ]
+  },
+  {
+    "id": "deck-puericultura-pni",
+    "temaId": "puericultura-pni",
+    "titulo": "Puericultura e calendário vacinal",
+    "cards": [
+      { "id": "pp-1", "frente": "Até que idade é recomendado o aleitamento materno exclusivo?", "verso": "Até os 6 meses de vida." },
+      { "id": "pp-2", "frente": "Cite 3 vacinas do PNI aplicadas no primeiro ano de vida.", "verso": "BCG, hepatite B e pentavalente (entre outras: VIP, pneumocócica, rotavírus, meningocócica C)." },
+      { "id": "pp-3", "frente": "O que fazer diante de atraso significativo nos marcos do desenvolvimento?", "verso": "Investigação diagnóstica direcionada, com encaminhamento especializado se necessário." }
+    ]
+  },
+  {
+    "id": "deck-sepse-neonatal",
+    "temaId": "sepse-neonatal",
+    "titulo": "Sepse neonatal — Precoce x tardia",
+    "cards": [
+      { "id": "sn-1", "frente": "Como se diferencia sepse neonatal precoce de tardia?", "verso": "Precoce: até 48-72h de vida, ligada a fatores maternos/intraparto. Tardia: após 72h, mais associada a infecção hospitalar." },
+      { "id": "sn-2", "frente": "Cite 2 fatores de risco maternos para sepse neonatal precoce.", "verso": "Rotura prematura de membranas prolongada e colonização materna por Streptococcus agalactiae (GBS)." },
+      { "id": "sn-3", "frente": "Qual a conduta antibiótica diante de suspeita de sepse neonatal?", "verso": "Iniciar antibioticoterapia empírica precocemente, após coleta de culturas, sem aguardar o resultado." }
+    ]
+  },
+  {
+    "id": "deck-fa",
+    "temaId": "fa",
+    "titulo": "FA — CHA2DS2-VASc",
+    "cards": [
+      { "id": "fa-1", "frente": "O que avalia o escore CHA2DS2-VASc?", "verso": "Risco tromboembólico em pacientes com FA, orientando a indicação de anticoagulação oral." },
+      { "id": "fa-2", "frente": "Qual a conduta diante de FA com instabilidade hemodinâmica?", "verso": "Cardioversão elétrica de urgência." }
+    ]
+  },
+  {
+    "id": "deck-dpoc-exacerbado",
+    "temaId": "dpoc-exacerbado",
+    "titulo": "DPOC exacerbado — Critérios de Anthonisen",
+    "cards": [
+      { "id": "dpoc-1", "frente": "Quais os 3 critérios de Anthonisen na exacerbação de DPOC?", "verso": "Aumento da dispneia, aumento do volume do escarro e/ou mudança da purulência do escarro." },
+      { "id": "dpoc-2", "frente": "Quando indicar antibiótico na exacerbação de DPOC?", "verso": "Quando há pelo menos 2 critérios de Anthonisen, incluindo purulência do escarro." }
+    ]
+  },
+  {
+    "id": "deck-cad",
+    "temaId": "cetoacidose-diabetica",
+    "titulo": "CAD — Sequência terapêutica",
+    "cards": [
+      { "id": "cad-1", "frente": "Qual a sequência correta de tratamento da cetoacidose diabética?", "verso": "Hidratação venosa vigorosa primeiro, depois insulina regular em infusão contínua (após checar potássio)." },
+      { "id": "cad-2", "frente": "Por que é importante avaliar o potássio antes de iniciar insulina na CAD?", "verso": "A insulina desloca potássio para dentro da célula; hipocalemia não corrigida pode causar arritmias graves." }
+    ]
+  },
+  {
+    "id": "deck-pancreatite-aguda",
+    "temaId": "pancreatite-aguda",
+    "titulo": "Pancreatite aguda — Diagnóstico",
+    "cards": [
+      { "id": "pa-1", "frente": "Quais os 3 critérios diagnósticos de pancreatite aguda (necessários 2 de 3)?", "verso": "Dor abdominal típica, lipase/amilase ≥3x LSN, imagem compatível." },
+      { "id": "pa-2", "frente": "Quais as 2 causas mais comuns de pancreatite aguda?", "verso": "Litíase biliar e uso de álcool." }
+    ]
+  },
+  {
+    "id": "deck-meningite",
+    "temaId": "meningite",
+    "titulo": "Meningite — Tríade clássica",
+    "cards": [
+      { "id": "men-1", "frente": "Qual a tríade clássica da meningite bacteriana?", "verso": "Febre, rigidez de nuca e alteração do nível de consciência." },
+      { "id": "men-2", "frente": "O que sugere petéquias/púrpura associadas a febre e rigidez de nuca?", "verso": "Meningococcemia, com risco de choque séptico rapidamente progressivo." }
+    ]
+  },
+  {
+    "id": "deck-obstrucao-intestinal",
+    "temaId": "obstrucao-intestinal",
+    "titulo": "Obstrução intestinal — Sinais cardinais",
+    "cards": [
+      { "id": "oi-1", "frente": "Quais os 4 sinais cardinais da obstrução intestinal mecânica?", "verso": "Dor em cólica, distensão abdominal, vômitos e parada de eliminação de gases/fezes." },
+      { "id": "oi-2", "frente": "Quais sinais sugerem sofrimento/estrangulamento de alça?", "verso": "Dor contínua e intensa, febre, taquicardia e sinais de peritonite." }
+    ]
+  },
+  {
+    "id": "deck-hemorragia-pos-parto",
+    "temaId": "hemorragia-pos-parto",
+    "titulo": "Hemorragia pós-parto — 4 Ts",
+    "cards": [
+      { "id": "hpp-1", "frente": "O que representa o mnemônico 4 Ts na hemorragia pós-parto?", "verso": "Tônus (atonia), Trauma (lacerações), Tecido (restos placentários), Trombina (coagulopatia)." },
+      { "id": "hpp-2", "frente": "Qual a causa mais comum de hemorragia pós-parto?", "verso": "Atonia uterina." }
+    ]
+  },
+  {
+    "id": "deck-exantemas",
+    "temaId": "doencas-exantematicas",
+    "titulo": "Doenças exantemáticas",
+    "cards": [
+      { "id": "ex-1", "frente": "Qual achado é patognomônico do sarampo?", "verso": "Manchas de Koplik." },
+      { "id": "ex-2", "frente": "Qual agente causa o eritema infeccioso (\"face esbofeteada\")?", "verso": "Parvovírus B19." },
+      { "id": "ex-3", "frente": "O que caracteriza o exantema súbito (roséola)?", "verso": "Febre alta por ~3 dias que cede exatamente quando o exantema surge, em lactentes pequenos." }
+    ]
+  },
+  {
+    "id": "deck-principios-sus",
+    "temaId": "principios-sus",
+    "titulo": "Princípios do SUS",
+    "cards": [
+      { "id": "sus-1", "frente": "Quais os 3 princípios doutrinários do SUS?", "verso": "Universalidade, Equidade, Integralidade." },
+      { "id": "sus-2", "frente": "Quais os 3 princípios organizativos do SUS?", "verso": "Regionalização/hierarquização, Descentralização, Participação social." },
+      { "id": "sus-3", "frente": "Qual o papel da Atenção Primária nas Redes de Atenção à Saúde?", "verso": "Ordenadora do cuidado e porta de entrada preferencial do sistema." }
+    ]
+  },
+  {
+    "id": "deck-tep",
+    "temaId": "tep",
+    "titulo": "TEP — Wells e conduta",
+    "cards": [
+      { "id": "tep-1", "frente": "O que orienta o escore de Wells no TEP?", "verso": "A probabilidade pré-teste de TEP, direcionando a sequência diagnóstica (D-dímero x imagem direta)." },
+      { "id": "tep-2", "frente": "Qual a conduta diante de TEP com instabilidade hemodinâmica?", "verso": "Considerar terapia trombolítica (TEP maciço)." }
+    ]
+  },
+  {
+    "id": "deck-disseccao-aorta",
+    "temaId": "disseccao-aorta",
+    "titulo": "Dissecção de aorta — Stanford",
+    "cards": [
+      { "id": "da-1", "frente": "Qual o tratamento do tipo A de Stanford?", "verso": "Cirurgia de urgência (envolve a aorta ascendente)." },
+      { "id": "da-2", "frente": "Qual o tratamento inicial do tipo B de Stanford?", "verso": "Tratamento clínico com controle rigoroso de PA/FC." }
+    ]
+  },
+  {
+    "id": "deck-tireoidopatias",
+    "temaId": "tireoidopatias",
+    "titulo": "Tireoidopatias — TSH/T4 livre",
+    "cards": [
+      { "id": "tir-1", "frente": "Qual padrão de TSH/T4 livre define hipotireoidismo primário?", "verso": "TSH alto + T4 livre baixo." },
+      { "id": "tir-2", "frente": "Qual a causa mais comum de hipertireoidismo?", "verso": "Doença de Graves." }
+    ]
+  },
+  {
+    "id": "deck-tuberculose",
+    "temaId": "tuberculose",
+    "titulo": "Tuberculose — Esquema RIPE",
+    "cards": [
+      { "id": "tb-1", "frente": "O que compõe o esquema RIPE?", "verso": "Rifampicina, Isoniazida, Pirazinamida e Etambutol nos 2 primeiros meses; RI por mais 4 meses." },
+      { "id": "tb-2", "frente": "O que é o TDO na tuberculose?", "verso": "Tratamento Diretamente Observado, estratégia para melhorar adesão e reduzir abandono/resistência." }
+    ]
+  },
+  {
+    "id": "deck-drc",
+    "temaId": "drc",
+    "titulo": "DRC — Classificação KDIGO",
+    "cards": [
+      { "id": "drc-1", "frente": "O que a classificação KDIGO combina para estadiar a DRC?", "verso": "Taxa de filtração glomerular (G1-G5) e grau de albuminúria (A1-A3)." },
+      { "id": "drc-2", "frente": "Quais as 2 causas mais comuns de DRC?", "verso": "Diabetes mellitus e hipertensão arterial." }
+    ]
+  },
+  {
+    "id": "deck-hipercalemia",
+    "temaId": "disturbios-hidroeletroliticos",
+    "titulo": "Hipercalemia — 3 etapas do tratamento",
+    "cards": [
+      { "id": "hip-1", "frente": "Qual a 1ª etapa do tratamento da hipercalemia com alterações no ECG?", "verso": "Gluconato de cálcio EV, para estabilizar a membrana cardíaca." },
+      { "id": "hip-2", "frente": "Como redistribuir potássio para dentro da célula na hipercalemia?", "verso": "Insulina + glicose e beta-2 agonista inalatório." }
+    ]
+  },
+  {
+    "id": "deck-doenca-ulcerosa-peptica",
+    "temaId": "doenca-ulcerosa-peptica",
+    "titulo": "Doença ulcerosa péptica",
+    "cards": [
+      { "id": "dup-1", "frente": "Quais as 2 principais causas de úlcera péptica?", "verso": "Infecção por H. pylori e uso de AINEs." },
+      { "id": "dup-2", "frente": "Quais sinais de alarme na dispepsia exigem endoscopia prioritária?", "verso": "Emagrecimento, sangramento digestivo e disfagia." }
+    ]
+  },
+  {
+    "id": "deck-cirrose-complicacoes",
+    "temaId": "cirrose-complicacoes",
+    "titulo": "Cirrose — Child-Pugh",
+    "cards": [
+      { "id": "cir-1", "frente": "O que o escore de Child-Pugh avalia?", "verso": "Gravidade da cirrose (bilirrubina, albumina, INR, ascite, encefalopatia), orientando prognóstico e prioridade de transplante." },
+      { "id": "cir-2", "frente": "Qual o tratamento da encefalopatia hepática?", "verso": "Lactulose, associada a rifaximina em casos refratários." }
+    ]
+  },
+  {
+    "id": "deck-avc-hemorragico",
+    "temaId": "avc-hemorragico",
+    "titulo": "AVC hemorrágico",
+    "cards": [
+      { "id": "avch-1", "frente": "Qual a causa mais comum de hemorragia intraparenquimatosa espontânea?", "verso": "Hipertensão arterial mal controlada." },
+      { "id": "avch-2", "frente": "Qual exame confirma rapidamente o AVC hemorrágico?", "verso": "Tomografia de crânio sem contraste." }
+    ]
+  },
+  {
+    "id": "deck-estado-mal-epileptico",
+    "temaId": "crise-convulsiva-epilepsia",
+    "titulo": "Estado de mal epiléptico",
+    "cards": [
+      { "id": "eme-1", "frente": "Como se define estado de mal epiléptico?", "verso": "Crise convulsiva >5 minutos, ou crises repetidas sem recuperação da consciência entre elas." },
+      { "id": "eme-2", "frente": "Qual a 1ª linha de tratamento do estado de mal epiléptico?", "verso": "Benzodiazepínico." }
+    ]
+  },
+  {
+    "id": "deck-dengue",
+    "temaId": "dengue",
+    "titulo": "Dengue — Sinais de alarme",
+    "cards": [
+      { "id": "deng-1", "frente": "Cite 3 sinais de alarme da dengue.", "verso": "Dor abdominal intensa, vômitos persistentes e sangramento de mucosa (entre outros: hepatomegalia, aumento do hematócrito com queda de plaquetas)." },
+      { "id": "deng-2", "frente": "Quais medicações evitar na suspeita de dengue?", "verso": "AINEs e AAS, pelo risco aumentado de sangramento." }
+    ]
+  },
+  {
+    "id": "deck-sifilis",
+    "temaId": "ists-sifilis",
+    "titulo": "Sífilis — Estágios e tratamento",
+    "cards": [
+      { "id": "sif-1", "frente": "Qual o achado da sífilis primária?", "verso": "Cancro duro indolor no local de inoculação." },
+      { "id": "sif-2", "frente": "Qual o tratamento de escolha para sífilis?", "verso": "Penicilina G benzatina, conforme o estágio da doença." }
+    ]
+  },
+  {
+    "id": "deck-hernias",
+    "temaId": "hernias-parede-abdominal",
+    "titulo": "Hérnias de parede abdominal",
+    "cards": [
+      { "id": "her-1", "frente": "Qual a diferença entre hérnia encarcerada e estrangulada?", "verso": "Encarcerada é irredutível sem comprometimento vascular; estrangulada é irredutível com comprometimento vascular (emergência)." },
+      { "id": "her-2", "frente": "Qual o tipo de hérnia de parede abdominal mais comum?", "verso": "Hérnia inguinal." }
+    ]
+  },
+  {
+    "id": "deck-pre-pos-operatorio",
+    "temaId": "pre-pos-operatorio",
+    "titulo": "Cuidados pré e pós-operatórios",
+    "cards": [
+      { "id": "pop-1", "frente": "O que a classificação ASA estima?", "verso": "O risco anestésico-cirúrgico, de I (saudável) a V (moribundo)." },
+      { "id": "pop-2", "frente": "Cite 2 complicações pós-operatórias comuns.", "verso": "Infecção de sítio cirúrgico e atelectasia (também: deiscência de sutura)." }
+    ]
+  },
+  {
+    "id": "deck-vulvovaginites",
+    "temaId": "vulvovaginites",
+    "titulo": "Vulvovaginites",
+    "cards": [
+      { "id": "vv-1", "frente": "Qual corrimento é típico da vaginose bacteriana?", "verso": "Acinzentado, com odor fétido (\"peixe podre\")." },
+      { "id": "vv-2", "frente": "Qual IST causa corrimento amarelo-esverdeado e exige tratar o parceiro?", "verso": "Tricomoníase." }
+    ]
+  },
+  {
+    "id": "deck-planejamento-familiar",
+    "temaId": "planejamento-familiar",
+    "titulo": "Planejamento familiar",
+    "cards": [
+      { "id": "pf-1", "frente": "Em quais pacientes os métodos combinados são contraindicados (categoria 4)?", "verso": "Tabagistas com mais de 35 anos e mulheres com história de tromboembolismo venoso." },
+      { "id": "pf-2", "frente": "Cite um método contraceptivo de longa duração e alta eficácia.", "verso": "DIU (de cobre ou hormonal)." }
+    ]
+  },
+  {
+    "id": "deck-ivas-otite",
+    "temaId": "ivas-otite",
+    "titulo": "Otite média aguda",
+    "cards": [
+      { "id": "om-1", "frente": "Qual achado à otoscopia confirma otite média aguda?", "verso": "Abaulamento (e hiperemia) da membrana timpânica." },
+      { "id": "om-2", "frente": "Qual a 1ª escolha de antibiótico na otite média aguda?", "verso": "Amoxicilina." }
+    ]
+  },
+  {
+    "id": "deck-asma-infantil",
+    "temaId": "asma-infantil",
+    "titulo": "Asma na infância",
+    "cards": [
+      { "id": "ai-1", "frente": "Qual a base do tratamento de manutenção da asma infantil?", "verso": "Corticoide inalatório." },
+      { "id": "ai-2", "frente": "Como melhorar a deposição pulmonar da medicação inalatória em crianças?", "verso": "Uso de espaçador (com máscara facial nas menores)." }
+    ]
+  },
+  {
+    "id": "deck-indicadores-saude",
+    "temaId": "indicadores-saude",
+    "titulo": "Indicadores de saúde",
+    "cards": [
+      { "id": "is-1", "frente": "Qual a diferença entre incidência e prevalência?", "verso": "Incidência mede casos novos em um período; prevalência mede o total de casos existentes em um momento." },
+      { "id": "is-2", "frente": "Qual medida de associação é usada em estudos caso-controle?", "verso": "Odds ratio (razão de chances)." }
+    ]
+  },
+  {
+    "id": "deck-rastreio-cancer",
+    "temaId": "rastreio-cancer",
+    "titulo": "Rastreamento de câncer",
+    "cards": [
+      { "id": "rc-1", "frente": "Qual a faixa etária de rastreio do câncer de colo do útero?", "verso": "25 a 64 anos, com citologia trienal após 2 exames anuais normais." },
+      { "id": "rc-2", "frente": "Qual a periodicidade da mamografia de rastreio na população de risco habitual?", "verso": "Bienal, geralmente dos 50 aos 69 anos." }
+    ]
+  },
+  {
+    "id": "deck-saude-mental-ab",
+    "temaId": "saude-mental-ab",
+    "titulo": "Saúde mental na Atenção Básica",
+    "cards": [
+      { "id": "sm-1", "frente": "Perguntar sobre ideação suicida aumenta o risco de suicídio?", "verso": "Não — pelo contrário, é etapa essencial da avaliação de risco." },
+      { "id": "sm-2", "frente": "O que caracteriza risco iminente de suicídio?", "verso": "Ideação suicida com plano estruturado e acesso a meios letais." }
+    ]
+  }
+]

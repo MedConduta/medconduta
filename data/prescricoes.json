@@ -1,0 +1,75 @@
+[
+  {
+    "id": "presc-has-losartana",
+    "titulo": "HAS — Losartana (IECA/BRA)",
+    "categoria": "Cardiologia",
+    "revisado": false,
+    "fonte": "",
+    "posologia": "Losartana potássica 50 mg — 1 comprimido VO pela manhã, todos os dias.\nSe PA não controlada em 4 semanas, considerar aumentar para 50 mg 2x/dia ou associar segunda classe.",
+    "orientacao_paciente": "Tomar o comprimido sempre no mesmo horário, preferencialmente pela manhã. Não interromper o uso mesmo sem sintomas — a hipertensão costuma ser assintomática. Evitar uso concomitante de anti-inflamatórios sem orientação médica.",
+    "contraindicacoes": [
+      "Gestação (risco de malformação fetal e disfunção renal fetal).",
+      "Estenose bilateral de artéria renal.",
+      "Hipercalemia prévia não controlada.",
+      "Uso concomitante com alisquireno em pacientes diabéticos."
+    ]
+  },
+  {
+    "id": "presc-dm2-metformina",
+    "titulo": "DM2 — Metformina",
+    "categoria": "Endocrinologia",
+    "revisado": false,
+    "fonte": "",
+    "posologia": "Metformina 500 mg — 1 comprimido VO após o almoço na primeira semana; se tolerado, associar 1 comprimido após o jantar na segunda semana. Dose de manutenção usual: 500-850 mg 2-3x/dia, com as refeições.",
+    "orientacao_paciente": "Tomar sempre junto ou logo após as refeições para reduzir desconforto gastrointestinal. Suspender temporariamente em caso de vômitos, diarreia intensa, desidratação ou antes de exames com contraste iodado, conforme orientação médica.",
+    "contraindicacoes": [
+      "Taxa de filtração glomerular muito reduzida (insuficiência renal significativa).",
+      "Insuficiência hepática grave.",
+      "Acidose metabólica aguda ou história de acidose lática.",
+      "Uso concomitante com contraste iodado endovenoso (suspender temporariamente conforme protocolo)."
+    ]
+  },
+  {
+    "id": "presc-asma-resgate",
+    "titulo": "Asma — Salbutamol de resgate (spray)",
+    "categoria": "Pneumologia",
+    "revisado": false,
+    "fonte": "",
+    "posologia": "Salbutamol spray 100 mcg/jato — 2 jatos inalatórios em caso de falta de ar ou chiado, podendo repetir a cada 20 minutos até 3 vezes na primeira hora se necessário. Usar preferencialmente com espaçador.",
+    "orientacao_paciente": "Agitar o spray antes de usar, expirar totalmente antes de inalar, acionar o jato enquanto inspira lenta e profundamente, segurar a respiração por 10 segundos. Procurar atendimento de urgência se precisar do spray mais de 2x/semana ou se não houver melhora após as doses de resgate.",
+    "contraindicacoes": [
+      "Hipersensibilidade conhecida ao salbutamol ou a outros beta-agonistas.",
+      "Uso com cautela em arritmias cardíacas graves não controladas.",
+      "Sinais de crise grave (tórax silencioso, exaustão) não devem ser tratados apenas com resgate — buscar emergência."
+    ]
+  },
+  {
+    "id": "presc-sepse-antibiotico-empirico",
+    "titulo": "Sepse — Antibioticoterapia empírica (foco indeterminado, adulto)",
+    "categoria": "Medicina Intensiva",
+    "revisado": false,
+    "fonte": "",
+    "posologia": "Ceftriaxona 2 g IV 1x/dia — dose de ataque a critério médico conforme função renal e gravidade.\nAssociar cobertura adicional conforme foco suspeito e epidemiologia local (definir com base em protocolo institucional).",
+    "orientacao_paciente": "Uso restrito a ambiente hospitalar, sob monitorização. Não aplicável para automedicação — a escolha do antibiótico deve considerar foco infeccioso, gravidade, função renal e epidemiologia local de resistência.",
+    "contraindicacoes": [
+      "Alergia confirmada a cefalosporinas.",
+      "Uso concomitante com soluções contendo cálcio IV em neonatos.",
+      "Ajuste de dose necessário em disfunção renal/hepática significativa."
+    ]
+  },
+  {
+    "id": "presc-has-hidroclorotiazida",
+    "titulo": "HAS — Hidroclorotiazida",
+    "categoria": "Cardiologia",
+    "revisado": false,
+    "fonte": "",
+    "posologia": "Hidroclorotiazida 25 mg — 1 comprimido VO pela manhã, todos os dias.",
+    "orientacao_paciente": "Tomar pela manhã para evitar necessidade de urinar durante a noite. Manter boa hidratação e reportar cãibras, fraqueza muscular ou tontura, que podem indicar distúrbio eletrolítico.",
+    "contraindicacoes": [
+      "Hipocalemia ou hiponatremia graves não corrigidas.",
+      "Gota sintomática grave (pode elevar ácido úrico).",
+      "Anúria.",
+      "Alergia a sulfonamidas (cautela, avaliar risco-benefício)."
+    ]
+  }
+]

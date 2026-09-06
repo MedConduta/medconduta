@@ -1,0 +1,164 @@
+/* ==========================================================================
+   MedConduta — Design tokens
+   Tema claro por padrão; suporte a prefers-color-scheme e alternância manual
+   via atributo [data-theme] na tag <html>.
+   ========================================================================== */
+
+:root {
+  /* Cor — neutros */
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f6f7f8;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f0f2f3;
+  --color-border: #e4e7ea;
+  --color-border-strong: #d3d8dc;
+
+  /* Cor — texto */
+  --color-text: #1f2933;
+  --color-text-secondary: #5b6670;
+  --color-text-muted: #8994a0;
+  --color-text-on-accent: #ffffff;
+
+  /* Cor — acento (sálvia-petróleo dessaturado) */
+  --color-accent: #3d6f68;
+  --color-accent-hover: #325c56;
+  --color-accent-soft: #e7f0ee;
+  --color-accent-soft-border: #cfe1dd;
+
+  /* Cor — sinais clínicos (uso reservado: red flags, contraindicações) */
+  --color-danger: #b3413e;
+  --color-danger-soft: #f7e9e8;
+  --color-danger-border: #e6c3c1;
+  --color-warning: #b8791b;
+  --color-warning-soft: #faf1e1;
+  --color-warning-border: #eeddb8;
+  --color-success: #3f7a5c;
+  --color-success-soft: #e9f3ee;
+
+  /* Tipografia */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-xxl: 2.125rem;
+
+  --lh-tight: 1.25;
+  --lh-normal: 1.55;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* Espaçamento */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Forma */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Sombra */
+  --shadow-sm: 0 1px 2px rgba(31, 41, 51, 0.06);
+  --shadow-md: 0 4px 12px rgba(31, 41, 51, 0.08);
+  --shadow-lg: 0 12px 32px rgba(31, 41, 51, 0.12);
+
+  /* Layout */
+  --sidebar-width: 264px;
+  --sidebar-width-collapsed: 76px;
+  --topbar-height: 60px;
+  --bottomnav-height: 64px;
+  --content-max-width: 880px;
+
+  /* Transições */
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+
+  color-scheme: light;
+}
+
+/* Tema escuro automático (respeita o sistema) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #14181b;
+    --color-bg-subtle: #191e21;
+    --color-surface: #1c2226;
+    --color-surface-hover: #232a2e;
+    --color-border: #2a3136;
+    --color-border-strong: #384047;
+
+    --color-text: #e7ebee;
+    --color-text-secondary: #aab4bd;
+    --color-text-muted: #7c878f;
+
+    --color-accent: #6fa89f;
+    --color-accent-hover: #83b8af;
+    --color-accent-soft: #1f2d2b;
+    --color-accent-soft-border: #2c3f3c;
+
+    --color-danger: #d97b78;
+    --color-danger-soft: #2c2020;
+    --color-danger-border: #4a2f2d;
+    --color-warning: #d9a24d;
+    --color-warning-soft: #2b2416;
+    --color-warning-border: #4a3c22;
+    --color-success: #7cb897;
+    --color-success-soft: #1c2921;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.5);
+
+    color-scheme: dark;
+  }
+}
+
+/* Alternância manual — força tema independentemente do sistema */
+:root[data-theme="dark"] {
+  --color-bg: #14181b;
+  --color-bg-subtle: #191e21;
+  --color-surface: #1c2226;
+  --color-surface-hover: #232a2e;
+  --color-border: #2a3136;
+  --color-border-strong: #384047;
+
+  --color-text: #e7ebee;
+  --color-text-secondary: #aab4bd;
+  --color-text-muted: #7c878f;
+
+  --color-accent: #6fa89f;
+  --color-accent-hover: #83b8af;
+  --color-accent-soft: #1f2d2b;
+  --color-accent-soft-border: #2c3f3c;
+
+  --color-danger: #d97b78;
+  --color-danger-soft: #2c2020;
+  --color-danger-border: #4a2f2d;
+  --color-warning: #d9a24d;
+  --color-warning-soft: #2b2416;
+  --color-warning-border: #4a3c22;
+  --color-success: #7cb897;
+  --color-success-soft: #1c2921;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.5);
+
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}

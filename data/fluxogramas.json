@@ -1,0 +1,1348 @@
+[
+  {
+    "id": "flow-has-diagnostico",
+    "temaId": "has",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "HAS — Fluxo diagnóstico",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "PA ≥ 140/90 mmHg no consultório" },
+      { "tipo": "action", "texto": "Repetir aferição em 2ª consulta (técnica adequada, repouso 5 min)" },
+      {
+        "tipo": "decisao",
+        "texto": "PA confirmada elevada nas duas ocasiões?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Solicitar MAPA ou MRPA para confirmar diagnóstico e excluir efeito do jaleco branco" },
+              { "tipo": "end", "texto": "HAS confirmada → iniciar estratificação de risco e tratamento" }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              { "tipo": "end", "texto": "Reavaliar periodicamente (rastreio conforme faixa etária)" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-has-tratamento",
+    "temaId": "has",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "HAS — Fluxo de tratamento inicial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Diagnóstico de HAS confirmado" },
+      { "tipo": "action", "texto": "Iniciar mudança de estilo de vida (dieta DASH, redução de sódio, atividade física)" },
+      {
+        "tipo": "decisao",
+        "texto": "PA ≥ 20/10 mmHg acima da meta?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Iniciar combinação de 2 classes (ex.: IECA/BRA + BCC ou tiazídico) em comprimido único" }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              { "tipo": "action", "texto": "Iniciar monoterapia (tiazídico, IECA, BRA ou BCC)" }
+            ]
+          }
+        ]
+      },
+      { "tipo": "action", "texto": "Reavaliar em 4 semanas" },
+      { "tipo": "alerta", "texto": "Sinais de emergência hipertensiva (lesão aguda de órgão-alvo) → encaminhar para atendimento hospitalar imediato" },
+      { "tipo": "end", "texto": "Ajustar/associar classes até meta pressórica" }
+    ]
+  },
+  {
+    "id": "flow-dm2-tratamento",
+    "temaId": "dm2",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "DM2 — Fluxo de tratamento farmacológico",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Diagnóstico de DM2 confirmado" },
+      { "tipo": "action", "texto": "Iniciar metformina + mudança de estilo de vida" },
+      {
+        "tipo": "decisao",
+        "texto": "Doença cardiovascular, IC ou DRC presentes?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Associar iSGLT2 e/ou agonista de GLP-1 pelo benefício cardiorrenal, independente da HbA1c" }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              { "tipo": "action", "texto": "Reavaliar HbA1c em 3 meses; se acima da meta, intensificar terapia" }
+            ]
+          }
+        ]
+      },
+      { "tipo": "end", "texto": "Reavaliação e rastreio anual de complicações" }
+    ]
+  },
+  {
+    "id": "flow-iam-diagnostico",
+    "temaId": "iam",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Dor torácica — Fluxo diagnóstico (SCA)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Dor torácica sugestiva de origem isquêmica" },
+      { "tipo": "action", "texto": "ECG de 12 derivações em até 10 minutos" },
+      {
+        "tipo": "decisao",
+        "texto": "Supradesnivelamento de ST presente?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "end", "texto": "IAMCSST → ativar linha de reperfusão (angioplastia primária ou fibrinólise)" }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              { "tipo": "action", "texto": "Dosar troponina seriada" },
+              {
+                "tipo": "decisao",
+                "texto": "Troponina elevada?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "IAMSSST → estratificar risco e definir estratégia invasiva" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Angina instável / investigar diagnósticos diferenciais" } ] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-sepse-tratamento",
+    "temaId": "sepse",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Sepse — Bundle da primeira hora",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Suspeita de sepse (infecção + disfunção orgânica aguda)" },
+      { "tipo": "action", "texto": "Medir lactato sérico" },
+      { "tipo": "action", "texto": "Coletar hemoculturas (antes do antibiótico, sem atrasá-lo)" },
+      { "tipo": "action", "texto": "Iniciar antibiótico empírico de amplo espectro na 1ª hora" },
+      {
+        "tipo": "decisao",
+        "texto": "Hipotensão ou lactato ≥ 4 mmol/L?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Infundir cristaloide balanceado 30 mL/kg" },
+              {
+                "tipo": "decisao",
+                "texto": "PAM permanece < 65 mmHg após volume?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Iniciar vasopressor (noradrenalina) → considerar UTI" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Reavaliar perfusão e resposta a cada hora" } ] }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              { "tipo": "end", "texto": "Monitorar e reavaliar sinais de disfunção orgânica" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-pcr-tratamento",
+    "temaId": "pcr-acls",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "PCR — Algoritmo ACLS simplificado",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Paciente irresponsivo, sem pulso, sem respiração eficaz" },
+      { "tipo": "action", "texto": "Iniciar RCP de alta qualidade e conectar monitor/desfibrilador" },
+      {
+        "tipo": "decisao",
+        "texto": "Ritmo chocável (FV/TVSP)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Desfibrilar → retomar RCP por 2 min → adrenalina a cada 3-5 min após 2ª desfibrilação" }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              { "tipo": "action", "texto": "Manter RCP → adrenalina a cada 3-5 min → reavaliar ritmo a cada 2 min" }
+            ]
+          }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Investigar e tratar causas reversíveis (5H's e 5T's) durante toda a reanimação" },
+      { "tipo": "end", "texto": "Retorno da circulação espontânea → cuidados pós-PCR" }
+    ]
+  },
+  {
+    "id": "flow-asma-tratamento",
+    "temaId": "asma-exacerbada",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Asma exacerbada — Fluxo de manejo na emergência",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Crise asmática aguda" },
+      { "tipo": "action", "texto": "Beta-2 agonista de curta ação inalatório + O2 se SatO2 < 93%" },
+      { "tipo": "action", "texto": "Corticoide sistêmico precoce (via oral se tolerada)" },
+      {
+        "tipo": "decisao",
+        "texto": "Melhora após 1ª hora de tratamento?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [ { "tipo": "end", "texto": "Manter tratamento, observar e considerar alta com plano de ação" } ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              { "tipo": "action", "texto": "Associar brometo de ipratrópio + repetir broncodilatador" },
+              { "tipo": "alerta", "texto": "Tórax silencioso, confusão ou exaustão → considerar UTI e via aérea avançada" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-lra-diagnostico",
+    "temaId": "lra",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "LRA — Fluxo diagnóstico etiológico",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Aumento agudo de creatinina ou queda do débito urinário" },
+      { "tipo": "action", "texto": "Avaliar história (hipovolemia, nefrotóxicos, sintomas obstrutivos) e exame físico" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de obstrução urinária (globo vesical, hidronefrose ao USG)?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "LRA pós-renal → desobstrução urgente (sondagem vesical/nefrostomia)" } ] },
+          {
+            "label": "Não",
+            "fluxo": [
+              { "tipo": "action", "texto": "Realizar prova de volume e reavaliar função renal" },
+              {
+                "tipo": "decisao",
+                "texto": "Melhora da função renal com volume?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "LRA pré-renal → manter otimização volêmica e tratar causa de base" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar LRA renal intrínseca (sedimento urinário, sorologias, possível biópsia)" } ] }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Sinais AEIOU (acidose, distúrbio eletrolítico grave, intoxicação dialisável, sobrecarga volêmica, uremia sintomática) → indicar diálise de urgência" }
+    ]
+  },
+  {
+    "id": "flow-hda-tratamento",
+    "temaId": "hda",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "HDA — Fluxo de manejo inicial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Suspeita de hemorragia digestiva alta (hematêmese/melena)" },
+      { "tipo": "action", "texto": "Dois acessos venosos calibrosos + reposição volêmica conforme estabilidade" },
+      { "tipo": "action", "texto": "Iniciar IBP em bolus seguido de infusão contínua" },
+      {
+        "tipo": "decisao",
+        "texto": "Suspeita de origem varicosa (hepatopata)?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Associar terlipressina/octreotide + antibioticoprofilaxia" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Manter suporte clínico e aguardar endoscopia" } ] }
+        ]
+      },
+      { "tipo": "action", "texto": "Endoscopia digestiva alta em até 24h para diagnóstico e hemostasia" },
+      { "tipo": "alerta", "texto": "Instabilidade hemodinâmica persistente ou ressangramento → considerar nova endoscopia ou cirurgia de urgência" },
+      { "tipo": "end", "texto": "Estabilização e investigação da causa de base" }
+    ]
+  },
+  {
+    "id": "flow-avc-diagnostico",
+    "temaId": "avc-isquemico",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "AVC — Fluxo de reconhecimento e elegibilidade terapêutica",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Déficit neurológico focal de início súbito (FAST positivo)" },
+      { "tipo": "action", "texto": "Definir horário do último momento visto normal + TC de crânio sem contraste urgente" },
+      {
+        "tipo": "decisao",
+        "texto": "Hemorragia excluída na TC?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Dentro da janela terapêutica para reperfusão?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Avaliar critérios para trombólise e/ou trombectomia mecânica" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Tratamento de suporte, prevenção secundária e reabilitação precoce" } ] }
+                ]
+              }
+            ]
+          },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "AVC hemorrágico → conduta específica (controle pressórico, avaliação neurocirúrgica)" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-pac-tratamento",
+    "temaId": "pac",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "PAC — Fluxo de decisão terapêutica (CURB-65)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Diagnóstico de PAC confirmado (clínica + radiografia)" },
+      { "tipo": "action", "texto": "Calcular escore CURB-65" },
+      {
+        "tipo": "decisao",
+        "texto": "Pontuação CURB-65",
+        "ramos": [
+          { "label": "0-1 ponto", "fluxo": [ { "tipo": "end", "texto": "Tratamento ambulatorial (amoxicilina ou macrolídeo)" } ] },
+          { "label": "2 pontos", "fluxo": [ { "tipo": "end", "texto": "Internação em enfermaria (betalactâmico + macrolídeo)" } ] },
+          { "label": "≥3 pontos", "fluxo": [ { "tipo": "alerta", "texto": "Considerar UTI → antibioticoterapia de amplo espectro e suporte intensivo" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-abdome-agudo-diagnostico",
+    "temaId": "abdome-agudo",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Dor em FID — Fluxo diagnóstico (suspeita de apendicite)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Dor migrando para fossa ilíaca direita + sinais de irritação peritoneal" },
+      { "tipo": "action", "texto": "Calcular escore de Alvarado (MANTRELS)" },
+      {
+        "tipo": "decisao",
+        "texto": "Escore de Alvarado alto (≥7) ou quadro clínico típico?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Indicar apendicectomia + antibioticoprofilaxia perioperatória" } ] },
+          { "label": "Não/duvidoso", "fluxo": [ { "tipo": "action", "texto": "Solicitar USG ou TC de abdome para elucidação diagnóstica" }, { "tipo": "end", "texto": "Confirmar ou excluir apendicite conforme achados de imagem" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Sinais de peritonite difusa ou sepse abdominal → cirurgia de urgência sem atraso" }
+    ]
+  },
+  {
+    "id": "flow-politrauma-tratamento",
+    "temaId": "politrauma-abcde",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Politrauma — Sequência ABCDE",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Vítima de trauma grave chega à sala de emergência" },
+      { "tipo": "action", "texto": "A — Via aérea com proteção da coluna cervical" },
+      { "tipo": "action", "texto": "B — Avaliar respiração/ventilação; descomprimir pneumotórax hipertensivo se presente" },
+      { "tipo": "action", "texto": "C — Controlar hemorragias externas + acesso venoso calibroso" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de choque persistem após reposição volêmica inicial?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Suspeitar hemorragia não controlada → acionar cirurgia de controle de danos" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "D — Avaliação neurológica (Glasgow, pupilas)" }, { "tipo": "end", "texto": "E — Exposição completa e controle de hipotermia; reavaliação seriada" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-sua-diagnostico",
+    "temaId": "sua",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "SUA — Fluxo diagnóstico inicial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Sangramento uterino fora do padrão menstrual habitual" },
+      { "tipo": "action", "texto": "Excluir gestação (beta-hCG)" },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente hemodinamicamente instável?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Estabilização imediata → considerar intervenção de urgência" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Ultrassonografia transvaginal para avaliar cavidade uterina e endométrio" }, { "tipo": "end", "texto": "Classificar etiologia (PALM-COEIN) e definir tratamento" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-pre-eclampsia-tratamento",
+    "temaId": "pre-eclampsia",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Pré-eclâmpsia — Fluxo de manejo conforme gravidade",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "PA ≥140/90 mmHg após 20 semanas + proteinúria ou disfunção orgânica" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de gravidade (PA≥160/110, cefaleia, alterações visuais, HELLP)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Internação + anti-hipertensivos + sulfato de magnésio profilático" },
+              { "tipo": "alerta", "texto": "Convulsão → eclâmpsia: sulfato de magnésio terapêutico e estabilização imediata" },
+              { "tipo": "end", "texto": "Avaliar via e momento de resolução da gestação" }
+            ]
+          },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Vigilância materno-fetal ambulatorial ou internação conforme idade gestacional" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-ictericia-neonatal-diagnostico",
+    "temaId": "ictericia-neonatal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Icterícia Neonatal — Fluxo de investigação",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Recém-nascido ictérico" },
+      {
+        "tipo": "decisao",
+        "texto": "Icterícia surgiu nas primeiras 24h de vida?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Sempre patológica → dosar bilirrubina, tipagem sanguínea e Coombs direto imediatamente" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Dosar bilirrubina e comparar com nomograma por idade em horas" } ] }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Bilirrubina em zona de risco para o nomograma?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Iniciar fototerapia; considerar exsanguineotransfusão se refratária/grave" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Icterícia fisiológica → acompanhamento ambulatorial" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-diarreia-infantil-tratamento",
+    "temaId": "diarreia-infantil",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Diarreia Aguda Infantil — Planos de hidratação (A/B/C)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Criança com diarreia aguda" },
+      { "tipo": "action", "texto": "Avaliar estado geral, olhos, sede, sinal da prega e pulso" },
+      {
+        "tipo": "decisao",
+        "texto": "Grau de desidratação",
+        "ramos": [
+          { "label": "Sem desidratação", "fluxo": [ { "tipo": "end", "texto": "Plano A — líquidos adicionais e SRO em casa" } ] },
+          { "label": "Leve/moderada", "fluxo": [ { "tipo": "end", "texto": "Plano B — TRO supervisionada na unidade de saúde" } ] },
+          { "label": "Grave/choque", "fluxo": [ { "tipo": "alerta", "texto": "Plano C — hidratação venosa imediata com cristaloide" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-ic-tratamento",
+    "temaId": "ic",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "IC com fração de ejeção reduzida — Fluxo de tratamento",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Diagnóstico de IC com fração de ejeção reduzida (ICFEr)" },
+      { "tipo": "action", "texto": "Iniciar os 4 pilares: IECA/BRA (ou INRA) + betabloqueador + antagonista mineralocorticoide + iSGLT2" },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente descompensado (sinais de congestão)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Diurético de alça endovenoso + otimizar volemia" },
+              { "tipo": "alerta", "texto": "Sinais de edema agudo de pulmão ou choque cardiogênico → suporte intensivo imediato" }
+            ]
+          },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Titular doses até as máximas toleradas e reavaliar periodicamente" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-colecistite-colangite-diagnostico",
+    "temaId": "colecistite-colangite",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Dor em hipocôndrio direito — Fluxo diagnóstico biliar",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Dor em hipocôndrio direito, suspeita biliar" },
+      { "tipo": "action", "texto": "USG de abdome + exames laboratoriais (leucograma, bilirrubinas, enzimas hepáticas)" },
+      {
+        "tipo": "decisao",
+        "texto": "Febre + icterícia associadas (tríade de Charcot)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Hipotensão ou confusão mental associadas (pêntade de Reynolds)?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Colangite aguda grave → drenagem biliar de urgência (CPRE ou percutânea)" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Colangite aguda → antibioticoterapia + drenagem biliar em tempo oportuno" } ] }
+                ]
+              }
+            ]
+          },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Colecistite aguda → antibioticoterapia + colecistectomia conforme critérios de Tóquio" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-sop-diagnostico",
+    "temaId": "sop",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "SOP — Fluxo diagnóstico (Rotterdam)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Suspeita de SOP (irregularidade menstrual + sinais de hiperandrogenismo)" },
+      { "tipo": "action", "texto": "Avaliar os 3 critérios de Rotterdam: oligo/anovulação, hiperandrogenismo clínico/laboratorial, USG com morfologia policística" },
+      {
+        "tipo": "decisao",
+        "texto": "Presentes ≥2 dos 3 critérios, excluídas outras causas?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Diagnóstico de SOP confirmado → definir tratamento conforme objetivo da paciente" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar diagnósticos diferenciais de hiperandrogenismo/anovulação" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hemorragia-1a-metade-diagnostico",
+    "temaId": "hemorragia-1a-metade",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Sangramento no 1º trimestre — Fluxo diagnóstico",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Sangramento vaginal no primeiro trimestre da gestação" },
+      { "tipo": "action", "texto": "Solicitar beta-hCG quantitativo + USG transvaginal" },
+      {
+        "tipo": "decisao",
+        "texto": "Saco gestacional identificado na cavidade uterina?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Embrião com atividade cardíaca presente?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Ameaça de abortamento → conduta expectante e reavaliação" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Abortamento (retido/incompleto conforme achados) → conduta conforme classificação" } ] }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Beta-hCG muito elevado + USG em \"flocos de neve\"?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Suspeita de mola hidatiforme → esvaziamento uterino e seguimento" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "alerta", "texto": "Suspeitar gravidez ectópica → avaliar estabilidade hemodinâmica e risco de rotura" } ] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-puericultura-desenvolvimento",
+    "temaId": "puericultura-pni",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Puericultura — Fluxo de avaliação do desenvolvimento",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Consulta de puericultura de rotina" },
+      { "tipo": "action", "texto": "Avaliar peso, estatura, perímetro cefálico e marcos do desenvolvimento neuropsicomotor esperados para a idade" },
+      {
+        "tipo": "decisao",
+        "texto": "Marcos compatíveis com a faixa etária?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Seguimento de rotina + atualização do calendário vacinal" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "alerta", "texto": "Investigar atraso do desenvolvimento neuropsicomotor" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-sepse-neonatal-tratamento",
+    "temaId": "sepse-neonatal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Sepse neonatal — Fluxo de manejo inicial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Recém-nascido com sinais sugestivos de infecção (instabilidade térmica, desconforto respiratório, letargia)" },
+      { "tipo": "action", "texto": "Coletar hemocultura e exames laboratoriais" },
+      { "tipo": "action", "texto": "Iniciar antibioticoterapia empírica precocemente, sem aguardar resultado das culturas" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de instabilidade hemodinâmica ou respiratória grave?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Suporte intensivo neonatal (UTI neonatal) imediato" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Monitorização em unidade neonatal e reavaliação seriada" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-fa-tratamento",
+    "temaId": "fa",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "FA — Fluxo de manejo inicial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Diagnóstico de FA confirmado (ECG)" },
+      {
+        "tipo": "decisao",
+        "texto": "Instabilidade hemodinâmica associada à FA?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Cardioversão elétrica de urgência" } ] },
+          {
+            "label": "Não",
+            "fluxo": [
+              { "tipo": "action", "texto": "Definir estratégia de controle de frequência (betabloqueador/BCC não-diidropiridínico)" },
+              { "tipo": "action", "texto": "Calcular escore CHA2DS2-VASc" },
+              {
+                "tipo": "decisao",
+                "texto": "Escore indica risco tromboembólico significativo?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Iniciar anticoagulação oral" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Reavaliar periodicamente o risco tromboembólico" } ] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-dpoc-exacerbado-tratamento",
+    "temaId": "dpoc-exacerbado",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "DPOC exacerbado — Fluxo de tratamento",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Exacerbação de DPOC (piora aguda dos sintomas respiratórios)" },
+      { "tipo": "action", "texto": "Avaliar critérios de Anthonisen + broncodilatador de curta ação + corticoide sistêmico" },
+      {
+        "tipo": "decisao",
+        "texto": "≥2 critérios de Anthonisen com purulência do escarro?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Associar antibioticoterapia" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Manter broncodilatador/corticoide sem antibiótico" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Acidose respiratória ou rebaixamento do nível de consciência → considerar ventilação não invasiva/mecânica" }
+    ]
+  },
+  {
+    "id": "flow-cad-tratamento",
+    "temaId": "cetoacidose-diabetica",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Cetoacidose diabética — Fluxo de tratamento",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Diagnóstico de cetoacidose diabética confirmado" },
+      { "tipo": "action", "texto": "Iniciar hidratação venosa vigorosa" },
+      {
+        "tipo": "decisao",
+        "texto": "Potássio sérico baixo (<3,3 mEq/L)?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Corrigir potássio antes de iniciar insulina (risco de arritmia)" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Iniciar insulina regular em infusão contínua" } ] }
+        ]
+      },
+      { "tipo": "end", "texto": "Monitorização horária de glicemia e eletrólitos até resolução da acidose" }
+    ]
+  },
+  {
+    "id": "flow-pancreatite-diagnostico",
+    "temaId": "pancreatite-aguda",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Dor abdominal alta — Fluxo diagnóstico (pancreatite aguda)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Dor abdominal em faixa/epigástrica intensa" },
+      { "tipo": "action", "texto": "Dosar amilase/lipase + solicitar imagem se necessário" },
+      {
+        "tipo": "decisao",
+        "texto": "Pelo menos 2 dos 3 critérios presentes (dor típica, lipase/amilase ≥3x LSN, imagem compatível)?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Classificar gravidade (critérios clínicos/Atlanta)" }, { "tipo": "end", "texto": "Confirmar pancreatite aguda → hidratação vigorosa + analgesia" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar diagnósticos diferenciais de dor abdominal alta" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-meningite-tratamento",
+    "temaId": "meningite",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Meningite bacteriana — Fluxo de manejo inicial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Suspeita clínica de meningite bacteriana (febre + rigidez de nuca + alteração de consciência)" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de hipertensão intracraniana ou déficit focal?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "TC de crânio antes da punção lombar" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Realizar punção lombar imediatamente" } ] }
+        ]
+      },
+      { "tipo": "action", "texto": "Iniciar antibioticoterapia empírica sem atraso" },
+      { "tipo": "alerta", "texto": "Petéquias/púrpura associadas → suspeitar meningococcemia, risco de choque séptico rápido" },
+      { "tipo": "end", "texto": "Ajustar antibiótico conforme resultado do líquor/cultura" }
+    ]
+  },
+  {
+    "id": "flow-obstrucao-intestinal-diagnostico",
+    "temaId": "obstrucao-intestinal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Obstrução intestinal — Fluxo diagnóstico e conduta",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Dor em cólica + distensão + vômitos + parada de eliminação de gases/fezes" },
+      { "tipo": "action", "texto": "Radiografia simples de abdome (níveis hidroaéreos) + avaliação clínica" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de sofrimento de alça (dor contínua, febre, taquicardia, peritonite)?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Suspeitar estrangulamento → cirurgia de urgência" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Sondagem nasogástrica descompressiva + hidratação venosa" }, { "tipo": "end", "texto": "Tratamento conservador com reavaliação seriada; cirurgia se sem melhora" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hemorragia-pos-parto-tratamento",
+    "temaId": "hemorragia-pos-parto",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Hemorragia pós-parto — Fluxo de manejo inicial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Sangramento vaginal excessivo após o parto" },
+      { "tipo": "action", "texto": "Massagem uterina bimanual + ocitocina" },
+      {
+        "tipo": "decisao",
+        "texto": "Sangramento persiste apesar das medidas iniciais?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Investigar causa pelos 4 Ts + uterotônicos adicionais" },
+              { "tipo": "alerta", "texto": "Sangramento refratário com instabilidade → intervenção cirúrgica/embolização" }
+            ]
+          },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Monitorização contínua no pós-parto imediato" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-exantemas-diagnostico",
+    "temaId": "doencas-exantematicas",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Criança com febre e exantema — Fluxo diagnóstico diferencial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Criança com febre e exantema" },
+      {
+        "tipo": "decisao",
+        "texto": "Febre alta cede exatamente quando o exantema surge?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Sugestivo de exantema súbito (roséola)" } ] },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Manchas de Koplik + tosse/coriza/conjuntivite?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Sugestivo de sarampo → notificação compulsória imediata" } ] },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "\"Face esbofeteada\" com exantema rendilhado em membros?",
+                        "ramos": [
+                          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Sugestivo de eritema infeccioso (parvovírus B19)" } ] },
+                          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Considerar rubéola ou varicela conforme demais achados" } ] }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-tep-diagnostico",
+    "temaId": "tep",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "TEP — Fluxo diagnóstico (escore de Wells)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Suspeita de TEP (dispneia súbita, dor pleurítica, taquicardia)" },
+      { "tipo": "action", "texto": "Calcular escore de Wells" },
+      {
+        "tipo": "decisao",
+        "texto": "Probabilidade pré-teste baixa/intermediária?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Dosar D-dímero" },
+              {
+                "tipo": "decisao",
+                "texto": "D-dímero negativo?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "TEP improvável → investigar diagnósticos alternativos" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Solicitar angioTC de tórax" } ] }
+                ]
+              }
+            ]
+          },
+          { "label": "Não (alta)", "fluxo": [ { "tipo": "action", "texto": "Solicitar angioTC de tórax diretamente" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Instabilidade hemodinâmica (TEP maciço) → considerar trombólise" },
+      { "tipo": "end", "texto": "Confirmado TEP → iniciar anticoagulação" }
+    ]
+  },
+  {
+    "id": "flow-disseccao-aorta-tratamento",
+    "temaId": "disseccao-aorta",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Dissecção de aorta — Fluxo de manejo (Stanford)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Dor torácica súbita lancinante, irradiando para o dorso" },
+      { "tipo": "action", "texto": "AngioTC de aorta ou ecocardiograma transesofágico + controle de PA/FC" },
+      {
+        "tipo": "decisao",
+        "texto": "Classificação de Stanford",
+        "ramos": [
+          { "label": "Tipo A (ascendente)", "fluxo": [ { "tipo": "alerta", "texto": "Cirurgia de urgência" } ] },
+          { "label": "Tipo B (descendente)", "fluxo": [ { "tipo": "end", "texto": "Tratamento clínico inicial (controle rigoroso de PA/FC)" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-tireoidopatias-diagnostico",
+    "temaId": "tireoidopatias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Disfunção tireoidiana — Fluxo diagnóstico (TSH/T4 livre)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Suspeita clínica de disfunção tireoidiana" },
+      { "tipo": "action", "texto": "Dosar TSH e T4 livre" },
+      {
+        "tipo": "decisao",
+        "texto": "Padrão hormonal encontrado",
+        "ramos": [
+          { "label": "TSH alto + T4 livre baixo", "fluxo": [ { "tipo": "end", "texto": "Hipotireoidismo primário → iniciar levotiroxina" } ] },
+          { "label": "TSH baixo + T4 livre alto", "fluxo": [ { "tipo": "end", "texto": "Hipertireoidismo primário → investigar etiologia (ex.: Doença de Graves)" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Sinais de descompensação grave (tempestade tireoidiana/coma mixedematoso) → tratamento intensivo imediato" }
+    ]
+  },
+  {
+    "id": "flow-tuberculose-tratamento",
+    "temaId": "tuberculose",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Tuberculose — Fluxo diagnóstico e tratamento",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Tosse persistente >3 semanas + febre vespertina + sudorese noturna" },
+      { "tipo": "action", "texto": "Solicitar teste rápido molecular e/ou baciloscopia de escarro" },
+      {
+        "tipo": "decisao",
+        "texto": "Resultado positivo para tuberculose?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Iniciar esquema RIPE (2 meses) seguido de RI (4 meses)" }, { "tipo": "end", "texto": "Tratamento diretamente observado (TDO)" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar diagnósticos diferenciais" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Hemoptise maciça ou sinais de disseminação miliar → manejo hospitalar" }
+    ]
+  },
+  {
+    "id": "flow-drc-tratamento",
+    "temaId": "drc",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "DRC — Fluxo de manejo conforme estágio",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Diagnóstico de DRC confirmado (classificação KDIGO)" },
+      { "tipo": "action", "texto": "Controlar PA/glicemia + IECA/BRA + ajustar medicações de eliminação renal" },
+      {
+        "tipo": "decisao",
+        "texto": "Uremia sintomática ou hipercalemia refratária?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Indicar terapia renal substitutiva de urgência" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Manejo conservador com reavaliação periódica" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hipercalemia-tratamento",
+    "temaId": "disturbios-hidroeletroliticos",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Hipercalemia — Fluxo de tratamento em 3 etapas",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Hipercalemia confirmada" },
+      {
+        "tipo": "decisao",
+        "texto": "Alterações eletrocardiográficas presentes?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Gluconato de cálcio EV imediato (estabilizar membrana)" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Prosseguir diretamente para redistribuição" } ] }
+        ]
+      },
+      { "tipo": "action", "texto": "Insulina + glicose e beta-2 agonista (redistribuir K para dentro da célula)" },
+      { "tipo": "end", "texto": "Diuréticos, resinas ou diálise conforme gravidade (eliminar excesso de K)" }
+    ]
+  },
+  {
+    "id": "flow-doenca-ulcerosa-peptica-diagnostico",
+    "temaId": "doenca-ulcerosa-peptica",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Dispepsia — Fluxo diagnóstico (doença ulcerosa péptica)",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Paciente com dispepsia/dor epigástrica" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de alarme (emagrecimento, sangramento, disfagia)?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Endoscopia digestiva alta prioritária" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Testar H. pylori (não invasivo) + tratamento empírico com IBP" } ] }
+        ]
+      },
+      { "tipo": "end", "texto": "Erradicar H. pylori se positivo; suspender AINEs quando possível" }
+    ]
+  },
+  {
+    "id": "flow-cirrose-complicacoes-tratamento",
+    "temaId": "cirrose-complicacoes",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Cirrose — Fluxo de manejo das complicações",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Paciente cirrótico em acompanhamento" },
+      { "tipo": "action", "texto": "Classificar gravidade (Child-Pugh/MELD)" },
+      {
+        "tipo": "decisao",
+        "texto": "Qual complicação predominante?",
+        "ramos": [
+          { "label": "Ascite", "fluxo": [ { "tipo": "end", "texto": "Restrição de sódio + diuréticos" } ] },
+          { "label": "Encefalopatia", "fluxo": [ { "tipo": "end", "texto": "Lactulose ± rifaximina" } ] },
+          { "label": "Varizes/HDA", "fluxo": [ { "tipo": "alerta", "texto": "Terlipressina/octreotide + endoscopia + antibioticoprofilaxia" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-avc-hemorragico-diagnostico",
+    "temaId": "avc-hemorragico",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "AVC hemorrágico — Fluxo de manejo inicial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Cefaleia súbita intensa + déficit focal ± rebaixamento de consciência" },
+      { "tipo": "action", "texto": "TC de crânio sem contraste" },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente em uso de anticoagulante?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Reverter anticoagulação imediatamente" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Controle cuidadoso da pressão arterial" } ] }
+        ]
+      },
+      { "tipo": "end", "texto": "Avaliação neurocirúrgica conforme volume/localização do hematoma" }
+    ]
+  },
+  {
+    "id": "flow-estado-mal-epileptico-tratamento",
+    "temaId": "crise-convulsiva-epilepsia",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Estado de mal epiléptico — Fluxo terapêutico escalonado",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Crise convulsiva > 5 minutos ou crises repetidas sem recuperação da consciência" },
+      { "tipo": "action", "texto": "ABC + benzodiazepínico (1ª linha)" },
+      {
+        "tipo": "decisao",
+        "texto": "Crise persiste?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Fenitoína, valproato ou levetiracetam EV (2ª linha)" },
+              { "tipo": "alerta", "texto": "Refratário → anestesia geral em UTI" }
+            ]
+          },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar e tratar causa de base (hipoglicemia, distúrbio eletrolítico, etc.)" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-dengue-tratamento",
+    "temaId": "dengue",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Dengue — Fluxo de classificação de risco e hidratação",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Caso suspeito de dengue" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de alarme presentes?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              { "tipo": "action", "texto": "Hidratação venosa + observação hospitalar" },
+              { "tipo": "alerta", "texto": "Sinais de choque → dengue grave, reposição volêmica agressiva" }
+            ]
+          },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Hidratação oral + orientações de retorno se sinais de alarme" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-sifilis-tratamento",
+    "temaId": "ists-sifilis",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Sífilis — Fluxo diagnóstico e terapêutico",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Suspeita de sífilis (lesão genital ou rastreio sorológico)" },
+      { "tipo": "action", "texto": "Teste treponêmico + teste não treponêmico (VDRL/RPR)" },
+      {
+        "tipo": "decisao",
+        "texto": "Ambos os testes reagentes?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Definir estágio clínico" }, { "tipo": "end", "texto": "Tratar com penicilina benzatina conforme estágio" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Avaliar resultado discordante conforme fluxograma laboratorial" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Gestante com sífilis → tratamento e seguimento prioritários (risco de sífilis congênita)" }
+    ]
+  },
+  {
+    "id": "flow-hernias-diagnostico",
+    "temaId": "hernias-parede-abdominal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Hérnia de parede abdominal — Fluxo de conduta",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Abaulamento na parede abdominal" },
+      {
+        "tipo": "decisao",
+        "texto": "Hérnia redutível?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Correção cirúrgica eletiva" } ] },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Sinais de sofrimento de alça (dor intensa, eritema, sepse)?",
+                "ramos": [
+                  { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Estrangulamento → cirurgia de urgência" } ] },
+                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Hérnia encarcerada → tentativa de redução manual e cirurgia em caráter prioritário" } ] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-pre-pos-operatorio-diagnostico",
+    "temaId": "pre-pos-operatorio",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Pós-operatório — Fluxo de avaliação de febre",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Febre no período pós-operatório" },
+      { "tipo": "action", "texto": "Avaliar tempo decorrido desde a cirurgia e examinar ferida operatória" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de infecção de sítio cirúrgico ou deiscência?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Avaliação cirúrgica imediata" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar outras causas (atelectasia, ITU, TVP) conforme o quadro" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-vulvovaginites-diagnostico",
+    "temaId": "vulvovaginites",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Corrimento vaginal — Fluxo diagnóstico diferencial",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Paciente com queixa de corrimento vaginal" },
+      {
+        "tipo": "decisao",
+        "texto": "Características do corrimento",
+        "ramos": [
+          { "label": "Esbranquiçado grumoso + prurido", "fluxo": [ { "tipo": "end", "texto": "Sugestivo de candidíase vulvovaginal" } ] },
+          { "label": "Acinzentado com odor fétido", "fluxo": [ { "tipo": "end", "texto": "Sugestivo de vaginose bacteriana" } ] },
+          { "label": "Amarelo-esverdeado", "fluxo": [ { "tipo": "end", "texto": "Sugestivo de tricomoníase → tratar parceiro(s)" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Corrimento associado a dor pélvica e febre → investigar DIP" }
+    ]
+  },
+  {
+    "id": "flow-planejamento-familiar-diagnostico",
+    "temaId": "planejamento-familiar",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Escolha de método contraceptivo — Fluxo de decisão",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Paciente busca orientação sobre método contraceptivo" },
+      {
+        "tipo": "decisao",
+        "texto": "Tabagista >35 anos ou história de TEV?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Evitar métodos combinados (categoria 4) → considerar progesterona isolada ou DIU" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Método combinado é uma opção segura, conforme preferência da paciente" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-otite-media-tratamento",
+    "temaId": "ivas-otite",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Otite média aguda — Fluxo de tratamento",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Otoscopia com abaulamento/hiperemia de membrana timpânica + otalgia" },
+      {
+        "tipo": "decisao",
+        "texto": "Criança >2 anos com quadro leve?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Considerar observação vigilante por 48-72h" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Iniciar amoxicilina" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Edema/hiperemia retroauricular → suspeitar mastoidite" }
+    ]
+  },
+  {
+    "id": "flow-asma-infantil-tratamento",
+    "temaId": "asma-infantil",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Asma infantil — Fluxo de ajuste do tratamento de manutenção",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Criança com diagnóstico de asma em acompanhamento" },
+      { "tipo": "action", "texto": "Classificar controle (controlada, parcialmente controlada, não controlada)" },
+      {
+        "tipo": "decisao",
+        "texto": "Asma não controlada ou parcialmente controlada?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Revisar técnica inalatória + intensificar corticoide inalatório" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Manter tratamento atual e reavaliar periodicamente" } ] }
+        ]
+      },
+      { "tipo": "alerta", "texto": "Crise grave (tórax silencioso, exaustão) → manejo de emergência" }
+    ]
+  },
+  {
+    "id": "flow-rastreio-cancer-diagnostico",
+    "temaId": "rastreio-cancer",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Rastreamento oncológico — Fluxo de decisão por idade",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Paciente em consulta de rotina" },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de alarme presentes (sangramento pós-coito/pós-menopausa, nódulo mamário)?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Investigação diagnóstica dirigida, independente da idade" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Seguir rastreio de rotina conforme sexo e faixa etária" } ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-saude-mental-ab-diagnostico",
+    "temaId": "saude-mental-ab",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Avaliação de risco de suicídio — Fluxo na Atenção Básica",
+    "revisado": false,
+    "fonte": "",
+    "fluxo": [
+      { "tipo": "start", "texto": "Paciente com suspeita de sofrimento psíquico significativo" },
+      { "tipo": "action", "texto": "Perguntar diretamente sobre ideação suicida (não aumenta o risco)" },
+      {
+        "tipo": "decisao",
+        "texto": "Ideação suicida com plano estruturado e acesso a meios?",
+        "ramos": [
+          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Risco iminente → encaminhamento/acompanhamento imediato" } ] },
+          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Matriciamento com equipe de saúde mental conforme gravidade" } ] }
+        ]
+      }
+    ]
+  }
+]

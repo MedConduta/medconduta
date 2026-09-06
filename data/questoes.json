@@ -1,0 +1,866 @@
+[
+  {
+    "id": "q1",
+    "temaId": "has",
+    "tema": "HAS",
+    "banca": "Exemplo — SUS-SP",
+    "ano": 2024,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente de 54 anos comparece à UBS com PA de 148/94 mmHg, confirmada em duas medidas na mesma consulta. Qual a conduta mais adequada neste primeiro momento?",
+    "alternativas": [
+      "Iniciar imediatamente terapia combinada com 3 anti-hipertensivos.",
+      "Agendar retorno para nova aferição em outra ocasião e/ou solicitar MAPA/MRPA antes de firmar o diagnóstico.",
+      "Diagnosticar HAS estágio 3 e encaminhar para emergência.",
+      "Descartar HAS, pois é necessário apenas uma consulta com PA elevada para excluir o diagnóstico."
+    ],
+    "correta": 1,
+    "comentario": "O diagnóstico de HAS não deve ser firmado com base em uma única consulta, exceto em casos de PA muito elevada com lesão de órgão-alvo. A conduta correta é confirmar a elevação pressórica em outra ocasião e, idealmente, com medidas fora do consultório (MAPA/MRPA) para excluir hipertensão do jaleco branco."
+  },
+  {
+    "id": "q2",
+    "temaId": "dm2",
+    "tema": "DM2",
+    "banca": "Exemplo — SUS-SP",
+    "ano": 2023,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Homem de 61 anos, DM2 há 8 anos, com antecedente de infarto do miocárdio, em uso de metformina com HbA1c 7,8%. Qual a melhor conduta para otimização terapêutica?",
+    "alternativas": [
+      "Trocar metformina por sulfonilureia isoladamente.",
+      "Associar inibidor de SGLT2 ou agonista de GLP-1 pelo benefício cardiovascular, independente do controle glicêmico atual.",
+      "Suspender metformina e aguardar piora glicêmica antes de associar novo fármaco.",
+      "Iniciar insulina basal como primeira opção obrigatória neste cenário."
+    ],
+    "correta": 1,
+    "comentario": "Em pacientes com DM2 e doença cardiovascular estabelecida, a associação precoce de iSGLT2 ou agonista de GLP-1 traz benefício cardiovascular comprovado, devendo ser considerada independentemente do valor de HbA1c."
+  },
+  {
+    "id": "q3",
+    "temaId": "iam",
+    "tema": "IAM",
+    "banca": "Exemplo — Residência Médica",
+    "ano": 2024,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com dor torácica típica há 40 minutos, ECG com supradesnivelamento de ST em parede anterior. Hospital sem hemodinâmica, com tempo estimado de transferência de 3 horas até centro terciário. Qual a conduta mais apropriada?",
+    "alternativas": [
+      "Aguardar troponina antes de qualquer decisão terapêutica.",
+      "Realizar fibrinólise no hospital de origem e transferir para centro com hemodinâmica.",
+      "Prescrever apenas analgesia e observação até resolução espontânea.",
+      "Transferir sem qualquer terapia de reperfusão, já que a angioplastia é sempre superior."
+    ],
+    "correta": 1,
+    "comentario": "Quando a angioplastia primária não pode ser realizada dentro do tempo alvo (90-120 min), a fibrinólise no hospital de origem seguida de transferência é a estratégia recomendada para reduzir o tempo de isquemia."
+  },
+  {
+    "id": "q4",
+    "temaId": "sepse",
+    "tema": "Sepse",
+    "banca": "Exemplo — Residência Médica",
+    "ano": 2024,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com foco infeccioso pulmonar evolui com PA 80x50 mmHg, lactato 4,5 mmol/L. Qual das condutas abaixo NÃO faz parte do pacote de tratamento da primeira hora?",
+    "alternativas": [
+      "Coleta de hemoculturas antes do antibiótico.",
+      "Início de antibiótico de amplo espectro.",
+      "Aguardar resultado de hemocultura para iniciar antibiótico.",
+      "Reposição volêmica com cristaloide 30 mL/kg."
+    ],
+    "correta": 2,
+    "comentario": "O antibiótico não deve ser postergado à espera do resultado da hemocultura; a coleta deve ser feita, mas sem atrasar o início do tratamento antimicrobiano na primeira hora."
+  },
+  {
+    "id": "q5",
+    "temaId": "pcr-acls",
+    "tema": "PCR/ACLS",
+    "banca": "Exemplo — Residência Médica",
+    "ano": 2023,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Durante atendimento de PCR, o monitor mostra fibrilação ventricular. Qual a conduta imediata?",
+    "alternativas": [
+      "Administrar adrenalina antes de qualquer outra medida.",
+      "Realizar desfibrilação imediata e retomar RCP logo em seguida.",
+      "Aguardar 5 ciclos de RCP antes de considerar desfibrilação.",
+      "Iniciar via aérea avançada como prioridade máxima."
+    ],
+    "correta": 1,
+    "comentario": "Em ritmos chocáveis (FV/TVSP), a desfibrilação precoce é prioridade, seguida de retomada imediata das compressões torácicas por 2 minutos antes de nova checagem de ritmo."
+  },
+  {
+    "id": "q6",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma exacerbada",
+    "banca": "Exemplo — Residência Médica",
+    "ano": 2024,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com crise asmática apresenta ausência de sibilos à ausculta, confusão mental e uso intenso de musculatura acessória. Qual a interpretação correta?",
+    "alternativas": [
+      "Ausência de sibilos indica melhora clínica e resolução da crise.",
+      "Trata-se de sinal de gravidade extrema (tórax silencioso) por fluxo aéreo muito reduzido, com risco iminente de parada respiratória.",
+      "É um achado normal em crises leves, sem necessidade de intervenção adicional.",
+      "Indica indicação de alta hospitalar imediata."
+    ],
+    "correta": 1,
+    "comentario": "O 'tórax silencioso' é um sinal de gravidade extrema, pois reflete fluxo aéreo tão reduzido que não gera turbulência suficiente para produzir sibilos — exige intervenção agressiva imediata e consideração de suporte ventilatório."
+  },
+  {
+    "id": "q7",
+    "temaId": "lra",
+    "tema": "LRA",
+    "banca": "Exemplo — Residência Médica",
+    "ano": 2024,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente internado evolui com queda do débito urinário e aumento da creatinina. À beira-leito, apresenta hipotensão e mucosas secas, sem sinais de obstrução ao USG. Após prova de volume, a função renal melhora. Qual a classificação mais provável da LRA?",
+    "alternativas": [
+      "LRA pós-renal, por obstrução do trato urinário.",
+      "LRA pré-renal, por hipoperfusão renal responsiva à volemia.",
+      "LRA renal intrínseca, por necrose tubular aguda estabelecida.",
+      "Função renal normal, sem critérios para LRA."
+    ],
+    "correta": 1,
+    "comentario": "A melhora da função renal após prova de volume, na ausência de sinais obstrutivos, é característica de LRA pré-renal por hipoperfusão, tipicamente reversível com correção da volemia."
+  },
+  {
+    "id": "q8",
+    "temaId": "hda",
+    "tema": "HDA",
+    "banca": "Exemplo — Residência Médica",
+    "ano": 2023,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com hematêmese é admitido na emergência. Antes da realização da endoscopia digestiva alta, qual conduta farmacológica deve ser iniciada?",
+    "alternativas": [
+      "Aguardar a endoscopia para decidir sobre uso de IBP.",
+      "Iniciar inibidor de bomba de prótons em bolus seguido de infusão contínua.",
+      "Iniciar antibiótico de amplo espectro isoladamente, independente de hepatopatia.",
+      "Não administrar nenhuma medicação até confirmação endoscópica da causa."
+    ],
+    "correta": 1,
+    "comentario": "O IBP em bolus seguido de infusão contínua deve ser iniciado precocemente, antes mesmo da endoscopia, reduzindo o risco de sangramento ativo e facilitando a visualização endoscópica."
+  },
+  {
+    "id": "q9",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico",
+    "banca": "Exemplo — Residência Médica",
+    "ano": 2024,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com déficit motor súbito em dimídio direito e alteração de fala há 40 minutos. Qual o exame prioritário antes de decidir sobre terapia de reperfusão?",
+    "alternativas": [
+      "Ressonância magnética com espectroscopia.",
+      "Tomografia de crânio sem contraste, para excluir hemorragia.",
+      "Punção lombar para análise do líquor.",
+      "Eletroencefalograma de urgência."
+    ],
+    "correta": 1,
+    "comentario": "A tomografia de crânio sem contraste é o exame prioritário na suspeita de AVC agudo, pois exclui hemorragia intracraniana antes de qualquer decisão sobre terapia de reperfusão (trombólise/trombectomia)."
+  },
+  {
+    "id": "q10",
+    "temaId": "pac",
+    "tema": "PAC",
+    "banca": "Exemplo — SUS-SP",
+    "ano": 2023,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente de 70 anos, confuso, com frequência respiratória de 32 irpm e PA 85x55 mmHg, é diagnosticado com PAC. Qual a conduta mais adequada quanto ao local de tratamento?",
+    "alternativas": [
+      "Tratamento ambulatorial com macrolídeo.",
+      "Internação em enfermaria comum, sem necessidade de reavaliação.",
+      "Considerar internação em UTI, dado o alto escore CURB-65.",
+      "Alta com retorno agendado em 7 dias."
+    ],
+    "correta": 2,
+    "comentario": "O paciente apresenta confusão, taquipneia, hipotensão e idade ≥65 anos — pontuação alta no CURB-65, indicando gravidade e necessidade de considerar internação em UTI."
+  },
+  {
+    "id": "q11",
+    "temaId": "abdome-agudo",
+    "tema": "Abdome Agudo",
+    "banca": "Exemplo — Residência Médica",
+    "ano": 2024,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente jovem com dor que iniciou periumbilical e migrou para fossa ilíaca direita, associada a anorexia e febre baixa, com Blumberg positivo. Qual a hipótese diagnóstica mais provável e a conduta?",
+    "alternativas": [
+      "Colecistite aguda; conduta expectante com analgesia.",
+      "Apendicite aguda; indicar apendicectomia.",
+      "Pielonefrite aguda; iniciar apenas antibiótico oral.",
+      "Diverticulite aguda; dieta zero por 7 dias sem outra conduta."
+    ],
+    "correta": 1,
+    "comentario": "O quadro clássico de dor migratória para FID com sinais de irritação peritoneal (Blumberg positivo) é característico de apendicite aguda, cujo tratamento definitivo é a apendicectomia."
+  },
+  {
+    "id": "q12",
+    "temaId": "pre-eclampsia",
+    "tema": "Pré-eclâmpsia",
+    "banca": "Exemplo — Residência Médica",
+    "ano": 2023,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Gestante de 32 semanas com PA 170/115 mmHg, cefaleia intensa e plaquetopenia apresenta uma crise convulsiva. Qual a conduta imediata?",
+    "alternativas": [
+      "Aguardar resolução espontânea da convulsão antes de qualquer intervenção.",
+      "Administrar sulfato de magnésio e estabilizar a paciente imediatamente.",
+      "Iniciar anticoncepcional hormonal para controle pressórico.",
+      "Indicar apenas repouso domiciliar após a crise."
+    ],
+    "correta": 1,
+    "comentario": "A convulsão em gestante com pré-eclâmpsia caracteriza eclâmpsia, uma emergência obstétrica. O sulfato de magnésio é a droga de escolha para tratamento e prevenção de novas crises, associado à estabilização materna imediata."
+  },
+  {
+    "id": "q13",
+    "temaId": "ic",
+    "tema": "Insuficiência Cardíaca",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com diagnóstico recente de insuficiência cardíaca com fração de ejeção reduzida (FE 30%) inicia acompanhamento ambulatorial. Qual conduta está alinhada às evidências atuais de redução de mortalidade?",
+    "alternativas": [
+      "Iniciar apenas diurético de alça em dose fixa, sem outras medicações.",
+      "Iniciar e titular, em conjunto, IECA/BRA (ou INRA), betabloqueador, antagonista mineralocorticoide e iSGLT2.",
+      "Aguardar piora dos sintomas para iniciar qualquer medicação além de diurético.",
+      "Iniciar apenas betabloqueador, evitando as demais classes por risco de interação."
+    ],
+    "correta": 1,
+    "comentario": "Os quatro pilares farmacológicos da ICFEr (IECA/BRA ou INRA, betabloqueador, antagonista mineralocorticoide e iSGLT2) devem ser iniciados precocemente e titulados em conjunto, pois cada classe reduz mortalidade de forma independente e aditiva."
+  },
+  {
+    "id": "q14",
+    "temaId": "colecistite-colangite",
+    "tema": "Colecistite/Colangite",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com dor em hipocôndrio direito, febre e icterícia (tríade de Charcot) evolui com hipotensão e confusão mental. Qual a interpretação e conduta corretas?",
+    "alternativas": [
+      "Quadro compatível com colecistite não complicada; manter apenas analgesia e observação.",
+      "Pêntade de Reynolds, indicando colangite aguda grave; indicar drenagem biliar de urgência.",
+      "Quadro de cólica biliar simples; alta com anti-inflamatório oral.",
+      "Sinais inespecíficos sem relação com a via biliar; investigar causas neurológicas isoladamente."
+    ],
+    "correta": 1,
+    "comentario": "A associação da tríade de Charcot com hipotensão e confusão mental configura a pêntade de Reynolds, indicando colangite aguda grave, com necessidade de drenagem biliar de urgência (CPRE ou percutânea) associada a antibioticoterapia."
+  },
+  {
+    "id": "q15",
+    "temaId": "sop",
+    "tema": "SOP",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Mulher de 24 anos com ciclos menstruais irregulares e hirsutismo. USG transvaginal mostra ovários com morfologia policística. Não há hiperandrogenismo laboratorial confirmado. Segundo os critérios de Rotterdam, o diagnóstico de SOP está confirmado?",
+    "alternativas": [
+      "Sim, pois qualquer um dos três critérios isolado já confirma o diagnóstico.",
+      "Sim, pois ela apresenta 2 dos 3 critérios (oligo/anovulação clínica e morfologia policística), desde que excluídas outras causas.",
+      "Não, pois são necessários os 3 critérios simultaneamente.",
+      "Não, pois hiperandrogenismo laboratorial é obrigatório para o diagnóstico."
+    ],
+    "correta": 1,
+    "comentario": "Os critérios de Rotterdam exigem pelo menos 2 dos 3 critérios (oligo/anovulação, hiperandrogenismo clínico ou laboratorial, morfologia policística ao USG), excluídas outras causas — a paciente preenche irregularidade menstrual (anovulação clínica) e morfologia policística."
+  },
+  {
+    "id": "q16",
+    "temaId": "hemorragia-1a-metade",
+    "tema": "Hemorragia 1ª metade gestação",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Gestante de 8 semanas apresenta sangramento vaginal. Beta-hCG está muito acima do esperado para a idade gestacional, e a USG transvaginal mostra padrão em \"flocos de neve\", sem embrião identificável. Qual a hipótese diagnóstica mais provável?",
+    "alternativas": [
+      "Gravidez ectópica íntegra.",
+      "Ameaça de abortamento.",
+      "Mola hidatiforme (doença trofoblástica gestacional).",
+      "Gestação tópica normal em fase inicial."
+    ],
+    "correta": 2,
+    "comentario": "Beta-hCG muito elevado para a idade gestacional associado ao padrão ultrassonográfico em \"flocos de neve\", sem embrião identificável, é achado clássico de mola hidatiforme completa."
+  },
+  {
+    "id": "q17",
+    "temaId": "puericultura-pni",
+    "tema": "Puericultura/PNI",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Lactente de 7 meses, em consulta de puericultura, ainda não senta sem apoio e não demonstra sustento cefálico firme. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Considerar normal, pois esses marcos só são esperados após os 12 meses.",
+      "Investigar atraso do desenvolvimento neuropsicomotor, pois esses marcos já eram esperados antes dos 7 meses.",
+      "Orientar apenas retorno em 6 meses, sem outras condutas.",
+      "Indicar suspensão das vacinas até reavaliação do desenvolvimento."
+    ],
+    "correta": 1,
+    "comentario": "Sustento cefálico é esperado por volta de 3-4 meses e sentar sem apoio por volta de 6-8 meses. Um lactente de 7 meses sem sustento cefálico firme apresenta atraso que exige investigação direcionada."
+  },
+  {
+    "id": "q18",
+    "temaId": "sepse-neonatal",
+    "tema": "Sepse Neonatal",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Recém-nascido de 24 horas de vida, filho de mãe com rotura prematura de membranas prolongada, apresenta instabilidade térmica e desconforto respiratório. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Aguardar resultado da hemocultura antes de iniciar qualquer antibiótico.",
+      "Coletar hemocultura e iniciar antibioticoterapia empírica precocemente, sem aguardar o resultado.",
+      "Tratar apenas com suporte térmico, sem necessidade de antibiótico neste momento.",
+      "Iniciar antibiótico somente se houver confirmação radiológica de pneumonia."
+    ],
+    "correta": 1,
+    "comentario": "Diante de sinais sugestivos de sepse neonatal precoce e fator de risco materno relevante (rotura prematura de membranas prolongada), a antibioticoterapia empírica deve ser iniciada precocemente, após a coleta de culturas, sem aguardar o resultado."
+  },
+  {
+    "id": "q19",
+    "temaId": "fa",
+    "tema": "Fibrilação Atrial",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente de 72 anos, hipertenso e diabético, é diagnosticado com fibrilação atrial em consulta ambulatorial, sem sinais de instabilidade. Qual escore deve orientar a decisão sobre anticoagulação?",
+    "alternativas": [
+      "CURB-65.",
+      "CHA2DS2-VASc.",
+      "Escore de Alvarado.",
+      "Escore de Ranson."
+    ],
+    "correta": 1,
+    "comentario": "O escore CHA2DS2-VASc estima o risco tromboembólico em pacientes com FA e orienta a indicação de anticoagulação oral, sendo o instrumento validado para essa decisão."
+  },
+  {
+    "id": "q20",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com DPOC apresenta piora da dispneia, aumento do volume e da purulência do escarro. Além de broncodilatador e corticoide sistêmico, qual conduta adicional está indicada?",
+    "alternativas": [
+      "Nenhuma conduta adicional é necessária.",
+      "Antibioticoterapia, pois há 3 critérios de Anthonisen presentes, incluindo purulência do escarro.",
+      "Ventilação mecânica invasiva imediata, independentemente da gravidade.",
+      "Suspensão do broncodilatador de curta ação."
+    ],
+    "correta": 1,
+    "comentario": "A presença de 2 ou mais critérios de Anthonisen (aumento da dispneia, do volume e da purulência do escarro), incluindo a purulência, indica a associação de antibioticoterapia ao tratamento broncodilatador e corticoide."
+  },
+  {
+    "id": "q21",
+    "temaId": "cetoacidose-diabetica",
+    "tema": "Cetoacidose Diabética",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com cetoacidose diabética apresenta potássio sérico de 2,8 mEq/L antes do início do tratamento. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Iniciar insulina imediatamente, independentemente do potássio.",
+      "Corrigir o potássio antes de iniciar a insulina, pelo risco de arritmia.",
+      "Iniciar insulina e potássio simultaneamente, sem prioridade entre eles.",
+      "Adiar toda a hidratação até a correção completa do potássio."
+    ],
+    "correta": 1,
+    "comentario": "Como a insulina desloca potássio para o meio intracelular, a hipocalemia deve ser corrigida antes do início da insulinoterapia na cetoacidose diabética, para evitar arritmias potencialmente fatais."
+  },
+  {
+    "id": "q22",
+    "temaId": "pancreatite-aguda",
+    "tema": "Pancreatite Aguda",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com dor abdominal em faixa e lipase sérica 4x o limite superior da normalidade. A tomografia de abdome não foi realizada. O diagnóstico de pancreatite aguda pode ser confirmado?",
+    "alternativas": [
+      "Não, pois a tomografia é obrigatória em todos os casos.",
+      "Sim, pois já estão presentes 2 dos 3 critérios diagnósticos (dor típica e lipase ≥3x LSN).",
+      "Não, pois apenas a lipase elevada não tem nenhum valor diagnóstico.",
+      "Sim, mas apenas se houver também elevação de transaminases."
+    ],
+    "correta": 1,
+    "comentario": "O diagnóstico de pancreatite aguda exige 2 dos 3 critérios (dor abdominal típica, lipase/amilase ≥3x o limite superior da normalidade, ou imagem compatível). Dor típica associada à lipase elevada já preenche 2 critérios, dispensando a imagem para confirmação diagnóstica."
+  },
+  {
+    "id": "q23",
+    "temaId": "meningite",
+    "tema": "Meningite Bacteriana",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com febre, rigidez de nuca e petéquias difusas em rápida progressão. Qual a interpretação e conduta mais adequadas?",
+    "alternativas": [
+      "Quadro viral autolimitado; observação ambulatorial.",
+      "Suspeita de meningococcemia; iniciar antibioticoterapia empírica imediatamente, sem aguardar exames.",
+      "Aguardar resultado da punção lombar antes de qualquer intervenção.",
+      "Solicitar apenas exames de imagem, sem necessidade de antibiótico neste momento."
+    ],
+    "correta": 1,
+    "comentario": "Petéquias associadas a febre e rigidez de nuca sugerem meningococcemia, uma emergência com risco de evolução rápida para choque séptico — a antibioticoterapia empírica deve ser iniciada imediatamente, sem aguardar confirmação laboratorial."
+  },
+  {
+    "id": "q24",
+    "temaId": "obstrucao-intestinal",
+    "tema": "Obstrução Intestinal",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com obstrução intestinal apresenta dor contínua e intensa, febre e taquicardia, com sinais de irritação peritoneal ao exame físico. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Manter tratamento conservador com sondagem nasogástrica e observação prolongada.",
+      "Indicar cirurgia de urgência, pela suspeita de estrangulamento de alça.",
+      "Alta hospitalar com orientações dietéticas.",
+      "Aguardar 48 horas de tratamento clínico antes de qualquer reavaliação."
+    ],
+    "correta": 1,
+    "comentario": "Dor contínua e intensa associada a febre, taquicardia e sinais de peritonite sugere sofrimento/estrangulamento de alça intestinal, uma indicação de cirurgia de urgência, não devendo o tratamento conservador ser prolongado nessa situação."
+  },
+  {
+    "id": "q25",
+    "temaId": "hemorragia-pos-parto",
+    "tema": "Hemorragia Pós-Parto",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Puérpera apresenta sangramento vaginal volumoso logo após o parto vaginal, com útero amolecido e mal contraído à palpação. Qual a causa mais provável e a conduta inicial?",
+    "alternativas": [
+      "Retenção de restos placentários; curetagem imediata sem outras medidas.",
+      "Atonia uterina; massagem uterina bimanual associada a uterotônicos (ocitocina).",
+      "Laceração de trajeto; sutura cirúrgica como única conduta necessária.",
+      "Coagulopatia; transfusão de plaquetas isoladamente."
+    ],
+    "correta": 1,
+    "comentario": "Útero amolecido e mal contraído após o parto é o achado clássico de atonia uterina, a causa mais comum de hemorragia pós-parto, cuja conduta inicial é a massagem uterina bimanual associada a uterotônicos como a ocitocina."
+  },
+  {
+    "id": "q26",
+    "temaId": "doencas-exantematicas",
+    "tema": "Doenças Exantemáticas",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Criança de 3 anos apresenta febre alta, tosse, coriza, conjuntivite e manchas esbranquiçadas na mucosa oral, seguidas de exantema morbiliforme craniocaudal. Qual o diagnóstico mais provável e a conduta em saúde pública associada?",
+    "alternativas": [
+      "Exantema súbito; nenhuma conduta de saúde pública é necessária.",
+      "Sarampo; notificação compulsória imediata.",
+      "Eritema infeccioso; isolamento respiratório por 24h apenas.",
+      "Varicela; notificação semanal de rotina."
+    ],
+    "correta": 1,
+    "comentario": "As manchas de Koplik associadas ao quadro catarral (tosse, coriza, conjuntivite) e ao exantema morbiliforme craniocaudal são características do sarampo, doença de notificação compulsória imediata pelo risco de surtos."
+  },
+  {
+    "id": "q27",
+    "temaId": "principios-sus",
+    "tema": "Princípios do SUS",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Um município organiza seu sistema de saúde de forma que a Atenção Primária coordene o fluxo dos pacientes entre os diferentes níveis de complexidade, evitando fragmentação do cuidado. Esse arranjo exemplifica principalmente qual conceito?",
+    "alternativas": [
+      "Equidade, exclusivamente.",
+      "Redes de Atenção à Saúde (RAS), com a Atenção Primária como ordenadora do cuidado.",
+      "Participação social/controle social, exclusivamente.",
+      "Universalidade, exclusivamente."
+    ],
+    "correta": 1,
+    "comentario": "A organização em Redes de Atenção à Saúde, com a Atenção Primária atuando como ordenadora do cuidado e porta de entrada preferencial, coordenando referência e contrarreferência, é o arranjo que evita a fragmentação do cuidado entre os níveis de atenção."
+  },
+  {
+    "id": "q28",
+    "temaId": "tep",
+    "tema": "TEP",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com dispneia súbita e dor pleurítica apresenta baixa probabilidade pré-teste pelo escore de Wells. Qual a conduta diagnóstica mais adequada?",
+    "alternativas": [
+      "Solicitar angioTC de tórax diretamente, sem outros exames.",
+      "Dosar D-dímero; se negativo, TEP é considerado improvável.",
+      "Iniciar anticoagulação empírica sem qualquer exame complementar.",
+      "Solicitar apenas radiografia de tórax, suficiente para excluir TEP."
+    ],
+    "correta": 1,
+    "comentario": "Em pacientes de baixa/intermediária probabilidade pré-teste, o D-dímero tem alto valor preditivo negativo — se negativo, praticamente exclui TEP, evitando exames de imagem desnecessários."
+  },
+  {
+    "id": "q29",
+    "temaId": "disseccao-aorta",
+    "tema": "Dissecção de Aorta",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com dor torácica súbita e lancinante, irradiando para o dorso, apresenta assimetria de pulsos entre os membros superiores. AngioTC confirma dissecção envolvendo a aorta ascendente. Qual a conduta?",
+    "alternativas": [
+      "Tratamento clínico exclusivo com controle de PA, sem necessidade de cirurgia.",
+      "Cirurgia de urgência, pois se trata de dissecção tipo A de Stanford.",
+      "Alta hospitalar com anti-hipertensivo oral e retorno ambulatorial.",
+      "Aguardar 48h de observação antes de qualquer decisão terapêutica."
+    ],
+    "correta": 1,
+    "comentario": "Dissecção envolvendo a aorta ascendente é classificada como tipo A de Stanford, associada a alto risco de complicações fatais (tamponamento, insuficiência aórtica aguda) e exige cirurgia de urgência."
+  },
+  {
+    "id": "q30",
+    "temaId": "tireoidopatias",
+    "tema": "Tireoidopatias",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente apresenta TSH elevado e T4 livre baixo, associados a fadiga, ganho de peso e intolerância ao frio. Qual o diagnóstico e a conduta terapêutica?",
+    "alternativas": [
+      "Hipertireoidismo primário; iniciar metimazol.",
+      "Hipotireoidismo primário; iniciar levotiroxina.",
+      "Hipertireoidismo central; solicitar RM de hipófise antes de tratar.",
+      "Nódulo de tireoide; indicar PAAF imediatamente, sem dosagens hormonais."
+    ],
+    "correta": 1,
+    "comentario": "TSH alto associado a T4 livre baixo define hipotireoidismo primário, cujo tratamento padrão é a reposição de levotiroxina."
+  },
+  {
+    "id": "q31",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com tosse há 5 semanas, febre vespertina e sudorese noturna tem teste rápido molecular positivo para tuberculose. Qual o esquema terapêutico inicial recomendado?",
+    "alternativas": [
+      "Apenas isoniazida por 6 meses.",
+      "Esquema RIPE (rifampicina, isoniazida, pirazinamida, etambutol) por 2 meses, seguido de rifampicina e isoniazida por mais 4 meses.",
+      "Apenas rifampicina por 2 meses, sem necessidade de outros fármacos.",
+      "Antibiótico de amplo espectro genérico, sem esquema específico para tuberculose."
+    ],
+    "correta": 1,
+    "comentario": "O esquema básico de tratamento da tuberculose no Brasil é o RIPE por 2 meses (fase intensiva), seguido de rifampicina e isoniazida por mais 4 meses (fase de manutenção)."
+  },
+  {
+    "id": "q32",
+    "temaId": "drc",
+    "tema": "DRC",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com DRC em estágio avançado apresenta uremia sintomática e hipercalemia refratária ao tratamento clínico. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Manter apenas restrição proteica e reavaliar em 3 meses.",
+      "Indicar terapia renal substitutiva de urgência.",
+      "Aumentar a dose de IECA, independentemente do potássio.",
+      "Alta hospitalar com orientações dietéticas apenas."
+    ],
+    "correta": 1,
+    "comentario": "Uremia sintomática e hipercalemia refratária ao tratamento clínico são indicações de terapia renal substitutiva de urgência (diálise) na doença renal crônica avançada."
+  },
+  {
+    "id": "q33",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Hipercalemia",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com hipercalemia grave apresenta ondas T apiculadas e alargamento do QRS ao ECG. Qual a primeira conduta terapêutica?",
+    "alternativas": [
+      "Iniciar resina de troca iônica por via oral, sem outras medidas.",
+      "Administrar gluconato de cálcio endovenoso para estabilizar a membrana cardíaca.",
+      "Aguardar resultado laboratorial de controle antes de qualquer intervenção.",
+      "Iniciar diálise imediatamente, sem medidas farmacológicas prévias."
+    ],
+    "correta": 1,
+    "comentario": "Diante de alterações eletrocardiográficas na hipercalemia, a primeira medida é o gluconato de cálcio endovenoso, que estabiliza a membrana cardíaca e reduz o risco de arritmia, antes das medidas que efetivamente reduzem o potássio sérico."
+  },
+  {
+    "id": "q34",
+    "temaId": "doenca-ulcerosa-peptica",
+    "tema": "Doença Ulcerosa Péptica",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente de 68 anos com dispepsia associada a emagrecimento não intencional de 6 kg nos últimos 2 meses. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Tratamento empírico com IBP por 4 semanas, sem outros exames.",
+      "Endoscopia digestiva alta prioritária, pela presença de sinal de alarme.",
+      "Apenas teste não invasivo para H. pylori, sem necessidade de endoscopia.",
+      "Orientações dietéticas isoladas, sem investigação adicional."
+    ],
+    "correta": 1,
+    "comentario": "Emagrecimento não intencional associado à dispepsia é um sinal de alarme que exige investigação endoscópica prioritária, para excluir causas mais graves como neoplasia gástrica."
+  },
+  {
+    "id": "q35",
+    "temaId": "cirrose-complicacoes",
+    "tema": "Cirrose",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente cirrótico desenvolve confusão mental e flapping (asterixis). Qual a hipótese diagnóstica e o tratamento de escolha?",
+    "alternativas": [
+      "Síndrome hepatorrenal; tratamento com albumina e terlipressina.",
+      "Encefalopatia hepática; tratamento com lactulose.",
+      "Peritonite bacteriana espontânea; tratamento com cefalosporina de 3ª geração.",
+      "Hemorragia digestiva varicosa; tratamento com terlipressina e endoscopia."
+    ],
+    "correta": 1,
+    "comentario": "Confusão mental associada a asterixis (flapping) em paciente cirrótico é característica de encefalopatia hepática, cujo tratamento de primeira linha é a lactulose, podendo-se associar rifaximina em casos refratários."
+  },
+  {
+    "id": "q36",
+    "temaId": "avc-hemorragico",
+    "tema": "AVC Hemorrágico",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente hipertenso mal controlado apresenta cefaleia súbita intensa e hemiparesia. TC de crânio mostra hemorragia intraparenquimatosa. Paciente está em uso de anticoagulante oral. Qual a conduta prioritária?",
+    "alternativas": [
+      "Manter o anticoagulante e apenas controlar a pressão arterial.",
+      "Reverter a anticoagulação imediatamente, associada a controle da pressão arterial.",
+      "Aguardar avaliação neurocirúrgica antes de qualquer conduta clínica.",
+      "Iniciar trombolítico para tratar a hemorragia."
+    ],
+    "correta": 1,
+    "comentario": "Em pacientes com hemorragia intraparenquimatosa em uso de anticoagulante, a reversão imediata da anticoagulação é prioritária, associada ao controle cuidadoso da pressão arterial, para limitar a expansão do hematoma."
+  },
+  {
+    "id": "q37",
+    "temaId": "crise-convulsiva-epilepsia",
+    "tema": "Estado de Mal Epiléptico",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente em crise convulsiva contínua há 8 minutos. Qual a conduta inicial mais adequada?",
+    "alternativas": [
+      "Aguardar até completar 30 minutos antes de qualquer intervenção medicamentosa.",
+      "Administrar benzodiazepínico, já que se trata de estado de mal epiléptico.",
+      "Iniciar diretamente fenitoína, sem benzodiazepínico prévio.",
+      "Realizar apenas exame de imagem antes de qualquer medicação."
+    ],
+    "correta": 1,
+    "comentario": "Crise convulsiva com duração maior que 5 minutos já caracteriza estado de mal epiléptico, devendo ser tratada imediatamente com benzodiazepínico como primeira linha."
+  },
+  {
+    "id": "q38",
+    "temaId": "dengue",
+    "tema": "Dengue",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com dengue confirmada evolui com dor abdominal intensa, vômitos persistentes e queda abrupta de plaquetas com aumento do hematócrito. Qual a classificação e conduta?",
+    "alternativas": [
+      "Dengue sem sinais de alarme; hidratação oral domiciliar.",
+      "Dengue com sinais de alarme; hidratação venosa e observação hospitalar.",
+      "Quadro não relacionado à dengue; investigar outras causas isoladamente.",
+      "Dengue grave já estabelecida; não há mais indicação de hidratação."
+    ],
+    "correta": 1,
+    "comentario": "Dor abdominal intensa, vômitos persistentes e hemoconcentração com queda de plaquetas são sinais de alarme da dengue, exigindo hidratação venosa e observação hospitalar para prevenir evolução para dengue grave."
+  },
+  {
+    "id": "q39",
+    "temaId": "ists-sifilis",
+    "tema": "Sífilis",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Gestante no primeiro trimestre tem VDRL e teste treponêmico reagentes, sem tratamento prévio documentado. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Aguardar o terceiro trimestre para iniciar o tratamento.",
+      "Tratar imediatamente com penicilina benzatina conforme o estágio da doença.",
+      "Tratar apenas após o parto, para evitar exposição fetal à medicação.",
+      "Solicitar apenas repetição do exame em 30 dias, sem tratamento imediato."
+    ],
+    "correta": 1,
+    "comentario": "O tratamento da sífilis na gestação deve ser iniciado imediatamente após o diagnóstico, com penicilina benzatina conforme o estágio da doença, para reduzir o risco de sífilis congênita — quanto mais precoce, menor o risco de transmissão vertical."
+  },
+  {
+    "id": "q40",
+    "temaId": "hernias-parede-abdominal",
+    "tema": "Hérnias de Parede Abdominal",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente com hérnia inguinal previamente redutível apresenta agora dor intensa, hérnia irredutível, eritema local e sinais sistêmicos de sepse. Qual a conduta?",
+    "alternativas": [
+      "Tentar redução manual repetidamente até obter sucesso, sem outras medidas.",
+      "Cirurgia de urgência, pela suspeita de estrangulamento herniário.",
+      "Alta com anti-inflamatório oral e retorno ambulatorial em 30 dias.",
+      "Observação domiciliar por 48h antes de qualquer decisão."
+    ],
+    "correta": 1,
+    "comentario": "Dor intensa, irredutibilidade, eritema e sinais sistêmicos de sepse sugerem estrangulamento herniário, uma emergência cirúrgica que não deve ter a cirurgia postergada por tentativas repetidas de redução manual."
+  },
+  {
+    "id": "q41",
+    "temaId": "pre-pos-operatorio",
+    "tema": "Cuidados Pré/Pós-operatórios",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente no 7º dia de pós-operatório de cirurgia abdominal apresenta separação das bordas da ferida operatória com exposição de alças intestinais. Qual a conduta?",
+    "alternativas": [
+      "Curativo oclusivo simples e alta hospitalar.",
+      "Avaliação cirúrgica imediata, pela evisceração.",
+      "Antibiótico oral ambulatorial, sem necessidade de reavaliação cirúrgica.",
+      "Observação domiciliar por mais 7 dias antes de qualquer conduta."
+    ],
+    "correta": 1,
+    "comentario": "A exposição de alças intestinais por deiscência de sutura caracteriza evisceração, uma complicação cirúrgica grave que exige avaliação e reabordagem cirúrgica imediatas."
+  },
+  {
+    "id": "q42",
+    "temaId": "vulvovaginites",
+    "tema": "Vulvovaginites",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente apresenta corrimento vaginal amarelo-esverdeado, bolhoso, com prurido e hiperemia vaginal. Qual o diagnóstico mais provável e a conduta quanto ao parceiro?",
+    "alternativas": [
+      "Candidíase vulvovaginal; não é necessário tratar o parceiro.",
+      "Tricomoníase; o(s) parceiro(s) também deve(m) ser tratado(s), por se tratar de IST.",
+      "Vaginose bacteriana; tratamento restrito à paciente, sem necessidade de tratar parceiro.",
+      "Corrimento fisiológico; nenhum tratamento é necessário."
+    ],
+    "correta": 1,
+    "comentario": "Corrimento amarelo-esverdeado e bolhoso é característico de tricomoníase, uma infecção sexualmente transmissível que exige tratamento concomitante do(s) parceiro(s) para evitar reinfecção."
+  },
+  {
+    "id": "q43",
+    "temaId": "planejamento-familiar",
+    "tema": "Planejamento Familiar",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Mulher de 38 anos, tabagista, procura orientação contraceptiva. Qual método deve ser evitado nesse perfil de risco?",
+    "alternativas": [
+      "DIU de cobre.",
+      "Contraceptivo hormonal combinado.",
+      "Método apenas de progesterona.",
+      "Preservativo."
+    ],
+    "correta": 1,
+    "comentario": "Métodos hormonais combinados são contraindicados (categoria 4 da OMS) em tabagistas com mais de 35 anos, pelo risco cardiovascular aumentado, sendo preferíveis métodos apenas de progesterona, DIU ou de barreira."
+  },
+  {
+    "id": "q44",
+    "temaId": "ivas-otite",
+    "tema": "Otite Média Aguda",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Criança de 3 anos com otalgia e otoscopia mostrando abaulamento e hiperemia importante da membrana timpânica. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Observação vigilante isolada, sem qualquer tratamento.",
+      "Iniciar amoxicilina.",
+      "Indicar miringotomia de urgência como primeira conduta.",
+      "Solicitar TC de mastoide antes de qualquer tratamento."
+    ],
+    "correta": 1,
+    "comentario": "O abaulamento importante da membrana timpânica associado a otalgia confirma otite média aguda, cujo tratamento de primeira escolha na maioria dos casos é a amoxicilina."
+  },
+  {
+    "id": "q45",
+    "temaId": "asma-infantil",
+    "tema": "Asma Infantil",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Criança com asma em uso irregular de corticoide inalatório apresenta despertares noturnos frequentes e uso de resgate quase diário. Qual a classificação e conduta?",
+    "alternativas": [
+      "Asma controlada; manter o tratamento atual sem mudanças.",
+      "Asma não controlada; revisar técnica inalatória e intensificar o corticoide inalatório.",
+      "Asma não controlada; suspender o corticoide inalatório e usar apenas resgate.",
+      "Quadro normal para a idade; nenhuma conduta adicional necessária."
+    ],
+    "correta": 1,
+    "comentario": "Despertares noturnos frequentes e uso quase diário de resgate caracterizam asma não controlada, exigindo revisão da técnica inalatória (causa comum de mau controle) e intensificação do corticoide inalatório."
+  },
+  {
+    "id": "q46",
+    "temaId": "indicadores-saude",
+    "tema": "Indicadores de Saúde",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Um estudo caso-controle avalia a associação entre exposição a um fator de risco e uma doença rara. Qual medida de associação é apropriada para esse desenho de estudo?",
+    "alternativas": [
+      "Risco relativo.",
+      "Odds ratio (razão de chances).",
+      "Incidência acumulada.",
+      "Prevalência pontual."
+    ],
+    "correta": 1,
+    "comentario": "Em estudos caso-controle, a medida de associação apropriada é a odds ratio (razão de chances), pois não é possível calcular diretamente incidência ou risco relativo nesse desenho de estudo."
+  },
+  {
+    "id": "q47",
+    "temaId": "rastreio-cancer",
+    "tema": "Rastreamento de Câncer",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Mulher de 45 anos, sem fatores de risco adicionais, pergunta sobre rastreamento do câncer de colo do útero. Qual a orientação mais adequada?",
+    "alternativas": [
+      "Rastreamento não indicado antes dos 50 anos.",
+      "Citologia (Papanicolau), já que está dentro da faixa etária de rastreio (25-64 anos).",
+      "Colonoscopia isolada, sem necessidade de citologia.",
+      "Mamografia, exame prioritário nessa faixa etária para essa finalidade."
+    ],
+    "correta": 1,
+    "comentario": "O rastreamento do câncer de colo do útero por citologia (Papanicolau) é recomendado entre 25 e 64 anos, com periodicidade trienal após dois exames anuais consecutivos normais — a paciente está dentro dessa faixa etária."
+  },
+  {
+    "id": "q48",
+    "temaId": "saude-mental-ab",
+    "tema": "Saúde Mental na Atenção Básica",
+    "banca": "Exemplo — ENAMED",
+    "ano": 2025,
+    "revisado": false,
+    "fonte": "",
+    "enunciado": "Paciente atendido na UBS relata tristeza persistente. O profissional evita perguntar diretamente sobre ideação suicida por medo de \"induzir a ideia\". Essa conduta está correta?",
+    "alternativas": [
+      "Sim, perguntar sobre suicídio pode induzir o comportamento suicida.",
+      "Não, perguntar diretamente sobre ideação suicida não aumenta o risco e é etapa essencial da avaliação.",
+      "Sim, esse tema deve ser abordado apenas por psiquiatra, nunca na Atenção Básica.",
+      "Não, mas a pergunta só deve ser feita se houver tentativa prévia documentada."
+    ],
+    "correta": 1,
+    "comentario": "Perguntar diretamente sobre ideação suicida não aumenta o risco de comportamento suicida — é, pelo contrário, uma etapa essencial e recomendada da avaliação de risco em qualquer nível de atenção, incluindo a Atenção Básica."
+  }
+]

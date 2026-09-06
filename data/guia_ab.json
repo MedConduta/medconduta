@@ -1,0 +1,73 @@
+[
+  {
+    "id": "ab-has",
+    "titulo": "HAS — Acompanhamento na Atenção Básica",
+    "categoria": "Cardiologia",
+    "revisado": false,
+    "fonte": "",
+    "resumo": "Conduta de rotina para hipertenso estável em seguimento na UBS.",
+    "pontos": [
+      "Reforçar mudança de estilo de vida em toda consulta (dieta hipossódica, atividade física, cessação de tabagismo).",
+      "Avaliar adesão medicamentosa e efeitos adversos a cada retorno.",
+      "Solicitar exames de rotina anuais: função renal, potássio, glicemia, perfil lipídico e EAS.",
+      "Investigar lesão de órgão-alvo em consultas periódicas (fundoscopia, ECG).",
+      "Ajustar terapia caso PA fora da meta em duas consultas consecutivas."
+    ],
+    "red_flags": [
+      "PA ≥ 180/120 mmHg com sintomas (cefaleia intensa, dor torácica, dispneia, alterações visuais) → encaminhar para urgência."
+    ]
+  },
+  {
+    "id": "ab-dm2",
+    "titulo": "DM2 — Acompanhamento na Atenção Básica",
+    "categoria": "Endocrinologia",
+    "revisado": false,
+    "fonte": "",
+    "resumo": "Rotina de seguimento do paciente diabético tipo 2 estável.",
+    "pontos": [
+      "Solicitar HbA1c a cada 3-6 meses conforme controle.",
+      "Avaliar pés em toda consulta (inspeção, sensibilidade com monofilamento).",
+      "Rastreio anual de retinopatia e nefropatia (relação albumina/creatinina).",
+      "Reforçar orientações nutricionais e atividade física regular.",
+      "Revisar necessidade de ajuste terapêutico conforme meta individualizada de HbA1c."
+    ],
+    "red_flags": [
+      "Glicemia capilar > 400-500 mg/dL, sinais de desidratação importante ou rebaixamento do nível de consciência → encaminhar para urgência (suspeita de descompensação aguda)."
+    ]
+  },
+  {
+    "id": "ab-asma-controle",
+    "titulo": "Asma — Controle ambulatorial",
+    "categoria": "Pneumologia",
+    "revisado": false,
+    "fonte": "",
+    "resumo": "Avaliação de controle e escalonamento terapêutico da asma fora da crise.",
+    "pontos": [
+      "Classificar controle da asma pela frequência de sintomas diurnos, noturnos e uso de medicação de resgate.",
+      "Reforçar técnica inalatória em toda consulta — erro de técnica é causa comum de mau controle.",
+      "Corticoide inalatório é a base do tratamento de manutenção, mesmo em quadros leves persistentes.",
+      "Elaborar plano de ação por escrito para crises."
+    ],
+    "red_flags": [
+      "Uso de broncodilatador de resgate mais de 2x/semana ou despertares noturnos frequentes indicam mau controle e necessidade de reavaliação terapêutica."
+    ]
+  },
+  {
+    "id": "ab-prenatal",
+    "titulo": "Pré-natal de baixo risco — Rotina de consultas",
+    "categoria": "Saúde da Mulher",
+    "revisado": false,
+    "fonte": "",
+    "resumo": "Calendário mínimo de consultas e exames de rastreio no pré-natal de baixo risco.",
+    "pontos": [
+      "Iniciar pré-natal o mais precocemente possível, idealmente no primeiro trimestre.",
+      "Solicitar exames de rotina no 1º trimestre (tipagem sanguínea, sorologias, glicemia, urina).",
+      "Rastreio de diabetes gestacional entre 24-28 semanas.",
+      "Aferir PA e verificar proteinúria em toda consulta para rastreio de pré-eclâmpsia.",
+      "Aplicar vacinas indicadas na gestação (dTpa, influenza, conforme calendário vigente)."
+    ],
+    "red_flags": [
+      "PA ≥140/90 mmHg associada a proteinúria, cefaleia ou alterações visuais → suspeita de pré-eclâmpsia, encaminhar para avaliação de urgência."
+    ]
+  }
+]

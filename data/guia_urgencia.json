@@ -1,0 +1,92 @@
+[
+  {
+    "id": "urg-iam",
+    "titulo": "Dor torácica / Suspeita de IAM",
+    "categoria": "Cardiologia",
+    "revisado": false,
+    "fonte": "",
+    "resumo": "Abordagem inicial na sala de emergência diante de dor torácica sugestiva de síndrome coronariana aguda.",
+    "pontos": [
+      "ECG de 12 derivações em até 10 minutos da chegada.",
+      "Monitorização contínua, acesso venoso e oxigênio se SatO2 < 90%.",
+      "AAS macerado 160-300 mg VO se sem contraindicação.",
+      "Definir estratégia de reperfusão (angioplastia primária x fibrinólise) conforme tempo disponível e supra de ST.",
+      "Dosar troponina seriada mesmo sem supra de ST para estratificação."
+    ],
+    "red_flags": [
+      "Hipotensão, sinais de choque, arritmias malignas ou sopro novo (possível complicação mecânica) exigem suporte avançado imediato."
+    ]
+  },
+  {
+    "id": "urg-sepse",
+    "titulo": "Sepse e Choque Séptico",
+    "categoria": "Medicina Intensiva",
+    "revisado": false,
+    "fonte": "",
+    "resumo": "Pacote de atendimento da primeira hora diante de suspeita de sepse.",
+    "pontos": [
+      "Medir lactato sérico imediatamente.",
+      "Coletar duas amostras de hemocultura antes do antibiótico (sem atrasá-lo).",
+      "Iniciar antibiótico empírico de amplo espectro conforme foco suspeito.",
+      "Cristaloide balanceado 30 mL/kg em bolus se hipotensão ou lactato ≥4 mmol/L.",
+      "Reavaliar perfusão (PA, diurese, lactato seriado) a cada hora."
+    ],
+    "red_flags": [
+      "PAM < 65 mmHg refratária a volume → iniciar vasopressor e acionar UTI."
+    ]
+  },
+  {
+    "id": "urg-pcr",
+    "titulo": "Parada Cardiorrespiratória (PCR)",
+    "categoria": "Emergência",
+    "revisado": false,
+    "fonte": "",
+    "resumo": "Sequência de atendimento imediato à PCR no ambiente hospitalar.",
+    "pontos": [
+      "Confirmar ausência de resposta, respiração e pulso em até 10 segundos.",
+      "Iniciar compressões torácicas de alta qualidade imediatamente, conectar monitor/desfibrilador.",
+      "Desfibrilar prontamente se ritmo chocável (FV/TVSP).",
+      "Adrenalina IV/IO a cada 3-5 minutos.",
+      "Investigar e tratar causas reversíveis (5H's e 5T's) durante a reanimação."
+    ],
+    "red_flags": [
+      "Toda PCR revertida exige cuidados pós-parada estruturados (hemodinâmica, temperatura, avaliação neurológica) em UTI."
+    ]
+  },
+  {
+    "id": "urg-asma",
+    "titulo": "Crise Asmática Grave",
+    "categoria": "Pneumologia",
+    "revisado": false,
+    "fonte": "",
+    "resumo": "Manejo da crise asmática moderada a grave na emergência.",
+    "pontos": [
+      "Oxigênio suplementar para SatO2 alvo 93-95%.",
+      "Beta-2 agonista de curta ação inalatório repetido a cada 20 minutos na primeira hora.",
+      "Associar brometo de ipratrópio nas crises moderadas/graves.",
+      "Corticoide sistêmico precoce (via oral se tolerada).",
+      "Considerar sulfato de magnésio IV em crises graves refratárias."
+    ],
+    "red_flags": [
+      "Tórax silencioso, confusão mental, exaustão respiratória ou SatO2 <90% apesar de O2 → considerar via aérea avançada e UTI."
+    ]
+  },
+  {
+    "id": "urg-avc",
+    "titulo": "Suspeita de AVC Agudo",
+    "categoria": "Neurologia",
+    "revisado": false,
+    "fonte": "",
+    "resumo": "Fluxo inicial diante de déficit neurológico focal agudo.",
+    "pontos": [
+      "Definir com precisão o horário do último momento visto normal (crítico para elegibilidade de reperfusão).",
+      "Tomografia de crânio sem contraste em caráter de urgência para excluir hemorragia.",
+      "Avaliar critérios de elegibilidade para trombólise e/ou trombectomia mecânica.",
+      "Manter glicemia e pressão arterial dentro de parâmetros seguros conforme protocolo institucional.",
+      "Evitar redução abrupta da PA na fase aguda isquêmica, exceto se candidato a reperfusão ou PA extremamente elevada."
+    ],
+    "red_flags": [
+      "Rebaixamento do nível de consciência associado a déficit focal pode indicar transformação hemorrágica ou herniação — reavaliação de imagem imediata."
+    ]
+  }
+]

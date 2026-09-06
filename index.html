@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>MedConduta — Estudo e prática clínica</title>
+  <meta name="description" content="Plataforma de estudo estruturado para residência (R1) e guia de bolso para prática clínica. Uso educacional — conteúdo clínico é rascunho a validar." />
+  <meta name="theme-color" content="#3d6f68" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon.svg" />
+
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <div class="app-shell" id="app-shell">
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+      <div class="sidebar__brand">
+        <div class="sidebar__brand-mark" aria-hidden="true">M</div>
+        <span class="sidebar__brand-name">MedConduta</span>
+      </div>
+
+      <nav id="sidebar-nav"><!-- injetado por app/components/sidebar.js --></nav>
+
+      <div class="sidebar__footer">
+        <button class="nav-link" id="theme-toggle" type="button"></button>
+        <button class="sidebar__collapse-btn" id="sidebar-collapse" type="button" aria-label="Recolher menu">
+          ⟨⟩ <span>Recolher menu</span>
+        </button>
+      </div>
+    </aside>
+
+    <div>
+      <header class="topbar">
+        <button class="icon-btn" id="topbar-menu-btn" aria-label="Abrir menu">☰</button>
+        <div class="topbar__brand">
+          <div class="sidebar__brand-mark" aria-hidden="true" style="width:28px;height:28px;font-size:14px;">M</div>
+          MedConduta
+        </div>
+        <button class="icon-btn" id="topbar-theme-btn" aria-label="Alternar tema">◐</button>
+      </header>
+
+      <main class="main" id="main-content" tabindex="-1" aria-live="polite" aria-busy="false"></main>
+    </div>
+  </div>
+
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Navegação inferior"></nav>
+
+  <script type="module" src="app/main.js"></script>
+</body>
+</html>
