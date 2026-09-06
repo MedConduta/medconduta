@@ -1,8 +1,9 @@
 import { fetchJsonCached, escapeHtml, uniq } from "../utils.js";
-import { setItem } from "../db.js";
+import { setItem, getAll } from "../db.js";
 
 export async function renderLista(container) {
-  const questoes = await fetchJsonCached("data/questoes.json");
+  const [curadas, geradas] = await Promise.all([fetchJsonCached("data/questoes.json"), getAll("ia_questoes")]);
+  const questoes = [...curadas, ...geradas];
   const temas = uniq(questoes.map((q) => q.tema));
   const bancas = uniq(questoes.map((q) => q.banca));
 
@@ -54,6 +55,7 @@ export async function renderLista(container) {
         <div class="list-card__top">
           <span class="badge badge--accent">${escapeHtml(q.tema)}</span>
           <span class="badge">${escapeHtml(q.banca)} · ${q.ano}</span>
+          ${q.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
         </div>
         <p style="font-weight:500;margin:12px 0;">${escapeHtml(q.enunciado)}</p>
         <div class="opcoes" data-qid="${q.id}">

@@ -172,6 +172,7 @@
 .badge--tratamento { background: var(--color-success-soft); color: var(--color-success); border-color: var(--color-success); border-color: color-mix(in srgb, var(--color-success) 35%, transparent); }
 .badge--warning { background: var(--color-warning-soft); color: var(--color-warning); border-color: var(--color-warning-border); }
 .badge--danger { background: var(--color-danger-soft); color: var(--color-danger); border-color: var(--color-danger-border); }
+.badge--ia { background: var(--color-accent-soft); color: var(--color-accent); border-color: var(--color-accent-soft-border); font-style: italic; }
 
 .tag-filter-bar {
   display: flex;

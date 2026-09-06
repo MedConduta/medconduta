@@ -21,13 +21,22 @@ const ALLOWED_ORIGINS = [
 
 const MODELO_PADRAO = "gemini-3.5-flash-lite";
 
-const INSTRUCAO_SISTEMA = `Você é um assistente de estudo para residência médica (R1) dentro do app MedConduta.
-Responda SOMENTE com base no CONTEXTO fornecido pelo usuário (temas, prescrições, PDFs de referência anexados).
-Se a informação necessária não estiver clara ou não estiver presente no contexto, diga isso explicitamente
-e recomende conferir a fonte oficial — nunca invente doses, condutas, valores ou referências bibliográficas.
-Seja objetivo e use linguagem técnica apropriada para um médico. Quando possível, indique de qual parte do
-contexto veio a resposta. Deixe claro que o conteúdo é material de estudo e não substitui julgamento clínico,
-bula ou protocolo institucional vigente.`;
+const INSTRUCAO_SISTEMA = `Você é o motor de IA do MedConduta, uma plataforma de estudo para residência médica (R1) e prática
+clínica. Você tem dois papéis, conforme a TAREFA indicada:
+
+1) Assistente/avaliador: responder dúvidas ou avaliar criticamente um tema, com base no CONTEXTO fornecido
+   (temas, prescrições, PDFs de referência). Se a informação não estiver clara ou presente no contexto,
+   diga isso explicitamente e recomende conferir a fonte oficial — nunca invente doses, condutas ou
+   referências bibliográficas.
+
+2) Criador de conteúdo: quando a TAREFA pedir para gerar um tema, flashcards ou uma questão, produza
+   conteúdo tecnicamente correto e atualizado, no formato JSON exato solicitado no prompt, sem texto fora
+   do JSON. Quando pedirem uma autocrítica de um rascunho já gerado, revise com rigor (precisão clínica,
+   atualidade, clareza) e devolva a versão corrigida no mesmo formato.
+
+Em ambos os papéis: seja objetivo, use linguagem técnica apropriada para um médico, e tenha em mente que
+todo o conteúdo é material de estudo — não substitui julgamento clínico, bula ou protocolo institucional
+vigente.`;
 
 function corsHeaders(origin) {
   const permitido = ALLOWED_ORIGINS.includes(origin);
@@ -77,7 +86,7 @@ export default {
       return jsonResponse({ erro: "JSON inválido no corpo da requisição." }, 400, origin);
     }
 
-    const { pergunta, contexto, tarefa } = corpo;
+    const { pergunta, contexto, tarefa, formatoJson } = corpo;
     if (!pergunta || typeof pergunta !== "string" || !pergunta.trim()) {
       return jsonResponse({ erro: "Campo 'pergunta' é obrigatório." }, 400, origin);
     }
@@ -94,28 +103,48 @@ export default {
     const modelo = env.GEMINI_MODEL || MODELO_PADRAO;
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`;
 
+    const generationConfig = { temperature: 0.3, maxOutputTokens: 4096 };
+    if (formatoJson) {
+      generationConfig.responseMimeType = "application/json";
+    }
+
+    const corpoRequisicaoGemini = JSON.stringify({
+      systemInstruction: { parts: [{ text: INSTRUCAO_SISTEMA }] },
+      contents: [{ parts: [{ text: partesPrompt.join("\n\n") }] }],
+      generationConfig,
+    });
+
+    // O tier gratuito do Gemini ocasionalmente devolve 503 "high demand" ou 429
+    // (rate limit) de forma transitória — tenta mais 2 vezes com espera curta
+    // antes de desistir, para não quebrar fluxos que fazem 2 chamadas seguidas
+    // (rascunho + autocrítica).
     let respostaGemini;
-    try {
-      respostaGemini = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-goog-api-key": env.GEMINI_API_KEY,
-        },
-        body: JSON.stringify({
-          systemInstruction: { parts: [{ text: INSTRUCAO_SISTEMA }] },
-          contents: [{ parts: [{ text: partesPrompt.join("\n\n") }] }],
-          generationConfig: { temperature: 0.3, maxOutputTokens: 2048 },
-        }),
-      });
-    } catch (e) {
-      return jsonResponse({ erro: "Falha de rede ao chamar o Gemini.", detalhe: String(e) }, 502, origin);
+    let ultimoErro = "";
+    for (let tentativa = 0; tentativa < 3; tentativa++) {
+      try {
+        respostaGemini = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-goog-api-key": env.GEMINI_API_KEY,
+          },
+          body: corpoRequisicaoGemini,
+        });
+      } catch (e) {
+        return jsonResponse({ erro: "Falha de rede ao chamar o Gemini.", detalhe: String(e) }, 502, origin);
+      }
+
+      if (respostaGemini.ok) break;
+
+      ultimoErro = await respostaGemini.text();
+      const tentarDeNovo = respostaGemini.status === 503 || respostaGemini.status === 429;
+      if (!tentarDeNovo || tentativa === 2) break;
+      await new Promise((r) => setTimeout(r, 800 * (tentativa + 1)));
     }
 
     if (!respostaGemini.ok) {
-      const textoErro = await respostaGemini.text();
       return jsonResponse(
-        { erro: "O modelo de IA recusou ou falhou a requisição.", detalhe: textoErro.slice(0, 800) },
+        { erro: "O modelo de IA recusou ou falhou a requisição.", detalhe: ultimoErro.slice(0, 800) },
         502,
         origin
       );

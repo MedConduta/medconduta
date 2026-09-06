@@ -2,8 +2,13 @@ import { fetchJsonCached, escapeHtml } from "../utils.js";
 import { getItem, setItem, getAll } from "../db.js";
 import { revisar, estaVencido } from "../sm2.js";
 
+async function todosOsDecks() {
+  const [curados, gerados] = await Promise.all([fetchJsonCached("data/flashcards.json"), getAll("ia_flashcards")]);
+  return [...curados, ...gerados];
+}
+
 export async function renderLista(container) {
-  const decks = await fetchJsonCached("data/flashcards.json");
+  const decks = await todosOsDecks();
   const srsRecords = await getAll("srs");
   const srsMap = new Map(srsRecords.map((r) => [r.id, r]));
 
@@ -12,17 +17,19 @@ export async function renderLista(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Flashcards</div>
         <h1>Baralhos por tema</h1>
-        <p class="page-header__desc">Frente e verso, integrados à revisão espaçada (SM-2). Cada resposta ajusta o próximo intervalo de revisão daquele card.</p>
+        <p class="page-header__desc">Frente e verso, integrados à revisão espaçada (SM-2). Cada resposta ajusta o próximo intervalo de revisão daquele card. Baralhos gerados por IA aparecem marcados.</p>
       </div>
       <div class="card-grid">
         ${decks
           .map((deck) => {
             const vencidos = deck.cards.filter((c) => estaVencido(srsMap.get(c.id))).length;
+            const badgeIA = deck.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : "";
             return `
             <a class="card card--interactive list-card" href="#/residencia/flashcards/${deck.id}">
               <div class="list-card__top">
                 <span class="badge badge--accent">${deck.cards.length} cards</span>
                 ${vencidos > 0 ? `<span class="badge badge--warning">${vencidos} p/ revisar</span>` : `<span class="badge">em dia</span>`}
+                ${badgeIA}
               </div>
               <div class="list-card__title">${escapeHtml(deck.titulo)}</div>
             </a>`;
@@ -34,7 +41,7 @@ export async function renderLista(container) {
 }
 
 export async function renderEstudo(container, { deckId }) {
-  const decks = await fetchJsonCached("data/flashcards.json");
+  const decks = await todosOsDecks();
   const deck = decks.find((d) => d.id === deckId);
 
   if (!deck) {

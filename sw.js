@@ -5,7 +5,7 @@
  * são armazenadas em runtime na primeira visita.
  */
 
-const CACHE_VERSION = "medconduta-v12";
+const CACHE_VERSION = "medconduta-v14";
 
 const PRECACHE_URLS = [
   "./",
@@ -26,6 +26,8 @@ const PRECACHE_URLS = [
   "./app/utils.js",
   "./app/ai.js",
   "./app/rag.js",
+  "./app/areas.js",
+  "./app/iaConteudo.js",
 
   "./app/components/sidebar.js",
   "./app/components/flowchart.js",
@@ -59,7 +61,20 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CACHE_VERSION)
-      .then((cache) => cache.addAll(PRECACHE_URLS))
+      .then((cache) =>
+        // Busca cada arquivo ignorando o cache HTTP do navegador (`cache: "reload"`).
+        // cache.addAll() usa fetch() padrão, que pode servir uma versão antiga do
+        // disco do navegador mesmo com CACHE_VERSION novo — resultando num Worker
+        // "atualizado" que na prática guarda código desatualizado.
+        Promise.all(
+          PRECACHE_URLS.map((url) =>
+            fetch(url, { cache: "reload" }).then((res) => {
+              if (!res.ok) throw new Error(`Falha ao pré-cachear ${url}: ${res.status}`);
+              return cache.put(url, res);
+            })
+          )
+        )
+      )
       .then(() => self.skipWaiting())
   );
 });

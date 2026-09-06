@@ -1,12 +1,14 @@
 /**
  * MedConduta — camada de persistência local (IndexedDB com fallback em localStorage).
  * Guarda: estado de repetição espaçada (SM-2) por flashcard, preferências (tema),
- * progresso de temas lidos e histórico de respostas de questões.
+ * progresso de temas lidos, histórico de respostas de questões, e o conteúdo
+ * (temas/flashcards/questões) que a IA cria — que fica salvo só neste navegador,
+ * mesclado com o conteúdo curado nas telas de listagem.
  */
 
 const DB_NAME = "medconduta";
-const DB_VERSION = 1;
-const STORES = ["srs", "prefs", "progresso", "respostas"];
+const DB_VERSION = 2;
+const STORES = ["srs", "prefs", "progresso", "respostas", "ia_temas", "ia_flashcards", "ia_questoes"];
 
 let dbPromise = null;
 
@@ -90,6 +92,21 @@ export async function getAll(store) {
     const req = tx.objectStore(store).getAll();
     req.onsuccess = () => resolve(req.result || []);
     req.onerror = () => resolve([]);
+  });
+}
+
+/** Remove um registro por id. */
+export async function removeItem(store, id) {
+  const db = await openDb();
+  if (!db) {
+    localStorage.removeItem(lsKey(store, id));
+    return;
+  }
+  return new Promise((resolve) => {
+    const tx = db.transaction(store, "readwrite");
+    tx.objectStore(store).delete(id);
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => resolve();
   });
 }
 

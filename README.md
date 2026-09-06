@@ -52,6 +52,8 @@ MedConduta/
 │   ├── utils.js                 # helpers (escape HTML, fetch com cache, etc.)
 │   ├── ai.js                     # cliente do assistente de IA (fala com o Worker)
 │   ├── rag.js                     # busca de contexto por palavra-chave (RAG simples)
+│   ├── areas.js                   # mapa subespecialidade → grande área (Conteúdo + IA)
+│   ├── iaConteudo.js               # geração de temas/flashcards/questões por IA (com autocrítica)
 │   ├── components/
 │   │   ├── sidebar.js            # navegação lateral e bottom-nav mobile
 │   │   ├── icons.js               # ícones SVG inline
@@ -96,9 +98,30 @@ PDFs de prescrição/resumos que você adicionar) junto com a pergunta — o mod
 com base nisso, então a atualidade da informação depende do seu conteúdo, não do
 treino do modelo.
 
-**O assistente é 100% opcional** — sem configurar nada, o resto do app funciona
-normalmente. Enquanto não configurado, os botões de IA mostram uma mensagem pedindo
-para configurar.
+**O assistente é opcional** para quem clonar o projeto: se você não publicar seu
+próprio Worker, os botões de IA simplesmente vão falhar com um erro de conexão — o
+resto do app funciona normalmente. Não há mais tela de configuração — a URL do Worker
+fica fixa em `app/ai.js` (`ENDPOINT_PADRAO`); para trocar de Worker, edite essa
+constante.
+
+### O que a IA faz hoje
+
+- **Assistente de perguntas** (chat, tela "Assistente IA"): responde com base no
+  conteúdo do MedConduta (RAG por busca de palavra-chave em `data/temas.json`).
+- **Por tema** (botões na tela de cada tema): "Explicar mais / dar exemplo clínico",
+  "Avaliar tema com IA" (crítica do conteúdo existente, aponta desatualizações), "Gerar
+  flashcards com IA" e "Gerar questão de treino".
+- **Criar tema novo com IA** (botão no topo da lista de Conteúdo): gera um tema
+  completo (seções, mnemônico, fonte sugerida) a partir de um tópico livre.
+
+Os três últimos (criar tema, gerar flashcards, gerar questão) fazem **duas chamadas**
+à IA: um rascunho, e uma segunda chamada pedindo que a própria IA revise/corrija
+criticamente o rascunho antes de salvar — por isso demoram uns 10-25 segundos. O
+resultado final é salvo no **IndexedDB do navegador** (não no repositório) e aparece
+mesclado com o conteúdo curado nas telas de Conteúdo/Flashcards/Questões, sempre com
+uma etiqueta **"✨ IA"** e, quando houver, a nota da autocrítica. Como fica só no
+IndexedDB, esse conteúdo é local a cada navegador/dispositivo — não é sincronizado nem
+vai para o GitHub Pages automaticamente.
 
 ### Passo a passo para ativar (gratuito)
 
@@ -117,16 +140,18 @@ para configurar.
    npx wrangler deploy
    ```
    O último comando imprime uma URL do tipo
-   `https://medconduta-ai.SEUUSUARIO.workers.dev` — essa é a URL do seu assistente.
-5. Abra o MedConduta → **Assistente IA** (na barra lateral) → cole essa URL no campo
-   "Endereço do Worker" → Salvar. Pronto, pode perguntar.
+   `https://medconduta-ai.SEUUSUARIO.workers.dev`.
+5. Cole essa URL em `ENDPOINT_PADRAO`, no topo de `app/ai.js`, e publique o app.
 
 ### Limites do plano gratuito
 
-O modelo padrão configurado é o `gemini-2.5-flash-lite`, que no plano gratuito do
-Google permite ~1.000 requisições/dia e 15/minuto — mais que suficiente para uso
-pessoal. Se a Google mudar esses limites ou nomes de modelo no futuro, ajuste a
-constante `MODELO_PADRAO` em `worker/src/index.js` (ou defina `GEMINI_MODEL` em
+O modelo padrão configurado é o `gemini-3.5-flash-lite` (o `gemini-2.5-flash-lite` foi
+descontinuado para novos usuários em 2026), que no plano gratuito do Google permite
+~1.000 requisições/dia e 15/minuto — suficiente para uso pessoal mesmo com os fluxos
+de 2 chamadas. O Worker já tenta de novo automaticamente (até 2 vezes, com espera
+curta) se o Gemini responder 503/429, que é comum e transitório no tier gratuito. Se a
+Google mudar esses limites ou nomes de modelo no futuro, ajuste a constante
+`MODELO_PADRAO` em `worker/src/index.js` (ou defina `GEMINI_MODEL` em
 `wrangler.toml`), sem precisar mexer no restante do app.
 
 ### Segurança
@@ -141,11 +166,9 @@ não implementado nesta primeira versão para manter o setup simples.
 
 ### Próximas funcionalidades planejadas (mesma infraestrutura)
 
-Hoje o assistente cobre: **chat livre** (Assistente IA), **explicar tema em
-profundidade** e **gerar questão de treino** (ambos na tela de cada tema). Ainda não
-implementados, usando a mesma base: gerar flashcards, montar simulados e analisar
-casos clínicos — além de indexar PDFs de prescrição/resumos de cursinho que você
-adicionar (hoje o RAG busca só em `data/temas.json`).
+Ainda não implementados, usando a mesma base: montar simulados por IA e indexar PDFs
+de prescrição/resumos de cursinho que você adicionar (hoje o RAG busca só em
+`data/temas.json`).
 
 ## Como rodar localmente
 

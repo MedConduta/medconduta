@@ -1,12 +1,11 @@
 import { escapeHtml, renderMarkdown } from "../utils.js";
-import { askAI, getAiEndpoint, setAiEndpoint } from "../ai.js";
+import { askAI } from "../ai.js";
 import { buscarContextoRelevante } from "../rag.js";
 
 // Histórico da conversa vive só na memória da aba (não persiste entre recargas).
 let historico = [];
 
 export async function renderAssistente(container) {
-  const endpointAtual = await getAiEndpoint();
   historico = [];
 
   container.innerHTML = `
@@ -15,56 +14,29 @@ export async function renderAssistente(container) {
         <div class="page-header__eyebrow">Residência — Assistente IA</div>
         <h1>Assistente de estudo</h1>
         <p class="page-header__desc">
-          Responde com base no conteúdo do MedConduta (RAG) usando um modelo de IA gratuito,
-          via um Worker que você mesmo hospeda. <strong>Sempre confira respostas em fonte oficial</strong> —
-          é uma ferramenta de apoio ao estudo, não uma fonte de verdade clínica.
+          Responde com base no conteúdo do MedConduta (RAG). Também é quem gera temas, flashcards e
+          questões novas (veja os botões de IA em cada tema, em <a href="#/residencia/conteudo">Conteúdo</a>).
+          <strong>Sempre confira respostas em fonte oficial</strong> — é uma ferramenta de apoio, não uma
+          fonte de verdade clínica.
         </p>
       </div>
-
-      <details class="card" id="config-box" ${endpointAtual ? "" : "open"} style="margin-bottom:20px;">
-        <summary style="cursor:pointer;font-weight:600;">Configuração do assistente</summary>
-        <div style="margin-top:16px;">
-          <div class="field">
-            <label for="endpoint-input">Endereço do Worker (URL do Cloudflare Workers)</label>
-            <input type="text" id="endpoint-input" placeholder="https://medconduta-ai.SEUUSUARIO.workers.dev" value="${escapeHtml(endpointAtual)}" />
-          </div>
-          <div class="btn-row">
-            <button class="btn btn--primary" id="btn-salvar-endpoint">Salvar</button>
-          </div>
-          <p class="page-header__desc" style="margin-top:12px;font-size:var(--fs-sm);">
-            Veja no README como publicar seu próprio Worker gratuito (Cloudflare) com sua chave do
-            Gemini — a chave nunca fica no app, só no Worker.
-          </p>
-        </div>
-      </details>
 
       <div class="card" id="chat-card">
         <div id="chat-mensagens" class="chat-mensagens" aria-live="polite">
           <div class="empty-state" id="chat-vazio">Faça uma pergunta sobre algum tema de estudo para começar.</div>
         </div>
         <form id="chat-form" class="chat-form">
-          <textarea id="chat-input" placeholder="Ex.: Quando devo suspeitar de gravidez ectópica?" rows="2" ${endpointAtual ? "" : "disabled"}></textarea>
-          <button type="submit" class="btn btn--primary" id="chat-enviar" ${endpointAtual ? "" : "disabled"} aria-label="Enviar pergunta">Enviar</button>
+          <textarea id="chat-input" placeholder="Ex.: Quando devo suspeitar de gravidez ectópica?" rows="2"></textarea>
+          <button type="submit" class="btn btn--primary" id="chat-enviar" aria-label="Enviar pergunta">Enviar</button>
         </form>
       </div>
     </div>
   `;
 
-  const endpointInput = container.querySelector("#endpoint-input");
-  const configBox = container.querySelector("#config-box");
   const chatForm = container.querySelector("#chat-form");
   const chatInput = container.querySelector("#chat-input");
   const chatEnviar = container.querySelector("#chat-enviar");
   const chatMensagens = container.querySelector("#chat-mensagens");
-
-  container.querySelector("#btn-salvar-endpoint").addEventListener("click", async () => {
-    await setAiEndpoint(endpointInput.value);
-    const configurado = Boolean((await getAiEndpoint()).trim());
-    chatInput.disabled = !configurado;
-    chatEnviar.disabled = !configurado;
-    configBox.open = !configurado;
-    renderMensagemSistema(chatMensagens, configurado ? "Assistente configurado. Pode perguntar!" : "Endereço removido.");
-  });
 
   chatForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -117,10 +89,6 @@ function atualizarMensagem(container, id, texto, { erro = false } = {}) {
   if (erro) bloco.classList.add("chat-msg--erro");
   bloco.innerHTML = renderConteudoMensagem("ia", texto, { erro });
   container.scrollTop = container.scrollHeight;
-}
-
-function renderMensagemSistema(container, texto) {
-  adicionarMensagem(container, "sistema", texto);
 }
 
 function renderConteudoMensagem(autor, texto, { erro = false } = {}) {
