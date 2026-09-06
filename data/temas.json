@@ -4270,5 +4270,301 @@
         "conteudo": "Úlcera de perna que não cicatriza com terapia compressiva adequada, ou com bordas atípicas, deve ser reavaliada quanto a diagnósticos diferenciais (arterial, neuropática, neoplásica) antes de insistir apenas no tratamento venoso."
       }
     ]
+  },
+  {
+    "id": "ciclo-menstrual-normal",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Ciclo Menstrual Normal: Fisiologia do Eixo Hipotálamo-Hipófise-Ovário",
+    "resumo": "Fases do ciclo ovariano e endometrial, e a regulação hormonal pelo eixo hipotálamo-hipófise-ovário.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Manual de Ginecologia Endócrina; Berek & Novak's Gynecology",
+    "mnemonicos": [
+      {
+        "palavra": "Lútea é fixa, Folicular varia",
+        "explicacao": "A fase lútea tem duração praticamente fixa (~14 dias) em todas as mulheres; é a duração da fase folicular que varia e explica as diferenças na duração total do ciclo menstrual entre as pessoas e entre os ciclos."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fases do ciclo ovariano",
+        "conteudo": "Fase folicular: recrutamento e desenvolvimento folicular sob ação do FSH, com produção crescente de estradiol. Ovulação: pico de LH desencadeado pelo feedback positivo do estradiol elevado, ocorrendo cerca de 14 dias antes da próxima menstruação em um ciclo regular de 28 dias. Fase lútea: o corpo lúteo produz progesterona, com duração fixa de aproximadamente 14 dias."
+      },
+      {
+        "titulo": "Fases do ciclo endometrial",
+        "conteudo": "Fase proliferativa: o estrogênio promove o crescimento endometrial, em paralelo à fase folicular ovariana. Fase secretora: a progesterona torna o endométrio receptivo à implantação, em paralelo à fase lútea. Menstruação: a queda de estrogênio e progesterona na ausência de gravidez leva à descamação do endométrio."
+      },
+      {
+        "titulo": "Eixo hipotálamo-hipófise-ovário",
+        "conteudo": "O GnRH pulsátil hipotalâmico estimula a liberação de FSH e LH pela hipófise, que regulam a esteroidogênese ovariana. O feedback é predominantemente negativo, exceto pelo pico de LH pré-ovulatório, que resulta de um feedback positivo do estradiol quando este atinge nível elevado e sustentado."
+      },
+      {
+        "titulo": "Duração e variabilidade normal",
+        "conteudo": "Um ciclo é considerado regular entre 24-38 dias, com variação entre ciclos menor que 7-9 dias. A fase lútea tem duração relativamente fixa (cerca de 14 dias), enquanto a fase folicular é a principal responsável pela variação na duração total do ciclo."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Ciclos consistentemente menores que 21 dias ou maiores que 45 dias, ou variabilidade acentuada entre ciclos, sugerem disfunção ovulatória e merecem investigação."
+      }
+    ]
+  },
+  {
+    "id": "amenorreias",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Amenorreias: Primária e Secundária",
+    "resumo": "Investigação sistemática por compartimento etiológico, sempre excluindo gravidez em primeiro lugar.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Protocolo de Amenorreia; ACOG Practice Bulletin on Amenorrhea",
+    "mnemonicos": [
+      {
+        "palavra": "Sempre exclua gravidez primeiro",
+        "explicacao": "Diante de qualquer amenorreia secundária, o primeiro passo da investigação — antes de qualquer exame hormonal sofisticado — é sempre solicitar beta-hCG para excluir gravidez."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definições",
+        "conteudo": "Amenorreia primária: ausência de menarca até os 15 anos (na presença de caracteres sexuais secundários) ou até os 13 anos (na ausência deles). Amenorreia secundária: ausência de menstruação por 3 ciclos habituais ou 6 meses em mulher que já menstruava."
+      },
+      {
+        "titulo": "Investigação inicial",
+        "conteudo": "Sempre excluir gravidez primeiro (beta-hCG). Em seguida, avaliar TSH e prolactina (causas endócrinas comuns) e provas de função ovariana (FSH/LH, estradiol)."
+      },
+      {
+        "titulo": "Compartimentos etiológicos",
+        "conteudo": "Compartimento I (útero/trato de saída — ex.: sinéquias uterinas/síndrome de Asherman). Compartimento II (ovário — ex.: insuficiência ovariana prematura, síndrome dos ovários policísticos). Compartimento III (hipófise — ex.: hiperprolactinemia, adenoma hipofisário). Compartimento IV (hipotálamo — ex.: amenorreia hipotalâmica funcional por estresse, baixo peso ou exercício excessivo)."
+      },
+      {
+        "titulo": "Teste do progestagênio",
+        "conteudo": "Administração de progestagênio por curto período: sangramento de escape após a suspensão indica endométrio estrogenizado e trato de saída pérvio (sugerindo anovulação, como na SOP); ausência de sangramento sugere hipoestrogenismo ou alteração anatômica do trato de saída."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Amenorreia associada a galactorreia sugere hiperprolactinemia e exige investigação de adenoma hipofisário. Amenorreia primária com ausência de caracteres sexuais secundários sugere disgenesia gonadal (ex.: síndrome de Turner) e exige cariótipo."
+      }
+    ]
+  },
+  {
+    "id": "uroginecologia-incontinencia-prolapso",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Uroginecologia: Incontinência Urinária e Prolapsos Genitais",
+    "resumo": "Diferenciação entre incontinência de esforço e de urgência, e o manejo escalonado dos prolapsos genitais.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Manual de Uroginecologia; ICS/ICI Recommendations on Urinary Incontinence and Pelvic Organ Prolapse",
+    "mnemonicos": [
+      {
+        "palavra": "Esforço perde ao tossir, Urgência não segura",
+        "explicacao": "Incontinência de ESFORÇO: perde urina ao aumentar a pressão abdominal (tosse, espirro). Incontinência de URGÊNCIA: sente vontade súbita e não consegue segurar a tempo de chegar ao banheiro."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Incontinência urinária de esforço",
+        "conteudo": "Perda involuntária de urina associada a aumento da pressão abdominal (tosse, espirro, exercício), por hipermobilidade uretral ou deficiência esfincteriana intrínseca. Tratamento inicial com fisioterapia do assoalho pélvico (exercícios de Kegel); cirurgia (sling) para casos refratários."
+      },
+      {
+        "titulo": "Incontinência urinária de urgência",
+        "conteudo": "Perda de urina precedida de urgência miccional súbita, associada a frequência aumentada e noctúria, por hiperatividade do músculo detrusor. Tratamento inicial com treinamento vesical e medicações anticolinérgicas ou beta-3 agonistas."
+      },
+      {
+        "titulo": "Incontinência mista",
+        "conteudo": "Combina componentes de esforço e de urgência, exigindo abordagem direcionada ao componente predominante identificado na avaliação clínica e urodinâmica."
+      },
+      {
+        "titulo": "Prolapsos genitais",
+        "conteudo": "Descenso de órgãos pélvicos através da vagina — bexiga (cistocele), útero (prolapso uterino) ou reto (retocele) — por enfraquecimento do assoalho pélvico (partos vaginais, idade, obesidade, tosse crônica). Quadro clínico de sensação de peso/bola na vagina, piorando ao longo do dia. Tratamento conservador (pessário, fisioterapia) ou cirúrgico, conforme o grau e o impacto na qualidade de vida."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Incontinência urinária associada a hematúria, dor ou infecções urinárias de repetição não deve ser atribuída automaticamente a causa funcional sem investigação adicional (urocultura, exame de imagem)."
+      }
+    ]
+  },
+  {
+    "id": "endometriose",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Endometriose",
+    "resumo": "Dismenorreia progressiva, dispareunia profunda e infertilidade como tripé clínico clássico.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Protocolo de Endometriose; ESHRE Guideline on Endometriosis 2022",
+    "mnemonicos": [
+      {
+        "palavra": "Dismenorreia que piora com o tempo",
+        "explicacao": "Diferente da dismenorreia primária (que tende a ser estável ao longo dos anos), a dor da endometriose classicamente é progressiva, piorando ciclo após ciclo — essa progressão é uma pista diagnóstica importante."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição e fisiopatologia",
+        "conteudo": "Presença de tecido endometrial funcionante fora da cavidade uterina, mais comumente em ovários, peritônio pélvico e ligamentos uterossacros. O tecido responde aos hormônios do ciclo, causando inflamação, sangramento local cíclico e formação de aderências."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Dismenorreia progressiva (piora ao longo dos anos), dispareunia de profundidade, dor pélvica crônica e infertilidade. A intensidade da dor nem sempre se correlaciona com a extensão anatômica da doença."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "A suspeita clínica forte já direciona o tratamento empírico. Ultrassonografia transvaginal com preparo intestinal e ressonância magnética auxiliam na detecção de endometriomas e endometriose profunda. A laparoscopia com biópsia é o padrão-ouro, mas não é obrigatória antes de iniciar tratamento clínico empírico."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Analgesia e supressão hormonal (contraceptivos combinados contínuos, progestagênios, análogos de GnRH) como primeira linha para controle da dor. Cirurgia laparoscópica para lesões endometrióticas quando refratária ao tratamento clínico ou diante de infertilidade associada."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Dismenorreia progressivamente pior ao longo dos ciclos, associada a dispareunia profunda e infertilidade, é o tripé clínico clássico que deve levantar forte suspeita de endometriose."
+      }
+    ]
+  },
+  {
+    "id": "dip",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Doença Inflamatória Pélvica (DIP)",
+    "resumo": "Diagnóstico clínico com tratamento empírico precoce para reduzir sequelas como infertilidade e gravidez ectópica.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — PCDT IST 2022; CDC Sexually Transmitted Infections Treatment Guidelines",
+    "mnemonicos": [
+      {
+        "palavra": "Chandelier",
+        "explicacao": "Sinal do candelabro (Chandelier): dor intensa à mobilização do colo uterino ao exame ginecológico bimanual — achado clássico de doença inflamatória pélvica."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Etiologia",
+        "conteudo": "Infecção polimicrobiana ascendente do trato genital inferior para o superior (útero, tubas, ovários e estruturas adjacentes), principalmente por Chlamydia trachomatis e Neisseria gonorrhoeae, frequentemente associada a flora vaginal endógena."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor pélvica/abdominal baixa, geralmente bilateral, associada a corrimento vaginal anormal. Ao exame, dor à mobilização do colo uterino (sinal do candelabro) e dor à palpação anexial são achados característicos que sustentam o diagnóstico clínico."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Eminentemente clínico. O tratamento empírico deve ser iniciado precocemente diante de suspeita clínica razoável, mesmo sem confirmação microbiológica, para reduzir o risco de sequelas."
+      },
+      {
+        "titulo": "Tratamento e complicações",
+        "conteudo": "Antibioticoterapia de amplo espectro cobrindo gonococo, clamídia e anaeróbios. Complicações incluem abscesso tubo-ovariano, infertilidade por obstrução tubária, gravidez ectópica futura e dor pélvica crônica — relacionadas ao atraso ou inadequação do tratamento."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Massa anexial dolorosa associada a febre e toxemia</span> sugere abscesso tubo-ovariano, podendo exigir drenagem além de antibioticoterapia intravenosa."
+      }
+    ]
+  },
+  {
+    "id": "cancer-colo-utero-hpv",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Câncer de Colo do Útero e Lesões Precursoras (HPV)",
+    "resumo": "HPV oncogênico, classificação das lesões precursoras (NIC) e a conduta conforme o resultado do rastreamento.",
+    "revisado": false,
+    "fonte": "Instituto Nacional de Câncer (INCA) — Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero; FEBRASGO",
+    "mnemonicos": [
+      {
+        "palavra": "16 e 18",
+        "explicacao": "Os tipos de HPV de alto risco oncogênico mais associados ao câncer de colo do útero são o 16 e o 18 — cobertos pelas vacinas disponíveis no calendário nacional de imunização."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Etiologia",
+        "conteudo": "A infecção persistente por HPV oncogênico (principalmente tipos 16 e 18) é causa necessária, embora não suficiente, para o desenvolvimento do câncer de colo do útero. A maioria das infecções por HPV é transitória e eliminada espontaneamente pelo sistema imune."
+      },
+      {
+        "titulo": "Lesões precursoras",
+        "conteudo": "Classificadas citologicamente como lesão intraepitelial escamosa de baixo grau (LSIL) e de alto grau (HSIL), e histologicamente como neoplasia intraepitelial cervical (NIC I, II, III) — representam o espectro de progressão antes da invasão."
+      },
+      {
+        "titulo": "Conduta conforme o rastreamento",
+        "conteudo": "Alterações de baixo grau geralmente indicam seguimento. Alterações de alto grau indicam colposcopia com biópsia dirigida. NIC II/III confirmada é tratada com exérese da zona de transformação (ex.: cirurgia de alta frequência — CAF/LEEP)."
+      },
+      {
+        "titulo": "Prevenção",
+        "conteudo": "Vacinação contra HPV, idealmente antes do início da vida sexual, associada ao rastreamento citológico/molecular periódico — estratégias combinadas mais eficazes de prevenção."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Sangramento vaginal pós-coital ou sinusorragia, em qualquer idade, deve motivar exame especular e coleta de citologia/colposcopia, podendo ser manifestação de lesão cervical já invasiva."
+      }
+    ]
+  },
+  {
+    "id": "cancer-endometrio",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Câncer de Endométrio",
+    "resumo": "Exposição estrogênica não contraposta como principal fator de risco, e sangramento pós-menopausa como sinal de alerta obrigatório.",
+    "revisado": false,
+    "fonte": "Instituto Nacional de Câncer (INCA); FEBRASGO — Diretriz de Câncer de Endométrio; NCCN Guidelines for Uterine Neoplasms",
+    "mnemonicos": [
+      {
+        "palavra": "Sangrou na menopausa, investigue",
+        "explicacao": "Qualquer sangramento vaginal após a menopausa é considerado câncer de endométrio até prova em contrário — a investigação (ultrassom transvaginal e biópsia se indicado) nunca deve ser postergada."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fatores de risco",
+        "conteudo": "A exposição estrogênica não contraposta por progesterona é o principal mecanismo: obesidade (conversão periférica de andrógenos em estrogênio no tecido adiposo), anovulação crônica (SOP), terapia de reposição hormonal apenas com estrogênio em mulher com útero, menarca precoce, menopausa tardia e nuliparidade."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "O sangramento uterino anormal é o sintoma mais precoce e comum. Qualquer sangramento vaginal na pós-menopausa deve ser considerado câncer de endométrio até prova em contrário."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Ultrassonografia transvaginal avaliando a espessura endometrial (endométrio espessado na pós-menopausa levanta suspeita); biópsia endometrial (ambulatorial ou por histeroscopia) confirma o diagnóstico histológico."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Histerectomia total com salpingooforectomia bilateral é o tratamento primário na maioria dos casos em estádio inicial, associada a estadiamento cirúrgico. Radioterapia e quimioterapia adjuvantes conforme fatores de risco histológico e estadiamento."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Sangramento vaginal na pós-menopausa</span> é câncer de endométrio até prova em contrário — exige investigação obrigatória e não deve ser simplesmente observado."
+      }
+    ]
+  },
+  {
+    "id": "cancer-ovario",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Câncer de Ovário",
+    "resumo": "Ausência de rastreamento populacional eficaz, sintomas vagos e o papel limitado do CA-125.",
+    "revisado": false,
+    "fonte": "Instituto Nacional de Câncer (INCA); FEBRASGO — Diretriz de Câncer de Ovário; NCCN Guidelines for Ovarian Cancer",
+    "mnemonicos": [
+      {
+        "palavra": "O câncer silencioso",
+        "explicacao": "O câncer de ovário é chamado de \"câncer silencioso\" por causar sintomas vagos e inespecíficos (distensão, saciedade precoce, dor abdominal difusa) que costumam ser atribuídos a outras causas até que a doença já esteja em estádio avançado."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Características gerais",
+        "conteudo": "Frequentemente diagnosticado em estádios avançados, pela ausência de sintomas específicos nas fases iniciais e pela ausência de um método de rastreamento populacional eficaz validado — ao contrário do colo do útero e da mama."
+      },
+      {
+        "titulo": "Fatores de risco",
+        "conteudo": "História familiar e mutações genéticas (BRCA1/BRCA2, síndrome de Lynch), nuliparidade e menarca precoce/menopausa tardia (maior número de ciclos ovulatórios ao longo da vida). Uso de contraceptivo hormonal combinado e multiparidade são fatores protetores, por reduzirem o número de ovulações."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Sintomas inespecíficos e insidiosos — distensão abdominal, saciedade precoce, dor pélvica/abdominal vaga e alterações urinárias/intestinais — frequentemente atribuídos erroneamente a causas gastrointestinais funcionais antes do diagnóstico correto."
+      },
+      {
+        "titulo": "Diagnóstico e marcadores",
+        "conteudo": "Ultrassonografia transvaginal/pélvica identifica massa anexial suspeita (septações espessas, componente sólido, vascularização ao Doppler aumentam a suspeita). O CA-125 é marcador tumoral de acompanhamento e apoio diagnóstico, mas não é específico nem indicado como rastreamento populacional isolado."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Sintomas gastrointestinais vagos persistentes por mais de 2-3 semanas em mulher, especialmente após os 50 anos, sem explicação por causa digestiva evidente, devem motivar avaliação ginecológica e de imagem pélvica."
+      }
+    ]
   }
 ]
