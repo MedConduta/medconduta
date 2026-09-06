@@ -8,7 +8,6 @@ export const NAV_ITEMS = [
       { path: "/residencia/assistente", label: "Assistente IA", icon: "sparkles" },
       { path: "/residencia/revisao", label: "Revisão espaçada", icon: "brain" },
       { path: "/residencia/flashcards", label: "Flashcards", icon: "layers" },
-      { path: "/residencia/fluxogramas", label: "Fluxogramas", icon: "flowchart" },
       { path: "/residencia/questoes", label: "Questões", icon: "checklist" },
       { path: "/residencia/planejador", label: "Planejador do dia", icon: "calendar" },
     ],
