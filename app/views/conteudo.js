@@ -1,4 +1,4 @@
-import { fetchJsonCached, escapeHtml } from "../utils.js";
+import { fetchJsonCached, escapeHtml, renderMarkdown } from "../utils.js";
 import { getItem, setItem } from "../db.js";
 import { askAI, isAiConfigured } from "../ai.js";
 import { formatarTemaComoContexto } from "../rag.js";
@@ -247,7 +247,7 @@ async function executarTarefaIA(resultadoEl, botoes, { pergunta, tarefa, context
     const resposta = await askAI({ pergunta, tarefa, contexto });
     resultadoEl.innerHTML = `
       <div class="explanation-box">
-        <div class="ia-resposta">${escapeHtml(resposta).replace(/\n/g, "<br>")}</div>
+        <div class="ia-resposta">${renderMarkdown(resposta)}</div>
         <div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial antes de usar.</div>
       </div>
     `;

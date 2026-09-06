@@ -45,3 +45,73 @@ export function slugify(str) {
 export function uniq(arr) {
   return [...new Set(arr)];
 }
+
+function aplicarMarkdownInline(texto) {
+  return texto
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/(?<!\*)\*([^*\n]+)\*(?!\*)/g, "<em>$1</em>")
+    .replace(/`([^`]+)`/g, "<code>$1</code>");
+}
+
+/**
+ * Conversor de Markdown simples para HTML — cobre o subconjunto que respostas
+ * de IA costumam usar (negrito, itálico, código inline, listas, títulos).
+ * O texto já sai escapado (seguro contra HTML injetado pela resposta do
+ * modelo); não use um parser de Markdown completo aqui de propósito, para
+ * manter o app leve e sem dependências externas.
+ */
+export function renderMarkdown(texto) {
+  const linhas = escapeHtml(texto).split("\n");
+  const blocos = [];
+  let listaAtual = null;
+
+  function fecharLista() {
+    if (listaAtual) {
+      const itens = listaAtual.itens.map((i) => `<li>${i}</li>`).join("");
+      blocos.push(`<${listaAtual.tipo}>${itens}</${listaAtual.tipo}>`);
+      listaAtual = null;
+    }
+  }
+
+  for (const linhaRaw of linhas) {
+    const linha = linhaRaw.trim();
+
+    if (/^-{3,}$/.test(linha) || /^\*{3,}$/.test(linha)) {
+      fecharLista();
+      blocos.push("<hr>");
+      continue;
+    }
+
+    const marcadorLista = linha.match(/^[*-]\s+(.*)/);
+    const marcadorNumerado = linha.match(/^\d+[.)]\s+(.*)/);
+    const cabecalho = linha.match(/^(#{1,4})\s+(.*)/);
+
+    if (marcadorLista) {
+      if (!listaAtual || listaAtual.tipo !== "ul") {
+        fecharLista();
+        listaAtual = { tipo: "ul", itens: [] };
+      }
+      listaAtual.itens.push(aplicarMarkdownInline(marcadorLista[1]));
+      continue;
+    }
+    if (marcadorNumerado) {
+      if (!listaAtual || listaAtual.tipo !== "ol") {
+        fecharLista();
+        listaAtual = { tipo: "ol", itens: [] };
+      }
+      listaAtual.itens.push(aplicarMarkdownInline(marcadorNumerado[1]));
+      continue;
+    }
+    fecharLista();
+
+    if (!linha) continue;
+    if (cabecalho) {
+      blocos.push(`<h4 class="ia-markdown-titulo">${aplicarMarkdownInline(cabecalho[2])}</h4>`);
+      continue;
+    }
+    blocos.push(`<p>${aplicarMarkdownInline(linha)}</p>`);
+  }
+  fecharLista();
+
+  return blocos.join("");
+}

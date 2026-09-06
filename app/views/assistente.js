@@ -1,4 +1,4 @@
-import { escapeHtml } from "../utils.js";
+import { escapeHtml, renderMarkdown } from "../utils.js";
 import { askAI, getAiEndpoint, setAiEndpoint } from "../ai.js";
 import { buscarContextoRelevante } from "../rag.js";
 
@@ -126,5 +126,6 @@ function renderMensagemSistema(container, texto) {
 function renderConteudoMensagem(autor, texto, { erro = false } = {}) {
   const rotulo = autor === "usuario" ? "Você" : autor === "sistema" ? "Sistema" : "IA";
   const aviso = autor === "ia" && !erro ? '<div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial.</div>' : "";
-  return `<div class="chat-msg__autor">${rotulo}</div><div class="chat-msg__texto">${escapeHtml(texto)}</div>${aviso}`;
+  const corpo = autor === "ia" && !erro ? renderMarkdown(texto) : `<p>${escapeHtml(texto)}</p>`;
+  return `<div class="chat-msg__autor">${rotulo}</div><div class="chat-msg__texto">${corpo}</div>${aviso}`;
 }
