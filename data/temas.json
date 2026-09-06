@@ -5010,5 +5010,338 @@
         "conteudo": "<span class=\"red-flag\">Cianose central que não melhora com oxigênio suplementar</span> em recém-nascido sugere cardiopatia congênita cianótica com shunt direita-esquerda fixo, diferente da cianose de causa respiratória, que tende a melhorar com oxigênio."
       }
     ]
+  },
+  {
+    "id": "depressao-maior",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Depressão Maior (Transtorno Depressivo Maior)",
+    "resumo": "Critérios diagnósticos do DSM-5, avaliação sistemática de risco de suicídio e tratamento farmacológico de primeira linha.",
+    "revisado": false,
+    "fonte": "DSM-5-TR — Manual Diagnóstico e Estatístico de Transtornos Mentais; Associação Brasileira de Psiquiatria — Diretrizes de Depressão",
+    "mnemonicos": [
+      {
+        "palavra": "SIG E CAPS",
+        "explicacao": "Mnemônico para os critérios de depressão maior: Sono alterado, Interesse reduzido (anedonia), culpa/Guilty, Energia baixa (fadiga), Concentração prejudicada, Apetite alterado, Psicomotor alterado, Suicídio (pensamentos de morte) — associado a humor deprimido."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Critérios diagnósticos",
+        "conteudo": "Humor deprimido e/ou anedonia (perda de interesse/prazer) por pelo menos 2 semanas, associados a pelo menos 5 sintomas do DSM-5 (alteração de peso/apetite, insônia/hipersonia, agitação/retardo psicomotor, fadiga, sentimento de inutilidade/culpa excessiva, dificuldade de concentração, pensamentos de morte/suicídio), causando prejuízo funcional significativo."
+      },
+      {
+        "titulo": "Avaliação de risco de suicídio",
+        "conteudo": "Deve ser sistemática em toda consulta de paciente deprimido. Perguntar diretamente sobre ideação, plano e acesso a meios NÃO aumenta o risco de suicídio (mito comum) e é essencial para estratificar a urgência da intervenção."
+      },
+      {
+        "titulo": "Tratamento farmacológico",
+        "conteudo": "Antidepressivos inibidores seletivos de recaptação de serotonina (ISRS) são primeira linha pelo perfil de segurança. O efeito terapêutico pleno geralmente leva 4-6 semanas, mesmo que efeitos colaterais apareçam antes. A manutenção do tratamento por pelo menos 6-12 meses após a remissão dos sintomas reduz o risco de recaída."
+      },
+      {
+        "titulo": "Tratamento não farmacológico",
+        "conteudo": "A psicoterapia (especialmente terapia cognitivo-comportamental) tem eficácia comparável à farmacoterapia em depressão leve a moderada, com efeito sinérgico quando combinada em casos moderados a graves. A eletroconvulsoterapia é reservada para depressão grave refratária, com sintomas psicóticos, ou risco de suicídio iminente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Ideação suicida com plano estruturado e acesso a meios letais</span> configura emergência psiquiátrica, exigindo avaliação da necessidade de internação e medidas de segurança imediatas."
+      }
+    ]
+  },
+  {
+    "id": "transtorno-bipolar",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Transtorno Afetivo Bipolar",
+    "resumo": "Diferenciação entre mania e hipomania, tipos I e II, e a base do tratamento com estabilizadores de humor.",
+    "revisado": false,
+    "fonte": "DSM-5-TR; Associação Brasileira de Psiquiatria — Diretrizes de Transtorno Bipolar",
+    "mnemonicos": [
+      {
+        "palavra": "DIGFAST",
+        "explicacao": "Mnemônico para os sintomas de mania: Distratibilidade, Indiscrição/Impulsividade (atividades de risco), Grandiosidade, Fuga de ideias, Aumento de atividade dirigida a objetivos, Sono (redução da necessidade), Talkativeness (loquacidade/fala acelerada)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Episódio maníaco",
+        "conteudo": "Humor elevado/expansivo/irritável por pelo menos 1 semana (ou qualquer duração se exigir hospitalização), associado a grandiosidade, redução da necessidade de sono, loquacidade, fuga de ideias, distratibilidade e envolvimento em atividades de risco (gastos excessivos, hipersexualidade) — causa prejuízo funcional acentuado."
+      },
+      {
+        "titulo": "Episódio hipomaníaco",
+        "conteudo": "Sintomas semelhantes à mania, porém de menor intensidade e duração mínima de 4 dias, SEM prejuízo funcional grave, sem necessidade de internação e sem sintomas psicóticos — caracteriza o transtorno bipolar tipo II quando associado a episódios depressivos."
+      },
+      {
+        "titulo": "Diferenciação Tipo I x Tipo II",
+        "conteudo": "Tipo I exige pelo menos um episódio maníaco (episódios depressivos são comuns, mas não obrigatórios para o diagnóstico). Tipo II exige pelo menos um episódio hipomaníaco E pelo menos um episódio depressivo maior, sem nunca ter apresentado um episódio maníaco completo."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Estabilizadores de humor (lítio, ácido valproico, carbamazepina) e antipsicóticos atípicos são a base do tratamento, tanto na fase aguda quanto na manutenção. Antidepressivos isolados, sem estabilizador associado, devem ser evitados pelo risco de precipitar viragem maníaca."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Mania com sintomas psicóticos ou risco de exaustão física</span> (por hiperatividade extrema e recusa alimentar/hídrica) pode exigir internação psiquiátrica involuntária para proteção do paciente."
+      }
+    ]
+  },
+  {
+    "id": "transtornos-ansiosos",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Transtornos Ansiosos: Pânico, Fobia Social e TAG",
+    "resumo": "Diferenciação clínica entre transtorno de pânico, fobia social e ansiedade generalizada, com tratamento de primeira linha.",
+    "revisado": false,
+    "fonte": "DSM-5-TR; Associação Brasileira de Psiquiatria — Diretrizes de Transtornos de Ansiedade",
+    "mnemonicos": [
+      {
+        "palavra": "Ataque de pânico pico em minutos",
+        "explicacao": "O ataque de pânico atinge sua intensidade máxima em poucos minutos (tipicamente 10 minutos) — essa evolução super rápida dos sintomas físicos intensos ajuda a diferenciá-lo de outras causas de ansiedade mais insidiosas."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Transtorno de pânico",
+        "conteudo": "Crises recorrentes e inesperadas de ansiedade intensa (ataques de pânico), com sintomas físicos abruptos (palpitações, sudorese, tremores, sensação de sufocamento, dor torácica, medo de morrer/perder o controle) que atingem pico em minutos. Frequentemente acompanhado de agorafobia (medo/esquiva de situações onde escapar seria difícil)."
+      },
+      {
+        "titulo": "Fobia social",
+        "conteudo": "Medo persistente e desproporcional de situações sociais de exposição/avaliação por outros (falar em público, comer em público), levando a esquiva significativa e sofrimento."
+      },
+      {
+        "titulo": "Transtorno de ansiedade generalizada (TAG)",
+        "conteudo": "Preocupação excessiva e incontrolável sobre múltiplos aspectos da vida cotidiana, presente na maioria dos dias por pelo menos 6 meses, associada a sintomas somáticos (tensão muscular, fadiga, irritabilidade, distúrbio do sono)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "ISRS e inibidores de recaptação de serotonina e noradrenalina (IRSN) são primeira linha farmacológica para todos os transtornos ansiosos. A terapia cognitivo-comportamental é altamente eficaz, especialmente com técnicas de exposição. Benzodiazepínicos têm papel apenas para alívio sintomático de curto prazo, pelo risco de dependência."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Sintomas físicos de um ataque de pânico (dor torácica, palpitações, dispneia) podem mimetizar condições clínicas graves (síndrome coronariana aguda, embolia pulmonar) — causas orgânicas devem ser razoavelmente excluídas antes de firmar o diagnóstico psiquiátrico, especialmente no primeiro episódio."
+      }
+    ]
+  },
+  {
+    "id": "toc",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Transtorno Obsessivo-Compulsivo (TOC)",
+    "resumo": "Relação entre obsessões e compulsões, graus de insight e tratamento com ISRS em doses mais altas.",
+    "revisado": false,
+    "fonte": "DSM-5-TR; Associação Brasileira de Psiquiatria — Diretrizes de TOC",
+    "mnemonicos": [
+      {
+        "palavra": "Obsessão pensa, Compulsão faz",
+        "explicacao": "Obsessão é o pensamento intrusivo indesejado que gera ansiedade; Compulsão é o comportamento repetitivo realizado para tentar aliviar essa ansiedade — entender essa relação de causa e efeito é a chave para reconhecer o TOC."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Obsessões",
+        "conteudo": "Pensamentos, impulsos ou imagens intrusivos, recorrentes e persistentes, que causam ansiedade/sofrimento significativo e que o paciente tenta ignorar ou neutralizar (geralmente com uma compulsão) — reconhecidos pelo paciente como produto de sua própria mente, diferente de um delírio."
+      },
+      {
+        "titulo": "Compulsões",
+        "conteudo": "Comportamentos repetitivos (lavar as mãos, verificar, organizar) ou atos mentais (contar, rezar) que o paciente se sente compelido a realizar em resposta a uma obsessão ou segundo regras rígidas, com objetivo de reduzir a ansiedade — mas sem conexão realista com o que pretendem neutralizar, ou claramente excessivos."
+      },
+      {
+        "titulo": "Insight",
+        "conteudo": "Varia de bom/razoável (o paciente reconhece que as crenças do TOC provavelmente não são verdadeiras) a ausente/delirante (convicção total de que as obsessões são verdadeiras) — o grau de insight influencia a abordagem terapêutica, mas não muda o diagnóstico central."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "ISRS em doses geralmente mais altas que as usadas para depressão, por período mais prolongado até resposta adequada. A terapia cognitivo-comportamental com técnica de exposição e prevenção de resposta é o tratamento psicoterápico com maior evidência de eficácia."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Rituais que consomem tempo significativo do dia (mais de 1h/dia) e causam prejuízo funcional acentuado indicam TOC moderado a grave, exigindo tratamento combinado (farmacológico + psicoterápico) mais intensivo."
+      }
+    ]
+  },
+  {
+    "id": "esquizofrenia-psicoses",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Esquizofrenia e Transtornos Psicóticos",
+    "resumo": "Sintomas positivos x negativos, critérios diagnósticos e diferenciação com quadros psicóticos de menor duração.",
+    "revisado": false,
+    "fonte": "DSM-5-TR; Associação Brasileira de Psiquiatria — Diretrizes de Esquizofrenia",
+    "mnemonicos": [
+      {
+        "palavra": "Positivo soma, Negativo subtrai",
+        "explicacao": "Sintomas POSITIVOS somam algo que não deveria estar lá (delírios, alucinações); sintomas NEGATIVOS subtraem algo que deveria estar presente (afeto, motivação, fala espontânea) — essa lógica ajuda a classificar rapidamente qualquer sintoma psicótico."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Sintomas positivos e negativos",
+        "conteudo": "Sintomas positivos (delírios, alucinações — mais comumente auditivas, discurso e comportamento desorganizados) representam um excesso/distorção da função normal. Sintomas negativos (embotamento afetivo, alogia, avolição, anedonia, isolamento social) representam uma perda/redução da função normal e são frequentemente mais incapacitantes a longo prazo."
+      },
+      {
+        "titulo": "Critérios diagnósticos",
+        "conteudo": "Pelo menos 2 sintomas característicos (delírios, alucinações, discurso desorganizado, comportamento grosseiramente desorganizado ou catatônico, sintomas negativos) por período significativo dentro de 1 mês, com sinais contínuos da perturbação persistindo por pelo menos 6 meses e prejuízo funcional significativo."
+      },
+      {
+        "titulo": "Diagnóstico diferencial",
+        "conteudo": "Transtorno esquizofreniforme (sintomas idênticos, porém com duração entre 1-6 meses), transtorno psicótico breve (menos de 1 mês, frequentemente com fator estressor identificável) e transtorno esquizoafetivo (sintomas psicóticos concomitantes a um episódio de humor proeminente)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Antipsicóticos são a base do tratamento, tanto na fase aguda (controle de sintomas positivos) quanto na manutenção (prevenção de recaída). Antipsicóticos de segunda geração (atípicos) têm menor incidência de sintomas extrapiramidais que os de primeira geração, mas maior risco de efeitos metabólicos (ganho de peso, dislipidemia, diabetes)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Primeiro episódio psicótico</span> exige investigação de causas orgânicas reversíveis (uso de substâncias, causas metabólicas/endócrinas, lesões estruturais do SNC) antes de assumir diagnóstico psiquiátrico primário, especialmente em apresentações atípicas ou de início muito abrupto."
+      }
+    ]
+  },
+  {
+    "id": "transtornos-uso-substancias",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Transtornos por Uso de Substâncias: Intoxicação e Abstinência",
+    "resumo": "Quadros de intoxicação e abstinência de álcool, opioides, cocaína e maconha/tabaco, e seus riscos relativos.",
+    "revisado": false,
+    "fonte": "DSM-5-TR; Associação Brasileira de Psiquiatria; Ministério da Saúde — Linha de Cuidado para Álcool e outras Drogas",
+    "mnemonicos": [
+      {
+        "palavra": "Álcool mata na abstinência, Opioide mata na intoxicação",
+        "explicacao": "A abstinência de álcool (e benzodiazepínicos) pode ser fatal (delirium tremens, convulsões). Já a intoxicação por opioides é que mata (depressão respiratória), enquanto a abstinência de opioides, por pior que pareça, raramente é fatal."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Álcool",
+        "conteudo": "Intoxicação aguda causa desinibição, incoordenação, fala pastosa e, em níveis elevados, depressão respiratória. A síndrome de abstinência alcoólica pode variar de tremores leves e ansiedade (6-24h após a última dose) a convulsões e delirium tremens (48-96h, com confusão, alucinações e hiperatividade autonômica grave — potencialmente fatal sem tratamento). Tratamento da abstinência com benzodiazepínicos em esquema decrescente."
+      },
+      {
+        "titulo": "Opioides",
+        "conteudo": "Intoxicação causa miose puntiforme, depressão respiratória e do nível de consciência — risco de óbito por parada respiratória, revertida com naloxona. A síndrome de abstinência é extremamente desconfortável, mas não fatal, cursando com midríase, lacrimejamento, rinorreia, piloereção, cólicas abdominais e diarreia."
+      },
+      {
+        "titulo": "Cocaína e estimulantes",
+        "conteudo": "Intoxicação causa euforia, agitação, midríase, taquicardia e hipertensão, com risco de complicações cardiovasculares graves (síndrome coronariana aguda, arritmias, AVC) mesmo em usuários jovens sem doença cardíaca prévia. A abstinência causa disforia, fadiga e aumento do apetite (\"crash\"), sem risco de vida significativo."
+      },
+      {
+        "titulo": "Maconha e tabaco",
+        "conteudo": "A intoxicação por maconha causa relaxamento, alteração da percepção do tempo, aumento do apetite e, em doses altas, ansiedade/sintomas psicóticos transitórios. A abstinência de nicotina causa irritabilidade, ansiedade, aumento do apetite e forte fissura (craving); o tratamento com terapia de reposição de nicotina e/ou bupropiona/vareniclina é eficaz para cessação."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Delirium tremens</span> (abstinência alcoólica grave, com confusão, hiperatividade autonômica e alucinações) tem mortalidade significativa sem tratamento adequado e exige internação com benzodiazepínicos em dose adequada."
+      }
+    ]
+  },
+  {
+    "id": "emergencias-psiquiatricas",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Emergências Psiquiátricas: Risco de Suicídio e Agitação Psicomotora",
+    "resumo": "Avaliação sistemática de risco de suicídio, indicações de internação e manejo inicial da agitação psicomotora.",
+    "revisado": false,
+    "fonte": "Associação Brasileira de Psiquiatria — Diretrizes de Manejo de Emergências Psiquiátricas; Ministério da Saúde — Diretrizes de Prevenção do Suicídio",
+    "mnemonicos": [
+      {
+        "palavra": "Perguntar não induz",
+        "explicacao": "Perguntar diretamente sobre ideação suicida, plano e acesso a meios NÃO aumenta o risco de suicídio — é um mito comum que atrapalha a avaliação adequada; a pergunta direta, feita com empatia, é parte essencial e segura da avaliação de risco."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Avaliação de risco de suicídio",
+        "conteudo": "Fatores de risco incluem tentativa prévia (o preditor isolado mais forte), transtorno mental não tratado, uso de substâncias, acesso a meios letais, isolamento social e eventos estressores recentes. A avaliação deve ser direta e sistemática — perguntar sobre ideação, plano e intenção não induz o comportamento suicida."
+      },
+      {
+        "titulo": "Indicação de internação psiquiátrica",
+        "conteudo": "Risco iminente de suicídio com plano estruturado e acesso a meios, incapacidade de garantir a própria segurança, ou sintomas psicóticos/maníacos graves com juízo crítico comprometido são indicações de internação, podendo ser involuntária quando o paciente não tem condições de consentir e há risco relevante."
+      },
+      {
+        "titulo": "Agitação psicomotora",
+        "conteudo": "A abordagem inicial prioriza técnicas de desescalonamento verbal e ambiente seguro antes de medidas coercitivas. Contenção física e/ou química (antipsicótico associado ou não a benzodiazepínico) é reservada para quando há risco iminente ao próprio paciente ou a terceiros, sempre pelo menor tempo necessário e com registro adequado."
+      },
+      {
+        "titulo": "Diagnóstico diferencial da agitação",
+        "conteudo": "Sempre considerar causas orgânicas potencialmente reversíveis (hipoglicemia, intoxicação/abstinência de substâncias, hipóxia, infecção, causas metabólicas) antes de atribuir a agitação exclusivamente a uma causa psiquiátrica primária, especialmente em pacientes sem diagnóstico psiquiátrico prévio conhecido."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Agitação psicomotora associada a rebaixamento flutuante do nível de consciência</span> sugere delirium de causa orgânica, não um quadro psiquiátrico primário — a investigação clínica deve preceder o tratamento puramente psiquiátrico."
+      }
+    ]
+  },
+  {
+    "id": "transtornos-alimentares",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Transtornos Alimentares: Anorexia e Bulimia Nervosa",
+    "resumo": "Diferenciação clínica pelo peso corporal e comportamento compensatório, e as complicações clínicas de cada quadro.",
+    "revisado": false,
+    "fonte": "DSM-5-TR; Associação Brasileira de Psiquiatria — Diretrizes de Transtornos Alimentares",
+    "mnemonicos": [
+      {
+        "palavra": "Anorexia restringe, Bulimia compensa",
+        "explicacao": "Na anorexia, o controle de peso vem principalmente da restrição alimentar contínua (baixo peso evidente). Na bulimia, há episódios de compulsão alimentar seguidos de comportamento compensatório (vômito, laxante) — e o peso costuma estar normal, o que pode atrasar o reconhecimento clínico."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Anorexia nervosa",
+        "conteudo": "Restrição alimentar persistente levando a peso corporal significativamente baixo, medo intenso de ganhar peso (ou comportamento persistente que interfere no ganho de peso), e perturbação da percepção do próprio peso/forma corporal. Subtipos restritivo e compulsão periódica/purgativo."
+      },
+      {
+        "titulo": "Bulimia nervosa",
+        "conteudo": "Episódios recorrentes de compulsão alimentar (ingestão de grande quantidade de comida em curto período, com sensação de perda de controle) seguidos de comportamentos compensatórios inadequados (vômitos autoinduzidos, uso indevido de laxantes/diuréticos, exercício excessivo, jejum). Ao contrário da anorexia, o peso corporal costuma estar na faixa normal ou próximo dela."
+      },
+      {
+        "titulo": "Complicações clínicas",
+        "conteudo": "Na bulimia: desequilíbrios hidroeletrolíticos (hipocalemia por vômitos/laxantes, com risco de arritmia), erosão do esmalte dentário e sinal de Russell (calos no dorso da mão, por indução de vômito). Na anorexia grave: bradicardia, hipotensão, amenorreia, osteoporose e risco de síndrome de realimentação."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Abordagem multiprofissional (psiquiátrica, nutricional, psicoterápica — especialmente terapia cognitivo-comportamental focada em transtornos alimentares) é essencial em ambos. Casos de anorexia com baixo peso grave/instabilidade clínica podem exigir internação hospitalar para estabilização e realimentação cuidadosa e gradual."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Bradicardia e hipotensão significativas em paciente com baixo peso importante</span> indicam risco clínico agudo na anorexia nervosa, exigindo avaliação da necessidade de internação para estabilização clínica antes do tratamento psiquiátrico ambulatorial."
+      }
+    ]
+  },
+  {
+    "id": "transtornos-somatoformes",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Transtornos Somatoformes (Transtorno de Sintomas Somáticos)",
+    "resumo": "Sintomas físicos genuínos sem explicação orgânica plena, transtorno conversivo e a abordagem clínica adequada.",
+    "revisado": false,
+    "fonte": "DSM-5-TR; Associação Brasileira de Psiquiatria",
+    "mnemonicos": [
+      {
+        "palavra": "O sintoma é real, mesmo sem lesão",
+        "explicacao": "Nos transtornos de sintomas somáticos e no transtorno conversivo, o sofrimento e o sintoma do paciente são genuínos e não voluntários — a ausência de uma lesão orgânica identificável não significa que o paciente esteja fingindo ou inventando."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição atual",
+        "conteudo": "O DSM-5 substituiu o termo \"transtornos somatoformes\" por \"transtorno de sintomas somáticos\" — caracterizado por um ou mais sintomas somáticos angustiantes ou que causam prejuízo funcional, associados a pensamentos, sentimentos ou comportamentos excessivos relacionados aos sintomas, não mais exigindo que o sintoma seja \"clinicamente inexplicável\" como no critério antigo."
+      },
+      {
+        "titulo": "Transtorno de ansiedade de doença",
+        "conteudo": "Antiga hipocondria: preocupação excessiva e persistente com ter ou adquirir uma doença grave, com pouco ou nenhum sintoma somático presente, e comportamentos excessivos de checagem de saúde ou, ao contrário, esquiva desadaptativa de cuidados médicos."
+      },
+      {
+        "titulo": "Transtorno conversivo",
+        "conteudo": "Transtorno neurológico funcional: sintomas neurológicos (motores ou sensoriais) incompatíveis com doença neurológica reconhecida ao exame clínico cuidadoso — o sintoma é real e não voluntário (diferente de simulação), mas sua origem não é uma lesão estrutural do sistema nervoso."
+      },
+      {
+        "titulo": "Abordagem clínica",
+        "conteudo": "Validar o sofrimento do paciente (o sintoma é genuíno, mesmo sem explicação orgânica plena), evitando tanto a investigação excessiva e repetida (que reforça o comportamento de doença) quanto a desqualificação da queixa. O encaminhamento a psicoterapia é o tratamento com melhor evidência, mantendo acompanhamento clínico regular."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Sintomas neurológicos focais novos, mesmo em paciente com diagnóstico prévio de transtorno conversivo, devem ser reavaliados clinicamente antes de serem automaticamente atribuídos à condição psiquiátrica de base, para não incorrer no erro de atribuição prematura."
+      }
+    ]
   }
 ]

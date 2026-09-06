@@ -23,6 +23,7 @@ export const AREA_POR_CATEGORIA = {
   Obstetrícia: "Ginecologia e Obstetrícia",
   Pediatria: "Pediatria",
   "Medicina Preventiva": "Medicina Preventiva",
+  Psiquiatria: "Saúde Mental",
 };
 
 export const ORDEM_AREAS = [
@@ -30,6 +31,7 @@ export const ORDEM_AREAS = [
   "Cirurgia Geral",
   "Ginecologia e Obstetrícia",
   "Pediatria",
+  "Saúde Mental",
   "Medicina Preventiva",
   "Outros",
 ];
