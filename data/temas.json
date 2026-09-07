@@ -5740,7 +5740,7 @@
     "titulo": "Aleitamento Materno e Alimentação Complementar",
     "resumo": "Recomendações de aleitamento exclusivo até 6 meses, introdução alimentar e contraindicações reais à amamentação.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Guia Alimentar para Crianças Brasileiras Menores de 2 Anos 2019; Sociedade Brasileira de Pediatria",
+    "fonte": "Sociedade Brasileira de Pediatria; Ministério da Saúde — Guia Alimentar para Crianças Brasileiras Menores de 2 Anos; OMS",
     "mnemonicos": [
       {
         "palavra": "6 meses exclusivo, 2 anos ou mais",
@@ -5749,24 +5749,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Recomendações de aleitamento materno",
-        "conteudo": "Aleitamento materno exclusivo até os 6 meses de vida (sem água, chás ou outros alimentos), com manutenção do aleitamento complementado por alimentos até os 2 anos ou mais. Benefícios incluem proteção imunológica, vínculo mãe-bebê e redução de morbimortalidade infantil."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O leite materno fornece composição nutricional dinamicamente adaptada às necessidades da criança ao longo do tempo (colostro rico em imunoglobulinas nos primeiros dias, leite maduro posteriormente), além de fatores imunológicos (IgA secretora, células de defesa) que protegem contra infecções gastrointestinais e respiratórias na fase de maior vulnerabilidade imunológica do lactente. A introdução alimentar antes dos 6 meses associa-se a maior risco de alergias alimentares, obesidade futura e interrupção precoce do aleitamento materno exclusivo."
       },
       {
-        "titulo": "Introdução da alimentação complementar",
-        "conteudo": "Iniciada aos 6 meses, com alimentos amassados/em pedaços, respeitando os sinais de fome e saciedade da criança (alimentação perceptiva). A introdução precoce e variada de alimentos potencialmente alergênicos (ovo, peixe, amendoim) é atualmente recomendada, associada a menor risco de alergia alimentar."
+        "titulo": "Quadro clínico",
+        "conteudo": "O aleitamento materno exclusivo (sem qualquer outro alimento ou líquido, incluindo água, exceto medicamentos/vitaminas quando prescritos) é recomendado até os 6 meses de vida, com manutenção do aleitamento complementado por alimentação sólida adequada até pelo menos os 2 anos ou mais, conforme desejo da díade mãe-bebê. Dificuldades comuns incluem ingurgitamento mamário, fissuras mamilares (geralmente por técnica de pega inadequada) e preocupação materna sobre produção láctea insuficiente, frequentemente superestimada."
       },
       {
-        "titulo": "Contraindicações ao aleitamento materno",
-        "conteudo": "Infecção materna por HIV (contraindicação absoluta no Brasil, onde há acesso a fórmula), uso de determinadas medicações incompatíveis com a amamentação e galactosemia clássica no lactente. A maioria das infecções maternas comuns (gripe, mastite tratada) NÃO contraindica a amamentação."
+        "titulo": "Exame físico",
+        "conteudo": "Avaliação da técnica de amamentação (pega correta, com boca bem aberta abocanhando grande parte da aréola, não apenas o mamilo) é essencial para identificar e corrigir causas comuns de dor mamária e de transferência inadequada de leite, que podem levar ao desmame precoce não desejado se não corrigidas a tempo."
       },
       {
-        "titulo": "Composição do leite materno",
-        "conteudo": "O colostro (dos primeiros dias, rico em imunoglobulinas, principalmente IgA secretora) evolui para o leite maduro. O leite materno tem composição dinâmica, que se adapta à idade e às necessidades da criança."
+        "titulo": "Diagnóstico",
+        "conteudo": "O ganho ponderal adequado e o número de eliminações (urina e fezes) são os principais parâmetros objetivos para avaliar se a amamentação está fornecendo volume suficiente de leite, mais confiáveis que a percepção subjetiva materna de \"pouco leite\", frequentemente equivocada. A curva de crescimento específica para lactentes amamentados (padrão de referência da OMS) deve ser utilizada para essa avaliação."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "A partir dos 6 meses, a alimentação complementar deve ser introduzida gradualmente, mantendo o aleitamento materno, com oferta de alimentos variados, em consistência apropriada à idade (papas amassadas inicialmente, progredindo em textura), evitando açúcar, sal em excesso, e alimentos ultraprocessados. Mel deve ser evitado antes de 1 ano pelo risco de botulismo infantil (esporos de Clostridium botulinum). Leite de vaca integral não deve ser oferecido como bebida principal antes de 1 ano, pela sobrecarga renal de solutos e risco de anemia ferropriva associada ao seu uso precoce."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Ganho de peso inadequado apesar de aleitamento materno referido como exclusivo</span> deve motivar avaliação técnica da pega e do posicionamento durante a mamada, antes de indicar suplementação desnecessária."
+        "conteudo": "Ganho ponderal insuficiente ou perda de peso significativa em lactente exclusivamente amamentado deve motivar avaliação detalhada da técnica de amamentação e da transferência efetiva de leite antes de assumir insuficiência láctea materna real, que é causa relativamente menos comum de baixo ganho ponderal do que problemas de técnica corrigíveis."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A recomendação de aleitamento materno exclusivo até os 6 meses (sem água, chás ou outros líquidos) e a contraindicação de mel antes de 1 ano (risco de botulismo) são cobranças certíssimas e extremamente recorrentes em provas de pediatria e saúde pública. A contraindicação de leite de vaca integral como bebida principal antes de 1 ano também é frequentemente exigida."
       }
     ]
   },
@@ -5777,7 +5785,7 @@
     "titulo": "Desnutrição Infantil e Deficiências Vitamínicas",
     "resumo": "Marasmo x kwashiorkor, avaliação antropométrica e principais deficiências de vitaminas A e D.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Manual de Atendimento da Criança com Desnutrição Grave; OMS — Management of Severe Acute Malnutrition",
+    "fonte": "Sociedade Brasileira de Pediatria; OMS — Manejo da Desnutrição Aguda Grave",
     "mnemonicos": [
       {
         "palavra": "Kwashiorkor incha, Marasmo emagrece",
@@ -5786,24 +5794,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação da desnutrição energético-proteica",
-        "conteudo": "Marasmo: deficiência calórica global, perda acentuada de gordura e massa muscular, criança emagrecida mas alerta. Kwashiorkor: deficiência predominantemente proteica, com edema, distensão abdominal, lesões cutâneas e cabelo quebradiço/despigmentado — o edema pode mascarar a perda de peso real."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A desnutrição energético-proteica grave manifesta-se em dois espectros clínicos principais: marasmo (deficiência calórica predominante, com perda intensa de massa muscular e gordura subcutânea, criança com aspecto \"envelhecido\" e emagrecido) e kwashiorkor (deficiência proteica predominante, com edema característico por hipoalbuminemia, apesar de reservas calóricas relativamente mais preservadas). Deficiências vitamínicas específicas causam síndromes clínicas características conforme a vitamina envolvida: vitamina A (xeroftalmia, cegueira noturna), vitamina D (raquitismo), vitamina C (escorbuto), tiamina/B1 (beribéri)."
       },
       {
-        "titulo": "Avaliação antropométrica",
-        "conteudo": "Os índices peso/idade, estatura/idade e peso/estatura (ou IMC/idade), comparados às curvas da OMS, classificam desnutrição aguda (peso/estatura baixo), crônica/atraso de crescimento (estatura/idade baixa) e desnutrição grave (escore z < -3)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Marasmo apresenta emagrecimento extremo, fácies senil, e irritabilidade, mas geralmente sem edema. Kwashiorkor apresenta edema (frequentemente iniciando em membros inferiores, podendo generalizar), lesões cutâneas características, alterações de cabelo (despigmentação, fácil desprendimento) e hepatomegalia por esteatose. Deficiência de vitamina A causa cegueira noturna progredindo para xeroftalmia; raquitismo (deficiência de vitamina D) causa deformidades ósseas (alargamento de punhos/tornozelos, pernas arqueadas) e atraso de crescimento."
       },
       {
-        "titulo": "Deficiência de vitamina A",
-        "conteudo": "Principal causa evitável de cegueira infantil no mundo (xeroftalmia), também associada a maior mortalidade por infecções. Suplementação de rotina em áreas de risco, conforme protocolo do Ministério da Saúde."
+        "titulo": "Exame físico",
+        "conteudo": "Antropometria com índices peso/altura, altura/idade e peso/idade comparados a curvas de referência confirma e classifica a gravidade da desnutrição (moderada ou grave). Edema simétrico de membros inferiores em criança desnutrida confirma kwashiorkor, mesmo com peso aparentemente menos comprometido pelo próprio edema mascarando parcialmente a perda de massa magra."
       },
       {
-        "titulo": "Deficiência de vitamina D",
-        "conteudo": "Associada a raquitismo (deformidades ósseas, atraso na fusão de fontanelas, alargamento de punhos/tornozelos). Prevenção com exposição solar adequada e suplementação em grupos de risco (prematuros, aleitamento exclusivo prolongado sem suplementação)."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico e a classificação de gravidade da desnutrição aguda seguem critérios antropométricos padronizados (escore-z de peso/altura, circunferência do braço). Investigação de deficiências vitamínicas específicas é guiada pelo quadro clínico sugestivo, complementada por dosagens séricas específicas quando disponíveis e indicadas."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "A realimentação de desnutrição grave deve ser cuidadosa e gradual, pelo risco de síndrome de realimentação (distúrbios eletrolíticos graves, especialmente hipofosfatemia, ao reintroduzir nutrição após período de jejum/desnutrição prolongada) — o protocolo da OMS preconiza fases estabilizadora, de transição e de reabilitação, com introdução calórica progressiva e cuidadosa. Correção de deficiências de micronutrientes específicas (vitamina A, zinco, ferro) é parte integrante do protocolo de reabilitação nutricional."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Síndrome de realimentação</span> (distúrbios eletrolíticos graves, especialmente hipofosfatemia) pode ocorrer quando a reposição nutricional em criança gravemente desnutrida é feita de forma agressiva e rápida demais — a reintrodução calórica deve ser gradual e monitorada."
+        "conteudo": "<span class=\"red-flag\">Realimentação muito rápida e agressiva em criança com desnutrição grave</span> pode precipitar síndrome de realimentação, com hipofosfatemia grave, arritmias e insuficiência cardíaca — a reintrodução calórica deve ser sempre gradual e cuidadosamente monitorizada nesse contexto de vulnerabilidade metabólica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre marasmo (deficiência calórica, sem edema) e kwashiorkor (deficiência proteica, com edema característico) é cobrança certa e recorrente. O risco de síndrome de realimentação ao reintroduzir nutrição de forma muito rápida em desnutrição grave também é frequentemente exigido, exigindo abordagem gradual e protocolo específico."
       }
     ]
   },
@@ -5814,7 +5830,7 @@
     "titulo": "Crupe (Laringotraqueíte Viral Aguda)",
     "resumo": "Tosse metálica e estridor por edema subglótico viral, escore de Westley e tratamento com corticoide.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria — Documento Científico sobre Laringite/Crupe; AAP Clinical Practice Guideline",
+    "fonte": "Sociedade Brasileira de Pediatria; AAP Clinical Practice Guideline for Croup",
     "mnemonicos": [
       {
         "palavra": "Tosse de cachorro",
@@ -5823,24 +5839,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia e epidemiologia",
-        "conteudo": "Causada predominantemente por vírus parainfluenza, mais comum entre 6 meses e 3 anos de idade, com pico de incidência no outono/inverno. Causa edema inflamatório da região subglótica."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O crupe (laringotraqueíte viral aguda) é causado predominantemente pelo vírus parainfluenza, causando inflamação e edema da região subglótica — área naturalmente mais estreita nas crianças pequenas, o que explica a maior suscetibilidade dessa faixa etária (tipicamente entre 6 meses e 3 anos) a obstrução respiratória significativa mesmo com graus de inflamação que seriam clinicamente irrelevantes em vias aéreas mais calibrosas de crianças maiores ou adultos."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Tosse metálica (\"tosse de cachorro\"), rouquidão, estridor inspiratório e desconforto respiratório de intensidade variável, geralmente precedidos por sintomas de infecção de vias aéreas superiores. Tipicamente piora à noite."
+        "conteudo": "Tosse metálica/\"tosse de cachorro\" (característica e praticamente diagnóstica), estridor inspiratório e rouquidão, geralmente precedidos por sintomas de infecção de vias aéreas superiores, com piora tipicamente noturna e frequentemente com melhora parcial ao ar frio/úmido — padrão que os pais costumam relatar espontaneamente e que reforça a suspeita diagnóstica."
       },
       {
-        "titulo": "Classificação de gravidade",
-        "conteudo": "O escore de Westley (baseado em estridor, retração, entrada de ar, cianose e nível de consciência) orienta a intensidade do tratamento: leve (estridor apenas com agitação), moderado (estridor em repouso) e grave (estridor em repouso com desconforto respiratório importante)."
+        "titulo": "Exame físico",
+        "conteudo": "Estridor inspiratório (mais audível em repouso quanto mais grave o quadro) e retração de fúrcula/subcostal graduam a gravidade clínica. A agitação da criança pode piorar transitoriamente o estridor e o desconforto respiratório, portanto a criança deve ser mantida o mais calma possível durante a avaliação, preferencialmente no colo do cuidador, para não superestimar a gravidade real por agitação induzida pelo próprio exame."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é clínico, baseado no quadro característico (tosse metálica, estridor, rouquidão), sem necessidade de exames de imagem de rotina. Radiografia cervical, quando realizada por dúvida diagnóstica, pode mostrar o \"sinal da torre\" (estreitamento subglótico), mas não é necessária nem recomendada rotineiramente para o diagnóstico e manejo dos casos típicos."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Corticoide (dexametasona, dose única) para todos os graus de gravidade, reduzindo a necessidade de outras intervenções. Nebulização com adrenalina racêmica é reservada para os casos moderados a graves, com necessidade de observação após seu uso pelo risco de efeito rebote."
+        "conteudo": "Corticoide (dexametasona, dose única) é o tratamento de escolha mesmo em casos leves, reduzindo a duração e a gravidade dos sintomas de forma comprovada. Casos moderados a graves (estridor em repouso) recebem adicionalmente epinefrina nebulizada, que reduz rapidamente o edema de mucosa por efeito vasoconstritor local — seu efeito é transitório (poucas horas), exigindo período de observação após a administração pelo risco de efeito rebote quando o efeito da droga cessa."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Estridor em repouso associado a esforço respiratório importante ou alteração do nível de consciência</span> indica crupe grave, com risco de obstrução de via aérea — exige tratamento imediato e monitorização rigorosa."
+        "conteudo": "<span class=\"red-flag\">Estridor em repouso associado a sinais de esforço respiratório importante ou cianose</span> indica crupe grave, exigindo epinefrina nebulizada e observação hospitalar prolongada (pelo menos 2-4 horas após a última dose, pelo risco de efeito rebote quando o efeito vasoconstritor cessa)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tosse metálica/\"de cachorro\" como achado quase patognomônico do crupe é cobrança certa. O corticoide (dexametasona) mesmo em casos leves, e a epinefrina nebulizada com necessidade de observação pós-administração pelo risco de efeito rebote, também são frequentemente exigidos em questões de conduta terapêutica."
       }
     ]
   },
@@ -5851,7 +5875,7 @@
     "titulo": "Convulsão Febril",
     "resumo": "Diferenciação entre convulsão febril simples e complexa, e critérios para investigação adicional.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria — Documento Científico sobre Convulsão Febril; AAP Clinical Practice Guideline for Febrile Seizures",
+    "fonte": "Sociedade Brasileira de Pediatria; AAP Clinical Practice Guideline on Febrile Seizures",
     "mnemonicos": [
       {
         "palavra": "Simples: generalizada, curta, única",
@@ -5860,24 +5884,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e classificação",
-        "conteudo": "Crise convulsiva associada a febre, em criança entre 6 meses e 5 anos, na ausência de infecção do sistema nervoso central ou outra causa neurológica definida. Classificada em simples (generalizada, duração menor que 15 minutos, sem recorrência em 24h) e complexa (focal, duração maior que 15 minutos, ou recorrência em 24h)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A convulsão febril ocorre em crianças entre 6 meses e 5 anos, tipicamente associada à elevação rápida da temperatura corporal (mais do que ao valor absoluto da febre), na ausência de infecção do sistema nervoso central ou outra causa neurológica identificável. Classifica-se em simples (generalizada, duração menor que 15 minutos, não recorrente em 24 horas, a grande maioria dos casos, com excelente prognóstico neurológico) ou complexa (focal, duração maior que 15 minutos, ou recorrente no mesmo episódio febril, com necessidade de investigação mais cuidadosa)."
       },
       {
-        "titulo": "Investigação",
-        "conteudo": "Convulsão febril simples em criança com bom estado geral após o episódio geralmente NÃO necessita de exames complementares extensos (incluindo punção lombar de rotina), especialmente após vacinação adequada contra Haemophilus influenzae tipo B e pneumococo. Convulsão febril complexa ou sinais de alarme associados ampliam a necessidade de investigação."
+        "titulo": "Quadro clínico",
+        "conteudo": "Convulsão tônico-clônica generalizada de curta duração, associada a febre (geralmente já presente ou surgindo nas horas seguintes à crise), em criança pequena sem outros sinais neurológicos. O estado pós-ictal é geralmente breve na convulsão febril simples, com retorno relativamente rápido ao estado de consciência basal da criança."
       },
       {
-        "titulo": "Punção lombar",
-        "conteudo": "Deve ser considerada em lactentes menores de 12 meses com sinais clínicos sugestivos de meningite, estado vacinal incompleto, uso prévio de antibiótico (que pode mascarar sinais meníngeos) ou quando o exame clínico não é tranquilizador."
+        "titulo": "Exame físico",
+        "conteudo": "O exame neurológico deve ser completamente normal fora do episódio convulsivo na convulsão febril simples — qualquer achado neurológico focal residual ou persistente deve motivar investigação adicional, já que não é esperado nessa condição benigna quando verdadeiramente simples."
       },
       {
-        "titulo": "Prognóstico e conduta",
-        "conteudo": "A convulsão febril simples tem excelente prognóstico neurológico, com risco de epilepsia futura apenas discretamente maior que a população geral. A orientação aos pais sobre medidas de controle da febre e o que fazer numa crise é o pilar do manejo — anticonvulsivante profilático contínuo NÃO é recomendado rotineiramente."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é clínico. Punção lombar não é recomendada rotineiramente em convulsão febril simples com exame neurológico normal e sem sinais de irritação meníngea, sendo reservada a lactentes muito pequenos (especialmente abaixo de 12 meses, faixa em que os sinais clássicos de meningite podem estar ausentes ou serem mais difíceis de identificar), convulsão complexa, ou sinais clínicos sugestivos de infecção do sistema nervoso central associados. Eletroencefalograma e neuroimagem não são indicados rotineiramente na convulsão febril simples."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O manejo agudo é de suporte (posicionamento seguro, controle da via aérea se necessário), com a maioria das crises cessando espontaneamente antes mesmo de intervenção medicamentosa. Antitérmico trata o desconforto da febre, mas não previne comprovadamente a recorrência de convulsão febril em episódios futuros. Anticonvulsivante profilático de manutenção não é recomendado rotineiramente para prevenção de convulsão febril simples recorrente, dado o excelente prognóstico natural e os riscos/efeitos colaterais que superariam o benefício."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Crise convulsiva focal, prolongada (maior que 15 minutos) ou com recorrência no mesmo episódio febril</span> caracteriza convulsão febril complexa e exige investigação adicional, diferente da abordagem mais conservadora da convulsão febril simples."
+        "conteudo": "Convulsão febril complexa (focal, prolongada, ou recorrente no mesmo episódio febril), ou qualquer sinal de irritação meníngea/alteração persistente do exame neurológico, exige investigação mais aprofundada (incluindo consideração de punção lombar) para exclusão de infecção do sistema nervoso central como causa subjacente, diferente da simples abordagem tranquilizadora da convulsão febril típica simples."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre convulsão febril simples (benigna, sem necessidade de investigação extensa) e complexa (exige investigação) é cobrança certíssima e recorrente. A não recomendação rotineira de punção lombar em convulsão febril simples com exame normal (exceto em lactentes muito jovens) e a ausência de indicação de anticonvulsivante profilático de manutenção também são frequentemente exigidas, testando resistência a condutas excessivamente intervencionistas."
       }
     ]
   },
@@ -5888,7 +5920,7 @@
     "titulo": "Maus-Tratos Infantis: Reconhecimento e Notificação",
     "resumo": "Sinais de alerta ao exame físico, síndrome do bebê sacudido e o dever de notificação compulsória mesmo diante de suspeita.",
     "revisado": false,
-    "fonte": "Estatuto da Criança e do Adolescente (Lei 8.069/1990); Sociedade Brasileira de Pediatria — Guia de Atuação frente a Maus-tratos na Infância e Adolescência",
+    "fonte": "Sociedade Brasileira de Pediatria; Estatuto da Criança e do Adolescente (ECA); Ministério da Saúde — Linha de Cuidado para Atenção Integral à Saúde de Crianças, Adolescentes e suas Famílias em Situação de Violências",
     "mnemonicos": [
       {
         "palavra": "Suspeitou, notificou",
@@ -5897,24 +5929,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Tipos de maus-tratos",
-        "conteudo": "Físicos (lesões inconsistentes com a história relatada ou com o estágio de desenvolvimento da criança), negligência (a forma mais prevalente, envolvendo omissão de cuidados básicos), abuso sexual e violência psicológica — frequentemente coexistem."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Os maus-tratos infantis abrangem violência física, sexual, psicológica e negligência, com o abuso físico frequentemente resultando em padrões lesionais característicos quando causados intencionalmente, diferentes dos padrões esperados em traumas acidentais. O reconhecimento precoce depende do conhecimento médico sobre quais achados são consistentes com trauma acidental típico da idade de desenvolvimento da criança e quais são incompatíveis, levantando suspeita de causa não acidental."
       },
       {
-        "titulo": "Sinais de alerta ao exame físico",
-        "conteudo": "Lesões em diferentes estágios de cicatrização, localização atípica (tronco, orelhas, região posterior do corpo), padrões que reproduzem o formato do objeto agressor, fraturas em criança não deambulante, e discrepância entre a gravidade da lesão e o mecanismo relatado pelos cuidadores."
+        "titulo": "Quadro clínico",
+        "conteudo": "Lesões incompatíveis com o estágio de desenvolvimento motor da criança (por exemplo, fratura em lactente que ainda não deambula, sem mecanismo traumático adequado relatado), história incompatível ou inconsistente com o padrão de lesão observado, atraso na busca por atendimento médico, e histórias que mudam a cada relato são elementos que devem levantar forte suspeita de maus-tratos."
       },
       {
-        "titulo": "Síndrome do bebê sacudido",
-        "conteudo": "Hemorragias intracranianas (frequentemente subdurais) e hemorragias retinianas em lactente, sem trauma externo evidente, associadas a sacudidas violentas. Pode se apresentar apenas com irritabilidade, vômitos ou letargia inespecíficos, retardando o diagnóstico."
+        "titulo": "Exame físico",
+        "conteudo": "Fraturas em diferentes estágios de consolidação (sugerindo múltiplos episódios traumáticos em momentos distintos), fraturas metafisárias em \"alça de balde\" (bastante específicas de trauma não acidental por mecanismo de tração/torção), equimoses em locais incomuns para trauma acidental (orelhas, pescoço, região genital, dorso), e queimaduras com padrão bem delimitado (sugerindo imersão forçada, por exemplo) são achados de alerta que devem ser ativamente reconhecidos pelo examinador."
       },
       {
-        "titulo": "Notificação compulsória",
-        "conteudo": "Obrigatória a todo profissional de saúde diante de suspeita — não exige certeza absoluta — de maus-tratos contra criança ou adolescente, independentemente do consentimento da família, conforme o Estatuto da Criança e do Adolescente (ECA). A notificação visa proteção, não é uma acusação penal."
+        "titulo": "Diagnóstico",
+        "conteudo": "A investigação de suspeita de maus-tratos combina exame físico minucioso e documentado, radiografia esquelética completa em lactentes/crianças pequenas com suspeita (buscando fraturas em diferentes estágios de consolidação não relatadas), e avaliação interdisciplinar (assistência social, psicologia) quando disponível. A síndrome do bebê sacudido (shaken baby syndrome) é diagnosticada pela tríade de hemorragia subdural, hemorragias retinianas e encefalopatia, na ausência de trauma acidental que explique tal combinação de achados."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Diante de suspeita fundamentada de maus-tratos, a notificação compulsória ao Conselho Tutelar é obrigatória por lei (Estatuto da Criança e do Adolescente), independentemente de confirmação diagnóstica completa — a notificação de suspeita razoável é dever legal do profissional de saúde, não uma opção discricionária, e não constitui quebra de sigilo médico ou calúnia quando feita de boa-fé. O tratamento das lesões físicas segue os princípios habituais de cada lesão específica, associado ao acionamento da rede de proteção social."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Fratura em criança que ainda não deambula</span>, sem mecanismo de trauma plausível relatado, deve levantar suspeita imediata de maus-tratos e motivar avaliação multidisciplinar e notificação."
+        "conteudo": "<span class=\"red-flag\">Fratura em lactente pré-deambulador sem mecanismo traumático adequado relatado, ou lesões em múltiplos estágios de cicatrização</span> exige notificação obrigatória de suspeita de maus-tratos ao Conselho Tutelar, independentemente de confirmação definitiva — a obrigação legal de notificar recai sobre a suspeita razoável, não sobre a certeza diagnóstica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A obrigatoriedade legal de notificação ao Conselho Tutelar diante de suspeita razoável de maus-tratos (não exigindo certeza diagnóstica) é cobrança certíssima e um dos temas éticos/legais mais importantes de toda a pediatria em provas de residência. Os achados de exame físico específicos para trauma não acidental (fraturas em alça de balde, lesões em múltiplos estágios, padrões incompatíveis com desenvolvimento motor) também são frequentemente exigidos."
       }
     ]
   },
@@ -5925,7 +5965,7 @@
     "titulo": "Cardiopatias Congênitas Mais Comuns",
     "resumo": "Cardiopatias acianóticas x cianóticas, tetralogia de Fallot e o teste do coraçãozinho na triagem neonatal.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia e Sociedade Brasileira de Pediatria — Diretriz de Triagem Neonatal Cardiológica; Ministério da Saúde",
+    "fonte": "Sociedade Brasileira de Cardiologia; Sociedade Brasileira de Pediatria",
     "mnemonicos": [
       {
         "palavra": "Teste do coraçãozinho",
@@ -5934,24 +5974,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação geral",
-        "conteudo": "Cardiopatias acianóticas, com shunt esquerda-direita (ex.: comunicação interventricular — a mais comum de todas, comunicação interatrial, persistência do canal arterial) x cianóticas, com shunt direita-esquerda ou mistura (ex.: tetralogia de Fallot — a cardiopatia cianótica mais comum após o período neonatal imediato, transposição de grandes artérias)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As cardiopatias congênitas são classificadas em acianóticas (com shunt esquerda-direita, como comunicação interventricular, comunicação interatrial e persistência do canal arterial — as mais comuns em geral) e cianóticas (com shunt direita-esquerda ou mistura de sangue, como tetralogia de Fallot e transposição dos grandes vasos). A tetralogia de Fallot é a cardiopatia cianótica mais comum após o período neonatal imediato, combinando comunicação interventricular, obstrução da via de saída do ventrículo direito, cavalgamento da aorta e hipertrofia ventricular direita."
       },
       {
-        "titulo": "Comunicação interventricular (CIV)",
-        "conteudo": "Defeitos pequenos frequentemente fecham espontaneamente. Defeitos grandes causam sobrecarga de volume pulmonar, podendo evoluir para hipertensão pulmonar e síndrome de Eisenmenger (inversão do shunt) se não corrigidos a tempo."
+        "titulo": "Quadro clínico",
+        "conteudo": "Cardiopatias acianóticas com shunt esquerda-direita significativo manifestam-se com sinais de insuficiência cardíaca (taquipneia, dificuldade de ganho ponderal, sudorese às mamadas) e infecções respiratórias de repetição pelo hiperfluxo pulmonar. Cardiopatias cianóticas manifestam-se com cianose central desde os primeiros dias/semanas de vida; na tetralogia de Fallot, crises hipoxêmicas (\"crises de cianose\", com piora súbita da cianose associada a irritabilidade e hiperpneia, tipicamente desencadeadas por choro, alimentação ou defecação) são complicação característica e potencialmente grave."
       },
       {
-        "titulo": "Tetralogia de Fallot",
-        "conteudo": "Associa estenose pulmonar, CIV, dextroposição da aorta e hipertrofia de ventrículo direito. Crises de hipoxemia (\"crises de cianose/hipóxia\") podem ser desencadeadas por choro ou esforço, aliviadas pela posição genupeitoral, que aumenta a resistência vascular sistêmica e reduz o shunt direita-esquerda."
+        "titulo": "Exame físico",
+        "conteudo": "Sopros cardíacos específicos orientam a suspeita de cada cardiopatia (sopro sistólico em foco pulmonar com desdobramento fixo de B2 na comunicação interatrial; sopro holossistólico em bordo esternal esquerdo baixo na comunicação interventricular; sopro contínuo \"em maquinaria\" na persistência do canal arterial). Cianose central (evidente em mucosas, não apenas extremidades) associada a baqueteamento digital em criança mais velha sugere cardiopatia cianótica de longa data não corrigida."
       },
       {
-        "titulo": "Triagem neonatal",
-        "conteudo": "O teste do coraçãozinho (oximetria de pulso em membro superior direito e um dos membros inferiores, antes da alta hospitalar) rastreia cardiopatias congênitas críticas dependentes de canal arterial, que podem estar assintomáticas ao nascimento e descompensar após o fechamento fisiológico do canal."
+        "titulo": "Diagnóstico",
+        "conteudo": "O ecocardiograma é o exame padrão-ouro, definindo com precisão a anatomia cardíaca e a fisiologia do shunt/obstrução. O teste do coraçãozinho (oximetria de pulso pré e pós-ductal, realizado rotineiramente antes da alta da maternidade) é ferramenta de triagem neonatal que identifica precocemente cardiopatias congênitas críticas com hipoxemia significativa, mesmo antes do surgimento de sintomas clínicos evidentes."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Cardiopatias com shunt esquerda-direita significativo geralmente requerem correção cirúrgica eletiva conforme o grau de repercussão hemodinâmica; defeitos pequenos podem fechar espontaneamente (mais comum na comunicação interventricular pequena) ou ser acompanhados clinicamente. Cardiopatias cianóticas graves dependentes do canal arterial para sobrevida (fluxo pulmonar ou sistêmico dependente da patência ductal) requerem infusão de prostaglandina E1 para manter o canal arterial pérvio até a correção cirúrgica definitiva — suspender essa infusão nesses casos pode ser fatal. Crise hipoxêmica na tetralogia de Fallot é tratada com posição genupeitoral (aumenta a resistência vascular sistêmica, reduzindo o shunt direita-esquerda), oxigênio e, se necessário, morfina/betabloqueador."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Cianose central que não melhora com oxigênio suplementar</span> em recém-nascido sugere cardiopatia congênita cianótica com shunt direita-esquerda fixo, diferente da cianose de causa respiratória, que tende a melhorar com oxigênio."
+        "conteudo": "<span class=\"red-flag\">Cianose central em recém-nascido, ou crise hipoxêmica em criança com tetralogia de Fallot conhecida</span> exige reconhecimento e conduta imediatos — em cardiopatias canal-dependentes, a suspeita deve motivar avaliação urgente para eventual necessidade de prostaglandina E1, cuja suspensão inadvertida pode levar a colapso hemodinâmico fatal."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O teste do coraçãozinho como triagem neonatal obrigatória para cardiopatias congênitas críticas é cobrança certíssima em provas de pediatria e saúde pública brasileiras. A manobra genupeitoral para crise hipoxêmica da tetralogia de Fallot e o papel da prostaglandina E1 em manter a patência do canal arterial em cardiopatias canal-dependentes também são frequentemente exigidos."
       }
     ]
   },
@@ -8767,24 +8815,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e epidemiologia",
-        "conteudo": "Vasculite aguda sistêmica que acomete predominantemente vasos de médio calibre, mais comum em crianças menores de 5 anos, sendo a principal causa de cardiopatia adquirida na infância em países desenvolvidos."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença de Kawasaki é uma vasculite aguda sistêmica de etiologia não completamente esclarecida (provavelmente resposta imune exacerbada a gatilho infeccioso em criança geneticamente predisposta), acometendo predominantemente vasos de médio calibre, com as artérias coronárias sendo o alvo de maior relevância clínica — a inflamação da parede arterial coronariana pode levar à formação de aneurismas, com risco de trombose, estenose e infarto do miocárdio mesmo em crianças, tornando essa a principal causa de cardiopatia adquirida na infância em países desenvolvidos."
       },
       {
-        "titulo": "Critérios diagnósticos",
-        "conteudo": "Febre alta por 5 dias ou mais, associada a pelo menos 4 de: conjuntivite bilateral não purulenta, alterações de mucosa oral (lábios fissurados, língua em framboesa), exantema polimorfo, alterações de extremidades e linfadenopatia cervical (geralmente unilateral, maior que 1,5cm)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Febre alta persistente por 5 dias ou mais, refratária a antitérmicos comuns, associada a pelo menos 4 dos 5 critérios clássicos: conjuntivite bilateral não purulenta, alterações de mucosa oral (lábios fissurados e hiperemiados, língua em framboesa), exantema polimorfo, alterações de extremidades (edema/eritema de mãos e pés na fase aguda, descamação periungueal na fase subaguda) e linfadenopatia cervical (tipicamente unilateral, maior que 1,5cm). Formas incompletas (sem preencher todos os critérios) são particularmente desafiadoras e comuns em lactentes, exigindo alto índice de suspeição."
       },
       {
-        "titulo": "Complicação cardíaca",
-        "conteudo": "Aneurismas de artérias coronárias são a complicação mais temida, com risco de trombose, infarto do miocárdio e morte súbita mesmo em crianças. Ecocardiograma deve ser realizado ao diagnóstico e repetido no seguimento."
+        "titulo": "Exame físico",
+        "conteudo": "A combinação de febre prolongada com conjuntivite não purulenta, alterações de mucosa oral (língua em framboesa, lábios fissurados) e alterações de extremidades é o achado semiológico central para suspeita diagnóstica. Irritabilidade acentuada e desproporcional ao grau de febre é achado clínico sutil, porém característico e frequentemente relatado pelos cuidadores."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é clínico, baseado nos critérios descritos, sem exame laboratorial confirmatório específico — exames inespecíficos (elevação de provas inflamatórias, plaquetose que surge tipicamente na segunda semana da doença) apoiam a suspeita clínica. Ecocardiograma deve ser realizado ao diagnóstico e repetido no seguimento (tipicamente 1-2 semanas e 6-8 semanas após o início da doença) para monitorização de aneurismas coronarianos, mesmo em casos tratados precocemente."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Imunoglobulina intravenosa em dose única, associada a AAS em dose alta na fase aguda, idealmente iniciada até o 10º dia de doença para reduzir significativamente o risco de aneurismas coronarianos."
+        "conteudo": "Imunoglobulina intravenosa em dose única, associada a ácido acetilsalicílico em dose alta na fase aguda (com redução para dose antiplaquetária após defervescência), é o tratamento padrão, idealmente iniciado até o 10º dia de doença — o tratamento precoce reduz drasticamente (de aproximadamente 25% para menos de 5%) o risco de desenvolvimento de aneurismas coronarianos. Casos refratários à primeira dose de imunoglobulina (persistência ou recorrência da febre) podem necessitar de segunda dose ou corticoide adjuvante."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Febre prolongada (5 dias ou mais) associada a conjuntivite, alterações de mucosa e extremidades</span> em criança pequena deve levantar suspeita de Kawasaki — o tratamento precoce é essencial para prevenir dano coronariano permanente."
+        "conteudo": "<span class=\"red-flag\">Febre prolongada (5 dias ou mais) associada a conjuntivite, alterações de mucosa oral e de extremidades</span> em criança pequena deve levantar suspeita imediata de doença de Kawasaki, mesmo em apresentações incompletas — o tratamento precoce (até o 10º dia) é determinante para prevenir dano coronariano permanente, tornando o atraso diagnóstico particularmente prejudicial nessa condição."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os 5 critérios clínicos (conjuntivite, mucosa oral, exantema, extremidades, linfadenopatia) associados a febre por 5+ dias, e a necessidade de tratamento até o 10º dia para reduzir risco de aneurisma coronariano, são cobranças certíssimas e recorrentes. A doença de Kawasaki como principal causa de cardiopatia adquirida na infância em países desenvolvidos também é frequentemente exigida."
       }
     ]
   },
@@ -8804,24 +8860,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e epidemiologia",
-        "conteudo": "Telescopagem de um segmento intestinal proximal para dentro do segmento distal adjacente. Causa mais comum de obstrução intestinal em lactentes entre 6 meses e 2 anos, na maioria dos casos idiopática nessa faixa etária."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A invaginação intestinal ocorre quando um segmento intestinal proximal telescopa para dentro do segmento distal adjacente (mais comumente na região ileocecal), comprometendo progressivamente a drenagem venosa/linfática e depois o suprimento arterial da alça invaginada, podendo evoluir para necrose isquêmica e perfuração se não reduzida a tempo. É a causa mais comum de obstrução intestinal em lactentes entre 6 meses e 2 anos, na maioria dos casos idiopática nessa faixa etária (sem lesão anatômica identificável como ponto de partida, diferente de crianças maiores, onde um ponto anatômico específico — como divertículo de Meckel ou pólipo — é mais frequentemente encontrado)."
       },
       {
-        "titulo": "Quadro clínico clássico",
-        "conteudo": "Dor abdominal em cólica súbita e intermitente, massa abdominal palpável (formato de \"salsicha\", frequentemente em quadrante superior direito) e fezes em \"geleia de framboesa\" (sangue e muco) — este último um sinal tardio."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor abdominal em cólica súbita e intermitente, com períodos de choro intenso intercalados com períodos de aparente normalidade (padrão paroxístico característico), associada a massa abdominal palpável (formato de \"salsicha\", frequentemente em quadrante superior direito) e fezes em \"geleia de framboesa\" (sangue e muco) — este último um sinal tardio e não deve ser aguardado para levantar a suspeita diagnóstica."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Massa abdominal alongada, palpável em quadrante superior direito ou ao longo do trajeto do cólon, é achado característico embora nem sempre presente ou facilmente palpável. Letargia entre as crises de dor, mesmo sem os sinais clássicos completos, pode ser a única manifestação em lactentes muito pequenos, exigindo alto índice de suspeição diante de irritabilidade paroxística inexplicada."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Ultrassonografia abdominal é o exame de escolha, mostrando a imagem característica em \"alvo\" ou \"donut\" no corte transversal."
+        "conteudo": "A ultrassonografia abdominal é o exame de escolha, mostrando a imagem característica em \"alvo\" ou \"donut\" no corte transversal do segmento invaginado, com sensibilidade e especificidade muito altas, praticamente eliminando a necessidade de outros exames de imagem para confirmação diagnóstica na maioria dos serviços."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Redução por enema (hidrostático ou pneumático) é o tratamento de escolha na ausência de sinais de perfuração/peritonite, com alta taxa de sucesso. Cirurgia reservada para falha da redução, perfuração ou instabilidade."
+        "conteudo": "Redução por enema (hidrostático guiado por ultrassonografia, ou pneumático guiado por fluoroscopia) é o tratamento de escolha na ausência de sinais de perfuração, peritonite ou instabilidade hemodinâmica, com alta taxa de sucesso e sendo ao mesmo tempo diagnóstico e terapêutico. Cirurgia é reservada para falha da redução por enema, sinais de perfuração/peritonite já estabelecidos, ou instabilidade clínica que contraindique tentativa de redução não invasiva."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Criança com dor abdominal em cólica associada a letargia entre as crises sugere quadro mais avançado — pode ser a única manifestação em lactentes muito pequenos, mesmo sem os sinais clássicos completos."
+        "conteudo": "<span class=\"red-flag\">Letargia importante entre os episódios de dor em lactente</span>, mesmo sem massa palpável ou sangue nas fezes evidentes, deve levantar suspeita de invaginação intestinal — pode ser a única manifestação em lactentes muito pequenos, e o atraso no reconhecimento aumenta o risco de progressão para necrose intestinal e perfuração."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tríade clássica (dor em cólica paroxística, massa \"em salsicha\", fezes em \"geleia de framboesa\") é cobrança certa, mas é importante lembrar que a geleia de framboesa é sinal tardio e sua ausência não exclui o diagnóstico. A imagem em \"alvo\"/\"donut\" à ultrassonografia e a redução por enema como tratamento de primeira linha também são frequentemente exigidas."
       }
     ]
   },
@@ -8841,24 +8905,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia e transmissão",
-        "conteudo": "Causada pela bactéria Bordetella pertussis, transmitida por gotículas respiratórias, altamente contagiosa. Lactentes jovens não completamente vacinados são o grupo de maior risco de formas graves e óbito."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A coqueluche é causada pela bactéria Bordetella pertussis, transmitida por gotículas respiratórias, altamente contagiosa (uma das doenças infecciosas mais transmissíveis conhecidas). A toxina pertussis produzida pela bactéria compromete a função ciliar do epitélio respiratório e contribui para a resposta inflamatória local característica, explicando a tosse paroxística prolongada mesmo após a eliminação da bactéria em fases mais tardias da doença."
       },
       {
-        "titulo": "Fases clínicas",
-        "conteudo": "Fase catarral (1-2 semanas, sintomas inespecíficos, maior transmissibilidade), fase paroxística (2-6 semanas, acessos de tosse seguidos de guincho inspiratório, cianose e vômitos pós-tosse) e fase de convalescença (tosse residual)."
+        "titulo": "Quadro clínico",
+        "conteudo": "A doença evolui em três fases: catarral (1-2 semanas, sintomas inespecíficos semelhantes a resfriado comum, sendo paradoxalmente o período de maior transmissibilidade, quando a doença ainda não é suspeitada), paroxística (2-6 semanas, acessos de tosse intensos seguidos de guincho inspiratório característico, cianose e vômitos pós-tosse) e convalescença (tosse residual que pode persistir por semanas a meses). Lactentes jovens não completamente vacinados são o grupo de maior risco de formas graves e óbito."
       },
       {
-        "titulo": "Apresentação em lactentes jovens",
-        "conteudo": "Pode não apresentar o guincho clássico, manifestando-se predominantemente com episódios de apneia e cianose — maior gravidade justamente na faixa etária com esquema vacinal ainda incompleto."
+        "titulo": "Exame físico",
+        "conteudo": "Durante os acessos paroxísticos, observam-se episódios de tosse intensa em salvas, seguidos de guincho inspiratório característico (som agudo produzido pela inspiração forçada através da glote parcialmente fechada) e, frequentemente, vômitos ou cianose transitória ao final do acesso. Entre os acessos, o exame físico pode ser surpreendentemente normal, o que contrasta com a gravidade percebida durante as crises."
       },
       {
-        "titulo": "Diagnóstico e tratamento",
-        "conteudo": "PCR de secreção nasofaríngea é o método mais sensível na fase inicial. Macrolídeos (azitromicina) são o tratamento de escolha, mais eficazes quando iniciados na fase catarral."
+        "titulo": "Diagnóstico",
+        "conteudo": "PCR de secreção nasofaríngea é o método mais sensível, especialmente eficaz na fase catarral e início da paroxística; cultura é mais específica mas de menor sensibilidade e resultado mais demorado. Sorologia é útil em fases mais tardias da doença, quando a positividade dos métodos moleculares/culturais já declinou. Leucocitose com linfocitose importante é achado laboratorial de apoio característico, especialmente em lactentes."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Macrolídeos (azitromicina, preferida atualmente) são o tratamento de escolha, sendo mais eficazes em reduzir a gravidade e a duração da doença quando iniciados na fase catarral — na fase paroxística já estabelecida, o antibiótico tem pouco impacto sobre os sintomas (já causados pela toxina e pelo dano tecidual prévio), mas ainda é indicado para reduzir a transmissibilidade e o período de contágio. Quimioprofilaxia com macrolídeo é recomendada para contactantes domiciliares próximos, independentemente do status vacinal."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Lactente jovem com episódios de apneia/cianose</span>, mesmo sem tosse paroxística evidente, deve levantar suspeita de coqueluche — quimioprofilaxia recomendada para contactantes próximos."
+        "conteudo": "<span class=\"red-flag\">Lactente jovem com episódios de apneia/cianose</span>, mesmo sem o guincho paroxístico clássico (que pode estar ausente nessa faixa etária, sendo substituído por apneia como manifestação predominante), deve levantar suspeita de coqueluche — essa população tem maior risco de complicações graves e óbito, justificando internação e vigilância mais próxima."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "As três fases clínicas (catarral, paroxística, convalescença) com a fase catarral sendo a de maior transmissibilidade apesar de sintomas inespecíficos são cobrança certa. A apresentação atípica em lactentes jovens (apneia em vez de guincho clássico) e a quimioprofilaxia para contactantes próximos independentemente do status vacinal também são frequentemente exigidas."
       }
     ]
   },
@@ -8878,24 +8950,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia por faixa etária",
-        "conteudo": "Vírus são a causa mais comum em lactentes e pré-escolares. Streptococcus pneumoniae é o agente bacteriano mais comum em todas as faixas etárias pediátricas. Mycoplasma pneumoniae ganha relevância em escolares e adolescentes (pneumonia atípica)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A pneumonia adquirida na comunidade na infância tem etiologia predominantemente viral em lactentes e pré-escolares (vírus sincicial respiratório entre outros), com Streptococcus pneumoniae sendo o agente bacteriano mais comum em todas as faixas etárias pediátricas. Mycoplasma pneumoniae ganha relevância progressiva em escolares e adolescentes, causando quadro de pneumonia atípica com características clínicas e radiológicas distintas das pneumonias bacterianas típicas."
       },
       {
-        "titulo": "Quadro clínico e sinais de gravidade",
-        "conteudo": "Febre, tosse e taquipneia são os achados centrais. Tiragem subcostal, batimento de asa de nariz, gemência e cianose indicam maior gravidade e necessidade de avaliação hospitalar."
+        "titulo": "Quadro clínico",
+        "conteudo": "Febre, tosse e taquipneia são os achados centrais para suspeita clínica. Tiragem subcostal, batimento de asa de nariz, gemência e cianose indicam maior gravidade e necessidade de avaliação hospitalar imediata, seguindo os critérios de gravidade padronizados da OMS para manejo integrado das doenças prevalentes na infância (AIDPI)."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "A taquipneia (com pontos de corte específicos por faixa etária: ≥60irpm em menores de 2 meses, ≥50irpm de 2 a 11 meses, ≥40irpm de 1 a 5 anos) é o sinal isolado mais sensível para o diagnóstico clínico de pneumonia na criança, superando a ausculta pulmonar em sensibilidade, especialmente em lactentes pequenos onde a ausculta é frequentemente pouco específica."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Eminentemente clínico na atenção primária, com base na taquipneia e nos sinais de esforço respiratório. Radiografia de tórax não é obrigatória em todos os casos ambulatoriais típicos."
+        "conteudo": "O diagnóstico é eminentemente clínico na atenção primária, baseado na taquipneia (conforme ponto de corte por idade) e nos sinais de esforço respiratório, seguindo o protocolo AIDPI da OMS. Radiografia de tórax não é obrigatória em todos os casos ambulatoriais típicos, sendo reservada a casos graves, atípicos, ou com dúvida diagnóstica relevante para diferenciação de outras causas de desconforto respiratório."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Amoxicilina em dose alta é a primeira escolha para tratamento ambulatorial. Macrolídeo indicado quando há suspeita de pneumonia atípica. Internação indicada para sinais de gravidade, hipoxemia ou incapacidade de hidratação oral."
+        "conteudo": "Amoxicilina em dose alta é a primeira escolha para tratamento ambulatorial de pneumonia bacteriana típica presumida. Macrolídeo é indicado quando há suspeita de pneumonia atípica (mais comum em escolares/adolescentes, com quadro clínico e evolução mais arrastada). Internação é indicada diante de sinais de gravidade (segundo critérios AIDPI), hipoxemia, incapacidade de hidratação oral adequada, ou fatores de risco específicos (lactente muito jovem, comorbidades significativas)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Taquipneia associada a tiragem subcostal e gemência</span> em criança com quadro respiratório agudo indica pneumonia grave, com necessidade frequente de internação."
+        "conteudo": "<span class=\"red-flag\">Taquipneia associada a tiragem subcostal e gemência</span> em criança com quadro respiratório agudo indica pneumonia grave conforme critérios AIDPI, com necessidade frequente de internação hospitalar e vigilância mais próxima da evolução clínica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os pontos de corte de taquipneia por faixa etária (60/50/40irpm conforme a idade) do protocolo AIDPI são cobrança certíssima e extremamente recorrente em provas de pediatria e saúde pública. A taquipneia como sinal isolado mais sensível (superando a ausculta) e a amoxicilina como primeira escolha ambulatorial também são frequentemente exigidas."
       }
     ]
   },
@@ -8915,24 +8995,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Puberdade normal",
-        "conteudo": "Nas meninas, inicia-se com telarca (8-13 anos), seguida de pubarca e menarca (2-3 anos após a telarca). Nos meninos, inicia-se com aumento do volume testicular (≥4mL, entre 9-14 anos), seguido de pelos pubianos e estirão de crescimento mais tardio."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A puberdade normal é desencadeada pela reativação do eixo hipotálamo-hipófise-gonadal (após período de quiescência relativa na infância), com pulsos de GnRH estimulando a secreção de LH/FSH e, consequentemente, a produção de esteroides sexuais gonadais responsáveis pelo desenvolvimento dos caracteres sexuais secundários. Puberdade precoce central resulta de ativação prematura desse mesmo eixo (dependente de GnRH, mais comum em meninas e frequentemente idiopática nesse sexo); puberdade precoce periférica resulta de produção autônoma de esteroides sexuais independente do eixo hipotálamo-hipofisário (por tumores gonadais/adrenais ou exposição exógena)."
       },
       {
-        "titulo": "Estadiamento de Tanner",
-        "conteudo": "Escala que descreve o desenvolvimento puberal em 5 estágios, com base no desenvolvimento mamário e pelos pubianos nas meninas, e genitália/pelos pubianos nos meninos."
+        "titulo": "Quadro clínico",
+        "conteudo": "Nas meninas, a puberdade normal inicia-se com telarca (broto mamário, 8-13 anos), seguida de pubarca e, cerca de 2-3 anos depois, menarca. Nos meninos, inicia-se com aumento do volume testicular (≥4mL, entre 9-14 anos), seguido de pelos pubianos e estirão de crescimento mais tardio. Puberdade precoce é definida por caracteres sexuais secundários antes dos 8 anos (meninas) ou 9 anos (meninos); puberdade atrasada, pela ausência de caracteres sexuais secundários além de 13 anos (meninas) ou 14 anos (meninos)."
       },
       {
-        "titulo": "Puberdade precoce",
-        "conteudo": "Caracteres sexuais secundários antes dos 8 anos (meninas) ou 9 anos (meninos). Central (dependente de GnRH, mais comum em meninas, frequentemente idiopática) ou periférica (independente de GnRH, por produção autônoma de esteroides sexuais)."
+        "titulo": "Exame físico",
+        "conteudo": "O estadiamento de Tanner (5 estágios, baseado no desenvolvimento mamário e pelos pubianos nas meninas, genitália e pelos pubianos nos meninos) documenta objetivamente o estágio puberal e sua progressão ao longo do acompanhamento, sendo instrumento central tanto na prática clínica quanto em provas. Volume testicular (avaliado por orquidômetro de Prader) é o primeiro sinal objetivo mensurável de puberdade iniciada no menino."
       },
       {
-        "titulo": "Puberdade atrasada",
-        "conteudo": "Ausência de caracteres sexuais secundários além de 13 anos (meninas) ou 14 anos (meninos). Causas: atraso constitucional (mais comum), hipogonadismo hipogonadotrófico e hipergonadotrófico (Turner, Klinefelter)."
+        "titulo": "Diagnóstico",
+        "conteudo": "A idade óssea (radiografia de mão/punho, comparada a atlas de referência) auxilia a avaliar a maturação esquelética em relação à idade cronológica, sendo tipicamente avançada na puberdade precoce e atrasada nas formas de puberdade tardia constitucional. Teste de estímulo com GnRH sintético diferencia puberdade precoce central (resposta puberal ao estímulo) de periférica (resposta pré-puberal, já que o eixo central está suprimido pela produção autônoma periférica de esteroides)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Puberdade precoce central progressiva é tratada com análogos de GnRH, que suprimem a secreção pulsátil e interrompem a progressão puberal, preservando potencial de estatura final e adequando o desenvolvimento psicossocial à idade cronológica. Puberdade precoce periférica exige tratamento direcionado à causa específica identificada (remoção de tumor produtor de hormônio, por exemplo). Atraso constitucional do crescimento e puberdade (a causa mais comum de puberdade tardia, frequentemente com história familiar semelhante) geralmente não exige tratamento hormonal, apenas acompanhamento e tranquilização, sendo diagnóstico de exclusão após afastar causas patológicas."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Puberdade precoce central de progressão rápida, especialmente em meninos ou associada a sinais neurológicos, deve motivar investigação de lesão do sistema nervoso central."
+        "conteudo": "Puberdade precoce central de progressão rápida, especialmente em meninos (onde a puberdade precoce é menos comum e mais frequentemente tem causa orgânica identificável que em meninas) ou associada a sinais neurológicos, deve motivar investigação de lesão do sistema nervoso central com ressonância magnética de crânio."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A sequência normal dos eventos puberais (telarca antes de menarca nas meninas; aumento de volume testicular como primeiro sinal nos meninos) e o estadiamento de Tanner são cobrança certa e recorrente. A maior probabilidade de causa orgânica identificável na puberdade precoce em meninos (comparada a meninas, mais frequentemente idiopática) também é frequentemente exigida."
       }
     ]
   },
@@ -8953,23 +9041,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "Doença genética autossômica recessiva, causada por mutações no gene CFTR, levando à produção de secreções espessas e viscosas em múltiplos órgãos — principalmente pulmões, pâncreas e trato digestivo."
+        "conteudo": "A fibrose cística é uma doença genética autossômica recessiva, causada por mutações no gene CFTR (regulador de condutância transmembrana da fibrose cística), que codifica um canal de cloro nas células epiteliais. A disfunção desse canal leva à produção de secreções espessas e desidratadas em múltiplos órgãos — principalmente pulmões, pâncreas e trato digestivo — comprometendo a depuração mucociliar pulmonar e a função exócrina pancreática."
       },
       {
-        "titulo": "Manifestações respiratórias",
-        "conteudo": "Infecções pulmonares de repetição, bronquiectasias progressivas e colonização crônica por Pseudomonas aeruginosa — principal causa de morbimortalidade na fibrose cística."
+        "titulo": "Quadro clínico",
+        "conteudo": "Manifestações respiratórias incluem infecções pulmonares de repetição, tosse produtiva crônica e bronquiectasias progressivas, com colonização crônica por Pseudomonas aeruginosa (principal causa de morbimortalidade a longo prazo na fibrose cística). Manifestações digestivas incluem insuficiência pancreática exócrina (presente na maioria dos pacientes, causando esteatorreia e déficit de crescimento) e o íleo meconial no período neonatal, apresentação clássica e um dos primeiros sinais possíveis da doença."
       },
       {
-        "titulo": "Manifestações digestivas",
-        "conteudo": "Insuficiência pancreática exócrina presente na maioria dos pacientes. O íleo meconial no período neonatal é uma apresentação clássica e um dos primeiros sinais possíveis da doença."
+        "titulo": "Exame físico",
+        "conteudo": "Desnutrição/déficit de crescimento associado a infecções respiratórias de repetição é achado característico que deve levantar suspeita diagnóstica. Baqueteamento digital pode se desenvolver com a progressão da doença pulmonar crônica. O sabor \"salgado\" da pele, notado por pais/cuidadores ao beijar a criança, é achado clássico relatado na anamnese, refletindo a disfunção do canal de cloro nas glândulas sudoríparas."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Teste do suor (dosagem de cloreto) é o exame padrão-ouro. A triagem neonatal (tripsinogênio imunorreativo) permite diagnóstico precoce, antes mesmo de sintomas evidentes."
+        "conteudo": "O teste do suor (dosagem de cloreto no suor, estimulado por iontoforese com pilocarpina) é o exame padrão-ouro para confirmação diagnóstica, com valores elevados de cloreto confirmando a doença. A triagem neonatal (dosagem de tripsinogênio imunorreativo no teste do pezinho) permite diagnóstico precoce e presuntivo, antes mesmo do surgimento de sintomas clínicos evidentes, sendo posteriormente confirmado pelo teste do suor e, quando disponível, análise genética das mutações do gene CFTR."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O manejo é multidisciplinar, incluindo fisioterapia respiratória regular para higiene brônquica, antibioticoterapia para exacerbações infecciosas (e, em casos selecionados, profilática contra Pseudomonas), reposição de enzimas pancreáticas e suplementação vitamínica (vitaminas lipossolúveis A, D, E, K, cuja absorção está comprometida pela insuficiência pancreática exócrina). Moduladores de CFTR (terapia mais recente, direcionada à disfunção proteica específica conforme o genótipo do paciente) representam avanço terapêutico significativo, alterando o curso natural da doença em pacientes elegíveis."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Íleo meconial em recém-nascido</span> ou infecções respiratórias de repetição associadas a déficit de crescimento devem levantar suspeita de fibrose cística e motivar teste do suor."
+        "conteudo": "<span class=\"red-flag\">Íleo meconial em recém-nascido</span> ou infecções respiratórias de repetição associadas a déficit de crescimento e esteatorreia devem levantar suspeita de fibrose cística e motivar teste do suor prioritário, especialmente diante de triagem neonatal positiva ou história familiar da doença."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O teste do suor como padrão-ouro diagnóstico e a triagem neonatal pelo tripsinogênio imunorreativo (teste do pezinho) são cobranças certíssimas. O íleo meconial como apresentação neonatal clássica e a colonização crônica por Pseudomonas aeruginosa como principal determinante de morbimortalidade a longo prazo também são frequentemente exigidos."
       }
     ]
   },
