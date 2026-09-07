@@ -1,113 +1,62 @@
 /**
- * MedConduta — camada de persistência local (IndexedDB com fallback em localStorage).
- * Guarda: estado de repetição espaçada (SM-2) por flashcard, preferências (tema),
- * progresso de temas lidos, histórico de respostas de questões, e o conteúdo
- * (temas/flashcards/questões) que a IA cria — que fica salvo só neste navegador,
- * mesclado com o conteúdo curado nas telas de listagem.
+ * MedConduta — camada de persistência (Fase 1: backend via Worker + D1).
+ * Guarda: estado de repetição espaçada (SM-2) por flashcard, preferências
+ * (tema), progresso de temas lidos, histórico de respostas de questões, e o
+ * conteúdo (temas/flashcards/questões) que a IA cria.
+ *
+ * Antes esses dados viviam só no IndexedDB do navegador (um aparelho só, sem
+ * login). Agora vivem no servidor, por conta — mesmo formato de dado, mesma
+ * assinatura de função (getItem/setItem/getAll/removeItem), só troca onde o
+ * dado mora. Isso exige estar autenticado (ver app/auth.js) e ter internet;
+ * chamadas feitas sem sessão válida resolvem "vazias" em vez de travar a UI
+ * (o roteador em app/main.js já impede o app de chegar aqui deslogado).
  */
 
-const DB_NAME = "medconduta";
-const DB_VERSION = 2;
-const STORES = ["srs", "prefs", "progresso", "respostas", "ia_temas", "ia_flashcards", "ia_questoes"];
+import { getToken } from "./auth.js";
 
-let dbPromise = null;
+const ENDPOINT_PADRAO = "https://medconduta-ai.medcondutaa.workers.dev";
 
-function openDb() {
-  if (dbPromise) return dbPromise;
+async function chamarApi(method, caminho, corpo) {
+  const token = getToken();
+  if (!token) return null;
 
-  if (!("indexedDB" in window)) {
-    dbPromise = Promise.resolve(null);
-    return dbPromise;
+  let res;
+  try {
+    res = await fetch(`${ENDPOINT_PADRAO}${caminho}`, {
+      method,
+      headers: {
+        Authorization: `Bearer ${token}`,
+        ...(corpo !== undefined ? { "Content-Type": "application/json" } : {}),
+      },
+      body: corpo !== undefined ? JSON.stringify(corpo) : undefined,
+    });
+  } catch {
+    return null; // sem conexão — quem chamou trata o retorno vazio/null como "sem dado ainda"
   }
-
-  dbPromise = new Promise((resolve) => {
-    const req = indexedDB.open(DB_NAME, DB_VERSION);
-
-    req.onupgradeneeded = () => {
-      const db = req.result;
-      for (const store of STORES) {
-        if (!db.objectStoreNames.contains(store)) {
-          db.createObjectStore(store, { keyPath: "id" });
-        }
-      }
-    };
-
-    req.onsuccess = () => resolve(req.result);
-    req.onerror = () => resolve(null);
-  });
-
-  return dbPromise;
-}
-
-function lsKey(store, id) {
-  return `medconduta:${store}:${id}`;
+  if (!res.ok) return null;
+  return res.json().catch(() => null);
 }
 
 /** Lê um registro por id em um "store" lógico. */
 export async function getItem(store, id) {
-  const db = await openDb();
-  if (!db) {
-    const raw = localStorage.getItem(lsKey(store, id));
-    return raw ? JSON.parse(raw) : null;
-  }
-  return new Promise((resolve) => {
-    const tx = db.transaction(store, "readonly");
-    const req = tx.objectStore(store).get(id);
-    req.onsuccess = () => resolve(req.result || null);
-    req.onerror = () => resolve(null);
-  });
+  const dado = await chamarApi("GET", `/data/${store}/${encodeURIComponent(id)}`);
+  return dado ?? null;
 }
 
 /** Grava um registro (precisa conter `id`). */
 export async function setItem(store, value) {
-  const db = await openDb();
-  if (!db) {
-    localStorage.setItem(lsKey(store, value.id), JSON.stringify(value));
-    return;
-  }
-  return new Promise((resolve) => {
-    const tx = db.transaction(store, "readwrite");
-    tx.objectStore(store).put(value);
-    tx.oncomplete = () => resolve();
-    tx.onerror = () => resolve();
-  });
+  await chamarApi("PUT", `/data/${store}/${encodeURIComponent(value.id)}`, value);
 }
 
 /** Retorna todos os registros de um store. */
 export async function getAll(store) {
-  const db = await openDb();
-  if (!db) {
-    const out = [];
-    const prefix = `medconduta:${store}:`;
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key && key.startsWith(prefix)) {
-        out.push(JSON.parse(localStorage.getItem(key)));
-      }
-    }
-    return out;
-  }
-  return new Promise((resolve) => {
-    const tx = db.transaction(store, "readonly");
-    const req = tx.objectStore(store).getAll();
-    req.onsuccess = () => resolve(req.result || []);
-    req.onerror = () => resolve([]);
-  });
+  const dados = await chamarApi("GET", `/data/${store}`);
+  return Array.isArray(dados) ? dados : [];
 }
 
 /** Remove um registro por id. */
 export async function removeItem(store, id) {
-  const db = await openDb();
-  if (!db) {
-    localStorage.removeItem(lsKey(store, id));
-    return;
-  }
-  return new Promise((resolve) => {
-    const tx = db.transaction(store, "readwrite");
-    tx.objectStore(store).delete(id);
-    tx.oncomplete = () => resolve();
-    tx.onerror = () => resolve();
-  });
+  await chamarApi("DELETE", `/data/${store}/${encodeURIComponent(id)}`);
 }
 
 export async function getPref(key, fallback = null) {

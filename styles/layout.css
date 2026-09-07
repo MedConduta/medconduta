@@ -12,6 +12,20 @@
   grid-template-columns: var(--sidebar-width-collapsed) 1fr;
 }
 
+/* Enquanto não há sessão válida (ver app/main.js), esconde toda a navegação
+   e mostra só a tela de login/cadastro em tela cheia. */
+.app-shell.is-logged-out {
+  grid-template-columns: 1fr;
+  min-height: 0;
+}
+.app-shell.is-logged-out .sidebar,
+.app-shell.is-logged-out .topbar {
+  display: none;
+}
+.app-shell.is-logged-out ~ .bottom-nav {
+  display: none;
+}
+
 /* ---------- Sidebar ---------- */
 
 .sidebar {
