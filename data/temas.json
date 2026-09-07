@@ -2159,7 +2159,7 @@
     "titulo": "Anemias Carenciais (Ferropriva e Megaloblástica)",
     "resumo": "Diagnóstico diferencial pelo VCM e reposição nas anemias por deficiência de ferro, B12 e folato.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia (SBHH); WHO Guideline on Iron Deficiency Anaemia",
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; Ministério da Saúde — Manual de Condutas Gerais de Anemia Ferropriva",
     "mnemonicos": [
       {
         "palavra": "VCM: MICRO x MACRO",
@@ -2168,24 +2168,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Anemia ferropriva",
-        "conteudo": "Causa mais comum de anemia no mundo. Decorre de perda sanguínea crônica, dieta inadequada ou má absorção. Laboratorialmente microcítica e hipocrômica, com ferritina sérica baixa."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A anemia ferropriva resulta de balanço negativo de ferro, por perda sanguínea crônica (a causa mais comum em adultos, exigindo sempre investigação da origem — digestiva no homem/mulher pós-menopausa, ginecológica na mulher em idade fértil), ingesta inadequada ou má absorção, comprometendo a síntese de hemoglobina e gerando hemácias microcíticas e hipocrômicas. A anemia megaloblástica resulta de deficiência de vitamina B12 e/ou ácido fólico, comprometendo a síntese de DNA nas células hematopoiéticas em replicação, gerando hemácias macrocíticas com maturação nuclear assincrônica em relação ao citoplasma."
       },
       {
-        "titulo": "Anemia megaloblástica",
-        "conteudo": "Causada por deficiência de vitamina B12 e/ou ácido fólico, resultando em anemia macrocítica. A deficiência de B12 pode cursar com alterações neurológicas associadas (parestesias, alteração de propriocepção)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Fadiga, palidez, dispneia aos esforços e taquicardia compõem o quadro geral de qualquer anemia, de instalação insidiosa e proporcional à velocidade de queda da hemoglobina. Na deficiência de B12, sintomas neurológicos específicos (parestesias, ataxia sensitiva, degeneração combinada subaguda da medula espinhal) podem preceder ou ocorrer independentemente da anemia, sendo achado que a diferencia da deficiência isolada de folato."
       },
       {
-        "titulo": "Investigação diferencial",
-        "conteudo": "Hemograma com índices hematimétricos (VCM, RDW) orienta a investigação inicial, complementada por dosagem de ferritina, vitamina B12 e folato conforme a suspeita."
+        "titulo": "Exame físico",
+        "conteudo": "Palidez cutaneomucosa é o achado mais comum e inespecífico. Coiloníquia (unhas em colher) e queilite angular sugerem ferropenia de longa duração. Glossite atrófica (língua lisa e dolorida) é achado compartilhado por deficiência de ferro e de B12/folato. Alterações de propriocepção e sinal de Romberg positivo sugerem acometimento medular pela deficiência de B12."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Anemia ferropriva é confirmada por ferritina sérica baixa (o parâmetro mais específico, embora seja reagente de fase aguda e possa estar falsamente normal/elevada em inflamação concomitante), associada a índice de saturação de transferrina reduzido; o hemograma mostra microcitose e hipocromia com aumento do RDW. Anemia megaloblástica é confirmada por dosagem sérica de B12 e/ou folato reduzidos, com hemograma mostrando macrocitose e neutrófilos hipersegmentados no esfregaço periférico — achado morfológico característico e bastante específico dessa condição."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Reposição de ferro (oral ou parenteral, conforme causa, gravidade e tolerância) na anemia ferropriva; reposição de B12 e/ou folato conforme a deficiência identificada na anemia megaloblástica."
+        "conteudo": "Reposição de ferro oral (sulfato ferroso) é o tratamento de escolha na ferropenia, mantida por vários meses além da normalização da hemoglobina para repletar os estoques corporais — a investigação e correção da causa da perda de ferro (geralmente sangramento oculto) é etapa obrigatória e não deve ser negligenciada. Deficiência de B12 é tratada com reposição parenteral (intramuscular) nas causas de má absorção (como a anemia perniciosa, por deficiência de fator intrínseco), enquanto reposição de folato oral trata a deficiência isolada dessa vitamina — jamais repor apenas folato em paciente com possível deficiência de B12 não excluída, pelo risco de mascarar a anemia e permitir progressão da lesão neurológica."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Anemia ferropriva em adulto sem causa dietética evidente</span> exige investigação de sangramento oculto do trato gastrointestinal, incluindo rastreio de neoplasia."
+        "conteudo": "<span class=\"red-flag\">Anemia ferropriva em homem adulto ou mulher pós-menopausa sem causa ginecológica evidente</span> exige investigação obrigatória do trato gastrointestinal (endoscopia e colonoscopia) para exclusão de neoplasia oculta como causa da perda sanguínea crônica, mesmo na ausência de sintomas digestivos evidentes."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A obrigatoriedade de investigar a causa da ferropenia (não apenas repor ferro) em adulto, especialmente investigação digestiva em homens, é cobrança certíssima. O risco de mascarar/piorar dano neurológico ao repor apenas folato sem excluir deficiência de B12 concomitante é uma das armadilhas mais clássicas e recorrentes do tema em provas de residência."
       }
     ]
   },
@@ -2196,7 +2204,7 @@
     "titulo": "Anemias Hemolíticas",
     "resumo": "Reconhecimento laboratorial da hemólise e principais causas hereditárias e adquiridas.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia (SBHH); British Society for Haematology Guidelines",
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; UpToDate — Diagnostic approach to hemolytic anemia",
     "mnemonicos": [
       {
         "palavra": "TRÍADE DA HEMÓLISE",
@@ -2205,24 +2213,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Reconhecimento laboratorial",
-        "conteudo": "Bilirrubina indireta elevada, LDH elevado, haptoglobina reduzida e reticulocitose (resposta medular compensatória) caracterizam o padrão hemolítico."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As anemias hemolíticas resultam da destruição acelerada de hemácias, que pode ser intrínseca (defeitos de membrana como esferocitose hereditária, enzimopatias como deficiência de G6PD, ou hemoglobinopatias como anemia falciforme e talassemias) ou extrínseca (mediada por anticorpos na hemólise autoimune, mecânica em próteses valvares/microangiopatias, ou infecciosa). A hemólise pode ser predominantemente intravascular (destruição direta na circulação, com liberação de hemoglobina livre no plasma) ou extravascular (fagocitose pelo sistema reticuloendotelial, principalmente esplênico), com implicações diagnósticas e clínicas distintas."
       },
       {
-        "titulo": "Causas hereditárias",
-        "conteudo": "Esferocitose hereditária, anemia falciforme e deficiência de G6PD são causas hereditárias comuns de hemólise."
+        "titulo": "Quadro clínico",
+        "conteudo": "Além dos sintomas gerais de anemia, a hemólise causa icterícia (por hiperbilirrubinemia indireta) e pode se manifestar com urina escura (hemoglobinúria na hemólise intravascular intensa). Na anemia falciforme especificamente, crises vaso-oclusivas dolorosas recorrentes e maior suscetibilidade a infecções (por hipoesplenismo funcional precoce) marcam a evolução clínica ao longo da vida."
       },
       {
-        "titulo": "Causas adquiridas",
-        "conteudo": "Anemia hemolítica autoimune e microangiopatias trombóticas (como PTT e SHU) são causas adquiridas relevantes."
+        "titulo": "Exame físico",
+        "conteudo": "Icterícia e esplenomegalia (pela remoção acelerada de hemácias defeituosas/sensibilizadas no baço) são achados característicos da hemólise extravascular crônica. Palidez associada a icterícia (\"cor palha\") é combinação semiológica sugestiva de processo hemolítico em curso."
       },
       {
-        "titulo": "Investigação",
-        "conteudo": "Esfregaço de sangue periférico (esquizócitos, esferócitos) e teste de Coombs direto ajudam a diferenciar causas imunes de não imunes."
+        "titulo": "Diagnóstico",
+        "conteudo": "A confirmação laboratorial de hemólise combina reticulocitose (resposta medular compensatória), aumento de bilirrubina indireta e desidrogenase lática (LDH), e redução de haptoglobina (consumida ao se ligar à hemoglobina livre, sendo mais sensível para hemólise intravascular). O teste de Coombs direto diferencia causas imunomediadas (positivo) de não imunomediadas (negativo), sendo etapa fundamental do algoritmo diagnóstico. O esfregaço de sangue periférico frequentemente revela pistas morfológicas específicas (esferócitos, esquizócitos, células falciformes) que direcionam a etiologia."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento é dirigido à causa: corticoide como primeira linha na anemia hemolítica autoimune (com esplenectomia ou rituximabe reservados a casos refratários); suporte transfusional e hidroxiureia na anemia falciforme (esta última reduzindo frequência de crises vaso-oclusivas); suspensão de agentes oxidantes na deficiência de G6PD. Ácido fólico é frequentemente suplementado em hemólises crônicas pela maior demanda de síntese de DNA na eritropoiese compensatória acelerada."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Queda rápida de hemoglobina com sinais de instabilidade hemodinâmica</span> caracteriza crise hemolítica grave, exigindo suporte transfusional e investigação urgente da causa."
+        "conteudo": "<span class=\"red-flag\">Crise vaso-oclusiva com dor intensa associada a síndrome torácica aguda (dor torácica, hipoxemia, infiltrado pulmonar novo) em paciente com anemia falciforme</span> é emergência com risco de vida, exigindo suporte respiratório, analgesia agressiva, antibioticoterapia e, frequentemente, transfusão de troca (exsanguineotransfusão parcial)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O algoritmo diagnóstico com o teste de Coombs direto como divisor entre causas imunes e não imunes de hemólise é cobrança certa. A tríade laboratorial de hemólise (reticulocitose + bilirrubina indireta elevada + LDH elevada, com haptoglobina reduzida) e a síndrome torácica aguda como complicação grave e potencialmente fatal da anemia falciforme também são frequentemente exigidas."
       }
     ]
   },
@@ -2360,7 +2376,7 @@
     "titulo": "Lúpus Eritematoso Sistêmico (LES)",
     "resumo": "Quadro clínico multissistêmico, critérios diagnósticos EULAR/ACR 2019 e tratamento de base.",
     "revisado": false,
-    "fonte": "EULAR/ACR Classification Criteria for SLE (2019); Sociedade Brasileira de Reumatologia (SBR)",
+    "fonte": "Sociedade Brasileira de Reumatologia — Diretriz de Lúpus Eritematoso Sistêmico; Critérios EULAR/ACR 2019",
     "mnemonicos": [
       {
         "palavra": "FAN COMO PORTA DE ENTRADA",
@@ -2369,24 +2385,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "O lúpus eritematoso sistêmico é uma doença autoimune multissistêmica caracterizada pela produção de autoanticorpos (destacando-se os antinucleares e anti-DNA de dupla hélice) e formação de imunocomplexos que se depositam em diversos tecidos, causando inflamação e dano em órgãos-alvo como pele, articulações, rins, sistema nervoso central e células sanguíneas. Predomina fortemente em mulheres jovens em idade fértil, com participação de fatores genéticos, hormonais (estrogênio) e ambientais (exposição solar, certas infecções) na sua patogênese."
+      },
+      {
         "titulo": "Quadro clínico",
-        "conteudo": "Doença multissistêmica: artrite, eritema malar, fotossensibilidade, serosite (pleurite/pericardite), nefrite lúpica, alterações hematológicas (citopenias) e neurológicas."
+        "conteudo": "Manifestações mucocutâneas (rash malar, fotossensibilidade, úlceras orais indolores), articulares (artrite não erosiva, poliarticular, simétrica) e constitucionais (fadiga, febre, perda de peso) são as mais comuns. Nefrite lúpica (glomerulonefrite, presente em até metade dos pacientes ao longo da doença) e acometimento neuropsiquiátrico são as manifestações de maior impacto prognóstico, exigindo vigilância ativa mesmo na ausência de sintomas exuberantes."
       },
       {
-        "titulo": "Critérios diagnósticos",
-        "conteudo": "Os critérios EULAR/ACR 2019 exigem FAN positivo como critério de entrada, somado a critérios clínicos e imunológicos com pesos distintos, totalizando pontuação mínima para classificação."
+        "titulo": "Exame físico",
+        "conteudo": "O rash malar (eritema em asa de borboleta, poupando o sulco nasolabial) é achado clássico e bastante específico quando presente, embora não obrigatório para o diagnóstico. Úlceras orais geralmente indolores, alopecia não cicatricial e sinais de serosite (atrito pleural/pericárdico) completam o quadro mucocutâneo/sistêmico característico."
       },
       {
-        "titulo": "Autoanticorpos",
-        "conteudo": "FAN tem alta sensibilidade mas baixa especificidade; anti-dsDNA e anti-Sm são mais específicos e auxiliam no diagnóstico e monitoramento de atividade da doença."
+        "titulo": "Diagnóstico",
+        "conteudo": "O FAN (fator antinuclear) positivo é o exame de triagem inicial, com altíssima sensibilidade (praticamente todo paciente com LES tem FAN positivo, tornando um FAN negativo um forte argumento contra o diagnóstico), mas baixa especificidade. Anti-DNA dupla hélice e anti-Sm são mais específicos e frequentemente usados para confirmação. O diagnóstico segue os critérios classificatórios EULAR/ACR 2019, que combinam FAN positivo como critério de entrada obrigatório com pontuação ponderada de critérios clínicos e imunológicos adicionais."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Hidroxicloroquina é a base do tratamento para praticamente todos os pacientes; corticoide e imunossupressores são associados conforme gravidade e órgão acometido."
+        "conteudo": "Hidroxicloroquina é recomendada para praticamente todos os pacientes com LES, independentemente da gravidade, por reduzir atividade de doença e recidivas a longo prazo. Corticoide é usado para controle de atividade em surtos, com imunossupressores (micofenolato, azatioprina, ciclofosfamida) reservados a manifestações mais graves, especialmente nefrite lúpica proliferativa. Belimumabe e outros biológicos mais recentes têm papel crescente em casos refratários ou como poupadores de corticoide."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Nefrite lúpica ou acometimento neurológico grave (neurolúpus)</span> exigem tratamento imunossupressor intensivo imediato."
+        "conteudo": "<span class=\"red-flag\">Proteinúria significativa, hematúria ou elevação de creatinina em paciente com LES</span> deve motivar biópsia renal para caracterizar o padrão de nefrite lúpica (classificação da OMS/ISN-RPS), pois a classe histológica define diretamente a agressividade do tratamento imunossupressor necessário e o prognóstico renal a longo prazo."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O FAN como exame de triagem de alta sensibilidade (um FAN negativo praticamente afasta LES) e o rash malar poupando o sulco nasolabial são cobranças certas. A hidroxicloroquina como base do tratamento para praticamente todos os pacientes, independente da gravidade, é ponto de atualização de diretriz frequentemente exigido em provas recentes."
       }
     ]
   },
@@ -3619,7 +3643,7 @@
     "titulo": "Artrite Reumatoide",
     "resumo": "Poliartrite simétrica de pequenas articulações, critérios diagnósticos ACR/EULAR e estratégia treat-to-target.",
     "revisado": false,
-    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Artrite Reumatoide 2021; ACR/EULAR Classification Criteria 2010",
+    "fonte": "Sociedade Brasileira de Reumatologia — Diretriz de Artrite Reumatoide; Critérios ACR/EULAR 2010",
     "mnemonicos": [
       {
         "palavra": "Simétrica e Matinal",
@@ -3628,24 +3652,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A artrite reumatoide é uma doença autoimune crônica que causa sinovite inflamatória persistente, predominantemente em pequenas articulações das mãos e pés, com potencial destrutivo progressivo da cartilagem e osso subcondral se não tratada adequadamente. Autoanticorpos como o fator reumatoide e, mais especificamente, os anticorpos antipeptídeo citrulinado cíclico (anti-CCP) participam da patogênese e têm papel diagnóstico e prognóstico relevante."
+      },
+      {
         "titulo": "Quadro clínico",
-        "conteudo": "Poliartrite simétrica de pequenas articulações (mãos e punhos, tipicamente poupando as interfalangeanas distais), com rigidez matinal prolongada (mais de 1 hora). Em fases avançadas sem tratamento adequado, podem surgir deformidades características: desvio ulnar, deformidade em pescoço de cisne e em botoeira."
+        "conteudo": "Poliartrite simétrica de pequenas articulações (metacarpofalangeanas, interfalangeanas proximais, punhos), com rigidez matinal prolongada (tipicamente maior que 1 hora, um dos elementos mais valorizados na anamnese), de curso crônico e progressivo. Manifestações extra-articulares (nódulos reumatoides, doença pulmonar intersticial, síndrome de Sjögren secundária) podem ocorrer, especialmente em doença de longa duração e fator reumatoide/anti-CCP fortemente positivos."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Edema e dor à palpação das articulações metacarpofalangeanas e interfalangeanas proximais, com poupança característica das interfalangeanas distais (que ajuda a diferenciar de osteoartrite, onde as distais são tipicamente acometidas). Deformidades características em fases avançadas incluem desvio ulnar dos dedos, deformidade em pescoço de cisne e em botoeira — achados tardios que refletem doença de longa data não controlada."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Os critérios ACR/EULAR 2010 combinam número e tipo de articulações acometidas, sorologia (fator reumatoide e anti-CCP — este último mais específico para artrite reumatoide) e provas de atividade inflamatória (PCR/VHS), além da duração dos sintomas. O anti-CCP positivo pode preceder o início dos sintomas e tem valor prognóstico."
+        "conteudo": "O diagnóstico combina achados clínicos (número e tipo de articulações acometidas, duração dos sintomas) com sorologia (fator reumatoide e anti-CCP, este último mais específico) e provas de atividade inflamatória (VHS, PCR), conforme os critérios classificatórios ACR/EULAR 2010, que valorizam diagnóstico e tratamento precoces para prevenir dano articular irreversível. Radiografia de mãos/punhos pode mostrar erosões ósseas periarticulares em fases mais avançadas, mas não é necessária para o diagnóstico em fase inicial."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "A estratégia \"treat to target\" busca tratar ativamente até atingir a meta de remissão ou baixa atividade de doença. O metotrexato é o DMARD (droga modificadora do curso da doença) sintético de primeira linha; agentes biológicos (anti-TNF e outros) são reservados para falha do tratamento convencional."
-      },
-      {
-        "titulo": "Manifestações extra-articulares",
-        "conteudo": "Nódulos reumatoides subcutâneos, doença pulmonar intersticial, síndrome de Sjögren secundária e, em doença de longa data não controlada, vasculite reumatoide (rara, mas grave)."
+        "conteudo": "Metotrexato é o medicamento modificador de doença de primeira linha (âncora terapêutica) na maioria dos pacientes, devendo ser iniciado precocemente após o diagnóstico — o conceito de \"janela de oportunidade\" enfatiza que o tratamento precoce e intensivo reduz significativamente o dano articular estrutural a longo prazo. Terapias biológicas (anti-TNF e outras classes) são acrescentadas em caso de resposta inadequada ao metotrexato isolado. Corticoide em baixa dose pode ser usado como ponte até o efeito pleno dos medicamentos modificadores, que geralmente leva semanas a poucos meses."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Instabilidade cervical C1-C2 (subluxação atlantoaxial)</span> pode ocorrer em doença de longa data, exigindo cuidado especial em manipulações da via aérea/intubação, pelo risco de compressão medular."
+        "conteudo": "Rigidez matinal prolongada (mais de 1 hora) associada a poliartrite simétrica de pequenas articulações, mantida por mais de 6 semanas, deve motivar encaminhamento reumatológico precoce e início de tratamento modificador de doença o quanto antes, dentro da \"janela de oportunidade\" terapêutica em que o dano estrutural ainda é evitável."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A poupança das interfalangeanas distais (diferente da osteoartrite) e a rigidez matinal prolongada (>1h) são cobranças certas e frequentes elementos de diferenciação em questões de caso clínico. O metotrexato como âncora terapêutica de primeira linha e o conceito de janela de oportunidade para tratamento precoce também são pontos centrais e recorrentes."
       }
     ]
   },
@@ -3656,7 +3688,7 @@
     "titulo": "Espondiloartrites (Espondilite Anquilosante e Correlatas)",
     "resumo": "Dor lombar inflamatória, associação com HLA-B27 e as principais espondiloartrites soronegativas.",
     "revisado": false,
-    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Espondiloartrites 2019; ASAS/EULAR Recommendations for Axial Spondyloarthritis",
+    "fonte": "Sociedade Brasileira de Reumatologia; Critérios ASAS (Assessment of SpondyloArthritis International Society)",
     "mnemonicos": [
       {
         "palavra": "PEAR",
@@ -3665,24 +3697,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Características gerais do grupo",
-        "conteudo": "Soronegatividade para fator reumatoide, forte associação com o antígeno HLA-B27, acometimento axial (coluna vertebral e articulações sacroilíacas) e/ou periférico (entesite, dactilite), com possível sobreposição a doenças de pele, intestino e olho."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As espondiloartrites são um grupo de doenças inflamatórias inter-relacionadas (espondilite anquilosante, artrite psoriásica, artrite reativa, artrite associada à doença inflamatória intestinal), compartilhando forte associação com o alelo HLA-B27 e tropismo por ênteses (locais de inserção de tendões/ligamentos ao osso — entesite) e articulações axiais (sacroilíacas, coluna vertebral), diferentemente da artrite reumatoide, que acomete predominantemente sinóvia de articulações periféricas."
       },
       {
-        "titulo": "Espondilite anquilosante",
-        "conteudo": "Dor lombar de característica inflamatória: início antes dos 40 anos, insidiosa, piora com repouso e melhora com exercício, rigidez matinal maior que 30 minutos. Sacroiliíte é o achado radiológico/de ressonância característico. Em casos avançados sem tratamento, pode evoluir para fusão vertebral (\"coluna em bambu\")."
+        "titulo": "Quadro clínico",
+        "conteudo": "Lombalgia inflamatória é a manifestação cardinal: início antes dos 40 anos, instalação insidiosa, duração maior que 3 meses, piora com repouso e melhora com exercício, associada a rigidez matinal prolongada — características que a diferenciam nitidamente da lombalgia mecânica comum (que piora com atividade e melhora com repouso). Entesite (dor em inserções tendíneas, como tendão de Aquiles) e dactilite (\"dedo em salsicha\", edema difuso de todo o dedo) são achados característicos adicionais do espectro."
       },
       {
-        "titulo": "Artrite psoriásica",
-        "conteudo": "Associada à psoríase cutânea. Pode se apresentar com dactilite (\"dedo em salsicha\"), acometimento de interfalangeanas distais (diferente do padrão da artrite reumatoide) e alterações ungueais (pitting, onicólise)."
+        "titulo": "Exame físico",
+        "conteudo": "Redução da mobilidade da coluna lombar (teste de Schober) e dor à palpação das articulações sacroilíacas são achados de exame físico direcionado relevantes. Dactilite (edema difuso de um dedo inteiro, diferente do edema localizado a uma articulação isolada) é achado bastante característico da artrite psoriásica. Em fases avançadas de espondilite anquilosante não tratada, pode haver retificação da lordose lombar e cifose torácica progressiva (postura em \"esquiador\")."
       },
       {
-        "titulo": "Artrite reativa",
-        "conteudo": "Artrite asséptica desencadeada por infecção prévia, geralmente geniturinária (ex.: Chlamydia) ou gastrointestinal (Salmonella, Shigella, Campylobacter). Classicamente associada à tríade de artrite, uveíte/conjuntivite e uretrite."
+        "titulo": "Diagnóstico",
+        "conteudo": "Radiografia de sacroilíacas pode mostrar sacroiliíte (esclerose, erosões, fusão em fases avançadas), porém a ressonância magnética detecta edema ósseo/inflamação ativa muito mais precocemente, antes de alterações estruturais visíveis na radiografia — diferencial importante para diagnóstico precoce. HLA-B27 positivo reforça a suspeita diagnóstica no contexto clínico apropriado, mas sua presença isolada (sem quadro clínico compatível) não define a doença, já que uma parcela relevante da população geral tem o alelo sem jamais desenvolver espondiloartrite."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Anti-inflamatórios não esteroidais em dose plena e uso regular (não apenas sob demanda) são a primeira linha e frequentemente muito eficazes nas espondiloartrites, com resposta terapêutica notável usada até como critério de suporte diagnóstico. Fisioterapia e exercício regular têm papel central e comprovado na manutenção da mobilidade axial. Terapias biológicas (anti-TNF, inibidores de IL-17) são indicadas em doença ativa refratária a AINEs, com boa resposta especialmente sobre o componente axial e entesítico."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Uveíte anterior aguda recorrente em paciente jovem com dor lombar inflamatória deve levantar suspeita de espondiloartrite e motivar investigação dirigida (HLA-B27, imagem de articulações sacroilíacas)."
+        "conteudo": "Lombalgia inflamatória de início antes dos 40 anos, persistente por mais de 3 meses, que melhora com exercício e piora com repouso, deve motivar investigação reumatológica ativa para espondiloartrite — o atraso diagnóstico é historicamente comum nessa condição justamente por confusão com lombalgia mecânica comum, mais prevalente na população geral."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre lombalgia inflamatória (melhora com exercício, piora com repouso, jovem) e mecânica (piora com atividade, melhora com repouso) é cobrança certíssima. A resposta dramática a AINE em dose plena como característica quase diagnóstica, e a superioridade da ressonância sobre a radiografia para detecção precoce de sacroiliíte, também são frequentemente exigidas."
       }
     ]
   },
@@ -3693,7 +3733,7 @@
     "titulo": "Osteoartrite (Artrose)",
     "resumo": "Dor mecânica, achados radiográficos característicos e tratamento escalonado da osteoartrite.",
     "revisado": false,
-    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Osteoartrite 2021; OARSI Guidelines for Management of Osteoarthritis",
+    "fonte": "Sociedade Brasileira de Reumatologia; OARSI (Osteoarthritis Research Society International) Guidelines",
     "mnemonicos": [
       {
         "palavra": "Heberden Distal, Bouchard Proximal",
@@ -3702,24 +3742,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia e fatores de risco",
-        "conteudo": "Doença degenerativa articular por desgaste progressivo da cartilagem, associada a idade avançada, obesidade, sobrecarga mecânica ou trauma articular prévio e predisposição genética. Articulações mais acometidas: joelhos, quadris, mãos (interfalangeanas) e coluna vertebral."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A osteoartrite (artrose) é a doença articular degenerativa mais comum, resultante do desgaste progressivo da cartilagem articular associado a remodelamento do osso subcondral, formação de osteófitos marginais e graus variáveis de inflamação sinovial secundária de baixo grau. Fatores de risco incluem idade avançada, obesidade (sobrecarga mecânica, especialmente em joelhos), trauma articular prévio e uso repetitivo/ocupacional da articulação."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor de característica mecânica — piora com o uso/atividade e melhora com repouso —, rigidez matinal breve (menos de 30 minutos, ao contrário da artrite inflamatória), crepitação articular ao exame e, em fases avançadas, deformidade e limitação funcional."
+        "conteudo": "Dor articular mecânica — que piora com o uso/atividade ao longo do dia e melhora com o repouso, padrão oposto ao das artrites inflamatórias — associada a rigidez matinal breve (tipicamente menor que 30 minutos, diferente da rigidez prolongada da artrite reumatoide). Acomete predominantemente articulações de carga (joelhos, quadris) e mãos (interfalangeanas distais e proximais, base do polegar)."
       },
       {
-        "titulo": "Achados radiográficos",
-        "conteudo": "Redução do espaço articular, osteófitos marginais, esclerose óssea subcondral e cistos subcondrais. Nas mãos, os nódulos de Heberden (interfalangeana distal) e Bouchard (interfalangeana proximal) são achados clínicos clássicos."
+        "titulo": "Exame físico",
+        "conteudo": "Crepitação à mobilização articular, aumento de volume ósseo (não sinovial/edematoso) e limitação de amplitude de movimento são achados característicos. Nódulos de Heberden (interfalangeanas distais) e de Bouchard (interfalangeanas proximais) são achados clássicos nas mãos — a predileção pelas interfalangeanas distais é ponto de diferenciação semiológica importante em relação à artrite reumatoide, que tipicamente as poupa."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é predominantemente clínico em paciente com perfil epidemiológico e quadro característico. Radiografia simples pode confirmar e graduar a doença, mostrando redução do espaço articular, osteófitos marginais, esclerose subcondral e, em casos avançados, cistos subcondrais — achados que se correlacionam apenas parcialmente com a intensidade dos sintomas clínicos referidos pelo paciente."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Medidas não farmacológicas (perda de peso, fortalecimento muscular, fisioterapia) são a base do tratamento. Analgésicos (paracetamol) e anti-inflamatórios tópicos ou orais auxiliam no controle sintomático. Infiltração intra-articular e artroplastia são reservadas para casos refratários ou mais avançados."
+        "conteudo": "Medidas não farmacológicas (perda de peso em pacientes com sobrepeso/obesidade, fortalecimento muscular periarticular, atividade física de baixo impacto) são a base do tratamento e têm eficácia comprovada, sendo recomendadas antes e junto de qualquer intervenção farmacológica. Analgésicos simples e AINEs tópicos/orais são usados para controle sintomático conforme necessidade. Artroplastia (prótese articular) é indicada em doença avançada com dor refratária e limitação funcional significativa, apesar de tratamento conservador otimizado."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Dor articular com sinais inflamatórios importantes (calor, rubor, edema exuberante) ou febre associada deve levantar suspeita de artrite séptica ou gotosa, e não simplesmente osteoartrite — situações que exigem investigação urgente."
+        "conteudo": "Dor articular com características inflamatórias sobrepostas (edema quente, rigidez matinal prolongada, sintomas sistêmicos) em paciente com osteoartrite conhecida deve motivar reavaliação para excluir artrite inflamatória concomitante ou artrite séptica, já que a osteoartrite isolada não deveria cursar com esses achados atípicos ao seu padrão mecânico habitual."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre dor mecânica (osteoartrite, piora com uso) e inflamatória (artrite reumatoide, melhora com uso/piora com repouso) e a distribuição articular característica (interfalangeanas distais na artrose vs. poupadas na artrite reumatoide) são cobranças centrais e praticamente garantidas em qualquer prova que compare as duas condições."
       }
     ]
   },
@@ -3730,7 +3778,7 @@
     "titulo": "Fibromialgia",
     "resumo": "Dor difusa crônica sem sinais objetivos de inflamação, diagnóstico clínico e tratamento multimodal.",
     "revisado": false,
-    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Fibromialgia 2017; ACR 2016 Revisions to Fibromyalgia Diagnostic Criteria",
+    "fonte": "Sociedade Brasileira de Reumatologia; Critérios ACR 2016 para Fibromialgia",
     "mnemonicos": [
       {
         "palavra": "Dor sem inflamação",
@@ -3739,24 +3787,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A fibromialgia é uma síndrome de dor crônica generalizada, atualmente compreendida como resultado de sensibilização central (amplificação do processamento de sinais dolorosos pelo sistema nervoso central), sem evidência de inflamação articular, dano tecidual estrutural ou alteração laboratorial específica — diferenciando-a fundamentalmente das doenças reumatológicas inflamatórias/autoimunes discutidas nos demais temas desta seção."
+      },
+      {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor musculoesquelética crônica generalizada e difusa (duração maior que 3 meses), frequentemente acompanhada de fadiga, sono não reparador, distúrbios cognitivos (\"fibrofog\") e sintomas de ansiedade/depressão associados."
+        "conteudo": "Dor musculoesquelética generalizada e crônica (presente por pelo menos 3 meses), frequentemente associada a fadiga significativa, sono não reparador, disfunção cognitiva (\"fibro fog\", dificuldade de concentração e memória) e sintomas psiquiátricos concomitantes (ansiedade, depressão) — o quadro é multissistêmico e vai além da dor isolada, refletindo a natureza central e não apenas musculoesquelética da condição."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "O exame musculoesquelético é tipicamente normal, sem sinovite, edema articular ou sinais inflamatórios objetivos — a antiga pesquisa de pontos dolorosos específicos (tender points) foi abandonada nos critérios diagnósticos mais recentes em favor de uma avaliação mais ampla da dor generalizada e dos sintomas associados. A ausência de achados objetivos ao exame é, paradoxalmente, parte do próprio raciocínio diagnóstico dessa condição."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Diagnóstico clínico, sem exame laboratorial ou de imagem confirmatório específico. Os critérios atuais do American College of Rheumatology utilizam um índice de dor generalizada e uma escala de gravidade de sintomas, dispensando a antiga contagem obrigatória de pontos dolorosos (\"tender points\")."
-      },
-      {
-        "titulo": "Diagnóstico diferencial",
-        "conteudo": "Exames complementares são solicitados principalmente para EXCLUIR outras causas de dor difusa — hipotireoidismo, polimialgia reumática, doenças reumatológicas inflamatórias — e não para confirmar o diagnóstico de fibromialgia."
+        "conteudo": "O diagnóstico é clínico, baseado nos critérios ACR 2016, que combinam um índice de dor generalizada (número de áreas corporais dolorosas) com uma escala de gravidade de sintomas associados (fadiga, sono não reparador, sintomas cognitivos), sem necessidade de exames complementares para confirmação — exames são solicitados apenas para excluir diagnósticos diferenciais quando clinicamente indicado, e não fazem parte dos critérios diagnósticos positivos da fibromialgia em si."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Abordagem multimodal: exercício físico aeróbico regular é a intervenção com melhor evidência de benefício, associado à terapia cognitivo-comportamental. Farmacoterapia (antidepressivos duais como duloxetina, ou gabapentinoides como pregabalina) é reservada para casos que não respondem adequadamente às medidas não farmacológicas."
+        "conteudo": "O tratamento é multimodal, combinando educação do paciente sobre a natureza da condição, exercício físico regular (aeróbico, com evidência robusta de benefício e considerado intervenção de primeira linha), terapia cognitivo-comportamental, e farmacoterapia (antidepressivos tricíclicos, duloxetina, pregabalina) para controle sintomático quando necessário. Opioides não são recomendados pela falta de eficácia comprovada a longo prazo e pelo risco de dependência nessa população."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "A presença de sinais inflamatórios objetivos (sinovite, alterações laboratoriais específicas) não é esperada na fibromialgia e deve motivar a investigação de um diagnóstico alternativo ou concomitante."
+        "conteudo": "Achados objetivos ao exame físico ou laboratorial (sinovite, elevação de provas inflamatórias, alterações radiográficas) em paciente com quadro sugestivo de fibromialgia devem motivar investigação de diagnóstico diferencial concomitante ou alternativo, já que a fibromialgia por si só não deveria apresentar tais alterações objetivas."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O abandono dos tender points nos critérios diagnósticos atuais (substituídos pelo índice de dor generalizada e escala de sintomas) é atualização de diretriz frequentemente cobrada em provas recentes. O exercício físico como intervenção de primeira linha (superando muitas vezes a farmacoterapia isolada em eficácia) e a contraindicação de opioides também são pontos centrais e recorrentes."
       }
     ]
   },
@@ -3767,7 +3823,7 @@
     "titulo": "Gota (Artrite Gotosa)",
     "resumo": "Crise aguda de monoartrite por depósito de urato, diagnóstico por análise do líquido sinovial e tratamento hipouricemiante crônico.",
     "revisado": false,
-    "fonte": "Diretriz da Sociedade Brasileira de Reumatologia para Gota 2017; ACR Guideline for the Management of Gout 2020",
+    "fonte": "Sociedade Brasileira de Reumatologia — Diretriz de Gota; ACR Guideline for the Management of Gout",
     "mnemonicos": [
       {
         "palavra": "Podagra",
@@ -3777,27 +3833,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "Depósito de cristais de urato monossódico nas articulações, decorrente de hiperuricemia crônica — por hiperprodução ou, mais comumente, por hipoexcreção renal de ácido úrico. Nem toda hiperuricemia assintomática precisa de tratamento medicamentoso."
+        "conteudo": "A gota resulta da deposição de cristais de urato monossódico nas articulações e tecidos periarticulares, secundária à hiperuricemia crônica (por superprodução ou, mais comumente, subexcreção renal de ácido úrico). A pseudogota (condrocalcinose) resulta da deposição de cristais de pirofosfato de cálcio di-hidratado, mecanismo distinto embora com apresentação clínica por vezes semelhante. Fatores precipitantes de crises agudas de gota incluem consumo de álcool, carnes vermelhas/frutos do mar (purinas), jejum prolongado, e início ou suspensão abrupta de medicação hipouricemiante."
       },
       {
-        "titulo": "Crise aguda de gota",
-        "conteudo": "Monoartrite de início súbito, extremamente dolorosa, classicamente na primeira articulação metatarsofalangeana (podagra), com sinais inflamatórios exuberantes (calor, rubor, edema). Frequentemente desencadeada por ingestão de álcool, dieta rica em purinas, jejum prolongado ou início recente de tratamento hipouricemiante."
+        "titulo": "Quadro clínico",
+        "conteudo": "Crise aguda de gota manifesta-se com monoartrite intensamente dolorosa, de início súbito (frequentemente noturno), classicamente acometendo a primeira articulação metatarsofalangeana (podagra), embora outras articulações possam ser acometidas. Gota crônica tofácea (em pacientes com hiperuricemia não tratada por longo período) manifesta-se com tofos (depósitos subcutâneos de urato, frequentemente em hélice auricular, cotovelos, tendão de Aquiles) e artropatia destrutiva."
       },
       {
-        "titulo": "Diagnóstico definitivo",
-        "conteudo": "Identificação de cristais de urato monossódico (birrefringência negativa à luz polarizada) no líquido sinovial aspirado — padrão-ouro diagnóstico, que também permite excluir artrite séptica concomitante."
+        "titulo": "Exame físico",
+        "conteudo": "Monoartrite com sinais flogísticos exuberantes (calor, rubor, edema intenso, dor à mínima palpação/movimentação) na primeira metatarsofalangeana é achado altamente sugestivo de podagra gotosa. Tofos subcutâneos (nódulos endurecidos, por vezes com conteúdo esbranquiçado visível através da pele) confirmam gota tofácea crônica quando presentes."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "A análise do líquido sinovial por artrocentese, com identificação de cristais de urato monossódico (com birrefringência negativa forte à luz polarizada) é o exame padrão-ouro, permitindo também excluir artrite séptica concomitante (diagnóstico diferencial obrigatório em toda monoartrite aguda). O ácido úrico sérico pode estar normal durante a crise aguda (paradoxo bem documentado), não devendo ser usado isoladamente para confirmar ou excluir o diagnóstico no momento agudo."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Na crise aguda: anti-inflamatório não esteroidal, colchicina ou corticoide, conforme comorbidades do paciente. O tratamento hipouricemiante crônico (alopurinol como primeira linha) é indicado após crises recorrentes, presença de tofos ou nefrolitíase úrica — e NUNCA deve ser iniciado durante a crise aguda, pelo risco de prolongá-la."
+        "conteudo": "A crise aguda é tratada com AINEs, colchicina ou corticoide (conforme comorbidades e contraindicações do paciente), nunca com iniciação de hipouricemiante durante a crise (pode prolongar ou exacerbar o episódio agudo pela flutuação dos níveis de ácido úrico). O tratamento hipouricemiante de longo prazo (alopurinol como primeira linha) é indicado após resolução da crise aguda, em pacientes com crises recorrentes, tofos ou lesão renal associada, com meta terapêutica de ácido úrico sérico abaixo de 6mg/dL."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Monoartrite aguda associada a febre</span> exige sempre excluir artrite séptica por punção articular antes de assumir se tratar de crise de gota, pois as duas condições podem ser clinicamente indistinguíveis."
+        "conteudo": "<span class=\"red-flag\">Monoartrite aguda com febre e toxemia sistêmica</span> exige artrocentese diagnóstica obrigatória para excluir artrite séptica concomitante antes de assumir crise de gota isoladamente — a coexistência das duas condições é possível e potencialmente fatal se a artrite séptica for negligenciada."
       },
       {
-        "titulo": "Pseudogota (condrocalcinose)",
-        "conteudo": "A pseudogota (doença por depósito de cristais de pirofosfato de cálcio) mimetiza clinicamente a gota, mas os cristais têm birrefringência POSITIVA à luz polarizada (ao contrário do urato, negativo) e acomete mais comumente o joelho, associada a condrocalcinose visível na radiografia (calcificação da cartilagem articular). É mais comum em idosos e pode estar associada a distúrbios metabólicos (hiperparatireoidismo, hemocromatose)."
+        "titulo": "Dicas de prova",
+        "conteudo": "A contraindicação de iniciar ou ajustar hipouricemiante durante a crise aguda (pode prolongá-la) é cobrança certíssima e um dos pontos mais importantes e recorrentes do tema. A birrefringência negativa dos cristais de urato (versus birrefringência positiva fraca do pirofosfato de cálcio na pseudogota) também é frequentemente exigida em questões de diagnóstico diferencial de cristalopatias."
       }
     ]
   },
@@ -4033,7 +4093,7 @@
     "titulo": "Neoplasias Hematológicas: Leucemias e Linfomas",
     "resumo": "Leucemias agudas e crônicas, linfoma de Hodgkin x não Hodgkin e o significado dos sintomas B.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia — Diretrizes de Leucemias e Linfomas; NCCN Guidelines for Hodgkin and Non-Hodgkin Lymphoma",
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; NCCN Guidelines for Leukemia and Lymphoma; Classificação de Ann Arbor",
     "mnemonicos": [
       {
         "palavra": "Sintomas B",
@@ -4042,28 +4102,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Leucemias agudas",
-        "conteudo": "Proliferação de células imaturas (blastos) na medula óssea, com apresentação abrupta: anemia, plaquetopenia (sangramento) e neutropenia funcional (infecções), além de possível infiltração extramedular. A leucemia linfoblástica aguda (LLA) predomina na infância; a leucemia mieloide aguda (LMA) predomina no adulto."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As leucemias agudas (linfoblástica em crianças, mieloide em adultos, predominantemente) resultam de proliferação clonal descontrolada de células precursoras hematopoiéticas imaturas (blastos), que infiltram a medula óssea e suprimem a hematopoiese normal, causando pancitopenia. Os linfomas originam-se de linfócitos, classificados em Hodgkin (com a célula de Reed-Sternberg característica, disseminação contígua e ordenada entre cadeias linfonodais) e não Hodgkin (grupo heterogêneo, disseminação mais imprevisível e frequentemente extranodal)."
       },
       {
-        "titulo": "Leucemias crônicas",
-        "conteudo": "Leucemia linfocítica crônica (LLC): geralmente assintomática, achado incidental de linfocitose em idosos, curso indolente. Leucemia mieloide crônica (LMC): associada ao cromossomo Filadélfia (translocação BCR-ABL), com tratamento atual por inibidores de tirosina quinase (imatinibe e sucessores) e excelente resposta."
+        "titulo": "Quadro clínico",
+        "conteudo": "Leucemias agudas manifestam-se com sintomas decorrentes da falência medular: anemia (fadiga, palidez), plaquetopenia (sangramentos, petéquias) e neutropenia (infecções de repetição/graves) — instalação tipicamente rápida, em dias a poucas semanas. Linfomas manifestam-se com linfadenopatia indolor persistente e sintomas B (febre, sudorese noturna profusa, perda de peso não intencional maior que 10% em 6 meses), estes últimos com valor prognóstico relevante e utilizados na classificação de estadiamento."
       },
       {
-        "titulo": "Linfoma de Hodgkin",
-        "conteudo": "Acometimento predominantemente ganglionar, com disseminação contígua e previsível entre cadeias linfonodais adjacentes. A célula de Reed-Sternberg é o achado histológico característico à biópsia. Bom prognóstico geral com quimioterapia."
+        "titulo": "Exame físico",
+        "conteudo": "Palidez, petéquias/equimoses e hepatoesplenomegalia são comuns nas leucemias agudas. Hipertrofia gengival é achado clássico, embora não exclusivo, de certos subtipos de leucemia mieloide aguda (monocítica). Linfadenopatia indolor, de consistência firme/elástica (diferente da linfadenopatia infecciosa, tipicamente dolorosa) é o achado central dos linfomas, podendo ser localizada ou generalizada."
       },
       {
-        "titulo": "Linfomas não Hodgkin",
-        "conteudo": "Grupo heterogêneo, com disseminação não contígua entre cadeias linfonodais. Podem ser indolentes (ex.: linfoma folicular) ou agressivos (ex.: linfoma difuso de grandes células B). A biópsia excisional do linfonodo é essencial para classificação e definição terapêutica."
+        "titulo": "Diagnóstico",
+        "conteudo": "Leucemias agudas são diagnosticadas por mielograma (aspirado de medula óssea) com contagem de blastos ≥20% e imunofenotipagem para definir a linhagem (linfoide ou mieloide). Linfomas são diagnosticados por biópsia excisional de linfonodo (não apenas punção aspirativa por agulha fina, insuficiente para avaliar a arquitetura tecidual necessária ao diagnóstico e subtipagem), com estadiamento subsequente pela classificação de Ann Arbor (baseada no número e localização de cadeias linfonodais acometidas, e presença de doença extranodal) usando PET-CT."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Leucemias agudas são tratadas com poliquimioterapia intensiva de indução seguida de consolidação, com transplante de células-tronco hematopoiéticas reservado a casos de alto risco ou recidiva. Linfoma de Hodgkin tem excelente prognóstico com quimioterapia combinada (esquema ABVD classicamente), mesmo em estágios avançados. Linfomas não Hodgkin têm tratamento mais heterogêneo conforme o subtipo histológico e a agressividade biológica, variando de observação vigilante em formas indolentes a quimioimunoterapia intensiva em formas agressivas."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Sintomas B (febre, sudorese noturna profusa, perda de peso maior que 10% em 6 meses) associados a linfadenopatia indicam maior estadiamento e pior prognóstico nos linfomas, exigindo investigação prioritária."
+        "conteudo": "<span class=\"red-flag\">Contagem de leucócitos muito elevada com sinais de leucostase (confusão mental, dispneia, distúrbios visuais) em leucemia aguda</span> é emergência oncológica que exige redução urgente da contagem leucocitária (leucaférese ou quimioterapia citorredutora imediata), pelo risco de obstrução da microcirculação cerebral e pulmonar."
       },
       {
-        "titulo": "Mieloma múltiplo",
-        "conteudo": "Neoplasia de plasmócitos que produz imunoglobulina monoclonal (componente M), mais comum em idosos. Manifestações clássicas resumidas no acrônimo CRAB: hiperCalcemia, insuficiência Renal, Anemia e lesões ósseas líticas (Bone), com dor óssea e risco de fraturas patológicas. Eletroforese de proteínas séricas identifica o pico monoclonal; a investigação inclui mielograma e radiografia do esqueleto (lesões líticas em \"saca-bocado\")."
+        "titulo": "Dicas de prova",
+        "conteudo": "A necessidade de biópsia excisional (não apenas PAAF) para diagnóstico definitivo de linfoma é cobrança certa e recorrente. Os sintomas B (febre, sudorese noturna, perda de peso) e seu valor na classificação de Ann Arbor, e a diferenciação entre leucemia aguda (pancitopenia de instalação rápida por falência medular) e linfoma (linfadenopatia com sintomas B), também são frequentemente exigidos."
       }
     ]
   },
@@ -4074,7 +4138,7 @@
     "titulo": "Distúrbios da Coagulação: Hemofilias, Doença de von Willebrand e CIVD",
     "resumo": "Interpretação de TP/TTPa e reconhecimento das principais coagulopatias hereditárias e adquiridas.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia — Manual de Coagulopatias; ISTH Guidelines for Diagnosis of DIC",
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; ISTH Guidelines for Diagnosis of DIC",
     "mnemonicos": [
       {
         "palavra": "TTPa Intrínseco, TP Extrínseco",
@@ -4083,24 +4147,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Hemofilias A e B",
-        "conteudo": "Distúrbios hereditários ligados ao X (deficiência do fator VIII na hemofilia A, do fator IX na hemofilia B), praticamente restritos ao sexo masculino. Sangramentos característicos em articulações (hemartrose) e músculos. TTPa prolongado com TP normal."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As hemofilias A (deficiência de fator VIII) e B (deficiência de fator IX) são doenças genéticas ligadas ao X, causando deficiência da via intrínseca da coagulação, com sangramentos predominantemente profundos (hemartroses, hematomas musculares). A doença de von Willebrand, o distúrbio hemorrágico hereditário mais comum, envolve deficiência ou disfunção do fator de von Willebrand, comprometendo tanto a adesão plaquetária quanto a estabilização do fator VIII, causando sangramentos predominantemente mucocutâneos. A coagulação intravascular disseminada (CIVD) é uma síndrome adquirida de ativação sistêmica descontrolada da coagulação, consumindo fatores e plaquetas simultaneamente e causando, paradoxalmente, tanto trombose microvascular quanto sangramento."
       },
       {
-        "titulo": "Doença de von Willebrand",
-        "conteudo": "Distúrbio hemorrágico hereditário mais comum, de herança autossômica, afetando igualmente homens e mulheres. Sangramento mucocutâneo predominante (epistaxe, gengivorragia, menorragia), já que o fator de von Willebrand também é necessário para a adesão plaquetária adequada."
+        "titulo": "Quadro clínico",
+        "conteudo": "Hemofilias manifestam-se com hemartroses recorrentes (joelhos, cotovelos, tornozelos, podendo levar a artropatia hemofílica crônica) e hematomas musculares extensos, geralmente após trauma mínimo, com gravidade proporcional ao nível residual do fator deficiente. Doença de von Willebrand causa sangramento mucocutâneo (epistaxe, gengivorragia, menorragia) desde a infância/adolescência. CIVD manifesta-se com sangramento em múltiplos sítios (venopunções, mucosas) associado a sinais de trombose microvascular (isquemia digital, disfunção de órgãos), tipicamente em contexto de doença grave desencadeante (sepse, trauma maciço, complicação obstétrica)."
       },
       {
-        "titulo": "Coagulação intravascular disseminada (CIVD)",
-        "conteudo": "Ativação sistêmica e descontrolada da coagulação, consumindo fatores e plaquetas, com formação de microtrombos e, paradoxalmente, sangramento difuso. Desencadeada por sepse, trauma grave e complicações obstétricas (descolamento de placenta), entre outras. Laboratório: plaquetopenia, prolongamento de TP/TTPa, D-dímero elevado e fibrinogênio baixo."
+        "titulo": "Exame físico",
+        "conteudo": "Hemartrose aguda (articulação edemaciada, dolorosa, quente) em criança/jovem do sexo masculino sugere fortemente hemofilia. Sangramento mucoso difuso (gengival, nasal) espontâneo sugere doença de von Willebrand ou distúrbio plaquetário. Sangramento em múltiplos sítios simultâneos associado a sinais de disfunção orgânica em paciente criticamente enfermo sugere CIVD em curso."
       },
       {
-        "titulo": "Abordagem laboratorial inicial",
-        "conteudo": "TP prolongado isolado sugere deficiência de fator VII ou uso de varfarina. TTPa prolongado isolado sugere hemofilias ou uso de heparina. Prolongamento de ambos sugere deficiência de fatores da via comum ou coagulopatia de consumo (CIVD)."
+        "titulo": "Diagnóstico",
+        "conteudo": "Hemofilias apresentam TTPa (tempo de tromboplastina parcial ativada) prolongado com TP (tempo de protrombina) normal, confirmadas por dosagem específica do fator deficiente. Doença de von Willebrand tem perfil laboratorial mais variável, exigindo dosagem específica do antígeno e da atividade funcional do fator de von Willebrand. CIVD é diagnosticada por escore combinando plaquetopenia, prolongamento de TP/TTPa, D-dímero muito elevado e fibrinogênio reduzido, sempre no contexto clínico de uma doença desencadeante identificável."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Hemofilias são tratadas com reposição do fator deficiente (concentrado de fator VIII ou IX, ou terapias mais recentes como emicizumabe para hemofilia A) diante de sangramento ou profilaticamente em casos graves. Doença de von Willebrand é tratada com desmopressina (DDAVP, que libera estoques endógenos do fator, eficaz nos tipos leves) ou concentrado de fator von Willebrand nos casos mais graves/refratários. CIVD é tratada primariamente pelo controle da doença de base desencadeante, com suporte transfusional (plasma fresco, crioprecipitado, plaquetas) guiado pela gravidade do sangramento clínico, não apenas pelos valores laboratoriais isolados."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sangramento difuso associado a plaquetopenia e consumo de fatores</span> em paciente grave (sepse, trauma, complicação obstétrica) deve levantar suspeita imediata de CIVD, com tratamento direcionado à causa de base associado a suporte transfusional."
+        "conteudo": "<span class=\"red-flag\">Sangramento em múltiplos sítios associado a sinais de falência de órgãos em paciente séptico ou com complicação obstétrica grave</span> deve levantar suspeita imediata de CIVD, condição de alta mortalidade que exige tratamento agressivo da causa de base associado a suporte hemostático guiado pela clínica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O padrão de TTPa prolongado com TP normal nas hemofilias é cobrança certa e recorrente. O reconhecimento de CIVD como processo simultâneo de trombose e sangramento (não apenas sangramento isolado), sempre secundário a uma doença de base, e a distinção do padrão de sangramento articular/muscular (hemofilias) versus mucocutâneo (von Willebrand/plaquetário) também são pontos frequentemente exigidos."
       }
     ]
   },
@@ -6991,7 +7063,7 @@
     "titulo": "Vasculites Sistêmicas",
     "resumo": "Classificação por tamanho de vaso e a emergência da arterite de células gigantes (risco de cegueira).",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Reumatologia — Diretrizes de Vasculites; EULAR Recommendations for the Management of Large Vessel Vasculitis",
+    "fonte": "Sociedade Brasileira de Reumatologia; Nomenclatura de Chapel Hill para Vasculites Sistêmicas (2012)",
     "mnemonicos": [
       {
         "palavra": "Temporal cega, não espera biópsia",
@@ -7000,24 +7072,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação por tamanho de vaso",
-        "conteudo": "Pequenos vasos: granulomatose com poliangiite (Wegener), poliangiite microscópica, granulomatose eosinofílica (Churg-Strauss), púrpura de Henoch-Schönlein (mais comum em crianças). Médios vasos: poliarterite nodosa, doença de Kawasaki (pediátrica). Grandes vasos: arterite de Takayasu (mulheres jovens) e arterite de células gigantes (idosos)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As vasculites sistêmicas são classificadas conforme o calibre predominante dos vasos acometidos: grandes vasos (arterite de células gigantes, arterite de Takayasu), médios vasos (poliarterite nodosa, doença de Kawasaki), e pequenos vasos (vasculites associadas a ANCA — granulomatose com poliangiite, poliangiite microscópica — e vasculites por imunocomplexos). O mecanismo comum é a inflamação da parede vascular, causando desde estenose/oclusão (isquemia tecidual a jusante) até ruptura/aneurisma, conforme o tipo específico."
       },
       {
-        "titulo": "Granulomatose com poliangiite",
-        "conteudo": "Tríade clássica de acometimento de vias aéreas superiores (sinusite crônica, perfuração de septo nasal), pulmonar (nódulos/cavitações) e renal (glomerulonefrite rapidamente progressiva). ANCA-c/anti-proteinase 3 positivo na maioria dos casos."
+        "titulo": "Quadro clínico",
+        "conteudo": "Arterite de células gigantes acomete predominantemente pacientes acima de 50 anos, com cefaleia temporal, claudicação mandibular à mastigação e risco de cegueira súbita irreversível por neuropatia óptica isquêmica se não tratada rapidamente — associação frequente com polimialgia reumática (dor e rigidez em cinturas escapular/pélvica). Granulomatose com poliangiite classicamente acomete trato respiratório superior/inferior e rins (síndrome pulmão-rim), com sinusite crônica, hemoptise e glomerulonefrite rapidamente progressiva."
       },
       {
-        "titulo": "Arterite de células gigantes e polimialgia reumática",
-        "conteudo": "A arterite de células gigantes acomete predominantemente a artéria temporal em idosos, causando cefaleia temporal, claudicação de mandíbula e risco de cegueira súbita irreversível. Frequentemente associada à polimialgia reumática (dor e rigidez em cinturas escapular/pélvica, com VHS muito elevada)."
+        "titulo": "Exame físico",
+        "conteudo": "Espessamento e dor à palpação da artéria temporal, com redução ou ausência de pulso temporal, é achado característico da arterite de células gigantes. Perfuração de septo nasal e deformidade em sela nasal sugerem granulomatose com poliangiite. Púrpura palpável em membros inferiores é achado comum às vasculites de pequenos vasos em geral, refletindo o acometimento de vênulas pós-capilares dérmicas."
       },
       {
-        "titulo": "Arterite de Takayasu",
-        "conteudo": "Acomete aorta e seus ramos principais, predominantemente mulheres jovens. Causa claudicação de membros, assimetria de pulsos e de pressão arterial entre os membros — a chamada \"doença sem pulso\"."
+        "titulo": "Diagnóstico",
+        "conteudo": "Arterite de células gigantes é confirmada por biópsia de artéria temporal (mostrando arterite granulomatosa com células gigantes), embora o tratamento com corticoide não deva aguardar o resultado da biópsia diante de suspeita clínica forte com risco visual iminente. Vasculites ANCA-associadas são investigadas por sorologia (c-ANCA/anti-PR3 associado a granulomatose com poliangiite; p-ANCA/anti-MPO associado a poliangiite microscópica), com biópsia de tecido acometido confirmando o diagnóstico definitivo."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Arterite de células gigantes com sintomas visuais é emergência que exige corticoide em altíssima dose imediatamente, mesmo antes da confirmação por biópsia, pelo risco de cegueira permanente e irreversível caso o tratamento seja postergado. Vasculites ANCA-associadas graves são tratadas com corticoide associado a imunossupressor potente (ciclofosfamida ou rituximabe), conforme gravidade e extensão do acometimento de órgãos."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Cefaleia temporal nova em idoso associada a claudicação de mandíbula</span> é emergência oftalmológica/reumatológica — corticoide em altas doses deve ser iniciado imediatamente para prevenir cegueira irreversível."
+        "conteudo": "<span class=\"red-flag\">Cefaleia temporal, claudicação mandibular e alteração visual aguda em paciente acima de 50 anos</span> caracteriza emergência oftalmológica por arterite de células gigantes — corticoide em altíssima dose deve ser iniciado imediatamente, sem aguardar biópsia de artéria temporal, para prevenir cegueira irreversível."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A urgência de iniciar corticoide antes da biópsia na suspeita de arterite de células gigantes com sintomas visuais é cobrança certíssima e um dos pontos de maior relevância prática e de prova em toda a reumatologia. A associação c-ANCA/PR3 com granulomatose com poliangiite e p-ANCA/MPO com poliangiite microscópica também é frequentemente exigida."
       }
     ]
   },
@@ -7028,7 +7108,7 @@
     "titulo": "Colagenoses: Esclerodermia, Miopatias Inflamatórias e Síndrome de Sjögren",
     "resumo": "Esclerose sistêmica (CREST x difusa), dermatomiosite/polimiosite e a associação da dermatomiosite com neoplasia oculta.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Reumatologia — Diretrizes de Esclerose Sistêmica e Miopatias Inflamatórias; ACR/EULAR Classification Criteria",
+    "fonte": "Sociedade Brasileira de Reumatologia; EULAR/ACR Classification Criteria for Systemic Sclerosis e Idiopathic Inflammatory Myopathies",
     "mnemonicos": [
       {
         "palavra": "CREST",
@@ -7037,24 +7117,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Esclerose sistêmica (esclerodermia)",
-        "conteudo": "Espessamento e fibrose cutânea progressiva, associada a fenômeno de Raynaud (quase universal) e acometimento visceral (esôfago, pulmão, rim). Forma limitada (CREST) x forma difusa (acometimento cutâneo mais extenso e progressão visceral mais rápida)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A esclerose sistêmica (esclerodermia) caracteriza-se por fibrose excessiva da pele e órgãos internos, associada a vasculopatia de pequenos vasos e ativação autoimune, classificada em forma cutânea limitada (fibrose restrita a face, mãos e antebraços, associada ao anticorpo anticentrômero) e difusa (acometimento cutâneo extenso e progressão mais rápida para órgãos internos, associada ao anti-topoisomerase I/Scl-70). As miopatias inflamatórias idiopáticas (dermatomiosite e polimiosite) envolvem inflamação autoimune do músculo esquelético, com dermatomiosite apresentando também achados cutâneos característicos e maior associação com neoplasia oculta subjacente."
       },
       {
-        "titulo": "Miopatias inflamatórias",
-        "conteudo": "Dermatomiosite e polimiosite causam fraqueza muscular proximal simétrica e progressiva, com elevação de enzimas musculares (CPK). A dermatomiosite associa achados cutâneos característicos — heliotropo e pápulas de Gottron — e tem associação relevante com neoplasias ocultas, justificando rastreamento oncológico ao diagnóstico."
+        "titulo": "Quadro clínico",
+        "conteudo": "Fenômeno de Raynaud (mudança de coloração trifásica dos dedos — branco, azul, vermelho — desencadeada por frio/estresse) é frequentemente a primeira manifestação da esclerose sistêmica, precedendo em anos o espessamento cutâneo. Miopatias inflamatórias causam fraqueza muscular proximal simétrica e progressiva (dificuldade de subir escadas, levantar os braços), com dermatomiosite adicionando achados cutâneos característicos (heliotropo — eritema violáceo periorbitário — e pápulas de Gottron sobre as articulações interfalangeanas)."
       },
       {
-        "titulo": "Síndrome de Sjögren",
-        "conteudo": "Doença autoimune que acomete predominantemente glândulas exócrinas, causando xerostomia e xeroftalmia (ceratoconjuntivite sicca). Pode ser primária ou secundária a outra doença autoimune (mais comumente AR ou LES); risco aumentado de linfoma não Hodgkin a longo prazo."
+        "titulo": "Exame físico",
+        "conteudo": "Esclerodactilia (espessamento e endurecimento da pele dos dedos) e telangiectasias são achados característicos da esclerose sistêmica. Heliotropo e pápulas de Gottron são praticamente patognomônicos de dermatomiosite quando presentes. Fraqueza muscular proximal (dificuldade em se levantar de uma cadeira sem apoio dos braços) é o achado motor central das miopatias inflamatórias, contrastando com a preservação relativa da força distal."
       },
       {
-        "titulo": "Doença mista do tecido conjuntivo",
-        "conteudo": "Sobreposição de características de LES, esclerodermia e miopatia inflamatória, fortemente associada a anticorpo anti-RNP em título elevado."
+        "titulo": "Diagnóstico",
+        "conteudo": "Capilaroscopia periungueal auxilia a diferenciar Raynaud primário (benigno, capilares normais) de secundário a doença do tecido conjuntivo (padrão capilaroscópico alterado, sugerindo esclerodermia subjacente). Autoanticorpos específicos (anticentrômero na forma limitada, anti-Scl-70 na difusa) orientam o subtipo e prognóstico da esclerose sistêmica. Miopatias inflamatórias são confirmadas por elevação de enzimas musculares (CK), eletroneuromiografia com padrão miopático, e biópsia muscular quando necessária para confirmação definitiva."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Esclerose sistêmica não tem tratamento curativo, sendo o manejo dirigido a cada manifestação de órgão: bloqueadores de canal de cálcio para Raynaud, imunossupressores para envolvimento pulmonar/cutâneo progressivo, e IECA (fundamental) para a crise renal esclerodérmica. Miopatias inflamatórias são tratadas com corticoide em altas doses como primeira linha, associado a imunossupressor poupador de corticoide (metotrexato, azatioprina) em casos refratários ou para permitir redução da dose de corticoide a longo prazo."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Crise renal esclerodérmica</span> (hipertensão maligna de início abrupto com lesão renal aguda) é complicação grave da esclerose sistêmica difusa — o IECA é o tratamento de escolha, mesmo com função renal comprometida."
+        "conteudo": "<span class=\"red-flag\">Hipertensão arterial de início abrupto associada a piora aguda da função renal em paciente com esclerose sistêmica</span> caracteriza crise renal esclerodérmica, emergência que exige IECA imediatamente (mesmo com função renal já comprometida, situação em que o IECA seria classicamente evitado em outros contextos) — o atraso no tratamento associa-se a insuficiência renal irreversível."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O IECA como tratamento de escolha da crise renal esclerodérmica (uma das raras situações em reumatologia/nefrologia em que se usa IECA mesmo diante de piora renal aguda) é cobrança certa e ponto de alta relevância prática. O heliotropo e as pápulas de Gottron como achados patognomônicos de dermatomiosite, e sua associação com neoplasia oculta (justificando rastreamento oncológico ao diagnóstico), também são frequentemente exigidos."
       }
     ]
   },
@@ -7065,7 +7153,7 @@
     "titulo": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
     "resumo": "Indicações dos principais hemocomponentes e a conduta imediata diante de suspeita de reação transfusional.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Guia para Uso de Hemocomponentes; AABB Standards for Blood Banks and Transfusion Services",
+    "fonte": "Ministério da Saúde — Guia para Uso de Hemocomponentes; Sociedade Brasileira de Hematologia e Hemoterapia",
     "mnemonicos": [
       {
         "palavra": "Pare, verifique, investigue",
@@ -7074,24 +7162,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Principais hemocomponentes",
-        "conteudo": "Concentrado de hemácias (repor capacidade de transporte de oxigênio, geralmente com Hb <7g/dL em paciente estável), concentrado de plaquetas (sangramento ativo com plaquetopenia ou profilaxia pré-procedimento), plasma fresco congelado (repor múltiplos fatores de coagulação) e crioprecipitado (rico em fibrinogênio e fator VIII)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A transfusão de hemocomponentes visa repor déficits específicos: concentrado de hemácias corrige anemia sintomática/aguda; concentrado de plaquetas previne ou trata sangramento por plaquetopenia/disfunção plaquetária; plasma fresco congelado repõe múltiplos fatores de coagulação em coagulopatias; crioprecipitado é rico em fibrinogênio, fator VIII e fator de von Willebrand, indicado especificamente em hipofibrinogenemia. As reações transfusionais decorrem de incompatibilidade imunológica (hemolítica aguda, a mais grave, por incompatibilidade ABO) ou de reações não imunológicas (sobrecarga volêmica, contaminação bacteriana, lesão pulmonar aguda relacionada à transfusão)."
       },
       {
-        "titulo": "Reação transfusional hemolítica aguda",
-        "conteudo": "A mais grave, geralmente por incompatibilidade ABO. Febre, calafrios, dor lombar, hipotensão e hemoglobinúria durante ou logo após a transfusão — interromper a transfusão imediatamente diante de qualquer sinal suspeito."
+        "titulo": "Quadro clínico",
+        "conteudo": "Reação hemolítica aguda (por incompatibilidade ABO, geralmente por erro de identificação do paciente/amostra) manifesta-se com febre, calafrios, dor lombar, hipotensão e hemoglobinúria, minutos após o início da transfusão — emergência que exige interrupção imediata. Reação febril não hemolítica (a mais comum) causa apenas febre e calafrios sem hemólise. TRALI (lesão pulmonar aguda relacionada à transfusão) manifesta-se com dispneia aguda e infiltrado pulmonar bilateral, geralmente nas primeiras 6 horas da transfusão, podendo mimetizar sobrecarga volêmica."
       },
       {
-        "titulo": "Reação febril não hemolítica",
-        "conteudo": "A reação transfusional mais comum, por anticorpos contra leucócitos residuais do doador. Febre e calafrios sem hemólise, tratada com antitérmico; uso de filtro leucorredutor reduz recorrência."
+        "titulo": "Exame físico",
+        "conteudo": "Febre, calafrios e hipotensão durante ou logo após a transfusão devem motivar interrupção imediata e reavaliação cuidadosa antes de qualquer conduta adicional. Sinais de sobrecarga volêmica (estertores, turgência jugular, hipertensão) sugerem TACO (sobrecarga circulatória associada à transfusão), diferencial importante do TRALI (que cursa tipicamente com hipotensão, não hipertensão)."
       },
       {
-        "titulo": "TRALI",
-        "conteudo": "Lesão pulmonar aguda relacionada à transfusão: insuficiência respiratória aguda hipoxêmica durante ou até 6 horas após a transfusão, semelhante a uma SDRA — quadro grave que exige suporte ventilatório."
+        "titulo": "Diagnóstico",
+        "conteudo": "Diante de suspeita de reação transfusional, a transfusão deve ser interrompida imediatamente e o hemocomponente enviado ao banco de sangue para investigação (reverificação de tipagem sanguínea e prova cruzada, pesquisa de hemólise). A diferenciação entre TRALI e TACO (sobrecarga) é feita clinicamente e por exames complementares (peptídeo natriurético elevado favorece TACO; TRALI tipicamente não responde a diurético)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Diante de qualquer suspeita de reação transfusional aguda, a primeira conduta é sempre interromper a transfusão imediatamente e manter acesso venoso com solução salina, antes mesmo de investigar a causa específica. Reação febril não hemolítica é tratada sintomaticamente com antitérmico. Reação hemolítica aguda exige suporte hemodinâmico e renal agressivo (risco de lesão renal aguda pela hemoglobina livre). TRALI exige suporte respiratório (podendo necessitar ventilação mecânica), sem benefício de diurético (diferente do TACO, que responde bem a essa medida)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Febre, dor lombar e hipotensão logo após início da transfusão</span> devem levar à interrupção IMEDIATA da transfusão e investigação de reação hemolítica aguda — a demora agrava significativamente o desfecho."
+        "conteudo": "<span class=\"red-flag\">Febre, hipotensão e dor lombar minutos após início de transfusão de concentrado de hemácias</span> caracteriza reação hemolítica aguda por incompatibilidade ABO — emergência que exige interrupção imediata da transfusão, antes mesmo de qualquer investigação complementar, pelo risco de coagulopatia de consumo e insuficiência renal aguda subsequentes."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A conduta \"interromper a transfusão primeiro, investigar depois\" diante de qualquer sinal de reação aguda é cobrança certíssima e o ponto mais valorizado do tema. A diferenciação entre TRALI (hipotensão, sem resposta a diurético) e TACO (hipertensão, responde a diurético) também é frequentemente exigida em questões de diagnóstico diferencial de dispneia pós-transfusional."
       }
     ]
   },
