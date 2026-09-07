@@ -456,7 +456,7 @@
     "titulo": "Abdome Agudo Inflamatório — Apendicite Aguda",
     "resumo": "Quadro clínico, escore de Alvarado e conduta cirúrgica na apendicite aguda.",
     "revisado": false,
-    "fonte": "World Society of Emergency Surgery (WSES) Jerusalem Guidelines for Acute Appendicitis (2020); Colegio Brasileiro de Cirurgioes",
+    "fonte": "Colégio Brasileiro de Cirurgiões — Diretriz de Apendicite Aguda; World Society of Emergency Surgery (WSES) Guidelines",
     "mnemonicos": [
       {
         "palavra": "MANTRELS",
@@ -465,24 +465,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A apendicite aguda resulta da obstrução do lúmen apendicular (mais comumente por fecalito, mas também hiperplasia linfoide ou, mais raramente, neoplasia), causando distensão progressiva, comprometimento vascular da parede apendicular, translocação bacteriana e, se não tratada, necrose e perfuração — processo que tipicamente evolui em 24 a 72 horas do início dos sintomas, justificando a urgência relativa (não absoluta) da intervenção."
+      },
+      {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor periumbilical de início insidioso que migra e se localiza na fossa ilíaca direita, associada a anorexia, náuseas e sinais de irritação peritoneal localizada (Blumberg positivo)."
+        "conteudo": "Dor abdominal migratória é a apresentação clássica: inicia-se periumbilical/epigástrica (dor visceral inespecífica, mal localizada), migrando em horas para a fossa ilíaca direita (dor somática, bem localizada, pela irritação peritoneal parietal adjacente) — essa migração é o elemento anamnésico mais valorizado na suspeita clínica. Anorexia, náuseas e febre baixa geralmente acompanham o quadro."
       },
       {
-        "titulo": "Avaliação diagnóstica",
-        "conteudo": "O escore de Alvarado (MANTRELS) auxilia a estimar probabilidade diagnóstica. Exames de imagem (ultrassonografia ou tomografia de abdome) são úteis em quadros duvidosos, especialmente em mulheres em idade fértil e crianças."
+        "titulo": "Exame físico",
+        "conteudo": "Dor à palpação e descompressão brusca dolorosa (sinal de Blumberg) no ponto de McBurney (terço distal entre a espinha ilíaca anterossuperior e o umbigo) são os achados centrais. Sinal de Rovsing (dor em fossa ilíaca direita à palpação da fossa ilíaca esquerda), sinal do psoas (dor à extensão passiva do quadril direito) e sinal do obturador (dor à rotação interna da coxa fletida) são achados adicionais que reforçam a suspeita, especialmente úteis em apresentações atípicas (apêndice retrocecal ou pélvico)."
       },
       {
-        "titulo": "Conduta",
-        "conteudo": "Apendicectomia (aberta ou videolaparoscópica) é o tratamento definitivo na maioria dos casos, associada a antibioticoprofilaxia perioperatória."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é predominantemente clínico em apresentações típicas, auxiliado por escores validados (como o escore de Alvarado) que combinam achados clínicos e laboratoriais para estimar a probabilidade diagnóstica. Tomografia de abdome com contraste é o exame de imagem mais acurado em adultos com apresentação duvidosa; ultrassonografia é preferida em crianças e gestantes pela ausência de radiação ionizante, embora com menor sensibilidade global."
       },
       {
-        "titulo": "Complicações",
-        "conteudo": "Perfuração apendicular, formação de abscesso localizado e peritonite generalizada são complicações do atraso diagnóstico ou terapêutico."
+        "titulo": "Tratamento",
+        "conteudo": "Apendicectomia (por via laparoscópica ou aberta) é o tratamento definitivo padrão. Em casos selecionados de apendicite não complicada, o tratamento antibiótico isolado tem sido estudado como alternativa não cirúrgica, com taxas de sucesso inicial razoáveis, mas ainda associado a risco relevante de recorrência a médio prazo, sendo a cirurgia a conduta preferencial e mais consolidada na maioria dos serviços. Apendicite perfurada com abscesso estabelecido pode ser tratada inicialmente com drenagem percutânea e antibiótico, com apendicectomia interválica (semanas depois) em casos selecionados."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sinais de peritonite difusa (dor à descompressão generalizada, abdome em tábua) e sepse de foco abdominal</span> exigem abordagem cirúrgica de urgência."
+        "conteudo": "<span class=\"red-flag\">Melhora súbita e completa da dor seguida de piora com sinais de peritonite generalizada</span> pode indicar perfuração apendicular com alívio transitório da pressão intraluminal seguido de peritonite difusa — essa evolução paradoxal não deve ser interpretada como resolução espontânea do quadro."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A dor migratória (periumbilical → fossa ilíaca direita) é o elemento semiológico mais cobrado e mais valorizado na anamnese de apendicite. Os sinais de Blumberg, Rovsing, psoas e obturador (e suas respectivas técnicas de pesquisa) também são frequentemente exigidos em questões de exame físico dirigido."
       }
     ]
   },
@@ -493,7 +501,7 @@
     "titulo": "Trauma — Avaliação Inicial (ABCDE)",
     "resumo": "Sequência sistematizada de avaliação e estabilização inicial do politraumatizado.",
     "revisado": false,
-    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons)",
+    "fonte": "American College of Surgeons — Advanced Trauma Life Support (ATLS), 10ª edição; Sociedade Brasileira de Atendimento Integrado ao Traumatizado",
     "mnemonicos": [
       {
         "palavra": "ABCDE",
@@ -502,24 +510,32 @@
     ],
     "secoes": [
       {
-        "titulo": "A — Via aérea e coluna cervical",
-        "conteudo": "Garantir via aérea pérvia com proteção manual ou com colar cervical, assumindo lesão de coluna cervical até que se prove o contrário."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O atendimento inicial ao politraumatizado segue uma abordagem sistemática e sequencial (ABCDE) baseada no princípio de tratar primeiro o que mata mais rápido, independentemente da lesão mais aparente ou dramática. Lesões de via aérea matam em minutos, seguidas por problemas de ventilação, depois circulatórios (choque hemorrágico), depois neurológicos e, por fim, exposição/hipotermia — essa hierarquia de prioridades orienta toda a lógica do atendimento inicial, com reavaliação constante e repetida do ABCDE diante de qualquer deterioração."
       },
       {
-        "titulo": "B — Respiração e ventilação",
-        "conteudo": "Inspecionar e palpar o tórax em busca de pneumotórax hipertensivo, tórax instável ou hemotórax, que exigem intervenção imediata (descompressão, drenagem torácica)."
+        "titulo": "Quadro clínico",
+        "conteudo": "A apresentação varia conforme o mecanismo e a extensão das lesões, mas a avaliação primária busca sistematicamente sinais que indiquem risco iminente de morte em cada uma das cinco etapas: obstrução de via aérea (estridor, disfonia), insuficiência respiratória (taquipneia, assimetria de expansão), choque (taquicardia, hipotensão, pele fria), alteração neurológica (Escala de Coma de Glasgow) e lesões evidentes à exposição completa do paciente."
       },
       {
-        "titulo": "C — Circulação e controle de hemorragia",
-        "conteudo": "Identificar e controlar sangramentos externos (compressão direta), obter acessos venosos calibrosos e avaliar sinais de choque hemorrágico (taquicardia, hipotensão, perfusão periférica)."
+        "titulo": "Exame físico",
+        "conteudo": "Cada etapa do ABCDE tem achados específicos dirigidos: via aérea pérvia com controle de coluna cervical (A); frequência respiratória, ausculta e percussão torácica bilateral (B); pulsos, perfusão periférica, e identificação de fontes de sangramento externo (C); Escala de Coma de Glasgow e exame pupilar (D); exposição completa do paciente com prevenção ativa de hipotermia (E) — a sequência deve ser sempre respeitada, sem pular etapas mesmo diante de lesões aparentemente mais graves em fase posterior."
       },
       {
-        "titulo": "D — Avaliação neurológica",
-        "conteudo": "Avaliação rápida do nível de consciência (Escala de Coma de Glasgow) e das pupilas, para identificar sinais precoces de lesão do sistema nervoso central."
+        "titulo": "Diagnóstico",
+        "conteudo": "O FAST (Focused Assessment with Sonography for Trauma) é ultrassonografia point-of-care rápida que avalia a presença de líquido livre em cavidade peritoneal, pericárdica e pleural, sendo ferramenta central na avaliação circulatória (C) do paciente instável, permitindo decisão cirúrgica rápida sem necessidade de transporte para tomografia em paciente hemodinamicamente instável. Radiografias de tórax e bacia são obtidas rotineiramente na avaliação primária de trauma fechado significativo."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O manejo segue rigorosamente a sequência ABCDE: garantir via aérea pérvia com proteção da coluna cervical, oferecer suporte ventilatório conforme necessário, controlar hemorragias externas e repor volume (com transfusão precoce de hemocomponentes em proporção balanceada preferida a cristaloide excessivo no choque hemorrágico grave), avaliar e tratar lesões neurológicas, e completar a exposição com prevenção de hipotermia. Cada etapa deve ser resolvida antes de avançar para a próxima, com reavaliação constante do ABCDE completo diante de qualquer sinal de deterioração clínica."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Choque hemorrágico refratário à reposição volêmica inicial</span> sugere sangramento não controlado e indica necessidade de controle cirúrgico de danos."
+        "conteudo": "<span class=\"red-flag\">Instabilidade hemodinâmica com FAST positivo em paciente politraumatizado</span> é indicação de laparotomia exploradora de urgência, sem necessidade de aguardar tomografia — o atraso na decisão cirúrgica em paciente instável com hemorragia intracavitária confirmada é uma das principais causas de mortalidade evitável em trauma."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A sequência rígida do ABCDE (nunca avançar para a próxima letra sem resolver a anterior) é cobrança certíssima e o conceito mais fundamental de toda a abordagem ao trauma em provas de residência. O papel do FAST na decisão cirúrgica imediata em paciente instável, dispensando tomografia nesse cenário específico, também é frequentemente exigido."
       }
     ]
   },
@@ -756,7 +772,7 @@
     "titulo": "Colecistite e Colangite Aguda",
     "resumo": "Diagnóstico pelos critérios de Tóquio, tríade de Charcot/pêntade de Reynolds e conduta.",
     "revisado": false,
-    "fonte": "Tokyo Guidelines 2018 (TG18) for Acute Cholangitis and Cholecystitis",
+    "fonte": "Tokyo Guidelines 2018 for Acute Cholangitis and Cholecystitis; Colégio Brasileiro de Cirurgiões",
     "mnemonicos": [
       {
         "palavra": "TRÍADE DE CHARCOT",
@@ -765,24 +781,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Colecistite aguda",
-        "conteudo": "Dor em hipocôndrio direito com sinal de Murphy positivo; ultrassonografia mostra espessamento da parede vesicular, com ou sem cálculo impactado."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A colecistite aguda resulta, na grande maioria dos casos, da obstrução do ducto cístico por cálculo biliar, causando distensão, inflamação e, eventualmente, infecção secundária da parede vesicular. A colangite aguda resulta da obstrução do colédoco (mais comumente por coledocolitíase) associada à infecção ascendente da via biliar, configurando quadro potencialmente mais grave e sistêmico que a colecistite isolada, pela via de disseminação hematogênica facilitada pela própria árvore biliar obstruída e infectada."
       },
       {
-        "titulo": "Colangite aguda",
-        "conteudo": "A tríade de Charcot (dor, febre, icterícia) sugere colangite aguda por obstrução da via biliar, geralmente por coledocolitíase."
+        "titulo": "Quadro clínico",
+        "conteudo": "Colecistite aguda manifesta-se com dor em hipocôndrio direito persistente (diferente da cólica biliar simples, que é autolimitada em poucas horas), associada a febre e náuseas. Colangite aguda classicamente apresenta a tríade de Charcot (dor em hipocôndrio direito, febre e icterícia); quando associada a confusão mental e hipotensão, configura a pêntade de Reynolds, indicando colangite supurativa grave e choque séptico de origem biliar."
       },
       {
-        "titulo": "Critérios de Tóquio (TG18)",
-        "conteudo": "Combinam achados clínicos, laboratoriais (leucocitose, elevação de bilirrubinas/enzimas hepáticas) e de imagem para diagnóstico e graduação de gravidade da colecistite/colangite aguda."
+        "titulo": "Exame físico",
+        "conteudo": "O sinal de Murphy (interrupção da inspiração profunda pela dor à palpação do hipocôndrio direito) é o achado semiológico central e mais valorizado na suspeita de colecistite aguda. Icterícia associada a dor em hipocôndrio direito e febre (tríade de Charcot completa) direciona fortemente para colangite, distinta da colecistite isolada, que tipicamente não cursa com icterícia significativa."
       },
       {
-        "titulo": "Conduta",
-        "conteudo": "Antibioticoterapia empírica em ambos os quadros. Na colecistite, colecistectomia (momento conforme gravidade); na colangite, drenagem biliar (CPRE ou percutânea) associada a antibiótico."
+        "titulo": "Diagnóstico",
+        "conteudo": "Ultrassonografia abdominal é o exame de escolha inicial para colecistite, mostrando espessamento da parede vesicular, líquido pericolecístico e sinal de Murphy ultrassonográfico (dor à compressão da vesícula pelo transdutor). Colangite exige avaliação da via biliar (ultrassonografia inicial, com colangiorressonância ou CPRE para melhor caracterização), associada a hemoculturas dada a frequente bacteriemia concomitante."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Colecistite aguda é tratada com colecistectomia precoce (idealmente nas primeiras 72 horas do início dos sintomas), reduzindo tempo de internação e complicações comparado ao retardo cirúrgico. Colangite aguda exige antibioticoterapia imediata associada a desobstrução urgente da via biliar (CPRE com papilotomia é o método de escolha), sendo esta última etapa terapêutica essencial e não apenas diagnóstica — antibiótico isolado sem desobstução da via biliar obstruída tem alta chance de falha em colangite grave."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Pêntade de Reynolds (tríade de Charcot + hipotensão + confusão mental)</span> indica colangite aguda grave, exigindo drenagem biliar de urgência."
+        "conteudo": "<span class=\"red-flag\">Pêntade de Reynolds (tríade de Charcot associada a confusão mental e hipotensão)</span> indica colangite supurativa aguda com choque séptico, exigindo desobstução biliar de urgência (CPRE) associada a suporte hemodinâmico intensivo — condição de alta mortalidade se a desobstrução for postergada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O sinal de Murphy para colecistite e a tríade de Charcot/pêntade de Reynolds para colangite são cobranças certíssimas e centrais do tema. A necessidade de desobstrução urgente da via biliar (não apenas antibiótico) na colangite grave, e o momento ideal da colecistectomia precoce na colecistite (primeiras 72h), também são frequentemente exigidos."
       }
     ]
   },
@@ -1166,7 +1190,7 @@
     "titulo": "Obstrução Intestinal",
     "resumo": "Sinais cardinais, causas mais comuns e conduta conforme sinais de estrangulamento.",
     "revisado": false,
-    "fonte": "World Society of Emergency Surgery (WSES) Guidelines for Small Bowel Obstruction; Colegio Brasileiro de Cirurgioes",
+    "fonte": "Colégio Brasileiro de Cirurgiões; WSES Guidelines for Adhesive Small Bowel Obstruction",
     "mnemonicos": [
       {
         "palavra": "4 SINAIS CARDINAIS",
@@ -1175,24 +1199,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A obstrução intestinal mecânica resulta de bloqueio físico ao trânsito intestinal, sendo aderências pós-cirúrgicas a causa mais comum de obstrução de intestino delgado, e neoplasias a causa mais comum de obstrução colônica em adultos. A distensão progressiva das alças proximais à obstrução compromete a perfusão da parede intestinal, podendo evoluir para isquemia, necrose e perfuração se a obstrução for de alça fechada ou prolongada sem resolução."
+      },
+      {
         "titulo": "Quadro clínico",
-        "conteudo": "Os 4 sinais cardinais (dor em cólica, distensão, vômitos e parada de eliminação de gases/fezes) caracterizam a obstrução intestinal mecânica."
+        "conteudo": "Dor abdominal em cólica, distensão abdominal, vômitos (mais precoces e biliosos em obstruções altas, mais tardios e fecaloides em obstruções baixas) e parada de eliminação de gases e fezes compõem o quadro clássico. A intensidade e a velocidade de instalação variam conforme o nível e o grau (parcial ou completo) da obstrução."
       },
       {
-        "titulo": "Causas mais comuns",
-        "conteudo": "Aderências pós-operatórias são a causa mais comum de obstrução do intestino delgado; neoplasias e volvo predominam no intestino grosso."
+        "titulo": "Exame físico",
+        "conteudo": "Distensão abdominal difusa, timpanismo à percussão e ruídos hidroaéreos podem estar aumentados (\"de luta\", em fases iniciais) ou ausentes/diminuídos (em fases mais avançadas ou com comprometimento vascular associado). Sinais de irritação peritoneal (defesa, descompressão dolorosa) associados a febre e taquicardia sugerem estrangulamento com sofrimento de alça, mudando a conduta de observação para intervenção cirúrgica urgente."
       },
       {
-        "titulo": "Investigação",
-        "conteudo": "Radiografia simples de abdome evidencia níveis hidroaéreos; tomografia de abdome ajuda a definir o local e a causa da obstrução."
+        "titulo": "Diagnóstico",
+        "conteudo": "Radiografia de abdome simples pode mostrar níveis hidroaéreos e distensão de alças, sendo exame inicial rápido e amplamente disponível. Tomografia de abdome com contraste é mais sensível e específica, permitindo identificar o ponto e a causa da obstrução, além de sinais precoces de sofrimento vascular de alça (pneumatose intestinal, redução da captação de contraste pela parede) antes mesmo de sinais clínicos evidentes de estrangulamento."
       },
       {
-        "titulo": "Conduta inicial",
-        "conteudo": "Jejum, sondagem nasogástrica descompressiva e hidratação venosa compõem o tratamento conservador inicial na ausência de sinais de estrangulamento."
+        "titulo": "Tratamento",
+        "conteudo": "Obstrução parcial sem sinais de estrangulamento pode ser inicialmente tratada de forma conservadora com descompressão por sonda nasogástrica, reposição hidroeletrolítica e observação clínica rigorosa, com resolução espontânea em boa parte dos casos por aderências. Obstrução completa, refratária ao tratamento conservador, ou com qualquer sinal de estrangulamento/isquemia exige intervenção cirúrgica de urgência para lise de aderências, ressecção de segmento inviável, ou tratamento da causa obstrutiva subjacente (neoplasia, hérnia encarcerada)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor contínua e intensa, febre, taquicardia e sinais de peritonite</span> sugerem sofrimento/estrangulamento de alça — indicação de cirurgia de urgência."
+        "conteudo": "<span class=\"red-flag\">Dor contínua (não mais em cólica), febre, taquicardia e sinais de irritação peritoneal</span> em paciente com obstrução intestinal sugerem estrangulamento com sofrimento isquêmico de alça — emergência cirúrgica que não deve ser tratada conservadoramente, pelo risco de necrose, perfuração e peritonite fecal."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre obstrução simples (tratamento inicial conservador possível) e obstrução com estrangulamento (cirurgia de urgência obrigatória) pelos sinais clínicos de mudança do padrão de dor e sinais sistêmicos é cobrança central e recorrente. Aderências como causa mais comum de obstrução de delgado, e neoplasia como causa mais comum de obstrução colônica, também são frequentemente exigidas."
       }
     ]
   },
@@ -2498,7 +2530,7 @@
     "titulo": "Doença Diverticular dos Cólons e Diverticulite Aguda",
     "resumo": "Classificação de Hinchey e conduta conforme gravidade da diverticulite complicada.",
     "revisado": false,
-    "fonte": "World Society of Emergency Surgery (WSES) Guidelines for Acute Left-Sided Colonic Diverticulitis (2020); Colégio Brasileiro de Cirurgiões",
+    "fonte": "Sociedade Brasileira de Coloproctologia; WSES Guidelines for the Management of Acute Left-Sided Colonic Diverticulitis",
     "mnemonicos": [
       {
         "palavra": "HINCHEY I-IV",
@@ -2507,24 +2539,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Doença diverticular",
-        "conteudo": "Mais comum no cólon sigmoide, com prevalência crescente conforme a idade; a maioria dos portadores é assintomática."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A diverticulite aguda resulta da microperfuração ou obstrução do colo de um divertículo colônico previamente existente (a diverticulose é extremamente prevalente, especialmente em cólon sigmoide, e aumenta com a idade), causando inflamação local que pode evoluir desde processo leve e autolimitado até abscesso pericólico, peritonite generalizada por perfuração livre, ou formação de fístula (mais comumente colovesical) em casos crônicos/recorrentes."
       },
       {
-        "titulo": "Diverticulite aguda",
-        "conteudo": "Dor em fossa ilíaca esquerda, febre e alteração do hábito intestinal, por inflamação/microperfuração de um divertículo."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor abdominal em fossa ilíaca esquerda (pela localização predominante em sigmoide na população ocidental), associada a febre, alteração do hábito intestinal e, ocasionalmente, sintomas urinários irritativos quando há proximidade inflamatória com a bexiga. A gravidade clínica varia amplamente, desde quadro leve tratável ambulatorialmente até sepse abdominal grave por perfuração livre."
       },
       {
-        "titulo": "Classificação de Hinchey",
-        "conteudo": "Orienta a gravidade e a conduta nos casos complicados, do abscesso pericólico (I) à peritonite fecal generalizada (IV)."
+        "titulo": "Exame físico",
+        "conteudo": "Dor à palpação em fossa ilíaca esquerda, por vezes com massa palpável (abscesso pericólico ou plastrão inflamatório). Sinais de irritação peritoneal localizada sugerem processo mais avançado; peritonite difusa com abdome em tábua sugere perfuração livre com contaminação peritoneal generalizada, achado de gravidade extrema."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "A tomografia de abdome com contraste é o exame de escolha, tanto para confirmação diagnóstica quanto para classificação de gravidade (classificação de Hinchey, que estratifica desde inflamação/abscesso pericólico pequeno até peritonite fecal generalizada), informação central para decisão terapêutica entre manejo clínico e cirúrgico. Colonoscopia é contraindicada na fase aguda (risco de perfuração pelo insuflar de ar sob pressão em cólon inflamado), sendo recomendada eletivamente algumas semanas após resolução do episódio agudo para excluir neoplasia associada, especialmente em primeiro episódio."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Diverticulite não complicada: tratamento ambulatorial, muitas vezes sem antibiótico em casos leves selecionados. Complicada: internação, antibioticoterapia, drenagem percutânea ou cirurgia conforme a classificação de Hinchey."
+        "conteudo": "Diverticulite não complicada leve pode ser tratada ambulatorialmente com ou sem antibiótico (evidências mais recentes questionam a necessidade universal de antibiótico em casos muito leves e imunocompetentes), com dieta e analgesia. Abscessos maiores (geralmente >4cm) são tratados com drenagem percutânea guiada por imagem associada a antibiótico. Perfuração livre com peritonite generalizada (Hinchey III/IV) exige cirurgia de urgência, frequentemente com ressecção do segmento acometido e colostomia temporária (cirurgia de Hartmann) em contextos de contaminação grave."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sinais de peritonite difusa (Hinchey III/IV)</span> indicam perfuração livre — cirurgia de urgência."
+        "conteudo": "<span class=\"red-flag\">Peritonite difusa com sinais sistêmicos de sepse em paciente com diverticulite</span> sugere perfuração livre (Hinchey III ou IV), exigindo laparotomia de urgência — o atraso na intervenção cirúrgica nesse cenário associa-se a mortalidade significativa por sepse abdominal não controlada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A classificação de Hinchey e sua correlação com a conduta terapêutica (clínica, drenagem percutânea, ou cirurgia conforme o grau) é cobrança central e recorrente. A contraindicação de colonoscopia na fase aguda (risco de perfuração) e sua indicação eletiva posterior para excluir neoplasia também são frequentemente exigidas."
       }
     ]
   },
@@ -4350,7 +4390,7 @@
     "titulo": "Trauma Cranioencefálico (TCE)",
     "resumo": "Escala de Coma de Glasgow, principais hematomas intracranianos traumáticos e manejo da hipertensão intracraniana.",
     "revisado": false,
-    "fonte": "Advanced Trauma Life Support (ATLS) 10ª edição — American College of Surgeons",
+    "fonte": "American College of Surgeons — ATLS; Brain Trauma Foundation Guidelines for the Management of Severe TBI",
     "mnemonicos": [
       {
         "palavra": "Intervalo lúcido = Extradural",
@@ -4359,24 +4399,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Avaliação inicial e Escala de Coma de Glasgow",
-        "conteudo": "A Escala de Coma de Glasgow (abertura ocular, resposta verbal, resposta motora) classifica a gravidade do TCE: leve (13-15), moderado (9-12) e grave (≤8). TCE grave é indicação de via aérea definitiva (intubação orotraqueal) para proteção da via aérea."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O trauma cranioencefálico causa lesão primária (dano direto no momento do impacto, irreversível) e lesão secundária (cascata de eventos que se desenvolve nas horas/dias seguintes — hipóxia, hipotensão, hipertensão intracraniana, edema cerebral — potencialmente evitável ou minimizável com manejo adequado). A doutrina de Monro-Kellie explica a hipertensão intracraniana: o crânio é uma caixa rígida de volume fixo, e o aumento de qualquer componente (sangue, líquor, edema, hematoma) sem compensação adequada eleva a pressão intracraniana, comprometendo a perfusão cerebral."
       },
       {
-        "titulo": "Principais lesões intracranianas",
-        "conteudo": "Hematoma extradural: lesão arterial, classicamente da artéria meníngea média, associada a fratura temporal, com \"intervalo lúcido\" característico antes da deterioração. Hematoma subdural: lesão venosa por ruptura de veias-ponte, mais comum em idosos e etilistas, podendo ser agudo ou crônico. Também podem ocorrer hemorragia subaracnóidea traumática e contusões cerebrais."
+        "titulo": "Quadro clínico",
+        "conteudo": "O espectro varia de cefaleia leve com breve perda de consciência (concussão) a coma profundo. A tríade de Cushing (hipertensão, bradicardia e alteração do padrão respiratório) é um sinal tardio e ominoso de hipertensão intracraniana grave e iminente herniação, não devendo ser esperada para suspeitar de gravidade — sua presença já indica descompensação avançada."
       },
       {
-        "titulo": "Manejo da hipertensão intracraniana",
-        "conteudo": "Cabeceira elevada a 30°, manter normocapnia (evitar hiperventilação profilática, exceto em herniação iminente), normotermia e normonatremia, com sedação adequada. Manitol ou salina hipertônica são usados diante de sinais de herniação."
+        "titulo": "Exame físico",
+        "conteudo": "A Escala de Coma de Glasgow (abertura ocular, resposta verbal, resposta motora) quantifica objetivamente o nível de consciência e orienta a gravidade (leve ≥13, moderado 9-12, grave ≤8) e a necessidade de intubação (Glasgow ≤8 é indicação clássica para proteção de via aérea). Anisocoria (assimetria pupilar) com midríase unilateral sugere herniação uncal com compressão do terceiro par craniano ipsilateral à lesão expansiva — achado de emergência neurocirúrgica."
       },
       {
-        "titulo": "Neuroimagem e indicação cirúrgica",
-        "conteudo": "Tomografia de crânio guiada por critérios clínicos (ex.: Canadian CT Head Rule) no TCE leve. Hematomas com efeito de massa significativo (desvio de linha média, compressão de cisternas) geralmente exigem drenagem cirúrgica de urgência."
+        "titulo": "Diagnóstico",
+        "conteudo": "A tomografia de crânio sem contraste é o exame padrão-ouro para avaliação inicial, identificando hematomas (epidural, subdural, intraparenquimatoso), fraturas e sinais de hipertensão intracraniana (desvio de linha média, apagamento de cisternas basais). Critérios validados (como os Critérios Canadenses de TCE) auxiliam a decidir quais pacientes com TCE leve realmente necessitam de tomografia, evitando exposição radiológica desnecessária em baixo risco."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "TCE grave (Glasgow ≤8) exige intubação para proteção de via aérea e manejo cuidadoso para prevenir lesão secundária: manter oxigenação e pressão arterial adequadas (evitar tanto hipóxia quanto hipotensão, ambas duplicando a mortalidade quando presentes), elevação da cabeceira, e medidas específicas para hipertensão intracraniana refratária (solução salina hipertônica ou manitol, sedação adequada, e craniectomia descompressiva em casos selecionados). Hematomas com efeito de massa significativo (epidural especialmente) frequentemente exigem drenagem neurocirúrgica de urgência."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Anisocoria com midríase unilateral fixa</span> sugere herniação uncal iminente por lesão expansiva ipsilateral — emergência neurocirúrgica que exige ação imediata."
+        "conteudo": "<span class=\"red-flag\">Deterioração do nível de consciência associada a anisocoria em paciente com TCE</span> indica herniação cerebral iminente, exigindo tomografia e avaliação neurocirúrgica de extrema urgência — medidas temporárias para redução da pressão intracraniana (hiperventilação breve, manitol/salina hipertônica) podem ser necessárias enquanto se organiza a intervenção definitiva."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A Escala de Coma de Glasgow (seus componentes e o ponto de corte ≤8 para intubação) é cobrança certíssima e um dos temas mais decorados de toda a cirurgia/neurologia de urgência. A prevenção de hipóxia e hipotensão como prioridade central para evitar lesão secundária (mais importante, na prática, que muitas intervenções específicas) também é frequentemente exigida."
       }
     ]
   },
@@ -4387,7 +4435,7 @@
     "titulo": "Trauma Torácico: Lesões que Ameaçam a Vida",
     "resumo": "Pneumotórax hipertensivo, pneumotórax aberto, tamponamento cardíaco e hemotórax maciço — diagnóstico clínico e conduta imediata.",
     "revisado": false,
-    "fonte": "Advanced Trauma Life Support (ATLS) 10ª edição — American College of Surgeons",
+    "fonte": "American College of Surgeons — ATLS",
     "mnemonicos": [
       {
         "palavra": "Beck",
@@ -4396,24 +4444,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Pneumotórax hipertensivo",
-        "conteudo": "Acúmulo progressivo de ar no espaço pleural com efeito valvular, causando desvio de mediastino e colapso hemodinâmico. Diagnóstico é CLÍNICO, sem aguardar radiografia — turgência jugular, desvio de traqueia, hipotensão e ausência de murmúrio vesicular unilateral. Tratamento imediato: descompressão por agulha seguida de drenagem torácica em selo d'água."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O trauma torácico agrupa lesões com potencial imediato de morte que devem ser identificadas e tratadas na avaliação primária (etapa B do ABCDE): pneumotórax hipertensivo, pneumotórax aberto, hemotórax maciço, tórax instável com contusão pulmonar, e tamponamento cardíaco. Cada uma dessas condições compromete diretamente a ventilação ou a circulação por mecanismos distintos, exigindo reconhecimento e intervenção imediatos, muitas vezes antes mesmo da confirmação por exame de imagem."
       },
       {
-        "titulo": "Pneumotórax aberto",
-        "conteudo": "Ferida \"soprante\" com comunicação da cavidade pleural com o exterior. Tratamento inicial com curativo de três pontas (selado em três lados, permitindo saída de ar mas não entrada), seguido de drenagem torácica definitiva."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dispneia e dor torácica são comuns a praticamente todas as lesões torácicas graves. Tórax instável (fratura de múltiplos arcos costais consecutivos em dois ou mais pontos) causa movimento paradoxal da parede torácica durante a respiração, associado a contusão pulmonar subjacente que frequentemente é a real causa de insuficiência respiratória, mais do que a instabilidade mecânica da parede em si."
       },
       {
-        "titulo": "Tamponamento cardíaco",
-        "conteudo": "Tríade de Beck (hipotensão, turgência jugular, abafamento de bulhas cardíacas) associada a pulso paradoxal. Diagnóstico confirmado por ecocardiograma ou FAST à beira do leito. Tratamento definitivo é a toracotomia, com pericardiocentese como medida temporizadora."
+        "titulo": "Exame físico",
+        "conteudo": "Pneumotórax hipertensivo: desvio contralateral de traqueia, ausência de murmúrio vesicular, turgência jugular e hipotensão — diagnóstico clínico, tratamento imediato sem aguardar imagem. Pneumotórax aberto: ferida torácica \"sugante\" visível. Tamponamento cardíaco: tríade de Beck. Hemotórax maciço: ausência de murmúrio vesicular associada a macicez à percussão e sinais de choque hipovolêmico. Tórax instável: movimento paradoxal visível da parede torácica à inspeção durante a respiração espontânea."
       },
       {
-        "titulo": "Hemotórax maciço",
-        "conteudo": "Acúmulo de sangue no espaço pleural; drenagem inicial acima de 1500 mL, ou débito acima de 200 mL/h por 2-4h, define indicação de toracotomia. Tratamento com drenagem torácica associada a reposição volêmica."
+        "titulo": "Diagnóstico",
+        "conteudo": "As lesões torácicas com risco imediato de morte devem ser diagnosticadas clinicamente durante a avaliação primária, sem aguardar radiografia ou tomografia quando há instabilidade — o FAST estendido (e-FAST) permite avaliação rápida de pneumotórax e hemotórax à beira do leito. Radiografia de tórax e tomografia são utilizadas na avaliação secundária, em paciente já estabilizado, para caracterização mais detalhada das lesões."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Pneumotórax hipertensivo: descompressão por punção com agulha seguida de drenagem torácica definitiva. Pneumotórax aberto: curativo de três pontas (selado em três lados, permitindo saída de ar mas não entrada) seguido de drenagem torácica. Tamponamento cardíaco: pericardiocentese de emergência, com toracotomia definitiva conforme necessidade. Hemotórax maciço: drenagem torácica associada a reposição volêmica/hemocomponentes, com toracotomia indicada se drenagem inicial for muito volumosa (geralmente >1500mL) ou com débito contínuo significativo (>200mL/h por várias horas)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Desvio de traqueia, turgência jugular e ausência de murmúrio unilateral</span> caracterizam pneumotórax hipertensivo e exigem descompressão imediata por agulha — não aguardar confirmação radiológica."
+        "conteudo": "<span class=\"red-flag\">Qualquer uma das lesões torácicas com risco imediato de morte (pneumotórax hipertensivo, aberto, hemotórax maciço, tórax instável, tamponamento)</span> identificada na avaliação primária deve ser tratada imediatamente, antes de prosseguir para as etapas seguintes do ABCDE, dado seu potencial de causar óbito em minutos se não corrigida."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A lista das cinco lesões torácicas fatais da avaliação primária, com seus achados clínicos característicos e tratamento imediato específico, é cobrança certíssima e recorrente em praticamente toda prova que aborda trauma. Os critérios de indicação de toracotomia no hemotórax (volume drenado inicial e débito horário) também são frequentemente exigidos."
       }
     ]
   },
@@ -4424,7 +4480,7 @@
     "titulo": "Trauma Abdominal: Avaliação e Conduta",
     "resumo": "FAST, manejo não operatório de lesões de órgãos sólidos e indicação de laparotomia de urgência.",
     "revisado": false,
-    "fonte": "Advanced Trauma Life Support (ATLS) 10ª edição — American College of Surgeons",
+    "fonte": "American College of Surgeons — ATLS",
     "mnemonicos": [
       {
         "palavra": "FAST",
@@ -4433,24 +4489,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Trauma fechado x penetrante",
-        "conteudo": "No trauma fechado (contuso), baço e fígado são os órgãos mais frequentemente lesados. No trauma penetrante, a conduta depende da localização (arma branca x arma de fogo) e da presença de sinais de peritonite ou instabilidade hemodinâmica."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O trauma abdominal é classificado em fechado (contuso, mais comum em acidentes automobilísticos, acometendo frequentemente baço e fígado — os órgãos sólidos mais lesados) e penetrante (arma branca ou de fogo, com maior probabilidade de lesão de víscera oca e necessidade cirúrgica). A hemorragia intra-abdominal oculta é causa frequente e traiçoeira de choque hipovolêmico em politraumatizados, já que o abdome pode acomodar grande volume de sangue sem sinais externos evidentes."
       },
       {
-        "titulo": "FAST",
-        "conteudo": "Ultrassonografia à beira do leito para detectar líquido livre (sangue) nas cavidades abdominal, pericárdica e pleural. Paciente instável com FAST positivo tem indicação de laparotomia de urgência, sem necessidade de outros exames."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor abdominal, distensão e sinais de irritação peritoneal podem estar presentes, mas o exame físico abdominal isolado tem sensibilidade limitada para excluir lesão significativa, especialmente em pacientes com nível de consciência alterado (TCE associado, intoxicação) ou lesões distratoras dolorosas em outros segmentos que mascaram a dor abdominal."
       },
       {
-        "titulo": "Tomografia computadorizada",
-        "conteudo": "Exame de escolha no paciente hemodinamicamente estável, para avaliar lesões de órgãos sólidos e definir manejo não operatório ou cirúrgico."
+        "titulo": "Exame físico",
+        "conteudo": "Equimose em faixa transversal (\"sinal do cinto de segurança\") sugere lesão de víscera oca/mesentério subjacente e deve motivar investigação mais agressiva mesmo com exame inicial pouco alarmante. Sinais de irritação peritoneal (defesa, descompressão dolorosa) sugerem lesão de víscera oca com peritonite química/bacteriana em curso."
       },
       {
-        "titulo": "Manejo não operatório",
-        "conteudo": "Lesões de baço e fígado em pacientes hemodinamicamente estáveis, sem outros sinais de peritonite, podem ser tratadas de forma conservadora com observação rigorosa — conduta preferencial atual sempre que possível."
+        "titulo": "Diagnóstico",
+        "conteudo": "O FAST é o exame inicial de escolha no paciente instável, identificando rapidamente líquido livre sugestivo de hemorragia intraperitoneal. A tomografia de abdome com contraste é o exame de escolha no paciente estável, com sensibilidade e especificidade superiores para caracterizar e graduar lesões de órgãos sólidos, orientando a decisão entre manejo não operatório e cirúrgico."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Paciente instável com FAST positivo é encaminhado diretamente à laparotomia exploradora de urgência, sem tempo para tomografia. Paciente estável com lesão de órgão sólido identificada na tomografia (baço, fígado) pode ser candidato a manejo não operatório com observação rigorosa, desde que permaneça hemodinamicamente estável — mudança de paradigma importante em relação à cirurgia sistemática do passado, especialmente relevante em lesões esplênicas de menor gravidade em pacientes jovens sem outras lesões associadas."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Instabilidade hemodinâmica que não responde à reposição volêmica</span> em trauma abdominal é indicação de laparotomia exploradora de urgência, independentemente de exames de imagem adicionais."
+        "conteudo": "<span class=\"red-flag\">Instabilidade hemodinâmica recorrente ou necessidade transfusional contínua durante observação de lesão de órgão sólido</span> indica falha do manejo não operatório, exigindo intervenção cirúrgica ou angioembolização de urgência, mesmo que a tentativa inicial tenha sido conservadora."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A indicação de laparotomia imediata em paciente instável com FAST positivo (sem aguardar tomografia) versus manejo não operatório em paciente estável com lesão de órgão sólido identificada por tomografia é distinção central e muito cobrada. O sinal do cinto de segurança como pista para lesão de víscera oca oculta também é frequentemente exigido."
       }
     ]
   },
@@ -4461,7 +4525,7 @@
     "titulo": "Abdome Agudo Perfurativo",
     "resumo": "Úlcera péptica perfurada como principal causa, achado de pneumoperitônio e conduta cirúrgica de urgência.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cirurgia Geral — Diretrizes de Abdome Agudo; Sabiston Textbook of Surgery",
+    "fonte": "Colégio Brasileiro de Cirurgiões; WSES Guidelines on Perforated Peptic Ulcer",
     "mnemonicos": [
       {
         "palavra": "Ar livre = Perfuração",
@@ -4470,24 +4534,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia",
-        "conteudo": "Úlcera péptica perfurada é a causa mais comum (parede anterior do duodeno ou estômago). Outras causas incluem perfuração de neoplasia, diverticulite complicada e ingestão de corpo estranho."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A perfuração de úlcera péptica (a causa mais comum de abdome agudo perfurativo) ocorre quando o processo ulceroso progride através de toda a espessura da parede gástrica ou duodenal, permitindo extravasamento de conteúdo gastroduodenal para a cavidade peritoneal livre, causando peritonite química inicial (pelo conteúdo ácido/enzimático) seguida de peritonite bacteriana secundária. Uso de AINEs e infecção por H. pylori são os principais fatores de risco predisponentes subjacentes."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor abdominal súbita e intensa, seguida de sinais de peritonite generalizada — abdome em tábua, defesa involuntária, descompressão brusca dolorosa — pelo extravasamento de conteúdo gastrointestinal para a cavidade peritoneal."
+        "conteudo": "Dor abdominal súbita, intensa e difusa (\"dor em punhalada\"), de início abrupto e bem localizado no momento da perfuração, evoluindo rapidamente para peritonite generalizada com piora progressiva. Muitos pacientes têm história prévia de dor epigástrica compatível com doença ulcerosa péptica, embora a perfuração possa ser a primeira manifestação clínica da doença em uma parcela significativa de casos."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Abdome em tábua (rigidez muscular generalizada e involuntária) é o achado clássico e mais valorizado de peritonite difusa por perfuração de víscera oca. Ausência de macicez hepática à percussão (pela presença de ar livre entre o fígado e a parede abdominal anterior) é achado semiológico específico, embora menos sensível, que reforça a suspeita de pneumoperitônio."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Radiografia de abdome em pé ou de tórax evidenciando pneumoperitônio confirma a perfuração de víscera oca na maioria dos casos. A tomografia é mais sensível quando a radiografia é inconclusiva."
+        "conteudo": "Radiografia de tórax em ortostase (ou abdome em decúbito lateral esquerdo, se o paciente não puder ficar em pé) buscando pneumoperitônio (ar livre subdiafragmático) é o exame inicial clássico, rápido e amplamente disponível. Tomografia de abdome é mais sensível para confirmar pneumoperitônio em quantidades menores e para localizar o provável sítio de perfuração quando a radiografia é inconclusiva."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Cirurgia de urgência (laparotomia ou videolaparoscopia) para controle da fonte — rafia da perfuração e lavagem exaustiva da cavidade — associada a antibioticoterapia de amplo espectro cobrindo flora entérica."
+        "conteudo": "Laparotomia (ou laparoscopia) de urgência com rafia da perfuração (geralmente associada a patch de omento — técnica de Graham) é o tratamento padrão da úlcera péptica perfurada. Reposição volêmica, antibioticoterapia de amplo espectro cobrindo flora entérica, e correção de distúrbios hidroeletrolíticos associados são medidas de suporte essenciais no perioperatório. Tratamento não operatório (aspiração nasogástrica, antibiótico, observação rigorosa) pode ser considerado em casos muito selecionados de perfuração contida e paciente estável, mas a cirurgia permanece a conduta padrão na maioria dos casos."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Abdome em tábua com sinais de choque</span> caracteriza abdome agudo perfurativo com peritonite generalizada — a cirurgia não deve ser postergada para investigação prolongada."
+        "conteudo": "<span class=\"red-flag\">Abdome em tábua associado a sinais de choque séptico</span> em paciente com dor abdominal súbita indica peritonite generalizada por perfuração, com necessidade de laparotomia de urgência — o atraso cirúrgico nesse contexto agrava progressivamente a contaminação peritoneal e a resposta inflamatória sistêmica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O pneumoperitônio na radiografia de tórax em ortostase como achado clássico de perfuração de víscera oca é cobrança certa e recorrente. O abdome em tábua como sinal semiológico central de peritonite difusa, e a técnica de Graham (rafia + patch de omento) como tratamento padrão da úlcera perfurada, também são frequentemente exigidos."
       }
     ]
   },
@@ -4498,7 +4570,7 @@
     "titulo": "Abdome Agudo Vascular: Isquemia Mesentérica Aguda",
     "resumo": "Dor desproporcional ao exame físico como pista central, diagnóstico por angiotomografia e revascularização de urgência.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; ESVS Clinical Practice Guidelines on Mesenteric Ischaemia",
+    "fonte": "Colégio Brasileiro de Cirurgiões; ESVS Clinical Practice Guidelines on Mesenteric Ischemia",
     "mnemonicos": [
       {
         "palavra": "Dor desproporcional",
@@ -4507,24 +4579,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia",
-        "conteudo": "Embolia arterial (origem cardioembólica, ex.: fibrilação atrial — causa mais comum), trombose arterial sobre placa aterosclerótica prévia, trombose venosa mesentérica e isquemia mesentérica não oclusiva (baixo fluxo esplâncnico em estados de choque ou uso de vasopressor)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A isquemia mesentérica aguda resulta mais comumente de embolia (geralmente de origem cardíaca, como fibrilação atrial) ou trombose de artéria mesentérica superior sobre placa aterosclerótica preexistente, ou, menos frequentemente, de isquemia não oclusiva (baixo fluxo esplâncnico por choque/vasoconstrição em pacientes gravemente enfermos) ou trombose venosa mesentérica. A progressão para infarto intestinal transmural com necrose e perfuração ocorre rapidamente se a perfusão não for restaurada, tornando essa condição uma das emergências abdominais mais letais quando o diagnóstico é tardio."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor abdominal desproporcional ao exame físico é a pista clássica na fase inicial. Conforme a isquemia progride para necrose transmural, surgem sinais de peritonite, distensão abdominal e sangue nas fezes."
+        "conteudo": "Dor abdominal de início súbito, intensa e desproporcional aos achados do exame físico (que inicialmente pode ser relativamente benigno, sem sinais evidentes de irritação peritoneal apesar da dor intensa) é a apresentação clássica e a pista clínica mais valorizada — essa dissociação entre dor intensa e exame físico pouco alterado nas fases iniciais é a chave para o diagnóstico precoce, antes que a necrose transmural se instale."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Nas fases iniciais, o abdome pode estar apenas discretamente distendido e sem sinais de irritação peritoneal significativos, apesar da dor intensa relatada pelo paciente — essa dissociação clínica (dor desproporcional ao exame) é o achado semiológico mais valorizado do tema. Sinais de irritação peritoneal franca (defesa, descompressão dolorosa) surgem apenas em fases mais avançadas, já com necrose transmural estabelecida, indicando pior prognóstico."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Angiotomografia de abdome é o exame de escolha para avaliar a vasculatura mesentérica. O lactato sérico elevado é marcador indireto de isquemia, porém inespecífico, podendo estar normal em fases iniciais."
+        "conteudo": "A angiotomografia de abdome é o exame de escolha, permitindo visualizar a oclusão vascular e sinais precoces de sofrimento intestinal (pneumatose intestinal, gás em sistema porta, redução de captação de contraste pela parede intestinal). O lactato sérico elevado é marcador de isquemia tecidual em curso, mas sua elevação é achado tardio e não deve ser aguardado para iniciar a investigação diante de forte suspeita clínica."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Revascularização de urgência (endovascular ou cirúrgica) quando ainda viável, associada a ressuscitação volêmica e antibioticoterapia. Segmentos intestinais já necróticos exigem ressecção cirúrgica."
+        "conteudo": "O tratamento definitivo depende do mecanismo: revascularização (embolectomia, trombectomia, ou terapia endovascular) para restaurar o fluxo mesentérico o mais rápido possível, associada a ressecção do segmento intestinal já necrótico quando presente. Anticoagulação sistêmica é iniciada precocemente na maioria dos casos. O atraso no diagnóstico e tratamento é o principal determinante de mortalidade, que permanece elevada mesmo com tratamento adequado quando o reconhecimento não é precoce."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor abdominal desproporcional</span> em paciente com fatores de risco cardiovascular (fibrilação atrial, aterosclerose) deve levantar suspeita imediata de isquemia mesentérica aguda — o atraso diagnóstico aumenta drasticamente a mortalidade."
+        "conteudo": "<span class=\"red-flag\">Dor abdominal intensa e desproporcional ao exame físico em paciente com fibrilação atrial ou doença aterosclerótica conhecida</span> deve levantar suspeita imediata de isquemia mesentérica aguda, com investigação de imagem urgente — o retardo diagnóstico até o surgimento de sinais peritoneais francos já reflete necrose intestinal estabelecida e pior prognóstico."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A dissociação entre dor abdominal intensa e exame físico inicialmente pouco alterado é a cobrança mais importante e recorrente do tema, servindo como principal pista para suspeita precoce antes da necrose transmural. A associação com fibrilação atrial como fator de risco embólico predisponente também é frequentemente exigida em questões de caso clínico."
       }
     ]
   },
@@ -4535,7 +4615,7 @@
     "titulo": "Colelitíase e Coledocolitíase",
     "resumo": "Cólica biliar x colangite aguda, e o papel da CPRE no diagnóstico e tratamento da coledocolitíase.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cirurgia Geral; Tokyo Guidelines 2018 for Acute Cholangitis and Cholecystitis",
+    "fonte": "Colégio Brasileiro de Cirurgiões; Tokyo Guidelines 2018 for Acute Cholangitis and Cholecystitis",
     "mnemonicos": [
       {
         "palavra": "Charcot",
@@ -4544,24 +4624,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Colelitíase",
-        "conteudo": "Cálculos na vesícula biliar, geralmente assintomáticos (achado incidental). Quando sintomática, cursa com cólica biliar — dor em hipocôndrio direito/epigástrio, pós-prandial, associada a intolerância a alimentos gordurosos, sem sinais de inflamação sistêmica (diferente da colecistite aguda)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A colelitíase (cálculos na vesícula biliar) resulta predominantemente da supersaturação biliar de colesterol (cálculos de colesterol, os mais comuns) ou de bilirrubina (cálculos pigmentares, associados a hemólise crônica), favorecida por fatores de risco clássicos resumidos no mnemônico dos \"4 Fs\" (Female, Forty, Fertile, Fat — mulher, quarentona, fértil, obesa). A coledocolitíase ocorre quando um cálculo migra da vesícula para o colédoco (ou, mais raramente, forma-se primariamente na via biliar), obstruindo o fluxo biliar e predispondo a colangite se houver infecção ascendente associada."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Colelitíase assintomática é achado comum e não exige intervenção na maioria dos casos. Cólica biliar (colelitíase sintomática não complicada) manifesta-se com dor em hipocôndrio direito/epigástrio, geralmente pós-prandial (após refeições gordurosas), autolimitada em poucas horas, sem febre ou sinais sistêmicos — a persistência da dor além de 6 horas associada a febre sugere progressão para colecistite aguda. Coledocolitíase manifesta-se com dor biliar associada a icterícia flutuante e colúria, podendo ser assintomática até ser identificada incidentalmente em exame de imagem ou durante investigação pré-operatória."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Dor à palpação em hipocôndrio direito durante a crise de cólica biliar, sem sinais de irritação peritoneal ou sinal de Murphy franco (que sugeriria colecistite associada). Icterícia associada a dor biliar sugere coledocolitíase, devendo ser diferenciada de icterícia colestática progressiva e indolor (mais sugestiva de neoplasia periampular), esta última sem relação com cólica biliar."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Ultrassonografia abdominal é o exame de escolha inicial, com alta sensibilidade para cálculos vesiculares."
+        "conteudo": "Ultrassonografia abdominal é o exame de escolha para colelitíase, com alta sensibilidade para identificação de cálculos vesiculares. Para coledocolitíase, a investigação combina critérios clínicos/laboratoriais (icterícia, dilatação de via biliar, elevação de enzimas canaliculares) com exames de imagem: colangiorressonância magnética é não invasiva e altamente sensível; a CPRE (colangiopancreatografia retrógrada endoscópica) é reservada a casos de alta probabilidade pré-teste, pois permite diagnóstico e tratamento simultâneos (papilotomia com extração do cálculo)."
       },
       {
-        "titulo": "Coledocolitíase",
-        "conteudo": "Cálculo no colédoco, podendo ser assintomático ou causar icterícia obstrutiva, colúria e acolia fecal. Risco de complicações graves: colangite aguda (tríade de Charcot) e pancreatite biliar."
-      },
-      {
-        "titulo": "Investigação e tratamento",
-        "conteudo": "Colangiorressonância ou ultrassom endoscópico confirmam o diagnóstico em casos duvidosos. A colangiopancreatografia retrógrada endoscópica (CPRE) permite diagnóstico e tratamento (papilotomia com extração do cálculo) no mesmo procedimento; a colecistectomia geralmente é indicada após resolução do quadro agudo, para prevenir recorrência."
+        "titulo": "Tratamento",
+        "conteudo": "Colelitíase sintomática (cólica biliar recorrente) tem indicação de colecistectomia eletiva, geralmente por via laparoscópica. Colelitíase assintomática geralmente não requer tratamento cirúrgico, exceto em situações específicas (vesícula em porcelana, pólipos vesiculares grandes associados, cálculos muito volumosos). Coledocolitíase é tratada por CPRE com papilotomia e extração do cálculo, seguida de colecistectomia (na mesma internação ou em tempo próximo) para prevenir recorrência a partir de novos cálculos vesiculares."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Tríade de Charcot (dor + febre + icterícia)</span> sugere colangite aguda, uma emergência que exige antibioticoterapia imediata e desobstrução biliar urgente, pelo risco de sepse biliar."
+        "conteudo": "<span class=\"red-flag\">Cólica biliar persistente além de 6 horas associada a febre e sinal de Murphy positivo</span> sugere progressão para colecistite aguda, exigindo reclassificação diagnóstica e conduta específica (antibiótico e colecistectomia precoce), diferente do manejo apenas sintomático da cólica biliar não complicada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os \"4 Fs\" como fatores de risco clássicos para colelitíase (Female, Forty, Fertile, Fat) são cobrança certa e mnemônico muito usado em provas. A sequência de CPRE seguida de colecistectomia (não apenas uma ou outra isoladamente) no tratamento da coledocolitíase associada a colelitíase também é frequentemente exigida."
       }
     ]
   },
@@ -4683,7 +4771,7 @@
     "titulo": "Queimaduras: Classificação e Manejo Inicial",
     "resumo": "Classificação por profundidade, regra dos nove e fórmula de Parkland para reposição volêmica.",
     "revisado": false,
-    "fonte": "Advanced Burn Life Support (ABLS) — American Burn Association; Sociedade Brasileira de Cirurgia Plástica",
+    "fonte": "American Burn Association Guidelines; Sociedade Brasileira de Queimaduras",
     "mnemonicos": [
       {
         "palavra": "Regra dos 9",
@@ -4692,24 +4780,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação por profundidade",
-        "conteudo": "Primeiro grau (epiderme, eritema doloroso sem bolhas, ex.: queimadura solar). Segundo grau superficial (derme papilar, bolhas, dolorosa). Segundo grau profundo (derme reticular, sensibilidade reduzida, maior risco de cicatriz). Terceiro grau (espessura total, indolor pela destruição de terminações nervosas, aspecto esbranquiçado/carbonizado, sempre exige enxerto)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As queimaduras são classificadas por profundidade: primeiro grau (apenas epiderme, dolorosa, sem bolhas), segundo grau superficial e profundo (acometimento variável da derme, com bolhas), e terceiro grau (espessura total, indolor pela destruição das terminações nervosas, com aspecto esbranquiçado/carbonizado). Queimaduras extensas causam resposta inflamatória sistêmica com grande perda de líquidos através da pele lesada, exigindo reposição volêmica calculada proporcionalmente à extensão da superfície corporal queimada."
       },
       {
-        "titulo": "Cálculo da superfície corporal queimada",
-        "conteudo": "Regra dos nove no adulto: cabeça e cada braço 9%, tronco anterior 18%, tronco posterior 18%, cada perna 18%, períneo 1%. Em crianças, as proporções são ajustadas pela cabeça proporcionalmente maior."
+        "titulo": "Quadro clínico",
+        "conteudo": "Além da lesão cutânea propriamente dita, deve-se sempre suspeitar de lesão por inalação em queimaduras ocorridas em ambiente fechado, com sinais como queimadura facial, chamuscamento de vibrissas nasais, escarro carbonáceo e rouquidão — essa suspeita exige atenção precoce à via aérea, que pode evoluir para edema e obstrução completa horas após a exposição inicial, mesmo com aparência inicial enganosamente estável."
       },
       {
-        "titulo": "Reposição volêmica",
-        "conteudo": "Fórmula de Parkland (4 mL x peso em kg x % de superfície corporal queimada, para queimaduras de segundo/terceiro grau acima de determinado percentual): metade do volume calculado nas primeiras 8h contadas a partir do momento da queimadura, e a outra metade nas 16h seguintes."
+        "titulo": "Exame físico",
+        "conteudo": "A extensão da queimadura é estimada pela regra dos nove (cada segmento corporal representando aproximadamente 9% ou múltiplos de 9% da superfície corporal em adultos) ou pela superfície da palma da mão do paciente (aproximadamente 1% da superfície corporal), útil para queimaduras de distribuição irregular. A profundidade é avaliada pela presença de bolhas, sensibilidade dolorosa e aspecto da lesão, conforme descrito na fisiopatologia."
       },
       {
-        "titulo": "Manejo inicial",
-        "conteudo": "Interromper o processo de queimadura (remover roupas, resfriar com água corrente — nunca gelo diretamente), analgesia adequada, avaliação de via aérea em queimaduras faciais/inalação de fumaça e cobertura das lesões com curativo limpo."
+        "titulo": "Diagnóstico",
+        "conteudo": "A avaliação inicial segue o mesmo ABCDE do trauma geral, com atenção especial à via aérea (broncoscopia pode confirmar lesão por inalação suspeitada clinicamente). O cálculo da superfície corporal queimada e da profundidade orienta tanto o prognóstico quanto a necessidade de reposição volêmica calculada e de encaminhamento a centro especializado em queimados (critérios incluem queimaduras extensas, de terceiro grau, em face/mãos/genitália/articulações, ou com lesão por inalação associada)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Reposição volêmica em queimaduras extensas (geralmente acima de 15-20% de superfície corporal em adultos) segue fórmulas calculadas pelo peso e pela superfície corporal queimada (como a fórmula de Parkland), com metade do volume calculado infundido nas primeiras 8 horas a partir do momento da queimadura (não da chegada ao hospital). Intubação precoce e profilática deve ser considerada diante de sinais de lesão por inalação, antes que o edema de via aérea torne a intubação tecnicamente muito mais difícil ou impossível. Cuidados locais da ferida (desbridamento, curativos, enxertia quando indicada) completam o manejo."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Queimadura circunferencial de tórax ou membro</span> pode causar síndrome compartimental por constrição da escara, podendo exigir escarotomia de urgência. Sinais de lesão por inalação (fuligem em vias aéreas, queimadura facial, rouquidão) indicam necessidade de via aérea definitiva precoce, antes que o edema a torne inviável."
+        "conteudo": "<span class=\"red-flag\">Queimadura facial com chamuscamento de vibrissas, escarro carbonáceo ou rouquidão</span> sugere lesão por inalação, exigindo intubação precoce e profilática mesmo antes do desenvolvimento de sinais francos de obstrução respiratória — aguardar a obstrução se instalar completamente pode tornar a intubação impossível pela via convencional."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O cálculo da reposição volêmica (fórmula de Parkland, com metade do volume nas primeiras 8h contadas a partir da queimadura) é cobrança certa. A indicação de intubação precoce e profilática diante de suspeita de lesão por inalação, mesmo sem insuficiência respiratória franca no momento da avaliação, também é ponto central e frequentemente exigido."
       }
     ]
   },
