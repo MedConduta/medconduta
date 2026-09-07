@@ -971,6 +971,10 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Necrose pancreática infectada e falência orgânica persistente</span> caracterizam pancreatite aguda grave, com necessidade de suporte intensivo."
+      },
+      {
+        "titulo": "Pancreatite crônica e tumores pancreáticos",
+        "conteudo": "A pancreatite crônica decorre de inflamação e fibrose progressivas do parênquima pancreático, mais comumente por etilismo crônico, levando a dor abdominal recorrente, insuficiência exócrina (esteatorreia, má absorção) e endócrina (diabetes secundário) a longo prazo; calcificações pancreáticas na tomografia são achado característico. O adenocarcinoma de pâncreas é agressivo e geralmente diagnosticado em fase avançada pela ausência de sintomas precoces; icterícia indolor progressiva (tumores de cabeça de pâncreas), emagrecimento e dor abdominal/lombar persistente são sinais de alerta que exigem investigação de imagem prioritária."
       }
     ]
   },
@@ -1460,6 +1464,10 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Encefalopatia hepática avançada ou peritonite bacteriana espontânea</span> são complicações graves que exigem tratamento hospitalar imediato."
+      },
+      {
+        "titulo": "Outras causas de hepatopatia crônica",
+        "conteudo": "Além das hepatites virais e do álcool, outras causas relevantes de hepatopatia crônica incluem a doença hepática gordurosa associada à disfunção metabólica (esteatose hepática/NASH, hoje a causa mais prevalente em muitos países, associada a obesidade e síndrome metabólica), a hepatite autoimune (predomínio em mulheres, autoanticorpos como FAN e anti-músculo liso, responde a corticoide/imunossupressor), a hemocromatose hereditária (sobrecarga de ferro, tríade clássica de cirrose, diabetes e hiperpigmentação cutânea) e a doença de Wilson (acúmulo de cobre, mais comum em jovens, podendo cursar com manifestações neuropsiquiátricas e o anel de Kayser-Fleischer à córnea)."
       }
     ]
   },
@@ -6767,6 +6775,191 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Fraqueza flutuante da musculatura respiratória/bulbar</span> em paciente miastênico, especialmente após infecção ou uso de medicação de risco, exige monitorização rigorosa e consideração precoce de suporte ventilatório."
+      }
+    ]
+  },
+  {
+    "id": "sindrome-intestino-irritavel",
+    "area": "residencia",
+    "categoria": "Gastroenterologia",
+    "titulo": "Síndrome do Intestino Irritável",
+    "resumo": "Critérios de Roma IV, subtipos por padrão intestinal e os sinais de alarme que afastam o diagnóstico funcional.",
+    "revisado": false,
+    "fonte": "Federação Brasileira de Gastroenterologia; ACG Clinical Guideline: Management of Irritable Bowel Syndrome",
+    "mnemonicos": [
+      {
+        "palavra": "Roma IV",
+        "explicacao": "Critérios de Roma IV para SII: dor abdominal recorrente (pelo menos 1 dia/semana nos últimos 3 meses) associada a pelo menos 2 de: relação com evacuação, mudança de frequência, ou mudança na forma das fezes."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição e critérios diagnósticos",
+        "conteudo": "Distúrbio funcional gastrointestinal caracterizado por dor abdominal recorrente associada a alteração do hábito intestinal, conforme os critérios de Roma IV."
+      },
+      {
+        "titulo": "Subtipos",
+        "conteudo": "Classificada conforme o padrão predominante das fezes em SII com predomínio de constipação, com predomínio de diarreia, padrão misto, ou não classificada."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Eminentemente clínico, baseado nos critérios de Roma IV, na ausência de sinais de alarme. Exames complementares são solicitados principalmente para EXCLUIR diagnósticos orgânicos, não para confirmar SII."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Individualizado conforme o subtipo predominante — fibras solúveis e antiespasmódicos para dor/constipação, loperamida para diarreia. Modificações dietéticas (dieta pobre em FODMAPs) têm boa evidência de benefício; suporte psicológico quando indicado, dada a forte associação com ansiedade/depressão."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Sangramento retal, anemia, perda de peso não intencional, início após os 50 anos, ou história familiar de câncer colorretal/DII são sinais de alarme que NÃO são compatíveis com SII isolada e exigem investigação de doença orgânica."
+      }
+    ]
+  },
+  {
+    "id": "hemorragia-digestiva-baixa",
+    "area": "residencia",
+    "categoria": "Gastroenterologia",
+    "titulo": "Hemorragia Digestiva Baixa",
+    "resumo": "Doença diverticular como causa mais comum, colonoscopia como exame de escolha e a importância de excluir origem alta.",
+    "revisado": false,
+    "fonte": "Federação Brasileira de Gastroenterologia; ACG Clinical Guideline: Management of Acute Lower Gastrointestinal Bleeding",
+    "mnemonicos": [
+      {
+        "palavra": "Diverticulose sangra, diverticulite dói",
+        "explicacao": "A doença diverticular pode se manifestar de duas formas distintas: sangramento indolor (hemorragia digestiva baixa) ou dor com inflamação (diverticulite) — raramente as duas ocorrem simultaneamente."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição e etiologia",
+        "conteudo": "Sangramento originado distalmente ao ângulo de Treitz. Principais causas: doença diverticular dos cólons (mais comum), angiodisplasia (mais comum em idosos), doença hemorroidária, neoplasia colorretal e doença inflamatória intestinal."
+      },
+      {
+        "titulo": "Apresentação clínica",
+        "conteudo": "Hematoquezia é a apresentação típica. Sangramento maciço de origem alta também pode se apresentar como hematoquezia (por trânsito acelerado), por isso é importante excluir origem alta em sangramentos volumosos com instabilidade."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Colonoscopia é o exame de escolha na maioria dos casos, idealmente com preparo intestinal adequado. Em sangramento maciço com instabilidade, angiotomografia ou angiografia podem localizar o sítio mais rapidamente."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "A maioria dos episódios por diverticulose cessa espontaneamente. Tratamento endoscópico, embolização angiográfica ou cirurgia são reservados para sangramento persistente/recorrente ou instabilidade refratária."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Hematoquezia volumosa associada a instabilidade hemodinâmica</span> exige reanimação volêmica imediata e consideração de origem alta antes de assumir HDB isoladamente."
+      }
+    ]
+  },
+  {
+    "id": "cancer-gastrico-esofago",
+    "area": "residencia",
+    "categoria": "Gastroenterologia",
+    "titulo": "Câncer Gástrico e de Esôfago",
+    "resumo": "H. pylori no câncer gástrico, os dois subtipos histológicos do câncer de esôfago e a disfagia progressiva como sinal de alarme.",
+    "revisado": false,
+    "fonte": "Instituto Nacional de Câncer (INCA); NCCN Guidelines for Gastric and Esophageal Cancer",
+    "mnemonicos": [
+      {
+        "palavra": "Barrett vira adenocarcinoma",
+        "explicacao": "O esôfago de Barrett (metaplasia intestinal por DRGE crônica) é o principal fator de risco para o adenocarcinoma de esôfago — daí a importância da vigilância endoscópica periódica em pacientes com Barrett estabelecido."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Câncer gástrico",
+        "conteudo": "Adenocarcinoma é o tipo histológico mais comum. Fatores de risco: infecção por Helicobacter pylori, dieta rica em alimentos defumados/salgados, tabagismo e história familiar. Frequentemente assintomático até fases avançadas."
+      },
+      {
+        "titulo": "Sinais de alarme e investigação",
+        "conteudo": "Dispepsia associada a sinais de alarme (emagrecimento, disfagia, sangramento/anemia, massa palpável, idade avançada com sintoma novo) exige endoscopia digestiva alta com biópsia, não devendo ser tratada apenas empiricamente com IBP."
+      },
+      {
+        "titulo": "Câncer de esôfago",
+        "conteudo": "Carcinoma epidermoide (associado a tabagismo, etilismo e líquidos muito quentes, mais comum no terço médio/superior) e adenocarcinoma (associado a DRGE crônica e esôfago de Barrett, mais comum no terço distal, incidência crescente)."
+      },
+      {
+        "titulo": "Quadro clínico e diagnóstico",
+        "conteudo": "Disfagia progressiva (inicialmente para sólidos, progredindo para líquidos) associada a emagrecimento é a apresentação clássica, geralmente já em fase avançada. Endoscopia digestiva alta com biópsia confirma o diagnóstico."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Disfagia progressiva com emagrecimento em paciente acima de 50 anos</span> deve ser investigada com endoscopia digestiva alta prioritária, mesmo na ausência de outros sinais de alarme."
+      }
+    ]
+  },
+  {
+    "id": "pneumotorax-espontaneo",
+    "area": "residencia",
+    "categoria": "Pneumologia",
+    "titulo": "Pneumotórax Espontâneo",
+    "resumo": "Diferenciação entre pneumotórax primário e secundário, diagnóstico radiográfico e conduta escalonada.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Pneumologia e Tisiologia; BTS Pleural Disease Guideline",
+    "mnemonicos": [
+      {
+        "palavra": "Alto, magro e jovem",
+        "explicacao": "O perfil clássico do pneumotórax espontâneo primário é o homem jovem, alto e magro, por ruptura de bolhas subpleurais apicais — mesmo sem nenhuma doença pulmonar conhecida."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Pneumotórax espontâneo primário",
+        "conteudo": "Ocorre na ausência de doença pulmonar conhecida, tipicamente em homens jovens, altos e magros, por ruptura de bolhas subpleurais. Dor torácica pleurítica súbita associada a dispneia."
+      },
+      {
+        "titulo": "Pneumotórax espontâneo secundário",
+        "conteudo": "Ocorre em paciente com doença pulmonar de base (DPOC é a causa mais comum). Geralmente mais sintomático que o primário, pela menor reserva pulmonar de base."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Radiografia de tórax evidencia a linha da pleura visceral separada da parede torácica, sem trama pulmonar além dela. Tomografia de tórax é mais sensível para pneumotórax pequenos ou casos duvidosos."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Conduta conservadora para pneumotórax pequenos e assintomáticos. Drenagem torácica em selo d'água para pneumotórax grandes, sintomáticos, ou secundários. Pleurodese considerada após recorrências."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Pneumotórax hipertensivo</span> (desvio de mediastino, turgência jugular, instabilidade) é emergência que exige descompressão por agulha imediata, seja espontâneo ou traumático."
+      }
+    ]
+  },
+  {
+    "id": "cancer-pulmao",
+    "area": "residencia",
+    "categoria": "Pneumologia",
+    "titulo": "Câncer de Pulmão",
+    "resumo": "Classificação histológica, síndromes paraneoplásicas e rastreamento por tomografia de baixa dose em fumantes.",
+    "revisado": false,
+    "fonte": "Instituto Nacional de Câncer (INCA); NCCN Guidelines for Non-Small Cell and Small Cell Lung Cancer",
+    "mnemonicos": [
+      {
+        "palavra": "Fumou, tossiu diferente, investigue",
+        "explicacao": "Em fumante ou ex-fumante, uma tosse persistente que MUDOU de padrão (nova, mais intensa, ou com hemoptise) é sinal de alarme para câncer de pulmão e não deve ser atribuída automaticamente a bronquite do fumante sem investigação."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fatores de risco e classificação",
+        "conteudo": "Tabagismo é o principal fator de risco. Classificado em não pequenas células (adenocarcinoma — mais comum atualmente, inclusive em não fumantes; carcinoma epidermoide — associado ao tabagismo) e pequenas células (altamente agressivo, quase sempre associado ao tabagismo, frequentemente já disseminado ao diagnóstico)."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Tosse persistente/mudança de padrão em fumante, hemoptise, emagrecimento, dor torácica e síndromes paraneoplásicas (hipercalcemia no epidermoide, SIADH e síndromes neurológicas no de pequenas células) podem ser a primeira manifestação."
+      },
+      {
+        "titulo": "Rastreamento",
+        "conteudo": "Tomografia de tórax de baixa dose anual é recomendada para indivíduos de alto risco (grande carga tabágica, faixa etária específica), com evidência de redução de mortalidade por câncer de pulmão."
+      },
+      {
+        "titulo": "Diagnóstico e estadiamento",
+        "conteudo": "Tomografia de tórax seguida de biópsia (broncoscopia, biópsia transtorácica ou mediastinoscopia) confirma o diagnóstico. PET-CT e ressonância de crânio auxiliam no estadiamento à procura de metástases."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Síndrome da veia cava superior</span> (edema de face/pescoço, turgência jugular, circulação colateral) pode ser a manifestação inicial de tumores mediastinais/pulmonares centrais avançados."
       }
     ]
   }
