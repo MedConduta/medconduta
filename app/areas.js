@@ -16,11 +16,19 @@ export const AREA_POR_CATEGORIA = {
   Reumatologia: "Clínica Médica",
   "Medicina Intensiva": "Clínica Médica",
   Emergência: "Clínica Médica",
+  Geriatria: "Clínica Médica",
+  Oncologia: "Clínica Médica",
   "Cirurgia Geral": "Cirurgia Geral",
   Ginecologia: "Ginecologia e Obstetrícia",
   Obstetrícia: "Ginecologia e Obstetrícia",
   Pediatria: "Pediatria",
   "Medicina Preventiva": "Medicina Preventiva",
+  Psiquiatria: "Saúde Mental",
+  Otorrinolaringologia: "Especialidades",
+  Oftalmologia: "Especialidades",
+  "Ortopedia e Traumatologia": "Especialidades",
+  Dermatologia: "Especialidades",
+  Anestesiologia: "Especialidades",
 };
 
 export const ORDEM_AREAS = [
@@ -28,7 +36,9 @@ export const ORDEM_AREAS = [
   "Cirurgia Geral",
   "Ginecologia e Obstetrícia",
   "Pediatria",
+  "Saúde Mental",
   "Medicina Preventiva",
+  "Especialidades",
   "Outros",
 ];
 
