@@ -21,6 +21,8 @@ const PATHS = {
   panel: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/>',
   sparkles: '<path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="M12 8a4 4 0 0 0 4 4 4 4 0 0 0-4 4 4 4 0 0 0-4-4 4 4 0 0 0 4-4z"/>',
   send: '<path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/>',
+  pill: '<rect x="3" y="10.5" width="18" height="7" rx="3.5" transform="rotate(-45 12 14)"/><path d="M12 9.5 16.5 14"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>',
 };
 
 export function icon(name, { size = 20, className = "" } = {}) {
