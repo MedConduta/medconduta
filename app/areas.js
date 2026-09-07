@@ -19,6 +19,7 @@ export const AREA_POR_CATEGORIA = {
   Geriatria: "Clínica Médica",
   Oncologia: "Clínica Médica",
   "Cirurgia Geral": "Cirurgia Geral",
+  Urologia: "Cirurgia Geral",
   Ginecologia: "Ginecologia e Obstetrícia",
   Obstetrícia: "Ginecologia e Obstetrícia",
   Pediatria: "Pediatria",
