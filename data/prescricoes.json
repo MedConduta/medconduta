@@ -71,5 +71,811 @@
       "Anúria.",
       "Alergia a sulfonamidas (cautela, avaliar risco-benefício)."
     ]
+  },
+  {
+    "id": "presc-has-anlodipino",
+    "titulo": "HAS — Anlodipino (bloqueador de canal de cálcio)",
+    "categoria": "Cardiologia",
+    "revisado": false,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2020/2025 (SBC); Bulário ANVISA",
+    "posologia": "Anlodipino 5 mg — 1 comprimido VO 1x/dia, preferencialmente sempre no mesmo horário.\nSe PA não controlada em 2-4 semanas, considerar aumentar para 10 mg/dia ou associar outra classe.\nQuant.: 30 comprimidos (uso contínuo).",
+    "orientacao_paciente": "Tomar sempre no mesmo horário. Pode causar inchaço nos tornozelos e nas pernas (edema), que costuma ser dose-dependente — comunicar se incomodar muito. Não interromper mesmo sem sintomas.",
+    "contraindicacoes": [
+      "Hipotensão sintomática grave.",
+      "Estenose aórtica grave sintomática (piora a obstrução ao fluxo).",
+      "Choque cardiogênico.",
+      "Hipersensibilidade a di-hidropiridínicos."
+    ],
+    "dicas": [
+      "Edema de membros inferiores é o efeito adverso mais comum e é dose-dependente — antes de trocar de classe, considerar reduzir a dose ou associar IECA/BRA, que atenua o edema.",
+      "Não exige ajuste de dose na insuficiência renal (metabolização predominantemente hepática)."
+    ]
+  },
+  {
+    "id": "presc-has-enalapril",
+    "titulo": "HAS — Enalapril (IECA)",
+    "categoria": "Cardiologia",
+    "revisado": false,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2020/2025 (SBC); Bulário ANVISA",
+    "posologia": "Enalapril 10 mg — 1 comprimido VO 12/12h.\nIniciar com 5 mg 12/12h em idosos ou risco de hipotensão, titulando conforme resposta.\nQuant.: 60 comprimidos (uso contínuo).",
+    "orientacao_paciente": "Tomar todos os dias, mesmo sem sintomas. Pode causar tosse seca persistente — se ocorrer, avisar o médico para eventual troca por outra classe (BRA). Evitar uso concomitante de anti-inflamatórios sem orientação médica.",
+    "contraindicacoes": [
+      "Gestação (contraindicação absoluta em qualquer trimestre — risco de malformação e disfunção renal fetal).",
+      "Angioedema prévio por IECA.",
+      "Estenose bilateral de artéria renal (ou unilateral em rim único).",
+      "Uso concomitante com alisquireno em diabéticos."
+    ],
+    "dicas": [
+      "Checar função renal e potássio em 1-2 semanas após início ou ajuste de dose — elevação de creatinina >30% do basal ou hipercalemia significativa exige suspensão/reavaliação.",
+      "Tosse seca é efeito de classe (acúmulo de bradicinina) e não contraindica o uso de BRA como alternativa."
+    ]
+  },
+  {
+    "id": "presc-fa-anticoagulacao-rivaroxabana",
+    "titulo": "Fibrilação Atrial — Anticoagulação com Rivaroxabana (DOAC)",
+    "categoria": "Cardiologia",
+    "revisado": false,
+    "fonte": "Diretriz Brasileira de Fibrilação Atrial (SBC); Bulário ANVISA",
+    "posologia": "Rivaroxabana 20 mg — 1 comprimido VO 1x/dia, com a refeição principal.\nSe clearance de creatinina 15-50 mL/min: reduzir para 15 mg 1x/dia.\nQuant.: 30 comprimidos (uso contínuo).",
+    "orientacao_paciente": "Tomar sempre com alimento (aumenta a absorção). Nunca interromper por conta própria — risco de AVC. Comunicar imediatamente qualquer sangramento incomum (gengival, urina escura, fezes escurecidas) e informar o uso desta medicação antes de qualquer procedimento/cirurgia.",
+    "contraindicacoes": [
+      "Valvopatia mitral reumática moderada/grave ou prótese valvar mecânica (usar varfarina).",
+      "Sangramento ativo clinicamente significativo.",
+      "Clearance de creatinina <15 mL/min.",
+      "Hepatopatia com coagulopatia associada.",
+      "Gestação e lactação."
+    ],
+    "dicas": [
+      "Calcular o CHA2DS2-VASc antes de indicar (escore ≥2 em homens ou ≥3 em mulheres justifica anticoagulação) e o HAS-BLED para estimar risco de sangramento.",
+      "Diferente da varfarina, não requer monitorização laboratorial de rotina (RNI), mas exige ajuste pela função renal."
+    ]
+  },
+  {
+    "id": "presc-ic-furosemida",
+    "titulo": "Insuficiência Cardíaca — Furosemida (diurético de alça)",
+    "categoria": "Cardiologia",
+    "revisado": false,
+    "fonte": "Diretriz Brasileira de Insuficiência Cardíaca (SBC); Bulário ANVISA",
+    "posologia": "Furosemida 40 mg — 1 comprimido VO pela manhã, ajustar conforme sinais de congestão e peso diário.\nQuant.: 30 comprimidos (uso contínuo, dose titulável).",
+    "orientacao_paciente": "Pesar-se todos os dias, de manhã, em jejum, com a mesma roupa. Anotar o peso e avisar se ganhar mais de 2 kg em 3 dias. Evitar sal em excesso. Tomar preferencialmente pela manhã para não atrapalhar o sono com idas ao banheiro à noite.",
+    "contraindicacoes": [
+      "Anúria não responsiva a dose de prova.",
+      "Depleção volêmica grave/desidratação importante.",
+      "Hipersensibilidade a sulfonamidas (cautela, não é contraindicação absoluta universal, mas exige atenção).",
+      "Hipocalemia grave não corrigida antes do início."
+    ],
+    "dicas": [
+      "Furosemida trata apenas a congestão sintomática — não substitui os quatro pilares (IECA/BRA-neprilisina, betabloqueador, antagonista mineralocorticoide, iSGLT2), que são os que reduzem mortalidade.",
+      "Monitorizar sódio, potássio e função renal periodicamente, especialmente após ajustes de dose."
+    ]
+  },
+  {
+    "id": "presc-dislipidemia-atorvastatina",
+    "titulo": "Dislipidemia — Atorvastatina",
+    "categoria": "Cardiologia",
+    "revisado": false,
+    "fonte": "Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose (SBC); Bulário ANVISA",
+    "posologia": "Atorvastatina 40 mg — 1 comprimido VO à noite.\nEm prevenção secundária/risco muito alto, considerar 80 mg/dia (alta intensidade).\nQuant.: 30 comprimidos (uso contínuo).",
+    "orientacao_paciente": "Tomar preferencialmente à noite. Comunicar dor muscular importante ou urina escura (sinais raros de miopatia). Não é necessário jejum para o exame de controle de colesterol nas diretrizes atuais, mas seguir orientação de coleta do laboratório.",
+    "contraindicacoes": [
+      "Hepatopatia ativa ou elevação persistente e inexplicada de transaminases.",
+      "Gestação e lactação.",
+      "Hipersensibilidade a estatinas.",
+      "Uso concomitante com determinados inibidores potentes de CYP3A4 em doses altas (risco de miopatia/rabdomiólise — checar interação)."
+    ],
+    "dicas": [
+      "Em prevenção secundária (doença aterosclerótica já estabelecida), usar sempre estatina de alta potência independentemente do LDL basal — não há meta mínima de segurança para reduzir.",
+      "Mialgia leve é comum e não exige suspensão rotineira; elevação de CK >10x o limite superior com sintomas exige suspensão."
+    ]
+  },
+  {
+    "id": "presc-dm2-glicazida",
+    "titulo": "DM2 — Glicazida (sulfonilureia)",
+    "categoria": "Endocrinologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Diabetes — Diretriz Oficial 2023-2024; Bulário ANVISA",
+    "posologia": "Glicazida MR (liberação modificada) 30 mg — 1 comprimido VO pela manhã, com o café da manhã.\nTitular conforme glicemia, até no máximo 120 mg/dia.\nQuant.: 30 comprimidos (uso contínuo).",
+    "orientacao_paciente": "Tomar sempre junto com uma refeição, para evitar hipoglicemia. Reconhecer sinais de hipoglicemia (tremor, sudorese fria, fome súbita, confusão) e ter sempre uma fonte de açúcar rápida à mão. Não pular refeições enquanto estiver usando esta medicação.",
+    "contraindicacoes": [
+      "Diabetes tipo 1 (não há produção de insulina residual suficiente).",
+      "Cetoacidose diabética.",
+      "Insuficiência renal grave (clearance muito reduzido — risco de hipoglicemia prolongada).",
+      "Gestação e lactação."
+    ],
+    "dicas": [
+      "Risco de hipoglicemia é a principal limitação da classe — maior em idosos, insuficiência renal e uso irregular das refeições.",
+      "Reservada geralmente para quando metformina isolada não é suficiente e outras classes com menor risco de hipoglicemia (iSGLT2, análogos de GLP-1) não são disponíveis/toleradas."
+    ]
+  },
+  {
+    "id": "presc-hipotireoidismo-levotiroxina",
+    "titulo": "Hipotireoidismo — Levotiroxina",
+    "categoria": "Endocrinologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia; ATA Guidelines for the Treatment of Hypothyroidism",
+    "posologia": "Levotiroxina sódica 50 mcg — 1 comprimido VO em jejum, pela manhã, 30-60 min antes do café.\nDose inicial usual 1,6 mcg/kg/dia em adultos jovens hígidos; iniciar com dose menor (25-50 mcg) em idosos/cardiopatas.\nQuant.: 30 comprimidos (uso contínuo).",
+    "orientacao_paciente": "Tomar sempre em jejum, de estômago vazio, aguardando ao menos 30-60 minutos antes de comer ou tomar café. Não tomar junto com cálcio, ferro, ou antiácidos (reduzem a absorção — espaçar por pelo menos 4 horas). Não interromper mesmo sem sintomas; reavaliação com TSH é necessária periodicamente.",
+    "contraindicacoes": [
+      "Insuficiência adrenal não tratada (repor cortisol antes de iniciar levotiroxina, sob risco de precipitar crise adrenal).",
+      "Infarto agudo do miocárdio recente não estabilizado (iniciar com extrema cautela e dose baixa).",
+      "Tireotoxicose não corrigida de outra causa."
+    ],
+    "dicas": [
+      "Reavaliar TSH cerca de 6-8 semanas após qualquer mudança de dose (é o tempo para atingir novo estado de equilíbrio) — não ajustar antes disso.",
+      "Em idosos e cardiopatas, iniciar com dose baixa e titular lentamente, pelo risco de precipitar isquemia miocárdica com reposição muito rápida."
+    ]
+  },
+  {
+    "id": "presc-asma-manutencao-beclometasona",
+    "titulo": "Asma — Beclometasona inalatória (manutenção)",
+    "categoria": "Pneumologia",
+    "revisado": false,
+    "fonte": "GINA (Global Initiative for Asthma); Bulário ANVISA",
+    "posologia": "Beclometasona spray inalatório 250 mcg/jato — 1 jato de 12/12h, com uso de espaçador.\nAjustar conforme controle de sintomas (step up/down conforme GINA).\nQuant.: 1 frasco (200 doses) — uso contínuo.",
+    "orientacao_paciente": "Usar sempre com espaçador (aumenta a chance de o remédio chegar aos pulmões e reduz efeitos na boca/garganta). Enxaguar a boca com água após cada uso e cuspir, sem engolir, para prevenir candidíase oral e rouquidão. Usar todos os dias, mesmo sem sintomas — é medicamento de manutenção, não de alívio da crise.",
+    "contraindicacoes": [
+      "Hipersensibilidade a corticoides inalatórios ou a algum componente da formulação.",
+      "Infecção fúngica oral/faríngea não tratada."
+    ],
+    "dicas": [
+      "É medicamento controlador (previne crises), diferente do salbutamol, que é de resgate (alivia a crise já instalada) — reforçar essa diferença ao paciente para evitar confusão de uso.",
+      "Candidíase oral e disfonia são os efeitos adversos locais mais comuns, prevenidos pelo uso do espaçador e enxágue bucal pós-uso."
+    ]
+  },
+  {
+    "id": "presc-dpoc-exacerbacao-prednisona",
+    "titulo": "DPOC Exacerbado — Prednisona (curso curto)",
+    "categoria": "Pneumologia",
+    "revisado": false,
+    "fonte": "GOLD (Global Initiative for Chronic Obstructive Lung Disease); Bulário ANVISA",
+    "posologia": "Prednisona 40 mg — 1 comprimido VO pela manhã, por 5 dias.\nQuant.: 5 comprimidos.",
+    "orientacao_paciente": "Tomar pela manhã, com alimento, por exatamente 5 dias, mesmo se sentir melhora antes — não é necessário desmame gradual em curso tão curto. Procurar atendimento se piora da falta de ar, febre alta ou escarro com sangue.",
+    "contraindicacoes": [
+      "Infecção fúngica sistêmica não tratada.",
+      "Hipersensibilidade a corticosteroides."
+    ],
+    "dicas": [
+      "Curso curto (5 dias) tem eficácia equivalente a cursos mais longos para exacerbação de DPOC e dispensa desmame gradual da dose.",
+      "Monitorizar glicemia em diabéticos durante o uso — corticoide sistêmico eleva a glicemia mesmo em curso curto."
+    ]
+  },
+  {
+    "id": "presc-pac-ambulatorial-amoxicilina",
+    "titulo": "Pneumonia Adquirida na Comunidade — Amoxicilina (ambulatorial)",
+    "categoria": "Pneumologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Pneumologia e Tisiologia; IDSA/ATS Guidelines for CAP",
+    "posologia": "Amoxicilina 500 mg — 1 comprimido VO 8/8h por 7 dias.\n(Em paciente sem comorbidades, PAC leve, CURB-65 = 0.)\nQuant.: 21 comprimidos.",
+    "orientacao_paciente": "Tomar em intervalos regulares de 8 em 8 horas, completando todo o tratamento mesmo com melhora dos sintomas antes do fim. Retornar se piora da falta de ar, febre persistente após 48-72h de antibiótico, ou dor torácica importante.",
+    "contraindicacoes": [
+      "Alergia a penicilinas.",
+      "Mononucleose infecciosa (risco de exantema — evitar aminopenicilinas nesse contexto)."
+    ],
+    "dicas": [
+      "Reservada a PAC leve, ambulatorial, sem comorbidades relevantes (CURB-65 = 0) — reavaliar critérios de gravidade antes de tratar em casa.",
+      "Ausência de melhora em 48-72h exige reavaliação clínica e consideração de troca de esquema/imagem de controle."
+    ]
+  },
+  {
+    "id": "presc-itu-nao-complicada-nitrofurantoina",
+    "titulo": "ITU não complicada (cistite) — Nitrofurantoína",
+    "categoria": "Nefrologia",
+    "revisado": false,
+    "fonte": "IDSA Clinical Practice Guideline for Uncomplicated UTI; Bulário ANVISA",
+    "posologia": "Nitrofurantoína macrocristais 100 mg — 1 cápsula VO 12/12h por 5 dias.\nQuant.: 10 cápsulas.",
+    "orientacao_paciente": "Tomar com alimento para reduzir desconforto gastrointestinal. Pode escurecer a urina — é esperado e sem gravidade. Completar todo o tratamento mesmo com melhora rápida dos sintomas. Aumentar ingesta hídrica.",
+    "contraindicacoes": [
+      "Clearance de creatinina <30-60 mL/min (perda de eficácia e maior toxicidade, conforme a referência utilizada).",
+      "Gestação a termo/pré-parto (risco de anemia hemolítica no recém-nascido).",
+      "Deficiência de G6PD (risco de hemólise).",
+      "Suspeita de pielonefrite/ITU complicada (não atinge concentração tecidual renal adequada — usar outro esquema)."
+    ],
+    "dicas": [
+      "Não usar em suspeita de pielonefrite — a nitrofurantoína atinge boa concentração urinária mas não tecidual renal, sendo eficaz apenas para cistite não complicada.",
+      "Alternativa de primeira linha equivalente: fosfomicina trometamol 3g VO em dose única."
+    ]
+  },
+  {
+    "id": "presc-pielonefrite-ciprofloxacino",
+    "titulo": "Pielonefrite não complicada (ambulatorial) — Ciprofloxacino",
+    "categoria": "Nefrologia",
+    "revisado": false,
+    "fonte": "IDSA Clinical Practice Guideline for Acute Pyelonephritis; Bulário ANVISA",
+    "posologia": "Ciprofloxacino 500 mg — 1 comprimido VO 12/12h por 7 dias.\n(Considerar dose inicial de ceftriaxona ou aminoglicosídeo IM/EV antes de iniciar o esquema oral, conforme protocolo local.)\nQuant.: 14 comprimidos.",
+    "orientacao_paciente": "Completar todo o tratamento. Evitar exposição solar excessiva (fotossensibilidade). Retornar imediatamente se surgir febre alta persistente, calafrios, dor lombar importante ou vômitos que impeçam manter o antibiótico oral — pode indicar necessidade de internação.",
+    "contraindicacoes": [
+      "Gestação (evitar quinolonas; usar alternativa como cefalosporina).",
+      "Uso concomitante de tizanidina.",
+      "História de tendinite/ruptura de tendão associada a quinolona.",
+      "Miastenia gravis (quinolonas podem exacerbar fraqueza muscular)."
+    ],
+    "dicas": [
+      "Reservado a pielonefrite não complicada em paciente ambulatorial, sem sinais de gravidade — sinais sistêmicos importantes (náusea/vômito impedindo via oral, sepse) exigem internação e antibiótico parenteral.",
+      "Considerar resistência local a quinolonas antes de prescrever empiricamente; cultura de urina antes do início orienta ajuste posterior."
+    ]
+  },
+  {
+    "id": "presc-colica-renal-diclofenaco",
+    "titulo": "Cólica Renal (Nefrolitíase) — Diclofenaco",
+    "categoria": "Nefrologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Urologia; AUA Guideline on Medical Management of Kidney Stones",
+    "posologia": "Diclofenaco sódico 75 mg — 1 ampola IM em dose única no pronto-socorro; se ambulatorial, diclofenaco 50 mg VO 8/8h por até 3-5 dias.\nQuant. (ambulatorial): 12 comprimidos.",
+    "orientacao_paciente": "Tomar com alimento para proteger o estômago. Aumentar ingesta hídrica. Procurar atendimento se surgir febre, calafrios ou incapacidade de urinar — pode indicar infecção associada à obstrução, que é emergência.",
+    "contraindicacoes": [
+      "Insuficiência renal significativa (o próprio AINE pode agravar).",
+      "Úlcera péptica ativa ou sangramento digestivo recente.",
+      "Insuficiência cardíaca descompensada.",
+      "Terceiro trimestre de gestação."
+    ],
+    "dicas": [
+      "AINEs são analgésicos de escolha na cólica renal por reduzirem também o espasmo ureteral (não apenas efeito analgésico sistêmico) — mais eficazes que opioides isolados nesse contexto específico.",
+      "Cálculos <5-6mm têm alta chance de eliminação espontânea; associar tansulosina (terapia expulsiva) pode acelerar a eliminação em cálculos ureterais distais."
+    ]
+  },
+  {
+    "id": "presc-hpb-tansulosina",
+    "titulo": "Hiperplasia Prostática Benigna — Tansulosina",
+    "categoria": "Nefrologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Urologia; AUA Guideline on BPH",
+    "posologia": "Tansulosina 0,4 mg — 1 cápsula VO 1x/dia, após a mesma refeição diariamente.\nQuant.: 30 cápsulas (uso contínuo).",
+    "orientacao_paciente": "Tomar sempre após a mesma refeição do dia, sem mastigar/abrir a cápsula. Pode causar tontura nas primeiras doses, principalmente ao levantar rapidamente (hipotensão postural) — levantar-se devagar. Avisar o oftalmologista sobre o uso caso vá realizar cirurgia de catarata (risco de síndrome da íris flácida intraoperatória).",
+    "contraindicacoes": [
+      "História de hipotensão ortostática sintomática.",
+      "Uso concomitante com inibidores potentes de CYP3A4 em pacientes com insuficiência hepática/renal grave.",
+      "Cirurgia de catarata planejada sem aviso prévio ao cirurgião (não é contraindicação absoluta, mas exige comunicação)."
+    ],
+    "dicas": [
+      "Alfabloqueador trata o componente dinâmico da obstrução (relaxamento da musculatura lisa prostática), com efeito sintomático rápido — diferente do inibidor de 5-alfa-redutase, que reduz o volume prostático a longo prazo.",
+      "Não requer PSA para início do tratamento, mas a avaliação de PSA/toque retal permanece indicada para rastreio oncológico conforme idade e risco do paciente."
+    ]
+  },
+  {
+    "id": "presc-drge-omeprazol",
+    "titulo": "DRGE — Omeprazol",
+    "categoria": "Gastroenterologia",
+    "revisado": false,
+    "fonte": "Federação Brasileira de Gastroenterologia; ACG Clinical Guideline for GERD",
+    "posologia": "Omeprazol 20 mg — 1 cápsula VO em jejum, 30-60 min antes do café da manhã, por 4-8 semanas.\nQuant.: 30 cápsulas.",
+    "orientacao_paciente": "Tomar sempre em jejum, antes do café da manhã. Evitar deitar-se logo após as refeições, elevar a cabeceira da cama, e evitar alimentos que pioram os sintomas (café, álcool, frituras, chocolate). Reavaliar com o médico se sintomas persistirem após o curso prescrito.",
+    "contraindicacoes": [
+      "Hipersensibilidade a inibidores de bomba de prótons.",
+      "Uso concomitante com rilpivirina (antirretroviral)."
+    ],
+    "dicas": [
+      "Sinais de alarme (disfagia, perda de peso, sangramento digestivo, anemia, início após os 50 anos) exigem endoscopia antes de tratar apenas empiricamente.",
+      "Uso prolongado (anos) associa-se a maior risco de deficiência de B12/magnésio e fraturas — reavaliar periodicamente a necessidade de manutenção na menor dose eficaz."
+    ]
+  },
+  {
+    "id": "presc-hpylori-esquema-triplice",
+    "titulo": "Erradicação de H. pylori — Esquema Tríplice",
+    "categoria": "Gastroenterologia",
+    "revisado": false,
+    "fonte": "Federação Brasileira de Gastroenterologia; ACG Clinical Guideline: Treatment of H. pylori Infection",
+    "posologia": "Omeprazol 20 mg 12/12h + Amoxicilina 1g 12/12h + Claritromicina 500 mg 12/12h, todos VO, por 14 dias.\nQuant.: 28 comprimidos de cada medicamento.",
+    "orientacao_paciente": "Tomar os três medicamentos juntos, nos mesmos horários (manhã e noite), durante os 14 dias completos, mesmo com melhora dos sintomas antes. Evitar álcool durante o tratamento. Confirmação de erradicação (teste respiratório ou antígeno fecal) deve ser feita pelo menos 4 semanas após o término do antibiótico.",
+    "contraindicacoes": [
+      "Alergia a penicilina ou a macrolídeos.",
+      "Uso recente (últimos 3 meses) de macrolídeo por outro motivo (risco de resistência — considerar esquema alternativo).",
+      "Gestação (reavaliar necessidade e esquema mais seguro)."
+    ],
+    "dicas": [
+      "Em áreas de alta resistência à claritromicina, considerar esquema quádruplo com bismuto como alternativa de primeira linha.",
+      "Confirmar erradicação é obrigatório em úlcera complicada, linfoma MALT, ou após tratamento de câncer gástrico precoce — não assumir sucesso apenas pela resolução dos sintomas."
+    ]
+  },
+  {
+    "id": "presc-diarreia-aguda-sro",
+    "titulo": "Diarreia Aguda (Adulto) — Soro de Reidratação Oral",
+    "categoria": "Gastroenterologia",
+    "revisado": false,
+    "fonte": "OMS — Soro de Reidratação Oral; Ministério da Saúde",
+    "posologia": "Soro de reidratação oral (SRO) — diluir 1 envelope em 1 litro de água filtrada/fervida.\nOferecer 200-400 mL após cada evacuação líquida, em pequenos goles, conforme tolerância.\nQuant.: conforme evolução (geralmente 5-10 envelopes para o período agudo).",
+    "orientacao_paciente": "Preparar o soro sempre com a quantidade exata de água indicada na embalagem (não usar menos água, o que concentra demais a solução). Usar em até 24 horas após preparado, guardado sob refrigeração. Manter alimentação normal conforme tolerado — não é necessário jejum prolongado.",
+    "contraindicacoes": [
+      "Vômitos incoercíveis que impeçam qualquer ingestão oral (necessita hidratação venosa).",
+      "Íleo paralítico ou obstrução intestinal.",
+      "Desidratação grave/choque (necessita hidratação venosa imediata, não apenas oral)."
+    ],
+    "dicas": [
+      "Loperamida deve ser evitada em diarreia com sangue/muco (suspeita de causa invasiva/inflamatória) e em crianças pequenas, pelo risco de prolongar quadros infecciosos invasivos.",
+      "A reidratação (não o antimicrobiano) é a intervenção mais importante na diarreia aguda — a maioria dos casos é viral e autolimitada, sem necessidade de antibiótico."
+    ]
+  },
+  {
+    "id": "presc-enxaqueca-crise-naproxeno",
+    "titulo": "Enxaqueca — Crise Aguda (Naproxeno + Antiemético)",
+    "categoria": "Neurologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Cefaleia; American Headache Society Guidelines",
+    "posologia": "Naproxeno sódico 550 mg — 1 comprimido VO no início da crise, podendo repetir 1 comprimido após 8-12h se necessário (máx. 2 doses/dia).\nMetoclopramida 10 mg VO associada se náusea importante.\nQuant.: 10 comprimidos de naproxeno + 10 de metoclopramida.",
+    "orientacao_paciente": "Tomar assim que perceber os sintomas iniciais da crise — quanto mais cedo, maior a eficácia. Repousar em ambiente escuro e silencioso. Anotar a frequência das crises: mais de 2-3 por semana pode indicar necessidade de tratamento preventivo diário.",
+    "contraindicacoes": [
+      "Úlcera péptica ativa ou sangramento digestivo recente.",
+      "Insuficiência renal significativa.",
+      "Terceiro trimestre de gestação.",
+      "Hipersensibilidade a AINEs (incluindo história de broncoespasmo por AAS/AINE)."
+    ],
+    "dicas": [
+      "Uso de analgésico para crise mais de 2-3 dias por semana, de forma regular, predispõe a cefaleia por uso excessivo de medicação (cefaleia de rebote) — sinal de que o tratamento profilático diário deve ser considerado.",
+      "Triptanos (sumatriptano) são alternativa mais específica para crises moderadas/graves refratárias a analgésicos comuns, mas contraindicados em doença coronariana/cerebrovascular estabelecida."
+    ]
+  },
+  {
+    "id": "presc-enxaqueca-profilaxia-propranolol",
+    "titulo": "Enxaqueca — Profilaxia com Propranolol",
+    "categoria": "Neurologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Cefaleia; American Headache Society Guidelines",
+    "posologia": "Propranolol 40 mg — 1 comprimido VO 12/12h, podendo titular até 80-160 mg/dia conforme resposta e tolerância.\nQuant.: 60 comprimidos (uso contínuo, reavaliar necessidade em 3-6 meses).",
+    "orientacao_paciente": "Tomar todos os dias, mesmo sem crise no momento — é tratamento preventivo, não de crise aguda. O efeito completo pode levar de 4 a 8 semanas para aparecer. Não suspender abruptamente (risco de taquicardia/hipertensão de rebote) — reduzir gradualmente se for parar.",
+    "contraindicacoes": [
+      "Asma/DPOC com componente broncoespástico significativo.",
+      "Bradicardia sintomática ou bloqueio atrioventricular avançado sem marca-passo.",
+      "Insuficiência cardíaca descompensada.",
+      "Hipotensão sintomática."
+    ],
+    "dicas": [
+      "Indicado para pacientes com 4 ou mais dias de enxaqueca por mês, ou crises muito incapacitantes mesmo que menos frequentes.",
+      "É também opção interessante em paciente com enxaqueca e hipertensão arterial associada, tratando as duas condições com um único medicamento."
+    ]
+  },
+  {
+    "id": "presc-neuropatia-gabapentina",
+    "titulo": "Dor Neuropática — Gabapentina",
+    "categoria": "Neurologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira para o Estudo da Dor; NeuPSIG Guidelines for Neuropathic Pain",
+    "posologia": "Gabapentina 300 mg — iniciar com 1 comprimido VO à noite, titulando gradualmente até 300 mg 8/8h conforme tolerância e resposta (pode chegar a doses maiores).\nQuant.: 30 comprimidos, com retorno para reavaliação e ajuste.",
+    "orientacao_paciente": "Iniciar com dose baixa à noite para reduzir sonolência/tontura, aumentando gradualmente conforme orientado. Não dirigir nem operar máquinas até saber como o medicamento afeta o estado de alerta. Não suspender abruptamente após uso prolongado (fazer redução gradual).",
+    "contraindicacoes": [
+      "Hipersensibilidade à gabapentina.",
+      "Uso concomitante com opioides em pacientes com alto risco de depressão respiratória (associação exige cautela extrema).",
+      "Ajuste obrigatório de dose na insuficiência renal (não é contraindicação absoluta, mas exige redução significativa da dose)."
+    ],
+    "dicas": [
+      "Dor neuropática (queimação, choque, formigamento) responde mal a analgésicos comuns e AINEs — a gabapentina/pregabalina e os antidepressivos (duloxetina, amitriptilina) são as classes de escolha.",
+      "Sonolência e tontura são os efeitos adversos mais comuns, geralmente atenuados com a titulação lenta da dose."
+    ]
+  },
+  {
+    "id": "presc-faringoamigdalite-penicilina-benzatina",
+    "titulo": "Faringoamigdalite Estreptocócica — Penicilina Benzatina",
+    "categoria": "Infectologia",
+    "revisado": false,
+    "fonte": "IDSA Clinical Practice Guideline for Streptococcal Pharyngitis; Bulário ANVISA",
+    "posologia": "Penicilina G benzatina 1.200.000 UI — 1 aplicação IM profunda, dose única (adultos e crianças ≥27 kg).\nEm crianças <27 kg, ajustar para 600.000 UI.",
+    "orientacao_paciente": "É uma dose única intramuscular — não há necessidade de doses repetidas para esse esquema. A aplicação pode doer no local por 1-2 dias. Retornar se surgir erupção cutânea, falta de ar ou inchaço após a aplicação (sinais de reação alérgica).",
+    "contraindicacoes": [
+      "Alergia confirmada a penicilina (anafilaxia prévia é contraindicação absoluta).",
+      "Uso de anticoagulante em dose plena (via intramuscular pode causar hematoma significativo — considerar via oral alternativa)."
+    ],
+    "dicas": [
+      "Amoxicilina oral por 10 dias é alternativa equivalente para quem prefere via oral ou tem contraindicação relativa à injeção IM.",
+      "O tratamento visa principalmente prevenir febre reumática (mesmo com resolução espontânea dos sintomas em poucos dias na maioria dos casos) — reforçar a importância de completar/aplicar mesmo com melhora rápida."
+    ]
+  },
+  {
+    "id": "presc-sifilis-penicilina-benzatina",
+    "titulo": "Sífilis (recente/primária/secundária) — Penicilina Benzatina",
+    "categoria": "Infectologia",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — PCDT para Atenção Integral às Pessoas com IST (2022)",
+    "posologia": "Penicilina G benzatina 2.400.000 UI — 1 aplicação IM (1.200.000 UI em cada glúteo), dose única para sífilis recente (primária/secundária/latente recente).\nPara sífilis latente tardia/duração ignorada: repetir a mesma dose semanalmente por 3 semanas (3 doses totais).",
+    "orientacao_paciente": "Completar todas as doses prescritas conforme o estágio da doença. Tratar a(s) parceria(s) sexual(is) simultaneamente, mesmo assintomáticas. Repetir VDRL periodicamente para confirmar queda dos títulos e sucesso do tratamento.",
+    "contraindicacoes": [
+      "Alergia confirmada a penicilina — não deve ser substituída por outro antibiótico em gestantes (encaminhar para dessensibilização, não trocar de classe)."
+    ],
+    "dicas": [
+      "A penicilina benzatina é o único tratamento comprovadamente eficaz para prevenir sífilis congênita na gestante — não há substituto seguro mesmo com alergia relatada.",
+      "Reação de Jarisch-Herxheimer (febre, mialgia, piora transitória das lesões nas primeiras 24h após a dose) é reação esperada e autolimitada, não alergia — orientar o paciente para não interromper o tratamento por isso."
+    ]
+  },
+  {
+    "id": "presc-corrimento-uretral-ceftriaxona-azitromicina",
+    "titulo": "Corrimento Uretral (Gonorreia + Clamídia) — Abordagem Sindrômica",
+    "categoria": "Infectologia",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — PCDT para Atenção Integral às Pessoas com IST (2022)",
+    "posologia": "Ceftriaxona 500 mg IM dose única + Azitromicina 1g VO dose única.\n(Tratamento simultâneo para gonorreia e clamídia, pela alta taxa de coinfecção.)",
+    "orientacao_paciente": "Ambos os medicamentos são de dose única. Abstinência sexual até completar 7 dias do tratamento e resolução dos sintomas em ambos os parceiros. Tratar todas as parcerias sexuais dos últimos 60 dias, mesmo sem sintomas.",
+    "contraindicacoes": [
+      "Alergia a cefalosporinas (ceftriaxona) ou a macrolídeos (azitromicina) — ajustar esquema conforme o alérgeno específico.",
+      "Uso de macrolídeo deve ser cauteloso em pacientes com prolongamento de QT conhecido/uso de outras drogas que prolongam QT."
+    ],
+    "dicas": [
+      "A abordagem sindrômica trata empiricamente ambos os agentes diante de corrimento uretral, sem aguardar confirmação laboratorial — reduz perda de seguimento e interrompe a cadeia de transmissão mais rapidamente.",
+      "É obrigatório notificar e tratar todas as parcerias sexuais recentes, mesmo assintomáticas, para evitar reinfecção (\"efeito ping-pong\")."
+    ]
+  },
+  {
+    "id": "presc-herpes-genital-aciclovir",
+    "titulo": "Herpes Genital — Episódio Inicial (Aciclovir)",
+    "categoria": "Infectologia",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — PCDT para Atenção Integral às Pessoas com IST (2022); CDC STI Treatment Guidelines",
+    "posologia": "Aciclovir 400 mg VO 8/8h por 7-10 dias (episódio inicial).\nEm recorrências, o curso pode ser mais curto (5 dias) e deve ser iniciado o mais precoce possível, idealmente ao primeiro sintoma prodrômico.\nQuant.: 21-30 comprimidos.",
+    "orientacao_paciente": "Iniciar o quanto antes diante dos primeiros sintomas (formigamento, ardência) para maior eficácia. Manter a região limpa e seca. Evitar contato sexual durante lesões ativas. O vírus permanece latente e pode recorrer — em caso de recorrências frequentes, converse sobre terapia supressiva contínua.",
+    "contraindicacoes": [
+      "Hipersensibilidade ao aciclovir.",
+      "Ajuste de dose necessário na insuficiência renal (não contraindicação absoluta, mas reduzir dose/intervalo)."
+    ],
+    "dicas": [
+      "O episódio inicial de herpes genital costuma ser mais prolongado e sintomático que as recorrências — orientar o paciente sobre a natureza recorrente e crônica da infecção desde o primeiro atendimento.",
+      "Terapia supressiva diária contínua pode ser considerada em pacientes com recorrências frequentes (6 ou mais episódios/ano) para reduzir frequência de crises e transmissão ao parceiro."
+    ]
+  },
+  {
+    "id": "presc-osteoartrite-paracetamol",
+    "titulo": "Osteoartrite — Paracetamol/AINE tópico",
+    "categoria": "Reumatologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Reumatologia; OARSI Guidelines",
+    "posologia": "Paracetamol 750 mg — 1 comprimido VO até 8/8h conforme dor (máximo 4g/dia).\nAlternativa/associação: diclofenaco gel tópico, aplicar na articulação afetada 3-4x/dia.\nQuant.: 30 comprimidos.",
+    "orientacao_paciente": "Usar conforme necessidade para dor, respeitando a dose máxima diária. Manter atividade física regular de baixo impacto e fortalecimento muscular — é parte essencial do tratamento, não apenas medicação. Em caso de sobrepeso, a perda de peso reduz significativamente a sobrecarga articular.",
+    "contraindicacoes": [
+      "Hepatopatia grave (para o paracetamol, respeitar dose máxima rigorosamente).",
+      "Lesão cutânea aberta no local de aplicação do AINE tópico."
+    ],
+    "dicas": [
+      "AINE tópico tem eficácia comparável ao oral para dor articular localizada (joelho, mãos), com muito menor risco sistêmico (gastrointestinal, renal, cardiovascular) — preferir ao AINE oral, especialmente em idosos.",
+      "Exercício e controle de peso têm eficácia comprovada e devem ser reforçados em toda consulta, não apenas prescritos uma vez."
+    ]
+  },
+  {
+    "id": "presc-gota-crise-colchicina",
+    "titulo": "Gota — Crise Aguda (Colchicina)",
+    "categoria": "Reumatologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Reumatologia; ACR Guideline for the Management of Gout",
+    "posologia": "Colchicina 0,5 mg — 2 comprimidos VO na primeira hora, seguido de 1 comprimido 1h depois; a partir do dia seguinte, 1 comprimido 12/12h até resolução da crise (esquema de baixa dose, mais bem tolerado).\nQuant.: 20 comprimidos.",
+    "orientacao_paciente": "Iniciar assim que perceber os primeiros sinais da crise — quanto mais precoce, maior a eficácia. Suspender ou reduzir se surgir diarreia importante (efeito adverso dose-dependente mais comum). Não iniciar ou ajustar medicação para baixar o ácido úrico durante a crise aguda.",
+    "contraindicacoes": [
+      "Insuficiência renal ou hepática grave (ajuste de dose obrigatório, evitar em disfunção grave).",
+      "Uso concomitante com inibidores potentes de CYP3A4/P-glicoproteína em insuficiência renal/hepática (risco de toxicidade grave).",
+      "Discrasias sanguíneas."
+    ],
+    "dicas": [
+      "Nunca iniciar ou modificar a dose de alopurinol/hipouricemiante durante a crise aguda de gota — pode prolongar ou intensificar a crise pela flutuação do ácido úrico sérico.",
+      "AINE ou corticoide são alternativas igualmente eficazes para a crise aguda, especialmente em pacientes com contraindicação à colchicina."
+    ]
+  },
+  {
+    "id": "presc-dermatite-atopica-corticoide-topico",
+    "titulo": "Dermatite Atópica — Corticoide Tópico + Hidratação",
+    "categoria": "Dermatologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Dermatologia; AAD Guidelines of Care for Atopic Dermatitis",
+    "posologia": "Hidrocortisona creme 1% (baixa potência, face/dobras) ou betametasona creme 0,05% (potência moderada, tronco/membros) — aplicar fina camada 1-2x/dia nas áreas afetadas, por até 7-14 dias no surto agudo.\nHidratante emoliente sem perfume — aplicar 2x/dia em toda a pele, indefinidamente, mesmo sem lesões ativas.\nQuant.: 1 bisnaga de cada.",
+    "orientacao_paciente": "Aplicar o corticoide apenas nas áreas com lesão, em camada fina, e o hidratante em toda a pele diariamente, mesmo quando não há lesões — a hidratação é a base do tratamento de longo prazo. Evitar banhos muito quentes e demorados, e sabonetes agressivos/perfumados.",
+    "contraindicacoes": [
+      "Infecção cutânea ativa não tratada no local (bacteriana, viral ou fúngica) — tratar a infecção antes/concomitante ao corticoide.",
+      "Uso prolongado e contínuo de corticoide de alta potência em face ou dobras (risco de atrofia cutânea)."
+    ],
+    "dicas": [
+      "A hidratação regular é o pilar mais importante e frequentemente subestimado do tratamento — reduz a frequência e a intensidade dos surtos ao restaurar a barreira cutânea.",
+      "Usar a menor potência de corticoide eficaz e pelo menor tempo necessário, especialmente em face, pálpebras e áreas de dobra, mais suscetíveis a atrofia cutânea com uso prolongado."
+    ]
+  },
+  {
+    "id": "presc-impetigo-mupirocina",
+    "titulo": "Impetigo Localizado — Mupirocina Tópica",
+    "categoria": "Dermatologia",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Dermatologia; IDSA Clinical Practice Guidelines for Skin and Soft Tissue Infections",
+    "posologia": "Mupirocina pomada 2% — aplicar fina camada nas lesões 3x/dia, por 5 dias.\nQuant.: 1 bisnaga (15g).",
+    "orientacao_paciente": "Limpar suavemente as crostas com água e sabão antes de aplicar a pomada. Lavar as mãos antes e depois da aplicação. Evitar contato próximo com outras crianças/pessoas até 24-48h de tratamento (é bastante contagioso por contato direto). Trocar toalhas e roupas de cama com frequência durante o tratamento.",
+    "contraindicacoes": [
+      "Hipersensibilidade à mupirocina ou ao polietilenoglicol (veículo da pomada).",
+      "Lesões extensas/numerosas ou sinais sistêmicos (febre) — nesse caso, tratamento tópico é insuficiente e exige antibiótico oral."
+    ],
+    "dicas": [
+      "Reservar o tratamento tópico para impetigo localizado e não extenso — casos extensos ou com sinais sistêmicos exigem antibiótico oral (cefalexina, por exemplo).",
+      "Impetigo é altamente contagioso por contato direto — orientar higiene das mãos e evitar compartilhamento de toalhas/objetos pessoais até resolução."
+    ]
+  },
+  {
+    "id": "presc-candidiase-vulvovaginal-fluconazol",
+    "titulo": "Candidíase Vulvovaginal — Fluconazol",
+    "categoria": "Ginecologia",
+    "revisado": false,
+    "fonte": "FEBRASGO; CDC Sexually Transmitted Infections Treatment Guidelines",
+    "posologia": "Fluconazol 150 mg — 1 cápsula VO, dose única.\nEm casos recorrentes/complicados, repetir a mesma dose no 3º e 7º dia, e considerar profilaxia semanal por 6 meses.\nQuant.: 1 cápsula (caso não complicado).",
+    "orientacao_paciente": "É dose única via oral — não é necessário uso vaginal associado na maioria dos casos não complicados. O alívio dos sintomas pode levar 2-3 dias. Procurar avaliação se os sintomas persistirem ou recorrerem com frequência (mais de 4 episódios/ano).",
+    "contraindicacoes": [
+      "Gestação (evitar fluconazol oral, especialmente em dose repetida — preferir tratamento tópico/vaginal).",
+      "Uso concomitante com medicamentos que prolongam o intervalo QT de forma significativa.",
+      "Hepatopatia significativa (usar com cautela)."
+    ],
+    "dicas": [
+      "Na gestação, o tratamento de escolha é tópico vaginal (miconazol ou nistatina), não o fluconazol oral.",
+      "Candidíase recorrente (4+ episódios/ano) merece investigação de fatores predisponentes (diabetes não controlado, imunossupressão) antes de apenas repetir o tratamento sintomático."
+    ]
+  },
+  {
+    "id": "presc-vaginose-bacteriana-metronidazol",
+    "titulo": "Vaginose Bacteriana — Metronidazol",
+    "categoria": "Ginecologia",
+    "revisado": false,
+    "fonte": "FEBRASGO; CDC Sexually Transmitted Infections Treatment Guidelines",
+    "posologia": "Metronidazol 500 mg — 1 comprimido VO 12/12h por 7 dias.\nAlternativa: metronidazol gel vaginal 0,75%, 1 aplicação à noite por 5 dias.\nQuant.: 14 comprimidos (esquema oral).",
+    "orientacao_paciente": "Evitar consumo de álcool durante o tratamento e até 24-48h após o término (interação tipo dissulfiram — náusea, vômitos, rubor). Completar todo o tratamento mesmo com melhora dos sintomas antes.",
+    "contraindicacoes": [
+      "Primeiro trimestre de gestação (preferir via tópica/vaginal se necessário; via oral é geralmente evitada nesse período por alguns protocolos, embora não seja unanimidade — checar protocolo local).",
+      "Consumo de álcool durante e logo após o tratamento.",
+      "Hipersensibilidade a nitroimidazólicos."
+    ],
+    "dicas": [
+      "Diferente da tricomoníase, não é considerada IST clássica e, portanto, o tratamento rotineiro da parceria sexual não é recomendado, exceto em casos recorrentes selecionados.",
+      "Vaginose bacteriana não tratada na gestação associa-se a maior risco de trabalho de parto prematuro — tratar quando sintomática."
+    ]
+  },
+  {
+    "id": "presc-nausea-gravidica-piridoxina",
+    "titulo": "Náuseas e Vômitos na Gestação — Piridoxina + Doxilamina",
+    "categoria": "Obstetrícia",
+    "revisado": false,
+    "fonte": "FEBRASGO; ACOG Practice Bulletin on Nausea and Vomiting of Pregnancy",
+    "posologia": "Piridoxina (vitamina B6) 10 mg + Doxilamina 10 mg — 2 comprimidos VO à noite; se necessário, associar 1 comprimido pela manhã e 1 à tarde (máximo 4 comprimidos/dia).\nQuant.: 20 comprimidos.",
+    "orientacao_paciente": "Tomar preferencialmente à noite, pois pode causar sonolência. Fracionar as refeições em pequenas porções ao longo do dia e evitar jejum prolongado. Procurar atendimento se não conseguir manter nenhum líquido/alimento (risco de desidratação e hiperêmese gravídica).",
+    "contraindicacoes": [
+      "Hipersensibilidade a anti-histamínicos ou à piridoxina.",
+      "Uso concomitante com inibidores da MAO."
+    ],
+    "dicas": [
+      "É considerada primeira linha farmacológica para náusea/vômito gestacional por seu perfil de segurança bem estabelecido na gestação.",
+      "Vômitos incoercíveis com perda de peso e desidratação configuram hiperêmese gravídica, exigindo avaliação e reidratação hospitalar — quadro distinto da náusea gravídica comum."
+    ]
+  },
+  {
+    "id": "presc-pre-natal-acido-folico-ferro",
+    "titulo": "Pré-Natal — Ácido Fólico e Sulfato Ferroso",
+    "categoria": "Obstetrícia",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Caderno de Atenção ao Pré-Natal; FEBRASGO",
+    "posologia": "Ácido fólico 5 mg — 1 comprimido VO 1x/dia (idealmente iniciado 1-3 meses antes da concepção e mantido até 12 semanas).\nSulfato ferroso 40 mg de ferro elementar — 1 comprimido VO 1x/dia, em jejum ou longe das refeições, a partir da 20ª semana (ou conforme protocolo local, por vezes desde o início do pré-natal).\nQuant.: 30 comprimidos de cada.",
+    "orientacao_paciente": "Tomar o sulfato ferroso longe do café/leite/antiácidos (reduzem a absorção) — se causar desconforto gástrico importante, pode ser tomado com pequena quantidade de alimento. Fezes escurecidas são esperadas e não indicam sangramento. Vitamina C (suco de laranja/limão) junto ao ferro melhora a absorção.",
+    "contraindicacoes": [
+      "Hemocromatose ou sobrecarga de ferro conhecida (para o sulfato ferroso).",
+      "Hipersensibilidade a algum dos componentes."
+    ],
+    "dicas": [
+      "O ácido fólico peri-concepcional é a intervenção mais eficaz para prevenção de defeitos de tubo neural — reforçar a importância do início pré-concepcional em consultas de planejamento reprodutivo.",
+      "Constipação é efeito adverso comum do sulfato ferroso — orientar hidratação e fibras para minimizar, evitando abandono do tratamento."
+    ]
+  },
+  {
+    "id": "presc-itu-gestante-cefalexina",
+    "titulo": "ITU na Gestação (Cistite/Bacteriúria Assintomática) — Cefalexina",
+    "categoria": "Obstetrícia",
+    "revisado": false,
+    "fonte": "FEBRASGO; Ministério da Saúde — Gestação de Alto Risco",
+    "posologia": "Cefalexina 500 mg — 1 comprimido VO 6/6h por 7 dias.\nQuant.: 28 comprimidos.",
+    "orientacao_paciente": "Completar todo o tratamento mesmo sem sintomas (bacteriúria assintomática na gestação é sempre tratada, diferente de fora da gestação). Repetir urocultura de controle após o tratamento, conforme orientação do pré-natal, pelo risco de recorrência na gestação.",
+    "contraindicacoes": [
+      "Alergia a cefalosporinas.",
+      "Reação cruzada grave prévia a penicilina (avaliar risco-benefício individualmente)."
+    ],
+    "dicas": [
+      "Bacteriúria assintomática deve ser sempre tratada na gestação (diferente de fora da gestação), pelo risco aumentado de progressão para pielonefrite e de complicações obstétricas (trabalho de parto prematuro).",
+      "Evitar nitrofurantoína próximo ao termo (risco de anemia hemolítica neonatal) e evitar quinolonas/sulfametoxazol-trimetoprima na gestação pelo perfil de segurança menos favorável."
+    ]
+  },
+  {
+    "id": "presc-tpp-tocolise-nifedipina",
+    "titulo": "Trabalho de Parto Prematuro — Tocólise com Nifedipina",
+    "categoria": "Obstetrícia",
+    "revisado": false,
+    "fonte": "FEBRASGO; ACOG Practice Bulletin on Preterm Labor",
+    "posologia": "Nifedipina 10 mg VO, repetir a cada 20 minutos se persistirem contrações (máximo 3 doses/hora), seguida de manutenção 20 mg VO 6/6h ou 8/8h por até 48h (tempo para completar corticoterapia antenatal).",
+    "orientacao_paciente": "A tocólise é medida temporária, usada principalmente para permitir tempo suficiente para o corticoide de maturação pulmonar fetal fazer efeito — não impede o parto prematuro indefinidamente. Monitorização de pressão arterial materna e de batimentos fetais é necessária durante o uso.",
+    "contraindicacoes": [
+      "Hipotensão materna significativa.",
+      "Corioamnionite (contraindicação a qualquer tocólise — indicação é resolver o parto, não retardá-lo).",
+      "Sofrimento fetal agudo (mesma lógica — tocólise contraindicada).",
+      "Uso concomitante com sulfato de magnésio em doses que aumentem risco de hipotensão significativa (usar com cautela conjunta)."
+    ],
+    "dicas": [
+      "A tocólise deve ser sempre acompanhada de corticoide antenatal (betametasona/dexametasona) para maturação pulmonar fetal — esse é o real objetivo terapêutico da tocólise (ganhar tempo), não a suspensão definitiva do trabalho de parto.",
+      "Corioamnionite e sofrimento fetal são contraindicações absolutas à tocólise, pois nesses cenários o parto deve ser resolvido, não postergado."
+    ]
+  },
+  {
+    "id": "presc-febre-pediatrica-paracetamol",
+    "titulo": "Febre na Infância — Paracetamol (dose por peso)",
+    "categoria": "Pediatria",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Pediatria; Bulário ANVISA",
+    "posologia": "Paracetamol solução oral (200 mg/mL, gotas) — 1 gota/kg de peso, VO, a cada 6 horas se febre/dor (máximo 4 doses/dia).\nExemplo para criança de 10 kg: 10 gotas por dose.\nQuant.: 1 frasco (15 mL).",
+    "orientacao_paciente": "Usar apenas se necessário (febre com desconforto, dor), respeitando o intervalo mínimo de 6 horas entre doses. Usar a seringa/conta-gotas que acompanha o produto para medir corretamente — não usar colher de cozinha. Procurar atendimento se a febre persistir por mais de 3 dias ou se a criança apresentar sinais de gravidade (letargia, recusa alimentar importante, dificuldade respiratória).",
+    "contraindicacoes": [
+      "Hepatopatia grave.",
+      "Hipersensibilidade ao paracetamol.",
+      "Ultrapassar a dose máxima diária por peso (risco de hepatotoxicidade)."
+    ],
+    "dicas": [
+      "Sempre calcular a dose pelo peso atual da criança, nunca pela idade isoladamente — crianças da mesma idade podem ter pesos muito diferentes.",
+      "Dipirona é alternativa amplamente usada no Brasil com perfil de segurança e eficácia semelhante, também calculada por peso."
+    ]
+  },
+  {
+    "id": "presc-otite-media-aguda-amoxicilina-pediatrica",
+    "titulo": "Otite Média Aguda (Pediátrica) — Amoxicilina em Dose Alta",
+    "categoria": "Pediatria",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Pediatria; AAP Clinical Practice Guideline for Acute Otitis Media",
+    "posologia": "Amoxicilina suspensão 250 mg/5mL — 80-90 mg/kg/dia, dividido em doses de 12/12h, por 10 dias (crianças <2 anos ou otite grave) ou 5-7 dias (crianças ≥2 anos, casos leves).\nExemplo para criança de 15 kg: aproximadamente 12 mL/dia, divididos em 2 doses de 6 mL 12/12h (ajustar conforme apresentação exata do produto).\nQuant.: conforme cálculo, 1-2 frascos.",
+    "orientacao_paciente": "Agitar bem o frasco antes de usar. Usar a seringa dosadora que acompanha o produto. Completar todo o tratamento mesmo com melhora da dor em 1-2 dias. Retornar se a febre/dor não melhorar em 48-72h (pode indicar necessidade de troca de antibiótico).",
+    "contraindicacoes": [
+      "Alergia a penicilinas.",
+      "Mononucleose infecciosa concomitante (risco de exantema)."
+    ],
+    "dicas": [
+      "Em crianças maiores de 2 anos com sintomas leves e diagnóstico não totalmente certo, a observação vigilante por 48-72h sem antibiótico imediato é opção válida e cada vez mais recomendada, dada a alta taxa de resolução espontânea.",
+      "A dose alta de amoxicilina (80-90 mg/kg/dia, acima da dose \"padrão\" usada em outras infecções) é necessária para cobrir cepas de pneumococo com sensibilidade reduzida à penicilina."
+    ]
+  },
+  {
+    "id": "presc-verminose-infantil-albendazol",
+    "titulo": "Parasitoses Intestinais (Criança) — Albendazol",
+    "categoria": "Pediatria",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Pediatria",
+    "posologia": "Albendazol suspensão 400 mg — dose única VO (crianças acima de 1-2 anos, conforme orientação do produto/idade mínima).\nEm estrongiloidíase ou infestação maciça, o esquema pode ser repetido ou prolongado conforme orientação médica — não é dose única universal para todos os parasitas.\nQuant.: 1 frasco/dose única.",
+    "orientacao_paciente": "Tomar preferencialmente com alimento gorduroso, que melhora a absorção. É comum recomendar o tratamento simultâneo de todos os membros da família em ambientes com saneamento precário, para reduzir reinfecção. Reforçar medidas de higiene (lavagem de mãos, uso de calçados) para prevenção.",
+    "contraindicacoes": [
+      "Idade abaixo do limite mínimo estabelecido pela bula (geralmente 1-2 anos, conforme a apresentação).",
+      "Gestação, especialmente primeiro trimestre (evitar, exceto quando o benefício claramente supera o risco).",
+      "Hipersensibilidade a benzimidazólicos."
+    ],
+    "dicas": [
+      "Estrongiloidíase merece atenção especial: se a criança for submetida a imunossupressão futura, deve-se rastrear e tratar previamente, pelo risco de hiperinfecção grave.",
+      "Ivermectina é a droga de escolha especificamente para estrongiloidíase (mais eficaz que albendazol para esse parasita), diferente dos demais helmintos comuns."
+    ]
+  },
+  {
+    "id": "presc-depressao-sertralina",
+    "titulo": "Depressão Maior — Sertralina",
+    "categoria": "Saúde Mental",
+    "revisado": false,
+    "fonte": "Associação Brasileira de Psiquiatria; APA Practice Guideline for Major Depressive Disorder",
+    "posologia": "Sertralina 50 mg — 1 comprimido VO 1x/dia, pela manhã ou à noite conforme tolerância.\nIniciar com 25 mg/dia por 1 semana em pacientes ansiosos/sensíveis, depois titular para 50 mg.\nQuant.: 30 comprimidos (reavaliar em 4-6 semanas).",
+    "orientacao_paciente": "O efeito completo leva de 4 a 6 semanas para aparecer — não interromper por falta de resposta imediata. Pode causar náusea e insônia/sonolência nas primeiras semanas, geralmente transitórias. Não interromper abruptamente após uso prolongado (fazer redução gradual, orientada pelo médico). Comunicar piora do humor ou ideação suicida imediatamente.",
+    "contraindicacoes": [
+      "Uso concomitante ou recente (últimas 2 semanas) de inibidor da MAO (risco de síndrome serotoninérgica).",
+      "Hipersensibilidade a inibidores seletivos de recaptação de serotonina.",
+      "Uso concomitante com pimozida."
+    ],
+    "dicas": [
+      "Avaliar sistematicamente risco de suicídio em toda consulta de acompanhamento, especialmente nas primeiras semanas de tratamento e em jovens (possível aumento transitório de ideação no início do tratamento em alguns pacientes).",
+      "Reavaliar resposta em 4-6 semanas antes de considerar troca de antidepressivo — tempo insuficiente de tratamento é causa comum de troca precoce e desnecessária."
+    ]
+  },
+  {
+    "id": "presc-tag-escitalopram",
+    "titulo": "Transtorno de Ansiedade Generalizada — Escitalopram",
+    "categoria": "Saúde Mental",
+    "revisado": false,
+    "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR",
+    "posologia": "Escitalopram 10 mg — 1 comprimido VO 1x/dia, podendo titular até 20 mg/dia conforme resposta.\nQuant.: 30 comprimidos (reavaliar em 4-6 semanas).",
+    "orientacao_paciente": "Tomar todos os dias, mesmo sem crises de ansiedade no momento. Pode levar algumas semanas para o efeito completo. Não suspender abruptamente. Associar psicoterapia (terapia cognitivo-comportamental) sempre que possível, pela eficácia comprovada e complementar à medicação.",
+    "contraindicacoes": [
+      "Uso concomitante ou recente de inibidor da MAO.",
+      "Prolongamento de intervalo QT conhecido ou uso concomitante de outros medicamentos que prolongam QT.",
+      "Hipersensibilidade a inibidores seletivos de recaptação de serotonina."
+    ],
+    "dicas": [
+      "Antidepressivos (ISRS) são primeira linha farmacológica para TAG, não benzodiazepínicos — estes últimos devem ser reservados a uso pontual e de curto prazo pelo risco de dependência.",
+      "Se benzodiazepínico for necessário para alívio sintomático inicial (enquanto o ISRS ainda não fez efeito), limitar a poucas semanas e reavaliar a necessidade de continuidade."
+    ]
+  },
+  {
+    "id": "presc-insonia-zolpidem-curto-prazo",
+    "titulo": "Insônia — Zolpidem (uso pontual/curto prazo)",
+    "categoria": "Saúde Mental",
+    "revisado": false,
+    "fonte": "Associação Brasileira de Sono; AASM Clinical Practice Guideline for Chronic Insomnia",
+    "posologia": "Zolpidem 10 mg — 1 comprimido VO, imediatamente antes de deitar, apenas quando necessário, por período limitado (idealmente não mais que 2-4 semanas contínuas).\nQuant.: 10-14 comprimidos.",
+    "orientacao_paciente": "Tomar apenas ao deitar-se, com pelo menos 7-8 horas disponíveis para dormir. Não tomar se precisar dirigir ou operar máquinas nas horas seguintes. Não é solução definitiva para insônia — a terapia cognitivo-comportamental para insônia é o tratamento de primeira linha e mais duradouro; a medicação é ponte de curto prazo.",
+    "contraindicacoes": [
+      "Miastenia gravis.",
+      "Insuficiência respiratória grave/apneia do sono não tratada.",
+      "Uso concomitante com álcool ou outros depressores do SNC.",
+      "Gestação e lactação."
+    ],
+    "dicas": [
+      "Prescrever pelo menor tempo possível e reavaliar continuamente a necessidade — uso prolongado associa-se a tolerância, dependência e maior risco de quedas em idosos.",
+      "Higiene do sono e terapia cognitivo-comportamental para insônia devem ser sempre oferecidas como base do tratamento, não apenas a medicação isolada."
+    ]
+  },
+  {
+    "id": "presc-anafilaxia-adrenalina",
+    "titulo": "Anafilaxia — Adrenalina Intramuscular",
+    "categoria": "Medicina Intensiva",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Alergia e Imunologia — Guia Prático de Anafilaxia; World Allergy Organization Guidelines",
+    "posologia": "Adrenalina (epinefrina) 1 mg/mL — 0,3 a 0,5 mg IM na face lateral da coxa (vasto lateral), podendo repetir a cada 5-15 minutos se não houver melhora.\nEm crianças: 0,01 mg/kg IM (máximo 0,3 mg).",
+    "orientacao_paciente": "Não se aplica orientação de uso ambulatorial de rotina — é medicação de emergência. Pacientes com histórico de anafilaxia devem portar autoinjetor de adrenalina e receber treinamento sobre reconhecimento de sinais precoces e uso correto do dispositivo.",
+    "contraindicacoes": [
+      "Não há contraindicação absoluta em contexto de anafilaxia com risco de vida — os riscos de não tratar superam largamente qualquer risco da medicação nesse cenário."
+    ],
+    "dicas": [
+      "A adrenalina intramuscular é sempre a primeira medida e não deve ser adiada em favor de anti-histamínico ou corticoide — estes são apenas adjuvantes e não substituem a adrenalina.",
+      "Observação hospitalar prolongada (várias horas) é recomendada após o episódio, pelo risco de reação bifásica (recorrência dos sintomas horas depois da melhora aparente inicial)."
+    ]
+  },
+  {
+    "id": "presc-urgencia-hipertensiva-captopril",
+    "titulo": "Urgência Hipertensiva — Captopril (via oral)",
+    "categoria": "Medicina Intensiva",
+    "revisado": false,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial (SBC); ACC/AHA Guideline",
+    "posologia": "Captopril 25 mg — 1 comprimido VO (sublingual não é mais recomendado pela absorção errática), com reavaliação da PA em 30-60 minutos.\nQuant.: dose única no atendimento; ajuste do esquema anti-hipertensivo crônico no seguimento ambulatorial.",
+    "orientacao_paciente": "Após estabilização, é fundamental reavaliação ambulatorial em poucos dias para ajuste do tratamento anti-hipertensivo de manutenção — a urgência hipertensiva reflete controle inadequado da hipertensão crônica na maioria dos casos.",
+    "contraindicacoes": [
+      "Gestação.",
+      "Angioedema prévio por IECA.",
+      "Estenose bilateral de artéria renal conhecida.",
+      "Emergência hipertensiva com lesão aguda de órgão-alvo (nesse caso, tratamento deve ser parenteral e monitorizado, não apenas oral)."
+    ],
+    "dicas": [
+      "É essencial diferenciar urgência (sem lesão aguda de órgão-alvo, tratamento oral e reavaliação ambulatorial) de emergência hipertensiva (com lesão aguda, exige tratamento parenteral em ambiente monitorizado) antes de prescrever esse esquema.",
+      "Reduções muito rápidas e agressivas da PA mesmo na urgência devem ser evitadas — o objetivo é controle gradual, não normalização imediata."
+    ]
+  },
+  {
+    "id": "presc-dor-aguda-dipirona-tramadol",
+    "titulo": "Dor Aguda Moderada — Dipirona + Tramadol (2º degrau)",
+    "categoria": "Medicina Intensiva",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira para o Estudo da Dor; Escada Analgésica da OMS",
+    "posologia": "Dipirona 1g VO/EV 6/6h se dor, associada a Tramadol 50-100 mg VO/EV 6/6h se dor moderada não controlada apenas com dipirona.\nQuant.: conforme contexto (internação) ou 20 comprimidos de cada (prescrição ambulatorial de curto prazo).",
+    "orientacao_paciente": "Usar conforme necessidade para dor, respeitando os intervalos mínimos entre doses. Tramadol pode causar náusea, tontura e sonolência — evitar dirigir/operar máquinas até saber como reage à medicação. Não é indicado para uso contínuo prolongado sem reavaliação.",
+    "contraindicacoes": [
+      "Dipirona: histórico de agranulocitose/discrasia sanguínea por dipirona; porfiria.",
+      "Tramadol: uso concomitante com inibidores da MAO; epilepsia não controlada (reduz limiar convulsivo); uso concomitante com outros serotoninérgicos (risco de síndrome serotoninérgica)."
+    ],
+    "dicas": [
+      "Seguir a escada analgésica da OMS: dor leve com analgésico comum/AINE; dor moderada acrescentando opioide fraco (tramadol/codeína); dor intensa com opioide forte — reavaliar a intensidade da dor a cada etapa.",
+      "Tramadol tem risco de síndrome serotoninérgica quando associado a outros serotoninérgicos (ISRS, alguns antieméticos) — checar interações antes de associar."
+    ]
+  },
+  {
+    "id": "presc-profilaxia-antibiotica-cirurgica-cefazolina",
+    "titulo": "Profilaxia Antibiótica Cirúrgica — Cefazolina",
+    "categoria": "Cirurgia Geral",
+    "revisado": false,
+    "fonte": "Colégio Brasileiro de Cirurgiões; ASHP/IDSA Clinical Practice Guidelines for Antimicrobial Prophylaxis in Surgery",
+    "posologia": "Cefazolina 2g EV (3g se peso >120kg), em dose única, administrada 30-60 minutos antes da incisão cirúrgica.\nRedose intraoperatória a cada 4 horas se a cirurgia se prolongar além desse tempo, ou se houver perda sanguínea significativa.",
+    "orientacao_paciente": "Não se aplica orientação ambulatorial — é administrada no ambiente hospitalar, no momento pré-operatório, pela equipe assistente.",
+    "contraindicacoes": [
+      "Alergia grave (anafilaxia) a betalactâmicos — nesse caso, usar alternativa (clindamicina ou vancomicina, conforme o tipo de cirurgia).",
+      "Colonização/infecção conhecida por MRSA em determinados contextos (considerar associação com vancomicina, conforme protocolo institucional)."
+    ],
+    "dicas": [
+      "O momento da administração é crítico: deve ser dentro dos 60 minutos antes da incisão (30 minutos para vancomicina/fluoroquinolonas, que exigem infusão mais lenta) — administração tardia ou muito precoce reduz a eficácia.",
+      "Prolongar a profilaxia além de 24 horas do pós-operatório não reduz infecção de sítio cirúrgico na maioria dos procedimentos e aumenta risco de resistência bacteriana e Clostridioides difficile — a duração deve ser limitada conforme protocolo."
+    ]
+  },
+  {
+    "id": "presc-tromboprofilaxia-enoxaparina",
+    "titulo": "Tromboprofilaxia (Pós-operatório/Internação) — Enoxaparina",
+    "categoria": "Cirurgia Geral",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; ACCP Guidelines for VTE Prevention",
+    "posologia": "Enoxaparina 40 mg SC 1x/dia, iniciada conforme risco de sangramento pós-operatório e protocolo da instituição (geralmente 12-24h após cirurgias de risco padrão), mantida durante toda a internação ou período de imobilização/maior risco.\nAjustar dose na insuficiência renal grave (clearance <30 mL/min).",
+    "orientacao_paciente": "Não se aplica orientação ambulatorial de rotina — geralmente administrada durante a internação. Se prescrita para uso domiciliar prolongado (ex.: pós-cirurgia ortopédica de grande porte), orientar técnica de autoaplicação subcutânea e sinais de sangramento a comunicar.",
+    "contraindicacoes": [
+      "Sangramento ativo clinicamente significativo.",
+      "Plaquetopenia induzida por heparina (história prévia).",
+      "Plaquetopenia grave atual.",
+      "Insuficiência renal grave sem ajuste de dose apropriado."
+    ],
+    "dicas": [
+      "A avaliação de risco de TVP/TEP (por exemplo, escore de Caprini em cirurgia) versus risco de sangramento deve ser individualizada antes de definir início, dose e duração da profilaxia.",
+      "Profilaxia mecânica (compressão pneumática intermitente, meias elásticas) é alternativa ou complemento em pacientes com alto risco de sangramento que contraindica a profilaxia farmacológica."
+    ]
   }
 ]

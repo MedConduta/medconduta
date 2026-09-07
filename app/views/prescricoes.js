@@ -80,6 +80,8 @@ export async function renderDetalhe(container, { id }) {
     return;
   }
 
+  const dicas = item.dicas || [];
+
   container.innerHTML = `
     <div class="main__container">
       <div class="page-header">
@@ -89,7 +91,7 @@ export async function renderDetalhe(container, { id }) {
       </div>
       <div class="prescription">
         <div class="prescription__header">
-          <strong>${escapeHtml(item.titulo)}</strong>
+          <strong><span class="prescription__rx">℞</span>${escapeHtml(item.titulo)}</strong>
           <button class="btn btn--primary" id="btn-copiar">Copiar prescrição</button>
         </div>
         <div class="prescription__body">
@@ -101,10 +103,23 @@ export async function renderDetalhe(container, { id }) {
             <div class="prescription__field-label">Orientação ao paciente</div>
             <div class="prescription__text">${escapeHtml(item.orientacao_paciente)}</div>
           </div>
+        </div>
+      </div>
+      <div class="prescriber-notes">
+        <div class="prescriber-notes__header">Contraindicações absolutas e dicas</div>
+        <div class="prescriber-notes__body">
           <div>
-            <div class="prescription__field-label">Contraindicações</div>
-            <ul class="prescription__contra">${item.contraindicacoes.map((c) => `<li>${escapeHtml(c)}</li>`).join("")}</ul>
+            <div class="prescription__field-label">Contraindicações absolutas</div>
+            <ul class="prescriber-notes__contra">${item.contraindicacoes.map((c) => `<li>${escapeHtml(c)}</li>`).join("")}</ul>
           </div>
+          ${
+            dicas.length
+              ? `<div>
+            <div class="prescription__field-label">Dicas</div>
+            <ul class="prescriber-notes__dicas">${dicas.map((d) => `<li>${escapeHtml(d)}</li>`).join("")}</ul>
+          </div>`
+              : ""
+          }
         </div>
       </div>
     </div>
