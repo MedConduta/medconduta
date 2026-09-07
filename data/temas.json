@@ -546,7 +546,7 @@
     "titulo": "Sangramento Uterino Anormal (SUA)",
     "resumo": "Classificação etiológica (PALM-COEIN) e abordagem inicial do sangramento uterino anormal.",
     "revisado": false,
-    "fonte": "FIGO PALM-COEIN Classification System (2011); FEBRASGO - Manual de Sangramento Uterino Anormal",
+    "fonte": "Federação Brasileira de Ginecologia e Obstetrícia (FEBRASGO); Classificação PALM-COEIN (FIGO)",
     "mnemonicos": [
       {
         "palavra": "PALM-COEIN",
@@ -555,24 +555,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e classificação",
-        "conteudo": "Sangramento uterino anormal em quantidade, duração ou frequência fora do padrão menstrual habitual, classificado pela FIGO em causas estruturais e não estruturais (PALM-COEIN)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O sangramento uterino anormal é classificado pela FIGO no sistema PALM-COEIN, dividindo causas estruturais (Pólipo, Adenomiose, Leiomioma, Malignidade/hiperplasia) de causas não estruturais (Coagulopatia, disfunção Ovulatória, disfunção Endometrial, Iatrogênica, Não classificada). Em adolescentes e no período perimenopausa, a anovulação por imaturidade ou declínio do eixo hipotálamo-hipófise-ovariano é causa predominante, resultando em estímulo estrogênico endometrial não contraposto pela progesterona, com proliferação endometrial excessiva e descamação irregular."
       },
       {
-        "titulo": "Avaliação inicial",
-        "conteudo": "História menstrual detalhada, exclusão de gestação (beta-hCG) e ultrassonografia transvaginal para avaliar a cavidade uterina e o endométrio."
+        "titulo": "Quadro clínico",
+        "conteudo": "Sangramento menstrual excessivo em volume (menorragia), prolongado, ou fora do padrão cíclico esperado (metrorragia, sangramento intermenstrual), com repercussão variável desde desconforto leve até anemia sintomática em casos de perda sanguínea crônica significativa. A caracterização detalhada do padrão de sangramento (regularidade, frequência, volume, duração) orienta a investigação etiológica dentro do sistema PALM-COEIN."
       },
       {
-        "titulo": "Conduta conforme estabilidade",
-        "conteudo": "Pacientes hemodinamicamente instáveis exigem estabilização e, por vezes, intervenção cirúrgica de urgência; pacientes estáveis podem ser investigadas ambulatorialmente."
+        "titulo": "Exame físico",
+        "conteudo": "Exame especular e toque bimanual avaliam a origem do sangramento (uterino versus cervical/vaginal) e características sugestivas de causa estrutural (útero aumentado e irregular sugerindo miomatose, colo com lesão visível sugerindo causa cervical). Sinais de anemia (palidez, taquicardia) devem ser pesquisados em sangramentos volumosos ou prolongados."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Beta-hCG deve ser sempre solicitado para excluir gestação/complicação gestacional como causa do sangramento, etapa obrigatória em qualquer mulher em idade reprodutiva antes de prosseguir a investigação. Ultrassonografia transvaginal é o exame de imagem inicial para avaliar causas estruturais (miomas, pólipos, espessamento endometrial). Biópsia endometrial é indicada em mulheres acima de 45 anos, ou mais jovens com fatores de risco (obesidade, anovulação crônica), para excluir hiperplasia/neoplasia endometrial."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Opções incluem terapia hormonal (progestagênios, contraceptivos combinados) para causas disfuncionais, ou tratamento cirúrgico dirigido à etiologia estrutural (miomectomia, polipectomia), considerando desejo reprodutivo."
+        "conteudo": "O tratamento é dirigido à causa identificada no sistema PALM-COEIN: hormonal (contraceptivos combinados, progestágenos, ou dispositivo intrauterino liberador de levonorgestrel) para causas disfuncionais/anovulatórias; correção cirúrgica (polipectomia, miomectomia) para causas estruturais específicas. Em sangramento agudo volumoso, estrogênio em altas doses ou tratamento hormonal combinado em esquema intensivo pode ser usado para controle rápido do episódio agudo, associado a suporte com reposição de ferro/transfusão conforme gravidade da anemia associada."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sangramento volumoso com sinais de instabilidade hemodinâmica</span> exige estabilização imediata e investigação/tratamento de urgência."
+        "conteudo": "<span class=\"red-flag\">Sangramento uterino anormal em mulher acima de 45 anos, ou mais jovem com fatores de risco para hiperplasia endometrial (obesidade, anovulação crônica, síndrome dos ovários policísticos)</span> exige biópsia endometrial obrigatória para exclusão de hiperplasia ou câncer de endométrio antes de assumir causa disfuncional benigna."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O sistema PALM-COEIN como estrutura organizadora do diagnóstico diferencial é cobrança certa em provas atuais. A obrigatoriedade de excluir gestação (beta-hCG) antes de qualquer investigação adicional, e os critérios de idade/risco que indicam biópsia endometrial, também são frequentemente exigidos."
       }
     ]
   },
@@ -817,7 +825,7 @@
     "titulo": "Síndrome dos Ovários Policísticos (SOP)",
     "resumo": "Diagnóstico pelos critérios de Rotterdam e abordagem terapêutica conforme objetivo da paciente.",
     "revisado": false,
-    "fonte": "Consenso de Rotterdam (2003); FEBRASGO - Sindrome dos Ovarios Policisticos",
+    "fonte": "FEBRASGO; Critérios de Rotterdam para Síndrome dos Ovários Policísticos",
     "mnemonicos": [
       {
         "palavra": "ROTTERDAM (2 de 3)",
@@ -826,24 +834,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Critérios diagnósticos",
-        "conteudo": "Pelos critérios de Rotterdam, o diagnóstico de SOP requer pelo menos 2 dos 3: oligo/anovulação, hiperandrogenismo (clínico ou laboratorial) e morfologia de ovários policísticos à ultrassonografia, excluindo outras causas."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A síndrome dos ovários policísticos é uma disfunção endócrino-metabólica caracterizada por resistência insulínica (presente na maioria das pacientes, independentemente do peso corporal) e hiperandrogenismo, com alteração da secreção pulsátil de GnRH que favorece produção excessiva de LH em relação ao FSH, comprometendo a maturação folicular normal e causando anovulação crônica. A resistência insulínica compensatória com hiperinsulinemia amplifica ainda mais a produção androgênica ovariana, criando um ciclo que perpetua o quadro."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Irregularidade menstrual, hirsutismo, acne e frequente associação com resistência insulínica e obesidade."
+        "conteudo": "Irregularidade menstrual (oligomenorreia ou amenorreia, por anovulação crônica), sinais de hiperandrogenismo (hirsutismo, acne, alopecia androgenética) e, frequentemente, sobrepeso/obesidade com resistência insulínica associada, compõem o quadro clássico. Infertilidade por anovulação é motivo frequente de procura médica nessa população."
       },
       {
-        "titulo": "Investigação",
-        "conteudo": "Excluir outras causas de hiperandrogenismo e anovulação (hiperprolactinemia, disfunção tireoidiana, hiperplasia adrenal congênita não clássica)."
+        "titulo": "Exame físico",
+        "conteudo": "Hirsutismo (crescimento de pelos em padrão masculino — face, tórax, linha alba) quantificado pelo escore de Ferriman-Gallwey, acantose nigricans (marcador de resistência insulínica) e sinais de obesidade central são achados de exame físico dirigido relevantes para a suspeita diagnóstica."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico segue os critérios de Rotterdam, exigindo pelo menos 2 dos 3: oligo/anovulação, hiperandrogenismo clínico ou laboratorial, e morfologia de ovários policísticos à ultrassonografia — com exclusão obrigatória de outras causas de hiperandrogenismo/irregularidade menstrual (hiperplasia adrenal congênita não clássica, hiperprolactinemia, disfunção tireoidiana, tumores produtores de andrógenos). Avaliação metabólica (glicemia, perfil lipídico) é recomendada pela alta prevalência de resistência insulínica e síndrome metabólica associada."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Conforme o objetivo da paciente: contracepção hormonal combinada para regularização do ciclo e hiperandrogenismo; indutores de ovulação se desejo gestacional; metformina em caso de resistência insulínica associada."
+        "conteudo": "Mudança de estilo de vida (perda de peso, exercício) é primeira linha e melhora tanto os parâmetros metabólicos quanto reprodutivos. Contraceptivos hormonais combinados são tratamento de escolha para irregularidade menstrual e hiperandrogenismo em mulheres sem desejo reprodutivo imediato. Metformina tem papel no manejo da resistência insulínica associada. Em mulheres com desejo de gestação, indutores de ovulação (letrozol como primeira linha atual, superando o citrato de clomifeno em eficácia nos estudos mais recentes) são utilizados para indução da ovulação."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Anovulação crônica sem oposição de progesterona</span> aumenta o risco de hiperplasia endometrial — atenção ao sangramento uterino anormal persistente."
+        "conteudo": "Hirsutismo de instalação rápida e progressiva, associado a sinais de virilização franca (clitoromegalia, engrossamento da voz), deve levantar suspeita de tumor produtor de andrógenos (ovariano ou adrenal) em vez de SOP simples, exigindo investigação de imagem direcionada e dosagens hormonais mais específicas."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os critérios de Rotterdam (2 de 3) são cobrança certíssima e ponto central do tema. A necessidade de excluir outras causas de hiperandrogenismo (especialmente hiperplasia adrenal congênita não clássica) antes de firmar o diagnóstico, e o letrozol como indutor de ovulação de primeira linha atual (superando o clomifeno), também são frequentemente exigidos em provas recentes."
       }
     ]
   },
@@ -1976,7 +1992,7 @@
     "titulo": "Vulvovaginites e Corrimento Vaginal",
     "resumo": "Diferenciação entre candidíase, vaginose bacteriana e tricomoníase.",
     "revisado": false,
-    "fonte": "FEBRASGO - Manual de Vulvovaginites; CDC Sexually Transmitted Infections Treatment Guidelines",
+    "fonte": "FEBRASGO; CDC Sexually Transmitted Infections Treatment Guidelines (Vaginitis)",
     "mnemonicos": [
       {
         "palavra": "3 CAUSAS PRINCIPAIS",
@@ -1985,24 +2001,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Candidíase vulvovaginal",
-        "conteudo": "Corrimento esbranquiçado, grumoso (\"leite coalhado\"), associado a prurido vulvovaginal intenso; tratamento com antifúngico tópico ou oral."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As três principais causas de corrimento vaginal são a vaginose bacteriana (desequilíbrio da flora vaginal normal, com redução de lactobacilos e proliferação de bactérias anaeróbias, principalmente Gardnerella vaginalis — não é, tecnicamente, uma infecção sexualmente transmissível clássica), a candidíase vulvovaginal (infecção fúngica, geralmente por Candida albicans, favorecida por uso de antibióticos, diabetes, imunossupressão e gestação) e a tricomoníase (infecção sexualmente transmissível pelo protozoário Trichomonas vaginalis)."
       },
       {
-        "titulo": "Vaginose bacteriana",
-        "conteudo": "Corrimento acinzentado, de odor fétido (\"peixe podre\"), diagnosticada pelos critérios de Amsel; tratamento com metronidazol."
+        "titulo": "Quadro clínico",
+        "conteudo": "Vaginose bacteriana causa corrimento acinzentado, homogêneo, de odor fétido característico (\"odor de peixe\"), classicamente mais perceptível após relação sexual ou durante a menstruação, com pouco ou nenhum prurido associado. Candidíase causa corrimento esbranquiçado, grumoso (\"leite coalhado\"), associado a prurido vulvovaginal intenso e hiperemia local. Tricomoníase causa corrimento amarelo-esverdeado, bolhoso, associado a prurido e, por vezes, disúria e dispareunia."
       },
       {
-        "titulo": "Tricomoníase",
-        "conteudo": "Corrimento amarelo-esverdeado, bolhoso, causado por protozoário e transmitido sexualmente — exige tratamento também do(s) parceiro(s)."
+        "titulo": "Exame físico",
+        "conteudo": "O colo uterino com aspecto de \"morango\" (colo em framboesa, por hemorragias puntiformes) é achado clássico, embora pouco frequente, de tricomoníase. Hiperemia e edema vulvovaginal são mais proeminentes na candidíase. Vaginose bacteriana tipicamente não causa sinais inflamatórios importantes ao exame, condizente com a ausência de resposta inflamatória significativa nessa condição."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Os critérios de Amsel (corrimento característico, pH vaginal >4,5, teste das aminas/whiff test positivo, presença de clue cells ao exame a fresco) diagnosticam vaginose bacteriana quando pelo menos 3 estão presentes. Candidíase é diagnosticada pela visualização de pseudo-hifas/esporos ao exame a fresco com hidróxido de potássio. Tricomoníase é diagnosticada pela visualização do protozoário móvel ao exame a fresco, embora testes moleculares tenham maior sensibilidade quando disponíveis."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Definido conforme a etiologia identificada (exame a fresco, pH vaginal, teste das aminas), evitando tratamento empírico sem investigação quando possível."
+        "conteudo": "Vaginose bacteriana e tricomoníase são tratadas com metronidazol (oral ou vaginal na vaginose; oral na tricomoníase, que exige tratamento sistêmico e não apenas tópico); candidíase é tratada com antifúngico tópico ou fluconazol oral em dose única para casos não complicados. Tricomoníase, por ser IST, exige tratamento obrigatório da parceria sexual, diferente da vaginose bacteriana e da candidíase, que geralmente não requerem tratamento rotineiro do parceiro."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Corrimento associado a dor pélvica e febre</span> sugere doença inflamatória pélvica (DIP), exigindo investigação e tratamento mais amplos."
+        "conteudo": "Vaginose bacteriana e tricomoníase durante a gestação associam-se a maior risco de trabalho de parto prematuro e rotura prematura de membranas, justificando rastreamento e tratamento apropriados quando sintomáticas nesse contexto, embora o rastreamento e tratamento rotineiro de vaginose assintomática em gestantes de baixo risco não seja consensualmente recomendado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação semiológica das três causas de corrimento (odor fétido sem prurido na vaginose, prurido intenso com corrimento grumoso na candidíase, corrimento amarelo-esverdeado bolhoso na tricomoníase) é cobrança certíssima e recorrente. Os critérios de Amsel para vaginose bacteriana e a obrigatoriedade de tratar a parceria sexual apenas na tricomoníase (não nas outras duas) também são frequentemente exigidos."
       }
     ]
   },
@@ -2013,7 +2037,7 @@
     "titulo": "Planejamento Familiar e Métodos Contraceptivos",
     "resumo": "Principais métodos contraceptivos e critérios de elegibilidade conforme perfil de risco.",
     "revisado": false,
-    "fonte": "Ministerio da Saude - Criterios Medicos de Elegibilidade para Uso de Metodos Contraceptivos; WHO Medical Eligibility Criteria for Contraceptive Use",
+    "fonte": "Ministério da Saúde — Diretrizes Nacionais de Assistência ao Planejamento Familiar; Critérios de Elegibilidade Médica para Uso de Contraceptivos (OMS)",
     "mnemonicos": [
       {
         "palavra": "CRITÉRIOS DE ELEGIBILIDADE (OMS)",
@@ -2022,24 +2046,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Métodos hormonais combinados",
-        "conteudo": "Contraindicados (categoria 4) em tabagistas com mais de 35 anos e em mulheres com história de tromboembolismo venoso, pelo risco cardiovascular aumentado."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Os métodos contraceptivos atuam por diferentes mecanismos: hormonais combinados (inibição da ovulação, principalmente), progestágeno isolado (espessamento do muco cervical e, em doses adequadas, também inibição ovulatória), dispositivos intrauterinos (efeito local espermicida/inflamatório, com o DIU de cobre sendo não hormonal e o de levonorgestrel combinando efeito local hormonal), e métodos de barreira (bloqueio físico à fecundação). A escolha do método deve considerar eficácia, perfil de efeitos adversos, contraindicações individuais e preferência da paciente."
       },
       {
-        "titulo": "Métodos apenas de progesterona",
-        "conteudo": "Alternativa segura para a maioria das contraindicações aos combinados, incluindo lactantes e mulheres com risco cardiovascular."
+        "titulo": "Quadro clínico",
+        "conteudo": "A escolha do método contraceptivo deve ser individualizada considerando idade, paridade, comorbidades (especialmente risco cardiovascular e tromboembólico), tabagismo, desejo de gestação futura e preferências pessoais da paciente — não existe método \"melhor\" universal, mas sim o mais adequado ao perfil de risco e às necessidades específicas de cada mulher."
       },
       {
-        "titulo": "Dispositivo intrauterino (DIU)",
-        "conteudo": "DIU de cobre (não hormonal, longa duração) e DIU hormonal (levonorgestrel) são opções de longa duração e alta eficácia, reversíveis."
+        "titulo": "Exame físico",
+        "conteudo": "Aferição de pressão arterial é etapa obrigatória antes de prescrever contraceptivo hormonal combinado, pelo risco de eventos tromboembólicos/cardiovasculares associados, especialmente em mulheres hipertensas ou tabagistas. Exame ginecológico é recomendado antes da inserção de dispositivo intrauterino, embora não seja necessariamente pré-requisito obrigatório para início de contracepção hormonal em mulher jovem sem fatores de risco."
       },
       {
-        "titulo": "Métodos definitivos",
-        "conteudo": "Laqueadura tubária e vasectomia são métodos cirúrgicos definitivos, indicados conforme desejo reprodutivo concluído e legislação vigente."
+        "titulo": "Diagnóstico",
+        "conteudo": "Os Critérios de Elegibilidade Médica da OMS classificam cada método contraceptivo em categorias de 1 a 4 conforme condições clínicas específicas da paciente (categoria 1: sem restrição; categoria 4: risco inaceitável, contraindicação absoluta), ferramenta central para orientar a escolha segura do método mais apropriado para cada perfil clínico individual."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Contraceptivos hormonais combinados são contraindicados (categoria 4) em tabagistas acima de 35 anos, hipertensão não controlada, história de tromboembolismo venoso, enxaqueca com aura, e certas cardiopatias — nesses perfis, métodos apenas com progestágeno ou não hormonais são preferíveis. Os métodos reversíveis de longa duração (DIU de cobre ou hormonal, implante subdérmico) têm as maiores taxas de eficácia entre os métodos reversíveis, com falha por uso incorreto praticamente eliminada (diferente de métodos que dependem de adesão diária/por ato sexual)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Uso de método combinado em paciente com contraindicação absoluta (categoria 4)</span> aumenta significativamente o risco de eventos tromboembólicos."
+        "conteudo": "Enxaqueca com aura em usuária de contraceptivo hormonal combinado contraindica a continuidade desse método, pelo risco aumentado de AVC isquêmico nessa associação específica — a mudança para método apenas com progestágeno ou não hormonal deve ser considerada prontamente diante desse achado clínico."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "As contraindicações absolutas ao contraceptivo hormonal combinado (tabagismo após os 35 anos, enxaqueca com aura, tromboembolismo prévio, hipertensão não controlada) são cobrança certíssima e um dos temas mais recorrentes de toda a ginecologia em provas de residência. A maior eficácia dos métodos reversíveis de longa duração (LARC) em comparação aos métodos dependentes de adesão também é frequentemente exigida."
       }
     ]
   },
@@ -2591,7 +2623,7 @@
     "titulo": "Nódulo de Mama e Câncer de Mama",
     "resumo": "Classificação BI-RADS, rastreamento populacional e conduta conforme suspeita de malignidade.",
     "revisado": false,
-    "fonte": "Instituto Nacional de Câncer (INCA) - Diretrizes de Rastreamento do Câncer de Mama; NCCN Guidelines for Breast Cancer",
+    "fonte": "Instituto Nacional de Câncer (INCA) — Diretrizes para Detecção Precoce do Câncer de Mama; FEBRASGO",
     "mnemonicos": [
       {
         "palavra": "BI-RADS 0-6",
@@ -2600,28 +2632,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Avaliação do nódulo de mama",
-        "conteudo": "Exame clínico das mamas associado a mamografia e/ou ultrassonografia conforme a idade da paciente, com biópsia indicada em achados suspeitos."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A maioria dos nódulos mamários em mulheres jovens é benigna (fibroadenoma sendo o mais comum, seguido de alterações fibrocísticas), enquanto o risco de malignidade aumenta progressivamente com a idade. O câncer de mama origina-se predominantemente do epitélio ductal (carcinoma ductal, o subtipo histológico mais comum), com fatores de risco incluindo idade avançada, história familiar/mutações BRCA, exposição estrogênica prolongada (menarca precoce, menopausa tardia, nuliparidade) e obesidade pós-menopausa."
       },
       {
-        "titulo": "Classificação BI-RADS",
-        "conteudo": "Orienta a conduta: BI-RADS 3 indica seguimento de imagem em intervalo curto; BI-RADS 4 e 5 indicam biópsia pela probabilidade de malignidade."
+        "titulo": "Quadro clínico",
+        "conteudo": "Nódulo mamário palpável é a apresentação mais comum de detecção, seja pela própria paciente ou em exame de rastreamento. Características que aumentam a suspeita de malignidade incluem crescimento progressivo, consistência endurecida, irregularidade de contornos, fixação a planos profundos, e alterações cutâneas associadas (retração, edema em \"casca de laranja\", inversão mamilar de instalação recente)."
       },
       {
-        "titulo": "Rastreamento populacional",
-        "conteudo": "Mamografia de rastreio recomendada, na população de risco habitual, com periodicidade bienal dentro da faixa etária de referência."
+        "titulo": "Exame físico",
+        "conteudo": "Nódulo endurecido, de bordas irregulares, fixo a planos profundos ou à pele sobrejacente, associado a linfadenopatia axilar palpável, é altamente sugestivo de malignidade — contrastando com o fibroadenoma típico (móvel, bem delimitado, consistência elástica, em mulher jovem). Retração cutânea e mamilar, e edema cutâneo em \"casca de laranja\" (peau d'orange, sugerindo carcinoma inflamatório) são achados de alarme adicionais."
       },
       {
-        "titulo": "Tratamento do câncer de mama",
-        "conteudo": "Cirurgia conservadora ou mastectomia, associada a terapias sistêmicas (hormonioterapia, quimioterapia, terapia-alvo) conforme o perfil do tumor (receptores hormonais, HER2)."
+        "titulo": "Diagnóstico",
+        "conteudo": "A abordagem diagnóstica tripla (exame clínico, mamografia/ultrassonografia, e biópsia) é o padrão para avaliação de qualquer nódulo mamário suspeito, com concordância entre os três componentes reforçando a confiança diagnóstica. O rastreamento mamográfico populacional no Brasil é recomendado bienalmente entre 50 e 69 anos pelo Ministério da Saúde, embora sociedades especializadas frequentemente recomendem início mais precoce (a partir dos 40 anos) e periodicidade anual — divergência relevante entre diretrizes que costuma ser explorada em provas."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento do câncer de mama é multimodal, combinando cirurgia (conservadora com radioterapia complementar, ou mastectomia conforme extensão/preferência), tratamento sistêmico (quimioterapia, hormonioterapia se receptor hormonal positivo, terapia anti-HER2 se superexpressão dessa proteína) conforme o perfil biomolecular do tumor — a determinação do status de receptores hormonais e HER2 é etapa central que direciona toda a estratégia terapêutica individualizada."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Nódulo endurecido e fixo, com retração de pele/papila ou linfonodo axilar palpável</span> exige investigação prioritária para excluir malignidade."
+        "conteudo": "<span class=\"red-flag\">Nódulo mamário endurecido e fixo associado a retração cutânea, edema em casca de laranja, ou linfadenopatia axilar palpável</span> exige investigação com abordagem tripla prioritária para exclusão de malignidade — a demora na investigação de achados suspeitos compromete o estadiamento e o prognóstico."
       },
       {
-        "titulo": "Mastologia benigna",
-        "conteudo": "Mastalgia cíclica (relacionada ao ciclo menstrual, geralmente bilateral, de causa hormonal benigna) e não cíclica. Mastite lactacional (infecção da mama durante a amamentação, geralmente por Staphylococcus aureus, com dor, calor, hiperemia e febre — tratada com antibiótico e manutenção do aleitamento, sem necessidade de interrupção). Derrame papilar deve ser caracterizado quanto à lateralidade, número de ductos e aspecto da secreção — descarga sanguinolenta ou em água de rocha, unilateral e uniductal, é a que mais preocupa e exige investigação para excluir papiloma intraductal ou neoplasia."
+        "titulo": "Dicas de prova",
+        "conteudo": "A abordagem diagnóstica tripla (clínica + imagem + biópsia) para qualquer nódulo suspeito é cobrança certa. A divergência entre a recomendação de rastreamento do Ministério da Saúde (bienal, 50-69 anos) e de sociedades especializadas (anual, a partir dos 40) é ponto frequentemente explorado, exigindo atenção ao contexto da questão (concurso de saúde pública tende a seguir o protocolo do MS)."
       }
     ]
   },
@@ -2706,7 +2742,7 @@
     "titulo": "Climatério e Menopausa",
     "resumo": "Definição, sintomas vasomotores e indicação de terapia hormonal no climatério.",
     "revisado": false,
-    "fonte": "FEBRASGO - Manual de Climatério; The Menopause Society (NAMS) Position Statement",
+    "fonte": "FEBRASGO — Manual de Climatério; The Menopause Society (antiga NAMS) Position Statement on Hormone Therapy",
     "mnemonicos": [
       {
         "palavra": "12 MESES SEM MENSTRUAR",
@@ -2715,24 +2751,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição",
-        "conteudo": "Menopausa é confirmada retrospectivamente após 12 meses consecutivos de amenorreia; climatério é o período de transição hormonal que a antecede e sucede."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O climatério é o período de transição entre a fase reprodutiva e a não reprodutiva da vida da mulher, marcado pelo declínio progressivo da função ovariana e da produção de estrogênio, culminando na menopausa (cessação permanente da menstruação, confirmada retrospectivamente após 12 meses de amenorreia). A queda estrogênica é responsável pelos sintomas vasomotores característicos e por alterações metabólicas/estruturais a longo prazo (perda de massa óssea, alterações do perfil lipídico e cardiovascular)."
       },
       {
-        "titulo": "Sintomas climatéricos",
-        "conteudo": "Fogachos, sudorese noturna, atrofia vaginal e alterações do humor são os sintomas mais característicos, decorrentes da queda estrogênica."
+        "titulo": "Quadro clínico",
+        "conteudo": "Fogachos (ondas de calor súbitas, frequentemente associadas a sudorese e palpitações) e sintomas geniturinários da menopausa (secura vaginal, dispareunia, sintomas urinários) são as manifestações mais características e mais impactantes na qualidade de vida. Alterações do sono, humor e cognição também são frequentemente relatadas, com impacto variável entre as mulheres."
       },
       {
-        "titulo": "Terapia hormonal",
-        "conteudo": "Indicada para sintomas vasomotores importantes em mulheres sem contraindicação, idealmente iniciada próximo à menopausa (\"janela de oportunidade\"), com menor risco cardiovascular nesse período."
+        "titulo": "Exame físico",
+        "conteudo": "Sinais de atrofia genital (mucosa vaginal pálida, adelgaçada, com perda de rugosidade) refletem o hipoestrogenismo crônico e devem ser ativamente pesquisados, já que os sintomas geniturinários frequentemente não são espontaneamente relatados pela paciente por constrangimento, apesar de causarem impacto significativo na qualidade de vida sexual e urinária."
       },
       {
-        "titulo": "Rastreios importantes no climatério",
-        "conteudo": "Mamografia, densitometria óssea e avaliação de risco cardiovascular devem ser reforçados nessa faixa etária."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico de menopausa é predominantemente clínico, baseado na idade e no padrão de amenorreia por 12 meses consecutivos, sem necessidade obrigatória de dosagens hormonais na maioria dos casos típicos. FSH elevado pode auxiliar em casos de dúvida diagnóstica (por exemplo, mulher histerectomizada sem parâmetro menstrual para avaliar, ou suspeita de insuficiência ovariana prematura em mulher mais jovem)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "A terapia hormonal da menopausa é o tratamento mais eficaz para sintomas vasomotores moderados a graves, devendo ser individualizada considerando idade, tempo desde a menopausa e perfil de risco cardiovascular/tromboembólico/oncológico da paciente — o conceito de \"janela de oportunidade\" (início da terapia até 10 anos da menopausa ou antes dos 60 anos) associa-se a perfil de risco-benefício mais favorável. Mulheres com útero preservado necessitam de progestágeno associado ao estrogênio para proteção endometrial. Tratamentos não hormonais (inibidores seletivos de recaptação de serotonina/noradrenalina) são alternativas para mulheres com contraindicação à terapia hormonal."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sangramento vaginal após a menopausa</span> sempre exige investigação para excluir neoplasia endometrial."
+        "conteudo": "Sangramento vaginal em mulher já confirmadamente na pós-menopausa, mesmo em uso de terapia hormonal, deve sempre ser investigado para exclusão de patologia endometrial, não devendo ser atribuído automaticamente a efeito esperado da terapia hormonal sem avaliação apropriada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O conceito de \"janela de oportunidade\" para início da terapia hormonal da menopausa (até 10 anos da menopausa ou antes dos 60 anos, com perfil de risco-benefício mais favorável) é cobrança certa e ponto de atualização de diretriz muito valorizado. A necessidade de progestágeno associado em mulheres com útero preservado (proteção endometrial) também é frequentemente exigida."
       }
     ]
   },
@@ -4946,7 +4990,7 @@
     "titulo": "Ciclo Menstrual Normal: Fisiologia do Eixo Hipotálamo-Hipófise-Ovário",
     "resumo": "Fases do ciclo ovariano e endometrial, e a regulação hormonal pelo eixo hipotálamo-hipófise-ovário.",
     "revisado": false,
-    "fonte": "FEBRASGO — Manual de Ginecologia Endócrina; Berek & Novak's Gynecology",
+    "fonte": "FEBRASGO — Manual de Ginecologia Endócrina",
     "mnemonicos": [
       {
         "palavra": "Lútea é fixa, Folicular varia",
@@ -4955,24 +4999,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fases do ciclo ovariano",
-        "conteudo": "Fase folicular: recrutamento e desenvolvimento folicular sob ação do FSH, com produção crescente de estradiol. Ovulação: pico de LH desencadeado pelo feedback positivo do estradiol elevado, ocorrendo cerca de 14 dias antes da próxima menstruação em um ciclo regular de 28 dias. Fase lútea: o corpo lúteo produz progesterona, com duração fixa de aproximadamente 14 dias."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O ciclo menstrual normal é regulado pelo eixo hipotálamo-hipófise-ovário: o GnRH hipotalâmico estimula a liberação pulsátil de FSH e LH pela hipófise, que por sua vez estimulam o crescimento folicular ovariano e a produção de estrogênio (fase folicular). O pico de LH desencadeia a ovulação, seguida pela formação do corpo lúteo, que produz progesterona (fase lútea), preparando o endométrio para uma eventual implantação — na ausência de gestação, a queda de progesterona pela regressão do corpo lúteo desencadeia a menstruação."
       },
       {
-        "titulo": "Fases do ciclo endometrial",
-        "conteudo": "Fase proliferativa: o estrogênio promove o crescimento endometrial, em paralelo à fase folicular ovariana. Fase secretora: a progesterona torna o endométrio receptivo à implantação, em paralelo à fase lútea. Menstruação: a queda de estrogênio e progesterona na ausência de gravidez leva à descamação do endométrio."
+        "titulo": "Quadro clínico",
+        "conteudo": "O ciclo menstrual normal dura em média 21 a 35 dias, com fluxo menstrual de 2 a 7 dias de duração. Sintomas leves relacionados às flutuações hormonais cíclicas (sensibilidade mamária, discreta alteração de humor pré-menstrual) são comuns e considerados fisiológicos quando não incapacitantes — a síndrome pré-menstrual e o transtorno disfórico pré-menstrual representam formas mais intensas e clinicamente significativas desse espectro."
       },
       {
-        "titulo": "Eixo hipotálamo-hipófise-ovário",
-        "conteudo": "O GnRH pulsátil hipotalâmico estimula a liberação de FSH e LH pela hipófise, que regulam a esteroidogênese ovariana. O feedback é predominantemente negativo, exceto pelo pico de LH pré-ovulatório, que resulta de um feedback positivo do estradiol quando este atinge nível elevado e sustentado."
+        "titulo": "Exame físico",
+        "conteudo": "O exame físico ginecológico é tipicamente normal em mulheres com ciclos regulares e ovulatórios. Sinais de anovulação crônica (irregularidade menstrual persistente, sinais de hiperandrogenismo) ou de outras disfunções hormonais devem ser pesquisados quando há queixa de irregularidade do ciclo."
       },
       {
-        "titulo": "Duração e variabilidade normal",
-        "conteudo": "Um ciclo é considerado regular entre 24-38 dias, com variação entre ciclos menor que 7-9 dias. A fase lútea tem duração relativamente fixa (cerca de 14 dias), enquanto a fase folicular é a principal responsável pela variação na duração total do ciclo."
+        "titulo": "Diagnóstico",
+        "conteudo": "A regularidade e a duração do ciclo são avaliadas primariamente pela história menstrual detalhada. A confirmação de ovulação, quando necessária (investigação de infertilidade, por exemplo), pode ser feita por dosagem de progesterona sérica na fase lútea média (aproximadamente 7 dias após a ovulação presumida) ou por monitorização ultrassonográfica seriada do desenvolvimento folicular."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Não se aplica tratamento ao ciclo menstrual fisiológico normal. Sintomas pré-menstruais leves podem ser manejados com medidas comportamentais e analgésicos simples quando necessário; formas mais intensas (transtorno disfórico pré-menstrual) podem se beneficiar de inibidores seletivos de recaptação de serotonina ou supressão hormonal do ciclo, conforme gravidade e impacto funcional."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Ciclos consistentemente menores que 21 dias ou maiores que 45 dias, ou variabilidade acentuada entre ciclos, sugerem disfunção ovulatória e merecem investigação."
+        "conteudo": "Alteração significativa e persistente da regularidade ou do volume do ciclo menstrual previamente regular deve motivar investigação para causas subjacentes (disfunção tireoidiana, hiperprolactinemia, SOP, ou causas estruturais), não devendo ser atribuída precipitadamente a variação fisiológica normal quando há mudança clara do padrão habitual da paciente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A sequência hormonal do ciclo (GnRH → FSH/LH → estrogênio → pico de LH → ovulação → progesterona do corpo lúteo) é cobrança certa e fundamental para compreensão de toda a ginecologia endócrina subsequente. A duração normal do ciclo (21-35 dias) como parâmetro de referência para definir irregularidade também é frequentemente exigida."
       }
     ]
   },
@@ -4983,7 +5035,7 @@
     "titulo": "Amenorreias: Primária e Secundária",
     "resumo": "Investigação sistemática por compartimento etiológico, sempre excluindo gravidez em primeiro lugar.",
     "revisado": false,
-    "fonte": "FEBRASGO — Protocolo de Amenorreia; ACOG Practice Bulletin on Amenorrhea",
+    "fonte": "FEBRASGO — Manual de Ginecologia Endócrina; ASRM Practice Committee Guidelines",
     "mnemonicos": [
       {
         "palavra": "Sempre exclua gravidez primeiro",
@@ -4992,28 +5044,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definições",
-        "conteudo": "Amenorreia primária: ausência de menarca até os 15 anos (na presença de caracteres sexuais secundários) ou até os 13 anos (na ausência deles). Amenorreia secundária: ausência de menstruação por 3 ciclos habituais ou 6 meses em mulher que já menstruava."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A amenorreia primária (ausência de menarca até os 15 anos, ou até 13 anos sem desenvolvimento de caracteres sexuais secundários) mais comumente resulta de disgenesia gonadal (síndrome de Turner) ou anomalias anatômicas müllerianas. A amenorreia secundária (ausência de menstruação por 3 ciclos ou 6 meses em mulher previamente menstruada) tem causas mais diversas, incluindo gestação (sempre a primeira hipótese a excluir), disfunção hipotalâmica (frequentemente relacionada a estresse, exercício extremo ou baixo peso), síndrome dos ovários policísticos, hiperprolactinemia, disfunção tireoidiana e insuficiência ovariana prematura."
       },
       {
-        "titulo": "Investigação inicial",
-        "conteudo": "Sempre excluir gravidez primeiro (beta-hCG). Em seguida, avaliar TSH e prolactina (causas endócrinas comuns) e provas de função ovariana (FSH/LH, estradiol)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Além da ausência de menstruação, sinais associados orientam a etiologia: galactorreia sugere hiperprolactinemia; fogachos e sintomas climatéricos em mulher jovem sugerem insuficiência ovariana prematura; hirsutismo e acne sugerem hiperandrogenismo/SOP; história de baixo peso, exercício extremo ou estresse significativo sugere amenorreia hipotalâmica funcional."
       },
       {
-        "titulo": "Compartimentos etiológicos",
-        "conteudo": "Compartimento I (útero/trato de saída — ex.: sinéquias uterinas/síndrome de Asherman). Compartimento II (ovário — ex.: insuficiência ovariana prematura, síndrome dos ovários policísticos). Compartimento III (hipófise — ex.: hiperprolactinemia, adenoma hipofisário). Compartimento IV (hipotálamo — ex.: amenorreia hipotalâmica funcional por estresse, baixo peso ou exercício excessivo)."
+        "titulo": "Exame físico",
+        "conteudo": "Avaliação de caracteres sexuais secundários (estadiamento de Tanner) é fundamental na amenorreia primária, para diferenciar causas centrais de periféricas. Galactorreia à expressão mamária, sinais de hiperandrogenismo, e características de síndromes genéticas (baixa estatura e pescoço alado na síndrome de Turner) direcionam a investigação etiológica."
       },
       {
-        "titulo": "Teste do progestagênio",
-        "conteudo": "Administração de progestagênio por curto período: sangramento de escape após a suspensão indica endométrio estrogenizado e trato de saída pérvio (sugerindo anovulação, como na SOP); ausência de sangramento sugere hipoestrogenismo ou alteração anatômica do trato de saída."
+        "titulo": "Diagnóstico",
+        "conteudo": "Beta-hCG é sempre o primeiro exame na amenorreia secundária, excluindo gestação antes de qualquer investigação adicional. A investigação hormonal subsequente (prolactina, TSH, FSH/LH, testosterona) segue algoritmo estruturado: FSH elevado sugere causa ovariana (insuficiência ovariana prematura), FSH baixo/normal sugere causa hipotalâmica-hipofisária. Cariótipo é indicado na investigação de amenorreia primária com suspeita de disgenesia gonadal."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento é dirigido à causa identificada: reposição de dopaminérgico (cabergolina) na hiperprolactinemia por prolactinoma; correção do peso/estresse na amenorreia hipotalâmica funcional; reposição hormonal na insuficiência ovariana prematura (importante também para proteção óssea e cardiovascular a longo prazo); tratamento específico de SOP conforme já discutido. Indução de ovulação é considerada quando há desejo reprodutivo, conforme a etiologia de base identificada."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Amenorreia associada a galactorreia sugere hiperprolactinemia e exige investigação de adenoma hipofisário. Amenorreia primária com ausência de caracteres sexuais secundários sugere disgenesia gonadal (ex.: síndrome de Turner) e exige cariótipo."
+        "conteudo": "Amenorreia associada a cefaleia e alteração de campo visual sugere possível macroadenoma hipofisário com efeito de massa sobre o quiasma óptico, exigindo investigação por ressonância magnética de sela túrcica com prioridade, além da avaliação hormonal de rotina."
       },
       {
-        "titulo": "Prolactinoma",
-        "conteudo": "Adenoma hipofisário produtor de prolactina, causa mais comum de hiperprolactinemia patológica; o excesso de prolactina suprime o eixo hipotálamo-hipófise-gonadal, causando amenorreia e galactorreia. Prolactina muito elevada (acima de 200-250 ng/mL) sugere fortemente prolactinoma, especialmente macroadenoma (maior que 1cm), diante do qual pode haver efeito de massa (cefaleia, alteração de campo visual por compressão do quiasma óptico). O tratamento de primeira linha é clínico, com agonistas dopaminérgicos (cabergolina), que reduzem tanto a prolactina quanto o volume tumoral — cirurgia reservada para casos refratários ou intolerância medicamentosa."
+        "titulo": "Dicas de prova",
+        "conteudo": "O algoritmo diagnóstico da amenorreia secundária (beta-hCG primeiro, depois investigação hormonal escalonada por FSH/prolactina/TSH) é cobrança central e recorrente. A diferenciação entre amenorreia hipergonadotrófica (FSH alto, causa ovariana) e hipogonadotrófica (FSH baixo, causa central) também é frequentemente exigida."
       }
     ]
   },
@@ -5024,7 +5080,7 @@
     "titulo": "Uroginecologia: Incontinência Urinária e Prolapsos Genitais",
     "resumo": "Diferenciação entre incontinência de esforço e de urgência, e o manejo escalonado dos prolapsos genitais.",
     "revisado": false,
-    "fonte": "FEBRASGO — Manual de Uroginecologia; ICS/ICI Recommendations on Urinary Incontinence and Pelvic Organ Prolapse",
+    "fonte": "FEBRASGO; International Continence Society (ICS) Terminology and Guidelines",
     "mnemonicos": [
       {
         "palavra": "Esforço perde ao tossir, Urgência não segura",
@@ -5033,24 +5089,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Incontinência urinária de esforço",
-        "conteudo": "Perda involuntária de urina associada a aumento da pressão abdominal (tosse, espirro, exercício), por hipermobilidade uretral ou deficiência esfincteriana intrínseca. Tratamento inicial com fisioterapia do assoalho pélvico (exercícios de Kegel); cirurgia (sling) para casos refratários."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A incontinência urinária de esforço resulta de hipermobilidade uretral e/ou deficiência esfincteriana intrínseca, geralmente associada a lesão do assoalho pélvico (partos vaginais, cirurgias pélvicas, envelhecimento, hipoestrogenismo). A incontinência de urgência (parte da síndrome de bexiga hiperativa) resulta de contrações involuntárias do músculo detrusor durante o enchimento vesical. Prolapsos genitais (de parede vaginal anterior/cistocele, posterior/retocele, ou uterino/cúpula vaginal) resultam de enfraquecimento dos ligamentos e fáscias de suporte pélvico, compartilhando fatores de risco semelhantes aos da incontinência."
       },
       {
-        "titulo": "Incontinência urinária de urgência",
-        "conteudo": "Perda de urina precedida de urgência miccional súbita, associada a frequência aumentada e noctúria, por hiperatividade do músculo detrusor. Tratamento inicial com treinamento vesical e medicações anticolinérgicas ou beta-3 agonistas."
+        "titulo": "Quadro clínico",
+        "conteudo": "Incontinência de esforço manifesta-se com perda urinária associada a aumento da pressão abdominal (tosse, espirro, exercício físico). Incontinência de urgência manifesta-se com perda urinária precedida por urgência miccional súbita e difícil de conter, frequentemente associada a polaciúria e noctúria (síndrome de bexiga hiperativa). Prolapso genital manifesta-se com sensação de peso/bola na vagina, que piora ao longo do dia e com esforço, podendo se associar a dificuldade miccional ou evacuatória conforme o compartimento acometido."
       },
       {
-        "titulo": "Incontinência mista",
-        "conteudo": "Combina componentes de esforço e de urgência, exigindo abordagem direcionada ao componente predominante identificado na avaliação clínica e urodinâmica."
+        "titulo": "Exame físico",
+        "conteudo": "Teste de esforço (observação de perda urinária durante manobra de Valsalva com bexiga confortavelmente cheia) confirma incontinência de esforço ao exame. Exame com valva vaginal e manobra de esforço graduam o prolapso conforme sistemas padronizados (como o POP-Q), documentando objetivamente o compartimento e a gravidade do prolapso."
       },
       {
-        "titulo": "Prolapsos genitais",
-        "conteudo": "Descenso de órgãos pélvicos através da vagina — bexiga (cistocele), útero (prolapso uterino) ou reto (retocele) — por enfraquecimento do assoalho pélvico (partos vaginais, idade, obesidade, tosse crônica). Quadro clínico de sensação de peso/bola na vagina, piorando ao longo do dia. Tratamento conservador (pessário, fisioterapia) ou cirúrgico, conforme o grau e o impacto na qualidade de vida."
+        "titulo": "Diagnóstico",
+        "conteudo": "A avaliação inicial combina história detalhada (diário miccional, questionários validados) com exame físico dirigido. Estudo urodinâmico é reservado a casos de dúvida diagnóstica, discordância entre sintomas e achados clínicos, ou antes de intervenção cirúrgica em casos complexos, permitindo diferenciar objetivamente os subtipos de incontinência e orientar a escolha terapêutica mais apropriada."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Incontinência de esforço leve a moderada é tratada inicialmente com fisioterapia do assoalho pélvico (exercícios de Kegel), com cirurgia (sling suburetral) reservada a casos refratários ou mais graves. Incontinência de urgência/bexiga hiperativa é tratada com treinamento vesical, anticolinérgicos ou beta-3 agonistas (mirabegrona), com toxina botulínica intravesical para casos refratários. Prolapso genital sintomático leve pode ser manejado com pessário vaginal ou fisioterapia; casos mais avançados ou sintomáticos refratários são tratados cirurgicamente (correção do compartimento específico acometido)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Incontinência urinária associada a hematúria, dor ou infecções urinárias de repetição não deve ser atribuída automaticamente a causa funcional sem investigação adicional (urocultura, exame de imagem)."
+        "conteudo": "Retenção urinária ou hidronefrose associada a prolapso genital muito avançado (procidência total) exige correção mais urgente, pelo risco de comprometimento da função renal por obstrução ureteral secundária à distorção anatômica pélvica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação clínica entre incontinência de esforço (perda associada a aumento de pressão abdominal) e de urgência (perda precedida de urgência miccional súbita) é cobrança central e recorrente, orientando diretamente a escolha terapêutica inicial (fisioterapia/cirurgia versus tratamento farmacológico anticolinérgico/beta-3 agonista)."
       }
     ]
   },
@@ -5061,7 +5125,7 @@
     "titulo": "Endometriose",
     "resumo": "Dismenorreia progressiva, dispareunia profunda e infertilidade como tripé clínico clássico.",
     "revisado": false,
-    "fonte": "FEBRASGO — Protocolo de Endometriose; ESHRE Guideline on Endometriosis 2022",
+    "fonte": "FEBRASGO; ESHRE Guideline on the Management of Endometriosis",
     "mnemonicos": [
       {
         "palavra": "Dismenorreia que piora com o tempo",
@@ -5070,24 +5134,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e fisiopatologia",
-        "conteudo": "Presença de tecido endometrial funcionante fora da cavidade uterina, mais comumente em ovários, peritônio pélvico e ligamentos uterossacros. O tecido responde aos hormônios do ciclo, causando inflamação, sangramento local cíclico e formação de aderências."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A endometriose caracteriza-se pela presença de tecido endometrial funcionante fora da cavidade uterina (mais comumente em ovários, peritônio pélvico e ligamentos uterossacros), que responde aos hormônios do ciclo menstrual causando sangramento cíclico nesses implantes ectópicos, com consequente inflamação crônica, formação de aderências e fibrose progressiva. A teoria da menstruação retrógrada (refluxo de tecido endometrial pelas trompas durante a menstruação) é a hipótese fisiopatológica mais aceita, embora não explique todos os casos."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dismenorreia progressiva (piora ao longo dos anos), dispareunia de profundidade, dor pélvica crônica e infertilidade. A intensidade da dor nem sempre se correlaciona com a extensão anatômica da doença."
+        "conteudo": "Dismenorreia progressiva e intensa (piorando ao longo do tempo, diferente da dismenorreia primária que tende a ser estável), dispareunia de profundidade, dor pélvica crônica não cíclica e infertilidade são as manifestações cardinais. A intensidade da dor não se correlaciona necessariamente com a extensão anatômica da doença — pacientes com doença mínima podem ter dor intensa, e vice-versa, o que dificulta a suspeita clínica baseada apenas na gravidade sintomática."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Dor à palpação de fundo de saco posterior e nodularidade em ligamentos uterossacros ao toque bimanual são achados sugestivos, especialmente quando a paciente refere piora da dor durante o próprio exame. Endometrioma ovariano pode se manifestar como massa anexial cística palpável, geralmente dolorosa. O exame físico pode ser completamente normal mesmo em doença significativa, não devendo sua normalidade excluir o diagnóstico diante de história clínica sugestiva."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A suspeita clínica forte já direciona o tratamento empírico. Ultrassonografia transvaginal com preparo intestinal e ressonância magnética auxiliam na detecção de endometriomas e endometriose profunda. A laparoscopia com biópsia é o padrão-ouro, mas não é obrigatória antes de iniciar tratamento clínico empírico."
+        "conteudo": "A laparoscopia com biópsia e confirmação histológica é tradicionalmente considerada o padrão-ouro diagnóstico, mas as diretrizes atuais reconhecem que o diagnóstico clínico presuntivo (baseado em sintomas característicos, exame físico e imagem sugestiva) é suficiente para iniciar tratamento empírico, sem necessidade obrigatória de confirmação cirúrgica antes de tratar — mudança de paradigma relevante que evita atraso terapêutico. Ultrassonografia transvaginal com preparo intestinal e ressonância magnética são úteis para identificar endometriomas e endometriose profunda infiltrativa."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Analgesia e supressão hormonal (contraceptivos combinados contínuos, progestagênios, análogos de GnRH) como primeira linha para controle da dor. Cirurgia laparoscópica para lesões endometrióticas quando refratária ao tratamento clínico ou diante de infertilidade associada."
+        "conteudo": "Tratamento hormonal (contraceptivos combinados contínuos, progestágenos, ou análogos de GnRH em casos mais graves) é a primeira linha para controle sintomático, suprimindo a atividade cíclica dos implantes endometrióticos. Cirurgia laparoscópica com ressecção/ablação dos implantes é reservada a casos refratários ao tratamento clínico, endometriomas volumosos, ou quando há desejo reprodutivo com infertilidade associada à doença."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Dismenorreia progressivamente pior ao longo dos ciclos, associada a dispareunia profunda e infertilidade, é o tripé clínico clássico que deve levantar forte suspeita de endometriose."
+        "conteudo": "Dor pélvica crônica progressiva associada a infertilidade em mulher jovem deve levantar suspeita ativa de endometriose, mesmo sem confirmação cirúrgica prévia — o atraso diagnóstico histórico dessa condição (frequentemente de anos) tem impacto significativo na qualidade de vida e no potencial reprodutivo futuro da paciente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A ausência de correlação entre extensão anatômica da doença e intensidade da dor é ponto conceitual central e frequentemente cobrado. A aceitação atual do diagnóstico clínico presuntivo para início de tratamento empírico, sem exigir confirmação laparoscópica obrigatória, é atualização de diretriz muito valorizada em provas recentes."
       }
     ]
   },
@@ -5098,7 +5170,7 @@
     "titulo": "Doença Inflamatória Pélvica (DIP)",
     "resumo": "Diagnóstico clínico com tratamento empírico precoce para reduzir sequelas como infertilidade e gravidez ectópica.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — PCDT IST 2022; CDC Sexually Transmitted Infections Treatment Guidelines",
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para IST; CDC Sexually Transmitted Infections Treatment Guidelines",
     "mnemonicos": [
       {
         "palavra": "Chandelier",
@@ -5107,24 +5179,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia",
-        "conteudo": "Infecção polimicrobiana ascendente do trato genital inferior para o superior (útero, tubas, ovários e estruturas adjacentes), principalmente por Chlamydia trachomatis e Neisseria gonorrhoeae, frequentemente associada a flora vaginal endógena."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença inflamatória pélvica resulta da ascensão de microrganismos do trato genital inferior para o trato genital superior (útero, trompas, ovários, estruturas pélvicas adjacentes), mais comumente por Chlamydia trachomatis e Neisseria gonorrhoeae, embora frequentemente seja polimicrobiana envolvendo também flora vaginal anaeróbia. A inflamação e cicatrização tubária resultante são a base fisiopatológica das principais sequelas a longo prazo: infertilidade por fator tubário e risco aumentado de gravidez ectópica."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor pélvica/abdominal baixa, geralmente bilateral, associada a corrimento vaginal anormal. Ao exame, dor à mobilização do colo uterino (sinal do candelabro) e dor à palpação anexial são achados característicos que sustentam o diagnóstico clínico."
+        "conteudo": "Dor pélvica/abdominal baixa, geralmente bilateral, de instalação subaguda, associada a corrimento vaginal anormal, sangramento intermenstrual e, em casos mais graves, febre e sintomas sistêmicos. A apresentação pode ser bastante variável em intensidade, desde quadros leves e inespecíficos até abdome agudo com sinais de peritonite, o que contribui para o subdiagnóstico e diagnóstico tardio frequentes dessa condição."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Dor à mobilização do colo uterino (sinal do \"grito de Chandelier\"), dor anexial bilateral e dor uterina ao toque bimanual são os achados centrais que sustentam o diagnóstico clínico. Massa anexial palpável e dolorosa sugere abscesso tubo-ovariano, complicação mais grave que exige avaliação de imagem complementar."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Eminentemente clínico. O tratamento empírico deve ser iniciado precocemente diante de suspeita clínica razoável, mesmo sem confirmação microbiológica, para reduzir o risco de sequelas."
+        "conteudo": "O diagnóstico é predominantemente clínico, com limiar baixo para tratamento empírico em mulher sexualmente ativa com dor pélvica e os achados de exame físico característicos, mesmo sem confirmação laboratorial imediata — a diretriz atual privilegia o início precoce do tratamento sobre a certeza diagnóstica absoluta, pelo risco de sequelas reprodutivas associado ao atraso terapêutico. Ultrassonografia transvaginal auxilia na identificação de abscesso tubo-ovariano quando suspeitado clinicamente."
       },
       {
-        "titulo": "Tratamento e complicações",
-        "conteudo": "Antibioticoterapia de amplo espectro cobrindo gonococo, clamídia e anaeróbios. Complicações incluem abscesso tubo-ovariano, infertilidade por obstrução tubária, gravidez ectópica futura e dor pélvica crônica — relacionadas ao atraso ou inadequação do tratamento."
+        "titulo": "Tratamento",
+        "conteudo": "O esquema antibiótico empírico deve cobrir gonococo, clamídia e anaeróbios simultaneamente (combinação de ceftriaxona, doxiciclina e metronidazol é esquema ambulatorial padrão), iniciado assim que o diagnóstico clínico é considerado provável. Casos graves, com abscesso tubo-ovariano, gestação, ou falha de resposta ao tratamento ambulatorial, exigem internação com antibioticoterapia endovenosa. Tratamento das parcerias sexuais recentes é obrigatório, como em qualquer IST."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Massa anexial dolorosa associada a febre e toxemia</span> sugere abscesso tubo-ovariano, podendo exigir drenagem além de antibioticoterapia intravenosa."
+        "conteudo": "<span class=\"red-flag\">Massa anexial dolorosa associada a febre alta e toxemia sistêmica</span> sugere abscesso tubo-ovariano roto, emergência cirúrgica com risco de peritonite generalizada e sepse — condição que exige internação, antibioticoterapia endovenosa agressiva e avaliação cirúrgica de urgência."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O baixo limiar para tratamento empírico (iniciar antibiótico diante de suspeita clínica razoável, sem aguardar confirmação laboratorial completa) é cobrança certa, pela ênfase em prevenir sequelas reprodutivas através do tratamento precoce. O esquema tríplice cobrindo gonococo, clamídia e anaeróbios simultaneamente também é frequentemente exigido."
       }
     ]
   },
@@ -5135,7 +5215,7 @@
     "titulo": "Câncer de Colo do Útero e Lesões Precursoras (HPV)",
     "resumo": "HPV oncogênico, classificação das lesões precursoras (NIC) e a conduta conforme o resultado do rastreamento.",
     "revisado": false,
-    "fonte": "Instituto Nacional de Câncer (INCA) — Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero; FEBRASGO",
+    "fonte": "Instituto Nacional de Câncer (INCA) — Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero; Ministério da Saúde",
     "mnemonicos": [
       {
         "palavra": "16 e 18",
@@ -5144,24 +5224,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia",
-        "conteudo": "A infecção persistente por HPV oncogênico (principalmente tipos 16 e 18) é causa necessária, embora não suficiente, para o desenvolvimento do câncer de colo do útero. A maioria das infecções por HPV é transitória e eliminada espontaneamente pelo sistema imune."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O câncer de colo uterino é causado, na quase totalidade dos casos, por infecção persistente pelo papilomavírus humano (HPV) oncogênico (especialmente os subtipos 16 e 18), que integra seu material genético ao epitélio cervical e inativa mecanismos supressores tumorais, levando à progressão gradual de lesões precursoras (neoplasia intraepitelial cervical de graus crescentes) até o carcinoma invasivo — processo que tipicamente se desenvolve ao longo de anos, o que justifica a eficácia da estratégia de rastreamento periódico."
       },
       {
-        "titulo": "Lesões precursoras",
-        "conteudo": "Classificadas citologicamente como lesão intraepitelial escamosa de baixo grau (LSIL) e de alto grau (HSIL), e histologicamente como neoplasia intraepitelial cervical (NIC I, II, III) — representam o espectro de progressão antes da invasão."
+        "titulo": "Quadro clínico",
+        "conteudo": "Lesões precursoras e câncer em estágio inicial são tipicamente assintomáticos, sendo detectados exclusivamente pelo rastreamento. Sintomas surgem apenas em doença já mais avançada: sangramento vaginal anormal (especialmente pós-coital), corrimento vaginal fétido e dor pélvica — a presença de sintomas já indica perda da janela de detecção mais precoce e favorável ao tratamento."
       },
       {
-        "titulo": "Conduta conforme o rastreamento",
-        "conteudo": "Alterações de baixo grau geralmente indicam seguimento. Alterações de alto grau indicam colposcopia com biópsia dirigida. NIC II/III confirmada é tratada com exérese da zona de transformação (ex.: cirurgia de alta frequência — CAF/LEEP)."
+        "titulo": "Exame físico",
+        "conteudo": "Exame especular pode revelar lesão cervical visível (ulcerada, vegetante ou friável) em doença mais avançada, mas é tipicamente normal nas lesões precursoras e no câncer em fase inicial — reforçando que a normalidade do exame especular não substitui o rastreamento citológico periódico."
       },
       {
-        "titulo": "Prevenção",
-        "conteudo": "Vacinação contra HPV, idealmente antes do início da vida sexual, associada ao rastreamento citológico/molecular periódico — estratégias combinadas mais eficazes de prevenção."
+        "titulo": "Diagnóstico",
+        "conteudo": "O rastreamento no Brasil é recomendado por citologia oncótica (Papanicolaou) a partir dos 25 anos até os 64 anos, em mulheres sexualmente ativas, com periodicidade trienal após dois exames anuais consecutivos normais. Resultado citológico alterado direciona para colposcopia com biópsia dirigida, exame que confirma histologicamente o grau da lesão. Testes de HPV-DNA têm papel crescente, tanto complementar quanto, em alguns protocolos internacionais mais recentes, como método primário de rastreamento."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Lesões precursoras de alto grau são tratadas por procedimentos excisionais ambulatoriais (exérese da zona de transformação), com alta taxa de cura quando adequadamente realizados e seguidos. Câncer invasivo inicial é tratado cirurgicamente (histerectomia radical com linfadenectomia, conforme estadiamento); doença localmente avançada é tratada com quimiorradioterapia concomitante. A vacinação contra HPV (idealmente antes do início da vida sexual) é a estratégia de prevenção primária mais eficaz disponível."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Sangramento vaginal pós-coital ou sinusorragia, em qualquer idade, deve motivar exame especular e coleta de citologia/colposcopia, podendo ser manifestação de lesão cervical já invasiva."
+        "conteudo": "Sangramento vaginal pós-coital em mulher, especialmente se não realiza rastreamento citológico regular, deve motivar exame ginecológico completo com citologia e colposcopia se indicada, para exclusão de lesão cervical significativa que pode ainda estar em fase potencialmente curável."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O protocolo de rastreamento brasileiro (início aos 25 anos, periodicidade trienal após dois exames anuais normais) é cobrança certíssima e um dos temas mais decorados de toda a ginecologia preventiva em provas de residência, especialmente ENAMED e concursos de saúde pública. A associação causal quase universal com HPV oncogênico e o papel da vacinação como prevenção primária também são frequentemente exigidos."
       }
     ]
   },
@@ -5172,7 +5260,7 @@
     "titulo": "Câncer de Endométrio",
     "resumo": "Exposição estrogênica não contraposta como principal fator de risco, e sangramento pós-menopausa como sinal de alerta obrigatório.",
     "revisado": false,
-    "fonte": "Instituto Nacional de Câncer (INCA); FEBRASGO — Diretriz de Câncer de Endométrio; NCCN Guidelines for Uterine Neoplasms",
+    "fonte": "Instituto Nacional de Câncer (INCA); FEBRASGO; NCCN Guidelines for Uterine Neoplasms",
     "mnemonicos": [
       {
         "palavra": "Sangrou na menopausa, investigue",
@@ -5181,24 +5269,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fatores de risco",
-        "conteudo": "A exposição estrogênica não contraposta por progesterona é o principal mecanismo: obesidade (conversão periférica de andrógenos em estrogênio no tecido adiposo), anovulação crônica (SOP), terapia de reposição hormonal apenas com estrogênio em mulher com útero, menarca precoce, menopausa tardia e nuliparidade."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O câncer de endométrio é a neoplasia ginecológica mais comum em países desenvolvidos, com o tipo endometrioide (tipo I) representando a maioria dos casos, associado a exposição estrogênica prolongada e não contraposta por progesterona (obesidade, anovulação crônica/SOP, terapia estrogênica isolada sem progestágeno, tamoxifeno). O tipo II (seroso, células claras), menos comum, não está associado a excesso estrogênico e tem comportamento biológico mais agressivo, geralmente em mulheres mais idosas e com endométrio atrófico."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "O sangramento uterino anormal é o sintoma mais precoce e comum. Qualquer sangramento vaginal na pós-menopausa deve ser considerado câncer de endométrio até prova em contrário."
+        "conteudo": "Sangramento vaginal pós-menopausa é a manifestação cardinal e mais precoce, presente na grande maioria dos casos — sua importância está justamente em ocorrer relativamente cedo no curso da doença, permitindo diagnóstico em estágio inicial na maior parte dos casos, diferente de outras neoplasias ginecológicas de detecção mais tardia. Em mulheres na perimenopausa, sangramento uterino anormal persistente também deve levantar a suspeita."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "O exame físico geral é frequentemente normal em doença inicial. Útero aumentado de volume pode ser palpável em doença mais avançada. Sinais de obesidade, hipertensão e diabetes (fatores de risco compartilhados através da via de excesso estrogênico/resistência insulínica) frequentemente coexistem no perfil epidemiológico típico dessas pacientes."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Ultrassonografia transvaginal avaliando a espessura endometrial (endométrio espessado na pós-menopausa levanta suspeita); biópsia endometrial (ambulatorial ou por histeroscopia) confirma o diagnóstico histológico."
+        "conteudo": "Toda mulher pós-menopausa com sangramento vaginal deve ser investigada com ultrassonografia transvaginal (espessamento endometrial acima de determinado limiar aumenta a suspeita) seguida de biópsia endometrial (por aspiração ambulatorial ou histeroscopia com biópsia dirigida) para confirmação histológica — a biópsia é etapa obrigatória e não deve ser substituída apenas pela medida ultrassonográfica isolada quando a suspeita clínica persiste."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Histerectomia total com salpingooforectomia bilateral é o tratamento primário na maioria dos casos em estádio inicial, associada a estadiamento cirúrgico. Radioterapia e quimioterapia adjuvantes conforme fatores de risco histológico e estadiamento."
+        "conteudo": "Histerectomia total com salpingo-ooforectomia bilateral, associada a estadiamento cirúrgico (avaliação linfonodal), é o tratamento primário na maioria dos casos de doença aparentemente confinada ao útero. Radioterapia adjuvante é indicada conforme fatores de risco histológicos identificados no espécime cirúrgico. Devido ao diagnóstico tipicamente precoce (pelo sintoma de alarme sangramento pós-menopausa), o prognóstico geral do câncer de endométrio é mais favorável que o de outras neoplasias ginecológicas."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sangramento vaginal na pós-menopausa</span> é câncer de endométrio até prova em contrário — exige investigação obrigatória e não deve ser simplesmente observado."
+        "conteudo": "<span class=\"red-flag\">Qualquer sangramento vaginal em mulher pós-menopausa</span> deve ser considerado câncer de endométrio até prova em contrário e investigado prontamente — esse é um dos sinais de alarme mais categóricos e mais cobrados de toda a ginecologia oncológica, não devendo jamais ser atribuído precipitadamente a causas benignas sem investigação adequada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O sangramento pós-menopausa como sinal de alarme obrigatório para investigação de câncer de endométrio é cobrança certíssima e um dos pontos mais importantes de toda a ginecologia em provas de residência. Os fatores de risco relacionados a excesso estrogênico não contraposto (obesidade, anovulação, terapia estrogênica isolada, tamoxifeno) também são frequentemente exigidos."
       }
     ]
   },
@@ -5209,7 +5305,7 @@
     "titulo": "Câncer de Ovário",
     "resumo": "Ausência de rastreamento populacional eficaz, sintomas vagos e o papel limitado do CA-125.",
     "revisado": false,
-    "fonte": "Instituto Nacional de Câncer (INCA); FEBRASGO — Diretriz de Câncer de Ovário; NCCN Guidelines for Ovarian Cancer",
+    "fonte": "Instituto Nacional de Câncer (INCA); NCCN Guidelines for Ovarian Cancer",
     "mnemonicos": [
       {
         "palavra": "O câncer silencioso",
@@ -5218,24 +5314,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Características gerais",
-        "conteudo": "Frequentemente diagnosticado em estádios avançados, pela ausência de sintomas específicos nas fases iniciais e pela ausência de um método de rastreamento populacional eficaz validado — ao contrário do colo do útero e da mama."
-      },
-      {
-        "titulo": "Fatores de risco",
-        "conteudo": "História familiar e mutações genéticas (BRCA1/BRCA2, síndrome de Lynch), nuliparidade e menarca precoce/menopausa tardia (maior número de ciclos ovulatórios ao longo da vida). Uso de contraceptivo hormonal combinado e multiparidade são fatores protetores, por reduzirem o número de ovulações."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O câncer de ovário mais comum é o epitelial (especialmente o seroso de alto grau), acometendo predominantemente mulheres na pós-menopausa. Mutações germinativas em BRCA1/BRCA2 conferem risco significativamente elevado e são responsáveis por uma parcela relevante dos casos, especialmente em mulheres mais jovens ou com história familiar importante de câncer de mama/ovário — justificando aconselhamento genético e testagem em perfis de risco apropriados."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Sintomas inespecíficos e insidiosos — distensão abdominal, saciedade precoce, dor pélvica/abdominal vaga e alterações urinárias/intestinais — frequentemente atribuídos erroneamente a causas gastrointestinais funcionais antes do diagnóstico correto."
+        "conteudo": "O câncer de ovário é classicamente chamado de \"assassino silencioso\" por sua apresentação tardia e inespecífica: distensão abdominal, saciedade precoce, dor pélvica/abdominal vaga e sintomas urinários/gastrointestinais inespecíficos — sintomas frequentemente atribuídos erroneamente a causas benignas (síndrome do intestino irritável, por exemplo), contribuindo para o diagnóstico predominantemente em estágios avançados."
       },
       {
-        "titulo": "Diagnóstico e marcadores",
-        "conteudo": "Ultrassonografia transvaginal/pélvica identifica massa anexial suspeita (septações espessas, componente sólido, vascularização ao Doppler aumentam a suspeita). O CA-125 é marcador tumoral de acompanhamento e apoio diagnóstico, mas não é específico nem indicado como rastreamento populacional isolado."
+        "titulo": "Exame físico",
+        "conteudo": "Massa anexial palpável ao toque bimanual pode estar presente, especialmente em doença mais avançada; características sugestivas de malignidade incluem massa sólida ou mista, irregular, fixa, bilateral, associada a ascite. Ascite volumosa e caquexia são achados de doença já disseminada, infelizmente comum ao diagnóstico dado o padrão tardio de apresentação sintomática."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Não existe método de rastreamento populacional eficaz validado para câncer de ovário (diferente do câncer de colo/mama), o que contribui para seu diagnóstico predominantemente tardio. Ultrassonografia transvaginal com características morfológicas suspeitas da massa anexial, associada ao marcador CA-125 (mais útil para monitorização de resposta terapêutica e menos específico para diagnóstico diferencial em mulheres jovens, onde tem menor especificidade), orientam a investigação; a confirmação definitiva é sempre cirúrgica e histopatológica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Cirurgia citorredutora (buscando ressecar o máximo possível de doença macroscópica visível) associada a quimioterapia é o tratamento padrão na maioria dos casos, mesmo em doença já avançada ao diagnóstico. Inibidores de PARP representam avanço terapêutico relevante, especialmente eficazes em tumores com mutação de BRCA ou deficiência de recombinação homóloga, sendo incorporados como terapia de manutenção após resposta à quimioterapia inicial."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Sintomas gastrointestinais vagos persistentes por mais de 2-3 semanas em mulher, especialmente após os 50 anos, sem explicação por causa digestiva evidente, devem motivar avaliação ginecológica e de imagem pélvica."
+        "conteudo": "Sintomas gastrointestinais/abdominais inespecíficos persistentes (distensão, saciedade precoce, dor pélvica) por mais de algumas semanas em mulher de meia-idade ou pós-menopausa, especialmente sem outra explicação clara, devem motivar investigação ginecológica dirigida, dado o padrão tipicamente silencioso e inespecífico do câncer de ovário nas fases iniciais."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A ausência de método de rastreamento populacional eficaz validado (diferente de colo e mama) é cobrança certa e importante distinção conceitual da oncologia ginecológica. A associação com mutações BRCA1/BRCA2 e a indicação de inibidores de PARP nesse contexto molecular específico também são frequentemente exigidas em provas mais atualizadas."
       }
     ]
   },
@@ -8306,7 +8410,7 @@
     "titulo": "Miomatose Uterina e Adenomiose",
     "resumo": "Classificação dos miomas por localização, impacto no sangramento/fertilidade e diferenciação com a adenomiose.",
     "revisado": false,
-    "fonte": "FEBRASGO — Protocolo de Miomatose Uterina; ACOG Practice Bulletin on Uterine Fibroids",
+    "fonte": "FEBRASGO; ACOG Practice Bulletin on Management of Symptomatic Uterine Leiomyomas",
     "mnemonicos": [
       {
         "palavra": "Submucoso sangra mais",
@@ -8315,24 +8419,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Miomatose uterina",
-        "conteudo": "Tumor benigno mais comum do trato genital feminino, originado do músculo liso do miométrio, estrogênio-dependente. Classificados por localização em submucosos, intramurais e subserosos."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Os leiomiomas uterinos são tumores benignos de músculo liso do miométrio, extremamente prevalentes (a neoplasia pélvica mais comum em mulheres), com crescimento estrogênio-dependente — tipicamente regridem após a menopausa pela queda dos níveis hormonais. São classificados conforme localização em submucosos (mais associados a sangramento e infertilidade, mesmo quando pequenos), intramurais e subserosos (mais associados a efeito de massa/compressivo quando volumosos)."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Sangramento uterino anormal (mais associado aos submucosos), dor pélvica/dismenorreia, sensação de massa pélvica e sintomas compressivos. Infertilidade e perdas gestacionais recorrentes podem ocorrer, especialmente com miomas submucosos."
+        "conteudo": "Muitos miomas são assintomáticos e diagnosticados incidentalmente. Quando sintomáticos, causam sangramento uterino anormal (especialmente os submucosos), dor pélvica/dismenorreia, sintomas compressivos (urinários, intestinais) conforme o volume e localização, e podem estar associados a infertilidade ou complicações obstétricas quando distorcem a cavidade uterina."
       },
       {
-        "titulo": "Diagnóstico e tratamento",
-        "conteudo": "Ultrassonografia pélvica/transvaginal é o exame inicial de escolha. Tratamento individualizado: expectante em miomas assintomáticos, tratamento hormonal para controle de sangramento, e miomectomia ou histerectomia para casos refratários."
+        "titulo": "Exame físico",
+        "conteudo": "Útero aumentado de volume, de contornos irregulares (\"em batata\"), palpável ao exame bimanual ou mesmo abdominal em casos de miomas muito volumosos, é achado característico. A consistência é tipicamente firme, diferente do amolecimento uterino esperado na gestação."
       },
       {
-        "titulo": "Adenomiose",
-        "conteudo": "Presença de tecido endometrial dentro do miométrio, causando útero globoso e aumentado, associada a dismenorreia progressiva e sangramento uterino anormal. Pode coexistir com miomatose e endometriose; ressonância magnética tem melhor acurácia que o ultrassom para diferenciá-la da miomatose."
+        "titulo": "Diagnóstico",
+        "conteudo": "Ultrassonografia transvaginal é o exame de primeira linha, com boa sensibilidade para identificação e localização dos miomas na maioria dos casos. Ressonância magnética pélvica oferece mapeamento mais detalhado, particularmente útil no planejamento pré-operatório de casos complexos ou múltiplos miomas, e na diferenciação com adenomiose e, mais raramente, leiomiossarcoma."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Miomas assintomáticos não requerem tratamento, apenas acompanhamento. Tratamento clínico (hormonal, incluindo análogos de GnRH para redução volumétrica pré-operatória, ou dispositivo intrauterino com levonorgestrel para controle do sangramento) é opção para sintomas leves a moderados. Miomectomia (preservando o útero, importante em mulheres com desejo reprodutivo) ou histerectomia (em mulheres sem desejo reprodutivo, com sintomas refratários ou miomatose muito extensa) são as opções cirúrgicas definitivas, com embolização de artéria uterina como alternativa minimamente invasiva em casos selecionados."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Crescimento rápido de massa uterina, principalmente na pós-menopausa, deve levantar suspeita de leiomiossarcoma (raro, porém maligno) e não ser atribuído automaticamente a mioma benigno."
+        "conteudo": "Crescimento muito rápido de massa uterina, especialmente em mulher pós-menopausa (quando os miomas tipicamente regridem, não crescem), deve levantar suspeita de leiomiossarcoma, neoplasia maligna rara mas de comportamento agressivo, exigindo investigação mais detalhada em vez de assumir automaticamente natureza benigna."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A classificação anatômica dos miomas (submucoso, intramural, subseroso) e sua correlação com o tipo de sintoma predominante (submucoso com sangramento/infertilidade) é cobrança central. A opção de miomectomia (preservação uterina) versus histerectomia conforme o desejo reprodutivo da paciente também é frequentemente exigida em questões de conduta terapêutica."
       }
     ]
   },
@@ -8343,7 +8455,7 @@
     "titulo": "Abdome Agudo Ginecológico: Torção Anexial e Cisto Ovariano Roto",
     "resumo": "Torção ovariana como emergência cirúrgica mesmo com Doppler inconclusivo, e a gravidez ectópica como diagnóstico diferencial obrigatório.",
     "revisado": false,
-    "fonte": "FEBRASGO — Protocolo de Abdome Agudo em Ginecologia; ACOG Practice Bulletin on Ovarian Torsion",
+    "fonte": "FEBRASGO; ACOG Practice Bulletin on Adnexal Torsion and Ruptured Ovarian Cyst",
     "mnemonicos": [
       {
         "palavra": "Beta-hCG sempre primeiro",
@@ -8352,24 +8464,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Torção anexial",
-        "conteudo": "Rotação do ovário sobre seu próprio pedículo vascular, comprometendo o fluxo sanguíneo. O fator de risco mais importante é a presença de cisto ou massa ovariana. Dor pélvica súbita e intensa, unilateral, com náusea/vômito."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A torção anexial ocorre quando o ovário (frequentemente aumentado por cisto ou tumor benigno preexistente) torce sobre seu próprio pedículo vascular, comprometendo primeiro a drenagem venosa/linfática e depois o suprimento arterial, podendo evoluir para necrose isquêmica irreversível se não desfeita rapidamente. O cisto ovariano roto ocorre quando um cisto funcional (folicular ou de corpo lúteo, mais comum na fase lútea do ciclo) se rompe, causando irritação peritoneal pelo conteúdo/sangue extravasado, com gravidade variando de quadro leve autolimitado a hemoperitônio significativo."
       },
       {
-        "titulo": "Diagnóstico da torção anexial",
-        "conteudo": "Ultrassonografia pélvica com Doppler é o exame de escolha — mas um Doppler normal NÃO exclui torção de forma definitiva, e a suspeita clínica forte justifica avaliação cirúrgica mesmo com exame inconclusivo, pela urgência em preservar a viabilidade do ovário."
+        "titulo": "Quadro clínico",
+        "conteudo": "Torção anexial manifesta-se com dor pélvica/abdominal súbita e intensa, unilateral, frequentemente associada a náuseas e vômitos — podendo haver episódios prévios de dor autolimitada sugerindo torção intermitente prévia. Cisto ovariano roto causa dor súbita, tipicamente relacionada temporalmente à ovulação (meio do ciclo) ou ao período menstrual esperado, com intensidade proporcional ao volume de sangue/líquido extravasado para a cavidade peritoneal."
       },
       {
-        "titulo": "Cisto ovariano roto",
-        "conteudo": "Mais comum em cistos hemorrágicos do corpo lúteo. Dor pélvica súbita, podendo haver irritação peritoneal se houver hemoperitônio significativo. A maioria dos casos é autolimitada, com manejo conservador."
+        "titulo": "Exame físico",
+        "conteudo": "Dor à palpação anexial unilateral, por vezes com massa palpável, é comum a ambas as condições. Sinais de irritação peritoneal localizada ou difusa (conforme o volume de líquido/sangue livre) podem estar presentes no cisto roto. Sinais de hipovolemia (taquicardia, hipotensão) sugerem hemoperitônio significativo, exigindo avaliação e conduta mais urgentes."
       },
       {
-        "titulo": "Diagnóstico diferencial",
-        "conteudo": "Gravidez ectópica rota é diagnóstico diferencial obrigatório em mulher em idade fértil com dor pélvica aguda — beta-hCG deve ser solicitado sistematicamente antes de assumir outra causa ginecológica."
+        "titulo": "Diagnóstico",
+        "conteudo": "A ultrassonografia transvaginal com Doppler é o exame de escolha, avaliando o fluxo sanguíneo ovariano (reduzido ou ausente na torção, embora um Doppler normal não exclua completamente o diagnóstico em casos de torção intermitente) e identificando líquido livre pélvico sugestivo de cisto roto. Beta-hCG deve sempre ser solicitado para excluir gravidez ectópica como diagnóstico diferencial de dor pélvica aguda em mulher em idade reprodutiva."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Torção anexial com suspeita clínica forte deve ser tratada cirurgicamente de urgência (laparoscopia preferencialmente), com destorção e preservação ovariana sempre que possível, mesmo diante de aspecto macroscópico inicialmente comprometido do ovário (a viabilidade tecidual é frequentemente maior do que sugere o aspecto visual imediato). Cisto ovariano roto sem instabilidade hemodinâmica é manejado conservadoramente com analgesia e observação; instabilidade hemodinâmica ou hemoperitônio volumoso exige intervenção cirúrgica para controle do sangramento."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor pélvica súbita e intensa associada a massa anexial conhecida</span> deve levantar suspeita imediata de torção ovariana — a demora na avaliação cirúrgica compromete a viabilidade do ovário."
+        "conteudo": "<span class=\"red-flag\">Dor pélvica súbita intensa associada a massa anexial e instabilidade hemodinâmica</span> exige avaliação cirúrgica de urgência — na torção anexial, o atraso na desfaço reduz progressivamente a chance de preservação ovariana; no cisto roto com hemoperitônio volumoso, o atraso no controle do sangramento pode levar a choque hipovolêmico."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A preferência por destorção com preservação ovariana (em vez de ooforectomia sistemática) mesmo diante de aspecto inicialmente comprometido do ovário é cobrança certa e atualização de conduta muito valorizada em provas recentes. A obrigatoriedade de excluir gravidez ectópica (beta-hCG) em toda mulher em idade reprodutiva com dor pélvica aguda também é ponto central e recorrente."
       }
     ]
   },
