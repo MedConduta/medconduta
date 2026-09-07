@@ -6962,5 +6962,338 @@
         "conteudo": "<span class=\"red-flag\">Síndrome da veia cava superior</span> (edema de face/pescoço, turgência jugular, circulação colateral) pode ser a manifestação inicial de tumores mediastinais/pulmonares centrais avançados."
       }
     ]
+  },
+  {
+    "id": "doenca-chagas",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Doença de Chagas",
+    "resumo": "Transmissão pelo barbeiro, fase aguda com sinal de Romaña e a cardiopatia chagásica crônica como principal causa de morbimortalidade.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Cardiologia — Diretriz de Cardiopatia Chagásica",
+    "mnemonicos": [
+      {
+        "palavra": "Romaña é a porta dos olhos",
+        "explicacao": "O sinal de Romaña (edema bipalpebral unilateral indolor) ocorre quando o Trypanosoma cruzi entra pela conjuntiva/mucosa ocular — marca a fase aguda da doença de Chagas na porta de entrada do parasita."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Transmissão e fase aguda",
+        "conteudo": "Causada pelo Trypanosoma cruzi, transmitido principalmente pelo barbeiro (triatomíneo), mas também por via oral, transfusional, congênita e por transplante. A fase aguda é geralmente oligossintomática, podendo cursar com o sinal de Romaña ou chagoma de inoculação."
+      },
+      {
+        "titulo": "Fase crônica indeterminada",
+        "conteudo": "A maioria dos infectados permanece assintomática por décadas, com sorologia positiva mas sem alterações cardíacas ou digestivas identificáveis — fase que pode durar toda a vida ou evoluir para a forma cardíaca/digestiva."
+      },
+      {
+        "titulo": "Forma cardíaca crônica",
+        "conteudo": "Principal causa de morbimortalidade na doença de Chagas: miocardiopatia dilatada, distúrbios de condução (bloqueio de ramo direito associado a bloqueio divisional anterossuperior esquerdo), arritmias ventriculares malignas e risco de morte súbita, além de fenômenos tromboembólicos por aneurisma de ponta do VE."
+      },
+      {
+        "titulo": "Forma digestiva crônica",
+        "conteudo": "Megaesôfago (disfagia, regurgitação) e megacólon (constipação intensa, risco de volvo) por destruição dos plexos nervosos entéricos."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Bloqueio de ramo direito associado a bloqueio divisional anterossuperior esquerdo</span> no ECG de paciente de área endêmica é achado altamente sugestivo de cardiopatia chagásica crônica, mesmo antes de sintomas evidentes."
+      }
+    ]
+  },
+  {
+    "id": "leishmaniose",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Leishmaniose Visceral e Tegumentar",
+    "resumo": "Lesão cutânea/mucosa na forma tegumentar e a tríade febre-hepatoesplenomegalia-pancitopenia do calazar.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Manual de Vigilância da Leishmaniose Tegumentar e Visceral",
+    "mnemonicos": [
+      {
+        "palavra": "Calazar aumenta tudo",
+        "explicacao": "Na leishmaniose visceral (calazar), tudo aumenta ou piora: hepatoesplenomegalia importante, febre prolongada, emagrecimento e pancitopenia — reflexo da infiltração maciça do sistema reticuloendotelial pelo parasita."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Leishmaniose tegumentar",
+        "conteudo": "Transmitida pela picada do mosquito-palha, causa lesões cutâneas ulceradas de bordas elevadas e fundo granuloso, geralmente indolores, podendo também acometer mucosas (forma mucosa — mais grave e desfigurante)."
+      },
+      {
+        "titulo": "Leishmaniose visceral (calazar)",
+        "conteudo": "Causada pela Leishmania infantum, transmitida pelo mesmo vetor. Quadro clínico de febre prolongada, hepatoesplenomegalia importante, emagrecimento e pancitopenia — potencialmente fatal se não tratada. Crianças e imunossuprimidos têm maior risco de formas graves."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Leishmaniose tegumentar: exame direto/biópsia da borda da lesão, ou teste de Montenegro. Leishmaniose visceral: sorologia (teste rápido), ou visualização do parasita em aspirado de medula óssea/baço."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Antimoniato de meglumina é a droga de primeira linha para ambas as formas no Brasil. Anfotericina B (lipossomal) reservada para casos graves, gestantes, ou falha/contraindicação ao antimonial."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Febre prolongada com hepatoesplenomegalia e pancitopenia</span> em área endêmica deve levantar suspeita de leishmaniose visceral — potencialmente fatal sem tratamento, especialmente em crianças pequenas e imunossuprimidos."
+      }
+    ]
+  },
+  {
+    "id": "esquistossomose",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Esquistossomose",
+    "resumo": "Febre de Katayama na fase aguda e a hipertensão porta por fibrose periportal na forma hepatoesplênica crônica.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Infectologia",
+    "mnemonicos": [
+      {
+        "palavra": "Katayama é febre + eosinofilia",
+        "explicacao": "A febre de Katayama (fase aguda sistêmica) combina febre, urticária, hepatoesplenomegalia e eosinofilia marcante — reação de hipersensibilidade que ocorre semanas após o contato com água contaminada."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Ciclo e transmissão",
+        "conteudo": "Causada pelo Schistosoma mansoni no Brasil, transmitida pelo contato com água doce contaminada contendo a cercária, liberada por caramujos do gênero Biomphalaria — endêmica em diversas regiões do Nordeste, incluindo Pernambuco."
+      },
+      {
+        "titulo": "Fase aguda",
+        "conteudo": "Dermatite cercariana (prurido no local de penetração) seguida, semanas depois, da febre de Katayama (febre, urticária, hepatoesplenomegalia e eosinofilia), decorrente de reação de hipersensibilidade à migração/postura inicial de ovos."
+      },
+      {
+        "titulo": "Fase crônica",
+        "conteudo": "Forma hepatointestinal (mais comum) com diarreia/dor abdominal recorrente. Forma hepatoesplênica (mais grave) por fibrose periportal devido à reação granulomatosa aos ovos retidos no fígado, levando a hipertensão porta com varizes esofágicas e esplenomegalia."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento",
+        "conteudo": "Exame parasitológico de fezes (Kato-Katz) identifica os ovos característicos. Praziquantel é o tratamento de escolha, eficaz e em dose única na maioria dos casos."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Hematêmese em paciente de área endêmica com hepatoesplenomegalia</span> deve levantar suspeita de hipertensão porta por esquistossomose hepatoesplênica, com risco de sangramento maciço por varizes esofágicas."
+      }
+    ]
+  },
+  {
+    "id": "hanseniase",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Hanseníase",
+    "resumo": "Lesão de pele com perda de sensibilidade como sinal cardinal, classificação operacional e a poliquimioterapia padronizada pela OMS.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Diretrizes para Vigilância, Atenção e Eliminação da Hanseníase; OMS Guidelines for Leprosy",
+    "mnemonicos": [
+      {
+        "palavra": "Mancha que não sente",
+        "explicacao": "Toda lesão de pele com alteração de sensibilidade (não sente calor, dor ou toque) deve ser considerada hanseníase até prova em contrário — é o sinal cardinal da doença."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Etiologia e transmissão",
+        "conteudo": "Causada pelo Mycobacterium leprae, transmitida por via respiratória através do contato próximo e prolongado com doentes multibacilares não tratados; período de incubação longo (meses a anos)."
+      },
+      {
+        "titulo": "Classificação operacional",
+        "conteudo": "Paucibacilar (até 5 lesões de pele, baciloscopia negativa) x multibacilar (mais de 5 lesões, ou baciloscopia positiva). A classificação clínica de Madri descreve ainda formas indeterminada, tuberculoide, dimorfa e virchowiana."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Lesões de pele com alteração de sensibilidade (hipoestesia térmica, dolorosa e depois tátil, nessa ordem) é o achado mais característico. Espessamento de nervos periféricos palpáveis associado a déficit sensitivo/motor."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Poliquimioterapia padronizada pela OMS (rifampicina, dapsona e clofazimina), com duração conforme a classificação (paucibacilar: 6 meses; multibacilar: 12 meses). Reações hansênicas exigem manejo específico (corticoide ou talidomida) para prevenir dano neural permanente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Lesão de pele com perda de sensibilidade</span> deve sempre ser investigada ativamente — o diagnóstico e tratamento precoces previnem incapacidades físicas permanentes por dano neural."
+      }
+    ]
+  },
+  {
+    "id": "malaria",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Malária",
+    "resumo": "Tríade febril cíclica, diferenciação entre P. vivax e P. falciparum, e o reconhecimento da malária cerebral.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Guia de Tratamento da Malária no Brasil",
+    "mnemonicos": [
+      {
+        "palavra": "Vivax é terçã benigna, Falciparum mata",
+        "explicacao": "O Plasmodium vivax é a espécie mais comum no Brasil e geralmente causa doença mais branda (embora possa recair); o Plasmodium falciparum é responsável pelas formas graves e potencialmente fatais."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Etiologia e transmissão",
+        "conteudo": "Causada por espécies de Plasmodium (P. vivax é a mais prevalente no Brasil, predominantemente na região amazônica; P. falciparum é responsável pelas formas mais graves), transmitida pela picada do mosquito Anopheles fêmea infectado."
+      },
+      {
+        "titulo": "Quadro clínico clássico",
+        "conteudo": "Acessos febris cíclicos associados a calafrios e sudorese profusa, com periodicidade que varia conforme a espécie. Anemia e esplenomegalia são comuns em infecções repetidas/crônicas."
+      },
+      {
+        "titulo": "Malária grave",
+        "conteudo": "Causada por P. falciparum, pode cursar com malária cerebral (rebaixamento do sensório, convulsões), insuficiência renal aguda, edema pulmonar, hipoglicemia grave e CIVD — emergência com alta mortalidade se não tratada rapidamente."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento",
+        "conteudo": "Gota espessa (padrão-ouro no Brasil) ou testes rápidos identificam o parasita e a espécie. Tratamento específico conforme espécie e gravidade, associado a primaquina para eliminar hipnozoítos hepáticos no caso do P. vivax, prevenindo recaídas."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Rebaixamento do nível de consciência em paciente com malária por P. falciparum</span> caracteriza malária cerebral — emergência com necessidade de tratamento parenteral imediato e suporte intensivo."
+      }
+    ]
+  },
+  {
+    "id": "leptospirose",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Leptospirose",
+    "resumo": "Transmissão associada a enchentes e o reconhecimento da síndrome de Weil (icterícia, insuficiência renal e sangramento).",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; WHO — Leptospirosis: Diagnosis, Epidemiology and Control",
+    "mnemonicos": [
+      {
+        "palavra": "Weil: fígado, rim e sangue",
+        "explicacao": "A síndrome de Weil (forma grave) combina disfunção de três sistemas: fígado (icterícia rubínica), rim (insuficiência renal aguda) e coagulação (diátese hemorrágica, incluindo hemorragia pulmonar potencialmente fatal)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Transmissão e epidemiologia",
+        "conteudo": "Causada pela bactéria Leptospira, transmitida pelo contato com água ou lama contaminada pela urina de roedores infectados — risco fortemente aumentado durante enchentes/inundações, um problema recorrente de saúde pública em períodos chuvosos."
+      },
+      {
+        "titulo": "Fase precoce (leptospirêmica)",
+        "conteudo": "Quadro inespecífico semelhante a outras síndromes febris agudas — febre, mialgia intensa (especialmente em panturrilhas), cefaleia e hiperemia conjuntival sem secreção (sufusão conjuntival), achado sugestivo embora nem sempre presente."
+      },
+      {
+        "titulo": "Forma grave — síndrome de Weil",
+        "conteudo": "Tríade clássica de icterícia (tipicamente rubínica), insuficiência renal aguda (tipicamente não oligúrica, com hipocalemia) e diátese hemorrágica, incluindo hemorragia pulmonar — uma das principais causas de óbito na doença."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento",
+        "conteudo": "Sorologia (ELISA IgM, ou microaglutinação confirmatória) é o método mais utilizado. Antibioticoterapia (penicilina cristalina ou ceftriaxona nas formas graves, doxiciclina em casos leves) deve ser iniciada precocemente diante da suspeita, sem aguardar confirmação laboratorial."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Icterícia associada a insuficiência renal e sangramento</span> após exposição a enchente/água contaminada caracteriza a síndrome de Weil — forma grave com necessidade de internação e suporte intensivo."
+      }
+    ]
+  },
+  {
+    "id": "acidentes-animais-peconhentos",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Acidentes por Animais Peçonhentos, Raiva e Tétano",
+    "resumo": "Diferenciação entre os principais acidentes ofídicos brasileiros, escorpionismo, araneísmo e as profilaxias antirrábica/antitetânica.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde (Acidentes por Animais Peçonhentos)",
+    "mnemonicos": [
+      {
+        "palavra": "Bothrops incha e sangra, Crotalus paralisa",
+        "explicacao": "O acidente por Bothrops (jararaca) causa manifestações locais evidentes (dor, edema, sangramento); o acidente por Crotalus (cascavel) tem sintomas locais discretos, mas causa manifestações neurotóxicas sistêmicas (fácies miastênica)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Acidente ofídico",
+        "conteudo": "Bothrops (jararaca — mais comum, veneno proteolítico/coagulante, dor e edema locais, sangramento e incoagulabilidade), Crotalus (cascavel — veneno neurotóxico/miotóxico, fácies miastênica e mioglobinúria, sintomas locais discretos) e Micrurus (coral verdadeira — veneno neurotóxico grave, risco de insuficiência respiratória). Tratamento específico com soro antiofídico conforme o gênero."
+      },
+      {
+        "titulo": "Escorpionismo",
+        "conteudo": "Acidente por escorpião (Tityus, relevante no Nordeste) causa dor local imediata e intensa, podendo evoluir para manifestações sistêmicas (sudorese, vômitos, arritmias, edema agudo de pulmão), principalmente em crianças pequenas. Soro antiescorpiônico indicado nos casos moderados a graves."
+      },
+      {
+        "titulo": "Araneísmo",
+        "conteudo": "Loxosceles (aranha-marrom) causa lesão cutânea necrótica progressiva e, mais raramente, hemólise intravascular grave. Phoneutria (armadeira) causa dor local intensa imediata, podendo cursar com manifestações sistêmicas em crianças."
+      },
+      {
+        "titulo": "Raiva e profilaxia antitetânica",
+        "conteudo": "A raiva é zoonose viral quase sempre fatal após o início dos sintomas — a profilaxia pós-exposição deve ser iniciada o quanto antes. A profilaxia antitetânica segue o esquema vacinal prévio do paciente e as características do ferimento."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Fácies miastênica (ptose bilateral, oftalmoplegia) após acidente ofídico</span> sugere envenenamento crotálico ou por coral verdadeira, com risco de insuficiência respiratória."
+      }
+    ]
+  },
+  {
+    "id": "sindromes-respiratorias-virais",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Influenza e COVID-19",
+    "resumo": "Quadro clínico da gripe, espectro da COVID-19 e o reconhecimento da síndrome respiratória aguda grave (SRAG).",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Protocolo de Manejo Clínico de Síndrome Respiratória Aguda Grave; OMS — Clinical management of COVID-19",
+    "mnemonicos": [
+      {
+        "palavra": "Anosmia lembra COVID",
+        "explicacao": "Embora ambas causem sintomas respiratórios sobrepostos, a perda súbita do olfato e paladar é achado mais tipicamente associado à COVID-19 do que à influenza clássica — pista de triagem, sem substituir o teste diagnóstico."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Influenza (gripe)",
+        "conteudo": "Infecção respiratória aguda viral, sazonal, com início súbito de febre alta, mialgia intensa, cefaleia, tosse seca e mal-estar importante. Vacinação anual é a principal prevenção. Oseltamivir reduz duração/gravidade quando iniciado precocemente."
+      },
+      {
+        "titulo": "Complicações da influenza",
+        "conteudo": "Pneumonia (viral primária ou bacteriana secundária, esta última frequentemente por Staphylococcus aureus ou Streptococcus pneumoniae) é a complicação mais temida, especialmente em idosos e portadores de comorbidades."
+      },
+      {
+        "titulo": "COVID-19",
+        "conteudo": "Espectro clínico amplo, de infecção assintomática a síndrome respiratória aguda grave, com pneumonia bilateral e insuficiência respiratória hipoxêmica nos casos graves. Fatores de risco: idade avançada, obesidade, diabetes e imunossupressão. A vacinação reduziu drasticamente as formas graves."
+      },
+      {
+        "titulo": "Diferenciação clínica",
+        "conteudo": "Influenza e COVID-19 compartilham sintomas sobrepostos, sendo a anosmia/ageusia mais característica da COVID-19. Testes específicos (RT-PCR, antígeno) confirmam o diagnóstico etiológico quando necessário."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Dispneia com queda da saturação de oxigênio</span> em paciente com síndrome gripal caracteriza síndrome respiratória aguda grave (SRAG), notificação compulsória, e exige avaliação hospitalar imediata."
+      }
+    ]
+  },
+  {
+    "id": "parasitoses-intestinais",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Parasitoses Intestinais",
+    "resumo": "Principais helmintíases e protozooses intestinais, e a neurocisticercose como causa tratável de epilepsia.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Manual de Vigilância e Controle de Parasitoses Intestinais; CDC Parasites",
+    "mnemonicos": [
+      {
+        "palavra": "Oxiúro coça de noite",
+        "explicacao": "O prurido anal que piora à noite é o sinal clássico da enterobíase (oxiuríase) — o parasita fêmea migra para a região perianal para depositar ovos durante o período noturno."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Helmintíases mais comuns",
+        "conteudo": "Ascaridíase (pode causar suboclusão intestinal em infestações maciças e síndrome de Löffler), ancilostomíase (penetração cutânea pelos pés descalços, causa anemia ferropriva por espoliação sanguínea), enterobíase (prurido anal noturno, diagnóstico pela fita adesiva) e tricuríase (pode causar prolapso retal em infestações maciças na infância)."
+      },
+      {
+        "titulo": "Teníase e cisticercose",
+        "conteudo": "Ingestão de carne suína/bovina malcozida com cisticercos causa teníase intestinal. A ingestão de ovos de Taenia solium causa neurocisticercose, principal causa de epilepsia adquirida em áreas endêmicas."
+      },
+      {
+        "titulo": "Protozooses",
+        "conteudo": "Giardíase (diarreia crônica/má absorção, especialmente em crianças e viajantes) e amebíase (desde portador assintomático até colite disentérica e abscesso hepático amebiano, a complicação extraintestinal mais comum)."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento",
+        "conteudo": "Exame parasitológico de fezes (idealmente seriado) identifica a maioria dos parasitas. Tratamento específico por classe: albendazol/mebendazol para a maioria dos helmintos, metronidazol para giárdia/ameba, praziquantel para teníase."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Cefaleia com crise convulsiva de início recente em paciente de área endêmica</span> deve levantar suspeita de neurocisticercose e motivar neuroimagem — causa tratável e prevenível de epilepsia."
+      }
+    ]
   }
 ]
