@@ -2078,5 +2078,77 @@
     ],
     "correta": 4,
     "comentario": "A dor interescapular/dorsal é classicamente associada a dissecções da aorta descendente (tipo B), enquanto a dor anterior/retroesternal é mais associada a dissecções da aorta ascendente (tipo A) — essa correlação entre localização da dor e segmento aórtico acometido é um ponto clássico de prova. As demais alternativas são incorretas: dissecção tipo A é SEMPRE emergência cirúrgica, mesmo sem complicação; hipertensão (não dislipidemia/tabagismo isoladamente) é o principal fator de risco; e tipo B por definição NÃO envolve a aorta ascendente."
+  },
+  {
+    "id": "q115",
+    "temaId": "tvp",
+    "tema": "TVP",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Conjunta sobre Tromboembolismo Venoso 2022 (SBACV/SBC/SBPT) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Mulher de 45 anos, sem fatores de risco relevantes (Wells = -2, baixa probabilidade), com dor leve em panturrilha. D-dímero solicitado veio negativo. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Solicitar duplex-scan venoso de rotina antes de excluir o diagnóstico.",
+      "Excluir TVP com segurança, sem necessidade de exame de imagem adicional.",
+      "Iniciar anticoagulação empírica até confirmação por imagem.",
+      "Repetir o D-dímero em 24 horas antes de qualquer conclusão."
+    ],
+    "correta": 1,
+    "comentario": "A combinação de escore de Wells de baixa probabilidade com D-dímero negativo tem alto valor preditivo negativo (probabilidade de TVP <2% em metanálises), permitindo excluir o diagnóstico com segurança sem necessidade de exame de imagem adicional na maioria dos pacientes — exceção a essa regra são pacientes com câncer ativo ou TVP recorrente, situações em que o D-dímero perde parte do seu valor preditivo negativo e a imagem costuma ser indicada mesmo com Wells baixo."
+  },
+  {
+    "id": "q116",
+    "temaId": "tvp",
+    "tema": "TVP",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Conjunta sobre Tromboembolismo Venoso 2022 (SBACV/SBC/SBPT) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Homem com Wells alto para TVP (escore elevado) e edema assimétrico do membro inferior. Qual a estratégia diagnóstica mais apropriada?",
+    "alternativas": [
+      "D-dímero isolado, dispensando exame de imagem se negativo.",
+      "Duplex-scan (ultrassom com Doppler e compressão) de todo o trajeto venoso do membro.",
+      "Aguardar 48 horas para reavaliação clínica antes de qualquer exame.",
+      "Flebografia contrastada como primeira escolha."
+    ],
+    "correta": 1,
+    "comentario": "Em pacientes de alta probabilidade clínica (Wells alto), o D-dímero perde utilidade para exclusão (mesmo negativo, não afasta com segurança) — o exame indicado diretamente é o duplex-scan venoso (ultrassom Doppler com manobra de compressão), avaliando todo o trajeto venoso do membro (não só a região sintomática), já que a TVP pode ser proximal e distal simultaneamente ou ter extensão maior que a área de sintomas. A flebografia contrastada é invasiva e reservada a casos duvidosos após ultrassom inconclusivo."
+  },
+  {
+    "id": "q117",
+    "temaId": "tvp",
+    "tema": "TVP",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Conjunta sobre Tromboembolismo Venoso 2022 (SBACV/SBC/SBPT) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Paciente com câncer ativo (em quimioterapia) desenvolve TVP proximal confirmada por duplex-scan. Qual classe de anticoagulante costuma ser preferida no tromboembolismo venoso associado a câncer?",
+    "alternativas": [
+      "Varfarina isolada, sem outra opção validada.",
+      "Heparina não fracionada isolada, por via subcutânea, indefinidamente.",
+      "Anticoagulantes orais diretos (DOACs) ou heparina de baixo peso molecular, conforme risco de sangramento e interações com a quimioterapia.",
+      "Ácido acetilsalicílico em dose plena, sem necessidade de outro anticoagulante."
+    ],
+    "correta": 2,
+    "comentario": "No tromboembolismo venoso associado a câncer, DOACs (como edoxabana, rivaroxabana ou apixabana) e heparina de baixo peso molecular são as opções validadas atualmente, superando a varfarina isolada (que tem maior risco de recorrência e interação com quimioterápicos/alimentação nesse contexto). A escolha entre DOAC e HBPM considera o tipo de tumor (ex.: neoplasias gastrointestinais têm maior risco de sangramento com DOAC), interações medicamentosas com a quimioterapia e preferência do paciente. AAS isolado não é anticoagulação adequada para tratamento de TVP estabelecida."
+  },
+  {
+    "id": "q118",
+    "temaId": "tvp",
+    "tema": "TVP",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Conjunta sobre Tromboembolismo Venoso 2022 (SBACV/SBC/SBPT) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Paciente com TVP proximal isolada (sem sinais de TEP), estável hemodinamicamente, sem contraindicação a anticoagulação e sem câncer ativo. Qual a conduta padrão quanto à anticoagulação inicial?",
+    "alternativas": [
+      "Internação hospitalar obrigatória para anticoagulação parenteral por pelo menos 5 dias.",
+      "Anticoagulação oral ambulatorial com DOAC, sem necessidade de internação na maioria dos casos.",
+      "Observação clínica sem anticoagulação, reavaliando em 1 semana.",
+      "Trombólise sistêmica de rotina para todos os casos de TVP proximal."
+    ],
+    "correta": 1,
+    "comentario": "Na TVP proximal não complicada, estável, sem contraindicação a anticoagulação, o tratamento ambulatorial com DOAC (sem necessidade de heparinização parenteral ponte, já que rivaroxabana e apixabana podem ser iniciados diretamente por via oral) é a conduta padrão atual, evitando internação desnecessária. Trombólise sistêmica é reservada a casos excepcionais de TVP extensa/ameaçadora ao membro (ex.: phlegmasia cerulea dolens), não de rotina. Não tratar/observar expõe a risco de progressão e embolização pulmonar."
   }
 ]
