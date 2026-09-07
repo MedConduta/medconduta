@@ -285,6 +285,26 @@
   font-weight: var(--fw-semibold);
 }
 
+.prose .table-wrap {
+  overflow-x: auto;
+  margin: var(--space-3) 0;
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+}
+.prose th, .prose td {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+.prose th {
+  background: var(--color-surface-hover);
+  font-weight: var(--fw-semibold);
+}
+
 .section-block + .section-block {
   margin-top: var(--space-5);
   padding-top: var(--space-5);

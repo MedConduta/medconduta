@@ -1168,5 +1168,156 @@
     ],
     "correta": 1,
     "comentario": "O princípio da autonomia determina que a recusa de tratamento por um paciente capaz e devidamente informado deve ser respeitada, com a devida documentação da decisão informada no prontuário."
+  },
+  {
+    "id": "q66",
+    "temaId": "has",
+    "tema": "HAS",
+    "banca": "UNIFESP",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Questão real de residência médica (acesso direto), adaptada com texto próprio a partir dos fatos clínicos e gabarito oficial — não é reprodução literal do enunciado original.",
+    "enunciado": "Homem de 50 anos comparece a exame admissional, assintomático, sem doenças prévias e sem uso de medicações. PA na consulta: 145/95mmHg; em segunda consulta, 140/90mmHg. Realiza MAPA, que mostra PA média de 24h de 125/75mmHg e descenso noturno de 12%. Qual o diagnóstico mais adequado?",
+    "alternativas": [
+      "Hipertensão do avental branco.",
+      "Hipertensão mascarada.",
+      "Hipertensão sustentada com efeito do avental branco.",
+      "Hipertensão sustentada."
+    ],
+    "correta": 0,
+    "comentario": "PA de consultório persistentemente elevada (≥140/90 em duas ocasiões) associada a MAPA com média de 24h normal (125/75, abaixo do limiar de 130/80 que define HAS pela MAPA) caracteriza hipertensão do avental branco — a elevação existe só na presença do profissional de saúde. O descenso noturno de 12% é fisiológico (>10%), reforçando que não há repercussão sustentada. Hipertensão mascarada é o oposto (PA normal no consultório, elevada na MAPA). 'Sustentada com efeito do avental branco' não é uma categoria reconhecida — é um distrator que mistura os dois conceitos. Hipertensão sustentada exigiria MAPA também alterada."
+  },
+  {
+    "id": "q67",
+    "temaId": "has",
+    "tema": "HAS",
+    "banca": "SES-PE",
+    "ano": 2022,
+    "revisado": true,
+    "fonte": "Questão real de residência médica (acesso direto), adaptada com texto próprio a partir dos fatos clínicos e gabarito oficial — não é reprodução literal do enunciado original.",
+    "enunciado": "Paciente diabético e hipertenso, em recuperação de infarto do miocárdio, apresenta bloqueio atrioventricular de segundo grau. Tem antecedente de angioedema e de gota. Qual anti-hipertensivo é o mais adequado para esse paciente?",
+    "alternativas": [
+      "Losartana.",
+      "Enalapril.",
+      "Metoprolol.",
+      "Verapamil.",
+      "Hidroclorotiazida."
+    ],
+    "correta": 0,
+    "comentario": "Enalapril (IECA) está contraindicado pelo antecedente de angioedema (efeito de classe). Metoprolol (betabloqueador) e verapamil (BCC não di-hidropiridínico) estão contraindicados no BAV de 2º grau, pois ambos deprimem ainda mais a condução atrioventricular — risco de progressão para bloqueio total. Hidroclorotiazida piora o controle da gota (reduz a excreção renal de urato, precipitando crises). A losartana (BRA) é a opção segura: não piora gota, não deprime condução AV, e tem risco de recorrência de angioedema bem menor que os IECA (ainda que não nulo), além de oferecer proteção renal relevante no paciente diabético."
+  },
+  {
+    "id": "q68",
+    "temaId": "has",
+    "tema": "HAS",
+    "banca": "ENARE",
+    "ano": 2025,
+    "revisado": true,
+    "fonte": "Questão real de residência médica (acesso direto), adaptada com texto próprio a partir dos fatos clínicos e gabarito oficial — não é reprodução literal do enunciado original.",
+    "enunciado": "Homem de 45 anos, tabagista, com diabetes e dislipidemia, sem diagnóstico prévio de HAS, é atendido por edema agudo de pulmão hipertensivo. Recebe alta com losartana e hidroclorotiazida. Evolui com hipertensão refratária e lesão renal aguda atribuída à losartana. Ao exame, sopro em linha mamilar esquerda próximo à cicatriz umbilical; doppler de carótidas mostra estenose bilateral leve a moderada. Qual o diagnóstico mais provável?",
+    "alternativas": [
+      "Doença de Kawasaki.",
+      "Arterite de Takayasu.",
+      "Hiperaldosteronismo primário.",
+      "Estenose de artéria renal.",
+      "Feocromocitoma."
+    ],
+    "correta": 3,
+    "comentario": "A tríade hipertensão refratária + edema agudo de pulmão \"repentino\" (síndrome de Pickering) + piora da função renal após início de IECA/BRA é clássica de estenose de artéria renal bilateral (ou em rim único): o bloqueio do sistema renina-angiotensina remove a vasoconstrição compensatória da arteríola eferente, que mantinha a filtração glomerular apesar da baixa perfusão renal — daí a lesão renal aguda ao iniciar losartana. O sopro abdominal e a aterosclerose difusa (estenose carotídea, fatores de risco cardiovascular) apontam para etiologia aterosclerótica (mais comum em homens >45-50 anos), diferente da displasia fibromuscular (mulheres jovens, lesão mais focal). Kawasaki é vasculite pediátrica; Takayasu acomete predominantemente mulheres jovens com padrão inflamatório de grandes vasos; hiperaldosteronismo primário cursa tipicamente com hipocalemia e não costuma causar essa piora renal aguda ao IECA/BRA; feocromocitoma cursa com crises paroxísticas (cefaleia, palpitação, sudorese), não com esse padrão."
+  },
+  {
+    "id": "q69",
+    "temaId": "has",
+    "tema": "HAS",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2025 (SBC/SBN/SBH) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Mulher de 68 anos, hipertensa em uso de losartana, anlodipino e clortalidona em doses otimizadas, mantém PA de consultório de 152/94mmHg apesar de boa adesão confirmada e técnica de aferição correta. Excluídas causas secundárias e pseudo-hipertensão. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Trocar a clortalidona por hidroclorotiazida, mantendo as demais drogas.",
+      "Associar espironolactona como quarta droga.",
+      "Associar betabloqueador como quarta droga, primeira escolha nesse cenário.",
+      "Manter o esquema atual e apenas reforçar mudança de estilo de vida.",
+      "Suspender o IECA/BRA por ineficácia e substituir por inibidor direto da renina."
+    ],
+    "correta": 1,
+    "comentario": "Hipertensão resistente confirmada (PA não controlada com 3 classes em dose otimizada, incluindo um diurético, após excluir má adesão, técnica inadequada e causas secundárias) tem a espironolactona como quarta droga de escolha, com forte evidência de benefício adicional (estudo PATHWAY-2); a diretriz 2025 passou a incluir a eplerenona como alternativa formal em caso de intolerância (ex.: ginecomastia). Trocar entre tiazídicos não agrega benefício adicional relevante nessa situação. Betabloqueador não é a escolha preferencial de quarta linha na ausência de indicação específica (ex.: DAC, IC). Não tratar não é apropriado diante de hipertensão resistente confirmada, que aumenta risco cardiovascular."
+  },
+  {
+    "id": "q70",
+    "temaId": "has",
+    "tema": "HAS",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2025 (SBC/SBN/SBH) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Homem de 58 anos comparece à emergência com PA de 200/124mmHg. Está assintomático, sem cefaleia, dor torácica, dispneia ou déficit neurológico; fundoscopia sem alterações agudas; função renal e ECG sem alterações agudas. Qual o termo correto, segundo a Diretriz Brasileira de Hipertensão Arterial 2025, e a conduta mais adequada?",
+    "alternativas": [
+      "Urgência hipertensiva; internação para redução pressórica endovenosa monitorizada.",
+      "Elevação importante da PA sem lesão de órgão-alvo; ajuste/reinício de medicação oral com reavaliação em até 7 dias.",
+      "Emergência hipertensiva; internação para redução pressórica endovenosa monitorizada.",
+      "Pseudocrise hipertensiva; alta sem necessidade de ajuste terapêutico.",
+      "Hipertensão maligna; internação em UTI."
+    ],
+    "correta": 1,
+    "comentario": "A diretriz 2025 substituiu o termo \"urgência hipertensiva\" por \"elevação importante da PA sem lesão de órgão-alvo\" para PA≥180/110mmHg sem evidência de lesão aguda em curso — o conceito central não muda: é a presença (ou ausência) de lesão aguda de órgão-alvo que distingue do quadro de emergência, não o valor absoluto da PA. A conduta é ajustar ou reiniciar a medicação por via oral, com reavaliação ambulatorial precoce em até 7 dias, sem necessidade de internação nem redução pressórica agressiva/endovenosa (que pode causar hipoperfusão de órgãos já adaptados a PA cronicamente elevada)."
+  },
+  {
+    "id": "q71",
+    "temaId": "has",
+    "tema": "HAS",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2025 (SBC/SBN/SBH) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Mulher de 52 anos é diagnosticada com hipertensão estágio 1 (144/92mmHg), sem lesão de órgão-alvo e classificada como baixo risco cardiovascular pelo escore utilizado. Qual a conduta inicial mais adequada segundo a diretriz atual?",
+    "alternativas": [
+      "Iniciar imediatamente IECA em monoterapia.",
+      "Iniciar imediatamente combinação de duas classes em comprimido único.",
+      "Orientar mudança de estilo de vida por 3-6 meses antes de considerar fármacos, com reavaliação programada.",
+      "Iniciar espironolactona como primeira escolha.",
+      "Não é necessário nenhum seguimento, pois o risco é baixo."
+    ],
+    "correta": 2,
+    "comentario": "Em hipertensos estágio 1 de baixo risco cardiovascular, sem lesão de órgão-alvo, a recomendação é um período de mudança de estilo de vida (restrição de sódio, DASH, atividade física, perda de peso, redução de álcool) por 3-6 meses antes de decidir por tratamento farmacológico, com reavaliação programada da PA. A combinação inicial de duas classes é reservada a hipertensos estágio 2 ou de alto risco cardiovascular. Espironolactona não é droga de primeira linha (é reservada à hipertensão resistente). Abandonar o seguimento não é apropriado — mesmo de baixo risco, a paciente precisa de reavaliação."
+  },
+  {
+    "id": "q72",
+    "temaId": "has",
+    "tema": "HAS",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2025 (SBC/SBN/SBH) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Homem de 38 anos, hipertenso há 2 anos com difícil controle pressórico apesar de 3 classes de anti-hipertensivos, apresenta hipocalemia persistente não explicada por uso de diuréticos. Qual a hipótese diagnóstica mais provável e o próximo exame a solicitar?",
+    "alternativas": [
+      "Feocromocitoma; catecolaminas/metanefrinas plasmáticas ou urinárias.",
+      "Hiperaldosteronismo primário; relação aldosterona/renina plasmática.",
+      "Síndrome de Cushing; cortisol salivar noturno.",
+      "Estenose de artéria renal; angiotomografia de artérias renais.",
+      "Apneia obstrutiva do sono; polissonografia."
+    ],
+    "correta": 1,
+    "comentario": "Hipertensão de difícil controle associada a hipocalemia persistente e não explicada por diuréticos é o quadro clássico de hiperaldosteronismo primário — a causa endócrina mais prevalente de HAS secundária, frequentemente subdiagnosticada porque nem todo paciente cursa com hipocalemia franca, mas quando presente é uma pista importante. O exame de rastreio é a relação aldosterona/renina plasmática. As demais causas secundárias (feocromocitoma, Cushing, estenose de artéria renal, apneia do sono) são diagnósticos diferenciais importantes de HAS secundária, mas não explicam tão bem a combinação específica de difícil controle + hipocalemia — esse é o ponto de pegadinha clássico, já que muitos associam hipertensão secundária automaticamente a feocromocitoma."
+  },
+  {
+    "id": "q73",
+    "temaId": "has",
+    "tema": "HAS",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2025 (SBC/SBN/SBH) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Na MAPA de um paciente hipertenso, observa-se queda de apenas 4% da PA média durante o sono em relação à vigília. Como se classifica esse padrão e qual sua relevância prognóstica?",
+    "alternativas": [
+      "Padrão \"dipper\" extremo; associado a menor risco cardiovascular.",
+      "Padrão \"dipper\"; padrão fisiológico normal, sem relevância adicional.",
+      "Padrão \"non-dipper\"; associado a maior risco de eventos cardiovasculares e lesão de órgão-alvo.",
+      "Padrão \"riser\"; acha-se dentro da normalidade em idosos.",
+      "Erro de aferição; o exame deve ser repetido, pois esse achado não tem significado clínico."
+    ],
+    "correta": 2,
+    "comentario": "O descenso noturno fisiológico da PA é de 10-20% em relação à vigília (padrão \"dipper\"). Queda menor que 10% caracteriza o padrão \"non-dipper\", associado a maior risco cardiovascular e maior prevalência de lesão de órgão-alvo (hipertrofia ventricular esquerda, microalbuminúria, eventos cerebrovasculares). O padrão \"dipper extremo\" (queda >20%) e o \"riser\" (PA noturna maior que a diurna, o mais grave dos padrões) são outras categorias descritas pela MAPA, mas não descrevem o cenário da questão."
   }
 ]
