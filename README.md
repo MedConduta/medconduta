@@ -1,12 +1,15 @@
 # MedConduta
 
-Plataforma web pessoal para (1) estudo estruturado voltado à residência médica (R1) e
-(2) consulta rápida à beira do leito ("guia de bolso"). **Não é gamificada** — sem
-pontos, níveis, rankings ou badges. O foco é rigor acadêmico e utilidade clínica prática.
+Plataforma web pessoal para estudo estruturado voltado à residência médica (R1).
+**Não é gamificada** — sem pontos, níveis, rankings ou badges. O foco é rigor
+acadêmico e utilidade clínica prática.
 
-PWA instalável, funciona offline (o guia de bolso precisa estar disponível sem
-internet), sem necessidade de login. HTML5 + CSS3 + JavaScript vanilla (ES modules) —
-sem framework.
+> A área de consulta rápida à beira do leito ("guia de bolso" — Atenção Básica,
+> Urgência/Emergência e Condutas rápidas) foi removida intencionalmente e será
+> reconstruída do zero em uma etapa futura.
+
+PWA instalável, funciona offline, sem necessidade de login. HTML5 + CSS3 + JavaScript
+vanilla (ES modules) — sem framework.
 
 ## ⚠️ Aviso clínico — leia antes de usar ou adaptar
 
@@ -59,24 +62,19 @@ MedConduta/
 │   │   ├── icons.js               # ícones SVG inline
 │   │   └── flowchart.js             # renderização de fluxogramas a partir de JSON
 │   └── views/                        # uma view por seção da navegação
-│       ├── conteudo.js (mostra também flashcards e fluxogramas do tema,
-│       │   via components/flowchart.js), assistente.js, revisao.js,
-│       │   flashcards.js, questoes.js, planejador.js  → Área 1 (Residência)
-│       └── guiaClinico.js (compartilhado), guiaAB.js, guiaUrgencia.js,
-│           prescricoes.js               → Área 2 (Guia de bolso)
+│       └── conteudo.js (mostra também flashcards e fluxogramas do tema,
+│           via components/flowchart.js), assistente.js, revisao.js,
+│           flashcards.js, questoes.js, planejador.js  → Residência
 ├── data/                    # todo o conteúdo em JSON, separado do código
 │   ├── temas.json             # resumos de residência + mnemônicos
 │   ├── flashcards.json          # baralhos frente/verso
 │   ├── fluxogramas.json           # fluxos de diagnóstico e tratamento
-│   ├── questoes.json                # banco de questões com comentário
-│   ├── guia_ab.json                   # atenção básica
-│   ├── guia_urgencia.json               # urgência/emergência
-│   └── prescricoes.json                   # condutas rápidas / modelos de prescrição
+│   └── questoes.json                # banco de questões com comentário
 ├── styles/
 │   ├── tokens.css   # cores, tipografia, espaçamento, forma (claro + escuro)
 │   ├── base.css      # reset e tipografia base
 │   ├── layout.css     # sidebar, topbar, bottom-nav, grids responsivos
-│   └── components.css  # cards, badges, flashcards, fluxogramas, prescrições, etc.
+│   └── components.css  # cards, badges, flashcards, fluxogramas, etc.
 ├── icons/
 │   ├── icon.svg           # ícone padrão do PWA
 │   └── icon-maskable.svg    # variante com área de segurança para ícones "maskable"
@@ -199,7 +197,7 @@ Depois acesse `http://localhost:PORTA/`.
 ## Como adicionar conteúdo novo
 
 Todo o conteúdo vive em `/data/*.json` — não é necessário mexer em JavaScript para
-adicionar um tema, flashcard, fluxograma, questão ou item do guia de bolso.
+adicionar um tema, flashcard, fluxograma ou questão.
 
 - **Novo tema de residência**: adicione um objeto em `data/temas.json` seguindo o
   formato existente (`secoes`, `mnemonicos`, `revisado`, `fonte`).
@@ -211,10 +209,6 @@ adicionar um tema, flashcard, fluxograma, questão ou item do guia de bolso.
   ramificações aninhadas.
 - **Nova questão**: em `data/questoes.json`, com `alternativas` (array de strings) e
   `correta` (índice da alternativa correta, começando em 0).
-- **Novo item de guia de bolso**: em `data/guia_ab.json` ou `data/guia_urgencia.json`,
-  com `pontos` (lista de condutas) e `red_flags` (sinais de alerta).
-- **Nova prescrição**: em `data/prescricoes.json`, com `posologia`,
-  `orientacao_paciente` e `contraindicacoes`.
 
 Em todos os casos com relevância clínica, **sempre inclua `"revisado": false` e
 `"fonte": ""` até que o conteúdo seja de fato validado.**

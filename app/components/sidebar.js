@@ -12,22 +12,12 @@ export const NAV_ITEMS = [
       { path: "/residencia/planejador", label: "Planejador do dia", icon: "calendar" },
     ],
   },
-  {
-    section: "Guia de bolso (prática)",
-    items: [
-      { path: "/bolso/atencao-basica", label: "Atenção Básica", icon: "stethoscope" },
-      { path: "/bolso/urgencia", label: "Urgência e Emergência", icon: "siren" },
-      { path: "/bolso/prescricoes", label: "Condutas rápidas", icon: "clipboard" },
-    ],
-  },
 ];
 
 export const BOTTOM_NAV_ITEMS = [
   { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
   { path: "/residencia/revisao", label: "Revisão", icon: "brain" },
   { path: "/residencia/planejador", label: "Plano", icon: "calendar" },
-  { path: "/bolso/urgencia", label: "Urgência", icon: "siren" },
-  { path: "/bolso/prescricoes", label: "Condutas", icon: "clipboard" },
 ];
 
 function isActive(path, currentPath) {

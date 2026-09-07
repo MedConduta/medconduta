@@ -197,18 +197,6 @@
   color: var(--color-text-on-accent);
 }
 
-.list-toolbar {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: var(--space-4);
-}
-
-#btn-ordenar-az.is-active {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
-  color: var(--color-text-on-accent);
-}
-
 /* ---------- Botões ---------- */
 
 .btn {
@@ -469,103 +457,6 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-text-muted);
-}
-
-/* ---------- Prescrição (copiável) ---------- */
-
-.prescription {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: var(--color-surface);
-}
-
-.prescription__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-3);
-  padding: var(--space-4) var(--space-5);
-  background: var(--color-bg-subtle);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.prescription__body {
-  padding: var(--space-5);
-  display: grid;
-  gap: var(--space-4);
-}
-
-.prescription__field-label {
-  font-size: var(--fs-xs);
-  font-weight: var(--fw-semibold);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-1);
-}
-
-.prescription__text {
-  font-family: var(--font-mono);
-  font-size: var(--fs-sm);
-  white-space: pre-wrap;
-  background: var(--color-bg-subtle);
-  border-radius: var(--radius-sm);
-  padding: var(--space-3);
-  border: 1px solid var(--color-border);
-}
-
-.prescription__contra {
-  color: var(--color-danger);
-}
-
-.prescription__med {
-  font-weight: 700;
-  font-size: var(--fs-md);
-}
-
-.prescription__text--placeholder {
-  color: var(--color-text-muted);
-  letter-spacing: 0.03em;
-}
-
-.prescription__rx {
-  font-family: var(--font-mono);
-  font-size: var(--fs-xl);
-  font-weight: var(--fw-semibold);
-  color: var(--color-text-muted);
-  margin-right: var(--space-2);
-}
-
-/* ---------- Notas do prescritor (contraindicações/dicas) ---------- */
-
-.prescriber-notes {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: var(--color-surface);
-  margin-top: var(--space-4);
-}
-
-.prescriber-notes__header {
-  padding: var(--space-4) var(--space-5);
-  background: var(--color-bg-subtle);
-  border-bottom: 1px solid var(--color-border);
-  font-weight: var(--fw-semibold);
-}
-
-.prescriber-notes__body {
-  padding: var(--space-5);
-  display: grid;
-  gap: var(--space-4);
-}
-
-.prescriber-notes__contra li {
-  color: var(--color-danger);
-}
-
-.prescriber-notes__dicas li {
-  color: var(--color-text);
 }
 
 /* ---------- Formulários ---------- */
