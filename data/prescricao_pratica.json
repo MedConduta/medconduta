@@ -1,0 +1,4152 @@
+[
+  {
+    "id": "gp-pcr-covid",
+    "categoria": "PCR Covid",
+    "titulo": "Solicitação de RT-PCR para SARS-CoV-2",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "RT-PCR para SARS-CoV-2 (swab nasofaríngeo)",
+        "modo_uso": "Solicitar em paciente com sintomas gripais há dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-exame-dengue",
+    "categoria": "Exame Dengue",
+    "titulo": "Sorologia/antígeno para dengue conforme tempo de sintomas",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Sorologia IgG/IgM para dengue + Chikungunya (sangue)",
+        "modo_uso": "Solicitar se sintomas há mais de 5 dias — dor no corpo, cefaleia e febre."
+      },
+      {
+        "medicamento": "Antígeno NS1 para dengue (sangue)",
+        "modo_uso": "Solicitar se sintomas há até 5 dias — dor no corpo, cefaleia e febre."
+      }
+    ],
+    "observacoes": "Ingerir pelo menos 2 litros de líquidos além do soro de reidratação (chá, suco, água de coco, isotônico). Evitar AAS e anti-inflamatórios. Procurar atendimento médico se dor abdominal intensa, febre persistente ou sangramentos."
+  },
+  {
+    "id": "gp-analgesico-1",
+    "categoria": "Analgésico",
+    "titulo": "Opções de analgésico/antitérmico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Paracetamol (Cefalium One)",
+        "modo_uso": "1 comprimido de 8/8h se dor ou febre."
+      },
+      {
+        "medicamento": "Dipirona (Lisador Dip)",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Cefaliv",
+        "modo_uso": "1 comprimido de 8/8h se dor de cabeça intensa."
+      },
+      {
+        "medicamento": "Tramadol + Paracetamol (Daisan, Revange, Paratram, Atrace)",
+        "modo_uso": "1 comprimido de 12/12h por no máximo 5 dias se dor intensa."
+      },
+      {
+        "medicamento": "Tramadol (Traum)",
+        "modo_uso": "1 comprimido de 12/12h por no máximo 5 dias se dor intensa."
+      },
+      {
+        "medicamento": "Tramadol retard (Traum Retard)",
+        "modo_uso": "1 comprimido ao dia por no máximo 5 dias se dor intensa."
+      },
+      {
+        "medicamento": "Paracetamol + Codeína (Paco)",
+        "modo_uso": "1 comprimido de 12/12h por no máximo 5 dias se dor intensa."
+      }
+    ]
+  },
+  {
+    "id": "gp-anti-inflamatorio-1",
+    "categoria": "Anti-inflamatório",
+    "titulo": "Opções de anti-inflamatório oral",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Artroflan (fitoterápico)",
+        "modo_uso": "1 comprimido ao dia por 15 dias."
+      },
+      {
+        "medicamento": "Curc (fitoterápico)",
+        "modo_uso": "1 comprimido ao dia por 30 dias."
+      },
+      {
+        "medicamento": "Loxoprofeno 60 mg (Loxonin)",
+        "modo_uso": "1 comprimido de 8/8h por 3 dias."
+      },
+      {
+        "medicamento": "Ibuprofeno 600 mg (Alivium)",
+        "modo_uso": "1 comprimido de 8/8h por 3 dias."
+      },
+      {
+        "medicamento": "Deocil / Tormiv SL",
+        "modo_uso": "1 comprimido de 8/8h por 3 dias."
+      },
+      {
+        "medicamento": "Aceclofenaco 100 mg (Proflam)",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Etodolaco 500 mg (Flancox)",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Diclofenaco sódico 150 mg (Flodin Duo)",
+        "modo_uso": "1 comprimido 3 minutos antes do almoço por 3 dias."
+      },
+      {
+        "medicamento": "Celecoxibe (Algie, Bicerto, Triplo A, Artrosil, Coques, Ducox, Foxis)",
+        "modo_uso": "1 comprimido ao dia por 3 dias."
+      },
+      {
+        "medicamento": "Meloxicam 15 mg (Melocox)",
+        "modo_uso": "1 comprimido ao dia por 3 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-relaxante-muscular-1",
+    "categoria": "Relaxante Muscular",
+    "titulo": "Opções de relaxante muscular",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Miosan Caf",
+        "modo_uso": "1 comprimido antes de dormir por 5 dias."
+      },
+      {
+        "medicamento": "Ciclobenzaprina 10 mg (Muscular, Mirtax)",
+        "modo_uso": "1 comprimido à noite por 5 dias. Pode causar sonolência."
+      },
+      {
+        "medicamento": "Ciclobenzaprina 15 mg (Mitrul)",
+        "modo_uso": "1 comprimido à noite por 5 dias. Pode causar sonolência."
+      },
+      {
+        "medicamento": "Ciclobenzaprina + Lisina (Dolamin Flex)",
+        "modo_uso": "1 comprimido à noite por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-gea-1",
+    "categoria": "GEA (Gastroenterite Aguda)",
+    "titulo": "Esquema oral para gastroenterite aguda",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Saccharomyces boulardii 200 mg (Floratil)",
+        "modo_uso": "1 comprimido de 12/12h por 3-5 dias."
+      },
+      {
+        "medicamento": "Soro de reidratação (Rehidrat 90)",
+        "modo_uso": "Diluir 1 sachê em 1 litro de água e ingerir ao longo do dia, por 5 dias."
+      },
+      {
+        "medicamento": "Ondansetrona 8 mg",
+        "modo_uso": "1 comprimido de 8/8h se náusea ou vômito."
+      },
+      {
+        "medicamento": "Dipirona 1 g",
+        "modo_uso": "1 comprimido de 12/12h se dor ou febre."
+      },
+      {
+        "medicamento": "Probióticos (20BI, Multi-BI, Zincopro, Bifilac Geflora)",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Florax-SM",
+        "modo_uso": "1 flaconete de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Probiatop",
+        "modo_uso": "Conforme embalagem, por 3 dias."
+      },
+      {
+        "medicamento": "Soro de reidratação (Rehidrat 50)",
+        "modo_uso": "Dissolver 1 sachê em 1 copo de água e tomar ao longo do dia, por 4 dias."
+      },
+      {
+        "medicamento": "Florax Hydra 45 (500 mL)",
+        "modo_uso": "100 mL da solução a cada evacuação."
+      },
+      {
+        "medicamento": "Metoclopramida + Dimeticona + Pepsina (Digeplus)",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Domperidona 10 mg (Peridal)",
+        "modo_uso": "1 comprimido de 8/8h se enjoo ou vômito."
+      },
+      {
+        "medicamento": "Ondansetrona (Nautex, Enavo, Vonau) 8 mg",
+        "modo_uso": "1 comprimido de 8/8h se enjoo ou vômito."
+      },
+      {
+        "medicamento": "Ondansetrona 8 mg filme (Ondif)",
+        "modo_uso": "1 filme sobre a língua a cada 8h se enjoo ou vômito."
+      },
+      {
+        "medicamento": "Meclizina 50 mg (Buscopan Meclin)",
+        "modo_uso": "1 comprimido de 12/12h se enjoo ou vômito."
+      },
+      {
+        "medicamento": "Dimenidrinato (Dramin B6)",
+        "modo_uso": "1 comprimido de 8/8h se enjoo ou vômito."
+      },
+      {
+        "medicamento": "Metoclopramida (Plasil)",
+        "modo_uso": "1 comprimido de 8/8h se enjoo ou vômito."
+      },
+      {
+        "medicamento": "Bromoprida 10 mg",
+        "modo_uso": "1 comprimido de 8/8h se enjoo ou vômito."
+      },
+      {
+        "medicamento": "Escopolamina composta (Buscopan Composto, Tropinal, Lisador Cólica)",
+        "modo_uso": "1 comprimido de 8/8h se dor abdominal."
+      },
+      {
+        "medicamento": "Pantoprazol 40 mg (Aziga, Divena, Adipept, Inilok)",
+        "modo_uso": "1 comprimido em jejum pela manhã por 7 dias."
+      },
+      {
+        "medicamento": "Ciprofloxacino 500 mg",
+        "modo_uso": "1 comprimido de 12/12h por 7-10 dias, se diarreia de provável causa bacteriana."
+      },
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima 800/160 mg (Subtrax)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Nitazoxanida (Annita)",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Racecadotrila 100 mg",
+        "modo_uso": "1 cápsula de 8/8h por 5-7 dias, se diarreia intensa e prolongada."
+      }
+    ],
+    "observacoes": "Orientar ingestão de 3 litros de líquido por dia (água, água de coco, suco natural de fruta, isotônico)."
+  },
+  {
+    "id": "gp-azia-1",
+    "categoria": "Azia, Queimação, Dor Estomacal",
+    "titulo": "Antiácidos de uso pontual",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Magnésia bisurada",
+        "modo_uso": "Dissolver 1 pastilha na boca, 1x de 12/12h ou 1x ao dia. Contraindicada para gestantes."
+      },
+      {
+        "medicamento": "Leite de magnésia (1.214,25 mg/15 mL)",
+        "modo_uso": "Como antiácido: 5-15 mL VO por 14 dias. Como laxante: 30-60 mL/dia VO por 3 dias. Dose máxima 60 mL/dia. Liberado para lactantes; não usar em gestantes."
+      }
+    ]
+  },
+  {
+    "id": "gp-itu-1",
+    "categoria": "ITU",
+    "titulo": "Opções para infecção urinária não complicada",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Fosfomicina trometamol (Traturil, Monuril)",
+        "modo_uso": "Dissolver 1 sachê em 1 copo de água e tomar à noite, após esvaziar a bexiga. Dose única."
+      },
+      {
+        "medicamento": "Nitrofurantoína macrocristais (Macrodantina)",
+        "modo_uso": "Conforme apresentação — ver bula para posologia por dia."
+      },
+      {
+        "medicamento": "Ciprofloxacino 500 mg (Foritus)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg (Atak Clav, Sinot Clav, Lanico, Novamox)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima 800/160 mg (Subtrax)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Levofloxacino 750 mg (Alevo, Livepax, Tavok)",
+        "modo_uso": "1 comprimido ao dia por 7 dias."
+      },
+      {
+        "medicamento": "Norfloxacino 400 mg",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias (mulher) ou 7 dias (homem)."
+      },
+      {
+        "medicamento": "Fenazopiridina 200 mg (Pyridium)",
+        "modo_uso": "1 comprimido de 8/8h por 2 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-nefrolitiase-1",
+    "categoria": "Nefrolitíase",
+    "titulo": "Terapia expulsiva para cálculo ureteral",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Tansulosina 0,4 mg",
+        "modo_uso": "1 comprimido por dia, após o café da manhã, por até 4-6 semanas."
+      },
+      {
+        "medicamento": "Nifedipina 10-20 mg (alternativa)",
+        "modo_uso": "1 comprimido de 8/8h por até 4-6 semanas."
+      }
+    ]
+  },
+  {
+    "id": "gp-rinossinusite-1",
+    "categoria": "Rinossinusite",
+    "titulo": "Esquema para rinossinusite aguda",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg (Atak Clav, Sinot Clav, Lanico, Novamox)",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Levofloxacino 750 mg (Alevo, Livepax, Tavok)",
+        "modo_uso": "1 comprimido ao dia por 7 dias."
+      },
+      {
+        "medicamento": "Moxifloxacino 400 mg (Praiva, Neumosin)",
+        "modo_uso": "1 comprimido ao dia por 7 dias."
+      },
+      {
+        "medicamento": "Axetilcefuroxima 500 mg (Mefex)",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Prednisolona 20 mg (Predsim, Preni, Percoide, Meticorten, Prelone)",
+        "modo_uso": "1 comprimido pela manhã por 5 dias."
+      },
+      {
+        "medicamento": "Solução salina spray (Sorine 360, Rinosoro Jet)",
+        "modo_uso": "Aplicar 2 jatos em cada narina, 6 vezes ao dia, por 5 dias."
+      },
+      {
+        "medicamento": "Lavagem nasal com soro fisiológico 0,9%",
+        "modo_uso": "Aplicar 5 mL em jato em cada narina, 6 vezes ao dia."
+      },
+      {
+        "medicamento": "Budesonida 50 mcg spray nasal (Noex)",
+        "modo_uso": "Aplicar 1 jato em cada narina à noite, por 5 dias."
+      },
+      {
+        "medicamento": "Mometasona 50 mcg spray nasal (Monax, Venoso, Amome, Nasonex)",
+        "modo_uso": "Aplicar 1 jato em cada narina à noite, por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-amigdalite-1",
+    "categoria": "Amigdalite",
+    "titulo": "Esquema para amigdalite bacteriana",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Penicilina G benzatina 1.200.000 UI (Benzetacil)",
+        "modo_uso": "Aplicar 1.200.000 UI, IM, dose única."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg (Atak Clav, Sinot Clav, Lanico, Novamox)",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Azitromicina 500 mg (Azi, Astro, Zirk)",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Nimesulida 400 mg/100 mg (Maxsulid, Nivux, Nisulid)",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Nimesulida 200 mg (Arflex Retard)",
+        "modo_uso": "1 comprimido ao dia por 3 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-pnm-1",
+    "categoria": "PNM (Pneumonia)",
+    "titulo": "Esquema ambulatorial para pneumonia adquirida na comunidade",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg (Atak Clav, Sinot Clav, Lanico, Novamox)",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Azitromicina 500 mg (Azi, Astro, Zirk)",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Claritromicina 500 mg (Clabat)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Moxifloxacino 400 mg (Praiva, Neumosin)",
+        "modo_uso": "1 comprimido ao dia por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-antialergicos-1",
+    "categoria": "Antialérgicos",
+    "titulo": "Opções de anti-histamínico oral",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Desloratadina (C Leg, Aloff, Aviant, Desalex, Esalerg, Lur)",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Levocetirizina (Zina, Rizi)",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Hidroxizina (Hixizine)",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias. Pode causar sonolência."
+      },
+      {
+        "medicamento": "Levocetirizina + Montelucaste (Rizi M)",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Desloratadina + Pseudoefedrina (Desalex D12, Esalerg D12)",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Ebastina (Ebastel)",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Bilastina (Hisbila, Tynna, Naire, Alektos)",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Fexofenadina 180 mg (Altiva, Allegra)",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-mucolitico-1",
+    "categoria": "Mucolítico",
+    "titulo": "Opções de mucolítico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Acetilcisteína 600 mg (Aires, Fluimicil)",
+        "modo_uso": "Dissolver 1 sachê em 1 copo de água e tomar à noite, por 5 dias."
+      },
+      {
+        "medicamento": "Acebrofilina (Filinar, Brondilat)",
+        "modo_uso": "10 mL de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Bromelina (Ananas comosus)",
+        "modo_uso": "7,5 mL de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Hedera helix (Blumel Hedera, Torante)",
+        "modo_uso": "5 mL de 8/8h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-pigarro-1",
+    "categoria": "Pigarro",
+    "titulo": "Opção para pigarro",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Própolis spray (Bromelin Própolis Spray)",
+        "modo_uso": "Aplicar 2 jatos na direção da garganta, de 6/6h, por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-antitussigeno-1",
+    "categoria": "Antitussígeno",
+    "titulo": "Opções de antitussígeno",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Levodropropizina (Percof, Antux)",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Cloperastina (Seki)",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Koide D",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Dexclorfeniramina + Betametasona (Celestamine)",
+        "modo_uso": "Conforme apresentação, ver bula para posologia por dia."
+      }
+    ]
+  },
+  {
+    "id": "gp-asma-bronquite-1",
+    "categoria": "Asma/Bronquite",
+    "titulo": "Esquema para crise de asma/bronquite",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Beclometasona (Clenil A) — nebulização",
+        "modo_uso": "Nebulizar de 12/12h por 5 dias, com 10 mL de soro fisiológico 0,9% e 1 flaconete de Clenil A."
+      },
+      {
+        "medicamento": "Prednisolona 20 mg (Predsim, Preni, Percoide, Meticorten, Prelone)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-anemia-1",
+    "categoria": "Anemia",
+    "titulo": "Reposição de ferro",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Ferro + Ácido fólico 120 mg (Combiron Fólico)",
+        "modo_uso": "1 comprimido ao dia por 90 dias."
+      },
+      {
+        "medicamento": "Ferro quelato 500 mg (Neutrofer)",
+        "modo_uso": "1 comprimido ao dia por 90 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-vitamina-1",
+    "categoria": "Vitamina",
+    "titulo": "Suplementação vitamínica geral",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Complexo vitamínico (Addera Max Imunidade)",
+        "modo_uso": "1 comprimido ao dia por 60 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-fadiga-1",
+    "categoria": "Fadiga",
+    "titulo": "Suplemento para fadiga",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Fisioton",
+        "modo_uso": "1 comprimido ao dia por 30 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-calmante-1",
+    "categoria": "Calmante",
+    "titulo": "Fitoterápicos calmantes",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Passiflora 600 mg (Sintocalmy)",
+        "modo_uso": "1 comprimido à noite por 30 dias."
+      },
+      {
+        "medicamento": "Valeriana + Humulus (Remilev)",
+        "modo_uso": "1 comprimido à noite por 30 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-piodermite-1",
+    "categoria": "Piodermite",
+    "titulo": "Esquema oral e tópico para piodermite",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Cefalexina 500 mg",
+        "modo_uso": "1 comprimido de 6/6h por 14 dias."
+      },
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima 800/160 mg (Subtrax)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Rifamicina spray",
+        "modo_uso": "Lavar a lesão com água e sabão e aplicar o medicamento, de 12/12h, por 7 dias."
+      },
+      {
+        "medicamento": "Betametasona + Gentamicina + Clioquinol (Quadriderm)",
+        "modo_uso": "Aplicar sobre a lesão de 12/12h por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-queimadura-1",
+    "categoria": "Queimadura",
+    "titulo": "Tratamento tópico para queimadura",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Sulfadiazina de prata 1%",
+        "modo_uso": "Aplicar 2 vezes ao dia na área afetada e ocluir com gaze estéril. Antes da aplicação, lavar abundantemente com água corrente ou soro fisiológico. Por 10 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-hematoma-1",
+    "categoria": "Hematoma",
+    "titulo": "Tratamento tópico para hematoma",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Heparinoide gel (Hirudoid)",
+        "modo_uso": "Aplicar uma fina camada sobre o hematoma, 3 vezes ao dia, por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-escabiose-1",
+    "categoria": "Escabiose",
+    "titulo": "Esquema oral e tópico para escabiose",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Ivermectina",
+        "modo_uso": "Tomar 2 comprimidos e, após 7 dias, tomar mais 2 comprimidos."
+      },
+      {
+        "medicamento": "Permetrina loção 5%",
+        "modo_uso": "Aplicar na pele do pescoço para baixo à noite e retirar pela manhã com banho. Fazer por 3 dias seguidos e repetir o esquema após 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-candidiase-vaginal-1",
+    "categoria": "Candidíase Vaginal",
+    "titulo": "Esquema para candidíase vulvovaginal não complicada",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Fluconazol 150 mg",
+        "modo_uso": "1 comprimido, dose única."
+      }
+    ]
+  },
+  {
+    "id": "gp-gonorreia-1",
+    "categoria": "Gonorreia",
+    "titulo": "Abordagem para gonorreia",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Azitromicina 1 g",
+        "modo_uso": "1 comprimido, dose única."
+      },
+      {
+        "medicamento": "Ceftriaxona 500 mg (Traxin)",
+        "modo_uso": "Aplicar 500 mg, IM, dose única."
+      }
+    ]
+  },
+  {
+    "id": "gp-sifilis-1",
+    "categoria": "Sífilis",
+    "titulo": "Esquema para sífilis latente tardia/duração ignorada",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Penicilina G benzatina 1.200.000 UI (Benzetacil)",
+        "modo_uso": "Aplicar 2.400.000 UI, IM, 1 vez por semana, por 3 semanas seguidas."
+      }
+    ]
+  },
+  {
+    "id": "gp-otite-1",
+    "categoria": "Otite",
+    "titulo": "Esquema para otite (média e externa)",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Otosporin (gotas otológicas)",
+        "modo_uso": "Pingar 2 gotas no ouvido dolorido, de 6/6h, por 5 dias."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg (Atak Clav, Sinot Clav, Lanico, Novamox)",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Levofloxacino 750 mg (Alevo, Livepax, Tavok)",
+        "modo_uso": "1 comprimido ao dia por 7 dias."
+      },
+      {
+        "medicamento": "Ciprofloxacino + Hidrocortisona (gotas otológicas)",
+        "modo_uso": "Pingar 3 gotas na orelha acometida, de 12/12h, por 7 dias."
+      }
+    ],
+    "observacoes": "Quadro típico: dor no ouvido há uma semana, sem saída de secreção, sem febre e sem sintomas de IVAS."
+  },
+  {
+    "id": "gp-hemorroida-1",
+    "categoria": "Hemorroida",
+    "titulo": "Tratamento tópico para hemorroida",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Pomada tópica (Proctyl)",
+        "modo_uso": "Aplicar sobre o local acometido de 8/8h por 1 semana."
+      }
+    ]
+  },
+  {
+    "id": "gp-ma-circulacao-1",
+    "categoria": "Má Circulação",
+    "titulo": "Fitoterápico para insuficiência venosa",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Castanha da índia 300 mg (Varivax)",
+        "modo_uso": "1 comprimido ao dia por 10 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-herpes-labial-1",
+    "categoria": "Herpes Labial",
+    "titulo": "Esquema para herpes labial",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Fanciclovir 125 mg (Penvir)",
+        "modo_uso": "2 comprimidos de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Aciclovir 200 mg",
+        "modo_uso": "1 comprimido, 5 vezes ao dia (intervalo médio de 4h entre as doses), por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-herpes-genital-1",
+    "categoria": "Herpes Genital",
+    "titulo": "Esquema para herpes genital",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Aciclovir 400 mg",
+        "modo_uso": "1 comprimido de 8/8h por 10 dias."
+      },
+      {
+        "medicamento": "Fanciclovir 125 mg (Penvir)",
+        "modo_uso": "2 comprimidos de 8/8h por 10 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-herpes-zoster-1",
+    "categoria": "Herpes Zoster",
+    "titulo": "Esquema para herpes zoster",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Fanciclovir 500 mg (Penvir)",
+        "modo_uso": "1 comprimido de 8/8h por 7 dias."
+      },
+      {
+        "medicamento": "Aciclovir 400 mg",
+        "modo_uso": "2 comprimidos, 5 vezes ao dia (intervalo médio de 4h entre as doses), por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-aftas-1",
+    "categoria": "Aftas",
+    "titulo": "Tratamento tópico para afta",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Triancinolona orabase (Omcilon A Orabase)",
+        "modo_uso": "Aplicar nas lesões da boca, 2 vezes ao dia, por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-parasitose-1",
+    "categoria": "Parasitose",
+    "titulo": "Esquema antiparasitário combinado",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Secnidazol 1000 mg",
+        "modo_uso": "2 comprimidos, dose única."
+      },
+      {
+        "medicamento": "Albendazol 400 mg",
+        "modo_uso": "1 comprimido ao dia por 3 dias seguidos."
+      }
+    ]
+  },
+  {
+    "id": "gp-constipacao-1",
+    "categoria": "Constipação",
+    "titulo": "Opções de laxante",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Tamarine",
+        "modo_uso": "1 comprimido antes de dormir por 2 semanas."
+      },
+      {
+        "medicamento": "Macrogol 17 g (PEG Lax)",
+        "modo_uso": "Dissolver 1 sachê em 1 copo de água e tomar pela manhã, por 2 semanas."
+      }
+    ]
+  },
+  {
+    "id": "gp-ivas-tvc",
+    "categoria": "IVAS",
+    "titulo": "IVAS — esquema oral padrão (TVC)",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dipirona 1 g",
+        "modo_uso": "1 comprimido de 12/12h se dor ou febre."
+      },
+      {
+        "medicamento": "Xarope Seki",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Nimesulida 100 mg",
+        "modo_uso": "1 comprimido de 12/12h por até 5 dias, após a refeição."
+      },
+      {
+        "medicamento": "Winter AP",
+        "modo_uso": "1 comprimido por dia durante 7 dias."
+      },
+      {
+        "medicamento": "Cepracaína spray",
+        "modo_uso": "Aplicar 2 jatos em cada lateral da garganta."
+      },
+      {
+        "medicamento": "Ibuprofeno 600 mg (Alivium)",
+        "modo_uso": "1 comprimido de 8/8h."
+      }
+    ],
+    "observacoes": "Lavagem nasal com soro fisiológico 0,9% — aplicar 10 mL em jato em cada narina, de 3 a 4 vezes ao dia. Reavaliação médica em caso de não melhora dos sintomas."
+  },
+  {
+    "id": "gp-gea-tvc",
+    "categoria": "GEA (Gastroenterite Aguda)",
+    "titulo": "GEA — esquema oral completo (TVC)",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Soro de reidratação (Rehidrat 90)",
+        "modo_uso": "Diluir 1 sachê em 1 litro de água e tomar ao longo do dia."
+      },
+      {
+        "medicamento": "Escopolamina simples (Buscopan Simples)",
+        "modo_uso": "1 comprimido até de 8/8h, se dor abdominal."
+      },
+      {
+        "medicamento": "Ondansetrona 8 mg sublingual (Vonau)",
+        "modo_uso": "1 comprimido de 8/8h se náuseas ou vômitos."
+      },
+      {
+        "medicamento": "Dipirona 1 g",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Saccharomyces boulardii 200 mg (Repoflor)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias, se diarreia."
+      },
+      {
+        "medicamento": "Racecadotrila 100 mg",
+        "modo_uso": "1 cápsula de 8/8h por 5-7 dias, se diarreia muito intensa e prolongada."
+      },
+      {
+        "medicamento": "Ciprofloxacino 500 mg",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias, se suspeita bacteriana."
+      },
+      {
+        "medicamento": "Nitazoxanida 500 mg",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Racecadotrila (Avide Tiorfan)",
+        "modo_uso": "1 comprimido 3x ao dia até parar a diarreia."
+      },
+      {
+        "medicamento": "Probióticos (Prolive, 20BI, Bifilac Geflora, Multi BI)",
+        "modo_uso": "1 comprimido 1-2x ao dia, conforme apresentação."
+      },
+      {
+        "medicamento": "Probiótico mastigável (Provance)",
+        "modo_uso": "1 comprimido mastigável ao dia."
+      },
+      {
+        "medicamento": "Saccharomyces boulardii (Florax, Enterogermina)",
+        "modo_uso": "1 flaconete 2x ao dia."
+      },
+      {
+        "medicamento": "Simbiótico (Bio 5, 30 sachês)",
+        "modo_uso": "1 sachê diluído em água, 1x ao dia."
+      },
+      {
+        "medicamento": "Ondansetrona SL (Enavo, Jofix, Nautex 8 mg)",
+        "modo_uso": "1 comprimido sublingual até de 8/8h se náuseas."
+      },
+      {
+        "medicamento": "Ondansetrona 8 mg filme (Ondif)",
+        "modo_uso": "1 filme sublingual até de 8/8h se náuseas."
+      },
+      {
+        "medicamento": "Escopolamina composta (Lisador Cólica, Tropinal, Buscopan Duo)",
+        "modo_uso": "1 comprimido até de 8/8h se cólica."
+      },
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima (Bactrim F)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Metronidazol 400 mg (Flagyl)",
+        "modo_uso": "1 comprimido de 8/8h por 7 dias."
+      }
+    ],
+    "observacoes": "Retornar ao pronto-socorro em caso de piora clínica. Evitar leite e derivados, gorduras e frituras, molhos, temperos e condimentos, carnes em geral, enlatados e embutidos, fast food e salgadinhos/lanches. Hidratação abundante com água, chás claros ou sucos não cítricos; evitar cafeína, refrigerantes, água gaseificada e bebidas alcoólicas. Dieta preferencial: banana prata, maçã, pera, goiaba, suco de caju, gelatina, geleia de mocotó, arroz branco, batata, cenoura, carne magra cozida/assada, frango sem pele e sem molhos, sopas, canja, purê, biscoito água e sal/maisena/maria/cream cracker, torradas, mate, chás. Aumentar ingesta líquida para no mínimo 3 litros/dia (água, suco de maçã e/ou goiaba, chás), sendo pelo menos 1 litro entre água de coco e isotônico."
+  },
+  {
+    "id": "gp-diverticulite-aguda",
+    "categoria": "Diverticulite Aguda",
+    "titulo": "Diverticulite aguda não complicada — esquema ambulatorial",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Ciprofloxacino 500 mg + Metronidazol 500 mg",
+        "modo_uso": "Ciprofloxacino 1 comprimido de 12/12h por 10 dias, associado a metronidazol 1 comprimido de 8/8h por 10 dias."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg (alternativa)",
+        "modo_uso": "1 comprimido de 8/8h por 10 dias."
+      },
+      {
+        "medicamento": "Moxifloxacino 400 mg (alternativa)",
+        "modo_uso": "1 comprimido por dia durante 10 dias."
+      },
+      {
+        "medicamento": "Dipirona 1 g (sintomático)",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Escopolamina simples (Buscopan Simples)",
+        "modo_uso": "1 comprimido até de 8/8h se dor abdominal."
+      },
+      {
+        "medicamento": "Bromoprida 10 mg",
+        "modo_uso": "1 comprimido de 8/8h se enjoo ou vômito."
+      }
+    ],
+    "observacoes": "Dieta líquida sem resíduos por 2-3 dias, progredindo para dieta pobre em fibras se houver melhora da dor. Acompanhamento com proctologista e reavaliação ambulatorial em 48-72 horas. Considerar sucesso do tratamento se houver normalização dos sinais vitais, resolução da dor abdominal e da leucocitose, e boa aceitação da dieta oral. Indicações de internação: ausência de melhora clínico-laboratorial em 48-72h, imunossuprimidos, idosos, febre elevada (>39ºC), leucocitose significativa, dor abdominal refratária, comorbidades importantes, dificuldade de seguimento ambulatorial ou intolerância à ingesta oral."
+  },
+  {
+    "id": "gp-asma-ambulatorial",
+    "categoria": "Asma/Bronquite",
+    "titulo": "Asma — manejo ambulatorial com corticoide e broncodilatador inalatório",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Prednisolona 20 mg",
+        "modo_uso": "1 comprimido pela manhã, por 7 dias."
+      },
+      {
+        "medicamento": "Formoterol + Budesonida 6/200 mcg/inalação",
+        "modo_uso": "1 jato de 6/6h por 2 dias, depois manter de 12/12h."
+      }
+    ],
+    "observacoes": "Durante as crises de asma, é fundamental o repouso absoluto e a administração imediata do aerossol. Em crises graves ou ausência de resposta inicial ao aerossol, procurar a unidade de emergência imediatamente. Para o controle clínico e prevenção de crises, eliminar fatores desencadeantes (alérgenos, ácaros, mofo, cheiros fortes, exposição ao frio, fumaça de cigarro). Encaminhar ao pneumologista para acompanhamento."
+  },
+  {
+    "id": "gp-enxaqueca-crise-1",
+    "categoria": "Enxaqueca",
+    "titulo": "Crise de enxaqueca — esquema oral simples",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Cefaliv",
+        "modo_uso": "1 comprimido de 8/8h se dor de cabeça intensa."
+      },
+      {
+        "medicamento": "Dipirona 1 g",
+        "modo_uso": "1 comprimido de 6/6h se febre ou dor."
+      },
+      {
+        "medicamento": "Ondansetrona 8 mg sublingual (Vonau Flash)",
+        "modo_uso": "1 comprimido sublingual de 8/8h se enjoo ou vômito."
+      }
+    ],
+    "observacoes": "Realizar acompanhamento com neurologista. Retornar se piora dos sintomas."
+  },
+  {
+    "id": "gp-dor-muscular-1",
+    "categoria": "Dor Muscular",
+    "titulo": "Dor muscular aguda — analgesia e proteção gástrica",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dipirona 1 g (ou Paracetamol 750 mg)",
+        "modo_uso": "1 comprimido de 6/6h se febre ou dor."
+      },
+      {
+        "medicamento": "Cetoprofeno 150 mg",
+        "modo_uso": "1 comprimido de 12/12h por até 5 dias, após a refeição."
+      },
+      {
+        "medicamento": "Ciclobenzaprina 5 mg",
+        "modo_uso": "1 comprimido à noite por até 3 dias."
+      },
+      {
+        "medicamento": "Omeprazol 20 mg",
+        "modo_uso": "1 comprimido pela manhã, 30 minutos antes do café da manhã, pelos dias definidos pelo médico."
+      }
+    ]
+  },
+  {
+    "id": "gp-conjuntivite-bacteriana-1",
+    "categoria": "Conjuntivite Bacteriana",
+    "titulo": "Conjuntivite bacteriana — esquema tópico e sintomático",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Tobramicina colírio (Tobrex)",
+        "modo_uso": "1 gota de 8/8h no olho afetado, por 7 dias."
+      },
+      {
+        "medicamento": "Soro fisiológico 0,9%",
+        "modo_uso": "Lavar os olhos, de 1/1h, com soro gelado."
+      },
+      {
+        "medicamento": "Lágrima artificial (Lacrima Plus)",
+        "modo_uso": "2 gotas até de 6/6h no olho afetado, para alívio da dor."
+      },
+      {
+        "medicamento": "Colírio lubrificante (Laxime)",
+        "modo_uso": "2 gotas no olho acometido de 6/6h por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 1 g",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      }
+    ]
+  },
+  {
+    "id": "gp-hemorroidas-1",
+    "categoria": "Hemorroida",
+    "titulo": "Hemorroida — esquema oral e tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dipirona 1 g",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Diosmina 450 mg + Hesperidina 50 mg",
+        "modo_uso": "6 comprimidos/dia nos primeiros 4 dias; depois 4 comprimidos/dia por 3 dias; em seguida, 2 comprimidos/dia por 3 meses ou período a definir pelo especialista."
+      },
+      {
+        "medicamento": "Pomada tópica (Ultraproct LCD ou Proctyl)",
+        "modo_uso": "Aplicar fina camada na região afetada, 2 a 3 vezes ao dia, após o banho."
+      }
+    ],
+    "observacoes": "Fazer banho de assento com água morna durante 15 minutos, 2 a 3 vezes ao dia. Procurar proctologista se houver persistência dos sintomas."
+  },
+  {
+    "id": "gp-furunculo-carbunculo",
+    "categoria": "Furúnculo/Carbúnculo",
+    "titulo": "Furúnculo/carbúnculo — esquema oral e tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Cefalexina 500 mg",
+        "modo_uso": "1 comprimido de 6/6h por 14 dias."
+      },
+      {
+        "medicamento": "Dipirona 1 g",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Ondansetrona 8 mg sublingual (Vonau Flash)",
+        "modo_uso": "1 comprimido sublingual de 8/8h se enjoo ou vômito."
+      },
+      {
+        "medicamento": "Sabonete antisséptico (Soapex)",
+        "modo_uso": "Lavar o local afetado, a genitália, as axilas e as regiões inguinais por 7 dias; no local da lesão, lavar 3 vezes ao dia e secar bem."
+      },
+      {
+        "medicamento": "Mupirocina 2% pomada",
+        "modo_uso": "Aplicar na lesão 3 vezes ao dia, por 14 dias ou até melhora clínica. Aplicar também nas narinas, região inguinal e dobras, 2 vezes ao dia por 10 dias."
+      }
+    ],
+    "observacoes": "Colocar compressa de água morna nas lesões para facilitar a drenagem."
+  },
+  {
+    "id": "gp-estomatite-aftosa",
+    "categoria": "Aftas",
+    "titulo": "Estomatite aftosa — esquema oral e tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dexametasona 0,1 mg/mL",
+        "modo_uso": "Realizar gargarejo com 5 mL e depois cuspir, 1x ao dia, por 5 dias."
+      },
+      {
+        "medicamento": "Triancinolona orabase (Omcilon A Orabase)",
+        "modo_uso": "Se poucas aftas: aplicar pequena quantidade sobre a lesão até formar uma película fina, preferencialmente à noite antes de dormir, por 7 dias. Dependendo da gravidade, aplicar 2-3 vezes ao dia, após as refeições."
+      }
+    ],
+    "observacoes": "Realizar compressa de água morna, por 15-20 minutos, 2 vezes ao dia (conforme orientação do documento original para conforto local)."
+  },
+  {
+    "id": "gp-sinusite-1",
+    "categoria": "Sinusite",
+    "titulo": "Sinusite — esquema simples (corticoide + anti-histamínico)",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Prednisona 20 mg",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Fexofenadina 60 mg (Allegra)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      }
+    ]
+  },
+  {
+    "id": "gp-sinusite-aguda-1",
+    "categoria": "Sinusite Aguda",
+    "titulo": "Sinusite aguda — esquema com antibiótico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Prednisona 20 mg",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Decongex Plus",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Tylenol Sinus",
+        "modo_uso": "1 comprimido de 6/6h se febre ou dor."
+      }
+    ]
+  },
+  {
+    "id": "gp-sindrome-gripal-1",
+    "categoria": "Síndrome Gripal",
+    "titulo": "Síndrome gripal — esquema padrão",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Prednisona 20 mg",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Fexofenadina 60 mg (Allegra)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Winter AP (alternativa/associação)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-congestao-nasal-1",
+    "categoria": "Congestão Nasal",
+    "titulo": "Congestão nasal (IVAS) — esquema oral",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Winter AP",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Acetilcisteína 600 mg (granulado)",
+        "modo_uso": "Diluir 1 sachê em 1 copo de água, tomar à noite, por 5 dias."
+      }
+    ],
+    "observacoes": "Lavagem nasal com 10 mL de soro fisiológico em cada narina, 3 vezes ao dia. Ingerir no mínimo 2 litros de água por dia."
+  },
+  {
+    "id": "gp-tosse-alergica-1",
+    "categoria": "Tosse Alérgica (Seca)",
+    "titulo": "Tosse alérgica — esquema oral",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Xarope anti-histamínico/anti-inflamatório (Koid D)",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Acetilcisteína xarope",
+        "modo_uso": "10 mL de 8/8h por 7 dias."
+      },
+      {
+        "medicamento": "Vitamina C + Zinco",
+        "modo_uso": "1 comprimido, 1x ao dia, por 10 dias."
+      },
+      {
+        "medicamento": "Winter AP (se congestão nasal associada)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Dexclorfeniramina + Betametasona (Cimegripe, associação 5+6)",
+        "modo_uso": "1 comprimido de 8/8h por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-congestao-nasal-2",
+    "categoria": "Congestão Nasal",
+    "titulo": "Congestão nasal — esquema com corticoide oral e nasal",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Prednisona 20 mg",
+        "modo_uso": "1 comprimido de 24/24h por 5 dias."
+      },
+      {
+        "medicamento": "Levodropropizina (Percof)",
+        "modo_uso": "10 mL de 8/8h por 10 dias."
+      },
+      {
+        "medicamento": "Fluticasona spray nasal (Avamys)",
+        "modo_uso": "2 jatos em cada narina, 1x ao dia, se congestão nasal."
+      },
+      {
+        "medicamento": "Budesonida 50 mcg spray nasal",
+        "modo_uso": "2 jatos em cada narina por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-gea-3",
+    "categoria": "GEA (Gastroenterite Aguda)",
+    "titulo": "GEA — esquema oral objetivo",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Saccharomyces boulardii 100 mg (Floratil)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Escopolamina composta (Buscopan Composto)",
+        "modo_uso": "1 comprimido de 8/8h se dor abdominal."
+      },
+      {
+        "medicamento": "Ondansetrona 4 mg",
+        "modo_uso": "1 comprimido de 8/8h se náusea ou vômito."
+      },
+      {
+        "medicamento": "Soro de reidratação oral",
+        "modo_uso": "Diluir 2 sachês em 2 litros de água e beber ao longo do dia."
+      },
+      {
+        "medicamento": "Nitazoxanida 500 mg",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-itu-2",
+    "categoria": "ITU",
+    "titulo": "ITU (infecção urinária) — esquema sintomático + antibiótico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Fenazopiridina 200 mg (Pyridium)",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Escopolamina composta (Buscopan Composto)",
+        "modo_uso": "1 comprimido de 6/6h se dor."
+      },
+      {
+        "medicamento": "Fosfomicina trometamol 5,631 g (Monuril)",
+        "modo_uso": "1 sachê à noite, dose única."
+      },
+      {
+        "medicamento": "Nitrofurantoína macrocristais 100 mg (Macrodantina) (alternativa)",
+        "modo_uso": "1 comprimido de 6/6h por 7 dias (06h, 12h, 18h, 00h)."
+      }
+    ]
+  },
+  {
+    "id": "gp-pielonefrite-1",
+    "categoria": "Pielonefrite",
+    "titulo": "Pielonefrite — esquema oral ambulatorial",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima 800/160 mg (Bactrim)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Fenazopiridina 200 mg (Pyridium)",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Escopolamina composta (Buscopan Composto)",
+        "modo_uso": "1 comprimido de 6/6h se dor abdominal."
+      }
+    ]
+  },
+  {
+    "id": "gp-nefrolitiase-2",
+    "categoria": "Nefrolitíase",
+    "titulo": "Nefrolitíase em homens com hiperplasia prostática associada",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Tansulosina 0,4 mg",
+        "modo_uso": "1 comprimido, 1x ao dia, por 30 dias."
+      },
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima 800/160 mg (Bactrim)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Dipirona 1 g",
+        "modo_uso": "1 comprimido de 6/6h se dor."
+      }
+    ]
+  },
+  {
+    "id": "gp-dor-muscular-2",
+    "categoria": "Dor Muscular",
+    "titulo": "Dor muscular — esquema alternativo",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Ciclobenzaprina 10 mg",
+        "modo_uso": "1 comprimido à noite por 5 dias."
+      },
+      {
+        "medicamento": "Naproxeno 250 mg",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "1 comprimido de 6/6h se dor."
+      }
+    ]
+  },
+  {
+    "id": "gp-hemorroida-2",
+    "categoria": "Hemorroida",
+    "titulo": "Hemorroida — esquema com flebotônico e laxante",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Diosmina 450 mg + Hesperidina 50 mg",
+        "modo_uso": "2 comprimidos de 8/8h por 4 dias; depois 1 comprimido de 6/6h por 3 dias; em seguida, 1 comprimido de 12/12h por 30 dias ou período a definir pelo especialista."
+      },
+      {
+        "medicamento": "Lactulose 667 mg/dL",
+        "modo_uso": "15 mL de 8/8h."
+      },
+      {
+        "medicamento": "Pomada tópica (Ultraproct LCD)",
+        "modo_uso": "Aplicar fina camada na região afetada, 2 a 3 vezes ao dia, por no máximo 2 semanas."
+      }
+    ],
+    "observacoes": "Marcar consulta com proctologista."
+  },
+  {
+    "id": "gp-infec-bac-cutanea-1",
+    "categoria": "Infecção Bacteriana Cutânea",
+    "titulo": "Infecção bacteriana cutânea — esquema oral e tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Cefalexina 500 mg",
+        "modo_uso": "1 comprimido de 6/6h por 7 dias."
+      },
+      {
+        "medicamento": "Ibuprofeno 600 mg",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "1 comprimido de 6/6h se febre ou dor."
+      },
+      {
+        "medicamento": "Mupirocina 2% pomada",
+        "modo_uso": "Aplicar na área afetada, 2 vezes ao dia, até melhora clínica."
+      }
+    ]
+  },
+  {
+    "id": "gp-dor-osteomuscular-1",
+    "categoria": "Dor Osteomuscular",
+    "titulo": "Dor osteomuscular — esquema oral",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Nimesulida 200 mg (Arflex Retard)",
+        "modo_uso": "1 comprimido, 1x ao dia, após a refeição, por 5 dias."
+      },
+      {
+        "medicamento": "Ciclobenzaprina 10 mg (Muscular)",
+        "modo_uso": "1 comprimido, 1x ao dia, à noite, por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 1 g (Novalgina)",
+        "modo_uso": "1 comprimido de 6/6h se dor."
+      }
+    ]
+  },
+  {
+    "id": "gp-asma-2",
+    "categoria": "Asma",
+    "titulo": "Asma — esquema inalatório simples",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Beclometasona spray (Clenil)",
+        "modo_uso": "2 puffs de 12/12h (corticoide inalatório)."
+      },
+      {
+        "medicamento": "Fexofenadina (Allegra)",
+        "modo_uso": "Conforme apresentação, se componente alérgico associado."
+      }
+    ]
+  },
+  {
+    "id": "gp-colirio-1",
+    "categoria": "Colírio",
+    "titulo": "Colírios de uso comum",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Tobramicina 3 mg/mL colírio",
+        "modo_uso": "1 gota de 4/4h durante 7 dias."
+      },
+      {
+        "medicamento": "Hialuronato de sódio 0,15% colírio",
+        "modo_uso": "Aplicar 1 gota de 3/3h durante 7 dias."
+      },
+      {
+        "medicamento": "Olopatadina 2,22 mg/mL colírio",
+        "modo_uso": "1 gota à noite, até melhora do quadro."
+      }
+    ]
+  },
+  {
+    "id": "gp-urgencia-hipertensiva-1",
+    "categoria": "Urgência Hipertensiva",
+    "titulo": "Urgência hipertensiva — opções orais",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Captopril 25-50 mg",
+        "modo_uso": "Conforme avaliação médica — via oral."
+      },
+      {
+        "medicamento": "Clonidina 0,1 mg",
+        "modo_uso": "Via oral."
+      },
+      {
+        "medicamento": "Hidralazina 25-50 mg",
+        "modo_uso": "Via oral."
+      }
+    ],
+    "observacoes": "Reavaliar a pressão arterial em 30-60 minutos após a dose. Diferenciar de emergência hipertensiva (com lesão aguda de órgão-alvo), que exige tratamento parenteral monitorizado."
+  },
+  {
+    "id": "gp-prurido-1",
+    "categoria": "Prurido",
+    "titulo": "Prurido — anti-histamínico sedativo",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dexclorfeniramina 2 mg",
+        "modo_uso": "1 comprimido a cada 6 horas, até resolução do sintoma."
+      }
+    ]
+  },
+  {
+    "id": "gp-fratura-1",
+    "categoria": "Fratura",
+    "titulo": "Fratura — analgesia escalonada",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Paracetamol + Codeína 500/30 mg (Paco)",
+        "modo_uso": "1 comprimido de 6/6h se dor."
+      },
+      {
+        "medicamento": "Tramadol 100 mg",
+        "modo_uso": "1 comprimido de 6/6h, se dor refratária ao Paco."
+      }
+    ]
+  },
+  {
+    "id": "gp-quadro-viral-1",
+    "categoria": "Quadro Viral Agudo",
+    "titulo": "Quadro viral agudo/virose/resfriado comum",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Ibuprofeno 300 mg",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Vitamina C efervescente",
+        "modo_uso": "1 comprimido, 1x ao dia, por 5 dias."
+      },
+      {
+        "medicamento": "Loratadina 10 mg",
+        "modo_uso": "1 comprimido, à noite, por 5 dias."
+      },
+      {
+        "medicamento": "Xarope Guaco",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Acetilcisteína 600 mg",
+        "modo_uso": "Dissolver 1 sachê em 100 mL de água e tomar de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Ciclobenzaprina 10 mg",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      }
+    ],
+    "observacoes": "Lavagem nasal com soro fisiológico, até 6 vezes ao dia."
+  },
+  {
+    "id": "gp-amigdalite-bacteriana-1",
+    "categoria": "Amigdalite",
+    "titulo": "Amigdalite bacteriana",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Azitromicina 500 mg",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Cetoprofeno 150/100 mg",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Hexamidina + Tetracaína spray",
+        "modo_uso": "Aplicar 3 jatos na garganta até de 4/4h se dor."
+      }
+    ]
+  },
+  {
+    "id": "gp-sinusite-2",
+    "categoria": "Sinusite",
+    "titulo": "Sinusite — antibiótico + corticoide + lavagem nasal",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Azitromicina 500 mg",
+        "modo_uso": "1 comprimido ao dia por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Prednisona 20 mg",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Lavagem nasal com soro fisiológico 0,9%",
+        "modo_uso": "Aplicar 5 mL em cada narina, até 6 vezes ao dia."
+      },
+      {
+        "medicamento": "Budesonida 50 mcg spray (alternativa)",
+        "modo_uso": "2 jatos em cada narina, até 3 vezes ao dia."
+      },
+      {
+        "medicamento": "Koid D (alternativa)",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-asma-exacerbada-1",
+    "categoria": "Asma/Bronquite",
+    "titulo": "Asma exacerbada — emergência e manutenção ambulatorial",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Hidrocortisona 500 mg (na emergência)",
+        "modo_uso": "IV."
+      },
+      {
+        "medicamento": "Salbutamol (na emergência)",
+        "modo_uso": "6-10 puffs de 20/20 minutos, por 3 ciclos."
+      },
+      {
+        "medicamento": "Ipratrópio (na emergência)",
+        "modo_uso": "20-40 gotas de 20/20 minutos, por 3 ciclos."
+      },
+      {
+        "medicamento": "Sulfato de magnésio 10% (se SatO2 <90%)",
+        "modo_uso": "Diluir 10-20 mL em 100 mL de SF 0,9% e correr em 10-20 minutos."
+      },
+      {
+        "medicamento": "Prednisona 20 mg (ambulatorial)",
+        "modo_uso": "1 comprimido ao dia por 5 dias (dose máxima 60 mg/dia)."
+      },
+      {
+        "medicamento": "Salbutamol 100 mcg (ambulatorial)",
+        "modo_uso": "5 puffs de 8/8h por 3 dias."
+      },
+      {
+        "medicamento": "Ipratrópio nebulização (Atrovent, ambulatorial)",
+        "modo_uso": "40 gotas + 5 mL de soro fisiológico, de 12/12h, por 3 dias."
+      },
+      {
+        "medicamento": "Beclometasona 200 mcg spray (Clenil HFA, uso contínuo)",
+        "modo_uso": "2 puffs de 12/12h, uso contínuo."
+      },
+      {
+        "medicamento": "Ipratrópio nebulização (crise)",
+        "modo_uso": "15 gotas + 5 mL de soro fisiológico 0,9%, de 6/6h, se crise."
+      }
+    ]
+  },
+  {
+    "id": "gp-piodermite-dermatite-1",
+    "categoria": "Piodermite",
+    "titulo": "Piodermite/dermatite — tratamento tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Hidrocortisona pomada 10 mg/mL",
+        "modo_uso": "Aplicar finas camadas na lesão, 3 vezes ao dia, por 4 dias ou até o desaparecimento."
+      },
+      {
+        "medicamento": "Trok N pomada",
+        "modo_uso": "Aplicar finas camadas na lesão, 2 vezes ao dia, por 7 dias."
+      },
+      {
+        "medicamento": "Rifamicina spray",
+        "modo_uso": "Lavar a lesão com soro fisiológico ou água corrente e aplicar o spray, 4 vezes ao dia."
+      }
+    ]
+  },
+  {
+    "id": "gp-itu-3",
+    "categoria": "ITU",
+    "titulo": "ITU — esquema completo com alternativas",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Escopolamina 10 mg",
+        "modo_uso": "1 comprimido de 8/8h se desconforto abdominal."
+      },
+      {
+        "medicamento": "Nitrofurantoína 100 mg",
+        "modo_uso": "1 comprimido de 6/6h por 7 dias."
+      },
+      {
+        "medicamento": "Ciprofloxacino 500 mg",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Fenazopiridina 200 mg (Pyridium)",
+        "modo_uso": "1 comprimido de 8/8h, se dor ao urinar, por 3 dias (após as refeições)."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h se febre e dor."
+      },
+      {
+        "medicamento": "Levofloxacino 750 mg (alternativa)",
+        "modo_uso": "1 comprimido por dia por 7 dias."
+      },
+      {
+        "medicamento": "Levofloxacino 500 mg (alternativa)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg (alternativa)",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima 800/160 mg (alternativa)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima 400/80 mg (alternativa)",
+        "modo_uso": "2 comprimidos de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Fosfomicina trometamol 3 g (alternativa)",
+        "modo_uso": "Diluir 1 sachê em 100 mL de água, dose única."
+      },
+      {
+        "medicamento": "Axetilcefuroxima 500 mg (alternativa)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-ferida-perfuro-cortante-1",
+    "categoria": "Ferida Perfuro-cortante",
+    "titulo": "Ferida perfuro-cortante — analgesia e cuidados locais",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h se dor."
+      },
+      {
+        "medicamento": "Neomicina tópico",
+        "modo_uso": "Passar sob a lesão de 12/12h até o desaparecimento."
+      }
+    ],
+    "observacoes": "Vacina antitetânica na unidade de saúde mais próxima (levar cartão de vacinação). Lavar durante o banho com sabonete neutro. Realizar curativo diariamente com micropore. Retirar os pontos com 7 dias na unidade de saúde ou no hospital."
+  },
+  {
+    "id": "gp-enxaqueca-2",
+    "categoria": "Enxaqueca",
+    "titulo": "Enxaqueca — crise ambulatorial e resgate na emergência",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Sumatriptana 50 mg",
+        "modo_uso": "1 comprimido se crise; se não houver melhora, repetir com no mínimo 2 horas de intervalo."
+      },
+      {
+        "medicamento": "Cefalium 750 mg",
+        "modo_uso": "1 comprimido ao primeiro sinal de cefaleia; se não houver melhora em 30 minutos, repetir."
+      },
+      {
+        "medicamento": "Dipirona 500 mg/mL (emergência)",
+        "modo_uso": "2 ampolas EV."
+      },
+      {
+        "medicamento": "Cetoprofeno 100 mg / Tenoxicam (Tilatil) (emergência)",
+        "modo_uso": "1 ampola EV."
+      },
+      {
+        "medicamento": "Metoclopramida (emergência)",
+        "modo_uso": "1 ampola EV."
+      },
+      {
+        "medicamento": "Dexametasona (emergência)",
+        "modo_uso": "1 ampola EV, adicionada em SF 0,9% 500 mL, correr em 20 minutos."
+      },
+      {
+        "medicamento": "Sumatriptano 100 mg VO (se refratário)",
+        "modo_uso": "Dose adicional se refratário ao esquema anterior."
+      },
+      {
+        "medicamento": "Clorpromazina 5 mg/mL (se refratário)",
+        "modo_uso": "0,1 mg/kg até 25 mg/dia — 2 mL EV."
+      },
+      {
+        "medicamento": "Morfina 3-5 mg (último caso, opioide)",
+        "modo_uso": "Se refratário aos esquemas anteriores."
+      }
+    ]
+  },
+  {
+    "id": "gp-gastrite-drge-1",
+    "categoria": "Gastrite/DRGE",
+    "titulo": "Gastrite/DRGE/refluxo/pirose/azia",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Omeprazol 20 mg",
+        "modo_uso": "1 comprimido pela manhã, por 30 dias."
+      },
+      {
+        "medicamento": "Bromoprida 10 mg",
+        "modo_uso": "1 comprimido de 8/8h se enjoo ou vômito."
+      },
+      {
+        "medicamento": "Hidróxido de alumínio",
+        "modo_uso": "2 comprimidos, 1 hora após as refeições (café, almoço e jantar) e ao deitar."
+      }
+    ],
+    "observacoes": "Cabeceira elevada ao deitar. Não se alimentar antes de dormir. Evitar refeições volumosas e gordurosas. Cessar tabagismo. Evitar café, chocolate, alimentos cítricos e condimentados, bebidas alcoólicas, refrigerantes."
+  },
+  {
+    "id": "gp-conjuntivite-2",
+    "categoria": "Conjuntivite Bacteriana",
+    "titulo": "Conjuntivite bacteriana/viral/alérgica",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Tobramicina colírio (Tobrex)",
+        "modo_uso": "1 gota de 8/8h no olho afetado, por 7 dias."
+      },
+      {
+        "medicamento": "Loratadina 10 mg",
+        "modo_uso": "1 comprimido à noite por 5 dias."
+      },
+      {
+        "medicamento": "Colírio lubrificante (Laxime)",
+        "modo_uso": "2 gotas no olho acometido de 6/6h por 5 dias."
+      },
+      {
+        "medicamento": "Colírio lubrificante (Lacribell)",
+        "modo_uso": "2 gotas no olho acometido de 6/6h por 5 dias."
+      },
+      {
+        "medicamento": "Soro fisiológico 0,9%",
+        "modo_uso": "Lavar ambos os olhos, de 1/1h, com soro gelado."
+      },
+      {
+        "medicamento": "Olopatadina (Patanol S, alternativa alérgica)",
+        "modo_uso": "1 gota em cada olho de 12/12h enquanto durar a alergia ocular."
+      }
+    ],
+    "observacoes": "Usar soro gelado em compressas para alívio da dor e irritação ocular. Lavar as mãos frequentemente, separar roupas e toalhas, evitar contato próximo (é bastante contagiosa). Encaminhar ao oftalmologista se sangramento, secreção purulenta, dor intensa, alterações visuais ou infecção de pele associada."
+  },
+  {
+    "id": "gp-afta-1",
+    "categoria": "Aftas",
+    "titulo": "Afta — tratamento tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Triancinolona orabase",
+        "modo_uso": "Aplicar com cotonete, por 7 dias."
+      },
+      {
+        "medicamento": "Nistatina solução oral",
+        "modo_uso": "1 medida, via oral, de 8/8h, por 5 dias."
+      },
+      {
+        "medicamento": "Betametasona + Gentamicina + Clioquinol (Quadriderm) pomada",
+        "modo_uso": "Aplicar com cotonete, 3 vezes ao dia, na lesão, por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-sua-1",
+    "categoria": "Sangramento Uterino Anormal",
+    "titulo": "Sangramento uterino anormal (SUA) — antifibrinolítico",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Ácido tranexâmico 500 mg",
+        "modo_uso": "1 comprimido de 8/8h por 4 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-gastroenterite-4",
+    "categoria": "GEA (Gastroenterite Aguda)",
+    "titulo": "Gastroenterite/diarreia/GEA/GECA — esquema completo",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Soro de reidratação oral",
+        "modo_uso": "Diluir 1 envelope em 1 litro de água e tomar durante o dia. Repetir por 4 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Bromoprida 10 mg",
+        "modo_uso": "1 comprimido de 8/8h se náusea ou vômito."
+      },
+      {
+        "medicamento": "Saccharomyces boulardii 200 mg",
+        "modo_uso": "1 sachê ou comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Loperamida 10 mg",
+        "modo_uso": "1 comprimido se diarreia (no máximo 2 comprimidos por dia)."
+      },
+      {
+        "medicamento": "Simeticona 40 mg",
+        "modo_uso": "1 comprimido, 3 vezes ao dia, antes de cada refeição, por 5 dias."
+      },
+      {
+        "medicamento": "Zinco (Zinco Pro)",
+        "modo_uso": "1 comprimido, 1x ao dia, por 5 dias (acima de 65 anos)."
+      },
+      {
+        "medicamento": "Ivermectina 6 mg",
+        "modo_uso": "2 comprimidos dose única, repetir após 1 semana."
+      },
+      {
+        "medicamento": "Ondansetrona sublingual (alternativa)",
+        "modo_uso": "1 comprimido de 8/8h, sublingual."
+      },
+      {
+        "medicamento": "Saccharomyces boulardii 200 mg (Repoflor, Florent — alternativa)",
+        "modo_uso": "1 comprimido de 12/12h durante 3 dias."
+      },
+      {
+        "medicamento": "Ciprofloxacino 500 mg (diarreia bacteriana)",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Nitazoxanida 500 mg (diarreia bacteriana)",
+        "modo_uso": "1 comprimido de 12/12h por 3 dias."
+      },
+      {
+        "medicamento": "Racecadotrila (Avide Tiorfan, uso interno)",
+        "modo_uso": "1 comprimido 3 vezes ao dia, até parar a diarreia."
+      }
+    ],
+    "observacoes": "Aumentar a ingestão de líquidos."
+  },
+  {
+    "id": "gp-otite-2",
+    "categoria": "Otite",
+    "titulo": "Otite — esquema oral e otológico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg",
+        "modo_uso": "1 comprimido de 12/12h por 10 dias."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato 500/125 mg",
+        "modo_uso": "1 comprimido de 8/8h por 10 dias."
+      },
+      {
+        "medicamento": "Levofloxacino 750 mg",
+        "modo_uso": "1 comprimido ao dia por 7 dias."
+      },
+      {
+        "medicamento": "Otosporin (gotas otológicas)",
+        "modo_uso": "Pingar 2 gotas no ouvido dolorido, de 6/6h, por 5 dias."
+      },
+      {
+        "medicamento": "Ciprofloxacino + Hidrocortisona (gotas otológicas)",
+        "modo_uso": "Pingar 3 gotas no ouvido acometido, de 12/12h, por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-lombalgia-1",
+    "categoria": "Lombalgia",
+    "titulo": "Lombalgia — analgesia e relaxante muscular",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Mioflex",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Miosan Caf",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Paracetamol + Codeína 500/30 mg",
+        "modo_uso": "1 comprimido de 6/6h se dor."
+      },
+      {
+        "medicamento": "Ciclobenzaprina 10 mg (Muscular)",
+        "modo_uso": "1 comprimido, 1x ao dia, à noite, por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-uretrite-1",
+    "categoria": "Uretrite",
+    "titulo": "Uretrite — abordagem para gonococo/clamídia",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Azitromicina 500 mg + Ceftriaxona 500 mg",
+        "modo_uso": "Azitromicina: 2 comprimidos, dose única. Ceftriaxona: 1 ampola, intramuscular, aplicar em unidade de saúde."
+      },
+      {
+        "medicamento": "Doxiciclina 100 mg (alternativa)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-candidiase-vaginal-2",
+    "categoria": "Candidíase Vaginal",
+    "titulo": "Candidíase vaginal — oral e tópico",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Fluconazol 150 mg",
+        "modo_uso": "1 comprimido, via oral, dose única."
+      },
+      {
+        "medicamento": "Miconazol pomada vaginal",
+        "modo_uso": "Aplicar ao se deitar, por 7 dias."
+      },
+      {
+        "medicamento": "Candicort (se prurido intenso)",
+        "modo_uso": "Usar até 3 vezes ao dia."
+      }
+    ]
+  },
+  {
+    "id": "gp-dengue-1",
+    "categoria": "Dengue",
+    "titulo": "Dengue — sintomáticos e hidratação",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos até de 4/4h se dor ou febre."
+      },
+      {
+        "medicamento": "Soro de reidratação oral",
+        "modo_uso": "Diluir 1 envelope em 1 litro de água e tomar durante o dia, por 4 dias."
+      },
+      {
+        "medicamento": "Ciclobenzaprina 5 mg",
+        "modo_uso": "1 comprimido de 12/12h por até 3 dias."
+      }
+    ],
+    "observacoes": "Evitar AAS e anti-inflamatórios. Sinais de alarme: dor abdominal intensa, vômitos persistentes, sangramentos, letargia."
+  },
+  {
+    "id": "gp-erisipela-celulite-1",
+    "categoria": "Erisipela/Celulite",
+    "titulo": "Erisipela/celulite — esquema oral",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Cefalexina 500 mg",
+        "modo_uso": "1 comprimido de 6/6h por 7 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Ibuprofeno 300 mg",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Clindamicina 300 mg (alternativa/associação)",
+        "modo_uso": "2 comprimidos de 6/6h por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-queimadura-2",
+    "categoria": "Queimadura",
+    "titulo": "Queimadura — cuidado tópico e analgesia",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Sulfadiazina de prata 1%",
+        "modo_uso": "Aplicar 2 vezes ao dia na área afetada e ocluir com gaze estéril. Lavar antes com água corrente ou soro fisiológico."
+      },
+      {
+        "medicamento": "Ibuprofeno 300 mg",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-alergia-1",
+    "categoria": "Alergia",
+    "titulo": "Alergia — anti-histamínico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Hidroxizina 25 mg (Hixizine)",
+        "modo_uso": "1 comprimido de 6/6h por 5 dias."
+      },
+      {
+        "medicamento": "Histamin",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-covid-1",
+    "categoria": "Covid-19",
+    "titulo": "Covid-19 — sintomáticos e antibiótico se sobreinfecção",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Bromoprida 10 mg",
+        "modo_uso": "1 comprimido de 8/8h se náusea ou vômito."
+      },
+      {
+        "medicamento": "Acetilcisteína 600 mg",
+        "modo_uso": "Dissolver 1 sachê em 100 mL de água e tomar de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Azitromicina 500 mg (se sobreinfecção bacteriana)",
+        "modo_uso": "1 comprimido, 1x ao dia, por 5 dias."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato 500/125 mg (Clavulin, se sobreinfecção bacteriana)",
+        "modo_uso": "1 comprimido de 8/8h por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-calmantes-1",
+    "categoria": "Calmante",
+    "titulo": "Calmantes fitoterápicos",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Passiflora 600 mg (Seakalm)",
+        "modo_uso": "1 comprimido à noite por 20 dias."
+      },
+      {
+        "medicamento": "Passiflora 300 mg (Sintocalmy)",
+        "modo_uso": "1 comprimido de 12/12h por 15 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-colica-renal-1",
+    "categoria": "Cólica Renal",
+    "titulo": "Cólica renal — emergência e ambulatorial",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Cetoprofeno (na emergência)",
+        "modo_uso": "1 ampola EV."
+      },
+      {
+        "medicamento": "Escopolamina composta (na emergência)",
+        "modo_uso": "EV."
+      },
+      {
+        "medicamento": "Tramadol SC (na emergência)",
+        "modo_uso": "Via subcutânea."
+      },
+      {
+        "medicamento": "Morfina (na emergência, casos refratários)",
+        "modo_uso": "Conforme protocolo institucional."
+      },
+      {
+        "medicamento": "Tansulosina 0,4 mg (ambulatorial)",
+        "modo_uso": "1 comprimido, 1x ao dia, por 15-30 dias, para dilatar o ureter e ajudar a expelir o cálculo."
+      },
+      {
+        "medicamento": "Escopolamina composta (ambulatorial)",
+        "modo_uso": "1 comprimido de 8/8h se dor."
+      },
+      {
+        "medicamento": "Ibuprofeno 300 mg (ambulatorial)",
+        "modo_uso": "2 comprimidos de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Diclofenaco 50 mg (ambulatorial)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg (ambulatorial)",
+        "modo_uso": "2 comprimidos de 6/6h se dor."
+      }
+    ]
+  },
+  {
+    "id": "gp-mialgia-lombalgia-1",
+    "categoria": "Mialgia/Lombalgia/Cervicalgia",
+    "titulo": "Mialgia/lombalgia/cervicalgia — esquema combinado",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Mioflex A",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Miosan Caf",
+        "modo_uso": "1 comprimido antes de dormir por 5 dias."
+      },
+      {
+        "medicamento": "Ibuprofeno 300 mg",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Complexo B (Citoneurin 5000 mcg)",
+        "modo_uso": "1 comprimido de 12/12h."
+      },
+      {
+        "medicamento": "Meloxicam 15 mg",
+        "modo_uso": "1 comprimido, 1x ao dia, por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-escabiose-2",
+    "categoria": "Escabiose",
+    "titulo": "Escabiose — esquema oral e tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Ivermectina 6 mg",
+        "modo_uso": "2 comprimidos dose única, repetir após 1 semana."
+      },
+      {
+        "medicamento": "Permetrina loção 5%",
+        "modo_uso": "Aplicar do pescoço para baixo, remover pela manhã, por 7 dias."
+      },
+      {
+        "medicamento": "Hidroxizina 25 mg (Hixizine)",
+        "modo_uso": "2 comprimidos de 6/6h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-furunculo-2",
+    "categoria": "Furúnculo",
+    "titulo": "Furúnculo — emergência e ambulatorial",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Penicilina G benzatina (Benzetacil, na emergência)",
+        "modo_uso": "Conforme protocolo institucional."
+      },
+      {
+        "medicamento": "Cefalexina 500 mg (ambulatorial)",
+        "modo_uso": "1 comprimido de 6/6h por 7 dias."
+      },
+      {
+        "medicamento": "Clindamicina 300 mg (ambulatorial)",
+        "modo_uso": "2 comprimidos de 8/8h por 7 dias."
+      },
+      {
+        "medicamento": "Ibuprofeno 300 mg (ambulatorial)",
+        "modo_uso": "2 comprimidos de 8/8h por 5 dias."
+      }
+    ],
+    "observacoes": "Colocar compressa de água morna nas lesões para drenagem."
+  },
+  {
+    "id": "gp-patologias-fungicas-1",
+    "categoria": "Patologias Fúngicas",
+    "titulo": "Patologias fúngicas — oral e tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Fluconazol 150 mg",
+        "modo_uso": "1 comprimido, repetir a dose 1 semana depois."
+      },
+      {
+        "medicamento": "Betametasona + Gentamicina + Clioquinol (Quadriderm) pomada",
+        "modo_uso": "Aplicar 2 vezes ao dia na lesão, por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-gases-1",
+    "categoria": "Gases",
+    "titulo": "Flatulência/distensão abdominal",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Simeticona gel 125 mg (Luftal)",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Ibuprofeno + Simeticona (Buscofem)",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-herpes-zoster-2",
+    "categoria": "Herpes Zoster",
+    "titulo": "Herpes zoster — oral e tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Aciclovir 400 mg",
+        "modo_uso": "2 comprimidos, 3 vezes ao dia, por 7-10 dias."
+      },
+      {
+        "medicamento": "Diclofenaco (Deocil, analgesia)",
+        "modo_uso": "1 comprimido de 4/4h se dor intensa."
+      },
+      {
+        "medicamento": "Aciclovir pomada",
+        "modo_uso": "Aplicar nas lesões, 3 vezes ao dia, por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-hordeolo-1",
+    "categoria": "Hordéolo/Terçol",
+    "titulo": "Hordéolo/terçol — tópico ocular",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Tobramicina pomada 0,3%",
+        "modo_uso": "Aplicar de 8/8h por 7 dias."
+      },
+      {
+        "medicamento": "Ciprofloxacino + Dexametasona (Cilodex, se secreção)",
+        "modo_uso": "Aplicar fina camada na pálpebra, 3 vezes ao dia, por 7 dias."
+      },
+      {
+        "medicamento": "Cefalexina 500 mg (se secreção)",
+        "modo_uso": "1 comprimido de 6/6h por 7 dias."
+      }
+    ],
+    "observacoes": "Aplicar compressa morna no local."
+  },
+  {
+    "id": "gp-labirintite-1",
+    "categoria": "Labirintite",
+    "titulo": "Labirintite — antivertiginoso e corticoide",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Flunarizina 24 mg (Labirin)",
+        "modo_uso": "1 comprimido de 12/12h por 15 dias."
+      },
+      {
+        "medicamento": "Dimenidrinato (Dramin B6)",
+        "modo_uso": "1 comprimido de 8/8h se enjoo ou tontura."
+      },
+      {
+        "medicamento": "Prednisona 20 mg",
+        "modo_uso": "1 comprimido, 1x ao dia, por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-pneumonia-1",
+    "categoria": "Pneumonia",
+    "titulo": "Pneumonia adquirida na comunidade — esquema ambulatorial",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato 500/125 mg",
+        "modo_uso": "1 comprimido de 8/8h por 7 dias."
+      },
+      {
+        "medicamento": "Prednisolona 20 mg (Predsim)",
+        "modo_uso": "1 comprimido de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h ou até de 4/4h se dor ou febre."
+      },
+      {
+        "medicamento": "Xarope Guaco",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Acetilcisteína 600 mg",
+        "modo_uso": "Dissolver 1 sachê em 100 mL de água e tomar de 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Koid D (alternativa expectorante)",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Levodropropizina (Percof, alternativa antitussígeno)",
+        "modo_uso": "10 mL de 8/8h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-rouquidao-1",
+    "categoria": "Rouquidão",
+    "titulo": "Rouquidão — tópico e anti-inflamatório",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Hexomedine spray",
+        "modo_uso": "Aplicar 3 jatos de 4/4h."
+      },
+      {
+        "medicamento": "Ibuprofeno 300 mg",
+        "modo_uso": "2 comprimidos de 8/8h por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-hemorroida-3",
+    "categoria": "Hemorroida",
+    "titulo": "Hemorroida — flebotônico oral e pomada",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Diosmina 500 mg (Daflon)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Óleo mineral",
+        "modo_uso": "2 colheres de sopa, 2 vezes ao dia, por 7 dias."
+      },
+      {
+        "medicamento": "Pomada tópica (Proctyl)",
+        "modo_uso": "Aplicar 2 vezes ao dia, por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-sifilis-2",
+    "categoria": "Sífilis",
+    "titulo": "Sífilis latente tardia/duração ignorada",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Penicilina G benzatina 1.200.000 UI (Benzetacil)",
+        "modo_uso": "Aplicar 2.400.000 UI, IM, 1 vez por semana, por 3 semanas seguidas."
+      }
+    ]
+  },
+  {
+    "id": "gp-hematoma-2",
+    "categoria": "Hematoma",
+    "titulo": "Hematoma — gel tópico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Heparinoide gel (Hirudoid)",
+        "modo_uso": "Aplicar fina camada, 3 vezes ao dia, por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-pigarro-2",
+    "categoria": "Pigarro",
+    "titulo": "Pigarro — spray de própolis",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Própolis spray (Bromelin)",
+        "modo_uso": "Aplicar 2 jatos na garganta, de 6/6h, por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-paralisia-bell-1",
+    "categoria": "Paralisia de Bell",
+    "titulo": "Paralisia de Bell — corticoide e proteção ocular",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Prednisona 5 mg",
+        "modo_uso": "1 comprimido ao dia por 5 dias e depois meio comprimido por mais 3 dias. Tomar pela manhã."
+      },
+      {
+        "medicamento": "Lágrima artificial (Lacrima Plus)",
+        "modo_uso": "Aplicar 2 gotas no olho afetado sempre que necessário, até melhora dos sintomas."
+      }
+    ],
+    "observacoes": "Procurar clínica da família para acompanhamento clínico."
+  },
+  {
+    "id": "gp-diarreia-1",
+    "categoria": "Diarreia",
+    "titulo": "Diarreia — não infecciosa vs. infecciosa",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Saccharomyces boulardii 200 mg (Floratil, não infecciosa)",
+        "modo_uso": "1 comprimido de 12/12h por no máximo 3 dias."
+      },
+      {
+        "medicamento": "Enterogermina Plus (não infecciosa, se Floratil não resolver)",
+        "modo_uso": "1 flaconete por dia, por no máximo 3 dias."
+      },
+      {
+        "medicamento": "Escopolamina composta (Buscopan Composto, não infecciosa)",
+        "modo_uso": "1 comprimido de 8/8h por 3 dias."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato 875/125 mg (infecciosa)",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      }
+    ],
+    "observacoes": "Diarreia não infecciosa: pouco tempo, sem sangue, sem pus e sem febre."
+  },
+  {
+    "id": "gp-tosse-alergica-2",
+    "categoria": "Tosse Alérgica (Seca)",
+    "titulo": "Tosse alérgica seca — xarope e corticoide curto",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dropropizina 30 mg (xarope)",
+        "modo_uso": "10 mL até 4 vezes ao dia."
+      },
+      {
+        "medicamento": "Prednisona 20 mg",
+        "modo_uso": "1 comprimido, 1x ao dia, por 5 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-dor-ciatico-1",
+    "categoria": "Dor no Nervo Ciático",
+    "titulo": "Dor ciática — anticonvulsivante para dor neuropática",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Pregabalina 75 mg",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-tricomoniase-1",
+    "categoria": "Tricomoníase",
+    "titulo": "Tricomoníase (corrimento amarelado fétido)",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Metronidazol 500 mg",
+        "modo_uso": "1 comprimido de 8/8h por 10 dias."
+      },
+      {
+        "medicamento": "Escopolamina 10 mg",
+        "modo_uso": "1 comprimido de 8/8h se dor abdominal."
+      },
+      {
+        "medicamento": "Ibuprofeno 300 mg",
+        "modo_uso": "2 comprimidos de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Metronidazol pomada (tópico)",
+        "modo_uso": "Passar 1 vez ao dia por 10 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-contratura-muscular-1",
+    "categoria": "Contratura Muscular",
+    "titulo": "Contratura muscular — analgesia e relaxante",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "1 comprimido de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Ciclobenzaprina 5 mg",
+        "modo_uso": "1 comprimido de 8/8h por até 3 dias."
+      },
+      {
+        "medicamento": "Diclofenaco sódico 150 mg",
+        "modo_uso": "1 comprimido de 8/8h por até 3 dias (antes das refeições)."
+      }
+    ]
+  },
+  {
+    "id": "gp-constipacao-2",
+    "categoria": "Constipação",
+    "titulo": "Constipação — laxantes conforme intensidade",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Óleo mineral",
+        "modo_uso": "1 colher de sopa de 8/8h enquanto durar a constipação."
+      },
+      {
+        "medicamento": "Bisacodil 5 mg",
+        "modo_uso": "1-2 comprimidos em caso de constipação duradoura (mais de 5 dias) com distensão e dor abdominal."
+      }
+    ]
+  },
+  {
+    "id": "gp-soluco-1",
+    "categoria": "Soluço",
+    "titulo": "Soluço persistente",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Baclofeno 10 mg",
+        "modo_uso": "1 comprimido de 8/8h por até 3 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-ressecamento-vaginal-1",
+    "categoria": "Ressecamento Vaginal",
+    "titulo": "Ressecamento vaginal — estriol tópico",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Estriol 1 mg/g creme vaginal (Stele)",
+        "modo_uso": "Aplicar 1 dose na vagina à noite, 2 vezes por semana."
+      }
+    ]
+  },
+  {
+    "id": "gp-fimose-1",
+    "categoria": "Fimose",
+    "titulo": "Fimose — corticoide tópico e manipulação",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Betametasona 0,1% ou Dexametasona pomada (Postec)",
+        "modo_uso": "Aplicar 1 vez ao dia e manipular."
+      }
+    ]
+  },
+  {
+    "id": "gp-balanopostite-1",
+    "categoria": "Balanopostite",
+    "titulo": "Balanopostite/inflamação de glande e pênis",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Cefalexina 500 mg",
+        "modo_uso": "1 comprimido de 6/6h por 7 dias."
+      },
+      {
+        "medicamento": "Neomicina pomada (tópico)",
+        "modo_uso": "Aplicar 2 vezes ao dia."
+      }
+    ]
+  },
+  {
+    "id": "gp-queimadura-2grau-1",
+    "categoria": "Queimadura",
+    "titulo": "Queimadura de 2º grau",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Sulfadiazina de prata 1%",
+        "modo_uso": "Aplicar 1 vez ao dia."
+      },
+      {
+        "medicamento": "Paracetamol + Codeína ou Nimesulida (para casa)",
+        "modo_uso": "Conforme prescrição médica, após alta."
+      },
+      {
+        "medicamento": "Sulfadiazina de prata 1% (curativo)",
+        "modo_uso": "Curativo de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Cetoprofeno (Profenid) + Dipirona (na emergência)",
+        "modo_uso": "1 ampola de cada, dose máxima, em SF 0,9% 100 mL."
+      }
+    ]
+  },
+  {
+    "id": "gp-agua-viva-1",
+    "categoria": "Água-Viva (Celenterados)",
+    "titulo": "Picada de água-viva — primeiros cuidados",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Ácido acético (compressa)",
+        "modo_uso": "Compressa por 30 minutos."
+      },
+      {
+        "medicamento": "Bromoprida 10 mg (Plamet, se náusea/vômito)",
+        "modo_uso": "1 comprimido de 8/8h ou 12/12h por 5 dias."
+      },
+      {
+        "medicamento": "Metoclopramida 10 mg (Plasil, alternativa)",
+        "modo_uso": "1 comprimido de 8/8h."
+      },
+      {
+        "medicamento": "Ondansetrona 4 mg (alternativa)",
+        "modo_uso": "1 comprimido de 8/8h."
+      },
+      {
+        "medicamento": "Dimenidrinato 100 mg (Dramin, alternativa)",
+        "modo_uso": "1 comprimido a cada 4-6 horas."
+      },
+      {
+        "medicamento": "Dimenidrinato + Piridoxina 50/10 mg (Dramin B6, alternativa)",
+        "modo_uso": "1 a 2 comprimidos de 4/4h (máximo 400 mg)."
+      },
+      {
+        "medicamento": "Paracetamol 500 mg (se dor)",
+        "modo_uso": "1 comprimido de 6/6h em caso de febre ou dor."
+      },
+      {
+        "medicamento": "Dipirona 500 mg (se dor)",
+        "modo_uso": "1 comprimido de 6/6h em caso de febre ou dor."
+      }
+    ],
+    "observacoes": "Se houver resto de tentáculos: passar talco ou pasta de bicarbonato de sódio e remover com pinça. Não lavar com água doce, não usar álcool ou urina, não esfregar a região do ferimento; lavar com água do mar, aplicar vinagre e compressas de água morna."
+  },
+  {
+    "id": "gp-picada-cobra-botropico",
+    "categoria": "Picada de Cobra (Botrópico)",
+    "titulo": "Acidente botrópico — soroterapia",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Prometazina (Fenergan)",
+        "modo_uso": "Conforme prescrição médica, EV/IM."
+      },
+      {
+        "medicamento": "Hidrocortisona 500 mg",
+        "modo_uso": "Conforme protocolo institucional."
+      },
+      {
+        "medicamento": "Soro antibotrópico",
+        "modo_uso": "2 ampolas, diluir cada ampola em 500 mL de SF 0,9%. Casos leves: 2-4 ampolas. Casos graves: 12 ampolas."
+      }
+    ],
+    "observacoes": "Exames: hemograma, função renal, coagulograma, CPK/CKMB. Risco de rabdomiólise — internar e observar nas próximas 6 horas. Repetir exames em 12h e 24h, fazendo mais 2 doses de soro se o coagulograma estiver alterado."
+  },
+  {
+    "id": "gp-bartholinite-1",
+    "categoria": "Bartholinite",
+    "titulo": "Bartholinite — esquema oral",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima 400/80 mg (Bactrim)",
+        "modo_uso": "2 comprimidos de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Ibuprofeno 600 mg",
+        "modo_uso": "1 comprimido de 8/8h por 5 dias."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h se febre ou dor."
+      }
+    ]
+  },
+  {
+    "id": "gp-artrite-gotosa-1",
+    "categoria": "Artrite Gotosa",
+    "titulo": "Crise de gota — analgesia e colchicina",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "2 comprimidos de 6/6h se dor ou febre."
+      },
+      {
+        "medicamento": "Tenoxicam 20 mg",
+        "modo_uso": "1 comprimido de 12/12h por 7 dias."
+      },
+      {
+        "medicamento": "Colchicina 0,5 mg",
+        "modo_uso": "2 comprimidos de uma vez e mais 1 comprimido 1 hora depois; a partir daí, 1 comprimido de 12/12h até melhora."
+      }
+    ]
+  },
+  {
+    "id": "gp-esporotricose-1",
+    "categoria": "Esporotricose",
+    "titulo": "Esporotricose — antifúngico oral",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Itraconazol 100 mg",
+        "modo_uso": "2 comprimidos, 1x ao dia, até 4 semanas após a resolução das lesões."
+      }
+    ],
+    "observacoes": "Calor local na região das lesões, diariamente."
+  },
+  {
+    "id": "gp-cetoacidose-diabetica-1",
+    "categoria": "Cetoacidose Diabética",
+    "titulo": "Cetoacidose diabética — hidratação, potássio e insulina",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Soro fisiológico 0,9% ou Ringer lactato",
+        "modo_uso": "30-45 mL/kg, correr rápido."
+      },
+      {
+        "medicamento": "Cloreto de potássio 10% (se K < 3,3)",
+        "modo_uso": "Diluir 2 ampolas em 500 mL de SF 0,9% e correr em 2-3 horas, em acesso periférico."
+      },
+      {
+        "medicamento": "Insulina regular 10 UI (se K > 3,3)",
+        "modo_uso": "SC ou em dripping."
+      },
+      {
+        "medicamento": "Bicarbonato de sódio 100 mL (se pH < 6,9)",
+        "modo_uso": "EV, sem diluição."
+      }
+    ],
+    "observacoes": "Solicitar exames laboratoriais, HGT, potássio e gasometria arterial antes de iniciar a reposição."
+  },
+  {
+    "id": "gp-ehh-1",
+    "categoria": "Estado Hiperglicêmico Hiperosmolar",
+    "titulo": "Estado hiperglicêmico hiperosmolar (EHH)",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Soro fisiológico 0,9% ou Ringer lactato",
+        "modo_uso": "30-45 mL/kg, correr rápido."
+      },
+      {
+        "medicamento": "Insulina regular 10 UI",
+        "modo_uso": "SC ou em dripping."
+      }
+    ],
+    "observacoes": "Solicitar exames laboratoriais, HGT, potássio e gasometria arterial."
+  },
+  {
+    "id": "gp-ave-isquemico-1",
+    "categoria": "AVE Isquêmico",
+    "titulo": "AVC isquêmico — trombólise e prevenção secundária",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Alteplase 0,9 mg/kg (se dentro da janela de 4,5h)",
+        "modo_uso": "10% da dose em bolus EV, restante correr em 1 hora."
+      },
+      {
+        "medicamento": "Soro fisiológico 0,9% 500 mL (fora da janela)",
+        "modo_uso": "EV de 24/24h, correr lento, se paciente aceitar volume."
+      },
+      {
+        "medicamento": "AAS 200 mg (fora da janela)",
+        "modo_uso": "VO de 24/24h, 200 mg nas primeiras 48h, depois manter 100 mg/dia."
+      },
+      {
+        "medicamento": "Enoxaparina 1 mg/kg (fora da janela)",
+        "modo_uso": "EV de 24/24h."
+      },
+      {
+        "medicamento": "Sinvastatina 20 mg (fora da janela)",
+        "modo_uso": "VO de 24/24h, à noite."
+      },
+      {
+        "medicamento": "AAS 100 mg/dia (prevenção secundária no longo prazo)",
+        "modo_uso": "1 comprimido ao dia — escolher um único antiplaquetário."
+      },
+      {
+        "medicamento": "Clopidogrel 75 mg/dia (alternativa de prevenção secundária)",
+        "modo_uso": "1 comprimido ao dia."
+      },
+      {
+        "medicamento": "AAS 25 mg + Dipiridamol ER 200 mg (alternativa de prevenção secundária)",
+        "modo_uso": "2 vezes ao dia."
+      }
+    ],
+    "observacoes": "Exames: hemograma, ureia, creatinina, sódio e potássio; TC de crânio sem contraste. Janela para trombólise: 4,5 horas. Controle pressórico: ≤220x120 mmHg em qualquer situação, ou ≤185x110 mmHg se indicado trombolítico (manter <180x110 mmHg nas primeiras 24h pós-trombólise)."
+  },
+  {
+    "id": "gp-ave-hemorragico-1",
+    "categoria": "AVE Hemorrágico",
+    "titulo": "AVC hemorrágico — controle pressórico e convulsão",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Fenitoína 250 mg/5 mL",
+        "modo_uso": "Dose de ataque (10-15 mg/kg EV): 14-20 mL + 250 mL de SF 0,9%, EV em bolus, correr em 30 minutos. Manutenção: 2 mL (100 mg) + 100 mL de SF 0,9%, EV de 8/8h, correr em 20 minutos."
+      },
+      {
+        "medicamento": "Nitroprussiato de sódio 50 mg/2 mL",
+        "modo_uso": "2 mL + SG 5% 248 mL, EV em BIC, 3-5 mL/h."
+      }
+    ],
+    "observacoes": "MOVE com via aérea avançada. Exames: hemograma, ureia, creatinina, sódio e potássio; TC de crânio sem contraste. Manter cabeceira elevada."
+  },
+  {
+    "id": "gp-anafilaxia-2",
+    "categoria": "Anafilaxia",
+    "titulo": "Anafilaxia — adrenalina e adjuvantes",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Soro fisiológico 0,9%",
+        "modo_uso": "1-2 litros, EV, correr rápido (30-60 minutos), com dois acessos venosos calibrosos."
+      },
+      {
+        "medicamento": "Adrenalina 1:1000 IM (1ª opção no choque anafilático, adultos)",
+        "modo_uso": "Fazer 0,3 mL IM na face lateral da coxa."
+      },
+      {
+        "medicamento": "Adrenalina 1:1000 IM (crianças)",
+        "modo_uso": "0,01 mL/kg/dose IM — máximo 0,3 mL."
+      },
+      {
+        "medicamento": "Adrenalina 1:1000 IV (casos graves/PCR, adultos)",
+        "modo_uso": "Diluir 1 ampola em 9 mL de SF 0,9% e fazer 0,1 a 0,3 mL em 5 minutos."
+      },
+      {
+        "medicamento": "Adrenalina 1:1000 IV (casos graves/PCR, crianças)",
+        "modo_uso": "Mesma diluição, 0,01 mL/kg/dose, máximo 0,3 mL."
+      },
+      {
+        "medicamento": "Metilprednisolona 125 mg/2 mL (quadros leves)",
+        "modo_uso": "1 ampola + SF 0,9% 48 mL, dividido em até de 6/6h, correr em 20 minutos."
+      },
+      {
+        "medicamento": "Hidrocortisona 100 mg/frasco (alternativa, quadros leves)",
+        "modo_uso": "2-3 frascos + SF 0,9% 10 mL; administrar 200-300 mg EV de 6/6h."
+      },
+      {
+        "medicamento": "Difenidramina 50 mg/mL (alternativa, quadros leves)",
+        "modo_uso": "25-50 mg + SF 0,9% 100 mL, EV de 4/4h (dose máxima 400 mg/dia)."
+      },
+      {
+        "medicamento": "Cimetidina 300 mg (alternativa, quadros leves)",
+        "modo_uso": "EV de 6/6h."
+      }
+    ],
+    "observacoes": "A adrenalina IM é sempre a primeira medida e não deve ser adiada em favor de anti-histamínico ou corticoide. Observação hospitalar prolongada é recomendada pelo risco de reação bifásica."
+  },
+  {
+    "id": "gp-pancreatite-1",
+    "categoria": "Pancreatite Aguda",
+    "titulo": "Pancreatite aguda — dieta, hidratação e antibiótico",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Soro fisiológico 0,9% ou Ringer lactato",
+        "modo_uso": "3 mL/kg/hora, EV, por 8-12 horas, com ajuste posterior conforme resposta clínica. Se hipotensão/taquicardia: 20-30 mL/kg EV em 30 minutos."
+      },
+      {
+        "medicamento": "Meropeném 1 g",
+        "modo_uso": "EV de 8/8h, por 3-4 semanas."
+      },
+      {
+        "medicamento": "Dipirona 1 g",
+        "modo_uso": "VO até de 4/4h; ou 1-2 g EV até de 4/4h."
+      },
+      {
+        "medicamento": "Cetoprofeno 100 mg",
+        "modo_uso": "EV de 12/12h."
+      },
+      {
+        "medicamento": "Metoclopramida 10 mg",
+        "modo_uso": "EV de 8/8h."
+      },
+      {
+        "medicamento": "Bromoprida 10 mg",
+        "modo_uso": "EV de 8/8h."
+      },
+      {
+        "medicamento": "Ondansetrona 4-8 mg",
+        "modo_uso": "EV de 8/8h."
+      },
+      {
+        "medicamento": "Enoxaparina 40 mg",
+        "modo_uso": "SC, 1x ao dia."
+      }
+    ],
+    "observacoes": "Dieta zero nas primeiras 48 horas, ajustando para dieta oral, enteral e/ou parenteral conforme evolução."
+  },
+  {
+    "id": "gp-crise-hipertensiva-2",
+    "categoria": "Crise Hipertensiva",
+    "titulo": "Emergência hipertensiva — vasodilatadores parenterais",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Nitroglicerina 50 mg/5 mL (Tridil)",
+        "modo_uso": "Diluir 1 ampola em 245 mL de SG 5% e infundir em BIC a 10 mL/h, titulando a dose."
+      },
+      {
+        "medicamento": "Nitroprussiato de sódio 50 mg/2 mL (alternativa)",
+        "modo_uso": "2 mL + SG 5% 248 mL, EV em BIC, 3-5 mL/h."
+      },
+      {
+        "medicamento": "Metoprolol 5 mg/mL (dissecção de aorta)",
+        "modo_uso": "1/2 a 1 ampola, EV, diluído, em 2 minutos; repetir até alcançar meta pressórica (máximo 20-25 mg)."
+      }
+    ],
+    "observacoes": "Só medicar se PA ≥ 160x100 mmHg. Na emergência hipertensiva, reduzir a PA em 20-25% na 1ª hora, e o restante entre 2-6 horas. Em dissecção de aorta, associar sempre betabloqueador + nitroprussiato, com meta de FC < 60 e PAS < 120 mmHg."
+  },
+  {
+    "id": "gp-crise-convulsiva-1",
+    "categoria": "Crise Convulsiva",
+    "titulo": "Crise convulsiva na emergência",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Diazepam 10 mg",
+        "modo_uso": "EV, podendo repetir se necessário."
+      },
+      {
+        "medicamento": "Midazolam (alternativa)",
+        "modo_uso": "1 a 3 mL, IM."
+      },
+      {
+        "medicamento": "Fenitoína 250 mg/5 mL (2ª linha)",
+        "modo_uso": "Dose de ataque (10-15 mg/kg EV): 14-20 mL + 250 mL de SF 0,9%, EV em bolus, correr em 30 minutos. Manutenção: 2 mL (100 mg) + 100 mL de SF 0,9%, EV de 8/8h, correr em 20 minutos."
+      },
+      {
+        "medicamento": "Fenobarbital 100 mg/mL ou 200 mg/mL (3ª linha)",
+        "modo_uso": "10-20 mg/kg, a 100 mg/min: com a apresentação de 100 mg/mL, 1 mL a cada 10 kg + SF 0,9% 100 mL, correr em 20 min; com 200 mg/mL, 0,5 mL a cada 10 kg + SF 0,9% 100 mL, correr em 20 min."
+      }
+    ],
+    "observacoes": "Garantir oxigenação, aspirar secreções e proteger face e membros durante a crise."
+  },
+  {
+    "id": "gp-ic-descompensada-1",
+    "categoria": "IC Descompensada",
+    "titulo": "Insuficiência cardíaca descompensada — por perfil hemodinâmico",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Furosemida 20 mg/2 mL (perfis B e C)",
+        "modo_uso": "2 ampolas, EV."
+      },
+      {
+        "medicamento": "Captopril 25-50 mg (perfil B)",
+        "modo_uso": "VO, até de 8/8h."
+      },
+      {
+        "medicamento": "Nitroglicerina 50 mg/5 mL (alternativa, perfil B)",
+        "modo_uso": "Diluir 1 ampola em 245 mL de SG 5% e infundir em BIC a 10 mL/h, titulando a dose."
+      },
+      {
+        "medicamento": "Dobutamina 250 mg/20 mL (perfil C)",
+        "modo_uso": "Diluir 1 ampola (20 mL) em 230 mL de SF 0,9%, 2-42 mL/h, EV em BIC."
+      },
+      {
+        "medicamento": "Soro fisiológico 0,9% 250 mL (perfil L)",
+        "modo_uso": "EV, reavaliando necessidade de manejo igual ao perfil B ou C."
+      }
+    ],
+    "observacoes": "MOVE + avaliação de Glasgow (IOT se <8) + ECG + cabeceira elevada a 45º. Perfil B: quente e úmido. Perfil C: frio e úmido. Perfil L: frio e seco. Manter betabloqueador se já em uso; não iniciar durante a descompensação."
+  },
+  {
+    "id": "gp-edema-agudo-pulmao-1",
+    "categoria": "Edema Agudo de Pulmão",
+    "titulo": "Edema agudo de pulmão — diurético, vasodilatador e suporte hemodinâmico",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Furosemida 20 mg/2 mL",
+        "modo_uso": "2 ampolas, EV, correr lento, podendo repetir a dose."
+      },
+      {
+        "medicamento": "Nitroglicerina 50 mg/5 mL (vasodilatador EV)",
+        "modo_uso": "Diluir 1 ampola em 245 mL de SG 5% e infundir em BIC a 10 mL/h, titulando a dose."
+      },
+      {
+        "medicamento": "Nitroprussiato de sódio 50 mg/2 mL (alternativa vasodilatador EV)",
+        "modo_uso": "2 mL + SG 5% 248 mL, EV em BIC, 3-5 mL/h."
+      },
+      {
+        "medicamento": "Captopril 25-50 mg (vasodilatador VO, casos menos graves)",
+        "modo_uso": "VO, até de 8/8h."
+      },
+      {
+        "medicamento": "Losartana 25-50 mg (alternativa VO)",
+        "modo_uso": "VO, até de 12/12h."
+      },
+      {
+        "medicamento": "Hidralazina 25-50 mg (alternativa VO)",
+        "modo_uso": "VO, de 6/6h a 8/8h."
+      },
+      {
+        "medicamento": "Dobutamina 250 mg/20 mL (se choque/disfunção sistólica)",
+        "modo_uso": "Diluir 1 ampola (20 mL) em 230 mL de SF 0,9%, 2-42 mL/h, EV em BIC."
+      },
+      {
+        "medicamento": "Dopamina 50 mg/10 mL (alternativa se choque)",
+        "modo_uso": "50 mL + SF 0,9% 200 mL, 4-100 mL/h, EV em BIC."
+      },
+      {
+        "medicamento": "Dipirona (analgesia)",
+        "modo_uso": "1 ampola, EV."
+      },
+      {
+        "medicamento": "Omeprazol 20-40 mg",
+        "modo_uso": "VO/EV, de 24/24h, pela manhã."
+      },
+      {
+        "medicamento": "Bromoprida 10 mg/2 mL",
+        "modo_uso": "EV de 8/8h."
+      },
+      {
+        "medicamento": "Noradrenalina (se paciente hipotenso, PAS < 90)",
+        "modo_uso": "4 ampolas + 250 mL de soro glicosado, correr a 10 mL/h."
+      },
+      {
+        "medicamento": "Dobutamina (se paciente hipotenso, associada à noradrenalina)",
+        "modo_uso": "1 ampola + 250 mL de soro glicosado, correr a 10 mL/h."
+      }
+    ],
+    "observacoes": "Oxigênio conforme necessidade; considerar intubação orotraqueal se secretivo, rebaixamento do nível de consciência ou vômitos. Se paciente hipotenso, titular noradrenalina até retirada, entrando com vasodilatador e diurético."
+  },
+  {
+    "id": "gp-arritmias-bradiarritmias-1",
+    "categoria": "Arritmias — Bradiarritmias",
+    "titulo": "Bradiarritmias (BAV1, BAV2 Mobitz I/II e BAVT)",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Atropina 1 mg (BAV2/BAVT)",
+        "modo_uso": "EV, podendo repetir de 3 a 5 minutos (dose máxima de 3 mg)."
+      },
+      {
+        "medicamento": "Epinefrina em BIC (se não houver reversão com atropina)",
+        "modo_uso": "Manter até a chegada do marca-passo transvenoso/transcutâneo e definição do tratamento pelo especialista."
+      }
+    ],
+    "observacoes": "BAV1: conduta conservadora, referenciar para o médico do posto. BAV2/BAVT: monitorização contínua, oximetria e O2 se necessário. Causas de bradiarritmia a investigar: hipotireoidismo, hipotermia, hipercalemia, uso de antiarrítmicos."
+  },
+  {
+    "id": "gp-arritmias-tsv-1",
+    "categoria": "Arritmias — Taquicardia Supraventricular",
+    "titulo": "Taquicardia supraventricular (TSV)",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Adenosina 6 mg/2 mL (dose inicial)",
+        "modo_uso": "1 ampola em bolus rápido, seguida de flush de 20 mL de SF 0,9%."
+      },
+      {
+        "medicamento": "Adenosina 6 mg/2 mL (se ausência de resposta)",
+        "modo_uso": "2 ampolas em bolus rápido, seguidas de flush de 20 mL de SF 0,9%."
+      },
+      {
+        "medicamento": "Metoprolol 5 mg/5 mL (controle de frequência, se não reverter)",
+        "modo_uso": "1 ampola, EV, em 5 minutos; pode repetir a cada 5 minutos, até dose máxima de 15 mg."
+      }
+    ],
+    "observacoes": "Paciente estável: tentar manobra vagal modificada antes das medicações; informar o paciente sobre a sensação da adenosina. Cuidados com metoprolol: fazer metade da dose em transplantados ou com acesso venoso central; evitar em asmáticos descompensados. Paciente instável (hipotensão, alteração aguda de consciência, choque, dor torácica isquêmica, IC): cardioversão elétrica sincronizada entre 50-120 J."
+  },
+  {
+    "id": "gp-arritmias-tv-1",
+    "categoria": "Arritmias — Taquicardia Ventricular",
+    "titulo": "Taquicardia ventricular (TV)",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Amiodarona 150 mg/3 mL (dose de ataque)",
+        "modo_uso": "Diluir 1 ampola em 100 mL de SF 0,9% e correr em 10 minutos, podendo repetir se necessário."
+      },
+      {
+        "medicamento": "Amiodarona (dose de manutenção, se não reverter)",
+        "modo_uso": "1 mg/min, em 6 horas; ou impregnação com 6 ampolas (900 mg) diluídas em 230 mL de SG 5%, em BIC, a 10 mL/h."
+      }
+    ],
+    "observacoes": "Paciente instável (hipotensão, alteração aguda de consciência, choque, dor torácica isquêmica, IC, sudorese): cardioversão elétrica sincronizada entre 50-120 J."
+  },
+  {
+    "id": "gp-arritmias-fa-fc-1",
+    "categoria": "Arritmias — Controle de FC em FA/Flutter",
+    "titulo": "Controle da frequência cardíaca em fibrilação atrial ou flutter",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Metoprolol 5 mg/5 mL",
+        "modo_uso": "1 ampola, EV, em 5 minutos; pode repetir a cada 5 minutos, até dose máxima de 15 mg."
+      },
+      {
+        "medicamento": "Deslanosídeo 0,4 mg/2 mL (opção)",
+        "modo_uso": "1 ampola, EV, lentamente."
+      }
+    ]
+  },
+  {
+    "id": "gp-sedacao-cardioversao-1",
+    "categoria": "Sedação para Cardioversão Elétrica",
+    "titulo": "Sedação para cardioversão elétrica em paciente instável",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Etomidato 2 mg/mL",
+        "modo_uso": "Pré-medicar com 2 mL de fentanil; após 2 minutos, infundir 20 mg (10 mL) em bolus. Não causa broncoespasmo nem depressão cardiovascular importante."
+      },
+      {
+        "medicamento": "Propofol 1% (opção)",
+        "modo_uso": "30-50 mg, IV, em bolus."
+      },
+      {
+        "medicamento": "Midazolam (opção)",
+        "modo_uso": "3-5 mg (1 mL), em bolus; pode repetir até sedação adequada. Indução rápida, efeito prolongado, parcialmente revertido pelo flumazenil."
+      }
+    ],
+    "observacoes": "Indicado quando o paciente está instável hemodinamicamente (dor anginosa, EAP, hipotensão, rebaixamento do nível de consciência, síncope)."
+  },
+  {
+    "id": "gp-sca-1",
+    "categoria": "Síndrome Coronariana Aguda",
+    "titulo": "SCA — trombólise, antiagregação e anticoagulação",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Alteplase (com supra de ST, ΔT < 6h, peso ≥ 65 kg)",
+        "modo_uso": "15 mg em bolus EV (1-2 min), seguido de 50 mg em infusão EV por 30 minutos e 35 mg em infusão EV pelos 60 minutos seguintes (dose máxima total de 100 mg)."
+      },
+      {
+        "medicamento": "Alteplase (com supra de ST, ΔT < 6h, peso < 65 kg)",
+        "modo_uso": "15 mg em bolus EV (1-2 min), seguido de infusão de 0,75 mg/kg (máx. 50 mg) em 30 minutos e 0,5 mg/kg (máx. 35 mg) nos 60 minutos seguintes (dose máxima total de 100 mg)."
+      },
+      {
+        "medicamento": "Alteplase (com supra de ST, ΔT 6-12h, peso ≥ 65 kg)",
+        "modo_uso": "10 mg em bolus EV (1-2 min), seguido de 50 mg EV em 60 minutos e depois 40 mg em infusão por 2 horas (dose máxima total de 100 mg)."
+      },
+      {
+        "medicamento": "Alteplase (com supra de ST, ΔT 6-12h, peso < 65 kg)",
+        "modo_uso": "10 mg em bolus EV (1-2 min), seguido de infusão EV de 1,5 mg/kg durante 3 horas (dose máxima total de 100 mg)."
+      },
+      {
+        "medicamento": "AAS 100 mg",
+        "modo_uso": "3 comprimidos como dose de ataque, seguido de 1 comprimido de 24/24h."
+      },
+      {
+        "medicamento": "Clopidogrel 75 mg",
+        "modo_uso": "4 comprimidos, dose única."
+      },
+      {
+        "medicamento": "Atorvastatina 40 mg",
+        "modo_uso": "1 comprimido."
+      },
+      {
+        "medicamento": "Isordil 5 mg (se dor torácica e PA elevada)",
+        "modo_uso": "1 comprimido sublingual."
+      },
+      {
+        "medicamento": "Captopril 50 mg",
+        "modo_uso": "1 comprimido."
+      },
+      {
+        "medicamento": "Enoxaparina 60 mg",
+        "modo_uso": "1 ampola (1 mg/kg) de 12/12h; se idade maior que 75 anos, reduzir para 0,75 mg/kg SC de 12/12h; se clearance de creatinina < 30 mL/min, usar metade da dose (1 mg/kg/dia)."
+      },
+      {
+        "medicamento": "Nitroglicerina 50 mg/5 mL (dor torácica persistente ou sinais congestivos)",
+        "modo_uso": "Diluir 1 ampola em 245 mL de SG 5% e infundir em BIC a 10 mL/h, titulando a dose. Iniciar com dose baixa (ex.: 5 mL/h)."
+      }
+    ],
+    "observacoes": "Exames: eletrocardiograma, troponina, mioglobina, DHL, eletrólitos, hemograma, coagulograma, função renal, glicemia e RX de tórax. Sem supra de ST: AAS 100 mg (3 comprimidos de ataque, depois 1 de 24/24h) + Clopidogrel 75 mg (4 comprimidos dose única) + Enoxaparina na mesma dose. Se uso de sildenafila (Viagra), não usar nitrato nem outro hipotensor."
+  },
+  {
+    "id": "gp-hipercalemia-1",
+    "categoria": "Hipercalemia",
+    "titulo": "Hipercalemia — estabilização de membrana e redução de potássio",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Gluconato de cálcio 10% (se repercussão eletrocardiográfica)",
+        "modo_uso": "1 ampola (10 mL) + SG 5% 100 mL, EV em BIC, infundir em 2-5 minutos; pode repetir mais duas vezes ou até normalização do ECG."
+      },
+      {
+        "medicamento": "Insulina regular 10 UI (solução polarizante)",
+        "modo_uso": "Em 100 mL de SG 50%; ou 10 UI diluídas em 500 mL de SG 10%."
+      },
+      {
+        "medicamento": "Poliestirenosulfonato de cálcio (Sorcal)",
+        "modo_uso": "Diluir 30 g em 100 mL de manitol 10% ou água, VO, até de 4/4h."
+      },
+      {
+        "medicamento": "Furosemida",
+        "modo_uso": "1 ampola, IV."
+      }
+    ],
+    "observacoes": "O gluconato de cálcio não reduz os níveis de potássio — atua estabilizando eletricamente o coração e prevenindo arritmias."
+  },
+  {
+    "id": "gp-hipocalemia-1",
+    "categoria": "Hipocalemia",
+    "titulo": "Hipocalemia — reposição de potássio oral e venosa",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Cloreto de potássio 6% xarope (K > 3,0, reposição oral)",
+        "modo_uso": "10-30 mL de 6/6h."
+      },
+      {
+        "medicamento": "Cloreto de potássio 6 mEq/comprimido (K > 3,0, reposição oral)",
+        "modo_uso": "1 comprimido após as refeições, de 6/6h."
+      },
+      {
+        "medicamento": "Cloreto de potássio 10% (K < 3,0, acesso periférico)",
+        "modo_uso": "30 mL + SF 0,9% 470 mL, EV em BI, correr em 3 horas."
+      },
+      {
+        "medicamento": "Cloreto de potássio 19,1% (K < 3,0, acesso periférico, alternativa)",
+        "modo_uso": "15 mL + SF 0,9% 485 mL, EV em BI, correr em 3 horas."
+      },
+      {
+        "medicamento": "Cloreto de potássio 10% (K < 3,0, acesso central)",
+        "modo_uso": "20 mL + SF 0,9% 230 mL, EV em BI, correr em 2 horas (ou 30 mL + SF 0,9% 470 mL, correr em 2 horas)."
+      },
+      {
+        "medicamento": "Cloreto de potássio 19,1% (K < 3,0, acesso central, alternativa)",
+        "modo_uso": "10 mL + SF 0,9% 240 mL, EV em BI, correr em 2 horas."
+      }
+    ]
+  },
+  {
+    "id": "gp-disturbios-sodio-1",
+    "categoria": "Hiponatremia/Hipernatremia",
+    "titulo": "Distúrbios do sódio — correção venosa",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "NaCl 3% (hiponatremia)",
+        "modo_uso": "Diluir 30 ampolas de NaCl 10% em 700 mL de água bidestilada, ou 5 mL de NaCl 20% em 425 mL de água bidestilada — solução de 500 mL com aproximadamente 255-510 mEq/L, EV em BIC."
+      },
+      {
+        "medicamento": "Água filtrada por sonda enteral (hipernatremia)",
+        "modo_uso": "200 mL de 6/6h."
+      },
+      {
+        "medicamento": "NaCl 0,45% (hipernatremia, opção intravenosa)",
+        "modo_uso": "Diluir 22 mL de NaCl 20% em 1 litro de SG 5%, EV."
+      },
+      {
+        "medicamento": "Soro glicosado 5% (hipernatremia, opção intravenosa)",
+        "modo_uso": "Infundir a 60 mL/h, EV."
+      }
+    ],
+    "observacoes": "Na hiponatremia, calcular a variação esperada do sódio com 1 litro de solução: (513 − sódio do paciente) dividido por (água corporal total + 1); a partir daí, determinar a taxa de infusão em BIC para corrigir no máximo 10 mEq em 24 horas."
+  },
+  {
+    "id": "gp-disturbios-calcio-magnesio-1",
+    "categoria": "Hipercalcemia/Hipocalcemia/Hipomagnesemia",
+    "titulo": "Distúrbios do cálcio e do magnésio",
+    "contexto": "Emergência/UTI",
+    "itens": [
+      {
+        "medicamento": "Hidratação venosa (hipercalcemia)",
+        "modo_uso": "200-300 mL/h, para manter diurese em torno de 100-150 mL/h."
+      },
+      {
+        "medicamento": "Pamidronato 60-90 mg (hipercalcemia)",
+        "modo_uso": "IV, em 4 horas."
+      },
+      {
+        "medicamento": "Gluconato de cálcio 10% (hipocalcemia)",
+        "modo_uso": "Diluir 1 ampola (10 mL) em 50 mL de SF 0,9% ou SG 5% e fazer em 1 hora; ou 5 ampolas (50 mL) em 500 mL de SF 0,9%, correr a 50 mL/h."
+      },
+      {
+        "medicamento": "Sulfato de magnésio 50% (hipomagnesemia)",
+        "modo_uso": "Diluir 4-5 mL (de 1 ampola de 10 mL) em 500 mL de SF 0,9% e correr em 4-5 horas."
+      }
+    ]
+  },
+  {
+    "id": "gp-memoria-1",
+    "categoria": "Memória",
+    "titulo": "Suplementos para memória/cognição",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Ginkgo biloba 40 mg",
+        "modo_uso": "1 comprimido de 8/8h."
+      },
+      {
+        "medicamento": "Ginkgo biloba 80 mg",
+        "modo_uso": "1 comprimido de 12/12h."
+      },
+      {
+        "medicamento": "Geriaton",
+        "modo_uso": "1 comprimido antes de dormir."
+      }
+    ]
+  },
+  {
+    "id": "gp-antiparasitarios-1",
+    "categoria": "Antiparasitários",
+    "titulo": "Antiparasitários por agente etiológico",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Albendazol 400 mg (Zentel) — ancilostoma, ascaris, enterobius, tricocéfalo",
+        "modo_uso": "Tomar ou mastigar 1 comprimido de 400 mg (ou 2 de 200 mg). Repetir em 2 semanas."
+      },
+      {
+        "medicamento": "Albendazol 400 mg/dia — teníase, estrongiloide, larva migrans cutânea (alternativa), giardíase",
+        "modo_uso": "Por 3 dias (ou 5 dias na giardíase). Contraindicação absoluta: gestação."
+      },
+      {
+        "medicamento": "Secnidazol 1 g — giardíase e amebíase",
+        "modo_uso": "2 comprimidos à noite antes de dormir, dose única. Não beber bebida alcoólica. Alternativa para amebíase hepática: 500 mg, 3x ao dia, por 5 a 7 dias. Contraindicação absoluta: gestação."
+      },
+      {
+        "medicamento": "Fluconazol 150 mg + Miconazol/Cetoconazol pomada — tinea",
+        "modo_uso": "Fluconazol: 1 comprimido por semana, por 8 semanas. Miconazol/Cetoconazol pomada: 2x/dia. Cetoconazol shampoo: lavar o couro cabeludo 1x/dia."
+      },
+      {
+        "medicamento": "Terbinafina 1% creme + Terbinafina xarope — tinea (alternativa)",
+        "modo_uso": "Creme: aplicar 2x/dia no local por 60 dias. Xarope (manipulado, 250 mg/10 mL): 3 a 6 mg/kg/dia, após o almoço, 1x/dia, durante 60 dias."
+      },
+      {
+        "medicamento": "Ampicilina 500 mg ou Cefalexina 500 mg — impetigo",
+        "modo_uso": "6/6h, por 7 dias."
+      },
+      {
+        "medicamento": "Mebendazol 100 mg/5 mL + Tiabendazol creme — larva migrans cutânea",
+        "modo_uso": "Mebendazol: 2 vezes ao dia, por 3 dias. Tiabendazol creme: aplicar na lesão 1 vez ao dia, após higiene local."
+      },
+      {
+        "medicamento": "Ivermectina 6 mg — larva migrans cutânea (alternativa)",
+        "modo_uso": "2 comprimidos ao dia, dose única."
+      }
+    ]
+  },
+  {
+    "id": "gp-osteoporose-1",
+    "categoria": "Osteoporose",
+    "titulo": "Osteoporose — reposição de cálcio e antirreabsortivo",
+    "contexto": "Ambulatorial",
+    "itens": [
+      {
+        "medicamento": "Carbonato de cálcio 600 mg + Vitamina D 200 UI",
+        "modo_uso": "1 comprimido à noite, 1x ao dia, por 6 meses."
+      },
+      {
+        "medicamento": "Alendronato de sódio 70 mg",
+        "modo_uso": "1 comprimido, 1 vez por semana, durante 2 anos."
+      },
+      {
+        "medicamento": "Sulfato de glicosamina 1,5 g",
+        "modo_uso": "Dissolver 1 envelope em água e tomar, 1 vez ao dia."
+      },
+      {
+        "medicamento": "Glicosamina + Condroitina (Artrolive)",
+        "modo_uso": "2 comprimidos ao almoço."
+      }
+    ]
+  },
+  {
+    "id": "gp-pediatria-emergencia-1",
+    "categoria": "Pediatria — Doses de Emergência",
+    "titulo": "Pediatria — medicações de resgate no pronto-socorro",
+    "contexto": "Pediatria",
+    "itens": [
+      {
+        "medicamento": "Paracetamol gotas",
+        "modo_uso": "1 gota por kg de peso, via oral."
+      },
+      {
+        "medicamento": "Dipirona (EV)",
+        "modo_uso": "0,03 mL x peso, endovenoso."
+      },
+      {
+        "medicamento": "Metoclopramida (Plasil, EV)",
+        "modo_uso": "0,03 mL x peso, endovenoso."
+      },
+      {
+        "medicamento": "Prometazina (Fenergan)",
+        "modo_uso": "Até 2 anos: 0,03 mL x peso. Maiores de 2 anos: 0,05 mL x peso."
+      },
+      {
+        "medicamento": "Hidrocortisona",
+        "modo_uso": "Até 2 anos: 1/4 de ampola + 18 mL de água destilada, EV. Maiores de 2 anos: 1 ampola + água destilada, EV."
+      }
+    ]
+  },
+  {
+    "id": "gp-pediatria-reidratacao-1",
+    "categoria": "Pediatria — Reidratação",
+    "titulo": "Pediatria — soro de reidratação oral e Plano C",
+    "contexto": "Pediatria",
+    "itens": [
+      {
+        "medicamento": "Soro de reidratação oral (SRO)",
+        "modo_uso": "Quantidade nas primeiras 4 horas: menores de 4 meses ou <6 kg: 200-400 mL; 4-12 meses ou 6-10 kg: 400-900 mL; 12 meses a 2 anos ou 10-12 kg: 700-900 mL; 2 a 5 anos: 900-1400 mL."
+      },
+      {
+        "medicamento": "Ringer lactato ou SF 0,9% (Plano C — desidratação grave)",
+        "modo_uso": "100 mL/kg no total. Menores de 1 ano: 30 mL/kg na 1ª hora (repetir se pulso radial muito débil) + 70 mL/kg em 5 horas. Maiores de 1 ano: 30 mL/kg em 30 minutos + 70 mL/kg em 2h30. Oferecer TRO (5 mL/kg/h) assim que a criança conseguir beber."
+      }
+    ]
+  },
+  {
+    "id": "gp-pediatria-receitas-gotas-1",
+    "categoria": "Pediatria — Receitas Prontas (Gotas)",
+    "titulo": "Pediatria — modelos de receita em gotas por peso",
+    "contexto": "Pediatria",
+    "itens": [
+      {
+        "medicamento": "Paracetamol gotas",
+        "modo_uso": "1 frasco. Dar 1 gota/kg, VO, de 6/6h."
+      },
+      {
+        "medicamento": "Ibuprofeno gotas (Advil)",
+        "modo_uso": "1 frasco. Dar 1 gota/kg, VO, de 8/8h."
+      },
+      {
+        "medicamento": "Dimenidrinato gotas (Dramin)",
+        "modo_uso": "1 frasco. Dar 1 gota/kg, VO, de 6/6h."
+      },
+      {
+        "medicamento": "Escopolamina gotas (Buscopan)",
+        "modo_uso": "1 frasco. Dar 10 gotas, VO, de 8/8h se menor de 6 anos; 10-20 gotas, VO, de 8/8h se maior de 6 anos."
+      },
+      {
+        "medicamento": "Saccharomyces boulardii (Florax)",
+        "modo_uso": "1 caixa. Tomar o conteúdo de 1 flaconete, VO, de 12/12h ou 1x/dia (preferencial), por 5 dias."
+      },
+      {
+        "medicamento": "Solução de reidratação (Pedialyte)",
+        "modo_uso": "1 frasco. Oferecer 50-100 mL para menores de 1 ano e 100-200 mL para maiores de 1 ano."
+      }
+    ]
+  },
+  {
+    "id": "gp-pediatria-analgesicos-1",
+    "categoria": "Pediatria — Analgésicos e Antitérmicos",
+    "titulo": "Pediatria — doses de analgésicos/antitérmicos por peso",
+    "contexto": "Pediatria",
+    "itens": [
+      {
+        "medicamento": "Paracetamol suspensão oral 200 mg/mL",
+        "modo_uso": "1 gota/kg/dose, até de 6/6h."
+      },
+      {
+        "medicamento": "Paracetamol gotas (bebê) 100 mg/mL",
+        "modo_uso": "2 gotas/kg/dose."
+      },
+      {
+        "medicamento": "Dipirona",
+        "modo_uso": "Não usar em menores de 3 meses ou abaixo de 5 kg. Via oral: 10-25 mg/kg/dose (1 gota/kg/dose ou 0,5 mL/kg/dose). EV: 0,03 mL/kg/dose."
+      },
+      {
+        "medicamento": "Ibuprofeno 50 mg/mL (Alivium)",
+        "modo_uso": "Analgésico: 2 gotas/kg/dose (5 mg/kg). Anti-inflamatório: 4 gotas/kg/dose (10 mg/kg/dose), até de 6/6h — dose diária 30-50 mg/kg/dia em 3-4 tomadas."
+      },
+      {
+        "medicamento": "Omeprazol cápsula",
+        "modo_uso": "Menores de 20 kg: 10 mg. Maiores de 20 kg: 20 mg."
+      }
+    ]
+  },
+  {
+    "id": "gp-pediatria-antibioticos-1",
+    "categoria": "Pediatria — Antibióticos por Peso",
+    "titulo": "Pediatria — doses de antibióticos por kg",
+    "contexto": "Pediatria",
+    "itens": [
+      {
+        "medicamento": "Amicacina",
+        "modo_uso": "15-22,5 mg/kg/dia, dividido em 3 doses, IM ou IV (correr em 30 minutos cada dose)."
+      },
+      {
+        "medicamento": "Amoxicilina (suspensão)",
+        "modo_uso": "25-50 mg/kg/dia, em 3 doses (RN e menores de 3 meses: 25-30 mg/kg/dia em 2 doses)."
+      },
+      {
+        "medicamento": "Amoxicilina + Clavulanato (suspensão 125 mg/5 mL)",
+        "modo_uso": "3 meses a 1 ano: 2,5 mL/dose, 3x/dia. 1 a 5 anos: 125 mg/dose (5 mL), 3x/dia. 6 a 12 anos: 500 mg/dose, 3x/dia."
+      },
+      {
+        "medicamento": "Ampicilina",
+        "modo_uso": "VO: menores de 20 kg, 50-100 mg/kg/dia em 4 doses; maiores de 20 kg, 250-500 mg/dose, 4x/dia. EV: 100-200 mg/kg/dia em 4 doses."
+      },
+      {
+        "medicamento": "Azitromicina",
+        "modo_uso": "10 mg/kg/dia (pneumonia atípica: 20 mg/kg/dia), durante 3 dias."
+      },
+      {
+        "medicamento": "Cefalexina",
+        "modo_uso": "25-50 mg/kg/dia, em 4 doses."
+      },
+      {
+        "medicamento": "Ceftriaxona",
+        "modo_uso": "80-100 mg/kg/dia, 1x/dia (2x/dia se meningite)."
+      },
+      {
+        "medicamento": "Cefepime",
+        "modo_uso": "50 mg/kg/dose, 3x/dia, EV (máximo 2 g/dia) — diluir a 40 mg/mL em SF ou SG, correr em 20-30 minutos."
+      },
+      {
+        "medicamento": "Ciprofloxacino",
+        "modo_uso": "VO: 20-30 mg/kg/dia, em 2 doses."
+      },
+      {
+        "medicamento": "Gentamicina",
+        "modo_uso": "EV/IM: 6 a 7,5 mg/kg/dia, em 1 a 3 doses (diluir 2-5 mg/mL em SF e correr em 30 minutos)."
+      },
+      {
+        "medicamento": "Metronidazol",
+        "modo_uso": "Giardíase: 35-50 mg/kg/dia, em 3 doses, por 10 dias. Amebíase: 15-20 mg/kg/dia, de 12/12h. Anaerobicida: 7,5-10 mg/kg/dose, em 2-3 doses."
+      },
+      {
+        "medicamento": "Oxacilina",
+        "modo_uso": "EV: 100-200 mg/kg/dia, em 4 doses (máximo 1 g/dose)."
+      },
+      {
+        "medicamento": "Penicilina G cristalina",
+        "modo_uso": "EV: 100-300 mil UI/kg/dia, em 4-6 doses (máximo 400 mil UI/kg/dia)."
+      },
+      {
+        "medicamento": "Penicilina G benzatina",
+        "modo_uso": "IM, dose única. Menores de 20 kg: 300-600 mil UI. Maiores de 20 kg: 1.200.000-2.400.000 UI."
+      },
+      {
+        "medicamento": "Sulfametoxazol + Trimetoprima (suspensão 400/80 mg)",
+        "modo_uso": "1 mL/kg/dia, em 2 doses."
+      }
+    ]
+  },
+  {
+    "id": "gp-pediatria-anticonvulsivantes-1",
+    "categoria": "Pediatria — Anticonvulsivantes",
+    "titulo": "Pediatria — doses de anticonvulsivantes por peso",
+    "contexto": "Pediatria",
+    "itens": [
+      {
+        "medicamento": "Diazepam (ampola 10 mg/2 mL)",
+        "modo_uso": "EV: 0,06 mL x peso (EV lento)."
+      },
+      {
+        "medicamento": "Carbamazepina (xarope 100 mg/5 mL)",
+        "modo_uso": "Menores de 6 anos: 100 mg/dia em 2 doses. 6-12 anos: 200 mg/dia em 2 doses. Maiores de 12 anos: 400 mg/dia em 2 doses."
+      },
+      {
+        "medicamento": "Fenitoína (ampola 50 mg/mL)",
+        "modo_uso": "Diluir em SF a 1-10 mg/mL (para evitar flebite; fazer flush de SF após a administração). Ataque: neonatos 15-20 mg/kg EV; crianças 15-18 mg/kg EV. Fora de crise: 1º dia 15 mg/kg/dia em 1-2 doses; 2º dia 10 mg/kg/dia em 1-2 doses; 3º dia 5-8 mg/kg/dia em 1-2 doses. Manutenção: neonatos 5 mg/kg/dia em 2 doses; 6-20 kg: 8-10 mg/kg/dia; 21-35 kg: 7-8 mg/kg/dia; 36-60 kg: 5 mg/kg/dia. Infundir em 20-30 minutos."
+      },
+      {
+        "medicamento": "Fenobarbital",
+        "modo_uso": "Anticonvulsivante de escolha para recém-nascidos."
+      }
+    ]
+  },
+  {
+    "id": "gp-pediatria-antifungicos-1",
+    "categoria": "Pediatria — Antifúngicos Sistêmicos",
+    "titulo": "Pediatria — nistatina por faixa etária",
+    "contexto": "Pediatria",
+    "itens": [
+      {
+        "medicamento": "Nistatina (Micostatin) — prematuros",
+        "modo_uso": "100.000 UI, 4x/dia."
+      },
+      {
+        "medicamento": "Nistatina (Micostatin) — lactentes",
+        "modo_uso": "100.000-200.000 UI, 4x/dia."
+      },
+      {
+        "medicamento": "Nistatina (Micostatin) — crianças",
+        "modo_uso": "100.000-600.000 UI, 4x/dia (solução oral 100.000 UI/mL; em lactentes e crianças menores, colocar metade da dose de cada lado da boca)."
+      }
+    ]
+  },
+  {
+    "id": "gp-gineco-candidiase-aguda",
+    "categoria": "Candidíase Vaginal",
+    "titulo": "Candidíase vaginal aguda — esquema completo",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Fluconazol 150 mg",
+        "modo_uso": "3 comprimidos — tomar 1 comprimido a cada 3 dias."
+      },
+      {
+        "medicamento": "Nistatina creme vaginal",
+        "modo_uso": "2 tubos — aplicar na vagina todas as noites, durante 14 dias."
+      },
+      {
+        "medicamento": "Ibuprofeno 400 mg (ou outro AINE)",
+        "modo_uso": "15 comprimidos — tomar 1 comprimido de 8/8h durante 5 dias."
+      },
+      {
+        "medicamento": "Betametasona + Clotrimazol (Candicort) pomada",
+        "modo_uso": "1 tubo — aplicar na vulva, 3 vezes ao dia, por 7 dias."
+      },
+      {
+        "medicamento": "Clotrimazol 1% creme vaginal (alternativa)",
+        "modo_uso": "Conforme apresentação."
+      },
+      {
+        "medicamento": "Anfotericina B + Tetraciclina (alternativa)",
+        "modo_uso": "Conforme apresentação."
+      },
+      {
+        "medicamento": "Nitrato de miconazol 2% (alternativa)",
+        "modo_uso": "Durante 10 dias."
+      }
+    ],
+    "observacoes": "Banho de assento com bicarbonato de sódio ou chá de camomila antes da aplicação do creme vaginal."
+  },
+  {
+    "id": "gp-gineco-vaginose-bacteriana",
+    "categoria": "Vaginose Bacteriana",
+    "titulo": "Vaginose bacteriana — esquema oral e tópico",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Secnidazol 1 g",
+        "modo_uso": "2 comprimidos, dose única, após o almoço."
+      },
+      {
+        "medicamento": "Metronidazol creme vaginal",
+        "modo_uso": "1 tubo — aplicar na vagina à noite, durante 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-gineco-banho-assento",
+    "categoria": "Banho de Assento",
+    "titulo": "Banho de assento — preparo caseiro",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Chá de camomila",
+        "modo_uso": "1 litro de água."
+      },
+      {
+        "medicamento": "Bicarbonato de sódio (alternativa)",
+        "modo_uso": "1 colher de sopa em 1 litro de água morna."
+      }
+    ],
+    "observacoes": "À noite, antes de aplicar o creme vaginal, sentar na bacia e jogar a solução na vulva."
+  },
+  {
+    "id": "gp-gineco-hemorragia-disfuncional",
+    "categoria": "Hemorragia Disfuncional",
+    "titulo": "Sangramento uterino disfuncional — hormonal e sintomáticos",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Estrogênios conjugados 0,625 mg (Premarin)",
+        "modo_uso": "1 comprimido de 8/8h durante 10 dias. Não usar em gestantes."
+      },
+      {
+        "medicamento": "Ibuprofeno 400 mg",
+        "modo_uso": "1 comprimido de 8/8h por 7 dias."
+      },
+      {
+        "medicamento": "Ácido tranexâmico 1 g (Transamin)",
+        "modo_uso": "1 comprimido de 8/8h."
+      }
+    ]
+  },
+  {
+    "id": "gp-gineco-aco-trimestral",
+    "categoria": "Anticoncepcional Trimestral (Injetável)",
+    "titulo": "Acetato de medroxiprogesterona — injetável trimestral",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Acetato de medroxiprogesterona 150 mg",
+        "modo_uso": "1 ampola, IM, nas nádegas, sem massagear, a cada 3 meses. A primeira ampola deve ser aplicada entre o 1º e o 5º dia da menstruação."
+      }
+    ]
+  },
+  {
+    "id": "gp-gineco-aco-mensal",
+    "categoria": "Anticoncepcional Mensal (Injetável)",
+    "titulo": "Anticoncepcional mensal injetável",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Acetato de medroxiprogesterona + Cipionato de estradiol (Cyclofemina, Mesigyna, Perlutan)",
+        "modo_uso": "1 ampola, IM, nas nádegas, de 30 em 30 dias (ou no 8º dia). A primeira ampola deve ser aplicada entre o 1º e o 5º dia da menstruação."
+      }
+    ]
+  },
+  {
+    "id": "gp-gineco-minipilula",
+    "categoria": "Anticoncepcional Minipílula de Progesterona",
+    "titulo": "Minipílula de progesterona — desogestrel",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Desogestrel",
+        "modo_uso": "1 comprimido ao dia, de forma contínua, no mesmo horário, sem pausas entre as cartelas. Iniciar a primeira cartela entre o 1º e o 5º dia da menstruação."
+      }
+    ],
+    "observacoes": "Indicado para lactantes e pacientes com contraindicação ao estrogênio, evitando efeitos colaterais como obesidade, acne e ganho de peso."
+  },
+  {
+    "id": "gp-gineco-aco-combinados",
+    "categoria": "Anticoncepcionais Orais Combinados",
+    "titulo": "Anticoncepcionais orais combinados — cartelas de 21, 24 e 28 dias",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Cartela com 21 comprimidos",
+        "modo_uso": "1 comprimido ao dia, no mesmo horário, durante 21 dias; pausa de 7 dias e reiniciar nova cartela no 8º dia. A primeira cartela deve ser iniciada entre o 1º e o 5º dia da menstruação."
+      },
+      {
+        "medicamento": "Cartela com 24 comprimidos",
+        "modo_uso": "1 comprimido ao dia, no mesmo horário, durante 24 dias; pausa de 4 dias e reiniciar nova cartela no 5º dia."
+      },
+      {
+        "medicamento": "Cartela com 28 comprimidos",
+        "modo_uso": "1 comprimido ao dia, no mesmo horário, durante 28 dias, sem pausa entre as cartelas."
+      }
+    ]
+  },
+  {
+    "id": "gp-gineco-colica-menstrual",
+    "categoria": "Cólica Menstrual",
+    "titulo": "Cólica menstrual — AINE preventivo",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Nimesulida 100 mg",
+        "modo_uso": "1 comprimido de 12/12h, começando 3 dias antes de menstruar. Se em uso de anticoncepcional oral combinado, usar nos dias 19 ou 20 da cartela, por 3 dias."
+      },
+      {
+        "medicamento": "Ibuprofeno 400 mg",
+        "modo_uso": "1 comprimido de 8/8h, começando 3 dias antes de menstruar."
+      }
+    ]
+  },
+  {
+    "id": "gp-gineco-enxaqueca-menstrual",
+    "categoria": "Enxaqueca com Menstruação",
+    "titulo": "Enxaqueca menstrual — profilaxia perimenstrual",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Diclofenaco de sódio 50 mg",
+        "modo_uso": "1 comprimido de 8/8h, começando 3 dias antes de menstruar."
+      },
+      {
+        "medicamento": "Ibuprofeno 400 mg",
+        "modo_uso": "2 comprimidos de 12/12h, começando 3 dias antes de menstruar."
+      },
+      {
+        "medicamento": "Dipirona 500 mg",
+        "modo_uso": "1 comprimido de 6/6h, começando 3 dias antes de menstruar."
+      }
+    ]
+  },
+  {
+    "id": "gp-gineco-trh",
+    "categoria": "Terapia de Reposição Hormonal (TRH)",
+    "titulo": "TRH — opções orais, transdérmicas, vaginais e intramusculares",
+    "contexto": "Ginecologia",
+    "itens": [
+      {
+        "medicamento": "Isoflavona de soja + Passiflora (Ciclofemila/Menopax) 200 mg",
+        "modo_uso": "1 comprimido de 12/12h — alivia fogachos, para quem já faz ou vai iniciar TRH."
+      },
+      {
+        "medicamento": "Complexo de isoflavonas (Androsten)",
+        "modo_uso": "1 cápsula de 12/12h durante 2 meses, pausa de 1 mês e repetir por mais 2 meses — efeito sobre libido, menos virilizante."
+      },
+      {
+        "medicamento": "Isoflavona de soja (Aplause, Soyfemme, Glycinemax 150 mg manipulado)",
+        "modo_uso": "Conforme apresentação, 1 vez ao dia ou de 12/12h."
+      },
+      {
+        "medicamento": "Tibolona 2,5 mg ou 5 mg (com útero, E+P)",
+        "modo_uso": "1 comprimido ao dia — efeito androgênico/estrogênico/progestogênico."
+      },
+      {
+        "medicamento": "Estradiol 1 mg + Norestisterona/Didrogesterona/Gestodeno/Drosperinona (com útero, E+P)",
+        "modo_uso": "1 comprimido ao dia."
+      },
+      {
+        "medicamento": "Estradiol 1 mg (Natifa, Repagen — sem útero, só E)",
+        "modo_uso": "1 comprimido ao dia."
+      },
+      {
+        "medicamento": "Velaparimida (Agreal, sem útero — fogachos em histerectomizadas)",
+        "modo_uso": "20 comprimidos — 1 comprimido ao dia, por 20 dias."
+      },
+      {
+        "medicamento": "Estrogênio conjugado 0,625 mg (Premarin, sem útero)",
+        "modo_uso": "Uso contínuo — 1 comprimido ao dia."
+      },
+      {
+        "medicamento": "Estradiol gel 1 mg (Sandrena, transdérmico)",
+        "modo_uso": "Aplicar na pele (exceto rosto e mamas, preferencialmente parte interna do braço ou da coxa), 1 vez ao dia."
+      },
+      {
+        "medicamento": "Estradiol gel 0,5 mg (Estreva, transdérmico)",
+        "modo_uso": "Aplicar 2 jatos na pele (exceto rosto e mamas), 1 vez ao dia."
+      },
+      {
+        "medicamento": "Estradiol 50 mcg adesivo (Estradot, transdérmico)",
+        "modo_uso": "Aplicar 1 adesivo no glúteo, trocando a cada 7 dias."
+      },
+      {
+        "medicamento": "Estradiol + Norestisterona adesivo (System Conti, transdérmico)",
+        "modo_uso": "Aplicar 1 adesivo sobre pele lisa e seca (abdome, região lombar, quadril, nádega), trocando a cada 3-4 dias."
+      },
+      {
+        "medicamento": "Estriol 1 mg creme vaginal (Stele) ou Premarin gel 0,625 mg (uso vaginal)",
+        "modo_uso": "1 tubo — aplicar na vulva e vagina à noite, 2 a 3 vezes por semana."
+      },
+      {
+        "medicamento": "Estradiol + Testosterona (Estrandon P, intramuscular)",
+        "modo_uso": "Aplicar IM de 30 em 30 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-obst-hiperemese",
+    "categoria": "Hiperêmese na Gestante",
+    "titulo": "Náuseas/vômitos intensos na gestação",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Bromoprida",
+        "modo_uso": "1 caixa — tomar 2 comprimidos pela manhã e 1 à noite."
+      },
+      {
+        "medicamento": "Meclizina (Meclin)",
+        "modo_uso": "1 caixa — tomar 1 comprimido de 8/8h."
+      },
+      {
+        "medicamento": "Ranitidina (alternativa)",
+        "modo_uso": "Conforme apresentação."
+      },
+      {
+        "medicamento": "Metoclopramida (alternativa)",
+        "modo_uso": "Conforme apresentação."
+      },
+      {
+        "medicamento": "Simeticona + associação antiácida (Simeco-Plus, Meloxi-Plus)",
+        "modo_uso": "1 caixa — tomar 1 comprimido após o almoço, associado ao antiemético, se em uso de sulfato ferroso."
+      }
+    ]
+  },
+  {
+    "id": "gp-obst-polivitaminicos",
+    "categoria": "Polivitamínicos na Gestação",
+    "titulo": "Polivitamínicos pré-natais",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Polivitamínico pré-natal (Femme, Materna, Noripurum Fólico, Vitergan, Miravit-Gest, Viferrin)",
+        "modo_uso": "1 comprimido ao dia, sem necessidade de ferro e ácido fólico adicionais."
+      }
+    ]
+  },
+  {
+    "id": "gp-obst-antianemicos",
+    "categoria": "Antianêmicos na Gestação",
+    "titulo": "Reposição de ferro e ácido fólico contínua na gestação",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Sulfato ferroso 300 mg (ou Vi-Ferrin)",
+        "modo_uso": "Uso contínuo — 1 comprimido antes do almoço e 1 antes do jantar, durante toda a gravidez."
+      },
+      {
+        "medicamento": "Ácido fólico 5 mg",
+        "modo_uso": "Uso contínuo — 1 comprimido ao dia."
+      }
+    ]
+  },
+  {
+    "id": "gp-obst-tosse",
+    "categoria": "Tosse na Gestação",
+    "titulo": "Tosse com secreção purulenta (pneumonia) na gestante",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Amoxicilina 500 mg",
+        "modo_uso": "14 comprimidos — 1 comprimido de 12/12h, por 7 dias."
+      },
+      {
+        "medicamento": "Ampicilina 500 mg (alternativa)",
+        "modo_uso": "Conforme apresentação."
+      },
+      {
+        "medicamento": "Penicilina V oral 500 mg (alternativa)",
+        "modo_uso": "Conforme apresentação."
+      },
+      {
+        "medicamento": "Cefalexina 500 mg (alternativa)",
+        "modo_uso": "28 comprimidos — 1 comprimido, 4 vezes ao dia (6/6h), por 7 dias."
+      },
+      {
+        "medicamento": "Ambroxol 10 mL (Mucosolvan)",
+        "modo_uso": "1 frasco — tomar 10 mL de 8/8h, por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-obst-constipacao",
+    "categoria": "Constipação na Gestação",
+    "titulo": "Laxantes seguros na gestação",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Lactulose/Cáscara sagrada (Naturetti, Lactulona, Tamarine)",
+        "modo_uso": "1 caixa — tomar 1 cápsula de 12/12h (aumentar conforme a necessidade)."
+      }
+    ]
+  },
+  {
+    "id": "gp-obst-antiespasmodico",
+    "categoria": "Antiespasmódico na Gestação",
+    "titulo": "Antiespasmódico (também usado para cólica biliar)",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Escopolamina + Paracetamol (Buscopan Plus)",
+        "modo_uso": "1 caixa — tomar 1 comprimido de 8/8h, por 7 dias."
+      },
+      {
+        "medicamento": "Escopolamina + Dipirona (Buscopan Composto)",
+        "modo_uso": "1 caixa — tomar 1 comprimido de 8/8h, por 7 dias (aumentar se houver necessidade)."
+      }
+    ]
+  },
+  {
+    "id": "gp-obst-ameaca-abortamento",
+    "categoria": "Ameaça de Abortamento",
+    "titulo": "Dor ou sangramento até 20ª semana de gestação",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Escopolamina + Paracetamol (Buscopan Plus) + tocolítico (Dactil OB, Inibina ou, em último caso, Aerolin 2 mg)",
+        "modo_uso": "Buscopan Plus: 1 comprimido por 10 dias. Tocolítico: 1 comprimido de 8/8h ou de 12/12h, por 4 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-obst-hipertensao-dheg",
+    "categoria": "Hipertensão na Gestação (DHEG)",
+    "titulo": "DHEG — manutenção, emergência e eclâmpsia",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Metildopa 250 mg (manutenção, 1º trimestre)",
+        "modo_uso": "Uso contínuo — 1 comprimido de 8/8h (dose mínima)."
+      },
+      {
+        "medicamento": "Pindolol 10 mg (Visken, alternativa de manutenção)",
+        "modo_uso": "Uso contínuo — 1 comprimido de 8/8h (dose máxima)."
+      },
+      {
+        "medicamento": "Nifedipina sublingual (emergência)",
+        "modo_uso": "Conforme avaliação médica, associada a dieta leve e manutenção com metildopa."
+      },
+      {
+        "medicamento": "Hidralazina (emergência)",
+        "modo_uso": "Diluir 1 mg em 19 mL de SF 0,9%; aplicar 2 mL e verificar a PA a cada 30 minutos, repetindo 2 mL se necessário (PAD ≥ 90 mmHg)."
+      },
+      {
+        "medicamento": "Sulfato de magnésio (eclâmpsia — anticonvulsivante)",
+        "modo_uso": "Ataque: 4 g EV lento + 10 g IM. Manutenção: 5 g IM de 4/4h."
+      },
+      {
+        "medicamento": "Fenitoína 25 mg (Hidantal, alternativa na eclâmpsia)",
+        "modo_uso": "1 ampola, direto, sem diluição."
+      }
+    ],
+    "observacoes": "Na eclâmpsia, associar sempre anti-hipertensivo e anticonvulsivante."
+  },
+  {
+    "id": "gp-obst-itu-gestacional",
+    "categoria": "ITU na Gestação",
+    "titulo": "ITU gestacional — antibioticoterapia",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Fosfomicina trometamol (Monuril)",
+        "modo_uso": "1 caixa — diluir 1 envelope em 1 copo de água, por 2 dias consecutivos, tomar após esvaziar a bexiga."
+      },
+      {
+        "medicamento": "Cefalexina 500 mg (alternativa)",
+        "modo_uso": "1 caixa — 1 comprimido de 6/6h, por 7 dias."
+      },
+      {
+        "medicamento": "Nitrofurantoína 100 mg (Macrodantina, alternativa)",
+        "modo_uso": "1 caixa — 1 comprimido de 6/6h, por 7 dias."
+      },
+      {
+        "medicamento": "Amoxicilina 1 g (alternativa)",
+        "modo_uso": "1 caixa — 1 comprimido de 12/12h, por 7 dias."
+      }
+    ]
+  },
+  {
+    "id": "gp-obst-vulvovaginite",
+    "categoria": "Vulvovaginite na Gestação",
+    "titulo": "Vulvovaginite — tratar sempre como infecção mista",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Metronidazol 400 mg (Flagyl)",
+        "modo_uso": "1 caixa — 1 comprimido de 12/12h, por 7 dias (ou 500 mg, 4 comprimidos, dose única)."
+      },
+      {
+        "medicamento": "Tinidazol + Tioconazol creme vaginal (Amplogin, Cartrax, Taquil, Ginbin)",
+        "modo_uso": "1 tubo — aplicar 1 aplicador cheio à noite, até o fim do tubo."
+      },
+      {
+        "medicamento": "Clindamicina 300 mg (2ª opção)",
+        "modo_uso": "1 caixa — 1 comprimido de 12/12h, por 7 dias, associada a clindamicina creme vaginal."
+      },
+      {
+        "medicamento": "Secnidazol 1 g (após a 28ª semana de gestação)",
+        "modo_uso": "2 comprimidos, dose única."
+      }
+    ],
+    "observacoes": "Tratar sempre como infecção mista (candidíase, gardnerella e tricomonas)."
+  },
+  {
+    "id": "gp-obst-cefaleia",
+    "categoria": "Cefaleia na Gestação",
+    "titulo": "Cefaleia gestacional — descartar hipertensão antes de tratar",
+    "contexto": "Obstetrícia",
+    "itens": [
+      {
+        "medicamento": "Paracetamol 500-750 mg",
+        "modo_uso": "1 comprimido de 12/12h ou de 8/8h."
+      }
+    ],
+    "observacoes": "Sempre verificar se a cefaleia não está relacionada à hipertensão arterial antes de tratar apenas como sintomática."
+  }
+]
