@@ -6120,5 +6120,190 @@
         "conteudo": "O uso crônico e escalonado de opioides sem reavaliação periódica de eficácia e de sinais de uso problemático expõe o paciente a risco de dependência, exigindo revisão periódica do plano terapêutico."
       }
     ]
+  },
+  {
+    "id": "torcao-testicular-escroto-agudo",
+    "area": "residencia",
+    "categoria": "Urologia",
+    "titulo": "Escroto Agudo: Torção Testicular, Epididimite e Priapismo",
+    "resumo": "Diferenciação clínica entre torção testicular e epididimite, e o manejo do priapismo isquêmico.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Urologia; American Urological Association Guideline on Priapism",
+    "mnemonicos": [
+      {
+        "palavra": "Prehn ajuda a diferenciar",
+        "explicacao": "Sinal de Prehn: elevação do testículo ALIVIA a dor na epididimite (Prehn positivo) mas NÃO alivia (ou piora) na torção testicular — ajuda a diferenciar clinicamente, mas nunca deve atrasar a exploração cirúrgica quando a torção é fortemente suspeitada."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Torção testicular",
+        "conteudo": "Emergência urológica por rotação do cordão espermático com isquemia testicular, mais comum em adolescentes e recém-nascidos. Dor escrotal súbita e intensa, com náusea/vômito, testículo elevado e horizontalizado (\"sinal do sino invertido\") e ausência do reflexo cremastérico ipsilateral. O diagnóstico é CLÍNICO — não se deve atrasar a exploração cirúrgica aguardando exame de imagem quando a suspeita é forte."
+      },
+      {
+        "titulo": "Janela terapêutica",
+        "conteudo": "A viabilidade testicular cai drasticamente após 6 horas de torção. A exploração cirúrgica de urgência com destorção e fixação (orquidopexia) bilateral é o tratamento — inclusive do lado contralateral, para prevenir torção futura."
+      },
+      {
+        "titulo": "Epididimite/orquiepididimite",
+        "conteudo": "Causa mais comum de dor escrotal aguda no adulto sexualmente ativo (geralmente por ISTs) ou por bactérias entéricas em homens mais velhos (relacionado a HPB/instrumentação). Dor de início mais gradual, com sinal de Prehn positivo e reflexo cremastérico preservado."
+      },
+      {
+        "titulo": "Priapismo",
+        "conteudo": "Ereção peniana persistente e dolorosa, não relacionada a estímulo sexual, com duração maior que 4 horas. O priapismo isquêmico (forma mais comum) é emergência urológica, tratado com aspiração/irrigação cavernosa e, se refratário, drogas alfa-agonistas intracavernosas, pelo risco de fibrose e disfunção erétil permanente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Dor escrotal aguda em criança/adolescente deve ser tratada como torção testicular até prova em contrário</span> — a exploração cirúrgica não deve ser adiada para aguardar ultrassom Doppler quando a suspeita clínica é alta, pelo risco de perda do testículo."
+      }
+    ]
+  },
+  {
+    "id": "hiperplasia-prostatica-benigna",
+    "area": "residencia",
+    "categoria": "Urologia",
+    "titulo": "Hiperplasia Prostática Benigna e Disfunção Miccional",
+    "resumo": "Sintomas obstrutivos e irritativos do trato urinário inferior, escore IPSS e manejo da retenção urinária aguda.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Urologia — Diretrizes de HPB; AUA Guideline on Benign Prostatic Hyperplasia",
+    "mnemonicos": [
+      {
+        "palavra": "IPSS guia a conduta",
+        "explicacao": "O International Prostate Symptom Score (IPSS) pontua sintomas obstrutivos e irritativos do trato urinário inferior, classificando a HPB em leve/moderada/grave e orientando a escalada terapêutica (observação → alfabloqueador → cirurgia)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia e epidemiologia",
+        "conteudo": "Crescimento não maligno da zona de transição da próstata, extremamente comum a partir da meia-idade, causando obstrução do fluxo urinário. Não é fator de risco para câncer de próstata, que tipicamente se origina na zona periférica."
+      },
+      {
+        "titulo": "Sintomas do trato urinário inferior (LUTS)",
+        "conteudo": "Sintomas obstrutivos (jato urinário fraco, hesitação, gotejamento terminal, esvaziamento incompleto) e irritativos (urgência, polaciúria, noctúria). O IPSS quantifica a gravidade e orienta a decisão terapêutica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Alfabloqueadores (tansulosina) relaxam a musculatura lisa prostática/colo vesical, com alívio sintomático rápido. Inibidores da 5-alfa-redutase (finasterida) reduzem o volume prostático a longo prazo. Cirurgia (RTU de próstata) é reservada para casos refratários ou com complicações."
+      },
+      {
+        "titulo": "Retenção urinária aguda",
+        "conteudo": "Incapacidade súbita e dolorosa de urinar, com bexiga distendida palpável — emergência urológica que exige alívio imediato por sondagem vesical. Pode ser a primeira manifestação de HPB descompensada, frequentemente precipitada por anticolinérgicos, descongestionantes ou anestesia."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Retenção urinária aguda com hidronefrose bilateral e elevação de creatinina</span> configura uropatia obstrutiva com lesão renal aguda pós-renal — a descompressão vesical costuma reverter rapidamente a função renal se feita a tempo."
+      }
+    ]
+  },
+  {
+    "id": "nefrolitiase",
+    "area": "residencia",
+    "categoria": "Urologia",
+    "titulo": "Nefrolitíase (Cólica Renal)",
+    "resumo": "Diagnóstico por tomografia sem contraste, fatores que predizem eliminação espontânea e a emergência da pielonefrite obstrutiva.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Urologia — Diretrizes de Litíase Urinária; AUA/Endourological Society Guideline on Surgical Management of Stones",
+    "mnemonicos": [
+      {
+        "palavra": "Agitado é cólica, quieto é peritonite",
+        "explicacao": "Na cólica renal, o paciente se contorce e muda de posição sem alívio (dor visceral); no abdome agudo peritoneal, o paciente fica imóvel, pois qualquer movimento piora a dor — pista clínica útil à beira do leito."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor lombar/em flanco de início súbito, tipo cólica, de forte intensidade, irradiando para região inguinal/genital conforme o cálculo migra pelo ureter. Associada a náusea/vômito e frequentemente hematúria. Paciente tipicamente agitado, sem posição de conforto."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Tomografia computadorizada de abdome sem contraste é o exame padrão-ouro. Ultrassonografia é alternativa razoável, especialmente em gestantes e para evitar radiação, mas com menor sensibilidade para cálculos ureterais médios."
+      },
+      {
+        "titulo": "Eliminação espontânea",
+        "conteudo": "Cálculos menores que 5mm têm alta probabilidade de eliminação espontânea; maiores que 10mm geralmente necessitam intervenção. A terapia expulsiva medicamentosa com alfabloqueador (tansulosina) aumenta a taxa de eliminação espontânea de cálculos ureterais distais."
+      },
+      {
+        "titulo": "Indicações de intervenção urológica",
+        "conteudo": "Cálculo obstrutivo associado a infecção urinária (pielonefrite obstrutiva — emergência), dor refratária, lesão renal aguda, ou falha na eliminação espontânea — litotripsia extracorpórea, ureterolitotripsia endoscópica ou nefrolitotomia percutânea conforme tamanho/localização."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Cólica renal com febre e sinais de infecção urinária</span> caracteriza pielonefrite obstrutiva — uma verdadeira emergência urológica, exigindo desobstrução urgente (duplo J ou nefrostomia), não apenas antibiótico."
+      }
+    ]
+  },
+  {
+    "id": "disturbios-acido-basicos",
+    "area": "residencia",
+    "categoria": "Nefrologia",
+    "titulo": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "resumo": "Abordagem sistemática da gasometria, cálculo do ânion gap e principais causas de acidose/alcalose metabólica e respiratória.",
+    "revisado": false,
+    "fonte": "UpToDate — Simple and Mixed Acid-Base Disorders; Sociedade Brasileira de Nefrologia",
+    "mnemonicos": [
+      {
+        "palavra": "MUDPILES",
+        "explicacao": "Causas de acidose metabólica com ânion gap aumentado: Metanol, Uremia, Diabetic ketoacidosis, Propilenoglicol/Paraldeído, Isoniazida/Iron (ferro), Lactic acidosis, Etilenoglicol, Salicilatos."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Abordagem sistemática",
+        "conteudo": "1) Avaliar o pH (acidemia <7,35 ou alcalemia >7,45). 2) Identificar o distúrbio primário pelo pCO2 e HCO3 (respiratório altera primariamente pCO2; metabólico altera primariamente HCO3). 3) Verificar se a resposta compensatória está adequada. 4) Em acidose metabólica, calcular o ânion gap."
+      },
+      {
+        "titulo": "Acidose metabólica",
+        "conteudo": "Ânion gap aumentado (acúmulo de ácido — cetoacidose diabética, acidose láctica, uremia, intoxicações) x ânion gap normal/hiperclorêmica (perda de bicarbonato — diarreia, acidose tubular renal)."
+      },
+      {
+        "titulo": "Alcalose metabólica",
+        "conteudo": "Geralmente por perda de ácido (vômitos, diuréticos) ou ganho de bicarbonato. Classificada em responsiva a cloreto (volume-depletada, corrige com solução salina) ou resistente ao cloreto (hiperaldosteronismo)."
+      },
+      {
+        "titulo": "Distúrbios respiratórios",
+        "conteudo": "Acidose respiratória por hipoventilação (retenção de CO2 — DPOC exacerbado, depressão do centro respiratório, fraqueza muscular). Alcalose respiratória por hiperventilação (ansiedade, dor, hipóxia, embolia pulmonar, sepse precoce)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Ânion gap muito elevado associado a rebaixamento do sensório</span> exige investigação urgente de intoxicações exógenas (metanol, etilenoglicol, salicilatos) e cetoacidose/acidose láctica — causas potencialmente fatais e tratáveis."
+      }
+    ]
+  },
+  {
+    "id": "itu-pielonefrite",
+    "area": "residencia",
+    "categoria": "Nefrologia",
+    "titulo": "Infecção do Trato Urinário e Pielonefrite no Adulto",
+    "resumo": "Cistite não complicada x complicada, diagnóstico de pielonefrite pelo sinal de Giordano e quando tratar bacteriúria assintomática.",
+    "revisado": false,
+    "fonte": "IDSA Clinical Practice Guideline for the Treatment of Uncomplicated UTI; Sociedade Brasileira de Urologia/Infectologia",
+    "mnemonicos": [
+      {
+        "palavra": "Giordano",
+        "explicacao": "Sinal de Giordano: dor à punho-percussão da loja renal (ângulo costovertebral) — achado clássico de pielonefrite aguda, ajudando a diferenciá-la de uma cistite simples."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Cistite aguda não complicada",
+        "conteudo": "Disúria, polaciúria, urgência miccional, sem febre ou dor lombar — mais comum em mulheres jovens sexualmente ativas. Escherichia coli é o agente mais comum. Diagnóstico clínico, sem necessidade obrigatória de urocultura em casos típicos. Tratamento empírico curto (nitrofurantoína, fosfomicina ou sulfametoxazol-trimetoprima)."
+      },
+      {
+        "titulo": "ITU complicada",
+        "conteudo": "Ocorre em homens, gestantes, diabéticos, portadores de anormalidades estruturais/funcionais do trato urinário, ou em uso de cateter vesical — exige avaliação e tratamento mais cauteloso, geralmente com urocultura e antibiograma."
+      },
+      {
+        "titulo": "Pielonefrite aguda",
+        "conteudo": "Infecção do parênquima renal, com febre, calafrios, dor lombar/em flanco (sinal de Giordano positivo) associados aos sintomas de cistite. Urocultura sempre indicada. Tratamento ambulatorial com antibiótico oral na maioria dos casos; internação reservada para sinais de gravidade, gestantes, ou falha do tratamento ambulatorial."
+      },
+      {
+        "titulo": "Bacteriúria assintomática",
+        "conteudo": "Presença de bactérias na urocultura sem sintomas — tratamento reservado apenas para gestantes e pacientes que serão submetidos a procedimento urológico invasivo. Tratar fora dessas situações não traz benefício e favorece resistência bacteriana."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Pielonefrite com sinais de sepse</span> ou falha de melhora clínica em 48-72h de antibiótico adequado deve levantar suspeita de complicação (abscesso renal/perinefrético, obstrução) e motivar investigação de imagem urgente."
+      }
+    ]
   }
 ]
