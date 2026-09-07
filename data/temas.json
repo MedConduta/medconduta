@@ -2278,6 +2278,10 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Nódulo endurecido e fixo, com retração de pele/papila ou linfonodo axilar palpável</span> exige investigação prioritária para excluir malignidade."
+      },
+      {
+        "titulo": "Mastologia benigna",
+        "conteudo": "Mastalgia cíclica (relacionada ao ciclo menstrual, geralmente bilateral, de causa hormonal benigna) e não cíclica. Mastite lactacional (infecção da mama durante a amamentação, geralmente por Staphylococcus aureus, com dor, calor, hiperemia e febre — tratada com antibiótico e manutenção do aleitamento, sem necessidade de interrupção). Derrame papilar deve ser caracterizado quanto à lateralidade, número de ductos e aspecto da secreção — descarga sanguinolenta ou em água de rocha, unilateral e uniductal, é a que mais preocupa e exige investigação para excluir papiloma intraductal ou neoplasia."
       }
     ]
   },
@@ -7404,6 +7408,154 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "Perda de campo visual periférico assintomática detectada apenas em exame de rotina reforça a importância do rastreamento oftalmológico periódico em grupos de risco, já que o diagnóstico tardio permite dano irreversível já instalado."
+      }
+    ]
+  },
+  {
+    "id": "miomatose-uterina",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Miomatose Uterina e Adenomiose",
+    "resumo": "Classificação dos miomas por localização, impacto no sangramento/fertilidade e diferenciação com a adenomiose.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Protocolo de Miomatose Uterina; ACOG Practice Bulletin on Uterine Fibroids",
+    "mnemonicos": [
+      {
+        "palavra": "Submucoso sangra mais",
+        "explicacao": "Entre os tipos de mioma (submucoso, intramural, subseroso), o submucoso é o que mais impacta sangramento uterino e fertilidade, mesmo quando pequeno, por estar em contato direto com a cavidade endometrial."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Miomatose uterina",
+        "conteudo": "Tumor benigno mais comum do trato genital feminino, originado do músculo liso do miométrio, estrogênio-dependente. Classificados por localização em submucosos, intramurais e subserosos."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Sangramento uterino anormal (mais associado aos submucosos), dor pélvica/dismenorreia, sensação de massa pélvica e sintomas compressivos. Infertilidade e perdas gestacionais recorrentes podem ocorrer, especialmente com miomas submucosos."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento",
+        "conteudo": "Ultrassonografia pélvica/transvaginal é o exame inicial de escolha. Tratamento individualizado: expectante em miomas assintomáticos, tratamento hormonal para controle de sangramento, e miomectomia ou histerectomia para casos refratários."
+      },
+      {
+        "titulo": "Adenomiose",
+        "conteudo": "Presença de tecido endometrial dentro do miométrio, causando útero globoso e aumentado, associada a dismenorreia progressiva e sangramento uterino anormal. Pode coexistir com miomatose e endometriose; ressonância magnética tem melhor acurácia que o ultrassom para diferenciá-la da miomatose."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Crescimento rápido de massa uterina, principalmente na pós-menopausa, deve levantar suspeita de leiomiossarcoma (raro, porém maligno) e não ser atribuído automaticamente a mioma benigno."
+      }
+    ]
+  },
+  {
+    "id": "abdome-agudo-ginecologico",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Abdome Agudo Ginecológico: Torção Anexial e Cisto Ovariano Roto",
+    "resumo": "Torção ovariana como emergência cirúrgica mesmo com Doppler inconclusivo, e a gravidez ectópica como diagnóstico diferencial obrigatório.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Protocolo de Abdome Agudo em Ginecologia; ACOG Practice Bulletin on Ovarian Torsion",
+    "mnemonicos": [
+      {
+        "palavra": "Beta-hCG sempre primeiro",
+        "explicacao": "Diante de qualquer mulher em idade fértil com dor pélvica aguda, o beta-hCG deve ser solicitado sistematicamente antes de fechar qualquer outro diagnóstico ginecológico de abdome agudo."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Torção anexial",
+        "conteudo": "Rotação do ovário sobre seu próprio pedículo vascular, comprometendo o fluxo sanguíneo. O fator de risco mais importante é a presença de cisto ou massa ovariana. Dor pélvica súbita e intensa, unilateral, com náusea/vômito."
+      },
+      {
+        "titulo": "Diagnóstico da torção anexial",
+        "conteudo": "Ultrassonografia pélvica com Doppler é o exame de escolha — mas um Doppler normal NÃO exclui torção de forma definitiva, e a suspeita clínica forte justifica avaliação cirúrgica mesmo com exame inconclusivo, pela urgência em preservar a viabilidade do ovário."
+      },
+      {
+        "titulo": "Cisto ovariano roto",
+        "conteudo": "Mais comum em cistos hemorrágicos do corpo lúteo. Dor pélvica súbita, podendo haver irritação peritoneal se houver hemoperitônio significativo. A maioria dos casos é autolimitada, com manejo conservador."
+      },
+      {
+        "titulo": "Diagnóstico diferencial",
+        "conteudo": "Gravidez ectópica rota é diagnóstico diferencial obrigatório em mulher em idade fértil com dor pélvica aguda — beta-hCG deve ser solicitado sistematicamente antes de assumir outra causa ginecológica."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Dor pélvica súbita e intensa associada a massa anexial conhecida</span> deve levantar suspeita imediata de torção ovariana — a demora na avaliação cirúrgica compromete a viabilidade do ovário."
+      }
+    ]
+  },
+  {
+    "id": "tpp-rpm-gestacao-multipla",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Trabalho de Parto Prematuro, Rotura Prematura de Membranas e Gestação Múltipla",
+    "resumo": "Tocólise e corticoide antenatal no TPP, o dilema prematuridade x infecção na RPM, e os riscos específicos da gestação gemelar.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Protocolo de Trabalho de Parto Prematuro e Rotura Prematura de Membranas; ACOG Practice Bulletin on Multifetal Gestations",
+    "mnemonicos": [
+      {
+        "palavra": "RPM: quanto mais cedo, mais risco",
+        "explicacao": "Na rotura prematura de membranas, quanto mais precoce a idade gestacional, maior o tempo de exposição ao risco de infecção ascendente e, se muito precoce, maior o risco de oligoâmnio grave com hipoplasia pulmonar fetal."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Trabalho de parto prematuro",
+        "conteudo": "Contrações uterinas regulares associadas a modificação cervical antes de 37 semanas. Fatores de risco: TPP anterior, gestação múltipla, infecção urinária/vaginal, colo curto e polidrâmnio. A tocólise pode postergar o parto o suficiente para administrar corticoide antenatal."
+      },
+      {
+        "titulo": "Rotura prematura de membranas",
+        "conteudo": "Rotura das membranas antes do início do trabalho de parto; antes de 37 semanas é chamada RPM pré-termo. Principal risco é a corioamnionite e, se muito precoce, oligoâmnio grave com hipoplasia pulmonar. Conduta pondera prematuridade x infecção, com antibioticoprofilaxia e corticoide antenatal."
+      },
+      {
+        "titulo": "Corioamnionite",
+        "conteudo": "Infecção intra-amniótica com febre materna associada a taquicardia fetal/materna, líquido amniótico fétido e leucocitose — indicação de antibioticoterapia e interrupção da gestação independentemente da idade gestacional."
+      },
+      {
+        "titulo": "Gestação múltipla",
+        "conteudo": "Gestação de maior risco, com maiores taxas de prematuridade, restrição de crescimento, síndromes hipertensivas e hemorragia pós-parto. A gestação monocoriônica tem risco adicional de síndrome de transfusão feto-fetal, exigindo acompanhamento ultrassonográfico mais frequente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Febre materna com taquicardia fetal e líquido amniótico fétido</span> em gestante com bolsa rota caracteriza corioamnionite — exige antibioticoterapia imediata e resolução da gestação."
+      }
+    ]
+  },
+  {
+    "id": "puerperio-patologico",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Puerpério Patológico: Infecção Puerperal e Mastite",
+    "resumo": "Endometrite puerperal como principal causa de febre pós-parto e o manejo da mastite sem interromper a amamentação.",
+    "revisado": false,
+    "fonte": "FEBRASGO — Protocolo de Infecção Puerperal; ACOG Practice Bulletin on Postpartum Complications",
+    "mnemonicos": [
+      {
+        "palavra": "Amamentar não piora a mastite",
+        "explicacao": "Diante de mastite puerperal, a orientação é manter a amamentação/esvaziamento da mama associado ao antibiótico — interromper a amamentação favorece a estase láctea e pode piorar o quadro."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Endometrite puerperal",
+        "conteudo": "Principal causa de febre puerperal, mais comum após cesariana. Febre associada a dor abdominal/pélvica, lóquios fétidos e subinvolução uterina. Tratamento com antibioticoterapia de amplo espectro cobrindo flora polimicrobiana."
+      },
+      {
+        "titulo": "Outras causas de febre puerperal",
+        "conteudo": "Infecção de sítio cirúrgico, infecção do trato urinário, mastite, tromboflebite pélvica séptica e complicações tromboembólicas — a investigação sistemática da origem da febre é essencial."
+      },
+      {
+        "titulo": "Mastite puerperal",
+        "conteudo": "Infecção do parênquima mamário durante a lactação, geralmente por Staphylococcus aureus, favorecida por fissura mamilar e estase láctea. Tratamento com antibiótico associado à manutenção do esvaziamento da mama."
+      },
+      {
+        "titulo": "Subinvolução uterina",
+        "conteudo": "Útero que não involui no ritmo esperado, associado a sangramento puerperal persistente/tardio — pode indicar retenção de restos placentários ou infecção subjacente."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Febre puerperal com útero amolecido, doloroso e lóquios fétidos</span> caracteriza endometrite puerperal — exige antibioticoterapia imediata de amplo espectro."
       }
     ]
   }
