@@ -7295,5 +7295,116 @@
         "conteudo": "<span class=\"red-flag\">Cefaleia com crise convulsiva de início recente em paciente de área endêmica</span> deve levantar suspeita de neurocisticercose e motivar neuroimagem — causa tratável e prevenível de epilepsia."
       }
     ]
+  },
+  {
+    "id": "escabiose-pediculose",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Escabiose e Pediculose",
+    "resumo": "Prurido noturno em espaços interdigitais na escabiose, a forma crostosa em imunossuprimidos e o tratamento de todos os contactantes.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Dermatologia; CDC — Scabies and Pediculosis Treatment Guidelines",
+    "mnemonicos": [
+      {
+        "palavra": "Coça de noite, é sarna",
+        "explicacao": "O prurido da escabiose piora tipicamente à noite — junto à distribuição em espaços interdigitais e punhos, é a pista clínica central para o diagnóstico."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Escabiose (sarna)",
+        "conteudo": "Infestação pelo ácaro Sarcoptes scabiei, transmitida por contato pele a pele prolongado ou fômites. Prurido intenso de predomínio noturno, com lesões papulares e túneis acarinos em espaços interdigitais, punhos, região periumbilical e genitália. Poupa classicamente a face e o couro cabeludo em adultos."
+      },
+      {
+        "titulo": "Escabiose crostosa (norueguesa)",
+        "conteudo": "Forma grave e hiperinfestante, associada a imunossupressão, com lesões hiperceratósicas extensas e altíssima carga parasitária — extremamente contagiosa, exige medidas de isolamento de contato."
+      },
+      {
+        "titulo": "Tratamento da escabiose",
+        "conteudo": "Permetrina tópica 5% é a primeira linha, com repetição após 7-14 dias. Ivermectina oral é alternativa em surtos institucionais ou escabiose crostosa. O tratamento simultâneo de todos os contactantes domiciliares é essencial, mesmo assintomáticos."
+      },
+      {
+        "titulo": "Pediculose",
+        "conteudo": "Pediculose do couro cabeludo (mais comum em crianças escolares), pediculose do corpo (associada a más condições de higiene) e pediculose pubiana (transmissão sexual). Tratamento com permetrina ou ivermectina, associado à remoção mecânica das lêndeas."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Prurido intenso predominantemente noturno com lesões em espaços interdigitais em múltiplos membros da mesma casa sugere fortemente escabiose — todos os contactantes devem ser tratados simultaneamente, independentemente de sintomas."
+      }
+    ]
+  },
+  {
+    "id": "lombalgia-hernia-disco",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Lombalgia e Hérnia de Disco",
+    "resumo": "Sinais de alarme que indicam investigação de imagem e o reconhecimento da síndrome da cauda equina como emergência cirúrgica.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia/Coluna; NASS Clinical Guidelines for Lumbar Disc Herniation",
+    "mnemonicos": [
+      {
+        "palavra": "Lasègue estica e dói",
+        "explicacao": "O sinal de Lasègue (elevação da perna estendida reproduzindo a dor radicular entre 30-70 graus) sugere compressão de raiz nervosa lombar por hérnia discal — um teste simples à beira do leito."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Lombalgia mecânica inespecífica",
+        "conteudo": "Causa mais comum de dor lombar, sem causa estrutural específica identificável. Dor que piora com movimento e melhora com repouso, sem irradiação radicular. Manejo com analgesia e manutenção da atividade tolerada — repouso prolongado no leito é contraproducente."
+      },
+      {
+        "titulo": "Hérnia de disco lombar",
+        "conteudo": "Extrusão do núcleo pulposo comprimindo raiz nervosa adjacente, mais comum em L4-L5 e L5-S1. Causa lombociatalgia irradiada seguindo o dermátomo correspondente, associada a sinal de Lasègue positivo e podendo cursar com déficit motor/sensitivo."
+      },
+      {
+        "titulo": "Sinais de alarme na lombalgia",
+        "conteudo": "Trauma significativo, idade acima de 50 anos com dor nova, febre/perda de peso inexplicada, uso de corticoide crônico, história de câncer e déficit neurológico progressivo exigem investigação de imagem — a lombalgia mecânica simples não necessita exame de imagem de rotina."
+      },
+      {
+        "titulo": "Síndrome da cauda equina",
+        "conteudo": "Emergência cirúrgica por compressão maciça das raízes lombossacras distais: anestesia em sela, disfunção esfincteriana e fraqueza bilateral de membros inferiores. Exige ressonância magnética urgente e descompressão cirúrgica precoce."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Anestesia em sela associada a retenção urinária</span> caracteriza síndrome da cauda equina — emergência cirúrgica que exige ressonância magnética e descompressão em caráter de urgência."
+      }
+    ]
+  },
+  {
+    "id": "glaucoma-cronico-angulo-aberto",
+    "area": "residencia",
+    "categoria": "Oftalmologia",
+    "titulo": "Glaucoma Crônico de Ângulo Aberto",
+    "resumo": "A neuropatia óptica silenciosa que causa perda de campo visual periférico, e a importância do rastreamento em grupos de risco.",
+    "revisado": false,
+    "fonte": "Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology — Primary Open-Angle Glaucoma PPP",
+    "mnemonicos": [
+      {
+        "palavra": "Silencioso até roubar a visão",
+        "explicacao": "Ao contrário do glaucoma agudo (doloroso e dramático), o glaucoma crônico de ângulo aberto é silencioso — a perda de campo visual periférico progride sem sintomas até fases avançadas."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia e fatores de risco",
+        "conteudo": "Neuropatia óptica progressiva associada, na maioria dos casos, a pressão intraocular elevada por resistência aumentada à drenagem do humor aquoso. Fatores de risco: idade avançada, história familiar, miopia, diabetes e etnia (maior prevalência em afrodescendentes)."
+      },
+      {
+        "titulo": "Quadro clínico — a \"doença silenciosa\"",
+        "conteudo": "Assintomático por longo período, já que a perda de campo visual começa pela periferia e só é percebida em fases avançadas, quando a visão central já pode estar comprometida."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Tonometria, avaliação do disco óptico (escavação aumentada) e campimetria para detectar e monitorar a perda de campo visual. O rastreamento em consulta oftalmológica de rotina é essencial, já que o paciente não percebe a doença sozinho."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Colírios hipotensores oculares (análogos de prostaglandina como primeira linha) reduzem a pressão intraocular e retardam a progressão. A lesão do nervo óptico já estabelecida é irreversível — o objetivo é estabilizar, não recuperar a visão perdida."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Perda de campo visual periférico assintomática detectada apenas em exame de rotina reforça a importância do rastreamento oftalmológico periódico em grupos de risco, já que o diagnóstico tardio permite dano irreversível já instalado."
+      }
+    ]
   }
 ]
