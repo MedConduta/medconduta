@@ -141,7 +141,7 @@
     "titulo": "Sepse e Choque Séptico",
     "resumo": "Reconhecimento precoce, estratificação de risco e tratamento inicial conforme a atualização SSC 2026 (substitui o antigo \"pacote de 1h\" único).",
     "revisado": false,
-    "fonte": "Surviving Sepsis Campaign Guidelines 2026 - SCCM/ESICM (traducao ILAS)",
+    "fonte": "Surviving Sepsis Campaign Guidelines (2021); Sepsis-3 Consensus Definitions; Instituto Latino Americano de Sepse",
     "mnemonicos": [
       {
         "palavra": "ATUALIZAÇÃO SSC 2026",
@@ -150,24 +150,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição",
-        "conteudo": "Sepse é a disfunção orgânica ameaçadora à vida causada por resposta desregulada do hospedeiro à infecção, identificada por aumento agudo ≥2 pontos no SOFA (Sepsis-3, mantido pela SSC 2026). Choque séptico é o subgrupo com necessidade de vasopressor para manter PAM ≥65 mmHg e lactato >2 mmol/L, apesar de reposição volêmica adequada."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A sepse é definida (consenso Sepsis-3) como disfunção orgânica com risco de vida causada por resposta desregulada do hospedeiro a uma infecção, resultando de uma cascata inflamatória sistêmica que causa disfunção endotelial, vasodilatação, aumento da permeabilidade capilar e comprometimento da microcirculação tecidual. O choque séptico representa o subgrupo mais grave, com anormalidades circulatórias e celulares/metabólicas profundas o suficiente para aumentar substancialmente a mortalidade, definido operacionalmente pela necessidade de vasopressor para manter PA média ≥65mmHg associada a lactato >2mmol/L apesar de reposição volêmica adequada."
       },
       {
-        "titulo": "Rastreio e estratificação de risco (atualização 2026)",
-        "conteudo": "A SSC 2026 passou a recomendar escores como NEWS, NEWS2 ou MEWS em vez do qSOFA isolado para rastreio, por maior sensibilidade, e introduziu uma estratificação da probabilidade de sepse (definitiva, provável, possível, improvável) para calibrar a agressividade da investigação e do tratamento — não é mais \"tudo ou nada\"."
+        "titulo": "Quadro clínico",
+        "conteudo": "As manifestações decorrem tanto do foco infeccioso primário (pulmonar, urinário, abdominal, entre outros) quanto da disfunção orgânica sistêmica: alteração do nível de consciência, taquipneia, oligúria, hipotensão e extremidades frias/livedo (hipoperfusão periférica). A apresentação pode ser sutil em idosos e imunossuprimidos, que frequentemente não desenvolvem febre alta apesar de infecção grave em curso — armadilha de reconhecimento clínico importante nesses grupos."
       },
       {
-        "titulo": "Tempo-alvo de antibiótico (diferenciado desde 2026)",
-        "conteudo": "Choque séptico: antibiótico empírico em até 1 hora. Sepse sem choque: até 3 horas, com tempo para melhor caracterização diagnóstica antes de iniciar. Em ambos os casos, coletar culturas antes do antibiótico, sem atrasar o início do tratamento."
+        "titulo": "Exame físico",
+        "conteudo": "Avaliação sistemática de sinais de hipoperfusão (tempo de enchimento capilar prolongado, livedo, extremidades frias, alteração aguda do estado mental) complementa os sinais vitais na identificação precoce. Escores de triagem como o qSOFA (frequência respiratória ≥22, alteração do nível de consciência, PA sistólica ≤100mmHg) auxiliam o rastreamento rápido à beira do leito fora da UTI, embora não substituam o julgamento clínico nem sejam usados para diagnóstico definitivo."
       },
       {
-        "titulo": "Ressuscitação volêmica e vasopressores",
-        "conteudo": "Cristaloides balanceados, com meta de pelo menos 30 mL/kg nas primeiras 3 horas em caso de choque. Noradrenalina segue como vasopressor de primeira linha; vasopressina pode ser adicionada em doses crescentes de noradrenalina. Corticoide (hidrocortisona) voltou a ser recomendado no choque séptico. Controle do foco infeccioso idealmente em até 6 horas do diagnóstico."
+        "titulo": "Diagnóstico",
+        "conteudo": "O escore SOFA (Sequential Organ Failure Assessment) quantifica objetivamente a disfunção orgânica em múltiplos sistemas e é usado formalmente para definição de sepse no consenso Sepsis-3 (aumento de 2 pontos ou mais associado a infecção suspeita/confirmada). O lactato sérico é marcador fundamental de hipoperfusão tecidual, tanto para diagnóstico de gravidade quanto para monitorização de resposta ao tratamento (clareamento de lactato seriado). Hemoculturas e culturas do foco suspeito devem ser colhidas antes do antibiótico, sem atrasar seu início."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O pacote de tratamento da primeira hora (\"hour-1 bundle\") da Surviving Sepsis Campaign preconiza: medir lactato, colher hemoculturas antes do antibiótico, iniciar antibiótico de amplo espectro o mais rápido possível (idealmente na primeira hora), iniciar ressuscitação volêmica com cristaloide (30mL/kg em caso de hipotensão ou lactato ≥4mmol/L), e iniciar vasopressor (noradrenalina como primeira escolha) se hipotensão persistir apesar da reposição volêmica, com meta de PA média ≥65mmHg. Controle do foco infeccioso (drenagem de abscesso, remoção de dispositivo infectado) deve ocorrer assim que possível."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hipotensão refratária a volume, hiperlactatemia progressiva e disfunção orgânica múltipla</span> indicam necessidade de vasopressor e suporte em terapia intensiva."
+        "conteudo": "<span class=\"red-flag\">Hipotensão refratária a volume associada a lactato elevado</span> caracteriza choque séptico, com necessidade de vasopressor e admissão em UTI — cada hora de atraso no início do antibiótico apropriado em sepse associa-se a aumento mensurável da mortalidade, tornando o reconhecimento e a ação precoces absolutamente centrais no manejo."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O pacote da primeira hora (lactato, hemoculturas antes do antibiótico, antibiótico precoce, volume, vasopressor) é cobrança certíssima e um dos temas mais importantes de toda a medicina de urgência em provas de residência. A definição de choque séptico pelos critérios específicos (vasopressor + lactato >2 apesar de volume) e a noradrenalina como vasopressor de primeira escolha também são frequentemente exigidas."
       }
     ]
   },
@@ -178,7 +186,7 @@
     "titulo": "Parada Cardiorrespiratória (PCR) / ACLS",
     "resumo": "Sequência de suporte avançado de vida em cardiologia e ritmos de PCR.",
     "revisado": false,
-    "fonte": "AHA Guidelines for CPR and ECC 2020 (atualizacao focada 2023); Diretriz de Ressuscitacao Cardiopulmonar - SBC",
+    "fonte": "American Heart Association — Guidelines for CPR and ECC (2020, atualização 2025); Sociedade Brasileira de Cardiologia",
     "mnemonicos": [
       {
         "palavra": "H's e T's",
@@ -187,16 +195,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Ritmos de parada",
-        "conteudo": "Divididos em chocáveis (fibrilação ventricular e taquicardia ventricular sem pulso) e não chocáveis (assistolia e atividade elétrica sem pulso)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A parada cardiorrespiratória representa a cessação da atividade mecânica cardíaca eficaz, classificada em ritmos chocáveis (fibrilação ventricular e taquicardia ventricular sem pulso, com maior chance de reversão pela desfibrilação) e ritmos não chocáveis (assistolia e atividade elétrica sem pulso), estes últimos exigindo identificação e correção das causas reversíveis subjacentes para haver chance real de retorno da circulação espontânea."
       },
       {
-        "titulo": "Sequência de atendimento",
-        "conteudo": "Compressões torácicas de alta qualidade (100-120/min, profundidade 5-6 cm, permitir retorno total do tórax) com mínima interrupção, desfibrilação precoce nos ritmos chocáveis, via aérea avançada e acesso vascular para administração de adrenalina a cada 3-5 minutos, e investigação das causas reversíveis (H's e T's)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Ausência de responsividade, ausência de respiração normal (ou apenas gasping) e ausência de pulso central palpável definem clinicamente a parada cardiorrespiratória, devendo o reconhecimento e o início das compressões torácicas ocorrer em segundos, sem perda de tempo em avaliações prolongadas ou repetidas verificações de pulso."
       },
       {
-        "titulo": "Cuidados pós-PCR",
-        "conteudo": "Após retorno da circulação espontânea (RCE): otimização hemodinâmica, controle direcionado de temperatura, avaliação neurológica seriada e investigação da causa de base."
+        "titulo": "Exame físico",
+        "conteudo": "A verificação de pulso central (carotídeo) deve ser rápida (no máximo 10 segundos) — na dúvida sobre a presença de pulso, a conduta correta é iniciar as compressões torácicas imediatamente, já que o atraso nas compressões é mais deletério que eventuais compressões desnecessárias em paciente com pulso preservado mas não percebido."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "A monitorização/desfibrilador identifica o ritmo de parada assim que disponível, direcionando o algoritmo de tratamento: ritmos chocáveis recebem desfibrilação imediata; ritmos não chocáveis exigem investigação sistemática das causas reversíveis, resumidas nos mnemônicos dos 5H (Hipovolemia, Hipóxia, Hidrogênio/acidose, Hipo/hipercalemia, Hipotermia) e 5T (Tensão no tórax/pneumotórax hipertensivo, Tamponamento cardíaco, Toxinas, Trombose coronariana, Trombose pulmonar)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Compressões torácicas de alta qualidade (100-120/min, profundidade de 5-6cm, permitindo retorno completo do tórax, minimizando interrupções) são a intervenção mais importante e devem ser priorizadas sobre qualquer outra medida. Em ritmo chocável, desfibrilação imediata seguida de RCP por 2 minutos antes de reavaliar o ritmo; epinefrina a cada 3-5 minutos em todos os ritmos; amiodarona (ou lidocaína) é considerada em fibrilação ventricular/taquicardia ventricular refratária à desfibrilação. Em ritmo não chocável, RCP contínua com epinefrina precoce e busca ativa/tratamento das causas reversíveis (5H/5T) é a prioridade, já que a desfibrilação não tem papel nesses ritmos."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Interrupções prolongadas ou frequentes das compressões torácicas durante a reanimação</span> reduzem drasticamente a pressão de perfusão coronariana e as chances de retorno da circulação espontânea — a qualidade e a continuidade das compressões são determinantes mais importantes do desfecho do que qualquer medicação administrada durante a parada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre condutas para ritmos chocáveis (desfibrilação) e não chocáveis (busca de causas reversíveis 5H/5T, sem desfibrilação) é cobrança certa e central do algoritmo de ACLS. A priorização de compressões de alta qualidade com mínima interrupção sobre intervenções farmacológicas também é frequentemente exigida como conceito fundamental do suporte avançado de vida."
       }
     ]
   },
@@ -2294,7 +2318,7 @@
     "titulo": "Síndrome do Desconforto Respiratório Agudo (SDRA)",
     "resumo": "Definição de Berlim, ventilação protetora e manejo da hipoxemia refratária.",
     "revisado": false,
-    "fonte": "Berlin Definition of ARDS (2012); Diretriz Brasileira de Ventilação Mecânica - AMIB/SBPT",
+    "fonte": "Sociedade Brasileira de Terapia Intensiva; Definição de Berlim para SDRA (2012); ARDSnet Protocol",
     "mnemonicos": [
       {
         "palavra": "DEFINIÇÃO DE BERLIM",
@@ -2303,24 +2327,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição de Berlim",
-        "conteudo": "Início agudo dos sintomas (até 7 dias), infiltrado pulmonar bilateral à radiografia/TC, hipoxemia não explicada totalmente por insuficiência cardíaca ou sobrecarga de volume, com gravidade classificada pela relação PaO2/FiO2 (leve, moderada, grave)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A síndrome do desconforto respiratório agudo resulta de lesão alveolar difusa (por causas pulmonares diretas como pneumonia/aspiração, ou extrapulmonares indiretas como sepse/pancreatite), causando aumento da permeabilidade da membrana alvéolo-capilar, edema pulmonar não cardiogênico rico em proteínas, e colapso alveolar difuso que compromete gravemente a troca gasosa — o mecanismo é inflamatório/lesional, e não hidrostático, o que a diferencia fundamentalmente do edema pulmonar cardiogênico."
       },
       {
-        "titulo": "Causas",
-        "conteudo": "Diretas (pulmonares): pneumonia, aspiração de conteúdo gástrico. Indiretas (extrapulmonares): sepse, pancreatite aguda, politransfusão."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dispneia de instalação aguda (dentro de uma semana de um insulto clínico conhecido ou sintomas respiratórios novos/piora) associada a hipoxemia refratária à suplementação de oxigênio, geralmente em paciente já gravemente enfermo por outra condição precipitante (sepse é a causa mais comum). A gravidade é classificada pela relação PaO2/FiO2 em leve, moderada e grave, conforme a definição de Berlim."
       },
       {
-        "titulo": "Ventilação protetora",
-        "conteudo": "Volume corrente baixo (cerca de 6 mL/kg de peso predito), limitação da pressão de platô e PEEP adequada para reduzir a lesão pulmonar induzida pela ventilação."
+        "titulo": "Exame físico",
+        "conteudo": "Taquipneia, uso de musculatura acessória e estertores crepitantes difusos bilaterais são achados comuns, semelhantes aos do edema pulmonar cardiogênico — a diferenciação depende mais do contexto clínico e de exames complementares do que de achados semiológicos isolados específicos de cada condição."
       },
       {
-        "titulo": "Manejo adicional",
-        "conteudo": "Posição prona prolongada em casos moderados a graves, e bloqueio neuromuscular em situações selecionadas de assincronia ventilatória grave."
+        "titulo": "Diagnóstico",
+        "conteudo": "A definição de Berlim exige: início agudo (até 7 dias), infiltrados bilaterais na radiografia/tomografia de tórax não totalmente explicados por derrame, colapso lobar/pulmonar ou nódulos, e hipoxemia (relação PaO2/FiO2 ≤300 com PEEP ≥5cmH2O), com exclusão de que o quadro seja totalmente explicado por insuficiência cardíaca ou sobrecarga de volume — o ecocardiograma pode auxiliar quando há dúvida diagnóstica em relação a componente cardiogênico associado."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Ventilação mecânica protetora é a intervenção com maior impacto comprovado em mortalidade: volume corrente baixo (6mL/kg de peso corporal predito, não o peso real) e pressão de platô limitada (<30cmH2O), estratégia validada pelo estudo ARDSnet. Posição prona é recomendada em SDRA moderada/grave (relação PaO2/FiO2 <150), com redução comprovada de mortalidade quando aplicada por períodos prolongados (16+ horas/dia). Manejo conservador de fluidos (uma vez estabilizada a perfusão) reduz tempo de ventilação mecânica."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hipoxemia refratária apesar de ventilação protetora otimizada e posição prona</span> pode exigir suporte extracorpóreo (ECMO) em centros especializados."
+        "conteudo": "<span class=\"red-flag\">Hipoxemia refratária grave (relação PaO2/FiO2 muito baixa) apesar de ventilação protetora otimizada e posição prona</span> pode indicar necessidade de suporte extracorpóreo (ECMO) em centros especializados, como medida de resgate em SDRA muito grave refratária às medidas convencionais."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A ventilação protetora com volume corrente de 6mL/kg de peso predito (não peso real) é cobrança certíssima e um dos conceitos mais importantes de toda a terapia intensiva em provas de residência. A posição prona como intervenção com benefício de mortalidade comprovado em SDRA grave, e os critérios da definição de Berlim, também são frequentemente exigidos."
       }
     ]
   },
@@ -4183,7 +4215,7 @@
     "titulo": "Avaliação Geriátrica Ampla, Quedas e Polifarmácia",
     "resumo": "Abordagem multidimensional do idoso, síndromes geriátricas e critérios para identificar polifarmácia inadequada.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Geriatria e Gerontologia — Diretrizes de Avaliação Geriátrica Ampla; Critérios de Beers 2023 (American Geriatrics Society)",
+    "fonte": "Sociedade Brasileira de Geriatria e Gerontologia; British Geriatrics Society — Comprehensive Geriatric Assessment",
     "mnemonicos": [
       {
         "palavra": "TUG",
@@ -4192,24 +4224,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Avaliação geriátrica ampla (AGA)",
-        "conteudo": "Abordagem multidimensional que avalia capacidade funcional (atividades básicas e instrumentais de vida diária), cognição, humor, mobilidade/equilíbrio, estado nutricional, condições sociais e comorbidades — orienta o plano de cuidado individualizado do idoso, para além do diagnóstico de doenças isoladas."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A avaliação geriátrica ampla é uma abordagem multidimensional estruturada que avalia sistematicamente domínios físico, cognitivo, funcional, psicológico e social do idoso, reconhecendo que o envelhecimento fisiológico reduz progressivamente a reserva funcional de múltiplos sistemas orgânicos (sarcopenia, redução da função renal, alterações farmacocinéticas/farmacodinâmicas), tornando os idosos mais vulneráveis a descompensações desencadeadas por eventos que seriam triviais em pacientes mais jovens — conceito central de fragilidade geriátrica."
       },
       {
-        "titulo": "Síndromes geriátricas",
-        "conteudo": "Quedas, fragilidade, incontinência, delirium, sarcopenia e polifarmácia são condições multifatoriais frequentemente subdiagnosticadas, cuja identificação ativa é um dos objetivos centrais da AGA."
+        "titulo": "Quadro clínico",
+        "conteudo": "Quedas de repetição, declínio funcional inexplicado, polifarmácia com eventos adversos medicamentosos, e apresentações atípicas de doenças agudas (delirium como manifestação de infecção, em vez dos sintomas clássicos esperados em adultos jovens) são manifestações características da síndrome de fragilidade e devem sempre motivar avaliação geriátrica ampla estruturada, e não apenas atenção pontual à queixa isolada apresentada."
       },
       {
-        "titulo": "Quedas",
-        "conteudo": "Avaliação de risco multifatorial: força muscular, equilíbrio, acuidade visual, uso de medicações psicoativas e ambiente domiciliar. O teste \"Timed Up and Go\" (TUG) é uma triagem funcional simples de risco de queda."
+        "titulo": "Exame físico",
+        "conteudo": "Testes funcionais simples e validados (velocidade de marcha, teste de \"levantar e andar cronometrado\" — timed up and go, força de preensão manual) rastreiam objetivamente fragilidade e risco de quedas/dependência funcional, complementando o exame físico tradicional que isoladamente pode subestimar déficits funcionais relevantes em idosos aparentemente estáveis."
       },
       {
-        "titulo": "Polifarmácia",
-        "conteudo": "Uso de 5 ou mais medicamentos, associado a maior risco de interações medicamentosas e eventos adversos. Os critérios de Beers e STOPP/START auxiliam na identificação de medicações potencialmente inapropriadas para idosos, orientando a desprescrição."
+        "titulo": "Diagnóstico",
+        "conteudo": "A avaliação estruturada inclui rastreamento cognitivo (Mini Exame do Estado Mental ou similares), avaliação funcional (escalas de atividades básicas e instrumentais de vida diária), rastreamento de depressão, avaliação nutricional, revisão sistemática de todos os medicamentos em uso (identificando polifarmácia e potenciais interações/medicamentos inapropriados pelos critérios de Beers), avaliação de risco de quedas e avaliação do suporte social disponível — abordagem muito mais ampla do que a consulta médica tradicional focada em queixa única."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "As intervenções são multidisciplinares e dirigidas aos déficits identificados: desprescrição de medicamentos potencialmente inapropriados ou desnecessários, fisioterapia para força/equilíbrio quando há risco de queda, intervenção nutricional, adequação do ambiente domiciliar para segurança, e suporte social/familiar estruturado. A avaliação geriátrica ampla, quando implementada sistematicamente, demonstra redução comprovada de institucionalização e mortalidade em populações idosas frágeis."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Queda recente associada a novo declínio funcional</span> em idoso deve motivar investigação ativa de causas subjacentes (síncope, uso de medicação psicoativa, déficit visual, fraqueza muscular), e não ser atribuída simplesmente ao \"envelhecimento normal\"."
+        "conteudo": "Delirium agudo (confusão mental de instalação súbita e flutuante) em idoso deve sempre motivar investigação ativa de causa subjacente potencialmente reversível (infecção, distúrbio metabólico, retenção urinária/fecal, dor não controlada, ou efeito medicamentoso) — jamais deve ser atribuído precipitadamente apenas à idade avançada ou a demência de base, mesmo quando esta já está presente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O reconhecimento de que apresentações atípicas (delirium, quedas, declínio funcional) frequentemente representam a manifestação de doenças agudas comuns em idosos (em vez dos sintomas clássicos esperados em jovens) é cobrança certa e um conceito central da geriatria em provas de residência. A revisão sistemática de polifarmácia e os critérios de Beers para medicamentos potencialmente inapropriados também são frequentemente exigidos."
       }
     ]
   },
@@ -4220,7 +4260,7 @@
     "titulo": "Oncologia: Princípios Básicos de Estadiamento e Tratamento",
     "resumo": "Sistema TNM, modalidades terapêuticas e reconhecimento das principais emergências oncológicas.",
     "revisado": false,
-    "fonte": "União Internacional para o Controle do Câncer (UICC) — TNM Classification of Malignant Tumours, 8ª edição; NCCN Guidelines",
+    "fonte": "Instituto Nacional de Câncer (INCA); NCCN Guidelines — Princípios Gerais de Oncologia",
     "mnemonicos": [
       {
         "palavra": "TNM",
@@ -4229,24 +4269,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Sistema TNM",
-        "conteudo": "Estadiamento oncológico baseado em três componentes: T (tamanho/extensão do tumor primário), N (acometimento de linfonodos regionais) e M (presença de metástase a distância). Combinados, definem o estádio clínico (I a IV), que orienta prognóstico e estratégia terapêutica."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O câncer resulta do acúmulo de mutações genéticas que conferem vantagem proliferativa descontrolada às células, com evasão dos mecanismos normais de controle do ciclo celular, apoptose e vigilância imunológica. O estadiamento tumoral (sistema TNM — Tumor primário, linfoNodos regionais, Metástases à distância) padroniza a extensão anatômica da doença e é determinante central tanto do prognóstico quanto da estratégia terapêutica adotada para cada caso."
       },
       {
-        "titulo": "Modalidades terapêuticas",
-        "conteudo": "Cirurgia (tratamento local, muitas vezes curativo em estádios iniciais), radioterapia (tratamento local/locorregional), quimioterapia (tratamento sistêmico citotóxico), terapia-alvo (dirigida a alterações moleculares específicas do tumor) e imunoterapia (potencializa a resposta imune antitumoral, ex.: inibidores de checkpoint)."
+        "titulo": "Quadro clínico",
+        "conteudo": "As manifestações variam amplamente conforme o órgão de origem e a extensão da doença, podendo incluir sintomas locais (massa palpável, sangramento, obstrução), sintomas sistêmicos (perda de peso não intencional, fadiga, sudorese noturna) e síndromes paraneoplásicas (manifestações à distância mediadas por substâncias produzidas pelo tumor, sem relação direta com invasão tecidual local ou metastática)."
       },
       {
-        "titulo": "Intenção do tratamento",
-        "conteudo": "Curativo — busca a erradicação da doença — x paliativo — busca controle de sintomas e qualidade de vida quando a cura não é mais possível. A definição da intenção terapêutica orienta toda a discussão de risco-benefício com o paciente."
+        "titulo": "Exame físico",
+        "conteudo": "Massa palpável, linfonodomegalia (características de linfonodo suspeito: endurecido, fixo, indolor, crescimento progressivo), e sinais de doença avançada (caquexia, icterícia, ascite, derrame pleural) devem sempre ser documentados sistematicamente e correlacionados com o estadiamento clínico da neoplasia suspeitada ou já diagnosticada."
       },
       {
-        "titulo": "Emergências oncológicas",
-        "conteudo": "Síndrome de lise tumoral (após início de quimioterapia em tumores de alta carga proliferativa — hiperpotassemia, hiperfosfatemia, hiperuricemia, hipocalcemia, risco de lesão renal aguda), compressão medular metastática (dor associada a déficit neurológico progressivo, exige ressonância e conduta urgente) e síndrome da veia cava superior."
+        "titulo": "Diagnóstico",
+        "conteudo": "A confirmação histopatológica por biópsia é etapa obrigatória antes de qualquer tratamento oncológico específico, permitindo não apenas confirmar malignidade mas também definir o tipo histológico exato e, cada vez mais, o perfil molecular/genético do tumor, que orienta terapias-alvo específicas. O estadiamento por imagem (tomografia, ressonância, PET-CT conforme o tipo tumoral) é realizado após a confirmação histológica para definir a extensão da doença e planejar o tratamento mais apropriado."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "As modalidades terapêuticas oncológicas — cirurgia, radioterapia, quimioterapia, terapia-alvo e imunoterapia — são frequentemente combinadas conforme o tipo tumoral, o estádio e o objetivo terapêutico (curativo em doença localizada, versus paliativo/de controle em doença metastática/avançada). Cuidados paliativos devem ser integrados precocemente ao cuidado oncológico quando indicado, não apenas reservados ao final da vida, com evidência de melhora de qualidade de vida e, em alguns estudos, até de sobrevida quando iniciados precocemente em doença avançada."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Neutropenia febril</span> (febre em paciente neutropênico pós-quimioterapia) é emergência oncológica que exige antibioticoterapia empírica de amplo espectro imediata, sem aguardar confirmação microbiológica."
+        "conteudo": "Síndrome de compressão medular (dor dorsal associada a déficit motor/sensitivo progressivo em membros e disfunção esfincteriana) em paciente oncológico é emergência que exige ressonância magnética e corticoide imediatos, seguidos de radioterapia ou cirurgia descompressiva urgente, pelo risco de paraplegia permanente se o tratamento for postergado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A obrigatoriedade de confirmação histopatológica antes de qualquer tratamento oncológico definitivo (mesmo diante de imagem altamente sugestiva de malignidade) é cobrança certa. O sistema de estadiamento TNM e o reconhecimento de emergências oncológicas específicas (síndrome de compressão medular, síndrome de veia cava superior, síndrome de lise tumoral) como situações que exigem intervenção imediata também são frequentemente exigidos em provas de residência."
       }
     ]
   },
@@ -4257,7 +4305,7 @@
     "titulo": "Emergências Toxicológicas e Anafilaxia",
     "resumo": "Toxíndromes, antídotos específicos e o tratamento imediato com adrenalina na anafilaxia.",
     "revisado": false,
-    "fonte": "Associação Brasileira de Alergia e Imunologia — Guia Prático de Anafilaxia 2023; American College of Medical Toxicology",
+    "fonte": "Sociedade Brasileira de Alergia e Imunologia — Guia Prático de Anafilaxia; Sociedade Brasileira de Toxicologia; World Allergy Organization Guidelines",
     "mnemonicos": [
       {
         "palavra": "Seco, quente, vermelho, louco, cego",
@@ -4266,24 +4314,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Abordagem geral das intoxicações exógenas",
-        "conteudo": "Suporte às funções vitais (ABC) é sempre a prioridade inicial, seguido de identificação do agente (história, embalagens, exame físico dirigido a toxíndromes), medidas de descontaminação (carvão ativado em intoxicações orais recentes selecionadas) e uso de antídotos específicos quando disponíveis."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A anafilaxia é uma reação de hipersensibilidade sistêmica grave e potencialmente fatal, mediada predominantemente por IgE, com degranulação maciça de mastócitos e basófilos liberando histamina e outros mediadores, causando vasodilatação sistêmica, aumento da permeabilidade vascular, broncoespasmo e edema de vias aéreas superiores — combinação que pode levar rapidamente a choque distributivo e obstrução respiratória fatal se não tratada imediatamente."
       },
       {
-        "titulo": "Principais toxíndromes",
-        "conteudo": "Colinérgica (miose, sialorreia, broncorreia, bradicardia — organofosforados, tratada com atropina), anticolinérgica (\"seco, quente, vermelho, louco, cego\" — antidepressivos tricíclicos, anti-histamínicos), opioide (miose, depressão respiratória, rebaixamento — naloxona como antídoto) e simpaticomimética (agitação, midríase, taquicardia, hipertensão — cocaína, anfetaminas)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Anafilaxia manifesta-se com envolvimento cutâneo-mucoso (urticária, angioedema, prurido) associado a comprometimento respiratório (dispneia, sibilos, estridor por edema de glote) e/ou cardiovascular (hipotensão, síncope) e/ou gastrointestinal (dor abdominal, vômitos), de instalação tipicamente rápida (minutos) após exposição ao agente desencadeante (alimentos, medicamentos, picadas de insetos são os mais comuns)."
       },
       {
-        "titulo": "Intoxicação por paracetamol",
-        "conteudo": "Principal causa de insuficiência hepática aguda induzida por droga. A N-acetilcisteína é o antídoto, com eficácia tempo-dependente — idealmente iniciada até 8h da ingestão, guiada pelo nomograma de Rumack-Matthew."
+        "titulo": "Exame físico",
+        "conteudo": "Urticária generalizada e angioedema (especialmente periorbitário e labial) são achados cutâneos característicos, embora possam estar ausentes em uma minoria significativa de casos graves (não devem ser exigidos para iniciar o tratamento). Estridor (obstrução de via aérea superior) e sibilância difusa (broncoespasmo) indicam comprometimento respiratório grave; hipotensão e taquicardia indicam comprometimento cardiovascular."
       },
       {
-        "titulo": "Anafilaxia",
-        "conteudo": "Reação de hipersensibilidade sistêmica grave e potencialmente fatal, geralmente envolvendo pele/mucosas associada a comprometimento respiratório e/ou cardiovascular. A adrenalina intramuscular (face lateral da coxa) é o tratamento de primeira linha e não deve ser postergada por dúvida diagnóstica — anti-histamínicos e corticoides são adjuvantes, não substitutos."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico de anafilaxia é clínico e imediato, não devendo aguardar confirmação laboratorial (dosagem de triptase sérica pode ser colhida para confirmação retrospectiva, mas jamais deve atrasar o tratamento). Os critérios diagnósticos combinam início agudo com envolvimento de pele/mucosa associado a comprometimento respiratório ou cardiovascular, OU hipotensão isolada após exposição a alérgeno conhecido do paciente, OU envolvimento de múltiplos sistemas após exposição a alérgeno provável."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Epinefrina (adrenalina) intramuscular na face lateral da coxa é o tratamento de primeira linha e deve ser administrada imediatamente diante de suspeita de anafilaxia — não há contraindicação absoluta ao seu uso nessa situação com risco de vida, e o atraso na sua administração é o principal fator associado a desfechos fatais. Anti-histamínicos e corticoide são tratamentos adjuvantes para os sintomas cutâneos e para prevenção de reação bifásica tardia, mas nunca substituem a epinefrina como primeira medida. Observação hospitalar por período prolongado (várias horas) é recomendada pelo risco de reação bifásica (recorrência dos sintomas horas após resolução aparente inicial)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Atraso na administração de adrenalina</span> é o principal fator associado a desfechos fatais em anafilaxia — na dúvida diagnóstica diante de quadro sugestivo, a conduta é aplicar a adrenalina, não observar e esperar."
+        "conteudo": "<span class=\"red-flag\">Estridor, dispneia progressiva ou hipotensão após exposição a alérgeno conhecido ou suspeito</span> exige administração imediata de epinefrina intramuscular — a hesitação em administrar epinefrina por medo de efeitos colaterais cardiovasculares é erro grave e frequente, já que os riscos da anafilaxia não tratada superam largamente os riscos da medicação nessa situação de emergência."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A epinefrina intramuscular como tratamento de primeira linha (não anti-histamínico, não corticoide) é a cobrança mais importante e recorrente de todo o tema, testada repetidamente em questões que tentam induzir o candidato a escolher tratamentos adjuvantes como primeira conduta. O risco de reação bifásica justificando observação prolongada também é frequentemente exigido."
       }
     ]
   },
