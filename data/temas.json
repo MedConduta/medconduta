@@ -387,7 +387,7 @@
     "titulo": "Pneumonia Adquirida na Comunidade (PAC)",
     "resumo": "Diagnóstico, estratificação de gravidade (CURB-65) e tratamento empírico da PAC.",
     "revisado": false,
-    "fonte": "Diretrizes Brasileiras para Pneumonia Adquirida na Comunidade - SBPT; IDSA/ATS Community-Acquired Pneumonia Guidelines (2019)",
+    "fonte": "Sociedade Brasileira de Pneumologia e Tisiologia — Diretriz de Pneumonia Adquirida na Comunidade; IDSA/ATS Guidelines for CAP",
     "mnemonicos": [
       {
         "palavra": "CURB-65",
@@ -396,24 +396,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A pneumonia adquirida na comunidade resulta da infecção do parênquima pulmonar por microrganismos adquiridos fora do ambiente hospitalar, geralmente por microaspiração de flora orofaríngea. Streptococcus pneumoniae permanece o agente bacteriano típico mais comum em todas as faixas etárias; Mycoplasma pneumoniae, Chlamydophila pneumoniae e Legionella representam os agentes atípicos, com apresentação clínica e resposta terapêutica distintas dos típicos."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Febre, tosse produtiva, dor pleurítica e dispneia compõem o quadro típico. Pneumonias atípicas classicamente cursam com quadro mais insidioso, tosse seca proeminente e sintomas extrapulmonares (cefaleia, mialgia, sintomas gastrointestinais na Legionella) — embora essa diferenciação clínica clássica tenha valor preditivo limitado na prática e não deva substituir a avaliação de gravidade objetiva."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Síndrome de consolidação pulmonar (macicez, aumento do frêmito toracovocal, estertores crepitantes, broncofonia/pectorilóquia áfona) é o achado clássico correspondente à área acometida. Taquipneia é o sinal isolado de maior valor para estimar gravidade e deve ser sistematicamente aferida e registrada em todo paciente com suspeita de pneumonia."
+      },
+      {
         "titulo": "Diagnóstico",
-        "conteudo": "Quadro clínico compatível (tosse, febre, dispneia, dor pleurítica) associado a infiltrado novo na radiografia de tórax."
+        "conteudo": "Radiografia de tórax com infiltrado/consolidação confirma o diagnóstico em conjunto com o quadro clínico compatível. Os escores CURB-65 (Confusão, Ureia elevada, frequência Respiratória ≥30, PA Baixa, idade ≥65) ou PSI (Pneumonia Severity Index) estratificam gravidade e orientam a decisão entre tratamento ambulatorial, internação em enfermaria ou UTI — ferramenta fundamental e amplamente utilizada tanto na prática quanto em provas."
       },
       {
-        "titulo": "Estratificação de gravidade",
-        "conteudo": "O escore CURB-65 auxilia a decisão entre tratamento ambulatorial (0-1 ponto), internação em enfermaria (2 pontos) ou consideração de UTI (≥3 pontos)."
-      },
-      {
-        "titulo": "Tratamento empírico",
-        "conteudo": "Ambulatorial: amoxicilina ou macrolídeo em pacientes hígidos. Internados: betalactâmico associado a macrolídeo, ou monoterapia com quinolona respiratória, ajustados conforme gravidade e comorbidades."
-      },
-      {
-        "titulo": "Duração e critérios de estabilidade",
-        "conteudo": "Duração mínima habitual de 5 dias, condicionada à melhora clínica e estabilidade (afebril, sem instabilidade hemodinâmica ou hipoxemia) por pelo menos 48-72h antes da suspensão."
+        "titulo": "Tratamento",
+        "conteudo": "PAC ambulatorial em paciente previamente hígido é tratada com amoxicilina ou macrolídeo; na presença de comorbidades, associação de betalactâmico com macrolídeo ou fluoroquinolona respiratória isolada é preferida, cobrindo tanto típicos quanto atípicos. PAC internada segue esquemas semelhantes por via endovenosa, com escalonamento para cobertura de Pseudomonas ou MRSA conforme fatores de risco específicos e gravidade (necessidade de UTI)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Insuficiência respiratória, hipotensão ou sinais de sepse associados à PAC</span> indicam gravidade e necessidade de suporte intensivo."
+        "conteudo": "<span class=\"red-flag\">CURB-65 ≥3, hipotensão refratária, necessidade de ventilação mecânica ou vasopressor</span> indicam pneumonia grave com necessidade de UTI — o reconhecimento precoce da gravidade pelos escores validados evita subestimação e atraso na escalada terapêutica adequada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O escore CURB-65 (seus componentes e pontos de corte para decisão de internação) é cobrança certíssima e recorrente. A taquipneia como sinal isolado mais sensível de gravidade, e a escolha do esquema antibiótico conforme o ambiente de tratamento (ambulatorial vs. internado vs. UTI), também são frequentemente exigidas."
       }
     ]
   },
@@ -1732,7 +1740,7 @@
     "titulo": "Dengue e Arboviroses",
     "resumo": "Classificação de risco, sinais de alarme e manejo hidratação conforme gravidade.",
     "revisado": false,
-    "fonte": "Ministerio da Saude - Guia de Manejo Clinico do Dengue; OMS/WHO Dengue Guidelines (2009, atualizacao 2023)",
+    "fonte": "Ministério da Saúde — Guia de Manejo Clínico da Dengue (2024); Organização Pan-Americana da Saúde",
     "mnemonicos": [
       {
         "palavra": "SINAIS DE ALARME",
@@ -1741,24 +1749,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A dengue é causada por um dos quatro sorotipos do vírus da dengue (DENV 1-4), transmitido pelo mosquito Aedes aegypti. A infecção secundária por sorotipo diferente do primeiro é o principal fator de risco para as formas graves da doença, pelo fenômeno de amplificação dependente de anticorpos (anticorpos não neutralizantes da infecção prévia facilitam a entrada viral em células imunes, amplificando a resposta inflamatória). O extravasamento plasmático por aumento da permeabilidade vascular é o mecanismo central das formas graves."
+      },
+      {
         "titulo": "Quadro clínico",
-        "conteudo": "Febre associada a pelo menos dois sintomas como mialgia, cefaleia, exantema, artralgia, dor retro-orbitária ou petéquias."
+        "conteudo": "Febre alta de início abrupto associada a cefaleia, mialgia, artralgia intensa (\"febre quebra-ossos\"), dor retro-orbitária e exantema são as manifestações da fase febril inicial. Entre o 3º e o 7º dia, coincidindo frequentemente com a defervescência da febre, ocorre a fase crítica, período de maior risco de extravasamento plasmático e sinais de alarme, exigindo vigilância redobrada exatamente quando o paciente e a família tendem a acreditar que a doença está melhorando."
       },
       {
-        "titulo": "Classificação de risco",
-        "conteudo": "Dengue sem sinais de alarme, dengue com sinais de alarme, e dengue grave (extravasamento plasmático importante, sangramento grave ou disfunção orgânica)."
+        "titulo": "Exame físico",
+        "conteudo": "Prova do laço positiva (petéquias formadas após insuflação do manguito de PA) sugere fragilidade capilar aumentada. Sinais de alarme ao exame incluem dor abdominal intensa e contínua, hepatomegalia dolorosa, acúmulo de líquidos (derrame pleural, ascite) e sangramento de mucosas — a presença de qualquer um exige classificação de risco mais elevada e observação hospitalar."
       },
       {
-        "titulo": "Sinais de alarme",
-        "conteudo": "Dor abdominal intensa, vômitos persistentes, sangramento de mucosa, hipotensão postural, hepatomegalia e aumento do hematócrito com queda rápida de plaquetas."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é predominantemente clínico-epidemiológico em áreas endêmicas durante surtos. Confirmação laboratorial por detecção de antígeno NS1 (mais sensível nos primeiros dias), sorologia IgM/IgG (a partir do 5º-6º dia) ou RT-PCR (mais precoce). O hemograma seriado (hematócrito e plaquetas) é fundamental no acompanhamento clínico: hemoconcentração (aumento do hematócrito) reflete extravasamento plasmático em curso, e sua correlação com a plaquetopenia orienta a classificação de gravidade e a conduta."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Hidratação oral ou venosa conforme classificação de risco; evitar AINEs e AAS pelo risco aumentado de sangramento."
+        "conteudo": "Não há tratamento antiviral específico; o manejo é de suporte, com hidratação adequada (oral nos casos sem sinais de alarme, venosa conforme classificação de risco) sendo a intervenção mais importante e determinante do desfecho. Analgésicos/antitérmicos (paracetamol) são usados para sintomas, com contraindicação formal de AAS e outros anti-inflamatórios não esteroidais pelo risco de sangramento e de síndrome de Reye. A classificação de risco (A, B, C, D) do Ministério da Saúde orienta objetivamente a conduta e o local de tratamento (domiciliar, observação, ou internação/UTI)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sinais de choque (extravasamento plasmático grave)</span> caracterizam dengue grave, exigindo reposição volêmica agressiva e monitorização intensiva."
+        "conteudo": "<span class=\"red-flag\">Dor abdominal intensa e contínua, vômitos persistentes, sangramento de mucosas, letargia ou hepatomegalia dolorosa</span> são sinais de alarme que exigem hidratação venosa e observação hospitalar imediata, pelo risco de evolução rápida para dengue grave com choque por extravasamento plasmático."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A contraindicação de AAS/AINEs na dengue (risco de sangramento) é cobrança certíssima. Os sinais de alarme do Ministério da Saúde e a classificação de risco (A/B/C/D) com suas condutas correspondentes também são extremamente recorrentes, assim como o entendimento de que a fase crítica (maior risco) coincide com a queda da febre, não com seu pico."
       }
     ]
   },
@@ -1769,7 +1785,7 @@
     "titulo": "Infecções Sexualmente Transmissíveis — Sífilis",
     "resumo": "Estágios clínicos, diagnóstico sorológico e tratamento da sífilis, incluindo rastreio na gestação.",
     "revisado": false,
-    "fonte": "Ministerio da Saude - PCDT para Atencao Integral as Pessoas com Infeccoes Sexualmente Transmissiveis; CDC STI Treatment Guidelines",
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (2022)",
     "mnemonicos": [
       {
         "palavra": "PRIMÁRIA → SECUNDÁRIA → LATENTE → TERCIÁRIA",
@@ -1778,24 +1794,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Estágios clínicos",
-        "conteudo": "Sífilis primária (cancro duro indolor no local de inoculação), secundária (lesões cutâneo-mucosas, como roséola e condiloma plano), latente (assintomática) e terciária (comprometimento cardiovascular, neurológico e gomas sifilíticas)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A sífilis é causada pela bactéria Treponema pallidum, transmitida predominantemente por via sexual e verticalmente (mãe-filho, causando sífilis congênita). A doença evolui em estágios bem definidos ao longo do tempo se não tratada: primária, secundária, latente (assintomática) e terciária, cada uma com manifestações clínicas características que refletem diferentes fases da resposta imune e da disseminação do patógeno."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Sífilis primária: cancro duro, úlcera única, indolor, de bordas endurecidas, geralmente genital, que resolve espontaneamente mesmo sem tratamento. Sífilis secundária (semanas a poucos meses depois): exantema maculopapular que classicamente acomete palmas e plantas (achado semiológico muito valorizado), condiloma plano, linfadenopatia generalizada. Sífilis terciária (anos depois, em pacientes não tratados): gomas sifilíticas, aneurisma de aorta, e neurossífilis (tabes dorsalis, demência)."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "O cancro duro (úlcera indolor de bordas endurecidas) é achado praticamente patognomônico de sífilis primária — sua indolor característica o diferencia de outras úlceras genitais sexualmente transmissíveis, geralmente dolorosas (como o cancro mole). Exantema palmoplantar em paciente com quadro sistêmico leve é altamente sugestivo de sífilis secundária, achado semiológico clássico e recorrente em provas."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Testes não treponêmicos (VDRL/RPR, usados também para seguimento) e testes treponêmicos (FTA-ABS, testes rápidos) confirmam o diagnóstico."
+        "conteudo": "Testes treponêmicos (FTA-ABS, testes rápidos, quimioluminescência) detectam anticorpos específicos e permanecem positivos por toda a vida mesmo após tratamento bem-sucedido. Testes não treponêmicos (VDRL, RPR) quantificam títulos, úteis para monitorização de resposta terapêutica (queda de pelo menos 4 vezes o título confirma sucesso do tratamento) — a estratégia diagnóstica combina ambos os tipos de teste, um como triagem e outro como confirmação, conforme o fluxograma vigente."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Penicilina G benzatina é o tratamento de escolha, com dose e número de aplicações conforme o estágio da doença."
-      },
-      {
-        "titulo": "Sífilis na gestação",
-        "conteudo": "Rastreio obrigatório no pré-natal (idealmente no 1º e 3º trimestres), pelo risco de sífilis congênita em caso de tratamento inadequado ou tardio."
+        "conteudo": "Penicilina benzatina é o tratamento de escolha em todos os estágios, sendo o único tratamento comprovadamente eficaz e seguro na gestação (nenhuma alternativa substitui a penicilina em gestante, exigindo dessensibilização em caso de alergia relatada) — o esquema (dose única ou múltiplas doses semanais) varia conforme o estágio da doença. O seguimento com VDRL seriado é obrigatório para confirmar resposta adequada e detectar possível falha terapêutica ou reinfecção."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Neurossífilis e a reação de Jarisch-Herxheimer</span> (piora transitória de sintomas após início do tratamento) exigem atenção e manejo específicos."
+        "conteudo": "<span class=\"red-flag\">Gestante com sífilis não tratada ou tratada inadequadamente</span> tem risco elevado de sífilis congênita, com consequências graves para o feto/recém-nascido — o tratamento da gestante e de sua(s) parceria(s) sexual(is) deve ser garantido e monitorizado rigorosamente durante todo o pré-natal."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A obrigatoriedade da penicilina benzatina na gestante (com dessensibilização em caso de alergia, nunca substituição por outro antibiótico) é cobrança certíssima e um dos pontos mais importantes de toda a obstetrícia/infectologia em provas de residência. A diferenciação entre testes treponêmicos e não treponêmicos, e o uso do VDRL para monitorização terapêutica, também são frequentemente exigidos."
       }
     ]
   },
@@ -2291,7 +2315,7 @@
     "titulo": "Infecção pelo HIV e AIDS",
     "resumo": "Diagnóstico, indicação universal de TARV e profilaxias pré e pós-exposição.",
     "revisado": false,
-    "fonte": "Ministério da Saúde - PCDT para Manejo da Infecção pelo HIV em Adultos; WHO Consolidated Guidelines on HIV",
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Manejo da Infecção pelo HIV em Adultos (2024)",
     "mnemonicos": [
       {
         "palavra": "TARV PARA TODOS",
@@ -2300,24 +2324,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "O HIV infecta preferencialmente linfócitos T CD4+, utilizando-os para replicação e progressivamente destruindo-os, causando imunodeficiência progressiva. A contagem de CD4 correlaciona-se diretamente com o risco de infecções oportunistas específicas, permitindo antecipar quais complicações são mais prováveis em cada faixa de imunossupressão. Sem tratamento, a progressão da infecção aguda para a síndrome de imunodeficiência adquirida (AIDS) ocorre tipicamente ao longo de anos."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "A infecção aguda pode se manifestar como síndrome mononucleose-like (febre, faringite, linfadenopatia, exantema), frequentemente não reconhecida clinicamente. A fase crônica assintomática pode durar anos. Doença avançada (AIDS) manifesta-se com infecções oportunistas características de acordo com o grau de imunossupressão: candidíase oral/esofágica, pneumocistose (CD4 <200), toxoplasmose cerebral e tuberculose disseminada (CD4 muito baixo), entre outras."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Candidíase oral (placas esbranquiçadas removíveis) em adulto sem outro fator de imunossupressão conhecido deve levantar suspeita de infecção por HIV. Linfadenopatia generalizada persistente, perda de peso significativa e sinais de infecções oportunistas específicas (achados neurológicos focais na toxoplasmose cerebral, por exemplo) refletem estágios mais avançados da doença."
+      },
+      {
         "titulo": "Diagnóstico",
-        "conteudo": "Testes rápidos seguidos de confirmação conforme fluxograma do Ministério da Saúde; carga viral e contagem de CD4 são usadas para estadiamento e monitoramento, não para diagnóstico inicial."
+        "conteudo": "O fluxograma diagnóstico atual utiliza testes de quarta geração (detectam tanto antígeno p24 quanto anticorpos, reduzindo a janela imunológica) como triagem inicial, com confirmação por teste molecular ou segundo imunoensaio de fluxograma diferente. A contagem de linfócitos T CD4+ e a carga viral são exames centrais para estadiamento, decisão terapêutica e monitorização de resposta ao tratamento antirretroviral ao longo do seguimento."
       },
       {
-        "titulo": "Tratamento antirretroviral (TARV)",
-        "conteudo": "Indicada para todos os pacientes diagnosticados, independentemente do CD4, com esquema preferencial atual definido pelo protocolo nacional."
-      },
-      {
-        "titulo": "Infecções oportunistas",
-        "conteudo": "O risco aumenta conforme a queda do CD4. Pneumocistose, toxoplasmose cerebral e tuberculose estão entre as mais relevantes no contexto brasileiro."
-      },
-      {
-        "titulo": "Profilaxia pré e pós-exposição",
-        "conteudo": "PrEP (profilaxia pré-exposição) para populações de maior risco, e PEP (profilaxia pós-exposição) iniciada idealmente em até 72 horas após exposição de risco, por 28 dias."
+        "titulo": "Tratamento",
+        "conteudo": "A terapia antirretroviral combinada (geralmente três drogas de pelo menos duas classes distintas) está indicada a todo paciente diagnosticado, independentemente da contagem de CD4 — recomendação atual de tratamento universal e imediato ao diagnóstico, abandonando o critério antigo de aguardar queda de CD4 para iniciar. Esquemas modernos baseados em inibidores de integrase (dolutegravir) são preferenciais pela alta eficácia, boa tolerabilidade e barreira genética à resistência. Profilaxia pré-exposição (PrEP) e pós-exposição (PEP) são estratégias de prevenção combinada disponíveis pelo SUS para populações de risco."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">CD4 muito baixo associado a sintomas neurológicos ou respiratórios</span> exige investigação urgente de infecção oportunista."
+        "conteudo": "<span class=\"red-flag\">Cefaleia com déficit neurológico focal, convulsão ou febre associada a CD4 muito baixo</span> deve levantar suspeita de toxoplasmose cerebral (a causa mais comum de lesão expansiva cerebral em HIV/AIDS) ou outra infecção oportunista do sistema nervoso central, exigindo investigação e tratamento empírico precoce."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A recomendação de início universal e imediato de terapia antirretroviral ao diagnóstico (independente do CD4) é atualização de diretriz muito cobrada em provas recentes. A associação entre contagem de CD4 e o tipo específico de infecção oportunista esperada (pneumocistose <200, toxoplasmose e criptococose em CD4 muito baixo) também é frequentemente exigida em questões de correlação clínica."
       }
     ]
   },
@@ -3776,7 +3808,7 @@
     "titulo": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
     "resumo": "Coinfecção gonococo-clamídia, herpes genital, HPV e a lógica do tratamento sindrômico de ISTs.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com IST (PCDT IST) 2022",
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para IST (2022); CDC Sexually Transmitted Infections Treatment Guidelines",
     "mnemonicos": [
       {
         "palavra": "Trate os dois",
@@ -3785,24 +3817,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Gonorreia e clamídia",
-        "conteudo": "Frequentemente ocorrem em coinfecção. Uretrite/cervicite com corrimento — gonorreia costuma ser mais purulenta, clamídia mais discreta ou assintomática (até 70% das mulheres infectadas). O tratamento preconizado combina ceftriaxona (gonorreia) e azitromicina (clamídia), mesmo sem confirmação laboratorial de ambas, pela alta taxa de coinfecção."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Gonorreia (Neisseria gonorrhoeae) e clamídia (Chlamydia trachomatis) são as principais causas de uretrite/cervicite não sifilítica, frequentemente coexistindo na mesma infecção, o que justifica o tratamento empírico combinado para ambos os agentes mesmo quando apenas um é confirmado laboratorialmente. Ambas podem ascender ao trato genital superior (doença inflamatória pélvica em mulheres, epididimite em homens) se não tratadas adequadamente, com risco de sequelas reprodutivas (infertilidade, gravidez ectópica)."
       },
       {
-        "titulo": "Herpes genital",
-        "conteudo": "Vesículas dolorosas agrupadas sobre base eritematosa, com tendência a recorrência. Diagnóstico predominantemente clínico. O tratamento com aciclovir ou valaciclovir reduz duração dos episódios e frequência de recorrências, mas não promove cura definitiva (o vírus permanece latente)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Corrimento uretral purulento e disúria são característicos da gonorreia sintomática em homens; a clamídia frequentemente causa quadro mais discreto ou assintomático, especialmente em mulheres, o que contribui para sua transmissão silenciosa e complicações tardias não reconhecidas precocemente. Conjuntivite gonocócica neonatal (oftalmia neonatorum) é complicação grave da transmissão vertical não prevenida."
       },
       {
-        "titulo": "HPV e condiloma acuminado",
-        "conteudo": "Verrugas genitais são causadas predominantemente por tipos de baixo risco oncogênico (6 e 11). Os tipos de alto risco oncogênico (16 e 18) estão associados ao câncer de colo do útero. O tratamento das lesões visíveis inclui ácido tricloroacético, eletrocauterização ou crioterapia."
+        "titulo": "Exame físico",
+        "conteudo": "Corrimento uretral ou cervical purulento à expressão, e sinais de complicação ascendente (dor pélvica na DIP, dor testicular na epididimite) devem ser ativamente pesquisados. Muitas infecções por clamídia, particularmente em mulheres, cursam sem achados objetivos relevantes ao exame, reforçando a importância do rastreamento em populações sexualmente ativas de risco, independentemente de sintomas."
       },
       {
-        "titulo": "Abordagem sindrômica",
-        "conteudo": "O Ministério da Saúde preconiza o tratamento sindrômico — por síndrome clínica (corrimento uretral, corrimento vaginal, úlcera genital) — já na primeira consulta, sem aguardar resultado laboratorial, para reduzir a cadeia de transmissão."
+        "titulo": "Diagnóstico",
+        "conteudo": "Testes de amplificação de ácido nucleico (NAAT) em amostra de urina ou swab são o método mais sensível e atualmente preferido para diagnóstico de ambas as infecções. Devido à alta frequência de coinfecção, a abordagem sindrômica no Brasil recomenda tratamento empírico simultâneo para gonorreia e clamídia diante de corrimento uretral/cervical, sem aguardar confirmação laboratorial específica antes de iniciar o tratamento."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento padrão combina ceftriaxona (gonorreia) com azitromicina ou doxiciclina (clamídia), cobrindo ambos os agentes simultaneamente pela alta taxa de coinfecção. É fundamental o tratamento de todas as parcerias sexuais dos últimos 60 dias, mesmo assintomáticas, para prevenir reinfecção e interromper a cadeia de transmissão — abstinência sexual até completar o tratamento e resolução dos sintomas em ambos os parceiros é recomendação padrão."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Toda IST diagnosticada deve motivar a oferta de testagem para outras ISTs (incluindo sífilis e HIV) e a convocação dos parceiros sexuais para tratamento, interrompendo a cadeia de transmissão."
+        "conteudo": "Corrimento uretral/cervical não tratado ou tratado inadequadamente, evoluindo com dor pélvica progressiva ou febre, sugere doença inflamatória pélvica em curso — situação com risco de sequela reprodutiva permanente (infertilidade tubária) se o tratamento não for iniciado prontamente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O tratamento empírico simultâneo para gonorreia E clamídia diante de corrimento uretral (abordagem sindrômica, sem aguardar confirmação laboratorial) é cobrança certa e um dos pilares do manejo sindrômico de IST no Brasil. A obrigatoriedade de tratar todas as parcerias sexuais recentes, independentemente de sintomas, também é ponto frequentemente exigido."
       }
     ]
   },
@@ -3813,7 +3853,7 @@
     "titulo": "Zika, Chikungunya e Febre Amarela",
     "resumo": "Diferenciação clínica entre as principais arboviroses além da dengue e suas complicações características.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde 2024 (capítulos de Chikungunya, Zika e Febre Amarela)",
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Organização Pan-Americana da Saúde",
     "mnemonicos": [
       {
         "palavra": "Artralgia incapacitante = Chikungunya",
@@ -3822,24 +3862,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Chikungunya",
-        "conteudo": "Febre alta de início súbito associada a poliartralgia intensa e simétrica (mãos, punhos, tornozelos), muitas vezes incapacitante. Pode evoluir para fase crônica com artralgia persistente por meses a anos, diferentemente do padrão habitual da dengue."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Zika e chikungunya são transmitidos pelo mesmo vetor da dengue (Aedes aegypti), compartilhando área de circulação e apresentação clínica inicial semelhante, o que exige diagnóstico diferencial cuidadoso. A febre amarela é transmitida pelo Aedes aegypti (ciclo urbano, hoje raro no Brasil) ou por mosquitos do gênero Haemagogus/Sabethes (ciclo silvestre, forma predominante atual), causando hepatite viral grave com necrose hepatocelular maciça nos casos graves."
       },
       {
-        "titulo": "Zika",
-        "conteudo": "Quadro geralmente mais brando: febre baixa ou ausente, exantema pruriginoso, hiperemia conjuntival não purulenta e artralgia leve. A principal preocupação é a síndrome congênita do Zika, quando a infecção ocorre durante a gestação (microcefalia e outras malformações do sistema nervoso central fetal)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Zika causa quadro geralmente leve, com exantema pruriginoso proeminente, conjuntivite não purulenta e febre baixa — sua importância principal está na síndrome congênita quando adquirida na gestação (microcefalia e outras malformações fetais). Chikungunya causa artralgia intensa e incapacitante (frequentemente o sintoma mais marcante, podendo persistir por meses na forma crônica), com febre alta de início súbito. Febre amarela grave apresenta período de remissão seguido de período de intoxicação com icterícia, hemorragias e insuficiência hepática/renal (o chamado \"reaparecimento\" da febre em fase mais grave)."
       },
       {
-        "titulo": "Febre amarela",
-        "conteudo": "Forma leve autolimitada na maioria dos casos. A forma grave (cerca de 15%) cursa com período de intoxicação — icterícia, insuficiência hepática e renal, manifestações hemorrágicas — após uma remissão transitória inicial, com letalidade elevada. Prevenção por vacina de dose única, contraindicada em algumas situações de imunossupressão e alergia grave a ovo."
+        "titulo": "Exame físico",
+        "conteudo": "Exantema maculopapular pruriginoso e hiperemia conjuntival não purulenta são sugestivos de Zika. Edema periarticular e dor intensa à mobilização de pequenas articulações (mãos, punhos, tornozelos) são característicos de chikungunya. Icterícia associada a sinais de sangramento e sinal de Faget (dissociação pulso-temperatura, com bradicardia relativa apesar da febre alta) são achados clássicos, embora nem sempre presentes, da febre amarela grave."
       },
       {
-        "titulo": "Diagnóstico diferencial",
-        "conteudo": "O quadro clínico se sobrepõe na fase aguda febril, exigindo atenção a sinais discriminadores: artralgia intensa incapacitante sugere chikungunya; exantema pruriginoso e conjuntivite sugerem zika; icterícia após período de remissão sugere febre amarela — sempre considerando o contexto epidemiológico local."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é predominantemente clínico-epidemiológico em contexto de circulação viral conhecida, confirmado por RT-PCR na fase aguda (primeiros dias) ou sorologia (IgM) em fase mais tardia, para os três agravos. Diante de história de picada de mosquito silvestre em área endêmica com quadro sugestivo, deve-se notificar e investigar febre amarela com prioridade absoluta, dado seu potencial de gravidade e necessidade de resposta rápida de vigilância em saúde."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Não há tratamento antiviral específico para nenhuma das três arboviroses; o manejo é sintomático e de suporte (hidratação, analgesia com paracetamol, evitando AAS/AINEs pelo risco de sangramento, especialmente antes de excluir dengue como diagnóstico diferencial). A vacinação contra febre amarela é medida de prevenção primária eficaz e amplamente disponível, sendo fundamental em áreas de risco e para viajantes. Chikungunya crônica com artralgia persistente pode requerer analgesia prolongada e, em casos selecionados, drogas modificadoras de doença reumatológica."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Gestante com suspeita de zika</span> deve ser encaminhada para pré-natal de alto risco e investigação de malformações fetais. Febre amarela com icterícia e manifestações hemorrágicas configura forma grave, exigindo internação e suporte intensivo."
+        "conteudo": "<span class=\"red-flag\">Icterícia, sangramento e sinal de Faget após período de remissão da febre</span>, especialmente em contexto de exposição a área de mata/silvestre sem vacinação prévia, indica febre amarela em fase grave — condição de notificação compulsória imediata pelo risco de surto e alta letalidade nessa fase."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A artralgia intensa e incapacitante como sintoma cardinal e diferenciador de chikungunya, e a síndrome congênita associada ao Zika na gestação (microcefalia), são cobranças certas. O sinal de Faget na febre amarela grave e a distinção entre ciclo urbano (histórico) e silvestre (atual, predominante no Brasil) também são frequentemente exigidos."
       }
     ]
   },
@@ -7414,7 +7462,7 @@
     "titulo": "Doença de Chagas",
     "resumo": "Transmissão pelo barbeiro, fase aguda com sinal de Romaña e a cardiopatia chagásica crônica como principal causa de morbimortalidade.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Cardiologia — Diretriz de Cardiopatia Chagásica",
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Cardiologia — Diretriz de Doença de Chagas",
     "mnemonicos": [
       {
         "palavra": "Romaña é a porta dos olhos",
@@ -7423,24 +7471,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Transmissão e fase aguda",
-        "conteudo": "Causada pelo Trypanosoma cruzi, transmitido principalmente pelo barbeiro (triatomíneo), mas também por via oral, transfusional, congênita e por transplante. A fase aguda é geralmente oligossintomática, podendo cursar com o sinal de Romaña ou chagoma de inoculação."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença de Chagas é causada pelo protozoário Trypanosoma cruzi, transmitido classicamente pelas fezes do inseto triatomíneo (\"barbeiro\") contaminadas durante o repasto sanguíneo, mas hoje mais frequentemente por via oral (ingestão de alimentos contaminados, como açaí ou caldo de cana em áreas endêmicas) no Brasil. Após a fase aguda, a maioria dos indivíduos evolui para a forma crônica indeterminada (assintomática), mas uma parcela desenvolve, décadas depois, cardiopatia chagásica crônica (a manifestação mais grave, com miocardiopatia dilatada e arritmias) ou megassíndromes digestivas (megaesôfago, megacólon) por destruição do plexo nervoso autonômico dos órgãos acometidos."
       },
       {
-        "titulo": "Fase crônica indeterminada",
-        "conteudo": "A maioria dos infectados permanece assintomática por décadas, com sorologia positiva mas sem alterações cardíacas ou digestivas identificáveis — fase que pode durar toda a vida ou evoluir para a forma cardíaca/digestiva."
+        "titulo": "Quadro clínico",
+        "conteudo": "A fase aguda é frequentemente assintomática ou oligossintomática (febre, mal-estar), podendo apresentar sinais de porta de entrada característicos (sinal de Romaña — edema bipalpebral unilateral indolor, ou chagoma de inoculação cutâneo). A fase crônica cardíaca manifesta-se com palpitações, síncope (por arritmias/bloqueios de condução) e sintomas de insuficiência cardíaca em estágios avançados; a forma digestiva causa disfagia progressiva (megaesôfago) ou constipação intensa (megacólon)."
       },
       {
-        "titulo": "Forma cardíaca crônica",
-        "conteudo": "Principal causa de morbimortalidade na doença de Chagas: miocardiopatia dilatada, distúrbios de condução (bloqueio de ramo direito associado a bloqueio divisional anterossuperior esquerdo), arritmias ventriculares malignas e risco de morte súbita, além de fenômenos tromboembólicos por aneurisma de ponta do VE."
+        "titulo": "Exame físico",
+        "conteudo": "O sinal de Romaña (edema bipalpebral unilateral indolor, na porta de entrada conjuntival) é achado praticamente patognomônico da fase aguda quando presente, embora relativamente raro na apresentação atual predominantemente oral. Na fase crônica cardíaca, bradiarritmias, extrassístoles frequentes e sinais de insuficiência cardíaca podem estar presentes conforme a gravidade do acometimento miocárdico."
       },
       {
-        "titulo": "Forma digestiva crônica",
-        "conteudo": "Megaesôfago (disfagia, regurgitação) e megacólon (constipação intensa, risco de volvo) por destruição dos plexos nervosos entéricos."
+        "titulo": "Diagnóstico",
+        "conteudo": "Na fase aguda, a detecção direta do parasita (exame a fresco de sangue periférico) é possível pela alta parasitemia circulante nesse período. Na fase crônica, o diagnóstico é sorológico, exigindo dois testes com metodologias diferentes concordantes (por exemplo, ELISA e imunofluorescência indireta) para confirmação, dada a possibilidade de resultados falso-positivos isolados. O eletrocardiograma (bloqueio de ramo direito associado a hemibloqueio anterior esquerdo é padrão bastante característico) e o ecocardiograma avaliam o acometimento cardíaco na forma crônica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento antiparasitário específico (benznidazol) tem eficácia comprovada na fase aguda e é recomendado também na fase crônica recente/em crianças e jovens, com benefício mais controverso mas ainda indicado em adultos na fase crônica indeterminada sem cardiopatia estabelecida, conforme diretrizes atuais. Na cardiopatia chagásica crônica já estabelecida, o tratamento é predominantemente de suporte à insuficiência cardíaca e das arritmias associadas (podendo incluir marca-passo definitivo em bloqueios de condução avançados), já que o benznidazol não reverte o dano estrutural já instalado."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Bloqueio de ramo direito associado a bloqueio divisional anterossuperior esquerdo</span> no ECG de paciente de área endêmica é achado altamente sugestivo de cardiopatia chagásica crônica, mesmo antes de sintomas evidentes."
+        "conteudo": "Bloqueio de ramo direito associado a hemibloqueio anterior esquerdo em paciente de área endêmica, mesmo assintomático, deve levantar forte suspeita de cardiopatia chagásica subjacente e motivar investigação sorológica e cardiológica completa, pelo risco de progressão silenciosa para arritmias graves e morte súbita."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O padrão eletrocardiográfico de bloqueio de ramo direito + hemibloqueio anterior esquerdo como achado clássico da cardiopatia chagásica é cobrança certa e recorrente. A transmissão oral como via predominante atual no Brasil (superando a vetorial clássica em número de casos agudos) e o sinal de Romaña como achado de porta de entrada também são frequentemente exigidos."
       }
     ]
   },
@@ -7451,7 +7507,7 @@
     "titulo": "Leishmaniose Visceral e Tegumentar",
     "resumo": "Lesão cutânea/mucosa na forma tegumentar e a tríade febre-hepatoesplenomegalia-pancitopenia do calazar.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Manual de Vigilância da Leishmaniose Tegumentar e Visceral",
+    "fonte": "Ministério da Saúde — Manual de Vigilância e Controle da Leishmaniose Visceral e Tegumentar",
     "mnemonicos": [
       {
         "palavra": "Calazar aumenta tudo",
@@ -7460,24 +7516,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Leishmaniose tegumentar",
-        "conteudo": "Transmitida pela picada do mosquito-palha, causa lesões cutâneas ulceradas de bordas elevadas e fundo granuloso, geralmente indolores, podendo também acometer mucosas (forma mucosa — mais grave e desfigurante)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As leishmanioses são causadas por protozoários do gênero Leishmania, transmitidos pela picada de flebotomíneos (mosquito-palha). A leishmaniose visceral (calazar), causada principalmente por Leishmania infantum no Brasil, acomete o sistema reticuloendotelial (medula óssea, baço, fígado), causando pancitopenia progressiva por infiltração medular e hiperesplenismo. A leishmaniose tegumentar causa lesões cutâneas e/ou mucosas localizadas, por resposta imune predominantemente celular contra o parasita na pele/mucosas."
       },
       {
-        "titulo": "Leishmaniose visceral (calazar)",
-        "conteudo": "Causada pela Leishmania infantum, transmitida pelo mesmo vetor. Quadro clínico de febre prolongada, hepatoesplenomegalia importante, emagrecimento e pancitopenia — potencialmente fatal se não tratada. Crianças e imunossuprimidos têm maior risco de formas graves."
+        "titulo": "Quadro clínico",
+        "conteudo": "Leishmaniose visceral manifesta-se com febre prolongada, palidez (anemia), emagrecimento progressivo e hepatoesplenomegalia importante (esplenomegalia classicamente maciça), evoluindo sem tratamento para caquexia e óbito por complicações infecciosas/hemorrágicas da pancitopenia. Leishmaniose tegumentar apresenta-se como úlcera cutânea indolor, de bordas elevadas e fundo granuloso (\"em moldura\"), podendo evoluir, em uma minoria de casos, para acometimento mucoso destrutivo (nasal, oral) anos depois."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Esplenomegalia maciça associada a hepatomegalia e emagrecimento intenso (\"criança/adulto com barriga de sapo e membros finos\") é o quadro clássico da leishmaniose visceral avançada. A úlcera cutânea da forma tegumentar é caracteristicamente indolor, com bordas bem definidas e elevadas — achado semiológico valorizado para diferenciação de outras úlceras cutâneas infecciosas dolorosas."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Leishmaniose tegumentar: exame direto/biópsia da borda da lesão, ou teste de Montenegro. Leishmaniose visceral: sorologia (teste rápido), ou visualização do parasita em aspirado de medula óssea/baço."
+        "conteudo": "Na leishmaniose visceral, o diagnóstico é confirmado por visualização direta do parasita em aspirado de medula óssea (padrão-ouro) ou testes sorológicos (rK39 rápido, amplamente utilizado em campo). Na forma tegumentar, o diagnóstico combina achados clínico-epidemiológicos, teste intradérmico de Montenegro (hipersensibilidade tardia) e identificação parasitológica direta ou histopatológica da lesão."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Antimoniato de meglumina é a droga de primeira linha para ambas as formas no Brasil. Anfotericina B (lipossomal) reservada para casos graves, gestantes, ou falha/contraindicação ao antimonial."
+        "conteudo": "Antimoniato de N-metilglucamina permanece amplamente utilizado no Brasil para ambas as formas, com anfotericina B lipossomal reservada como primeira escolha em gestantes, crianças pequenas, imunossuprimidos, coinfecção com HIV, ou insuficiência renal/cardíaca, situações com maior risco de toxicidade do antimonial. O suporte hematológico (transfusões conforme necessidade) e o tratamento de infecções bacterianas secundárias são importantes complementos no manejo da leishmaniose visceral grave."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Febre prolongada com hepatoesplenomegalia e pancitopenia</span> em área endêmica deve levantar suspeita de leishmaniose visceral — potencialmente fatal sem tratamento, especialmente em crianças pequenas e imunossuprimidos."
+        "conteudo": "<span class=\"red-flag\">Febre prolongada, esplenomegalia maciça e pancitopenia grave em criança de área endêmica</span> exige investigação e tratamento imediatos de leishmaniose visceral, condição potencialmente fatal sem tratamento pela suscetibilidade a infecções bacterianas graves e sangramentos decorrentes da pancitopenia."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tríade febre prolongada + hepatoesplenomegalia + pancitopenia como quadro clássico de calazar é cobrança certíssima. A indicação de anfotericina B lipossomal (em vez de antimonial) em populações de maior risco de toxicidade (gestantes, imunossuprimidos, coinfecção HIV) também é frequentemente exigida em provas mais atuais."
       }
     ]
   },
@@ -7488,7 +7552,7 @@
     "titulo": "Esquistossomose",
     "resumo": "Febre de Katayama na fase aguda e a hipertensão porta por fibrose periportal na forma hepatoesplênica crônica.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Infectologia",
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Organização Mundial da Saúde",
     "mnemonicos": [
       {
         "palavra": "Katayama é febre + eosinofilia",
@@ -7497,24 +7561,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Ciclo e transmissão",
-        "conteudo": "Causada pelo Schistosoma mansoni no Brasil, transmitida pelo contato com água doce contaminada contendo a cercária, liberada por caramujos do gênero Biomphalaria — endêmica em diversas regiões do Nordeste, incluindo Pernambuco."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A esquistossomose mansônica é causada pelo trematódeo Schistosoma mansoni, cujo ciclo envolve o caramujo de água doce do gênero Biomphalaria como hospedeiro intermediário. A infecção ocorre por penetração ativa das cercárias através da pele durante contato com água contaminada. Os ovos depositados pelos vermes adultos nas vênulas mesentéricas causam reação granulomatosa que, na forma crônica, leva à fibrose periportal (fibrose de Symmers), obstruindo o fluxo portal e causando hipertensão portal pré-sinusoidal — com função hepatocelular tipicamente preservada, diferente da cirrose."
       },
       {
-        "titulo": "Fase aguda",
-        "conteudo": "Dermatite cercariana (prurido no local de penetração) seguida, semanas depois, da febre de Katayama (febre, urticária, hepatoesplenomegalia e eosinofilia), decorrente de reação de hipersensibilidade à migração/postura inicial de ovos."
+        "titulo": "Quadro clínico",
+        "conteudo": "A fase aguda (síndrome de Katayama) pode se manifestar com febre, urticária, hepatoesplenomegalia dolorosa e eosinofilia acentuada, semanas após exposição significativa. A forma crônica hepatoesplênica manifesta-se com hipertensão portal (esplenomegalia volumosa, varizes esofágicas com risco de hemorragia digestiva alta), tipicamente com função hepática preservada mesmo em fases avançadas — diferentemente da cirrose de outras etiologias."
       },
       {
-        "titulo": "Fase crônica",
-        "conteudo": "Forma hepatointestinal (mais comum) com diarreia/dor abdominal recorrente. Forma hepatoesplênica (mais grave) por fibrose periportal devido à reação granulomatosa aos ovos retidos no fígado, levando a hipertensão porta com varizes esofágicas e esplenomegalia."
+        "titulo": "Exame físico",
+        "conteudo": "Esplenomegalia, por vezes volumosa, é o achado mais característico da forma hepatoesplênica crônica, associada a circulação colateral abdominal quando há hipertensão portal significativa. Ausência de sinais de insuficiência hepatocelular (icterícia, ascite proeminente, encefalopatia) mesmo com hipertensão portal estabelecida é achado que ajuda a diferenciar da cirrose de outras causas."
       },
       {
-        "titulo": "Diagnóstico e tratamento",
-        "conteudo": "Exame parasitológico de fezes (Kato-Katz) identifica os ovos característicos. Praziquantel é o tratamento de escolha, eficaz e em dose única na maioria dos casos."
+        "titulo": "Diagnóstico",
+        "conteudo": "O exame parasitológico de fezes (método de Kato-Katz, quantificando ovos por grama de fezes) é o exame padrão para diagnóstico e também para avaliar a carga parasitária. Na forma hepatoesplênica crônica, a ultrassonografia abdominal demonstra o padrão característico de fibrose periportal (padrão em \"cano de cachimbo\"), e a endoscopia digestiva alta avalia varizes esofágicas associadas à hipertensão portal."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Praziquantel em dose única é o tratamento de escolha, eficaz contra os vermes adultos e amplamente utilizado em programas de controle de massa em áreas endêmicas. Na forma hepatoesplênica com hipertensão portal e varizes, o manejo das complicações (profilaxia de hemorragia digestiva por varizes, esplenectomia em casos selecionados de hiperesplenismo grave) segue princípios semelhantes aos de outras causas de hipertensão portal."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hematêmese em paciente de área endêmica com hepatoesplenomegalia</span> deve levantar suspeita de hipertensão porta por esquistossomose hepatoesplênica, com risco de sangramento maciço por varizes esofágicas."
+        "conteudo": "Hematêmese em paciente de área endêmica para esquistossomose com esplenomegalia conhecida deve levantar suspeita de sangramento de varizes esofágicas por hipertensão portal esquistossomótica, mesmo sem outros estigmas de hepatopatia, pela preservação característica da função hepatocelular nessa condição."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A fibrose periportal de Symmers com hipertensão portal pré-sinusoidal e função hepática preservada (diferente da cirrose) é cobrança central e recorrente, especialmente relevante para provas em regiões endêmicas do Brasil (incluindo Pernambuco). O método de Kato-Katz para diagnóstico parasitológico e o praziquantel como tratamento de escolha também são frequentemente exigidos."
       }
     ]
   },
@@ -7525,7 +7597,7 @@
     "titulo": "Hanseníase",
     "resumo": "Lesão de pele com perda de sensibilidade como sinal cardinal, classificação operacional e a poliquimioterapia padronizada pela OMS.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Diretrizes para Vigilância, Atenção e Eliminação da Hanseníase; OMS Guidelines for Leprosy",
+    "fonte": "Ministério da Saúde — Guia Prático sobre Hanseníase; Organização Mundial da Saúde",
     "mnemonicos": [
       {
         "palavra": "Mancha que não sente",
@@ -7534,24 +7606,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia e transmissão",
-        "conteudo": "Causada pelo Mycobacterium leprae, transmitida por via respiratória através do contato próximo e prolongado com doentes multibacilares não tratados; período de incubação longo (meses a anos)."
-      },
-      {
-        "titulo": "Classificação operacional",
-        "conteudo": "Paucibacilar (até 5 lesões de pele, baciloscopia negativa) x multibacilar (mais de 5 lesões, ou baciloscopia positiva). A classificação clínica de Madri descreve ainda formas indeterminada, tuberculoide, dimorfa e virchowiana."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A hanseníase é causada pelo Mycobacterium leprae, bacilo de transmissão respiratória prolongada, com tropismo por células de Schwann (nervos periféricos) e pele. A resposta imune do hospedeiro determina o espectro clínico da doença: forte resposta celular (Th1) resulta na forma paucibacilar/tuberculoide, com poucas lesões bem delimitadas e comprometimento neural mais localizado; resposta celular deficiente resulta na forma multibacilar/virchowiana, com lesões numerosas, difusas e maior carga bacilar."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Lesões de pele com alteração de sensibilidade (hipoestesia térmica, dolorosa e depois tátil, nessa ordem) é o achado mais característico. Espessamento de nervos periféricos palpáveis associado a déficit sensitivo/motor."
+        "conteudo": "Lesões de pele com alteração de sensibilidade (térmica, dolorosa e tátil, nessa ordem de perda) são a manifestação cardinal e o achado mais valorizado para suspeita diagnóstica — a hanseníase é a principal causa infecciosa de neuropatia periférica tratável no mundo. Espessamento de nervos periféricos palpáveis (ulnar, fibular comum, tibial posterior) associa-se a déficit motor e sensitivo no território correspondente, podendo levar a incapacidades físicas permanentes se não tratado precocemente."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "O teste de sensibilidade (térmica, dolorosa, tátil) em lesões de pele suspeitas é etapa obrigatória e definidora do exame físico dirigido — lesão de pele com alteração de sensibilidade associada é considerado critério diagnóstico maior isolado. Palpação de nervos periféricos espessados/dolorosos e avaliação de força muscular completam o exame neurológico dirigido, essencial para classificação operacional e detecção precoce de incapacidades."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é eminentemente clínico, baseado nos critérios cardinais (lesão de pele com alteração de sensibilidade, espessamento neural com alteração de função, e/ou baciloscopia positiva). A classificação operacional em paucibacilar (até 5 lesões de pele) ou multibacilar (mais de 5 lesões, ou baciloscopia positiva) determina o esquema e a duração do tratamento poliquimioterápico."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Poliquimioterapia padronizada pela OMS (rifampicina, dapsona e clofazimina), com duração conforme a classificação (paucibacilar: 6 meses; multibacilar: 12 meses). Reações hansênicas exigem manejo específico (corticoide ou talidomida) para prevenir dano neural permanente."
+        "conteudo": "A poliquimioterapia padrão (rifampicina, dapsona, e clofazimina na forma multibacilar) é fornecida gratuitamente pelo Ministério da Saúde, com duração de 6 meses (paucibacilar) ou 12 meses (multibacilar). Reações hansênicas (tipo 1 reversa ou tipo 2/eritema nodoso hansênico) podem ocorrer durante ou após o tratamento, exigindo reconhecimento e manejo específico (corticoide, ou talidomida no eritema nodoso hansênico) para prevenir dano neural adicional irreversível."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Lesão de pele com perda de sensibilidade</span> deve sempre ser investigada ativamente — o diagnóstico e tratamento precoces previnem incapacidades físicas permanentes por dano neural."
+        "conteudo": "<span class=\"red-flag\">Piora aguda de dor/espessamento neural, ou surgimento de novas lesões durante o tratamento</span> sugere reação hansênica em curso, exigindo tratamento imediato (corticoide) para prevenir dano neural permanente — a neurite silenciosa (perda de função sem dor) também deve ser ativamente pesquisada, pois pode causar incapacidade sem sintomas de alarme evidentes."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os critérios cardinais diagnósticos (lesão de pele com alteração de sensibilidade + espessamento neural) e a classificação operacional (paucibacilar vs. multibacilar pelo número de lesões) são cobrança certíssima. O reconhecimento e tratamento das reações hansênicas (especialmente a importância da detecção precoce para prevenir incapacidade neural permanente) também é ponto frequentemente exigido em provas de saúde pública/infectologia."
       }
     ]
   },
@@ -7562,7 +7642,7 @@
     "titulo": "Malária",
     "resumo": "Tríade febril cíclica, diferenciação entre P. vivax e P. falciparum, e o reconhecimento da malária cerebral.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Guia de Tratamento da Malária no Brasil",
+    "fonte": "Ministério da Saúde — Guia de Tratamento da Malária no Brasil (2020, atualização); Organização Mundial da Saúde",
     "mnemonicos": [
       {
         "palavra": "Vivax é terçã benigna, Falciparum mata",
@@ -7571,24 +7651,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia e transmissão",
-        "conteudo": "Causada por espécies de Plasmodium (P. vivax é a mais prevalente no Brasil, predominantemente na região amazônica; P. falciparum é responsável pelas formas mais graves), transmitida pela picada do mosquito Anopheles fêmea infectado."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A malária é causada por protozoários do gênero Plasmodium (P. vivax é a espécie mais comum na região amazônica brasileira; P. falciparum é responsável pelas formas mais graves), transmitidos pela picada do mosquito Anopheles fêmea. O parasita invade e destrói hemácias em ciclos sincronizados, causando hemólise e liberação de mediadores inflamatórios responsáveis pelos paroxismos febris característicos. P. falciparum tem capacidade de causar sequestro de hemácias parasitadas na microcirculação de órgãos vitais, explicando sua maior gravidade (malária cerebral, insuficiência renal, síndrome do desconforto respiratório agudo)."
       },
       {
-        "titulo": "Quadro clínico clássico",
-        "conteudo": "Acessos febris cíclicos associados a calafrios e sudorese profusa, com periodicidade que varia conforme a espécie. Anemia e esplenomegalia são comuns em infecções repetidas/crônicas."
+        "titulo": "Quadro clínico",
+        "conteudo": "Febre paroxística associada a calafrios e sudorese profusa, classicamente em ciclos regulares (a cada 48h no P. vivax, padrão terçã), acompanhada de cefaleia, mialgia e mal-estar. A malária grave por P. falciparum manifesta-se com rebaixamento do nível de consciência (malária cerebral), icterícia, insuficiência renal aguda, hipoglicemia e distúrbios respiratórios, podendo evoluir rapidamente para óbito sem tratamento adequado e oportuno."
       },
       {
-        "titulo": "Malária grave",
-        "conteudo": "Causada por P. falciparum, pode cursar com malária cerebral (rebaixamento do sensório, convulsões), insuficiência renal aguda, edema pulmonar, hipoglicemia grave e CIVD — emergência com alta mortalidade se não tratada rapidamente."
+        "titulo": "Exame físico",
+        "conteudo": "Esplenomegalia é achado comum, especialmente em infecções recorrentes ou crônicas. Icterícia (por hemólise) e sinais de comprometimento neurológico (confusão, convulsão, coma) sinalizam malária grave, exigindo avaliação imediata da espécie envolvida e da parasitemia."
       },
       {
-        "titulo": "Diagnóstico e tratamento",
-        "conteudo": "Gota espessa (padrão-ouro no Brasil) ou testes rápidos identificam o parasita e a espécie. Tratamento específico conforme espécie e gravidade, associado a primaquina para eliminar hipnozoítos hepáticos no caso do P. vivax, prevenindo recaídas."
+        "titulo": "Diagnóstico",
+        "conteudo": "A gota espessa (esfregaço de sangue periférico corado) é o exame padrão-ouro, permitindo tanto o diagnóstico quanto a identificação da espécie e a quantificação da parasitemia, informações essenciais para definir gravidade e conduta. Testes rápidos (imunocromatográficos) são úteis em locais sem microscopia disponível, mas não substituem a gota espessa para diferenciação de espécie e monitorização terapêutica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O esquema terapêutico varia conforme a espécie identificada: P. vivax é tratado com cloroquina (ataque à forma sanguínea) associada à primaquina (elimina as formas hepáticas dormentes/hipnozoítos, prevenindo recidivas tardias características dessa espécie); P. falciparum não complicado é tratado com terapia combinada com artemisinina. Malária grave (por P. falciparum, geralmente) exige tratamento parenteral com artesunato endovenoso e suporte intensivo em ambiente hospitalar."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Rebaixamento do nível de consciência em paciente com malária por P. falciparum</span> caracteriza malária cerebral — emergência com necessidade de tratamento parenteral imediato e suporte intensivo."
+        "conteudo": "<span class=\"red-flag\">Rebaixamento do nível de consciência, icterícia, insuficiência renal ou parasitemia muito elevada em paciente com malária por P. falciparum</span> caracteriza malária grave, emergência com necessidade de tratamento parenteral imediato (artesunato) e suporte intensivo, sob risco de mortalidade elevada mesmo com tratamento."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A necessidade de primaquina associada à cloroquina no tratamento de P. vivax (para eliminar hipnozoítos hepáticos e prevenir recidiva) é cobrança certa e recorrente. A gota espessa como exame padrão-ouro (permitindo identificação de espécie, diferente dos testes rápidos) e os critérios de gravidade específicos de P. falciparum também são frequentemente exigidos."
       }
     ]
   },
@@ -7599,7 +7687,7 @@
     "titulo": "Leptospirose",
     "resumo": "Transmissão associada a enchentes e o reconhecimento da síndrome de Weil (icterícia, insuficiência renal e sangramento).",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; WHO — Leptospirosis: Diagnosis, Epidemiology and Control",
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Infectologia",
     "mnemonicos": [
       {
         "palavra": "Weil: fígado, rim e sangue",
@@ -7608,24 +7696,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Transmissão e epidemiologia",
-        "conteudo": "Causada pela bactéria Leptospira, transmitida pelo contato com água ou lama contaminada pela urina de roedores infectados — risco fortemente aumentado durante enchentes/inundações, um problema recorrente de saúde pública em períodos chuvosos."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A leptospirose é causada pela bactéria Leptospira interrogans, transmitida pelo contato com água ou solo contaminados pela urina de roedores infectados (o rato é o principal reservatório urbano), com penetração através de pele lesionada ou mucosas — situação epidemiologicamente relevante durante enchentes urbanas, quando a exposição à água contaminada aumenta drasticamente. A bactéria dissemina-se por via hematogênica, causando vasculite e disfunção multiorgânica nas formas graves."
       },
       {
-        "titulo": "Fase precoce (leptospirêmica)",
-        "conteudo": "Quadro inespecífico semelhante a outras síndromes febris agudas — febre, mialgia intensa (especialmente em panturrilhas), cefaleia e hiperemia conjuntival sem secreção (sufusão conjuntival), achado sugestivo embora nem sempre presente."
+        "titulo": "Quadro clínico",
+        "conteudo": "A forma leve/anictérica manifesta-se com febre, mialgia intensa (particularmente em panturrilhas, achado muito característico), cefaleia e hiperemia conjuntival sem secreção, autolimitada na maioria dos casos. A forma grave (síndrome de Weil) combina icterícia rubínica (tonalidade alaranjada característica), insuficiência renal aguda (tipicamente não oligúrica, com hipocalemia associada) e diátese hemorrágica, podendo evoluir para hemorragia pulmonar maciça, uma das principais causas de óbito na doença."
       },
       {
-        "titulo": "Forma grave — síndrome de Weil",
-        "conteudo": "Tríade clássica de icterícia (tipicamente rubínica), insuficiência renal aguda (tipicamente não oligúrica, com hipocalemia) e diátese hemorrágica, incluindo hemorragia pulmonar — uma das principais causas de óbito na doença."
+        "titulo": "Exame físico",
+        "conteudo": "Dor intensa à palpação de panturrilhas (mialgia gastrocnêmica) é achado muito característico e valorizado clinicamente. Sufusão conjuntival (hiperemia conjuntival bilateral sem secreção purulenta) é outro achado clássico. Icterícia rubínica (coloração alaranjada, diferente da icterícia amarelo-esverdeada de outras hepatopatias) sugere fortemente síndrome de Weil quando presente em contexto epidemiológico compatível."
       },
       {
-        "titulo": "Diagnóstico e tratamento",
-        "conteudo": "Sorologia (ELISA IgM, ou microaglutinação confirmatória) é o método mais utilizado. Antibioticoterapia (penicilina cristalina ou ceftriaxona nas formas graves, doxiciclina em casos leves) deve ser iniciada precocemente diante da suspeita, sem aguardar confirmação laboratorial."
+        "titulo": "Diagnóstico",
+        "conteudo": "Na fase inicial, a detecção de DNA bacteriano por PCR ou cultura (mais demorada) pode confirmar o diagnóstico. O teste sorológico de microaglutinação (MAT) é considerado padrão-ouro, mas geralmente positiva apenas a partir da segunda semana de doença; ELISA IgM é alternativa mais rápida e amplamente disponível. O diagnóstico frequentemente é clínico-epidemiológico na fase aguda, dada a demora dos exames confirmatórios, especialmente em contexto de surto pós-enchente."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Doxiciclina oral é o tratamento de escolha para casos leves ambulatoriais; penicilina G cristalina ou ceftriaxona endovenosa são preferidas nos casos graves internados. O tratamento de suporte é fundamental na síndrome de Weil, incluindo manejo agressivo da insuficiência renal aguda (frequentemente com necessidade de diálise) e suporte hemodinâmico/ventilatório em casos de hemorragia pulmonar."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Icterícia associada a insuficiência renal e sangramento</span> após exposição a enchente/água contaminada caracteriza a síndrome de Weil — forma grave com necessidade de internação e suporte intensivo."
+        "conteudo": "<span class=\"red-flag\">Icterícia rubínica associada a insuficiência renal aguda e sangramento (especialmente hemoptise)</span> caracteriza síndrome de Weil, forma grave da leptospirose com risco de hemorragia pulmonar maciça fatal — exige internação, suporte intensivo e antibioticoterapia endovenosa imediata em contexto epidemiológico compatível (exposição a enchente/água contaminada)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A mialgia intensa em panturrilhas e a icterícia rubínica associada a insuficiência renal não oligúrica (síndrome de Weil) são achados clássicos e cobrança certa, especialmente em questões contextualizadas em períodos de enchente. A hemorragia pulmonar como principal causa de óbito na forma grave também é frequentemente exigida."
       }
     ]
   },
@@ -7636,7 +7732,7 @@
     "titulo": "Acidentes por Animais Peçonhentos, Raiva e Tétano",
     "resumo": "Diferenciação entre os principais acidentes ofídicos brasileiros, escorpionismo, araneísmo e as profilaxias antirrábica/antitetânica.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde (Acidentes por Animais Peçonhentos)",
+    "fonte": "Ministério da Saúde — Manual de Diagnóstico e Tratamento de Acidentes por Animais Peçonhentos; Guia de Vigilância em Saúde (Raiva, Tétano)",
     "mnemonicos": [
       {
         "palavra": "Bothrops incha e sangra, Crotalus paralisa",
@@ -7645,24 +7741,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Acidente ofídico",
-        "conteudo": "Bothrops (jararaca — mais comum, veneno proteolítico/coagulante, dor e edema locais, sangramento e incoagulabilidade), Crotalus (cascavel — veneno neurotóxico/miotóxico, fácies miastênica e mioglobinúria, sintomas locais discretos) e Micrurus (coral verdadeira — veneno neurotóxico grave, risco de insuficiência respiratória). Tratamento específico com soro antiofídico conforme o gênero."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Os acidentes ofídicos no Brasil são predominantemente causados por serpentes do gênero Bothrops (jararaca, a mais comum), cujo veneno tem ação proteolítica, coagulante e hemorrágica; Crotalus (cascavel), com veneno neurotóxico e miotóxico; e Lachesis e Micrurus (coral verdadeira), esta última com veneno puramente neurotóxico. A raiva é causada por um vírus neurotrópico transmitido pela saliva de animal infectado (cão, gato, morcego são os principais reservatórios no Brasil), com progressão centrípeta ao longo dos nervos periféricos até o sistema nervoso central, onde causa encefalite quase invariavelmente fatal uma vez sintomática. O tétano é causado pela toxina do Clostridium tetani, produzida em ferimentos contaminados, bloqueando a liberação de neurotransmissores inibitórios e causando rigidez muscular generalizada e espasmos."
       },
       {
-        "titulo": "Escorpionismo",
-        "conteudo": "Acidente por escorpião (Tityus, relevante no Nordeste) causa dor local imediata e intensa, podendo evoluir para manifestações sistêmicas (sudorese, vômitos, arritmias, edema agudo de pulmão), principalmente em crianças pequenas. Soro antiescorpiônico indicado nos casos moderados a graves."
+        "titulo": "Quadro clínico",
+        "conteudo": "Acidente botrópico causa dor e edema progressivo no local da picada, com sangramento sistêmico (gengivorragia, hematúria) nos casos moderados/graves. Acidente crotálico causa fácies miastênica (ptose bilateral, característica) e mialgia generalizada, com risco de insuficiência renal aguda por rabdomiólise/mioglobinúria. Raiva manifesta-se com período prodrômico inespecífico seguido de fase neurológica com hidrofobia, aerofobia, agitação e progressão para paralisia e óbito. Tétano causa trismo (dificuldade de abrir a boca, geralmente o primeiro sinal), riso sardônico e espasmos musculares generalizados desencadeados por estímulos mínimos."
       },
       {
-        "titulo": "Araneísmo",
-        "conteudo": "Loxosceles (aranha-marrom) causa lesão cutânea necrótica progressiva e, mais raramente, hemólise intravascular grave. Phoneutria (armadeira) causa dor local intensa imediata, podendo cursar com manifestações sistêmicas em crianças."
+        "titulo": "Exame físico",
+        "conteudo": "Edema local progressivo e ascendente com equimose é característico do acidente botrópico. Fácies miastênica (ptose palpebral bilateral) é achado praticamente patognomônico do acidente crotálico. Trismo e rigidez muscular generalizada (abdome em tábua sem dor à palpação profunda) são achados clássicos do tétano generalizado."
       },
       {
-        "titulo": "Raiva e profilaxia antitetânica",
-        "conteudo": "A raiva é zoonose viral quase sempre fatal após o início dos sintomas — a profilaxia pós-exposição deve ser iniciada o quanto antes. A profilaxia antitetânica segue o esquema vacinal prévio do paciente e as características do ferimento."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico dos acidentes ofídicos é predominantemente clínico, baseado no quadro local e sistêmico e, quando possível, na identificação do animal causador — o tempo de coagulação em tubo seco à beira do leito é teste simples e útil para avaliar coagulopatia no acidente botrópico/laquético. Tétano e raiva têm diagnóstico eminentemente clínico-epidemiológico, dada a urgência de decisão terapêutica e a baixa sensibilidade/demora de exames confirmatórios específicos."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Soroterapia antiofídica específica (antibotrópico, anticrotálico, conforme identificação do animal ou quadro clínico) é o tratamento definitivo dos acidentes ofídicos, com dose determinada pela gravidade clínica, não pelo peso do paciente. Para raiva, não há tratamento eficaz uma vez sintomática (mortalidade praticamente universal); a prevenção pós-exposição com soro/imunoglobulina anti-rábica e vacina, iniciada o mais precocemente possível após exposição de risco, é a intervenção crucial e realmente eficaz. Tétano é tratado com imunoglobulina antitetânica, desbridamento da ferida, metronidazol, e suporte em ambiente com controle de estímulos (evitar espasmos reflexos), além de vacinação (a doença não confere imunidade permanente)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Fácies miastênica (ptose bilateral, oftalmoplegia) após acidente ofídico</span> sugere envenenamento crotálico ou por coral verdadeira, com risco de insuficiência respiratória."
+        "conteudo": "<span class=\"red-flag\">Ferimento com risco de contaminação por Clostridium tetani ou exposição a animal com suspeita de raiva</span> exige avaliação imediata do status vacinal e profilaxia pós-exposição apropriada (soro/vacina) — a janela de oportunidade para prevenção eficaz da raiva se fecha completamente uma vez iniciados os sintomas neurológicos."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A fácies miastênica como achado patognomônico do acidente crotálico, e a distinção dos venenos por gênero de serpente (proteolítico/coagulante no Bothrops, neurotóxico no Crotalus e na coral) são cobrança certa. A profilaxia pós-exposição da raiva (soro + vacina conforme classificação do ferimento e status do animal) é um dos temas mais decorados e mais cobrados de toda a infectologia em provas de residência."
       }
     ]
   },
@@ -7673,7 +7777,7 @@
     "titulo": "Influenza e COVID-19",
     "resumo": "Quadro clínico da gripe, espectro da COVID-19 e o reconhecimento da síndrome respiratória aguda grave (SRAG).",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Protocolo de Manejo Clínico de Síndrome Respiratória Aguda Grave; OMS — Clinical management of COVID-19",
+    "fonte": "Ministério da Saúde — Protocolo de Manejo Clínico de Síndrome Gripal e COVID-19; CDC Influenza Guidelines",
     "mnemonicos": [
       {
         "palavra": "Anosmia lembra COVID",
@@ -7682,24 +7786,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Influenza (gripe)",
-        "conteudo": "Infecção respiratória aguda viral, sazonal, com início súbito de febre alta, mialgia intensa, cefaleia, tosse seca e mal-estar importante. Vacinação anual é a principal prevenção. Oseltamivir reduz duração/gravidade quando iniciado precocemente."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Influenza é causada por vírus RNA com alta capacidade de mutação antigênica (deriva e rearranjo antigênico), explicando a necessidade de vacinação anual e o potencial pandêmico de novas cepas. COVID-19, causada pelo SARS-CoV-2, invade células através do receptor ACE2, com espectro de gravidade variando de infecção assintomática a síndrome respiratória aguda grave com dano alveolar difuso, além de manifestações trombóticas e inflamatórias sistêmicas em casos graves."
       },
       {
-        "titulo": "Complicações da influenza",
-        "conteudo": "Pneumonia (viral primária ou bacteriana secundária, esta última frequentemente por Staphylococcus aureus ou Streptococcus pneumoniae) é a complicação mais temida, especialmente em idosos e portadores de comorbidades."
+        "titulo": "Quadro clínico",
+        "conteudo": "Ambas as síndromes gripais causam febre, tosse, mialgia, cefaleia e odinofagia, sendo clinicamente indistinguíveis na maioria dos casos sem teste específico. Perda de olfato/paladar (anosmia/ageusia) foi achado mais especificamente associado ao COVID-19, especialmente nas cepas iniciais da pandemia. Ambas podem evoluir para síndrome respiratória aguda grave, com dispneia, hipoxemia e necessidade de suporte ventilatório em casos graves, mais frequente em idosos, gestantes e portadores de comorbidades."
       },
       {
-        "titulo": "COVID-19",
-        "conteudo": "Espectro clínico amplo, de infecção assintomática a síndrome respiratória aguda grave, com pneumonia bilateral e insuficiência respiratória hipoxêmica nos casos graves. Fatores de risco: idade avançada, obesidade, diabetes e imunossupressão. A vacinação reduziu drasticamente as formas graves."
+        "titulo": "Exame físico",
+        "conteudo": "Achados respiratórios inespecíficos na maioria dos casos leves. Taquipneia, uso de musculatura acessória e hipoxemia (saturação de oxigênio reduzida) sinalizam síndrome respiratória aguda grave em ambas as condições, exigindo avaliação e conduta hospitalar imediata independentemente do agente etiológico específico."
       },
       {
-        "titulo": "Diferenciação clínica",
-        "conteudo": "Influenza e COVID-19 compartilham sintomas sobrepostos, sendo a anosmia/ageusia mais característica da COVID-19. Testes específicos (RT-PCR, antígeno) confirmam o diagnóstico etiológico quando necessário."
+        "titulo": "Diagnóstico",
+        "conteudo": "Testes moleculares (RT-PCR) ou antígeno rápido em amostra de swab nasofaríngeo confirmam o diagnóstico e diferenciam os agentes quando disponíveis, sendo particularmente relevantes para decisões de isolamento e elegibilidade a tratamento antiviral. Em contexto de vigilância epidemiológica de síndrome gripal, o diagnóstico clínico-sindrômico orienta a conduta inicial mesmo antes da confirmação laboratorial."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Oseltamivir (inibidor de neuraminidase) é indicado para influenza em pacientes de risco ou com quadro grave, com maior benefício quando iniciado precocemente (idealmente nas primeiras 48h de sintomas). Para COVID-19, antivirais específicos (nirmatrelvir/ritonavir) e/ou corticoide (nos casos que já necessitam de oxigênio suplementar) fazem parte do arsenal terapêutico conforme gravidade e fatores de risco. A vacinação anual contra influenza e a vacinação atualizada contra COVID-19 permanecem as medidas mais eficazes de prevenção primária, especialmente em grupos de risco."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dispneia com queda da saturação de oxigênio</span> em paciente com síndrome gripal caracteriza síndrome respiratória aguda grave (SRAG), notificação compulsória, e exige avaliação hospitalar imediata."
+        "conteudo": "<span class=\"red-flag\">Dispneia, hipoxemia ou piora clínica após período de melhora aparente (\"segunda onda\" de sintomas)</span> em paciente com síndrome gripal deve motivar avaliação hospitalar imediata para exclusão de síndrome respiratória aguda grave, mais frequente em gestantes, idosos e portadores de comorbidades cardiopulmonares."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A indicação de oseltamivir precoce (idealmente nas primeiras 48h) em pacientes de risco com síndrome gripal é cobrança certa e recorrente. Os grupos de maior risco para complicações (gestantes, idosos, comorbidades crônicas, crianças pequenas) e a importância da vacinação anual como estratégia central de prevenção também são pontos frequentemente exigidos."
       }
     ]
   },
@@ -7710,7 +7822,7 @@
     "titulo": "Parasitoses Intestinais",
     "resumo": "Principais helmintíases e protozooses intestinais, e a neurocisticercose como causa tratável de epilepsia.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Manual de Vigilância e Controle de Parasitoses Intestinais; CDC Parasites",
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Pediatria",
     "mnemonicos": [
       {
         "palavra": "Oxiúro coça de noite",
@@ -7719,24 +7831,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Helmintíases mais comuns",
-        "conteudo": "Ascaridíase (pode causar suboclusão intestinal em infestações maciças e síndrome de Löffler), ancilostomíase (penetração cutânea pelos pés descalços, causa anemia ferropriva por espoliação sanguínea), enterobíase (prurido anal noturno, diagnóstico pela fita adesiva) e tricuríase (pode causar prolapso retal em infestações maciças na infância)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As parasitoses intestinais mais prevalentes no Brasil incluem helmintos (Ascaris lumbricoides, Trichuris trichiura, ancilostomídeos, Enterobius vermicularis, Strongyloides stercoralis) e protozoários (Giardia lamblia, Entamoeba histolytica), transmitidos predominantemente por via fecal-oral ou penetração cutânea ativa (ancilostomídeos, Strongyloides), associadas a condições de saneamento básico inadequado. O Strongyloides stercoralis merece atenção especial por seu ciclo de autoinfecção interna, que permite persistência da infecção por décadas e risco de hiperinfecção grave em imunossuprimidos."
       },
       {
-        "titulo": "Teníase e cisticercose",
-        "conteudo": "Ingestão de carne suína/bovina malcozida com cisticercos causa teníase intestinal. A ingestão de ovos de Taenia solium causa neurocisticercose, principal causa de epilepsia adquirida em áreas endêmicas."
+        "titulo": "Quadro clínico",
+        "conteudo": "Muitas parasitoses são assintomáticas ou oligossintomáticas (desconforto abdominal inespecífico, alteração do hábito intestinal). Giardíase pode causar diarreia crônica, esteatorreia e má absorção, especialmente relevante em crianças pela repercussão no crescimento. Enterobíase (oxiuríase) causa prurido anal noturno característico, pela migração das fêmeas para postura de ovos na região perianal durante a noite. Estrongiloidíase pode ser assintomática por anos até uma hiperinfecção grave em contexto de imunossupressão (uso de corticoide, principalmente), com disseminação sistêmica potencialmente fatal."
       },
       {
-        "titulo": "Protozooses",
-        "conteudo": "Giardíase (diarreia crônica/má absorção, especialmente em crianças e viajantes) e amebíase (desde portador assintomático até colite disentérica e abscesso hepático amebiano, a complicação extraintestinal mais comum)."
+        "titulo": "Exame físico",
+        "conteudo": "Geralmente inespecífico. Sinais de desnutrição e déficit de crescimento podem estar presentes em infecções crônicas maciças em crianças, particularmente por giardíase ou ancilostomíase (esta associada a anemia ferropriva por espoliação sanguínea intestinal crônica pelo parasita)."
       },
       {
-        "titulo": "Diagnóstico e tratamento",
-        "conteudo": "Exame parasitológico de fezes (idealmente seriado) identifica a maioria dos parasitas. Tratamento específico por classe: albendazol/mebendazol para a maioria dos helmintos, metronidazol para giárdia/ameba, praziquantel para teníase."
+        "titulo": "Diagnóstico",
+        "conteudo": "O exame parasitológico de fezes (idealmente seriado, em três amostras coletadas em dias diferentes, pela eliminação intermitente de ovos/cistos) é o exame padrão para a maioria das parasitoses. Para enterobíase, a fita adesiva/swab perianal (método de Graham), coletada pela manhã antes da higiene, tem maior sensibilidade que o exame de fezes convencional, pois os ovos raramente são eliminados nas fezes."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Albendazol ou mebendazol são eficazes contra a maioria dos helmintos intestinais comuns (Ascaris, Trichuris, ancilostomídeos, Enterobius); tratamento de toda a família é recomendado na enterobíase pela alta transmissibilidade domiciliar. Metronidazol ou secnidazol são o tratamento de escolha para giardíase e amebíase. Estrongiloidíase requer ivermectina (mais eficaz que os benzimidazóis para esse parasita específico), sendo fundamental rastrear e tratar antes de iniciar imunossupressão em pacientes de área endêmica, prevenindo a hiperinfecção potencialmente fatal."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Cefaleia com crise convulsiva de início recente em paciente de área endêmica</span> deve levantar suspeita de neurocisticercose e motivar neuroimagem — causa tratável e prevenível de epilepsia."
+        "conteudo": "<span class=\"red-flag\">Paciente de área endêmica para estrongiloidíase que será submetido a imunossupressão (corticoide em dose alta, quimioterapia)</span> deve ser rastreado e tratado empiricamente antes do início da imunossupressão, pelo risco de síndrome de hiperinfecção disseminada, frequentemente fatal se não reconhecida a tempo."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O método de Graham (fita adesiva perianal) como exame de escolha para enterobíase (superior ao exame de fezes comum) é cobrança certa. O risco de hiperinfecção por Strongyloides em pacientes imunossuprimidos e a necessidade de rastreamento/tratamento prévio à imunossupressão em área endêmica também são pontos frequentemente exigidos e considerados de alta relevância clínica prática."
       }
     ]
   },
