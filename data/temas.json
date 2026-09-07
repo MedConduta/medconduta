@@ -51,7 +51,7 @@
     "titulo": "Diabetes Mellitus Tipo 2 (DM2)",
     "resumo": "Critérios diagnósticos, metas glicêmicas e sequência terapêutica no DM2.",
     "revisado": false,
-    "fonte": "Diretrizes da Sociedade Brasileira de Diabetes (SBD) 2023-2024; ADA Standards of Care in Diabetes-2026",
+    "fonte": "Sociedade Brasileira de Diabetes — Diretriz Oficial 2023-2024; ADA Standards of Care in Diabetes (2024/2025); Ministério da Saúde — Cadernos de Atenção Básica",
     "mnemonicos": [
       {
         "palavra": "GLICO 3P",
@@ -60,24 +60,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Critérios diagnósticos",
-        "conteudo": "Diagnóstico com qualquer um dos critérios (confirmados em segunda amostra, exceto se sintomas + glicemia ao acaso): glicemia de jejum ≥126 mg/dL; glicemia 2h pós-TOTG ≥200 mg/dL; hemoglobina glicada (HbA1c) ≥6,5%; ou glicemia ao acaso ≥200 mg/dL com sintomas clássicos."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O diabetes mellitus tipo 2 resulta da combinação de resistência periférica à ação da insulina (principalmente em músculo, fígado e tecido adiposo) com disfunção progressiva das células beta pancreáticas, que perdem capacidade de compensar essa resistência com hipersecreção de insulina. A obesidade visceral é o principal fator ambiental precipitante, promovendo lipotoxicidade e inflamação crônica de baixo grau que agravam a resistência insulínica. Diferentemente do tipo 1 (destruição autoimune das células beta, com deficiência absoluta de insulina desde o início), o DM2 tem curso insidioso, com hiperglicemia se instalando ao longo de anos antes do diagnóstico — daí a frequência de complicações crônicas já presentes ao diagnóstico."
       },
       {
-        "titulo": "Metas terapêuticas",
-        "conteudo": "Meta geral de HbA1c <7% para a maioria dos adultos, individualizada conforme idade, tempo de doença, comorbidades e risco de hipoglicemia (metas mais flexíveis em idosos frágeis, ~7,5-8%)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Grande parte dos pacientes é assintomática ao diagnóstico, identificado em rastreamento de rotina (recomendado a partir dos 35 anos, ou antes na presença de fatores de risco como obesidade, história familiar, hipertensão ou dislipidemia). Quando sintomático, apresenta os \"quatro P's\" clássicos — poliúria, polidipsia, polifagia e perda ponderal — geralmente mais brandos que no DM1. Pode também se manifestar por complicações já estabelecidas: infecções de repetição (candidíase genital, infecções urinárias), visão turva por alteração osmótica do cristalino, ou parestesias por neuropatia periférica já instalada."
       },
       {
-        "titulo": "Tratamento farmacológico",
-        "conteudo": "Metformina como primeira linha na maioria dos pacientes, associada a mudança de estilo de vida. Em pacientes com doença cardiovascular estabelecida, alto risco cardiovascular, insuficiência cardíaca ou doença renal crônica, considerar precocemente associação com inibidores de SGLT2 ou agonistas de GLP-1, independentemente do controle glicêmico, pelo benefício cardiorrenal."
+        "titulo": "Exame físico",
+        "conteudo": "Acantose nigricans (hiperpigmentação aveludada em dobras cutâneas — pescoço, axilas) é marcador cutâneo de resistência insulínica significativa, praticamente patognomônico quando presente em adulto obeso. A avaliação do pé diabético (inspeção, teste de sensibilidade com monofilamento de 10g, pulsos pediosos) deve ser sistemática e anual, pela alta morbidade da neuropatia e doença arterial periférica associadas. Obesidade central (circunferência abdominal aumentada) é achado comum e reforça a suspeita clínica em pacientes ainda não diagnosticados."
       },
       {
-        "titulo": "Rastreio de complicações",
-        "conteudo": "Rastreio anual de retinopatia (fundoscopia), nefropatia (relação albumina/creatinina urinária e função renal) e pé diabético (exame dos pés e sensibilidade)."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é confirmado por qualquer um dos critérios (repetidos em duas ocasiões, exceto se hiperglicemia franca com sintomas): glicemia de jejum ≥126mg/dL, glicemia 2h após teste oral de tolerância à glicose (75g) ≥200mg/dL, hemoglobina glicada (HbA1c) ≥6,5%, ou glicemia aleatória ≥200mg/dL associada a sintomas clássicos. A HbA1c tem a vantagem de refletir o controle glicêmico médio dos últimos 2-3 meses e não exigir jejum, sendo hoje amplamente preferida tanto para diagnóstico quanto para monitorização terapêutica, embora possa ser afetada por condições que alterem o turnover de hemácias (anemias, hemoglobinopatias)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Metformina é a primeira linha farmacológica na maioria dos pacientes, associada sempre a mudança de estilo de vida (dieta, atividade física, perda de peso). Em pacientes com doença cardiovascular aterosclerótica estabelecida, insuficiência cardíaca ou doença renal crônica, os inibidores de SGLT2 (dapagliflozina, empagliflozina) e os agonistas do receptor de GLP-1 (liraglutida, semaglutida) têm benefício cardiovascular e renal comprovado independente do controle glicêmico, sendo hoje recomendados precocemente nesses perfis, e não apenas como terceira linha. A meta geral de HbA1c é <7%, individualizada (mais flexível em idosos frágeis, mais rigorosa em jovens recém-diagnosticados sem comorbidades)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Cetoacidose diabética e estado hiperosmolar</span> são emergências que exigem hidratação, insulinoterapia e correção de distúrbios eletrolíticos em ambiente monitorado."
+        "conteudo": "<span class=\"red-flag\">Glicemia muito elevada associada a desidratação grave e rebaixamento do nível de consciência, sem cetose importante</span> sugere estado hiperosmolar hiperglicêmico — complicação aguda característica do DM2 (diferente da cetoacidose, mais típica do DM1), com alta mortalidade se não reconhecida e tratada precocemente com hidratação vigorosa."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação fisiopatológica entre DM1 e DM2 (resistência insulínica + deficiência relativa vs. destruição autoimune + deficiência absoluta) é cobrança certa, assim como os critérios diagnósticos exatos (126, 200, 6,5%). É recorrente também a indicação precoce de iSGLT2/GLP-1 em pacientes com doença cardiovascular/renal estabelecida, independentemente do controle glicêmico — um ponto de atualização de diretriz frequentemente cobrado em provas mais recentes."
       }
     ]
   },
@@ -199,7 +207,7 @@
     "titulo": "Asma Exacerbada",
     "resumo": "Classificação de gravidade e manejo escalonado da crise asmática.",
     "revisado": false,
-    "fonte": "Global Initiative for Asthma (GINA) 2026",
+    "fonte": "Global Initiative for Asthma (GINA) 2024; Sociedade Brasileira de Pneumologia e Tisiologia — Diretrizes de Asma",
     "mnemonicos": [
       {
         "palavra": "OBA",
@@ -208,16 +216,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação de gravidade",
-        "conteudo": "Avaliar fala (frases completas x palavras), frequência respiratória, uso de musculatura acessória, ausculta (sibilos x murmúrio abolido — \"tórax silencioso\" é sinal de gravidade extrema) e saturação de oxigênio."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A asma é uma doença inflamatória crônica das vias aéreas, mediada predominantemente por inflamação eosinofílica tipo 2 em sua forma alérgica clássica, causando hiper-responsividade brônquica a estímulos diversos (alérgenos, infecções virais, exercício, irritantes). Na exacerbação aguda, broncoespasmo, edema da mucosa e hipersecreção de muco combinam-se para causar obstrução ao fluxo aéreo, predominantemente expiratória, com aprisionamento de ar e hiperinsuflação pulmonar dinâmica."
       },
       {
-        "titulo": "Tratamento inicial",
-        "conteudo": "Beta-2 agonista de curta duração inalatório repetido (com espaçador ou nebulização), associado a brometo de ipratrópio nas crises moderadas a graves, corticoide sistêmico precoce (via oral tem eficácia semelhante à endovenosa quando tolerada) e oxigênio suplementar para SatO2 alvo 93-95%."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dispneia, sibilância, tosse (frequentemente noturna ou desencadeada por gatilhos específicos) e sensação de aperto torácico, de intensidade variável e reversível — a variabilidade e a reversibilidade (espontânea ou com broncodilatador) são características centrais que diferenciam a asma de outras doenças obstrutivas. Na exacerbação grave, o paciente apresenta dificuldade para falar frases completas, uso de musculatura acessória e agitação."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Sibilos difusos expiratórios são o achado clássico, mas atenção: na crise muito grave, o \"tórax silencioso\" (ausência de sibilos por fluxo aéreo insuficiente para gerá-los) é um sinal de alarme de gravidade extrema, não de melhora — armadilha clínica importante. Uso de musculatura acessória, tiragem intercostal, taquipneia e taquicardia refletem o esforço respiratório e a gravidade da obstrução; cianose é sinal tardio e grave."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico da crise é clínico. A avaliação objetiva da gravidade e da resposta terapêutica é feita pelo pico de fluxo expiratório (PFE) ou VEF1, quando o paciente consegue realizar a manobra — PFE <50% do previsto/melhor pessoal indica crise grave. A gasometria arterial é reservada a crises graves/muito graves: um paciente que hiperventila deveria ter PaCO2 baixa; a normalização ou elevação da PaCO2 durante uma crise asmática é sinal ominoso de fadiga respiratória iminente e falência ventilatória, não de melhora."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Broncodilatador de curta duração inalatório (salbutamol) em doses repetidas é a base do tratamento imediato, associado a brometo de ipratrópio nas crises moderadas/graves. Corticoide sistêmico (oral ou endovenoso) deve ser iniciado precocemente em toda crise que não responde prontamente ao broncodilatador inicial, pois reduz recorrência e necessidade de internação — seu efeito, porém, leva horas para se manifestar. Sulfato de magnésio endovenoso é reservado a crises graves refratárias ao tratamento inicial. Antibiótico não é indicado rotineiramente, pois a maioria das exacerbações é desencadeada por vírus."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Tórax silencioso, confusão mental, bradicardia, exaustão respiratória e SatO2 <90% apesar de O2 suplementar</span> indicam crise muito grave com risco iminente de parada respiratória — considerar UTI e ventilação mecânica."
+        "conteudo": "<span class=\"red-flag\">Tórax silencioso, confusão mental, bradicardia ou PaCO2 normal/elevada durante uma crise asmática</span> são sinais de falência respiratória iminente, indicando necessidade de suporte ventilatório e manejo em ambiente de terapia intensiva — a ausência de sibilos nesse contexto não deve ser confundida com melhora clínica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O \"tórax silencioso\" e a PaCO2 normal/elevada como sinais paradoxais de gravidade (não de melhora) são as pegadinhas mais clássicas do tema. A sequência terapêutica (broncodilatador + corticoide sistêmico precoce, magnésio para casos refratários) e a ausência de indicação rotineira de antibiótico também são pontos frequentemente cobrados."
       }
     ]
   },
@@ -906,7 +930,7 @@
     "titulo": "DPOC Exacerbado",
     "resumo": "Critérios de Anthonisen, tratamento broncodilatador/corticoide e indicação de antibiótico e ventilação não invasiva.",
     "revisado": false,
-    "fonte": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2025",
+    "fonte": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2024; Sociedade Brasileira de Pneumologia e Tisiologia — Diretrizes de DPOC",
     "mnemonicos": [
       {
         "palavra": "ANTHONISEN",
@@ -915,24 +939,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição de exacerbação",
-        "conteudo": "Piora aguda dos sintomas respiratórios além da variação diária habitual, exigindo mudança na terapia de manutenção."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A DPOC é caracterizada por limitação ao fluxo aéreo persistente e progressiva, geralmente por exposição a partículas nocivas (tabagismo é o principal fator de risco), combinando graus variáveis de enfisema (destruição do parênquima alveolar, com perda de retração elástica) e bronquite crônica (inflamação e hipersecreção das vias aéreas). Nas exacerbações agudas, infecções respiratórias (bacterianas ou virais) são o gatilho mais comum, causando piora aguda da obstrução, aumento do aprisionamento de ar e piora das trocas gasosas sobre uma base já cronicamente comprometida."
       },
       {
-        "titulo": "Critérios de Anthonisen",
-        "conteudo": "Aumento da dispneia, aumento do volume do escarro e/ou mudança da purulência do escarro — a presença de 2 ou mais critérios, incluindo purulência, orienta a antibioticoterapia."
+        "titulo": "Quadro clínico",
+        "conteudo": "Piora aguda da dispneia basal, aumento do volume e/ou mudança da coloração do escarro (mais purulento) e aumento da tosse compõem os critérios clássicos de Anthonisen para definir exacerbação — a presença dos três critérios sugere maior probabilidade de etiologia bacteriana e maior benefício de antibioticoterapia. Pacientes com DPOC avançada frequentemente já têm dispneia basal significativa, dificultando a percepção da piora pelo próprio paciente até estágios mais avançados da exacerbação."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Tempo expiratório prolongado, sibilos e roncos difusos, e em casos mais avançados, tórax em tonel (hiperinsuflação crônica) e uso de musculatura acessória. Cianose central, rebaixamento do nível de consciência (por hipercapnia/narcose por CO2) e respiração paradoxal abdominal são sinais de gravidade que indicam exacerbação grave com risco de insuficiência respiratória franca."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico da exacerbação é clínico. A gasometria arterial é fundamental em exacerbações moderadas/graves para avaliar hipoxemia e, especialmente, hipercapnia com acidose respiratória — retentores crônicos de CO2 têm o drive respiratório parcialmente dependente da hipoxemia, o que tem implicação direta na oxigenoterapia. Radiografia de tórax ajuda a excluir diagnósticos diferenciais/complicações (pneumonia, pneumotórax). Não há indicação de espirometria durante a exacerbação aguda, pois os valores estarão artificialmente reduzidos pela obstrução aguda sobreposta."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Broncodilatadores de curta ação (beta-2 agonista ± anticolinérgico) e corticoide sistêmico são a base do tratamento; antibiótico quando indicado pelos critérios de Anthonisen."
-      },
-      {
-        "titulo": "Ventilação não invasiva",
-        "conteudo": "Indicada em casos de acidose respiratória (hipercapnia com acidemia) ou sinais de fadiga da musculatura respiratória, reduzindo a necessidade de intubação."
+        "conteudo": "Broncodilatadores de curta duração (beta-agonista + anticolinérgico) em doses repetidas são a base do tratamento. Corticoide sistêmico em curso curto (5 dias) reduz tempo de recuperação e risco de recidiva. Antibiótico é indicado quando presentes os critérios de Anthonisen (especialmente aumento de purulência do escarro) ou em exacerbação grave com necessidade de ventilação mecânica. Oxigenoterapia deve ser titulada com cautela em retentores crônicos de CO2, com meta de saturação mais conservadora (88-92%) para evitar supressão do drive respiratório hipóxico e piora da hipercapnia. Ventilação não invasiva é indicada precocemente em acidose respiratória (pH <7,35) associada à exacerbação, reduzindo necessidade de intubação e mortalidade."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Rebaixamento do nível de consciência ou acidose respiratória grave refratária</span> indicam necessidade de considerar ventilação mecânica invasiva."
+        "conteudo": "<span class=\"red-flag\">Acidose respiratória (pH <7,35) com hipercapnia, ou rebaixamento do nível de consciência</span> na exacerbação de DPOC é indicação formal de ventilação não invasiva precoce, com redução comprovada de necessidade de intubação orotraqueal e mortalidade quando iniciada oportunamente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os critérios de Anthonisen (dispneia, volume e purulência do escarro) para indicar antibiótico são cobrança certa. A titulação cuidadosa de oxigênio em retentores crônicos de CO2 (evitar hiperoxigenação, que pode suprimir o drive respiratório hipóxico e agravar a hipercapnia) é um dos pontos mais testados e mais mal compreendidos do tema — muitos candidatos erram por medo excessivo de hipoxemia, esquecendo o risco simétrico de hiperoxigenação nesse contexto específico."
       }
     ]
   },
@@ -943,7 +975,7 @@
     "titulo": "Cetoacidose Diabética (CAD)",
     "resumo": "Critérios diagnósticos e sequência terapêutica priorizando hidratação, potássio e insulina.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Diabetes (SBD); ADA Standards of Care in Diabetes-2026",
+    "fonte": "Sociedade Brasileira de Diabetes; ADA Consensus Report on Hyperglycemic Crises in Adults (2024)",
     "mnemonicos": [
       {
         "palavra": "HIDRATAR → POTÁSSIO → INSULINA",
@@ -952,24 +984,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Critérios diagnósticos",
-        "conteudo": "Glicemia geralmente >250 mg/dL, pH arterial <7,3, bicarbonato sérico baixo e cetonemia/cetonúria positiva."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A cetoacidose diabética resulta de deficiência absoluta ou relativa grave de insulina associada a excesso de hormônios contrarreguladores (glucagon, cortisol, catecolaminas), tipicamente desencadeada por infecção, má adesão ao tratamento insulínico, infarto, ou como primeira manifestação de DM1. A ausência de insulina impede a utilização periférica de glicose e libera a lipólise, gerando ácidos graxos livres que são convertidos em corpos cetônicos (beta-hidroxibutirato, acetoacetato) no fígado, causando acidose metabólica com ânion gap elevado. A hiperglicemia gera diurese osmótica intensa, com desidratação e perda de eletrólitos (sódio, potássio, fosfato) — mesmo com potássio sérico normal ou alto na admissão, o potássio corporal total está sempre depletado."
       },
       {
-        "titulo": "Hidratação inicial",
-        "conteudo": "Reposição volêmica vigorosa com solução salina isotônica é o primeiro passo, corrigindo a desidratação e melhorando a perfusão tecidual."
+        "titulo": "Quadro clínico",
+        "conteudo": "Poliúria, polidipsia e desidratação de instalação em horas a poucos dias, associadas a náuseas, vômitos e dor abdominal (que pode mimetizar abdome agudo cirúrgico). A respiração de Kussmaul (profunda e rápida, mecanismo compensatório da acidose metabólica) e o hálito cetônico (odor de \"maçã podre\" ou acetona) são achados característicos. Rebaixamento do nível de consciência pode ocorrer em casos graves, relacionado à osmolaridade sérica e à gravidade da acidose."
       },
       {
-        "titulo": "Reposição de potássio",
-        "conteudo": "O potássio sérico deve ser avaliado antes de iniciar insulina; se baixo, deve ser corrigido previamente, pois a insulina desloca potássio para o meio intracelular, podendo precipitar hipocalemia grave e arritmias."
+        "titulo": "Exame físico",
+        "conteudo": "Sinais de desidratação (mucosas secas, turgor cutâneo diminuído, taquicardia, hipotensão) são proporcionais à perda volêmica, tipicamente significativa (déficit de 5-10% do peso corporal). A respiração de Kussmaul é um achado quase patognomônico do quadro quando presente em paciente com hiperglicemia conhecida. Dor abdominal à palpação, mesmo sem sinais de irritação peritoneal, é comum e não deve levar precipitadamente a investigação cirúrgica antes de tratar a cetoacidose."
       },
       {
-        "titulo": "Insulinoterapia",
-        "conteudo": "Insulina regular em infusão contínua é iniciada após garantir potássio sérico adequado, com monitorização horária da glicemia até resolução da acidose."
+        "titulo": "Diagnóstico",
+        "conteudo": "A tríade diagnóstica é: hiperglicemia (geralmente >250mg/dL, podendo ser menor em cetoacidose euglicêmica associada a uso de iSGLT2), acidose metabólica com ânion gap elevado (pH <7,3 e/ou bicarbonato <18mEq/L) e cetonemia/cetonúria significativa (beta-hidroxibutirato sérico ou cetonas urinárias positivas). A gasometria arterial e a dosagem de eletrólitos (incluindo potássio, fundamental para guiar a reposição) devem ser obtidas de imediato, junto à investigação do fator precipitante (hemograma, cultura, ECG, radiografia de tórax conforme suspeita clínica)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento segue três pilares simultâneos: hidratação venosa vigorosa com solução salina isotônica (etapa inicial mais importante, corrigindo a desidratação e reduzindo a glicemia mesmo antes da insulina); insulinoterapia endovenosa contínua em bomba de infusão (nunca em bolus isolado inicial), iniciada somente após confirmar potássio sérico ≥3,3mEq/L (para evitar arritmia fatal por hipocalemia grave, já que a insulina desloca potássio para o intracelular); e reposição de potássio precoce e agressiva, já que a correção da acidose e da insulinoterapia sempre reduz ainda mais o potássio sérico. Bicarbonato é reservado a acidose extremamente grave (pH <6,9), sem benefício comprovado em acidoses menos graves."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hipocalemia grave não corrigida antes do início da insulina</span> pode causar arritmias cardíacas potencialmente fatais."
+        "conteudo": "<span class=\"red-flag\">Potássio sérico baixo ou no limite inferior da normalidade à admissão</span> exige reposição antes ou concomitante ao início da insulina, pelo risco de hipocalemia grave e arritmia fatal quando a insulina desloca potássio abruptamente para o meio intracelular — jamais iniciar insulina com potássio <3,3mEq/L sem repor primeiro."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A sequência correta de tratamento (hidratação → checar potássio → insulina) é cobrança certíssima, assim como a compreensão de que o potássio corporal total está sempre depletado mesmo com potássio sérico normal/alto na admissão. Cetoacidose euglicêmica associada a inibidores de SGLT2 é uma pegadinha de prova cada vez mais atual, já que a glicemia pode estar apenas discretamente elevada, retardando o reconhecimento se o candidato buscar apenas hiperglicemia franca."
       }
     ]
   },
@@ -1218,7 +1258,7 @@
     "titulo": "Tromboembolismo Pulmonar (TEP)",
     "resumo": "Escore de Wells, papel do D-dímero e conduta terapêutica no TEP.",
     "revisado": false,
-    "fonte": "Diretriz Brasileira de Tromboembolismo Venoso - SBPT/SBC; ESC Guidelines for Pulmonary Embolism (2019, atualizacao 2024)",
+    "fonte": "Sociedade Brasileira de Pneumologia e Tisiologia; ESC Guidelines for the diagnosis and management of acute pulmonary embolism (2019, atualização 2024)",
     "mnemonicos": [
       {
         "palavra": "WELLS",
@@ -1227,24 +1267,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Quadro clínico",
-        "conteudo": "Dispneia súbita, dor torácica pleurítica e taquicardia são os achados mais frequentes, muitas vezes inespecíficos."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O tromboembolismo pulmonar ocorre quando um trombo (na grande maioria das vezes originado de trombose venosa profunda de membros inferiores) migra e oclui a circulação arterial pulmonar, causando uma combinação de aumento da resistência vascular pulmonar (sobrecarga aguda de ventrículo direito, podendo evoluir para choque obstrutivo em êmbolos maciços), alteração da relação ventilação-perfusão (espaço morto fisiológico aumentado, causando hipoxemia) e, em territórios distais, infarto pulmonar."
       },
       {
-        "titulo": "Estratificação de probabilidade",
-        "conteudo": "O escore de Wells estima a probabilidade pré-teste de TEP, orientando a sequência diagnóstica (D-dímero em baixa probabilidade; imagem diretamente em alta probabilidade)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dispneia de início súbito é o sintoma mais comum e mais sensível, seguido de dor torácica pleurítica (mais associada a êmbolos periféricos com infarto pulmonar) e taquicardia. Síncope ou hipotensão sugerem embolia maciça com repercussão hemodinâmica significativa. A apresentação é extremamente variável e inespecífica, exigindo alto índice de suspeição clínica em pacientes com fatores de risco para tromboembolismo venoso (imobilização, cirurgia recente, câncer, TVP conhecida)."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Taquipneia e taquicardia são os achados mais frequentes, porém inespecíficos. Sinais de TVP associada (assimetria de perimetria de membro inferior) devem ser ativamente procurados. Em embolia maciça, sinais de sobrecarga aguda de ventrículo direito podem incluir turgência jugular, hiperfonese de B2 em foco pulmonar, e sinais de choque (hipotensão, extremidades frias) — não há achado patognomônico isolado ao exame físico."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "D-dímero tem alto valor preditivo negativo em pacientes de baixa probabilidade. AngioTC de tórax é o exame de escolha para confirmação diagnóstica."
+        "conteudo": "O escore de Wells (ou o critério de Genebra) estratifica a probabilidade pré-teste. Em probabilidade baixa/moderada, o D-dímero tem alto valor preditivo negativo e pode excluir TEP se negativo. A angiotomografia de tórax com protocolo para artérias pulmonares é o exame padrão-ouro, com alta sensibilidade e especificidade. O ecocardiograma à beira do leito é útil em paciente instável para identificar sobrecarga aguda de VD e justificar trombólise empírica quando a tomografia não pode ser realizada em tempo hábil. O ECG classicamente pode mostrar o padrão S1Q3T3, mas é pouco sensível e inespecífico; taquicardia sinusal é o achado eletrocardiográfico mais comum."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Anticoagulação deve ser iniciada assim que houver suspeita razoável, sem aguardar confirmação definitiva se não houver contraindicação, dado o risco de deterioração clínica."
+        "conteudo": "Anticoagulação plena (DOACs ou heparina, conforme estabilidade e função renal) é o tratamento de escolha na maioria dos casos. Em TEP maciço com choque/instabilidade hemodinâmica, a trombólise sistêmica é indicada (na ausência de contraindicações absolutas), com objetivo de reduzir rapidamente a sobrecarga de VD; embolectomia cirúrgica ou por cateter são alternativas quando a trombólise é contraindicada ou ineficaz. Em TEP submaciço (sobrecarga de VD sem hipotensão franca), a conduta é individualizada, com anticoagulação e monitorização rigorosa, reservando trombólise a casos com deterioração clínica."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Instabilidade hemodinâmica associada a TEP (TEP maciço)</span> pode exigir terapia trombolítica, dada a alta mortalidade nesse cenário."
+        "conteudo": "<span class=\"red-flag\">Dispneia súbita associada a hipotensão e sinais de sobrecarga aguda de ventrículo direito</span> caracteriza TEP maciço/de alto risco, com indicação de trombólise imediata — o retardo na reperfusão nesse cenário associa-se a alta mortalidade por choque obstrutivo refratário."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O escore de Wells associado ao D-dímero para exclusão em baixa probabilidade, e a angiotomografia como padrão-ouro, são cobrança certa. É clássica também a pegadinha do padrão eletrocardiográfico S1Q3T3 (pouco sensível, não deve ser usado para excluir o diagnóstico) e a indicação de trombólise restrita a TEP de alto risco (com instabilidade hemodinâmica), não sendo rotina em todo TEP diagnosticado."
       }
     ]
   },
@@ -1300,7 +1348,7 @@
     "titulo": "Hipotireoidismo, Hipertireoidismo e Nódulo de Tireoide",
     "resumo": "Padrões de TSH/T4 livre, causas principais e avaliação do nódulo tireoidiano.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia (SBEM); American Thyroid Association (ATA) Guidelines",
+    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia; American Thyroid Association Guidelines for Hyperthyroidism/Hypothyroidism/Thyroid Nodules",
     "mnemonicos": [
       {
         "palavra": "TSH x T4 LIVRE",
@@ -1309,24 +1357,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Hipotireoidismo",
-        "conteudo": "A tireoidite de Hashimoto é a causa mais comum. Quadro clínico com fadiga, ganho de peso, intolerância ao frio e constipação. Tratamento com reposição de levotiroxina."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O hipotireoidismo primário resulta de falência da própria glândula tireoide, sendo a tireoidite de Hashimoto (autoimune, com anticorpos anti-TPO) a causa mais comum em áreas com suficiência de iodo, como o Brasil. O hipertireoidismo mais frequentemente decorre da doença de Graves (autoimune, anticorpos estimuladores do receptor de TSH — TRAb — causando hiperfunção difusa), seguida pelo bócio multinodular tóxico e adenoma tóxico (produção autônoma de hormônio independente do TSH). O nódulo de tireoide é extremamente comum na população geral (a maioria benigna), mas uma minoria representa carcinoma, cuja probabilidade aumenta com certas características clínicas e ultrassonográficas."
       },
       {
-        "titulo": "Hipertireoidismo",
-        "conteudo": "A Doença de Graves é a causa mais comum. Quadro clínico com perda de peso, taquicardia, intolerância ao calor e, na Graves, oftalmopatia característica."
+        "titulo": "Quadro clínico",
+        "conteudo": "Hipotireoidismo cursa com fadiga, ganho de peso, intolerância ao frio, constipação, pele seca, queda de cabelo e bradicardia — instalação insidiosa, muitas vezes atribuída erroneamente ao envelhecimento. Hipertireoidismo apresenta-se com perda de peso apesar de apetite aumentado, intolerância ao calor, palpitações, tremores, ansiedade e hiperdefecação; na doença de Graves especificamente, associam-se oftalmopatia (exoftalmia, edema periorbitário) e, mais raramente, mixedema pré-tibial. O nódulo de tireoide é geralmente assintomático, identificado ao exame físico ou em exame de imagem incidental (\"incidentaloma\")."
       },
       {
-        "titulo": "Nódulo de tireoide",
-        "conteudo": "Avaliação inicial com TSH e ultrassonografia; a punção aspirativa por agulha fina (PAAF) é indicada conforme características ultrassonográficas de risco e tamanho do nódulo."
+        "titulo": "Exame físico",
+        "conteudo": "Bócio difuso indolor sugere Hashimoto ou Graves; bócio nodular sugere doença nodular (multinodular tóxico ou nódulo isolado). Exoftalmia bilateral com retração palpebral é achado praticamente patognomônico de doença de Graves (oftalmopatia tireoidiana autoimune), não presente em outras causas de hipertireoidismo. Mixedema (edema sem cacifo, especialmente periorbitário e em membros inferiores) sugere hipotireoidismo grave e prolongado. À palpação tireoidiana, nódulo endurecido, fixo a planos profundos ou associado a linfonodomegalia cervical levanta suspeita de malignidade."
       },
       {
-        "titulo": "Tempestade tireoidiana e coma mixedematoso",
-        "conteudo": "Formas extremas e potencialmente fatais de hiper e hipotireoidismo descompensados, respectivamente, exigindo tratamento intensivo imediato."
+        "titulo": "Diagnóstico",
+        "conteudo": "O TSH é o exame de rastreamento inicial de escolha para qualquer disfunção tireoidiana, por sua alta sensibilidade: TSH elevado com T4 livre baixo confirma hipotireoidismo primário; TSH suprimido com T4 livre elevado confirma hipertireoidismo. Anticorpos anti-TPO (Hashimoto) e TRAb (Graves) auxiliam na etiologia. Para nódulos tireoidianos, a ultrassonografia (sistema TI-RADS de estratificação de risco) orienta a indicação de punção aspirativa por agulha fina (PAAF), que é o exame padrão-ouro para diferenciação entre nódulo benigno e maligno, classificado pelo sistema Bethesda."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Hipotireoidismo é tratado com reposição de levotiroxina em dose única diária, em jejum, com ajuste guiado por TSH a cada 6-8 semanas até estabilização. Hipertireoidismo por Graves pode ser tratado com drogas antitireoidianas (metimazol como primeira escolha, exceto no primeiro trimestre gestacional, quando se prefere propiltiouracila pelo menor risco teratogênico), iodo radioativo, ou tireoidectomia, conforme perfil do paciente e presença de oftalmopatia (iodo radioativo pode piorar a oftalmopatia). Nódulos com PAAF benigna são acompanhados clinicamente/ultrassonograficamente; PAAF suspeita ou maligna indica tireoidectomia."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Tempestade tireoidiana (hipertireoidismo grave descompensado) e coma mixedematoso</span> são emergências endócrinas com alta mortalidade se não tratadas prontamente."
+        "conteudo": "<span class=\"red-flag\">Taquicardia extrema, febre alta, agitação/delirium e insuficiência cardíaca em paciente hipertireoideo</span> caracteriza a tempestade tireoidiana (crise tireotóxica), emergência endocrinológica com alta mortalidade, geralmente desencadeada por infecção, cirurgia ou suspensão abrupta de medicação em paciente com hipertireoidismo não controlado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "TSH como exame de rastreamento inicial (e sua interpretação em conjunto com T4 livre para localizar o nível do problema — primário vs. central) é cobrança garantida. Exoftalmia como achado específico de Graves (não presente em outras tireotoxicoses) é ponto clássico de diferenciação. A preferência por propiltiouracila sobre metimazol no primeiro trimestre gestacional é um detalhe frequentemente cobrado em questões sobre tireoidopatia na gestação."
       }
     ]
   },
@@ -3132,7 +3188,7 @@
     "titulo": "Derrame Pleural: Transudato x Exsudato",
     "resumo": "Critérios de Light, principais etiologias e manejo do derrame parapneumônico/empiema.",
     "revisado": false,
-    "fonte": "Diretriz de Doenças Pleurais da Sociedade Brasileira de Pneumologia e Tisiologia 2022",
+    "fonte": "Sociedade Brasileira de Pneumologia e Tisiologia — Diretrizes de Doenças Pleurais; Critérios de Light (Light RW, 1972)",
     "mnemonicos": [
       {
         "palavra": "Light",
@@ -3141,24 +3197,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Etiologia geral",
-        "conteudo": "Transudatos decorrem de alteração das pressões hidrostática/oncótica sistêmicas — insuficiência cardíaca é a causa mais comum, seguida de cirrose hepática e síndrome nefrótica. Exsudatos decorrem de processo inflamatório, infeccioso ou neoplásico local da pleura — derrame parapneumônico, neoplasia, tuberculose pleural e tromboembolismo pulmonar são causas frequentes."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O derrame pleural resulta do acúmulo anormal de líquido no espaço pleural, por desequilíbrio entre produção e reabsorção. Transudatos decorrem de alterações sistêmicas de pressão hidrostática/oncótica (insuficiência cardíaca, cirrose, síndrome nefrótica), sem doença pleural primária — a pleura está intacta, apenas \"filtrando\" o excesso de líquido sistêmico. Exsudatos decorrem de doença pleural ou pulmonar local que aumenta a permeabilidade capilar ou reduz a drenagem linfática (infecção, neoplasia, embolia pulmonar, doenças inflamatórias)."
       },
       {
-        "titulo": "Critérios de Light",
-        "conteudo": "Classificam o derrame como exsudato se pelo menos um critério estiver presente: relação proteína pleural/sérica >0,5; relação LDH pleural/sérico >0,6; ou LDH pleural maior que 2/3 do limite superior normal do LDH sérico. Têm alta sensibilidade, mas podem classificar equivocadamente alguns transudatos (ex.: paciente com IC em uso de diurético) como exsudato."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dispneia proporcional ao volume do derrame, dor torácica pleurítica (mais comum em exsudatos inflamatórios/infecciosos) e tosse seca são os sintomas mais comuns. Derrames transudativos geralmente se apresentam no contexto do quadro sistêmico de base (dispneia e edema na IC, ascite e edema na cirrose), enquanto exsudatos costumam vir acompanhados de febre (infeccioso) ou sintomas constitucionais/emagrecimento (neoplásico)."
       },
       {
-        "titulo": "Derrame parapneumônico e empiema",
-        "conteudo": "Classificado conforme as características bioquímicas e microbiológicas do líquido pleural em não complicado, complicado (necessita drenagem) e empiema (pus franco na cavidade pleural, sempre drenar). pH pleural <7,2 ou glicose <40-60 mg/dL sinalizam derrame complicado que provavelmente exigirá drenagem torácica."
+        "titulo": "Exame físico",
+        "conteudo": "Macicez à percussão, redução ou abolição do frêmito toracovocal e diminuição/abolição do murmúrio vesicular na área do derrame são a tríade clássica do exame físico. Egofonia (voz \"anasalada\", em \"e\" que soa como \"a\") pode ser auscultada na transição entre o pulmão comprimido e o derrame, em volumes moderados."
       },
       {
-        "titulo": "Abordagem diagnóstica",
-        "conteudo": "A toracocentese diagnóstica está indicada em praticamente todo derrame pleural novo de causa não esclarecida, exceto em quadro clinicamente típico de insuficiência cardíaca congestiva bilateral respondendo ao diurético, situação em que a puncão pode ser adiada."
+        "titulo": "Diagnóstico",
+        "conteudo": "A toracocentese diagnóstica, com análise do líquido pleural pelos critérios de Light, é o padrão-ouro para diferenciar transudato de exsudato: é exsudato se preencher pelo menos um dos critérios — relação proteína pleural/sérica >0,5, relação LDH pleural/sérica >0,6, ou LDH pleural maior que 2/3 do limite superior normal sérico. Se nenhum critério for preenchido, é transudato. Investigação adicional do líquido (celularidade, glicose, pH, citologia oncótica, cultura/ADA para tuberculose) direciona a etiologia específica do exsudato conforme a suspeita clínica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Transudatos são tratados pelo controle da doença sistêmica de base (otimização de diurético na IC, por exemplo), raramente exigindo drenagem isolada exceto se muito volumosos e sintomáticos. Exsudatos requerem tratamento direcionado à etiologia (antibiótico no parapneumônico, quimioterapia/pleurodese no neoplásico recorrente). Derrame parapneumônico complicado (pH <7,2, glicose baixa, ou empiema com líquido purulento/cultura positiva) exige drenagem torácica, além de antibioticoterapia, sob risco de evolução para encarceramento pleural."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Empiema (pus franco na cavidade pleural) sempre exige drenagem torácica</span>, associada à antibioticoterapia — não responde ao tratamento com antibiótico isolado."
+        "conteudo": "<span class=\"red-flag\">Derrame parapneumônico com pH pleural <7,2, glicose muito baixa, ou aspecto purulento (empiema)</span> exige drenagem torácica imediata associada ao antibiótico — o tratamento apenas com antibiótico nesses casos tem alto risco de falha e evolução para encarceramento pulmonar com necessidade de intervenção cirúrgica mais invasiva."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os critérios de Light (com os valores exatos de corte) para diferenciação transudato/exsudato são cobrança garantida em praticamente toda prova que aborda o tema. A tríade semiológica clássica (macicez, frêmito reduzido, murmúrio abolido) e os critérios de complicação do derrame parapneumônico que indicam drenagem (pH, glicose, aspecto do líquido) também são frequentemente exigidos em questões de caso clínico."
       }
     ]
   },
@@ -3317,7 +3381,7 @@
     "titulo": "Distúrbios da Glândula Adrenal: Insuficiência Adrenal e Síndrome de Cushing",
     "resumo": "Insuficiência adrenal primária x secundária, crise adrenal e investigação da síndrome de Cushing.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia — Diretrizes de Insuficiência Adrenal e Síndrome de Cushing; Endocrine Society Clinical Practice Guidelines",
+    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia; Endocrine Society Clinical Practice Guidelines (Adrenal Insufficiency; Cushing's Syndrome)",
     "mnemonicos": [
       {
         "palavra": "Addison bronzeia",
@@ -3326,28 +3390,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Insuficiência adrenal primária x secundária",
-        "conteudo": "Primária (doença de Addison): destruição do córtex adrenal, sendo a causa autoimune a mais comum; cursa com deficiência tanto de cortisol quanto de aldosterona, e hiperpigmentação cutânea por ACTH elevado. Secundária: deficiência de ACTH hipofisário, ou supressão do eixo por corticoterapia exógena prolongada — poupa a produção de aldosterona (regulada principalmente pelo sistema renina-angiotensina, não pelo ACTH)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A insuficiência adrenal primária (doença de Addison) resulta da destruição do próprio córtex adrenal, mais comumente por adrenalite autoimune, com deficiência combinada de cortisol e aldosterona. A insuficiência adrenal secundária decorre de supressão do eixo hipotálamo-hipófise-adrenal, sendo o uso crônico de corticoide exógeno sua causa mais comum e frequentemente subestimada — nesse caso, a produção de aldosterona é preservada (regulada principalmente pelo sistema renina-angiotensina, não pelo ACTH). A síndrome de Cushing resulta de exposição crônica a excesso de cortisol, seja exógeno (a causa mais comum globalmente, por uso terapêutico de corticoide) ou endógeno (adenoma hipofisário produtor de ACTH — doença de Cushing —, tumor adrenal, ou produção ectópica de ACTH por neoplasia)."
       },
       {
-        "titulo": "Crise adrenal",
-        "conteudo": "Emergência endócrina com hipotensão refratária a volume, hiponatremia, hipercalemia (apenas na forma primária, pela deficiência de aldosterona) e hipoglicemia. O tratamento com hidrocortisona intravenosa em dose de estresse deve ser iniciado imediatamente, sem aguardar confirmação laboratorial."
+        "titulo": "Quadro clínico",
+        "conteudo": "Insuficiência adrenal cursa com fadiga, fraqueza, hipotensão, perda de peso, náuseas e dor abdominal — na forma primária, hiperpigmentação cutânea (por excesso de ACTH/POMC) é achado característico ausente na forma secundária. A síndrome de Cushing manifesta-se com obesidade central, fácies em lua cheia, giba dorsal (\"corcova de búfalo\"), estrias violáceas largas (>1cm), fraqueza muscular proximal, hipertensão e hiperglicemia — quadro que pode mimetizar síndrome metabólica comum, exigindo alto índice de suspeição para diferenciação."
       },
       {
-        "titulo": "Síndrome de Cushing",
-        "conteudo": "Excesso de cortisol, de causa exógena (uso crônico de corticoide — a causa mais comum na prática clínica) ou endógena (adenoma hipofisário produtor de ACTH — doença de Cushing, tumor adrenal, ou produção ectópica de ACTH). Quadro clínico: obesidade centrípeta, fácies em lua cheia, giba dorsal, estrias violáceas largas, fraqueza muscular proximal, hipertensão e hiperglicemia."
+        "titulo": "Exame físico",
+        "conteudo": "Hiperpigmentação de pele e mucosas (especialmente em áreas de fricção, cicatrizes e mucosa oral) é achado praticamente patognomônico de insuficiência adrenal primária, refletindo o excesso de hormônio estimulante de melanócitos co-secretado com ACTH — ausente na insuficiência secundária, ponto crucial de diferenciação clínica. Estrias violáceas largas e fraqueza muscular proximal (dificuldade de levantar de cadeira sem apoio) são mais específicas de Cushing do que a obesidade central isolada, que é extremamente prevalente na população geral por outras causas."
       },
       {
-        "titulo": "Investigação da síndrome de Cushing",
-        "conteudo": "Testes de rastreio: cortisol salivar noturno, cortisol livre urinário de 24h ou teste de supressão com dexametasona em dose baixa. A dosagem de ACTH sérico diferencia a causa ACTH-dependente (hipofisária ou ectópica) da ACTH-independente (adrenal)."
+        "titulo": "Diagnóstico",
+        "conteudo": "Insuficiência adrenal é confirmada por cortisol basal baixo associado a teste de estímulo com ACTH sintético (cortrosina) sem resposta adequada; ACTH sérico elevado indica forma primária, e baixo/inapropriadamente normal indica forma secundária. Síndrome de Cushing é rastreada por cortisol salivar noturno, cortisol livre urinário de 24h, ou teste de supressão com dexametasona em dose baixa (1mg); uma vez confirmado o hipercortisolismo, o ACTH sérico diferencia Cushing ACTH-dependente (hipofisário ou ectópico) de ACTH-independente (adrenal), direcionando a investigação de imagem subsequente (ressonância de hipófise ou tomografia de adrenal)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Insuficiência adrenal crônica é tratada com reposição de glicocorticoide (hidrocortisona) e, na forma primária, também de mineralocorticoide (fludrocortisona), com orientação essencial sobre ajuste de dose (\"regra dos dias de doença\", dobrando ou triplicando a dose em situações de estresse fisiológico como infecção ou cirurgia) para prevenir crise adrenal. Síndrome de Cushing endógena tem tratamento direcionado à causa: cirurgia transesfenoidal para adenoma hipofisário, adrenalectomia para tumor adrenal, e ressecção do tumor produtor de ACTH ectópico quando localizável; Cushing exógeno é manejado por desmame gradual do corticoide, nunca suspensão abrupta."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Suspender corticoide sistêmico abruptamente</span> após uso prolongado pode precipitar crise adrenal por supressão do eixo hipotálamo-hipófise-adrenal — a retirada deve ser sempre gradual."
+        "conteudo": "<span class=\"red-flag\">Hipotensão refratária, hiponatremia e hipercalemia em paciente com insuficiência adrenal conhecida ou uso crônico de corticoide recentemente suspenso</span> caracteriza crise adrenal, emergência endócrina fatal se não tratada imediatamente com hidrocortisona endovenosa em dose de estresse e reposição volêmica agressiva, sem aguardar confirmação laboratorial completa."
       },
       {
-        "titulo": "Feocromocitoma",
-        "conteudo": "Tumor produtor de catecolaminas originado na medula adrenal (ou paragânglios extra-adrenais — paraganglioma), causando hipertensão paroxística ou sustentada associada à tríade clássica de cefaleia, palpitações e sudorese profusa em crises. O diagnóstico é feito pela dosagem de metanefrinas plasmáticas ou urinárias fracionadas; confirmado o diagnóstico bioquímico, exame de imagem (tomografia/ressonância de abdome) localiza o tumor. O tratamento é cirúrgico, mas exige bloqueio alfa-adrenérgico pré-operatório completo antes de iniciar betabloqueador, para evitar crise hipertensiva paradoxal por vasoconstrição sem oposição."
+        "titulo": "Dicas de prova",
+        "conteudo": "A hiperpigmentação cutânea como diferencial entre insuficiência adrenal primária (presente) e secundária (ausente) é cobrança certa, assim como a preservação da aldosterona na forma secundária. Na síndrome de Cushing, a diferenciação entre causas ACTH-dependentes e independentes pela dosagem de ACTH é o algoritmo mais cobrado, e a fraqueza muscular proximal com estrias largas violáceas é o achado de exame físico mais valorizado para diferenciar de obesidade comum."
       }
     ]
   },
@@ -3358,7 +3426,7 @@
     "titulo": "Obesidade: Diagnóstico e Tratamento",
     "resumo": "Classificação por IMC, comorbidades associadas e opções terapêuticas do tratamento comportamental à cirurgia bariátrica.",
     "revisado": false,
-    "fonte": "Diretriz Brasileira de Obesidade — ABESO 2022; AACE/ACE Obesity Clinical Practice Guidelines",
+    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia; Diretrizes Brasileiras de Obesidade (Associação Brasileira para o Estudo da Obesidade); AACE/ACE Clinical Practice Guidelines for Obesity",
     "mnemonicos": [
       {
         "palavra": "30 é o corte",
@@ -3367,24 +3435,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Diagnóstico e classificação",
-        "conteudo": "Índice de massa corporal (IMC) ≥30 kg/m² define obesidade em adultos (sobrepeso: 25-29,9 kg/m²), classificada em grau I (30-34,9), grau II (35-39,9) e grau III/mórbida (≥40). A circunferência abdominal complementa a avaliação do risco cardiometabólico associado à obesidade central."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A obesidade é uma doença crônica multifatorial, resultante do desequilíbrio sustentado entre ingestão e gasto energético, influenciada por fatores genéticos, comportamentais, ambientais (ambiente obesogênico, alimentos ultraprocessados) e endócrinos (hormônios reguladores do apetite como leptina, grelina, GLP-1). O tecido adiposo, particularmente o visceral, funciona como órgão endócrino ativo, secretando adipocinas pró-inflamatórias que contribuem para resistência insulínica, disfunção endotelial e o desenvolvimento de comorbidades metabólicas e cardiovasculares associadas."
       },
       {
-        "titulo": "Avaliação de comorbidades",
-        "conteudo": "Rastreio obrigatório de diabetes/pré-diabetes, dislipidemia, hipertensão, esteatose hepática, apneia obstrutiva do sono e osteoartrite — condições frequentemente associadas à obesidade e que influenciam a escolha do tratamento."
+        "titulo": "Quadro clínico",
+        "conteudo": "Além do excesso de peso propriamente dito, a obesidade associa-se a um espectro de comorbidades que devem ser ativamente rastreadas: apneia obstrutiva do sono, doença hepática gordurosa não alcoólica, osteoartrite de joelhos, refluxo gastroesofágico, infertilidade/síndrome dos ovários policísticos, e maior risco de diabetes tipo 2, hipertensão e certos tipos de câncer. O impacto psicossocial (estigma, depressão, baixa autoestima) é component clínico relevante e frequentemente negligenciado na abordagem tradicional."
       },
       {
-        "titulo": "Tratamento não farmacológico",
-        "conteudo": "Dieta hipocalórica individualizada, atividade física regular e terapia comportamental são a base do tratamento. A meta inicial de perda de 5-10% do peso corporal já é suficiente para reduzir significativamente o risco cardiometabólico."
+        "titulo": "Exame físico",
+        "conteudo": "O índice de massa corporal (IMC = peso/altura²) classifica a obesidade em grau I (30-34,9kg/m²), grau II (35-39,9kg/m²) e grau III ou mórbida (≥40kg/m²), embora não diferencie massa gorda de massa magra. A circunferência abdominal é medida complementar importante, pois a obesidade central (visceral) carrega maior risco cardiometabólico que a obesidade de distribuição periférica/ginecoide, mesmo em IMCs semelhantes — valores de risco aumentado acima de 94cm (homens) e 80cm (mulheres), e muito aumentado acima de 102cm e 88cm, respectivamente."
       },
       {
-        "titulo": "Tratamento farmacológico e cirúrgico",
-        "conteudo": "Análogos de GLP-1 (liraglutida, semaglutida) e agonistas duplos GIP/GLP-1 (tirzepatida) demonstraram eficácia significativa na perda de peso. Cirurgia bariátrica é indicada em IMC ≥40, ou ≥35 associado a comorbidade, após falha do tratamento clínico bem conduzido."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é antropométrico (IMC ≥30kg/m² define obesidade), complementado pela avaliação de comorbidades associadas: perfil lipídico, glicemia/HbA1c, função hepática e tireoidiana (para excluir causas secundárias raras, como hipotireoidismo grave ou síndrome de Cushing), e rastreamento de apneia do sono quando clinicamente sugestiva. A avaliação da composição corporal (bioimpedância, quando disponível) pode refinar a avaliação em casos específicos, mas não é exigida rotineiramente."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento de primeira linha é a intervenção no estilo de vida (déficit calórico individualizado, atividade física regular, terapia comportamental), mas isoladamente tem eficácia limitada a longo prazo para a maioria dos pacientes com obesidade estabelecida. Farmacoterapia é indicada para IMC ≥30 (ou ≥27 com comorbidade associada) que não atingiram meta apenas com mudança de estilo de vida: os agonistas do receptor de GLP-1 (liraglutida, semaglutida) e o agonista duplo GLP-1/GIP (tirzepatida) representam a classe mais eficaz atualmente disponível, com perda ponderal média superior a 15-20% do peso corporal em doses para obesidade. Cirurgia bariátrica é indicada para IMC ≥40, ou ≥35 com comorbidade significativa, refratária a tratamento clínico otimizado, sendo o tratamento mais eficaz e duradouro disponível para obesidade grave."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Obesidade grave associada a sinais sugestivos de apneia do sono (sonolência diurna excessiva, ronco alto, pausas respiratórias referidas pelo acompanhante) deve ser investigada com polissonografia, pelo risco cardiovascular associado à apneia não tratada."
+        "conteudo": "Obesidade grave associada a sonolência diurna excessiva, ronco alto e pausas respiratórias observadas durante o sono deve motivar rastreamento ativo de apneia obstrutiva do sono, condição subdiagnosticada que aumenta significativamente o risco cardiovascular e a mortalidade perioperatória em cirurgias eletivas, incluindo a própria cirurgia bariátrica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A classificação de IMC (graus I, II, III/mórbida) e os critérios de indicação de cirurgia bariátrica (IMC ≥40, ou ≥35 com comorbidade) são cobrança certa. É cada vez mais comum, em provas atualizadas, cobrar o papel dos agonistas de GLP-1/GIP como avanço terapêutico farmacológico mais eficaz atualmente disponível, superando por larga margem as opções farmacológicas mais antigas (orlistate, sibutramina)."
       }
     ]
   },
@@ -6666,7 +6742,7 @@
     "titulo": "Distúrbios do Cálcio: Hiperparatireoidismo e Hipoparatireoidismo",
     "resumo": "Hiperparatireoidismo primário x hipercalcemia da malignidade, e o hipoparatireoidismo pós-cirúrgico.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia; Endocrine Society Clinical Practice Guideline on Primary Hyperparathyroidism",
+    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia; Endocrine Society Clinical Practice Guideline for Primary Hyperparathyroidism (2022)",
     "mnemonicos": [
       {
         "palavra": "Ossos, Pedras, Gemidos e Sussurros",
@@ -6675,24 +6751,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Hiperparatireoidismo primário",
-        "conteudo": "Causa mais comum de hipercalcemia em pacientes ambulatoriais, geralmente por adenoma de paratireoide único. Frequentemente assintomático, detectado em exame de rotina (cálcio elevado com PTH inapropriadamente normal/elevado)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O hiperparatireoidismo primário resulta da secreção autônoma e excessiva de paratormônio (PTH), mais comumente por adenoma de paratireoide único (cerca de 80-85% dos casos), causando hipercalcemia por aumento da reabsorção óssea, da reabsorção renal de cálcio e da produção de vitamina D ativa (aumentando a absorção intestinal de cálcio). A hipercalcemia da malignidade, principal diagnóstico diferencial em pacientes hospitalizados, ocorre por secreção de PTH-rP (peptídeo relacionado ao PTH) por tumores sólidos ou por metástases osteolíticas diretas, com PTH sérico tipicamente suprimido (ao contrário do hiperparatireoidismo primário). O hipoparatireoidismo mais comumente é iatrogênico, secundário à remoção ou lesão inadvertida das paratireoides durante tireoidectomia."
       },
       {
-        "titulo": "Hipercalcemia da malignidade",
-        "conteudo": "Causa mais comum de hipercalcemia em pacientes hospitalizados, por metástases ósseas líticas ou produção de PTHrp por tumores sólidos. PTH tipicamente suprimido, ao contrário do hiperparatireoidismo primário."
+        "titulo": "Quadro clínico",
+        "conteudo": "Hiperparatireoidismo primário é hoje, na maioria dos casos, assintomático ou oligossintomático, identificado por hipercalcemia incidental em exames de rotina. Quando sintomático, o mnemônico clássico \"ossos, pedras, gemidos e lamentos psíquicos\" resume o quadro: dor óssea/fraturas (osteíte fibrosa cística em casos avançados), nefrolitíase de repetição, sintomas gastrointestinais (constipação, dor abdominal, pancreatite) e sintomas neuropsiquiátricos (depressão, dificuldade de concentração, em casos graves confusão mental). Hipoparatireoidismo manifesta-se com sintomas de hipocalcemia: parestesias perioral e em extremidades, cãibras, e em casos graves tetania e convulsões."
       },
       {
-        "titulo": "Tratamento da hipercalcemia grave",
-        "conteudo": "Hidratação vigorosa com solução salina é a primeira medida. Bisfosfonatos para controle mais duradouro, especialmente na hipercalcemia da malignidade. Calcitonina para efeito mais rápido, porém transitório, em casos graves."
+        "titulo": "Exame físico",
+        "conteudo": "No hipoparatireoidismo/hipocalcemia, o sinal de Chvostek (contração da musculatura facial ao percutir o nervo facial próximo ao ângulo da mandíbula) e o sinal de Trousseau (espasmo carpal — \"mão de parteiro\" — após insuflação do manguito de pressão acima da PA sistólica por 3 minutos, sendo mais sensível e específico que Chvostek) são achados clássicos de hiperexcitabilidade neuromuscular por hipocalcemia. No hiperparatireoidismo grave e prolongado, pode haver deformidades ósseas palpáveis e fraqueza muscular proximal."
       },
       {
-        "titulo": "Hipoparatireoidismo",
-        "conteudo": "Causa mais comum é iatrogênica (pós-tireoidectomia). Hipocalcemia com PTH baixo/inapropriadamente normal. Sinais clássicos: Chvostek (contração facial à percussão do nervo facial) e Trousseau (espasmo carpal ao insuflar o manguito de PA)."
+        "titulo": "Diagnóstico",
+        "conteudo": "Hiperparatireoidismo primário é confirmado por hipercalcemia associada a PTH elevado ou inapropriadamente normal (não suprimido, como seria fisiologicamente esperado diante de hipercalcemia) — esse padrão diferencia da hipercalcemia da malignidade, onde o PTH está tipicamente suprimido. Cintilografia com sestamibi ou ultrassonografia cervical localizam o adenoma antes da cirurgia. Hipoparatireoidismo é confirmado por hipocalcemia associada a PTH baixo ou inapropriadamente normal, com hiperfosfatemia associada (o PTH normalmente promove fosfatúria, então sua ausência causa retenção de fósforo)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Hiperparatireoidismo primário sintomático, ou assintomático que preencha critérios (cálcio >1mg/dL acima do limite superior, redução de densidade mineral óssea, nefrolitíase, idade <50 anos, ou redução da função renal), tem indicação de paratireoidectomia, único tratamento curativo. Hipercalcemia grave aguda (>14mg/dL ou sintomática) é tratada com hidratação salina vigorosa seguida de bisfosfonato ou denosumabe; calcitonina tem efeito mais rápido porém transitório, útil na fase inicial enquanto o bisfosfonato faz efeito. Hipoparatireoidismo crônico é tratado com reposição de cálcio oral e calcitriol (vitamina D ativa, já que a conversão renal dependente de PTH está comprometida)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hipocalcemia grave com prolongamento do intervalo QT</span> predispõe a arritmias ventriculares graves (torsades de pointes) e tetania — repor cálcio intravenoso é prioridade em quadros sintomáticos graves."
+        "conteudo": "<span class=\"red-flag\">Hipocalcemia grave com sinais de Chvostek/Trousseau positivos, especialmente no pós-operatório imediato de tireoidectomia</span>, deve motivar reposição de cálcio prontamente, pelo risco de progressão para tetania, laringoespasmo e convulsões — complicação a ser ativamente monitorada e prevenida nesse contexto cirúrgico específico."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O mnemônico \"ossos, pedras, gemidos e lamentos psíquicos\" para hiperparatireoidismo primário é cobrança clássica. A diferenciação entre hiperparatireoidismo primário (PTH elevado/inapropriado) e hipercalcemia da malignidade (PTH suprimido) é o ponto mais valorizado em questões de diagnóstico diferencial de hipercalcemia. Os sinais de Chvostek e Trousseau, com Trousseau sendo mais específico, são achados de exame físico frequentemente cobrados para hipocalcemia."
       }
     ]
   },
@@ -7036,7 +7120,7 @@
     "titulo": "Pneumotórax Espontâneo",
     "resumo": "Diferenciação entre pneumotórax primário e secundário, diagnóstico radiográfico e conduta escalonada.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pneumologia e Tisiologia; BTS Pleural Disease Guideline",
+    "fonte": "Sociedade Brasileira de Pneumologia e Tisiologia; British Thoracic Society Guideline for pleural disease (pneumothorax)",
     "mnemonicos": [
       {
         "palavra": "Alto, magro e jovem",
@@ -7045,24 +7129,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Pneumotórax espontâneo primário",
-        "conteudo": "Ocorre na ausência de doença pulmonar conhecida, tipicamente em homens jovens, altos e magros, por ruptura de bolhas subpleurais. Dor torácica pleurítica súbita associada a dispneia."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O pneumotórax espontâneo primário ocorre na ausência de doença pulmonar conhecida, tipicamente por ruptura de bolhas subpleurais apicais, mais comum em homens jovens, altos e magros, tabagistas. O pneumotórax espontâneo secundário ocorre como complicação de doença pulmonar subjacente (DPOC é a causa mais comum, também fibrose cística, pneumocistose em imunossuprimidos), tendendo a ter repercussão clínica mais grave pela reserva pulmonar já reduzida do paciente. O pneumotórax hipertensivo ocorre quando um mecanismo valvular unidirecional permite entrada progressiva de ar no espaço pleural sem saída, aumentando a pressão intratorácica a ponto de comprometer o retorno venoso e o débito cardíaco."
       },
       {
-        "titulo": "Pneumotórax espontâneo secundário",
-        "conteudo": "Ocorre em paciente com doença pulmonar de base (DPOC é a causa mais comum). Geralmente mais sintomático que o primário, pela menor reserva pulmonar de base."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor torácica pleurítica de início súbito e dispneia são os sintomas mais comuns, de intensidade proporcional ao tamanho do pneumotórax e à reserva pulmonar prévia do paciente (um pneumotórax pequeno em pulmão previamente saudável pode ser pouco sintomático; o mesmo tamanho em DPOC grave pode ser dramático). No pneumotórax hipertensivo, a deterioração é rápida e progressiva, com dispneia grave e sinais de choque obstrutivo."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Diminuição/abolição do murmúrio vesicular, hipertimpanismo à percussão e redução do frêmito toracovocal no hemitórax acometido compõem a tríade clássica. No pneumotórax hipertensivo, desvio contralateral da traqueia, turgência jugular e hipotensão são achados tardios e graves que indicam necessidade de descompressão imediata, sem aguardar confirmação radiológica."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Radiografia de tórax evidencia a linha da pleura visceral separada da parede torácica, sem trama pulmonar além dela. Tomografia de tórax é mais sensível para pneumotórax pequenos ou casos duvidosos."
+        "conteudo": "A radiografia de tórax confirma o diagnóstico na maioria dos casos, evidenciando a linha da pleura visceral separada da parede torácica, sem trama pulmonar periférica a ela. A ultrassonografia point-of-care (ausência de deslizamento pleural — \"lung sliding\") tem sensibilidade superior à radiografia em pacientes críticos/deitados e permite diagnóstico à beira do leito. No pneumotórax hipertensivo, o diagnóstico deve ser eminentemente clínico — jamais aguardar radiografia diante de instabilidade hemodinâmica com suspeita clínica."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Conduta conservadora para pneumotórax pequenos e assintomáticos. Drenagem torácica em selo d'água para pneumotórax grandes, sintomáticos, ou secundários. Pleurodese considerada após recorrências."
+        "conteudo": "Pneumotórax espontâneo primário pequeno e pouco sintomático pode ser conduzido conservadoramente com observação e oxigenoterapia suplementar (que acelera a reabsorção do ar). Pneumotórax maior ou sintomático requer drenagem torácica ou aspiração simples com agulha, conforme protocolo institucional e tamanho. Pneumotórax secundário geralmente exige drenagem pela menor reserva respiratória do paciente. Pneumotórax hipertensivo é emergência absoluta: descompressão imediata por punção com agulha no segundo espaço intercostal, linha hemiclavicular (ou quarto/quinto espaço, linha axilar anterior, conforme protocolo atual), seguida de drenagem torácica definitiva — jamais aguardar exame de imagem confirmatório."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Pneumotórax hipertensivo</span> (desvio de mediastino, turgência jugular, instabilidade) é emergência que exige descompressão por agulha imediata, seja espontâneo ou traumático."
+        "conteudo": "<span class=\"red-flag\">Dispneia grave, desvio contralateral de traqueia, turgência jugular e hipotensão</span> em paciente com suspeita de pneumotórax caracteriza pneumotórax hipertensivo — emergência que exige descompressão por punção imediata, sem aguardar radiografia de tórax, sob risco de parada cardiorrespiratória por colapso do retorno venoso."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O diagnóstico clínico (não radiológico) do pneumotórax hipertensivo é a cobrança mais recorrente e mais importante do tema — a banca frequentemente descreve um paciente instável e testa se o candidato vai \"perder tempo\" pedindo radiografia antes de descomprimir. O perfil epidemiológico clássico do pneumotórax espontâneo primário (homem jovem, alto e magro, tabagista) também é frequentemente cobrado."
       }
     ]
   },
@@ -7073,7 +7165,7 @@
     "titulo": "Câncer de Pulmão",
     "resumo": "Classificação histológica, síndromes paraneoplásicas e rastreamento por tomografia de baixa dose em fumantes.",
     "revisado": false,
-    "fonte": "Instituto Nacional de Câncer (INCA); NCCN Guidelines for Non-Small Cell and Small Cell Lung Cancer",
+    "fonte": "Instituto Nacional de Câncer (INCA); Sociedade Brasileira de Pneumologia e Tisiologia; National Comprehensive Cancer Network (NCCN) Guidelines for Non-Small Cell Lung Cancer",
     "mnemonicos": [
       {
         "palavra": "Fumou, tossiu diferente, investigue",
@@ -7082,24 +7174,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fatores de risco e classificação",
-        "conteudo": "Tabagismo é o principal fator de risco. Classificado em não pequenas células (adenocarcinoma — mais comum atualmente, inclusive em não fumantes; carcinoma epidermoide — associado ao tabagismo) e pequenas células (altamente agressivo, quase sempre associado ao tabagismo, frequentemente já disseminado ao diagnóstico)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O câncer de pulmão é classificado histologicamente em dois grandes grupos com implicações terapêuticas e prognósticas distintas: carcinoma de não pequenas células (cerca de 85% dos casos — adenocarcinoma, o subtipo mais comum atualmente inclusive em não tabagistas, carcinoma epidermoide/escamoso, e carcinoma de grandes células) e carcinoma de pequenas células (cerca de 15%, fortemente associado ao tabagismo, com comportamento biológico muito mais agressivo, crescimento rápido e disseminação metastática precoce). O tabagismo é o principal fator de risco para ambos os tipos, com relação dose-dependente ao número de maços-ano."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Tosse persistente/mudança de padrão em fumante, hemoptise, emagrecimento, dor torácica e síndromes paraneoplásicas (hipercalcemia no epidermoide, SIADH e síndromes neurológicas no de pequenas células) podem ser a primeira manifestação."
+        "conteudo": "Tosse persistente, hemoptise, dor torácica e perda de peso são os sintomas mais comuns, porém tardios — a maioria dos casos é diagnosticada em estágio avançado justamente pela ausência de sintomas específicos nas fases iniciais. Síndromes paraneoplásicas são mais associadas ao carcinoma de pequenas células (síndrome de secreção inapropriada de ADH, síndrome de Cushing ectópica, síndrome miastênica de Eaton-Lambert) e ao epidermoide (hipercalcemia por PTH-rP). Síndrome de Pancoast (tumor de ápice pulmonar) pode causar dor no ombro/braço por invasão do plexo braquial e síndrome de Horner (ptose, miose, anidrose) por acometimento do gânglio simpático cervical."
       },
       {
-        "titulo": "Rastreamento",
-        "conteudo": "Tomografia de tórax de baixa dose anual é recomendada para indivíduos de alto risco (grande carga tabágica, faixa etária específica), com evidência de redução de mortalidade por câncer de pulmão."
+        "titulo": "Exame físico",
+        "conteudo": "Pode ser normal em fases iniciais. Baqueteamento digital é achado clássico associado a neoplasia pulmonar. Síndrome de veia cava superior (edema facial e de membros superiores, turgência jugular, circulação colateral no tórax) sugere invasão mediastinal por massa volumosa. Linfonodomegalia supraclavicular (linfonodo de Virchow) sugere disseminação metastática à distância."
       },
       {
-        "titulo": "Diagnóstico e estadiamento",
-        "conteudo": "Tomografia de tórax seguida de biópsia (broncoscopia, biópsia transtorácica ou mediastinoscopia) confirma o diagnóstico. PET-CT e ressonância de crânio auxiliam no estadiamento à procura de metástases."
+        "titulo": "Diagnóstico",
+        "conteudo": "A tomografia de tórax é o exame inicial diante de suspeita clínica ou achado incidental de nódulo/massa pulmonar. O diagnóstico histológico definitivo requer biópsia (broncoscopia com biópsia transbrônquica, biópsia transtorácica guiada por imagem, ou biópsia cirúrgica, conforme localização e acessibilidade da lesão). O rastreamento com tomografia de tórax de baixa dose é recomendado anualmente para tabagistas/ex-tabagistas de alto risco (geralmente carga tabágica ≥20 maços-ano, idade entre 50-80 anos), com redução comprovada de mortalidade por diagnóstico em estágio mais precoce."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "No carcinoma de não pequenas células em estágio inicial (localizado, sem disseminação linfonodal/metastática significativa), a ressecção cirúrgica é o tratamento de escolha, com intenção curativa. Em estágios avançados/metastáticos, o tratamento sistêmico é guiado por perfil molecular (mutações de EGFR, rearranjos de ALK/ROS1, expressão de PD-L1), com terapias-alvo e imunoterapia (inibidores de checkpoint) representando avanços recentes significativos em sobrevida. O carcinoma de pequenas células, mesmo em estágio limitado, é tratado predominantemente com quimioterapia associada a radioterapia, pela sua disseminação sistêmica precoce típica mesmo quando aparentemente localizado à apresentação."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Síndrome da veia cava superior</span> (edema de face/pescoço, turgência jugular, circulação colateral) pode ser a manifestação inicial de tumores mediastinais/pulmonares centrais avançados."
+        "conteudo": "<span class=\"red-flag\">Hemoptise, perda de peso significativa e dor torácica persistente em tabagista de longa data</span> devem motivar investigação radiológica imediata para exclusão de neoplasia pulmonar — o atraso diagnóstico nesse perfil de risco compromete significativamente as chances de tratamento com intenção curativa."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A distinção entre carcinoma de pequenas células (mais agressivo, tratamento predominantemente sistêmico mesmo em doença aparentemente localizada) e de não pequenas células (cirurgia possível em estágio inicial) é cobrança central. A síndrome de Pancoast com síndrome de Horner associada, e as síndromes paraneoplásicas específicas de cada subtipo histológico, são pontos clássicos de questões de associação clínica."
       }
     ]
   },
@@ -8146,7 +8246,7 @@
     "titulo": "Síndrome Metabólica",
     "resumo": "Critérios diagnósticos combinando obesidade abdominal, dislipidemia, hipertensão e hiperglicemia, e sua relação com risco cardiovascular.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Prevenção Cardiovascular; International Diabetes Federation (IDF) — Consenso de Síndrome Metabólica",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Prevenção Cardiovascular; International Diabetes Federation (IDF) — Consenso de Síndrome Metabólica; NCEP-ATP III",
     "mnemonicos": [
       {
         "palavra": "3 de 5 fecham o diagnóstico",
@@ -8155,24 +8255,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e critérios diagnósticos",
-        "conteudo": "Conjunto de fatores de risco cardiovascular e metabólico que ocorrem em associação: obesidade abdominal (circunferência de cintura aumentada, com pontos de corte variando por etnia/sexo), triglicerídeos ≥150mg/dL, HDL baixo, pressão arterial ≥130/85mmHg e glicemia de jejum ≥100mg/dL. O diagnóstico requer 3 ou mais critérios."
-      },
-      {
         "titulo": "Fisiopatologia",
-        "conteudo": "A resistência à insulina é considerada o mecanismo central que conecta os diferentes componentes da síndrome, promovendo um estado pró-inflamatório e pró-trombótico que amplifica o risco cardiovascular além da soma dos fatores isolados."
+        "conteudo": "A síndrome metabólica é um conjunto de fatores de risco cardiovascular e metabólico que ocorrem em associação, tendo a resistência à insulina e a obesidade visceral como mecanismos centrais interligados. O tecido adiposo visceral disfuncional libera ácidos graxos livres e adipocinas pró-inflamatórias que promovem resistência insulínica sistêmica, disfunção endotelial e um estado pró-trombótico/pró-inflamatório crônico de baixo grau — amplificando o risco cardiovascular além da simples soma dos componentes isolados."
       },
       {
-        "titulo": "Importância clínica",
-        "conteudo": "Pacientes com síndrome metabólica têm risco aumentado de doença cardiovascular aterosclerótica e de progressão para diabetes mellitus tipo 2, justificando rastreamento ativo e intervenção precoce sobre os componentes modificáveis."
+        "titulo": "Quadro clínico",
+        "conteudo": "Por definição, é um diagnóstico laboratorial/antropométrico combinado, sem sintomas próprios — os pacientes geralmente são identificados por apresentarem múltiplos fatores de risco simultâneos em avaliação de rotina ou investigação de outra queixa. A relevância clínica está no risco aumentado de eventos cardiovasculares ateroscleróticos e de progressão para diabetes mellitus tipo 2, justificando rastreamento ativo e intervenção precoce sobre os componentes modificáveis identificados."
       },
       {
-        "titulo": "Abordagem terapêutica",
-        "conteudo": "Mudança do estilo de vida (redução de peso, atividade física regular, dieta) é a intervenção de primeira linha e mais eficaz para reverter múltiplos componentes simultaneamente. Tratamento farmacológico dirigido a cada componente isolado (anti-hipertensivo, hipolipemiante, hipoglicemiante) quando as metas não são atingidas apenas com mudanças comportamentais."
+        "titulo": "Exame físico",
+        "conteudo": "A medida da circunferência abdominal é o componente de exame físico central para o diagnóstico, com pontos de corte variando por etnia e sexo (na diretriz brasileira, ≥94cm em homens e ≥80cm em mulheres já configuram risco aumentado). Aferição da pressão arterial e busca por acantose nigricans (marcador de resistência insulínica) complementam a avaliação clínica inicial."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico requer a presença de pelo menos 3 dos 5 critérios: circunferência abdominal aumentada (conforme ponto de corte étnico/sexo), triglicerídeos ≥150mg/dL (ou uso de tratamento específico), HDL <40mg/dL em homens/<50mg/dL em mulheres, pressão arterial ≥130/85mmHg (ou uso de anti-hipertensivo) e glicemia de jejum ≥100mg/dL (ou diagnóstico prévio de diabetes) — nenhum critério isolado é obrigatório para o diagnóstico, apenas a combinação de 3 ou mais."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Mudança do estilo de vida (redução de peso corporal de 5-10%, atividade física regular, dieta com padrão mediterrâneo ou DASH) é a intervenção de primeira linha e mais eficaz por atuar simultaneamente sobre múltiplos componentes da síndrome. Tratamento farmacológico dirigido a cada componente isolado (anti-hipertensivo, hipolipemiante, metformina/outros hipoglicemiantes) é acrescentado quando as metas específicas não são atingidas apenas com mudanças comportamentais, seguindo as diretrizes de cada condição isolada (HAS, dislipidemia, DM2)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "A combinação de obesidade abdominal com múltiplos outros componentes em paciente jovem sinaliza risco cardiovascular precoce desproporcional à idade, exigindo abordagem preventiva intensiva."
+        "conteudo": "A combinação de obesidade abdominal com múltiplos outros componentes em paciente jovem sinaliza risco cardiovascular precoce desproporcional à idade cronológica, exigindo abordagem preventiva intensiva e investigação de eventuais componentes genéticos/familiares associados."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os 5 critérios diagnósticos com seus valores de corte exatos são cobrança certa, assim como a regra de \"3 de 5\" (nenhum componente é obrigatório isoladamente). A resistência insulínica como mecanismo fisiopatológico unificador é frequentemente explorada em questões conceituais que pedem a explicação do porquê os componentes se associam com tanta frequência."
       }
     ]
   },
