@@ -197,6 +197,18 @@
   color: var(--color-text-on-accent);
 }
 
+.list-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--space-4);
+}
+
+#btn-ordenar-az.is-active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text-on-accent);
+}
+
 /* ---------- Botões ---------- */
 
 .btn {
@@ -244,6 +256,12 @@
 }
 
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn--sm {
+  padding: 6px 14px;
+  min-height: auto;
+  font-size: var(--fs-sm);
+}
 
 /* ---------- Mnemônico ---------- */
 
@@ -499,6 +517,16 @@
 
 .prescription__contra {
   color: var(--color-danger);
+}
+
+.prescription__med {
+  font-weight: 700;
+  font-size: var(--fs-md);
+}
+
+.prescription__text--placeholder {
+  color: var(--color-text-muted);
+  letter-spacing: 0.03em;
 }
 
 .prescription__rx {
