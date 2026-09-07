@@ -1168,6 +1168,10 @@
       {
         "titulo": "Histórico e financiamento",
         "conteudo": "O SUS foi instituído pela Constituição Federal de 1988 e regulamentado pelas Leis Orgânicas da Saúde: Lei 8.080/1990 (organização, funcionamento e atribuições dos serviços de saúde) e Lei 8.142/1990 (participação social — Conferências e Conselhos de Saúde — e transferências intergovernamentais de recursos, os repasses \"fundo a fundo\"). O financiamento é tripartite (União, estados e municípios), com piso mínimo constitucional (art. 198 da CF). A Emenda Constitucional 95/2016 havia congelado por 20 anos o gasto federal em saúde, mas foi revogada pelo Novo Arcabouço Fiscal (Lei Complementar 200/2023), que retomou o piso federal em 15% da Receita Corrente Líquida da União."
+      },
+      {
+        "titulo": "NOB, NOAS e o Decreto 7.508/2011",
+        "conteudo": "As Normas Operacionais Básicas (NOBs, década de 1990) e as Normas Operacionais de Assistência à Saúde (NOAS, anos 2000) regulamentaram progressivamente a operacionalização do SUS — definindo responsabilidades de cada esfera de gestão, mecanismos de habilitação de municípios e regionalização da assistência, antes da consolidação trazida pelo Decreto nº 7.508/2011. Esse decreto regulamentou a Lei 8.080/1990 e formalizou conceitos centrais da organização atual do sistema: a Região de Saúde, a Rede de Atenção à Saúde, o Contrato Organizativo de Ação Pública da Saúde (COAP) e a Relação Nacional de Ações e Serviços de Saúde (RENASES) e de Medicamentos Essenciais (RENAME)."
       }
     ]
   },
@@ -7778,6 +7782,117 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Íleo meconial em recém-nascido</span> ou infecções respiratórias de repetição associadas a déficit de crescimento devem levantar suspeita de fibrose cística e motivar teste do suor."
+      }
+    ]
+  },
+  {
+    "id": "tdah-tea",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "TDAH e Transtorno do Espectro Autista",
+    "resumo": "Critérios diagnósticos clínicos do TDAH, sinais precoces do TEA e a importância da identificação precoce.",
+    "revisado": false,
+    "fonte": "DSM-5-TR; Sociedade Brasileira de Pediatria — Manual de Orientação em Transtorno do Espectro Autista",
+    "mnemonicos": [
+      {
+        "palavra": "TDAH desatenta ou some, TEA isola e repete",
+        "explicacao": "TDAH: dificuldade em manter atenção e/ou impulsividade/hiperatividade excessiva. TEA: dificuldade de interação social e comunicação, associada a comportamentos repetitivos e interesses restritos — perfis distintos, que podem coexistir na mesma criança."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Transtorno de déficit de atenção/hiperatividade (TDAH)",
+        "conteudo": "Padrão persistente de desatenção e/ou hiperatividade-impulsividade que interfere no funcionamento, com sintomas presentes antes dos 12 anos e em pelo menos dois ambientes diferentes. Apresentações predominantemente desatenta, hiperativa-impulsiva, ou combinada."
+      },
+      {
+        "titulo": "Diagnóstico do TDAH",
+        "conteudo": "Clínico, baseado em critérios do DSM-5 e relatos de múltiplos informantes. Não existe exame confirmatório. Diagnóstico diferencial inclui transtornos de ansiedade, dificuldades de aprendizagem e problemas sensoriais não corrigidos."
+      },
+      {
+        "titulo": "Tratamento do TDAH",
+        "conteudo": "Abordagem multimodal combinando intervenções comportamentais/psicoeducacionais com farmacoterapia quando indicada. Estimulantes (metilfenidato) são primeira linha; não estimulantes (atomoxetina) são alternativa em contraindicação ou resposta inadequada."
+      },
+      {
+        "titulo": "Transtorno do espectro autista (TEA)",
+        "conteudo": "Déficits persistentes na comunicação/interação social em múltiplos contextos, associados a padrões restritos e repetitivos de comportamento. Sinais precoces: ausência de contato visual, atraso de linguagem e estereotipias — identificação precoce melhora o prognóstico funcional."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Regressão de habilidades de comunicação/sociais já adquiridas</span> em criança pequena é sinal de alarme para TEA e exige avaliação especializada prioritária, não devendo ser observada passivamente."
+      }
+    ]
+  },
+  {
+    "id": "medicina-familia-comunidade",
+    "area": "residencia",
+    "categoria": "Medicina Preventiva",
+    "titulo": "Medicina de Família e Comunidade: Abordagem Centrada na Pessoa",
+    "resumo": "Abordagem centrada na pessoa, ferramentas de abordagem familiar (genograma) e o conceito de prevenção quaternária.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Medicina de Família e Comunidade — Manual de MFC; WONCA — Definição Europeia de Medicina Geral e Familiar",
+    "mnemonicos": [
+      {
+        "palavra": "Prevenção quaternária protege de excesso",
+        "explicacao": "Enquanto as prevenções primária, secundária e terciária buscam prevenir, detectar ou tratar doenças, a prevenção quaternária tem lógica inversa: proteger o paciente do excesso de intervenções médicas desnecessárias (sobrediagnóstico, sobretratamento, iatrogenia)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Princípios da Medicina de Família e Comunidade",
+        "conteudo": "Especialidade médica generalista orientada pela pessoa, pela família e pela comunidade, com atributos de longitudinalidade, integralidade e coordenação do cuidado — atuando como especialista em atenção primária dentro da Rede de Atenção à Saúde."
+      },
+      {
+        "titulo": "Abordagem centrada na pessoa",
+        "conteudo": "Modelo clínico que busca compreender a doença E a experiência de adoecimento do paciente (sentimentos, ideias, impacto funcional e expectativas), integrando esse entendimento ao contexto biopsicossocial, em contraposição ao modelo biomédico tradicional."
+      },
+      {
+        "titulo": "Abordagem familiar",
+        "conteudo": "Ferramentas como o genograma (representação gráfica da estrutura e relações familiares) e o ciclo de vida familiar (etapas previsíveis com tarefas e crises características) ajudam a compreender o contexto familiar como determinante de saúde."
+      },
+      {
+        "titulo": "Níveis de prevenção",
+        "conteudo": "Além dos clássicos primário, secundário e terciário, a prevenção quaternária busca identificar pacientes em risco de intervenção médica excessiva (sobrediagnóstico, sobretratamento) e protegê-los de intervenções desnecessárias ou iatrogênicas."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "A fragmentação do cuidado (múltiplos especialistas sem coordenação) em pacientes com múltiplas comorbidades é um risco à segurança do paciente que a coordenação pela atenção primária/MFC busca mitigar."
+      }
+    ]
+  },
+  {
+    "id": "calendario-vacinal-adulto-idoso",
+    "area": "residencia",
+    "categoria": "Medicina Preventiva",
+    "titulo": "Calendário de Vacinação do Adulto e do Idoso",
+    "resumo": "Vacinas de rotina para adultos, vacinas específicas do idoso (pneumocócica, herpes-zóster) e situações especiais.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Calendário Nacional de Vacinação; Sociedade Brasileira de Imunizações (SBIm)",
+    "mnemonicos": [
+      {
+        "palavra": "dT a cada 10 anos",
+        "explicacao": "O reforço da vacina dupla adulto (ou tríplice acelular quando indicada) deve ser repetido a cada 10 anos ao longo de toda a vida adulta, para manter a proteção contra tétano e difteria."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Vacinas de rotina para adultos",
+        "conteudo": "Dupla adulto (dT) ou tríplice bacteriana acelular do tipo adulto (dTpa), com reforço a cada 10 anos; hepatite B (esquema completo se não vacinado); tríplice viral para adultos até 59 anos sem comprovação de imunidade; febre amarela conforme área de risco."
+      },
+      {
+        "titulo": "Vacinas específicas para idosos",
+        "conteudo": "Influenza (dose anual), pneumocócica (esquema combinando as vacinas conjugada e polissacarídica) e herpes-zóster, reduzindo incidência e gravidade do herpes-zóster e da neuralgia pós-herpética."
+      },
+      {
+        "titulo": "Vacinação em situações especiais",
+        "conteudo": "Gestantes: dTpa a cada gestação (proteção passiva do RN contra coqueluche), influenza, hepatite B. Imunossuprimidos: contraindicação a vacinas de vírus vivo em certas condições. Profissionais de saúde: hepatite B, tríplice viral, varicela, dTpa."
+      },
+      {
+        "titulo": "Importância da vacinação do adulto/idoso",
+        "conteudo": "Proteção individual direta contra doenças com maior morbimortalidade nessa faixa etária e, em algumas vacinas (dTpa na gestante), proteção indireta de terceiros vulneráveis, como o recém-nascido."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "A subvacinação de idosos e adultos com comorbidades é um problema de saúde pública subestimado — a atualização da caderneta vacinal deve ser verificada ativamente em toda consulta, independentemente da idade."
       }
     ]
   }
