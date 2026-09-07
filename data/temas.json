@@ -3470,8 +3470,8 @@
     "categoria": "Cardiologia",
     "titulo": "Doença Arterial Coronariana Crônica (Angina Estável)",
     "resumo": "Angina estável: classificação CCS, estratificação diagnóstica por probabilidade pré-teste e tratamento clínico otimizado x revascularização.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Doença Coronária Estável (2014, atualização 2023); ESC Guidelines for chronic coronary syndromes (2019, atualização 2024); Estudo ISCHEMIA",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Síndrome Coronariana Crônica 2025 (substitui a antiga Diretriz de Doença Coronária Estável); ESC Guidelines for chronic coronary syndromes (2019, atualização 2024); Estudo ISCHEMIA",
     "mnemonicos": [
       {
         "palavra": "ABCDE",
@@ -3481,7 +3481,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A angina estável decorre de placas ateroscleróticas coronarianas fixas e estáveis (com capa fibrosa espessa, ao contrário das placas instáveis das síndromes agudas) que reduzem o lúmen vascular, gerando um desequilíbrio entre oferta e demanda de oxigênio miocárdico durante situações de maior consumo (esforço físico, estresse emocional, exposição ao frio), sem ruptura de placa nem trombose aguda associada. O limiar de esforço para o surgimento dos sintomas costuma ser reprodutível e previsível — uma característica central para diferenciá-la da instabilidade. A classificação da Canadian Cardiovascular Society (CCS, classes I a IV) graduada pela limitação funcional é usada tanto na prática clínica quanto em provas."
+        "conteudo": "A angina estável decorre de placas ateroscleróticas coronarianas fixas e estáveis (com capa fibrosa espessa, ao contrário das placas instáveis das síndromes agudas) que reduzem o lúmen vascular, gerando um desequilíbrio entre oferta e demanda de oxigênio miocárdico durante situações de maior consumo (esforço físico, estresse emocional, exposição ao frio), sem ruptura de placa nem trombose aguda associada. O limiar de esforço para o surgimento dos sintomas costuma ser reprodutível e previsível — uma característica central para diferenciá-la da instabilidade. A classificação da Canadian Cardiovascular Society (CCS, classes I a IV) graduada pela limitação funcional é usada tanto na prática clínica quanto em provas. Desde 2019 (ESC) e agora também na Diretriz Brasileira de Síndrome Coronariana Crônica 2025 (SBC), o termo \"doença arterial coronariana crônica/angina estável\" vem sendo substituído por \"síndrome coronariana crônica\" — reflete a doença aterosclerótica coronariana como um continuum (que pode evoluir silenciosamente por anos e ter momentos de agudização), e não um estado estático e isolado."
       },
       {
         "titulo": "Quadro clínico",
@@ -3493,7 +3493,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A escolha do exame depende da probabilidade pré-teste (calculada por idade, sexo e características da dor): teste ergométrico é útil em pacientes com capacidade de exercício preservada e ECG basal interpretável (sem BRE, marca-passo ou alterações de repouso de ST); angiotomografia de coronárias tem alto valor preditivo negativo e é especialmente útil para excluir doença obstrutiva em probabilidade baixa-intermediária; cintilografia miocárdica de perfusão e ecocardiograma de estresse avaliam isquemia induzida por estresse farmacológico ou físico. A cineangiocoronariografia (cateterismo cardíaco) permanece o padrão-ouro para definição anatômica precisa das lesões coronarianas, reservada a casos de alto risco pré-teste ou quando já se planeja revascularização."
+        "conteudo": "A escolha do exame depende da probabilidade pré-teste (calculada por idade, sexo e características da dor): teste ergométrico é útil em pacientes com capacidade de exercício preservada e ECG basal interpretável (sem BRE, marca-passo ou alterações de repouso de ST); angiotomografia de coronárias tem alto valor preditivo negativo e é especialmente útil para excluir doença obstrutiva em probabilidade baixa-intermediária; cintilografia miocárdica de perfusão (preferencialmente com PET, quando disponível) e ecocardiograma de estresse avaliam isquemia induzida por estresse farmacológico ou físico, sendo a diretriz 2025 mais enfática em recomendar esses exames de imagem funcional na probabilidade pré-teste moderada a alta. A cineangiocoronariografia (cateterismo cardíaco) permanece o padrão-ouro para definição anatômica precisa das lesões coronarianas, reservada a casos de alto risco pré-teste ou quando já se planeja revascularização."
       },
       {
         "titulo": "Tratamento",
@@ -3654,8 +3654,8 @@
     "categoria": "Cardiologia",
     "titulo": "Crise Hipertensiva: Emergência x Urgência Hipertensiva",
     "resumo": "Diferenciação entre urgência e emergência hipertensiva pela presença de lesão aguda de órgão-alvo, e metas de redução pressórica conforme o órgão acometido.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Hipertensão Arterial 2020; ACC/AHA Guideline for the management of high blood pressure (2017)",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Cardiologia, Sociedade Brasileira de Nefrologia e Sociedade Brasileira de Hipertensão — Diretriz Brasileira de Hipertensão Arterial 2025; ACC/AHA Guideline for the management of high blood pressure (2017)",
     "mnemonicos": [
       {
         "palavra": "Lesão de órgão-alvo = Emergência",
@@ -3665,7 +3665,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A emergência hipertensiva ocorre quando uma elevação acentuada e abrupta da pressão arterial ultrapassa a capacidade de autorregulação vascular dos órgãos-alvo, levando a lesão endotelial aguda, necrose fibrinoide arteriolar e disfunção de órgão em curso (encéfalo, coração, rins, retina, ou a própria aorta). O que define a gravidade não é exclusivamente o valor numérico da PA (embora tipicamente >180/120mmHg), mas a presença de dano agudo de órgão-alvo já instalado — um paciente hipertenso crônico grave pode tolerar valores muito altos sem lesão aguda (urgência), enquanto um paciente previamente normotenso (ex.: eclâmpsia, glomerulonefrite aguda) pode desenvolver emergência com valores proporcionalmente menores."
+        "conteudo": "A emergência hipertensiva ocorre quando uma elevação acentuada e abrupta da pressão arterial ultrapassa a capacidade de autorregulação vascular dos órgãos-alvo, levando a lesão endotelial aguda, necrose fibrinoide arteriolar e disfunção de órgão em curso (encéfalo, coração, rins, retina, ou a própria aorta). O que define a gravidade não é exclusivamente o valor numérico da PA (embora tipicamente >180/120mmHg), mas a presença de dano agudo de órgão-alvo já instalado — um paciente hipertenso crônico grave pode tolerar valores muito altos sem lesão aguda (urgência), enquanto um paciente previamente normotenso (ex.: eclâmpsia, glomerulonefrite aguda) pode desenvolver emergência com valores proporcionalmente menores. A Diretriz Brasileira de Hipertensão Arterial 2025 substituiu o termo \"urgência hipertensiva\" por \"elevação importante da PA sem lesão de órgão-alvo\" (PAS≥180 e/ou PAD≥110mmHg sem lesão aguda) — o conceito central não muda: é a lesão de órgão-alvo, não o valor absoluto da PA, que define a emergência."
       },
       {
         "titulo": "Quadro clínico",
@@ -3689,7 +3689,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O ponto mais cobrado é a diferenciação entre urgência (PA elevada sem lesão aguda de órgão-alvo, tratamento oral ambulatorial com reavaliação em dias) e emergência hipertensiva (com lesão aguda, tratamento parenteral hospitalar monitorizado). As exceções à meta de redução gradual de 25% na primeira hora (AVC isquêmico — mais permissivo — e dissecção de aorta — mais agressivo e rápido) são armadilhas clássicas de prova."
+        "conteudo": "O ponto mais cobrado é a diferenciação entre a antiga \"urgência\" — agora \"elevação importante da PA sem lesão de órgão-alvo\" (PA elevada sem lesão aguda, tratamento oral ambulatorial com reavaliação em até 7 dias) — e emergência hipertensiva (com lesão aguda, tratamento parenteral hospitalar monitorizado). Por ser mudança de nomenclatura recente (2025), tem boa chance de ser cobrada nas provas de 2026. As exceções à meta de redução gradual de 25% na primeira hora (AVC isquêmico — mais permissivo — e dissecção de aorta — mais agressivo e rápido) são armadilhas clássicas de prova, assim como a AVALIAÇÃO de que a meta é reduzir gradualmente, e NÃO normalizar a PA em poucas horas (erro comum em questão de caso clínico sobre encefalopatia hipertensiva/PRES)."
       }
     ]
   },
