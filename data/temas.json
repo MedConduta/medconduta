@@ -636,7 +636,7 @@
     "titulo": "Icterícia Neonatal",
     "resumo": "Diferenciação fisiológica x patológica e indicação de fototerapia na icterícia do recém-nascido.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria (SBP) - Documento Cientifico: Ictericia Neonatal; AAP Clinical Practice Guideline: Hyperbilirubinemia (atualizacao 2022)",
+    "fonte": "Sociedade Brasileira de Pediatria — Documento Científico de Icterícia Neonatal; AAP Clinical Practice Guideline on Hyperbilirubinemia",
     "mnemonicos": [
       {
         "palavra": "REGRA DAS 24H",
@@ -645,24 +645,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fisiológica x patológica",
-        "conteudo": "A icterícia fisiológica surge após 24-36h de vida, com pico em torno do 3º-5º dia e resolução espontânea. Icterícia nas primeiras 24h, de progressão rápida ou muito intensa, é sempre patológica e exige investigação."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A icterícia neonatal resulta do acúmulo de bilirrubina, refletindo tanto a maior produção fisiológica de bilirrubina no recém-nascido (maior volume eritrocitário e menor vida média das hemácias) quanto a imaturidade do sistema de conjugação hepática (icterícia fisiológica, surgindo após 24h de vida e resolvendo em cerca de 1-2 semanas). Icterícia patológica surge nas primeiras 24 horas de vida, com incompatibilidade sanguínea materno-fetal (ABO ou Rh) sendo causa importante a ser sempre investigada nesse cenário, pela produção acentuada de bilirrubina por hemólise imunomediada."
       },
       {
-        "titulo": "Investigação",
-        "conteudo": "Dosagem de bilirrubina total e frações, tipagem sanguínea da mãe e do recém-nascido, e teste de Coombs direto para investigar incompatibilidade sanguínea (ABO/Rh) como causa hemolítica."
+        "titulo": "Quadro clínico",
+        "conteudo": "Coloração amarelada de pele e mucosas, de progressão craniocaudal característica (iniciando pela face, progredindo para tronco e extremidades conforme o nível de bilirrubina aumenta — regra de Kramer), é a manifestação central. Icterícia de início muito precoce (primeiras 24h), muito intensa, ou persistente além de 2 semanas de vida, sinaliza necessidade de investigação de causa patológica subjacente."
       },
       {
-        "titulo": "Fototerapia",
-        "conteudo": "Indicada conforme nomograma que relaciona o nível de bilirrubina com a idade em horas de vida e a presença de fatores de risco (prematuridade, hemólise)."
+        "titulo": "Exame físico",
+        "conteudo": "A avaliação visual seguindo a progressão craniocaudal (zonas de Kramer) fornece estimativa aproximada do nível de bilirrubina, mas deve sempre ser confirmada por dosagem laboratorial antes de decisões terapêuticas, já que a avaliação visual isolada tem acurácia limitada, especialmente em recém-nascidos de pele mais pigmentada."
       },
       {
-        "titulo": "Exsanguineotransfusão",
-        "conteudo": "Reservada a casos graves ou refratários à fototerapia intensiva, com bilirrubina em níveis de risco para encefalopatia bilirrubínica."
+        "titulo": "Diagnóstico",
+        "conteudo": "A bilirrubina total e frações (direta/indireta) deve ser dosada e interpretada em relação a nomogramas específicos por idade em horas de vida (não apenas valor absoluto isolado), que definem o risco e orientam a necessidade de fototerapia ou exsanguineotransfusão. Investigação de hemólise (tipagem sanguínea materna e do RN, Coombs direto, hematócrito/reticulócitos) é indicada em icterícia de início precoce ou intensidade desproporcional."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Fototerapia é o tratamento de primeira linha para hiperbilirrubinemia significativa, convertendo a bilirrubina em isômeros mais facilmente excretáveis, com indicação baseada em nomogramas específicos por idade em horas e fatores de risco associados (prematuridade, hemólise). Exsanguineotransfusão é reservada a hiperbilirrubinemia grave refratária à fototerapia intensiva, ou com risco iminente de encefalopatia bilirrubínica (kernicterus), condição neurológica grave e permanente causada por depósito de bilirrubina nos núcleos da base."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sinais neurológicos (letargia, hipertonia, choro agudo) em recém-nascido ictérico</span> sugerem encefalopatia bilirrubínica aguda (kernicterus) — emergência que exige tratamento imediato."
+        "conteudo": "<span class=\"red-flag\">Icterícia nas primeiras 24 horas de vida, ou nível de bilirrubina muito elevado para a idade em horas conforme o nomograma</span> exige investigação e tratamento imediatos, pelo risco de encefalopatia bilirrubínica aguda (kernicterus), condição neurológica grave e irreversível se não prevenida a tempo."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre icterícia fisiológica (após 24h, resolve em 1-2 semanas) e patológica (antes de 24h, ou muito intensa/prolongada) é cobrança certa. O uso de nomogramas específicos por hora de vida (não apenas valor absoluto de bilirrubina) para decidir fototerapia, e a investigação obrigatória de incompatibilidade sanguínea em icterícia precoce, também são frequentemente exigidos."
       }
     ]
   },
@@ -673,7 +681,7 @@
     "titulo": "Diarreia Aguda e Desidratação na Infância",
     "resumo": "Classificação do grau de desidratação e planos de hidratação (A, B, C) da OMS.",
     "revisado": false,
-    "fonte": "Ministerio da Saude - Manual de Diarreia; OMS/WHO - Planos A, B e C de Hidratacao Oral",
+    "fonte": "Sociedade Brasileira de Pediatria; Organização Mundial da Saúde — Manejo Integrado das Doenças Prevalentes na Infância (AIDPI)",
     "mnemonicos": [
       {
         "palavra": "PLANOS A-B-C",
@@ -682,24 +690,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Avaliação do grau de desidratação",
-        "conteudo": "Avaliar estado geral, olhos, sede, sinal da prega cutânea e pulso para classificar a criança sem sinais de desidratação, com desidratação (leve/moderada) ou com desidratação grave/choque."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A diarreia aguda na infância é predominantemente de etiologia viral (rotavírus historicamente o mais comum, com incidência reduzida após introdução da vacina no calendário nacional; norovírus também relevante), causando aumento das perdas hídricas e eletrolíticas intestinais que, se não repostas adequadamente, evoluem rapidamente para desidratação — risco particularmente elevado em lactentes pela maior proporção de água corporal e menor reserva fisiológica comparada a crianças maiores."
       },
       {
-        "titulo": "Plano A",
-        "conteudo": "Criança sem sinais de desidratação: manter alimentação habitual, oferecer líquidos adicionais e solução de reidratação oral após cada evacuação líquida."
+        "titulo": "Quadro clínico",
+        "conteudo": "Evacuações líquidas frequentes, associadas variavelmente a vômitos, febre e dor abdominal, compõem o quadro. A avaliação do grau de desidratação (sem desidratação, com desidratação, com desidratação grave/choque) baseada em sinais clínicos objetivos é o elemento central que orienta toda a conduta terapêutica subsequente, muito mais relevante que a etiologia específica na maioria dos casos."
       },
       {
-        "titulo": "Plano B",
-        "conteudo": "Desidratação leve a moderada: terapia de reidratação oral (TRO) supervisionada na unidade de saúde, com reavaliação periódica do estado de hidratação."
+        "titulo": "Exame físico",
+        "conteudo": "Os sinais clínicos que compõem a avaliação do grau de desidratação (segundo protocolo da OMS/AIDPI) incluem: estado geral/nível de consciência, aspecto dos olhos (fundos ou não), presença e intensidade de sede, e sinal da prega cutânea (retorno lento ou muito lento sugerindo desidratação moderada a grave, respectivamente) — a combinação desses sinais classifica objetivamente a gravidade e determina o plano de tratamento (A, B ou C)."
       },
       {
-        "titulo": "Plano C",
-        "conteudo": "Desidratação grave ou choque: hidratação venosa imediata com cristaloide, conforme protocolo de expansão rápida, com reavaliação frequente."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico e a classificação de gravidade são eminentemente clínicos, sem necessidade de exames laboratoriais na maioria dos casos de diarreia aguda não complicada. Exames complementares (eletrólitos, função renal, coprocultura) são reservados a casos de desidratação grave, diarreia sanguinolenta, ou suspeita de etiologia bacteriana específica com necessidade de tratamento direcionado."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Terapia de reidratação oral com solução de reidratação padronizada é o pilar do tratamento na maioria dos casos (planos A para prevenção em casa e B para desidratação leve/moderada em unidade de saúde), com eficácia comprovada e equivalente à reidratação venosa nos casos não graves, além de menor custo e risco. Reidratação venosa (plano C) é reservada a desidratação grave/choque. Zinco suplementar reduz duração e gravidade dos episódios e é recomendado rotineiramente pela OMS em crianças com diarreia aguda. Antibióticos não são indicados rotineiramente (a maioria é viral), sendo reservados a etiologias bacterianas específicas com indicação formal."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Letargia, pulsos finos, enchimento capilar lentificado e incapacidade de ingerir líquidos</span> indicam desidratação grave/choque — exigem hidratação venosa imediata (Plano C)."
+        "conteudo": "<span class=\"red-flag\">Letargia/inconsciência, olhos muito fundos, sinal da prega com retorno muito lento e incapacidade de beber líquidos</span> caracterizam desidratação grave/choque (plano C), exigindo reidratação venosa imediata em unidade hospitalar, sem tentar reidratação oral nesse cenário de gravidade extrema."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A classificação da OMS/AIDPI em planos A, B e C conforme os sinais de desidratação é cobrança certíssima e extremamente recorrente em provas de residência pediátrica e saúde pública (ENAMED). A preferência pela reidratação oral sobre a venosa sempre que possível, e a suplementação de zinco como recomendação da OMS, também são frequentemente exigidas."
       }
     ]
   },
@@ -923,7 +939,7 @@
     "titulo": "Puericultura e Calendário Vacinal (PNI)",
     "resumo": "Acompanhamento do crescimento/desenvolvimento e principais vacinas do calendário nacional de imunização.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria (SBP) - Manual de Puericultura; Programa Nacional de Imunizacoes (PNI), Ministerio da Saude",
+    "fonte": "Sociedade Brasileira de Pediatria; Ministério da Saúde — Calendário Nacional de Vacinação (PNI)",
     "mnemonicos": [
       {
         "palavra": "PESO-ESTATURA-PC",
@@ -932,24 +948,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Consultas de puericultura",
-        "conteudo": "Periodicidade mais concentrada no primeiro ano de vida, com avaliação seriada de peso, estatura e perímetro cefálico plotados em curvas de crescimento."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A puericultura é o acompanhamento sistemático e programado da criança saudável, com objetivo de monitorar crescimento e desenvolvimento, identificar precocemente desvios da normalidade, e garantir a aplicação oportuna do calendário vacinal — a imunização programada é fundamentada na indução de memória imunológica específica antes da exposição natural aos patógenos, protegendo a criança nas janelas etárias de maior vulnerabilidade a cada doença imunoprevenível."
       },
       {
-        "titulo": "Marcos do desenvolvimento neuropsicomotor",
-        "conteudo": "Sustento cefálico (~3-4 meses), sentar sem apoio (~6-8 meses), engatinhar e ficar em pé (~9-12 meses) e andar (~12-15 meses) são marcos esperados dentro de faixas etárias de referência."
+        "titulo": "Quadro clínico",
+        "conteudo": "O calendário de consultas de puericultura é mais frequente no primeiro ano de vida (mensal nos primeiros 6 meses, tipicamente), reduzindo a frequência progressivamente conforme a criança cresce, momentos que coincidem estrategicamente com o calendário vacinal e com marcos críticos do desenvolvimento neuropsicomotor a serem avaliados em cada faixa etária."
       },
       {
-        "titulo": "Calendário vacinal (PNI)",
-        "conteudo": "No primeiro ano de vida: BCG e hepatite B (ao nascer), pentavalente, VIP/VOP, pneumocócica 10-valente, rotavírus e meningocócica C, conforme esquema vigente do Programa Nacional de Imunizações."
+        "titulo": "Exame físico",
+        "conteudo": "Cada consulta de puericultura inclui aferição antropométrica (peso, comprimento/estatura, perímetro cefálico) plotada em curvas de crescimento padronizadas (OMS), além de avaliação dirigida do desenvolvimento neuropsicomotor esperado para a idade e exame físico geral completo, buscando identificar precocemente qualquer desvio que exija investigação ou intervenção adicional."
       },
       {
-        "titulo": "Aleitamento materno",
-        "conteudo": "Recomendação de aleitamento materno exclusivo até os 6 meses de vida, com manutenção associada à alimentação complementar até os 2 anos ou mais."
+        "titulo": "Diagnóstico",
+        "conteudo": "O calendário nacional de vacinação (PNI) inclui, entre outras, BCG e hepatite B ao nascer; pentavalente, pneumocócica conjugada, poliomielite e rotavírus aos 2, 4 (e conforme esquema, 6) meses; tríplice viral e meningocócica C aos 12 meses; e reforços subsequentes conforme o calendário vigente — o conhecimento detalhado desse calendário (idades e intervalos mínimos entre doses) é central tanto para a prática pediátrica quanto para provas de residência e concursos de saúde pública."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Diante de atraso vacinal identificado, deve-se sempre buscar completar o esquema o mais rápido possível (\"vacinação atrasada\" não significa reiniciar o esquema do zero na maioria dos imunobiológicos, mas sim continuar a partir do ponto onde a criança está, respeitando os intervalos mínimos entre doses). Orientações nutricionais (aleitamento materno exclusivo até 6 meses, introdução alimentar adequada) e orientações antecipatórias sobre prevenção de acidentes são parte integrante e essencial da consulta de puericultura em cada faixa etária."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Atraso significativo em relação aos marcos esperados do desenvolvimento</span> exige investigação diagnóstica direcionada."
+        "conteudo": "Desaceleração ou estagnação da curva de crescimento (peso ou estatura cruzando percentis para baixo de forma consistente) em consultas seriadas de puericultura deve motivar investigação ativa de causas orgânicas ou de negligência/vulnerabilidade social, não devendo ser negligenciada como variação normal sem avaliação apropriada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O calendário nacional de vacinação (idades, doses e intervalos mínimos) é cobrança extremamente recorrente e detalhada em provas de residência e concursos de saúde pública brasileiros, exigindo conhecimento preciso das idades-alvo de cada imunobiológico. O conceito de que atraso vacinal não exige reinício do esquema (apenas continuação respeitando intervalos mínimos) também é frequentemente testado."
       }
     ]
   },
@@ -960,7 +984,7 @@
     "titulo": "Sepse Neonatal",
     "resumo": "Classificação precoce x tardia, fatores de risco e manejo inicial da sepse no recém-nascido.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria (SBP) - Documento Cientifico sobre Sepse Neonatal",
+    "fonte": "Sociedade Brasileira de Pediatria; AAP Clinical Practice Guideline on Management of Neonates with Suspected Early-Onset Sepsis",
     "mnemonicos": [
       {
         "palavra": "PRECOCE x TARDIA",
@@ -969,24 +993,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação",
-        "conteudo": "Precoce (até 48-72h de vida), relacionada a fatores maternos e intraparto; tardia (após 72h), mais associada a infecção hospitalar/dispositivos invasivos."
-      },
-      {
-        "titulo": "Fatores de risco",
-        "conteudo": "Rotura prematura de membranas prolongada, corioamnionite, colonização materna por Streptococcus agalactiae (GBS) sem profilaxia adequada e prematuridade."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A sepse neonatal precoce (primeiras 72 horas de vida) resulta predominantemente de transmissão vertical de patógenos da flora materna (Streptococcus agalactiae — grupo B — e Escherichia coli são os agentes mais comuns), favorecida por fatores de risco como colonização materna por estreptococo do grupo B não tratada adequadamente, rotura prolongada de membranas e corioamnionite. A sepse tardia (após 72 horas) está mais associada a patógenos nosocomiais/comunitários adquiridos após o nascimento, especialmente relevante em prematuros internados em unidade neonatal."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Sinais frequentemente inespecíficos: instabilidade térmica, desconforto respiratório, letargia, recusa alimentar e irritabilidade."
+        "conteudo": "As manifestações clínicas de sepse neonatal são frequentemente sutis e inespecíficas — instabilidade térmica (tanto hipotermia quanto febre), desconforto respiratório, letargia, irritabilidade, recusa alimentar e distensão abdominal podem ser as únicas pistas iniciais, exigindo alto índice de suspeição clínica diante de qualquer recém-nascido \"não parecendo bem\", mesmo sem um sinal isolado altamente específico."
       },
       {
-        "titulo": "Tratamento inicial",
-        "conteudo": "Coleta de hemocultura seguida de antibioticoterapia empírica precoce, sem aguardar o resultado, associada a suporte hemodinâmico e respiratório conforme necessário."
+        "titulo": "Exame físico",
+        "conteudo": "Alteração do estado geral (\"toxemiado\", hipoativo ou irritado), taquipneia/desconforto respiratório, tempo de enchimento capilar prolongado e instabilidade térmica são achados inespecíficos que, em conjunto, levantam a suspeita. A ausência de um achado semiológico patognomônico isolado torna a sepse neonatal um diagnóstico fundamentalmente de suspeita clínica combinada a fatores de risco perinatais."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Hemocultura é o exame padrão-ouro, devendo ser sempre colhida antes do início do antibiótico empírico. Hemograma, proteína C reativa e outros marcadores inflamatórios auxiliam na estratificação de risco, mas têm sensibilidade/especificidade limitadas isoladamente. A avaliação de fatores de risco maternos (colonização por estreptococo do grupo B, corioamnionite, rotura de membranas prolongada, profilaxia intraparto inadequada) é parte fundamental da decisão sobre investigação e tratamento empírico do recém-nascido assintomático de risco."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Antibioticoterapia empírica endovenosa (tipicamente ampicilina associada a aminoglicosídeo, cobrindo os agentes mais prováveis da sepse precoce) deve ser iniciada prontamente diante de suspeita clínica razoável, sem aguardar confirmação laboratorial completa — o atraso terapêutico em sepse neonatal associa-se a rápida deterioração e mortalidade significativamente maior nessa população particularmente vulnerável. Suporte hemodinâmico e respiratório é fornecido conforme a gravidade do quadro."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Instabilidade hemodinâmica ou desconforto respiratório grave</span> no recém-nascido séptico exigem suporte intensivo neonatal imediato."
+        "conteudo": "<span class=\"red-flag\">Recém-nascido com instabilidade térmica, desconforto respiratório e letargia, especialmente com fatores de risco maternos para sepse precoce</span> exige investigação e início imediato de antibioticoterapia empírica, dada a rápida progressão e alta mortalidade potencial da sepse neonatal não tratada prontamente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os fatores de risco maternos para sepse neonatal precoce (colonização por estreptococo do grupo B, rotura prolongada de membranas, corioamnionite) e sua relação com a decisão de investigar/tratar o recém-nascido são cobrança certa e recorrente. O esquema antibiótico empírico padrão (ampicilina + aminoglicosídeo) também é frequentemente exigido."
       }
     ]
   },
@@ -1312,7 +1344,7 @@
     "titulo": "Doenças Exantemáticas da Infância",
     "resumo": "Diagnóstico diferencial entre sarampo, rubéola, exantema súbito, eritema infeccioso e varicela.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria (SBP); Ministerio da Saude - Guia de Vigilancia em Saude (Sarampo/Rubeola)",
+    "fonte": "Sociedade Brasileira de Pediatria; Ministério da Saúde — Guia de Vigilância em Saúde",
     "mnemonicos": [
       {
         "palavra": "MANCHAS DE KOPLIK",
@@ -1321,24 +1353,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Sarampo",
-        "conteudo": "Febre alta, tosse, coriza e conjuntivite, seguidos de exantema morbiliforme com progressão craniocaudal; as manchas de Koplik são patognomônicas e precedem o exantema."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As doenças exantemáticas clássicas da infância resultam de infecções virais (sarampo, rubéola, exantema súbito, eritema infeccioso, varicela — esta última viral também) ou, no caso da escarlatina, de reação a toxina eritrogênica produzida pelo Streptococcus pyogenes. Cada uma tem padrão característico de pródromos, tipo de exantema e evolução temporal que permite diferenciação clínica na maioria dos casos típicos, sem necessidade de confirmação laboratorial de rotina."
       },
       {
-        "titulo": "Rubéola",
-        "conteudo": "Exantema mais brando que o sarampo, associado a linfadenopatia retroauricular e occipital; risco importante de síndrome da rubéola congênita se a infecção ocorrer na gestante."
+        "titulo": "Quadro clínico",
+        "conteudo": "Sarampo: pródromo com febre alta, tosse, coriza e conjuntivite (\"3 Cs\"), seguido de exantema maculopapular de progressão craniocaudal, com manchas de Koplik (pontos esbranquiçados na mucosa oral) sendo patognomônicas e precedendo o exantema. Exantema súbito (roséola): febre alta por 3-5 dias em lactente, com exantema surgindo exatamente quando a febre cede (\"a febre cai, o exantema aparece\"). Eritema infeccioso: exantema com aspecto de \"face esbofeteada\", seguido de exantema rendilhado em tronco/membros. Varicela: lesões em diferentes estágios evolutivos simultaneamente (polimorfismo regional — máculas, pápulas, vesículas e crostas coexistindo). Escarlatina: exantema micropapular áspero (\"lixa\"), associado a língua em framboesa e sinal de Filatov (palidez perioral com hiperemia malar)."
       },
       {
-        "titulo": "Exantema súbito (roséola)",
-        "conteudo": "Febre alta por cerca de 3 dias que cede exatamente quando o exantema surge, tipicamente em lactentes pequenos."
+        "titulo": "Exame físico",
+        "conteudo": "As manchas de Koplik são achado patognomônico do sarampo quando presentes, precedendo o exantema cutâneo em 1-2 dias. O polimorfismo lesional simultâneo (lesões em múltiplos estágios ao mesmo tempo) é achado característico e diferenciador da varicela em relação a outras exantemáticas. A língua em framboesa e o sinal de Filatov são achados específicos da escarlatina."
       },
       {
-        "titulo": "Eritema infeccioso e varicela",
-        "conteudo": "Eritema infeccioso (parvovírus B19) apresenta o sinal da \"face esbofeteada\" seguido de exantema rendilhado em membros. Varicela cursa com exantema pruriginoso polimórfico, com lesões em diferentes estágios simultaneamente."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico da maioria das doenças exantemáticas clássicas é clínico, baseado no padrão característico de pródromos e exantema. Sarampo e rubéola são doenças de notificação compulsória imediata no Brasil, dado seu potencial de surto e as metas de eliminação/controle vigentes, exigindo confirmação laboratorial (sorologia IgM) mesmo diante de suspeita clínica típica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento da maioria das exantemáticas virais é sintomático e de suporte. Escarlatina, por ser causada por bactéria, exige antibioticoterapia (penicilina) para erradicação do estreptococo e prevenção de complicações não supurativas tardias (febre reumática, glomerulonefrite pós-estreptocócica), assim como para reduzir a transmissibilidade. Varicela em crianças imunocompetentes é geralmente autolimitada e não exige antiviral rotineiro; aciclovir é reservado a casos graves, imunossuprimidos ou complicados."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Varicela em imunossuprimidos ou sarampo com complicações respiratórias/neurológicas</span> exigem manejo mais cauteloso e, no caso do sarampo, notificação compulsória imediata."
+        "conteudo": "<span class=\"red-flag\">Suspeita de sarampo</span> exige notificação compulsória imediata e isolamento respiratório, dado o altíssimo potencial de transmissibilidade dessa doença e o risco de surto em populações com cobertura vacinal subótima — a notificação não deve aguardar confirmação laboratorial diante de quadro clinicamente compatível."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O padrão característico de cada exantemática (manchas de Koplik no sarampo, febre que cede quando o exantema surge na roséola, face esbofeteada no eritema infeccioso, polimorfismo lesional na varicela, língua em framboesa na escarlatina) é cobrança certíssima e extremamente recorrente, frequentemente através de descrições clínicas detalhadas ou fotos para reconhecimento direto."
       }
     ]
   },
@@ -2106,7 +2146,7 @@
     "titulo": "IVAS e Otite Média Aguda",
     "resumo": "Diagnóstico da otite média aguda e critérios para tratamento antibiótico x observação.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria (SBP); AAP Clinical Practice Guideline: Diagnosis and Management of Acute Otitis Media",
+    "fonte": "Sociedade Brasileira de Pediatria; AAP Clinical Practice Guideline for Acute Otitis Media",
     "mnemonicos": [
       {
         "palavra": "ABAULAMENTO DA MT",
@@ -2115,24 +2155,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Resfriado comum",
-        "conteudo": "Quadro viral autolimitado, com tratamento sintomático (hidratação, antitérmico se necessário), sem indicação de antibiótico."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As infecções de vias aéreas superiores (resfriado comum, faringite) são predominantemente virais, extremamente frequentes na infância pela imaturidade imunológica e maior exposição em ambientes coletivos (creches, escolas). A otite média aguda resulta frequentemente de complicação de uma IVAS viral prévia, com disfunção da tuba auditiva (mais curta e horizontalizada na criança pequena, favorecendo ascensão de secreções da nasofaringe) permitindo infecção bacteriana secundária do ouvido médio (Streptococcus pneumoniae e Haemophilus influenzae não tipável são os agentes mais comuns)."
       },
       {
-        "titulo": "Otite média aguda — diagnóstico",
-        "conteudo": "Otoscopia com hiperemia e abaulamento da membrana timpânica, associados a quadro agudo de dor de ouvido (otalgia) e, muitas vezes, febre."
+        "titulo": "Quadro clínico",
+        "conteudo": "IVAS viral manifesta-se com coriza, obstrução nasal, tosse e febre baixa a moderada, autolimitada em cerca de 7-10 dias. Otite média aguda manifesta-se com otalgia (em lactentes, manifestada indiretamente por irritabilidade e manipulação frequente da orelha), febre e, por vezes, otorreia se houver perfuração timpânica espontânea — esta última geralmente associada a alívio imediato da dor pela descompressão da cavidade timpânica."
       },
       {
-        "titulo": "Tratamento da otite média aguda",
-        "conteudo": "Amoxicilina é a primeira escolha na maioria dos casos; observação vigilante por 48-72h pode ser considerada em crianças selecionadas com quadro leve e idade acima de 2 anos."
+        "titulo": "Exame físico",
+        "conteudo": "A otoscopia é o exame central para diagnóstico de otite média aguda, revelando membrana timpânica hiperemiada, abaulada, com perda do triângulo luminoso e da mobilidade normal à otoscopia pneumática — o abaulamento é o achado mais específico e mais valorizado para diferenciação de otite média com efusão (sem abaulamento, sem infecção ativa) e de miringite viral isolada."
       },
       {
-        "titulo": "Sinusite bacteriana aguda",
-        "conteudo": "Suspeitar quando sintomas de IVAS persistem além de 10 dias sem melhora, ou há piora após melhora inicial (padrão \"duplo agravamento\")."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico de otite média aguda exige a combinação de início agudo, presença de efusão no ouvido médio (confirmada por otoscopia) e sinais/sintomas de inflamação aguda (abaulamento timpânico, otalgia, hiperemia importante) — a mera presença de líquido no ouvido médio sem sinais inflamatórios agudos caracteriza otite média com efusão, condição distinta que não exige antibiótico."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "IVAS viral é tratada apenas sintomaticamente, sem indicação de antibiótico. Otite média aguda pode ser conduzida com observação vigilante por 48-72h (sem antibiótico imediato) em crianças maiores de 2 anos com sintomas leves a moderados e diagnóstico não totalmente certo, dado o alto percentual de resolução espontânea; amoxicilina em dose alta é o antibiótico de escolha quando indicado, reservando-se antibiótico imediato a menores de 6 meses, sintomas graves, ou otite bilateral em menores de 2 anos."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Edema/hiperemia retroauricular associados a otite</span> sugerem mastoidite, uma complicação supurativa que exige tratamento hospitalar."
+        "conteudo": "Otite média aguda associada a edema/hiperemia retroauricular com deslocamento anterior do pavilhão auricular sugere mastoidite aguda, complicação supurativa que exige investigação de imagem e tratamento mais agressivo (antibiótico endovenoso, eventual drenagem cirúrgica), não devendo ser confundida com otite média simples."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O abaulamento timpânico como achado mais específico de otite média aguda (diferenciando de otite média com efusão) é cobrança certa. A estratégia de observação vigilante versus antibiótico imediato conforme idade e gravidade também é ponto de atualização de diretriz frequentemente exigido em provas mais recentes, que buscam reduzir o uso excessivo de antibióticos em otite leve autolimitada."
       }
     ]
   },
@@ -2143,7 +2191,7 @@
     "titulo": "Asma na Infância",
     "resumo": "Classificação de controle e tratamento de manutenção da asma em crianças.",
     "revisado": false,
-    "fonte": "Global Initiative for Asthma (GINA) 2026 - secao pediatrica; SBPT",
+    "fonte": "Sociedade Brasileira de Pediatria; Global Initiative for Asthma (GINA) — versão pediátrica",
     "mnemonicos": [
       {
         "palavra": "CONTROLADA / PARCIALMENTE / NÃO CONTROLADA",
@@ -2152,24 +2200,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Diagnóstico na infância",
-        "conteudo": "Pode ser desafiador pela sobreposição com quadros de sibilância viral recorrente em lactentes e pré-escolares, exigindo acompanhamento evolutivo."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A asma na infância compartilha a fisiopatologia inflamatória de vias aéreas descrita no tema equivalente adulto, mas apresenta particularidades: o diagnóstico é mais desafiador em pré-escolares (menores de 5 anos) pela sobreposição de sintomas com sibilância viral recorrente transitória (que muitas crianças pequenas apresentam sem evoluir para asma persistente), exigindo avaliação de fatores preditivos de persistência (atopia pessoal/familiar, sibilância fora de quadros virais) para direcionar a suspeita diagnóstica nessa faixa etária."
       },
       {
-        "titulo": "Classificação de controle",
-        "conteudo": "Asma controlada, parcialmente controlada ou não controlada, conforme sintomas diurnos, despertares noturnos, necessidade de resgate e limitação de atividades."
+        "titulo": "Quadro clínico",
+        "conteudo": "Sibilância recorrente, tosse (particularmente noturna ou desencadeada por exercício/riso/choro), dispneia e aperto torácico, com padrão episódico e reversível (espontaneamente ou com broncodilatador), compõem o quadro característico. A presença de atopia pessoal (dermatite atópica, rinite alérgica) ou familiar (pais com asma/atopia) aumenta a probabilidade de que a sibilância represente asma verdadeira, e não apenas sibilância viral transitória da primeira infância."
       },
       {
-        "titulo": "Tratamento de manutenção",
-        "conteudo": "Corticoide inalatório é a base do tratamento de manutenção, mesmo em quadros leves persistentes, ajustado de forma escalonada conforme o controle."
+        "titulo": "Exame físico",
+        "conteudo": "Sibilos expiratórios à ausculta durante as crises, com exame respiratório completamente normal nos períodos intercríticos na maioria dos casos — a normalidade do exame físico fora das crises não exclui o diagnóstico de asma, sendo achado esperado e coerente com a natureza episódica da doença."
       },
       {
-        "titulo": "Técnica inalatória",
-        "conteudo": "Uso de espaçador (com máscara facial em crianças menores) melhora significativamente a deposição pulmonar da medicação e reduz efeitos adversos locais."
+        "titulo": "Diagnóstico",
+        "conteudo": "Em crianças maiores (geralmente acima de 5-6 anos), capazes de realizar espirometria adequadamente, a demonstração de obstrução reversível ao broncodilatador confirma objetivamente o diagnóstico. Em pré-escolares, o diagnóstico é predominantemente clínico, baseado no padrão de sintomas e na resposta terapêutica a um período de tratamento de prova, dada a impossibilidade técnica de realizar espirometria confiável nessa faixa etária."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento de manutenção da asma persistente segue abordagem escalonada por etapas conforme gravidade/controle, com corticoide inalatório em dose baixa sendo a base do tratamento controlador em crianças com asma persistente, mesmo leve. Broncodilatador de curta duração é usado para alívio sintomático e no tratamento das exacerbações agudas, seguindo os mesmos princípios já descritos no tema de asma exacerbada. A técnica inalatória adequada (uso de espaçador com máscara ou bocal, conforme a idade) é fundamental para a eficácia do tratamento e deve ser sistematicamente verificada e ensinada aos cuidadores."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Tórax silencioso, exaustão respiratória e SatO2 baixa</span> na crise asmática grave são os mesmos sinais de alerta descritos no manejo da asma exacerbada do adulto."
+        "conteudo": "Necessidade frequente de broncodilatador de resgate (mais de 2 vezes por semana) ou despertares noturnos por sintomas respiratórios indicam controle inadequado da asma, exigindo reavaliação e possível intensificação do tratamento controlador de manutenção, não devendo ser aceito como padrão esperado da doença."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A dificuldade diagnóstica em pré-escolares (diferenciação entre asma verdadeira e sibilância viral transitória, usando fatores preditivos de atopia) é cobrança recorrente em provas de pediatria. O corticoide inalatório como base do tratamento controlador (mesmo em asma persistente leve) e a importância da técnica inalatória adequada também são frequentemente exigidos."
       }
     ]
   },
@@ -2827,7 +2883,7 @@
     "titulo": "Reanimação Neonatal na Sala de Parto",
     "resumo": "Sequência de avaliação e reanimação do recém-nascido logo após o nascimento.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria (SBP) - Programa de Reanimação Neonatal; AHA/AAP Neonatal Resuscitation Program (NRP), 8a edicao",
+    "fonte": "Sociedade Brasileira de Pediatria — Programa de Reanimação Neonatal; American Heart Association/American Academy of Pediatrics NRP Guidelines",
     "mnemonicos": [
       {
         "palavra": "AQUECER → POSICIONAR → SECAR/ESTIMULAR",
@@ -2836,24 +2892,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Avaliação inicial",
-        "conteudo": "Gestação a termo, respirando ou chorando, e com bom tônus muscular: o recém-nascido pode ser mantido em contato pele a pele com a mãe, sem necessidade de passos adicionais."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A transição da circulação fetal para a neonatal ao nascimento depende do estabelecimento eficaz da respiração pulmonar, que reduz a resistência vascular pulmonar e permite o fechamento funcional dos shunts fetais (forame oval, canal arterial). Falha nessa transição (por prematuridade, asfixia perinatal, ou outras condições) resulta em hipóxia progressiva que, se não corrigida rapidamente através de ventilação eficaz, pode levar a bradicardia e parada cardiorrespiratória — a ventilação adequada, e não as compressões torácicas ou medicações, é a intervenção mais crítica na reanimação neonatal."
       },
       {
-        "titulo": "Passos iniciais",
-        "conteudo": "Aquecer, posicionar a via aérea, aspirar secreções se necessário, secar e estimular o recém-nascido que não preenche os critérios de bem-estar ao nascer."
+        "titulo": "Quadro clínico",
+        "conteudo": "A avaliação inicial ao nascimento baseia-se em três perguntas rápidas: a gestação é a termo, o recém-nascido está respirando ou chorando, e o tônus muscular está adequado? Respostas negativas a qualquer uma dessas perguntas indicam necessidade de passos iniciais de reanimação. A frequência cardíaca (avaliada preferencialmente por ausculta ou monitor, não apenas palpação de cordão) é o parâmetro mais importante para guiar a progressão dos passos de reanimação."
       },
       {
-        "titulo": "Ventilação com pressão positiva",
-        "conteudo": "Indicada se o recém-nascido apresenta apneia/respiração em gasping ou frequência cardíaca menor que 100 bpm após os passos iniciais."
+        "titulo": "Exame físico",
+        "conteudo": "Frequência cardíaca abaixo de 100bpm apesar de ventilação com pressão positiva adequada por 30 segundos indica necessidade de reavaliar a técnica ventilatória (posicionamento, vedação da máscara) antes de progredir para intervenções mais invasivas. Frequência cardíaca abaixo de 60bpm apesar de ventilação adequada corretamente executada indica necessidade de compressões torácicas coordenadas com a ventilação."
       },
       {
-        "titulo": "Compressões torácicas",
-        "conteudo": "Indicadas se a frequência cardíaca permanece menor que 60 bpm apesar de ventilação adequada por 30 segundos, na relação de 3:1 com a ventilação."
+        "titulo": "Diagnóstico",
+        "conteudo": "A avaliação é clínica e contínua ao longo de toda a reanimação, reavaliando frequência cardíaca e esforço respiratório a cada etapa para decidir a progressão ou não do algoritmo. A oximetria de pulso (quando indicada, guiada por valores-alvo específicos por minuto de vida) auxilia a titular a oferta de oxigênio suplementar de forma mais precisa que a avaliação visual isolada da coloração da pele, que é notoriamente pouco confiável."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Os passos iniciais (prover calor, posicionar via aérea, aspirar se necessário, secar e estimular) são realizados nos primeiros 30 segundos. Ventilação com pressão positiva é iniciada se apneia, respiração irregular/gasping, ou frequência cardíaca abaixo de 100bpm — sendo a intervenção mais importante de toda a sequência. Compressões torácicas (relação 3:1 com ventilação) são iniciadas se FC <60bpm apesar de ventilação adequada por 30 segundos. Adrenalina é indicada se FC permanecer <60bpm apesar de ventilação e compressões adequadas, sendo etapa final e menos comum do algoritmo."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Frequência cardíaca persistentemente baixa apesar de VPP e compressões adequadas</span> exige considerar adrenalina e investigar causas reversíveis (hipovolemia, pneumotórax)."
+        "conteudo": "<span class=\"red-flag\">Frequência cardíaca não melhora apesar de ventilação com pressão positiva aparentemente adequada</span> deve motivar reavaliação imediata da técnica ventilatória (os passos corretivos de ventilação — ajuste de máscara, reposicionamento, aspiração, abertura de boca, aumento de pressão) antes de assumir necessidade de compressões torácicas, já que a causa mais comum de falha de resposta é ventilação tecnicamente inadequada, não real necessidade de compressões."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A sequência do algoritmo de reanimação neonatal (passos iniciais → ventilação com pressão positiva → compressões torácicas → adrenalina, guiados pela frequência cardíaca) é cobrança certíssima e um dos temas mais importantes e mais decorados de toda a pediatria em provas de residência. A ventilação como intervenção mais crítica (\"a via aérea é rainha\" na reanimação neonatal) e os passos corretivos de ventilação antes de progredir para compressões também são frequentemente exigidos."
       }
     ]
   },
@@ -2864,7 +2928,7 @@
     "titulo": "Bronquiolite Viral Aguda",
     "resumo": "Diagnóstico clínico e tratamento essencialmente de suporte na bronquiolite do lactente.",
     "revisado": false,
-    "fonte": "AAP Clinical Practice Guideline: Bronchiolitis; Sociedade Brasileira de Pediatria (SBP)",
+    "fonte": "Sociedade Brasileira de Pediatria; AAP Clinical Practice Guideline for Bronchiolitis",
     "mnemonicos": [
       {
         "palavra": "VSR EM LACTENTES <2 ANOS",
@@ -2873,24 +2937,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e etiologia",
-        "conteudo": "Primeiro episódio de sibilância associado a infecção viral (mais comumente pelo VSR) em lactentes menores de 2 anos."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A bronquiolite viral aguda é causada predominantemente pelo vírus sincicial respiratório (VSR), acometendo classicamente lactentes menores de 2 anos (pico entre 2-6 meses), causando inflamação e obstrução dos bronquíolos por edema, necrose epitelial e hipersecreção de muco — o pequeno calibre das vias aéreas inferiores no lactente as torna proporcionalmente muito mais suscetíveis à obstrução significativa por esse processo inflamatório do que ocorreria em crianças maiores ou adultos com a mesma infecção."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Pródromo catarral (coriza, tosse) seguido de sibilância, taquipneia e tiragem subcostal/intercostal."
+        "conteudo": "Quadro inicia-se com sintomas de vias aéreas superiores (coriza, tosse), evoluindo em 1-3 dias para desconforto respiratório inferior com sibilância, taquipneia e uso de musculatura acessória, geralmente associado a febre baixa. A gravidade é maior em prematuros, cardiopatas e pneumopatas crônicos, populações com indicação inclusive de profilaxia específica com anticorpo monoclonal (palivizumabe ou, mais recentemente, nirsevimabe) contra o VSR."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Sibilos difusos e/ou estertores crepitantes, taquipneia e sinais de esforço respiratório (tiragem intercostal/subcostal, batimento de asa de nariz) são achados característicos. O diagnóstico é fundamentalmente clínico, baseado nesse conjunto de achados em lactente com quadro epidemiológico compatível, sem necessidade obrigatória de exames complementares na maioria dos casos típicos e não graves."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Eminentemente clínico; exames complementares (radiografia, testes virais) não são rotineiramente necessários para o diagnóstico ou manejo."
+        "conteudo": "O diagnóstico é clínico, dispensando radiografia de tórax e testes virológicos de rotina nos casos típicos e não complicados — a radiografia, quando realizada desnecessariamente, frequentemente mostra apenas hiperinsuflação inespecífica e pode levar a intervenções não indicadas (uso equivocado de antibiótico por interpretação errônea de atelectasias/infiltrados como pneumonia bacteriana). Exames são reservados a casos graves, atípicos, ou com dúvida diagnóstica relevante."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Essencialmente de suporte: oxigênio suplementar se hipoxemia, hidratação adequada. Broncodilatadores e corticoides não têm benefício comprovado de rotina nessa faixa etária."
+        "conteudo": "O tratamento é fundamentalmente de suporte: desobstrução nasal, manutenção de hidratação e oxigenoterapia suplementar quando indicada pela saturação de oxigênio. Broncodilatadores, corticoides e antibióticos não têm eficácia comprovada de forma rotineira na bronquiolite viral típica e não são recomendados como prática padrão pelas diretrizes atuais — um teste terapêutico individualizado com broncodilatador pode ser considerado em casos selecionados, mas sem indicação de uso rotineiro generalizado. Solução salina hipertônica nebulizada pode trazer benefício modesto em pacientes hospitalizados."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Apneia, desconforto respiratório grave ou recusa alimentar</span> exigem internação hospitalar."
+        "conteudo": "<span class=\"red-flag\">Apneia, cianose, esforço respiratório grave ou saturação de oxigênio persistentemente baixa</span> em lactente com bronquiolite indica gravidade que exige internação e suporte respiratório mais intensivo — lactentes muito jovens (especialmente prematuros) têm maior risco de apneia como manifestação inicial, mesmo antes de sinais respiratórios mais evidentes se instalarem."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A ausência de indicação rotineira de broncodilatador, corticoide e antibiótico na bronquiolite viral típica é cobrança certa e ponto de atualização de diretriz muito valorizado, testando a resistência do candidato à tentação intuitiva de tratar sibilância sempre com broncodilatador como na asma. O caráter fundamentalmente clínico do diagnóstico, dispensando exames de rotina, também é frequentemente exigido."
       }
     ]
   },
@@ -2901,7 +2973,7 @@
     "titulo": "Estenose Hipertrófica do Piloro",
     "resumo": "Quadro clínico clássico, distúrbio metabólico associado e tratamento cirúrgico definitivo.",
     "revisado": false,
-    "fonte": "American Pediatric Surgical Association (APSA) Guidelines; Sociedade Brasileira de Cirurgia Pediátrica",
+    "fonte": "Sociedade Brasileira de Cirurgia Pediátrica; Sociedade Brasileira de Pediatria",
     "mnemonicos": [
       {
         "palavra": "VÔMITOS EM JATO NÃO BILIOSOS",
@@ -2910,24 +2982,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A estenose hipertrófica do piloro resulta da hipertrofia progressiva da musculatura circular do piloro, causando obstrução mecânica progressiva da saída gástrica. É mais comum em primogênitos do sexo masculino, com etiologia não completamente esclarecida, envolvendo provável predisposição genética. Os sintomas tipicamente surgem entre a 2ª e a 8ª semana de vida, à medida que a hipertrofia progressiva alcança um grau crítico de obstrução."
+      },
+      {
         "titulo": "Quadro clínico",
-        "conteudo": "Vômitos não biliosos em jato, progressivos, tipicamente entre a 3ª e a 6ª semana de vida, com o lactente permanecendo faminto logo após o vômito."
+        "conteudo": "Vômitos em jato, não biliosos (já que a obstrução é proximal à ampola de Vater), progressivos em frequência e volume, tipicamente logo após as mamadas, associados a fome voraz persistente mesmo após o episódio de vômito (\"lactente faminto\") — esse apetite mantido, apesar dos vômitos repetidos, é achado característico que ajuda a diferenciar de outras causas de vômito na infância associadas a menor apetite/mal-estar geral."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Massa palpável em hipocôndrio/epigástrio direito (\"oliva pilórica\") pode ser identificada em parte dos casos, especialmente com o estômago vazio."
+        "conteudo": "A palpação de \"oliva pilórica\" (massa firme, móvel, do tamanho aproximado de uma azeitona, no quadrante superior direito/epigástrio) é achado praticamente patognomônico quando encontrado por examinador experiente, embora sua ausência não exclua o diagnóstico. Ondas peristálticas visíveis no abdome superior (peristaltismo de luta gástrico) durante ou logo após a alimentação também são sugestivas."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Ultrassonografia abdominal é o exame de escolha, avaliando espessura e comprimento do canal pilórico."
-      },
-      {
-        "titulo": "Distúrbio metabólico clássico",
-        "conteudo": "Alcalose metabólica hipoclorêmica e hipocalêmica, decorrente da perda de ácido clorídrico pelos vômitos repetidos."
+        "conteudo": "A ultrassonografia abdominal é o exame padrão-ouro, com critérios objetivos de espessura e comprimento do canal pilórico que confirmam o diagnóstico com alta sensibilidade e especificidade, tendo substituído amplamente o estudo contrastado (que mostrava classicamente o \"sinal do cordão\" ou \"sinal do guarda-chuva\") na prática atual. Alcalose metabólica hipoclorêmica e hipocalêmica é achado laboratorial característico, decorrente da perda de ácido clorídrico e potássio pelos vômitos repetidos."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Correção do distúrbio hidroeletrolítico antes de qualquer intervenção cirúrgica; piloromiotomia é o tratamento definitivo, com excelente prognóstico."
+        "conteudo": "A correção do distúrbio hidroeletrolítico e ácido-básico (hidratação venosa com reposição de sódio, cloro e potássio) deve preceder obrigatoriamente a cirurgia, já que a alcalose metabólica não corrigida aumenta significativamente o risco anestésico (incluindo apneia pós-operatória). Piloromiotomia (secção da musculatura hipertrofiada, preservando a mucosa) é o tratamento cirúrgico definitivo, com excelente prognóstico e resolução completa dos sintomas após o procedimento."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Vômitos em jato progressivos associados a sinais de desidratação e perda ponderal em lactente entre 2-8 semanas de vida devem motivar investigação ultrassonográfica prioritária para estenose hipertrófica do piloro — o atraso diagnóstico permite progressão da desidratação e do distúrbio metabólico, exigindo correção mais prolongada antes da cirurgia."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A obrigatoriedade de corrigir a alcalose metabólica hipoclorêmica antes da cirurgia (nunca operar em urgência sem essa correção prévia) é cobrança certíssima e um dos pontos de segurança mais importantes de toda a cirurgia pediátrica em provas de residência. A oliva pilórica palpável e o vômito não bilioso em jato com apetite mantido também são achados semiológicos muito valorizados e recorrentes."
       }
     ]
   },
@@ -5570,7 +5650,7 @@
     "titulo": "Prematuridade e Recém-Nascido de Baixo Peso",
     "resumo": "Classificação por idade gestacional e peso, principais morbidades do prematuro e cuidados específicos.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria — Manual de Neonatologia; Ministério da Saúde — Atenção à Saúde do Recém-Nascido",
+    "fonte": "Sociedade Brasileira de Pediatria — Departamento de Neonatologia; Ministério da Saúde — Atenção à Saúde do Recém-Nascido",
     "mnemonicos": [
       {
         "palavra": "Corticoide antenatal",
@@ -5579,24 +5659,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação por idade gestacional",
-        "conteudo": "Pré-termo (<37 semanas), subdividido em pré-termo tardio (34-36 semanas e 6 dias), moderado (32-34 semanas), muito pré-termo (<32 semanas) e extremo (<28 semanas). Termo: 37 a 41 semanas e 6 dias. Pós-termo: ≥42 semanas."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A prematuridade (nascimento antes de 37 semanas completas) resulta em imaturidade funcional de múltiplos sistemas orgânicos proporcional ao grau de prematuridade, sendo os sistemas respiratório (deficiência de surfactante, causando síndrome do desconforto respiratório), neurológico (maior fragilidade da matriz germinativa periventricular, predispondo a hemorragia intraventricular) e imunológico (maior suscetibilidade a infecções) os mais clinicamente relevantes e determinantes de morbimortalidade neonatal."
       },
       {
-        "titulo": "Classificação por peso ao nascer",
-        "conteudo": "Baixo peso (<2500g), muito baixo peso (<1500g) e extremo baixo peso (<1000g) — independente da idade gestacional, e cruzada com a classificação de adequação peso/idade gestacional (pequeno, adequado ou grande para a idade gestacional)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Recém-nascidos prematuros apresentam maior risco de síndrome do desconforto respiratório (taquipneia, gemência, tiragem, cianose, proporcionais ao grau de deficiência de surfactante), apneia da prematuridade (por imaturidade do centro respiratório), hipoglicemia, hipotermia (maior superfície corporal relativa e menor tecido adiposo subcutâneo) e maior suscetibilidade a infecções, refletindo a imaturidade generalizada de múltiplos sistemas de regulação e defesa."
       },
       {
-        "titulo": "Principais morbidades do prematuro",
-        "conteudo": "Síndrome do desconforto respiratório (deficiência de surfactante), persistência do canal arterial, enterocolite necrosante, hemorragia peri-intraventricular e retinopatia da prematuridade — risco proporcional ao grau de prematuridade e à exposição a oxigênio."
+        "titulo": "Exame físico",
+        "conteudo": "Sinais físicos característicos incluem pele fina e gelatinosa, lanugo abundante, orelhas com cartilagem pouco desenvolvida (dobram-se facilmente sem retornar prontamente à posição original), e tônus muscular reduzido comparado ao recém-nascido a termo — achados usados, entre outros, no escore de Ballard/New Ballard para estimativa da idade gestacional quando a data da última menstruação é incerta."
       },
       {
-        "titulo": "Cuidados específicos",
-        "conteudo": "O método canguru (contato pele a pele prolongado) melhora vínculo e termorregulação, e reduz o tempo de internação em prematuros estáveis. Triagens específicas (teste do olhinho, exame de fundo de olho para retinopatia, triagem auditiva) são realizadas antes da alta."
+        "titulo": "Diagnóstico",
+        "conteudo": "A idade gestacional é determinada preferencialmente pela data da última menstruação confirmada por ultrassonografia precoce; na ausência dessa informação confiável, escores clínicos (Capurro, New Ballard) baseados em características físicas e neurológicas estimam a idade gestacional. Classificação adicional pelo peso ao nascer em relação à idade gestacional (adequado, pequeno ou grande para a idade gestacional) tem implicações prognósticas e de manejo distintas e complementares à idade gestacional isolada."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Corticoide antenatal administrado à gestante em risco de parto prematuro (já discutido no tema de TPP) reduz significativamente a incidência e gravidade da síndrome do desconforto respiratório neonatal. Surfactante exógeno é administrado ao recém-nascido com síndrome do desconforto respiratório estabelecida. Suporte térmico rigoroso (incubadora), nutrição especializada (frequentemente parenteral inicialmente, progredindo para enteral), e rastreamento sistemático de complicações específicas da prematuridade (retinopatia da prematuridade, hemorragia intraventricular por ultrassonografia transfontanela) fazem parte do cuidado neonatal especializado dessa população."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Distensão abdominal associada a sangue nas fezes e instabilidade clínica</span> em prematuro levanta suspeita de enterocolite necrosante — emergência que exige suspensão da dieta enteral e investigação/tratamento imediatos."
+        "conteudo": "Apneia recorrente (pausa respiratória maior que 20 segundos, ou mais curta se associada a bradicardia/dessaturação) em prematuro deve ser investigada para excluir causas secundárias (sepse, distúrbio metabólico, refluxo) antes de ser atribuída apenas à apneia da prematuridade por imaturidade do centro respiratório."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os escores de estimativa de idade gestacional (Capurro, Ballard) e suas variáveis físicas/neurológicas são cobrança recorrente. O benefício do corticoide antenatal na redução da síndrome do desconforto respiratório, e a necessidade de rastreamento de complicações específicas da prematuridade (retinopatia, hemorragia intraventricular) também são frequentemente exigidos."
       }
     ]
   },
@@ -5607,7 +5695,7 @@
     "titulo": "Desenvolvimento Neuropsicomotor e Curvas de Crescimento",
     "resumo": "Marcos do desenvolvimento esperados por idade, sinais de alarme e uso das curvas de crescimento da OMS.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Pediatria — Manual de Vigilância do Desenvolvimento Infantil; Curvas de Crescimento da OMS 2006/2007",
+    "fonte": "Sociedade Brasileira de Pediatria; Caderneta de Saúde da Criança (Ministério da Saúde); Curvas de Crescimento da OMS",
     "mnemonicos": [
       {
         "palavra": "Regressão nunca é normal",
@@ -5616,24 +5704,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Marcos do desenvolvimento neuropsicomotor",
-        "conteudo": "Sustento cefálico (cerca de 3 meses), sentar sem apoio (cerca de 6 meses), engatinhar (cerca de 8-9 meses), andar sem apoio (cerca de 12-15 meses), primeiras palavras com significado (cerca de 12 meses) e frases de 2 palavras (cerca de 24 meses). Existe variação individual normal, mas atraso significativo em múltiplos domínios merece investigação."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O desenvolvimento neuropsicomotor segue uma sequência previsível e ordenada (céfalo-caudal e próximo-distal), refletindo a mielinização progressiva do sistema nervoso central. O crescimento físico segue padrões de velocidade variáveis por idade (mais rápido no primeiro ano de vida e na puberdade), avaliado por curvas de referência padronizadas (peso, comprimento/estatura, perímetro cefálico, e índice de massa corporal a partir de determinada idade) que permitem identificar desvios significativos do padrão esperado para a idade e sexo."
       },
       {
-        "titulo": "Sinais de alerta de atraso",
-        "conteudo": "Ausência de sustento cefálico aos 4 meses, ausência de sorriso social aos 3 meses, ausência de palavras aos 18 meses, e perda de habilidades já adquiridas (regressão do desenvolvimento) em qualquer idade — este último especialmente preocupante e sempre exige investigação."
+        "titulo": "Quadro clínico",
+        "conteudo": "Marcos do desenvolvimento neuropsicomotor têm janelas etárias esperadas de aquisição: sorriso social por volta de 6-8 semanas, sustento cefálico por volta de 3-4 meses, sentar sem apoio por volta de 6-8 meses, engatinhar e ficar em pé com apoio por volta de 9-10 meses, andar sem apoio por volta de 12-15 meses, e formação de frases simples por volta de 2 anos — o atraso significativo na aquisição desses marcos, considerando margem de variação normal, deve motivar investigação."
       },
       {
-        "titulo": "Curvas de crescimento da OMS",
-        "conteudo": "Utilizadas na Caderneta de Saúde da Criança para monitorar peso, comprimento/estatura, perímetro cefálico e índice de massa corporal por idade e sexo. Percentis muito baixos (escore z < -2) ou queda acentuada no canal de crescimento habitual sinalizam necessidade de investigação."
+        "titulo": "Exame físico",
+        "conteudo": "A avaliação neuropsicomotora inclui exame neurológico dirigido (reflexos primitivos, cujo desaparecimento em idade esperada é tão importante quanto sua presença inicial — a persistência além do esperado sugere disfunção neurológica), tônus muscular, e observação direta de habilidades motoras grossas e finas apropriadas para a idade em cada consulta de puericultura."
       },
       {
-        "titulo": "Caderneta de Saúde da Criança",
-        "conteudo": "Instrumento de acompanhamento longitudinal que registra vacinação, curvas de crescimento, marcos do desenvolvimento e intercorrências — deve ser preenchida e revisada em toda consulta de puericultura."
+        "titulo": "Diagnóstico",
+        "conteudo": "As curvas de crescimento da OMS (peso, estatura, perímetro cefálico por idade e sexo) são o instrumento padronizado para monitorização seriada, com desvios significativos (cruzamento de dois ou mais canis percentilares, ou valores extremos isolados) indicando necessidade de investigação adicional. Instrumentos de triagem do desenvolvimento (como testes de triagem padronizados usados na atenção primária) auxiliam a identificação sistemática de atrasos que podem passar despercebidos em avaliação clínica não estruturada."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Diante de atraso do desenvolvimento identificado, o encaminhamento para avaliação especializada e estimulação precoce (fisioterapia, fonoaudiologia, terapia ocupacional, conforme o domínio comprometido) deve ser feito prontamente, já que a intervenção precoce tem impacto comprovado em melhorar desfechos funcionais a longo prazo em diversas condições neurológicas do desenvolvimento. Orientação e suporte aos pais/cuidadores sobre estimulação apropriada em casa complementam a intervenção especializada."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Perímetro cefálico com desvio acentuado da curva habitual (micro ou macrocefalia adquirida) e regressão de marcos do desenvolvimento já adquiridos são sinais de alarme que exigem investigação neurológica prioritária."
+        "conteudo": "Perda de habilidades neuropsicomotoras previamente adquiridas (regressão do desenvolvimento) é sempre um sinal de alarme grave, diferente do simples atraso na aquisição de novas habilidades, e exige investigação neurológica prioritária para exclusão de doenças neurodegenerativas ou metabólicas subjacentes."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "As janelas etárias esperadas dos principais marcos do desenvolvimento neuropsicomotor (sustento cefálico, sentar, andar, primeiras palavras) são cobrança certíssima e extremamente recorrente em provas de pediatria. A diferenciação entre atraso de aquisição (menos grave, aguarda-se dentro de margem de variação) e regressão de habilidades já adquiridas (sempre sinal de alarme grave) também é frequentemente exigida."
       }
     ]
   },
