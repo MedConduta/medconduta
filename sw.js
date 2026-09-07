@@ -5,7 +5,7 @@
  * são armazenadas em runtime na primeira visita.
  */
 
-const CACHE_VERSION = "medconduta-v21";
+const CACHE_VERSION = "medconduta-v22";
 
 const PRECACHE_URLS = [
   "./",

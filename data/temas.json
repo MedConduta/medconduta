@@ -252,7 +252,7 @@
     "titulo": "Lesão Renal Aguda (LRA)",
     "resumo": "Critérios diagnósticos (KDIGO), classificação etiológica e abordagem inicial da LRA.",
     "revisado": false,
-    "fonte": "KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012)",
+    "fonte": "Sociedade Brasileira de Nefrologia; KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012, atualização 2024)",
     "mnemonicos": [
       {
         "palavra": "AEIOU",
@@ -261,24 +261,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e critérios diagnósticos",
-        "conteudo": "Pelos critérios KDIGO, define-se LRA por aumento da creatinina sérica ≥0,3 mg/dL em 48h, ou ≥1,5x o valor basal em até 7 dias, ou débito urinário <0,5 mL/kg/h por pelo menos 6 horas."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A lesão renal aguda é classificada etiologicamente em pré-renal (hipoperfusão renal por hipovolemia, baixo débito cardíaco ou vasodilatação sistêmica, sem lesão estrutural — potencialmente reversível se corrigida a causa), renal intrínseca (dano direto ao parênquima, sendo a necrose tubular aguda isquêmica ou nefrotóxica a causa mais comum, além de glomerulonefrites e nefrites intersticiais) e pós-renal (obstrução do trato urinário, de qualquer ponto entre pelve renal e uretra). A distinção é fundamental pois orienta tanto a investigação quanto o tratamento — uma pré-renal não revertida a tempo evolui para necrose tubular aguda intrínseca estabelecida."
       },
       {
-        "titulo": "Classificação etiológica",
-        "conteudo": "Pré-renal (hipoperfusão renal — hipovolemia, baixo débito cardíaco), renal intrínseca (necrose tubular aguda, glomerulonefrites, nefrites intersticiais) e pós-renal (obstrução do trato urinário — hiperplasia prostática, litíase, massas pélvicas)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Frequentemente assintomática nas fases iniciais, identificada por elevação da creatinina sérica em exames de rotina ou redução do débito urinário. Quando sintomática, manifesta-se por sinais de uremia (náuseas, anorexia, prurido, alteração do sensório em casos graves), sobrecarga volêmica (edema, dispneia) ou sintomas relacionados à causa de base (dor em cólica na obstrutiva, hipotensão/sangramento na pré-renal)."
       },
       {
-        "titulo": "Investigação inicial",
-        "conteudo": "História e exame físico voltados à volemia, exposição a nefrotóxicos e sintomas obstrutivos; sedimento urinário, eletrólitos e ultrassonografia de vias urinárias para excluir dilatação pielocalicial."
+        "titulo": "Exame físico",
+        "conteudo": "Sinais de desidratação/hipovolemia (mucosas secas, hipotensão postural, taquicardia) sugerem causa pré-renal; sinais de sobrecarga volêmica (edema, estertores, turgência jugular) podem coexistir em causas intrínsecas ou em pré-renal por baixo débito cardíaco (insuficiência cardíaca descompensada, paradoxalmente com volume circulante efetivo baixo apesar de volume total aumentado). Bexigoma palpável ou globo vesical sugere obstrução baixa (pós-renal)."
       },
       {
-        "titulo": "Tratamento inicial",
-        "conteudo": "Corrigir a causa de base, otimizar a volemia, suspender ou ajustar fármacos nefrotóxicos e ajustar a dose de medicações de eliminação renal conforme a função renal atual."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico e a estadiação seguem os critérios KDIGO: elevação da creatinina sérica ≥0,3mg/dL em 48h, ou ≥1,5x o valor basal em 7 dias, ou débito urinário <0,5mL/kg/h por 6 horas. A fração de excreção de sódio (FENa) auxilia a diferenciar pré-renal (FENa <1%, o rim retém sódio ativamente por hipoperfusão) de necrose tubular aguda intrínseca (FENa >2%, perda da capacidade de concentração tubular) — exceto em uso de diuréticos, quando a fração de excreção de ureia é mais confiável. Ultrassonografia renal é essencial para excluir causa obstrutiva (hidronefrose) em toda LRA sem causa evidente."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento é dirigido pela etiologia identificada: reposição volêmica cuidadosa na pré-renal hipovolêmica, otimização hemodinâmica na de baixo débito, suspensão de nefrotoxinas (contraste, AINEs, aminoglicosídeos) e desobstrução (sondagem vesical, nefrostomia) na pós-renal. Em todos os casos, o manejo de suporte inclui ajuste de dose de medicações renalmente excretadas, correção de distúrbios hidroeletrolíticos e ácido-básicos associados, e monitorização rigorosa do balanço hídrico. Diálise é indicada nas mesmas situações de urgência de qualquer insuficiência renal grave (hipercalemia refratária, acidose refratária, sobrecarga volêmica refratária, uremia sintomática)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Indicações de diálise de urgência (mnemônico AEIOU)</span>: acidose refratária, distúrbio eletrolítico grave (hipercalemia), intoxicação exógena dialisável, sobrecarga volêmica refratária e uremia sintomática."
+        "conteudo": "<span class=\"red-flag\">Anúria absoluta de início súbito</span> deve levantar suspeita imediata de causa obstrutiva ou de necrose cortical bilateral/oclusão vascular bilateral — situações que exigem investigação de imagem urgente, já que a obstrução é potencialmente reversível se desobstruída rapidamente, mas a lesão permanente se instala progressivamente com o tempo de obstrução mantida."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A classificação etiológica (pré-renal, renal, pós-renal) com seus respectivos mecanismos e a fração de excreção de sódio como ferramenta de diferenciação entre pré-renal e necrose tubular aguda são cobrança certa. É importante lembrar que a ultrassonografia renal para excluir obstrução deve ser praticamente universal na investigação inicial de LRA sem causa evidente, mesmo com baixa probabilidade pré-teste de causa obstrutiva."
       }
     ]
   },
@@ -1430,7 +1438,7 @@
     "titulo": "Doença Renal Crônica (DRC)",
     "resumo": "Classificação KDIGO, causas principais e manejo conservador da DRC.",
     "revisado": false,
-    "fonte": "KDIGO Clinical Practice Guideline for the Evaluation and Management of CKD (2024); Sociedade Brasileira de Nefrologia (SBN)",
+    "fonte": "Sociedade Brasileira de Nefrologia; KDIGO Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease (2024)",
     "mnemonicos": [
       {
         "palavra": "KDIGO (G + A)",
@@ -1439,24 +1447,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e classificação",
-        "conteudo": "Alterações estruturais ou funcionais renais presentes por mais de 3 meses, classificadas pela TFG (G1-G5) e pela albuminúria (A1-A3), segundo o KDIGO."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença renal crônica é definida por alterações estruturais ou funcionais dos rins presentes por mais de 3 meses, com implicações para a saúde. As principais causas no Brasil e no mundo são diabetes mellitus e hipertensão arterial, seguidas de glomerulonefrites e doença renal policística. A perda progressiva de néfrons funcionantes leva a hiperfiltração compensatória nos néfrons remanescentes, que paradoxalmente acelera sua própria lesão a longo prazo (hipótese de hiperfiltração de Brenner), perpetuando um ciclo de deterioração progressiva mesmo após controle da causa inicial."
       },
       {
-        "titulo": "Causas mais comuns",
-        "conteudo": "Diabetes mellitus e hipertensão arterial são as principais causas de DRC na maioria das populações."
+        "titulo": "Quadro clínico",
+        "conteudo": "Assintomática nos estágios iniciais, sendo identificada por rastreamento laboratorial em populações de risco (diabéticos, hipertensos). Nos estágios avançados, surgem sintomas urêmicos (fadiga, anorexia, náuseas, prurido), anemia (por deficiência de eritropoetina), doença óssea mineral (por distúrbio do metabolismo de cálcio/fósforo/vitamina D e hiperparatireoidismo secundário) e sobrecarga volêmica com hipertensão de difícil controle."
       },
       {
-        "titulo": "Manejo conservador",
-        "conteudo": "Controle rigoroso de pressão arterial e glicemia, uso de IECA/BRA para nefroproteção, restrição proteica moderada e ajuste de medicações de eliminação renal."
+        "titulo": "Exame físico",
+        "conteudo": "Palidez cutaneomucosa (anemia da DRC), edema (retenção de sódio/água), hipertensão arterial de difícil controle, e, em estágios avançados, sinais de uremia como hálito urêmico e escoriações por prurido. Assimetria renal ou massas palpáveis podem sugerir doença renal policística como etiologia de base."
       },
       {
-        "titulo": "Terapia renal substitutiva",
-        "conteudo": "Indicada conforme estágio avançado da doença e presença de sintomas urêmicos, incluindo diálise (hemodiálise ou peritoneal) ou transplante renal."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico e a classificação seguem o sistema KDIGO combinando taxa de filtração glomerular estimada (categorias G1 a G5, sendo G5 <15mL/min/1,73m², estágio de falência renal) e a relação albumina/creatinina urinária (categorias A1 a A3), já que ambos os parâmetros têm valor prognóstico independente e complementar — um paciente pode ter TFG preservada mas já apresentar albuminúria significativa, indicando dano renal precoce. A persistência das alterações por mais de 3 meses é o critério temporal que diferencia DRC de lesão renal aguda."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento visa retardar a progressão e tratar as complicações: controle rigoroso da pressão arterial (IECA/BRA são preferenciais por reduzirem a proteinúria além do efeito hipotensor), controle glicêmico em diabéticos (inibidores de SGLT2 têm benefício nefroprotetor comprovado independente do controle glicêmico, hoje recomendados amplamente na DRC diabética e mesmo em não diabéticos com proteinúria significativa), restrição dietética de sódio/proteína conforme estágio, correção de anemia (agentes estimuladores de eritropoiese) e do distúrbio mineral-ósseo (quelantes de fósforo, vitamina D ativa). Terapia renal substitutiva (diálise ou transplante) é indicada no estágio G5 sintomático ou com critérios de urgência dialítica."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Uremia sintomática ou hipercalemia refratária ao tratamento clínico</span> indicam necessidade de terapia renal substitutiva de urgência."
+        "conteudo": "<span class=\"red-flag\">Queda abrupta e acelerada da função renal sobreposta à DRC previamente estável</span> (\"DRC agudizada\") deve motivar investigação imediata de causa reversível sobreposta (desidratação, nefrotoxina, obstrução, uso de AINE/contraste), pois representa oportunidade de reverter parte da perda funcional se identificada e tratada precocemente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O sistema de classificação KDIGO combinando TFG (G1-G5) e albuminúria (A1-A3) é cobrança certa, assim como o papel nefroprotetor comprovado dos iSGLT2 e IECA/BRA independente do efeito glicêmico/pressórico isolado — atualização de diretriz frequentemente testada em provas recentes. A diferenciação temporal de 3 meses entre DRC e LRA também é ponto clássico."
       }
     ]
   },
@@ -1467,7 +1483,7 @@
     "titulo": "Distúrbios Hidroeletrolíticos — Hipercalemia",
     "resumo": "Alterações eletrocardiográficas e as 3 etapas do tratamento da hipercalemia.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Nefrologia (SBN); KDIGO",
+    "fonte": "Sociedade Brasileira de Nefrologia; UpToDate/KDIGO — Diagnosis and treatment of hyperkalemia",
     "mnemonicos": [
       {
         "palavra": "ESTABILIZAR → REDISTRIBUIR → ELIMINAR",
@@ -1476,24 +1492,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Causas",
-        "conteudo": "Doença renal, uso de IECA/BRA/poupadores de potássio, acidose metabólica e lise celular (rabdomiólise, síndrome de lise tumoral) são causas comuns de hipercalemia."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A hipercalemia resulta de aumento da ingesta (raramente causa isolada em função renal normal), redistribuição transcelular (acidose metabólica, deficiência de insulina, rabdomiólise/lise tumoral com liberação celular maciça de potássio) ou, mais comumente na prática clínica, redução da excreção renal (lesão renal aguda/crônica, hipoaldosteronismo, uso de IECA/BRA/espironolactona/anti-inflamatórios). O potássio é o principal íon intracelular, e alterações do seu gradiente transmembrana afetam diretamente a excitabilidade de membranas cardíacas e neuromusculares, explicando a gravidade potencialmente fatal desse distúrbio."
       },
       {
-        "titulo": "Alterações eletrocardiográficas",
-        "conteudo": "Progressão típica: ondas T apiculadas, seguidas de alargamento do QRS e, em casos graves, padrão sinusoidal — risco iminente de arritmia fatal."
+        "titulo": "Quadro clínico",
+        "conteudo": "Frequentemente assintomática até níveis graves, quando surgem fraqueza muscular ascendente (podendo progredir a paralisia flácida em casos extremos) e, mais preocupante, arritmias cardíacas potencialmente fatais. A gravidade clínica correlaciona-se mais com a velocidade de instalação do distúrbio do que apenas com o valor absoluto — uma elevação aguda é mais perigosa que uma elevação crônica de mesma magnitude, pela ausência de tempo de adaptação celular."
       },
       {
-        "titulo": "Tratamento — estabilização",
-        "conteudo": "Gluconato de cálcio endovenoso estabiliza a membrana cardíaca quando há alterações eletrocardiográficas, sem reduzir o potássio sérico."
+        "titulo": "Exame físico",
+        "conteudo": "Fraqueza muscular proporcional à gravidade da hipercalemia, podendo culminar em paralisia flácida ascendente semelhante à síndrome de Guillain-Barré em casos extremos. Não há achado patognomônico ao exame físico isolado — a gravidade real é aferida pelo eletrocardiograma, e não pela clínica muscular apenas."
       },
       {
-        "titulo": "Tratamento — redistribuição e eliminação",
-        "conteudo": "Insulina associada a glicose e beta-2 agonista inalatório redistribuem o potássio para o meio intracelular; diuréticos de alça, resinas de troca e diálise removem o excesso de potássio do organismo."
+        "titulo": "Diagnóstico",
+        "conteudo": "O eletrocardiograma é o exame mais importante para estratificar a urgência terapêutica, com alterações progressivas conforme a gravidade: ondas T apiculadas e simétricas (achado mais precoce), seguido de alargamento do QRS, achatamento/desaparecimento de onda P, e em casos extremos, padrão sinusoidal (pré-fibrilação ventricular) — a presença de qualquer alteração eletrocardiográfica define emergência, independentemente do valor laboratorial exato. Deve-se sempre excluir pseudo-hipercalemia (hemólise da amostra, torniquete prolongado) antes de tratar um valor discrepante do quadro clínico."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Diante de alterações eletrocardiográficas, gluconato de cálcio endovenoso é a primeira medida, com ação em minutos, estabilizando a membrana cardíaca sem alterar o potássio sérico (deve ser repetido se as alterações persistirem). Em seguida, medidas para deslocar potássio para o intracelular: insulina regular associada a glicose (evita hipoglicemia), beta-agonista inalatório em dose alta, e bicarbonato de sódio se acidose associada — todas temporárias, sem remover potássio do organismo. A remoção definitiva do potássio corporal é feita por diuréticos de alça (se função renal preservada), resinas de troca catiônica (patirômero, ciclossilicato de sódio e zircônio — mais modernos e eficazes que o poliestirenossulfonato de cálcio clássico) ou diálise de urgência nos casos refratários/graves com função renal comprometida."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Alterações eletrocardiográficas graves ou arritmia associadas à hipercalemia</span> exigem tratamento imediato, começando pela estabilização de membrana."
+        "conteudo": "<span class=\"red-flag\">Alterações eletrocardiográficas de hipercalemia (onda T apiculada, alargamento de QRS, padrão sinusoidal)</span> configuram emergência médica com risco iminente de arritmia fatal, exigindo gluconato de cálcio imediato antes mesmo de aguardar confirmação laboratorial repetida, quando a suspeita clínica e o ECG já são compatíveis."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A sequência de tratamento da hipercalemia grave (cálcio → insulina+glicose/beta-agonista → remoção definitiva) é cobrança extremamente frequente, assim como a compreensão de que o gluconato de cálcio estabiliza a membrana mas não reduz o potássio sérico — muitos candidatos erram achando que o cálcio já resolve definitivamente o distúrbio. A progressão eletrocardiográfica (T apiculada → QRS alargado → padrão sinusoidal) também é tema recorrente em questões com traçados de ECG."
       }
     ]
   },
@@ -2133,7 +2157,7 @@
     "titulo": "Síndrome Nefrótica e Síndrome Nefrítica",
     "resumo": "Diferenciação clínico-laboratorial e principais causas de cada síndrome glomerular.",
     "revisado": false,
-    "fonte": "KDIGO Clinical Practice Guideline for the Management of Glomerular Diseases (2021); Sociedade Brasileira de Nefrologia (SBN)",
+    "fonte": "Sociedade Brasileira de Nefrologia; KDIGO Clinical Practice Guideline on Glomerular Diseases (2021)",
     "mnemonicos": [
       {
         "palavra": "NEFRÓTICA = PEE / NEFRÍTICA = HHO",
@@ -2142,24 +2166,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Síndrome nefrótica",
-        "conteudo": "Proteinúria maciça (>3,5 g/24h), hipoalbuminemia, edema e hiperlipidemia. Em crianças, a causa mais comum é a doença de lesões mínimas; em adultos, a glomerulosclerose segmentar e focal e a nefropatia membranosa."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A síndrome nefrótica resulta de lesão da barrera de filtração glomerular (principalmente dos podócitos) que aumenta a permeabilidade seletiva a proteínas, sem processo inflamatório proeminente — causas incluem doença de lesões mínimas (mais comum em crianças), glomeruloesclerose segmentar e focal, nefropatia membranosa (mais comum em adultos, podendo ser secundária a neoplasia) e nefropatia diabética. A síndrome nefrítica resulta de processo inflamatório glomerular agudo (glomerulonefrite proliferativa), com lesão endotelial/mesangial que causa hematúria e redução da filtração glomerular — causas incluem glomerulonefrite pós-estreptocócica (mais comum em crianças) e nefropatia por IgA (a glomerulonefrite primária mais comum globalmente)."
       },
       {
-        "titulo": "Síndrome nefrítica",
-        "conteudo": "Hematúria dismórfica, hipertensão, edema e graus variáveis de disfunção renal, com oligúria. A glomerulonefrite pós-estreptocócica é a causa clássica, especialmente em crianças."
+        "titulo": "Quadro clínico",
+        "conteudo": "Síndrome nefrótica manifesta-se com edema importante (frequentemente periorbitário pela manhã, progredindo para anasarca), espuma na urina (pela proteinúria maciça) e maior suscetibilidade a infecções e eventos tromboembólicos (pela perda urinária de imunoglobulinas e proteínas anticoagulantes naturais, respectivamente). Síndrome nefrítica cursa com hematúria (classicamente descrita como urina \"cor de coca-cola\" ou \"lavado de carne\"), edema menos intenso que o nefrótico, hipertensão arterial e graus variáveis de redução da função renal (oligúria)."
       },
       {
-        "titulo": "Investigação",
-        "conteudo": "Proteinúria de 24h (ou relação proteína/creatinina urinária), sedimento urinário, dosagem de complemento sérico e biópsia renal conforme indicação clínica."
+        "titulo": "Exame físico",
+        "conteudo": "Edema periorbitário matinal e/ou anasarca com cacifo positivo é o achado mais característico da síndrome nefrótica. Na síndrome nefrítica, hipertensão arterial e edema mais discreto (facial/periorbitário, menos generalizado que no nefrótico) são comuns; sinais de infecção estreptocócica recente (faringite ou piodermite, 1-3 semanas antes) reforçam a suspeita de glomerulonefrite pós-estreptocócica em criança."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Síndrome nefrótica é definida laboratorialmente por proteinúria maciça (>3,5g/24h), hipoalbuminemia, edema e hiperlipidemia associada. Síndrome nefrítica é definida por hematúria (com dismorfismo eritrocitário e cilindros hemáticos no sedimento urinário, sugerindo origem glomerular), proteinúria subnefrótica, hipertensão e redução da TFG. A biópsia renal é o exame padrão-ouro para definição etiológica precisa em ambas as síndromes quando a causa não é clinicamente evidente (por exemplo, glomerulonefrite pós-estreptocócica típica em criança geralmente dispensa biópsia)."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Síndrome nefrótica: diuréticos, IECA/BRA para reduzir proteinúria, corticoide conforme etiologia. Síndrome nefrítica: tratar a causa de base, com controle rigoroso de pressão arterial e volemia."
+        "conteudo": "Síndrome nefrótica por lesões mínimas (a causa mais tratável) responde tipicamente bem a corticoide, sendo essa boa resposta praticamente diagnóstica em crianças, dispensando biópsia inicial na maioria dos casos pediátricos típicos. Tratamento de suporte inclui restrição de sódio, diurético para o edema, IECA/BRA para reduzir a proteinúria, e estatina para a dislipidemia associada. Glomerulonefrite pós-estreptocócica é autolimitada na maioria dos casos, com tratamento de suporte (controle de PA e volume) e antibiótico se ainda houver foco infeccioso ativo — sem impacto comprovado sobre o curso da glomerulonefrite já instalada."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Edema agudo de pulmão ou perda rápida e progressiva da função renal</span> exigem investigação e tratamento urgentes."
+        "conteudo": "<span class=\"red-flag\">Edema maciço associado a sinais de trombose venosa (TVP, especialmente de veia renal) ou infecção grave</span> em paciente com síndrome nefrótica reflete as complicações mais temidas do estado de hipercoagulabilidade e imunossupressão relativa características dessa síndrome, exigindo vigilância ativa."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre síndrome nefrótica (proteinúria maciça, edema importante, sem hematúria proeminente) e nefrítica (hematúria, hipertensão, edema menos intenso) é cobrança certíssima e recorrente. A resposta a corticoide como quase-diagnóstico de lesões mínimas em criança, e a associação temporal de 1-3 semanas entre infecção estreptocócica e glomerulonefrite pós-estreptocócica, são pontos clássicos de prova."
       }
     ]
   },
@@ -3233,7 +3265,7 @@
     "titulo": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
     "resumo": "Avaliação por volemia e osmolalidade na hiponatremia, causas de hipernatremia e a regra da correção lenta em ambos os distúrbios.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Nefrologia; UpToDate — Diagnostic Evaluation of Adults With Hyponatremia",
+    "fonte": "Sociedade Brasileira de Nefrologia; European Clinical Practice Guideline on Diagnosis and Treatment of Hyponatraemia (2014)",
     "mnemonicos": [
       {
         "palavra": "Devagar e sempre",
@@ -3242,24 +3274,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Hiponatremia — avaliação inicial",
-        "conteudo": "Classificar por volemia (hipovolêmica, euvolêmica ou hipervolêmica) e por osmolalidade sérica, para distinguir hiponatremia verdadeira/hipotônica de pseudo-hiponatremia (por hiperglicemia ou hiperlipidemia grave). A síndrome de secreção inapropriada de ADH (SIADH) é causa clássica de hiponatremia euvolêmica."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A hiponatremia reflete, na grande maioria dos casos, excesso relativo de água livre em relação ao sódio corporal (não necessariamente deficiência de sódio), mediado por liberação inapropriada ou apropriada de ADH — a avaliação do estado volêmico (hipovolêmica, euvolêmica, hipervolêmica) é o passo central para o diagnóstico etiológico. A hipernatremia, mais rara na prática ambulatorial, reflete quase sempre déficit de água livre relativo ao sódio, ocorrendo predominantemente em pacientes com acesso à água prejudicado (idosos acamados, crianças, pacientes com rebaixamento do sensório) já que a sede é um mecanismo protetor robusto contra a hipernatremia em indivíduos com acesso livre à água."
       },
       {
-        "titulo": "Hiponatremia — tratamento",
-        "conteudo": "A correção lenta é a regra geral — no máximo 8-10 mEq/L em 24h — pelo risco de síndrome de desmielinização osmótica (mielinólise pontina) quando a correção é rápida demais, especialmente em hiponatremia crônica. Hiponatremia aguda sintomática grave (convulsão, rebaixamento do nível de consciência) pode exigir salina hipertônica com correção inicial mais rápida, sob monitorização estrita."
+        "titulo": "Quadro clínico",
+        "conteudo": "Os sintomas de ambos os distúrbios do sódio refletem predominantemente edema (hiponatremia) ou desidratação (hipernatremia) do sistema nervoso central, e correlacionam-se mais com a velocidade de instalação do que com o valor absoluto: hiponatremia aguda pode causar cefaleia, náuseas, confusão mental e, em casos graves, convulsões e herniação cerebral; hiponatremia crônica é frequentemente assintomática ou oligossintomática mesmo com valores baixos, pela adaptação osmótica cerebral. Hipernatremia manifesta-se com letargia, irritabilidade, e em casos graves convulsões, refletindo desidratação celular neuronal."
       },
       {
-        "titulo": "Hipernatremia",
-        "conteudo": "Quase sempre reflete déficit de água livre (perda de água maior que a de sódio, ou ganho de sódio). Situações comuns: idosos com acesso restrito à água, diabetes insípido (central ou nefrogênico) e perdas gastrointestinais não repostas adequadamente."
+        "titulo": "Exame físico",
+        "conteudo": "A avaliação do estado volêmico ao exame físico (turgor cutâneo, mucosas, pressão arterial postural, edema, estase jugular) é o passo mais importante para classificar a hiponatremia em hipovolêmica, euvolêmica ou hipervolêmica, orientando toda a investigação subsequente. Sinais neurológicos (confusão, rebaixamento do sensório, convulsão) refletem a gravidade do distúrbio, independentemente da etiologia de base."
       },
       {
-        "titulo": "Hipernatremia — tratamento",
-        "conteudo": "Reposição de água livre, preferencialmente por via oral/enteral quando possível, ou solução hipotônica intravenosa. A correção também deve ser gradual (no máximo 10-12 mEq/L em 24h) para evitar edema cerebral por correção rápida demais."
+        "titulo": "Diagnóstico",
+        "conteudo": "Diante de hiponatremia, a osmolaridade sérica deve ser verificada primeiro para excluir pseudo-hiponatremia (hiperlipidemia/hiperproteinemia grave) e hiponatremia hiperosmolar (hiperglicemia grave, que dilui o sódio por efeito osmótico da glicose sem representar excesso real de água livre). Confirmada a hiponatremia hipotônica verdadeira, a avaliação volêmica clínica associada à sódio urinário e osmolaridade urinária diferencia as causas (SIADH tipicamente com sódio urinário >40mEq/L e euvolemia clínica, sendo diagnóstico de exclusão). Hipernatremia é avaliada por osmolaridade urinária para diferenciar diabetes insipidus (urina inapropriadamente diluída) de perda hipotônica extrarrenal."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "A correção da hiponatremia deve ser cautelosa e gradual (limite de 8-10mEq/L nas primeiras 24 horas) pelo risco de síndrome de desmielinização osmótica (mielinólise pontina) se corrigida rapidamente demais, especialmente em hiponatremia crônica — exceção é a hiponatremia aguda sintomática grave (convulsão, herniação iminente), que exige correção inicial rápida com salina hipertônica nas primeiras horas, seguida de desaceleração. Hipernatremia é corrigida com reposição de água livre (oral ou solução hipotônica endovenosa), também de forma gradual, para evitar edema cerebral por correção excessivamente rápida."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Correção rápida de hiponatremia crônica</span> é a principal causa evitável de mielinólise pontina — não corrigir rápido demais, mesmo diante de sintomas, sem antes reavaliar a cronicidade do distúrbio."
+        "conteudo": "<span class=\"red-flag\">Correção de sódio além do limite seguro nas primeiras 24-48 horas (>8-10mEq/L/24h na hiponatremia)</span> é iatrogenia grave, com risco de síndrome de desmielinização osmótica irreversível — o monitoramento seriado do sódio durante a correção é obrigatório em todo paciente tratado para distúrbio significativo de sódio."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A avaliação do estado volêmico como primeiro passo diagnóstico da hiponatremia, e o limite seguro de correção (8-10mEq/L/24h) para evitar mielinólise pontina, são cobrança certíssima e recorrente. É importante lembrar que hiponatremia crônica assintomática não deve ser corrigida rapidamente mesmo que o valor absoluto pareça grave — armadilha comum quando a banca oferece um valor numérico muito baixo tentando induzir correção agressiva."
       }
     ]
   },
@@ -6443,7 +6483,7 @@
     "titulo": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
     "resumo": "Abordagem sistemática da gasometria, cálculo do ânion gap e principais causas de acidose/alcalose metabólica e respiratória.",
     "revisado": false,
-    "fonte": "UpToDate — Simple and Mixed Acid-Base Disorders; Sociedade Brasileira de Nefrologia",
+    "fonte": "Sociedade Brasileira de Nefrologia; Sociedade Brasileira de Terapia Intensiva — Diretrizes de Interpretação Gasométrica",
     "mnemonicos": [
       {
         "palavra": "MUDPILES",
@@ -6452,24 +6492,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Abordagem sistemática",
-        "conteudo": "1) Avaliar o pH (acidemia <7,35 ou alcalemia >7,45). 2) Identificar o distúrbio primário pelo pCO2 e HCO3 (respiratório altera primariamente pCO2; metabólico altera primariamente HCO3). 3) Verificar se a resposta compensatória está adequada. 4) Em acidose metabólica, calcular o ânion gap."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Os distúrbios ácido-básicos primários são quatro: acidose metabólica (redução do bicarbonato, por perda de bicarbonato ou ganho de ácido — subdividida em ânion gap elevado, como cetoacidose/acidose lática/uremia, ou ânion gap normal/hiperclorêmica, como diarreia/acidose tubular renal), alcalose metabólica (aumento do bicarbonato, por perda de ácido como vômitos, ou uso de diuréticos), acidose respiratória (retenção de CO2 por hipoventilação) e alcalose respiratória (eliminação excessiva de CO2 por hiperventilação). Mecanismos compensatórios (respiratórios para distúrbios metabólicos, e renais/metabólicos para distúrbios respiratórios) atenuam, mas não normalizam completamente, o pH."
       },
       {
-        "titulo": "Acidose metabólica",
-        "conteudo": "Ânion gap aumentado (acúmulo de ácido — cetoacidose diabética, acidose láctica, uremia, intoxicações) x ânion gap normal/hiperclorêmica (perda de bicarbonato — diarreia, acidose tubular renal)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Os sintomas refletem predominantemente a doença de base causadora do distúrbio, e não o distúrbio ácido-básico em si, exceto em casos extremos: acidose grave pode causar respiração de Kussmaul (compensatória) e depressão miocárdica; alcalose grave pode causar tetania e arritmias por alterações do cálcio ionizado associadas. A gasometria arterial é indispensável para identificação e quantificação precisas, já que a clínica isolada é insuficiente e inespecífica."
       },
       {
-        "titulo": "Alcalose metabólica",
-        "conteudo": "Geralmente por perda de ácido (vômitos, diuréticos) ou ganho de bicarbonato. Classificada em responsiva a cloreto (volume-depletada, corrige com solução salina) ou resistente ao cloreto (hiperaldosteronismo)."
+        "titulo": "Exame físico",
+        "conteudo": "A respiração de Kussmaul (profunda e rápida) é o achado mais específico, indicando compensação respiratória de uma acidose metabólica grave. Sinais de hipovolemia (nos vômitos causando alcalose metabólica) ou de doença pulmonar de base (nos distúrbios respiratórios primários) ajudam a contextualizar a causa subjacente ao distúrbio identificado na gasometria."
       },
       {
-        "titulo": "Distúrbios respiratórios",
-        "conteudo": "Acidose respiratória por hipoventilação (retenção de CO2 — DPOC exacerbado, depressão do centro respiratório, fraqueza muscular). Alcalose respiratória por hiperventilação (ansiedade, dor, hipóxia, embolia pulmonar, sepse precoce)."
+        "titulo": "Diagnóstico",
+        "conteudo": "A interpretação gasométrica sistemática segue passos ordenados: (1) avaliar o pH para definir acidemia ou alcalemia; (2) verificar se PaCO2 e bicarbonato mudam na direção esperada para explicar o pH (identificando o distúrbio primário); (3) calcular o ânion gap [(Na) − (Cl + HCO3)] se acidose metabólica, para diferenciar com ânion gap elevado (perda de bicarbonato titulado por ácido não mensurado) de normal (perda direta de bicarbonato); (4) verificar se a compensação esperada está adequada (fórmulas específicas para cada distúrbio) — uma compensação fora do esperado indica distúrbio misto associado. O delta ânion gap/delta bicarbonato ajuda a identificar distúrbios metabólicos mistos mascarados."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento é sempre dirigido à causa de base do distúrbio, e não ao valor gasométrico isolado: hidratação e insulina na cetoacidose, correção da causa de hipoventilação na acidose respiratória, reposição de cloro/potássio na alcalose metabólica hipoclorêmica por vômitos. Bicarbonato de sódio exógeno tem uso restrito e controverso, reservado a acidoses metabólicas muito graves (pH <7,1-7,2) ou situações específicas (hipercalemia grave, intoxicação por certos fármacos), sem benefício comprovado em uso rotineiro para acidoses leves a moderadas."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Ânion gap muito elevado associado a rebaixamento do sensório</span> exige investigação urgente de intoxicações exógenas (metanol, etilenoglicol, salicilatos) e cetoacidose/acidose láctica — causas potencialmente fatais e tratáveis."
+        "conteudo": "Uma compensação respiratória ou metabólica que não corresponde à esperada pelas fórmulas de predição indica a presença de um segundo distúrbio ácido-básico misto associado, que não deve ser negligenciado — a interpretação gasométrica deve sempre ser sistemática e completa, não apenas superficial pelo pH isolado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A sequência sistemática de interpretação gasométrica (pH → distúrbio primário → ânion gap → compensação esperada) é a habilidade mais cobrada do tema, geralmente através de casos clínicos com valores de gasometria para interpretar. O cálculo do ânion gap e sua interpretação (elevado vs. normal) na acidose metabólica é praticamente garantido em qualquer prova que aborde o assunto."
       }
     ]
   },
@@ -6480,7 +6528,7 @@
     "titulo": "Infecção do Trato Urinário e Pielonefrite no Adulto",
     "resumo": "Cistite não complicada x complicada, diagnóstico de pielonefrite pelo sinal de Giordano e quando tratar bacteriúria assintomática.",
     "revisado": false,
-    "fonte": "IDSA Clinical Practice Guideline for the Treatment of Uncomplicated UTI; Sociedade Brasileira de Urologia/Infectologia",
+    "fonte": "Sociedade Brasileira de Urologia; Sociedade Brasileira de Infectologia; IDSA Clinical Practice Guideline for Uncomplicated UTI and Pyelonephritis",
     "mnemonicos": [
       {
         "palavra": "Giordano",
@@ -6489,24 +6537,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Cistite aguda não complicada",
-        "conteudo": "Disúria, polaciúria, urgência miccional, sem febre ou dor lombar — mais comum em mulheres jovens sexualmente ativas. Escherichia coli é o agente mais comum. Diagnóstico clínico, sem necessidade obrigatória de urocultura em casos típicos. Tratamento empírico curto (nitrofurantoína, fosfomicina ou sulfametoxazol-trimetoprima)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A infecção do trato urinário resulta, na grande maioria dos casos, da ascensão de bactérias da flora intestinal (Escherichia coli é o agente mais comum, respondendo por 70-90% dos casos não complicados) pela uretra até a bexiga (cistite) e, quando não tratada ou em situações predisponentes, até o trato urinário superior (pielonefrite, com acometimento do parênquima renal). Fatores anatômicos (uretra curta feminina), comportamentais (atividade sexual) e obstrutivos (litíase, hiperplasia prostática) predispõem à infecção."
       },
       {
-        "titulo": "ITU complicada",
-        "conteudo": "Ocorre em homens, gestantes, diabéticos, portadores de anormalidades estruturais/funcionais do trato urinário, ou em uso de cateter vesical — exige avaliação e tratamento mais cauteloso, geralmente com urocultura e antibiograma."
+        "titulo": "Quadro clínico",
+        "conteudo": "Cistite manifesta-se com disúria, urgência miccional, polaciúria e dor suprapúbica, sem sintomas sistêmicos significativos. Pielonefrite associa-se a febre, calafrios, dor lombar (geralmente unilateral) e sintomas sistêmicos (náuseas, vômitos, mal-estar), podendo evoluir para sepse em casos graves ou em pacientes com fatores de risco (diabetes, obstrução urinária, imunossupressão)."
       },
       {
-        "titulo": "Pielonefrite aguda",
-        "conteudo": "Infecção do parênquima renal, com febre, calafrios, dor lombar/em flanco (sinal de Giordano positivo) associados aos sintomas de cistite. Urocultura sempre indicada. Tratamento ambulatorial com antibiótico oral na maioria dos casos; internação reservada para sinais de gravidade, gestantes, ou falha do tratamento ambulatorial."
+        "titulo": "Exame físico",
+        "conteudo": "Dor à palpação suprapúbica na cistite. Sinal de Giordano positivo (dor à punho-percussão da loja renal) é achado característico de pielonefrite, refletindo a inflamação do parênquima e cápsula renal — embora inespecífico isoladamente, é altamente sugestivo no contexto clínico de febre e sintomas urinários associados."
       },
       {
-        "titulo": "Bacteriúria assintomática",
-        "conteudo": "Presença de bactérias na urocultura sem sintomas — tratamento reservado apenas para gestantes e pacientes que serão submetidos a procedimento urológico invasivo. Tratar fora dessas situações não traz benefício e favorece resistência bacteriana."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico de cistite não complicada em mulher jovem sem comorbidades pode ser eminentemente clínico, dispensando exame de urina confirmatório na maioria dos protocolos. Exame de urina (EAS) com piúria e a urocultura com contagem de colônias significativa (geralmente ≥10⁵ UFC/mL, podendo ser menor em contexto sintomático típico) confirmam o diagnóstico e orientam o ajuste terapêutico. Pielonefrite exige avaliação mais completa, incluindo hemograma, função renal, e exame de imagem (ultrassonografia ou tomografia) se houver dúvida diagnóstica, sinais de gravidade, ausência de resposta ao tratamento em 48-72h, ou suspeita de complicação (abscesso, obstrução)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Cistite não complicada é tratada empiricamente com antibiótico oral de curso curto (nitrofurantoína, fosfomicina em dose única, ou sulfametoxazol-trimetoprima conforme padrão de resistência local), sem necessidade de aguardar urocultura para iniciar o tratamento. Pielonefrite não complicada pode ser tratada ambulatorialmente com fluoroquinolona ou cefalosporina oral em paciente estável e sem sinais de gravidade; casos com sinais sistêmicos importantes, intolerância oral, gestação ou fatores de risco exigem internação e antibiótico endovenoso empírico, com ajuste posterior conforme cultura e antibiograma."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Pielonefrite com sinais de sepse</span> ou falha de melhora clínica em 48-72h de antibiótico adequado deve levantar suspeita de complicação (abscesso renal/perinefrético, obstrução) e motivar investigação de imagem urgente."
+        "conteudo": "<span class=\"red-flag\">Pielonefrite associada a instabilidade hemodinâmica, obstrução urinária concomitante (pionefrose) ou ausência de melhora após 48-72h de antibiótico adequado</span> exige investigação de imagem urgente para excluir abscesso renal/perirrenal ou obstrução — nesses casos, drenagem urgente (nefrostomia ou cateter ureteral) é necessária além do antibiótico, sob risco de sepse refratária."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre cistite (sintomas locais, sem febre) e pielonefrite (sintomas sistêmicos, Giordano positivo) é cobrança certa. É importante lembrar que a bacteriúria assintomática só deve ser tratada em situações específicas (gestação, procedimento urológico invasivo planejado) — tratar bacteriúria assintomática fora dessas indicações é conduta incorreta frequentemente testada como pegadinha de prova."
       }
     ]
   },
@@ -8172,7 +8228,7 @@
     "titulo": "Doença Vascular Renal",
     "resumo": "Estenose de artéria renal, ateroembolismo por cristais de colesterol e oclusão arterial aguda renal — causas vasculares de disfunção renal e hipertensão secundária.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Nefrologia; KDIGO — Clinical Practice Guidelines",
+    "fonte": "Sociedade Brasileira de Nefrologia; KDIGO Clinical Practice Guidelines",
     "mnemonicos": [
       {
         "palavra": "IECA piora, estenose bilateral suspeita",
@@ -8181,24 +8237,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Estenose de artéria renal",
-        "conteudo": "Principal causa é a aterosclerose (idosos, fatores de risco cardiovascular); displasia fibromuscular é mais comum em mulheres jovens. Suspeitar em hipertensão de início súbito ou refratária, piora da função renal com IECA/BRA, ou assimetria renal em exame de imagem."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A estenose de artéria renal reduz a perfusão renal, ativando cronicamente o sistema renina-angiotensina-aldosterona como mecanismo compensatório para manter a pressão de filtração glomerular — mecanismo que, paradoxalmente, causa hipertensão arterial sistêmica sustentada. Principal causa é a aterosclerose (idosos, fatores de risco cardiovascular, tipicamente lesão ostial/proximal); displasia fibromuscular é mais comum em mulheres jovens (lesão mais distal, aspecto de \"colar de contas\" na angiografia). O ateroembolismo por cristais de colesterol ocorre após manipulação de grandes vasos ateroscleróticos (cateterismo, cirurgia vascular) ou anticoagulação, com embolização difusa de múltiplos cristais de colesterol a partir de placas proximais instáveis. A oclusão arterial aguda renal é geralmente embólica (fibrilação atrial) ou trombótica sobre lesão preexistente."
       },
       {
-        "titulo": "Ateroembolismo por cristais de colesterol",
-        "conteudo": "Ocorre após manipulação de grandes vasos (cateterismo, cirurgia vascular) ou anticoagulação, com embolização de múltiplos cristais de colesterol de placas ateroscleróticas. Quadro clássico: livedo reticular, dedos azuis (\"blue toe syndrome\") e piora renal subaguda, dias a semanas após o procedimento."
+        "titulo": "Quadro clínico",
+        "conteudo": "Estenose de artéria renal deve ser suspeitada em hipertensão de início súbito ou refratária a múltiplas drogas, especialmente em jovens (displasia fibromuscular) ou idosos ateroscleróticos com doença vascular em outros territórios. Ateroembolismo por colesterol manifesta-se dias a semanas após o procedimento vascular desencadeante, com piora renal subaguda associada a manifestações extrarrenais (livedo reticular, isquemia digital). Oclusão arterial aguda causa dor em flanco de início súbito, podendo simular cólica renal ou outras causas de abdome agudo."
       },
       {
-        "titulo": "Oclusão arterial aguda renal",
-        "conteudo": "Geralmente embólica (fibrilação atrial) ou trombótica sobre lesão preexistente. Manifesta-se com dor em flanco de início súbito, hematúria e elevação de desidrogenase lática (LDH), podendo levar à perda funcional do rim acometido se não revascularizado precocemente."
+        "titulo": "Exame físico",
+        "conteudo": "Sopro abdominal (epigástrico, com irradiação para os flancos) pode ser auscultado na estenose de artéria renal, embora com sensibilidade limitada. No ateroembolismo por colesterol, livedo reticular e \"blue toe syndrome\" (dedos azulados, dolorosos, com pulsos periféricos preservados — diferenciando de embolia arterial franca) são achados característicos e devem ser ativamente procurados em paciente com piora renal pós-procedimento vascular."
       },
       {
-        "titulo": "Diagnóstico e investigação",
-        "conteudo": "Angiotomografia ou angiorressonância renal são os exames de escolha para estenose de artéria renal; ultrassom com Doppler é útil como triagem inicial. Angiografia convencional permanece padrão-ouro e permite intervenção no mesmo tempo (angioplastia)."
+        "titulo": "Diagnóstico",
+        "conteudo": "Angiotomografia ou angiorressonância renal são os exames de escolha para diagnóstico de estenose de artéria renal, com boa sensibilidade e especificidade não invasivas; ultrassom com Doppler renal é útil como triagem inicial, operador-dependente. Angiografia convencional permanece padrão-ouro e permite intervenção terapêutica (angioplastia) no mesmo tempo do diagnóstico. No ateroembolismo por colesterol, eosinofilia e consumo transitório de complemento podem auxiliar; biópsia (renal ou de pele em área de livedo) confirma definitivamente ao evidenciar os cristais de colesterol biconvexos característicos."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Estenose de artéria renal por displasia fibromuscular geralmente responde bem à angioplastia, com resolução ou melhora significativa da hipertensão. Estenose aterosclerótica tem tratamento predominantemente clínico otimizado (controle de fatores de risco, IECA/BRA com monitorização cuidadosa da função renal), reservando-se revascularização a casos selecionados com deterioração renal progressiva ou hipertensão refratária grave, já que estudos randomizados não mostraram benefício consistente de revascularização de rotina sobre tratamento clínico isolado nessa etiologia. Ateroembolismo por colesterol não tem tratamento específico eficaz além de suporte e controle de fatores de risco — anticoagulação deve ser evitada/suspensa quando possível, pois pode perpetuar a embolização de novos cristais."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Piora aguda da função renal após início de IECA/BRA</span> ou após cateterismo/cirurgia vascular deve levantar suspeita imediata de doença vascular renal, com necessidade de investigação e manejo específico."
+        "conteudo": "<span class=\"red-flag\">Piora aguda da função renal após início de IECA/BRA</span> deve levantar suspeita imediata de estenose de artéria renal bilateral (ou unilateral em rim único funcionante) — pela dependência da angiotensina II para manter a perfusão glomerular eferente nesses casos, o bloqueio do sistema renina-angiotensina precipita queda abrupta da filtração glomerular."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A piora renal após IECA/BRA como pista diagnóstica de estenose de artéria renal bilateral é cobrança certa e recorrente. O \"blue toe syndrome\" com pulsos periféricos preservados (diferente de embolia arterial aguda franca, onde os pulsos desaparecem) é o achado mais específico do ateroembolismo por colesterol cobrado em provas, geralmente em contexto de paciente recém-submetido a cateterismo."
       }
     ]
   },
@@ -8218,24 +8282,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Indicações de diálise de urgência",
-        "conteudo": "Hipercalemia refratária ao tratamento clínico, acidose metabólica grave refratária, sobrecarga volêmica refratária a diuréticos, sinais de uremia (pericardite urêmica, encefalopatia, sangramento) e intoxicações exógenas por substâncias dialisáveis."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As terapias de substituição renal suprem, artificialmente, as funções de depuração de solutos e de regulação do volume e do equilíbrio ácido-básico/eletrolítico que os rins não conseguem mais realizar adequadamente. A hemodiálise remove solutos por difusão através de uma membrana semipermeável em contato com o sangue extracorporalizado; a diálise peritoneal usa o próprio peritônio do paciente como membrana dialítica, com trocas de solução intraperitoneal; o transplante renal substitui integralmente a função renal por um órgão funcionante, sendo a única modalidade que restaura também as funções endócrinas do rim (eritropoetina, vitamina D ativa)."
       },
       {
-        "titulo": "Hemodiálise",
-        "conteudo": "Modalidade mais utilizada no Brasil, realizada em sessões intermitentes (geralmente 3x/semana) via acesso vascular (fístula arteriovenosa é o acesso definitivo de escolha; cateter venoso central para necessidade imediata). Remoção rápida de solutos e volume, com risco de instabilidade hemodinâmica intradialítica."
+        "titulo": "Quadro clínico",
+        "conteudo": "A indicação de terapia renal substitutiva surge tipicamente no contexto de doença renal crônica em estágio terminal sintomática (uremia, sobrecarga volêmica refratária) ou de lesão renal aguda com critérios de urgência dialítica. O mnemônico AEIOU resume as indicações clássicas de diálise de urgência: Acidose metabólica refratária, distúrbios Eletrolíticos graves (hipercalemia refratária), Intoxicação exógena por substância dialisável, sobrecarga de volume (Overload) refratária a diurético, e Uremia sintomática (pericardite, encefalopatia, sangramento urêmico)."
       },
       {
-        "titulo": "Diálise peritoneal",
-        "conteudo": "Utiliza o peritônio como membrana de filtração, com trocas contínuas ou automatizadas domiciliares. Maior autonomia do paciente e preservação de função renal residual, mas com risco de peritonite associada ao procedimento como principal complicação."
+        "titulo": "Exame físico",
+        "conteudo": "Sinais de uremia avançada (hálito urêmico, atrito pericárdico por pericardite urêmica, alteração do sensório) reforçam a indicação de diálise não protelável. Em pacientes já em programa de hemodiálise, avaliação do acesso vascular (frêmito e sopro em fístula arteriovenosa funcionante) é rotina do exame físico direcionado."
       },
       {
-        "titulo": "Transplante renal",
-        "conteudo": "Melhor opção terapêutica em termos de sobrevida e qualidade de vida para doença renal crônica terminal elegível, quando comparado às modalidades dialíticas crônicas. Requer imunossupressão contínua e acompanhamento para rejeição e infecções oportunistas."
+        "titulo": "Diagnóstico",
+        "conteudo": "A avaliação para indicação de terapia renal substitutiva combina critérios laboratoriais (potássio, gasometria, ureia/creatinina), clínicos (sinais de uremia, refratariedade a tratamento clínico) e de volume (resposta a diurético). Não há um valor isolado de creatinina ou ureia que indique diálise por si só — a decisão é sempre contextual, combinando a velocidade de instalação, os sintomas e a resposta a medidas conservadoras prévias."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Hemodiálise é a modalidade mais utilizada no Brasil, realizada em sessões intermitentes (geralmente 3x/semana) via acesso vascular — fístula arteriovenosa é o acesso definitivo de escolha por menor risco de infecção e maior durabilidade comparada a cateteres, exigindo maturação de semanas antes do primeiro uso. Diálise peritoneal oferece maior autonomia domiciliar e preservação de função renal residual, com peritonite associada ao procedimento como principal complicação. O transplante renal (de doador vivo ou falecido) é a opção com melhor sobrevida e qualidade de vida entre as modalidades para doença renal crônica terminal elegível, mas requer imunossupressão contínua com risco de infecções oportunistas e rejeição."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hipercalemia grave com alterações eletrocardiográficas</span> ou <span class=\"red-flag\">sinais de uremia sintomática</span> configuram emergência dialítica, com necessidade de diálise não protelável."
+        "conteudo": "<span class=\"red-flag\">Hipercalemia grave com alterações eletrocardiográficas ou sinais de uremia sintomática (pericardite, encefalopatia, sangramento)</span> configuram emergência dialítica, com necessidade de diálise não protelável independentemente de o paciente já estar ou não em programa dialítico crônico estabelecido."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O mnemônico AEIOU para indicações de diálise de urgência é cobrança praticamente garantida. A preferência pela fístula arteriovenosa como acesso definitivo (versus cateter, reservado a necessidade imediata) e a superioridade do transplante renal em sobrevida sobre as modalidades dialíticas crônicas também são pontos frequentemente testados."
       }
     ]
   },
