@@ -3458,6 +3458,10 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Monoartrite aguda associada a febre</span> exige sempre excluir artrite séptica por punção articular antes de assumir se tratar de crise de gota, pois as duas condições podem ser clinicamente indistinguíveis."
+      },
+      {
+        "titulo": "Pseudogota (condrocalcinose)",
+        "conteudo": "A pseudogota (doença por depósito de cristais de pirofosfato de cálcio) mimetiza clinicamente a gota, mas os cristais têm birrefringência POSITIVA à luz polarizada (ao contrário do urato, negativo) e acomete mais comumente o joelho, associada a condrocalcinose visível na radiografia (calcificação da cartilagem articular). É mais comum em idosos e pode estar associada a distúrbios metabólicos (hiperparatireoidismo, hemocromatose)."
       }
     ]
   },
@@ -3680,6 +3684,10 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "Sintomas B (febre, sudorese noturna profusa, perda de peso maior que 10% em 6 meses) associados a linfadenopatia indicam maior estadiamento e pior prognóstico nos linfomas, exigindo investigação prioritária."
+      },
+      {
+        "titulo": "Mieloma múltiplo",
+        "conteudo": "Neoplasia de plasmócitos que produz imunoglobulina monoclonal (componente M), mais comum em idosos. Manifestações clássicas resumidas no acrônimo CRAB: hiperCalcemia, insuficiência Renal, Anemia e lesões ósseas líticas (Bone), com dor óssea e risco de fraturas patológicas. Eletroforese de proteínas séricas identifica o pico monoclonal; a investigação inclui mielograma e radiografia do esqueleto (lesões líticas em \"saca-bocado\")."
       }
     ]
   },
@@ -6533,6 +6541,117 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Hipocalcemia grave com prolongamento do intervalo QT</span> predispõe a arritmias ventriculares graves (torsades de pointes) e tetania — repor cálcio intravenoso é prioridade em quadros sintomáticos graves."
+      }
+    ]
+  },
+  {
+    "id": "vasculites",
+    "area": "residencia",
+    "categoria": "Reumatologia",
+    "titulo": "Vasculites Sistêmicas",
+    "resumo": "Classificação por tamanho de vaso e a emergência da arterite de células gigantes (risco de cegueira).",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Reumatologia — Diretrizes de Vasculites; EULAR Recommendations for the Management of Large Vessel Vasculitis",
+    "mnemonicos": [
+      {
+        "palavra": "Temporal cega, não espera biópsia",
+        "explicacao": "Na suspeita de arterite de células gigantes (temporal), o corticoide em altas doses é iniciado IMEDIATAMENTE, antes mesmo da biópsia de artéria temporal — o risco de cegueira irreversível não permite esperar a confirmação histológica."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Classificação por tamanho de vaso",
+        "conteudo": "Pequenos vasos: granulomatose com poliangiite (Wegener), poliangiite microscópica, granulomatose eosinofílica (Churg-Strauss), púrpura de Henoch-Schönlein (mais comum em crianças). Médios vasos: poliarterite nodosa, doença de Kawasaki (pediátrica). Grandes vasos: arterite de Takayasu (mulheres jovens) e arterite de células gigantes (idosos)."
+      },
+      {
+        "titulo": "Granulomatose com poliangiite",
+        "conteudo": "Tríade clássica de acometimento de vias aéreas superiores (sinusite crônica, perfuração de septo nasal), pulmonar (nódulos/cavitações) e renal (glomerulonefrite rapidamente progressiva). ANCA-c/anti-proteinase 3 positivo na maioria dos casos."
+      },
+      {
+        "titulo": "Arterite de células gigantes e polimialgia reumática",
+        "conteudo": "A arterite de células gigantes acomete predominantemente a artéria temporal em idosos, causando cefaleia temporal, claudicação de mandíbula e risco de cegueira súbita irreversível. Frequentemente associada à polimialgia reumática (dor e rigidez em cinturas escapular/pélvica, com VHS muito elevada)."
+      },
+      {
+        "titulo": "Arterite de Takayasu",
+        "conteudo": "Acomete aorta e seus ramos principais, predominantemente mulheres jovens. Causa claudicação de membros, assimetria de pulsos e de pressão arterial entre os membros — a chamada \"doença sem pulso\"."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Cefaleia temporal nova em idoso associada a claudicação de mandíbula</span> é emergência oftalmológica/reumatológica — corticoide em altas doses deve ser iniciado imediatamente para prevenir cegueira irreversível."
+      }
+    ]
+  },
+  {
+    "id": "colagenoses-esclerodermia-miopatias",
+    "area": "residencia",
+    "categoria": "Reumatologia",
+    "titulo": "Colagenoses: Esclerodermia, Miopatias Inflamatórias e Síndrome de Sjögren",
+    "resumo": "Esclerose sistêmica (CREST x difusa), dermatomiosite/polimiosite e a associação da dermatomiosite com neoplasia oculta.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Reumatologia — Diretrizes de Esclerose Sistêmica e Miopatias Inflamatórias; ACR/EULAR Classification Criteria",
+    "mnemonicos": [
+      {
+        "palavra": "CREST",
+        "explicacao": "Forma limitada da esclerose sistêmica: Calcinose, fenômeno de Raynaud, dismotilidade Esofágica, esclerodactilia, Telangiectasias — melhor prognóstico que a forma difusa."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Esclerose sistêmica (esclerodermia)",
+        "conteudo": "Espessamento e fibrose cutânea progressiva, associada a fenômeno de Raynaud (quase universal) e acometimento visceral (esôfago, pulmão, rim). Forma limitada (CREST) x forma difusa (acometimento cutâneo mais extenso e progressão visceral mais rápida)."
+      },
+      {
+        "titulo": "Miopatias inflamatórias",
+        "conteudo": "Dermatomiosite e polimiosite causam fraqueza muscular proximal simétrica e progressiva, com elevação de enzimas musculares (CPK). A dermatomiosite associa achados cutâneos característicos — heliotropo e pápulas de Gottron — e tem associação relevante com neoplasias ocultas, justificando rastreamento oncológico ao diagnóstico."
+      },
+      {
+        "titulo": "Síndrome de Sjögren",
+        "conteudo": "Doença autoimune que acomete predominantemente glândulas exócrinas, causando xerostomia e xeroftalmia (ceratoconjuntivite sicca). Pode ser primária ou secundária a outra doença autoimune (mais comumente AR ou LES); risco aumentado de linfoma não Hodgkin a longo prazo."
+      },
+      {
+        "titulo": "Doença mista do tecido conjuntivo",
+        "conteudo": "Sobreposição de características de LES, esclerodermia e miopatia inflamatória, fortemente associada a anticorpo anti-RNP em título elevado."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Crise renal esclerodérmica</span> (hipertensão maligna de início abrupto com lesão renal aguda) é complicação grave da esclerose sistêmica difusa — o IECA é o tratamento de escolha, mesmo com função renal comprometida."
+      }
+    ]
+  },
+  {
+    "id": "hemoterapia-hemocomponentes",
+    "area": "residencia",
+    "categoria": "Hematologia",
+    "titulo": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "resumo": "Indicações dos principais hemocomponentes e a conduta imediata diante de suspeita de reação transfusional.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Guia para Uso de Hemocomponentes; AABB Standards for Blood Banks and Transfusion Services",
+    "mnemonicos": [
+      {
+        "palavra": "Pare, verifique, investigue",
+        "explicacao": "Diante de qualquer sinal sugestivo de reação transfusional, a conduta inicial é sempre a mesma: PARAR a transfusão imediatamente, VERIFICAR a identificação do paciente e da bolsa, e INVESTIGAR a causa antes de decidir como prosseguir."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Principais hemocomponentes",
+        "conteudo": "Concentrado de hemácias (repor capacidade de transporte de oxigênio, geralmente com Hb <7g/dL em paciente estável), concentrado de plaquetas (sangramento ativo com plaquetopenia ou profilaxia pré-procedimento), plasma fresco congelado (repor múltiplos fatores de coagulação) e crioprecipitado (rico em fibrinogênio e fator VIII)."
+      },
+      {
+        "titulo": "Reação transfusional hemolítica aguda",
+        "conteudo": "A mais grave, geralmente por incompatibilidade ABO. Febre, calafrios, dor lombar, hipotensão e hemoglobinúria durante ou logo após a transfusão — interromper a transfusão imediatamente diante de qualquer sinal suspeito."
+      },
+      {
+        "titulo": "Reação febril não hemolítica",
+        "conteudo": "A reação transfusional mais comum, por anticorpos contra leucócitos residuais do doador. Febre e calafrios sem hemólise, tratada com antitérmico; uso de filtro leucorredutor reduz recorrência."
+      },
+      {
+        "titulo": "TRALI",
+        "conteudo": "Lesão pulmonar aguda relacionada à transfusão: insuficiência respiratória aguda hipoxêmica durante ou até 6 horas após a transfusão, semelhante a uma SDRA — quadro grave que exige suporte ventilatório."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Febre, dor lombar e hipotensão logo após início da transfusão</span> devem levar à interrupção IMEDIATA da transfusão e investigação de reação hemolítica aguda — a demora agrava significativamente o desfecho."
       }
     ]
   }
