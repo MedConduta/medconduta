@@ -1886,7 +1886,7 @@
     "titulo": "Hérnias de Parede Abdominal",
     "resumo": "Tipos mais comuns, diferenciação entre encarceramento/estrangulamento e conduta.",
     "revisado": false,
-    "fonte": "European Hernia Society Guidelines; Colegio Brasileiro de Cirurgioes",
+    "fonte": "Colégio Brasileiro de Cirurgiões; European Hernia Society Guidelines",
     "mnemonicos": [
       {
         "palavra": "REDUTÍVEL → ENCARCERADA → ESTRANGULADA",
@@ -1895,24 +1895,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Tipos mais comuns",
-        "conteudo": "Hérnia inguinal (a mais frequente), umbilical, incisional (em cicatriz cirúrgica prévia) e femoral."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As hérnias de parede abdominal resultam de um defeito na fáscia/musculatura que permite a protrusão de conteúdo intra-abdominal (geralmente epíplon ou alça intestinal) através do orifício. As hérnias inguinais são as mais comuns, subdivididas em indiretas (mais comuns, congênitas, através do anel inguinal profundo, seguindo o trajeto do funículo espermático) e diretas (adquiridas, por fraqueza da parede posterior do canal inguinal, através do triângulo de Hesselbach). Hérnias podem ser redutíveis (conteúdo retorna à cavidade), encarceradas (presas, sem redução, mas sem comprometimento vascular) ou estranguladas (com comprometimento vascular do conteúdo herniado, configurando emergência)."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Abaulamento na parede abdominal, que pode ser redutível (retorna à cavidade manualmente) ou irredutível (encarcerada)."
+        "conteudo": "Abaulamento na região inguinal, umbilical ou em cicatriz cirúrgica prévia (hérnia incisional), que aumenta com manobras de Valsalva (tosse, esforço) e geralmente reduz espontaneamente ao deitar-se, é a apresentação típica das hérnias redutíveis não complicadas. Dor súbita e intensa associada a abaulamento que não reduz mais, com náuseas/vômitos, sugere encarceramento ou estrangulamento."
       },
       {
-        "titulo": "Conduta",
-        "conteudo": "Hérnias redutíveis e assintomáticas podem ser tratadas eletivamente; hérnias encarceradas ou estranguladas exigem intervenção em caráter de urgência."
+        "titulo": "Exame físico",
+        "conteudo": "Abaulamento palpável que se exacerba com manobra de Valsalva e reduz com pressão manual suave caracteriza hérnia não complicada. Massa herniária dolorosa, tensa, não redutível, com sinais de irritação da pele sobrejacente (eritema) sugere estrangulamento — emergência cirúrgica que não deve ser tentada redução manual forçada pelo risco de reintroduzir conteúdo já necrótico na cavidade abdominal."
       },
       {
-        "titulo": "Complicações",
-        "conteudo": "O estrangulamento compromete o suprimento sanguíneo do conteúdo herniário, podendo evoluir para necrose intestinal se não tratado rapidamente."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é predominantemente clínico pela inspeção e palpação dirigida, incluindo a manobra de Valsalva para evidenciar hérnias de menor volume. Ultrassonografia ou tomografia são reservadas a casos de dúvida diagnóstica (obesidade dificultando o exame físico, ou suspeita de complicação não totalmente esclarecida pela clínica)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Hérnias sintomáticas ou de risco significativo de complicação têm indicação de correção cirúrgica eletiva (herniorrafia, geralmente com uso de tela para reforço da parede, reduzindo taxa de recidiva comparado à sutura primária isolada). Hérnia encarcerada sem sinais de estrangulamento pode ser submetida a tentativa cuidadosa de redução manual seguida de cirurgia eletiva precoce; hérnia estrangulada é emergência cirúrgica absoluta, com avaliação da viabilidade do conteúdo herniado (e eventual ressecção se necrótico) no momento da correção."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor intensa associada a hérnia irredutível, com sinais de sofrimento de alça</span> indica estrangulamento — cirurgia de urgência."
+        "conteudo": "<span class=\"red-flag\">Hérnia dolorosa, não redutível, com sinais inflamatórios locais e comprometimento sistêmico (náuseas, vômitos, febre)</span> caracteriza estrangulamento herniário, emergência cirúrgica absoluta — a tentativa de redução manual forçada é contraindicada nesse cenário pelo risco de reintroduzir segmento intestinal necrótico na cavidade peritoneal."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre hérnia inguinal indireta (congênita, através do anel inguinal profundo) e direta (adquirida, triângulo de Hesselbach) é cobrança certa. A distinção entre hérnia encarcerada (correção eletiva possível após tentativa de redução) e estrangulada (cirurgia de urgência absoluta, sem tentativa de redução manual) também é ponto central e recorrente."
       }
     ]
   },
@@ -1923,7 +1931,7 @@
     "titulo": "Cuidados Pré e Pós-operatórios",
     "resumo": "Avaliação de risco cirúrgico, cuidados pós-operatórios e complicações mais comuns.",
     "revisado": false,
-    "fonte": "American Society of Anesthesiologists (ASA) Physical Status Classification; Colegio Brasileiro de Cirurgioes",
+    "fonte": "Colégio Brasileiro de Cirurgiões; ERAS Society Guidelines (Enhanced Recovery After Surgery)",
     "mnemonicos": [
       {
         "palavra": "ASA I-V",
@@ -1932,24 +1940,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Avaliação pré-operatória",
-        "conteudo": "Classificação ASA de risco anestésico-cirúrgico, jejum pré-operatório adequado e otimização de comorbidades antes de procedimentos eletivos."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A resposta metabólica ao trauma cirúrgico envolve ativação neuro-hormonal (cortisol, catecolaminas) que causa hiperglicemia, catabolismo proteico e retenção de sódio/água nos primeiros dias pós-operatórios, seguida de fase anabólica de recuperação. Os protocolos ERAS (Enhanced Recovery After Surgery) buscam atenuar essa resposta catabólica através de intervenções multimodais em todas as fases perioperatórias, acelerando a recuperação funcional e reduzindo complicações e tempo de internação."
       },
       {
-        "titulo": "Cuidados pós-operatórios imediatos",
-        "conteudo": "Analgesia adequada, mobilização precoce e profilaxia de tromboembolismo venoso (mecânica e/ou farmacológica, conforme risco)."
+        "titulo": "Quadro clínico",
+        "conteudo": "A avaliação pré-operatória busca identificar comorbidades que aumentam o risco cirúrgico (cardiopatia, pneumopatia, diabetes descompensado, uso de anticoagulantes) para otimização antes do procedimento eletivo. No pós-operatório, febre, dor não controlada, náuseas/vômitos persistentes e sinais de complicação de ferida operatória (secreção, deiscência) são achados que exigem investigação e conduta direcionada conforme o momento da evolução pós-operatória."
       },
       {
-        "titulo": "Complicações pós-operatórias mais comuns",
-        "conteudo": "Febre pós-operatória (investigar conforme o tempo decorrido desde a cirurgia), infecção de sítio cirúrgico e complicações respiratórias (atelectasia)."
+        "titulo": "Exame físico",
+        "conteudo": "A avaliação seriada da ferida operatória (sinais flogísticos, secreção, deiscência), da função intestinal (retorno de ruídos hidroaéreos e eliminação de flatos, marcadores clássicos de retorno da motilidade) e dos sinais vitais compõe o acompanhamento pós-operatório de rotina, direcionando a progressão da dieta e a alta hospitalar."
       },
       {
-        "titulo": "Deiscência de sutura",
-        "conteudo": "Separação das bordas da ferida operatória, podendo evoluir para evisceração nos casos mais graves, exigindo reabordagem cirúrgica."
+        "titulo": "Diagnóstico",
+        "conteudo": "A avaliação de risco cirúrgico pré-operatório utiliza classificações padronizadas (ASA — American Society of Anesthesiologists) que estratificam o risco anestésico-cirúrgico global do paciente, orientando o nível de monitorização perioperatória necessário. No pós-operatório, febre nos primeiros dias exige investigação sistemática guiada pelo tempo decorrido desde a cirurgia (os \"5 Ws\" mnemônicos: Wind — atelectasia/pneumonia, primeiras 48h; Water — infecção urinária, 3º-5º dia; Walking — TVP/TEP, 5º-7º dia; Wound — infecção de ferida operatória, 5º-7º dia; Wonder drugs — febre medicamentosa, qualquer momento)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Protocolos de recuperação acelerada (ERAS) recomendam jejum pré-operatório abreviado (carboidratos até 2 horas antes da cirurgia, em vez do jejum prolongado tradicional), analgesia multimodal poupadora de opioides, mobilização precoce e reintrodução precoce da dieta oral no pós-operatório — abordagem que reduz complicações e tempo de internação comparada às condutas tradicionais mais conservadoras. Profilaxia de trombose venosa profunda (mecânica e/ou farmacológica, conforme risco individual) deve ser sistematicamente considerada em todo paciente cirúrgico."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sinais de deiscência de sutura/evisceração ou infecção grave de sítio cirúrgico</span> exigem avaliação cirúrgica imediata."
+        "conteudo": "Febre associada a taquicardia e dor abdominal desproporcional no pós-operatório de cirurgia gastrointestinal deve levantar suspeita de deiscência de anastomose com peritonite secundária, complicação grave que exige investigação de imagem urgente e frequentemente reoperação."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O mnemônico dos \"5 Ws\" para investigação sistemática de febre pós-operatória conforme o tempo decorrido da cirurgia é cobrança certa e muito recorrente em provas de residência. Os princípios do protocolo ERAS (jejum abreviado, mobilização e dieta precoces) como atualização de prática cirúrgica também são frequentemente exigidos."
       }
     ]
   },
@@ -4660,7 +4676,7 @@
     "titulo": "Doença Hemorroidária",
     "resumo": "Hemorroidas internas x externas, graduação do prolapso e escada terapêutica do tratamento clínico à cirurgia.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Coloproctologia; ASCRS Clinical Practice Guidelines for Hemorrhoids",
+    "fonte": "Sociedade Brasileira de Coloproctologia; ASCRS Clinical Practice Guidelines for the Management of Hemorrhoids",
     "mnemonicos": [
       {
         "palavra": "Interna não dói, Externa dói",
@@ -4669,24 +4685,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação",
-        "conteudo": "Hemorroidas internas: acima da linha pectínea, revestidas por mucosa, geralmente indolores, classificadas em graus I a IV conforme o grau de prolapso. Hemorroidas externas: abaixo da linha pectínea, revestidas por pele anoderme, ricamente inervadas — por isso dolorosas quando trombosadas."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença hemorroidária resulta do ingurgitamento e prolapso dos coxins vasculares anais normais, favorecido por aumento crônico da pressão intra-abdominal/intra-anal (constipação com esforço evacuatório, gestação, obesidade). Hemorroidas internas (acima da linha pectínea, revestidas por mucosa, sem inervação sensitiva somática) são classificadas em graus I a IV conforme o grau de prolapso; hemorroidas externas (abaixo da linha pectínea, revestidas por pele, ricamente inervadas) causam dor quando trombosadas."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Sangramento vermelho vivo ao evacuar, tipicamente sem dor nas hemorroidas internas, ou dor aguda intensa associada a nódulo perianal palpável, sugestivo de trombose hemorroidária externa."
+        "conteudo": "Hemorroidas internas manifestam-se classicamente com sangramento vermelho vivo indolor ao evacuar (frequentemente notado no papel higiênico ou gotejando no vaso) e, conforme o grau, prolapso durante ou após a evacuação. Hemorroida externa trombosada manifesta-se com dor anal aguda e intensa, associada a nódulo perianal palpável — a dor é a principal diferença clínica em relação à hemorroida interna, que é tipicamente indolor pela ausência de inervação sensitiva na mucosa retal."
       },
       {
-        "titulo": "Tratamento clínico",
-        "conteudo": "Medidas dietéticas (fibras, hidratação adequada), banho de assento morno, pomadas tópicas e correção do hábito intestinal são a base do tratamento para os graus iniciais."
+        "titulo": "Exame físico",
+        "conteudo": "Inspeção perianal e toque retal (embora hemorroidas internas de baixo grau frequentemente não sejam palpáveis ao toque) complementam a anuscopia, exame de escolha para visualização direta e graduação das hemorroidas internas. Hemorroida externa trombosada apresenta-se como nódulo perianal azulado, tenso e extremamente doloroso à palpação, achado que confirma o diagnóstico clinicamente sem necessidade de exames adicionais."
       },
       {
-        "titulo": "Tratamento intervencionista",
-        "conteudo": "Ligadura elástica para hemorroidas internas graus I-III refratárias ao tratamento clínico. Hemorroidectomia cirúrgica reservada para grau IV ou falha de tratamentos menos invasivos. Trombose hemorroidária externa muito dolorosa e recente pode se beneficiar de excisão do trombo em ambiente ambulatorial."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é predominantemente clínico, com anuscopia confirmando e graduando hemorroidas internas. É fundamental excluir outras causas de sangramento retal, especialmente neoplasia colorretal, em pacientes com fatores de risco (idade acima de 45-50 anos, sangramento com mudança de hábito intestinal, ou história familiar) — atribuir precipitadamente todo sangramento retal a hemorroidas sem investigação adicional em paciente de risco é erro potencialmente grave."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Medidas conservadoras (dieta rica em fibras, hidratação adequada, banhos de assento) são a base do tratamento para a maioria dos casos leves a moderados. Ligadura elástica é o tratamento ambulatorial mais utilizado para hemorroidas internas graus I-III refratárias a medidas conservadoras. Hemorroidectomia cirúrgica é reservada a hemorroidas grau IV, casos refratários a tratamentos menos invasivos, ou hemorroida externa trombosada muito sintomática (excisão do trombo traz alívio rápido quando realizada nas primeiras 72 horas do início da dor)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sangramento retal em paciente acima de 45-50 anos ou com fatores de risco</span> não deve ser atribuído automaticamente a hemorroidas sem antes excluir neoplasia colorretal por meio de exame proctológico/colonoscopia."
+        "conteudo": "<span class=\"red-flag\">Sangramento retal associado a mudança do hábito intestinal, perda de peso, ou idade acima de 45-50 anos</span> exige investigação colonoscópica para exclusão de neoplasia colorretal antes de atribuir definitivamente o sangramento apenas à doença hemorroidária, mesmo quando hemorroidas são visualizadas ao exame."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre hemorroida interna (indolor, sangramento vermelho vivo) e externa trombosada (dolorosa, nódulo palpável) pela presença ou ausência de dor é cobrança central. A necessidade de excluir neoplasia colorretal antes de atribuir sangramento retal apenas a hemorroidas em pacientes de risco também é ponto frequentemente exigido e considerado de alta relevância de segurança do paciente."
       }
     ]
   },
@@ -4697,7 +4721,7 @@
     "titulo": "Fissura Anal, Fístula Anal e Abscesso Anorretal",
     "resumo": "Fissura anal por trauma evacuatório, drenagem obrigatória do abscesso e a regra de Goodsall na fístula anal.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Coloproctologia; ASCRS Clinical Practice Guidelines",
+    "fonte": "Sociedade Brasileira de Coloproctologia; ASCRS Clinical Practice Guidelines for Anal Fissures and Anorectal Abscess/Fistula",
     "mnemonicos": [
       {
         "palavra": "Abscesso drena, antibiótico não cura sozinho",
@@ -4706,24 +4730,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fissura anal",
-        "conteudo": "Laceração linear do canal anal, quase sempre na linha média posterior, causada por trauma evacuatório (constipação, fezes endurecidas). Dor anal intensa em queimação durante e após a evacuação, associada a sangramento vivo discreto. Tratamento inicial clínico: amolecedores fecais, banho de assento e pomadas com nitrato ou bloqueador de canal de cálcio, para reduzir o espasmo esfincteriano."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A fissura anal resulta de laceração linear do canal anal distal à linha pectínea, mais comumente na linha média posterior, associada a espasmo do esfíncter anal interno que perpetua a isquemia local e dificulta a cicatrização espontânea (ciclo vicioso de dor-espasmo-isquemia). O abscesso anorretal origina-se da infecção das glândulas anais localizadas no espaço interesfincteriano, podendo se disseminar para diferentes espaços perianais/pélvicos. A fístula anal frequentemente representa a evolução crônica de um abscesso anorretal previamente drenado (espontânea ou cirurgicamente), mantendo um trajeto epitelizado entre o canal anal e a pele perianal."
       },
       {
-        "titulo": "Abscesso anorretal",
-        "conteudo": "Coleção purulenta originada geralmente de infecção de glândulas anais criptoglandulares. Dor perianal intensa e contínua, associada a febre e edema/hiperemia local. O tratamento é sempre a drenagem cirúrgica — antibiótico isolado não resolve uma coleção purulenta."
+        "titulo": "Quadro clínico",
+        "conteudo": "Fissura anal causa dor anal intensa em queimação/laceração durante e após a evacuação (podendo persistir por horas), frequentemente associada a sangramento vivo em pequena quantidade. Abscesso anorretal causa dor perianal constante e progressiva, associada a febre e, ao exame, tumefação/eritema local. Fístula anal manifesta-se com drenagem purulenta ou serossanguinolenta intermitente por orifício externo próximo ao ânus, com períodos de melhora e piora (reativação quando o trajeto se obstrui temporariamente)."
       },
       {
-        "titulo": "Fístula anal",
-        "conteudo": "Trajeto anômalo entre o canal anal e a pele perianal, frequentemente sequela de um abscesso anorretal previamente drenado (cerca de metade dos abscessos evolui para fístula). Tratamento cirúrgico: fistulotomia ou técnicas poupadoras de esfíncter, conforme a complexidade do trajeto."
+        "titulo": "Exame físico",
+        "conteudo": "A fissura anal é visualizada por afastamento delicado das nádegas, tipicamente na linha média posterior (fissuras atípicas, em outras localizações, devem levantar suspeita de causas secundárias como doença de Crohn, tuberculose ou neoplasia). Abscesso perianal apresenta-se como área de tumefação, eritema e flutuação à palpação. Fístula anal apresenta orifício externo visível, por vezes com expressão de secreção à compressão do trajeto."
       },
       {
-        "titulo": "Regra de Goodsall",
-        "conteudo": "Orienta a localização provável do orifício interno da fístula a partir do orifício externo: fístulas com orifício externo anterior a uma linha transversal imaginária tendem a ter trajeto retilíneo radial; as posteriores tendem a ter trajeto curvo convergindo para a linha média posterior."
+        "titulo": "Diagnóstico",
+        "conteudo": "Fissura anal e abscesso perianal têm diagnóstico predominantemente clínico pela inspeção e história característica, sem necessidade de exames complementares na maioria dos casos típicos. Fístula anal complexa pode requerer ressonância magnética pélvica ou ultrassonografia endoanal para mapear o trajeto fistuloso e sua relação com o complexo esfincteriano antes do planejamento cirúrgico, informação essencial para evitar lesão esfincteriana iatrogênica e incontinência fecal pós-operatória."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Fissura anal aguda é tratada inicialmente com medidas conservadoras (dieta rica em fibras, banhos de assento, pomadas relaxantes do esfíncter interno como nitroglicerina ou bloqueadores de canal de cálcio tópicos); esfincterotomia lateral interna é reservada a casos crônicos refratários ao tratamento clínico. Abscesso anorretal exige drenagem cirúrgica imediata (antibiótico isolado não é suficiente e não deve substituir a drenagem). Fístula anal é tratada por fistulotomia (quando o trajeto não compromete significativamente o esfíncter) ou técnicas mais complexas poupadoras de esfíncter em fístulas altas/complexas, para preservar a continência fecal."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Fissura anal atípica (fora da linha média, múltipla, ou que não cicatriza com tratamento adequado) deve levantar suspeita de causa secundária — doença de Crohn, tuberculose, HIV, neoplasia — e não simplesmente fissura idiopática."
+        "conteudo": "<span class=\"red-flag\">Dor perianal intensa e progressiva associada a febre e toxemia sistêmica</span> exige drenagem cirúrgica imediata de abscesso anorretal — o atraso na drenagem pode permitir disseminação para espaços profundos pélvicos (fascite necrosante perineal, síndrome de Fournier), condição de alta mortalidade se não reconhecida e tratada precocemente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A obrigatoriedade de drenagem cirúrgica (não apenas antibiótico) em todo abscesso anorretal é cobrança certa. Fissura anal em localização atípica (fora da linha média posterior) como sinal de alerta para doença secundária (Crohn, tuberculose, neoplasia) também é ponto frequentemente exigido em questões que testam diagnóstico diferencial."
       }
     ]
   },
@@ -4734,7 +4766,7 @@
     "titulo": "Câncer Colorretal: Diagnóstico e Estadiamento",
     "resumo": "Sequência adenoma-carcinoma, apresentação clínica frequentemente silenciosa e a base do rastreamento por colonoscopia.",
     "revisado": false,
-    "fonte": "Instituto Nacional de Câncer (INCA) — Diretrizes de Detecção Precoce do Câncer Colorretal; NCCN Guidelines for Colon and Rectal Cancer",
+    "fonte": "Instituto Nacional de Câncer (INCA); Sociedade Brasileira de Coloproctologia; NCCN Guidelines for Colon and Rectal Cancer",
     "mnemonicos": [
       {
         "palavra": "Adenoma vira Carcinoma",
@@ -4743,24 +4775,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fatores de risco",
-        "conteudo": "Idade avançada, história familiar/pessoal de pólipos adenomatosos ou câncer colorretal, síndromes hereditárias (polipose adenomatosa familiar, síndrome de Lynch), doença inflamatória intestinal de longa data e fatores dietéticos/estilo de vida (dieta pobre em fibras, rica em carne processada, tabagismo, obesidade)."
-      },
-      {
-        "titulo": "Sequência adenoma-carcinoma",
-        "conteudo": "A maioria dos cânceres colorretais esporádicos se desenvolve a partir de pólipos adenomatosos ao longo de anos, o que fundamenta a eficácia do rastreamento por colonoscopia com polipectomia na prevenção da doença, não apenas na sua detecção precoce."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O câncer colorretal desenvolve-se predominantemente através da sequência adenoma-carcinoma, na qual pólipos adenomatosos acumulam mutações genéticas progressivas ao longo de anos até a transformação maligna — processo que fundamenta a eficácia do rastreamento colonoscópico com remoção de pólipos na prevenção do câncer. Síndromes hereditárias (polipose adenomatosa familiar, síndrome de Lynch) representam uma minoria dos casos, mas conferem risco muito elevado e exigem rastreamento diferenciado e mais precoce."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Frequentemente assintomático em fases iniciais, reforçando a importância do rastreamento. Sintomas incluem mudança do hábito intestinal, sangramento retal/melena, anemia ferropriva inexplicada (especialmente em tumores de cólon direito) e, em fases avançadas, obstrução intestinal ou perda de peso."
+        "conteudo": "Sangramento retal, mudança do hábito intestinal (constipação ou diarreia de início recente), dor abdominal e perda de peso são as manifestações mais comuns, porém tardias na maioria dos casos. Tumores de cólon direito frequentemente se manifestam com anemia ferropriva por sangramento oculto crônico (sangue não visível macroscopicamente), enquanto tumores de cólon esquerdo/reto tendem a causar sintomas obstrutivos e sangramento mais visível, pela menor luz e fezes mais sólidas nesse segmento."
       },
       {
-        "titulo": "Estadiamento e tratamento",
-        "conteudo": "Colonoscopia com biópsia confirma o diagnóstico. Tomografia de tórax/abdome/pelve avalia extensão locorregional e metástases (fígado e pulmão são os sítios mais comuns). O tratamento cirúrgico (ressecção do segmento acometido com linfadenectomia) é a base, associado a quimioterapia adjuvante conforme o estadiamento."
+        "titulo": "Exame físico",
+        "conteudo": "Massa abdominal palpável (mais comum em tumores de cólon direito, de maior volume ao diagnóstico) e massa retal ao toque retal (em tumores de reto baixo/médio) podem estar presentes. Sinais de doença avançada (caquexia, hepatomegalia nodular sugerindo metástases hepáticas, ascite) indicam pior prognóstico e frequentemente doença já disseminada ao diagnóstico."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Colonoscopia com biópsia é o exame padrão-ouro, tanto diagnóstico quanto terapêutico (permite ressecção de pólipos durante o mesmo procedimento). O rastreamento populacional é recomendado a partir dos 45-50 anos em indivíduos de risco médio (pesquisa de sangue oculto fecal anual ou colonoscopia a cada 10 anos, conforme o método escolhido), com início mais precoce em indivíduos de alto risco (história familiar, síndromes hereditárias, doença inflamatória intestinal de longa data). O antígeno carcinoembrionário (CEA) não é útil para rastreamento, mas é utilizado no seguimento pós-tratamento para monitorização de recidiva."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Ressecção cirúrgica com margens oncológicas adequadas e linfadenectomia regional é o tratamento primário em doença localizada. Quimioterapia adjuvante é indicada conforme o estadiamento (acometimento linfonodal, entre outros fatores). Câncer de reto localmente avançado frequentemente recebe quimiorradioterapia neoadjuvante (antes da cirurgia) para reduzir o tumor e melhorar as taxas de preservação esfincteriana e controle local da doença."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Anemia ferropriva inexplicada</span> em homem ou mulher na pós-menopausa deve sempre motivar investigação do trato gastrointestinal, incluindo colonoscopia, para excluir neoplasia colorretal, mesmo sem outros sintomas."
+        "conteudo": "<span class=\"red-flag\">Anemia ferropriva inexplicada em homem adulto ou mulher pós-menopausa</span> exige investigação colonoscópica obrigatória para exclusão de neoplasia de cólon direito, mesmo na ausência completa de sintomas gastrointestinais evidentes, pela apresentação frequentemente silenciosa desses tumores."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A sequência adenoma-carcinoma como base biológica do rastreamento colonoscópico é cobrança central. A diferenciação de apresentação entre tumores de cólon direito (anemia por sangramento oculto) e esquerdo/reto (obstrução, sangramento visível, mudança de hábito intestinal) também é frequentemente exigida, assim como as recomendações atualizadas de início de rastreamento (hoje a partir dos 45 anos em muitas diretrizes atuais, mais precoce que a recomendação histórica de 50 anos)."
       }
     ]
   },
@@ -4816,7 +4856,7 @@
     "titulo": "Doença Arterial Obstrutiva Periférica (DAOP)",
     "resumo": "Claudicação intermitente, índice tornozelo-braquial e diferenciação da isquemia aguda de membro.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; ESC/ESVS Guidelines on Peripheral Arterial Diseases 2024",
+    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; ESC/ESVS Guidelines on Peripheral Arterial Diseases",
     "mnemonicos": [
       {
         "palavra": "6 P's da isquemia aguda",
@@ -4825,24 +4865,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia e fatores de risco",
-        "conteudo": "Aterosclerose das artérias dos membros, predominantemente inferiores, compartilhando fatores de risco com a doença coronariana — tabagismo (o mais fortemente associado), diabetes, hipertensão e dislipidemia."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença arterial obstrutiva periférica resulta de aterosclerose progressiva das artérias dos membros (mais comumente inferiores), reduzindo o fluxo sanguíneo e causando isquemia tecidual proporcional à gravidade da obstrução e à demanda metabólica (esforço versus repouso). Compartilha os mesmos fatores de risco cardiovascular de outras manifestações ateroscleróticas (tabagismo é particularmente forte nesse território, diabetes, hipertensão, dislipidemia), e sua presença sinaliza doença aterosclerótica sistêmica com risco cardiovascular global elevado, não apenas risco local do membro."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Claudicação intermitente (dor tipo cãibra na panturrilha/coxa/nádega, desencadeada por caminhar uma distância reproduzível e aliviada pelo repouso) é o sintoma clássico. Em estágios avançados: dor em repouso e lesões tróficas/úlceras que não cicatrizam (isquemia crítica de membro)."
+        "conteudo": "Claudicação intermitente (dor/cansaço muscular desencadeado por esforço/caminhada, aliviado com o repouso, em padrão reprodutível e previsível) é a manifestação clássica da doença moderada. Em estágios mais avançados, dor isquêmica em repouso (frequentemente noturna, aliviada ao pender o membro para fora da cama, pela ajuda gravitacional à perfusão) e lesões tróficas/úlceras que não cicatrizam caracterizam isquemia crítica de membro, com risco de perda de membro se não revascularizado."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Redução ou ausência de pulsos periféricos (pedioso, tibial posterior, poplíteo, conforme o nível da obstrução), pele fria e atrófica, rarefação de pelos, e palidez à elevação do membro com rubor de reperfusão ao pendê-lo (rubor postural) são achados característicos. Úlceras arteriais tipicamente localizam-se em pontos de maior pressão/trauma (extremidades dos dedos, calcanhar), dolorosas, com bordas bem definidas — diferentes das úlceras venosas."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Índice tornozelo-braquial (ITB) — relação entre a pressão sistólica no tornozelo e no braço — é o exame inicial de escolha. ITB <0,9 é diagnóstico de DAOP; ITB <0,4 sugere isquemia crítica."
+        "conteudo": "O índice tornozelo-braço (ITB, razão entre a PA sistólica do tornozelo e do braço) é o exame de triagem inicial não invasivo, com valores abaixo de 0,9 indicando doença arterial periférica significativa, e valores muito baixos (<0,4) sugerindo isquemia crítica. Angiotomografia ou angiografia por ressonância definem a anatomia vascular detalhada para planejamento de revascularização quando indicada."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Cessação do tabagismo e controle rigoroso dos fatores de risco cardiovascular são a base em todos os estágios. Exercício supervisionado melhora a distância de claudicação. Antiagregante plaquetário e estatina reduzem eventos cardiovasculares. Revascularização (endovascular ou cirúrgica) é reservada para claudicação incapacitante refratária ou isquemia crítica."
+        "conteudo": "Cessação do tabagismo e exercício físico supervisionado (caminhada regular) são intervenções de primeira linha com eficácia comprovada para claudicação intermitente, além do controle agressivo de todos os fatores de risco cardiovascular e uso de antiagregante plaquetário/estatina. Revascularização (angioplastia endovascular ou cirurgia de bypass) é indicada em claudicação incapacitante refratária ao tratamento clínico otimizado, ou em isquemia crítica de membro (dor em repouso, lesões tróficas), onde a revascularização é frequentemente urgente para evitar amputação."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor isquêmica em repouso associada a úlcera/necrose e pulsos ausentes</span> caracteriza isquemia crítica de membro, com risco de amputação — exige avaliação vascular urgente para revascularização."
+        "conteudo": "<span class=\"red-flag\">Dor isquêmica em repouso associada a lesões tróficas/necrose em membro com pulsos ausentes</span> caracteriza isquemia crítica, com risco iminente de perda do membro — exige avaliação vascular urgente para revascularização, não devendo ser tratada apenas com medidas conservadoras/analgesia prolongada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O índice tornozelo-braço e seus pontos de corte (normal, doença leve/moderada, isquemia crítica) são cobrança certa e recorrente. A diferenciação semiológica entre úlcera arterial (dolorosa, bordas definidas, extremidades) e venosa (menos dolorosa, região maleolar medial, associada a estase) também é frequentemente exigida em questões comparativas."
       }
     ]
   },
@@ -4853,7 +4901,7 @@
     "titulo": "Insuficiência Venosa Crônica e Varizes de Membros Inferiores",
     "resumo": "Classificação CEAP, quadro clínico da hipertensão venosa e tratamento da úlcera venosa por terapia compressiva.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; Classificação CEAP revisada 2020",
+    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; Classificação CEAP para Doença Venosa Crônica",
     "mnemonicos": [
       {
         "palavra": "Maléolo medial = Venosa",
@@ -4863,23 +4911,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "Disfunção das válvulas venosas (refluxo) e/ou obstrução do retorno venoso, levando a hipertensão venosa crônica nos membros inferiores. Fatores de risco: predisposição genética, sedentarismo, obesidade, gestações múltiplas e história de trombose venosa profunda prévia (síndrome pós-trombótica)."
+        "conteudo": "A insuficiência venosa crônica resulta da disfunção valvular das veias superficiais e/ou profundas dos membros inferiores (por incompetência valvular primária ou secundária a trombose venosa profunda prévia — síndrome pós-trombótica), permitindo refluxo venoso e hipertensão venosa crônica ambulatorial. Essa hipertensão venosa sustentada causa extravasamento de líquido e macromoléculas para o interstício, inflamação crônica e, progressivamente, alterações tróficas cutâneas características."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Sensação de peso e cansaço nos membros inferiores, que piora ao longo do dia e com ortostatismo prolongado, edema vespertino, varizes visíveis e, em estágios avançados, alterações cutâneas (dermatite ocre, lipodermatoesclerose) até úlcera venosa, tipicamente na região do maléolo medial."
+        "conteudo": "Sensação de peso e cansaço nos membros inferiores, que piora ao longo do dia (ortostatismo prolongado) e melhora com elevação do membro ou repouso, associada a edema vespertino e varizes visíveis. Em estágios avançados, hiperpigmentação (dermatite ocre), lipodermatoesclerose e úlceras venosas (tipicamente na região maleolar medial, menos dolorosas que as arteriais) caracterizam a doença crônica de longa evolução."
       },
       {
-        "titulo": "Classificação CEAP",
-        "conteudo": "Sistema que classifica a doença venosa crônica conforme achados Clínicos (C0-C6, sendo C6 a úlcera ativa), Etiológicos, Anatômicos e Patofisiológicos, padronizando a comunicação e orientando o tratamento."
+        "titulo": "Exame físico",
+        "conteudo": "Varizes visíveis e palpáveis, edema depressível de predomínio vespertino, e alterações cutâneas características (hiperpigmentação acastanhada/ocre, eczema de estase, lipodermatoesclerose com endurecimento da pele e tecido subcutâneo) na região perimaleolar. Úlcera venosa tipicamente rasa, de bordas irregulares, com leito granuloso, localizada na região maleolar medial — contrastando com a úlcera arterial (mais dolorosa, bordas bem definidas, extremidades distais)."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "A ultrassonografia com Doppler venoso é o exame padrão para avaliação da competência valvular e identificação do refluxo venoso, tanto do sistema superficial quanto profundo, orientando a decisão terapêutica. A classificação CEAP (Clínica, Etiológica, Anatômica, Patofisiológica) padroniza a gravidade da doença venosa crônica, desde telangiectasias assintomáticas até úlcera ativa, para fins clínicos e de pesquisa."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Medidas conservadoras (elevação dos membros, meias de compressão elástica, atividade física) são a base em todos os estágios. Escleroterapia ou ablação térmica (radiofrequência/laser) para varizes sintomáticas. A úlcera venosa é tratada com curativos adequados e terapia compressiva, sendo esta a principal medida terapêutica para sua cicatrização."
+        "conteudo": "Medidas conservadoras (terapia de compressão com meias elásticas graduadas, elevação dos membros, exercício regular) são a base do tratamento em todos os estágios, incluindo no manejo e prevenção de recidiva das úlceras venosas. Procedimentos ablativos (escleroterapia, ablação térmica endovenosa por laser/radiofrequência, ou cirurgia de safenectomia) são indicados para varizes sintomáticas ou refratárias ao tratamento conservador, com técnicas endovenosas minimamente invasivas hoje amplamente preferidas à cirurgia aberta tradicional."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Úlcera de perna que não cicatriza com terapia compressiva adequada, ou com bordas atípicas, deve ser reavaliada quanto a diagnósticos diferenciais (arterial, neuropática, neoplásica) antes de insistir apenas no tratamento venoso."
+        "conteudo": "Úlcera venosa que não cicatriza apesar de terapia de compressão adequada e prolongada deve motivar reavaliação para excluir componente arterial associado (doença mista) antes de intensificar a compressão, já que a terapia compressiva pode ser prejudicial ou contraindicada em membro com doença arterial significativa concomitante não identificada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação semiológica entre úlcera venosa (maleolar medial, menos dolorosa, bordas irregulares) e arterial (extremidades, muito dolorosa, bordas definidas) é cobrança central e recorrente. A terapia de compressão como base do tratamento (e a necessidade de excluir doença arterial associada antes de indicá-la, pelo risco de piora isquêmica) também é frequentemente exigida."
       }
     ]
   },
@@ -6744,7 +6800,7 @@
     "titulo": "Escroto Agudo: Torção Testicular, Epididimite e Priapismo",
     "resumo": "Diferenciação clínica entre torção testicular e epididimite, e o manejo do priapismo isquêmico.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Urologia; American Urological Association Guideline on Priapism",
+    "fonte": "Sociedade Brasileira de Urologia; American Urological Association Guidelines",
     "mnemonicos": [
       {
         "palavra": "Prehn ajuda a diferenciar",
@@ -6753,24 +6809,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Torção testicular",
-        "conteudo": "Emergência urológica por rotação do cordão espermático com isquemia testicular, mais comum em adolescentes e recém-nascidos. Dor escrotal súbita e intensa, com náusea/vômito, testículo elevado e horizontalizado (\"sinal do sino invertido\") e ausência do reflexo cremastérico ipsilateral. O diagnóstico é CLÍNICO — não se deve atrasar a exploração cirúrgica aguardando exame de imagem quando a suspeita é forte."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A torção testicular resulta da rotação do testículo sobre o cordão espermático, comprometendo primeiro a drenagem venosa e, progressivamente, o suprimento arterial, levando a isquemia testicular que se torna irreversível após aproximadamente 6 horas de evolução — janela terapêutica que faz dessa condição uma verdadeira emergência urológica. É mais comum em adolescentes, favorecida pela anomalia anatômica \"em badalo de sino\" (fixação inadequada do testículo à túnica vaginal). Epididimite (mais comum em adultos sexualmente ativos, geralmente de etiologia infecciosa) e priapismo (ereção peniana persistente e dolorosa, não relacionada a estimulação sexual) são diagnósticos diferenciais importantes do escroto agudo, com fisiopatologia e conduta completamente distintas."
       },
       {
-        "titulo": "Janela terapêutica",
-        "conteudo": "A viabilidade testicular cai drasticamente após 6 horas de torção. A exploração cirúrgica de urgência com destorção e fixação (orquidopexia) bilateral é o tratamento — inclusive do lado contralateral, para prevenir torção futura."
+        "titulo": "Quadro clínico",
+        "conteudo": "Torção testicular manifesta-se com dor testicular súbita, intensa, frequentemente associada a náuseas/vômitos, podendo ter história de episódios prévios autolimitados (torção intermitente). Epididimite causa dor de instalação mais gradual, associada a sintomas urinários (disúria, corrimento uretral) e febre, com melhora característica ao elevar o testículo (sinal de Prehn positivo)."
       },
       {
-        "titulo": "Epididimite/orquiepididimite",
-        "conteudo": "Causa mais comum de dor escrotal aguda no adulto sexualmente ativo (geralmente por ISTs) ou por bactérias entéricas em homens mais velhos (relacionado a HPB/instrumentação). Dor de início mais gradual, com sinal de Prehn positivo e reflexo cremastérico preservado."
+        "titulo": "Exame físico",
+        "conteudo": "Na torção testicular, o testículo encontra-se elevado, com eixo horizontalizado (perda da orientação vertical normal), extremamente doloroso à palpação, com reflexo cremastérico ipsilateral ausente (achado de alta sensibilidade). Na epididimite, a dor melhora com a elevação do testículo (sinal de Prehn), diferente da torção, onde a elevação não alivia ou pode até piorar a dor."
       },
       {
-        "titulo": "Priapismo",
-        "conteudo": "Ereção peniana persistente e dolorosa, não relacionada a estímulo sexual, com duração maior que 4 horas. O priapismo isquêmico (forma mais comum) é emergência urológica, tratado com aspiração/irrigação cavernosa e, se refratário, drogas alfa-agonistas intracavernosas, pelo risco de fibrose e disfunção erétil permanente."
+        "titulo": "Diagnóstico",
+        "conteudo": "Diante de forte suspeita clínica de torção testicular, a exploração cirúrgica não deve ser postergada para realização de exames de imagem, pela urgência absoluta da janela terapêutica. Quando o quadro é menos típico e há tempo disponível, a ultrassonografia com Doppler colorido é o exame de escolha, avaliando o fluxo sanguíneo testicular (ausente ou muito reduzido na torção, normal ou aumentado na epididimite)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Torção testicular é emergência cirúrgica absoluta, com exploração escrotal, destorção e fixação (orquidopexia) bilateral (já que a anomalia anatômica predisponente geralmente é bilateral, e o testículo contralateral também deve ser fixado para prevenir torção futura); testículo com necrose irreversível já estabelecida deve ser removido (orquiectomia). Epididimite é tratada com antibioticoterapia dirigida ao agente provável (geralmente cobrindo clamídia/gonococo em jovens sexualmente ativos, ou enterobactérias em homens mais velhos com fator de risco prostático)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor escrotal aguda em criança/adolescente deve ser tratada como torção testicular até prova em contrário</span> — a exploração cirúrgica não deve ser adiada para aguardar ultrassom Doppler quando a suspeita clínica é alta, pelo risco de perda do testículo."
+        "conteudo": "<span class=\"red-flag\">Dor testicular súbita e intensa com reflexo cremastérico ausente</span>, especialmente em adolescente, deve ser tratada como torção testicular até prova em contrário, com exploração cirúrgica imediata — cada hora de atraso reduz progressivamente a viabilidade testicular, tornando essa uma das poucas verdadeiras emergências cirúrgicas \"minuto a minuto\" da urologia."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A janela terapêutica de aproximadamente 6 horas para viabilidade testicular na torção é cobrança certíssima e o ponto mais importante do tema. O sinal de Prehn (alívio com elevação testicular na epididimite, sem alívio na torção) e a ausência de reflexo cremastérico como achado mais sensível de torção também são frequentemente exigidos em questões de diagnóstico diferencial de escroto agudo."
       }
     ]
   },
@@ -6781,7 +6845,7 @@
     "titulo": "Hiperplasia Prostática Benigna e Disfunção Miccional",
     "resumo": "Sintomas obstrutivos e irritativos do trato urinário inferior, escore IPSS e manejo da retenção urinária aguda.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Urologia — Diretrizes de HPB; AUA Guideline on Benign Prostatic Hyperplasia",
+    "fonte": "Sociedade Brasileira de Urologia; American Urological Association Guideline on BPH",
     "mnemonicos": [
       {
         "palavra": "IPSS guia a conduta",
@@ -6790,24 +6854,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia e epidemiologia",
-        "conteudo": "Crescimento não maligno da zona de transição da próstata, extremamente comum a partir da meia-idade, causando obstrução do fluxo urinário. Não é fator de risco para câncer de próstata, que tipicamente se origina na zona periférica."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A hiperplasia prostática benigna resulta do crescimento não maligno da zona de transição da próstata, processo relacionado ao envelhecimento e à ação androgênica contínua ao longo da vida, extremamente prevalente em homens acima dos 50 anos. O crescimento glandular causa obstrução mecânica do fluxo urinário (componente estático) associada a hipertonia da musculatura lisa prostática/do colo vesical (componente dinâmico), ambos contribuindo para os sintomas obstrutivos."
       },
       {
-        "titulo": "Sintomas do trato urinário inferior (LUTS)",
-        "conteudo": "Sintomas obstrutivos (jato urinário fraco, hesitação, gotejamento terminal, esvaziamento incompleto) e irritativos (urgência, polaciúria, noctúria). O IPSS quantifica a gravidade e orienta a decisão terapêutica."
+        "titulo": "Quadro clínico",
+        "conteudo": "Sintomas do trato urinário inferior classificados em obstrutivos (jato urinário fraco, hesitação miccional, esvaziamento incompleto, gotejamento terminal) e irritativos (urgência, polaciúria, noctúria) — estes últimos decorrentes da resposta vesical adaptativa à obstrução crônica (hipertrofia do detrusor). A gravidade dos sintomas nem sempre se correlaciona diretamente com o tamanho prostático estimado ao toque retal."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "O toque retal avalia tamanho, consistência e simetria da próstata: hiperplasia benigna tipicamente apresenta aumento simétrico, de consistência fibroelástica, sem nódulos endurecidos — achados que contrastam com a suspeita de neoplasia (nódulo endurecido, irregular, assimétrico), reforçando a importância do exame para triagem diferencial, embora não seja definitivo isoladamente para nenhum dos dois diagnósticos."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico combina sintomas característicos (quantificados por questionários validados como o IPSS — International Prostate Symptom Score), toque retal e, quando indicado, dosagem de PSA (para avaliação de risco de câncer de próstata associado, decisão que deve ser individualizada e compartilhada com o paciente). Ultrassonografia de próstata e vias urinárias avalia volume prostático e eventual repercussão sobre o trato urinário superior (hidronefrose) em casos de obstrução significativa."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Alfabloqueadores (tansulosina) relaxam a musculatura lisa prostática/colo vesical, com alívio sintomático rápido. Inibidores da 5-alfa-redutase (finasterida) reduzem o volume prostático a longo prazo. Cirurgia (RTU de próstata) é reservada para casos refratários ou com complicações."
-      },
-      {
-        "titulo": "Retenção urinária aguda",
-        "conteudo": "Incapacidade súbita e dolorosa de urinar, com bexiga distendida palpável — emergência urológica que exige alívio imediato por sondagem vesical. Pode ser a primeira manifestação de HPB descompensada, frequentemente precipitada por anticolinérgicos, descongestionantes ou anestesia."
+        "conteudo": "Sintomas leves podem ser acompanhados apenas com mudanças comportamentais. Alfabloqueadores (tansulosina) proporcionam alívio sintomático rápido ao relaxar a musculatura lisa prostática (componente dinâmico); inibidores da 5-alfa-redutase (finasterida) reduzem o volume prostático a longo prazo (componente estático), sendo mais eficazes em próstatas maiores, e podem ser combinados aos alfabloqueadores em casos moderados/graves. Tratamento cirúrgico (ressecção transuretral de próstata, entre outras técnicas) é reservado a sintomas refratários ao tratamento clínico ou complicações (retenção urinária recorrente, litíase vesical, insuficiência renal obstrutiva)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Retenção urinária aguda com hidronefrose bilateral e elevação de creatinina</span> configura uropatia obstrutiva com lesão renal aguda pós-renal — a descompressão vesical costuma reverter rapidamente a função renal se feita a tempo."
+        "conteudo": "<span class=\"red-flag\">Retenção urinária aguda completa (incapacidade total de urinar, com bexiga distendida e dolorosa)</span> exige alívio imediato por cateterismo vesical de alívio, seguido de investigação e planejamento terapêutico definitivo para a hiperplasia prostática subjacente — a retenção prolongada não aliviada pode causar lesão renal obstrutiva."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre o componente estático (tratado com inibidor de 5-alfa-redutase, mais eficaz em próstatas grandes) e dinâmico (tratado com alfabloqueador, de ação mais rápida) da obstrução é cobrança certa e recorrente. Os achados de toque retal que diferenciam hiperplasia benigna (simétrica, fibroelástica) de suspeita de câncer (nódulo endurecido, assimétrico) também são frequentemente exigidos."
       }
     ]
   },
@@ -6818,7 +6890,7 @@
     "titulo": "Nefrolitíase (Cólica Renal)",
     "resumo": "Diagnóstico por tomografia sem contraste, fatores que predizem eliminação espontânea e a emergência da pielonefrite obstrutiva.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Urologia — Diretrizes de Litíase Urinária; AUA/Endourological Society Guideline on Surgical Management of Stones",
+    "fonte": "Sociedade Brasileira de Urologia; American Urological Association Guideline on Surgical Management of Stones",
     "mnemonicos": [
       {
         "palavra": "Agitado é cólica, quieto é peritonite",
@@ -6827,24 +6899,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A nefrolitíase resulta da supersaturação urinária de substâncias formadoras de cálculo, sendo os cálculos de oxalato de cálcio os mais comuns (cerca de 80% dos casos), seguidos por cálculos de ácido úrico (associados a urina cronicamente ácida, mais comuns em obesos e diabéticos), estruvita (associados a infecção urinária por bactérias produtoras de urease, formando os característicos \"cálculos coraliformes\" que preenchem todo o sistema coletor) e cistina (causa genética rara). A dor típica da cólica renal resulta da distensão aguda do sistema coletor e da ativação de vias nociceptivas viscerais quando o cálculo migra e obstrui o ureter."
+      },
+      {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor lombar/em flanco de início súbito, tipo cólica, de forte intensidade, irradiando para região inguinal/genital conforme o cálculo migra pelo ureter. Associada a náusea/vômito e frequentemente hematúria. Paciente tipicamente agitado, sem posição de conforto."
+        "conteudo": "Dor em cólica de início súbito, intensa, tipicamente iniciando em flanco e irradiando para região inguinal/genital, seguindo o trajeto ureteral conforme o cálculo migra distalmente — o paciente classicamente encontra-se agitado, sem posição de conforto (diferente do paciente com abdome agudo peritoneal, que busca imobilidade). Hematúria (macro ou microscópica) e sintomas irritativos vesicais (urgência, polaciúria) podem estar presentes quando o cálculo se aproxima da junção ureterovesical."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Punho-percussão lombar dolorosa (sinal de Giordano) no lado acometido é achado de apoio, embora inespecífico. O paciente tipicamente apresenta-se agitado, mudando frequentemente de posição em busca de alívio — comportamento que contrasta com a imobilidade característica do paciente com irritação peritoneal, sendo pista semiológica útil no diagnóstico diferencial de dor abdominal/lombar aguda."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Tomografia computadorizada de abdome sem contraste é o exame padrão-ouro. Ultrassonografia é alternativa razoável, especialmente em gestantes e para evitar radiação, mas com menor sensibilidade para cálculos ureterais médios."
+        "conteudo": "A tomografia de abdome sem contraste é o exame padrão-ouro, com altíssima sensibilidade e especificidade para identificação, localização e caracterização do cálculo, além de avaliar hidronefrose associada. Ultrassonografia é alternativa sem radiação, particularmente indicada em gestantes, embora com menor sensibilidade para cálculos ureterais de localização média. Exame de urina tipicamente mostra hematúria, embora sua ausência não exclua o diagnóstico."
       },
       {
-        "titulo": "Eliminação espontânea",
-        "conteudo": "Cálculos menores que 5mm têm alta probabilidade de eliminação espontânea; maiores que 10mm geralmente necessitam intervenção. A terapia expulsiva medicamentosa com alfabloqueador (tansulosina) aumenta a taxa de eliminação espontânea de cálculos ureterais distais."
-      },
-      {
-        "titulo": "Indicações de intervenção urológica",
-        "conteudo": "Cálculo obstrutivo associado a infecção urinária (pielonefrite obstrutiva — emergência), dor refratária, lesão renal aguda, ou falha na eliminação espontânea — litotripsia extracorpórea, ureterolitotripsia endoscópica ou nefrolitotomia percutânea conforme tamanho/localização."
+        "titulo": "Tratamento",
+        "conteudo": "Analgesia (anti-inflamatórios não esteroidais são particularmente eficazes por reduzirem também o espasmo ureteral, além do efeito analgésico) e hidratação são a base do manejo inicial. Cálculos pequenos (geralmente <5-6mm) têm alta probabilidade de eliminação espontânea, podendo ser acompanhados clinicamente com terapia expulsiva medicamentosa (alfabloqueador, que relaxa a musculatura ureteral). Cálculos maiores, ou associados a infecção urinária obstrutiva, dor refratária, ou comprometimento renal, exigem intervenção urológica (litotripsia extracorpórea por ondas de choque, ureteroscopia, ou nefrolitotomia percutânea, conforme tamanho e localização)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Cólica renal com febre e sinais de infecção urinária</span> caracteriza pielonefrite obstrutiva — uma verdadeira emergência urológica, exigindo desobstrução urgente (duplo J ou nefrostomia), não apenas antibiótico."
+        "conteudo": "<span class=\"red-flag\">Cólica renal associada a febre e sinais de infecção urinária</span> caracteriza pielonefrite obstrutiva (pionefrose), emergência urológica que exige desobstrução urgente (cateter ureteral duplo J ou nefrostomia percutânea) associada a antibioticoterapia — o rim obstruído e infectado não responde adequadamente ao antibiótico isolado sem drenagem, com risco de sepse urinária grave se a desobstrução for postergada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A associação de febre com cólica renal como emergência urológica (necessidade de desobstrução, não apenas antibiótico) é cobrança certíssima e um dos pontos mais importantes do tema. A agitação do paciente com cólica renal (contrastando com a imobilidade do abdome agudo peritoneal) e o uso preferencial de AINE para analgesia (pelo efeito antiespasmódico ureteral adicional) também são frequentemente exigidos."
       }
     ]
   },
@@ -8707,7 +8787,7 @@
     "titulo": "Tumores Urológicos: Próstata, Bexiga, Rim e Testículo",
     "resumo": "Panorama comparativo dos principais tumores do trato geniturinário: fatores de risco, rastreio, apresentação clínica e abordagem inicial.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Urologia; Instituto Nacional de Câncer (INCA) — Diretrizes de rastreamento e tratamento",
+    "fonte": "Sociedade Brasileira de Urologia; Instituto Nacional de Câncer (INCA); NCCN Guidelines for Prostate, Bladder, Kidney and Testicular Cancer",
     "mnemonicos": [
       {
         "palavra": "Hematúria indolor é câncer até provar o contrário",
@@ -8716,24 +8796,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Câncer de próstata",
-        "conteudo": "Neoplasia mais comum em homens idosos. Fatores de risco: idade, histórico familiar, ascendência afrodescendente. Rastreamento com PSA e toque retal é individualizado (decisão compartilhada), não universal, por risco de sobrediagnóstico de tumores indolentes. Diagnóstico confirmado por biópsia guiada, com escore de Gleason definindo agressividade."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Os tumores urológicos têm perfis epidemiológicos e comportamentos biológicos distintos: o câncer de próstata (o mais comum em homens idosos) origina-se predominantemente na zona periférica da glândula, com fatores de risco incluindo idade, história familiar e ascendência afrodescendente. O câncer de bexiga (predominantemente urotelial) está fortemente associado ao tabagismo e à exposição ocupacional a aminas aromáticas. O carcinoma de células renais frequentemente é um achado incidental em exames de imagem. O câncer de testículo, o tumor sólido mais comum em homens jovens, tem a criptorquidia como principal fator de risco identificável."
       },
       {
-        "titulo": "Câncer de bexiga",
-        "conteudo": "Tabagismo é o principal fator de risco modificável; exposição ocupacional a aminas aromáticas também é relevante. Hematúria macroscópica indolor é a manifestação mais comum. Diagnóstico por cistoscopia com biópsia; a maioria é do tipo urotelial (transicional)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Câncer de próstata é frequentemente assintomático em fase inicial, identificado por rastreamento. Câncer de bexiga manifesta-se classicamente com hematúria macroscópica indolor e intermitente. Câncer renal é majoritariamente assintomático, com a tríade clássica (dor lombar, massa palpável, hematúria) sendo achado raro e tardio. Câncer de testículo apresenta-se como nódulo testicular indolor de crescimento progressivo — a ausência de dor não deve ser interpretada como sinal tranquilizador nessa localização específica."
       },
       {
-        "titulo": "Câncer de rim (carcinoma de células renais)",
-        "conteudo": "Frequentemente assintomático, achado incidental em exames de imagem por outros motivos. A tríade clássica (dor lombar, massa palpável, hematúria) é rara e indica doença avançada. Tabagismo e obesidade são fatores de risco associados."
+        "titulo": "Exame físico",
+        "conteudo": "Toque retal com nódulo prostático endurecido e assimétrico sugere neoplasia (diferente do aumento simétrico fibroelástico da hiperplasia benigna). Massa testicular sólida, indolor e que não transilumina (diferenciando de hidrocele, que transilumina) é achado que deve ser sempre considerado maligno até prova em contrário. Massa em flanco palpável no câncer renal é achado tardio, indicando tumor já volumoso."
       },
       {
-        "titulo": "Câncer de testículo",
-        "conteudo": "Tumor sólido mais comum em homens jovens (15-35 anos). Principal fator de risco é a criptorquidia. Apresenta-se como nódulo testicular indolor — massa testicular deve sempre ser considerada maligna até prova em contrário, diferente do hidrocele/varicocele."
+        "titulo": "Diagnóstico",
+        "conteudo": "Câncer de próstata é confirmado por biópsia guiada (geralmente por ressonância multiparamétrica associada a biópsia direcionada), com escore de Gleason definindo agressividade histológica. Câncer de bexiga é diagnosticado por cistoscopia com biópsia/ressecção transuretral. Câncer renal é frequentemente diagnosticado por critérios de imagem característicos (tomografia/ressonância) mesmo sem biópsia prévia, quando a lesão é tipicamente sólida e realça com contraste. Câncer de testículo é diagnosticado por ultrassonografia escrotal associada a marcadores tumorais séricos (alfafetoproteína, beta-hCG, DHL), com orquiectomia inguinal radical sendo tanto diagnóstica quanto terapêutica — biópsia transescrotal é contraindicada pelo risco de disseminação linfática aberrante."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Câncer de próstata localizado de baixo risco pode ser conduzido com vigilância ativa; doença de risco intermediário/alto é tratada com prostatectomia radical ou radioterapia. Câncer de bexiga não invasivo é tratado por ressecção transuretral com instilação intravesical adjuvante (BCG); doença invasiva exige cistectomia radical. Câncer renal localizado é tratado cirurgicamente (nefrectomia parcial preferida quando tecnicamente possível, preservando função renal). Câncer de testículo tem excelente prognóstico mesmo em doença avançada, com orquiectomia radical seguida de quimioterapia conforme estadiamento e marcadores tumorais."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hematúria macroscópica indolor</span> e <span class=\"red-flag\">massa testicular indolor de instalação recente</span> são sinais de alarme que exigem investigação urológica prioritária, mesmo na ausência de outros sintomas."
+        "conteudo": "<span class=\"red-flag\">Hematúria macroscópica indolor</span> em qualquer paciente adulto, especialmente tabagista, deve ser considerada neoplasia urotelial até prova em contrário e investigada com cistoscopia — a resolução espontânea do sangramento não exclui o diagnóstico e não deve interromper a investigação já iniciada. Da mesma forma, <span class=\"red-flag\">massa testicular sólida indolor</span> exige investigação urgente sem espera."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A hematúria macroscópica indolor como sinal de alarme obrigatório para câncer de bexiga é cobrança certíssima. A contraindicação de biópsia transescrotal no câncer de testículo (preferindo orquiectomia inguinal radical direta) e a raridade da tríade clássica no câncer renal (achado tardio, não deve ser esperado para suspeitar do diagnóstico) também são frequentemente exigidas."
       }
     ]
   },
