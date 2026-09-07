@@ -1006,6 +1006,10 @@
         "conteudo": "Indicada para contactantes próximos conforme o agente etiológico identificado, especialmente na meningite meningocócica."
       },
       {
+        "titulo": "Meningite viral e encefalite herpética",
+        "conteudo": "A meningite viral (asséptica) costuma ter curso mais brando e autolimitado que a bacteriana, com líquor de celularidade discretamente elevada e predomínio linfomonocitário, glicose normal e proteína normal/discretamente elevada — perfil que ajuda a diferenciá-la da meningite bacteriana. A encefalite herpética (HSV-1) é a causa mais comum de encefalite viral esporádica grave, tipicamente com acometimento do lobo temporal (convulsões, alterações de comportamento/memória, afasia), e deve ser tratada empiricamente com aciclovir intravenoso assim que suspeitada, sem aguardar confirmação por PCR no líquor, pelo risco de sequelas graves ou óbito com o atraso terapêutico."
+      },
+      {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Petéquias ou púrpura associadas a febre e rigidez de nuca</span> sugerem meningococcemia, com risco de evolução rápida para choque séptico."
       }
@@ -6652,6 +6656,117 @@
       {
         "titulo": "Sinais de alerta",
         "conteudo": "<span class=\"red-flag\">Febre, dor lombar e hipotensão logo após início da transfusão</span> devem levar à interrupção IMEDIATA da transfusão e investigação de reação hemolítica aguda — a demora agrava significativamente o desfecho."
+      }
+    ]
+  },
+  {
+    "id": "guillain-barre",
+    "area": "residencia",
+    "categoria": "Neurologia",
+    "titulo": "Síndrome de Guillain-Barré",
+    "resumo": "Fraqueza ascendente com arreflexia após infecção prévia, dissociação albumino-citológica e monitorização respiratória.",
+    "revisado": false,
+    "fonte": "Academia Brasileira de Neurologia; AAN Practice Guideline Update on Guillain-Barré Syndrome",
+    "mnemonicos": [
+      {
+        "palavra": "Sobe e some o reflexo",
+        "explicacao": "Na Guillain-Barré, a fraqueza SOBE (ascendente, das pernas para cima) e os reflexos SOMEM (arreflexia) — padrão que a distingue de outras causas de fraqueza aguda."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia",
+        "conteudo": "Polirradiculoneuropatia desmielinizante inflamatória aguda, autoimune, frequentemente desencadeada por infecção prévia (mais classicamente Campylobacter jejuni, mas também vírus respiratórios/gastrointestinais) por mimetismo molecular."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Fraqueza muscular ascendente e simétrica (inicia em membros inferiores e progride para superiores/tronco/face), associada a arreflexia/hiporreflexia profunda. Sintomas sensitivos geralmente discretos comparados à fraqueza motora."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Dissociação albumino-citológica no líquor (proteína elevada com celularidade normal ou pouco alterada) é o achado clássico, embora possa estar ausente na primeira semana. Eletroneuromiografia confirma padrão de desmielinização."
+      },
+      {
+        "titulo": "Tratamento e monitorização",
+        "conteudo": "Imunoglobulina intravenosa ou plasmaférese são igualmente eficazes e devem ser iniciadas precocemente. Corticoide NÃO tem benefício comprovado. Monitorização respiratória seriada é essencial, pelo risco de insuficiência respiratória."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Fraqueza da musculatura respiratória com queda da capacidade vital forçada</span> exige internação em UTI e pode necessitar ventilação mecânica precoce, antes que ocorra falência respiratória franca."
+      }
+    ]
+  },
+  {
+    "id": "doenca-parkinson",
+    "area": "residencia",
+    "categoria": "Neurologia",
+    "titulo": "Doença de Parkinson",
+    "resumo": "Tríade motora cardinal, sintomas não motores precoces e o tratamento com levodopa.",
+    "revisado": false,
+    "fonte": "Academia Brasileira de Neurologia; MDS Clinical Diagnostic Criteria for Parkinson's Disease",
+    "mnemonicos": [
+      {
+        "palavra": "TRAP",
+        "explicacao": "Tétrade cardinal do parkinsonismo: Tremor de repouso, Rigidez, Acinesia/bradicinesia (obrigatória para o diagnóstico), Postural instability (mais tardia)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Quadro clínico clássico",
+        "conteudo": "Bradicinesia (obrigatória para o diagnóstico), rigidez (tipo \"roda denteada\") e tremor de repouso (assimétrico, que diminui com o movimento voluntário, ao contrário do tremor essencial). Instabilidade postural surge em fases mais avançadas."
+      },
+      {
+        "titulo": "Fisiopatologia",
+        "conteudo": "Degeneração progressiva de neurônios dopaminérgicos da substância negra, levando à deficiência de dopamina nos núcleos da base. O diagnóstico é eminentemente clínico, sem exame confirmatório de rotina."
+      },
+      {
+        "titulo": "Sintomas não motores",
+        "conteudo": "Frequentemente precedem os sintomas motores em anos: hiposmia, constipação intestinal, transtorno comportamental do sono REM e depressão são pistas precoces importantes."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Levodopa associada a inibidor da dopa-descarboxilase é o tratamento sintomático mais eficaz, porém seu uso prolongado associa-se a flutuações motoras e discinesias. Agonistas dopaminérgicos podem ser usados como poupadores de levodopa em pacientes mais jovens."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Parkinsonismo de instalação muito rápida, simétrico desde o início, ou sem resposta à levodopa</span> deve levantar suspeita de parkinsonismo atípico/secundário, e não da doença de Parkinson idiopática."
+      }
+    ]
+  },
+  {
+    "id": "miastenia-gravis",
+    "area": "residencia",
+    "categoria": "Neurologia",
+    "titulo": "Miastenia Gravis",
+    "resumo": "Fraqueza flutuante e fatigável, ptose/diplopia iniciais e o reconhecimento da crise miastênica.",
+    "revisado": false,
+    "fonte": "Academia Brasileira de Neurologia; Myasthenia Gravis Foundation of America Clinical Guidance",
+    "mnemonicos": [
+      {
+        "palavra": "Piora com uso, melhora com repouso",
+        "explicacao": "A fraqueza da miastenia gravis é fatigável — piora com o uso repetido do músculo ao longo do dia e melhora com o repouso, um padrão que a distingue de fraquezas neurológicas fixas."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia",
+        "conteudo": "Doença autoimune por anticorpos contra receptores de acetilcolina (ou, menos comumente, contra MuSK) na junção neuromuscular pós-sináptica. Associação relevante com timoma/hiperplasia tímica."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Fraqueza muscular flutuante e fatigável, que piora ao longo do dia e com esforço repetido, e melhora com repouso. Ptose palpebral e diplopia são frequentemente os sintomas iniciais; pode progredir para fraqueza bulbar e respiratória."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Anticorpo anti-receptor de acetilcolina positivo na maioria dos casos. O teste do gelo (melhora da ptose após gelo na pálpebra) é simples e útil à beira do leito. Eletroneuromiografia com estimulação repetitiva mostra decremento da resposta motora."
+      },
+      {
+        "titulo": "Crise miastênica",
+        "conteudo": "Exacerbação grave com insuficiência respiratória, podendo ser desencadeada por infecção, cirurgia ou medicamentos que pioram a transmissão neuromuscular (aminoglicosídeos, betabloqueadores). Tratamento com imunoglobulina IV ou plasmaférese, além de suporte ventilatório quando necessário."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Fraqueza flutuante da musculatura respiratória/bulbar</span> em paciente miastênico, especialmente após infecção ou uso de medicação de risco, exige monitorização rigorosa e consideração precoce de suporte ventilatório."
       }
     ]
   }
