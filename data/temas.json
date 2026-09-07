@@ -297,7 +297,7 @@
     "titulo": "Hemorragia Digestiva Alta (HDA)",
     "resumo": "Estabilização inicial, terapia farmacológica e papel da endoscopia na HDA.",
     "revisado": false,
-    "fonte": "Federacao Brasileira de Gastroenterologia; ACG Clinical Guideline: Upper Gastrointestinal Bleeding",
+    "fonte": "Sociedade Brasileira de Endoscopia Digestiva; Consenso de Baveno VII (varizes); ACG Guideline on Upper GI Bleeding",
     "mnemonicos": [
       {
         "palavra": "SANGUE",
@@ -306,24 +306,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Causas mais comuns",
-        "conteudo": "Úlcera péptica (a mais frequente), varizes esofagogástricas em hepatopatas, laceração de Mallory-Weiss e lesões erosivas da mucosa gastroduodenal."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A hemorragia digestiva alta origina-se de lesões proximais ao ligamento de Treitz. Causas não varicosas incluem a doença ulcerosa péptica (a mais comum globalmente, por erosão de vaso na base da úlcera), lesão aguda de mucosa gástrica e a síndrome de Mallory-Weiss (laceração da mucosa esofagogástrica por vômitos vigorosos). Causas varicosas (varizes esofágicas/gástricas) decorrem de hipertensão portal em pacientes cirróticos, representando sangramentos de maior gravidade e mortalidade pela fragilidade da parede variceal e pela coagulopatia frequentemente associada à hepatopatia de base."
       },
       {
-        "titulo": "Estabilização inicial",
-        "conteudo": "Dois acessos venosos calibrosos, reposição volêmica conforme estabilidade hemodinâmica, jejum, coleta de hemograma, coagulograma e tipagem sanguínea com reserva de hemocomponentes se necessário."
+        "titulo": "Quadro clínico",
+        "conteudo": "Hematêmese (vômito com sangue vivo ou em \"borra de café\") e melena (fezes enegrecidas, fétidas, digeridas) são as manifestações clássicas; hematoquezia pode ocorrer em sangramentos altos muito volumosos e de trânsito rápido. Sinais de instabilidade hemodinâmica (taquicardia, hipotensão, síncope) refletem a magnitude da perda volêmica e definem a urgência da abordagem, independentemente da etiologia específica ainda não esclarecida."
       },
       {
-        "titulo": "Terapia farmacológica",
-        "conteudo": "Inibidor de bomba de prótons em bolus seguido de infusão contínua antes da endoscopia. Se suspeita de origem varicosa, associar droga vasoativa (terlipressina ou octreotide) e considerar antibioticoprofilaxia."
+        "titulo": "Exame físico",
+        "conteudo": "Estigmas de hepatopatia crônica (icterícia, aranhas vasculares, ascite, circulação colateral abdominal, esplenomegalia) sugerem fortemente etiologia varicosa em paciente com sangramento digestivo alto. Toque retal com presença de melena confirma sangramento digestivo em curso quando a história não é clara. Sinais de choque hipovolêmico (taquicardia, hipotensão, extremidades frias, tempo de enchimento capilar prolongado) devem ser ativamente pesquisados para estratificação inicial de gravidade."
       },
       {
-        "titulo": "Endoscopia digestiva alta",
-        "conteudo": "Idealmente realizada em até 24 horas após estabilização, com finalidade diagnóstica e terapêutica (escleroterapia, ligadura elástica, hemostasia térmica ou com clipes conforme a lesão)."
+        "titulo": "Diagnóstico",
+        "conteudo": "A endoscopia digestiva alta é o exame padrão-ouro, tanto diagnóstico quanto terapêutico, devendo ser realizada preferencialmente nas primeiras 24 horas após estabilização hemodinâmica inicial (mais precocemente, em até 12h, se suspeita de sangramento varicoso ativo grave). Escores de risco (Glasgow-Blatchford para necessidade de intervenção, Rockall para mortalidade) auxiliam a triagem e a decisão sobre necessidade de internação/UTI antes mesmo da endoscopia."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Ressuscitação volêmica e estabilização hemodinâmica são prioridade inicial, com transfusão restritiva (meta de hemoglobina ao redor de 7g/dL na maioria dos pacientes, sem hipertransfundir). Inibidor de bomba de prótons endovenoso em altas doses deve ser iniciado empiricamente antes mesmo da endoscopia em suspeita de causa péptica. Em suspeita de sangramento varicoso, terlipressina (ou octreotide) e antibiótico profilático (reduz mortalidade e ressangramento em cirróticos) devem ser iniciados precocemente, antes mesmo da confirmação endoscópica, junto ao tratamento endoscópico definitivo (ligadura elástica de varizes)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Instabilidade hemodinâmica persistente apesar de reposição volêmica, hematêmese maciça e sinais de ressangramento</span> indicam necessidade de intervenção endoscópica ou cirúrgica de urgência."
+        "conteudo": "<span class=\"red-flag\">Hematêmese volumosa associada a instabilidade hemodinâmica em paciente cirrótico conhecido</span> deve ser tratada como sangramento varicoso até prova em contrário, com terlipressina e antibiótico profilático iniciados imediatamente, sem aguardar confirmação endoscópica — o atraso nesse cenário associa-se a maior mortalidade."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A conduta antes da endoscopia (IBP empírico na suspeita péptica; terlipressina + antibiótico profilático na suspeita varicosa) é cobrança certa e recorrente, assim como a meta de transfusão restritiva (hemoglobina ~7g/dL) em vez da antiga prática liberal. O antibiótico profilático em cirróticos com HDA (mesmo sem sinais francos de infecção) é um ponto de atualização de diretriz frequentemente testado."
       }
     ]
   },
@@ -1028,7 +1036,7 @@
     "titulo": "Pancreatite Aguda",
     "resumo": "Critérios diagnósticos (2 de 3), causas mais comuns e avaliação de gravidade.",
     "revisado": false,
-    "fonte": "Classificacao de Atlanta Revisada (2012); IAP/APA Evidence-Based Guidelines for Acute Pancreatitis",
+    "fonte": "Sociedade Brasileira de Pancreatologia; Classificação de Atlanta revisada (2012); ACG Clinical Guideline: Management of Acute Pancreatitis",
     "mnemonicos": [
       {
         "palavra": "2 DE 3",
@@ -1037,28 +1045,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Critérios diagnósticos",
-        "conteudo": "Necessários pelo menos 2 dos 3: dor abdominal característica (em faixa, com irradiação para o dorso), lipase ou amilase sérica ≥3x o limite superior da normalidade, e achados de imagem (TC/RM) compatíveis."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A pancreatite aguda resulta da ativação prematura de enzimas digestivas pancreáticas (tripsinogênio em tripsina) dentro do próprio parênquima da glândula, causando autodigestão tecidual, inflamação local e, em casos graves, resposta inflamatória sistêmica com disfunção de múltiplos órgãos. Litíase biliar (obstrução transitória da ampola de Vater por cálculo) e consumo excessivo de álcool são as duas causas mais frequentes, respondendo juntas por cerca de 70-80% dos casos; hipertrigliceridemia grave (>1000mg/dL) e pós-CPRE são causas relevantes adicionais."
       },
       {
-        "titulo": "Causas mais comuns",
-        "conteudo": "Litíase biliar e uso de álcool são responsáveis pela maioria dos casos."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor abdominal intensa em andar superior, com irradiação clássica para o dorso \"em faixa\" ou \"em cinturão\", frequentemente associada a náuseas e vômitos, e por vezes aliviada parcialmente pela posição genupeitoral (inclinado para frente). A gravidade clínica varia amplamente, de quadros leves e autolimitados a formas graves com falência orgânica e complicações locais (necrose, coleções peripancreáticas)."
       },
       {
-        "titulo": "Avaliação de gravidade",
-        "conteudo": "Classificação de Atlanta revisada e escores clínicos (como Ranson e APACHE II) auxiliam a estimar gravidade e prognóstico."
+        "titulo": "Exame físico",
+        "conteudo": "Dor à palpação do andar superior do abdome, com graus variáveis de defesa. Sinais de Cullen (equimose periumbilical) e de Grey-Turner (equimose em flancos) são achados raros, mas quando presentes indicam hemorragia retroperitoneal em pancreatite necro-hemorrágica grave — não devem ser esperados para levantar a suspeita diagnóstica inicial, apenas reconhecidos como marcadores tardios de gravidade quando presentes."
       },
       {
-        "titulo": "Tratamento inicial",
-        "conteudo": "Hidratação venosa vigorosa, analgesia adequada e reintrodução precoce da dieta oral conforme tolerância, evitando jejum prolongado desnecessário."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico exige pelo menos 2 dos 3 critérios: dor abdominal característica, amilase e/ou lipase séricas elevadas acima de 3x o limite superior da normalidade (lipase é mais específica e permanece elevada por mais tempo que a amilase), ou achados de imagem compatíveis (tomografia/ressonância). A tomografia contrastada não é necessária rotineiramente ao diagnóstico inicial (que é predominantemente clínico-laboratorial), sendo reservada a dúvida diagnóstica, ausência de melhora em 48-72h, ou suspeita de complicação local — realizada precocemente demais, pode inclusive subestimar necrose que só se demarca após alguns dias."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Hidratação venosa vigorosa nas primeiras 24 horas é a intervenção mais importante e com maior impacto em desfechos, junto a analgesia adequada e reintrodução precoce de dieta oral assim que tolerada (não há benefício em jejum prolongado \"para poupar o pâncreas\", ao contrário da prática antiga). Antibiótico profilático não é indicado rotineiramente, mesmo em necrose estéril, sendo reservado a infecção documentada ou fortemente suspeita. Colecistectomia (na etiologia biliar) deve ser realizada ainda durante a mesma internação em casos leves, para prevenir recorrência — postergá-la aumenta significativamente o risco de novo episódio antes do procedimento eletivo."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Necrose pancreática infectada e falência orgânica persistente</span> caracterizam pancreatite aguda grave, com necessidade de suporte intensivo."
+        "conteudo": "<span class=\"red-flag\">Sinais de Cullen ou Grey-Turner, hipotensão refratária à reposição volêmica, ou insuficiência respiratória associada</span> indicam pancreatite necro-hemorrágica grave com risco de falência de múltiplos órgãos, exigindo manejo em unidade de terapia intensiva."
       },
       {
-        "titulo": "Pancreatite crônica e tumores pancreáticos",
-        "conteudo": "A pancreatite crônica decorre de inflamação e fibrose progressivas do parênquima pancreático, mais comumente por etilismo crônico, levando a dor abdominal recorrente, insuficiência exócrina (esteatorreia, má absorção) e endócrina (diabetes secundário) a longo prazo; calcificações pancreáticas na tomografia são achado característico. O adenocarcinoma de pâncreas é agressivo e geralmente diagnosticado em fase avançada pela ausência de sintomas precoces; icterícia indolor progressiva (tumores de cabeça de pâncreas), emagrecimento e dor abdominal/lombar persistente são sinais de alerta que exigem investigação de imagem prioritária."
+        "titulo": "Dicas de prova",
+        "conteudo": "Os critérios diagnósticos (2 de 3: clínica, enzimas 3x, imagem) e a preferência pela lipase sobre a amilase são cobrança certa. A colecistectomia na mesma internação para pancreatite biliar leve (e não meses depois, como se pensava antigamente) é um ponto de atualização de diretriz muito valorizado em provas recentes, assim como a reintrodução precoce de dieta oral em vez de jejum prolongado."
       }
     ]
   },
@@ -1528,7 +1540,7 @@
     "titulo": "Doença Ulcerosa Péptica",
     "resumo": "Causas principais, diagnóstico e erradicação do H. pylori.",
     "revisado": false,
-    "fonte": "Federacao Brasileira de Gastroenterologia; ACG Clinical Guideline: Treatment of Helicobacter pylori Infection",
+    "fonte": "Sociedade Brasileira de Endoscopia Digestiva; ACG Clinical Guideline: Treatment of Helicobacter pylori Infection",
     "mnemonicos": [
       {
         "palavra": "H. PYLORI + AINEs",
@@ -1537,24 +1549,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Causas",
-        "conteudo": "Infecção por Helicobacter pylori e uso de AINEs respondem pela maioria dos casos de úlcera péptica."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença ulcerosa péptica resulta de um desequilíbrio entre fatores agressivos (ácido gástrico, pepsina) e fatores protetores da mucosa gastroduodenal, sendo as duas causas mais importantes a infecção por Helicobacter pylori (responsável pela maioria das úlceras duodenais e grande parte das gástricas) e o uso de anti-inflamatórios não esteroidais (que inibem a síntese de prostaglandinas protetoras da mucosa). Úlceras duodenais são geralmente benignas; úlceras gástricas exigem maior atenção pelo risco (menor, mas real) de malignidade subjacente."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dispepsia e dor epigástrica, cuja relação com a alimentação (piora ou melhora) pode sugerir úlcera gástrica ou duodenal, respectivamente."
+        "conteudo": "Dor epigástrica em queimação é o sintoma cardinal, com padrão temporal que pode ajudar a diferenciar a localização: dor que piora com a alimentação sugere úlcera gástrica; dor que melhora com a alimentação e retorna 2-3 horas depois (inclusive despertando o paciente à noite) sugere úlcera duodenal — embora essa diferenciação clássica tenha valor preditivo limitado na prática e não deva substituir a investigação endoscópica quando indicada."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Geralmente inespecífico, podendo haver dor à palpação epigástrica leve a moderada. Sinais de alarme ao exame (massa palpável, linfonodo de Virchow, caquexia) sugerem neoplasia gástrica subjacente e exigem investigação endoscópica prioritária, não postergável para tratamento empírico."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Endoscopia digestiva alta associada a teste para H. pylori (teste rápido de urease, histologia, teste respiratório ou antígeno fecal)."
+        "conteudo": "A endoscopia digestiva alta é o exame padrão-ouro, permitindo visualização direta, biópsia (obrigatória em toda úlcera gástrica, para excluir malignidade — diferente da duodenal, onde a biópsia de rotina não é necessária pela raridade de malignidade nessa localização) e teste para H. pylori (teste da urease rápido na biópsia, ou histologia). Teste respiratório da ureia marcada e antígeno fecal são alternativas não invasivas para diagnóstico e para confirmação de erradicação após tratamento."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Erradicação do H. pylori quando presente, com terapia combinada (IBP + 2 antibióticos), e suspensão de AINEs quando possível."
+        "conteudo": "Erradicação do H. pylori quando presente (terapia tríplice com IBP + dois antibióticos, ou terapia quádrupla com bismuto em áreas de maior resistência) reduz drasticamente a recorrência ulcerosa. Inibidores de bomba de prótons são a base do tratamento sintomático e cicatrizante em todas as úlceras, independentemente da etiologia. Suspensão de AINE (quando essa for a causa) é fundamental; quando o AINE não pode ser suspenso, associação de IBP profilático contínuo reduz o risco de nova úlcera/sangramento."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Emagrecimento, sangramento digestivo ou disfagia associados à dispepsia</span> são sinais de alarme que exigem investigação endoscópica prioritária."
+        "conteudo": "<span class=\"red-flag\">Úlcera gástrica sem biópsia, perda de peso significativa, disfagia, sangramento digestivo ou massa palpável</span> exigem investigação endoscópica com biópsia prioritária para exclusão de neoplasia gástrica — tratar empiricamente sem confirmação endoscópica nesse contexto é conduta inadequada e pode retardar diagnóstico oncológico."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A obrigatoriedade de biópsia em toda úlcera gástrica (diferente da duodenal) é cobrança certa e um dos pontos mais testados do tema, já que a raridade relativa de malignidade duodenal justifica essa diferença de conduta. O esquema de erradicação do H. pylori e a necessidade de confirmação de erradicação em situações específicas (úlcera complicada, MALT linfoma) também são frequentemente exigidos."
       }
     ]
   },
@@ -1565,7 +1585,7 @@
     "titulo": "Cirrose Hepática e suas Complicações",
     "resumo": "Escore de Child-Pugh e manejo das principais complicações da cirrose.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Hepatologia (SBH); AASLD Practice Guidance",
+    "fonte": "Sociedade Brasileira de Hepatologia; Consenso de Baveno VII; AASLD Practice Guidance",
     "mnemonicos": [
       {
         "palavra": "CHILD-PUGH",
@@ -1574,28 +1594,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Causas mais comuns",
-        "conteudo": "Hepatite viral crônica, doença hepática alcoólica e doença hepática gordurosa não alcoólica são causas frequentes de cirrose."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A cirrose representa o estágio final comum de diversas doenças hepáticas crônicas, caracterizado por fibrose difusa e formação de nódulos de regeneração que distorcem a arquitetura hepática normal, causando hipertensão portal (pelo aumento da resistência ao fluxo sinusoidal) e insuficiência hepatocelular progressiva. No Brasil, as causas mais comuns incluem hepatite viral crônica (B e C), doença hepática alcoólica e, cada vez mais relevante, a doença hepática gordurosa associada à disfunção metabólica (antiga NASH)."
       },
       {
-        "titulo": "Principais complicações",
-        "conteudo": "Ascite, encefalopatia hepática, varizes esofágicas com risco de hemorragia digestiva alta varicosa, e síndrome hepatorrenal."
+        "titulo": "Quadro clínico",
+        "conteudo": "As manifestações decorrem tanto da insuficiência hepatocelular (icterícia, coagulopatia, encefalopatia) quanto da hipertensão portal (ascite, varizes esofagogástricas, esplenomegalia, circulação colateral). A encefalopatia hepática manifesta-se com alteração do comportamento, confusão mental e, em graus avançados, coma, frequentemente precipitada por fatores identificáveis (infecção, sangramento digestivo, constipação, uso de sedativos, distúrbio eletrolítico)."
       },
       {
-        "titulo": "Avaliação de gravidade",
-        "conteudo": "Os escores de Child-Pugh e MELD classificam a gravidade da doença hepática e auxiliam na priorização para transplante."
+        "titulo": "Exame físico",
+        "conteudo": "Estigmas de hepatopatia crônica incluem icterícia, aranhas vasculares (spiders), eritema palmar, ginecomastia, atrofia testicular, circulação colateral abdominal (\"cabeça de medusa\") e esplenomegalia. Asterixis (flapping tremor, tremor grosseiro de extensão-flexão ao manter os braços estendidos e mãos dorsifletidas) é achado característico de encefalopatia hepática, embora não seja exclusivo dela (também presente em outras encefalopatias metabólicas)."
       },
       {
-        "titulo": "Tratamento das complicações",
-        "conteudo": "Diuréticos e restrição de sódio na ascite; lactulose e rifaximina na encefalopatia hepática; profilaxia e tratamento endoscópico das varizes esofágicas."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico de cirrose combina achados clínicos, laboratoriais (plaquetopenia, coagulopatia, hipoalbuminemia) e de imagem (ultrassonografia com nodularidade hepática, esplenomegalia), sendo a biópsia hepática o padrão-ouro histológico, reservada a casos de dúvida diagnóstica pela sua invasividade. Elastografia hepática (FibroScan) é método não invasivo cada vez mais utilizado para estimar o grau de fibrose. A classificação de Child-Pugh (bilirrubina, albumina, INR, ascite, encefalopatia) e o escore MELD (creatinina, bilirrubina, INR, sódio) estratificam gravidade e prognóstico, sendo o MELD utilizado para priorização em fila de transplante hepático."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O manejo das complicações é dirigido a cada uma: ascite é tratada com restrição de sódio e diurético (espironolactona associada a furosemida); encefalopatia hepática é tratada com lactulose (reduz absorção de amônia) e, em casos refratários, rifaximina associada; varizes esofágicas são rastreadas por endoscopia em todo cirrótico ao diagnóstico, com profilaxia primária por betabloqueador não seletivo ou ligadura elástica conforme o risco. Peritonite bacteriana espontânea (infecção do líquido ascítico sem foco cirúrgico identificável) é tratada com antibiótico empírico (cefalosporina de terceira geração) e albumina endovenosa, que reduz o risco de síndrome hepatorrenal associada. O transplante hepático é o único tratamento definitivo para cirrose descompensada."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Encefalopatia hepática avançada ou peritonite bacteriana espontânea</span> são complicações graves que exigem tratamento hospitalar imediato."
+        "conteudo": "<span class=\"red-flag\">Febre, dor abdominal ou piora inexplicada da encefalopatia em cirrótico com ascite</span> deve motivar paracentese diagnóstica imediata para excluir peritonite bacteriana espontânea (contagem de neutrófilos no líquido ascítico ≥250células/mm³ confirma o diagnóstico) — o atraso no diagnóstico e tratamento associa-se a alta mortalidade."
       },
       {
-        "titulo": "Outras causas de hepatopatia crônica",
-        "conteudo": "Além das hepatites virais e do álcool, outras causas relevantes de hepatopatia crônica incluem a doença hepática gordurosa associada à disfunção metabólica (esteatose hepática/NASH, hoje a causa mais prevalente em muitos países, associada a obesidade e síndrome metabólica), a hepatite autoimune (predomínio em mulheres, autoanticorpos como FAN e anti-músculo liso, responde a corticoide/imunossupressor), a hemocromatose hereditária (sobrecarga de ferro, tríade clássica de cirrose, diabetes e hiperpigmentação cutânea) e a doença de Wilson (acúmulo de cobre, mais comum em jovens, podendo cursar com manifestações neuropsiquiátricas e o anel de Kayser-Fleischer à córnea)."
+        "titulo": "Dicas de prova",
+        "conteudo": "A classificação de Child-Pugh e o escore MELD (seus componentes e uso na fila de transplante) são cobrança certa. O critério de neutrófilos ≥250/mm³ no líquido ascítico para diagnóstico de PBE, e a indicação de albumina associada ao antibiótico nesse contexto (reduzindo síndrome hepatorrenal), são pontos frequentemente exigidos em questões de caso clínico."
       }
     ]
   },
@@ -3310,7 +3334,7 @@
     "titulo": "Doença do Refluxo Gastroesofágico (DRGE)",
     "resumo": "Sintomas típicos e de alarme, tratamento empírico com IBP e principais complicações (esofagite, Barrett).",
     "revisado": false,
-    "fonte": "Consenso Brasileiro de Doença do Refluxo Gastroesofágico — FBG 2023; American College of Gastroenterology Guideline for GERD 2022",
+    "fonte": "Federação Brasileira de Gastroenterologia; ACG Clinical Guideline for the Diagnosis and Management of GERD",
     "mnemonicos": [
       {
         "palavra": "Sinais de alarme",
@@ -3319,24 +3343,32 @@
     ],
     "secoes": [
       {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença do refluxo gastroesofágico resulta do refluxo anormal e recorrente de conteúdo gástrico para o esôfago, principalmente por relaxamentos transitórios inapropriados do esfíncter esofágico inferior, hérnia de hiato associada, ou hipotonia esfincteriana basal. A exposição crônica da mucosa esofágica ao ácido e à pepsina causa esofagite erosiva em uma parcela dos pacientes, e pode levar, ao longo do tempo, ao esôfago de Barrett (metaplasia intestinal da mucosa esofágica distal), condição pré-maligna que aumenta o risco de adenocarcinoma de esôfago."
+      },
+      {
         "titulo": "Quadro clínico",
-        "conteudo": "Sintomas típicos: pirose (queimação retroesternal) e regurgitação. Sintomas atípicos/extraesofágicos: tosse crônica, rouquidão, asma de difícil controle e dor torácica não cardíaca — podem ocorrer mesmo sem os sintomas típicos."
+        "conteudo": "Pirose (queimação retroesternal ascendente) e regurgitação ácida são os sintomas típicos e mais sensíveis para o diagnóstico clínico presuntivo. Sintomas atípicos/extraesofágicos incluem tosse crônica, rouquidão, globus faríngeo e exacerbação de asma — de reconhecimento mais difícil e frequentemente subdiagnosticados como manifestação de DRGE."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Geralmente normal na DRGE não complicada. A presença de sinais de alarme (disfagia, odinofagia, perda de peso, sangramento digestivo, anemia) exige investigação endoscópica prioritária, não devendo ser tratada apenas empiricamente como refluxo simples."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Quadro clínico típico, sem sinais de alarme, permite tratamento empírico com inibidor de bomba de prótons (IBP) sem necessidade de exames complementares iniciais. Endoscopia digestiva alta é reservada para sinais de alarme (disfagia, emagrecimento, sangramento, anemia, idade avançada com sintoma novo) ou refratariedade ao tratamento. pHmetria/impedanciometria esofágica auxilia em casos duvidosos ou refratários."
+        "conteudo": "Em pacientes jovens com sintomas típicos e sem sinais de alarme, o diagnóstico pode ser presuntivo, com prova terapêutica empírica com IBP. Endoscopia digestiva alta é indicada diante de sinais de alarme, sintomas refratários ao tratamento empírico, ou para rastreamento de esôfago de Barrett em pacientes de risco (sintomas crônicos de longa data, especialmente homens brancos acima de 50 anos com fatores de risco adicionais). A pHmetria esofágica de 24h (com ou sem impedanciometria) é o exame padrão-ouro para confirmação objetiva de refluxo patológico, reservada a casos de dúvida diagnóstica ou antes de considerar cirurgia antirrefluxo."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "IBP em dose padrão por 4-8 semanas é a primeira linha. Medidas comportamentais complementares: elevação da cabeceira da cama, evitar deitar-se nas 2-3h após refeições, perda de peso e redução de gatilhos alimentares (café, álcool, alimentos gordurosos)."
-      },
-      {
-        "titulo": "Complicações",
-        "conteudo": "Esofagite erosiva, estenose péptica e esôfago de Barrett (metaplasia intestinal do epitélio esofágico distal) — este último é fator de risco para adenocarcinoma de esôfago e exige vigilância endoscópica periódica conforme o grau de displasia."
+        "conteudo": "Medidas comportamentais (elevação da cabeceira, evitar refeições próximas ao deitar, redução de peso, evitar alimentos desencadeantes) associadas a inibidor de bomba de prótons são a base do tratamento na maioria dos pacientes. Cirurgia antirrefluxo (fundoplicatura) é reservada a casos refratários ao tratamento clínico otimizado, intolerância à medicação de longo prazo, ou preferência do paciente por tratamento definitivo, sempre após confirmação objetiva de refluxo patológico."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Disfagia progressiva, odinofagia, emagrecimento não intencional, sangramento digestivo ou anemia</span> em paciente com sintomas de refluxo exigem endoscopia digestiva alta para afastar malignidade antes de simplesmente escalar o tratamento clínico."
+        "conteudo": "<span class=\"red-flag\">Disfagia progressiva, perda de peso, sangramento digestivo ou anemia associados a sintomas de refluxo</span>, especialmente em paciente acima de 50 anos, exigem endoscopia digestiva alta prioritária para exclusão de complicações (estenose péptica, esôfago de Barrett, neoplasia) antes de qualquer tratamento apenas empírico."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A indicação de endoscopia diante de sinais de alarme (versus tratamento empírico em jovem sem sinais de alarme) é cobrança certa. O esôfago de Barrett como condição pré-maligna decorrente de DRGE crônica não tratada, e a necessidade de vigilância endoscópica periódica quando diagnosticado, são pontos frequentemente exigidos em questões sobre complicações a longo prazo."
       }
     ]
   },
@@ -3347,7 +3379,7 @@
     "titulo": "Doença Inflamatória Intestinal: Retocolite Ulcerativa e Doença de Crohn",
     "resumo": "Diferenças de padrão de acometimento entre RCU e Crohn, manifestações extraintestinais e tratamento escalonado.",
     "revisado": false,
-    "fonte": "Consenso PANCCO 2023; ECCO Guidelines for Ulcerative Colitis and Crohn's Disease",
+    "fonte": "Federação Brasileira de Gastroenterologia — Consenso de Doença Inflamatória Intestinal; ECCO Guidelines (Crohn's Disease e Ulcerative Colitis)",
     "mnemonicos": [
       {
         "palavra": "Crohn Salteia, Colite Continua",
@@ -3356,24 +3388,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Retocolite ulcerativa",
-        "conteudo": "Acometimento contínuo e ascendente a partir do reto, restrito à mucosa e submucosa do cólon. Sintomas típicos: diarreia sanguinolenta, tenesmo e urgência evacuatória."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença inflamatória intestinal compreende duas entidades principais com padrões distintos de acometimento: a retocolite ulcerativa, que afeta exclusivamente o cólon de forma contínua e ascendente a partir do reto, com inflamação restrita à mucosa; e a doença de Crohn, que pode acometer qualquer segmento do trato digestivo (da boca ao ânus, mais comumente o íleo terminal), de forma descontínua (\"lesões salteadas\") e transmural (todas as camadas da parede intestinal), o que explica sua maior propensão a fístulas, abscessos e estenoses."
       },
       {
-        "titulo": "Doença de Crohn",
-        "conteudo": "Acometimento salteado (áreas de mucosa normal entre segmentos afetados), transmural, podendo atingir qualquer segmento do tubo digestivo — da boca ao ânus, mais comumente o íleo terminal. A transmuralidade predispõe a fístulas, estenoses e abscessos, complicações menos típicas da retocolite ulcerativa."
+        "titulo": "Quadro clínico",
+        "conteudo": "Retocolite ulcerativa manifesta-se predominantemente com diarreia sanguinolenta, urgência e tenesmo retal, refletindo o acometimento cólico/retal contínuo. Doença de Crohn apresenta-se de forma mais heterogênea, com dor abdominal, diarreia (nem sempre sanguinolenta), perda de peso e manifestações perianais (fístulas, abscessos, fissuras) quando há acometimento dessa região — estas últimas praticamente exclusivas de Crohn, raras na retocolite ulcerativa."
       },
       {
-        "titulo": "Manifestações extraintestinais",
-        "conteudo": "Comuns a ambas as doenças: artrite periférica, eritema nodoso, pioderma gangrenoso e uveíte. A colangite esclerosante primária tem associação mais forte com a retocolite ulcerativa."
+        "titulo": "Exame físico",
+        "conteudo": "Dor à palpação abdominal (mais localizada em fossa ilíaca direita na Crohn ileal) e sinais de doença perianal (fístulas, plicomas edemaciados, abscessos) são mais característicos de Crohn. Manifestações extraintestinais compartilhadas por ambas incluem artrite periférica, eritema nodoso, pioderma gangrenoso e uveíte, refletindo a natureza sistêmica imunomediada dessas doenças."
       },
       {
-        "titulo": "Diagnóstico e tratamento",
-        "conteudo": "Colonoscopia com biópsia confirma o diagnóstico e ajuda a diferenciar as duas condições. Tratamento escalonado conforme gravidade: aminossalicilatos para RCU leve, corticoide para indução de remissão na crise, imunomoduladores (azatioprina) e biológicos (anti-TNF, anti-integrina) para manutenção e casos moderados a graves."
+        "titulo": "Diagnóstico",
+        "conteudo": "A colonoscopia com biópsia é o exame central para diagnóstico e diferenciação: retocolite ulcerativa mostra inflamação contínua limitada à mucosa, começando no reto; Crohn mostra lesões salteadas, úlceras aftoides, e o aspecto característico em \"pedra de calçamento\" (cobblestone) nos casos mais avançados, com acometimento transmural visível em exames de imagem complementares (entero-RM ou entero-TC) quando há suspeita de acometimento de intestino delgado não alcançável pela colonoscopia. Calprotectina fecal é marcador não invasivo útil para triagem de atividade inflamatória e monitorização de resposta terapêutica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento segue abordagem escalonada conforme gravidade: aminossalicilatos (mesalazina) para casos leves de retocolite ulcerativa (papel mais limitado em Crohn), corticoide para indução de remissão em surtos moderados/graves (não indicado para manutenção pelos efeitos colaterais a longo prazo), imunomoduladores (azatioprina) e, principalmente, terapias biológicas (anti-TNF como infliximabe/adalimumabe, e classes mais recentes) para casos moderados a graves ou refratários, atualmente introduzidas mais precocemente em pacientes de alto risco. Cirurgia é potencialmente curativa na retocolite ulcerativa (colectomia total remove a doença) mas não curativa na Crohn (recorrência é comum mesmo após ressecção do segmento acometido)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Megacólon tóxico</span> (dilatação colônica aguda com toxemia sistêmica) é complicação grave, mais associada à retocolite ulcerativa, com risco de perfuração — exige internação e avaliação cirúrgica imediata."
+        "conteudo": "<span class=\"red-flag\">Distensão abdominal importante, toxemia sistêmica e dor abdominal intensa em paciente com retocolite ulcerativa em atividade</span> sugere megacólon tóxico, complicação grave com risco de perfuração, exigindo manejo intensivo e avaliação cirúrgica precoce."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre retocolite ulcerativa (contínua, mucosa, cólon/reto, curável por colectomia) e doença de Crohn (salteada, transmural, qualquer segmento, fístulas/abscessos, não curável cirurgicamente) é a cobrança mais fundamental e recorrente do tema. As manifestações extraintestinais compartilhadas (artrite, eritema nodoso, pioderma gangrenoso, uveíte) também são frequentemente exploradas em questões de associação."
       }
     ]
   },
@@ -3384,7 +3424,7 @@
     "titulo": "Hepatites Virais (A, B e C)",
     "resumo": "Vias de transmissão, marcadores sorológicos da hepatite B e tratamento atual da hepatite C com antivirais de ação direta.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Hepatite B 2023 e Hepatite C 2023",
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Hepatites Virais; Sociedade Brasileira de Hepatologia",
     "mnemonicos": [
       {
         "palavra": "ABC dos marcadores de Hepatite B",
@@ -3393,24 +3433,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Hepatite A",
-        "conteudo": "Transmissão fecal-oral. Geralmente autolimitada, sem evolução para cronicidade, e mais grave quando adquirida na idade adulta do que na infância. A vacina contra hepatite A integra o calendário infantil do PNI."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A hepatite A é transmitida por via fecal-oral, causando doença aguda autolimitada na grande maioria dos casos, sem cronificação. A hepatite B é transmitida por via parenteral, sexual e vertical (mãe-filho), podendo cronificar (mais frequentemente quando adquirida no período perinatal/infância) e evoluir para cirrose e carcinoma hepatocelular a longo prazo. A hepatite C é transmitida predominantemente por via parenteral, com alta taxa de cronificação (cerca de 70-80% dos infectados), sendo hoje curável com antivirais de ação direta na quase totalidade dos casos tratados."
       },
       {
-        "titulo": "Hepatite B",
-        "conteudo": "Transmissão parenteral, sexual e vertical (mãe-filho). Marcadores sorológicos essenciais: HBsAg (indica infecção atual), Anti-HBc IgM (infecção aguda recente), Anti-HBs (imunidade, seja vacinal ou pós-infecção) e HBeAg (marcador de replicação viral ativa e maior infectividade). O risco de cronificação é inversamente proporcional à idade da infecção, chegando a 90% em recém-nascidos infectados verticalmente."
+        "titulo": "Quadro clínico",
+        "conteudo": "A infecção aguda por qualquer um dos vírus pode ser assintomática ou apresentar-se com mal-estar, náuseas, icterícia, colúria e acolia fecal, geralmente autolimitada. A hepatite crônica (B e C) é predominantemente assintomática por anos a décadas, sendo frequentemente identificada apenas quando já há complicação estabelecida (cirrose descompensada) ou em rastreamento de rotina, o que reforça a importância do rastreamento ativo em populações de risco."
       },
       {
-        "titulo": "Hepatite C",
-        "conteudo": "Transmissão predominantemente parenteral. Alta taxa de cronificação (cerca de 70-85% dos infectados). Diagnóstico com anti-HCV (triagem) seguido de HCV-RNA (confirma viremia ativa). O tratamento atual com antivirais de ação direta (AAD), em esquemas orais de curta duração (8-12 semanas), alcança cura virológica em mais de 95% dos casos."
+        "titulo": "Exame físico",
+        "conteudo": "Icterícia e hepatomegalia dolorosa são achados possíveis na fase aguda. Na hepatite crônica avançada, os estigmas de hepatopatia crônica (descritos no tema de cirrose) podem já estar presentes ao diagnóstico, refletindo anos de infecção não reconhecida previamente."
       },
       {
-        "titulo": "Prevenção",
-        "conteudo": "Vacinação universal contra hepatite B, incluindo dose ao nascer nas primeiras 12-24h de vida para prevenir a transmissão vertical. Não há vacina disponível contra a hepatite C — a prevenção depende de redução de risco de exposição parenteral."
+        "titulo": "Diagnóstico",
+        "conteudo": "Sorologias específicas definem o diagnóstico e o estágio da infecção: anti-HAV IgM confirma hepatite A aguda; para hepatite B, o HBsAg positivo indica infecção ativa (aguda ou crônica), o anti-HBc IgM diferencia infecção aguda recente de crônica, e o HBeAg/anti-HBe e a carga viral (HBV-DNA) avaliam replicação viral e orientam tratamento; para hepatite C, anti-HCV é triagem (pode ser falso-positivo ou refletir infecção passada resolvida), sendo a confirmação de infecção ativa feita pela detecção do HCV-RNA."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Hepatite A aguda tem tratamento apenas de suporte, sem antiviral específico, com prevenção eficaz por vacinação. Hepatite B crônica com indicação de tratamento (carga viral elevada, atividade inflamatória, cirrose) é tratada com análogos de nucleos(t)ídeos (tenofovir, entecavir), que suprimem a replicação viral mas raramente curam definitivamente a infecção (a erradicação completa do HBsAg é rara). Hepatite C tem tratamento com antivirais de ação direta (esquemas orais de 8-12 semanas), com taxas de cura virológica sustentada superiores a 95% — verdadeira revolução terapêutica na última década, hoje disponível pelo SUS."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Insuficiência hepática aguda</span> (icterícia + coagulopatia + encefalopatia) é complicação rara, porém grave, mais associada à hepatite B e à hepatite E em gestantes — exige avaliação urgente para transplante hepático."
+        "conteudo": "Hepatite aguda com sinais de insuficiência hepática fulminante (coagulopatia grave, encefalopatia, icterícia progressiva) é emergência com necessidade de avaliação urgente para transplante hepático — complicação rara mas grave, mais associada a hepatite B e, particularmente, à coinfecção com hepatite D (delta)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A interpretação do painel sorológico da hepatite B (HBsAg, anti-HBc IgM/IgG, HBeAg/anti-HBe, anti-HBs) é cobrança extremamente frequente e considerada um dos temas mais \"decorados\" da gastroenterologia/infectologia em provas de residência. As altas taxas de cura da hepatite C com antivirais de ação direta, disponíveis pelo SUS, também são frequentemente exploradas como atualização terapêutica relevante."
       }
     ]
   },
@@ -7065,7 +7113,7 @@
     "titulo": "Síndrome do Intestino Irritável",
     "resumo": "Critérios de Roma IV, subtipos por padrão intestinal e os sinais de alarme que afastam o diagnóstico funcional.",
     "revisado": false,
-    "fonte": "Federação Brasileira de Gastroenterologia; ACG Clinical Guideline: Management of Irritable Bowel Syndrome",
+    "fonte": "Federação Brasileira de Gastroenterologia; Critérios de Roma IV",
     "mnemonicos": [
       {
         "palavra": "Roma IV",
@@ -7074,24 +7122,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e critérios diagnósticos",
-        "conteudo": "Distúrbio funcional gastrointestinal caracterizado por dor abdominal recorrente associada a alteração do hábito intestinal, conforme os critérios de Roma IV."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A síndrome do intestino irritável é um distúrbio funcional gastrointestinal, sem alteração estrutural ou bioquímica identificável, envolvendo alteração da motilidade intestinal, hipersensibilidade visceral e disfunção do eixo intestino-cérebro, frequentemente modulada por fatores psicossociais (estresse, ansiedade) e, em uma parcela dos casos, desencadeada por infecção gastrointestinal prévia (SII pós-infecciosa)."
       },
       {
-        "titulo": "Subtipos",
-        "conteudo": "Classificada conforme o padrão predominante das fezes em SII com predomínio de constipação, com predomínio de diarreia, padrão misto, ou não classificada."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor abdominal recorrente associada a alteração do hábito intestinal (diarreia, constipação, ou padrão misto/alternante), com melhora característica após a evacuação — esse alívio pós-evacuatório é um dos elementos mais valorizados na caracterização clínica. Sintomas costumam flutuar em intensidade, com períodos de exacerbação frequentemente relacionados a estresse emocional ou determinados alimentos."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Tipicamente normal, sem achados específicos — a ausência de anormalidades ao exame físico e a ausência de sinais de alarme são, na verdade, parte fundamental do raciocínio diagnóstico dessa condição funcional. Discreta sensibilidade abdominal difusa à palpação pode estar presente, sem sinais de irritação peritoneal."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Eminentemente clínico, baseado nos critérios de Roma IV, na ausência de sinais de alarme. Exames complementares são solicitados principalmente para EXCLUIR diagnósticos orgânicos, não para confirmar SII."
+        "conteudo": "O diagnóstico é clínico, baseado nos critérios de Roma IV (dor abdominal recorrente, em média pelo menos 1 dia por semana nos últimos 3 meses, associada a pelo menos 2 dos seguintes: relacionada à evacuação, associada a mudança na frequência das evacuações, ou associada a mudança na forma/aspecto das fezes), sem necessidade de investigação extensa em pacientes jovens sem sinais de alarme (perda de peso, sangramento, anemia, história familiar de câncer colorretal ou doença inflamatória intestinal, início após os 50 anos) — a presença de qualquer sinal de alarme exige investigação direcionada antes de assumir o diagnóstico funcional."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Individualizado conforme o subtipo predominante — fibras solúveis e antiespasmódicos para dor/constipação, loperamida para diarreia. Modificações dietéticas (dieta pobre em FODMAPs) têm boa evidência de benefício; suporte psicológico quando indicado, dada a forte associação com ansiedade/depressão."
+        "conteudo": "O tratamento é sintomático e individualizado conforme o padrão predominante: antiespasmódicos e dieta com baixo teor de FODMAPs para dor/distensão; laxantes para o subtipo com predomínio de constipação; antidiarreicos/loperamida para o subtipo com predomínio de diarreia. Abordagem da esfera psicológica (terapia cognitivo-comportamental, manejo do estresse) tem papel relevante pela forte interação entre sintomas intestinais e fatores emocionais nessa condição."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Sangramento retal, anemia, perda de peso não intencional, início após os 50 anos, ou história familiar de câncer colorretal/DII são sinais de alarme que NÃO são compatíveis com SII isolada e exigem investigação de doença orgânica."
+        "conteudo": "Perda de peso não intencional, sangramento retal, anemia, início dos sintomas após os 50 anos, ou história familiar de câncer colorretal/doença inflamatória intestinal em paciente com quadro sugestivo de SII devem motivar investigação complementar (colonoscopia) antes de firmar o diagnóstico funcional, para excluir doença orgânica subjacente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os critérios de Roma IV e a lista de sinais de alarme que contraindicam o diagnóstico puramente clínico são cobrança certa. É importante lembrar que a SII é diagnóstico positivo (baseado em critérios clínicos característicos), e não apenas um \"diagnóstico de exclusão\" que exige extensa investigação negativa em todo paciente — conceito atualizado frequentemente cobrado em provas mais recentes."
       }
     ]
   },
@@ -7102,7 +7158,7 @@
     "titulo": "Hemorragia Digestiva Baixa",
     "resumo": "Doença diverticular como causa mais comum, colonoscopia como exame de escolha e a importância de excluir origem alta.",
     "revisado": false,
-    "fonte": "Federação Brasileira de Gastroenterologia; ACG Clinical Guideline: Management of Acute Lower Gastrointestinal Bleeding",
+    "fonte": "Sociedade Brasileira de Coloproctologia; ACG Clinical Guideline: Management of Patients With Acute Lower GI Bleeding",
     "mnemonicos": [
       {
         "palavra": "Diverticulose sangra, diverticulite dói",
@@ -7111,24 +7167,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e etiologia",
-        "conteudo": "Sangramento originado distalmente ao ângulo de Treitz. Principais causas: doença diverticular dos cólons (mais comum), angiodisplasia (mais comum em idosos), doença hemorroidária, neoplasia colorretal e doença inflamatória intestinal."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A hemorragia digestiva baixa origina-se de lesões distais ao ligamento de Treitz, sendo a doença diverticular dos cólons a causa mais comum em adultos (sangramento por erosão de vaso na base de um divertículo, geralmente indolor), seguida por angiodisplasias (mais comuns em idosos, frequentemente em cólon direito), doença hemorroidária, neoplasias colorretais e doença inflamatória intestinal."
       },
       {
-        "titulo": "Apresentação clínica",
-        "conteudo": "Hematoquezia é a apresentação típica. Sangramento maciço de origem alta também pode se apresentar como hematoquezia (por trânsito acelerado), por isso é importante excluir origem alta em sangramentos volumosos com instabilidade."
+        "titulo": "Quadro clínico",
+        "conteudo": "Hematoquezia (sangue vivo ou vermelho-escuro nas fezes) é a apresentação típica; melena pode ocorrer em sangramentos de intestino delgado ou cólon direito de trânsito mais lento. A maioria dos episódios de sangramento diverticular é autolimitada e indolor, cessando espontaneamente na maior parte dos casos, embora a recorrência seja possível."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Toque retal é etapa obrigatória da avaliação inicial, tanto para confirmar a presença de sangue quanto para identificar lesões anorretais baixas (hemorroidas, fissura, massa) que possam explicar o sangramento sem necessidade de investigação mais invasiva. Sinais de instabilidade hemodinâmica devem ser avaliados como em qualquer sangramento digestivo, independentemente da origem."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Colonoscopia é o exame de escolha na maioria dos casos, idealmente com preparo intestinal adequado. Em sangramento maciço com instabilidade, angiotomografia ou angiografia podem localizar o sítio mais rapidamente."
+        "conteudo": "É fundamental excluir uma origem alta antes de assumir definitivamente hemorragia digestiva baixa, já que sangramentos altos volumosos podem se manifestar como hematoquezia — sondagem nasogástrica com aspirado limpo ou endoscopia digestiva alta ajudam a descartar essa possibilidade em casos de dúvida. Após exclusão de origem alta, a colonoscopia é o exame de escolha na maioria dos casos estáveis, sendo diagnóstica e potencialmente terapêutica; angiotomografia ou angiografia são reservadas a sangramentos muito volumosos/ativos onde a colonoscopia não é viável ou não localiza a origem."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "A maioria dos episódios por diverticulose cessa espontaneamente. Tratamento endoscópico, embolização angiográfica ou cirurgia são reservados para sangramento persistente/recorrente ou instabilidade refratária."
+        "conteudo": "A maioria dos episódios de sangramento diverticular resolve espontaneamente com suporte clínico (hidratação, correção de coagulopatia se presente). Sangramento ativo identificado à colonoscopia pode ser tratado endoscopicamente (clipagem, injeção, eletrocoagulação). Casos refratários ou muito volumosos podem necessitar de embolização angiográfica ou, raramente, cirurgia (colectomia segmentar ou subtotal, quando a origem não pode ser localizada e o sangramento persiste)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hematoquezia volumosa associada a instabilidade hemodinâmica</span> exige reanimação volêmica imediata e consideração de origem alta antes de assumir HDB isoladamente."
+        "conteudo": "<span class=\"red-flag\">Hematoquezia volumosa associada a instabilidade hemodinâmica</span> exige ressuscitação volêmica imediata e investigação urgente, com exclusão prioritária de origem alta antes de assumir definitivamente uma causa baixa — essa é uma etapa frequentemente negligenciada que pode atrasar o diagnóstico correto."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A necessidade de excluir origem alta antes de confirmar HDB (já que sangramento alto volumoso pode se manifestar como hematoquezia) é cobrança recorrente e importante armadilha de prova. A diverticulose como causa mais comum de HDB em adultos, tipicamente indolor e autolimitada, também é frequentemente testada em questões de diagnóstico diferencial."
       }
     ]
   },
@@ -7139,7 +7203,7 @@
     "titulo": "Câncer Gástrico e de Esôfago",
     "resumo": "H. pylori no câncer gástrico, os dois subtipos histológicos do câncer de esôfago e a disfagia progressiva como sinal de alarme.",
     "revisado": false,
-    "fonte": "Instituto Nacional de Câncer (INCA); NCCN Guidelines for Gastric and Esophageal Cancer",
+    "fonte": "Instituto Nacional de Câncer (INCA); Sociedade Brasileira de Cirurgia Oncológica; NCCN Guidelines for Gastric and Esophageal Cancer",
     "mnemonicos": [
       {
         "palavra": "Barrett vira adenocarcinoma",
@@ -7148,24 +7212,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Câncer gástrico",
-        "conteudo": "Adenocarcinoma é o tipo histológico mais comum. Fatores de risco: infecção por Helicobacter pylori, dieta rica em alimentos defumados/salgados, tabagismo e história familiar. Frequentemente assintomático até fases avançadas."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O câncer gástrico está fortemente associado à infecção crônica por Helicobacter pylori (principal fator de risco identificável, atuando através de gastrite crônica, atrofia e metaplasia intestinal — sequência de Correa), além de dieta rica em sal/defumados e história familiar. O câncer de esôfago tem dois subtipos principais com fatores de risco distintos: carcinoma epidermoide (associado a tabagismo e etilismo, mais comum em terço médio/superior) e adenocarcinoma (associado ao esôfago de Barrett secundário a DRGE crônica, mais comum em terço distal, hoje o subtipo mais prevalente em países ocidentais)."
       },
       {
-        "titulo": "Sinais de alarme e investigação",
-        "conteudo": "Dispepsia associada a sinais de alarme (emagrecimento, disfagia, sangramento/anemia, massa palpável, idade avançada com sintoma novo) exige endoscopia digestiva alta com biópsia, não devendo ser tratada apenas empiricamente com IBP."
+        "titulo": "Quadro clínico",
+        "conteudo": "Ambas as neoplasias costumam ser assintomáticas em fases iniciais, com sintomas surgindo tipicamente em estágios já avançados: disfagia progressiva (primeiro para sólidos, depois líquidos, no câncer de esôfago), perda de peso significativa, saciedade precoce e dor epigástrica (câncer gástrico), e odinofagia em casos mais avançados. A apresentação tardia da maioria dos casos explica o prognóstico geralmente reservado dessas neoplasias."
       },
       {
-        "titulo": "Câncer de esôfago",
-        "conteudo": "Carcinoma epidermoide (associado a tabagismo, etilismo e líquidos muito quentes, mais comum no terço médio/superior) e adenocarcinoma (associado a DRGE crônica e esôfago de Barrett, mais comum no terço distal, incidência crescente)."
+        "titulo": "Exame físico",
+        "conteudo": "Frequentemente normal em fases iniciais. Linfonodo de Virchow (supraclavicular esquerdo) e nódulo periumbilical da irmã Maria José são sinais clássicos, porém tardios, de disseminação metastática de neoplasia gástrica. Caquexia e massa epigástrica palpável também sugerem doença avançada ao diagnóstico."
       },
       {
-        "titulo": "Quadro clínico e diagnóstico",
-        "conteudo": "Disfagia progressiva (inicialmente para sólidos, progredindo para líquidos) associada a emagrecimento é a apresentação clássica, geralmente já em fase avançada. Endoscopia digestiva alta com biópsia confirma o diagnóstico."
+        "titulo": "Diagnóstico",
+        "conteudo": "A endoscopia digestiva alta com biópsia é o exame padrão-ouro para ambas as neoplasias, permitindo visualização direta e confirmação histológica. Uma vez confirmado o diagnóstico, o estadiamento (tomografia de tórax/abdome, e ecoendoscopia para avaliação da profundidade de invasão da parede e linfonodos regionais) é essencial para definir a estratégia terapêutica e a ressecabilidade."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Em estágios iniciais e localizados, a ressecção cirúrgica (gastrectomia com linfadenectomia, ou esofagectomia) com intenção curativa é o tratamento de escolha, frequentemente associada a quimioterapia perioperatória (antes e depois da cirurgia) para melhorar desfechos em tumores mais avançados localmente. Em doença metastática, o tratamento é paliativo, com quimioterapia sistêmica e, cada vez mais, terapias-alvo guiadas por perfil molecular do tumor (por exemplo, status de HER2 no câncer gástrico)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Disfagia progressiva com emagrecimento em paciente acima de 50 anos</span> deve ser investigada com endoscopia digestiva alta prioritária, mesmo na ausência de outros sinais de alarme."
+        "conteudo": "<span class=\"red-flag\">Disfagia progressiva, perda de peso significativa e anemia em paciente acima de 50 anos</span>, especialmente com fatores de risco (tabagismo, etilismo, DRGE crônica, H. pylori), deve motivar endoscopia digestiva alta prioritária — o atraso diagnóstico é o principal determinante do prognóstico reservado dessas neoplasias."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A associação entre H. pylori e câncer gástrico (sequência de Correa) e entre esôfago de Barrett/DRGE e adenocarcinoma esofágico são cobranças centrais e recorrentes. O linfonodo de Virchow e o nódulo da irmã Maria José como sinais clássicos (porém tardios) de disseminação metastática de câncer gástrico também são frequentemente exigidos em questões de semiologia."
       }
     ]
   },
@@ -8409,24 +8481,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Disfagia orofaríngea vs. esofágica",
-        "conteudo": "Disfagia orofaríngea (de transferência): dificuldade em iniciar a deglutição, com tosse, engasgo e regurgitação nasal — sugere causa neuromuscular (AVC, doenças neurodegenerativas). Disfagia esofágica: sensação de entalo após a deglutição, com sintomas surgindo segundos depois — sugere causa mecânica ou motora do próprio esôfago."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A disfagia orofaríngea (de transferência) decorre tipicamente de doenças neuromusculares que comprometem a fase voluntária inicial da deglutição (AVC, doenças neurodegenerativas, miastenia gravis). A disfagia esofágica pode ser mecânica/obstrutiva (estenose péptica, anel esofágico, neoplasia — tipicamente progressiva, primeiro para sólidos) ou motora (acalasia, espasmo esofágico difuso — tipicamente para sólidos e líquidos desde o início). A acalasia, o distúrbio motor primário mais estudado, caracteriza-se por perda do plexo mioentérico esofágico, causando ausência de peristaltismo do corpo esofágico e relaxamento incompleto do esfíncter esofágico inferior."
       },
       {
-        "titulo": "Padrão de disfagia mecânica vs. motora",
-        "conteudo": "Disfagia mecânica (obstrutiva): tipicamente progressiva, iniciando com sólidos e evoluindo para líquidos (estenose péptica, anel esofágico, neoplasia). Disfagia motora: acomete sólidos e líquidos desde o início, muitas vezes intermitente (acalasia, espasmo esofágico difuso)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Disfagia orofaríngea manifesta-se com dificuldade em iniciar a deglutição, tosse, engasgo e regurgitação nasal, com sintomas surgindo quase imediatamente ao tentar deglutir. Disfagia esofágica manifesta-se como sensação de entalo alguns segundos após a deglutição; na acalasia especificamente, é comum a regurgitação de alimento não digerido, perda de peso progressiva e, por vezes, pirose paradoxal (sem verdadeiro refluxo ácido, pela estase de conteúdo no esôfago dilatado)."
       },
       {
-        "titulo": "Acalasia",
-        "conteudo": "Distúrbio motor primário caracterizado por perda do peristaltismo do corpo esofágico e relaxamento incompleto do esfíncter esofágico inferior. Manometria esofágica de alta resolução é o exame padrão-ouro; esofagograma baritado classicamente mostra a imagem em \"bico de pássaro\"."
+        "titulo": "Exame físico",
+        "conteudo": "Geralmente pouco revelador nas disfagias esofágicas isoladas. Na disfagia orofaríngea, sinais neurológicos associados (déficit focal, fraqueza) podem apontar para a causa subjacente (AVC, doença neuromuscular). Perda de peso e sinais de desnutrição podem estar presentes em disfagias crônicas de longa evolução, especialmente na acalasia avançada."
       },
       {
-        "titulo": "Tratamento da acalasia",
-        "conteudo": "Opções incluem dilatação pneumática endoscópica, miotomia de Heller (cirúrgica ou por via endoscópica — POEM) e, em casos selecionados, toxina botulínica (efeito temporário, reservada a pacientes não candidatos a procedimentos definitivos)."
+        "titulo": "Diagnóstico",
+        "conteudo": "A manometria esofágica de alta resolução é o exame padrão-ouro para diagnóstico de acalasia e outros distúrbios motores, classificando a acalasia em três subtipos conforme a classificação de Chicago (relevante para prognóstico e escolha terapêutica). O esofagograma baritado classicamente mostra a imagem em \"bico de pássaro\" (afilamento distal característico) na acalasia, e é útil como exame inicial de triagem. A endoscopia digestiva alta é sempre necessária antes de firmar o diagnóstico de acalasia primária, para excluir pseudoacalasia por neoplasia infiltrativa da junção esofagogástrica, que pode mimetizar o quadro clínico e manométrico."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Opções para acalasia incluem dilatação pneumática endoscópica, miotomia de Heller (cirúrgica, geralmente associada a procedimento antirrefluxo) e miotomia endoscópica peroral (POEM), com eficácia comparável entre as intervenções mais definitivas; toxina botulínica intraesfincteriana tem efeito temporário, reservada a pacientes não candidatos aos procedimentos definitivos pelo risco cirúrgico. Disfagia orofaríngea é manejada predominantemente com fonoterapia e adaptação da consistência alimentar, direcionada à causa neurológica de base."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Disfagia progressiva associada a perda de peso</span>, especialmente em paciente idoso, exige investigação endoscópica prioritária para exclusão de neoplasia esofágica antes de assumir causa funcional."
+        "conteudo": "<span class=\"red-flag\">Disfagia progressiva associada a perda de peso importante</span>, especialmente em paciente idoso com início recente dos sintomas, exige investigação endoscópica prioritária para exclusão de pseudoacalasia por neoplasia antes de assumir acalasia primária — a distinção tem implicações terapêuticas completamente diferentes."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre disfagia mecânica (progressiva, sólidos antes de líquidos) e motora (sólidos e líquidos desde o início, intermitente) é cobrança certa. A obrigatoriedade de exclusão de pseudoacalasia por endoscopia antes de firmar acalasia primária é um ponto de segurança diagnóstica frequentemente testado, assim como a imagem clássica em \"bico de pássaro\" no esofagograma."
       }
     ]
   },
@@ -8446,24 +8526,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação da icterícia",
-        "conteudo": "Pré-hepática (hemólise, predomínio de bilirrubina indireta), hepática (lesão hepatocelular, padrão misto) e pós-hepática/colestática (obstrução ao fluxo biliar, predomínio de bilirrubina direta associado a elevação de fosfatase alcalina e gama-GT)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A icterícia colestática resulta da incapacidade de excreção adequada da bile, seja por obstrução mecânica do fluxo biliar extra-hepático (coledocolitíase, neoplasias periampulares, estenoses) ou por disfunção da secreção biliar a nível intra-hepático (hepatites, cirrose biliar primária, colangite esclerosante, drogas). Em ambos os casos, há predomínio de bilirrubina direta (conjugada) no sangue, refletindo que a captação e conjugação hepática ocorreram normalmente, mas a excreção final está comprometida."
       },
       {
-        "titulo": "Investigação inicial da colestase",
-        "conteudo": "Ultrassonografia abdominal é o exame inicial de escolha para diferenciar dilatação de vias biliares (sugerindo obstrução extra-hepática) de vias biliares não dilatadas (sugerindo causa intra-hepática) — direcionando toda a investigação subsequente."
+        "titulo": "Quadro clínico",
+        "conteudo": "Icterícia, colúria (urina escura pela excreção renal de bilirrubina conjugada solúvel) e acolia/hipocolia fecal (fezes claras pela ausência de bilirrubina no intestino) compõem a tríade clássica da colestase. Prurido é sintoma comum e por vezes intenso, relacionado ao acúmulo de sais biliares na circulação. Dor abdominal em cólica sugere causa obstrutiva litiásica; icterícia progressiva e indolor é mais sugestiva de causa neoplásica."
       },
       {
-        "titulo": "Causas de colestase extra-hepática",
-        "conteudo": "Coledocolitíase é a causa mais comum; neoplasias periampulares (câncer de cabeça de pâncreas, colangiocarcinoma, ampuloma) devem ser consideradas especialmente em icterícia progressiva indolor associada a perda de peso."
+        "titulo": "Exame físico",
+        "conteudo": "Icterícia é mais facilmente identificada em escleras e mucosas antes de tornar-se evidente na pele. Vesícula biliar palpável e indolor associada a icterícia progressiva (sinal de Courvoisier) sugere obstrução neoplásica da via biliar distal (classicamente câncer de cabeça de pâncreas) — diferente da obstrução litiásica, onde a vesícula geralmente não é palpável por fibrose crônica de repetidos episódios inflamatórios prévios."
       },
       {
-        "titulo": "Causas de colestase intra-hepática",
-        "conteudo": "Hepatites (virais, medicamentosas, autoimunes), cirrose biliar primária e colangite esclerosante primária. Colangiorressonância e, quando necessário, colangiopancreatografia retrógrada endoscópica (CPRE) complementam a investigação e permitem intervenção terapêutica na via biliar."
+        "titulo": "Diagnóstico",
+        "conteudo": "A ultrassonografia abdominal é o exame inicial de escolha, diferenciando dilatação de vias biliares (sugerindo obstrução extra-hepática, direcionando a investigação para causas mecânicas) de vias biliares não dilatadas (sugerindo causa intra-hepática, direcionando para investigação de hepatopatias). Colangiorressonância magnética fornece detalhamento anatômico não invasivo da árvore biliar; a colangiopancreatografia retrógrada endoscópica (CPRE) combina diagnóstico de alta precisão com possibilidade terapêutica simultânea (papilotomia, extração de cálculo, colocação de prótese) nas causas obstrutivas."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Coledocolitíase é tratada por CPRE com papilotomia e extração do cálculo, geralmente seguida de colecistectomia. Neoplasias periampulares ressecáveis são tratadas cirurgicamente (duodenopancreatectomia/cirurgia de Whipple na região da cabeça pancreática); casos irressecáveis recebem drenagem biliar paliativa (prótese por CPRE) para alívio sintomático da colestase e do prurido. Colestase intra-hepática é tratada conforme a causa de base (imunossupressão em hepatite autoimune, ácido ursodesoxicólico em cirrose biliar primária)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Icterícia colestática progressiva e indolor associada a perda de peso</span> em paciente idoso é sinal de alarme para neoplasia periampular (síndrome de Courvoisier: vesícula palpável e indolor em paciente ictérico) e exige investigação urgente."
+        "conteudo": "<span class=\"red-flag\">Icterícia colestática progressiva e indolor associada a perda de peso</span> em paciente idoso é sinal de alarme para neoplasia periampular (síndrome de Courvoisier: vesícula palpável e indolor em paciente ictérico), exigindo investigação de imagem urgente para definição de ressecabilidade o quanto antes."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O sinal de Courvoisier (vesícula palpável indolor = neoplasia; vesícula não palpável em icterícia obstrutiva = mais provável litíase, pela fibrose vesicular crônica) é cobrança clássica e recorrente. A ultrassonografia como exame inicial para diferenciar dilatação (obstrutiva) de não dilatação (intra-hepática) das vias biliares também é ponto central e praticamente garantido em qualquer questão sobre síndrome colestática."
       }
     ]
   }
