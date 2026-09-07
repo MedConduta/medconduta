@@ -6,7 +6,7 @@
     "titulo": "Hipertensão Arterial Sistêmica (HAS)",
     "resumo": "Diagnóstico, estratificação de risco e tratamento inicial da HAS no adulto.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Hipertensão Arterial 2020 (atualização 2025); ESC/ESH Guidelines for the management of arterial hypertension",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Hipertensão Arterial 2020 (atualização 2025); ESC/ESH Guidelines 2023 for the management of arterial hypertension; ACC/AHA Guideline",
     "mnemonicos": [
       {
         "palavra": "LIFESTYLE",
@@ -16,31 +16,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A hipertensão arterial sistêmica resulta da elevação crônica e mantida da resistência vascular periférica, com participação do sistema renina-angiotensina-aldosterona, hiperatividade simpática, disfunção endotelial (redução da biodisponibilidade de óxido nítrico) e retenção renal de sódio e água. Na maioria dos casos (mais de 90%) é primária/essencial, de origem multifatorial, associando predisposição genética a fatores ambientais como excesso de sal, sedentarismo, obesidade e consumo de álcool. Ao longo do tempo, a sobrecarga pressórica crônica leva a remodelamento vascular e hipertrofia ventricular esquerda, substrato para as principais complicações de órgão-alvo."
+        "conteudo": "A hipertensão arterial sistêmica resulta da elevação crônica e mantida da resistência vascular periférica, associada em graus variáveis a aumento do débito cardíaco. Participam desse processo o sistema renina-angiotensina-aldosterona (vasoconstrição direta pela angiotensina II e retenção de sódio/água pela aldosterona), a hiperatividade simpática, a disfunção endotelial com redução da biodisponibilidade de óxido nítrico, e a rigidez arterial progressiva relacionada ao envelhecimento vascular. Em cerca de 90-95% dos casos é primária/essencial, poligênica e multifatorial, combinando predisposição genética a fatores ambientais (excesso de sódio, sedentarismo, obesidade, álcool, estresse crônico). As formas secundárias devem ser suspeitadas em hipertensão de início antes dos 30 ou após os 55 anos, hipertensão resistente, ou piora abrupta do controle: causas incluem doença renal parenquimatosa, estenose de artéria renal, hiperaldosteronismo primário (a causa secundária endócrina mais comum), feocromocitoma, síndrome de Cushing, apneia obstrutiva do sono e coarctação de aorta. A sobrecarga pressórica crônica gera remodelamento vascular concêntrico e hipertrofia ventricular esquerda concêntrica, substrato estrutural para insuficiência cardíaca com fração preservada, arritmias e eventos isquêmicos."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "A grande maioria dos pacientes é assintomática, sendo por isso chamada de \"assassina silenciosa\" — o diagnóstico costuma ser um achado em consulta de rotina. Quando presentes, os sintomas são inespecíficos (cefaleia occipital matinal, tontura, zumbido) e não se correlacionam bem com os níveis pressóricos. Muitas vezes a primeira manifestação clínica é justamente uma complicação de órgão-alvo já estabelecida: AVC, síndrome coronariana aguda, insuficiência cardíaca ou doença renal crônica."
+        "conteudo": "A grande maioria dos pacientes é assintomática por décadas, sendo por isso chamada de \"assassina silenciosa\" — o diagnóstico costuma ser um achado casual em consulta de rotina ou triagem. Quando presentes, os sintomas são inespecíficos (cefaleia occipital matinal, tontura, zumbido, epistaxe) e não se correlacionam bem com os níveis pressóricos absolutos. Frequentemente, a primeira manifestação clínica é uma complicação de órgão-alvo já estabelecida: AVC isquêmico ou hemorrágico, síndrome coronariana aguda, insuficiência cardíaca, doença renal crônica ou retinopatia hipertensiva avançada. A hipertensão resistente é definida como PA não controlada apesar do uso de três classes de anti-hipertensivos em doses otimizadas (incluindo um diurético), e deve motivar investigação ativa de causas secundárias e de má adesão terapêutica."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "A aferição correta da pressão arterial é o próprio exame diagnóstico: manguito de tamanho adequado, paciente sentado e em repouso por 5 minutos, com confirmação em pelo menos duas ocasiões. O exame de fundo de olho pode revelar retinopatia hipertensiva — achado praticamente patognomônico de lesão de órgão-alvo, com cruzamento arteriovenoso patológico e, em fases avançadas, hemorragias em chama de vela e papiledema. Ausculta de sopros abdominais/carotídeos e pulsos periféricos assimétricos levantam suspeita de causa secundária (estenose de artéria renal, coarctação de aorta)."
+        "conteudo": "A aferição correta da pressão arterial é o próprio exame diagnóstico central: manguito de tamanho adequado à circunferência do braço, paciente sentado com as costas apoiadas e pés no chão, sem falar, após 5 minutos de repouso, com a média de pelo menos duas medidas em cada consulta e confirmação em ocasiões distintas. O exame de fundo de olho pode revelar retinopatia hipertensiva (classificação de Keith-Wagener-Barker), achado praticamente patognomônico de lesão crônica de órgão-alvo: graus I-II mostram estreitamento arteriolar e cruzamento arteriovenoso patológico (sinal de Gunn); graus III-IV, mais graves, mostram hemorragias em chama de vela, exsudatos algodonosos e papiledema (este último caracterizando a hipertensão maligna). A palpação de pulsos periféricos assimétricos ou diminuídos em membros inferiores sugere coarctação de aorta ou doença arterial periférica associada; ausculta de sopros abdominais/carotídeos levanta suspeita de estenose de artéria renal ou doença aterosclerótica sistêmica."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é firmado por PA de consultório ≥140/90mmHg confirmada em pelo menos duas visitas, ou por medidas fora do consultório — a MAPA (Monitorização Ambulatorial da Pressão Arterial) é considerada o método padrão-ouro por avaliar o comportamento pressórico nas 24 horas, incluindo o descenso noturno, e é essencial para diagnosticar hipertensão do avental branco e hipertensão mascarada; a MRPA (residencial) é uma alternativa mais acessível. Investigação de lesão de órgão-alvo inclui ECG, função renal, relação albumina/creatinina urinária e fundoscopia."
+        "conteudo": "O diagnóstico é firmado por PA de consultório ≥140/90mmHg confirmada em pelo menos duas visitas em momentos diferentes, classificada pela diretriz brasileira em ótima (<120/80), normal (120-129/80-84), pré-hipertensão (130-139/85-89), estágio 1 (140-159/90-99), estágio 2 (160-179/100-109) e estágio 3 (≥180/110). A MAPA (Monitorização Ambulatorial da Pressão Arterial) é considerada o método padrão-ouro por avaliar o comportamento pressórico nas 24 horas — incluindo o descenso noturno fisiológico (queda de 10-20% da PA durante o sono, cuja ausência, o padrão \"non-dipper\", associa-se a pior prognóstico cardiovascular) — sendo essencial para diagnosticar hipertensão do avental branco (PA elevada no consultório, normal fora dele) e hipertensão mascarada (o oposto). A MRPA (residencial) é alternativa mais acessível, com protocolo padronizado de medidas. A investigação de lesão de órgão-alvo inclui ECG (hipertrofia ventricular esquerda pelo critério de Sokolow-Lyon ou Cornell), função renal com relação albumina/creatinina urinária, e fundoscopia; ecocardiograma é reservado a casos com suspeita clínica de repercussão cardíaca."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Mudança de estilo de vida (restrição de sódio, atividade física, perda de peso, redução de álcool) é indicada para todos. Farmacologicamente, IECA/BRA, bloqueadores de canal de cálcio e diuréticos tiazídicos são as classes de primeira linha; a diretriz brasileira já recomenda início com combinação de duas classes na maioria dos hipertensos estágio 2 ou de alto risco, em vez de monoterapia sequencial. A meta pressórica geral é <130/80mmHg para a maioria dos pacientes, individualizada em idosos frágeis."
+        "conteudo": "Mudança de estilo de vida (restrição de sódio para menos de 2g/dia, atividade física aeróbica regular, perda de peso, redução de álcool, dieta padrão DASH) é indicada a todos os pacientes, independentemente da necessidade de fármacos. As classes de primeira linha são IECA/BRA, bloqueadores de canal de cálcio (di-hidropiridínicos como anlodipino) e diuréticos tiazídicos/similares (clortalidona, indapamida); a diretriz brasileira de 2020 já recomenda início com combinação de duas classes em comprimido único na maioria dos hipertensos estágio 2 ou de alto risco cardiovascular, reservando a monoterapia a hipertensos estágio 1 de baixo risco. Betabloqueadores não são mais primeira linha isolada (exceto em comorbidades específicas como doença coronariana ou insuficiência cardíaca). A meta pressórica geral é <130/80mmHg para a maioria dos pacientes adultos, incluindo diabéticos e a maioria dos idosos ainda independentes; em idosos frágeis/octogenários, a meta pode ser individualizada para <150/90 conforme tolerância. Hipertensão resistente confirmada (após excluir pseudorresistência e má adesão) tem a espironolactona como quarta droga de escolha, com forte evidência de benefício adicional (estudo PATHWAY-2)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">PA acentuadamente elevada associada a sinais de lesão aguda de órgão-alvo</span> (dor torácica, déficit neurológico focal, dispneia por edema agudo de pulmão, encefalopatia hipertensiva) caracteriza emergência hipertensiva, com necessidade de redução pressórica imediata em ambiente hospitalar — diferente da urgência hipertensiva, sem lesão aguda em curso, que pode ser tratada por via oral em regime ambulatorial."
+        "conteudo": "<span class=\"red-flag\">PA acentuadamente elevada (tipicamente >180/120mmHg) associada a sinais de lesão aguda de órgão-alvo</span> (dor torácica, déficit neurológico focal, dispneia por edema agudo de pulmão, encefalopatia hipertensiva com confusão mental e convulsões, ou retinopatia hipertensiva maligna com papiledema) caracteriza emergência hipertensiva, com necessidade de redução pressórica imediata e monitorizada em ambiente hospitalar — diferente da urgência hipertensiva, sem lesão aguda em curso, que pode ser tratada por via oral em regime ambulatorial com reavaliação em dias."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "As bancas adoram cobrar a diferença entre urgência e emergência hipertensiva (a presença de lesão aguda de órgão-alvo é o que define a emergência, não o valor absoluto da PA), a técnica correta de aferição pressórica e o papel da MAPA como padrão-ouro para confirmar o diagnóstico e identificar hipertensão do avental branco/mascarada. Também é comum cobrar a meta pressórica atualizada e a preferência por terapia combinada inicial nos hipertensos de maior risco."
+        "conteudo": "As bancas cobram insistentemente a diferença entre urgência e emergência hipertensiva (a presença de lesão aguda de órgão-alvo é o que define a emergência, não o valor absoluto da PA), a técnica correta de aferição pressórica e o papel da MAPA como padrão-ouro para confirmar o diagnóstico e identificar hipertensão do avental branco/mascarada. É frequente também questionar a meta pressórica atualizada (<130/80 na diretriz mais recente), a preferência por terapia combinada inicial nos hipertensos de maior risco, e o algoritmo de investigação de causas secundárias — hiperaldosteronismo primário como causa endócrina mais prevalente é um ponto de pegadinha recorrente, já que muitos alunos associam automaticamente hipertensão secundária apenas a feocromocitoma."
       }
     ]
   },
@@ -88,7 +88,7 @@
     "titulo": "Infarto Agudo do Miocárdio (IAM)",
     "resumo": "Abordagem inicial, classificação eletrocardiográfica e terapia de reperfusão.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Síndromes Coronarianas Agudas; ESC Guidelines for acute coronary syndromes; Quarta Definição Universal de Infarto do Miocárdio",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Síndromes Coronarianas Agudas com Supradesnivelamento do Segmento ST (2021); ESC Guidelines for acute coronary syndromes (2023); Quarta Definição Universal de Infarto do Miocárdio (2018)",
     "mnemonicos": [
       {
         "palavra": "MONABCH",
@@ -98,31 +98,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "O infarto agudo do miocárdio resulta, na maioria dos casos, da ruptura ou erosão de uma placa aterosclerótica coronariana instável, com formação de trombo que oclui total ou parcialmente o vaso, levando à isquemia e necrose miocárdica. Quando a oclusão é total e transmural, surge o supradesnivelamento do segmento ST no ECG (IAMCSST); oclusões subtotais ou em vasos colaterais geram isquemia subendocárdica, correspondendo ao IAM sem supra de ST. A necrose celular libera marcadores de lesão miocárdica (troponina) na corrente sanguínea, base do diagnóstico laboratorial."
+        "conteudo": "O infarto agudo do miocárdio tipo 1 (o mais comum, e o foco central deste tema) resulta da ruptura ou erosão de uma placa aterosclerótica coronariana instável, com formação de trombo que oclui total ou parcialmente o vaso, levando à isquemia e necrose miocárdica. A Quarta Definição Universal também descreve o tipo 2 (desequilíbrio entre oferta e demanda de oxigênio sem trombose coronariana aguda, como em sepse grave, taquiarritmia ou anemia intensa), tipo 3 (morte súbita com evidência de isquemia sem confirmação laboratorial), e os tipos 4 e 5 (relacionados a procedimentos, angioplastia e cirurgia de revascularização, respectivamente). Quando a oclusão é total e transmural, surge o supradesnivelamento do segmento ST no ECG (IAMCSST); oclusões subtotais ou compensadas por circulação colateral geram isquemia predominantemente subendocárdica, correspondendo ao IAM sem supra de ST. A necrose celular libera marcadores de lesão miocárdica (troponina) proporcionalmente à extensão do dano."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor torácica retroesternal em aperto/opressão, de forte intensidade, com irradiação para membro superior esquerdo, mandíbula ou dorso, tipicamente com duração maior que 20 minutos e não totalmente aliviada pelo repouso, é a apresentação clássica. Sintomas associados incluem sudorese fria, náuseas, dispneia e sensação de morte iminente. Apresentações atípicas (dor epigástrica, apenas dispneia, ou quadro assintomático) são mais comuns em idosos, diabéticos e mulheres, e não devem ser subestimadas."
+        "conteudo": "Dor torácica retroesternal em aperto/opressão, de forte intensidade, com irradiação para membro superior esquerdo, mandíbula, pescoço ou dorso, tipicamente com duração maior que 20 minutos e não totalmente aliviada pelo repouso ou nitrato sublingual, é a apresentação clássica. Sintomas associados incluem sudorese fria profusa, náuseas/vômitos, dispneia e sensação de morte iminente (angor animi). Apresentações atípicas — dor epigástrica isolada, apenas dispneia súbita, síncope, ou quadro completamente assintomático (\"infarto silencioso\") — são mais comuns em idosos, diabéticos (neuropatia autonômica) e mulheres, e não devem ser subestimadas nem usadas para excluir o diagnóstico sem investigação complementar. A classificação de Killip-Kimball (I: sem sinais de congestão; II: estertores/B3; III: edema agudo de pulmão; IV: choque cardiogênico) estratifica a gravidade clínica e o prognóstico no momento da apresentação."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "O exame físico costuma ser inespecífico e não deve atrasar a realização do ECG. Podem estar presentes sudorese, taquicardia ou bradicardia (dependendo da artéria acometida), quarta bulha e, em casos de disfunção ventricular, estertores pulmonares ou terceira bulha. A presença de sopro sistólico novo levanta suspeita de complicação mecânica (insuficiência mitral aguda por disfunção de músculo papilar, comunicação interventricular). Não há achado patognomônico ao exame físico isolado — o diagnóstico depende de ECG e marcadores."
+        "conteudo": "O exame físico costuma ser inespecífico e jamais deve atrasar a realização do ECG. Podem estar presentes sudorese, taquicardia (ou bradicardia nos infartos de parede inferior, por reflexo vagal ou acometimento do nó sinusal/AV, ambos irrigados pela coronária direita na maioria dos indivíduos), quarta bulha (perda de complacência ventricular) e, em casos de disfunção ventricular estabelecida, estertores crepitantes pulmonares ou terceira bulha. Um sopro sistólico novo em foco mitral levanta suspeita de insuficiência mitral aguda por disfunção/ruptura de músculo papilar (complicação mecânica que tipicamente ocorre entre o 2º e o 7º dia pós-infarto, mais associada a infarto inferior por acometimento do músculo papilar posteromedial); sopro holossistólico paraesternal com frêmito sugere comunicação interventricular pós-infarto. Não há achado patognomônico isolado ao exame físico — o diagnóstico depende de ECG e marcadores séricos."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O ECG de 12 derivações deve ser realizado e interpretado em até 10 minutos da chegada, sendo o exame que direciona a conduta imediata: supradesnivelamento de ST (ou bloqueio de ramo esquerdo novo) define o IAMCSST, com indicação de reperfusão de urgência. A troponina de alta sensibilidade é o marcador padrão-ouro para confirmação laboratorial do infarto, com protocolos de dosagem seriada (0h/1h ou 0h/3h) permitindo diagnóstico e exclusão rápidos mesmo nas síndromes sem supra de ST."
+        "conteudo": "O ECG de 12 derivações deve ser realizado e interpretado em até 10 minutos da chegada, sendo o exame que direciona a conduta imediata: supradesnivelamento de ST ≥1mm em duas derivações contíguas (ou bloqueio de ramo esquerdo novo/presumivelmente novo) define o IAMCSST, com indicação de reperfusão de urgência. A localização eletrocardiográfica orienta a artéria culpada: parede inferior (D2, D3, aVF) geralmente coronária direita; parede anterior/septal (V1-V4) descendente anterior; parede lateral (D1, aVL, V5-V6) circunflexa; e infarto de ventrículo direito (confirmado por V3R/V4R) frequentemente associado a infarto inferior por oclusão proximal de coronária direita. A troponina de alta sensibilidade é o marcador padrão-ouro para confirmação laboratorial, com protocolos de dosagem seriada (0h/1h ou 0h/3h) permitindo diagnóstico e exclusão rápidos mesmo nas síndromes sem supra de ST — a CK-MB, historicamente usada, perdeu espaço por menor sensibilidade e especificidade."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "No IAMCSST, a reperfusão é a prioridade absoluta: angioplastia primária (ICP) é a estratégia preferencial quando disponível em até 90-120 minutos do primeiro contato médico; a trombólise é alternativa quando esse tempo não pode ser cumprido. Terapia adjunta inclui dupla antiagregação plaquetária (AAS + inibidor de P2Y12), anticoagulação, estatina de alta potência e betabloqueador. No IAM sem supra de ST, a estratificação de risco define o momento da cateterização (invasiva precoce nos de alto risco)."
+        "conteudo": "No IAMCSST, a reperfusão é a prioridade absoluta: angioplastia primária (ICP) é a estratégia preferencial quando disponível em até 90-120 minutos do primeiro contato médico (tempo porta-balão); a trombólise (alteplase, tenecteplase) é alternativa quando esse tempo não pode ser cumprido, devendo ser administrada em até 30 minutos da chegada (tempo porta-agulha), respeitando contraindicações absolutas (AVC hemorrágico prévio, AVC isquêmico nos últimos 3 meses, sangramento ativo, dissecção de aorta suspeita). Terapia adjunta padrão inclui dupla antiagregação plaquetária (AAS 200-300mg de ataque + inibidor de P2Y12 como ticagrelor ou clopidogrel), anticoagulação parenteral, estatina de alta potência em altas doses e betabloqueador oral nas primeiras 24 horas se não houver sinais de choque/instabilidade. No IAM sem supra de ST, a estratificação de risco (escore GRACE) define o momento da cateterização: invasiva imediata (<2h) em instabilidade/choque, precoce (<24h) em alto risco, e conservadora nos de baixo risco."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor torácica típica associada a instabilidade hemodinâmica, arritmia ventricular ou sinais de choque cardiogênico</span> exige intervenção imediata. O \"tempo é músculo\": todo atraso na reperfusão do IAMCSST aumenta a extensão da necrose miocárdica e a mortalidade — a meta porta-balão de até 90 minutos é um indicador de qualidade assistencial."
+        "conteudo": "<span class=\"red-flag\">Dor torácica típica associada a instabilidade hemodinâmica, arritmia ventricular ou sinais de choque cardiogênico</span> exige intervenção imediata. Complicações mecânicas (ruptura de parede livre, comunicação interventricular, insuficiência mitral aguda por ruptura de músculo papilar) tipicamente surgem entre o 2º e o 7º dia e devem ser suspeitadas diante de deterioração hemodinâmica súbita nesse período. \"Tempo é músculo\": todo atraso na reperfusão do IAMCSST aumenta a extensão da necrose miocárdica e a mortalidade — a meta porta-balão de até 90 minutos é indicador de qualidade assistencial monitorado nacionalmente."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "É clássico cobrar a diferenciação eletrocardiográfica entre os territórios de infarto (parede inferior, anterior, lateral) e suas respectivas artérias culpadas, a conduta diante de infarto de ventrículo direito (evitar nitrato, pela dependência de pré-carga), e os tempos-alvo de reperfusão. A troponina como marcador de escolha (substituindo CK-MB nas provas mais atuais) e os critérios da quarta definição universal de infarto também são temas recorrentes."
+        "conteudo": "É clássico cobrar a diferenciação eletrocardiográfica entre os territórios de infarto e suas respectivas artérias culpadas, a conduta diante de infarto de ventrículo direito (evitar nitrato e morfina, pela dependência de pré-carga do VD — hipotensão grave pode ocorrer), e os tempos-alvo de reperfusão (porta-balão 90min, porta-agulha 30min). A troponina como marcador de escolha (substituindo CK-MB nas provas mais atuais), a classificação de Killip como preditor prognóstico, e o timing das complicações mecânicas (2º-7º dia) são pontos frequentemente cobrados em questões de caso clínico com evolução temporal."
       }
     ]
   },
@@ -631,7 +631,7 @@
     "titulo": "Insuficiência Cardíaca (IC)",
     "resumo": "Classificação, diagnóstico e os quatro pilares farmacológicos da IC com fração de ejeção reduzida.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Insuficiência Cardíaca Crônica e Aguda; ESC Guidelines for heart failure",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Insuficiência Cardíaca Crônica e Aguda (2018, atualização 2021); ESC Guidelines for heart failure (2021, atualização 2023)",
     "mnemonicos": [
       {
         "palavra": "4 PILARES DA ICFEr",
@@ -641,31 +641,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A insuficiência cardíaca é a incapacidade do coração de bombear sangue suficiente para atender às demandas metabólicas do organismo, ou de fazê-lo apenas às custas de pressões de enchimento elevadas. Classifica-se pela fração de ejeção em IC com fração reduzida (disfunção sistólica, geralmente pós-isquêmica) e IC com fração preservada (disfunção diastólica, associada a hipertensão, fibrilação atrial e envelhecimento). Mecanismos compensatórios como ativação neuro-hormonal (sistema renina-angiotensina-aldosterona e simpático) e remodelamento cardíaco, inicialmente adaptativos, tornam-se deletérios a longo prazo e perpetuam a progressão da doença."
+        "conteudo": "A insuficiência cardíaca é a incapacidade do coração de bombear sangue suficiente para atender às demandas metabólicas do organismo, ou de fazê-lo apenas às custas de pressões de enchimento elevadas. Classifica-se pela fração de ejeção em IC com fração reduzida (HFrEF, FE <40%, geralmente pós-isquêmica ou por cardiomiopatia dilatada, com disfunção sistólica predominante), IC com fração levemente reduzida (HFmrEF, FE 40-49%) e IC com fração preservada (HFpEF, FE ≥50%, associada a hipertensão crônica, fibrilação atrial, obesidade e envelhecimento, com disfunção diastólica predominante). Mecanismos compensatórios como ativação neuro-hormonal (sistema renina-angiotensina-aldosterona e simpático) e remodelamento cardíaco excêntrico (HFrEF) ou concêntrico (HFpEF), inicialmente adaptativos, tornam-se deletérios a longo prazo e perpetuam a progressão da doença — é essa cascata neuro-hormonal que constitui o alvo terapêutico dos \"quatro pilares\" farmacológicos."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dispneia aos esforços progressiva, ortopneia e dispneia paroxística noturna são os sintomas cardinais de congestão pulmonar; edema de membros inferiores, ganho de peso e desconforto abdominal por congestão hepática refletem congestão sistêmica. Fadiga e intolerância ao exercício traduzem baixo débito cardíaco. A classificação funcional da NYHA (I a IV) estratifica a limitação sintomática e orienta prognóstico e tratamento."
+        "conteudo": "Dispneia aos esforços progressiva, ortopneia e dispneia paroxística noturna são os sintomas cardinais de congestão pulmonar; edema de membros inferiores, ganho de peso rápido e desconforto abdominal por congestão hepática/ascite refletem congestão sistêmica. Fadiga e intolerância ao exercício traduzem baixo débito cardíaco anterógrado. A classificação funcional da NYHA (I: assintomático; II: sintomas a esforços moderados; III: sintomas a esforços mínimos; IV: sintomas em repouso) estratifica a limitação sintomática e orienta prognóstico e elegibilidade terapêutica (por exemplo, terapia de ressincronização cardíaca em classe III/IV com QRS alargado). Os critérios de Framingham (maiores e menores) permanecem um instrumento clínico clássico para o diagnóstico sindrômico."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Terceira bulha (B3) é um achado praticamente patognomônico de disfunção sistólica e sobrecarga volêmica em adultos. Estase jugular, refluxo hepatojugular, hepatomegalia e edema de membros inferiores traduzem congestão sistêmica; estertores crepitantes em bases pulmonares indicam congestão pulmonar. O deslocamento do ictus cordis para a esquerda sugere cardiomegalia."
+        "conteudo": "Terceira bulha (B3) é um achado praticamente patognomônico de disfunção sistólica e sobrecarga volêmica em adultos (fisiológica em crianças e jovens). Estase jugular, refluxo hepatojugular positivo, hepatomegalia dolorosa e edema de membros inferiores traduzem congestão sistêmica direita; estertores crepitantes em bases pulmonares e derrame pleural indicam congestão pulmonar esquerda. O deslocamento do ictus cordis para a esquerda e para baixo sugere cardiomegalia com dilatação ventricular. Na avaliação clínica da IC aguda descompensada, o perfil hemodinâmico \"quente/frio\" (perfusão adequada ou não) e \"seco/úmido\" (congesto ou não) — classificação de Nohria-Stevenson — orienta diretamente a escolha terapêutica inicial."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O ecocardiograma transtorácico é o exame padrão-ouro, permitindo quantificar a fração de ejeção, avaliar função diastólica e identificar a etiologia estrutural. O peptídeo natriurético tipo B (BNP ou NT-proBNP) tem alto valor preditivo negativo e é útil para diferenciar dispneia cardíaca de causas pulmonares em contexto de dúvida diagnóstica. Radiografia de tórax pode mostrar cardiomegalia, redistribuição vascular e linhas B de Kerley na congestão."
+        "conteudo": "O ecocardiograma transtorácico é o exame padrão-ouro, permitindo quantificar a fração de ejeção, avaliar função diastólica, dimensões de câmaras e identificar a etiologia estrutural subjacente (valvopatia, cardiomiopatia, sequela isquêmica). O peptídeo natriurético tipo B (BNP ou NT-proBNP) tem alto valor preditivo negativo e é particularmente útil para diferenciar dispneia cardíaca de causas pulmonares em contexto de dúvida diagnóstica no pronto-socorro (valores muito baixos praticamente excluem IC descompensada como causa da dispneia). Radiografia de tórax pode mostrar cardiomegalia, redistribuição vascular para ápices, linhas B de Kerley e derrame pleural na congestão. Avaliação laboratorial complementar deve incluir função renal, eletrólitos e ferritina/saturação de transferrina para rastreio de deficiência de ferro, cada vez mais reconhecida como comorbidade tratável na IC."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Na IC com fração reduzida, os \"quatro pilares\" com redução comprovada de mortalidade são: IECA/BRA (ou inibidor da neprilisina-angiotensina, sacubitril-valsartana), betabloqueador, antagonista mineralocorticoide (espironolactona) e inibidor de SGLT2 — este último também com benefício demonstrado na IC com fração preservada. Diuréticos de alça controlam a congestão sintomática, sem impacto comprovado em mortalidade. Na descompensação aguda, o manejo da volemia e da perfusão orienta a escolha entre diurético, vasodilatador e inotrópico."
+        "conteudo": "Na IC com fração reduzida, os \"quatro pilares\" com redução comprovada de mortalidade, a serem iniciados e titulados o mais precocemente possível (idealmente ainda durante a internação), são: inibidor da neprilisina-angiotensina (sacubitril-valsartana, preferencial ao IECA/BRA isolado quando disponível), betabloqueador (bisoprolol, carvedilol ou succinato de metoprolol), antagonista mineralocorticoide (espironolactona ou eplerenona) e inibidor de SGLT2 (dapagliflozina, empagliflozina) — este último com benefício também demonstrado na IC com fração preservada, mudando o paradigma de que HFpEF não tinha tratamento modificador de curso. Diuréticos de alça (furosemida) controlam a congestão sintomática, sem impacto comprovado em mortalidade isoladamente. Reposição de ferro endovenoso é indicada em deficiência de ferro sintomática. Terapia de ressincronização cardíaca (marca-passo biventricular) e cardiodesfibrilador implantável têm indicações específicas conforme FE, QRS e classe funcional. Na descompensação aguda, o perfil hemodinâmico (quente/frio, seco/úmido) orienta a escolha entre diurético, vasodilatador e inotrópico/suporte circulatório mecânico."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dispneia em repouso com hipotensão, extremidades frias e oligúria</span> sinaliza choque cardiogênico, com necessidade de suporte inotrópico/hemodinâmico agressivo. Edema agudo de pulmão com insuficiência respiratória é emergência que exige ventilação não invasiva e diurético/vasodilatador endovenoso imediatos."
+        "conteudo": "<span class=\"red-flag\">Dispneia em repouso com hipotensão, extremidades frias e oligúria</span> sinaliza perfil \"frio\" com choque cardiogênico, com necessidade de suporte inotrópico/hemodinâmico agressivo e eventual dispositivo de assistência circulatória mecânica. Edema agudo de pulmão com insuficiência respiratória é emergência que exige ventilação não invasiva e diurético/vasodilatador endovenoso imediatos, sem atraso para investigação etiológica completa."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "As provas cobram insistentemente os \"quatro pilares\" farmacológicos da IC com fração reduzida e seus mecanismos de ação, a diferenciação entre fração reduzida e preservada, e o BNP como ferramenta de exclusão diagnóstica em pronto-socorro. É comum também questionar contraindicações do uso agudo de betabloqueador na descompensação (deve ser mantido se já em uso crônico estável, mas não iniciado na fase aguda instável)."
+        "conteudo": "As provas cobram insistentemente os \"quatro pilares\" farmacológicos da IC com fração reduzida e seus mecanismos de ação, a diferenciação entre fração reduzida, levemente reduzida e preservada, e o BNP/NT-proBNP como ferramenta de exclusão diagnóstica em pronto-socorro. É comum também questionar o perfil hemodinâmico quente/frio-seco/úmido para guiar o tratamento da descompensação aguda, e a contraindicação de iniciar betabloqueador na fase aguda instável (deve ser mantido se já em uso crônico estável, jamais suspenso abruptamente, mas também não iniciado de novo durante descompensação franca)."
       }
     ]
   },
@@ -861,7 +861,7 @@
     "titulo": "Fibrilação Atrial (FA)",
     "resumo": "Diagnóstico, escore CHA2DS2-VASc para anticoagulação e estratégias de controle de frequência/ritmo.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Fibrilação Atrial; ESC Guidelines for atrial fibrillation",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Fibrilação Atrial (2016, atualização 2022); ESC Guidelines for the management of atrial fibrillation (2020, atualização 2024)",
     "mnemonicos": [
       {
         "palavra": "CHA2DS2-VASc",
@@ -871,31 +871,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A fibrilação atrial é a arritmia sustentada mais comum na prática clínica, caracterizada pela ativação elétrica atrial caótica e desorganizada, geralmente iniciada por focos ectópicos nas veias pulmonares. A perda da contração atrial coordenada favorece estase sanguínea no átrio esquerdo — especialmente no apêndice atrial esquerdo — predispondo à formação de trombos e ao risco embólico sistêmico, principal complicação temida da doença."
+        "conteudo": "A fibrilação atrial é a arritmia sustentada mais comum na prática clínica, caracterizada pela ativação elétrica atrial caótica e desorganizada, geralmente iniciada por focos ectópicos localizados no óstio das veias pulmonares. Classifica-se em paroxística (reverte espontaneamente em até 7 dias), persistente (dura mais de 7 dias ou requer cardioversão), persistente de longa duração (mais de 1 ano) e permanente (decisão conjunta de não mais tentar restaurar o ritmo sinusal). A perda da contração atrial coordenada favorece estase sanguínea no átrio esquerdo — especialmente no apêndice atrial esquerdo, seu recesso anatômico de fluxo mais lento — predispondo à formação de trombos e ao risco embólico sistêmico (principalmente AVC isquêmico), a complicação mais temida da doença, independentemente do padrão temporal (paroxística tem risco embólico semelhante à permanente)."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "O espectro clínico varia de completamente assintomático (achado incidental) a palpitações, dispneia, fadiga e desconforto torácico. A irregularidade do ritmo pode ser percebida pelo próprio paciente como \"coração disparado e irregular\". Em pacientes com resposta ventricular muito elevada ou cardiopatia estrutural associada, pode haver descompensação de insuficiência cardíaca."
+        "conteudo": "O espectro clínico varia de completamente assintomático (achado incidental em ECG de rotina ou dispositivo de monitorização) a palpitações, dispneia, fadiga e desconforto torácico. A escala EHRA (European Heart Rhythm Association, de 1 a 4) classifica o impacto sintomático e auxilia a decisão entre estratégia de controle de ritmo versus frequência. Em pacientes com resposta ventricular muito elevada e sustentada, pode se desenvolver taquicardiomiopatia (disfunção ventricular induzida pela taquicardia crônica), potencialmente reversível com controle adequado da frequência/ritmo."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "O achado clássico é o pulso irregularmente irregular (sem padrão repetitivo), associado à ausculta de bulhas cardíacas arrítmicas com intensidade variável. O déficit de pulso (frequência cardíaca à ausculta maior que a frequência de pulso periférico palpável) pode estar presente nas respostas ventriculares mais rápidas."
+        "conteudo": "O achado clássico é o pulso irregularmente irregular (sem qualquer padrão repetitivo), associado à ausculta de bulhas cardíacas arrítmicas com intensidade variável (variabilidade de B1 batimento a batimento, pela variação do enchimento diastólico). O déficit de pulso (frequência cardíaca à ausculta maior que a frequência de pulso periférico palpável) pode estar presente nas respostas ventriculares mais rápidas, pela ejeção sistólica insuficiente em ciclos muito curtos."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O eletrocardiograma é o exame padrão-ouro e suficiente para o diagnóstico, mostrando ausência de ondas P organizadas, substituídas por ondas fibrilatórias (ondas f), com intervalos R-R irregularmente irregulares. O ecocardiograma transtorácico deve ser solicitado para avaliar tamanho atrial e função ventricular, e o ecocardiograma transesofágico é utilizado quando há necessidade de excluir trombo em apêndice atrial esquerdo antes de cardioversão."
+        "conteudo": "O eletrocardiograma é o exame padrão-ouro e suficiente para o diagnóstico, mostrando ausência de ondas P organizadas, substituídas por ondas fibrilatórias (ondas f) de baixa amplitude e alta frequência, com intervalos R-R irregularmente irregulares. Um único ECG com duração ≥30 segundos (ou traçado completo de 12 derivações) documentando o padrão já confirma o diagnóstico. O ecocardiograma transtorácico deve ser solicitado em todo paciente para avaliar tamanho atrial, função ventricular e valvopatia associada; o ecocardiograma transesofágico é utilizado quando há necessidade de excluir trombo em apêndice atrial esquerdo antes de cardioversão em paciente não adequadamente anticoagulado por período suficiente."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O manejo assenta em três pilares: controle de frequência (betabloqueador ou bloqueador de canal de cálcio não di-hidropiridínico), controle de ritmo (cardioversão elétrica ou química, ablação por cateter em casos selecionados) e, fundamentalmente, profilaxia de eventos tromboembólicos. A decisão de anticoagular é guiada pelo escore CHA2DS2-VASc, sendo os anticoagulantes orais diretos (DOACs) preferidos à varfarina na maioria dos pacientes sem valvopatia mitral reumática ou prótese mecânica."
+        "conteudo": "O manejo assenta em três pilares: controle de frequência (betabloqueador ou bloqueador de canal de cálcio não di-hidropiridínico como verapamil/diltiazem, com meta de frequência de repouso geralmente <110bpm em estratégia leniente), controle de ritmo (cardioversão elétrica ou química, antiarrítmicos como amiodarona/propafenona, ou ablação por cateter — atualmente considerada de primeira linha em pacientes selecionados, sobretudo jovens sintomáticos com FA paroxística) e, fundamentalmente, profilaxia de eventos tromboembólicos. A decisão de anticoagular é guiada pelo escore CHA2DS2-VASc (insuficiência Cardíaca, Hipertensão, idade ≥75 [2 pontos], Diabetes, AVC/AIT prévio [2 pontos], doença Vascular, idade 65-74, Sexo feminino) — escore ≥2 em homens ou ≥3 em mulheres indica anticoagulação; os anticoagulantes orais diretos (DOACs: dabigatrana, rivaroxabana, apixabana, edoxabana) são preferidos à varfarina na maioria dos pacientes, exceto em valvopatia mitral reumática moderada/grave ou prótese valvar mecânica, onde a varfarina permanece obrigatória."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">FA de início indeterminado com necessidade de cardioversão</span> exige anticoagulação prévia por pelo menos 3 semanas (ou exclusão de trombo por ecocardiograma transesofágico) pelo risco de embolização no momento da reversão do ritmo. Instabilidade hemodinâmica associada à FA é indicação de cardioversão elétrica sincronizada imediata, independentemente do tempo de anticoagulação."
+        "conteudo": "<span class=\"red-flag\">FA de início indeterminado ou maior que 48 horas com necessidade de cardioversão</span> exige anticoagulação terapêutica por pelo menos 3 semanas antes do procedimento (ou exclusão de trombo por ecocardiograma transesofágico) pelo risco de embolização sistêmica no momento da reversão do ritmo, mantida por pelo menos 4 semanas após. Instabilidade hemodinâmica associada à FA (hipotensão, dor torácica isquêmica, edema agudo de pulmão) é indicação de cardioversão elétrica sincronizada imediata, independentemente do tempo de anticoagulação ou de exame transesofágico prévio."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O escore CHA2DS2-VASc para indicação de anticoagulação e o escore HAS-BLED para risco de sangramento são cobrados com frequência, assim como a regra das \"48 horas/3 semanas\" para segurança de cardioversão sem necessidade de exame transesofágico prévio. Também é comum a banca explorar a preferência por DOACs sobre varfarina, exceto em valvopatia mitral reumática moderada/grave ou prótese valvar mecânica, situações em que a varfarina permanece indicada."
+        "conteudo": "O escore CHA2DS2-VASc (memorizar os pontos, especialmente os itens que valem 2 pontos: AVC/AIT prévio e idade ≥75) para indicação de anticoagulação, e o escore HAS-BLED para risco de sangramento, são cobrados com frequência. A regra das \"48 horas/3 semanas\" para segurança de cardioversão sem necessidade de exame transesofágico prévio é clássica. Também é comum a banca explorar a preferência por DOACs sobre varfarina, exceto em valvopatia mitral reumática moderada/grave ou prótese valvar mecânica — situações em que DOACs são formalmente contraindicados por falta de eficácia comprovada nesses cenários específicos."
       }
     ]
   },
@@ -1255,7 +1255,7 @@
     "titulo": "Dissecção Aguda de Aorta",
     "resumo": "Classificação de Stanford e conduta conforme o tipo de dissecção.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia; ESC Guidelines on the diagnosis and treatment of aortic diseases",
+    "fonte": "Sociedade Brasileira de Cardiologia; ESC Guidelines on the diagnosis and treatment of aortic diseases (2014, atualização 2024); Registro IRAD (International Registry of Acute Aortic Dissection)",
     "mnemonicos": [
       {
         "palavra": "STANFORD A x B",
@@ -1265,31 +1265,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A dissecção aguda de aorta ocorre quando um rasgo na íntima permite a entrada de sangue na camada média da parede aórtica, criando uma falsa luz que se propaga longitudinalmente. Hipertensão arterial crônica mal controlada é o principal fator de risco; doenças do tecido conjuntivo (Marfan, Ehlers-Danlos) e valva aórtica bivalvulada predispõem em pacientes mais jovens. A classificação de Stanford divide os casos em tipo A (acomete aorta ascendente, cirúrgica) e tipo B (restrita à aorta descendente, geralmente com manejo clínico inicial)."
+        "conteudo": "A dissecção aguda de aorta ocorre quando um rasgo na íntima permite a entrada de sangue na camada média da parede aórtica (frequentemente já degenerada por necrose cística da média), criando uma falsa luz que se propaga longitudinalmente, anterógrada ou retrogradamente. Hipertensão arterial crônica mal controlada é o principal fator de risco (presente em até 70% dos casos do registro IRAD); doenças do tecido conjuntivo (síndrome de Marfan, Ehlers-Danlos vascular, Loeys-Dietz) e valva aórtica bivalvulada predispõem em pacientes mais jovens, assim como uso de cocaína/crack (pico hipertensivo agudo) e gestação no terceiro trimestre. A classificação de Stanford divide os casos em tipo A (acomete aorta ascendente, independentemente da extensão distal — conduta cirúrgica) e tipo B (restrita à aorta descendente, distal à artéria subclávia esquerda — conduta clínica inicial); a classificação de DeBakey (I, II, III) é mais detalhada mas menos usada na prática de urgência."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor torácica ou dorsal de início súbito e intensidade máxima já no começo (diferente da dor anginosa, que costuma ser crescente), classicamente descrita como \"em rasgão\" ou \"em facada\", com possível migração acompanhando a progressão da dissecção, é a apresentação clássica. Pode haver sintomas de má perfusão de ramos aórticos acometidos: déficit neurológico focal (carótidas), dor abdominal (mesentéricas) ou isquemia de membro."
+        "conteudo": "Dor torácica ou dorsal de início súbito e intensidade máxima já no começo (diferente da dor anginosa, tipicamente crescente), classicamente descrita como \"em rasgão\" ou \"em facada\", com possível migração acompanhando a progressão da dissecção (do tórax para o dorso e depois abdome, seguindo o trajeto da falsa luz), é a apresentação clássica — presente em mais de 90% dos casos do IRAD. Pode haver sintomas de má perfusão de ramos aórticos acometidos por síndrome de má perfusão: déficit neurológico focal (obstrução de carótidas), dor abdominal/isquemia mesentérica, isquemia de membro (assimetria de pulsos), ou insuficiência renal aguda (artérias renais)."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Assimetria de pulsos entre os membros ou entre membros superiores e inferiores, e diferença de pressão arterial maior que 20mmHg entre os dois braços, são achados altamente sugestivos e devem ser ativamente procurados. Sopro diastólico de insuficiência aórtica nova pode indicar acometimento da raiz aórtica. Sinais de tamponamento cardíaco (hipofonese de bulhas, turgência jugular, hipotensão) sugerem ruptura para o pericárdio, complicação catastrófica."
+        "conteudo": "Assimetria de pulsos entre os membros ou entre membros superiores e inferiores, e diferença de pressão arterial maior que 20mmHg entre os dois braços, são achados altamente sugestivos (presentes em cerca de 30% dos casos, portanto sua ausência não exclui o diagnóstico) e devem ser ativamente procurados em todo paciente com dor torácica atípica. Sopro diastólico de insuficiência aórtica nova (presente em até metade dos casos de dissecção tipo A) pode indicar acometimento da raiz aórtica com dilatação do anel valvar. Sinais de tamponamento cardíaco (hipofonese de bulhas, turgência jugular, hipotensão, pulso paradoxal) sugerem ruptura da dissecção para o espaço pericárdico, complicação catastrófica e frequentemente fatal da dissecção tipo A."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A angiotomografia de aorta é o exame de escolha na maioria dos serviços por rapidez e disponibilidade, sendo considerada padrão-ouro na prática de urgência; o ecocardiograma transesofágico é alternativa de alta acurácia, especialmente útil em pacientes instáveis que não podem ser transportados ao tomógrafo. A radiografia de tórax pode sugerir o diagnóstico (alargamento do mediastino) mas não o confirma nem o exclui."
+        "conteudo": "O escore ADD-RS (Aortic Dissection Detection Risk Score) ajuda a estimar a probabilidade pré-teste combinando condições de alto risco, características da dor e achados de exame. A angiotomografia de aorta é o exame de escolha na maioria dos serviços por rapidez e disponibilidade, sendo considerada padrão-ouro na prática de urgência, com sensibilidade e especificidade superiores a 95%; o ecocardiograma transesofágico é alternativa de alta acurácia, especialmente útil em pacientes instáveis que não podem ser transportados ao tomógrafo. A radiografia de tórax pode sugerir o diagnóstico (alargamento do mediastino, em até 60-90% dos casos) mas não o confirma nem o exclui — jamais deve ser usada isoladamente para descartar dissecção em paciente com alta suspeita clínica. D-dímero muito baixo tem razoável valor preditivo negativo mas não substitui a imagem em alta suspeita."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "A dissecção tipo A é emergência cirúrgica, com correção da aorta ascendente o mais rápido possível — a mortalidade aumenta a cada hora de atraso. A dissecção tipo B não complicada é tratada clinicamente com controle rigoroso da pressão arterial e da frequência cardíaca (betabloqueador como primeira escolha, para reduzir a força de cisalhamento sobre a parede aórtica — o dP/dt), reservando-se intervenção endovascular para casos complicados (má perfusão de órgãos, expansão, ruptura iminente)."
+        "conteudo": "A dissecção tipo A é emergência cirúrgica, com correção da aorta ascendente (troca do segmento dissecado, eventualmente associada a procedimento na raiz/valva aórtica) o mais rápido possível — a mortalidade aumenta cerca de 1-2% a cada hora de atraso nas primeiras 24-48 horas. A dissecção tipo B não complicada é tratada clinicamente com controle rigoroso da pressão arterial (meta de PA sistólica 100-120mmHg) e da frequência cardíaca (meta <60bpm), com betabloqueador endovenoso como primeira escolha (labetalol, esmolol) para reduzir tanto a pressão quanto o dP/dt (força de cisalhamento sobre a parede aórtica) antes de associar vasodilatador — usar vasodilatador isolado pode causar taquicardia reflexa e piorar o cisalhamento. Intervenção endovascular (TEVAR) é reservada a dissecção tipo B complicada (má perfusão de órgãos, expansão progressiva, dor refratária, ruptura iminente)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor torácica súbita e máxima associada a assimetria de pulsos ou déficit neurológico focal</span> deve levantar suspeita imediata de dissecção de aorta — o atraso diagnóstico (frequentemente confundida inicialmente com síndrome coronariana aguda) é a principal causa de mortalidade evitável nessa condição."
+        "conteudo": "<span class=\"red-flag\">Dor torácica súbita e máxima associada a assimetria de pulsos, déficit neurológico focal ou sopro de insuficiência aórtica nova</span> deve levantar suspeita imediata de dissecção de aorta — o atraso diagnóstico (frequentemente confundida inicialmente com síndrome coronariana aguda, o que pode levar à administração equivocada de trombolítico com risco de sangramento catastrófico) é a principal causa de mortalidade evitável nessa condição."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A classificação de Stanford (A cirúrgica, B clínica) é cobrança certa, assim como a lógica do tratamento farmacológico inicial: betabloqueador antes de vasodilatador, para evitar taquicardia reflexa que aumentaria o estresse de cisalhamento na parede aórtica. Assimetria de pulsos/PA entre os membros é o achado de exame físico mais valorizado nas questões."
+        "conteudo": "A classificação de Stanford (A cirúrgica, B clínica) é cobrança certa, assim como a lógica do tratamento farmacológico inicial: betabloqueador antes de vasodilatador, para evitar taquicardia reflexa que aumentaria o estresse de cisalhamento na parede aórtica. Assimetria de pulsos/PA entre os membros é o achado de exame físico mais valorizado nas questões, e a armadilha clássica é a banca descrever um quadro de \"IAM\" com irradiação para dorso e pedir a conduta — o candidato deve suspeitar de dissecção antes de indicar trombolítico."
       }
     ]
   },
@@ -2225,7 +2225,7 @@
     "titulo": "Trombose Venosa Profunda (TVP)",
     "resumo": "Escore de Wells para TVP, papel do USG doppler e tratamento anticoagulante.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; ESC Guidelines for the diagnosis and management of acute pulmonary embolism (inclui abordagem de TVP); Escore de Wells",
+    "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; ESC Guidelines for the diagnosis and management of acute pulmonary embolism (2019, atualização 2024, inclui abordagem de TVP); Escore de Wells",
     "mnemonicos": [
       {
         "palavra": "WELLS PARA TVP",
@@ -2235,31 +2235,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A trombose venosa profunda decorre da formação de trombo no sistema venoso profundo, classicamente explicada pela tríade de Virchow: estase venosa (imobilização prolongada, cirurgias), lesão endotelial (trauma, cateteres) e estado de hipercoagulabilidade (neoplasias, trombofilias, uso de estrogênio). Membros inferiores são o sítio mais comum, com maior gravidade nas tromboses proximais (poplítea, femoral, ilíaca) pelo maior risco de embolização pulmonar."
+        "conteudo": "A trombose venosa profunda decorre da formação de trombo no sistema venoso profundo, classicamente explicada pela tríade de Virchow: estase venosa (imobilização prolongada, cirurgias, viagens longas), lesão endotelial (trauma, cateteres venosos centrais) e estado de hipercoagulabilidade (neoplasias ativas, trombofilias hereditárias como fator V de Leiden, uso de estrogênio/anticoncepcional, gestação/puerpério). Membros inferiores são o sítio mais comum, com maior gravidade nas tromboses proximais (poplítea, femoral, ilíaca) pelo maior risco de embolização pulmonar, comparadas às tromboses distais (panturrilha), de menor risco embólico mas ainda assim relevantes."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor, edema unilateral, aumento de temperatura local e eritema no membro acometido compõem o quadro clássico, mas a apresentação pode ser sutil ou até assintomática em uma parcela significativa dos casos — a suspeita clínica isolada tem baixa acurácia diagnóstica, daí a importância de escores validados."
+        "conteudo": "Dor, edema unilateral, aumento de temperatura local e eritema no membro acometido compõem o quadro clássico, mas a apresentação pode ser sutil ou até assintomática em uma parcela significativa dos casos — a suspeita clínica isolada tem baixa acurácia diagnóstica (tanto para confirmar quanto para excluir), daí a importância central de escores de probabilidade pré-teste validados combinados a exames complementares."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Assimetria de perimetria entre os membros (medida padronizada, geralmente a poucos centímetros abaixo da tuberosidade tibial) é o achado mais objetivo. O sinal de Homans (dor à dorsiflexão do pé) é classicamente descrito mas tem baixa sensibilidade e especificidade, não devendo ser usado isoladamente para confirmar ou excluir o diagnóstico."
+        "conteudo": "Assimetria de perimetria entre os membros (medida padronizada, geralmente a 10cm abaixo da tuberosidade tibial, com diferença >3cm sendo significativa) é o achado mais objetivo e está incorporado ao escore de Wells. O sinal de Homans (dor à dorsiflexão passiva do pé) é classicamente descrito mas tem baixa sensibilidade e especificidade, não devendo ser usado isoladamente para confirmar ou excluir o diagnóstico — inclusive pode ser deletério ao teoricamente mobilizar um trombo já formado."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O escore de Wells estratifica a probabilidade pré-teste (baixa, moderada ou alta). Em probabilidade baixa/moderada, o D-dímero tem alto valor preditivo negativo e pode excluir TVP se negativo. A ultrassonografia com Doppler venoso (compressão venosa) é o exame de imagem padrão-ouro, com alta sensibilidade e especificidade para tromboses proximais, sendo o próximo passo quando o D-dímero é positivo ou a probabilidade pré-teste é alta."
+        "conteudo": "O escore de Wells estratifica a probabilidade pré-teste (baixa, moderada ou alta, somando pontos por câncer ativo, imobilização/cirurgia recente, dor à palpação do trajeto venoso profundo, edema de membro todo, assimetria de perimetria, edema depressível assimétrico, veias colaterais superficiais, TVP prévia, e subtraindo pontos se diagnóstico alternativo for igual ou mais provável). Em probabilidade baixa/moderada, o D-dímero tem alto valor preditivo negativo e pode excluir TVP se negativo (uso de ponto de corte ajustado pela idade aumenta a especificidade em idosos). A ultrassonografia com Doppler venoso (compressão venosa seriada) é o exame de imagem padrão-ouro, com alta sensibilidade e especificidade para tromboses proximais, sendo o próximo passo quando o D-dímero é positivo ou a probabilidade pré-teste é alta."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Anticoagulação plena é o tratamento de escolha, com os anticoagulantes orais diretos (DOACs) atualmente preferidos por conveniência e perfil de segurança na maioria dos pacientes, mantida geralmente por 3 a 6 meses (mais prolongada em casos de trombofilia grave, câncer ativo ou evento recorrente). Filtro de veia cava inferior é reservado a contraindicação formal de anticoagulação ou recorrência de embolia apesar de anticoagulação adequada."
+        "conteudo": "Anticoagulação plena é o tratamento de escolha, com os anticoagulantes orais diretos (DOACs — rivaroxabana, apixabana) atualmente preferidos por conveniência (dispensam ponte parenteral em muitos esquemas) e perfil de segurança semelhante ou superior à varfarina na maioria dos pacientes, mantida geralmente por 3 a 6 meses (mais prolongada, por vezes indefinida, em casos de trombofilia grave, câncer ativo — onde HBPM ou DOACs específicos são preferidos — ou evento recorrente/não provocado). Filtro de veia cava inferior é reservado a contraindicação formal de anticoagulação ou recorrência de embolia apesar de anticoagulação adequada, não sendo tratamento de rotina."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dispneia súbita, dor torácica pleurítica ou taquicardia em paciente com TVP confirmada ou suspeita</span> deve levantar suspeita imediata de tromboembolismo pulmonar, sua complicação mais temida e potencialmente fatal, exigindo investigação e anticoagulação sem demora."
+        "conteudo": "<span class=\"red-flag\">Dispneia súbita, dor torácica pleurítica ou taquicardia em paciente com TVP confirmada ou suspeita</span> deve levantar suspeita imediata de tromboembolismo pulmonar, sua complicação mais temida e potencialmente fatal, exigindo investigação (angiotomografia de tórax) e anticoagulação sem demora."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O escore de Wells associado ao D-dímero como estratégia de exclusão em baixa probabilidade é o algoritmo mais cobrado. É importante lembrar que o sinal de Homans, apesar de clássico nos livros, tem valor diagnóstico limitado e não deve ser usado como critério isolado de decisão — armadilha comum em questões de prova."
+        "conteudo": "O escore de Wells associado ao D-dímero como estratégia de exclusão em baixa probabilidade é o algoritmo mais cobrado. É importante lembrar que o sinal de Homans, apesar de clássico nos livros didáticos mais antigos, tem valor diagnóstico limitado e não deve ser usado como critério isolado de decisão — armadilha comum em questões que tentam validar sua utilidade prática."
       }
     ]
   },
@@ -2907,7 +2907,7 @@
     "titulo": "Doença Arterial Coronariana Crônica (Angina Estável)",
     "resumo": "Angina estável: classificação CCS, estratificação diagnóstica por probabilidade pré-teste e tratamento clínico otimizado x revascularização.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Doença Coronária Estável; ESC Guidelines for chronic coronary syndromes",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Doença Coronária Estável (2014, atualização 2023); ESC Guidelines for chronic coronary syndromes (2019, atualização 2024); Estudo ISCHEMIA",
     "mnemonicos": [
       {
         "palavra": "ABCDE",
@@ -2917,31 +2917,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A angina estável decorre de placas ateroscleróticas coronarianas fixas e estáveis que reduzem o lúmen vascular, gerando um desequilíbrio entre oferta e demanda de oxigênio miocárdico durante situações de maior consumo (esforço físico, estresse emocional), sem ruptura de placa nem trombose aguda associada — diferentemente das síndromes coronarianas agudas. O limiar de esforço para o surgimento dos sintomas costuma ser reprodutível e previsível."
+        "conteudo": "A angina estável decorre de placas ateroscleróticas coronarianas fixas e estáveis (com capa fibrosa espessa, ao contrário das placas instáveis das síndromes agudas) que reduzem o lúmen vascular, gerando um desequilíbrio entre oferta e demanda de oxigênio miocárdico durante situações de maior consumo (esforço físico, estresse emocional, exposição ao frio), sem ruptura de placa nem trombose aguda associada. O limiar de esforço para o surgimento dos sintomas costuma ser reprodutível e previsível — uma característica central para diferenciá-la da instabilidade. A classificação da Canadian Cardiovascular Society (CCS, classes I a IV) graduada pela limitação funcional é usada tanto na prática clínica quanto em provas."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor ou desconforto torácico retroesternal, em aperto, desencadeado por esforço físico ou estresse emocional, com duração de poucos minutos, que alivia com o repouso ou uso de nitrato sublingual — essa tríade (desencadeada por esforço, curta duração, alívio com repouso/nitrato) caracteriza a angina típica. Apresentações atípicas são mais frequentes em mulheres, idosos e diabéticos (neuropatia autonômica mascarando a dor)."
+        "conteudo": "Dor ou desconforto torácico retroesternal, em aperto, desencadeado por esforço físico ou estresse emocional, com duração de poucos minutos, que alivia com o repouso ou uso de nitrato sublingual — essa tríade (desencadeada por esforço, curta duração, alívio com repouso/nitrato) caracteriza a angina típica; a presença de apenas 2 desses critérios define angina atípica, e de apenas 1 (ou nenhum), dor torácica não anginosa. Apresentações atípicas são mais frequentes em mulheres, idosos e diabéticos (neuropatia autonômica mascarando a dor), podendo se manifestar apenas como dispneia aos esforços (equivalente anginoso)."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Geralmente normal fora das crises. Durante o episódio anginoso, pode haver quarta bulha transitória. A pesquisa de fatores de risco cardiovascular (obesidade, sinais de dislipidemia como xantomas) e de doença aterosclerótica em outros territórios (sopros carotídeos, pulsos periféricos diminuídos) contribui para a estimativa de probabilidade pré-teste de doença coronariana."
+        "conteudo": "Geralmente normal fora das crises. Durante o episódio anginoso, pode haver quarta bulha transitória (por isquemia comprometendo a complacência diastólica) ou até um sopro de insuficiência mitral transitório por disfunção isquêmica do músculo papilar. A pesquisa de fatores de risco cardiovascular ao exame (obesidade central, xantomas/xantelasmas sugerindo dislipidemia) e de doença aterosclerótica em outros territórios (sopros carotídeos, pulsos periféricos diminuídos, DAOP) contribui para a estimativa de probabilidade pré-teste de doença coronariana obstrutiva."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A escolha do exame depende da probabilidade pré-teste: teste ergométrico é útil em pacientes com capacidade de exercício e ECG basal interpretável; angiotomografia de coronárias tem alto valor preditivo negativo para exclusão de doença obstrutiva; cintilografia miocárdica e ecocardiograma de estresse avaliam isquemia induzida. A cineangiocoronariografia (cateterismo cardíaco) permanece o padrão-ouro para definição anatômica precisa das lesões coronarianas, reservada a casos de alto risco ou quando se planeja revascularização."
+        "conteudo": "A escolha do exame depende da probabilidade pré-teste (calculada por idade, sexo e características da dor): teste ergométrico é útil em pacientes com capacidade de exercício preservada e ECG basal interpretável (sem BRE, marca-passo ou alterações de repouso de ST); angiotomografia de coronárias tem alto valor preditivo negativo e é especialmente útil para excluir doença obstrutiva em probabilidade baixa-intermediária; cintilografia miocárdica de perfusão e ecocardiograma de estresse avaliam isquemia induzida por estresse farmacológico ou físico. A cineangiocoronariografia (cateterismo cardíaco) permanece o padrão-ouro para definição anatômica precisa das lesões coronarianas, reservada a casos de alto risco pré-teste ou quando já se planeja revascularização."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O tratamento clínico otimizado inclui antiagregação plaquetária, estatina de alta potência, e terapia antianginosa (betabloqueador ou bloqueador de canal de cálcio como primeira linha, nitrato para alívio sintomático). A revascularização (angioplastia ou cirurgia de revascularização miocárdica) é reservada a pacientes com sintomas refratários ao tratamento clínico ou com anatomia coronariana de alto risco (lesão de tronco de coronária esquerda, doença triarterial com disfunção ventricular)."
+        "conteudo": "O tratamento clínico otimizado inclui antiagregação plaquetária (AAS em dose baixa), estatina de alta potência independentemente do LDL basal, e terapia antianginosa (betabloqueador ou bloqueador de canal de cálcio como primeira linha; nitrato de longa ação e ranolazina como opções adicionais para controle sintomático). O estudo ISCHEMIA confirmou que, em doença estável sem lesão de tronco e sem disfunção ventricular grave, a estratégia invasiva de rotina não reduz mortalidade ou infarto quando comparada ao tratamento clínico otimizado isolado — reservando-se a revascularização (angioplastia ou cirurgia de revascularização miocárdica) a sintomas refratários ao tratamento clínico ou anatomia coronariana de alto risco (lesão de tronco de coronária esquerda, doença triarterial com disfunção ventricular, onde há benefício de sobrevida comprovado, sobretudo com cirurgia)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Mudança no padrão da angina — aumento da frequência, surgimento em repouso, ou menor limiar para desencadear os sintomas — caracteriza angina instável, uma síndrome coronariana aguda que exige avaliação de urgência e não deve ser confundida com a angina estável crônica."
+        "conteudo": "Mudança no padrão da angina — aumento da frequência, surgimento em repouso, ou menor limiar para desencadear os sintomas em relação ao padrão prévio do paciente — caracteriza angina instável, uma síndrome coronariana aguda que exige avaliação de urgência e não deve ser confundida ou manejada como a angina estável crônica."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "As bancas exploram a tríade da angina típica (esforço, curta duração, alívio com repouso/nitrato) e a escolha do exame diagnóstico conforme a probabilidade pré-teste. É clássico também cobrar que a revascularização não reduz mortalidade na maioria dos pacientes estáveis (alivia sintomas), sendo o tratamento clínico otimizado a base terapêutica — exceto em anatomias de alto risco, onde a revascularização tem benefício de sobrevida comprovado."
+        "conteudo": "As bancas exploram a tríade da angina típica (esforço, curta duração, alívio com repouso/nitrato) e a escolha do exame diagnóstico conforme a probabilidade pré-teste. É clássico também cobrar o resultado do ISCHEMIA: a revascularização não reduz mortalidade na maioria dos pacientes estáveis (alivia sintomas), sendo o tratamento clínico otimizado a base terapêutica — exceto em anatomias de alto risco (tronco, triarterial com disfunção de VE), onde a revascularização (especialmente cirúrgica) tem benefício de sobrevida comprovado e bem estabelecido antes mesmo do ISCHEMIA."
       }
     ]
   },
@@ -2952,7 +2952,7 @@
     "titulo": "Angina Instável e IAM sem Supra de ST (SCA sem Supra)",
     "resumo": "Síndrome coronariana aguda sem supra de ST: estratificação de risco (GRACE/TIMI), antitrombóticos e estratégia invasiva x conservadora.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Síndromes Coronarianas Agudas sem Supradesnivelamento do Segmento ST; ESC Guidelines for acute coronary syndromes",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Síndromes Coronarianas Agudas sem Supradesnivelamento do Segmento ST (2021); ESC Guidelines for acute coronary syndromes (2023)",
     "mnemonicos": [
       {
         "palavra": "GRACE",
@@ -2962,31 +2962,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "Angina instável e IAM sem supra de ST compartilham o mesmo mecanismo fisiopatológico — ruptura ou erosão de placa aterosclerótica com trombose subtotal, sem oclusão completa e transmural do vaso — diferenciando-se apenas pela presença ou ausência de necrose miocárdica detectável (elevação de troponina). Juntas, compõem a síndrome coronariana aguda sem supra de ST."
+        "conteudo": "Angina instável e IAM sem supra de ST compartilham o mesmo mecanismo fisiopatológico de base — ruptura ou erosão de placa aterosclerótica com trombose subtotal, sem oclusão completa e transmural do vaso — diferenciando-se apenas pela presença ou ausência de necrose miocárdica detectável (elevação de troponina acima do percentil 99). Juntas, compõem a síndrome coronariana aguda sem supra de ST (SCASSST). Outros mecanismos menos comuns incluem vasoespasmo coronariano intenso (angina de Prinzmetal) e embolização de trombo distal a partir de placa proximal instável."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor torácica anginosa em repouso ou aos mínimos esforços, angina de início recente (menos de 2 meses) com características de gravidade, ou angina em crescendo (mais frequente, mais intensa ou de menor limiar que o padrão prévio do paciente) — esses três padrões definem clinicamente a instabilidade, distinguindo-a da angina estável crônica."
+        "conteudo": "Dor torácica anginosa em repouso ou aos mínimos esforços com duração maior que 20 minutos, angina de início recente (menos de 2 meses) já com características de gravidade (classe III da CCS), ou angina em crescendo (mais frequente, mais intensa ou de menor limiar que o padrão prévio do paciente) — esses três padrões definem clinicamente a instabilidade, distinguindo-a da angina estável crônica. Dispneia, sudorese e náuseas associadas reforçam a suspeita, sobretudo em idosos, diabéticos e mulheres, grupos com maior chance de apresentação atípica."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Frequentemente inespecífico, semelhante ao do IAM com supra. A avaliação deve buscar sinais de instabilidade hemodinâmica (hipotensão, sinais de baixo débito) e de complicações mecânicas, que reclassificariam o risco do paciente para uma conduta mais agressiva e precoce."
+        "conteudo": "Frequentemente inespecífico, semelhante ao do IAM com supra. A avaliação deve buscar ativamente sinais de instabilidade hemodinâmica (hipotensão, sinais de baixo débito, extremidades frias) e de complicações mecânicas associadas, que reclassificariam o risco do paciente para uma conduta invasiva mais agressiva e precoce, independentemente do escore de risco calculado."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O ECG pode mostrar infradesnivelamento de ST, inversão de onda T ou ser normal — a ausência de supra de ST é o que define esse grupo, mas não exclui isquemia significativa. A troponina de alta sensibilidade seriada é o exame padrão-ouro que diferencia angina instável (troponina normal) de IAM sem supra (troponina elevada), sendo essa distinção decisiva para estratificação de risco e tempo de intervenção."
+        "conteudo": "O ECG pode mostrar infradesnivelamento de ST, inversão de onda T (especialmente inversão simétrica e profunda em V2-V4, padrão de Wellens, sugestivo de lesão crítica proximal de descendente anterior) ou ser completamente normal — a ausência de supra de ST é o que define esse grupo, mas não exclui isquemia significativa. A troponina de alta sensibilidade seriada é o exame padrão-ouro que diferencia angina instável (troponina normal em toda a curva) de IAM sem supra (troponina elevada e/ou com variação significativa), distinção decisiva para estratificação de risco. O escore GRACE (idade, frequência cardíaca, PA sistólica, creatinina, classe Killip, parada cardíaca na admissão, desvio de ST, marcadores elevados) estima mortalidade e orienta o tempo até a intervenção; o escore TIMI é mais simples e também amplamente usado."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Dupla antiagregação plaquetária, anticoagulação, estatina de alta potência e terapia antianginosa compõem a base do tratamento. A estratégia invasiva (cateterismo com intenção de revascularização) é indicada de forma precoce (idealmente em até 24 horas) nos pacientes de alto risco, definidos por escores de estratificação (como o GRACE), enquanto pacientes de baixo risco podem ser conduzidos com estratégia inicialmente conservadora."
+        "conteudo": "Dupla antiagregação plaquetária (AAS + ticagrelor ou clopidogrel), anticoagulação parenteral (enoxaparina ou fondaparinux), estatina de alta potência e terapia antianginosa (betabloqueador, nitrato) compõem a base do tratamento. A estratégia invasiva (cateterismo com intenção de revascularização) é indicada de forma imediata (<2h) em instabilidade hemodinâmica/elétrica ou dor refratária, precoce (<24h) nos pacientes de alto risco pelo escore GRACE, e pode ser conduzida de forma seletiva/conservadora nos pacientes de baixo risco após estratificação não invasiva."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Angina recorrente refratária ao tratamento otimizado, instabilidade hemodinâmica, arritmia ventricular ou elevação progressiva de troponina</span> classificam o paciente como muito alto risco, com indicação de cateterismo cardíaco de urgência (nas primeiras 2 horas), e não apenas precoce."
+        "conteudo": "<span class=\"red-flag\">Angina recorrente refratária ao tratamento otimizado, instabilidade hemodinâmica, arritmia ventricular ou elevação progressiva de troponina</span> classificam o paciente como muito alto risco, com indicação de cateterismo cardíaco de urgência (nas primeiras 2 horas), e não apenas precoce — atraso nesse subgrupo associa-se a maior mortalidade."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A diferenciação entre angina instável e IAM sem supra pela troponina é ponto central de cobrança, assim como os escores de risco (GRACE, TIMI) que definem o tempo até a estratégia invasiva. Lembrar que, ao contrário do IAMCSST, aqui não há indicação de trombólise — a reperfusão é feita por cateterismo, guiada pela estratificação de risco, e não por critério de tempo isolado."
+        "conteudo": "A diferenciação entre angina instável e IAM sem supra pela troponina é ponto central de cobrança, assim como os escores de risco (GRACE, TIMI) que definem o tempo até a estratégia invasiva. Lembrar que, ao contrário do IAMCSST, aqui não há indicação de trombólise — a reperfusão é feita por cateterismo, guiada pela estratificação de risco, e não por critério de tempo isolado (trombolítico em SCASSST está formalmente contraindicado, ponto de pegadinha frequente)."
       }
     ]
   },
@@ -2997,7 +2997,7 @@
     "titulo": "Arritmias Cardíacas: Bradiarritmias e Taquiarritmias",
     "resumo": "Bloqueios atrioventriculares, taquicardias supraventriculares e ventriculares, e abordagem inicial guiada pela estabilidade hemodinâmica.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretrizes de Arritmias Cardíacas; ACLS Guidelines (American Heart Association)",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretrizes de Arritmias Cardíacas; ACLS Guidelines (American Heart Association, atualização 2020/2025)",
     "mnemonicos": [
       {
         "palavra": "Instável = Choque",
@@ -3007,31 +3007,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "As bradiarritmias resultam de disfunção do nó sinusal ou de bloqueios na condução atrioventricular, reduzindo a frequência cardíaca de forma sintomática. As taquiarritmias decorrem de mecanismos de reentrada, automatismo anormal ou atividade deflagrada, e são classificadas conforme a origem (supraventricular ou ventricular) e a morfologia do QRS (estreito ou largo), o que orienta diretamente a conduta terapêutica."
+        "conteudo": "As bradiarritmias resultam de disfunção do nó sinusal (doença do nó sinusal) ou de bloqueios na condução atrioventricular — de primeiro grau (apenas alargamento do PR), segundo grau Mobitz I (Wenckebach, alargamento progressivo do PR até bloquear um estímulo, geralmente benigno e suprahissiano) e Mobitz II (bloqueio súbito sem alargamento prévio do PR, geralmente infra-hissiano e de maior risco de progressão para BAVT), e terceiro grau/BAVT (dissociação completa entre P e QRS). As taquiarritmias decorrem de mecanismos de reentrada (a maioria das taquicardias paroxísticas supraventriculares e o flutter atrial), automatismo anormal ou atividade deflagrada, sendo classificadas conforme a origem (supraventricular ou ventricular) e a morfologia do QRS (estreito ou largo), o que orienta diretamente a conduta terapêutica imediata."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Bradiarritmias sintomáticas cursam com tontura, síncope, fadiga e intolerância a esforços por baixo débito cardíaco. Taquiarritmias manifestam-se com palpitações, dispneia, dor torácica ou, nos casos mais graves, síncope e parada cardiorrespiratória — a gravidade clínica depende mais da repercussão hemodinâmica do que do tipo específico de arritmia."
+        "conteudo": "Bradiarritmias sintomáticas cursam com tontura, pré-síncope/síncope, fadiga e intolerância a esforços por baixo débito cardíaco. Taquiarritmias manifestam-se com palpitações (frequentemente descritas como início e término súbitos nas taquicardias por reentrada nodal), dispneia, dor torácica ou, nos casos mais graves, síncope e parada cardiorrespiratória — a gravidade clínica depende mais da repercussão hemodinâmica resultante do que do tipo específico de arritmia isoladamente."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "A palpação do pulso (frequência, ritmo e regularidade) e a ausculta cardíaca orientam a suspeita inicial. Sinais de instabilidade — hipotensão, alteração do nível de consciência, dor torácica isquêmica ou sinais de congestão pulmonar aguda — definem a urgência da intervenção, independentemente do diagnóstico eletrocardiográfico específico."
+        "conteudo": "A palpação do pulso (frequência, ritmo e regularidade) e a ausculta cardíaca orientam a suspeita inicial — por exemplo, a onda \"a\" em canhão (canhão jugular) na dissociação atrioventricular do BAVT/taquicardia ventricular. Sinais de instabilidade — hipotensão, alteração aguda do nível de consciência, dor torácica isquêmica ou sinais de congestão pulmonar aguda — definem a urgência da intervenção, independentemente do diagnóstico eletrocardiográfico específico já estabelecido."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O eletrocardiograma de 12 derivações é o exame padrão-ouro para caracterização do ritmo. Nas taquicardias de QRS largo sem pulso ou instáveis, deve-se assumir origem ventricular até prova em contrário, dada a gravidade potencial. O monitor Holter de 24 horas ou monitores de eventos são úteis para arritmias paroxísticas não capturadas no ECG de repouso."
+        "conteudo": "O eletrocardiograma de 12 derivações é o exame padrão-ouro para caracterização do ritmo. Nas taquicardias de QRS largo sem pulso ou instáveis, deve-se assumir origem ventricular até prova em contrário, dada a gravidade potencial — critérios como Brugada e concordância de morfologia ajudam a diferenciar TV de taquicardia supraventricular com aberrância quando o paciente está estável. O monitor Holter de 24-48 horas ou monitores de eventos de longa duração são úteis para arritmias paroxísticas não capturadas no ECG de repouso, incluindo investigação de síncope de origem obscura."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Diante de qualquer arritmia (bradi ou taquiarritmia) com instabilidade hemodinâmica, a conduta é imediata: marca-passo transcutâneo/atropina na bradicardia instável, e cardioversão elétrica sincronizada na taquicardia instável (exceto na fibrilação ventricular/taquicardia ventricular sem pulso, que recebem desfibrilação não sincronizada). Em pacientes estáveis, o tratamento é guiado pelo diagnóstico específico: manobra vagal e adenosina nas taquicardias supraventriculares paroxísticas, antiarrítmicos conforme o mecanismo."
+        "conteudo": "Diante de qualquer arritmia (bradi ou taquiarritmia) com instabilidade hemodinâmica, a conduta é imediata: atropina (0,5mg IV, repetível) e marca-passo transcutâneo/transvenoso na bradicardia instável, e cardioversão elétrica sincronizada na taquicardia instável (exceto na fibrilação ventricular/taquicardia ventricular sem pulso, que recebem desfibrilação não sincronizada imediata, com epinefrina e amiodarona/lidocaína conforme algoritmo de PCR). Em pacientes estáveis, o tratamento é guiado pelo diagnóstico específico: manobra vagal seguida de adenosina (6mg, podendo repetir 12mg) nas taquicardias supraventriculares paroxísticas por reentrada nodal, e antiarrítmicos específicos (amiodarona, procainamida) conforme o mecanismo identificado."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Qualquer arritmia associada a instabilidade hemodinâmica (hipotensão, rebaixamento do nível de consciência, dor torácica isquêmica, sinais de choque)</span> exige intervenção elétrica imediata (cardioversão ou marca-passo), sem aguardar a definição etiológica completa da arritmia."
+        "conteudo": "<span class=\"red-flag\">Qualquer arritmia associada a instabilidade hemodinâmica (hipotensão, rebaixamento do nível de consciência, dor torácica isquêmica, sinais de choque)</span> exige intervenção elétrica imediata (cardioversão ou marca-passo), sem aguardar a definição etiológica completa da arritmia — memorizar essa prioridade evita atraso fatal em provas práticas e na vida real."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O algoritmo de ACLS é cobrança recorrente: a regra de ouro é que instabilidade define a conduta imediata, não o diagnóstico eletrocardiográfico específico. É comum a banca testar a diferença entre cardioversão sincronizada (a maioria das taquiarritmias instáveis) e desfibrilação não sincronizada (FV/TV sem pulso), e a sequência de doses de atropina/marca-passo na bradicardia sintomática."
+        "conteudo": "O algoritmo de ACLS é cobrança recorrente: a regra de ouro é que instabilidade define a conduta imediata, não o diagnóstico eletrocardiográfico específico. É comum a banca testar a diferença entre cardioversão sincronizada (a maioria das taquiarritmias instáveis, para evitar chocar sobre a onda T e induzir FV) e desfibrilação não sincronizada (FV/TV sem pulso), e a sequência de doses de atropina/marca-passo na bradicardia sintomática, além da diferenciação entre Mobitz I (benigno) e Mobitz II (alto risco, indicação de marca-passo definitivo)."
       }
     ]
   },
@@ -3042,7 +3042,7 @@
     "titulo": "Valvopatias: Estenose e Insuficiência Mitral e Aórtica",
     "resumo": "Ausculta característica, fisiopatologia e indicações de intervenção nas principais valvopatias mitral e aórtica.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Valvopatias; ESC/EACTS Guidelines for the management of valvular heart disease; ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Valvopatias (2020); ESC/EACTS Guidelines for the management of valvular heart disease (2021); ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease (2020)",
     "mnemonicos": [
       {
         "palavra": "Sistólico x Diastólico",
@@ -3052,31 +3052,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "As valvopatias resultam de lesões estruturais que causam estenose (obstrução ao fluxo, com sobrecarga de pressão na câmara a montante) ou insuficiência/regurgitação (refluxo de sangue, com sobrecarga de volume). Na estenose mitral, a etiologia mais comum no Brasil ainda é a doença reumática; na estenose aórtica, predomina a degeneração calcífica senil em idosos e a valva bivalvulada em pacientes mais jovens. A insuficiência mitral pode ser primária (degeneração do próprio aparelho valvar) ou secundária (dilatação do ventrículo esquerdo que distende o anel valvar)."
+        "conteudo": "As valvopatias resultam de lesões estruturais que causam estenose (obstrução ao fluxo, com sobrecarga de pressão na câmara a montante e hipertrofia concêntrica compensatória) ou insuficiência/regurgitação (refluxo de sangue, com sobrecarga de volume e dilatação excêntrica compensatória). Na estenose mitral, a etiologia mais comum no Brasil ainda é a doença reumática (fusão comissural característica); na estenose aórtica, predomina a degeneração calcífica senil em idosos (processo inflamatório crônico similar à aterosclerose) e a valva aórtica bivalvulada (calcificação precoce) em pacientes mais jovens. A insuficiência mitral pode ser primária/orgânica (degeneração mixomatosa do próprio aparelho valvar, prolapso) ou secundária/funcional (dilatação do ventrículo esquerdo que distende o anel valvar e afasta os folhetos, sem doença estrutural primária da valva)."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dispneia aos esforços é o sintoma mais comum a todas as valvopatias, refletindo congestão pulmonar retrógrada. Estenose aórtica grave classicamente cursa com a tríade sintomática de angina, síncope aos esforços e dispneia, cujo surgimento marca uma mudança de prognóstico significativa. Estenose mitral pode se manifestar com fibrilação atrial (por dilatação atrial esquerda) e até hemoptise."
+        "conteudo": "Dispneia aos esforços é o sintoma mais comum a todas as valvopatias, refletindo congestão pulmonar retrógrada. Estenose aórtica grave classicamente cursa com a tríade sintomática de angina, síncope aos esforços e dispneia (insuficiência cardíaca), cujo surgimento marca uma mudança de prognóstico significativa — sobrevida média de aproximadamente 5, 3 e 2 anos respectivamente após o início de cada sintoma, sem tratamento. Estenose mitral pode se manifestar com fibrilação atrial (por dilatação atrial esquerda crônica) e até hemoptise (ruptura de veias brônquicas colaterais por hipertensão venosa pulmonar)."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "A ausculta cardíaca fornece achados praticamente patognomônicos: sopro sistólico em foco aórtico com irradiação para carótidas na estenose aórtica; sopro holossistólico em foco mitral irradiado para axila na insuficiência mitral; ruflar diastólico em foco mitral com hiperfonese de B1 na estenose mitral; sopro diastólico aspirativo em foco aórtico na insuficiência aórtica (associado a sinais periféricos de pulso amplo, como o sinal de Musset e o pulso em martelo d'água)."
+        "conteudo": "A ausculta cardíaca fornece achados praticamente patognomônicos: sopro sistólico em foco aórtico com irradiação para carótidas, de padrão em diamante (crescendo-decrescendo), na estenose aórtica; sopro holossistólico em foco mitral irradiado para axila na insuficiência mitral; ruflar diastólico em foco mitral com hiperfonese de B1 e estalido de abertura na estenose mitral; sopro diastólico aspirativo em foco aórtico (foco aórtico acessório) na insuficiência aórtica, associado a múltiplos sinais periféricos de pulso amplo/hipercinético (sinal de Musset — balanço cefálico sincrônico ao pulso, pulso em martelo d'água de Corrigan, sinal de Quincke — pulsação capilar no leito ungueal)."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O ecocardiograma transtorácico com Doppler é o exame padrão-ouro, permitindo caracterizar o mecanismo, quantificar a gravidade (área valvar, gradientes de pressão) e avaliar a repercussão sobre as câmaras cardíacas — informações que definem o momento cirúrgico. O ecocardiograma transesofágico complementa a avaliação pré-operatória e a investigação de endocardite associada."
+        "conteudo": "O ecocardiograma transtorácico com Doppler é o exame padrão-ouro, permitindo caracterizar o mecanismo, quantificar a gravidade (área valvar — estenose aórtica grave definida por área <1,0cm², gradiente médio >40mmHg, velocidade de jato >4m/s) e avaliar a repercussão sobre as câmaras cardíacas — informações que definem o momento cirúrgico. O ecocardiograma transesofágico complementa a avaliação pré-operatória (especialmente na avaliação do aparelho subvalvar mitral para plastia) e a investigação de endocardite associada."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O tratamento definitivo das valvopatias graves e sintomáticas é a intervenção mecânica — cirurgia de troca ou plastia valvar, ou, em casos selecionados (especialmente estenose aórtica em idosos de alto risco cirúrgico), o implante valvar aórtico transcateter (TAVI). O tratamento clínico (diuréticos, vasodilatadores) tem papel de suporte sintomático, sem alterar a história natural da doença estrutural."
+        "conteudo": "O tratamento definitivo das valvopatias graves e sintomáticas (ou assintomáticas com disfunção ventricular já instalada) é a intervenção mecânica — cirurgia de troca ou plastia valvar, ou, em casos selecionados (especialmente estenose aórtica em idosos de risco cirúrgico intermediário/alto ou proibitivo), o implante valvar aórtico transcateter (TAVI), hoje também expandido a pacientes de baixo risco em estudos recentes. O tratamento clínico (diuréticos, vasodilatadores) tem papel de suporte sintomático, sem alterar a história natural da doença estrutural valvar."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Síncope ou angina em paciente com estenose aórtica grave</span> indica prognóstico reservado e é indicação formal de intervenção valvar, mesmo sem outros sintomas — a sobrevida cai drasticamente após o início dos sintomas na estenose aórtica grave não tratada. Vasodilatadores devem ser usados com extrema cautela na estenose aórtica grave, pelo risco de síncope/colapso hemodinâmico."
+        "conteudo": "<span class=\"red-flag\">Síncope ou angina em paciente com estenose aórtica grave</span> indica prognóstico reservado e é indicação formal de intervenção valvar, mesmo sem outros sintomas — a sobrevida cai drasticamente após o início dos sintomas na estenose aórtica grave não tratada. Vasodilatadores (incluindo nitrato) devem ser usados com extrema cautela ou evitados na estenose aórtica grave sintomática, pelo risco de síncope/colapso hemodinâmico por incapacidade de aumentar o débito através da valva fixa e estreita."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A tríade sintomática da estenose aórtica grave (angina, síncope, dispneia) e a associação de cada sopro ao seu respectivo foco de ausculta são cobranças certas. Também é comum explorar a contraindicação relativa de nitrato/vasodilatador na estenose aórtica grave sintomática, e a etiologia reumática ainda relevante da estenose mitral no contexto brasileiro."
+        "conteudo": "A tríade sintomática da estenose aórtica grave (angina, síncope, dispneia) com a respectiva ordem prognóstica de sobrevida, e a associação de cada sopro ao seu respectivo foco de ausculta, são cobranças certas. Também é comum explorar a contraindicação relativa de nitrato/vasodilatador na estenose aórtica grave sintomática, e a etiologia reumática ainda relevante da estenose mitral no contexto brasileiro (diferente de países desenvolvidos, onde é rara)."
       }
     ]
   },
@@ -3087,7 +3087,7 @@
     "titulo": "Crise Hipertensiva: Emergência x Urgência Hipertensiva",
     "resumo": "Diferenciação entre urgência e emergência hipertensiva pela presença de lesão aguda de órgão-alvo, e metas de redução pressórica conforme o órgão acometido.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Hipertensão Arterial 2020; ACC/AHA Guideline for the management of high blood pressure",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Hipertensão Arterial 2020; ACC/AHA Guideline for the management of high blood pressure (2017)",
     "mnemonicos": [
       {
         "palavra": "Lesão de órgão-alvo = Emergência",
@@ -3097,31 +3097,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A emergência hipertensiva ocorre quando uma elevação acentuada e abrupta da pressão arterial ultrapassa a capacidade de autorregulação vascular dos órgãos-alvo, levando a lesão endotelial aguda, necrose fibrinoide arteriolar e disfunção de órgão em curso (encéfalo, coração, rins, retina, ou a própria aorta). O que define a gravidade não é exclusivamente o valor numérico da PA, mas a presença de dano agudo de órgão-alvo já instalado."
+        "conteudo": "A emergência hipertensiva ocorre quando uma elevação acentuada e abrupta da pressão arterial ultrapassa a capacidade de autorregulação vascular dos órgãos-alvo, levando a lesão endotelial aguda, necrose fibrinoide arteriolar e disfunção de órgão em curso (encéfalo, coração, rins, retina, ou a própria aorta). O que define a gravidade não é exclusivamente o valor numérico da PA (embora tipicamente >180/120mmHg), mas a presença de dano agudo de órgão-alvo já instalado — um paciente hipertenso crônico grave pode tolerar valores muito altos sem lesão aguda (urgência), enquanto um paciente previamente normotenso (ex.: eclâmpsia, glomerulonefrite aguda) pode desenvolver emergência com valores proporcionalmente menores."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "O quadro clínico depende do órgão predominantemente acometido: cefaleia intensa, confusão mental e convulsões na encefalopatia hipertensiva; dor torácica e dispneia no edema agudo de pulmão ou síndrome coronariana associada; dor torácica com irradiação para o dorso na dissecção de aorta; e alterações visuais na retinopatia hipertensiva maligna."
+        "conteudo": "O quadro clínico depende do órgão predominantemente acometido: cefaleia intensa, confusão mental e convulsões na encefalopatia hipertensiva (diagnóstico de exclusão, após afastar AVC); dor torácica e dispneia no edema agudo de pulmão ou síndrome coronariana associada; dor torácica com irradiação para o dorso na dissecção de aorta; e alterações visuais (escotomas, amaurose) na retinopatia hipertensiva maligna com papiledema."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "PA muito elevada (tipicamente >180/120mmHg, embora o valor absoluto seja menos importante que a repercussão) associada a sinais de disfunção aguda: alteração do nível de consciência ou déficit focal, estertores pulmonares e turgência jugular, ou papiledema/hemorragias retinianas ao fundo de olho na fundoscopia — este último um achado que indica malignidade da hipertensão."
+        "conteudo": "PA muito elevada associada a sinais de disfunção aguda: alteração do nível de consciência ou déficit focal, estertores pulmonares e turgência jugular no edema agudo de pulmão, ou papiledema/hemorragias retinianas e exsudatos algodonosos ao fundo de olho na fundoscopia — este último um achado que indica malignidade da hipertensão e justifica por si só a classificação como emergência."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é eminentemente clínico, baseado na medida da PA associada à evidência de lesão aguda de órgão-alvo. A investigação complementar é direcionada ao órgão suspeito de acometimento: ECG e troponina se suspeita coronariana, tomografia de crânio se déficit neurológico, angiotomografia de aorta se dor torácica com características de dissecção, função renal e exame de urina em todos os casos."
+        "conteudo": "O diagnóstico é eminentemente clínico, baseado na medida da PA associada à evidência objetiva de lesão aguda de órgão-alvo. A investigação complementar é direcionada ao órgão suspeito de acometimento: ECG e troponina se suspeita coronariana; tomografia de crânio se déficit neurológico ou convulsão (para excluir AVC hemorrágico antes de reduzir a PA agressivamente); angiotomografia de aorta se dor torácica com características de dissecção; função renal, eletrólitos e exame de urina (proteinúria, hematúria, cilindros) em todos os casos, pela frequente lesão renal aguda associada."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O tratamento é feito com anti-hipertensivos endovenosos (nitroprussiato de sódio, nicardipina, labetalol, conforme a condição associada) em ambiente de terapia intensiva, com meta de redução da PA média em cerca de 25% na primeira hora — reduções mais bruscas podem comprometer a perfusão de órgãos já lesados. Exceções importantes a essa meta gradual: AVC isquêmico (manejo pressórico mais conservador, salvo se candidato à trombólise) e dissecção de aorta (redução rápida e agressiva da PA e frequência cardíaca)."
+        "conteudo": "O tratamento é feito com anti-hipertensivos endovenosos (nitroprussiato de sódio, nicardipina, labetalol, esmolol — conforme a condição associada) em ambiente de terapia intensiva com monitorização contínua, com meta de redução da PA média em cerca de 25% na primeira hora — reduções mais bruscas podem comprometer a perfusão de órgãos já lesados (especialmente cerebral e renal, cujas curvas de autorregulação estão deslocadas para a direita em hipertensos crônicos). Exceções importantes a essa meta gradual: AVC isquêmico (manejo pressórico mais conservador e permissivo, salvo se candidato à trombólise) e dissecção de aorta (redução rápida e agressiva tanto da PA quanto da frequência cardíaca, com meta de PA sistólica 100-120mmHg em minutos)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">PA muito elevada associada a rebaixamento do nível de consciência, dor torácica ou dispneia súbita</span> exige internação imediata em unidade de terapia intensiva para tratamento endovenoso monitorizado — jamais deve ser tratada apenas com anti-hipertensivo oral e alta, como se faz na urgência hipertensiva."
+        "conteudo": "<span class=\"red-flag\">PA muito elevada associada a rebaixamento do nível de consciência, dor torácica ou dispneia súbita</span> exige internação imediata em unidade de terapia intensiva para tratamento endovenoso monitorizado — jamais deve ser tratada apenas com anti-hipertensivo oral e alta, como se faz na urgência hipertensiva assintomática."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O ponto mais cobrado é a diferenciação entre urgência (PA elevada sem lesão aguda de órgão-alvo, tratamento oral ambulatorial) e emergência hipertensiva (com lesão aguda, tratamento parenteral hospitalar). As exceções à meta de redução gradual (AVC isquêmico e dissecção de aorta) são armadilhas clássicas de prova."
+        "conteudo": "O ponto mais cobrado é a diferenciação entre urgência (PA elevada sem lesão aguda de órgão-alvo, tratamento oral ambulatorial com reavaliação em dias) e emergência hipertensiva (com lesão aguda, tratamento parenteral hospitalar monitorizado). As exceções à meta de redução gradual de 25% na primeira hora (AVC isquêmico — mais permissivo — e dissecção de aorta — mais agressivo e rápido) são armadilhas clássicas de prova."
       }
     ]
   },
@@ -6441,7 +6441,7 @@
     "titulo": "Miocardiopatias: Dilatada, Hipertrófica e Restritiva",
     "resumo": "Diferenciação entre as três miocardiopatias clássicas e a miocardiopatia hipertrófica como causa de morte súbita em atletas.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia; ESC Guidelines for the diagnosis and management of cardiomyopathies",
+    "fonte": "Sociedade Brasileira de Cardiologia; ESC Guidelines for the diagnosis and management of cardiomyopathies (2023)",
     "mnemonicos": [
       {
         "palavra": "Hipertrófica mata o atleta",
@@ -6451,31 +6451,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A cardiomiopatia dilatada caracteriza-se por dilatação e disfunção sistólica do ventrículo esquerdo, de etiologia isquêmica, idiopática, alcoólica, periparto ou viral, entre outras. A cardiomiopatia hipertrófica, frequentemente de origem genética (mutações em proteínas do sarcômero), causa hipertrofia ventricular assimétrica (classicamente do septo interventricular) que pode gerar obstrução dinâmica da via de saída do ventrículo esquerdo. A cardiomiopatia restritiva, mais rara, envolve enrijecimento das paredes ventriculares que prejudica o enchimento diastólico, geralmente por doenças infiltrativas (amiloidose)."
+        "conteudo": "A cardiomiopatia dilatada caracteriza-se por dilatação e disfunção sistólica do ventrículo esquerdo, de etiologia isquêmica, idiopática, alcoólica, periparto (últimas semanas de gestação a 5 meses pós-parto) ou viral (miocardite prévia), entre outras. A cardiomiopatia hipertrófica, frequentemente de origem genética autossômica dominante (mutações em proteínas do sarcômero, como a cadeia pesada da miosina beta), causa hipertrofia ventricular assimétrica (classicamente do septo interventricular, com relação septo/parede posterior >1,3) que pode gerar obstrução dinâmica da via de saída do ventrículo esquerdo (movimento anterior sistólico da valva mitral, efeito Venturi). A cardiomiopatia restritiva, mais rara, envolve enrijecimento das paredes ventriculares que prejudica o enchimento diastólico, geralmente por doenças infiltrativas (amiloidose cardíaca — AL ou por transtirretina/ATTR, esta última cada vez mais reconhecida em idosos)."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Cardiomiopatia dilatada manifesta-se com sinais e sintomas típicos de insuficiência cardíaca (dispneia, edema, fadiga). Cardiomiopatia hipertrófica pode ser assintomática por longo período, sendo a morte súbita em jovens atletas durante esforço físico sua manifestação mais temida e, por vezes, a primeira. Cardiomiopatia restritiva cursa com sinais predominantemente de congestão sistêmica (edema, ascite) com relativa preservação da função sistólica."
+        "conteudo": "Cardiomiopatia dilatada manifesta-se com sinais e sintomas típicos de insuficiência cardíaca (dispneia, edema, fadiga). Cardiomiopatia hipertrófica pode ser assintomática por longo período, sendo a morte súbita em jovens atletas durante esforço físico intenso sua manifestação mais temida e, por vezes, a primeira — é a principal causa de morte súbita cardíaca em atletas jovens competitivos. Cardiomiopatia restritiva cursa com sinais predominantemente de congestão sistêmica (edema, ascite, hepatomegalia) com relativa preservação da função sistólica, podendo ser confundida clinicamente com pericardite constritiva."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Na cardiomiopatia hipertrófica obstrutiva, o sopro sistólico é dinâmico — aumenta de intensidade com manobras que reduzem o retorno venoso (Valsalva, posição ortostática), um achado que ajuda a diferenciá-lo do sopro da estenose aórtica, que se comporta de forma oposta. Na cardiomiopatia dilatada, encontram-se os sinais gerais de IC (B3, estase jugular, crepitações). Na restritiva, sinais de congestão sistêmica predominam sobre os pulmonares."
+        "conteudo": "Na cardiomiopatia hipertrófica obstrutiva, o sopro sistólico é dinâmico — aumenta de intensidade com manobras que reduzem o retorno venoso/pré-carga (Valsalva, posição ortostática) e diminui com manobras que aumentam a pré-carga (agachamento, handgrip), um comportamento que ajuda a diferenciá-lo do sopro da estenose aórtica, que se comporta de forma oposta (aumenta com o aumento do volume ejetado). Na cardiomiopatia dilatada, encontram-se os sinais gerais de IC (B3, estase jugular, crepitações). Na restritiva, sinais de congestão sistêmica predominam sobre os pulmonares, com sinal de Kussmaul (aumento paradoxal da turgência jugular na inspiração) possível, semelhante à pericardite constritiva."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O ecocardiograma é o exame inicial e frequentemente suficiente para caracterizar o padrão (dilatado, hipertrófico ou restritivo) e quantificar a função ventricular. Na cardiomiopatia hipertrófica, a ressonância magnética cardíaca complementa a avaliação de fibrose miocárdica (importante para estratificação de risco de morte súbita). Na suspeita de amiloidose cardíaca (restritiva), a cintilografia com pirofosfato é ferramenta diagnóstica não invasiva importante."
+        "conteudo": "O ecocardiograma é o exame inicial e frequentemente suficiente para caracterizar o padrão (dilatado, hipertrófico ou restritivo) e quantificar a função ventricular e o gradiente dinâmico da via de saída na hipertrófica. Na cardiomiopatia hipertrófica, a ressonância magnética cardíaca complementa a avaliação de fibrose miocárdica (realce tardio pelo gadolínio, importante para estratificação de risco de morte súbita) e o escore HCM Risk-SCD orienta a indicação profilática de cardiodesfibrilador. Na suspeita de amiloidose cardíaca (restritiva), a cintilografia com pirofosfato de tecnécio é ferramenta diagnóstica não invasiva de alta acurácia para a forma ATTR, evitando biópsia na maioria dos casos."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Cardiomiopatia dilatada segue o tratamento farmacológico padrão da IC com fração reduzida, com indicação de cardiodesfibrilador implantável em casos selecionados para prevenção de morte súbita. Na cardiomiopatia hipertrófica obstrutiva, betabloqueadores são primeira linha para reduzir o gradiente dinâmico; miectomia septal ou ablação alcoólica são reservadas a casos refratários. É fundamental a estratificação de risco de morte súbita (histórico familiar, síncope, espessura septal extrema) para indicação de cardiodesfibrilador implantável profilático."
+        "conteudo": "Cardiomiopatia dilatada segue o tratamento farmacológico padrão da IC com fração reduzida (os quatro pilares), com indicação de cardiodesfibrilador implantável em casos selecionados para prevenção de morte súbita. Na cardiomiopatia hipertrófica obstrutiva, betabloqueadores são primeira linha para reduzir o gradiente dinâmico e os sintomas; mavacamteno (inibidor da miosina cardíaca) é opção mais recente para casos sintomáticos refratários; miectomia septal cirúrgica ou ablação septal alcoólica são reservadas a casos com obstrução grave refratária ao tratamento clínico. É fundamental a estratificação de risco de morte súbita (histórico familiar de morte súbita, síncope inexplicada, espessura septal extrema ≥30mm, resposta pressórica anormal ao esforço) para indicação de cardiodesfibrilador implantável profilático."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Síncope durante esforço físico em jovem, especialmente com história familiar de morte súbita</span>, deve levantar suspeita imediata de cardiomiopatia hipertrófica e motivar restrição de atividade física competitiva até avaliação cardiológica completa — é a principal causa de morte súbita cardíaca em atletas jovens."
+        "conteudo": "<span class=\"red-flag\">Síncope durante esforço físico em jovem, especialmente com história familiar de morte súbita</span>, deve levantar suspeita imediata de cardiomiopatia hipertrófica e motivar restrição de atividade física competitiva até avaliação cardiológica completa — é a principal causa de morte súbita cardíaca em atletas jovens e frequentemente a primeira manifestação da doença."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O comportamento do sopro da cardiomiopatia hipertrófica obstrutiva às manobras (piora com Valsalva/ortostase, diferente da estenose aórtica) é um clássico \"pega\" de prova. Também é recorrente a associação entre cardiomiopatia hipertrófica e morte súbita em atletas jovens, e a lista de fatores de risco para essa complicação."
+        "conteudo": "O comportamento oposto do sopro da cardiomiopatia hipertrófica obstrutiva às manobras de Valsalva/agachamento (comparado à estenose aórtica) é um clássico \"pega\" de prova. Também é recorrente a associação entre cardiomiopatia hipertrófica e morte súbita em atletas jovens, e a lista de fatores de risco maiores para essa complicação usada na indicação de CDI profilático."
       }
     ]
   },
@@ -6486,7 +6486,7 @@
     "titulo": "Pericardite Aguda e Tamponamento Cardíaco",
     "resumo": "Dor pleurítica postural e achados eletrocardiográficos da pericardite, e o reconhecimento do tamponamento cardíaco.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia; ESC Guidelines for the diagnosis and management of pericardial diseases",
+    "fonte": "Sociedade Brasileira de Cardiologia; ESC Guidelines for the diagnosis and management of pericardial diseases (2015)",
     "mnemonicos": [
       {
         "palavra": "Senta e melhora",
@@ -6496,31 +6496,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A pericardite aguda é a inflamação do pericárdio, mais comumente de causa viral ou idiopática nos países desenvolvidos, podendo também ser autoimune, urêmica, neoplásica ou pós-infarto (síndrome de Dressler). Quando há acúmulo rápido de líquido no espaço pericárdico, a pressão intrapericárdica pode superar a pressão de enchimento das câmaras cardíacas, comprimindo-as e restringindo o enchimento diastólico — configurando o tamponamento cardíaco, uma emergência com risco de colapso circulatório."
+        "conteudo": "A pericardite aguda é a inflamação do pericárdio, mais comumente de causa viral ou idiopática nos países desenvolvidos (presumivelmente também viral), podendo também ser autoimune (LES, artrite reumatoide), urêmica, neoplásica, tuberculosa (relevante em nosso meio) ou pós-infarto/pós-cirurgia cardíaca (síndrome de Dressler, de mecanismo autoimune, surgindo tipicamente semanas após o evento índice). Quando há acúmulo rápido de líquido no espaço pericárdico — mesmo em volume pequeno, se o acúmulo for agudo e o pericárdio não tiver tido tempo de se distender — a pressão intrapericárdica pode superar a pressão de enchimento das câmaras cardíacas, comprimindo-as e restringindo o enchimento diastólico, configurando o tamponamento cardíaco, uma emergência com risco de colapso circulatório e choque obstrutivo."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Dor torácica pleurítica, que piora com a inspiração profunda e o decúbito dorsal e melhora ao sentar-se inclinado para frente, é a apresentação clássica da pericardite aguda. No tamponamento cardíaco, predominam sintomas de baixo débito: dispneia, taquicardia e, em graus avançados, hipotensão e choque obstrutivo."
+        "conteudo": "Dor torácica pleurítica, que piora com a inspiração profunda e o decúbito dorsal e melhora ao sentar-se inclinado para frente (posição \"prece maometana\"), é a apresentação clássica da pericardite aguda, frequentemente precedida por quadro viral inespecífico. No tamponamento cardíaco, predominam sintomas de baixo débito: dispneia, taquicardia e, em graus avançados, hipotensão e choque obstrutivo — a evolução pode ser aguda (trauma, dissecção) ou subaguda (neoplasia, tuberculose, urêmica)."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "O atrito pericárdico à ausculta é o achado patognomônico da pericardite aguda, embora possa ser intermitente. No tamponamento, a tríade de Beck (hipotensão, turgência jugular e hipofonese de bulhas cardíacas) e o pulso paradoxal (queda da pressão arterial sistólica maior que 10mmHg durante a inspiração) são achados clássicos que devem ser ativamente procurados."
+        "conteudo": "O atrito pericárdico à ausculta é o achado patognomônico da pericardite aguda, um som áspero, semelhante a \"couro rangendo\", embora possa ser intermitente e de difícil ausculta. No tamponamento, a tríade de Beck (hipotensão, turgência jugular e hipofonese de bulhas cardíacas) e o pulso paradoxal (queda da pressão arterial sistólica maior que 10mmHg durante a inspiração, refletindo a interdependência ventricular exagerada) são achados clássicos que devem ser ativamente procurados diante de qualquer paciente com derrame pericárdico conhecido que descompensa."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Na pericardite aguda, o ECG tipicamente mostra supradesnivelamento difuso e côncavo do segmento ST (sem a topografia de território coronariano) e infradesnivelamento do segmento PR. No tamponamento, o ecocardiograma é o exame padrão-ouro, evidenciando derrame pericárdico com colapso diastólico de câmaras direitas e variação respiratória exagerada dos fluxos valvares."
+        "conteudo": "Na pericardite aguda, o ECG tipicamente mostra supradesnivelamento difuso e côncavo do segmento ST (sem a topografia de território coronariano específico, distribuído amplamente) e infradesnivelamento do segmento PR (achado bastante específico). No tamponamento, o ecocardiograma é o exame padrão-ouro, evidenciando derrame pericárdico com colapso diastólico de câmaras direitas (colapso de átrio direito no final da diástole e de ventrículo direito no início da diástole são os sinais mais precoces e sensíveis), veia cava inferior pletórica sem colabamento inspiratório, e variação respiratória exagerada dos fluxos valvares transmitral/transtricúspide."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "A pericardite aguda idiopática/viral é tratada com anti-inflamatórios não esteroidais em altas doses associados à colchicina, que reduz significativamente o risco de recorrência. O tamponamento cardíaco é emergência que exige drenagem imediata do líquido pericárdico (pericardiocentese), preferencialmente guiada por ecocardiograma, sendo medida salvadora que não deve ser postergada por exames adicionais em paciente instável."
+        "conteudo": "A pericardite aguda idiopática/viral é tratada com anti-inflamatórios não esteroidais em altas doses (ibuprofeno ou AAS) associados à colchicina por 3 meses, que reduz significativamente o risco de recorrência (estudo ICAP). O tamponamento cardíaco é emergência que exige drenagem imediata do líquido pericárdico (pericardiocentese), preferencialmente guiada por ecocardiograma, sendo medida salvadora que não deve ser postergada por exames adicionais em paciente instável; reposição volêmica pode ser ponte temporária até a drenagem, mas não substitui o procedimento."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Tríade de Beck com pulso paradoxal em paciente com pericardite ou derrame pericárdico conhecido</span> indica tamponamento cardíaco e exige pericardiocentese de urgência — postergar a drenagem em paciente instável pode ser fatal."
+        "conteudo": "<span class=\"red-flag\">Tríade de Beck com pulso paradoxal em paciente com pericardite ou derrame pericárdico conhecido</span> indica tamponamento cardíaco e exige pericardiocentese de urgência — postergar a drenagem em paciente instável pode ser fatal em minutos a horas."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O ECG da pericardite (supra difuso côncavo, sem topografia de artéria específica, associado a infra de PR) é frequentemente comparado ao do IAM em questões de diagnóstico diferencial. A tríade de Beck e o pulso paradoxal são achados de exame físico muito valorizados nas provas para identificar o tamponamento."
+        "conteudo": "O ECG da pericardite (supra difuso côncavo, sem topografia de artéria específica, associado a infra de PR) é frequentemente comparado ao do IAM em questões de diagnóstico diferencial — o infradesnivelamento do PR é considerado o achado mais específico. A tríade de Beck e o pulso paradoxal são achados de exame físico muito valorizados nas provas para identificar o tamponamento, assim como os sinais ecocardiográficos de colapso de câmaras direitas."
       }
     ]
   },
@@ -6531,7 +6531,7 @@
     "titulo": "Endocardite Infecciosa",
     "resumo": "Critérios de Duke, fenômenos vasculares/imunológicos e as indicações de cirurgia valvar na endocardite.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia; AHA Scientific Statement on Infective Endocarditis; ESC Guidelines for the management of infective endocarditis; Critérios de Duke modificados",
+    "fonte": "Sociedade Brasileira de Cardiologia; AHA Scientific Statement on Infective Endocarditis (2015); ESC Guidelines for the management of infective endocarditis (2023); Critérios de Duke modificados",
     "mnemonicos": [
       {
         "palavra": "Janeway indolor, Osler dolorido",
@@ -6541,31 +6541,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A endocardite infecciosa é a infecção do endocárdio, tipicamente acometendo valvas cardíacas nativas ou protéticas, formada a partir da adesão de microrganismos circulantes a uma superfície endotelial previamente lesada (por valvopatia, dispositivo intracardíaco ou uso de drogas endovenosas), com formação de vegetações compostas por fibrina, plaquetas e o próprio agente infeccioso. Staphylococcus aureus e estreptococos do grupo viridans são os agentes mais frequentemente implicados."
+        "conteudo": "A endocardite infecciosa é a infecção do endocárdio, tipicamente acometendo valvas cardíacas nativas ou protéticas, formada a partir da adesão de microrganismos circulantes a uma superfície endotelial previamente lesada (por valvopatia, dispositivo intracardíaco ou uso de drogas endovenosas), com formação de vegetações compostas por fibrina, plaquetas e o próprio agente infeccioso. Staphylococcus aureus é hoje o agente mais frequente globalmente (sobretudo em usuários de drogas endovenosas, valva tricúspide, e endocardite associada a cuidados de saúde/dispositivos), seguido por estreptococos do grupo viridans (associados a valvas nativas degeneradas/reumáticas e portas de entrada dentárias) e enterococos (associados a manipulação geniturinária)."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Febre prolongada associada a sopro cardíaco novo ou modificado é a apresentação mais sugestiva e deve sempre levantar a suspeita diagnóstica. Fenômenos embólicos periféricos (embolia séptica para pele, rins, baço, sistema nervoso central) e sinais imunológicos (glomerulonefrite) podem se manifestar ao longo da evolução, especialmente na endocardite subaguda."
+        "conteudo": "Febre prolongada associada a sopro cardíaco novo ou modificado é a apresentação mais sugestiva e deve sempre levantar a suspeita diagnóstica, especialmente em paciente com fator de risco predisponente (valvopatia prévia, prótese valvar, uso de drogas injetáveis, dispositivo cardíaco implantável, procedimento dentário/invasivo recente). Fenômenos embólicos periféricos (embolia séptica para pele, rins, baço, sistema nervoso central — podendo causar AVC isquêmico ou abscesso cerebral) e sinais imunológicos (glomerulonefrite por depósito de imunocomplexos) podem se manifestar ao longo da evolução, especialmente na endocardite subaguda de curso mais arrastado."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Lesões de Janeway (máculas eritematosas indolores palmoplantares, de origem embólica séptica) e nódulos de Osler (nódulos dolorosos em polpas digitais, de origem imunológica) são achados relativamente específicos, embora pouco sensíveis. Petéquias, hemorragias subungueais em estilha e manchas de Roth (hemorragias retinianas com centro claro) completam o quadro de fenômenos vasculares/imunológicos."
+        "conteudo": "Lesões de Janeway (máculas eritematosas indolores palmoplantares, de origem embólica séptica direta) e nódulos de Osler (nódulos dolorosos em polpas digitais, de origem imunológica por depósito de imunocomplexos) são achados relativamente específicos, embora pouco sensíveis (presentes em minoria dos casos). Petéquias (conjuntivais, mucosas), hemorragias subungueais em estilha e manchas de Roth (hemorragias retinianas com centro claro, visualizadas à fundoscopia) completam o quadro de fenômenos vasculares/imunológicos periféricos que reforçam a suspeita clínica."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é estabelecido pelos critérios de Duke modificados, que combinam critérios maiores (hemoculturas persistentemente positivas para microrganismo típico e evidência ecocardiográfica de envolvimento endocárdico) e menores. O ecocardiograma transesofágico tem sensibilidade superior ao transtorácico para detecção de vegetações, sendo o método de imagem padrão-ouro quando a suspeita clínica é alta mesmo com transtorácico negativo."
+        "conteudo": "O diagnóstico é estabelecido pelos critérios de Duke modificados, que combinam critérios maiores (hemoculturas persistentemente positivas para microrganismo típico de endocardite, colhidas em pelo menos duas amostras separadas, e evidência ecocardiográfica de envolvimento endocárdico — vegetação, abscesso ou nova deiscência de prótese) com critérios menores (predisposição, febre, fenômenos vasculares, fenômenos imunológicos, evidência microbiológica não maior). O ecocardiograma transesofágico tem sensibilidade superior ao transtorácico para detecção de vegetações (especialmente em próteses valvares), sendo o método de imagem de escolha quando a suspeita clínica é alta mesmo com transtorácico negativo."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Antibioticoterapia endovenosa prolongada (tipicamente 4 a 6 semanas), guiada pelo agente identificado em hemocultura e seu perfil de sensibilidade, é a base do tratamento. Intervenção cirúrgica valvar precoce é indicada em casos de insuficiência cardíaca refratária secundária à disfunção valvar, infecção não controlada apesar de antibioticoterapia adequada, ou vegetações muito grandes com alto risco embólico."
+        "conteudo": "Antibioticoterapia endovenosa prolongada (tipicamente 4 a 6 semanas, podendo ser mais longa em prótese valvar), guiada pelo agente identificado em hemocultura e seu perfil de sensibilidade, é a base do tratamento — hemoculturas devem sempre ser colhidas antes de iniciar antibiótico empírico. Intervenção cirúrgica valvar precoce é indicada em casos de insuficiência cardíaca refratária secundária à disfunção valvar, infecção não controlada apesar de antibioticoterapia adequada (abscesso perivalvar, bacteriemia persistente), ou vegetações muito grandes (>10mm) com alto risco embólico, especialmente se já houve embolização prévia."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Febre de origem indeterminada em paciente com valvopatia conhecida, prótese valvar ou uso de drogas endovenosas</span> deve sempre motivar coleta de hemoculturas seriadas e ecocardiograma antes de iniciar antibioticoterapia empírica — a antibioticoterapia prévia à coleta de hemoculturas compromete a identificação do agente e o sucesso terapêutico subsequente."
+        "conteudo": "<span class=\"red-flag\">Febre de origem indeterminada em paciente com valvopatia conhecida, prótese valvar ou uso de drogas endovenosas</span> deve sempre motivar coleta de hemoculturas seriadas (pelo menos 2-3 conjuntos de sítios diferentes) e ecocardiograma antes de iniciar antibioticoterapia empírica — a antibioticoterapia prévia à coleta de hemoculturas compromete gravemente a identificação do agente e o sucesso terapêutico subsequente."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "Os critérios de Duke modificados (maiores e menores) e a diferenciação entre lesões de Janeway (embólicas, indolores) e nódulos de Osler (imunológicos, dolorosos) são cobrança certa. A regra mnemônica \"Osler dói\" (Osler = dolOroso) ajuda a fixar essa diferenciação clássica de prova."
+        "conteudo": "Os critérios de Duke modificados (maiores e menores) e a diferenciação entre lesões de Janeway (embólicas, indolores) e nódulos de Osler (imunológicos, dolorosos) são cobrança certa. A regra mnemônica \"Osler dói\" (Osler = dolOroso) ajuda a fixar essa diferenciação clássica de prova, assim como a associação de Staphylococcus aureus com uso de drogas endovenosas e valva tricúspide."
       }
     ]
   },
@@ -6576,7 +6576,7 @@
     "titulo": "Febre Reumática",
     "resumo": "Critérios de Jones, a cardite como única manifestação com sequela permanente e a profilaxia secundária com penicilina.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Febre Reumática; Critérios de Jones revisados (American Heart Association, 2015)",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Febre Reumática (2009, atualização em diretrizes de valvopatias); Critérios de Jones revisados (American Heart Association, 2015)",
     "mnemonicos": [
       {
         "palavra": "JONES",
@@ -6586,31 +6586,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A febre reumática é uma resposta imunológica tardia (2 a 4 semanas após) a uma infecção faríngea pelo Streptococcus pyogenes (estreptococo beta-hemolítico do grupo A) não tratada ou tratada inadequadamente, mediada por mimetismo molecular — anticorpos direcionados contra antígenos estreptocócicos reagem de forma cruzada com proteínas do próprio organismo (miocárdio, articulações, sistema nervoso central, pele). É a principal causa de cardiopatia adquirida em crianças e jovens em países em desenvolvimento, incluindo o Brasil."
+        "conteudo": "A febre reumática é uma resposta imunológica tardia (2 a 4 semanas após) a uma infecção faríngea pelo Streptococcus pyogenes (estreptococo beta-hemolítico do grupo A) não tratada ou tratada inadequadamente, mediada por mimetismo molecular — anticorpos direcionados contra a proteína M do antígeno estreptocócico reagem de forma cruzada com proteínas do próprio organismo (miocárdio, articulações, núcleos da base no sistema nervoso central, pele). É a principal causa de cardiopatia adquirida em crianças e jovens em países em desenvolvimento, incluindo o Brasil, e sua prevenção primária (tratamento adequado da faringoamigdalite estreptocócica) é medida de saúde pública fundamental."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Manifesta-se como poliartrite migratória de grandes articulações (o achado mais comum), cardite (podendo acometer qualquer camada cardíaca, com a valva mitral sendo a mais afetada), coreia de Sydenham (movimentos involuntários e incoordenação, de aparecimento tardio), eritema marginado e nódulos subcutâneos — estes dois últimos mais raros."
+        "conteudo": "Manifesta-se como poliartrite migratória de grandes articulações (o achado mais comum, presente em até 75% dos casos, com resposta dramática a anti-inflamatórios em 24-48h), cardite (podendo acometer qualquer camada cardíaca — pancardite —, com a valva mitral sendo a mais afetada, seguida da aórtica), coreia de Sydenham (movimentos involuntários coreicos e incoordenação, de aparecimento mais tardio, podendo ser a única manifestação isolada), eritema marginado (lesões serpiginosas de bordas nítidas no tronco) e nódulos subcutâneos (indolores, sobre proeminências ósseas) — estes dois últimos mais raros."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Na cardite reumática aguda, o achado mais característico é o sopro de regurgitação mitral (holossistólico em foco mitral). A poliartrite reumática é migratória e assimétrica, com sinais flogísticos evidentes que respondem dramaticamente a anti-inflamatórios — resposta tão marcante que sua ausência deve questionar o diagnóstico. A coreia de Sydenham causa movimentos coreicos e labilidade emocional."
+        "conteudo": "Na cardite reumática aguda, o achado mais característico é o sopro de regurgitação mitral (holossistólico em foco mitral); pode haver também sopro de Carey Coombs (ruflar diastólico mitral funcional por edema valvar, na fase aguda) e taquicardia desproporcional à febre. A poliartrite reumática é migratória e assimétrica, com sinais flogísticos evidentes que respondem dramaticamente a anti-inflamatórios — resposta tão marcante que sua ausência ou persistência de artrite após 24-48h de AINE em dose adequada deve questionar o diagnóstico. A coreia de Sydenham causa movimentos coreicos, hipotonia e labilidade emocional."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é clínico, baseado nos critérios de Jones revisados, que exigem evidência de infecção estreptocócica prévia (cultura de orofaringe, teste rápido de antígeno ou, mais sensível, elevação de anticorpos antiestreptolisina O — ASLO) associada a critérios maiores e menores. O ecocardiograma é fundamental para detectar cardite subclínica não audível ao exame físico."
+        "conteudo": "O diagnóstico é clínico, baseado nos critérios de Jones revisados de 2015, que estratificam por população de risco (baixo risco vs. moderado/alto risco, reconhecendo que a apresentação e a frequência variam conforme a prevalência local) e exigem evidência de infecção estreptocócica prévia (cultura de orofaringe, teste rápido de antígeno ou, mais sensível para infecção recente, elevação de anticorpos antiestreptolisina O — ASLO) associada a 2 critérios maiores, ou 1 maior + 2 menores. O ecocardiograma é fundamental para detectar cardite subclínica não audível ao exame físico, hoje incorporada como critério maior em populações de risco quando presente mesmo sem sopro."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Erradicação do estreptococo com penicilina benzatina em dose única, associada a anti-inflamatório (AAS em dose alta para artrite/cardite leve, corticoide para cardite grave). Fundamental, e frequentemente subestimada nas provas, é a profilaxia secundária com penicilina benzatina intramuscular regular (a cada 3-4 semanas), mantida por anos, para prevenir recorrências e a progressão para valvopatia reumática crônica."
+        "conteudo": "Erradicação do estreptococo com penicilina benzatina em dose única (mesmo que a cultura de orofaringe já esteja negativa no momento do diagnóstico de febre reumática), associada a anti-inflamatório (AAS em dose alta para artrite/cardite leve a moderada, corticoide para cardite grave/insuficiência cardíaca). Fundamental, e frequentemente subestimada nas provas, é a profilaxia secundária com penicilina benzatina intramuscular regular (a cada 3-4 semanas, podendo ser a cada 3 semanas em áreas de alta incidência), cuja duração varia conforme a gravidade do acometimento: sem cardite, 5 anos ou até os 21 anos (o que for mais longo); com cardite mas sem sequela valvar residual, 10 anos ou até os 21 anos; com sequela valvar residual, por pelo menos 10 anos após o último episódio e até os 40 anos ou por toda a vida em casos de maior risco de exposição."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Cardite grave com insuficiência cardíaca descompensada</span> em criança/adolescente com febre reumática aguda indica pior prognóstico e maior risco de sequela valvar permanente, exigindo tratamento intensivo e seguimento cardiológico prolongado."
+        "conteudo": "<span class=\"red-flag\">Cardite grave com insuficiência cardíaca descompensada</span> em criança/adolescente com febre reumática aguda indica pior prognóstico e maior risco de sequela valvar permanente, exigindo tratamento intensivo (incluindo corticoide) e seguimento cardiológico prolongado com ecocardiogramas seriados."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "Os critérios de Jones (maiores: cardite, poliartrite, coreia, eritema marginado, nódulos subcutâneos) são cobrança garantida, assim como a duração da profilaxia secundária com penicilina benzatina (que varia conforme presença e gravidade de cardite, sendo um dos pontos mais decorados e mais cobrados do tema)."
+        "conteudo": "Os critérios de Jones (maiores: cardite, poliartrite, coreia, eritema marginado, nódulos subcutâneos) são cobrança garantida, assim como a duração da profilaxia secundária com penicilina benzatina — que varia conforme presença e gravidade de cardite, sendo um dos pontos mais decorados e mais cobrados do tema. A resposta dramática da artrite ao AAS/AINE como \"critério de exclusão reverso\" também é armadilha comum."
       }
     ]
   },
@@ -6621,7 +6621,7 @@
     "titulo": "Dislipidemias: Diagnóstico e Tratamento",
     "resumo": "Estratificação de risco cardiovascular, metas de LDL e a escolha entre estatina, ezetimiba, PCSK9 e fibratos.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose; ESC/EAS Guidelines for the management of dyslipidaemias",
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose (2017, atualização 2021); ESC/EAS Guidelines for the management of dyslipidaemias (2019)",
     "mnemonicos": [
       {
         "palavra": "Estatina é sempre a base",
@@ -6631,31 +6631,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "As dislipidemias caracterizam-se por alterações quantitativas ou qualitativas das lipoproteínas plasmáticas, sendo o LDL-colesterol elevado o principal fator de risco causal e modificável para a formação e progressão da placa aterosclerótica. Podem ser primárias (genéticas, como a hipercolesterolemia familiar) ou secundárias a outras condições (diabetes, hipotireoidismo, síndrome nefrótica, uso de certos medicamentos)."
+        "conteudo": "As dislipidemias caracterizam-se por alterações quantitativas ou qualitativas das lipoproteínas plasmáticas, sendo o LDL-colesterol elevado o principal fator de risco causal e modificável para a formação e progressão da placa aterosclerótica — a relação é dose-dependente e cumulativa ao longo da vida (\"quanto menor, melhor, e quanto antes, melhor\"). Podem ser primárias (genéticas, como a hipercolesterolemia familiar, de herança autossômica dominante, por mutação no receptor de LDL) ou secundárias a outras condições (diabetes mal controlado, hipotireoidismo, síndrome nefrótica, colestase, uso de certos medicamentos como corticoides e alguns antirretrovirais)."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "A grande maioria dos pacientes é assintomática, sendo o diagnóstico feito por rastreamento laboratorial. Formas genéticas graves, como a hipercolesterolemia familiar homozigótica, podem se manifestar com xantomas tendíneos e doença coronariana prematura (antes dos 55 anos em homens ou 65 em mulheres)."
+        "conteudo": "A grande maioria dos pacientes é assintomática, sendo o diagnóstico feito por rastreamento laboratorial de rotina. Formas genéticas graves, como a hipercolesterolemia familiar homozigótica (rara, LDL extremamente elevado desde a infância), podem se manifestar com xantomas tendíneos e doença coronariana prematura já na adolescência; a forma heterozigótica (mais comum, cerca de 1:200-250 pessoas) cursa com doença coronariana prematura (antes dos 55 anos em homens ou 65 em mulheres) se não tratada."
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Xantomas tendíneos (especialmente no tendão de Aquiles) e xantelasmas palpebrais sugerem hipercolesterolemia de longa data, frequentemente de origem familiar. O arco corneano em pacientes jovens (abaixo de 45 anos) é outro sinal sugestivo de dislipidemia genética significativa, embora seja achado inespecífico em idosos."
+        "conteudo": "Xantomas tendíneos (especialmente no tendão de Aquiles e extensores dos dedos) e xantelasmas palpebrais sugerem hipercolesterolemia de longa data, frequentemente de origem familiar. O arco corneano em pacientes jovens (abaixo de 45 anos) é outro sinal sugestivo de dislipidemia genética significativa, embora seja achado inespecífico e comum em idosos sem relação causal direta. Xantomas eruptivos (pápulas amareladas em superfícies extensoras) sugerem hipertrigliceridemia grave, com risco associado de pancreatite aguda quando triglicerídeos ultrapassam 1000mg/dL."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O perfil lipídico (colesterol total, LDL, HDL e triglicerídeos), atualmente podendo ser colhido sem jejum obrigatório conforme as diretrizes mais atuais, é o exame padrão para diagnóstico e monitorização terapêutica. A estratificação de risco cardiovascular global (escores como o de risco global brasileiro) é essencial para definir a meta de LDL individualizada de cada paciente, e não apenas o valor absoluto do exame."
+        "conteudo": "O perfil lipídico (colesterol total, LDL, HDL e triglicerídeos), atualmente podendo ser colhido sem jejum obrigatório conforme as diretrizes mais atuais (exceto quando triglicerídeos muito elevados são suspeitados), é o exame padrão para diagnóstico e monitorização terapêutica. A estratificação de risco cardiovascular global (escores como o de risco global brasileiro, incorporando idade, sexo, tabagismo, PA, diabetes e perfil lipídico) é essencial para definir a meta de LDL individualizada de cada paciente — a meta não é um valor fixo universal, mas varia conforme a categoria de risco (baixo, intermediário, alto, muito alto)."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Mudança de estilo de vida (dieta, atividade física, cessação do tabagismo) é recomendada a todos. As estatinas são a primeira linha farmacológica, com redução comprovada de eventos cardiovasculares; ezetimiba e inibidores de PCSK9 são adicionados quando a meta de LDL não é atingida com estatina isolada, especialmente em pacientes de risco muito alto (doença aterosclerótica estabelecida)."
+        "conteudo": "Mudança de estilo de vida (dieta com redução de gorduras saturadas e trans, atividade física, cessação do tabagismo) é recomendada a todos. As estatinas são a primeira linha farmacológica, com redução comprovada de eventos cardiovasculares proporcional à redução absoluta de LDL alcançada; classificam-se em alta intensidade (atorvastatina 40-80mg, rosuvastatina 20-40mg, reduzindo LDL em ≥50%), moderada e baixa intensidade. Ezetimiba e inibidores de PCSK9 (evolocumabe, alirocumabe) são adicionados quando a meta de LDL não é atingida com estatina isolada em dose máxima tolerada, especialmente em pacientes de risco muito alto (doença aterosclerótica estabelecida) ou hipercolesterolemia familiar."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Doença coronariana prematura (antes dos 55 anos em homens ou 65 em mulheres) associada a LDL muito elevado e história familiar deve levantar suspeita de hipercolesterolemia familiar, condição subdiagnosticada que requer tratamento intensivo precoce e rastreamento em cascata dos familiares de primeiro grau."
+        "conteudo": "Doença coronariana prematura (antes dos 55 anos em homens ou 65 em mulheres) associada a LDL muito elevado (geralmente >190mg/dL) e história familiar de eventos cardiovasculares precoces deve levantar suspeita de hipercolesterolemia familiar, condição subdiagnosticada que requer tratamento farmacológico intensivo precoce e rastreamento em cascata dos familiares de primeiro grau."
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "As metas de LDL estratificadas por categoria de risco cardiovascular (baixo, intermediário, alto, muito alto) são tema recorrente, assim como a indicação de estatina de alta potência em prevenção secundária independentemente do valor basal de LDL. A dispensa do jejum para coleta do perfil lipídico, atualização mais recente das diretrizes, também já aparece em provas mais atuais."
+        "conteudo": "As metas de LDL estratificadas por categoria de risco cardiovascular (baixo, intermediário, alto, muito alto — com valores decrescentes de meta conforme aumenta o risco) são tema recorrente, assim como a indicação de estatina de alta potência em prevenção secundária independentemente do valor basal de LDL (\"quanto mais baixo, melhor\", sem meta mínima de segurança estabelecida). A dispensa do jejum para coleta do perfil lipídico, atualização mais recente das diretrizes, também já aparece em provas mais atuais como pegadinha para quem ainda espera jejum de 12 horas."
       }
     ]
   },
