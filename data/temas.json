@@ -1048,12 +1048,12 @@
     "categoria": "Cardiologia",
     "titulo": "Fibrilação Atrial (FA)",
     "resumo": "Diagnóstico, escore CHA2DS2-VASc para anticoagulação e estratégias de controle de frequência/ritmo.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Fibrilação Atrial (2016, atualização 2022); ESC Guidelines for the management of atrial fibrillation (2020, atualização 2024)",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Fibrilação Atrial 2025 (substitui a versão 2016/2022 — mudou o escore de risco tromboembólico, ver Tratamento); ESC Guidelines for the management of atrial fibrillation (2020, atualização 2024)",
     "mnemonicos": [
       {
-        "palavra": "CHA2DS2-VASc",
-        "explicacao": "Escore de risco tromboembólico: Congestive heart failure, Hypertension, Age≥75 (2 pontos), Diabetes, Stroke/AIT prévio (2 pontos), Vascular disease, Age 65-74, Sex category (feminino) — orienta a indicação de anticoagulação."
+        "palavra": "CHA2DS2-VA (não é mais CHA2DS2-VASc)",
+        "explicacao": "Escore de risco tromboembólico atualizado pela Diretriz Brasileira de FA 2025: Congestive heart failure (1pt), Hypertension (1pt), Age≥75 (2pts), Diabetes (1pt), Stroke/AIT prévio (2pts), Vascular disease (1pt), Age 65-74 (1pt) — o \"Sc\" (sexo feminino) foi REMOVIDO, deixando de ser fator de risco independente."
       }
     ],
     "secoes": [
@@ -1075,7 +1075,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O manejo assenta em três pilares: controle de frequência (betabloqueador ou bloqueador de canal de cálcio não di-hidropiridínico como verapamil/diltiazem, com meta de frequência de repouso geralmente <110bpm em estratégia leniente), controle de ritmo (cardioversão elétrica ou química, antiarrítmicos como amiodarona/propafenona, ou ablação por cateter — atualmente considerada de primeira linha em pacientes selecionados, sobretudo jovens sintomáticos com FA paroxística) e, fundamentalmente, profilaxia de eventos tromboembólicos. A decisão de anticoagular é guiada pelo escore CHA2DS2-VASc (insuficiência Cardíaca, Hipertensão, idade ≥75 [2 pontos], Diabetes, AVC/AIT prévio [2 pontos], doença Vascular, idade 65-74, Sexo feminino) — escore ≥2 em homens ou ≥3 em mulheres indica anticoagulação; os anticoagulantes orais diretos (DOACs: dabigatrana, rivaroxabana, apixabana, edoxabana) são preferidos à varfarina na maioria dos pacientes, exceto em valvopatia mitral reumática moderada/grave ou prótese valvar mecânica, onde a varfarina permanece obrigatória."
+        "conteudo": "O manejo assenta em três pilares: controle de frequência (betabloqueador ou bloqueador de canal de cálcio não di-hidropiridínico como verapamil/diltiazem, com meta de frequência de repouso geralmente <110bpm em estratégia leniente), controle de ritmo (cardioversão elétrica ou química, antiarrítmicos como amiodarona/propafenona, ou ablação por cateter — atualmente considerada de primeira linha em pacientes selecionados, sobretudo jovens sintomáticos com FA paroxística) e, fundamentalmente, profilaxia de eventos tromboembólicos. A Diretriz Brasileira de Fibrilação Atrial 2025 substituiu o escore CHA2DS2-VASc pelo <strong>CHA2DS2-VA</strong> (insuficiência Cardíaca 1pt, Hipertensão 1pt, idade ≥75 2pts, Diabetes 1pt, AVC/AIT prévio 2pts, doença Vascular 1pt, idade 65-74 1pt) — o sexo feminino deixou de contar ponto isoladamente. A indicação de anticoagulação ficou mais simples e unissex: escore 0 não anticoagula; escore 1 é individualizado (pesando risco de sangramento, preferência do paciente); escore ≥2 indica anticoagulação, para homens e mulheres igualmente (sem mais distinção de limiar por sexo). O escore HAS-BLED de risco de sangramento NÃO contraindica anticoagulação por si só — serve para identificar e corrigir fatores de risco modificáveis de sangramento, não para negar o anticoagulante a quem tem indicação. Os anticoagulantes orais diretos (DOACs: dabigatrana, rivaroxabana, apixabana, edoxabana) são preferidos à varfarina na maioria dos pacientes, exceto em estenose mitral reumática moderada/grave ou prótese valvar mecânica, onde a varfarina permanece obrigatória."
       },
       {
         "titulo": "Sinais de alerta",
@@ -1083,7 +1083,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O escore CHA2DS2-VASc (memorizar os pontos, especialmente os itens que valem 2 pontos: AVC/AIT prévio e idade ≥75) para indicação de anticoagulação, e o escore HAS-BLED para risco de sangramento, são cobrados com frequência. A regra das \"48 horas/3 semanas\" para segurança de cardioversão sem necessidade de exame transesofágico prévio é clássica. Também é comum a banca explorar a preferência por DOACs sobre varfarina, exceto em valvopatia mitral reumática moderada/grave ou prótese valvar mecânica — situações em que DOACs são formalmente contraindicados por falta de eficácia comprovada nesses cenários específicos."
+        "conteudo": "Como a troca do CHA2DS2-VASc pelo CHA2DS2-VA é mudança de 2025 (portanto muito recente), há boa chance de aparecer justamente para testar se o candidato está desatualizado — desconfie de alternativas que ainda somam ponto por \"sexo feminino\" como fator de risco isolado. Memorizar os itens que valem 2 pontos (AVC/AIT prévio e idade ≥75) continua sendo cobrado. A regra das \"48 horas/3 semanas\" para segurança de cardioversão sem necessidade de exame transesofágico prévio é clássica. Também é comum a banca explorar a preferência por DOACs sobre varfarina, exceto em estenose mitral reumática moderada/grave ou prótese valvar mecânica — situações em que DOACs são formalmente contraindicados por falta de eficácia comprovada nesses cenários específicos. Pegadinha: HAS-BLED alto NÃO é motivo para negar anticoagulação a quem tem indicação (serve só para corrigir fatores de risco de sangramento)."
       }
     ]
   },

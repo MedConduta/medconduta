@@ -1801,5 +1801,79 @@
     ],
     "correta": 0,
     "comentario": "Congestão importante (ortopneia, crepitações, edema++++) com perfusão periférica preservada (extremidades bem perfundidas, enchimento capilar normal, PA não hipotensa) caracteriza o perfil \"quente e úmido\" (perfil B) — o tratamento é ventilação não invasiva (para a insuficiência respiratória hipoxêmica), diurético de alça (para a congestão) e vasodilatador (reduz pré e pós-carga, alivia sintomas rapidamente). Inotrópico (dobutamina) é reservado a perfis com má perfusão (frio), que não é o caso aqui — usar inotrópico num paciente já bem perfundido não traz benefício e aumenta risco de arritmia."
+  },
+  {
+    "id": "q100",
+    "temaId": "fa",
+    "tema": "FA",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2025,
+    "revisado": true,
+    "fonte": "Questão de banco de residência médica (Estratégia MED), sem banca/ano individual identificado nesse compilado — reescrita com texto próprio a partir do caso clínico; gabarito recalculado/conferido de forma independente pelo cálculo do escore. Comentário próprio.",
+    "enunciado": "Mulher de 78 anos, com AVC isquêmico prévio, diabetes, hipertensão e fibrilação atrial não valvar associada a insuficiência cardíaca (FEVE 32%). Qual o valor do escore de risco tromboembólico atual (CHA2DS2-VA) e seu significado?",
+    "alternativas": [
+      "Escore de 7; risco de sangramento elevado.",
+      "Escore de 5; risco tromboembólico elevado.",
+      "Escore de 8; risco tromboembólico elevado.",
+      "Escore de 8; risco de sangramento elevado.",
+      "Escore de 7; risco tromboembólico elevado."
+    ],
+    "correta": 2,
+    "comentario": "Somando os pontos do CHA2DS2-VA (versão 2025, sem o \"Sc\" de sexo feminino): insuficiência cardíaca (1) + hipertensão (1) + idade ≥75 (2) + diabetes (1) + AVC prévio (2) + doença vascular (0, não mencionada) = 8 pontos. É um escore de risco TROMBOEMBÓLICO (não de sangramento — esse seria o HAS-BLED, um escore diferente), e qualquer pontuação ≥2 já indica anticoagulação — 8 pontos representa risco muito alto, com indicação inequívoca de anticoagulação oral."
+  },
+  {
+    "id": "q101",
+    "temaId": "fa",
+    "tema": "FA",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2025,
+    "revisado": true,
+    "fonte": "Questão de banco de residência médica (Estratégia MED), sem banca/ano individual identificado nesse compilado — reescrita com texto próprio a partir do caso clínico; gabarito recalculado/conferido de forma independente pelo cálculo do escore. Comentário próprio.",
+    "enunciado": "Homem de 52 anos, assintomático, com sopro em ruflar diastólico em foco mitral e ritmo irregular (FC~84bpm). ECG confirma fibrilação atrial; ecocardiograma mostra estenose mitral moderada. Qual a conduta mais adequada nesse momento?",
+    "alternativas": [
+      "Encaminhar para cardioversão elétrica imediata, sem anticoagulação prévia.",
+      "Prescrever ácido acetilsalicílico.",
+      "Prescrever clopidogrel.",
+      "Prescrever dabigatrana ou rivaroxabana.",
+      "Prescrever varfarina e amiodarona."
+    ],
+    "correta": 4,
+    "comentario": "Fibrilação atrial associada a estenose mitral moderada/grave é classificada como \"FA valvular\" — uma das duas situações (junto com prótese valvar mecânica) em que os DOACs são formalmente contraindicados por falta de eficácia comprovada nesses cenários nos estudos que os aprovaram. A anticoagulação deve ser feita com varfarina (antagonista de vitamina K), e amiodarona é uma opção razoável para controle de ritmo/frequência. Antiplaquetários isolados (AAS, clopidogrel) não substituem anticoagulação em FA com risco tromboembólico significativo, e cardioversão sem anticoagulação prévia expõe a risco de embolização de trombo atrial preexistente."
+  },
+  {
+    "id": "q102",
+    "temaId": "fa",
+    "tema": "FA",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Fibrilação Atrial 2025 (SBC) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Homem de 68 anos com fibrilação atrial não valvar tem CHA2DS2-VA de 1 ponto (apenas hipertensão controlada). Qual a conduta mais adequada em relação à anticoagulação, segundo a Diretriz Brasileira de Fibrilação Atrial 2025?",
+    "alternativas": [
+      "Não anticoagular em nenhuma hipótese, pois só escore ≥2 indica anticoagulação.",
+      "Anticoagular obrigatoriamente, pois qualquer ponto no escore já indica anticoagulação.",
+      "Individualizar a decisão, ponderando risco de sangramento, benefício clínico esperado e preferência do paciente.",
+      "Anticoagular apenas se o paciente for do sexo masculino, dado o novo critério do escore."
+    ],
+    "correta": 2,
+    "comentario": "Na Diretriz Brasileira de Fibrilação Atrial 2025, o CHA2DS2-VA = 0 não indica anticoagulação, CHA2DS2-VA ≥2 indica anticoagulação, e a pontuação intermediária de 1 ponto é a única faixa onde a decisão é individualizada — pesando risco de sangramento, benefício clínico esperado e preferência do paciente, sem uma regra automática de \"sim\" ou \"não\". O sexo não é mais critério do escore (o \"Sc\" foi removido), então não influencia a decisão dessa forma."
+  },
+  {
+    "id": "q103",
+    "temaId": "fa",
+    "tema": "FA",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Fibrilação Atrial 2025 (SBC) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Paciente com fibrilação atrial de início indeterminado (não se sabe há quanto tempo) precisa de cardioversão eletiva por sintomas incapacitantes. Não há disponibilidade imediata de ecocardiograma transesofágico. Qual a conduta correta?",
+    "alternativas": [
+      "Realizar cardioversão imediatamente, já que os sintomas são incapacitantes.",
+      "Anticoagular por 3 semanas antes da cardioversão, mantendo por pelo menos 4 semanas depois.",
+      "Anticoagular por 24 horas antes da cardioversão, suspendendo logo após o procedimento.",
+      "Aguardar reversão espontânea, já que cardioversão elétrica é contraindicada em FA de início indeterminado."
+    ],
+    "correta": 1,
+    "comentario": "Na impossibilidade de ecocardiograma transesofágico para excluir trombo em apêndice atrial esquerdo, a regra de segurança para cardioversão em FA de início indeterminado ou ≥48 horas é anticoagulação terapêutica por pelo menos 3 semanas ANTES do procedimento e manutenção por pelo menos 4 semanas DEPOIS (tempo em que o átrio recupera a função mecânica contrátil e o risco de trombo residual embolizar diminui) — independentemente da gravidade dos sintomas, que não justifica pular essa segurança fora de instabilidade hemodinâmica franca."
   }
 ]
