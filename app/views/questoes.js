@@ -2,10 +2,20 @@ import { fetchJsonCached, escapeHtml, uniq } from "../utils.js";
 import { setItem, getAll } from "../db.js";
 
 export async function renderLista(container) {
-  const [curadas, geradas] = await Promise.all([fetchJsonCached("data/questoes.json"), getAll("ia_questoes")]);
+  const [curadas, geradas, temasCurados, respostasAnteriores] = await Promise.all([
+    fetchJsonCached("data/questoes.json"),
+    getAll("ia_questoes"),
+    fetchJsonCached("data/temas.json"),
+    getAll("respostas"),
+  ]);
   const questoes = [...curadas, ...geradas];
   const temas = uniq(questoes.map((q) => q.tema));
   const bancas = uniq(questoes.map((q) => q.banca));
+  const categoriaPorTemaId = Object.fromEntries(temasCurados.map((t) => [t.id, t.categoria]));
+  const tentativasPorQuestao = new Map();
+  respostasAnteriores.forEach((r) => {
+    tentativasPorQuestao.set(r.questaoId, (tentativasPorQuestao.get(r.questaoId) || 0) + 1);
+  });
 
   container.innerHTML = `
     <div class="main__container">
@@ -74,6 +84,8 @@ export async function renderLista(container) {
       )
       .join("");
 
+    const exibidoEm = Date.now();
+
     listaEl.querySelectorAll(".opcoes").forEach((opcoesEl) => {
       const qid = opcoesEl.dataset.qid;
       const questao = filtradas.find((q) => q.id === qid);
@@ -93,10 +105,19 @@ export async function renderLista(container) {
               <p style="margin-top:8px;">${escapeHtml(questao.comentario)}</p>
             </div>
           `;
+          const tentativa = (tentativasPorQuestao.get(questao.id) || 0) + 1;
+          tentativasPorQuestao.set(questao.id, tentativa);
           await setItem("respostas", {
             id: `${questao.id}-${Date.now()}`,
             questaoId: questao.id,
+            temaId: questao.temaId,
+            tema: questao.tema,
+            categoria: categoriaPorTemaId[questao.temaId] || null,
+            banca: questao.banca,
+            ano: questao.ano,
             acertou,
+            tempoMs: Date.now() - exibidoEm,
+            tentativa,
             respondidoEm: new Date().toISOString(),
           });
         });

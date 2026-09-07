@@ -7,8 +7,8 @@ import { askAI } from "../ai.js";
 import { formatarTemaComoContexto } from "../rag.js";
 import { renderFlowchart } from "../components/flowchart.js";
 
-async function marcarConcluido(temaId, concluido) {
-  await setItem("progresso", { id: temaId, concluido, atualizadoEm: new Date().toISOString() });
+async function marcarConcluido(temaId, concluido, categoria) {
+  await setItem("progresso", { id: temaId, concluido, categoria, atualizadoEm: new Date().toISOString() });
 }
 
 async function todosOsTemas() {
@@ -282,7 +282,7 @@ export async function renderDetalhe(container, { id }) {
   `;
 
   container.querySelector("#btn-concluir").addEventListener("click", async () => {
-    await marcarConcluido(tema.id, !concluido);
+    await marcarConcluido(tema.id, !concluido, tema.categoria);
     renderDetalhe(container, { id });
   });
 
