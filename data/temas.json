@@ -6523,7 +6523,7 @@
     "titulo": "Otite Média Aguda e Otite Externa",
     "resumo": "Diferenciação pela dor à tração do pavilhão, tratamento antibiótico da OMA e a mastoidite como complicação temida.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAP Clinical Practice Guideline for Acute Otitis Media",
+    "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAP Clinical Practice Guideline for Acute Otitis Media and Otitis Externa",
     "mnemonicos": [
       {
         "palavra": "Tração dói na externa",
@@ -6532,24 +6532,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Otite média aguda (OMA)",
-        "conteudo": "Inflamação/infecção do ouvido médio, mais comum em crianças pequenas (trompa de Eustáquio mais curta e horizontalizada), geralmente secundária a infecção viral de vias aéreas superiores. Otoscopia com membrana timpânica hiperemiada, abaulada, com perda do triângulo luminoso. Principais agentes: Streptococcus pneumoniae, Haemophilus influenzae não tipável e Moraxella catarrhalis."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A otite externa aguda resulta de infecção do conduto auditivo externo, favorecida pela umidade prolongada (\"orelha de nadador\") que macera a pele e facilita a proliferação bacteriana (Pseudomonas aeruginosa e Staphylococcus aureus são os agentes mais comuns). A otite média aguda, já discutida no tema de IVAS/Otite na infância, compartilha a mesma fisiopatologia de disfunção tubária pós-viral também em adultos, embora com menor frequência que em crianças pela maturidade anatômica da tuba auditiva."
       },
       {
-        "titulo": "Tratamento da OMA",
-        "conteudo": "A analgesia é essencial em todos os casos. A observação vigilante (sem antibiótico imediato) é aceitável em crianças acima de 2 anos, com sintomas leves e diagnóstico incerto. Amoxicilina em dose elevada é a primeira escolha antibiótica quando indicada."
+        "titulo": "Quadro clínico",
+        "conteudo": "Otite externa causa otalgia importante, frequentemente desproporcional aos achados visuais iniciais, associada a prurido e, por vezes, otorreia; a dor é caracteristicamente exacerbada pela manipulação do pavilhão auricular. Otite média aguda em adultos causa otalgia, sensação de plenitude auricular e hipoacusia, podendo evoluir com otorreia se houver perfuração timpânica espontânea, geralmente acompanhada de alívio imediato da dor."
       },
       {
-        "titulo": "Otite externa aguda",
-        "conteudo": "Infecção do canal auditivo externo (\"ouvido de nadador\"), associada a umidade prolongada, trauma local (cotonetes) ou uso de próteses auditivas. Dor à tração do pavilhão auricular e à pressão do trago é o achado que a diferencia da OMA. Tratamento tópico com gotas otológicas (antibiótico +/- corticoide), evitando manipulação do canal."
+        "titulo": "Exame físico",
+        "conteudo": "O sinal do trago (dor à pressão do trago ou à tração do pavilhão auricular) é altamente sugestivo de otite externa, diferenciando-a da otite média (onde essa manobra não desencadeia dor significativa). À otoscopia, otite externa mostra conduto edemaciado e hiperemiado, por vezes com debris; otite média mostra membrana timpânica hiperemiada e abaulada, conforme já descrito no tema pediátrico equivalente."
       },
       {
-        "titulo": "Complicações",
-        "conteudo": "A mastoidite aguda (extensão da infecção da OMA para a mastoide, com dor/edema/hiperemia retroauricular e deslocamento do pavilhão) é a complicação supurativa mais temida da OMA, exigindo antibioticoterapia intravenosa e eventual drenagem."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico de ambas as condições é clínico, baseado na história e na otoscopia direta. É importante avaliar a integridade da membrana timpânica antes de prescrever gotas otológicas, já que certas formulações são ototóxicas se atingirem o ouvido médio através de uma perfuração não identificada."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Otite externa é tratada com gotas otológicas tópicas (associando antibiótico e corticoide, geralmente cobrindo Pseudomonas), raramente necessitando antibiótico sistêmico exceto em casos com extensão além do conduto ou em imunossuprimidos (risco de otite externa maligna/necrotizante, mais comum em diabéticos, uma infecção grave que pode se estender à base do crânio). Otite média aguda em adultos segue princípios terapêuticos semelhantes aos já descritos na população pediátrica, com amoxicilina como escolha inicial quando indicado antibiótico."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Edema retroauricular com deslocamento do pavilhão auricular</span> associado a otite sugere mastoidite aguda — exige avaliação urgente e antibioticoterapia intravenosa."
+        "conteudo": "<span class=\"red-flag\">Otite externa em paciente diabético ou imunossuprimido, com dor desproporcional e progressiva</span> deve levantar suspeita de otite externa maligna/necrotizante (osteomielite da base do crânio por extensão da infecção), condição grave que exige investigação de imagem e tratamento antibiótico sistêmico prolongado, não apenas tópico."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O sinal do trago positivo como diferencial semiológico entre otite externa e média é cobrança certa. A otite externa maligna em diabéticos como complicação grave e potencialmente fatal (osteomielite de base de crânio) também é frequentemente exigida como ponto de alerta em provas de otorrinolaringologia."
       }
     ]
   },
@@ -6560,7 +6568,7 @@
     "titulo": "Rinossinusite Aguda e Faringite",
     "resumo": "Sinais que sugerem etiologia bacteriana na rinossinusite e os critérios de Centor na faringite estreptocócica.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Otorrinolaringologia; IDSA Clinical Practice Guideline for Group A Streptococcal Pharyngitis",
+    "fonte": "Sociedade Brasileira de Otorrinolaringologia; IDSA Clinical Practice Guideline for Acute Bacterial Rhinosinusitis; Centor Score for Pharyngitis",
     "mnemonicos": [
       {
         "palavra": "Centor",
@@ -6569,24 +6577,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Rinossinusite viral x bacteriana",
-        "conteudo": "A maioria dos quadros de rinossinusite aguda é viral, autolimitada em 7-10 dias. Sinais sugestivos de etiologia bacteriana incluem sintomas persistentes além de 10 dias sem melhora, piora após melhora inicial (padrão bifásico), ou sintomas graves desde o início (febre alta e secreção purulenta com dor facial por pelo menos 3-4 dias consecutivos)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A rinossinusite aguda é predominantemente viral (mais de 90% dos casos), com uma minoria evoluindo para infecção bacteriana secundária por obstrução do óstio de drenagem sinusal e estase de secreções. A faringite aguda também é predominantemente viral, com o Streptococcus pyogenes (estreptococo beta-hemolítico do grupo A) sendo o principal agente bacteriano a ser identificado, pela sua associação com complicações não supurativas tardias (febre reumática, glomerulonefrite pós-estreptocócica)."
       },
       {
-        "titulo": "Tratamento da rinossinusite bacteriana",
-        "conteudo": "Amoxicilina (associada a clavulanato em áreas de maior resistência ou fatores de risco) é a primeira escolha. A maioria dos casos, mesmo bacterianos, tem resolução espontânea, justificando conduta expectante em quadros leves."
+        "titulo": "Quadro clínico",
+        "conteudo": "Rinossinusite causa congestão nasal, secreção purulenta, dor/pressão facial e, às vezes, hipósmia, com sintomas virais tipicamente melhorando após 5-7 dias — piora após melhora inicial (\"duplo agravamento\") ou persistência além de 10 dias sugere sobreinfecção bacteriana. Faringite estreptocócica causa dor de garganta intensa, febre, exsudato amigdaliano e linfadenopatia cervical dolorosa, geralmente sem tosse ou coriza proeminentes (que sugerem etiologia viral)."
       },
       {
-        "titulo": "Faringite estreptocócica",
-        "conteudo": "Causada pelo Streptococcus pyogenes, mais comum em crianças de 5-15 anos. Os critérios de Centor (febre, exsudato amigdaliano, linfadenopatia cervical anterior dolorosa, ausência de tosse) auxiliam na probabilidade pré-teste. O tratamento com penicilina/amoxicilina previne complicações supurativas e não supurativas (febre reumática, glomerulonefrite pós-estreptocócica)."
+        "titulo": "Exame físico",
+        "conteudo": "Dor à palpação de seios da face (maxilares, frontais) sugere rinossinusite. Exsudato amigdaliano purulento associado a petéquias em palato e linfadenopatia cervical anterior dolorosa sugere fortemente faringite estreptocócica, embora a diferenciação clínica pura de faringite viral versus bacteriana tenha acurácia limitada sem critérios objetivos padronizados."
       },
       {
-        "titulo": "Diferenciação viral x bacteriana",
-        "conteudo": "Presença de tosse, coriza e conjuntivite favorece etiologia viral. Ausência de tosse com exsudato e linfadenopatia dolorosa favorece etiologia estreptocócica — teste rápido de antígeno ou cultura de orofaringe confirmam quando disponíveis."
+        "titulo": "Diagnóstico",
+        "conteudo": "Rinossinusite bacteriana é diagnóstico clínico, sem necessidade de imagem rotineira, baseado em critérios temporais (sintomas persistentes além de 10 dias sem melhora, ou piora após melhora inicial, ou sintomas graves de início). Faringite estreptocócica é avaliada pelo escore de Centor modificado (febre, exsudato amigdaliano, linfadenopatia cervical anterior dolorosa, ausência de tosse), que orienta a probabilidade e a necessidade de teste rápido/cultura de orofaringe para confirmação antes de prescrever antibiótico."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Rinossinusite viral é tratada sintomaticamente; rinossinusite bacteriana (confirmada pelos critérios temporais) é tratada com amoxicilina (com ou sem clavulanato). Faringite estreptocócica confirmada é tratada com penicilina (ou amoxicilina), visando principalmente prevenir as complicações não supurativas tardias (febre reumática) — a resolução dos sintomas locais ocorre mesmo sem antibiótico na maioria dos casos, mas o tratamento reduz o risco dessas sequelas específicas."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Trismo, sialorreia e voz \"em batata quente\"</span> associados a dor de garganta intensa unilateral sugerem abscesso periamigdaliano — exige avaliação otorrinolaringológica urgente e possível drenagem."
+        "conteudo": "Rinossinusite associada a edema periorbitário, alteração visual ou proptose sugere extensão orbitária da infecção, complicação grave que exige investigação de imagem urgente e, frequentemente, intervenção cirúrgica associada a antibioticoterapia endovenosa, dado o risco de perda visual e disseminação intracraniana."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O escore de Centor para decisão de testar/tratar faringite estreptocócica é cobrança certa e recorrente. Os critérios temporais que diferenciam rinossinusite viral de bacteriana (10 dias sem melhora, ou duplo agravamento) também são frequentemente exigidos como base para racionalizar o uso de antibiótico nessa condição extremamente prevalente."
       }
     ]
   },
@@ -6597,7 +6613,7 @@
     "titulo": "Perdas Auditivas: Condutiva x Neurossensorial",
     "resumo": "Interpretação dos testes de Weber e Rinne, presbiacusia, PAIR e a emergência da surdez súbita.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAO-HNS Clinical Practice Guideline: Sudden Hearing Loss",
+    "fonte": "Sociedade Brasileira de Otorrinolaringologia; ASHA Guidelines for Audiologic Assessment",
     "mnemonicos": [
       {
         "palavra": "Weber lateraliza para o pior na condutiva",
@@ -6606,24 +6622,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação geral",
-        "conteudo": "Perda auditiva condutiva: problema na condução do som até a cóclea — ouvido externo/médio (ex.: cerume impactado, otite média com efusão, otosclerose). Perda auditiva neurossensorial: problema na cóclea ou no nervo/vias auditivas centrais (ex.: presbiacusia, exposição a ruído, ototoxicidade)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A perda auditiva condutiva resulta de comprometimento da transmissão mecânica do som através do ouvido externo/médio (cerúmen impactado, otite média com efusão, otosclerose, perfuração timpânica), geralmente reversível conforme a causa. A perda auditiva neurossensorial resulta de dano à cóclea ou ao nervo vestibulococlear (presbiacusia relacionada à idade, exposição a ruído, ototoxicidade medicamentosa, doenças específicas), geralmente irreversível e de pior prognóstico funcional."
       },
       {
-        "titulo": "Testes de diapasão",
-        "conteudo": "Weber (diapasão no vértex) lateraliza para o ouvido PIOR na perda condutiva, e para o ouvido MELHOR na perda neurossensorial. Rinne compara condução aérea x óssea no mesmo ouvido — Rinne positivo (condução aérea melhor que a óssea) é o padrão normal, mantido na perda neurossensorial; Rinne negativo (condução óssea melhor que a aérea) sugere perda condutiva."
+        "titulo": "Quadro clínico",
+        "conteudo": "Perda auditiva condutiva frequentemente causa hipoacusia com preservação relativa da discriminação de fala em ambiente silencioso (o problema é a intensidade percebida, não a clareza do processamento neural). Perda auditiva neurossensorial frequentemente causa dificuldade desproporcional de compreensão de fala mesmo com volume aumentado, especialmente em ambientes ruidosos, refletindo comprometimento do processamento neural do sinal sonoro, não apenas de sua intensidade."
       },
       {
-        "titulo": "Presbiacusia",
-        "conteudo": "Perda auditiva neurossensorial bilateral e simétrica associada ao envelhecimento, predominando em frequências agudas, dificultando especialmente a compreensão de fala em ambientes ruidosos."
+        "titulo": "Exame físico",
+        "conteudo": "Os testes de diapasão (Weber e Rinne) são ferramentas simples e centrais para a diferenciação inicial à beira do leito: no teste de Weber, o som lateraliza para o ouvido com perda condutiva (ou para o ouvido saudável em perda neurossensorial); no teste de Rinne, a condução aérea é normalmente maior que a óssea (Rinne positivo) — um Rinne invertido (condução óssea maior que aérea) no ouvido afetado indica perda condutiva significativa naquele lado."
       },
       {
-        "titulo": "Perda auditiva induzida por ruído (PAIR)",
-        "conteudo": "Perda neurossensorial por exposição a ruído intenso (ocupacional ou recreacional), tipicamente com entalhe característico na frequência de 4-6 kHz na audiometria, irreversível e não progressiva após cessada a exposição."
+        "titulo": "Diagnóstico",
+        "conteudo": "A audiometria tonal liminar é o exame padrão para quantificação objetiva do grau e do tipo de perda auditiva (condutiva, neurossensorial, ou mista), definindo os limiares auditivos em diferentes frequências e permitindo classificação de gravidade (leve, moderada, grave, profunda) para orientar a conduta terapêutica e de reabilitação."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Perda auditiva condutiva é tratada conforme a causa identificada (remoção de cerúmen impactado, tratamento de otite média com efusão, cirurgia para otosclerose ou reconstrução timpânica). Perda auditiva neurossensorial geralmente não é reversível com tratamento clínico, sendo manejada com aparelhos de amplificação sonora individual (AASI) ou, em casos de perda profunda bilateral com benefício insuficiente do aparelho convencional, implante coclear."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Perda auditiva neurossensorial súbita e unilateral</span> é emergência otológica (surdez súbita), com janela terapêutica estreita para corticoterapia — deve ser encaminhada e tratada o mais rápido possível."
+        "conteudo": "Perda auditiva neurossensorial súbita (instalação em até 72 horas), especialmente unilateral, é emergência otológica que exige avaliação e tratamento imediatos (geralmente corticoide sistêmico ou intratimpânico), pelo potencial de reversibilidade se tratada precocemente, com prognóstico significativamente pior quanto mais tardio o início do tratamento."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os testes de Weber e Rinne (e sua interpretação combinada para diferenciar perda condutiva de neurossensorial) são cobrança certíssima e extremamente recorrente, frequentemente através de descrições de resultados para interpretação direta. A perda auditiva neurossensorial súbita como emergência otológica também é frequentemente exigida."
       }
     ]
   },
@@ -6643,24 +6667,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Vertigem periférica x central",
-        "conteudo": "Periférica (labiríntica): geralmente mais intensa, associada a náusea/vômito importantes, sem outros sinais neurológicos focais. Central (tronco encefálico/cerebelo): costuma ser menos intensa, mas associada a outros sinais neurológicos (diplopia, disartria, ataxia, fraqueza) — a presença destes exige investigação urgente de causa vascular central."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A vertigem posicional paroxística benigna (VPPB) resulta do deslocamento de otólitos (cristais de carbonato de cálcio) de sua localização normal no utrículo para dentro dos canais semicirculares (mais comumente o posterior), onde seu movimento anômalo com as mudanças de posição da cabeça gera estimulação vestibular inapropriada. A doença de Menière resulta de hidropisia endolinfática (acúmulo excessivo de endolinfa no labirinto), causando disfunção episódica e progressiva tanto vestibular quanto coclear."
       },
       {
-        "titulo": "Vertigem posicional paroxística benigna (VPPB)",
-        "conteudo": "Causa mais comum de vertigem periférica, por deslocamento de otólitos no canal semicircular (mais comumente o posterior). Episódios breves (segundos) desencadeados por mudança de posição da cabeça. A manobra de Dix-Hallpike reproduz o nistagmo característico e confirma o diagnóstico; tratamento com manobra de reposicionamento canalicular (Epley), com alta taxa de resolução."
+        "titulo": "Quadro clínico",
+        "conteudo": "VPPB causa episódios de vertigem intensa, breve (segundos a menos de 1 minuto), desencadeados por mudanças específicas de posição da cabeça (virar na cama, olhar para cima), sem sintomas auditivos associados. Doença de Menière causa episódios espontâneos de vertigem mais prolongados (minutos a horas), associados à tríade característica de hipoacusia flutuante, zumbido e sensação de plenitude aural, tipicamente unilateral."
       },
       {
-        "titulo": "Doença de Menière",
-        "conteudo": "Tríade clássica de vertigem episódica (minutos a horas), perda auditiva neurossensorial flutuante e zumbido, frequentemente associada a sensação de plenitude aural. Decorre de hidropsia endolinfática; tratamento com restrição de sódio, diuréticos e, em casos refratários, procedimentos mais invasivos."
+        "titulo": "Exame físico",
+        "conteudo": "A manobra de Dix-Hallpike é o teste diagnóstico central para VPPB do canal posterior, reproduzindo a vertigem e um nistagmo característico (rotatório, com latência de poucos segundos e caráter fatigável com repetições) quando positiva. Entre as crises, o exame neurológico e otológico é tipicamente normal em ambas as condições, exceto pela hipoacusia já estabelecida na doença de Menière avançada."
       },
       {
-        "titulo": "Neurite vestibular",
-        "conteudo": "Vertigem intensa, contínua, de início agudo, durando dias, frequentemente precedida de quadro viral. Sem perda auditiva (neurite vestibular) ou com perda auditiva associada (labirintite) — diferencia-se da VPPB pela duração muito mais prolongada de cada episódio."
+        "titulo": "Diagnóstico",
+        "conteudo": "VPPB é diagnóstico clínico confirmado pela manobra de Dix-Hallpike positiva, sem necessidade de exames de imagem na apresentação típica. Doença de Menière é diagnóstico clínico baseado na tríade característica associada a padrão episódico recorrente, com audiometria documentando a hipoacusia neurossensorial flutuante (tipicamente de baixas frequências nas fases iniciais) característica da condição."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "VPPB é tratada com manobras de reposicionamento canalicular (manobra de Epley para o canal posterior, a mais comum), com alta taxa de resolução completa após uma ou poucas sessões — medicamentos supressores vestibulares têm papel limitado e não substituem a manobra terapêutica específica. Doença de Menière é manejada com restrição de sódio, diuréticos, e supressores vestibulares para controle sintomático das crises agudas; casos refratários podem necessitar de intervenções mais invasivas (injeção intratimpânica de gentamicina ou corticoide, cirurgia em casos selecionados)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Vertigem associada a cefaleia intensa súbita, diplopia, disartria ou ataxia de marcha</span> sugere causa central (AVC de fossa posterior) até prova em contrário e exige neuroimagem urgente."
+        "conteudo": "Vertigem associada a sintomas neurológicos centrais (diplopia, disartria, ataxia de tronco desproporcional, fraqueza) sugere causa central (AVC de fossa posterior) em vez de causa periférica benigna, exigindo investigação neurológica urgente — a presença desses sinais associados nunca deve ser atribuída precipitadamente a VPPB ou labirintopatia periférica sem exclusão adequada de causa central."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A manobra de Dix-Hallpike para diagnóstico e a manobra de Epley para tratamento da VPPB são cobrança certíssima e extremamente recorrente. A tríade da doença de Menière (vertigem episódica, hipoacusia flutuante, zumbido/plenitude aural) também é frequentemente exigida, assim como os sinais de alarme que diferenciam vertigem periférica benigna de causa central mais grave."
       }
     ]
   },
@@ -6671,7 +6703,7 @@
     "titulo": "Urgências em ORL: Epistaxe e Corpos Estranhos",
     "resumo": "Manejo da epistaxe anterior x posterior e reconhecimento de corpo estranho nasal/auricular em crianças.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Otorrinolaringologia; American Academy of Otolaryngology — Clinical Practice Guideline: Nosebleed",
+    "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAO-HNS Clinical Practice Guideline: Nosebleed (Epistaxis)",
     "mnemonicos": [
       {
         "palavra": "Kiesselbach na frente",
@@ -6680,24 +6712,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Epistaxe anterior",
-        "conteudo": "Origem mais comum de sangramento nasal, tipicamente do plexo de Kiesselbach. Geralmente controlada com compressão digital direta das asas nasais por 10-15 minutos contínuos, com a cabeça inclinada levemente para frente."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A epistaxe anterior (a mais comum, mais de 90% dos casos) origina-se do plexo de Kiesselbach, uma rede vascular anastomótica na porção anterior do septo nasal, particularmente vulnerável a trauma local (manipulação digital, ressecamento da mucosa). A epistaxe posterior, menos comum mas potencialmente mais grave e de controle mais difícil, origina-se de ramos da artéria esfenopalatina, mais associada a hipertensão arterial não controlada e coagulopatias em pacientes mais idosos."
       },
       {
-        "titulo": "Epistaxe posterior",
-        "conteudo": "Sangramento mais volumoso e de mais difícil controle, mais comum em idosos e hipertensos. Pode exigir tamponamento nasal posterior ou balão específico, e frequentemente necessita avaliação otorrinolaringológica especializada."
+        "titulo": "Quadro clínico",
+        "conteudo": "Epistaxe anterior manifesta-se com sangramento visível pela narina, geralmente unilateral e de fácil identificação do ponto sangrante à rinoscopia anterior. Epistaxe posterior manifesta-se com sangramento mais abundante, frequentemente bilateral (por refluxo pela coana) ou com deglutição significativa de sangue, mais difícil de controlar com medidas simples de compressão local."
       },
       {
-        "titulo": "Corpo estranho em nariz/ouvido/via aérea",
-        "conteudo": "Situação frequente em crianças pequenas. Corpo estranho nasal pode causar rinorreia unilateral fétida persistente como único sinal. Corpo estranho em via aérea inferior com obstrução completa é emergência (manobra de Heimlich). Baterias de botão em nariz/ouvido são emergência pela lesão tecidual rápida, exigindo remoção imediata."
+        "titulo": "Exame físico",
+        "conteudo": "Rinoscopia anterior com boa iluminação permite identificar o ponto sangrante na maioria dos casos de epistaxe anterior. Sinais de instabilidade hemodinâmica (taquicardia, hipotensão) devem ser avaliados em sangramentos volumosos ou prolongados, especialmente em pacientes idosos ou com coagulopatia/uso de anticoagulantes."
       },
       {
-        "titulo": "Manejo geral",
-        "conteudo": "A remoção de corpo estranho deve ser feita por profissional com instrumental e visualização adequados, evitando manipulação às cegas que pode empurrar o objeto mais profundamente."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é clínico, pela visualização direta do sangramento. Investigação de causa subjacente (coagulopatia, hipertensão não controlada, uso de anticoagulantes/antiagregantes) é indicada em episódios recorrentes, muito volumosos, ou sem trauma local evidente que os explique. Corpos estranhos nasais são diagnosticados por rinoscopia direta, frequentemente em crianças pequenas, podendo se manifestar com rinorreia unilateral fétida quando o diagnóstico é tardio."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Epistaxe anterior é tratada inicialmente com compressão digital direta das asas nasais por 10-15 minutos contínuos (a técnica correta, frequentemente mal executada pelos pacientes), associada a vasoconstritor tópico se disponível; falha nessa medida indica cauterização (química ou elétrica) do ponto sangrante identificado. Epistaxe posterior refratária pode exigir tamponamento posterior ou, em casos graves, ligadura/embolização arterial. Corpos estranhos nasais devem ser removidos prontamente sob visualização direta adequada, evitando manipulação às cegas que pode empurrar o objeto mais posteriormente com risco de aspiração."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Rinorreia unilateral fétida persistente em criança</span> deve levantar suspeita de corpo estranho nasal esquecido, mesmo sem história de introdução relatada pelos cuidadores."
+        "conteudo": "<span class=\"red-flag\">Corpo estranho do tipo pilha/bateria em cavidade nasal</span> exige remoção de emergência absoluta, mesmo antes de outros corpos estranhos menos urgentes, pelo risco de necrose tecidual rápida por reação química/eletrólise, podendo causar perfuração septal em poucas horas se não removida imediatamente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A técnica correta de compressão nasal para epistaxe anterior (compressão direta e contínua por 10-15 minutos, nas asas nasais, não na ponte óssea do nariz) é cobrança certa. A urgência absoluta de remoção de pilha/bateria como corpo estranho nasal (diferente de outros objetos, que podem aguardar remoção eletiva em contexto controlado) também é frequentemente exigida como ponto de emergência em otorrinolaringologia."
       }
     ]
   },
@@ -6708,7 +6748,7 @@
     "titulo": "Olho Vermelho: Diagnóstico Diferencial",
     "resumo": "Diferenciação entre conjuntivite, ceratite, uveíte anterior e glaucoma agudo de ângulo fechado.",
     "revisado": false,
-    "fonte": "Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology Preferred Practice Pattern — Conjunctivitis",
+    "fonte": "Sociedade Brasileira de Oftalmologia; AAO Preferred Practice Pattern: Conjunctivitis",
     "mnemonicos": [
       {
         "palavra": "Dor e visão ruim = grave",
@@ -6717,24 +6757,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Conjuntivite",
-        "conteudo": "Hiperemia conjuntival difusa, secreção (purulenta na bacteriana, aquosa/mucoide na viral, associada a prurido intenso na alérgica), geralmente sem dor significativa nem alteração da acuidade visual — a mais comum e menos grave causa de olho vermelho."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O olho vermelho resulta de vasodilatação/congestão vascular ocular por diferentes mecanismos conforme a causa: conjuntivite (infecciosa viral/bacteriana, ou alérgica) causa hiperemia conjuntival difusa por processo inflamatório superficial; glaucoma agudo de ângulo fechado causa aumento abrupto da pressão intraocular por bloqueio da drenagem do humor aquoso; uveíte anterior causa inflamação do trato uveal com hiperemia perilímbica característica; ceratite (infecciosa ou traumática) causa inflamação da córnea propriamente dita."
       },
       {
-        "titulo": "Ceratite",
-        "conteudo": "Inflamação/infecção da córnea, com dor importante, fotofobia, sensação de corpo estranho e possível opacidade/infiltrado corneano visível. Ceratite herpética e por uso inadequado de lentes de contato são causas relevantes."
+        "titulo": "Quadro clínico",
+        "conteudo": "Conjuntivite causa hiperemia difusa, secreção (purulenta na bacteriana, aquosa na viral, com prurido proeminente na alérgica), geralmente sem dor significativa nem alteração visual importante. Glaucoma agudo causa dor ocular intensa, cefaleia, náuseas/vômitos e halos visuais ao redor de luzes, com redução importante e súbita da acuidade visual. Uveíte causa dor, fotofobia importante e visão turva, com hiperemia predominantemente perilímbica (ao redor da córnea, mais intensa que na periferia). Ceratite causa dor intensa, fotofobia e sensação de corpo estranho, com possível opacidade/lesão corneana visível."
       },
       {
-        "titulo": "Uveíte anterior (irite)",
-        "conteudo": "Dor ocular, fotofobia importante, hiperemia predominantemente perilímbica (\"flush ciliar\"), miose e visão turva. Associada a doenças sistêmicas (espondiloartrites, doenças autoimunes) em parte dos casos."
+        "titulo": "Exame físico",
+        "conteudo": "A distribuição da hiperemia é achado semiológico central para diferenciação: difusa em toda a conjuntiva (conjuntivite) versus concentrada ao redor do limbo corneano (hiperemia perilímbica/ciliar, sugerindo uveíte, glaucoma agudo ou ceratite — causas mais graves que exigem avaliação oftalmológica urgente). Pupila em midríase média fixa e não reagente sugere glaucoma agudo; pupila em miose sugere uveíte anterior."
       },
       {
-        "titulo": "Glaucoma agudo de ângulo fechado",
-        "conteudo": "Emergência oftalmológica com dor ocular intensa, cefaleia, náusea/vômito, visão turva com halos coloridos ao redor de luzes, pupila em midríase média fixa e não reagente, e globo ocular endurecido à palpação — a pressão intraocular muito elevada exige tratamento imediato para evitar perda visual permanente."
+        "titulo": "Diagnóstico",
+        "conteudo": "A medida da pressão intraocular (tonometria) é essencial diante de suspeita de glaucoma agudo, mostrando valores muito elevados. Exame com lâmpada de fenda (biomicroscopia), idealmente por oftalmologista, permite diferenciação definitiva entre as causas através da visualização detalhada de câmara anterior, córnea e conjuntiva. Teste de fluoresceína identifica lesões/úlceras corneanas na suspeita de ceratite."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Conjuntivite bacteriana é tratada com colírio antibiótico tópico; conjuntivite viral é autolimitada, com tratamento apenas sintomático; conjuntivite alérgica é tratada com anti-histamínico tópico e medidas de evitação do alérgeno. Glaucoma agudo é emergência oftalmológica que exige redução urgente da pressão intraocular (medicamentos tópicos e sistêmicos, seguidos de iridotomia a laser definitiva). Uveíte e ceratite exigem avaliação oftalmológica especializada urgente, com tratamento específico direcionado à causa (corticoide tópico na uveíte não infecciosa; antimicrobiano específico na ceratite infecciosa)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor ocular intensa associada a diminuição da acuidade visual, fotofobia importante ou pupila irregular/não reagente</span> discrimina causas graves de olho vermelho da conjuntivite simples, e exige avaliação oftalmológica urgente."
+        "conteudo": "<span class=\"red-flag\">Olho vermelho associado a dor intensa, halos visuais, náuseas/vômitos e pupila em midríase média fixa</span> caracteriza glaucoma agudo de ângulo fechado, emergência oftalmológica que exige tratamento imediato para redução da pressão intraocular, sob risco de perda visual permanente e irreversível se o tratamento for postergado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A distinção entre hiperemia conjuntival difusa (geralmente benigna) e perilímbica (sinal de alarme para causa mais grave — uveíte, glaucoma agudo, ceratite) é cobrança certa e central do tema. Os achados específicos do glaucoma agudo (dor intensa, halos, pupila em midríase média fixa) também são frequentemente exigidos como reconhecimento de emergência oftalmológica."
       }
     ]
   },
@@ -6745,7 +6793,7 @@
     "titulo": "Catarata e Erros Refrativos",
     "resumo": "Catarata como principal causa de cegueira reversível, e a fisiopatologia de miopia, hipermetropia, astigmatismo e presbiopia.",
     "revisado": false,
-    "fonte": "Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology — Preferred Practice Pattern: Cataract",
+    "fonte": "Sociedade Brasileira de Oftalmologia; AAO Preferred Practice Pattern: Cataract",
     "mnemonicos": [
       {
         "palavra": "Míope perto, Hipermétrope longe",
@@ -6754,24 +6802,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Catarata",
-        "conteudo": "Opacificação do cristalino, principal causa de cegueira reversível no mundo. O fator de risco mais importante é a idade avançada, mas também pode ser congênita, traumática, secundária a diabetes ou uso prolongado de corticoide. Quadro clínico de perda visual progressiva e indolor. O tratamento definitivo é cirúrgico (facoemulsificação com implante de lente intraocular)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A catarata é a opacificação progressiva do cristalino, mais comumente relacionada ao envelhecimento (catarata senil, a forma mais prevalente), mas também associada a diabetes, uso crônico de corticoide, trauma ocular e exposição actínica cumulativa — processo geralmente lento e progressivo ao longo de anos. Os erros refrativos (miopia, hipermetropia, astigmatismo, presbiopia) resultam de desproporção entre o poder refrativo do sistema óptico ocular e o comprimento axial do globo ocular, ou, na presbiopia, da perda de elasticidade do cristalino relacionada à idade que compromete a capacidade de acomodação para visão de perto."
       },
       {
-        "titulo": "Miopia",
-        "conteudo": "Dificuldade para enxergar objetos distantes (olho \"longo demais\" ou córnea muito curva, imagem forma-se antes da retina). Corrigida com lentes divergentes (côncavas, negativas)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Catarata causa redução progressiva e indolor da acuidade visual, frequentemente descrita como visão \"embaçada\" ou \"como através de um vidro fosco\", com ofuscamento aumentado por luzes intensas (halos ao redor de faróis à noite, por exemplo) sendo queixa comum e característica. Erros refrativos causam dificuldade visual específica conforme o tipo (dificuldade para longe na miopia, para perto na hipermetropia/presbiopia, borramento em ambas as distâncias no astigmatismo)."
       },
       {
-        "titulo": "Hipermetropia",
-        "conteudo": "Dificuldade para enxergar objetos próximos, mais evidente com a idade pela perda da capacidade de acomodação (olho \"curto demais\", imagem forma-se atrás da retina). Corrigida com lentes convergentes (convexas, positivas)."
+        "titulo": "Exame físico",
+        "conteudo": "A opacificação do cristalino pode ser observada diretamente à inspeção com boa iluminação em casos avançados (leucocoria/reflexo pupilar esbranquiçado), embora o diagnóstico definitivo e a graduação da catarata sejam feitos por exame com lâmpada de fenda. A refração (teste com lentes de diferentes graus) determina objetivamente o erro refrativo e sua correção apropriada."
       },
       {
-        "titulo": "Astigmatismo e presbiopia",
-        "conteudo": "Astigmatismo decorre de curvatura corneana irregular, causando distorção da imagem em qualquer distância, corrigido com lentes cilíndricas. Presbiopia é a perda fisiológica da capacidade de acomodação relacionada à idade (geralmente a partir dos 40-45 anos), corrigida com lentes de adição positiva."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico de catarata é clínico, por exame oftalmológico com lâmpada de fenda após dilatação pupilar, avaliando o grau e o tipo de opacificação do cristalino. Erros refrativos são diagnosticados por refração subjetiva (o paciente relata qual lente proporciona melhor nitidez) ou objetiva (autorrefratometria), determinando o grau exato de correção óptica necessária."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Catarata sintomática com impacto funcional significativo na qualidade de vida do paciente tem indicação de cirurgia (facoemulsificação com implante de lente intraocular), procedimento extremamente seguro e eficaz, com excelentes resultados visuais na grande maioria dos casos — não há tratamento clínico/medicamentoso eficaz para reverter a opacificação já estabelecida. Erros refrativos são corrigidos com óculos, lentes de contato, ou cirurgia refrativa a laser (em candidatos apropriados e sem contraindicações)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Perda visual súbita e indolor (diferente da progressão lenta da catarata) deve levantar suspeita de causas vasculares retinianas ou de nervo óptico, exigindo avaliação oftalmológica de urgência, e não ser atribuída a catarata."
+        "conteudo": "Leucocoria (reflexo pupilar branco) em criança pequena não deve ser atribuída precipitadamente a catarata congênita sem investigação adicional, pois é também o achado clássico do retinoblastoma, neoplasia intraocular maligna da infância — diagnóstico diferencial crítico que exige avaliação oftalmológica pediátrica urgente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A ausência de tratamento clínico eficaz para catarata (apenas cirúrgico) e a indicação cirúrgica baseada no impacto funcional (não em um grau específico de opacificação) são cobrança certa. A leucocoria em criança como sinal de alarme para retinoblastoma (diagnóstico diferencial obrigatório de catarata congênita) também é frequentemente exigida em provas que integram oftalmologia e pediatria."
       }
     ]
   },
@@ -6782,7 +6838,7 @@
     "titulo": "Retinopatia Diabética e Hipertensiva",
     "resumo": "Classificação da retinopatia diabética, rastreamento anual obrigatório e achados da retinopatia hipertensiva.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Diabetes; Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology — Diabetic Retinopathy PPP",
+    "fonte": "Sociedade Brasileira de Oftalmologia; Sociedade Brasileira de Diabetes; AAO Preferred Practice Pattern: Diabetic Retinopathy",
     "mnemonicos": [
       {
         "palavra": "Assintomática até tarde",
@@ -6791,24 +6847,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Retinopatia diabética",
-        "conteudo": "Complicação microvascular mais comum do diabetes de longa duração, principal causa de cegueira evitável em adultos em idade produtiva. Classificada em não proliferativa (microaneurismas, hemorragias em chama de vela, exsudatos) e proliferativa (neovascularização, maior risco de hemorragia vítrea e descolamento de retina tracional)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A retinopatia diabética resulta de dano microvascular crônico da retina por hiperglicemia sustentada, evoluindo de uma forma não proliferativa (microaneurismas, hemorragias e exsudatos) para proliferativa (neovascularização retiniana em resposta à isquemia retiniana progressiva, com risco de hemorragia vítrea e descolamento de retina tracional). A retinopatia hipertensiva resulta de dano vascular retiniano por hipertensão arterial crônica ou aguda grave, com achados que se correlacionam com a gravidade e a cronicidade da elevação pressórica (classificação de Keith-Wagener-Barker, já mencionada no tema de HAS)."
       },
       {
-        "titulo": "Edema macular diabético",
-        "conteudo": "Pode ocorrer em qualquer estágio da retinopatia diabética e é a principal causa de perda visual relacionada ao diabetes, independente da progressão para a forma proliferativa. Tratamento com injeções intravítreas de anti-VEGF ou fotocoagulação a laser."
+        "titulo": "Quadro clínico",
+        "conteudo": "A retinopatia diabética é tipicamente assintomática até fases avançadas, quando pode causar redução da acuidade visual (por edema macular ou complicações da forma proliferativa) — essa característica assintomática nas fases tratáveis é a justificativa central para o rastreamento oftalmológico periódico obrigatório em todo paciente diabético, independentemente de sintomas visuais referidos. Retinopatia hipertensiva também é predominantemente assintomática, sendo achado de exame de rotina na maioria dos casos crônicos."
       },
       {
-        "titulo": "Rastreamento",
-        "conteudo": "O paciente diabético deve realizar exame de fundo de olho anualmente a partir do diagnóstico (diabetes tipo 2) ou a partir de 5 anos do diagnóstico (diabetes tipo 1), independentemente de sintomas visuais."
+        "titulo": "Exame físico",
+        "conteudo": "A fundoscopia (exame de fundo de olho) é o método de avaliação direta, revelando microaneurismas, hemorragias em chama de vela ou puntiformes, exsudatos duros e algodonosos na retinopatia diabética; e estreitamento arteriolar, cruzamentos arteriovenosos patológicos (sinal de Gunn), hemorragias e, em casos graves, papiledema na retinopatia hipertensiva maligna."
       },
       {
-        "titulo": "Retinopatia hipertensiva",
-        "conteudo": "Alterações vasculares retinianas por hipertensão arterial crônica ou aguda — estreitamento arteriolar, cruzamentos arteriovenosos patológicos (sinal de Gunn), hemorragias e exsudatos. Papiledema bilateral associado sugere hipertensão maligna/emergência hipertensiva."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico e o acompanhamento são feitos por fundoscopia direta ou, cada vez mais, por retinografia digital (fotografia padronizada do fundo de olho), permitindo documentação objetiva e comparação evolutiva ao longo do tempo. Todo paciente diabético deve realizar exame oftalmológico de rastreamento ao diagnóstico (diabetes tipo 2) ou a partir de 5 anos do diagnóstico (diabetes tipo 1), repetido anualmente ou conforme achados prévios."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O controle rigoroso da glicemia e da pressão arterial é a intervenção mais importante para retardar a progressão de ambas as retinopatias. Fotocoagulação a laser panretiniana é indicada na retinopatia diabética proliferativa para induzir regressão da neovascularização; injeções intravítreas de anti-VEGF são utilizadas no edema macular diabético e em casos selecionados de doença proliferativa. Retinopatia hipertensiva é manejada primariamente pelo controle da pressão arterial sistêmica subjacente, sem tratamento oftalmológico específico direcionado às lesões retinianas isoladamente."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Retinopatia diabética proliferativa não tratada</span> tem alto risco de hemorragia vítrea súbita e descolamento de retina, com perda visual grave e potencialmente irreversível."
+        "conteudo": "Retinopatia diabética proliferativa não tratada tem risco significativo de hemorragia vítrea súbita e descolamento de retina tracional, causas de perda visual grave e potencialmente irreversível — justificando encaminhamento oftalmológico prioritário assim que sinais de neovascularização são identificados no rastreamento de rotina."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O calendário de rastreamento oftalmológico obrigatório no diabetes (ao diagnóstico no tipo 2, a partir de 5 anos no tipo 1, com repetição anual) é cobrança certíssima e recorrente em provas de saúde pública e endocrinologia. A progressão de não proliferativa para proliferativa (com indicação de fotocoagulação a laser nesta última) também é frequentemente exigida."
       }
     ]
   },
@@ -6819,7 +6883,7 @@
     "titulo": "Trauma Ocular",
     "resumo": "Avaliação inicial, sinais de perfuração de globo ocular e a regra de nunca aplicar pressão sobre o olho aberto.",
     "revisado": false,
-    "fonte": "Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology — Preferred Practice Pattern: Eye Trauma",
+    "fonte": "Sociedade Brasileira de Oftalmologia; American Academy of Ophthalmology — Ocular Trauma Guidelines",
     "mnemonicos": [
       {
         "palavra": "Nunca aperte o globo aberto",
@@ -6828,24 +6892,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Avaliação inicial",
-        "conteudo": "A acuidade visual deve ser aferida e registrada antes de qualquer manipulação (exceto em suspeita de perfuração de globo ocular), sendo o parâmetro prognóstico mais importante. A história detalhada do mecanismo do trauma orienta a suspeita de lesões específicas."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O trauma ocular é classificado em trauma fechado (contusão sem ruptura da parede do globo ocular) e trauma aberto (ruptura de córnea e/ou esclera, com maior gravidade e pior prognóstico visual), este último podendo ser por laceração (objeto cortante) ou ruptura (impacto contuso intenso o suficiente para romper a parede ocular a partir de dentro para fora, mesmo sem penetração direta de objeto cortante)."
       },
       {
-        "titulo": "Corpo estranho corneano/conjuntival superficial",
-        "conteudo": "Sensação de corpo estranho, dor, fotofobia e lacrimejamento. Remoção cuidadosa sob visualização adequada, seguida de avaliação da integridade corneana com fluoresceína."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor ocular, redução da acuidade visual e sensação de corpo estranho são comuns a diferentes tipos de trauma. Hifema (sangue na câmara anterior, visível como nível líquido) sugere trauma contuso significativo. Extrusão de conteúdo intraocular, pupila em formato irregular (\"em lágrima\", apontando para o local da lesão), e conteúdo escuro exposto (uveia) sugerem trauma ocular aberto, emergência oftalmológica grave."
       },
       {
-        "titulo": "Suspeita de perfuração/ruptura de globo ocular",
-        "conteudo": "Sinais incluem câmara anterior rasa ou irregular, pupila em formato de \"gota\" (discórica), extrusão de conteúdo intraocular, hipotonia ocular acentuada — NUNCA aplicar pressão sobre o globo, remover corpo estranho empalado, ou instilar colírios; proteger o olho com escudo rígido e encaminhar com urgência."
+        "titulo": "Exame físico",
+        "conteudo": "Pupila em formato irregular ou \"em lágrima\", câmara anterior rasa ou muito profunda comparada ao olho contralateral, e extrusão visível de conteúdo intraocular são sinais que indicam trauma ocular aberto — nesse cenário, a manipulação ocular deve ser minimizada (evitar pressão sobre o globo, incluindo durante a própria tentativa de exame detalhado) para não extrudir mais conteúdo intraocular através da lesão já existente."
       },
       {
-        "titulo": "Hifema",
-        "conteudo": "Sangramento na câmara anterior, geralmente por trauma contuso. Risco de ressangramento e elevação da pressão intraocular. Repouso relativo com cabeceira elevada e acompanhamento oftalmológico rigoroso."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico de trauma ocular aberto é predominantemente clínico pelos achados descritos. Tomografia computadorizada de órbita (não ressonância magnética, contraindicada se há suspeita de corpo estranho metálico intraocular, pelo risco de deslocamento pelo campo magnético) auxilia a identificar corpos estranhos intraoculares e avaliar a extensão do trauma quando o exame clínico direto é limitado pela gravidade da lesão."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Suspeita de trauma ocular aberto exige proteção imediata do olho com escudo rígido (não curativo compressivo, que pode pressionar e extrudir conteúdo intraocular), analgesia, profilaxia antitetânica e antibiótica, e encaminhamento urgente para avaliação e reparo cirúrgico oftalmológico especializado — manipulação desnecessária, incluindo tentativas de medir pressão intraocular ou instilar qualquer colírio, deve ser evitada até avaliação especializada."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Suspeita de perfuração de globo ocular</span> é emergência cirúrgica — qualquer manipulação inadequada pode levar à extrusão do conteúdo intraocular e perda irreversível da visão."
+        "conteudo": "<span class=\"red-flag\">Pupila em formato irregular, extrusão de conteúdo intraocular, ou câmara anterior com alteração importante de profundidade após trauma ocular</span> indica trauma ocular aberto — proteger com escudo rígido e encaminhar com urgência, evitando qualquer manipulação ou pressão adicional sobre o globo ocular lesionado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A contraindicação de manipulação/pressão sobre o globo ocular diante de suspeita de trauma aberto (usar escudo rígido, nunca curativo compressivo) é cobrança certa e ponto de segurança crítico. A contraindicação de ressonância magnética diante de suspeita de corpo estranho metálico intraocular também é frequentemente exigida em questões de conduta de emergência."
       }
     ]
   },
@@ -6856,7 +6928,7 @@
     "titulo": "Fraturas e Luxações Comuns",
     "resumo": "Fratura de Colles, clavícula e colo femoral, e as regras de Ottawa para radiografia do tornozelo.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; Ottawa Ankle Rules",
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; AO Foundation — Princípios de Tratamento de Fraturas",
     "mnemonicos": [
       {
         "palavra": "FOOSH quebra o rádio",
@@ -6865,24 +6937,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fratura de punho (Colles)",
-        "conteudo": "Fratura da extremidade distal do rádio por queda com a mão espalmada em extensão, tipicamente em mulheres na pós-menopausa (osteoporose) e crianças. Deformidade característica em \"dorso de garfo\". Tratada com redução e imobilização gessada na maioria dos casos; cirurgia se instável/muito desviada."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As fraturas mais comuns na prática clínica incluem a fratura de Colles (extremidade distal do rádio, tipicamente por queda com a mão espalmada em extensão, mais comum em mulheres pós-menopausa com osteoporose), fratura de clavícula (geralmente por queda sobre o ombro ou trauma direto, mais comum em seu terço médio), fratura do colo do fêmur (predominantemente em idosos com osteoporose, após queda de própria altura) e fratura/entorse de tornozelo. A consolidação óssea segue fases previsíveis (hematoma, formação de calo mole, calo duro, remodelação), influenciadas pela idade, vascularização local e adequação da imobilização/fixação."
       },
       {
-        "titulo": "Fratura de clavícula",
-        "conteudo": "Fratura mais comum em crianças e adultos jovens, geralmente por queda sobre o ombro ou trauma direto. A maioria (especialmente no terço médio) é tratada conservadoramente com tipoia, sem necessidade de redução cirúrgica."
+        "titulo": "Quadro clínico",
+        "conteudo": "Dor intensa, edema, deformidade visível (em fraturas com desvio significativo) e incapacidade funcional do segmento acometido, geralmente com história de trauma correspondente. A fratura de Colles causa a deformidade característica \"em dorso de garfo\" (desvio dorsal do fragmento distal do rádio). Fratura de colo de fêmur em idoso causa incapacidade de deambular, com o membro tipicamente encurtado e rodado externamente."
       },
       {
-        "titulo": "Fratura de fêmur proximal",
-        "conteudo": "Comum em idosos após queda de própria altura, especialmente com osteoporose. Membro inferior encurtado e em rotação externa é o achado clássico. Associada a alta morbimortalidade no idoso, geralmente exigindo tratamento cirúrgico precoce (dentro de 24-48h)."
+        "titulo": "Exame físico",
+        "conteudo": "Deformidade, crepitação óssea à palpação (não deve ser ativamente pesquisada pelo risco de agravar a lesão), edema e dor localizada à palpação do foco de fratura orientam a suspeita clínica inicial. A avaliação neurovascular distal (pulsos, sensibilidade, motricidade) é etapa obrigatória em toda suspeita de fratura, antes e depois de qualquer manipulação/redução, documentando objetivamente a função antes da intervenção."
       },
       {
-        "titulo": "Entorse/fratura de tornozelo",
-        "conteudo": "As regras de Ottawa orientam a necessidade de radiografia (dor à palpação óssea específica ou incapacidade de dar 4 passos imediatamente após o trauma e na avaliação), evitando radiografias desnecessárias em entorses leves."
+        "titulo": "Diagnóstico",
+        "conteudo": "A radiografia simples em pelo menos duas incidências (frente e perfil) é o exame padrão para diagnóstico, caracterização do tipo de fratura (traço, desvio, cominuição) e planejamento terapêutico. Tomografia é reservada a fraturas complexas, articulares, ou quando a radiografia simples não esclarece completamente a extensão da lesão."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Fraturas sem desvio significativo ou com desvio aceitável após redução incruenta (manual) são tratadas conservadoramente com imobilização (gesso ou órtese). Fraturas com desvio inaceitável, instáveis, articulares com desnivelamento significativo, ou com comprometimento neurovascular associado exigem redução cruenta (cirúrgica) com fixação interna. Fratura de colo de fêmur em idoso quase sempre tem indicação cirúrgica (osteossíntese ou artroplastia, conforme o traço e a idade), com mobilização precoce pós-operatória sendo prioridade para reduzir as complicações sistêmicas do imobilismo prolongado nessa população vulnerável."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Fratura exposta</span> (comunicação com o meio externo) exige profilaxia antibiótica precoce, atualização de vacina antitetânica e desbridamento cirúrgico em tempo hábil, pelo alto risco de osteomielite."
+        "conteudo": "<span class=\"red-flag\">Dor desproporcional à lesão aparente, associada a parestesia, palidez e dor à extensão passiva dos dedos</span> em membro fraturado (especialmente após imobilização com gesso circular) sugere síndrome compartimental, emergência ortopédica que exige fasciotomia urgente para prevenir necrose muscular e nervosa permanente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A avaliação neurovascular distal obrigatória antes e depois de qualquer manipulação de fratura é cobrança certa. O reconhecimento da síndrome compartimental (dor desproporcional como sinal mais precoce e importante, antes mesmo de alterações de pulso, que são tardias) é ponto crítico e extremamente recorrente em provas de ortopedia/emergência."
       }
     ]
   },
@@ -6893,7 +6973,7 @@
     "titulo": "Lesões Ligamentares do Joelho",
     "resumo": "Lesão do LCA, LCM e menisco, e os testes clínicos que orientam o diagnóstico inicial.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; AAOS Clinical Practice Guideline on ACL Injury",
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; AAOS Clinical Practice Guideline on ACL Injuries",
     "mnemonicos": [
       {
         "palavra": "Estalo + inchaço rápido = LCA",
@@ -6902,24 +6982,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Ligamento cruzado anterior (LCA)",
-        "conteudo": "Lesão mais comum em esportes com mudança brusca de direção ou desaceleração, frequentemente sem contato direto. Sensação de \"estalo\" seguida de dor e edema importante (hemartrose) em poucas horas. O teste de Lachman é o mais sensível para o diagnóstico clínico."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A lesão do ligamento cruzado anterior (LCA) ocorre tipicamente por mecanismo de desaceleração súbita com mudança de direção, pivô ou hiperextensão, comum em esportes com corrida e mudanças bruscas de direção. A lesão do ligamento colateral medial ocorre por estresse em valgo (força aplicada na face lateral do joelho, forçando-o para dentro). Lesões meniscais frequentemente ocorrem por movimento de torção do joelho em flexão com o pé fixo no solo, podendo ocorrer isoladamente ou em associação a lesões ligamentares (a chamada \"tríade infeliz\" combina lesão de LCA, ligamento colateral medial e menisco medial)."
       },
       {
-        "titulo": "Ligamento colateral medial (LCM)",
-        "conteudo": "Lesão por estresse em valgo do joelho (força aplicada na face lateral, empurrando o joelho para dentro), comum em esportes de contato. Dor localizada na face medial do joelho, instabilidade em valgo ao exame."
+        "titulo": "Quadro clínico",
+        "conteudo": "Lesão aguda do LCA frequentemente é percebida pelo paciente com um estalo (\"pop\") audível ou sentido no momento do trauma, seguido de dor e edema rápido (dentro de horas) por hemartrose — esse edema de instalação rápida é característico e diferencia de lesões meniscais isoladas, cujo edema tende a se instalar mais lentamente (12-24 horas). Instabilidade subjetiva (\"sensação de falseio\" do joelho) é queixa comum em lesões ligamentares crônicas não tratadas."
       },
       {
-        "titulo": "Menisco",
-        "conteudo": "Lesões associam-se frequentemente a movimento de rotação do joelho em carga. Dor na interlinha articular, sensação de travamento ou bloqueio articular e derrame articular de instalação mais lenta (comparado à hemartrose aguda do LCA)."
+        "titulo": "Exame físico",
+        "conteudo": "O teste de Lachman é o teste mais sensível para lesão do LCA (translação anterior excessiva da tíbia com o joelho em leve flexão). O teste do estresse em valgo avalia a integridade do ligamento colateral medial. O teste de McMurray avalia lesão meniscal (dor/estalido à rotação do joelho durante extensão a partir da flexão máxima). A combinação de história de trauma característica com esses testes direciona fortemente o diagnóstico antes mesmo da confirmação por imagem."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A ressonância magnética é o exame de escolha para confirmar lesões ligamentares e meniscais, mas o diagnóstico inicial é eminentemente clínico, por meio de testes específicos (Lachman e gaveta anterior para LCA, estresse em valgo/varo para colaterais, McMurray para menisco)."
+        "conteudo": "A ressonância magnética é o exame de escolha para confirmação e caracterização detalhada de lesões ligamentares e meniscais, com alta sensibilidade e especificidade, permitindo também identificar lesões associadas (edema ósseo, lesões condrais) não evidentes ao exame físico isolado. Radiografia simples é útil para excluir fraturas associadas, mas não visualiza diretamente estruturas ligamentares/meniscais."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Lesão completa do LCA em paciente jovem e ativo geralmente tem indicação de reconstrução cirúrgica (ligamentoplastia), pela alta demanda funcional e risco de instabilidade recorrente com lesões condrais/meniscais secundárias sem tratamento definitivo. Lesão isolada do ligamento colateral medial, mesmo completa, frequentemente responde bem a tratamento conservador (órtese, fisioterapia), pela boa capacidade de cicatrização desse ligamento extra-articular. Lesões meniscais são tratadas conforme o padrão e a localização (sutura meniscal quando possível, preferível à meniscectomia parcial, para preservar a função de amortecimento do menisco a longo prazo)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hemartrose de instalação rápida</span> (poucas horas) após trauma esportivo sugere fortemente lesão do LCA e deve motivar avaliação ortopédica especializada, mesmo com exame físico inicial limitado pela dor/edema."
+        "conteudo": "Hemartrose de instalação rápida (dentro de 2-4 horas do trauma) após entorse significativa de joelho é altamente sugestiva de lesão do LCA e deve motivar investigação e encaminhamento ortopédico prioritário, mesmo que o paciente ainda consiga deambular parcialmente com dor."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O teste de Lachman como o mais sensível para lesão de LCA (superando a antiga gaveta anterior em sensibilidade) é cobrança certa. A tríade infeliz (LCA + colateral medial + menisco medial) e a diferenciação de velocidade de instalação do edema (rápida no LCA, mais lenta na lesão meniscal isolada) também são frequentemente exigidas."
       }
     ]
   },
@@ -6930,7 +7018,7 @@
     "titulo": "Infecções Ortopédicas: Artrite Séptica e Osteomielite",
     "resumo": "Emergência da artrite séptica, tratamento sem aguardar cultura e diferenciação da osteomielite aguda x crônica.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; IDSA Clinical Practice Guidelines for Native Joint Septic Arthritis",
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; IDSA Clinical Practice Guidelines for Native Vertebral Osteomyelitis",
     "mnemonicos": [
       {
         "palavra": "Não espera cultura para tratar artrite séptica",
@@ -6939,24 +7027,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Artrite séptica",
-        "conteudo": "Infecção bacteriana do espaço articular, emergência ortopédica pelo risco de destruição rápida e irreversível da cartilagem. Staphylococcus aureus é o agente mais comum em todas as faixas etárias. Monoartrite aguda com dor intensa, edema, calor e limitação acentuada da mobilidade."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A artrite séptica resulta da invasão bacteriana do espaço articular, mais comumente por disseminação hematogênica (Staphylococcus aureus é o agente mais comum em todas as faixas etárias, exceto em adultos jovens sexualmente ativos, onde Neisseria gonorrhoeae é etiologia relevante a considerar). A osteomielite resulta de infecção óssea, também predominantemente hematogênica em crianças (afetando preferencialmente a metáfise de ossos longos, região de maior vascularização e menor fluxo sanguíneo relativo, favorecendo a instalação bacteriana) ou por contiguidade/inoculação direta em adultos (feridas, cirurgias, úlceras de pressão profundas)."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Artrite séptica manifesta-se com dor articular intensa, edema, calor local e limitação importante da mobilidade (o paciente frequentemente mantém a articulação em posição antálgica fixa, resistindo a qualquer tentativa de mobilização passiva), associada a febre na maioria dos casos. Osteomielite manifesta-se com dor óssea localizada, edema e sinais inflamatórios sobre o osso acometido, também associados a febre, especialmente na forma aguda hematogênica."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Articulação com derrame importante, calor, e dor intensa a qualquer tentativa de mobilização passiva (mesmo mínima) é achado central e muito valorizado na suspeita de artrite séptica — a resistência voluntária e involuntária à mobilização passiva mesmo discreta ajuda a diferenciar de causas menos graves de dor articular. Dor localizada à palpação óssea profunda sugere osteomielite subjacente."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A artrocentese com análise do líquido sinovial é obrigatória e urgente diante da suspeita — celularidade muito elevada com predomínio de neutrófilos, cultura positiva na maioria dos casos. NÃO se deve aguardar confirmação de imagem antes de iniciar o tratamento."
+        "conteudo": "A artrocentese diagnóstica é etapa obrigatória e urgente diante de suspeita de artrite séptica, com análise do líquido sinovial (celularidade muito elevada com predomínio neutrofílico, cultura e Gram) confirmando o diagnóstico e identificando o agente causal. Osteomielite é investigada por ressonância magnética (exame mais sensível para detecção precoce, antes mesmo de alterações radiográficas, que só aparecem cerca de 10-14 dias após o início do processo infeccioso) e hemoculturas, com biópsia óssea confirmando definitivamente em casos de dúvida diagnóstica."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Antibioticoterapia empírica intravenosa imediata (cobrindo Staphylococcus aureus) associada a drenagem/lavagem articular (cirúrgica ou por punções repetidas), sem aguardar resultado de cultura."
-      },
-      {
-        "titulo": "Osteomielite",
-        "conteudo": "Infecção óssea, aguda (hematogênica, mais comum em crianças, tipicamente em metáfise de ossos longos) ou crônica (frequentemente por contiguidade, associada a trauma exposto, cirurgia prévia ou úlceras crônicas como no pé diabético). A ressonância magnética é o exame de imagem mais sensível nas fases iniciais."
+        "conteudo": "Artrite séptica exige drenagem articular urgente (por artrocentese repetida ou artrotomia/artroscopia, conforme a articulação e a gravidade) associada a antibioticoterapia endovenosa prolongada — a drenagem é etapa terapêutica essencial e não apenas diagnóstica, já que o líquido purulento retido perpetua a destruição da cartilagem articular mesmo com antibiótico adequado em curso. Osteomielite aguda é tratada com antibioticoterapia prolongada (semanas), com desbridamento cirúrgico indicado em casos com necrose óssea extensa, abscesso, ou falha da resposta ao tratamento clínico isolado."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Monoartrite aguda com sinais inflamatórios importantes</span> deve ser considerada artrite séptica até prova em contrário, e tratada como emergência ortopédica."
+        "conteudo": "<span class=\"red-flag\">Articulação com derrame importante, calor e dor intensa à mínima mobilização passiva, associada a febre</span> exige artrocentese diagnóstica urgente para exclusão de artrite séptica — o atraso no diagnóstico e tratamento (drenagem + antibiótico) resulta em destruição cartilaginosa rápida e irreversível, com sequela funcional permanente da articulação acometida."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A obrigatoriedade de artrocentese diagnóstica urgente diante de suspeita de artrite séptica (nunca tratar apenas empiricamente sem confirmação do líquido sinovial) é cobrança certa. A localização metafisária preferencial da osteomielite hematogênica em crianças e a superioridade da ressonância magnética sobre a radiografia para diagnóstico precoce também são frequentemente exigidas."
       }
     ]
   },
@@ -6967,7 +7063,7 @@
     "titulo": "Ortopedia Pediátrica: Quadril e Pé",
     "resumo": "Displasia do desenvolvimento do quadril, doença de Perthes, epifisiólise femoral proximal e pé torto congênito.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; AAOS Clinical Practice Guidelines on DDH and SCFE",
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; Sociedade Brasileira de Pediatria",
     "mnemonicos": [
       {
         "palavra": "Dor no joelho, olhe o quadril",
@@ -6976,24 +7072,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Displasia do desenvolvimento do quadril (DDQ)",
-        "conteudo": "Instabilidade ou desenvolvimento anormal do quadril no recém-nascido/lactente, com fatores de risco como sexo feminino, apresentação pélvica e história familiar. Testes de Ortolani e Barlow são realizados na triagem neonatal. Ultrassonografia de quadril é o exame de escolha antes dos 4-6 meses."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A displasia do desenvolvimento do quadril (DDQ) resulta de desenvolvimento anormal do acetábulo e/ou instabilidade da cabeça femoral dentro dele, com fatores de risco incluindo sexo feminino, apresentação pélvica ao nascimento e história familiar. A doença de Legg-Calvé-Perthes resulta de necrose avascular idiopática da cabeça femoral em crianças (tipicamente entre 4-8 anos), com posterior processo de revascularização e remodelação que pode deixar sequela de deformidade da cabeça femoral. O pé torto congênito (equinovaro) resulta de deformidade estrutural presente ao nascimento, envolvendo múltiplas articulações do pé em posições anormais fixas."
       },
       {
-        "titulo": "Doença de Legg-Calvé-Perthes",
-        "conteudo": "Necrose avascular idiopática da cabeça femoral em crianças, mais comum entre 4-8 anos, predominantemente no sexo masculino. Dor no quadril, coxa ou joelho (dor referida) associada a claudicação, de instalação insidiosa."
+        "titulo": "Quadro clínico",
+        "conteudo": "DDQ é frequentemente assintomática ao nascimento, sendo identificada por manobras de exame físico dirigido ou, em casos não diagnosticados precocemente, por assimetria de pregas cutâneas dos membros inferiores ou claudicação quando a criança inicia a marcha. Doença de Legg-Calvé-Perthes manifesta-se com claudicação insidiosa e dor leve a moderada em quadril, coxa ou joelho (dor referida), frequentemente sem história de trauma que a explique. Pé torto congênito é evidente ao nascimento pela deformidade visível característica."
       },
       {
-        "titulo": "Epifisiólise femoral proximal",
-        "conteudo": "Deslocamento da epífise da cabeça femoral em relação ao colo femoral, tipicamente em adolescentes com obesidade, durante o estirão de crescimento. Dor no quadril ou joelho com claudicação — é considerada urgência ortopédica pelo risco de necrose avascular, exigindo fixação cirúrgica precoce."
+        "titulo": "Exame físico",
+        "conteudo": "As manobras de Ortolani (redução de quadril luxado ao abduzir o quadril fletido, com sensação de \"click\" de entrada) e Barlow (luxação de quadril instável ao aduzir e pressionar posteriormente) são os testes centrais de rastreamento neonatal para DDQ, devendo ser realizados sistematicamente em toda consulta de puericultura nos primeiros meses de vida. Limitação da abdução do quadril é achado sugestivo em crianças mais velhas, quando as manobras de Ortolani/Barlow perdem sensibilidade pela maior rigidez articular."
       },
       {
-        "titulo": "Pé torto congênito",
-        "conteudo": "Deformidade congênita caracterizada por equino, varo do retropé, adução do antepé e cavo. Tratamento inicial pelo método de Ponseti (gessos seriados semanais seguidos de tenotomia percutânea do tendão de Aquiles na maioria dos casos), com excelentes resultados quando iniciado precocemente."
+        "titulo": "Diagnóstico",
+        "conteudo": "Ultrassonografia de quadril é o exame de escolha para DDQ em lactentes até cerca de 4-6 meses (antes da ossificação significativa da cabeça femoral, que limita a avaliação radiográfica nessa fase); radiografia torna-se mais informativa após essa idade. Doença de Legg-Calvé-Perthes é diagnosticada por radiografia de bacia, mostrando alterações características da cabeça femoral conforme o estágio evolutivo da doença (esclerose, fragmentação, reossificação)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "DDQ diagnosticada precocemente (primeiros meses de vida) é tratada com suspensório de Pavlik, mantendo o quadril em posição de flexão e abdução para promover desenvolvimento acetabular normal, com excelentes resultados quando iniciado precocemente — o atraso diagnóstico para além de determinada idade aumenta significativamente a necessidade de intervenções mais invasivas (redução cirúrgica). Doença de Legg-Calvé-Perthes é tratada conforme idade e gravidade, variando de observação/contenção do quadril a intervenção cirúrgica em casos mais graves ou em crianças mais velhas. Pé torto congênito é tratado pelo método de Ponseti (manipulação seriada e gessos sucessivos, com excelentes resultados funcionais), atualmente preferido à correção cirúrgica extensa como abordagem inicial."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor no joelho em adolescente com obesidade, sem trauma evidente</span> deve sempre motivar exame cuidadoso do quadril ipsilateral, pela possibilidade de epifisiólise femoral proximal se manifestando como dor referida."
+        "conteudo": "Assimetria de pregas cutâneas dos membros inferiores ou limitação de abdução do quadril identificada tardiamente (após os primeiros meses de vida) associa-se a pior prognóstico de tratamento da DDQ, reforçando a importância crítica do rastreamento sistemático com as manobras de Ortolani/Barlow em toda consulta de puericultura precoce."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "As manobras de Ortolani e Barlow (técnica e significado de cada uma) para rastreamento de DDQ são cobrança certíssima e extremamente recorrente em provas de pediatria/ortopedia. O método de Ponseti como tratamento de escolha atual do pé torto congênito (substituindo a cirurgia extensa como primeira linha) também é frequentemente exigido como atualização de conduta."
       }
     ]
   },
@@ -8732,7 +8836,7 @@
     "titulo": "Lombalgia e Hérnia de Disco",
     "resumo": "Sinais de alarme que indicam investigação de imagem e o reconhecimento da síndrome da cauda equina como emergência cirúrgica.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia/Coluna; NASS Clinical Guidelines for Lumbar Disc Herniation",
+    "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; NASS Clinical Guidelines for Diagnosis and Treatment of Lumbar Disc Herniation",
     "mnemonicos": [
       {
         "palavra": "Lasègue estica e dói",
@@ -8741,24 +8845,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Lombalgia mecânica inespecífica",
-        "conteudo": "Causa mais comum de dor lombar, sem causa estrutural específica identificável. Dor que piora com movimento e melhora com repouso, sem irradiação radicular. Manejo com analgesia e manutenção da atividade tolerada — repouso prolongado no leito é contraproducente."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A lombalgia mecânica comum resulta de sobrecarga músculo-ligamentar da coluna lombar, geralmente autolimitada e sem lesão estrutural significativa identificável. A hérnia de disco lombar resulta da protrusão do núcleo pulposo através de fissuras no ânulo fibroso do disco intervertebral, podendo comprimir raízes nervosas adjacentes (mais comumente L4-L5 e L5-S1) e causar radiculopatia — dor irradiada ao longo do trajeto do nervo comprimido, associada a déficit sensitivo/motor no território correspondente."
       },
       {
-        "titulo": "Hérnia de disco lombar",
-        "conteudo": "Extrusão do núcleo pulposo comprimindo raiz nervosa adjacente, mais comum em L4-L5 e L5-S1. Causa lombociatalgia irradiada seguindo o dermátomo correspondente, associada a sinal de Lasègue positivo e podendo cursar com déficit motor/sensitivo."
+        "titulo": "Quadro clínico",
+        "conteudo": "Lombalgia mecânica simples causa dor lombar localizada, que piora com movimento/esforço e melhora com repouso, sem irradiação característica para membros inferiores. Hérnia de disco com radiculopatia causa dor lombar associada a dor irradiada (ciática, quando a raiz comprometida contribui para o nervo ciático), seguindo trajeto característico conforme a raiz acometida, frequentemente associada a parestesias e, em casos mais graves, fraqueza motora no território correspondente."
       },
       {
-        "titulo": "Sinais de alarme na lombalgia",
-        "conteudo": "Trauma significativo, idade acima de 50 anos com dor nova, febre/perda de peso inexplicada, uso de corticoide crônico, história de câncer e déficit neurológico progressivo exigem investigação de imagem — a lombalgia mecânica simples não necessita exame de imagem de rotina."
+        "titulo": "Exame físico",
+        "conteudo": "O teste de elevação da perna estendida (Lasègue) é o teste central para radiculopatia lombar — reprodução da dor irradiada característica ao elevar passivamente a perna estendida entre 30-70 graus sugere fortemente compressão radicular por hérnia discal. Avaliação de força motora, sensibilidade e reflexos nos territórios correspondentes às raízes L4, L5 e S1 localiza objetivamente o nível provável da hérnia comprometida."
       },
       {
-        "titulo": "Síndrome da cauda equina",
-        "conteudo": "Emergência cirúrgica por compressão maciça das raízes lombossacras distais: anestesia em sela, disfunção esfincteriana e fraqueza bilateral de membros inferiores. Exige ressonância magnética urgente e descompressão cirúrgica precoce."
+        "titulo": "Diagnóstico",
+        "conteudo": "A maioria dos episódios de lombalgia aguda é diagnosticada clinicamente, sem necessidade de exames de imagem nas primeiras 4-6 semanas, na ausência de sinais de alarme — a grande maioria resolve espontaneamente nesse período com tratamento conservador. Ressonância magnética é indicada diante de sinais de alarme, radiculopatia persistente e incapacitante além de 4-6 semanas apesar de tratamento conservador adequado, ou antes de considerar intervenção cirúrgica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "A maioria dos casos de lombalgia com ou sem radiculopatia responde a tratamento conservador (analgesia, anti-inflamatórios, manutenção de atividade física conforme tolerado — o repouso prolongado no leito não é recomendado e pode retardar a recuperação funcional), com fisioterapia como complemento importante. Cirurgia (discectomia) é reservada a casos com déficit neurológico progressivo, dor radicular incapacitante refratária ao tratamento conservador adequado por período apropriado, ou síndrome de cauda equina (indicação cirúrgica de urgência absoluta)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Anestesia em sela associada a retenção urinária</span> caracteriza síndrome da cauda equina — emergência cirúrgica que exige ressonância magnética e descompressão em caráter de urgência."
+        "conteudo": "<span class=\"red-flag\">Anestesia em sela (região perineal), retenção urinária ou incontinência fecal, e fraqueza motora bilateral progressiva em membros inferiores</span> caracterizam síndrome da cauda equina, emergência cirúrgica absoluta que exige ressonância magnética e descompressão cirúrgica imediatas, sob risco de disfunção esfincteriana e motora permanente se o tratamento for postergado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A síndrome da cauda equina como emergência cirúrgica (com seus sinais característicos de anestesia em sela e disfunção esfincteriana) é cobrança certíssima e um dos temas de maior relevância prática de toda a ortopedia em provas de residência. O teste de Lasègue para radiculopatia e a recomendação de manter atividade (em vez de repouso prolongado) na lombalgia simples também são frequentemente exigidos."
       }
     ]
   },
@@ -8769,7 +8881,7 @@
     "titulo": "Glaucoma Crônico de Ângulo Aberto",
     "resumo": "A neuropatia óptica silenciosa que causa perda de campo visual periférico, e a importância do rastreamento em grupos de risco.",
     "revisado": false,
-    "fonte": "Conselho Brasileiro de Oftalmologia; American Academy of Ophthalmology — Primary Open-Angle Glaucoma PPP",
+    "fonte": "Sociedade Brasileira de Oftalmologia; AAO Preferred Practice Pattern: Primary Open-Angle Glaucoma",
     "mnemonicos": [
       {
         "palavra": "Silencioso até roubar a visão",
@@ -8778,24 +8890,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia e fatores de risco",
-        "conteudo": "Neuropatia óptica progressiva associada, na maioria dos casos, a pressão intraocular elevada por resistência aumentada à drenagem do humor aquoso. Fatores de risco: idade avançada, história familiar, miopia, diabetes e etnia (maior prevalência em afrodescendentes)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O glaucoma crônico de ângulo aberto resulta de dano progressivo ao nervo óptico, tipicamente (embora não invariavelmente) associado a elevação da pressão intraocular por resistência aumentada à drenagem do humor aquoso através da malha trabecular, mesmo com o ângulo iridocorneano anatomicamente aberto (diferente do glaucoma agudo de ângulo fechado, de mecanismo e apresentação completamente distintos). É a principal causa de cegueira irreversível evitável no mundo, justamente pela sua natureza silenciosa."
       },
       {
-        "titulo": "Quadro clínico — a \"doença silenciosa\"",
-        "conteudo": "Assintomático por longo período, já que a perda de campo visual começa pela periferia e só é percebida em fases avançadas, quando a visão central já pode estar comprometida."
+        "titulo": "Quadro clínico",
+        "conteudo": "A doença é classicamente assintomática por longo período (\"a doença silenciosa da visão\"), com perda de campo visual periférico lenta e progressiva que só é percebida pelo paciente em fases já avançadas, quando o dano ao nervo óptico é significativo e irreversível — a visão central é preservada até estágios muito tardios, o que explica o baixo índice de queixas espontâneas até fases avançadas da doença."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "A escavação do disco óptico aumentada (relação escavação/disco aumentada) é achado fundoscópico característico, refletindo perda de fibras do nervo óptico — sua progressão ao longo do tempo, documentada por exames seriados, é achado central para o diagnóstico e o acompanhamento da doença. A pressão intraocular elevada é fator de risco importante, mas uma parcela dos pacientes desenvolve a doença com pressão intraocular estatisticamente normal (glaucoma de pressão normal), reforçando que a avaliação do nervo óptico é mais central que a pressão isolada."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Tonometria, avaliação do disco óptico (escavação aumentada) e campimetria para detectar e monitorar a perda de campo visual. O rastreamento em consulta oftalmológica de rotina é essencial, já que o paciente não percebe a doença sozinho."
+        "conteudo": "O diagnóstico combina tonometria (medida da pressão intraocular), avaliação do disco óptico (fundoscopia ou tomografia de coerência óptica, que quantifica objetivamente a espessura da camada de fibras nervosas retinianas) e campimetria (perimetria computadorizada, que detecta e quantifica os defeitos de campo visual característicos, tipicamente iniciando na periferia)."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Colírios hipotensores oculares (análogos de prostaglandina como primeira linha) reduzem a pressão intraocular e retardam a progressão. A lesão do nervo óptico já estabelecida é irreversível — o objetivo é estabilizar, não recuperar a visão perdida."
+        "conteudo": "O tratamento visa reduzir a pressão intraocular (único fator de risco modificável comprovadamente eficaz para retardar a progressão), com colírios hipotensores oculares (análogos de prostaglandina como primeira linha na maioria dos protocolos) sendo a primeira linha terapêutica; laser (trabeculoplastia) e cirurgia filtrante são reservados a casos refratários ao tratamento clínico ou como alternativa em situações específicas. O dano ao nervo óptico já estabelecido é irreversível — o tratamento visa impedir a progressão futura, não recuperar a função já perdida."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Perda de campo visual periférico assintomática detectada apenas em exame de rotina reforça a importância do rastreamento oftalmológico periódico em grupos de risco, já que o diagnóstico tardio permite dano irreversível já instalado."
+        "conteudo": "Perda de campo visual periférico já perceptível pelo próprio paciente indica doença em estágio avançado, com dano significativo e já irreversível ao nervo óptico — reforçando a importância crítica do rastreamento oftalmológico de rotina em grupos de risco (idade acima de 40 anos, história familiar de glaucoma, ascendência afrodescendente), já que aguardar sintomas para buscar avaliação é estratégia tardia demais para essa doença especificamente."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O caráter assintomático até fases avançadas (justificando rastreamento ativo, não baseado em sintomas) é cobrança central e recorrente. A irreversibilidade do dano já estabelecido (o tratamento impede progressão, não recupera função perdida) e o glaucoma como principal causa de cegueira irreversível evitável no mundo também são frequentemente exigidos."
       }
     ]
   },
