@@ -7895,5 +7895,264 @@
         "conteudo": "A subvacinação de idosos e adultos com comorbidades é um problema de saúde pública subestimado — a atualização da caderneta vacinal deve ser verificada ativamente em toda consulta, independentemente da idade."
       }
     ]
+  },
+  {
+    "id": "tumores-urologicos",
+    "area": "residencia",
+    "categoria": "Urologia",
+    "titulo": "Tumores Urológicos: Próstata, Bexiga, Rim e Testículo",
+    "resumo": "Panorama comparativo dos principais tumores do trato geniturinário: fatores de risco, rastreio, apresentação clínica e abordagem inicial.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Urologia; Instituto Nacional de Câncer (INCA) — Diretrizes de rastreamento e tratamento",
+    "mnemonicos": [
+      {
+        "palavra": "Hematúria indolor é câncer até provar o contrário",
+        "explicacao": "Hematúria macroscópica indolor em adulto — especialmente tabagista — é o sinal de alarme clássico do câncer de bexiga (urotelial) e sempre exige investigação com cistoscopia e imagem, independente de resolução espontânea."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Câncer de próstata",
+        "conteudo": "Neoplasia mais comum em homens idosos. Fatores de risco: idade, histórico familiar, ascendência afrodescendente. Rastreamento com PSA e toque retal é individualizado (decisão compartilhada), não universal, por risco de sobrediagnóstico de tumores indolentes. Diagnóstico confirmado por biópsia guiada, com escore de Gleason definindo agressividade."
+      },
+      {
+        "titulo": "Câncer de bexiga",
+        "conteudo": "Tabagismo é o principal fator de risco modificável; exposição ocupacional a aminas aromáticas também é relevante. Hematúria macroscópica indolor é a manifestação mais comum. Diagnóstico por cistoscopia com biópsia; a maioria é do tipo urotelial (transicional)."
+      },
+      {
+        "titulo": "Câncer de rim (carcinoma de células renais)",
+        "conteudo": "Frequentemente assintomático, achado incidental em exames de imagem por outros motivos. A tríade clássica (dor lombar, massa palpável, hematúria) é rara e indica doença avançada. Tabagismo e obesidade são fatores de risco associados."
+      },
+      {
+        "titulo": "Câncer de testículo",
+        "conteudo": "Tumor sólido mais comum em homens jovens (15-35 anos). Principal fator de risco é a criptorquidia. Apresenta-se como nódulo testicular indolor — massa testicular deve sempre ser considerada maligna até prova em contrário, diferente do hidrocele/varicocele."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Hematúria macroscópica indolor</span> e <span class=\"red-flag\">massa testicular indolor de instalação recente</span> são sinais de alarme que exigem investigação urológica prioritária, mesmo na ausência de outros sintomas."
+      }
+    ]
+  },
+  {
+    "id": "doenca-vascular-renal",
+    "area": "residencia",
+    "categoria": "Nefrologia",
+    "titulo": "Doença Vascular Renal",
+    "resumo": "Estenose de artéria renal, ateroembolismo por cristais de colesterol e oclusão arterial aguda renal — causas vasculares de disfunção renal e hipertensão secundária.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Nefrologia; KDIGO — Clinical Practice Guidelines",
+    "mnemonicos": [
+      {
+        "palavra": "IECA piora, estenose bilateral suspeita",
+        "explicacao": "Piora aguda da função renal (aumento de creatinina) após início de IECA/BRA é um sinal clássico que levanta suspeita de estenose de artéria renal bilateral (ou unilateral em rim único) — pela dependência da angiotensina II para manter a perfusão glomerular nesses casos."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Estenose de artéria renal",
+        "conteudo": "Principal causa é a aterosclerose (idosos, fatores de risco cardiovascular); displasia fibromuscular é mais comum em mulheres jovens. Suspeitar em hipertensão de início súbito ou refratária, piora da função renal com IECA/BRA, ou assimetria renal em exame de imagem."
+      },
+      {
+        "titulo": "Ateroembolismo por cristais de colesterol",
+        "conteudo": "Ocorre após manipulação de grandes vasos (cateterismo, cirurgia vascular) ou anticoagulação, com embolização de múltiplos cristais de colesterol de placas ateroscleróticas. Quadro clássico: livedo reticular, dedos azuis (\"blue toe syndrome\") e piora renal subaguda, dias a semanas após o procedimento."
+      },
+      {
+        "titulo": "Oclusão arterial aguda renal",
+        "conteudo": "Geralmente embólica (fibrilação atrial) ou trombótica sobre lesão preexistente. Manifesta-se com dor em flanco de início súbito, hematúria e elevação de desidrogenase lática (LDH), podendo levar à perda funcional do rim acometido se não revascularizado precocemente."
+      },
+      {
+        "titulo": "Diagnóstico e investigação",
+        "conteudo": "Angiotomografia ou angiorressonância renal são os exames de escolha para estenose de artéria renal; ultrassom com Doppler é útil como triagem inicial. Angiografia convencional permanece padrão-ouro e permite intervenção no mesmo tempo (angioplastia)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Piora aguda da função renal após início de IECA/BRA</span> ou após cateterismo/cirurgia vascular deve levantar suspeita imediata de doença vascular renal, com necessidade de investigação e manejo específico."
+      }
+    ]
+  },
+  {
+    "id": "terapia-substituicao-renal",
+    "area": "residencia",
+    "categoria": "Nefrologia",
+    "titulo": "Terapia de Substituição Renal: Hemodiálise, Diálise Peritoneal e Transplante",
+    "resumo": "Indicações de diálise de urgência, comparação entre as modalidades dialíticas e o transplante renal como melhor opção de sobrevida.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Nefrologia — Diretrizes de Terapia Renal Substitutiva; KDIGO",
+    "mnemonicos": [
+      {
+        "palavra": "AEIOU indica diálise de urgência",
+        "explicacao": "Acidose refratária, distúrbios Eletrolíticos graves (hipercalemia refratária), Intoxicação exógena dialisável, sobrecarga de volume (Overload) refratária a diurético, e Uremia sintomática (encefalopatia, pericardite, sangramento) — indicações clássicas de diálise de urgência."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Indicações de diálise de urgência",
+        "conteudo": "Hipercalemia refratária ao tratamento clínico, acidose metabólica grave refratária, sobrecarga volêmica refratária a diuréticos, sinais de uremia (pericardite urêmica, encefalopatia, sangramento) e intoxicações exógenas por substâncias dialisáveis."
+      },
+      {
+        "titulo": "Hemodiálise",
+        "conteudo": "Modalidade mais utilizada no Brasil, realizada em sessões intermitentes (geralmente 3x/semana) via acesso vascular (fístula arteriovenosa é o acesso definitivo de escolha; cateter venoso central para necessidade imediata). Remoção rápida de solutos e volume, com risco de instabilidade hemodinâmica intradialítica."
+      },
+      {
+        "titulo": "Diálise peritoneal",
+        "conteudo": "Utiliza o peritônio como membrana de filtração, com trocas contínuas ou automatizadas domiciliares. Maior autonomia do paciente e preservação de função renal residual, mas com risco de peritonite associada ao procedimento como principal complicação."
+      },
+      {
+        "titulo": "Transplante renal",
+        "conteudo": "Melhor opção terapêutica em termos de sobrevida e qualidade de vida para doença renal crônica terminal elegível, quando comparado às modalidades dialíticas crônicas. Requer imunossupressão contínua e acompanhamento para rejeição e infecções oportunistas."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Hipercalemia grave com alterações eletrocardiográficas</span> ou <span class=\"red-flag\">sinais de uremia sintomática</span> configuram emergência dialítica, com necessidade de diálise não protelável."
+      }
+    ]
+  },
+  {
+    "id": "sindrome-metabolica",
+    "area": "residencia",
+    "categoria": "Endocrinologia",
+    "titulo": "Síndrome Metabólica",
+    "resumo": "Critérios diagnósticos combinando obesidade abdominal, dislipidemia, hipertensão e hiperglicemia, e sua relação com risco cardiovascular.",
+    "revisado": false,
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Prevenção Cardiovascular; International Diabetes Federation (IDF) — Consenso de Síndrome Metabólica",
+    "mnemonicos": [
+      {
+        "palavra": "3 de 5 fecham o diagnóstico",
+        "explicacao": "A síndrome metabólica é definida pela presença de pelo menos 3 dos 5 critérios: circunferência abdominal aumentada, triglicerídeos elevados, HDL baixo, pressão arterial elevada e glicemia de jejum alterada — nenhum critério isolado é obrigatório."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Definição e critérios diagnósticos",
+        "conteudo": "Conjunto de fatores de risco cardiovascular e metabólico que ocorrem em associação: obesidade abdominal (circunferência de cintura aumentada, com pontos de corte variando por etnia/sexo), triglicerídeos ≥150mg/dL, HDL baixo, pressão arterial ≥130/85mmHg e glicemia de jejum ≥100mg/dL. O diagnóstico requer 3 ou mais critérios."
+      },
+      {
+        "titulo": "Fisiopatologia",
+        "conteudo": "A resistência à insulina é considerada o mecanismo central que conecta os diferentes componentes da síndrome, promovendo um estado pró-inflamatório e pró-trombótico que amplifica o risco cardiovascular além da soma dos fatores isolados."
+      },
+      {
+        "titulo": "Importância clínica",
+        "conteudo": "Pacientes com síndrome metabólica têm risco aumentado de doença cardiovascular aterosclerótica e de progressão para diabetes mellitus tipo 2, justificando rastreamento ativo e intervenção precoce sobre os componentes modificáveis."
+      },
+      {
+        "titulo": "Abordagem terapêutica",
+        "conteudo": "Mudança do estilo de vida (redução de peso, atividade física regular, dieta) é a intervenção de primeira linha e mais eficaz para reverter múltiplos componentes simultaneamente. Tratamento farmacológico dirigido a cada componente isolado (anti-hipertensivo, hipolipemiante, hipoglicemiante) quando as metas não são atingidas apenas com mudanças comportamentais."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "A combinação de obesidade abdominal com múltiplos outros componentes em paciente jovem sinaliza risco cardiovascular precoce desproporcional à idade, exigindo abordagem preventiva intensiva."
+      }
+    ]
+  },
+  {
+    "id": "incongruencia-genero",
+    "area": "residencia",
+    "categoria": "Medicina Preventiva",
+    "titulo": "Saúde da População Trans e Incongruência de Gênero",
+    "resumo": "Terminologia atualizada, o processo transexualizador no SUS e princípios do cuidado em saúde à população trans e travesti.",
+    "revisado": false,
+    "fonte": "Ministério da Saúde — Política Nacional de Saúde Integral LGBT; OMS — CID-11 (capítulo de condições relacionadas à saúde sexual)",
+    "mnemonicos": [
+      {
+        "palavra": "CID-11 tirou do capítulo mental",
+        "explicacao": "Na CID-11, a incongruência de gênero foi retirada do capítulo de transtornos mentais e realocada para um capítulo específico de condições relacionadas à saúde sexual — mudança que reflete o entendimento atual de que não se trata de transtorno mental."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Terminologia e conceitos",
+        "conteudo": "Identidade de gênero refere-se à vivência interna do gênero de uma pessoa, que pode ou não corresponder ao sexo atribuído ao nascimento. Incongruência de gênero descreve o desconforto marcante entre a identidade de gênero vivenciada e o sexo atribuído — termo que substitui, na CID-11, a antiga classificação como transtorno mental."
+      },
+      {
+        "titulo": "Processo transexualizador no SUS",
+        "conteudo": "Política pública que garante acesso a acompanhamento multiprofissional (incluindo saúde mental, endocrinologia e, quando indicado, cirurgias), com princípios de autonomia e despatologização — a hormonização e o suporte psicossocial não exigem laudo psiquiátrico compulsório como pré-requisito único e definitivo."
+      },
+      {
+        "titulo": "Cuidado em saúde à pessoa trans",
+        "conteudo": "Uso do nome social é obrigatório em todos os serviços de saúde. Atenção a necessidades específicas: acompanhamento de hormonioterapia (quando indicada), rastreamento de câncer conforme órgãos presentes (não apenas conforme identidade de gênero) e cuidado com vulnerabilidades específicas da população (maior exposição a violência, discriminação e barreiras de acesso)."
+      },
+      {
+        "titulo": "Determinantes sociais e vulnerabilidades",
+        "conteudo": "A população trans apresenta indicadores de saúde mental (ansiedade, depressão, ideação suicida) e exposição a violência significativamente piores que a população geral, fortemente associados ao estigma e à discriminação social — e não a uma característica intrínseca da identidade de gênero."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "Sinais de sofrimento psíquico significativo, isolamento social ou ideação suicida em pessoas trans devem ser ativamente rastreados na consulta, considerando a vulnerabilidade aumentada dessa população a violência e discriminação."
+      }
+    ]
+  },
+  {
+    "id": "sindrome-disfagica",
+    "area": "residencia",
+    "categoria": "Gastroenterologia",
+    "titulo": "Síndrome Disfágica e Acalasia",
+    "resumo": "Diferenciação entre disfagia orofaríngea e esofágica, investigação diagnóstica e a acalasia como principal distúrbio motor primário do esôfago.",
+    "revisado": false,
+    "fonte": "Federação Brasileira de Gastroenterologia; American College of Gastroenterology — Guidelines for Diagnosis and Management of Achalasia",
+    "mnemonicos": [
+      {
+        "palavra": "Sólidos e líquidos juntos = motor",
+        "explicacao": "Disfagia para sólidos e líquidos desde o início sugere distúrbio motor esofágico (como a acalasia), enquanto disfagia progressiva iniciando por sólidos e evoluindo para líquidos sugere causa obstrutiva mecânica (estenose, neoplasia)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Disfagia orofaríngea vs. esofágica",
+        "conteudo": "Disfagia orofaríngea (de transferência): dificuldade em iniciar a deglutição, com tosse, engasgo e regurgitação nasal — sugere causa neuromuscular (AVC, doenças neurodegenerativas). Disfagia esofágica: sensação de entalo após a deglutição, com sintomas surgindo segundos depois — sugere causa mecânica ou motora do próprio esôfago."
+      },
+      {
+        "titulo": "Padrão de disfagia mecânica vs. motora",
+        "conteudo": "Disfagia mecânica (obstrutiva): tipicamente progressiva, iniciando com sólidos e evoluindo para líquidos (estenose péptica, anel esofágico, neoplasia). Disfagia motora: acomete sólidos e líquidos desde o início, muitas vezes intermitente (acalasia, espasmo esofágico difuso)."
+      },
+      {
+        "titulo": "Acalasia",
+        "conteudo": "Distúrbio motor primário caracterizado por perda do peristaltismo do corpo esofágico e relaxamento incompleto do esfíncter esofágico inferior. Manometria esofágica de alta resolução é o exame padrão-ouro; esofagograma baritado classicamente mostra a imagem em \"bico de pássaro\"."
+      },
+      {
+        "titulo": "Tratamento da acalasia",
+        "conteudo": "Opções incluem dilatação pneumática endoscópica, miotomia de Heller (cirúrgica ou por via endoscópica — POEM) e, em casos selecionados, toxina botulínica (efeito temporário, reservada a pacientes não candidatos a procedimentos definitivos)."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Disfagia progressiva associada a perda de peso</span>, especialmente em paciente idoso, exige investigação endoscópica prioritária para exclusão de neoplasia esofágica antes de assumir causa funcional."
+      }
+    ]
+  },
+  {
+    "id": "sindrome-ictericia-colestase",
+    "area": "residencia",
+    "categoria": "Gastroenterologia",
+    "titulo": "Síndrome Ictérica: Abordagem da Colestase",
+    "resumo": "Raciocínio diagnóstico da icterícia a partir do padrão de bilirrubinas, diferenciando colestase intra-hepática de obstrução extra-hepática.",
+    "revisado": false,
+    "fonte": "Federação Brasileira de Gastroenterologia; Sociedade Brasileira de Hepatologia",
+    "mnemonicos": [
+      {
+        "palavra": "Dilatou, obstruiu",
+        "explicacao": "Na investigação da icterícia colestática, via biliar dilatada na ultrassonografia aponta para causa obstrutiva extra-hepática (cálculo, neoplasia periampular); via biliar não dilatada aponta para causa intra-hepática (hepatocelular ou colestase intra-hepática)."
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Classificação da icterícia",
+        "conteudo": "Pré-hepática (hemólise, predomínio de bilirrubina indireta), hepática (lesão hepatocelular, padrão misto) e pós-hepática/colestática (obstrução ao fluxo biliar, predomínio de bilirrubina direta associado a elevação de fosfatase alcalina e gama-GT)."
+      },
+      {
+        "titulo": "Investigação inicial da colestase",
+        "conteudo": "Ultrassonografia abdominal é o exame inicial de escolha para diferenciar dilatação de vias biliares (sugerindo obstrução extra-hepática) de vias biliares não dilatadas (sugerindo causa intra-hepática) — direcionando toda a investigação subsequente."
+      },
+      {
+        "titulo": "Causas de colestase extra-hepática",
+        "conteudo": "Coledocolitíase é a causa mais comum; neoplasias periampulares (câncer de cabeça de pâncreas, colangiocarcinoma, ampuloma) devem ser consideradas especialmente em icterícia progressiva indolor associada a perda de peso."
+      },
+      {
+        "titulo": "Causas de colestase intra-hepática",
+        "conteudo": "Hepatites (virais, medicamentosas, autoimunes), cirrose biliar primária e colangite esclerosante primária. Colangiorressonância e, quando necessário, colangiopancreatografia retrógrada endoscópica (CPRE) complementam a investigação e permitem intervenção terapêutica na via biliar."
+      },
+      {
+        "titulo": "Sinais de alerta",
+        "conteudo": "<span class=\"red-flag\">Icterícia colestática progressiva e indolor associada a perda de peso</span> em paciente idoso é sinal de alarme para neoplasia periampular (síndrome de Courvoisier: vesícula palpável e indolor em paciente ictérico) e exige investigação urgente."
+      }
+    ]
   }
 ]
