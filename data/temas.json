@@ -591,7 +591,7 @@
     "titulo": "Pré-eclâmpsia e Eclâmpsia",
     "resumo": "Critérios diagnósticos, sinais de gravidade e manejo da pré-eclâmpsia/eclâmpsia.",
     "revisado": false,
-    "fonte": "FEBRASGO - Manual de Gestacao de Alto Risco; ACOG Practice Bulletin: Gestational Hypertension and Preeclampsia",
+    "fonte": "FEBRASGO — Diretriz de Pré-eclâmpsia; Ministério da Saúde — Gestação de Alto Risco; ACOG Practice Bulletin on Hypertension in Pregnancy",
     "mnemonicos": [
       {
         "palavra": "HELLP",
@@ -600,24 +600,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição e diagnóstico",
-        "conteudo": "PA ≥140/90 mmHg após 20 semanas de gestação, associada a proteinúria significativa ou, na ausência desta, a sinais de disfunção orgânica materna (renal, hepática, neurológica, hematológica)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A pré-eclâmpsia resulta de placentação anormal no início da gestação, com invasão trofoblástica inadequada das artérias espiraladas uterinas, causando hipoperfusão placentária relativa que libera fatores antiangiogênicos (como o sFlt-1) na circulação materna, causando disfunção endotelial sistêmica generalizada — mecanismo que explica as múltiplas manifestações de órgão-alvo da doença (renal, hepática, neurológica, hematológica), muito além da hipertensão isolada."
       },
       {
-        "titulo": "Sinais de gravidade",
-        "conteudo": "PA ≥160/110 mmHg, cefaleia persistente, alterações visuais, dor epigástrica ou em barra, plaquetopenia e síndrome HELLP caracterizam pré-eclâmpsia com sinais de gravidade."
+        "titulo": "Quadro clínico",
+        "conteudo": "Hipertensão de início após 20 semanas de gestação associada a proteinúria ou disfunção de órgão-alvo (mesmo sem proteinúria) caracteriza a pré-eclâmpsia. Sintomas de gravidade incluem cefaleia intensa persistente, alterações visuais (escotomas, visão turva), dor epigástrica/em hipocôndrio direito (por distensão da cápsula hepática) e dispneia. A eclâmpsia é definida pelo surgimento de convulsões tônico-clônicas em gestante com pré-eclâmpsia, sem outra causa identificável."
       },
       {
-        "titulo": "Conduta",
-        "conteudo": "Sem sinais de gravidade: vigilância materno-fetal ambulatorial ou internação conforme idade gestacional. Com sinais de gravidade: internação, anti-hipertensivos, corticoide para maturação pulmonar fetal (se prematuro) e avaliação da via/momento de resolução da gestação."
+        "titulo": "Exame físico",
+        "conteudo": "Pressão arterial ≥140/90mmHg em duas ocasiões, ou ≥160/110mmHg em uma única medida (já caracterizando gravidade), é o achado central. Edema não é mais critério diagnóstico obrigatório (é comum na gestação normal), mas edema de instalação súbita e generalizada pode ser sinal de alerta. Hiperreflexia e clônus sugerem maior risco de convulsão iminente (eclâmpsia)."
       },
       {
-        "titulo": "Profilaxia e tratamento da eclâmpsia",
-        "conteudo": "Sulfato de magnésio é a droga de escolha para prevenção e tratamento de crises convulsivas (eclâmpsia) em pré-eclâmpsia grave."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico combina PA elevada após 20 semanas com proteinúria significativa (relação proteína/creatinina urinária ou proteinúria de 24h) OU, na ausência de proteinúria, evidência de disfunção de órgão-alvo: plaquetopenia, elevação de transaminases hepáticas, insuficiência renal, edema pulmonar, ou sintomas neurológicos/visuais novos. A síndrome HELLP (Hemólise, Enzimas hepáticas Elevadas, Plaquetopenia — Low Platelets) representa uma forma grave e específica de apresentação da pré-eclâmpsia."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Sulfato de magnésio é o tratamento de escolha para prevenção e tratamento de convulsões eclâmpticas, com eficácia superior a outros anticonvulsivantes comprovada em ensaios clínicos robustos — deve ser iniciado diante de pré-eclâmpsia com critérios de gravidade, não apenas após a primeira convulsão. Anti-hipertensivos (hidralazina, labetalol, nifedipina) controlam a PA em níveis seguros sem redução excessiva que comprometa a perfusão placentária. O parto é o tratamento definitivo da pré-eclâmpsia, com o momento determinado pelo equilíbrio entre gravidade materna e maturidade fetal — pré-eclâmpsia grave geralmente indica antecipação do parto independentemente da idade gestacional."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Convulsão em gestante com pré-eclâmpsia caracteriza eclâmpsia</span> — exige sulfato de magnésio, estabilização materna imediata e avaliação urgente para resolução da gestação."
+        "conteudo": "<span class=\"red-flag\">Cefaleia intensa persistente, alterações visuais, dor epigástrica ou hiperreflexia com clônus em gestante hipertensa</span> indicam pré-eclâmpsia com critérios de gravidade e risco iminente de eclâmpsia, exigindo sulfato de magnésio profilático imediato e avaliação para antecipação do parto, independentemente da idade gestacional."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O sulfato de magnésio como droga de escolha para prevenção/tratamento de eclâmpsia (não fenitoína ou benzodiazepínicos como primeira linha) é cobrança certíssima e um dos temas mais importantes de toda a obstetrícia em provas de residência. A síndrome HELLP como forma grave de pré-eclâmpsia, e o parto como único tratamento definitivo, também são frequentemente exigidos."
       }
     ]
   },
@@ -870,7 +878,7 @@
     "titulo": "Hemorragias da 1ª Metade da Gestação",
     "resumo": "Diagnóstico diferencial entre abortamento, gravidez ectópica e doença trofoblástica gestacional.",
     "revisado": false,
-    "fonte": "FEBRASGO - Manual de Sangramento na Primeira Metade da Gestacao; RCOG Green-top Guideline No. 21 (gravidez ectopica)",
+    "fonte": "FEBRASGO; Ministério da Saúde — Gestação de Alto Risco",
     "mnemonicos": [
       {
         "palavra": "AEM",
@@ -879,24 +887,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Abordagem inicial",
-        "conteudo": "Beta-hCG quantitativo (seriado se necessário) associado a ultrassonografia transvaginal para localizar a gestação e avaliar viabilidade."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O abortamento (perda gestacional antes de 20-22 semanas) tem como causa mais comum anomalias cromossômicas embrionárias, especialmente em perdas precoces do primeiro trimestre. A gravidez ectópica resulta da implantação do embrião fora da cavidade uterina (mais comumente na trompa de Falópio), incapaz de sustentar gestação viável e com risco de ruptura tubária e hemorragia interna maciça conforme o trofoblasto invade a parede tubária. A doença trofoblástica gestacional (mola hidatiforme) resulta de proliferação trofoblástica anormal, com potencial, embora raro, de evolução para neoplasia trofoblástica gestacional maligna."
       },
       {
-        "titulo": "Abortamento",
-        "conteudo": "Classificado em ameaça, inevitável, incompleto, completo, retido ou infectado, conforme achados clínicos e ultrassonográficos, orientando a conduta (expectante, medicamentosa ou cirúrgica)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Sangramento vaginal no primeiro trimestre é o sintoma comum a todas essas condições, exigindo diferenciação cuidadosa. Gravidez ectópica classicamente associa sangramento a dor pélvica unilateral, podendo evoluir com dor súbita e intensa associada a sinais de choque hipovolêmico em caso de ruptura tubária. Mola hidatiforme frequentemente cursa com sangramento associado a útero maior que o esperado para a idade gestacional e hiperêmese gravídica exacerbada (pelos níveis muito elevados de beta-hCG)."
       },
       {
-        "titulo": "Gravidez ectópica",
-        "conteudo": "Suspeitar em atraso menstrual associado a dor pélvica e sangramento, especialmente com fatores de risco (DIP prévia, cirurgia tubária, DIU). Risco de rotura com hemorragia intra-abdominal grave."
+        "titulo": "Exame físico",
+        "conteudo": "No abortamento, o exame especular e o toque avaliam se o colo está aberto (abortamento inevitável/incompleto) ou fechado (ameaça de abortamento). Na gravidez ectópica rota, sinais de irritação peritoneal e instabilidade hemodinâmica podem estar presentes, exigindo reconhecimento imediato como emergência cirúrgica. Na mola hidatiforme, o útero é tipicamente maior que o esperado pela data da última menstruação."
       },
       {
-        "titulo": "Doença trofoblástica gestacional (mola)",
-        "conteudo": "Beta-hCG muito elevado para a idade gestacional, associado a padrão ultrassonográfico em \"flocos de neve\", sem embrião identificável na forma completa."
+        "titulo": "Diagnóstico",
+        "conteudo": "Beta-hCG quantitativo seriado associado à ultrassonografia transvaginal é a base diagnóstica: ausência de saco gestacional intrauterino com beta-hCG acima do limiar discriminatório sugere fortemente gravidez ectópica. Mola hidatiforme apresenta padrão ultrassonográfico característico (\"flocos de neve\" ou \"cacho de uvas\") associado a beta-hCG muito elevado, desproporcional à idade gestacional esperada."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Ameaça de abortamento com colo fechado e embrião viável é conduzida com repouso relativo e observação. Gravidez ectópica não rota, em paciente estável e com critérios apropriados, pode ser tratada com metotrexato; ectópica rota ou paciente instável exige cirurgia de urgência (salpingectomia ou salpingostomia, conforme o caso). Mola hidatiforme é tratada por esvaziamento uterino (aspiração intrauterina), com seguimento rigoroso de beta-hCG seriado por meses para detectar precocemente eventual progressão para neoplasia trofoblástica gestacional."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor abdominal intensa associada a instabilidade hemodinâmica</span> em suspeita de gravidez ectópica sugere rotura — emergência cirúrgica."
+        "conteudo": "<span class=\"red-flag\">Dor pélvica súbita e intensa associada a sinais de choque hipovolêmico em mulher com atraso menstrual e teste de gravidez positivo</span> caracteriza gravidez ectópica rota, emergência cirúrgica absoluta que exige laparotomia/laparoscopia imediata, sem aguardar confirmação ultrassonográfica completa em paciente instável."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O uso do beta-hCG quantitativo seriado combinado à ultrassonografia transvaginal para diagnóstico de gravidez ectópica (ausência de saco gestacional intrauterino acima do limiar discriminatório) é cobrança certa e recorrente. O seguimento obrigatório com beta-hCG seriado após esvaziamento molar (para detectar neoplasia trofoblástica gestacional) também é frequentemente exigido."
       }
     ]
   },
@@ -1251,7 +1267,7 @@
     "titulo": "Hemorragia Pós-Parto (HPP)",
     "resumo": "Causas mais comuns (4 Ts) e sequência de manejo inicial da hemorragia pós-parto.",
     "revisado": false,
-    "fonte": "FEBRASGO - Manual de Hemorragia Pos-Parto; ACOG Practice Bulletin: Postpartum Hemorrhage",
+    "fonte": "FEBRASGO; Ministério da Saúde — Manual de Hemorragia Pós-Parto; ACOG Practice Bulletin on Postpartum Hemorrhage",
     "mnemonicos": [
       {
         "palavra": "4 T's",
@@ -1260,24 +1276,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição",
-        "conteudo": "Perda sanguínea ≥500 mL no parto vaginal ou ≥1000 mL na cesárea, ou qualquer perda associada a sinais de instabilidade hemodinâmica."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A hemorragia pós-parto é classicamente resumida pelo mnemônico dos \"4 Ts\": Tônus (atonia uterina, a causa mais comum, correspondendo a cerca de 70-80% dos casos, pela incapacidade do útero de se contrair adequadamente após a dequitação), Trauma (lacerações de trajeto — colo, vagina, períneo), Tecido (retenção de restos placentários que impedem a contração uterina adequada), e Trombina (coagulopatias, primárias ou adquiridas, como na coagulação intravascular disseminada secundária a outras complicações obstétricas graves)."
       },
       {
-        "titulo": "Causas mais comuns",
-        "conteudo": "O mnemônico 4 Ts resume as causas — sendo a atonia uterina (Tônus) a mais frequente, seguida por trauma de trajeto, retenção de tecido placentário e coagulopatias (trombina)."
+        "titulo": "Quadro clínico",
+        "conteudo": "Sangramento vaginal excessivo após o parto (definido classicamente como perda sanguínea acima de 500mL no parto vaginal ou 1000mL na cesárea, embora a avaliação clínica de repercussão hemodinâmica seja mais relevante que a quantificação exata), podendo evoluir rapidamente para sinais de choque hipovolêmico (taquicardia, hipotensão, alteração do nível de consciência) se não controlado prontamente."
       },
       {
-        "titulo": "Manejo inicial da atonia uterina",
-        "conteudo": "Massagem uterina bimanual associada a uterotônicos (ocitocina como primeira linha, com outras opções conforme resposta)."
+        "titulo": "Exame físico",
+        "conteudo": "Palpação do fundo uterino é a etapa inicial fundamental: útero amolecido e mal contraído (\"como uma bolsa flácida\") confirma atonia uterina, a causa mais provável e a primeira a ser investigada e tratada. Inspeção cuidadosa do trajeto (colo, vagina, períneo) sob boa iluminação identifica lacerações como causa alternativa ou concomitante."
       },
       {
-        "titulo": "Medidas adicionais",
-        "conteudo": "Reposição volêmica, hemocomponentes conforme a gravidade do sangramento, e revisão do trajeto e da cavidade uterina para excluir lacerações ou restos placentários."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é fundamentalmente clínico e dirigido pela sequência dos \"4 Ts\": primeiro avaliar o tônus uterino (causa mais comum e primeira a ser excluída/tratada), depois inspecionar o trajeto em busca de lacerações, depois avaliar a integridade da placenta/membranas (revisão da cavidade uterina se necessário), e por último considerar coagulopatia caso as causas anteriores tenham sido excluídas ou tratadas sem resposta adequada."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Massagem uterina bimanual e uterotônicos (ocitocina como primeira linha, seguida de ergometrina ou misoprostol conforme disponibilidade e contraindicações) são a base do tratamento inicial da atonia uterina. Lacerações identificadas são corrigidas por sutura direta. Retenção de restos placentários exige remoção manual ou curetagem. Coagulopatia exige reposição de hemocomponentes específicos. Medidas mais invasivas (balão de tamponamento uterino, suturas compressivas, embolização de artéria uterina, e histerectomia como último recurso) são escalonadas conforme a refratariedade ao tratamento inicial e a gravidade do sangramento."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sangramento refratário às medidas iniciais com instabilidade hemodinâmica</span> indica necessidade de intervenção cirúrgica ou embolização de urgência."
+        "conteudo": "<span class=\"red-flag\">Sangramento pós-parto volumoso com útero amolecido e mal contraído à palpação</span> confirma atonia uterina como causa provável, exigindo massagem uterina e uterotônicos imediatos — o atraso no reconhecimento e tratamento da atonia é a principal causa evitável de mortalidade materna por hemorragia pós-parto em todo o mundo."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O mnemônico dos \"4 Ts\" (Tônus, Trauma, Tecido, Trombina) com a atonia como causa mais comum é cobrança certíssima e um dos temas mais importantes de toda a obstetrícia em provas de residência. A sequência escalonada de tratamento da atonia (massagem → uterotônicos → medidas mecânicas → cirúrgicas) também é frequentemente exigida em questões de conduta."
       }
     ]
   },
@@ -2668,7 +2692,7 @@
     "titulo": "Assistência ao Parto e Partograma",
     "resumo": "Períodos clínicos do parto e uso do partograma para identificar distócias precocemente.",
     "revisado": false,
-    "fonte": "WHO Recommendations for Intrapartum Care for a Positive Childbirth Experience; FEBRASGO - Manual de Assistência ao Parto",
+    "fonte": "Ministério da Saúde — Diretriz Nacional de Assistência ao Parto Normal; FEBRASGO",
     "mnemonicos": [
       {
         "palavra": "DILATAÇÃO → EXPULSÃO → DEQUITAÇÃO",
@@ -2677,24 +2701,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Períodos clínicos do parto",
-        "conteudo": "Dilatação (do início do trabalho de parto até dilatação total), expulsivo (até o nascimento) e dequitação (até a saída da placenta), seguidos do quarto período de observação."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O trabalho de parto é dividido em três períodos clínicos: dilatação (do início das contrações regulares até dilatação cervical completa, subdividida em fase latente e fase ativa), expulsão (da dilatação completa até o nascimento) e dequitação (da saída do feto até a expulsão da placenta). O partograma é a representação gráfica da evolução da dilatação cervical e da descida da apresentação fetal ao longo do tempo, permitindo identificar precocemente desvios do padrão esperado de progressão do trabalho de parto."
       },
       {
-        "titulo": "Partograma",
-        "conteudo": "Ferramenta gráfica que acompanha a evolução da dilatação cervical e a descida da apresentação fetal ao longo do tempo, permitindo identificar distócias precocemente."
+        "titulo": "Quadro clínico",
+        "conteudo": "Contrações uterinas regulares e progressivamente mais frequentes e intensas, associadas a apagamento e dilatação cervical progressivos, caracterizam o trabalho de parto estabelecido — diferenciando-se do falso trabalho de parto (contrações irregulares, sem progressão cervical associada). A descida da apresentação fetal (avaliada pelos planos de DeLee ou de Hodge) deve progredir de forma concomitante à dilatação na fase ativa."
       },
       {
-        "titulo": "Linha de alerta e linha de ação",
-        "conteudo": "O cruzamento da curva de dilatação com a linha de alerta sinaliza necessidade de maior vigilância; o cruzamento da linha de ação indica necessidade de intervenção ativa."
+        "titulo": "Exame físico",
+        "conteudo": "O toque vaginal seriado avalia dilatação cervical, apagamento, variedade de posição e altura da apresentação fetal, sendo a base de dados registrada no partograma. Ausculta intermitente ou monitorização contínua da frequência cardíaca fetal, conforme o risco gestacional, complementa a vigilância do bem-estar fetal durante todo o trabalho de parto."
       },
       {
-        "titulo": "Manejo ativo do terceiro período",
-        "conteudo": "Uso profilático de ocitocina logo após o nascimento reduz significativamente o risco de hemorragia pós-parto."
+        "titulo": "Diagnóstico",
+        "conteudo": "O partograma, com suas linhas de alerta e ação, permite identificar objetivamente distocias (parada secundária da dilatação, fase ativa prolongada, período pélvico prolongado), situações que exigem reavaliação da conduta obstétrica. A curva de dilatação cervical na fase ativa deve progredir a uma velocidade mínima esperada; sua estagnação além de determinado tempo (definida pelas linhas de alerta/ação no partograma) sinaliza necessidade de intervenção (amniotomia, ocitocina, ou reavaliação da via de parto)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O manejo ativo do trabalho de parto (amniotomia e ocitocina quando indicadas por distocia) pode acelerar a progressão em casos de parada ou lentificação anormal. Analgesia de parto (peridural, entre outras modalidades) é oferecida conforme desejo da parturiente, sem contraindicação ao parto vaginal quando bem indicada e conduzida. Manobras específicas (Ritgen modificada para proteção perineal, manobras para distocia de ombro) são aplicadas conforme a necessidade durante o período expulsivo e o desprendimento fetal."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Parada secundária da dilatação ou sinais de desproporção cefalopélvica</span> exigem reavaliação imediata da via de parto."
+        "conteudo": "<span class=\"red-flag\">Parada secundária da dilatação ou desaceleração da frequência cardíaca fetal não recuperada durante o trabalho de parto</span> exige reavaliação imediata da conduta obstétrica, incluindo consideração de cesárea de urgência, pelo risco de sofrimento fetal agudo se a situação não for prontamente corrigida ou resolvida."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A interpretação do partograma (identificação de distocias pelas linhas de alerta/ação) é cobrança certa e recorrente, frequentemente cobrada através de gráficos para interpretação direta em questões de caso clínico. Os planos de DeLee/Hodge para avaliação da altura da apresentação fetal também são frequentemente exigidos."
       }
     ]
   },
@@ -2705,7 +2737,7 @@
     "titulo": "Diabetes Mellitus Gestacional (DMG)",
     "resumo": "Rastreio entre 24-28 semanas, critérios diagnósticos e sequência terapêutica.",
     "revisado": false,
-    "fonte": "FEBRASGO - Diabetes na Gestação; ADA Standards of Care in Diabetes-2026 (secao gestacao)",
+    "fonte": "FEBRASGO; Sociedade Brasileira de Diabetes; Ministério da Saúde — Gestação de Alto Risco",
     "mnemonicos": [
       {
         "palavra": "TOTG 75g — 24-28 SEMANAS",
@@ -2714,24 +2746,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Rastreio",
-        "conteudo": "TOTG 75g entre 24 e 28 semanas de gestação em todas as gestantes; rastreio precoce (1º trimestre) indicado na presença de fatores de risco (obesidade, história prévia de DMG, macrossomia prévia)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O diabetes mellitus gestacional resulta do aumento fisiológico da resistência insulínica ao longo da gestação (mediado por hormônios placentários contrarreguladores como o lactogênio placentário), que em algumas gestantes ultrapassa a capacidade compensatória das células beta pancreáticas, resultando em hiperglicemia. A hiperglicemia materna atravessa a placenta e estimula a produção fetal excessiva de insulina, hormônio com efeito anabólico/de crescimento, explicando a macrossomia fetal característica e suas complicações associadas."
       },
       {
-        "titulo": "Critérios diagnósticos",
-        "conteudo": "Diagnóstico confirmado quando um ou mais valores de glicemia (jejum, 1h ou 2h após sobrecarga) atingem os pontos de corte estabelecidos para gestação."
+        "titulo": "Quadro clínico",
+        "conteudo": "A maioria das gestantes é assintomática, sendo o diagnóstico feito por rastreamento laboratorial de rotina. Fatores de risco incluem obesidade, idade materna avançada, história familiar de diabetes, diabetes gestacional em gestação prévia e macrossomia fetal em gestação anterior. As complicações potenciais incluem macrossomia fetal (com maior risco de distocia de ombro e trauma no parto), polidrâmnio, e maior risco de pré-eclâmpsia."
       },
       {
-        "titulo": "Tratamento inicial",
-        "conteudo": "Orientação nutricional e atividade física regular são a primeira linha de tratamento, com monitorização domiciliar da glicemia capilar."
+        "titulo": "Exame físico",
+        "conteudo": "Altura uterina maior que o esperado para a idade gestacional pode sugerir macrossomia fetal ou polidrâmnio associados a diabetes gestacional não controlado. O exame físico geral geralmente não revela achados específicos, reforçando a importância do rastreamento laboratorial sistemático em todas as gestantes."
       },
       {
-        "titulo": "Tratamento farmacológico",
-        "conteudo": "Insulina é a droga de escolha quando dieta e atividade física não são suficientes para o controle glicêmico adequado."
+        "titulo": "Diagnóstico",
+        "conteudo": "O rastreamento é universal, recomendado entre 24 e 28 semanas de gestação (mais precocemente, ainda no primeiro trimestre, em gestantes de alto risco, para identificar diabetes pré-gestacional não diagnosticado previamente). O teste oral de tolerância à glicose com 75g é o método diagnóstico padrão, com valores de corte específicos para jejum, 1 hora e 2 horas — qualquer valor alterado já confirma o diagnóstico, diferente do critério fora da gestação que exige valores mais elevados."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Dieta e atividade física são a primeira linha de tratamento, controlando a glicemia na maioria das gestantes. Quando as metas glicêmicas não são atingidas com medidas não farmacológicas, insulina é o tratamento farmacológico de escolha (por não atravessar a barreira placentária); metformina é alternativa em casos selecionados, embora atravesse a placenta em quantidade mensurável, o que motiva cautela e preferência pela insulina em muitos protocolos. Monitorização fetal (ultrassonografia seriada para crescimento, avaliação de bem-estar fetal no terceiro trimestre) é intensificada nas gestantes com diabetes gestacional."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Macrossomia fetal e polidrâmnio</span> sugerem controle glicêmico inadequado e aumentam o risco de complicações no parto."
+        "conteudo": "Macrossomia fetal estimada (peso fetal muito acima do percentil esperado) em gestante com diabetes gestacional mal controlado aumenta significativamente o risco de distocia de ombro no parto vaginal, devendo ser considerada na decisão sobre via de parto e no planejamento assistencial do nascimento."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O protocolo de rastreamento universal entre 24-28 semanas com teste oral de tolerância à glicose de 75g, e seus valores de corte específicos, é cobrança certíssima e recorrente. A insulina como tratamento farmacológico de escolha na gestação (por não atravessar a placenta) também é ponto central e frequentemente exigido."
       }
     ]
   },
@@ -5350,7 +5390,7 @@
     "titulo": "Pré-Natal de Baixo e Alto Risco",
     "resumo": "Calendário mínimo de consultas, exames de rotina, cálculo de idade gestacional e critérios de encaminhamento ao alto risco.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Protocolo de Pré-Natal de Baixo Risco e Manual de Gestação de Alto Risco 2022; FEBRASGO",
+    "fonte": "Ministério da Saúde — Manual Técnico de Gestação de Alto Risco e Caderno de Atenção Básica ao Pré-Natal; FEBRASGO",
     "mnemonicos": [
       {
         "palavra": "6 consultas no mínimo",
@@ -5359,24 +5399,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Calendário de consultas e exames de rotina",
-        "conteudo": "No pré-natal de baixo risco, preconiza-se no mínimo 6 consultas (1 no primeiro trimestre, 2 no segundo, 3 no terceiro). Exames de rotina incluem tipagem sanguínea/Rh, hemograma, glicemia de jejum, sorologias (HIV, sífilis, hepatite B, toxoplasmose), urina tipo I e urocultura, repetidos conforme o trimestre."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O acompanhamento pré-natal visa identificar e mitigar riscos gestacionais através de consultas regulares, exames de rastreamento programados e educação em saúde, reconhecendo que a maioria das gestações evolui sem complicações significativas (baixo risco), enquanto uma parcela apresenta condições maternas ou fetais que exigem acompanhamento diferenciado em serviço de referência para gestação de alto risco."
       },
       {
-        "titulo": "Cálculo de idade gestacional e data provável do parto",
-        "conteudo": "Pela data da última menstruação (DUM) quando confiável, ou por ultrassonografia precoce (mais acurada quando realizada no primeiro trimestre). Regra de Naegele para a data provável do parto: somar 7 dias e 9 meses à DUM (ou subtrair 3 meses e somar 7 dias e 1 ano)."
+        "titulo": "Quadro clínico",
+        "conteudo": "A classificação de risco gestacional é feita já na primeira consulta e reavaliada continuamente, considerando fatores como idade materna extrema, comorbidades prévias (hipertensão, diabetes, cardiopatias), história obstétrica desfavorável (perdas gestacionais recorrentes, pré-eclâmpsia prévia) e intercorrências que surjam ao longo da gestação atual (hipertensão gestacional, diabetes gestacional, restrição de crescimento fetal)."
       },
       {
-        "titulo": "Critérios de alto risco gestacional",
-        "conteudo": "Condições clínicas prévias (hipertensão crônica, diabetes pré-gestacional, cardiopatias, doenças autoimunes), intercorrências da gestação atual (síndromes hipertensivas, diabetes gestacional, restrição de crescimento fetal, gestação múltipla) e fatores obstétricos prévios (cesáreas anteriores, prematuridade prévia, óbito fetal prévio) indicam encaminhamento a pré-natal especializado."
+        "titulo": "Exame físico",
+        "conteudo": "Aferição seriada de peso, pressão arterial e altura uterina (esta última comparada a curva padronizada por idade gestacional) compõe o exame físico obstétrico de rotina em cada consulta. Ausculta dos batimentos cardiofetais a partir de determinada idade gestacional confirma vitalidade fetal em cada visita."
       },
       {
-        "titulo": "Suplementação de rotina",
-        "conteudo": "Ácido fólico, idealmente iniciado antes da concepção e mantido no primeiro trimestre, para prevenção de defeitos de tubo neural. Sulfato ferroso a partir da 20ª semana na ausência de anemia diagnosticada, ou em dose terapêutica quando há anemia confirmada."
+        "titulo": "Diagnóstico",
+        "conteudo": "O calendário mínimo de exames de rastreamento inclui tipagem sanguínea e Coombs indireto (se Rh negativo), hemograma, glicemia de jejum, sorologias (sífilis, HIV, hepatite B e C, toxoplasmose), urina tipo I e urocultura, repetidos em momentos específicos ao longo da gestação conforme protocolo — a sífilis, em particular, deve ser rastreada com teste rápido idealmente em toda consulta de pré-natal disponível, dada a gravidade da sífilis congênita e a facilidade de tratamento quando detectada precocemente. Ultrassonografia obstétrica é recomendada minimamente uma vez em cada trimestre em gestação de baixo risco."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Suplementação de ácido fólico (idealmente iniciada antes da concepção, para prevenção de defeitos de tubo neural) e de ferro (a partir do segundo trimestre, para prevenção de anemia gestacional) são recomendações universais do pré-natal. Vacinação (dTpa a cada gestação, influenza) é recomendada dentro do calendário de pré-natal. Gestantes classificadas como alto risco devem ser encaminhadas a acompanhamento especializado, sem prejuízo da continuidade do vínculo com a atenção primária."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sangramento vaginal, diminuição da movimentação fetal, cefaleia intensa com sintomas visuais, ou edema súbito</span> em qualquer momento da gestação exigem avaliação obstétrica imediata, independentemente do calendário de consultas de rotina."
+        "conteudo": "Ausência de crescimento da altura uterina entre consultas consecutivas, ou discrepância significativa em relação à curva esperada para a idade gestacional, deve motivar investigação ultrassonográfica para restrição de crescimento fetal ou oligoâmnio, não devendo ser negligenciada como variação normal sem investigação apropriada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O calendário mínimo de exames e consultas do pré-natal, e os critérios que classificam uma gestação como alto risco, são cobrança certíssima e extremamente recorrente em provas de residência e concursos de saúde pública (ENAMED, SES-PE). A obrigatoriedade e a frequência do rastreamento de sífilis na gestação também são frequentemente exigidas dado seu impacto em saúde pública."
       }
     ]
   },
@@ -5387,7 +5435,7 @@
     "titulo": "Infecções no Ciclo Gravídico-Puerperal",
     "resumo": "Rastreamento e tratamento de ITU, toxoplasmose, sífilis e HIV na gestação para prevenção da transmissão vertical.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Protocolo Clínico de Transmissão Vertical de HIV, Sífilis e Hepatites Virais 2022; FEBRASGO",
+    "fonte": "Ministério da Saúde — Protocolos de Transmissão Vertical (Sífilis, HIV, Toxoplasmose); FEBRASGO",
     "mnemonicos": [
       {
         "palavra": "TORCH",
@@ -5396,24 +5444,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Infecção do trato urinário na gestação",
-        "conteudo": "A bacteriúria assintomática deve ser sempre tratada na gestação, pelo risco aumentado de pielonefrite e trabalho de parto prematuro. Cistite e pielonefrite seguem princípios semelhantes aos da população geral, com ajuste de antibióticos seguros na gestação."
+        "titulo": "Fisiopatologia",
+        "conteudo": "Diversas infecções podem ser transmitidas verticalmente da mãe para o feto, com mecanismos e momentos de maior risco variáveis: sífilis (transplacentária, em qualquer trimestre, com risco crescente conforme avança a gestação sem tratamento), toxoplasmose (transmissão transplacentária mais provável quando a infecção materna aguda ocorre mais tardiamente na gestação, embora a gravidade das sequelas fetais seja maior quando a infecção ocorre mais precocemente), HIV (transmissão possível intraútero, intraparto e pela amamentação) e infecção urinária (associada a maior risco de trabalho de parto prematuro quando não tratada adequadamente)."
       },
       {
-        "titulo": "Toxoplasmose gestacional",
-        "conteudo": "Rastreamento sorológico de rotina no pré-natal. A infecção aguda materna tem risco de transmissão vertical variável conforme a idade gestacional (maior transmissão, porém menor gravidade, quanto mais tardia na gestação). Tratamento com espiramicina (reduz transmissão) e, se infecção fetal confirmada, esquema tríplice (sulfadiazina, pirimetamina, ácido folínico)."
+        "titulo": "Quadro clínico",
+        "conteudo": "A maioria das infecções maternas relevantes para transmissão vertical pode ser assintomática ou oligossintomática na gestante, reforçando a importância do rastreamento sorológico sistemático programado no pré-natal, independentemente da presença de sintomas. Manifestações específicas de cada infecção seguem o padrão já descrito nos temas correspondentes de infectologia geral."
       },
       {
-        "titulo": "Sífilis na gestação",
-        "conteudo": "Rastreamento obrigatório em pelo menos duas ocasiões no pré-natal (idealmente primeiro e terceiro trimestre) e no momento do parto. A penicilina benzatina é o único tratamento comprovadamente eficaz para prevenir a sífilis congênita — o parceiro deve ser tratado simultaneamente."
+        "titulo": "Exame físico",
+        "conteudo": "O exame físico obstétrico geral frequentemente não revela achados específicos da infecção materna. Achados ultrassonográficos sugestivos de infecção congênita fetal (calcificações intracranianas, ventriculomegalia, hidropisia fetal, restrição de crescimento) podem ser identificados em exames de imagem de rotina ou direcionados diante de infecção materna confirmada."
       },
       {
-        "titulo": "HIV na gestação",
-        "conteudo": "Rastreamento no pré-natal com repetição no terceiro trimestre. A terapia antirretroviral combinada reduz drasticamente a transmissão vertical. A via de parto e a profilaxia do recém-nascido dependem da carga viral materna próxima ao parto."
+        "titulo": "Diagnóstico",
+        "conteudo": "O rastreamento sorológico programado no pré-natal (sífilis com teste rápido idealmente em toda consulta, HIV e toxoplasmose IgG/IgM no início e repetidos conforme protocolo, especialmente em gestantes suscetíveis à toxoplasmose) é a estratégia central de detecção precoce. Urocultura de rotina detecta bacteriúria assintomática, situação que deve sempre ser tratada na gestação (diferente da recomendação fora da gestação), pelo risco aumentado de progressão para pielonefrite e de complicações obstétricas."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Sífilis é tratada com penicilina benzatina (único tratamento comprovadamente eficaz para prevenir transmissão vertical, sem substituto seguro mesmo em caso de alergia relatada, que deve ser manejada por dessensibilização). Toxoplasmose aguda na gestação é tratada com espiramicina (reduz transmissão fetal, mas não trata infecção fetal já estabelecida) ou esquema combinado (sulfadiazina, pirimetamina, ácido folínico) quando há confirmação ou forte suspeita de infecção fetal já estabelecida. Gestantes vivendo com HIV recebem terapia antirretroviral ao longo de toda a gestação, com estratégias adicionais periparto (conforme carga viral) e orientação sobre substituição do aleitamento materno para prevenção da transmissão pós-natal. Bacteriúria assintomática e infecção urinária sintomática são sempre tratadas na gestação."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sífilis materna não tratada ou tratada inadequadamente</span> é a principal causa evitável de sífilis congênita — sempre confirmar o tratamento adequado da gestante E do parceiro antes do parto."
+        "conteudo": "<span class=\"red-flag\">Gestante com sífilis não tratada ou tratada com esquema/tempo inadequado antes do parto</span> caracteriza tratamento materno inadequado, exigindo investigação e tratamento do recém-nascido para sífilis congênita, independentemente de o bebê apresentar sinais clínicos evidentes ao nascimento."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O tratamento obrigatório de bacteriúria assintomática na gestação (diferente da recomendação de não tratar fora da gestação) é cobrança certa e recorrente. A obrigatoriedade da penicilina benzatina para sífilis gestacional (com dessensibilização em caso de alergia, jamais substituição) permanece um dos pontos mais importantes de toda a obstetrícia/infectologia em provas de residência."
       }
     ]
   },
@@ -5424,7 +5480,7 @@
     "titulo": "Hemorragias da 2ª Metade da Gestação",
     "resumo": "Diferenciação entre descolamento prematuro de placenta, placenta prévia e rotura uterina.",
     "revisado": false,
-    "fonte": "FEBRASGO — Protocolo de Hemorragias da Segunda Metade da Gestação; Ministério da Saúde — Manual de Gestação de Alto Risco",
+    "fonte": "FEBRASGO; Ministério da Saúde — Gestação de Alto Risco",
     "mnemonicos": [
       {
         "palavra": "Dolorosa descola, indolor é prévia",
@@ -5433,24 +5489,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Descolamento prematuro de placenta (DPP)",
-        "conteudo": "Separação da placenta normalmente inserida antes do parto, associada a hipertensão/pré-eclâmpsia, trauma abdominal e uso de cocaína. Quadro clássico: dor abdominal súbita e intensa, sangramento vaginal (pode ser oculto), hipertonia uterina (\"útero em madeira\") e sofrimento fetal agudo — emergência obstétrica que geralmente exige interrupção imediata da gestação."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O descolamento prematuro de placenta (DPP) resulta da separação da placenta normalmente inserida antes do parto, geralmente por hemorragia na decídua basal, fortemente associado à hipertensão materna (incluindo pré-eclâmpsia) como principal fator de risco. A placenta prévia resulta da implantação placentária total ou parcialmente sobre o orifício interno do colo uterino, predispondo a sangramento à medida que o segmento inferior uterino se distende no terceiro trimestre. A rotura uterina, mais rara, ocorre predominantemente em úteros com cicatriz cirúrgica prévia (cesárea anterior) durante o trabalho de parto."
       },
       {
-        "titulo": "Placenta prévia",
-        "conteudo": "Implantação da placenta total ou parcialmente sobre o orifício interno do colo uterino. Sangramento vaginal indolor, de início súbito, geralmente sem hipertonia uterina, tipicamente recorrente e progressivo ao longo da gestação. Diagnóstico por ultrassonografia — o toque vaginal é contraindicado até excluir placenta prévia. A via de parto é definida pela relação entre a placenta e o orifício cervical interno."
+        "titulo": "Quadro clínico",
+        "conteudo": "DPP classicamente causa sangramento vaginal (podendo ser oculto/retroplacentário, sem exteriorização) associado a dor abdominal súbita e intensa, hipertonia uterina e sofrimento fetal agudo. Placenta prévia causa sangramento vaginal indolor, geralmente de início súbito, vermelho vivo, recorrente ao longo da gestação, sem hipertonia uterina associada — essa ausência de dor é o elemento mais valorizado na diferenciação clínica entre as duas condições. Rotura uterina manifesta-se com dor abdominal súbita e intensa durante o trabalho de parto, frequentemente com cessação abrupta das contrações e alteração do padrão de frequência cardíaca fetal."
       },
       {
-        "titulo": "Rotura uterina",
-        "conteudo": "Solução de continuidade da parede uterina, mais comum em úteros com cicatriz prévia (cesárea anterior) submetidos a trabalho de parto, especialmente com uso de ocitocina. Quadro de dor abdominal súbita e intensa, parada da atividade uterina, sofrimento fetal grave e sinais de choque hipovolêmico — emergência cirúrgica."
+        "titulo": "Exame físico",
+        "conteudo": "Útero hipertônico, doloroso à palpação (\"em madeira\"), é achado característico do DPP. Placenta prévia não deve ser investigada por toque vaginal (risco de precipitar hemorragia maciça a partir do tecido placentário friável cobrindo o orifício cervical) — o diagnóstico e a conduta devem se basear em ultrassonografia. Na rotura uterina, pode haver perda da apresentação fetal previamente encaixada e fácil palpação de partes fetais diretamente através da parede abdominal."
       },
       {
-        "titulo": "Diferenciação inicial",
-        "conteudo": "Dor intensa com hipertonia sugere DPP. Sangramento indolor e recorrente sugere placenta prévia. Dor súbita com perda de dinâmica uterina em útero cicatrizado sugere rotura uterina."
+        "titulo": "Diagnóstico",
+        "conteudo": "DPP é diagnóstico predominantemente clínico (a ultrassonografia tem sensibilidade limitada para detectar o hematoma retroplacentário, podendo ser normal mesmo em descolamentos significativos). Placenta prévia é diagnosticada por ultrassonografia (transvaginal, com segurança e maior acurácia que a suprapúbica, mesmo na presença de sangramento ativo). Rotura uterina é diagnóstico predominantemente clínico intraparto, frequentemente confirmado apenas na laparotomia de urgência."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "DPP com comprometimento fetal ou materno significativo exige interrupção imediata da gestação, geralmente por cesárea de urgência. Placenta prévia sintomática com sangramento significativo ou próxima ao termo geralmente indica cesárea eletiva/de urgência conforme gravidade e idade gestacional, sendo a via vaginal contraindicada quando a placenta cobre total ou parcialmente o orifício cervical interno. Rotura uterina é emergência cirúrgica absoluta, com laparotomia imediata para controle da hemorragia e resolução do parto, associada a reparo ou histerectomia conforme extensão da lesão."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">O toque vaginal é contraindicado</span> diante de sangramento da segunda metade da gestação até que a placenta prévia seja excluída por ultrassonografia, pelo risco de provocar hemorragia maciça."
+        "conteudo": "<span class=\"red-flag\">NUNCA realizar toque vaginal em gestante com sangramento de segunda metade da gestação antes de excluir placenta prévia por ultrassonografia</span> — essa é uma das regras de segurança mais importantes e mais cobradas de toda a obstetrícia, pelo risco de precipitar hemorragia catastrófica a partir do tecido placentário friável."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre DPP (dor intensa, hipertonia, sangramento pode ser oculto) e placenta prévia (indolor, sem hipertonia, sangramento visível recorrente) é cobrança certíssima. A contraindicação absoluta de toque vaginal antes de excluir placenta prévia por imagem também é um dos pontos de segurança mais valorizados e mais recorrentes em toda a especialidade."
       }
     ]
   },
@@ -5461,7 +5525,7 @@
     "titulo": "Cardiotocografia e Avaliação do Bem-Estar Fetal",
     "resumo": "Interpretação de acelerações e desacelerações, classificação em categorias e medidas de ressuscitação intrauterina.",
     "revisado": false,
-    "fonte": "FEBRASGO — Diretriz de Avaliação da Vitalidade Fetal Intraparto; ACOG Practice Bulletin on Intrapartum Fetal Heart Rate Monitoring",
+    "fonte": "FEBRASGO; ACOG Practice Bulletin on Intrapartum Fetal Heart Rate Monitoring",
     "mnemonicos": [
       {
         "palavra": "Tardia = Tardio demais",
@@ -5470,24 +5534,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Parâmetros avaliados",
-        "conteudo": "Frequência cardíaca fetal basal (normal 110-160 bpm), variabilidade (oscilação da linha de base — sua ausência/redução é o parâmetro mais preocupante para hipóxia fetal), acelerações transitórias (associadas a bem-estar fetal) e desacelerações (classificadas conforme a relação temporal com as contrações uterinas)."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A cardiotocografia avalia a frequência cardíaca fetal e sua relação com as contrações uterinas, refletindo indiretamente a oxigenação fetal e a integridade do sistema nervoso autônomo fetal. Padrões normais (variabilidade preservada, acelerações presentes) refletem boa oxigenação e integridade neurológica fetal; padrões anormais (desacelerações tardias recorrentes, variabilidade ausente/mínima) sugerem hipóxia fetal em curso, exigindo intervenção para evitar dano neurológico permanente ou óbito fetal."
       },
       {
-        "titulo": "Tipos de desaceleração",
-        "conteudo": "Precoces: espelham a contração uterina, geralmente por compressão da cabeça fetal — achado benigno. Variáveis: início e duração variáveis em relação à contração, por compressão de cordão — podem ser preocupantes se recorrentes e graves. Tardias: início após o pico da contração, sugerem insuficiência uteroplacentária e são as mais preocupantes para hipóxia fetal."
+        "titulo": "Quadro clínico",
+        "conteudo": "A avaliação do bem-estar fetal é realizada tanto no período anteparto (gestações de alto risco, terceiro trimestre) quanto durante o trabalho de parto (monitorização intraparto), buscando identificar precocemente sinais de comprometimento da oxigenação fetal antes que ocorra dano irreversível."
       },
       {
-        "titulo": "Classificação da cardiotocografia",
-        "conteudo": "Categoria I (normal — tranquilizadora, sem necessidade de intervenção imediata). Categoria II (indeterminada — requer vigilância e reavaliação, pode necessitar medidas de ressuscitação intrauterina). Categoria III (anormal — associada a estado ácido-base fetal anormal, exige intervenção imediata, incluindo possível interrupção da gestação)."
+        "titulo": "Exame físico",
+        "conteudo": "A ausculta intermitente dos batimentos cardiofetais (com sonar Doppler) é método simples e amplamente utilizado em gestações de baixo risco durante o trabalho de parto. A monitorização eletrônica contínua (cardiotocografia) é preferida em gestações de alto risco ou diante de alterações identificadas na ausculta intermitente."
       },
       {
-        "titulo": "Medidas de ressuscitação intrauterina",
-        "conteudo": "Mudança de decúbito materno (lateral esquerdo), correção de hipotensão materna, suspensão de ocitocina se em uso, oxigenioterapia materna e hidratação — tentativas de reverter um padrão categoria II/III antes de decidir por parto operatório de urgência."
+        "titulo": "Diagnóstico",
+        "conteudo": "A cardiotocografia é classificada em categorias (I, II, III conforme a nomenclatura mais usada) baseadas em linha de base, variabilidade, presença de acelerações e tipo/padrão de desacelerações: categoria I é normal e tranquilizadora; categoria III é anormal, associada a alto risco de acidose fetal, exigindo intervenção imediata; categoria II é indeterminada, exigindo reavaliação e medidas de ressuscitação intrauterina antes de decisão definitiva. Desacelerações tardias (início após o pico da contração, refletindo insuficiência uteroplacentária) são mais preocupantes que desacelerações precoces (sincronizadas com a contração, refletindo compressão cefálica benigna) ou variáveis (relacionadas a compressão de cordão)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Diante de padrão não tranquilizador, medidas de ressuscitação intrauterina são aplicadas primeiro: mudança de decúbito materno (lateral esquerdo, aliviando compressão de veia cava), suspensão de ocitocina se em uso, hidratação venosa, oxigênio suplementar materno e, se aplicável, correção de hipotensão (por exemplo, pós-analgesia peridural). Persistência do padrão anormal (categoria III ou categoria II refratária às medidas) apesar dessas intervenções indica necessidade de resolução urgente do parto, geralmente por cesárea de emergência."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Desacelerações tardias recorrentes associadas a variabilidade mínima ou ausente</span> (padrão categoria III) indicam sofrimento fetal significativo e exigem interrupção imediata da gestação pela via mais rápida disponível."
+        "conteudo": "<span class=\"red-flag\">Desacelerações tardias recorrentes associadas a variabilidade ausente/mínima (padrão categoria III)</span> indicam sofrimento fetal agudo com alto risco de acidose e dano neurológico, exigindo resolução imediata do parto — as medidas de ressuscitação intrauterina não devem atrasar a decisão de cesárea de urgência diante desse padrão."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre desacelerações precoces (benignas, compressão cefálica), variáveis (compressão de cordão) e tardias (mais preocupantes, insuficiência uteroplacentária) é cobrança certíssima e um dos temas mais recorrentes de toda a obstetrícia, frequentemente através de traçados de cardiotocografia para interpretação direta. A sequência de medidas de ressuscitação intrauterina antes da decisão cirúrgica também é frequentemente exigida."
       }
     ]
   },
@@ -8500,7 +8572,7 @@
     "titulo": "Trabalho de Parto Prematuro, Rotura Prematura de Membranas e Gestação Múltipla",
     "resumo": "Tocólise e corticoide antenatal no TPP, o dilema prematuridade x infecção na RPM, e os riscos específicos da gestação gemelar.",
     "revisado": false,
-    "fonte": "FEBRASGO — Protocolo de Trabalho de Parto Prematuro e Rotura Prematura de Membranas; ACOG Practice Bulletin on Multifetal Gestations",
+    "fonte": "FEBRASGO; Ministério da Saúde — Gestação de Alto Risco; ACOG Practice Bulletin on Preterm Labor and PPROM",
     "mnemonicos": [
       {
         "palavra": "RPM: quanto mais cedo, mais risco",
@@ -8509,24 +8581,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Trabalho de parto prematuro",
-        "conteudo": "Contrações uterinas regulares associadas a modificação cervical antes de 37 semanas. Fatores de risco: TPP anterior, gestação múltipla, infecção urinária/vaginal, colo curto e polidrâmnio. A tocólise pode postergar o parto o suficiente para administrar corticoide antenatal."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O trabalho de parto prematuro (antes de 37 semanas) tem etiologia multifatorial, incluindo infecção intra-amniótica subclínica, sobredistensão uterina (gestação múltipla, polidrâmnio) e insuficiência cervical. A rotura prematura de membranas ovulares (RPM) resulta do rompimento das membranas antes do início do trabalho de parto, frequentemente associada a infecção ascendente (corioamnionite) como causa e/ou consequência. A gestação múltipla, especialmente monocoriônica, tem risco aumentado de complicações específicas (síndrome de transfusão feto-fetal) além do risco geral aumentado de prematuridade compartilhado por todas as gestações múltiplas."
       },
       {
-        "titulo": "Rotura prematura de membranas",
-        "conteudo": "Rotura das membranas antes do início do trabalho de parto; antes de 37 semanas é chamada RPM pré-termo. Principal risco é a corioamnionite e, se muito precoce, oligoâmnio grave com hipoplasia pulmonar. Conduta pondera prematuridade x infecção, com antibioticoprofilaxia e corticoide antenatal."
+        "titulo": "Quadro clínico",
+        "conteudo": "Trabalho de parto prematuro manifesta-se com contrações uterinas regulares associadas a modificação cervical antes de 37 semanas. RPM manifesta-se com perda súbita de líquido claro pela vagina, podendo ser confundida com incontinência urinária ou aumento de secreção vaginal fisiológica, exigindo confirmação objetiva. Gestação múltipla frequentemente se manifesta com altura uterina desproporcionalmente maior que o esperado para a idade gestacional."
       },
       {
-        "titulo": "Corioamnionite",
-        "conteudo": "Infecção intra-amniótica com febre materna associada a taquicardia fetal/materna, líquido amniótico fétido e leucocitose — indicação de antibioticoterapia e interrupção da gestação independentemente da idade gestacional."
+        "titulo": "Exame físico",
+        "conteudo": "Exame especular cuidadoso (evitando toque vaginal digital repetido, que aumenta risco infeccioso, especialmente na RPM) permite observar saída de líquido amniótico pelo orifício cervical e avaliar dilatação/apagamento cervical no trabalho de parto prematuro. Sinais de corioamnionite (febre materna, taquicardia fetal, útero doloroso, líquido amniótico fétido) devem ser ativamente pesquisados em toda RPM."
       },
       {
-        "titulo": "Gestação múltipla",
-        "conteudo": "Gestação de maior risco, com maiores taxas de prematuridade, restrição de crescimento, síndromes hipertensivas e hemorragia pós-parto. A gestação monocoriônica tem risco adicional de síndrome de transfusão feto-fetal, exigindo acompanhamento ultrassonográfico mais frequente."
+        "titulo": "Diagnóstico",
+        "conteudo": "RPM é confirmada por visualização direta de líquido no exame especular, teste de cristalização em lâmina (arborização em samambaia), ou testes bioquímicos específicos (detecção de proteínas do líquido amniótico) quando o diagnóstico clínico é duvidoso. Trabalho de parto prematuro é diagnosticado por contrações regulares associadas a modificação cervical documentada objetivamente (não apenas contrações isoladas sem modificação cervical, que não configuram trabalho de parto verdadeiro). Gestação múltipla é diagnosticada e caracterizada (corionicidade, amnionicidade) por ultrassonografia, idealmente já no primeiro trimestre, quando essa determinação é mais precisa."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Trabalho de parto prematuro é manejado com tocólise (para postergar o parto por tempo suficiente para completar corticoterapia antenatal), corticoide antenatal (acelera a maturação pulmonar fetal, reduzindo síndrome do desconforto respiratório neonatal) e sulfato de magnésio para neuroproteção fetal em idades gestacionais muito precoces. RPM antes do termo é manejada conforme idade gestacional: conduta expectante com antibioticoprofilaxia (prolongando o período de latência e reduzindo infecção) em gestações muito prematuras sem sinais de infecção; resolução do parto diante de corioamnionite estabelecida, independentemente da idade gestacional. Gestação múltipla exige vigilância mais intensiva, com atenção especial a complicações específicas conforme a corionicidade."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Febre materna com taquicardia fetal e líquido amniótico fétido</span> em gestante com bolsa rota caracteriza corioamnionite — exige antibioticoterapia imediata e resolução da gestação."
+        "conteudo": "<span class=\"red-flag\">Febre materna, taquicardia fetal e útero doloroso em gestante com RPM</span> caracteriza corioamnionite, indicação absoluta de resolução do parto independentemente da idade gestacional, associada a antibioticoterapia — a conduta expectante é contraindicada diante de infecção intra-amniótica estabelecida, mesmo em prematuridade extrema."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A indicação de corticoide antenatal para maturação pulmonar em trabalho de parto prematuro é cobrança certíssima. A conduta expectante versus resolução imediata na RPM pré-termo, dependendo da presença de sinais de corioamnionite (que sempre indicam resolução independentemente da idade gestacional), também é ponto central e frequentemente exigido."
       }
     ]
   },
@@ -8537,7 +8617,7 @@
     "titulo": "Puerpério Patológico: Infecção Puerperal e Mastite",
     "resumo": "Endometrite puerperal como principal causa de febre pós-parto e o manejo da mastite sem interromper a amamentação.",
     "revisado": false,
-    "fonte": "FEBRASGO — Protocolo de Infecção Puerperal; ACOG Practice Bulletin on Postpartum Complications",
+    "fonte": "FEBRASGO; Ministério da Saúde — Manual de Atenção ao Puerpério",
     "mnemonicos": [
       {
         "palavra": "Amamentar não piora a mastite",
@@ -8546,24 +8626,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Endometrite puerperal",
-        "conteudo": "Principal causa de febre puerperal, mais comum após cesariana. Febre associada a dor abdominal/pélvica, lóquios fétidos e subinvolução uterina. Tratamento com antibioticoterapia de amplo espectro cobrindo flora polimicrobiana."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A infecção puerperal (endometrite) resulta da ascensão de flora vaginal/cervical para a cavidade uterina no período pós-parto, favorecida por manipulação obstétrica, trabalho de parto prolongado, rotura prematura de membranas e cesárea (fator de risco mais significativo comparado ao parto vaginal). A mastite lactacional resulta da estase láctea associada a fissuras mamilares que permitem entrada de bactérias da pele/orofaringe do lactente (Staphylococcus aureus é o agente mais comum), causando infecção do parênquima mamário."
       },
       {
-        "titulo": "Outras causas de febre puerperal",
-        "conteudo": "Infecção de sítio cirúrgico, infecção do trato urinário, mastite, tromboflebite pélvica séptica e complicações tromboembólicas — a investigação sistemática da origem da febre é essencial."
+        "titulo": "Quadro clínico",
+        "conteudo": "Endometrite puerperal manifesta-se com febre, dor abdominal baixa, lóquios fétidos e subinvolução uterina, tipicamente nos primeiros dias após o parto. Mastite lactacional manifesta-se com dor mamária localizada, associada a área de endurecimento, hiperemia e calor local, com febre e mal-estar sistêmico em graus variáveis conforme a intensidade da infecção."
       },
       {
-        "titulo": "Mastite puerperal",
-        "conteudo": "Infecção do parênquima mamário durante a lactação, geralmente por Staphylococcus aureus, favorecida por fissura mamilar e estase láctea. Tratamento com antibiótico associado à manutenção do esvaziamento da mama."
+        "titulo": "Exame físico",
+        "conteudo": "Útero subinvoluído (maior que o esperado para o tempo pós-parto decorrido) e doloroso à palpação, associado a lóquios de odor fétido, sugere endometrite. Na mastite, área mamária localizada com sinais flogísticos evidentes (calor, rubor, edema, dor) é o achado central; a presença de flutuação sugere abscesso mamário já estabelecido, complicação que exige drenagem além do antibiótico."
       },
       {
-        "titulo": "Subinvolução uterina",
-        "conteudo": "Útero que não involui no ritmo esperado, associado a sangramento puerperal persistente/tardio — pode indicar retenção de restos placentários ou infecção subjacente."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico de ambas as condições é predominantemente clínico. Hemograma pode mostrar leucocitose com desvio à esquerda em ambas as condições. Ultrassonografia pode ser útil na endometrite para avaliar retenção de restos placentários associada (fator perpetuador da infecção que exige tratamento adicional específico) ou na mastite para identificar coleção sugestiva de abscesso quando há dúvida ao exame físico."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Endometrite puerperal é tratada com antibioticoterapia de amplo espectro cobrindo flora polimicrobiana (aeróbios e anaeróbios), geralmente endovenosa inicialmente, associada a curetagem uterina se houver retenção de restos placentários identificada. Mastite lactacional é tratada com antibiótico (cobrindo Staphylococcus aureus), analgesia, e manutenção da amamentação/ordenha do leite (a interrupção da amamentação não é necessária nem recomendada na maioria dos casos, sendo inclusive benéfica para resolução da estase láctea que perpetua o quadro); abscesso mamário estabelecido exige drenagem, não respondendo a antibiótico isolado."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Febre puerperal com útero amolecido, doloroso e lóquios fétidos</span> caracteriza endometrite puerperal — exige antibioticoterapia imediata de amplo espectro."
+        "conteudo": "<span class=\"red-flag\">Febre puerperal persistente apesar de antibioticoterapia adequada, associada a subinvolução uterina importante</span> deve motivar investigação de retenção de restos placentários ou coleção pélvica (abscesso), condições que não respondem a antibiótico isolado e exigem intervenção adicional (curetagem ou drenagem, conforme o caso)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A recomendação de manter a amamentação durante o tratamento de mastite (não suspender, pois a estase láctea perpetua a infecção) é cobrança certa e frequentemente testada como pegadinha, já que a intuição de muitos candidatos é suspender a amamentação erroneamente. A cesárea como principal fator de risco para endometrite puerperal (comparada ao parto vaginal) também é frequentemente exigida."
       }
     ]
   },
