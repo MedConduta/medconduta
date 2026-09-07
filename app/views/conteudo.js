@@ -150,7 +150,7 @@ export async function renderLista(container) {
 function renderAreaBox({ area, categorias }) {
   const total = categorias.reduce((acc, c) => acc + c.temas.length, 0);
   return `
-    <details class="card content-area" open>
+    <details class="card content-area">
       <summary class="content-area__title">${escapeHtml(area)} <span class="content-area__count">${total}</span></summary>
       ${categorias.map(renderCategoriaGroup).join("")}
     </details>
