@@ -726,7 +726,7 @@
     "titulo": "Vigilância Epidemiológica e Notificação Compulsória",
     "resumo": "Fluxo de notificação compulsória e papel da vigilância epidemiológica no SUS.",
     "revisado": false,
-    "fonte": "Ministerio da Saude - Guia de Vigilancia em Saude; Lei no 6.259/1975 (Notificacao Compulsoria)",
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Lei 6.259/1975 (Sistema Nacional de Vigilância Epidemiológica)",
     "mnemonicos": [
       {
         "palavra": "SINAN",
@@ -735,20 +735,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Conceito e objetivo",
-        "conteudo": "A vigilância epidemiológica é o conjunto de ações que visa detectar, investigar e controlar doenças e agravos à saúde da população, orientando medidas de prevenção e controle no SUS."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "A vigilância epidemiológica é o conjunto de ações que proporcionam o conhecimento, a detecção e a prevenção de qualquer mudança nos fatores determinantes e condicionantes da saúde individual e coletiva, com finalidade de recomendar e adotar medidas de prevenção e controle de doenças e agravos. A notificação compulsória é o instrumento central desse sistema, exigindo comunicação obrigatória à autoridade sanitária de determinadas doenças/agravos previstos em lista oficial, mesmo diante de suspeita (não sendo necessário aguardar confirmação diagnóstica definitiva para notificar)."
       },
       {
-        "titulo": "Fluxo da notificação compulsória",
-        "conteudo": "A ficha de notificação é preenchida pela unidade de saúde que identifica o caso suspeito ou confirmado e segue para a vigilância epidemiológica municipal, estadual e, quando aplicável, federal, alimentando o SINAN."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "As doenças e agravos de notificação compulsória são classificados por prioridade e prazo de notificação: notificação imediata (em até 24 horas, para doenças de alto potencial de disseminação/gravidade, como sarampo, febre amarela, meningite meningocócica) e notificação semanal (para doenças de menor urgência epidemiológica imediata, mas ainda relevantes para monitorização, como tuberculose, hanseníase)."
       },
       {
-        "titulo": "Notificação imediata x semanal",
-        "conteudo": "Doenças de notificação imediata (até 24h da suspeita) incluem agravos com potencial de disseminação rápida ou risco de surto; a maioria dos demais agravos de notificação compulsória segue periodicidade semanal."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "A investigação epidemiológica de um surto ou caso notificado busca identificar a fonte de infecção, o modo de transmissão, e os fatores de risco associados, orientando medidas de controle direcionadas e específicas (bloqueio vacinal, isolamento, tratamento de contactantes, conforme a doença). A curva epidêmica (distribuição de casos ao longo do tempo) é ferramenta gráfica que auxilia a caracterizar o padrão do surto (fonte comum versus propagação pessoa a pessoa, por exemplo) e orientar a investigação."
       },
       {
-        "titulo": "Importância da agilidade",
-        "conteudo": "O atraso na notificação compromete a capacidade de resposta rápida a surtos e epidemias, prejudicando a adoção oportuna de medidas de controle."
+        "titulo": "Interpretação",
+        "conteudo": "A notificação compulsória não exige certeza diagnóstica — a suspeita clínica compatível com a definição de caso de determinada doença já é suficiente e obrigatória para notificação, especialmente nas doenças de notificação imediata, onde o objetivo é permitir resposta rápida de saúde pública mesmo antes da confirmação laboratorial definitiva, que pode demorar dias a semanas."
+      },
+      {
+        "titulo": "Aplicação na Prática",
+        "conteudo": "O profissional de saúde que atende um caso suspeito de doença de notificação compulsória tem o dever legal de notificar, independentemente de o paciente estar sendo tratado em serviço público ou privado — a notificação é obrigação profissional individual do médico assistente (ou de qualquer profissional de saúde que identifique o caso), e não uma atribuição exclusivamente institucional."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Aguardar confirmação laboratorial definitiva antes de notificar uma doença de notificação compulsória imediata (como sarampo ou meningite) é erro grave e frequentemente cobrado como conduta incorreta — o atraso na notificação compromete a resposta oportuna de saúde pública e o controle de possível surto em curso na comunidade."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A obrigatoriedade de notificar diante de suspeita clínica (sem aguardar confirmação laboratorial) é cobrança certíssima, especialmente para doenças de notificação imediata. A lista de doenças de notificação compulsória (e seus respectivos prazos, imediata versus semanal) também é frequentemente exigida, exigindo conhecimento memorizado das principais doenças em cada categoria."
       }
     ]
   },
@@ -1389,7 +1401,7 @@
     "titulo": "Princípios do SUS e Redes de Atenção à Saúde",
     "resumo": "Princípios doutrinários e organizativos do SUS e organização das Redes de Atenção à Saúde (RAS).",
     "revisado": false,
-    "fonte": "Lei no 8.080/1990 e Lei no 8.142/1990 (Leis Organicas da Saude); Ministerio da Saude - Politica Nacional de Atencao Basica",
+    "fonte": "Constituição Federal (Art. 196-200); Lei 8.080/1990; Lei 8.142/1990; Decreto 7.508/2011",
     "mnemonicos": [
       {
         "palavra": "UEI + RDP",
@@ -1398,32 +1410,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Princípios doutrinários",
-        "conteudo": "Universalidade (acesso garantido a todos), Equidade (tratar desigualmente os desiguais, priorizando quem mais precisa) e Integralidade (atenção que considera a pessoa como um todo, do preventivo ao curativo)."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "O SUS é fundamentado em princípios doutrinários — universalidade (saúde como direito de todos, dever do Estado, sem restrição de acesso), integralidade (atenção que abrange promoção, prevenção, tratamento e reabilitação, considerando o indivíduo em sua totalidade biopsicossocial) e equidade (tratar desigualmente os desiguais, direcionando mais recursos a quem tem maior necessidade, para reduzir iniquidades em saúde) — e princípios organizativos — descentralização (com direção única em cada esfera de governo), regionalização/hierarquização (organização em níveis crescentes de complexidade) e participação social (através dos Conselhos e Conferências de Saúde)."
       },
       {
-        "titulo": "Princípios organizativos",
-        "conteudo": "Regionalização e hierarquização (organização em níveis de complexidade crescente e áreas de abrangência), descentralização (gestão compartilhada entre União, estados e municípios) e participação social (controle social por meio de conselhos e conferências de saúde)."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "As Normas Operacionais Básicas (NOBs, década de 1990) e as Normas Operacionais de Assistência à Saúde (NOAS, anos 2000) regulamentaram progressivamente a operacionalização do SUS, definindo responsabilidades de cada esfera de gestão e mecanismos de habilitação de municípios, antes da consolidação trazida pelo Decreto nº 7.508/2011, que regulamentou a Lei 8.080/1990."
       },
       {
-        "titulo": "Redes de Atenção à Saúde (RAS)",
-        "conteudo": "A Atenção Primária à Saúde atua como ordenadora do cuidado e porta de entrada preferencial do sistema, coordenando o fluxo de referência e contrarreferência entre os níveis de atenção."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "O Decreto 7.508/2011 formalizou conceitos centrais da organização atual do sistema: a Região de Saúde (espaço geográfico contínuo com identidade cultural/social/econômica e redes de comunicação/infraestrutura compartilhadas), a Rede de Atenção à Saúde (RAS), o Contrato Organizativo de Ação Pública da Saúde (COAP, instrumento de pactuação entre entes federativos) e a Relação Nacional de Ações e Serviços de Saúde (RENASES) e de Medicamentos Essenciais (RENAME)."
       },
       {
-        "titulo": "Níveis de atenção",
-        "conteudo": "Atenção primária (baixa complexidade, alta capilaridade), secundária (média complexidade, ambulatórios especializados) e terciária (alta complexidade, hospitais de referência)."
+        "titulo": "Interpretação",
+        "conteudo": "O financiamento tripartite do SUS (União, estados e municípios, cada um com responsabilidades de aporte financeiro definidas em lei) e as transferências fundo a fundo (repasse direto do Fundo Nacional de Saúde aos fundos estaduais/municipais, sem necessidade de convênios específicos para cada repasse) são mecanismos que buscam viabilizar a descentralização com autonomia de gestão local, mantendo direção única em cada esfera."
       },
       {
-        "titulo": "Ponto de atenção",
-        "conteudo": "A fragmentação do cuidado entre os níveis de atenção, sem coordenação adequada pela Atenção Primária, compromete a integralidade e a continuidade do cuidado ao paciente."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "Os Conselhos de Saúde (paritários entre usuários e demais segmentos — gestores, profissionais, prestadores) e as Conferências de Saúde (periódicas, avaliando a situação e propondo diretrizes) são os instrumentos formais de participação e controle social previstos na Lei 8.142/1990, garantindo que a população tenha voz institucionalizada na formulação e no controle da execução da política de saúde em cada esfera de governo."
       },
       {
-        "titulo": "Histórico e financiamento",
-        "conteudo": "O SUS foi instituído pela Constituição Federal de 1988 e regulamentado pelas Leis Orgânicas da Saúde: Lei 8.080/1990 (organização, funcionamento e atribuições dos serviços de saúde) e Lei 8.142/1990 (participação social — Conferências e Conselhos de Saúde — e transferências intergovernamentais de recursos, os repasses \"fundo a fundo\"). O financiamento é tripartite (União, estados e municípios), com piso mínimo constitucional (art. 198 da CF). A Emenda Constitucional 95/2016 havia congelado por 20 anos o gasto federal em saúde, mas foi revogada pelo Novo Arcabouço Fiscal (Lei Complementar 200/2023), que retomou o piso federal em 15% da Receita Corrente Líquida da União."
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Confundir universalidade (acesso garantido a todos, sem exceção) com uniformidade (tratamento idêntico a todos, independente da necessidade) é erro conceitual frequente — o princípio da equidade justamente complementa a universalidade, reconhecendo que necessidades desiguais requerem respostas desiguais e proporcionais para alcançar resultados mais justos em saúde."
       },
       {
-        "titulo": "NOB, NOAS e o Decreto 7.508/2011",
-        "conteudo": "As Normas Operacionais Básicas (NOBs, década de 1990) e as Normas Operacionais de Assistência à Saúde (NOAS, anos 2000) regulamentaram progressivamente a operacionalização do SUS — definindo responsabilidades de cada esfera de gestão, mecanismos de habilitação de municípios e regionalização da assistência, antes da consolidação trazida pelo Decreto nº 7.508/2011. Esse decreto regulamentou a Lei 8.080/1990 e formalizou conceitos centrais da organização atual do sistema: a Região de Saúde, a Rede de Atenção à Saúde, o Contrato Organizativo de Ação Pública da Saúde (COAP) e a Relação Nacional de Ações e Serviços de Saúde (RENASES) e de Medicamentos Essenciais (RENAME)."
+        "titulo": "Dicas de prova",
+        "conteudo": "Os princípios doutrinários (universalidade, integralidade, equidade) e organizativos (descentralização, regionalização, participação social) do SUS são cobrança certíssima e extremamente recorrente em praticamente toda prova de saúde pública e residência médica no Brasil, especialmente ENAMED e concursos de secretaria de saúde (como SES-PE). Os conceitos trazidos pelo Decreto 7.508/2011 (Região de Saúde, RAS, COAP, RENASES/RENAME) também são frequentemente exigidos."
       }
     ]
   },
@@ -2236,7 +2248,7 @@
     "titulo": "Indicadores de Saúde e Epidemiologia Descritiva",
     "resumo": "Medidas de frequência e associação, e principais fontes de dados em saúde no Brasil.",
     "revisado": false,
-    "fonte": "Ministerio da Saude - DATASUS; OPAS/OMS Indicadores Basicos de Saude",
+    "fonte": "Ministério da Saúde — RIPSA (Rede Interagencial de Informação para a Saúde); OMS",
     "mnemonicos": [
       {
         "palavra": "INCIDÊNCIA x PREVALÊNCIA",
@@ -2245,20 +2257,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Medidas de frequência",
-        "conteudo": "Incidência (casos novos em um período) e prevalência (total de casos existentes em um momento) são as principais medidas de frequência de doença em uma população."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "Os indicadores de saúde quantificam objetivamente aspectos relevantes da situação de saúde de uma população, classificados em indicadores de mortalidade (taxas brutas e específicas de mortalidade, mortalidade infantil, mortalidade materna), morbidade (incidência e prevalência de doenças) e indicadores socioeconômicos/demográficos que influenciam indiretamente a saúde populacional (esperança de vida ao nascer, taxa de fecundidade, índice de desenvolvimento)."
       },
       {
-        "titulo": "Medidas de associação",
-        "conteudo": "Risco relativo (usado em estudos de coorte) e odds ratio/razão de chances (usado em estudos caso-controle) quantificam a força da associação entre exposição e desfecho."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "A incidência mede a frequência de casos novos de uma doença em um período de tempo definido, refletindo o risco de adoecer; a prevalência mede a proporção de casos existentes (novos e antigos) em um determinado momento, refletindo o \"peso\" acumulado de uma condição em uma população — doenças agudas e de curta duração tendem a ter prevalência baixa mesmo com incidência elevada (resolução rápida), enquanto doenças crônicas tendem a ter prevalência progressivamente maior que a incidência ao longo do tempo (acúmulo de casos)."
       },
       {
-        "titulo": "Indicadores de mortalidade",
-        "conteudo": "Taxa de mortalidade infantil e taxa de mortalidade materna são indicadores clássicos de qualidade da atenção à saúde de uma população."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "A taxa de mortalidade infantil (óbitos em menores de 1 ano por 1.000 nascidos vivos) é subdividida em componente neonatal (até 27 dias completos, refletindo principalmente qualidade da assistência ao parto e ao recém-nascido) e pós-neonatal (28 dias a 1 ano, refletindo mais fortemente condições ambientais e socioeconômicas) — essa subdivisão tem valor analítico importante para direcionar políticas públicas específicas conforme o componente predominante em determinado território."
       },
       {
-        "titulo": "Fontes de dados",
-        "conteudo": "SIM (Sistema de Informação sobre Mortalidade), SINASC (Sistema de Informações sobre Nascidos Vivos) e SIH (Sistema de Informações Hospitalares) são as principais fontes de dados em saúde no Brasil."
+        "titulo": "Interpretação",
+        "conteudo": "A razão de mortalidade materna (óbitos maternos por 100.000 nascidos vivos) é considerado indicador sensível da qualidade geral da assistência obstétrica e do acesso aos serviços de saúde de uma região, sendo amplamente utilizado para comparações entre países e ao longo do tempo como marcador da qualidade do sistema de saúde materno-infantil de uma localidade."
+      },
+      {
+        "titulo": "Aplicação na Prática",
+        "conteudo": "A análise conjunta de diferentes indicadores (não isolados) permite caracterizar de forma mais completa e robusta a situação de saúde de uma população e monitorar o impacto de políticas e intervenções de saúde pública implementadas ao longo do tempo, evitando conclusões distorcidas baseadas em um único indicador tomado isoladamente fora de contexto."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Confundir incidência com prevalência (tratando-os como sinônimos ou usando-os intercambiavelmente) é erro conceitual frequente — a relação entre eles depende da duração média da doença (prevalência ≈ incidência × duração média em condições de equilíbrio/estado estacionário), relação matemática frequentemente cobrada em questões quantitativas."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre incidência e prevalência, incluindo sua relação matemática aproximada, é cobrança certíssima e extremamente recorrente. A composição e a interpretação da taxa de mortalidade infantil (componentes neonatal e pós-neonatal) e seu significado como indicador de qualidade assistencial e socioeconômica também são frequentemente exigidas em provas de saúde pública."
       }
     ]
   },
@@ -2269,7 +2293,7 @@
     "titulo": "Rastreamento de Câncer (Colo, Mama e Colorretal)",
     "resumo": "Faixas etárias e periodicidade recomendadas para os principais programas de rastreamento oncológico.",
     "revisado": false,
-    "fonte": "Instituto Nacional de Cancer (INCA) - Diretrizes de Rastreamento; FEBRASGO",
+    "fonte": "Instituto Nacional de Câncer (INCA) — Diretrizes Brasileiras de Rastreamento; Ministério da Saúde",
     "mnemonicos": [
       {
         "palavra": "25-64 / 50-69 / 50-75",
@@ -2278,24 +2302,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Câncer de colo do útero",
-        "conteudo": "Rastreio por citologia (Papanicolau) recomendado dos 25 aos 64 anos, com periodicidade trienal após dois exames anuais consecutivos normais."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O rastreamento de câncer visa detectar neoplasias ou lesões precursoras em fase pré-clínica assintomática, quando o tratamento tem maior chance de sucesso curativo. Nem todo câncer é candidato apropriado a rastreamento populacional — a decisão depende de a doença ter prevalência significativa, história natural bem compreendida com fase pré-clínica detectável, teste de rastreamento com boa acurácia e aceitabilidade, e tratamento eficaz disponível para a fase precoce detectada, evitando sobrediagnóstico e sobretratamento de lesões que nunca causariam dano clinicamente relevante."
       },
       {
-        "titulo": "Câncer de mama",
-        "conteudo": "Mamografia de rastreio recomendada, na maioria dos protocolos, dos 50 aos 69 anos, com periodicidade bienal na população de risco habitual."
+        "titulo": "Quadro clínico",
+        "conteudo": "Por definição, o rastreamento se aplica a indivíduos assintomáticos; a presença de sintomas já direciona para investigação diagnóstica dirigida, não para rastreamento. As recomendações brasileiras atuais definem: colo do útero — citologia trienal dos 25 aos 64 anos; mama — mamografia bienal dos 50 aos 69 anos (Ministério da Saúde); colorretal — pesquisa de sangue oculto fecal anual ou colonoscopia a cada 10 anos a partir dos 45-50 anos em risco médio."
       },
       {
-        "titulo": "Câncer colorretal",
-        "conteudo": "Pesquisa de sangue oculto nas fezes ou colonoscopia a partir dos 50 anos na população de risco habitual, conforme protocolo local."
+        "titulo": "Exame físico",
+        "conteudo": "O exame clínico das mamas não é mais recomendado como estratégia isolada de rastreamento populacional pelas diretrizes brasileiras atuais (evidência insuficiente de redução de mortalidade quando usado isoladamente sem mamografia), embora continue sendo parte do exame ginecológico de rotina. O toque retal isoladamente também não é recomendado como método de rastreamento populacional para câncer colorretal ou de próstata, dada sua baixa sensibilidade quando usado sem outros métodos complementares."
       },
       {
-        "titulo": "População de risco aumentado",
-        "conteudo": "História familiar significativa ou síndromes hereditárias justificam início mais precoce e maior periodicidade do rastreamento."
+        "titulo": "Diagnóstico",
+        "conteudo": "Cada teste de rastreamento tem intervalo e faixa etária específicos definidos por evidência de redução de mortalidade e balanço risco-benefício (incluindo radiação acumulada, ansiedade por falsos positivos, e complicações de procedimentos invasivos decorrentes de investigação de achados falso-positivos). O rastreamento de câncer de próstata com PSA é individualizado e compartilhado com o paciente (não universal), pela evidência conflitante sobre benefício populacional líquido versus risco de sobrediagnóstico de tumores indolentes."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Achados alterados no rastreamento direcionam para investigação diagnóstica confirmatória específica (colposcopia/biópsia na citologia alterada, exames de imagem adicionais/biópsia na mamografia suspeita, colonoscopia completa na pesquisa de sangue oculto positiva) — o rastreamento em si não é diagnóstico definitivo, apenas identifica indivíduos com maior probabilidade de doença que necessitam investigação confirmatória adicional."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sangramento vaginal pós-coito ou pós-menopausa, e nódulo mamário novo</span> exigem investigação diagnóstica independentemente da idade de início do rastreio de rotina."
+        "conteudo": "Sintomas de alarme (sangramento anormal, nódulo palpável, perda de peso) em qualquer momento, mesmo fora do intervalo programado de rastreamento ou em faixa etária abaixo da recomendada para início do rastreamento populacional, exigem investigação diagnóstica dirigida imediata, e não devem aguardar o próximo rastreamento programado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "As faixas etárias e intervalos específicos de cada programa de rastreamento (especialmente colo do útero e mama, seguindo o protocolo do Ministério da Saúde) são cobrança certíssima e extremamente recorrente em provas de saúde pública e concursos (ENAMED, SES-PE). A não recomendação de exame clínico das mamas isolado como rastreamento populacional é atualização de diretriz frequentemente testada."
       }
     ]
   },
@@ -2306,7 +2338,7 @@
     "titulo": "Saúde Mental na Atenção Básica",
     "resumo": "Matriciamento, transtornos mentais comuns e avaliação de risco de suicídio na Atenção Básica.",
     "revisado": false,
-    "fonte": "Ministerio da Saude - Caderno de Atencao Basica: Saude Mental; OMS - mhGAP",
+    "fonte": "Ministério da Saúde — Caderno de Atenção Básica em Saúde Mental; Rede de Atenção Psicossocial (RAPS)",
     "mnemonicos": [
       {
         "palavra": "PERGUNTAR NÃO AUMENTA O RISCO",
@@ -2315,24 +2347,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Transtornos mentais comuns",
-        "conteudo": "Ansiedade e depressão estão entre as condições de saúde mental mais prevalentes atendidas na Atenção Básica, muitas vezes com queixas somáticas associadas."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A Rede de Atenção Psicossocial (RAPS) organiza o cuidado em saúde mental no SUS de forma articulada e territorial, com a atenção primária/estratégia saúde da família como porta de entrada preferencial e coordenadora do cuidado, evitando a lógica hospitalocêntrica manicomial superada pela Reforma Psiquiátrica brasileira (Lei 10.216/2001). Os Centros de Atenção Psicossocial (CAPS) constituem dispositivo estratégico intermediário para casos de maior complexidade, funcionando em articulação com — e não em substituição a — a atenção primária."
       },
       {
-        "titulo": "Matriciamento em saúde mental",
-        "conteudo": "Apoio de equipes especializadas (NASF/CAPS) às equipes de Atenção Básica, permitindo manejo compartilhado de casos sem necessariamente encaminhar todos os pacientes."
+        "titulo": "Quadro clínico",
+        "conteudo": "Transtornos mentais comuns (ansiedade, depressão leve a moderada) e o acompanhamento longitudinal de transtornos mentais graves já estabilizados podem e devem ser manejados na atenção primária, com apoio matricial de equipes especializadas (psiquiatria, psicologia) quando necessário, em vez de encaminhamento sistemático e definitivo a serviços especializados para toda demanda de saúde mental identificada."
       },
       {
-        "titulo": "Avaliação de risco de suicídio",
-        "conteudo": "Perguntar diretamente sobre ideação suicida não aumenta o risco — é etapa essencial da avaliação, incluindo investigar plano estruturado e acesso a meios letais."
+        "titulo": "Exame físico",
+        "conteudo": "A avaliação de saúde mental na atenção primária inclui triagem de sintomas ansiosos/depressivos, avaliação de risco de suicídio quando indicado, e identificação de sinais de uso problemático de substâncias — incorporada à consulta clínica geral, e não segregada a um contexto avaliativo à parte, refletindo a integralidade do cuidado preconizada pelo modelo."
       },
       {
-        "titulo": "Encaminhamento",
-        "conteudo": "Casos de maior gravidade ou risco de suicídio significativo devem ser encaminhados ao CAPS ou serviço de urgência, conforme a intensidade do risco identificado."
+        "titulo": "Diagnóstico",
+        "conteudo": "O apoio matricial é a ferramenta central de articulação entre a atenção primária e a saúde mental especializada: profissionais especializados (psiquiatra, psicólogo) discutem casos e corresponsabilizam-se pelo cuidado junto à equipe de referência da atenção primária, sem necessariamente assumir o atendimento direto e exclusivo do paciente — modelo que amplia a capacidade resolutiva da atenção primária sem sobrecarregar desnecessariamente os serviços especializados."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Casos de menor complexidade (transtornos mentais comuns, sem risco agudo) são acompanhados na atenção primária, com suporte de apoio matricial quando necessário. Casos de maior complexidade (transtornos mentais graves e persistentes, uso abusivo de substâncias com necessidade de cuidado intensivo) são referenciados aos CAPS, mantendo-se articulação bidirecional e compartilhada com a atenção primária, e não uma transferência definitiva e desarticulada do cuidado."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Ideação suicida com plano estruturado e acesso a meios letais</span> caracteriza risco iminente, exigindo intervenção e acompanhamento imediatos."
+        "conteudo": "Risco de suicídio identificado na atenção primária deve ser acolhido e manejado imediatamente pela própria equipe (nunca minimizado ou apenas encaminhado para consulta especializada futura com data distante), com articulação urgente com a rede de saúde mental especializada e, se necessário, serviços de urgência/emergência, conforme a gravidade do risco identificado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O conceito de apoio matricial (corresponsabilização compartilhada, não encaminhamento definitivo) é cobrança certa e recorrente em provas de saúde pública e residência de Medicina de Família e Comunidade. Os princípios da Reforma Psiquiátrica (desinstitucionalização, cuidado em rede territorial, RAPS) também são frequentemente exigidos."
       }
     ]
   },
@@ -3018,7 +3058,7 @@
     "titulo": "Ética Médica e Bioética",
     "resumo": "Princípios da bioética, consentimento informado e Código de Ética Médica brasileiro.",
     "revisado": false,
-    "fonte": "Conselho Federal de Medicina (CFM) - Código de Ética Médica (Resolução CFM no 2.217/2018); Declaração de Helsinque",
+    "fonte": "Conselho Federal de Medicina — Código de Ética Médica (Resolução CFM 2.217/2018); Beauchamp e Childress — Princípios da Ética Biomédica",
     "mnemonicos": [
       {
         "palavra": "AUTONOMIA - BENEFICÊNCIA - NÃO MALEFICÊNCIA - JUSTIÇA",
@@ -3027,28 +3067,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Princípios da bioética",
-        "conteudo": "Autonomia (respeito à vontade do paciente capaz), beneficência (agir em benefício do paciente), não maleficência (não causar dano) e justiça (distribuição equitativa de recursos e cuidados)."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "A bioética principialista fundamenta-se em quatro pilares: autonomia (respeito à capacidade do paciente de tomar decisões informadas sobre seu próprio corpo e tratamento), beneficência (atuar visando o bem-estar do paciente), não maleficência (\"primeiro, não causar dano\") e justiça (distribuição equitativa de recursos e acesso à saúde). Esses princípios podem entrar em conflito entre si em situações clínicas complexas, exigindo ponderação cuidadosa e contextualizada caso a caso, sem hierarquia rígida e universal predefinida entre eles."
       },
       {
-        "titulo": "Consentimento informado",
-        "conteudo": "Obrigatório para a realização de procedimentos, respeitando a autonomia do paciente, exceto em situações de urgência com risco iminente à vida em que o consentimento não pode ser obtido a tempo."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "O consentimento livre e esclarecido operacionaliza o princípio da autonomia na prática clínica, exigindo que o paciente (ou seu representante legal, quando aplicável) seja informado de forma compreensível sobre diagnóstico, prognóstico, opções terapêuticas, riscos e benefícios, antes de consentir com qualquer procedimento diagnóstico ou terapêutico proposto — exceto em situações de urgência/emergência com risco iminente de vida e impossibilidade de obter consentimento em tempo hábil."
       },
       {
-        "titulo": "Sigilo médico",
-        "conteudo": "Dever ético fundamental, com exceções previstas em lei, como notificação compulsória de doenças e risco concreto a terceiros."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "O Código de Ética Médica brasileiro (CFM) e a legislação específica (Lei 8.080/90 no âmbito do SUS, Estatuto da Criança e do Adolescente, Estatuto do Idoso) fornecem o arcabouço normativo que orienta a conduta médica em situações eticamente complexas, incluindo sigilo profissional, relação médico-paciente, e situações de quebra justificada de sigilo (como as hipóteses de notificação compulsória)."
       },
       {
-        "titulo": "Código de Ética Médica brasileiro",
-        "conteudo": "Regido pela Resolução CFM nº 2.217/2018, que estabelece os direitos e deveres do médico na relação com pacientes, colegas e a sociedade."
+        "titulo": "Interpretação",
+        "conteudo": "O sigilo médico é regra geral, mas comporta exceções legalmente previstas e eticamente justificadas: notificação compulsória de doenças (interesse de saúde pública), suspeita de maus-tratos contra crianças/idosos/pessoas vulneráveis (dever legal de notificação ao órgão competente), e situações de risco iminente a terceiros identificáveis — a quebra de sigilo nessas hipóteses específicas não constitui violação ética, mas sim cumprimento de dever legal e ético concorrente."
       },
       {
-        "titulo": "Situações especiais",
-        "conteudo": "Recusa de tratamento por paciente capaz e informado deve ser respeitada; cuidados paliativos e decisões de final de vida seguem princípios de ortotanásia, sem obstinação terapêutica."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "Em situações de terminalidade, distingue-se eutanásia (ato de causar deliberadamente a morte, ilegal no Brasil), ortotanásia (permitir a morte natural sem prolongamento artificial desproporcional através de medidas fúteis, prática eticamente aceita e amparada por resolução do CFM) e distanásia (prolongamento artificial e desproporcional do processo de morte através de intervenções fúteis, geralmente considerada eticamente inadequada por perpetuar sofrimento sem benefício real ao paciente)."
       },
       {
-        "titulo": "Responsabilidade médica",
-        "conteudo": "O médico pode responder em três esferas independentes entre si, apuráveis simultaneamente pelo mesmo fato: ética (processo no Conselho Regional de Medicina, com penas de advertência confidencial até cassação do exercício profissional), civil (indenização por dano, em regra por responsabilidade subjetiva — exige comprovação de culpa: negligência, imprudência ou imperícia) e penal (crimes como lesão corporal culposa ou homicídio culposo, quando comprovado nexo causal entre a conduta médica e o dano)."
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Confundir ortotanásia (eticamente aceita, permitir morte natural sem intervenções desproporcionais) com eutanásia (ilegal no Brasil, ato deliberado de causar a morte) é erro conceitual frequente e ponto crítico de diferenciação em questões éticas de fim de vida — a distinção reside na intenção e na natureza do ato (permitir versus causar ativamente a morte)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre eutanásia, ortotanásia e distanásia é cobrança certíssima e extremamente recorrente em provas de residência médica. As hipóteses legais de quebra justificada de sigilo médico (notificação compulsória, suspeita de maus-tratos) e os quatro princípios da bioética principialista também são frequentemente exigidos, muitas vezes através de casos clínicos com dilemas éticos para análise."
       }
     ]
   },
@@ -3059,7 +3103,7 @@
     "titulo": "Desenho de Estudos Epidemiológicos e Medidas de Associação",
     "resumo": "Estudos observacionais (coorte, caso-controle, transversal) e experimentais (ensaio clínico randomizado); risco relativo, odds ratio e NNT.",
     "revisado": false,
-    "fonte": "Fletcher, Fletcher & Fletcher — Epidemiologia Clínica; Centre for Evidence-Based Medicine (CEBM), Oxford",
+    "fonte": "Sociedade Brasileira de Medicina de Família e Comunidade; Rouquayrol — Epidemiologia e Saúde",
     "mnemonicos": [
       {
         "palavra": "RARO = OR≈RR",
@@ -3068,24 +3112,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Estudos observacionais",
-        "conteudo": "Coorte: acompanha grupos expostos e não expostos ao longo do tempo até o desfecho (prospectiva) ou reconstrói a exposição a partir de registros passados (retrospectiva); permite calcular incidência e risco relativo diretamente. Caso-controle: parte do desfecho (casos) e busca retrospectivamente a exposição em comparação a controles sem o desfecho; mais rápido e barato para doenças raras, mas sujeito a viés de memória (recall bias). Transversal (seccional): mede exposição e desfecho num único momento — útil para prevalência, mas não estabelece sequência temporal (causalidade reversa)."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "Os estudos epidemiológicos classificam-se em observacionais (o pesquisador observa, sem intervir) e experimentais (o pesquisador aloca a intervenção). Entre os observacionais: estudos de coorte acompanham grupos expostos e não expostos ao longo do tempo até o desfecho (podem ser prospectivos ou retrospectivos), estudos de caso-controle partem do desfecho já ocorrido e investigam retrospectivamente a exposição, e estudos transversais avaliam exposição e desfecho no mesmo momento. O ensaio clínico randomizado, estudo experimental por excelência, é considerado o padrão-ouro para estabelecer causalidade pela distribuição aleatória de vieses conhecidos e desconhecidos entre os grupos comparados."
       },
       {
-        "titulo": "Estudos experimentais",
-        "conteudo": "O ensaio clínico randomizado (ECR) aloca os participantes aleatoriamente entre intervenção e controle/placebo, distribuindo igualmente fatores de confusão conhecidos e desconhecidos entre os grupos. O cegamento (simples, duplo ou triplo — participante, avaliador, analista de dados) reduz viés de aferição. É considerado o padrão-ouro para estabelecer causalidade entre intervenção e desfecho."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "A escolha do desenho de estudo depende da pergunta de pesquisa e de considerações práticas: doenças raras são mais eficientemente estudadas por caso-controle (parte-se do desfecho raro já ocorrido); exposições raras são mais bem estudadas por coorte (parte-se da exposição rara e observa-se o desfecho). Estudos transversais são úteis para estimar prevalência mas não estabelecem sequência temporal entre exposição e desfecho, limitação importante para inferência causal."
       },
       {
-        "titulo": "Medidas de associação",
-        "conteudo": "Risco relativo (RR): razão entre a incidência no grupo exposto e no grupo não exposto — calculável em coortes e ECRs. Odds ratio (OR): razão de chances, usada em caso-controle (onde a incidência real não é conhecida). Redução relativa de risco (RRR) e redução absoluta de risco (RAR): quantificam o benefício de uma intervenção. Number needed to treat (NNT) = 1/RAR: quantos pacientes precisam ser tratados para evitar um desfecho adverso."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "As medidas de associação variam conforme o desenho: em coortes e ensaios clínicos, calcula-se o risco relativo (incidência no expostos dividida pela incidência nos não expostos); em estudos de caso-controle, calcula-se a razão de chances (odds ratio), já que a verdadeira incidência não pode ser calculada diretamente nesse desenho (os grupos são definidos pelo desfecho, não pela exposição) — a razão de chances aproxima-se do risco relativo quando o desfecho estudado é raro na população."
       },
       {
-        "titulo": "Hierarquia de evidência",
-        "conteudo": "Da menor para a maior força de evidência: opinião de especialista/série de casos → estudo caso-controle → estudo de coorte → ensaio clínico randomizado → revisão sistemática com metanálise de ECRs. Diretrizes de prática clínica costumam graduar suas recomendações conforme essa hierarquia (ex.: sistema GRADE)."
+        "titulo": "Interpretação",
+        "conteudo": "Risco relativo (ou razão de chances) igual a 1 indica ausência de associação; maior que 1 sugere fator de risco; menor que 1 sugere fator de proteção — a significância estatística dessa associação deve ser avaliada pelo intervalo de confiança (que não deve cruzar o valor 1 para ser considerado estatisticamente significativo) e não apenas pelo valor pontual da medida."
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Correlação não implica causalidade.</span> Associações observadas em estudos observacionais podem decorrer de viés de confusão (confounding) — um terceiro fator associado tanto à exposição quanto ao desfecho. Controle de confusão é feito por randomização (ECR), pareamento, estratificação ou ajuste estatístico multivariado."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "Vieses de seleção (amostra não representativa da população-alvo) e de confusão (uma terceira variável associada tanto à exposição quanto ao desfecho, distorcendo a associação aparente) são as principais ameaças à validade de estudos observacionais, controladas parcialmente por técnicas de ajuste estatístico (análise multivariada) ou por desenho (pareamento, restrição). O ensaio clínico randomizado controla intrinsecamente a confusão por variáveis conhecidas e desconhecidas através da randomização adequada."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Confundir odds ratio com risco relativo (tratando-os como equivalentes em qualquer situação, quando na verdade se aproximam apenas quando o desfecho é raro) é erro conceitual frequente. Interpretar causalidade a partir de estudo observacional com associação estatisticamente significativa, sem considerar viés de confusão residual não controlado, é outro erro comum que deve ser evitado na análise crítica de estudos."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A escolha do desenho de estudo conforme raridade da exposição/desfecho (caso-controle para doença rara, coorte para exposição rara) é cobrança certíssima e recorrente. O cálculo e a interpretação de risco relativo versus razão de chances, incluindo a aproximação entre eles quando o desfecho é raro, também são frequentemente exigidos, muitas vezes através de tabelas 2x2 para cálculo direto."
       }
     ]
   },
@@ -3096,7 +3148,7 @@
     "titulo": "Testes Diagnósticos: Sensibilidade, Especificidade e Valores Preditivos",
     "resumo": "Interpretação de acurácia diagnóstica: sensibilidade, especificidade, valores preditivos, razões de verossimilhança e curva ROC.",
     "revisado": false,
-    "fonte": "Fletcher, Fletcher & Fletcher — Epidemiologia Clínica; JAMA Users' Guides to the Medical Literature",
+    "fonte": "Sociedade Brasileira de Medicina de Família e Comunidade; Fletcher — Epidemiologia Clínica",
     "mnemonicos": [
       {
         "palavra": "SnNOUT / SpPIN",
@@ -3105,24 +3157,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Sensibilidade e especificidade",
-        "conteudo": "A partir da tabela 2x2 (teste x padrão-ouro): sensibilidade = verdadeiros positivos / (verdadeiros positivos + falsos negativos) — capacidade de identificar corretamente quem tem a doença. Especificidade = verdadeiros negativos / (verdadeiros negativos + falsos positivos) — capacidade de identificar corretamente quem não tem a doença. São propriedades intrínsecas do teste, independentes da prevalência da doença na população testada."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "A acurácia de um teste diagnóstico é avaliada por sensibilidade (proporção de doentes corretamente identificados como positivos pelo teste) e especificidade (proporção de não doentes corretamente identificados como negativos), propriedades intrínsecas do teste que, em teoria, não variam com a prevalência da doença na população testada. Valores preditivos positivo e negativo, por sua vez, dependem diretamente da prevalência da doença na população em que o teste é aplicado, tornando-os menos generalizáveis entre diferentes contextos clínicos."
       },
       {
-        "titulo": "Valores preditivos",
-        "conteudo": "Valor preditivo positivo (VPP): probabilidade de doença dado um teste positivo. Valor preditivo negativo (VPN): probabilidade de ausência de doença dado um teste negativo. Ao contrário de sensibilidade/especificidade, os valores preditivos dependem diretamente da prevalência da doença na população testada: quanto menor a prevalência, menor o VPP (mesmo com sensibilidade/especificidade altas, testes gerarão proporcionalmente mais falsos positivos)."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "Testes de rastreamento populacional (aplicados a assintomáticos) priorizam alta sensibilidade, para minimizar falso-negativos que deixariam a doença sem detecção; testes confirmatórios (aplicados após um resultado de triagem positivo) priorizam alta especificidade, para minimizar falso-positivos e confirmar com segurança o diagnóstico antes de iniciar tratamentos potencialmente invasivos ou definitivos."
       },
       {
-        "titulo": "Razões de verossimilhança",
-        "conteudo": "A razão de verossimilhança positiva (LR+) e negativa (LR-) combinam sensibilidade e especificidade numa única medida que permite atualizar a probabilidade pré-teste (prevalência estimada, ou probabilidade clínica pré-teste) em probabilidade pós-teste, via teorema de Bayes (ou nomograma de Fagan). LR+ > 10 e LR- < 0,1 têm forte impacto diagnóstico."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "A tabela 2x2 (doentes/não doentes versus teste positivo/negativo) é a ferramenta central de cálculo: sensibilidade = verdadeiros positivos / (verdadeiros positivos + falsos negativos); especificidade = verdadeiros negativos / (verdadeiros negativos + falsos positivos); valor preditivo positivo = verdadeiros positivos / total de testes positivos; valor preditivo negativo = verdadeiros negativos / total de testes negativos. As razões de verossimilhança (likelihood ratios) combinam sensibilidade e especificidade em uma métrica única útil para atualizar a probabilidade pós-teste a partir da probabilidade pré-teste."
       },
       {
-        "titulo": "Curva ROC",
-        "conteudo": "Para testes com resultado contínuo (ex.: um exame laboratorial), a curva ROC (Receiver Operating Characteristic) plota sensibilidade contra 1-especificidade em diferentes pontos de corte, evidenciando o trade-off entre eles. A área sob a curva (AUC) resume a acurácia global do teste (0,5 = sem valor discriminativo; 1,0 = discriminação perfeita)."
+        "titulo": "Interpretação",
+        "conteudo": "Um teste com alta sensibilidade, quando negativo, tem bom poder de exclusão do diagnóstico (mnemônico SnNout: Sensitivity, Negative, rules out). Um teste com alta especificidade, quando positivo, tem bom poder de confirmação do diagnóstico (mnemônico SpPin: Specificity, Positive, rules in). Esses mnemônicos resumem a lógica de aplicação clínica racional de cada propriedade do teste."
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Viés de verificação (verification bias)</span>: ocorre quando apenas os pacientes com teste índice positivo são submetidos ao padrão-ouro, inflando artificialmente a sensibilidade estimada. Um teste negativo em população de baixa prevalência pré-teste tem alto VPN mesmo sem sensibilidade excelente."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "Diante de alta probabilidade pré-teste (forte suspeita clínica), um teste negativo mesmo sensível pode não excluir completamente a doença, exigindo cautela e eventual investigação adicional; diante de baixa probabilidade pré-teste, um teste positivo mesmo específico pode ainda representar falso-positivo, especialmente em doenças de baixa prevalência — a interpretação de qualquer teste deve sempre considerar a probabilidade pré-teste do paciente individual, não apenas as propriedades intrínsecas do teste isoladamente."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Interpretar um valor preditivo positivo calculado em uma população de alta prevalência (como um estudo em hospital terciário) e aplicá-lo diretamente a uma população de baixa prevalência (como a atenção primária) é erro metodológico frequente, já que os valores preditivos não são transportáveis entre contextos com prevalências diferentes — apenas sensibilidade e especificidade são, em teoria, mais estáveis entre populações."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O cálculo de sensibilidade, especificidade e valores preditivos a partir de tabelas 2x2 é cobrança certíssima e praticamente garantida em qualquer prova que aborde epidemiologia clínica. Os mnemônicos SnNout e SpPin, e a dependência dos valores preditivos em relação à prevalência (diferente da sensibilidade/especificidade), são pontos centrais e extremamente recorrentes."
       }
     ]
   },
@@ -3133,7 +3193,7 @@
     "titulo": "Bioestatística: Testes de Hipóteses, Erro Tipo I/II e Intervalo de Confiança",
     "resumo": "Lógica do teste de hipóteses, p-valor, erro tipo I e II, poder estatístico e intervalo de confiança.",
     "revisado": false,
-    "fonte": "Motulsky — Intuitive Biostatistics; JAMA Users' Guides to the Medical Literature",
+    "fonte": "Sociedade Brasileira de Medicina de Família e Comunidade; Rouquayrol — Epidemiologia e Saúde",
     "mnemonicos": [
       {
         "palavra": "TRIBUNAL",
@@ -3142,24 +3202,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Hipótese nula e alternativa",
-        "conteudo": "A hipótese nula (H0) postula que não há diferença real entre grupos ou associação real entre variáveis; a hipótese alternativa (H1) postula que essa diferença/associação existe. O teste estatístico avalia se os dados observados fornecem evidência suficiente para rejeitar H0."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "O teste de hipóteses estatístico parte de uma hipótese nula (H0, tipicamente afirmando ausência de diferença/associação) e busca evidência para rejeitá-la em favor da hipótese alternativa (H1). O erro tipo I (alfa) ocorre quando se rejeita H0 sendo ela verdadeira (\"falso positivo\" estatístico, concluir que há diferença quando não há); o erro tipo II (beta) ocorre quando não se rejeita H0 sendo ela falsa (\"falso negativo\" estatístico, deixar de detectar uma diferença real existente)."
       },
       {
-        "titulo": "Erro tipo I e tipo II",
-        "conteudo": "Erro tipo I (alfa): rejeitar H0 quando ela é verdadeira — um falso positivo (concluir que há efeito quando não há); convencionalmente limitado a 5% (alfa = 0,05). Erro tipo II (beta): não rejeitar H0 quando ela é falsa — um falso negativo (não detectar um efeito que realmente existe). O poder do estudo (1 - beta) é a capacidade de detectar corretamente uma diferença real quando ela existe; depende do tamanho amostral, da magnitude do efeito e da variabilidade dos dados."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "O valor de p representa a probabilidade de observar um resultado tão ou mais extremo que o obtido, assumindo que a hipótese nula é verdadeira — por convenção, um valor de p menor que 0,05 é considerado estatisticamente significativo (levando à rejeição de H0), embora essa convenção seja arbitrária e não deva ser confundida com relevância clínica prática do achado, que é questão distinta da significância estatística."
       },
       {
-        "titulo": "p-valor",
-        "conteudo": "É a probabilidade de observar um resultado igual ou mais extremo do que o observado, assumindo que H0 seja verdadeira. Um p-valor < 0,05 (convenção) leva à rejeição de H0, mas isso NÃO prova causalidade, não mede o tamanho do efeito e não indica relevância clínica — apenas significância estatística."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "O poder estatístico de um estudo (1 - beta) representa a capacidade de detectar uma diferença real quando ela de fato existe, sendo diretamente influenciado pelo tamanho da amostra (amostras maiores aumentam o poder). O intervalo de confiança (tipicamente de 95%) fornece uma faixa de valores plausíveis para o parâmetro populacional real, sendo informação complementar e geralmente mais rica que o valor de p isolado, pois também comunica a magnitude e a precisão da estimativa."
       },
       {
-        "titulo": "Intervalo de confiança",
-        "conteudo": "O intervalo de confiança de 95% (IC 95%) fornece a faixa de valores plausíveis para o parâmetro populacional real (ex.: um risco relativo). Se o IC 95% de um RR ou OR não cruza o valor 1 (ou de uma diferença de médias não cruza o 0), o resultado é estatisticamente significativo ao nível de 5%, de forma equivalente a p<0,05 — mas o IC é mais informativo, pois mostra a magnitude e a precisão da estimativa."
+        "titulo": "Interpretação",
+        "conteudo": "Um intervalo de confiança de 95% que não inclui o valor nulo (0 para diferenças de médias, 1 para razões como risco relativo ou razão de chances) corresponde a um resultado estatisticamente significativo ao nível de 5%, equivalente à informação fornecida por um valor de p menor que 0,05 — a interpretação conjunta e coerente dessas duas métricas estatísticas é frequentemente exigida em análise crítica de artigos científicos."
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Significância estatística não é sinônimo de relevância clínica.</span> Amostras muito grandes podem tornar diferenças clinicamente triviais estatisticamente significativas; amostras pequenas podem não detectar (erro tipo II) efeitos clinicamente importantes e reais."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "Um estudo com amostra pequena e poder estatístico insuficiente pode falhar em detectar uma diferença clinicamente relevante que realmente existe (erro tipo II), levando à conclusão equivocada de \"ausência de efeito\" quando, na realidade, o estudo apenas não teve poder suficiente para demonstrá-lo — distinção crítica entre \"ausência de evidência de efeito\" e \"evidência de ausência de efeito\", frequentemente confundida na leitura crítica de estudos."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Interpretar um valor de p não significativo como prova definitiva de que \"não há diferença/efeito\" é um dos erros mais comuns e importantes na leitura crítica de literatura médica — a ausência de significância estatística pode refletir tanto ausência real de efeito quanto poder estatístico insuficiente do estudo para detectá-lo, sendo essas duas possibilidades relevantemente distintas na prática."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A definição precisa de erro tipo I e tipo II (e sua relação inversa — reduzir um geralmente aumenta o outro, para um dado tamanho amostral) é cobrança certíssima. A diferença entre significância estatística e relevância clínica, e a interpretação do intervalo de confiança como equivalente e complementar ao valor de p, também são frequentemente exigidas em questões de leitura crítica de artigos."
       }
     ]
   },
@@ -3170,7 +3238,7 @@
     "titulo": "Atenção Primária à Saúde e Estratégia Saúde da Família (ESF)",
     "resumo": "Atributos da APS, organização da ESF, equipes multiprofissionais e financiamento da atenção básica.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Política Nacional de Atenção Básica (PNAB); Starfield — Atenção Primária: Equilíbrio entre Necessidades de Saúde, Serviços e Tecnologia; Lei Complementar 200/2023",
+    "fonte": "Ministério da Saúde — Política Nacional de Atenção Básica (PNAB); Starfield — Atenção Primária",
     "mnemonicos": [
       {
         "palavra": "PLIC",
@@ -3179,24 +3247,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Atributos essenciais da APS",
-        "conteudo": "Acesso de primeiro contato: porta de entrada preferencial do sistema a cada novo problema de saúde. Longitudinalidade: vínculo contínuo entre equipe e paciente ao longo do tempo, independente da presença de doença. Integralidade: reconhecimento e manejo de todos os problemas de saúde comuns na população, com referência quando necessário. Coordenação do cuidado: a APS organiza e integra o cuidado prestado em outros pontos da rede (especialistas, hospital)."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "A Atenção Primária à Saúde caracteriza-se por quatro atributos essenciais (segundo Starfield): acesso de primeiro contato (porta de entrada preferencial do sistema), longitudinalidade (vínculo continuado ao longo do tempo, independente de episódios específicos), integralidade (atenção a todas as necessidades de saúde, referenciando quando necessário) e coordenação do cuidado (articulação entre os diferentes pontos de atenção percorridos pelo paciente ao longo do sistema)."
       },
       {
-        "titulo": "Estratégia Saúde da Família",
-        "conteudo": "Modelo prioritário de reorganização da atenção básica no Brasil desde 1994. Equipe mínima: médico, enfermeiro, técnico/auxiliar de enfermagem e agentes comunitários de saúde (ACS), responsável por um território adstrito com famílias cadastradas. Cada ACS acompanha um número definido de famílias, realizando visitas domiciliares regulares."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "A Estratégia Saúde da Família (ESF) é o modelo prioritário e estruturante de reorganização da atenção primária no Brasil, operando através de equipes multiprofissionais (médico, enfermeiro, técnico de enfermagem, agentes comunitários de saúde, entre outros conforme a composição definida) responsáveis por um território adscrito definido, com população vinculada e cadastrada, permitindo conhecimento aprofundado do perfil epidemiológico e das necessidades específicas daquela comunidade."
       },
       {
-        "titulo": "Apoio multiprofissional",
-        "conteudo": "As equipes multiprofissionais da Atenção Básica (antigo NASF, hoje eMulti) oferecem apoio matricial às equipes de ESF — psicólogo, fisioterapeuta, nutricionista, assistente social, entre outros — atuando em discussão de casos, atendimento compartilhado e ações coletivas, sem substituir o vínculo da equipe de referência com a família."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "O cadastramento territorial (adscrição de clientela) e a visita domiciliar regular pelo agente comunitário de saúde são ferramentas centrais da ESF que possibilitam vigilância em saúde ativa e proativa (identificação de riscos e necessidades antes mesmo da demanda espontânea chegar ao serviço), diferenciando esse modelo de um atendimento passivo baseado exclusivamente na demanda espontânea que procura o serviço."
       },
       {
-        "titulo": "Financiamento",
-        "conteudo": "Recursos federais são repassados por equipe cofinanciada, hoje pelo modelo Previne Brasil (capitação ponderada pelo perfil da população + pagamento por desempenho em indicadores + incentivos para ações estratégicas), somados a recursos estaduais/municipais vinculados ao piso constitucional de saúde (art. 198 da CF, atualmente 15% da Receita Corrente Líquida da União, após a revogação da EC 95/2016 pelo Novo Arcabouço Fiscal — Lei Complementar 200/2023)."
+        "titulo": "Interpretação",
+        "conteudo": "O conceito de território em saúde vai além da delimitação geográfica simples, incorporando as relações sociais, econômicas e epidemiológicas específicas daquela população, sendo a base para o planejamento de ações de saúde verdadeiramente adequadas e direcionadas às necessidades reais e específicas identificadas naquele contexto local."
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "A APS não deve ser entendida apenas como \"porta de entrada\": sua função de coordenação do cuidado dentro da Rede de Atenção à Saúde (RAS) é o que garante a integração entre atenção básica, especializada, urgência e hospitalar."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "A atenção primária bem estruturada tem evidência robusta de associação com melhores desfechos populacionais de saúde, menor mortalidade e menor custo global do sistema, ao coordenar o cuidado e evitar fragmentação e duplicação desnecessária de investigações/procedimentos entre diferentes especialistas não comunicantes entre si."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Considerar a atenção primária como um nível de menor complexidade técnica ou de \"triagem simples\" para encaminhamento posterior é visão equivocada e frequentemente cobrada como erro conceitual — a atenção primária exige alta capacidade resolutiva e abordagem clínica sofisticada para lidar com problemas indiferenciados e multimorbidade, sendo, na verdade, um dos níveis de maior complexidade clínica em termos de raciocínio diagnóstico diante da incerteza inicial."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os quatro atributos essenciais da atenção primária (Starfield: primeiro contato, longitudinalidade, integralidade, coordenação) são cobrança certíssima e extremamente recorrente em provas de residência de Medicina de Família e Comunidade e concursos de saúde pública. A composição e o funcionamento da Estratégia Saúde da Família, incluindo o papel do agente comunitário de saúde, também são frequentemente exigidos."
       }
     ]
   },
@@ -3207,7 +3283,7 @@
     "titulo": "Medicina Baseada em Evidências: Revisão Sistemática e Metanálise",
     "resumo": "Etapas da revisão sistemática, diferença para metanálise, heterogeneidade e viés de publicação.",
     "revisado": false,
-    "fonte": "PRISMA Statement 2020; Cochrane Handbook for Systematic Reviews of Interventions",
+    "fonte": "Cochrane Handbook for Systematic Reviews of Interventions; Sociedade Brasileira de Medicina de Família e Comunidade",
     "mnemonicos": [
       {
         "palavra": "PICO",
@@ -3216,24 +3292,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Medicina baseada em evidências",
-        "conteudo": "Uso consciente, explícito e criterioso da melhor evidência científica disponível, integrada à experiência clínica do médico e aos valores/preferências do paciente, para orientar a tomada de decisão clínica."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "A medicina baseada em evidências integra a melhor evidência científica disponível com a experiência clínica do profissional e os valores/preferências do paciente na tomada de decisão clínica. A hierarquia de evidências (pirâmide clássica) posiciona revisões sistemáticas com metanálise de ensaios clínicos randomizados no topo, seguidas por ensaios clínicos randomizados individuais, estudos de coorte, estudos de caso-controle, relatos de caso, e opinião de especialistas na base — refletindo o rigor metodológico crescente na capacidade de estabelecer relações causais."
       },
       {
-        "titulo": "Revisão sistemática",
-        "conteudo": "Síntese estruturada de todos os estudos disponíveis que respondem a uma pergunta clínica bem definida (formato PICO), com estratégia de busca, critérios de seleção e avaliação de qualidade explícitos, sistemáticos e reprodutíveis — reportada segundo diretrizes como o PRISMA. Reduz o viés de seleção presente numa revisão narrativa tradicional."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "A revisão sistemática busca identificar, avaliar criticamente e sintetizar de forma estruturada e reprodutível toda a evidência disponível sobre uma pergunta clínica específica, através de metodologia de busca exaustiva e pré-especificada (protocolo registrado previamente), reduzindo o viés de seleção que caracteriza revisões narrativas tradicionais não sistematizadas."
       },
       {
-        "titulo": "Metanálise",
-        "conteudo": "Técnica estatística que combina quantitativamente os resultados de múltiplos estudos incluídos numa revisão sistemática, produzindo uma estimativa de efeito combinada, tipicamente representada num forest plot. Nem toda revisão sistemática inclui uma metanálise (às vezes os estudos são heterogêneos demais para serem combinados numericamente)."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "A metanálise é a técnica estatística que combina quantitativamente os resultados de múltiplos estudos individuais incluídos em uma revisão sistemática, gerando uma estimativa de efeito combinada com maior precisão (intervalo de confiança mais estreito) do que qualquer estudo isolado. O gráfico de floresta (forest plot) é a representação gráfica padrão da metanálise, exibindo o efeito e o intervalo de confiança de cada estudo individual, além da estimativa combinada."
       },
       {
-        "titulo": "Heterogeneidade e viés de publicação",
-        "conteudo": "Heterogeneidade (medida pela estatística I²) reflete a variabilidade entre os resultados dos estudos incluídos; heterogeneidade alta favorece o uso de modelo de efeitos aleatórios (em vez de efeitos fixos) e exige cautela na interpretação da estimativa combinada. Viés de publicação: tendência de estudos com resultados positivos serem publicados com mais frequência que estudos neutros/negativos, distorcendo a metanálise — avaliado visualmente pelo funnel plot."
+        "titulo": "Interpretação",
+        "conteudo": "A heterogeneidade entre os estudos incluídos (diferenças em população, intervenção, desfechos medidos) deve ser avaliada (estatisticamente, pelo teste I², entre outros métodos) antes de se confiar na estimativa combinada — heterogeneidade muito alta pode indicar que combinar os estudos numericamente não é apropriado, sendo mais adequada uma síntese qualitativa/narrativa nesse cenário em vez de uma metanálise formal."
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">\"Garbage in, garbage out\":</span> uma revisão sistemática ou metanálise que combina estudos primários de baixa qualidade metodológica não produz uma evidência de qualidade superior à dos estudos originais."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "Revisões sistemáticas e metanálises de boa qualidade metodológica orientam diretrizes clínicas e decisões de saúde pública por sintetizarem de forma robusta e reprodutível toda a evidência disponível sobre uma intervenção, reduzindo a influência de resultados isolados de estudos individuais que podem ser outliers por acaso ou por limitações metodológicas específicas não generalizáveis."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "O viés de publicação (tendência de estudos com resultados positivos/significativos serem mais frequentemente publicados que estudos com resultados negativos/nulos) pode distorcer sistematicamente os resultados de uma metanálise, superestimando o efeito real de uma intervenção — o gráfico de funil (funnel plot) é ferramenta usada para detectar essa possível distorção na literatura sintetizada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A hierarquia de evidências (pirâmide, com revisão sistemática/metanálise no topo) é cobrança certíssima e extremamente recorrente. Os conceitos de heterogeneidade (e quando ela contraindica a combinação numérica dos estudos) e viés de publicação (com o gráfico de funil como ferramenta de detecção) também são frequentemente exigidos em questões de leitura crítica de revisões sistemáticas."
       }
     ]
   },
@@ -3244,7 +3328,7 @@
     "titulo": "Medicina Legal: Traumatologia Forense, Tanatologia e Sexologia Forense",
     "resumo": "Conceitos básicos de perícia médico-legal: classificação de lesões corporais, sinais de morte e atendimento à violência sexual.",
     "revisado": false,
-    "fonte": "Código Penal Brasileiro — Art. 129; Genival Veloso de França — Medicina Legal; Lei 12.845/2013",
+    "fonte": "Ministério da Saúde — Diretrizes para Perícia Médico-Legal; Croce — Manual de Medicina Legal",
     "mnemonicos": [
       {
         "palavra": "ARLP",
@@ -3253,24 +3337,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Traumatologia forense",
-        "conteudo": "O Código Penal classifica a lesão corporal conforme a gravidade: leve (não se enquadra nas categorias abaixo), grave (incapacidade para ocupações habituais por mais de 30 dias, perigo de vida, debilidade permanente de membro/sentido/função, ou aceleração de parto) e gravíssima (incapacidade permanente para o trabalho, enfermidade incurável, perda ou inutilização de membro/sentido/função, deformidade permanente ou aborto). O instrumento causador orienta o exame pericial: contundente, perfurocortante, perfurante, cortante ou corto-contundente."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "A medicina legal aplica conhecimentos médicos a questões de interesse jurídico, abrangendo áreas como traumatologia forense (estudo médico-legal das lesões corporais e suas implicações jurídicas), tanatologia (estudo médico-legal da morte, seus sinais e a determinação da causa mortis) e sexologia forense (aspectos médico-legais relacionados a crimes sexuais e questões de identidade sexual/reprodutiva de interesse jurídico)."
       },
       {
-        "titulo": "Tanatologia forense",
-        "conteudo": "O diagnóstico de morte e a estimativa do tempo decorrido (cronotanatognose) baseiam-se nos fenômenos cadavéricos: abióticos imediatos (parada cardiorrespiratória, perda do brilho corneano, imobilidade) e consecutivos — algor mortis (resfriamento progressivo), livores hipostáticos (acúmulo de sangue por gravidade, fixos após 8-12h), rigidez cadavérica (instala-se e regride em sequência craniocaudal) e, por fim, putrefação (autólise, gases, coliquação e esqueletização)."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "A classificação jurídico-penal das lesões corporais no Código Penal brasileiro considera a gravidade e as consequências (lesão leve, grave — incapacidade para ocupações habituais por mais de 30 dias, perigo de vida, entre outros critérios —, e gravíssima — incapacidade permanente para o trabalho, deformidade permanente, entre outros), com implicações diretas na tipificação penal e na dosimetria da pena aplicável ao agressor."
       },
       {
-        "titulo": "Sexologia forense e atendimento à violência sexual",
-        "conteudo": "O exame pericial em casos de violência sexual documenta lesões genitais e extragenitais e coleta vestígios para exame de corpo de delito. A Lei 12.845/2013 obriga o atendimento integral e imediato às vítimas de violência sexual em serviços de saúde (profilaxia de IST/HIV, contracepção de emergência, apoio psicológico), independentemente da realização de exame pericial ou de boletim de ocorrência."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "Os sinais de morte são classificados em sinais imediatos/abióticos (cessação de funções vitais, ainda reversíveis teoricamente em certas condições muito específicas) e sinais tardios/consecutivos, que incluem livores hipostáticos (acúmulo de sangue por gravidade nas partes mais baixas do corpo, formando-se progressivamente nas primeiras horas), rigidez cadavérica (rigor mortis, instalando-se progressivamente e depois se dissipando em sequência temporal característica) e putrefação (fase final, com decomposição tecidual) — a combinação desses sinais permite estimar o intervalo post-mortem (tempo decorrido desde a morte)."
       },
       {
-        "titulo": "Notificação compulsória de violência",
-        "conteudo": "A notificação de violência doméstica, sexual e outras violências (física, psicológica) é compulsória e deve ser feita pelo profissional de saúde independentemente de exame pericial, autorização judicial ou consentimento da vítima, respeitado o sigilo dos dados."
+        "titulo": "Interpretação",
+        "conteudo": "A estimativa do intervalo post-mortem combina a progressão temporal esperada de livores, rigidez e temperatura corporal, embora fatores ambientais (temperatura, umidade) possam acelerar ou retardar esses processos, exigindo interpretação cuidadosa e contextualizada, e não aplicação mecânica e rígida de tabelas de tempo padronizadas sem considerar as circunstâncias específicas do caso."
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">O atendimento médico à vítima de violência sexual nunca deve ser condicionado</span> à realização de exame pericial, boletim de ocorrência ou autorização de terceiros."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "O exame de corpo de delito (perícia realizada em vítima de crime, viva ou morta) documenta objetivamente os achados de interesse jurídico, servindo de base para a classificação legal da lesão e para o processo judicial subsequente — em casos de suspeita de crime sexual, a perícia deve ser realizada o mais precocemente possível, mas a ausência de vestígios físicos não exclui a ocorrência do crime, já que muitas formas de violência sexual não deixam vestígios físicos objetivos detectáveis ao exame."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Assumir que a ausência de lesões físicas objetivas ao exame pericial exclui a ocorrência de violência sexual é erro conceitual grave e frequente — a ausência de vestígios físicos é comum e esperada em muitos casos reais, não devendo ser interpretada como evidência de que o relato da vítima é falso ou de que o crime não ocorreu."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A classificação das lesões corporais (leve, grave, gravíssima) conforme o Código Penal é cobrança certa e recorrente. A sequência temporal dos sinais cadavéricos tardios (livores, rigidez, putrefação) para estimativa do intervalo post-mortem também é frequentemente exigida, assim como a compreensão de que ausência de vestígios físicos não exclui violência sexual."
       }
     ]
   },
@@ -3281,7 +3373,7 @@
     "titulo": "Saúde do Trabalhador: Doenças Ocupacionais, CAT e NTEP",
     "resumo": "Nexo causal em doenças relacionadas ao trabalho, Comunicação de Acidente de Trabalho (CAT) e Nexo Técnico Epidemiológico Previdenciário (NTEP).",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Doenças Relacionadas ao Trabalho: Manual de Procedimentos para os Serviços de Saúde; Decreto 3.048/1999 (Regulamento da Previdência Social)",
+    "fonte": "Ministério da Saúde — Doenças Relacionadas ao Trabalho: Manual de Procedimentos; Ministério do Trabalho — NTEP",
     "mnemonicos": [
       {
         "palavra": "CAT em 1 dia",
@@ -3290,24 +3382,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Classificação das doenças relacionadas ao trabalho",
-        "conteudo": "Classificação de Schilling: grupo I — o trabalho é causa necessária (ex.: intoxicações ocupacionais, perda auditiva induzida por ruído/PAIR, pneumoconioses); grupo II — o trabalho é fator de risco contributivo/desencadeante junto a outros fatores (ex.: LER/DORT, asma ocupacional, transtornos mentais relacionados ao trabalho); grupo III — o trabalho agrava uma doença preexistente."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "As doenças relacionadas ao trabalho classificam-se conforme o nexo causal com a atividade laboral: doença profissional (nexo causal direto e específico com determinada ocupação, como a silicose em trabalhadores expostos à sílica) e doença do trabalho (desencadeada ou agravada pelas condições de trabalho, mas sem exclusividade ocupacional, como certas lesões por esforço repetitivo/distúrbios osteomusculares relacionados ao trabalho)."
       },
       {
-        "titulo": "Comunicação de Acidente de Trabalho (CAT)",
-        "conteudo": "Documento que formaliza, perante a Previdência Social, a ocorrência de acidente de trabalho (típico ou de trajeto) ou o diagnóstico de doença ocupacional. Deve ser emitida em até 1 dia útil; na omissão da empresa, pode ser preenchida pelo próprio trabalhador, dependentes, sindicato, médico assistente ou autoridade pública."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "A Comunicação de Acidente de Trabalho (CAT) deve ser emitida diante de qualquer acidente de trabalho ou doença ocupacional, mesmo sem afastamento do trabalho — sendo obrigatória por lei e não uma opção discricionária do empregador ou do médico assistente, servindo tanto para fins previdenciários (garantindo direitos ao trabalhador) quanto epidemiológicos (vigilância em saúde do trabalhador em nível populacional)."
       },
       {
-        "titulo": "Nexo Técnico Epidemiológico Previdenciário (NTEP)",
-        "conteudo": "Mecanismo que presume o nexo causal entre a doença/acidente e a atividade da empresa a partir da associação estatística entre o CID-10 apresentado e o CNAE (ramo de atividade econômica) da empresa — mesmo sem CAT emitida. Ao presumir o nexo, inverte o ônus da prova em favor do trabalhador, garantindo o reconhecimento do caráter acidentário do benefício previdenciário."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "O Nexo Técnico Epidemiológico Previdenciário (NTEP) é ferramenta estatística que correlaciona automaticamente o ramo de atividade econômica da empresa (CNAE) com determinadas doenças/lesões (CID), presumindo o nexo causal ocupacional quando há correlação estatística estabelecida entre eles — mecanismo que facilita o reconhecimento do nexo mesmo sem CAT emitida previamente, invertendo o ônus da prova em favor do trabalhador em determinadas situações."
       },
       {
-        "titulo": "Principais doenças ocupacionais",
-        "conteudo": "LER/DORT (lesões por esforço repetitivo/distúrbios osteomusculares relacionados ao trabalho); PAIR — perda auditiva induzida por ruído, irreversível e que não progride após cessada a exposição (achado característico: entalhe em 4-6 kHz na audiometria); pneumoconioses (silicose, asbestose); dermatoses ocupacionais; transtornos mentais relacionados ao trabalho, incluindo a síndrome de burnout (reconhecida pela CID-11 como fenômeno ocupacional, não como transtorno mental per se)."
+        "titulo": "Interpretação",
+        "conteudo": "O estabelecimento do nexo causal entre uma doença e a atividade laboral considera a história ocupacional detalhada (tempo de exposição, tipo de exposição), a compatibilidade clínica e epidemiológica da doença com a exposição relatada, e informações complementares como o NTEP — não bastando a mera coincidência temporal entre início dos sintomas e período de trabalho para estabelecer nexo causal definitivo, embora seja um elemento importante a considerar na avaliação global."
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "A ausência de CAT não impede o reconhecimento do acidente ou da doença ocupacional pelo INSS quando presente o NTEP ou comprovado nexo técnico individual pela perícia médica previdenciária."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "O reconhecimento de uma doença como ocupacional tem implicações práticas relevantes: direitos previdenciários específicos ao trabalhador (estabilidade no emprego após retorno, benefícios acidentários diferenciados), e também implicações de saúde pública (necessidade de investigação e intervenção sobre as condições de trabalho geradoras do adoecimento, prevenindo novos casos entre outros trabalhadores expostos às mesmas condições)."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Deixar de emitir a CAT por já ter havido resolução completa do quadro sem afastamento do trabalho é erro comum e uma obrigação legal frequentemente negligenciada — a CAT deve ser emitida independentemente da gravidade ou da necessidade de afastamento, servindo a propósitos que vão além do benefício previdenciário imediato ao trabalhador individual."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre doença profissional (nexo direto e específico) e doença do trabalho (desencadeada/agravada, sem exclusividade ocupacional) é cobrança certa. A obrigatoriedade de emissão da CAT mesmo sem afastamento, e o conceito do NTEP como mecanismo de presunção de nexo causal, também são frequentemente exigidos em provas de saúde pública e medicina do trabalho."
       }
     ]
   },
@@ -3318,7 +3418,7 @@
     "titulo": "Gestão em Saúde: Planejamento e Avaliação de Serviços",
     "resumo": "Ciclo de planejamento em saúde, instrumentos de pactuação do SUS e indicadores de qualidade.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Guia de Planejamento no SUS; Donabedian — Avaliação da Qualidade em Saúde",
+    "fonte": "Ministério da Saúde — Planejamento Estratégico em Saúde; Sociedade Brasileira de Medicina de Família e Comunidade",
     "mnemonicos": [
       {
         "palavra": "PDCA",
@@ -3327,24 +3427,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Ciclo de planejamento",
-        "conteudo": "O planejamento em saúde segue uma lógica cíclica (PDCA/PDSA): diagnóstico situacional (levantamento de necessidades e recursos), definição de prioridades e metas, execução das ações planejadas, monitoramento por indicadores e ajuste do planejamento a partir dos resultados observados."
+        "titulo": "Conceito Fundamental",
+        "conteudo": "O planejamento em saúde estruturado (como o planejamento estratégico situacional) parte do diagnóstico situacional de um território ou serviço (identificação de problemas prioritários, seus determinantes e recursos disponíveis), seguido de definição de objetivos, estratégias e ações, e posterior avaliação de resultados — ciclo contínuo que orienta a gestão racional e baseada em evidências dos serviços e sistemas de saúde."
       },
       {
-        "titulo": "Instrumentos de planejamento do SUS",
-        "conteudo": "Plano de Saúde: instrumento central de planejamento, com horizonte plurianual (4 anos), alinhado ao Plano Plurianual (PPA). Programação Anual de Saúde (PAS): detalha as ações e metas do Plano de Saúde para cada ano. Relatório Anual de Gestão (RAG): presta contas do cumprimento das metas da PAS, condição para a manutenção das transferências de recursos federais."
+        "titulo": "Aplicação e Contexto",
+        "conteudo": "A avaliação de serviços e programas de saúde utiliza indicadores estruturados em diferentes dimensões: estrutura (recursos disponíveis — físicos, humanos, materiais), processo (o que é efetivamente realizado com esses recursos, como cobertura de determinada ação) e resultado (o desfecho final alcançado na saúde da população, como redução de mortalidade por determinada causa) — modelo clássico de avaliação (Donabedian) amplamente utilizado na gestão em saúde."
       },
       {
-        "titulo": "Pactuação interfederativa",
-        "conteudo": "As Comissões Intergestores pactuam regras de funcionamento, fluxos assistenciais e critérios de partilha de recursos entre os entes federados: CIT (Comissão Intergestores Tripartite, nível nacional — União, estados e municípios), CIB (Comissão Intergestores Bipartite, nível estadual — estado e municípios) e CIR (Comissão Intergestores Regional, nível das regiões de saúde)."
+        "titulo": "Instrumentos e Métodos",
+        "conteudo": "Indicadores de estrutura incluem número de leitos, equipamentos e profissionais disponíveis; indicadores de processo incluem cobertura vacinal, número de consultas de pré-natal realizadas; indicadores de resultado incluem taxa de mortalidade infantil, taxa de mortalidade materna. A tríade de Donabedian reconhece que boa estrutura e bom processo são condições facilitadoras, mas não garantem automaticamente bons resultados, exigindo avaliação das três dimensões de forma integrada e não isolada."
       },
       {
-        "titulo": "Indicadores de gestão e avaliação",
-        "conteudo": "O modelo de Donabedian avalia qualidade em saúde por três dimensões: estrutura (recursos físicos, humanos, materiais disponíveis), processo (o que de fato é feito na assistência) e resultado (desfechos de saúde alcançados). Indicadores de gestão comuns incluem cobertura (ex.: % da população coberta por equipes de ESF), produção (consultas/procedimentos realizados) e desfecho (mortalidade evitável, taxa de internação por condições sensíveis à atenção primária)."
+        "titulo": "Interpretação",
+        "conteudo": "Um serviço pode ter estrutura adequada (bons equipamentos, profissionais suficientes) e ainda assim apresentar resultados insatisfatórios, se o processo de cuidado for inadequado (por exemplo, protocolos não seguidos, comunicação falha entre profissionais) — essa possibilidade de dissociação entre as três dimensões da tríade justifica a necessidade de monitorização simultânea e integrada de todas elas, não apenas de indicadores de resultado final isoladamente."
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "Gestão orientada apenas por metas de produção, sem contextualização local e sem indicadores de resultado, pode gerar distorções — cumprir a meta numérica sem necessariamente melhorar a qualidade do cuidado prestado."
+        "titulo": "Aplicação na Prática",
+        "conteudo": "A regionalização e a hierarquização dos serviços de saúde no SUS (organizados em redes de atenção à saúde, com diferentes níveis de complexidade articulados) buscam garantir acesso equitativo e uso racional de recursos, evitando tanto a subutilização de serviços especializados de maior complexidade (excesso de encaminhamentos desnecessários) quanto sua sobrecarga por demandas que poderiam ser resolvidas em nível de menor complexidade."
+      },
+      {
+        "titulo": "Armadilhas Comuns",
+        "conteudo": "Avaliar a qualidade de um serviço de saúde exclusivamente por indicadores de estrutura (por exemplo, número de leitos ou equipamentos disponíveis) sem considerar processo e resultado é abordagem incompleta e potencialmente enganosa — boa estrutura é necessária mas não suficiente para garantir bons desfechos em saúde para a população atendida."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tríade de Donabedian (estrutura, processo, resultado) para avaliação de serviços de saúde é cobrança certa e recorrente em provas de saúde pública e gestão. A lógica da regionalização e hierarquização de serviços no SUS, com fluxos de referência e contrarreferência entre níveis de complexidade, também é frequentemente exigida."
       }
     ]
   },
@@ -9202,24 +9310,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Princípios da Medicina de Família e Comunidade",
-        "conteudo": "Especialidade médica generalista orientada pela pessoa, pela família e pela comunidade, com atributos de longitudinalidade, integralidade e coordenação do cuidado — atuando como especialista em atenção primária dentro da Rede de Atenção à Saúde."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A Medicina de Família e Comunidade é especialidade médica generalista orientada pela pessoa (não apenas pela doença isolada), pela família e pela comunidade, com atributos essenciais de longitudinalidade (acompanhamento continuado ao longo do tempo, independente de episódios específicos de doença), integralidade (atenção a todas as dimensões biopsicossociais) e coordenação do cuidado (articulação entre diferentes níveis e pontos de atenção do sistema de saúde)."
       },
       {
-        "titulo": "Abordagem centrada na pessoa",
-        "conteudo": "Modelo clínico que busca compreender a doença E a experiência de adoecimento do paciente (sentimentos, ideias, impacto funcional e expectativas), integrando esse entendimento ao contexto biopsicossocial, em contraposição ao modelo biomédico tradicional."
+        "titulo": "Quadro clínico",
+        "conteudo": "A abordagem centrada na pessoa busca compreender simultaneamente a doença (dimensão biomédica objetiva) e a experiência de adoecimento do paciente (sentimentos, ideias sobre a própria condição, impacto funcional na vida diária e expectativas em relação ao cuidado), integrando esse entendimento ao contexto biopsicossocial mais amplo do indivíduo, em contraposição ao modelo biomédico tradicional focado exclusivamente na doença."
       },
       {
-        "titulo": "Abordagem familiar",
-        "conteudo": "Ferramentas como o genograma (representação gráfica da estrutura e relações familiares) e o ciclo de vida familiar (etapas previsíveis com tarefas e crises características) ajudam a compreender o contexto familiar como determinante de saúde."
+        "titulo": "Exame físico",
+        "conteudo": "Ferramentas específicas da MFC incluem o genograma (representação gráfica estruturada da composição e das relações familiares, incluindo padrões de doença e vínculos afetivos) e a compreensão do ciclo de vida familiar (etapas previsíveis com tarefas e crises características de cada fase), auxiliando a contextualizar o paciente dentro de seu sistema familiar como determinante relevante de saúde."
       },
       {
-        "titulo": "Níveis de prevenção",
-        "conteudo": "Além dos clássicos primário, secundário e terciário, a prevenção quaternária busca identificar pacientes em risco de intervenção médica excessiva (sobrediagnóstico, sobretratamento) e protegê-los de intervenções desnecessárias ou iatrogênicas."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico em MFC frequentemente ocorre em fase mais precoce e indiferenciada da doença (comparado ao contexto de atenção especializada, onde os casos já chegam filtrados e mais definidos), exigindo tolerância à incerteza e uso racional do tempo como ferramenta diagnóstica (reavaliação evolutiva programada em vez de investigação exaustiva imediata de toda queixa inicial indiferenciada)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Além dos níveis clássicos de prevenção (primária, secundária, terciária), a prevenção quaternária busca identificar pacientes em risco de intervenção médica excessiva (sobrediagnóstico, sobretratamento, cascata de exames desencadeada por achados incidentais irrelevantes) e protegê-los ativamente de intervenções desnecessárias ou potencialmente iatrogênicas — conceito central e distintivo da MFC como especialidade que valoriza tanto agir quanto saber quando não agir."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "A fragmentação do cuidado (múltiplos especialistas sem coordenação) em pacientes com múltiplas comorbidades é um risco à segurança do paciente que a coordenação pela atenção primária/MFC busca mitigar."
+        "conteudo": "A fragmentação do cuidado (múltiplos especialistas atuando de forma não coordenada, especialmente em pacientes com múltiplas comorbidades) é um risco reconhecido à segurança do paciente (interações medicamentosas não identificadas, exames duplicados, orientações conflitantes) que a função coordenadora da atenção primária/MFC busca ativamente mitigar."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os atributos essenciais da atenção primária/MFC (longitudinalidade, integralidade, coordenação, e o quarto atributo, acesso de primeiro contato) são cobrança certa e recorrente, especialmente em provas de residência de Medicina de Família e Comunidade e em concursos de saúde pública. O conceito de prevenção quaternária como proteção contra excesso de intervenção médica também é frequentemente exigido em provas mais atuais."
       }
     ]
   },
@@ -9239,24 +9355,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Vacinas de rotina para adultos",
-        "conteudo": "Dupla adulto (dT) ou tríplice bacteriana acelular do tipo adulto (dTpa), com reforço a cada 10 anos; hepatite B (esquema completo se não vacinado); tríplice viral para adultos até 59 anos sem comprovação de imunidade; febre amarela conforme área de risco."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A imunidade adquirida na infância por vacinação ou infecção natural pode declinar ao longo da vida adulta (como no caso do tétano/difteria) ou nunca ter sido adquirida (indivíduos não vacinados na infância por diferentes motivos), justificando esquemas específicos de atualização vacinal e reforço periódico para adultos e idosos, população com risco aumentado de formas graves de certas doenças imunopreveníveis pela imunossenescência (declínio da função imunológica relacionado à idade)."
       },
       {
-        "titulo": "Vacinas específicas para idosos",
-        "conteudo": "Influenza (dose anual), pneumocócica (esquema combinando as vacinas conjugada e polissacarídica) e herpes-zóster, reduzindo incidência e gravidade do herpes-zóster e da neuralgia pós-herpética."
+        "titulo": "Quadro clínico",
+        "conteudo": "A avaliação da situação vacinal deve ser sistemática em toda consulta de rotina do adulto/idoso, buscando ativamente identificar lacunas no esquema vacinal, já que essa população frequentemente não recebe a mesma atenção rotineira ao calendário vacinal que é dada por padrão às crianças no sistema de saúde."
       },
       {
-        "titulo": "Vacinação em situações especiais",
-        "conteudo": "Gestantes: dTpa a cada gestação (proteção passiva do RN contra coqueluche), influenza, hepatite B. Imunossuprimidos: contraindicação a vacinas de vírus vivo em certas condições. Profissionais de saúde: hepatite B, tríplice viral, varicela, dTpa."
+        "titulo": "Exame físico",
+        "conteudo": "Não há achado de exame físico específico relacionado à indicação vacinal — a decisão baseia-se na história vacinal prévia documentada (ou sua ausência/incerteza), idade, comorbidades e exposições ocupacionais/de risco específicas de cada indivíduo, exigindo anamnese cuidadosa e ativa sobre este tema frequentemente negligenciado na consulta do adulto."
       },
       {
-        "titulo": "Importância da vacinação do adulto/idoso",
-        "conteudo": "Proteção individual direta contra doenças com maior morbimortalidade nessa faixa etária e, em algumas vacinas (dTpa na gestante), proteção indireta de terceiros vulneráveis, como o recém-nascido."
+        "titulo": "Diagnóstico",
+        "conteudo": "Não se aplica investigação diagnóstica — a indicação vacinal é definida por protocolo etário e de risco padronizado pelo Programa Nacional de Imunizações, sem necessidade de exames confirmatórios de suscetibilidade na maioria das situações (exceto casos específicos, como triagem sorológica pré-vacinal para hepatite B em determinados grupos de risco)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Vacinas de rotina para adultos incluem dupla adulto (dT) ou tríplice bacteriana acelular (dTpa) com reforço a cada 10 anos, hepatita B (esquema completo se não vacinado previamente), tríplice viral para adultos até 59 anos sem comprovação de imunidade. Idosos recebem adicionalmente influenza anual, vacina pneumocócica e vacina contra herpes-zóster. Gestantes recebem dTpa a cada gestação (proteção passiva do recém-nascido contra coqueluche) e influenza."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "A subvacinação de idosos e adultos com comorbidades é um problema de saúde pública subestimado — a atualização da caderneta vacinal deve ser verificada ativamente em toda consulta, independentemente da idade."
+        "conteudo": "A subvacinação de idosos e adultos com comorbidades crônicas é problema de saúde pública subestimado e frequentemente não abordado ativamente nas consultas de rotina — a verificação e atualização da caderneta vacinal deve ser incorporada sistematicamente à consulta clínica do adulto, independentemente do motivo principal da consulta."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O esquema de reforço decenal de dT/dTpa e a recomendação de dTpa em toda gestação (independente de gestações anteriores) são cobrança certa e recorrente. As vacinas específicas do idoso (pneumocócica, herpes-zóster) e sua justificativa pela imunossenescência também são frequentemente exigidas em provas de saúde pública."
       }
     ]
   },
@@ -9447,7 +9571,7 @@
     "titulo": "Saúde da População Trans e Incongruência de Gênero",
     "resumo": "Terminologia atualizada, o processo transexualizador no SUS e princípios do cuidado em saúde à população trans e travesti.",
     "revisado": false,
-    "fonte": "Ministério da Saúde — Política Nacional de Saúde Integral LGBT; OMS — CID-11 (capítulo de condições relacionadas à saúde sexual)",
+    "fonte": "Ministério da Saúde — Política Nacional de Saúde Integral LGBT; Processo Transexualizador no SUS; OMS — CID-11",
     "mnemonicos": [
       {
         "palavra": "CID-11 tirou do capítulo mental",
@@ -9456,24 +9580,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Terminologia e conceitos",
-        "conteudo": "Identidade de gênero refere-se à vivência interna do gênero de uma pessoa, que pode ou não corresponder ao sexo atribuído ao nascimento. Incongruência de gênero descreve o desconforto marcante entre a identidade de gênero vivenciada e o sexo atribuído — termo que substitui, na CID-11, a antiga classificação como transtorno mental."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A incongruência de gênero descreve o descompasso marcante e persistente entre a identidade de gênero vivenciada por uma pessoa e o sexo atribuído ao nascimento. Na CID-11, a condição foi retirada do capítulo de transtornos mentais e realocada para um capítulo específico de condições relacionadas à saúde sexual — mudança que reflete o entendimento científico atual de que a incongruência de gênero, por si só, não constitui transtorno mental, embora possa se associar a sofrimento psíquico significativo decorrente primariamente do estigma e da discriminação social vivenciados."
       },
       {
-        "titulo": "Processo transexualizador no SUS",
-        "conteudo": "Política pública que garante acesso a acompanhamento multiprofissional (incluindo saúde mental, endocrinologia e, quando indicado, cirurgias), com princípios de autonomia e despatologização — a hormonização e o suporte psicossocial não exigem laudo psiquiátrico compulsório como pré-requisito único e definitivo."
+        "titulo": "Quadro clínico",
+        "conteudo": "Pessoas trans e travestis podem buscar o serviço de saúde por diferentes motivos: acompanhamento do processo de afirmação de gênero (hormonioterapia, quando desejada), suporte psicossocial, ou qualquer outra demanda de saúde geral — não devendo o atendimento se restringir ou se condicionar exclusivamente à questão da identidade de gênero quando a demanda apresentada for outra."
       },
       {
-        "titulo": "Cuidado em saúde à pessoa trans",
-        "conteudo": "Uso do nome social é obrigatório em todos os serviços de saúde. Atenção a necessidades específicas: acompanhamento de hormonioterapia (quando indicada), rastreamento de câncer conforme órgãos presentes (não apenas conforme identidade de gênero) e cuidado com vulnerabilidades específicas da população (maior exposição a violência, discriminação e barreiras de acesso)."
+        "titulo": "Exame físico",
+        "conteudo": "O exame físico e o rastreamento de saúde devem ser guiados pelos órgãos e tecidos presentes no corpo da pessoa (e não pela identidade de gênero expressa), com atenção a rastreamentos específicos (por exemplo, câncer de próstata em mulher trans que manteve a próstata, ou câncer de colo/mama em homem trans que manteve útero/tecido mamário) — abordagem que exige sensibilidade e comunicação respeitosa, incluindo uso obrigatório do nome social em todos os registros e formas de tratamento no serviço de saúde."
       },
       {
-        "titulo": "Determinantes sociais e vulnerabilidades",
-        "conteudo": "A população trans apresenta indicadores de saúde mental (ansiedade, depressão, ideação suicida) e exposição a violência significativamente piores que a população geral, fortemente associados ao estigma e à discriminação social — e não a uma característica intrínseca da identidade de gênero."
+        "titulo": "Diagnóstico",
+        "conteudo": "A abordagem diagnóstica no processo transexualizador do SUS é fundamentada em princípios de autonomia e despatologização — a hormonioterapia e o suporte psicossocial não exigem laudo psiquiátrico compulsório como pré-requisito único e definitivo para acesso ao cuidado, embora o acompanhamento multiprofissional (incluindo saúde mental, quando desejado pela pessoa) continue sendo parte importante do suporte oferecido ao longo do processo."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O processo transexualizador no SUS garante acesso a acompanhamento multiprofissional (saúde mental, endocrinologia para hormonioterapia quando indicada e desejada, e, quando indicado, acesso a cirurgias de afirmação de gênero), respeitando o tempo e a autonomia de decisão de cada pessoa quanto às intervenções desejadas, sem itinerário único e obrigatório imposto a todos os usuários do serviço."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "Sinais de sofrimento psíquico significativo, isolamento social ou ideação suicida em pessoas trans devem ser ativamente rastreados na consulta, considerando a vulnerabilidade aumentada dessa população a violência e discriminação."
+        "conteudo": "Sinais de sofrimento psíquico significativo, isolamento social ou ideação suicida em pessoas trans e travestis devem ser ativamente rastreados na consulta, considerando a vulnerabilidade aumentada dessa população a violência e discriminação — indicadores de saúde mental nessa população são significativamente piores que na população geral, fortemente associados ao estigma social e não a uma característica intrínseca da identidade de gênero em si."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A mudança de classificação na CID-11 (retirada do capítulo de transtornos mentais) é atualização de diretriz frequentemente cobrada em provas recentes. A obrigatoriedade do uso do nome social em todos os serviços de saúde, e o princípio de despatologização (sem exigência de laudo psiquiátrico compulsório para acesso a cuidado) também são pontos frequentemente exigidos."
       }
     ]
   },
