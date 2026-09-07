@@ -8,9 +8,6 @@ import * as revisao from "./views/revisao.js";
 import * as flashcards from "./views/flashcards.js";
 import * as questoes from "./views/questoes.js";
 import * as planejador from "./views/planejador.js";
-import * as guiaAB from "./views/guiaAB.js";
-import * as guiaUrgencia from "./views/guiaUrgencia.js";
-import * as prescricoes from "./views/prescricoes.js";
 
 const mainEl = document.getElementById("main-content");
 const sidebarNavEl = document.getElementById("sidebar-nav");
@@ -31,13 +28,6 @@ registerRoute("/residencia/flashcards", flashcards.renderLista, { title: "Flashc
 registerRoute("/residencia/flashcards/:deckId", flashcards.renderEstudo, { title: "Flashcards" });
 registerRoute("/residencia/questoes", questoes.renderLista, { title: "Questões" });
 registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "Planejador do dia" });
-
-registerRoute("/bolso/atencao-basica", guiaAB.renderLista, { title: "Atenção Básica" });
-registerRoute("/bolso/atencao-basica/:id", guiaAB.renderDetalhe, { title: "Atenção Básica" });
-registerRoute("/bolso/urgencia", guiaUrgencia.renderLista, { title: "Urgência e Emergência" });
-registerRoute("/bolso/urgencia/:id", guiaUrgencia.renderDetalhe, { title: "Urgência e Emergência" });
-registerRoute("/bolso/prescricoes", prescricoes.renderLista, { title: "Condutas rápidas" });
-registerRoute("/bolso/prescricoes/:id", prescricoes.renderDetalhe, { title: "Condutas rápidas" });
 
 // ---------- Navegação / sidebar / mobile ----------
 setNavigateCallback((path, meta) => {

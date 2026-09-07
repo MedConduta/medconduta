@@ -1,11 +1,10 @@
 /**
  * MedConduta — Service Worker
- * Cache-first para o app shell inteiro (o guia de bolso precisa funcionar
- * offline, à beira do leito). Requisições do mesmo domínio não pré-cacheadas
- * são armazenadas em runtime na primeira visita.
+ * Cache-first para o app shell inteiro. Requisições do mesmo domínio não
+ * pré-cacheadas são armazenadas em runtime na primeira visita.
  */
 
-const CACHE_VERSION = "medconduta-v39";
+const CACHE_VERSION = "medconduta-v40";
 
 const PRECACHE_URLS = [
   "./",
@@ -39,18 +38,11 @@ const PRECACHE_URLS = [
   "./app/views/flashcards.js",
   "./app/views/questoes.js",
   "./app/views/planejador.js",
-  "./app/views/guiaClinico.js",
-  "./app/views/guiaAB.js",
-  "./app/views/guiaUrgencia.js",
-  "./app/views/prescricoes.js",
 
   "./data/temas.json",
   "./data/flashcards.json",
   "./data/fluxogramas.json",
   "./data/questoes.json",
-  "./data/guia_ab.json",
-  "./data/guia_urgencia.json",
-  "./data/prescricoes.json",
 
   "./icons/icon.svg",
   "./icons/icon-maskable.svg",
