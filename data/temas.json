@@ -342,7 +342,7 @@
     "titulo": "AVC Isquêmico Agudo",
     "resumo": "Reconhecimento precoce, janela terapêutica e manejo inicial do AVC isquêmico.",
     "revisado": false,
-    "fonte": "Diretrizes da Sociedade Brasileira de Doencas Cerebrovasculares (SBDCV); AHA/ASA Guideline for Early Management of Acute Ischemic Stroke (2019, atualizacao 2023)",
+    "fonte": "Sociedade Brasileira de Doenças Cerebrovasculares; Diretrizes da American Heart Association/American Stroke Association (2019, atualização 2023); Ministério da Saúde — Protocolo de Manejo do AVC Agudo",
     "mnemonicos": [
       {
         "palavra": "FAST",
@@ -351,24 +351,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Reconhecimento inicial",
-        "conteudo": "Déficit neurológico focal de início súbito (fraqueza assimétrica, alteração de fala, desvio de rima) — \"tempo é cérebro\": cada minuto sem tratamento representa perda progressiva de neurônios."
+        "titulo": "Fisiopatologia",
+        "conteudo": "O AVC isquêmico resulta da interrupção do fluxo sanguíneo cerebral, mais comumente por trombose local sobre placa aterosclerótica, embolia de origem cardíaca (principalmente fibrilação atrial) ou de artérias proximais, ou por doença de pequenos vasos (lacunar, associada a hipertensão crônica). A área de isquemia apresenta um núcleo de necrose já irreversível e uma zona de penumbra ao redor, com tecido hipoperfundido mas ainda viável por tempo limitado — é essa penumbra que a terapia de reperfusão busca salvar, justificando a urgência extrema do tratamento (\"tempo é cérebro\")."
       },
       {
-        "titulo": "Avaliação na emergência",
-        "conteudo": "Definir com precisão o horário do último momento visto normal, realizar tomografia de crânio sem contraste em caráter de urgência para excluir hemorragia e aplicar a escala NIHSS para quantificar o déficit."
+        "titulo": "Quadro clínico",
+        "conteudo": "Déficit neurológico focal de início súbito é a apresentação característica, cuja topografia depende do território vascular acometido: fraqueza/dormência de um lado do corpo, alteração da fala (disartria ou afasia), desvio da rima labial, perda visual súbita, ou ataxia/vertigem (território vertebrobasilar). A escala de Cincinnati (assimetria facial, queda de braço, alteração da fala) é ferramenta de triagem pré-hospitalar rápida e amplamente utilizada."
       },
       {
-        "titulo": "Elegibilidade para reperfusão",
-        "conteudo": "Trombólise endovenosa considerada dentro da janela terapêutica estabelecida a partir do início dos sintomas, respeitando critérios de inclusão/exclusão. Trombectomia mecânica pode ser considerada em oclusões de grandes vasos, com janela mais ampla em casos selecionados."
+        "titulo": "Exame físico",
+        "conteudo": "A escala do NIHSS (National Institutes of Health Stroke Scale) quantifica objetivamente a gravidade do déficit neurológico e orienta decisões terapêuticas, além de permitir acompanhamento evolutivo padronizado. Hemiparesia contralateral à lesão (pela decussação das vias motoras), afasia (lesão hemisférica dominante, geralmente esquerda) e negligência/heminegligência (lesão de hemisfério não dominante, geralmente direito) são achados topograficamente informativos sobre a localização da lesão."
       },
       {
-        "titulo": "Manejo de PA e glicemia",
-        "conteudo": "Evitar redução abrupta da pressão arterial na fase aguda isquêmica, exceto se candidato à reperfusão ou PA extremamente elevada; manter controle glicêmico evitando tanto hiper quanto hipoglicemia."
+        "titulo": "Diagnóstico",
+        "conteudo": "A tomografia de crânio sem contraste é o exame inicial obrigatório e urgente, cujo principal objetivo não é confirmar a isquemia (que pode não aparecer nas primeiras horas) mas sim excluir hemorragia, contraindicação absoluta à trombólise. Uma tomografia sem sangramento em paciente com déficit focal agudo e janela temporal adequada já autoriza a trombólise, mesmo sem alterações isquêmicas visíveis ainda. Angiotomografia é utilizada para identificar oclusão de grande vaso, elegível a trombectomia mecânica."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "A trombólise endovenosa (alteplase ou tenecteplase) é indicada em até 4,5 horas do início dos sintomas (janela clássica, podendo se estender em casos selecionados por critérios de imagem avançada), após exclusão de contraindicações (hemorragia, cirurgia recente, anticoagulação terapêutica, entre outras). A trombectomia mecânica é indicada em oclusão de grande vaso proximal, com janela que pode se estender até 24 horas em pacientes cuidadosamente selecionados por imagem de perfusão que demonstre penumbra salvável. O controle pressórico na fase aguda é permissivo (não reduzir agressivamente a PA, exceto se for realizar trombólise, quando há limite máximo específico antes e depois do procedimento)."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Piora do nível de consciência ou surgimento de nova cefaleia intensa</span> pode indicar transformação hemorrágica ou herniação — reavaliação de imagem imediata."
+        "conteudo": "<span class=\"red-flag\">Déficit neurológico focal de início súbito, especialmente com menos de 4,5 horas de evolução</span>, é emergência absoluta — cada minuto de atraso reduz a chance de reperfusão bem-sucedida e aumenta a extensão da lesão definitiva, tornando o reconhecimento e o transporte rápido tão críticos quanto o próprio tratamento hospitalar."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A janela de 4,5 horas para trombólise (e a lista de contraindicações) e a janela estendida de até 24h para trombectomia em oclusão de grande vaso selecionada por imagem são cobranças certíssimas. É importante lembrar que a tomografia sem contraste normal não exclui AVC isquêmico agudo — sua função primária na urgência é excluir hemorragia, não confirmar isquemia, ponto frequentemente mal compreendido pelos candidatos."
       }
     ]
   },
@@ -1081,7 +1089,7 @@
     "titulo": "Meningite Bacteriana Aguda",
     "resumo": "Reconhecimento clínico, papel da punção lombar e tratamento antibiótico empírico precoce.",
     "revisado": false,
-    "fonte": "Ministerio da Saude - Guia de Vigilancia em Saude (Meningites); IDSA Practice Guidelines for Bacterial Meningitis",
+    "fonte": "Sociedade Brasileira de Infectologia; Ministério da Saúde — Guia de Vigilância em Saúde; IDSA Clinical Practice Guidelines for Bacterial Meningitis",
     "mnemonicos": [
       {
         "palavra": "TRÍADE CLÁSSICA",
@@ -1090,28 +1098,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Quadro clínico",
-        "conteudo": "Febre, cefaleia, rigidez de nuca, sinais de Kernig e Brudzinski, e alteração do nível de consciência — a tríade clássica nem sempre está completa."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A meningite bacteriana aguda resulta da invasão do espaço subaracnóideo por bactérias, mais comumente por disseminação hematogênica a partir de um foco distante (nasofaringe, na maioria dos casos) ou, mais raramente, por contiguidade (sinusite, otite) ou inoculação direta (trauma, neurocirurgia). Streptococcus pneumoniae e Neisseria meningitidis são os agentes mais comuns em adultos e crianças maiores fora do período neonatal; a resposta inflamatória exuberante no espaço subaracnóideo, mais do que a própria bactéria, é responsável por grande parte do dano neurológico (edema cerebral, aumento da pressão intracraniana, vasculite)."
       },
       {
-        "titulo": "Investigação",
-        "conteudo": "Punção lombar com análise do líquor é o exame-chave. Na presença de sinais de hipertensão intracraniana ou déficit neurológico focal, realizar TC de crânio antes da punção, sem atrasar o início do antibiótico."
+        "titulo": "Quadro clínico",
+        "conteudo": "A tríade clássica de febre, rigidez de nuca e alteração do nível de consciência está presente em apenas uma minoria dos casos quando os três achados são exigidos simultaneamente, mas a presença de pelo menos um deles associado a cefaleia tem alta sensibilidade combinada. Fotofobia, náuseas/vômitos e, na meningococcemia, um exantema petequial/purpúrico de rápida progressão (sinal de gravidade extrema e de pior prognóstico) completam o quadro clássico em muitos casos."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Rigidez de nuca é o achado mais valorizado; os sinais de Kernig (dor/resistência à extensão do joelho com o quadril fletido) e Brudzinski (flexão involuntária dos joelhos ao fletir passivamente o pescoço) são clássicos, porém pouco sensíveis isoladamente, não devendo ser usados para excluir o diagnóstico quando ausentes. Petéquias/púrpura de progressão rápida em paciente febril e toxemiado é achado de altíssima gravidade, fortemente sugestivo de meningococcemia."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "A punção lombar com análise do líquido cefalorraquidiano é o exame padrão-ouro, mostrando tipicamente pleocitose neutrofílica, glicose baixa (hipoglicorraquia) e proteína elevada no padrão bacteriano — diferente do padrão linfomonocitário com glicose normal característico da meningite viral. Tomografia de crânio antes da punção lombar é indicada apenas em situações específicas (imunossupressão, história de doença de SNC, papiledema, déficit focal, convulsão recente, rebaixamento importante do nível de consciência) para excluir risco de herniação — na ausência desses critérios, a punção não deve ser postergada pela tomografia."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Antibioticoterapia empírica deve ser iniciada o mais rápido possível diante de suspeita forte, sem aguardar confirmação laboratorial se houver qualquer atraso previsto; corticoide associado em casos selecionados."
-      },
-      {
-        "titulo": "Quimioprofilaxia de contactantes",
-        "conteudo": "Indicada para contactantes próximos conforme o agente etiológico identificado, especialmente na meningite meningocócica."
-      },
-      {
-        "titulo": "Meningite viral e encefalite herpética",
-        "conteudo": "A meningite viral (asséptica) costuma ter curso mais brando e autolimitado que a bacteriana, com líquor de celularidade discretamente elevada e predomínio linfomonocitário, glicose normal e proteína normal/discretamente elevada — perfil que ajuda a diferenciá-la da meningite bacteriana. A encefalite herpética (HSV-1) é a causa mais comum de encefalite viral esporádica grave, tipicamente com acometimento do lobo temporal (convulsões, alterações de comportamento/memória, afasia), e deve ser tratada empiricamente com aciclovir intravenoso assim que suspeitada, sem aguardar confirmação por PCR no líquor, pelo risco de sequelas graves ou óbito com o atraso terapêutico."
+        "conteudo": "Antibioticoterapia empírica endovenosa deve ser iniciada imediatamente após a suspeita clínica, idealmente logo após a coleta de hemoculturas e líquor — mas jamais adiada caso haja atraso na realização desses exames (por exemplo, aguardando tomografia prévia à punção), pois cada hora de atraso aumenta significativamente a mortalidade. O esquema empírico habitual associa cefalosporina de terceira geração (ceftriaxona) com vancomicina, ajustado após identificação do agente. Corticoide (dexametasona) associado ao antibiótico, idealmente antes ou junto à primeira dose, reduz complicações neurológicas em meningite pneumocócica."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Petéquias ou púrpura associadas a febre e rigidez de nuca</span> sugerem meningococcemia, com risco de evolução rápida para choque séptico."
+        "conteudo": "<span class=\"red-flag\">Febre, cefaleia e rigidez de nuca associadas a exantema petequial/purpúrico de progressão rápida</span> caracterizam meningococcemia com risco de choque séptico fulminante (síndrome de Waterhouse-Friderichsen, com hemorragia adrenal bilateral) — exige antibioticoterapia imediatíssima, sem qualquer atraso para exames complementares."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A regra de nunca atrasar o antibiótico empírico aguardando tomografia ou punção lombar em paciente grave é a cobrança mais importante e recorrente do tema — a sequência correta prioriza hemocultura rápida seguida de antibiótico imediato quando há qualquer impedimento à punção imediata. Os critérios que indicam tomografia antes da punção lombar (imunossupressão, sinais focais, papiledema, convulsão recente) também são frequentemente exigidos."
       }
     ]
   },
@@ -1630,7 +1642,7 @@
     "titulo": "AVC Hemorrágico",
     "resumo": "Reconhecimento clínico, causas principais e manejo inicial do AVC hemorrágico.",
     "revisado": false,
-    "fonte": "Diretrizes da Sociedade Brasileira de Doencas Cerebrovasculares; AHA/ASA Guideline for Management of Spontaneous Intracerebral Hemorrhage (2022)",
+    "fonte": "Sociedade Brasileira de Doenças Cerebrovasculares; AHA/ASA Guideline for the Management of Spontaneous Intracerebral Hemorrhage (2022)",
     "mnemonicos": [
       {
         "palavra": "HAS = CAUSA MAIS COMUM",
@@ -1639,24 +1651,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Quadro clínico",
-        "conteudo": "Cefaleia intensa de início súbito, déficit neurológico focal e possível rebaixamento do nível de consciência."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A hemorragia intraparenquimatosa espontânea resulta mais comumente da ruptura de pequenos vasos perfurantes cronicamente lesados pela hipertensão arterial (localização típica em núcleos da base, tálamo, ponte e cerebelo); a angiopatia amiloide cerebral é causa relevante em idosos, tipicamente com hemorragias lobares recorrentes. A hemorragia subaracnóidea, mais comumente por ruptura de aneurisma sacular intracraniano, causa irritação meníngea direta pelo sangue no espaço subaracnóideo, com risco de vasoespasmo secundário e isquemia tardia nos dias subsequentes ao sangramento inicial."
       },
       {
-        "titulo": "Causas principais",
-        "conteudo": "Hipertensão arterial mal controlada é a causa mais comum de hemorragia intraparenquimatosa; a hemorragia subaracnóidea está mais associada à ruptura de aneurisma cerebral (\"a pior cefaleia da vida\")."
+        "titulo": "Quadro clínico",
+        "conteudo": "Cefaleia intensa de início súbito (\"a pior dor de cabeça da vida\", clássica da hemorragia subaracnóidea) associada a rebaixamento do nível de consciência e déficit neurológico focal, com evolução tipicamente mais rápida e grave que o AVC isquêmico, pelo efeito de massa e aumento agudo da pressão intracraniana causado pelo próprio sangramento. Náuseas e vômitos são frequentes pela hipertensão intracraniana associada."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Rigidez de nuca e outros sinais de irritação meníngea são característicos da hemorragia subaracnóidea, podendo estar ausentes nas primeiras horas. Nível de consciência reduzido (avaliado pela escala de Glasgow) e déficits focais correlacionam-se com a localização e o volume do sangramento na hemorragia intraparenquimatosa. Sinais de hipertensão intracraniana (midríase unilateral, postura de descerebração) indicam gravidade extrema e risco iminente de herniação."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Tomografia de crânio sem contraste identifica prontamente a hemorragia e orienta a conduta inicial."
+        "conteudo": "A tomografia de crânio sem contraste é o exame padrão-ouro inicial, com altíssima sensibilidade para detecção de sangue tanto intraparenquimatoso quanto subaracnóideo nas primeiras 6-24 horas. Quando a tomografia é negativa mas a suspeita clínica de hemorragia subaracnóidea permanece alta (especialmente após 6h do início da cefaleia), a punção lombar buscando xantocromia (pigmento amarelado do líquor pela degradação de hemácias, distinguindo de punção traumática) é o próximo passo. Angiotomografia ou angiografia digital são indicadas para identificar aneurisma ou malformação vascular subjacente na hemorragia subaracnóidea."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Controle cuidadoso da pressão arterial, reversão de anticoagulação se em uso, e avaliação neurocirúrgica conforme volume e localização do hematoma."
+        "conteudo": "O manejo inicial da hemorragia intraparenquimatosa inclui controle pressórico mais agressivo que no AVC isquêmico (meta de PA sistólica geralmente <140mmHg, para reduzir expansão do hematoma), reversão urgente de qualquer anticoagulação em uso, e avaliação neurocirúrgica para drenagem em casos selecionados (hematomas cerebelares grandes com efeito de massa, por exemplo). Na hemorragia subaracnóidea aneurismática, o aneurisma deve ser tratado precocemente (clipagem cirúrgica ou embolização endovascular) para prevenir ressangramento, e a nimodipina é utilizada rotineiramente para reduzir o risco de vasoespasmo cerebral tardio e isquemia secundária."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Rebaixamento progressivo do nível de consciência</span> sugere herniação cerebral iminente — emergência neurocirúrgica."
+        "conteudo": "<span class=\"red-flag\">Cefaleia súbita e intensa (\"a pior da vida\") associada a rigidez de nuca</span> deve levantar suspeita imediata de hemorragia subaracnóidea, mesmo com tomografia inicial normal — a punção lombar buscando xantocromia não deve ser dispensada diante de alta suspeita clínica, pelo risco de ressangramento fatal de aneurisma não identificado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A meta de controle pressórico mais agressivo na hemorragia intraparenquimatosa (diferente do manejo permissivo do AVC isquêmico) é cobrança recorrente e ponto central de diferenciação entre os dois temas. O uso de nimodipina para prevenção de vasoespasmo na hemorragia subaracnóidea, e a necessidade de punção lombar quando a tomografia é negativa mas a suspeita permanece alta, também são frequentemente exigidos."
       }
     ]
   },
@@ -1667,7 +1687,7 @@
     "titulo": "Crise Convulsiva e Estado de Mal Epiléptico",
     "resumo": "Definição do estado de mal epiléptico e sequência terapêutica escalonada.",
     "revisado": false,
-    "fonte": "Liga Brasileira de Epilepsia; AES/ACEP Guideline for the Treatment of Status Epilepticus (2016)",
+    "fonte": "Liga Brasileira de Epilepsia; ILAE (International League Against Epilepsy) — Classificação de Crises e Status Epilepticus (2017)",
     "mnemonicos": [
       {
         "palavra": "5 MINUTOS",
@@ -1676,24 +1696,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Definição",
-        "conteudo": "Estado de mal epiléptico: crise convulsiva contínua por mais de 5 minutos, ou crises repetidas sem recuperação da consciência entre os episódios."
+        "titulo": "Fisiopatologia",
+        "conteudo": "As crises epilépticas resultam de descargas elétricas neuronais excessivas e sincronizadas, classificadas em focais (originadas em uma área cortical específica, podendo ou não evoluir para bilateral tônico-clônica) ou generalizadas (envolvimento bi-hemisférico desde o início). O estado de mal epiléptico (status epilepticus) é definido operacionalmente como crise contínua por mais de 5 minutos, ou crises recorrentes sem recuperação completa da consciência entre elas — esse limiar reduzido (antes considerado 30 minutos) reflete o reconhecimento de que o dano neuronal se inicia precocemente e a resposta ao tratamento piora progressivamente com o tempo não tratado."
       },
       {
-        "titulo": "Abordagem inicial",
-        "conteudo": "Garantir via aérea e proteção contra trauma, associados à administração de benzodiazepínico (primeira linha) para interromper a crise."
+        "titulo": "Quadro clínico",
+        "conteudo": "A crise tônico-clônica generalizada clássica apresenta perda súbita da consciência, fase tônica (rigidez generalizada) seguida de fase clônica (abalos musculares rítmicos), com posterior período pós-ictal de confusão/sonolência que pode durar minutos a horas. Mordedura de língua lateral e liberação esfincteriana são achados sugestivos, embora não exclusivos de crise epiléptica verdadeira (auxiliam na diferenciação com crise não epiléptica psicogênica)."
       },
       {
-        "titulo": "Segunda linha",
-        "conteudo": "Persistindo a crise após benzodiazepínico, associar fenitoína, valproato ou levetiracetam endovenosos."
+        "titulo": "Exame físico",
+        "conteudo": "Durante o período pós-ictal, confusão mental transitória é esperada e não deve ser confundida com déficit neurológico permanente. A paralisia de Todd (déficit motor focal transitório pós-ictal, geralmente resolvendo em até 24-48 horas) pode mimetizar AVC agudo, sendo diferencial importante em paciente com déficit focal após evento convulsivo presenciado ou suspeitado."
       },
       {
-        "titulo": "Investigar causas",
-        "conteudo": "Hipoglicemia, distúrbios eletrolíticos, abstinência alcoólica/de benzodiazepínicos e lesões estruturais devem ser sempre investigados e tratados."
+        "titulo": "Diagnóstico",
+        "conteudo": "O eletroencefalograma é o exame de escolha para caracterização do padrão de crise e para apoio ao diagnóstico de epilepsia, embora um EEG intercrítico normal não exclua o diagnóstico. Neuroimagem (ressonância magnética preferencialmente) é indicada em toda primeira crise não provocada em adulto, para investigar lesão estrutural subjacente. Investigação de causas metabólicas/tóxicas agudas (glicemia, eletrólitos, função renal/hepática, triagem toxicológica) deve ser sempre realizada diante de primeira crise, já que muitas causas são agudamente reversíveis e não representam epilepsia verdadeira."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "No estado de mal epiléptico, o tratamento segue sequência escalonada por tempo: benzodiazepínico (diazepam ou lorazepam endovenoso) como primeira linha imediata; se a crise persistir após a dose adequada de benzodiazepínico, segue-se para um anticonvulsivante de segunda linha (fenitoína, ácido valproico, ou levetiracetam endovenoso); a persistência além disso caracteriza status refratário, exigindo anestesia geral com suporte em UTI. Fora da urgência, epilepsia estabelecida é tratada com anticonvulsivante oral de manutenção, escolhido conforme o tipo de crise (focal versus generalizada) e perfil do paciente."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Estado de mal epiléptico refratário às medicações de primeira e segunda linha</span> exige indução de anestesia geral em ambiente de terapia intensiva."
+        "conteudo": "<span class=\"red-flag\">Crise convulsiva com duração maior que 5 minutos, ou crises recorrentes sem recuperação completa entre elas</span>, caracteriza estado de mal epiléptico — emergência neurológica que exige tratamento imediato conforme o algoritmo escalonado, sem aguardar maior duração para iniciar a intervenção farmacológica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O novo limiar de 5 minutos para definição operacional de status epilepticus (substituindo os antigos 30 minutos) é atualização de diretriz frequentemente cobrada em provas recentes. A sequência terapêutica escalonada (benzodiazepínico → segunda linha → anestesia geral) e a necessidade de investigar causas agudas reversíveis em toda primeira crise não provocada também são pontos centrais."
       }
     ]
   },
@@ -3822,7 +3850,7 @@
     "titulo": "Cefaleias Primárias: Enxaqueca, Tensional e em Salvas",
     "resumo": "Diferenciação clínica entre os tipos de cefaleia primária e os sinais de alarme (SNOOP) para cefaleia secundária.",
     "revisado": false,
-    "fonte": "Sociedade Brasileira de Cefaleia — Recomendações para o Tratamento da Migrânea 2022; International Classification of Headache Disorders (ICHD-3)",
+    "fonte": "Sociedade Brasileira de Cefaleia; International Classification of Headache Disorders (ICHD-3)",
     "mnemonicos": [
       {
         "palavra": "SNOOP",
@@ -3831,24 +3859,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Enxaqueca (migrânea)",
-        "conteudo": "Cefaleia latejante, geralmente unilateral, de moderada a forte intensidade, que piora com atividade física de rotina, associada a náusea/vômito e fotofobia/fonofobia. Pode ou não ser precedida de aura — sintomas neurológicos focais transitórios, mais comumente visuais."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A enxaqueca (migrânea) envolve ativação do sistema trigeminovascular com liberação de neuropeptídeos vasoativos (CGRP entre os mais estudados), causando inflamação neurogênica e dor; a fase de aura, quando presente, relaciona-se a um fenômeno de depressão cortical alastrante. A cefaleia tensional, a mais prevalente na população geral, envolve sensibilização de estruturas miofasciais pericranianas e mecanismos centrais de modulação da dor. A cefaleia em salvas, mais rara, envolve o hipotálamo e o sistema trigeminoautonômico, explicando sua característica periodicidade circadiana/sazonal e os sintomas autonômicos associados."
       },
       {
-        "titulo": "Cefaleia do tipo tensional",
-        "conteudo": "Dor em aperto/pressão, bilateral, de intensidade leve a moderada, que não piora com atividade física de rotina e sem náusea significativa. É o tipo de cefaleia primária mais prevalente na população geral."
+        "titulo": "Quadro clínico",
+        "conteudo": "Enxaqueca: dor pulsátil, unilateral, moderada a intensa, associada a náuseas/vômitos e foto/fonofobia, piorando com atividade física — pode ser precedida de aura (visual mais comum, com escotomas cintilantes). Cefaleia tensional: dor em aperto/pressão, bilateral, leve a moderada, sem os sintomas associados proeminentes da enxaqueca, geralmente não incapacitante. Cefaleia em salvas: dor excruciante, estritamente unilateral periorbitária, em crises curtas (15-180 minutos) e recorrentes em salvas por semanas, associada a sintomas autonômicos ipsilaterais (lacrimejamento, congestão nasal, ptose)."
       },
       {
-        "titulo": "Cefaleia em salvas",
-        "conteudo": "Dor unilateral periorbitária/temporal, de intensidade muito forte, em crises de curta duração (15-180 minutos), associada a sintomas autonômicos ipsilaterais (lacrimejamento, congestão nasal, ptose, miose). Predomina no sexo masculino, com padrão cíclico característico (\"salvas\")."
+        "titulo": "Exame físico",
+        "conteudo": "O exame neurológico é tipicamente normal nas cefaleias primárias entre e durante as crises (exceto sinais autonômicos transitórios na cefaleia em salvas, como ptose e miose ipsilateral durante a crise, semelhantes a uma síndrome de Horner parcial e transitória). Um exame neurológico anormal ou a presença de sinais de alarme deve sempre levantar suspeita de cefaleia secundária, exigindo investigação adicional antes de assumir diagnóstico primário."
       },
       {
-        "titulo": "Sinais de alarme (SNOOP) para cefaleia secundária",
-        "conteudo": "Systemic symptoms (febre, perda de peso), Neurologic signs (déficit focal ao exame), Onset thunderclap (pior cefaleia da vida, início súbito em segundos), Older age (início após os 50 anos), Pattern change (mudança do padrão habitual da dor) — presença de qualquer um exige investigação com neuroimagem."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico das cefaleias primárias é clínico, baseado nos critérios da Classificação Internacional de Cefaleias (ICHD-3), sem necessidade de exame de imagem de rotina quando o quadro é típico e sem sinais de alarme. Os sinais de alarme que justificam investigação (\"red flags\" mnemonicamente resumidos em SNOOP: Systemic symptoms, Neurologic signs, Onset sudden/thunderclap, Older age de início >50 anos, Pattern change) direcionam a necessidade de neuroimagem para excluir causa secundária."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O tratamento agudo da enxaqueca inclui analgésicos comuns/AINEs para crises leves e triptanos (agonistas serotoninérgicos) para crises moderadas a graves; tratamento profilático (betabloqueador, topiramato, antidepressivos tricíclicos, ou anticorpos anti-CGRP em casos refratários) é indicado quando há frequência elevada de crises ou impacto funcional significativo. Cefaleia tensional responde a analgésicos simples/AINEs na crise aguda, com medidas comportamentais para prevenção. Cefaleia em salvas tem no oxigênio a 100% de alto fluxo e no sumatriptano subcutâneo as opções agudas mais eficazes, com verapamil como profilático de escolha durante o período de salva."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Cefaleia thunderclap</span> (pico de intensidade em segundos a poucos minutos) é emergência neurológica até prova em contrário, com principal suspeita de hemorragia subaracnóidea."
+        "conteudo": "<span class=\"red-flag\">Cefaleia de início súbito e intensidade máxima (\"thunderclap\"), cefaleia associada a déficit neurológico focal ou febre, ou mudança no padrão de cefaleia crônica prévia</span> são sinais de alarme (mnemônico SNOOP) que exigem investigação por neuroimagem para excluir causa secundária grave (hemorragia subaracnóidea, meningite, lesão expansiva) antes de assumir diagnóstico de cefaleia primária."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O mnemônico SNOOP para sinais de alarme em cefaleia é cobrança certa e recorrente. A diferenciação semiológica entre os três principais tipos de cefaleia primária (unilateral pulsátil com náusea/fotofobia na enxaqueca; bilateral em aperto sem sintomas associados na tensional; unilateral periorbitária excruciante com sinais autonômicos na em salvas) também é ponto central e praticamente garantido em qualquer prova sobre o tema."
       }
     ]
   },
@@ -3859,7 +3895,7 @@
     "titulo": "Síndromes Demenciais: Alzheimer e Diferenciais",
     "resumo": "Diferenciação entre demência e delirium, e entre os principais subtipos de demência (Alzheimer, vascular, corpos de Lewy, frontotemporal).",
     "revisado": false,
-    "fonte": "Academia Brasileira de Neurologia — Diretrizes de Diagnóstico de Demência 2023; NIA-AA Criteria for Alzheimer's Disease",
+    "fonte": "Academia Brasileira de Neurologia — Diretrizes de Demência; NIA-AA Criteria for Alzheimer's Disease",
     "mnemonicos": [
       {
         "palavra": "Demência é crônica, Delirium é agudo",
@@ -3868,24 +3904,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Diferenciação de delirium",
-        "conteudo": "Demência é um declínio cognitivo crônico e progressivo, geralmente sem rebaixamento do nível de consciência. Delirium é agudo, flutuante ao longo do dia, e cursa com alteração da atenção/consciência. Essa distinção é essencial, pois o delirium costuma ter uma causa clínica subjacente tratável."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A doença de Alzheimer, causa mais comum de demência, caracteriza-se por acúmulo extracelular de placas de proteína beta-amiloide e emaranhados neurofibrilares intracelulares de proteína tau hiperfosforilada, causando perda neuronal progressiva, inicialmente mais proeminente no hipocampo (explicando o comprometimento precoce da memória episódica). A demência vascular resulta de lesões cerebrovasculares cumulativas (múltiplos infartos ou doença de pequenos vasos crônica); a demência de corpos de Lewy envolve acúmulo de alfa-sinucleína, compartilhando substrato patológico com a doença de Parkinson."
       },
       {
-        "titulo": "Doença de Alzheimer",
-        "conteudo": "Causa mais comum de demência. Início insidioso com comprometimento predominante da memória episódica recente, progredindo lentamente para outros domínios cognitivos — linguagem, funções executivas, orientação espacial."
+        "titulo": "Quadro clínico",
+        "conteudo": "Alzheimer manifesta-se com declínio insidioso e progressivo da memória episódica recente (esquecimento de eventos recentes, repetição de perguntas), evoluindo posteriormente para comprometimento de outras funções cognitivas (linguagem, funções executivas, orientação espacial). Demência vascular tipicamente apresenta curso em degraus (piora abrupta associada a eventos vasculares, com platôs entre eles) e maior proeminência de disfunção executiva desde o início. Demência de corpos de Lewy associa flutuação cognitiva marcante, alucinações visuais bem formadas e parkinsonismo, frequentemente antes ou concomitante ao declínio cognitivo."
       },
       {
-        "titulo": "Demência vascular",
-        "conteudo": "Segunda causa mais comum de demência. Início mais abrupto ou em degraus, associado a eventos cerebrovasculares prévios, com déficits focais compatíveis com os territórios vasculares acometidos."
+        "titulo": "Exame físico",
+        "conteudo": "Testes cognitivos padronizados à beira do leito (Mini Exame do Estado Mental, teste do desenho do relógio) auxiliam o rastreamento inicial e a quantificação da gravidade. Sinais focais neurológicos (déficit motor, alterações de marcha) sugerem componente vascular associado. Parkinsonismo (rigidez, bradicinesia) associado a flutuação cognitiva e alucinações visuais sugere demência de corpos de Lewy — importante reconhecer essa associação, pois esses pacientes têm sensibilidade extrema e risco de piora grave com uso de antipsicóticos típicos."
       },
       {
-        "titulo": "Demência com corpos de Lewy e frontotemporal",
-        "conteudo": "Corpos de Lewy: flutuação cognitiva, alucinações visuais bem formadas precoces e parkinsonismo. Frontotemporal: alterações comportamentais/de personalidade e de linguagem precoces e proeminentes, com relativa preservação da memória no início do quadro."
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é predominantemente clínico, baseado em história de declínio cognitivo progressivo que interfere na funcionalidade, com exclusão de causas reversíveis (hipotireoidismo, deficiência de B12, neurossífilis, hidrocefalia de pressão normal, depressão — a chamada \"pseudodemência\"), investigadas por exames laboratoriais de rotina e neuroimagem estrutural na avaliação inicial de todo paciente com quadro demencial. Biomarcadores de líquor ou PET amiloide são reservados a casos de dúvida diagnóstica ou pesquisa, não sendo exames de rotina na prática clínica geral."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Não há tratamento curativo para as demências neurodegenerativas primárias. Inibidores da colinesterase (donepezila, rivastigmina) e memantina (antagonista NMDA, usada em fases mais avançadas) oferecem benefício sintomático modesto na doença de Alzheimer, sem modificar o curso da doença. O controle rigoroso de fatores de risco cardiovascular é fundamental na demência vascular para prevenir progressão por novos eventos. Antipsicóticos devem ser evitados na demência de corpos de Lewy (risco de reação de hipersensibilidade grave), preferindo-se, quando necessário, agentes com menor efeito extrapiramidal em dose mínima eficaz."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Demência de início rápido (semanas a poucos meses)</span> foge do padrão esperado das demências degenerativas e exige investigação de causas reversíveis/tratáveis: hipotireoidismo, deficiência de vitamina B12, hidrocefalia de pressão normal, neoplasia, causas infecciosas ou autoimunes."
+        "conteudo": "Declínio cognitivo de instalação rápida (semanas a poucos meses), associado a outros sintomas neurológicos ou sistêmicos, deve motivar investigação ativa de causas potencialmente reversíveis ou de demências rapidamente progressivas (como a doença de Creutzfeldt-Jakob) — diferente do curso tipicamente insidioso e lentamente progressivo esperado nas demências neurodegenerativas primárias comuns."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A exclusão obrigatória de causas reversíveis de demência (hipotireoidismo, deficiência de B12, hidrocefalia de pressão normal) antes de firmar diagnóstico de demência neurodegenerativa primária é cobrança certa. A tríade da demência de corpos de Lewy (flutuação cognitiva, alucinações visuais, parkinsonismo) e a contraindicação a antipsicóticos típicos nessa condição específica também são pontos frequentemente exigidos."
       }
     ]
   },
@@ -3896,7 +3940,7 @@
     "titulo": "Doenças Desmielinizantes: Esclerose Múltipla",
     "resumo": "Nevrite óptica e outros surtos focais, critérios de McDonald e tratamento de surto x doença modificadora.",
     "revisado": false,
-    "fonte": "Academia Brasileira de Neurologia — Consenso de Esclerose Múltipla 2022; McDonald Criteria 2017 Revision",
+    "fonte": "Academia Brasileira de Neurologia; Critérios de McDonald revisados (2017) para Esclerose Múltipla",
     "mnemonicos": [
       {
         "palavra": "Espaço e Tempo",
@@ -3905,24 +3949,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Epidemiologia e fisiopatologia",
-        "conteudo": "Doença autoimune que causa desmielinização multifocal do sistema nervoso central. Predomínio em mulheres jovens (20-40 anos), com maior prevalência em regiões de maior latitude."
+        "titulo": "Fisiopatologia",
+        "conteudo": "A esclerose múltipla é uma doença autoimune que causa desmielinização inflamatória do sistema nervoso central, com formação de placas em diferentes localizações (substância branca periventricular, nervo óptico, tronco encefálico, medula espinhal) e em diferentes momentos ao longo do tempo — esses dois conceitos, disseminação no espaço e disseminação no tempo, são centrais para o diagnóstico. Predomina em mulheres jovens (segunda a quarta décadas de vida), com influência genética e ambiental (incluindo relação com latitude geográfica e deficiência de vitamina D) na sua patogênese."
       },
       {
-        "titulo": "Apresentação clínica",
-        "conteudo": "Surtos de disfunção neurológica focal: nevrite óptica (perda visual dolorosa unilateral), mielite transversa parcial, síndromes de tronco encefálico ou cerebelo. Padrão clássico de surto-remissão nas fases iniciais da doença."
+        "titulo": "Quadro clínico",
+        "conteudo": "Manifesta-se por surtos de disfunção neurológica focal com recuperação parcial ou completa entre eles (forma remitente-recorrente, a mais comum ao diagnóstico), podendo incluir neurite óptica (perda visual unilateral dolorosa), mielite transversa parcial (fraqueza/parestesias em membros, disfunção esfincteriana), diplopia por oftalmoplegia internuclear, e ataxia cerebelar. O fenômeno de Uhthoff (piora transitória de sintomas neurológicos prévios com aumento da temperatura corporal, como banho quente ou exercício) é característico, embora não exclusivo, da esclerose múltipla."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Os achados variam conforme a localização das placas ativas e antigas: nistagmo, disartria escandida e ataxia (envolvimento cerebelar); espasticidade e sinais de liberação piramidal (envolvimento medular); diminuição da acuidade visual com defeito pupilar aferente relativo (neurite óptica). A oftalmoplegia internuclear (incapacidade de adução do olho ipsilateral associada a nistagmo do olho contralateral em abdução, por lesão do fascículo longitudinal medial) é achado clássico e relativamente específico de esclerose múltipla em pacientes jovens."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Os critérios de McDonald combinam disseminação no espaço (lesões em diferentes localizações do SNC) e no tempo (lesões surgindo em momentos diferentes), evidenciadas por ressonância magnética e apoiadas pela presença de bandas oligoclonais no líquor."
+        "conteudo": "A ressonância magnética de crânio e medula é o exame central, evidenciando lesões desmielinizantes características (periventriculares, justacorticais, infratentoriais, medulares). O diagnóstico segue os critérios de McDonald revisados, que permitem confirmação já no primeiro surto clínico quando a ressonância demonstra disseminação no espaço e no tempo (esta última evidenciada, por exemplo, pela presença simultânea de lesões captantes e não captantes de contraste, indicando atividade em momentos diferentes). Bandas oligoclonais no líquor, quando positivas, reforçam o diagnóstico e têm valor prognóstico."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Corticoide em altas doses para o tratamento do surto agudo. Drogas modificadoras de doença (interferons, fingolimode, natalizumabe, entre outras) reduzem a frequência de surtos e a progressão da incapacidade a longo prazo."
+        "conteudo": "Surtos agudos são tratados com corticoide em pulsoterapia (metilprednisolona endovenosa em altas doses), que acelera a recuperação do surto sem impacto comprovado no curso a longo prazo da doença. O tratamento modificador de doença (interferons, fumarato de dimetila, fingolimode, anticorpos monoclonais como natalizumabe e ocrelizumabe, entre outras opções crescentes) deve ser iniciado precocemente após o diagnóstico, reduzindo a frequência de surtos e a progressão da incapacidade a longo prazo — a escolha é individualizada conforme atividade da doença e perfil de risco do paciente."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Nevrite óptica</span> (perda visual unilateral dolorosa, que piora aos movimentos oculares) em adulto jovem deve levantar suspeita de esclerose múltipla e motivar investigação com ressonância magnética."
+        "conteudo": "Perda visual unilateral dolorosa de instalação subaguda em mulher jovem deve levantar suspeita de neurite óptica, frequentemente a primeira manifestação de esclerose múltipla, justificando investigação neurológica e por imagem completa mesmo diante de um evento aparentemente isolado e oftalmológico."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os conceitos de disseminação no espaço e no tempo dos critérios de McDonald são cobrança central e recorrente. A oftalmoplegia internuclear e o fenômeno de Uhthoff são achados semiológicos clássicos frequentemente cobrados como pistas diagnósticas de esclerose múltipla em questões de caso clínico envolvendo pacientes jovens com sintomas neurológicos flutuantes."
       }
     ]
   },
@@ -7002,7 +7054,7 @@
     "titulo": "Síndrome de Guillain-Barré",
     "resumo": "Fraqueza ascendente com arreflexia após infecção prévia, dissociação albumino-citológica e monitorização respiratória.",
     "revisado": false,
-    "fonte": "Academia Brasileira de Neurologia; AAN Practice Guideline Update on Guillain-Barré Syndrome",
+    "fonte": "Academia Brasileira de Neurologia; Brighton Criteria para Síndrome de Guillain-Barré",
     "mnemonicos": [
       {
         "palavra": "Sobe e some o reflexo",
@@ -7012,23 +7064,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "Polirradiculoneuropatia desmielinizante inflamatória aguda, autoimune, frequentemente desencadeada por infecção prévia (mais classicamente Campylobacter jejuni, mas também vírus respiratórios/gastrointestinais) por mimetismo molecular."
+        "conteudo": "A síndrome de Guillain-Barré é uma polirradiculoneuropatia inflamatória aguda de mecanismo autoimune, geralmente desencadeada por mimetismo molecular após infecção prévia (Campylobacter jejuni é o agente mais associado, também citomegalovírus, Zika e, mais recentemente, associação com determinadas vacinas), com anticorpos direcionados contra componentes da mielina (forma desmielinizante, mais comum) ou do próprio axônio (formas axonais, mais frequentes em determinadas regiões geográficas e geralmente de pior prognóstico) dos nervos periféricos."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Fraqueza muscular ascendente e simétrica (inicia em membros inferiores e progride para superiores/tronco/face), associada a arreflexia/hiporreflexia profunda. Sintomas sensitivos geralmente discretos comparados à fraqueza motora."
+        "conteudo": "Fraqueza muscular ascendente e simétrica, tipicamente iniciando em membros inferiores e progredindo proximalmente ao longo de dias, associada a arreflexia (ou hiporreflexia) e comprometimento sensitivo variável (parestesias mais que déficit sensitivo objetivo franco). O comprometimento de nervos cranianos (paralisia facial bilateral, disfagia) e a progressão para insuficiência respiratória por fraqueza da musculatura respiratória são complicações graves que exigem monitorização ativa."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Fraqueza flácida simétrica e ascendente associada a arreflexia profunda difusa é o achado semiológico central e mais valorizado. A medida seriada da capacidade vital forçada é fundamental para monitorização da função respiratória e antecipação de necessidade de suporte ventilatório, já que a fraqueza respiratória pode evoluir rapidamente mesmo em pacientes aparentemente estáveis nos membros."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Dissociação albumino-citológica no líquor (proteína elevada com celularidade normal ou pouco alterada) é o achado clássico, embora possa estar ausente na primeira semana. Eletroneuromiografia confirma padrão de desmielinização."
+        "conteudo": "A análise do líquido cefalorraquidiano classicamente mostra dissociação albumino-citológica (proteína elevada com celularidade normal ou discretamente aumentada), achado característico embora possa estar ausente na primeira semana de sintomas. Estudos de eletroneuromiografia confirmam o padrão de desmielinização ou lesão axonal e ajudam a definir o subtipo e o prognóstico."
       },
       {
-        "titulo": "Tratamento e monitorização",
-        "conteudo": "Imunoglobulina intravenosa ou plasmaférese são igualmente eficazes e devem ser iniciadas precocemente. Corticoide NÃO tem benefício comprovado. Monitorização respiratória seriada é essencial, pelo risco de insuficiência respiratória."
+        "titulo": "Tratamento",
+        "conteudo": "Imunoglobulina endovenosa ou plasmaférese são os tratamentos de eficácia comprovada e equivalente, devendo ser iniciados precocemente em pacientes com comprometimento funcional significativo (incapacidade de deambular sem apoio) — corticoide isoladamente não tem benefício comprovado nessa condição, ao contrário de outras neuropatias inflamatórias. Monitorização respiratória rigorosa com capacidade vital forçada seriada é essencial, com intubação eletiva precoce (antes da falência respiratória franca) quando os parâmetros indicam deterioração iminente."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Fraqueza da musculatura respiratória com queda da capacidade vital forçada</span> exige internação em UTI e pode necessitar ventilação mecânica precoce, antes que ocorra falência respiratória franca."
+        "conteudo": "<span class=\"red-flag\">Progressão rápida da fraqueza, envolvimento de musculatura bulbar (disfagia, disartria), ou queda da capacidade vital forçada</span> indica risco iminente de insuficiência respiratória, exigindo monitorização em ambiente de terapia intensiva e consideração precoce de suporte ventilatório antes da falência respiratória se instalar de forma abrupta."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A dissociação albumino-citológica no líquor é cobrança certíssima e um dos achados mais decorados da neurologia em provas de residência. A monitorização seriada da capacidade vital forçada como ferramenta para antecipar necessidade de ventilação mecânica, e a ausência de benefício do corticoide isolado nessa condição (diferente de outras neuropatias inflamatórias), também são pontos frequentemente exigidos."
       }
     ]
   },
@@ -7048,24 +7108,32 @@
     ],
     "secoes": [
       {
-        "titulo": "Quadro clínico clássico",
-        "conteudo": "Bradicinesia (obrigatória para o diagnóstico), rigidez (tipo \"roda denteada\") e tremor de repouso (assimétrico, que diminui com o movimento voluntário, ao contrário do tremor essencial). Instabilidade postural surge em fases mais avançadas."
-      },
-      {
         "titulo": "Fisiopatologia",
-        "conteudo": "Degeneração progressiva de neurônios dopaminérgicos da substância negra, levando à deficiência de dopamina nos núcleos da base. O diagnóstico é eminentemente clínico, sem exame confirmatório de rotina."
+        "conteudo": "A doença de Parkinson resulta da degeneração progressiva dos neurônios dopaminérgicos da substância negra pars compacta, com formação de agregados intracelulares de alfa-sinucleína (corpos de Lewy). A deficiência de dopamina no circuito dos núcleos da base desregula o controle do movimento voluntário, explicando a tríade motora característica da doença — os sintomas motores só se manifestam clinicamente após perda de aproximadamente 60-80% dos neurônios dopaminérgicos, refletindo uma longa fase pré-clínica de neurodegeneração silenciosa."
       },
       {
-        "titulo": "Sintomas não motores",
-        "conteudo": "Frequentemente precedem os sintomas motores em anos: hiposmia, constipação intestinal, transtorno comportamental do sono REM e depressão são pistas precoces importantes."
+        "titulo": "Quadro clínico",
+        "conteudo": "A tríade motora clássica combina bradicinesia (lentidão dos movimentos, obrigatória para o diagnóstico), rigidez (em \"roda denteada\") e tremor de repouso (assimétrico, tipicamente melhora com o movimento voluntário, diferente do tremor essencial que piora com a ação). Sintomas não motores frequentemente precedem os motores em anos: hiposmia, constipação, transtorno comportamental do sono REM e depressão são pistas precoces reconhecidas cada vez mais na literatura."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Marcha em pequenos passos, festinação (aceleração involuntária da marcha), redução do balanço dos braços e postura em flexão são achados característicos observados já ao exame simples de marcha. Face em máscara (hipomimia), micrografia (letra progressivamente menor) e hipofonia (voz baixa e monótona) refletem a bradicinesia generalizada. A assimetria dos sintomas motores, especialmente no início da doença, é achado que favorece Parkinson idiopático sobre parkinsonismos atípicos/secundários, geralmente mais simétricos."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é eminentemente clínico, baseado na presença de bradicinesia associada a pelo menos um dos outros componentes da tríade motora, sem necessidade obrigatória de exame de imagem em casos típicos. A boa resposta à levodopa é considerada critério de suporte diagnóstico importante — sua ausência deve levantar suspeita de parkinsonismo atípico (paralisia supranuclear progressiva, atrofia de múltiplos sistemas) ou secundário (induzido por drogas, especialmente antipsicóticos e antieméticos antagonistas de dopamina)."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Levodopa associada a inibidor da dopa-descarboxilase é o tratamento sintomático mais eficaz, porém seu uso prolongado associa-se a flutuações motoras e discinesias. Agonistas dopaminérgicos podem ser usados como poupadores de levodopa em pacientes mais jovens."
+        "conteudo": "Levodopa associada a inibidor de descarboxilase periférica (carbidopa) permanece o tratamento sintomático mais eficaz disponível, embora seu uso prolongado associe-se ao desenvolvimento de flutuações motoras e discinesias, motivando estratégias de retardo do início em pacientes mais jovens (agonistas dopaminérgicos, inibidores de MAO-B como terapia inicial nesses casos). Estimulação cerebral profunda é opção para pacientes com flutuações motoras graves refratárias ao ajuste farmacológico otimizado, em casos cuidadosamente selecionados."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Parkinsonismo de instalação muito rápida, simétrico desde o início, ou sem resposta à levodopa</span> deve levantar suspeita de parkinsonismo atípico/secundário, e não da doença de Parkinson idiopática."
+        "conteudo": "Ausência de resposta à levodopa em dose adequada, progressão muito rápida, quedas precoces e proeminentes, ou sintomas simétricos desde o início devem levantar suspeita de parkinsonismo atípico (não doença de Parkinson idiopática), com implicações prognósticas significativamente diferentes e piores."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tríade motora (bradicinesia obrigatória + rigidez e/ou tremor de repouso) e a diferenciação do tremor de repouso parkinsoniano (melhora com movimento) do tremor essencial (piora com ação) são cobranças certas. O parkinsonismo induzido por antagonistas de dopamina (antipsicóticos típicos, metoclopramida) como causa secundária relevante e reversível também é frequentemente testado."
       }
     ]
   },
@@ -7076,7 +7144,7 @@
     "titulo": "Miastenia Gravis",
     "resumo": "Fraqueza flutuante e fatigável, ptose/diplopia iniciais e o reconhecimento da crise miastênica.",
     "revisado": false,
-    "fonte": "Academia Brasileira de Neurologia; Myasthenia Gravis Foundation of America Clinical Guidance",
+    "fonte": "Academia Brasileira de Neurologia; Myasthenia Gravis Foundation of America Clinical Classification",
     "mnemonicos": [
       {
         "palavra": "Piora com uso, melhora com repouso",
@@ -7086,23 +7154,31 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "Doença autoimune por anticorpos contra receptores de acetilcolina (ou, menos comumente, contra MuSK) na junção neuromuscular pós-sináptica. Associação relevante com timoma/hiperplasia tímica."
+        "conteudo": "A miastenia gravis é uma doença autoimune da junção neuromuscular, causada predominantemente por anticorpos contra o receptor de acetilcolina pós-sináptico (a maioria dos casos), reduzindo o número de receptores funcionais disponíveis e comprometendo a transmissão neuromuscular. Isso explica a característica fraqueza flutuante e fatigável — piora com o uso repetido do músculo ao longo do dia e melhora com o repouso, diferente das neuropatias/miopatias estruturais fixas. Associação com timoma ou hiperplasia tímica é frequente, justificando a investigação de imagem mediastinal em todo paciente diagnosticado."
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Fraqueza muscular flutuante e fatigável, que piora ao longo do dia e com esforço repetido, e melhora com repouso. Ptose palpebral e diplopia são frequentemente os sintomas iniciais; pode progredir para fraqueza bulbar e respiratória."
+        "conteudo": "Fraqueza muscular flutuante e fatigável, com predileção característica pela musculatura ocular (ptose palpebral e diplopia, frequentemente os sintomas iniciais e mais comuns) e bulbar (disfagia, disartria, fraqueza mastigatória que piora ao longo da refeição). A fraqueza tipicamente piora ao final do dia e com esforço repetido, e melhora com repouso — padrão temporal central para a suspeita clínica."
+      },
+      {
+        "titulo": "Exame físico",
+        "conteudo": "Ptose que piora com a manutenção do olhar para cima por período prolongado (teste de fadigabilidade) é achado característico à beira do leito. O teste do gelo (aplicação de compressa fria sobre a pálpebra ptótica, com melhora transitória da ptose pela redução da degradação da acetilcolina em baixa temperatura) é manobra simples e útil quando disponível. Ausência de comprometimento pupilar (reflexos pupilares preservados) ajuda a diferenciar de causas neurológicas estruturais de ptose/diplopia."
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Anticorpo anti-receptor de acetilcolina positivo na maioria dos casos. O teste do gelo (melhora da ptose após gelo na pálpebra) é simples e útil à beira do leito. Eletroneuromiografia com estimulação repetitiva mostra decremento da resposta motora."
+        "conteudo": "A dosagem de anticorpos anti-receptor de acetilcolina é o exame mais específico e amplamente utilizado para confirmação diagnóstica; anticorpos anti-MuSK são encontrados em uma parcela dos pacientes soronegativos para o primeiro. A eletroneuromiografia com estimulação repetitiva demonstra o decremento característico da resposta muscular com estímulos sucessivos. Tomografia de tórax é indicada em todo paciente diagnosticado para investigar timoma associado."
       },
       {
-        "titulo": "Crise miastênica",
-        "conteudo": "Exacerbação grave com insuficiência respiratória, podendo ser desencadeada por infecção, cirurgia ou medicamentos que pioram a transmissão neuromuscular (aminoglicosídeos, betabloqueadores). Tratamento com imunoglobulina IV ou plasmaférese, além de suporte ventilatório quando necessário."
+        "titulo": "Tratamento",
+        "conteudo": "Piridostigmina (inibidor da acetilcolinesterase, aumentando a disponibilidade de acetilcolina na fenda sináptica) é o tratamento sintomático de primeira linha. Imunossupressão (corticoide, azatioprina, e outras opções) é indicada para controle da doença a médio/longo prazo em casos mais significativos. Timectomia é recomendada em pacientes com timoma (sempre) e considerada mesmo sem timoma em pacientes selecionados com miastenia generalizada, por reduzir necessidade de imunossupressão a longo prazo. Crise miastênica (fraqueza respiratória aguda grave) é tratada com imunoglobulina endovenosa ou plasmaférese, associada a suporte ventilatório quando necessário."
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Fraqueza flutuante da musculatura respiratória/bulbar</span> em paciente miastênico, especialmente após infecção ou uso de medicação de risco, exige monitorização rigorosa e consideração precoce de suporte ventilatório."
+        "conteudo": "<span class=\"red-flag\">Fraqueza respiratória progressiva ou disfagia grave com risco de aspiração</span> em paciente miastênico caracteriza crise miastênica, emergência com necessidade de suporte ventilatório e tratamento imunomodulador agudo (imunoglobulina ou plasmaférese) — certos medicamentos (aminoglicosídeos, betabloqueadores, entre outros) podem precipitar ou agravar crises e devem ser evitados nesses pacientes."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A fraqueza flutuante e fatigável (piora ao longo do dia/com esforço, melhora com repouso) como característica central e diferenciadora de miastenia é cobrança certa. O teste do gelo para ptose e a associação com timoma (exigindo investigação de imagem mediastinal em todo paciente) também são pontos frequentemente exigidos em questões de caso clínico."
       }
     ]
   },
