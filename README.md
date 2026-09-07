@@ -169,6 +169,54 @@ Ainda não implementados, usando a mesma base: montar simulados por IA e indexar
 de prescrição/resumos de cursinho que você adicionar (hoje o RAG busca só em
 `data/temas.json`).
 
+## Backend e login (Cloudflare D1)
+
+A partir desta versão, o MedConduta exige uma conta (e-mail + senha) para usar o app —
+os dados de estudo (progresso, respostas, flashcards, preferências, conteúdo gerado por
+IA) deixaram de ficar só no IndexedDB do navegador e passaram a ser salvos num banco
+compartilhado, acessível de qualquer aparelho. Isso usa o mesmo Worker Cloudflare do
+assistente de IA, agora também com um banco **D1** (SQLite gerenciado, plano gratuito) e
+rotas de autenticação (`/auth/register`, `/auth/login`, `/auth/logout`) e dados
+(`/data/:store[/:id]`), protegidas por um token de sessão opaco.
+
+### Passo a passo para ativar
+
+1. Siga primeiro os passos 1-4 da seção "Assistente de IA" acima (conta Cloudflare,
+   `npx wrangler login`, chave do Gemini) — o mesmo Worker atende as duas funções.
+2. Dentro de `worker/`, crie o banco D1:
+   ```bash
+   npx wrangler d1 create medconduta
+   ```
+   O comando imprime um bloco com `database_id`. Cole esse valor em
+   `worker/wrangler.toml`, no lugar de `COLOQUE_AQUI_O_ID_RETORNADO_POR_WRANGLER_D1_CREATE`.
+3. Aplique o schema (`worker/schema.sql`) no banco remoto:
+   ```bash
+   npx wrangler d1 execute medconduta --remote --file=schema.sql
+   ```
+4. Publique o Worker novamente para ele passar a enxergar o banco:
+   ```bash
+   npx wrangler deploy
+   ```
+
+**Sem esses passos, a tela de login aparece mas registrar/entrar falha** com erro de
+conexão — o app não abre além dela, já que agora a autenticação é obrigatória.
+
+### O que fica salvo e como
+
+Cada usuário tem sua própria senha (hash PBKDF2 com salt aleatório, nunca salva em
+texto puro) e seus próprios dados — os mesmos "compartimentos" que já existiam no
+IndexedDB (`srs`, `prefs`, `progresso`, `respostas`, `ia_temas`, `ia_flashcards`,
+`ia_questoes`) viraram linhas de uma tabela `records` no D1, uma por usuário. O
+restante do app (telas de Conteúdo, Flashcards, Questões, Revisão, IA) não muda: continua
+chamando as mesmas funções de `app/db.js`, que por baixo agora fala com o Worker em vez
+do IndexedDB.
+
+### Limitações desta primeira versão
+
+- Sem cache local/fila offline: cada leitura/escrita é uma chamada de rede — sem
+  internet, o app para de salvar (mas não trava; ver `app/db.js`).
+- Sessão expira em 30 dias (token opaco em `sessions`, sem renovação automática ainda).
+
 ## Como rodar localmente
 
 Como o app usa `fetch()` para carregar os JSONs de `/data`, é preciso servir os

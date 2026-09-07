@@ -860,3 +860,28 @@
 }
 .gp-az-refs[hidden] { display: none; }
 .gp-az-refs li { font-size: var(--fs-sm); }
+
+/* ---------- Login / cadastro ---------- */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5);
+  background: var(--color-bg-subtle);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-6);
+}
+
+.login-card h1 {
+  font-size: var(--fs-xl);
+}

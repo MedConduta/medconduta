@@ -1,6 +1,9 @@
 import { registerRoute, initRouter, setNavigateCallback } from "./router.js";
 import { renderSidebarNav, renderBottomNav, updateActiveNav } from "./components/sidebar.js";
 import { initTheme } from "./theme.js";
+import { isAuthenticated, sair } from "./auth.js";
+import { renderLogin } from "./views/login.js";
+import { icon } from "./components/icons.js";
 
 import * as conteudo from "./views/conteudo.js";
 import * as assistente from "./views/assistente.js";
@@ -60,16 +63,36 @@ sidebarNavEl.addEventListener("click", (e) => {
 });
 bottomNavEl.addEventListener("click", () => closeMobileNav());
 
-// ---------- Boot ----------
-paintNav("/residencia/conteudo");
-initRouter(mainEl);
-initTheme([document.getElementById("theme-toggle"), document.getElementById("topbar-theme-btn")]);
+const logoutBtn = document.getElementById("logout-btn");
+logoutBtn.innerHTML = `${icon("log-out")}<span class="nav-link__label">Sair</span>`;
+logoutBtn.addEventListener("click", async () => {
+  await sair();
+  boot();
+});
 
-// ---------- PWA ----------
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("sw.js").catch(() => {
-      /* offline-first é best-effort; app continua funcional sem SW */
+// ---------- Boot ----------
+function iniciarApp() {
+  paintNav("/residencia/conteudo");
+  initRouter(mainEl);
+  initTheme([document.getElementById("theme-toggle"), document.getElementById("topbar-theme-btn")]);
+
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js").catch(() => {
+        /* offline-first é best-effort; app continua funcional sem SW */
+      });
     });
-  });
+  }
 }
+
+function boot() {
+  if (isAuthenticated()) {
+    appShell.classList.remove("is-logged-out");
+    iniciarApp();
+  } else {
+    appShell.classList.add("is-logged-out");
+    renderLogin(mainEl, { onAutenticado: () => window.location.reload() });
+  }
+}
+
+boot();

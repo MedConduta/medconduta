@@ -23,6 +23,7 @@ const PATHS = {
   send: '<path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/>',
   pill: '<rect x="3" y="10.5" width="18" height="7" rx="3.5" transform="rotate(-45 12 14)"/><path d="M12 9.5 16.5 14"/>',
   search: '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>',
+  "log-out": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/>',
 };
 
 export function icon(name, { size = 20, className = "" } = {}) {
