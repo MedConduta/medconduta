@@ -3882,5 +3882,98 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-dac-cronica-diagnostico",
+    "temaId": "doenca-arterial-coronariana-cronica",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Angina estável — Investigação diagnóstica por probabilidade pré-teste",
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Síndrome Coronariana Crônica (SBC, 2025); ESC Guidelines for Chronic Coronary Syndromes (2019, atualização 2024)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor torácica com suspeita de angina estável (sintomas reprodutíveis, sem instabilidade)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Estimar probabilidade pré-teste (idade, sexo, características da dor)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Qual a probabilidade pré-teste estimada?",
+        "ramos": [
+          {
+            "label": "Baixa",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Sem teste adicional de rotina — considerar escore de cálcio se dúvida"
+              }
+            ]
+          },
+          {
+            "label": "Baixa-intermediária",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Angiotomografia de coronárias (alto valor preditivo negativo)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Se normal, exclui doença obstrutiva; se alterada, individualizar seguimento"
+              }
+            ]
+          },
+          {
+            "label": "Intermediária-alta",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Teste funcional de isquemia (cintilografia/PET, ecocardiograma de estresse ou RM de estresse)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Isquemia significativa e/ou sintomas refratários ao tratamento clínico?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cineangiocoronariografia — definição anatômica e decisão de revascularização"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter tratamento clínico otimizado (AAS, estatina de alta potência, antianginoso)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Alta / suspeita de anatomia de alto risco",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Lembrar: revascularização de rotina não reduz mortalidade na maioria dos pacientes estáveis (estudo ISCHEMIA) — exceto tronco de coronária esquerda ou triarterial com disfunção de VE"
+              },
+              {
+                "tipo": "end",
+                "texto": "Cineangiocoronariografia direta"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
