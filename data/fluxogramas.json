@@ -3795,5 +3795,92 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-angina-instavel-tratamento",
+    "temaId": "angina-instavel-iamssst",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "SCA sem supra de ST — Momento da estratégia invasiva",
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Dor Torácica na Unidade de Emergência (2025); ESC Guidelines for Acute Coronary Syndromes (2023)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "SCA sem supra de ST confirmada (troponina elevada e/ou ECG sem supra de ST)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Medidas gerais: AAS + P2Y12 + anticoagulação parenteral + estatina de alta potência + antianginoso"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Instabilidade hemodinâmica/elétrica, angina refratária, arritmia ventricular grave ou complicação mecânica?",
+        "ramos": [
+          {
+            "label": "Sim (risco muito alto)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Trombolítico é CONTRAINDICADO em SCA sem supra — reperfusão é sempre por cateterismo"
+              },
+              {
+                "tipo": "end",
+                "texto": "Cateterismo cardíaco imediato (<2 horas)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Troponina elevada/dinâmica de ST-T ou GRACE > 140?",
+                "ramos": [
+                  {
+                    "label": "Sim (risco alto)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cateterismo cardíaco precoce (<24 horas)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "DM, TFG<60, FEVE<40%/IC, angina pós-IAM, ICP/CRVM prévia ou GRACE 109-140?",
+                        "ramos": [
+                          {
+                            "label": "Sim (risco intermediário)",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Cateterismo cardíaco seletivo (<72 horas)"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não (risco baixo)",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Estratégia conservadora — teste provocativo não invasivo antes de indicar CATE"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
