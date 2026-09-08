@@ -21073,5 +21073,503 @@
     "ano": 2026,
     "fonte": "Questão original elaborada pela equipe MedConduta com base em guidelines atualizados.",
     "revisado": true
+  },
+  {
+    "id": "q1152",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Paciente com cirrose alcoólica, internado por hemorragia varicosa, está recebendo a segunda unidade de concentrado de hemácias quando passa a apresentar febre, calafrios e dispneia, evoluindo rapidamente com insuficiência respiratória hipoxêmica e secreção rósea espumosa em vias aéreas durante a intubação. Sobre esse quadro, assinale a alternativa CORRETA:",
+    "alternativas": [
+      "A causa provável da insuficiência respiratória é sepse de foco abdominal.",
+      "Devem-se evitar novas hemotransfusões por 120 dias em pacientes que sobrevivem a essa complicação.",
+      "Antecedente de múltiplas transfusões é fator de risco para essa complicação.",
+      "O banco de sangue deve ser notificado para que possa identificar o doador e impedi-lo de realizar novas doações de sangue.",
+      "Após a intubação orotraqueal, é possível dar prosseguimento àquela hemotransfusão, desde que descartada a hipótese de hipervolemia."
+    ],
+    "correta": 3,
+    "comentario": "O quadro é clássico de TRALI (lesão pulmonar aguda relacionada à transfusão): febre, dispneia, insuficiência respiratória hipoxêmica de instalação rápida durante a transfusão, com secreção espumosa (edema pulmonar não cardiogênico). Diante de TRALI confirmada, o banco de sangue deve ser notificado para investigar e, se identificado, excluir o doador (frequentemente relacionado a anticorpos anti-HLA/anti-HNA presentes no plasma do doador, mais comuns em mulheres multíparas) de futuras doações de hemocomponentes ricos em plasma — medida central de hemovigilância e prevenção de novos casos.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1153",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Mulher, 66 anos, hipertensa, com insuficiência cardíaca e mielofibrose primária, recebe transfusão semanal de concentrado de hemácias. Após 30 minutos do início da infusão, apresenta febre de 38,3°C, dispneia e dessaturação; radiografia de tórax evidencia infiltrado alveolar bilateral difuso. Sem icterícia, dor abdominal ou alteração da cor da urina. Essa reação transfusional está associada a:",
+    "alternativas": [
+      "Sepse bacteriana",
+      "Lesão pulmonar aguda (TRALI)",
+      "Sobrecarga circulatória (TACO)",
+      "Reação hemolítica aguda"
+    ],
+    "correta": 1,
+    "comentario": "A ausência de sinais de hemólise (icterícia, urina escura) associada a febre, dispneia, dessaturação e infiltrado alveolar bilateral de instalação rápida (dentro de horas) durante a transfusão é compatível com TRALI. A presença concomitante de insuficiência cardíaca e hipertensão poderia sugerir TACO, mas a ausência de outros sinais de sobrecarga volêmica (não mencionados no caso) e o padrão de infiltrado bilateral difuso reforçam TRALI como hipótese mais provável nesse contexto.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1154",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Paciente com anemia falciforme, internado por crise álgica, hemodinamicamente estável, recebe transfusão de concentrado de hemácias desleucocitado e fenotipado. Após 12 minutos, apresenta febre (38,3°C), calafrios, dor no local do acesso, dor em flancos e epistaxe. Após interromper a transfusão, prescrever sintomáticos e notificar a suspeita de reação transfusional, qual a melhor conduta adicional?",
+    "alternativas": [
+      "Devolver o hemocomponente à agência transfusional, solicitar provas de hemólise, função renal, coagulograma e hemoculturas, e prescrever hidratação vigorosa.",
+      "Coletar hemocultura e retornar a transfusão com o mesmo hemocomponente após resolução dos sintomas, administrando-o em 4 horas.",
+      "Coletar novo hemograma, devolver o hemocomponente e prescrever apenas hemocomponentes lavados para transfusões futuras.",
+      "Descartar o concentrado de hemácias e transfundir novo concentrado imediatamente, administrando-o em 4 horas."
+    ],
+    "correta": 0,
+    "comentario": "Diante de sinais sugestivos de reação transfusional mais grave (febre, calafrios, dor lombar/flancos — que pode sugerir hemólise), a investigação completa inclui provas de hemólise (bilirrubinas, LDH, haptoglobina), função renal (risco de lesão renal aguda por hemoglobina livre), coagulograma (risco de CIVD secundária à hemólise) e hemoculturas (excluir contaminação bacteriana), associada a hidratação vigorosa para proteção renal — a transfusão NUNCA deve ser reiniciada com o mesmo hemocomponente após uma reação suspeita, e a decisão sobre hemocomponentes especiais (lavados) para o futuro depende da causa identificada, não sendo prescrita empiricamente antes da investigação.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1155",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Sobre a lesão pulmonar aguda relacionada à transfusão (TRALI), é correto afirmar que:",
+    "alternativas": [
+      "Só ocorre nas transfusões de concentrado de hemácias.",
+      "O uso de corticoides sistêmicos está indicado rotineiramente.",
+      "Nos casos em que a ventilação mecânica seja necessária, volume corrente >8mL/kg e pressão média de via aérea acima de 30cmH2O estão indicados.",
+      "O início dos sintomas em até 6 horas da transfusão é um dos critérios diagnósticos.",
+      "O uso de diurético de alça está indicado como tratamento de primeira linha."
+    ],
+    "correta": 3,
+    "comentario": "Um dos critérios diagnósticos de TRALI é o início dos sintomas respiratórios (hipoxemia aguda, infiltrado bilateral) dentro de até 6 horas do início da transfusão. TRALI pode ocorrer com qualquer hemocomponente rico em plasma (não exclusivamente concentrado de hemácias); não há benefício comprovado de corticoide sistêmico rotineiro; a ventilação mecânica, quando necessária, deve seguir estratégia protetora (volume corrente BAIXO, ao redor de 6 mL/kg, e pressões controladas, não elevadas); e diuréticos NÃO são indicados na TRALI (diferente do TACO), pois o edema é de origem inflamatória/permeabilidade capilar aumentada, não hidrostática por sobrecarga volêmica.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1156",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Paciente de 72 anos, sexo masculino, internado por anemia sintomática (Hb 6 g/dL), inicia transfusão de 3 unidades de concentrado de hemácias. Durante a transfusão da terceira unidade, apresenta dispneia (iniciada já na segunda unidade), necessidade de oxigênio suplementar, taquicardia e ELEVAÇÃO DA PRESSÃO ARTERIAL, sem febre. O diagnóstico provável e a conduta correta são, respectivamente:",
+    "alternativas": [
+      "Reação transfusional hemolítica — suspensão da transfusão e administração de metilprednisolona.",
+      "TRALI — suspensão da transfusão e administração de metilprednisolona.",
+      "TACO (sobrecarga circulatória associada à transfusão) — suspensão da transfusão e administração de diurético.",
+      "TRALI — administração de metilprednisolona e continuidade da transfusão.",
+      "TACO — administração de diurético e continuidade da transfusão."
+    ],
+    "correta": 2,
+    "comentario": "A elevação da PRESSÃO ARTERIAL (hipertensão), associada a dispneia e taquicardia, sem febre, durante transfusão de múltiplas unidades em paciente idoso (fator de risco para TACO), é o quadro clássico de sobrecarga circulatória associada à transfusão — diferente do TRALI, que cursa tipicamente com hipotensão. A conduta correta inclui SUSPENSÃO da transfusão (nunca continuidade) e administração de diurético, ao qual o TACO responde bem (diferente do TRALI, que não responde a diurético).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1157",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Uma mulher de 20 anos, recém-diagnosticada com leucemia linfoide aguda, recebe transfusão profilática de plaquetas para contagem de 5.000/mm³. Aproximadamente 10 minutos após o início, a saturação de oxigênio cai de 98% para 65% e a pressão arterial cai de 120x60 para 80x40 mmHg, com rápida deterioração clínica; a intubação de emergência revela copiosa eliminação de líquido claro pela cânula. O diagnóstico mais provável é:",
+    "alternativas": [
+      "Lesão pulmonar aguda relacionada à transfusão (TRALI).",
+      "Sepse relacionada à transfusão.",
+      "Reação anafilática relacionada à transfusão.",
+      "Transtorno de sobrecarga circulatória aguda (TACO)."
+    ],
+    "correta": 0,
+    "comentario": "Instalação dramática e muito rápida (minutos) de hipoxemia grave e hipotensão, com edema pulmonar não cardiogênico (líquido claro/transudato na via aérea, não espumoso-sanguinolento como esperado em edema hemorrágico), durante transfusão de hemocomponente rico em plasma (plaquetas), é apresentação clássica e grave de TRALI — que pode ocorrer com qualquer hemocomponente contendo plasma, não apenas concentrado de hemácias.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2017,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1158",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Homem, 56 anos, admitido por fezes pretas e tonturas, em uso de varfarina (fibrilação atrial). Exame: hipotenso, hematomas em tronco e membros. Hb 11,1 g/dL, RNI >10. Administrados 600 mL de plasma fresco congelado associado a vitamina K endovenosa. Seis horas após, evolui com desconforto respiratório e necessidade de ventilação mecânica; radiografia de tórax com opacidades heterogêneas bilaterais. O diagnóstico é:",
+    "alternativas": [
+      "Sobrecarga circulatória relacionada à transfusão (TACO).",
+      "Lesão pulmonar aguda relacionada à transfusão (TRALI).",
+      "Reação hemolítica aguda.",
+      "Reação anafilática à vitamina K."
+    ],
+    "correta": 1,
+    "comentario": "Insuficiência respiratória aguda com infiltrado pulmonar bilateral, iniciada dentro de 6 horas após transfusão de plasma fresco congelado (hemocomponente rico em plasma, classicamente associado a TRALI), sem outros achados que sugiram hemólise ou anafilaxia, é diagnóstico de TRALI — reforçando que essa complicação não se restringe à transfusão de concentrado de hemácias, sendo inclusive mais associada a hemocomponentes plasmáticos.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2017,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1159",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Sobre o gatilho transfusional de concentrado de hemácias em pacientes de cuidados intensivos, sem evidências de sangramento ativo, a estratégia restritiva recomenda transfusão quando a hemoglobina sérica estiver abaixo de:",
+    "alternativas": [
+      "6 g/dL.",
+      "7 g/dL.",
+      "8 g/dL.",
+      "9 g/dL."
+    ],
+    "correta": 1,
+    "comentario": "A estratégia transfusional restritiva — transfusão de concentrado de hemácias em pacientes críticos estáveis, sem sangramento ativo, quando a hemoglobina está abaixo de 7 g/dL — está associada a desfechos iguais ou melhores (incluindo menor mortalidade em subgrupos) comparada a estratégias liberais, sendo hoje o padrão recomendado, evitando exposição transfusional desnecessária. A decisão deve sempre considerar também o contexto clínico individual (sintomas de hipóxia tecidual, comorbidades cardiovasculares), não apenas o valor laboratorial isolado.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2016,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1160",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Analise os casos: I. Paciente com sepse de foco pulmonar, Hb=8 g/dL. II. Paciente com neutropenia febril pós-quimioterapia, 4.800 plaquetas/µL. III. Paciente com fratura do colo do fêmur, 65.000 plaquetas/µL. IV. Paciente em uso de varfarina, com sangramento gastrointestinal maciço. Apresentam indicação de transfusão de hemocomponente apenas os pacientes:",
+    "alternativas": [
+      "I e II.",
+      "I e III.",
+      "II e III.",
+      "II e IV.",
+      "III e IV."
+    ],
+    "correta": 3,
+    "comentario": "O paciente II (neutropenia febril com plaquetopenia grave, limiar profilático reduzido — geralmente 20.000/mm³ em vigência de febre/infecção, pelo maior risco de consumo e sangramento) e o paciente IV (sangramento maciço em uso de anticoagulante, exigindo reversão com plasma/complexo protrombínico e possivelmente concentrado de hemácias) têm indicação clara. O paciente I (Hb 8 g/dL, sem outros dados de instabilidade/sintomas) está acima do limiar restritivo de transfusão na maioria dos contextos; o paciente III (fratura fechada de fêmur, 65.000 plaquetas, sem sangramento ativo relatado) não tem indicação de transfusão profilática de plaquetas nesse nível.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2016,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1161",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Sobre as indicações clínicas para uso de componentes sanguíneos, assinale a alternativa INCORRETA:",
+    "alternativas": [
+      "Está indicada transfusão de hemácias em pacientes com hemoglobina <8 g/dL ou perda aguda de sangue em paciente saudável, com sinais/sintomas de diminuição da oferta de oxigênio.",
+      "Está indicada transfusão de hemácias em pacientes com hemoglobina <10 g/dL que sabidamente têm risco aumentado de doença arterial coronariana e tiveram ou esperam ter hemorragia significativa.",
+      "Transfusão de hemácias em pacientes assintomáticos, estáveis, com hemoglobina entre 7 e 10 g/dL, apresenta indicação questionável ou sem fundamento.",
+      "Deve-se usar transfusão de plaquetas (para profilaxia) em pacientes com contagem recente (<24h) <50.000/mm³, mesmo sem outros fatores de risco ou procedimento planejado.",
+      "Transfusão de plasma não é justificada para reposição de volume, suplementação nutricional ou hipoalbuminemia."
+    ],
+    "correta": 3,
+    "comentario": "A alternativa INCORRETA superestima o limiar de transfusão profilática de plaquetas — na ausência de outros fatores de risco (febre, procedimento invasivo, sangramento) ou de contexto específico (como cirurgias de alto risco de sangramento intracraniano/ocular), o limiar profilático padrão é muito mais baixo (geralmente 10.000/mm³ em pacientes estáveis), não 50.000/mm³. As demais alternativas descrevem corretamente princípios consolidados de indicação transfusional baseados em evidência clínica, não apenas em valores laboratoriais isolados.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2015,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1162",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "O crioprecipitado contém a maior parte dos seguintes fatores/proteínas de coagulação, EXCETO:",
+    "alternativas": [
+      "Fator XIII.",
+      "Fator de von Willebrand.",
+      "Fator IX.",
+      "Fator VIII."
+    ],
+    "correta": 2,
+    "comentario": "O crioprecipitado, obtido pelo descongelamento controlado do plasma fresco congelado, é rico em fibrinogênio, fator VIII, fator de von Willebrand e fator XIII — mas NÃO contém quantidade relevante de fator IX, que permanece no plasma sobrenadante (crio-pobre). Por isso, o crioprecipitado não é indicado na hemofilia B (deficiência de fator IX), sendo específico para hipofibrinogenemia, hemofilia A e doença de von Willebrand quando concentrados específicos não estão disponíveis.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2014,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1163",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Assinale a alternativa que indica a reação mais comum no ato da transfusão sanguínea:",
+    "alternativas": [
+      "Reação anafilática.",
+      "Reação hemolítica intravascular.",
+      "Reação hemolítica extravascular.",
+      "Reação febril não hemolítica.",
+      "Reação febril por contaminação bacteriana."
+    ],
+    "correta": 3,
+    "comentario": "A reação febril não hemolítica — causada principalmente por citocinas acumuladas durante o armazenamento do hemocomponente e/ou por anticorpos do receptor contra antígenos leucocitários do doador — é a reação transfusional aguda mais comum, manifestando-se com febre e calafrios sem hemólise associada, geralmente autolimitada e tratada sintomaticamente.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2013,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1164",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Paciente recebendo concentrado de hemácias inicia quadro de calafrios intensos (rigores), sem outros sintomas. Sinais vitais: FC 120, FR 30, PA 190x100 mmHg, temperatura 36,5°C (afebril). A conduta básica recomendada é:",
+    "alternativas": [
+      "Administrar meperidina (petidina), manter acesso venoso com soro, preencher ficha de notificação e devolver a bolsa à unidade transfusional.",
+      "Administrar hidrocortisona 100mg, manter acesso com soro até melhora dos sintomas e reiniciar a transfusão lentamente.",
+      "Administrar dipirona, trocar o acesso venoso e devolver a bolsa à unidade transfusional.",
+      "Administrar hidrocortisona 500mg, preencher ficha de notificação e, após melhora, reiniciar a transfusão lentamente."
+    ],
+    "correta": 0,
+    "comentario": "Calafrios intensos isolados (rigores), sem febre associada, durante transfusão constituem reação específica que responde bem à meperidina (petidina), fármaco classicamente utilizado para o controle desse tipo de reação — a conduta padrão de qualquer reação transfusional inclui interromper/não prosseguir com aquela bolsa, manter acesso com soro fisiológico, notificar o evento e devolver o hemocomponente à agência transfusional para investigação, não devendo a mesma bolsa ser reiniciada.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2013,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1165",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Com relação às reações transfusionais, assinale a alternativa CORRETA:",
+    "alternativas": [
+      "A sepse ocasionada por contaminação bacteriana tem como etiologia mais frequente germes de pele, como Staphylococcus aureus e Staphylococcus epidermidis.",
+      "As reações transfusionais são classificadas como agudas quando ocorrem em até 2 horas da transfusão, ou crônicas quando ocorrem após 48 horas.",
+      "A TRALI apresenta início insidioso de hipoxemia e insuficiência respiratória durante ou até 48 horas após a transfusão.",
+      "A reação febril não hemolítica ocorre com frequência de 1 a 10 eventos a cada 50 transfusões, sendo mais frequente com concentrado de hemácias."
+    ],
+    "correta": 0,
+    "comentario": "A contaminação bacteriana de hemocomponentes decorre principalmente da flora cutânea do doador no momento da coleta (Staphylococcus aureus, Staphylococcus epidermidis), sendo mais relevante em concentrados de plaquetas (armazenados em temperatura ambiente, favorecendo proliferação bacteriana). As demais afirmativas contêm imprecisões: reações agudas ocorrem classicamente até 24h (não 2h) da transfusão; a TRALI tem início AGUDO (não insidioso) e critério de até 6h (não 48h); e a reação febril não hemolítica é mais associada a concentrado de plaquetas (pela maior carga leucocitária/citocinas acumuladas), não exclusivamente a concentrado de hemácias.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2013,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1166",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Paciente imunossuprimido irá receber transfusão sanguínea. Nesse caso, está indicada a irradiação do hemocomponente para prevenir a reação de:",
+    "alternativas": [
+      "Reação febril não hemolítica.",
+      "Reação febril hemolítica.",
+      "Doença do enxerto contra hospedeiro transfusional.",
+      "Reação hemolítica aguda.",
+      "Reação hemolítica tardia."
+    ],
+    "correta": 2,
+    "comentario": "A irradiação de hemocomponentes celulares (inativando linfócitos T viáveis do doador, capazes de proliferar e atacar tecidos do receptor) é medida específica para prevenir a doença do enxerto contra hospedeiro associada à transfusão — complicação rara, porém quase sempre fatal, especialmente relevante em receptores imunossuprimidos/imunocomprometidos, que não conseguem rejeitar os linfócitos do doador.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2015,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1167",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "\"Complicações relacionadas à transfusão de sangue e derivados podem decorrer de reações febris agudas, alérgicas, choque anafilático, injúria pulmonar, entre outros.\" Sobre a lesão pulmonar aguda relacionada à transfusão (TRALI) e a sobrecarga circulatória associada à transfusão (TACO), é correto afirmar que:",
+    "alternativas": [
+      "TRALI decorre de aumento da pressão coloidosmótica pelo alto poder osmótico dos hemocomponentes.",
+      "TACO decorre de mecanismo imunológico mediado por anticorpos anti-HLA/anti-HNA do doador.",
+      "TRALI é mediada por reação inflamatória por exposição a antígenos leucocitários do doador (anti-HLA/anti-HNA), aumentando a permeabilidade vascular pulmonar — não decorrendo de mecanismo osmótico.",
+      "TACO e TRALI são, na prática, sinônimos e apresentam o mesmo mecanismo fisiopatológico."
+    ],
+    "correta": 2,
+    "comentario": "A TRALI é mediada por mecanismo IMUNOLÓGICO/inflamatório — anticorpos anti-HLA ou anti-HNA presentes no plasma do doador ativam neutrófilos do receptor, aumentando a permeabilidade capilar pulmonar e causando edema não cardiogênico — e NÃO decorre de mecanismo osmótico/oncótico (esse mecanismo hidrostático é mais relacionado à sobrecarga volêmica do TACO, causada pela infusão rápida de volume, não por anticorpos). TRALI e TACO são entidades distintas, com mecanismos, quadro clínico (hipotensão x hipertensão) e conduta (sem resposta a diurético x resposta a diurético) diferentes.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2014,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1168",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Paciente hepatopata crônico, com hipertensão portal grave e esplenomegalia importante, será submetido a cirurgia de derivação de fluxo hepático. Exame pré-operatório revela plaquetopenia de 87.000/mm³, atribuída a hiperesplenismo. Em relação ao caso, é INCORRETO afirmar que:",
+    "alternativas": [
+      "Deve ser transfundido com concentrado de plaquetas uma semana antes da data prevista para a cirurgia.",
+      "A provável causa da plaquetopenia é a hipertensão portal e o hiperesplenismo.",
+      "Pacientes com hiperesplenismo geralmente têm capacidade de responder a situações de estresse e aumentar a produção medular de plaquetas.",
+      "Pelo porte da cirurgia e pela doença de base, não há indicação específica de transfusão pré-operatória com esse nível de plaquetas.",
+      "É importante atentar também para o risco trombótico, que pode estar aumentado em pacientes com hepatopatia."
+    ],
+    "correta": 0,
+    "comentario": "A afirmativa INCORRETA é a que recomenda transfusão profilática de plaquetas uma semana ANTES da cirurgia — plaquetas transfundidas têm meia-vida curta (poucos dias), de modo que transfundi-las com tanta antecedência não traz benefício hemostático no momento da cirurgia; caso necessária, a transfusão deve ser próxima ao procedimento. Além disso, 87.000/mm³ não representa, isoladamente, indicação de transfusão profilática na maioria dos procedimentos cirúrgicos (o limiar costuma ser mais baixo, exceto em cirurgias de altíssimo risco hemorrágico). Pacientes hepatopatas, apesar da plaquetopenia, também podem ter risco TROMBÓTICO aumentado (desequilíbrio da hemostasia, não apenas tendência hemorrágica), sendo importante não superestimar o risco de sangramento nem tratar reflexivamente apenas o número de plaquetas.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1169",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Paciente em pré-operatório de cirurgia cardíaca com circulação extracorpórea (que causa disfunção plaquetária qualitativa, além do consumo quantitativo), sem sangramento ativo no momento, apresenta contagem de plaquetas de 70.000/mm³. Considerando a indicação de hemocomponentes nessa situação de cirurgia inadiável, assinale a associação hemocomponente/indicação CORRETA:",
+    "alternativas": [
+      "Concentrado de hemácias para paciente anêmico crônico, com Hb de 8 g/dL e FC de 66 bpm (estável, sem indicação de rotina).",
+      "Concentrado de plaquetas para esse paciente, dado o limiar mais elevado aceito para cirurgias com circulação extracorpórea em comparação a outros procedimentos.",
+      "Crioprecipitado para paciente com sangramento intraoperatório, fibrinogênio normal e RNI de 3,5 (indicação inadequada, pois o problema predominante nesse caso não é hipofibrinogenemia).",
+      "Plasma fresco congelado para paciente sem sangramento e RNI de 6 (indicação questionável na ausência de sangramento ou procedimento iminente)."
+    ],
+    "correta": 1,
+    "comentario": "Cirurgias com circulação extracorpórea (como a cardíaca) cursam com disfunção plaquetária adicional pela própria bomba extracorpórea, justificando limiares de transfusão profilática de plaquetas mais elevados que em outros contextos cirúrgicos — tornando razoável a transfusão profilática mesmo com contagem de 70.000/mm³ nesse cenário específico e inadiável. As demais opções descrevem cenários SEM indicação clara de transfusão do hemocomponente citado (anemia crônica estável, fibrinogênio normal apesar do RNI alterado, e RNI alterado sem sangramento nem procedimento iminente).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2017,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1170",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Sobre a transfusão profilática de plaquetas em contextos específicos, assinale a alternativa que representa indicação CORRETA:",
+    "alternativas": [
+      "Paciente com leucemia mieloide aguda, 33.000 plaquetas/mm³, em tratamento para aspergilose invasiva (sem sangramento ativo, sem procedimento invasivo iminente).",
+      "Paciente com púrpura trombocitopênica trombótica, 20.000 plaquetas/mm³ e gengivorragia.",
+      "Paciente com anemia aplásica, 55.000 plaquetas/mm³ e epistaxe leve autolimitada.",
+      "Paciente com leucemia linfocítica aguda e neutropenia febril (temperatura 38,3°C), 15.000 plaquetas/mm³, sem sangramento ativo."
+    ],
+    "correta": 3,
+    "comentario": "Em pacientes com neutropenia febril, o limiar profilático de transfusão de plaquetas é reduzido para 20.000/mm³ (em vez dos 10.000/mm³ padrão em pacientes estáveis afebris), pelo maior risco de consumo/sangramento associado ao processo infeccioso — assim, 15.000/mm³ nesse contexto febril já indica transfusão profilática. Na púrpura trombocitopênica TROMBÓTICA, a transfusão de plaquetas é classicamente EVITADA (mesmo com sangramento leve), pelo risco teórico de piorar a trombose microvascular — reservada a sangramento com risco de vida. Os demais cenários não configuram indicação clara com os níveis e a ausência de sangramento significativo descritos.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2016,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1171",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Dentre as opções abaixo, são indicações para uso de plasma fresco congelado, EXCETO:",
+    "alternativas": [
+      "Expansão do volume sanguíneo (isoladamente).",
+      "Tratamento da púrpura trombocitopênica trombótica.",
+      "Correção de coagulopatias por deficiência de múltiplos fatores.",
+      "Suprimento de proteínas plasmáticas deficientes específicas.",
+      "Reversão do efeito anticoagulante da varfarina em sangramento ativo."
+    ],
+    "correta": 0,
+    "comentario": "O plasma fresco congelado NÃO deve ser utilizado isoladamente como expansor de volume sanguíneo (cristaloides/coloides são as opções apropriadas para essa finalidade, com risco desnecessário de exposição a hemocomponente sem indicação hemostática específica) — suas indicações apropriadas incluem correção de coagulopatias por deficiência de múltiplos fatores, reposição em púrpura trombocitopênica trombótica (como líquido de reposição na plasmaférese) e reversão de efeito de antagonistas de vitamina K (varfarina) em sangramento ativo.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2014,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1172",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Paciente feminina, 19 anos, com leucemia mieloide aguda em tratamento quimioterápico, apresenta-se com anemia importante (Hb 6,2 g/dL) e relata dois episódios prévios de reação febril não hemolítica em transfusões anteriores. Qual a melhor escolha para a transfusão de concentrado de hemácias nessa paciente?",
+    "alternativas": [
+      "Irradiado.",
+      "Desleucotizado (leucorreduzido).",
+      "Fenotipado.",
+      "Lavado com solução salina.",
+      "Convencional."
+    ],
+    "correta": 1,
+    "comentario": "A leucorredução (retirada dos leucócitos do hemocomponente antes da transfusão) reduz significativamente o risco de reação febril não hemolítica recorrente, ao diminuir tanto a carga de citocinas acumuladas durante o armazenamento quanto a exposição a antígenos leucocitários do doador — sendo a escolha apropriada para pacientes com histórico dessa reação. Irradiação previne doença do enxerto contra hospedeiro (não reações febris); hemocomponentes lavados são reservados principalmente para reações alérgicas graves recorrentes (não febris); e fenotipagem estendida é usada para prevenir aloimunização em pacientes politransfundidos, não especificamente reações febris.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2019,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1173",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "O crioprecipitado pode ser indicado nas seguintes situações, EXCETO:",
+    "alternativas": [
+      "Coagulação intravascular disseminada com hipofibrinogenemia.",
+      "Paciente com RNI maior que 4, sem outra indicação hemostática associada ao crioprecipitado.",
+      "Transfusão maciça, como parte da reposição de fatores.",
+      "Profilaxia para pacientes com hemofilia A, quando concentrado específico de fator VIII não está disponível."
+    ],
+    "correta": 1,
+    "comentario": "O crioprecipitado NÃO corrige o RNI/tempo de protrombina, pois não contém quantidade relevante dos fatores dependentes de vitamina K (II, VII, IX, X) — a correção de RNI elevado requer plasma fresco congelado, complexo protrombínico ou vitamina K, conforme o contexto clínico, não o crioprecipitado (rico em fibrinogênio, fator VIII, fator de von Willebrand e fator XIII, mas pobre em fator IX e nos demais fatores dependentes de vitamina K).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2013,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1174",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "A transfusão de uma unidade de concentrado de hemácias deve elevar o valor da hemoglobina do receptor (adulto de porte médio) em aproximadamente:",
+    "alternativas": [
+      "0,5 g/dL.",
+      "1,0 g/dL.",
+      "1,5 g/dL.",
+      "2,0 g/dL.",
+      "2,5 g/dL."
+    ],
+    "correta": 1,
+    "comentario": "Em um adulto de porte médio (cerca de 70 kg), a transfusão de uma unidade de concentrado de hemácias eleva, em média, a hemoglobina em aproximadamente 1,0 g/dL (e o hematócrito em cerca de 3%) — parâmetro útil para calcular o número de unidades necessárias para atingir determinada meta de hemoglobina, sempre em conjunto com a avaliação clínica.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2016,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1175",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Em cirurgias de grande porte com previsão de sangramento significativo, recomenda-se a reserva de hemocomponentes. Assinale a alternativa que lista corretamente os exames realizados na agência transfusional para confirmação dessa reserva de concentrado de hemácias:",
+    "alternativas": [
+      "Tipagem ABO e RhD do receptor, apenas.",
+      "Tipagem ABO e RhD do receptor; pesquisa de anticorpos irregulares do receptor; retipagem ABO e RhD do hemocomponente; e prova de compatibilidade entre as hemácias do doador e o soro/plasma do receptor.",
+      "Tipagem ABO e RhD do receptor e retipagem ABO e RhD do hemocomponente, apenas.",
+      "Tipagem ABO e RhD; pesquisa de anticorpos irregulares; Coombs direto do receptor; e prova de compatibilidade entre hemácias do doador e soro/plasma do receptor."
+    ],
+    "correta": 1,
+    "comentario": "A reserva segura de concentrado de hemácias exige um conjunto completo de exames pré-transfusionais: tipagem ABO/RhD e pesquisa de anticorpos irregulares (PAI) do receptor, retipagem ABO/RhD do próprio hemocomponente reservado (confirmação independente), e a prova de compatibilidade (crossmatch) entre as hemácias do doador e o soro/plasma do receptor — etapa final que detecta incompatibilidades não identificadas nos passos anteriores, minimizando o risco de reação hemolítica transfusional.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2015,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1176",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Avalie as afirmativas sobre indicação transfusional e hemocomponentes: I. Deve-se transfundir concentrado de hemácias em pacientes com hemoglobina menor que 10 g/dL, mesmo em pacientes estáveis e sem sangramento agudo. II. O crioprecipitado é proveniente da centrifugação/descongelamento controlado do plasma fresco congelado, sendo rico em fibrinogênio, fator VIII e fator de von Willebrand. III. Quando há indicação de transfusão de plaquetas, transfunde-se uma bolsa de plaquetas de doador randômico para cada 10 kg de peso corporal do receptor. IV. Uma unidade de concentrado de hemácias gera incremento de aproximadamente 6% no hematócrito do paciente transfundido. V. O plasma fresco congelado pode ser utilizado para reversão do efeito anticoagulante da HEPARINA em pacientes com sangramento. Assinale a sequência correta (V=verdadeiro, F=falso), na ordem I a V:",
+    "alternativas": [
+      "V - F - F - V - V.",
+      "F - V - V - F - V.",
+      "F - V - V - F - F.",
+      "F - V - V - V - F.",
+      "V - F - F - V - F."
+    ],
+    "correta": 2,
+    "comentario": "I é FALSA: o gatilho transfusional de 10 g/dL isoladamente, sem outros critérios, não é a prática recomendada (estratégia restritiva prioriza critérios clínicos). II é VERDADEIRA: descreve corretamente a composição do crioprecipitado. III é VERDADEIRA: essa é a dose padrão de plaquetas de doador randômico (1 unidade/10 kg). IV é FALSA: uma unidade de CH eleva o hematócrito em cerca de 3% (não 6%). V é FALSA: o plasma fresco congelado reverte o efeito de ANTAGONISTAS DE VITAMINA K (varfarina), não da heparina (cujo antídoto específico é a protamina) — armadilha clássica de prova.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2015,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1177",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Um hemocentro está revisando seus critérios de seleção de doadores para reduzir a incidência de TRALI (lesão pulmonar aguda relacionada à transfusão) em sua população de receptores, seguindo os padrões atuais de bancos de sangue (AABB/ABHH). Considerando que os anticorpos anti-HLA/anti-HNA presentes no plasma do doador são o principal mecanismo fisiopatológico da TRALI, e que doadoras com histórico de múltiplas gestações têm maior probabilidade de imunização contra antígenos leucocitários, qual estratégia de triagem de doadores é atualmente recomendada para hemocomponentes ricos em plasma (plasma fresco congelado, plaquetas por aférese)?",
+    "alternativas": [
+      "Excluir permanentemente todas as mulheres da doação de sangue, independentemente do histórico gestacional.",
+      "Priorizar a obtenção desses hemocomponentes de doadores do sexo masculino, mulheres nuligestas, ou mulheres testadas e com resultado negativo para anticorpos anti-HLA após a última gestação.",
+      "Não há necessidade de qualquer triagem adicional, já que a leucorredução do hemocomponente elimina completamente o risco de TRALI.",
+      "Restringir a triagem apenas a doadores com histórico pessoal ou familiar de doenças autoimunes."
+    ],
+    "correta": 1,
+    "comentario": "Como doadoras multíparas (≥3 gestações) têm maior probabilidade de terem desenvolvido anticorpos anti-HLA durante a gravidez (por exposição a antígenos leucocitários fetais/paternos), os padrões atuais de bancos de sangue (AABB/ABHH) recomendam que hemocomponentes ricos em plasma sejam preferencialmente obtidos de doadores do sexo masculino, mulheres que nunca engravidaram, ou mulheres testadas e negativas para anticorpos anti-HLA após a última gestação — política que, em países que a adotaram, reduziu significativamente a incidência de TRALI. A leucorredução reduz reações febris não hemolíticas e aloimunização, mas não elimina o risco de TRALI, que depende de anticorpos já presentes no PLASMA (não nos leucócitos) do doador.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em guidelines atualizados.",
+    "revisado": true
+  },
+  {
+    "id": "q1178",
+    "temaId": "hemoterapia-hemocomponentes",
+    "tema": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
+    "enunciado": "Paciente politraumatizado em choque hemorrágico grave, com necessidade de protocolo de transfusão maciça, conforme os padrões atuais de referência (AABB Standards for Blood Banks and Transfusion Services, 2024). A proporção de hemocomponentes recomendada nesse contexto é:",
+    "alternativas": [
+      "Concentrado de hemácias isoladamente, reservando plasma e plaquetas apenas após resultado laboratorial de coagulograma alterado.",
+      "Proporção próxima de 1:1:1 entre concentrado de hemácias, plasma fresco congelado e concentrado de plaquetas, buscando mimetizar a composição do sangue total e prevenir a coagulopatia dilucional precoce.",
+      "Concentrado de hemácias e plaquetas apenas, sem necessidade de plasma fresco congelado no protocolo inicial.",
+      "Proporção de 4:1:1 (hemácias:plasma:plaquetas), priorizando a reposição de capacidade de transporte de oxigênio sobre a reposição de fatores de coagulação e plaquetas."
+    ],
+    "correta": 1,
+    "comentario": "Os protocolos de transfusão maciça atuais, referenciados pelos padrões AABB (2024), recomendam proporção próxima de 1:1:1 entre concentrado de hemácias, plasma fresco congelado e concentrado de plaquetas — estratégia que busca mimetizar a composição do sangue total e prevenir a coagulopatia dilucional que ocorreria caso a reposição fosse feita apenas com hemácias, aguardando resultados laboratoriais (que podem demorar e já refletir uma coagulopatia estabelecida) antes de repor fatores de coagulação e plaquetas — abordagem que demonstrou redução de mortalidade em pacientes com sangramento maciço.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em guidelines atualizados.",
+    "revisado": true
   }
 ]
