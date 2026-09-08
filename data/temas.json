@@ -8601,8 +8601,8 @@
         "categoria": "Infectologia",
         "titulo": "Leishmaniose Visceral e Tegumentar",
         "resumo": "Lesão cutânea/mucosa na forma tegumentar e a tríade febre-hepatoesplenomegalia-pancitopenia do calazar.",
-        "revisado": false,
-        "fonte": "Ministério da Saúde — Manual de Vigilância e Controle da Leishmaniose Visceral e Tegumentar",
+        "revisado": true,
+        "fonte": "Ministério da Saúde — Manual de Vigilância e Controle da Leishmaniose Visceral e Tegumentar; Ministério da Saúde — Nota Técnica sobre Tratamento das Leishmanioses (2024); Ministério da Saúde — Painéis de Monitoramento das Leishmanioses (set/2024)",
         "mnemonicos": [
             {
                 "palavra": "Calazar aumenta tudo",
@@ -8628,17 +8628,18 @@
             },
             {
                 "titulo": "Tratamento",
-                "conteudo": "Antimoniato de N-metilglucamina permanece amplamente utilizado no Brasil para ambas as formas, com anfotericina B lipossomal reservada como primeira escolha em gestantes, crianças pequenas, imunossuprimidos, coinfecção com HIV, ou insuficiência renal/cardíaca, situações com maior risco de toxicidade do antimonial. O suporte hematológico (transfusões conforme necessidade) e o tratamento de infecções bacterianas secundárias são importantes complementos no manejo da leishmaniose visceral grave."
+                "conteudo": "Antimoniato de N-metilglucamina permanece amplamente utilizado no Brasil para ambas as formas, com anfotericina B lipossomal reservada como primeira escolha em gestantes, crianças pequenas, imunossuprimidos, coinfecção com HIV, ou insuficiência renal/cardíaca, situações com maior risco de toxicidade do antimonial. O suporte hematológico (transfusões conforme necessidade) e o tratamento de infecções bacterianas secundárias são importantes complementos no manejo da leishmaniose visceral grave. A miltefosina é o primeiro e, até o momento, único tratamento disponível por via ORAL para leishmaniose, distribuído pelo Sistema Único de Saúde desde 2021 — representa avanço importante em descentralização do acesso, permitindo autoadministração domiciliar (ao contrário do antimonial e da anfotericina B, que exigem administração parenteral supervisionada). No Brasil, seu uso é indicado principalmente na leishmaniose TEGUMENTAR e nos casos de coinfecção Leishmania-HIV com falha terapêutica ao antimonial."
             },
             {
                 "titulo": "Sinais de alerta",
-                "conteudo": "<span class=\"red-flag\">Febre prolongada, esplenomegalia maciça e pancitopenia grave em criança de área endêmica</span> exige investigação e tratamento imediatos de leishmaniose visceral, condição potencialmente fatal sem tratamento pela suscetibilidade a infecções bacterianas graves e sangramentos decorrentes da pancitopenia."
+                "conteudo": "<span class=\"red-flag\">Febre prolongada, esplenomegalia maciça e pancitopenia grave em criança de área endêmica</span> exige investigação e tratamento imediatos de leishmaniose visceral, condição potencialmente fatal sem tratamento pela suscetibilidade a infecções bacterianas graves e sangramentos decorrentes da pancitopenia. A leishmaniose visceral vem passando por um processo de urbanização/periurbanização no Brasil, com sobreposição crescente entre suas áreas de circulação e a epidemia de HIV — o que tem levado ao aumento da coinfecção Leishmania-HIV (tendência de crescimento particularmente marcada na Bahia), população na qual o quadro clínico costuma ser mais grave, atípico e com maior taxa de recidiva/refratariedade terapêutica, exigindo alto índice de suspeição."
             },
             {
                 "titulo": "Dicas de prova",
-                "conteudo": "A tríade febre prolongada + hepatoesplenomegalia + pancitopenia como quadro clássico de calazar é cobrança certíssima. A indicação de anfotericina B lipossomal (em vez de antimonial) em populações de maior risco de toxicidade (gestantes, imunossuprimidos, coinfecção HIV) também é frequentemente exigida em provas mais atuais."
+                "conteudo": "A tríade febre prolongada + hepatoesplenomegalia + pancitopenia como quadro clássico de calazar é cobrança certíssima. A indicação de anfotericina B lipossomal (em vez de antimonial) em populações de maior risco de toxicidade (gestantes, imunossuprimidos, coinfecção HIV) também é frequentemente exigida em provas mais atuais. A miltefosina como primeiro tratamento oral para leishmaniose (SUS desde 2021, indicada sobretudo na forma tegumentar e na coinfecção Leishmania-HIV com falha ao antimonial) e a urbanização crescente da leishmaniose visceral com sobreposição à epidemia de HIV são atualizações já cobradas em provas recentes."
             }
-        ]
+        ],
+        "comoCai": "No SES-PE e no ENAMED, a cobrança mais frequente é a tríade febre prolongada + hepatoesplenomegalia + pancitopenia como quadro clássico de calazar, a diferenciação semiológica da úlcera indolor de bordas elevadas da forma tegumentar, e a indicação de anfotericina B lipossomal (em vez de antimonial) em populações de maior risco de toxicidade. Provas mais atualizadas já cobram a miltefosina — primeiro e único tratamento por via ORAL disponível para leishmaniose, distribuído pelo SUS desde 2021, empregado principalmente na leishmaniose tegumentar e em casos de coinfecção Leishmania-HIV com falha terapêutica ao antimonial — e o processo de urbanização/periurbanização da leishmaniose visceral no Brasil, com sobreposição crescente entre as áreas de circulação do parasita e a epidemia de HIV, levando ao aumento da coinfecção Leishmania-HIV (tendência particularmente marcada na Bahia)."
     },
     {
         "id": "esquistossomose",
