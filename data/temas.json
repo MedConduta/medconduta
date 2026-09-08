@@ -8693,8 +8693,8 @@
         "categoria": "Infectologia",
         "titulo": "Hanseníase",
         "resumo": "Lesão de pele com perda de sensibilidade como sinal cardinal, classificação operacional e a poliquimioterapia padronizada pela OMS.",
-        "revisado": false,
-        "fonte": "Ministério da Saúde — Guia Prático sobre Hanseníase; Organização Mundial da Saúde",
+        "revisado": true,
+        "fonte": "Ministério da Saúde — Guia Prático sobre Hanseníase; Organização Mundial da Saúde; Portaria CONITEC nº 18/2020 (exclusão da rifampicina em dose única para quimioprofilaxia de contatos no SUS); NHR Brasil — Programa PEP++ (ensaio clínico internacional, Fortaleza/Sobral-CE, iniciado em 2022-2023)",
         "mnemonicos": [
             {
                 "palavra": "Mancha que não sente",
@@ -8720,7 +8720,7 @@
             },
             {
                 "titulo": "Tratamento",
-                "conteudo": "A poliquimioterapia padrão (rifampicina, dapsona, e clofazimina na forma multibacilar) é fornecida gratuitamente pelo Ministério da Saúde, com duração de 6 meses (paucibacilar) ou 12 meses (multibacilar). Reações hansênicas (tipo 1 reversa ou tipo 2/eritema nodoso hansênico) podem ocorrer durante ou após o tratamento, exigindo reconhecimento e manejo específico (corticoide, ou talidomida no eritema nodoso hansênico) para prevenir dano neural adicional irreversível."
+                "conteudo": "A poliquimioterapia padrão (rifampicina, dapsona, e clofazimina na forma multibacilar) é fornecida gratuitamente pelo Ministério da Saúde, com duração de 6 meses (paucibacilar) ou 12 meses (multibacilar). Reações hansênicas (tipo 1 reversa ou tipo 2/eritema nodoso hansênico) podem ocorrer durante ou após o tratamento, exigindo reconhecimento e manejo específico (corticoide, ou talidomida no eritema nodoso hansênico) para prevenir dano neural adicional irreversível. A quimioprofilaxia pós-exposição de contatos com rifampicina em dose única (SDR-PEP) é recomendação da OMS desde 2018, integrando a estratégia global \"Rumo a Zero Hanseníase\" (Global Leprosy Strategy 2021-2030) — no Brasil, chegou a ser testada em projeto-piloto (Projeto PEP-Hans, municípios de Pernambuco, Mato Grosso e Tocantins, entre 2016-2018), mas a CONITEC recomendou sua EXCLUSÃO do rol de medicamentos oferecidos pelo SUS em junho de 2020 (Portaria nº 18), não estando, portanto, atualmente padronizada como política nacional de quimioprofilaxia no Brasil — uma divergência importante entre a recomendação internacional da OMS e a prática brasileira vigente. Mais recentemente, o programa PEP++ (ensaio clínico internacional coordenado pela NLR, com participação brasileira em Fortaleza e Sobral-CE) vem testando um esquema reforçado — três doses de rifampicina associada à claritromicina — com efetividade esperada de 80% a 90% (contra aproximadamente 57% de redução de risco do esquema clássico de dose única), ainda em fase de pesquisa clínica, sem incorporação como política nacional."
             },
             {
                 "titulo": "Sinais de alerta",
@@ -8728,9 +8728,10 @@
             },
             {
                 "titulo": "Dicas de prova",
-                "conteudo": "Os critérios cardinais diagnósticos (lesão de pele com alteração de sensibilidade + espessamento neural) e a classificação operacional (paucibacilar vs. multibacilar pelo número de lesões) são cobrança certíssima. O reconhecimento e tratamento das reações hansênicas (especialmente a importância da detecção precoce para prevenir incapacidade neural permanente) também é ponto frequentemente exigido em provas de saúde pública/infectologia."
+                "conteudo": "Os critérios cardinais diagnósticos (lesão de pele com alteração de sensibilidade + espessamento neural) e a classificação operacional (paucibacilar vs. multibacilar pelo número de lesões) são cobrança certíssima. O reconhecimento e tratamento das reações hansênicas (especialmente a importância da detecção precoce para prevenir incapacidade neural permanente) também é ponto frequentemente exigido em provas de saúde pública/infectologia. A exclusão da rifampicina em dose única do rol de medicamentos do SUS pela CONITEC (2020), apesar da recomendação da OMS, e o programa PEP++ em fase de pesquisa (rifampicina + claritromicina, três doses) são atualizações já cobradas em provas mais recentes."
             }
-        ]
+        ],
+        "comoCai": "No SES-PE e no ENAMED, os critérios cardinais diagnósticos (lesão de pele com alteração de sensibilidade + espessamento neural) e a classificação operacional (paucibacilar vs. multibacilar) são cobrança certíssima. Provas mais atualizadas já cobram a quimioprofilaxia de contatos com rifampicina em dose única (SDR-PEP): embora seja recomendação da OMS desde 2018 (estratégia \"Rumo a Zero Hanseníase\" 2021-2030) e tenha sido testada em projeto-piloto em municípios de Pernambuco, Mato Grosso e Tocantins, a CONITEC recomendou formalmente sua EXCLUSÃO do rol de medicamentos do SUS em 2020 (Portaria nº 18) — um ponto frequentemente cobrado por contrariar a recomendação internacional da OMS. Mais recentemente, o programa PEP++ (ensaio clínico internacional, com braço brasileiro em Fortaleza e Sobral-CE) testa um esquema reforçado de três doses de rifampicina + claritromicina, com efetividade esperada de 80-90% (frente a cerca de 57% do esquema de dose única), ainda em fase de pesquisa, sem incorporação nacional ao SUS."
     },
     {
         "id": "malaria",
