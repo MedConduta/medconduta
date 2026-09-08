@@ -17524,5 +17524,469 @@
         "ano": 2026,
         "fonte": "Questão original MedConduta, com base na Nota Técnica do Ministério da Saúde sobre a incorporação da tafenoquina (2023-2026).",
         "revisado": true
+    },
+    {
+        "id": "q959",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Pedreiro, 42 anos. Há 5 dias, após intenso dia de trabalho, iniciou mialgia em MMII (mais intensa à direita). Há 3 dias: cefaleia, náuseas, dor abdominal leve difusa e febre (38-39°C). Contato constante com água de chuva no local de trabalho, com acúmulo de lixo e roedores; percebeu furo na bota no dia anterior ao início da mialgia, encharcando os pés. Ao exame: anictérico, dor à palpação de panturrilhas. Hemograma: leucocitose com neutrofilia e desvio à esquerda. Bilirrubinas, ureia, creatinina e transaminases normais/discretamente alteradas. Marque a alternativa com uma suspeita diagnóstica, um exame confirmatório e a conduta específica (considerando a fase evolutiva do caso), respectivamente:",
+        "alternativas": [
+            "Leptospirose; reação intradérmica de Montenegro; repouso, hidratação vigorosa, sintomáticos e cefotaxima endovenosa por 7 a 14 dias.",
+            "Febre amarela; reação de Mantoux; repouso, hidratação vigorosa e sintomáticos.",
+            "Dengue; reação de Machado-Guerreiro; repouso, hidratação vigorosa, sintomáticos e cefotaxima endovenosa.",
+            "Leptospirose; teste de microaglutinação; repouso, hidratação vigorosa, sintomáticos e doxiciclina 100 mg VO 12/12h por 5 a 7 dias."
+        ],
+        "correta": 3,
+        "comentario": "O quadro (mialgia intensa em panturrilhas, febre, contexto epidemiológico de exposição a água contaminada por lixo/roedores através de solução de continuidade na pele — o furo na bota) é altamente sugestivo de leptospirose na fase precoce (anictérica, sem sinais de gravidade). O exame confirmatório clássico é o teste de microaglutinação (MAT), padrão-ouro sorológico (embora geralmente positive apenas a partir da 2ª semana). Como se trata de forma LEVE, sem critérios de gravidade (sem icterícia, função renal e hepática normais/discretamente alteradas), o tratamento ambulatorial com doxiciclina oral (100 mg 12/12h por 5-7 dias) é a conduta correta — cefotaxima endovenosa seria reservada a casos graves internados, e Montenegro/Mantoux/Machado-Guerreiro são testes para outras doenças (leishmaniose, tuberculose, doença de Chagas, respectivamente), não para leptospirose.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q960",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Em áreas de risco elevado de aquisição de leptospirose, o medicamento de escolha para profilaxia dessa infecção em humanos é:",
+        "alternativas": [
+            "Ciprofloxacina",
+            "Vacina específica",
+            "Rifampicina",
+            "Doxiciclina",
+            "Amoxicilina"
+        ],
+        "correta": 3,
+        "comentario": "A doxiciclina é o medicamento de escolha para quimioprofilaxia da leptospirose em situações de exposição de risco elevado (ex.: enchentes, trabalhadores com exposição ocupacional contínua a áreas de risco), sendo administrada em dose semanal — não existe vacina humana amplamente disponível/recomendada contra leptospirose no Brasil, e as demais opções listadas não têm indicação estabelecida para essa finalidade profilática.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q961",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Paciente 31 anos, pedreiro. Febre com calafrios, cefaleia holocraniana com náusea e mialgias difusas há 3 dias. Nas últimas 24h: oligúria, urina escura e tosse produtiva com escarro hemoptoico. Contato com água de enchente há 15 dias. Exame: FC 119, Tax 38,5°C, ictérico, hiperemia conjuntival, crepitações em bases pulmonares, artralgias sem derrames. Laboratório: leucocitose com neutrofilia, plaquetas 42.000, Na 132, K 3,0, creatinina 4,4, CPK 1162, TGP 239, TGO 210, bilirrubina total 13,0 (direta 9,9). TC de tórax: espessamento peribrônquico e opacidades nodulares difusas. Sobre esse caso e a leptospirose, assinale a alternativa correta.",
+        "alternativas": [
+            "A hemocultura tem sensibilidade em torno de 90% para o isolamento do organismo, sendo indicada sua coleta antes do início do antibiótico.",
+            "A síndrome de Jarisch-Herxheimer pode ocorrer em formas graves da leptospirose, caracterizada clinicamente por insuficiência renal e hemorragia alveolar difusa.",
+            "A lesão pulmonar do paciente, induzida por êmbolos sépticos, geralmente se apresenta com hemorragia, relacionada à ativação do receptor toll-like (TLR) pelas lipoproteínas da leptospira.",
+            "A insuficiência renal aguda deve-se à desidratação e à rabdomiólise induzida pela espiroqueta, com risco de evolução para fasceíte necrotizante.",
+            "A hiponatremia se deve a uma proteína da membrana externa da leptospira, que inibe a atividade do cotransportador Na+-K+-Cl- no ramo ascendente da alça de Henle, resultando em distúrbio de sódio e potássio."
+        ],
+        "correta": 4,
+        "comentario": "Um mecanismo fisiopatológico específico e menos conhecido da leptospirose é a inibição, por uma proteína da membrana externa da bactéria, do cotransportador Na+-K+-2Cl- (NKCC2) no ramo ascendente espesso da alça de Henle — de forma semelhante ao mecanismo de ação farmacológico dos diuréticos de alça —, o que contribui para a HIPONATREMIA e a HIPOCALEMIA características da leptospirose, mesmo na vigência de insuficiência renal aguda (quando seria esperado, por outras causas de IRA, encontrar hipercalemia). As demais afirmativas contêm erros: a hemocultura tem sensibilidade baixa (não ~90%) e não é o método diagnóstico prático de escolha; a lesão pulmonar da leptospirose não é por êmbolos sépticos, mas por vasculite/hemorragia alveolar direta; e a insuficiência renal não é predominantemente pré-renal/por rabdomiólise com fasceíte necrotizante, mas por nefrite intersticial e necrose tubular aguda diretamente relacionadas à infecção.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q962",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "No tratamento da fase precoce da leptospirose em adulto, considerando as opções disponíveis, o antimicrobiano mais adequado é:",
+        "alternativas": [
+            "Cloranfenicol.",
+            "Clindamicina.",
+            "Tetraciclina.",
+            "Sulfametoxazol-trimetoprim.",
+            "Amoxicilina."
+        ],
+        "correta": 4,
+        "comentario": "Embora a doxiciclina seja classicamente considerada a primeira escolha para a fase precoce da leptospirose em adultos, entre as opções listadas (que não incluem a doxiciclina), a amoxicilina é a alternativa recomendada com eficácia estabelecida contra a Leptospira — sendo, inclusive, a opção preferencial em situações nas quais a doxiciclina é contraindicada (por exemplo, crianças pequenas ou gestantes). Cloranfenicol, clindamicina, tetraciclina (droga mais antiga da mesma classe da doxiciclina, com mais efeitos adversos) e sulfametoxazol-trimetoprim não têm eficácia estabelecida/são inadequados para o tratamento da leptospirose.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q963",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "A imunidade adquirida pós-infecção é sorovar-específica, podendo o mesmo indivíduo apresentar a doença mais de uma vez, se o agente etiológico de cada episódio pertencer a um sorovar diferente do(s) anterior(es). Essa característica é de qual doença?",
+        "alternativas": [
+            "Leptospirose",
+            "Leishmaniose",
+            "Febre do Zika vírus",
+            "Chikungunya"
+        ],
+        "correta": 0,
+        "comentario": "A leptospirose é causada por diferentes sorovares (variantes antigênicas) de Leptospira interrogans, e a resposta imune protetora desenvolvida após uma infecção é SOROVAR-ESPECÍFICA — ou seja, não confere proteção cruzada contra sorovares diferentes, permitindo reinfecções por outros sorovares mesmo em indivíduos previamente acometidos. Essa característica não se aplica da mesma forma às demais doenças listadas.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q964",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "É uma zoonose de caráter endêmico, podendo apresentar-se na forma de surto ou epidemia sob determinadas condições climáticas, ambientais, de infraestrutura sanitária e alta infestação de roedores. Os roedores sinantrópicos são os principais reservatórios dessa doença:",
+        "alternativas": [
+            "Leptospirose.",
+            "Doença de Chagas.",
+            "Esquistossomose.",
+            "Malária."
+        ],
+        "correta": 0,
+        "comentario": "A leptospirose é a zoonose descrita, tendo os roedores SINANTRÓPICOS (que convivem próximo ao ambiente humano, especialmente o rato de esgoto Rattus norvegicus) como principal reservatório urbano — as condições de enchentes, infraestrutura sanitária precária e alta infestação de roedores favorecem surtos e epidemias características dessa doença.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q965",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "A leptospirose tem maior gravidade na sua forma ictérica, fazendo diagnóstico diferencial com outras causas de icterícia febril. Qual alteração laboratorial NÃO é habitualmente encontrada na forma ictérica da leptospirose?",
+        "alternativas": [
+            "Plaquetopenia e anemia.",
+            "Elevação de CPK e de VHS.",
+            "Elevação da creatinina sérica, mas com potássio sérico normal ou diminuído.",
+            "Alteração do líquor com aumento da celularidade, predomínio de células linfomonocitárias.",
+            "Hiperbilirrubinemia com predomínio da fração direta e elevação das transaminases acima de 4 vezes o valor normal."
+        ],
+        "correta": 4,
+        "comentario": "A leptospirose ictérica é classicamente caracterizada por uma DISSOCIAÇÃO laboratorial: hiperbilirrubinemia (com predomínio da fração direta) INTENSA e desproporcional a uma elevação apenas MODESTA das transaminases (raramente ultrapassando 200 UI, ou seja, tipicamente NÃO ultrapassando 4 vezes o valor normal de forma acentuada) — diferentemente das hepatites virais, em que ambos os parâmetros se elevam proporcionalmente. As demais alterações (plaquetopenia/anemia, elevação de CPK/VHS, creatinina elevada com potássio normal/baixo — achado clássico e paradoxal da IRA leptospirótica —, e meningite linfomonocitária asséptica) são, de fato, habitualmente encontradas.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q966",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "A presença de um ou mais sinais clínicos de alerta indica a possibilidade de gravidade do quadro clínico de leptospirose e sugere necessidade de internação hospitalar, EXCETO:",
+        "alternativas": [
+            "Dispneia, tosse e taquipneia.",
+            "Alterações urinárias, geralmente oligúria.",
+            "Hipertensão.",
+            "Fenômenos hemorrágicos, incluindo hemoptise e escarros hemoptoicos.",
+            "Alterações do nível de consciência."
+        ],
+        "correta": 2,
+        "comentario": "Hipertensão NÃO é um sinal de alerta reconhecido de gravidade na leptospirose — pelo contrário, hipotensão/choque é que constituiria achado de alarme em quadros graves com comprometimento hemodinâmico. Os demais sinais listados (dispneia/tosse/taquipneia sugerindo comprometimento pulmonar hemorrágico, alterações urinárias/oligúria sugerindo IRA, fenômenos hemorrágicos incluindo hemoptise, e alterações do nível de consciência) são, de fato, sinais de alerta clássicos que indicam necessidade de internação e vigilância intensiva.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q967",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Sobre a leptospirose LEVE (forma anictérica/não complicada), assinale a alternativa correta.",
+        "alternativas": [
+            "Com frequência, é rapidamente progressiva, com letalidade variando de 1-50%.",
+            "As taxas de mortalidade mais altas estão associadas à idade > 40 anos.",
+            "A apresentação clássica abrange a tríade de hemorragia, icterícia e lesão renal aguda.",
+            "O exame físico pode revelar fígado aumentado e doloroso, sendo esse o achado mais característico da forma leve.",
+            "A dor muscular é intensa e afeta especialmente as panturrilhas, as costas e o abdome."
+        ],
+        "correta": 4,
+        "comentario": "A mialgia intensa, com predileção característica por panturrilhas, região lombar/dorsal e abdome, é a manifestação mais marcante da forma leve/anictérica da leptospirose — geralmente autolimitada, sem os critérios de gravidade que caracterizam a forma grave. As demais alternativas descrevem, na verdade, características da forma GRAVE (síndrome de Weil): letalidade elevada rapidamente progressiva, e a tríade hemorragia + icterícia + IRA são próprias dessa forma complicada, não da leve.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q968",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Em relação à leptospirose, assinale a alternativa INCORRETA.",
+        "alternativas": [
+            "A forma grave da leptospirose, com insuficiência renal aguda, plaquetopenia e hemorragia alveolar, ocorre em 25% dos pacientes.",
+            "A insuficiência renal aguda ocasionada pela leptospirose ocorre por nefrite intersticial ou necrose tubular aguda.",
+            "A forma anictérica pode manifestar-se com febre, calafrios, mialgia, cefaleia, dor retro-orbitária, dor abdominal, podendo até apresentar sinal de Murphy positivo.",
+            "A uveíte anterior pode ocorrer em pacientes com leptospirose, podendo levar à cegueira."
+        ],
+        "correta": 0,
+        "comentario": "A afirmativa incorreta é a que estima em 25% a proporção de pacientes que desenvolvem a forma grave (síndrome de Weil, com IRA, plaquetopenia e hemorragia alveolar) — na realidade, a forma grave ocorre em uma MINORIA dos casos (tipicamente citada como cerca de 5% a 15% dos pacientes sintomáticos), sendo a forma leve/anictérica muito mais frequente. As demais afirmativas estão corretas: mecanismo da IRA (nefrite intersticial/NTA), possibilidade de dor abdominal mimetizando quadro de colecistite (Murphy positivo) mesmo na forma anictérica, e a uveíte anterior como complicação tardia reconhecida, com risco de cegueira.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q969",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Em relação à leptospirose, assinale a alternativa CORRETA.",
+        "alternativas": [
+            "Dificilmente a bilirrubina passa de 20 mg/dL.",
+            "A alteração da função renal ocorre muitas vezes rapidamente e frequentemente evolui com hipocalemia, sendo esse achado de mau prognóstico.",
+            "A cultura da leptospira é o padrão-ouro para confirmação diagnóstica, sendo coletada nos primeiros 7 a 10 dias no sangue e no líquor, e a partir da 2ª/3ª semana na urina.",
+            "Com a progressão da doença e isquemia hepática intensa, níveis de bilirrubina maiores que 60 mg/dL são acompanhados de elevação modesta da fosfatase alcalina e de transaminases que raramente excedem 200."
+        ],
+        "correta": 3,
+        "comentario": "A leptospirose grave pode cursar com níveis de bilirrubina MUITO elevados (podendo ultrapassar 60 mg/dL em casos extremos), classicamente acompanhados de elevação apenas MODESTA da fosfatase alcalina e de transaminases que raramente excedem 200 UI/L — essa dissociação (icterícia intensa com transaminases relativamente pouco elevadas) é um achado laboratorial característico e diferenciador da leptospirose em relação às hepatites virais agudas. A cultura, embora tecnicamente considerada método definitivo de confirmação, tem baixo rendimento prático e demora, não sendo o método de escolha na rotina (o MAT é o padrão-ouro sorológico prático).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q970",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "A leptospirose acomete especialmente populações urbanas de baixa renda, com infraestrutura sanitária deficiente e altas infestações de roedores. A esse respeito, assinale a alternativa CORRETA.",
+        "alternativas": [
+            "A doença apresenta manifestações clínicas variáveis, desde formas assintomáticas/oligossintomáticas até quadros graves, dividindo-se clinicamente em fase precoce (leptospirêmica) e fase tardia (fase imune), a qual ocorre em aproximadamente 15% dos pacientes.",
+            "Os métodos sorológicos (IgM e soroaglutinação microscópica) são recomendados para diagnóstico; os métodos moleculares, introduzidos recentemente, são considerados o padrão-ouro.",
+            "O tratamento recomendado inclui antibioticoterapia e suporte; a antibioticoterapia somente está indicada na primeira semana do início dos sintomas.",
+            "Segundo o Guia de Vigilância Epidemiológica do Ministério da Saúde, o caso deve ser notificado apenas após confirmação laboratorial diagnóstica."
+        ],
+        "correta": 0,
+        "comentario": "A leptospirose evolui em duas fases clínicas: a fase PRECOCE (leptospirêmica, com sintomas inespecíficos, autolimitada na maioria dos casos) e a fase TARDIA (imune, na qual ocorrem as manifestações mais graves como síndrome de Weil e hemorragia pulmonar), que acomete cerca de 15% dos pacientes sintomáticos. As demais alternativas contêm erros: o padrão-ouro permanece sendo o MAT (soroaglutinação microscópica), não os métodos moleculares; a antibioticoterapia pode trazer benefício mesmo além da primeira semana em casos selecionados, não sendo estritamente restrita a esse período; e a notificação deve ocorrer diante de SUSPEITA clínico-epidemiológica, sem necessidade de aguardar confirmação laboratorial, dada a urgência da resposta de vigilância em saúde.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q971",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "A doença de Weil, que ocorre na leptospirose, é caracterizada por combinações variáveis de:",
+        "alternativas": [
+            "Icterícia, lesão renal aguda e hemorragia.",
+            "Colangite, icterícia e hemorragia.",
+            "Hipotensão, uveíte e miocardite.",
+            "Meningite, pancreatite e icterícia.",
+            "Lesão renal aguda, arritmia cardíaca e hemorragia."
+        ],
+        "correta": 0,
+        "comentario": "A doença de Weil (forma grave/íctero-hemorrágica da leptospirose) é classicamente definida pela combinação de icterícia (rubínica), lesão renal aguda e diátese hemorrágica (podendo incluir a temida hemorragia pulmonar maciça) — a tríade central que caracteriza a apresentação mais grave da doença.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q972",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "A respeito da leptospirose em crianças, considere: (1) É doença infecciosa aguda, febril, cuja mortalidade pode chegar a 50% nas formas graves, como a síndrome de Weil e a síndrome de hemorragia pulmonar. (2) As manifestações graves e potencialmente fatais acontecem na fase PRECOCE (leptospirêmica) da doença. (3) A hiperemia conjuntival, por ser incomum na criança com leptospirose, torna essa hipótese diagnóstica menos provável quando presente. (4) A insuficiência renal aguda, como complicação, tem apresentação peculiar, podendo apresentar-se de maneira não oligúrica e com hipocalemia. (5) A antibioticoterapia está indicada somente na fase precoce e não evita manifestações graves se iniciada na segunda semana. Assinale a alternativa CORRETA:",
+        "alternativas": [
+            "Somente as afirmativas 1, 2 e 5 são verdadeiras.",
+            "Somente as afirmativas 1, 3 e 5 são verdadeiras.",
+            "Somente as afirmativas 1 e 4 são verdadeiras.",
+            "Somente as afirmativas 2, 3 e 4 são verdadeiras.",
+            "Somente as afirmativas 3 e 4 são verdadeiras."
+        ],
+        "correta": 2,
+        "comentario": "As afirmativas 1 e 4 estão corretas: a mortalidade pode de fato atingir até 50% nas formas graves (Weil/hemorragia pulmonar) sem tratamento adequado, e a IRA da leptospirose tem apresentação característica não oligúrica com hipocalemia (achado que ajuda a diferenciá-la de outras causas de IRA). As demais são falsas: as manifestações graves ocorrem na fase TARDIA (imune), não na precoce; a hiperemia/sufusão conjuntival é, ao contrário do afirmado, achado COMUM e sugestivo de leptospirose (mesmo em crianças), reforçando (não afastando) essa hipótese; e a antibioticoterapia pode trazer benefício mesmo iniciada além da primeira semana, não sendo estritamente restrita à fase precoce.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q973",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Sobre a leptospirose, julgue (V/F): (  ) É doença infecciosa febril, CRÔNICA, potencialmente grave, causada pela bactéria Leptospira interrogans. (  ) É zoonose de ocorrência mundial, principalmente em regiões POLARES. (  ) O rato de esgoto (Rattus norvegicus) é o principal responsável pela infecção humana, por existir em grande número e proximidade com seres humanos. (  ) O período de incubação é de cerca de dez dias. A sequência correta, de cima para baixo, é:",
+        "alternativas": [
+            "V, F, V, V",
+            "V, V, F, F",
+            "F, F, V, V",
+            "V, F, V, F",
+            "V, V, V, V"
+        ],
+        "correta": 2,
+        "comentario": "As duas primeiras afirmativas são falsas: a leptospirose é doença AGUDA (não crônica), e é mais prevalente em regiões TROPICAIS (não polares), onde as condições climáticas (calor, umidade, enchentes) favorecem a sobrevivência da bactéria no ambiente e a proliferação de roedores. As duas últimas são verdadeiras: o rato de esgoto é de fato o principal reservatório urbano por sua abundância e proximidade com humanos, e o período médio de incubação é de cerca de 10 dias (variando de 1 a 30 dias).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q974",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Paciente, 35 anos, quadro agudo de febre com calafrio, mialgia intensa e cefaleia. Exame físico: Tax 39°C, intensa dor à palpação de panturrilhas. História epidemiológica de limpeza de esgoto domiciliar há cerca de 10 dias. Nega viagem nos seis meses anteriores. A principal hipótese diagnóstica é:",
+        "alternativas": [
+            "Malária.",
+            "Leptospirose.",
+            "Febre amarela.",
+            "Infecção por H1N1.",
+            "Endocardite."
+        ],
+        "correta": 1,
+        "comentario": "A combinação de febre, mialgia intensa em panturrilhas e história epidemiológica de exposição a esgoto (fonte clássica de contaminação por Leptospira eliminada na urina de roedores) é altamente sugestiva de leptospirose — a ausência de viagem recente também afasta malária e febre amarela silvestre, que exigem exposição em área endêmica específica.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q975",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Em períodos chuvosos com inundações, são comuns os casos de leptospirose. Qual característica clínico-laboratorial NÃO costuma ser observada em casos GRAVES de leptospirose?",
+        "alternativas": [
+            "Insuficiência renal aguda com hipocalemia.",
+            "Anemia hemolítica Coombs positivo.",
+            "Hemorragia pulmonar.",
+            "Meningite linfomonocitária.",
+            "Miocardite."
+        ],
+        "correta": 1,
+        "comentario": "A anemia hemolítica com teste de Coombs POSITIVO (sugerindo mecanismo autoimune) NÃO é achado característico da leptospirose grave — quando presente, a anemia na leptospirose relaciona-se mais a sangramento/hemorragia do que a hemólise autoimune Coombs-positiva. As demais alterações (IRA com hipocalemia, hemorragia pulmonar, meningite linfomonocitária asséptica e miocardite) são complicações reconhecidas e bem documentadas da forma grave da doença.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q976",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Diante de um caso de leptospirose, é correto afirmar que:",
+        "alternativas": [
+            "Pode ser feito diagnóstico solicitando o teste de aglutinação microscópica.",
+            "Observa-se que a maioria dos casos se manifesta com a síndrome de Weil.",
+            "Hepatoesplenomegalia está presente em cerca de 90% dos pacientes.",
+            "Na forma ictérica, é comum encontrar aumentos expressivos das transaminases (acima de 500 UI).",
+            "O achado radiológico mais comum é o derrame pleural esquerdo."
+        ],
+        "correta": 0,
+        "comentario": "O teste de aglutinação microscópica (MAT) é o exame sorológico padrão-ouro reconhecido para confirmação diagnóstica da leptospirose. As demais alternativas contêm erros recorrentes: a MAIORIA dos casos é, na verdade, leve/anictérica (não Weil, que é minoria); hepatoesplenomegalia NÃO é achado tão frequente (não ~90%); e, na forma ictérica, as transaminases tipicamente permanecem apenas MODESTAMENTE elevadas (raramente acima de 200 UI, não 500), contrastando com a hiperbilirrubinemia intensa — a dissociação bilirrubina/transaminases já mencionada em outras questões deste tema.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q977",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Acredita-se que a leptospirose seja a zoonose mais disseminada pelo mundo. Marque a alternativa CORRETA:",
+        "alternativas": [
+            "A imunização canina não pode evitar o estado portador ou disseminador.",
+            "O estado de portador pode ocorrer em vários animais, no qual o hospedeiro pode eliminar leptospiras na urina por meses ou anos.",
+            "A natação em águas contaminadas ocorre em 1/5 dos pacientes, sendo responsável pela maioria dos surtos de fonte única.",
+            "Todas as alternativas acima estão corretas."
+        ],
+        "correta": 3,
+        "comentario": "As três afirmativas anteriores estão corretas: a vacinação canina reduz a doença clínica no animal, mas NÃO necessariamente impede que ele se torne portador/eliminador de leptospiras na urina; diversas espécies animais (não apenas roedores) podem se tornar portadoras crônicas, eliminando o agente na urina por meses ou até anos; e a exposição por natação em águas contaminadas é uma via de transmissão relevante, associada a surtos de fonte única em uma proporção significativa dos casos.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q978",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Paciente, 26 anos, morador de rua, 5 dias de mialgia, cefaleia e febre. Há 1 dia: alteração da coloração da pele e tosse não produtiva. Exame: taquipneico, taquicárdico, sufusão conjuntival, icterícia, crepitantes em ambas as bases. Laboratório: CPK 923, leucócitos 16.200, plaquetas 52.000, creatinina 2,8, potássio 3,1, bilirrubina total 5,2 (direta 4,7). Considerando a hipótese diagnóstica mais provável (leptospirose grave), assinale a alternativa CORRETA.",
+        "alternativas": [
+            "A sufusão conjuntival é achado altamente ESPECÍFICO da doença, porém pouco SENSÍVEL.",
+            "Neste caso, a antibioticoterapia não deve ser utilizada, considerando o tempo de evolução (5 dias).",
+            "A diálise peritoneal é a modalidade mais indicada caso se opte por terapia dialítica.",
+            "A mortalidade da doença é baixa mesmo nas formas graves, com os cuidados atuais.",
+            "No Brasil, a maior parte dos casos é identificada nas regiões Sul e Sudeste."
+        ],
+        "correta": 0,
+        "comentario": "A sufusão conjuntival (hiperemia conjuntival bilateral sem secreção purulenta) é um achado ESPECÍFICO da leptospirose entre as causas de síndrome febril íctero-hemorrágica, mas pouco SENSÍVEL (nem todos os pacientes a apresentam), sendo por isso mais útil para reforçar a suspeita quando presente do que para excluir o diagnóstico quando ausente. A antibioticoterapia deve ser oferecida mesmo em fase mais tardia (não contraindicada por 5 dias de evolução); a hemodiálise (não a diálise peritoneal) é a modalidade preferida na leptospirose grave; a mortalidade das formas graves permanece relevante (não baixa) mesmo com tratamento atual; e a maior parte dos casos brasileiros concentra-se nas regiões com maior pluviosidade/infraestrutura sanitária precária, não predominantemente Sul/Sudeste.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q979",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Durante verão chuvoso, um motorista de aplicativo passou a levar diariamente, pela manhã, um executivo a uma fábrica nas cercanias de um lixão suburbano sujeito a enchentes frequentes. Temendo contaminação por Leptospira, procurou orientação médica. A profilaxia antibiótica oral semanal adequada, nesse contexto de exposição de risco contínua, é:",
+        "alternativas": [
+            "Doxiciclina 200 mg.",
+            "Norfloxacina 400 mg.",
+            "Clindamicina 300 mg.",
+            "Penicilina V 500.000 U."
+        ],
+        "correta": 0,
+        "comentario": "A doxiciclina, na dose de 200 mg em administração SEMANAL (dose de profilaxia, distinta da dose de tratamento de 100 mg 12/12h), é o esquema quimioprofilático recomendado para pessoas com exposição de risco contínua/repetida a áreas de circulação de Leptospira (como esse cenário de exposição ocupacional diária a área de risco por enchentes) — as demais opções não têm indicação estabelecida para essa finalidade.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q980",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Com relação à leptospirose, é correto afirmar que:",
+        "alternativas": [
+            "O período de incubação médio é entre 14 e 28 dias.",
+            "A imunidade adquirida pós-infecção é sorovar-específica.",
+            "Os animais infectados podem eliminar leptospiras pela urina por até seis semanas.",
+            "O principal reservatório é constituído por roedores silvestres."
+        ],
+        "correta": 1,
+        "comentario": "A imunidade adquirida após a infecção por leptospirose é SOROVAR-ESPECÍFICA, permitindo reinfecções por sorovares diferentes ao longo da vida. As demais alternativas contêm erros: o período de incubação médio é mais curto (cerca de 1 a 30 dias, com média de aproximadamente 10 dias, não 14-28 dias); animais portadores podem eliminar leptospiras na urina por MESES a ANOS (não apenas 6 semanas); e o principal reservatório urbano são os roedores SINANTRÓPICOS (que convivem próximos ao homem, como o Rattus norvegicus), não roedores silvestres.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q981",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "O acometimento renal é comum na forma grave da leptospirose, e o correto manejo é fundamental para evolução favorável. Sobre o tratamento da leptospirose, é correto afirmar:",
+        "alternativas": [
+            "O tratamento dialítico deve ser criteriosamente indicado, uma vez que sua instituição PRECOCE tem sido associada à redução da mortalidade.",
+            "A Leptospira é altamente sensível a antibióticos, incluindo a penicilina cristalina, mas há consenso de que o antibiótico deva ser indicado apenas na fase grave (íctero-hemorrágica).",
+            "O uso de diuréticos de alça tem sido indicado na admissão, já que a forma oligúrica está associada a pior prognóstico.",
+            "A hidratação venosa deve ser feita de forma agressiva, com volumes acima de 3.000 mL/dia, já que o componente pré-renal é fundamental na patogênese da insuficiência renal aguda na leptospirose.",
+            "A reação de Jarisch-Herxheimer é comumente observada após uso de penicilina cristalina na leptospirose, devendo-se evitar seu uso."
+        ],
+        "correta": 0,
+        "comentario": "A instituição PRECOCE de terapia dialítica (quando indicada pelos critérios de gravidade da IRA) tem sido associada à redução da mortalidade na leptospirose grave — um ponto importante de manejo. As demais alternativas contêm erros: a antibioticoterapia deve ser iniciada o quanto antes (não reservada apenas à fase grave); diuréticos de alça não têm indicação rotineira comprovada na admissão e podem ser prejudiciais; a hidratação agressiva não é a conduta recomendada, já que a IRA da leptospirose NÃO é predominantemente pré-renal (é por lesão tubular/intersticial direta), podendo a hiper-hidratação agravar a sobrecarga volêmica (especialmente preocupante diante do risco de hemorragia pulmonar); e a reação de Jarisch-Herxheimer, embora possa ocorrer com penicilina, não constitui motivo para evitar seu uso, que permanece opção terapêutica eficaz e reconhecida (especialmente em casos graves).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q982",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Em abril-maio de 2024, o Rio Grande do Sul foi atingido pelo maior evento climático extremo já registrado no estado, com precipitação acumulada superior a 700 mm em algumas regiões, causando enchentes generalizadas. Sobre o impacto epidemiológico desse desastre na incidência de leptospirose, é correto afirmar que:",
+        "alternativas": [
+            "Houve aumento de aproximadamente 350% nas infecções e 150% nos óbitos por leptospirose em relação à média mensal de 2023, com mais de 500 casos confirmados e 25 óbitos registrados nos meses seguintes ao desastre — exemplo concreto e recente da associação clássica entre enchentes urbanas e surtos da doença.",
+            "Não houve qualquer aumento nos casos de leptospirose no Rio Grande do Sul associado às enchentes de 2024, já que a doença não tem relação com exposição a água de enchente.",
+            "O aumento de casos foi atribuído exclusivamente à dengue, sem qualquer relação com leptospirose durante o período das enchentes.",
+            "As enchentes de 2024 no Rio Grande do Sul não tiveram magnitude suficiente para serem consideradas um evento climático relevante."
+        ],
+        "correta": 0,
+        "comentario": "As enchentes históricas que atingiram o Rio Grande do Sul em abril-maio de 2024 — o maior evento climático extremo já registrado no estado, com precipitação acumulada superior a 700 mm em algumas regiões — geraram um surto real e expressivo de leptospirose: aumento de aproximadamente 350% nas infecções e 150% nos óbitos em relação à média mensal de 2023, com mais de 500 casos confirmados e 25 óbitos registrados nos meses seguintes ao desastre. Esse episódio recente exemplifica de forma concreta a associação clássica, já bem estabelecida na literatura, entre enchentes urbanas (com exposição da população a água/lama contaminada pela urina de roedores) e o aumento de casos de leptospirose — merecendo atenção redobrada de profissionais de saúde em cenários semelhantes de desastres climáticos.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base nos boletins epidemiológicos da Secretaria de Saúde do RS sobre as enchentes de 2024.",
+        "revisado": true
+    },
+    {
+        "id": "q983",
+        "temaId": "leptospirose",
+        "tema": "Leptospirose",
+        "enunciado": "Durante o período das enchentes no Rio Grande do Sul em 2024, equipes de saúde precisaram identificar rapidamente casos suspeitos de leptospirose entre pacientes com febre que haviam tido contato com água de enchente, mesmo antes da confirmação laboratorial. Considerando o cenário de um surto pós-desastre climático com grande volume de atendimentos, qual é a conduta mais apropriada diante de um paciente com febre, mialgia intensa em panturrilhas e histórico de exposição a água de enchente nos dias anteriores?",
+        "alternativas": [
+            "Considerar a leptospirose como hipótese diagnóstica principal com base nos critérios clínico-epidemiológicos, notificar o caso suspeito imediatamente (sem aguardar confirmação laboratorial, dada a urgência da resposta de vigilância em surtos) e iniciar tratamento antimicrobiano precoce, especialmente diante de sinais de alerta.",
+            "Aguardar obrigatoriamente o resultado do teste de microaglutinação (MAT) antes de iniciar qualquer tratamento ou notificação, mesmo em cenário de surto com múltiplos casos suspeitos.",
+            "Descartar a hipótese de leptospirose caso o paciente não apresente icterícia no momento da primeira consulta.",
+            "Iniciar tratamento apenas se houver disponibilidade imediata de leito de UTI, independentemente da gravidade clínica do caso."
+        ],
+        "correta": 0,
+        "comentario": "Em contexto de surto pós-desastre climático (como as enchentes do RS em 2024), a conduta correta diante de febre e mialgia intensa em panturrilhas com história de exposição a água de enchente é considerar a leptospirose como hipótese diagnóstica PRINCIPAL com base em critérios CLÍNICO-EPIDEMIOLÓGICOS — a notificação do caso suspeito deve ser imediata, sem aguardar confirmação laboratorial (que frequentemente demora, sobretudo a sorologia MAT, positiva geralmente só a partir da 2ª semana), dada a importância da resposta rápida de vigilância epidemiológica em cenários de surto. O tratamento antimicrobiano precoce (doxiciclina nos casos leves, ou antibioticoterapia parenteral e suporte intensivo diante de sinais de alerta) não deve ser postergado pela ausência de confirmação laboratorial ou de icterícia (que pode estar ausente na maioria dos casos, tipicamente anictéricos), nem pela disponibilidade de leito de UTI, que não deve ser pré-requisito para o início do tratamento antimicrobiano.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base nos boletins epidemiológicos da Secretaria de Saúde do RS sobre as enchentes de 2024.",
+        "revisado": true
     }
 ]
