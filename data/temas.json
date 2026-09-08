@@ -1939,8 +1939,8 @@
     "categoria": "Infectologia",
     "titulo": "Dengue e Arboviroses",
     "resumo": "Classificação de risco, sinais de alarme e manejo hidratação conforme gravidade.",
-    "revisado": false,
-    "fonte": "Ministério da Saúde — Guia de Manejo Clínico da Dengue (2024); Organização Pan-Americana da Saúde",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Manejo Clínico da Dengue (2024); Organização Pan-Americana da Saúde; Ministério da Saúde — Plano Nacional de Vacinação contra a Dengue com Qdenga (TAK-003), 2024-2025",
     "mnemonicos": [
       {
         "palavra": "SINAIS DE ALARME",
@@ -1966,7 +1966,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Não há tratamento antiviral específico; o manejo é de suporte, com hidratação adequada (oral nos casos sem sinais de alarme, venosa conforme classificação de risco) sendo a intervenção mais importante e determinante do desfecho. Analgésicos/antitérmicos (paracetamol) são usados para sintomas, com contraindicação formal de AAS e outros anti-inflamatórios não esteroidais pelo risco de sangramento e de síndrome de Reye. A classificação de risco (A, B, C, D) do Ministério da Saúde orienta objetivamente a conduta e o local de tratamento (domiciliar, observação, ou internação/UTI)."
+        "conteudo": "Não há tratamento antiviral específico; o manejo é de suporte, com hidratação adequada (oral nos casos sem sinais de alarme, venosa conforme classificação de risco) sendo a intervenção mais importante e determinante do desfecho. Analgésicos/antitérmicos (paracetamol) são usados para sintomas, com contraindicação formal de AAS e outros anti-inflamatórios não esteroidais pelo risco de sangramento e de síndrome de Reye. A classificação de risco (A, B, C, D) do Ministério da Saúde orienta objetivamente a conduta e o local de tratamento (domiciliar, observação, ou internação/UTI). Como estratégia de PREVENÇÃO, o Brasil foi o primeiro país do mundo a incorporar a vacina Qdenga (TAK-003, vacina viva atenuada tetravalente) na rede pública (SUS), a partir de fevereiro de 2024, inicialmente priorizando municípios de alta incidência histórica e faixa etária de 10-14 anos, com expansão progressiva de idade e cobertura municipal ao longo de 2024-2025. O esquema consiste em 2 doses com intervalo de 3 meses, e uma vantagem fundamental da Qdenga em relação à vacina anterior (Dengvaxia/CYD-TDV, de 3 doses) é poder ser aplicada independentemente do status sorológico prévio para dengue — a Dengvaxia, por sua vez, é restrita a pessoas com infecção prévia confirmada (soropositivas), pelo risco de dengue grave em soronegativos que venham a ter a primeira infecção natural após a vacinação. A Qdenga demonstrou eficácia global de aproximadamente 61% contra dengue confirmada virologicamente e 84% contra hospitalização em cenários endêmicos, embora a eficácia especificamente contra os sorotipos DENV-3 e DENV-4 em indivíduos soronegativos ainda seja menos estabelecida."
       },
       {
         "titulo": "Sinais de alerta",
@@ -1974,9 +1974,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A contraindicação de AAS/AINEs na dengue (risco de sangramento) é cobrança certíssima. Os sinais de alarme do Ministério da Saúde e a classificação de risco (A/B/C/D) com suas condutas correspondentes também são extremamente recorrentes, assim como o entendimento de que a fase crítica (maior risco) coincide com a queda da febre, não com seu pico."
+        "conteudo": "A contraindicação de AAS/AINEs na dengue (risco de sangramento) é cobrança certíssima. Os sinais de alarme do Ministério da Saúde e a classificação de risco (A/B/C/D) com suas condutas correspondentes também são extremamente recorrentes, assim como o entendimento de que a fase crítica (maior risco) coincide com a queda da febre, não com seu pico. Provas mais atualizadas já cobram a vacina Qdenga (esquema de 2 doses, aplicável independentemente do status sorológico prévio) como novidade do Programa Nacional de Imunizações, em contraste com a Dengvaxia (3 doses, restrita a soropositivos prévios)."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, os sinais de alarme, a classificação de risco (A/B/C/D) com suas condutas correspondentes, e a contraindicação de AAS/AINEs são cobrança certíssima. O entendimento de que a fase crítica coincide com a queda da febre (não com seu pico) também é frequentemente exigido. Provas mais atualizadas já cobram a vacina Qdenga (TAK-003), incorporada ao SUS a partir de 2024 — esquema de 2 doses com intervalo de 3 meses, podendo ser aplicada independentemente do status sorológico prévio para dengue (diferença fundamental em relação à vacina anterior, Dengvaxia, restrita a quem já teve infecção prévia confirmada)."
   },
   {
     "id": "ists-sifilis",
