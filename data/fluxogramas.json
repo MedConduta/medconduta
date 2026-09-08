@@ -154,7 +154,7 @@
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Dor torácica — Fluxo diagnóstico (SCA)",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Diretriz de Síndromes Coronarianas Agudas sem Supra de ST - SBC (2021); ESC Guidelines for Acute Coronary Syndromes (2023)",
     "fluxo": [
       {
@@ -3710,6 +3710,85 @@
               {
                 "tipo": "end",
                 "texto": "Alta com reavaliação ambulatorial precoce em até 7 dias — sem necessidade de internação"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-iam-tratamento",
+    "temaId": "iam",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "IAMCSST — Estratégia de reperfusão",
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Dor Torácica na Unidade de Emergência (2025); ESC Guidelines for STEMI (2023); Estratégia MED (IAMCSST.pdf)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "IAMCSST confirmado (supra de ST ou BRE novo + quadro compatível)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Medidas gerais: AAS 300mg + P2Y12 + O2 se SatO2<90% + nitrato sublingual (se sem contraindicação) ± morfina"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Avaliar V3R/V4R antes de nitrato/morfina/diurético — se infarto de VD, evitar (expandir volume em vez disso)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Angioplastia primária disponível em até 120 minutos do primeiro contato médico?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Angioplastia primária (ICP) — estratégia preferencial"
+              },
+              {
+                "tipo": "end",
+                "texto": "ICP + antiagregação dupla + anticoagulação periprocedimento"
+              }
+            ]
+          },
+          {
+            "label": "Não (transporte/tempo excedido)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Fibrinólise imediata (preferir fibrino-específico: tenecteplase/alteplase) + AAS + clopidogrel + enoxaparina ou HNF"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Critérios de reperfusão em 60-90min (queda >50% do supra de ST + melhora da dor)?",
+                "ramos": [
+                  {
+                    "label": "Sim (sucesso)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Transferir para cateterismo de rotina entre 2-24h"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não (falha)",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Ritmo idioventricular acelerado é sinal de reperfusão, não de falha — não confundir"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "ICP de resgate imediata"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }

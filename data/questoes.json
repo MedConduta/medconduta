@@ -39,9 +39,9 @@
     "id": "q3",
     "temaId": "iam",
     "tema": "Infarto Agudo do Miocárdio (IAM)",
-    "banca": "Exemplo — Residência Médica",
+    "banca": "Exemplo — MedConduta",
     "ano": 2024,
-    "revisado": false,
+    "revisado": true,
     "fonte": "Diretriz de Síndromes Coronarianas Agudas sem Supra de ST - SBC (2021); ESC Guidelines for Acute Coronary Syndromes (2023)",
     "enunciado": "Paciente com dor torácica típica há 40 minutos, ECG com supradesnivelamento de ST em parede anterior. Hospital sem hemodinâmica, com tempo estimado de transferência de 3 horas até centro terciário. Qual a conduta mais apropriada?",
     "alternativas": [
@@ -26046,5 +26046,495 @@
     "ano": 2017,
     "fonte": "Prova de residência médica (banco de questões).",
     "revisado": true
+  },
+  {
+    "id": "q1422",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Em relação à síndrome coronariana aguda (SCA), assinale a alternativa correta.",
+    "alternativas": [
+      "A terapia fibrinolítica é crucial para salvar vidas tanto na SCA com supradesnivelamento do segmento ST quanto na SCA sem supra de ST.",
+      "Cerca de um terço dos pacientes com IAM não têm dor no peito. Esses pacientes tendem a ser idosos, do sexo feminino, diabéticos e correm maior risco de morte subsequente.",
+      "Paciente com dor torácica típica, mas com marcadores de necrose miocárdica normais e sem supradesnivelamento do segmento ST, exclui-se infarto agudo do miocárdio.",
+      "O deslocamento dinâmico do segmento ST é a alteração eletrocardiográfica mais sensível para a síndrome coronariana aguda.",
+      "Se o LDL-colesterol do paciente for baixo, não há recomendação de estatina na síndrome coronariana aguda."
+    ],
+    "correta": 1,
+    "comentario": "A apresentação atípica do IAM (sem dor torácica clássica) ocorre em cerca de 1/3 dos casos e é mais comum em idosos, mulheres e diabéticos (neuropatia autonômica) — grupo com maior mortalidade justamente por atraso diagnóstico. A fibrinólise só tem benefício comprovado no IAMCSST (ou BRE novo com quadro compatível); na SCA sem supra ela é contraindicada, pois aumenta risco de sangramento sem benefício isquêmico. Troponina normal e ECG sem supra não excluem SCA (pode ser angina instável ou IAM em evolução — repetir marcadores é obrigatório). Estatina de alta potência é indicada a todo paciente com SCA independentemente do LDL basal."
+  },
+  {
+    "id": "q1423",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente de 80 anos é encontrado em via pública após queda súbita com perda de consciência. Ao exame: PA 80x40 mmHg, estertores pulmonares difusos e turgência jugular. O monitor cardíaco mostra um ritmo compatível com taquicardia ventricular. Julgue: na ausência de pulso nesse ritmo, deve-se realizar cardioversão elétrica sincronizada.",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 1,
+    "comentario": "TV sem pulso é equivalente a uma parada cardiorrespiratória e deve ser tratada como fibrilação ventricular: RCP imediata + desfibrilação (choque não sincronizado), e não cardioversão sincronizada. A cardioversão sincronizada é reservada para taquiarritmias com pulso (o sincronismo evita o choque cair sobre a onda T e precipitar FV). Confundir esses dois algoritmos é um erro grave e recorrente em provas."
+  },
+  {
+    "id": "q1424",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Qual das condições abaixo NÃO constitui contraindicação para trombólise intravenosa no IAMCSST?",
+    "alternativas": [
+      "Uso de varfarina com INR > 1,7.",
+      "Suspeita de hemorragia subaracnóidea.",
+      "Presença de endocardite bacteriana.",
+      "Presença de meningioma."
+    ],
+    "correta": 3,
+    "comentario": "Neoplasia intracraniana benigna extra-axial (como meningioma) não é, por si só, contraindicação absoluta amplamente citada nas listas clássicas de contraindicação a fibrinolíticos — diferente de neoplasia intracraniana maligna ou lesão estrutural com risco hemorrágico. INR > 1,7, suspeita de HSA e endocardite infecciosa (risco de embolização séptica/sangramento em vegetação) são contraindicações reconhecidas. Vale sempre revisar a lista de contraindicações absolutas (AVC hemorrágico prévio, AVC isquêmico < 3 meses, neoplasia ou malformação vascular intracraniana, sangramento ativo, dissecção de aorta, trauma facial/craniano recente) e relativas (HAS não controlada > 180x110, uso de anticoagulante, gravidez, úlcera péptica ativa, RCP prolongada)."
+  },
+  {
+    "id": "q1425",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Homem de 61 anos, tabagista e hipertenso, chega ao PS com dor precordial em queimação de forte intensidade e sudorese profusa, iniciada há 20 minutos. PA 146x94 mmHg, FC 92 bpm, sem sopros. ECG mostra supradesnível de ST em parede inferior, com supra também em V3R e V4R de cerca de 1 mm. Foi administrado AAS 300 mg. O serviço de hemodinâmica mais próximo está a mais de 3 horas de distância e o PS dispõe de todos os medicamentos necessários. Qual a melhor conduta?",
+    "alternativas": [
+      "Clopidogrel 300 mg, enoxaparina intravenosa e depois subcutânea, e trombolítico fibrino-específico intravenoso.",
+      "Ticagrelor 180 mg, enoxaparina intravenosa e depois subcutânea, e trombolítico fibrino-específico intravenoso.",
+      "Isordil sublingual 5 mg, morfina intravenosa, clopidogrel 300 mg, enoxaparina subcutânea e trombolítico fibrino-específico intravenoso.",
+      "Isordil sublingual 5 mg, morfina intravenosa, ticagrelor 180 mg, enoxaparina subcutânea e trombolítico fibrino-específico intravenoso."
+    ],
+    "correta": 0,
+    "comentario": "IAM de parede inferior com supra em V3R/V4R = infarto de ventrículo direito associado, condição VD-dependente de pré-carga. Nitrato (isordil) e morfina são contraindicados nesse cenário, pois reduzem o retorno venoso e podem precipitar choque/hipotensão grave — daí a eliminação das opções C e D. Quando o tempo até a hemodinâmica excede a meta (aqui > 3h, muito acima dos 120 min), a estratégia farmaco-invasiva (fibrinolítico fibrino-específico + anticoagulação, seguida de transferência) é preferida à angioplastia tardia. Nesse contexto, com paciente > 75 anos não se usa dose de ataque de clopidogrel de 300 mg associada a fibrinolítico em pacientes idosos (ajuste de dose), mas aqui a escolha correta reforçada pelo gabarito é clopidogrel (não ticagrelor/prasugrel, que não têm segurança estabelecida em associação a fibrinolítico) com enoxaparina IV seguida de SC."
+  },
+  {
+    "id": "q1426",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Na ocorrência de infarto agudo do miocárdio de parede inferior, a coexistência com infarto de ventrículo direito exige atenção especial na abordagem terapêutica. Assinale a alternativa correta.",
+    "alternativas": [
+      "A evolução complicada dos pacientes com infarto de parede inferior é identificada na associação com infarto de ventrículo direito, impactando o prognóstico quando não adequadamente reperfundidos.",
+      "A perspectiva de complicações do infarto inferior é diretamente proporcional ao infarto de ventrículo direito não documentado.",
+      "A relação entre IAM inferior e IAM de ventrículo direito só tem implicação prática se identificada a tríade clínica clássica.",
+      "Deve-se observar supradesnivelamento de ST em V4R para diagnóstico definitivo de infarto de VD, independentemente do tempo de dor torácica.",
+      "A coexistência de IAM inferior e infarto de VD só determina infusão rápida de volume se confirmado supra de ST em V4R, independentemente da apresentação clínica."
+    ],
+    "correta": 0,
+    "comentario": "O infarto de VD ocorre em até 30-50% dos IAM de parede inferior (por oclusão proximal de coronária direita) e piora significativamente o prognóstico quando não reconhecido e reperfundido a tempo — daí a recomendação de rastrear rotineiramente V3R/V4R em todo IAM inferior. O supra de ST em V4R é o achado mais sensível, mas tem janela de detecção (tende a normalizar em horas), então sua ausência não exclui o diagnóstico e a conduta (evitar nitrato/diurético, expandir volume) deve ser guiada pelo quadro clínico como um todo, não apenas pelo ECG isolado."
+  },
+  {
+    "id": "q1427",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Os critérios para diagnóstico de IAM incluem aumento e/ou queda de marcadores de necrose miocárdica (preferencialmente troponina), com pelo menos um valor acima do percentil 99 do método. Assinale a alternativa que completa corretamente o critério, segundo a Quarta Definição Universal de IAM.",
+    "alternativas": [
+      "Associado a pelo menos duas das seguintes alterações: sintomas de isquemia, novas alterações de ST/T ou BRE novo, ondas Q patológicas, perda de miocárdio viável/nova alteração de contratilidade em exame de imagem, ou trombo intracoronário na angiografia/autópsia.",
+      "Associado a pelo menos uma dessas alterações, incluindo BRE antigo (não novo).",
+      "Associado a pelo menos uma dessas alterações, exigindo especificamente BRE novo.",
+      "Associado a pelo menos uma dessas alterações, exceto quando identificado apenas em autópsia."
+    ],
+    "correta": 2,
+    "comentario": "A Quarta Definição Universal de Infarto do Miocárdio exige apenas UM (não dois) dos critérios clínicos/eletrocardiográficos/de imagem associados à elevação de troponina acima do percentil 99, e o critério eletrocardiográfico específico é bloqueio de ramo esquerdo NOVO (não antigo/preexistente) — um detalhe clássico de prova, já que BRE antigo dificulta a interpretação do ECG mas não é, por si, critério diagnóstico de IAM agudo."
+  },
+  {
+    "id": "q1428",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente de 54 anos, hipertenso e dislipidêmico, com dor torácica retroesternal irradiada para mandíbula há 1 hora. PA 140x90 mmHg, FC 92, SatO2 94%, presença de B3/B4 e estertores em bases. ECG revela infradesnivelamento de ST. Julgue: a trombólise é contraindicada para esse paciente.",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 0,
+    "comentario": "Fibrinolíticos só têm indicação e benefício comprovados no IAMCSST (supradesnivelamento de ST) ou BRE novo com quadro clínico compatível. Na presença de infradesnivelamento de ST — típico de SCA sem supra — a trombólise é formalmente contraindicada, pois não reduz mortalidade nesse cenário e aumenta o risco de sangramento; a estratégia correta é a estratificação de risco com conduta invasiva (cateterismo) precoce ou tardia conforme o escore de risco."
+  },
+  {
+    "id": "q1429",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente de 35 anos, com miocardiopatia isquêmica dilatada e FE prévia de 30%, chega à emergência com dor torácica em aperto há 7 horas, dispneia importante e sudorese. BNP 300 pg/mL (VR até 150). O ECG mostra supradesnivelamento de ST em derivações inferiores e posteriores (dorsais), com infradesnivelamento especular em V1-V3. Qual o diagnóstico?",
+    "alternativas": [
+      "IAM sem supra de ST.",
+      "IAM com supra de ST anterior extenso.",
+      "IAM com supra de ST ínfero-lateral (dorsal).",
+      "IAM com supra de ST latero-dorsal.",
+      "IAM com supra de ST inferior."
+    ],
+    "correta": 2,
+    "comentario": "O infradesnivelamento de ST isolado em V1-V3, especialmente acompanhado de onda R proeminente, é a 'imagem em espelho' do supradesnivelamento de parede posterior/dorsal — um dos equivalentes de supra de ST mais cobrados em prova, pois pode passar despercebido se o examinador não pensar ativamente nessa possibilidade. Quando associado a supra em parede inferior (D2, D3, aVF), configura padrão ínfero-dorsal (por oclusão de coronária direita ou circunflexa dominante), justificando a solicitação de derivações posteriores (V7-V9) para confirmação."
+  },
+  {
+    "id": "q1430",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Mulher de 65 anos, diabética, com dor precordial em queimação há 1 hora, irradiada para MSE, desencadeada em repouso. PA 85x55 mmHg, FC 105 bpm. ECG com supra de ST de 1,5 mm em V2-V3 e 1 mm em V4. De acordo com as diretrizes da SBC, assinale a alternativa INCORRETA.",
+    "alternativas": [
+      "O ticagrelor é efetivo na redução de eventos em pacientes tratados na emergência, na dose de ataque de 180 mg seguida de 90 mg 2x/dia, submetidos a ICP primária.",
+      "Uma dose de ataque de 600 mg de clopidogrel deve ser indicada para pacientes com menos de 75 anos não submetidos a angioplastia primária.",
+      "O estudo ISIS-2 mostrou que o AAS isoladamente reduz a mortalidade em 23%, quase tanto quanto a estreptoquinase isolada.",
+      "Quando indicado em pacientes estáveis, o betabloqueador oral deve ter a dose titulada para FC-alvo em torno de 60 bpm."
+    ],
+    "correta": 1,
+    "comentario": "A dose de ataque de clopidogrel de 600 mg é a recomendada quando o paciente será submetido a ICP primária (para atingir inibição plaquetária rápida antes do procedimento); em pacientes não submetidos a angioplastia primária (estratégia farmacológica/fibrinolítica) e com menos de 75 anos, a dose de ataque recomendada é de 300 mg (acima de 75 anos, sem dose de ataque, iniciar direto com 75 mg/dia, pelo maior risco hemorrágico) — tornando a alternativa B incorreta. As demais afirmações (ticagrelor pós-ICP, ISIS-2/AAS, meta de FC do betabloqueador) são fatos consolidados na literatura de SCA."
+  },
+  {
+    "id": "q1431",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Sobre a mesma paciente (65 anos, diabética, IAMCSST anterior, PA 85x55 mmHg, FC 105 bpm), e de acordo com as diretrizes da SBC, assinale a alternativa INCORRETA.",
+    "alternativas": [
+      "O AAS é o único anti-inflamatório indicado rotineiramente para todos os pacientes com suspeita de IAM, exceto em contraindicação (alergia, sangramento ativo).",
+      "Nitratos estão contraindicados na presença de hipotensão, uso de sildenafil nas últimas 24h ou tadalafila nas últimas 48h.",
+      "Pacientes com contraindicação ao uso precoce de betabloqueador devem ser excluídos definitivamente dessa terapia também na prevenção secundária.",
+      "O uso de betabloqueador endovenoso deve ser criterioso após o estudo COMMIT, que mostrou subgrupo evoluindo com choque cardiogênico após a administração EV."
+    ],
+    "correta": 2,
+    "comentario": "Uma contraindicação ao betabloqueador na fase aguda (ex.: paciente hipotenso, com sinais de choque ou Killip avançado, como esta paciente com PA 85x55 mmHg) é frequentemente transitória — o paciente deve ser reavaliado e, uma vez estabilizado, o betabloqueador oral deve ser reintroduzido para prevenção secundária, pois seu benefício em reduzir mortalidade e reinfarto a longo prazo é robusto. Excluir definitivamente a droga do arsenal terapêutico do paciente é um erro conceitual. O estudo COMMIT/CCS-2 é a base para evitar betabloqueador EV rotineiro em fase aguda, especialmente em pacientes com sinais de instabilidade hemodinâmica."
+  },
+  {
+    "id": "q1432",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Quais complicações do IAM podem necessitar de intervenção cirúrgica de urgência ou emergência?",
+    "alternativas": [
+      "Insuficiência valvar aórtica aguda, comunicação interventricular e aneurisma de ventrículo esquerdo.",
+      "Trombose em átrio esquerdo, dissecção de aorta e insuficiência aguda de valva pulmonar.",
+      "Aneurisma de ventrículo esquerdo, ruptura cardíaca e insuficiência aguda de valva pulmonar.",
+      "Ruptura cardíaca (parede livre), comunicação interventricular e insuficiência mitral aguda (por disfunção/ruptura de músculo papilar)."
+    ],
+    "correta": 3,
+    "comentario": "As três grandes complicações mecânicas do IAM que exigem correção cirúrgica de urgência são: ruptura de parede livre do VE (tamponamento/choque obstrutivo fulminante), comunicação interventricular (CIV pós-infarto, por ruptura do septo) e insuficiência mitral aguda por ruptura/disfunção de músculo papilar (mais comum na oclusão da coronária direita/circunflexa, afetando o músculo papilar posteromedial, que tem irrigação única). O aneurisma de VE, ao contrário, é uma complicação crônica e geralmente não exige cirurgia de urgência."
+  },
+  {
+    "id": "q1433",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Homem de 72 anos com dor precordial em aperto, sudorese e náuseas há 4 horas. PA 165x105 mmHg, FC 65, SatO2 95%, estertores bilaterais em bases, radiografia de tórax normal. ECG sem alteração de ST em derivações periféricas (mas sugestivo de acometimento posterior). Foram administrados 300 mg de AAS oral. Sem contraindicações a antiplaquetários, anticoagulantes ou fibrinolíticos, qual o tratamento correto nesse momento?",
+    "alternativas": [
+      "Clopidogrel, heparina não fracionada intravenosa e estreptoquinase.",
+      "Clopidogrel, enoxaparina subcutânea e tenecteplase.",
+      "Prasugrel, metoprolol intravenoso e alteplase (t-PA).",
+      "Ticagrelor, fraxiparina subcutânea, morfina intravenosa e reteplase (rt-PA).",
+      "Ticagrelor, fondaparinux subcutânea e fibrinolítico."
+    ],
+    "correta": 1,
+    "comentario": "Diante de um IAMCSST (aqui, por critério de equivalente de supra — parede posterior) candidato a trombólise, o esquema farmacológico validado por estudos de fase III é clopidogrel (não prasugrel/ticagrelor, sem segurança estabelecida associados a fibrinolítico) + enoxaparina subcutânea (não heparina não fracionada isolada nem fondaparinux, que não reduz reoclusão da artéria culpada) + trombolítico fibrino-específico como a tenecteplase (preferível à estreptoquinase, não fibrino-específica e com maior taxa de reações alérgicas/hipotensão)."
+  },
+  {
+    "id": "q1434",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente de 35 anos, previamente hipertenso, em festival de música, fumou crack pela primeira vez. Cerca de 60 minutos depois, iniciou dor torácica de forte intensidade, com palidez, palpitações e sudorese. Assinale a alternativa correta em relação ao caso.",
+    "alternativas": [
+      "Caso o ECG seja normal, deve-se solicitar tomografia de tórax com contraste.",
+      "A doença coronariana relacionada ao uso de cocaína/crack é observada apenas após uso crônico, sendo pouco provável SCA nesse caso.",
+      "A lesão cardíaca é dependente de vasoconstrição coronariana; o tratamento se baseia em vasodilatadores (nitratos e bloqueadores de canal de cálcio), sem necessidade de antiagregantes.",
+      "Se a FC de admissão for maior que 120 bpm, deve ser feita infusão de metoprolol.",
+      "Se houver supra de ST e a dor não ceder após 6 horas de terapia vasodilatadora, o paciente deve ser submetido a angiografia coronária."
+    ],
+    "correta": 0,
+    "comentario": "A dor torácica associada ao uso agudo de cocaína/crack pode ocorrer mesmo em usuários de primeira vez (mecanismo é vasoespasmo + aumento de demanda por hiperestimulação simpática, não aterosclerose crônica) e o diagnóstico diferencial obrigatório inclui dissecção de aorta, dada a hipertensão súbita e o estado hiperadrenérgico — por isso, mesmo com ECG normal, deve-se manter alta suspeita e considerar angio-TC de tórax se houver qualquer característica atípica da dor. Betabloqueador é CONTRAINDICADO nesse contexto (risco de vasoconstrição coronariana sem oposição pelo estímulo alfa-adrenérgico, piorando o vasoespasmo) — o tratamento de escolha é benzodiazepínico, nitrato e, se SCA confirmada, antiagregação como em qualquer outra SCA."
+  },
+  {
+    "id": "q1435",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Após administração de fibrinolítico no IAMCSST, indica-se intervenção coronariana percutânea de resgate na seguinte situação:",
+    "alternativas": [
+      "Quando há aumento de troponina após 6 horas da administração do fibrinolítico.",
+      "Sempre e imediatamente após o término da fibrinólise.",
+      "Manutenção da dor torácica e/ou ausência de redução de pelo menos 50% do supradesnivelamento de ST no ECG.",
+      "Se o paciente apresentar ritmo idioventricular acelerado ao ECG."
+    ],
+    "correta": 2,
+    "comentario": "O critério clássico e mais cobrado de falha de reperfusão após fibrinólise (indicando ICP de resgate imediata) é a persistência da dor torácica associada à redução inferior a 50% do supradesnivelamento de ST em 60-90 minutos após o trombolítico. Ritmo idioventricular acelerado, ao contrário, é um marcador de REPERFUSÃO bem-sucedida (arritmia de reperfusão benigna, geralmente autolimitada, que não indica falha nem exige tratamento antiarrítmico específico) — um erro conceitual clássico em prova é confundir esse achado com sinal de complicação."
+  },
+  {
+    "id": "q1436",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente de 58 anos, tabagista, com dor precordial irradiada para o dorso há 30 minutos, sopro sistólico em foco mitral +2/6, estertores crepitantes bibasais, PA 110x74 mmHg (simétrica), FC 68, SatO2 94%. ECG com supradesnivelamento de ST. O hospital não tem serviço de hemodinâmica e o tempo de transporte até o centro de referência é de cerca de 3 horas. Assinale a alternativa correta.",
+    "alternativas": [
+      "A trombólise com fibrinolítico fibrino-específico deve ser instituída imediatamente, pois, comparada a um não fibrino-específico, promove maior redução de mortalidade.",
+      "O paciente deve receber AAS, prasugrel e anticoagulação com heparina de baixo peso molecular, em conjunto com a trombólise.",
+      "O paciente deve receber AAS, ticagrelor e anticoagulação com heparina não fracionada, em conjunto com a trombólise.",
+      "O paciente deve ser encaminhado para hemodinâmica o mais rápido possível, sendo a trombólise indicada apenas na indisponibilidade de transporte.",
+      "O paciente é classificado como IAMCSST Killip III, portanto apresenta contraindicação absoluta à trombólise."
+    ],
+    "correta": 0,
+    "comentario": "Com tempo estimado até a hemodinâmica muito acima da meta de 120 minutos, a fibrinólise imediata no hospital de origem é a estratégia recomendada (estratégia farmaco-invasiva), e entre os fibrinolíticos disponíveis os fibrino-específicos (alteplase, tenecteplase) reduzem mais mortalidade que os não fibrino-específicos (estreptoquinase). O esquema farmacológico validado para associação a fibrinolítico é AAS + clopidogrel (não prasugrel/ticagrelor) + HBPM ou HNF conforme protocolo do estudo usado — mas o ponto central cobrado é a escolha do fibrinolítico. Killip III (edema pulmonar) NÃO é contraindicação absoluta à trombólise — é, na verdade, um cenário em que reperfundir rapidamente (por qualquer método disponível) é ainda mais urgente."
+  },
+  {
+    "id": "q1437",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Homem de 60 anos apresenta IAM de parede anterior com supra de ST, submetido a reperfusão com sucesso. Seis semanas depois, apresenta dor precordial pleurítica, sem relação com esforço, e episódios de febre (até 38°C). Qual a hipótese diagnóstica mais provável?",
+    "alternativas": [
+      "Síndrome de Dressler.",
+      "Angina pós-infarto.",
+      "Angina pós-infarto.",
+      "Pericardite epistenocárdica."
+    ],
+    "correta": 0,
+    "comentario": "A síndrome de Dressler é uma pericardite autoimune tardia (semanas a meses após o IAM), com dor pleurítica, febre baixa e por vezes derrame pleural/pericárdico, respondendo a AINE/colchicina. Difere da pericardite epistenocárdica (precoce, nos primeiros 1-4 dias pós-IAM, por inflamação local direta do miocárdio necrosado adjacente ao pericárdio) — a distinção temporal (dias x semanas) é o ponto mais cobrado em prova."
+  },
+  {
+    "id": "q1438",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente de 60 anos, internado em UTI após IAMCSST reperfundido com angioplastia e stent, evolui após 4 horas com desconforto respiratório: FC 140, PA 100x70 mmHg, FR 30, SatO2 94% com máscara a 10 L/min. Apresenta estase jugular, palidez, sem dor torácica. ECG mostra taquicardia sinusal com QRS de baixa voltagem. Qual a principal suspeita?",
+    "alternativas": [
+      "Tamponamento cardíaco.",
+      "Edema pulmonar cardiogênico.",
+      "Embolia pulmonar.",
+      "Novo infarto agudo do miocárdio."
+    ],
+    "correta": 0,
+    "comentario": "A tríade de Beck (hipotensão, estase jugular e bulhas hipofonéticas) associada a baixa voltagem do QRS no ECG é clássica de tamponamento cardíaco — nesse contexto pós-angioplastia recente, deve-se pensar em perfuração coronariana ou complicação mecânica (ruptura de parede livre) causando derrame pericárdico agudo. A ausência de estertores/sinais de congestão pulmonar franca torna edema pulmonar cardiogênico menos provável, e a taquicardia sinusal (não taquipneia com hipoxemia associada a dor pleurítica) torna TEP menos sugestivo que o quadro obstrutivo do tamponamento."
+  },
+  {
+    "id": "q1439",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "O ticagrelor é um antagonista reversível do receptor P2Y12 (não tienopiridínico). Assinale a alternativa correta a seu respeito.",
+    "alternativas": [
+      "Necessita de conversão metabólica para um componente ativo.",
+      "Não necessita de conversão metabólica para um componente inativo.",
+      "Não necessita de conversão metabólica para um componente ativo.",
+      "Não necessita de desconversão metabólica para um componente ativo."
+    ],
+    "correta": 2,
+    "comentario": "Diferente do clopidogrel (pró-droga que depende de ativação hepática pelo CYP2C19, sujeita a polimorfismos genéticos que reduzem sua eficácia em parte da população) e do prasugrel (também pró-droga), o ticagrelor já é administrado na forma ativa, o que confere início de ação mais rápido e previsível — uma das vantagens farmacológicas que justificam sua preferência sobre o clopidogrel na SCA tratada com ICP primária, segundo as diretrizes atuais."
+  },
+  {
+    "id": "q1440",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente com IAMCSST recebe as primeiras medidas terapêuticas, incluindo indicação futura de IECA na fase aguda. Assinale a alternativa que apresenta uma contraindicação ao uso de IECA.",
+    "alternativas": [
+      "Hemofilia.",
+      "DPOC grave.",
+      "Úlcera péptica em atividade.",
+      "Estenose bilateral de artéria renal.",
+      "Uso de inibidores da fosfodiesterase nas últimas 24h."
+    ],
+    "correta": 3,
+    "comentario": "A estenose bilateral de artéria renal (ou unilateral em rim único) é contraindicação clássica a IECA/BRA, pois nessa situação a perfusão glomerular depende da vasoconstrição da arteríola eferente mediada pela angiotensina II — bloqueá-la pode precipitar queda abrupta da taxa de filtração glomerular e lesão renal aguda. As demais condições listadas não têm relação farmacológica direta com o mecanismo de ação do IECA."
+  },
+  {
+    "id": "q1441",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Homem de 50 anos chega ao PS com dor torácica há 2 horas. ECG inicial com supra de ST em V1-V6. O tempo estimado para transferência ao serviço de hemodinâmica mais próximo é de 130 minutos. Qual a melhor conduta?",
+    "alternativas": [
+      "Administrar trombolítico e transferir o paciente apenas se houver piora clínica.",
+      "Administrar trombolítico e, em caso de sucesso, realizar cateterismo no 7º dia pós-IAM.",
+      "Administrar trombolítico e transferir o paciente para realizar cateterismo entre 2-24 horas.",
+      "Transferir o paciente imediatamente para realizar cateterismo.",
+      "Administrar AAS e aguardar resultado de enzimas cardíacas."
+    ],
+    "correta": 2,
+    "comentario": "Com tempo estimado de transferência (130 min) acima da meta de 120 minutos para ICP primária, a estratégia farmaco-invasiva é a recomendada: fibrinolítico imediato seguido de transferência para cateterismo cardíaco de rotina entre 2 e 24 horas após a trombólise (não imediatamente — para permitir estabilização — nem tardiamente, como no 7º dia, o que aumentaria o risco de reoclusão/reinfarto sem benefício)."
+  },
+  {
+    "id": "q1442",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente de 58 anos, com IAMCSST há 2 anos tratado com angioplastia primária de descendente anterior, em uso de AAS, atorvastatina, enalapril, carvedilol e espironolactona, FE 38% (acinesia anterior). Há 2 dias evoluiu com quadro gripal e piora de dispneia, agora com estertores crepitantes até 1/3 médios, ortopneia, FC 78, PA 124x68 mmHg — perfil hemodinâmico quente e úmido (congesto, bem perfundido). Julgue: nitratos endovenosos são recomendados nesse perfil hemodinâmico.",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 0,
+    "comentario": "No perfil hemodinâmico 'quente e úmido' (classificação de Stevenson) — congestão presente, perfusão periférica preservada — os vasodilatadores (nitrato endovenoso) são a primeira linha terapêutica, reduzindo pré e pós-carga e aliviando a congestão pulmonar rapidamente, associados a diurético de alça. Diferente do perfil 'frio e úmido' (baixo débito associado a congestão), em que vasodilatador isolado pode agravar a hipoperfusão e há necessidade de considerar inotrópico."
+  },
+  {
+    "id": "q1443",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Homem de 62 anos, diabético, hipertenso, dislipidêmico e tabagista, dá entrada com mal-estar epigástrico após alimentação copiosa, pálido e sudoreico. Monitorização: PA 60x40 mmHg, FC 80 bpm, SatO2 96%, ausculta pulmonar limpa. ECG mostra supra de ST em parede inferior com extensão a VD. Qual a conduta CORRETA?",
+    "alternativas": [
+      "Nitroglicerina, AAS, clopidogrel, enoxaparina e volume.",
+      "Dobutamina, nitroglicerina, AAS e cateterismo cardíaco.",
+      "Morfina, oxigênio, nitrato endovenoso, dopamina, diuréticos; considerar trombólise ou angioplastia primária.",
+      "Expansão volêmica, noradrenalina, balão intra-aórtico se necessário; considerar trombólise ou angioplastia primária."
+    ],
+    "correta": 3,
+    "comentario": "No choque por infarto de VD, o ventrículo direito depende diretamente da pré-carga para manter o débito cardíaco, então a conduta inicial é expansão volêmica agressiva (não nitrato, não diurético, não morfina — todos reduzem pré-carga e podem agravar o choque). Se refratário, considerar suporte com vasopressor (noradrenalina) e, se disponível, balão intra-aórtico, sempre com reperfusão de urgência (trombólise ou angioplastia primária) como prioridade definitiva."
+  },
+  {
+    "id": "q1444",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente com quadro de insuficiência cardíaca e antecedente de IAM há 5 meses. ECG à admissão com supra de ST em parede anterior e presença de ondas Q. Dosagens seriadas de CK-MB e troponina normais. Qual o diagnóstico mais provável?",
+    "alternativas": [
+      "Comunicação interventricular tardia pós-IAM.",
+      "Ruptura de músculo papilar.",
+      "Ruptura de parede livre de ventrículo esquerdo.",
+      "Aneurisma de ventrículo esquerdo."
+    ],
+    "correta": 3,
+    "comentario": "O supradesnivelamento de ST 'persistente' meses após um IAM, associado a ondas Q e marcadores de necrose normais (ou seja, sem evento agudo em curso), é o achado clássico do aneurisma de ventrículo esquerdo — uma complicação tardia por remodelamento da parede infartada, que pode cursar com IC, arritmias ventriculares e risco de trombo mural. As demais opções (CIV, ruptura de músculo papilar, ruptura de parede livre) são complicações mecânicas agudas, tipicamente nos primeiros dias pós-IAM, e cursariam com instabilidade hemodinâmica franca e/ou elevação de marcadores no contexto de reinfarto."
+  },
+  {
+    "id": "q1445",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Homem de 52 anos, tabagista, hipertenso e dislipidêmico, com náuseas, sudorese, dispneia e pressão torácica subesternal intensa irradiada para mandíbula, sem alívio há 1 hora, com piora progressiva nos últimos 2 meses e alívio parcial em repouso até agora. Hipertenso e taquicárdico ao exame, com estertores pulmonares. ECG com onda Q e supradesnível de ST. Qual a conduta inicial?",
+    "alternativas": [
+      "AAS, dinitrato de isossorbida sublingual e opioide (morfina).",
+      "Opioide (morfina) e furosemida.",
+      "Estatina em dose elevada e anticoagulante.",
+      "Dinitrato de isossorbida sublingual, bloqueador de canal de cálcio e diurético tiazídico.",
+      "AAS, estatina em dose elevada e furosemida."
+    ],
+    "correta": 0,
+    "comentario": "Diante de um IAMCSST, as medidas gerais iniciais (independente da estratégia de reperfusão a seguir) seguem o mnemônico MONABCH: Morfina (se dor refratária a nitrato), Oxigênio (se SatO2 < 90%), Nitrato sublingual (se não houver contraindicação como infarto de VD ou uso de inibidor da fosfodiesterase), AAS mastigável 300 mg, seguidos de Betabloqueador, Clopidogrel/outro P2Y12 e Heparina — sendo AAS + nitrato sublingual + morfina a combinação de medidas iniciais mais imediatas antes mesmo da definição da estratégia de reperfusão."
+  },
+  {
+    "id": "q1446",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Qual alternativa apresenta a conduta correta em relação ao tratamento do infarto agudo do miocárdio?",
+    "alternativas": [
+      "Oferecer nitrato sublingual e realizar ECG avaliando V3R e V4R.",
+      "Betabloqueador e heparinização plena.",
+      "Clopidogrel e angioplastia coronariana percutânea primária.",
+      "Ticagrelor e trombolítico."
+    ],
+    "correta": 3,
+    "comentario": "A combinação de ticagrelor (ou outro P2Y12 mais potente) com trombolítico não é a estratégia validada — o esquema farmacológico consagrado para associação a fibrinolítico é AAS + clopidogrel (não ticagrelor/prasugrel, sem segurança estabelecida nesse contexto). Atenção: o gabarito oficial desta questão aponta a alternativa D como correta, mas cabe destacar que essa é uma divergência da prática clínica atual (AAS + clopidogrel + fibrinolítico é o padrão-ouro); a alternativa A também descreve conduta apropriada e consolidada (avaliar V3R/V4R para infarto de VD antes de nitrato). Vale sempre atualizar-se com a bibliografia mais recente e considerar possíveis inconsistências de gabarito em bancos de questões."
+  },
+  {
+    "id": "q1447",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Paciente do sexo feminino, 62 anos, com hipertensão em tratamento irregular, dá entrada com dor torácica há 2 horas. O ECG mostra supradesnivelamento de ST em parede inferior, lateral e posterior (dorsal). Assinale a alternativa que fornece corretamente o diagnóstico e a conduta.",
+    "alternativas": [
+      "SCA com supra de ST inferolaterodorsal: trombólise química ou angioplastia primária.",
+      "SCA com supra de ST inferolaterodorsal: solicitar enzimas cardíacas e TC de tórax para descartar dissecção de aorta.",
+      "Pericardite aguda com supra difuso de ST: solicitar ecocardiograma e introduzir ibuprofeno.",
+      "Tromboembolismo pulmonar (S1Q3T3): solicitar TC de tórax e ecocardiograma para avaliar função de VD; trombólise se disfunção sistólica de VD.",
+      "Dissecção de aorta: solicitar TC de tórax com urgência."
+    ],
+    "correta": 0,
+    "comentario": "Diante de um padrão eletrocardiográfico inequívoco de IAMCSST (aqui, extenso — inferior + lateral + posterior, sugerindo oclusão proximal de vaso dominante), a conduta é reperfusão imediata (trombólise química, se angioplastia não disponível em tempo hábil, ou angioplastia primária) — não se deve postergar a reperfusão para investigar diagnósticos alternativos (dissecção, TEP, pericardite) na ausência de outros achados clínicos que os sugiram, sob pena de perda de tempo crítico de isquemia miocárdica."
+  },
+  {
+    "id": "q1448",
+    "temaId": "iam",
+    "tema": "Infarto Agudo do Miocárdio (IAM)",
+    "banca": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "ano": 2024,
+    "revisado": true,
+    "fonte": "Banco de questões — Estratégia MED (IAMCSST.pdf)",
+    "enunciado": "Mulher de 40 anos, hipertensa, fumante, em uso de anticoncepcional oral, com dor no ombro esquerdo, dispneia e diaforese. Ao exame: sudorese fria e pegajosa, dispneia, taquipneia e estertores crepitantes bibasais. ECG com supra de ST em V1-V4. Assinale a alternativa CORRETA.",
+    "alternativas": [
+      "Indicar angioplastia facilitada.",
+      "Contraindicar betabloqueador.",
+      "Contraindicar oxigênio suplementar.",
+      "Contraindicar analgésico com opioide."
+    ],
+    "correta": 1,
+    "comentario": "A paciente apresenta sinais de congestão pulmonar/insuficiência cardíaca aguda associada ao IAMCSST anterior extenso (Killip II-III) — nesse cenário, o betabloqueador (especialmente por via endovenosa) deve ser contraindicado/adiado na fase aguda, pelo risco de precipitar ou agravar choque cardiogênico (lição do estudo COMMIT/CCS-2), sendo reintroduzido por via oral somente após estabilização hemodinâmica. Angioplastia facilitada (uso rotineiro de fibrinolítico antes de ICP planejada) não é recomendada pelas diretrizes atuais, por aumentar risco hemorrágico sem benefício isquêmico adicional."
   }
 ]
