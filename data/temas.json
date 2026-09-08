@@ -337,8 +337,9 @@
     "categoria": "Gastroenterologia",
     "titulo": "Hemorragia Digestiva Alta (HDA)",
     "resumo": "Estabilização inicial, terapia farmacológica e papel da endoscopia na HDA.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Endoscopia Digestiva; Consenso de Baveno VII (varizes); ACG Guideline on Upper GI Bleeding",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Endoscopia Digestiva; Consenso de Baveno VII (varizes) — atualizado pelo Consenso de Baveno VIII (2026); ACG Guideline on Upper GI Bleeding; estudo HALT-IT (ácido tranexâmico)",
+    "comoCai": "No SES-PE, a conduta pré-endoscópica (IBP empírico na suspeita péptica; terlipressina+antibiótico na suspeita varicosa) e a meta de transfusão restritiva são cobrança certa. No ENAMED, o foco recai sobre o reconhecimento de sinais de gravidade e estabilização inicial na emergência/atenção primária, com encaminhamento oportuno para endoscopia, com menor cobrança dos escores de risco (Glasgow-Blatchford/Rockall) em detalhe.",
     "mnemonicos": [
       {
         "palavra": "SANGUE",
@@ -360,11 +361,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A endoscopia digestiva alta é o exame padrão-ouro, tanto diagnóstico quanto terapêutico, devendo ser realizada preferencialmente nas primeiras 24 horas após estabilização hemodinâmica inicial (mais precocemente, em até 12h, se suspeita de sangramento varicoso ativo grave). Escores de risco (Glasgow-Blatchford para necessidade de intervenção, Rockall para mortalidade) auxiliam a triagem e a decisão sobre necessidade de internação/UTI antes mesmo da endoscopia."
+        "conteudo": "A endoscopia digestiva alta é o exame padrão-ouro, tanto diagnóstico quanto terapêutico, devendo ser realizada preferencialmente nas primeiras 24 horas após estabilização hemodinâmica inicial (mais precocemente, em até 12h, se suspeita de sangramento varicoso ativo grave). Escores de risco (Glasgow-Blatchford para necessidade de intervenção, Rockall para mortalidade) auxiliam a triagem e a decisão sobre necessidade de internação/UTI antes mesmo da endoscopia; um escore de Glasgow-Blatchford igual a 0 identifica pacientes de risco muito baixo, que podem ser considerados para manejo ambulatorial (sem necessidade de internação ou endoscopia de urgência), desde que haja garantia de reavaliação clínica."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Ressuscitação volêmica e estabilização hemodinâmica são prioridade inicial, com transfusão restritiva (meta de hemoglobina ao redor de 7g/dL na maioria dos pacientes, sem hipertransfundir). Inibidor de bomba de prótons endovenoso em altas doses deve ser iniciado empiricamente antes mesmo da endoscopia em suspeita de causa péptica. Em suspeita de sangramento varicoso, terlipressina (ou octreotide) e antibiótico profilático (reduz mortalidade e ressangramento em cirróticos) devem ser iniciados precocemente, antes mesmo da confirmação endoscópica, junto ao tratamento endoscópico definitivo (ligadura elástica de varizes)."
+        "conteudo": "Ressuscitação volêmica e estabilização hemodinâmica são prioridade inicial, com transfusão restritiva (meta de hemoglobina ao redor de 7g/dL na maioria dos pacientes, sem hipertransfundir). Inibidor de bomba de prótons endovenoso em altas doses deve ser iniciado empiricamente antes mesmo da endoscopia em suspeita de causa péptica. Em suspeita de sangramento varicoso, terlipressina (ou octreotide) e antibiótico profilático (reduz mortalidade e ressangramento em cirróticos) devem ser iniciados precocemente, antes mesmo da confirmação endoscópica, junto ao tratamento endoscópico definitivo (ligadura elástica de varizes). O ácido tranexâmico NÃO deve ser usado rotineiramente na hemorragia digestiva (alta ou baixa): o estudo HALT-IT, um ensaio randomizado de grande porte, não demonstrou redução de mortalidade por sangramento com seu uso, e identificou sinal de maior risco de eventos tromboembólicos venosos — uma prática antiga que deve ser ativamente abandonada."
       },
       {
         "titulo": "Sinais de alerta",
@@ -372,7 +373,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A conduta antes da endoscopia (IBP empírico na suspeita péptica; terlipressina + antibiótico profilático na suspeita varicosa) é cobrança certa e recorrente, assim como a meta de transfusão restritiva (hemoglobina ~7g/dL) em vez da antiga prática liberal. O antibiótico profilático em cirróticos com HDA (mesmo sem sinais francos de infecção) é um ponto de atualização de diretriz frequentemente testado."
+        "conteudo": "A conduta antes da endoscopia (IBP empírico na suspeita péptica; terlipressina + antibiótico profilático na suspeita varicosa) é cobrança certa e recorrente, assim como a meta de transfusão restritiva (hemoglobina ~7g/dL) em vez da antiga prática liberal. O antibiótico profilático em cirróticos com HDA (mesmo sem sinais francos de infecção) é um ponto de atualização de diretriz frequentemente testado. Atenção à pegadinha do ácido tranexâmico como suposta medida hemostática de rotina na HDA — o estudo HALT-IT não mostrou benefício de mortalidade e sinalizou risco aumentado de trombose, não devendo ser usado rotineiramente. Fique também atento a menções ao Consenso de Baveno VIII (2026), que atualiza (sem contradizer nos pontos centrais) as recomendações de Baveno VII sobre varizes e hipertensão portal."
       }
     ]
   },
