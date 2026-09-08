@@ -7807,8 +7807,8 @@
     "categoria": "Cardiologia",
     "titulo": "Endocardite Infecciosa",
     "resumo": "Critérios de Duke, fenômenos vasculares/imunológicos e as indicações de cirurgia valvar na endocardite.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia; AHA Scientific Statement on Infective Endocarditis (2015); ESC Guidelines for the management of infective endocarditis (2023); Critérios de Duke modificados",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Cardiologia; ESC Guidelines for the management of infective endocarditis (2023); Critérios de Duke-ISCVID 2023 (atualização dos critérios de Duke modificados)",
     "mnemonicos": [
       {
         "palavra": "Janeway indolor, Osler dolorido",
@@ -7830,7 +7830,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é estabelecido pelos critérios de Duke modificados, que combinam critérios maiores (hemoculturas persistentemente positivas para microrganismo típico de endocardite, colhidas em pelo menos duas amostras separadas, e evidência ecocardiográfica de envolvimento endocárdico — vegetação, abscesso ou nova deiscência de prótese) com critérios menores (predisposição, febre, fenômenos vasculares, fenômenos imunológicos, evidência microbiológica não maior). O ecocardiograma transesofágico tem sensibilidade superior ao transtorácico para detecção de vegetações (especialmente em próteses valvares), sendo o método de imagem de escolha quando a suspeita clínica é alta mesmo com transtorácico negativo."
+        "conteudo": "O diagnóstico é estabelecido pelos critérios de Duke, atualizados em 2023 (Duke-ISCVID) a partir dos critérios de Duke modificados clássicos, combinando critérios maiores (hemoculturas positivas para microrganismo típico de endocardite e evidência de envolvimento endocárdico) com critérios menores (predisposição, febre, fenômenos vasculares, fenômenos imunológicos, evidência microbiológica não maior). A atualização de 2023 trouxe três novidades importantes: (1) passou a aceitar tomografia cardíaca e PET-CT com FDG-18 como critérios maiores de imagem, especialmente úteis quando a suspeita é de endocardite em prótese valvar (onde o ecocardiograma tem menor sensibilidade); (2) incluiu a inspeção intraoperatória como novo critério maior clínico; (3) removeu a exigência rígida de intervalo/sítios separados na coleta de hemoculturas. O ecocardiograma transesofágico continua com sensibilidade superior ao transtorácico para detecção de vegetações, sendo o método de imagem inicial de escolha quando a suspeita clínica é alta mesmo com transtorácico negativo."
       },
       {
         "titulo": "Tratamento",
@@ -7842,9 +7842,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "Os critérios de Duke modificados (maiores e menores) e a diferenciação entre lesões de Janeway (embólicas, indolores) e nódulos de Osler (imunológicos, dolorosos) são cobrança certa. A regra mnemônica \"Osler dói\" (Osler = dolOroso) ajuda a fixar essa diferenciação clássica de prova, assim como a associação de Staphylococcus aureus com uso de drogas endovenosas e valva tricúspide."
+        "conteudo": "Os critérios de Duke (maiores e menores) e a diferenciação entre lesões de Janeway (embólicas, indolores) e nódulos de Osler (imunológicos, dolorosos) são cobrança certa. A regra mnemônica \"Osler dói\" (Osler = dolOroso) ajuda a fixar essa diferenciação clássica de prova, assim como a associação de Staphylococcus aureus com uso de drogas endovenosas e valva tricúspide. Por ser atualização de 2023, a inclusão de PET-CT/tomografia cardíaca como critério maior de imagem (principalmente em prótese valvar) é um ponto novo com chance de aparecer em provas mais recentes."
       }
-    ]
+    ],
+    "comoCai": "Tema mais frequente no SES-PE do que no ENAMED, geralmente em caso clínico de febre + sopro novo + fator de risco (prótese, drogas endovenosas, valvopatia prévia). Os critérios de Duke e a diferenciação Janeway x Osler são os pontos mais cobrados; a atualização de 2023 (PET-CT como critério maior) é conteúdo mais recente, com maior chance de aparecer em provas de 2025/2026."
   },
   {
     "id": "febre-reumatica",
