@@ -8555,8 +8555,8 @@
         "categoria": "Infectologia",
         "titulo": "Doença de Chagas",
         "resumo": "Transmissão pelo barbeiro, fase aguda com sinal de Romaña e a cardiopatia chagásica crônica como principal causa de morbimortalidade.",
-        "revisado": false,
-        "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Cardiologia — Diretriz de Doença de Chagas",
+        "revisado": true,
+        "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Cardiologia — Diretriz de Doença de Chagas; FEXI-12 Trial (fexinidazol para doença de Chagas), The Lancet Infectious Diseases, 2024; BENDITA Trial e estudo NuestroBen (esquemas encurtados de benznidazol), DNDi, 2024-2025",
         "mnemonicos": [
             {
                 "palavra": "Romaña é a porta dos olhos",
@@ -8582,7 +8582,7 @@
             },
             {
                 "titulo": "Tratamento",
-                "conteudo": "O tratamento antiparasitário específico (benznidazol) tem eficácia comprovada na fase aguda e é recomendado também na fase crônica recente/em crianças e jovens, com benefício mais controverso mas ainda indicado em adultos na fase crônica indeterminada sem cardiopatia estabelecida, conforme diretrizes atuais. Na cardiopatia chagásica crônica já estabelecida, o tratamento é predominantemente de suporte à insuficiência cardíaca e das arritmias associadas (podendo incluir marca-passo definitivo em bloqueios de condução avançados), já que o benznidazol não reverte o dano estrutural já instalado."
+                "conteudo": "O tratamento antiparasitário específico (benznidazol) tem eficácia comprovada na fase aguda e é recomendado também na fase crônica recente/em crianças e jovens, com benefício mais controverso mas ainda indicado em adultos na fase crônica indeterminada sem cardiopatia estabelecida, conforme diretrizes atuais. Na cardiopatia chagásica crônica já estabelecida, o tratamento é predominantemente de suporte à insuficiência cardíaca e das arritmias associadas (podendo incluir marca-passo definitivo em bloqueios de condução avançados), já que o benznidazol não reverte o dano estrutural já instalado. É importante destacar um resultado negativo relevante: o fexinidazol, droga já aprovada para o tratamento da tripanossomíase africana (doença do sono), foi testado para doença de Chagas no ensaio FEXI-12 (fase 2, publicado em 2024 na The Lancet Infectious Diseases) e, apesar de bem tolerado, mostrou-se INEFICAZ para eliminar o Trypanosoma cruzi nessa indicação — não devendo ser extrapolado como alternativa ao benznidazol para Chagas, apesar do parentesco entre os parasitas causadores das duas doenças. Paralelamente, o principal problema prático do tratamento com benznidazol — a baixa adesão ao esquema padrão de 60 dias, por efeitos adversos cutâneos e digestivos frequentes — vem sendo endereçado por estudos de esquemas ENCURTADOS (BENDITA, com resultados preliminares favoráveis, e o estudo de fase III NuestroBen, ainda em andamento na Argentina, com resultados finais esperados para o final desta década), buscando manter a eficácia antiparasitária com melhor tolerabilidade."
             },
             {
                 "titulo": "Sinais de alerta",
@@ -8590,9 +8590,10 @@
             },
             {
                 "titulo": "Dicas de prova",
-                "conteudo": "O padrão eletrocardiográfico de bloqueio de ramo direito + hemibloqueio anterior esquerdo como achado clássico da cardiopatia chagásica é cobrança certa e recorrente. A transmissão oral como via predominante atual no Brasil (superando a vetorial clássica em número de casos agudos) e o sinal de Romaña como achado de porta de entrada também são frequentemente exigidos."
+                "conteudo": "O padrão eletrocardiográfico de bloqueio de ramo direito + hemibloqueio anterior esquerdo como achado clássico da cardiopatia chagásica é cobrança certa e recorrente. A transmissão oral como via predominante atual no Brasil (superando a vetorial clássica em número de casos agudos) e o sinal de Romaña como achado de porta de entrada também são frequentemente exigidos. O resultado negativo do fexinidazol para Chagas (FEXI-12, 2024) é uma pegadinha cada vez mais cobrada, já que a droga é eficaz para tripanossomíase africana mas NÃO para a doença de Chagas."
             }
-        ]
+        ],
+        "comoCai": "No SES-PE e no ENAMED, a cobrança mais frequente envolve o reconhecimento do sinal de Romaña na fase aguda, o padrão eletrocardiográfico clássico da cardiopatia chagásica crônica (bloqueio de ramo direito + hemibloqueio anterior esquerdo) e a transmissão oral como via predominante atual de casos agudos no Brasil (surtos por açaí/caldo de cana). Provas mais atualizadas já cobram os resultados recentes de pesquisa terapêutica: o fexinidazol (droga já aprovada para tripanossomíase africana) foi testado para doença de Chagas no estudo FEXI-12 (2024) e mostrou-se INEFICAZ para eliminar o parasita nessa indicação — uma pegadinha importante, já que os alunos podem presumir eficácia por analogia com a doença do sono. Também vêm sendo estudados esquemas ENCURTADOS de benznidazol (estudos BENDITA e NuestroBen, ainda em andamento), buscando manter a eficácia antiparasitária com melhor tolerabilidade e menor taxa de abandono do tratamento — um problema histórico do esquema padrão de 60 dias."
     },
     {
         "id": "leishmaniose",

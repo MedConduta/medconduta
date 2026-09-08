@@ -15910,5 +15910,203 @@
         "ano": 2026,
         "fonte": "Questão original MedConduta, com base nos alertas do Ministério da Saúde sobre febre amarela (2024-2025) e nas comunicações de segurança do FDA sobre a vacina Ixchiq (2025).",
         "revisado": true
+    },
+    {
+        "id": "q870",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Trabalhador rural de 34 anos, morador de área endêmica no interior da Bahia, procura atendimento com edema bipalpebral unilateral indolor, febre baixa e mal-estar há 5 dias, sem história de trauma ou picada de inseto identificada conscientemente. Qual é a hipótese diagnóstica mais provável e o mecanismo fisiopatológico do achado ocular?",
+        "alternativas": [
+            "Celulite orbitária; disseminação hematogênica de infecção bacteriana cutânea adjacente.",
+            "Doença de Chagas aguda (sinal de Romaña); reação inflamatória local à penetração do Trypanosoma cruzi pela conjuntiva/mucosa ocular, contaminada pelas fezes do triatomíneo durante o repasto sanguíneo.",
+            "Conjuntivite alérgica; reação de hipersensibilidade a alérgeno ambiental sazonal.",
+            "Dacriocistite aguda; obstrução do ducto nasolacrimal com infecção secundária."
+        ],
+        "correta": 1,
+        "comentario": "O sinal de Romaña — edema bipalpebral unilateral, indolor, por vezes acompanhado de conjuntivite e linfadenopatia satélite — é o achado clássico de porta de entrada ocular na fase aguda da doença de Chagas, ocorrendo quando o Trypanosoma cruzi (presente nas fezes do triatomíneo depositadas próximo ao local da picada) penetra pela mucosa conjuntival ao a pessoa coçar o local. É didaticamente importante, embora hoje seja um achado relativamente raro, já que a transmissão oral (não vetorial) tornou-se a via predominante de casos agudos no Brasil.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q871",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Em relação às vias de transmissão da doença de Chagas no Brasil atual, é correto afirmar que:",
+        "alternativas": [
+            "A transmissão vetorial clássica (pelas fezes do triatomíneo/\"barbeiro\") permanece a principal causa de casos agudos identificados anualmente no país.",
+            "A transmissão oral, por ingestão de alimentos contaminados com triatomíneos triturados ou suas fezes (como açaí, caldo de cana e outros sucos de frutas processados artesanalmente em áreas endêmicas), tornou-se a via predominante de casos agudos no Brasil, frequentemente causando surtos familiares/coletivos com maior gravidade clínica e maior letalidade que a forma vetorial clássica.",
+            "A transmissão por transfusão sanguínea continua sendo a principal via de novos casos, já que o rastreamento sorológico em bancos de sangue não é obrigatório no Brasil.",
+            "Não há transmissão congênita (vertical) descrita para a doença de Chagas."
+        ],
+        "correta": 1,
+        "comentario": "Com o sucesso histórico do controle vetorial (eliminação do Triatoma infestans como espécie domiciliada e certificação do Brasil como livre de transmissão vetorial por essa espécie em 2006), a transmissão ORAL — por ingestão de alimentos contaminados por triatomíneos triturados ou suas fezes durante o processamento artesanal (açaí é o veículo mais classicamente associado, mas também caldo de cana e outros sucos) — tornou-se a principal via de casos agudos no Brasil, tipicamente causando surtos familiares ou coletivos, com carga parasitária maior e formas clínicas mais graves (incluindo miocardite aguda) do que a transmissão vetorial clássica. A transfusão sanguínea é hoje via rara, dado o rastreamento sorológico obrigatório em bancos de sangue brasileiros, e a transmissão congênita é bem documentada e pode ocorrer em qualquer trimestre da gestação.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q872",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Paciente de 28 anos, natural de área endêmica, é diagnosticado com doença de Chagas na fase aguda, adquirida por via oral em um surto familiar após consumo de caldo de cana artesanal. Qual o método diagnóstico mais indicado nesta fase, e por quê?",
+        "alternativas": [
+            "Sorologia com dois testes de metodologias diferentes concordantes (ELISA e imunofluorescência indireta), pois é o padrão-ouro em qualquer fase da doença.",
+            "Exame parasitológico direto (exame a fresco de sangue periférico, gota espessa ou método de concentração), pois a parasitemia é elevada nesta fase, tornando a detecção direta do parasita altamente sensível.",
+            "Biópsia endomiocárdica, pois é o único método capaz de confirmar a infecção aguda com certeza.",
+            "Radiografia contrastada de esôfago, para avaliar precocemente sinais de megaesôfago."
+        ],
+        "correta": 1,
+        "comentario": "Na fase AGUDA da doença de Chagas, a parasitemia circulante é elevada, tornando o exame parasitológico direto (exame a fresco de sangue periférico, esfregaço corado, gota espessa ou métodos de concentração como o micro-hematócrito) o método diagnóstico de escolha — simples, rápido e de alta sensibilidade nesse momento. Já na fase CRÔNICA, a parasitemia é baixa/intermitente, tornando a sorologia (com dois testes de metodologias distintas concordantes) o método diagnóstico padrão. Biópsia endomiocárdica e radiografia de esôfago não são exames de triagem/confirmação diagnóstica da infecção aguda.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q873",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Paciente de 45 anos, assintomático, natural de área endêmica para doença de Chagas, realiza doação de sangue e tem sorologia reagente para Trypanosoma cruzi em teste único (ELISA). Antes de comunicar o diagnóstico ao paciente como confirmado, qual é a conduta correta?",
+        "alternativas": [
+            "Confirmar diagnóstico com um SEGUNDO teste sorológico de metodologia DIFERENTE (por exemplo, imunofluorescência indireta ou hemaglutinação indireta), já que um único teste reagente é insuficiente para confirmação, dado o risco de resultado falso-positivo isolado.",
+            "Confirmar o diagnóstico apenas repetindo o mesmo teste ELISA em uma segunda amostra, sem necessidade de metodologia diferente.",
+            "Considerar o diagnóstico definitivamente confirmado com um único teste reagente, iniciando tratamento imediatamente.",
+            "Solicitar exame parasitológico direto de sangue periférico, que teria alta sensibilidade neste paciente assintomático da fase crônica."
+        ],
+        "correta": 0,
+        "comentario": "O diagnóstico sorológico da doença de Chagas crônica exige a confirmação por DOIS testes de METODOLOGIAS DIFERENTES concordantes (por exemplo, ELISA + imunofluorescência indireta, ou ELISA + hemaglutinação indireta) — nunca a repetição do mesmo método, que não elimina a possibilidade de reação cruzada/falso-positivo sistemático daquele método específico. O exame parasitológico direto tem sensibilidade muito baixa na fase crônica (parasitemia baixa/intermitente), não sendo apropriado para triagem/confirmação nesse estágio.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q874",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Paciente de 52 anos, com sorologia positiva para doença de Chagas, é encaminhado para avaliação cardiológica de rotina. O eletrocardiograma revela um padrão considerado altamente sugestivo (embora não exclusivo) de cardiopatia chagásica. Qual é esse padrão eletrocardiográfico clássico?",
+        "alternativas": [
+            "Bloqueio atrioventricular de primeiro grau isolado.",
+            "Fibrilação atrial com resposta ventricular controlada.",
+            "Bloqueio de ramo direito associado a hemibloqueio anterior esquerdo (bloqueio bifascicular).",
+            "Intervalo QT longo com ondas T alternantes."
+        ],
+        "correta": 2,
+        "comentario": "A associação de bloqueio de ramo direito (BRD) com hemibloqueio anterior esquerdo (HBAE) — um padrão de bloqueio bifascicular — é o achado eletrocardiográfico mais classicamente associado à cardiopatia chagásica crônica, refletindo o acometimento preferencial do sistema de condução (feixe de His e seus ramos) pelo processo inflamatório/fibrótico chagásico. Embora não seja exclusivo da doença de Chagas, esse padrão em paciente de área endêmica, mesmo assintomático, deve levantar forte suspeita diagnóstica e motivar investigação cardiológica completa (ecocardiograma, Holter), pelo risco de progressão silenciosa para bloqueio atrioventricular total e morte súbita arrítmica.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q875",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Homem de 38 anos, portador de doença de Chagas na forma crônica indeterminada (sorologia positiva, sem sintomas, ECG e ecocardiograma normais), pergunta ao médico se deve realizar tratamento antiparasitário com benznidazol. Qual a orientação correta, conforme as diretrizes atuais?",
+        "alternativas": [
+            "Não há indicação de tratamento antiparasitário em nenhum paciente na fase crônica, reservando-se o benznidazol exclusivamente para a fase aguda.",
+            "O tratamento com benznidazol é recomendado para esse paciente: apesar do benefício ser mais estabelecido em crianças e jovens na fase crônica recente, ele também é indicado em adultos na fase crônica indeterminada sem cardiopatia estabelecida, buscando reduzir a progressão para cardiopatia chagásica.",
+            "O tratamento com benznidazol está contraindicado na fase crônica indeterminada, pelo alto risco de agravamento imunomediado da cardiopatia latente.",
+            "Deve-se tratar apenas com fexinidazol, droga de escolha atual para a fase crônica indeterminada em adultos."
+        ],
+        "correta": 1,
+        "comentario": "O tratamento antiparasitático com benznidazol tem eficácia bem estabelecida na fase aguda e também é recomendado na fase crônica RECENTE e em crianças/jovens; nas diretrizes atuais, seu uso também é indicado em ADULTOS na fase crônica INDETERMINADA (assintomática, sem cardiopatia estruturalmente estabelecida), com o objetivo de reduzir a progressão para cardiopatia chagásica, ainda que o benefício nesse subgrupo seja considerado menos robusto do que em crianças/fase aguda. O fexinidazol, droga eficaz para a tripanossomíase africana, foi testado para Chagas no ensaio FEXI-12 (2024, The Lancet Infectious Diseases) e mostrou-se INEFICAZ para eliminar o Trypanosoma cruzi nessa indicação — não devendo ser considerado alternativa ao benznidazol para Chagas.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q876",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Paciente com cardiopatia chagásica crônica já ESTABELECIDA (miocardiopatia dilatada com disfunção sistólica documentada ao ecocardiograma) pergunta se o tratamento com benznidazol pode reverter o dano cardíaco já instalado. Qual a resposta correta?",
+        "alternativas": [
+            "Sim, o benznidazol reverte completamente a fibrose miocárdica já estabelecida, sendo o pilar do tratamento nessa fase.",
+            "Não: uma vez estabelecida a cardiopatia chagásica crônica, o benznidazol não reverte o dano estrutural já instalado — o tratamento nessa fase é predominantemente de suporte (manejo da insuficiência cardíaca e das arritmias, podendo incluir marca-passo definitivo em bloqueios avançados).",
+            "Sim, mas apenas se associado a corticosteroide em altas doses por tempo prolongado.",
+            "O benznidazol está contraindicado nesta fase pelo risco de piora aguda da função ventricular."
+        ],
+        "correta": 1,
+        "comentario": "Uma vez estabelecida a cardiopatia chagásica crônica (com disfunção ventricular e/ou fibrose miocárdica já documentadas), o tratamento antiparasitário com benznidazol NÃO reverte o dano estrutural já instalado — seu papel nessa fase é, na melhor das hipóteses, deter a progressão, mas o pilar terapêutico passa a ser o manejo de suporte típico da insuficiência cardíaca (otimização medicamentosa conforme diretrizes de IC) e das arritmias associadas, podendo incluir marca-passo definitivo nos casos de bloqueio atrioventricular avançado e, em casos refratários, até transplante cardíaco.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q877",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "O principal problema prático relacionado à adesão ao tratamento com benznidazol na doença de Chagas é a alta taxa de abandono, frequentemente associada a efeitos adversos do esquema padrão de 60 dias. Sobre pesquisas recentes voltadas a esse problema, é correto afirmar que:",
+        "alternativas": [
+            "Estudos como o BENDITA e o ensaio de fase III NuestroBen (ainda em andamento) vêm avaliando esquemas ENCURTADOS de benznidazol, buscando manter a eficácia antiparasitária com melhor tolerabilidade e maior taxa de conclusão do tratamento.",
+            "Já existe consenso internacional definitivo recomendando a redução universal do tratamento com benznidazol para 7 dias em todos os pacientes.",
+            "Os estudos recentes abandonaram completamente a pesquisa de esquemas alternativos de benznidazol, focando exclusivamente em vacinas terapêuticas.",
+            "A taxa de abandono do tratamento com benznidazol é considerada desprezível e não constitui problema relevante na prática clínica atual."
+        ],
+        "correta": 0,
+        "comentario": "A baixa adesão ao esquema padrão de 60 dias de benznidazol — por efeitos adversos cutâneos (rash, dermatite) e digestivos frequentes — é um problema histórico reconhecido no tratamento da doença de Chagas. Para endereçá-lo, estudos como o BENDITA (com resultados preliminares sugerindo que esquemas mais curtos podem manter alta eficácia antiparasitária) e o ensaio de fase III NuestroBen (ainda em andamento na Argentina, com recrutamento em curso e resultados finais esperados para o final desta década) vêm avaliando esquemas ENCURTADOS de benznidazol, buscando equilíbrio entre eficácia, tolerabilidade e adesão ao tratamento — ainda não havendo, porém, consenso definitivo universal sobre um novo esquema padrão reduzido.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q878",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Paciente de 60 anos, com diagnóstico prévio de doença de Chagas crônica, desenvolve disfagia progressiva para sólidos e líquidos, regurgitação e perda ponderal significativa ao longo de meses. Qual é o mecanismo fisiopatológico da provável complicação digestiva em curso, e qual seu nome?",
+        "alternativas": [
+            "Megaesôfago chagásico; destruição dos neurônios do plexo mioentérico (plexo de Auerbach) esofágico pelo processo inflamatório crônico, levando à perda do peristaltismo e à falha de relaxamento do esfíncter esofágico inferior.",
+            "Estenose péptica esofágica; lesão da mucosa por refluxo ácido crônico não relacionado à infecção chagásica.",
+            "Acalasia idiopática; degeneração neuronal de causa autoimune sem relação com a infecção pelo Trypanosoma cruzi.",
+            "Carcinoma epidermoide de esôfago; neoplasia maligna primária sem relação com a doença de Chagas."
+        ],
+        "correta": 0,
+        "comentario": "As megassíndromes digestivas (megaesôfago e megacólon) são complicações crônicas características da doença de Chagas, resultantes da destruição progressiva dos neurônios do plexo nervoso autonômico intramural (plexo mioentérico/plexo de Auerbach) dos órgãos acometidos, por processo inflamatório crônico mediado pela persistência de antígenos/resposta imune ao Trypanosoma cruzi. No esôfago, essa denervação leva à perda do peristaltismo coordenado e à falha de relaxamento do esfíncter esofágico inferior — quadro clinicamente indistinguível da acalasia idiopática, mas de etiologia infecciosa/chagásica, manifestando-se com disfagia progressiva, regurgitação e emagrecimento. O quadro análogo no cólon (megacólon chagásico) causa constipação intensa e risco de volvo.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q879",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Gestante de 24 anos, com sorologia positiva para doença de Chagas identificada no pré-natal, pergunta sobre o risco de transmissão para o bebê e a conduta adequada. Assinale a alternativa correta:",
+        "alternativas": [
+            "A transmissão congênita do Trypanosoma cruzi é possível em qualquer trimestre da gestação, e o recém-nascido de mãe com sorologia positiva deve ser investigado ativamente para doença de Chagas congênita (exame parasitológico direto nas primeiras semanas de vida e/ou sorologia após os 9-12 meses, quando os anticorpos maternos transferidos passivamente já teriam desaparecido).",
+            "Não há risco de transmissão congênita da doença de Chagas, sendo desnecessária qualquer investigação do recém-nascido.",
+            "O benznidazol deve ser administrado à gestante imediatamente após o diagnóstico, independentemente da idade gestacional, para eliminar o risco de transmissão vertical.",
+            "A via de parto cesárea é obrigatória em todas as gestantes com sorologia positiva para doença de Chagas, para reduzir o risco de transmissão intraparto."
+        ],
+        "correta": 0,
+        "comentario": "A transmissão congênita da doença de Chagas é bem documentada e pode ocorrer em qualquer trimestre da gestação (via transplacentária). O recém-nascido de mãe com sorologia positiva deve ser ativamente investigado: nas primeiras semanas de vida, por exame parasitológico direto (sensível pela parasitemia neonatal elevada, quando presente), e/ou por sorologia realizada após os 9-12 meses de vida (quando os anticorpos maternos IgG transferidos passivamente pela placenta já teriam desaparecido, permitindo interpretar um resultado positivo como produção própria do lactente). O benznidazol é CONTRAINDICADO na gestação (não deve ser administrado à gestante), e não há indicação obrigatória de cesárea baseada apenas na sorologia materna positiva para Chagas.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
+    },
+    {
+        "id": "q880",
+        "temaId": "doenca-chagas",
+        "tema": "Doença de Chagas",
+        "enunciado": "Em relação ao agente etiológico e ao vetor da doença de Chagas, assinale a alternativa correta:",
+        "alternativas": [
+            "O agente etiológico é o Trypanosoma cruzi, um protozoário flagelado da família Trypanosomatidae, e o vetor clássico é o inseto triatomíneo (\"barbeiro\"), que transmite o parasita não pela picada em si, mas pela contaminação da pele/mucosas com suas fezes durante ou após o repasto sanguíneo.",
+            "O agente etiológico é uma bactéria intracelular obrigatória, e a transmissão ocorre exclusivamente pela saliva do vetor durante a picada.",
+            "O agente etiológico é um helminto, e o vetor é o mosquito Aedes aegypti.",
+            "O agente etiológico é um fungo dimórfico, sem necessidade de vetor artrópode para transmissão."
+        ],
+        "correta": 0,
+        "comentario": "A doença de Chagas é causada pelo Trypanosoma cruzi, um protozoário flagelado (não uma bactéria, helminto ou fungo). O mecanismo de transmissão vetorial clássico é particular: diferentemente de outros vetores que transmitem o patógeno diretamente pela saliva durante a picada, o triatomíneo (\"barbeiro\") elimina o parasita nas suas FEZES durante ou logo após o repasto sanguíneo — a infecção ocorre quando a pessoa, ao coçar o local da picada (que costuma causar prurido), inocula essas fezes contaminadas na pele lesada ou em mucosas (como a conjuntiva ocular, dando origem ao sinal de Romaña).",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde), na Diretriz Latino-Americana de Cardiopatia Chagásica (Sociedade Brasileira de Cardiologia) e no ensaio FEXI-12 (The Lancet Infectious Diseases, 2024).",
+        "revisado": true
     }
 ]
