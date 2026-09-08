@@ -429,8 +429,8 @@
     "categoria": "Infectologia",
     "titulo": "Pneumonia Adquirida na Comunidade (PAC)",
     "resumo": "Diagnóstico, estratificação de gravidade (CURB-65) e tratamento empírico da PAC.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Pneumologia e Tisiologia — Diretriz de Pneumonia Adquirida na Comunidade; IDSA/ATS Guidelines for CAP",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Pneumologia e Tisiologia — Diretriz de Pneumonia Adquirida na Comunidade; IDSA/ATS Guidelines for CAP; ATS/IDSA Clinical Practice Guideline for Diagnosis and Management of Community-Acquired Pneumonia, 2025 (atualização da diretriz de 2019)",
     "mnemonicos": [
       {
         "palavra": "CURB-65",
@@ -452,11 +452,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Radiografia de tórax com infiltrado/consolidação confirma o diagnóstico em conjunto com o quadro clínico compatível. Os escores CURB-65 (Confusão, Ureia elevada, frequência Respiratória ≥30, PA Baixa, idade ≥65) ou PSI (Pneumonia Severity Index) estratificam gravidade e orientam a decisão entre tratamento ambulatorial, internação em enfermaria ou UTI — ferramenta fundamental e amplamente utilizada tanto na prática quanto em provas."
+        "conteudo": "Radiografia de tórax com infiltrado/consolidação confirma o diagnóstico em conjunto com o quadro clínico compatível. Os escores CURB-65 (Confusão, Ureia elevada, frequência Respiratória ≥30, PA Baixa, idade ≥65) ou PSI (Pneumonia Severity Index) estratificam gravidade e orientam a decisão entre tratamento ambulatorial, internação em enfermaria ou UTI — ferramenta fundamental e amplamente utilizada tanto na prática quanto em provas. A diretriz ATS/IDSA 2025 passou a valorizar a ULTRASSONOGRAFIA PULMONAR como ferramenta diagnóstica alternativa/complementar à radiografia de tórax, especialmente útil à beira do leito quando a radiografia não está prontamente disponível ou é de interpretação duvidosa. A procalcitonina sérica NÃO deve ser usada isoladamente como critério para decidir SE iniciar antibiótico (sensibilidade insuficiente para diagnóstico de PAC bacteriana, podendo estar falsamente baixa mesmo em infecção bacteriana verdadeira, e não distingue bem de coinfecção viral) — seu papel mais bem estabelecido é auxiliar a decisão de QUANDO SUSPENDER o antibiótico em pacientes com PAC GRAVE cujo tratamento já ultrapassou 7 dias."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "PAC ambulatorial em paciente previamente hígido é tratada com amoxicilina ou macrolídeo; na presença de comorbidades, associação de betalactâmico com macrolídeo ou fluoroquinolona respiratória isolada é preferida, cobrindo tanto típicos quanto atípicos. PAC internada segue esquemas semelhantes por via endovenosa, com escalonamento para cobertura de Pseudomonas ou MRSA conforme fatores de risco específicos e gravidade (necessidade de UTI)."
+        "conteudo": "PAC ambulatorial em paciente previamente hígido é tratada com amoxicilina ou macrolídeo; na presença de comorbidades, associação de betalactâmico com macrolídeo ou fluoroquinolona respiratória isolada é preferida, cobrindo tanto típicos quanto atípicos. PAC internada segue esquemas semelhantes por via endovenosa, com escalonamento para cobertura de Pseudomonas ou MRSA conforme fatores de risco específicos e gravidade (necessidade de UTI). A diretriz ATS/IDSA 2025 reforça a possibilidade de ENCURTAR a duração do tratamento antibiótico para MENOS DE 5 DIAS (tanto em pacientes ambulatoriais quanto internados fora da UTI), desde que o paciente atinja critérios de estabilidade clínica avaliados diariamente (afebril, sinais vitais estáveis, capacidade de manter via oral) — abandonando esquemas fixos mais longos (7-10 dias) usados no passado, que não demonstraram benefício adicional na maioria dos casos não complicados. A mesma atualização também restringe o uso rotineiro de CORTICOIDE, reservando-o preferencialmente aos casos GRAVES internados (com evidência de benefício mais consistente nesse subgrupo), e não como conduta rotineira em toda PAC internada."
       },
       {
         "titulo": "Sinais de alerta",
@@ -464,9 +464,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O escore CURB-65 (seus componentes e pontos de corte para decisão de internação) é cobrança certíssima e recorrente. A taquipneia como sinal isolado mais sensível de gravidade, e a escolha do esquema antibiótico conforme o ambiente de tratamento (ambulatorial vs. internado vs. UTI), também são frequentemente exigidas."
+        "conteudo": "O escore CURB-65 (seus componentes e pontos de corte para decisão de internação) é cobrança certíssima e recorrente. A taquipneia como sinal isolado mais sensível de gravidade, e a escolha do esquema antibiótico conforme o ambiente de tratamento (ambulatorial vs. internado vs. UTI), também são frequentemente exigidas. Provas mais atualizadas já cobram a possibilidade de tratamento com menos de 5 dias de antibiótico em pacientes estáveis (diretriz ATS/IDSA 2025) e a restrição do corticoide aos casos graves internados."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o escore CURB-65 (seus componentes e pontos de corte para decisão de internação) e a escolha do esquema antibiótico conforme o ambiente de tratamento são cobrança praticamente garantida. Provas mais atualizadas já cobram a recomendação da diretriz ATS/IDSA 2025 de encurtar a duração do tratamento (podendo ser inferior a 5 dias em pacientes clinicamente estáveis, tanto ambulatoriais quanto internados fora de UTI), a limitação do uso de corticoide a casos graves internados, e a ultrassonografia pulmonar como ferramenta diagnóstica alternativa/complementar à radiografia de tórax."
   },
   {
     "id": "abdome-agudo",
