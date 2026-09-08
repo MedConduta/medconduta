@@ -4536,8 +4536,8 @@
     "categoria": "Hematologia",
     "titulo": "Neoplasias Hematológicas: Leucemias e Linfomas",
     "resumo": "Leucemias agudas e crônicas, linfoma de Hodgkin x não Hodgkin e o significado dos sintomas B.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; NCCN Guidelines for Leukemia and Lymphoma; Classificação de Ann Arbor",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; NCCN Guidelines for Leukemia and Lymphoma; Classificação de Ann Arbor; Conitec — incorporação da terapia CAR-T ao SUS para LLA de células B e linfoma difuso de grandes células B (dezembro 2023); projeto CARTHEDRALL (USP) — desenvolvimento de CAR-T nacional; ASH 2024 — avanços em terapias-alvo para LMA (venetoclax, inibidores de FLT3/IDH) e CAR-T de segunda linha em linfomas agressivos",
     "mnemonicos": [
       {
         "palavra": "Sintomas B",
@@ -4563,7 +4563,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Leucemias agudas são tratadas com poliquimioterapia intensiva de indução seguida de consolidação, com transplante de células-tronco hematopoiéticas reservado a casos de alto risco ou recidiva. Linfoma de Hodgkin tem excelente prognóstico com quimioterapia combinada (esquema ABVD classicamente), mesmo em estágios avançados. Linfomas não Hodgkin têm tratamento mais heterogêneo conforme o subtipo histológico e a agressividade biológica, variando de observação vigilante em formas indolentes a quimioimunoterapia intensiva em formas agressivas."
+        "conteudo": "Leucemias agudas são tratadas com poliquimioterapia intensiva de indução seguida de consolidação, com transplante de células-tronco hematopoiéticas reservado a casos de alto risco ou recidiva. Linfoma de Hodgkin tem excelente prognóstico com quimioterapia combinada (esquema ABVD classicamente), mesmo em estágios avançados. Linfomas não Hodgkin têm tratamento mais heterogêneo conforme o subtipo histológico e a agressividade biológica, variando de observação vigilante em formas indolentes a quimioimunoterapia intensiva em formas agressivas. Em pacientes idosos ou inaptos à quimioterapia intensiva com LMA, a combinação de venetoclax (inibidor de BCL-2) com agente hipometilante (azacitidina) tornou-se opção terapêutica relevante, com taxas de remissão completa superiores a 60%. Terapias-alvo direcionadas a mutações específicas — inibidores de FLT3 (gilteritinibe) e de IDH1/IDH2 (ivosidenibe, enasidenibe) — ampliaram as opções em subgrupos genéticos definidos, reforçando a importância do estudo molecular/citogenético na LMA. Para linfomas agressivos de células B recidivados/refratários (como o linfoma difuso de grandes células B), a terapia com células CAR-T (direcionada ao antígeno CD19) tornou-se padrão em segunda linha para recidiva precoce, superando o transplante autólogo de células-tronco em estudos comparativos — no Brasil, a Conitec aprovou a incorporação da terapia CAR-T ao SUS (dezembro de 2023) para leucemia linfoblástica aguda de células B e linfoma difuso de grandes células B, com desenvolvimento nacional da tecnologia em andamento (projeto CARTHEDRALL, USP)."
       },
       {
         "titulo": "Sinais de alerta",
@@ -4571,9 +4571,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A necessidade de biópsia excisional (não apenas PAAF) para diagnóstico definitivo de linfoma é cobrança certa e recorrente. Os sintomas B (febre, sudorese noturna, perda de peso) e seu valor na classificação de Ann Arbor, e a diferenciação entre leucemia aguda (pancitopenia de instalação rápida por falência medular) e linfoma (linfadenopatia com sintomas B), também são frequentemente exigidos."
+        "conteudo": "A necessidade de biópsia excisional (não apenas PAAF) para diagnóstico definitivo de linfoma é cobrança certa e recorrente. Os sintomas B (febre, sudorese noturna, perda de peso) e seu valor na classificação de Ann Arbor, e a diferenciação entre leucemia aguda (pancitopenia de instalação rápida por falência medular) e linfoma (linfadenopatia com sintomas B), também são frequentemente exigidos. O reconhecimento de que a terapia CAR-T (imunoterapia celular direcionada a CD19) representa avanço relevante para linfomas agressivos de células B recidivados/refratários, hoje disponível no SUS para indicações específicas, é ponto emergente de cobrança."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a necessidade de biópsia excisional (não apenas PAAF) para diagnóstico definitivo de linfoma é cobrança certa e recorrente, assim como os sintomas B (febre, sudorese noturna, perda de peso) e seu valor na classificação de Ann Arbor. A diferenciação entre leucemia aguda (pancitopenia de instalação rápida por falência medular, com sangramentos e infecções) e linfoma (linfadenopatia indolor com sintomas B, instalação mais insidiosa) é tema clássico. A leucostase como emergência oncológica em leucemia aguda com leucocitose muito elevada também é frequentemente exigida. Um ponto emergente é a incorporação da terapia CAR-T ao SUS (Conitec, dezembro de 2023) para leucemia linfoblástica aguda de células B e linfoma difuso de grandes células B recidivados/refratários, representando avanço relevante na imunoterapia celular direcionada."
   },
   {
     "id": "disturbios-coagulacao",
