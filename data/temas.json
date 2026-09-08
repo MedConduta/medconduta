@@ -245,8 +245,9 @@
     "categoria": "Pneumologia",
     "titulo": "Asma Exacerbada",
     "resumo": "Classificação de gravidade e manejo escalonado da crise asmática.",
-    "revisado": false,
-    "fonte": "Global Initiative for Asthma (GINA) 2024; Sociedade Brasileira de Pneumologia e Tisiologia — Diretrizes de Asma",
+    "revisado": true,
+    "fonte": "Global Initiative for Asthma (GINA) — Relatório 2026 (estratégia AIR, fluxogramas de exacerbação, escore PRAM); Sociedade Brasileira de Pneumologia e Tisiologia — Diretrizes de Asma",
+    "comoCai": "No SES-PE, a crise asmática é tema certo em Clínica Médica/Emergência e Pediatria: reconhecimento do tórax silencioso e da PaCO2 normal/elevada como sinais de gravidade extrema (não de melhora), e a sequência broncodilatador → corticoide sistêmico precoce → magnésio são cobrança garantida. No ENAMED, o foco tende a ser o reconhecimento e a conduta inicial na atenção primária/pronto atendimento, incluindo quando referenciar, com menor detalhe sobre a nova estratégia de resgate anti-inflamatório (AIR) com budesonida-formoterol.",
     "mnemonicos": [
       {
         "palavra": "OBA",
@@ -268,11 +269,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico da crise é clínico. A avaliação objetiva da gravidade e da resposta terapêutica é feita pelo pico de fluxo expiratório (PFE) ou VEF1, quando o paciente consegue realizar a manobra — PFE <50% do previsto/melhor pessoal indica crise grave. A gasometria arterial é reservada a crises graves/muito graves: um paciente que hiperventila deveria ter PaCO2 baixa; a normalização ou elevação da PaCO2 durante uma crise asmática é sinal ominoso de fadiga respiratória iminente e falência ventilatória, não de melhora."
+        "conteudo": "O diagnóstico da crise é clínico. A avaliação objetiva da gravidade e da resposta terapêutica é feita pelo pico de fluxo expiratório (PFE) ou VEF1, quando o paciente consegue realizar a manobra — PFE <50% do previsto/melhor pessoal indica crise grave. O GINA 2026 reforça a classificação em leve, moderada e grave/com risco de morte, com parâmetros clínicos mais objetivos (fala, uso de musculatura acessória, frequência respiratória, saturação, PFE) orientando o fluxograma de manejo — a diretriz passou a trazer 4 fluxogramas padronizados (atenção primária e emergência; adultos, crianças ≥6 anos e crianças <5 anos). Em crianças de 2-17 anos, o GINA 2026 adota formalmente o escore PRAM (Pediatric Respiratory Assessment Measure) para graduar a gravidade da crise de forma estruturada. A gasometria arterial é reservada a crises graves/muito graves: um paciente que hiperventila deveria ter PaCO2 baixa; a normalização ou elevação da PaCO2 durante uma crise asmática é sinal ominoso de fadiga respiratória iminente e falência ventilatória, não de melhora."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Broncodilatador de curta duração inalatório (salbutamol) em doses repetidas é a base do tratamento imediato, associado a brometo de ipratrópio nas crises moderadas/graves. Corticoide sistêmico (oral ou endovenoso) deve ser iniciado precocemente em toda crise que não responde prontamente ao broncodilatador inicial, pois reduz recorrência e necessidade de internação — seu efeito, porém, leva horas para se manifestar. Sulfato de magnésio endovenoso é reservado a crises graves refratárias ao tratamento inicial. Antibiótico não é indicado rotineiramente, pois a maioria das exacerbações é desencadeada por vírus."
+        "conteudo": "O GINA consolidou, e o relatório 2026 reforça, a preferência pela estratégia de resgate anti-inflamatório (AIR — anti-inflammatory reliever): usar budesonida-formoterol em dose baixa como medicação de alívio (com ou sem uso de manutenção associado), em vez do salbutamol isolado (SABA) — essa estratégia reduz o risco de exacerbações em comparação ao resgate apenas com SABA, e passou a ser a via preferencial (\"Track 1\") em detrimento da via clássica SABA-resgate + corticoide inalatório de manutenção separado (\"Track 2\"). Uma novidade do GINA 2026 é que a budesonida-formoterol passou a ser recomendada como alternativa ao salbutamol também no tratamento da CRISE LEVE propriamente dita (não apenas como estratégia de manutenção-resgate), em adultos, adolescentes e crianças de 6-11 anos, tanto na atenção primária quanto na emergência. Para crises moderadas, mantém-se o salbutamol em doses repetidas (agora com doses recomendadas mais conservadoras, refletindo evidências de sobretratamento com SABA em altas doses), associado a brometo de ipratrópio, com introdução de corticoide oral (prednisona 40-50mg/dia por 5-7 dias). Corticoide sistêmico (oral ou endovenoso) deve ser iniciado precocemente em toda crise que não responde prontamente ao broncodilatador inicial, pois reduz recorrência e necessidade de internação — seu efeito, porém, leva horas para se manifestar. Sulfato de magnésio endovenoso é reservado a crises graves refratárias ao tratamento inicial. Antibiótico não é indicado rotineiramente, pois a maioria das exacerbações é desencadeada por vírus."
       },
       {
         "titulo": "Sinais de alerta",
@@ -280,7 +281,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O \"tórax silencioso\" e a PaCO2 normal/elevada como sinais paradoxais de gravidade (não de melhora) são as pegadinhas mais clássicas do tema. A sequência terapêutica (broncodilatador + corticoide sistêmico precoce, magnésio para casos refratários) e a ausência de indicação rotineira de antibiótico também são pontos frequentemente cobrados."
+        "conteudo": "O \"tórax silencioso\" e a PaCO2 normal/elevada como sinais paradoxais de gravidade (não de melhora) são as pegadinhas mais clássicas do tema. A sequência terapêutica (broncodilatador + corticoide sistêmico precoce, magnésio para casos refratários) e a ausência de indicação rotineira de antibiótico também são pontos frequentemente cobrados. A atualização mais recente e mais provável de cair em provas a partir de 2026 é a estratégia de resgate anti-inflamatório (AIR) com budesonida-formoterol substituindo o SABA isolado como via preferencial — inclusive já na própria crise leve —, além da nova classificação de gravidade com fluxogramas específicos e do escore PRAM para gravidade da crise em crianças."
       }
     ]
   },
