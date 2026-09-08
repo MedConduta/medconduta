@@ -3891,5 +3891,167 @@
     ],
     "correta": 1,
     "comentario": "A síndrome da fome óssea ocorre após paratireoidectomia em pacientes com hiperparatireoidismo grave e doença óssea avançada preexistente: o osso, antes cronicamente estimulado pelo excesso de PTH, capta avidamente cálcio E FÓSFORO da circulação assim que o estímulo é removido, causando hipocalcemia (e por vezes hipofosfatemia ou fósforo normal-baixo) — diferente do hipoparatireoidismo pós-cirúrgico verdadeiro (por lesão/remoção das paratireoides), que cursa com HIPERfosfatemia (ausência do efeito fosfatúrico do PTH). Essa diferenciação pelo fósforo é a chave diagnóstica entre as duas condições, que podem inclusive coexistir no mesmo paciente."
+  },
+  {
+    "id": "q214",
+    "temaId": "sindrome-metabolica",
+    "tema": "Síndrome Metabólica",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Critérios harmonizados IDF/AHA/NHLBI/WHF/IAS/IASO (2009); NCEP-ATP III — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Mulher de 45 anos apresenta circunferência abdominal de 92cm, triglicerídeos de 165mg/dL, HDL de 42mg/dL, pressão arterial de 128x82mmHg (sem uso de anti-hipertensivo) e glicemia de jejum de 98mg/dL. Quantos critérios de síndrome metabólica essa paciente preenche, e ela tem o diagnóstico?",
+    "alternativas": [
+      "2 critérios; não tem síndrome metabólica.",
+      "3 critérios (circunferência abdominal, triglicerídeos e HDL baixo); tem síndrome metabólica.",
+      "4 critérios; tem síndrome metabólica.",
+      "1 critério apenas; não tem síndrome metabólica."
+    ],
+    "correta": 1,
+    "comentario": "Avaliando cada critério: circunferência abdominal ≥80cm em mulheres — PRESENTE (92cm); triglicerídeos ≥150mg/dL — PRESENTE (165mg/dL); HDL <50mg/dL em mulheres — PRESENTE (42mg/dL); pressão arterial ≥130/85mmHg ou uso de anti-hipertensivo — AUSENTE (128x82mmHg, abaixo do corte, sem medicação); glicemia de jejum ≥100mg/dL — AUSENTE (98mg/dL). Total: 3 critérios presentes (circunferência abdominal, triglicerídeos, HDL baixo) — como a regra exige apenas 3 de 5, sem nenhum critério obrigatório isoladamente, essa paciente TEM diagnóstico de síndrome metabólica, mesmo sem hipertensão ou hiperglicemia de jejum confirmadas."
+  },
+  {
+    "id": "q215",
+    "temaId": "sindrome-metabolica",
+    "tema": "Síndrome Metabólica",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Critérios harmonizados IDF/AHA/NHLBI/WHF/IAS/IASO (2009); NCEP-ATP III — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Homem de 50 anos, IMC 27kg/m², circunferência abdominal 98cm, em uso de losartana para hipertensão (PA controlada em 125x80mmHg), triglicerídeos 140mg/dL, HDL 38mg/dL, glicemia de jejum 105mg/dL. Ele tem diagnóstico de síndrome metabólica?",
+    "alternativas": [
+      "Não, pois a pressão arterial atual está controlada e abaixo do corte diagnóstico.",
+      "Não, pois apenas 2 critérios estão presentes (HDL baixo e glicemia alterada).",
+      "Sim: circunferência abdominal aumentada, uso de anti-hipertensivo (conta como critério independente do valor atual de PA), HDL baixo e glicemia de jejum alterada — 4 critérios.",
+      "Não é possível definir sem a dosagem de triglicerídeos, que está ausente no caso."
+    ],
+    "correta": 2,
+    "comentario": "O uso de medicação anti-hipertensiva CONTA como critério positivo para pressão arterial, independentemente do valor atual controlado pelo tratamento — esse é um ponto frequentemente mal interpretado. Analisando: circunferência abdominal aumentada em homens — PRESENTE (98cm); uso de anti-hipertensivo — PRESENTE (conta como critério, mesmo com PA controlada); HDL <40mg/dL em homens — PRESENTE (38mg/dL); glicemia de jejum ≥100mg/dL — PRESENTE (105mg/dL). Triglicerídeos (140mg/dL) estão abaixo do corte de 150mg/dL, portanto não contam como critério adicional. Com 4 dos 5 critérios presentes, o diagnóstico de síndrome metabólica está confirmado."
+  },
+  {
+    "id": "q216",
+    "temaId": "sindrome-metabolica",
+    "tema": "Síndrome Metabólica",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Critérios harmonizados IDF/AHA/NHLBI/WHF/IAS/IASO (2009); NCEP-ATP III — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Qual mecanismo fisiopatológico é considerado o elo central que conecta os diferentes componentes da síndrome metabólica, explicando por que eles tendem a ocorrer em conjunto no mesmo paciente?",
+    "alternativas": [
+      "Deficiência isolada de leptina.",
+      "Resistência à insulina associada à disfunção do tecido adiposo visceral.",
+      "Hipersecreção isolada de cortisol pela adrenal.",
+      "Deficiência primária de hormônio do crescimento."
+    ],
+    "correta": 1,
+    "comentario": "A resistência à insulina, fortemente associada à obesidade visceral (tecido adiposo disfuncional que libera ácidos graxos livres e adipocinas pró-inflamatórias), é considerada o mecanismo fisiopatológico central e unificador da síndrome metabólica — ela contribui diretamente para hiperglicemia (menor captação de glicose pelos tecidos periféricos), dislipidemia aterogênica (aumento de VLDL/triglicerídeos e redução de HDL) e hipertensão (via múltiplos mecanismos, incluindo retenção de sódio e disfunção endotelial), explicando por que esses componentes se agregam com tanta frequência no mesmo indivíduo, além da amplificação do risco cardiovascular pelo estado pró-inflamatório e pró-trombótico crônico associado."
+  },
+  {
+    "id": "q217",
+    "temaId": "sindrome-metabolica",
+    "tema": "Síndrome Metabólica",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "American Heart Association — Cardiovascular-Kidney-Metabolic (CKM) Health: Presidential Advisory (2023) e Guideline AHA/ACC/ADA/ASN para CKM Syndrome (2026) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Segundo o novo modelo de síndrome cardiovascular-renal-metabólica (CKM) proposto pela American Heart Association (2023, formalizado em diretriz 2026), qual das seguintes descrições corresponde ao Estágio 1?",
+    "alternativas": [
+      "Ausência completa de fatores de risco CKM (adiposidade normal, sem alterações metabólicas, sem doença renal crônica).",
+      "Excesso de adiposidade e/ou adiposidade disfuncional (incluindo pré-diabetes), sem ainda fatores de risco metabólicos estabelecidos ou doença renal crônica.",
+      "Fatores de risco metabólicos já estabelecidos (hipertensão, hipertrigliceridemia, síndrome metabólica, DM2) e/ou doença renal crônica de risco moderado-alto.",
+      "Doença cardiovascular clínica estabelecida."
+    ],
+    "correta": 1,
+    "comentario": "O Estágio 1 do modelo CKM é definido por excesso de adiposidade (IMC ≥25kg/m², ou ≥23kg/m² em pessoas de ascendência asiática, ou circunferência abdominal aumentada) e/ou adiposidade disfuncional, esta última caracterizada por pré-diabetes (glicemia de jejum 100-124mg/dL ou HbA1c 5,7-6,4%) — ainda sem os fatores de risco metabólicos plenamente estabelecidos (que caracterizam o Estágio 2, como hipertensão, hipertrigliceridemia franca, síndrome metabólica constituída ou diabetes tipo 2) nem doença renal crônica. O Estágio 0 é a ausência de qualquer fator de risco, e o Estágio 4 corresponde à doença cardiovascular clínica já estabelecida."
+  },
+  {
+    "id": "q218",
+    "temaId": "sindrome-metabolica",
+    "tema": "Síndrome Metabólica",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "American Heart Association — Cardiovascular-Kidney-Metabolic (CKM) Health: Presidential Advisory (2023) e Guideline AHA/ACC/ADA/ASN para CKM Syndrome (2026) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Paciente com síndrome metabólica constituída (Estágio 2 do modelo CKM) apresenta também escore de cálcio coronariano de 250 (elevado) em tomografia realizada por outro motivo, sem sintomas cardiovasculares. Segundo o modelo CKM, em qual estágio esse paciente deve ser reclassificado?",
+    "alternativas": [
+      "Permanece no Estágio 2, já que está assintomático.",
+      "Estágio 3, pela presença de doença cardiovascular SUBCLÍNICA (escore de cálcio coronariano >100) associada aos fatores de risco CKM.",
+      "Estágio 4a, pois qualquer achado de imagem cardíaca já define doença cardiovascular clínica.",
+      "Estágio 0, pois a ausência de sintomas indica risco não significativo."
+    ],
+    "correta": 1,
+    "comentario": "O Estágio 3 do modelo CKM é definido pela presença de doença cardiovascular SUBCLÍNICA associada aos fatores de risco CKM — especificamente, escore de cálcio coronariano (CAC) >100, ou NT-proBNP elevado com disfunção ventricular ao ecocardiograma, ou risco cardiovascular calculado alto, mesmo na ausência de sintomas ou de doença cardiovascular clínica manifesta (que definiria o Estágio 4). Um escore de cálcio coronariano de 250, mesmo assintomático, já reclassifica o paciente para o Estágio 3, sinalizando necessidade de intensificação da prevenção cardiovascular."
+  },
+  {
+    "id": "q219",
+    "temaId": "sindrome-metabolica",
+    "tema": "Síndrome Metabólica",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "American Heart Association — Cardiovascular-Kidney-Metabolic (CKM) Health: Presidential Advisory (2023) e Guideline AHA/ACC/ADA/ASN para CKM Syndrome (2026) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Qual a principal diferença conceitual entre o novo modelo de síndrome cardiovascular-renal-metabólica (CKM) da AHA e a definição clássica de síndrome metabólica (critérios harmonizados de 2009)?",
+    "alternativas": [
+      "O modelo CKM abandona completamente os 5 critérios clássicos, substituindo-os por um único exame laboratorial.",
+      "O modelo CKM incorpora explicitamente a doença renal crônica ao continuum de risco cardiometabólico, organizando-o em estágios progressivos (0 a 4) que vão da ausência de fatores de risco até a doença cardiovascular clínica estabelecida.",
+      "O modelo CKM elimina a obesidade como fator de risco relevante, focando exclusivamente em fatores genéticos.",
+      "O modelo CKM é aplicável apenas a pacientes já diagnosticados com insuficiência renal terminal."
+    ],
+    "correta": 1,
+    "comentario": "A principal inovação conceitual do modelo CKM é reconhecer explicitamente a doença renal crônica (DRC) como parte integrante do mesmo continuum fisiopatológico que conecta obesidade, diabetes e doença cardiovascular — dimensão ausente na definição clássica de síndrome metabólica (que não inclui função renal entre seus 5 critérios). Além disso, o modelo organiza o risco em ESTÁGIOS progressivos (0 a 4), permitindo identificar e intervir em fases mais precoces (como o Estágio 1, de excesso de adiposidade, antes mesmo de fatores de risco metabólicos estarem plenamente estabelecidos) — os 5 critérios clássicos de síndrome metabólica continuam válidos e utilizados, sendo incorporados como parte da definição do Estágio 2 em diante, e não substituídos ou abandonados."
+  },
+  {
+    "id": "q220",
+    "temaId": "sindrome-metabolica",
+    "tema": "Síndrome Metabólica",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "American Heart Association — Cardiovascular-Kidney-Metabolic (CKM) Health: Presidential Advisory (2023) e Guideline AHA/ACC/ADA/ASN para CKM Syndrome (2026) — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Segundo a diretriz AHA/ACC/ADA/ASN de 2026 para síndrome cardiovascular-renal-metabólica, qual classe farmacológica é destacada por atuar simultaneamente sobre os três eixos (cardiovascular, renal e metabólico) em pacientes nos estágios mais avançados do continuum CKM, e não apenas como hipoglicemiante de segunda linha?",
+    "alternativas": [
+      "Sulfonilureias.",
+      "Inibidores de SGLT2 e agonistas do receptor de GLP-1/GIP.",
+      "Estatinas isoladamente.",
+      "Anti-inflamatórios não esteroidais."
+    ],
+    "correta": 1,
+    "comentario": "A diretriz 2026 reforça o papel precoce dos inibidores de SGLT2 e dos agonistas do receptor de GLP-1 (ou do agonista duplo GLP-1/GIP, tirzepatida) como terapias que atuam simultaneamente sobre os três eixos do continuum CKM: benefício cardiovascular direto (redução de eventos e de hospitalização por insuficiência cardíaca), nefroproteção (redução de progressão da doença renal crônica) e benefício metabólico (controle glicêmico e, no caso dos agonistas de GLP-1/GIP, perda de peso substancial) — motivo pelo qual essas classes devem ser consideradas precocemente em pacientes com múltiplos fatores de risco CKM, e não reservadas apenas como opções de segunda linha para controle glicêmico isolado."
+  },
+  {
+    "id": "q221",
+    "temaId": "sindrome-metabolica",
+    "tema": "Síndrome Metabólica",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Critérios harmonizados IDF/AHA/NHLBI/WHF/IAS/IASO (2009); NCEP-ATP III — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Qual a intervenção de primeira linha, mais eficaz e abrangente, para o manejo da síndrome metabólica recém-diagnosticada em paciente sem indicação imediata de fármaco para nenhum componente isolado?",
+    "alternativas": [
+      "Início imediato de estatina de alta intensidade, independentemente do perfil lipídico completo.",
+      "Metformina profilática, mesmo sem diagnóstico de diabetes ou pré-diabetes.",
+      "Mudança de estilo de vida: redução de 5-10% do peso corporal, atividade física regular e padrão alimentar tipo mediterrâneo ou DASH.",
+      "Cirurgia bariátrica, independentemente do IMC."
+    ],
+    "correta": 2,
+    "comentario": "A mudança de estilo de vida — perda de peso de 5-10% do peso corporal, atividade física regular e adoção de padrão alimentar cardioprotetor (mediterrâneo ou DASH) — é a intervenção de primeira linha para síndrome metabólica, por atuar simultaneamente sobre múltiplos componentes (reduz circunferência abdominal, melhora perfil lipídico, reduz pressão arterial e melhora sensibilidade à insulina) sem os riscos e custos de terapias farmacológicas específicas, que são reservadas para quando as metas de cada componente isolado não são atingidas apenas com mudanças comportamentais."
+  },
+  {
+    "id": "q222",
+    "temaId": "sindrome-metabolica",
+    "tema": "Síndrome Metabólica",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Critérios harmonizados IDF/AHA/NHLBI/WHF/IAS/IASO (2009); NCEP-ATP III — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Adolescente de 16 anos, obeso, com acantose nigricans cervical, é levado à consulta pelos pais preocupados com múltiplos fatores de risco identificados em exames de rotina escolar. Qual achado de exame físico mencionado é sugestivo do principal mecanismo fisiopatológico da síndrome metabólica?",
+    "alternativas": [
+      "Acantose nigricans, marcador cutâneo de resistência insulínica significativa.",
+      "Estrias violáceas largas, sugestivas de síndrome de Cushing.",
+      "Exoftalmia, sugestiva de doença de Graves.",
+      "Bócio difuso, sugestivo de tireoidite autoimune."
+    ],
+    "correta": 0,
+    "comentario": "A acantose nigricans (hiperpigmentação aveludada em dobras cutâneas, classicamente na região cervical e axilar) é um marcador cutâneo bem estabelecido de resistência insulínica significativa — o mecanismo fisiopatológico central da síndrome metabólica — sendo achado de exame físico frequentemente observado em pacientes obesos com síndrome metabólica ou risco aumentado de desenvolvê-la, inclusive na população pediátrica e adolescente. As demais opções (estrias violáceas largas, exoftalmia, bócio difuso) são achados de outras condições endócrinas (Cushing, Graves, tireoidopatias), não diretamente relacionados ao mecanismo central da síndrome metabólica."
   }
 ]

@@ -9763,8 +9763,9 @@
     "categoria": "Endocrinologia",
     "titulo": "Síndrome Metabólica",
     "resumo": "Critérios diagnósticos combinando obesidade abdominal, dislipidemia, hipertensão e hiperglicemia, e sua relação com risco cardiovascular.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz de Prevenção Cardiovascular; International Diabetes Federation (IDF) — Consenso de Síndrome Metabólica; NCEP-ATP III",
+    "revisado": true,
+    "fonte": "Critérios harmonizados IDF/AHA/NHLBI/WHF/IAS/IASO (2009) — NCEP-ATP III; American Heart Association — Cardiovascular-Kidney-Metabolic (CKM) Health: Presidential Advisory (2023) e Guideline AHA/ACC/ADA/ASN para CKM Syndrome (2026); Sociedade Brasileira de Cardiologia",
+    "comoCai": "No SES-PE, os 5 critérios diagnósticos exatos e a regra \"3 de 5\" são cobrança garantida, geralmente em caso clínico pedindo para o candidato somar os componentes presentes. No ENAMED, o tema costuma vir ligado ao rastreio de risco cardiovascular na atenção primária, com foco em reconhecer os componentes e orientar mudança de estilo de vida, sem exigir o detalhe do novo estadiamento CKM.",
     "mnemonicos": [
       {
         "palavra": "3 de 5 fecham o diagnóstico",
@@ -9790,7 +9791,11 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Mudança do estilo de vida (redução de peso corporal de 5-10%, atividade física regular, dieta com padrão mediterrâneo ou DASH) é a intervenção de primeira linha e mais eficaz por atuar simultaneamente sobre múltiplos componentes da síndrome. Tratamento farmacológico dirigido a cada componente isolado (anti-hipertensivo, hipolipemiante, metformina/outros hipoglicemiantes) é acrescentado quando as metas específicas não são atingidas apenas com mudanças comportamentais, seguindo as diretrizes de cada condição isolada (HAS, dislipidemia, DM2)."
+        "conteudo": "Mudança do estilo de vida (redução de peso corporal de 5-10%, atividade física regular, dieta com padrão mediterrâneo ou DASH) é a intervenção de primeira linha e mais eficaz por atuar simultaneamente sobre múltiplos componentes da síndrome. Tratamento farmacológico dirigido a cada componente isolado (anti-hipertensivo, hipolipemiante, metformina/outros hipoglicemiantes) é acrescentado quando as metas específicas não são atingidas apenas com mudanças comportamentais, seguindo as diretrizes de cada condição isolada (HAS, dislipidemia, DM2). Nos estágios mais avançados do novo modelo CKM (ver seção seguinte), a diretriz 2026 reforça o papel precoce de iSGLT2 e agonistas de GLP-1/GIP como terapias que atuam simultaneamente sobre os três eixos (cardiovascular, renal e metabólico), e não apenas como hipoglicemiantes de segunda linha."
+      },
+      {
+        "titulo": "Síndrome Cardiovascular-Renal-Metabólica (CKM) — novo paradigma 2023-2026",
+        "conteudo": "A American Heart Association propôs, em 2023 (advisory presidencial) e formalizou em diretriz conjunta AHA/ACC/ADA/ASN em 2026, um novo conceito unificador: a síndrome cardiovascular-renal-metabólica (CKM, do inglês cardiovascular-kidney-metabolic), que amplia a lógica da síndrome metabólica clássica para um CONTINUUM estadiado (0 a 4), reconhecendo que obesidade, diabetes, doença renal crônica e doença cardiovascular compartilham mecanismos fisiopatológicos comuns (inflamação crônica, resistência insulínica, ativação do sistema renina-angiotensina-aldosterona) e se retroalimentam.<div class=\"table-wrap\"><table><thead><tr><th>Estágio</th><th>Definição</th></tr></thead><tbody><tr><td>0</td><td>Sem fatores de risco CKM: sem excesso de adiposidade, sem fatores metabólicos de risco, sem DRC</td></tr><tr><td>1</td><td>Excesso de adiposidade e/ou adiposidade disfuncional (pré-diabetes: glicemia de jejum 100-124mg/dL ou HbA1c 5,7-6,4%)</td></tr><tr><td>2</td><td>Fatores de risco metabólicos estabelecidos (HAS, hipertrigliceridemia, síndrome metabólica, DM2) e/ou doença renal crônica de risco moderado-alto</td></tr><tr><td>3</td><td>Doença cardiovascular subclínica associada a fatores de risco CKM (ex.: escore de cálcio coronariano &gt;100, ou NT-proBNP elevado com disfunção ventricular ao ecocardiograma), DRC de risco muito alto, ou risco cardiovascular calculado alto</td></tr><tr><td>4</td><td>Doença cardiovascular clínica estabelecida associada a fatores de risco CKM — 4a sem falência renal, 4b com falência renal</td></tr></tbody></table></div>Esse modelo não substitui os 5 critérios clássicos de síndrome metabólica (ainda amplamente usados e cobrados), mas os incorpora como parte do estágio 2 em diante, acrescentando a dimensão renal explicitamente ausente na definição clássica — reforçando a importância do rastreio de função renal (TFG, albuminúria) em todo paciente com componentes de síndrome metabólica."
       },
       {
         "titulo": "Sinais de alerta",
@@ -9798,7 +9803,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "Os 5 critérios diagnósticos com seus valores de corte exatos são cobrança certa, assim como a regra de \"3 de 5\" (nenhum componente é obrigatório isoladamente). A resistência insulínica como mecanismo fisiopatológico unificador é frequentemente explorada em questões conceituais que pedem a explicação do porquê os componentes se associam com tanta frequência."
+        "conteudo": "Os 5 critérios diagnósticos com seus valores de corte exatos são cobrança certa, assim como a regra de \"3 de 5\" (nenhum componente é obrigatório isoladamente). A resistência insulínica como mecanismo fisiopatológico unificador é frequentemente explorada em questões conceituais que pedem a explicação do porquê os componentes se associam com tanta frequência. A atualização mais recente e mais provável de aparecer em provas a partir de 2026 é o novo modelo de estadiamento CKM (0-4) da AHA, que amplia a síndrome metabólica clássica incorporando explicitamente a doença renal crônica ao continuum de risco cardiometabólico."
       }
     ]
   },
