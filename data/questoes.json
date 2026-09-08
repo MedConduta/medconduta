@@ -16489,5 +16489,185 @@
         "ano": 2026,
         "fonte": "Questão original MedConduta, com base no Manual de Vigilância e Controle da Leishmaniose Visceral (Ministério da Saúde) e nos painéis de monitoramento das leishmanioses (Ministério da Saúde, 2024).",
         "revisado": true
+    },
+    {
+        "id": "q902",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "No tratamento das parasitoses intestinais, a droga de escolha e a sua respectiva indicação são:",
+        "alternativas": [
+            "Tiabendazol para giardíase.",
+            "Albendazol para amebíase.",
+            "Metronidazol para teníase.",
+            "Oxamniquina para esquistossomose."
+        ],
+        "correta": 3,
+        "comentario": "A oxamniquina é um antiparasitário desenvolvido especificamente para o tratamento da esquistossomose mansônica (ativo apenas contra Schistosoma mansoni), tendo sido amplamente utilizado no Brasil como alternativa ao praziquantel (hoje a droga de escolha preferencial, por seu espectro mais amplo contra diferentes espécies de Schistosoma e maior facilidade posológica em dose única). As demais associações estão incorretas: o tiabendazol é indicado para estrongiloidíase (não giardíase, cujo tratamento é com metronidazol/tinidazol/secnidazol); o albendazol não é a droga de escolha para amebíase (que é tratada com metronidazol); e a teníase é tratada com praziquantel ou niclosamida (não metronidazol, que não tem ação contra cestódeos).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q903",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "Levando em consideração o diagnóstico das verminoses, assinale a alternativa CORRETA.",
+        "alternativas": [
+            "A giardíase é causada por um protozoário e acomete principalmente a região gástrica, causando fortes dores na criança.",
+            "A teníase, conhecida popularmente como \"solitária\", é causada pelos cestódeos Taenia solium e Taenia saginata. A T. solium é adquirida pelo consumo de carne de porco malcozida, e a T. saginata pelo consumo de carne de boi contaminada.",
+            "A esquistossomose é considerada uma doença de difícil transmissão, sendo baixo o risco de adquiri-la em um único contato com focos de contaminação.",
+            "A Entamoeba histolytica é o agente etiológico da amebíase, parasita do intestino grosso, cuja transmissão ocorre apenas por contato sexual."
+        ],
+        "correta": 1,
+        "comentario": "A teníase (\"solitária\") é causada pelos cestódeos Taenia solium (carne suína malcozida) e Taenia saginata (carne bovina malcozida) — associação clássica e frequentemente cobrada. A afirmativa sobre esquistossomose está INCORRETA e merece atenção: ao contrário do afirmado, a transmissão da esquistossomose pode ocorrer mesmo com um ÚNICO contato com água contaminada por cercárias — não é necessária exposição repetida ou prolongada para adquirir a infecção, o que reforça a importância da orientação sobre evitar completamente o contato com águas de risco em áreas endêmicas, mesmo que breve. A giardíase acomete predominantemente o intestino delgado (não a região gástrica), e a amebíase, embora possa ter transmissão sexual (sexo oral-anal), é transmitida principalmente por via fecal-oral através de água/alimentos contaminados, não exclusivamente sexual.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q904",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "Sobre o ciclo biológico do Schistosoma mansoni, assinale a alternativa correta:",
+        "alternativas": [
+            "O hospedeiro intermediário obrigatório é o caramujo de água doce do gênero Biomphalaria, no qual ocorre a multiplicação assexuada do parasita, com liberação de cercárias na água; a infecção humana ocorre por penetração ATIVA das cercárias através da pele íntegra durante o contato com água contaminada.",
+            "A infecção humana ocorre exclusivamente pela ingestão de água ou alimentos contaminados com ovos do parasita.",
+            "O hospedeiro intermediário é um mosquito do gênero Biomphalaria, que inocula as cercárias durante o repasto sanguíneo.",
+            "O ser humano é hospedeiro intermediário, e o caramujo Biomphalaria é o hospedeiro definitivo do parasita."
+        ],
+        "correta": 0,
+        "comentario": "O Schistosoma mansoni tem ciclo biológico heteroxeno: o caramujo de água doce do gênero Biomphalaria é o hospedeiro INTERMEDIÁRIO obrigatório, no qual ocorre reprodução assexuada do parasita (miracídio → esporocistos → cercárias), que são liberadas na água. A infecção humana (o ser humano é hospedeiro DEFINITIVO) ocorre por PENETRAÇÃO ATIVA das cercárias através da pele íntegra durante contato com água doce contaminada (não por ingestão, e não há vetor hematófago envolvido — diferente de arboviroses/malária).",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde) e no parecer científico da EMA sobre o arpraziquantel (dezembro de 2023) e sua pré-qualificação pela OMS (2024).",
+        "revisado": true
+    },
+    {
+        "id": "q905",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "Homem de 28 anos, morador de área urbana, retorna de viagem recreativa a uma região endêmica no interior de Minas Gerais, onde nadou em um açude/lagoa. Cerca de 4 semanas depois, desenvolve febre, urticária generalizada, dor abdominal, diarreia e hepatoesplenomegalia dolorosa. Hemograma mostra eosinofilia acentuada (32%). Qual a hipótese diagnóstica mais provável e o mecanismo fisiopatológico subjacente?",
+        "alternativas": [
+            "Febre de Katayama (esquistossomose aguda); reação de hipersensibilidade sistêmica do tipo imunocomplexo/celular contra antígenos do verme adulto e dos ovos recém-depositados, ocorrendo tipicamente 3-8 semanas após exposição significativa a águas infestadas por cercárias.",
+            "Febre tifoide; infecção por Salmonella Typhi adquirida por água contaminada.",
+            "Mononucleose infecciosa; primoinfecção pelo vírus Epstein-Barr.",
+            "Leishmaniose visceral aguda; infecção por Leishmania infantum transmitida por flebotomíneo."
+        ],
+        "correta": 0,
+        "comentario": "A síndrome de Katayama (fase aguda sistêmica da esquistossomose) é uma reação de hipersensibilidade que ocorre tipicamente 3 a 8 semanas após exposição significativa (geralmente primoinfecção, mais comum em indivíduos não previamente expostos/sem imunidade parcial, como viajantes/turistas) a águas contaminadas por cercárias — desencadeada pela liberação de antígenos do verme adulto recém-estabelecido e dos primeiros ovos depositados. Caracteriza-se por febre, urticária/exantema, hepatoesplenomegalia dolorosa, sintomas gastrointestinais e eosinofilia marcante, sendo diagnóstico diferencial importante em viajantes retornando de área endêmica com esse quadro. As demais hipóteses não explicam a combinação de eosinofilia acentuada com o contexto epidemiológico de exposição a água doce contaminada.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde) e no parecer científico da EMA sobre o arpraziquantel (dezembro de 2023) e sua pré-qualificação pela OMS (2024).",
+        "revisado": true
+    },
+    {
+        "id": "q906",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "Paciente de 45 anos, morador de área endêmica para esquistossomose, é investigado por esplenomegalia volumosa e episódio de hematêmese. Endoscopia digestiva alta confirma varizes esofágicas de grosso calibre, atualmente sem sangramento ativo. Exames laboratoriais mostram função hepática (albumina, bilirrubinas, coagulograma) preservada, sem sinais de insuficiência hepatocelular. Qual é o mecanismo fisiopatológico esperado da hipertensão portal nesse contexto, e como ele se diferencia da cirrose?",
+        "alternativas": [
+            "Hipertensão portal PRÉ-SINUSOIDAL, por fibrose periportal (fibrose de Symmers) causada pela reação granulomatosa aos ovos do Schistosoma mansoni retidos nas vênulas portais — mecanismo que preserva a arquitetura lobular hepática e a função hepatocelular, diferentemente da cirrose (hipertensão portal predominantemente sinusoidal/pós-sinusoidal, com destruição da arquitetura lobular e insuficiência hepatocelular associada).",
+            "Hipertensão portal SINUSOIDAL idêntica à da cirrose, com destruição completa da arquitetura lobular hepática e insuficiência hepatocelular proporcional ao grau de hipertensão portal.",
+            "Hipertensão portal PÓS-HEPÁTICA, por trombose das veias hepáticas (síndrome de Budd-Chiari) secundária à infecção pelo Schistosoma mansoni.",
+            "A esquistossomose não causa hipertensão portal; a hematêmese neste caso deve ser atribuída a outra causa não relacionada."
+        ],
+        "correta": 0,
+        "comentario": "A forma hepatoesplênica da esquistossomose mansônica crônica causa hipertensão portal PRÉ-SINUSOIDAL, decorrente da fibrose periportal (fibrose de Symmers, em \"cano de cachimbo\" à ultrassonografia) — resposta granulomatosa crônica aos ovos do parasita que embolizam e se depositam nas vênulas portais terminais, obstruindo o fluxo sem destruir a arquitetura lobular hepática (hepatócitos e sinusoides permanecem preservados). Por isso, mesmo com hipertensão portal significativa e suas complicações (esplenomegalia volumosa, varizes esofágicas, hemorragia digestiva alta), a função hepatocelular tende a permanecer PRESERVADA por muito tempo — um diferencial fisiopatológico e clínico importante em relação à cirrose de outras etiologias (hipertensão portal sinusoidal, com insuficiência hepatocelular concomitante).",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde) e no parecer científico da EMA sobre o arpraziquantel (dezembro de 2023) e sua pré-qualificação pela OMS (2024).",
+        "revisado": true
+    },
+    {
+        "id": "q907",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "Sobre o diagnóstico da esquistossomose mansônica, assinale a alternativa correta:",
+        "alternativas": [
+            "O método de Kato-Katz (exame parasitológico de fezes) é o exame padrão para diagnóstico da infecção intestinal, permitindo também quantificar a carga parasitária (ovos por grama de fezes), útil para avaliar intensidade da infecção e resposta ao tratamento.",
+            "O diagnóstico da esquistossomose é feito exclusivamente por sorologia, já que os ovos do parasita nunca são encontrados nas fezes.",
+            "A biópsia hepática é o exame de primeira escolha para diagnóstico em todos os pacientes, mesmo assintomáticos.",
+            "A hemocultura é o método diagnóstico padrão-ouro para a forma aguda (febre de Katayama)."
+        ],
+        "correta": 0,
+        "comentario": "O método de Kato-Katz — exame parasitológico de fezes que permite a visualização e quantificação de ovos de Schistosoma mansoni por grama de fezes — é o método diagnóstico padrão, amplamente utilizado tanto para confirmação diagnóstica individual quanto em inquéritos epidemiológicos/programas de controle, por sua simplicidade, baixo custo e capacidade de estimar a intensidade da infecção (relevante para priorização terapêutica em programas de saúde pública). A sorologia pode ser útil em situações específicas (fase aguda, antes da oviposição, ou em áreas de baixa prevalência/infecções de baixa carga parasitária), mas não substitui o exame parasitológico como método padrão. Biópsia hepática e hemocultura não são exames de rotina para diagnóstico da esquistossomose.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde) e no parecer científico da EMA sobre o arpraziquantel (dezembro de 2023) e sua pré-qualificação pela OMS (2024).",
+        "revisado": true
+    },
+    {
+        "id": "q908",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "Paciente de 32 anos, de área endêmica para esquistossomose, desenvolve quadro subagudo de dor lombar baixa irradiada para membros inferiores, fraqueza progressiva de ambos os membros inferiores, retenção urinária e diminuição da sensibilidade em sela. RM de coluna mostra espessamento/realce do cone medular e das raízes da cauda equina. Qual a hipótese diagnóstica que deve ser obrigatoriamente considerada nesse contexto epidemiológico, e qual sua importância clínica?",
+        "alternativas": [
+            "Neuroesquistossomose (mielorradiculopatia esquistossomótica) — forma ectópica grave da doença, causada por reação granulomatosa a ovos do parasita que migram para o plexo venoso perimedular (mais comumente acometendo o cone medular/cauda equina); é emergência neurológica que exige tratamento imediato com praziquantel associado a corticosteroide (para reduzir a resposta inflamatória granulomatosa), sob risco de déficit neurológico permanente se o tratamento for postergado.",
+            "Hérnia de disco lombar; conduta exclusivamente cirúrgica, sem necessidade de investigação etiológica adicional.",
+            "Compressão medular por metástase óssea; deve-se iniciar radioterapia empírica sem biópsia.",
+            "Síndrome de Guillain-Barré; a esquistossomose não tem qualquer associação com quadros neurológicos."
+        ],
+        "correta": 0,
+        "comentario": "A neuroesquistossomose (mais especificamente a mielorradiculopatia esquistossomótica, forma mais comum e grave de acometimento neurológico) é uma manifestação ECTÓPICA da esquistossomose, decorrente da migração aberrante de ovos do parasita para o plexo venoso perimedular, com reação granulomatosa que acomete predominantemente o cone medular e a cauda equina — causando o quadro descrito de dor lombar, paraparesia, disfunção esfincteriana e anestesia em sela. É considerada uma EMERGÊNCIA neurológica: diante da alta suspeita clínico-epidemiológica (área endêmica) associada a achados de imagem compatíveis, o tratamento deve ser iniciado prontamente com praziquantel associado a corticosteroide (para atenuar a resposta inflamatória granulomatosa que causa o dano neurológico), já que o atraso terapêutico está associado a maior risco de sequela neurológica permanente.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde) e no parecer científico da EMA sobre o arpraziquantel (dezembro de 2023) e sua pré-qualificação pela OMS (2024).",
+        "revisado": true
+    },
+    {
+        "id": "q909",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "Sobre as complicações crônicas da esquistossomose mansônica hepatoesplênica, além da hipertensão portal com varizes esofágicas, é correto afirmar que:",
+        "alternativas": [
+            "A hipertensão pulmonar (hipertensão arterial pulmonar esquistossomótica) é complicação reconhecida, decorrente da embolização de ovos do parasita para a circulação pulmonar através de shunts porto-sistêmicos (colaterais), causando arteriopatia pulmonar obliterativa — sendo uma das causas mais comuns de hipertensão arterial pulmonar em áreas endêmicas no mundo.",
+            "A esquistossomose nunca causa qualquer acometimento extra-hepático ou extraintestinal além do fígado, baço e intestino.",
+            "O hiperesplenismo decorrente da esplenomegalia congestiva não tem qualquer repercussão hematológica.",
+            "A glomerulonefrite não é uma complicação reconhecida da esquistossomose, mesmo em sua forma hepatoesplênica avançada."
+        ],
+        "correta": 0,
+        "comentario": "A hipertensão arterial pulmonar esquistossomótica é complicação reconhecida e clinicamente relevante da forma hepatoesplênica avançada: quando se desenvolvem shunts porto-sistêmicos significativos (colaterais da hipertensão portal), ovos do parasita podem alcançar a circulação pulmonar (contornando o filtro hepático) e desencadear reação granulomatosa/arteriopatia obliterativa nos vasos pulmonares — a esquistossomose está entre as causas mais prevalentes de hipertensão arterial pulmonar em nível mundial, sobretudo em áreas endêmicas. O hiperesplenismo (decorrente da esplenomegalia congestiva) causa CITOPENIAS (anemia, leucopenia, plaquetopenia) por sequestro/destruição esplênica aumentada — repercussão hematológica relevante. A glomerulonefrite (mesangioproliferativa/membranoproliferativa, por deposição de imunocomplexos) também é complicação reconhecida, sobretudo na forma hepatoesplênica avançada.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde) e no parecer científico da EMA sobre o arpraziquantel (dezembro de 2023) e sua pré-qualificação pela OMS (2024).",
+        "revisado": true
+    },
+    {
+        "id": "q910",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "Sobre o tratamento medicamentoso da esquistossomose mansônica, assinale a alternativa correta:",
+        "alternativas": [
+            "O praziquantel em dose única é o tratamento de escolha atual, eficaz contra os vermes adultos, sendo utilizado tanto no tratamento individual quanto em programas de quimioterapia preventiva/tratamento em massa em áreas endêmicas.",
+            "O praziquantel é inativo contra o Schistosoma mansoni, sendo eficaz apenas contra outras espécies de Schistosoma não encontradas no Brasil.",
+            "O tratamento deve ser sempre adiado até a fase crônica da doença, sendo contraindicado durante a fase aguda (febre de Katayama).",
+            "Não existe tratamento farmacológico eficaz para a esquistossomose, sendo o manejo exclusivamente cirúrgico nas formas graves."
+        ],
+        "correta": 0,
+        "comentario": "O praziquantel em dose única (dose ajustada ao peso corporal) é o tratamento de escolha atual para a esquistossomose mansônica, eficaz contra os vermes adultos de todas as espécies de Schistosoma relevantes (incluindo S. mansoni, predominante no Brasil), sendo empregado tanto no tratamento clínico individual quanto em larga escala nos programas de quimioterapia preventiva (tratamento em massa) recomendados pela OMS em áreas endêmicas, com o objetivo de reduzir a carga parasitária populacional e a transmissão. O tratamento também é indicado na fase aguda (associado a corticosteroide em casos mais exuberantes, para atenuar a resposta inflamatória), não devendo ser postergado até a cronificação.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde) e no parecer científico da EMA sobre o arpraziquantel (dezembro de 2023) e sua pré-qualificação pela OMS (2024).",
+        "revisado": true
+    },
+    {
+        "id": "q911",
+        "temaId": "esquistossomose",
+        "tema": "Esquistossomose",
+        "enunciado": "Sobre o arpraziquantel, nova formulação de praziquantel, assinale a alternativa correta:",
+        "alternativas": [
+            "É a primeira formulação de praziquantel desenvolvida especificamente para crianças em idade PRÉ-ESCOLAR (3 meses a 6 anos) — comprimido dispersível, com sabor adequado e estabilidade em climas tropicais/úmidos —, preenchendo uma lacuna histórica: essa faixa etária era tradicionalmente excluída das campanhas de tratamento em massa contra esquistossomose por dificuldade de fracionamento/deglutição dos comprimidos convencionais, apesar de também apresentar carga significativa de infecção em áreas endêmicas. Recebeu parecer científico positivo da EMA em dezembro de 2023 e pré-qualificação da OMS em maio de 2024.",
+            "É uma formulação exclusivamente injetável, destinada ao tratamento hospitalar da neuroesquistossomose.",
+            "Substitui o praziquantel convencional em todas as faixas etárias, incluindo adultos, sendo hoje a única formulação disponível globalmente.",
+            "Foi retirado do mercado em 2024 por problemas graves de segurança identificados em ensaios clínicos."
+        ],
+        "correta": 0,
+        "comentario": "O arpraziquantel é a primeira formulação de praziquantel desenvolvida especificamente para crianças PRÉ-ESCOLARES (3 meses a 6 anos de idade) — um comprimido dispersível de 150 mg, com sabor adequado ao paladar infantil e estabilidade em condições de clima tropical/úmido, resolvendo uma lacuna histórica importante: essa faixa etária, apesar de também apresentar carga relevante de infecção esquistossomótica em áreas endêmicas, era tradicionalmente EXCLUÍDA das campanhas de quimioterapia preventiva em massa, por dificuldade prática de fracionar/administrar os comprimidos convencionais de praziquantel (desenvolvidos para escolares e adultos) nessa população. O medicamento recebeu parecer científico positivo do Comitê de Medicamentos para Uso Humano da EMA em dezembro de 2023 e foi pré-qualificado pela OMS em maio de 2024, com os primeiros tratamentos em campo administrados já em 2025 (Uganda).",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base no Guia de Vigilância em Saúde (Ministério da Saúde) e no parecer científico da EMA sobre o arpraziquantel (dezembro de 2023) e sua pré-qualificação pela OMS (2024).",
+        "revisado": true
     }
 ]
