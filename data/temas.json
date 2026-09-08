@@ -1892,8 +1892,9 @@
     "categoria": "Neurologia",
     "titulo": "Crise Convulsiva e Estado de Mal Epiléptico",
     "resumo": "Definição do estado de mal epiléptico e sequência terapêutica escalonada.",
-    "revisado": false,
-    "fonte": "Liga Brasileira de Epilepsia; ILAE (International League Against Epilepsy) — Classificação de Crises e Status Epilepticus (2017)",
+    "revisado": true,
+    "fonte": "Liga Brasileira de Epilepsia; ILAE (International League Against Epilepsy) — Classificação de Crises e Status Epilepticus (2017); American Epilepsy Society Guideline for Status Epilepticus; estudos RAMPART e ESETT",
+    "comoCai": "No SES-PE e no ENAMED, o limiar de 5 minutos para definição de estado de mal epiléptico e a sequência terapêutica escalonada (benzodiazepínico → segunda linha → anestesia geral) são cobrança praticamente garantida. A paralisia de Todd como diferencial de AVC e a investigação obrigatória de causas metabólicas/tóxicas reversíveis em toda primeira crise também aparecem com frequência. Provas mais atualizadas já cobram as doses específicas de benzodiazepínico e dos anticonvulsivantes de segunda linha, além do midazolam intramuscular como alternativa validada quando não há acesso venoso.",
     "mnemonicos": [
       {
         "palavra": "5 MINUTOS",
@@ -1919,7 +1920,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "No estado de mal epiléptico, o tratamento segue sequência escalonada por tempo: benzodiazepínico (diazepam ou lorazepam endovenoso) como primeira linha imediata; se a crise persistir após a dose adequada de benzodiazepínico, segue-se para um anticonvulsivante de segunda linha (fenitoína, ácido valproico, ou levetiracetam endovenoso); a persistência além disso caracteriza status refratário, exigindo anestesia geral com suporte em UTI. Fora da urgência, epilepsia estabelecida é tratada com anticonvulsivante oral de manutenção, escolhido conforme o tipo de crise (focal versus generalizada) e perfil do paciente."
+        "conteudo": "No estado de mal epiléptico, o tratamento segue sequência escalonada por tempo, didaticamente dividida em fases: fase inicial/T1 (0-5min, estabilização e reconhecimento), benzodiazepínico entre 5-20min (T2, primeira linha imediata) — lorazepam 0,1mg/kg IV (máx. 4mg/dose, podendo repetir em 5-10min) ou diazepam 0,15-0,2mg/kg IV (máx. 10mg/dose); quando não há acesso venoso disponível, o midazolam intramuscular (0,2mg/kg, máx. 10mg) é alternativa validada pelo estudo RAMPART, com eficácia não inferior à via endovenosa. Se a crise persistir além de 20-40min (T3) apesar de benzodiazepínico em dose adequada, segue-se para anticonvulsivante de segunda linha endovenoso: o estudo ESETT demonstrou eficácia e segurança equivalentes entre levetiracetam (60mg/kg, máx. 4.500mg), ácido valproico (40mg/kg, máx. 3.000mg) e fosfenitoína (20mg PE/kg) — a escolha entre essas três opções pode ser guiada por comorbidades e perfil de efeitos adversos, não havendo superioridade de uma sobre as outras. A persistência além disso caracteriza status refratário, exigindo anestesia geral (midazolam, propofol ou pentobarbital em infusão contínua) com suporte em UTI e monitorização eletroencefalográfica contínua. Fora da urgência, epilepsia estabelecida é tratada com anticonvulsivante oral de manutenção, escolhido conforme o tipo de crise (focal versus generalizada) e perfil do paciente."
       },
       {
         "titulo": "Sinais de alerta",
@@ -1927,7 +1928,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O novo limiar de 5 minutos para definição operacional de status epilepticus (substituindo os antigos 30 minutos) é atualização de diretriz frequentemente cobrada em provas recentes. A sequência terapêutica escalonada (benzodiazepínico → segunda linha → anestesia geral) e a necessidade de investigar causas agudas reversíveis em toda primeira crise não provocada também são pontos centrais."
+        "conteudo": "O novo limiar de 5 minutos para definição operacional de status epilepticus (substituindo os antigos 30 minutos) é atualização de diretriz frequentemente cobrada em provas recentes. A sequência terapêutica escalonada (benzodiazepínico → segunda linha → anestesia geral) e a necessidade de investigar causas agudas reversíveis em toda primeira crise não provocada também são pontos centrais. Fique atento às doses específicas de benzodiazepínico (lorazepam/diazepam) e à equivalência entre levetiracetam, ácido valproico e fosfenitoína como segunda linha (estudo ESETT), além do midazolam IM como alternativa sem acesso venoso (estudo RAMPART)."
       }
     ]
   },
