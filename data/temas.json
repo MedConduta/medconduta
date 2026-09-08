@@ -8181,8 +8181,8 @@
     "categoria": "Neurologia",
     "titulo": "Síndrome de Guillain-Barré",
     "resumo": "Fraqueza ascendente com arreflexia após infecção prévia, dissociação albumino-citológica e monitorização respiratória.",
-    "revisado": false,
-    "fonte": "Academia Brasileira de Neurologia; Brighton Criteria para Síndrome de Guillain-Barré",
+    "revisado": true,
+    "fonte": "Academia Brasileira de Neurologia; Brighton Criteria para Síndrome de Guillain-Barré; European Academy of Neurology/Peripheral Nerve Society (EAN/PNS) Guideline on Diagnosis and Treatment of Guillain-Barré Syndrome, 2023",
     "mnemonicos": [
       {
         "palavra": "Sobe e some o reflexo",
@@ -8208,7 +8208,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Imunoglobulina endovenosa ou plasmaférese são os tratamentos de eficácia comprovada e equivalente, devendo ser iniciados precocemente em pacientes com comprometimento funcional significativo (incapacidade de deambular sem apoio) — corticoide isoladamente não tem benefício comprovado nessa condição, ao contrário de outras neuropatias inflamatórias. Monitorização respiratória rigorosa com capacidade vital forçada seriada é essencial, com intubação eletiva precoce (antes da falência respiratória franca) quando os parâmetros indicam deterioração iminente."
+        "conteudo": "Imunoglobulina endovenosa (IVIg, 0,4g/kg/dia por 5 dias consecutivos) ou plasmaférese (4-5 sessões de troca ao longo de 1-2 semanas, podendo ser reduzidas a 2 sessões em formas leves) são os tratamentos de eficácia comprovada e EQUIVALENTE segundo a diretriz EAN/PNS 2023, devendo ser iniciados o mais precocemente possível (idealmente dentro de 4 semanas do início da fraqueza) em pacientes com comprometimento funcional significativo (incapacidade de deambular sem apoio) — corticoide isoladamente não tem benefício comprovado nessa condição, ao contrário de outras neuropatias inflamatórias. A mesma diretriz recomenda formalmente CONTRA a associação/sequenciamento dos dois tratamentos (IVIg seguida de plasmaférese, ou vice-versa), por ausência de evidência de benefício adicional. Um segundo curso do MESMO tratamento inicial é reservado exclusivamente para as flutuações relacionadas ao tratamento (piora funcional após melhora ou estabilização inicial, ocorrendo dentro de 8 semanas do início dos sintomas, presentes em cerca de 10% dos pacientes) — não sendo recomendado repetir IVIg em pacientes com prognóstico já reconhecidamente desfavorável, cenário em que a resposta é improvável e a repetição pode até ser deletéria. Monitorização respiratória rigorosa com capacidade vital forçada seriada é essencial, com intubação eletiva precoce (antes da falência respiratória franca) quando os parâmetros indicam deterioração iminente."
       },
       {
         "titulo": "Sinais de alerta",
@@ -8216,9 +8216,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A dissociação albumino-citológica no líquor é cobrança certíssima e um dos achados mais decorados da neurologia em provas de residência. A monitorização seriada da capacidade vital forçada como ferramenta para antecipar necessidade de ventilação mecânica, e a ausência de benefício do corticoide isolado nessa condição (diferente de outras neuropatias inflamatórias), também são pontos frequentemente exigidos."
+        "conteudo": "A dissociação albumino-citológica no líquor é cobrança certíssima e um dos achados mais decorados da neurologia em provas de residência. A monitorização seriada da capacidade vital forçada como ferramenta para antecipar necessidade de ventilação mecânica, e a ausência de benefício do corticoide isolado nessa condição (diferente de outras neuropatias inflamatórias), também são pontos frequentemente exigidos. Provas mais atualizadas já cobram detalhes da diretriz EAN/PNS 2023, como a contraindicação de associar/sequenciar IVIg e plasmaférese e a conduta diante de flutuações relacionadas ao tratamento nas primeiras 8 semanas."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a dissociação albumino-citológica no líquor, o padrão de fraqueza ascendente e simétrica com arreflexia após infecção prévia (sobretudo por Campylobacter jejuni) e a monitorização da capacidade vital forçada para antecipar insuficiência respiratória são cobrança praticamente garantida. A ausência de benefício do corticoide isolado e a equivalência entre imunoglobulina endovenosa e plasmaférese também aparecem com frequência. Provas mais atualizadas já cobram detalhes práticos da diretriz EAN/PNS 2023: a contraindicação de associar/sequenciar os dois tratamentos, a janela de tempo para iniciar o tratamento e o manejo específico das flutuações relacionadas ao tratamento (piora após melhora inicial dentro de 8 semanas)."
   },
   {
     "id": "doenca-parkinson",
