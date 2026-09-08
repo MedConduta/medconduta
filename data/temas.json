@@ -3837,8 +3837,9 @@
     "categoria": "Gastroenterologia",
     "titulo": "Doença do Refluxo Gastroesofágico (DRGE)",
     "resumo": "Sintomas típicos e de alarme, tratamento empírico com IBP e principais complicações (esofagite, Barrett).",
-    "revisado": false,
-    "fonte": "Federação Brasileira de Gastroenterologia; ACG Clinical Guideline for the Diagnosis and Management of GERD",
+    "revisado": true,
+    "fonte": "Federação Brasileira de Gastroenterologia; ACG Clinical Guideline for the Diagnosis and Management of GERD; Lyon Consensus 2.0 (Gut, 2024); AGA Clinical Practice Update on Potassium-Competitive Acid Blockers (2024)",
+    "comoCai": "No SES-PE e no ENAMED, a distinção entre tratamento empírico com IBP (jovem, sintomas típicos, sem sinais de alarme) e indicação de EDA (sinais de alarme, refratariedade, rastreamento de Barrett) é cobrança certa. O esôfago de Barrett — definição, fatores de risco e vigilância endoscópica — também é tema recorrente. Fique atento a questões mais recentes citando os inibidores competitivos de potássio (P-CABs, como a vonoprazana) como alternativa emergente ao IBP em esofagite erosiva grave.",
     "mnemonicos": [
       {
         "palavra": "Sinais de alarme",
@@ -3860,11 +3861,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Em pacientes jovens com sintomas típicos e sem sinais de alarme, o diagnóstico pode ser presuntivo, com prova terapêutica empírica com IBP. Endoscopia digestiva alta é indicada diante de sinais de alarme, sintomas refratários ao tratamento empírico, ou para rastreamento de esôfago de Barrett em pacientes de risco (sintomas crônicos de longa data, especialmente homens brancos acima de 50 anos com fatores de risco adicionais). A pHmetria esofágica de 24h (com ou sem impedanciometria) é o exame padrão-ouro para confirmação objetiva de refluxo patológico, reservada a casos de dúvida diagnóstica ou antes de considerar cirurgia antirrefluxo."
+        "conteudo": "Em pacientes jovens com sintomas típicos e sem sinais de alarme, o diagnóstico pode ser presuntivo, com prova terapêutica empírica com IBP. Endoscopia digestiva alta é indicada diante de sinais de alarme, sintomas refratários ao tratamento empírico, ou para rastreamento de esôfago de Barrett em pacientes de risco (sintomas crônicos de longa data, especialmente homens brancos acima de 50 anos com fatores de risco adicionais). A pHmetria esofágica de 24h (com ou sem impedanciometria) é o exame padrão-ouro para confirmação objetiva de refluxo patológico, reservada a casos de dúvida diagnóstica, DRGE refratária ao tratamento empírico ou antes de considerar cirurgia antirrefluxo. O Consenso de Lyon 2.0 (2024) refinou os critérios de \"evidência conclusiva\" de DRGE, que exige sintomas compatíveis associados a achado endoscópico definitivo (esofagite erosiva Los Angeles C ou D, estenose péptica, ou esôfago de Barrett de segmento longo) OU tempo de exposição ácida (AET) >6% na pHmetria/impedanciometria — valores de AET <4% afastam DRGE patológica, e a faixa intermediária (4-6%) é considerada \"borderline\", exigindo evidências adicionais (número elevado de episódios de refluxo, associação sintoma-refluxo positiva) para confirmação diagnóstica."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Medidas comportamentais (elevação da cabeceira, evitar refeições próximas ao deitar, redução de peso, evitar alimentos desencadeantes) associadas a inibidor de bomba de prótons são a base do tratamento na maioria dos pacientes. Cirurgia antirrefluxo (fundoplicatura) é reservada a casos refratários ao tratamento clínico otimizado, intolerância à medicação de longo prazo, ou preferência do paciente por tratamento definitivo, sempre após confirmação objetiva de refluxo patológico."
+        "conteudo": "Medidas comportamentais (elevação da cabeceira, evitar refeições próximas ao deitar, redução de peso, evitar alimentos desencadeantes) associadas a inibidor de bomba de prótons são a base do tratamento na maioria dos pacientes. Cirurgia antirrefluxo (fundoplicatura) é reservada a casos refratários ao tratamento clínico otimizado, intolerância à medicação de longo prazo, ou preferência do paciente por tratamento definitivo, sempre após confirmação objetiva de refluxo patológico. Os inibidores competitivos de potássio (P-CABs, como a vonoprazana) surgem como alternativa aos IBPs, com bloqueio ácido mais potente, rápido e sustentado; segundo atualização da AGA (2024), podem ser considerados especialmente na esofagite erosiva grave (Los Angeles C/D), onde parecem oferecer cicatrização mucosa superior — porém, diante do custo mais elevado e da ausência de comparações diretas robustas com IBP em dose dobrada, ainda não substituem o IBP como primeira linha rotineira na maioria dos casos. Não se deve suspender IBP em uso crônico apenas por preocupações teóricas (doença renal crônica, fraturas, infecção por C. difficile) não confirmadas como causais em estudos de melhor qualidade — a decisão de manutenção deve pesar o benefício sintomático/de prevenção de complicações contra riscos individualizados."
       },
       {
         "titulo": "Sinais de alerta",
@@ -3872,7 +3873,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A indicação de endoscopia diante de sinais de alarme (versus tratamento empírico em jovem sem sinais de alarme) é cobrança certa. O esôfago de Barrett como condição pré-maligna decorrente de DRGE crônica não tratada, e a necessidade de vigilância endoscópica periódica quando diagnosticado, são pontos frequentemente exigidos em questões sobre complicações a longo prazo."
+        "conteudo": "A indicação de endoscopia diante de sinais de alarme (versus tratamento empírico em jovem sem sinais de alarme) é cobrança certa. O esôfago de Barrett como condição pré-maligna decorrente de DRGE crônica não tratada, e a necessidade de vigilância endoscópica periódica quando diagnosticado, são pontos frequentemente exigidos em questões sobre complicações a longo prazo. Provas mais atualizadas podem cobrar os critérios do Consenso de Lyon 2.0 (AET >6% na pHmetria como evidência conclusiva de refluxo patológico) e o papel emergente dos P-CABs (vonoprazana) na esofagite erosiva grave."
       }
     ]
   },
