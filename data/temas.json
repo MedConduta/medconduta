@@ -2436,8 +2436,8 @@
     "categoria": "Hematologia",
     "titulo": "Anemias Carenciais (Ferropriva e Megaloblástica)",
     "resumo": "Diagnóstico diferencial pelo VCM e reposição nas anemias por deficiência de ferro, B12 e folato.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; Ministério da Saúde — Manual de Condutas Gerais de Anemia Ferropriva",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; Ministério da Saúde — Manual de Condutas Gerais de Anemia Ferropriva; Conitec — incorporação de ferripolimaltose e carboximaltose férrica no SUS (2024-2025); NICE — diagnóstico e manejo da deficiência de vitamina B12 (2024); Consenso internacional sobre diagnóstico e tratamento da deficiência de B12 (2024)",
     "mnemonicos": [
       {
         "palavra": "VCM: MICRO x MACRO",
@@ -2459,11 +2459,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Anemia ferropriva é confirmada por ferritina sérica baixa (o parâmetro mais específico, embora seja reagente de fase aguda e possa estar falsamente normal/elevada em inflamação concomitante), associada a índice de saturação de transferrina reduzido; o hemograma mostra microcitose e hipocromia com aumento do RDW. Anemia megaloblástica é confirmada por dosagem sérica de B12 e/ou folato reduzidos, com hemograma mostrando macrocitose e neutrófilos hipersegmentados no esfregaço periférico — achado morfológico característico e bastante específico dessa condição."
+        "conteudo": "Anemia ferropriva é confirmada por ferritina sérica baixa (o parâmetro mais específico, embora seja reagente de fase aguda e possa estar falsamente normal/elevada em inflamação concomitante), associada a índice de saturação de transferrina reduzido; o hemograma mostra microcitose e hipocromia com aumento do RDW. Anemia megaloblástica é confirmada por dosagem sérica de B12 e/ou folato reduzidos, com hemograma mostrando macrocitose e neutrófilos hipersegmentados no esfregaço periférico — achado morfológico característico e bastante específico dessa condição. Achados adicionais no esfregaço periférico da anemia megaloblástica incluem anisocitose, poiquilocitose, macro-ovalócitos e corpos de Howell-Jolly; marcadores indiretos como homocisteína e ácido metilmalônico elevados auxiliam a confirmar a deficiência de B12 em casos de dosagem sérica limítrofe."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Reposição de ferro oral (sulfato ferroso) é o tratamento de escolha na ferropenia, mantida por vários meses além da normalização da hemoglobina para repletar os estoques corporais — a investigação e correção da causa da perda de ferro (geralmente sangramento oculto) é etapa obrigatória e não deve ser negligenciada. Deficiência de B12 é tratada com reposição parenteral (intramuscular) nas causas de má absorção (como a anemia perniciosa, por deficiência de fator intrínseco), enquanto reposição de folato oral trata a deficiência isolada dessa vitamina — jamais repor apenas folato em paciente com possível deficiência de B12 não excluída, pelo risco de mascarar a anemia e permitir progressão da lesão neurológica."
+        "conteudo": "Reposição de ferro oral (sulfato ferroso) é o tratamento de escolha na ferropenia, mantida por vários meses além da normalização da hemoglobina para repletar os estoques corporais — a investigação e correção da causa da perda de ferro (geralmente sangramento oculto) é etapa obrigatória e não deve ser negligenciada. Deficiência de B12 é tratada com reposição parenteral (intramuscular) nas causas de má absorção (como a anemia perniciosa, por deficiência de fator intrínseco), enquanto reposição de folato oral trata a deficiência isolada dessa vitamina — jamais repor apenas folato em paciente com possível deficiência de B12 não excluída, pelo risco de mascarar a anemia e permitir progressão da lesão neurológica. O ferro intravenoso (ferripolimaltose, carboximaltose férrica) é indicado quando há intolerância ou má absorção do ferro oral, sangramento ativo significativo ou necessidade de correção mais rápida da hemoglobina — a carboximaltose férrica permite reposição de até 1.000 mg em infusão única de cerca de 15 minutos, com elevação de 2 g/dL de hemoglobina em cerca de 7 dias (versus 14 dias com sulfato ferroso oral); a Conitec recomendou a incorporação de ambas as formulações ao SUS (2024-2025), ampliando o acesso a essa via de reposição. Quanto à deficiência de B12, consensos recentes (NICE 2024; consenso internacional 2024) reforçam que a reposição oral em altas doses (1.000-2.000 mcg/dia) pode ser eficaz mesmo em causas de má absorção (incluindo anemia perniciosa), pela absorção passiva independente de fator intrínseco (cerca de 1% da dose oral), sendo alternativa à via intramuscular clássica em pacientes selecionados, sobretudo quando há dificuldade de acesso a injeções regulares — a via parenteral permanece preferencial em quadros neurológicos graves ou quando a adesão à via oral é incerta."
       },
       {
         "titulo": "Sinais de alerta",
@@ -2473,7 +2473,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A obrigatoriedade de investigar a causa da ferropenia (não apenas repor ferro) em adulto, especialmente investigação digestiva em homens, é cobrança certíssima. O risco de mascarar/piorar dano neurológico ao repor apenas folato sem excluir deficiência de B12 concomitante é uma das armadilhas mais clássicas e recorrentes do tema em provas de residência."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o diagnóstico diferencial pelo VCM (microcítica x macrocítica) e a obrigatoriedade de investigar a causa da ferropenia — especialmente investigação digestiva (endoscopia/colonoscopia) em homens adultos e mulheres pós-menopausa, para excluir neoplasia oculta — são cobranças certíssimas. A armadilha mais clássica e recorrente é repor apenas ácido fólico em paciente com possível deficiência de B12 não excluída, mascarando a anemia e permitindo progressão do dano neurológico (degeneração combinada subaguda da medula). Achados morfológicos específicos (neutrófilos hipersegmentados na deficiência de B12/folato, RDW aumentado na ferropenia) também são cobrados. Um ponto emergente é o uso crescente do ferro intravenoso (carboximaltose férrica), hoje incorporado ao SUS, como alternativa de reposição mais rápida em casos selecionados."
   },
   {
     "id": "anemias-hemoliticas",
