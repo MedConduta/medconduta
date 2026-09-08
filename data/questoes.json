@@ -19878,5 +19878,483 @@
     "ano": 2026,
     "fonte": "Questão original elaborada pela equipe MedConduta com base em guidelines atualizados.",
     "revisado": true
+  },
+  {
+    "id": "q1087",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Menino de 3 anos, previamente hígido, é levado ao pronto-socorro com palidez abrupta e queda do estado geral. A avó relata que, nos últimos dias, encontrou a criança brincando com bolinhas de naftalina, e nega uso de medicações. Exame: afebril, hipocorado (2+/4+), ictérico (2+/4+), taquicárdico, baço palpável a 1 cm do rebordo costal. Exames: Hb 6,2 g/dL, Ht 18,5%, reticulócitos 9,5%, Coombs direto negativo. A hipótese diagnóstica é:",
+    "alternativas": [
+      "Doença falciforme",
+      "Esferocitose hereditária",
+      "Talassemia minor",
+      "Deficiência de glicose-6-fosfato desidrogenase (G6PD)",
+      "Anemia hemolítica autoimune"
+    ],
+    "correta": 3,
+    "comentario": "Exposição a naftalina (bolinhas de naftalina, um oxidante clássico) desencadeando hemólise aguda com anemia, icterícia, reticulocitose e Coombs NEGATIVO (afastando causa imune) é o quadro clássico de crise hemolítica por deficiência de G6PD — enzimopatia ligada ao X que compromete a defesa antioxidante da hemácia, tornando-a vulnerável a agentes oxidantes (naftalina, dapsona, primaquina, fava, infecções).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1088",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Entre as alternativas a seguir, assinale a que NÃO representa um dos critérios diagnósticos de síndrome torácica aguda em pacientes com anemia falciforme:",
+    "alternativas": [
+      "Presença de infiltrado novo em radiografia de tórax",
+      "Dor torácica",
+      "Temperatura > 38,5°C",
+      "Taquipneia, tosse, estertores à ausculta",
+      "Sinais de isquemia no eletrocardiograma ou aumento de biomarcadores de necrose miocárdica"
+    ],
+    "correta": 4,
+    "comentario": "A síndrome torácica aguda é definida pela presença de infiltrado pulmonar novo à radiografia de tórax associado a pelo menos um sinal/sintoma clínico: febre >38,5°C, dor torácica, taquipneia/tosse/estertores ou hipoxemia. Sinais de isquemia miocárdica/biomarcadores de necrose NÃO fazem parte dos critérios diagnósticos dessa síndrome, que é de origem pulmonar (infarto pulmonar, embolia gordurosa medular, infecção), não cardíaca.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1089",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Mulher, 70 anos, HAS e dislipidemia, em uso de AAS, clopidogrel, atenolol e atorvastatina, é admitida desorientada e sonolenta. Exame: febril, hipocorada, ictérica leve. Exames: Hb 9,0 g/dL, plaquetas 35.000/mm³, creatinina 3,2 mg/dL, bilirrubina total 2,4 mg/dL, LDH 460 U/L, fibrinogênio, PTTa e TAP NORMAIS. Hematoscopia: anisopoiquilocitose, muitos esquizócitos, trombocitopenia. A hipótese diagnóstica mais provável e a melhor conduta inicial são:",
+    "alternativas": [
+      "Coagulação intravascular disseminada / hidratação generosa e iniciar antibioticoterapia.",
+      "Púrpura trombocitopênica imunológica associada ao clopidogrel / suspender o clopidogrel e iniciar corticosteroide.",
+      "Sepse bacteriana / iniciar corticosteroide e antibioticoterapia empiricamente.",
+      "Púrpura trombocitopênica trombótica (PTT) associada ao clopidogrel / suspender o clopidogrel e iniciar plasmaférese."
+    ],
+    "correta": 3,
+    "comentario": "A combinação de anemia hemolítica microangiopática (esquizócitos, LDH elevado, bilirrubina indireta elevada), trombocitopenia, alteração neurológica e lesão renal, com coagulograma NORMAL (o que afasta CIVD, onde o consumo de fatores de coagulação alteraria PTTa/TAP/fibrinogênio), é compatível com púrpura trombocitopênica trombótica — o clopidogrel (e a ticlopidina) é causa medicamentosa reconhecida de PTT. O tratamento de urgência é a plasmaférese (troca plasmática), com suspensão do fármaco causador; transfusão de plaquetas é geralmente EVITADA na PTT, salvo sangramento com risco de vida, pelo risco de agravar a trombose microvascular.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1090",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "A doença falciforme é uma das alterações genéticas mais frequentes no Brasil, sendo a anemia falciforme (Hb SS) o genótipo mais frequente. Em relação a essa patologia, assinale a alternativa correta:",
+    "alternativas": [
+      "As crises álgicas são a principal causa de atendimento médico nos serviços de emergência para esses pacientes.",
+      "A gravidade clínica é variável, mas as principais causas de morbimortalidade são resultado de hemorragias de difícil controle.",
+      "O acidente vascular cerebral (AVC) é uma das causas de crise vaso-oclusiva com altos índices de morbimortalidade, prevalecendo o AVC hemorrágico nesses pacientes.",
+      "As infecções são frequentes na infância, relacionadas à asplenia, e sempre se manifestam como complicações graves.",
+      "Não existe teste de triagem neonatal para essa patologia."
+    ],
+    "correta": 0,
+    "comentario": "As crises vaso-oclusivas dolorosas são a causa mais comum de procura por atendimento de emergência em pacientes com anemia falciforme. As principais causas de morbimortalidade são trombóticas/vaso-oclusivas (não hemorrágicas); o AVC isquêmico predomina em crianças (por vasculopatia estenosante), com o hemorrágico mais associado a adultos; infecções por hipoesplenismo funcional são frequentes mas nem sempre graves (a profilaxia com penicilina reduz esse risco); e o teste do pezinho (triagem neonatal) inclui eletroforese de hemoglobina, permitindo diagnóstico desde o nascimento.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1091",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Acerca da anemia falciforme, assinale a alternativa correta:",
+    "alternativas": [
+      "Esplenomegalia é encontrada principalmente em crianças mais velhas e adolescentes.",
+      "As crises dolorosas são complicações frequentes e são consequência da vaso-oclusão por hemácias falcizadas.",
+      "A síndrome torácica aguda é tratada com antiviral e uso de broncodilatadores.",
+      "O diagnóstico é feito na presença de hemoglobina S e A.",
+      "A profilaxia para bactérias encapsuladas está indicada após a primeira crise álgica."
+    ],
+    "correta": 1,
+    "comentario": "As crises dolorosas vaso-oclusivas, causadas pela obstrução da microcirculação por hemácias falcizadas, são a manifestação clínica mais característica e frequente da doença. A esplenomegalia é achado de crianças PEQUENAS (antes da autoesplenectomia progressiva por infartos repetidos, que já ocorre na maioria por volta dos 5-6 anos); a síndrome torácica aguda é tratada com antibioticoterapia (cobrindo típicos e atípicos), não antivirais; a presença de HbS + HbA define o TRAÇO falciforme (heterozigoto, geralmente assintomático), não a doença; e a profilaxia antibiótica para bactérias encapsuladas (penicilina) é iniciada precocemente na infância (idealmente após o diagnóstico neonatal), não apenas após a primeira crise álgica.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1092",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Hidroxiureia será prescrita com maior probabilidade ao paciente com o seguinte histórico:",
+    "alternativas": [
+      "Mulher, 40 anos, anemia crônica e HbA2 > 4% (sugestivo de traço talassêmico).",
+      "Mulher, 24 anos, com anemia falciforme, necrose asséptica de cabeça femoral e síndrome torácica aguda prévia.",
+      "Homem, 35 anos, pancitopenia, DHL elevado e hipersegmentação de neutrófilos (anemia megaloblástica).",
+      "Mulher, 30 anos, poliartrite, proteinúria e anticorpo anti-Sm (lúpus eritematoso sistêmico).",
+      "Homem, 65 anos, fratura de vértebra lombar e hipergamaglobulinemia (sugestivo de mieloma múltiplo)."
+    ],
+    "correta": 1,
+    "comentario": "A hidroxiureia é indicada em pacientes com anemia falciforme e complicações graves/recorrentes — como necrose asséptica de cabeça femoral (complicação vaso-oclusiva óssea) e história de síndrome torácica aguda — reduzindo a frequência de crises vaso-oclusivas e de STA por aumentar a produção de hemoglobina fetal (HbF), que interfere na polimerização da HbS. As demais alternativas descrevem quadros de outras doenças (traço talassêmico, anemia megaloblástica, lúpus, mieloma múltiplo), sem indicação de hidroxiureia.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1093",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Lactente de 18 meses é internada com anemia súbita. A mãe refere palidez iniciada há 2 dias, precedida por diarreia sanguinolenta há 6 dias (com melhora recente) e diminuição da diurese há 24h. Exames: Hb 6,0 g/dL, esquizócitos elevados, plaquetas 35.000/mm³, Coombs negativo, ureia 156 mg/dL, creatinina 2,4 mg/dL. Analise: I. Há forte suspeita de microangiopatia trombótica. II. O diagnóstico provável é síndrome hemolítico-urêmica, com toxina Shiga da E. coli como principal agente. III. Outros achados esperados incluem hipercalemia, hiperfosfatemia e acidose metabólica (por lesão renal aguda). Está correto que:",
+    "alternativas": [
+      "Todas as assertivas estão corretas.",
+      "Todas as assertivas estão incorretas.",
+      "Apenas a assertiva I está correta.",
+      "A assertiva II está incorreta.",
+      "Apenas a assertiva II está correta."
+    ],
+    "correta": 0,
+    "comentario": "O quadro é clássico de síndrome hemolítico-urêmica (SHU) típica pós-diarreica: microangiopatia trombótica (tríade de anemia hemolítica microangiopática, trombocitopenia e lesão renal aguda) desencadeada pela toxina Shiga produzida por cepas de E. coli (mais comumente O157:H7) após diarreia sanguinolenta — os achados metabólicos da lesão renal aguda (hipercalemia, hiperfosfatemia, acidose metabólica) são esperados e devem ser monitorados.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1094",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Criança de 3 anos, com anemia falciforme, dá entrada com palidez e fraqueza há 48 horas, sem febre. Exames: Hb 5,5 g/dL (basal 8,5 g/dL), leucócitos e plaquetas normais, PCR normal, RETICULÓCITOS DIMINUÍDOS. Assinale a alternativa correta:",
+    "alternativas": [
+      "O tratamento consiste em estabilização hemodinâmica até a elevação espontânea dos reticulócitos.",
+      "A administração de imunoglobulina é o tratamento de primeira escolha.",
+      "A transfusão de hemácias não está indicada; estaria indicada apenas se Hb < 5,0 g/dL.",
+      "A principal causa do quadro é a infecção pelo enterovírus 71.",
+      "Trata-se de anemia hemolítica com necessidade obrigatória de transfusão de hemácias."
+    ],
+    "correta": 0,
+    "comentario": "Reticulócitos DIMINUÍDOS (não aumentados) em paciente com anemia falciforme e queda aguda da hemoglobina caracterizam a CRISE APLÁSICA — supressão transitória da eritropoiese, classicamente desencadeada por infecção pelo Parvovírus B19 (não enterovírus), que infecta os precursores eritroides. É condição autolimitada, com recuperação espontânea da medula em 7-10 dias; o suporte é hemodinâmico e, se necessário, transfusional (a indicação de transfusão depende da repercussão clínica, não de um valor fixo isolado de hemoglobina).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1095",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Adolescente com doença falciforme Hb SC está internada há 5 dias com dor intensa em perna esquerda, dificuldade para deambular, pouca resposta a opioide, e febre desde o segundo dia de internação, sem foco evidente ao exame. Ultrassonografia mostra abaulamento periosteal em tíbia. Quais os agentes etiológicos mais prováveis?",
+    "alternativas": [
+      "Klebsiella sp. e salmonela.",
+      "Staphylococcus aureus e Streptococcus pneumoniae.",
+      "Streptococcus pneumoniae e salmonela.",
+      "Staphylococcus aureus e salmonela."
+    ],
+    "correta": 3,
+    "comentario": "Osteomielite é complicação reconhecida da doença falciforme, favorecida por microinfartos ósseos repetidos que criam áreas propícias à infecção. Os agentes etiológicos mais frequentes nesse contexto são Staphylococcus aureus (o mais comum, como na população geral) e espécies de Salmonella — esta última notavelmente mais associada à osteomielite em pacientes falciformes do que na população geral, sendo uma associação clássica de prova.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2020,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1096",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Mulher, 24 anos, com cansaço, fraqueza e taquicardia aos mínimos esforços há 2 dias. Exame: mucosas descoradas, baço palpável, aftas orais. Exames: Hb 5,7 g/dL, VCM 108 fL, reticulócitos 5,6%, bilirrubina total 4,5 mg/dL (indireta 3,8), DHL 4x o valor normal, creatinina normal. O exame que auxiliará no diagnóstico é:",
+    "alternativas": [
+      "Teste da antiglobulina direta (Coombs direto).",
+      "Imunofenotipagem de sangue periférico.",
+      "Dosagem de vitamina B12.",
+      "Eletroforese de hemoglobina."
+    ],
+    "correta": 0,
+    "comentario": "O quadro (anemia com reticulocitose, hiperbilirrubinemia indireta, DHL muito elevado, esplenomegalia) é compatível com anemia hemolítica — o teste de Coombs direto é a etapa fundamental do algoritmo diagnóstico, diferenciando causas imunomediadas (positivo, direcionando para AHAI) de não imunomediadas (negativo, direcionando para causas hereditárias, mecânicas ou microangiopáticas).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2019,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1097",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Menino de 7 anos é levado ao pronto-socorro com febre alta há 5 dias associada a diarreia com sangue. Exames confirmam anemia hemolítica grave, plaquetopenia, aumento de ureia/creatinina e isolamento de Escherichia coli O157:H7 produtora de toxina Shiga. Sobre o tratamento indicado, é correto afirmar que a:",
+    "alternativas": [
+      "Prescrição de antibióticos é contraindicada, pois pode aumentar a liberação de toxina.",
+      "Apesar da plaquetopenia, está indicada anticoagulação terapêutica.",
+      "Transfusão de hemácias está contraindicada pelo risco de sobrecarga volêmica.",
+      "Maioria dos pacientes necessita de suporte dialítico na fase aguda."
+    ],
+    "correta": 0,
+    "comentario": "Na síndrome hemolítico-urêmica associada à E. coli produtora de toxina Shiga (STEC-HUS), o uso de antibióticos é CONTRAINDICADO na fase aguda da diarreia, pois a lise bacteriana induzida pelo antibiótico pode aumentar agudamente a liberação da toxina Shiga, piorando a lesão endotelial e o quadro de SHU — ponto de grande relevância prática e frequentemente cobrado, pois contraria a intuição inicial de tratar a infecção intestinal com antibiótico.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2019,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1098",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Criança de 2 anos com anemia falciforme é levada ao pronto-socorro com dor abdominal importante e em membros. Iniciou com tosse, coriza e febre há 2 dias; Hb basal geralmente em torno de 8 g/dL. Exame: prostrada, palidez importante, febril, ictérica, FC 180 bpm, PA 80x50 mmHg; baço a 8 cm do rebordo costal esquerdo. Exames: Hb 2,9 g/dL, plaquetas 68 mil, RETICULÓCITOS 17,43% (muito elevados), LDH 1.827 U/L. Qual a hipótese diagnóstica?",
+    "alternativas": [
+      "Anemia aplástica.",
+      "Crise vaso-oclusiva.",
+      "Sequestro esplênico.",
+      "Síndrome torácica aguda."
+    ],
+    "correta": 2,
+    "comentario": "Queda abrupta e grave da hemoglobina associada a esplenomegalia volumosa de instalação aguda, choque hipovolêmico (taquicardia, hipotensão) e RETICULOCITOSE importante (compensatória, ao contrário da crise aplásica, onde os reticulócitos estão diminuídos) é o quadro clássico de sequestro esplênico agudo — emergência potencialmente fatal na doença falciforme pediátrica, exigindo internação, monitorização hemodinâmica e, frequentemente, transfusão de concentrado de hemácias.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1099",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Paciente feminina, 21 anos, com cansaço. Exames: hemoglobina 9,6 g/dL, RDW elevado (índice de anisocitose), Coombs direto positivo (3+/4+). Qual achado laboratorial adicional é esperado nesse quadro?",
+    "alternativas": [
+      "Reticulocitose.",
+      "Leucócitos fragmentados.",
+      "Microcitose.",
+      "Capacidade ferropéxica (de ligação do ferro) aumentada."
+    ],
+    "correta": 0,
+    "comentario": "Diante de anemia com Coombs direto positivo (anemia hemolítica autoimune), espera-se reticulocitose — resposta medular compensatória à destruição acelerada das hemácias. Microcitose e capacidade de ligação do ferro aumentada (achados de ferropenia) não são esperados nesse contexto hemolítico; leucócitos não se fragmentam (fragmentação é achado de hemácias — esquizócitos — em hemólises mecânicas/microangiopáticas, não na AHAI).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1100",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Criança eutrófica, 9 meses, com diarreia sanguinolenta há 5 dias, em uso de ceftriaxona IM há 4 dias. Apesar de melhora da diarreia, está urinando menos, com edema palpebral e mais irritada há 1 dia. Exames: Hb 6,0 g/dL, plaquetas 75.000, reticulocitose, ureia 70, creatinina 2,5 mg/dL. Em relação à anemia, qual o tratamento mais indicado nesse momento?",
+    "alternativas": [
+      "Eritropoetina subcutânea.",
+      "Reposição de ferro.",
+      "Corticoterapia.",
+      "Concentrado de hemácias."
+    ],
+    "correta": 3,
+    "comentario": "Na síndrome hemolítico-urêmica, a anemia hemolítica é decorrente de destruição mecânica das hemácias na microcirculação lesada (não de deficiência de eritropoetina, ferro, nem processo autoimune responsivo a corticoide) — o suporte transfusional com concentrado de hemácias é a medida indicada para anemia sintomática/grave nesse contexto, enquanto o quadro segue seu curso (geralmente autolimitado, com suporte de função renal).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1101",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Recém-nascida evoluindo bem, sem queixas, cujo Teste do Pezinho na triagem de hemoglobinopatias mostrou presença de hemoglobinas F e S (ausência de hemoglobina A). Qual é o diagnóstico identificado no exame?",
+    "alternativas": [
+      "Beta talassemia",
+      "Traço falciforme",
+      "Doença falciforme",
+      "Deficiência de G6PD"
+    ],
+    "correta": 2,
+    "comentario": "A ausência de hemoglobina A (HbA) associada à presença de HbF e HbS confirma o genótipo homozigoto (SS) — doença falciforme. Se houvesse HbA presente junto à HbS (padrão FAS), o diagnóstico seria de TRAÇO falciforme (heterozigoto AS, geralmente assintomático) — a diferenciação entre esses padrões no teste do pezinho é ponto de cobrança recorrente.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1102",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Paciente de 7 anos, com anemia falciforme, em uso regular de ácido fólico, hidroxiureia e penicilina benzatina, com dor torácica há 3 dias e febre de até 38,8°C. Exame: descorada, ictérica leve, crepitação e sopro tubário em hemitórax direito, FR 38 ipm, SpO2 91% em ar ambiente, FC 142 bpm. Hb 6 g/dL, Ht 19%, leucócitos 28.600/mm³, reticulócitos 18%. Radiografia de tórax com infiltrado no hemitórax direito. Assinale a alternativa com o diagnóstico mais provável e a conduta adequada:",
+    "alternativas": [
+      "Pneumonia com derrame pleural; analgesia, oxacilina e ceftriaxona, sem transfusão de concentrado de hemácias.",
+      "Síndrome torácica aguda; analgesia, ceftriaxona, claritromicina e transfusão de concentrado de hemácias.",
+      "Pneumonia com atelectasia; ceftriaxona e ventilação não invasiva, sem transfusão de concentrado de hemácias.",
+      "Embolia gordurosa maciça; analgesia, anticoagulação e concentrado de hemácias.",
+      "Síndrome torácica aguda; analgesia, ceftriaxona e claritromicina, sem transfusão de concentrado de hemácias."
+    ],
+    "correta": 1,
+    "comentario": "Febre, dor torácica, hipoxemia e infiltrado pulmonar novo em paciente com anemia falciforme definem síndrome torácica aguda. O tratamento combina analgesia, antibioticoterapia empírica cobrindo germes típicos e atípicos (ceftriaxona + macrolídeo como claritromicina) e transfusão de concentrado de hemácias — indicada pela anemia significativa (Hb 6 g/dL) associada à hipoxemia, contribuindo para reduzir a fração de HbS circulante e melhorar a oxigenação tecidual.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2017,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1103",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Paciente de 12 anos, encaminhado pela hematologia com diagnóstico de esferocitose hereditária, para avaliação da clínica cirúrgica. Qual procedimento está indicado para o tratamento (potencialmente curativo em relação à hemólise) dessa condição?",
+    "alternativas": [
+      "Colecistectomia.",
+      "Esplenectomia.",
+      "Transplante de medula óssea.",
+      "Timectomia.",
+      "Pancreatectomia."
+    ],
+    "correta": 1,
+    "comentario": "Na esferocitose hereditária, o defeito é da própria membrana da hemácia (esferócitos, menos deformáveis), sendo destruídos preferencialmente no baço (hemólise extravascular). A esplenectomia remove o principal sítio de destruição das hemácias defeituosas, controlando efetivamente a hemólise e a anemia — embora o defeito de membrana em si persista, não sendo cura no sentido genético/molecular.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2017,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1104",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Sobre as patologias com defeito etiológico observado no eritrócito, correlacione: (1) Alteração enzimática. (2) Alteração da membrana do eritrócito. (3) Alteração numérica (quantitativa) da síntese de cadeia de hemoglobina. (4) Alteração qualitativa da cadeia de hemoglobina. Associe: ( ) Doença falciforme. ( ) Deficiência de G6PD. ( ) Talassemia. ( ) Esferocitose hereditária. Assinale a sequência correta:",
+    "alternativas": [
+      "1 - 2 - 3 - 4",
+      "4 - 3 - 1 - 2",
+      "3 - 1 - 4 - 2",
+      "4 - 1 - 3 - 2"
+    ],
+    "correta": 3,
+    "comentario": "A doença falciforme decorre de alteração QUALITATIVA da cadeia de globina beta (substituição de um único aminoácido, gerando a HbS) — item 4. A deficiência de G6PD é alteração ENZIMÁTICA — item 1. A talassemia decorre de alteração NUMÉRICA/quantitativa na síntese de cadeias de globina (produção reduzida ou ausente) — item 3. A esferocitose hereditária decorre de defeito estrutural da MEMBRANA eritrocitária (proteínas do citoesqueleto, como espectrina/anquirina) — item 2. Essa classificação fisiopatológica (enzimática/membrana/quantitativa/qualitativa) organiza todo o raciocínio diagnóstico das anemias hemolíticas hereditárias.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2016,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1105",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "O traço falcêmico (heterozigoto AS) apresenta, tipicamente:",
+    "alternativas": [
+      "Anemia leve.",
+      "Esplenomegalia discreta.",
+      "Dores ósseas leves.",
+      "Hemograma normal."
+    ],
+    "correta": 3,
+    "comentario": "O traço falciforme (heterozigoto HbAS) é, na grande maioria dos casos, assintomático, com hemograma NORMAL — diferente da doença falciforme (homozigoto HbSS), que cursa com anemia hemolítica crônica, crises vaso-oclusivas e demais complicações. Indivíduos com traço falciforme podem apresentar raras manifestações em condições extremas (hipóxia intensa, grandes altitudes, desidratação grave), mas não têm anemia, esplenomegalia ou dores ósseas como manifestação basal esperada.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2016,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1106",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Paciente de 22 anos com anemia crônica há cerca de 3 anos, com episódios de exacerbação acompanhados de cefaleia, dor abdominal, lombalgia, febre e astenia, e urina escurecida pela manhã durante os episódios. Exames mostram, além da anemia, hemoglobinúria e plaquetopenia. O diagnóstico mais provável é:",
+    "alternativas": [
+      "Esferocitose hereditária.",
+      "Hemoglobinúria paroxística noturna.",
+      "Anemia falciforme.",
+      "Talassemia."
+    ],
+    "correta": 1,
+    "comentario": "A hemoglobinúria paroxística noturna (HPN) é doença clonal adquirida da célula-tronco hematopoiética, causada por mutação no gene PIGA, que leva à deficiência de proteínas ancoradas por GPI (incluindo reguladores do complemento como CD55/CD59) na superfície das hemácias, tornando-as suscetíveis à lise mediada pelo complemento — classicamente durante o sono (hemólise noturna), com hemoglobinúria mais evidente na urina matinal. Cursa tipicamente com anemia hemolítica, citopenias (pela associação com falência medular) e risco aumentado de trombose, exigindo investigação com citometria de fluxo (pesquisa de clones deficientes em CD55/CD59).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2015,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1107",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Paciente de 32 anos, com lúpus eritematoso sistêmico, dá entrada com dispneia intensa e hemoglobina de 3,1 g/dL. Coombs direto reagente (4+/4+). Solicitada transfusão de 2 concentrados de hemácias, mas o serviço de hemoterapia informa que TODOS os concentrados cruzados foram incompatíveis (pesquisa de anticorpo irregular positiva), sem sequer ser possível definir o grupo ABO/Rh do paciente. A conduta recomendada é:",
+    "alternativas": [
+      "Iniciar corticoide e suspender a transfusão, aguardando resposta ao tratamento imunossupressor.",
+      "Realizar plasmaférese de urgência para retirar o autoanticorpo antes de transfundir.",
+      "Transfundir, lentamente, concentrado de hemácias O Rh negativo, mesmo incompatível, sob monitorização rigorosa.",
+      "Continuar cruzando bolsas até encontrar alguma que seja compatível, mesmo que isso demande dias."
+    ],
+    "correta": 2,
+    "comentario": "Em anemia hemolítica autoimune grave e sintomática (Hb 3,1 g/dL, dispneia intensa) com autoanticorpo pan-reativo tornando TODAS as unidades \"incompatíveis\" ao crossmatch, aguardar uma bolsa compatível que provavelmente não existirá coloca a vida do paciente em risco imediato. A conduta correta é transfundir a unidade menos incompatível disponível (tipicamente O Rh negativo), lentamente e sob monitorização rigorosa para sinais de reação transfusional — a transfusão não deve ser negada nem postergada por incompatibilidade sorológica quando há risco iminente de morte por anemia grave sintomática; corticoide e demais medidas imunossupressoras são iniciadas concomitantemente, mas não substituem o suporte transfusional emergencial.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2016,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1108",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Menina, 8 anos, negra, com história de anemia crônica, cansaço fácil e dor recorrente em membros inferiores. Exame com sopro sistólico e mucosas descoradas. A partir de que momento o exame específico (eletroforese de hemoglobina) pode ser realizado para o diagnóstico definitivo da causa provável dessa anemia?",
+    "alternativas": [
+      "Desde o nascimento.",
+      "Após o período neonatal.",
+      "Após o primeiro ano de vida.",
+      "A partir de 3 meses de idade."
+    ],
+    "correta": 0,
+    "comentario": "A eletroforese de hemoglobina pode e deve ser realizada desde o nascimento — é justamente o exame utilizado na triagem neonatal (Teste do Pezinho) para diagnóstico precoce de hemoglobinopatias, incluindo a doença falciforme, permitindo início precoce de medidas preventivas (profilaxia antibiótica, vacinação ampliada, acompanhamento especializado) antes mesmo do surgimento das primeiras manifestações clínicas.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2017,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1109",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Paciente desenvolveu astenia, icterícia e urina escura após início de dapsona para tratamento de hanseníase. Exames mostraram queda de 4 g/L na hemoglobina em relação ao pré-tratamento, bilirrubina indireta elevada. Esfregaço de sangue periférico com \"hemácias mordidas\" (bite cells). Qual o exame de escolha para diagnóstico dessa condição?",
+    "alternativas": [
+      "Teste de Coombs direto",
+      "Eletroforese de hemoglobina",
+      "Pesquisa de crioaglutininas",
+      "Dosagem de G6PD (glicose-6-fosfato desidrogenase)",
+      "Citometria de fluxo"
+    ],
+    "correta": 3,
+    "comentario": "A dapsona é fármaco oxidante bem reconhecido como gatilho de hemólise em pacientes com deficiência de G6PD — a apresentação (hemólise temporalmente relacionada ao início do fármaco, bite cells/hemácias mordidas ao esfregaço, característicos de dano oxidativo à membrana) direciona ao diagnóstico. A dosagem de G6PD confirma a deficiência enzimática (idealmente dosada após resolução da crise hemolítica aguda, já que reticulócitos jovens podem ter atividade enzimática normal, mascarando falsamente o resultado durante a crise).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1110",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Adolescente com anemia falciforme, em uso de hidroxiureia desde os 12 anos, apresenta dor intensa em flanco direito há 4 horas e falta de ar. Exame: ictérico +++/4+, afebril, dor à palpação de hipocôndrio direito, fígado a 9 cm do rebordo costal direito, doloroso. Exames: Hb 5 g/dL, reticulócitos 25% (muito elevados), bilirrubina DIRETA 6,9 mg/dL (predominante sobre a indireta, 1,2 mg/dL), enzimas hepáticas discretamente alteradas. O diagnóstico é:",
+    "alternativas": [
+      "Sequestro hepático.",
+      "Colecistite aguda.",
+      "Colestase intra-hepática.",
+      "Trombose de veia porta."
+    ],
+    "correta": 0,
+    "comentario": "Queda aguda e importante da hemoglobina com reticulocitose intensa (resposta compensatória) e hepatomegalia dolorosa de instalação aguda, em paciente com anemia falciforme, caracteriza o sequestro hepático agudo — complicação análoga ao sequestro esplênico, porém envolvendo o fígado, causada pelo aprisionamento de hemácias falcizadas na microcirculação hepática. O predomínio de bilirrubina direta reflete também certo grau de colestase intra-hepática associada ao processo, mas o diagnóstico central é o sequestro hepático, não uma colestase isolada.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2018,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "revisado": true
+  },
+  {
+    "id": "q1111",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Em dezembro de 2023, a FDA aprovou as duas primeiras terapias gênicas para doença falciforme (exagamglogene autotemcel/Casgevy, baseada em edição gênica CRISPR-Cas9, e lovotibeglogene autotemcel/Lyfgenia, baseada em vetor lentiviral) para pacientes ≥12 anos com crises vaso-oclusivas recorrentes. No mesmo período, duas outras terapias inovadoras para a doença — crizanlizumabe (anti-P-selectina) e voxelotor (modificador alostérico da HbS) — tiveram uso descontinuado ou retirado do mercado em 2024. Sobre esse cenário, é correto afirmar que:",
+    "alternativas": [
+      "Todas as quatro terapias (gênicas, crizanlizumabe e voxelotor) permanecem com uso amplamente recomendado e crescente em 2024-2025, sem qualquer restrição.",
+      "As terapias gênicas representam potencial curativo (correção da causa genética de base), mas seu acesso ainda é limitado (alto custo, poucos centros habilitados), enquanto crizanlizumabe e voxelotor tiveram retirada/descontinuação por dados adicionais desfavoráveis de eficácia e segurança, respectivamente — ilustrando a importância da reavaliação contínua de novas terapias mesmo após aprovação inicial.",
+      "A retirada de crizanlizumabe e voxelotor do mercado significa que não há mais nenhuma opção terapêutica além da hidroxiureia disponível para a doença falciforme.",
+      "As terapias gênicas foram retiradas do mercado pelos mesmos motivos de segurança que motivaram a retirada do voxelotor."
+    ],
+    "correta": 1,
+    "comentario": "As terapias gênicas (Casgevy, Lyfgenia) representam avanço com potencial curativo ao corrigir/compensar a causa genética da doença, mas seu acesso permanece limitado por alto custo e disponibilidade restrita a poucos centros especializados — tema de discussão relevante em países de alta prevalência como o Brasil. Já o crizanlizumabe (que havia mostrado redução de crises vaso-oclusivas no estudo SUSTAIN) falhou em confirmar eficácia no estudo confirmatório STAND, levando à sua retirada do mercado europeu; o voxelotor foi retirado voluntariamente em 2024 por sinais de segurança desfavoráveis. Isso não elimina outras opções terapêuticas consolidadas (hidroxiureia, suporte transfusional, transplante de células-tronco hematopoiéticas), e os motivos de retirada de crizanlizumabe (eficácia) e voxelotor (segurança) são distintos entre si e das terapias gênicas (que não foram retiradas).",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em guidelines atualizados.",
+    "revisado": true
+  },
+  {
+    "id": "q1112",
+    "temaId": "anemias-hemoliticas",
+    "tema": "Anemias Hemolíticas",
+    "enunciado": "Paciente com anemia hemolítica autoimune por anticorpos quentes, refratária a corticoide em dose plena e sem resposta adequada a rituximabe, permanecendo sintomática e transfusão-dependente. O fostamatinibe, avaliado no ensaio clínico de fase 3 FORWARD (2024) para essa indicação, atua por meio de qual mecanismo farmacológico?",
+    "alternativas": [
+      "Bloqueio direto do complemento terminal (C5), impedindo a formação do complexo de ataque à membrana.",
+      "Inibição da tirosina quinase esplênica (SYK), interrompendo a via de sinalização que medeia a fagocitose das hemácias sensibilizadas por anticorpos pelos macrófagos esplênicos.",
+      "Reposição de fator intrínseco, corrigindo a absorção de vitamina B12 comprometida pela hemólise crônica.",
+      "Estabilização alostérica da hemoglobina S, reduzindo sua polimerização em condições de baixa tensão de oxigênio."
+    ],
+    "correta": 1,
+    "comentario": "O fostamatinibe é um inibidor da tirosina quinase esplênica (SYK), enzima central na via de sinalização que medeia a fagocitose de hemácias opsonizadas por autoanticorpos pelos macrófagos esplênicos (mecanismo central da hemólise extravascular na AHAI por anticorpos quentes). Ao inibir essa via, reduz a destruição das hemácias sensibilizadas, mesmo na presença do autoanticorpo. No ensaio de fase 3 FORWARD (2024), mostrou respostas duráveis de hemoglobina com perfil de segurança consistente, representando opção adicional para pacientes refratários a corticoide e rituximabe/esplenectomia — diferente do bloqueio de complemento (mecanismo de drogas usadas em HPN, como eculizumabe) ou de mecanismos relacionados a B12/HbS, que não se aplicam a essa classe de fármaco.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em guidelines atualizados.",
+    "revisado": true
   }
 ]

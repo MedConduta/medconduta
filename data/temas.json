@@ -2482,8 +2482,8 @@
     "categoria": "Hematologia",
     "titulo": "Anemias Hemolíticas",
     "resumo": "Reconhecimento laboratorial da hemólise e principais causas hereditárias e adquiridas.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; UpToDate — Diagnostic approach to hemolytic anemia",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; UpToDate — Diagnostic approach to hemolytic anemia; FDA — aprovação de terapias gênicas para doença falciforme (exagamglogene autotemcel/Casgevy e lovotibeglogene autotemcel/Lyfgenia, dezembro 2023); Conitec — Protocolo Clínico e Diretrizes Terapêuticas de Anemia Hemolítica Autoimune (2024-2025); FORWARD trial — fostamatinibe para AHAI por anticorpos quentes (2024)",
     "mnemonicos": [
       {
         "palavra": "TRÍADE DA HEMÓLISE",
@@ -2509,7 +2509,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O tratamento é dirigido à causa: corticoide como primeira linha na anemia hemolítica autoimune (com esplenectomia ou rituximabe reservados a casos refratários); suporte transfusional e hidroxiureia na anemia falciforme (esta última reduzindo frequência de crises vaso-oclusivas); suspensão de agentes oxidantes na deficiência de G6PD. Ácido fólico é frequentemente suplementado em hemólises crônicas pela maior demanda de síntese de DNA na eritropoiese compensatória acelerada."
+        "conteudo": "O tratamento é dirigido à causa: corticoide como primeira linha na anemia hemolítica autoimune (com esplenectomia ou rituximabe reservados a casos refratários); suporte transfusional e hidroxiureia na anemia falciforme (esta última reduzindo frequência de crises vaso-oclusivas); suspensão de agentes oxidantes na deficiência de G6PD. Ácido fólico é frequentemente suplementado em hemólises crônicas pela maior demanda de síntese de DNA na eritropoiese compensatória acelerada. Em dezembro de 2023, a FDA aprovou as duas primeiras terapias gênicas para doença falciforme: exagamglogene autotemcel (Casgevy, baseada em edição gênica CRISPR-Cas9) e lovotibeglogene autotemcel (Lyfgenia, baseada em vetor lentiviral), ambas para pacientes ≥12 anos com crises vaso-oclusivas recorrentes — representam potencial curativo, mas ainda com acesso limitado (alto custo, disponibilidade restrita a poucos centros), sendo tema de discussão sobre acessibilidade especialmente em países de alta prevalência como o Brasil. Já o crizanlizumabe (anti-P-selectina) e o voxelotor (modificador alostérico da HbS) — inicialmente promissores para redução de crises vaso-oclusivas — tiveram uso descontinuado/retirado do mercado em 2024 após dados adicionais de eficácia (crizanlizumabe, estudo STAND) e segurança (voxelotor) desfavoráveis, ilustrando a importância da reavaliação contínua de terapias inovadoras. Para a anemia hemolítica autoimune refratária a corticoide, além de rituximabe/esplenectomia, o fostamatinibe (inibidor de tirosina quinase esplênica) mostrou resposta duradoura de hemoglobina em ensaio de fase 3 (FORWARD, 2024) para a forma por anticorpos quentes, ampliando o arsenal terapêutico para casos refratários."
       },
       {
         "titulo": "Sinais de alerta",
@@ -2517,9 +2517,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O algoritmo diagnóstico com o teste de Coombs direto como divisor entre causas imunes e não imunes de hemólise é cobrança certa. A tríade laboratorial de hemólise (reticulocitose + bilirrubina indireta elevada + LDH elevada, com haptoglobina reduzida) e a síndrome torácica aguda como complicação grave e potencialmente fatal da anemia falciforme também são frequentemente exigidas."
+        "conteudo": "O algoritmo diagnóstico com o teste de Coombs direto como divisor entre causas imunes e não imunes de hemólise é cobrança certa. A tríade laboratorial de hemólise (reticulocitose + bilirrubina indireta elevada + LDH elevada, com haptoglobina reduzida) e a síndrome torácica aguda como complicação grave e potencialmente fatal da anemia falciforme também são frequentemente exigidas. A distinção entre as terapias modificadoras da doença falciforme mais consolidadas (hidroxiureia, transfusão crônica/troca, transplante de células-tronco hematopoiéticas) e as terapias mais recentes (gênicas, com potencial curativo mas acesso ainda limitado) é um ponto emergente de cobrança."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o algoritmo diagnóstico com o teste de Coombs direto como divisor entre causas imunes e não imunes de hemólise é cobrança certa, assim como a tríade laboratorial de hemólise (reticulocitose + bilirrubina indireta elevada + LDH elevado, com haptoglobina reduzida). A síndrome torácica aguda como complicação grave e potencialmente fatal da anemia falciforme, exigindo suporte respiratório e transfusão de troca, é tema recorrente e de alta relevância clínica. Achados morfológicos específicos no esfregaço (esferócitos, esquizócitos, células falciformes) direcionando a etiologia também são frequentemente exigidos. Um ponto emergente é a retirada do mercado de terapias inovadoras para anemia falciforme (crizanlizumabe, voxelotor) por dados desfavoráveis de eficácia/segurança em 2024, em contraste com a aprovação das primeiras terapias gênicas curativas (Casgevy, Lyfgenia) no mesmo período — ilustrando a importância de acompanhar a reavaliação contínua de novas terapias."
   },
   {
     "id": "sindrome-nefrotica-nefritica",
