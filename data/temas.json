@@ -383,8 +383,9 @@
     "categoria": "Neurologia",
     "titulo": "AVC Isquêmico Agudo",
     "resumo": "Reconhecimento precoce, janela terapêutica e manejo inicial do AVC isquêmico.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Doenças Cerebrovasculares; Diretrizes da American Heart Association/American Stroke Association (2019, atualização 2023); Ministério da Saúde — Protocolo de Manejo do AVC Agudo",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Doenças Cerebrovasculares; AHA/ASA Guideline for the Early Management of Patients With Acute Ischemic Stroke — atualização 2026; Ministério da Saúde — Protocolo de Manejo do AVC Agudo",
+    "comoCai": "No SES-PE e no ENAMED, a janela de 4,5h para trombólise (com sua lista de contraindicações) e o papel da TC de crânio sem contraste (excluir hemorragia, não confirmar isquemia) são cobrança praticamente garantida. A escala de Cincinnati/FAST para reconhecimento pré-hospitalar e o NIHSS para gravidade também aparecem com frequência. Provas mais atualizadas já cobram a tenecteplase como alternativa/coequivalente à alteplase e o cuidado de NÃO reduzir agressivamente a PA após trombectomia bem-sucedida.",
     "mnemonicos": [
       {
         "palavra": "FAST",
@@ -410,7 +411,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "A trombólise endovenosa (alteplase ou tenecteplase) é indicada em até 4,5 horas do início dos sintomas (janela clássica, podendo se estender em casos selecionados por critérios de imagem avançada), após exclusão de contraindicações (hemorragia, cirurgia recente, anticoagulação terapêutica, entre outras). A trombectomia mecânica é indicada em oclusão de grande vaso proximal, com janela que pode se estender até 24 horas em pacientes cuidadosamente selecionados por imagem de perfusão que demonstre penumbra salvável. O controle pressórico na fase aguda é permissivo (não reduzir agressivamente a PA, exceto se for realizar trombólise, quando há limite máximo específico antes e depois do procedimento)."
+        "conteudo": "A trombólise endovenosa é indicada em até 4,5 horas do início dos sintomas (janela clássica, podendo se estender em casos selecionados por critérios de imagem avançada ou em AVC de despertar/início indeterminado com mismatch em RM), após exclusão de contraindicações (hemorragia, cirurgia recente, anticoagulação terapêutica, entre outras). A atualização da diretriz AHA/ASA (2026) elevou a tenecteplase (0,25mg/kg, em bolus único) a recomendação Classe I, no mesmo nível da alteplase (0,9mg/kg, em infusão de 1h) dentro da janela de 4,5h — sendo hoje endossadas como opções equivalentes, com a tenecteplase ganhando preferência crescente pela facilidade posológica (bolus único, sem infusão prolongada). A trombectomia mecânica é indicada em oclusão de grande vaso proximal da circulação anterior em até 6h (podendo se estender até 24 horas em pacientes cuidadosamente selecionados por imagem de perfusão que demonstre penumbra salvável); a mesma atualização de 2026 passou a recomendar fortemente a trombectomia também para oclusão de artéria basilar em pacientes selecionados (NIHSS≥10) dentro de até 24h, uma indicação antes menos consolidada. O controle pressórico na fase aguda é permissivo (não reduzir agressivamente a PA, exceto se for realizar trombólise, quando há limite máximo específico antes e depois do procedimento); após trombectomia bem-sucedida (recanalização completa), evidências recentes (ENCHANTED2/MT, OPTIMAL-BP) demonstraram POTENCIAL DE DANO com controle pressórico intensivo, contraindicando reduzir a PA sistólica abaixo de 140mmHg nas primeiras 72h nesse contexto específico — mudança relevante em relação à prática antiga de controle mais agressivo pós-reperfusão."
       },
       {
         "titulo": "Sinais de alerta",
@@ -418,7 +419,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A janela de 4,5 horas para trombólise (e a lista de contraindicações) e a janela estendida de até 24h para trombectomia em oclusão de grande vaso selecionada por imagem são cobranças certíssimas. É importante lembrar que a tomografia sem contraste normal não exclui AVC isquêmico agudo — sua função primária na urgência é excluir hemorragia, não confirmar isquemia, ponto frequentemente mal compreendido pelos candidatos."
+        "conteudo": "A janela de 4,5 horas para trombólise (e a lista de contraindicações) e a janela estendida de até 24h para trombectomia em oclusão de grande vaso selecionada por imagem são cobranças certíssimas. É importante lembrar que a tomografia sem contraste normal não exclui AVC isquêmico agudo — sua função primária na urgência é excluir hemorragia, não confirmar isquemia, ponto frequentemente mal compreendido pelos candidatos. Fique atento à tenecteplase como Classe I (equivalente à alteplase, atualização 2026), à trombectomia para oclusão de basilar em até 24h, e ao NÃO controle pressórico agressivo (evitar PAS <140mmHg) nas primeiras 72h após trombectomia bem-sucedida."
       }
     ]
   },
