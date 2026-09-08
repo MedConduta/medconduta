@@ -8273,8 +8273,8 @@
     "categoria": "Neurologia",
     "titulo": "Miastenia Gravis",
     "resumo": "Fraqueza flutuante e fatigável, ptose/diplopia iniciais e o reconhecimento da crise miastênica.",
-    "revisado": false,
-    "fonte": "Academia Brasileira de Neurologia; Myasthenia Gravis Foundation of America Clinical Classification",
+    "revisado": true,
+    "fonte": "Academia Brasileira de Neurologia; Myasthenia Gravis Foundation of America Clinical Classification; FDA — Inibidores de FcRn (efgartigimode, rozanolixizumabe) e inibidores do complemento (eculizumabe, ravulizumabe, zilucoplan) para miastenia gravis generalizada, 2021-2025",
     "mnemonicos": [
       {
         "palavra": "Piora com uso, melhora com repouso",
@@ -8300,7 +8300,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Piridostigmina (inibidor da acetilcolinesterase, aumentando a disponibilidade de acetilcolina na fenda sináptica) é o tratamento sintomático de primeira linha. Imunossupressão (corticoide, azatioprina, e outras opções) é indicada para controle da doença a médio/longo prazo em casos mais significativos. Timectomia é recomendada em pacientes com timoma (sempre) e considerada mesmo sem timoma em pacientes selecionados com miastenia generalizada, por reduzir necessidade de imunossupressão a longo prazo. Crise miastênica (fraqueza respiratória aguda grave) é tratada com imunoglobulina endovenosa ou plasmaférese, associada a suporte ventilatório quando necessário."
+        "conteudo": "Piridostigmina (inibidor da acetilcolinesterase, aumentando a disponibilidade de acetilcolina na fenda sináptica) é o tratamento sintomático de primeira linha. Imunossupressão (corticoide, azatioprina, e outras opções) é indicada para controle da doença a médio/longo prazo em casos mais significativos. Timectomia é recomendada em pacientes com timoma (sempre) e considerada mesmo sem timoma em pacientes selecionados com miastenia generalizada, por reduzir necessidade de imunossupressão a longo prazo. Uma classe terapêutica mais recente e cada vez mais relevante para miastenia generalizada moderada a grave (sobretudo refratária à imunossupressão convencional) são os inibidores de FcRn — efgartigimode e rozanolixizumabe, ambos com formulação subcutânea disponível —, que bloqueiam o receptor Fc neonatal responsável por reciclar a IgG, acelerando a degradação dos autoanticorpos patogênicos (incluindo anti-receptor de acetilcolina e anti-MuSK); e os inibidores do complemento — eculizumabe, ravulizumabe e zilucoplan (este último autoadministrável por via subcutânea) —, que bloqueiam a via terminal do complemento (fração C5), impedindo a lesão da junção neuromuscular mediada por complemento em pacientes com anticorpo anti-receptor de acetilcolina positivo. Essas classes representam mecanismo de ação alvo-específico distinto da imunossupressão ampla tradicional, com início de ação mais rápido. Crise miastênica (fraqueza respiratória aguda grave) é tratada com imunoglobulina endovenosa ou plasmaférese, associada a suporte ventilatório quando necessário."
       },
       {
         "titulo": "Sinais de alerta",
@@ -8308,9 +8308,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A fraqueza flutuante e fatigável (piora ao longo do dia/com esforço, melhora com repouso) como característica central e diferenciadora de miastenia é cobrança certa. O teste do gelo para ptose e a associação com timoma (exigindo investigação de imagem mediastinal em todo paciente) também são pontos frequentemente exigidos em questões de caso clínico."
+        "conteudo": "A fraqueza flutuante e fatigável (piora ao longo do dia/com esforço, melhora com repouso) como característica central e diferenciadora de miastenia é cobrança certa. O teste do gelo para ptose e a associação com timoma (exigindo investigação de imagem mediastinal em todo paciente) também são pontos frequentemente exigidos em questões de caso clínico. Provas mais atualizadas já cobram os inibidores de FcRn (efgartigimode, rozanolixizumabe) e os inibidores do complemento (eculizumabe, zilucoplan) como novas opções terapêuticas alvo-específicas para miastenia generalizada refratária."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a fraqueza flutuante e fatigável com predileção pela musculatura ocular/bulbar, o teste do gelo, a associação com timoma e a distinção entre crise miastênica (tratada com IVIG/plasmaférese) e crise colinérgica são cobrança praticamente garantida. A piridostigmina como primeira linha sintomática e a timectomia (sempre no timoma, considerada mesmo sem timoma na forma generalizada) também aparecem com frequência. Provas mais atualizadas já cobram os inibidores de FcRn (efgartigimode, rozanolixizumabe) e os inibidores do complemento (eculizumabe, zilucoplan) como nova classe terapêutica alvo-específica para miastenia generalizada refratária, mecanismo distinto da imunossupressão tradicional."
   },
   {
     "id": "sindrome-intestino-irritavel",
