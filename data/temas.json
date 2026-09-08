@@ -7706,8 +7706,9 @@
     "categoria": "Nefrologia",
     "titulo": "Infecção do Trato Urinário e Pielonefrite no Adulto",
     "resumo": "Cistite não complicada x complicada, diagnóstico de pielonefrite pelo sinal de Giordano e quando tratar bacteriúria assintomática.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Urologia; Sociedade Brasileira de Infectologia; IDSA Clinical Practice Guideline for Uncomplicated UTI and Pyelonephritis",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Urologia; Sociedade Brasileira de Infectologia; 2025 IDSA Clinical Practice Guideline for the Management and Treatment of Complicated Urinary Tract Infections (primeira atualização importante desde 2010)",
+    "comoCai": "No SES-PE, a diferenciação cistite x pielonefrite (Giordano positivo, sintomas sistêmicos) e a escolha do antibiótico empírico conforme gravidade são cobrança certa, assim como as situações em que NÃO se deve tratar bacteriúria assintomática. No ENAMED, o foco recai sobre o reconhecimento e tratamento da cistite não complicada na atenção primária e o reconhecimento de sinais de alarme que indicam encaminhamento/internação, com menor cobrança da nova classificação IDSA 2025 de ITU complicada.",
     "mnemonicos": [
       {
         "palavra": "Giordano",
@@ -7733,7 +7734,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Cistite não complicada é tratada empiricamente com antibiótico oral de curso curto (nitrofurantoína, fosfomicina em dose única, ou sulfametoxazol-trimetoprima conforme padrão de resistência local), sem necessidade de aguardar urocultura para iniciar o tratamento. Pielonefrite não complicada pode ser tratada ambulatorialmente com fluoroquinolona ou cefalosporina oral em paciente estável e sem sinais de gravidade; casos com sinais sistêmicos importantes, intolerância oral, gestação ou fatores de risco exigem internação e antibiótico endovenoso empírico, com ajuste posterior conforme cultura e antibiograma."
+        "conteudo": "A diretriz IDSA 2025 (primeira atualização importante desde 2010) simplificou a classificação: infecção limitada à bexiga (cistite) é considerada não complicada, enquanto qualquer acometimento sistêmico ou do trato urinário superior (pielonefrite) já é classificado como ITU complicada — aplicável tanto a homens quanto a mulheres, ampliando o escopo da diretriz anterior, focada quase exclusivamente em mulheres jovens saudáveis. Cistite não complicada é tratada empiricamente com antibiótico oral de curso curto (nitrofurantoína, fosfomicina em dose única, ou sulfametoxazol-trimetoprima conforme padrão de resistência local), sem necessidade de aguardar urocultura para iniciar o tratamento. É importante destacar que nitrofurantoína e fosfomicina oral NÃO são opções adequadas para pielonefrite/ITU complicada, por não atingirem concentrações adequadas no parênquima renal e na corrente sanguínea — ficam reservadas exclusivamente ao tratamento da cistite não complicada. Para pielonefrite/ITU complicada, a diretriz 2025 propõe uma abordagem em quatro passos para a escolha do antibiótico empírico: (1) avaliar gravidade (sepse presente ou ausente), (2) revisar fatores de risco individuais para uropatógeno resistente, (3) considerar alergias e interações medicamentosas relevantes, e (4) usar o antibiograma local relevante quando o paciente está séptico. Pielonefrite não complicada, sem sepse, pode ser tratada ambulatorialmente com fluoroquinolona ou cefalosporina oral em paciente estável; deve-se evitar fluoroquinolona se o paciente teve exposição a essa classe nos últimos 12 meses, e evitar reutilizar antibiótico ao qual um uropatógeno prévio do paciente já demonstrou resistência. Casos com sepse, intolerância oral, gestação ou fatores de risco para resistência exigem internação e antibiótico endovenoso empírico de amplo espectro (cefalosporina de 3ª/4ª geração, piperacilina-tazobactam ou fluoroquinolona, reservando-se carbapenêmicos a cenários de maior risco), com ajuste posterior conforme cultura e antibiograma."
       },
       {
         "titulo": "Sinais de alerta",
@@ -7741,7 +7742,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A diferenciação entre cistite (sintomas locais, sem febre) e pielonefrite (sintomas sistêmicos, Giordano positivo) é cobrança certa. É importante lembrar que a bacteriúria assintomática só deve ser tratada em situações específicas (gestação, procedimento urológico invasivo planejado) — tratar bacteriúria assintomática fora dessas indicações é conduta incorreta frequentemente testada como pegadinha de prova."
+        "conteudo": "A diferenciação entre cistite (sintomas locais, sem febre) e pielonefrite (sintomas sistêmicos, Giordano positivo) é cobrança certa. É importante lembrar que a bacteriúria assintomática só deve ser tratada em situações específicas (gestação, procedimento urológico invasivo planejado) — tratar bacteriúria assintomática fora dessas indicações é conduta incorreta frequentemente testada como pegadinha de prova. Atenção à pegadinha mais recente: nitrofurantoína e fosfomicina, apesar de excelentes opções para cistite não complicada, NÃO devem ser usadas para tratar pielonefrite (não atingem níveis adequados no parênquima renal/corrente sanguínea) — um erro clássico induzido é a banca sugerir essas drogas para um quadro de pielonefrite/ITU complicada."
       }
     ]
   },
