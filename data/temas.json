@@ -7899,8 +7899,8 @@
     "categoria": "Cardiologia",
     "titulo": "Dislipidemias: Diagnóstico e Tratamento",
     "resumo": "Estratificação de risco cardiovascular, metas de LDL e a escolha entre estatina, ezetimiba, PCSK9 e fibratos.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose (2017, atualização 2021); ESC/EAS Guidelines for the management of dyslipidaemias (2019)",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose 2025 (substitui a versão 2017/2021, com mudanças relevantes nas metas de LDL — ver Diagnóstico e Tratamento); ESC/EAS Guidelines for the management of dyslipidaemias (2019)",
     "mnemonicos": [
       {
         "palavra": "Estatina é sempre a base",
@@ -7922,11 +7922,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O perfil lipídico (colesterol total, LDL, HDL e triglicerídeos), atualmente podendo ser colhido sem jejum obrigatório conforme as diretrizes mais atuais (exceto quando triglicerídeos muito elevados são suspeitados), é o exame padrão para diagnóstico e monitorização terapêutica. A estratificação de risco cardiovascular global (escores como o de risco global brasileiro, incorporando idade, sexo, tabagismo, PA, diabetes e perfil lipídico) é essencial para definir a meta de LDL individualizada de cada paciente — a meta não é um valor fixo universal, mas varia conforme a categoria de risco (baixo, intermediário, alto, muito alto)."
+        "conteudo": "O perfil lipídico (colesterol total, LDL, HDL e triglicerídeos), atualmente podendo ser colhido sem jejum obrigatório conforme as diretrizes mais atuais (exceto quando triglicerídeos muito elevados são suspeitados), é o exame padrão para diagnóstico e monitorização terapêutica. A Diretriz Brasileira de Dislipidemias 2025 trouxe uma reformulação importante da estratificação de risco: passou a adotar o PREVENT Score (modelo da American Heart Association, 2024) e criou uma quinta categoria, o \"risco extremo\" (além de baixo, intermediário, alto e muito alto), cada uma com sua meta de LDL específica: <div class=\"table-wrap\"><table><thead><tr><th>Categoria de risco</th><th>Meta de LDL-c</th></tr></thead><tbody><tr><td>Baixo</td><td>&lt;115mg/dL</td></tr><tr><td>Intermediário</td><td>&lt;100mg/dL</td></tr><tr><td>Alto</td><td>&lt;70mg/dL</td></tr><tr><td>Muito alto</td><td>&lt;50mg/dL</td></tr><tr><td>Extremo (categoria nova)</td><td>&lt;40mg/dL</td></tr></tbody></table></div> A meta de baixo risco caiu de 130 para 115mg/dL em relação à diretriz anterior. A diretriz 2025 também reforça o papel de biomarcadores complementares — lipoproteína(a) [Lp(a)] e apolipoproteína B (ApoB) — na refinamento da estratificação de risco, especialmente quando o LDL isolado subestima o risco real."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Mudança de estilo de vida (dieta com redução de gorduras saturadas e trans, atividade física, cessação do tabagismo) é recomendada a todos. As estatinas são a primeira linha farmacológica, com redução comprovada de eventos cardiovasculares proporcional à redução absoluta de LDL alcançada; classificam-se em alta intensidade (atorvastatina 40-80mg, rosuvastatina 20-40mg, reduzindo LDL em ≥50%), moderada e baixa intensidade. Ezetimiba e inibidores de PCSK9 (evolocumabe, alirocumabe) são adicionados quando a meta de LDL não é atingida com estatina isolada em dose máxima tolerada, especialmente em pacientes de risco muito alto (doença aterosclerótica estabelecida) ou hipercolesterolemia familiar."
+        "conteudo": "Mudança de estilo de vida (dieta com redução de gorduras saturadas e trans, atividade física, cessação do tabagismo) é recomendada a todos. As estatinas são a primeira linha farmacológica, com redução comprovada de eventos cardiovasculares proporcional à redução absoluta de LDL alcançada; classificam-se em alta intensidade (atorvastatina 40-80mg, rosuvastatina 20-40mg, reduzindo LDL em ≥50%), moderada e baixa intensidade. Ezetimiba, inibidores de PCSK9 (evolocumabe, alirocumabe) e o ácido bempedoico são adicionados quando a meta de LDL não é atingida com estatina isolada em dose máxima tolerada. Mudança importante da diretriz 2025: nos grupos de risco muito alto e extremo, a terapia combinada (estatina de alta intensidade + ezetimiba, e já considerando anti-PCSK9 precocemente conforme o caso) passou a ser recomendada como estratégia de PRIMEIRA linha, em vez da abordagem escalonada tradicional (estatina isolada, só adicionando outro fármaco depois de reavaliar a resposta) — reconhecendo que esses pacientes dificilmente atingem a meta apenas com estatina isolada. A diretriz também propõe um algoritmo mais estruturado para diagnóstico e manejo da intolerância a estatinas (antes frequentemente subestimada), com alternativas terapêuticas específicas."
       },
       {
         "titulo": "Sinais de alerta",
@@ -7934,9 +7934,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "As metas de LDL estratificadas por categoria de risco cardiovascular (baixo, intermediário, alto, muito alto — com valores decrescentes de meta conforme aumenta o risco) são tema recorrente, assim como a indicação de estatina de alta potência em prevenção secundária independentemente do valor basal de LDL (\"quanto mais baixo, melhor\", sem meta mínima de segurança estabelecida). A dispensa do jejum para coleta do perfil lipídico, atualização mais recente das diretrizes, também já aparece em provas mais atuais como pegadinha para quem ainda espera jejum de 12 horas."
+        "conteudo": "As metas de LDL estratificadas por categoria de risco cardiovascular são tema recorrente — e, por serem atualização de 2025 (valores mais baixos e a nova categoria de \"risco extremo\", meta <40mg/dL), têm boa chance de aparecer justamente para testar quem ainda decora as metas antigas (ex.: 130mg/dL para baixo risco, hoje 115mg/dL). Também é clássico cobrar a indicação de estatina de alta potência em prevenção secundária independentemente do valor basal de LDL (\"quanto mais baixo, melhor\", sem meta mínima de segurança estabelecida), e a terapia combinada como primeira linha (não mais escalonada) em risco muito alto/extremo. A dispensa do jejum para coleta do perfil lipídico já é pegadinha consolidada para quem ainda espera jejum de 12 horas."
       }
-    ]
+    ],
+    "comoCai": "Tema com alta chance de aparecer nas duas provas em 2026, justamente por ter mudado bastante em 2025 (novas metas de LDL por categoria de risco, categoria de risco extremo, PREVENT Score). No ENAMED, tende a ser cobrado de forma mais direta (qual estatina, qual meta); no SES-PE, pode explorar também a estratificação de risco e a terapia combinada como primeira linha nos grupos de risco muito alto/extremo."
   },
   {
     "id": "disturbios-calcio-paratireoide",
