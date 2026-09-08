@@ -275,6 +275,28 @@
   margin-bottom: var(--space-1);
 }
 
+/* ---------- Como cai na prova (cabeçalho do tema) ---------- */
+
+.exam-focus {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-accent-soft-border);
+}
+.exam-focus__label {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+.exam-focus p {
+  margin: 0;
+  color: var(--color-text);
+}
+
 /* ---------- Conteúdo de tema (prose) ---------- */
 
 .prose h3 { margin-top: var(--space-6); }

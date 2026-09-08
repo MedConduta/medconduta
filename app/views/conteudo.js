@@ -235,6 +235,11 @@ export async function renderDetalhe(container, { id }) {
         <div class="page-header__eyebrow">${escapeHtml(tema.categoria)}</div>
         <h1>${escapeHtml(tema.titulo)} ${geradoPorIA ? '<span class="badge badge--ia">✨ IA</span>' : ""}</h1>
         ${geradoPorIA && tema.notaRevisaoIA ? `<p class="page-header__desc"><em>Nota da autocrítica da IA: ${escapeHtml(tema.notaRevisaoIA)}</em></p>` : ""}
+        ${
+          tema.comoCai
+            ? `<div class="exam-focus"><div class="exam-focus__label">Como cai no SES-PE e no ENAMED</div><p>${tema.comoCai}</p></div>`
+            : ""
+        }
       </div>
 
       <div class="btn-row" style="margin-bottom:24px;">
