@@ -6682,5 +6682,116 @@
     ],
     "correta": 1,
     "comentario": "A diretriz KDIGO 2025 dedicada à nefropatia por IgA — a primeira diretriz própria e específica para essa doença — recomenda que o sparsentana (antagonista duplo dos receptores de endotelina e de angiotensina) SUBSTITUA o IECA/BRA em pacientes com risco de perda progressiva de função renal, e não seja associado a ele. Essa recomendação se baseia no estudo de fase 3 PROTECT, que demonstrou maior redução de proteinúria e melhor preservação da taxa de filtração glomerular com sparsentana em comparação à irbesartana em dose máxima tolerada, com perfil de segurança comparável."
+  },
+  {
+    "id": "q365",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "banca": "FAMENE-PB",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Questão real de concurso/exame de residência médica, reescrita em palavras 100% originais a partir do caso clínico e gabarito públicos; não reproduz o texto literal da prova original.",
+    "enunciado": "Homem de 50 anos, diabético, hipertenso, com histórico de abuso de opioides, chega à emergência com alteração do estado mental e obnubilação. Exames: pH 7,21; PaCO2 26mmHg; HCO3- 12mEq/L; Na+ 145mEq/L; cloreto 100mEq/L; glicemia 180mg/dL. O distúrbio ácido-básico apresentado por esse paciente é:",
+    "alternativas": [
+      "Acidose metabólica e acidose respiratória combinadas.",
+      "Acidose metabólica (isolada, com compensação respiratória adequada).",
+      "Alcalose metabólica.",
+      "Acidose respiratória.",
+      "Alcalose respiratória."
+    ],
+    "correta": 1,
+    "comentario": "O pH baixo (7,21, acidemia) associado a bicarbonato baixo (12mEq/L) caracteriza acidose metabólica como distúrbio primário. Aplicando a fórmula de Winter para verificar se a compensação respiratória é adequada: PaCO2 esperado = 1,5 × HCO3 + 8 (± 2) = 1,5 × 12 + 8 = 26 (± 2), ou seja, entre 24 e 28mmHg. O PaCO2 real (26mmHg) está dentro dessa faixa esperada, indicando que a compensação respiratória (hiperventilação, reduzindo o CO2) está ADEQUADA — não havendo, portanto, um segundo distúrbio respiratório associado. Trata-se, portanto, de uma acidose metabólica simples (isolada), com ânion gap elevado [Na - (Cl + HCO3) = 145 - (100+12) = 33], compatível com cetoacidose diabética ou acidose lática, a serem investigadas no contexto clínico."
+  },
+  {
+    "id": "q366",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "banca": "UFPR",
+    "ano": 2022,
+    "revisado": true,
+    "fonte": "Questão real de concurso/exame de residência médica, reescrita em palavras 100% originais a partir do caso clínico e gabarito públicos; não reproduz o texto literal da prova original.",
+    "enunciado": "Paciente de 56 anos, diabético, procura a emergência por diarreia volumosa (8 episódios/dia) há 4 dias, evoluindo com sinais de choque hipovolêmico (hipotensão, taquicardia, extremidades frias, tempo de enchimento capilar prolongado). Gasometria arterial: pH 7,12; PaCO2 16mmHg; HCO3- 5mEq/L; lactato 3mmol/L; Na+ 130mEq/L; Cl- 110mEq/L; K+ 3,1mEq/L. O(s) distúrbio(s) ácido-base presente(s) nesse caso é(são):",
+    "alternativas": [
+      "Somente acidose metabólica de ânion gap aumentado.",
+      "Somente acidose metabólica de ânion gap normal.",
+      "Acidose metabólica de ânion gap aumentado associada a alcalose respiratória.",
+      "Acidose metabólica de ânion gap normal associada a alcalose respiratória.",
+      "Acidose metabólica de ânion gap aumentado associada a acidose metabólica de ânion gap normal."
+    ],
+    "correta": 4,
+    "comentario": "O ânion gap calculado é [Na - (Cl + HCO3)] = 130 - (110 + 5) = 15, discretamente elevado (valor normal ≈ 8-12), compatível com um componente de acidose metabólica de ânion gap AUMENTADO (lactato de 3mmol/L, refletindo hipoperfusão tecidual pelo choque hipovolêmico). Porém, o cloro também está elevado (110mEq/L, hiperclorêmico), sinalizando um segundo componente de acidose metabólica de ânion gap NORMAL (hiperclorêmica), consistente com a perda direta de bicarbonato pela diarreia volumosa. Aplicando a fórmula de Winter: PaCO2 esperado = 1,5 × 5 + 8 = 15,5 (±2), entre 13,5 e 17,5 — o PaCO2 real (16mmHg) está dentro da faixa esperada, confirmando que não há componente respiratório adicional, apenas os dois componentes metabólicos combinados (ânion gap aumentado por lactato + ânion gap normal por perda intestinal de bicarbonato)."
+  },
+  {
+    "id": "q367",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "banca": "HIAE-SP",
+    "ano": 2022,
+    "revisado": true,
+    "fonte": "Questão real de concurso/exame de residência médica, reescrita em palavras 100% originais a partir do caso clínico e gabarito públicos; não reproduz o texto literal da prova original.",
+    "enunciado": "Mulher de 46 anos, tabagista, com asma grave mal controlada, é admitida na UTI com febre, secreção respiratória purulenta e piora da dispneia/sibilância, evoluindo com torpor e cianose de extremidades. Gasometria arterial coletada durante preparo para intubação: pH 7,16; PaO2 50mmHg; PaCO2 72mmHg; bicarbonato 32mEq/L. O diagnóstico gasométrico dessa paciente é:",
+    "alternativas": [
+      "Hipoxemia, hipoventilação e acidemia.",
+      "Hipoxemia, hipoventilação aguda e alcalose metabólica compensada.",
+      "Normoxemia, hipoventilação compensatória e alcalose metabólica.",
+      "Hipoxemia, alcalose metabólica compensada e hiperventilação."
+    ],
+    "correta": 0,
+    "comentario": "A gasometria mostra os três achados centrais de forma direta: hipoxemia (PaO2 50mmHg, bem abaixo do normal >80mmHg), hipoventilação (PaCO2 72mmHg, elevado, refletindo insuficiência respiratória por exacerbação asmática grave levando à fadiga da musculatura respiratória) e acidemia (pH 7,16, bem abaixo de 7,35). O bicarbonato elevado (32mEq/L) representa a resposta compensatória renal a uma retenção crônica/subaguda de CO2 (já presente antes da descompensação aguda, dado o grau de elevação), mas isso não torna o quadro uma \"alcalose metabólica\" — o distúrbio ácido-básico primário permanece sendo a acidose respiratória (por hipoventilação), com o pH final ainda em faixa de acidemia, indicando compensação insuficiente diante da gravidade aguda da retenção de CO2."
+  },
+  {
+    "id": "q368",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "banca": "HSL-SP",
+    "ano": 2022,
+    "revisado": true,
+    "fonte": "Questão real de concurso/exame de residência médica, reescrita em palavras 100% originais a partir do caso clínico e gabarito públicos; não reproduz o texto literal da prova original.",
+    "enunciado": "Mulher de 27 anos é levada ao pronto-socorro durante crise aguda de síndrome do pânico, com tremores, formigamento e sudorese, sem doença respiratória ou metabólica de base. Dentre as gasometrias abaixo, a mais compatível com esse quadro (hiperventilação psicogênica aguda) é:",
+    "alternativas": [
+      "pH 7,25; bicarbonato 26mEq/L; PaCO2 60mmHg.",
+      "pH 7,31; bicarbonato 36mEq/L; PaCO2 70mmHg.",
+      "pH 7,60; bicarbonato 23mEq/L; PaCO2 25mmHg.",
+      "pH 7,55; bicarbonato 33mEq/L; PaCO2 40mmHg.",
+      "pH 7,20; bicarbonato 8,0mEq/L; PaCO2 20mmHg."
+    ],
+    "correta": 2,
+    "comentario": "A crise de pânico causa hiperventilação psicogênica aguda, eliminando CO2 em excesso e gerando alcalose RESPIRATÓRIA aguda: pH elevado (alcalemia) e PaCO2 baixo (hipocapnia), com bicarbonato ainda próximo do valor normal, já que a compensação renal (redução do bicarbonato) leva horas a dias para se estabelecer — não haveria tempo, em um quadro agudo de poucas horas, para uma queda significativa do bicarbonato. A alternativa com pH 7,60 (alcalemia franca), PaCO2 25mmHg (hipocapnia por hiperventilação) e bicarbonato 23mEq/L (praticamente normal, sem compensação metabólica ainda instalada) é exatamente esse padrão de alcalose respiratória aguda não compensada. As demais alternativas mostram acidemia com PaCO2 elevado (acidose respiratória) ou combinações fisiologicamente incompatíveis com o quadro agudo descrito."
+  },
+  {
+    "id": "q369",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Caso didático de interpretação gasométrica — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Homem de 57 anos, hipertenso e diabético, dá entrada na emergência com febre, celulite em perna esquerda e linfadenite inguinal ipsilateral, hipotenso (PA 100x50mmHg) e desidratado. Gasometria arterial: pH 7,22; bicarbonato 12mEq/L; PaCO2 34mmHg; sódio 140mEq/L; cloro 101mEq/L. Em relação à interpretação gasométrica completa desse caso, é correto afirmar que:",
+    "alternativas": [
+      "Trata-se de acidose metabólica simples com ânion gap aumentado e compensação respiratória adequada.",
+      "Trata-se de um distúrbio misto: acidose metabólica com ânion gap aumentado, porém com resposta compensatória respiratória INADEQUADA (PaCO2 mais alto que o esperado), sugerindo componente respiratório associado (por exemplo, fadiga respiratória incipiente pela sepse).",
+      "Trata-se de alcalose metabólica com compensação respiratória adequada.",
+      "Trata-se de acidose respiratória isolada, sem componente metabólico."
+    ],
+    "correta": 1,
+    "comentario": "O ânion gap é [Na - (Cl + HCO3)] = 140 - (101 + 12) = 27, bastante elevado, compatível com acidose lática por sepse (celulite com linfadenite, hipotensão, taquicardia relativa — quadro de sepse com choque séptico incipiente). Calculando a compensação esperada pela fórmula de Winter: PaCO2 esperado = 1,5 × 12 + 8 = 26 (±2), ou seja, entre 24 e 28mmHg. O PaCO2 real (34mmHg) está ACIMA do limite superior esperado, indicando que a compensação respiratória está INADEQUADA para o grau de acidose metabólica presente — um achado que aponta para um distúrbio misto, com um componente de acidose respiratória associado (por exemplo, fadiga da musculatura respiratória ou depressão do drive respiratório pela gravidade do quadro séptico), e não apenas a acidose metabólica isolada. O tratamento deve ser direcionado à causa de base: reposição volêmica e antibioticoterapia para a sepse de foco cutâneo, com suporte respiratório conforme necessário."
+  },
+  {
+    "id": "q370",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease — questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Paciente com doença renal crônica estágio G4, em acompanhamento ambulatorial, apresenta bicarbonato sérico persistente de 19mEq/L em exames seriados, sem outras alterações eletrolíticas relevantes e sem sintomas atribuíveis à acidose. Segundo a diretriz KDIGO 2024, a conduta mais adequada em relação à suplementação de bicarbonato de sódio é:",
+    "alternativas": [
+      "Iniciar suplementação de bicarbonato de sódio imediatamente, já que qualquer bicarbonato sérico abaixo de 22mEq/L indica tratamento, conforme a diretriz de 2012.",
+      "Não há indicação formal de suplementação apenas por esse valor, já que a diretriz atual (2024) só sugere considerar tratamento quando o bicarbonato sérico está abaixo de 18mEq/L — o paciente deve ser monitorado, sem necessidade de intervenção imediata baseada apenas nesse valor.",
+      "A suplementação de bicarbonato deve ser sempre iniciada em dose máxima, independentemente do valor sérico, em todo paciente com DRC estágio G4 ou mais avançado.",
+      "A diretriz KDIGO 2024 aboliu completamente qualquer menção ao bicarbonato sérico como parâmetro relevante na DRC."
+    ],
+    "correta": 1,
+    "comentario": "A diretriz KDIGO 2024 reduziu o limiar para considerar a suplementação oral de bicarbonato na acidose metabólica crônica da DRC: de bicarbonato sérico <22mEq/L (critério da diretriz de 2012) para <18mEq/L, após estudos mais recentes não confirmarem claramente o benefício esperado da suplementação em níveis intermediários (entre 18 e 22mEq/L). Além disso, essa passou a ser uma recomendação de menor força (\"ponto de prática\", e não mais uma recomendação graduada forte). Um bicarbonato de 19mEq/L, portanto, está acima do novo limiar de 18mEq/L, não configurando indicação formal de suplementação imediata pela diretriz atual — o paciente deve ser monitorado clinicamente e laboratorialmente ao longo do tempo."
   }
 ]

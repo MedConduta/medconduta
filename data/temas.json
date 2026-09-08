@@ -7664,8 +7664,9 @@
     "categoria": "Nefrologia",
     "titulo": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
     "resumo": "Abordagem sistemática da gasometria, cálculo do ânion gap e principais causas de acidose/alcalose metabólica e respiratória.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Nefrologia; Sociedade Brasileira de Terapia Intensiva — Diretrizes de Interpretação Gasométrica",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Nefrologia; Sociedade Brasileira de Terapia Intensiva — Diretrizes de Interpretação Gasométrica; KDIGO 2024 CKD Guideline (acidose metabólica na DRC)",
+    "comoCai": "No SES-PE, a sequência sistemática de interpretação gasométrica (pH → distúrbio primário → ânion gap → compensação esperada) é cobrança certa, geralmente em casos clínicos com valores de gasometria para interpretar. No ENAMED, o foco recai sobre o reconhecimento do distúrbio predominante e sua causa clínica mais provável (cetoacidose, diarreia, vômitos, hiperventilação), com menor cobrança de fórmulas de compensação esperada ou do limiar atualizado de reposição de bicarbonato na DRC.",
     "mnemonicos": [
       {
         "palavra": "MUDPILES",
@@ -7691,7 +7692,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O tratamento é sempre dirigido à causa de base do distúrbio, e não ao valor gasométrico isolado: hidratação e insulina na cetoacidose, correção da causa de hipoventilação na acidose respiratória, reposição de cloro/potássio na alcalose metabólica hipoclorêmica por vômitos. Bicarbonato de sódio exógeno tem uso restrito e controverso, reservado a acidoses metabólicas muito graves (pH <7,1-7,2) ou situações específicas (hipercalemia grave, intoxicação por certos fármacos), sem benefício comprovado em uso rotineiro para acidoses leves a moderadas."
+        "conteudo": "O tratamento é sempre dirigido à causa de base do distúrbio, e não ao valor gasométrico isolado: hidratação e insulina na cetoacidose, correção da causa de hipoventilação na acidose respiratória, reposição de cloro/potássio na alcalose metabólica hipoclorêmica por vômitos. Bicarbonato de sódio exógeno tem uso restrito e controverso, reservado a acidoses metabólicas muito graves (pH <7,1-7,2) ou situações específicas (hipercalemia grave, intoxicação por certos fármacos), sem benefício comprovado em uso rotineiro para acidoses leves a moderadas. Na acidose metabólica crônica associada à doença renal crônica, a diretriz KDIGO 2024 reduziu o limiar para considerar suplementação oral de bicarbonato: de bicarbonato sérico <22mEq/L (critério da diretriz de 2012) para <18mEq/L, após estudos mais recentes não confirmarem o benefício esperado da suplementação em níveis intermediários — a recomendação também deixou de ser uma recomendação graduada forte, passando a um \"ponto de prática\" (categoria de evidência mais fraca), sugerindo apenas manter o bicarbonato sérico acima de 18mEq/L, sem uma meta superior específica definida, e com monitorização para evitar hiperbicarbonatemia, piora do controle pressórico, hipopotassemia ou sobrecarga volêmica associadas à suplementação."
       },
       {
         "titulo": "Sinais de alerta",
@@ -7699,7 +7700,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A sequência sistemática de interpretação gasométrica (pH → distúrbio primário → ânion gap → compensação esperada) é a habilidade mais cobrada do tema, geralmente através de casos clínicos com valores de gasometria para interpretar. O cálculo do ânion gap e sua interpretação (elevado vs. normal) na acidose metabólica é praticamente garantido em qualquer prova que aborde o assunto."
+        "conteudo": "A sequência sistemática de interpretação gasométrica (pH → distúrbio primário → ânion gap → compensação esperada) é a habilidade mais cobrada do tema, geralmente através de casos clínicos com valores de gasometria para interpretar. O cálculo do ânion gap e sua interpretação (elevado vs. normal) na acidose metabólica é praticamente garantido em qualquer prova que aborde o assunto. A atualização mais provável de aparecer em prova é o novo limiar de suplementação de bicarbonato na acidose metabólica da DRC (KDIGO 2024): <18mEq/L, e não mais <22mEq/L como na diretriz de 2012."
       }
     ]
   },
