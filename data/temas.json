@@ -3786,8 +3786,9 @@
     "categoria": "Nefrologia",
     "titulo": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
     "resumo": "Avaliação por volemia e osmolalidade na hiponatremia, causas de hipernatremia e a regra da correção lenta em ambos os distúrbios.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Nefrologia; European Clinical Practice Guideline on Diagnosis and Treatment of Hyponatraemia (2014)",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Nefrologia; European Clinical Practice Guideline on Diagnosis and Treatment of Hyponatraemia (2014); \"Hyponatraemia — treatment standard 2024\" (Nephrology Dialysis Transplantation)",
+    "comoCai": "No SES-PE, a avaliação volêmica como primeiro passo diagnóstico da hiponatremia e o limite seguro de correção (8-10mEq/L/24h) são cobrança certa, assim como o reconhecimento de SIADH como diagnóstico de exclusão. No ENAMED, o foco recai sobre o reconhecimento de sintomas neurológicos graves exigindo correção rápida inicial com salina hipertônica e a armadilha de corrigir hiponatremia crônica assintomática de forma agressiva, com menor cobrança de tolvaptana/ureia ou da técnica de \"clamp\" com desmopressina.",
     "mnemonicos": [
       {
         "palavra": "Devagar e sempre",
@@ -3813,7 +3814,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "A correção da hiponatremia deve ser cautelosa e gradual (limite de 8-10mEq/L nas primeiras 24 horas) pelo risco de síndrome de desmielinização osmótica (mielinólise pontina) se corrigida rapidamente demais, especialmente em hiponatremia crônica — exceção é a hiponatremia aguda sintomática grave (convulsão, herniação iminente), que exige correção inicial rápida com salina hipertônica nas primeiras horas, seguida de desaceleração. Hipernatremia é corrigida com reposição de água livre (oral ou solução hipotônica endovenosa), também de forma gradual, para evitar edema cerebral por correção excessivamente rápida."
+        "conteudo": "A correção da hiponatremia deve ser cautelosa e gradual (limite de 8-10mEq/L nas primeiras 24 horas) pelo risco de síndrome de desmielinização osmótica (mielinólise pontina) se corrigida rapidamente demais, especialmente em hiponatremia crônica — exceção é a hiponatremia aguda sintomática grave (convulsão, herniação iminente), que exige correção inicial rápida com um ou mais bolus de salina hipertônica a 3% já na primeira hora, com nova dosagem de sódio em intervalos curtos, seguida de desaceleração assim que os sintomas melhorarem ou a meta de correção inicial for atingida. Uma estratégia cada vez mais utilizada para prevenir (ou reverter) a supercorreção iatrogênica é o \"clamp\" com desmopressina (DDAVP): administra-se desmopressina de forma proativa (junto à salina hipertônica, em pacientes de alto risco de aquarese excessiva) ou reativa (assim que se detecta uma correção mais rápida que a pretendida), bloqueando a diurese aquosa e permitindo controlar a velocidade de subida do sódio de forma mais previsível — se a correção já ultrapassou o limite seguro, associa-se reposição de água livre (D5W) para trazer o sódio de volta a uma trajetória segura (\"relowering\"). Na SIADH especificamente, quando a restrição hídrica isolada (habitualmente o tratamento de primeira linha) é insuficiente — o que ocorre em quase metade dos casos —, ureia oral e tolvaptana (antagonista do receptor de vasopressina V2) são consideradas as opções de segunda linha mais eficazes, sendo a ureia uma alternativa mais barata e amplamente disponível. Hipernatremia é corrigida com reposição de água livre (oral ou solução hipotônica endovenosa), também de forma gradual, para evitar edema cerebral por correção excessivamente rápida."
       },
       {
         "titulo": "Sinais de alerta",
@@ -3821,7 +3822,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A avaliação do estado volêmico como primeiro passo diagnóstico da hiponatremia, e o limite seguro de correção (8-10mEq/L/24h) para evitar mielinólise pontina, são cobrança certíssima e recorrente. É importante lembrar que hiponatremia crônica assintomática não deve ser corrigida rapidamente mesmo que o valor absoluto pareça grave — armadilha comum quando a banca oferece um valor numérico muito baixo tentando induzir correção agressiva."
+        "conteudo": "A avaliação do estado volêmico como primeiro passo diagnóstico da hiponatremia, e o limite seguro de correção (8-10mEq/L/24h) para evitar mielinólise pontina, são cobrança certíssima e recorrente. É importante lembrar que hiponatremia crônica assintomática não deve ser corrigida rapidamente mesmo que o valor absoluto pareça grave — armadilha comum quando a banca oferece um valor numérico muito baixo tentando induzir correção agressiva. A atualização mais provável de aparecer em prova é a técnica do \"clamp\" com desmopressina para prevenir/reverter supercorreção iatrogênica durante o tratamento da hiponatremia sintomática grave, e a ureia/tolvaptana como opções de segunda linha na SIADH refratária à restrição hídrica isolada."
       }
     ]
   },
