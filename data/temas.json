@@ -1201,8 +1201,9 @@
     "categoria": "Gastroenterologia",
     "titulo": "Pancreatite Aguda",
     "resumo": "Critérios diagnósticos (2 de 3), causas mais comuns e avaliação de gravidade.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Pancreatologia; Classificação de Atlanta revisada (2012); ACG Clinical Guideline: Management of Acute Pancreatitis",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Pancreatologia; Classificação de Atlanta revisada (2012); ACG Clinical Guideline: Management of Acute Pancreatitis; estudo WATERFALL (hidratação moderada vs. agressiva, NEJM 2022)",
+    "comoCai": "No SES-PE, os critérios diagnósticos (2 de 3) e a colecistectomia na mesma internação para pancreatite biliar leve são cobrança certa. No ENAMED, o foco recai sobre o reconhecimento clínico (dor em faixa, náuseas/vômitos) e a solicitação de lipase/amilase na atenção primária/emergência, com menor cobrança dos detalhes de hidratação (WATERFALL) ou dos escores de gravidade.",
     "mnemonicos": [
       {
         "palavra": "2 DE 3",
@@ -1228,7 +1229,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Hidratação venosa vigorosa nas primeiras 24 horas é a intervenção mais importante e com maior impacto em desfechos, junto a analgesia adequada e reintrodução precoce de dieta oral assim que tolerada (não há benefício em jejum prolongado \"para poupar o pâncreas\", ao contrário da prática antiga). Antibiótico profilático não é indicado rotineiramente, mesmo em necrose estéril, sendo reservado a infecção documentada ou fortemente suspeita. Colecistectomia (na etiologia biliar) deve ser realizada ainda durante a mesma internação em casos leves, para prevenir recorrência — postergá-la aumenta significativamente o risco de novo episódio antes do procedimento eletivo."
+        "conteudo": "A hidratação venosa adequada nas primeiras 24 horas continua sendo uma das intervenções mais importantes, mas o paradigma de reposição \"agressiva\" foi revisado: o estudo WATERFALL (NEJM 2022) comparou hidratação agressiva (bolus de ringer lactato 20mL/kg em 2h, seguido de 3mL/kg/h) com hidratação moderada/guiada por volemia (bolus de 10mL/kg apenas se hipovolemia, sem bolus se normovolêmico, seguido de 1,5mL/kg/h), demonstrando que a hidratação agressiva NÃO reduziu a progressão para pancreatite moderadamente grave/grave e associou-se a maior incidência de sobrecarga volêmica, com tendência a pior evolução (mais insuficiência respiratória, mais necrose pancreática) — a hidratação moderada, guiada pelo estado volêmico do paciente, passou a ser a estratégia preferida. Analgesia adequada e reintrodução precoce de dieta oral assim que tolerada continuam recomendadas (não há benefício em jejum prolongado \"para poupar o pâncreas\", ao contrário da prática antiga). Antibiótico profilático não é indicado rotineiramente, mesmo em necrose estéril, sendo reservado a infecção documentada ou fortemente suspeita. Colecistectomia (na etiologia biliar) deve ser realizada ainda durante a mesma internação em casos leves, para prevenir recorrência — postergá-la aumenta significativamente o risco de novo episódio antes do procedimento eletivo."
       },
       {
         "titulo": "Sinais de alerta",
@@ -1236,7 +1237,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "Os critérios diagnósticos (2 de 3: clínica, enzimas 3x, imagem) e a preferência pela lipase sobre a amilase são cobrança certa. A colecistectomia na mesma internação para pancreatite biliar leve (e não meses depois, como se pensava antigamente) é um ponto de atualização de diretriz muito valorizado em provas recentes, assim como a reintrodução precoce de dieta oral em vez de jejum prolongado."
+        "conteudo": "Os critérios diagnósticos (2 de 3: clínica, enzimas 3x, imagem) e a preferência pela lipase sobre a amilase são cobrança certa. A colecistectomia na mesma internação para pancreatite biliar leve (e não meses depois, como se pensava antigamente) é um ponto de atualização de diretriz muito valorizado em provas recentes, assim como a reintrodução precoce de dieta oral em vez de jejum prolongado. Fique atento à atualização mais recente (estudo WATERFALL): a antiga recomendação de hidratação venosa \"agressiva\"/\"vigorosa\" a todo paciente foi substituída pela hidratação moderada guiada pelo estado volêmico — hidratar agressivamente todo paciente, sem avaliar a volemia, é hoje considerado conduta ultrapassada e potencialmente prejudicial (sobrecarga volêmica)."
       }
     ]
   },
