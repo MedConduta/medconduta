@@ -4436,8 +4436,8 @@
     "categoria": "Neurologia",
     "titulo": "Síndromes Demenciais: Alzheimer e Diferenciais",
     "resumo": "Diferenciação entre demência e delirium, e entre os principais subtipos de demência (Alzheimer, vascular, corpos de Lewy, frontotemporal).",
-    "revisado": false,
-    "fonte": "Academia Brasileira de Neurologia — Diretrizes de Demência; NIA-AA Criteria for Alzheimer's Disease",
+    "revisado": true,
+    "fonte": "Academia Brasileira de Neurologia — Diretrizes de Demência; NIA-AA Criteria for Alzheimer's Disease; Alzheimer's Association Clinical Practice Guideline on Blood-Based Biomarkers 2025; FDA — Lecanemab (2023) e Donanemab (2024), aprovação para doença de Alzheimer em fase inicial",
     "mnemonicos": [
       {
         "palavra": "Demência é crônica, Delirium é agudo",
@@ -4459,11 +4459,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é predominantemente clínico, baseado em história de declínio cognitivo progressivo que interfere na funcionalidade, com exclusão de causas reversíveis (hipotireoidismo, deficiência de B12, neurossífilis, hidrocefalia de pressão normal, depressão — a chamada \"pseudodemência\"), investigadas por exames laboratoriais de rotina e neuroimagem estrutural na avaliação inicial de todo paciente com quadro demencial. Biomarcadores de líquor ou PET amiloide são reservados a casos de dúvida diagnóstica ou pesquisa, não sendo exames de rotina na prática clínica geral."
+        "conteudo": "O diagnóstico é predominantemente clínico, baseado em história de declínio cognitivo progressivo que interfere na funcionalidade, com exclusão de causas reversíveis (hipotireoidismo, deficiência de B12, neurossífilis, hidrocefalia de pressão normal, depressão — a chamada \"pseudodemência\"), investigadas por exames laboratoriais de rotina e neuroimagem estrutural na avaliação inicial de todo paciente com quadro demencial. Biomarcadores de líquor ou PET amiloide são reservados a casos de dúvida diagnóstica ou pesquisa, não sendo exames de rotina na prática clínica geral. Uma novidade relevante é a validação de biomarcadores SANGUÍNEOS (plasma p-tau217, isoladamente ou em razão com beta-amiloide) como ferramenta de triagem diagnóstica em centros especializados — segundo diretriz da Alzheimer's Association de 2025, esses testes têm acurácia diagnóstica elevada para identificar patologia amiloide subjacente, podendo reduzir a necessidade de punção lombar (biomarcadores liquóricos) ou PET amiloide (exames mais invasivos/caros) na investigação de pacientes com quadro clínico sugestivo de Alzheimer, embora ainda não substituam completamente esses métodos confirmatórios em todos os cenários."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Não há tratamento curativo para as demências neurodegenerativas primárias. Inibidores da colinesterase (donepezila, rivastigmina) e memantina (antagonista NMDA, usada em fases mais avançadas) oferecem benefício sintomático modesto na doença de Alzheimer, sem modificar o curso da doença. O controle rigoroso de fatores de risco cardiovascular é fundamental na demência vascular para prevenir progressão por novos eventos. Antipsicóticos devem ser evitados na demência de corpos de Lewy (risco de reação de hipersensibilidade grave), preferindo-se, quando necessário, agentes com menor efeito extrapiramidal em dose mínima eficaz."
+        "conteudo": "Os inibidores da colinesterase (donepezila, rivastigmina) e a memantina (antagonista NMDA, usada em fases mais avançadas) seguem oferecendo apenas benefício SINTOMÁTICO modesto na doença de Alzheimer, sem modificar o curso da doença. A novidade terapêutica mais relevante da última atualização é a aprovação dos ANTICORPOS MONOCLONAIS ANTI-AMILOIDE — lecanemabe (aprovação definitiva pelo FDA em 2023) e donanemabe (aprovado em 2024) —, primeiros fármacos a demonstrar redução (não apenas benefício sintomático) na velocidade de declínio cognitivo (cerca de 27-35% em 18 meses) em pacientes com Alzheimer em fase INICIAL (comprometimento cognitivo leve ou demência leve, com patologia amiloide confirmada por biomarcador). Seu uso exige monitorização rigorosa por ressonância magnética seriada pelo risco de ARIA (Amyloid-Related Imaging Abnormalities) — edema/efusão (ARIA-E) ou microhemorragias/hemossiderose (ARIA-H) —, evento adverso potencialmente grave cujo risco é maior em portadores do genótipo APOE ε4 (especialmente homozigotos), exigindo genotipagem prévia para estratificação de risco. O controle rigoroso de fatores de risco cardiovascular é fundamental na demência vascular para prevenir progressão por novos eventos. Antipsicóticos devem ser evitados na demência de corpos de Lewy (risco de reação de hipersensibilidade grave), preferindo-se, quando necessário, agentes com menor efeito extrapiramidal em dose mínima eficaz."
       },
       {
         "titulo": "Sinais de alerta",
@@ -4471,9 +4471,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A exclusão obrigatória de causas reversíveis de demência (hipotireoidismo, deficiência de B12, hidrocefalia de pressão normal) antes de firmar diagnóstico de demência neurodegenerativa primária é cobrança certa. A tríade da demência de corpos de Lewy (flutuação cognitiva, alucinações visuais, parkinsonismo) e a contraindicação a antipsicóticos típicos nessa condição específica também são pontos frequentemente exigidos."
+        "conteudo": "A exclusão obrigatória de causas reversíveis de demência (hipotireoidismo, deficiência de B12, hidrocefalia de pressão normal) antes de firmar diagnóstico de demência neurodegenerativa primária é cobrança certa. A tríade da demência de corpos de Lewy (flutuação cognitiva, alucinações visuais, parkinsonismo) e a contraindicação a antipsicóticos típicos nessa condição específica também são pontos frequentemente exigidos. Provas mais recentes cobram os anticorpos anti-amiloide (lecanemabe, donanemabe) como marco terapêutico para Alzheimer inicial e o conceito de ARIA como principal risco associado ao seu uso, exigindo RM seriada e atenção especial em portadores de APOE ε4 — tema com tendência crescente de cobrança dada sua relevância recente na prática clínica."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a diferenciação entre demência e delirium, a exclusão obrigatória de causas reversíveis de demência (hipotireoidismo, deficiência de B12, hidrocefalia de pressão normal) e o reconhecimento da tríade da demência de corpos de Lewy (flutuação cognitiva, alucinações visuais, parkinsonismo) com a contraindicação a antipsicóticos típicos são cobrança praticamente garantida. Provas mais atualizadas já cobram os anticorpos monoclonais anti-amiloide (lecanemabe, donanemabe) como nova classe terapêutica para Alzheimer em fase inicial, o risco de ARIA (anormalidades de imagem relacionadas ao amiloide) exigindo monitorização por ressonância magnética seriada, e os biomarcadores sanguíneos (plasma p-tau217) como nova ferramenta diagnóstica que vem reduzindo a necessidade de líquor e PET amiloide."
   },
   {
     "id": "doencas-desmielinizantes",
