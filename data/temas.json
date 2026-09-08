@@ -4082,8 +4082,8 @@
     "categoria": "Reumatologia",
     "titulo": "Artrite Reumatoide",
     "resumo": "Poliartrite simétrica de pequenas articulações, critérios diagnósticos ACR/EULAR e estratégia treat-to-target.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Reumatologia — Diretriz de Artrite Reumatoide; Critérios ACR/EULAR 2010",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Reumatologia — Diretriz de Artrite Reumatoide; Critérios ACR/EULAR 2010; EULAR recommendations for the management of RA (2022 update, Ann Rheum Dis 2023; 2025 update, Ann Rheum Dis 2026); ORAL Surveillance trial (NEJM 2022); FDA/EMA boxed warning para inibidores de JAK",
     "mnemonicos": [
       {
         "palavra": "Simétrica e Matinal",
@@ -4109,7 +4109,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Metotrexato é o medicamento modificador de doença de primeira linha (âncora terapêutica) na maioria dos pacientes, devendo ser iniciado precocemente após o diagnóstico — o conceito de \"janela de oportunidade\" enfatiza que o tratamento precoce e intensivo reduz significativamente o dano articular estrutural a longo prazo. Terapias biológicas (anti-TNF e outras classes) são acrescentadas em caso de resposta inadequada ao metotrexato isolado. Corticoide em baixa dose pode ser usado como ponte até o efeito pleno dos medicamentos modificadores, que geralmente leva semanas a poucos meses."
+        "conteudo": "Metotrexato é o medicamento modificador de doença de primeira linha (âncora terapêutica) na maioria dos pacientes, devendo ser iniciado precocemente após o diagnóstico — o conceito de \"janela de oportunidade\" enfatiza que o tratamento precoce e intensivo reduz significativamente o dano articular estrutural a longo prazo. Terapias biológicas (anti-TNF e outras classes) são acrescentadas em caso de resposta inadequada ao metotrexato isolado. Corticoide em baixa dose pode ser usado como ponte até o efeito pleno dos medicamentos modificadores, que geralmente leva semanas a poucos meses. O estudo ORAL Surveillance (2022) evidenciou maior risco de eventos cardiovasculares maiores (MACE), neoplasia e tromboembolismo venoso com inibidor de JAK (tofacitinibe) em comparação a anti-TNF, em pacientes com pelo menos um fator de risco cardiovascular. Isso levou a alerta de tarja preta de classe pela FDA (2021, estendido a tofacitinibe, baricitinibe e upadacitinibe) e a revisão regulatória pela EMA/PRAC (2023), restringindo o uso preferencial dos inibidores de JAK a pacientes sem alternativa adequada, especialmente naqueles com idade ≥65 anos, tabagismo ou risco cardiovascular/neoplásico elevado. Em resposta, a atualização EULAR 2022 (reafirmada na atualização 2025) passou a recomendar DMARDs biológicos preferencialmente a inibidores de JAK nesse subgrupo de maior risco após falha ao metotrexato, reservando os JAKi como alternativa apenas após consideração cuidadosa dos riscos individuais."
       },
       {
         "titulo": "Sinais de alerta",
@@ -4117,9 +4117,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A poupança das interfalangeanas distais (diferente da osteoartrite) e a rigidez matinal prolongada (>1h) são cobranças certas e frequentes elementos de diferenciação em questões de caso clínico. O metotrexato como âncora terapêutica de primeira linha e o conceito de janela de oportunidade para tratamento precoce também são pontos centrais e recorrentes."
+        "conteudo": "A poupança das interfalangeanas distais (diferente da osteoartrite) e a rigidez matinal prolongada (>1h) são cobranças certas e frequentes elementos de diferenciação em questões de caso clínico. O metotrexato como âncora terapêutica de primeira linha e o conceito de janela de oportunidade para tratamento precoce também são pontos centrais e recorrentes. Um ponto de atualização crescentemente cobrado é a mudança de perfil de segurança dos inibidores de JAK após o estudo ORAL Surveillance: em pacientes com fatores de risco cardiovascular ou neoplasia prévia, os DMARDs biológicos (especialmente anti-TNF) passaram a ser preferidos aos inibidores de JAK após falha ao metotrexato, refletindo o alerta regulatório de classe da FDA e da EMA."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a artrite reumatoide costuma ser cobrada por meio de vinhetas de poliartrite simétrica de pequenas articulações das mãos (poupando interfalangeanas distais) com rigidez matinal prolongada (>1h), exigindo reconhecimento do fator reumatoide e, sobretudo, do anti-CCP como marcador mais específico. É recorrente a cobrança do metotrexato como droga âncora de primeira linha, do conceito de janela de oportunidade terapêutica e da escalada para biológicos (geralmente anti-TNF) após falha ao metotrexato em dose otimizada. Manifestações extra-articulares (nódulos reumatoides, síndrome de Felty, derrame pleural com glicose baixa, doença pulmonar intersticial, ceratoconjuntivite sicca) também aparecem com frequência, assim como, mais recentemente, questões sobre o perfil de segurança cardiovascular/oncológico dos inibidores de JAK após o estudo ORAL Surveillance, reposicionando-os como opção de segunda linha em pacientes de maior risco."
   },
   {
     "id": "espondiloartrites",
