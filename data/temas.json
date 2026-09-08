@@ -4582,8 +4582,8 @@
     "categoria": "Hematologia",
     "titulo": "Distúrbios da Coagulação: Hemofilias, Doença de von Willebrand e CIVD",
     "resumo": "Interpretação de TP/TTPa e reconhecimento das principais coagulopatias hereditárias e adquiridas.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; ISTH Guidelines for Diagnosis of DIC",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; ISTH Guidelines for Diagnosis of DIC; Anvisa — aprovação da primeira terapia gênica para hemofilia A no Brasil (março 2024); Portaria Conjunta SAES/SECTICS nº 12/2024 — Protocolo de Uso de Emicizumabe; ASH/ISTH/NHF/WFH 2021 — diretrizes de diagnóstico da doença de von Willebrand; ISTH 2025 — nova nomenclatura e escore diagnóstico de CIVD",
     "mnemonicos": [
       {
         "palavra": "TTPa Intrínseco, TP Extrínseco",
@@ -4605,11 +4605,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Hemofilias apresentam TTPa (tempo de tromboplastina parcial ativada) prolongado com TP (tempo de protrombina) normal, confirmadas por dosagem específica do fator deficiente. Doença de von Willebrand tem perfil laboratorial mais variável, exigindo dosagem específica do antígeno e da atividade funcional do fator de von Willebrand. CIVD é diagnosticada por escore combinando plaquetopenia, prolongamento de TP/TTPa, D-dímero muito elevado e fibrinogênio reduzido, sempre no contexto clínico de uma doença desencadeante identificável."
+        "conteudo": "Hemofilias apresentam TTPa (tempo de tromboplastina parcial ativada) prolongado com TP (tempo de protrombina) normal, confirmadas por dosagem específica do fator deficiente. Doença de von Willebrand tem perfil laboratorial mais variável, exigindo dosagem específica do antígeno e da atividade funcional do fator de von Willebrand. CIVD é diagnosticada por escore combinando plaquetopenia, prolongamento de TP/TTPa, D-dímero muito elevado e fibrinogênio reduzido, sempre no contexto clínico de uma doença desencadeante identificável. As diretrizes ASH/ISTH/NHF/WFH (2021) recomendam o uso de ensaios mais recentes de atividade de ligação plaquetária do FvW (VWF:GPIbM, VWF:GPIbR) em vez do tradicional VWF:RCo, por maior precisão; a ferramenta padronizada ISTH-BAT (Bleeding Assessment Tool) auxilia na avaliação objetiva da história hemorrágica. A ISTH publicou, em 2025, novo consenso sobre CIVD, propondo nomenclatura escalonada — pré-CIVD (fatores de risco com alterações laboratoriais sutis), CIVD inicial (alterações laboratoriais sem manifestação clínica) e CIVD manifesta (alterações laboratoriais e clínicas) — e atualização do escore diagnóstico."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Hemofilias são tratadas com reposição do fator deficiente (concentrado de fator VIII ou IX, ou terapias mais recentes como emicizumabe para hemofilia A) diante de sangramento ou profilaticamente em casos graves. Doença de von Willebrand é tratada com desmopressina (DDAVP, que libera estoques endógenos do fator, eficaz nos tipos leves) ou concentrado de fator von Willebrand nos casos mais graves/refratários. CIVD é tratada primariamente pelo controle da doença de base desencadeante, com suporte transfusional (plasma fresco, crioprecipitado, plaquetas) guiado pela gravidade do sangramento clínico, não apenas pelos valores laboratoriais isolados."
+        "conteudo": "Hemofilias são tratadas com reposição do fator deficiente (concentrado de fator VIII ou IX, ou terapias mais recentes como emicizumabe para hemofilia A) diante de sangramento ou profilaticamente em casos graves. Doença de von Willebrand é tratada com desmopressina (DDAVP, que libera estoques endógenos do fator, eficaz nos tipos leves) ou concentrado de fator von Willebrand nos casos mais graves/refratários. CIVD é tratada primariamente pelo controle da doença de base desencadeante, com suporte transfusional (plasma fresco, crioprecipitado, plaquetas) guiado pela gravidade do sangramento clínico, não apenas pelos valores laboratoriais isolados. O emicizumabe (anticorpo biespecífico que mimetiza a função do fator VIII, ligando os fatores IXa e X) foi incorporado ao SUS desde 2019 para hemofilia A com inibidor do fator VIII, com protocolo de uso ampliado em 2024 (Portaria Conjunta SAES/SECTICS nº 12) para hemofilia A moderada/grave com inibidor, e mais recentemente para crianças com hemofilia A grave sem inibidor — sua administração subcutânea (em vez de infusões intravenosas frequentes de fator VIII) representa avanço relevante na qualidade de vida dos pacientes. Em março de 2024, a Anvisa aprovou a primeira terapia gênica para hemofilia A no Brasil (para pacientes adultos com forma grave), com potencial de reduzir ou eliminar a necessidade de reposição regular de fator; o fitusiran (terapia não-substitutiva, por siRNA direcionado à antitrombina) está em desenvolvimento como opção adicional."
       },
       {
         "titulo": "Sinais de alerta",
@@ -4619,7 +4619,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O padrão de TTPa prolongado com TP normal nas hemofilias é cobrança certa e recorrente. O reconhecimento de CIVD como processo simultâneo de trombose e sangramento (não apenas sangramento isolado), sempre secundário a uma doença de base, e a distinção do padrão de sangramento articular/muscular (hemofilias) versus mucocutâneo (von Willebrand/plaquetário) também são pontos frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o padrão de TTPa prolongado com TP normal nas hemofilias é cobrança certa e recorrente, assim como a distinção do padrão de sangramento articular/muscular (hemofilias) versus mucocutâneo (doença de von Willebrand/distúrbios plaquetários). O reconhecimento da CIVD como processo simultâneo de trombose microvascular e sangramento — sempre secundário a uma doença de base identificável (sepse, complicação obstétrica, trauma maciço) — é tema clássico, assim como a interpretação do escore laboratorial combinando plaquetopenia, prolongamento de TP/TTPa, D-dímero elevado e fibrinogênio reduzido. Um ponto emergente é o uso crescente do emicizumabe (via subcutânea, hoje incorporado ao SUS com protocolo ampliado em 2024) como alternativa à reposição intravenosa tradicional de fator VIII, e a aprovação da primeira terapia gênica para hemofilia A no Brasil (2024)."
   },
   {
     "id": "avaliacao-geriatrica-ampla",
