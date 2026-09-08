@@ -4304,8 +4304,8 @@
         "categoria": "Infectologia",
         "titulo": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
         "resumo": "Coinfecção gonococo-clamídia, herpes genital, HPV e a lógica do tratamento sindrômico de ISTs.",
-        "revisado": false,
-        "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para IST (2022); CDC Sexually Transmitted Infections Treatment Guidelines",
+        "revisado": true,
+        "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para IST (2022); CDC Sexually Transmitted Infections Treatment Guidelines; CDC — Sexually Transmitted Infections Treatment Guidelines, 2021 (ceftriaxona 500 mg dose única); FDA — aprovação do zoliflodacina (Nuzolvence), dez/2025, para gonorreia urogenital não complicada",
         "mnemonicos": [
             {
                 "palavra": "Trate os dois",
@@ -4331,7 +4331,7 @@
             },
             {
                 "titulo": "Tratamento",
-                "conteudo": "O tratamento padrão combina ceftriaxona (gonorreia) com azitromicina ou doxiciclina (clamídia), cobrindo ambos os agentes simultaneamente pela alta taxa de coinfecção. É fundamental o tratamento de todas as parcerias sexuais dos últimos 60 dias, mesmo assintomáticas, para prevenir reinfecção e interromper a cadeia de transmissão — abstinência sexual até completar o tratamento e resolução dos sintomas em ambos os parceiros é recomendação padrão."
+                "conteudo": "O tratamento padrão combina ceftriaxona (gonorreia) com azitromicina ou doxiciclina (clamídia), cobrindo ambos os agentes simultaneamente pela alta taxa de coinfecção. É fundamental o tratamento de todas as parcerias sexuais dos últimos 60 dias, mesmo assintomáticas, para prevenir reinfecção e interromper a cadeia de transmissão — abstinência sexual até completar o tratamento e resolução dos sintomas em ambos os parceiros é recomendação padrão. A dose atual recomendada de ceftriaxona para gonorreia não complicada é de 500 mg intramuscular em dose única (1 g se peso ≥ 150 kg), atualizada pelo CDC em 2021 a partir dos 250 mg anteriormente recomendados, em resposta à crescente resistência antimicrobiana do gonococo — quando a infecção gonocócica é confirmada e a coinfecção por clamídia foi excluída, a ceftriaxona pode ser usada em MONOTERAPIA, sem necessidade de associar azitromicina rotineiramente (mudança em relação a esquemas mais antigos); já no tratamento sindrômico do corrimento uretral/cervical (sem confirmação laboratorial prévia), mantém-se a cobertura combinada para ambos os agentes. Para clamídia urogenital em pacientes não gestantes, a doxiciclina 100 mg VO de 12/12h por 7 dias é atualmente PREFERIDA à azitromicina 1 g VO em dose única, por eficácia superior demonstrada em ensaios clínicos (a azitromicina em dose única permanece a opção de escolha em gestantes, nas quais a doxiciclina é contraindicada). A resistência do gonococo à ceftriaxona, embora ainda pouco frequente, vem sendo relatada em cepas isoladas em diversos países desde 2022, motivando vigilância laboratorial ativa em casos de falha terapêutica (cultura com teste de sensibilidade, não apenas NAAT). Em dezembro de 2025, o FDA aprovou o zoliflodacina (Nuzolvence), primeiro antibiótico oral de dose única com mecanismo de ação totalmente novo (uma espiropirimidinotriona, inibidor da topoisomerase/DNA-girase bacteriana, sem resistência cruzada com as classes já usadas) para gonorreia urogenital não complicada em adultos e adolescentes ≥12 anos — com eficácia não inferior à associação ceftriaxona + azitromicina em estudo de fase 3, representando uma alternativa promissora diante da resistência emergente."
             },
             {
                 "titulo": "Sinais de alerta",
@@ -4339,9 +4339,10 @@
             },
             {
                 "titulo": "Dicas de prova",
-                "conteudo": "O tratamento empírico simultâneo para gonorreia E clamídia diante de corrimento uretral (abordagem sindrômica, sem aguardar confirmação laboratorial) é cobrança certa e um dos pilares do manejo sindrômico de IST no Brasil. A obrigatoriedade de tratar todas as parcerias sexuais recentes, independentemente de sintomas, também é ponto frequentemente exigido."
+                "conteudo": "O tratamento empírico simultâneo para gonorreia E clamídia diante de corrimento uretral (abordagem sindrômica, sem aguardar confirmação laboratorial) é cobrança certa e um dos pilares do manejo sindrômico de IST no Brasil. A obrigatoriedade de tratar todas as parcerias sexuais recentes, independentemente de sintomas, também é ponto frequentemente exigido. A distinção entre ceftriaxona em monoterapia (gonorreia confirmada, sem coinfecção) e a cobertura dupla empírica (abordagem sindrômica) é um detalhe cada vez mais cobrado, assim como a preferência atual pela doxiciclina sobre a azitromicina em dose única para clamídia em não gestantes."
             }
-        ]
+        ],
+        "comoCai": "No SES-PE e no ENAMED, a cobrança mais frequente sobre este tema é a lógica do tratamento sindrômico (cobertura empírica simultânea de gonococo e clamídia diante de corrimento uretral/cervical, sem aguardar confirmação laboratorial) e a obrigatoriedade de tratar todas as parcerias sexuais dos últimos 60 dias. Também é cobrada a dose atual de ceftriaxona (500 mg IM dose única, atualizada pelo CDC em 2021 a partir dos 250 mg anteriores, pela crescente resistência antimicrobiana do gonococo) e a preferência pela doxiciclina (100 mg VO 12/12h por 7 dias) sobre a azitromicina em dose única no tratamento da clamídia urogenital em não gestantes, por eficácia superior. Provas mais atualizadas já cobram a resistência emergente do gonococo à ceftriaxona (relatada em vários países desde 2022-2025) e a aprovação do zoliflodacina (dez/2025), primeiro antibiótico oral de dose única com mecanismo totalmente novo para gonorreia urogenital não complicada em quase duas décadas."
     },
     {
         "id": "arboviroses-zika-chikungunya-febre-amarela",

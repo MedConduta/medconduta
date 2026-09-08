@@ -15103,5 +15103,409 @@
         "ano": 2026,
         "fonte": "Questão original MedConduta, com base na bula do lenacapavir (Yeztugo, FDA 2025), nos estudos PURPOSE 1/2 e nas atualizações regulatórias da ANVISA/CONITEC (2025-2026).",
         "revisado": true
+    },
+    {
+        "id": "q826",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Mulher, 40 anos, atendida na emergência por dor pélvica há 1 dia. Refere corrimento amarelado por via vaginal há três dias. O quadro clínico apresentado pela paciente pode evoluir com as seguintes sequelas:",
+        "alternativas": [
+            "Câncer de endométrio, hidrossalpinge, infertilidade.",
+            "Dor pélvica crônica, infertilidade, obstrução tubária.",
+            "Hidrossalpinge, hiperplasia endometrial, cisto ovariano.",
+            "Obstrução tubária, dismenorreia, insuficiência ovariana precoce."
+        ],
+        "correta": 1,
+        "comentario": "O quadro (dor pélvica aguda + corrimento vaginal purulento) sugere doença inflamatória pélvica (DIP), tipicamente por ascensão de gonococo e/ou clamídia do trato genital inferior. As sequelas clássicas da DIP não tratada ou tratada tardiamente são dor pélvica crônica, infertilidade por obstrução tubária e aumento do risco de gravidez ectópica — não há associação estabelecida com câncer de endométrio, hiperplasia endometrial ou insuficiência ovariana precoce, que não fazem parte do espectro de sequelas da DIP.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q827",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Paciente de 30 anos, usuária de DIU de cobre, procura ambulatório de planejamento familiar com sinais clínicos sugestivos de infecção por clamídia, assintomática. A conduta correta a ser tomada é:",
+        "alternativas": [
+            "Não remover o DIU e usar antibiótico.",
+            "Retirar o DIU e antibioticoterapia.",
+            "Apenas observar até que se torne sintomática.",
+            "Retirar o DIU e não usar antibiótico."
+        ],
+        "correta": 0,
+        "comentario": "A infecção por clamídia (ou gonococo) em usuária de DIU NÃO exige a retirada rotineira do dispositivo — o tratamento antimicrobiano é eficaz com o DIU mantido in situ, reservando-se a remoção para os casos de DIP com abscesso tubo-ovariano ou falha terapêutica. Observar sem tratar (opção C) permite a progressão para DIP e suas sequelas reprodutivas.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q828",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Paciente de 25 anos, sexualmente ativa, refere corrimento vaginal aumentado e sangramento ao coito há cerca de um mês. Ao exame, conteúdo vaginal amarelado, sem odor, em grande quantidade; colo do útero com área de ectopia sangrante ao redor do orifício externo. Qual exame subsidiário está indicado e qual o agente etiológico em relação ao resultado?",
+        "alternativas": [
+            "Exame de secreção vaginal; se diplococos Gram-negativos intracelulares, o agente é gonococo.",
+            "Colposcopia com biópsia; se coilocitose, o agente é tricomonas.",
+            "Cultura de secreção vaginal; se hifas e esporos, o agente é candida albicans.",
+            "PCR de secreção endocervical; se cariomegalia, o agente é HPV."
+        ],
+        "correta": 0,
+        "comentario": "O quadro (corrimento purulento + sangramento ao coito + ectopia friável) é típico de cervicite gonocócica. O exame subsidiário de escolha para confirmação inicial é a bacterioscopia/Gram da secreção — a presença de diplococos Gram-negativos INTRACELULARES é achado característico e praticamente diagnóstico de infecção por Neisseria gonorrhoeae. As demais associações estão incorretas: coilocitose é achado de HPV (não de tricomoníase), hifas/esporos indicam candidíase (mas cultura de secreção vaginal não é o exame padrão para diagnóstico de cervicite purulenta) e cariomegalia isolada não é o critério citológico específico de HPV.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q829",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Adolescente de 17 anos, com dispareunia e sinusorragia recentes. Uso de anticoncepcional hormonal oral. Ao exame físico: colo uterino com hiperemia, secreção turva e friável; toque vaginal normal. Qual o provável diagnóstico e a conduta mais adequada?",
+        "alternativas": [
+            "Cervicite; colher uma citologia.",
+            "Ectopia; cauterização.",
+            "Cervicite; pesquisa de clamídia e gonococo.",
+            "Câncer de colo; biópsia.",
+            "Cervicite; colposcopia."
+        ],
+        "correta": 2,
+        "comentario": "O quadro clínico (colo hiperemiado, secreção turva e friável, sinusorragia e dispareunia) é característico de cervicite, cuja principal etiologia em mulheres jovens sexualmente ativas é a infecção por Chlamydia trachomatis e/ou Neisseria gonorrhoeae — por isso a conduta correta é a pesquisa laboratorial específica para esses dois agentes (NAAT/PCR em amostra endocervical ou urina), não sendo necessária, neste momento, citologia, colposcopia ou biópsia, exames voltados à investigação de lesões pré-neoplásicas/neoplásicas, pouco prováveis nesse contexto clínico e faixa etária.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q830",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Paciente de 28 anos, sem parceiro fixo, sem uso de preservativo, com corrimento claro e discreto, sem odor, e disúria moderada. Exame especular: conteúdo vaginal claro e mucoide; colo com ectopia e friabilidade, sangramento fácil da mucosa cervical. Toque: colo friável, útero normal, anexos e paramétrios sem alterações. Qual a hipótese diagnóstica, o método diagnóstico e a conduta, respectivamente?",
+        "alternativas": [
+            "Cancro mole — bacterioscopia pelo Gram, identificação de morfotipos de H. ducreyi — ciprofloxacina 500 mg VO 12/12h por 3 dias.",
+            "Sífilis — VDRL e teste treponêmico — penicilina benzatina 2,4 milhões UI IM, dose única.",
+            "Neisseria gonorrhoeae — cultura em meio de Thayer-Martin — ceftriaxona 500 mg IM, dose única.",
+            "Chlamydia trachomatis — captura híbrida para clamídia — doxiciclina 100 mg VO de 12/12h por 7 dias.",
+            "Micoplasma — cultura para micoplasma — metronidazol 2 g VO, dose única."
+        ],
+        "correta": 3,
+        "comentario": "O quadro descrito — cervicite com colo friável e ectopia sangrante, corrimento claro/mucoide (não purulento amarelo-esverdeado, mais típico de gonococo) e disúria — é compatível com cervicite por Chlamydia trachomatis, confirmável por captura híbrida ou NAAT em amostra endocervical. O tratamento atualmente PREFERIDO para clamídia urogenital em pacientes não gestantes é a doxiciclina 100 mg VO de 12/12h por 7 DIAS (superior à azitromicina em dose única, segundo evidências mais recentes) — as demais opções descrevem corretamente o diagnóstico/tratamento de outras ISTs (cancro mole, sífilis, gonorreia, micoplasma), mas não se encaixam no quadro clínico apresentado.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q831",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Chlamydia trachomatis, uma bactéria intracelular obrigatória, está relacionada a várias infecções, sendo IMPROVÁVEL que seja o agente etiológico de:",
+        "alternativas": [
+            "Linfogranuloma venéreo.",
+            "Doença inflamatória pélvica.",
+            "Uretrite não gonocócica.",
+            "Ceratoconjuntivite.",
+            "Artrite séptica."
+        ],
+        "correta": 4,
+        "comentario": "A Chlamydia trachomatis é agente reconhecido de linfogranuloma venéreo (sorotipos L1-L3), doença inflamatória pélvica, uretrite não gonocócica (principal causa) e ceratoconjuntivite/tracoma (sorotipos A-C) e conjuntivite de inclusão do adulto (sorotipos D-K). Ela PODE causar artrite REATIVA (síndrome de Reiter, por mecanismo imunomediado, sem invasão bacteriana direta da articulação), mas raramente causa artrite SÉPTICA verdadeira (com o próprio organismo replicando dentro da articulação) — mecanismo mais associado ao gonococo na infecção disseminada. Por isso, artrite séptica é a opção mais improvável entre as listadas.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q832",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Paciente de 30 anos, queixa de dor em baixo ventre há 1 semana com piora, nega atraso menstrual. Ao exame físico: corada, afebril, Blumberg negativo. Ao especular: pequeno corrimento cervical. Toque doloroso, sem outras alterações. Hemograma, urina e ultrassom normais. Hipótese e conduta:",
+        "alternativas": [
+            "Cervicite e antibioticoterapia em casa.",
+            "DIP e internação.",
+            "DIP e antibioticoterapia em casa.",
+            "Cervicite e internação.",
+            "Prenhez ectópica e exame sob anestesia."
+        ],
+        "correta": 0,
+        "comentario": "O quadro é de cervicite (corrimento cervical discreto, dor à mobilização do colo ao toque), sem sinais de gravidade (afebril, sem irritação peritoneal, exames normais, sem massa anexial ao US) que indicariam DIP com necessidade de internação ou mesmo DIP ambulatorial mais extensa. Nesse cenário mais localizado e sem sinais sistêmicos, a conduta apropriada é tratamento ambulatorial (domiciliar) com antibioticoterapia cobrindo gonococo e clamídia, reservando-se a internação para DIP com critérios de gravidade (febre alta, abdome em tábua, abscesso tubo-ovariano, falha terapêutica ambulatorial, impossibilidade de exclusão de emergência cirúrgica, gestante, intolerância oral).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q833",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Qual patógeno do trato genital inferior apresenta predileção por epitélio CILÍNDRICO (glandular)?",
+        "alternativas": [
+            "Trichomonas vaginalis.",
+            "Gardnerella vaginalis.",
+            "Chlamydia trachomatis.",
+            "Candida albicans."
+        ],
+        "correta": 2,
+        "comentario": "A Chlamydia trachomatis (assim como a Neisseria gonorrhoeae) tem tropismo específico pelo epitélio colunar/cilíndrico — encontrado na endocérvice, uretra e conjuntiva — o que explica por que ambas causam classicamente CERVICITE (endocervical) e não vaginite propriamente dita. Trichomonas vaginalis, Gardnerella vaginalis e Candida albicans, ao contrário, acometem preferencialmente o epitélio ESCAMOSO da vagina e ectocérvice, causando vaginites.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q834",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Paciente de 19 anos, vida sexual ativa, com disúria e urgência miccional há uma semana. Ao exame especular, cervicite mucopurulenta. Exame laboratorial: EAS com leucocitúria importante e urinocultura NEGATIVA (piúria estéril). Dentre as alternativas, a conduta mais apropriada seria:",
+        "alternativas": [
+            "Coletar colpocitologia.",
+            "Ciprofloxacino por 3 dias.",
+            "Azitromicina em dose única.",
+            "Orientar hiper-hidratação oral."
+        ],
+        "correta": 2,
+        "comentario": "A combinação de sintomas urinários (disúria, urgência) com piúria significativa e UROCULTURA NEGATIVA (\"piúria estéril\") em paciente jovem sexualmente ativa, associada a cervicite mucopurulenta, é um padrão clássico que aponta para uretrite/cervicite por Chlamydia trachomatis, e não para infecção urinária bacteriana convencional (que teria urocultura positiva). O tratamento correto é o direcionado à clamídia — a azitromicina em dose única é uma opção terapêutica reconhecida (a doxiciclina 100 mg 12/12h por 7 dias é atualmente a preferencial em não gestantes, mas a azitromicina permanece opção válida, sobretudo quando a adesão a um esquema de múltiplas doses é preocupação). O ciprofloxacino não cobre clamídia e antibioticoterapia empírica para ITU não trataria a causa real do quadro.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q835",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Cervicite consiste na inflamação da mucosa endocervical, sendo necessário diagnóstico e tratamento precoces. Em relação às cervicites agudas, é CORRETO afirmar:",
+        "alternativas": [
+            "A forma assintomática é pouco frequente.",
+            "A cauterização é o tratamento de escolha.",
+            "A cervicite aguda não é fator de risco para infertilidade.",
+            "A clamídia e o gonococo são os principais agentes etiológicos."
+        ],
+        "correta": 3,
+        "comentario": "Chlamydia trachomatis e Neisseria gonorrhoeae são, de fato, os dois principais agentes etiológicos das cervicites agudas (frequentemente coinfectando a mesma paciente). As demais afirmativas estão incorretas: a forma assintomática é, na verdade, MUITO frequente (especialmente na clamídia), o que dificulta o diagnóstico precoce e favorece a transmissão silenciosa; a cauterização não trata a causa infecciosa (é procedimento para ectopia sintomática refratária, não para cervicite infecciosa); e a cervicite aguda não tratada É, sim, fator de risco reconhecido para infertilidade, por ascensão da infecção e desenvolvimento de DIP.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q836",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Gestante de 15 semanas, em primeiro atendimento de pré-natal, apresenta ao exame ginecológico colo friável, sangrante e com muco purulento. A hipótese diagnóstica e o tratamento adequado são, respectivamente:",
+        "alternativas": [
+            "Ectocervicite por Gardnerella vaginalis; metronidazol.",
+            "Ectocervicite por Trichomonas; metronidazol.",
+            "Endocervicite por gonococo e clamídia; ciprofloxacina + azitromicina.",
+            "Endocervicite por gonococo e clamídia; ceftriaxona + azitromicina."
+        ],
+        "correta": 3,
+        "comentario": "O achado de colo friável, sangrante, com secreção purulenta é típico de endocervicite por gonococo e/ou clamídia, e o esquema terapêutico deve cobrir ambos empiricamente. Na GESTANTE, o tratamento de escolha é ceftriaxona (para gonococo) associada à azitromicina em dose única (para clamídia) — a doxiciclina, preferida em não gestantes, é CONTRAINDICADA na gravidez (risco de disgenesia dentária/óssea fetal), e a ciprofloxacina (fluoroquinolona) também é evitada na gestação e não é mais recomendada para gonorreia pela resistência antimicrobiana.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q837",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Paciente de 18 anos, múltiplos parceiros sexuais, com queixa de corrimento vaginal amarelado há 2 meses. Iniciou há 7 dias quadro de poliartrite migratória e tenossinovite. O patógeno mais provavelmente envolvido é:",
+        "alternativas": [
+            "Neisseria gonorrhoeae.",
+            "E. coli.",
+            "Chlamydia trachomatis.",
+            "Haemophilus ducreyi."
+        ],
+        "correta": 0,
+        "comentario": "A tríade clássica de dermatite (lesões pustulosas em extremidades), poliartralgia/poliartrite MIGRATÓRIA e tenossinovite, em paciente jovem sexualmente ativa com fator de risco para IST, é característica da infecção gonocócica DISSEMINADA (IGD) — complicação da gonorreia não tratada, na qual o gonococo atinge a corrente sanguínea e se dissemina para pele e articulações. É uma causa importante de artrite séptica em adultos jovens sexualmente ativos e deve ser sempre lembrada nesse contexto.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q838",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Em relação às afecções do colo uterino, assinale a alternativa INCORRETA.",
+        "alternativas": [
+            "O ectrópio se manifesta, frequentemente, por aumento da quantidade de muco cervical.",
+            "A infecção por Chlamydia trachomatis, na maioria dos casos, acompanha-se de muco turvo e ULCERAÇÕES cervicais.",
+            "Eritema e edema cervical com erosões, por vezes confluentes, e corrimento abundante caracterizam a infecção pelo herpes simples.",
+            "Orifícios glandulares espessados podem ser uma forma de manifestação colposcópica do papilomavírus.",
+            "A infecção por gonococos comumente provoca secreção purulenta amarelo-esverdeada."
+        ],
+        "correta": 1,
+        "comentario": "A infecção cervical por Chlamydia trachomatis tipicamente cursa com muco turvo/purulento, colo friável e sangramento fácil ao toque — mas, ao contrário do afirmado, NÃO costuma causar ULCERAÇÕES cervicais verdadeiras; ulcerações genitais são achado mais associado a herpes simples, sífilis (cancro duro) e cancro mole, não à clamídia. As demais alternativas descrevem corretamente achados clássicos: ectrópio com hipersecreção de muco, herpes com erosões confluentes, HPV com orifícios glandulares espessados à colposcopia, e gonococo com secreção purulenta amarelo-esverdeada.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q839",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "A gonorreia é diagnosticada laboratorialmente pelo achado de:",
+        "alternativas": [
+            "Diplococo Gram-negativo extracelular.",
+            "Diplococo Gram-positivo intracelular.",
+            "Diplococo Gram-negativo intracelular.",
+            "Diplococo Gram-positivo extracelular."
+        ],
+        "correta": 2,
+        "comentario": "O achado microscópico característico e de alto valor diagnóstico para gonorreia (especialmente em homens sintomáticos) é a visualização de diplococos GRAM-NEGATIVOS localizados no INTERIOR de neutrófilos (intracelulares) na secreção uretral/cervical corada pelo Gram — a localização intracelular reflete a fagocitose ativa do gonococo pelos leucócitos polimorfonucleares durante a resposta inflamatória aguda, sendo um diferencial importante de contaminantes extracelulares da flora comensal.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q840",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Paciente de 23 anos, corrimento vaginal e dispareunia, trocou recentemente de parceiro sexual, usuária de DIU de cobre. Ao exame: secreção mucopurulenta pelo orifício externo do colo, colo friável ao toque. Microscopia: diplococos Gram-negativos. Qual alternativa apresenta a MELHOR opção de tratamento?",
+        "alternativas": [
+            "Ceftriaxona IM, dose única, e doxiciclina via oral.",
+            "Ofloxacino 400 mg VO, dose única, e metronidazol creme vaginal.",
+            "Metronidazol 2 g VO, dose única, associado a nistatina vaginal.",
+            "Tetraciclina 500 mg VO 4x/dia por 7 dias e ofloxacino 400 mg dose única.",
+            "Penicilina benzatina 2.400.000 UI/semana, durante 3 semanas."
+        ],
+        "correta": 0,
+        "comentario": "O achado de diplococos Gram-negativos confirma cervicite gonocócica, e — pela altíssima frequência de coinfecção — o tratamento deve cobrir empiricamente também clamídia. Entre as opções, apenas a combinação de ceftriaxona (cobertura para gonococo) com um antibiótico da classe das tetraciclinas por via oral (cobertura para clamídia) representa a lógica terapêutica correta — vale notar que o esquema atual preconiza doxiciclina 100 mg de 12/12h por 7 DIAS (não 14, como constava em versões mais antigas desta questão), refletindo a atualização mais recente das diretrizes de tratamento. As demais opções (metronidazol, penicilina benzatina, ofloxacino isolado) não cobrem adequadamente a dupla gonococo + clamídia.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q841",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Mulher de 25 anos, nuligesta, em uso de anticoncepcional oral combinado. Há 7 dias: mialgia inespecífica, cefaleia e febre não aferida. Há 4 dias: dor pélvica e corrimento vaginal mucossanguinolento intenso. Ao exame: regular estado geral, linfonodos inguinais palpáveis, móveis, fibroelásticos e DOLOROSOS. Órgãos genitais externos sem alterações relatadas além do quadro sistêmico. A principal hipótese diagnóstica é:",
+        "alternativas": [
+            "Behçet.",
+            "Tricomoníase.",
+            "Clamídia.",
+            "Herpes simples."
+        ],
+        "correta": 3,
+        "comentario": "A combinação de pródromo sistêmico (febre, mialgia, cefaleia) com linfadenopatia inguinal BILATERAL, dolorosa e corrimento vaginal intenso é característica de PRIMOINFECÇÃO genital por herpes simples — diferentemente de episódios recorrentes (geralmente mais localizados e sem sintomas sistêmicos proeminentes), a primoinfecção herpética cursa com quadro sistêmico exuberante e linfadenopatia inguinal dolorosa bilateral, um diferencial importante em relação a tricomoníase e clamídia (que não costumam causar febre/mialgia sistêmica) e à doença de Behçet (que cursa com úlceras orais recorrentes associadas, não descritas no caso).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q842",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "A Chlamydia trachomatis e a Neisseria gonorrhoeae são importantes agentes causadores de cervicite e doença inflamatória pélvica. Sobre o diagnóstico destes patógenos, é INCORRETO afirmar:",
+        "alternativas": [
+            "Deve-se solicitar exames diagnósticos para Chlamydia apenas para as pacientes com múltiplos parceiros, as que pensam ter sido expostas a IST e as com colo friável e muco turvo.",
+            "O método de captura híbrida (para Chlamydia ou Neisseria) é altamente sensível para o diagnóstico destes patógenos, não requerendo organismos vivos ou intactos.",
+            "A sorologia para Chlamydia não deve ser realizada de rotina, estando indicada somente para algumas situações peculiares.",
+            "A Neisseria é um patógeno de epitélio glandular; o material para cultura deve ser coletado de epitélios glandulares (endocervical, uretra, anal)."
+        ],
+        "correta": 0,
+        "comentario": "A afirmativa incorreta é a que restringe o rastreamento de clamídia apenas a pacientes com múltiplos parceiros, exposição conhecida a IST ou achados clínicos sugestivos — as diretrizes atuais (USPSTF/CDC) recomendam RASTREAMENTO UNIVERSAL BASEADO EM IDADE para clamídia em mulheres sexualmente ativas com até 25 anos (independentemente de sintomas ou fatores de risco declarados), justamente porque a infecção é frequentemente assintomática e restringir a testagem a critérios de risco percebido deixa muitos casos sem diagnóstico. As demais afirmativas sobre métodos diagnósticos (captura híbrida, sorologia não rotineira, tropismo glandular da Neisseria) estão corretas.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q843",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Paciente de 25 anos, com quadro clínico e laboratorial compatível com Chlamydia trachomatis. Assinale a opção terapêutica que NÃO deve ser utilizada nesse caso.",
+        "alternativas": [
+            "Ciprofloxacino.",
+            "Ofloxacino.",
+            "Levofloxacino.",
+            "Azitromicina."
+        ],
+        "correta": 0,
+        "comentario": "Apesar de pertencer à mesma classe das fluoroquinolonas usadas em alguns esquemas alternativos para clamídia (ofloxacino, levofloxacino), o CIPROFLOXACINO não possui atividade clinicamente relevante contra a Chlamydia trachomatis e não deve ser utilizado para tratar essa infecção — uma pegadinha clássica de prova, já que nem toda fluoroquinolona é intercambiável para essa indicação. Azitromicina é opção terapêutica reconhecida e eficaz para clamídia urogenital.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q844",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Assinale a alternativa INCORRETA sobre a gonococcia.",
+        "alternativas": [
+            "É uma doença de transmissão não exclusivamente sexual.",
+            "Facilita a transmissão do HIV.",
+            "Na mulher, é assintomática em 60 a 80% dos casos.",
+            "O diagnóstico laboratorial requer a realização de cultura, tanto no homem como na mulher.",
+            "A ceftriaxona intramuscular em dose única pode ser uma alternativa de tratamento."
+        ],
+        "correta": 3,
+        "comentario": "A afirmativa incorreta é a que exige cultura obrigatória em ambos os sexos: em HOMENS sintomáticos, a visualização de diplococos Gram-negativos intracelulares em secreção uretral já tem alta sensibilidade e especificidade, sendo frequentemente considerada suficiente para diagnóstico presuntivo/mesmo definitivo, sem necessidade obrigatória de cultura — já em mulheres, a bacterioscopia tem sensibilidade mais baixa (por isso métodos moleculares/NAAT ou cultura são mais recomendados). As demais afirmativas estão corretas: transmissão não exclusivamente sexual (rara, mas descrita, ex. perinatal), facilitação da transmissão do HIV pela inflamação da mucosa genital, alta taxa de assintomáticos em mulheres, e a ceftriaxona IM como tratamento. Vale notar que a dose atualmente recomendada de ceftriaxona é de 500 mg (atualizada pelo CDC em 2021 a partir dos 250 mg citados em versões mais antigas desta questão), em resposta à crescente resistência antimicrobiana do gonococo.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q845",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Quanto à infecção gonocócica, é correto afirmar:",
+        "alternativas": [
+            "É transmitida pela via sexual e seu período de incubação varia entre 15 e 30 dias.",
+            "Em pacientes do sexo feminino, cervicite e inflamação das glândulas de Bartholin são raras.",
+            "Artrite e tenossinovite são complicações comuns nas formas disseminadas da doença, geralmente com comprometimento poliarticular fixo e simultâneo desde o início.",
+            "Frequentemente é observada coinfecção por Chlamydia trachomatis, sendo recomendada associação de doxiciclina ou azitromicina ao tratamento antimicrobiano.",
+            "Artrite reumatoide não faz parte do diagnóstico diferencial de artrite gonocócica."
+        ],
+        "correta": 3,
+        "comentario": "A alta frequência de coinfecção entre gonococo e clamídia é bem estabelecida, o que justifica a recomendação histórica de tratamento empírico combinado (embora, quando a infecção gonocócica isolada está confirmada e a clamídia foi excluída, a ceftriaxona possa ser usada em monoterapia). As demais alternativas contêm erros: o período de incubação da gonorreia é CURTO (2 a 7 dias, não 15-30 dias — esse intervalo mais longo é mais característico da clamídia); cervicite e bartolinite são achados COMUNS (não raros) na infecção gonocócica feminina; e a artrite da infecção gonocócica disseminada é classicamente MIGRATÓRIA/assimétrica na fase inicial (poliartralgia migratória com tenossinovite), evoluindo depois, em parte dos casos, para monoartrite/oligoartrite séptica fixa — a descrição de comprometimento poliarticular fixo simultâneo desde o início não reflete essa evolução típica.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q846",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Homem de 26 anos procura a unidade de saúde com corrimento uretral purulento há 2 dias. Bacterioscopia da secreção uretral evidencia diplococos Gram-negativos intracelulares. Ele nega qualquer sintoma sugestivo de infecção concomitante e o parceiro sexual, testado no mesmo dia, teve NAAT negativo para Chlamydia trachomatis. Considerando as diretrizes mais atuais (CDC 2021) para gonorreia urogenital não complicada CONFIRMADA, sem coinfecção por clamídia, a conduta terapêutica correta é:",
+        "alternativas": [
+            "Ceftriaxona 500 mg intramuscular, em dose única, em monoterapia — sem necessidade de associar azitromicina de rotina quando a coinfecção por clamídia foi razoavelmente excluída.",
+            "Ceftriaxona 250 mg intramuscular, em dose única, associada obrigatoriamente à azitromicina 1 g via oral, independentemente do status de coinfecção.",
+            "Ciprofloxacino 500 mg via oral, em dose única, por ser opção de primeira linha atualmente recomendada para gonorreia não complicada.",
+            "Doxiciclina 100 mg via oral, de 12/12 horas, por 7 dias, em monoterapia, já que cobre tanto gonococo quanto clamídia."
+        ],
+        "correta": 0,
+        "comentario": "A diretriz do CDC de 2021 atualizou dois pontos centrais no tratamento da gonorreia: (1) a dose de ceftriaxona para infecção urogenital não complicada foi elevada de 250 mg para 500 mg intramuscular em dose única (1 g se peso ≥ 150 kg), em resposta à crescente resistência antimicrobiana do gonococo; e (2) quando a infecção gonocócica está CONFIRMADA e a coinfecção por clamídia foi razoavelmente EXCLUÍDA (como no caso, com NAAT negativo do parceiro e ausência de sintomas sugestivos), a ceftriaxona pode ser usada em MONOTERAPIA, sem a necessidade de associação rotineira de azitromicina — mudança em relação a esquemas mais antigos que associavam os dois antimicrobianos sempre. O ciprofloxacino não é mais recomendado para gonorreia, pela resistência disseminada do gonococo às fluoroquinolonas, e a doxiciclina não trata gonococo (cobre apenas clamídia). Importante: no tratamento SINDRÔMICO (corrimento uretral/cervical sem confirmação laboratorial prévia), mantém-se a cobertura empírica combinada para os dois agentes.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base nas CDC Sexually Transmitted Infections Treatment Guidelines (2021) e na aprovação FDA do zoliflodacino (Nuzolvence, dez/2025).",
+        "revisado": true
+    },
+    {
+        "id": "q847",
+        "temaId": "ists-gonorreia-clamidia-outras",
+        "tema": "Infecções Sexualmente Transmissíveis: Gonorreia, Clamídia e Outras",
+        "enunciado": "Paciente de 24 anos, tratado empiricamente para gonorreia urogenital não complicada com o esquema padrão, retorna após 10 dias com persistência dos sintomas e cultura confirmando Neisseria gonorrhoeae resistente à ceftriaxona. Diante da crescente preocupação mundial com cepas de gonococo resistentes à ceftriaxona (relatadas em múltiplos países desde 2022), qual das alternativas descreve corretamente uma nova opção terapêutica aprovada recentemente para gonorreia urogenital não complicada, com mecanismo de ação distinto das classes já em uso?",
+        "alternativas": [
+            "O zoliflodacino (Nuzolvence), aprovado pelo FDA em dezembro de 2025, é um antibiótico oral de dose única, primeiro representante da classe das espiropirimidinotrionas — um mecanismo de ação totalmente novo, inibindo a topoisomerase/DNA-girase bacteriana, sem resistência cruzada com as classes já utilizadas (cefalosporinas, fluoroquinolonas, macrolídeos).",
+            "A azitromicina em altas doses (2 g), administrada isoladamente, tornou-se o novo tratamento de escolha para cepas resistentes à ceftriaxona, substituindo-a completamente nas diretrizes mais recentes.",
+            "Não existe, até o momento, nenhuma nova opção terapêutica aprovada para gonorreia resistente à ceftriaxona — o manejo permanece limitado exclusivamente aos antimicrobianos já em uso há décadas.",
+            "A penicilina cristalina em altas doses voltou a ser a primeira escolha para gonorreia, dada a resistência às cefalosporinas de terceira geração."
+        ],
+        "correta": 0,
+        "comentario": "Diante do aumento de relatos de cepas de Neisseria gonorrhoeae resistentes à ceftriaxona em diversos países desde 2022, representando ameaça à eficácia do único esquema de dose única altamente eficaz ainda recomendado, o FDA aprovou em dezembro de 2025 o zoliflodacino (nome comercial Nuzolvence) — primeiro antibiótico oral de dose única de uma classe totalmente nova (espiropirimidinotrionas), com mecanismo de ação inédito (inibição da topoisomerase/DNA-girase bacteriana por um sítio de ligação distinto), sem resistência cruzada com cefalosporinas, fluoroquinolonas ou macrolídeos. Em estudo de fase 3, demonstrou eficácia não inferior à associação ceftriaxona + azitromicina (cura microbiológica de aproximadamente 91%), representando a primeira nova classe de antibiótico para gonorreia em quase duas décadas — resposta direta à crescente resistência antimicrobiana do gonococo. A penicilina foi abandonada há décadas como tratamento de gonorreia pela resistência já consolidada, e não existe recomendação de azitromicina isolada em altas doses como novo padrão.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base nas CDC Sexually Transmitted Infections Treatment Guidelines (2021) e na aprovação FDA do zoliflodacino (Nuzolvence, dez/2025).",
+        "revisado": true
     }
 ]
