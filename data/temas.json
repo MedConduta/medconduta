@@ -8227,8 +8227,8 @@
     "categoria": "Neurologia",
     "titulo": "Doença de Parkinson",
     "resumo": "Tríade motora cardinal, sintomas não motores precoces e o tratamento com levodopa.",
-    "revisado": false,
-    "fonte": "Academia Brasileira de Neurologia; MDS Clinical Diagnostic Criteria for Parkinson's Disease",
+    "revisado": true,
+    "fonte": "Academia Brasileira de Neurologia; MDS Clinical Diagnostic Criteria for Parkinson's Disease; Neuronal Synuclein Disease Integrated Staging System (NSD-ISS), 2024; FDA — Foscarbidopa/Foslevodopa (Vyalev), infusão subcutânea contínua, aprovação 2024",
     "mnemonicos": [
       {
         "palavra": "TRAP",
@@ -8250,11 +8250,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é eminentemente clínico, baseado na presença de bradicinesia associada a pelo menos um dos outros componentes da tríade motora, sem necessidade obrigatória de exame de imagem em casos típicos. A boa resposta à levodopa é considerada critério de suporte diagnóstico importante — sua ausência deve levantar suspeita de parkinsonismo atípico (paralisia supranuclear progressiva, atrofia de múltiplos sistemas) ou secundário (induzido por drogas, especialmente antipsicóticos e antieméticos antagonistas de dopamina)."
+        "conteudo": "O diagnóstico é eminentemente clínico, baseado na presença de bradicinesia associada a pelo menos um dos outros componentes da tríade motora, sem necessidade obrigatória de exame de imagem em casos típicos. A boa resposta à levodopa é considerada critério de suporte diagnóstico importante — sua ausência deve levantar suspeita de parkinsonismo atípico (paralisia supranuclear progressiva, atrofia de múltiplos sistemas) ou secundário (induzido por drogas, especialmente antipsicóticos e antieméticos antagonistas de dopamina). Uma mudança de paradigma relevante é a introdução do ensaio de amplificação de sementes de alfa-sinucleína (SAA, do inglês seed amplification assay), capaz de detectar formas mal dobradas (agregadas) da alfa-sinucleína no líquor ou até em biópsia de pele, com sensibilidade e especificidade elevadas — permitindo, pela primeira vez, uma confirmação BIOLÓGICA (e não apenas clínica) da presença de sinucleinopatia subjacente. Essa tecnologia fundamentou a proposta, em 2024, do sistema de estadiamento integrado da doença neuronal por alfa-sinucleína (NSD-ISS), que passa a classificar a doença por biomarcadores (positividade do SAA, evidência de perda dopaminérgica) associados ao estadiamento funcional/clínico — movimento análogo ao que já ocorreu na doença de Alzheimer, caminhando para uma definição biológica da doença que pode preceder em anos o diagnóstico clínico tradicional baseado na tríade motora."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Levodopa associada a inibidor de descarboxilase periférica (carbidopa) permanece o tratamento sintomático mais eficaz disponível, embora seu uso prolongado associe-se ao desenvolvimento de flutuações motoras e discinesias, motivando estratégias de retardo do início em pacientes mais jovens (agonistas dopaminérgicos, inibidores de MAO-B como terapia inicial nesses casos). Estimulação cerebral profunda é opção para pacientes com flutuações motoras graves refratárias ao ajuste farmacológico otimizado, em casos cuidadosamente selecionados."
+        "conteudo": "Levodopa associada a inibidor de descarboxilase periférica (carbidopa) permanece o tratamento sintomático mais eficaz disponível, embora seu uso prolongado associe-se ao desenvolvimento de flutuações motoras e discinesias, motivando estratégias de retardo do início em pacientes mais jovens (agonistas dopaminérgicos, inibidores de MAO-B como terapia inicial nesses casos). Estimulação cerebral profunda é opção para pacientes com flutuações motoras graves refratárias ao ajuste farmacológico otimizado, em casos cuidadosamente selecionados. Para pacientes com flutuações motoras avançadas que não são candidatos ou preferem evitar a estimulação cerebral profunda, a infusão intrajejunal contínua de levodopa/carbidopa em gel (via sonda, com necessidade de procedimento para posicionamento) já era opção estabelecida; uma novidade relevante é a infusão SUBCUTÂNEA contínua de foscarbidopa/foslevodopa (pró-fármacos hidrossolúveis, aprovados pelo FDA em 2024), administrada por bomba portátil, sem necessidade de procedimento invasivo para posicionamento de sonda — reduzindo o tempo \"OFF\" (períodos de piora motora) e aumentando o tempo \"ON\" sem discinesia, além de melhorar sintomas não motores como sono e qualidade de vida."
       },
       {
         "titulo": "Sinais de alerta",
@@ -8262,9 +8262,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A tríade motora (bradicinesia obrigatória + rigidez e/ou tremor de repouso) e a diferenciação do tremor de repouso parkinsoniano (melhora com movimento) do tremor essencial (piora com ação) são cobranças certas. O parkinsonismo induzido por antagonistas de dopamina (antipsicóticos típicos, metoclopramida) como causa secundária relevante e reversível também é frequentemente testado."
+        "conteudo": "A tríade motora (bradicinesia obrigatória + rigidez e/ou tremor de repouso) e a diferenciação do tremor de repouso parkinsoniano (melhora com movimento) do tremor essencial (piora com ação) são cobranças certas. O parkinsonismo induzido por antagonistas de dopamina (antipsicóticos típicos, metoclopramida) como causa secundária relevante e reversível também é frequentemente testado. Provas mais atualizadas já cobram o ensaio de amplificação de sementes de alfa-sinucleína (SAA) como novo biomarcador diagnóstico e as opções de infusão contínua (intrajejunal ou subcutânea) de levodopa para flutuações motoras avançadas refratárias."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a tríade motora (bradicinesia obrigatória + rigidez e/ou tremor de repouso), a diferenciação do tremor parkinsoniano (melhora com movimento) do tremor essencial (piora com ação), e o parkinsonismo induzido por antagonistas de dopamina (antipsicóticos típicos, metoclopramida) como causa secundária reversível são cobrança praticamente garantida. Provas mais atualizadas já cobram o ensaio de amplificação de sementes de alfa-sinucleína (SAA) como biomarcador emergente que permite diagnóstico biológico (não apenas clínico) da doença, além de novas opções terapêuticas para flutuações motoras avançadas, como a infusão subcutânea contínua de foscarbidopa/foslevodopa."
   },
   {
     "id": "miastenia-gravis",
