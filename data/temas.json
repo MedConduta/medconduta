@@ -3929,8 +3929,9 @@
     "categoria": "Gastroenterologia",
     "titulo": "Hepatites Virais (A, B e C)",
     "resumo": "Vias de transmissão, marcadores sorológicos da hepatite B e tratamento atual da hepatite C com antivirais de ação direta.",
-    "revisado": false,
-    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Hepatites Virais; Sociedade Brasileira de Hepatologia",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Hepatites Virais; Sociedade Brasileira de Hepatologia; AASLD/IDSA Clinical Guideline on Chronic Hepatitis B — atualização 2025",
+    "comoCai": "No SES-PE e no ENAMED, a interpretação do painel sorológico da hepatite B (HBsAg, anti-HBc IgM/IgG, HBeAg/anti-HBe, anti-HBs) é a cobrança mais recorrente e considerada obrigatória do tema. A profilaxia da transmissão vertical da hepatite B (uso de tenofovir na gestante com carga viral elevada, associado à imunoprofilaxia do recém-nascido) e as altas taxas de cura da hepatite C com antivirais de ação direta também aparecem com frequência crescente.",
     "mnemonicos": [
       {
         "palavra": "ABC dos marcadores de Hepatite B",
@@ -3940,7 +3941,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A hepatite A é transmitida por via fecal-oral, causando doença aguda autolimitada na grande maioria dos casos, sem cronificação. A hepatite B é transmitida por via parenteral, sexual e vertical (mãe-filho), podendo cronificar (mais frequentemente quando adquirida no período perinatal/infância) e evoluir para cirrose e carcinoma hepatocelular a longo prazo. A hepatite C é transmitida predominantemente por via parenteral, com alta taxa de cronificação (cerca de 70-80% dos infectados), sendo hoje curável com antivirais de ação direta na quase totalidade dos casos tratados."
+        "conteudo": "A hepatite A é transmitida por via fecal-oral, causando doença aguda autolimitada na grande maioria dos casos, sem cronificação. A hepatite B é transmitida por via parenteral, sexual e vertical (mãe-filho), podendo cronificar (mais frequentemente quando adquirida no período perinatal/infância) e evoluir para cirrose e carcinoma hepatocelular a longo prazo. A hepatite C é transmitida predominantemente por via parenteral, com alta taxa de cronificação (cerca de 70-80% dos infectados), sendo hoje curável com antivirais de ação direta na quase totalidade dos casos tratados. A hepatite D (delta) é causada por um vírus defectivo que necessita obrigatoriamente da presença do HBsAg para se replicar, ocorrendo apenas em pacientes com hepatite B — seja por coinfecção simultânea (geralmente autolimitada, semelhante à hepatite B aguda isolada) ou por superinfecção em portador crônico de hepatite B (evolução mais agressiva, com maior risco de hepatite fulminante e progressão acelerada para cirrose). É endêmica em algumas regiões da Amazônia brasileira."
       },
       {
         "titulo": "Quadro clínico",
@@ -3952,11 +3953,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Sorologias específicas definem o diagnóstico e o estágio da infecção: anti-HAV IgM confirma hepatite A aguda; para hepatite B, o HBsAg positivo indica infecção ativa (aguda ou crônica), o anti-HBc IgM diferencia infecção aguda recente de crônica, e o HBeAg/anti-HBe e a carga viral (HBV-DNA) avaliam replicação viral e orientam tratamento; para hepatite C, anti-HCV é triagem (pode ser falso-positivo ou refletir infecção passada resolvida), sendo a confirmação de infecção ativa feita pela detecção do HCV-RNA."
+        "conteudo": "Sorologias específicas definem o diagnóstico e o estágio da infecção: anti-HAV IgM confirma hepatite A aguda; para hepatite B, o HBsAg positivo indica infecção ativa (aguda ou crônica), o anti-HBc IgM diferencia infecção aguda recente de crônica, e o HBeAg/anti-HBe e a carga viral (HBV-DNA) avaliam replicação viral e orientam tratamento; para hepatite C, anti-HCV é triagem (pode ser falso-positivo ou refletir infecção passada resolvida), sendo a confirmação de infecção ativa feita pela detecção do HCV-RNA. Todo paciente HBsAg positivo deve ser investigado para hepatite D (anti-HDV e, se positivo, HDV-RNA), já que a coinfecção/superinfecção altera significativamente prognóstico e conduta. A atualização AASLD/IDSA (2025) para hepatite B crônica ampliou os critérios de indicação de tratamento também na fase \"imunotolerante\" (HBeAg positivo, carga viral alta, transaminases normais) em pacientes acima de 40 anos ou com fibrose/atividade inflamatória significativa à biópsia ou elastografia (antes considerados apenas para seguimento sem tratamento), reconhecendo dano hepático subclínico progressivo mesmo com ALT normal nesse grupo."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Hepatite A aguda tem tratamento apenas de suporte, sem antiviral específico, com prevenção eficaz por vacinação. Hepatite B crônica com indicação de tratamento (carga viral elevada, atividade inflamatória, cirrose) é tratada com análogos de nucleos(t)ídeos (tenofovir, entecavir), que suprimem a replicação viral mas raramente curam definitivamente a infecção (a erradicação completa do HBsAg é rara). Hepatite C tem tratamento com antivirais de ação direta (esquemas orais de 8-12 semanas), com taxas de cura virológica sustentada superiores a 95% — verdadeira revolução terapêutica na última década, hoje disponível pelo SUS."
+        "conteudo": "Hepatite A aguda tem tratamento apenas de suporte, sem antiviral específico, com prevenção eficaz por vacinação. Hepatite B crônica com indicação de tratamento (carga viral elevada, atividade inflamatória, cirrose, ou critérios ampliados na fase imunotolerante conforme atualização de 2025) é tratada com análogos de nucleos(t)ídeos (tenofovir ou entecavir), que suprimem a replicação viral mas raramente curam definitivamente a infecção (a erradicação completa do HBsAg é rara); entre as formulações de tenofovir, a tenofovir alafenamida (TAF) vem sendo preferida à tenofovir disoproxila fumarato (TDF) clássica por apresentar perfil renal e ósseo mais favorável, com eficácia de supressão viral equivalente. Na gestante com hepatite B crônica e carga viral elevada (>200.000UI/mL), recomenda-se iniciar tenofovir (TDF ou TAF) a partir da 28ª semana de gestação para reduzir o risco de transmissão vertical, associado à imunoprofilaxia do recém-nascido (vacina + imunoglobulina anti-hepatite B, HBIG, nas primeiras 12-24h de vida) — medida de alto impacto na eliminação da transmissão vertical. A hepatite D crônica, historicamente sem tratamento específico eficaz (apenas interferon peguilado, com resposta subótima), ganhou em 2024 a bulevirtida, primeiro inibidor de entrada viral aprovado especificamente para hepatite D crônica (bloqueia a ligação do HDV/HBV ao receptor NTCP hepatocitário), já aprovada na União Europeia para hepatite D compensada. Hepatite C tem tratamento com antivirais de ação direta (esquemas orais de 8-12 semanas), com taxas de cura virológica sustentada superiores a 95% — verdadeira revolução terapêutica na última década, hoje disponível pelo SUS."
       },
       {
         "titulo": "Sinais de alerta",
@@ -3964,7 +3965,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A interpretação do painel sorológico da hepatite B (HBsAg, anti-HBc IgM/IgG, HBeAg/anti-HBe, anti-HBs) é cobrança extremamente frequente e considerada um dos temas mais \"decorados\" da gastroenterologia/infectologia em provas de residência. As altas taxas de cura da hepatite C com antivirais de ação direta, disponíveis pelo SUS, também são frequentemente exploradas como atualização terapêutica relevante."
+        "conteudo": "A interpretação do painel sorológico da hepatite B (HBsAg, anti-HBc IgM/IgG, HBeAg/anti-HBe, anti-HBs) é cobrança extremamente frequente e considerada um dos temas mais \"decorados\" da gastroenterologia/infectologia em provas de residência. As altas taxas de cura da hepatite C com antivirais de ação direta, disponíveis pelo SUS, também são frequentemente exploradas como atualização terapêutica relevante. A profilaxia da transmissão vertical da hepatite B (tenofovir na gestante com carga viral alta a partir da 28ª semana + imunoprofilaxia do RN) é ponto de crescente cobrança em provas com viés de saúde pública/materno-infantil, assim como a necessidade de investigar hepatite D em todo HBsAg positivo."
       }
     ]
   },
