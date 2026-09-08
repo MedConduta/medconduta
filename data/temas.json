@@ -9896,8 +9896,9 @@
     "categoria": "Gastroenterologia",
     "titulo": "Síndrome Disfágica e Acalasia",
     "resumo": "Diferenciação entre disfagia orofaríngea e esofágica, investigação diagnóstica e a acalasia como principal distúrbio motor primário do esôfago.",
-    "revisado": false,
-    "fonte": "Federação Brasileira de Gastroenterologia; American College of Gastroenterology — Guidelines for Diagnosis and Management of Achalasia",
+    "revisado": true,
+    "fonte": "Federação Brasileira de Gastroenterologia; American College of Gastroenterology — Guidelines for Diagnosis and Management of Achalasia; Chicago Classification v4.0; SAGES Guidelines for POEM — atualização 2024",
+    "comoCai": "No SES-PE e no ENAMED, a diferenciação entre disfagia mecânica (progressiva, sólidos antes de líquidos) e motora (sólidos e líquidos desde o início) é cobrança certa, assim como a obrigatoriedade de excluir pseudoacalasia por EDA antes de firmar acalasia primária. Provas mais atualizadas já exploram os subtipos manométricos de acalasia pela Chicago Classification v4.0 e sua relação com a escolha terapêutica (POEM preferencial no tipo III espástico).",
     "mnemonicos": [
       {
         "palavra": "Sólidos e líquidos juntos = motor",
@@ -9919,11 +9920,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A manometria esofágica de alta resolução é o exame padrão-ouro para diagnóstico de acalasia e outros distúrbios motores, classificando a acalasia em três subtipos conforme a classificação de Chicago (relevante para prognóstico e escolha terapêutica). O esofagograma baritado classicamente mostra a imagem em \"bico de pássaro\" (afilamento distal característico) na acalasia, e é útil como exame inicial de triagem. A endoscopia digestiva alta é sempre necessária antes de firmar o diagnóstico de acalasia primária, para excluir pseudoacalasia por neoplasia infiltrativa da junção esofagogástrica, que pode mimetizar o quadro clínico e manométrico."
+        "conteudo": "A manometria esofágica de alta resolução é o exame padrão-ouro para diagnóstico de acalasia e outros distúrbios motores. Pela Chicago Classification v4.0, a acalasia é dividida em três subtipos conforme o padrão de contração após relaxamento incompleto do EEI: tipo I (clássica — ausência completa de pressurização/peristalse em praticamente todas as deglutições), tipo II (o mais comum — pressurização pan-esofágica ≥30mmHg em pelo menos 20% das deglutições, geralmente com melhor resposta a qualquer forma de tratamento) e tipo III (espástica — contrações prematuras/espásticas em pelo menos 20% das deglutições, sem peristalse normal, e tradicionalmente a de pior resposta terapêutica). A versão 4.0 também incorporou manobras provocativas durante a manometria (deglutições múltiplas rápidas, teste de deglutição rápida de líquido) para aumentar a acurácia diagnóstica em casos limítrofes. O esofagograma baritado classicamente mostra a imagem em \"bico de pássaro\" (afilamento distal característico) na acalasia, sendo também útil na avaliação objetiva da resposta terapêutica (esofagograma cronometrado). A endoscopia digestiva alta é sempre necessária antes de firmar o diagnóstico de acalasia primária, para excluir pseudoacalasia por neoplasia infiltrativa da junção esofagogástrica, que pode mimetizar o quadro clínico e manométrico."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Opções para acalasia incluem dilatação pneumática endoscópica, miotomia de Heller (cirúrgica, geralmente associada a procedimento antirrefluxo) e miotomia endoscópica peroral (POEM), com eficácia comparável entre as intervenções mais definitivas; toxina botulínica intraesfincteriana tem efeito temporário, reservada a pacientes não candidatos aos procedimentos definitivos pelo risco cirúrgico. Disfagia orofaríngea é manejada predominantemente com fonoterapia e adaptação da consistência alimentar, direcionada à causa neurológica de base."
+        "conteudo": "Opções para acalasia incluem dilatação pneumática endoscópica, miotomia de Heller (cirúrgica, geralmente associada a procedimento antirrefluxo) e miotomia endoscópica peroral (POEM), com eficácia global comparável entre as intervenções mais definitivas — porém a escolha vem sendo cada vez mais individualizada pelo subtipo manométrico: no tipo III (espástico), o POEM é preferencial, pois permite estender a miotomia proximalmente ao longo de todo o segmento espástico (miotomia longa personalizada), algo tecnicamente mais limitado na abordagem cirúrgica convencional; no tipo II, todas as opções (incluindo dilatação pneumática) apresentam boa resposta; e a miotomia de Heller com fundoplicatura permanece indicada preferencialmente quando há divertículo epifrênico ou hérnia hiatal associados (conforme reforçado pela atualização da SAGES de 2024). Toxina botulínica intraesfincteriana tem efeito temporário, reservada a pacientes não candidatos aos procedimentos definitivos pelo risco cirúrgico. Disfagia orofaríngea é manejada predominantemente com fonoterapia e adaptação da consistência alimentar, direcionada à causa neurológica de base."
       },
       {
         "titulo": "Sinais de alerta",
@@ -9931,7 +9932,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A diferenciação entre disfagia mecânica (progressiva, sólidos antes de líquidos) e motora (sólidos e líquidos desde o início, intermitente) é cobrança certa. A obrigatoriedade de exclusão de pseudoacalasia por endoscopia antes de firmar acalasia primária é um ponto de segurança diagnóstica frequentemente testado, assim como a imagem clássica em \"bico de pássaro\" no esofagograma."
+        "conteudo": "A diferenciação entre disfagia mecânica (progressiva, sólidos antes de líquidos) e motora (sólidos e líquidos desde o início, intermitente) é cobrança certa. A obrigatoriedade de exclusão de pseudoacalasia por endoscopia antes de firmar acalasia primária é um ponto de segurança diagnóstica frequentemente testado, assim como a imagem clássica em \"bico de pássaro\" no esofagograma. Fique atento aos subtipos de acalasia pela Chicago Classification (I, II, III) e à preferência pelo POEM no tipo III espástico, tema de atualização crescente em provas."
       }
     ]
   },
