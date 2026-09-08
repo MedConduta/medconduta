@@ -1846,8 +1846,9 @@
     "categoria": "Neurologia",
     "titulo": "AVC Hemorrágico",
     "resumo": "Reconhecimento clínico, causas principais e manejo inicial do AVC hemorrágico.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Doenças Cerebrovasculares; AHA/ASA Guideline for the Management of Spontaneous Intracerebral Hemorrhage (2022)",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Doenças Cerebrovasculares; AHA/ASA Guideline for the Management of Spontaneous Intracerebral Hemorrhage (2022); estudos ENRICH e INTERACT3 (2023-2024)",
+    "comoCai": "No SES-PE e no ENAMED, a meta de controle pressórico mais agressivo na hemorragia intraparenquimatosa (diferente do AVC isquêmico) e a cefaleia \"pior da vida\" sugerindo HSA são cobrança garantida. A punção lombar em busca de xantocromia quando a TC é negativa mas a suspeita de HSA persiste também é ponto clássico. Provas mais atualizadas já exploram o benefício da evacuação cirúrgica minimamente invasiva precoce especificamente na hemorragia LOBAR (estudo ENRICH) e a abordagem em \"pacote de cuidados\" (INTERACT3) para o manejo inicial.",
     "mnemonicos": [
       {
         "palavra": "HAS = CAUSA MAIS COMUM",
@@ -1873,7 +1874,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O manejo inicial da hemorragia intraparenquimatosa inclui controle pressórico mais agressivo que no AVC isquêmico (meta de PA sistólica geralmente <140mmHg, para reduzir expansão do hematoma), reversão urgente de qualquer anticoagulação em uso, e avaliação neurocirúrgica para drenagem em casos selecionados (hematomas cerebelares grandes com efeito de massa, por exemplo). Na hemorragia subaracnóidea aneurismática, o aneurisma deve ser tratado precocemente (clipagem cirúrgica ou embolização endovascular) para prevenir ressangramento, e a nimodipina é utilizada rotineiramente para reduzir o risco de vasoespasmo cerebral tardio e isquemia secundária."
+        "conteudo": "O manejo inicial da hemorragia intraparenquimatosa inclui controle pressórico mais agressivo que no AVC isquêmico (meta de PA sistólica geralmente <140mmHg, para reduzir expansão do hematoma), reversão urgente de qualquer anticoagulação em uso, e avaliação neurocirúrgica para drenagem em casos selecionados (hematomas cerebelares grandes com efeito de massa, por exemplo). O estudo INTERACT3 (2023) reforçou que uma abordagem em \"pacote de cuidados\" (controle pressórico intensivo precoce, controle glicêmico, controle da temperatura e reversão rápida de anticoagulação, aplicados em conjunto) melhora desfechos funcionais, mais do que qualquer medida isolada. O estudo ENRICH (2024) demonstrou, pela primeira vez após décadas de ensaios neurocirúrgicos negativos (STICH/STICH II), benefício da evacuação cirúrgica minimamente invasiva precoce (por via trans-sulcal parafascicular) especificamente na hemorragia LOBAR (não na hemorragia profunda/de núcleos da base, onde esse benefício não foi demonstrado) — mudança relevante na seleção de candidatos à cirurgia. Na hemorragia subaracnóidea aneurismática, o aneurisma deve ser tratado precocemente (clipagem cirúrgica ou embolização endovascular) para prevenir ressangramento, e a nimodipina é utilizada rotineiramente para reduzir o risco de vasoespasmo cerebral tardio e isquemia secundária."
       },
       {
         "titulo": "Sinais de alerta",
@@ -1881,7 +1882,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A meta de controle pressórico mais agressivo na hemorragia intraparenquimatosa (diferente do manejo permissivo do AVC isquêmico) é cobrança recorrente e ponto central de diferenciação entre os dois temas. O uso de nimodipina para prevenção de vasoespasmo na hemorragia subaracnóidea, e a necessidade de punção lombar quando a tomografia é negativa mas a suspeita permanece alta, também são frequentemente exigidos."
+        "conteudo": "A meta de controle pressórico mais agressivo na hemorragia intraparenquimatosa (diferente do manejo permissivo do AVC isquêmico) é cobrança recorrente e ponto central de diferenciação entre os dois temas. O uso de nimodipina para prevenção de vasoespasmo na hemorragia subaracnóidea, e a necessidade de punção lombar quando a tomografia é negativa mas a suspeita permanece alta, também são frequentemente exigidos. Fique atento ao estudo ENRICH: benefício cirúrgico demonstrado apenas na hemorragia LOBAR, não na profunda/núcleos da base."
       }
     ]
   },
