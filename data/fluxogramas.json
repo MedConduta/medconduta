@@ -239,8 +239,14 @@
           {
             "label": "Sim — choque séptico",
             "fluxo": [
-              { "tipo": "alerta", "texto": "Antibiótico empírico em até 1 hora" },
-              { "tipo": "action", "texto": "Cristaloide balanceado ≥30 mL/kg nas primeiras 3h" },
+              {
+                "tipo": "alerta",
+                "texto": "Antibiótico empírico em até 1 hora"
+              },
+              {
+                "tipo": "action",
+                "texto": "Cristaloide balanceado ≥30 mL/kg nas primeiras 3h"
+              },
               {
                 "tipo": "decisao",
                 "texto": "PAM permanece < 65 mmHg após volume?",
@@ -248,21 +254,44 @@
                   {
                     "label": "Sim",
                     "fluxo": [
-                      { "tipo": "action", "texto": "Noradrenalina (1ª linha); associar vasopressina em doses crescentes de noradrenalina" },
-                      { "tipo": "alerta", "texto": "Choque refratário → associar corticoide (hidrocortisona) + UTI" }
+                      {
+                        "tipo": "action",
+                        "texto": "Noradrenalina (1ª linha); associar vasopressina em doses crescentes de noradrenalina"
+                      },
+                      {
+                        "tipo": "alerta",
+                        "texto": "Choque refratário → associar corticoide (hidrocortisona) + UTI"
+                      }
                     ]
                   },
-                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Reavaliar perfusão a cada hora" } ] }
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Reavaliar perfusão a cada hora"
+                      }
+                    ]
+                  }
                 ]
               },
-              { "tipo": "end", "texto": "Controle do foco infeccioso em até 6h do diagnóstico" }
+              {
+                "tipo": "end",
+                "texto": "Controle do foco infeccioso em até 6h do diagnóstico"
+              }
             ]
           },
           {
             "label": "Não — sepse sem choque",
             "fluxo": [
-              { "tipo": "action", "texto": "Antibiótico empírico em até 3 horas (tempo para melhor caracterização diagnóstica)" },
-              { "tipo": "end", "texto": "Monitorar sinais de disfunção orgânica e reavaliar necessidade de vasopressor" }
+              {
+                "tipo": "action",
+                "texto": "Antibiótico empírico em até 3 horas (tempo para melhor caracterização diagnóstica)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Monitorar sinais de disfunção orgânica e reavaliar necessidade de vasopressor"
+              }
             ]
           }
         ]
@@ -2794,16 +2823,42 @@
     "revisado": false,
     "fonte": "KDIGO Clinical Practice Guideline for the Management of Glomerular Diseases (2021)",
     "fluxo": [
-      { "tipo": "start", "texto": "Proteinúria e/ou hematúria identificadas no exame de urina" },
+      {
+        "tipo": "start",
+        "texto": "Proteinúria e/ou hematúria identificadas no exame de urina"
+      },
       {
         "tipo": "decisao",
         "texto": "Proteinúria maciça (>3,5 g/24h) com hipoalbuminemia e edema?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Síndrome nefrótica → investigar causa (lesões mínimas, GESF, membranosa)" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Avaliar hematúria dismórfica + hipertensão + oligúria" }, { "tipo": "end", "texto": "Síndrome nefrítica → investigar causa (ex.: pós-estreptocócica)" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Síndrome nefrótica → investigar causa (lesões mínimas, GESF, membranosa)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Avaliar hematúria dismórfica + hipertensão + oligúria"
+              },
+              {
+                "tipo": "end",
+                "texto": "Síndrome nefrítica → investigar causa (ex.: pós-estreptocócica)"
+              }
+            ]
+          }
         ]
       },
-      { "tipo": "alerta", "texto": "Edema agudo de pulmão ou perda rápida de função renal → investigação e tratamento urgentes" }
+      {
+        "tipo": "alerta",
+        "texto": "Edema agudo de pulmão ou perda rápida de função renal → investigação e tratamento urgentes"
+      }
     ]
   },
   {
@@ -2815,18 +2870,50 @@
     "revisado": false,
     "fonte": "Berlin Definition of ARDS (2012)",
     "fluxo": [
-      { "tipo": "start", "texto": "Insuficiência respiratória hipoxêmica de início agudo (≤7 dias)" },
-      { "tipo": "action", "texto": "Radiografia/TC de tórax: infiltrado bilateral" },
+      {
+        "tipo": "start",
+        "texto": "Insuficiência respiratória hipoxêmica de início agudo (≤7 dias)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Radiografia/TC de tórax: infiltrado bilateral"
+      },
       {
         "tipo": "decisao",
         "texto": "Hipoxemia explicada totalmente por IC ou sobrecarga volêmica?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Não é SDRA → tratar causa cardiogênica" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "Calcular relação PaO2/FiO2" }, { "tipo": "end", "texto": "Classificar gravidade: leve, moderada ou grave" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Não é SDRA → tratar causa cardiogênica"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Calcular relação PaO2/FiO2"
+              },
+              {
+                "tipo": "end",
+                "texto": "Classificar gravidade: leve, moderada ou grave"
+              }
+            ]
+          }
         ]
       },
-      { "tipo": "action", "texto": "Iniciar ventilação protetora (VC baixo, PEEP adequada)" },
-      { "tipo": "alerta", "texto": "Hipoxemia refratária → posição prona; considerar ECMO em centro especializado" }
+      {
+        "tipo": "action",
+        "texto": "Iniciar ventilação protetora (VC baixo, PEEP adequada)"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Hipoxemia refratária → posição prona; considerar ECMO em centro especializado"
+      }
     ]
   },
   {
@@ -2838,13 +2925,36 @@
     "revisado": false,
     "fonte": "Ministério da Saúde - PCDT para Profilaxia Pós-Exposição de Risco à Infecção pelo HIV",
     "fluxo": [
-      { "tipo": "start", "texto": "Exposição de risco ao HIV (sexual, ocupacional, etc.)" },
+      {
+        "tipo": "start",
+        "texto": "Exposição de risco ao HIV (sexual, ocupacional, etc.)"
+      },
       {
         "tipo": "decisao",
         "texto": "Dentro de até 72 horas da exposição?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Iniciar PEP (esquema antirretroviral) por 28 dias" }, { "tipo": "end", "texto": "Seguimento sorológico conforme protocolo" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "PEP não indicada após 72h → orientar testagem e prevenção combinada" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Iniciar PEP (esquema antirretroviral) por 28 dias"
+              },
+              {
+                "tipo": "end",
+                "texto": "Seguimento sorológico conforme protocolo"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "PEP não indicada após 72h → orientar testagem e prevenção combinada"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2858,17 +2968,46 @@
     "revisado": false,
     "fonte": "EULAR/ACR Classification Criteria for SLE (2019)",
     "fluxo": [
-      { "tipo": "start", "texto": "Suspeita clínica de LES (quadro multissistêmico)" },
-      { "tipo": "action", "texto": "Solicitar FAN" },
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de LES (quadro multissistêmico)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Solicitar FAN"
+      },
       {
         "tipo": "decisao",
         "texto": "FAN positivo (≥1:80)?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Aplicar critérios clínicos e imunológicos ponderados (EULAR/ACR 2019)" }, { "tipo": "end", "texto": "Pontuação ≥10 confirma classificação de LES" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "LES improvável → investigar diagnósticos diferenciais" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Aplicar critérios clínicos e imunológicos ponderados (EULAR/ACR 2019)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Pontuação ≥10 confirma classificação de LES"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "LES improvável → investigar diagnósticos diferenciais"
+              }
+            ]
+          }
         ]
       },
-      { "tipo": "alerta", "texto": "Nefrite lúpica ou neurolúpus → tratamento imunossupressor intensivo imediato" }
+      {
+        "tipo": "alerta",
+        "texto": "Nefrite lúpica ou neurolúpus → tratamento imunossupressor intensivo imediato"
+      }
     ]
   },
   {
@@ -2880,17 +3019,46 @@
     "revisado": false,
     "fonte": "ESC Guidelines for Pulmonary Embolism and Venous Thromboembolism (2019, atualizacao 2024)",
     "fluxo": [
-      { "tipo": "start", "texto": "Suspeita de TVP (edema assimétrico + dor em membro inferior)" },
-      { "tipo": "action", "texto": "Calcular escore de Wells para TVP" },
+      {
+        "tipo": "start",
+        "texto": "Suspeita de TVP (edema assimétrico + dor em membro inferior)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Calcular escore de Wells para TVP"
+      },
       {
         "tipo": "decisao",
         "texto": "Probabilidade baixa?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Dosar D-dímero" }, { "tipo": "end", "texto": "D-dímero negativo exclui TVP; positivo → USG doppler" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "action", "texto": "USG doppler venoso diretamente" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Dosar D-dímero"
+              },
+              {
+                "tipo": "end",
+                "texto": "D-dímero negativo exclui TVP; positivo → USG doppler"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "USG doppler venoso diretamente"
+              }
+            ]
+          }
         ]
       },
-      { "tipo": "end", "texto": "Confirmada TVP → iniciar anticoagulação plena" }
+      {
+        "tipo": "end",
+        "texto": "Confirmada TVP → iniciar anticoagulação plena"
+      }
     ]
   },
   {
@@ -2902,14 +3070,41 @@
     "revisado": false,
     "fonte": "World Society of Emergency Surgery (WSES) Guidelines for Acute Left-Sided Colonic Diverticulitis (2020)",
     "fluxo": [
-      { "tipo": "start", "texto": "Diverticulite aguda diagnosticada (clínica + TC de abdome)" },
+      {
+        "tipo": "start",
+        "texto": "Diverticulite aguda diagnosticada (clínica + TC de abdome)"
+      },
       {
         "tipo": "decisao",
         "texto": "Classificação de Hinchey",
         "ramos": [
-          { "label": "Não complicada", "fluxo": [ { "tipo": "end", "texto": "Tratamento ambulatorial, antibiótico conforme caso" } ] },
-          { "label": "I-II (abscesso)", "fluxo": [ { "tipo": "action", "texto": "Antibiótico + drenagem percutânea se abscesso >4cm" } ] },
-          { "label": "III-IV (peritonite)", "fluxo": [ { "tipo": "alerta", "texto": "Cirurgia de urgência" } ] }
+          {
+            "label": "Não complicada",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratamento ambulatorial, antibiótico conforme caso"
+              }
+            ]
+          },
+          {
+            "label": "I-II (abscesso)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Antibiótico + drenagem percutânea se abscesso >4cm"
+              }
+            ]
+          },
+          {
+            "label": "III-IV (peritonite)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Cirurgia de urgência"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2923,14 +3118,36 @@
     "revisado": false,
     "fonte": "NCCN Guidelines for Breast Cancer",
     "fluxo": [
-      { "tipo": "start", "texto": "Nódulo de mama identificado (exame clínico ou de imagem)" },
-      { "tipo": "action", "texto": "Classificar por BI-RADS" },
+      {
+        "tipo": "start",
+        "texto": "Nódulo de mama identificado (exame clínico ou de imagem)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Classificar por BI-RADS"
+      },
       {
         "tipo": "decisao",
         "texto": "BI-RADS 4 ou 5?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Biópsia (suspeito de malignidade)" } ] },
-          { "label": "Não (BI-RADS 1-3)", "fluxo": [ { "tipo": "end", "texto": "Seguimento de imagem conforme categoria" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Biópsia (suspeito de malignidade)"
+              }
+            ]
+          },
+          {
+            "label": "Não (BI-RADS 1-3)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguimento de imagem conforme categoria"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2944,13 +3161,32 @@
     "revisado": false,
     "fonte": "WHO Recommendations for Intrapartum Care",
     "fluxo": [
-      { "tipo": "start", "texto": "Acompanhamento do trabalho de parto no partograma" },
+      {
+        "tipo": "start",
+        "texto": "Acompanhamento do trabalho de parto no partograma"
+      },
       {
         "tipo": "decisao",
         "texto": "Curva de dilatação cruza a linha de ação?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Intervenção ativa indicada (reavaliar via de parto)" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Manter acompanhamento expectante" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Intervenção ativa indicada (reavaliar via de parto)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter acompanhamento expectante"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2964,14 +3200,40 @@
     "revisado": false,
     "fonte": "FEBRASGO - Diabetes na Gestacao",
     "fluxo": [
-      { "tipo": "start", "texto": "Gestante entre 24-28 semanas (rastreio universal)" },
-      { "tipo": "action", "texto": "TOTG 75g" },
+      {
+        "tipo": "start",
+        "texto": "Gestante entre 24-28 semanas (rastreio universal)"
+      },
+      {
+        "tipo": "action",
+        "texto": "TOTG 75g"
+      },
       {
         "tipo": "decisao",
         "texto": "Algum valor acima do ponto de corte?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Diagnóstico de DMG → dieta e atividade física" }, { "tipo": "end", "texto": "Insulina se controle inadequado" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Rastreio negativo → seguimento pré-natal de rotina" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Diagnóstico de DMG → dieta e atividade física"
+              },
+              {
+                "tipo": "end",
+                "texto": "Insulina se controle inadequado"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Rastreio negativo → seguimento pré-natal de rotina"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2985,13 +3247,32 @@
     "revisado": false,
     "fonte": "FEBRASGO - Manual de Climaterio",
     "fluxo": [
-      { "tipo": "start", "texto": "Mulher no climatério/pós-menopausa" },
+      {
+        "tipo": "start",
+        "texto": "Mulher no climatério/pós-menopausa"
+      },
       {
         "tipo": "decisao",
         "texto": "Sangramento vaginal após a menopausa?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Investigar sempre (excluir neoplasia endometrial)" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Avaliar indicação de terapia hormonal para sintomas vasomotores" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar sempre (excluir neoplasia endometrial)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Avaliar indicação de terapia hormonal para sintomas vasomotores"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3005,16 +3286,30 @@
     "revisado": false,
     "fonte": "AHA/AAP Neonatal Resuscitation Program (NRP), 8a edicao",
     "fluxo": [
-      { "tipo": "start", "texto": "Recém-nascido ao nascer" },
+      {
+        "tipo": "start",
+        "texto": "Recém-nascido ao nascer"
+      },
       {
         "tipo": "decisao",
         "texto": "Termo, respirando/chorando, bom tônus?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "end", "texto": "Contato pele a pele com a mãe, sem intervenção adicional" } ] },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Contato pele a pele com a mãe, sem intervenção adicional"
+              }
+            ]
+          },
           {
             "label": "Não",
             "fluxo": [
-              { "tipo": "action", "texto": "Passos iniciais: aquecer, posicionar, aspirar se necessário, secar/estimular" },
+              {
+                "tipo": "action",
+                "texto": "Passos iniciais: aquecer, posicionar, aspirar se necessário, secar/estimular"
+              },
               {
                 "tipo": "decisao",
                 "texto": "Apneia/gasping ou FC<100bpm?",
@@ -3022,11 +3317,25 @@
                   {
                     "label": "Sim",
                     "fluxo": [
-                      { "tipo": "action", "texto": "Ventilação com pressão positiva (VPP)" },
-                      { "tipo": "alerta", "texto": "FC<60bpm apesar de VPP por 30s → compressões torácicas (3:1) + considerar adrenalina" }
+                      {
+                        "tipo": "action",
+                        "texto": "Ventilação com pressão positiva (VPP)"
+                      },
+                      {
+                        "tipo": "alerta",
+                        "texto": "FC<60bpm apesar de VPP por 30s → compressões torácicas (3:1) + considerar adrenalina"
+                      }
                     ]
                   },
-                  { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Observação contínua" } ] }
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Observação contínua"
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -3044,14 +3353,36 @@
     "revisado": false,
     "fonte": "AAP Clinical Practice Guideline: Bronchiolitis",
     "fluxo": [
-      { "tipo": "start", "texto": "Lactente com quadro compatível com bronquiolite" },
-      { "tipo": "action", "texto": "Avaliar gravidade clínica (esforço respiratório, SatO2, aceitação alimentar)" },
+      {
+        "tipo": "start",
+        "texto": "Lactente com quadro compatível com bronquiolite"
+      },
+      {
+        "tipo": "action",
+        "texto": "Avaliar gravidade clínica (esforço respiratório, SatO2, aceitação alimentar)"
+      },
       {
         "tipo": "decisao",
         "texto": "Apneia, desconforto grave ou recusa alimentar?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "alerta", "texto": "Internação hospitalar" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Tratamento de suporte ambulatorial (hidratação, sinais de alarme)" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Internação hospitalar"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratamento de suporte ambulatorial (hidratação, sinais de alarme)"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3065,14 +3396,226 @@
     "revisado": false,
     "fonte": "American Pediatric Surgical Association (APSA) Guidelines",
     "fluxo": [
-      { "tipo": "start", "texto": "Lactente de 3-6 semanas com vômitos não biliosos em jato" },
-      { "tipo": "action", "texto": "Solicitar ultrassonografia abdominal" },
+      {
+        "tipo": "start",
+        "texto": "Lactente de 3-6 semanas com vômitos não biliosos em jato"
+      },
+      {
+        "tipo": "action",
+        "texto": "Solicitar ultrassonografia abdominal"
+      },
       {
         "tipo": "decisao",
         "texto": "USG confirma espessamento/alongamento do canal pilórico?",
         "ramos": [
-          { "label": "Sim", "fluxo": [ { "tipo": "action", "texto": "Corrigir alcalose hipoclorêmica/hipocalêmica" }, { "tipo": "end", "texto": "Piloromiotomia (tratamento definitivo)" } ] },
-          { "label": "Não", "fluxo": [ { "tipo": "end", "texto": "Investigar outras causas de vômitos no lactente" } ] }
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Corrigir alcalose hipoclorêmica/hipocalêmica"
+              },
+              {
+                "tipo": "end",
+                "texto": "Piloromiotomia (tratamento definitivo)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar outras causas de vômitos no lactente"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-gota-tratamento",
+    "temaId": "gota",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Gota — Fluxo de tratamento (crise aguda x manutenção)",
+    "revisado": true,
+    "fonte": "ACR 2020 Guideline for the Management of Gout",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de crise aguda de gota (monoartrite, podagra)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente já em hipouricemiante crônico estabelecido?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "MANTER hipouricemiante na mesma dose (nunca suspender/ajustar na crise)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "NÃO iniciar hipouricemiante agora (pode prolongar/exacerbar a crise)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Contraindicação a AINE (DRC significativa, sangramento GI ativo, uso de anticoagulante)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Corticoide sistêmico ou infiltração intra-articular"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "AINE em dose plena OU colchicina em dose baixa"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Resolução da crise aguda"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Critério para iniciar/manter hipouricemiante crônico? (≥2 crises/ano, tofos, DRC ≥3, urolitíase ou ácido úrico >9)",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Alopurinol em dose baixa, titulação progressiva (\"start low, go slow\")"
+              },
+              {
+                "tipo": "action",
+                "texto": "Meta de ácido úrico sérico < 6 mg/dL (treat-to-target)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Profilaxia anti-inflamatória (colchicina/AINE em dose baixa) por 3-6 meses ao iniciar hipouricemiante"
+              },
+              {
+                "tipo": "end",
+                "texto": "Seguimento com dosagens seriadas de ácido úrico"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Reavaliar em cada nova crise; individualizar decisão"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-artrite-reumatoide-tratamento",
+    "temaId": "artrite-reumatoide",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Artrite Reumatoide — Escalonamento terapêutico (treat-to-target)",
+    "revisado": true,
+    "fonte": "EULAR/ACR recommendations for the management of RA; ASAS-EULAR update 2022 (posição dos JAKi)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico de artrite reumatoide confirmado"
+      },
+      {
+        "tipo": "action",
+        "texto": "Iniciar metotrexato (DMARD sintético convencional, droga âncora) + ácido fólico"
+      },
+      {
+        "tipo": "action",
+        "texto": "Corticoide em baixa dose como ponte, se necessário, pelo menor tempo possível"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Meta de baixa atividade/remissão (DAS28) atingida em 3-6 meses com MTX otimizado?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter MTX; desmamar corticoide"
+              },
+              {
+                "tipo": "end",
+                "texto": "Seguimento com reavaliação periódica da atividade de doença"
+              }
+            ]
+          },
+          {
+            "label": "Não (falha ao MTX)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Fatores de risco cardiovascular, neoplasia prévia ou risco de TEV?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Preferir DMARD biológico (anti-TNF) em vez de inibidor de JAK (ASAS-EULAR 2022, após ORAL Surveillance)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Anti-TNF, inibidor de JAK ou outro biológico — decisão compartilhada"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tipo": "action",
+                "texto": "Reavaliar em 3 meses; se falha, trocar classe de biológico/JAKi"
+              },
+              {
+                "tipo": "alerta",
+                "texto": "Janela de oportunidade: evitar prolongar doença ativa — risco de dano articular estrutural irreversível"
+              },
+              {
+                "tipo": "end",
+                "texto": "Seguimento com escalonamento até atingir meta de baixa atividade/remissão"
+              }
+            ]
+          }
         ]
       }
     ]
