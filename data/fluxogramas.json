@@ -3619,5 +3619,102 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-has-crise-atendimento",
+    "temaId": "has",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "HAS — Fluxo de atendimento na crise hipertensiva",
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Hipertensão Arterial 2025 (SBC/SBN/SBH)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "PA acentuadamente elevada (tipicamente >180/120mmHg) na emergência"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há sinais de lesão AGUDA de órgão-alvo? (dor torácica, déficit neurológico focal, dispneia/EAP, encefalopatia com confusão/convulsão, papiledema, PRES, dissecção de aorta)",
+        "ramos": [
+          {
+            "label": "Sim — Emergência hipertensiva",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Internação, monitorização contínua e via parenteral"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Qual situação especial?",
+                "ramos": [
+                  {
+                    "label": "Dissecção de aorta",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Betabloqueador IV (esmolol/metoprolol) PRIMEIRO para controlar FC/dP-dt, depois vasodilatador se necessário"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Edema agudo de pulmão",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Furosemida + nitroglicerina IV"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Encefalopatia hipertensiva/PRES/AVC",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Nitroprussiato IV; reduzir PA em até 25% nas primeiras 1-2h (nunca normalizar de forma abrupta)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Feocromocitoma suspeito",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Alfabloqueador (fentolamina) ANTES de betabloqueador — nunca betabloqueador isolado primeiro"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tipo": "end",
+                "texto": "Meta: reduzir PA em ~25% nas primeiras 1-2h, evitando queda abrupta/excessiva"
+              }
+            ]
+          },
+          {
+            "label": "Não — sem lesão aguda",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "\"Elevação importante da PA sem lesão de órgão-alvo\" (antigo termo: urgência hipertensiva)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Reintroduzir/ajustar medicação anti-hipertensiva por via ORAL"
+              },
+              {
+                "tipo": "action",
+                "texto": "Repouso em observação breve; reavaliar PA antes da alta"
+              },
+              {
+                "tipo": "end",
+                "texto": "Alta com reavaliação ambulatorial precoce em até 7 dias — sem necessidade de internação"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
