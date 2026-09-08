@@ -1248,8 +1248,9 @@
     "categoria": "Neurologia",
     "titulo": "Meningite Bacteriana Aguda",
     "resumo": "Reconhecimento clínico, papel da punção lombar e tratamento antibiótico empírico precoce.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Infectologia; Ministério da Saúde — Guia de Vigilância em Saúde; IDSA Clinical Practice Guidelines for Bacterial Meningitis",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Infectologia; Ministério da Saúde — Guia de Vigilância em Saúde; IDSA Clinical Practice Guidelines for Bacterial Meningitis; ESCMID Guideline on Acute Bacterial Meningitis; NICE Guideline 2024",
+    "comoCai": "No SES-PE e no ENAMED, a regra de nunca atrasar o antibiótico empírico aguardando exames (tomografia/punção lombar) é a cobrança mais recorrente e importante do tema, junto aos critérios que indicam TC antes da punção. A quimioprofilaxia de contactantes na meningite meningocócica (rifampicina/ciprofloxacino/ceftriaxona) é outro ponto clássico frequentemente cobrado que merece atenção redobrada.",
     "mnemonicos": [
       {
         "palavra": "TRÍADE CLÁSSICA",
@@ -1275,7 +1276,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Antibioticoterapia empírica endovenosa deve ser iniciada imediatamente após a suspeita clínica, idealmente logo após a coleta de hemoculturas e líquor — mas jamais adiada caso haja atraso na realização desses exames (por exemplo, aguardando tomografia prévia à punção), pois cada hora de atraso aumenta significativamente a mortalidade. O esquema empírico habitual associa cefalosporina de terceira geração (ceftriaxona) com vancomicina, ajustado após identificação do agente. Corticoide (dexametasona) associado ao antibiótico, idealmente antes ou junto à primeira dose, reduz complicações neurológicas em meningite pneumocócica."
+        "conteudo": "Antibioticoterapia empírica endovenosa deve ser iniciada imediatamente após a suspeita clínica — a diretriz ESCMID recomenda início em até 1 hora da chegada ao serviço —, idealmente logo após a coleta de hemoculturas e líquor, mas jamais adiada caso haja atraso na realização desses exames (por exemplo, aguardando tomografia prévia à punção), pois cada hora de atraso aumenta significativamente a mortalidade. O esquema empírico habitual associa cefalosporina de terceira geração (ceftriaxona) com vancomicina, ajustado após identificação do agente; diante de pneumococo com resistência à cefalosporina (CIM >2mcg/mL), deve-se manter ou associar rifampicina, droga com efeito sinérgico comprovado à ceftriaxona nessas cepas resistentes. Corticoide (dexametasona) associado ao antibiótico, administrado antes ou junto à primeira dose (nunca depois), reduz complicações neurológicas (especialmente perda auditiva) em meningite pneumocócica. Contactantes próximos de caso de meningite meningocócica devem receber quimioprofilaxia (rifampicina, ciprofloxacino ou ceftriaxona), preferindo-se ceftriaxona ou rifampicina a ciprofloxacino em regiões com resistência documentada de N. meningitidis às fluoroquinolonas. Após a alta, recomenda-se avaliação audiométrica de rotina (risco de surdez neurossensorial, complicação mais comum) e atualização vacinal (pneumocócica/meningocócica) para prevenir recorrência."
       },
       {
         "titulo": "Sinais de alerta",
@@ -1283,7 +1284,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A regra de nunca atrasar o antibiótico empírico aguardando tomografia ou punção lombar em paciente grave é a cobrança mais importante e recorrente do tema — a sequência correta prioriza hemocultura rápida seguida de antibiótico imediato quando há qualquer impedimento à punção imediata. Os critérios que indicam tomografia antes da punção lombar (imunossupressão, sinais focais, papiledema, convulsão recente) também são frequentemente exigidos."
+        "conteudo": "A regra de nunca atrasar o antibiótico empírico aguardando tomografia ou punção lombar em paciente grave é a cobrança mais importante e recorrente do tema — a sequência correta prioriza hemocultura rápida seguida de antibiótico imediato quando há qualquer impedimento à punção imediata. Os critérios que indicam tomografia antes da punção lombar (imunossupressão, sinais focais, papiledema, convulsão recente) também são frequentemente exigidos. A quimioprofilaxia de contactantes (rifampicina/ciprofloxacino/ceftriaxona) na meningite meningocócica e a avaliação audiométrica pós-alta são pontos de crescente cobrança."
       }
     ]
   },
