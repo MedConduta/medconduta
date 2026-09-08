@@ -4220,8 +4220,8 @@
     "categoria": "Reumatologia",
     "titulo": "Fibromialgia",
     "resumo": "Dor difusa crônica sem sinais objetivos de inflamação, diagnóstico clínico e tratamento multimodal.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Reumatologia; Critérios ACR 2016 para Fibromialgia",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Reumatologia; Critérios ACR 2016 para Fibromialgia; EULAR revised recommendations for the management of fibromyalgia (Macfarlane et al., Ann Rheum Dis 2017); Sociedade Brasileira de Reumatologia — atualização da diretriz brasileira de fibromialgia (Advances in Rheumatology, 2026)",
     "mnemonicos": [
       {
         "palavra": "Dor sem inflamação",
@@ -4247,7 +4247,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O tratamento é multimodal, combinando educação do paciente sobre a natureza da condição, exercício físico regular (aeróbico, com evidência robusta de benefício e considerado intervenção de primeira linha), terapia cognitivo-comportamental, e farmacoterapia (antidepressivos tricíclicos, duloxetina, pregabalina) para controle sintomático quando necessário. Opioides não são recomendados pela falta de eficácia comprovada a longo prazo e pelo risco de dependência nessa população."
+        "conteudo": "O tratamento é multimodal, combinando educação do paciente sobre a natureza da condição, exercício físico regular (aeróbico, com evidência robusta de benefício e considerado intervenção de primeira linha), terapia cognitivo-comportamental, e farmacoterapia (antidepressivos tricíclicos, duloxetina, pregabalina) para controle sintomático quando necessário. Opioides não são recomendados pela falta de eficácia comprovada a longo prazo e pelo risco de dependência nessa população. Uma metanálise em rede de 2025 (61 estudos, ~2.873 pacientes) sugere que o exercício aquático traz maior benefício para alívio de curto prazo, enquanto o treinamento resistido/de fortalecimento é mais eficaz para o manejo a longo prazo — refinamento útil sobre a recomendação genérica de exercício regular. A atualização da diretriz brasileira da Sociedade Brasileira de Reumatologia (2026, substituindo o documento de 2010) passou a recomendar explicitamente CONTRA o uso rotineiro de opioides, anti-inflamatórios não esteroidais, canabinoides, benzodiazepínicos e terapias endovenosas, dando peso equivalente às terapias não farmacológicas em relação às farmacológicas e admitindo acupuntura e neuromodulação não invasiva como opções adjuvantes. Ensaios recentes com canabinoides (CBD, 2025) não mostraram superioridade sobre placebo, enquanto uma metanálise de 2024 sobre naltrexona em baixa dose (off-label) sugeriu benefício sobre dor e qualidade de vida, ainda não incorporado às diretrizes formais."
       },
       {
         "titulo": "Sinais de alerta",
@@ -4255,9 +4255,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O abandono dos tender points nos critérios diagnósticos atuais (substituídos pelo índice de dor generalizada e escala de sintomas) é atualização de diretriz frequentemente cobrada em provas recentes. O exercício físico como intervenção de primeira linha (superando muitas vezes a farmacoterapia isolada em eficácia) e a contraindicação de opioides também são pontos centrais e recorrentes."
+        "conteudo": "O abandono dos tender points nos critérios diagnósticos atuais (substituídos pelo índice de dor generalizada e escala de sintomas) é atualização de diretriz frequentemente cobrada em provas recentes. O exercício físico como intervenção de primeira linha (superando muitas vezes a farmacoterapia isolada em eficácia) e a contraindicação de opioides também são pontos centrais e recorrentes. A recomendação explícita contra opioides, AINEs rotineiros, canabinoides e benzodiazepínicos (diretriz SBR 2026) e o peso equivalente dado às terapias não farmacológicas são pontos de atualização emergentes."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a fibromialgia costuma ser cobrada por meio de vinhetas de dor musculoesquelética difusa crônica (>3 meses) associada a fadiga, sono não reparador e sintomas cognitivos (\"névoa mental\"), com exame físico e exames laboratoriais completamente normais — exigindo reconhecimento dos critérios ACR 2016 (índice de dor generalizada + escala de gravidade de sintomas, com abandono dos antigos tender points) e a exclusão de diagnósticos diferenciais (hipotireoidismo, polimialgia reumática, miopatias inflamatórias). O exercício físico regular como intervenção de primeira linha, a contraindicação de opioides e o papel de antidepressivos tricíclicos/duloxetina/pregabalina no controle sintomático são pontos centrais e recorrentes."
   },
   {
     "id": "gota",
