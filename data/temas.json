@@ -4266,8 +4266,8 @@
     "categoria": "Reumatologia",
     "titulo": "Gota (Artrite Gotosa)",
     "resumo": "Crise aguda de monoartrite por depósito de urato, diagnóstico por análise do líquido sinovial e tratamento hipouricemiante crônico.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Reumatologia — Diretriz de Gota; ACR Guideline for the Management of Gout",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Reumatologia — Diretriz de Gota; ACR Guideline for the Management of Gout; FitzGerald JD, et al. 2020 ACR Guideline for the Management of Gout (Arthritis Care Res); CARES trial (NEJM, 2018) e FAST trial (Lancet, 2020); FDA Drug Safety Communication (2019); MIRROR trial — pegloticase + metotrexato (Arthritis Rheumatol, 2023)",
     "mnemonicos": [
       {
         "palavra": "Podagra",
@@ -4293,7 +4293,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "A crise aguda é tratada com AINEs, colchicina ou corticoide (conforme comorbidades e contraindicações do paciente), nunca com iniciação de hipouricemiante durante a crise (pode prolongar ou exacerbar o episódio agudo pela flutuação dos níveis de ácido úrico). O tratamento hipouricemiante de longo prazo (alopurinol como primeira linha) é indicado após resolução da crise aguda, em pacientes com crises recorrentes, tofos ou lesão renal associada, com meta terapêutica de ácido úrico sérico abaixo de 6mg/dL."
+        "conteudo": "A crise aguda é tratada com AINEs, colchicina ou corticoide (conforme comorbidades e contraindicações do paciente), nunca com iniciação de hipouricemiante durante a crise (pode prolongar ou exacerbar o episódio agudo pela flutuação dos níveis de ácido úrico). O tratamento hipouricemiante de longo prazo (alopurinol como primeira linha) é indicado após resolução da crise aguda, em pacientes com crises recorrentes, tofos ou lesão renal associada, com meta terapêutica de ácido úrico sérico abaixo de 6mg/dL. A diretriz ACR 2020 recomenda alopurinol como hipouricemiante de primeira linha para a maioria dos pacientes, inclusive com doença renal crônica (estratégia \"start low, go slow\"), com meta única de ácido úrico sérico <6 mg/dL (treat-to-target). A ULT deve ser considerada já após o primeiro episódio em pacientes com DRC estágio ≥3, urolitíase, tofos ou ácido úrico >9 mg/dL. O febuxostate é opção alternativa, mas seu perfil de segurança cardiovascular permanece controverso: o estudo CARES (2018) mostrou maior mortalidade cardiovascular versus alopurinol (levando a alerta de tarja preta da FDA em 2019, ainda vigente), enquanto o estudo FAST (2020) encontrou não-inferioridade — resultados discordantes que mantêm a orientação prática de reservar o febuxostate a pacientes com contraindicação/intolerância ao alopurinol. Triagem do alelo HLA-B*5801 (risco de síndrome de hipersensibilidade grave ao alopurinol) é recomendada condicionalmente em pacientes de ascendência do sudeste asiático e afrodescendentes. Para gota tofácea refratária a hipouricemiantes orais, a pegloticase intravenosa é opção, e o estudo MIRROR (2023) mostrou que sua associação com metotrexato em baixa dose aumenta significativamente a taxa de resposta sustentada (39% para 71%) e reduz reações infusionais."
       },
       {
         "titulo": "Sinais de alerta",
@@ -4301,9 +4301,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A contraindicação de iniciar ou ajustar hipouricemiante durante a crise aguda (pode prolongá-la) é cobrança certíssima e um dos pontos mais importantes e recorrentes do tema. A birrefringência negativa dos cristais de urato (versus birrefringência positiva fraca do pirofosfato de cálcio na pseudogota) também é frequentemente exigida em questões de diagnóstico diferencial de cristalopatias."
+        "conteudo": "A contraindicação de iniciar ou ajustar hipouricemiante durante a crise aguda (pode prolongá-la) é cobrança certíssima e um dos pontos mais importantes e recorrentes do tema. A birrefringência negativa dos cristais de urato (versus birrefringência positiva fraca do pirofosfato de cálcio na pseudogota) também é frequentemente exigida em questões de diagnóstico diferencial de cristalopatias. Atualizações recentes incluem os critérios da ACR 2020 para início de hipouricemiante já no primeiro episódio (DRC ≥3, urolitíase, tofos, ácido úrico >9), a controvérsia sobre segurança cardiovascular do febuxostate (CARES vs. FAST) e a aprovação da colchicina em baixa dose para redução de eventos cardiovasculares em aterosclerose estabelecida (LoDoCo2/FDA 2023), relevante pela sobreposição entre populações com gota e doença cardiovascular."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a gota costuma ser cobrada por meio de vinhetas de monoartrite aguda intensamente dolorosa (classicamente podagra), exigindo diagnóstico diferencial obrigatório com artrite séptica (via artrocentese) e reconhecimento dos cristais de urato monossódico com birrefringência negativa forte (vs. cristais romboides com birrefringência positiva fraca da pseudogota/CPPD). A contraindicação de iniciar ou ajustar hipouricemiante durante a crise aguda, a escolha de AINE/colchicina/corticoide conforme comorbidades, e o alopurinol como hipouricemiante de primeira linha com meta de ácido úrico <6 mg/dL são pontos centrais e recorrentes. O paradoxo do ácido úrico normal durante a crise aguda também é frequentemente explorado."
   },
   {
     "id": "ists-gonorreia-clamidia-outras",
