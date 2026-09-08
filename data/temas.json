@@ -8923,8 +8923,8 @@
     "categoria": "Infectologia",
     "titulo": "Parasitoses Intestinais",
     "resumo": "Principais helmintíases e protozooses intestinais, e a neurocisticercose como causa tratável de epilepsia.",
-    "revisado": false,
-    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Pediatria",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; Sociedade Brasileira de Pediatria; IDSA/ASTMH — Clinical Practice Guidelines for Diagnosis and Treatment of Neurocysticercosis (2017); OMS — Guidelines on management of Taenia solium neurocysticercosis (2021); WHO — controle de helmintíases transmitidas pelo solo (STH) e programas One Health para Taenia solium",
     "mnemonicos": [
       {
         "palavra": "Oxiúro coça de noite",
@@ -8934,7 +8934,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "As parasitoses intestinais mais prevalentes no Brasil incluem helmintos (Ascaris lumbricoides, Trichuris trichiura, ancilostomídeos, Enterobius vermicularis, Strongyloides stercoralis) e protozoários (Giardia lamblia, Entamoeba histolytica), transmitidos predominantemente por via fecal-oral ou penetração cutânea ativa (ancilostomídeos, Strongyloides), associadas a condições de saneamento básico inadequado. O Strongyloides stercoralis merece atenção especial por seu ciclo de autoinfecção interna, que permite persistência da infecção por décadas e risco de hiperinfecção grave em imunossuprimidos."
+        "conteudo": "As parasitoses intestinais mais prevalentes no Brasil incluem helmintos (Ascaris lumbricoides, Trichuris trichiura, ancilostomídeos, Enterobius vermicularis, Strongyloides stercoralis) e protozoários (Giardia lamblia, Entamoeba histolytica), transmitidos predominantemente por via fecal-oral ou penetração cutânea ativa (ancilostomídeos, Strongyloides), associadas a condições de saneamento básico inadequado. O Strongyloides stercoralis merece atenção especial por seu ciclo de autoinfecção interna, que permite persistência da infecção por décadas e risco de hiperinfecção grave em imunossuprimidos. O Brasil deixou, em 2016, a classificação de área endêmica prioritária para helmintíases transmitidas pelo solo segundo critérios da OMS, não sendo mais necessária a administração em massa (desparasitação em massa) de anti-helmínticos em escala nacional, embora bolsões de transmissão persistam em regiões de saneamento precário. A neurocisticercose, causada pela forma larvária da Taenia solium (Cysticercus cellulosae) no sistema nervoso central, permanece importante causa evitável de epilepsia no Brasil, adquirida pela ingestão de ovos do parasita (heteroinfecção fecal-oral, não pelo consumo de carne suína malcozida — que causa apenas a teníase intestinal pelo verme adulto)."
       },
       {
         "titulo": "Quadro clínico",
@@ -8946,11 +8946,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O exame parasitológico de fezes (idealmente seriado, em três amostras coletadas em dias diferentes, pela eliminação intermitente de ovos/cistos) é o exame padrão para a maioria das parasitoses. Para enterobíase, a fita adesiva/swab perianal (método de Graham), coletada pela manhã antes da higiene, tem maior sensibilidade que o exame de fezes convencional, pois os ovos raramente são eliminados nas fezes."
+        "conteudo": "O exame parasitológico de fezes (idealmente seriado, em três amostras coletadas em dias diferentes, pela eliminação intermitente de ovos/cistos) é o exame padrão para a maioria das parasitoses. Para enterobíase, a fita adesiva/swab perianal (método de Graham), coletada pela manhã antes da higiene, tem maior sensibilidade que o exame de fezes convencional, pois os ovos raramente são eliminados nas fezes. O diagnóstico de neurocisticercose combina critérios clínico-epidemiológicos, neuroimagem (tomografia ou ressonância evidenciando cistos com ou sem escólex, calcificações ou lesões em diferentes estágios evolutivos) e exames laboratoriais do líquor (citomorfológico, bioquímico, sorológico), conforme as diretrizes IDSA/ASTMH (2017) e da OMS (2021), incorporadas ao Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Albendazol ou mebendazol são eficazes contra a maioria dos helmintos intestinais comuns (Ascaris, Trichuris, ancilostomídeos, Enterobius); tratamento de toda a família é recomendado na enterobíase pela alta transmissibilidade domiciliar. Metronidazol ou secnidazol são o tratamento de escolha para giardíase e amebíase. Estrongiloidíase requer ivermectina (mais eficaz que os benzimidazóis para esse parasita específico), sendo fundamental rastrear e tratar antes de iniciar imunossupressão em pacientes de área endêmica, prevenindo a hiperinfecção potencialmente fatal."
+        "conteudo": "Albendazol ou mebendazol são eficazes contra a maioria dos helmintos intestinais comuns (Ascaris, Trichuris, ancilostomídeos, Enterobius); tratamento de toda a família é recomendado na enterobíase pela alta transmissibilidade domiciliar. Metronidazol ou secnidazol são o tratamento de escolha para giardíase e amebíase. Estrongiloidíase requer ivermectina (mais eficaz que os benzimidazóis para esse parasita específico), sendo fundamental rastrear e tratar antes de iniciar imunossupressão em pacientes de área endêmica, prevenindo a hiperinfecção potencialmente fatal. O tratamento da estrongiloidíase com ivermectina (200 mcg/kg/dia por 2 dias) é considerado superior ao albendazol em eficácia, sendo a droga de escolha atual; casos de hiperinfecção exigem esquemas prolongados. Na neurocisticercose, o tratamento antiparasitário (albendazol, associado ou não a praziquantel) é individualizado conforme o número, localização e estágio evolutivo dos cistos, sempre associado a corticoide (para atenuar a reação inflamatória à morte do parasita) e anticonvulsivantes quando há crises; cistos calcificados únicos geralmente não requerem tratamento antiparasitário. Em nível de saúde pública, programas \"One Health\" combinando vacina TSOL18 em suínos, tratamento com oxfendazol veterinário e taeniacida em humanos têm demonstrado eficácia quase completa na interrupção do ciclo de transmissão da Taenia solium em áreas endêmicas."
       },
       {
         "titulo": "Sinais de alerta",
@@ -8958,9 +8958,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O método de Graham (fita adesiva perianal) como exame de escolha para enterobíase (superior ao exame de fezes comum) é cobrança certa. O risco de hiperinfecção por Strongyloides em pacientes imunossuprimidos e a necessidade de rastreamento/tratamento prévio à imunossupressão em área endêmica também são pontos frequentemente exigidos e considerados de alta relevância clínica prática."
+        "conteudo": "O método de Graham (fita adesiva perianal) como exame de escolha para enterobíase (superior ao exame de fezes comum) é cobrança certa. O risco de hiperinfecção por Strongyloides em pacientes imunossuprimidos e a necessidade de rastreamento/tratamento prévio à imunossupressão em área endêmica também são pontos frequentemente exigidos e considerados de alta relevância clínica prática. A diferenciação entre teníase (ingestão de carne suína malcozida com cisticercos, causando o verme adulto no intestino) e cisticercose/neurocisticercose (ingestão de ovos do parasita, por via fecal-oral, causando doença larvária tecidual) é armadilha clássica de prova."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o método de Graham (fita adesiva perianal) como exame de escolha para enterobíase (superior ao exame de fezes comum) é cobrança certa, assim como o risco de síndrome de hiperinfecção por Strongyloides stercoralis em pacientes que serão imunossuprimidos — exigindo rastreamento e tratamento empírico prévio em área endêmica. A armadilha clássica de diferenciar teníase (ingestão de carne suína malcozida, verme adulto intestinal) de cisticercose/neurocisticercose (ingestão de ovos por via fecal-oral, doença larvária tecidual, causa evitável de epilepsia) também é tema recorrente, com a neuroimagem e o líquor como pilares diagnósticos. Espoliação sanguínea crônica por ancilostomídeos como causa de anemia ferropriva em crianças de área endêmica e o esquema terapêutico correto para cada parasita (albendazol/mebendazol para helmintos comuns, metronidazol/secnidazol para giardíase e amebíase, ivermectina — superior ao albendazol — para estrongiloidíase) completam o núcleo de cobrança do tema."
   },
   {
     "id": "escabiose-pediculose",
