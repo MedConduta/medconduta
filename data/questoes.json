@@ -14699,5 +14699,409 @@
         "ano": 2026,
         "fonte": "Questão original MedConduta, com base no Protocolo Clínico e Diretrizes Terapêuticas para Prevenção da Transmissão Vertical de HIV, Sífilis e Hepatites Virais (Ministério da Saúde) e nas notas técnicas de desabastecimento de penicilina benzatina.",
         "revisado": true
+    },
+    {
+        "id": "q804",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Homem de 44 anos é levado à UPA com duas semanas de febre, cefaleia progressiva e desorientação, evoluindo com convulsão tônico-clônica generalizada. Ao exame: emagrecido, Glasgow 13, hemiparesia esquerda, sem sinais de irritação meníngea. Fazia acompanhamento por HIV, mas abandonou o tratamento há 1 ano. CD4 = 80 células/mm³, carga viral = 246.000 cópias/mL. TC de crânio com contraste evidencia lesões hipodensas com realce anelar. Com base na principal hipótese diagnóstica, qual o próximo passo do processo diagnóstico?",
+        "alternativas": [
+            "Colher líquor para PCR.",
+            "Iniciar prova terapêutica.",
+            "Dosar IgM e IgG no sangue.",
+            "Indicar biópsia estereotáxica."
+        ],
+        "correta": 1,
+        "comentario": "O quadro (CD4 muito baixo, lesões cerebrais múltiplas com realce anelar em paciente com abandono de TARV) é altamente sugestivo de neurotoxoplasmose, a causa mais comum de lesão expansiva cerebral em pacientes com AIDS. Diante dessa apresentação clássica, a conduta padrão é a PROVA TERAPÊUTICA empírica com sulfadiazina + pirimetamina + ácido folínico, com reavaliação clínica e radiológica em 10-14 dias — a biópsia estereotáxica é reservada para os casos SEM resposta a essa prova terapêutica (para investigar diagnósticos alternativos, como linfoma primário do SNC). A punção lombar traz risco de herniação em lesões com efeito de massa e baixo rendimento diagnóstico nesse contexto, e a sorologia IgM/IgG não confirma nem exclui neurotoxoplasmose (a reativação ocorre tipicamente com IgG positivo, sem elevação de IgM).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q805",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Há um conjunto de estratégias de prevenção (biomédicas, comportamentais e estruturais) que, combinadas, constituem a chamada \"prevenção combinada do HIV\". Assinale a alternativa que apresenta uma estratégia de prevenção combinada.",
+        "alternativas": [
+            "Prevenir a transmissão vertical do HIV.",
+            "Imunizar para hepatite B e sífilis.",
+            "Tratar as pessoas vivendo com HIV/Aids a partir do momento em que apresentarem CD4 < 350 células/mm³.",
+            "Substituir a profilaxia pré-exposição (PrEP) pela profilaxia pós-exposição (PEP).",
+            "Usar profilaxia pós-exposição (PEP) em até cinco dias após a exposição sexual desprotegida."
+        ],
+        "correta": 0,
+        "comentario": "A prevenção da transmissão vertical (testagem no pré-natal, TARV na gestante, profilaxia neonatal, orientação quanto ao aleitamento) é um dos pilares clássicos da prevenção combinada do HIV, que reúne estratégias biomédicas (PrEP, PEP, TARV como prevenção, prevenção da transmissão vertical), comportamentais (uso de preservativo, redução de danos) e estruturais (educação, redução do estigma). Não existe vacina para sífilis (opção B é absurda); o critério de CD4 < 350 para iniciar tratamento é OBSOLETO — hoje a TARV é universal e imediata ao diagnóstico, independentemente do CD4; PrEP e PEP não são substituíveis entre si (servem a momentos distintos, antes e depois da exposição); e a janela da PEP é de até 72 horas, não cinco dias.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q806",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Sobre a coinfecção tuberculose/HIV, considere as afirmações: I. Pessoas vivendo com HIV têm maior risco de desenvolver tuberculose, muitas vezes sendo diagnosticadas com HIV durante a investigação de tuberculose; a tuberculose, porém, não tem grande impacto na mortalidade por HIV. II. O teste para HIV (rápido ou sorológico) deve ser oferecido a toda pessoa com diagnóstico de tuberculose. III. Em toda visita aos serviços de saúde, a pessoa vivendo com HIV deve ser questionada quanto à presença de tosse, febre, sudorese noturna ou emagrecimento, que podem indicar tuberculose. Está(ão) correta(s):",
+        "alternativas": [
+            "Apenas a II e III estão corretas.",
+            "Apenas a I e II estão corretas.",
+            "Apenas a I está correta.",
+            "Todas estão corretas."
+        ],
+        "correta": 0,
+        "comentario": "As afirmativas II e III estão corretas: o rastreio bidirecional (oferecer teste de HIV a todo paciente com TB, e rastrear os quatro sintomas — tosse, febre, sudorese noturna, emagrecimento — em toda consulta de pessoa vivendo com HIV) é recomendação central dos programas de controle de ambas as doenças. A afirmativa I está PARCIALMENTE INCORRETA: embora seja verdade que PVHIV têm maior risco de TB e que o diagnóstico de HIV muitas vezes surge durante a investigação de TB, a tuberculose é, ao contrário do afirmado, uma das PRINCIPAIS CAUSAS DE MORTE em pessoas vivendo com HIV/AIDS no mundo, tendo sim grande impacto na mortalidade — o que invalida a afirmativa como um todo.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q807",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Homem, 25 anos, com histórico de drogadição e abandono do tratamento do HIV, procura emergência por cefaleia holocraniana intensa há mais de 1 semana e febre. Exames laboratoriais evidenciam anemia e linfopenia, e a TC de crânio com contraste NÃO apresenta lesões. A principal hipótese diagnóstica e a conduta indicada para confirmação são:",
+        "alternativas": [
+            "Encefalite herpética — eletroencefalograma.",
+            "Meningite bacteriana — análise de líquor.",
+            "Meningite criptocócica — análise de líquor.",
+            "Neurotoxoplasmose — ressonância magnética de encéfalo."
+        ],
+        "correta": 2,
+        "comentario": "A ausência de lesões expansivas na TC de crânio praticamente afasta a hipótese de neurotoxoplasmose (que cursa classicamente com lesões focais com realce anelar) e aponta para uma causa não expansiva de meningoencefalite em paciente HIV com provável imunossupressão avançada — a meningite criptocócica é a principal hipótese nesse cenário (cefaleia arrastada, febre, TC frequentemente normal ou com achados sutis), devendo ser confirmada por análise do líquor (tinta da China, antígeno criptocócico, cultura para fungos), sempre precedida de exame de imagem (já realizado e sem lesões, tornando a punção lombar segura).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q808",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Paciente do sexo feminino, 58 anos, com AIDS em tratamento irregular, deu entrada em serviço de emergência com dor pleurítica, dispneia e febre baixa. A radiografia revelou pneumotórax à direita. A provável causa do quadro clínico é:",
+        "alternativas": [
+            "Pneumonia por Pneumocystis jiroveci.",
+            "Pneumonia por Staphylococcus aureus.",
+            "Pneumonia por Streptococcus pneumoniae.",
+            "Pneumonia por citomegalovírus.",
+            "Aspergilose pulmonar."
+        ],
+        "correta": 0,
+        "comentario": "O pneumotórax espontâneo é uma complicação clássica e bem reconhecida da pneumocistose (PCP) em pacientes com AIDS — decorre da formação de pneumatoceles/cistos subpleurais que se rompem para o espaço pleural, sendo mais comum em pacientes com PCP recorrente, tratamento irregular ou uso de pentamidina aerossolizada como profilaxia (que reduz a concentração pulmonar da droga nos ápices). As demais pneumonias listadas não têm essa associação característica com pneumotórax.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q809",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Podemos afirmar que, na Síndrome da Imunodeficiência Adquirida (AIDS):",
+        "alternativas": [
+            "São doenças oportunistas definidoras: candidíase de esôfago e hanseníase.",
+            "O agente etiológico é o HIV, que pertence à família dos retrovírus humanos e à subfamília dos lentivírus.",
+            "Há evidências de que o HIV seja transmitido por contato casual e até por insetos.",
+            "Nos pacientes não tratados, ou em quem o tratamento não controla adequadamente a replicação viral, a contagem de células T CD4+ AUMENTA após um período variável abaixo de um limiar crítico.",
+            "São doenças oportunistas definidoras: hanseníase e pneumonia."
+        ],
+        "correta": 1,
+        "comentario": "O HIV (vírus da imunodeficiência humana) pertence à família Retroviridae, subfamília Lentivirinae (lentivírus), caracterizada por infecção crônica e progressiva. A hanseníase NÃO é doença definidora de AIDS (candidíase esofágica é, mas não em conjunto com hanseníase nas opções A/E); não há qualquer evidência de transmissão do HIV por contato casual ou por vetores/insetos (o vírus não sobrevive fora do organismo nem se replica em artrópodes); e, sem tratamento eficaz, a contagem de CD4 tende a CAIR progressivamente (não aumentar) com a replicação viral não controlada.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q810",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Uma criança de 4 anos, em uma UBS, sofre acidente perfurocortante com agulha usada recentemente (sangue visível na luz da agulha), com paciente-fonte desconhecido. Em relação à profilaxia para HIV, avalie (V/F): (1) A TARV indicada é a associação de zidovudina (AZT) + lamivudina (3TC) + raltegravir (RAL). (2) A TARV deve ser iniciada até 96 horas do acidente e mantida por 14 dias. (3) É desnecessária a testagem de HIV na criança no dia do acidente. (4) A coleta seriada de sorologias deve ser feita com 30 e 90 dias do acidente. (5) Além da sorologia seriada, o acompanhamento ambulatorial também visa avaliar adesão, toxicidade da TARV e fazer avaliação laboratorial. Assinale a sequência correta, de cima para baixo.",
+        "alternativas": [
+            "V, V, F, F, F.",
+            "V, F, V, F, V.",
+            "V, F, F, V, V.",
+            "F, V, V, F, F.",
+            "F, V, F, V, V."
+        ],
+        "correta": 2,
+        "comentario": "(1) Verdadeiro — AZT + 3TC + raltegravir é um esquema pediátrico reconhecido de PEP. (2) Falso — embora o início deva ser o mais precoce possível (idealmente em até 2h, limite de 72h, e não 96h), a duração correta do esquema de PEP é de 28 DIAS (4 semanas), não 14 dias. (3) Falso — a testagem de HIV da criança no momento do acidente é OBRIGATÓRIA antes de iniciar a PEP, para documentar seu status basal (excluir infecção pré-existente). (4) Verdadeiro — o seguimento sorológico padrão da PEP inclui coletas com 30 e 90 dias do acidente. (5) Verdadeiro — o acompanhamento ambulatorial da PEP vai além da sorologia seriada, monitorando adesão, efeitos adversos/toxicidade da TARV e realizando avaliação laboratorial de rotina. Sequência: V, F, F, V, V.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q811",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "A respeito do diagnóstico laboratorial do HIV, considere: (1) A reatividade cruzada de anticorpos pode ser observada em algumas amostras devido a doenças autoimunes, produzindo resultados falso-reagentes. (2) Após a transmissão do vírus, ocorre a fase de eclipse, correspondente ao período de replicação local do patógeno, durante o qual o RNA viral JÁ é detectável no plasma. (3) No paciente HIV+, a presença de IgM não permite diferenciar infecção recente de infecção crônica, pois a IgM pode reaparecer em outros momentos da infecção. (4) Os testes complementares convencionais (Western blot, imunoblot rápido) são MENOS sensíveis que os imunoensaios de 3ª e 4ª gerações, podendo gerar resultados falso não reagentes. Assinale a alternativa correta.",
+        "alternativas": [
+            "As afirmativas 1, 2, 3 e 4 são verdadeiras.",
+            "Somente as afirmativas 1, 3 e 4 são verdadeiras.",
+            "Somente as afirmativas 2 e 4 são verdadeiras.",
+            "Somente as afirmativas 2 e 3 são verdadeiras.",
+            "Somente a afirmativa 1 é verdadeira."
+        ],
+        "correta": 1,
+        "comentario": "As afirmativas 1, 3 e 4 são verdadeiras: doenças autoimunes podem causar falso-positivos por reatividade cruzada (1); a IgM anti-HIV não é um marcador confiável de infecção recente, podendo reaparecer em outros momentos da infecção crônica (3); e os testes confirmatórios clássicos (Western blot, imunoblot) têm sensibilidade INFERIOR à dos imunoensaios de 3ª/4ª geração, podendo dar falso não reagente justamente na janela em que o imunoensaio de 4ª geração já detectaria a infecção (4) — por isso caíram em desuso como confirmatórios nos fluxogramas atuais. A afirmativa 2 é FALSA: por definição, a fase de eclipse é o período ANTES de o RNA viral se tornar detectável no plasma (replicação local, ainda sem viremia detectável) — a afirmativa inverte esse conceito.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q812",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Recém-nascido a termo, parto vaginal, peso adequado, sem intercorrências. Genitora sem pré-natal, sem saber estar grávida. No parto: teste rápido para sífilis não reagente, teste rápido para HIV reagente. Exame físico normal. NÃO faz parte da conduta inicial desse paciente:",
+        "alternativas": [
+            "Banho em água corrente na sala de parto.",
+            "Administração de zidovudina 4 mg/kg/dose, via oral.",
+            "Administração de nevirapina 1,2 mL, via oral.",
+            "Solicitar hemograma e dosagem de AST e ALT.",
+            "Solicitar sorologia para HIV por método ELISA."
+        ],
+        "correta": 4,
+        "comentario": "Em recém-nascidos, os testes sorológicos baseados em detecção de ANTICORPOS (ELISA, testes rápidos convencionais) NÃO são úteis para diagnóstico de infecção pelo HIV, pois detectam os anticorpos IgG maternos transferidos passivamente pela placenta, que permanecem no sangue da criança por até 18 meses independentemente do status de infecção real — por isso o diagnóstico em menores de 18 meses exige testes MOLECULARES (HIV-DNA/RNA por PCR). As demais medidas (banho em água corrente para remover secreções maternas, AZT oral, nevirapina — indicada em recém-nascidos de alto risco como este, sem pré-natal —, e exames basais de hemograma/transaminases) fazem parte da conduta inicial padrão.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q813",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Homem, 23 anos, homossexual, relata que, após relação sexual sem preservativo, o parceiro comunicou ser portador do HIV e não estar em uso correto das medicações. Após 4 semanas, realizou teste rápido de fluido oral em uma campanha, com resultado positivo, sendo encaminhado a serviço de referência. Para confirmação diagnóstica da infecção pelo HIV, quais os próximos exames a serem solicitados?",
+        "alternativas": [
+            "Pelo tempo de exposição, só é possível diagnóstico por meio de carga viral do HIV ou exames com antígeno p24.",
+            "São necessários mais dois testes rápidos, de marcas diferentes; se ambos positivos, a amostra é reagente para HIV.",
+            "Em caso de segundo teste inconclusivo, solicitar carga viral; se positiva em qualquer valor, já confirma o diagnóstico.",
+            "Apenas mais um teste rápido positivo, realizado com amostra de sangue, já pode confirmar a infecção pelo HIV."
+        ],
+        "correta": 3,
+        "comentario": "Segundo o fluxograma de testagem vigente no Brasil, um resultado reagente em teste rápido (TR1) — mesmo de fluido oral — deve ser confirmado com um SEGUNDO teste rápido de sangue, de fabricante/metodologia diferente (TR2); se ambos forem reagentes, a amostra está confirmada como positiva para HIV, dispensando confirmação adicional por Western blot ou métodos laboratoriais mais complexos. Não é necessário aguardar exames de carga viral ou antígeno p24 nesse momento (opção A), nem repetir mais dois testes (apenas um TR2 já basta), e não há indicação de aguardar um segundo teste \"inconclusivo\" antes de agir — o algoritmo já prevê a sequência TR1+TR2 de imediato.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q814",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Qual a duração recomendada da profilaxia com zidovudina (AZT) no recém-nascido exposto ao HIV?",
+        "alternativas": [
+            "48 horas.",
+            "96 horas.",
+            "4 semanas.",
+            "30 semanas."
+        ],
+        "correta": 2,
+        "comentario": "A profilaxia neonatal com zidovudina (AZT) oral (ou endovenosa, quando indicada) é mantida por 4 SEMANAS (28 dias), independentemente do risco estimado de transmissão vertical — em recém-nascidos de alto risco (mãe sem TARV adequada, carga viral detectável próximo ao parto, diagnóstico materno no momento do parto), associa-se ainda a nevirapina em esquema combinado, mas a duração padrão do AZT permanece de 4 semanas.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q815",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Paciente de 32 anos, transplantado renal, em imunossupressão, com cefaleia holocraniana pulsátil, turvação visual, náuseas e vômitos há 15 dias, sem febre. Ao exame: confusão mental, edema de papila, rigidez de nuca, paralisia do VI par à esquerda. RM de crânio: lesões pseudocísticas em núcleos da base. Líquor: tinta da China positiva. Quanto à neurocriptococose, assinale a alternativa INCORRETA:",
+        "alternativas": [
+            "Punção lombar seriada está contraindicada devido à hipertensão intracraniana, devendo a conduta inicial ser a implantação de derivação ventricular externa.",
+            "Apresenta-se mais comumente como meningoencefalite aguda ou subaguda.",
+            "A hipertensão intracraniana ocorre em mais de 50% dos casos (raquimanometria > 200 mmH₂O em decúbito lateral).",
+            "Durante a fase de indução do tratamento, está indicado o uso de anfotericina B."
+        ],
+        "correta": 0,
+        "comentario": "A afirmativa incorreta é a primeira: a punção lombar SERIADA (repetida) é, ao contrário do afirmado, a conduta de PRIMEIRA LINHA para o controle da hipertensão intracraniana na meningite criptocócica (retirando líquor até reduzir a pressão de abertura em cerca de 50% ou para valores <200 mmH₂O), e não uma contraindicação — a derivação ventricular externa (ou shunt ventrículo-peritoneal) é reservada para os casos REFRATÁRIOS às punções seriadas. As demais afirmativas estão corretas: a apresentação mais comum é de meningoencefalite aguda/subaguda, a hipertensão intracraniana é bastante prevalente (>50% dos casos) e a anfotericina B (associada à flucitosina, quando disponível) é o esquema de indução padrão.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q816",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "A leucoencefalopatia multifocal progressiva (LEMP), que ocorre em indivíduos com CD4+ < 200 células/mm³ e se caracteriza por lesões múltiplas confluentes, hipodensas, sem captação de contraste e sem efeito de massa, predominantemente na substância branca, tem como agente causador:",
+        "alternativas": [
+            "Vírus JC.",
+            "Citomegalovírus.",
+            "Toxoplasma gondii.",
+            "Cryptococcus spp.",
+            "Complexo Mycobacterium avium."
+        ],
+        "correta": 0,
+        "comentario": "A LEMP é causada pela reativação do vírus JC (um poliomavírus), que infecta oligodendrócitos e causa desmielinização multifocal progressiva, tipicamente em pacientes com imunossupressão avançada (CD4 < 200). O achado radiológico característico — lesões de substância branca SEM efeito de massa e SEM captação de contraste — é um diferencial importante em relação à neurotoxoplasmose (que cursa com lesões que captam contraste em anel e têm efeito de massa).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q817",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Sobre infecções oportunistas no paciente adulto com AIDS, assinale a alternativa correta.",
+        "alternativas": [
+            "A profilaxia secundária para pneumocistose com sulfametoxazol-trimetoprim pode ser descontinuada após CD4 subir para acima de 200 células/mm³ por pelo menos três meses.",
+            "Doença disseminada pelo complexo Mycobacterium avium tipicamente ocorre com CD4 ≤ 100 células/mm³, com indicação de profilaxia com azitromicina nesse limiar.",
+            "O uso de corticoides como terapia adjuvante para pneumocistose está fortemente contraindicado pelo risco de disseminação da doença.",
+            "A neurotoxoplasmose no paciente com AIDS é doença de reativação, e a presença de IgM sérica anti-toxoplasma é fundamental para o diagnóstico."
+        ],
+        "correta": 0,
+        "comentario": "A profilaxia secundária (manutenção) para pneumocistose pode ser suspensa quando o CD4 se mantém acima de 200 células/mm³ por pelo menos 3 meses em resposta à TARV, critério padrão de descontinuação de profilaxias secundárias em PVHIV. As demais estão incorretas: a profilaxia primária para MAC disseminado é indicada com CD4 ≤ 50 (não ≤ 100); corticoides são RECOMENDADOS (não contraindicados) como adjuvantes na pneumocistose moderada a grave (PaO2 < 70 mmHg), reduzindo mortalidade; e a neurotoxoplasmose, por ser doença de REATIVAÇÃO de infecção latente antiga, cursa tipicamente com IgG POSITIVA (não IgM, que é mais característica de infecção aguda/primária).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q818",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Os principais achados de pneumocistose (PCP) ao exame físico incluem taquipneia, taquicardia e ausculta pulmonar normal ou com estertores finos ao final da expiração; sibilos, condensação pulmonar ou derrame pleural são raramente encontrados. Assinale o item que apresenta um ERRO.",
+        "alternativas": [
+            "O achado radiográfico mais típico de PCP é o infiltrado intersticial periférico e assimétrico.",
+            "Pneumatoceles e pneumotórax também podem ser observados.",
+            "O raio X de tórax pode ser normal em até um quarto dos casos de PCP.",
+            "A TC pode revelar atenuação pulmonar em vidro fosco."
+        ],
+        "correta": 0,
+        "comentario": "O achado radiográfico CLÁSSICO e mais típico da pneumocistose é o infiltrado intersticial BILATERAL, DIFUSO e SIMÉTRICO, de distribuição perihilar — e não periférico e assimétrico. O padrão periférico/apical, com formação de cistos, é uma apresentação ATÍPICA, mais associada a pacientes em profilaxia com pentamidina inalatória (que não atinge concentrações adequadas nos ápices pulmonares). As demais afirmativas são corretas: pneumatoceles/pneumotórax podem ocorrer, o RX pode ser normal em até 25% dos casos (daí a importância da TC de tórax quando há forte suspeita clínica), e o padrão em vidro fosco é um achado tomográfico característico.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q819",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Na pneumonia por Pneumocystis (PCP) moderada a grave (PaO2 < 70 mmHg), recomendam-se esquemas administrados preferencialmente por via endovenosa. Indique o item com ERRO.",
+        "alternativas": [
+            "A mudança da via de administração de endovenosa para oral deve ser realizada quando ocorrer melhora clínica.",
+            "Clindamicina 600 mg EV a cada seis ou oito horas + primaquina 15-30 mg VO uma vez ao dia é o principal esquema alternativo em caso de intolerância à sulfa.",
+            "O esquema de escolha é a associação SMX-TMP (5 mg/kg de TMP endovenosa a cada seis ou oito horas). O tempo total de tratamento é de 10 dias.",
+            "A associação de corticosteroides ao tratamento de PCP moderada a grave apresenta redução importante na mortalidade."
+        ],
+        "correta": 2,
+        "comentario": "O erro está na duração do tratamento: o esquema de escolha (SMX-TMP) é mantido por 21 DIAS (três semanas) na pneumocistose, tanto nas formas leves/moderadas quanto nas graves — e não por 10 dias, como afirmado. As demais alternativas descrevem corretamente a prática padrão: transição para via oral após melhora clínica, clindamicina + primaquina como principal alternativa à sulfa, e benefício comprovado de corticosteroides adjuvantes na redução de mortalidade nos casos moderados a graves (PaO2 < 70 mmHg ou gradiente A-a elevado).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q820",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "A pesquisa direta do agente oportunista em amostras de escarro espontâneo ou induzido geralmente é pouco sensível para o diagnóstico de pneumocistose (PCP). Podemos APENAS concordar que:",
+        "alternativas": [
+            "O diagnóstico definitivo não é realizado pela identificação do agente por colorações de azul de toluidina, Grocott, Giemsa ou imunofluorescência a partir de espécimes respiratórios.",
+            "O diagnóstico definitivo é realizado por essas colorações, mas a partir de espécimes FORA do sistema respiratório.",
+            "O diagnóstico definitivo é realizado por essas colorações a partir de espécimes RESPIRATÓRIOS.",
+            "O diagnóstico definitivo é realizado SEM a identificação do agente por colorações, a partir de espécimes respiratórios."
+        ],
+        "correta": 2,
+        "comentario": "Apesar da sensibilidade subótima da pesquisa direta em amostras de escarro (espontâneo ou induzido) e mesmo em lavado broncoalveolar, a visualização direta do Pneumocystis jiroveci por colorações especiais (azul de toluidina, prata de Grocott-Gomori, Giemsa) ou imunofluorescência A PARTIR DE ESPÉCIMES RESPIRATÓRIOS continua sendo o método considerado definitivo/confirmatório para o diagnóstico de PCP — a baixa sensibilidade é uma limitação prática (justificando o uso de amostras induzidas ou de lavado broncoalveolar quando o escarro espontâneo é negativo em paciente com forte suspeita), mas não invalida o método como diagnóstico definitivo quando positivo.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q821",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "O início precoce da TARV está associado à redução da transmissibilidade e da morbimortalidade relacionadas ao HIV. Podemos aceitar o item:",
+        "alternativas": [
+            "O tenofovir e a lamivudina são fármacos antirretrovirais com atividade contra o HIV e contra o HBV, diminuindo o risco de progressão para cirrose e carcinoma hepatocelular (CHC).",
+            "O tenofovir e a lamivudina são antirretrovirais com atividade contra o HIV e NÃO contra o HBV, não diminuindo o risco de progressão para cirrose e CHC.",
+            "O tenofovir e a lamivudina são antirretrovirais com atividade contra o HBV, mas sem interação com o HIV.",
+            "O tenofovir e a lamivudina são fármacos sem atividade contra o HIV e contra o HBV, não diminuindo o risco de progressão para cirrose e CHC."
+        ],
+        "correta": 0,
+        "comentario": "Tenofovir e lamivudina têm dupla atividade antiviral, atuando tanto contra o HIV quanto contra o vírus da hepatite B (HBV) — por isso são preferenciais na coinfecção HIV-HBV, compondo o esquema de TARV e simultaneamente controlando a replicação do HBV, o que reduz o risco de progressão para cirrose e carcinoma hepatocelular nesses pacientes coinfectados. É por essa mesma razão que a suspensão abrupta do tenofovir em pacientes coinfectados pode causar reativação grave da hepatite B.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q822",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "O Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde recomenda que a profilaxia antirretroviral pós-exposição (PEP) de risco para infecção pelo HIV seja iniciada o mais breve possível, tendo como limite:",
+        "alternativas": [
+            "24 horas.",
+            "36 horas.",
+            "48 horas.",
+            "72 horas.",
+            "96 horas."
+        ],
+        "correta": 3,
+        "comentario": "O limite máximo para o início da PEP é de 72 HORAS após a exposição de risco — idealmente iniciada nas primeiras 2 horas, quando a eficácia é maior, mas ainda recomendada até esse limite de 72 horas, após o qual a eficácia da profilaxia é considerada duvidosa/não estabelecida e a PEP geralmente não é mais indicada.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q823",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Menina de 1 mês e meio, filha de mãe com HIV sem pré-natal, tem carga viral do HIV = 5.500 cópias/mL (PCR). Aos 4 meses, novo exame mostra 550.000 cópias/mL e CD4 = 2.000 células/mm³ (35% dos linfócitos). Está assintomática e em uso de sulfametoxazol-trimetoprim profilático. Qual a conduta CORRETA?",
+        "alternativas": [
+            "Suspender sulfametoxazol-trimetoprim e não indicar TARV, pois os exames de carga viral refletem apenas passagem transplacentária.",
+            "Manter sulfametoxazol-trimetoprim, mas não iniciar antirretrovirais, pois a criança está assintomática e o CD4 é normal para a idade.",
+            "Iniciar antirretrovirais independentemente de parâmetro clínico/laboratorial, mas suspender sulfametoxazol-trimetoprim, pois o CD4 é normal para a idade.",
+            "Iniciar antirretrovirais e manter a profilaxia com sulfametoxazol-trimetoprim, independentemente de qualquer parâmetro clínico ou laboratorial."
+        ],
+        "correta": 3,
+        "comentario": "Diferentemente de anticorpos maternos transferidos passivamente, a CARGA VIRAL (RNA/DNA do HIV por PCR) reflete replicação viral ATIVA na própria criança, não é afetada por transferência transplacentária, e DOIS resultados de carga viral detectáveis (aqui, 5.500 e 550.000 cópias/mL, em momentos diferentes) confirmam o diagnóstico de infecção pelo HIV na criança, segundo o protocolo brasileiro para diagnóstico em menores de 18 meses. Diante do diagnóstico confirmado, a recomendação atual de TARV universal e imediata se aplica também às crianças — deve-se iniciar TARV independentemente de CD4 ou sintomas, e MANTER a profilaxia para pneumocistose com sulfametoxazol-trimetoprim (que só é suspensa após critérios específicos de reconstituição imune sustentada, não apenas por um CD4% pontualmente favorável).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q824",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Um homem de 30 anos, sem infecção por HIV, com múltiplos parceiros sexuais e uso inconsistente de preservativo, procura orientação sobre profilaxia pré-exposição (PrEP). Ele relata dificuldade de adesão a medicações diárias e pergunta sobre a opção injetável de aplicação mais espaçada, comentada recentemente na mídia. Sobre o lenacapavir como PrEP, é correto afirmar que:",
+        "alternativas": [
+            "É um inibidor do capsídeo viral do HIV-1, aprovado pelo FDA em 2025 como PrEP injetável de aplicação subcutânea a cada 26 semanas (semestral), com eficácia próxima de 100% nos estudos PURPOSE 1 e 2 — já aprovado pela ANVISA no Brasil, mas ainda não incorporado à oferta de rotina do SUS.",
+            "É um inibidor de transcriptase reversa análogo de nucleosídeo, disponível em comprimido oral diário, já incorporado ao SUS como primeira linha de PrEP desde 2024.",
+            "É idêntico ao cabotegravir (Apretude), apenas com nome comercial diferente, e ambos têm o mesmo esquema posológico mensal.",
+            "Trata-se de uma vacina terapêutica contra o HIV, que induz imunidade duradoura e dispensa o uso futuro de qualquer outra estratégia de prevenção."
+        ],
+        "correta": 0,
+        "comentario": "O lenacapavir (nome comercial Yeztugo para a indicação de PrEP) é o primeiro inibidor do capsídeo viral do HIV-1, bloqueando múltiplas etapas do ciclo replicativo (montagem do capsídeo, transporte nuclear e liberação de novos vírions). Aprovado pelo FDA em 2025 como PrEP injetável subcutânea de aplicação SEMESTRAL (a cada 26 semanas, com doses de início por via oral e injetável), demonstrou eficácia entre 96-100% nos estudos PURPOSE 1 (mulheres cisgênero) e PURPOSE 2 (HSH, pessoas trans e não binárias) — superior às opções orais diárias, justamente por resolver o principal obstáculo de adesão. A ANVISA aprovou seu registro no Brasil em janeiro de 2026, mas o medicamento AINDA NÃO foi incorporado à oferta de rotina do SUS (está em fase de estudo de implementação). Não é uma vacina, não é idêntico ao cabotegravir (mecanismo de ação e esquema posológico diferentes — o cabotegravir é bimestral, não semestral) e não é uma medicação oral diária.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base na bula do lenacapavir (Yeztugo, FDA 2025), nos estudos PURPOSE 1/2 e nas atualizações regulatórias da ANVISA/CONITEC (2025-2026).",
+        "revisado": true
+    },
+    {
+        "id": "q825",
+        "temaId": "hiv-aids",
+        "tema": "Infecção pelo HIV e AIDS",
+        "enunciado": "Paciente vivendo com HIV, em TARV oral há anos com excelente adesão e carga viral indetectável, pergunta ao infectologista sobre a possibilidade de trocar seu esquema oral diário por uma injeção de aplicação mensal ou bimestral, alegando cansaço da rotina de comprimidos diários. Sobre as opções de antirretrovirais injetáveis de ação prolongada disponíveis atualmente, é correto afirmar que:",
+        "alternativas": [
+            "A associação cabotegravir + rilpivirina (Cabenuva) é indicada justamente para essa finalidade — manutenção do tratamento em pacientes já com supressão virológica —, mas ainda não possui aprovação da ANVISA nem está disponível no Brasil (público ou privado).",
+            "O cabotegravir isolado (Apretude) e a associação cabotegravir + rilpivirina (Cabenuva) são a mesma formulação, apenas com nomes comerciais diferentes conforme o país.",
+            "Essa troca já está plenamente disponibilizada pelo SUS desde 2023, como opção de primeira linha para todo paciente em TARV.",
+            "O cabotegravir + rilpivirina deve ser usado exclusivamente como profilaxia pré-exposição (PrEP), nunca como tratamento de manutenção em pacientes já infectados."
+        ],
+        "correta": 0,
+        "comentario": "É fundamental distinguir duas formulações de cabotegravir frequentemente confundidas: o cabotegravir ISOLADO (Apretude), aprovado pela ANVISA em 2023 como PrEP injetável bimestral para pessoas não infectadas em maior risco; e a ASSOCIAÇÃO cabotegravir + rilpivirina (Cabenuva), um esquema de TARV injetável (mensal ou bimestral) indicado para MANUTENÇÃO do tratamento em pacientes JÁ infectados e com supressão virológica estável, oferecendo uma alternativa à necessidade de comprimidos diários. Até o momento, o Cabenuva não possui aprovação da ANVISA nem está disponível no mercado brasileiro (público ou privado) — apenas o cabotegravir isolado para PrEP tem registro no país, e mesmo este ainda está em processo de avaliação pela CONITEC para eventual incorporação ao SUS.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base na bula do lenacapavir (Yeztugo, FDA 2025), nos estudos PURPOSE 1/2 e nas atualizações regulatórias da ANVISA/CONITEC (2025-2026).",
+        "revisado": true
     }
 ]
