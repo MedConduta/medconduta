@@ -8355,8 +8355,9 @@
     "categoria": "Gastroenterologia",
     "titulo": "Hemorragia Digestiva Baixa",
     "resumo": "Doença diverticular como causa mais comum, colonoscopia como exame de escolha e a importância de excluir origem alta.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Coloproctologia; ACG Clinical Guideline: Management of Patients With Acute Lower GI Bleeding",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Coloproctologia; ACG Clinical Guideline: Management of Patients With Acute Lower GI Bleeding — atualização 2023",
+    "comoCai": "No SES-PE e no ENAMED, a necessidade de excluir origem alta antes de confirmar HDB e a doença diverticular como causa mais comum (tipicamente indolor) são cobrança certa. A atualização mais recente do ACG já é explorada em provas mais atuais: o abandono da colonoscopia de urgência (<24h) como rotina em pacientes estáveis (equivalente a realizá-la em até 14 dias) e a angiotomografia como exame inicial no paciente instável com sangramento ativo, substituindo a antiga preferência pela colonoscopia/angiografia direta nesse cenário.",
     "mnemonicos": [
       {
         "palavra": "Diverticulose sangra, diverticulite dói",
@@ -8378,11 +8379,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "É fundamental excluir uma origem alta antes de assumir definitivamente hemorragia digestiva baixa, já que sangramentos altos volumosos podem se manifestar como hematoquezia — sondagem nasogástrica com aspirado limpo ou endoscopia digestiva alta ajudam a descartar essa possibilidade em casos de dúvida. Após exclusão de origem alta, a colonoscopia é o exame de escolha na maioria dos casos estáveis, sendo diagnóstica e potencialmente terapêutica; angiotomografia ou angiografia são reservadas a sangramentos muito volumosos/ativos onde a colonoscopia não é viável ou não localiza a origem."
+        "conteudo": "É fundamental excluir uma origem alta antes de assumir definitivamente hemorragia digestiva baixa, já que sangramentos altos volumosos podem se manifestar como hematoquezia — sondagem nasogástrica com aspirado limpo ou endoscopia digestiva alta ajudam a descartar essa possibilidade em casos de dúvida. Em pacientes hemodinamicamente ESTÁVEIS, a colonoscopia continua sendo o exame de escolha, mas a atualização do ACG (2023) esclareceu que realizá-la dentro de 24h não é superior a realizá-la em até 14 dias — a antiga prática de colonoscopia de urgência rotineira em todo paciente estável foi abandonada, sendo reservada a situações específicas de maior risco. Já em pacientes hemodinamicamente INSTÁVEIS com hematoquezia ativa e significativa, a angiotomografia (angio-TC) passou a ser o exame inicial de escolha (antes da colonoscopia): se demonstrar extravasamento de contraste, o paciente deve ser prontamente encaminhado à radiologia intervencionista para arteriografia terapêutica com possível embolização. Escores de estratificação de risco, como o escore de Oakland (baseado em idade, sexo, história prévia de sangramento, achados ao toque retal, frequência cardíaca, pressão arterial sistólica e hemoglobina), auxiliam identificar pacientes de baixo risco (Oakland ≤8) elegíveis para alta precoce e investigação ambulatorial, complementando — mas não substituindo — o julgamento clínico."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "A maioria dos episódios de sangramento diverticular resolve espontaneamente com suporte clínico (hidratação, correção de coagulopatia se presente). Sangramento ativo identificado à colonoscopia pode ser tratado endoscopicamente (clipagem, injeção, eletrocoagulação). Casos refratários ou muito volumosos podem necessitar de embolização angiográfica ou, raramente, cirurgia (colectomia segmentar ou subtotal, quando a origem não pode ser localizada e o sangramento persiste)."
+        "conteudo": "A maioria dos episódios de sangramento diverticular resolve espontaneamente com suporte clínico (hidratação, correção de coagulopatia se presente). Sangramento ativo identificado à colonoscopia pode ser tratado endoscopicamente (clipagem, injeção, eletrocoagulação). Em pacientes com hemorragia digestiva baixa com risco de vida em uso de anticoagulante, a atualização do ACG (2023) orienta o uso de agentes de reversão específicos: complexo protrombínico (ou vitamina K) para antagonistas de vitamina K (varfarina), e reversores específicos (ou complexo protrombínico quando o reversor específico não estiver disponível) para os anticoagulantes orais diretos. Casos refratários, muito volumosos, ou com extravasamento identificado à angio-TC podem necessitar de embolização angiográfica ou, raramente, cirurgia (colectomia segmentar ou subtotal, quando a origem não pode ser localizada e o sangramento persiste)."
       },
       {
         "titulo": "Sinais de alerta",
@@ -8390,7 +8391,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A necessidade de excluir origem alta antes de confirmar HDB (já que sangramento alto volumoso pode se manifestar como hematoquezia) é cobrança recorrente e importante armadilha de prova. A diverticulose como causa mais comum de HDB em adultos, tipicamente indolor e autolimitada, também é frequentemente testada em questões de diagnóstico diferencial."
+        "conteudo": "A necessidade de excluir origem alta antes de confirmar HDB (já que sangramento alto volumoso pode se manifestar como hematoquezia) é cobrança recorrente e importante armadilha de prova. A diverticulose como causa mais comum de HDB em adultos, tipicamente indolor e autolimitada, também é frequentemente testada em questões de diagnóstico diferencial. Fique atento à atualização do ACG (2023): colonoscopia em até 24h deixou de ser superior a realizá-la em até 14 dias no paciente estável, e a angio-TC passou a ser o exame inicial no paciente instável com sangramento ativo."
       }
     ]
   },
