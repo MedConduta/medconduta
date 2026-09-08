@@ -9297,5 +9297,335 @@
     ],
     "correta": 1,
     "comentario": "O escore de Oakland (que incorpora idade, sexo, história prévia de sangramento digestivo baixo, achados ao toque retal, frequência cardíaca, pressão arterial sistólica e hemoglobina) é uma ferramenta de estratificação de risco validada e incorporada pela atualização do ACG (2023) para identificar pacientes de BAIXO risco (pontuação ≤8) com hemorragia digestiva baixa, elegíveis para alta hospitalar precoce e investigação diagnóstica ambulatorial, evitando internações desnecessárias. A diretriz reforça, no entanto, que escores de risco devem complementar — nunca substituir — o julgamento clínico individualizado."
+  },
+  {
+    "id": "q508",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Paciente, 55 anos, apresenta lesão gástrica ulcerada na incisura angular, estendendo-se pela pequena curvatura até o corpo gástrico proximal. Biópsia: adenocarcinoma gástrico com células em anel de sinete. Qual a melhor conduta cirúrgica?",
+    "alternativas": [
+      "Gastrectomia total com anastomose esôfago-jejunal término-terminal.",
+      "Gastrectomia a Billroth I com anastomose término-terminal.",
+      "Gastrectomia a Billroth II com epiplectomia e anastomose pré-cólica.",
+      "Gastrectomia total com esofagectomia e anastomose esôfago-ileal término-terminal."
+    ],
+    "correta": 0,
+    "comentario": "Diante de lesão que se estende proximalmente até o corpo gástrico (margem oncológica seria insuficiente com gastrectomia subtotal/parcial como a Billroth I ou II), a gastrectomia TOTAL é necessária, com reconstrução por esofagojejunostomia (não esofagoileostomia, que não é anatomicamente indicada, e sem necessidade de esofagectomia associada, já que o tumor é gástrico e não envolve o esôfago)."
+  },
+  {
+    "id": "q509",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Qual a neoplasia benigna mais comum do esôfago?",
+    "alternativas": [
+      "Lipoma.",
+      "Neurofibroma.",
+      "Papiloma.",
+      "Leiomioma."
+    ],
+    "correta": 3,
+    "comentario": "O leiomioma (tumor de origem na camada muscular própria) é a neoplasia benigna mais comum do esôfago, geralmente assintomático e descoberto incidentalmente, podendo ocasionalmente causar disfagia quando volumoso. Lipomas, neurofibromas e papilomas são consideravelmente menos frequentes nesse órgão."
+  },
+  {
+    "id": "q510",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "O câncer gástrico precoce é definido como lesão que invade no máximo a submucosa (T1b), independentemente de metástase linfonodal. Quanto à melhor elegibilidade para RESSECÇÃO ENDOSCÓPICA dessas lesões, assinale a alternativa mais correta:",
+    "alternativas": [
+      "Lesões polipoides de no máximo 2,0cm, não ulceradas, invadindo no máximo a mucosa gástrica, com linfonodomegalias perigástricas descartadas por ecoendoscopia.",
+      "Lesões planas de no máximo 1,0cm, não ulceradas, invadindo no máximo a submucosa gástrica, com linfonodomegalias descartadas por ecoendoscopia.",
+      "Lesões de no máximo 3,0cm, não ulceradas, invadindo no máximo a mucosa gástrica, com linfonodomegalias descartadas.",
+      "Lesões ulceradas de no máximo 1,0cm, invadindo no máximo a mucosa gástrica, bem diferenciadas, com linfonodomegalias descartadas.",
+      "Lesões polipoides de no máximo 2,0cm, não ulceradas, invadindo no máximo a subserosa gástrica, bem diferenciadas, com linfonodomegalias descartadas."
+    ],
+    "correta": 0,
+    "comentario": "Os critérios clássicos (expandidos a partir dos critérios japoneses) para elegibilidade de ressecção endoscópica do câncer gástrico precoce exigem lesão POLIPOIDE (ou plana, conforme critério expandido) de até 2,0cm, SEM ulceração, restrita à MUCOSA (não à submucosa, já que o envolvimento submucoso aumenta o risco de metástase linfonodal e geralmente contraindica a via endoscópica isolada), com ausência de linfonodomegalias suspeitas confirmada por ecoendoscopia — assegurando baixo risco de doença linfonodal residual após a ressecção local."
+  },
+  {
+    "id": "q511",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Sobre o câncer de esôfago, é INCORRETO afirmar:",
+    "alternativas": [
+      "Adenocarcinoma e carcinoma epidermoide (escamoso) são os tipos histológicos mais frequentes.",
+      "A maioria dos adenocarcinomas ocorre na porção proximal do esôfago.",
+      "O tabagismo tem relação de risco com o desenvolvimento de carcinomas espinocelulares de esôfago.",
+      "Rouquidão pode indicar invasão tumoral do nervo laríngeo recorrente."
+    ],
+    "correta": 1,
+    "comentario": "A afirmativa incorreta é a que localiza a maioria dos adenocarcinomas na porção PROXIMAL do esôfago — na realidade, o adenocarcinoma esofágico predomina no TERÇO DISTAL, refletindo sua origem a partir do esôfago de Barrett (metaplasia intestinal secundária a DRGE crônica, que acomete predominantemente a mucosa esofágica distal). O carcinoma epidermoide, por sua vez, é mais frequente em terço médio/superior e associado a tabagismo/etilismo. A rouquidão por invasão do nervo laríngeo recorrente é sinal clássico de doença localmente avançada, independentemente do subtipo histológico."
+  },
+  {
+    "id": "q512",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Sobre o tratamento do câncer de esôfago, é correto afirmar que:",
+    "alternativas": [
+      "A ressecção endoscópica é opção para tumores com linfonodos suspeitos.",
+      "A esofagectomia transtorácica e a trans-hiatal permitem a mesma extensão de linfadenectomia.",
+      "A neoadjuvância pode ser utilizada em tumores localmente avançados.",
+      "Tumores de 4cm têm baixo potencial de metástases linfonodais."
+    ],
+    "correta": 2,
+    "comentario": "A quimiorradioterapia neoadjuvante (protocolo CROSS, entre outros) é hoje padrão de tratamento para tumores esofágicos localmente avançados, buscando reduzir o volume tumoral e tratar micrometástases antes da esofagectomia, com ganho de sobrevida demonstrado em ensaios clínicos. A ressecção endoscópica é restrita a tumores muito iniciais (mucosos, sem suspeita linfonodal); a esofagectomia transtorácica permite linfadenectomia mais extensa (incluindo mediastino) que a trans-hiatal; e tumores maiores (como os de 4cm) têm, ao contrário, maior (não menor) potencial de acometimento linfonodal."
+  },
+  {
+    "id": "q513",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Classificação Histológica de Lauren — banco de questões.",
+    "enunciado": "Quanto aos subtipos de câncer gástrico na classificação de Lauren, é INCORRETO afirmar:",
+    "alternativas": [
+      "O tipo difuso de Lauren está associado a fatores ambientais, enquanto o intestinal está associado a fatores familiares/hereditários.",
+      "O tipo difuso de Lauren acomete pacientes mais jovens.",
+      "O tipo difuso de Lauren apresenta células em anel de sinete.",
+      "O tipo intestinal apresenta formação de tecido glandular ao histopatológico."
+    ],
+    "correta": 0,
+    "comentario": "A afirmativa está INVERTIDA: na classificação de Lauren, é o tipo INTESTINAL que está classicamente associado a fatores ambientais (infecção por H. pylori, dieta rica em sal/defumados — a clássica sequência de Correa: gastrite crônica → atrofia → metaplasia intestinal → displasia → adenocarcinoma), enquanto o tipo DIFUSO tem maior associação com fatores genéticos/hereditários (incluindo mutações germinativas no gene CDH1, associadas ao câncer gástrico difuso hereditário). O tipo difuso acomete pacientes mais jovens, é caracterizado por células em anel de sinete (com pouca coesão celular, infiltrando a parede difusamente — origem do termo \"linite plástica\" em casos extensos), enquanto o tipo intestinal forma estruturas glandulares reconhecíveis à histologia."
+  },
+  {
+    "id": "q514",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "O tumor benigno intramural ou submucoso mais comum do estômago é:",
+    "alternativas": [
+      "Adenoma.",
+      "Lipoma.",
+      "Fibroma.",
+      "Leiomioma.",
+      "Pâncreas ectópico."
+    ],
+    "correta": 3,
+    "comentario": "O leiomioma é o tumor benigno intramural/submucoso mais comum do estômago (assim como também é a neoplasia benigna mais comum do esôfago), originado da musculatura lisa da parede gástrica, geralmente assintomático e de achado incidental."
+  },
+  {
+    "id": "q515",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Em relação ao linfoma gástrico tipo MALT, é correto afirmar que:",
+    "alternativas": [
+      "A gastrectomia total é sempre o tratamento de escolha.",
+      "A erradicação do H. pylori poderá ser suficiente para o tratamento.",
+      "A quimioterapia não tem papel efetivo no tratamento.",
+      "Está associado à infecção por Epstein-Barr.",
+      "Nenhuma das anteriores."
+    ],
+    "correta": 1,
+    "comentario": "O linfoma gástrico tipo MALT (tecido linfoide associado à mucosa) de baixo grau está fortemente associado à infecção crônica por H. pylori (não Epstein-Barr), e — de forma notável entre as neoplasias — a simples erradicação do H. pylori pode induzir remissão completa em uma parcela significativa dos casos em estágio inicial, sendo por isso a conduta inicial recomendada antes de considerar quimioterapia, radioterapia ou cirurgia (reservadas a casos refratários à erradicação ou doença mais avançada/de alto grau)."
+  },
+  {
+    "id": "q516",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Classificação de Borrmann — banco de questões.",
+    "enunciado": "Em relação à classificação de Borrmann para tumores gástricos, a linite plástica corresponde ao:",
+    "alternativas": [
+      "Tipo I.",
+      "Tipo II.",
+      "Tipo III.",
+      "Tipo IV.",
+      "Tipo V."
+    ],
+    "correta": 3,
+    "comentario": "A classificação de Borrmann descreve o aspecto macroscópico do câncer gástrico avançado: tipo I (polipoide/vegetante), tipo II (ulcerado com bordas bem delimitadas), tipo III (ulcerado infiltrativo, bordas mal definidas) e tipo IV (infiltrativo difuso, sem ulceração delimitada — a \"linite plástica\", em que a parede gástrica torna-se espessada e rígida difusamente, frequentemente correspondendo histologicamente ao subtipo difuso de Lauren, com pior prognóstico)."
+  },
+  {
+    "id": "q517",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Sobre o câncer gástrico, assinale a opção INCORRETA:",
+    "alternativas": [
+      "Síndromes hereditárias de câncer colorretal, como a polipose adenomatosa familiar e a síndrome de Lynch, são fatores de risco para câncer gástrico.",
+      "Baixo consumo de frutas e verduras, resultando em dieta pobre em fibras, é fator de risco para câncer gástrico.",
+      "A laparoscopia tem alta sensibilidade para detectar metástases ocultas, sendo útil no estadiamento.",
+      "A ressecção endoscópica é possível em casos selecionados: tumores pequenos, limitados à mucosa e com fatores de risco favoráveis.",
+      "Um maior número de linfonodos ressecados tem trazido melhor prognóstico, e por isso a linfadenectomia extensa (D3) tem sido indicada como padrão."
+    ],
+    "correta": 4,
+    "comentario": "A afirmativa incorreta é a que recomenda a linfadenectomia D3 como padrão: estudos randomizados (como o JCOG9501, no Japão) demonstraram que a linfadenectomia D3 NÃO traz benefício de sobrevida adicional em relação à D2, porém aumenta significativamente a morbidade cirúrgica — por isso a linfadenectomia D2 (não D3) é hoje o padrão recomendado na gastrectomia oncológica na maior parte do mundo. As demais alternativas descrevem corretamente fatores de risco reconhecidos (síndromes hereditárias, dieta pobre em fibras) e aspectos do estadiamento/tratamento (laparoscopia estadiadora, ressecção endoscópica em casos selecionados)."
+  },
+  {
+    "id": "q518",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Classificação de Siewert — banco de questões.",
+    "enunciado": "Paciente de 71 anos, disfagia e perda ponderal, EDA evidencia lesão ulcerada em esôfago distal, distando 3cm proximalmente à cárdia; histopatológico revela adenocarcinoma infiltrativo. Pela classificação de Siewert, esse tumor da transição esofagogástrica é classificado como tipo:",
+    "alternativas": [
+      "II.",
+      "I.",
+      "III.",
+      "IV."
+    ],
+    "correta": 1,
+    "comentario": "A classificação de Siewert estratifica os adenocarcinomas da transição esofagogástrica conforme a localização do centro do tumor em relação à cárdia: tipo I (centro do tumor entre 1 e 5cm ACIMA da cárdia — verdadeiro adenocarcinoma esofágico distal, tipicamente originado de esôfago de Barrett), tipo II (entre 1cm acima e 2cm abaixo da cárdia — verdadeiro câncer de cárdia/junção) e tipo III (entre 2 e 5cm ABAIXO da cárdia — câncer gástrico subcárdico com extensão à transição). No caso descrito, a lesão está no esôfago distal, a 3cm proximalmente à cárdia, caracterizando o tipo I."
+  },
+  {
+    "id": "q519",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Paciente de 45 anos, adenocarcinoma gástrico, submetido a gastrectomia total. Estadiamento patológico pT3NxM0. Qual o tratamento adjuvante mais adequado?",
+    "alternativas": [
+      "Reoperar o paciente.",
+      "Tratamento paliativo.",
+      "Quimioterapia exclusiva.",
+      "Quimioterapia e radioterapia."
+    ],
+    "correta": 3,
+    "comentario": "Para tumores gástricos ressecados com invasão além da submucosa (pT3) e estadiamento linfonodal indeterminado (Nx, sugerindo linfadenectomia potencialmente inadequada ou avaliação patológica limitada), a quimiorradioterapia adjuvante (baseada nos resultados clássicos do estudo INT-0116) é a estratégia mais adequada para reduzir o risco de recidiva locorregional, não sendo caso de reoperação (doença já ressecada) nem de tratamento exclusivamente paliativo (doença localizada, potencialmente curável)."
+  },
+  {
+    "id": "q520",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Homem, 65 anos, dor epigástrica há 2 meses com piora à alimentação, hiporexia, náuseas/vômitos, perda de peso, tabagista (30 cigarros/dia) e etilista social há 30 anos. Exame: descorado, ictérico leve, abdome discretamente distendido, dor à palpação profunda de epigástrio, e nódulo palpável em região umbilical de cerca de 1,0cm. Hb 10g/dL; bilirrubinas elevadas (predomínio direto). Qual a principal suspeita diagnóstica?",
+    "alternativas": [
+      "Hepatite crônica alcoólica.",
+      "Pancreatite crônica alcoólica.",
+      "Linfoma não-Hodgkin.",
+      "Câncer gástrico."
+    ],
+    "correta": 3,
+    "comentario": "O quadro é altamente sugestivo de câncer gástrico avançado com disseminação metastática: dor epigástrica progressiva relacionada à alimentação, anemia (sangramento crônico/doença consumptiva), icterícia com padrão colestático (possível compressão/infiltração biliar por metástases hepáticas ou linfonodais no hilo hepático) e, especialmente, o NÓDULO PERIUMBILICAL — o clássico nódulo da irmã Maria José, sinal patognomônico (embora tardio) de disseminação peritoneal/metastática de neoplasia intra-abdominal, mais comumente de origem gástrica."
+  },
+  {
+    "id": "q521",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Paciente de 40 anos com diagnóstico de tumor estromal gastrointestinal (GIST), tumor mesenquimal do trato gastrointestinal. Sobre o GIST, é correto afirmar que:",
+    "alternativas": [
+      "O tumor deriva das células intersticiais de Cajal, presentes no plexo mioentérico.",
+      "Possui disseminação linfonodal, com metástase mais comumente para o pulmão.",
+      "O diagnóstico é histológico, baseado em hematoxilina/eosina, devendo ser positivo para receptor de estrogênio.",
+      "Acomete mais comumente o estômago, seguido do cólon e reto."
+    ],
+    "correta": 0,
+    "comentario": "O GIST origina-se das células intersticiais de Cajal (as \"células marcapasso\" do plexo mioentérico, responsáveis pela geração e coordenação da atividade motora peristáltica do tubo digestivo), sendo essa sua origem histogenética característica. Diferentemente da maioria dos carcinomas, o GIST raramente dissemina por via linfática (a disseminação hematogênica, principalmente para fígado e peritônio, é a via predominante — não o pulmão). O diagnóstico depende de imuno-histoquímica positiva para c-KIT (CD117), não receptor de estrogênio. O estômago é, de fato, o sítio mais comum de GIST no trato gastrointestinal, seguido pelo intestino delgado (não pelo cólon/reto, que são sítios menos comuns)."
+  },
+  {
+    "id": "q522",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "A técnica de esofagectomia com reconstrução do trânsito por anastomose gastroesofágica INTRATORÁCICA denomina-se:",
+    "alternativas": [
+      "Ivor Lewis.",
+      "Braun.",
+      "Marischino.",
+      "Billroth.",
+      "Meyers."
+    ],
+    "correta": 0,
+    "comentario": "A esofagectomia de Ivor Lewis combina abordagem abdominal (mobilização gástrica) e torácica direita (ressecção esofágica com anastomose esofagogástrica INTRATORÁCICA), sendo indicada principalmente para tumores de terço médio/inferior do esôfago. Difere da esofagectomia trans-hiatal (sem toracotomia, com anastomose CERVICAL) e da técnica de McKeown/três campos (abordagem cervical, torácica e abdominal combinadas)."
+  },
+  {
+    "id": "q523",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "revisado": true,
+    "fonte": "Prova de residência médica (banco de questões).",
+    "enunciado": "Paciente de 70 anos, tabagista e etilista, disfagia progressiva há 6 meses com perda de 15% do peso corporal. EDA: lesão vegetante a 25cm da arcada dentária, ocupando 70% da luz esofágica. Biópsia: carcinoma de células escamosas do esôfago. Estadiamento sem linfonodos, metástases ou invasão de órgãos adjacentes (T3N0M0). A conduta mais adequada é:",
+    "alternativas": [
+      "Esofagectomia seguida de tratamento adjuvante.",
+      "Esofagectomia radical em três campos, isoladamente.",
+      "Quimioterapia + radioterapia exclusiva (definitiva).",
+      "Quimioterapia + radioterapia neoadjuvante, seguida de cirurgia."
+    ],
+    "correta": 3,
+    "comentario": "Para carcinoma epidermoide de esôfago localmente avançado (T3), mesmo sem comprometimento linfonodal (N0) ou metástase (M0), a quimiorradioterapia NEOADJUVANTE seguida de esofagectomia (protocolo baseado no estudo CROSS) é a estratégia de escolha, reduzindo o estágio tumoral antes da ressecção cirúrgica e melhorando a sobrevida em relação à cirurgia isolada. A quimiorradioterapia definitiva (exclusiva, sem cirurgia) é reservada a pacientes inoperáveis ou que recusam cirurgia, não sendo a primeira escolha neste paciente candidato a tratamento curativo multimodal completo."
+  },
+  {
+    "id": "q524",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "NCCN Guidelines for Gastric and Esophageal Cancer — versão 2.2026. Questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Paciente com adenocarcinoma gástrico metastático, HER2-negativo, é submetido a painel molecular do tumor que revela expressão de Claudina 18.2 (CLDN18.2) positiva (coloração membranosa moderada a forte em ≥75% das células tumorais). Segundo as diretrizes atuais (NCCN), a incorporação desse biomarcador ao tratamento de primeira linha permite considerar:",
+    "alternativas": [
+      "Trastuzumabe associado à quimioterapia, já que a positividade para Claudina 18.2 é equivalente à positividade para HER2.",
+      "Zolbetuximabe (anticorpo monoclonal anti-Claudina 18.2) associado à quimioterapia de primeira linha, com benefício de sobrevida demonstrado nos estudos SPOTLIGHT e GLOW.",
+      "Suspensão de qualquer tratamento sistêmico, já que a positividade para Claudina 18.2 indica doença indolente sem necessidade de tratamento imediato.",
+      "Cirurgia citorredutora isolada, sem necessidade de tratamento sistêmico associado."
+    ],
+    "correta": 1,
+    "comentario": "A Claudina 18.2 (CLDN18.2) é uma proteína de junção celular expressa em um subgrupo relevante de adenocarcinomas gástricos e da transição esofagogástrica, sendo um biomarcador distinto do HER2 (não equivalente a ele — pacientes podem ser HER2-negativos e CLDN18.2-positivos, como no caso descrito). O zolbetuximabe, anticorpo monoclonal direcionado contra a Claudina 18.2, associado à quimioterapia, tornou-se opção de primeira linha para tumores HER2-negativos com positividade para esse biomarcador, com benefício de sobrevida global e livre de progressão demonstrado nos estudos de fase III SPOTLIGHT e GLOW — ampliando o arsenal de terapias-alvo guiadas por perfil molecular no câncer gástrico avançado, ao lado do trastuzumabe (para tumores HER2-positivos) e da imunoterapia (nivolumabe/tislelizumabe, para tumores com PD-L1 CPS≥5)."
+  },
+  {
+    "id": "q525",
+    "temaId": "cancer-gastrico-esofago",
+    "tema": "Câncer Gástrico e de Esôfago",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "CheckMate 577 — nivolumabe adjuvante em câncer de esôfago/transição esofagogástrica. Questão inédita, não corresponde a uma prova real.",
+    "enunciado": "Paciente com adenocarcinoma de esôfago localmente avançado é submetido a quimiorradioterapia neoadjuvante seguida de esofagectomia, com anatomopatológico da peça cirúrgica revelando doença residual (ausência de resposta patológica completa). Segundo estudos recentes incorporados às diretrizes atuais, a conduta adicional recomendada nesse cenário é:",
+    "alternativas": [
+      "Observação isolada, sem tratamento adicional, já que a cirurgia já foi realizada com intenção curativa.",
+      "Imunoterapia adjuvante com nivolumabe, com base em benefício de sobrevida livre de doença demonstrado no estudo CheckMate 577 para pacientes com doença residual após quimiorradioterapia neoadjuvante e esofagectomia.",
+      "Nova quimiorradioterapia em doses plenas, repetindo o esquema neoadjuvante já utilizado.",
+      "Reoperação imediata para nova ressecção mais ampla, independentemente da margem cirúrgica obtida."
+    ],
+    "correta": 1,
+    "comentario": "Em pacientes com câncer de esôfago ou da transição esofagogástrica submetidos a quimiorradioterapia neoadjuvante seguida de esofagectomia que apresentam doença residual (sem resposta patológica completa) — grupo com risco aumentado de recidiva —, a imunoterapia adjuvante com nivolumabe está indicada, com base em benefício demonstrado de sobrevida livre de doença no estudo CheckMate 577, representando incorporação relevante da imunoterapia ao tratamento multimodal desse câncer, além do já estabelecido uso na doença metastática."
   }
 ]

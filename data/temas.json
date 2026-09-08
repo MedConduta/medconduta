@@ -8401,8 +8401,9 @@
     "categoria": "Gastroenterologia",
     "titulo": "Câncer Gástrico e de Esôfago",
     "resumo": "H. pylori no câncer gástrico, os dois subtipos histológicos do câncer de esôfago e a disfagia progressiva como sinal de alarme.",
-    "revisado": false,
-    "fonte": "Instituto Nacional de Câncer (INCA); Sociedade Brasileira de Cirurgia Oncológica; NCCN Guidelines for Gastric and Esophageal Cancer",
+    "revisado": true,
+    "fonte": "Instituto Nacional de Câncer (INCA); Sociedade Brasileira de Cirurgia Oncológica; NCCN Guidelines for Gastric and Esophageal Cancer — versão 2.2026",
+    "comoCai": "No SES-PE e no ENAMED, a associação H. pylori/sequência de Correa no câncer gástrico e Barrett/DRGE no adenocarcinoma de esôfago são cobrança central. O linfonodo de Virchow e o nódulo da irmã Maria José como sinais tardios de disseminação metastática também aparecem com frequência. Provas mais atualizadas já exploram o painel molecular obrigatório na doença avançada (HER2, PD-L1, Claudina 18.2) e seu impacto na escolha terapêutica.",
     "mnemonicos": [
       {
         "palavra": "Barrett vira adenocarcinoma",
@@ -8424,11 +8425,11 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A endoscopia digestiva alta com biópsia é o exame padrão-ouro para ambas as neoplasias, permitindo visualização direta e confirmação histológica. Uma vez confirmado o diagnóstico, o estadiamento (tomografia de tórax/abdome, e ecoendoscopia para avaliação da profundidade de invasão da parede e linfonodos regionais) é essencial para definir a estratégia terapêutica e a ressecabilidade."
+        "conteudo": "A endoscopia digestiva alta com biópsia é o exame padrão-ouro para ambas as neoplasias, permitindo visualização direta e confirmação histológica. Uma vez confirmado o diagnóstico, o estadiamento (tomografia de tórax/abdome, e ecoendoscopia para avaliação da profundidade de invasão da parede e linfonodos regionais) é essencial para definir a estratégia terapêutica e a ressecabilidade. Em doença localmente avançada/metastática, tornou-se obrigatória a caracterização molecular do tumor — status de HER2 (por imuno-histoquímica/FISH), expressão de PD-L1 (CPS, combined positive score) e, mais recentemente, status de Claudina 18.2 (CLDN18.2) —, já que esses marcadores definem diretamente a elegibilidade para terapias-alvo e imunoterapia."
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Em estágios iniciais e localizados, a ressecção cirúrgica (gastrectomia com linfadenectomia, ou esofagectomia) com intenção curativa é o tratamento de escolha, frequentemente associada a quimioterapia perioperatória (antes e depois da cirurgia) para melhorar desfechos em tumores mais avançados localmente. Em doença metastática, o tratamento é paliativo, com quimioterapia sistêmica e, cada vez mais, terapias-alvo guiadas por perfil molecular do tumor (por exemplo, status de HER2 no câncer gástrico)."
+        "conteudo": "Em estágios iniciais e localizados, a ressecção cirúrgica (gastrectomia com linfadenectomia, ou esofagectomia) com intenção curativa é o tratamento de escolha, frequentemente associada a quimioterapia perioperatória (esquema FLOT, antes e depois da cirurgia) no câncer gástrico, ou a quimiorradioterapia neoadjuvante (protocolo CROSS) seguida de cirurgia no câncer de esôfago localmente avançado. Em doença metastática/irressecável, o tratamento é sistêmico e cada vez mais guiado pelo perfil molecular do tumor: tumores HER2-positivos recebem trastuzumabe associado à quimioterapia (± imunoterapia); tumores HER2-negativos com PD-L1 CPS≥5 recebem imunoterapia (nivolumabe, ou tislelizumabe, aprovado em 2024) associada à quimioterapia de primeira linha; e tumores HER2-negativos com positividade para Claudina 18.2 (CLDN18.2) — proteína de junção celular expressa em subgrupo relevante de adenocarcinomas gástricos/de transição esofagogástrica — têm no zolbetuximabe (anticorpo monoclonal anti-Claudina 18.2, associado à quimioterapia) uma opção terapêutica de primeira linha mais recente, com benefício de sobrevida demonstrado nos estudos SPOTLIGHT e GLOW. Em pacientes submetidos a quimiorradioterapia neoadjuvante seguida de esofagectomia com doença residual, a imunoterapia adjuvante com nivolumabe está indicada."
       },
       {
         "titulo": "Sinais de alerta",
@@ -8436,7 +8437,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A associação entre H. pylori e câncer gástrico (sequência de Correa) e entre esôfago de Barrett/DRGE e adenocarcinoma esofágico são cobranças centrais e recorrentes. O linfonodo de Virchow e o nódulo da irmã Maria José como sinais clássicos (porém tardios) de disseminação metastática de câncer gástrico também são frequentemente exigidos em questões de semiologia."
+        "conteudo": "A associação entre H. pylori e câncer gástrico (sequência de Correa) e entre esôfago de Barrett/DRGE e adenocarcinoma esofágico são cobranças centrais e recorrentes. O linfonodo de Virchow e o nódulo da irmã Maria José como sinais clássicos (porém tardios) de disseminação metastática de câncer gástrico também são frequentemente exigidos em questões de semiologia. Provas mais recentes já cobram o painel molecular da doença avançada (HER2, PD-L1, Claudina 18.2) e as terapias-alvo correspondentes (trastuzumabe, nivolumabe, zolbetuximabe)."
       }
     ]
   },
