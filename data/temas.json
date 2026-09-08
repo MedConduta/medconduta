@@ -1985,8 +1985,8 @@
     "categoria": "Infectologia",
     "titulo": "Infecções Sexualmente Transmissíveis — Sífilis",
     "resumo": "Estágios clínicos, diagnóstico sorológico e tratamento da sífilis, incluindo rastreio na gestação.",
-    "revisado": false,
-    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (2022)",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (2022); CDC Clinical Guidelines on the Use of Doxycycline Postexposure Prophylaxis (Doxy-PEP) for Bacterial STI Prevention, 2024",
     "mnemonicos": [
       {
         "palavra": "PRIMÁRIA → SECUNDÁRIA → LATENTE → TERCIÁRIA",
@@ -2012,7 +2012,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Penicilina benzatina é o tratamento de escolha em todos os estágios, sendo o único tratamento comprovadamente eficaz e seguro na gestação (nenhuma alternativa substitui a penicilina em gestante, exigindo dessensibilização em caso de alergia relatada) — o esquema (dose única ou múltiplas doses semanais) varia conforme o estágio da doença. O seguimento com VDRL seriado é obrigatório para confirmar resposta adequada e detectar possível falha terapêutica ou reinfecção."
+        "conteudo": "Penicilina benzatina é o tratamento de escolha em todos os estágios, sendo o único tratamento comprovadamente eficaz e seguro na gestação (nenhuma alternativa substitui a penicilina em gestante, exigindo dessensibilização em caso de alergia relatada) — o esquema (dose única ou múltiplas doses semanais) varia conforme o estágio da doença. O seguimento com VDRL seriado é obrigatório para confirmar resposta adequada e detectar possível falha terapêutica ou reinfecção. O Brasil enfrenta episódios recorrentes de DESABASTECIMENTO de penicilina benzatina (crise que se arrasta desde meados da década de 2010, com novos picos em anos recentes, por escassez global de matéria-prima), o que levou o Ministério da Saúde a estabelecer protocolos de PRIORIZAÇÃO do estoque disponível: gestantes e suas parcerias sexuais têm prioridade ABSOLUTA no acesso à penicilina em cenário de escassez, dado que nenhuma alternativa é segura/eficaz na gestação — reforçando que, mesmo diante de desabastecimento, a penicilina para gestantes deve ser garantida por outras vias (aquisição emergencial, redistribuição), nunca substituída. Como estratégia de PREVENÇÃO mais recente, a doxiciclina em profilaxia pós-exposição (Doxy-PEP) — 200mg em dose única, idealmente até 72 horas após relação sexual desprotegida — foi respaldada pelo CDC em 2024 para populações de maior risco (homens que fazem sexo com homens e mulheres transgênero com IST bacteriana nos últimos 12 meses), reduzindo em mais de 70% a incidência de sífilis e clamídia, e cerca de 50% a de gonorreia, quando usada de forma consistente após exposições de risco."
       },
       {
         "titulo": "Sinais de alerta",
@@ -2020,9 +2020,10 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A obrigatoriedade da penicilina benzatina na gestante (com dessensibilização em caso de alergia, nunca substituição por outro antibiótico) é cobrança certíssima e um dos pontos mais importantes de toda a obstetrícia/infectologia em provas de residência. A diferenciação entre testes treponêmicos e não treponêmicos, e o uso do VDRL para monitorização terapêutica, também são frequentemente exigidos."
+        "conteudo": "A obrigatoriedade da penicilina benzatina na gestante (com dessensibilização em caso de alergia, nunca substituição por outro antibiótico) é cobrança certíssima e um dos pontos mais importantes de toda a obstetrícia/infectologia em provas de residência. A diferenciação entre testes treponêmicos e não treponêmicos, e o uso do VDRL para monitorização terapêutica, também são frequentemente exigidos. Provas mais atualizadas já cobram a priorização de gestantes/parcerias no desabastecimento de penicilina benzatina e a doxiciclina como profilaxia pós-exposição (Doxy-PEP) para populações de risco."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, os estágios clínicos da sífilis, a diferenciação entre testes treponêmicos e não treponêmicos, e a obrigatoriedade da penicilina benzatina (com dessensibilização, nunca substituição) na gestante são cobrança certíssima. Provas mais atualizadas já cobram o desabastecimento periódico de penicilina benzatina no Brasil e os protocolos de priorização (gestantes e suas parcerias sexuais têm prioridade absoluta no acesso ao medicamento em cenário de escassez), além da doxiciclina como profilaxia pós-exposição (Doxy-PEP) — estratégia emergente (CDC 2024) para prevenção de sífilis, clamídia e gonorreia em populações de risco."
   },
   {
     "id": "hernias-parede-abdominal",
