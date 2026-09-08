@@ -17085,5 +17085,444 @@
         "ano": 2026,
         "fonte": "Questão original MedConduta, com base na Portaria CONITEC nº 18/2020 (exclusão da rifampicina em dose única para quimioprofilaxia de contatos no SUS) e no programa PEP++ (NHR Brasil).",
         "revisado": true
+    },
+    {
+        "id": "q935",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Entre 2003 e 2014, os casos de malária entre crianças e adolescentes no Brasil representaram cerca de 47% do total registrado. Qual é a espécie de Plasmodium com maior prevalência no Brasil?",
+        "alternativas": [
+            "Plasmodium vivax.",
+            "Plasmodium falciparum.",
+            "Plasmodium malariae.",
+            "Plasmodium ovale."
+        ],
+        "correta": 0,
+        "comentario": "O Plasmodium vivax é a espécie predominante no Brasil, respondendo pela grande maioria dos casos de malária no país (concentrados na região amazônica) — em contraste com a África, onde o P. falciparum (responsável pelas formas mais graves) é a espécie predominante. O P. ovale não é encontrado no Brasil.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q936",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Mulher, 38 anos, previamente hígida, com febre, calafrios, mal-estar, mialgia, astenia e sudorese fria há 5 dias. Mora em Rondônia, trabalha em escritório de advocacia, sem viagens recentes. Conforme os dados clínicos e epidemiológicos, a principal hipótese diagnóstica é:",
+        "alternativas": [
+            "Malária.",
+            "Pneumonia.",
+            "Infecção do trato urinário.",
+            "Gripe."
+        ],
+        "correta": 0,
+        "comentario": "A residência em área endêmica (Rondônia, estado da região amazônica com transmissão ativa de malária) já é suficiente para tornar a malária a principal hipótese diagnóstica diante de febre com calafrios, sudorese e mialgia — mesmo sem história de viagem recente, já que a exposição ocorre no próprio local de moradia. A malária deve sempre ser lembrada como diagnóstico diferencial de síndrome febril em residentes ou visitantes de área endêmica.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q937",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Mulher, 33 anos, não grávida, com síndrome ictérico-febril aguda, diagnosticada laboratorialmente com malária por Plasmodium vivax. Ao exame: febril, ictérica +++/4+, PA 90x50 mmHg. Laboratório: ureia 43 mg/dL, creatinina 2,1 mg/dL. Segundo o Ministério da Saúde, a conduta CORRETA é:",
+        "alternativas": [
+            "Acompanhar ambulatorialmente e tratar com cloroquina e primaquina.",
+            "Acompanhar ambulatorialmente e administrar artesunato e clindamicina.",
+            "Internar e tratar com cloroquina e primaquina.",
+            "Internar e administrar artesunato e clindamicina."
+        ],
+        "correta": 3,
+        "comentario": "A combinação de icterícia importante, hipotensão e disfunção renal (creatinina elevada) caracteriza MALÁRIA GRAVE — que, embora mais comumente associada ao P. falciparum, também pode ocorrer (embora mais raramente) em infecções por P. vivax. Diante de critérios de gravidade, independentemente da espécie, a conduta correta é INTERNAÇÃO com tratamento parenteral (artesunato venoso, associado a clindamicina) e suporte intensivo — a cloroquina/primaquina oral é reservada aos casos NÃO complicados, tratados ambulatorialmente.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q938",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "A malária é transmitida pela picada do mosquito fêmea do gênero:",
+        "alternativas": [
+            "Aedes.",
+            "Anopheles.",
+            "Phlebotomus.",
+            "Plasmodium.",
+            "Culex"
+        ],
+        "correta": 1,
+        "comentario": "O vetor da malária é o mosquito do gênero Anopheles (fêmea). Aedes transmite dengue/zika/chikungunya/febre amarela urbana; Phlebotomus (Velho Mundo)/Lutzomyia (Novo Mundo) transmitem leishmaniose; Culex é vetor de outras arboviroses (como a encefalite de St. Louis); e Plasmodium é o próprio agente etiológico da malária, não um vetor.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q939",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "A decisão de como tratar o paciente com malária deve ser precedida de informações de diferentes aspectos. Identifique a alternativa que apresenta CORRETAMENTE um aspecto a ser considerado e sua justificativa.",
+        "alternativas": [
+            "Espécie do plasmódio infectante — não se faz necessária a identificação da espécie, pois os esquemas terapêuticos são todos semelhantes.",
+            "Idade do paciente — pela maior toxicidade em adultos jovens.",
+            "História de exposição anterior à infecção — indivíduos infectados pela segunda ou terceira vez tendem a apresentar formas mais graves da doença.",
+            "Gravidade da doença — necessidade de hospitalização e de tratamento com esquemas especiais antimaláricos."
+        ],
+        "correta": 3,
+        "comentario": "A gravidade da doença é fator determinante para a escolha terapêutica: casos graves exigem internação e esquemas parenterais especiais (artesunato venoso), enquanto casos não complicados podem ser tratados ambulatorialmente por via oral. As demais alternativas contêm erros: a espécie infectante é ESSENCIAL para definir o esquema terapêutico (os esquemas diferem substancialmente entre P. vivax e P. falciparum); não há relação estabelecida de maior toxicidade em adultos jovens especificamente; e, ao contrário do afirmado, exposições anteriores tendem a conferir imunidade PARCIAL, associada a formas GERALMENTE MENOS graves em reinfecções (não mais graves).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q940",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Arteméter e lumefantrina são tratamento de escolha para malária por:",
+        "alternativas": [
+            "Plasmodium vivax, formas graves.",
+            "Plasmodium falciparum e P. vivax.",
+            "Plasmodium ovale e P. vivax.",
+            "Plasmodium falciparum."
+        ],
+        "correta": 3,
+        "comentario": "A combinação arteméter + lumefantrina é uma terapia combinada baseada em artemisinina (ACT), empregada especificamente no tratamento do Plasmodium falciparum não complicado — não sendo indicada para P. vivax, cujo tratamento padrão baseia-se em cloroquina (esquizonticida sanguíneo) associada à primaquina ou tafenoquina (para eliminação dos hipnozoítos hepáticos).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q941",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Os casos graves/complicados de malária habitualmente têm como agente etiológico o Plasmodium falciparum, embora haja relatos em portadores de P. vivax. Dentre os critérios de gravidade, pode-se citar:",
+        "alternativas": [
+            "Insuficiência renal.",
+            "Leucocitose.",
+            "Hipertensão arterial.",
+            "Cefaleia intensa isolada."
+        ],
+        "correta": 0,
+        "comentario": "A insuficiência renal aguda é um dos critérios formais de gravidade da malária (ao lado de rebaixamento do nível de consciência, icterícia intensa, edema pulmonar/SARA, choque, sangramento espontâneo, hipoglicemia, acidose e parasitemia muito elevada), exigindo tratamento parenteral e suporte intensivo. Leucocitose, hipertensão arterial e cefaleia intensa isolada não constam entre os critérios formais de gravidade da malária.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q942",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Sobre a malária, julgue (V/F): (  ) A malária é doença infecciosa febril, aguda, causada por parasita unicelular. (  ) No Brasil, três espécies de Plasmodium causam malária: P. malariae, P. vivax e P. falciparum. (  ) A transmissão se dá através da picada do mosquito MACHO Anopheles. (  ) Os sintomas febris antecedem o rompimento das hemácias. A sequência correta, de cima para baixo, é:",
+        "alternativas": [
+            "V, V, V, V",
+            "V, V, F, F",
+            "F, F, V, V",
+            "V, F, V, F",
+            "F, V, F, V"
+        ],
+        "correta": 1,
+        "comentario": "As duas primeiras afirmativas são verdadeiras: a malária é causada por um protozoário (parasita unicelular) e, no Brasil, circulam três espécies (P. malariae, P. vivax e P. falciparum — o P. ovale não ocorre no país). As duas últimas são falsas: a transmissão ocorre pela picada da FÊMEA do Anopheles (não do macho, que não realiza hematofagia), e os paroxismos febris ocorrem justamente NO MOMENTO/APÓS o rompimento sincronizado das hemácias parasitadas (liberação de merozoítos e mediadores pirogênicos), e não antes desse evento.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q943",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Sobre a malária, podemos afirmar que:",
+        "alternativas": [
+            "As espécies mais prevalentes no Brasil são P. falciparum e P. malariae.",
+            "A transmissão vetorial ocorre pela picada de mosquitos do gênero Lutzomyia.",
+            "O período de incubação é inferior a 7 dias, independentemente da espécie de plasmódio.",
+            "O homem é o único reservatório com importância epidemiológica."
+        ],
+        "correta": 3,
+        "comentario": "O ser humano é o único reservatório com relevância epidemiológica para as espécies de Plasmodium que causam malária humana (não há reservatório animal significativo envolvido na transmissão humana no Brasil). As demais alternativas contêm erros: a espécie mais prevalente no Brasil é o P. VIVAX (não falciparum/malariae); o vetor é o Anopheles (Lutzomyia transmite leishmaniose); e o período de incubação VARIA conforme a espécie, podendo ultrapassar 7 dias (P. vivax, por exemplo, tem incubação média de cerca de 12-17 dias).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q944",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Homem, 24 anos, geólogo, viajará em expedição na Amazônia Legal em 20 dias, permanecendo cerca de dois meses em localidades diferentes. Procura a UBS para orientação sobre profilaxia da malária. Qual a conduta adequada?",
+        "alternativas": [
+            "Solicitar o itinerário detalhado e agendar retorno em 2 dias para orientação, já que a estimativa do risco de adquirir malária no destino deve levar em conta a Incidência Parasitária Anual (IPA) de cada localidade.",
+            "Orientar vacinação pelo menos dez dias antes da viagem, já que existe vacina segura e eficaz contra a malária.",
+            "Orientar apenas medidas de proteção contra picadas (roupas claras/mangas longas, mosquiteiro impregnado, repelente com DEET), sem necessidade de avaliação adicional do itinerário.",
+            "Informar que a quimioprofilaxia (doses subterapêuticas de antimaláricos) é a medida de prevenção mais segura, mas que não previne infecção nem recaídas por P. vivax."
+        ],
+        "correta": 0,
+        "comentario": "Diferentemente de viagens internacionais a áreas de alta endemicidade (como parte da África), a orientação para viagens dentro da Amazônia Legal brasileira NÃO segue uma recomendação universal de quimioprofilaxia — a decisão depende da avaliação individualizada do risco em cada localidade específica do roteiro, baseada na Incidência Parasitária Anual (IPA) de cada município/área a ser visitada, o que exige levantamento detalhado do itinerário antes de qualquer orientação definitiva. Não existe vacina contra malária amplamente disponível/recomendada na rotina desse cenário no Brasil.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q945",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Homem, 65 anos, caminhoneiro que transporta madeira de Rondônia para São Paulo, com febre diária e tremedeira há 4 meses. Exames: anemia, trombocitopenia, gota espessa com alta parasitemia por Plasmodium vivax. Recebeu tratamento por apenas 3 dias, com remissão completa, mas não viajou mais para fora de SP. Voltou a ter febre diária há 4 dias; gota espessa positiva novamente para P. vivax (1 parasita/campo). A medicação mais indicada para PREVENIR uma situação como essa é:",
+        "alternativas": [
+            "Artesunato.",
+            "Cloroquina.",
+            "Mefloquina.",
+            "Primaquina."
+        ],
+        "correta": 3,
+        "comentario": "O quadro descrito é de RECAÍDA (relapse) por P. vivax — reativação de hipnozoítos hepáticos dormentes, favorecida pelo tratamento incompleto (apenas 3 dias, sem associação ou conclusão adequada do esquema com primaquina/tafenoquina). A primaquina (ou, mais recentemente, a tafenoquina em dose única) é a medicação que elimina os hipnozoítos hepáticos, prevenindo recaídas tardias — daí sua importância como parte OBRIGATÓRIA do esquema terapêutico completo do P. vivax, e não apenas a cloroquina isolada (que trata apenas a fase sanguínea aguda, sem prevenir recaída).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q946",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Um turista volta de um lugar com endemia de malária falciparum. Deve-se ter forte suspeita dessa doença em pessoas febris que retornaram de zona endêmica em até:",
+        "alternativas": [
+            "1 ano.",
+            "7 dias.",
+            "2 meses.",
+            "6 meses."
+        ],
+        "correta": 2,
+        "comentario": "A maioria dos casos de malária por P. falciparum se manifesta dentro de 1 a 3 meses após a exposição, sendo os 2 MESES pós-retorno de área endêmica o período de maior alerta clínico para manutenção de suspeita diagnóstica em viajante febril — o diagnóstico precoce nesse contexto é crucial, dado o potencial de gravidade rápida do P. falciparum, e um atraso diagnóstico pode ser fatal.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q947",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Durante viagem na região amazônica, um membro da equipe apresentou mal-estar, cefaleia, mialgia generalizada, náuseas, vômitos, tonturas, seguidos de tremor, febre e sudorese. O diagnóstico de malária foi confirmado por gota espessa. Esse teste se baseia na:",
+        "alternativas": [
+            "Visualização do parasita dentro das hemácias após coloração com corantes biológicos.",
+            "Visualização de bactéria dentro das hemácias após coloração de Gram.",
+            "Identificação do parasita fora das células, apresentando movimentos aleatórios.",
+            "Identificação do parasita dentro dos linfócitos e fora das células.",
+            "Visualização do parasita dentro dos linfócitos, sem coloração especial."
+        ],
+        "correta": 0,
+        "comentario": "A gota espessa é um exame microscópico de sangue periférico corado (classicamente pelo método de Giemsa ou Walker), que permite a visualização direta das formas do Plasmodium DENTRO das hemácias parasitadas — permitindo tanto o diagnóstico quanto a identificação da espécie e a quantificação da parasitemia, informações centrais para definir gravidade e conduta terapêutica.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q948",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Paciente, 45 anos, agricultor, morador de zona rural de Acrelândia (AC), com febre, cefaleia, artralgia e calafrios. Ao exame, apenas febre (38,4°C). Pesquisa de Plasmodium: 2+ para P. vivax. Iniciada terapêutica padrão do Ministério da Saúde. No 4º dia de tratamento, retorna com icterícia intensa, vômitos e dor abdominal (iniciados no dia anterior), com desaparecimento dos sintomas iniciais da doença. A causa provável e a conduta são, respectivamente:",
+        "alternativas": [
+            "Hemólise pela primaquina; suspensão do tratamento.",
+            "Hemólise pela cloroquina; manter o esquema apenas com primaquina.",
+            "Hemólise pelo quinino; substituí-lo pela cloroquina.",
+            "Hepatotoxicidade devido à cloroquina e primaquina.",
+            "Hepatotoxicidade devido exclusivamente ao quinino."
+        ],
+        "correta": 0,
+        "comentario": "O quadro de icterícia intensa, vômitos e dor abdominal, surgindo dias após o início da primaquina e COM resolução dos sintomas iniciais da malária (indicando resposta adequada ao tratamento antiparasitário), é altamente sugestivo de HEMÓLISE aguda induzida pela primaquina — reação clássica em pacientes com deficiência de G6PD não diagnosticada previamente (a testagem de G6PD antes do uso de primaquina/tafenoquina é etapa recomendada do protocolo, exatamente para prevenir esse desfecho). A conduta correta diante de hemólise significativa é a SUSPENSÃO imediata da primaquina.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q949",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Homem, 29 anos, reside em cidade de grande porte da região Sudeste. Vai viajar para município da região Norte no próximo fim de semana, permanecendo 10 dias. Procura a UBS para orientação de profilaxia da malária, sem comorbidades relatadas. A orientação adequada é:",
+        "alternativas": [
+            "Não viajar, pois a quimioprofilaxia deve ser iniciada uma semana antes da chegada e não haveria tempo hábil.",
+            "Prescrever quimioprofilaxia com atovaquona + proguanil, para reduzir risco de efeitos colaterais.",
+            "Prescrever quimioprofilaxia com mefloquina 250 mg semanalmente, iniciando imediatamente.",
+            "Prescrever quimioprofilaxia com dois comprimidos de cloroquina por semana durante a permanência na área.",
+            "Orientar medidas de proteção individual: evitar áreas de risco ao entardecer/amanhecer; roupas claras e de mangas longas; repelentes nas áreas expostas; uso de mosquiteiro para dormir."
+        ],
+        "correta": 4,
+        "comentario": "Para viagens domésticas dentro do território brasileiro (mesmo a áreas endêmicas da região Norte), a orientação padrão NÃO inclui quimioprofilaxia medicamentosa de rotina — a recomendação central são as medidas de proteção individual contra a picada do vetor (evitar exposição em horários de maior atividade do Anopheles, vestimentas protetoras, repelentes, mosquiteiro), reservando-se estratégias medicamentosas para contextos específicos e avaliação individualizada de risco elevado (conforme IPA da localidade), não sendo prática padronizada para viagens curtas de rotina.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q950",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "No tratamento da malária em gestantes, é contraindicado o uso de:",
+        "alternativas": [
+            "Primaquina.",
+            "Cloroquina.",
+            "Quinina.",
+            "Clindamicina."
+        ],
+        "correta": 0,
+        "comentario": "A primaquina é CONTRAINDICADA na gestação, pelo risco teórico de hemólise no feto (cujo status de G6PD é desconhecido) e por outras preocupações de segurança na gravidez — por isso, gestantes com malária por P. vivax são tratadas com cloroquina (esquizonticida sanguíneo, segura na gestação) em esquema de supressão semanal até o parto, postergando a cura radical (eliminação dos hipnozoítos com primaquina) para após o parto e o término da amamentação.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q951",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Mulher, 30 anos, diagnóstico de malária por Plasmodium falciparum após viagem à Tanzânia. Parasitemia 7%, hematócrito 20%, bilirrubina total 8 mg/dL, creatinina 2,8 mg/dL. Redução do nível de consciência, com necessidade de intubação orotraqueal. O tratamento de escolha é:",
+        "alternativas": [
+            "Cloroquina.",
+            "Quinino venoso.",
+            "Artesunato venoso.",
+            "Mefloquina."
+        ],
+        "correta": 2,
+        "comentario": "O quadro preenche múltiplos critérios de malária GRAVE (parasitemia elevada, anemia grave, hiperbilirrubinemia, insuficiência renal, rebaixamento do nível de consciência exigindo IOT — malária cerebral). O tratamento de escolha para malária grave, atualmente preferido sobre o quinino venoso (por maior eficácia e menor toxicidade), é o ARTESUNATO ENDOVENOSO, associado a suporte intensivo em ambiente hospitalar.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q952",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Homem, 21 anos, internado há 12 horas com malária grave por Plasmodium falciparum, em uso de quinino e clindamicina venosos. Exame físico: comatoso, sudorético, extremidades frias, hipotensão (PA 90x60 mmHg), sinal de Babinski presente. O evento que provavelmente causou a piora neurológica foi:",
+        "alternativas": [
+            "Hiponatremia.",
+            "Sepse por Gram-negativo.",
+            "Edema agudo de pulmão.",
+            "Hipoglicemia."
+        ],
+        "correta": 3,
+        "comentario": "O quinino é um conhecido causador de HIPOGLICEMIA — estimula a liberação de insulina pancreática, podendo precipitar quadros hipoglicêmicos graves, sobretudo em pacientes já criticamente enfermos com malária grave. A hipoglicemia pode mimetizar ou agravar o rebaixamento do nível de consciência da malária cerebral, sendo uma causa reconhecida e importante de piora neurológica AGUDA durante o tratamento com quinino — exigindo monitorização glicêmica frequente nesses pacientes.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q953",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "No Brasil, o tratamento da malária por Plasmodium falciparum em adulto do sexo masculino, sem comorbidades, sem manifestação de gravidade, deve ser preferencialmente com a:",
+        "alternativas": [
+            "Combinação de arteméter e mefloquina por via oral.",
+            "Associação de cloroquina e artesunato por via oral.",
+            "Combinação de quinino e mefloquina por via oral.",
+            "Cloroquina por via oral isoladamente."
+        ],
+        "correta": 0,
+        "comentario": "No Brasil, o esquema preferencial para malária não complicada por P. falciparum é a terapia combinada com derivado de artemisinina — arteméter associado à mefloquina por via oral —, refletindo a recomendação de terapia combinada baseada em artemisinina (ACT) para reduzir o risco de resistência e aumentar a eficácia terapêutica. A cloroquina isolada NÃO é eficaz contra o P. falciparum na maior parte do território nacional/mundial, dada a resistência amplamente disseminada dessa espécie a essa droga.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q954",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Sobre a malária, considere: (1) É doença causada por parasita unicelular, ocorrendo em regiões subtropicais/tropicais, transmitida prioritariamente pela picada do mosquito Anopheles. (2) Durante a esquizogonia pré-eritrocítica, originam-se hipnozoítos, responsáveis pela recaída, que pode ocorrer nas infecções por P. vivax E por P. falciparum. (3) O ciclo dos plasmódios envolve reprodução sexuada e assexuada no vetor, e assexuada no homem; os trofozoítos são a forma parasitária de transmissão do mosquito para o homem. (4) Quatro espécies de plasmódios causam malária; no Brasil são encontradas P. vivax, P. malariae e P. falciparum, sendo a malária falciparum a mais frequentemente descrita no país. Assinale a alternativa correta.",
+        "alternativas": [
+            "Somente as afirmativas 1, 2 e 4 são verdadeiras.",
+            "Somente as afirmativas 3 e 4 são verdadeiras.",
+            "Somente as afirmativas 1 e 3 são verdadeiras.",
+            "Somente as afirmativas 1 e 2 são verdadeiras.",
+            "Somente a afirmativa 1 é verdadeira."
+        ],
+        "correta": 4,
+        "comentario": "Apenas a afirmativa 1 está correta. A afirmativa 2 é falsa: os hipnozoítos (formas hepáticas dormentes responsáveis por recaídas) são característicos do P. VIVAX (e P. ovale), NÃO do P. falciparum, que não forma essas estruturas latentes. A afirmativa 3 é falsa: a forma transmitida do mosquito para o homem é o ESPOROZOÍTO (não o trofozoíto, que é uma forma intraeritrocitária já dentro do hospedeiro humano). A afirmativa 4 é falsa: no Brasil, a espécie mais frequentemente descrita é o P. VIVAX (não o falciparum).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q955",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Com relação ao manejo clínico da malária grave, é correto afirmar, EXCETO:",
+        "alternativas": [
+            "A heparina e os glicocorticoides possuem papel central na terapêutica.",
+            "É a indicação principal para o uso de derivados da artemisinina.",
+            "O choque deve ser tratado com reposição hídrica cuidadosa.",
+            "O desenvolvimento de SARA é indicação para assistência ventilatória com PEEP."
+        ],
+        "correta": 0,
+        "comentario": "A afirmativa incorreta (EXCETO) é a que atribui papel CENTRAL à heparina e aos glicocorticoides no manejo da malária grave — ao contrário, ambos NÃO têm papel estabelecido/benéfico comprovado nesse contexto: corticosteroides foram estudados especificamente na malária cerebral e não mostraram benefício (podendo até ser prejudiciais), e a heparina não é rotineiramente indicada (seu uso fica restrito a situações específicas de CIVD comprovada, não como terapia padrão). As demais afirmativas descrevem corretamente aspectos do manejo padrão: derivados de artemisinina como tratamento principal, reposição hídrica cuidadosa no choque (evitando sobrecarga, dado o risco de edema pulmonar), e suporte ventilatório com PEEP na SARA associada.",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q956",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Qual é o teste laboratorial mais confiável para o diagnóstico do ataque agudo de malária?",
+        "alternativas": [
+            "Reação em cadeia da polimerase (PCR) para malária.",
+            "Hemograma.",
+            "Contagem de plaquetas.",
+            "Esfregaço de sangue periférico (Giemsa).",
+            "Dipstick para detecção de anticorpos circulantes."
+        ],
+        "correta": 3,
+        "comentario": "O esfregaço de sangue periférico corado por Giemsa (gota espessa/esfregaço fino) continua sendo o exame mais confiável e amplamente utilizado para o diagnóstico do ataque agudo de malária na prática clínica — permite visualização direta do parasita, identificação de espécie e quantificação da parasitemia. A PCR é mais sensível/específica, mas de uso restrito (custo, disponibilidade, tempo de resultado), não sendo o exame de escolha na rotina do diagnóstico agudo; hemograma e plaquetas são exames inespecíficos de suporte; e testes de detecção de anticorpos não são úteis no diagnóstico da fase aguda (refletem exposição prévia, não infecção ativa).",
+        "banca": "Banco de questões — Estratégia MED",
+        "ano": 2023,
+        "fonte": "Prova de residência médica (banco de questões).",
+        "revisado": true
+    },
+    {
+        "id": "q957",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Homem, 30 anos, 70 kg, diagnosticado com malária não complicada por Plasmodium vivax, sem contraindicações conhecidas. Sobre a tafenoquina como opção terapêutica para a cura radical dessa infecção, assinale a alternativa correta:",
+        "alternativas": [
+            "A tafenoquina é uma droga de DOSE ÚNICA para eliminação dos hipnozoítos hepáticos do P. vivax, incorporada ao SUS em 2023-2024 para pacientes com 16 anos ou mais e peso ≥ 35 kg — apresentando a vantagem, sobre a primaquina (que exige esquema de 7 a 14 dias), de eliminar o principal fator de recidiva relacionado à baixa adesão ao tratamento prolongado; assim como a primaquina, exige testagem de G6PD prévia, sendo contraindicada em deficientes dessa enzima.",
+            "A tafenoquina substitui a cloroquina no tratamento da fase sanguínea aguda da malária, não tendo qualquer ação sobre os hipnozoítos hepáticos.",
+            "A tafenoquina pode ser administrada com segurança em pacientes com deficiência de G6PD, sem necessidade de testagem prévia, ao contrário da primaquina.",
+            "A tafenoquina está disponível no Brasil apenas para uso em pesquisa clínica, sem incorporação ao SUS até o momento."
+        ],
+        "correta": 0,
+        "comentario": "A tafenoquina é uma nova opção para a cura radical da malária por P. vivax, com a vantagem de eliminar os hipnozoítos hepáticos em DOSE ÚNICA — diferentemente da primaquina, que exige esquema de 7 a 14 dias e está sujeita a problemas de adesão, um dos principais determinantes de recidiva na prática clínica. Foi incorporada ao SUS em 2023-2024 para pacientes com 16 anos ou mais e peso igual ou superior a 35 kg. Assim como a primaquina, a tafenoquina causa hemólise grave em pacientes com deficiência de G6PD, sendo formalmente CONTRAINDICADA nesse contexto — a testagem de G6PD (idealmente quantitativa) antes do uso é etapa obrigatória do protocolo, e não uma dispensa em relação à primaquina.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base na Nota Técnica do Ministério da Saúde sobre a incorporação da tafenoquina (2023-2026).",
+        "revisado": true
+    },
+    {
+        "id": "q958",
+        "temaId": "malaria",
+        "tema": "Malária",
+        "enunciado": "Sobre a expansão do uso da tafenoquina no Brasil e seu impacto epidemiológico recente, é correto afirmar que:",
+        "alternativas": [
+            "Desde março de 2026, a tafenoquina passou a estar disponível também em formulação pediátrica (a partir de 2 anos de idade, peso ≥ 10 kg), tornando o Brasil o primeiro país do mundo a oferecer esse tratamento em dose única para crianças — e o país registrou, em 2025, o menor número de casos de malária desde 1978, com redução de mais de 50% dos óbitos, resultado associado, entre outros fatores, à expansão do uso da tafenoquina.",
+            "A tafenoquina nunca foi estudada ou utilizada em crianças em nenhum país do mundo.",
+            "O número de casos de malária no Brasil vem aumentando continuamente desde 2020, sem qualquer relação com novas estratégias terapêuticas.",
+            "A formulação pediátrica da tafenoquina foi desenvolvida e é utilizada exclusivamente em países africanos, sem qualquer disponibilidade no Brasil."
+        ],
+        "correta": 0,
+        "comentario": "Desde março de 2026, o Brasil passou a oferecer a tafenoquina também em formulação pediátrica (crianças a partir de 2 anos, peso ≥ 10 kg) — tornando-se o primeiro país do mundo a disponibilizar esse tratamento de dose única para cura radical da malária por P. vivax também na população pediátrica, historicamente dependente do esquema mais longo e com pior adesão da primaquina. Em 2025, o Brasil registrou 118.037 casos de malária — o menor número desde 1978, com queda de 15% em relação a 2024 — e redução superior a 50% nos óbitos pela doença no mesmo ano, resultados que as autoridades de saúde associam, entre outros fatores, à expansão do uso da tafenoquina no protocolo nacional de tratamento.",
+        "banca": "Exemplo — MedConduta",
+        "ano": 2026,
+        "fonte": "Questão original MedConduta, com base na Nota Técnica do Ministério da Saúde sobre a incorporação da tafenoquina (2023-2026).",
+        "revisado": true
     }
 ]

@@ -8739,8 +8739,8 @@
         "categoria": "Infectologia",
         "titulo": "Malária",
         "resumo": "Tríade febril cíclica, diferenciação entre P. vivax e P. falciparum, e o reconhecimento da malária cerebral.",
-        "revisado": false,
-        "fonte": "Ministério da Saúde — Guia de Tratamento da Malária no Brasil (2020, atualização); Organização Mundial da Saúde",
+        "revisado": true,
+        "fonte": "Ministério da Saúde — Guia de Tratamento da Malária no Brasil (2020, atualização); Organização Mundial da Saúde; Ministério da Saúde — Nota Técnica sobre incorporação da tafenoquina para cura radical da malária por P. vivax (2023-2024); Ministério da Saúde — dados epidemiológicos de malária (2025)",
         "mnemonicos": [
             {
                 "palavra": "Vivax é terçã benigna, Falciparum mata",
@@ -8766,7 +8766,7 @@
             },
             {
                 "titulo": "Tratamento",
-                "conteudo": "O esquema terapêutico varia conforme a espécie identificada: P. vivax é tratado com cloroquina (ataque à forma sanguínea) associada à primaquina (elimina as formas hepáticas dormentes/hipnozoítos, prevenindo recidivas tardias características dessa espécie); P. falciparum não complicado é tratado com terapia combinada com artemisinina. Malária grave (por P. falciparum, geralmente) exige tratamento parenteral com artesunato endovenoso e suporte intensivo em ambiente hospitalar."
+                "conteudo": "O esquema terapêutico varia conforme a espécie identificada: P. vivax é tratado com cloroquina (ataque à forma sanguínea) associada à primaquina (elimina as formas hepáticas dormentes/hipnozoítos, prevenindo recidivas tardias características dessa espécie); P. falciparum não complicado é tratado com terapia combinada com artemisinina. Malária grave (por P. falciparum, geralmente) exige tratamento parenteral com artesunato endovenoso e suporte intensivo em ambiente hospitalar. A tafenoquina é uma nova opção para a cura radical da malária por P. vivax, com a vantagem de eliminar os hipnozoítos hepáticos em DOSE ÚNICA (ao contrário da primaquina, que exige esquema de 7 a 14 dias) — reduzindo problemas de adesão ao tratamento, um dos principais determinantes de recidiva na prática clínica. Foi incorporada ao SUS em 2023-2024 para adultos e adolescentes (≥16 anos, ≥35 kg) e, desde março de 2026, passou a estar disponível também em formulação pediátrica (a partir de 2 anos, ≥10 kg) — tornando o Brasil o primeiro país do mundo a oferecer esse tratamento em dose única para crianças. Assim como a primaquina, a tafenoquina causa hemólise grave em pacientes com deficiência de G6PD, sendo formalmente CONTRAINDICADA nesse contexto — a testagem de G6PD (idealmente quantitativa) antes do uso é etapa obrigatória do protocolo."
             },
             {
                 "titulo": "Sinais de alerta",
@@ -8774,9 +8774,10 @@
             },
             {
                 "titulo": "Dicas de prova",
-                "conteudo": "A necessidade de primaquina associada à cloroquina no tratamento de P. vivax (para eliminar hipnozoítos hepáticos e prevenir recidiva) é cobrança certa e recorrente. A gota espessa como exame padrão-ouro (permitindo identificação de espécie, diferente dos testes rápidos) e os critérios de gravidade específicos de P. falciparum também são frequentemente exigidos."
+                "conteudo": "A necessidade de primaquina associada à cloroquina no tratamento de P. vivax (para eliminar hipnozoítos hepáticos e prevenir recidiva) é cobrança certa e recorrente. A gota espessa como exame padrão-ouro (permitindo identificação de espécie, diferente dos testes rápidos) e os critérios de gravidade específicos de P. falciparum também são frequentemente exigidos. A tafenoquina (dose única para cura radical de P. vivax, incorporada ao SUS em 2023-2024, com formulação pediátrica desde 2026) e a necessidade de testagem de G6PD antes de seu uso são atualizações já cobradas em provas recentes."
             }
-        ]
+        ],
+        "comoCai": "No SES-PE e no ENAMED, a necessidade de primaquina associada à cloroquina no tratamento de P. vivax (para eliminar hipnozoítos hepáticos e prevenir recidiva) é cobrança certa e recorrente, assim como a gota espessa como exame padrão-ouro e os critérios de gravidade específicos de P. falciparum. Provas mais atualizadas já cobram a tafenoquina — nova droga de DOSE ÚNICA para cura radical da malária por P. vivax (eliminando hipnozoítos hepáticos com uma única administração, ao invés do esquema de 7-14 dias da primaquina), incorporada ao SUS em 2023-2024 para adultos e adolescentes (≥16 anos, ≥35 kg) e, desde março de 2026, também para crianças a partir de 2 anos (≥10 kg) — tornando o Brasil o primeiro país do mundo a oferecer essa formulação pediátrica. Assim como a primaquina, a tafenoquina exige teste de G6PD prévio (risco de hemólise grave em deficientes de G6PD), sendo contraindicada nesses pacientes. Os resultados epidemiológicos recentes (menor número de casos de malária no Brasil desde 1978, em 2025, e redução de mais de 50% dos óbitos) também têm sido associados à expansão do uso da tafenoquina, sendo ponto de interesse crescente em provas."
     },
     {
         "id": "leptospirose",
