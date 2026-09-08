@@ -8146,8 +8146,8 @@
     "categoria": "Hematologia",
     "titulo": "Hemoterapia: Hemocomponentes e Reações Transfusionais",
     "resumo": "Indicações dos principais hemocomponentes e a conduta imediata diante de suspeita de reação transfusional.",
-    "revisado": false,
-    "fonte": "Ministério da Saúde — Guia para Uso de Hemocomponentes; Sociedade Brasileira de Hematologia e Hemoterapia",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia para Uso de Hemocomponentes; Sociedade Brasileira de Hematologia e Hemoterapia; AABB/ABHH — Standards for Blood Banks and Transfusion Services (2024); estratégias de prevenção de TRALI por triagem de doadores de plasma/aférese",
     "mnemonicos": [
       {
         "palavra": "Pare, verifique, investigue",
@@ -8157,7 +8157,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A transfusão de hemocomponentes visa repor déficits específicos: concentrado de hemácias corrige anemia sintomática/aguda; concentrado de plaquetas previne ou trata sangramento por plaquetopenia/disfunção plaquetária; plasma fresco congelado repõe múltiplos fatores de coagulação em coagulopatias; crioprecipitado é rico em fibrinogênio, fator VIII e fator de von Willebrand, indicado especificamente em hipofibrinogenemia. As reações transfusionais decorrem de incompatibilidade imunológica (hemolítica aguda, a mais grave, por incompatibilidade ABO) ou de reações não imunológicas (sobrecarga volêmica, contaminação bacteriana, lesão pulmonar aguda relacionada à transfusão)."
+        "conteudo": "A transfusão de hemocomponentes visa repor déficits específicos: concentrado de hemácias corrige anemia sintomática/aguda; concentrado de plaquetas previne ou trata sangramento por plaquetopenia/disfunção plaquetária; plasma fresco congelado repõe múltiplos fatores de coagulação em coagulopatias; crioprecipitado é rico em fibrinogênio, fator VIII e fator de von Willebrand, indicado especificamente em hipofibrinogenemia. As reações transfusionais decorrem de incompatibilidade imunológica (hemolítica aguda, a mais grave, por incompatibilidade ABO) ou de reações não imunológicas (sobrecarga volêmica, contaminação bacteriana, lesão pulmonar aguda relacionada à transfusão). O gatilho transfusional para concentrado de hemácias segue a tendência restritiva (Hb entre 7-8 g/dL como limiar geral, individualizado conforme sintomas e comorbidades), evitando exposição transfusional desnecessária — a decisão deve ser sempre clínica (sinais de hipóxia tecidual), não baseada isoladamente em valor laboratorial fixo. A TRALI é mediada principalmente por anticorpos anti-HLA/anti-HNA presentes no plasma do doador, ativando neutrófilos do receptor e aumentando a permeabilidade vascular pulmonar."
       },
       {
         "titulo": "Quadro clínico",
@@ -8173,7 +8173,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Diante de qualquer suspeita de reação transfusional aguda, a primeira conduta é sempre interromper a transfusão imediatamente e manter acesso venoso com solução salina, antes mesmo de investigar a causa específica. Reação febril não hemolítica é tratada sintomaticamente com antitérmico. Reação hemolítica aguda exige suporte hemodinâmico e renal agressivo (risco de lesão renal aguda pela hemoglobina livre). TRALI exige suporte respiratório (podendo necessitar ventilação mecânica), sem benefício de diurético (diferente do TACO, que responde bem a essa medida)."
+        "conteudo": "Diante de qualquer suspeita de reação transfusional aguda, a primeira conduta é sempre interromper a transfusão imediatamente e manter acesso venoso com solução salina, antes mesmo de investigar a causa específica. Reação febril não hemolítica é tratada sintomaticamente com antitérmico. Reação hemolítica aguda exige suporte hemodinâmico e renal agressivo (risco de lesão renal aguda pela hemoglobina livre). TRALI exige suporte respiratório (podendo necessitar ventilação mecânica), sem benefício de diurético (diferente do TACO, que responde bem a essa medida). Uma estratégia relevante de prevenção da TRALI é a triagem de doadores de hemocomponentes ricos em plasma (plasma fresco congelado, plaquetas por aférese): doadoras multíparas (≥3 gestações) têm maior probabilidade de imunização contra antígenos leucocitários durante a gravidez, sendo hoje recomendado (padrões AABB/ABHH) que esses hemocomponentes sejam preferencialmente obtidos de homens, mulheres nuligestas ou mulheres testadas e negativas para anticorpos anti-HLA após a última gestação — política que reduziu significativamente a incidência de TRALI em países que a adotaram."
       },
       {
         "titulo": "Sinais de alerta",
@@ -8183,7 +8183,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A conduta \"interromper a transfusão primeiro, investigar depois\" diante de qualquer sinal de reação aguda é cobrança certíssima e o ponto mais valorizado do tema. A diferenciação entre TRALI (hipotensão, sem resposta a diurético) e TACO (hipertensão, responde a diurético) também é frequentemente exigida em questões de diagnóstico diferencial de dispneia pós-transfusional."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a conduta \"interromper a transfusão primeiro, investigar depois\" diante de qualquer sinal de reação aguda é cobrança certíssima e o ponto mais valorizado do tema. A diferenciação entre TRALI (hipotensão, sem resposta a diurético, mediado por anticorpos anti-HLA/anti-HNA do doador) e TACO (hipertensão, responde a diurético, sobrecarga volêmica) é frequentemente exigida em questões de diagnóstico diferencial de dispneia pós-transfusional. A adoção do gatilho transfusional restritivo (Hb 7-8 g/dL, sempre guiado por critérios clínicos e não apenas laboratoriais) também é ponto recorrente. Um tópico emergente é a estratégia de triagem de doadoras multíparas para hemocomponentes ricos em plasma, como medida moderna de prevenção da TRALI."
   },
   {
     "id": "guillain-barre",
