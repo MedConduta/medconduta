@@ -1704,8 +1704,9 @@
     "categoria": "Nefrologia",
     "titulo": "Distúrbios Hidroeletrolíticos — Hipercalemia",
     "resumo": "Alterações eletrocardiográficas e as 3 etapas do tratamento da hipercalemia.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Nefrologia; UpToDate/KDIGO — Diagnosis and treatment of hyperkalemia",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Nefrologia; UpToDate/KDIGO — Diagnosis and treatment of hyperkalemia; estudo DIAMOND (patirômero); KDIGO 2024 CKD Guideline",
+    "comoCai": "No SES-PE, a sequência de tratamento da hipercalemia grave (estabilizar → redistribuir → eliminar) e a leitura de traçados de ECG com progressão de gravidade são cobrança certa. No ENAMED, o foco recai sobre o reconhecimento do risco iminente diante de ECG alterado e a conduta imediata (gluconato de cálcio), com menor detalhamento das novas resinas de troca catiônica ou do racional de manutenção de IECA/BRA com uso de quelantes.",
     "mnemonicos": [
       {
         "palavra": "ESTABILIZAR → REDISTRIBUIR → ELIMINAR",
@@ -1731,7 +1732,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Diante de alterações eletrocardiográficas, gluconato de cálcio endovenoso é a primeira medida, com ação em minutos, estabilizando a membrana cardíaca sem alterar o potássio sérico (deve ser repetido se as alterações persistirem). Em seguida, medidas para deslocar potássio para o intracelular: insulina regular associada a glicose (evita hipoglicemia), beta-agonista inalatório em dose alta, e bicarbonato de sódio se acidose associada — todas temporárias, sem remover potássio do organismo. A remoção definitiva do potássio corporal é feita por diuréticos de alça (se função renal preservada), resinas de troca catiônica (patirômero, ciclossilicato de sódio e zircônio — mais modernos e eficazes que o poliestirenossulfonato de cálcio clássico) ou diálise de urgência nos casos refratários/graves com função renal comprometida."
+        "conteudo": "Diante de alterações eletrocardiográficas, gluconato de cálcio endovenoso é a primeira medida, com ação em minutos, estabilizando a membrana cardíaca sem alterar o potássio sérico (deve ser repetido se as alterações persistirem). Em seguida, medidas para deslocar potássio para o intracelular: insulina regular associada a glicose (para evitar hipoglicemia) — a tendência mais recente é individualizar a dose de insulina (por peso, cerca de 0,1U/kg, com máximo de 10U, ou uma dose fixa reduzida de 5U em vez dos clássicos 10U fixos) em pacientes com maior risco de hipoglicemia (baixo peso corporal, TFG reduzida, glicemia basal já baixa), já que estudos não demonstraram diferença significativa de eficácia na redução do potássio entre 5U e 10U nesses pacientes, com potencial redução do risco de hipoglicemia iatrogênica —, beta-agonista inalatório em dose alta, e bicarbonato de sódio se acidose associada — todas temporárias, sem remover potássio do organismo. A remoção definitiva do potássio corporal é feita por diuréticos de alça (se função renal preservada), resinas de troca catiônica (patirômero, ciclossilicato de sódio e zircônio — mais modernos e eficazes que o poliestirenossulfonato de cálcio clássico) ou diálise de urgência nos casos refratários/graves com função renal comprometida. Fora do contexto de emergência, um racional terapêutico mais recente (reforçado pelo estudo DIAMOND com patirômero e pela diretriz KDIGO 2024) reformula o papel dos quelantes de potássio mais modernos: em vez de reduzir ou suspender IECA/BRA/espironolactona diante de hipercalemia crônica leve a moderada em pacientes com DRC ou insuficiência cardíaca (medida que retira uma terapia comprovadamente benéfica), utiliza-se o quelante de potássio cronicamente para permitir a MANUTENÇÃO dessas medicações nefro/cardioprotetoras em dose plena — reenquadrando a hipercalemia como uma barreira modificável ao tratamento ótimo, e não como motivo automático para desescalonar terapias de benefício comprovado."
       },
       {
         "titulo": "Sinais de alerta",
@@ -1739,7 +1740,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A sequência de tratamento da hipercalemia grave (cálcio → insulina+glicose/beta-agonista → remoção definitiva) é cobrança extremamente frequente, assim como a compreensão de que o gluconato de cálcio estabiliza a membrana mas não reduz o potássio sérico — muitos candidatos erram achando que o cálcio já resolve definitivamente o distúrbio. A progressão eletrocardiográfica (T apiculada → QRS alargado → padrão sinusoidal) também é tema recorrente em questões com traçados de ECG."
+        "conteudo": "A sequência de tratamento da hipercalemia grave (cálcio → insulina+glicose/beta-agonista → remoção definitiva) é cobrança extremamente frequente, assim como a compreensão de que o gluconato de cálcio estabiliza a membrana mas não reduz o potássio sérico — muitos candidatos erram achando que o cálcio já resolve definitivamente o distúrbio. A progressão eletrocardiográfica (T apiculada → QRS alargado → padrão sinusoidal) também é tema recorrente em questões com traçados de ECG. Fique atento à atualização mais recente: quelantes de potássio modernos (patirômero, ciclossilicato de sódio e zircônio) permitem MANTER IECA/BRA/espironolactona em dose plena em pacientes com hipercalemia crônica leve/moderada associada a DRC ou insuficiência cardíaca, em vez de reduzir/suspender essas medicações de benefício comprovado — um racional terapêutico que pode aparecer como pegadinha, testando se o candidato ainda responde \"suspender IECA\" automaticamente diante de hipercalemia crônica leve."
       }
     ]
   },
