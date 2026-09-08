@@ -9745,8 +9745,9 @@
     "categoria": "Nefrologia",
     "titulo": "Terapia de Substituição Renal: Hemodiálise, Diálise Peritoneal e Transplante",
     "resumo": "Indicações de diálise de urgência, comparação entre as modalidades dialíticas e o transplante renal como melhor opção de sobrevida.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Nefrologia — Diretrizes de Terapia Renal Substitutiva; KDIGO",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Nefrologia — Diretrizes de Terapia Renal Substitutiva; KDIGO; KDOQI Clinical Practice Guideline for Vascular Access (conceito de \"ESKD Life-Plan\", reforçado no Core Curriculum 2025); estudo IDEAL (momento de início da diálise crônica)",
+    "comoCai": "No SES-PE, o mnemônico AEIOU para indicações de diálise de urgência e a preferência pela fístula arteriovenosa como acesso definitivo são cobrança certa. No ENAMED, o foco recai sobre o reconhecimento das indicações de encaminhamento para terapia renal substitutiva na atenção primária/DRC avançada, com menor cobrança do conceito de \"ESKD Life-Plan\" ou dos detalhes do estudo IDEAL.",
     "mnemonicos": [
       {
         "palavra": "AEIOU indica diálise de urgência",
@@ -9772,7 +9773,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Hemodiálise é a modalidade mais utilizada no Brasil, realizada em sessões intermitentes (geralmente 3x/semana) via acesso vascular — fístula arteriovenosa é o acesso definitivo de escolha por menor risco de infecção e maior durabilidade comparada a cateteres, exigindo maturação de semanas antes do primeiro uso. Diálise peritoneal oferece maior autonomia domiciliar e preservação de função renal residual, com peritonite associada ao procedimento como principal complicação. O transplante renal (de doador vivo ou falecido) é a opção com melhor sobrevida e qualidade de vida entre as modalidades para doença renal crônica terminal elegível, mas requer imunossupressão contínua com risco de infecções oportunistas e rejeição."
+        "conteudo": "Hemodiálise é a modalidade mais utilizada no Brasil, realizada em sessões intermitentes (geralmente 3x/semana) via acesso vascular — fístula arteriovenosa é o acesso definitivo de escolha por menor risco de infecção e maior durabilidade comparada a cateteres, exigindo maturação de semanas antes do primeiro uso. A diretriz KDOQI de acesso vascular introduziu o conceito de \"ESKD Life-Plan\" (plano de vida para a doença renal terminal): em vez de uma abordagem rígida de \"fístula para todos\" (\"fistula first\"), a escolha do acesso (fístula, enxerto, cateter, ou até diálise peritoneal/transplante antecipado) deve ser individualizada considerando a expectativa de vida do paciente, comorbidades, qualidade do leito vascular, plano de transplante já em vista e as preferências do próprio paciente — reconhecendo que a fístula nem sempre é a melhor opção para todo paciente (por exemplo, em idosos com baixa expectativa de vida ou vasculatura desfavorável, um cateter ou a diálise peritoneal podem ser preferíveis). Diálise peritoneal oferece maior autonomia domiciliar e preservação de função renal residual, com peritonite associada ao procedimento como principal complicação. O transplante renal (de doador vivo ou falecido) é a opção com melhor sobrevida e qualidade de vida entre as modalidades para doença renal crônica terminal elegível, mas requer imunossupressão contínua com risco de infecções oportunistas e rejeição. Assim como demonstrado para a lesão renal aguda (estudos AKIKI e STARRT-AKI), o estudo IDEAL demonstrou que, na doença renal crônica terminal, iniciar a diálise precocemente com base apenas em um valor de TFG estimada (sem sintomas urêmicos ou outra indicação clara) não traz benefício de sobrevida em comparação ao início mais tardio guiado por sintomas clínicos — reforçando que a decisão de iniciar terapia renal substitutiva crônica deve ser clínica e individualizada, e não baseada em um gatilho numérico isolado de função renal."
       },
       {
         "titulo": "Sinais de alerta",
@@ -9780,7 +9781,7 @@
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O mnemônico AEIOU para indicações de diálise de urgência é cobrança praticamente garantida. A preferência pela fístula arteriovenosa como acesso definitivo (versus cateter, reservado a necessidade imediata) e a superioridade do transplante renal em sobrevida sobre as modalidades dialíticas crônicas também são pontos frequentemente testados."
+        "conteudo": "O mnemônico AEIOU para indicações de diálise de urgência é cobrança praticamente garantida. A preferência pela fístula arteriovenosa como acesso definitivo (versus cateter, reservado a necessidade imediata) e a superioridade do transplante renal em sobrevida sobre as modalidades dialíticas crônicas também são pontos frequentemente testados. Fique atento à pegadinha de indicar diálise apenas por um valor numérico de TFG/creatinina isoladamente, sem sintomas urêmicos ou outra indicação clara — o estudo IDEAL reforça que o início da diálise crônica deve ser guiado pelo quadro clínico, e não por um gatilho laboratorial isolado."
       }
     ]
   },
