@@ -4630,5 +4630,117 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-febre-reumatica-atendimento",
+    "temaId": "febre-reumatica",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "Febre reumática aguda — diagnóstico (Jones 2015) e conduta",
+    "revisado": true,
+    "fonte": "Critérios de Jones revisados (AHA, 2015); Sociedade Brasileira de Cardiologia — Diretriz de Febre Reumática",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica: poliartrite migratória, cardite, coreia, eritema marginado ou nódulos subcutâneos, 2-4 semanas após faringoamigdalite"
+      },
+      {
+        "tipo": "action",
+        "texto": "Buscar evidência de infecção estreptocócica prévia: ASLO (mais sensível para infecção recente), cultura de orofaringe ou teste rápido de antígeno"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Evidência de infecção estreptocócica prévia confirmada?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Classificar o paciente quanto à população de risco (baixo risco vs. moderado/alto risco) e aplicar os critérios de Jones 2015 correspondentes"
+              },
+              {
+                "tipo": "action",
+                "texto": "Solicitar ecocardiograma em todos os casos suspeitos — detecta cardite subclínica mesmo sem sopro audível (critério maior)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "2 critérios maiores, OU 1 maior + 2 menores?",
+                "ramos": [
+                  {
+                    "label": "Sim — diagnóstico confirmado",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Erradicar o estreptococo: penicilina benzatina IM em dose única, mesmo com cultura orofaríngea já negativa"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "Gravidade da cardite?",
+                        "ramos": [
+                          {
+                            "label": "Ausente / artrite ou coreia isolada",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "AAS em dose anti-inflamatória alta para artrite; repouso; profilaxia secundária por 5 anos ou até 21 anos (o que for mais longo)"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Leve a moderada",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "AAS em dose alta; profilaxia secundária por 10 anos ou até 21 anos (o que for mais longo) se sem sequela valvar"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Grave / IC descompensada",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Cardite grave com insuficiência cardíaca — pior prognóstico e maior risco de sequela valvar permanente"
+                              },
+                              {
+                                "tipo": "action",
+                                "texto": "Corticoide + tratamento intensivo da IC; ecocardiogramas seriados; profilaxia secundária por ≥10 anos após o último episódio e até os 40 anos (ou por toda a vida se sequela valvar residual e alto risco de reexposição)"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Manter profilaxia secundária com penicilina benzatina IM a cada 3-4 semanas pelo prazo definido"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — critérios insuficientes",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Diagnóstico de febre reumática não confirmado; reavaliar hipóteses diferenciais e repetir provas de atividade inflamatória/ecocardiograma se suspeita persistir"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Diagnóstico de febre reumática improvável sem evidência de infecção estreptocócica prévia — investigar diagnósticos diferenciais de poliartrite/cardite"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
