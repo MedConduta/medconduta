@@ -545,7 +545,7 @@
     "tema": "Tuberculose",
     "banca": "Exemplo — MedConduta",
     "ano": 2025,
-    "revisado": false,
+    "revisado": true,
     "fonte": "Ministerio da Saude - Manual de Recomendacoes para o Controle da Tuberculose no Brasil; WHO Consolidated Guidelines on Tuberculosis",
     "enunciado": "Paciente com tosse há 5 semanas, febre vespertina e sudorese noturna tem teste rápido molecular positivo para tuberculose. Qual o esquema terapêutico inicial recomendado?",
     "alternativas": [
@@ -38847,6 +38847,1185 @@
     "banca": "BASES Tromboembolismo Venoso — banco de questões EMR (Eu Médico Residente) (SUS-SP 2022 ACESSO DIRETO — ADAPTADA)",
     "ano": 2022,
     "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Tromboembolismo Venoso)",
+    "revisado": true
+  },
+  {
+    "id": "q2118",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "A investigação para tuberculose latente (ILTB) está indicada em várias condições de exposição. Identifique o paciente no qual os testes para investigação da TB latente são DISPENSÁVEIS, passando-se diretamente para a quimioprofilaxia:",
+    "alternativas": [
+      "Paciente portador de HIV.",
+      "Profissional de saúde exposto.",
+      "Paciente com imunossupressão.",
+      "Recém-nascido de mãe com TB ativa."
+    ],
+    "correta": 3,
+    "comentario": "Recém-nascidos de mães com TB ativa recebem quimioprofilaxia com isoniazida diretamente, sem aguardar teste tuberculínico, dado o altíssimo risco de progressão para doença grave (miliar/meníngea) nessa faixa etária — o PPD só é realizado posteriormente (por volta dos 3 meses) para decidir se a profilaxia é mantida (convertido) ou vacina BCG é aplicada (não convertido). Nas demais situações (HIV, imunossupressão, profissional exposto), o teste (PPD/IGRA) é etapa obrigatória antes de decidir pelo tratamento.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2119",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Adolescente, 17 anos, contactante de paciente com TB pulmonar bacilífera, apresenta teste tuberculínico com induração de 5mm. Fez BCG na infância, é HIV negativo, assintomático, RX de tórax normal. Esse paciente deve ser considerado:",
+    "alternativas": [
+      "Portador de imunidade conferida pelo BCG, com menos risco de contágio, sem indicação para seguimento.",
+      "Indeterminado do ponto de vista clínico/epidemiológico, com indicação para seguimento clínico sem tratamento.",
+      "Portador de tuberculose latente com risco de desenvolver tuberculose ativa nos próximos dois anos.",
+      "Portador de tuberculose latente e com indicação para tratamento prioritário com rifampicina."
+    ],
+    "correta": 2,
+    "comentario": "Contactante de caso bacilífero com PPD reator (mesmo que de baixa magnitude, 5mm, em contexto de exposição direta) caracteriza infecção latente, com risco de adoecimento concentrado nos primeiros 2 anos após a infecção — dado central da fisiopatologia da ILTB. O BCG não impede a infecção latente nem exclui indicação de tratamento; isoniazida (não rifampicina) é o fármaco de primeira escolha clássico para ILTB no Brasil.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2120",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Mulher, 30 anos, privada de liberdade há 4 meses, emagrecimento de 9kg em 2 meses, dor abdominal, acolia fecal, colúria, dispneia. Adenomegalia cervical anterior direita borrachóide. Roncos e crepitações pulmonares difusas. Hepatomegalia, ascite (espaço de Traube ocupado), edema de membros inferiores. Hipótese de tuberculose (provavelmente disseminada/multissistêmica) considerada. O médico assistente optou por:",
+    "alternativas": [
+      "Realizar pesquisa de tuberculose por meio do teste rápido molecular em escarro, escarro induzido, gânglio linfático, fígado e sangue.",
+      "Não realizar baciloscopia de materiais biológicos extrapulmonares por apresentar baixa positividade.",
+      "Realizar cultura específica em novas amostras de secreção respiratória caso o TRM-TB com triagem de resistência à rifampicina resulte positivo.",
+      "Realizar baciloscopia e cultura específica com identificação de espécie e antibiograma em amostra respiratória para garantir controle e adequação do tratamento."
+    ],
+    "correta": 3,
+    "comentario": "Diante de quadro sugestivo de tuberculose extensa/disseminada em população de alto risco (privada de liberdade), a estratégia mais completa e robusta para diagnóstico e planejamento terapêutico é associar baciloscopia E cultura com identificação de espécie e teste de sensibilidade (antibiograma) em amostra respiratória — a cultura é obrigatória em populações vulneráveis (privados de liberdade, profissionais de saúde, HIV) justamente pelo maior risco de resistência, permitindo ajuste terapêutico precoce se necessário.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2121",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente com HIV há 4 anos, interrompeu ARV no ano passado, veio a apresentar tuberculose pulmonar diagnosticada por TRM-TB e RX pulmonar, terminou o tratamento (da TB) há 1 mês. É correto afirmar que:",
+    "alternativas": [
+      "o tratamento para HIV e para tuberculose deve sempre ser iniciado simultaneamente.",
+      "o paciente deve ter o acompanhamento da resposta ao tratamento através do exame de baciloscopia.",
+      "o paciente deve ser submetido ao teste de genotipagem para o HIV e para o M. tuberculosis.",
+      "o paciente veio a manifestar tuberculose ativa como consequência de falha virológica e terapêutica.",
+      "o paciente deve realizar o IGRA para confirmação diagnóstica."
+    ],
+    "correta": 1,
+    "comentario": "A baciloscopia seriada (mensal) é o método clássico de monitoramento da resposta ao tratamento (negativação do escarro), pelo baixo custo e praticidade — apesar de sensibilidade inferior ao TRM-TB para diagnóstico inicial, permanece útil para seguimento. O TRM-TB não é recomendado para monitorar tratamento (pode detectar DNA de bacilos mortos, gerando falso-positivo persistente); tratamento simultâneo desde o início não é regra absoluta (depende de contagem de CD4); e IGRA não tem papel diagnóstico em doença ativa (é ferramenta de rastreio de infecção latente).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2122",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente de 60 anos em tratamento de artrite reumatoide, programação de imunobiológico. PPD reator de 12mm. Assintomática, sem tosse/expectoração, afebril, sem perda ponderal, RX de tórax recente sem alterações. Assinale a alternativa correta quanto à análise do quadro e conduta:",
+    "alternativas": [
+      "Deve permanecer em isolamento respiratório e iniciar tratamento de 6 meses para tuberculose doença com RIPE.",
+      "Deve iniciar tratamento de tuberculose doença com RIPE por ter PPD forte reator, porém não necessita de isolamento.",
+      "Deve iniciar tratamento para infecção latente, com duração de 9 meses, com rifampicina, isoniazida, pirazinamida e etambutol.",
+      "Deve iniciar tratamento para infecção latente, com duração de 9 meses, pelo M. tuberculosis com isoniazida.",
+      "Deve iniciar tratamento para infecção latente, com duração de 6 meses, com isoniazida e manter isolamento respiratório."
+    ],
+    "correta": 3,
+    "comentario": "Paciente assintomática, sem alteração radiológica, com PPD reator antes do início de imunobiológico é o cenário clássico de infecção latente (ILTB), não doença ativa — não há indicação de isolamento (que só se aplica a doença ativa bacilífera) nem de esquema RIPE completo. O tratamento padrão de ILTB é isoniazida isolada (não RIPE completo), classicamente por 6-9 meses (270 doses), aqui especificado em 9 meses.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2123",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Menino, 5 anos, febre/adinamia/tosse há 3 semanas. RX: condensação perihilar, adenomegalia hilar. Prova tuberculínica 5-9mm. Após 14 dias de antibioticoterapia sem melhora clínica/radiológica, peso abaixo do P10. Qual alternativa apresenta a conduta mais adequada?",
+    "alternativas": [
+      "Diagnóstico pouco provável — prova tuberculínica <10mm (escore <25).",
+      "Solicitar lavado gástrico (escore entre 25-30).",
+      "Diagnóstico muito provável. Aguardar baciloscopia para iniciar tratamento.",
+      "Iniciar tratamento para tuberculose, diagnóstico muito provável (escore ≥40)."
+    ],
+    "correta": 3,
+    "comentario": "O sistema de pontuação do Ministério da Saúde para diagnóstico de TB pediátrica combina critérios clínicos, radiológicos, epidemiológicos (contato) e nutricionais — a combinação de quadro clínico compatível, radiografia sugestiva (condensação/adenomegalia), ausência de resposta a antibiótico e desnutrição já soma pontuação suficiente (≥40) para 'diagnóstico muito provável', com indicação de INICIAR tratamento imediatamente (não aguardar baciloscopia, cuja sensibilidade é baixa em crianças, que raramente expectoram adequadamente).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2124",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Considerando as recomendações do Ministério da Saúde, em qual situação estaria formalmente indicado o tratamento da infecção latente pelo M. tuberculosis?",
+    "alternativas": [
+      "Homem, 35 anos, HIV recente, CD4 420, PPD 3mm, RX normal, sem contato prévio com bacilífero.",
+      "Mulher assintomática com AIDS, CD4 122, RX normal, cujo parceiro sexual e filho coabitante estão com TB pulmonar bacilífera.",
+      "Portadora de LES, PPD 14mm, TC com 'árvore em brotamento' em lobo inferior esquerdo.",
+      "Presidiário com RX mostrando múltiplas cavitações e disseminação broncogênica.",
+      "Homem, 29 anos, hígido, assintomático, RX normal, PPD arreator, contactante de bacilífero."
+    ],
+    "correta": 1,
+    "comentario": "A combinação de imunossupressão grave (AIDS, CD4 122) com exposição domiciliar direta e intensa (parceiro e filho bacilíferos) representa a maior indicação para tratamento de ILTB, mesmo sem PPD informado explicitamente — o contexto de altíssimo risco já justifica, após exclusão de doença ativa. As demais opções descrevem cenários de doença ATIVA já estabelecida (achados tomográficos/radiológicos sugestivos de doença em atividade — C e D) ou PPD não reator sem outros fatores de risco relevantes que justifiquem tratamento imediato (A).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2125",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Considerando os objetivos de desenvolvimento sustentável da OMS, além da vacinação com BCG, qual ação programática é proposta como estratégia para melhoria dos indicadores de saúde para a tuberculose?",
+    "alternativas": [
+      "Tratar sintomáticos respiratórios.",
+      "Tratar a infecção latente para todos os contatos.",
+      "Confirmar cura dos casos.",
+      "Tratar reatores ao teste tuberculínico."
+    ],
+    "correta": 2,
+    "comentario": "A confirmação de cura dos casos tratados (por meio de critérios bacteriológicos/clínicos de encerramento) é um dos pilares estratégicos da OMS para reduzir a cadeia de transmissão e a mortalidade por TB — parte central do monitoramento programático. As demais opções generalizam indevidamente (nem todo contato ou reator ao PPD tem indicação automática de tratamento de ILTB, que depende de avaliação individualizada de risco).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2126",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Em relação ao tratamento prolongado da tuberculose, o fundamento do uso de múltiplas drogas deve:",
+    "alternativas": [
+      "evitar resistência do bacilo.",
+      "diminuir a chance de doença progressiva.",
+      "prevenir toxicidade.",
+      "prevenir a infecção latente."
+    ],
+    "correta": 0,
+    "comentario": "A poliquimioterapia (múltiplas drogas simultâneas) é fundamentada principalmente em evitar a seleção de cepas resistentes — como cada fármaco atua em subpopulações bacilares distintas (extracelular, intracelular, em lesões caseosas), o uso combinado reduz drasticamente a chance de sobrevivência de mutantes resistentes a um único agente, princípio central da farmacologia antituberculose.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2127",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "O Manual de Recomendações para o Controle da Tuberculose no Brasil indica o TRM-TB para as seguintes situações:",
+    "alternativas": [
+      "Diagnóstico de casos novos de tuberculose em crianças menores de 6 anos, gestantes e pacientes HIV+.",
+      "Tuberculose extrapulmonar (osteoarticular, meníngea, ganglionar, urinária) em adultos e adolescentes.",
+      "Todas as formas de tuberculose em grupos de maior vulnerabilidade de qualquer faixa etária.",
+      "Diagnóstico de casos novos de tuberculose pulmonar e laríngea (principalmente) em adultos e adolescentes."
+    ],
+    "correta": 3,
+    "comentario": "A indicação primária e principal do TRM-TB no Brasil é para diagnóstico de casos NOVOS de tuberculose pulmonar e laríngea em adultos e adolescentes (o cenário de maior volume de uso e maior custo-efetividade), embora o Ministério da Saúde também tenha ampliado progressivamente o uso para outras situações (retratamento, algumas formas extrapulmonares) — mas a indicação 'principal' e mais consolidada é a descrita na opção D.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2128",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Sobre a tuberculose na gestação, analise: I - A história natural da TB é modificada pela gestação, sendo muito mais grave na gestante que na população em geral. II - A gestação representa fator de risco para reativação de infecção latente, justificando rastreio para todas as gestantes. III - A TB ativa materna pode estar associada à infecção congênita por disseminação hematogênica via placenta, embora rara. IV - O tratamento para TB gestacional é o mesmo recomendado para a população geral, com atenção ao monitoramento de reações adversas. Estão corretas apenas as afirmativas:",
+    "alternativas": [
+      "II e III.",
+      "I e II.",
+      "III e IV.",
+      "I e IV."
+    ],
+    "correta": 2,
+    "comentario": "III e IV estão corretas: a transmissão congênita por via hematogênica placentária é reconhecida, ainda que rara (mais comum é a transmissão pós-natal por contato respiratório), e o tratamento da gestante segue o esquema padrão RHZE por 6 meses, com monitoramento cuidadoso de efeitos adversos. As afirmativas I e II são incorretas: a gestação NÃO torna a TB uniformemente mais grave (a maioria dos estudos não mostra diferença significativa na história natural), e não há recomendação de rastreio universal de ILTB em TODA gestante (apenas em gestantes de risco/contato).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2129",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Sobre o tratamento da tuberculose, é INCORRETO afirmar:",
+    "alternativas": [
+      "a hospitalização está indicada em casos de vulnerabilidade social.",
+      "o tratamento da lactante é compatível com a amamentação.",
+      "em gestantes, a associação de piridoxina reduz o risco de neurotoxicidade fetal.",
+      "o tratamento em pessoas vivendo com HIV deve ter maior duração.",
+      "evolução clínica insatisfatória pode motivar extensão da fase de manutenção."
+    ],
+    "correta": 3,
+    "comentario": "É INCORRETO afirmar que o tratamento em PVHIV deve ter rotineiramente maior duração — o esquema padrão de 6 meses é mantido mesmo na coinfecção HIV-TB (a exceção clássica é a forma meníngea/óssea, que exige duração estendida independentemente do status HIV). As demais afirmativas estão corretas: hospitalização pode ser indicada por vulnerabilidade social (não apenas gravidade clínica), amamentação é compatível com o tratamento materno, piridoxina protege contra neurotoxicidade (materna e fetal) pela isoniazida, e evolução insatisfatória pode justificar prolongar a fase de manutenção.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2130",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Assinale a opção correta acerca da tuberculose:",
+    "alternativas": [
+      "A tuberculose pulmonar é a forma mais relevante devido ao pior prognóstico.",
+      "Todo paciente com diagnóstico de tuberculose deve ser testado para HIV.",
+      "A tuberculose miliar é mais comum em indivíduos previamente hígidos.",
+      "Em adultos, na fase intensiva do tratamento são utilizadas duas drogas.",
+      "O tratamento da tuberculose pulmonar deve ser realizado na atenção secundária."
+    ],
+    "correta": 1,
+    "comentario": "A testagem para HIV é recomendação universal e obrigatória para todo paciente diagnosticado com tuberculose, dada a forte associação epidemiológica e o impacto prognóstico da coinfecção. A forma pulmonar é a mais relevante para saúde pública por manter a cadeia de transmissão (não necessariamente por 'pior prognóstico' isolado); TB miliar é mais comum em imunossuprimidos (não hígidos); a fase intensiva usa QUATRO drogas (RIPE), não duas; e o tratamento de TB pulmonar não complicada é preferencialmente realizado na atenção PRIMÁRIA.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2131",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Mulher, 56 anos, diarreia crônica atribuída a Crohn, inapetência, emagrecimento 5kg/30dias. Tosse produtiva com escarro amarelado. Uso de infliximabe (anti-TNF) e azatioprina. Crepitações em ápice e terço médio do pulmão direito. Sopro pancardíaco. Para diagnóstico, a melhor conduta inicial é realizar:",
+    "alternativas": [
+      "PPD e pesquisa direta de adenosina deaminase no escarro.",
+      "exame de imagem do tórax e broncoscopia com colheita de material.",
+      "exame de imagem do tórax e GeneXpert (TRM-TB) do escarro para tuberculose.",
+      "PPD e lavado broncoalveolar com Gram, BAAR e cultura da secreção."
+    ],
+    "correta": 2,
+    "comentario": "Em paciente imunossuprimida por terapia anti-TNF (fator de risco maior para reativação de TB) com sintomas respiratórios sugestivos, a conduta inicial mais direta e custo-efetiva é imagem de tórax associada ao TRM-TB no escarro (não invasivo, resultado rápido) — a broncoscopia é reservada a casos sem expectoração espontânea ou diagnóstico inconclusivo, e ADA no escarro não é o método diagnóstico padrão (ADA é mais usado em líquidos cavitários como pleural/pericárdico).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2132",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Homem, 68 anos, TB pulmonar bacilífera, início de tratamento. Contatos: esposa 66 anos (DM), PPD 8mm; neta 9 anos, BCG-ID ao nascer, PPD 6mm. Ambas assintomáticas, RX normais. Segundo o Ministério da Saúde, a introdução do tratamento de ILTB:",
+    "alternativas": [
+      "deve ser feita apenas para a esposa.",
+      "deve ser feita para a esposa e para a neta.",
+      "não deve ser feita para a esposa nem para a neta.",
+      "Deve ser repetido o PPD.",
+      "deve ser feita apenas para a neta."
+    ],
+    "correta": 1,
+    "comentario": "Ambas as contactantes preenchem critério para tratamento de ILTB: a esposa (PPD 8mm, mais o fator de risco adicional de diabetes) e a neta (PPD 6mm em criança contactante direta de bacilífero — corte mais baixo aplicado em crianças pela maior vulnerabilidade a formas graves) — em ambos os casos, doença ativa já foi excluída (assintomáticas, RX normal).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2133",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Em pacientes com quadro clínico-radiológico de TB pulmonar e BAAR positivo no escarro, quando se indica cultura de escarro com identificação do agente e teste de sensibilidade (antibiograma)?",
+    "alternativas": [
+      "Na persistência de tosse produtiva até depois do segundo mês de tratamento.",
+      "Nos pacientes com antecedentes de tratamento prévio, independentemente do tempo decorrido até a atual situação.",
+      "Nos pacientes que iniciam com hemoptise após o segundo mês de tratamento.",
+      "Na persistência de anorexia e emagrecimento apesar de ingerir corretamente a medicação.",
+      "Na simples identificação de contato do mesmo domicílio também portador de tuberculose."
+    ],
+    "correta": 1,
+    "comentario": "Antecedente de tratamento prévio para TB (retratamento), independentemente de quanto tempo faz, é indicação formal de cultura com identificação e teste de sensibilidade — o risco de resistência adquirida é significativamente maior em pacientes já tratados anteriormente, justificando a investigação de resistência antes de definir o novo esquema terapêutico.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2134",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "A atuação dos medicamentos anti-TB difere conforme o metabolismo bacilar. É adequado afirmar que:",
+    "alternativas": [
+      "Na população intramacrofágica, agem melhor os fármacos que se difundem no meio intracelular e em pH ácido: rifampicina, pirazinamida e etambutol.",
+      "Na população intramacrofágica, agem pior os fármacos que se difundem no meio intracelular e em pH ácido: rifampicina, pirazinamida e etambutol.",
+      "Na população intramacrofágica, agem melhor os fármacos que se difundem no meio extracelular e em pH ácido: rifampicina, pirazinamida e etambutol.",
+      "Na população intramacrofágica, agem melhor os fármacos que se difundem no meio intracelular e em pH básico: rifampicina, pirazinamida e etambutol."
+    ],
+    "correta": 0,
+    "comentario": "A pirazinamida é classicamente o fármaco mais eficaz no meio INTRAcelular/ácido (dentro de macrófagos, onde o pH é reduzido) — junto com a boa difusão intracelular de rifampicina e etambutol, esse conjunto de propriedades farmacocinéticas justifica sua inclusão na fase intensiva do esquema, atuando sobre populações bacilares metabolicamente distintas (intracelular de crescimento lento vs. extracelular de crescimento rápido, melhor coberta pela isoniazida).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2135",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Sobre tuberculose na pediatria, selecione a opção que corresponde à forma clínica extrapulmonar mais comum:",
+    "alternativas": [
+      "Ganglionar",
+      "Meníngea",
+      "Óssea",
+      "Renal",
+      "Miliar"
+    ],
+    "correta": 0,
+    "comentario": "A tuberculose ganglionar é a forma extrapulmonar mais comum, tanto na população pediátrica quanto de forma geral — caracteristicamente com linfonodomegalia cervical de evolução arrastada, podendo fistulizar (escrofuloderma). As demais formas (meníngea, óssea, renal, miliar) são mais graves individualmente, mas menos frequentes.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2136",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Casal em tratamento para TB pulmonar há 30 dias leva ao posto seu filho de 5 anos para investigação. Marca vacinal de BCG, assintomático, RX de tórax normal, teste tuberculínico 12mm. Baseando-se no Manual de Recomendações do MS, deve-se:",
+    "alternativas": [
+      "Considerar infecção latente e fazer isoniazida durante 6 meses.",
+      "Considerar tuberculose ativa e fazer esquema tríplice durante 6 meses.",
+      "Considerar vacinado e repetir prova tuberculínica em 8 semanas.",
+      "Considerar não infectado e observar clinicamente, revendo em 8 semanas."
+    ],
+    "correta": 0,
+    "comentario": "Criança contactante de casal bacilífero, assintomática, com RX normal e PPD reator (12mm) caracteriza infecção latente — tratamento com isoniazida por 6 meses é a conduta padrão, independentemente da cicatriz vacinal de BCG (que não impede infecção latente nem invalida a interpretação do PPD nesse contexto de exposição direta e forte reação).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2137",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "No tratamento da tuberculose, devido ao uso da isoniazida, recomenda-se reposição de:",
+    "alternativas": [
+      "Ácido fólico",
+      "Vitamina B1",
+      "Vitamina B6",
+      "Sulfato ferroso",
+      "Vitamina D"
+    ],
+    "correta": 2,
+    "comentario": "A piridoxina (vitamina B6) é recomendada em associação à isoniazida em grupos de risco (gestantes, PVHIV, etilistas, desnutridos, diabéticos) para prevenir a neuropatia periférica induzida por esse fármaco, que interfere no metabolismo da vitamina B6.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2138",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Escolar de 6 anos, internado para investigação respiratória. Redução do apetite, perda de peso, tosse persistente há mais de 2 semanas mesmo após amoxicilina-clavulanato por 7 dias. Mora com avô tossindo há mais de 2 meses. Sobre a principal suspeita clínica, é CORRETO afirmar:",
+    "alternativas": [
+      "O diagnóstico pode ser feito através de um sistema de pontuação que leva em consideração dados clínicos, radiológicos e epidemiológicos.",
+      "A prova tuberculínica não está indicada, pois a BCG ao nascimento pode ocasionar resultado falso-positivo.",
+      "O tratamento consiste em 2 meses de RIPE e 4 meses de RI.",
+      "A profilaxia com isoniazida deve ser iniciada para o avô da criança por se tratar de infecção latente."
+    ],
+    "correta": 0,
+    "comentario": "O diagnóstico de TB pediátrica é frequentemente feito por sistema de pontuação (escore) que combina critérios clínicos, radiológicos, epidemiológicos (contato) e nutricionais — essencial pela baixa sensibilidade bacteriológica nessa faixa etária. A prova tuberculínica continua indicada mesmo em vacinados (a interpretação considera o contexto); o esquema pediátrico padrão para peso/idade específicos difere do RIPE adulto de 6 meses citado; e o avô SINTOMÁTICO (tossindo há 2 meses) precisa de investigação para doença ATIVA, não profilaxia de latente.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2139",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Em paciente com suspeita de tuberculose pulmonar, assinale a alternativa correta:",
+    "alternativas": [
+      "O teste rápido molecular é o método mais indicado para investigação de caso novo de tuberculose pulmonar na população geral.",
+      "A pesquisa de BAAR em duas amostras de escarro é o método de primeira escolha em populações vulneráveis (profissionais de saúde, PVHIV, privados de liberdade).",
+      "O TRM-TB é o método mais indicado para investigação de tuberculose ativa com vistas a retratamento.",
+      "A rifampicina é a droga de escolha para ILTB em PVHIV em uso de inibidores de protease.",
+      "Deve-se vacinar com BCG toda criança portadora de HIV acima dos 5 anos de idade."
+    ],
+    "correta": 0,
+    "comentario": "O TRM-TB é o método de escolha para investigação de caso NOVO de tuberculose pulmonar na população geral, por sua rapidez e sensibilidade superior à baciloscopia. Em populações vulneráveis, o TRM-TB (não a baciloscopia) também é priorizado; para retratamento, o TRM-TB tem limitações (pode detectar DNA residual), sendo a cultura mais indicada; isoniazida (não rifampicina) é a droga clássica de ILTB, com ajuste conforme interações medicamentosas; e a BCG é CONTRAINDICADA em imunossuprimidos graves, incluindo crianças HIV+ sintomáticas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2140",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "O sistema esquelético alberga até 35% dos casos de tuberculose extrapulmonar. Assinale o sítio esquelético mais frequentemente afetado:",
+    "alternativas": [
+      "Fêmur.",
+      "Escápula.",
+      "Osso ilíaco.",
+      "Coluna vertebral.",
+      "Articulações interfalangianas distais."
+    ],
+    "correta": 3,
+    "comentario": "A coluna vertebral é o sítio ósseo mais comumente acometido pela tuberculose (mal de Pott), tipicamente afetando corpos vertebrais adjacentes com destruição do disco intervertebral — pode levar a deformidade angular (giba) e compressão medular em casos avançados.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2141",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente com TB pulmonar e AIDS, em uso de tenofovir, lamivudina, atazanavir, ritonavir e dolutegravir (esquema baseado em genotipagem, não pode ser modificado). Deverá iniciar tratamento de TB. Assinale a droga do esquema de TB de primeira escolha que deverá ser substituída pela rifabutina, e a droga antirretroviral que causa essa interação:",
+    "alternativas": [
+      "rifampicina e lamivudina",
+      "isoniazida e dolutegravir",
+      "isoniazida e tenofovir",
+      "pirazinamida e atazanavir",
+      "rifampicina e atazanavir"
+    ],
+    "correta": 4,
+    "comentario": "A rifampicina é potente indutora enzimática do citocromo P450, reduzindo drasticamente os níveis séricos de inibidores de protease como o atazanavir/ritonavir — quando o esquema antirretroviral não pode ser alterado (por resistência/genotipagem), substitui-se a rifampicina pela rifabutina (indutor enzimático mais fraco), preservando a eficácia do esquema antirretroviral já otimizado.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2142",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Homem, 65 anos, DM, reside com neta de 24 anos que iniciou tratamento há 10 dias para TB pulmonar com BAAR +++. Assintomático, hemoglicoteste <100mg/dL, RX de tórax normal, IGRA positivo. A conduta, segundo o Guia de Vigilância em Saúde (MS, 2017), é:",
+    "alternativas": [
+      "não introduzir medicação e orientar retorno se sintomas sugestivos.",
+      "tratar ILTB com isoniazida, doses diárias, por 9 meses ou 270 doses.",
+      "solicitar TC de tórax para afastar tuberculose doença.",
+      "tratar ILTB com rifampicina, doses diárias, por 4 meses ou 120 doses."
+    ],
+    "correta": 3,
+    "comentario": "O esquema encurtado de rifampicina por 4 meses (120 doses) é uma alternativa preferida pelo MS em determinados contextos de ILTB (melhor adesão, esquema mais curto) — especialmente considerando o diabetes como fator de risco adicional para progressão, reforçando a indicação de tratamento (não apenas observação). A doença ativa já foi razoavelmente excluída pela ausência de sintomas e RX normal, dispensando TC de rotina.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2143",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente, 68 anos, etilista crônico, quadro febril com dispneia e emagrecimento. BAAR no escarro: 3 amostras negativas. RX: derrame pleural à direita. Líquido pleural: exsudato, ADA muito elevada, BAAR positivo no líquido pleural. Qual a orientação quanto ao isolamento do paciente?",
+    "alternativas": [
+      "Isolamento em quarto privativo e máscara cirúrgica para paciente e profissionais.",
+      "Isolamento em quarto privativo com pressão negativa, e máscara N95 para profissionais.",
+      "Não há necessidade de isolamento ou máscara para paciente e profissionais.",
+      "Isolamento em quarto privativo ou com pacientes do mesmo agente etiológico e máscara N95.",
+      "Isolamento com pressão negativa; máscara comum, avental e luvas não estéreis."
+    ],
+    "correta": 2,
+    "comentario": "Com três baciloscopias de ESCARRO negativas e apenas o líquido PLEURAL positivo, trata-se de tuberculose pleural isolada (extrapulmonar) sem evidência de doença pulmonar bacilífera ativa — como a transmissão da TB ocorre por via aérea a partir de secreção respiratória (não do líquido pleural), não há indicação de isolamento respiratório ou uso de máscara especial neste cenário específico.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2144",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "A rifampicina deve fazer parte do esquema preferencial de TB. Quando da necessidade de uso da rifabutina, apenas NÃO podemos aceitar que:",
+    "alternativas": [
+      "sua substituição pela rifabutina deve ser criteriosa e individualizada, considerando riscos/benefícios do esquema antituberculose e do regime antirretroviral.",
+      "a rifabutina está recomendada quando for necessário manter inibidor de protease associado ao ritonavir (IP/r), em geral nas situações de intolerância/resistência/contraindicação aos ITRNNs.",
+      "a rifabutina é geralmente mal tolerada, com efeitos adversos mais frequentes de exantema, intolerância gastrointestinal e neutropenia.",
+      "a rifabutina está recomendada quando for necessário associar inibidor de protease/ritonavir, em geral em situações de intolerância/resistência/contraindicação aos ITRNNs."
+    ],
+    "correta": 2,
+    "comentario": "Ao contrário da afirmativa, a rifabutina é, de modo geral, BEM tolerada — sua principal vantagem clínica é justamente permitir a manutenção de esquemas antirretrovirais baseados em inibidor de protease sem a intensa indução enzimática da rifampicina; o efeito adverso mais característico e específico da rifabutina é a uveíte (não mencionada nas opções), não um perfil de má tolerância geral.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2145",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Recomenda-se para PVHA com tuberculose ativa diversos cuidados TB-HIV. É INCORRETA uma das alternativas. Assinale-a:",
+    "alternativas": [
+      "Esquema antituberculose com duração de 6 meses e idealmente estruturado com rifampicina.",
+      "TARV com inibidor da transcriptase reversa não análogo de nucleosídeo (ITRNN) de segunda geração, preferencialmente o efavirenz.",
+      "Deve-se iniciar a TARV ainda nas primeiras 8 semanas do tratamento da tuberculose.",
+      "Quando a TB é diagnosticada em uso de TARV, o esquema deve ser avaliado quanto a interações com as rifamicinas."
+    ],
+    "correta": 1,
+    "comentario": "É INCORRETO classificar o efavirenz como ITRNN de 'segunda geração preferencial' — no esquema antirretroviral brasileiro atual, o dolutegravir (inibidor de integrase) é a droga preferencial para a maioria dos coinfectados TB-HIV virgens de tratamento, com efavirenz reservado a situações específicas. As demais afirmativas (duração de 6 meses do esquema anti-TB, início de TARV em até 8 semanas, atenção a interações com rifamicinas quando TB é diagnosticada em paciente já em TARV) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2146",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "A baciloscopia do escarro (Ziehl-Neelsen) é técnica simples, de baixo custo, a mais utilizada no diagnóstico da TB. É INADEQUADO afirmar que:",
+    "alternativas": [
+      "nos casos com indícios clínicos/radiológicos e duas baciloscopias negativas, podem ser solicitadas amostras adicionais e cultura.",
+      "outros espécimes (urina, secreção purulenta, lavados gástrico/brônquico, escarro induzido, biópsias) podem ser usados na investigação do M. tuberculosis.",
+      "em materiais extrapulmonares, a sensibilidade da baciloscopia é bem menor que no escarro, tornando a cultura obrigatória nessas amostras.",
+      "a PCR (TRM-TB) identifica material genético de microrganismos vivos ou mortos e está indicada para o acompanhamento do tratamento."
+    ],
+    "correta": 3,
+    "comentario": "É INADEQUADO (falso) afirmar que o TRM-TB é indicado para acompanhamento/monitoramento do tratamento — como detecta material genético mesmo de bacilos MORTOS, pode permanecer positivo por tempo prolongado após início eficaz do tratamento, gerando falsa impressão de persistência de doença ativa; por isso, a baciloscopia seriada (não o TRM-TB) é o método usado para monitorar a resposta terapêutica.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2147",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "RN a termo, 39s5d. Mãe em tratamento de TB pulmonar há 1 mês, escarro negativo há 3 semanas. A amamentação ao seio deverá ser realizada:",
+    "alternativas": [
+      "Utilizando máscara.",
+      "Sem restrições.",
+      "Após realizar a BCG.",
+      "Após o RN iniciar isoniazida.",
+      "A amamentação está contraindicada."
+    ],
+    "correta": 1,
+    "comentario": "Com a mãe em tratamento há 1 mês e escarro já negativado (indicando perda da capacidade de transmissão bacilífera), a amamentação pode ocorrer SEM restrições — o uso de máscara e isolamento são recomendados apenas na fase inicial (nas primeiras 2 semanas de tratamento, quando a mãe ainda é potencialmente bacilífera), não mais necessários neste cenário já superado.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2148",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Gestante de 18 semanas, tosse seca há 2 meses, suores noturnos, mal-estar. TCT negativo. Uma amostra de escarro induzido com teste de amplificação de ácido nucleico (TRM-TB) positivo. Segundo o Manual de Recomendações do MS, é correto afirmar:",
+    "alternativas": [
+      "A isoniazida não deve ser usada, pois o risco de hepatite/neurotoxicidade na gestação ultrapassa o benefício.",
+      "Inicia-se apenas com rifampicina (categoria B), reservando o esquema com múltiplas drogas para após o parto.",
+      "Indicam-se na fase inicial RHZE por 2 meses, seguidos de RH por mais 4 meses.",
+      "Deve-se orientar a gestante a evitar amamentação após o parto, pelo risco de transmissão aérea e das medicações.",
+      "Como o quadro é latente (TCT negativo), indica-se apenas isoniazida e rifampicina por pelo menos 6 meses."
+    ],
+    "correta": 2,
+    "comentario": "Confirmada tuberculose ATIVA (TRM-TB positivo, independentemente do TCT negativo — que pode ser falso-negativo por imunossupressão relativa da gestação), o esquema é o padrão RHZE por 2 meses seguido de RH por 4 meses, igual à população geral, com atenção à piridoxina — TCT negativo não afasta doença ativa quando a bacteriologia é positiva, sendo esta última soberana no diagnóstico.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2149",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Homem, 38 anos, em tratamento para doença de Crohn, vai iniciar infliximabe. Bom estado geral, RX de tórax normal. Teste tuberculínico com induração de 8mm. Qual a conduta adequada?",
+    "alternativas": [
+      "Não associar qualquer tratamento adicional.",
+      "Tratar com isoniazida.",
+      "Tratar com rifampicina, isoniazida e etambutol.",
+      "Acompanhar e repetir o teste tuberculínico em 90 dias."
+    ],
+    "correta": 1,
+    "comentario": "PPD reator (8mm) em paciente que iniciará terapia biológica anti-TNF (fator de risco maior para reativação de TB latente), com doença ativa já excluída (RX normal, assintomático), indica tratamento de ILTB com isoniazida isolada — não é necessário esquema múltiplo, reservado à doença ativa.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2150",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "No Brasil, a pericardite constritiva crônica é complicação frequente de que patologia?",
+    "alternativas": [
+      "Pericardite viral.",
+      "Infarto agudo do miocárdio.",
+      "Osteoartrite.",
+      "Tuberculose."
+    ],
+    "correta": 3,
+    "comentario": "No contexto brasileiro (país de média-alta carga de TB), a tuberculose é a causa mais associada à pericardite constritiva crônica — a inflamação granulomatosa crônica do pericárdio evolui com fibrose e calcificação, restringindo o enchimento diastólico cardíaco.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2151",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Sobre o uso do teste rápido molecular (GeneXpert) para diagnóstico da tuberculose, é INCORRETO afirmar que:",
+    "alternativas": [
+      "uma de suas principais vantagens é a rapidez de obtenção do diagnóstico.",
+      "é exame útil no acompanhamento do tratamento, para definição de cura bacteriológica.",
+      "permite identificação de cepas com resistência à rifampicina.",
+      "permite estabelecer o diagnóstico de tuberculose em alguns casos com esfregaço negativo para BAAR.",
+      "oferece maior especificidade para o diagnóstico da tuberculose pulmonar que as outras técnicas disponíveis."
+    ],
+    "correta": 1,
+    "comentario": "É INCORRETO (repetindo o ponto central já abordado): o TRM-TB NÃO é útil para acompanhamento do tratamento/definição de cura, pois pode permanecer positivo por detectar DNA de bacilos mortos, mesmo com tratamento eficaz — esse é um dos pontos mais cobrados e mais confundidos sobre o exame. As demais afirmativas (rapidez, detecção de resistência à rifampicina, maior sensibilidade que baciloscopia mesmo com esfregaço negativo, boa especificidade) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2152",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "RN a termo, 3.100g, alojamento conjunto. Mãe com diagnóstico recente de TB pulmonar, ainda SEM tratamento. Segundo o MS, as condutas mais adequadas em relação ao aleitamento e cuidados com o RN são:",
+    "alternativas": [
+      "Amamentar ao seio, mãe usando máscara, iniciar isoniazida e adiar a vacina BCG.",
+      "Contraindicar aleitamento, oferecer fórmula, realizar TCT e, se não reator, vacinar com BCG.",
+      "Oferecer leite materno pasteurizado por copo, vacinar com BCG conforme calendário.",
+      "Ordenhar leite materno e oferecer por copo, iniciar isoniazida e vacinar com BCG concomitantemente."
+    ],
+    "correta": 0,
+    "comentario": "Com a mãe ainda SEM tratamento (potencialmente bacilífera), a amamentação direta ao seio é mantida COM uso de máscara pela mãe (reduzindo risco de transmissão por gotículas), associada a início de quimioprofilaxia com isoniazida no RN — a vacina BCG deve ser ADIADA (não administrada concomitantemente) até a conclusão da profilaxia com isoniazida, evitando interferência entre a profilaxia e a resposta vacinal.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2153",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Menor de 3 meses, mãe no 5º mês de tratamento para TB pulmonar. Criança em quimioprofilaxia com isoniazida, não vacinada com BCG. Teste de Mantoux aos 3 meses: 8mm. Qual medida deve ser adotada?",
+    "alternativas": [
+      "Manutenção do tratamento com isoniazida por 6 meses e vacinar com BCG posteriormente.",
+      "Orientar vacinação com BCG imediata e suspender quimioprofilaxia.",
+      "Orientar vacinação com BCG imediata e manutenção do tratamento com isoniazida por 6 meses.",
+      "Iniciar tratamento para tuberculose pulmonar e vacinar com BCG posteriormente.",
+      "Não vacinar, suspender quimioprofilaxia e observar."
+    ],
+    "correta": 0,
+    "comentario": "PPD positivo (8mm) na criança em quimioprofilaxia confirma que houve infecção (viragem tuberculínica) — a conduta é completar os 6 meses de isoniazida como tratamento de ILTB (não mais como profilaxia primária) e, por já haver evidência de infecção, a vacina BCG NÃO deve mais ser administrada (não há benefício em vacinar quem já está infectado, e a criança segue o tratamento como caso de infecção latente confirmada).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2154",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Em relação à tuberculose, são medidas de controle ambiental e proteção individual em serviços com grande quantidade de pacientes bacilíferos, EXCETO:",
+    "alternativas": [
+      "Manter o paciente suspeito em isolamento respiratório, com menor tempo possível de permanência no setor.",
+      "Uso de máscaras N95 para profissionais de saúde com acesso a áreas de alto risco de transmissão hospitalar.",
+      "Aos profissionais do laboratório, não é recomendada a utilização de máscaras N95 durante a manipulação de materiais com suspeita de BAAR.",
+      "No transporte de doentes bacilíferos em ambulâncias, profissionais devem usar N95 e pacientes máscara cirúrgica comum."
+    ],
+    "correta": 2,
+    "comentario": "É a exceção (afirmativa falsa): profissionais de LABORATÓRIO que manipulam amostras com suspeita de BAAR TAMBÉM devem usar máscara N95 (ou equivalente), pela manipulação direta de material potencialmente infectante em ambiente fechado — a recomendação de dispensar N95 nesse contexto está incorreta. As demais medidas (isolamento com tempo reduzido, N95 em áreas de alto risco hospitalar, N95 para profissionais + máscara cirúrgica para pacientes no transporte) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2155",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Doenças a considerar no diagnóstico diferencial da tuberculose NÃO são compatíveis com o seguinte item:",
+    "alternativas": [
+      "Pneumonias, sarcoidose, SRAG, entre outras, são doenças importantes no diagnóstico diferencial da tuberculose.",
+      "As Micobactérias Não Tuberculosas (MNT) podem produzir quadros clínicos semelhantes ao da TB, não sendo necessário, para o diagnóstico diferencial, realizar cultura com identificação de espécie.",
+      "Foram identificadas mais de 150 espécies de MNT; entre as patogênicas, são frequentes M. avium, M. kansasii e M. abscessus.",
+      "As micoses pulmonares (paracoccidioidomicose, histoplasmose, entre outras) são doenças importantes no diagnóstico diferencial da tuberculose."
+    ],
+    "correta": 1,
+    "comentario": "É a afirmativa INCOMPATÍVEL (falsa): a diferenciação entre TB verdadeira e infecção por micobactérias não tuberculosas (MNT) — que podem gerar BAAR positivo no esfregaço, mimetizando TB — exige, sim, cultura com identificação de espécie, já que o tratamento e o significado clínico são completamente diferentes. As demais alternativas (diagnósticos diferenciais amplos, espécies de MNT patogênicas, micoses pulmonares como diferencial) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2156",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "O tratamento da tuberculose sensível dura no mínimo 6 meses. Somente se mostra INADEQUADO que:",
+    "alternativas": [
+      "No regime de tratamento com isoniazida, o mais importante é somente o tempo de tratamento.",
+      "Recomenda-se a utilização de, no mínimo, 270 doses com isoniazida, tomadas de 9 a 12 meses.",
+      "Deve-se considerar 180 doses com isoniazida, tomadas entre 6 a 9 meses em casos individuais, após avaliação de adesão.",
+      "Há evidências de que 270 doses de isoniazida protegem mais que 180 doses — esforços devem ser feitos para completar o total de doses programadas."
+    ],
+    "correta": 0,
+    "comentario": "É INADEQUADO afirmar que 'o mais importante é SOMENTE o tempo de tratamento' — o número TOTAL de doses efetivamente tomadas é tão ou mais relevante que o tempo calendário decorrido (por isso a orientação em número de doses, não apenas em meses), já que faltas/atrasos reduzem a eficácia mesmo dentro do período nominal. As demais afirmativas (270 doses em 9-12 meses, alternativa de 180 doses em casos individualizados, maior proteção com 270 doses) refletem corretamente a lógica de doses vs. tempo.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2157",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "O tratamento diretamente observado (TDO) é recomendado para todas as pessoas com diagnóstico de tuberculose. É INCORRETO que:",
+    "alternativas": [
+      "Define-se TDO como a ingestão diária dos medicamentos antituberculose sob observação direta de profissional de saúde.",
+      "O TDO deve ser realizado diariamente (de segunda a sexta-feira) ou, excepcionalmente, uma vez na semana.",
+      "O local e o horário devem estar acordados com o paciente.",
+      "Os medicamentos deverão ser ingeridos preferencialmente em jejum, uma vez ao dia, inclusive em finais de semana e feriados."
+    ],
+    "correta": 1,
+    "comentario": "É INCORRETO reduzir a frequência mínima do TDO a 'excepcionalmente uma vez na semana' — a recomendação do Ministério da Saúde prevê observação idealmente diária, com modalidades intermediárias aceitáveis (como TDO em pelo menos 3 vezes por semana em situações específicas), mas não tão esparsa quanto uma única vez semanal como alternativa regular aceita. As demais afirmativas sobre definição, pactuação local/horário, e ingestão em jejum diária estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2158",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Jovem de 15 anos, HIV+ por transmissão vertical, mora com tio que iniciou tratamento para TB pulmonar há 10 dias. Boa adesão ao ARV, carga viral <40 cópias/mL, assintomática, RX normal. Nunca tratou TB antes. A conduta mais adequada é:",
+    "alternativas": [
+      "Se CD4 <200, iniciar tratamento para tuberculose doença, independente do teste tuberculínico.",
+      "Se CD4 <500, iniciar tratamento para tuberculose latente, após afastar tuberculose doença.",
+      "Se teste tuberculínico >10mm, tratar como tuberculose doença, independentemente do CD4.",
+      "Afastado o diagnóstico de tuberculose doença, avaliar CD4 e resultado do teste tuberculínico para iniciar tratamento de tuberculose latente.",
+      "Observar aparecimento de sintomas e retornar em 30 dias para teste tuberculínico e nova radiografia."
+    ],
+    "correta": 3,
+    "comentario": "A sequência lógica correta é: primeiro excluir doença ativa (já bem encaminhado — assintomática, RX normal), e então avaliar CD4 e teste tuberculínico em conjunto para decidir sobre tratamento de ILTB — em PVHIV, cortes de PPD mais baixos são aceitos para indicar tratamento (refletindo maior vulnerabilidade), mas a decisão sempre integra ambos os parâmetros, não um isoladamente.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2159",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente, 28 anos, 3 meses de gestação, tosse seca, sudorese, perda ponderal. Diagnóstico de caso novo de TB pulmonar bacilífera. Sorologia HIV negativa. Qual a conduta mais adequada segundo o Manual de Recomendações do MS?",
+    "alternativas": [
+      "Tratá-la com esquema especial RHZ até o final da gravidez, prorrogando por mais 2 meses após o nascimento, quando iniciará a 2ª fase.",
+      "Iniciar esquema básico RHZE com redução das doses habituais em 50%, prorrogando por mais 2 meses na 2ª fase.",
+      "Tratá-la com esquema básico RHZE nas doses habituais, por 6 meses, com piridoxina 50mg/dia pelo risco de toxicidade neurológica fetal pela isoniazida.",
+      "Encaminhar para unidade de referência terciária para iniciar tratamento com esquema RHZ por 6 meses.",
+      "Iniciar esquema básico RHZE e solicitar cultura."
+    ],
+    "correta": 2,
+    "comentario": "O tratamento da gestante com TB confirmada segue o esquema básico RHZE em doses habituais (sem redução) por 6 meses, na atenção primária (sem necessidade de referência terciária), com adição de piridoxina para prevenir neurotoxicidade tanto materna quanto fetal decorrente da isoniazida — não há esquema 'especial' reduzido ou prolongado para gestantes com TB sensível.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2160",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "O tuberculostático que mais frequentemente pode ocasionar neuropatia periférica como efeito adverso é:",
+    "alternativas": [
+      "Pirazinamida.",
+      "Ofloxacino.",
+      "Estreptomicina.",
+      "Rifampicina.",
+      "Isoniazida."
+    ],
+    "correta": 4,
+    "comentario": "A isoniazida é o fármaco classicamente associado à neuropatia periférica (por interferência no metabolismo da piridoxina/vitamina B6), sendo essa a razão pela qual a suplementação de B6 é recomendada em grupos de risco.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2161",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Sobre o manejo da tuberculose, assinale a alternativa INCORRETA:",
+    "alternativas": [
+      "Toda pessoa classificada como Sintomático Respiratório (tosse há mais de 3 semanas) deve receber investigação de tuberculose.",
+      "O Teste Rápido para TB, quando positivo, já sai com resultado de sensibilidade para rifampicina (se resistente, encaminhar para referência).",
+      "Em casos de suspeita clínica/radiológica de TB com baciloscopia repetidamente negativa, não está indicada a cultura para micobactéria.",
+      "A radiografia de tórax deve ser solicitada para toda pessoa com suspeita de tuberculose pulmonar."
+    ],
+    "correta": 2,
+    "comentario": "É INCORRETO afirmar que a cultura NÃO é indicada diante de baciloscopia repetidamente negativa com suspeita clínica/radiológica mantida — pelo contrário, é justamente nesse cenário (alta suspeita, bacteriologia direta negativa) que a cultura (mais sensível) se torna especialmente indicada, para não perder o diagnóstico. As demais afirmativas (investigação obrigatória do sintomático respiratório, TRM-TB já informando sensibilidade à rifampicina, radiografia solicitada para toda suspeita) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2162",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente, 30 anos, febre, tosse com hemoptoicos, emagrecimento, sudorese noturna há 3 semanas. RX: lesão cavitada em ápice pulmonar direito com infiltrado misto pericavitário. BAAR de escarro positivo, TRM-TB positivo. O tratamento de escolha atual para o paciente é:",
+    "alternativas": [
+      "2 meses de RHZE + 10 meses de RH",
+      "2 meses de RHZE + 4 meses de RH",
+      "2 meses de RHZ + 4 meses de RH",
+      "2 meses de RHZ + 10 meses de RH"
+    ],
+    "correta": 1,
+    "comentario": "O esquema básico padrão para tuberculose pulmonar sensível em adultos é 2 meses de fase intensiva com RHZE seguidos de 4 meses de fase de manutenção com RH, totalizando 6 meses — esquema aplicável a este caso de TB pulmonar cavitária confirmada bacteriologicamente, sem indicação de esquemas prolongados (reservados a formas graves como meníngea/óssea).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2163",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente, 18 anos, icterícia, vômitos, fraqueza. Em tratamento há 10 dias por TB pulmonar bacilífera na UBS. PA 90x60mmHg, FC 130bpm. Indicada internação. Quanto às normas de biossegurança, qual a melhor conduta?",
+    "alternativas": [
+      "Paciente em quarto com isolamento usando máscara cirúrgica.",
+      "Paciente em quarto comum e profissionais usando N95.",
+      "Não há necessidade de isolamento por já ter iniciado o tratamento.",
+      "Paciente em quarto com isolamento usando N95.",
+      "Paciente em quarto com isolamento e profissionais da saúde usando N95."
+    ],
+    "correta": 4,
+    "comentario": "Apenas 10 dias de tratamento (ainda dentro da janela de potencial infecciosidade, que se estende por cerca de 2 semanas de tratamento eficaz) mantém a indicação de isolamento respiratório em quarto privativo, com os PROFISSIONAIS de saúde usando máscara N95 (proteção respiratória de partículas) — a combinação isolamento + N95 para a equipe é a medida padrão até a segurança bacteriológica ser mais estabelecida.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2164",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Julgue: são exemplos de efeitos maiores (que implicam interrupção/alteração do regime terapêutico) no tratamento da tuberculose: nefrite tubulointersticial associada ao etambutol; rabdomiólise com mioglobinúria e insuficiência renal associada à isoniazida; e neuropatia periférica decorrente da pirazinamida.",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 1,
+    "comentario": "Errado: os pareamentos fármaco-efeito estão incorretos. Etambutol está classicamente associado a neurite óptica (não nefrite intersticial); rabdomiólise/mioglobinúria é mais associada à pirazinamida (ou a interações medicamentosas específicas), não isoniazida; e neuropatia periférica é o efeito clássico da ISONIAZIDA, não da pirazinamida (que causa hepatotoxicidade e hiperuricemia). O conceito de 'efeitos maiores exigindo alteração do esquema' está correto, mas as associações específicas apresentadas são trocadas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2165",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente, 42 anos, dependente de crack, moradora de rua, já fez tratamento incompleto para TB mais de uma vez. Tosse persistente há 1 mês, febre, mal-estar, dispneia. RX: velamento difuso mais intenso no ápice e obliteração do seio costofrênico à direita. TRM-TB positivo. Considerando as recomendações da OMS para países em desenvolvimento, a conduta CORRETA é:",
+    "alternativas": [
+      "Internar para receber o esquema terapêutico em TDO, apenas até tornar-se não bacilífera.",
+      "Assegurar que a paciente receba novamente o tratamento convencional para TB pulmonar, por período mais prolongado.",
+      "Tratar em regime ambulatorial com esquema terapêutico convencional, pois não preenche critérios de internação.",
+      "Considerar a possibilidade de a paciente estar infectada por cepa resistente ao tratamento convencional; solicitar antibiograma.",
+      "Tratar a paciente e seus contactantes com esquema para cepa resistente de M. tuberculosis, sem confirmação."
+    ],
+    "correta": 3,
+    "comentario": "Histórico de tratamento incompleto/abandono prévio repetido é fator de risco maior para resistência adquirida — a conduta correta é INVESTIGAR ativamente essa possibilidade (cultura com antibiograma/teste de sensibilidade), e não simplesmente repetir o esquema convencional (que pode falhar novamente) nem, no extremo oposto, assumir resistência e tratar empiricamente como multirresistente sem confirmação laboratorial.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2166",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Criança, 4 anos, pais diagnosticados com TB pulmonar. Cartão vacinal completo, crescimento/desenvolvimento adequados, assintomática. RX sem alteração, PPD com enduração de 5mm. Considerando o quadro clínico, o tratamento da tuberculose latente (quimioprofilaxia):",
+    "alternativas": [
+      "Deverá ser realizado, pois apresenta enduração do PPD de 5mm e ausência de tuberculose.",
+      "Não deverá ser realizado, pois a enduração está relacionada à vacina BCG.",
+      "Deverá ser realizado, pois os pais são bacilíferos e estão em tratamento para tuberculose.",
+      "Não deverá ser realizado, pois a enduração deveria ser de pelo menos 10mm."
+    ],
+    "correta": 2,
+    "comentario": "O fator determinante aqui é a exposição direta e intensa (ambos os pais bacilíferos, contato domiciliar contínuo) — em crianças contactantes de caso bacilífero, o corte de PPD para indicação de tratamento é mais baixo que em adultos, e mesmo uma enduração modesta associada a essa exposição de alto risco já justifica o tratamento de ILTB, após exclusão de doença ativa (já feita: assintomática, RX normal).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2167",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Assinale a opção INCORRETA acerca da tuberculose:",
+    "alternativas": [
+      "O tratamento tem duração mínima de 6 meses e os esquemas preconizados no Brasil incluem a administração dos fármacos em duas tomadas diárias.",
+      "As formas exclusivamente extrapulmonares não transmitem a doença.",
+      "Em geral, após 2-3 semanas de tratamento com esquema anti-TB que inclua fármacos com atividade bactericida precoce, a maior parte dos doentes deixa de ser bacilífera.",
+      "As formas mais comuns de TB extrapulmonar são: pleural entre HIV-soronegativos e ganglionar periférica entre HIV-soropositivos."
+    ],
+    "correta": 0,
+    "comentario": "É INCORRETO afirmar que os fármacos do esquema RIPE são administrados em DUAS tomadas diárias — a recomendação padrão é dose ÚNICA diária (idealmente em jejum), o que favorece a adesão e é compatível com o TDO. As demais afirmativas (formas extrapulmonares isoladas não transmitem, negativação bacilar em 2-3 semanas de tratamento eficaz, distribuição de formas extrapulmonares por status HIV) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2168",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Qual das drogas para tratamento da tuberculose pode cursar com cefaleia, ansiedade, euforia e insônia?",
+    "alternativas": [
+      "Isoniazida.",
+      "Pirazinamida.",
+      "Rifampicina.",
+      "Etambutol."
+    ],
+    "correta": 0,
+    "comentario": "A isoniazida tem um perfil de efeitos adversos neuropsiquiátricos reconhecido (além da clássica neuropatia periférica), incluindo alterações de humor, insônia, ansiedade e, em casos mais graves, psicose — relacionado à sua interferência no metabolismo de neurotransmissores.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2169",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Dentre as drogas utilizadas no tratamento da tuberculose, a que possui como efeito colateral hepatite potencialmente fatal, neuropatia periférica, ataxia cerebelar, neurite óptica e psicoses é:",
+    "alternativas": [
+      "Rifampicina",
+      "Isoniazida",
+      "Pirazinamida",
+      "Etambutol",
+      "Isoniazida e etambutol"
+    ],
+    "correta": 1,
+    "comentario": "A isoniazida concentra o espectro mais amplo de efeitos adversos neurológicos e hepáticos entre os fármacos do esquema básico: hepatite (podendo ser grave), neuropatia periférica, e em casos raros manifestações neuropsiquiátricas mais amplas — reforçando por que é o fármaco mais associado a monitoramento clínico e laboratorial cuidadoso, além da suplementação profilática de piridoxina em grupos de risco.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2170",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "No manejo da tuberculose, assinale a alternativa correta:",
+    "alternativas": [
+      "Pessoas com tosse há mais de 3 semanas devem ter baciloscopia, RX, cultura e teste de sensibilidade solicitados para instituir esquema básico nas UBS.",
+      "As UBS devem dispor de sala ampla e arejada para dispor o tratamento e seguimento de pessoas com tuberculose.",
+      "Pessoas com tuberculose devem evitar contato com outras pessoas até o 2º mês de tratamento, quando deve haver negativação da primeira baciloscopia de controle.",
+      "Em caso de baciloscopia positiva no final do 2º mês de tratamento, solicitar cultura para micobactérias com identificação e teste de sensibilidade."
+    ],
+    "correta": 3,
+    "comentario": "Baciloscopia positiva persistente ao final do 2º mês de tratamento (quando a maioria dos pacientes já deveria ter negativado) é sinal de alerta para possível falha terapêutica/resistência, indicando formalmente a solicitação de cultura com identificação de espécie e teste de sensibilidade — não se solicita cultura+antibiograma rotineiramente para TODO sintomático respiratório antes de iniciar o esquema básico (opção A, desproporcional); UBS não precisa necessariamente de 'sala ampla e arejada' formalizada como estrutura obrigatória citada (afirmativa vaga/incorreta); e o período de restrição social recomendado é tipicamente de 2-3 semanas (não até o 2º mês).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2171",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Considere as assertivas sobre toxicidade dos fármacos contra tuberculose: I - Rifampicina pode apresentar hepatotoxicidade, geralmente de padrão colestático. II - Isoniazida pode apresentar hepatotoxicidade, geralmente de padrão celular. III - Etambutol e pirazinamida podem aumentar os níveis de ácido úrico. Quais são CORRETAS?",
+    "alternativas": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas III.",
+      "Apenas I e II.",
+      "I, II e III."
+    ],
+    "correta": 4,
+    "comentario": "As três assertivas estão corretas: rifampicina causa hepatotoxicidade predominantemente colestática (icterícia, elevação de fosfatase alcalina/bilirrubina), isoniazida causa hepatotoxicidade predominantemente hepatocelular (elevação de transaminases), e tanto etambutol quanto pirazinamida podem elevar o ácido úrico (a pirazinamida sendo o principal responsável pela hiperuricemia clássica associada ao esquema).",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2172",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "A transmissão da tuberculose é plena enquanto o indivíduo estiver eliminando bacilos. Com o início do esquema terapêutico adequado, em geral quantos dias após o início do tratamento a transmissão chega a níveis insignificantes?",
+    "alternativas": [
+      "5",
+      "10.",
+      "15.",
+      "20.",
+      "30."
+    ],
+    "correta": 2,
+    "comentario": "Cerca de 15 dias (2 semanas) de tratamento eficaz já reduzem drasticamente a carga bacilar e a capacidade de transmissão — período usado como referência prática para orientações de restrição de contato social/isolamento durante a fase inicial do tratamento.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2173",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "De acordo com a Secretaria de Vigilância e Saúde do Ministério da Saúde, a localização de tuberculose em que o tratamento deve ser feito com 2 meses de RHZE seguido de 7 meses de RH é na forma:",
+    "alternativas": [
+      "meníngea",
+      "renal",
+      "ganglionar",
+      "pulmonar"
+    ],
+    "correta": 0,
+    "comentario": "A forma meníngea (assim como formas ósseas extensas) exige esquema estendido — 2 meses de RHZE seguidos de 7 meses de RH (totalizando 9 meses, não os 6 meses padrão da forma pulmonar não complicada) — refletindo a maior gravidade, o pior prognóstico e a necessidade de erradicação bacteriana mais completa no sistema nervoso central.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2174",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "No tratamento da tuberculose pulmonar com o esquema RHZE, o surgimento de neurite óptica é efeito adverso mais associado ao uso de:",
+    "alternativas": [
+      "rifampicina",
+      "isoniazida",
+      "etambutol",
+      "pirazinamida"
+    ],
+    "correta": 2,
+    "comentario": "A neurite óptica retrobulbar, com discromatopsia (perda da discriminação de cores, especialmente vermelho-verde), é o efeito adverso clássico e característico do etambutol — motivo pelo qual seu uso exige atenção especial em crianças pequenas, que não conseguem relatar bem alterações visuais.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2175",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente medicado empiricamente com cefotaxima, eritromicina e sulfametoxazol-trimetoprima parenteral. Cinco dias depois, febre e tosse não produtiva persistem, infiltrados pulmonares progrediram, paciente com piora clínica. Qual a intervenção mais adequada?",
+    "alternativas": [
+      "Iniciar terapia empírica com ganciclovir IV.",
+      "Adicionar pentamidina IV, interromper sulfametoxazol-trimetoprima.",
+      "Iniciar anfotericina B empírica.",
+      "Iniciar terapia empírica com esquema antituberculose, programar broncoscopia.",
+      "Programar biópsia pulmonar aberta, continuar o esquema atual."
+    ],
+    "correta": 3,
+    "comentario": "Diante de falha terapêutica a antibióticos de amplo espectro convencionais (incluindo cobertura para PCP com sulfametoxazol-trimetoprima) com piora radiológica progressiva, a hipótese de tuberculose deve ser ativamente considerada — justificando início de terapia empírica antituberculose associada à investigação complementar (broncoscopia) para confirmação diagnóstica e exclusão de outras causas.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2176",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Cinco meses após exposição a caso domiciliar de TB pulmonar ativa, homem de 28 anos, HIV+, apresenta febre, calafrios, erupção cutânea, emagrecimento e tosse não produtiva por 2 semanas. CD4 há 3 meses: 380 céls/mm³. RX: infiltrados intersticiais basilares sem cavidades, adenopatia ou efusão pleural. PPD: anergia cutânea. Qual a explicação mais provável para esta doença?",
+    "alternativas": [
+      "Pneumocystis carinii.",
+      "Citomegalovírus.",
+      "Toxoplasma gondii.",
+      "Streptococcus pneumoniae.",
+      "Mycobacterium tuberculosis."
+    ],
+    "correta": 4,
+    "comentario": "A combinação de exposição domiciliar recente a caso bacilífero, imunossupressão (HIV, ainda que CD4 não extremamente baixo), e anergia ao PPD (própria de infecções ativas graves/disseminadas, que consomem a resposta imune celular) aponta para tuberculose — nesse contexto, a apresentação pode ser atípica (infiltrado basilar sem cavitação, sem os achados 'clássicos' apicais), reforçando que a ausência de padrão radiológico típico não exclui TB em imunossuprimidos.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2177",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente em uso de esquema clássico para TB deve monitorar ALT. A suspensão da droga e substituição devem ocorrer quando:",
+    "alternativas": [
+      "ALT eleva-se em 50%.",
+      "Pacientes assintomáticos com elevação acima de 5 vezes o valor máximo normal.",
+      "Pacientes sintomáticos independentemente do nível de elevação.",
+      "Apenas quando atinge níveis iguais a 10 vezes o valor máximo normal."
+    ],
+    "correta": 1,
+    "comentario": "O critério clássico para suspensão do esquema em pacientes ASSINTOMÁTICOS é elevação de ALT acima de 5 vezes o limite superior da normalidade — em pacientes SINTOMÁTICOS (náusea, icterícia, dor abdominal), a suspensão deve ocorrer com qualquer elevação significativa, mesmo abaixo desse corte, dado o maior risco de hepatotoxicidade clinicamente relevante.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2178",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente com tuberculose em uso do esquema básico (RIPE), náuseas, vômitos e epigastralgia na 2ª semana de tratamento, em TDO pelo PSF. Qual a conduta preferencial?",
+    "alternativas": [
+      "Solicitar provas de função hepática, enzimas pancreáticas e suspender tratamento até melhora dos sintomas.",
+      "Solicitar provas de função hepática, enzimas pancreáticas, reformular o horário da tomada das medicações e prescrever sintomáticos, se necessário.",
+      "Encaminhar para a referência secundária para avaliação e conduta.",
+      "Manter o tratamento e reavaliar em 2 semanas, sem qualquer intervenção."
+    ],
+    "correta": 1,
+    "comentario": "Sintomas gastrointestinais leves a moderados (náusea, epigastralgia) sem sinais de gravidade são efeitos adversos MENORES, manejados com ajuste do horário de administração (ex.: após refeições leves), sintomáticos se necessário, e investigação laboratorial para excluir hepatotoxicidade mais significativa — sem necessidade de suspender o tratamento ou encaminhar a nível de atenção mais complexo nesse estágio.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2179",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Os efeitos adversos possíveis da rifampicina, isoniazida e pirazinamida, respectivamente, são:",
+    "alternativas": [
+      "hiperuricemia, neuropatia periférica, hepatite",
+      "neuropatia periférica, hepatite, hiperuricemia",
+      "hepatite, neuropatia periférica, hiperuricemia",
+      "hepatite, neurite óptica, neuropatia periférica",
+      "neurite óptica, hepatite, neuropatia periférica"
+    ],
+    "correta": 2,
+    "comentario": "A associação correta é: rifampicina → hepatite (padrão colestático) + efeitos como síndrome flu-like e coloração alaranjada de secreções; isoniazida → neuropatia periférica (prevenida com piridoxina); pirazinamida → hiperuricemia/artralgia, além de ser a mais hepatotóxica das quatro drogas do esquema — resumo direto e frequentemente cobrado dos efeitos adversos característicos de cada fármaco do RIPE.",
+    "banca": "Banco de questões — Estratégia MED (Tuberc.pdf — banco dedicado, Infectologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2180",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Paciente, 50 anos, internado em quarto de isolamento respiratório. Tosse há 6 semanas, febre, fadiga, sudorese noturna, perda ponderal, hemoptise, dor torácica pleurítica. Ausculta: estertores finos pós-tussivos em ápices. Laboratório: anemia normocítica normocrômica, hipoalbuminemia. RX: infiltrados e cavitações no segmento posterior do lobo superior direito. A hipótese diagnóstica mais provável é:",
+    "alternativas": [
+      "Tuberculose extrapulmonar.",
+      "Tuberculose pulmonar latente.",
+      "Tuberculose pulmonar pós-primária.",
+      "Infecção primária por Mycobacterium tuberculosis."
+    ],
+    "correta": 2,
+    "comentario": "O padrão radiológico de cavitação em segmento posterior do lobo superior (região apical, de maior tensão de O2) associado ao quadro clínico clássico (tosse crônica, hemoptise, sudorese noturna, emagrecimento) é característico da tuberculose PÓS-PRIMÁRIA (reativação de infecção latente) — forma mais comum de doença ativa em adultos, distinta da TB primária (mais comum em crianças, com padrão radiológico diferente, geralmente sem cavitação apical) e da TB latente (sem sintomas nem alterações radiológicas).",
+    "banca": "BASES Tuberculose — banco de questões EMR (Eu Médico Residente) (REVALIDA 2022)",
+    "ano": 2022,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Tuberculose)",
+    "revisado": true
+  },
+  {
+    "id": "q2181",
+    "temaId": "tuberculose",
+    "tema": "Tuberculose",
+    "enunciado": "Menino, 14 anos, em hemodiálise aguardando transplante renal. RX de tórax com calcificação isolada em lobo superior direito. Para diagnóstico de infecção latente por tuberculose, deve realizar:",
+    "alternativas": [
+      "Prova tuberculínica.",
+      "Cultura de lavado brônquico.",
+      "Teste rápido molecular em lavado gástrico.",
+      "Tomografia de tórax.",
+      "Biópsia pleural."
+    ],
+    "correta": 0,
+    "comentario": "A prova tuberculínica (PPD) é o método padrão para investigação de infecção LATENTE (sem doença ativa) — o achado de calcificação isolada (sequela de infecção primária antiga, já contida) reforça a suspeita de contato prévio com o bacilo, tornando o rastreio de ILTB (via PPD, ou IGRA quando disponível) a conduta apropriada, e não exames voltados à investigação de doença ATIVA (cultura, TRM-TB, biópsia), que não fazem sentido na ausência de sintomas ou evidência de doença em atividade.",
+    "banca": "BASES Tuberculose — banco de questões EMR (Eu Médico Residente) (ABC-SP 2022)",
+    "ano": 2022,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Tuberculose)",
     "revisado": true
   }
 ]
