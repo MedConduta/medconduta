@@ -923,7 +923,7 @@
     "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
     "banca": "Exemplo — MedConduta",
     "ano": 2025,
-    "revisado": false,
+    "revisado": true,
     "fonte": "KDIGO Clinical Practice Guideline for the Management of Glomerular Diseases (2021)",
     "enunciado": "Criança de 4 anos apresenta edema periorbitário, proteinúria maciça e hipoalbuminemia, sem hematúria ou hipertensão significativas. Qual a hipótese diagnóstica mais provável?",
     "alternativas": [
@@ -43781,6 +43781,1039 @@
     "banca": "BASES Distúrbios Hidroeletrolíticos — banco de questões EMR (Eu Médico Residente) (UFPB 2022)",
     "ano": 2022,
     "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Distúrbios Hidroeletrolíticos)",
+    "revisado": true
+  },
+  {
+    "id": "q2386",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Menina, 7 anos, faringoamigdalite bacteriana há 2 semanas, evoluindo há 1 dia com edema, hematúria macroscópica e redução do débito urinário. Hematúria com dismorfismo eritrocitário positivo e hipertensão arterial. Assinale a alternativa correta:",
+    "alternativas": [
+      "A tríade característica clássica envolve hipertensão, hipercolesterolemia e hematúria.",
+      "A normalização dos níveis de complemento ocorre habitualmente de 6 a 8 semanas após o quadro.",
+      "A recuperação completa ocorre em cerca de 60% dos casos.",
+      "O intervalo de tempo entre a piodermite e o quadro renal é habitualmente menor do que nos quadros de amigdalite.",
+      "O manejo do quadro envolve restrição hídrica, corticoide e repouso relativo."
+    ],
+    "correta": 1,
+    "comentario": "Na glomerulonefrite pós-estreptocócica, a normalização do C3 ocorre tipicamente em 6-8 semanas — sua persistência baixa além desse prazo deve levantar suspeita de outra causa de hipocomplementemia (ex.: nefrite lúpica, GN membranoproliferativa). A tríade clássica é hipertensão, EDEMA e hematúria (não hipercolesterolemia); a recuperação completa ocorre em >90% dos casos pediátricos; o intervalo pós-piodermite é MAIOR (3-6 semanas) que o pós-faringite (1-3 semanas); e o tratamento é de suporte (controle de PA/volume), sem indicação rotineira de corticoide.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2387",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Paciente de 7 anos, edema insidioso de MMII e abdome que piora ao longo do dia, cefaleia e hematúria macroscópica. PA 130/90mmHg e cacifo positivo maleolar. História de amigdalites recorrentes. É INCORRETO afirmar que:",
+    "alternativas": [
+      "Essa doença evolui na maioria dos casos com hematúria e consumo de complemento.",
+      "Alguns casos dessa patologia podem evoluir com encefalopatia hipertensiva.",
+      "A análise de urina desse paciente pode apresentar dismorfismo eritrocitário.",
+      "A proteinúria está presente na maioria dos casos e justifica o edema dessa patologia."
+    ],
+    "correta": 3,
+    "comentario": "Na síndrome nefrítica (GN pós-estreptocócica), a proteinúria é apenas SUBNEFRÓTICA e NÃO é o principal mecanismo do edema — o edema nefrítico decorre principalmente da retenção de sódio e água por redução da TFG (mecanismo hemodinâmico), diferente do edema nefrótico, que sim é justificado pela hipoalbuminemia da proteinúria maciça. Essa é, portanto, a afirmativa INCORRETA.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2388",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Menino, 6 anos, edema de face progredindo para abdome/MMII há 7 dias, diminuição do volume urinário, urina espumosa. Sem febre, artralgia ou cefaleia. Ganho de peso de 7kg. Exames: hemograma e função renal normais, urina I com proteína 4+, albumina sérica 2,0g/dL. Assinale a alternativa correta.",
+    "alternativas": [
+      "A pressão arterial na pediatria é considerada normal sempre que estiver abaixo de 110x70mmHg.",
+      "O diagnóstico mais provável é glomerulonefrite pós-estreptocócica e o tratamento deve ser com diuréticos.",
+      "O diagnóstico mais provável é síndrome nefrótica, sendo indispensável biópsia renal antes de iniciar o tratamento.",
+      "O diagnóstico mais provável é síndrome nefrótica e o tratamento inicial sempre é realizado com corticoides.",
+      "O diagnóstico mais provável é glomerulopatia pós-estreptocócica e o tratamento inicial deve ser com corticoides."
+    ],
+    "correta": 3,
+    "comentario": "O quadro (edema progressivo, proteinúria maciça, hipoalbuminemia, sem hematúria/hipertensão/queda de função renal) é típico de síndrome nefrótica idiopática da infância — cuja causa mais comum é a doença de lesões mínimas. O tratamento inicial em criança com apresentação típica é EMPÍRICO com corticoide, sem necessidade de biópsia renal prévia (a boa resposta ao corticoide é, ela própria, quase diagnóstica).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2389",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Criança com síndrome nefrótica, previamente hígida (sem hematúria, hipertensão ou insuficiência renal, com complemento normal), deve ter o diagnóstico confirmado com quais exames complementares?",
+    "alternativas": [
+      "Ureia, creatinina e sumário de urina com sedimentoscopia.",
+      "Colesterol total e frações, eletrólitos séricos e taxa de filtração glomerular.",
+      "Albumina sérica e relação proteína/creatinina urinária.",
+      "Creatinina, C3 e C4 séricos e sumário de urina com sedimentoscopia."
+    ],
+    "correta": 3,
+    "comentario": "A confirmação diagnóstica e a triagem para eventuais sinais de atipia (que indicariam biópsia) exigem função renal, dosagem de complemento (C3/C4) e sedimento urinário — combinando exames que confirmam a síndrome e ao mesmo tempo rastreiam achados atípicos (hematúria significativa, hipocomplementemia) que mudariam a conduta.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2390",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Situações variadas como infecção por HIV, doença de Still, hemofagocitose, uso de bifosfonatos e transplante renal estão associadas à seguinte nefropatia:",
+    "alternativas": [
+      "Amiloidose renal.",
+      "Nefropatia mesangial.",
+      "Glomerulonefrite membranoproliferativa.",
+      "Nefropatia de lesões mínimas.",
+      "Glomerulopatia colapsante."
+    ],
+    "correta": 4,
+    "comentario": "A glomerulopatia colapsante (variante agressiva da GESF) está classicamente associada a infecção por HIV (nefropatia associada ao HIV), além de outras condições inflamatórias sistêmicas graves, uso de bifosfonatos e pós-transplante — evolução tipicamente mais rápida e agressiva que as outras formas de GESF.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2391",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Paciente com nefrite lúpica classe IV, função renal normal, proteinúria de 24h de 3,5g. Qual seria a melhor opção para o tratamento de indução?",
+    "alternativas": [
+      "Prednisona + pulsos mensais de ciclofosfamida",
+      "Prednisona + ciclofosfamida oral",
+      "Prednisona + belimumab",
+      "Prednisona + micofenolato de sódio",
+      "Rituximab"
+    ],
+    "correta": 3,
+    "comentario": "Para nefrite lúpica proliferativa (classe III/IV), o micofenolato de sódio/mofetil associado a corticoide é uma das opções de indução com eficácia equivalente à ciclofosfamida e melhor perfil de efeitos adversos (preservação da fertilidade, menor toxicidade), sendo hoje amplamente preferido como primeira linha em diversos protocolos.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2392",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Na investigação de um paciente com hematúria microscópica e suspeita de lesão glomerular, qual tipo de cilindro se espera encontrar no exame de urina?",
+    "alternativas": [
+      "Hemáticos.",
+      "Hialinos.",
+      "Granulosos pigmentados.",
+      "Leucocitários."
+    ],
+    "correta": 0,
+    "comentario": "Os cilindros hemáticos (compostos por hemácias aglutinadas em matriz proteica dentro do túbulo) são o achado mais específico de origem GLOMERULAR da hematúria — diferente de cilindros hialinos (inespecíficos) ou leucocitários (sugerem processo inflamatório tubulointersticial/pielonefrite).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2393",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 55 anos, IVAS há 3 semanas com uso de AINE por 10 dias, evoluindo com adinamia, redução da diurese e edema progressivo de MMII. Cr 3,0, ureia 100, albumina 1,8, C3/C4 normais; urina com proteínas 500mg/dL, lipídeos 3+, sem hematúria/leucocitúria significativas. Qual a hipótese mais provável?",
+    "alternativas": [
+      "Glomerulonefrite aguda pós-infecciosa.",
+      "Nefrite intersticial aguda.",
+      "Glomerulopatia por lesões mínimas.",
+      "Nefropatia por IgA."
+    ],
+    "correta": 2,
+    "comentario": "O uso recente de AINE é fator de risco reconhecido para doença de lesões mínimas em adultos (além da nefrite intersticial aguda, que cursaria tipicamente com leucocitúria/eosinofilúria, ausentes aqui) — o quadro de síndrome nefrótica pura (proteinúria maciça, hipoalbuminemia, hiperlipidúria, complemento normal, sem hematúria significativa) é compatível com lesões mínimas induzida por AINE.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2394",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Menino, 8 anos, feridas na perna há 15 dias, evoluindo com edema palpebral e urina escurecida há 5 dias. Exame: edema, estertores em bases, estase jugular discreta, hepatomegalia leve, PA 120x80mmHg. Urina: proteína ++/4+, leucócitos e hemácias incontáveis; ureia 71, creatinina 0,7. Qual o tratamento medicamentoso inicial mais indicado?",
+    "alternativas": [
+      "Prednisona.",
+      "Enalapril.",
+      "Amoxicilina + clavulanato.",
+      "Furosemida."
+    ],
+    "correta": 3,
+    "comentario": "O quadro de glomerulonefrite pós-estreptocócica (pós-piodermite) com sinais de sobrecarga volêmica (estertores, estase jugular, hepatomegalia) tem no diurético de alça (furosemida) a medida inicial mais indicada para controlar a congestão e a hipertensão — corticoide não tem papel comprovado na GNPE.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2395",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Uma criança de 9 anos com síndrome nefrótica pura deve ser abordada, num primeiro momento, com:",
+    "alternativas": [
+      "Biópsia renal.",
+      "Corticoterapia.",
+      "Micofenolato de sódio.",
+      "Azatioprina."
+    ],
+    "correta": 1,
+    "comentario": "Diante de síndrome nefrótica 'pura' (sem hematúria significativa, hipertensão, insuficiência renal ou hipocomplementemia) em criança na faixa etária típica, a corticoterapia empírica é a conduta inicial — a boa resposta é, ela mesma, quase diagnóstica de doença de lesões mínimas, dispensando biópsia inicial.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2396",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Paciente em acompanhamento de síndrome nefrótica subitamente apresenta dor abdominal e febre, com abdome globoso e difusamente doloroso. Pensando no quadro atual (peritonite bacteriana espontânea), qual tratamento deve ser iniciado?",
+    "alternativas": [
+      "Ciclosporina.",
+      "Aminoglicosídeo.",
+      "Laparotomia exploradora.",
+      "Ampicilina ou cefalosporina.",
+      "Pulsoterapia com corticoides."
+    ],
+    "correta": 3,
+    "comentario": "A peritonite bacteriana é uma complicação infecciosa clássica da síndrome nefrótica (perda urinária de imunoglobulinas), tipicamente causada por Streptococcus pneumoniae — o tratamento empírico é com ampicilina ou cefalosporina, cobrindo o patógeno mais provável, sem necessidade de abordagem cirúrgica imediata.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2397",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Idosa, 65 anos, tabagista, adenocarcinoma de pulmão em estadiamento, com edema progressivo de MMII e MMSS há 2 semanas. Albumina 2,3, sódio 128, proteinúria significativa, sem hematúria/leucocitúria relevantes. Assinale a alternativa com diagnóstico mais provável.",
+    "alternativas": [
+      "Doença de lesão mínima.",
+      "Nefropatia membranosa.",
+      "Nefropatia por IgA.",
+      "Amiloidose renal."
+    ],
+    "correta": 1,
+    "comentario": "A nefropatia membranosa é a causa mais comum de síndrome nefrótica em adultos/idosos e tem associação bem estabelecida com neoplasias sólidas (síndrome nefrótica paraneoplásica) — o câncer de pulmão em estadiamento reforça essa hipótese como causa secundária da glomerulopatia.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2398",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Criança de 7 anos com edema, oligúria, urina escura, amaurose transitória e hipertensão arterial grave. Qual a principal hipótese diagnóstica e a conduta mais adequada?",
+    "alternativas": [
+      "Síndrome nefrótica complicada por meningoencefalite pneumocócica — internar, colher LCR, iniciar ceftriaxona e furosemida na urgência.",
+      "Glomerulonefrite pós-infecciosa complicada com encefalopatia hipertensiva — internar, iniciar anti-hipertensivo venoso, diurético de alça e solicitar sumário de urina, função renal e C3.",
+      "ITU complicada, provavelmente por malformação renal — colher urocultura, iniciar antibioticoterapia parenteral e USG renal.",
+      "Glomerulonefrite pós-infecciosa não complicada — acompanhamento ambulatorial, solicitar C3, exames de urina e penicilina benzatina.",
+      "Injúria renal aguda pré-renal — internar, expansão volêmica com soro fisiológico e diurético de alça."
+    ],
+    "correta": 1,
+    "comentario": "Amaurose transitória associada a hipertensão grave em quadro de glomerulonefrite aguda é sinal de encefalopatia hipertensiva — complicação que exige internação e tratamento anti-hipertensivo endovenoso imediato associado a diurético de alça (nunca expansão volêmica, que agravaria a hipertensão/congestão), com investigação etiológica confirmatória (C3, sumário de urina).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2399",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Um paciente com glomerulosclerose segmentar e focal (biópsia) apresenta doença renal secundária. Qual o diagnóstico causal mais provável?",
+    "alternativas": [
+      "Hepatite B.",
+      "Sífilis secundária.",
+      "Infecção por HIV.",
+      "Cirrose biliar primária.",
+      "Carcinoma de mama."
+    ],
+    "correta": 2,
+    "comentario": "A infecção por HIV é uma causa secundária clássica e bem estabelecida de GESF (nefropatia associada ao HIV, frequentemente com a variante colapsante) — muito mais associada a essa glomerulopatia do que hepatite B (mais associada a membranosa/poliarterite), sífilis ou neoplasias sólidas.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2400",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Criança de 2 anos e 3 meses com edema generalizado, frio e depressível, de instalação insidiosa. Albuminemia 2,0g/dL, proteinúria 55mg/kg/dia, hematúria microscópica. Qual a hipótese mais provável?",
+    "alternativas": [
+      "Glomerulonefrite difusa aguda.",
+      "Glomerulonefrite pseudomembranosa.",
+      "Glomerulonefrite membranoproliferativa.",
+      "Glomerulopatia por lesões mínimas.",
+      "Glomerulonefrite rapidamente progressiva."
+    ],
+    "correta": 3,
+    "comentario": "Apesar da presença de hematúria microscópica (achado atípico, mas que ocorre em até 20-30% dos casos de lesões mínimas sem mudar necessariamente a conduta inicial), o quadro geral — criança pequena, edema insidioso, proteinúria maciça, hipoalbuminemia — continua sendo mais compatível com doença de lesões mínimas, a causa mais comum de síndrome nefrótica na infância.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2401",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Biópsias renais em pacientes com síndrome nefrótica associada ao uso de anti-inflamatórios não hormonais mostram, mais provavelmente, quais tipos anatomopatológicos?",
+    "alternativas": [
+      "Nefropatia de lesões mínimas + glomeruloesclerose segmentar e focal.",
+      "Glomeruloesclerose segmentar e focal + membranoproliferativa.",
+      "Nefropatia de lesões mínimas + nefrite membranosa.",
+      "Glomerulonefrite membranosa + glomerulonefrite membranoproliferativa.",
+      "Nefropatia de lesões mínimas + glomerulonefrite membranoproliferativa."
+    ],
+    "correta": 2,
+    "comentario": "Os AINEs estão associados classicamente a dois padrões histológicos de síndrome nefrótica: lesões mínimas (frequentemente com nefrite intersticial associada) e nefropatia membranosa — os dois padrões mais reportados na literatura para essa etiologia medicamentosa.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2402",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Mulher, 30 anos, edema e urina escurecida. Edema peripalpebral, hipertensão. Urina: 40 hemácias/campo, proteína 1+; proteinúria 24h de 1g; creatinina 2,0; C3 baixo (50, VR 90-180); albumina 3,5; colesterol 150. A síndrome e a doença que ocasiona o consumo de complemento são, respectivamente:",
+    "alternativas": [
+      "Nefrítica e lúpus eritematoso sistêmico.",
+      "Nefrótica e crioglobulinemia.",
+      "Nefrítica e glomeruloesclerose segmentar e focal.",
+      "Nefrótica e glomerulonefrite membranoproliferativa.",
+      "Nefrítica e doença de lesão mínima."
+    ],
+    "correta": 0,
+    "comentario": "O quadro (proteinúria subnefrótica, hematúria, hipertensão, creatinina elevada) é de síndrome NEFRÍTICA — e, entre as causas de glomerulonefrite com CONSUMO de complemento em mulher jovem, o lúpus eritematoso sistêmico é a hipótese mais relevante a ser investigada (junto com GNPE e GN membranoproliferativa, mas o perfil demográfico aqui sugere LES).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2403",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "A criança com síndrome nefrótica precisa do seu calendário vacinal completo. Entre as vacinas com forte recomendação para essas crianças, está a de:",
+    "alternativas": [
+      "Caxumba.",
+      "Pneumococo.",
+      "Rubéola.",
+      "Febre amarela."
+    ],
+    "correta": 1,
+    "comentario": "A vacina antipneumocócica é fortemente recomendada em crianças com síndrome nefrótica, dado o alto risco de infecções por Streptococcus pneumoniae (incluindo peritonite bacteriana espontânea) nesses pacientes, pela perda urinária de imunoglobulinas. Vacinas de vírus vivos atenuados exigem cautela especial durante imunossupressão.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2404",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 28 anos, urina escura e edema de MMII há 3 dias, iniciados 1 dia após odinofagia. PA 150/100mmHg. Creatinina 1,4; proteinúria 1,2g/L; hemácias dismórficas presentes; C3, C4 e CH50 normais. Qual o diagnóstico mais provável?",
+    "alternativas": [
+      "Nefropatia por imunoglobulina A.",
+      "Nefrite por lúpus eritematoso sistêmico.",
+      "Glomerulonefrite da crioglobulinemia.",
+      "Glomerulonefrite pós-estreptocócica."
+    ],
+    "correta": 0,
+    "comentario": "O intervalo curto entre a infecção de vias aéreas e a hematúria (1 dia — 'hematúria sinfaringítica') associado a complemento NORMAL é a marca registrada da nefropatia por IgA, diferenciando-a da GN pós-estreptocócica (intervalo de 1-3 semanas e hipocomplementemia).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2405",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "A complicação da biópsia renal percutânea mais observada na prática clínica é:",
+    "alternativas": [
+      "Hematoma perirrenal.",
+      "Choque hemorrágico.",
+      "Distensão abdominal.",
+      "Hematúria macroscópica.",
+      "Laceração do local da biópsia."
+    ],
+    "correta": 3,
+    "comentario": "A hematúria macroscópica transitória é a complicação mais comum da biópsia renal percutânea — geralmente autolimitada, ao contrário de complicações mais graves e raras como sangramento significativo com necessidade de intervenção.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2406",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Mulher, 62 anos, DM2 há 20 anos, aumento de peso e edema há 2 semanas. Creatinina 1,5, urina com 3+ de proteínas sem outros achados, colesterol 240, triglicerídeos 330, albumina 3,2, HbA1c 9%, retinopatia diabética não proliferativa ao fundo de olho. A hipótese diagnóstica mais provável é de uma glomerulopatia ___, cujos achados histológicos mais compatíveis são de ___.",
+    "alternativas": [
+      "Primária — espessamento de membrana basal e proliferação mesangial",
+      "Secundária — espessamento de membrana basal e proliferação mesangial",
+      "Primária — duplicação da membrana basal e expansão mesangial",
+      "Secundária — duplicação da membrana basal e expansão mesangial"
+    ],
+    "correta": 1,
+    "comentario": "A presença de retinopatia diabética concomitante (marcador clínico de microangiopatia sistêmica que costuma acompanhar a nefropatia diabética) reforça o diagnóstico de nefropatia diabética — uma glomerulopatia SECUNDÁRIA, cujo achado histológico clássico é o espessamento difuso da membrana basal glomerular com expansão/proliferação mesangial (podendo evoluir para os nódulos de Kimmelstiel-Wilson em estágios avançados).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2407",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Paciente com lúpus eritematoso sistêmico há 2 anos procura o hospital com edema de face, hematúria e hipertensão. C3 baixo, hematúria, proteinúria, cilindros hemáticos e creatinina 3,1mg/dL (basal 0,8mg/dL um mês antes). Aponte a primeira terapêutica a ser utilizada neste momento.",
+    "alternativas": [
+      "Pulsoterapia com metilprednisolona 500 a 1000mg/dia por 3 dias.",
+      "Aguardar resultado da biópsia renal antes de iniciar a imunossupressão.",
+      "Prednisona 40mg/kg/dia.",
+      "Ciclofosfamida oral 1mg/kg/dia.",
+      "Micofenolato mofetil 2g/dia."
+    ],
+    "correta": 0,
+    "comentario": "Diante de nefrite lúpica com deterioração aguda e significativa da função renal (creatinina quadruplicada em 1 mês), a pulsoterapia com metilprednisolona em altas doses é a medida inicial imediata para conter a atividade inflamatória grave, mesmo antes da confirmação histológica definitiva pela biópsia — o quadro clínico já justifica intervenção imediata.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2408",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Paciente, 14 anos, edema periorbitário, hipertensão discreta, urina 'chá-preto', cilindros hemáticos. C3 baixo, C4 normal, ASLO normal, anti-DNase B aumentado. O provável diagnóstico é:",
+    "alternativas": [
+      "Síndrome nefrótica.",
+      "Glomerulonefrite aguda pós-estreptocócica.",
+      "Atividade física extenuante com rabdomiólise.",
+      "Nefropatia por imunoglobulina A (doença de Berger)."
+    ],
+    "correta": 1,
+    "comentario": "O ASLO pode estar normal em até 20% dos casos de GNPE (especialmente se a infecção precedente foi cutânea/piodermite, não faríngea) — nesses casos, o anti-DNase B (mais sensível para infecções de pele) confirma a exposição estreptocócica recente, sustentando o diagnóstico mesmo com ASLO normal.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2409",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Sobre a Síndrome Nefrótica é correto afirmar que:",
+    "alternativas": [
+      "Sua forma mais rara é a idiopática.",
+      "O paciente com essa condição apresenta hipoalbuminemia e hipolipidemia.",
+      "O principal sintoma é o edema.",
+      "Todos os pacientes desenvolvem anasarca, ascite e edema escrotal."
+    ],
+    "correta": 2,
+    "comentario": "O edema é o sintoma cardinal e mais precoce da síndrome nefrótica, presente na quase totalidade dos casos. A forma idiopática é, na verdade, a mais COMUM (não a mais rara) em crianças; a síndrome cursa com hipoalbuminemia e HIPERlipidemia (não hipolipidemia); e nem todo paciente evolui necessariamente para anasarca completa com edema escrotal.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2410",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Mulher, 23 anos, edema generalizado progressivo (iniciado em MMII, depois periorbitário, depois generalizado), urina espumosa com volume normal. Albumina 2,1g/dL; relação proteína/creatinina urinária muito elevada. Qual achado NÃO é habitualmente observado na síndrome apresentada?",
+    "alternativas": [
+      "Cilindros graxos ao exame do sedimento urinário",
+      "Hipercolesterolemia e hipertrigliceridemia",
+      "Susceptibilidade aumentada a infecções",
+      "Tendência a sangramentos"
+    ],
+    "correta": 3,
+    "comentario": "A síndrome nefrótica está associada a estado de HIPERcoagulabilidade e maior risco TROMBOEMBÓLICO (por perda urinária de proteínas anticoagulantes naturais, como antitrombina III) — não a tendência a sangramentos, que não é uma manifestação esperada da síndrome.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2411",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 52 anos, edema de MMII evoluindo para anasarca em 1 mês, síndrome nefrótica confirmada. Biópsia: microscopia óptica com espessamento difuso da membrana basal glomerular; imunofluorescência com IgG e C3 em depósitos subepiteliais, padrão granular. Qual o diagnóstico histológico?",
+    "alternativas": [
+      "Doença de lesões mínimas.",
+      "Glomerulonefrite por anticorpo anti-membrana basal glomerular.",
+      "Nefropatia diabética.",
+      "Glomerulopatia membranosa."
+    ],
+    "correta": 3,
+    "comentario": "Depósitos subepiteliais granulares de IgG e C3 com espessamento difuso da membrana basal são o achado histopatológico clássico da glomerulopatia membranosa — diferente do padrão linear (não granular) da doença anti-MBG (Goodpasture).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2412",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Qual é o sinal clínico mais frequente da síndrome nefrótica?",
+    "alternativas": [
+      "Edema.",
+      "Sede noturna.",
+      "Diabetes.",
+      "Febre alta."
+    ],
+    "correta": 0,
+    "comentario": "O edema (tipicamente periorbitário matinal, progredindo para anasarca) é o sinal clínico cardinal e mais frequente da síndrome nefrótica, decorrente da hipoalbuminemia por proteinúria maciça.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2413",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "A glomerulonefrite difusa aguda pós-estreptocócica (GNDA) é caracterizada por processo inflamatório de origem imunológica que acomete os rins. Sobre a GNDA, é correto afirmar:",
+    "alternativas": [
+      "A GNDA geralmente acomete apenas um rim e parte dos glomérulos, o que explica seu bom prognóstico.",
+      "Edema, hipertensão e hematúria são sintomas clássicos de GNDA, mas nem sempre todos esses sintomas estão presentes.",
+      "A GNDA é causada por todas as cepas do estreptococo beta-hemolítico do grupo A.",
+      "Na fase aguda, a proteinúria — mesmo em nível não nefrótico — se correlaciona com gravidade e risco de cronicidade."
+    ],
+    "correta": 1,
+    "comentario": "A apresentação clínica da GNPE é variável — nem todos os pacientes apresentam a tríade completa (edema, hipertensão, hematúria) simultaneamente, podendo haver formas subclínicas ou oligossintomáticas. A doença é BILATERAL e difusa (não unilateral); é causada apenas por cepas NEFRITOGÊNICAS específicas do EBHGA (não todas); e a proteinúria em nível não nefrótico não é, isoladamente, um marcador confiável de gravidade/cronicidade nessa doença tipicamente autolimitada.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2414",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Menino, 9 anos, edema palpebral há 3 dias e urina avermelhada há 1 dia. Uso de amoxicilina há 2 semanas para dor de garganta. PA 120x80mmHg. Ureia 60, creatinina 1,0. Urina I: proteína +++, hemácias e leucócitos incontáveis. Qual o diagnóstico mais provável?",
+    "alternativas": [
+      "Glomerulonefrite aguda pós-infecciosa.",
+      "Nefrite intersticial aguda.",
+      "Síndrome nefrótica idiopática.",
+      "Infecção do trato urinário."
+    ],
+    "correta": 0,
+    "comentario": "O intervalo típico de 1-3 semanas após faringoamigdalite tratada, associado a edema, hematúria macroscópica ('avermelhada') e hipertensão, é o quadro clássico de glomerulonefrite aguda pós-infecciosa (pós-estreptocócica) — o uso prévio de amoxicilina reflete o tratamento da infecção precedente, não uma reação medicamentosa.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2415",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Mulher, 25 anos, sem comorbidades, com diminuição do volume urinário, alteração do aspecto da urina e edema. PA 156x90mmHg; creatinina 2,3, ureia 68, albumina 3,1; urina I com proteína 150mg/dL, hemácias 300/campo. Qual exame seria mais importante na elucidação diagnóstica?",
+    "alternativas": [
+      "Ultrassonografia renal com doppler.",
+      "Fração de excreção de sódio.",
+      "Hemograma completo.",
+      "Biópsia renal."
+    ],
+    "correta": 3,
+    "comentario": "Diante de síndrome nefrítica em adulto sem causa evidente (paciente previamente hígida, sem infecção precedente clara), a biópsia renal é o exame fundamental para definição etiológica precisa — diferente de crianças com quadro típico de GNPE, em que a biópsia geralmente é dispensável.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2416",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Paciente, 22 anos, previamente hígida, fadiga, anorexia e urina escura há 3 dias, com IVAS há 2 semanas. PA 178x106mmHg. Urina I: proteínas++, 120.000 hemácias com dismorfismo, cilindros granulosos e hemáticos ++. Proteinúria 24h de 1g/dia, creatinina 1,7mg/dL. Qual o achado laboratorial mais esperado?",
+    "alternativas": [
+      "Presença de anticorpos antimembrana basal",
+      "Níveis elevados de imunoglobulina A (IgA)",
+      "Hipocomplementemia com redução do componente C3",
+      "Detecção de ANCA"
+    ],
+    "correta": 2,
+    "comentario": "O intervalo de 1-3 semanas após infecção de vias aéreas superiores, associado a síndrome nefrítica clássica, é típico de glomerulonefrite pós-estreptocócica — cuja marca laboratorial característica é a hipocomplementemia transitória (redução de C3), que se normaliza em 6-8 semanas.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2417",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Quanto à síndrome nefrótica na faixa etária pediátrica, assinale a alternativa correta.",
+    "alternativas": [
+      "A lesão histológica mínima é a causa primária mais comum de síndrome nefrótica na pediatria.",
+      "A tríade edema, hipertensão arterial e hematúria macroscópica define o diagnóstico.",
+      "Independentemente do quadro clínico e de sua evolução, a biópsia renal sempre é indicada.",
+      "Medidas não farmacológicas, como dieta hipossódica e repouso, são irrelevantes em qualquer fase do tratamento.",
+      "O uso de imunossupressor (ciclofosfamida, ciclosporina) é o tratamento de escolha na lesão histológica mínima; corticoides ficam reservados a casos de resistência."
+    ],
+    "correta": 0,
+    "comentario": "A doença de lesões mínimas é a causa mais comum de síndrome nefrótica idiopática em crianças, respondendo por cerca de 80-90% dos casos na faixa etária típica. A tríade descrita na opção B é da síndrome NEFRÍTICA (não nefrótica); a biópsia NÃO é sempre necessária em quadro típico; medidas de suporte (dieta hipossódica) são relevantes desde o início; e o CORTICOIDE (não imunossupressores de segunda linha) é o tratamento inicial de escolha.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2418",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "A síndrome nefrótica é caracterizada por um conjunto de sinais, sintomas e alterações laboratoriais. Nesse caso, o paciente cursa com edema generalizado, urina espumosa,",
+    "alternativas": [
+      "proteinúria >3,5g/1,73m²/24h, dislipidemia, e pode ser consequência de tuberculose.",
+      "proteinúria >2,5g/1,73m²/24h, hiperalbuminemia, e pode ser consequência de hipertensão arterial.",
+      "proteinúria >2,5g/1,73m²/24h, hipoalbuminemia, e pode ser consequência de amiloidose.",
+      "proteinúria >3,5g/1,73m²/24h, risco diminuído para tromboses, e pode ser consequência de diabetes mellitus.",
+      "albuminúria >3,5g/1,73m²/24h, risco aumentado de infecções, e pode ser consequência de uso de anti-inflamatórios."
+    ],
+    "correta": 0,
+    "comentario": "O critério diagnóstico padrão de proteinúria nefrótica é >3,5g/1,73m²/24h, associada a dislipidemia (hipercolesterolemia/hipertrigliceridemia) — a amiloidose renal é uma causa reconhecida de síndrome nefrótica secundária, mas o critério de corte correto exige >3,5g (não 2,5g) e o risco tromboembólico está AUMENTADO (não diminuído).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2419",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Em relação aos casos de hematúria a esclarecer, assinale a alternativa correta.",
+    "alternativas": [
+      "A ausência de hemácias dismórficas exclui o diagnóstico de hematúria glomerular.",
+      "A presença de proteinúria a partir de 500mg/dia é forte indício de hematúria glomerular.",
+      "O dismorfismo eritrocitário é muito sensível, porém pouco específico de hematúria glomerular.",
+      "A hematúria com leucocitúria só ocorre em infecções urinárias.",
+      "A litíase renal é uma das causas mais frequentes de hematúria glomerular."
+    ],
+    "correta": 2,
+    "comentario": "O dismorfismo eritrocitário tem alta sensibilidade para hematúria de origem glomerular, mas especificidade limitada (pode ocorrer também em hematúrias não glomerulares em menor grau) — daí a importância de combiná-lo com outros achados (cilindros hemáticos, proteinúria) para maior acurácia diagnóstica. Sua ausência não exclui completamente origem glomerular, e litíase é causa clássica de hematúria NÃO glomerular.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2420",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Menino de 5 anos com síndrome nefrótica idiopática é levado com dor abdominal intensa, de início há 2 horas, em redução da dose de corticoterapia. Abdome tenso, dor à palpação superficial e descompressão dolorosa. Ausência de piúria ou hematúria; spot urinário evidencia proteinúria nefrótica. O agente etiológico mais provável para o quadro é:",
+    "alternativas": [
+      "Pneumococo.",
+      "Estafilococo.",
+      "Pseudomonas.",
+      "Escherichia coli.",
+      "Klebsiella pneumoniae."
+    ],
+    "correta": 0,
+    "comentario": "A peritonite bacteriana espontânea, complicação clássica da síndrome nefrótica (pela perda urinária de imunoglobulinas, sobretudo IgG, e do fator B do complemento — essencial para opsonização de bactérias encapsuladas), é mais comumente causada pelo Streptococcus pneumoniae, um patógeno encapsulado.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2421",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 62 anos, previamente hígido, trazido com rebaixamento do nível de consciência, edema generalizado há 1 semana, PA 220x160mmHg, sem sinais focais. Único antecedente relevante: episódio de erisipela há 30 dias. Qual achado provavelmente NÃO seria encontrado nesse caso?",
+    "alternativas": [
+      "Proteinúria = 4g/24 horas",
+      "Níveis séricos de C3 reduzidos",
+      "Altos títulos de antiestreptolisina O",
+      "Hemácias dismórficas no sumário de urina",
+      "Cilindros hemáticos"
+    ],
+    "correta": 2,
+    "comentario": "Como a infecção precedente foi cutânea (erisipela/piodermite), e não faríngea, o ASLO tipicamente permanece NORMAL (o ASLO responde melhor a infecções de vias aéreas) — nesse cenário, o anti-DNase B seria o marcador sorológico mais sensível, não o ASLO elevado.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2422",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Em 40-50% dos casos há hematúria macroscópica acompanhando infecção de vias aéreas superiores (hematúria sinfaringítica). Em 30-40%, a hematúria é microscópica com proteinúria leve. Em menos de 10% ocorre síndrome nefrótica ou glomerulonefrite rapidamente progressiva. O texto refere-se a:",
+    "alternativas": [
+      "Nefropatia por IgA.",
+      "Síndrome de Alport.",
+      "Amiloidose renal.",
+      "Glomerulonefrite difusa aguda pós-estreptocócica.",
+      "Glomerulonefrite membranoproliferativa."
+    ],
+    "correta": 0,
+    "comentario": "A hematúria macroscópica sincrônica ou logo após infecção de vias aéreas superiores ('hematúria sinfaringítica', com intervalo de horas a poucos dias — muito mais curto que o da GNPE) é a apresentação clássica e mais característica da nefropatia por IgA.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2423",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "O risco de trombose varia entre as causas de síndrome nefrótica, sendo o mais elevado nos pacientes com:",
+    "alternativas": [
+      "Nefropatia membranosa.",
+      "Nefropatia mesangial.",
+      "Glomeruloesclerose segmentar e focal.",
+      "Glomerulonefrite membranoproliferativa.",
+      "Nefropatia por IgA."
+    ],
+    "correta": 0,
+    "comentario": "A nefropatia membranosa é a causa de síndrome nefrótica com maior risco de eventos tromboembólicos (incluindo trombose de veia renal) — atribuído a alterações mais intensas no perfil de proteínas pró e anticoagulantes nessa glomerulopatia específica.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2424",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 20 anos, poliartrite, dor abdominal aguda, púrpuras palpáveis nas pernas e hematúria microscópica. Hemograma, coagulograma, creatinina e complemento sérico normais. O diagnóstico mais provável é:",
+    "alternativas": [
+      "Doença de Goodpasture.",
+      "Granulomatose de Wegener.",
+      "Síndrome de Reiter.",
+      "Lúpus eritematoso sistêmico.",
+      "Vasculite por IgA."
+    ],
+    "correta": 4,
+    "comentario": "A tétrade púrpura palpável (vasculite leucocitoclástica) + artrite + dor abdominal + hematúria/nefrite, com complemento NORMAL (diferencia de LES e GNPE), é diagnóstica de vasculite por IgA (púrpura de Henoch-Schönlein) — mesmo depósito de IgA mesangial da nefropatia por IgA, porém como manifestação de uma vasculite sistêmica.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2425",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 60 anos, edema progressivo, urina espumosa, redução do volume urinário há 2 meses. Albumina 2,4, glicemia 78 (não diabético), creatinina 1,4, proteinúria 24h de 10g, hemácias 2/campo. Os diagnósticos sindrômico e nosológico são:",
+    "alternativas": [
+      "Síndrome nefrótica; glomerulonefrite membranosa.",
+      "Síndrome nefrótica; nefropatia diabética.",
+      "Síndrome nefrítica; glomerulonefrite de lesões mínimas.",
+      "Síndrome nefrítica; glomeruloesclerose focal e segmentar."
+    ],
+    "correta": 0,
+    "comentario": "Proteinúria maciça (10g/24h) sem hematúria significativa em homem idoso, sem diabetes, é o perfil clássico de síndrome nefrótica por glomerulonefrite (nefropatia) membranosa — a causa mais comum de síndrome nefrótica primária em adultos/idosos.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2426",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Jovem de 18 anos, DM1 diagnosticado há 2 anos (após cetoacidose), com anasarca de início insidioso há 3 meses e ganho de peso de 7kg. Sem uso prévio de IECA. Albumina 2,1, colesterol 290, LDL 178, HbA1c 7,0%. Urina: proteínas 4+, corpúsculos ovais graxos, ausência de hematúria. A respeito do quadro, justifica-se:",
+    "alternativas": [
+      "Repetir o sumário de urina e proceder biópsia renal apenas se identificada hematúria glomerular.",
+      "Realizar mapeamento da retina para diagnóstico associado de retinopatia e nefropatia diabética.",
+      "Realizar biópsia de rim para diagnóstico de glomerulopatia não relacionada ao diabetes.",
+      "Solicitar pesquisa de complementos séricos e proceder biópsia de rim se resultados estiverem baixos."
+    ],
+    "correta": 2,
+    "comentario": "A instalação relativamente rápida (3 meses) da síndrome nefrótica em diabético tipo 1 jovem, com apenas 2 anos de diagnóstico (tempo insuficiente para nefropatia diabética clássica, que costuma levar 10-15 anos para se manifestar), sem retinopatia mencionada e sem hematúria, é atípica para causa diabética — justificando biópsia renal para investigar glomerulopatia primária não relacionada ao diabetes.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2427",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 40 anos, internado com lesão renal aguda. EAS: hematúria, cilindros hemáticos e proteinúria nefrótica. TC de seios da face com sinusite em seios maxilares; TC de tórax com achados pulmonares associados. O anticorpo provavelmente presente é:",
+    "alternativas": [
+      "Anti-DNA dupla hélice",
+      "Anti-mieloperoxidase",
+      "Anti-proteinase 3",
+      "Anti-membrana basal glomerular"
+    ],
+    "correta": 2,
+    "comentario": "O acometimento combinado de vias aéreas superiores (sinusite), pulmão e rim é a tríade clássica da granulomatose com poliangiite (antiga granulomatose de Wegener), fortemente associada ao anticorpo anti-proteinase 3 (c-ANCA) — diferente da poliangiite microscópica, mais associada ao anti-mieloperoxidase (p-ANCA).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2428",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "A biópsia renal percutânea pode trazer informações diagnósticas e prognósticas. Considerando indicações e contraindicações desse método:",
+    "alternativas": [
+      "O rim único exige procedimento por cirurgia aberta.",
+      "A gravidez contraindica a realização de biópsia percutânea.",
+      "A biópsia renal está indicada se a principal hipótese diagnóstica for nefrite de shunt.",
+      "A hematúria glomerular isolada persistente não é indicação para biópsia renal."
+    ],
+    "correta": 3,
+    "comentario": "A hematúria glomerular isolada persistente (sem proteinúria significativa, hipertensão ou queda de função renal), por ter geralmente causas benignas (ex.: doença de membrana fina, nefropatia por IgA leve) e não mudar a conduta terapêutica na maioria dos casos, NÃO costuma ser indicação isolada de biópsia renal.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2429",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 45 anos, hipertenso e diabético, previamente assintomático com proteinúria normal. Após uso de cetoprofeno por dor no ombro (1 semana), passa a apresentar urina espumosa e hipertensão. Creatinina evolui de 1,0 para 3,8mg/dL em 1 mês; hemácias 250/campo com 15% de acantócitos; proteinúria de 1700mg/24h. Qual o diagnóstico mais provável?",
+    "alternativas": [
+      "Microangiopatia trombótica.",
+      "Glomerulonefrite rapidamente progressiva.",
+      "Nefropatia diabética.",
+      "Nefrite túbulo-intersticial aguda."
+    ],
+    "correta": 1,
+    "comentario": "A deterioração renal rápida (creatinina quase quadruplicada em 1 mês) associada a hematúria dismórfica significativa (acantócitos) e proteinúria em ascensão é incompatível com o curso lento e insidioso da nefropatia diabética clássica — configurando quadro de glomerulonefrite rapidamente progressiva, uma emergência nefrológica que exige investigação e biópsia urgentes.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2430",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Paciente de 23 anos com edema há 3 semanas (iniciado em MMII, progredindo para generalizado/face), ganho de peso, uso de AINE 1 semana antes. Urina 1 com proteinúria +++ e discretas hemácias dismórficas; relação proteína/creatinina 6g/g; FAN positivo (padrão nuclear homogêneo, altos títulos). Biópsia: glomerulonefrite membranosa, imunofluorescência 'full house' (IgG, IgM, C1q, C3, C4). O diagnóstico etiológico é:",
+    "alternativas": [
+      "Glomerulonefrite membranosa idiopática.",
+      "Lúpus eritematoso sistêmico.",
+      "Síndrome de Goodpasture.",
+      "HIV em janela imunológica.",
+      "Glomerulonefrite membranosa medicamentosa."
+    ],
+    "correta": 1,
+    "comentario": "O padrão de imunofluorescência 'full house' (positividade para todos os principais imunorreagentes — IgG, IgM, IgA, C3, C1q) é altamente característico e quase patognomônico de nefrite lúpica, mesmo quando a apresentação histológica é de padrão membranoso (classe V) — o FAN positivo em altos títulos reforça o diagnóstico de LES.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2431",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Em um paciente com Doença Renal Crônica, crioglobulinemia, diminuição dos complementos séricos e biópsia renal com glomerulonefrite membranoproliferativa, deve ser descartada a possibilidade de:",
+    "alternativas": [
+      "Diabetes.",
+      "Lues.",
+      "Glomerulonefrite aguda.",
+      "Hepatite C."
+    ],
+    "correta": 3,
+    "comentario": "A associação de crioglobulinemia mista com glomerulonefrite membranoproliferativa e hipocomplementemia é um achado clássico e fortemente associado à infecção crônica pelo vírus da hepatite C — uma das causas secundárias mais importantes dessa combinação de achados.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2432",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 45 anos, fumante, dor torácica, tosse com hemoptoicos, infiltrados pulmonares, história de atopia/rinite alérgica, evoluindo com diminuição do volume urinário. Creatinina 3,0. USG com rins de tamanho normal e dissociação córtico-medular preservada. Biópsia: crescentes em 70% dos glomérulos; imunofluorescência com depósitos granulares subepiteliais e subendoteliais. O próximo passo na investigação e o diagnóstico mais provável, respectivamente, são:",
+    "alternativas": [
+      "Dosagem do complemento / lúpus eritematoso sistêmico",
+      "Dosagem do complemento / síndrome de Churg-Strauss",
+      "Dosagem do ANCA / poliangeíte com granulomatose",
+      "Dosagem do ANCA / síndrome de Goodpasture"
+    ],
+    "correta": 2,
+    "comentario": "A história de atopia/rinite alérgica associada a acometimento pulmonar (infiltrados, hemoptise) e renal (glomerulonefrite rapidamente progressiva com crescentes) é sugestiva de granulomatose eosinofílica com poliangiite (Churg-Strauss) — uma vasculite ANCA-associada; a dosagem de ANCA é o próximo passo diagnóstico racional diante dessa suspeita. Os depósitos imunes granulares (não lineares, como seria em Goodpasture) também afastam a doença anti-MBG.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2433",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Paciente internada com edema, hematúria, oligúria e hipertensão de início recente. Ureia/creatinina pouco elevadas; sumário de urina com hematúria e proteinúria; C3 e C4 baixos. Qual exame seria MENOS útil no diagnóstico dessa paciente?",
+    "alternativas": [
+      "ANCA.",
+      "Ac anti-HCV.",
+      "FAN.",
+      "Ecocardiograma.",
+      "Ac antiestreptolisina O."
+    ],
+    "correta": 3,
+    "comentario": "As vasculites ANCA-associadas classicamente NÃO consomem complemento (C3/C4 tipicamente normais nessas doenças) — dado que a paciente já apresenta hipocomplementemia confirmada, a pesquisa de ANCA teria baixo valor discriminatório adicional para a etiologia deste caso específico, sendo o ecocardiograma o exame de MENOR utilidade direta para o diagnóstico da causa da glomerulonefrite (embora relevante para descartar endocardite como diferencial de glomerulonefrite com hipocomplementemia, ele não é o exame etiológico central aqui, sendo superado em relevância pelos demais).",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2434",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "G.E.P., 67 anos, com disfunção renal. USG renal com rins de tamanho normal e relação córtico-medular preservada. Creatinina 6mg/dL, proteinúria 24h de 1,7g, hematúria e proteinúria na urina I, sorologias para hepatites e HIV negativas, complemento sérico normal. Biópsia: crescentes à microscopia óptica; imunofluorescência com AUSÊNCIA de imunocomplexos ou frações do complemento. A hipótese diagnóstica e conduta são:",
+    "alternativas": [
+      "Glomerulonefrite pauci-imune (ANCA-mediada) — corticoide e plasmaférese.",
+      "Nefropatia por IgA — pulsoterapia com corticosteroides.",
+      "Nefrite lúpica — pulsoterapia com corticoide.",
+      "Glomerulonefrite por anticorpo antimembrana basal — plasmaférese."
+    ],
+    "correta": 0,
+    "comentario": "A ausência de depósitos imunes à imunofluorescência ('pauci-imune') associada a crescentes glomerulares e complemento normal é o padrão característico das vasculites ANCA-associadas — o tratamento de indução combina corticoide em altas doses com imunossupressor, reservando a plasmaférese para casos com hemorragia pulmonar grave ou necessidade dialítica.",
+    "banca": "Banco de questões — Estratégia MED (Doenças Glomerulares.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Doenças Glomerulares — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2435",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Menino de 12 anos apresenta edema palpebral há 3 dias, diminuição da diurese e urina cor de coca-cola há 1 dia. AP: dor de garganta há 3 semanas. PA 130x90mmHg, edema bipalpebral e em MMII. Creatinina 1,0, ureia 59, C3 34mg/dL (VR 90-130), ASLO 450 (VR<200), urina I: proteínas +2, 40 leucócitos/campo, 100 hemácias/campo. O diagnóstico é síndrome:",
+    "alternativas": [
+      "Mista nefrótica e nefrítica.",
+      "Nefrótica por glomerulonefrite de doença sistêmica.",
+      "Nefrítica sem etiologia específica.",
+      "Nefrítica por glomerulonefrite pós-estreptocócica."
+    ],
+    "correta": 3,
+    "comentario": "O intervalo de 3 semanas após faringite, associado a hipocomplementemia (C3 baixo), ASLO elevado, hematúria macroscópica e edema/hipertensão configura o quadro clássico de síndrome nefrítica por glomerulonefrite pós-estreptocócica.",
+    "banca": "BASES Glomerulopatias — banco de questões EMR (Eu Médico Residente) (UNESP 2024)",
+    "ano": 2024,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Glomerulopatias)",
+    "revisado": true
+  },
+  {
+    "id": "q2436",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Menino de 8 anos com edema de face e MMII há 3 dias, diminuição do débito urinário e urina escurecida. Uso de cefalexina há 1 mês para infecção de pele em MI direito. FC 88, PA 138x67(99)mmHg, FR 34, SatO2 89% em ar ambiente. Ausculta pulmonar diminuída em bases com estertores. Considerando a principal hipótese diagnóstica, assinale a alteração laboratorial esperada e a conduta inicial adequada:",
+    "alternativas": [
+      "ASLO diminuída; restrição hidrossalina e furosemida.",
+      "Albumina sérica diminuída; albumina e corticoide.",
+      "Anti-DNase B elevado; restrição hidrossalina e furosemida.",
+      "Dismorfismo eritrocitário presente; albumina e corticoide."
+    ],
+    "correta": 2,
+    "comentario": "A infecção de pele (piodermite) precedente sugere glomerulonefrite pós-estreptocócica com sobrecarga volêmica grave (dessaturação, estertores) — o anti-DNase B (mais sensível que o ASLO para infecções cutâneas) é o marcador esperado, e a conduta inicial de urgência é restrição hidrossalina associada a furosemida, para controlar o edema pulmonar iminente.",
+    "banca": "BASES Glomerulopatias — banco de questões EMR (Eu Médico Residente) (HIAE-SP 2025)",
+    "ano": 2025,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Glomerulopatias)",
+    "revisado": true
+  },
+  {
+    "id": "q2437",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Qual dos seguintes achados histológicos é característico da Glomerulonefrite Rapidamente Progressiva (GNRP)?",
+    "alternativas": [
+      "Espessamento difuso da membrana basal glomerular.",
+      "Proliferação mesangial difusa.",
+      "Células inflamatórias infiltrando o glomérulo.",
+      "Crescentes glomerulares."
+    ],
+    "correta": 3,
+    "comentario": "A formação de crescentes glomerulares (proliferação extracapilar na cápsula de Bowman) é o achado histológico definidor da glomerulonefrite rapidamente progressiva, independentemente da etiologia de base (pauci-imune/ANCA, anti-MBG, ou imunocomplexos) — quanto maior a porcentagem de glomérulos com crescentes, pior o prognóstico renal.",
+    "banca": "BASES Glomerulopatias — banco de questões EMR (Eu Médico Residente) (AMRIGS 2024 R3 CM)",
+    "ano": 2024,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Glomerulopatias)",
+    "revisado": true
+  },
+  {
+    "id": "q2438",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 30 anos, hematúria macroscópica após infecção respiratória superior, sem trauma ou esforço extenuante. Urina com proteinúria leve e cilindros hemáticos. Biópsia renal com deposição mesangial de IgA. Qual o diagnóstico mais provável?",
+    "alternativas": [
+      "Glomerulonefrite membranoproliferativa.",
+      "Nefropatia por IgA.",
+      "Glomerulonefrite pós-estreptocócica.",
+      "Glomeruloesclerose segmentar e focal.",
+      "Síndrome nefrótica."
+    ],
+    "correta": 1,
+    "comentario": "A deposição mesangial de IgA à biópsia, associada à hematúria sincrônica à infecção respiratória (não com o intervalo de latência típico da GNPE), confirma o diagnóstico de nefropatia por IgA — a glomerulonefrite primária mais comum globalmente.",
+    "banca": "BASES Glomerulopatias — banco de questões EMR (Eu Médico Residente) (SES-PE 2024.2 R3 CM)",
+    "ano": 2024,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Glomerulopatias)",
+    "revisado": true
+  },
+  {
+    "id": "q2439",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Menino de 4 anos, previamente hígido, com IVAS há 5 dias e, uma semana depois, edema generalizado. Ativo, eupneico, edema periorbitário, edema de parede abdominal e piparote positivo. Urina I: pH 7,0, densidade 1020, proteinúria +4/+4, hemácias raras. Colesterol 550mg/dL, albumina 2,1g/dL, relação proteína/creatinina 0,8, C3 70mg/dL, creatinina 0,3mg/dL. Qual a CONDUTA INICIAL desta criança?",
+    "alternativas": [
+      "Iniciar amoxicilina.",
+      "Iniciar furosemida.",
+      "Iniciar metilprednisolona.",
+      "Indicar biópsia renal.",
+      "Iniciar prednisona oral."
+    ],
+    "correta": 4,
+    "comentario": "O quadro típico de síndrome nefrótica idiopática da infância (edema, proteinúria maciça, hipoalbuminemia, hipercolesterolemia, sem hematúria significativa, complemento normal) tem na corticoterapia oral (prednisona) a conduta inicial padrão — sem necessidade de biópsia renal prévia em apresentação clássica e típica dessa faixa etária.",
+    "banca": "BASES Glomerulopatias — banco de questões EMR (Eu Médico Residente) (SES-PB 2023)",
+    "ano": 2023,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Glomerulopatias)",
+    "revisado": true
+  },
+  {
+    "id": "q2440",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 45 anos, negro, inchaço há 2 meses. Anasarca, PA 130x85mmHg. Hb 14,5, creatinina 1,4, albumina 2,5, proteinúria 24h de 4,3g, clearance de creatinina 75mL/min. Sumário de urina: hematúria 30.000, dismorfismo eritrocitário presente. A síndrome glomerular e o histopatológico mais provável são:",
+    "alternativas": [
+      "Síndrome nefrítica e GN pós-infecciosa.",
+      "Síndrome nefrótica e doença de lesão mínima.",
+      "Síndrome nefrítica e nefropatia por IgA.",
+      "Síndrome nefrótica e GESF.",
+      "Síndrome nefrítica e doença por lesão mínima."
+    ],
+    "correta": 3,
+    "comentario": "Proteinúria maciça (>3,5g/24h) com hipoalbuminemia caracteriza síndrome nefrótica; em homem afrodescendente de meia-idade com essa apresentação (mesmo com algum grau de hematúria concomitante — achado possível na GESF), a glomeruloesclerose segmentar e focal é a etiologia primária mais provável, sendo mais prevalente e mais agressiva nessa população.",
+    "banca": "BASES Glomerulopatias — banco de questões EMR (Eu Médico Residente) (FAMENE 2025)",
+    "ano": 2025,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Glomerulopatias)",
+    "revisado": true
+  },
+  {
+    "id": "q2441",
+    "temaId": "sindrome-nefrotica-nefritica",
+    "tema": "Síndrome Nefrótica e Síndrome Nefrítica",
+    "enunciado": "Homem, 64 anos, edema progressivo há 3 meses (MMII progredindo para todo o corpo), ganho de peso de 8kg. HAS de longa data em uso de hidroclorotiazida e enalapril. PA 158/102mmHg, edema 2+/4+ periorbital e 3+/4+ em MMII/sacral/parede abdominal. Colesterol total 450, triglicerídeos 380, complemento normal. Urina I: proteínas 3+, índice proteína/creatinina 8,4. A hipótese diagnóstica mais provável e a melhor proposta de investigação são, respectivamente:",
+    "alternativas": [
+      "Doença por imunocomplexos circulantes; dosar autoanticorpos, sorologias virais, sífilis, parasitológico de fezes, ASLO e aguardar resultados com tratamento sintomático.",
+      "Glomerulonefrite difusa aguda; solicitar ASLO, cultura de urina, sorologias virais, parasitológico de fezes, ecocardiograma, radiografia de tórax e biópsia renal.",
+      "Doença por imunocomplexos circulantes; solicitar radiografia de tórax, sorologias virais, eletroforese de proteínas séricas e urinárias, autoanticorpos e aguardar resultados com tratamento sintomático.",
+      "Glomerulopatia membranosa; solicitar sorologias para hepatites e HIV, endoscopia digestiva alta, colonoscopia, eletroforese de proteínas séricas e urinárias, dosagem do anticorpo anti-PLA2R e biópsia renal."
+    ],
+    "correta": 3,
+    "comentario": "Síndrome nefrótica maciça em homem idoso, com complemento normal, é o perfil clássico de nefropatia membranosa — a investigação deve incluir rastreio de causas secundárias (neoplasias ocultas via endoscopia/colonoscopia, hepatites, HIV), eletroforese de proteínas (excluir mieloma/amiloidose), dosagem de anti-PLA2R (marcador não invasivo da forma primária) e biópsia renal para confirmação histológica definitiva.",
+    "banca": "BASES Glomerulopatias — banco de questões EMR (Eu Médico Residente) (UNESP 2023 R3 CM)",
+    "ano": 2023,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Glomerulopatias)",
     "revisado": true
   }
 ]
