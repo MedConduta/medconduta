@@ -407,45 +407,85 @@
     "temaId": "asma-exacerbada",
     "area": "residencia",
     "tipo": "tratamento",
-    "titulo": "Asma exacerbada — Fluxo de manejo na emergência",
-    "revisado": false,
+    "titulo": "Asma exacerbada — algoritmo de manejo na emergência (GINA 2026)",
+    "revisado": true,
     "fonte": "Global Initiative for Asthma (GINA) 2026",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Crise asmática aguda"
+        "texto": "Crise asmática aguda — avaliar gravidade (fala, FR, musculatura acessória, ausculta, SatO2, PFE se possível)"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Tórax silencioso, confusão mental, bradicardia ou PaCO2 normal/elevada são sinais de falência respiratória iminente — NÃO indicam melhora"
       },
       {
         "tipo": "action",
-        "texto": "Beta-2 agonista de curta ação inalatório + O2 se SatO2 < 93%"
+        "texto": "Oxigênio suplementar se SatO2 < 93-94% (meta 93-95% em adultos, 94-98% em crianças)"
       },
       {
         "tipo": "action",
-        "texto": "Corticoide sistêmico precoce (via oral se tolerada)"
+        "texto": "Broncodilatador de resgate: budesonida-formoterol dose baixa (estratégia AIR, preferencial GINA 2026) OU SABA (salbutamol) em doses repetidas a cada 20min na 1ª hora"
+      },
+      {
+        "tipo": "action",
+        "texto": "Corticoide sistêmico precoce (prednisona VO 40-50mg/dia por 5-7 dias, ou equivalente EV se via oral não tolerada) em toda crise moderada/grave ou que não responde prontamente ao broncodilatador inicial — efeito leva horas, por isso não deve ser postergado"
       },
       {
         "tipo": "decisao",
-        "texto": "Melhora após 1ª hora de tratamento?",
+        "texto": "Melhora clínica após a 1ª hora de tratamento?",
         "ramos": [
           {
-            "label": "Sim",
+            "label": "Sim — boa resposta",
             "fluxo": [
               {
+                "tipo": "action",
+                "texto": "Observar período adicional; reavaliar critérios de alta (sintomas controlados, SatO2 estável, PFE >70% se disponível)"
+              },
+              {
                 "tipo": "end",
-                "texto": "Manter tratamento, observar e considerar alta com plano de ação"
+                "texto": "Alta com plano de ação por escrito, ajuste da manutenção e retorno agendado"
               }
             ]
           },
           {
-            "label": "Não",
+            "label": "Não — resposta inadequada ou crise grave desde o início",
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "Associar brometo de ipratrópio + repetir broncodilatador"
+                "texto": "Associar brometo de ipratrópio inalatório ao broncodilatador; manter corticoide sistêmico"
+              },
+              {
+                "tipo": "action",
+                "texto": "Considerar sulfato de magnésio endovenoso (crises graves refratárias ao tratamento inicial)"
               },
               {
                 "tipo": "alerta",
-                "texto": "Tórax silencioso, confusão ou exaustão → considerar UTI e via aérea avançada"
+                "texto": "Antibiótico NÃO é indicado rotineiramente — a maioria das exacerbações é viral"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Sinais de falência respiratória iminente (tórax silencioso, confusão, exaustão, PaCO2 normal/elevada)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "UTI — considerar ventilação não invasiva ou intubação orotraqueal; manejo de via aérea avançada"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, mas sem melhora adequada",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Internação hospitalar para tratamento continuado e monitorização"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
