@@ -1467,28 +1467,60 @@
     "temaId": "cetoacidose-diabetica",
     "area": "residencia",
     "tipo": "tratamento",
-    "titulo": "Cetoacidose diabética — Fluxo de tratamento",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Diabetes (SBD); ADA Standards of Care in Diabetes-2026",
+    "titulo": "Cetoacidose diabética — sequência de tratamento (hidratação → potássio → insulina)",
+    "revisado": true,
+    "fonte": "Consenso ADA/EASD/JBDS/AACE/DTS 2024 sobre crises hiperglicêmicas; Sociedade Brasileira de Diabetes (SBD)",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Diagnóstico de cetoacidose diabética confirmado"
+        "texto": "Diagnóstico de cetoacidose diabética confirmado (hiperglicemia + cetonemia + acidose metabólica)"
       },
       {
         "tipo": "action",
-        "texto": "Iniciar hidratação venosa vigorosa"
+        "texto": "Classificar gravidade (leve/moderada/grave) pelo pH, bicarbonato, beta-hidroxibutirato e estado mental — define enfermaria/observação vs. UTI"
+      },
+      {
+        "tipo": "action",
+        "texto": "Iniciar hidratação venosa vigorosa com solução salina isotônica — etapa inicial mais importante, antes mesmo da insulina"
       },
       {
         "tipo": "decisao",
-        "texto": "Potássio sérico baixo (<3,3 mEq/L)?",
+        "texto": "Potássio sérico < 3,3mEq/L?",
         "ramos": [
           {
             "label": "Sim",
             "fluxo": [
               {
                 "tipo": "alerta",
-                "texto": "Corrigir potássio antes de iniciar insulina (risco de arritmia)"
+                "texto": "NUNCA iniciar insulina com K < 3,3mEq/L — repor potássio primeiro, pelo risco de arritmia fatal quando a insulina desloca K para o intracelular"
+              }
+            ]
+          },
+          {
+            "label": "Não (K ≥ 3,3mEq/L)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Iniciar insulina regular em infusão contínua (bomba EV) — nunca em bolus isolado inicial; na prática, geralmente já na 2ª hora, após a fase inicial de expansão volêmica"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Repor potássio de forma precoce e agressiva assim que a insulina for iniciada (a correção da acidose e a insulina sempre reduzem ainda mais o K sérico)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Glicemia caiu para a faixa de 200-250mg/dL?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Acrescentar glicose a 5% ao soro, SEM suspender a insulina — permite manter a infusão até resolução completa da cetose, sem risco de hipoglicemia"
               }
             ]
           },
@@ -1497,15 +1529,67 @@
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "Iniciar insulina regular em infusão contínua"
+                "texto": "Manter hidratação e insulina, com monitorização horária de glicemia e eletrólitos"
               }
             ]
           }
         ]
       },
       {
-        "tipo": "end",
-        "texto": "Monitorização horária de glicemia e eletrólitos até resolução da acidose"
+        "tipo": "decisao",
+        "texto": "pH < 6,9 (acidose extremamente grave)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar bicarbonato — reservado a essa faixa extrema, sem benefício comprovado em acidoses menos graves"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Não usar bicarbonato de rotina"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Investigar e tratar o fator precipitante (infecção, má adesão à insulina, IAM, uso de iSGLT2, entre outros)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Critérios de resolução atingidos (glicemia < 200mg/dL + 2 de: pH ≥ 7,3, bicarbonato ≥ 15mEq/L, ânion gap normal)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Iniciar insulina subcutânea com sobreposição de 1-2h antes de suspender a infusão EV — suspender a bomba antes disso arrisca recorrência da cetoacidose"
+              },
+              {
+                "tipo": "end",
+                "texto": "Transição concluída para esquema subcutâneo habitual"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter tratamento e reavaliar; lembrar que acidose hiperclorêmica sem ânion gap (bicarbonato ainda baixo, cloro alto) pode persistir mesmo com cetose já resolvida — não indica CAD ativa"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
