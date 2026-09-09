@@ -5910,5 +5910,170 @@
         "texto": "TEP não provocado ou fator de risco persistente (câncer ativo): anticoagulação estendida por tempo indeterminado com reavaliação periódica do risco hemorrágico — dose reduzida de DOAC (rivaroxabana 10mg/dia ou apixabana 2,5mg 12/12h) na manutenção prolongada"
       }
     ]
+  },
+  {
+    "id": "flow-derrame-pleural-diagnostico",
+    "temaId": "derrame-pleural",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Derrame pleural — algoritmo diagnóstico (critérios de Light)",
+    "revisado": true,
+    "fonte": "British Thoracic Society (BTS) Guideline for Pleural Disease; critérios de Light",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Derrame pleural identificado (exame físico + confirmação por USG de tórax ou radiografia)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Toracocentese diagnóstica — aplicar critérios de Light no líquido pleural"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Preenche pelo menos 1 critério de Light (proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico)?",
+        "ramos": [
+          {
+            "label": "Não — nenhum critério",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Transudato — investigar/tratar a causa sistêmica de base (IC, cirrose, síndrome nefrótica); drenagem raramente necessária"
+              }
+            ]
+          },
+          {
+            "label": "Sim — exsudato pelos critérios de Light",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Cardiopata em uso de diurético pode ter 'pseudoexsudato' — se suspeita, calcular gradiente albumina sérica − albumina pleural: >1,2g/dL favorece transudato verdadeiro apesar do Light positivo"
+              },
+              {
+                "tipo": "action",
+                "texto": "Investigar etiologia do exsudato: celularidade, glicose, pH, ADA, triglicerídeos, citologia oncótica, cultura"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Padrão do líquido?",
+                "ramos": [
+                  {
+                    "label": "Linfocitário, glicose baixa, ADA elevado",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Tuberculose pleural — considerar biópsia pleural se líquido inconclusivo"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Neutrofílico, contexto infeccioso pulmonar",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Derrame parapneumônico — avaliar critérios de complicação (pH, glicose, aspecto) para decidir sobre drenagem"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Leitoso, triglicerídeos >110mg/dL",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Quilotórax — investigar linfoma, trauma ou lesão do ducto torácico"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Citologia/biópsia positiva para malignidade",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Derrame neoplásico — avaliar drenagem + pleurodese ou cateter de longa permanência"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Investigação inicial negativa, exsudato inexplicado",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar TEP com angioTC — causa subdiagnosticada de exsudato 'idiopático'"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-derrame-pleural-parapneumonico-tratamento",
+    "temaId": "derrame-pleural",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Derrame parapneumônico — decisão de drenagem e fibrinolítico intrapleural",
+    "revisado": true,
+    "fonte": "British Thoracic Society (BTS) Guideline for Pleural Disease 2023",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Derrame parapneumônico confirmado (contexto de pneumonia + exsudato neutrofílico)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Analisar pH, glicose e aspecto do líquido pleural"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "pH <7,2, glicose muito baixa, ou aspecto purulento/cultura positiva (empiema)?",
+        "ramos": [
+          {
+            "label": "Não — derrame parapneumônico não complicado",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Antibioticoterapia isolada, sem necessidade de drenagem — reavaliar evolução clínica e radiológica"
+              }
+            ]
+          },
+          {
+            "label": "Sim — derrame complicado ou empiema",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Drenagem torácica imediata associada ao antibiótico — tratamento só com antibiótico tem alto risco de falha e encarceramento pulmonar"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Drenagem simples falha em resolver (derrame loculado, sem organização estabelecida)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Fibrinolítico intrapleural: alteplase (tPA) 10mg + DNase 5mg, por 3 dias (BTS 2023) — reduz necessidade de cirurgia. Estreptoquinase intrapleural NÃO é mais recomendada"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — resolução adequada",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter drenagem + antibiótico até resolução clínica e radiológica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
