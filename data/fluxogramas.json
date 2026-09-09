@@ -4164,5 +4164,123 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-arritmias-atendimento",
+    "temaId": "arritmias-cardiacas-gerais",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "Taquiarritmia e bradiarritmia — Algoritmo ACLS de estabilidade",
+    "revisado": true,
+    "fonte": "ACLS Guidelines (American Heart Association, atualização 2020/2025); Diretrizes de Arritmias Cardíacas SBC",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com arritmia (bradi ou taquiarritmia) identificada no ECG/monitor"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há instabilidade hemodinâmica (hipotensão, rebaixamento de consciência, dor torácica isquêmica, sinais de choque/congestão aguda)?",
+        "ramos": [
+          {
+            "label": "Sim — instável",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Bradiarritmia ou taquiarritmia?",
+                "ramos": [
+                  {
+                    "label": "Bradiarritmia",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Atropina 0,5mg IV (repetível até 3mg)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Sem resposta: marca-passo transcutâneo/transvenoso imediato"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Taquiarritmia com pulso",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cardioversão elétrica SINCRONIZADA imediata"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "FV / TV sem pulso",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Equivale a PCR — protocolo de RCP"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Desfibrilação NÃO sincronizada + epinefrina + amiodarona/lidocaína conforme algoritmo de PCR"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não — estável",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "QRS estreito ou largo (na taquiarritmia) / tipo de bloqueio (na bradiarritmia)?",
+                "ramos": [
+                  {
+                    "label": "TSV por reentrada nodal (QRS estreito, regular)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Manobra vagal"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Sem resposta: adenosina 6mg IV em bolus rápido (repetir 12mg se necessário)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "QRS largo (assumir origem ventricular até prova em contrário)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Antiarrítmico específico (amiodarona/procainamida) conforme diagnóstico — avaliação especializada"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Bradiarritmia assintomática (ex.: Mobitz I, BAV 1º grau)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Observação clínica — sem intervenção imediata"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Bradiarritmia de alto risco (Mobitz II, BAVT)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Indicação de marca-passo definitivo, mesmo assintomático"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
