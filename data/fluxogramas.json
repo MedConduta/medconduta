@@ -6559,5 +6559,152 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-hiponatremia-diagnostico",
+    "temaId": "disturbios-sodio",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Hiponatremia — fluxo diagnóstico etiológico",
+    "revisado": true,
+    "fonte": "European/US Hyponatremia Guidelines; prática nefrológica padrão",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Sódio sérico <135mEq/L"
+      },
+      {
+        "tipo": "action",
+        "texto": "Verificar osmolaridade sérica"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Osmolaridade sérica baixa (hiponatremia hipotônica verdadeira)?",
+        "ramos": [
+          {
+            "label": "Não — osmolaridade normal/alta",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Pseudo-hiponatremia (hiperlipidemia/hiperproteinemia grave) ou hiponatremia hiperosmolar (hiperglicemia grave, diluição por efeito osmótico da glicose) — não representa excesso real de água livre"
+              }
+            ]
+          },
+          {
+            "label": "Sim — hipotônica verdadeira",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Avaliar estado volêmico clínico (turgor, mucosas, PA postural, edema, estase jugular)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Estado volêmico?",
+                "ramos": [
+                  {
+                    "label": "Hipovolêmica",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar perdas renais (Na urinário >20) ou extrarrenais (Na urinário <20): diuréticos, nefropatia perdedora de sal, vômitos, diarreia, terceiro espaço"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Euvolêmica",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar SIADH (diagnóstico de exclusão, Na urinário >40), hipotireoidismo, insuficiência adrenal, polidipsia primária"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hipervolêmica",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar insuficiência cardíaca, cirrose, síndrome nefrótica, DRC avançada — volume circulante EFETIVO reduzido apesar do volume total aumentado"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hiponatremia-tratamento",
+    "temaId": "disturbios-sodio",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Hiponatremia — estratégia de correção e prevenção de mielinólise",
+    "revisado": true,
+    "fonte": "European/US Hyponatremia Guidelines; técnica do clamp com desmopressina",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Hiponatremia hipotônica confirmada, etiologia em investigação"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sintomas graves agudos (convulsão, rebaixamento importante do sensório, herniação iminente)?",
+        "ramos": [
+          {
+            "label": "Sim — emergência",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Bolus de salina hipertônica 3% já na 1ª hora, com dosagens seriadas de sódio em intervalos curtos"
+              },
+              {
+                "tipo": "action",
+                "texto": "Desacelerar assim que os sintomas melhorarem ou a meta de correção inicial for atingida"
+              }
+            ]
+          },
+          {
+            "label": "Não — assintomática ou oligossintomática (mesmo com valor absoluto baixo, especialmente se crônica)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Correção cautelosa e gradual — limite de 8-10mEq/L nas primeiras 24 horas"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente de alto risco de aquarese excessiva (ou já detectada correção mais rápida que a pretendida)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "'Clamp' com desmopressina (DDAVP), proativo ou reativo, para controlar a velocidade de subida do sódio; se o limite seguro já foi ultrapassado, associar reposição de água livre (D5W) para 'relowering'"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter monitorização seriada do sódio até estabilização na meta segura"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Correção além do limite seguro (>8-10mEq/L/24h) tem risco de síndrome de desmielinização osmótica (mielinólise pontina), potencialmente irreversível"
+      }
+    ]
   }
 ]
