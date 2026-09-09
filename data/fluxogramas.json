@@ -5488,5 +5488,156 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-disturbios-calcio-hipercalcemia-diagnostico",
+    "temaId": "disturbios-calcio-paratireoide",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Hipercalcemia — algoritmo diagnóstico diferencial pelo PTH",
+    "revisado": true,
+    "fonte": "5º International Workshop on Primary Hyperparathyroidism (2022); diretrizes de Endocrinologia (SBEM)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Cálcio sérico total (corrigido para albumina) ou cálcio iônico confirmadamente elevado"
+      },
+      {
+        "tipo": "action",
+        "texto": "Dosar PTH sérico"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "PTH elevado ou inapropriadamente normal (não suprimido)?",
+        "ramos": [
+          {
+            "label": "Sim — PTH-dependente",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Avaliar fósforo sérico (tipicamente baixo/limite inferior) e função renal"
+              },
+              {
+                "tipo": "end",
+                "texto": "Hiperparatireoidismo primário (adenoma em ~80-85%) — localizar com cintilografia com sestamibi ou USG cervical antes da cirurgia"
+              }
+            ]
+          },
+          {
+            "label": "Não — PTH suprimido (PTH-independente)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Hipercalcemia da malignidade NÃO cursa com PTH elevado — pegadinha clássica de prova"
+              },
+              {
+                "tipo": "action",
+                "texto": "Investigar neoplasia (PTH-rP, se disponível) e/ou dosar 25-OH-vitamina D e 1,25-(OH)2-vitamina D (calcitriol)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Qual padrão de vitamina D e fósforo?",
+                "ramos": [
+                  {
+                    "label": "Calcitriol elevado, contexto de doença granulomatosa/linfoma",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Hipercalcemia por doença granulomatosa (sarcoidose, tuberculose) ou linfoma — conversão extrarrenal de 25-OH-vit D por macrófagos ativados"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "25-OH-vitamina D muito elevada, fósforo ALTO",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Intoxicação por vitamina D — hiperfosfatemia associada diferencia do hiperparatireoidismo primário"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Uso de tiazídico ou tumor sólido/metástase óssea sem os achados acima",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Hipercalcemia induzida por tiazídico (suspender) ou por PTH-rP/metástase osteolítica de tumor sólido"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-disturbios-calcio-crise-atendimento",
+    "temaId": "disturbios-calcio-paratireoide",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "Hipercalcemia grave aguda e hipocalcemia pós-tireoidectomia — condutas de emergência",
+    "revisado": true,
+    "fonte": "Diretrizes de Endocrinologia (SBEM); diretriz europeia de hipoparatireoidismo 2025",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Hipercalcemia grave (>14mg/dL) ou sintomática — confusão mental, poliúria, desidratação, arritmia"
+      },
+      {
+        "tipo": "action",
+        "texto": "1º passo SEMPRE: hidratação salina intravenosa vigorosa para corrigir a depleção de volume"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Furosemida NUNCA como primeira medida isolada — só após volemia adequada, sob risco de agravar a depleção de volume e piorar a hipercalcemia. Tiazídicos são CONTRAINDICADOS"
+      },
+      {
+        "tipo": "action",
+        "texto": "Após hidratação: iniciar bisfosfonato ou denosumabe (efeito mais duradouro, início em 2-4 dias) — associar calcitonina se necessário efeito rápido nas primeiras 24-48h (ação transitória, por taquifilaxia)"
+      },
+      {
+        "tipo": "end",
+        "texto": "Tratar a causa de base (paratireoidectomia se hiperpara primário sintomático/com critério; tratar neoplasia se malignidade; corticoide se doença granulomatosa)"
+      },
+      {
+        "tipo": "start",
+        "texto": "Paralelamente — paciente em pós-operatório de tireoidectomia com parestesias periorais, cãibras, sinal de Chvostek ou Trousseau positivo"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Hipocalcemia sintomática pós-tireoidectomia é emergência — risco de tetania, laringoespasmo e convulsões"
+      },
+      {
+        "tipo": "action",
+        "texto": "Repor cálcio prontamente (gluconato de cálcio IV se sintomas graves/tetania; cálcio oral + calcitriol se leve); checar magnésio sérico (hipomagnesemia perpetua a hipocalcemia)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Fósforo sérico: baixo/normal ou alto?",
+        "ramos": [
+          {
+            "label": "Fósforo BAIXO/normal, história de hiperpara primário grave prévio",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Síndrome da fome óssea — reposição vigorosa de cálcio e magnésio, tende a ser autolimitada em dias a semanas"
+              }
+            ]
+          },
+          {
+            "label": "Fósforo ALTO",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Hipoparatireoidismo pós-cirúrgico verdadeiro — reavaliar em 6-12 meses; se persistente, é permanente e exige reposição crônica de cálcio/calcitriol (meta: cálcio no limite INFERIOR da normalidade)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
