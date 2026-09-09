@@ -5210,5 +5210,175 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-disturbios-adrenais-cushing-diagnostico",
+    "temaId": "disturbios-adrenais",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Síndrome de Cushing — algoritmo diagnóstico (rastreio → confirmação → localização)",
+    "revisado": true,
+    "fonte": "Endocrine Society Clinical Practice Guideline — Cushing's Syndrome; Sociedade Brasileira de Endocrinologia e Metabologia (SBEM)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de hipercortisolismo (obesidade central, fácies em lua cheia, estrias violáceas largas, fraqueza muscular proximal, HAS/hiperglicemia de difícil controle)"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Antes de investigar causa endógena, sempre excluir uso de corticoide exógeno (oral, tópico, inalatório, injetável) — causa mais comum de síndrome de Cushing"
+      },
+      {
+        "tipo": "action",
+        "texto": "Rastreio com 1 dos 3 testes: cortisol salivar noturno, cortisol livre urinário de 24h, ou teste de supressão com dexametasona 1mg (repetir/combinar se resultado limítrofe)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Rastreio positivo (hipercortisolismo confirmado)?",
+        "ramos": [
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Síndrome de Cushing pouco provável — considerar diagnósticos diferenciais (pseudo-Cushing por obesidade, depressão, álcool)"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Dosar ACTH sérico"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "ACTH suprimido (< 5-10pg/mL) ou detectável/elevado?",
+                "ramos": [
+                  {
+                    "label": "ACTH suprimido — ACTH-independente",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Investigar causa ADRENAL: TC/RM de adrenal"
+                      },
+                      {
+                        "tipo": "alerta",
+                        "texto": "Hiperpigmentação e hipercalemia NÃO ocorrem no Cushing ACTH-independente (ACTH suprimido, sem excesso de POMC/aldosterona associada)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Adenoma ou carcinoma adrenal → adrenalectomia"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "ACTH detectável/elevado — ACTH-dependente",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Solicitar RM de hipófise"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "RM de hipófise evidencia adenoma compatível?",
+                        "ramos": [
+                          {
+                            "label": "Sim, com achados típicos",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Doença de Cushing (adenoma hipofisário) → cirurgia transesfenoidal"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não, ou achado duvidoso/incompatível com o quadro",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Suspeitar produção ectópica de ACTH (tumor neuroendócrino, carcinoma de pequenas células de pulmão, entre outros); considerar cateterismo de seio petroso inferior para confirmar origem hipofisária vs. ectópica"
+                              },
+                              {
+                                "tipo": "end",
+                                "texto": "Investigar e ressecar a fonte ectópica quando localizável"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-disturbios-adrenais-crise-atendimento",
+    "temaId": "disturbios-adrenais",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "Crise adrenal e insuficiência adrenal — reconhecimento e conduta",
+    "revisado": true,
+    "fonte": "Endocrine Society Clinical Practice Guideline — Adrenal Insufficiency; Sociedade Brasileira de Endocrinologia e Metabologia (SBEM)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com hipotensão refratária, náuseas/vômitos, dor abdominal, hiponatremia, e/ou hipercalemia — especialmente se insuficiência adrenal conhecida, uso crônico de corticoide recentemente suspenso, ou estresse agudo (infecção/cirurgia/trauma)"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Suspeita de crise adrenal é EMERGÊNCIA — tratar imediatamente, sem aguardar confirmação laboratorial completa"
+      },
+      {
+        "tipo": "action",
+        "texto": "Coletar cortisol basal (se possível, sem atrasar o tratamento) e iniciar hidrocortisona EV em dose de estresse (ex.: 100mg em bolus, seguida de infusão ou doses repetidas) + reposição volêmica agressiva com solução salina + correção de hipoglicemia se presente"
+      },
+      {
+        "tipo": "action",
+        "texto": "Após estabilização, confirmar o diagnóstico etiológico: teste de estímulo com ACTH sintético (cortrosina) e dosagem de ACTH sérico"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "ACTH sérico elevado ou baixo/inapropriadamente normal?",
+        "ramos": [
+          {
+            "label": "ACTH elevado",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Insuficiência adrenal PRIMÁRIA (doença de Addison) — investigar etiologia (adrenalite autoimune é a mais comum)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Manter reposição de glicocorticoide (hidrocortisona) E mineralocorticoide (fludrocortisona)"
+              }
+            ]
+          },
+          {
+            "label": "ACTH baixo/inapropriadamente normal",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Insuficiência adrenal SECUNDÁRIA — investigar causa (suspensão abrupta de corticoide crônico é a mais comum; considerar também doença hipofisária)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Reposição de glicocorticoide (hidrocortisona) — mineralocorticoide geralmente DISPENSÁVEL, pois a aldosterona permanece preservada (regulada pelo sistema renina-angiotensina, não pelo ACTH)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Orientar paciente e família sobre a \"regra dos dias de doença\": dobrar/triplicar a dose de glicocorticoide oral em situações de estresse fisiológico (febre, infecção, cirurgia) para prevenir nova crise"
+      }
+    ]
   }
 ]
