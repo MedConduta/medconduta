@@ -106,9 +106,9 @@
     "temaId": "dm2",
     "area": "residencia",
     "tipo": "tratamento",
-    "titulo": "DM2 — Fluxo de tratamento farmacológico",
-    "revisado": false,
-    "fonte": "Diretrizes da Sociedade Brasileira de Diabetes (SBD) 2023-2024; ADA Standards of Care in Diabetes-2026",
+    "titulo": "DM2 — Escolha do tratamento farmacológico inicial (SBD 2025-2026)",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Diabetes (SBD) — Diretriz 2025-2026; ADA Standards of Care in Diabetes 2026",
     "fluxo": [
       {
         "tipo": "start",
@@ -116,18 +116,18 @@
       },
       {
         "tipo": "action",
-        "texto": "Iniciar metformina + mudança de estilo de vida"
+        "texto": "Iniciar mudança de estilo de vida (dieta, atividade física, perda de peso) em todos os pacientes"
       },
       {
         "tipo": "decisao",
-        "texto": "Doença cardiovascular, IC ou DRC presentes?",
+        "texto": "Doença aterosclerótica estabelecida, insuficiência cardíaca ou DRC?",
         "ramos": [
           {
             "label": "Sim",
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "Associar iSGLT2 e/ou agonista de GLP-1 pelo benefício cardiorrenal, independente da HbA1c"
+                "texto": "iSGLT2 (dapagliflozina/empagliflozina) + metformina desde o início, independente da HbA1c — benefício cardiorrenal não depende do controle glicêmico"
               }
             ]
           },
@@ -135,16 +135,69 @@
             "label": "Não",
             "fluxo": [
               {
-                "tipo": "action",
-                "texto": "Reavaliar HbA1c em 3 meses; se acima da meta, intensificar terapia"
+                "tipo": "decisao",
+                "texto": "Obesidade (IMC ≥ 30kg/m²)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Agonista de GLP-1 (semaglutida/liraglutida) ou tirzepatida desde o início, independente do risco cardiorrenal e da HbA1c"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Hiperglicemia grave sintomática (HbA1c muito elevada, geralmente > 10%, com sintomas floridos)?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Iniciar insulina + metformina desde o primeiro atendimento, mesmo sem confirmação laboratorial repetida"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não — HbA1c < 7,5%",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Monoterapia, com preferência por iSGLT2"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não — HbA1c ≥ 7,5%",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "iSGLT2 + metformina desde o início"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
         ]
       },
       {
+        "tipo": "action",
+        "texto": "Reavaliar HbA1c em 3 meses; se acima da meta individualizada (geralmente < 7%), intensificar terapia"
+      },
+      {
         "tipo": "end",
-        "texto": "Reavaliação e rastreio anual de complicações"
+        "texto": "Rastreio anual de complicações (pé diabético, retinopatia, nefropatia, doença cardiovascular)"
       }
     ]
   },
@@ -4856,6 +4909,78 @@
               {
                 "tipo": "end",
                 "texto": "Manter estatina e monitorar perfil lipídico e transaminases conforme protocolo"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-dm2-diferencial-subtipo",
+    "temaId": "dm2",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Diabetes mellitus — diferenciação entre DM1, DM2, LADA e MODY",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Diabetes (SBD); ADA Standards of Care in Diabetes 2026",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com diagnóstico laboratorial de diabetes mellitus (glicemia de jejum ≥126, TOTG-2h ≥200, HbA1c ≥6,5% ou glicemia aleatória ≥200 com sintomas)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Perfil clínico sugestivo de DM2 típico (adulto, sobrepeso/obeso, início insidioso, acantose nigricans)?",
+        "ramos": [
+          {
+            "label": "Sim, sem sinais atípicos",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "DM2 — sem necessidade de investigação adicional de rotina"
+              }
+            ]
+          },
+          {
+            "label": "Não — perfil atípico (magro, jovem, início agudo, forte história familiar)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Solicitar autoanticorpos (anti-GAD, anti-IA2, anti-insulina) e peptídeo C"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Autoanticorpos positivos?",
+                "ramos": [
+                  {
+                    "label": "Sim, criança/adolescente com início agudo e cetoacidose",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "DM1 — deficiência absoluta de insulina, autoimune"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sim, adulto jovem (20-50 anos), início insidioso, sem necessidade imediata de insulina",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "LADA (\"DM1 do adulto\") — progressão lenta para insulinodependência em meses a poucos anos"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Negativos, paciente magro, < 25 anos, forte história familiar autossômica dominante, peptídeo C preservado",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Suspeitar MODY — considerar teste genético (mutações como HNF1A, GCK)"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
