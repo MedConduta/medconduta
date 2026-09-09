@@ -581,7 +581,7 @@
     "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
     "banca": "Exemplo — MedConduta",
     "ano": 2025,
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Nefrologia (SBN); KDIGO",
     "enunciado": "Paciente com hipercalemia grave apresenta ondas T apiculadas e alargamento do QRS ao ECG. Qual a primeira conduta terapêutica?",
     "alternativas": [
@@ -42987,6 +42987,800 @@
     "banca": "BASES Doença Renal Crônica e IRA — banco de questões EMR (Eu Médico Residente) (SES-PE 2023.2 R3 CIR)",
     "ano": 2023,
     "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Doença Renal Crônica e IRA)",
+    "revisado": true
+  },
+  {
+    "id": "q2343",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Você é chamado para avaliar exames de um paciente com hipercalemia aguda. Foi solicitado um eletrocardiograma. Qual alteração eletrocardiográfica pode estar associada à hipercalemia?",
+    "alternativas": [
+      "Redução do intervalo PR.",
+      "Alargamento do complexo QRS.",
+      "Achatamento da onda T.",
+      "Onda Q proeminente."
+    ],
+    "correta": 1,
+    "comentario": "O alargamento do complexo QRS é um achado progressivo da hipercalemia (junto com onda T apiculada e achatamento/desaparecimento da onda P), refletindo lentificação da condução intraventricular — não a redução do PR nem o achatamento da onda T, que são achados de hipocalemia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2344",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "No controle do paciente cirúrgico no pós-operatório, um cuidado importante são os distúrbios hidroeletrolíticos potencialmente fatais. Assinale a alternativa CORRETA:",
+    "alternativas": [
+      "A hiperpotassemia pode causar fraqueza muscular, e a insuficiência respiratória é comum.",
+      "Lesão tissular, hipoglicemia, acidose e aumento da ação da aldosterona são causas de hiperpotassemia.",
+      "Ondas T em pico levam a pensar na possibilidade de hipocalemia.",
+      "Pode-se tratar a hipercalemia com solução polarizante (insulina com glicose), bicarbonato de sódio ou agonista beta-adrenérgico."
+    ],
+    "correta": 3,
+    "comentario": "As três medidas de redistribuição transcelular do potássio para o meio intracelular são: solução polarizante (glicoinsulinoterapia), bicarbonato de sódio (se acidose associada) e beta-agonista adrenérgico — todas temporárias, sem remover potássio do organismo. A insuficiência respiratória por fraqueza muscular é rara na hiperpotassemia (mais associada à hipocalemia grave); a AUMENTADA ação da aldosterona reduz, e não aumenta, o potássio (retém sódio, excreta potássio); e ondas T apiculadas indicam hipercalemia, não hipocalemia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2345",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Homem, 64 anos, DRC estágio 3b, miocardiopatia isquêmica, admitido com fraqueza nas pernas, palpitações e síncope há 2 horas. Em uso de losartana, carvedilol e AAS; espironolactona foi associada há 15 dias pelo antecedente de miocardiopatia. PA 110x70mmHg, euvolêmico. Realizado ECG na admissão. Assinale a alternativa correta.",
+    "alternativas": [
+      "A principal medida é encaminhar o paciente para trombólise ou angioplastia primária.",
+      "O uso de diurético de alça é contraindicado pelo risco de agravamento do quadro cardíaco.",
+      "A infusão de gluconato de cálcio endovenoso terá efeito protetor sobre as células miocárdicas.",
+      "A administração de amiodarona endovenosa é essencial para a prevenção de arritmias graves nesse paciente.",
+      "A administração de insulina e glicose está contraindicada pelo risco elevado de hipoglicemia."
+    ],
+    "correta": 2,
+    "comentario": "O quadro (DRC + espironolactona recente + fraqueza/síncope) é altamente sugestivo de hipercalemia grave com alterações eletrocardiográficas — a primeira medida é o gluconato de cálcio endovenoso, que protege a membrana miocárdica (reduz risco de arritmia fatal) sem alterar o potássio sérico. Diurético de alça (se função renal permitir) e insulina+glicose (com monitorização glicêmica, não contraindicada) fazem parte do tratamento subsequente.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2346",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "A respeito dos distúrbios do potássio, assinale a alternativa correta:",
+    "alternativas": [
+      "São causas de hipocalemia: uso de diuréticos, digitálicos, gluconato de cálcio, insulina e bicarbonato.",
+      "A hipercalemia pode manifestar-se eletrocardiograficamente através de ondas T altas, apiculadas e simétricas, redução da amplitude das ondas P e alargamento do intervalo PR e do complexo QRS.",
+      "A hipocalemia pode manifestar-se clinicamente com íleo paralítico, retenção urinária, letargia e eletrocardiograficamente com aparecimento de ondas U, elevação do segmento ST e redução da amplitude das ondas T.",
+      "O tratamento da hipocalemia deve ser iniciado imediatamente por via venosa quando o nível sérico de potássio estiver abaixo de 3,5mEq/litro."
+    ],
+    "correta": 1,
+    "comentario": "A progressão eletrocardiográfica da hipercalemia está corretamente descrita: ondas T altas/apiculadas/simétricas, redução/achatamento da onda P, e alargamento de PR e QRS. Digitálicos, gluconato de cálcio, insulina e bicarbonato NÃO são causas de hipocalemia (insulina e bicarbonato, ao contrário, reduzem o potássio sérico por redistribuição); e nem toda hipocalemia abaixo de 3,5 exige reposição IV imediata — hipocalemia leve/assintomática pode ser corrigida por via oral.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2347",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Homem, 34 anos, vítima de atropelamento com fratura de bacia e esmagamento de membro inferior direito, submetido a cirurgia ortopédica, evoluiu com lesão renal aguda no pós-operatório. Apresenta fraqueza muscular importante, dor torácica, arritmia à ausculta, e ECG com onda T apiculada e bloqueio atrioventricular. Sobre o provável distúrbio eletrolítico e sua conduta, assinale a alternativa INCORRETA:",
+    "alternativas": [
+      "É provável que a administração de resinas de troca catiônica intestinal seja mais efetiva que a hemodiálise no tratamento da urgência descrita.",
+      "A intensa lise celular associada à inadequada compensação hidroeletrolítica renal contribuíram para a descompensação cardíaca descrita.",
+      "A medida clínica imediata inclui a administração endovenosa de gluconato de cálcio a 10%.",
+      "A administração de solução polarizante (glicose hipertônica + insulina) atua na correção rápida do distúrbio descrito."
+    ],
+    "correta": 0,
+    "comentario": "As resinas de troca catiônica têm início de ação em horas e eficácia limitada — MENOS efetivas e mais lentas que a hemodiálise em uma emergência hipercalêmica grave com arritmia estabelecida (bloqueio AV), tornando essa afirmativa a INCORRETA. O quadro (esmagamento muscular + LRA) é rabdomiólise evoluindo para hipercalemia grave, exigindo gluconato de cálcio imediato e, se refratária, diálise de urgência.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2348",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Em relação ao tratamento da hipercalemia grave, analise os itens:\n\nI. A insulina promove a entrada do potássio na célula, corrigindo a hipercalemia.\nII. A administração de glicose hipertônica associada à insulina evita a hipoglicemia.\nIII. A administração intravenosa de bicarbonato de sódio está indicada para evitar arritmia na hipercalemia.\n\nEstão CORRETOS:",
+    "alternativas": [
+      "Somente os itens I e II.",
+      "Somente os itens II e III.",
+      "Somente os itens I e III.",
+      "Todos os itens."
+    ],
+    "correta": 0,
+    "comentario": "I e II corretos: a insulina desloca potássio para o intracelular, e a glicose associada previne a hipoglicemia iatrogênica. O item III é impreciso como colocado: o bicarbonato de sódio pode ser usado como medida adjuvante de redistribuição SE houver acidose associada, mas não é indicado rotineiramente apenas para 'evitar arritmia' — quem protege diretamente a membrana contra arritmia é o gluconato de cálcio, não o bicarbonato.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2349",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente em início de quimioterapia para linfoma não Hodgkin apresenta náuseas, vômitos, cãibras, fraqueza muscular e redução do volume urinário — quadro sugestivo de síndrome de lise tumoral. Considerando que ainda faltam exames de potássio, magnésio e gasometria arterial, qual alteração eletrocardiográfica é mais provável de ser evidenciada, considerando a associação típica de hipocalcemia nesse contexto?",
+    "alternativas": [
+      "Aumento do intervalo QT.",
+      "Aumento de onda P e redução do intervalo PR.",
+      "Infradesnivelamento de segmento ST e diminuição do intervalo QT.",
+      "Inversão e achatamento de onda T.",
+      "Supradesnivelamento de segmento ST e diminuição do intervalo QT."
+    ],
+    "correta": 0,
+    "comentario": "Na síndrome de lise tumoral, a hipocalcemia (por quelação do cálcio pelo fósforo liberado em excesso) é a alteração que mais caracteristicamente prolonga o intervalo QT ao ECG — um achado eletrocardiográfico distinto (embora concomitante) das alterações clássicas da hipercalemia isolada (T apiculada, QRS alargado), já que a SLT cursa com os dois distúrbios sobrepostos.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2350",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Mulher, 77 anos, após cistectomia radical com reconstrução por ureterojejunostomia externa, um mês após o procedimento apresenta fraqueza muscular. PA 108x77mmHg, sem edemas. Creatinina 0,8mg/dL, ureia 120mg/dL, sódio 135mEq/L, calcemia normal. O ECG mostrou alteração compatível com um distúrbio eletrolítico. Assinale a associação mais provável:",
+    "alternativas": [
+      "Acidose metabólica e hipomagnesemia.",
+      "Alcalose metabólica e hiperpotassemia.",
+      "Acidose metabólica e hiperpotassemia.",
+      "Alcalose metabólica e hipocalemia."
+    ],
+    "correta": 2,
+    "comentario": "A ureterojejunostomia expõe a urina (rica em cloreto e ácido) à mucosa intestinal, que reabsorve cloreto/hidrogênio e secreta bicarbonato em troca de potássio — resultando em acidose metabólica hiperclorêmica associada a hipercalemia (diferente da ureterossigmoidostomia clássica, que classicamente causa hipocalemia; a variação anatômica e o segmento intestinal utilizado determinam o padrão exato do distúrbio).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2351",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Sobre o balanço interno do potássio (distúrbios do cátion entre o meio intra e extracelular), qual das seguintes afirmativas é FALSA?",
+    "alternativas": [
+      "A insulina promove a entrada do potássio para o interior da célula, independentemente do nível da glicose.",
+      "As catecolaminas diminuem os níveis de potássio extracelular através dos receptores beta-adrenérgicos.",
+      "A aldosterona promove a secreção de potássio e a absorção de sódio, ao nível do túbulo contornado proximal.",
+      "Em condições de acidose, a entrada do potássio na célula é dificultada, fazendo com que o íon se acumule no espaço extracelular."
+    ],
+    "correta": 2,
+    "comentario": "A aldosterona atua no TÚBULO CONTORNADO DISTAL e ducto coletor (não no túbulo contornado proximal), promovendo reabsorção de sódio em troca de secreção de potássio e hidrogênio — essa é a afirmativa FALSA. As demais descrevem corretamente os mecanismos de redistribuição transcelular do potássio (insulina, catecolaminas/beta-agonistas, acidose).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2352",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Mulher, 78 anos, DM2, HAS e dislipidemia, com queixa de fraqueza muscular. Em uso de metformina, metoprolol, rosuvastatina e sulfametoxazol-trimetoprim (SMX-TMP) 800/160mg 2x/dia há 7 dias para ITU. Exames: sódio 136, potássio 7,6, cloreto 108, bicarbonato 18, glicose 100, ureia 50, creatinina 1,5 (clearance CKD-EPI 44mL/min). Assinale a causa da hipercalemia:",
+    "alternativas": [
+      "Insuficiência renal aguda.",
+      "Insuficiência renal crônica.",
+      "Hipercalemia medicamentosa pelo trimetoprim.",
+      "Hipercalemia medicamentosa pelo sulfametoxazol.",
+      "Hipercalemia medicamentosa pelo metoprolol."
+    ],
+    "correta": 2,
+    "comentario": "O trimetoprima atua como um diurético poupador de potássio, bloqueando os canais de sódio epiteliais (ENaC) do túbulo coletor de forma análoga à amilorida — mecanismo bem estabelecido de hipercalemia induzida por SMX-TMP, especialmente em doses altas (como as usadas para ITU complicada) e em pacientes com função renal já reduzida.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2353",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Sobre o tratamento da hipercalemia relacionado a injúria renal aguda, marque a alternativa correta:",
+    "alternativas": [
+      "Gluconato de cálcio sempre está indicado.",
+      "Furosemida é uma droga muito usada nesse contexto pois redistribui o potássio no organismo.",
+      "Pacientes com injúria renal aguda são proporcionalmente menos propensos à toxicidade da hipercalemia do que os portadores de insuficiência renal crônica.",
+      "A infusão de glicose e insulina pode ajudar no tratamento da hipercalemia através do aumento da entrada de potássio no meio intracelular."
+    ],
+    "correta": 3,
+    "comentario": "A glicoinsulinoterapia desloca potássio para o meio intracelular, sendo pilar do tratamento agudo. O gluconato de cálcio só é indicado diante de alterações eletrocardiográficas (não 'sempre'); a furosemida promove ELIMINAÇÃO renal do potássio, não redistribuição; e pacientes com LRA são, na verdade, tipicamente MAIS suscetíveis à toxicidade da hipercalemia (menor tempo de adaptação celular) que os com DRC estabelecida, que já desenvolveram alguma tolerância crônica.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2354",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Mulher, 45 anos, da Ilha do Marajó (PA), internada com sintomas urêmicos há 2 dias após acidente ofídico crotálico. Náuseas persistentes e redução do volume urinário. Exames: ureia 126, creatinina 4,4, potássio 7,3, sódio 134. ECG: achatamento da onda P, aumento do segmento PR e onda T apiculada. Qual a medida prioritária para estabilizar a membrana miocárdica e prevenir arritmias?",
+    "alternativas": [
+      "Sulfato de magnésio.",
+      "Bicarbonato de sódio.",
+      "Gluconato de cálcio.",
+      "Cloridrato de propafenona.",
+      "Propranolol."
+    ],
+    "correta": 2,
+    "comentario": "Diante de alterações eletrocardiográficas de hipercalemia (mesmo antes de medidas de redistribuição ou remoção), o gluconato de cálcio é a medida prioritária, com ação em minutos para estabilizar a membrana miocárdica e reduzir o risco de arritmias fatais.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2355",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Homem, 45 anos, DRC estágio 3, em uso de lisinopril para HAS e IC com fração de ejeção reduzida. Retorna com edema pretibial e hipercalemia persistente discreta (5,4mEq/L), apesar da dieta com restrição de potássio e uso de furosemida 40mg/dia. Creatinina 1,5mg/dL (basal 1,4). Qual o passo mais apropriado no manejo dessa hipercalemia?",
+    "alternativas": [
+      "Trocar lisinopril por hidralazina.",
+      "Aumentar a dose da furosemida.",
+      "Iniciar poliestireno sulfonato de sódio.",
+      "Trocar furosemida por clortalidona.",
+      "Iniciar fludrocortisona."
+    ],
+    "correta": 1,
+    "comentario": "Diante de hipercalemia leve, persistente mas não perigosa, em paciente estável usando IECA (terapia de benefício comprovado em IC/DRC), a primeira medida razoável antes de suspender o IECA é otimizar a eliminação renal de potássio aumentando a dose do diurético de alça já em uso — preservando a terapia nefro/cardioprotetora sempre que possível.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2356",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente de 70 anos, renal crônico em tratamento conservador (creatinina basal 4,8mg/dL), submetido a cirurgia de urgência por diverticulite perfurada. No 2º PO, desenvolve oligúria e fraqueza muscular, estável hemodinamicamente. Creatinina 6,7, potássio 7,5. ECG com ondas T apiculadas e QRS discretamente alargado. Já administrados gluconato de cálcio e glicoinsulinoterapia. Qual a próxima medida?",
+    "alternativas": [
+      "Hemodiálise.",
+      "Resinas de troca catiônica.",
+      "Bicarbonato de sódio.",
+      "Furosemida.",
+      "Conduta expectante, monitorizando os níveis séricos de potássio."
+    ],
+    "correta": 0,
+    "comentario": "Hipercalemia grave (K 7,5) com alterações eletrocardiográficas persistentes mesmo após as medidas iniciais de estabilização (gluconato) e redistribuição (glicoinsulina), em paciente com DRC avançada e oligúria pós-operatória, é indicação de hemodiálise de urgência — as medidas temporárias já foram esgotadas.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2357",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "É causa de hiperpotassemia, EXCETO:",
+    "alternativas": [
+      "Uso de inibidor da enzima conversora da angiotensina.",
+      "Acidose tubular renal tipo IV.",
+      "Acidose tubular renal tipo II.",
+      "Insuficiência adrenal."
+    ],
+    "correta": 2,
+    "comentario": "A acidose tubular renal tipo II (proximal) cursa com HIPOcalemia (perda de bicarbonato proximal leva a perda secundária de potássio) — é a exceção pedida. Já a ATR tipo IV (hipoaldosteronismo hiporreninêmico) é classicamente hipercalêmica, assim como IECA e insuficiência adrenal (deficiência de aldosterona).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2358",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente de 62 anos, diabético, hipertenso, em uso de losartana e glimepirida, comparece a consulta ambulatorial de rotina assintomático. Exames: ureia 56, creatinina 1,8, potássio 6,3. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Iniciar furosemida, manter a losartana e retornar com novos exames em 7 dias.",
+      "Infundir solução de glicose com insulina na emergência.",
+      "Suspender a losartana, iniciar dieta com restrição de alimentos ricos em potássio e retornar em 7 dias.",
+      "Suspender a losartana e solicitar ecodoppler de artérias renais.",
+      "Suspender a losartana e iniciar amilorida."
+    ],
+    "correta": 1,
+    "comentario": "Apesar de o paciente estar clinicamente assintomático, um potássio de 6,3mEq/L já é considerado hipercalemia significativa, com risco imprevisível de arritmia — a conduta é encaminhar para tratamento imediato na emergência (glicoinsulinoterapia), reavaliando posteriormente a manutenção ou ajuste da losartana, e não apenas agendar retorno ambulatorial em 7 dias.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2359",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Homem, 27 anos, em UTI por choque séptico secundário a pneumonia grave, evoluiu com necessidade de ventilação mecânica, doses altas de vasopressor e piora progressiva da função renal, associada a hipercalemia. Dentre as alternativas abaixo, a que NÃO reduz os níveis séricos de potássio é:",
+    "alternativas": [
+      "Poliestirenossulfonato de cálcio por via retal.",
+      "Diurético de alça.",
+      "Gluconato de cálcio.",
+      "Salbutamol por via inalatória."
+    ],
+    "correta": 2,
+    "comentario": "O gluconato de cálcio protege a membrana miocárdica contra os efeitos elétricos da hipercalemia, mas NÃO reduz o potássio sérico — diferente da resina de troca (remoção intestinal), do diurético de alça (remoção renal) e do salbutamol inalatório (redistribuição intracelular), que efetivamente diminuem a calemia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2360",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "A respeito do tratamento dos distúrbios do potássio em pacientes adultos, assinale a alternativa CORRETA:",
+    "alternativas": [
+      "Para pacientes com hipocalemia e necessidade do uso de diuréticos, pode-se considerar o uso de amilorida.",
+      "Dentre as medidas empregadas no tratamento da hipercalemia, a mais eficaz na redução dos níveis séricos de potássio é o uso de gluconato de cálcio.",
+      "Um paciente com 50kg e potássio sérico de 2,0mEq/L apresenta déficit corporal total de potássio de cerca de 50mEq.",
+      "Para hipocalemia grave (K<2mEq/L), a reposição deve ser rápida, com velocidade de 120mEq/hora.",
+      "Em casos de hipocalemia refratária, deve-se considerar a coexistência de hipocalcemia."
+    ],
+    "correta": 0,
+    "comentario": "A amilorida (diurético poupador de potássio) pode ser considerada quando há necessidade de diurético em paciente com tendência à hipocalemia, reduzindo a perda urinária de potássio associada a outros diuréticos. O gluconato de cálcio NÃO reduz o potássio sérico (apenas protege a membrana); e a hipocalemia refratária deve levantar suspeita de hipoMAGNESEMIA associada (não hipocalcemia) — a magnésio-deficiência prejudica a correção do potássio.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2361",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Homem, 58 anos, com pneumonia grave evoluindo para choque séptico e insuficiência renal aguda oligúrica com hipercalemia de 7,5mEq/L. Já realizadas medidas terapêuticas com gluconato de cálcio, beta-2 agonista inalatório e glicoinsulinoterapia. O próximo passo visa aumentar a eliminação de potássio do organismo. Assinale a alternativa com duas medidas capazes de eliminar o potássio corporal:",
+    "alternativas": [
+      "Sevelamer e bicarbonato de sódio.",
+      "Patirômero e sevelamer.",
+      "Poliestireno sulfonato de sódio e sevelamer.",
+      "Poliestireno sulfonato de sódio e patirômero."
+    ],
+    "correta": 3,
+    "comentario": "O poliestireno sulfonato de sódio (resina clássica) e o patirômero (quelante moderno) são ambos resinas de troca catiônica que removem potássio pelo trato gastrointestinal — medidas de eliminação definitiva. O sevelamer é um quelante de FÓSFORO (não de potássio) e o bicarbonato de sódio é medida de redistribuição, não de remoção.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2362",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Em relação aos distúrbios de potássio, assinale a alternativa INCORRETA.",
+    "alternativas": [
+      "Hipocalemia grave pode induzir arritmias e rabdomiólise.",
+      "Onda T achatada e QRS estreito ao eletrocardiograma sugerem hipercalemia.",
+      "O gradiente de concentração transtubular de potássio (TTKG) é capaz de distinguir entre perdas renais e perdas não renais de potássio.",
+      "A hipercalemia pode se desenvolver em pacientes que tomam IECA e bloqueadores do receptor de angiotensina."
+    ],
+    "correta": 1,
+    "comentario": "Onda T achatada e QRS ESTREITO são, na verdade, achados de HIPOcalemia (junto com onda U proeminente) — na hipercalemia espera-se o oposto: onda T APICULADA e QRS ALARGADO. Essa é, portanto, a alternativa INCORRETA.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2363",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Está indicado no tratamento da hipercalemia com alargamento do QRS:",
+    "alternativas": [
+      "Solução de glicose + insulina.",
+      "Bicarbonato de sódio.",
+      "Gluconato de cálcio.",
+      "Furosemida."
+    ],
+    "correta": 2,
+    "comentario": "Alargamento de QRS já indica toxicidade cardíaca significativa da hipercalemia — a medida prioritária é o gluconato de cálcio, para estabilização imediata da membrana miocárdica, antes de qualquer medida de redistribuição ou remoção.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2364",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente, 78 anos, internado para tratamento quimioterápico de neoplasia gástrica avançada. Após a última infusão, apresenta náuseas, vômitos e hiporexia. Em uso de metformina, enalapril e tramadol. Exames: creatinina 2,1, ureia 116, sódio 146, potássio 6,8. ECG com apiculamento e desproporção da onda T em relação ao QRS. PA 96x55mmHg, sem edema. Além da suspensão do enalapril, o manejo da hiperpotassemia deverá incluir:",
+    "alternativas": [
+      "Poliestirenossulfonato de cálcio, gluconato de cálcio EV, fludrocortisona e solução de glico-insulina.",
+      "Gluconato de cálcio EV, poliestirenossulfonato de cálcio, solução de glico-insulina e furosemida.",
+      "Hemodiálise e bicarbonato de sódio.",
+      "Hemodiálise, gluconato de cálcio EV, bicarbonato de sódio e solução de glico-insulina.",
+      "Gluconato de cálcio, hidratação endovenosa, solução de glico-insulina e inalação de beta-agonista."
+    ],
+    "correta": 4,
+    "comentario": "O paciente está hipovolêmico (vômitos, hiporexia, PA baixa) e com hipercalemia sintomática por lesão renal aguda pré-renal — a hidratação endovenosa (corrigindo a causa pré-renal) associada às medidas clássicas de estabilização (gluconato de cálcio) e redistribuição (glico-insulina, beta-agonista inalatório) é a abordagem mais completa e adequada, sem necessidade de hemodiálise nesse momento (ainda não refratário) nem de fludrocortisona (que poderia agravar a hipertensão/sobrecarga).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2365",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Mulher, 45 anos, internada por disfunção de cateter de hemodiálise, apresenta tontura e desconforto torácico súbito. PA 90x50mmHg, FC 40bpm (bradicardia), SpO2 91%, estertores crepitantes em bases. Diante do quadro e do ECG (compatível com bradiarritmia por provável hipercalemia em paciente dialítico com falha de acesso), qual a primeira droga indicada?",
+    "alternativas": [
+      "Atropina.",
+      "Gluconato de cálcio.",
+      "Furosemida.",
+      "Bicarbonato de sódio.",
+      "Noradrenalina."
+    ],
+    "correta": 1,
+    "comentario": "Bradicardia grave com instabilidade hemodinâmica em paciente dialítico que não conseguiu realizar a sessão programada (disfunção de cateter) é altamente sugestiva de hipercalemia grave causando bradiarritmia — o gluconato de cálcio é a primeira droga indicada para estabilização da membrana cardíaca, à frente da atropina (pouco eficaz em bradiarritmia hipercalêmica).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2366",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Mulher, 58 anos, insuficiência renal crônica dialítica, necessita de intubação orotraqueal por edema pulmonar. Potássio sérico mais recente: 6,5mEq/L. Neste caso, o uso da succinilcolina:",
+    "alternativas": [
+      "Pode ser utilizado caso o ECG esteja normal.",
+      "Deve ser utilizado para sequência rápida.",
+      "É contraindicado.",
+      "É seguro caso haja acidose."
+    ],
+    "correta": 2,
+    "comentario": "A succinilcolina (bloqueador neuromuscular despolarizante) causa liberação transitória adicional de potássio para o meio extracelular — é CONTRAINDICADA em pacientes com hipercalemia já estabelecida (ou risco elevado, como DRC dialítica), pelo risco de agravar agudamente a calemia e precipitar arritmia fatal durante a intubação. Bloqueadores não despolarizantes (rocurônio) são preferidos nesse cenário.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2367",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente, 68 anos, hipertenso, admitido com pneumonia grave. Exames: creatinina 1,8, ureia 157, potássio 7,2. ECG com onda T apiculada difusa, encurtamento do QT e achatamento da onda P. Qual o mecanismo de ação do primeiro medicamento a ser administrado?",
+    "alternativas": [
+      "Estimular a caliurese.",
+      "Estabilizar a membrana miocárdica.",
+      "Trocar cálcio por potássio no trato gastrointestinal.",
+      "Translocar potássio do meio extracelular para o intracelular."
+    ],
+    "correta": 1,
+    "comentario": "O primeiro medicamento diante de alterações eletrocardiográficas de hipercalemia é o gluconato de cálcio, cujo mecanismo é estabilizar a membrana miocárdica (elevando o limiar de despolarização) — não reduz o potássio sérico por si só, mas previne a progressão para arritmias fatais enquanto as demais medidas fazem efeito.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2368",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente de 60 anos, hipertenso e diabético, em uso de losartana iniciada recentemente pelo cardiologista, vem ao PS com edema de membros inferiores e dispneia leve. Refere volume urinário >2L/24h (não oligúrico). Exames: creatinina 2, ureia 70, potássio 7,0. Qual seria a conduta mais CORRETA?",
+    "alternativas": [
+      "Hemodiálise de urgência.",
+      "Gluconato de cálcio IV apenas se houver alteração eletrocardiográfica.",
+      "Manter a medicação em uso e prescrever solução de glicose e insulina.",
+      "Administração de bicarbonato de sódio 8,4% IV.",
+      "Furosemida IV isoladamente."
+    ],
+    "correta": 1,
+    "comentario": "Diante de hipercalemia significativa (K 7,0) mas paciente não oligúrico e sem indicação absoluta de diálise de urgência neste momento, a conduta escalonada correta é reservar o gluconato de cálcio para quando houver alteração eletrocardiográfica confirmada — não administrá-lo 'sempre', mas também não retê-lo desnecessariamente diante de sinais de gravidade laboratorial tão significativos.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2369",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente no 3º pós-operatório de ponte aorto-bifemoral evoluiu com rabdomiólise, apresentando determinada alteração eletrocardiográfica. Qual distúrbio eletrolítico é mais provável?",
+    "alternativas": [
+      "Hipocalcemia.",
+      "Hipocalemia.",
+      "Hipercalemia.",
+      "Hipercalcemia."
+    ],
+    "correta": 2,
+    "comentario": "A rabdomiólise (lesão muscular extensa por isquemia de membros inferiores no pós-operatório vascular) libera grande quantidade de potássio intracelular, causando hipercalemia — mecanismo central da lesão renal e das alterações eletrocardiográficas nesse contexto.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2370",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente, 58 anos, diabético, hipertenso e portador de doença renal crônica estágio V, deu entrada na emergência com mal-estar e fraqueza muscular intensa. ECG com achatamento da onda P, onda T apiculada e QRS alargado. Qual o provável distúrbio hidroeletrolítico?",
+    "alternativas": [
+      "Hipocalemia.",
+      "Hiponatremia.",
+      "Hipercalemia.",
+      "Hipercalcemia.",
+      "Hiperfosfatemia."
+    ],
+    "correta": 2,
+    "comentario": "A progressão eletrocardiográfica descrita (P achatada → T apiculada → QRS alargado) é o padrão clássico e sequencial da hipercalemia, especialmente esperado em paciente com DRC estágio V (alto risco de acúmulo de potássio).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2371",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Em relação às alterações do potássio no organismo, assinale a alternativa ERRADA:",
+    "alternativas": [
+      "A administração venosa de cálcio pode reduzir imediatamente o risco de arritmia cardíaca ocasionada pela hipercalemia.",
+      "A hipomagnesemia pode determinar hipocalemia refratária.",
+      "A infusão de insulina e glicose diminui rápida e drasticamente o potássio corporal TOTAL.",
+      "Ondas T mais altas que ondas R indicam hipercalemia grave."
+    ],
+    "correta": 2,
+    "comentario": "A infusão de insulina e glicose apenas DESLOCA o potássio para o meio intracelular (redistribuição) — não reduz o potássio corporal TOTAL, que permanece o mesmo até que medidas de remoção definitiva (diurético, resina, diálise) sejam empregadas. Essa é a afirmativa ERRADA (pegadinha clássica do tema).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2372",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente com insuficiência renal crônica em hemodiálise é admitido na emergência com fraqueza muscular, parestesias e diminuição de reflexos. ECG na admissão evidenciou onda T apiculada, prolongamento do intervalo PR, alargamento do QRS e achatamento de onda P. Qual o diagnóstico?",
+    "alternativas": [
+      "Hiperpotassemia",
+      "Hipopotassemia",
+      "Hiponatremia",
+      "Hipercalcemia"
+    ],
+    "correta": 0,
+    "comentario": "A combinação de fraqueza muscular com a progressão eletrocardiográfica clássica (T apiculada, PR prolongado, QRS alargado, P achatada) em paciente dialítico é diagnóstica de hiperpotassemia — cenário típico de falta a sessão de diálise ou dieta rica em potássio.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2373",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Entre as medidas usadas no tratamento da hipercalemia, assinale a que NÃO tem como objetivo a troca de compartimento do potássio nem a estabilização de membrana:",
+    "alternativas": [
+      "Gluconato de cálcio 10% (10 a 20mL) + SF 0,9% 100mL EV",
+      "Resina de troca",
+      "Solução polarizante — insulina regular 10UI + glicose 50% 100mL EV",
+      "Beta-2 adrenérgico",
+      "Bicarbonato de sódio 8,4% 1mEq/kg"
+    ],
+    "correta": 1,
+    "comentario": "A resina de troca catiônica atua removendo definitivamente o potássio do organismo pelo trato gastrointestinal — mecanismo distinto da estabilização de membrana (gluconato de cálcio) e da redistribuição transcelular (solução polarizante, beta-2 adrenérgico, bicarbonato de sódio), que apenas deslocam o potássio para dentro da célula sem eliminá-lo.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2374",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Sobre os distúrbios do potássio, é correto afirmar que:",
+    "alternativas": [
+      "A hiperpotassemia pode ser causada pela administração de antagonistas de receptor mineralocorticoide e beta-adrenérgicos.",
+      "Na hipercalemia, observa-se aumento de amplitude das ondas P e U, no eletrocardiograma.",
+      "Redistribuição para o espaço intracelular, acidose e estado anabólico podem causar hipocalemia.",
+      "A hiperpotassemia despolariza a membrana celular do miocárdio, torna mais lenta a condução ventricular e reduz a duração do potencial de ação."
+    ],
+    "correta": 3,
+    "comentario": "A hiperpotassemia eleva o potássio extracelular, reduzindo o gradiente transmembrana e despolarizando parcialmente a membrana em repouso — isso lentifica a condução ventricular (explicando o alargamento do QRS) e reduz a duração do potencial de ação. Os antagonistas mineralocorticoides (espironolactona) e beta-bloqueadores CAUSAM hipercalemia (não a alternativa oposta descrita); a hipercalemia reduz (não aumenta) a amplitude da onda P; e a acidose favorece a SAÍDA de potássio da célula (hipercalemia), não hipocalemia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2375",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Durante avaliação de paciente com insuficiência renal crônica, foi suspeitada hiperpotassemia, e o ECG pode ajudar no diagnóstico. Um dos itens abaixo está INCORRETO quanto à descrição dos achados eletrocardiográficos da hipercalemia. Assinale-o:",
+    "alternativas": [
+      "As alterações dependem dos níveis séricos do potássio e ocorrem sequencialmente.",
+      "Onda T de grande amplitude, simétrica e de base ALARGADA.",
+      "Redução do intervalo QTc.",
+      "Distúrbio de condução intraventricular (QRS alargado)."
+    ],
+    "correta": 1,
+    "comentario": "A onda T apiculada clássica da hipercalemia é descrita como estreita/em tenda (base ESTREITA, não alargada) — a descrição de 'base alargada' está incorreta e é a alternativa pedida. As demais descrições (progressão sequencial conforme a gravidade, redução do QTc, QRS alargado) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2376",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Levando-se em consideração os distúrbios do potássio, assinale a afirmativa CORRETA.",
+    "alternativas": [
+      "A presença de ECG com aumento de amplitude da onda U indica um potássio sérico maior que 6,0mEq/L.",
+      "A presença de onda T apiculada e o encurtamento do intervalo QT indicam um potássio sérico entre 5,5-6,5mEq/L.",
+      "O emprego de salbutamol se faz somente por via endovenosa.",
+      "A sintomatologia da hipocalemia é precoce e surge com níveis de potássio sérico menores que 3,0mEq/L."
+    ],
+    "correta": 1,
+    "comentario": "A onda T apiculada com encurtamento do QT é tipicamente o primeiro achado eletrocardiográfico, surgindo em níveis moderados de hipercalemia (na faixa de 5,5-6,5mEq/L) — antes das alterações mais graves (QRS alargado, padrão sinusoidal). A onda U proeminente é achado de HIPOcalemia (não hipercalemia); e o salbutamol pode ser usado por via INALATÓRIA (a via mais comum na prática, não apenas endovenosa).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2377",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Qual desses medicamentos NÃO deve ser utilizado em paciente com insuficiência renal aguda e hipercalemia?",
+    "alternativas": [
+      "Furosemida.",
+      "Poliestirenosulfonato de cálcio.",
+      "Enalapril.",
+      "Ácido acetilsalicílico.",
+      "Dexametasona."
+    ],
+    "correta": 2,
+    "comentario": "O enalapril (IECA) reduz a produção de aldosterona, diminuindo a excreção renal de potássio — deve ser evitado/suspenso em vigência de hipercalemia associada a lesão renal aguda. Furosemida e poliestirenossulfonato de cálcio, ao contrário, são medidas terapêuticas para REDUZIR o potássio nesse contexto.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2378",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "O senhor Antônio tem cirrose hepática e faz uso de espironolactona. Passou a sentir desconforto torácico e palpitações. Foi solicitado um eletrocardiograma, que mostra ausência de onda P e onda T apiculada. O provável distúrbio encontrado e a conduta mais adequada são, respectivamente:",
+    "alternativas": [
+      "Hiperfosfatemia e hemodiálise",
+      "Hipomagnesemia e gluconato de cálcio",
+      "Hiperpotassemia e solução de glicoinsulina",
+      "Hipopotassemia e furosemida",
+      "Acidose metabólica e bicarbonato de sódio"
+    ],
+    "correta": 2,
+    "comentario": "A espironolactona (diurético poupador de potássio) é causa medicamentosa clássica de hipercalemia, especialmente em cirróticos — o ECG (ausência de onda P, T apiculada) confirma o distúrbio, e o tratamento inclui a glicoinsulinoterapia (redistribuição), associada a outras medidas conforme a gravidade.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2379",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Paciente, 75 anos, com insuficiência renal em acompanhamento ambulatorial, é admitido e sofre parada cardiorrespiratória (PCR) na emergência, sendo reanimado. Exames pós-ressuscitação: ECG com ritmo sinusal e ondas T apiculadas; ureia 349, creatinina 10, potássio 8,2, pH 7,1, bicarbonato 8, glicose 380. No manejo desse paciente, é INCORRETO afirmar que:",
+    "alternativas": [
+      "A administração de insulina venosa, além do controle glicêmico, deve contribuir para a redução parcial da calemia.",
+      "O gluconato de cálcio deve ser administrado, apesar de não reduzir a calemia.",
+      "A furosemida será provavelmente pouco útil, em virtude da avançada disfunção renal.",
+      "O bicarbonato é contraindicado nesse caso, pois, em pacientes pós-PCR e com acidose metabólica, pode corrigir a acidose mas agravar a hipercalemia.",
+      "Após as medidas iniciais de controle emergencial da hipercalemia, uma hemodiálise de urgência deve ser tentada assim que possível."
+    ],
+    "correta": 3,
+    "comentario": "O bicarbonato de sódio NÃO é contraindicado nesse cenário de acidose metabólica grave associada a hipercalemia — pelo contrário, pode ajudar tanto na correção da acidose quanto na redistribuição do potássio para o intracelular (mecanismo que reduz, e não agrava, a calemia). Essa é a afirmativa INCORRETA pedida pela questão.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2380",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Assinale a alternativa que NÃO representa causa de hipercalemia.",
+    "alternativas": [
+      "Uso de inibidores da enzima conversora de angiotensina.",
+      "Síndrome neuroléptica maligna.",
+      "Insuficiência renal terminal.",
+      "Hiperaldosteronismo.",
+      "Hemólise."
+    ],
+    "correta": 3,
+    "comentario": "O hiperaldosteronismo (excesso de mineralocorticoide) promove secreção renal AUMENTADA de potássio, causando classicamente HIPOcalemia — é a exceção pedida. As demais opções (IECA, síndrome neuroléptica maligna por rabdomiólise, insuficiência renal terminal, hemólise da amostra ou in vivo) são causas reconhecidas de hipercalemia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2381",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Mulher, 38 anos, com pneumonia comunitária evoluindo para sepse grave, com disfunção renal (creatinina 5,8), hipercalemia acentuada (K 7,2mEq/L) e acidose metabólica importante (pH 7,18, bicarbonato 12). Apresentou parada cardiorrespiratória em atividade elétrica sem pulso, revertida com manobras de suporte básico e adrenalina, bicarbonato e gluconato de cálcio. Após estabilização, foi indicada terapia dialítica imediata. O que motivou a instituição da diálise?",
+    "alternativas": [
+      "Hipercalemia acentuada e refratária.",
+      "Acidose metabólica grave e refratária.",
+      "Pericardite urêmica com tamponamento.",
+      "Sobrecarga volêmica com congestão pulmonar."
+    ],
+    "correta": 0,
+    "comentario": "A hipercalemia acentuada, causa provável direta da parada cardiorrespiratória (atividade elétrica sem pulso), permanece uma emergência mesmo após as medidas farmacológicas de suporte — configurando indicação de diálise de urgência refratária, dentro do mnemônico clássico AEIOU de indicações dialíticas.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2382",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Os medicamentos usados no tratamento da hipercalemia têm os seguintes mecanismos de ação:\n\nI. Estabilização da membrana elétrica da célula miocárdica;\nII. Translocação de potássio para o meio intracelular;\nIII. Remoção de potássio.\n\nA CORRETA relação entre os mecanismos de ação e as drogas é:",
+    "alternativas": [
+      "Poliestireno sulfonato de cálcio: III; salbutamol: II; gluconato de cálcio: I.",
+      "Poliestireno sulfonato de cálcio: I; salbutamol: II; gluconato de cálcio: III.",
+      "Poliestireno sulfonato de cálcio: II; salbutamol: I; gluconato de cálcio: III.",
+      "Poliestireno sulfonato de cálcio: III; salbutamol: I; gluconato de cálcio: II.",
+      "Poliestireno sulfonato de cálcio: II; salbutamol: III; gluconato de cálcio: I."
+    ],
+    "correta": 0,
+    "comentario": "A correspondência correta é: poliestireno sulfonato de cálcio (resina) = remoção (III); salbutamol (beta-agonista) = translocação para o intracelular (II); gluconato de cálcio = estabilização da membrana (I) — os três mecanismos de ação centrais do tratamento da hipercalemia, cada um com uma droga representativa.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2383",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "São medicamentos que podem levar à hiperpotassemia, EXCETO:",
+    "alternativas": [
+      "Valsartana",
+      "Heparina",
+      "Trimetoprima",
+      "Espironolactona",
+      "Fenoterol"
+    ],
+    "correta": 4,
+    "comentario": "O fenoterol é um beta-2 agonista, classe de medicamentos que REDUZ o potássio sérico (por redistribuição intracelular) — usado inclusive como tratamento da hipercalemia, sendo a exceção pedida. Valsartana (BRA), heparina (inibe síntese de aldosterona), trimetoprima (bloqueia ENaC) e espironolactona (antagonista mineralocorticoide) são causas medicamentosas reconhecidas de hipercalemia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Potássio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Potássio — Nefrologia, questões sobre hipercalemia)",
+    "revisado": true
+  },
+  {
+    "id": "q2384",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Você recebe no departamento de emergência um paciente com insuficiência renal crônica, que faltou às últimas duas sessões de hemodiálise. Preocupado com hiperpotassemia aguda, você solicita um eletrocardiograma. Qual das seguintes alterações eletrocardiográficas fortaleceria a sua suspeita clínica?",
+    "alternativas": [
+      "Presença de ondas U.",
+      "Achatamento da onda T.",
+      "Alargamento do intervalo QRS.",
+      "Presença de onda P proeminente."
+    ],
+    "correta": 2,
+    "comentario": "O alargamento do intervalo QRS é um achado eletrocardiográfico progressivo e característico da hipercalemia grave (junto com onda T apiculada e achatamento da onda P) — onda U e achatamento de T são achados de hipocalemia, e onda P proeminente não é típica de nenhum dos dois distúrbios.",
+    "banca": "BASES Distúrbios Hidroeletrolíticos — banco de questões EMR (Eu Médico Residente) (AMRIGS 2022)",
+    "ano": 2022,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Distúrbios Hidroeletrolíticos)",
+    "revisado": true
+  },
+  {
+    "id": "q2385",
+    "temaId": "disturbios-hidroeletroliticos",
+    "tema": "Distúrbios Hidroeletrolíticos — Hipercalemia",
+    "enunciado": "Em relação aos distúrbios hidroeletrolíticos, é correto afirmar:",
+    "alternativas": [
+      "Na hiponatremia, geralmente existe déficit do sódio corporal total e, por isso, deve ser tratada com solução salina hipertônica a 3%.",
+      "A hipernatremia é rara em pacientes conscientes com acesso livre à água, pela extrema sensibilidade do mecanismo de sede.",
+      "A correção da hipocalemia deve ser feita sempre com cloreto de potássio (KCl), independentemente da presença de acidose.",
+      "A diminuição da excreção renal de potássio, gerando hipercalemia, pode ocorrer devido a um aumento dos níveis de mineralocorticoides, como no hiperaldosteronismo.",
+      "A inalação de beta-2 agonistas (ex.: fenoterol) é um dos tratamentos da hipercalemia, reduzindo o potássio corporal total."
+    ],
+    "correta": 1,
+    "comentario": "A hipernatremia é de fato rara em pacientes conscientes com acesso livre à água, já que o mecanismo da sede é extremamente sensível a pequenas elevações da osmolaridade plasmática, geralmente corrigindo o distúrbio antes que se torne clinicamente significativo. O hiperaldosteronismo AUMENTA (não diminui) a excreção renal de potássio, causando hipoCALEMIA (não hipercalemia); e o beta-2 agonista REDISTRIBUI o potássio para o intracelular, sem reduzir o potássio corporal TOTAL — ao contrário do afirmado na última alternativa.",
+    "banca": "BASES Distúrbios Hidroeletrolíticos — banco de questões EMR (Eu Médico Residente) (UFPB 2022)",
+    "ano": 2022,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Distúrbios Hidroeletrolíticos)",
     "revisado": true
   }
 ]
