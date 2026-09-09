@@ -1292,8 +1292,8 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "FA — Fluxo de manejo inicial",
-    "revisado": false,
-    "fonte": "Diretriz Brasileira de Fibrilacao Atrial - SBC (2016, atualizacao 2023); ESC Guidelines for Atrial Fibrillation (2024)",
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Fibrilação Atrial 2025 (SBC); ESC Guidelines for Atrial Fibrillation (2020, atualização 2024)",
     "fluxo": [
       {
         "tipo": "start",
@@ -1321,27 +1321,36 @@
               },
               {
                 "tipo": "action",
-                "texto": "Calcular escore CHA2DS2-VASc"
+                "texto": "Calcular escore CHA2DS2-VA (SBC 2025 — substituiu o CHA2DS2-VASc)"
               },
               {
                 "tipo": "decisao",
-                "texto": "Escore indica risco tromboembólico significativo?",
+                "texto": "Qual o escore CHA2DS2-VA?",
                 "ramos": [
                   {
-                    "label": "Sim",
+                    "label": "0",
                     "fluxo": [
                       {
                         "tipo": "end",
-                        "texto": "Iniciar anticoagulação oral"
+                        "texto": "Não anticoagular"
                       }
                     ]
                   },
                   {
-                    "label": "Não",
+                    "label": "1",
                     "fluxo": [
                       {
                         "tipo": "end",
-                        "texto": "Reavaliar periodicamente o risco tromboembólico"
+                        "texto": "Individualizar — ponderar risco de sangramento (HAS-BLED) e preferência do paciente"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "≥ 2",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Anticoagular — DOAC preferencial (exceto estenose mitral reumática moderada/grave ou prótese mecânica, onde varfarina é obrigatória)"
                       }
                     ]
                   }
