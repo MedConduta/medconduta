@@ -4484,5 +4484,64 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-pericardite-tamponamento-atendimento",
+    "temaId": "pericardite-tamponamento",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "Suspeita de tamponamento cardíaco — Fluxo de atendimento",
+    "revisado": true,
+    "fonte": "ESC Guidelines for the Management of Myocarditis and Pericarditis (2025)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com derrame pericárdico conhecido ou pericardite aguda apresentando descompensação"
+      },
+      {
+        "tipo": "action",
+        "texto": "Buscar tríade de Beck (hipotensão, turgência jugular, hipofonese de bulhas) e pulso paradoxal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de tamponamento presentes ou instabilidade hemodinâmica?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Emergência — não postergar por exames adicionais"
+              },
+              {
+                "tipo": "action",
+                "texto": "Ecocardiograma à beira-leito (se disponível, sem atrasar a conduta) — colapso diastólico de câmaras direitas, VCI pletórica"
+              },
+              {
+                "tipo": "action",
+                "texto": "Reposição volêmica como ponte temporária (não substitui a drenagem)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Pericardiocentese de urgência, preferencialmente guiada por ecocardiograma"
+              }
+            ]
+          },
+          {
+            "label": "Não — estável",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Confirmar diagnóstico de pericardite aguda (≥2 de 4 critérios: dor típica, atrito, ECG, derrame)"
+              },
+              {
+                "tipo": "end",
+                "texto": "AINE em altas doses + colchicina (1ª linha) — reavaliar evolução e sinais de tamponamento"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
