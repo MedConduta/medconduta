@@ -2015,8 +2015,8 @@
     "temaId": "tireoidopatias",
     "area": "residencia",
     "tipo": "diagnostico",
-    "titulo": "Disfunção tireoidiana — Fluxo diagnóstico (TSH/T4 livre)",
-    "revisado": false,
+    "titulo": "Disfunção tireoidiana — interpretação de TSH e T4 livre",
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia (SBEM); American Thyroid Association (ATA) Guidelines",
     "fluxo": [
       {
@@ -2025,18 +2025,27 @@
       },
       {
         "tipo": "action",
-        "texto": "Dosar TSH e T4 livre"
+        "texto": "Dosar TSH (exame de rastreamento inicial de escolha) — se alterado, complementar com T4 livre"
       },
       {
         "tipo": "decisao",
-        "texto": "Padrão hormonal encontrado",
+        "texto": "Padrão TSH / T4 livre encontrado?",
         "ramos": [
           {
             "label": "TSH alto + T4 livre baixo",
             "fluxo": [
               {
                 "tipo": "end",
-                "texto": "Hipotireoidismo primário → iniciar levotiroxina"
+                "texto": "Hipotireoidismo primário → iniciar levotiroxina em dose única diária, em jejum"
+              }
+            ]
+          },
+          {
+            "label": "TSH alto + T4 livre normal",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Hipotireoidismo subclínico → conduta conforme grau de TSH (tratar sempre se >10mUI/L; individualizar entre 4,5-10mUI/L)"
               }
             ]
           },
@@ -2044,16 +2053,42 @@
             "label": "TSH baixo + T4 livre alto",
             "fluxo": [
               {
+                "tipo": "action",
+                "texto": "Hipertireoidismo primário confirmado → investigar etiologia (TRAb para Graves, cintilografia se dúvida entre Graves/bócio multinodular tóxico/adenoma tóxico)"
+              }
+            ]
+          },
+          {
+            "label": "TSH baixo + T4 livre normal",
+            "fluxo": [
+              {
                 "tipo": "end",
-                "texto": "Hipertireoidismo primário → investigar etiologia (ex.: Doença de Graves)"
+                "texto": "Hipertireoidismo subclínico → reavaliar e considerar tratamento se TSH <0,1mUI/L, idade avançada, cardiopatia ou osteoporose"
+              }
+            ]
+          },
+          {
+            "label": "TSH baixo/normal/inapropriadamente não elevado + T4 livre baixo",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "TSH isoladamente NÃO diferencia hipotireoidismo primário de central — no central o TSH pode estar baixo, normal ou discretamente elevado por bioatividade reduzida. Suspeitar de hipotireoidismo CENTRAL (hipofisário/hipotalâmico)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Investigar outros eixos hipofisários e solicitar RM de hipófise/hipotálamo"
               }
             ]
           }
         ]
       },
       {
+        "tipo": "action",
+        "texto": "Na etiologia autoimune, complementar com anti-TPO (Hashimoto) ou TRAb (Graves); exoftalmia bilateral com retração palpebral é achado praticamente patognomônico de Graves"
+      },
+      {
         "tipo": "alerta",
-        "texto": "Sinais de descompensação grave (tempestade tireoidiana/coma mixedematoso) → tratamento intensivo imediato"
+        "texto": "Sinais de descompensação grave — tempestade tireoidiana (taquicardia extrema, febre, delirium, IC) ou coma mixedematoso (bradicardia extrema, hipotermia, hiponatremia, rebaixamento do sensório) → tratamento intensivo imediato, sem aguardar confirmação laboratorial completa"
       }
     ]
   },
@@ -5065,6 +5100,110 @@
                     ]
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-tireoidopatias-nodulo",
+    "temaId": "tireoidopatias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Nódulo de tireoide — investigação (TI-RADS → PAAF → Bethesda)",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Endocrinologia e Metabologia (SBEM); American Thyroid Association (ATA) — sistemas TI-RADS e Bethesda",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Nódulo de tireoide identificado (exame físico ou achado incidental de imagem)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Dosar TSH"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "TSH suprimido?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar cintilografia — nódulo hiperfuncionante (\"quente\") raramente é maligno; avaliar tratamento do hipertireoidismo associado"
+              }
+            ]
+          },
+          {
+            "label": "Não (normal ou elevado)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Prosseguir investigação estrutural do nódulo com ultrassonografia"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Realizar ultrassonografia cervical e estratificar risco pelo sistema TI-RADS (composição, ecogenicidade, formato, margens, focos ecogênicos)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Categoria TI-RADS e tamanho do nódulo atingem o limiar para PAAF?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Realizar punção aspirativa por agulha fina (PAAF) guiada por ultrassom — padrão-ouro para diferenciar nódulo benigno de maligno"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Resultado citológico pelo sistema Bethesda?",
+                "ramos": [
+                  {
+                    "label": "Benigno",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Seguimento clínico e ultrassonográfico periódico"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Indeterminado (atipia, neoplasia folicular)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Considerar painel molecular e/ou repetir PAAF; avaliar cirurgia conforme risco"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Suspeito para malignidade ou maligno",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Indicar tireoidectomia"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não — risco baixo/nódulo pequeno",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguimento ultrassonográfico periódico, sem PAAF imediata"
               }
             ]
           }
