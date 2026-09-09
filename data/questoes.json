@@ -95,7 +95,7 @@
     "tema": "Asma Exacerbada",
     "banca": "Exemplo — MedConduta",
     "ano": 2024,
-    "revisado": false,
+    "revisado": true,
     "fonte": "Global Initiative for Asthma (GINA) 2026",
     "enunciado": "Paciente com crise asmática apresenta ausência de sibilos à ausculta, confusão mental e uso intenso de musculatura acessória. Qual a interpretação correta?",
     "alternativas": [
@@ -37684,6 +37684,651 @@
     "banca": "Banco de questões — Estratégia MED (OBESID.pdf — Obesidade e Síndrome Metabólica)",
     "ano": 2024,
     "fonte": "Estratégia MED — banco de questões dedicado (Obesidade e Síndrome Metabólica)",
+    "revisado": true
+  },
+  {
+    "id": "q2055",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Menino de 5 anos, dermatite atópica e rinite alérgica, internações prévias por sibilância, admitido na emergência com febre até 39,5°C, tosse e dificuldade para respirar há 2 dias. Exame: FC 152bpm, FR 42irpm, murmúrio vesicular reduzido com estertores crepitantes em base direita e sibilos difusos, tiragem subdiafragmática/intercostal/de fúrcula, SatO2 92% em ar ambiente (96% em máscara de Venturi 50%). Radiografia realizada. Qual a prescrição inicial mais adequada e o antimicrobiano a introduzir?",
+    "alternativas": [
+      "Salbutamol 600mcg inalatório 3x (intervalo 20min); prednisolona 30mg VO agora; máscara de Venturi 50%; penicilina cristalina EV.",
+      "Salbutamol 200mcg inalatório 3x (intervalo 20min); prednisolona 30mg VO agora; máscara não reinalante de O2; azitromicina EV.",
+      "Salbutamol 200mcg inalatório 3x (intervalo 20min); SF 400ml EV agora; máscara não reinalante de O2; penicilina cristalina EV.",
+      "Salbutamol 600mcg inalatório 3x (intervalo 20min); SF 400ml EV agora; máscara de Venturi 50%; azitromicina EV."
+    ],
+    "correta": 0,
+    "comentario": "O quadro combina crise asmática (sibilos difusos, tiragem) com provável pneumonia bacteriana associada (estertores crepitantes localizados em base direita, febre alta, imagem radiológica) — cenário de exacerbação desencadeada por infecção bacteriana concomitante. Dose de salbutamol de 600mcg (6 puffs) é adequada para peso de 20kg; a máscara de Venturi permite ofertar FiO2 controlada para SatO2 92%; e penicilina cristalina cobre o patógeno bacteriano típico mais provável (pneumocócico) nesse contexto, sendo preferível à azitromicina como primeira escolha em pneumonia bacteriana típica grave internada.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2056",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Adolescente de 12 anos, obeso, asmático em tratamento irregular, chega com tosse seca, tempo expiratório prolongado, SEM sibilância, afebril. SatO2 90% em ar ambiente, bradipneico, gasometria com acidose respiratória. O tratamento inicial nesse caso é:",
+    "alternativas": [
+      "Intubação traqueal após sequência rápida com quetamina.",
+      "Nebulização inicial com salbutamol e magnésio intravenoso.",
+      "Salbutamol inalado contínuo e ventilação não invasiva confortável.",
+      "Salbutamol e metilprednisolona, ambos intravenosos."
+    ],
+    "correta": 0,
+    "comentario": "A ausência de sibilância associada a bradipneia e acidose respiratória (retenção de CO2) configura tórax silencioso funcional e exaustão respiratória — sinais de falência respiratória iminente que exigem intubação orotraqueal imediata, e não medidas inalatórias/VNI que perderiam tempo crítico. A quetamina é o agente de escolha para sequência rápida de intubação no asmático grave, por seu efeito broncodilatador adicional (ao contrário de outros indutores).",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2057",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Criança de 7 anos, coriza há 2 dias evoluindo com cansaço para respirar. Exame: regular estado geral, pálido, tiragem subdiafragmática e de fúrcula, SatO2 89% em ar ambiente, FR 40irpm, FC 135bpm, afebril. Murmúrio vesicular reduzido globalmente, sibilos inspiratórios e expiratórios, tempo expiratório prolongado. Asma prévia, uso contínuo de beclometasona. Iniciado salbutamol inalatório e corticoide sistêmico. Assinale a alternativa correta:",
+    "alternativas": [
+      "Crise de asma grave. Caso não responda ao salbutamol inalatório, mantendo-se em crise grave, deve-se fazer sulfato de magnésio.",
+      "Crise de asma moderada. Caso tenha resposta parcial ao salbutamol, passando a critérios de crise moderada/leve, deve-se fazer sulfato de magnésio.",
+      "Crise de asma grave. Como o sulfato de magnésio não é liberado para essa faixa etária, deve-se fazer intubação orotraqueal de imediato caso não responda.",
+      "Crise de asma moderada. Devemos associar brometo de ipratrópio ao salbutamol caso tenha resposta parcial.",
+      "Crise de asma grave. Devemos preferir corticoide endovenoso, pois sua absorção é mais lenta por via oral."
+    ],
+    "correta": 0,
+    "comentario": "SatO2 89%, sibilos bilaterais com murmúrio reduzido e uso de musculatura acessória classificam a crise como grave. Sulfato de magnésio endovenoso é indicado justamente na crise GRAVE refratária ao tratamento inicial com broncodilatador (não na moderada/leve, nem contraindicado por idade) — é liberado para crianças. A opção sobre corticoide EV inverte o conceito: a via oral tem absorção rápida e eficácia equivalente à endovenosa (não mais lenta), sendo preferida quando tolerada.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2058",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Criança de 7 anos, dispneia e sibilância há 3 horas, sem resposta a 8 puffs de salbutamol em casa. Chega agitada, fala entrecortada, FR 34irpm, FC 120bpm, SatO2 89% em ar ambiente, sibilos difusos, tiragem intercostal e subcostal. Assinale a melhor proposta terapêutica de acordo com o GINA:",
+    "alternativas": [
+      "Máscara de O2 para SatO2 94-98%, salbutamol, ipratrópio e corticoide endovenoso.",
+      "Máscara de O2 para SatO2 98-100%, salbutamol, corticoide inalatório e aminofilina.",
+      "Máscara de O2 para SatO2 94-98%, terbutalina, ipratrópio e corticoide oral.",
+      "Máscara de O2 para SatO2 98-100%, salbutamol, corticoide endovenoso e sulfato de magnésio.",
+      "Máscara de O2 para SatO2 94-98%, salbutamol, aminofilina e corticoide oral ou endovenoso."
+    ],
+    "correta": 0,
+    "comentario": "A meta de saturação de oxigênio na crise asmática é 94-98% (não 98-100%, que representa hiperoxigenação desnecessária) — associada a salbutamol, ipratrópio (crise grave) e corticoide sistêmico. Aminofilina não tem lugar no tratamento de primeira linha (perfil de segurança desfavorável, sem benefício adicional comprovado) e terbutalina/sulfato de magnésio são reservados a estágios mais avançados da crise refratária, não como conduta inicial deste caso.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2059",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Escolar de 6 anos, asmático, dificuldade para respirar iniciada hoje, sem uso de medicação prévia. Exame: dificuldade para conversar (frases curtas), prefere ficar sentado, FC 110bpm, murmúrio vesicular diminuído com sibilos intensos, uso de musculatura acessória, FR 28irpm, SatO2 92% em ar ambiente. A conduta inicial mais adequada é:",
+    "alternativas": [
+      "Salbutamol inalatório a cada 20min na 1ª hora.",
+      "Salmeterol inalatório e reavaliação em 20min.",
+      "Salbutamol inalatório a cada 20min na 1ª hora e metilprednisolona endovenosa.",
+      "Salmeterol inalatório, metilprednisolona endovenosa e reavaliação em 20min.",
+      "Salbutamol inalatório a cada 20min na 1ª hora e prednisolona oral."
+    ],
+    "correta": 4,
+    "comentario": "Crise moderada/grave (frases curtas, musculatura acessória, SatO2 92%) exige broncodilatador de curta ação repetido (salbutamol a cada 20min na 1ª hora) associado a corticoide sistêmico precoce — a via ORAL (prednisolona) é preferida quando tolerada, com eficácia equivalente à endovenosa e menor invasividade. Salmeterol (LABA) NUNCA é usado como broncodilatador de resgate na crise aguda, por seu início de ação lento.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2060",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Criança de 9 anos, asmática, crise aguda grave com febre (38,5°C), SatO2 89% em ar ambiente, sibilos difusos, musculatura acessória. Tratamento inicial: O2 por cateter nasal + broncodilatador em aerossol com espaçador (5 jatos a cada 20min por 1h). Resposta parcial: sibilos esparsos residuais, musculatura acessória mantida, SatO2 93% com O2. Qual medicação deve ser incluída imediatamente?",
+    "alternativas": [
+      "Antibioticoterapia para Gram-positivo por via venosa.",
+      "Broncodilatador de longa duração, 2 jatos, com espaçador.",
+      "Corticoide por via oral (prednisona) 1-2mg/kg de peso.",
+      "Epinefrina (adrenalina) por via intramuscular, dose única."
+    ],
+    "correta": 2,
+    "comentario": "Diante de resposta parcial ao broncodilatador na 1ª hora, o corticoide sistêmico (prednisona oral 1-2mg/kg) deve ser prontamente incluído, reduzindo a inflamação de base e a recorrência — não deve ser postergado quando a resposta inicial é insuficiente. Broncodilatador de longa duração não tem papel na crise aguda; antibiótico não é indicado sem evidência de infecção bacteriana; e adrenalina IM é reservada a contextos de anafilaxia, não crise asmática isolada.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2061",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Criança de 4 anos, exacerbação de asma, agitada, fala entrecortada, oximetria 90% em ar ambiente, FR 42irpm, FC 155bpm, murmúrio vesicular muito diminuído com raros sibilos. Após monitorização e oxigênio, seguindo o GINA, deve-se:",
+    "alternativas": [
+      "Iniciar SABA inalatório (6 puffs); repetir a cada 20min; considerar ipratrópio; se falha na 1ª hora, prednisolona 2mg/kg.",
+      "Iniciar SABA inalatório (2 puffs); repetir a cada 20min; considerar ipratrópio; se falha na 1ª hora, prednisolona 1mg/kg.",
+      "Iniciar SABA inalatório (6 puffs); repetir a cada 20min, sem ipratrópio; se falha, prednisolona 1mg/kg e substituir por terbutalina IV.",
+      "Iniciar SABA inalatório (2 puffs); repetir a cada 20min, sem ipratrópio; se falha, prednisolona 1mg/kg e substituir por terbutalina IV.",
+      "Iniciar SABA inalatório (6 puffs); repetir a cada 20min; considerar ipratrópio; se falha, corticoide inalatório."
+    ],
+    "correta": 0,
+    "comentario": "Murmúrio vesicular muito diminuído com raros sibilos, em criança agitada com fala entrecortada e SatO2 90%, caracteriza crise grave — a dose de SABA inicial recomendada nessa gravidade é mais alta (6 puffs, não 2), com associação de ipratrópio já considerada desde o início, e prednisolona 2mg/kg (dose maior que a habitual de manutenção) se houver falha na 1ª hora. Corticoide inalatório NÃO substitui o corticoide sistêmico em caso de falha terapêutica.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2062",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Menina, 12 anos, asma em acompanhamento irregular, desconforto respiratório e tosse pouco produtiva há 6h. Pai administrou 20 jatos de salbutamol há 20min. Exame (incompleto, criança só aceita ficar sentada): fala entrecortada, agitação, FR 42irpm, SpO2 91% em ar ambiente, batimento de asa de nariz, retração de fúrcula e tiragem intercostal. O manejo inicial mais adequado é:",
+    "alternativas": [
+      "Repetir o salbutamol; solicitar Rx de tórax; não ofertar O2 suplementar.",
+      "Não repetir o salbutamol; prescrever corticoide oral e solicitar Rx de tórax.",
+      "Repetir o salbutamol; prescrever corticoide oral e ofertar O2 suplementar.",
+      "Iniciar agonista de longa duração do receptor beta-adrenérgico e corticoide oral."
+    ],
+    "correta": 2,
+    "comentario": "Mesmo após uso domiciliar recente de salbutamol, a crise grave persistente (fala entrecortada, agitação, SpO2 91%, tiragem) exige continuar/repetir o broncodilatador de curta ação, associar corticoide sistêmico precoce e ofertar oxigênio suplementar para manter a meta de saturação — a resposta domiciliar prévia não contraindica a continuidade do SABA no serviço de emergência. Broncodilatador de longa duração nunca é usado como resgate agudo.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2063",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Menino, 8 anos, asma controlada, sensibilização a gatos, corticoide inalatório dose baixa. Admitido com tosse e cansaço há 2h após contato com gatos. Exame: bom estado geral, orientado, fala satisfatória, leve tiragem intercostal e subdiafragmática. FC 98bpm, FR 28irpm, SatO2 95% em ar ambiente, sibilos expiratórios bilaterais. A conduta adequada é:",
+    "alternativas": [
+      "O2 suplementar de baixo fluxo, broncodilatador inalatório, corticosteroide endovenoso. Solicitar Rx de tórax e gasometria arterial.",
+      "Oxigenoterapia suplementar, broncodilatador inalatório, corticosteroides orais de 12/12h. Colher gasometria arterial antes de iniciar terapêutica.",
+      "Sala de emergência, monitorização cardíaca, O2 suplementar, gasometria arterial, broncodilatador inalatório, corticosteroide endovenoso.",
+      "Broncodilatador inalatório e corticosteroide oral. Não estão indicados exames complementares neste momento, pela estabilidade clínica."
+    ],
+    "correta": 3,
+    "comentario": "Crise leve (fala satisfatória, tiragem discreta, SatO2 95% em ar ambiente, sem agitação ou uso importante de musculatura acessória) não exige exames complementares de rotina (gasometria, radiografia) nem O2 suplementar ou corticoide endovenoso — o tratamento adequado e proporcional é broncodilatador inalatório associado a corticoide sistêmico por via oral, com observação clínica.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2064",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Mesmo caso do menino de 8 anos com crise leve por exposição a gatos (fala satisfatória, leve tiragem, FC 98, FR 28, SatO2 95% em ar ambiente, sibilos expiratórios bilaterais). Classifique a crise de asma:",
+    "alternativas": [
+      "Leve",
+      "Grave",
+      "Moderada",
+      "Intensa"
+    ],
+    "correta": 0,
+    "comentario": "Fala satisfatória (frases completas), tiragem discreta, SatO2 ≥94% em ar ambiente e ausência de agitação/confusão classificam a crise como LEVE — reforça a importância de integrar múltiplos parâmetros clínicos (não apenas um isolado) na classificação de gravidade.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2065",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Menino, 8 anos, PS, agitado, taquidispneico, retração intercostal/subdiafragmática moderada, FR 36irpm, SatO2 92% em ar ambiente. Ausculta com MV diminuído globalmente e sibilos difusos. Usou salbutamol 2x (4 puffs cada) no trajeto. Segundo GINA 2020, qual a conduta mais adequada quanto ao fornecimento de oxigênio?",
+    "alternativas": [
+      "Não há necessidade de O2 suplementar, pois SatO2 está acima de 90%.",
+      "Máscara simples de O2, pois fornece concentrações acima de 60%.",
+      "Cateter de O2 com fluxo de 2L/min, mantendo SatO2 alvo acima de 92%.",
+      "Máscara de Venturi com FiO2 de 50%, mantendo SatO2 alvo acima de 94%."
+    ],
+    "correta": 3,
+    "comentario": "A meta de saturação recomendada pelo GINA na crise asmática é 94-98% — por isso a oferta de O2 deve ser titulada para alcançar SatO2 acima de 94% (não apenas 90% ou 92%, metas insuficientes), com dispositivo capaz de fornecer FiO2 controlada e adequada como a máscara de Venturi.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2066",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Menina, 12 anos, asma desde os 2 anos, sem tratamento contínuo. Tosse, chiado, dispneia e vômitos há 1 dia. Exame: FR 38irpm, FC 118bpm, SatO2 91%, PFE 40% do predito, dispneia moderada com tiragens, sibilos expiratórios, consciente e acianótica. O tratamento inicial ideal seria B2-agonista de ação curta inalatório:",
+    "alternativas": [
+      "em doses elevadas e repetidas e, caso não haja resposta na 1ª hora, corticoide endovenoso.",
+      "em doses elevadas e repetidas associado a brometo de ipratrópio e corticoide endovenoso.",
+      "em doses habituais e repetidas e, caso não haja resposta na 1ª hora, corticoide endovenoso.",
+      "em doses habituais e repetidas associado a aminofilina endovenosa."
+    ],
+    "correta": 1,
+    "comentario": "PFE 40% do predito já classifica a crise como GRAVE (≤50%), justificando associação imediata de brometo de ipratrópio ao SABA em doses elevadas desde o início, junto a corticoide sistêmico — não se espera a resposta da 1ª hora para associar ipratrópio nesse grau de gravidade. Aminofilina não tem lugar no tratamento de primeira linha.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2067",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Menino, 9 anos, crise de asma há 2 dias, histórico de crises desde os 4 anos (>3 episódios/mês no passado), sem tratamento preventivo. Exame: agitado, falando pouco, FR 36irpm, FC 120bpm, SaO2 90%, sibilância moderada disseminada. Assinale a opção correta quanto à conduta e orientação na avaliação da alta hospitalar:",
+    "alternativas": [
+      "Prescrever amoxicilina oral em domicílio, para evitar infecção respiratória secundária.",
+      "O paciente pode receber alta se a SatO2 em ar ambiente se mantiver entre 91-93% por, no mínimo, 12h.",
+      "Prescrever corticoide oral e salbutamol spray por 5 dias e corticoide inalatório após esse período, além de encaminhamento à atenção primária.",
+      "Realizar radiografia de tórax antes da alta hospitalar para verificação da área pulmonar e cardíaca."
+    ],
+    "correta": 2,
+    "comentario": "A alta hospitalar segura após crise exige manutenção de broncodilatador de resgate e corticoide oral por curso curto (5 dias), reintrodução/ajuste do corticoide inalatório de manutenção após esse período, e encaminhamento para seguimento ambulatorial — essencial dado o histórico de mau controle prévio (sem tratamento preventivo). Antibiótico não é indicado sem evidência de infecção bacteriana; a meta de alta exige SatO2 mais próxima do normal (não apenas 91-93%) e de forma sustentada; e radiografia não é rotineiramente necessária antes da alta em crise sem sinais de complicação.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2068",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Mesmo caso do menino de 9 anos com crise há 2 dias, histórico de má adesão preventiva, agitado, FR 36irpm, FC 120bpm, SaO2 90%, sibilância moderada disseminada. A conduta médica adequada na primeira hora de atendimento consiste em:",
+    "alternativas": [
+      "Prescrever resgate com 4 jatos de salbutamol spray de 20 em 20min e O2 suplementar por cateter nasal.",
+      "Administrar metilprednisolona intravenosa na dose de 40mg/kg.",
+      "Fazer dose de ataque de salbutamol endovenoso, 50mcg/kg, correr em 5 minutos.",
+      "Administrar adrenalina intramuscular em dose única, de 0,6mg/kg."
+    ],
+    "correta": 0,
+    "comentario": "A conduta padrão na 1ª hora é broncodilatador de curta ação inalatório repetido (salbutamol a cada 20min) associado a oxigênio suplementar conforme necessário — via inalatória é preferida à endovenosa (opção C tem dose e via inadequadas para prática padrão) e a dose de corticoide da opção B é excessiva/incorreta para o contexto. Adrenalina IM não é indicada rotineiramente na crise asmática isolada (reservada a anafilaxia).",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2069",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Paciente, 6 anos, rinite alérgica e dermatite atópica, tosse e sibilância há 2h, diagnóstico de asma aguda. Recebeu salbutamol inalatório (4x, intervalos de 15min), corticoide e O2 a 2L/min. Ainda assim, disfunção respiratória mantida e SatO2 90%. Qual medicação pode ser considerada MAIS adequada para esse momento?",
+    "alternativas": [
+      "Fenoterol, por inalação.",
+      "Sulfato de magnésio, intravenoso.",
+      "Quetamina, intravenosa.",
+      "Adrenalina, intramuscular.",
+      "Aminofilina, intravenosa."
+    ],
+    "correta": 1,
+    "comentario": "Diante de crise refratária ao tratamento inicial otimizado (broncodilatador repetido + corticoide + O2), o sulfato de magnésio endovenoso é a próxima medida indicada, com evidência de redução de necessidade de internação nesses casos. Trocar apenas o beta-agonista (fenoterol) não acrescentaria benefício adicional relevante; quetamina é reservada à sequência de intubação (não indicada nesse estágio); adrenalina IM é para anafilaxia; e aminofilina IV não tem lugar por perfil desfavorável de segurança/eficácia.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2070",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "A crise asmática (exacerbação) é uma das emergências mais comuns nos serviços de emergência pediátrica. Considerando o manejo atual, assinale a alternativa correta:",
+    "alternativas": [
+      "O sulfato de magnésio é indicado nas exacerbações graves, tem efeito imediato e pode ser repetido até 3 vezes.",
+      "O corticoide intravenoso tem efeito superior ao corticoide oral, portanto é o indicado na crise asmática.",
+      "A oxigenoterapia não é prioridade no manejo da exacerbação da asma.",
+      "O uso da adrenalina é desencorajado, devido a efeitos colaterais indesejáveis, como arritmias e isquemia miocárdica.",
+      "O uso de aminofilina intravenosa previne o risco de intubação."
+    ],
+    "correta": 3,
+    "comentario": "A adrenalina sistêmica é evitada na crise asmática comum (reservada a anafilaxia) justamente pelo risco de efeitos cardiovasculares adversos (arritmias, isquemia miocárdica), já que existem broncodilatadores beta-2 seletivos mais seguros disponíveis. O sulfato de magnésio não tem efeito imediato nem é rotineiramente repetido 3 vezes; corticoide oral e endovenoso têm eficácia EQUIVALENTE (não superior a EV); oxigenoterapia É prioridade no manejo; e aminofilina IV não reduz comprovadamente o risco de intubação, tendo perfil de segurança desfavorável.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2071",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Menino, 6 anos, asma prévia, crise há 1 dia, transferido de UPA. Na origem: regular estado geral, pálido, hipoativo, fala entrecortada, FC 140bpm, FR 45irpm, SatO2 92% em máscara não-reinalante, MV globalmente diminuído, tempo expiratório prolongado, tiragem subdiafragmática/intercostal/de fúrcula. Recebeu corticoide sistêmico + salbutamol + ipratrópio inalatórios por 1h. Chega ao serviço atual: regular estado geral, corado, FC 145bpm, FR 36irpm, alerta e orientado, MV presente com sibilos difusos, tiragem mantida, SatO2 93% em máscara não-reinalante. A próxima medida a ser instituída deve ser:",
+    "alternativas": [
+      "Administrar salbutamol e ipratrópio inalatórios de 3 em 3 horas.",
+      "Sedar e proceder intubação orotraqueal.",
+      "Sedar e colocar em ventilação não invasiva.",
+      "Administrar sulfato de magnésio endovenoso."
+    ],
+    "correta": 3,
+    "comentario": "Apesar da melhora parcial (alerta, MV agora presente), o paciente permanece em crise grave após 1 hora de tratamento otimizado (broncodilatador + ipratrópio + corticoide sistêmico) sem resolução completa — indicação clara de escalonamento com sulfato de magnésio endovenoso. Espaçar o broncodilatador para 3/3h seria insuficiente diante da gravidade mantida; intubação/VNI são prematuras neste momento, já que o paciente está alerta, sem sinais de falência respiratória iminente.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2072",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Criança de 4 anos com asma aguda grave, internada na UTI, em uso de beta-agonista. Dos efeitos colaterais podemos esperar, EXCETO:",
+    "alternativas": [
+      "Isquemia miocárdica.",
+      "Tremores.",
+      "Hipercalemia.",
+      "Taquicardia.",
+      "Hipoxemia."
+    ],
+    "correta": 2,
+    "comentario": "Beta-agonistas causam HIPOcalemia (não hipercalemia), por deslocamento intracelular de potássio mediado por estimulação beta-2 — efeito adverso metabólico clássico e frequentemente cobrado, junto a tremores, taquicardia (estimulação beta-1 cruzada em doses altas) e, em casos extremos, isquemia miocárdica e hipoxemia transitória (por efeito V/Q mismatch, vasodilatação pulmonar em áreas mal ventiladas).",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2073",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Pré-escolar, 4 anos, acompanhamento por asma brônquica, tosse e falta de ar durante a noite. Exame: desconforto respiratório, SatO2 90% em ar ambiente, sibilos difusos. Após 3 ciclos de beta-agonista de curta ação sem melhora significativa, mantido a cada 20min + prednisona oral. Após 1h, ainda com sibilos e dificuldade respiratória, SatO2 92% em O2 suplementar. Internado. Analise: I - Deve receber corticosteroides EV por serem mais eficazes que VO. II - Fisioterapia torácica não é recomendada no manejo inicial. III - Exacerbação grave em crianças raramente provoca insuficiência respiratória com necessidade de VM. Estão corretas:",
+    "alternativas": [
+      "I apenas.",
+      "I e II apenas.",
+      "I e III apenas.",
+      "II e III apenas.",
+      "I, II e III."
+    ],
+    "correta": 3,
+    "comentario": "As afirmativas II e III estão corretas: fisioterapia torácica não tem papel comprovado no manejo agudo da crise asmática, e a necessidade de ventilação mecânica é, de fato, uma complicação relativamente rara mesmo em exacerbações graves pediátricas (a maioria responde ao tratamento clínico otimizado). A afirmativa I está incorreta: corticosteroide oral e endovenoso têm eficácia EQUIVALENTE — a via oral não é inferior, sendo preferida quando tolerada, por menor invasividade.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2074",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Na criança em estado de mal asmático, é correto afirmar que:",
+    "alternativas": [
+      "a intubação traqueal precoce evita complicações da hipoxemia e hipercapnia graves.",
+      "o sulfato de magnésio intravenoso é terapia broncodilatadora adjuvante e tem bom perfil de segurança.",
+      "a inalação com altas doses de salbutamol (0,5mg/kg/hora) é contraindicada por causar taquicardia extrema.",
+      "a aminofilina intravenosa tem bom perfil de segurança e deve ser usada nos casos refratários à inalação com doses habituais de fenoterol."
+    ],
+    "correta": 1,
+    "comentario": "O sulfato de magnésio intravenoso tem bom perfil de segurança e é terapia broncodilatadora adjuvante estabelecida para crises graves refratárias. Intubação precoce/eletiva NÃO é recomendada rotineiramente (reservada a falência respiratória real, pelo próprio risco procedimental em vias aéreas hiper-reativas); salbutamol inalatório em altas doses, embora possa causar taquicardia, não é contraindicado nesse contexto (o benefício supera o risco monitorado); e aminofilina IV tem perfil de segurança desfavorável (janela terapêutica estreita, arritmias), não sendo recomendada como escalonamento padrão.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2075",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Com relação à crise aguda de asma, na emergência:",
+    "alternativas": [
+      "Os corticoides inalados são indicados em doses elevadas e associados a beta-2-agonistas de longa duração.",
+      "A adrenalina subcutânea é uma boa opção broncodilatadora.",
+      "Mucolíticos associados à tapotagem podem acelerar o processo de recuperação da crise.",
+      "O uso de sulfato de magnésio IV pode reduzir a necessidade de internação nos pacientes que não respondem aos broncodilatadores e ao uso de corticoide sistêmico."
+    ],
+    "correta": 3,
+    "comentario": "O sulfato de magnésio IV tem evidência de reduzir a necessidade de internação em pacientes refratários ao tratamento inicial (broncodilatador + corticoide sistêmico) — indicação central e bem estabelecida. Corticoide inalatório em altas doses não substitui o corticoide sistêmico na crise aguda; adrenalina subcutânea não é broncodilatador de escolha na asma comum; e mucolíticos/tapotagem não têm papel comprovado e podem até piorar o broncoespasmo.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2076",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Escolar de 6 anos, crise de tosse emetizante há 12h, tosse, chiado, dispneia e vômitos. Exame: lúcido, orientado, acianótico, afebril, FR 33irpm, FC 128bpm, SatO2 91%, dispneia moderada com retração subdiafragmática, sibilos expiratórios. O tratamento indicado neste momento é:",
+    "alternativas": [
+      "Corticosteroide oral",
+      "Aminofilina intravenosa",
+      "Corticosteroide intravenoso",
+      "Adrenalina subcutânea",
+      "Beta-2-agonistas de ação curta por via inalatória"
+    ],
+    "correta": 4,
+    "comentario": "A primeira medida terapêutica em qualquer crise asmática, independentemente da via de administração do corticoide, é o broncodilatador de curta ação inalatório — deve preceder ou ser concomitante ao corticoide, não substituído por ele. As demais opções (aminofilina, adrenalina subcutânea) não são de primeira linha; corticoide isolado sem broncodilatador não é a conduta inicial correta.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2077",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Segundo o GINA 2019, qual alternativa contempla somente critérios de crise aguda de asma grave/severa em crianças abaixo de 5 anos?",
+    "alternativas": [
+      "Agitação, SatO2 < 94%, tórax silencioso e inabilidade em falar frases.",
+      "Agitação, SatO2 < 92%, diminuição de murmúrio vesicular em bases e inabilidade em falar palavras.",
+      "Confusão e/ou agitação, SatO2 < 90%, tórax silencioso e inabilidade em falar frases.",
+      "Irritabilidade, FC > 220bpm, SatO2 < 94% e inabilidade em falar frases.",
+      "Confusão e/ou agitação, SatO2 < 92%, tórax silencioso e inabilidade em falar palavras."
+    ],
+    "correta": 4,
+    "comentario": "Nas crianças menores de 5 anos, o GINA usa um corte de SatO2 <92% (não <90%, usado para adultos/crianças maiores em crise com risco de morte) para definir gravidade extrema, combinado a confusão/agitação, tórax silencioso e incapacidade de falar mesmo palavras isoladas (não apenas frases, já que crianças pequenas têm vocabulário mais limitado) — distinção etária importante e frequentemente cobrada.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2078",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Criança de 8 anos, febre baixa/coriza/tosse há 2 dias, piora nas últimas 24h com dispneia, chieira e dor torácica. 2-3 crises semelhantes/ano desde os 4 anos, sem internações no último ano. Responde com frases, prefere ficar sentado. FC 110bpm, FR 25irpm, SatO2 92%, PFE 60% do previsto. Sibilos ins/expiratórios difusos, tempo expiratório prolongado. A conduta terapêutica inicial ('dose de ataque') MAIS ADEQUADA é prescrever:",
+    "alternativas": [
+      "β2-agonista de curta duração + brometo de ipratrópio, inalador dosimetrado com espaçador, 4 jatos de 30 em 30min por 2h.",
+      "β2-agonista de curta duração, inalador dosimetrado com espaçador, 4 jatos de 20 em 20min por 1h.",
+      "Micronebulização com β2-agonista de curta duração e SF 0,9%, de 20 em 20min por 1h.",
+      "Micronebulização com β2-agonista de curta duração e brometo de ipratrópio, de 30 em 30min por 2h."
+    ],
+    "correta": 1,
+    "comentario": "PFE 60% do previsto e demais achados classificam a crise como moderada — a conduta padrão de 'dose de ataque' é β2-agonista de curta duração isolado (sem necessidade de ipratrópio associado desde o início, reservado a crises graves) via inalador dosimetrado com espaçador (tão eficaz e mais custo-efetivo que micronebulização), repetido a cada 20min na 1ª hora, e não a intervalos maiores (30min) ou por período mais longo (2h) que retardariam o tratamento adequado.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2079",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Sobre os fatores de risco para exacerbação da asma em adolescentes, assinale a alternativa INCORRETA:",
+    "alternativas": [
+      "Obesidade.",
+      "Eosinofilia no sangue.",
+      "Rinite alérgica.",
+      "VEF1 maior que 80%."
+    ],
+    "correta": 3,
+    "comentario": "VEF1 >80% (função pulmonar preservada) é fator de BOM prognóstico/controle, não de risco para exacerbação — por isso é a afirmativa incorreta pedida (o correto seria VEF1 REDUZIDO como fator de risco). Obesidade, eosinofilia sanguínea e rinite alérgica são, sim, fatores de risco reconhecidos para exacerbação.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2080",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Menino de 3 anos, rinorreia hialina, febre, tosse seca e sibilância há 2 dias, com piora súbita da dispneia nas últimas 4h. Sibilância prévia conhecida. Exame: sonolenta, afebril, entrada de ar MUITO reduzida bilateralmente, SEM sibilos no momento, FR 66irpm, esforço respiratório importante, SatO2 85% em ar ambiente, FC 160bpm, pulsos cheios, TEC <2s. Assinale a alternativa CORRETA quanto ao reconhecimento, classificação e manejo:",
+    "alternativas": [
+      "Exacerbação moderada — ofertar O2 suplementar em cateter nasal a 2L/min imediatamente.",
+      "Exacerbação grave — colocar em fonte de O2 suplementar, iniciar corticoide venoso e proceder Rx de tórax com urgência.",
+      "Exacerbação grave — ofertar O2 e prontamente administrar doses repetidas de B2-agonista inalatório na 1ª hora, reavaliando em seguida.",
+      "Exacerbação MUITO GRAVE — a infusão de sulfato de magnésio deve ser administrada o mais precoce possível, junto à oferta de O2 suplementar."
+    ],
+    "correta": 3,
+    "comentario": "A ausência de sibilos associada a entrada de ar muito reduzida, sonolência (rebaixamento do nível de consciência) e SatO2 85% caracteriza tórax silencioso e falência respiratória iminente — quadro MUITO GRAVE, não apenas grave ou moderado. Nesse estágio extremo, medidas de primeira linha padrão (apenas B2-agonista seriado) são insuficientes: já se justifica associar sulfato de magnésio precocemente, junto à oxigenação, com preparo para possível suporte ventilatório avançado.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2081",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Kaylane, 8 anos, asma brônquica, desconforto respiratório, tosse seca, agitação psicomotora, incapaz de falar palavras completas, tiragem subcostal intensa. MV diminuídos com sibilos expiratórios. Oximetria 88%. Assinale a alternativa INCORRETA:",
+    "alternativas": [
+      "O tratamento inicial deverá basear-se em O2, beta2-agonistas e corticoide.",
+      "O brometo de ipratrópio é medicação adjuvante e trará benefícios, mesmo após o atendimento na sala vermelha.",
+      "O uso do sulfato de magnésio poderá ser necessário.",
+      "A mistura hélio-oxigênio pode ajudar no tratamento, mesmo com FiO2 menores.",
+      "Caso seja necessária a intubação, manter volume corrente alto é importante, mesmo com frequência respiratória menor."
+    ],
+    "correta": 4,
+    "comentario": "É INCORRETO recomendar volume corrente ALTO na ventilação mecânica do asmático grave intubado — a estratégia correta é justamente o OPOSTO: baixo volume corrente, frequência respiratória baixa e tempo inspiratório curto (hipoventilação controlada/'permissive hypercapnia'), para evitar hiperinsuflação dinâmica, auto-PEEP e barotrauma em vias aéreas já hiper-insufladas. As demais afirmativas (tratamento inicial padrão, ipratrópio adjuvante, magnésio se necessário, hélio-oxigênio reduzindo resistência ao fluxo mesmo com FiO2 menor) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2082",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Assinale a alternativa correta quanto à conduta no manejo da crise de asma na infância:",
+    "alternativas": [
+      "A efetividade do corticoesteroide injetável, comparada ao oral, é superior especialmente em casos graves.",
+      "O uso de broncodilatador deve ser iniciado em casa, em crianças com episódios prévios de sibilância, assim que os sintomas forem percebidos.",
+      "Para determinar a gravidade da crise, devem ser considerados todos os sintomas apresentados.",
+      "A radiografia de tórax deve ser sempre solicitada, especialmente em casos de suspeita de complicações e/ou infecção bacteriana associada."
+    ],
+    "correta": 2,
+    "comentario": "A classificação de gravidade da crise asmática deve integrar múltiplos parâmetros clínicos simultaneamente (fala, FR, uso de musculatura acessória, ausculta, SatO2, nível de consciência) — nenhum sinal isolado define a gravidade sozinho. Corticoide injetável NÃO é superior ao oral (eficácia equivalente); broncodilatador domiciliar precoce é útil mas a afirmativa generaliza como regra absoluta sem particularizar plano de ação individualizado; e radiografia de tórax NÃO é solicitada rotineiramente em toda crise — reservada a suspeita específica de complicação (pneumotórax, pneumonia, corpo estranho), não 'sempre'.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2083",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Das alternativas abaixo, qual apresenta o fator de risco mais fortemente associado a crises de asma fatais ou quase fatais?",
+    "alternativas": [
+      "Uso pouco frequente de corticosteroides sistêmicos.",
+      "Asma lábil, com poucas variações de função pulmonar.",
+      "História de internação prévia por asma grave em UTI, com ou sem suporte ventilatório.",
+      "Cinco ou mais visitas à emergência ou três ou mais hospitalizações por asma no último semestre."
+    ],
+    "correta": 2,
+    "comentario": "História de internação prévia em UTI por asma grave (com ou sem necessidade de suporte ventilatório) é o fator de risco isolado mais fortemente associado a crises fatais/quase fatais subsequentes — identifica um subgrupo de pacientes de altíssimo risco que exige vigilância e manejo particularmente agressivo em toda nova crise. Uso FREQUENTE (não pouco frequente) de corticoide sistêmico e asma LÁBIL (grande variabilidade, não pouca) são, na verdade, os fatores de risco reais — as opções A e B invertem os conceitos.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2084",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Criança de 12 anos, falta de ar, tosse seca há 24h, sem febre. Exame: regular estado geral, corada, hidratada, FC 120bpm, FR 42irpm, SatO2 92% em ar ambiente, sibilos expiratórios difusos. Marque a alternativa com a melhor conduta:",
+    "alternativas": [
+      "Oxigenoterapia e aminofilina venosa.",
+      "Corticoide venoso e nebulização com soro fisiológico.",
+      "Nebulização com soro fisiológico e corticoide venoso.",
+      "Corticoide inalatório e adrenalina subcutânea.",
+      "Nebulização com β2-agonista e oxigenoterapia."
+    ],
+    "correta": 4,
+    "comentario": "A conduta correta e proporcional a uma crise moderada (SatO2 92%, sibilos difusos, taquipneia) é broncodilatador β2-agonista inalatório associado a oxigenoterapia titulada para a meta de saturação — nebulização apenas com soro fisiológico (sem broncodilatador) não trata o broncoespasmo, aminofilina/adrenalina não são primeira linha, e corticoide inalatório não substitui o sistêmico quando indicado.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2085",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Sobre o manejo da crise asmática na criança, considere: I - Nas crianças acima de 6 anos, aceita-se SatO2 de 90% como adequada e não se indica oxigenoterapia. II - Determinar a gravidade da crise implica na escolha do dispositivo inalatório a ser utilizado. III - A dispneia súbita no paciente asmático não define necessariamente o diagnóstico de crise. IV - O uso do sulfato de magnésio é reservado aos pacientes que não responderam à terapia inicial da crise. Assinale a alternativa CORRETA:",
+    "alternativas": [
+      "Somente I e II são corretas.",
+      "Somente I e IV são corretas.",
+      "Somente III e IV são corretas.",
+      "Somente I, II e III são corretas.",
+      "Somente II, III e IV são corretas."
+    ],
+    "correta": 4,
+    "comentario": "II, III e IV estão corretas: a gravidade da crise orienta o dispositivo/via de administração do broncodilatador (nebulização vs. espaçador, doses); dispneia súbita em asmático pode ter outras causas (não confirma automaticamente crise asmática — diagnóstico diferencial sempre necessário); e sulfato de magnésio é reservado a refratários ao tratamento inicial. A afirmativa I está incorreta: a meta de SatO2 recomendada é sempre mais próxima do normal (94-98%), e SatO2 90% já indica necessidade de oxigenoterapia suplementar, não é considerada 'adequada' dispensando O2.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2086",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Em pacientes com asma, são fatores de agravo ou complicações da doença:",
+    "alternativas": [
+      "Anorexia, atopia, insônia",
+      "Obesidade, tabagismo, e doença do refluxo gastroesofágico (DRGE)",
+      "Apneia, atopia, e anorexia",
+      "Obesidade, colagenose, e DRGE",
+      "Febre, atopia e cianose"
+    ],
+    "correta": 1,
+    "comentario": "Obesidade, tabagismo (ativo ou passivo) e DRGE são comorbidades/fatores reconhecidamente associados a pior controle e maior risco de exacerbação da asma — todos modificáveis e que devem ser ativamente rastreados e tratados no seguimento do paciente asmático, distinguindo o 'asmático grave verdadeiro' do 'asmático não controlado' por fatores associados tratáveis.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2087",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Paciente de 9 anos, atendido em pronto-socorro com broncoconstrição e sibilância, diagnóstico de asma há 5 anos, em acompanhamento regular. Prescrição habitual: budesonida inalatória; salbutamol; montelucaste; e brometo de ipratrópio. Das substâncias prescritas, quais são indicadas na fase de EXACERBAÇÃO da crise asmática?",
+    "alternativas": [
+      "Brometo de ipratrópio e salbutamol",
+      "Salbutamol e budesonida inalatória",
+      "Montelucaste e brometo de ipratrópio",
+      "Budesonida inalatória e montelucaste",
+      "Salbutamol e montelucaste"
+    ],
+    "correta": 0,
+    "comentario": "Salbutamol (broncodilatador de resgate) e brometo de ipratrópio (adjuvante em crises moderadas/graves) são as medicações de ação rápida indicadas especificamente na fase aguda da exacerbação. Budesonida inalatória isolada (sem formoterol) e montelucaste são medicações de MANUTENÇÃO/controle a longo prazo, sem papel imediato no alívio da crise aguda em curso.",
+    "banca": "Banco de questões — Estratégia MED (Asma.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2088",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Paciente do sexo feminino, 33 anos, dispneia aos moderados/grandes esforços há 6 meses, associada a chiado no peito e tosse seca, desencadeados por mudança do tempo e contato com poeira, piores pela manhã e à noite, melhorando espontaneamente. Piora há 1 mês: tosse com escarro claro diário, dispneia, aperto no peito e chiado. Epigastralgia com alimentos gordurosos. Tabagista 10 anos-maço. 'Bronquite' na infância. Exame: SpO2 98%, FR 18irpm, FC 88bpm, PA 120x80mmHg, sibilos difusos. Qual o diagnóstico da paciente?",
+    "alternativas": [
+      "Asma.",
+      "DPOC.",
+      "Rinossinusopatia crônica.",
+      "Pneumonia adquirida na comunidade."
+    ],
+    "correta": 0,
+    "comentario": "A variabilidade e reversibilidade dos sintomas (piora com gatilhos específicos — mudança de tempo, poeira —, predomínio matutino/noturno, melhora espontânea entre as crises) e o antecedente de 'bronquite' (sibilância) na infância são o padrão clássico de asma, mesmo havendo tabagismo associado (que por si só não define DPOC sem obstrução fixa comprovada e padrão de sintomas compatível). A ausência de febre/sinais de consolidação afasta PAC, e a ausculta pulmonar com sibilos difusos (não apenas queixas nasais) não é compatível com rinossinusopatia isolada.",
+    "banca": "BASES Asma — banco de questões EMR (Eu Médico Residente) (SES-GO 2022 ACESSO DIRETO)",
+    "ano": 2022,
+    "fonte": "EMR (Eu Médico Residente) — Material Extensivo BASES de Acompanhamento (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2089",
+    "temaId": "asma-exacerbada",
+    "tema": "Asma Exacerbada",
+    "enunciado": "Paciente de 19 anos com antecedente de asma, dificuldade de praticar atividade física por falta de ar e chiado no peito. Tratamento atual: B2-agonista de curta ação quando sente falta de ar. Relata tosse seca esporádica 3-4x/semana e uso de B2-agonista de curta ação 4-5x/semana. Como é classificada a asma do paciente e qual a conduta médica correta?",
+    "alternativas": [
+      "Asma controlada — mantém-se o tratamento com B2-agonista de curta duração.",
+      "Asma parcialmente controlada — inicia-se corticoide inalatório 2x/dia.",
+      "Asma não controlada — inicia-se corticoide inalatório 2x/dia.",
+      "Asma parcialmente controlada — inicia-se B2-agonista de longa ação."
+    ],
+    "correta": 2,
+    "comentario": "Uso de medicação de resgate mais de 2x/semana (aqui, 4-5x/semana) já configura, isoladamente, critério suficiente para classificar a asma como NÃO controlada — mesmo sem os demais critérios (sintomas diurnos, despertar noturno, limitação de atividades) estarem todos presentes, um uso tão frequente de resgate já demanda início de tratamento de manutenção com corticoide inalatório, e não a mera manutenção do esquema atual (uso isolado de SABA, sem controle, é insuficiente e está associado a maior risco de exacerbação).",
+    "banca": "BASES Asma — banco de questões EMR (Eu Médico Residente) (AMRIGS 2022 ACESSO DIRETO)",
+    "ano": 2022,
+    "fonte": "EMR (Eu Médico Residente) — Material Extensivo BASES de Acompanhamento (Asma)",
     "revisado": true
   }
 ]
