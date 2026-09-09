@@ -2189,41 +2189,75 @@
     "temaId": "tuberculose",
     "area": "residencia",
     "tipo": "tratamento",
-    "titulo": "Tuberculose — Fluxo diagnóstico e tratamento",
-    "revisado": false,
-    "fonte": "Ministerio da Saude - Manual de Recomendacoes para o Controle da Tuberculose no Brasil; WHO Consolidated Guidelines on Tuberculosis",
+    "titulo": "Tuberculose — algoritmo diagnóstico e de tratamento (TRM-TB, RIPE, BPaLM)",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Manual de Recomendações para o Controle da Tuberculose no Brasil; WHO Consolidated Guidelines on Tuberculosis",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Tosse persistente >3 semanas + febre vespertina + sudorese noturna"
+        "texto": "Sintomático respiratório: tosse persistente >3 semanas ± febre vespertina, sudorese noturna, emagrecimento"
       },
       {
         "tipo": "action",
-        "texto": "Solicitar teste rápido molecular e/ou baciloscopia de escarro"
+        "texto": "Solicitar teste rápido molecular (TRM-TB, Xpert MTB/RIF/Ultra) — exame de escolha inicial no Brasil, detecta DNA do M. tuberculosis e mutações de resistência à rifampicina simultaneamente"
       },
       {
         "tipo": "decisao",
-        "texto": "Resultado positivo para tuberculose?",
+        "texto": "Resultado do TRM-TB?",
         "ramos": [
           {
-            "label": "Sim",
+            "label": "Negativo, mas suspeita clínica forte mantida",
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "Iniciar esquema RIPE (2 meses) seguido de RI (4 meses)"
-              },
-              {
-                "tipo": "end",
-                "texto": "Tratamento diretamente observado (TDO)"
+                "texto": "Não excluir TB apenas pelo TRM-TB negativo — solicitar cultura para micobactérias (padrão-ouro) e avaliar radiografia de tórax; investigar diagnósticos diferenciais"
               }
             ]
           },
           {
-            "label": "Não",
+            "label": "Positivo, SEM resistência à rifampicina detectada",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Adulto/adolescente (≥10 anos) ou criança (3 meses-16 anos) com TB pulmonar NÃO grave?",
+                "ramos": [
+                  {
+                    "label": "Adulto/adolescente ≥10 anos",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Esquema RIPE padrão: 2 meses RIPE (fase intensiva) + 4 meses RI (fase de manutenção) = 6 meses, com TDO"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Criança 3 meses-16 anos, TB pulmonar não grave",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Esquema pediátrico encurtado (2024, estudo SHINE/OMS 2022): 2 meses RHZ[E] + 2 meses RH = 4 meses"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Forma grave (miliar, meníngea, óssea extensa) em qualquer idade",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Esquema padrão de 6 meses (9-12 meses na forma meníngea/óssea), com corticoterapia adjuvante na forma meníngea"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Positivo, COM resistência à rifampicina detectada (TB-RR/MDR)",
             "fluxo": [
               {
                 "tipo": "end",
-                "texto": "Investigar diagnósticos diferenciais"
+                "texto": "Esquema BPaLM: Bedaquilina + Pretomanida + Linezolida ± Moxifloxacino — regime oral de 6 meses (preferencial sobre esquemas antigos de 9-24 meses)"
               }
             ]
           }
@@ -2231,7 +2265,11 @@
       },
       {
         "tipo": "alerta",
-        "texto": "Hemoptise maciça ou sinais de disseminação miliar → manejo hospitalar"
+        "texto": "Coinfecção HIV-TB: iniciar TARV em até 2 semanas se CD4 <50 cél/mm³, ou até 8 semanas se CD4 ≥50 — EXCETO na TB meníngea, em que o TARV precoce deve ser postergado pelo risco de SIRI grave no SNC"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Hemoptise maciça ou sinais de disseminação miliar (padrão micronodular difuso, febre alta, comprometimento do estado geral) → manejo hospitalar"
       }
     ]
   },
