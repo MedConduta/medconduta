@@ -4742,5 +4742,125 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-dislipidemias-tratamento",
+    "temaId": "dislipidemias",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Dislipidemias — estratificação de risco e escolha do tratamento hipolipemiante (Diretriz SBC 2025)",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose 2025",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Perfil lipídico alterado (pode ser colhido sem jejum obrigatório, exceto suspeita de triglicerídeos muito elevados)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Estratificar risco cardiovascular pelo PREVENT Score (AHA 2024) e classificar em baixo, intermediário, alto, muito alto ou extremo"
+      },
+      {
+        "tipo": "action",
+        "texto": "Considerar biomarcadores complementares (Lp(a), ApoB) quando o LDL isolado pode estar subestimando o risco real"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Categoria de risco?",
+        "ramos": [
+          {
+            "label": "Baixo (meta LDL < 115mg/dL) ou Intermediário (meta < 100mg/dL)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Mudança de estilo de vida (dieta, atividade física, cessação do tabagismo) como primeira medida"
+              },
+              {
+                "tipo": "action",
+                "texto": "Se meta não atingida: estatina de intensidade moderada a alta, de forma escalonada"
+              }
+            ]
+          },
+          {
+            "label": "Alto (meta LDL < 70mg/dL)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Estatina de alta intensidade (atorvastatina 40-80mg ou rosuvastatina 20-40mg) desde o início, associada a mudança de estilo de vida"
+              },
+              {
+                "tipo": "action",
+                "texto": "Reavaliar em 4-12 semanas; se meta não atingida com estatina em dose máxima tolerada, adicionar ezetimiba"
+              }
+            ]
+          },
+          {
+            "label": "Muito alto (meta LDL < 50mg/dL) ou Extremo — categoria nova (meta LDL < 40mg/dL)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Diretriz 2025: nesses grupos a terapia COMBINADA (estatina de alta intensidade + ezetimiba, considerando anti-PCSK9 precocemente conforme o caso) é indicada já como primeira linha — não mais abordagem escalonada"
+              },
+              {
+                "tipo": "action",
+                "texto": "Iniciar estatina de alta intensidade + ezetimiba de imediato"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Meta de LDL atingida na reavaliação?",
+                "ramos": [
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Adicionar inibidor de PCSK9 (evolocumabe/alirocumabe) ou ácido bempedoico (se intolerância a estatina)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter esquema e reavaliar periodicamente"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente relata mialgia/intolerância à estatina?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Investigar causas secundárias (hipotireoidismo, interações medicamentosas, deficiência de vitamina D); considerar redução de dose, troca de estatina ou esquema intermitente antes de excluir a classe"
+              },
+              {
+                "tipo": "end",
+                "texto": "Se intolerância confirmada mesmo após otimização: associar ezetimiba/ácido bempedoico/anti-PCSK9 como alternativa não estatínica"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter estatina e monitorar perfil lipídico e transaminases conforme protocolo"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
