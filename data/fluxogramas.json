@@ -2349,24 +2349,32 @@
     "temaId": "disturbios-hidroeletroliticos",
     "area": "residencia",
     "tipo": "tratamento",
-    "titulo": "Hipercalemia — Fluxo de tratamento em 3 etapas",
-    "revisado": false,
+    "titulo": "Hipercalemia aguda — fluxo de tratamento em etapas",
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Nefrologia (SBN); KDIGO",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Hipercalemia confirmada"
+        "texto": "Hipercalemia confirmada laboratorialmente"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Excluir pseudo-hipercalemia (hemólise da amostra, torniquete prolongado) antes de tratar um valor discrepante do quadro clínico"
+      },
+      {
+        "tipo": "action",
+        "texto": "Realizar ECG imediato para estratificar a urgência terapêutica"
       },
       {
         "tipo": "decisao",
-        "texto": "Alterações eletrocardiográficas presentes?",
+        "texto": "Alterações eletrocardiográficas presentes (T apiculada, QRS alargado, padrão sinusoidal)?",
         "ramos": [
           {
-            "label": "Sim",
+            "label": "Sim — emergência",
             "fluxo": [
               {
                 "tipo": "alerta",
-                "texto": "Gluconato de cálcio EV imediato (estabilizar membrana)"
+                "texto": "Gluconato de cálcio EV imediato — estabiliza a membrana cardíaca em minutos, mas NÃO reduz o potássio sérico. Repetir se as alterações persistirem"
               }
             ]
           },
@@ -2375,7 +2383,7 @@
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "Prosseguir diretamente para redistribuição"
+                "texto": "Prosseguir diretamente para as medidas de redistribuição, sem necessidade de cálcio"
               }
             ]
           }
@@ -2383,11 +2391,11 @@
       },
       {
         "tipo": "action",
-        "texto": "Insulina + glicose e beta-2 agonista (redistribuir K para dentro da célula)"
+        "texto": "Redistribuição para o intracelular: insulina regular + glicose (dose individualizada pelo peso, ~0,1U/kg, máx. 10U — considerar dose fixa reduzida de 5U em pacientes de maior risco de hipoglicemia: baixo peso, TFG reduzida, glicemia basal baixa) + beta-2 agonista inalatório em dose alta ± bicarbonato de sódio se acidose associada"
       },
       {
         "tipo": "end",
-        "texto": "Diuréticos, resinas ou diálise conforme gravidade (eliminar excesso de K)"
+        "texto": "Remoção definitiva do potássio corporal: diurético de alça (se função renal preservada), resina de troca catiônica (patirômero, ciclossilicato de sódio e zircônio) ou diálise de urgência nos casos refratários/graves"
       }
     ]
   },
@@ -6427,6 +6435,45 @@
               {
                 "tipo": "end",
                 "texto": "Manter conduta expectante com monitorização rigorosa (balanço hídrico, eletrólitos, função renal seriada) — reavaliar indicação de diálise a qualquer momento se surgir critério de urgência"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hipercalemia-cronica-tratamento",
+    "temaId": "disturbios-hidroeletroliticos",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Hipercalemia crônica leve-moderada em DRC/IC — manter ou suspender IECA/BRA/espironolactona?",
+    "revisado": true,
+    "fonte": "Estudo DIAMOND (patirômero); diretriz KDIGO 2024",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Hipercalemia crônica leve a moderada em paciente com DRC ou insuficiência cardíaca em uso de IECA/BRA/espironolactona (terapias de benefício comprovado em desfecho renal/cardiovascular)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Racional terapêutico: reduzir/suspender a medicação nefro/cardioprotetora ou tratar a hipercalemia mantendo a dose plena?",
+        "ramos": [
+          {
+            "label": "Abordagem antiga (reduzir/suspender IECA/BRA)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Retira uma terapia com benefício comprovado de sobrevida/desfecho — não é mais a conduta preferida quando há alternativa"
+              }
+            ]
+          },
+          {
+            "label": "Abordagem atual (KDIGO 2024 / DIAMOND)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Iniciar quelante de potássio moderno (patirômero ou ciclossilicato de sódio e zircônio) cronicamente, permitindo MANTER o IECA/BRA/espironolactona em dose plena — a hipercalemia é reenquadrada como barreira modificável ao tratamento ótimo, não como motivo automático de desescalonamento"
               }
             ]
           }
