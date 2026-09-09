@@ -966,7 +966,7 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "IC com fração de ejeção reduzida — Fluxo de tratamento",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Diretriz Brasileira de Insuficiencia Cardiaca - SBC (2018, atualizacao 2021); ESC Guidelines for Heart Failure (2021)",
     "fluxo": [
       {
@@ -4062,6 +4062,93 @@
               {
                 "tipo": "end",
                 "texto": "Alta com reavaliação ambulatorial em até 7 dias — sem necessidade de internação"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-ic-atendimento-descompensada",
+    "temaId": "ic",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "IC aguda descompensada — Triagem pelo perfil hemodinâmico",
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Insuficiência Cardíaca Crônica e Aguda (SBC, 2018/2021); classificação de Nohria-Stevenson",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com IC aguda descompensada"
+      },
+      {
+        "tipo": "action",
+        "texto": "Avaliar perfusão (extremidades, PA, nível de consciência, função renal) e congestão (estase jugular, estertores, edema)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Perfusão adequada (quente) ou hipoperfusão (frio)?",
+        "ramos": [
+          {
+            "label": "Quente (perfundido)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Há congestão (úmido)?",
+                "ramos": [
+                  {
+                    "label": "Sim — quente e úmido",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Diurético de alça IV ± vasodilatador — perfil mais comum"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — quente e seco",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Compensado — otimizar tratamento oral (4 pilares)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Frio (hipoperfundido)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Sinais de choque cardiogênico — via de internação em UTI"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Há congestão (úmido)?",
+                "ramos": [
+                  {
+                    "label": "Sim — frio e úmido (choque cardiogênico)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Inotrópico ± vasopressor; considerar suporte circulatório mecânico; diurético só após melhora da perfusão"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — frio e seco",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cautela — evitar diurético agressivo; considerar prova de volume cuidadosa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
