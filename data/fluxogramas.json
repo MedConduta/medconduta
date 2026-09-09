@@ -5639,5 +5639,73 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-sindrome-metabolica-diagnostico",
+    "temaId": "sindrome-metabolica",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Síndrome Metabólica — algoritmo diagnóstico (regra dos 3 de 5)",
+    "revisado": true,
+    "fonte": "1ª Diretriz Brasileira de Diagnóstico e Tratamento da Síndrome Metabólica; NCEP-ATP III; IDF",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente em avaliação de risco cardiometabólico (rastreio de rotina ou investigação de outra queixa)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Medir os 5 componentes: circunferência abdominal, triglicerídeos, HDL-colesterol, pressão arterial, glicemia de jejum"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "O diagnóstico NUNCA se baseia no IMC — é sempre pela circunferência abdominal (obesidade central) e pelos demais critérios laboratoriais/pressóricos"
+      },
+      {
+        "tipo": "action",
+        "texto": "Contar quantos dos 5 critérios estão presentes (cada um conta igualmente — nenhum é pré-requisito obrigatório pelo NCEP-ATP III)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Quantos critérios estão presentes?",
+        "ramos": [
+          {
+            "label": "0 ou 1 critério",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Sem síndrome metabólica — reforçar prevenção primária (estilo de vida) se algum fator já presente"
+              }
+            ]
+          },
+          {
+            "label": "2 critérios",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Sem síndrome metabólica (não atinge o corte de 3) — mas já indica necessidade de rastreio e intervenção sobre os fatores presentes"
+              }
+            ]
+          },
+          {
+            "label": "≥3 critérios",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Diagnóstico de síndrome metabólica confirmado"
+              },
+              {
+                "tipo": "action",
+                "texto": "Rastrear função renal (TFG, albuminúria) — dimensão explicitamente incorporada pelo novo modelo CKM (estágio 2 em diante)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Estratificar risco cardiovascular global e iniciar intervenção (estilo de vida ± tratamento farmacológico dirigido a cada componente)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
