@@ -347,7 +347,7 @@
     "tema": "DPOC Exacerbado",
     "banca": "Exemplo — MedConduta",
     "ano": 2025,
-    "revisado": false,
+    "revisado": true,
     "fonte": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2025",
     "enunciado": "Paciente com DPOC apresenta piora da dispneia, aumento do volume e da purulência do escarro. Além de broncodilatador e corticoide sistêmico, qual conduta adicional está indicada?",
     "alternativas": [
@@ -38329,6 +38329,468 @@
     "banca": "BASES Asma — banco de questões EMR (Eu Médico Residente) (AMRIGS 2022 ACESSO DIRETO)",
     "ano": 2022,
     "fonte": "EMR (Eu Médico Residente) — Material Extensivo BASES de Acompanhamento (Asma)",
+    "revisado": true
+  },
+  {
+    "id": "q2090",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Homem, 60 anos, piora da dispneia há 3 dias (mMRC 2→4), tosse produtiva com escarro amarelado e raias de sangue, sem febre. DPOC há 4 anos em uso regular de formoterol e glicopirrônio, sem exacerbações nos últimos 12 meses. Exame: orientado, FR 32irpm, SatO2 86% em ar ambiente, uso de musculatura acessória, murmúrio vesicular reduzido globalmente, estertores subcrepitantes esparsos. No manejo terapêutico deste paciente é CORRETO:",
+    "alternativas": [
+      "Indicar intubação orotraqueal para ventilação mecânica invasiva, se houve retenção progressiva de CO2.",
+      "Iniciar oxigênio por cateter nasal, para manter oximetria de pulso entre 88 a 92%.",
+      "Iniciar corticosteroide sistêmico e mantê-lo por um período mínimo de 14 dias.",
+      "Iniciar teofilina e sulfato de magnésio, para manter oximetria de pulso acima de 92%."
+    ],
+    "correta": 1,
+    "comentario": "A meta de saturação em pacientes com DPOC (potenciais retentores crônicos de CO2) é 88-92%, evitando hiperoxigenação que poderia suprimir o drive respiratório hipóxico. O corticoide sistêmico deve ser em curso CURTO (5 dias, não 14) — cursos prolongados aumentam risco de efeitos adversos sem benefício adicional comprovado. Teofilina não tem lugar no tratamento de primeira linha da exacerbação (perfil de segurança desfavorável); a meta de saturação nunca deve ultrapassar 92% de forma agressiva/forçada.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2091",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Sobre as exacerbações da DPOC, julgue os itens: I - Semelhante ao que ocorre na asma, os testes de função pulmonar têm grande utilidade na identificação e tratamento da exacerbação. II - A frequência das exacerbações aumenta à medida que piora a obstrução do fluxo aéreo. III - O aumento do diâmetro da artéria pulmonar em relação à aorta na tomografia e o refluxo gastroesofágico, quando presentes, aumentam o risco de exacerbação. Assinale a alternativa correta:",
+    "alternativas": [
+      "As afirmativas I e II são verdadeiras. A afirmativa III é falsa.",
+      "As afirmativas I e III são verdadeiras. A afirmativa II é falsa.",
+      "As afirmativas II e III são verdadeiras. A afirmativa I é falsa.",
+      "As afirmativas I, II e III são verdadeiras.",
+      "As afirmativas I, II e III são falsas."
+    ],
+    "correta": 2,
+    "comentario": "Diferentemente da asma, a espirometria NÃO tem utilidade na identificação/tratamento da exacerbação aguda de DPOC (os valores ficam artificialmente reduzidos pela obstrução aguda sobreposta, e a manobra é difícil de realizar adequadamente durante a crise) — afirmativa I falsa. A frequência de exacerbações aumenta com a piora da obstrução (II verdadeira) e tanto a relação artéria pulmonar/aorta aumentada na TC (marcador de hipertensão pulmonar) quanto a DRGE são fatores de risco reconhecidos para exacerbação (III verdadeira).",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2092",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Mulher, 72 anos, tabagista (80 anos-maço), dispneia progressiva e tosse com expectoração amarelada há 10 anos. Há 4 dias com aumento do volume de expectoração (mais escura) e piora da dispneia. Exame: REG, consciente, Glasgow 15, murmúrio vesicular reduzido bilateralmente com sibilos difusos, FR 30irpm, FC 110bpm, PA 112x72mmHg. Gasometria em ar ambiente: pH 7,28; pO2 50mmHg; pCO2 54mmHg; HCO3 28mEq/L; SatO2 84%. Qual intervenção mais adequada neste momento?",
+    "alternativas": [
+      "Intubação e ventilação mecânica.",
+      "Ventilação não-invasiva.",
+      "Cateter nasal de alto fluxo.",
+      "Máscara de Venturi."
+    ],
+    "correta": 1,
+    "comentario": "Acidose respiratória (pH 7,28) com hipercapnia em paciente ainda consciente e com Glasgow 15 (sem rebaixamento do nível de consciência) é a indicação clássica de ventilação não invasiva PRECOCE — reduz necessidade de intubação e mortalidade quando iniciada oportunamente nesse estágio. Intubação seria reservada a falha da VNI ou contraindicação (rebaixamento importante); cateter de alto fluxo e máscara de Venturi isoladamente não corrigem a acidose respiratória e a hipoventilação subjacentes.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2093",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Quanto à DPOC, julgue os itens: I. Na gasometria sem suporte de O2, PaO2 <55mmHg ou saturação <88% em repouso são indicações de oxigenoterapia contínua. II. A oxigenoterapia também é indicada para PaO2 <60mmHg, com policitemia ou sinais de insuficiência cardíaca direita. III. O uso de broncodilatadores, além de diminuir a sintomatologia durante as exacerbações, diminui a mortalidade. IV. Um paciente classificado como GOLD D apresenta muita sintomatologia, porém poucos episódios de exacerbação. A quantidade de itens certos é igual a:",
+    "alternativas": [
+      "0.",
+      "1.",
+      "2.",
+      "3.",
+      "4."
+    ],
+    "correta": 2,
+    "comentario": "Os itens I e II estão corretos (critérios clássicos de indicação de oxigenoterapia domiciliar prolongada). O item III está incorreto: broncodilatadores reduzem sintomas, mas NÃO há evidência de que reduzam mortalidade na DPOC. O item IV está incorreto: o grupo GOLD D (na classificação antiga ABCD) é definido por muitos sintomas E exacerbações frequentes, não por poucas exacerbações — por isso apenas 2 itens (I e II) estão certos.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2094",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Homem, 62 anos, tabagista 40 anos-maço, obeso, dispneia progressiva há 3 anos com tosse produtiva matinal, 2 idas à UPA no ano anterior com uso de antibiótico. Exame: FR 25irpm, SatO2 90%, tempo expiratório prolongado, crepitações protoinspiratórias/expiratórias, edema de MMII 2+/4+, hepatomegalia (cor pulmonale). Sobre o arsenal terapêutico disponível, é ERRADO afirmar:",
+    "alternativas": [
+      "O uso de azitromicina a longo prazo possui ação anti-inflamatória e reduz o risco de ocorrência de exacerbações no próximo ano.",
+      "O uso de corticoide inalatório em associação com terapia broncodilatadora combinada de longa ação melhora função pulmonar e reduz risco de exacerbações.",
+      "O uso de corticoide sistêmico é benéfico devido ao histórico de infecções respiratórias associadas ao padrão de expectoração apresentado.",
+      "O uso de terapia broncodilatadora combinada de longa ação tem o potencial de melhorar sintomas e a sensação de dispneia do paciente."
+    ],
+    "correta": 2,
+    "comentario": "É ERRADA a recomendação de corticoide SISTÊMICO de uso CRÔNICO/contínuo baseado apenas no histórico de infecções respiratórias — corticoide sistêmico tem papel limitado a cursos curtos durante exacerbações agudas, não como terapia de manutenção contínua (que traz riscos sistêmicos significativos sem benefício comprovado de longo prazo). Azitromicina profilática, corticoide inalatório combinado a broncodilatador de longa ação, e broncodilatador combinado de longa ação isoladamente são, sim, estratégias com benefício reconhecido para reduzir exacerbações e melhorar sintomas em pacientes exacerbadores frequentes.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2095",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Pacientes com insuficiência respiratória aguda e hipoxemia documentada: 1) 32 anos, pneumonia extensa em lobo inferior direito e lobo médio. 2) 27 anos, asma exacerbada após inalação de produtos de limpeza. 3) 57 anos, TEP agudo no pós-operatório de mamoplastia. 4) 71 anos, DPOC exacerbada por infecção bacteriana de vias aéreas inferiores. Qual mecanismo de hipoxemia predomina em cada caso?",
+    "alternativas": [
+      "1) efeito shunt; 2) desequilíbrio V/Q; 3) efeito espaço morto; 4) desequilíbrio V/Q.",
+      "1) efeito shunt; 2) desequilíbrio V/Q; 3) efeito shunt; 4) hipoventilação alveolar.",
+      "1) hipoventilação alveolar; 2) desequilíbrio V/Q; 3) efeito espaço morto; 4) efeito espaço morto.",
+      "1) efeito espaço morto; 2) hipoventilação alveolar; 3) efeito shunt; 4) desequilíbrio V/Q."
+    ],
+    "correta": 0,
+    "comentario": "Pneumonia extensa causa hipoxemia por EFEITO SHUNT (alvéolos preenchidos/consolidados, perfundidos mas não ventilados); asma exacerbada e DPOC exacerbada por infecção causam hipoxemia predominantemente por DESEQUILÍBRIO na relação ventilação/perfusão (broncoespasmo e obstrução heterogênea das vias aéreas); TEP causa hipoxemia por EFEITO ESPAÇO MORTO (áreas ventiladas mas não perfundidas, pela obstrução vascular). Compreender esses 4 mecanismos clássicos de hipoxemia (shunt, V/Q, espaço morto, hipoventilação) e associá-los à etiologia é frequentemente cobrado em provas.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2096",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Paciente masculino, 74 anos, ex-tabagista, DPOC, dispneia aos pequenos esforços e duas internações por exacerbação no último ano. Em uso de formoterol, budesonida e tiotrópio (terapia tripla otimizada). Assinale a melhor conduta neste caso:",
+    "alternativas": [
+      "Aumentar a dose do corticoide inalatório.",
+      "Associar azitromicina 500mg três vezes por semana.",
+      "Não retirar o corticoide inalatório mesmo em caso de pneumonia grave e contagem de eosinófilo sérico menor que 100.",
+      "A reabilitação pulmonar não tem indicação para pacientes graves, aumentando o risco de morte súbita por arritmia decorrente de hipoxemia."
+    ],
+    "correta": 1,
+    "comentario": "Exacerbador frequente (2 internações no último ano) mesmo em terapia tripla inalatória otimizada (LABA+CI+LAMA) é a indicação clássica para associar azitromicina profilática (500mg 3x/semana), pelo seu efeito anti-inflamatório/imunomodulador adicional, reduzindo a frequência de novas exacerbações. Aumentar ainda mais o corticoide inalatório não é a próxima etapa lógica quando já otimizado; corticoide inalatório deve, sim, ser reconsiderado/retirado em cenários de pneumonia recorrente com eosinófilos baixos (perfil que sugere menor benefício e maior risco); e reabilitação pulmonar é benéfica mesmo em DPOC grave, não contraindicada.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2097",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Paciente, 70 anos, DPOC GOLD III, piora da dispneia (mMRC 2→3) e tosse seca, uso frequente de broncodilatador nos últimos 5 dias. Admissão: lúcido, FR 30irpm, FC 110bpm, afebril, PA 120/70mmHg, SatO2 88%. Gasometria em ar ambiente: pH 7,32, PaCO2 47mmHg, PaO2 60mmHg. Leucograma: 12.000/mm³, 3% bastões, 60% neutrófilos, 4% eosinófilos, sem linfopenia. PCR 10mg/dL. Qual o manejo mais adequado?",
+    "alternativas": [
+      "Broncodilatador e ventilação não invasiva.",
+      "Broncodilatador, glicocorticoide e ventilação não invasiva.",
+      "Broncodilatador, antibioticoterapia e ventilação não invasiva.",
+      "Broncodilatador, antibioticoterapia, glicocorticoide e ventilação não invasiva."
+    ],
+    "correta": 3,
+    "comentario": "O quadro reúne indicação de VNI (acidose respiratória, pH 7,32), indicação de corticoide sistêmico (exacerbação moderada/grave) e indicação de antibiótico (leucocitose com desvio à esquerda — 3% bastões — sugerindo etiologia bacteriana, PCR elevada) — as quatro medidas (broncodilatador, antibiótico, corticoide e VNI) devem ser associadas simultaneamente neste caso, ilustrando a abordagem integrada da exacerbação grave.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2098",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Sobre a exacerbação da Doença Pulmonar Obstrutiva Crônica, é correto afirmar que ela:",
+    "alternativas": [
+      "define a gravidade e seu manejo terapêutico.",
+      "frequentemente é causada por pneumonia, embolia pulmonar e insuficiência cardíaca congestiva.",
+      "deve ser tratada com corticosteroides por via sistêmica por um período mínimo de 10 dias, seguido de esquema de desmame.",
+      "não ocorre em paciente com obstrução leve (GOLD I)."
+    ],
+    "correta": 0,
+    "comentario": "A gravidade da exacerbação (leve, moderada ou grave, pelos critérios de Roma/Anthonisen combinados a parâmetros clínicos) é justamente o que orienta e define o manejo terapêutico (local de tratamento, necessidade de antibiótico, VNI, etc.). Pneumonia/TEP/IC são diagnósticos DIFERENCIAIS da exacerbação (a serem excluídos), não causas típicas dela (a causa mais comum é infecção respiratória viral/bacteriana das próprias vias aéreas); o curso de corticoide sistêmico recomendado é CURTO (5 dias, não 10 dias com desmame); e a exacerbação PODE ocorrer em qualquer estágio de gravidade, incluindo GOLD I.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2099",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Sobre DPOC, julgue: I. O roflumilaste é inibidor seletivo da PDE4, reduzindo a atividade inflamatória celular, indicado a partir do estágio MODERADO de DPOC. II. O aumento do eosinófilo sérico pode ser biomarcador de risco futuro de exacerbação e prever benefício de corticoide inalatório na prevenção de exacerbações. III. Em DPOC grave/muito grave, a terapia tripla (LAMA+LABA+CI) não evidenciou redução de hospitalizações e exacerbações. Pode-se afirmar que apenas:",
+    "alternativas": [
+      "o item I está certo.",
+      "o item II está certo.",
+      "o item III está certo.",
+      "os itens I e II estão certos.",
+      "os itens II e III estão certos."
+    ],
+    "correta": 1,
+    "comentario": "Apenas o item II está correto: eosinofilia sanguínea é, de fato, biomarcador que prediz maior benefício do corticoide inalatório na prevenção de exacerbações. O item I está incorreto: roflumilaste é indicado a partir do estágio GRAVE (não moderado) de DPOC, em pacientes com fenótipo bronquite crônica e VEF1 reduzido. O item III está incorreto: grandes ensaios clínicos (ex.: IMPACT) demonstraram que a terapia tripla REDUZ, sim, hospitalizações e exacerbações em DPOC grave/muito grave — o oposto do afirmado.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2100",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "A alternativa que contém os principais agentes causadores da descompensação infecciosa de causa bacteriana em portadores de DPOC é:",
+    "alternativas": [
+      "Haemophilus influenzae, Staphylococcus aureus e Mycoplasma pneumoniae.",
+      "Haemophilus influenzae, Streptococcus pneumoniae e Moraxella catarrhalis.",
+      "Streptococcus pneumoniae, bacilos Gram-negativos e Haemophilus influenzae.",
+      "Haemophilus influenzae, Streptococcus pneumoniae e Mycoplasma pneumoniae.",
+      "Streptococcus pneumoniae, Mycoplasma pneumoniae e Chlamydophila pneumoniae."
+    ],
+    "correta": 1,
+    "comentario": "Os três agentes bacterianos mais prevalentes na exacerbação infecciosa de DPOC, em ordem decrescente, são Haemophilus influenzae, Streptococcus pneumoniae e Moraxella catarrhalis — fato central e recorrentemente cobrado, coerente com a escolha empírica de antibioticoterapia (geralmente amoxicilina-clavulanato ou macrolídeo cobrindo esses agentes).",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2101",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "A principal causa de descompensação na DPOC é:",
+    "alternativas": [
+      "Infecção",
+      "Não adesão ao tratamento",
+      "Mudanças climáticas",
+      "Uso excessivo de aminofilina"
+    ],
+    "correta": 0,
+    "comentario": "Infecções respiratórias (predominantemente virais, mas também bacterianas) são a causa mais comum de exacerbação de DPOC — desencadeando piora aguda da inflamação e obstrução das vias aéreas sobre uma base já cronicamente comprometida.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2102",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Na abordagem do paciente com DPOC exacerbado, o que é correto afirmar?",
+    "alternativas": [
+      "Considera-se combinação de amoxicilina e macrolídeo nos pacientes de baixo risco.",
+      "Na ventilação mecânica, as fluoroquinolonas respiratórias são as drogas de escolha.",
+      "O uso crônico de corticoide apresenta baixo risco de complicações.",
+      "Oxigênio em altos fluxos pode ocasionar piora da alcalose respiratória e da hipercapnia.",
+      "A ventilação não invasiva constitui medida de baixo impacto terapêutico."
+    ],
+    "correta": 1,
+    "comentario": "Em pacientes que necessitam de ventilação mecânica (exacerbação grave, maior risco de patógenos resistentes/atípicos), as fluoroquinolonas respiratórias (cobertura ampliada) são frequentemente a escolha antimicrobiana preferencial. As demais opções contêm erros: pacientes de baixo risco geralmente recebem monoterapia (não a combinação amoxicilina+macrolídeo); corticoide sistêmico crônico tem RISCO ALTO de complicações; oxigênio em excesso piora a ACIDOSE respiratória e a hipercapnia (não a alcalose); e a VNI é medida de ALTO impacto terapêutico (reduz mortalidade e necessidade de intubação), não de baixo impacto.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2103",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "No tratamento da pessoa com DPOC, o melhor preditor do risco de exacerbação é:",
+    "alternativas": [
+      "Refluxo gastroesofágico.",
+      "Mudança da pontuação na escala CURB-65.",
+      "Ocorrência de exacerbações no ano anterior.",
+      "Pior qualidade de vida, medida por questionário respiratório específico.",
+      "Nenhuma das anteriores."
+    ],
+    "correta": 2,
+    "comentario": "O histórico de exacerbações no ano anterior é o preditor isolado mais forte e mais consistente de risco de exacerbações futuras — princípio central da estratificação de risco na DPOC (base da reclassificação para o grupo E/exacerbador na nova classificação GOLD). DRGE e qualidade de vida são fatores de risco associados, mas de menor força preditiva; CURB-65 é escore de gravidade de pneumonia, não de risco de exacerbação de DPOC.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2104",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Paciente, 73 anos, DPOC GOLD D, dá entrada na UTI vindo do PS, acordado, com períodos de desorientação, interage com o examinador, FR 25, SatO2 84% em máscara de Venturi 15L/min, uso de musculatura acessória, drogas broncodilatadoras já otimizadas na urgência. Ausculta com redução do murmúrio vesicular, estertores inspiratórios e sopro tubário em terço inferior direito (sugestivo de pneumonia associada). Leucograma 19.000/mm³ com 10% de bastões. Gasometria: PaCO2 75; PaO2/FiO2 160. Conduta inicial do tratamento respiratório:",
+    "alternativas": [
+      "Ventilação mecânica não invasiva: BiPAP ou CPAP.",
+      "Intubação orotraqueal e ventilação mecânica em PCV.",
+      "Intubação orotraqueal e ventilação mecânica em SIMV.",
+      "Intubação orotraqueal e ventilação mecânica em VCV.",
+      "Ajuste da máscara de Venturi com 8L/min."
+    ],
+    "correta": 0,
+    "comentario": "Apesar da gravidade (hipercapnia importante, relação PaO2/FiO2 160 sugerindo componente de lesão pulmonar/pneumonia associada), o paciente permanece ACORDADO e INTERAGE com o examinador — critério essencial que ainda permite um trial inicial de ventilação não invasiva antes de escalonar para intubação. Rebaixamento importante do nível de consciência ou falha da VNI seriam as indicações para partir diretamente para via aérea avançada.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2105",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Paciente, 64 anos, DPOC há 2 anos em uso de B2 de longa duração, aumento da expectoração e mudança do aspecto do escarro (mais purulento) após resfriado comum. SatO2 atual 89%. Em relação ao tratamento, assinale a alternativa CORRETA:",
+    "alternativas": [
+      "O uso de antibióticos deve ser empregado mesmo em casos de exacerbações desencadeadas por infecção viral, quando presente a mudança do aspecto do escarro para purulento.",
+      "O uso de glicocorticoide não é recomendado pelo risco de Síndrome de Cushing.",
+      "O uso de teofilina é recomendável em casos como o dessa paciente, que já usava B2-agonista de longa duração.",
+      "Se a saturação da paciente for previamente abaixo de 90%, não existe necessidade do uso de O2 suplementar.",
+      "O uso de brometo de ipratrópio deve ser reservado para os casos refratários ao uso de B2 agonistas de curta duração."
+    ],
+    "correta": 0,
+    "comentario": "A mudança do aspecto do escarro para purulento é, por si só, um critério de Anthonisen que indica antibioticoterapia — mesmo quando o gatilho inicial da exacerbação foi uma infecção viral de vias aéreas superiores (resfriado comum), a purulência sugere superinfecção bacteriana secundária que justifica o antibiótico. As demais opções contêm erros claros: glicocorticoide sistêmico em curso curto é recomendado apesar do risco (que é baixo em curso curto); teofilina não é recomendada como adição de rotina; SatO2 89% claramente exige O2 suplementar; e ipratrópio deve ser associado precocemente em crises moderadas/graves, não reservado apenas a refratários.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2106",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Sobre DPOC, é correto afirmar:",
+    "alternativas": [
+      "A redução do VEF1 associa-se ao aumento da mortalidade e à classificação de gravidade, mas não se associa à qualidade de vida nesses pacientes.",
+      "São fatores de risco para exacerbações frequentes: idade avançada, função pulmonar muito comprometida, tosse com expectoração, doença do refluxo gastroesofágico e, principalmente, antecedentes de exacerbações da DPOC.",
+      "Os objetivos do tratamento da DPOC incluem redução de sintomas, melhora do estado de saúde, redução de riscos e prevenção/tratamento de exacerbações, mas não reduzem a mortalidade.",
+      "O GOLD recomenda broncodilatador de curta ou longa duração para aliviar a dispneia, aplicando-se apenas a pacientes com DPOC leve e escore mMRC de 0-1."
+    ],
+    "correta": 1,
+    "comentario": "Idade avançada, função pulmonar muito comprometida, tosse produtiva crônica, DRGE e — principalmente — antecedente de exacerbações prévias são os fatores de risco bem estabelecidos para exacerbações frequentes, com o histórico prévio sendo o preditor mais forte. VEF1 reduzido SE associa à qualidade de vida (não é dissociado dela); os objetivos do tratamento incluem, sim, impacto potencial em desfechos que afetam sobrevida em subgrupos específicos; e broncodilatadores são recomendados para TODOS os estágios sintomáticos, não apenas DPOC leve.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2107",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Com relação ao tratamento da DPOC, é correto afirmar:",
+    "alternativas": [
+      "O uso de xantinas, apesar de menor grau de evidência, traz benefícios pelo efeito vasodilatador coadjuvante no início da terapia.",
+      "A N-acetilcisteína é indicada na fase de exacerbação por diminuir o estresse oxidativo causado pela inalação de fumaça em tabagistas ativos.",
+      "O emprego de corticoides sistêmicos na fase estável tem o propósito de reduzir o número de exacerbações.",
+      "A oxigenoterapia domiciliar está indicada quando a PaO2 está entre 56 e 59mmHg, na presença de cor pulmonale ou policitemia.",
+      "A vacinação antipneumocócica, anti-influenza e anti-Haemophilus está indicada anualmente."
+    ],
+    "correta": 3,
+    "comentario": "PaO2 entre 55-59mmHg associada a cor pulmonale ou policitemia (hematócrito elevado) é, sim, critério de indicação de oxigenoterapia domiciliar prolongada (o outro critério clássico é PaO2 <55mmHg isoladamente, sem necessidade de comorbidade associada). Xantinas não têm benefício vasodilatador relevante recomendado como coadjuvante padrão; N-acetilcisteína não é indicada na fase aguda da exacerbação (seu papel discutido é como mucolítico crônico em subgrupos selecionados); corticoide sistêmico CRÔNICO na fase estável NÃO é recomendado (ao contrário, tem riscos que superam benefícios); e a vacinação anti-Haemophilus não faz parte do calendário padrão recomendado para DPOC (ao contrário de influenza anual e pneumocócica).",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2108",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Sobre a DPOC, NÃO podemos afirmar:",
+    "alternativas": [
+      "A dispneia é o sintoma associado à maior incapacidade e ao pior prognóstico.",
+      "O exame físico frequentemente mostra prolongamento do tempo expiratório, diminuição dos sons pulmonares e evidência de hiperinsuflação.",
+      "Muitos pacientes podem apresentar sibilância, sendo um importante fator de confusão ao poder induzir ao diagnóstico de asma.",
+      "O principal distúrbio funcional é a obstrução ao fluxo aéreo, caracterizada essencialmente por redução do VEF1, da relação VEF1/CVF, VR (volume residual) e CPT (capacidade pulmonar total).",
+      "Bactérias 'atípicas', como Chlamydia, Legionella pneumophila e Mycoplasma pneumoniae, são responsáveis por uma pequena parcela das exacerbações infecciosas."
+    ],
+    "correta": 3,
+    "comentario": "É a afirmativa FALSA (não podemos afirmar): na DPOC, o volume residual (VR) e a capacidade pulmonar total (CPT) estão tipicamente AUMENTADOS (não reduzidos), pelo aprisionamento de ar e hiperinsuflação pulmonar dinâmica característicos da doença — apenas o VEF1 e a relação VEF1/CVF estão reduzidos. Esse padrão de hiperinsuflação (VR e CPT aumentados) é ponto frequentemente cobrado e contraintuitivo para quem pensa apenas em 'redução geral dos volumes'. As demais afirmativas (dispneia como pior preditor prognóstico, achados de exame físico, sibilância como fator confundidor com asma, bactérias atípicas como causa minoritária) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2109",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Quanto ao uso de oxigenioterapia, podemos considerar corretas as seguintes observações, com EXCEÇÃO de uma delas. Indique-a:",
+    "alternativas": [
+      "Oxigênio acima de 50%, durante mais de 24 horas, provoca lesão pulmonar.",
+      "Asmáticos podem utilizar inalação com oxigênio em altos fluxos sem risco.",
+      "Nos casos de infarto agudo do miocárdio, habitualmente a suplementação de oxigênio é mantida por até 4 horas após o desaparecimento da dor.",
+      "A administração desnecessária de oxigênio por tempo prolongado pode causar vasoconstrição sistêmica e até mesmo ser prejudicial."
+    ],
+    "correta": 1,
+    "comentario": "É FALSO afirmar que oxigênio em altos fluxos é isento de risco em asmáticos ou em qualquer paciente — a hiperoxigenação desnecessária tem riscos reconhecidos (toxicidade pulmonar por O2 em alta FiO2 prolongada, vasoconstrição sistêmica, e em contextos com risco de retenção de CO2, supressão do drive respiratório) independentemente da doença de base, reforçando o princípio geral de titular o oxigênio para a menor FiO2 que atinja a meta de saturação, não maximizar o fluxo indiscriminadamente.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2110",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "No tratamento de pacientes bronquíticos crônicos portadores de cor pulmonale com descompensação cardíaca, deve-se considerar como principal item da prescrição o uso de:",
+    "alternativas": [
+      "Corticoterapia.",
+      "Antibioticoterapia.",
+      "Broncodilatadores.",
+      "Teofilina.",
+      "Oxigenoterapia."
+    ],
+    "correta": 4,
+    "comentario": "A correção da hipoxemia crônica (oxigenoterapia) é a medida central no manejo do cor pulmonale secundário à DPOC — a hipóxia crônica é o principal mecanismo fisiopatológico da vasoconstrição pulmonar hipóxica que leva à hipertensão pulmonar e à sobrecarga do ventrículo direito, de modo que corrigi-la é a intervenção com maior impacto sobre a descompensação cardíaca direita nesse contexto.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2111",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "No manejo da DPOC, é necessário fazer sua estratificação de risco para melhor nortear a conduta clínica. Considere: I - Níveis de sintomas; II - Classificação espirométrica; III - Número de exacerbações; IV - Alterações radiográficas. Para uma conduta clínica adequada, o médico deve levar em consideração, para cada paciente, os aspectos dos itens:",
+    "alternativas": [
+      "II, III e IV.",
+      "II e IV apenas.",
+      "I e III apenas.",
+      "I, II e III."
+    ],
+    "correta": 3,
+    "comentario": "A estratificação de risco/estadiamento da DPOC integra nível de sintomas (escalas mMRC/CAT), classificação espirométrica (grau de obstrução) e número de exacerbações prévias — os três pilares centrais da abordagem GOLD. Alterações radiográficas NÃO fazem parte formal dessa estratificação de risco terapêutico (a radiografia serve para excluir diagnósticos diferenciais/complicações, não para classificar o risco de exacerbação).",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2112",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Paciente, 68 anos, DPOC, piora da dispneia, tosse produtiva com secreção amarelada e queda do estado geral. HAS em tratamento. Em uso de broncodilatador de longa duração + corticoide inalatório + tiotrópio. Exame: PA 130/80mmHg, FC 100bpm, SatO2 85% em ar ambiente, FR 28irpm. Assinale a alternativa INCORRETA:",
+    "alternativas": [
+      "Na exacerbação do DPOC, as principais bactérias envolvidas são: H. influenzae, S. pneumoniae e M. catarrhalis.",
+      "Uso de antibiótico com frequência, hospitalização recente e VEF1 <50% são fatores de risco para infecção por Pseudomonas aeruginosa.",
+      "O uso de antibiótico não é obrigatório neste paciente, caso a radiografia de tórax esteja normal.",
+      "Oxigenoterapia, hidrocortisona 200mg de 6/6h, levofloxacino 500mg e broncodilatador de curta duração são medidas imperativas no manejo desse paciente."
+    ],
+    "correta": 2,
+    "comentario": "É INCORRETO condicionar a indicação de antibiótico a um achado radiográfico normal: a decisão de antibioticoterapia na exacerbação de DPOC é baseada nos critérios CLÍNICOS de Anthonisen (piora da dispneia, aumento do volume e/ou purulência do escarro — todos presentes neste caso), não na radiografia de tórax, que serve apenas para excluir diagnósticos diferenciais/complicações. As demais afirmativas (agentes bacterianos principais, fatores de risco para Pseudomonas, e o pacote terapêutico completo indicado para essa exacerbação grave com SatO2 85%) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2113",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Homem, 70 anos, DPOC, em uso de formoterol e tiotrópio. Dispneia e tosse produtiva purulenta. Na admissão: monitorizado, acesso venoso, O2 sob máscara. Em 30 minutos, evolui com rebaixamento de consciência. Gasometria: pH 7,29; PCO2 60mmHg; PO2 120mmHg; Bic 36mEq/L. Qual a melhor conduta?",
+    "alternativas": [
+      "Suspender O2 e CPAP.",
+      "Suspender O2 e BiPAP.",
+      "Intubação orotraqueal.",
+      "Máscara de O2 com reservatório."
+    ],
+    "correta": 2,
+    "comentario": "O rebaixamento do nível de consciência após oferta de oxigênio (com PO2 120 — hiperoxigenação evidente, muito acima da meta 88-92% — e PCO2 60 com acidose respiratória, quadro compatível com narcose por CO2 iatrogênica) contraindica a ventilação não invasiva, que exige um paciente colaborativo e com nível de consciência preservado. Diante de rebaixamento do sensório, a conduta correta é a via aérea definitiva: intubação orotraqueal — reduzir ou trocar o dispositivo de O2 (CPAP/BiPAP) não é suficiente diante desse grau de comprometimento neurológico.",
+    "banca": "Banco de questões — Estratégia MED (DPOC.pdf — banco dedicado)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2114",
+    "temaId": "dpoc-exacerbado",
+    "tema": "DPOC Exacerbado",
+    "enunciado": "Paciente de 62 anos, tabagista habitual, procura atendimento com queixas crônicas de tosse produtiva mucoide, associada a dispneia durante moderados esforços. Ao exame físico, observam-se roncos expiratórios à ausculta do tórax. A radiografia de tórax evidencia sinais de hiperinsuflação pulmonar. Qual das alternativas abaixo definiria o exame e diagnóstico mais adequados ao paciente em questão?",
+    "alternativas": [
+      "Espirometria antes e após o uso de broncodilatador e doença pulmonar obstrutiva crônica.",
+      "Angiotomografia de tórax e tromboembolismo pulmonar.",
+      "Tomografia de tórax de alta resolução e fibrose pulmonar idiopática.",
+      "Cintilografia pulmonar ventilação-perfusão e doença venoclusiva.",
+      "Testes cutâneos e asma brônquica."
+    ],
+    "correta": 0,
+    "comentario": "A confirmação diagnóstica de DPOC é feita pela espirometria antes e após uso de broncodilatador, demonstrando limitação ao fluxo aéreo NÃO totalmente reversível (relação VEF1/CVF <0,70 pós-broncodilatador) — exame padrão-ouro para o diagnóstico, essencial mesmo em pacientes já com quadro clínico e radiológico (hiperinsuflação) sugestivo. Esse diagnóstico de base é o ponto de partida para o reconhecimento futuro de qualquer exacerbação aguda sobreposta ao quadro crônico.",
+    "banca": "BASES DPOC — banco de questões EMR (Eu Médico Residente) (IAMSPE 2022 R3 CM)",
+    "ano": 2022,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (DPOC)",
     "revisado": true
   }
 ]
