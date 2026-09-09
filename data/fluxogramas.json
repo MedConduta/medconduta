@@ -5380,5 +5380,113 @@
         "texto": "Orientar paciente e família sobre a \"regra dos dias de doença\": dobrar/triplicar a dose de glicocorticoide oral em situações de estresse fisiológico (febre, infecção, cirurgia) para prevenir nova crise"
       }
     ]
+  },
+  {
+    "id": "flow-obesidade-tratamento",
+    "temaId": "obesidade",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Obesidade — algoritmo terapêutico por IMC e comorbidades",
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Tratamento Farmacológico da Obesidade 2026 (ABESO/SBEM); posicionamento conjunto ABESO/SBD/SBC/SBEM/Academia Brasileira do Sono 2025; OMS 2025",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com IMC ≥25kg/m² (sobrepeso) ou ≥30kg/m² (obesidade)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Mudança de estilo de vida em todos os casos: déficit calórico individualizado, atividade física regular, terapia comportamental (primeira linha, mas isoladamente pouco eficaz a longo prazo na obesidade estabelecida)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "IMC ≥30 (ou ≥27 com comorbidade associada) sem resposta adequada apenas com estilo de vida?",
+        "ramos": [
+          {
+            "label": "Não atinge esse critério",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter apenas intervenção em estilo de vida, com reavaliação periódica"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Indicar farmacoterapia — PREFERIR medicamentos de ALTA potência: semaglutida 2,4mg ou tirzepatida (perda ponderal média >15-20%)"
+              },
+              {
+                "tipo": "alerta",
+                "texto": "Orlistate e sibutramina são opções de menor potência, hoje reservadas a situações de menor acesso às novas classes; sibutramina é CONTRAINDICADA em doença arterial coronariana ou cerebrovascular"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Paciente tem DM2, obesidade/sobrepeso E risco cardiovascular ALTO? OU esteato-hepatite associada à disfunção metabólica (MASH) com fibrose?",
+                "ramos": [
+                  {
+                    "label": "Risco CV alto associado",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Agonista de GLP-1 (liraglutida, dulaglutida ou semaglutida) indicado também para REDUÇÃO DE EVENTOS CARDIOVASCULARES, independentemente da meta de perda de peso"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "MASH com fibrose hepática",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Semaglutida é a recomendação farmacológica principal"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Nenhuma das duas condições específicas",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Seguir com o agente de alta potência escolhido, reavaliando resposta ponderal em 3-6 meses"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tipo": "decisao",
+                "texto": "IMC ≥40, OU IMC ≥35 com comorbidade significativa, refratário a tratamento clínico otimizado?",
+                "ramos": [
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter tratamento clínico (estilo de vida + farmacoterapia) com acompanhamento"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Encaminhar para avaliação multidisciplinar de cirurgia bariátrica (cirurgião, endocrinologista, cardiologista, pneumologista, psicólogo, nutricionista)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Cirurgia bariátrica — tratamento mais eficaz e duradouro para obesidade grave; melhora glicêmica precoce por efeito neuro-hormonal (aumento de GLP-1 endógeno), não apenas pela perda de peso"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
