@@ -1460,28 +1460,64 @@
     "temaId": "dpoc-exacerbado",
     "area": "residencia",
     "tipo": "tratamento",
-    "titulo": "DPOC exacerbado — Fluxo de tratamento",
-    "revisado": false,
-    "fonte": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2025",
+    "titulo": "DPOC exacerbado — algoritmo de manejo na emergência (GOLD 2026)",
+    "revisado": true,
+    "fonte": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2026",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Exacerbação de DPOC (piora aguda dos sintomas respiratórios)"
+        "texto": "Exacerbação de DPOC: piora aguda dos sintomas respiratórios de base (dispneia, tosse, volume/purulência do escarro), instalada em <14 dias"
       },
       {
         "tipo": "action",
-        "texto": "Avaliar critérios de Anthonisen + broncodilatador de curta ação + corticoide sistêmico"
+        "texto": "Avaliar gravidade pelos critérios de Roma (dispneia EVA, FR, FC, SpO2, PCR e/ou gasometria) — define local de tratamento (leve: ambulatorial; moderada: pode exigir observação/internação; grave: acidose respiratória, pH ≤7,35)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Broncodilatador de curta duração (beta-agonista + anticolinérgico) em doses repetidas + corticoide sistêmico em curso curto (5 dias)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Oxigenoterapia titulada: meta de SpO2 88-92% em retentores crônicos de CO2 (ou risco de retenção) — NUNCA hiperoxigenar, sob risco de suprimir o drive respiratório hipóxico e precipitar narcose por CO2"
       },
       {
         "tipo": "decisao",
-        "texto": "≥2 critérios de Anthonisen com purulência do escarro?",
+        "texto": "Critérios de Anthonisen presentes (piora da dispneia, aumento do volume do escarro, aumento da purulência do escarro)?",
+        "ramos": [
+          {
+            "label": "3 critérios (tipo I), ou 2 critérios incluindo purulência (tipo II)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Indicar antibioticoterapia — maior probabilidade de etiologia bacteriana"
+              }
+            ]
+          },
+          {
+            "label": "Tipo III (≤1 critério, ou 2 sem purulência)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Antibiótico não indicado rotineiramente, exceto se exacerbação grave com necessidade de VNI/VM"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Acidose respiratória (pH ≤7,35 com hipercapnia) ou rebaixamento do nível de consciência?",
         "ramos": [
           {
             "label": "Sim",
             "fluxo": [
               {
-                "tipo": "action",
-                "texto": "Associar antibioticoterapia"
+                "tipo": "alerta",
+                "texto": "Indicação formal de ventilação não invasiva PRECOCE — reduz necessidade de intubação e mortalidade quando iniciada oportunamente"
+              },
+              {
+                "tipo": "end",
+                "texto": "Se falha da VNI ou contraindicação (rebaixamento importante, instabilidade hemodinâmica, vômitos incoercíveis), proceder à intubação e ventilação mecânica invasiva"
               }
             ]
           },
@@ -1490,15 +1526,15 @@
             "fluxo": [
               {
                 "tipo": "end",
-                "texto": "Manter broncodilatador/corticoide sem antibiótico"
+                "texto": "Manter tratamento clínico com reavaliação seriada; considerar alta quando estabilizado"
               }
             ]
           }
         ]
       },
       {
-        "tipo": "alerta",
-        "texto": "Acidose respiratória ou rebaixamento do nível de consciência → considerar ventilação não invasiva/mecânica"
+        "tipo": "action",
+        "texto": "Após alta: exacerbação moderada/grave já reclassifica o paciente no grupo E (GOLD 2026) — indicar terapia broncodilatadora dupla de manutenção (LABA+LAMA), associando corticoide inalatório se eosinófilos ≥300/µL; considerar azitromicina profilática ou terapia biológica (dupilumabe/mepolizumabe) se exacerbador frequente refratário à terapia tripla otimizada"
       }
     ]
   },
