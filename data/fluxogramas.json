@@ -6229,5 +6229,138 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-cancer-pulmao-diagnostico",
+    "temaId": "cancer-pulmao",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Câncer de pulmão — do nódulo suspeito à confirmação histológica",
+    "revisado": true,
+    "fonte": "Diretriz brasileira de rastreamento de câncer de pulmão 2024 (SBCT/SBPT/CBR); prática oncológica padrão",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Nódulo/massa pulmonar suspeita (sintomático ou achado incidental em TC de tórax)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Nódulo cresce em exames seriados, ou já apresenta alta probabilidade de malignidade (tamanho, espiculação, PET-CT positivo)?",
+        "ramos": [
+          {
+            "label": "Não — nódulo pequeno, estável, baixo risco",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguimento radiológico seriado (TC), sem biópsia imediata"
+              }
+            ]
+          },
+          {
+            "label": "Sim — indicação de biópsia",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "O diagnóstico histológico é SEMPRE obrigatório antes de iniciar tratamento — mesmo com imagem/PET-CT muito sugestivos de malignidade, nunca tratar sem confirmação"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Localização da lesão?",
+                "ramos": [
+                  {
+                    "label": "Periférica",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Biópsia transtorácica guiada por TC (maior rendimento que broncoscopia nessas lesões)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Central/endobrônquica visível",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Biópsia por broncoscopia"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Linfonodo mediastinal/hilar com captação aumentada no PET-CT",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Confirmação histológica por EBUS (ultrassonografia endobrônquica) antes de decisão terapêutica — PET tem ~5% de falso-negativo e também gera falsos-positivos (inflamação/infecção)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cancer-pulmao-tratamento",
+    "temaId": "cancer-pulmao",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Câncer de pulmão de não pequenas células — decisão terapêutica por estágio",
+    "revisado": true,
+    "fonte": "Protocolo tipo KEYNOTE-671 (quimioimunoterapia perioperatória); diretrizes oncológicas atuais",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico histológico confirmado: carcinoma de não pequenas células"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Estadiamento (TC/PET-CT ± confirmação histológica linfonodal)",
+        "ramos": [
+          {
+            "label": "Estágio inicial, localizado, sem disseminação linfonodal/metastática significativa",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Ressecção cirúrgica com intenção curativa (lobectomia com esvaziamento mediastinal é o padrão; segmentectomia reservada a casos selecionados)"
+              }
+            ]
+          },
+          {
+            "label": "Doença ressecável em estágio II a IIIB (N2)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Quimioimunoterapia neoadjuvante seguida de cirurgia e imunoterapia adjuvante (esquema tipo KEYNOTE-671, pembrolizumabe) — padrão atual, superior à cirurgia isolada"
+              }
+            ]
+          },
+          {
+            "label": "Doença oligometastática (ex.: metástase única cerebral) com tumor primário ressecável, sem outros sítios de doença",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratamento com intenção curativa: ressecção do sítio metastático E do tumor primário, seguida de terapia adjuvante"
+              }
+            ]
+          },
+          {
+            "label": "Estágio avançado/metastático, sem indicação cirúrgica",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Perfil molecular do tumor: mutações de EGFR, rearranjos de ALK/ROS1, expressão de PD-L1"
+              },
+              {
+                "tipo": "end",
+                "texto": "Tratamento sistêmico guiado pelo perfil molecular: terapias-alvo (se mutação driver) ou imunoterapia com inibidores de checkpoint (conforme PD-L1) ± quimioterapia"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
