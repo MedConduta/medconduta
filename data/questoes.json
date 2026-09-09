@@ -491,7 +491,7 @@
     "tema": "Tromboembolismo Pulmonar (TEP)",
     "banca": "Exemplo — MedConduta",
     "ano": 2025,
-    "revisado": false,
+    "revisado": true,
     "fonte": "Diretriz Brasileira de Tromboembolismo Venoso - SBPT/SBC; ESC Guidelines for Pulmonary Embolism (2019, atualizacao 2024)",
     "enunciado": "Paciente com dispneia súbita e dor pleurítica apresenta baixa probabilidade pré-teste pelo escore de Wells. Qual a conduta diagnóstica mais adequada?",
     "alternativas": [
@@ -38791,6 +38791,62 @@
     "banca": "BASES DPOC — banco de questões EMR (Eu Médico Residente) (IAMSPE 2022 R3 CM)",
     "ano": 2022,
     "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (DPOC)",
+    "revisado": true
+  },
+  {
+    "id": "q2115",
+    "temaId": "tep",
+    "tema": "Tromboembolismo Pulmonar (TEP)",
+    "enunciado": "Homem, 54 anos, câncer de pulmão com metástases cerebrais, admitido na emergência com sensação de 'peso no tórax' e dispneia de início súbito. Foi realizado exame de imagem. O nome desse exame e o diagnóstico mais provável, respectivamente, são:",
+    "alternativas": [
+      "Angiotomografia do tórax / tromboembolismo pulmonar.",
+      "Angiotomografia do tórax / aneurisma de artérias pulmonares.",
+      "Angiografia pulmonar contrastada convencional / tromboembolismo pulmonar.",
+      "Angiografia pulmonar contrastada convencional / aneurismas de artérias pulmonares."
+    ],
+    "correta": 0,
+    "comentario": "A angiotomografia de tórax é o exame de imagem padrão-ouro e mais utilizado na prática para diagnóstico de TEP (não a angiografia pulmonar contrastada convencional, hoje reservada a situações excepcionais). O quadro de dispneia súbita associada a dor/peso torácico em paciente oncológico (câncer ativo é fator de risco maior para TEV) é altamente sugestivo de tromboembolismo pulmonar.",
+    "banca": "BASES Tromboembolismo Venoso — banco de questões EMR (Eu Médico Residente) (UFRJ-RJ 2022 ACESSO DIRETO)",
+    "ano": 2022,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Tromboembolismo Venoso)",
+    "revisado": true
+  },
+  {
+    "id": "q2116",
+    "temaId": "tep",
+    "tema": "Tromboembolismo Pulmonar (TEP)",
+    "enunciado": "Em relação à Tromboembolia Pulmonar (TEP) e trombose venosa profunda, é INCORRETO afirmar que:",
+    "alternativas": [
+      "A embolia pulmonar decorre, principalmente, de trombose venosa profunda em região distal dos membros inferiores.",
+      "O diagnóstico diferencial de TEP inclui aneurisma de aorta, pneumotórax e insuficiência cardíaca descompensada.",
+      "O escore de Wells é uma estratificação de probabilidade clínica de TEP, que tem importância na escolha das ferramentas diagnósticas como também na indicação ou não do tratamento.",
+      "Um teste negativo do D-dímero em paciente com baixa probabilidade clínica de TEP exclui o diagnóstico sem a necessidade de exames de imagem adicionais.",
+      "Os novos anticoagulantes orais (rivaroxabana, apixabana e dabigatrana), quando comparados com a varfarina, não demonstraram diferença na mortalidade ou recorrência de eventos trombóticos, apenas diminuíram sangramentos maiores e intracranianos."
+    ],
+    "correta": 0,
+    "comentario": "É INCORRETO (a armadilha clássica do tema): a embolia pulmonar decorre principalmente de TVP PROXIMAL (não distal) de membros inferiores — trombos de veias proximais (poplítea, femoral, ilíaca) têm maior calibre e maior propensão a embolizar para a circulação pulmonar. As demais afirmativas estão corretas: diagnósticos diferenciais relevantes, papel do escore de Wells na triagem diagnóstica/terapêutica, D-dímero negativo excluindo TEP em baixa probabilidade sem necessidade de imagem, e o perfil dos DOACs (eficácia equivalente à varfarina, porém com menos sangramentos maiores/intracranianos).",
+    "banca": "BASES Tromboembolismo Venoso — banco de questões EMR (Eu Médico Residente) (SES-PE 2017 ACESSO DIRETO)",
+    "ano": 2017,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Tromboembolismo Venoso)",
+    "revisado": true
+  },
+  {
+    "id": "q2117",
+    "temaId": "tep",
+    "tema": "Tromboembolismo Pulmonar (TEP)",
+    "enunciado": "Mulher, 32 anos, sem antecedentes pessoais, irmão de mesmos pais com 'doença no sangue' (possível trombofilia hereditária). Dor em hemitórax direito, ventilatório-dependente, início súbito há 3h, leve dispneia. Exame: lúcida, orientada, PA 140x86mmHg, FC 104bpm, SatO2 90% em ar ambiente, FR 26irpm, peso 60kg, altura 1,60m. ECG com taquicardia sinusal, radiografia de tórax sem alterações. Laboratório: Hb 10,8g/dL, leucócitos 6.800/mm³, plaquetas 410.000/mm³, ureia 23mg/dL, creatinina 0,9mg/dL, clearance de creatinina 93mL/min. Diagnóstico de TEP confirmado. Assinale a melhor opção de tratamento inicial:",
+    "alternativas": [
+      "Varfarina: iniciar com 5mg/dia, sempre associada a outro anticoagulante, preferencialmente enoxaparina 60mg 12/12h. Manter a associação até INR adequado, sem aumentar a dose de varfarina antes de 5 dias de tratamento.",
+      "Varfarina 5mg 1x/dia por 90 dias.",
+      "Rivaroxabana: iniciar 15mg de 12/12h por 15 dias, seguido de 20mg 1x/dia, sendo necessário associar outro anticoagulante nos primeiros 7 dias de tratamento.",
+      "Dabigatrana: iniciar 110mg 2x/dia por 15 dias. Manutenção com 110mg 1x/dia, sem necessidade de associação com outro anticoagulante.",
+      "Apixabana: iniciar com 5mg 2x/dia por 7 dias, seguido de 5mg 1x/dia, sem necessidade de associação com outro anticoagulante."
+    ],
+    "correta": 0,
+    "comentario": "Quando se opta por varfarina no tratamento do TEP, ela deve SEMPRE ser associada a um anticoagulante parenteral (heparina/HBPM) em ponte até que o INR atinja a faixa terapêutica, e a dose não deve ser aumentada antes de 5 dias — princípio de segurança fundamental (o efeito pleno da varfarina é retardado e a redução inicial da proteína C pode até ser pró-trombótica transitoriamente). As demais opções erram nas doses/esquemas padronizados dos DOACs: rivaroxabana (15mg 12/12h por 21 dias, não 15, e SEM necessidade de anticoagulante parenteral associado — essa é justamente sua vantagem), dabigatrana (exige, sim, 5-10 dias de anticoagulante parenteral antes de iniciar, e a dose de manutenção usual é 150mg 12/12h, não 110mg 1x/dia) e apixabana (dose de ataque correta é 10mg 12/12h por 7 dias, não 5mg, seguida de 5mg 12/12h de manutenção — mantendo-se 2x/dia, nunca 1x/dia).",
+    "banca": "BASES Tromboembolismo Venoso — banco de questões EMR (Eu Médico Residente) (SUS-SP 2022 ACESSO DIRETO — ADAPTADA)",
+    "ano": 2022,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Tromboembolismo Venoso)",
     "revisado": true
   }
 ]
