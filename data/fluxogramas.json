@@ -1808,36 +1808,64 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Dissecção de aorta — Fluxo de manejo (Stanford)",
-    "revisado": false,
-    "fonte": "ESC Guidelines on Aortic and Peripheral Arterial Diseases (2024); Diretriz da SBC sobre Doencas da Aorta",
+    "revisado": true,
+    "fonte": "Diretriz Brasileira de Dor Torácica na Unidade de Emergência (2025); ESC Guidelines on Aortic and Peripheral Arterial Diseases (2024)",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Dor torácica súbita lancinante, irradiando para o dorso"
+        "texto": "Dor torácica/dorsal súbita e lancinante — suspeita de síndrome aórtica aguda"
       },
       {
         "tipo": "action",
-        "texto": "AngioTC de aorta ou ecocardiograma transesofágico + controle de PA/FC"
+        "texto": "Betabloqueador IV (esmolol/labetalol) primeiro — meta FC<60bpm e PAS 100-120mmHg — depois vasodilatador se necessário"
+      },
+      {
+        "tipo": "action",
+        "texto": "AngioTC de aorta (ou ecocardiograma transesofágico se paciente instável para transporte)"
       },
       {
         "tipo": "decisao",
         "texto": "Classificação de Stanford",
         "ramos": [
           {
-            "label": "Tipo A (ascendente)",
+            "label": "Tipo A (aorta ascendente)",
             "fluxo": [
               {
                 "tipo": "alerta",
-                "texto": "Cirurgia de urgência"
+                "texto": "Emergência cirúrgica — mortalidade aumenta 1-2%/hora de atraso"
+              },
+              {
+                "tipo": "end",
+                "texto": "Cirurgia de urgência (correção do segmento dissecado ± raiz/valva aórtica)"
               }
             ]
           },
           {
-            "label": "Tipo B (descendente)",
+            "label": "Tipo B (aorta descendente)",
             "fluxo": [
               {
-                "tipo": "end",
-                "texto": "Tratamento clínico inicial (controle rigoroso de PA/FC)"
+                "tipo": "decisao",
+                "texto": "Há complicação (má perfusão de órgãos, expansão progressiva, dor refratária, ruptura iminente)?",
+                "ramos": [
+                  {
+                    "label": "Sim — complicada",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Intervenção endovascular (TEVAR)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — não complicada",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Tratamento clínico — controle rigoroso de PA/FC, reavaliação de imagem seriada"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
