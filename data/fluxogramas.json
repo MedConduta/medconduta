@@ -4330,5 +4330,92 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-valvopatias-estenose-aortica-tratamento",
+    "temaId": "valvopatias",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Estenose aórtica grave — Indicação e escolha de intervenção",
+    "revisado": true,
+    "fonte": "ESC/EACTS Guidelines for the Management of Valvular Heart Disease (2025); Diretriz de Valvopatias SBC (2020); ACC/AHA Valvular Heart Disease Guideline (2020)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Estenose aórtica grave ao ecocardiograma (área <1,0cm², gradiente médio >40mmHg, velocidade de jato >4m/s)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente sintomático (angina, síncope ou dispneia)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Indicação formal de intervenção — sobrevida cai drasticamente sem tratamento"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Idade e risco cirúrgico",
+                "ramos": [
+                  {
+                    "label": "<70 anos, baixo risco cirúrgico",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cirurgia de troca valvar aberta (SAVR)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "≥70 anos (ESC/EACTS 2025) ou risco intermediário/alto/proibitivo",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "TAVI (implante valvar aórtico transcateter), se anatomia favorável (valva tricúspide)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não — assintomático",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Há disfunção de VE (FEVE <50-55%) ou outros critérios de alto risco?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Intervenção indicada mesmo assintomático"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "ESC/EACTS 2025: considerar intervenção precoce em pacientes selecionados de baixo risco procedural (mudança recente); SBC 2020 ainda recomenda conduta expectante clássica"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Conduta expectante ('watchful waiting') com reavaliação ecocardiográfica periódica, ou intervenção precoce se critérios ESC/EACTS 2025 aplicáveis"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
