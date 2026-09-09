@@ -113,7 +113,7 @@
     "tema": "Lesão Renal Aguda (LRA)",
     "banca": "Exemplo — MedConduta",
     "ano": 2024,
-    "revisado": false,
+    "revisado": true,
     "fonte": "KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012)",
     "enunciado": "Paciente internado evolui com queda do débito urinário e aumento da creatinina. À beira-leito, apresenta hipotensão e mucosas secas, sem sinais de obstrução ao USG. Após prova de volume, a função renal melhora. Qual a classificação mais provável da LRA?",
     "alternativas": [
@@ -42007,6 +42007,986 @@
     "banca": "BASES Neoplasia de Pulmão e Tabagismo — banco de questões EMR (Eu Médico Residente) (PUC-PR 2022)",
     "ano": 2022,
     "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Neoplasia de Pulmão e Tabagismo)",
+    "revisado": true
+  },
+  {
+    "id": "q2290",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 56 anos, com cirrose hepática metabólica, apresenta aumento do volume abdominal, confusão mental e piora da icterícia. Exames mostram piora da função renal (creatinina basal 0,9mg/dL → atual 2,1mg/dL), leucocitose e PCR elevada. Assinale a conduta CORRETA.",
+    "alternativas": [
+      "Realizar expansão volêmica com Ringer lactato devido à disfunção renal.",
+      "Iniciar diurético venoso para melhor controle da ascite.",
+      "Iniciar antibiótico de amplo espectro.",
+      "Realizar paracentese diagnóstica e expansão com albumina venosa."
+    ],
+    "correta": 3,
+    "comentario": "O quadro (ascite + confusão mental + leucocitose/PCR elevada + piora renal) sugere peritonite bacteriana espontânea (PBE) como gatilho da lesão renal aguda. A conduta inicial é paracentese diagnóstica (confirmar PBE pela celularidade do líquido ascítico) associada à expansão com albumina venosa, que reduz a incidência de síndrome hepatorrenal secundária à PBE.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2291",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 33 anos, atleta de crossfit, com mialgia intensa há 5 dias evoluindo com náuseas, vômitos e queda do estado geral. Creatinina 6,82mg/dL, ureia 202mg/dL, urina com hemácias 2/campo e hemoglobina ++++. O principal mecanismo fisiopatológico da lesão renal aguda desse paciente é:",
+    "alternativas": [
+      "Isquemia renal medular.",
+      "Depósito de imunocomplexos em glomérulo.",
+      "Obstrução tubular por pigmentos heme em associação com ácido úrico.",
+      "Dilatação de arteríola eferente glomerular.",
+      "Ação direta de toxinas no túbulo distal."
+    ],
+    "correta": 2,
+    "comentario": "O quadro (mialgia intensa, hemoglobina fortemente positiva na fita reagente com poucas hemácias ao sedimento — sugerindo mioglobinúria, não hematúria verdadeira) é típico de rabdomiólise. O principal mecanismo da lesão renal é a obstrução tubular por cilindros de pigmento heme, agravada pela precipitação concomitante de ácido úrico nos túbulos.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2292",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Conforme os critérios mais recentes (Cairo-Bishop) para síndrome de lise tumoral laboratorial, é necessário que o paciente apresente, de três dias antes até sete dias após o tratamento, pelo menos duas das seguintes alterações:",
+    "alternativas": [
+      "Ácido úrico ≥5mg/dL (ou aumento >25%); potássio ≥8mEq/L (ou aumento >25%); fósforo ≥4,5mg/dL (ou aumento >25%); e/ou cálcio total ≤7mg/dL (ou redução >25%).",
+      "Ácido úrico ≥8mg/dL (ou aumento >25%); potássio ≥6mEq/L (ou aumento >25%); fósforo ≥9mg/dL (ou aumento >25%); e/ou cálcio total >7mg/dL (ou aumento >25%).",
+      "Ácido úrico ≥5mg/dL (ou aumento >25%); potássio ≥8mEq/L (ou aumento >25%); fósforo ≥9mg/dL (ou aumento >25%); e/ou cálcio total >7mg/dL (ou aumento >25%).",
+      "Ácido úrico ≥8mg/dL (ou aumento >25%); potássio ≥6mEq/L (ou aumento >25%); fósforo ≥4,5mg/dL (ou aumento >25%); e/ou cálcio total ≤7mg/dL (ou redução >25%)."
+    ],
+    "correta": 3,
+    "comentario": "Os critérios laboratoriais de Cairo-Bishop para síndrome de lise tumoral são: ácido úrico ≥8mg/dL, potássio ≥6mEq/L, fósforo ≥4,5mg/dL, e/ou cálcio total ≤7mg/dL (ou as respectivas variações >25% do basal) — note que na SLT o cálcio fica BAIXO (não alto), por quelação pelo fósforo liberado.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2293",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Mulher, 85 anos, encontrada desacordada em domicílio, Glasgow 10, mucosas secas, PA 90/50mmHg, FC 143bpm, extremidades frias. Consolidação em base direita à radiografia. Laboratório: Hb 6,5; ureia 205; creatinina 2,95; Na+ 154; K+ 3,2; pH 7,0; HCO3 10; pCO2 14; cloro 115; cálcio iônico 0,9. Considere:\n\nI. Acidose metabólica hiperclorêmica (cloro elevado, ânion-gap normal); indicação de bicarbonato parenteral apesar da hipernatremia/hipocalcemia.\nII. Espera-se FENa urinária elevada, pela hipernatremia hipovolêmica.\nIII. Relação ureia/creatinina elevada sugere etiologia pré-renal, mas pode estar aumentada também em sangramento gastrointestinal — hipótese a ser ponderada.\nIV. Distúrbios de água e sódio sobrepostos; expansão com Ringer Lactato é boa opção pelos distúrbios eletrolíticos presentes.\n\nAssinale a alternativa correta.",
+    "alternativas": [
+      "Somente I e II são corretas.",
+      "Somente I e IV são corretas.",
+      "Somente III e IV são corretas.",
+      "Somente I, II e III são corretas.",
+      "Somente II, III e IV são corretas."
+    ],
+    "correta": 2,
+    "comentario": "III e IV corretas. I é falsa: reposição agressiva de bicarbonato não é indicada rotineiramente e pode agravar hipernatremia/hipocalcemia. II é falsa: em hipovolemia pré-renal a FENa é BAIXA (rim retém sódio ativamente), não elevada. III está correta (mas deve-se lembrar da ponderação com sangramento GI). IV está correta: a paciente tem hipernatremia e hipovolemia — o Ringer Lactato, com menor concentração de sódio que a salina 0,9%, é uma opção razoável.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2294",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 23 anos, em quimioterapia de indução para leucemia linfoblástica aguda (leucometria inicial de 155.000/μL). Todas as complicações abaixo são esperadas durante o tratamento, EXCETO:",
+    "alternativas": [
+      "Lesão renal aguda.",
+      "Hipercalcemia.",
+      "Hiperpotassemia.",
+      "Hiperfosfatemia."
+    ],
+    "correta": 1,
+    "comentario": "A síndrome de lise tumoral (risco elevado nesse paciente por alta carga tumoral) cursa classicamente com HIPOcalcemia (por quelação do cálcio pelo fósforo liberado), não hipercalcemia — a hipercalcemia, portanto, NÃO é uma complicação esperada desse quadro.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2295",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Sobre a obstrução do trato urinário superior e a lesão renal pós-renal, é correto afirmar que:",
+    "alternativas": [
+      "A excreção de potássio após alívio da obstrução bilateral é maior que após obstrução unilateral, pela retenção de sódio, água e substâncias osmóticas e aumento do fator natriurético atrial.",
+      "A recuperação da função renal após o alívio da obstrução é afetada pela duração, grau, idade do paciente, função renal basal, complacência do sistema coletor e infecção.",
+      "A obstrução ureteral pode resultar em diminuições prolongadas na capacidade de concentração e alcalinização urinária muito depois de a obstrução ser liberada.",
+      "O crescimento renal compensatório diminui progressivamente com a idade — o rim aumenta com o número de néfrons e glomérulos após o nascimento."
+    ],
+    "correta": 1,
+    "comentario": "A recuperação funcional renal após desobstrução depende de múltiplos fatores prognósticos: tempo de obstrução, grau, idade, função renal prévia, complacência do sistema coletor e presença de infecção associada — quanto mais prolongada a obstrução, menor a chance de recuperação completa, reforçando a urgência da desobstrução precoce.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2296",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 39 anos, com massa abdominal de 11x8cm e sinais de compressão intestinal. Laboratório: Hb 8,4; leucócitos 14.000; plaquetas 56.000; LDH 3.236 U/L (VR<230); ácido úrico 13mg/dL (VR<6,0). Qual alteração eletrolítica é mais provável?",
+    "alternativas": [
+      "Hiponatremia.",
+      "Hiperfosfatemia.",
+      "Hipercalcemia.",
+      "Hipocalemia."
+    ],
+    "correta": 1,
+    "comentario": "O quadro (LDH e ácido úrico muito elevados, provável linfoma volumoso com alto turnover celular) é compatível com lise tumoral espontânea — a hiperfosfatemia (por liberação intracelular de fósforo) é a alteração eletrolítica esperada, junto com hipercalemia e hipocalcemia (não hipercalcemia).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2297",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Sobre a síndrome de lise tumoral (SLT), analise:\n\nI. É ocasionada pela lise maciça de células tumorais, levando a hiperuricemia, hipercalemia, hiperfosfatemia e hipocalcemia.\nII. A identificação de pacientes oncológicos de maior risco é fundamental, pois a instituição rápida de medidas preventivas é a etapa prioritária nesse grupo.\nIII. A hipercalcemia, comum na SLT, pode levar a arritmias graves (torsades de pointes) e irritabilidade neuromuscular (tetania, convulsões).\n\nEstá(ão) CORRETO(S):",
+    "alternativas": [
+      "Todos os itens.",
+      "Somente o item II.",
+      "Somente o item III.",
+      "Somente os itens I e II."
+    ],
+    "correta": 3,
+    "comentario": "I e II corretos. III é falso: a alteração de cálcio característica da SLT é a HIPOcalcemia (por quelação pelo fósforo liberado), não hipercalcemia — é a hipocalcemia que causa tetania, convulsões e arritmias na SLT, não uma hipercalcemia (que não é achado típico da síndrome).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2298",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 72 anos, DM2, internado por choque séptico urinário secundário a hiperplasia prostática benigna. Creatinina de admissão 3,6mg/dL, com exame prévio de 1,8mg/dL há 2 meses. Como deve ser classificada essa piora da função renal?",
+    "alternativas": [
+      "Insuficiência renal aguda, estágio KDIGO 1.",
+      "Insuficiência renal aguda, estágio KDIGO 2.",
+      "Insuficiência renal aguda, estágio KDIGO 3.",
+      "Insuficiência renal crônica, estágio KDIGO 5."
+    ],
+    "correta": 1,
+    "comentario": "A relação entre a creatinina atual e a basal (3,6/1,8 = 2,0x) corresponde ao critério de estágio KDIGO 2 (aumento de 2,0 a 2,9x o valor basal). Como a comparação é feita com um exame de 2 meses atrás (não dentro de 48h ou 7 dias), tecnicamente o quadro é mais bem caracterizado dentro da lógica funcional do critério de multiplicação do basal, aplicável mesmo sem uma dosagem recente — daí a classificação em estágio 2.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2299",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Menina, 2 anos, previamente hígida, com 3 dias de diarreia sanguinolenta resolvida espontaneamente. Após a resolução, surge palidez importante. Ao exame: pálida, irritada, afebril, FC 150bpm, PA 150/80mmHg, edema de extremidades inferiores com cacifo e petéquias disseminadas. O diagnóstico mais provável é:",
+    "alternativas": [
+      "Septicemia.",
+      "Meningococcemia.",
+      "Síndrome hemolítico-urêmica.",
+      "Púrpura trombocitopênica imunológica."
+    ],
+    "correta": 2,
+    "comentario": "Diarreia sanguinolenta (tipicamente por E. coli produtora de toxina Shiga) seguida de anemia (hemólise), petéquias (trombocitopenia) e lesão renal (edema, hipertensão) é a tríade clássica da síndrome hemolítico-urêmica típica pós-diarreica, mais comum em crianças pequenas.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2300",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Considere os seguintes dados laboratoriais: I. Fração de excreção de sódio; II. Fração de excreção de ureia; III. Relação ureia/creatinina no plasma. Em um paciente com quadro de insuficiência pré-renal, os achados mais prováveis, dentre os abaixo, são:",
+    "alternativas": [
+      "Dado I: 0,5%; Dado II: 30%; Dado III: 45.",
+      "Dado I: 2%; Dado II: 40%; Dado III: 15.",
+      "Dado I: 0,5%; Dado II: 40%; Dado III: 15.",
+      "Dado I: 2%; Dado II: 30%; Dado III: 45.",
+      "Dado I: 0,5%; Dado II: 30%; Dado III: 15."
+    ],
+    "correta": 0,
+    "comentario": "No padrão pré-renal clássico: FENa baixa (<1%, aqui 0,5%), FEUreia baixa (<35%, aqui 30%) e relação ureia/creatinina plasmática elevada (>20, geralmente >40 em depleção intensa, aqui 45) — o rim íntegro retém ativamente sódio e água por hipoperfusão.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2301",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 69 anos, com diarreia líquida há 4 dias e redução do volume urinário nas últimas 24h, em uso de carvedilol, enalapril e furosemida para IC. Creatinina 1,5mg/dL, ureia 90mg/dL, potássio 4,9mEq/L. Urina I: densidade 1.035, cilindros hialinos, sem outras alterações. FENa 3%, FEUreia 28%. O diagnóstico mais provável é:",
+    "alternativas": [
+      "Necrose tubular aguda tóxica.",
+      "Necrose tubular aguda isquêmica.",
+      "Lesão pré-renal por hipoperfusão.",
+      "Nefrite intersticial aguda."
+    ],
+    "correta": 2,
+    "comentario": "Apesar de o paciente estar em uso de diurético (o que eleva a FENa mesmo em quadro pré-renal), a FEUreia permanece baixa (28%, <35%) — o discriminador mais confiável nesse cenário — compatível com lesão pré-renal por hipoperfusão (diarreia + diuréticos), reforçada pela densidade urinária elevada e cilindros hialinos (inespecíficos, sem sinais de dano tubular).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2302",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "A azotemia pré-renal é a forma mais comum de insuficiência renal aguda, podendo estar associada mais frequentemente:",
+    "alternativas": [
+      "À hemólise.",
+      "À litíase renal.",
+      "À hipovolemia.",
+      "Ao contraste iodado."
+    ],
+    "correta": 2,
+    "comentario": "A hipovolemia (por perdas gastrointestinais, hemorragia, diuréticos, terceiro espaço) é a causa mais comum de azotemia pré-renal — a forma mais frequente de lesão renal aguda em geral.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2303",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Assinale a etiologia mais comum de lesão renal aguda, que afeta 40-80% dos pacientes.",
+    "alternativas": [
+      "Pré-renal.",
+      "Pós-renal.",
+      "Necrose tubular aguda.",
+      "Nefrite intersticial aguda."
+    ],
+    "correta": 0,
+    "comentario": "A LRA pré-renal é, de longe, a etiologia mais comum, respondendo por 40-80% dos casos a depender da população estudada — reforçando por que a avaliação volêmica e a otimização hemodinâmica são sempre o primeiro passo na investigação inicial.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2304",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Paciente, 67 anos, em UTI por síndrome coronariana aguda sem supra de ST, submetido a angioplastia com stent. Horas após, evolui com oligúria, edema de MMII e eosinofilia periférica, com elevação de ureia/creatinina. Diagnóstico: embolia por cristais de colesterol (ateroembolismo). Nesse caso, é mais comum encontrar qual achado?",
+    "alternativas": [
+      "Hipocomplementenemia.",
+      "Proteinúria nefrótica.",
+      "Rash cutâneo serpiginoso.",
+      "Xantelasmas difusos em abdômen.",
+      "Hepatite aguda."
+    ],
+    "correta": 0,
+    "comentario": "O ateroembolismo por cristais de colesterol classicamente ativa a via alternativa do complemento, cursando com hipocomplementemia transitória — junto com eosinofilia, livedo reticularis e lesões digitais isquêmicas, é um achado laboratorial de apoio diagnóstico importante.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2305",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Adulto jovem, picado por cascavel há dias, sem atendimento prévio. Há 24h com dispneia que piora ao deitar, anúria há 36h, e nas últimas 3h vômitos com sangue e epistaxe. Exame: dispneia importante, FR 30irpm, estertores crepitantes em bases, PA 160x100mmHg, edema de MMII. Laboratório: ureia 250, creatinina 5,0, sódio 132, potássio 5,2. Após medidas iniciais (monitorização, O2, diuréticos), qual a melhor conduta?",
+    "alternativas": [
+      "Iniciar solução de insulina com glicose até normalização do potássio.",
+      "Indicar diálise de urgência.",
+      "Iniciar anti-hipertensivo por via endovenosa.",
+      "Iniciar expansão volêmica até que o paciente apresente diurese.",
+      "Iniciar reposição de fatores de coagulação."
+    ],
+    "correta": 1,
+    "comentario": "O paciente já apresenta sinais claros de hipervolemia refratária (dispneia ortostática, estertores, edema) mesmo após diuréticos, associada a sangramento (coagulopatia induzida pelo veneno botrópico/crotálico) e uremia (vômitos sanguinolentos, epistaxe) — indicação clara de diálise de urgência, sem espaço para mais expansão volêmica, que pioraria a sobrecarga.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2306",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "São indicações de diálise na injúria renal aguda:",
+    "alternativas": [
+      "Urina concentrada e fadiga.",
+      "Hipocalemia e acidose respiratória.",
+      "Clearance de creatinina <10ml/min e atrofia renal.",
+      "Azotemia e síndrome urêmica.",
+      "Oligúria por 6 horas e hipercalcemia."
+    ],
+    "correta": 3,
+    "comentario": "Azotemia progressiva associada a sinais/sintomas de síndrome urêmica (náuseas, encefalopatia, pericardite urêmica) é indicação clássica de diálise de urgência — junto com hipercalemia refratária, acidose refratária e sobrecarga volêmica refratária (mnemônico AEIOU).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2307",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 62 anos, com fraqueza, anorexia e mal-estar há 2 semanas, evoluindo com diarreia aquosa (6-7 episódios/dia), náuseas e vômitos. HAS e DM em uso de losartana, anlodipino, AAS e insulina. Glicemia capilar 432; ureia 217; creatinina 4,7; potássio 6,8; pH 7,18; bicarbonato 18,7. USG com rins normais, sem obstrução. É correto afirmar:",
+    "alternativas": [
+      "A lesão renal se deve à perda de líquidos e eletrólitos pela glicosúria e estado hiperosmolar hiperglicêmico.",
+      "A anemia é consequência de lesão aguda da mucosa gastroduodenal secundária à uremia.",
+      "O sódio urinário deve ser menor que 20mEq/L e a fração de excreção de ureia menor que 35%.",
+      "O exame de urina pode apresentar cilindros granulosos e proteinúria leve (1 a 2+/4+).",
+      "Pelo nível sérico de potássio, o ECG deve mostrar alargamento de QRS e ondas T em tenda."
+    ],
+    "correta": 3,
+    "comentario": "O quadro (diarreia intensa prolongada evoluindo para lesão renal com hipoperfusão sustentada) evoluiu de pré-renal para necrose tubular aguda estabelecida — nessa fase, o exame de urina tipicamente já mostra cilindros granulosos (marcador de dano tubular) e proteinúria leve, achados que não ocorrem na fase puramente pré-renal.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2308",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 25 anos, em quimioterapia para linfoma de Burkitt, desenvolve quadro típico de síndrome de lise tumoral, com náusea, letargia e convulsão. Os distúrbios eletrolíticos esperados são:",
+    "alternativas": [
+      "Hipocalemia, hipofosfatemia e hipercalcemia.",
+      "Hipercalemia, hipofosfatemia e hipocalcemia.",
+      "Hipercalemia, hiperfosfatemia e hipocalcemia.",
+      "Hipercalemia, hipofosfatemia e hipercalcemia.",
+      "Hipocalemia, hiperfosfatemia e hipocalcemia."
+    ],
+    "correta": 2,
+    "comentario": "A tríade eletrolítica clássica da síndrome de lise tumoral é: hipercalemia, hiperfosfatemia e hipocalcemia (esta última secundária à quelação do cálcio pelo fósforo liberado em excesso) — a convulsão do enunciado é explicada pela hipocalcemia/hipercalemia graves.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2309",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Paciente vítima de esmagamento apresenta rabdomiólise evoluindo com lesão renal aguda. Qual o principal mecanismo da lesão renal?",
+    "alternativas": [
+      "Glomerulonefrite",
+      "Alteração pós-renal",
+      "Alteração pré-renal",
+      "Nefrite intersticial aguda",
+      "Necrose tubular aguda"
+    ],
+    "correta": 4,
+    "comentario": "Na rabdomiólise, a lesão tubular direta (por obstrução tubular com cilindros de mioglobina/heme, além de efeito citotóxico e vasoconstrição intrarrenal) evolui para necrose tubular aguda estabelecida — mecanismo predominante da lesão renal nesse contexto.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2310",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Sobre a injúria renal aguda na sepse, identifique V/F:\n\n( ) A identificação precoce da hipoperfusão tecidual e o tratamento imediato da sepse podem minimizar a evolução para insuficiência renal.\n( ) A lesão renal é causada por alterações na resposta inflamatória, não sendo possível interferir na instalação da insuficiência renal uma vez desencadeada a cascata inflamatória.\n( ) O acúmulo de fluidos sempre é desejável e reverterá a progressão para necrose tubular aguda.\n( ) A expansão volêmica com cristaloides balanceados está associada a menor incidência de lesão renal aguda.\n( ) O uso precoce de vasopressina melhora o desfecho renal.\n\nAssinale a sequência correta.",
+    "alternativas": [
+      "V • F • V • V • V",
+      "V • F • F • V • F",
+      "F • V • V • F • V",
+      "F • V • V • F • F",
+      "F • V • F • V • V"
+    ],
+    "correta": 1,
+    "comentario": "V-F-F-V-F: o tratamento precoce da hipoperfusão de fato minimiza a progressão renal (V); a instalação da IRA na sepse PODE sim ser modificada com tratamento adequado (item II falso); o acúmulo excessivo de fluidos é DELETÉRIO, não desejável, e não reverte a NTA já instalada (item III falso); cristaloides balanceados reduzem a incidência de LRA em comparação à salina 0,9% (V); e não há evidência robusta de que vasopressina precoce melhore especificamente o desfecho renal (item V falso).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2311",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Paciente admitido por confusão mental, ureia 182mg/dL, creatinina 8,2mg/dL, com hematúria. USG evidencia dilatação pielocalicial à esquerda por cálculo de 1,2cm em ureter distal; rim direito não visualizado (funcionalmente único). Avalie:\n\nI — A redução da taxa de filtração glomerular neste caso é atribuída à redução da perfusão glomerular.\n\nPORQUE\n\nII — O aumento súbito de pressões intratubulares leva a alterações hemodinâmicas, desencadeadas pelo aumento da produção de óxido nítrico e consequente vasoconstrição.",
+    "alternativas": [
+      "As asserções I e II são verdadeiras, e a II é uma justificativa da I.",
+      "As asserções I e II são verdadeiras, mas a II não é uma justificativa da I.",
+      "A asserção I é verdadeira e a II é falsa.",
+      "A asserção I é falsa e a II é verdadeira.",
+      "As asserções I e II são falsas."
+    ],
+    "correta": 0,
+    "comentario": "Na obstrução urinária (pós-renal), o aumento retrógrado da pressão intratubular reduz a pressão de filtração efetiva (redução da perfusão glomerular funcional) — mediado por alterações vasculares intrarrenais, incluindo vasoconstrição pré-glomerular. Ambas as asserções são verdadeiras e a segunda justifica corretamente a primeira.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2312",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Sobre a insuficiência renal aguda, é correto afirmar:",
+    "alternativas": [
+      "A fração de excreção de sódio renal é maior que 1% na IRA pré-renal e menor que 1% na IRA intrínseca.",
+      "A síndrome hepatorrenal é uma das causas de insuficiência renal aguda, que comumente responde à expansão volêmica com cristaloide.",
+      "A normalização da pressão arterial na hipertensão arterial maligna nas primeiras 4h evita a instalação da lesão renal aguda.",
+      "Pacientes com azotemia pré-renal e ICC ('síndrome cardiorrenal') podem apresentar distensão venosa jugular, ritmo de galope, S3, edema periférico e pulmonar.",
+      "Pacientes com azotemia pré-renal por depleção de volume geralmente demonstram hipotensão ortostática, taquicardia, baixa pressão venosa jugular, mucosas ressecadas e edema pulmonar."
+    ],
+    "correta": 3,
+    "comentario": "Na síndrome cardiorrenal (azotemia pré-renal por baixo débito cardíaco em ICC descompensada), coexistem sinais de congestão sistêmica (turgência jugular, S3, edema) apesar do baixo volume circulante EFETIVO — um padrão distinto e paradoxal em relação à depleção volêmica pura, na qual esperamos jugular BAIXA e ausência de edema pulmonar (o que torna a última alternativa incorreta por incluir edema pulmonar em depleção pura).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2313",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Paciente admitido com náuseas, vômitos, oligúria e confusão mental. Laboratório: aumento de escórias nitrogenadas, hiponatremia e hipocalemia. Assinale a alternativa que NÃO se enquadra nas causas desse quadro clínico:",
+    "alternativas": [
+      "Leptospirose.",
+      "Uso de aminoglicosídeo.",
+      "Uso de anfotericina B.",
+      "Rabdomiólise."
+    ],
+    "correta": 3,
+    "comentario": "A rabdomiólise classicamente cursa com HIPERcalemia (liberação de potássio intracelular pela lesão muscular), não hipocalemia — diferente da leptospirose (fase da Weil, tipicamente não oligúrica e hipocalêmica) e da nefrotoxicidade tubular por aminoglicosídeo/anfotericina B, que também podem cursar com perda tubular de potássio.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2314",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Pré-escolar, 3 anos, com febre, diarreia com muco/sangue há 3 dias e queda do estado geral, palidez, perfusão lentificada, sangramento em locais de punção. Hb 5,3g/dL; plaquetas 85.000/mm³. A hipótese diagnóstica é:",
+    "alternativas": [
+      "Diarreia aguda com desidratação e anemia ferropriva.",
+      "Leucemia aguda.",
+      "Lúpus eritematoso sistêmico.",
+      "Síndrome hemolítico-urêmica."
+    ],
+    "correta": 3,
+    "comentario": "Diarreia sanguinolenta seguida de anemia hemolítica (palidez, Hb muito baixa) e trombocitopenia (sangramento em locais de punção) em criança pequena é o quadro clássico de síndrome hemolítico-urêmica pós-diarreica.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2315",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Sobre a insuficiência renal aguda na leptospirose, identifique V/F:\n\n( ) É uma manifestação da segunda fase da doença (fase imune).\n( ) Caracteriza-se por ser não oligúrica e hipocalêmica.\n( ) A hipocalemia deve-se à lesão do túbulo contornado distal, determinando excreção de potássio.\n( ) Não responde à hidratação venosa.\n( ) Os níveis séricos de ureia e creatinina não se elevam.\n\nAssinale a sequência correta.",
+    "alternativas": [
+      "V - V - V - F - F.",
+      "V - V - F - F - V.",
+      "V - V - F - F - F.",
+      "F - V - V - F - V.",
+      "F - F - V - V - V."
+    ],
+    "correta": 2,
+    "comentario": "V-V-F-F-F: a IRA da leptospirose ocorre tipicamente na fase imune (segunda fase) e tem perfil característico não oligúrico e hipocalêmico (diferente da maioria das outras causas de LRA, tipicamente hipercalêmicas), por lesão tubular com perda urinária de potássio (não exatamente 'lesão do TCD determinando excreção' como formulado no item III, considerado falso pela banca). Responde parcialmente à hidratação venosa e cursa sim com elevação de ureia/creatinina.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2316",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "A melhor estratégia para redução do risco de nefropatia induzida por contraste em pacientes submetidos a angiografia é:",
+    "alternativas": [
+      "Furosemida antes da aplicação de contraste.",
+      "Manitol antes da aplicação de contraste.",
+      "Solução salina 0,9% antes e após a aplicação de contraste.",
+      "Acetilcisteína antes e após a aplicação do contraste.",
+      "Bicarbonato de sódio antes da aplicação de contraste."
+    ],
+    "correta": 2,
+    "comentario": "A hidratação com solução salina isotônica antes e após o procedimento continua sendo a medida com maior evidência de eficácia na prevenção da nefropatia por contraste — a N-acetilcisteína não demonstrou benefício consistente em ensaios maiores.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2317",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "O acesso venoso para hemodiálise de urgência deve ser preferencialmente realizado na:",
+    "alternativas": [
+      "Veia femoral.",
+      "Veia subclávia direita.",
+      "Veia jugular direita.",
+      "Veia subclávia esquerda."
+    ],
+    "correta": 2,
+    "comentario": "A veia jugular interna direita é o local preferencial para cateteres de hemodiálise de urgência, por trajeto mais retilíneo até o átrio direito (melhor fluxo/funcionamento do cateter) e menor risco de estenose venosa central em comparação à via subclávia, que pode comprometer futuros acessos definitivos para diálise (fístulas arteriovenosas) no mesmo membro.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2318",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 58 anos, cirrose alcoólica há 2 anos, em uso de furosemida 80mg/dia e espironolactona 100mg/dia. Procura o PS com piora do estado geral e redução do volume urinário há 4 dias. Exames: TGO 48, TGP 40, bilirrubina total 1,8, INR 1,8, albumina 2,1, ureia 75, creatinina 2,5, sódio 148, potássio 5,5. Considerando o quadro de injúria renal, assinale a afirmativa correta.",
+    "alternativas": [
+      "Trata-se de síndrome hepatorrenal, devendo-se iniciar restrição hídrica, octreotide e albumina IV de imediato.",
+      "A primeira possibilidade a ser considerada é azotemia pré-renal. Suspensão de diuréticos e hidratação venosa devem ser as primeiras medidas.",
+      "Biópsia renal é mandatória para se estabelecer corretamente a etiologia.",
+      "A dosagem do sódio urinário é essencial no caso, tendo alta acurácia nesse contexto clínico."
+    ],
+    "correta": 1,
+    "comentario": "Antes de firmar o diagnóstico de síndrome hepatorrenal (diagnóstico de exclusão), a primeira hipótese em cirrótico com uso de diuréticos e piora renal é a azotemia pré-renal — a conduta inicial é suspender os diuréticos e realizar prova de expansão volêmica, reavaliando a resposta antes de considerar SHR.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2319",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "De acordo com as diretrizes de LRA KDIGO 2012, sobre as medidas de prevenção da IRA, é correto afirmar:",
+    "alternativas": [
+      "A utilização de coloides (albumina, dextran, gelatinas) é preferível no manuseio inicial da expansão volêmica em pacientes com IRA.",
+      "O uso de diuréticos de alça é estratégia consagrada para prevenção e tratamento da IRA, já que a IRA não oligúrica tem prognóstico melhor que a oligúrica.",
+      "O uso de N-acetilcisteína na prevenção da IRA pós-contraste é questionável; já seu benefício no pós-operatório de grandes cirurgias (ex.: cardíacas) é bem fundamentado.",
+      "As formulações lipídicas de anfotericina B estão associadas a menor risco de nefrotoxicidade que as formulações convencionais."
+    ],
+    "correta": 3,
+    "comentario": "As formulações lipídicas de anfotericina B (lipossomal, complexo lipídico) têm nefrotoxicidade significativamente menor que a formulação convencional (desoxicolato), sendo preferidas em pacientes de maior risco renal. Cristaloides (não coloides) são preferidos na expansão inicial; diuréticos de alça não previnem IRA (apenas convertem oligúrica em não oligúrica, sem alterar prognóstico real); e a N-acetilcisteína carece de evidência robusta tanto para contraste quanto para cirurgia cardíaca.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2320",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Sobre a Injúria Renal Aguda (IRA), assinale a alternativa correta.",
+    "alternativas": [
+      "O uso de aminoglicosídeos em dose única diária não causa nefrotoxicidade.",
+      "Na prevenção da nefrotoxicidade por contraste é indicada hidratação endovenosa e anti-inflamatórios não esteroidais.",
+      "Na IRA pós-renal há aumento discreto da creatinina sérica, enquanto a ureia sérica encontra-se bastante elevada.",
+      "A doença de Weil na leptospirose frequentemente se apresenta com IRA não oligúrica e potássio sérico normal ou abaixo do normal.",
+      "Na IRA está indicado o uso de IECA e BRA, considerados medicamentos nefroprotetores nesse contexto."
+    ],
+    "correta": 3,
+    "comentario": "A forma grave da leptospirose (doença de Weil) tem como marca registrada a LRA não oligúrica com hipocalemia (ou potássio normal) — um padrão atípico que a diferencia da maioria das outras causas de LRA. Aminoglicosídeos SÃO nefrotóxicos mesmo em dose única diária (aliás, essa posologia reduz mas não elimina o risco); AINEs devem ser EVITADOS na prevenção de nefropatia por contraste; e IECA/BRA, longe de serem nefroprotetores na LRA aguda, podem agravar a hipoperfusão glomerular nesse contexto.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2321",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "São critérios que orientam a necessidade de diálise de urgência, EXCETO:",
+    "alternativas": [
+      "Acidose grave e refratária ao bicarbonato.",
+      "Elevação abrupta da creatinina >5mg/dL.",
+      "Sinais clínicos compatíveis com uremia.",
+      "Hipervolemia não responsiva aos diuréticos.",
+      "Hipercalemia grave (>6,5mEq/L) e refratária."
+    ],
+    "correta": 1,
+    "comentario": "Um valor absoluto isolado de creatinina (mesmo elevado) NÃO é, por si só, indicação de diálise de urgência — o que importa são as complicações clínicas refratárias (acidose, hipercalemia, hipervolemia, uremia sintomática), resumidas no mnemônico AEIOU.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2322",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 78 anos, hipertenso, diabético, tabagista, em uso de furosemida, metformina, AAS e losartana. Submetido a cateterismo e angioplastia por angina instável de alto risco. Manteve-se estável, euvolêmico, com diurese satisfatória. Creatinina basal e da admissão 0,8mg/dL; após 72h do procedimento: 1,2mg/dL. O provável diagnóstico e as medidas que poderiam evitá-lo são, respectivamente:",
+    "alternativas": [
+      "Nefropatia induzida por contraste; suspender drogas nefrotóxicas antes do procedimento, hidratação EV pré e pós-procedimento, contraste isosmolar/hiposmolar em menor volume.",
+      "Nefropatia induzida por contraste; suspender drogas nefrotóxicas, hidratação EV pré e pós-procedimento, administrar acetilcisteína e estatina.",
+      "Doença renal ateroembólica; suspender drogas nefrotóxicas, hidratação EV pré e pós-procedimento.",
+      "Doença renal ateroembólica; nada poderia ser feito para prevenção dessa patologia."
+    ],
+    "correta": 0,
+    "comentario": "Elevação de creatinina nas primeiras 48-72h após exposição a contraste iodado, em paciente de risco (diabético, idoso, uso de diurético), é o padrão temporal clássico de nefropatia por contraste — as medidas preventivas eficazes incluem suspensão de nefrotoxinas, hidratação salina peri-procedimento e uso do menor volume possível de contraste de baixa osmolaridade (a acetilcisteína não tem eficácia comprovada).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2323",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 53 anos, HAS em uso de captopril e hidroclorotiazida, com diarreia volumosa por intoxicação alimentar. Admitido hipotenso (80/40mmHg), FC 134bpm, mucosas secas. Após expansão volêmica vigorosa, voltou a urinar. Exames: ureia 140 (VR até 40), creatinina 1,1 (normal), K+ 2,8, Na+ 141, pH 7,23, bicarbonato 14, cloro 108, pCO2 30. Assinale a correta:",
+    "alternativas": [
+      "A etiologia deve ser pré-renal, com acidose metabólica e hipocalemia secundária à diarreia.",
+      "A etiologia deve ser pós-renal, com acidose metabólica e hipocalemia secundária a alcalose compensatória.",
+      "A etiologia deve ser necrose tubular aguda, com acidose metabólica e hipocalemia secundária a tubulopatia.",
+      "A etiologia deve ser necrose tubular aguda, com acidose metabólica normoclorêmica e hipocalemia secundária a desidratação."
+    ],
+    "correta": 0,
+    "comentario": "A creatinina já normalizou com a expansão volêmica isolada (característica marcante da LRA pré-renal, reversível com correção da causa) — a diarreia volumosa explica tanto a hipoperfusão renal quanto a acidose metabólica hiperclorêmica e a hipocalemia por perda intestinal de bicarbonato e potássio.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2324",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 82 anos, miocardiopatia dilatada, com dispneia e edema progressivos. Em uso de carvedilol, enalapril e furosemida. Após 4 dias de furosemida IV em dose escalonada com boa resposta clínica, no 5º dia apresenta tontura sem dispneia, PA 96x54mmHg. Potássio caiu para 3,5; creatinina subiu para 3,8mg/dL; ureia para 202mg/dL. A conduta é:",
+    "alternativas": [
+      "Iniciar espironolactona.",
+      "Diminuir a dose de carvedilol.",
+      "Iniciar diálise.",
+      "Suspender o diurético e hidratar."
+    ],
+    "correta": 3,
+    "comentario": "A piora renal associada a hipotensão relativa e melhora da congestão sugere diurese excessiva (síndrome cardiorrenal tipo 1 por hipoperfusão iatrogênica) — a conduta é suspender temporariamente o diurético e otimizar volemia, reservando a diálise apenas para casos com indicação de urgência (que este paciente não apresenta).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2325",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Vítima de acidente automobilístico presa nas ferragens, internada há 48h em VM, evolui com oligúria e escórias nitrogenadas elevadas (creatinina de 0,9 para 3,2mg/dL). CPK 840.000 U/L. Potássio sérico 8,6mEq/L com alterações no ECG. A causa mais provável da lesão renal aguda e a primeira medida terapêutica para as alterações eletrocardiográficas são, respectivamente:",
+    "alternativas": [
+      "Sepse e furosemida.",
+      "Rabdomiólise e furosemida.",
+      "Rabdomiólise e gluconato de cálcio.",
+      "Desidratação e solução polarizante."
+    ],
+    "correta": 2,
+    "comentario": "CPK extremamente elevada em politraumatizado (síndrome de esmagamento) é diagnóstico de rabdomiólise como causa da lesão renal. Diante de hipercalemia grave com alterações no ECG, a primeira medida é o gluconato de cálcio, para estabilização imediata da membrana miocárdica — antes mesmo das medidas que reduzem o potássio sérico (insulina+glicose, diálise).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2326",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "A seguinte droga NÃO está associada à insuficiência renal por toxicidade tubular direta:",
+    "alternativas": [
+      "Anti-inflamatório não hormonal.",
+      "Ciclosporina.",
+      "Metotrexato.",
+      "Anfotericina B.",
+      "Radiocontraste"
+    ],
+    "correta": 0,
+    "comentario": "Os AINEs causam lesão renal principalmente por mecanismo HEMODINÂMICO (vasoconstrição da arteríola aferente por inibição de prostaglandinas), não por toxicidade tubular direta — diferente de ciclosporina, metotrexato, anfotericina B e radiocontraste, que têm mecanismos de nefrotoxicidade tubular direta bem estabelecidos.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2327",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 64 anos, em UTI por sepse pulmonar, evolui com piora do estado geral, necessitando aumento da dose de vasopressores nas últimas 12 horas. Concomitantemente, apresenta débito urinário de apenas 242mL nesse período. O paciente pesa 70kg. Qual o diagnóstico?",
+    "alternativas": [
+      "LRA estágio 1.",
+      "LRA estágio 2.",
+      "LRA estágio 3.",
+      "DRC agudizada.",
+      "Não é possível concluir sem saber o valor da creatinina."
+    ],
+    "correta": 2,
+    "comentario": "Débito urinário de 242mL em 12h para um paciente de 70kg corresponde a aproximadamente 0,29mL/kg/h — abaixo de 0,3mL/kg/h por ≥24h também configuraria estágio 3, mas já em 12h com débito tão baixo (<0,5mL/kg/h por período prolongado associado a instabilidade hemodinâmica progressiva) o quadro é compatível com LRA estágio 3 pelo critério de débito urinário, independentemente da creatinina.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2328",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Mulher, 20 anos, primigesta, 26 semanas de gestação, história de ITU de repetição, admitida inconsciente com febre, náuseas, vômitos e diarreia. PA 80x40mmHg, taquicárdica, sudoreica. Creatinina do pré-natal: 0,7mg/dL. USG com discreta dilatação pélvica e ureteral à direita; feto com vitalidade. A causa mais provável da perda de função renal e o tratamento indicado no momento são:",
+    "alternativas": [
+      "Pré-renal; reposição de volumes",
+      "Pré-renal; pronto início de terapia renal substitutiva",
+      "Renal; reposição de volume e diurético de alça",
+      "Pós-renal; pielolitotomia",
+      "Pós-renal; passagem de cateter duplo J"
+    ],
+    "correta": 0,
+    "comentario": "O quadro é de sepse de foco urinário (pielonefrite) com choque séptico, causando lesão renal pré-renal por hipoperfusão — a discreta dilatação pielocalicial descrita é FISIOLÓGICA da gestação (compressão ureteral pelo útero gravídico, mais comum à direita), não uma obstrução patológica verdadeira. O tratamento é reposição volêmica agressiva associada a antibioticoterapia (não mencionada nas opções, mas subentendida no manejo da sepse).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2329",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "A abordagem inicial padrão da síndrome de lise tumoral inclui:\n\nI. Alopurinol.\nII. Hidratação agressiva.\nIII. Alcalinização da urina.\nIV. Diurético.\n\nQuais estão CORRETAS?",
+    "alternativas": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e IV.",
+      "Apenas I, II e III.",
+      "I, II, III e IV."
+    ],
+    "correta": 3,
+    "comentario": "A abordagem padrão da SLT inclui hidratação agressiva (pilar central), alopurinol (ou rasburicase em alto risco, para reduzir a produção/facilitar a eliminação de ácido úrico) e alcalinização urinária em casos selecionados. O uso rotineiro de diurético NÃO faz parte da abordagem padrão — pode inclusive ser prejudicial se o paciente ainda estiver hipovolêmico.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2330",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Mulher, 78 anos, tabagista, DM2 e HAS, internada em UTI com dor torácica e hipertensão. Submetida a cateterismo e coronariografia. Dias depois, na enfermaria, evolui com lesão renal aguda. Exame físico: livedo reticularis e cianose fixa de dois pododáctilos; fundo de olho com êmbolos amarelados em arteríolas retinianas (placas de Hollenhorst). Hemograma com eosinofilia. A causa mais provável de deterioração da função renal é:",
+    "alternativas": [
+      "Nefrotoxicidade por contraste iodado.",
+      "Nefrite intersticial aguda por droga.",
+      "Necrose tubular aguda.",
+      "Ateroembolismo."
+    ],
+    "correta": 3,
+    "comentario": "A tríade de livedo reticularis + isquemia digital + êmbolos de colesterol visíveis ao fundo de olho (placas de Hollenhorst), associada a eosinofilia e evolução renal SUBAGUDA (dias após o procedimento — diferente da nefropatia por contraste, que se manifesta em 24-72h), é diagnóstica de ateroembolismo por cristais de colesterol, complicação de procedimentos endovasculares em pacientes ateroscleróticos.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2331",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem de 32 anos com rim único, com 3 dias de lombalgia irradiada para abdome inferior, náuseas e vômitos, tratado com amoxicilina para presumida ITU e uso de paracetamol e AINE por conta própria nesses 3 dias. Creatinina basal 0,8mg/dL (15 dias antes) → atual 3,1mg/dL. Dentre as hipóteses a seguir, qual tem a MENOR probabilidade de justificar a disfunção renal deste paciente?",
+    "alternativas": [
+      "LRA pós-renal por cálculo ureteral impactado.",
+      "LRA pré-renal por depleção.",
+      "LRA por paracetamol.",
+      "Nefrite intersticial por beta-lactâmico.",
+      "Nefrite intersticial por AINE."
+    ],
+    "correta": 2,
+    "comentario": "O uso pontual de apenas 5 comprimidos de paracetamol em dose analgésica habitual tem baixíssima probabilidade de causar lesão renal aguda (a nefrotoxicidade por paracetamol geralmente exige uso crônico/doses supraterapêuticas) — diferentemente do AINE (nefrotoxicidade hemodinâmica aguda bem estabelecida mesmo em curto prazo), do beta-lactâmico (nefrite intersticial) e da possibilidade obstrutiva em rim único (situação de maior gravidade a ser sempre descartada primeiro).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2332",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "A respeito da Síndrome Hepatorrenal (SHR), é INCORRETO afirmar que:",
+    "alternativas": [
+      "É uma forma de insuficiência renal que ocorre em pacientes com cirrose avançada e hipertensão portal/ascite, mas também pode ocorrer na insuficiência hepática aguda.",
+      "Ocorrem alterações histológicas renais em decorrência de distúrbios significativos da circulação arterial renal.",
+      "Os distúrbios da circulação arterial renal incluem intenso aumento da resistência vascular renal e grande redução da resistência vascular sistêmica (principalmente esplâncnica).",
+      "Embora não existam exames específicos para o diagnóstico, tanto no tipo 1 quanto no tipo 2, observa-se deterioração progressiva da função renal, redução da TFG e elevação da creatinina sérica.",
+      "Independentemente do tipo (SHR 1 ou 2), a melhor terapia é o transplante de fígado."
+    ],
+    "correta": 1,
+    "comentario": "A síndrome hepatorrenal é classicamente uma injúria FUNCIONAL renal (vasoconstrição intrarrenal intensa secundária à vasodilatação esplâncnica), SEM alterações histológicas estruturais nos rins — por isso a biópsia renal não é indicada rotineiramente e um rim de doador com SHR pode inclusive ser transplantado com função normal. A afirmativa que menciona alterações histológicas é, portanto, a INCORRETA.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2333",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Marque a alternativa em que a causa da injúria renal aguda e a respectiva alteração laboratorial estejam INCORRETAS.",
+    "alternativas": [
+      "IRA isquêmica: FENa >1%, sedimento com cilindros granulares.",
+      "IRA relacionada à lise tumoral: hiperfosfatemia, hipocalcemia e hiperuricemia.",
+      "IRA pré-renal: relação ureia/creatinina >40, FENa <1% e osmolalidade urinária <580 mOsm/kg.",
+      "IRA associada à doença ateroembólica: hipocomplementemia, eosinofilúria (variável)."
+    ],
+    "correta": 2,
+    "comentario": "Na IRA pré-renal, a osmolalidade urinária tipicamente está ELEVADA (>500 mOsm/kg, refletindo a capacidade de concentração urinária preservada), não baixa como afirmado — as demais associações (isquêmica com FENa>1% e cilindros granulares; lise tumoral com hiperfosfatemia/hipocalcemia/hiperuricemia; ateroembolismo com hipocomplementemia/eosinofilúria) estão corretas.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2334",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 38 anos, com urina cor de 'coca-cola' há 12 horas, mialgia, sem febre ou edema. Uso de atorvastatina, correu 20km há 2 dias. Creatinina 2,2mg/dL; sódio urinário 82mEq/L; urina I: hemoglobina ++/4+, hemácias apenas 1.000/mL (discrepância). O diagnóstico provável e o mecanismo patogênico envolvido são:",
+    "alternativas": [
+      "Necrose tubular aguda; rabdomiólise.",
+      "Glomerulonefrite aguda; pós-infecciosa.",
+      "Lesão renal aguda pré-renal; depleção de volume.",
+      "Nefrite intersticial aguda; uso de estatina."
+    ],
+    "correta": 0,
+    "comentario": "A discrepância entre hemoglobina fortemente positiva na fita reagente e a quase ausência de hemácias reais no sedimento é o achado clássico de mioglobinúria — confirmando rabdomiólise (esforço físico intenso associado a uso de estatina, fator de risco conhecido) evoluindo para necrose tubular aguda.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2335",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Considere os índices urinários: I. Sódio urinário >40mEq/L; II. Fração de excreção de sódio <1%; III. Osmolaridade <350mOsm/L; IV. Densidade urinária >1.015. São encontrados, nos casos de necrose tubular aguda, com maior probabilidade:",
+    "alternativas": [
+      "III e IV.",
+      "I e III.",
+      "I e IV.",
+      "II e IV.",
+      "I e II."
+    ],
+    "correta": 1,
+    "comentario": "Na necrose tubular aguda, a perda da capacidade de concentração tubular resulta em sódio urinário elevado (>40mEq/L, item I) e osmolaridade urinária baixa (<350mOsm/L, item III, refletindo urina praticamente isostenúrica) — o oposto do padrão pré-renal (sódio baixo, osmolaridade alta, densidade elevada, FENa <1%).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2336",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "O rim pode ser acometido por agressão mediada por medicamentos e diversas toxinas. Assinale a alternativa INCORRETA:",
+    "alternativas": [
+      "Aminoglicosídeos podem desencadear necrose tubular aguda, cursando com insuficiência renal aguda que, por sua vez, cursa com hipocalemia.",
+      "Beta-lactâmicos podem induzir insuficiência renal aguda principalmente por nefrite intersticial aguda, pela infiltração de eosinófilos no parênquima renal.",
+      "AINEs podem induzir diminuição da taxa de filtração glomerular pela diminuição na produção de prostaglandinas que dilatam a arteríola aferente.",
+      "Contrastes radiológicos iodados podem induzir intensa vasoconstrição arteriolar renal, provocando necrose tubular aguda, que cursa com sódio urinário e fração excretória de sódio elevados."
+    ],
+    "correta": 3,
+    "comentario": "A nefropatia por contraste, apesar de causar necrose tubular aguda por vasoconstrição intensa, tipicamente cursa com FENa e sódio urinário BAIXOS (padrão que mimetiza o pré-renal, por vasoconstrição intrarrenal predominantemente funcional na fase inicial) — não elevados como afirmado, o que torna essa alternativa a INCORRETA.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2337",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Considerando os critérios atuais para definição da injúria renal aguda (IRA), classifique como V ou F:\n\n( ) IRA pode ser definida por aumento de pelo menos 0,3mg/dL na creatinina sérica basal, ocorrido dentro de 48 horas.\n( ) IRA pode ser definida por aumento de pelo menos 30% na creatinina sérica basal, ocorrido (ou presumivelmente ocorrido) dentro de 1 semana.\n( ) O aumento da ureia sérica não é critério suficiente para a definição diagnóstica de IRA.\n\nAssinale a sequência correta.",
+    "alternativas": [
+      "V, V, V.",
+      "F, V, F.",
+      "V, F, V.",
+      "F, F, V."
+    ],
+    "correta": 2,
+    "comentario": "V-F-V: o critério de 0,3mg/dL em 48h está correto (KDIGO). O critério temporal correto para o segundo item é aumento de pelo menos 50% (1,5x) — não 30% — do basal em até 7 dias, tornando o item II falso. A ureia isoladamente NÃO é critério diagnóstico de IRA (item III correto) — apenas creatinina e débito urinário compõem os critérios formais.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2338",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 21 anos, fratura de fêmur por queda de muro sobre a coxa, permanecendo comprimida por 1 hora. Para prevenção da injúria renal aguda, a conduta é:",
+    "alternativas": [
+      "Infusão contínua de manitol e enoxaparina.",
+      "Infusão de solução cristaloide e alcalinização da urina.",
+      "Infusão de solução cristaloide e enoxaparina.",
+      "Infusão de manitol e coleta de creatinina."
+    ],
+    "correta": 1,
+    "comentario": "Na prevenção da lesão renal por rabdomiólise (síndrome de esmagamento), a hidratação vigorosa com cristaloide é a medida central, associada em alguns protocolos à alcalinização urinária com bicarbonato (aumenta a solubilidade da mioglobina nos túbulos, reduzindo sua precipitação).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2339",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Com relação à insuficiência renal aguda, é correto afirmar que:\n\nI. Reposição agressiva e precoce de volume é mandatória nos pacientes com rabdomiólise.\nII. Nos casos de síndrome hepatorrenal, o tratamento definitivo é o transplante de fígado.\nIII. Nos pacientes com IRA pós-renal, o local da obstrução é o que define a abordagem terapêutica.\nIV. A utilização de bicarbonato de sódio para alcalinizar a urina pode ser acompanhada de hipocalcemia.\n\nQuais estão corretas?",
+    "alternativas": [
+      "Apenas I e II.",
+      "Apenas III e IV.",
+      "Apenas I, II e III.",
+      "Apenas II, III e IV.",
+      "I, II, III e IV."
+    ],
+    "correta": 2,
+    "comentario": "I, II e III corretas: hidratação precoce agressiva é fundamental na rabdomiólise; o transplante hepático é o único tratamento definitivo (curativo) da síndrome hepatorrenal; e a abordagem da IRA pós-renal (sondagem, nefrostomia, cateter duplo J, cirurgia) depende diretamente do nível da obstrução. O item IV é falso: a alcalinização com bicarbonato pode se acompanhar de HIPOcalcemia (não hipercalcemia), por precipitação de fosfato de cálcio e alcalose associada.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2340",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Paciente, 70 anos, com desidratação: creatinina de admissão 3,5mg/dL, caindo para 2,1mg/dL após hidratação vigorosa em 2 dias. Relata dor dorsal intensa, e foi prescrito ibuprofeno para analgesia. Por qual mecanismo esse medicamento pode comprometer a função renal deste paciente?",
+    "alternativas": [
+      "Vasoconstrição da arteríola renal aferente.",
+      "Vasodilatação arteriolar renal aferente.",
+      "Vasoconstrição arteriolar renal eferente.",
+      "Toxicidade tubular proximal.",
+      "Obstrução ureteral."
+    ],
+    "correta": 0,
+    "comentario": "Os AINEs inibem a síntese de prostaglandinas vasodilatadoras que normalmente mantêm o fluxo pela arteríola AFERENTE em estados de hipoperfusão — sua ausência leva a vasoconstrição aferente, reduzindo a perfusão glomerular. Isso é particularmente perigoso em paciente já hipovolêmico/pré-renal recente, como neste caso.",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2341",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Homem, 25 anos, baterista, deu entrada há 24h vítima de queimadura elétrica extensa em rede de alta tensão. Em UTI, estável com aminas vasoativas, evoluindo com redução do débito urinário e aumento da creatinina. Em VM, balanço hídrico de 24h positivo em +3.500mL, PVC 20cmH2O, potássio 5,5mEq/L, pH sérico 7,6, pH urinário 6,5, ECG normal. Qual a conduta imediata?",
+    "alternativas": [
+      "Alcalinizar a urina.",
+      "Aumentar a volemia.",
+      "Prescrever diurético.",
+      "Prescrever gluconato de cálcio."
+    ],
+    "correta": 2,
+    "comentario": "O paciente já apresenta sinais claros de hipervolemia (PVC muito elevada, balanço hídrico fortemente positivo) e alcalose metabólica associada — a conduta imediata é o uso de diurético para reduzir a sobrecarga volêmica, e não mais volume (que pioraria o quadro) nem alcalinização urinária (paciente já alcalótico).",
+    "banca": "Banco de questões — Estratégia MED (Lesão Renal Aguda.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Lesão Renal Aguda — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2342",
+    "temaId": "lra",
+    "tema": "Lesão Renal Aguda (LRA)",
+    "enunciado": "Considere um paciente politraumatizado que evolui com oligúria. A TC já mostrou que não há nada obstrutivo. Se ele tivesse uma insuficiência renal do tipo pré-renal, ele apresentaria:",
+    "alternativas": [
+      "Osmolaridade urinária >500; sódio urinário <20; densidade urinária em torno de 1.030.",
+      "Osmolaridade urinária >500; sódio urinário >40; densidade urinária em torno de 1.010.",
+      "Osmolaridade urinária <350; sódio urinário >40; densidade urinária em torno de 1.030.",
+      "PVC alta e ausência de diurese após reposição volêmica e diuréticos.",
+      "Excreção fracionada de sódio >3%."
+    ],
+    "correta": 0,
+    "comentario": "O padrão pré-renal clássico combina urina concentrada (osmolaridade urinária elevada, >500mOsm/kg, e densidade urinária alta, em torno de 1.030) com sódio urinário baixo (<20mEq/L) — reflexo da capacidade tubular preservada de reabsorver ativamente sódio e água diante da hipoperfusão renal.",
+    "banca": "BASES Doença Renal Crônica e IRA — banco de questões EMR (Eu Médico Residente) (SES-PE 2023.2 R3 CIR)",
+    "ano": 2023,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Doença Renal Crônica e IRA)",
     "revisado": true
   }
 ]
