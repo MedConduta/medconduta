@@ -3053,8 +3053,8 @@
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "TVP — Fluxo diagnóstico (Wells)",
-    "revisado": false,
-    "fonte": "ESC Guidelines for Pulmonary Embolism and Venous Thromboembolism (2019, atualizacao 2024)",
+    "revisado": true,
+    "fonte": "Diretriz Conjunta sobre Tromboembolismo Venoso 2022 (SBACV/SBC/SBPT); ESC Guidelines for Pulmonary Embolism and Venous Thromboembolism (2019, atualização 2024)",
     "fluxo": [
       {
         "tipo": "start",
@@ -3062,31 +3062,51 @@
       },
       {
         "tipo": "action",
-        "texto": "Calcular escore de Wells para TVP"
+        "texto": "Calcular escore de Wells para TVP (versão dicotomizada: provável ≥2, improvável ≤1)"
       },
       {
         "tipo": "decisao",
-        "texto": "Probabilidade baixa?",
+        "texto": "Probabilidade pré-teste",
         "ramos": [
           {
-            "label": "Sim",
+            "label": "Improvável (≤1)",
             "fluxo": [
               {
                 "tipo": "action",
                 "texto": "Dosar D-dímero"
               },
               {
-                "tipo": "end",
-                "texto": "D-dímero negativo exclui TVP; positivo → USG doppler"
+                "tipo": "decisao",
+                "texto": "D-dímero negativo?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "TVP excluída — investigar diagnóstico alternativo"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "USG doppler venoso de membros inferiores"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
           {
-            "label": "Não",
+            "label": "Provável (≥2)",
             "fluxo": [
               {
-                "tipo": "action",
-                "texto": "USG doppler venoso diretamente"
+                "tipo": "end",
+                "texto": "USG doppler venoso diretamente, sem necessidade de D-dímero"
               }
             ]
           }
@@ -3094,7 +3114,7 @@
       },
       {
         "tipo": "end",
-        "texto": "Confirmada TVP → iniciar anticoagulação plena"
+        "texto": "USG positiva → confirma TVP → iniciar anticoagulação plena"
       }
     ]
   },
