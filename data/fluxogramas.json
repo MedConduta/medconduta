@@ -4543,5 +4543,92 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-endocardite-atendimento",
+    "temaId": "endocardite-infecciosa",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "Endocardite infecciosa — suspeita, diagnóstico e conduta inicial",
+    "revisado": true,
+    "fonte": "ESC Guidelines for the management of infective endocarditis (2023); Critérios de Duke-ISCVID 2023",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Febre prolongada + sopro novo/modificado, ou febre em paciente com valvopatia, prótese valvar, dispositivo cardíaco ou uso de drogas EV"
+      },
+      {
+        "tipo": "action",
+        "texto": "Colher 3 conjuntos de hemoculturas de sítios diferentes ANTES de iniciar antibiótico"
+      },
+      {
+        "tipo": "action",
+        "texto": "Solicitar ecocardiograma transtorácico (ETT) inicial"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "ETT negativo mas suspeita clínica permanece alta, ou prótese valvar/dispositivo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Solicitar ecocardiograma transesofágico (ETE) — maior sensibilidade para vegetação, abscesso e deiscência de prótese"
+              },
+              {
+                "tipo": "action",
+                "texto": "Considerar angio-TC cardíaca ou PET-CT com FDG-18 se ETE inconclusivo (critério maior de imagem, 2023)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Prosseguir com achados do ETT"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Aplicar critérios de Duke-ISCVID 2023 (maiores + menores) para classificar em definitiva, possível ou rejeitada"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Não atrasar hemoculturas por espera de exame de imagem — antibiótico empírico antes da coleta compromete identificação do agente"
+      },
+      {
+        "tipo": "action",
+        "texto": "Iniciar antibioticoterapia empírica (cobrindo S. aureus, estreptococos e enterococos) e ajustar conforme antibiograma; manter por 4-6 semanas (mais longo em prótese)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Indicação de cirurgia valvar precoce? (IC refratária por disfunção valvar, infecção não controlada/abscesso perivalvar/bacteriemia persistente, ou vegetação >10mm com embolia prévia/alto risco embólico)",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Encaminhar para cirurgia cardíaca precoce, mantendo antibioticoterapia"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter antibioticoterapia dirigida e reavaliação ecocardiográfica seriada"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
