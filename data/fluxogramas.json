@@ -4417,5 +4417,72 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-cardiomiopatias-diagnostico-sopro",
+    "temaId": "cardiomiopatias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Sopro sistólico dinâmico — CMH obstrutiva x estenose aórtica",
+    "revisado": true,
+    "fonte": "ESC Guidelines for the Diagnosis and Management of Cardiomyopathies (2023)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Sopro sistólico em foco aórtico/mesocárdio — dúvida entre CMH obstrutiva e estenose aórtica"
+      },
+      {
+        "tipo": "action",
+        "texto": "Realizar manobra de Valsalva (fase de esforço) ou ortostatismo (reduz retorno venoso/pré-carga)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "O sopro AUMENTA com a manobra (menor pré-carga)?",
+        "ramos": [
+          {
+            "label": "Sim — aumenta com menor pré-carga",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Sugere cardiomiopatia hipertrófica obstrutiva — menor volume de VE aumenta o contato septo-valva mitral (movimento anterior sistólico) e a obstrução dinâmica"
+              }
+            ]
+          },
+          {
+            "label": "Não — diminui/some com menor pré-carga",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Testar agachamento ou handgrip (aumenta pré-carga/pós-carga)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "O sopro AUMENTA com maior pré-carga/volume?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Sugere estenose aórtica — maior volume ejetado através da valva fixa aumenta o sopro"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sopro pouco se altera",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Considerar outras causas de sopro sistólico (fluxo, esclerose valvar leve)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
