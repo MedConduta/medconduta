@@ -6075,5 +6075,159 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-pneumotorax-atendimento",
+    "temaId": "pneumotorax-espontaneo",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "Pneumotórax — atendimento inicial e triagem de gravidade",
+    "revisado": true,
+    "fonte": "British Thoracic Society (BTS) Guideline 2023; ATLS 10ª edição",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de pneumotórax (dor pleurítica súbita + dispneia + MV reduzido/hipertimpanismo)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Instabilidade hemodinâmica (hipotensão, turgência jugular, desvio contralateral de traqueia)?",
+        "ramos": [
+          {
+            "label": "Sim — pneumotórax hipertensivo",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Emergência absoluta: diagnóstico e tratamento CLÍNICOS. NÃO aguardar radiografia de tórax"
+              },
+              {
+                "tipo": "action",
+                "texto": "Descompressão imediata por punção com agulha: 4º/5º espaço intercostal, linha axilar anterior (adultos); 2º EIC linha hemiclavicular reservado a crianças"
+              },
+              {
+                "tipo": "end",
+                "texto": "Seguir com drenagem torácica definitiva após a descompressão"
+              }
+            ]
+          },
+          {
+            "label": "Não — paciente estável",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Confirmar diagnóstico: radiografia de tórax (linha da pleura visceral sem trama pulmonar periférica) ou USG point-of-care (ausência de lung sliding, sinal do código de barras ao modo M)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Há doença pulmonar subjacente conhecida (DPOC, fibrose cística, pneumocistose)?",
+                "ramos": [
+                  {
+                    "label": "Não — pneumotórax espontâneo primário (PEP)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Seguir fluxograma de tratamento do PEP guiado por sintomas (BTS 2023)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sim — pneumotórax espontâneo secundário (PES)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Limiar mais baixo para intervenção — geralmente indicada drenagem torácica pela menor reserva respiratória"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-pneumotorax-tratamento",
+    "temaId": "pneumotorax-espontaneo",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Pneumotórax espontâneo primário — decisão terapêutica guiada por sintomas (BTS 2023)",
+    "revisado": true,
+    "fonte": "British Thoracic Society (BTS) Guideline for Pleural Disease 2023",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "PEP confirmado, paciente hemodinamicamente estável"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente minimamente sintomático (independentemente do tamanho do pneumotórax na radiografia)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Conduta conservadora: observação clínica, sem intervenção, com garantia de reavaliação — mesmo se pneumotórax grande"
+              }
+            ]
+          },
+          {
+            "label": "Não — sintomático",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Paciente elegível para manejo ambulatorial (suporte para seguimento garantido)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Válvula de Heimlich ou dispositivo de drenagem ambulatorial de pequeno calibre"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Aspiração simples por agulha ou drenagem torácica convencional (selo d'água)"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "Vazamento aéreo persistente (borbulhamento contínuo) por mais de 5-7 dias, ou recorrência (2º episódio ipsilateral / 1º contralateral)?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Avaliação cirúrgica: videotoracoscopia com pleurodese/ressecção de bolhas"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não — reexpansão sem borbulhamento mesmo à tosse/Valsalva",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Retirar o dreno torácico — critério de resolução do vazamento aéreo"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
