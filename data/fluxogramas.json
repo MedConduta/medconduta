@@ -7199,5 +7199,147 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-tsr-diagnostico",
+    "temaId": "terapia-substituicao-renal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Indicação de diálise de urgência (AEIOU)",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Nefrologia; KDIGO",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com LRA ou DRC avançada em avaliação para necessidade de diálise"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de algum critério AEIOU?",
+        "ramos": [
+          {
+            "label": "Acidose metabólica refratária ao tratamento clínico",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Indicação de diálise de urgência"
+              }
+            ]
+          },
+          {
+            "label": "distúrbios Eletrolíticos graves (hipercalemia refratária)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Indicação de diálise de urgência"
+              }
+            ]
+          },
+          {
+            "label": "Intoxicação exógena por substância dialisável",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Indicação de diálise de urgência"
+              }
+            ]
+          },
+          {
+            "label": "sobrecarga de volume (Overload) refratária a diurético",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Indicação de diálise de urgência"
+              }
+            ]
+          },
+          {
+            "label": "Uremia sintomática (pericardite, encefalopatia, sangramento)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Indicação de diálise de urgência, não protelável"
+              }
+            ]
+          },
+          {
+            "label": "Nenhum critério AEIOU presente",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Sem indicação de diálise de urgência — manter tratamento clínico conservador e reavaliar"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Cuidado com a pegadinha: um valor isolado de creatinina/ureia/TFG, sem sintomas urêmicos ou outro critério AEIOU, NÃO é indicação isolada de diálise (estudo IDEAL) — a decisão deve ser clínica, não apenas laboratorial"
+      }
+    ]
+  },
+  {
+    "id": "flow-tsr-tratamento",
+    "temaId": "terapia-substituicao-renal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Escolha da modalidade de terapia renal substitutiva e do acesso (ESKD Life-Plan)",
+    "revisado": true,
+    "fonte": "KDOQI Clinical Practice Guideline for Vascular Access (conceito de \"ESKD Life-Plan\")",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Indicação de terapia renal substitutiva crônica estabelecida (DRC terminal sintomática)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente elegível para transplante renal (doador vivo/falecido disponível ou em fila)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Transplante renal — melhor sobrevida e qualidade de vida entre as modalidades; idealmente planejado antecipadamente (transplante preemptivo)"
+              }
+            ]
+          },
+          {
+            "label": "Não / enquanto aguarda",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Individualizar a escolha do acesso/modalidade (ESKD Life-Plan) considerando expectativa de vida, comorbidades, leito vascular, plano de transplante e preferência do paciente — não uma abordagem rígida de 'fístula para todos'"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Modalidade mais adequada ao perfil do paciente?",
+                "ramos": [
+                  {
+                    "label": "Hemodiálise",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Preferir fístula arteriovenosa como acesso definitivo (menor infecção, maior durabilidade) — requer maturação de semanas; cateter reservado a necessidade imediata"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Diálise peritoneal",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Maior autonomia domiciliar e melhor preservação da função renal residual; risco principal é peritonite"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
