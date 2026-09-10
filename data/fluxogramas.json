@@ -1707,16 +1707,16 @@
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Dor abdominal alta — Fluxo diagnóstico (pancreatite aguda)",
-    "revisado": false,
-    "fonte": "Classificacao de Atlanta Revisada (2012); IAP/APA Evidence-Based Guidelines for Acute Pancreatitis",
+    "revisado": true,
+    "fonte": "Classificação de Atlanta Revisada (2012); IAP/APA Evidence-Based Guidelines for Acute Pancreatitis",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Dor abdominal em faixa/epigástrica intensa"
+        "texto": "Dor abdominal em faixa/epigástrica intensa, com irradiação para o dorso"
       },
       {
         "tipo": "action",
-        "texto": "Dosar amilase/lipase + solicitar imagem se necessário"
+        "texto": "Dosar amilase e lipase séricas; solicitar imagem (TC/RM) se dúvida diagnóstica"
       },
       {
         "tipo": "decisao",
@@ -1727,11 +1727,40 @@
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "Classificar gravidade (critérios clínicos/Atlanta)"
+                "texto": "Confirmar pancreatite aguda — não é necessário aguardar TC de rotina; TC precoce pode subestimar necrose"
               },
               {
-                "tipo": "end",
-                "texto": "Confirmar pancreatite aguda → hidratação vigorosa + analgesia"
+                "tipo": "decisao",
+                "texto": "Há falência orgânica persistente (>48h)?",
+                "ramos": [
+                  {
+                    "label": "Sim — grave",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Pancreatite grave — manejo em UTI"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Falência transitória ou complicação local",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Pancreatite moderadamente grave"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Pancreatite leve — evolução geralmente favorável"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -7509,6 +7538,105 @@
                     ]
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-pancreatite-tratamento",
+    "temaId": "pancreatite-aguda",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Pancreatite aguda — manejo inicial (hidratação, dieta, antibiótico, colecistectomia)",
+    "revisado": true,
+    "fonte": "Estudo WATERFALL (NEJM 2022); IAP/APA Evidence-Based Guidelines for Acute Pancreatitis",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Pancreatite aguda confirmada"
+      },
+      {
+        "tipo": "action",
+        "texto": "Avaliar estado volêmico do paciente antes de definir o volume de hidratação"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente hipovolêmico?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Bolus de Ringer lactato ~10mL/kg, seguido de manutenção ~1,5mL/kg/h"
+              }
+            ]
+          },
+          {
+            "label": "Não (normovolêmico)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Sem bolus — iniciar diretamente hidratação de manutenção ~1,5mL/kg/h"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Hidratação 'agressiva' de rotina (bolus 20mL/kg + 3mL/kg/h) foi abandonada — associada a sobrecarga volêmica sem benefício de evolução (estudo WATERFALL)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Analgesia adequada e reintrodução precoce de dieta oral assim que tolerada — sem jejum prolongado"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há infecção documentada ou fortemente suspeita (necrose infectada)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Iniciar antibioticoterapia dirigida"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Não usar antibiótico profilático, mesmo em necrose estéril"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Etiologia biliar e pancreatite leve?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Colecistectomia ainda na mesma internação, para prevenir recorrência"
+              }
+            ]
+          },
+          {
+            "label": "Não/pancreatite grave",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Postergar colecistectomia até resolução do quadro inflamatório"
               }
             ]
           }
