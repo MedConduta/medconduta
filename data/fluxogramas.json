@@ -6706,5 +6706,188 @@
         "texto": "Correção além do limite seguro (>8-10mEq/L/24h) tem risco de síndrome de desmielinização osmótica (mielinólise pontina), potencialmente irreversível"
       }
     ]
+  },
+  {
+    "id": "flow-acido-basico-diagnostico",
+    "temaId": "disturbios-acido-basicos",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Interpretação sistemática da gasometria arterial",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Nefrologia; Sociedade Brasileira de Terapia Intensiva — Diretrizes de Interpretação Gasométrica",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Gasometria arterial disponível: avaliar pH, PaCO2, HCO3⁻"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "pH?",
+        "ramos": [
+          {
+            "label": "pH <7,35 (acidemia)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "O que está alterado na direção que explica a acidemia?",
+                "ramos": [
+                  {
+                    "label": "HCO3⁻ baixo (PaCO2 baixo ou normal)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Acidose metabólica primária — calcular ânion gap [Na − (Cl + HCO3⁻)] para diferenciar AG elevado (MUDPILES) de AG normal/hiperclorêmica (diarreia, ATR)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "PaCO2 alto (HCO3⁻ normal ou pouco alterado)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Acidose respiratória primária — avaliar tempo de instalação (aguda x crônica) pela magnitude do HCO3⁻ compensatório"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "pH >7,45 (alcalemia)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "O que está alterado na direção que explica a alcalemia?",
+                "ramos": [
+                  {
+                    "label": "HCO3⁻ alto (PaCO2 alto ou normal)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Alcalose metabólica primária — avaliar volemia e cloro urinário (vômitos/diuréticos = hipoclorêmica responsiva a salina; hiperaldosteronismo = resistente a salina)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "PaCO2 baixo (HCO3⁻ normal ou pouco alterado)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Alcalose respiratória primária — investigar causa de hiperventilação (dor, ansiedade, hipoxemia, sepse, gestação, intoxicação salicílica inicial)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "pH normal (7,35-7,45) mas PaCO2/HCO3⁻ alterados",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Distúrbio misto com efeitos opostos no pH (ex.: acidose metabólica + alcalose respiratória) — investigar ambos os componentes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Aplicar a fórmula de compensação esperada para o distúrbio primário identificado"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Compensação medida está dentro do esperado pela fórmula?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Distúrbio simples (único), com compensação apropriada"
+              }
+            ]
+          },
+          {
+            "label": "Não — compensação insuficiente ou excessiva",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Distúrbio misto — um segundo distúrbio ácido-básico está presente, alterando a compensação esperada; usar o delta gap se acidose metabólica com AG elevado, para rastrear distúrbio metabólico associado mascarado"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-acido-basico-tratamento",
+    "temaId": "disturbios-acido-basicos",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Tratamento dos distúrbios ácido-básicos: princípios gerais",
+    "revisado": true,
+    "fonte": "KDIGO 2024 CKD Guideline (acidose metabólica na DRC); prática clínica padrão",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Distúrbio ácido-básico identificado e causa de base investigada"
+      },
+      {
+        "tipo": "action",
+        "texto": "Tratar a causa de base — é o pilar do tratamento em todos os distúrbios (hidratação/insulina na CAD, correção da hipoventilação na acidose respiratória, reposição de cloreto/potássio nos vômitos)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Acidose metabólica muito grave (pH <7,1-7,2) ou situação específica (hipercalemia grave, intoxicação por certos fármacos)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar bicarbonato de sódio exógeno, de uso restrito e controverso — sem benefício comprovado em acidoses leves a moderadas"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Evitar bicarbonato exógeno de rotina; priorizar correção da causa de base"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Acidose metabólica crônica associada a doença renal crônica (DRC)?",
+        "ramos": [
+          {
+            "label": "Sim, HCO3⁻ sérico <18mEq/L",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "KDIGO 2024: considerar suplementação oral de bicarbonato — limiar reduzido de <22 (2012) para <18mEq/L, agora como 'ponto de prática' (evidência mais fraca); monitorizar hiperbicarbonatemia, piora pressórica, hipopotassemia e sobrecarga volêmica"
+              }
+            ]
+          },
+          {
+            "label": "Não, HCO3⁻ sérico ≥18mEq/L",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Sem indicação de suplementação de rotina — manter monitorização periódica"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
