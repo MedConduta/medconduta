@@ -8042,5 +8042,153 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-hepatites-diagnostico",
+    "temaId": "hepatites-virais",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Interpretação do painel sorológico da hepatite B",
+    "revisado": true,
+    "fonte": "AASLD/IDSA Guidance (2025)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de hepatite B — solicitar HBsAg, anti-HBc (IgM/IgG), anti-HBs"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "HBsAg positivo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Anti-HBc IgM positivo?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Hepatite B aguda"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não (anti-HBc IgG+)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Hepatite B crônica — solicitar HBeAg/anti-HBe e HBV-DNA para avaliar replicação"
+                      },
+                      {
+                        "tipo": "alerta",
+                        "texto": "Investigar coinfecção por hepatite D (anti-HDV) em todo HBsAg positivo"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Anti-HBc positivo?",
+                "ramos": [
+                  {
+                    "label": "Sim + anti-HBs positivo",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Infecção curada — imunidade natural"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sim, anti-HBs negativo",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Anti-HBc isolado — janela imunológica tardia ou cicatriz sorológica"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, apenas anti-HBs positivo",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Imunidade vacinal"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Todos negativos",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Suscetível — sem contato prévio nem vacinação"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hepatites-tratamento",
+    "temaId": "hepatites-virais",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Hepatite B crônica na gestante — profilaxia da transmissão vertical",
+    "revisado": true,
+    "fonte": "Protocolo Clínico e Diretrizes Terapêuticas — Hepatite B (Ministério da Saúde)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Gestante HBsAg positivo"
+      },
+      {
+        "tipo": "action",
+        "texto": "Solicitar HBV-DNA (carga viral)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Carga viral > 200.000 UI/mL?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Iniciar tenofovir (TDF ou TAF) a partir da 28ª semana de gestação"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Seguimento sem antiviral profilático adicional na gestação"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Ao nascimento: imunoprofilaxia do recém-nascido com vacina + imunoglobulina anti-hepatite B (HBIG) nas primeiras 12-24h de vida"
+      }
+    ]
   }
 ]
