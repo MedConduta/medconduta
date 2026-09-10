@@ -7031,5 +7031,173 @@
         "texto": "Nitrofurantoína e fosfomicina NUNCA devem ser usadas para pielonefrite/ITU complicada — não atingem níveis adequados no parênquima renal/corrente sanguínea, ficando restritas à cistite não complicada"
       }
     ]
+  },
+  {
+    "id": "flow-doenca-vascular-renal-diagnostico",
+    "temaId": "doenca-vascular-renal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de estenose de artéria renal: investigação",
+    "revisado": true,
+    "fonte": "European Society for Vascular Surgery (ESVS) 2025 Clinical Practice Guidelines on the Management of Diseases of the Mesenteric and Renal Arteries and Veins",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de estenose de artéria renal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Quais achados sugerem a suspeita?",
+        "ramos": [
+          {
+            "label": "HAS de início súbito ou refratária em jovem",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar displasia fibromuscular (mulheres jovens, lesão distal em 'colar de contas')"
+              }
+            ]
+          },
+          {
+            "label": "HAS refratária em idoso aterosclerótico + sopro abdominal",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar estenose aterosclerótica (lesão ostial/proximal)"
+              }
+            ]
+          },
+          {
+            "label": "Piora aguda da função renal após início de IECA/BRA",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Sinal clássico de estenose bilateral (ou unilateral em rim único) — suspender IECA/BRA e investigar"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Solicitar angiotomografia ou angiorressonância renal (exames de escolha não invasivos); USG com Doppler renal como triagem inicial"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Estenose confirmada — necessário intervenção terapêutica no mesmo tempo do diagnóstico?",
+        "ramos": [
+          {
+            "label": "Sim (ou dúvida diagnóstica persistente)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Angiografia convencional — padrão-ouro, permite angioplastia terapêutica associada"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguir com angiotomografia/angiorressonância e definir conduta clínica x intervencionista"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-doenca-vascular-renal-tratamento",
+    "temaId": "doenca-vascular-renal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Estenose de artéria renal: quando revascularizar (ESVS 2025)",
+    "revisado": true,
+    "fonte": "European Society for Vascular Surgery (ESVS) 2025 Clinical Practice Guidelines on the Management of Diseases of the Mesenteric and Renal Arteries and Veins",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Estenose de artéria renal confirmada"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Etiologia?",
+        "ramos": [
+          {
+            "label": "Displasia fibromuscular",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Angioplastia — geralmente responde bem, com resolução ou melhora significativa da hipertensão"
+              }
+            ]
+          },
+          {
+            "label": "Aterosclerótica",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "HAS controlada e função renal estável?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Tratamento clínico otimizado (controle de fatores de risco, IECA/BRA com monitorização) — angioplastia CONTRAINDICADA de rotina nesse cenário"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — presença de algum destes:",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Qual cenário se aplica?",
+                        "ramos": [
+                          {
+                            "label": "HAS resistente a ≥3 anti-hipertensivos + estenose >70%",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Angioplastia (PTRAS) deve ser CONSIDERADA"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Edema agudo de pulmão 'flash' recorrente",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Angioplastia (PTRAS) deve ser CONSIDERADA"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Declínio renal grave/progressivo com rim ainda viável",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Angioplastia (PTRAS) deve ser CONSIDERADA"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tipo": "alerta",
+                "texto": "Se revascularização indicada mas endovascular tecnicamente inviável ou já falhou: reconstrução arterial cirúrgica aberta"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
