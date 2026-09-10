@@ -2529,7 +2529,7 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Cirrose — Fluxo de manejo das complicações",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Hepatologia (SBH); AASLD Practice Guidance",
     "fluxo": [
       {
@@ -7708,6 +7708,66 @@
       {
         "tipo": "end",
         "texto": "Se falha: retratar evitando repetir o mesmo antibiótico (ex.: resgate com levofloxacino)"
+      }
+    ]
+  },
+  {
+    "id": "flow-cirrose-complicacoes-diagnostico",
+    "temaId": "cirrose-complicacoes",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Estratificação não invasiva de hipertensão portal (Baveno VIII)",
+    "revisado": true,
+    "fonte": "Consenso de Baveno VIII (2026)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Hepatopatia crônica — estimar risco de doença avançada/hipertensão portal"
+      },
+      {
+        "tipo": "action",
+        "texto": "Realizar elastografia hepática (FibroScan) + contagem de plaquetas"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Rigidez hepática (LSM)?",
+        "ramos": [
+          {
+            "label": "<10 kPa",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Afasta cACLD — hipertensão portal clinicamente significativa improvável"
+              }
+            ]
+          },
+          {
+            "label": "10-15 kPa",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Sugestivo de cACLD — avaliar critérios adicionais (plaquetas, achados de imagem)"
+              }
+            ]
+          },
+          {
+            "label": ">15 kPa",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Altamente sugestivo de cACLD — hipertensão portal clinicamente significativa provável"
+              },
+              {
+                "tipo": "action",
+                "texto": "Calcular Child-Pugh/MELD; rastrear varizes por endoscopia (exceto se critérios não invasivos de baixo risco — LSM<20kPa e plaquetas>150.000)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Em cACLD/HPCS: considerar carvedilol para prevenção de descompensação, mesmo sem varizes de alto risco"
       }
     ]
   }
