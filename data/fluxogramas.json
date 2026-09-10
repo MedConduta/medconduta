@@ -8313,5 +8313,168 @@
         "texto": "Sintomas globais refratários: considerar terapia cognitivo-comportamental ou hipnoterapia dirigida ao intestino"
       }
     ]
+  },
+  {
+    "id": "flow-hdb-diagnostico",
+    "temaId": "hemorragia-digestiva-baixa",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Hematoquezia — abordagem diagnóstica da hemorragia digestiva baixa",
+    "revisado": true,
+    "fonte": "ACG Clinical Guideline: Management of Patients with Acute Lower GI Bleeding, 2023",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Hematoquezia — suspeita de hemorragia digestiva baixa"
+      },
+      {
+        "tipo": "action",
+        "texto": "Excluir origem alta (sondagem nasogástrica com aspirado limpo ou EDA em caso de dúvida) — sangramento alto volumoso pode se manifestar como hematoquezia"
+      },
+      {
+        "tipo": "action",
+        "texto": "Toque retal obrigatório: confirmar sangue e afastar lesão anorretal baixa"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente hemodinamicamente estável?",
+        "ramos": [
+          {
+            "label": "Sim (estável)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Colonoscopia é o exame de escolha — não há benefício em realizá-la em até 24h vs. até 14h (ACG 2023)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Considerar escore de Oakland: ≤8 permite alta precoce e investigação ambulatorial"
+              },
+              {
+                "tipo": "end",
+                "texto": "Tratamento endoscópico do sítio de sangramento se identificado (clipagem, injeção, eletrocoagulação)"
+              }
+            ]
+          },
+          {
+            "label": "Não (instável, sangramento ativo e significativo)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Ressuscitação volêmica imediata"
+              },
+              {
+                "tipo": "action",
+                "texto": "Angiotomografia (angio-TC) é o exame inicial de escolha (não colonoscopia)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Extravasamento de contraste na angio-TC?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Encaminhar à radiologia intervencionista para arteriografia terapêutica com possível embolização"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Colonoscopia assim que possível após estabilização/preparo"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hdb-tratamento",
+    "temaId": "hemorragia-digestiva-baixa",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Hemorragia digestiva baixa — conduta terapêutica",
+    "revisado": true,
+    "fonte": "ACG Clinical Guideline: Management of Patients with Acute Lower GI Bleeding, 2023",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico de hemorragia digestiva baixa confirmado"
+      },
+      {
+        "tipo": "action",
+        "texto": "Suporte clínico: hidratação, correção de coagulopatia — maioria dos episódios (ex.: diverticular) cessa espontaneamente"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente em uso de anticoagulante com sangramento com risco de vida?",
+        "ramos": [
+          {
+            "label": "Varfarina (antagonista de vitamina K)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Complexo protrombínico (ou vitamina K)"
+              }
+            ]
+          },
+          {
+            "label": "Anticoagulante oral direto (DOAC)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Reversor específico (ou complexo protrombínico se reversor indisponível)"
+              }
+            ]
+          },
+          {
+            "label": "Não em uso de anticoagulante",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Prosseguir com investigação/tratamento padrão"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sangramento ativo identificado à colonoscopia?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Terapia endoscópica: clipagem, injeção de adrenalina, eletrocoagulação"
+              }
+            ]
+          },
+          {
+            "label": "Refratário / muito volumoso / extravasamento à angio-TC",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Embolização angiográfica"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Cirurgia (colectomia segmentar ou subtotal) reservada a casos refratários sem localização possível da origem do sangramento"
+      }
+    ]
   }
 ]
