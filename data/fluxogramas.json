@@ -2486,7 +2486,7 @@
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Dispepsia — Fluxo diagnóstico (doença ulcerosa péptica)",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Federacao Brasileira de Gastroenterologia; ACG Clinical Guideline: Treatment of Helicobacter pylori Infection",
     "fluxo": [
       {
@@ -7641,6 +7641,73 @@
             ]
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "flow-dup-tratamento",
+    "temaId": "doenca-ulcerosa-peptica",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Úlcera péptica H. pylori positiva — escolha do esquema de erradicação",
+    "revisado": true,
+    "fonte": "ACG Clinical Guideline: Treatment of Helicobacter pylori Infection (2024)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Úlcera péptica com H. pylori confirmado"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Alergia grave (anafilaxia) à penicilina?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Terapia quádrupla com bismuto (IBP + bismuto + tetraciclina + metronidazol, 14 dias) — evita betalactâmico"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Área de alta resistência à claritromicina ou uso prévio de macrolídeo?",
+                "ramos": [
+                  {
+                    "label": "Sim (cenário mais comum)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Preferir quádruplo com bismuto, tríplice com rifabutina ou esquema à base de vonoprazana — evitar claritromicina empírica"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não / sensibilidade documentada",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Tríplice clássico (IBP + claritromicina + amoxicilina, 14 dias) é aceitável"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Confirmar erradicação por método não invasivo (antígeno fecal ou teste respiratório da ureia) após pelo menos 4 semanas do término do tratamento, com IBP suspenso 1-2 semanas antes"
+      },
+      {
+        "tipo": "end",
+        "texto": "Se falha: retratar evitando repetir o mesmo antibiótico (ex.: resgate com levofloxacino)"
       }
     ]
   }
