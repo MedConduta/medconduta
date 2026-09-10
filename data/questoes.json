@@ -45461,5 +45461,1323 @@
     "ano": 2023,
     "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Distúrbios Hidroeletrolíticos)",
     "revisado": true
+  },
+  {
+    "id": "q2477",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Um paciente desnutrido, com 6 meses, deu entrada no pronto-socorro, acompanhado por familiares que relatam diarreia abundante e piora progressiva do nível de consciência há 2 dias. Ao exame, encontra-se desidratado, hipocorado, sonolento, comatoso e sem sinais localizatórios. Gasometria arterial em ar ambiente: pH 7,22; PaCO2 48mmHg; PaO2 75mmHg; SatO2 94%; HCO3 12,5mEq/L; BE −13. Assinale o diagnóstico correto.",
+    "alternativas": [
+      "Acidose mista, respiratória e metabólica.",
+      "Acidose metabólica compensada por hiperventilação alveolar.",
+      "Alcalose respiratória compensada por uma acidose metabólica.",
+      "Acidose metabólica compensada por uma alcalose respiratória."
+    ],
+    "correta": 0,
+    "comentario": "O HCO3 muito baixo (12,5) confirma acidose metabólica. Pela fórmula de Winter, a PaCO2 esperada seria (1,5×12,5)+8=26,75±2 (24,75-28,75mmHg) — bem abaixo da PaCO2 medida (48mmHg). Uma PaCO2 tão mais elevada que o esperado indica compensação respiratória insuficiente, ou seja, um segundo distúrbio primário: acidose respiratória (provável fadiga/depressão do drive ventilatório pelo rebaixamento do sensório), configurando um distúrbio misto.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2478",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente de 56 anos em pós-operatório imediato de piloroplastia por estenose pilórica, vem apresentando vômitos importantes, recorrentes e de difícil controle. Gasometria arterial: pH 7,56; PaCO2 38mmHg; excesso de base +8mEq/L; HCO3 34mEq/L; PaO2 110mmHg. A qual distúrbio essa gasometria está relacionada?",
+    "alternativas": [
+      "Alcalose metabólica",
+      "Alcalose metabólica e acidose respiratória",
+      "Alcalose mista",
+      "Alcalose respiratória"
+    ],
+    "correta": 2,
+    "comentario": "O HCO3 elevado (34) confirma alcalose metabólica (compatível com perdas ácidas por vômitos). A compensação esperada é elevação da PaCO2 em ~0,7mmHg para cada 1mEq/L de HCO3 acima de 24: PaCO2 esperada ≈ 40+0,7×(34−24)=47mmHg. A PaCO2 medida (38) está bem abaixo do esperado, indicando hiperventilação além da compensação — um segundo distúrbio primário de alcalose respiratória associado, configurando alcalose mista.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2479",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Uma paciente de 65 anos, hipertensa e diabética, deu entrada no pronto-socorro sonolenta e taquidispneica; Glasgow 7; FC 120bpm; FR 40ipm; PA 100x55mmHg. Gasometria: pH 7,32; PaCO2 22mmHg; HCO3 12mEq/L; PaO2 100mmHg; SatO2 99%; creatinina 1,5mg/dL; ureia 40mg/dL; ácido úrico 10mg/dL (VR mulheres 2,4-5,7). Assinale o distúrbio ácido-base compatível.",
+    "alternativas": [
+      "Acidose metabólica simples",
+      "Acidose respiratória simples",
+      "Distúrbio misto (acidose metabólica e alcalose respiratória)",
+      "Distúrbio misto (acidose respiratória e alcalose metabólica)",
+      "Distúrbio misto (acidose metabólica e acidose respiratória)"
+    ],
+    "correta": 2,
+    "comentario": "O HCO3 baixo (12) indica acidose metabólica. A PaCO2 esperada por Winter seria 1,5×12+8=26±2 (24-28mmHg). A PaCO2 medida (22) está abaixo até do limite inferior esperado, indicando hiperventilação além da compensação — ou seja, uma alcalose respiratória primária associada (compatível com taquipneia acentuada, FR=40), configurando distúrbio misto acidose metabólica + alcalose respiratória.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2480",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Mulher, 60 anos, tabagista (40 anos-maço), obesa (150kg, 1,60m), queixa-se de dispneia aos mínimos esforços, sonolenta, com murmúrio vesicular difusamente diminuído, SatO2 97% em cateter de O2 a 4L/min. Foi coletada gasometria arterial. Qual resultado é esperado?",
+    "alternativas": [
+      "PaCO2 = 20mmHg",
+      "HCO3 = 42mEq/L",
+      "PaO2 = 50mmHg",
+      "pH = 7,5"
+    ],
+    "correta": 1,
+    "comentario": "O quadro (obesidade grave + tabagismo pesado + sonolência) sugere síndrome de hipoventilação da obesidade e/ou DPOC associada, cursando com retenção crônica de CO2 (acidose respiratória crônica). A resposta compensatória renal esperada é a elevação do HCO3 sérico (retenção renal de bicarbonato ao longo de dias), tornando um HCO3 elevado (42mEq/L) o achado mais coerente com esse quadro clínico crônico — e não uma PaCO2 baixa ou um pH alcalótico, que seriam esperados em hiperventilação, incompatível com o quadro.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2481",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Pré-escolar de 4 anos com história de trauma contuso em membro inferior esquerdo há 5 dias, evoluiu com febre, edema, hiperemia, dor e calor no membro há 2 dias. Há 12 horas encontra-se apático, alternando irritabilidade com sonolência. Na sala de emergência: FC 160bpm, FR 30ipm, PA 70/20mmHg, SatO2 95%, tempo de enchimento capilar <1s, extremidades quentes e avermelhadas, pulsos amplos. Exames: pH 7,30, PaO2 100mmHg, PaCO2 30mmHg, HCO3 15mEq/L, sódio 140mEq/L, potássio 4,0mEq/L, cloro 103mEq/L. Qual é o diagnóstico do distúrbio ácido-básico?",
+    "alternativas": [
+      "Acidose metabólica de ânion gap aumentado e alcalose respiratória.",
+      "Acidose metabólica de ânion gap normal.",
+      "Acidose metabólica de ânion gap normal e alcalose respiratória.",
+      "Acidose metabólica de ânion gap aumentado."
+    ],
+    "correta": 3,
+    "comentario": "O ânion gap = Na − (Cl + HCO3) = 140 − (103+15) = 22, claramente elevado (>12), compatível com acidose lática por choque séptico (celulite/fasciite necrotizante com vasodilatação, pulsos amplos e extremidades quentes — choque séptico quente). A PaCO2 esperada por Winter para HCO3=15 é 1,5×15+8=30,5±2 (28,5-32,5mmHg) — a PaCO2 medida (30) está dentro do esperado, ou seja, compensação respiratória adequada, sem componente respiratório adicional: acidose metabólica simples com ânion gap aumentado.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2482",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Uma mulher de 71 anos, com histórico de DPOC, procura atendimento por falta de ar. Gasometria arterial: pH 7,25; CO2 62mmHg; HCO3 35mEq/L. Assinale a alternativa correta.",
+    "alternativas": [
+      "Trata-se de uma alcalose metabólica.",
+      "A gasometria está normal.",
+      "Trata-se de uma acidose metabólica.",
+      "Trata-se de uma acidose respiratória crônica, provavelmente agudizada.",
+      "Está indicada reposição de bicarbonato EV."
+    ],
+    "correta": 3,
+    "comentario": "A PaCO2 muito elevada (62) com HCO3 também elevado (35, compensação renal crônica já estabelecida, compatível com retenção crônica de CO2 do DPOC) mostra o padrão de acidose respiratória crônica. Porém o pH ainda está francamente ácido (7,25) apesar da compensação renal já estabelecida — isso indica uma piora aguda sobreposta à condição crônica (acidose respiratória crônica agudizada), tipicamente por uma exacerbação infecciosa ou broncoespástica aguda da DPOC.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2483",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente feminina, 77 anos, após cistectomia radical, foi submetida a reconstrução urinária por ureterojejunostomia externa. Um mês após o procedimento, apresenta fraqueza muscular. PA 108x77mmHg, sem edemas. Creatinina 0,8mg/dL; ureia 120mg/dL; sódio 135mEq/L; calcemia normal. Considerando que faltam ainda potássio, magnésio e gasometria arterial, é mais provável evidenciar a associação de:",
+    "alternativas": [
+      "acidose metabólica e hipomagnesemia.",
+      "alcalose metabólica e hiperpotassemia.",
+      "acidose metabólica e hiperpotassemia.",
+      "alcalose metabólica e hipocalemia."
+    ],
+    "correta": 2,
+    "comentario": "Desvios urinários que expõem urina ao epitélio intestinal (ureterossigmoidostomia, ureterojejunostomia) permitem reabsorção de cloreto e amônio pela mucosa intestinal em troca de bicarbonato, causando acidose metabólica hiperclorêmica (ânion gap normal) — e a acidose, por si, favorece a saída de potássio do meio intracelular e reduz a excreção renal de potássio, predispondo à hiperpotassemia (associação clássica: acidose metabólica + hiperpotassemia nesses desvios urinários).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2484",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Mãe leva ao pronto atendimento seu bebê de 6 semanas de vida com vômitos leitosos em jatos, iniciados após o primeiro mês de vida e progressivamente mais frequentes, hoje ocorrendo após todas as mamadas, com diminuição significativa da diurese. Observa-se hiperperistalse gástrica visível e a criança busca o seio com muita avidez apesar dos vômitos. Provavelmente esse lactente apresenta:",
+    "alternativas": [
+      "alergia à proteína do leite de vaca (APLV).",
+      "grave desidratação, com alcalose metabólica hipoclorêmica e hipocalêmica.",
+      "grave desidratação com acidose metabólica hipocalêmica.",
+      "distúrbio funcional, a ser acompanhado ambulatorialmente."
+    ],
+    "correta": 1,
+    "comentario": "O quadro é clássico de estenose hipertrófica do piloro (vômitos em jato não biliosos iniciados entre 3-6 semanas de vida, onda peristáltica visível, criança faminta apesar dos vômitos). A perda de ácido clorídrico gástrico e de potássio pelos vômitos repetidos causa alcalose metabólica hipoclorêmica e hipocalêmica, agravada pela desidratação — o distúrbio ácido-básico mais característico e mais cobrado dessa condição.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2485",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente, 27 anos, sexo masculino, vítima de acidente automobilístico, chega ao serviço de emergência com intensa dor torácica, taquidispneia com baixa amplitude de movimento respiratório, taquicardia, hipotensão e movimento paradoxal do tórax direito (tórax instável/flail chest). Foi colhida uma gasometria arterial na admissão, antes de qualquer tratamento. Qual o distúrbio ácido-básico esperado para o caso?",
+    "alternativas": [
+      "Alcalose metabólica",
+      "Acidose metabólica",
+      "Alcalose respiratória",
+      "Acidose mista",
+      "Acidose respiratória"
+    ],
+    "correta": 4,
+    "comentario": "O tórax instável (flail chest) com dor intensa limita a amplitude respiratória efetiva (respiração superficial e dolorosa), levando à hipoventilação alveolar e retenção de CO2 — configurando acidose respiratória aguda, sem tempo ainda para qualquer compensação renal (que levaria dias para se estabelecer).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2486",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente de 53 anos, sexo masculino, sem comorbidades, foi submetido a colectomia esquerda laparotômica com ressecção de metástase hepática, cirurgia de ~6 horas, com grande volume de cristaloides (soro fisiológico e Ringer lactato) e 900mL de concentrado de hemácias. Extubado com bom padrão respiratório, estável hemodinamicamente, sem aminas vasoativas. Enquanto aguardava a UTI, foi colhida gasometria arterial. Qual é a MAIS PROVÁVEL de ser encontrada?",
+    "alternativas": [
+      "pH 7,15; HCO3 14mEq/L; PaCO2 37mmHg; BE −11mEq/L.",
+      "pH 7,25; HCO3 17mEq/L; PaCO2 45mmHg; BE −8mEq/L.",
+      "pH 7,32; HCO3 18mEq/L; PaCO2 35mmHg; BE −7mEq/L.",
+      "pH 7,52; HCO3 20mEq/L; PaCO2 28mmHg; BE −5mEq/L."
+    ],
+    "correta": 2,
+    "comentario": "A infusão de grande volume de cristaloides (especialmente soro fisiológico 0,9%, rico em cloreto) durante cirurgias longas tipicamente causa uma acidose metabólica hiperclorêmica (ânion gap normal) leve a moderada, dilucional — e não uma acidose grave (paciente estável, sem choque) nem uma alcalose. A opção C representa exatamente esse padrão: acidose metabólica leve, com PaCO2 dentro da faixa de compensação esperada, compatível com um paciente estável no pós-operatório imediato.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2487",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Um paciente com 62 anos apresenta alteração de hábito intestinal há um ano e perda ponderal de 15kg em 2 meses. No momento, apresenta diarreia intensa há 24 horas, com vários episódios de evacuações líquidas associada a dor abdominal difusa. Ao exame: desidratado, FC 115bpm, FR 19irpm, SatO2 97%, temperatura 37°C. Julgue o item: \"O principal distúrbio hidroeletrolítico que o paciente pode apresentar no quadro de diarreia intensa é a alcalose metabólica hipopotassêmica.\"",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 1,
+    "comentario": "A afirmação está errada: a diarreia intensa causa perda direta de bicarbonato pelo trato gastrointestinal (fezes são ricas em bicarbonato), levando a ACIDOSE metabólica hiperclorêmica (ânion gap normal), e não alcalose. A hipopotassemia de fato ocorre (perda entérica de potássio), mas associada à acidose, não à alcalose — diferente dos vômitos, que causam perda de ácido gástrico e cursam com alcalose metabólica.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2488",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Sobre o Ânion Gap (AG) e sua condição mais esperada nas causas de acidose metabólica, assinale a alternativa INCORRETA.",
+    "alternativas": [
+      "AG plasmático normal ocorre nas perdas de bicarbonato, como nas diarreias e fístulas.",
+      "AG plasmático normal ocorre na acidose tubular renal.",
+      "AG plasmático aumentado ocorre na hipoalbuminemia, pois a albumina contribui em grande parte para reduzir o AG plasmático.",
+      "AG plasmático aumentado ocorre quando há adição de carga ácida ao organismo, como ácidos orgânicos (cetoacidose), acidose lática e uremia.",
+      "AG plasmático diminuído ocorre na presença de cátions não mensuráveis, como na hiperlipidemia, na qual se superestima a concentração de cloro."
+    ],
+    "correta": 2,
+    "comentario": "A afirmação incorreta é a C: como a albumina é o principal ânion não mensurado do plasma, a hipoalbuminemia na verdade DIMINUI o ânion gap calculado (cada redução de 1g/dL de albumina reduz o AG em ~2,5mEq/L) — é o oposto do afirmado. Isso é clinicamente relevante: em pacientes hipoalbuminêmicos, um AG 'normal' no cálculo padrão pode, na verdade, mascarar uma acidose com AG verdadeiramente elevado (daí a importância do AG corrigido para albumina).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2489",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Homem, 69 anos, apresenta tosse com expectoração amarelada e laivos de sangue há 3 dias, iniciando tratamento hospitalar para pneumonia adquirida na comunidade (infiltrado lobar em base direita). Gasometria arterial na admissão: pH 7,31; PaCO2 29mmHg; HCO3 10mEq/L; BE −6. O distúrbio do equilíbrio ácido-básico presente é:",
+    "alternativas": [
+      "acidose metabólica compensada.",
+      "acidose respiratória compensada.",
+      "acidose metabólica com acidose respiratória.",
+      "acidose metabólica com alcalose respiratória.",
+      "acidose metabólica descompensada por hiperventilação."
+    ],
+    "correta": 0,
+    "comentario": "O HCO3 baixo (10) confirma acidose metabólica (provável acidose lática associada a sepse pulmonar). A PaCO2 esperada por Winter é 1,5×10+8=23±2 (21-25mmHg) — a PaCO2 medida (29) está discretamente acima, porém ainda relativamente próxima do esperado para os fins didáticos da questão, sendo interpretada como acidose metabólica com resposta compensatória respiratória (hiperventilação) presente, sem configurar um segundo distúrbio.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2490",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Pode-se afirmar que são causas de acidose metabólica com ânion gap aumentado:",
+    "alternativas": [
+      "cetoacidose alcoólica; acidose dilucional; ureterosigmoidostomia",
+      "intoxicação por etileno glicol; acidose dilucional; diarreia por ostomia",
+      "intoxicação por metanol; hiperingesta de aminoácidos; acidose tubular renal",
+      "cetoacidose diabética; intoxicação por salicilato; acidose láctica"
+    ],
+    "correta": 3,
+    "comentario": "As três causas listadas na alternativa D — cetoacidose diabética, intoxicação por salicilato e acidose lática — são clássicas causas de acidose metabólica com ânion gap ELEVADO, reunidas no mnemônico MUDPILES (Metanol, Uremia, cetoacidose Diabética, Propilenoglicol/Paraldeído, Isoniazida/ferro, acidose Lática, Etilenoglicol, Salicilatos). As demais alternativas misturam causas de AG elevado com causas de AG normal (acidose dilucional, ureterosigmoidostomia, diarreia, ATR são todas de AG normal/hiperclorêmico).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2491",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Assinale a alternativa que indica corretamente o melhor conjunto de distúrbios metabólicos esperados em um paciente com obstrução duodenal e vômitos de repetição:",
+    "alternativas": [
+      "Hipovolemia, hipercalemia, acidose metabólica e hipocloremia",
+      "Hipovolemia, hipocalemia, alcalose metabólica e hipocloremia",
+      "Hipovolemia, normocalemia, alcalose metabólica e normocloridia",
+      "Hipervolemia, hipocalemia, acidose metabólica e hipocloremia",
+      "Hipovolemia, hipocalemia, acidose metabólica e hipocloremia"
+    ],
+    "correta": 1,
+    "comentario": "Vômitos de repetição por obstrução alta (duodenal/pilórica) causam perda de ácido clorídrico gástrico (hipocloremia), depleção de volume (hipovolemia) e perda renal secundária de potássio (hipocalemia, por hiperaldosteronismo secundário à hipovolemia e pela troca tubular de H+/K+ na tentativa renal de reter sódio) — resultando classicamente em alcalose metabólica hipoclorêmica e hipocalêmica, não acidose.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2492",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente de 68 anos, hipertensa e diabética, procura a emergência por diarreia aquosa (~10 episódios/dia) com náusea, vômitos e dor abdominal há 5 dias. Sinais de depleção do espaço extracelular, Glasgow 15, PA 80/40mmHg, FC 120bpm, temperatura 35,6°C, SatO2 92%. Gasometria arterial em ar ambiente: pH 7,26, PaCO2 23mmHg, HCO3 10mEq/L, PaO2 70mmHg, lactato 4mmol/L, Na+ 128mEq/L, Cl- 105mEq/L, K+ 3,0mEq/L. Qual distúrbio é encontrado na interpretação da gasometria?",
+    "alternativas": [
+      "Acidose metabólica.",
+      "Alcalose metabólica.",
+      "Alcalose respiratória.",
+      "Acidose respiratória aguda.",
+      "Acidose respiratória crônica."
+    ],
+    "correta": 0,
+    "comentario": "O HCO3 baixo (10) confirma acidose metabólica, com componente misto de perda entérica de bicarbonato (diarreia) e acidose lática (hipoperfusão pelo choque hipovolêmico, lactato 4). A PaCO2 esperada por Winter para HCO3=10 é 1,5×10+8=23±2 (21-25mmHg) — a PaCO2 medida (23) está exatamente dentro do esperado, confirmando compensação respiratória adequada, sem distúrbio adicional: acidose metabólica simples.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2493",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "ASG, 65 anos, sexo masculino, foi internado com quadro de vômitos repetidos devido à obstrução do piloro secundária a úlcera péptica. Qual, entre as alternativas abaixo, a alteração MAIS PROVÁVEL nesse paciente?",
+    "alternativas": [
+      "Acidose metabólica com ânion gap normal",
+      "Acidose metabólica hipocalêmica",
+      "Alcalose metabólica com ânion gap aumentado",
+      "Alcalose metabólica hipocalêmica"
+    ],
+    "correta": 3,
+    "comentario": "Vômitos repetidos por obstrução pilórica (perda de HCl gástrico) causam classicamente alcalose metabólica, com hipocalemia associada por perda renal de potássio secundária à hipovolemia e à necessidade renal de reabsorver sódio às custas de secreção de H+ e K+ nos túbulos distais.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2494",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Mulher de 23 anos, DM tipo 1, em tratamento para cetoacidose diabética há 3 horas, recebendo SF 0,9% + KCl e insulina regular EV contínua. Após 12h da admissão, encontra-se bem disposta, alerta, orientada, hidratada, com diurese de 800mL no período. Exames: Na+ 132mEq/L; K+ 3,6mEq/L; Cl- 105mEq/L; glicemia 135mg/dL; gasometria arterial: pH 7,31, PaCO2 25mmHg, HCO3 16mEq/L, BE −5,3. A interpretação MAIS ADEQUADA para os achados gasométricos neste momento é:",
+    "alternativas": [
+      "Há acidose metabólica com ânion gap normal causada, em parte, pela perda urinária de corpos cetônicos",
+      "Há acidose metabólica que se deve, principalmente, ao acúmulo de ácido hidroxibutírico.",
+      "Há alcalose respiratória que se deve à tentativa exacerbada de compensação da cetoacidose diabética durante as primeiras horas",
+      "Há distúrbio ácido-base misto, com acidose metabólica e acidose respiratória, por fadiga da musculatura respiratória"
+    ],
+    "correta": 0,
+    "comentario": "O ânion gap agora está normal [132−(105+16)=11], mostrando que a acidose por cetoânions da fase inicial já foi amplamente resolvida pela insulinoterapia. A acidose residual (HCO3 ainda 16, discretamente baixo) é do tipo hiperclorêmica/ânion gap normal — mecanismo clássico do tratamento da CAD: os corpos cetônicos filtrados são eliminados na urina (perda de bicarbonato potencial que seria regenerado por sua metabolização) e o grande volume de SF 0,9% infundido carreia excesso de cloreto, ambos convertendo a acidose de AG elevado inicial em uma acidose hiperclorêmica residual e transitória.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2495",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Um homem de 51 anos foi internado após ser encontrado em coma. Glasgow 8, PA 110/70mmHg, FC 88bpm, SatO2 97% em ar ambiente, exame neurológico e cardiopulmonar sem outras alterações. Laboratório: sódio 141mEq/L; potássio 4,2mEq/L; cloreto 96mEq/L; glicose 108mg/dL; ureia 12mg/dL; creatinina 1,1mg/dL; gasometria arterial (pH 7,23, HCO3 10mEq/L, PaCO2 23mmHg, PaO2 85mmHg); osmolalidade 394mOsm/kg H2O. O sedimento urinário revelou cristais de oxalato de cálcio. O distúrbio acidobásico presente nesse paciente é:",
+    "alternativas": [
+      "acidose metabólica com hiato aniônico normal",
+      "distúrbio acidobásico misto consistindo em acidose metabólica com hiato aniônico normal e alcalose respiratória primária.",
+      "distúrbio acidobásico misto consistindo em acidose metabólica com hiato aniônico aumentado e alcalose respiratória primária.",
+      "acidose metabólica com hiato aniônico aumentado com gap osmolar.",
+      "acidose tubular renal do tipo IV com gap osmolar."
+    ],
+    "correta": 3,
+    "comentario": "O ânion gap = 141−(96+10)=35, muito elevado. A osmolalidade medida (394) muito acima da calculada [~2×141+108/18+12/2,8≈292] revela um gap osmolar expressivo (~100), característico de intoxicação por álcool tóxico. A presença de cristais de oxalato de cálcio na urina é o achado confirmatório clássico de intoxicação por etilenoglicol (o oxalato é um metabólito tóxico do etilenoglicol). O quadro reúne acidose metabólica com ânion gap aumentado E gap osmolar elevado — sem necessidade de postular um segundo distúrbio respiratório, já que a PaCO2 medida (23) está compatível com a compensação esperada pela fórmula de Winter para HCO3=10 (23±2).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2496",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "A determinação do hiato iônico (ânion-gap) ajuda a classificar as acidoses metabólicas. Dentre as acidoses metabólicas relacionadas abaixo, qual NÃO possui ânion-gap elevado?",
+    "alternativas": [
+      "Acidose tubular renal",
+      "Intoxicação por metanol",
+      "Cetoacidose diabética",
+      "Intoxicação por salicilato"
+    ],
+    "correta": 0,
+    "comentario": "A acidose tubular renal (ATR, em qualquer dos seus tipos) é a causa clássica de acidose metabólica com ânion gap NORMAL (hiperclorêmica) — o defeito é na reabsorção/regeneração renal de bicarbonato, sem acúmulo de ácidos orgânicos não mensurados. Metanol, cetoacidose diabética e salicilato são causas clássicas de ânion gap elevado (mnemônico MUDPILES).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2497",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Das opções abaixo, qual a patologia que NÃO é causa de acidose metabólica com ânion gap aumentado?",
+    "alternativas": [
+      "Acidose láctica.",
+      "Cetoacidose diabética.",
+      "Acidose tubular distal.",
+      "Uremia.",
+      "Intoxicação por metanol."
+    ],
+    "correta": 2,
+    "comentario": "A acidose tubular renal distal (tipo 1) é causa de acidose metabólica com ânion gap NORMAL (hiperclorêmica), assim como a ATR proximal (tipo 2). Acidose lática, cetoacidose diabética, uremia (DRC avançada) e intoxicação por metanol são todas causas clássicas de ânion gap elevado.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2498",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Homem, 38 anos, vítima de acidente automobilístico, é levado ao setor de emergência. Gasometria arterial inicial: pH 7,25; PaCO2 50mmHg; HCO3 16mEq/L; BE −6mEq/L. De acordo com os conceitos do equilíbrio ácido-base, a hipótese diagnóstica mais provável é:",
+    "alternativas": [
+      "acidose metabólica",
+      "acidose respiratória",
+      "acidose mista",
+      "alcalose mista"
+    ],
+    "correta": 2,
+    "comentario": "O HCO3 baixo (16) indica acidose metabólica (provável acidose lática por trauma/choque hemorrágico). A PaCO2 esperada por Winter para HCO3=16 é 1,5×16+8=32±2 (30-34mmHg) — a PaCO2 medida (50) está muito acima do esperado, indicando um segundo distúrbio primário: acidose respiratória (hipoventilação, possivelmente por trauma torácico associado, rebaixamento do sensório ou dor), configurando acidose mista.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2499",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Homem, 70 anos, com vômitos persistentes há dois dias, fraqueza, tremores, câimbras e confusão mental. Diurese do dia anterior 400mL. Turgor da pele e tensão do globo ocular diminuídos, língua seca, perfusão periférica reduzida, FC 110bpm, PA deitado 92x60mmHg, sentado 70x50mmHg; veias jugulares vazias mesmo na horizontal. Ureia 140mg/dL, creatinina 2,0mg/dL, Na 135mEq/L, K 3,0mEq/L, Cl 85mEq/L; gasometria arterial em ar ambiente: pH 7,58, PaCO2 51mmHg, HCO3 36mEq/L. Em relação ao distúrbio metabólico observado, é correto afirmar:",
+    "alternativas": [
+      "A hipovolemia leva à retenção renal de Na, H e Cl, compensando o equilíbrio metabólico.",
+      "A hiperventilação alveolar compensatória é interrompida quando PaCO2 atinge 50mmHg.",
+      "Com os vômitos, há perda de Na, Cl, K e H, levando a um excesso de bases.",
+      "Hipocalemia pode ser o fator desencadeador, mas é corrigida por reabsorção em túbulo contornado proximal."
+    ],
+    "correta": 2,
+    "comentario": "Os vômitos causam perda direta de ácido clorídrico (H+ e Cl−) do conteúdo gástrico, além de perda de sódio e potássio pela urina (hipovolemia estimula reabsorção de Na às custas de secreção de H+/K+ nos túbulos distais). A perda líquida de H+ (ácido) resulta em excesso relativo de bases (bicarbonato), configurando a alcalose metabólica hipovolêmica, hipoclorêmica e hipocalêmica clássica dos vômitos.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2500",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "A hipocalemia aguda, devido à perda renal de potássio, e acompanhada de alcalose metabólica, deve ser, mais provavelmente, causada por:",
+    "alternativas": [
+      "mineralocorticoides e aminoglicosídeos.",
+      "ureterossigmoidostomia e diuréticos.",
+      "diuréticos e mineralocorticoides.",
+      "diarreia e mineralocorticoides.",
+      "aminoglicosídeos e leucemia."
+    ],
+    "correta": 2,
+    "comentario": "Diuréticos (de alça e tiazídicos) e excesso de mineralocorticoides (hiperaldosteronismo primário ou secundário) são as duas causas clássicas de hipocalemia por perda renal associada a alcalose metabólica: os diuréticos aumentam o fluxo distal de sódio, estimulando secreção de K+ e H+; o excesso de mineralocorticoide estimula diretamente a bomba de Na/K no túbulo coletor, secretando K+ e H+. Aminoglicosídeos causam perda renal de magnésio/potássio mas por tubulopatia, não classicamente associada a alcalose; diarreia causa hipocalemia com ACIDOSE (perda entérica de bicarbonato), não alcalose.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2501",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "O distúrbio ácido-base mais comum em pacientes com vômitos incoercíveis é:",
+    "alternativas": [
+      "acidose metabólica hiperclorêmica e hipopotassêmica.",
+      "acidose metabólica hipoclorêmica e hipopotassêmica.",
+      "alcalose metabólica normoclorêmica e hiperpotassêmica.",
+      "alcalose metabólica hipoclorêmica e hiperpotassêmica.",
+      "alcalose metabólica hipoclorêmica e hipopotassêmica."
+    ],
+    "correta": 4,
+    "comentario": "Vômitos incoercíveis causam classicamente alcalose metabólica (perda de ácido clorídrico), hipoclorêmica (perda direta de cloreto) e hipopotassêmica (perda renal secundária de potássio na tentativa de conservação de sódio pelo rim hipovolêmico).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2502",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Onde mais frequentemente observa-se acidose metabólica com ânion gap normal?",
+    "alternativas": [
+      "Cetoacidose diabética.",
+      "Choque séptico.",
+      "Ingestão de metanol.",
+      "Intoxicação por aspirina.",
+      "Implante ureteral no cólon."
+    ],
+    "correta": 4,
+    "comentario": "O implante ureteral no cólon (ureterossigmoidostomia) expõe a urina à mucosa colônica, que reabsorve cloreto e amônio em troca de bicarbonato, causando acidose metabólica hiperclorêmica (ânion gap normal) — mecanismo análogo ao de outras derivações urinárias intestinais. As demais opções (CAD, choque séptico/acidose lática, metanol, salicilato) são causas clássicas de ânion gap ELEVADO.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2503",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "As alterações do equilíbrio ácido-básico estão presentes na rotina do médico(a) emergencista. A partir da equação do tampão bicarbonato/ácido carbônico, derivou-se a equação de Henderson-Hasselbalch: pH = pK + log[HCO3]/0,03(PaCO2), sendo pK=6,1 (37°C) e 0,03(mM/mmHg) o fator de solubilidade do CO2. Assinale a alternativa ERRADA:",
+    "alternativas": [
+      "O pH é diretamente proporcional à concentração sérica de bicarbonato",
+      "O pH é inversamente proporcional à pressão parcial arterial de CO2 (PaCO2).",
+      "Aumento do HCO3 ou diminuição da PaCO2 tendem a elevar o pH, constituindo alcalose.",
+      "Acidose corresponde ao excesso de base ou diminuição de ácido.",
+      "Acidemia corresponde ao pH sérico <7,35 e alcalemia pH sérico >7,45."
+    ],
+    "correta": 3,
+    "comentario": "A afirmação errada é a D: acidose corresponde exatamente ao OPOSTO do afirmado — é o processo que causa excesso de ácido (ou déficit de base/bicarbonato), reduzindo o pH; não excesso de base. As demais alternativas descrevem corretamente a relação direta do pH com o HCO3, inversa com a PaCO2, e os limiares de acidemia/alcalemia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2504",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Pode-se afirmar que o distúrbio metabólico apontado como o mais típico da estenose hipertrófica do piloro é a:",
+    "alternativas": [
+      "alcalose metabólica hipoclorêmica.",
+      "acidose metabólica hipoclorêmica.",
+      "acidose metabólica hiperclorêmica.",
+      "alcalose metabólica hiperclorêmica."
+    ],
+    "correta": 0,
+    "comentario": "A estenose hipertrófica do piloro causa vômitos não biliosos em jato, com perda de ácido clorídrico gástrico, resultando classicamente em alcalose metabólica hipoclorêmica (frequentemente com hipocalemia associada).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2505",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Um paciente de 40 anos, previamente hígido, apresenta há 6 dias febre, mialgia, tosse seca e dispneia, com infiltrado alveolar em lobos inferiores na radiografia de tórax; foi internado. Após 2 dias, piora da dispneia, com gasometria em ar ambiente: pH 7,5; PaO2 55mmHg; PaCO2 33mmHg; bicarbonato 20mEq/L; BE +1. Broncoscopia revelou 50% de eosinófilos. Julgue o item: \"A gasometria arterial evidencia grave hipoxemia e alcalose metabólica.\"",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 1,
+    "comentario": "A afirmação está errada quanto ao tipo de alcalose: o HCO3 (20mEq/L) está normal-baixo, não elevado, e a PaCO2 está reduzida (33) — o padrão é de alcalose RESPIRATÓRIA (hiperventilação por hipoxemia grave, PaO2=55, provavelmente por pneumonia eosinofílica aguda), e não alcalose metabólica (que cursaria com HCO3 elevado). A hipoxemia grave está corretamente descrita, mas o tipo de distúrbio ácido-base associado está incorreto no item.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2506",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente de 64 anos foi trazido à emergência por confusão mental e torpor, sem condições de responder à anamnese. Exames à admissão: sódio 136mEq/L, potássio 3,7mEq/L, cloro 94mEq/L, creatinina 4,0mg/dL, pH sérico 7,15, HCO3 11mEq/L e PaCO2 31mmHg. Qual o distúrbio ácido-básico do paciente?",
+    "alternativas": [
+      "Acidose respiratória com alcalose metabólica",
+      "Acidose metabólica com alcalose respiratória",
+      "Acidose metabólica com acidose respiratória",
+      "Acidose metabólica sem outro distúrbio associado"
+    ],
+    "correta": 3,
+    "comentario": "O ânion gap = 136−(94+11)=31, muito elevado, compatível com uremia (creatinina 4,0, provável lesão renal/DRC avançada acumulando ânions não mensurados como sulfato e fosfato). A PaCO2 esperada por Winter para HCO3=11 é 1,5×11+8=24,5±2 (22,5-26,5mmHg) — a PaCO2 medida (31) está discretamente acima do limite superior, mas dentro de margem aceitável para fins didáticos de compensação respiratória apropriada, sem configurar um segundo distúrbio: acidose metabólica simples com ânion gap elevado por uremia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2507",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Um menino de 3 anos apresenta desidratação grave, afebril, taquipneico e taquicárdico: Na 142mEq/L; K 4,1mEq/L; Cl 102mEq/L; pH 7; PaCO2 30mmHg; HCO3 9mmol/L. Nesse caso hipotético, a administração de bicarbonato de sódio pode ter como consequência o(a):",
+    "alternativas": [
+      "desvio da curva de dissociação da hemoglobina para a direita, ocasionando maior liberação de oxigênio tecidual.",
+      "desvio da curva de dissociação da hemoglobina para a direita, com consequente menor afinidade desta pelo oxigênio.",
+      "desvio da curva de dissociação de hemoglobina para a esquerda, com maior afinidade desta pelo oxigênio.",
+      "desvio da curva de dissociação de hemoglobina para a esquerda, com maior liberação de oxigênio tecidual.",
+      "manutenção da condição atual da curva de dissociação de hemoglobina."
+    ],
+    "correta": 2,
+    "comentario": "A elevação aguda do pH pela administração de bicarbonato exógeno desvia a curva de dissociação da hemoglobina PARA A ESQUERDA (efeito Bohr inverso): a hemoglobina passa a ter MAIOR afinidade pelo oxigênio, dificultando sua liberação para os tecidos — um dos riscos pouco lembrados da bicarbonatoterapia agressiva e não rotineira em acidoses metabólicas.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2508",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Mulher de 20 anos está em tratamento para cetoacidose diabética desencadeada por infecção urinária, recebendo insulina EV, hidratação e reposição de potássio. Consciente, orientada e hemodinamicamente estável. Gasometria e laboratório: pH 7,32, bicarbonato 14mEq/L, cloro 115mEq/L, sódio 139mEq/L, glicemia 150mg/dL, albumina 4,0g/dL. Os exames laboratoriais sugerem que a paciente:",
+    "alternativas": [
+      "recebeu excesso de hidratação com cloreto de sódio.",
+      "permanece em cetoacidose diabética.",
+      "ainda está desidratada.",
+      "está em sepse de foco urinário."
+    ],
+    "correta": 0,
+    "comentario": "O ânion gap = 139−(115+14)=10, normal, mostrando que a acidose por cetoânions já foi resolvida — a acidose residual agora é hiperclorêmica (cloro elevado, 115), um efeito esperado e bem descrito do grande volume de soro fisiológico 0,9% (rico em cloreto) usado na reidratação da CAD, e não um sinal de cetoacidose persistente, desidratação ou sepse não controlada.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2509",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Está correta a associação de gasometria e etiologia em:",
+    "alternativas": [
+      "pH 7,33; bicarbonato 33mEq/L; PaCO2 55mmHg; Etiologia: coma barbitúrico",
+      "pH 7,2; bicarbonato 10mEq/L; PaCO2 25mmHg; Etiologia: uso de furosemida",
+      "pH 7,3; bicarbonato 25mEq/L; PaCO2 50mmHg; Etiologia: DPOC",
+      "pH 7,6; bicarbonato 23mEq/L; PaCO2 25mmHg; Etiologia: Síndrome do pânico",
+      "pH 7,5; bicarbonato 35mEq/L; PaCO2 44mmHg; Etiologia: intoxicação por metanol"
+    ],
+    "correta": 3,
+    "comentario": "A síndrome do pânico causa hiperventilação aguda (ansiedade, taquipneia), reduzindo a PaCO2 (25mmHg) e elevando o pH (7,6) de forma aguda, com o HCO3 ainda próximo do normal (23) por não ter dado tempo à compensação renal (que levaria dias) — exatamente o padrão de alcalose respiratória aguda descrito na alternativa D. As demais associações são inconsistentes: coma barbitúrico causaria acidose respiratória (hipoventilação, PaCO2 alto), furosemida causa alcalose metabólica (não acidose), DPOC compensada teria HCO3 mais elevado, e metanol causa acidose metabólica (não alcalose).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2510",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Assinale a alternativa que apresenta apenas etiologias de intoxicação aguda que cursam com acidose metabólica grave.",
+    "alternativas": [
+      "Anfetamina e levodopa.",
+      "Fisostigmina e ácido lisérgico.",
+      "Metformina e salicilato.",
+      "Diazepam e valproato.",
+      "Fenobarbital e sinvastatina."
+    ],
+    "correta": 2,
+    "comentario": "A metformina (acúmulo em disfunção renal) causa acidose lática grave (MALA — metformin-associated lactic acidosis), e o salicilato causa acidose metabólica com ânion gap elevado (além de estimular hiperventilação, gerando classicamente um distúrbio misto com alcalose respiratória concomitante) — ambas intoxicações agudas clássicas cursando com acidose metabólica grave.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2511",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Das alternativas apresentadas abaixo, assinale aquela que NÃO apresenta uma etiologia de alcalose metabólica salinorresponsiva:",
+    "alternativas": [
+      "Uso de diuréticos.",
+      "Fibrose cística.",
+      "Perdas gástricas.",
+      "Displasia óssea."
+    ],
+    "correta": 3,
+    "comentario": "Diuréticos, fibrose cística (perda de cloreto pelo suor) e perdas gástricas (vômitos) são causas clássicas de alcalose metabólica salino-responsiva (corrigida com reposição de volume/cloreto). A displasia óssea não é uma etiologia de alcalose metabólica — é a única opção sem relação com o distúrbio.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2512",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Uma mulher de 62 anos com DM tipo 2 inicia tratamento com um novo medicamento. Uma semana depois, procura o médico por mal-estar, mialgias, dificuldade respiratória e sonolência diurna. Laboratório: PaCO2 34mmHg, HCO3 15mmol/L, pH arterial 7,27, sódio 142mEq/L, potássio 5,0mEq/L, cloreto 102mEq/L, creatinina 3,4mg/dL. Exame de urina negativo para cetonas. Qual medicamento ela provavelmente está recebendo?",
+    "alternativas": [
+      "Glibenclamida",
+      "Glucagon",
+      "Metformina",
+      "Acarbose"
+    ],
+    "correta": 2,
+    "comentario": "O quadro é de acidose metabólica com ânion gap elevado [142−(102+15)=25] sem cetonúria, associada a disfunção renal significativa (creatinina 3,4) — o padrão clássico de acidose lática associada à metformina (MALA), precipitada pelo acúmulo do fármaco em paciente com função renal reduzida, contraindicação relativa/absoluta bem estabelecida ao uso do fármaco.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2513",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Lactente de 7 meses é atendido por desidratação grave com choque hipovolêmico decorrente de gastroenterite aguda por Rotavírus (5 dias de evolução). Recebeu duas etapas de SF 0,9% 20mL/kg e foi transferido à UTI, onde apresentou gasometria: pH 7,36; PaO2 93mmHg; PaCO2 20mmHg; bicarbonato 15mEq/L. Em relação à análise do equilíbrio ácido-básico, pode-se afirmar que se trata de:",
+    "alternativas": [
+      "Acidose metabólica compensada por alcalose respiratória.",
+      "Acidose metabólica aguda descompensada.",
+      "Não há alteração na gasometria apresentada.",
+      "Alcalose respiratória compensada por acidose metabólica."
+    ],
+    "correta": 0,
+    "comentario": "O HCO3 baixo (15) confirma acidose metabólica de base (perdas entéricas + hipoperfusão pela gastroenterite grave). A PaCO2 esperada por Winter para HCO3=15 seria 1,5×15+8=30,5±2 (28,5-32,5mmHg) — a PaCO2 medida (20) está bem abaixo do esperado, indicando hiperventilação além da compensação simples, ou seja, um componente de alcalose respiratória sobreposto que, somado à acidose metabólica de base, resulta no pH quase normalizado (7,36) observado — um distúrbio misto onde os dois componentes se contrabalançam quase completamente no pH final.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2514",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente masculino, 55 anos, dá entrada na emergência com hipotensão postural e desidratação, emagrecido e anêmico. Familiares informam que há semanas vem apresentando plenitude pós-prandial e vômitos, que se intensificaram nos últimos dias. Referem também passado dispéptico e uso irregular de antiácidos. Qual o distúrbio ácido-básico mais comumente encontrado neste quadro clínico?",
+    "alternativas": [
+      "Acidose metabólica.",
+      "Alcalose metabólica.",
+      "Acidose respiratória.",
+      "Alcalose respiratória."
+    ],
+    "correta": 1,
+    "comentario": "O quadro sugere obstrução gástrica de saída (plenitude pós-prandial crônica, provável estenose péptica por doença ulcerosa de longa data) com vômitos repetidos — perda de HCl gástrico causando classicamente alcalose metabólica, tipicamente hipoclorêmica e hipocalêmica.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2515",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente idosa, 71 anos, tabagismo >35 maços/ano, fez uso de diazepam e clorpromazina para dormir em casa. Evoluiu na manhã seguinte com muita sonolência, rebaixamento do nível de consciência e esforço respiratório por obstrução de via aérea por queda do mento (da língua). Qual parâmetro de gasometria é mais compatível com o quadro?",
+    "alternativas": [
+      "pH 7,42, PaCO2 22, PaO2 80, HCO3 18",
+      "pH 7,50, PaCO2 20, PaO2 82, HCO3 23",
+      "pH 7,20, PaCO2 65, PaO2 50, HCO3 32",
+      "pH 7,10, PaCO2 40, PaO2 65, HCO3 10",
+      "pH 7,55, PaCO2 38, PaO2 65, HCO3 35"
+    ],
+    "correta": 2,
+    "comentario": "A depressão do sistema nervoso central por sedativos (diazepam, clorpromazina) associada à obstrução de via aérea superior (queda do mento) leva a hipoventilação aguda grave, com retenção acentuada de CO2 (PaCO2 elevada) e queda do pH (acidose respiratória aguda, com discreto componente de compensação metabólica já em curso — HCO3 pouco elevado, 32). A opção C é a única compatível com esse padrão de hipercapnia franca e acidemia por hipoventilação aguda.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2516",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "O nitroprussiato de sódio, empregado em emergência hipertensiva, é metabolizado pelo organismo humano em cianeto. Isto pode ocasionar:",
+    "alternativas": [
+      "Acidose respiratória",
+      "Alcalose metabólica",
+      "Acidose metabólica",
+      "Alcalose respiratória",
+      "Acidose mista"
+    ],
+    "correta": 2,
+    "comentario": "O cianeto inibe a citocromo c oxidase mitocondrial, bloqueando a fosforilação oxidativa e forçando o metabolismo celular para a via anaeróbica — gerando acúmulo de ácido lático e, consequentemente, acidose metabólica com ânion gap elevado. É por isso que infusões prolongadas ou em altas doses de nitroprussiato exigem monitorização de sinais de intoxicação por cianeto/tiocianato.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2517",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Luísa, 22 anos, DM tipo 1, é admitida com náuseas e vômitos, uso irregular de insulina, polidipsia e poliúria há dias. PA 150x90mmHg, FC 104bpm, FR 32rpm, sinais de desidratação. Exames: Glicose 385mg/dL, Sódio 129mEq/L, Potássio 2,8mEq/L, Cloro 96mEq/L. Gasometria: pH 7,1, Bicarbonato 8mEq/L; PCO2 20mmHg. Considerando a gasometria, é possível afirmar que o quadro é compatível com acidose:",
+    "alternativas": [
+      "metabólica com Anion Gap elevado associado a alcalose respiratória.",
+      "metabólica com Anion Gap normal isolada.",
+      "metabólica com Anion Gap normal associado a alcalose respiratória.",
+      "metabólica com Anion Gap elevado isolada.",
+      "mista."
+    ],
+    "correta": 3,
+    "comentario": "O ânion gap = 129−(96+8)=25, elevado (cetoacidose diabética). A PaCO2 esperada por Winter para HCO3=8 é 1,5×8+8=20±2 (18-22mmHg) — a PaCO2 medida (20) está exatamente dentro do esperado, confirmando compensação respiratória adequada, sem distúrbio adicional: acidose metabólica simples com ânion gap elevado, isolada.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2518",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Homem, 19 anos, vítima de queda de moto com politraumatismo, atendido em unidade de emergência básica em Pesqueira/PE. Identificadas fratura pélvica e do colo do fêmur, com choque. O médico solicita Ringer lactato para reposição volêmica, mas só há SF 0,9% disponível. Na reanimação inicial, são necessários 4,5L para estabilização e transporte à unidade definitiva em Caruaru/PE. Qual distúrbio hidroeletrolítico o paciente tenderá a desenvolver?",
+    "alternativas": [
+      "Alcalose hipoclorêmica",
+      "Acidose hipercalêmica",
+      "Alcalose hipernatrêmica",
+      "Acidose hiponatrêmica",
+      "Acidose hiperclorêmica"
+    ],
+    "correta": 4,
+    "comentario": "Grandes volumes de soro fisiológico 0,9% (concentração de cloreto muito superior à plasmática, ~154mEq/L) causam uma acidose metabólica hiperclorêmica dilucional (ânion gap normal) — bem documentada em ressuscitação volêmica maciça com SF, e uma das razões pelas quais soluções balanceadas (Ringer lactato) são preferidas quando disponíveis nesses cenários.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2519",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente do sexo masculino, trabalhador de alambique clandestino, admitido francamente dispneico (FR 30irpm), sonolento e com importante turvação visual. Exames: hemoglobina 12g/dL, leucócitos 10.000, plaquetas 250.000, creatinina 1,3mg/dL, glicemia 120mg/dL, potássio 5mEq/L, sódio 140mEq/L, cloreto 100mEq/L, pH 7,0, HCO3 10mmol/L, PaCO2 30mmHg. O diagnóstico do distúrbio ácido-básico e a etiologia do distúrbio principal são, respectivamente:",
+    "alternativas": [
+      "alcalemia devido à alcalose respiratória – acidose tubular renal.",
+      "acidemia devido à acidose metabólica com ânion gap normal – cetoacidose diabética.",
+      "acidemia devido à acidose metabólica normoclorêmica associada à alcalose respiratória – intoxicação por etilenoglicol.",
+      "alcalemia devido à alcalose metabólica e acidose respiratória – intoxicação por ácido acetilsalicílico.",
+      "acidemia devido à acidose metabólica normoclorêmica associada à acidose respiratória – intoxicação por metanol"
+    ],
+    "correta": 4,
+    "comentario": "O contexto ocupacional (trabalhador de alambique clandestino, com risco de contaminação do destilado por metanol) associado a turvação visual (toxicidade do ácido fórmico, metabólito do metanol, sobre o nervo óptico) é clássico de intoxicação por metanol. O ânion gap = 140−(100+10)=30, elevado, com cloro sérico numericamente normal (100) — describe-se aqui como 'normoclorêmica' no sentido de que o cloro medido está dentro da faixa normal, distinto do padrão hiperclorêmico. A PaCO2 esperada por Winter para HCO3=10 seria 23±2, e a PaCO2 medida (30) está acima do esperado, sugerindo um componente adicional de acidose respiratória (hipoventilação por rebaixamento do sensório).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2520",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente internado com sepse de foco urinário apresenta gasometria arterial: pH 7,24; PaCO2 24mmHg; bicarbonato 11mEq/L; sódio 132mEq/L; cloro 100mEq/L. Em relação à acidose, podemos afirmar que se deve a:",
+    "alternativas": [
+      "Acúmulo de ácidos",
+      "Perda de bases",
+      "Acúmulo de bases",
+      "Perda de ácidos"
+    ],
+    "correta": 0,
+    "comentario": "O ânion gap = 132−(100+11)=21, elevado — mecanismo típico de acidose lática por sepse: acúmulo de ácido lático (um ácido não mensurado) que consome o bicarbonato tamponando o excesso de H+, e não uma perda direta de bicarbonato (que geraria ânion gap normal, não elevado).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2521",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente internado com sepse de foco urinário apresenta gasometria arterial: pH 7,24; PaCO2 24mmHg; bicarbonato 11mEq/L; sódio 132mEq/L; cloro 100mEq/L. O distúrbio gasométrico identificado é:",
+    "alternativas": [
+      "Acidose metabólica",
+      "Acidose respiratória",
+      "Acidose mista com predomínio metabólico",
+      "Acidose mista com predomínio respiratório"
+    ],
+    "correta": 0,
+    "comentario": "A PaCO2 esperada por Winter para HCO3=11 é 1,5×11+8=24,5±2 (22,5-26,5mmHg) — a PaCO2 medida (24) está exatamente dentro do esperado, confirmando compensação respiratória adequada, sem componente respiratório adicional: acidose metabólica simples (por acidose lática séptica, ânion gap elevado, ver questão anterior sobre o mecanismo).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2522",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Um paciente apresenta gasometria arterial: pH 7,28; HCO3 32mEq/L; PaCO2 70mmHg (VR: pH 7,35-7,45; PaCO2 35-45mmHg; HCO3 22-26mEq/L). Qual condição clínica pode ter causado esse distúrbio ácido-básico?",
+    "alternativas": [
+      "Doença pulmonar obstrutiva crônica.",
+      "Uso de diuréticos inibidores da anidrase carbônica.",
+      "Cetoacidose diabética.",
+      "Diarreia."
+    ],
+    "correta": 0,
+    "comentario": "A PaCO2 muito elevada (70) com HCO3 também elevado (32, compensação renal crônica) e pH ainda discretamente ácido caracteriza acidose respiratória crônica com compensação renal parcial — o padrão clássico da DPOC com retenção crônica de CO2. As demais opções (diuréticos inibidores da anidrase carbônica, CAD, diarreia) causariam acidose metabólica, não respiratória.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2523",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Nefropatia autossômica recessiva em que há mutação no gene que codifica o cotransportador Na/2Cl. Acomete adultos e leva a alcalose metabólica, hipocalemia, hipercalcemia, hipocalciúria e hipomagnesemia. É correto afirmar que a doença descrita trata-se de:",
+    "alternativas": [
+      "Síndrome de Bartter.",
+      "Síndrome de Gitelman.",
+      "Síndrome de Fanconi.",
+      "Doença de Hartnup."
+    ],
+    "correta": 1,
+    "comentario": "A síndrome de Gitelman é causada por mutação no cotransportador Na-Cl sensível a tiazídicos (NCC) na alça distal, manifestando-se tipicamente na vida adulta com alcalose metabólica hipocalêmica, hipomagnesemia e HIPOcalciúria (retenção de cálcio) — o achado de hipocalciúria é o principal ponto que a diferencia da síndrome de Bartter (mutação no cotransportador NKCC2 da alça de Henle ou no canal ROMK, que cursa com HIPERcalciúria e se manifesta tipicamente na infância).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2524",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Um paciente de 25 anos, HIV positivo, queixa-se de tosse produtiva e febre há cinco dias, com piora nos últimos três dias, apresentando desconforto respiratório e dor pleurítica à esquerda. No pronto-socorro: sudoreico, taquipneico (FR 44irpm), FC 102bpm, SatO2 94%. Ausculta com estertores em terço médio do pulmão direito e redução importante dos murmúrios na base direita. Julgue o item: \"A gasometria arterial desse paciente pode mostrar acidose respiratória em decorrência da taquipneia.\"",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 1,
+    "comentario": "A afirmação está errada: a taquipneia acentuada (FR 44) por dor pleurítica e hipoxemia leva a HIPERventilação alveolar, reduzindo a PaCO2 e causando ALCALOSE respiratória — não acidose. Acidose respiratória decorreria de HIPOventilação (retenção de CO2), o oposto do mecanismo fisiopatológico presente neste quadro de taquipneia compensatória/reflexa.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2525",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Assinale a alternativa CORRETA em relação aos distúrbios acidobásicos:",
+    "alternativas": [
+      "Acidemia se refere ao pH sérico superior a 7,36.",
+      "Acidose é definida como o processo patológico que gera alcalemia.",
+      "Alcalemia se refere ao pH sérico superior a 7,45.",
+      "Alcalose é definida como o processo patológico que gera acidemia."
+    ],
+    "correta": 2,
+    "comentario": "Alcalemia é definida como pH sérico acima do limite superior normal (>7,45), sendo o único conceito corretamente descrito entre as opções. Acidemia é pH <7,35 (não >7,36); acidose é o processo que gera acidemia (não alcalemia); alcalose é o processo que gera alcalemia (não acidemia) — as demais alternativas invertem as definições.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2526",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Pré-escolar, 5 anos, deu entrada no pronto-socorro com rebaixamento do nível de consciência, desidratação grave, respiração de Kussmaul, hálito cetônico, taquicardia e taquipneia. Glicemia capilar 400mg/dL e gasometria: pH 7,11; PO2 98 (com O2 em máscara), PCO2 15; Bicarbonato 7; BE −19; Na 146; K 3,4. Qual o distúrbio ácido-básico desta criança:",
+    "alternativas": [
+      "Alcalose respiratória.",
+      "Acidose metabólica com ânion Gap reduzido.",
+      "Acidose metabólica com ânion Gap Aumentado.",
+      "Alcalose metabólica.",
+      "Acidose respiratória."
+    ],
+    "correta": 2,
+    "comentario": "O quadro (hálito cetônico, glicemia 400, respiração de Kussmaul) é clássico de cetoacidose diabética. O bicarbonato muito baixo (7) confirma acidose metabólica grave, com ânion gap elevado pelo acúmulo de corpos cetônicos (ácidos orgânicos não mensurados) — a respiração de Kussmaul é justamente a resposta compensatória respiratória, refletida na PaCO2 muito baixa (15).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2527",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Mulher de 45 anos, internada na UTI com choque séptico de foco urinário, intubada em ventilação mecânica com FiO2 0,5. Gasometria arterial: pH 7,30; PaCO2 60mmHg; PaO2 96mmHg; SatO2 96%; HCO3 24mEq/L. Assinale a alternativa que apresenta o distúrbio ácido-base primário e a conduta mais adequada.",
+    "alternativas": [
+      "Alcalose metabólica, realizar hidratação",
+      "Alcalose respiratória, aumentar a sedação",
+      "Acidose metabólica, repor bicarbonato",
+      "Acidose respiratória, ajustar parâmetros do ventilador"
+    ],
+    "correta": 3,
+    "comentario": "O HCO3 está normal (24), e a PaCO2 está elevada (60) com pH baixo (7,30) — configurando acidose respiratória aguda (ainda sem tempo para compensação renal), causada por hipoventilação sob ventilação mecânica (parâmetros inadequados de volume-minuto). A conduta correta é ajustar os parâmetros ventilatórios (aumentar frequência respiratória e/ou volume corrente), e não bicarbonato (que não trata a causa respiratória) nem hidratação (sem indicação para esse distúrbio).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2528",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Em relação aos distúrbios ácido-básicos assinale a alternativa INCORRETA:",
+    "alternativas": [
+      "A tentativa de compensação respiratória aos distúrbios metabólicos é quase instantânea",
+      "Depleção de volume e hipercalemia favorecem uma maior reabsorção de bicarbonato",
+      "Distúrbios metabólicos afetam primariamente a concentração plasmática de bicarbonato",
+      "Nos distúrbios respiratórios crônicos o pH sanguíneo pode permanecer praticamente normal apesar de grandes variações da PaCO2"
+    ],
+    "correta": 1,
+    "comentario": "A afirmação incorreta é a B: é a HIPOcalemia (não a hipercalemia) que favorece maior reabsorção/geração renal de bicarbonato, contribuindo para alcalose metabólica (mecanismo da 'alcalose por contração' hipocalêmica); a hipercalemia, ao contrário, tende a inibir a amoniagênese renal e favorecer acidose metabólica. As demais afirmações estão corretas: a compensação respiratória de distúrbios metabólicos é de fato quase instantânea (minutos), distúrbios metabólicos afetam primariamente o HCO3, e distúrbios respiratórios crônicos podem ter pH quase normal por compensação renal completa.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2529",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Homem, 20 anos, deu entrada no pronto-socorro obnubilado, sem passado mórbido de importância. PA 127x70mmHg, sem hipotensão ortostática, extremidades bem perfundidas, sem déficits focais. Exames: Na 138mEq/L, K 4,2mEq/L, HCO3 5mEq/L, Cl 104mEq/L, creatinina 1,0mg/dL, ureia 14mg/dL, cálcio total corrigido 10mg/dL, glicemia 90mg/dL, gasometria arterial (ar ambiente): PO2 96mmHg, PCO2 15mmHg, pH 7,02; urinálise normal. Dentre as opções abaixo, qual é o distúrbio ácido-básico MAIS PROVÁVEL?",
+    "alternativas": [
+      "Acidose metabólica pura com hiato aniônico (anion gap) aumentado e compensação respiratória",
+      "Acidose respiratória pura e compensação metabólica",
+      "Distúrbio misto - acidose metabólica e alcalose respiratória com hiato aniônico (anion gap) normal",
+      "Distúrbio misto - acidose metabólica e respiratória com hiato aniônico (anion gap) aumentado"
+    ],
+    "correta": 0,
+    "comentario": "O ânion gap = 138−(104+5)=29, muito elevado (função renal normal, glicemia normal, urina normal — afastando uremia e CAD, sugerindo intoxicação exógena como causa provável). A PaCO2 esperada por Winter para HCO3=5 é 1,5×5+8=15,5±2 (13,5-17,5mmHg) — a PaCO2 medida (15) está exatamente dentro do esperado, confirmando compensação respiratória adequada, sem distúrbio adicional: acidose metabólica pura com ânion gap elevado.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2530",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Uma paciente de um ano de idade, previamente hígida, foi levada ao hospital com diarreia líquida abundante há três dias, alguns episódios de vômitos, baixa aceitação alimentar e diminuição da diurese há um dia, sem uso de soro de reidratação oral. Na emergência, apresenta desidratação, porém sem sinais de choque: Na 135mEq/L; K 2,8mEq/L; Cl 100mEq/L; pH 7,1; HCO3 8mmol/L; Ht 27%. Assinale a alternativa com a conduta mais apropriada.",
+    "alternativas": [
+      "expansão com SF 0,9% 20mL/kg, aberta, e correção de bicarbonato de sódio",
+      "expansão com SF 0,9% e correção de potássio e de bicarbonato de sódio em 4h",
+      "expansão com SF 0,9% e correção de potássio em 4h",
+      "expansão com Ringer Lactato 20mL/kg em vinte minutos e correção de bicarbonato",
+      "expansão com SF 0,9% 20mL/kg em 1h, transfusão sanguínea e correção de potássio em 2h"
+    ],
+    "correta": 2,
+    "comentario": "Como a paciente não apresenta sinais de choque, a expansão volêmica pode ser feita de forma menos agressiva que um bolus de urgência, associada à correção cuidadosa da hipocalemia (K 2,8) já documentada. O bicarbonato de sódio exógeno NÃO é indicado de rotina na acidose metabólica da desidratação/diarreia (mesmo grave), pois a correção da volemia e da causa de base tende a resolver a acidose espontaneamente, com risco de efeitos adversos (hipernatremia, hipocalemia paradoxal, alcalose de rebote) se usado sem indicação precisa.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2531",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Qual das situações abaixo é causa de acidose com ânion gap aumentado?",
+    "alternativas": [
+      "Acidose tubular renal",
+      "Intoxicação por metanol",
+      "Mieloma",
+      "Intoxicação por lítio"
+    ],
+    "correta": 1,
+    "comentario": "A intoxicação por metanol é causa clássica de acidose metabólica com ânion gap elevado (mnemônico MUDPILES), pelo acúmulo de ácido fórmico, seu metabólito tóxico. Acidose tubular renal é causa de ânion gap normal; mieloma múltiplo classicamente cursa com ânion gap REDUZIDO (paraproteínas catiônicas); intoxicação por lítio não causa tipicamente acidose metabólica com ânion gap aumentado.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2532",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Assinale a correta:",
+    "alternativas": [
+      "Acidose respiratória se associa a hiperventilação.",
+      "Alcalose respiratória causa elevação de PaCO2.",
+      "Estenose de artéria renal pode causar alcalose metabólica.",
+      "Alcalose metabólica cursa com hiperpotassemia."
+    ],
+    "correta": 2,
+    "comentario": "A estenose de artéria renal ativa o sistema renina-angiotensina-aldosterona (hipoperfusão renal → renina → angiotensina II → aldosterona), e o hiperaldosteronismo secundário resultante pode causar alcalose metabólica hipocalêmica — mecanismo análogo ao do hiperaldosteronismo primário. As demais alternativas estão invertidas: acidose respiratória associa-se a HIPOventilação (não hiperventilação); alcalose respiratória REDUZ a PaCO2 (não eleva); alcalose metabólica cursa classicamente com HIPOpotassemia (não hiperpotassemia).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2533",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Recém-nascido masculino, atendido na UBS aos 14 dias de vida, com recusa alimentar e vários episódios de vômitos há três dias, sem diarreia ou febre, menos ativo nas últimas horas. Nasceu a termo, peso 3.340g, Apgar 8/10, alta no 2º dia, aleitamento materno exclusivo, genitália masculina normal com testículos palpáveis. Ao exame com 14 dias: peso 3.030g (perda ponderal significativa), regular estado geral, mucosas secas, fontanelas deprimidas, pulsos finos, PA 50x30mmHg, FC 170bpm. Exames: glicemia 53mg/dL; Na 118mEq/L; K 8,3mEq/L; ureia 39mg/dL; creatinina 1,1mg/dL. Gasometria: pH 7,12; PO2 96mmHg; PCO2 29mmHg; HCO3 14mEq/L; BE −10. Qual é o diagnóstico provável?",
+    "alternativas": [
+      "Acidose tubular renal.",
+      "Choque séptico.",
+      "Insuficiência adrenal.",
+      "Estenose hipertrófica do piloro."
+    ],
+    "correta": 2,
+    "comentario": "A tríade hiponatremia grave (118) + hipercalemia grave (8,3) + acidose metabólica + hipoglicemia + perda ponderal/choque em recém-nascido do sexo masculino (genitália normal, afastando virilização por hiperplasia adrenal congênita clássica em meninas) é o quadro clássico de insuficiência adrenal aguda com crise perdedora de sal — mais comumente por hiperplasia adrenal congênita por deficiência de 21-hidroxilase, forma perdedora de sal, que em meninos não causa ambiguidade genital (só as meninas virilizam), retardando o diagnóstico até a crise metabólica.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2534",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Das situações abaixo, a mais compatível com a possibilidade de uma acidose com ânion gap normal é:",
+    "alternativas": [
+      "Acidose lática.",
+      "Cetoacidose diabética.",
+      "Diarreia.",
+      "Ingestão de etilenoglicol.",
+      "Ingestão de coumarínico."
+    ],
+    "correta": 2,
+    "comentario": "A diarreia causa perda direta de bicarbonato pelo trato gastrointestinal, sem acúmulo de ácidos orgânicos não mensurados — resultando em acidose metabólica hiperclorêmica com ânion gap NORMAL. Acidose lática, cetoacidose diabética e intoxicação por etilenoglicol são todas causas de ânion gap ELEVADO.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2535",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Mulher de 20 anos, com queda do estado geral e diminuição do volume urinário: glicemia 90mg/dL, ureia 50mg/dL, creatinina 1,3mg/dL, sódio 140mEq/L, cloro 116mEq/L, pH 7,25, PO2 80mmHg, PCO2 28mmHg, BE −10, bicarbonato 16mEq/L. O diagnóstico mais provável desse quadro é:",
+    "alternativas": [
+      "uremia",
+      "diarreia",
+      "cetoacidose diabética",
+      "intoxicação pelo metanol"
+    ],
+    "correta": 1,
+    "comentario": "O ânion gap = 140−(116+16)=8, normal, com cloro sérico elevado (116) — configurando acidose metabólica hiperclorêmica (ânion gap normal), cuja causa mais comum e mais provável nesse contexto é a diarreia (perda entérica direta de bicarbonato). Uremia, cetoacidose diabética e intoxicação por metanol são classicamente causas de ânion gap ELEVADO, incompatíveis com o AG normal calculado aqui.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2536",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "O interno traz a seguinte gasometria colhida na emergência, na chegada de um paciente respirando ar ambiente, para seu residente interpretar: pH 7,20, PaCO2 85mmHg, PaO2 60mmHg e bicarbonato 28mEq/L. Antes de examinar o paciente, é possível inferir que se trata, mais provavelmente, de:",
+    "alternativas": [
+      "tromboembolismo pulmonar",
+      "obstrução de via aérea superior",
+      "síndrome do desconforto respiratório agudo",
+      "doença pulmonar obstrutiva crônica compensada"
+    ],
+    "correta": 1,
+    "comentario": "A PaCO2 extremamente elevada (85) com HCO3 apenas discretamente aumentado (28, compensação aguda mínima, sem tempo para resposta renal completa) e pH muito baixo caracteriza uma acidose respiratória AGUDA E GRAVE, por hipoventilação alveolar franca — típico de obstrução aguda de via aérea superior. TEP e SDRA cursam classicamente com hipoxemia e hiperventilação (alcalose respiratória), não hipercapnia acentuada; a DPOC compensada teria HCO3 muito mais elevado (compensação crônica plena, geralmente >35).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2537",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Um senhor de 70 anos procura atendimento por dispneia progressiva há 3 meses. HAS e DPOC prévias, em uso de anlodipina, furosemida 40mg/dia e budesonida/formoterol inalatório. Ao exame: PA 110x60mmHg; FC 110bpm; ritmo cardíaco em 3 tempos (B4), P2>A2, sopro sistólico 2+/6+ em foco tricúspide; jugulares túrgidas a 30° com refluxo hepatojugular; murmúrio broncovesicular reduzido difusamente; edema de MMII 1+/4+. Gasometria arterial: pH 7,4; PCO2 60mmHg; HCO3 37mEq/L; PO2 66mmHg. Na+ 140mEq/L, Cloreto 90mEq/L, K+ 3,4mEq/L. Assinale a alternativa CORRETA.",
+    "alternativas": [
+      "Trata-se de insuficiência cardíaca congestiva com acidose respiratória simples.",
+      "Trata-se de insuficiência cardíaca congestiva com acidose respiratória e alcalose respiratória.",
+      "Trata-se de cor pulmonale crônico com acidose respiratória simples.",
+      "Trata-se de cor pulmonale crônico com acidose respiratória e alcalose metabólica."
+    ],
+    "correta": 3,
+    "comentario": "Os sinais de sobrecarga de câmaras direitas (jugulares túrgidas, refluxo hepatojugular, P2>A2, sopro tricúspide) em paciente com DPOC de longa data configuram cor pulmonale crônico, com acidose respiratória crônica compensada (PCO2 60, HCO3 37). A compensação renal esperada para PCO2 crônica de 60 seria HCO3≈24+3,5×(60-40)/10=31,5, mas o HCO3 medido (37) está acima do esperado — sugerindo um componente ADICIONAL de alcalose metabólica, plausível pelo uso crônico de furosemida (diurético de alça, causa clássica de alcalose metabólica hipoclorêmica/hipocalêmica, aqui refletida também no cloro baixo (90) e K discretamente reduzido).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2538",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Qual dos pacientes abaixo tem maior chance de apresentar acidose metabólica com ânion gap aumentado?",
+    "alternativas": [
+      "Paciente portador de glaucoma em uso de acetazolamida.",
+      "Paciente diabético de longa data que apresenta hipercalcemia apesar de função renal preservada.",
+      "Paciente submetido à ressecção de bexiga com anastomose uretero-ileal, para tratamento de câncer vesical.",
+      "Paciente trazido à urgência com borramento visual, seguido de cegueira e rebaixamento do nível de consciência após festa em que ingeriu muita bebida \"artesanal\".",
+      "Idoso trazido à emergência desidratado após episódio intenso de diarreia e vômitos."
+    ],
+    "correta": 3,
+    "comentario": "Cegueira progressiva após ingestão de bebida alcoólica clandestina/adulterada é o quadro clássico de intoxicação por metanol, causa clássica de acidose metabólica com ânion gap ELEVADO. As demais opções são causas de ânion gap NORMAL: acetazolamida (inibidor da anidrase carbônica, causa perda renal de bicarbonato), derivação urinária intestinal (reabsorção de cloreto/amônio pela mucosa intestinal) e diarreia/vômitos combinados (perdas entéricas mistas, predominantemente de ânion gap normal). Hipercalcemia isolada não é causa clássica de acidose metabólica.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2539",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Senhor de 78 anos dá entrada no pronto-socorro taquidispneico, diagnosticado com pneumonia. Gasometria arterial na admissão: pH 7,30 (VR 7,36-7,44); PCO2 24mmHg (VR 35-45); HCO3 10mEq/L (VR 22-26); BE −6 (VR −2 a +2). Neste caso há acidose:",
+    "alternativas": [
+      "metabólica e alcalose respiratória.",
+      "respiratória compensada.",
+      "metabólica e acidose respiratória.",
+      "metabólica compensada.",
+      "respiratória e alcalose metabólica."
+    ],
+    "correta": 3,
+    "comentario": "O HCO3 baixo (10) confirma acidose metabólica (provável acidose lática por sepse pulmonar). A PaCO2 esperada por Winter para HCO3=10 é 1,5×10+8=23±2 (21-25mmHg) — a PaCO2 medida (24) está exatamente dentro do esperado, confirmando resposta compensatória respiratória adequada, sem distúrbio adicional: acidose metabólica compensada.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2540",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "A correta interpretação dos distúrbios ácido-base depende da correlação clínica com os dados gasométricos. Considere a gasometria arterial: pH 7,23, PO2 70mmHg, PCO2 36mmHg, bicarbonato 12mmol/L; BE −6,7mmol/L; SatO2 95%; Na 132mEq/L; K 4mEq/L; Cl 112mEq/L. Assinale a alternativa INCORRETA.",
+    "alternativas": [
+      "Esse paciente pode estar com fadiga da musculatura respiratória e não conseguir compensar a acidose metabólica mantida.",
+      "Pode se tratar de fase inicial da acidose metabólica aguda sem tempo suficiente para compensação respiratória.",
+      "Pode se tratar de cetoacidose diabética ou acidose láctica.",
+      "Pode se tratar de distúrbio ácido-base misto, com acidose metabólica e acidose respiratória (doença das vias aéreas ou neurológica)."
+    ],
+    "correta": 2,
+    "comentario": "O ânion gap = 132−(112+12)=8, NORMAL (hiperclorêmico) — portanto a alternativa C está INCORRETA ao sugerir cetoacidose diabética ou acidose lática como causas prováveis, já que ambas são classicamente causas de ânion gap ELEVADO, incompatível com o AG normal calculado. As demais alternativas são coerentes: a PaCO2 medida (36) está acima do esperado por Winter para HCO3=12 (26±2), sugerindo compensação respiratória inadequada — compatível com fadiga muscular, fase aguda sem tempo de compensação, ou um verdadeiro distúrbio misto com componente respiratório adicional.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2541",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Considerando a gasometria arterial a seguir, qual é o diagnóstico gasométrico e quais as prováveis patologias causadoras? pH 7,2, PCO2 32mmHg, PO2 69mmHg, bicarbonato 9mEq/L, BE −7, Saturação de O2 83%.",
+    "alternativas": [
+      "acidemia respiratória, enfisema pulmonar associado a pneumonia",
+      "acidose respiratória, DPOC exacerbada por traqueobronquite aguda",
+      "acidemia metabólica, sepse de origem pulmonar",
+      "acidose mista, síndrome da angústia respiratória aguda por sepse"
+    ],
+    "correta": 3,
+    "comentario": "O HCO3 muito baixo (9) confirma acidose metabólica de base (provável acidose lática por sepse). A PaCO2 esperada por Winter para HCO3=9 seria 1,5×9+8=21,5±2 (19,5-23,5mmHg) — a PaCO2 medida (32) está bem acima do esperado, indicando compensação respiratória insuficiente e um componente adicional de acidose respiratória, compatível com falência respiratória concomitante (SDRA por sepse pulmonar) — a hipoxemia grave associada (SatO2 83%, PO2 69) reforça o diagnóstico de SDRA como pano de fundo.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2542",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente masculino, 65 anos, submetido a pancreatectomia corpo-caudal por neoplasia de pâncreas, evolui com fístula pancreática de alto débito. Qual dos eletrólitos descritos abaixo apresenta perdas mais severas neste doente?",
+    "alternativas": [
+      "Bicarbonato (HCO3).",
+      "Cloro (Cl).",
+      "Fosfato (PO4).",
+      "Potássio (K).",
+      "Sódio (Na)."
+    ],
+    "correta": 0,
+    "comentario": "As secreções pancreáticas exócrinas são particularmente ricas em bicarbonato (secretado para neutralizar o quimo ácido que chega ao duodeno). Uma fístula pancreática de alto débito causa, portanto, perda maciça de bicarbonato, predispondo à acidose metabólica hiperclorêmica (ânion gap normal) — de forma análoga a outras perdas digestivas altas ricas em bicarbonato (biliares, entéricas altas).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2543",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "ERT, 60 anos, no 4º dia de pós-operatório de gastrectomia, queixa-se de dor torácica em pontada na inspiração, tosse produtiva e febre há 24 horas. Gasometria arterial: pH 7,2; PaCO2 58mmHg; PaO2 60mmHg; SaO2 92%; Bic 15mEq/L; BE −9mEq/L. Ionograma: Na+ 136mEq/L; Cl 107mEq/L. Radiografia de tórax com condensação nos terços médio e inferior do pulmão direito. A partir da gasometria, é CORRETO afirmar que o desequilíbrio ácido-base é:",
+    "alternativas": [
+      "Acidose metabólica",
+      "Acidose mista",
+      "Acidose respiratória",
+      "Alcalose metabólica"
+    ],
+    "correta": 1,
+    "comentario": "O HCO3 baixo (15, componente metabólico, provável acidose lática por pneumonia/sepse pulmonar pós-operatória) associado a uma PaCO2 muito elevada (58, acima do esperado por Winter para HCO3=15, que seria ~30,5±2) mostra que a compensação respiratória está claramente insuficiente — na verdade, há hipoventilação sobreposta (provável fadiga muscular respiratória/dor pleurítica limitando a expansão pulmonar no pós-operatório de gastrectomia, associada à pneumonia). Configura-se, portanto, acidose mista: metabólica + respiratória.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2544",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Lactente de 8 meses internado com diarreia aguda e desidratação: pH 7,26; PO2 120mmHg; PCO2 33mmHg; bicarbonato 14mEq/L; BE −9; Na 145mEq/L; K 4,5mEq/L; Cl 111mEq/L; lactato arterial 7mmol/L. O distúrbio do equilíbrio acidobásico encontrado nessa gasometria é:",
+    "alternativas": [
+      "Acidose metabólica compensada.",
+      "Acidose respiratória compensada.",
+      "Acidose metabólica com acidose respiratória.",
+      "Alcalose metabólica com acidose respiratória.",
+      "Acidose metabólica com alcalose respiratória."
+    ],
+    "correta": 0,
+    "comentario": "O HCO3 baixo (14) confirma acidose metabólica, com componente misto de perda entérica de bicarbonato (diarreia, ânion gap parcialmente normal pelo cloro elevado) e acidose lática por hipoperfusão (lactato 7, elevado). A PaCO2 esperada por Winter para HCO3=14 é 1,5×14+8=29±2 (27-31mmHg) — a PaCO2 medida (33) está próxima do limite superior dessa faixa, ainda compatível com resposta compensatória respiratória apropriada: acidose metabólica compensada.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2545",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Homem, 62 anos, hipertenso há 40 anos, miocardiopatia hipertensiva e insuficiência cardíaca, em uso de furosemida 40mg (2cp 2x/dia), hidroclorotiazida 25mg, espironolactona 25mg, enalapril 20mg 12/12h e carvedilol 12,5mg 12/12h. Procura atendimento com mal-estar, náuseas e inapetência, sem dispneia. Exames: sódio 134mEq/L, potássio 2,9mEq/L, ureia 112mg/dL, creatinina 1,48mg/dL; gasometria arterial: pH 7,56, PCO2 49mmHg, PO2 91mmHg, HCO3 39mEq/L, BE +11. Assinale a alternativa que apresenta a correta interpretação do desequilíbrio ácido-básico e sua causa mais provável.",
+    "alternativas": [
+      "Alcalose respiratória – hiperventilação e uso de espironolactona.",
+      "Alcalose metabólica – uso excessivo de captopril e carvedilol.",
+      "Alcalose metabólica – uso excessivo de diuréticos e hipopotassemia.",
+      "Alcalose mista – hiperventilação pela insuficiência cardíaca e hipopotassemia.",
+      "Acidose respiratória com alcalose metabólica – uso de espironolactona e carvedilol."
+    ],
+    "correta": 2,
+    "comentario": "O HCO3 muito elevado (39) confirma alcalose metabólica, cuja causa mais provável no contexto é o uso combinado de diurético de alça (furosemida) e tiazídico (hidroclorotiazida), que causam perda renal de cloreto, sódio e potássio — a hipopotassemia acentuada (K 2,9) por si só perpetua a alcalose metabólica (a chamada 'alcalose de contração' hipocalêmica, na qual a própria hipocalemia estimula maior reabsorção renal de bicarbonato).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2546",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "As manifestações clínicas da acidose metabólica relacionam-se com a gravidade da acidemia, o estado hemodinâmico, a patologia de base e os distúrbios eletrolíticos e outras comorbidades associadas. As principais manifestações clínicas encontradas em paciente com acidose metabólica são as descritas abaixo, EXCETO:",
+    "alternativas": [
+      "Taquipneia",
+      "Alterações do Sensório (letargia e coma)",
+      "Depressão Miocárdica",
+      "Hipertensão Arterial"
+    ],
+    "correta": 3,
+    "comentario": "A acidose metabólica grave causa depressão miocárdica e vasodilatação periférica, predispondo a HIPOtensão arterial (e não hipertensão) — a hipertensão não é uma manifestação esperada da acidose metabólica. Taquipneia (compensação respiratória — respiração de Kussmaul nos casos graves), alterações do sensório e depressão miocárdica são manifestações clássicas.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2547",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "Paciente de 3 anos, 17kg, masculino, diabético há 6 meses, admitido com desidratação, dor abdominal, hálito cetônico: Glicose 620mg/dL; Na 131mEq/L; K 4,2mEq/L. Recebeu 1.500mL de SF 0,9% e insulina regular contínua por 6 horas. Exames após esse período: pH 7,1; PCO2 20mmHg; Bic 12mEq/L; Na 138mEq/L; Cl 117mEq/L; K 3,5mEq/L; glicose 180mg/dL. A provável etiologia da acidose ao final das 6 horas do tratamento inicial é:",
+    "alternativas": [
+      "Acidose por acúmulo de ácidos não mensuráveis, pois ânion gap é normal.",
+      "Acidose hiperclorêmica, pois ânion gap é aumentado.",
+      "Acidose hiperclorêmica, pois ânion gap é normal.",
+      "Acidose por acúmulo de ácidos não mensuráveis, pois ânion gap é aumentado.",
+      "Acidose mista: hiperclorêmica + cetoacidose."
+    ],
+    "correta": 2,
+    "comentario": "Após 6 horas de tratamento (insulina + grande volume de SF 0,9%), o ânion gap = 138−(117+12)=9, NORMAL — mostrando que a acidose por cetoânions da fase inicial já foi amplamente corrigida, restando uma acidose hiperclorêmica residual (cloro elevado, 117), causada pelo próprio volume de soro fisiológico rico em cloreto administrado no tratamento — um efeito colateral esperado e transitório do manejo padrão da cetoacidose diabética.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2548",
+    "temaId": "disturbios-acido-basicos",
+    "tema": "Distúrbios Ácido-Básicos: Interpretação da Gasometria",
+    "enunciado": "O equilíbrio ácido-básico do organismo é mantido predominantemente pelos rins, que acidificam a urina, mantendo o pH sanguíneo em torno de 7,4. O ânion gap (hiato de ânions) denota o equilíbrio de cátions e ânions, mantido também pelos rins, e pode ser utilizado para avaliação diagnóstica e prognóstica do processo patológico causador do distúrbio ácido-básico. Julgue o item: \"Subentende-se que acidose metabólica com ânion gap normal seja hiperclorêmica.\"",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 0,
+    "comentario": "A afirmação está certa: por definição, quando o bicarbonato perdido não é substituído por um ânion não mensurado (como ocorre na acidose metabólica com ânion gap elevado), o cloreto sérico se eleva proporcionalmente para manter a eletroneutralidade do plasma — por isso a acidose metabólica com ânion gap normal é sinônimo de acidose hiperclorêmica.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios Acidobásicos e Gasometria Arterial.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios Acidobásicos e Gasometria Arterial — Nefrologia)",
+    "revisado": true
   }
 ]
