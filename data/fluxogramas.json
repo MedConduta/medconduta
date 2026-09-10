@@ -8190,5 +8190,128 @@
         "texto": "Ao nascimento: imunoprofilaxia do recém-nascido com vacina + imunoglobulina anti-hepatite B (HBIG) nas primeiras 12-24h de vida"
       }
     ]
+  },
+  {
+    "id": "flow-sii-diagnostico",
+    "temaId": "sindrome-intestino-irritavel",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Dor abdominal + alteração do hábito intestinal — abordagem diagnóstica da SII",
+    "revisado": true,
+    "fonte": "Critérios de Roma IV; ACG Clinical Guideline: Management of Irritable Bowel Syndrome",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor abdominal recorrente + alteração do hábito intestinal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de alarme (perda de peso, sangramento, anemia, início após 50 anos, história familiar de câncer colorretal/DII)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigação complementar direcionada (colonoscopia) antes de firmar diagnóstico funcional"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Aplicar critérios de Roma IV"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Critérios de Roma IV preenchidos?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Diagnóstico POSITIVO de SII — classificar subtipo pela escala de Bristol (SII-D, SII-C ou SII-M)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Não é necessária investigação extensa adicional em paciente jovem sem sinais de alarme"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar outros diagnósticos diferenciais de dor abdominal crônica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-sii-tratamento",
+    "temaId": "sindrome-intestino-irritavel",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "SII — tratamento farmacológico por subtipo",
+    "revisado": true,
+    "fonte": "ACG Clinical Guideline: Management of Irritable Bowel Syndrome",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "SII confirmada — classificar subtipo predominante"
+      },
+      {
+        "tipo": "action",
+        "texto": "Medidas gerais: antiespasmódico para dor/distensão; dieta com baixo teor de FODMAPs"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Qual subtipo predominante?",
+        "ramos": [
+          {
+            "label": "SII-D (diarreia)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Loperamida sintomática; rifaximina (recomendação forte); eluxadolina como alternativa"
+              }
+            ]
+          },
+          {
+            "label": "SII-C (constipação)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "PEG; linaclotida (recomendação forte); tenapanor/plecanatida/lubiprostona como opções adicionais"
+              }
+            ]
+          },
+          {
+            "label": "SII-M (misto)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tratamento individualizado conforme o sintoma predominante no momento"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Sintomas globais refratários: considerar terapia cognitivo-comportamental ou hipnoterapia dirigida ao intestino"
+      }
+    ]
   }
 ]
