@@ -598,12 +598,16 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "HDA — Fluxo de manejo inicial",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Federacao Brasileira de Gastroenterologia; ACG Clinical Guideline: Upper Gastrointestinal Bleeding",
     "fluxo": [
       {
         "tipo": "start",
         "texto": "Suspeita de hemorragia digestiva alta (hematêmese/melena)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Meta de transfusão restritiva (hemoglobina ~7g/dL) — evitar hipertransfusão"
       },
       {
         "tipo": "action",
@@ -7438,6 +7442,73 @@
               {
                 "tipo": "end",
                 "texto": "Seguir estratificação de risco e conduta conforme categoria KDIGO (G+A)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hda-diagnostico",
+    "temaId": "hda",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "HDA — estratificação de risco e indicação de endoscopia",
+    "revisado": true,
+    "fonte": "ACG Clinical Guideline: Upper Gastrointestinal Bleeding; Consenso de Baveno VIII (2026)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Hematêmese e/ou melena — suspeita de HDA"
+      },
+      {
+        "tipo": "action",
+        "texto": "Avaliar estabilidade hemodinâmica, calcular escore de Glasgow-Blatchford"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Glasgow-Blatchford = 0 e paciente estável?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Considerar manejo ambulatorial, sem internação/endoscopia de urgência, garantindo reavaliação clínica"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Internar, dois acessos venosos calibrosos, ressuscitação volêmica conforme estabilidade"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Estigmas de hepatopatia crônica ou suspeita de sangramento varicoso?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Tratar como sangramento varicoso até prova em contrário — terlipressina/octreotide + antibiótico profilático imediatos, endoscopia em até 12h"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "IBP em bolus + infusão contínua; endoscopia em até 24h"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
