@@ -48057,5 +48057,95 @@
     "ano": 2023,
     "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (ITU)",
     "revisado": true
+  },
+  {
+    "id": "q2619",
+    "temaId": "doenca-vascular-renal",
+    "tema": "Doença Vascular Renal",
+    "enunciado": "Mulher, 32 anos, sem comorbidades conhecidas, é encaminhada por hipertensão arterial de início recente e refratária a duas classes de anti-hipertensivos. Ausculta abdominal revela sopro epigástrico. Angiotomografia demonstra estenose focal na porção distal da artéria renal direita, com aspecto de \"colar de contas\" alternando dilatações e estreitamentos. Qual é o diagnóstico mais provável e a resposta esperada ao tratamento invasivo?",
+    "alternativas": [
+      "Estenose aterosclerótica; resposta pobre à angioplastia, preferindo-se tratamento clínico.",
+      "Displasia fibromuscular; boa resposta à angioplastia, com possível resolução ou melhora significativa da hipertensão.",
+      "Vasculite de Takayasu; indicação de corticoterapia isolada, sem necessidade de intervenção vascular.",
+      "Trombose de veia renal; anticoagulação plena como único tratamento necessário."
+    ],
+    "correta": 1,
+    "comentario": "O perfil (mulher jovem, sem fatores de risco ateroscleróticos) associado ao aspecto angiográfico clássico em 'colar de contas' na porção distal da artéria renal é patognomônico de displasia fibromuscular — diferentemente da estenose aterosclerótica (idosos, lesão ostial/proximal), a displasia fibromuscular tende a responder bem à angioplastia, com resolução ou melhora significativa da hipertensão na maioria dos casos.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "MedConduta — questão autoral baseada em diretrizes (ESVS 2025; KDIGO)",
+    "revisado": true
+  },
+  {
+    "id": "q2620",
+    "temaId": "doenca-vascular-renal",
+    "tema": "Doença Vascular Renal",
+    "enunciado": "Homem, 70 anos, hipertenso e com doença arterial periférica conhecida (claudicação intermitente), tem losartana adicionada ao seu esquema anti-hipertensivo. Uma semana depois, retorna com creatinina sérica elevada em 40% em relação ao valor basal. Qual mecanismo fisiopatológico explica essa piora aguda da função renal?",
+    "alternativas": [
+      "Nefrite intersticial alérgica induzida pela losartana, independente do estado da circulação renal.",
+      "Em uma provável estenose de artéria renal bilateral (ou unilateral em rim único funcionante), o bloqueio da angiotensina II reduz a resistência da arteríola eferente, derrubando a pressão de filtração glomerular que dependia dela para se manter.",
+      "Rabdomiólise induzida pelo bloqueador do receptor de angiotensina, com mioglobinúria e necrose tubular aguda secundária.",
+      "Hipercalemia induzida pela losartana causando vasoconstrição intrarrenal difusa."
+    ],
+    "correta": 1,
+    "comentario": "A piora aguda da função renal após início de IECA/BRA é um sinal de alerta clássico para estenose de artéria renal bilateral (ou unilateral em rim único funcionante): nesses rins, a angiotensina II mantém a pressão de filtração glomerular via vasoconstrição preferencial da arteríola eferente (compensando o baixo fluxo pré-glomerular); ao bloquear esse mecanismo compensatório, a filtração glomerular cai abruptamente. O perfil do paciente (idoso com doença arterial periférica aterosclerótica) reforça a suspeita de doença vascular renal subjacente ainda não diagnosticada.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "MedConduta — questão autoral baseada em diretrizes (ESVS 2025; KDIGO)",
+    "revisado": true
+  },
+  {
+    "id": "q2621",
+    "temaId": "doenca-vascular-renal",
+    "tema": "Doença Vascular Renal",
+    "enunciado": "Homem, 55 anos, com fibrilação atrial não anticoagulada, apresenta dor súbita e intensa em flanco esquerdo, náuseas e elevação discreta de desidrogenase lática (LDH), sem alterações relevantes no exame de urina. A angiotomografia evidencia uma área triangular de hipoperfusão no parênquima renal esquerdo, com base voltada para a cápsula renal. Qual é o diagnóstico mais provável e o mecanismo subjacente?",
+    "alternativas": [
+      "Pielonefrite aguda, por disseminação hematogênica de bactéria a partir de foco urinário.",
+      "Infarto renal agudo, por embolização a partir de um trombo intracardíaco na fibrilação atrial não anticoagulada.",
+      "Cólica renal por nefrolitíase, com obstrução ureteral aguda.",
+      "Necrose de papila renal, por uso crônico de anti-inflamatórios não esteroidais."
+    ],
+    "correta": 1,
+    "comentario": "A combinação de dor súbita em flanco, elevação de LDH (marcador de infarto tecidual, desproporcional a outros achados) e uma lesão triangular de base capsular na tomografia é o padrão clássico de infarto renal por oclusão arterial aguda — nesse paciente com fibrilação atrial não anticoagulada, o mecanismo mais provável é embólico, a partir de um trombo formado no átrio esquerdo (apêndice atrial esquerdo) que migra e oclui um ramo da artéria renal.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "MedConduta — questão autoral baseada em diretrizes (ESVS 2025; KDIGO)",
+    "revisado": true
+  },
+  {
+    "id": "q2622",
+    "temaId": "doenca-vascular-renal",
+    "tema": "Doença Vascular Renal",
+    "enunciado": "Em relação à investigação diagnóstica da estenose de artéria renal, assinale a alternativa correta.",
+    "alternativas": [
+      "A ultrassonografia com Doppler renal é considerada padrão-ouro, superando a angiotomografia em acurácia diagnóstica.",
+      "A angiotomografia ou a angiorressonância renal são os exames não invasivos de escolha, com boa sensibilidade e especificidade.",
+      "A angiografia convencional deve ser evitada, mesmo quando há indicação concomitante de intervenção terapêutica.",
+      "A ausência de sopro abdominal à ausculta exclui com segurança o diagnóstico de estenose de artéria renal."
+    ],
+    "correta": 1,
+    "comentario": "A angiotomografia e a angiorressonância renal são os exames não invasivos de escolha para o diagnóstico de estenose de artéria renal, com boa sensibilidade e especificidade. O USG com Doppler é útil como triagem inicial, mas é operador-dependente e não é considerado padrão-ouro. A angiografia convencional permanece o padrão-ouro e é preferida quando se planeja intervenção terapêutica (angioplastia) no mesmo tempo do diagnóstico. O sopro abdominal tem sensibilidade limitada — sua ausência não exclui a doença.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "MedConduta — questão autoral baseada em diretrizes (ESVS 2025; KDIGO)",
+    "revisado": true
+  },
+  {
+    "id": "q2623",
+    "temaId": "doenca-vascular-renal",
+    "tema": "Doença Vascular Renal",
+    "enunciado": "Homem, 68 anos, coronariopata, foi submetido a angioplastia coronariana há 10 dias. Evolui com piora progressiva da função renal, livedo reticular em membros inferiores e eosinofilia. A equipe assistente considera o uso de anticoagulação plena para tratamento de uma trombose venosa profunda concomitante. Qual é a conduta mais adequada em relação à anticoagulação nesse contexto?",
+    "alternativas": [
+      "Anticoagular normalmente, pois não há qualquer interação entre anticoagulação e ateroembolismo por colesterol.",
+      "Evitar ou suspender a anticoagulação sempre que clinicamente possível, pois ela pode perpetuar a embolização de novos cristais de colesterol a partir de placas ateroscleróticas instáveis.",
+      "Aumentar a dose de anticoagulante, já que doses mais altas reduzem o risco de novos episódios de ateroembolismo.",
+      "Substituir por trombolítico sistêmico, que é o tratamento de escolha específico para o ateroembolismo por colesterol."
+    ],
+    "correta": 1,
+    "comentario": "A anticoagulação é um fator de risco reconhecido para desencadear ou perpetuar o ateroembolismo por cristais de colesterol, ao impedir a formação de trombo protetor sobre placas ateroscleróticas instáveis, facilitando a liberação contínua de novos êmbolos de colesterol. Por isso, sempre que clinicamente possível, a anticoagulação deve ser evitada ou suspensa em pacientes com ateroembolismo confirmado ou fortemente suspeito — o tratamento dessa condição é predominantemente de suporte, sem terapia específica eficaz comprovada (não há papel para trombolítico nesse contexto).",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "MedConduta — questão autoral baseada em diretrizes (ESVS 2025; KDIGO)",
+    "revisado": true
   }
 ]
