@@ -7770,5 +7770,163 @@
         "texto": "Em cACLD/HPCS: considerar carvedilol para prevenção de descompensação, mesmo sem varizes de alto risco"
       }
     ]
+  },
+  {
+    "id": "flow-drge-diagnostico",
+    "temaId": "doenca-refluxo-gastroesofagico",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "DRGE — abordagem diagnóstica inicial",
+    "revisado": true,
+    "fonte": "Consenso de Lyon 2.0 (2024)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Pirose e/ou regurgitação"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de alarme (disfagia, perda de peso, sangramento, anemia) ou idade >50 anos com sintomas crônicos?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Endoscopia digestiva alta prioritária — excluir estenose péptica, Barrett, neoplasia"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Medidas comportamentais + prova terapêutica empírica com IBP"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Resposta satisfatória ao IBP?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Diagnóstico presuntivo de DRGE confirmado — manter tratamento"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não (refratário)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Endoscopia digestiva alta"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "Esofagite Los Angeles C/D, estenose péptica ou Barrett de segmento longo?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Evidência conclusiva de DRGE (Lyon 2.0) — não precisa de pHmetria"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não/normal",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "pHmetria/impedanciometria de 24h: AET >6% confirma DRGE; <4% afasta; 4-6% é borderline"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-drge-tratamento",
+    "temaId": "doenca-refluxo-gastroesofagico",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "DRGE — manejo terapêutico",
+    "revisado": true,
+    "fonte": "AGA Clinical Practice Update (2024)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "DRGE confirmada (clínica, endoscópica ou por pHmetria)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Medidas comportamentais: elevação da cabeceira, evitar refeições próximas ao deitar, perda de peso, evitar alimentos desencadeantes"
+      },
+      {
+        "tipo": "action",
+        "texto": "IBP em dose padrão, 30-60 minutos antes da primeira refeição"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Esofagite erosiva grave (Los Angeles C/D)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar P-CAB (vonoprazana) — bloqueio ácido mais potente, possível cicatrização mucosa superior"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter IBP em dose padrão"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Refratário ao tratamento clínico otimizado, intolerância medicamentosa de longo prazo, ou preferência por tratamento definitivo, com refluxo patológico objetivamente confirmado?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Considerar cirurgia antirrefluxo (fundoplicatura)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter tratamento clínico; não suspender IBP crônico apenas por preocupações teóricas não confirmadas"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
