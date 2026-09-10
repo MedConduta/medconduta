@@ -563,7 +563,7 @@
     "tema": "Doença Renal Crônica (DRC)",
     "banca": "Exemplo — MedConduta",
     "ano": 2025,
-    "revisado": false,
+    "revisado": true,
     "fonte": "KDIGO Clinical Practice Guideline for the Evaluation and Management of CKD (2024); Sociedade Brasileira de Nefrologia (SBN)",
     "enunciado": "Paciente com DRC em estágio avançado apresenta uremia sintomática e hipercalemia refratária ao tratamento clínico. Qual a conduta mais adequada?",
     "alternativas": [
@@ -48701,6 +48701,43 @@
     "banca": "Banco de questões — Estratégia MED (Doença Renal Crônica / Lesão Renal Aguda.pdf — Nefrologia)",
     "ano": 2024,
     "fonte": "Estratégia MED — banco de questões dedicado (Terapia de Substituição Renal — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2654",
+    "temaId": "drc",
+    "tema": "Doença Renal Crônica (DRC)",
+    "enunciado": "A doença renal crônica é a principal patologia renal do mundo, afligindo pessoas através de doenças crônicas que afetam os rins, como diabetes e hipertensão, e através de nefropatias propriamente ditas, como doenças glomerulares. Assinale a alternativa que melhor descreve a doença renal crônica.",
+    "alternativas": [
+      "A doença renal crônica é definida com base na presença de lesão renal OU função renal diminuída (TFG <120mL/min/1,73m²) por três ou mais meses, independentemente da causa.",
+      "A doença renal crônica é definida com base na presença de lesão renal OU função renal diminuída (TFG <90mL/min/1,73m²) por três ou mais meses, independentemente da causa.",
+      "A doença renal crônica é definida com base na presença de lesão renal OU função renal diminuída (TFG <60mL/min/1,73m²) por três ou mais meses, independentemente da causa.",
+      "A doença renal crônica é definida com base na presença de lesão renal E função renal diminuída (TFG <60mL/min/1,73m²) por três ou mais meses, independentemente da causa.",
+      "A doença renal crônica é definida com base na presença de lesão renal E função renal diminuída (TFG <90mL/min/1,73m²) por três ou mais meses, independentemente da causa."
+    ],
+    "correta": 2,
+    "comentario": "A definição padrão (KDIGO) de doença renal crônica exige a presença de lesão renal (estrutural, como albuminúria/alterações de imagem/histológicas) OU função renal diminuída (TFG <60mL/min/1,73m², que já corresponde ao limiar da categoria G3a) por período igual ou superior a 3 meses, independentemente da causa de base — o conectivo é 'OU' (basta um dos dois critérios), não 'E' (que exigiria a presença simultânea de ambos), e o limiar de TFG correto é 60, não 90 ou 120mL/min/1,73m² (TFG entre 60-89 já é considerada G2, 'levemente reduzida', mas só constitui DRC se houver também evidência de lesão renal associada, como albuminúria).",
+    "banca": "ENARE 2023 R3 CM",
+    "ano": 2023,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Doença Renal Crônica e Insuficiência Renal Aguda)",
+    "revisado": true
+  },
+  {
+    "id": "q2655",
+    "temaId": "drc",
+    "tema": "Doença Renal Crônica (DRC)",
+    "enunciado": "Paciente de dois anos de idade foi admitido para investigação de doença renal crônica, ainda sem etiologia definida, com disfunção renal persistente após um episódio de gastroenterite aguda autolimitado. Na última avaliação laboratorial, o ritmo de filtração glomerular do paciente era 40mL/min/1,73m². Assinale a alternativa que apresenta as PRINCIPAIS ALTERAÇÕES LABORATORIAIS esperadas para esse paciente:",
+    "alternativas": [
+      "Anemia microcítica e hipocrômica, acidose metabólica, hipercalemia, hiperfosfatemia e hipercalcemia.",
+      "Anemia microcítica e hipocrômica, alcalose metabólica, hipercalemia, hiperfosfatemia e hipercalcemia.",
+      "Anemia normocítica e normocrômica, acidose metabólica, hipercalemia, hiperfosfatemia e hipocalcemia.",
+      "Anemia normocítica e normocrômica, alcalose metabólica, hipercalemia, hiperfosfatemia e hipocalcemia."
+    ],
+    "correta": 2,
+    "comentario": "A anemia da DRC é classicamente NORMOCÍTICA e NORMOCRÔMICA (por deficiência de eritropoetina, não por carência de ferro/B12/folato, que causariam anemia micro ou macrocítica). A DRC avançada cursa com acidose metabólica (perda da capacidade renal de excretar ácidos e regenerar bicarbonato), hipercalemia (redução da excreção renal de potássio), hiperfosfatemia (redução da excreção renal de fósforo) e hipocalcemia (secundária à hiperfosfatemia, à redução da ativação renal de vitamina D e à resistência óssea ao PTH) — não hipercalcemia, que seria o oposto do esperado na DRC não tratada.",
+    "banca": "PSU-MG 2023 Acesso Direto",
+    "ano": 2023,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Doença Renal Crônica e Insuficiência Renal Aguda)",
     "revisado": true
   }
 ]

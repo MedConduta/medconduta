@@ -2306,21 +2306,69 @@
     "temaId": "drc",
     "area": "residencia",
     "tipo": "tratamento",
-    "titulo": "DRC — Fluxo de manejo conforme estágio",
-    "revisado": false,
+    "titulo": "DRC — manejo farmacológico e indicação de terapia renal substitutiva (KDIGO 2024)",
+    "revisado": true,
     "fonte": "KDIGO Clinical Practice Guideline for the Evaluation and Management of CKD (2024); Sociedade Brasileira de Nefrologia (SBN)",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Diagnóstico de DRC confirmado (classificação KDIGO)"
+        "texto": "Diagnóstico de DRC confirmado e estadiado (classificação KDIGO)"
       },
       {
         "tipo": "action",
-        "texto": "Controlar PA/glicemia + IECA/BRA + ajustar medicações de eliminação renal"
+        "texto": "Controle de PA/glicemia + IECA ou BRA (nunca ambos associados) se albuminúria/proteinúria + ajustar medicações de eliminação renal"
       },
       {
         "tipo": "decisao",
-        "texto": "Uremia sintomática ou hipercalemia refratária?",
+        "texto": "TFG ≥20 e (DM2 OU albuminúria ≥200mg/g OU insuficiência cardíaca associada)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Adicionar iSGLT2 — queda inicial reversível da TFG é esperada, não suspender por isso"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Sem indicação de iSGLT2 neste momento"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "DM2 + TFG >25 + potássio normal + albuminúria persistente >30mg/g apesar de IECA/BRA em dose máxima tolerada?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Associar finerenona (antagonista não esteroidal do receptor mineralocorticoide) — FIDELIO-DKD/FIGARO-DKD/FIDELITY"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter esquema atual com reavaliação periódica"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Uremia sintomática ou critério de urgência dialítica (AEIOU) presente?",
         "ramos": [
           {
             "label": "Sim",
@@ -2336,7 +2384,7 @@
             "fluxo": [
               {
                 "tipo": "end",
-                "texto": "Manejo conservador com reavaliação periódica"
+                "texto": "Manejo conservador com reavaliação periódica — não iniciar TRS por gatilho numérico isolado de TFG (estudo IDEAL)"
               }
             ]
           }
@@ -7335,6 +7383,61 @@
                     ]
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-drc-diagnostico",
+    "temaId": "drc",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "DRC — classificação KDIGO (TFG + albuminúria)",
+    "revisado": true,
+    "fonte": "KDIGO Clinical Practice Guideline for the Evaluation and Management of CKD (2024)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de doença renal crônica (alteração estrutural/funcional renal)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Confirmar persistência da alteração por mais de 3 meses (critério temporal que diferencia DRC de LRA)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Estimar TFG (CKD-EPI 2021, sem coeficiente racial) — considerar creatinina + cistatina C se massa muscular alterada ou decisão clínica crítica"
+      },
+      {
+        "tipo": "action",
+        "texto": "Dosar relação albumina/creatinina urinária"
+      },
+      {
+        "tipo": "action",
+        "texto": "Classificar conforme categoria de TFG (G1-G5) e de albuminúria (A1-A3) — ambos têm valor prognóstico independente e complementar"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Queda abrupta e acelerada da função renal sobreposta a uma DRC previamente estável?",
+        "ramos": [
+          {
+            "label": "Sim — 'DRC agudizada'",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar imediatamente causa reversível sobreposta (desidratação, nefrotoxina, obstrução, AINE/contraste)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguir estratificação de risco e conduta conforme categoria KDIGO (G+A)"
               }
             ]
           }
