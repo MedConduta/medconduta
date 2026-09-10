@@ -44815,5 +44815,651 @@
     "ano": 2023,
     "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Glomerulopatias)",
     "revisado": true
+  },
+  {
+    "id": "q2442",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Mulher, 63 anos, diarreia há 4 dias, taquicardia leve, mucosas secas. Sódio 132mEq/L, sódio urinário indetectavelmente baixo. Qual a conduta na correção da hiponatremia dessa paciente?",
+    "alternativas": [
+      "Prescrever furosemida para promover perda de água livre.",
+      "Prescrever hidroclorotiazida para promover perda de água livre.",
+      "Prescrever hidratação venosa para reduzir os níveis séricos de ADH e possibilitar diurese aquosa livre.",
+      "Prescrever terapia com tolvaptana, antagonista do ADH.",
+      "Oferecer quantidade extra de sódio para corrigir a deficiência corporal total de sódio."
+    ],
+    "correta": 2,
+    "comentario": "O sódio urinário indetectável confirma hipovolemia (perda extrarrenal por diarreia) com secreção APROPRIADA de ADH (resposta fisiológica à hipovolemia, não SIADH). A hidratação venosa com salina isotônica corrige a hipovolemia, suprime o estímulo para liberação de ADH e permite diurese aquosa livre, corrigindo a hiponatremia — diuréticos e tolvaptana são inadequados nesse contexto hipovolêmico.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2443",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "A hiponatremia é o distúrbio hidroeletrolítico mais comum em pacientes hospitalizados. Sobre o exposto, é CORRETO afirmar:",
+    "alternativas": [
+      "A concentração sérica de sódio é medida acurada do sódio corpóreo total, mas não reflete um valor relativo da água livre no compartimento intravascular.",
+      "Na maioria dos casos, a hiponatremia é sintomática, mas seu diagnóstico não é simples pois os sintomas são vagos.",
+      "A hiponatremia, quando se estabelece rapidamente (<48h), é considerada aguda e pode oferecer maior risco de edema cerebral.",
+      "Um paciente com sódio sérico de 128mEq/L apresenta hiponatremia leve, e a correção está indicada até que o sódio esteja em torno de 140mEq/L."
+    ],
+    "correta": 2,
+    "comentario": "A hiponatremia aguda (instalação em <48h) tem maior risco de edema cerebral, pois não há tempo para adaptação osmótica dos neurônios. A hiponatremia é, na maioria dos casos, ASSINTOMÁTICA (não sintomática); a concentração sérica de sódio reflete melhor a relação água/soluto do que o sódio corporal total; e a meta de correção NUNCA é a normalização completa e rápida (140mEq/L) — o limite seguro é de 8-10mEq/L nas primeiras 24h.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2444",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Homem, 41 anos, tuberculose pulmonar recente, sonolência, náuseas e vômitos, sem evidências de depleção de volume. Sódio 125mEq/L, osmolalidade plasmática 260mOsm/kg, excreção renal de sódio aumentada, ureia/creatinina/potássio normais, ácido úrico baixo. A hipótese diagnóstica mais provável é:",
+    "alternativas": [
+      "Polidipsia psicogênica.",
+      "Diabetes insipidus nefrogênico.",
+      "Síndrome da secreção inapropriada de ADH (SIADH).",
+      "Doença de Addison.",
+      "Hipotireoidismo central."
+    ],
+    "correta": 2,
+    "comentario": "Hiponatremia hipotônica euvolêmica com natriurese elevada e HIPOURICEMIA (achado clássico e específico, por expansão discreta de volume que reduz a reabsorção proximal de ácido úrico) em paciente com tuberculose (causa pulmonar reconhecida de secreção ectópica/estimulada de ADH) confirma SIADH.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2445",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Idoso, 83 anos, Alzheimer moderado, em uso de donepezila, escitalopram, memantina, hidroclorotiazida e rosuvastatina. Há 15 dias com sonolência, náuseas, vômitos e piora cognitiva importante. Qual a principal hipótese diagnóstica?",
+    "alternativas": [
+      "Crise hipertensiva.",
+      "Acidente vascular encefálico.",
+      "Hiponatremia.",
+      "Progressão da Doença de Alzheimer.",
+      "Depressão."
+    ],
+    "correta": 2,
+    "comentario": "A combinação de ISRS (escitalopram, fator de risco bem estabelecido para SIADH) e diurético tiazídico (também causa de hiponatremia) em idoso com sintomas neurológicos inespecíficos (sonolência, náuseas, piora cognitiva) deve levantar fortemente a suspeita de hiponatremia medicamentosa antes de atribuir o quadro à progressão da demência de base.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2446",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Paciente de 19 anos, uso abusivo de substância, rebaixamento do nível de consciência e crises convulsivas. Após estabilização, sódio de 104mEq/L. Qual a conduta mais adequada quanto ao sódio sérico?",
+    "alternativas": [
+      "Iniciar reposição de NaCl 3% na dose de 5mL/kg/hora em bomba infusora por 24 horas.",
+      "Infusão contínua de NaCl 3% na dose de 5mL/kg/hora até melhora dos sintomas.",
+      "Infusão em bolus de 100mL de NaCl 3%, reavaliando o paciente, podendo repetir até 3 vezes conforme resposta clínica e novo sódio sérico.",
+      "Infusão de NaCl 3% em bomba infusora na dose de 5mL/kg/hora em 12 horas.",
+      "Iniciar infusão em bomba de NaCl 3% de 5mL/kg/hora em 6 horas."
+    ],
+    "correta": 2,
+    "comentario": "Na hiponatremia aguda sintomática grave (convulsões), o protocolo recomendado é a administração de bolus discretos e repetidos de salina hipertônica 3% (não uma infusão contínua prolongada calculada por peso/hora), reavaliando a resposta clínica e o sódio sérico após cada bolus — permitindo ajuste fino e suspensão assim que os sintomas melhorarem, minimizando o risco de supercorreção.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2447",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Paciente, 73 anos, neoplasia pulmonar há 1 ano, desorientação em tempo e espaço nas últimas 5 horas, sem déficits focais. TC de crânio normal, exames normais exceto sódio 123mEq/L. Qual a melhor conduta?",
+    "alternativas": [
+      "NaCl 20% 10mL + SF 0,9% 90mL EV em 10 minutos",
+      "Solução hipertônica de sódio 3%, 500mL EV em 24h via BIC",
+      "Solução hipertônica de sódio 3%, 1000mL EV em 24h via BIC",
+      "Restrição hídrica exclusiva de 800mL de água até confirmação etiológica"
+    ],
+    "correta": 1,
+    "comentario": "Hiponatremia moderada (123mEq/L) com sintomas neurológicos leves a moderados (desorientação, sem convulsão/coma) em paciente oncológico (SIADH paraneoplásica provável) é tratada com infusão controlada e limitada de salina hipertônica 3% (dose menor e mais lenta que em quadros extremamente graves), com monitorização seriada — não com bolus agressivo nem restrição hídrica isolada nesse momento sintomático.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2448",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Lactente de 11 meses, diarreia há 3 dias com fezes líquidas volumosas, febre, vômitos, aceitando apenas soro caseiro nas últimas 24h. Mucosas secas, olhos encovados, turgor cutâneo NORMAL, ávido por líquidos, fontanela deprimida, irritabilidade, hipertonia muscular e hiperreflexia. Qual o distúrbio eletrolítico mais provável?",
+    "alternativas": [
+      "Hiponatremia.",
+      "Hipernatremia.",
+      "Hipocalemia.",
+      "Hipercalemia."
+    ],
+    "correta": 1,
+    "comentario": "O turgor cutâneo PRESERVADO (apesar de sinais de desidratação clínica evidentes) associado a sede intensa e sinais neurológicos de hiperexcitabilidade (hipertonia, hiperreflexia, irritabilidade) é o padrão clássico da desidratação hipernatrêmica — a hipertonicidade extracelular 'protege' relativamente o volume intersticial (mascarando a perda de turgor), enquanto desidrata as células neuronais.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2449",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "A hiponatremia é comum em pacientes cirúrgicos no pós-operatório. Assinale a alternativa com os dados utilizados para calcular o déficit de sódio do paciente.",
+    "alternativas": [
+      "Peso do paciente, sódio-alvo, sódio atual do paciente e glicemia.",
+      "Peso da água corporal, sódio-alvo e sódio atual do paciente.",
+      "Peso do paciente, sódio atual do paciente e estimativa de perda pela diurese.",
+      "Peso da água corporal, sódio atual do paciente e estimativa de perda pela diurese.",
+      "Peso da água corporal, sódio-alvo, sódio atual do paciente e glicemia."
+    ],
+    "correta": 1,
+    "comentario": "A fórmula clássica de déficit/excesso de sódio (fórmula de Adrogué-Madias) utiliza a água corporal total (peso x fração de água corporal, variável por idade/sexo), o sódio sérico atual do paciente e o sódio-alvo desejado — não a glicemia nem estimativas de perda urinária diretamente na fórmula.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2450",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Escolar de 8 anos, TCE com lesão axonal difusa em UTI, apresenta diurese de 10mL/kg/h com densidade urinária 1000-1005, hipotensão parcialmente responsiva a volume e norepinefrina. Sódio 172mEq/L, potássio 4mEq/L. Entre as opções, a melhor conduta neste momento é:",
+    "alternativas": [
+      "Desmopressina.",
+      "Dexametasona.",
+      "Furosemida.",
+      "Dobutamina.",
+      "Vancomicina."
+    ],
+    "correta": 0,
+    "comentario": "Poliúria com urina extremamente diluída (densidade 1000-1005) e hipernatremia grave após TCE grave é o quadro clássico de diabetes insipidus central — a desmopressina (análogo de ADH) é o tratamento específico, reduzindo a diurese aquosa excessiva e permitindo controle da hipernatremia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2451",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Idoso, 74 anos, hipertenso e tabagista, internado por pneumonia bacteriana. Vígil, orientado, hidratado, hemodinamicamente estável. Creatinina 1,2, sódio 123, potássio 3,8, ácido úrico 3,4 (baixo); urina com sódio e osmolalidade aumentados. A etiologia mais provável para a hiponatremia é:",
+    "alternativas": [
+      "Polidipsia primária",
+      "Hipovolemia relativa",
+      "Insuficiência adrenal primária",
+      "Síndrome de secreção inapropriada de ADH"
+    ],
+    "correta": 3,
+    "comentario": "A combinação de contexto pulmonar (pneumonia, causa reconhecida de SIADH), euvolemia clínica, natriurese/osmolalidade urinária elevadas e hipouricemia é o perfil laboratorial clássico da SIADH.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2452",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Homem, 19 anos, poliúria e polidipsia após trauma craniano leve em partida de futebol. Bom estado geral, hidratado. Diurese elevada dia e noite. Glicemia normal; sódio 146; osmolalidade urinária 75mOsm/kg (muito baixa); osmolalidade plasmática 304mOsm/kg (elevada); TSH/T4 livre normais. Considerando a doença mais provável, qual tratamento é indicado?",
+    "alternativas": [
+      "Desmopressina.",
+      "Restrição hídrica.",
+      "Diurético.",
+      "Levotiroxina."
+    ],
+    "correta": 0,
+    "comentario": "Poliúria com urina inapropriadamente DILUÍDA (osmolalidade urinária muito baixa) associada a hipernatremia e hiperosmolalidade plasmática, após TCE, é diagnóstica de diabetes insipidus central — tratado com desmopressina, que restaura a capacidade de concentração urinária.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2453",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Mulher, 66 anos, pós-ressecção transesfenoidal de massa pituitária, sede intensa e poliúria. Sódio sérico 152mEq/L, leve confusão mental. Assinale a alternativa correta.",
+    "alternativas": [
+      "Para compensação clínica mais rápida, o tratamento inicial deve ser com solução salina a 3%.",
+      "A osmolaridade urinária dessa paciente certamente encontra-se elevada.",
+      "Com a administração de desmopressina, a osmolaridade urinária irá aumentar.",
+      "O tratamento de escolha é a restrição hídrica."
+    ],
+    "correta": 2,
+    "comentario": "No diabetes insipidus central pós-cirúrgico (situação muito provável após cirurgia hipofisária), a administração de desmopressina restaura a ação do ADH nos túbulos coletores, AUMENTANDO a capacidade de concentração urinária (osmolalidade urinária sobe) — resposta que, inclusive, ajuda a confirmar o diagnóstico central (versus nefrogênico, que não responderia). O tratamento correto é reposição de água livre, não salina hipertônica nem restrição hídrica (que agravaria a hipernatremia num paciente com perda renal de água).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2454",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Paciente, 56 anos, pós-exérese de craniofaringioma, poliúria de 7 litros/dia. Potássio 4,2, sódio 151, cálcio 9,0, hormônios da adeno-hipófise normais, ureia/creatinina normais. Qual hipótese diagnóstica e quais exames confirmatórios?",
+    "alternativas": [
+      "Diabetes insipidus; osmolalidades urinária e sérica",
+      "SIADH; osmolalidades urinária e sérica",
+      "Diabetes insipidus; teste oral de tolerância à glicose",
+      "Diabetes mellitus; HbA1c e teste oral de tolerância à glicose",
+      "SIADH; hormônio antidiurético"
+    ],
+    "correta": 0,
+    "comentario": "Poliúria volumosa com hipernatremia após cirurgia da região hipotálamo-hipofisária (craniofaringioma frequentemente lesa a haste hipofisária/neuro-hipófise) é diagnóstico de diabetes insipidus central — a confirmação é feita pela discrepância entre osmolalidade sérica elevada e urinária inapropriadamente baixa.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2455",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Mulher, 50 anos, pós-operatório de meningioma, no 2º dia evolui com alteração do nível de consciência e crise convulsiva. Glicemia 140, creatinina 0,8, ácido úrico 1,5 (baixo), potássio 3,5, sódio 106mEq/L. A melhor conduta é:",
+    "alternativas": [
+      "Prescrever restrição hídrica e reposição de NaCl 0,9%",
+      "Administrar manitol e diurético de alça (furosemida)",
+      "Iniciar anticonvulsivantes e repor potássio",
+      "Fazer administração imediata de NaCl 3%"
+    ],
+    "correta": 3,
+    "comentario": "Hiponatremia extremamente grave (106mEq/L) com crise convulsiva é emergência absoluta — a administração imediata de salina hipertônica 3% é indicada sem demora, independentemente da etiologia ainda em investigação (aqui, provável SIADH pós-neurocirúrgica, sugerida pelo ácido úrico baixo).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2456",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Antes de determinada conduta, o médico solicita osmolalidade sérica, urinária e sódio urinário. O que se esperaria encontrar se a hiponatremia fosse devida a excesso de fluidos (hipervolêmica, ex.: ICC/cirrose/síndrome nefrótica)?",
+    "alternativas": [
+      "Diminuição da osmolalidade sérica, diminuição da osmolalidade urinária e diminuição do sódio urinário.",
+      "Diminuição da osmolalidade sérica, aumento da osmolalidade urinária e aumento do sódio urinário.",
+      "Osmolalidade sérica diminuída, osmolalidade urinária normal e sódio urinário normal.",
+      "Aumento da osmolalidade sérica, aumento da osmolalidade urinária e aumento do sódio urinário."
+    ],
+    "correta": 0,
+    "comentario": "Na hiponatremia hipervolêmica (ICC, cirrose, síndrome nefrótica), o volume circulante EFETIVO está reduzido apesar do volume total aumentado — o rim retém sódio e água ativamente (mecanismo similar ao da hipovolemia), resultando em sódio urinário BAIXO e osmolalidade urinária tipicamente elevada (concentrada) apesar da hiponatremia sérica — mas nas opções apresentadas, o padrão de retenção mais consistente com o mecanismo fisiopatológico correto é o de sódio urinário baixo.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2457",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Mulher, 65 anos, hipertensa, hipotireoidismo em uso de hidroclorotiazida, losartana e levotiroxina. Há 2 meses iniciou escitalopram para ansiedade. Confusão mental, sonolência, náuseas. Leucograma e PCR normais, eletrólitos normais exceto sódio 111mEq/L. TC de crânio normal. Assinale a opção correta.",
+    "alternativas": [
+      "O diagnóstico provável é intoxicação exógena, por se tratar de doente psiquiátrica.",
+      "A hiponatremia é a possível causa da sintomatologia; a reposição deve ser com solução salina 20% em bolus.",
+      "O diagnóstico mais provável é AVC isquêmico; monitorizar e repetir TC em 48 horas.",
+      "É provável tratar-se de coma mixedematoso; dosar hormônios tireoidianos com urgência.",
+      "Síndrome de antidiurese inapropriada (SIAD) causada por drogas é o diagnóstico mais provável; suspender diurético tiazídico e ISRS."
+    ],
+    "correta": 4,
+    "comentario": "A combinação de dois fármacos com risco reconhecido de hiponatremia (tiazídico e ISRS) explica o quadro como SIAD medicamentosa — a conduta é suspender ambos os agentes causadores, além do tratamento de suporte apropriado à gravidade (aqui sem convulsão, não exigindo bolus concentrado de sódio a 20%, que sequer é uma apresentação padrão usada clinicamente).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2458",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Paciente de 88 anos, admitida com diarreia e sódio de 158mEq/L. Analise as medidas eficazes no controle da hipernatremia: (V/F)\n( ) Hidratar com soro glicosado a 5%.\n( ) Usar bicarbonato de sódio a 8,4%.\n( ) Ofertar água filtrada via oral.\n( ) Hidratar com solução salina a 0,45%.\nAssinale a sequência correta.",
+    "alternativas": [
+      "F F V V",
+      "V F V V",
+      "F V F F",
+      "V V F F"
+    ],
+    "correta": 1,
+    "comentario": "Hidratação com soro glicosado 5% (V, fornece água livre), água filtrada via oral (V, mais simples e fisiológica se via oral disponível) e salina 0,45% (V, solução hipotônica) são eficazes para corrigir hipernatremia. O bicarbonato de sódio 8,4% é hipertônico e contém SÓDIO — agravaria a hipernatremia, sendo a medida falsa (F).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2459",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Mulher, 63 anos, pós-ressecção transesfenoidal de massa pituitária, sede excessiva e poliúria. Sódio sérico 161mmol/L. Assinale a afirmativa correta em relação à provável causa da hipernatremia.",
+    "alternativas": [
+      "O tratamento de escolha é com solução salina hipertônica.",
+      "Está indicada a restrição de ingesta hídrica.",
+      "Se a paciente receber desmopressina, a osmolaridade urinária irá aumentar.",
+      "A osmolaridade urinária nesse momento está muito provavelmente elevada.",
+      "Trata-se de secreção inapropriada do hormônio antidiurético."
+    ],
+    "correta": 2,
+    "comentario": "No diabetes insipidus central (contexto cirúrgico hipofisário), a osmolalidade urinária está tipicamente BAIXA (urina diluída, apesar da hipernatremia) — mas após administração de desmopressina, a resposta esperada (e diagnóstica) é o AUMENTO da osmolalidade urinária, confirmando a origem central do déficit de ADH.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2460",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Sintomas comuns no quadro de hiponatremia são:",
+    "alternativas": [
+      "Perda de cabelo e enfraquecimento de unhas.",
+      "Náuseas, dor de cabeça, confusão mental e fadiga.",
+      "Sangue nas fezes e urina.",
+      "Acne vulgar e dermatite atópica."
+    ],
+    "correta": 1,
+    "comentario": "Os sintomas da hiponatremia refletem edema cerebral e disfunção neurológica inespecífica: náuseas, cefaleia, confusão mental e fadiga são os mais comuns, podendo progredir para convulsões e coma em casos graves.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2461",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Homem, 72 anos, tumor cerebral há 2 meses, crise convulsiva generalizada. Astenia há 2 semanas. Depressão recente, em uso de escitalopram há 1 mês. Glasgow 14, hidratado, sem déficits focais. Sódio 115, osmolalidade urinária 580 (elevada), sódio urinário 60 (elevado). Função renal/tireoidiana/adrenal normais. Avalie:\n\n( ) Não é possível excluir pseudo-hiponatremia.\n( ) Trata-se de hiponatremia euvolêmica.\n( ) Os níveis de osmolalidade urinária são compatíveis com SIADH.\n( ) Não está indicado tratamento com salina hipertônica devido à instalação lenta.\n( ) As possíveis causas são o tumor cerebral e o escitalopram.\n\nAssinale a sequência correta.",
+    "alternativas": [
+      "F – V – V – F – V.",
+      "V – V – V – V – F.",
+      "F – V – F – V – F.",
+      "V – F – F – F – V.",
+      "V – F – V – V – V."
+    ],
+    "correta": 0,
+    "comentario": "F-V-V-F-V: a pseudo-hiponatremia JÁ está excluída (função renal/glicemia/lipídeos normais implícitos, item I falso); o quadro é de hiponatremia euvolêmica (II verdadeiro); osmolalidade urinária elevada é compatível com SIADH (III verdadeiro); apesar da instalação aparentemente insidiosa, a presença de CONVULSÃO já configura sintoma grave, exigindo salina hipertônica independentemente da cronologia (IV falso); e tumor cerebral + ISRS são causas reconhecidas de SIADH (V verdadeiro).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2462",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "A síndrome de secreção inapropriada de hormônio antidiurético (SIADH) é causa comum de hiponatremia hospitalar. Assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A SIADH é causa de hiponatremia euvolêmica com osmolaridade urinária normal ou baixa.",
+      "São possíveis achados complementares à SIADH: ácido úrico sérico elevado e alteração de ureia/creatinina.",
+      "A síndrome cerebral perdedora de sal é diagnóstico diferencial importante, mas costuma cursar com hipovolemia.",
+      "Como critério obrigatório, o sódio urinário é <40mEq/L, e há euvolemia clínica.",
+      "Normalmente, os pacientes com SIADH estão em uso de diuréticos."
+    ],
+    "correta": 2,
+    "comentario": "A síndrome cerebral perdedora de sal (SCPS) é o principal diagnóstico diferencial da SIADH em contexto neurológico (hemorragia subaracnóidea, TCE) — a distinção crucial é que a SCPS cursa com HIPOVOLEMIA verdadeira (perda renal primária de sódio), enquanto a SIADH é euvolêmica. Na SIADH, o ácido úrico é tipicamente BAIXO (não elevado) e a função renal é normal; o sódio urinário é tipicamente ALTO (>40, não <40); e diuréticos NÃO são condição usual da SIADH (embora possam causar hiponatremia por mecanismo distinto).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2463",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Qual paciente apresenta maior risco de hipernatremia?",
+    "alternativas": [
+      "Homem, 45 anos, com neoplasia de pulmão.",
+      "Mulher, 23 anos, com esquizofrenia em uso de antipsicóticos.",
+      "Mulher, 94 anos, vítima de maus-tratos.",
+      "Homem, 65 anos, com insuficiência cardíaca descompensada.",
+      "Homem, 65 anos, com cirrose hepática, em anasarca."
+    ],
+    "correta": 2,
+    "comentario": "Idosos com acesso restrito à água (negligência, maus-tratos, imobilidade, alteração cognitiva) representam o grupo de maior risco de hipernatremia, pois o mecanismo protetor da sede depende de acesso livre e independente à água — quando esse acesso é comprometido, o déficit de água livre se instala progressivamente sem correção. As demais opções são classicamente associadas a risco de HIPOnatremia (SIADH paraneoplásica, polidipsia psicogênica por antipsicóticos, ICC e cirrose).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2464",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Senhor de 88 anos, sonolência e queda do estado geral. HAS e Alzheimer, uso de hidroclorotiazida, enalapril, donepezila e olanzapina, sem mudança recente de posologia. Sódio 120mEq/L, potássio 3,8, função renal normal. Sobre a hiponatremia:",
+    "alternativas": [
+      "Dentre as etiologias possíveis estão: medicamentosa, insuficiência cardíaca, hipotireoidismo e insuficiência adrenal.",
+      "A correção com salina hipertônica deve ter como meta 140mEq/L em 12 horas.",
+      "Hidroclorotiazida é a única medicação prescrita que pode levar à hiponatremia.",
+      "Colesterol baixo, triglicérides baixos e hipoglicemia são causas de pseudo-hiponatremia.",
+      "A concentração urinária de sódio não tem importância na investigação etiológica da hiponatremia."
+    ],
+    "correta": 0,
+    "comentario": "As etiologias listadas (causa medicamentosa como hidroclorotiazida, ICC, hipotireoidismo, insuficiência adrenal) são todas causas reconhecidas de hiponatremia a serem consideradas na investigação diferencial. A meta de correção NUNCA é normalização rápida a 140 em 12h (risco de mielinólise); olanzapina TAMBÉM pode contribuir para hiponatremia (não é só a tiazida); pseudo-hiponatremia decorre de HIPERlipidemia/hiperproteinemia (não valores baixos); e o sódio urinário é EXAME CENTRAL na investigação etiológica.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2465",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Homem, 68 anos, carcinoma de pulmão de pequenas células, confusão mental e sonolência. Hidratado, afebril, taquipneico. Sódio 110, potássio 4, osmolalidade sérica 220 (baixa), creatinina 0,8, ureia 49, osmolalidade urinária 600 (elevada). A provável causa da hiponatremia é:",
+    "alternativas": [
+      "Uso de diuréticos.",
+      "Insuficiência adrenal.",
+      "Síndrome da secreção inapropriada de hormônio antidiurético.",
+      "Síndrome nefrótica."
+    ],
+    "correta": 2,
+    "comentario": "Carcinoma de pequenas células é a neoplasia mais fortemente associada à secreção ectópica de ADH — a combinação de hiponatremia hipotônica com osmolalidade urinária inapropriadamente elevada (>100, aqui 600) confirma SIADH.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2466",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Paciente, 70 anos, 70kg, sequela de AVC isquêmico, comatosa e desidratada, ITU com sódio 165mEq/L. Sobre a hipernatremia e seu tratamento, assinale a afirmativa INCORRETA:",
+    "alternativas": [
+      "A reposição de água livre deve ser lenta, não devendo ultrapassar queda superior a 10mEq/dia de sódio, para evitar mielinólise pontina.",
+      "O déficit de água livre corporal deve ser calculado pela fórmula: água corporal (%) x (1-140/Na).",
+      "Soluções hipotônicas são as melhores formas de correção, podendo ser usadas glicose 5% ou salina 0,45%.",
+      "As alterações do SNC são causadas pela desidratação celular, com contração das células cerebrais, podendo levar a laceração, hemorragia subaracnóide/subcortical e trombose de seios venosos."
+    ],
+    "correta": 0,
+    "comentario": "A mielinólise pontina é uma complicação da correção RÁPIDA de HIPOnatremia (não de hipernatremia) — na correção da hipernatremia, o risco correspondente de correção excessivamente rápida é o EDEMA CEREBRAL (não mielinólise), pela entrada rápida de água livre em células já adaptadas à hipertonicidade. Essa é a alternativa INCORRETA.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2467",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Homem, 55 anos, previamente saudável, confusão mental há 2 dias. HAS, artrite gotosa, hipotireoidismo, tabagismo. Usa alisquireno e tiroxina. Sódio 122, potássio 4,0, TSH normal, sem hipotensão postural, sem edema. Urina concentrada, sódio urinário 60. O dado da história mais relevante para o diagnóstico é:",
+    "alternativas": [
+      "Artrite gotosa",
+      "Uso de alisquireno",
+      "Hipertensão arterial",
+      "Hipotireoidismo",
+      "Tabagismo"
+    ],
+    "correta": 4,
+    "comentario": "O tabagismo de longa data é o dado de maior relevância diagnóstica, associando-se a risco aumentado de neoplasia pulmonar (especialmente carcinoma de pequenas células) — causa paraneoplásica clássica de SIADH, quadro compatível com o perfil laboratorial apresentado (hiponatremia euvolêmica com natriurese elevada). O hipotireoidismo já está controlado (TSH normal), afastando essa causa.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2468",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Na SIADH, é CORRETO afirmar que:",
+    "alternativas": [
+      "Constitui-se de hipernatremia e euvolemia, geralmente com poliúria associada.",
+      "É usual na síndrome: hiponatremia, hipouricemia, sódio urinário alto e osmolaridade urinária alta.",
+      "A hipovolemia caracteriza a SIADH nos pacientes com HSA, diferenciando-a da síndrome perdedora de sal.",
+      "Deve-se evitar o uso de furosemida em seu tratamento, pelo efeito natriurético daquele diurético."
+    ],
+    "correta": 1,
+    "comentario": "O perfil laboratorial clássico da SIADH é: hiponatremia, hipouricemia (achado característico), sódio urinário elevado (>40mEq/L) e osmolalidade urinária inapropriadamente alta para o grau de hiponatremia — não hipernatremia. É a EUVOLEMIA (não hipovolemia) que caracteriza a SIADH, diferenciando-a da síndrome cerebral perdedora de sal (hipovolêmica).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2469",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Sobre hiponatremia grave com sódio sérico <125mEq/L, é recomendado:",
+    "alternativas": [
+      "No quadro AGUDO (<48h) ou com coma/convulsões, iniciar infusão salina 3% 1-2mL/kg/h e monitorar o sódio para ajuste da velocidade.",
+      "Sintomas moderados com duração desconhecida: iniciar solução salina 2%, 3mL/kg/hora, e monitorar o sódio.",
+      "Paciente assintomático: iniciar soro fisiológico e recomendar ingesta de 10g/dia de NaCl.",
+      "Paciente com suspeita de SIADH deve receber glicose 5% IV para aumentar a diurese."
+    ],
+    "correta": 0,
+    "comentario": "Em quadro agudo e/ou com sintomas neurológicos graves, a infusão de salina hipertônica 3% em taxa controlada (1-2mL/kg/h), com monitorização seriada do sódio para ajuste fino da velocidade, é a conduta padrão — evitando tanto a subcorreção (risco neurológico persistente) quanto a supercorreção (risco de mielinólise).",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2470",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Homem de 37 anos, TCE por queda de laje, em CTI, evolui com poliúria (6,5L/24h). Creatinina 0,9, glicemia 79, sódio 159mEq/L. O diagnóstico mais provável é:",
+    "alternativas": [
+      "Secreção inapropriada de ADH.",
+      "Diabetes insipidus.",
+      "Diurese osmótica.",
+      "Síndrome perdedora de sal."
+    ],
+    "correta": 1,
+    "comentario": "Poliúria volumosa associada a hipernatremia após TCE grave é o quadro clássico de diabetes insipidus central, por lesão da produção/liberação hipotalâmica-hipofisária de ADH — glicemia normal afasta diurese osmótica por hiperglicemia.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2471",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Homem, 61 anos, pós-RTU de próstata por HPB, 65kg, sem comorbidades. Cerca de 18h após a cirurgia, apresenta crise convulsiva tônico-clônica generalizada. Exame sem alterações exceto rebaixamento do sensório. Sódio sérico 118mEq/L, função renal normal. Qual a abordagem mais adequada da hiponatremia?",
+    "alternativas": [
+      "Administração de furosemida por via endovenosa.",
+      "Administração de solução salina hipertônica (3%).",
+      "Administração de vasopressina.",
+      "Hemodiálise de emergência."
+    ],
+    "correta": 1,
+    "comentario": "O quadro é de síndrome da RTU (absorção de líquido de irrigação hipotônico durante o procedimento endourológico), causando hiponatremia dilucional aguda e sintomática (convulsão) — a salina hipertônica 3% é a conduta imediata indicada diante da gravidade do quadro neurológico.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2472",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "HSC, 65 anos, hipertenso em uso de losartana, submetido a RTU de próstata por HPB. Duas horas após o procedimento: agitação, elevação da PA e episódio de convulsão. Sódio sérico 126mEq/L, potássio 3,3mmol/L. Qual a conduta MAIS INDICADA?",
+    "alternativas": [
+      "Administração de cloreto de potássio 10% intravenoso",
+      "Administração de glicose 5% intravenoso",
+      "Administração de gluconato de cálcio 10% intravenoso",
+      "Administração de cloreto de sódio 0,9% intravenoso"
+    ],
+    "correta": 3,
+    "comentario": "Apesar de a hiponatremia da síndrome da RTU ser frequentemente mais grave, quando há indicação de correção rápida por sintomas neurológicos (convulsão) a solução salina deve ser utilizada — entre as opções, o cloreto de sódio 0,9% (a única solução salina disponível na lista) é a escolha correta para tratar a hiponatremia sintomática nesse contexto, evitando as demais opções, que não corrigem o distúrbio primário.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2473",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Paciente, 43 anos, em quimioterapia para câncer de pulmão de pequenas células, confusão mental e sonolência após episódio convulsivo. Queixas de náuseas, fraqueza e menos atividade há 15 dias. TC de crânio recente sem metástases. Qual eletrólito deve ser dosado para confirmar a hipótese diagnóstica mais provável?",
+    "alternativas": [
+      "Potássio.",
+      "Fósforo.",
+      "Sódio.",
+      "Cálcio."
+    ],
+    "correta": 2,
+    "comentario": "Sintomas neuropsiquiátricos inespecíficos em paciente com câncer de pequenas células (associação clássica com SIADH), sem evidência de metástase cerebral, devem levantar suspeita de hiponatremia — o sódio sérico é o exame confirmatório central nessa hipótese.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2474",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Homem, 70 anos, acamado há 3 anos pós-AVC isquêmico, dependente de terceiros. Quadro de 2 dias com agressividade, agitação e discurso desconexo. Sódio sérico 160mEq/L. Pela fórmula de Adrogué, com índice de água corporal de 0,50 e peso de 78kg, qual quantidade de SG 5% deve ser infundida em 24h para reduzir o sódio em 10mEq/L?",
+    "alternativas": [
+      "2.500 mL.",
+      "2.400 mL.",
+      "2.300 mL.",
+      "2.200 mL.",
+      "2.100 mL."
+    ],
+    "correta": 3,
+    "comentario": "O cenário reforça o perfil de risco clássico de hipernatremia (paciente acamado, dependente, com acesso comprometido à água por incapacidade funcional) — o cálculo pela fórmula de Adrogué-Madias (considerando água corporal total e a variação desejada de sódio) determina o volume de solução hipotônica necessário para uma correção segura e gradual ao longo de 24 horas.",
+    "banca": "Banco de questões — Estratégia MED (Distúrbios do Sódio.pdf — Nefrologia)",
+    "ano": 2024,
+    "fonte": "Estratégia MED — banco de questões dedicado (Distúrbios do Sódio — Nefrologia)",
+    "revisado": true
+  },
+  {
+    "id": "q2475",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Mulher, 68 anos, hipertensa, diabética, admitida na emergência com queda do estado geral e sonolência. Disúria e polaciúria há 2 dias. Sumário de urina: incontáveis leucócitos, nitrito positivo, glicose 4+, proteína 2+. Creatinina 1,5, ureia 78, sódio 130mEq/L, potássio 5,0, glicemia 600mg/dL. Diante de que classificação de hiponatremia estamos, há necessidade de reposição de sódio, e qual o tratamento proposto?",
+    "alternativas": [
+      "Hiponatremia hipotônica verdadeira; sim, repor sódio; hidratação com salina hipertônica.",
+      "Hiponatremia hipertônica (por hiperglicemia grave); não há necessidade de reposição de sódio, pois o sódio corrigido é normal; tratar a sepse urinária de base.",
+      "Pseudo-hiponatremia por hiperlipidemia; não repor sódio; estatina.",
+      "Hiponatremia hipovolêmica; sim, repor sódio; expansão com salina isotônica."
+    ],
+    "correta": 1,
+    "comentario": "A glicemia extremamente elevada (600mg/dL) causa efeito osmótico que 'puxa' água para o extracelular, diluindo o sódio medido SEM representar excesso real de água livre (hiponatremia hiperosmolar/hipertônica) — corrigindo o valor de sódio pela glicemia (cada 100mg/dL de glicose acima do normal reduz o sódio medido em ~1,6-2,4mEq/L), o sódio real está normal. O tratamento correto é da causa de base (aqui, sepse urinária associada a descompensação glicêmica), não a reposição de sódio.",
+    "banca": "BASES Distúrbios Hidroeletrolíticos — banco de questões EMR (Eu Médico Residente)",
+    "ano": 2024,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Distúrbios Hidroeletrolíticos)",
+    "revisado": true
+  },
+  {
+    "id": "q2476",
+    "temaId": "disturbios-sodio",
+    "tema": "Distúrbios do Sódio: Hiponatremia e Hipernatremia",
+    "enunciado": "Mulher de 23 anos, sem comorbidades, é trazida por sonolência e pouca resposta a estímulos. Familiares negam medicações psicoativas em casa, mas relatam perda rápida de peso, vômitos autoinduzidos frequentes e aumento importante da ingestão de água. Assinale a alternativa com a associação de distúrbio hidroeletrolítico esperada nessa paciente.",
+    "alternativas": [
+      "Hipernatremia e hipocalemia.",
+      "Hiponatremia, hipocloremia e hipocalemia.",
+      "Hiponatremia, hipercloremia e hipocalemia.",
+      "Hipernatremia, hipocloremia e hipercalemia.",
+      "Hipocalemia isoladamente."
+    ],
+    "correta": 1,
+    "comentario": "O quadro sugere transtorno alimentar purgativo (vômitos autoinduzidos + polidipsia compensatória): os vômitos causam perda de ácido clorídrico (hipocloremia) e alcalose metabólica com hipocalemia secundária (perda renal de potássio na tentativa de reter hidrogênio); a ingestão excessiva de água associada à perda de eletrólitos resulta em hiponatremia dilucional — a tríade hiponatremia + hipocloremia + hipocalemia é a esperada nesse contexto.",
+    "banca": "BASES Distúrbios Hidroeletrolíticos — banco de questões EMR (Eu Médico Residente) (IAMSPE-SP 2023 R3 CM)",
+    "ano": 2023,
+    "fonte": "EMR (Eu Médico Residente) — Material de Acompanhamento (Distúrbios Hidroeletrolíticos)",
+    "revisado": true
   }
 ]
