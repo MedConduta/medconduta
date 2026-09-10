@@ -8632,5 +8632,143 @@
         "texto": "Reavaliação periódica da resposta e ajuste terapêutico conforme evolução clínica/radiológica"
       }
     ]
+  },
+  {
+    "id": "flow-sindrome-disfagica-diagnostico",
+    "temaId": "sindrome-disfagica",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Disfagia — diferenciação orofaríngea x esofágica e diagnóstico de acalasia",
+    "revisado": true,
+    "fonte": "Chicago Classification of Esophageal Motility Disorders v4.0",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Queixa de disfagia"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dificuldade em INICIAR a deglutição, com tosse/engasgo/regurgitação nasal imediatos?",
+        "ramos": [
+          {
+            "label": "Sim — orofaríngea",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar causa neuromuscular (AVC, doença neurodegenerativa, miastenia gravis); avaliação fonoaudiológica da deglutição"
+              }
+            ]
+          },
+          {
+            "label": "Não — sensação de entalo após deglutir (esofágica)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Padrão progressivo (sólidos primeiro, depois líquidos) ou desde o início para sólidos E líquidos?",
+                "ramos": [
+                  {
+                    "label": "Progressiva, só sólidos inicialmente — sugestivo de causa mecânica",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Endoscopia digestiva alta para avaliar estenose péptica, anel esofágico ou neoplasia"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sólidos e líquidos desde o início, intermitente — sugestivo de causa motora",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Endoscopia digestiva alta OBRIGATÓRIA antes de firmar acalasia — excluir pseudoacalasia por neoplasia infiltrativa da junção esofagogástrica"
+                      },
+                      {
+                        "tipo": "action",
+                        "texto": "Esofagograma baritado (imagem em \"bico de pássaro\")"
+                      },
+                      {
+                        "tipo": "action",
+                        "texto": "Manometria esofágica de alta resolução (padrão-ouro) — classificar subtipo I, II ou III pela Chicago Classification v4.0"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Diagnóstico de acalasia confirmado e subtipado"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-sindrome-disfagica-tratamento",
+    "temaId": "sindrome-disfagica",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Acalasia — tratamento por subtipo manométrico",
+    "revisado": true,
+    "fonte": "Atualização SAGES 2024 sobre tratamento cirúrgico da acalasia",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Acalasia confirmada por manometria — subtipo definido"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Qual o subtipo manométrico (Chicago v4.0)?",
+        "ramos": [
+          {
+            "label": "Tipo I ou II",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Dilatação pneumática endoscópica, miotomia de Heller ou POEM — boa resposta a qualquer opção (tipo II com melhor resposta global)"
+              }
+            ]
+          },
+          {
+            "label": "Tipo III (espástico)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "POEM preferencial — permite miotomia longa estendida ao segmento espástico"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Divertículo epifrênico ou hérnia hiatal associados?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Miotomia de Heller com fundoplicatura preferencial (SAGES 2024)"
+              }
+            ]
+          },
+          {
+            "label": "Paciente não candidato a procedimento definitivo (alto risco cirúrgico)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Toxina botulínica intraesfincteriana (efeito temporário)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Disfagia orofaríngea: fonoterapia e adaptação da consistência alimentar, dirigidas à causa neurológica de base"
+      }
+    ]
   }
 ]
