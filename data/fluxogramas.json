@@ -8770,5 +8770,157 @@
         "texto": "Disfagia orofaríngea: fonoterapia e adaptação da consistência alimentar, dirigidas à causa neurológica de base"
       }
     ]
+  },
+  {
+    "id": "flow-sindrome-ictericia-colestase-diagnostico",
+    "temaId": "sindrome-ictericia-colestase",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Icterícia colestática — abordagem diagnóstica inicial",
+    "revisado": true,
+    "fonte": "AASLD/ACG — Diagnostic and Management Considerations for Cholestatic Liver Disease",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Icterícia com predomínio de bilirrubina direta (colúria, hipocolia/acolia fecal, ± prurido)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia abdominal (exame inicial de escolha)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Vias biliares dilatadas à USG?",
+        "ramos": [
+          {
+            "label": "Sim — sugere obstrução extra-hepática",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Colangiorressonância magnética (detalhamento anatômico não invasivo)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Vesícula biliar palpável e indolor (sinal de Courvoisier)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Suspeitar de neoplasia periampular (ex.: câncer de cabeça de pâncreas) — investigar ressecabilidade"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não (vesícula não palpável, dor em cólica)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Suspeitar de coledocolitíase — CPRE diagnóstica e terapêutica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não — sugere causa intra-hepática",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Investigar hepatopatias: sorologias virais, autoanticorpos (AMA para CBP), história medicamentosa"
+              },
+              {
+                "tipo": "end",
+                "texto": "Fosfatase alcalina/GGT desproporcionalmente elevadas + AMA positivo (>90%) = colangite biliar primária, dispensando biópsia na maioria dos casos típicos"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-sindrome-ictericia-colestase-tratamento",
+    "temaId": "sindrome-ictericia-colestase",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Colestase — tratamento por etiologia",
+    "revisado": true,
+    "fonte": "AASLD Practice Guidance on Primary Biliary Cholangitis",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Causa da colestase definida"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Etiologia?",
+        "ramos": [
+          {
+            "label": "Coledocolitíase",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "CPRE com papilotomia e extração do cálculo, seguida de colecistectomia"
+              }
+            ]
+          },
+          {
+            "label": "Neoplasia periampular ressecável",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Duodenopancreatectomia (cirurgia de Whipple)"
+              }
+            ]
+          },
+          {
+            "label": "Neoplasia periampular irressecável",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Drenagem biliar paliativa (prótese por CPRE)"
+              }
+            ]
+          },
+          {
+            "label": "Colangite biliar primária (CBP)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Ácido ursodesoxicólico (UDCA) — 1ª linha"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Resposta bioquímica inadequada ao UDCA (até 40% dos casos)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Adicionar seladelpar ou elafibranor (agonistas PPAR, atualização 2024) — evitar ácido obeticólico, retirado do mercado em 2025 por hepatotoxicidade"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — boa resposta",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter UDCA, seguimento bioquímico periódico"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
