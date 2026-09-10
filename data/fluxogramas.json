@@ -8476,5 +8476,161 @@
         "texto": "Cirurgia (colectomia segmentar ou subtotal) reservada a casos refratários sem localização possível da origem do sangramento"
       }
     ]
+  },
+  {
+    "id": "flow-cancer-gastrico-esofago-diagnostico",
+    "temaId": "cancer-gastrico-esofago",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de câncer gástrico/esofágico — diagnóstico e estadiamento",
+    "revisado": true,
+    "fonte": "NCCN Guidelines — Gastric Cancer / Esophageal and Esophagogastric Junction Cancers",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Disfagia progressiva, perda de peso, saciedade precoce, dor epigástrica ou anemia — sobretudo em >50 anos com fatores de risco"
+      },
+      {
+        "tipo": "action",
+        "texto": "Endoscopia digestiva alta com biópsia (exame padrão-ouro)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Biópsia confirma neoplasia?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Estadiamento: tomografia de tórax/abdome + ecoendoscopia (profundidade de invasão e linfonodos regionais)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Doença localizada/ressecável ou localmente avançada/metastática?",
+                "ramos": [
+                  {
+                    "label": "Localizada/ressecável",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Seguir para tratamento com intenção curativa (cirurgia ± terapia perioperatória)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Localmente avançada/metastática",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Caracterização molecular obrigatória: HER2 (IHQ/FISH), PD-L1 (CPS), Claudina 18.2 (CLDN18.2)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Definir terapia sistêmica guiada pelo perfil molecular do tumor"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar diagnósticos diferenciais de disfagia/dispepsia/perda de peso"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cancer-gastrico-esofago-tratamento",
+    "temaId": "cancer-gastrico-esofago",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Câncer gástrico/esofágico — tratamento por estágio e perfil molecular",
+    "revisado": true,
+    "fonte": "NCCN Guidelines; Estudos FLOT4, CROSS, SPOTLIGHT, GLOW",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico e estadiamento confirmados"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Doença localizada e ressecável?",
+        "ramos": [
+          {
+            "label": "Sim — câncer gástrico",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Quimioterapia perioperatória (esquema FLOT) + gastrectomia com linfadenectomia"
+              }
+            ]
+          },
+          {
+            "label": "Sim — câncer de esôfago localmente avançado",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Quimiorradioterapia neoadjuvante (protocolo CROSS) + esofagectomia; se doença residual, nivolumabe adjuvante"
+              }
+            ]
+          },
+          {
+            "label": "Não — doença metastática/irressecável",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tratamento sistêmico guiado pelo perfil molecular"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Perfil molecular do tumor?",
+                "ramos": [
+                  {
+                    "label": "HER2 positivo",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Trastuzumabe + quimioterapia (± imunoterapia)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "HER2 negativo, PD-L1 CPS ≥5",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Nivolumabe (ou tislelizumabe) + quimioterapia de 1ª linha"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "HER2 negativo, CLDN18.2 positivo",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Zolbetuximabe + quimioterapia"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Reavaliação periódica da resposta e ajuste terapêutico conforme evolução clínica/radiológica"
+      }
+    ]
   }
 ]
