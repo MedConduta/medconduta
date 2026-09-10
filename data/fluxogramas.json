@@ -6889,5 +6889,147 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-itu-pielonefrite-diagnostico",
+    "temaId": "itu-pielonefrite",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "ITU: diferenciação cistite x pielonefrite e indicação de imagem",
+    "revisado": true,
+    "fonte": "2025 IDSA Clinical Practice Guideline for the Management and Treatment of Complicated Urinary Tract Infections",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Sintomas urinários (disúria, urgência, polaciúria)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Febre, calafrios, dor lombar, sintomas sistêmicos ou Giordano positivo?",
+        "ramos": [
+          {
+            "label": "Não — apenas sintomas locais",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Cistite (ITU não complicada) — diagnóstico pode ser clínico em mulher jovem hígida; EAS/urocultura se dúvida diagnóstica"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Pielonefrite (ITU complicada pela classificação IDSA 2025 — qualquer acometimento sistêmico/trato superior, em homens ou mulheres)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Solicitar EAS, urocultura, hemograma e função renal"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Instabilidade hemodinâmica, obstrução concomitante (pionefrose) ou ausência de melhora após 48-72h de antibiótico adequado?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigação de imagem urgente (USG ou TC) para excluir abscesso renal/perirrenal ou obstrução — drenagem urgente (nefrostomia/cateter ureteral) se confirmado"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Seguir tratamento antibiótico empírico com reavaliação clínica em 48-72h"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-itu-pielonefrite-tratamento",
+    "temaId": "itu-pielonefrite",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Pielonefrite: escolha do antibiótico empírico (abordagem IDSA 2025 em 4 passos)",
+    "revisado": true,
+    "fonte": "2025 IDSA Clinical Practice Guideline for the Management and Treatment of Complicated Urinary Tract Infections",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico de pielonefrite/ITU complicada confirmado"
+      },
+      {
+        "tipo": "action",
+        "texto": "Passo 1: avaliar gravidade — sepse presente ou ausente?"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sepse, intolerância oral, gestação ou fatores de risco para uropatógeno resistente?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Internação + antibiótico EV de amplo espectro (cefalosporina de 3ª/4ª geração, piperacilina-tazobactam ou fluoroquinolona EV); reservar carbapenêmico a cenários de maior risco"
+              },
+              {
+                "tipo": "action",
+                "texto": "Se séptico: usar antibiograma local relevante (histórico do paciente ou epidemiologia da unidade) na escolha empírica (Passo 4)"
+              }
+            ]
+          },
+          {
+            "label": "Não — ambulatorial",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Passo 2: revisar fatores de risco individuais para uropatógeno resistente; Passo 3: considerar alergias e interações medicamentosas"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Exposição a fluoroquinolona nos últimos 12 meses ou resistência prévia documentada a algum antibiótico?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Evitar reutilizar essa classe/fármaco — escolher alternativa (ex.: cefalosporina oral)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Fluoroquinolona oral OU cefalosporina oral, com reavaliação em 48-72h"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Nitrofurantoína e fosfomicina NUNCA devem ser usadas para pielonefrite/ITU complicada — não atingem níveis adequados no parênquima renal/corrente sanguínea, ficando restritas à cistite não complicada"
+      }
+    ]
   }
 ]
