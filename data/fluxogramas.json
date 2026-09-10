@@ -7928,5 +7928,119 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-dii-diagnostico",
+    "temaId": "doenca-inflamatoria-intestinal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Diarreia crônica — diferenciação RCU vs. Doença de Crohn",
+    "revisado": true,
+    "fonte": "ACG/ECCO Guidelines",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diarreia crônica, dor abdominal, sinais de alarme (sangue, perda de peso, febre)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Colonoscopia com biópsia + calprotectina fecal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Padrão de acometimento?",
+        "ramos": [
+          {
+            "label": "Contínuo, a partir do reto, limitado ao cólon",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Retocolite ulcerativa — classificar extensão e gravidade (subescore de Mayo)"
+              }
+            ]
+          },
+          {
+            "label": "Descontínuo, transmural, pode poupar o reto, ileal/perianal",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Doença de Crohn — avaliar extensão com entero-RM/entero-TC se suspeita de delgado"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-dii-tratamento",
+    "temaId": "doenca-inflamatoria-intestinal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "DII — escalonamento terapêutico",
+    "revisado": true,
+    "fonte": "ACG Clinical Guideline: Crohn's Disease (2025); ECCO Guidelines",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "DII confirmada — avaliar gravidade e extensão"
+      },
+      {
+        "tipo": "action",
+        "texto": "Leve: aminossalicilato (mesalazina) — papel mais limitado na Crohn"
+      },
+      {
+        "tipo": "action",
+        "texto": "Surto moderado/grave: corticoide para indução de remissão (não usar para manutenção prolongada)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Corticodependência, corticorrefratariedade ou doença moderada a grave/alto risco?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Escalonar para imunomodulador (azatioprina) e/ou terapia biológica avançada — considerar 'top-down' precoce em alto risco"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Colite fulminante/megacólon tóxico refratário, ou complicação estrutural (obstrução, perfuração, fístula complexa)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Indicação cirúrgica — colectomia (RCU) ou ressecção/estricturoplastia (Crohn)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter/otimizar terapia biológica; monitorar com calprotectina fecal"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter tratamento atual, reavaliar periodicamente"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
