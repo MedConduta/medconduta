@@ -2613,12 +2613,12 @@
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "AVC hemorrágico — Fluxo de manejo inicial",
-    "revisado": false,
-    "fonte": "Diretrizes da Sociedade Brasileira de Doencas Cerebrovasculares; AHA/ASA Guideline for Management of Spontaneous Intracerebral Hemorrhage (2022)",
+    "revisado": true,
+    "fonte": "AHA/ASA Guideline for Management of Spontaneous Intracerebral Hemorrhage (2022); AHA/ASA Guideline for Aneurysmal SAH",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Cefaleia súbita intensa + déficit focal ± rebaixamento de consciência"
+        "texto": "Cefaleia súbita intensa ± déficit focal ± rebaixamento de consciência"
       },
       {
         "tipo": "action",
@@ -2626,31 +2626,75 @@
       },
       {
         "tipo": "decisao",
-        "texto": "Paciente em uso de anticoagulante?",
+        "texto": "TC mostra sangramento?",
         "ramos": [
           {
-            "label": "Sim",
+            "label": "Sim — hemorragia intraparenquimatosa",
             "fluxo": [
               {
-                "tipo": "alerta",
-                "texto": "Reverter anticoagulação imediatamente"
+                "tipo": "decisao",
+                "texto": "Paciente em uso de anticoagulante?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Reverter anticoagulação imediatamente"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Controle pressórico agressivo (meta PAS <140mmHg)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tipo": "end",
+                "texto": "Avaliação neurocirúrgica conforme volume/localização do hematoma"
               }
             ]
           },
           {
-            "label": "Não",
+            "label": "Não, mas suspeita de HSA permanece alta (cefaleia súbita intensa, sobretudo se TC feita >6h do início)",
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "Controle cuidadoso da pressão arterial"
+                "texto": "Punção lombar buscando xantocromia"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Xantocromia presente ou forte suspeita mantida?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Angiotomografia ou angiografia digital para identificar aneurisma/malformação vascular"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar outras causas de cefaleia súbita"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
         ]
-      },
-      {
-        "tipo": "end",
-        "texto": "Avaliação neurocirúrgica conforme volume/localização do hematoma"
       }
     ]
   },
@@ -9074,6 +9118,86 @@
       {
         "tipo": "end",
         "texto": "Padrão neutrofílico + hipoglicorraquia + proteína elevada confirma meningite bacteriana — ajustar antibiótico conforme Gram/cultura"
+      }
+    ]
+  },
+  {
+    "id": "flow-avc-hemorragico-tratamento",
+    "temaId": "avc-hemorragico",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "AVC hemorrágico — tratamento por tipo e localização",
+    "revisado": true,
+    "fonte": "INTERACT3 (2023); ENRICH (2024); AHA/ASA Guideline for Aneurysmal SAH",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico de AVC hemorrágico confirmado"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Hemorragia intraparenquimatosa ou subaracnóidea?",
+        "ramos": [
+          {
+            "label": "Intraparenquimatosa",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Pacote de cuidados INTERACT3: controle pressórico intensivo precoce + controle glicêmico + controle da temperatura + reversão rápida de anticoagulação, em conjunto"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Localização do hematoma?",
+                "ramos": [
+                  {
+                    "label": "Lobar",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Considerar evacuação cirúrgica minimamente invasiva precoce (via trans-sulcal parafascicular) — benefício demonstrado pelo ENRICH"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Profunda (núcleos da base)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Tratamento clínico — benefício cirúrgico não demonstrado nessa localização"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Cerebelar volumoso com efeito de massa",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Avaliação neurocirúrgica para drenagem"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Subaracnóidea (aneurismática)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tratamento precoce do aneurisma (clipagem cirúrgica ou embolização endovascular) para prevenir ressangramento"
+              },
+              {
+                "tipo": "action",
+                "texto": "Nimodipina de rotina para reduzir risco de vasoespasmo cerebral tardio e isquemia secundária"
+              },
+              {
+                "tipo": "end",
+                "texto": "Monitorização para vasoespasmo nos dias subsequentes ao sangramento"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
