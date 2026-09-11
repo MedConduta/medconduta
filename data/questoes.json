@@ -167,7 +167,7 @@
     "tema": "Pneumonia Adquirida na Comunidade (PAC)",
     "banca": "Exemplo — MedConduta",
     "ano": 2023,
-    "revisado": false,
+    "revisado": true,
     "fonte": "Diretrizes Brasileiras para Pneumonia Adquirida na Comunidade - SBPT; IDSA/ATS Community-Acquired Pneumonia Guidelines (2019)",
     "enunciado": "Paciente de 70 anos, confuso, com frequência respiratória de 32 irpm e PA 85x55 mmHg, é diagnosticado com PAC. Qual a conduta mais adequada quanto ao local de tratamento?",
     "alternativas": [
@@ -60092,6 +60092,281 @@
     "banca": "Exemplo — MedConduta",
     "ano": 2025,
     "fonte": "Elaborada com base em critérios MGFA e diretrizes atuais de miastenia gravis",
+    "revisado": true
+  },
+  {
+    "id": "q3302",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Maria, 23 anos, estudante, vem à Unidade Básica de Saúde com tosse há 4 dias, expectoração amarelada, dor torácica ventilatório-dependente no hemitórax direito e febre. Refere rinite alérgica sazonal e nega uso de antibióticos nos últimos 2 anos. Está consciente, orientada e eupneica, com FR 16irpm, FC 82bpm, temperatura 39°C, PA 110x70mmHg. Radiografia com consolidação segmentar no terço superior direito; hemograma com leucocitose e desvio à esquerda. A ureia não foi avaliada. Baseado no escore CRB-65, qual seria o tratamento mais adequado?",
+    "alternativas": [
+      "Internação e tratamento com quinolona de segunda geração, durante 7 a 10 dias.",
+      "Tratamento ambulatorial com macrolídeo via oral, durante 7 dias.",
+      "Internação e uso de betalactâmico IV, associado a macrolídeo.",
+      "Internação e tratamento com betalactâmico por via oral, durante 7 dias."
+    ],
+    "correta": 1,
+    "comentario": "Sem confusão mental, FR normal, PA normal e idade menor que 65 anos, a paciente tem CRB-65 = 0 (variante do CURB-65 sem a ureia, útil quando esse exame não está disponível, como na atenção primária), indicando baixo risco e tratamento ambulatorial — macrolídeo (ou amoxicilina) por via oral é a opção adequada para PAC leve em paciente jovem e previamente hígida, sem necessidade de internação.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3303",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Uma paciente de 73 anos, diabética e hipertensa, sem tabagismo, procura atendimento de emergência por dispneia, tosse produtiva, febre de 39°C e dor torácica ventilatório-dependente. PA 80x50mmHg, FC 115bpm, SatO2 91%, FR 26irpm; crepitantes à direita. Leucócitos 19.000/mm³ com 15% de bastonetes, ureia 108mg/dL, creatinina 1,6mg/dL; radiografia com consolidação em lobo inferior direito. Julgue o item: \"O germe Mycoplasma pneumoniae é o segundo patógeno mais comumente isolado em casos como o citado.\"",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 0,
+    "comentario": "Nas séries epidemiológicas de pneumonia adquirida na comunidade, o Streptococcus pneumoniae permanece o agente mais comumente isolado em praticamente todas as faixas etárias e cenários de gravidade, e o Mycoplasma pneumoniae figura, em diversos estudos, como o segundo agente mais frequentemente identificado quando se considera o conjunto de casos de PAC — ainda que sua importância relativa varie conforme a população estudada, a faixa etária e a gravidade do quadro, sendo mais proeminente em pacientes mais jovens e ambulatoriais do que em pacientes idosos gravemente enfermos como o caso descrito.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3304",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Homem, 19 anos, apresenta tosse com expectoração amarela, sem sangue, há 3 dias, com dor torácica posterior direita e febre de 38,5°C. Nega dispneia, comorbidades, tabagismo, etilismo ou viagens recentes. Exame físico: FR 16irpm, SatO2 97%, FC 95bpm, PA 120x80mmHg; estertores crepitantes finos na base posterior direita. Radiografia de tórax: consolidação segmentar em lobo inferior direito. Quais são o diagnóstico e a conduta mais adequados?",
+    "alternativas": [
+      "Pneumonia adquirida na comunidade; tratamento em enfermaria (CURB-65 = 0); ceftriaxona e claritromicina; controle clínico em 48-72h e clínico/radiológico ao final do tratamento.",
+      "Pneumonia adquirida na comunidade; tratamento ambulatorial (CURB-65 = 0); macrolídeo ou betalactâmico (amoxicilina ou amoxicilina + clavulanato); controle clínico em 48-72h e clínico/radiológico ao final do tratamento.",
+      "Pneumonia adquirida na comunidade; tratamento ambulatorial (CURB-65 = 3); quinolona respiratória; controle clínico em 48-72h e clínico/radiológico ao final do tratamento.",
+      "Pneumonia adquirida na comunidade; tratamento em enfermaria (CURB-65 = 2); ceftriaxona e claritromicina; controle clínico e radiológico em 48-72h e ao final do tratamento.",
+      "Pneumonia adquirida na comunidade; tratamento em UTI (CURB-65 = 4); ceftriaxona e quinolona respiratória; controle clínico e radiológico em 24h e ao final do tratamento."
+    ],
+    "correta": 1,
+    "comentario": "O paciente não apresenta nenhum dos critérios do CURB-65 (sem confusão, ureia não elevada, FR normal, PA normal, idade <65 anos), totalizando CURB-65 = 0 — indicando baixo risco e tratamento ambulatorial, com macrolídeo isolado ou betalactâmico (amoxicilina, com ou sem clavulanato) como opções de primeira linha para PAC leve em paciente jovem sem comorbidades.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3305",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Qual das alternativas abaixo é correta em relação à etiologia das pneumonias bacterianas comunitárias (em ordem de frequência) em pacientes portadores de DPOC?",
+    "alternativas": [
+      "Pneumococo, Haemophilus, bactérias gram-negativas.",
+      "Bactérias gram-negativas, pneumococo, estafilococos.",
+      "Bactérias gram-negativas, Haemophilus, pneumococo.",
+      "Estafilococos, pseudomonas, pneumococo.",
+      "Haemophilus, bactérias gram-negativas, germes atípicos."
+    ],
+    "correta": 0,
+    "comentario": "Em pacientes com DPOC, o Streptococcus pneumoniae permanece o agente bacteriano mais frequente na pneumonia comunitária, seguido pelo Haemophilus influenzae (agente colonizador comum da via aérea inferior nesses pacientes) e, em seguida, por bactérias gram-negativas — que ganham relevância crescente conforme a gravidade da doença pulmonar de base, o uso recente de antibióticos e a frequência de exacerbações/hospitalizações prévias.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3306",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Paciente masculino, 20 anos, pedreiro, atendido no PA com febre há 3 dias, tosse com expectoração purulenta e dor na base do hemitórax esquerdo há 2 dias. Sem doença crônica conhecida. Ao exame: ligeiramente toxemiado, temperatura 38°C, pulso 108bpm, FR 24irpm, PA 130x50mmHg. Estertores crepitantes e subcrepitantes em base pulmonar esquerda e campo médio direito. Radiografia: infiltrado algodonoso peribroncovascular em parte do lobo inferior esquerdo e lobo médio. Leucócitos 24.000/mm³. Assinale a alternativa correta:",
+    "alternativas": [
+      "A internação se justifica somente pela intensa leucocitose apresentada pelo paciente.",
+      "Dos germes atípicos, os mais frequentes causadores de pneumonia são o Mycoplasma pneumoniae e a Chlamydia pneumoniae.",
+      "O tratamento deve incluir um antibiótico com cobertura para germes atípicos.",
+      "Os germes atípicos não estão frequentemente implicados na etiologia das pneumonias adquiridas na comunidade."
+    ],
+    "correta": 2,
+    "comentario": "Diante de acometimento multilobar/bilateral com padrão de infiltrado peribroncovascular (padrão radiológico frequentemente associado a agentes atípicos, embora a diferenciação exclusivamente pela imagem tenha valor preditivo limitado), a conduta prudente é incluir cobertura empírica para germes atípicos (macrolídeo ou quinolona respiratória, associados ao betalactâmico), já que a apresentação clínico-radiológica isoladamente não permite excluir com segurança essa etiologia — reforçando por que os esquemas padrão de PAC internada associam betalactâmico a macrolídeo/quinolona.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3307",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Homem, 65 anos, dá entrada no pronto-socorro com distensão abdominal, parada de eliminação de fezes e flatos e vômitos de aspecto fecaloide há 48 horas. Indicado procedimento cirúrgico, apresentou episódio de vômito durante a indução anestésica. No segundo dia pós-operatório, evolui com febre alta contínua, estertores subcrepitantes e roncos, e expectoração abundante e amarelada. Radiografia de tórax: opacidade homogênea em base do pulmão direito. Qual a conduta?",
+    "alternativas": [
+      "Amoxicilina-clavulanato.",
+      "Ceftriaxona.",
+      "Macrolídeo e vancomicina.",
+      "Metronidazol e aminoglicosídeo."
+    ],
+    "correta": 0,
+    "comentario": "O episódio de vômito durante a indução anestésica, seguido de febre e consolidação pulmonar em base direita (localização típica de broncoaspiração em decúbito dorsal), caracteriza pneumonia aspirativa — cujo espectro etiológico inclui flora mista da orofaringe, com participação relevante de anaeróbios. A amoxicilina-clavulanato oferece cobertura adequada para essa flora mista (gram-positivos, gram-negativos e anaeróbios), sendo opção de primeira linha nesse cenário, diferente da ceftriaxona isolada (sem boa cobertura anaeróbia) ou de esquemas voltados a outros cenários (pneumonia hospitalar grave, por exemplo).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3308",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Em relação às pneumonias adquiridas na comunidade, analise as afirmativas: I - A resolução radiológica ocorre de maneira relativamente lenta, após a recuperação clínica. II - A tomografia computadorizada deve ser realizada o quanto antes, mesmo em pacientes jovens com infiltrado discreto, para detecção de complicações e na suspeita de embolia. III - A radiografia de tórax deve ser repetida após seis semanas do início dos sintomas, em fumantes com mais de 50 anos e na persistência dos sintomas ou achados anormais no exame físico. IV - O padrão radiológico pode ser usado para predizer com segurança o agente causal.",
+    "alternativas": [
+      "I e II.",
+      "I e III.",
+      "III e IV.",
+      "II e IV."
+    ],
+    "correta": 1,
+    "comentario": "A resolução radiológica da PAC costuma ser mais lenta que a recuperação clínica, podendo levar semanas mesmo com boa evolução clínica (afirmativa I correta). A radiografia de controle após 6 semanas é recomendada especificamente em fumantes acima de 50 anos ou diante de persistência de sintomas/achados anormais, justamente pelo maior risco de neoplasia subjacente mimetizando ou coexistindo com o quadro infeccioso nesse grupo (afirmativa III correta). Já a TC de tórax não deve ser solicitada rotineiramente e precocemente em todo paciente jovem com infiltrado discreto (uso indiscriminado, sem indicação clínica específica) — e o padrão radiológico (lobar, broncopneumônico, intersticial) NÃO permite predizer com segurança o agente etiológico, apesar de associações clássicas descritas na literatura, tornando II e IV falsas.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3309",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Homem, 70 anos, tabagista, com febre e tosse produtiva há 3 dias. Ao exame: sonolento, roncos e estertores em pulmão direito, enchimento capilar de 6 segundos, PA 90x40mmHg, FC 110bpm, FR 34irpm, SatO2 85% em ar ambiente. Histórico de 3 exacerbações no último ano, com internação em enfermaria há 2 meses. Qual o esquema antibiótico mais apropriado?",
+    "alternativas": [
+      "Levofloxacino.",
+      "Piperacilina-tazobactam + azitromicina.",
+      "Amoxicilina-clavulanato + claritromicina.",
+      "Meropenem + polimixina B.",
+      "Tigeciclina + vancomicina."
+    ],
+    "correta": 1,
+    "comentario": "A combinação de sinais de sepse grave/choque (hipotensão, perfusão periférica lentificada, hipoxemia importante) com fatores de risco para infecção por Pseudomonas aeruginosa (múltiplas exacerbações e hospitalização recente em paciente com doença pulmonar estrutural) exige cobertura antipseudomonas de amplo espectro associada a macrolídeo (para cobertura de atípicos e efeito imunomodulador) — piperacilina-tazobactam associada a azitromicina atende a esse perfil, sendo mais apropriada do que os esquemas mais restritos (sem cobertura antipseudomonas) ou excessivamente amplos para o cenário (carbapenêmico + polimixina, reservados a suspeita de multirresistência confirmada ou muito provável).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3310",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Paciente internado em UTI há 38 dias evolui com pneumonia associada à ventilação mecânica por Acinetobacter baumannii resistente aos carbapenêmicos. Qual a opção adequada de terapia antimicrobiana?",
+    "alternativas": [
+      "Imipenem.",
+      "Polimixina B.",
+      "Ceftriaxona + azitromicina.",
+      "Tigeciclina."
+    ],
+    "correta": 1,
+    "comentario": "Diante de Acinetobacter baumannii resistente a carbapenêmicos (portanto, imipenem não é opção viável), a polimixina B (colistina) permanece uma das poucas opções terapêuticas eficazes contra esse patógeno multirresistente, sendo amplamente utilizada em pneumonia associada à ventilação mecânica por bacilos gram-negativos resistentes — ceftriaxona/azitromicina não têm cobertura para Acinetobacter, e a tigeciclina tem penetração pulmonar e níveis séricos considerados subótimos para tratamento de pneumonia grave, sendo geralmente reservada a outras indicações.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3311",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Paciente de 28 anos, sem tabagismo, PA 100x60mmHg, FC 92bpm, FR 21irpm, SatO2 94%, com perda de peso e anemia ao longo de 4-6 semanas, além de fadiga, tosse produtiva com escarro purulento de odor pútrido, febre e dor pleurítica. Tomografia de tórax: áreas de cavitação com níveis hidroaéreos e desenvolvimento de abscessos. Assinale a alternativa correta:",
+    "alternativas": [
+      "O tratamento do abscesso pulmonar, independentemente da persistência da febre, pode ser feito com antibioticoterapia por 7 a 10 dias, por se tratar de pneumonia.",
+      "Trata-se de abscesso pulmonar agudo em paciente jovem previamente saudável, não sendo provável o envolvimento de Staphylococcus aureus.",
+      "É caso de imunocomprometimento pela história clínica, portanto não há envolvimento de bacilos gram-negativos como Klebsiella pneumoniae.",
+      "Nesse caso de abscesso pulmonar, a clindamicina não é opção de tratamento.",
+      "É um caso de abscesso pulmonar inespecífico e, em sua maioria, é causado por bactérias anaeróbias."
+    ],
+    "correta": 4,
+    "comentario": "O quadro subagudo (semanas de evolução), com escarro pútrido (marcador clássico de infecção por anaeróbios), cavitação com nível hidroaéreo e sintomas constitucionais (perda de peso, anemia), é típico de abscesso pulmonar, cuja etiologia mais comum, na grande maioria dos casos, envolve bactérias anaeróbias da flora orofaríngea aspirada — geralmente em infecções polimicrobianas. O tratamento do abscesso pulmonar exige curso prolongado de antibiótico (semanas, não apenas 7-10 dias), a clindamicina é opção terapêutica clássica e validada (boa cobertura anaeróbia), e nem Staphylococcus aureus nem Klebsiella pneumoniae podem ser categoricamente excluídos apenas pela idade ou ausência de imunocomprometimento evidente.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3312",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Assinale a alternativa INCORRETA em relação aos abscessos pulmonares:",
+    "alternativas": [
+      "O abscesso pulmonar é uma coleção de pus localizada, causada pela destruição do parênquima pulmonar por substâncias proteolíticas produzidas por bactérias patogênicas, ou por infecção bacteriana secundária em cavidade pulmonar preexistente.",
+      "O abscesso primário de pulmão ocorre como resultado de infecção bacteriana produtora de necrose no parênquima pulmonar de paciente previamente saudável.",
+      "A aspiração da secreção orofaríngea infectada é a causa mais comum de abscesso pulmonar secundário.",
+      "A infecção secundária de cavidade pulmonar preexistente e a necrose por neoplasia, pós-infarto ou tuberculose pulmonar também são definidas como abscessos."
+    ],
+    "correta": 2,
+    "comentario": "A aspiração de secreção orofaríngea infectada é, na verdade, a causa mais comum de abscesso pulmonar PRIMÁRIO (infecção necrosante em parênquima pulmonar previamente normal, sem lesão estrutural prévia) — não de abscesso SECUNDÁRIO, que por definição decorre de infecção sobreposta a uma condição pulmonar preexistente (cavidade prévia, área de necrose por neoplasia, infarto pulmonar ou tuberculose), tornando essa a alternativa incorreta ao trocar os conceitos de abscesso primário e secundário.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3313",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Paciente de 67 anos, ex-tabagista, sedentário e hipertenso controlado, com tosse produtiva amarelada e febre diária de 38,3°C há 5 dias, evoluindo há 1 dia com piora e dificuldade respiratória. Na admissão: agitado, confuso, FC 104bpm, FR 28irpm, temperatura 38,7°C, PA 94x62mmHg. Diante do quadro, o provável agente etiológico e o tratamento empírico mais adequado, respectivamente, são:",
+    "alternativas": [
+      "Pneumocystis jiroveci; meropenem associado a claritromicina.",
+      "Streptococcus agalactiae; daptomicina associada a claritromicina.",
+      "Enterococcus faecium; amoxicilina associada a claritromicina.",
+      "Staphylococcus aureus; vancomicina associada a claritromicina.",
+      "Streptococcus pneumoniae; ceftriaxona associada a claritromicina."
+    ],
+    "correta": 4,
+    "comentario": "O quadro de PAC grave (confusão mental, hipotensão, taquipneia importante) em paciente idoso é mais provavelmente causado pelo Streptococcus pneumoniae, o agente mais comum mesmo nas formas graves de PAC — o esquema empírico padrão para PAC grave/internada combina um betalactâmico de amplo espectro (ceftriaxona) com macrolídeo (claritromicina), cobrindo tanto o pneumococo quanto possíveis agentes atípicos, sendo mais apropriado do que os esquemas direcionados a agentes oportunistas (Pneumocystis) ou hospitalares/multirresistentes (Enterococcus, cobertura anti-MRSA empírica) sem fatores de risco específicos para tais patógenos.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3314",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Um paciente de 48 anos é admitido no pronto-socorro com tosse produtiva e febre há 3 dias. É hipertenso em uso de losartana e alérgico a betalactâmicos. Há cerca de 20 dias, utilizou azitromicina para tratamento de sinusite. Ao exame: bom estado geral, consciente, orientado, febril (38°C), FC 89bpm, PA 120x80mmHg, FR 17irpm, SatO2 98%. Sem sinais de desconforto respiratório, com estertores em base pulmonar direita. Radiografia de tórax: opacidade em base direita e broncogramas aéreos compatíveis com processo infeccioso atual. Qual a melhor conduta para este caso?",
+    "alternativas": [
+      "Repetir o tratamento com macrolídeo, pois o achado radiológico indica infecção por germes atípicos.",
+      "Indicar tratamento ambulatorial com levofloxacino oral e orientar retorno em caso de evolução desfavorável.",
+      "Solicitar exames laboratoriais para adequada estratificação do risco, dada a alteração radiológica evidente.",
+      "Indicar tratamento ambulatorial com levofloxacino, com retorno obrigatório em 48h para repetir radiografia.",
+      "Indicar antibioticoterapia endovenosa em regime de internação, pelo uso recente de azitromicina."
+    ],
+    "correta": 1,
+    "comentario": "Diante de alergia a betalactâmicos e uso recente (nos últimos meses) de macrolídeo — fator de risco reconhecido para resistência do pneumococo a essa classe, tornando prudente evitar repeti-la —, a quinolona respiratória (levofloxacino) em monoterapia é a alternativa mais apropriada, cobrindo tanto típicos quanto atípicos. Como o paciente apresenta sinais vitais estáveis e ausência de critérios de gravidade (baixo escore de risco), o tratamento ambulatorial é adequado, sem necessidade de internação ou de exames laboratoriais adicionais apenas pela presença de consolidação radiológica isolada em paciente clinicamente estável.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3315",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Homem, 28 anos, com febre (38,9°C), tosse produtiva e dispneia de início há 3 dias. É soropositivo para HIV e, há 45 dias, sua contagem de CD4 foi de 600 células/µL. A radiografia de tórax revela infiltrado interstício-alveolar em lobo inferior direito. Qual o diagnóstico mais provável?",
+    "alternativas": [
+      "Pneumonia por Pneumocystis jiroveci.",
+      "Pneumonite aspirativa.",
+      "Histoplasmose pulmonar.",
+      "Pneumonia por citomegalovírus.",
+      "Pneumonia bacteriana."
+    ],
+    "correta": 4,
+    "comentario": "Com contagem de CD4 de 600 células/µL (portanto acima do limiar de 200 células/µL que caracteriza imunossupressão significativa), o paciente vivendo com HIV não apresenta risco aumentado relevante para infecções oportunistas como pneumonia por Pneumocystis jiroveci, citomegalovírus ou histoplasmose disseminada — sendo a pneumonia bacteriana comunitária (mesmos agentes típicos da população geral, com discreto aumento de risco mesmo em CD4 preservado) o diagnóstico mais provável diante de um quadro agudo (3 dias) e radiografia com infiltrado consistente com etiologia bacteriana.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
+    "revisado": true
+  },
+  {
+    "id": "q3316",
+    "temaId": "pac",
+    "tema": "Pneumonia Adquirida na Comunidade (PAC)",
+    "enunciado": "Com relação ao tratamento das pneumonias, correlacione o agente etiológico com o antibiótico mais adequado: A) Streptococcus do grupo B; B) Chlamydia trachomatis; C) Staphylococcus aureus; D) Moraxella catarrhalis. Opções: 1) Ampicilina; 2) Amoxicilina com clavulanato; 3) Oxacilina; 4) Azitromicina/clindamicina. Assinale a sequência correta (A-B-C-D):",
+    "alternativas": [
+      "3-2-1-4",
+      "1-4-2-3",
+      "1-4-3-2",
+      "1-2-3-4"
+    ],
+    "correta": 2,
+    "comentario": "O Streptococcus do grupo B, sensível à penicilina, é tratado com ampicilina (1); a Chlamydia trachomatis, causa de pneumonia afebril do lactente, responde a macrolídeos como a azitromicina (4); o Staphylococcus aureus sensível à meticilina é tratado com oxacilina, penicilina resistente à betalactamase estafilocócica (3); e a Moraxella catarrhalis, frequentemente produtora de betalactamase, requer amoxicilina associada a clavulanato para superar essa resistência (2) — resultando na sequência 1-4-3-2.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2023,
+    "fonte": "Banco de questões — Estratégia MED (Pneumonias.pdf)",
     "revisado": true
   }
 ]

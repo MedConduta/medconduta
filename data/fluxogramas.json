@@ -737,7 +737,7 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "PAC — Fluxo de decisão terapêutica (CURB-65)",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Diretrizes Brasileiras para Pneumonia Adquirida na Comunidade - SBPT; IDSA/ATS Community-Acquired Pneumonia Guidelines (2019)",
     "fluxo": [
       {
@@ -10217,6 +10217,77 @@
               {
                 "tipo": "alerta",
                 "texto": "Crise colinérgica: suspender temporariamente a piridostigmina, atropina para sintomas muscarínicos, suporte respiratório se necessário"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-pac-diagnostico",
+    "temaId": "pac",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de PAC — confirmação diagnóstica e reconhecimento de agente/etiologia",
+    "revisado": true,
+    "fonte": "Diretrizes ATS/IDSA 2025 para PAC; Diretrizes Brasileiras SBPT",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com febre, tosse, dor pleurítica e/ou dispneia, suspeita de PAC"
+      },
+      {
+        "tipo": "action",
+        "texto": "Exame físico dirigido: aferir frequência respiratória (sinal isolado de maior valor para gravidade); buscar síndrome de consolidação pulmonar"
+      },
+      {
+        "tipo": "action",
+        "texto": "Radiografia de tórax (ou ultrassonografia pulmonar à beira do leito, quando radiografia indisponível ou duvidosa — ATS/IDSA 2025)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Infiltrado/consolidação compatível confirmado?",
+        "ramos": [
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Reconsiderar diagnóstico diferencial (bronquite aguda, insuficiência cardíaca, TEP, etc.)"
+              }
+            ]
+          },
+          {
+            "label": "Sim — diagnóstico de PAC confirmado",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Calcular CURB-65 (ou PSI) para estratificar gravidade e definir local de tratamento"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Fatores de risco para agente específico (exposição a ar-condicionado/torres de resfriamento, pós-influenza, aspiração, fibrose cística/bronquiectasias, etilismo)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Direcionar cobertura empírica ao agente sugerido (Legionella, S. aureus/MRSA, anaeróbios, Pseudomonas, Klebsiella) além do esquema padrão"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — sem fatores de risco específicos",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cobertura empírica padrão para típicos/atípicos conforme gravidade e local de tratamento"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
