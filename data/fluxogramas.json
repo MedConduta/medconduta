@@ -10507,5 +10507,60 @@
         "texto": "Testes de 4ª geração reduzem a janela imunológica em relação aos testes de gerações anteriores, mas não a eliminam — sintomas de síndrome retroviral aguda com sorologia negativa recente justificam repetição do teste"
       }
     ]
+  },
+  {
+    "id": "flow-gonorreia-clamidia-tratamento",
+    "temaId": "ists-gonorreia-clamidia-outras",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Corrimento uretral/cervical — abordagem sindrômica",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Corrimento uretral ou cervical (com ou sem disúria)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Coletar amostra para NAAT (gonococo e clamídia), quando disponível, sem aguardar o resultado para tratar"
+      },
+      {
+        "tipo": "action",
+        "texto": "Tratamento empírico simultâneo: ceftriaxona 500mg IM dose única + doxiciclina 100mg VO 12/12h por 7 dias (ou azitromicina 1g VO dose única, se gestante ou intolerância à doxiciclina)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Convocar e tratar todas as parcerias sexuais dos últimos 60 dias, mesmo assintomáticas"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "NAAT confirma gonorreia isolada (clamídia excluída)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Ceftriaxona pode ser mantida em monoterapia — suspender cobertura para clamídia"
+              }
+            ]
+          },
+          {
+            "label": "Clamídia confirmada ou coinfecção",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter cobertura combinada até completar o tratamento de ambos os agentes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Sintomas persistentes ou recorrentes após tratamento adequado e sem nova exposição sexual levantam suspeita de resistência do gonococo à ceftriaxona — indicar cultura com teste de sensibilidade, não apenas NAAT"
+      }
+    ]
   }
 ]
