@@ -10081,5 +10081,147 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-miastenia-gravis-diagnostico",
+    "temaId": "miastenia-gravis",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação da fraqueza flutuante — miastenia gravis",
+    "revisado": true,
+    "fonte": "Critérios diagnósticos de miastenia gravis; recomendações de rastreio de timoma",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com fraqueza muscular flutuante e fatigável (piora com esforço/final do dia, melhora com repouso), sobretudo ocular (ptose, diplopia) e/ou bulbar"
+      },
+      {
+        "tipo": "action",
+        "texto": "Exame à beira do leito: teste de fadigabilidade (manter olhar para cima), teste do gelo sobre a pálpebra ptótica; verificar reflexos pupilares preservados"
+      },
+      {
+        "tipo": "action",
+        "texto": "Dosagem de anticorpo anti-receptor de acetilcolina (anti-AChR)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Anti-AChR positivo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Diagnóstico de miastenia gravis confirmado — prosseguir com tomografia de tórax para investigar timoma"
+              }
+            ]
+          },
+          {
+            "label": "Não (soronegativo)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Pesquisar anticorpo anti-MuSK; considerar eletroneuromiografia com estimulação repetitiva (decremento progressivo da resposta muscular)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Se positivo para anti-MuSK ou decremento característico ao ENMG: diagnóstico de miastenia gravis (soronegativa para anti-AChR) confirmado — prosseguir com tomografia de tórax"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-miastenia-gravis-tratamento",
+    "temaId": "miastenia-gravis",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Manejo da miastenia gravis e reconhecimento da crise miastênica x colinérgica",
+    "revisado": true,
+    "fonte": "Diretrizes de tratamento da miastenia gravis; inibidores de FcRn e do complemento",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico de miastenia gravis confirmado"
+      },
+      {
+        "tipo": "action",
+        "texto": "Piridostigmina como tratamento sintomático de primeira linha"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Doença significativa/generalizada exigindo controle a médio-longo prazo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Imunossupressão (corticoide, azatioprina); timectomia se timoma presente (sempre) ou em miastenia generalizada anti-AChR positiva selecionada mesmo sem timoma"
+              }
+            ]
+          },
+          {
+            "label": "Não — apenas sintomas leves/oculares",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter piridostigmina e seguimento clínico"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Doença moderada a grave refratária à imunossupressão convencional?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Considerar inibidor de FcRn (efgartigimode, rozanolixizumabe) ou, se anti-AChR positivo, inibidor do complemento (eculizumabe, ravulizumabe, zilucoplan)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter tratamento atual com seguimento clínico"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Piora aguda da fraqueza — qual quadro?",
+        "ramos": [
+          {
+            "label": "Fraqueza respiratória/disfagia grave, SEM sinais muscarínicos (pupilas normais, sem bradicardia/sialorreia)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Crise miastênica: internar em UTI, monitorização respiratória seriada, imunoglobulina EV ou plasmaférese, suporte ventilatório se necessário; revisar/remover fármacos precipitantes (ex.: aminoglicosídeos, betabloqueadores)"
+              }
+            ]
+          },
+          {
+            "label": "Sialorreia, cólicas, diarreia, miose, bradicardia (sinais muscarínicos)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Crise colinérgica: suspender temporariamente a piridostigmina, atropina para sintomas muscarínicos, suporte respiratório se necessário"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
