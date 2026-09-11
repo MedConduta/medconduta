@@ -10562,5 +10562,81 @@
         "texto": "Sintomas persistentes ou recorrentes após tratamento adequado e sem nova exposição sexual levantam suspeita de resistência do gonococo à ceftriaxona — indicar cultura com teste de sensibilidade, não apenas NAAT"
       }
     ]
+  },
+  {
+    "id": "flow-arboviroses-diferencial",
+    "temaId": "arboviroses-zika-chikungunya-febre-amarela",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Síndrome febril aguda por arbovirose — diferencial clínico",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Febre aguda em área de circulação de arbovírus (Aedes aegypti ou, em área de mata, Haemagogus/Sabethes)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Exposição a área de mata/silvestre e sem vacinação prévia contra febre amarela?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar febre amarela com prioridade absoluta — notificação compulsória imediata"
+              }
+            ]
+          },
+          {
+            "label": "Não — contexto urbano",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Priorizar diferencial entre dengue, Zika e chikungunya"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Qual sintoma predomina no quadro?",
+        "ramos": [
+          {
+            "label": "Exantema pruriginoso + conjuntivite não purulenta, febre baixa",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar de Zika — atenção especial se gestante (risco de síndrome congênita)"
+              }
+            ]
+          },
+          {
+            "label": "Artralgia intensa e incapacitante, febre alta súbita",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar de chikungunya — monitorar evolução para forma crônica"
+              }
+            ]
+          },
+          {
+            "label": "Icterícia, hemorragias, período de remissão seguido de intoxicação",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar de febre amarela grave — investigar sinal de Faget, transaminases, função renal"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Evitar AAS e AINEs empiricamente até excluir dengue como diagnóstico diferencial, pelo risco de sangramento — tratamento sintomático com paracetamol enquanto aguarda confirmação"
+      }
+    ]
   }
 ]
