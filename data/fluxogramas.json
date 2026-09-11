@@ -1796,23 +1796,35 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Meningite bacteriana — Fluxo de manejo inicial",
-    "revisado": false,
-    "fonte": "Ministerio da Saude - Guia de Vigilancia em Saude (Meningites); IDSA Practice Guidelines for Bacterial Meningitis",
+    "revisado": true,
+    "fonte": "ESCMID Guideline for Diagnosis and Treatment of Acute Bacterial Meningitis (2024)",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Suspeita clínica de meningite bacteriana (febre + rigidez de nuca + alteração de consciência)"
+        "texto": "Suspeita clínica de meningite bacteriana confirmada ou fortemente suspeitada"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Meta: antibiótico empírico iniciado em até 1 hora da chegada ao serviço (ESCMID 2024)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ceftriaxona + vancomicina, iniciadas logo após hemoculturas/punção — nunca adiadas por atraso em exames"
+      },
+      {
+        "tipo": "action",
+        "texto": "Dexametasona antes ou junto à 1ª dose de antibiótico (nunca depois)"
       },
       {
         "tipo": "decisao",
-        "texto": "Sinais de hipertensão intracraniana ou déficit focal?",
+        "texto": "Pneumococo isolado com resistência à cefalosporina (CIM >2mcg/mL)?",
         "ramos": [
           {
             "label": "Sim",
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "TC de crânio antes da punção lombar"
+                "texto": "Manter ou associar rifampicina (sinergismo com ceftriaxona)"
               }
             ]
           },
@@ -1821,23 +1833,30 @@
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "Realizar punção lombar imediatamente"
+                "texto": "Manter esquema padrão, ajustando conforme antibiograma"
               }
             ]
           }
         ]
       },
       {
-        "tipo": "action",
-        "texto": "Iniciar antibioticoterapia empírica sem atraso"
-      },
-      {
-        "tipo": "alerta",
-        "texto": "Petéquias/púrpura associadas → suspeitar meningococcemia, risco de choque séptico rápido"
+        "tipo": "decisao",
+        "texto": "Etiologia meningocócica confirmada?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Quimioprofilaxia de contactantes próximos (rifampicina, ceftriaxona ou ciprofloxacino)"
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "end",
-        "texto": "Ajustar antibiótico conforme resultado do líquor/cultura"
+        "texto": "Após alta: audiometria de rotina (rastreio de surdez neurossensorial) e atualização vacinal (pneumocócica/meningocócica)"
       }
     ]
   },
@@ -9000,6 +9019,61 @@
       {
         "tipo": "end",
         "texto": "Prevenção secundária (antiagregação/anticoagulação conforme etiologia), investigação etiológica e reabilitação precoce"
+      }
+    ]
+  },
+  {
+    "id": "flow-meningite-diagnostico",
+    "temaId": "meningite",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de meningite bacteriana — sequência diagnóstica sem atraso terapêutico",
+    "revisado": true,
+    "fonte": "ESCMID Guideline for Diagnosis and Treatment of Acute Bacterial Meningitis (2024)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de meningite (febre + rigidez de nuca + alteração de consciência, ou pelo menos 1 desses + cefaleia)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Coletar hemoculturas imediatamente"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Critérios para TC de crânio antes da punção lombar (imunossupressão, história de doença de SNC, papiledema, déficit focal, convulsão recente, rebaixamento importante da consciência)?",
+        "ramos": [
+          {
+            "label": "Presentes",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "NÃO atrasar o antibiótico empírico aguardando a TC — iniciar após hemoculturas, mesmo antes da punção"
+              },
+              {
+                "tipo": "action",
+                "texto": "TC de crânio → se sem contraindicação, realizar punção lombar em seguida"
+              }
+            ]
+          },
+          {
+            "label": "Ausentes",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Punção lombar imediata, sem necessidade de TC prévia"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Análise do LCR: celularidade, glicose, proteína, Gram e cultura"
+      },
+      {
+        "tipo": "end",
+        "texto": "Padrão neutrofílico + hipoglicorraquia + proteína elevada confirma meningite bacteriana — ajustar antibiótico conforme Gram/cultura"
       }
     ]
   }
