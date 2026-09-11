@@ -2775,7 +2775,7 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Dengue — Fluxo de classificação de risco e hidratação",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Ministerio da Saude - Guia de Manejo Clinico do Dengue; OMS/WHO Dengue Guidelines (2009, atualizacao 2023)",
     "fluxo": [
       {
@@ -10288,6 +10288,81 @@
                     ]
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-dengue-diagnostico",
+    "temaId": "dengue",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Dengue — reconhecimento de fase clínica e exames confirmatórios",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Manejo Clínico da Dengue",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Caso suspeito de dengue (febre alta de início abrupto + 2 ou mais: cefaleia, mialgia, artralgia, dor retro-orbitária, exantema, em área endêmica/epidemia)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Definir fase clínica e tempo de doença"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Tempo de doença ≤5 dias (fase febril)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Solicitar antígeno NS1 (maior sensibilidade nos primeiros dias) ou RT-PCR"
+              }
+            ]
+          },
+          {
+            "label": "Não — ≥5-6 dias",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Solicitar sorologia IgM/IgG (NS1 perde sensibilidade nessa fase)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Atenção: a fase crítica (maior risco de extravasamento plasmático e sinais de alarme) coincide com a defervescência da febre (3º-7º dia) — não com seu pico, momento em que paciente e família tendem a acreditar que a doença está melhorando"
+      },
+      {
+        "tipo": "action",
+        "texto": "Hemograma seriado (hematócrito e plaquetas) durante toda a evolução, especialmente na fase crítica"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Hemoconcentração (aumento do hematócrito) associada a plaquetopenia progressiva e/ou sinais de alarme clínicos?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Classificar como Grupo C/D (dengue com sinais de alarme/grave) — ver fluxograma de tratamento"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Classificar como Grupo A/B conforme presença de comorbidade/sangramento espontâneo/prova do laço — ver fluxograma de tratamento"
               }
             ]
           }
