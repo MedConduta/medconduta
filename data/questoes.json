@@ -56593,5 +56593,500 @@
     "ano": 2024,
     "fonte": "Banco de questões — Estratégia MED (Hepato.pdf/Introd.pdf/Cirros.pdf — Hepatologia/Gastroenterologia)",
     "revisado": true
+  },
+  {
+    "id": "q3099",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Paulo, 49 anos, caminhoneiro, hipertenso em tratamento irregular, apresenta hemiparesia direita e afasia súbitas há 45 minutos. NIHSS 14. Qual o próximo passo?",
+    "alternativas": [
+      "Administrar 300mg VO de AAS.",
+      "Iniciar alteplase IV.",
+      "Realizar ressonância magnética.",
+      "Realizar tomografia de crânio."
+    ],
+    "correta": 3,
+    "comentario": "A tomografia de crânio sem contraste é sempre o primeiro passo diante de suspeita de AVC agudo, antes de qualquer decisão terapêutica (incluindo trombólise) — sua função primária é excluir hemorragia intracraniana, contraindicação absoluta à reperfusão química.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3100",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Sobre a escala NIHSS, é correto afirmar que:",
+    "alternativas": [
+      "A ataxia pode ser avaliada pela manobra index-nariz ou calcanhar-joelho.",
+      "Mutismo por barreira mecânica (ex.: cânula orotraqueal) dá pontuação máxima em disartria e linguagem.",
+      "Paciente amputado deve ter pontuação máxima na força desse membro.",
+      "Heminegligência deve ser pontuada no paciente não contactuante.",
+      "O NIHSS é mais importante nos casos de AVC hemorrágico."
+    ],
+    "correta": 0,
+    "comentario": "A ataxia de membros no NIHSS é avaliada pelas manobras index-nariz (membro superior) e calcanhar-joelho (membro inferior), comparando a coordenação entre os dois lados. As demais alternativas descrevem regras incorretas de pontuação: mutismo por barreira mecânica não deve ser pontuado como déficit real de linguagem; membro amputado é excluído da pontuação (não pontuado como força zero); heminegligência não pode ser avaliada de forma confiável no paciente não contactuante; e o NIHSS foi desenvolvido e é mais amplamente validado para AVC isquêmico.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3101",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Homem, 78 anos, com hemiparesia direita e dificuldade para falar há 2 horas. Após exame neurológico rápido, qual a conduta mais adequada?",
+    "alternativas": [
+      "Eletrólitos + ressonância magnética com perfusão cerebral imediata.",
+      "Glicemia capilar + eletroencefalograma na urgência.",
+      "Glicemia capilar + tomografia de crânio e angiotomografia.",
+      "Eletrólitos + coleta de líquor."
+    ],
+    "correta": 2,
+    "comentario": "Diante de um déficit neurológico focal agudo, a sequência inicial correta é a glicemia capilar (excluir hipoglicemia como mimetizadora de AVC) seguida de tomografia de crânio sem contraste (excluir hemorragia) e angiotomografia (pesquisar oclusão de grande vaso, elegível a trombectomia) — eletroencefalograma, líquor e eletrólitos não são prioritários nesse momento inicial.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3102",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Homem, 67 anos, apresenta 2º episódio de perda de força em membro superior/inferior direitos com recuperação total, sem alteração de face, fala ou sensibilidade. Hipertenso, ritmo cardíaco irregular sugestivo de fibrilação atrial, força preservada ao exame. Qual a hipótese mais provável?",
+    "alternativas": [
+      "Ataque isquêmico transitório.",
+      "AVC isquêmico.",
+      "Transtorno conversivo.",
+      "Síndrome de Von Recklinghausen.",
+      "Hipoglicemia."
+    ],
+    "correta": 0,
+    "comentario": "Episódio recorrente de déficit neurológico focal com recuperação COMPLETA e força preservada ao exame no momento da avaliação é compatível com ataque isquêmico transitório (AIT) — a presença de fibrilação atrial reforça a hipótese de etiologia cardioembólica, mas por definição o AIT não deixa déficit residual, diferenciando-o do AVC isquêmico estabelecido.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3103",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Homem, 50 anos, acorda com hemiparesia direita. PA 190x110mmHg. Tomografia de crânio mostra hipodensidade parietal esquerda (achado já estabelecido/crônico à imagem), sem desvio de linha média. Qual o tratamento inicial?",
+    "alternativas": [
+      "Alteplase.",
+      "Estatina apenas.",
+      "Nitroprussiato de sódio.",
+      "AAS e estatina.",
+      "AAS e dose de ataque de clopidogrel."
+    ],
+    "correta": 4,
+    "comentario": "A hipodensidade já visível na tomografia (achado já estabelecido, e não apenas hiperagudo) indica que o infarto já está constituído e o momento exato de início é desconhecido (\"AVC ao acordar\") sem critérios de imagem avançada disponíveis para estender a janela de trombólise — a conduta correta é o tratamento antitrombótico, com dupla antiagregação (AAS + dose de ataque de clopidogrel) sendo benéfica em AVC isquêmico agudo leve a moderado não cardioembólico, conforme evidências de estudos como o POINT/CHANCE.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3104",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Mulher, 25 anos, hemiplegia direita e afasia há 6 horas, história de 4 abortamentos prévios. Qual o diagnóstico e a conduta mais adequados?",
+    "alternativas": [
+      "AVE por síndrome do anticorpo antifosfolípide; TC sem contraste + dosagem de anticoagulante lúpico, anticardiolipina e anti-beta-2-glicoproteína I, com repetição dos anticorpos em 12 semanas.",
+      "Mielite transversa por SAAF; pulsoterapia com corticoide.",
+      "AVE por SAAF; TC com contraste + dosagem dos anticorpos apenas na fase aguda.",
+      "Paralisia de Todd; craniotomia descompressiva de urgência.",
+      "Mielite transversa por SAAF; plasmaférese de urgência."
+    ],
+    "correta": 0,
+    "comentario": "A associação de AVC isquêmico em paciente jovem com história de abortamentos de repetição é altamente sugestiva de síndrome do anticorpo antifosfolípide (SAAF) — uma causa importante de AVC em jovens sem fatores de risco cardiovascular clássicos. O diagnóstico requer dosagem dos anticorpos antifosfolípides (anticoagulante lúpico, anticardiolipina, anti-beta-2-glicoproteína I) com CONFIRMAÇÃO por repetição em pelo menos 12 semanas, já que títulos transitoriamente positivos podem ocorrer em outros contextos (infecções, por exemplo) sem significar SAAF verdadeira.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3105",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Sra. Maria do Carmo apresentou AVC isquêmico cardioembólico há 2 semanas, encontra-se estabilizada e recebe alta. Assinale a alternativa correta quanto ao anticoagulante:",
+    "alternativas": [
+      "Varfarina 5mg/kg, com ajuste de INR a cada 2 semanas.",
+      "Apixabana 2,5mg 2x/dia se peso > 80kg E idade > 80 anos.",
+      "Rivaroxabana 15mg/dia se ClCr < 50mL/min.",
+      "Dabigatrana 150mg 2x/dia se ClCr < 30mL/min.",
+      "Não usar anticoagulante, apenas AAS 100mg/dia."
+    ],
+    "correta": 2,
+    "comentario": "Em pacientes com AVC cardioembólico por fibrilação atrial e função renal reduzida, a rivaroxabana deve ter sua dose reduzida para 15mg/dia quando o clearance de creatinina está entre 15-50mL/min. As demais alternativas contêm erros de dosagem/critério: a redução de dose da apixabana (para 2,5mg 2x/dia) exige a combinação de PELO MENOS 2 de 3 critérios (idade≥80 anos, peso≤60kg, creatinina≥1,5mg/dL — não peso E idade juntos como descrito); dabigatrana 150mg 2x/dia é contraindicada com ClCr<30 (dose reduzida ou preferir outro agente); varfarina não é dosada por peso corporal; e a anticoagulação plena (não apenas AAS) é indicada no AVC cardioembólico por FA.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3106",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Mulher, 45 anos, hemiparesia direita e afasia, NIHSS 16, PA 130x90mmHg, FC 70bpm. Teve COVID-19 há 1 mês. Sintomas há aproximadamente 1 hora. TC sem isquemia ou sangramento, laboratório e glicemia normais. Qual a conduta?",
+    "alternativas": [
+      "Internar para ressonância magnética.",
+      "AAS 300mg + UTI para investigação etiológica.",
+      "Punção liquórica.",
+      "Iniciar alteplase 0,9mg/kg e monitorizar PA, consciência e NIHSS."
+    ],
+    "correta": 3,
+    "comentario": "A infecção por COVID-19 prévia (1 mês) NÃO é contraindicação à trombólise. Diante de déficit neurológico agudo dentro da janela de 4,5h, TC sem hemorragia, PA controlada e sem outras contraindicações, a trombólise endovenosa com alteplase está indicada, com monitorização rigorosa de pressão arterial, nível de consciência e NIHSS durante e após a infusão.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3107",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Marta, 69 anos, apresenta hemiparesia esquerda, anisocoria, afasia, Glasgow 14, PA 190x120mmHg, FC 52bpm, glicemia 294mg/dL. Julgue o item: \"Na ausência de resposta às medidas da avaliação inicial, a equipe deve orientar Marta a retornar para casa e o esposo a acionar o SAMU se piorar.\"",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 1,
+    "comentario": "A afirmativa está errada: um paciente com suspeita de AVC agudo (déficit focal, rebaixamento do nível de consciência, sinais de possível herniação como anisocoria) nunca deve ser liberado para casa — requer internação e investigação/tratamento imediatos em ambiente hospitalar, dado o risco de deterioração rápida e a janela terapêutica estreita para intervenções de reperfusão.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3108",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Homem, 78 anos, com perda súbita de acuidade visual no olho direito, revertida em menos de 5 minutos (amaurose fugaz). Qual a fonte embólica mais provável?",
+    "alternativas": [
+      "Artéria carótida externa direita.",
+      "Artéria carótida interna esquerda.",
+      "Artéria carótida interna direita.",
+      "Artéria carótida externa esquerda."
+    ],
+    "correta": 2,
+    "comentario": "A amaurose fugaz (perda visual monocular transitória) é classicamente causada por êmbolos originados da artéria carótida interna IPSILATERAL ao olho acometido, já que a artéria oftálmica (que irriga a retina) é ramo da carótida interna — no caso, olho direito acometido aponta para a carótida interna direita como fonte embólica mais provável.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3109",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Paciente de 35 anos, com AVC isquêmico. Qual o exame padrão-ouro para avaliar a presença de forame oval patente?",
+    "alternativas": [
+      "Doppler transcraniano com teste de microbolhas.",
+      "Ecocardiograma transesofágico com teste de microbolhas.",
+      "Ecocardiograma transtorácico com teste de microbolhas.",
+      "Angiorressonância de vasos cervicais."
+    ],
+    "correta": 1,
+    "comentario": "O ecocardiograma transesofágico com teste de microbolhas (contraste salino agitado) é o exame padrão-ouro para a detecção de forame oval patente, permitindo visualização direta do septo interatrial e da passagem de microbolhas do átrio direito para o esquerdo — investigação relevante em AVC criptogênico de pacientes jovens.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3110",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Paciente de 60 anos, hipertenso e dislipidêmico, apresenta sintomas neurológicos noturnos com resolução em 30 minutos, seguidos de recorrência ao meio-dia (horário fixo e conhecido), chegando ao hospital às 14h. PA 200x70mmHg, NIHSS 17. Com base no quadro, qual a conduta?",
+    "alternativas": [
+      "Contraindicação por PA elevada; iniciar antiagregante.",
+      "Contraindicação por estar fora da janela; iniciar antiagregante.",
+      "Contraindicação por trombo em artéria cerebral média esquerda.",
+      "Indicação de trombólise IV com rtPA."
+    ],
+    "correta": 3,
+    "comentario": "O horário a ser considerado para o cálculo da janela terapêutica é o do último momento em que o paciente foi visto SEM o déficit atual — nesse caso, o evento noturno resolveu completamente, e a recorrência ocorreu ao meio-dia (horário conhecido e fixo). Da recorrência (meio-dia) até a chegada (14h) transcorreram apenas 2 horas, dentro da janela de 4,5h para trombólise — ponto de ensino importante sobre como determinar corretamente o \"last known well\".",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3111",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Paciente de 55 anos, hipertenso e com diabetes, apresenta hemiparesia direita e afasia há 1 hora. PA 240x110mmHg. Tomografia de crânio normal. Assinale a alternativa correta:",
+    "alternativas": [
+      "TC normal exige ressonância magnética para definir área isquêmica antes de qualquer decisão.",
+      "É candidato a trombolítico sem necessidade de reduzir a PA, pelo baixo risco de sangramento.",
+      "Idealmente, tratar em unidade de AVC, reduzir a PA e avaliar contraindicações antes do trombolítico.",
+      "O trombolítico de escolha é a estreptoquinase em dose plena.",
+      "Trombectomia só estaria indicada se a TC mostrasse área isquêmica bem definida."
+    ],
+    "correta": 2,
+    "comentario": "A PA muito elevada (240x110mmHg) ultrapassa o limite máximo permitido para trombólise (185x110mmHg), exigindo redução controlada com anti-hipertensivo IV titulável antes do procedimento, idealmente em unidade especializada de AVC, com avaliação sistemática de contraindicações — a TC normal na fase hiperaguda é esperada e não impede a trombólise nem exige RM obrigatória; a estreptoquinase não é utilizada no AVC isquêmico pelo alto risco hemorrágico; e a trombectomia depende de identificação de oclusão de grande vaso na angiotomografia, não de área isquêmica já definida na TC simples.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3112",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Paciente apresenta paralisia de nervos cranianos, diplopia, tontura, náuseas, vômitos, disartria, disfagia, soluços e ataxia de marcha. Qual o território vascular mais provável?",
+    "alternativas": [
+      "Cerebral anterior.",
+      "Vértebro-basilar.",
+      "Cerebral média.",
+      "Cerebral posterior.",
+      "Carótida interna."
+    ],
+    "correta": 1,
+    "comentario": "A combinação de acometimento de múltiplos nervos cranianos, diplopia, vertigem, disartria, disfagia e ataxia (sintomas de tronco encefálico e cerebelo) é característica de AVC do território vértebro-basilar (circulação posterior), que irriga tronco encefálico, cerebelo e porções occipitais/temporais mediais.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3113",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Qual escore prevê o risco de AVC nos dias subsequentes a um ataque isquêmico transitório?",
+    "alternativas": [
+      "CHA2DS2-VASc.",
+      "ABCD2.",
+      "APRI.",
+      "NIHSS.",
+      "ASPECTS."
+    ],
+    "correta": 1,
+    "comentario": "O escore ABCD2 (idade, PA, características clínicas, duração dos sintomas, presença de diabetes) é utilizado para estratificar o risco de AVC isquêmico estabelecido nos dias seguintes a um AIT, orientando a urgência da investigação e do início da prevenção secundária.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3114",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Paciente de 81 anos, com AVC isquêmico há 2 horas e AVC isquêmico prévio há 60 dias, hipertenso e diabético. Hemiparesia direita e afasia, NIHSS 23. PA 190x140mmHg, reduzida para 140x110mmHg após tratamento. TC mostra hipodensidade em mais de 2/3 do território da artéria cerebral média. Quais são os critérios de EXCLUSÃO para trombólise nesse caso?",
+    "alternativas": [
+      "PA na chegada ≥185x110mmHg e idade > 80 anos.",
+      "TC com hipoatenuação em mais de 2/3 do território da ACM E AVC isquêmico nos últimos 3 meses.",
+      "Pacientes com mais de 75 anos e NIHSS 23.",
+      "AVC isquêmico nos últimos 3 meses e PA na chegada ≥185x110mmHg."
+    ],
+    "correta": 1,
+    "comentario": "Os dois critérios de exclusão absoluta presentes neste caso são: hipodensidade extensa (>1/3, e neste caso >2/3) do território da ACM na TC (sinal de infarto já estabelecido/extenso, com alto risco hemorrágico pós-trombólise) e AVC isquêmico prévio nos últimos 3 meses. A PA elevada na chegada, isoladamente, NÃO é contraindicação absoluta quando pode ser controlada antes do procedimento (como já ocorreu neste caso, reduzida para 140x110mmHg); idade avançada isolada também não é contraindicação absoluta.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3115",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Homem, 65 anos, com história de \"arritmia cardíaca\", apresenta hemiparesia esquerda completa (força grau 3) há 1 hora, alteração de sensibilidade e desvio parcial do olhar, sem cefaleia, alteração de consciência ou linguagem. Quais os exames diagnósticos iniciais?",
+    "alternativas": [
+      "USG de carótidas, ecocardiograma transesofágico, eletroencefalograma.",
+      "USG de carótidas, hemograma com plaquetas, eletrocardiograma.",
+      "TC ou RM de crânio, punção lombar, glicose sérica.",
+      "TC ou RM de crânio, eletrocardiograma e glicose sérica."
+    ],
+    "correta": 3,
+    "comentario": "A investigação inicial de um déficit neurológico focal agudo deve incluir neuroimagem (TC ou RM de crânio, para excluir hemorragia e avaliar extensão da isquemia), eletrocardiograma (pesquisar fibrilação atrial ou outra arritmia embolizante, coerente com a história de \"arritmia cardíaca\" do paciente) e glicose sérica (excluir hipoglicemia como mimetizadora do quadro) — punção lombar não é rotina na investigação inicial de AVC isquêmico sem suspeita de hemorragia subaracnóidea ou infecção do SNC.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3116",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Taxista, 56 anos, com fibrilação atrial em uso de varfarina, envolvido em colisão contra uma baliza. Apresenta hemianopsia homônima poupando a visão macular. Essa alteração é compatível com lesão em:",
+    "alternativas": [
+      "Quiasma óptico.",
+      "Radiação óptica.",
+      "Corpo geniculado lateral.",
+      "Córtex occipital."
+    ],
+    "correta": 3,
+    "comentario": "A hemianopsia homônima com preservação da visão macular (\"macular sparing\") é um achado clássico de lesão do córtex occipital (área visual primária), decorrente da dupla irrigação da região macular (artéria cerebral posterior E ramos da artéria cerebral média), que preserva parcialmente essa representação mesmo diante de infarto isquêmico da ACP — diferente de lesões mais anteriores na via óptica (quiasma, radiação óptica, corpo geniculado), que tipicamente não poupam a mácula.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3117",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Idoso, 74 anos, hipertenso, diabético, com fibrilação atrial crônica e dislipidemia, apresenta hemiparesia direita braquiofacial e afasia não fluente há 60 minutos. PA 160x98mmHg, FC 86bpm irregular. Tomografia (60 minutos após o evento) sem anormalidades agudas claras. Glicemia 220mg/dL. Qual a conduta?",
+    "alternativas": [
+      "Complementar com ressonância magnética de encéfalo.",
+      "Infundir insulina rápida IV.",
+      "Administrar AAS.",
+      "Iniciar trombólise com rtPA."
+    ],
+    "correta": 3,
+    "comentario": "Uma tomografia sem alterações agudas claras na fase hiperaguda (60 minutos) é achado ESPERADO e não contraindica nem atrasa a trombólise — a função primária da TC nesse momento é excluir hemorragia, não confirmar a isquemia (que pode não ser visível radiologicamente ainda). Dentro da janela de 4,5h, sem hemorragia e sem outras contraindicações, a trombólise com rtPA deve ser iniciada prontamente.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3118",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Sobre o tratamento da fase aguda do AVC isquêmico e suas atualizações, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "Estreptoquinase e uroquinase podem ser usadas sem risco significativo de sangramento.",
+      "A trombólise intra-arterial com alteplase é superior à via intravenosa e deve ser preferida.",
+      "A trombectomia mecânica é indicada para oclusão de grandes vasos até 6h, com estudos mostrando benefício até 16-24h em pacientes bem selecionados.",
+      "A trombectomia deve ser priorizada sobre o trombolítico IV, independentemente da janela temporal.",
+      "O melhor desfecho é obtido com a combinação de trombólise IV seguida de trombólise intra-arterial em sequência."
+    ],
+    "correta": 2,
+    "comentario": "A trombectomia mecânica está bem estabelecida para oclusão de grandes vasos proximais até 6h, com evidências robustas (estudos DAWN e DEFUSE 3, entre outros) demonstrando benefício em pacientes cuidadosamente selecionados por imagem de perfusão (penumbra salvável) em janelas estendidas de até 16-24h. Estreptoquinase e uroquinase não são utilizadas no AVC isquêmico pelo risco hemorrágico elevado; a trombólise intra-arterial isolada não é superior à IV como estratégia de primeira linha; e a trombectomia não substitui a trombólise IV quando ambas são indicadas — são estratégias complementares, não excludentes.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3119",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Quanto às terapias de reperfusão no AVC isquêmico agudo, assinale a alternativa correta.",
+    "alternativas": [
+      "Devem ser evitadas em pacientes com mais de 75 anos.",
+      "A associação de alteplase com heparina IV é indicada em pacientes de baixo risco de sangramento.",
+      "A terapia endovascular (trombectomia) é uma opção para pacientes com contraindicação absoluta à trombólise.",
+      "A terapia endovascular é ineficaz devido a trombose de stent.",
+      "A estreptoquinase deve ser reservada para pacientes com NIHSS < 5."
+    ],
+    "correta": 2,
+    "comentario": "A trombectomia mecânica é uma alternativa terapêutica importante justamente para pacientes com oclusão de grande vaso proximal que apresentam contraindicação absoluta à trombólise química (por exemplo, uso recente de anticoagulante, cirurgia recente, ou hemorragia ativa), não dependendo da administração do trombolítico. Idade avançada isolada não contraindica a reperfusão; a associação rotineira de alteplase com heparina aumenta o risco hemorrágico sem benefício estabelecido; e a estreptoquinase não tem papel no AVC isquêmico agudo em nenhum cenário.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3120",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "No Brasil, o AVC é a segunda causa de morte e a principal causa de incapacidade. Qual o seu principal fator de risco preditivo?",
+    "alternativas": [
+      "Dislipidemia.",
+      "Tabagismo.",
+      "Diabetes mellitus.",
+      "Hipertensão arterial sistêmica."
+    ],
+    "correta": 3,
+    "comentario": "A hipertensão arterial sistêmica é o principal fator de risco modificável para AVC (tanto isquêmico quanto hemorrágico), superando dislipidemia, tabagismo e diabetes mellitus em impacto populacional — o controle pressórico crônico adequado é a intervenção de prevenção primária mais custo-efetiva para reduzir a incidência de AVC.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3121",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Mulher, 75 anos, hipertensa, apresenta vertigem, diplopia, desequilíbrio e incoordenação súbitos há 1 hora. PA 165x105mmHg, FC 70-100bpm irregular. Sonolência, ataxia cerebelar, oftalmoparesia internuclear à esquerda, hemi-hipoestesia e hemiparesia à direita, disartria. TC normal. NIHSS 14. ECG mostra fibrilação atrial. Qual a conduta?",
+    "alternativas": [
+      "Aspirina.",
+      "Alteplase.",
+      "Clopidogrel.",
+      "Heparina."
+    ],
+    "correta": 1,
+    "comentario": "Apesar dos sintomas sugerirem território vértebro-basilar (posterior) e a TC estar normal (achado esperado e não contraindicante na fase hiperaguda), a paciente está dentro da janela de 4,5h com déficit significativo (NIHSS 14) e sem contraindicações evidentes — a trombólise com alteplase está indicada, independentemente do território vascular acometido (anterior ou posterior) ou da presença de fibrilação atrial como etiologia provável, que será tratada posteriormente com anticoagulação.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3122",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Qual é o único agente antiplaquetário com eficácia comprovada no tratamento agudo do AVC isquêmico (redução de recorrência e mortalidade)?",
+    "alternativas": [
+      "Ácido acetilsalicílico.",
+      "Dipiridamol.",
+      "Clopidogrel.",
+      "Abciximabe."
+    ],
+    "correta": 0,
+    "comentario": "O ácido acetilsalicílico (AAS), iniciado dentro de 24-48h do AVC isquêmico agudo (e não antes, se o paciente for submetido a trombólise), é o único antiplaquetário com eficácia comprovada por grandes ensaios clínicos (IST, CAST) na redução de recorrência precoce e mortalidade na fase aguda — clopidogrel isolado ou em associação (dupla antiagregação) tem papel mais específico em AVC minor/AIT de alto risco, e dipiridamol/abciximabe não têm essa indicação estabelecida na fase aguda.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3123",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "O uso de rtPA antes de 4 horas do início dos sintomas no AVC isquêmico tem como objetivo:",
+    "alternativas": [
+      "Diminuir a perda de consciência.",
+      "Aumentar em cerca de 30% a chance de o paciente evoluir com lesão mínima ou nenhuma sequela.",
+      "Aumentar em cerca de 30% a chance de não haver hemorragia intracraniana.",
+      "Diminuir significativamente a mortalidade."
+    ],
+    "correta": 1,
+    "comentario": "O principal benefício demonstrado da trombólise precoce no AVC isquêmico é funcional: aumento de aproximadamente 30% na chance de o paciente evoluir com resultado funcional mínimo ou ausência de sequela neurológica significativa — o benefício sobre a mortalidade global é mais modesto e não é o desfecho primário mais destacado dos grandes estudos (como o NINDS).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3124",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Sobre a Portaria nº 665/2012, que instituiu a linha de cuidado do AVC no Brasil, é correto afirmar que:",
+    "alternativas": [
+      "O AVC é considerado emergência médica, com objetivos de suporte avançado à vida, recanalização com trombolíticos quando indicado, prevenção de complicações, profilaxia secundária e reabilitação precoce.",
+      "Lesão isquêmica recente com regressão incompleta é denominada \"AVC menor\" ou \"pequeno icto\".",
+      "Crises convulsivas são mais raras no AVC hemorrágico lobar.",
+      "O risco de AVC após um AIT é de 70% nas primeiras 48 horas."
+    ],
+    "correta": 0,
+    "comentario": "A Portaria 665/2012 estabeleceu a linha de cuidado do AVC no Brasil, reconhecendo-o formalmente como emergência médica com protocolo assistencial estruturado — abrangendo suporte avançado à vida, recanalização precoce com trombolíticos quando indicado, prevenção de complicações agudas, profilaxia secundária e reabilitação iniciada o mais cedo possível, com o objetivo de reduzir mortalidade e sequelas.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": 2024,
+    "fonte": "Banco de questões — Estratégia MED (Aciden.pdf — Acidentes Vasculares Cerebrais)",
+    "revisado": true
+  },
+  {
+    "id": "q3125",
+    "temaId": "avc-isquemico",
+    "tema": "AVC Isquêmico Agudo",
+    "enunciado": "Em relação ao acidente vascular cerebral isquêmico (AVC), é correto afirmar que:",
+    "alternativas": [
+      "A presença de afasia sugere um AVC de distribuição da artéria cerebral anterior, geralmente do lado esquerdo.",
+      "A presença de diplopia sugere um AVC de circulação anterior.",
+      "O AVC da circulação anterior é mais provável de cursar com progressão no momento da apresentação do que o AVC da circulação posterior.",
+      "O AVC de circulação anterior raramente se apresenta com perda completa de consciência.",
+      "O AVC da artéria cerebral posterior está associado a ataxia, incontinência e fraqueza mais intensa nas pernas do que nos braços."
+    ],
+    "correta": 3,
+    "comentario": "A perda completa de consciência isolada é incomum no AVC de circulação anterior (a menos que haja edema extenso com efeito de massa secundário), sendo mais característica de AVC de tronco encefálico/circulação posterior, onde estruturas do sistema reticular ativador estão diretamente envolvidas. As demais alternativas trocam territórios: afasia é clássica de artéria cerebral MÉDIA (não anterior); diplopia sugere circulação POSTERIOR (não anterior); a progressão \"em degraus\"/escalonada é mais típica de circulação POSTERIOR; e a descrição de ataxia com fraqueza predominante em pernas é mais compatível com território da artéria cerebral ANTERIOR do que posterior.",
+    "banca": "ABC-SP 2023 (R3 Clínica Médica, Acesso Direto)",
+    "ano": 2024,
+    "fonte": "EMR (Eu Médico Residente) — banca real citada no material",
+    "revisado": true
   }
 ]
