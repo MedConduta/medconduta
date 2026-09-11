@@ -9935,5 +9935,151 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-parkinson-diagnostico",
+    "temaId": "doenca-parkinson",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação do parkinsonismo — causas secundárias e diferencial com formas atípicas",
+    "revisado": true,
+    "fonte": "Critérios clínicos de diagnóstico da doença de Parkinson (MDS); ensaio de amplificação de sementes de alfa-sinucleína (SAA)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com bradicinesia associada a tremor de repouso e/ou rigidez"
+      },
+      {
+        "tipo": "action",
+        "texto": "Revisão minuciosa de medicações em uso (antipsicóticos típicos, metoclopramida, flunarizina, cinarizina — antagonistas dopaminérgicos)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Uso de droga antagonista dopaminérgica temporalmente relacionada ao início dos sintomas?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Parkinsonismo induzido por drogas — suspender o agente causador e reavaliar (reversibilidade em semanas a meses)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Sinais de alerta para parkinsonismo atípico: simetria desde o início, ausência de tremor de repouso, quedas precoces, disautonomia proeminente, paralisia do olhar vertical, ausência de resposta à levodopa?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Investigar parkinsonismo atípico: atrofia de múltiplos sistemas (disautonomia), paralisia supranuclear progressiva (quedas, olhar vertical), degeneração corticobasal (assimetria extrema, apraxia) ou demência com corpos de Lewy (cognição precoce)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — quadro típico, assimétrico, com boa resposta esperada à levodopa",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Doença de Parkinson idiopática — diagnóstico clínico, sem necessidade obrigatória de neuroimagem; considerar SAA em líquor/biópsia de pele para confirmação biológica em cenários de dúvida diagnóstica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-parkinson-tratamento",
+    "temaId": "doenca-parkinson",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Estratégia terapêutica da doença de Parkinson conforme fase da doença",
+    "revisado": true,
+    "fonte": "Diretrizes de tratamento da doença de Parkinson; aprovação FDA 2024 de foscarbidopa/foslevodopa",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico de doença de Parkinson idiopática confirmado, com impacto funcional justificando tratamento sintomático"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente jovem, com sintomas leves, no início do tratamento?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar retardar o início da levodopa: agonista dopaminérgico ou inibidor de MAO-B como terapia inicial (reduz risco/antecipação de flutuações motoras e discinesias)"
+              }
+            ]
+          },
+          {
+            "label": "Não — paciente mais idoso ou sintomas mais intensos",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Levodopa + carbidopa (tratamento sintomático mais eficaz disponível)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Desenvolvimento de flutuações motoras (períodos OFF) ou discinesias com o uso prolongado?",
+        "ramos": [
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter tratamento oral, com ajustes de dose/intervalo conforme resposta"
+              }
+            ]
+          },
+          {
+            "label": "Sim — flutuações graves refratárias a ajuste farmacológico oral otimizado",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Paciente é candidato e deseja procedimento cirúrgico/invasivo?",
+                "ramos": [
+                  {
+                    "label": "Sim, aceita cirurgia",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Estimulação cerebral profunda (em casos cuidadosamente selecionados) ou infusão intrajejunal contínua de levodopa/carbidopa em gel"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não deseja ou não é candidato a procedimento invasivo/sonda",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Infusão subcutânea contínua de foscarbidopa/foslevodopa por bomba portátil — reduz tempo OFF e aumenta tempo ON sem discinesia, sem necessidade de procedimento para posicionamento de sonda"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
