@@ -661,39 +661,61 @@
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "AVC — Fluxo de reconhecimento e elegibilidade terapêutica",
-    "revisado": false,
-    "fonte": "Diretrizes da Sociedade Brasileira de Doencas Cerebrovasculares (SBDCV); AHA/ASA Guideline for Early Management of Acute Ischemic Stroke (2019, atualizacao 2023)",
+    "revisado": true,
+    "fonte": "AHA/ASA Guideline for Early Management of Acute Ischemic Stroke (atualizacao 2026)",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Déficit neurológico focal de início súbito (FAST positivo)"
+        "texto": "Déficit neurológico focal de início súbito (Cincinnati/FAST positivo)"
       },
       {
         "tipo": "action",
-        "texto": "Definir horário do último momento visto normal + TC de crânio sem contraste urgente"
+        "texto": "Definir horário do último momento visto normal + TC de crânio sem contraste urgente + NIHSS"
       },
       {
         "tipo": "decisao",
         "texto": "Hemorragia excluída na TC?",
         "ramos": [
           {
+            "label": "Não (hemorragia presente)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "AVC hemorrágico → conduta específica (controle pressórico, avaliação neurocirúrgica)"
+              }
+            ]
+          },
+          {
             "label": "Sim",
             "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Angio-TC para pesquisa de oclusão de grande vaso"
+              },
               {
                 "tipo": "decisao",
                 "texto": "Dentro da janela terapêutica para reperfusão?",
                 "ramos": [
                   {
-                    "label": "Sim",
+                    "label": "≤4,5h (ou critérios de imagem avançada)",
                     "fluxo": [
                       {
                         "tipo": "end",
-                        "texto": "Avaliar critérios para trombólise e/ou trombectomia mecânica"
+                        "texto": "Trombólise endovenosa (alteplase ou tenecteplase, ambas Classe I) — associar trombectomia se oclusão de grande vaso"
                       }
                     ]
                   },
                   {
-                    "label": "Não",
+                    "label": "Oclusão de grande vaso proximal, até 24h com penumbra salvável na imagem de perfusão",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Trombectomia mecânica (circulação anterior até 24h; basilar até 24h se NIHSS≥10)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Fora de qualquer janela/critério",
                     "fluxo": [
                       {
                         "tipo": "end",
@@ -702,15 +724,6 @@
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "label": "Não",
-            "fluxo": [
-              {
-                "tipo": "end",
-                "texto": "AVC hemorrágico → conduta específica (controle pressórico, avaliação neurocirúrgica)"
               }
             ]
           }
@@ -8920,6 +8933,73 @@
             ]
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "flow-avc-isquemico-tratamento",
+    "temaId": "avc-isquemico",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "AVC isquêmico agudo — manejo pressórico e cuidados pós-reperfusão",
+    "revisado": true,
+    "fonte": "AHA/ASA 2026; ENCHANTED2/MT; OPTIMAL-BP",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico de AVC isquêmico confirmado, conduta de reperfusão definida"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente será submetido à trombólise?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Controle pressórico rigoroso antes e depois do procedimento (limite máximo específico para trombólise)"
+              }
+            ]
+          },
+          {
+            "label": "Não candidato à trombólise",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Controle pressórico permissivo — não reduzir agressivamente a PA na fase aguda"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Trombectomia mecânica realizada com sucesso (recanalização completa)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "NÃO reduzir agressivamente a PA nas primeiras 72h — evitar PAS <140mmHg (risco demonstrado de dano com controle intensivo pós-reperfusão, ENCHANTED2/MT e OPTIMAL-BP)"
+              }
+            ]
+          },
+          {
+            "label": "Não elegível/sem trombectomia",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter controle pressórico permissivo padrão"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Prevenção secundária (antiagregação/anticoagulação conforme etiologia), investigação etiológica e reabilitação precoce"
       }
     ]
   }
