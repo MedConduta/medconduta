@@ -3506,7 +3506,7 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Exposição de risco ao HIV — Fluxo de profilaxia pós-exposição (PEP)",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Ministério da Saúde - PCDT para Profilaxia Pós-Exposição de Risco à Infecção pelo HIV",
     "fluxo": [
       {
@@ -10434,6 +10434,77 @@
       {
         "tipo": "alerta",
         "texto": "Testes não treponêmicos podem ser falso-positivos na gestação, lúpus e infecções virais agudas — sempre confirmar com teste treponêmico antes de excluir ou firmar diagnóstico isoladamente"
+      }
+    ]
+  },
+  {
+    "id": "flow-hiv-diagnostico",
+    "temaId": "hiv-aids",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "HIV — fluxograma diagnóstico laboratorial",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Manual Técnico para o Diagnóstico da Infecção pelo HIV",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de infecção pelo HIV ou rastreio de rotina"
+      },
+      {
+        "tipo": "action",
+        "texto": "Teste de triagem: imunoensaio de 4ª geração (detecta antígeno p24 + anticorpos) ou teste rápido"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Teste de triagem reagente?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Realizar teste confirmatório: teste molecular (carga viral/RNA) ou segundo imunoensaio de fluxograma/metodologia diferente"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Teste confirmatório reagente/detectável?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Diagnóstico de infecção pelo HIV confirmado — iniciar TARV independentemente do CD4"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Resultado discordante — considerar janela imunológica ou falso-positivo da triagem; repetir sorologia em 30 dias"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "HIV não reagente — se exposição de risco recente, considerar janela imunológica e repetir teste conforme protocolo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Testes de 4ª geração reduzem a janela imunológica em relação aos testes de gerações anteriores, mas não a eliminam — sintomas de síndrome retroviral aguda com sorologia negativa recente justificam repetição do teste"
       }
     ]
   }
