@@ -2704,40 +2704,64 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Estado de mal epiléptico — Fluxo terapêutico escalonado",
-    "revisado": false,
-    "fonte": "Liga Brasileira de Epilepsia; AES/ACEP Guideline for the Treatment of Status Epilepticus (2016)",
+    "revisado": true,
+    "fonte": "AES/ACEP Guideline for the Treatment of Status Epilepticus (atualizacao); Estudos ESETT e RAMPART",
     "fluxo": [
       {
         "tipo": "start",
-        "texto": "Crise convulsiva > 5 minutos ou crises repetidas sem recuperação da consciência"
+        "texto": "Crise convulsiva >5min ou crises repetidas sem recuperação da consciência entre elas"
       },
       {
         "tipo": "action",
-        "texto": "ABC + benzodiazepínico (1ª linha)"
+        "texto": "T1 (0-5min): estabilização — ABC, glicemia capilar, acesso venoso"
+      },
+      {
+        "tipo": "action",
+        "texto": "T2 (5-20min): benzodiazepínico — lorazepam 0,1mg/kg IV (máx. 4mg) ou diazepam 0,15-0,2mg/kg IV (máx. 10mg); se sem acesso venoso, midazolam IM 0,2mg/kg (máx. 10mg, RAMPART)"
       },
       {
         "tipo": "decisao",
-        "texto": "Crise persiste?",
+        "texto": "Crise persiste além de 20min apesar de benzodiazepínico em dose adequada?",
         "ramos": [
           {
             "label": "Sim",
             "fluxo": [
               {
                 "tipo": "action",
-                "texto": "Fenitoína, valproato ou levetiracetam EV (2ª linha)"
+                "texto": "T3 (20-40min): 2ª linha EV — levetiracetam 60mg/kg, ácido valproico 40mg/kg ou fosfenitoína 20mg PE/kg (eficácia equivalente, ESETT)"
               },
               {
-                "tipo": "alerta",
-                "texto": "Refratário → anestesia geral em UTI"
+                "tipo": "decisao",
+                "texto": "Crise persiste além de 40min (status refratário)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Anestesia geral (midazolam, propofol ou pentobarbital em infusão contínua) com suporte em UTI e EEG contínuo"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — crise cessou",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar e tratar causa de base; iniciar anticonvulsivante de manutenção"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
           {
-            "label": "Não",
+            "label": "Não — crise cessou",
             "fluxo": [
               {
                 "tipo": "end",
-                "texto": "Investigar e tratar causa de base (hipoglicemia, distúrbio eletrolítico, etc.)"
+                "texto": "Investigar e tratar causa de base (hipoglicemia, distúrbio eletrolítico etc.)"
               }
             ]
           }
@@ -9194,6 +9218,57 @@
               {
                 "tipo": "end",
                 "texto": "Monitorização para vasoespasmo nos dias subsequentes ao sangramento"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-crise-convulsiva-diagnostico",
+    "temaId": "crise-convulsiva-epilepsia",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Primeira crise convulsiva não provocada — investigação",
+    "revisado": true,
+    "fonte": "American Academy of Neurology Practice Parameter: Evaluation of the First Seizure",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com primeira crise convulsiva não provocada"
+      },
+      {
+        "tipo": "action",
+        "texto": "Investigar causas agudas reversíveis: glicemia, eletrólitos, função renal/hepática, triagem toxicológica"
+      },
+      {
+        "tipo": "action",
+        "texto": "Eletroencefalograma (caracterização do padrão de crise; um EEG intercrítico normal NÃO exclui epilepsia)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ressonância magnética de crânio (investigar lesão estrutural subjacente)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Déficit focal persistente após o período pós-ictal esperado (>24-48h)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Não atribuir a paralisia de Todd — investigar lesão estrutural (AVC, tumor) como diferencial"
+              }
+            ]
+          },
+          {
+            "label": "Não — resolução completa",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Compatível com paralisia de Todd pós-ictal; seguimento ambulatorial com neurologia"
               }
             ]
           }
