@@ -2818,7 +2818,7 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Sífilis — Fluxo diagnóstico e terapêutico",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Ministerio da Saude - PCDT para Atencao Integral as Pessoas com Infeccoes Sexualmente Transmissiveis; CDC STI Treatment Guidelines",
     "fluxo": [
       {
@@ -10367,6 +10367,73 @@
             ]
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "flow-sifilis-diagnostico",
+    "temaId": "ists-sifilis",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Sífilis — interpretação de sorologias discordantes",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Rastreio sorológico de sífilis (fluxograma tradicional: teste não treponêmico primeiro; ou fluxograma reverso: teste treponêmico/rápido primeiro)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Teste não treponêmico (VDRL/RPR) reagente + teste treponêmico reagente?",
+        "ramos": [
+          {
+            "label": "Ambos reagentes",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Diagnóstico confirmado — definir estágio clínico e tratar com penicilina benzatina"
+              }
+            ]
+          },
+          {
+            "label": "Discordante (treponêmico reagente + não treponêmico não reagente)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Repetir com um segundo teste treponêmico de metodologia diferente"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Segundo treponêmico reagente?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Sífilis já tratada (cicatriz sorológica) OU sífilis muito recente/tardia com VDRL negativo — avaliar história clínica e tratar se sem tratamento prévio documentado"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Resultado falso-positivo do primeiro treponêmico — não tratar, investigar outras causas se sintomático"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Testes não treponêmicos podem ser falso-positivos na gestação, lúpus e infecções virais agudas — sempre confirmar com teste treponêmico antes de excluir ou firmar diagnóstico isoladamente"
       }
     ]
   }
