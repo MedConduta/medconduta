@@ -9777,5 +9777,163 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-guillain-barre-diagnostico",
+    "temaId": "guillain-barre",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Fraqueza ascendente aguda — investigação e diagnóstico diferencial",
+    "revisado": true,
+    "fonte": "Diretriz EAN/PNS 2023 para Síndrome de Guillain-Barré",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com fraqueza muscular progressiva, simétrica e ascendente, de instalação em dias"
+      },
+      {
+        "tipo": "action",
+        "texto": "Exame neurológico: buscar arreflexia/hiporreflexia difusa, avaliar comprometimento sensitivo, nervos cranianos e força da musculatura respiratória"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Reflexos profundos preservados/exaltados ou fraqueza flutuante/fatigável (padrão atípico para Guillain-Barré)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Considerar diagnóstico diferencial: miastenia gravis (fatigabilidade), mielite transversa (nível sensitivo, reflexos exaltados), botulismo (fraqueza descendente), paralisia periódica hipocalêmica (dosar potássio)"
+              }
+            ]
+          },
+          {
+            "label": "Não — arreflexia difusa, padrão típico",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Punção lombar (dissociação albumino-citológica — proteína elevada, celularidade normal; pode estar ausente na 1ª semana) e eletroneuromiografia (padrão desmielinizante ou axonal)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Presença de oftalmoplegia e ataxia, sem fraqueza de membros proeminente?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Síndrome de Miller Fisher (variante com anticorpo anti-GQ1b)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Síndrome de Guillain-Barré (AIDP ou variante axonal AMAN/AMSAN conforme ENMG) — iniciar monitorização e tratamento"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-guillain-barre-tratamento",
+    "temaId": "guillain-barre",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Tratamento e monitorização da síndrome de Guillain-Barré",
+    "revisado": true,
+    "fonte": "Diretriz EAN/PNS 2023 para Síndrome de Guillain-Barré",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico de síndrome de Guillain-Barré confirmado"
+      },
+      {
+        "tipo": "action",
+        "texto": "Monitorização seriada de capacidade vital forçada, força de membros e sinais bulbares/autonômicos (idealmente em ambiente monitorizado)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente incapaz de deambular sem apoio (comprometimento funcional significativo)?",
+        "ramos": [
+          {
+            "label": "Não — quadro leve",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Observação clínica rigorosa; tratamento imunomodulador pode não ser necessário em quadros muito leves e estáveis"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Iniciar imunoglobulina endovenosa (0,4g/kg/dia por 5 dias) OU plasmaférese (4-5 sessões) — eficácia equivalente; NUNCA associar/sequenciar os dois tratamentos"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Capacidade vital forçada em queda progressiva ou sinais de falência respiratória iminente?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Intubação eletiva precoce, antes da falência respiratória franca"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter monitorização seriada"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Piora funcional após melhora ou estabilização inicial, dentro de 8 semanas do início dos sintomas (flutuação relacionada ao tratamento)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Considerar um segundo curso do MESMO tratamento inicial (não repetir em pacientes com prognóstico já reconhecidamente desfavorável)"
+              }
+            ]
+          },
+          {
+            "label": "Não — evolução esperada",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguir reabilitação e acompanhamento da recuperação funcional"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
