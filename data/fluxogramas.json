@@ -9275,5 +9275,164 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-cefaleias-primarias-diagnostico",
+    "temaId": "cefaleias-primarias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Cefaleia — rastreio de sinais de alarme (SNOOP) e diferenciação das cefaleias primárias",
+    "revisado": true,
+    "fonte": "Critérios ICHD-3 (International Classification of Headache Disorders); mnemônico SNOOP",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com queixa de cefaleia"
+      },
+      {
+        "tipo": "action",
+        "texto": "Rastrear sinais de alarme (SNOOP): Systemic symptoms/doença sistêmica, Neurologic signs, Onset thunderclap/início súbito, Older age (início >50 anos), Pattern change (mudança do padrão habitual)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de algum sinal de alarme (SNOOP) ou exame neurológico anormal?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Suspeitar de cefaleia secundária — solicitar neuroimagem (e punção lombar/exames adicionais conforme suspeita) antes de assumir diagnóstico de cefaleia primária"
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro típico, exame normal",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Diagnóstico clínico baseado nos critérios ICHD-3, sem necessidade de exame de imagem de rotina"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Qual o padrão predominante da dor?",
+                "ramos": [
+                  {
+                    "label": "Unilateral, pulsátil, com náuseas e/ou foto+fonofobia",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Enxaqueca (migrânea) — com ou sem aura"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Bilateral, em aperto/peso, sem sintomas associados proeminentes",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cefaleia do tipo tensional"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Periorbitária, excruciante, com sinais autonômicos ipsilaterais e agitação",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cefaleia em salvas"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cefaleias-primarias-tratamento",
+    "temaId": "cefaleias-primarias",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Tratamento agudo escalonado da crise de enxaqueca",
+    "revisado": true,
+    "fonte": "Diretrizes IHS 2025 / American College of Physicians (ACP) 2025 para tratamento agudo da migrânea",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Crise aguda de enxaqueca"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Intensidade da crise?",
+        "ramos": [
+          {
+            "label": "Leve a moderada",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "AINE e/ou paracetamol (associação dos dois se monoterapia insuficiente)"
+              }
+            ]
+          },
+          {
+            "label": "Moderada a grave",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Contraindicação a triptano (doença cardiovascular/cerebrovascular estabelecida) ou resposta inadequada?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Gepante oral (rimegepanto ou ubrogepanto) — sem efeito vasoconstritor; zavegepanto em spray nasal se náusea/vômito ou gastroparesia limitarem via oral"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Triptano (± AINE se resposta parcial)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Crise persiste além de 72h apesar do tratamento (estado migranoso)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Encaminhar para avaliação de emergência: hidratação, antiemético (metoclopramida) e corticosteroide endovenoso (metilprednisolona) como terapia de resgate; evitar opioides"
+              }
+            ]
+          },
+          {
+            "label": "Não — crise controlada",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Reavaliar frequência/impacto funcional das crises para indicação de tratamento profilático"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
