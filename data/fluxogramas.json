@@ -9619,5 +9619,163 @@
         "texto": "Sintomas comportamentais/psicóticos: evitar antipsicóticos típicos, especialmente na demência com corpos de Lewy (risco de reação de hipersensibilidade grave); priorizar medidas não farmacológicas e, se necessário, menor dose eficaz de agente com baixo perfil extrapiramidal"
       }
     ]
+  },
+  {
+    "id": "flow-esclerose-multipla-diagnostico",
+    "temaId": "doencas-desmielinizantes",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Primeiro evento desmielinizante — critérios de McDonald e diferencial com NMOSD/MOGAD",
+    "revisado": true,
+    "fonte": "Revisão 2024 dos critérios de McDonald para esclerose múltipla",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Primeiro surto de disfunção neurológica focal sugestivo de doença desmielinizante (ex.: neurite óptica, mielite parcial, síndrome de tronco/cerebelo)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ressonância magnética de crânio e medula com contraste"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "RM demonstra disseminação no espaço (≥2 das 5 localizações: periventricular, justacortical/cortical, infratentorial, medular, nervo óptico)?",
+        "ramos": [
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Síndrome clinicamente/radiologicamente isolada — seguimento e RM de controle, sem critério para EM ainda"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Há disseminação no tempo (lesões captantes e não captantes simultâneas, novo surto, ou ≥4 das 5 localizações típicas presentes)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Critérios de McDonald preenchidos — diagnóstico de esclerose múltipla já no primeiro surto"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Considerar bandas oligoclonais no líquor ou biomarcadores de suporte (cadeias leves kappa livres, sinal da veia central) para reforçar o diagnóstico; repetir RM em intervalo apropriado"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Achados atípicos para EM (neurite óptica bilateral/grave, mielite extensa ≥3 corpos vertebrais, RM atípica)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Pesquisar anticorpos anti-aquaporina-4 (NMOSD) e anti-MOG (MOGAD) antes de iniciar tratamento modificador de doença"
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro típico",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Prosseguir com diagnóstico de esclerose múltipla e planejamento terapêutico"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-esclerose-multipla-tratamento",
+    "temaId": "doencas-desmielinizantes",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Tratamento do surto agudo e escolha do tratamento modificador de doença",
+    "revisado": true,
+    "fonte": "Diretrizes de tratamento da esclerose múltipla; considerações de segurança em NMOSD",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Surto agudo de esclerose múltipla confirmado (ou diagnóstico recém-estabelecido)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Surto agudo: pulsoterapia com metilprednisolona endovenosa em altas doses (acelera recuperação do surto, sem impacto comprovado no curso a longo prazo)"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Antes de iniciar tratamento modificador de doença, excluir NMOSD (anti-aquaporina-4) — fingolimode e natalizumabe podem PIORAR a atividade da doença em pacientes com NMOSD"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Diagnóstico confirmado é NMOSD (não esclerose múltipla)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Rituximabe (anti-CD20) é a opção preferencial — evitar fingolimode e natalizumabe"
+              }
+            ]
+          },
+          {
+            "label": "Não — esclerose múltipla confirmada",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Iniciar tratamento modificador de doença precocemente após o diagnóstico (reduz frequência de surtos e progressão de incapacidade a longo prazo)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Forma clínica é secundariamente progressiva SEM surtos (nrSPMS), refratária às terapias tradicionais?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Considerar tolebrutinibe (inibidor de BTK com penetração no SNC, dirigido à neuroinflamação smoldering)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — forma remitente-recorrente ativa",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Selecionar TMD conforme atividade da doença (interferon/glatirâmer/oral de primeira linha vs. anti-CD20/natalizumabe em doença mais ativa)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
