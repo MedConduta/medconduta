@@ -9434,5 +9434,190 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-demencias-diagnostico",
+    "temaId": "demencias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação da queixa cognitiva — exclusão de causas reversíveis e diferenciação etiológica",
+    "revisado": true,
+    "fonte": "Alzheimer's Association 2025; critérios clínicos de demência (DSM-5/NIA-AA)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com queixa cognitiva (própria ou relatada por familiar/cuidador)"
+      },
+      {
+        "tipo": "action",
+        "texto": "História detalhada com paciente e informante + teste cognitivo à beira do leito (Mini Exame do Estado Mental, teste do desenho do relógio)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há evidência de declínio cognitivo com prejuízo funcional (não apenas queixa subjetiva)?",
+        "ramos": [
+          {
+            "label": "Não — função preservada",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Comprometimento cognitivo leve ou queixa subjetiva de memória — seguimento clínico, sem critério para demência"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Rastrear causas reversíveis: hemograma, eletrólitos, função renal e hepática, TSH/T4 livre, vitamina B12, VDRL, anti-HIV, e neuroimagem estrutural (TC ou RM de crânio) em todo paciente"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Alguma alteração reversível identificada (ex.: hipotireoidismo, deficiência de B12, neurossífilis, HPN, depressão)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Tratar a causa reversível identificada antes de firmar diagnóstico de demência neurodegenerativa primária"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Padrão clínico predominante?",
+                        "ramos": [
+                          {
+                            "label": "Memória episódica recente, insidioso e progressivo",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Doença de Alzheimer"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Curso em degraus, sinais focais, disfunção executiva precoce",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Demência vascular"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Flutuação cognitiva + alucinações visuais + parkinsonismo",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Demência com corpos de Lewy — atenção: evitar antipsicóticos típicos"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Mudança precoce de personalidade/comportamento ou de linguagem, memória preservada inicialmente",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Demência frontotemporal"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Instalação rápida (semanas), mioclonias, achados atípicos",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Investigar demência rapidamente progressiva (ex. doença de Creutzfeldt-Jakob) com RM (sequência DWI/FLAIR) e avaliação especializada urgente"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-demencias-tratamento",
+    "temaId": "demencias",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Tratamento farmacológico escalonado da doença de Alzheimer",
+    "revisado": true,
+    "fonte": "Diretriz Alzheimer's Association 2025 (biomarcadores e anticorpos anti-amiloide); estadiamento CDR",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico confirmado de doença de Alzheimer"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Fase inicial (comprometimento cognitivo leve ou demência leve) com patologia amiloide confirmada por biomarcador?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Genotipagem de APOE ε4 para estratificação de risco de ARIA antes de considerar anticorpo monoclonal anti-amiloide (lecanemabe ou donanemabe)"
+              },
+              {
+                "tipo": "alerta",
+                "texto": "Monitorização rigorosa com RM seriada durante o tratamento pelo risco de ARIA (edema/efusão — ARIA-E, ou microhemorragias — ARIA-H), risco maior em homozigotos APOE ε4"
+              }
+            ]
+          },
+          {
+            "label": "Não — fase leve a moderada",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Inibidor da colinesterase (donepezila, rivastigmina ou galantamina) — benefício sintomático, sem modificar o curso da doença"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Progressão para fase moderada a grave?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Associar memantina (antagonista NMDA) ao inibidor da colinesterase"
+              }
+            ]
+          },
+          {
+            "label": "Fase terminal, sem benefício funcional demonstrável",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Considerar suspensão de inibidor da colinesterase e memantina, com foco em cuidados paliativos e conforto"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Sintomas comportamentais/psicóticos: evitar antipsicóticos típicos, especialmente na demência com corpos de Lewy (risco de reação de hipersensibilidade grave); priorizar medidas não farmacológicas e, se necessário, menor dose eficaz de agente com baixo perfil extrapiramidal"
+      }
+    ]
   }
 ]
