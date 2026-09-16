@@ -11228,5 +11228,66 @@
         "texto": "Exposição ocupacional a aves ou bovinos leiteiros associada a conjuntivite e sintomas respiratórios sugere influenza aviária H5N1 — notificação compulsória imediata e investigação laboratorial específica, independentemente da gravidade do quadro"
       }
     ]
+  },
+  {
+    "id": "flow-parasitoses-diagnostico",
+    "temaId": "parasitoses-intestinais",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Parasitoses intestinais — investigação diagnóstica conforme apresentação clínica",
+    "revisado": true,
+    "fonte": "Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde — Parasitoses Intestinais",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com suspeita de parasitose intestinal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Apresentação clínica predominante?",
+        "ramos": [
+          {
+            "label": "Prurido anal noturno em criança",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Solicitar fita adesiva/swab perianal (método de Graham) pela manhã, antes da higiene — sensibilidade superior ao exame de fezes para enterobíase, pois os ovos raramente são eliminados nas fezes"
+              }
+            ]
+          },
+          {
+            "label": "Quadro digestivo inespecífico (diarreia, dor abdominal, eosinofilia) sem suspeita específica",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Exame parasitológico de fezes seriado, em três amostras coletadas em dias diferentes, pela eliminação intermitente de ovos/cistos"
+              }
+            ]
+          },
+          {
+            "label": "Paciente de área endêmica que será submetido a imunossupressão (corticoide, quimioterapia)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Rastrear e tratar empiricamente Strongyloides stercoralis com ivermectina antes de iniciar a imunossupressão — prevenção da síndrome de hiperinfecção, frequentemente fatal"
+              }
+            ]
+          },
+          {
+            "label": "Crise convulsiva ou quadro neurológico focal, especialmente com fatores epidemiológicos de risco",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar neurocisticercose com neuroimagem (tomografia ou ressonância) evidenciando cistos com/sem escólex, calcificações ou lesões em diferentes estágios; complementar com líquor conforme diretrizes vigentes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Não confundir teníase (verme adulto, por ingestão de carne malcozida) com cisticercose/neurocisticercose (forma larvária tecidual, por ingestão de ovos via fecal-oral) — armadilha clássica de prova"
+      }
+    ]
   }
 ]
