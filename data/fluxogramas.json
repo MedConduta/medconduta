@@ -11085,5 +11085,85 @@
         "texto": "Hemorragia pulmonar maciça é a principal causa de óbito na síndrome de Weil — vigiar dispneia, hemoptise e queda da saturação como sinais de alerta máximo, independentemente da função renal"
       }
     ]
+  },
+  {
+    "id": "flow-raiva-profilaxia",
+    "temaId": "acidentes-animais-peconhentos",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Raiva — profilaxia pós-exposição conforme tipo de ferimento e animal agressor",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Profilaxia da Raiva Humana",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Exposição a possível animal transmissor de raiva (mordedura, arranhadura ou lambedura em mucosa/pele lesada)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Lavar imediatamente o ferimento com água corrente e sabão — reduz a carga viral local"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Tipo de exposição?",
+        "ramos": [
+          {
+            "label": "Contato indireto (sem lesão) ou lambedura de pele íntegra",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Não requer profilaxia específica — apenas lavagem do local"
+              }
+            ]
+          },
+          {
+            "label": "Ferimento superficial único, em tronco/membros (exceto mãos/pés/genitália) OU lambedura em pele com lesão superficial",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Animal doméstico (cão/gato) passível de observação por 10 dias e sem sinais de raiva?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Observar o animal por 10 dias; iniciar esquema vacinal se o animal adoecer, morrer ou desaparecer nesse período — caso contrário, não é necessário completar o esquema"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — animal silvestre, desconhecido, morto ou não observável",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Iniciar esquema vacinal completo (4 doses de vacina antirrábica)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Ferimento grave: múltiplos, profundos, em cabeça/face/mãos/pés/genitália, lambedura de mucosa, OU agressão por morcego ou animal silvestre",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Iniciar imediatamente soro ou imunoglobulina antirrábica (infiltrar ao redor do ferimento) + esquema vacinal completo — independentemente da possibilidade de observação do animal"
+              },
+              {
+                "tipo": "end",
+                "texto": "Manter esquema vacinal completo mesmo se o animal doméstico permanecer sadio na observação de 10 dias"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Uma vez iniciados os sintomas neurológicos da raiva, a mortalidade é praticamente universal — não existe tratamento eficaz para a doença estabelecida, o que torna a profilaxia pós-exposição precoce e correta a intervenção mais decisiva"
+      }
+    ]
   }
 ]
