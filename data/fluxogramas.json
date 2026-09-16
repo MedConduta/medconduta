@@ -11694,5 +11694,84 @@
         "texto": "A pesquisa de tender points foi abandonada nos critérios diagnósticos atuais — a ausência de achados objetivos ao exame é parte esperada do raciocínio diagnóstico, não motivo para exames adicionais extensos"
       }
     ]
+  },
+  {
+    "id": "flow-vasculites-investigacao",
+    "temaId": "vasculites",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de vasculite sistêmica — orientação diagnóstica pelo quadro clínico",
+    "revisado": true,
+    "fonte": "Critérios de classificação ACR/EULAR 2022 para vasculites",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de vasculite sistêmica (sintomas constitucionais + achado sugestivo de isquemia/inflamação vascular)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Perfil clínico predominante?",
+        "ramos": [
+          {
+            "label": "Idoso (>50 anos), cefaleia temporal, claudicação mandibular ± sintomas visuais",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar arterite de células gigantes — iniciar corticoide em altíssima dose IMEDIATAMENTE se sintomas visuais, sem aguardar biópsia de temporal (risco de cegueira irreversível)"
+              }
+            ]
+          },
+          {
+            "label": "Mulher jovem (<40 anos), claudicação de membro, assimetria de pulsos/PA",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar arterite de Takayasu — solicitar PCR/VHS e angioRM/angioTC para mapear extensão do acometimento vascular"
+              }
+            ]
+          },
+          {
+            "label": "Sinusopatia crônica + hemoptise + nefrite (síndrome pulmão-rim)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar vasculite ANCA-associada — solicitar c-ANCA/anti-PR3 (granulomatose com poliangiite) ou p-ANCA/anti-MPO (poliangiite microscópica) + biópsia de tecido acometido"
+              }
+            ]
+          },
+          {
+            "label": "HAS nova + mononeurite múltipla + dor abdominal/orquite, poupando pulmão",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar poliarterite nodosa — investigar hepatite B associada; arteriografia pode mostrar microaneurismas"
+              }
+            ]
+          },
+          {
+            "label": "Asma/rinossinusite de difícil controle + eosinofilia importante + mononeurite múltipla",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar GEPA (Churg-Strauss) — complemento tipicamente normal; p-ANCA positivo em cerca de 40% dos casos"
+              }
+            ]
+          },
+          {
+            "label": "Púrpura palpável em membros inferiores ± artrite/dor abdominal/hematúria",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Em criança: suspeitar vasculite por IgA (Henoch-Schönlein), complemento normal. Em adulto: considerar vasculite de pequenos vasos, ampliar investigação sorológica"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Diante de suspeita de arterite de células gigantes com sintomas visuais, o tratamento com corticoide NUNCA deve aguardar a confirmação por biópsia — a decisão terapêutica é clínica e imediata"
+      }
+    ]
   }
 ]
