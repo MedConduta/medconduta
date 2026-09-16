@@ -11623,5 +11623,76 @@
         "texto": "Dor articular com características inflamatórias sobrepostas (edema quente, rigidez matinal prolongada, sintomas sistêmicos) em paciente com osteoartrite conhecida deve motivar reavaliação para excluir artrite inflamatória concomitante ou artrite séptica"
       }
     ]
+  },
+  {
+    "id": "flow-fibromialgia-diagnostico",
+    "temaId": "fibromialgia",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Fibromialgia — abordagem diagnóstica pelos critérios ACR 2016",
+    "revisado": true,
+    "fonte": "Wolfe F, et al. 2016 Revisions to the 2010/2011 fibromyalgia diagnostic criteria",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com dor musculoesquelética generalizada crônica"
+      },
+      {
+        "tipo": "action",
+        "texto": "Excluir diagnóstico alternativo que explique adequadamente a dor (avaliação clínica direcionada; exames complementares apenas se houver achado objetivo sugestivo)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sintomas presentes de forma similar por ≥3 meses E ausência de achados objetivos (sinovite, provas inflamatórias alteradas, alterações radiográficas)?",
+        "ramos": [
+          {
+            "label": "Não — há achado objetivo ou duração insuficiente",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Reconsiderar diagnóstico diferencial (doença reumatológica inflamatória/autoimune, endocrinopatia, etc.) antes de firmar fibromialgia"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Calcular Índice de Dor Generalizada (WPI, 0-19) e Escala de Gravidade de Sintomas (SSS, 0-12: fadiga + sono não reparador + sintomas cognitivos + sintomas somáticos)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "WPI ≥7 e SSS ≥5, OU WPI 4-6 e SSS ≥9?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Critérios ACR 2016 preenchidos — diagnóstico de fibromialgia confirmado, sem necessidade de pesquisa de tender points"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Critérios não preenchidos — reavaliar ao longo do seguimento; considerar outras causas de dor crônica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "A pesquisa de tender points foi abandonada nos critérios diagnósticos atuais — a ausência de achados objetivos ao exame é parte esperada do raciocínio diagnóstico, não motivo para exames adicionais extensos"
+      }
+    ]
   }
 ]
