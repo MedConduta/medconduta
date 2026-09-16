@@ -11165,5 +11165,68 @@
         "texto": "Uma vez iniciados os sintomas neurológicos da raiva, a mortalidade é praticamente universal — não existe tratamento eficaz para a doença estabelecida, o que torna a profilaxia pós-exposição precoce e correta a intervenção mais decisiva"
       }
     ]
+  },
+  {
+    "id": "flow-sindrome-gripal-manejo",
+    "temaId": "sindromes-respiratorias-virais",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Síndrome gripal — estratificação de risco e indicação de antiviral",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Protocolo de Tratamento de Influenza / Manejo Clínico de COVID-19",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com síndrome gripal (febre + tosse ou dor de garganta + mialgia/cefaleia de início agudo)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de síndrome respiratória aguda grave (dispneia, hipoxemia, uso de musculatura acessória, instabilidade hemodinâmica)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Internação hospitalar imediata; iniciar oseltamivir (não aguardar confirmação laboratorial) + suporte de oxigênio; considerar antiviral específico/corticoide conforme etiologia e gravidade"
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro leve/moderado ambulatorial",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Pertence a grupo de risco (gestante, idoso ≥60 anos, criança <5 anos, comorbidade crônica, imunossupressão)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Iniciar oseltamivir o quanto antes, idealmente nas primeiras 48h de sintomas, mesmo sem confirmação laboratorial — não aguardar resultado de teste para iniciar tratamento em paciente de risco"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Tratamento sintomático e orientação de retorno se sinais de alarme; antiviral não é rotineiramente indicado em paciente sem fator de risco e sem gravidade"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Exposição ocupacional a aves ou bovinos leiteiros associada a conjuntivite e sintomas respiratórios sugere influenza aviária H5N1 — notificação compulsória imediata e investigação laboratorial específica, independentemente da gravidade do quadro"
+      }
+    ]
   }
 ]
