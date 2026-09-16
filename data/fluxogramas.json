@@ -11289,5 +11289,60 @@
         "texto": "Não confundir teníase (verme adulto, por ingestão de carne malcozida) com cisticercose/neurocisticercose (forma larvária tecidual, por ingestão de ovos via fecal-oral) — armadilha clássica de prova"
       }
     ]
+  },
+  {
+    "id": "flow-neoplasias-hematologicas-investigacao",
+    "temaId": "neoplasias-hematologicas-leucemia-linfoma",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de neoplasia hematológica — investigação inicial",
+    "revisado": true,
+    "fonte": "Diretrizes de hematologia oncológica (referência clínica geral)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de neoplasia hematológica (citopenias inexplicadas, linfadenopatia persistente, sintomas B)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Apresentação predominante?",
+        "ramos": [
+          {
+            "label": "Pancitopenia/citopenias de instalação rápida, sangramento, infecções de repetição",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Hemograma completo com diferencial + avaliação de blastos em sangue periférico"
+              },
+              {
+                "tipo": "end",
+                "texto": "Mielograma (aspirado de medula óssea) com imunofenotipagem para confirmar leucemia aguda (blastos ≥20%) e definir linhagem linfoide vs. mieloide"
+              }
+            ]
+          },
+          {
+            "label": "Linfadenopatia indolor persistente (>4 semanas) ± sintomas B",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Excluir causas infecciosas/reativas mais comuns antes de prosseguir"
+              },
+              {
+                "tipo": "action",
+                "texto": "Biópsia excisional do linfonodo — NUNCA apenas PAAF, insuficiente para avaliar arquitetura tecidual"
+              },
+              {
+                "tipo": "end",
+                "texto": "Confirmado linfoma: estadiar com PET-CT pela classificação de Ann Arbor antes de definir tratamento"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Leucocitose muito elevada com sinais de leucostase (confusão mental, dispneia, distúrbios visuais) é emergência oncológica — redução urgente da contagem leucocitária (leucaférese ou quimioterapia citorredutora imediata), independentemente da confirmação diagnóstica completa"
+      }
+    ]
   }
 ]
