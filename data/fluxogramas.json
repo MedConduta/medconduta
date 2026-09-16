@@ -10721,5 +10721,52 @@
         "texto": "O fexinidazol (eficaz na tripanossomíase africana) mostrou-se INEFICAZ para doença de Chagas no estudo FEXI-12 (2024) — não deve ser usado como alternativa ao benznidazol"
       }
     ]
+  },
+  {
+    "id": "flow-leishmaniose-visceral-tratamento",
+    "temaId": "leishmaniose",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Leishmaniose visceral — escolha do tratamento inicial",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Manual de Vigilância e Controle da Leishmaniose Visceral",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico confirmado de leishmaniose visceral"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de critérios de gravidade (idade <1 ou >50 anos, sangramento, icterícia, toxemia, leucopenia/plaquetopenia graves, coinfecção HIV) OU grupo de maior risco de toxicidade (gestante, criança pequena, imunossuprimido, disfunção renal/cardíaca)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Anfotericina B lipossomal — primeira escolha, menor toxicidade renal/cardíaca"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Antimoniato de N-metilglucamina — tratamento de primeira linha na ausência de fatores de risco"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Suporte hematológico (transfusões conforme necessidade) e tratamento precoce de infecções bacterianas secundárias, especialmente em casos graves"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Febre prolongada + esplenomegalia maciça + pancitopenia em criança de área endêmica exige investigação e tratamento imediatos — condição potencialmente fatal sem tratamento"
+      }
+    ]
   }
 ]
