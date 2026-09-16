@@ -11344,5 +11344,65 @@
         "texto": "Leucocitose muito elevada com sinais de leucostase (confusão mental, dispneia, distúrbios visuais) é emergência oncológica — redução urgente da contagem leucocitária (leucaférese ou quimioterapia citorredutora imediata), independentemente da confirmação diagnóstica completa"
       }
     ]
+  },
+  {
+    "id": "flow-disturbios-coagulacao-diagnostico",
+    "temaId": "disturbios-coagulacao",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação de distúrbio hemorrágico pelo padrão de sangramento e coagulograma",
+    "revisado": true,
+    "fonte": "Diretrizes ASH/ISTH/NHF/WFH (2021) e consenso ISTH sobre CIVD (2025)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com história de sangramento anormal ou coagulograma alterado"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Padrão de sangramento predominante?",
+        "ramos": [
+          {
+            "label": "Profundo (hemartroses, hematomas musculares), geralmente sexo masculino",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Solicitar TP e TTPa"
+              },
+              {
+                "tipo": "end",
+                "texto": "TTPa prolongado + TP normal → dosar fator VIII e IX para confirmar hemofilia A ou B e definir gravidade"
+              }
+            ]
+          },
+          {
+            "label": "Mucocutâneo (epistaxe, gengivorragia, menorragia) desde infância/adolescência",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Dosar antígeno e atividade funcional do fator de von Willebrand (VWF:GPIbM/GPIbR); aplicar ferramenta padronizada ISTH-BAT para objetivar a história hemorrágica"
+              }
+            ]
+          },
+          {
+            "label": "Múltiplos sítios de sangramento + sinais de disfunção orgânica em paciente criticamente enfermo",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Identificar e tratar a doença de base desencadeante (sepse, trauma maciço, complicação obstétrica)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Aplicar escore diagnóstico de CIVD: plaquetopenia + TP/TTPa prolongados + D-dímero muito elevado + fibrinogênio reduzido, no contexto clínico compatível"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "CIVD é processo simultâneo de trombose microvascular E sangramento, sempre secundário a uma doença de base — nunca uma entidade primária isolada; suporte transfusional deve ser guiado pela clínica, não apenas por valores laboratoriais"
+      }
+    ]
   }
 ]
