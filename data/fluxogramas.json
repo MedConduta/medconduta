@@ -11404,5 +11404,81 @@
         "texto": "CIVD é processo simultâneo de trombose microvascular E sangramento, sempre secundário a uma doença de base — nunca uma entidade primária isolada; suporte transfusional deve ser guiado pela clínica, não apenas por valores laboratoriais"
       }
     ]
+  },
+  {
+    "id": "flow-hemoterapia-reacao-transfusional",
+    "temaId": "hemoterapia-hemocomponentes",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Suspeita de reação transfusional aguda — conduta imediata",
+    "revisado": true,
+    "fonte": "AABB/ABHH — Diretrizes de Hemoterapia",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente desenvolve sinais/sintomas durante ou logo após transfusão de hemocomponente"
+      },
+      {
+        "tipo": "action",
+        "texto": "Interromper a transfusão IMEDIATAMENTE e manter acesso venoso com solução salina — antes de investigar a causa específica"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Quadro clínico predominante?",
+        "ramos": [
+          {
+            "label": "Febre, calafrios, dor lombar, hipotensão, hemoglobinúria",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar reação hemolítica aguda (incompatibilidade ABO) — reverificar tipagem/prova cruzada no banco de sangue, suporte hemodinâmico e renal agressivo"
+              }
+            ]
+          },
+          {
+            "label": "Apenas febre e calafrios, sem outros sinais",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Provável reação febril não hemolítica — tratamento sintomático com antitérmico após excluir causas mais graves"
+              }
+            ]
+          },
+          {
+            "label": "Dispneia aguda + infiltrado pulmonar bilateral",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Pressão arterial e resposta a diurético?",
+                "ramos": [
+                  {
+                    "label": "Hipotensão, sem resposta a diurético",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "TRALI — suporte respiratório (considerar ventilação mecânica); diurético não traz benefício"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hipertensão, responde bem a diurético",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "TACO (sobrecarga circulatória) — diurético como conduta principal"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "\"Interromper a transfusão primeiro, investigar depois\" é a conduta prioritária diante de qualquer sinal de reação aguda, independentemente da etiologia suspeitada — ponto mais valorizado do tema em prova"
+      }
+    ]
   }
 ]
