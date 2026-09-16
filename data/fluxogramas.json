@@ -10638,5 +10638,88 @@
         "texto": "Evitar AAS e AINEs empiricamente até excluir dengue como diagnóstico diferencial, pelo risco de sangramento — tratamento sintomático com paracetamol enquanto aguarda confirmação"
       }
     ]
+  },
+  {
+    "id": "flow-chagas-tratamento",
+    "temaId": "doenca-chagas",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Doença de Chagas — indicação de tratamento antiparasitário",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Consenso Brasileiro de Doença de Chagas",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico confirmado de infecção por Trypanosoma cruzi"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Fase aguda ou reativação (imunossupressão, transplante, congênita)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Benznidazol indicado — eficácia comprovada e alta nesta fase"
+              }
+            ]
+          },
+          {
+            "label": "Não — fase crônica",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Cardiopatia chagásica crônica já ESTABELECIDA (miocardiopatia dilatada, arritmias graves)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Benznidazol não reverte o dano estrutural — tratamento de suporte da IC/arritmias (podendo incluir marca-passo)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — forma indeterminada ou crônica recente",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Criança, adolescente ou adulto jovem?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Benznidazol fortemente recomendado"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Adulto na forma crônica indeterminada",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Benznidazol ainda indicado conforme diretrizes atuais, com benefício mais controverso — decisão individualizada"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "O fexinidazol (eficaz na tripanossomíase africana) mostrou-se INEFICAZ para doença de Chagas no estudo FEXI-12 (2024) — não deve ser usado como alternativa ao benznidazol"
+      }
+    ]
   }
 ]
