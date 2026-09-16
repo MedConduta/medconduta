@@ -11010,5 +11010,80 @@
         "texto": "Testagem de G6PD é etapa obrigatória antes do uso de primaquina ou tafenoquina, pelo risco de hemólise grave em pacientes deficientes"
       }
     ]
+  },
+  {
+    "id": "flow-leptospirose-tratamento",
+    "temaId": "leptospirose",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Leptospirose — estratificação de gravidade e escolha terapêutica",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde / Leptospirose",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita ou confirmação de leptospirose (epidemiologia compatível: contato com água/lama de enchente, roedores, atividade ocupacional de risco)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de gravidade (icterícia, oligúria/IRA, dispneia, hemoptise, instabilidade hemodinâmica, alteração do sensório)?",
+        "ramos": [
+          {
+            "label": "Não — forma leve/anictérica",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratamento ambulatorial: doxiciclina oral + reavaliação clínica; orientar sinais de alarme para retorno imediato"
+              }
+            ]
+          },
+          {
+            "label": "Sim — síndrome de Weil / forma grave",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Internação hospitalar (considerar UTI)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Antibioticoterapia endovenosa: penicilina G cristalina ou ceftriaxona"
+              },
+              {
+                "tipo": "action",
+                "texto": "Suporte hemodinâmico, monitorização renal e correção de distúrbios eletrolíticos (hipocalemia)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Insuficiência renal aguda refratária ao suporte clínico?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Diálise (hemodiálise) — reduz significativamente a mortalidade na IRA grave por leptospirose"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter suporte clínico e monitorização intensiva até resolução"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Hemorragia pulmonar maciça é a principal causa de óbito na síndrome de Weil — vigiar dispneia, hemoptise e queda da saturação como sinais de alerta máximo, independentemente da função renal"
+      }
+    ]
   }
 ]
