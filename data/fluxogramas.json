@@ -10843,5 +10843,76 @@
         "texto": "Função hepatocelular tipicamente preservada mesmo com hipertensão portal estabelecida — icterícia, ascite proeminente e encefalopatia NÃO são esperadas e devem motivar investigação de causa adicional de hepatopatia"
       }
     ]
+  },
+  {
+    "id": "flow-hanseniase-classificacao",
+    "temaId": "hanseniase",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Hanseníase — diagnóstico e classificação operacional",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia Prático sobre a Hanseníase",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de hanseníase: lesão de pele e/ou queixa neurológica"
+      },
+      {
+        "tipo": "action",
+        "texto": "Testar sensibilidade térmica, dolorosa e tátil na lesão; palpar nervos periféricos (ulnar, fibular comum, tibial posterior)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de pelo menos um critério cardinal (lesão de pele com alteração de sensibilidade, e/ou espessamento neural com alteração de função, e/ou baciloscopia positiva)?",
+        "ramos": [
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Diagnóstico de hanseníase afastado — investigar diagnósticos diferenciais"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Contar o número de lesões de pele"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Até 5 lesões de pele E baciloscopia negativa (ou não realizada)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Classificação operacional: Paucibacilar (PB) — poliquimioterapia por 6 meses"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — mais de 5 lesões OU baciloscopia positiva",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Classificação operacional: Multibacilar (MB) — poliquimioterapia por 12 meses"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Avaliar ativamente sinais de reação hansênica e neurite silenciosa (perda de função sem dor) em toda consulta, durante e após o tratamento — detecção precoce previne incapacidade neural permanente"
+      }
+    ]
   }
 ]
