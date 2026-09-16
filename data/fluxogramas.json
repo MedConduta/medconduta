@@ -11576,5 +11576,52 @@
         "texto": "A resposta dramática a AINE em dose plena é quase característica diagnóstica das espondiloartrites — sua ausência deve motivar reconsideração do diagnóstico"
       }
     ]
+  },
+  {
+    "id": "flow-osteoartrite-diagnostico-diferencial",
+    "temaId": "osteoartrite",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Dor articular crônica — diferenciação entre padrão mecânico (osteoartrite) e inflamatório",
+    "revisado": true,
+    "fonte": "Diretrizes de reumatologia — abordagem clínica da dor articular crônica",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com dor articular crônica, sem trauma agudo recente"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Padrão da dor e rigidez matinal?",
+        "ramos": [
+          {
+            "label": "Piora com uso/atividade ao longo do dia, melhora com repouso; rigidez matinal <30 min",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Padrão mecânico — considerar osteoartrite"
+              },
+              {
+                "tipo": "end",
+                "texto": "Avaliar distribuição: joelhos, quadris, interfalangeanas distais/proximais e base do polegar; crepitação e aumento de volume ósseo ao exame — diagnóstico predominantemente clínico, radiografia confirma/gradua se necessário"
+              }
+            ]
+          },
+          {
+            "label": "Melhora com uso/exercício, piora com repouso; rigidez matinal >1 hora",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Padrão inflamatório — investigar artrite reumatoide (poupa interfalangeanas distais) ou espondiloartrite (lombalgia inflamatória, entesite) conforme distribuição articular"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Dor articular com características inflamatórias sobrepostas (edema quente, rigidez matinal prolongada, sintomas sistêmicos) em paciente com osteoartrite conhecida deve motivar reavaliação para excluir artrite inflamatória concomitante ou artrite séptica"
+      }
+    ]
   }
 ]
