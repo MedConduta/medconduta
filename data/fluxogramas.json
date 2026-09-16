@@ -10768,5 +10768,80 @@
         "texto": "Febre prolongada + esplenomegalia maciça + pancitopenia em criança de área endêmica exige investigação e tratamento imediatos — condição potencialmente fatal sem tratamento"
       }
     ]
+  },
+  {
+    "id": "flow-esquistossomose-diagnostico",
+    "temaId": "esquistossomose",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Esquistossomose — investigação da forma hepatoesplênica",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; PCDT Esquistossomose",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente de área endêmica com esplenomegalia e/ou suspeita de hipertensão portal"
+      },
+      {
+        "tipo": "action",
+        "texto": "Exame parasitológico de fezes (Kato-Katz) — padrão para diagnóstico e quantificação da carga parasitária"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Kato-Katz negativo, mas suspeita clínica persistente (forma crônica com baixa eliminação de ovos)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar métodos complementares (sorologia, biópsia retal) e repetir exame de fezes"
+              }
+            ]
+          },
+          {
+            "label": "Kato-Katz positivo",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Diagnóstico confirmado — tratar com praziquantel em dose única"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia abdominal — avalia padrão de fibrose periportal (\"em cano de cachimbo\") e esplenomegalia"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de hipertensão portal (esplenomegalia volumosa, circulação colateral)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Endoscopia digestiva alta para avaliar varizes esofágicas e risco de sangramento"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Forma intestinal/hepatointestinal — tratar e acompanhar"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Função hepatocelular tipicamente preservada mesmo com hipertensão portal estabelecida — icterícia, ascite proeminente e encefalopatia NÃO são esperadas e devem motivar investigação de causa adicional de hepatopatia"
+      }
+    ]
   }
 ]
