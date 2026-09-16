@@ -10914,5 +10914,101 @@
         "texto": "Avaliar ativamente sinais de reação hansênica e neurite silenciosa (perda de função sem dor) em toda consulta, durante e após o tratamento — detecção precoce previne incapacidade neural permanente"
       }
     ]
+  },
+  {
+    "id": "flow-malaria-tratamento",
+    "temaId": "malaria",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Malária — classificação de gravidade e escolha terapêutica",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Tratamento da Malária no Brasil",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico confirmado de malária (gota espessa ou teste rápido) — identificar espécie de Plasmodium"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de gravidade (rebaixamento de consciência, icterícia, insuficiência renal, parasitemia muito elevada, distúrbio respiratório)?",
+        "ramos": [
+          {
+            "label": "Sim — malária grave",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Artesunato endovenoso + suporte intensivo hospitalar imediato"
+              }
+            ]
+          },
+          {
+            "label": "Não — malária não complicada",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Qual espécie de Plasmodium?",
+                "ramos": [
+                  {
+                    "label": "P. falciparum",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Terapia combinada com artemisinina (ex.: arteméter + lumefantrina)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "P. vivax ou P. ovale",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Cloroquina (esquizonticida sanguíneo)"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "Gestante, deficiência de G6PD ou criança <2 anos/<10kg?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Primaquina/tafenoquina contraindicadas — seguimento clínico rigoroso para recidiva; conduta individualizada"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Associar primaquina (7-14 dias) ou tafenoquina (dose única, após testagem de G6PD) para eliminar hipnozoítos hepáticos e prevenir recidiva tardia"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "P. malariae",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cloroquina isolada — sem necessidade de primaquina (não forma hipnozoítos)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Testagem de G6PD é etapa obrigatória antes do uso de primaquina ou tafenoquina, pelo risco de hemólise grave em pacientes deficientes"
+      }
+    ]
   }
 ]
