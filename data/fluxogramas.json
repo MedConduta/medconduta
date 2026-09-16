@@ -11480,5 +11480,101 @@
         "texto": "\"Interromper a transfusão primeiro, investigar depois\" é a conduta prioritária diante de qualquer sinal de reação aguda, independentemente da etiologia suspeitada — ponto mais valorizado do tema em prova"
       }
     ]
+  },
+  {
+    "id": "flow-espondiloartrites-tratamento",
+    "temaId": "espondiloartrites",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Espondiloartrites — escalonamento terapêutico (ASAS-EULAR 2022)",
+    "revisado": true,
+    "fonte": "ASAS-EULAR recommendations for the management of axial spondyloarthritis (2022)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico confirmado de espondiloartrite (axial ou periférica)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Subtipo: artrite enteropática (associada a doença inflamatória intestinal)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "AINE NÃO é primeira linha (risco de exacerbar a DII) — iniciar com glicocorticoide e sulfassalazina para quadro periférico; anti-TNF reservado para doença axial ou periférica refratária"
+              }
+            ]
+          },
+          {
+            "label": "Não — espondilite anquilosante, artrite psoriásica ou artrite reativa",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "AINE em dose plena e uso regular (não sob demanda) + fisioterapia/exercício regular"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Doença ativa refratária após falha a dois AINEs em dose plena?",
+                "ramos": [
+                  {
+                    "label": "Não — boa resposta ao AINE",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter AINE regular + fisioterapia; reavaliar periodicamente"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sim — refratária",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Comorbidade relevante?",
+                        "ramos": [
+                          {
+                            "label": "Doença inflamatória intestinal associada",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Preferir anti-TNF ou inibidor de JAK — inibidores de IL-17 podem exacerbar a DII"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Uveíte anterior recorrente",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Preferir anti-TNF monoclonal ou inibidor de IL-17"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Sem comorbidade direcionadora",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Anti-TNF, inibidor de IL-17 (secuquinumabe, ixequizumabe, bimekizumabe) e inibidor de JAK (upadacitinibe) são alternativas terapêuticas equivalentes"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "A resposta dramática a AINE em dose plena é quase característica diagnóstica das espondiloartrites — sua ausência deve motivar reconsideração do diagnóstico"
+      }
+    ]
   }
 ]
