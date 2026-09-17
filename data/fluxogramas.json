@@ -13772,5 +13772,56 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-miomatose-adenomiose-diferencial",
+    "temaId": "miomatose-uterina",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Diferencial entre mioma e adenomiose",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia — miomatose uterina e adenomiose",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher com sangramento uterino anormal e/ou dismenorreia, útero aumentado ao exame"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia transvaginal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Útero com contornos irregulares/nodulares (massa bem delimitada) ou aumento difuso e simétrico?",
+        "ramos": [
+          {
+            "label": "Nodular, bem delimitado",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Suspeitar de leiomioma — classificar por localização (submucoso, intramural, subseroso)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Assintomático: acompanhar. Sintomático: tratamento hormonal, miomectomia (preserva útero) ou histerectomia conforme desejo reprodutivo"
+              }
+            ]
+          },
+          {
+            "label": "Difuso e simétrico, sem nódulo delimitado",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Suspeitar de adenomiose — RM pélvica para confirmar (zona juncional espessada) se dúvida diagnóstica"
+              },
+              {
+                "tipo": "end",
+                "texto": "Tratamento hormonal controla sintomas mas não cura; histerectomia é o único tratamento definitivo"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

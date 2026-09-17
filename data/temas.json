@@ -9163,7 +9163,7 @@
     "categoria": "Ginecologia",
     "titulo": "Miomatose Uterina e Adenomiose",
     "resumo": "Classificação dos miomas por localização, impacto no sangramento/fertilidade e diferenciação com a adenomiose.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO; ACOG Practice Bulletin on Management of Symptomatic Uterine Leiomyomas",
     "mnemonicos": [
       {
@@ -9193,6 +9193,10 @@
         "conteudo": "Miomas assintomáticos não requerem tratamento, apenas acompanhamento. Tratamento clínico (hormonal, incluindo análogos de GnRH para redução volumétrica pré-operatória, ou dispositivo intrauterino com levonorgestrel para controle do sangramento) é opção para sintomas leves a moderados. Miomectomia (preservando o útero, importante em mulheres com desejo reprodutivo) ou histerectomia (em mulheres sem desejo reprodutivo, com sintomas refratários ou miomatose muito extensa) são as opções cirúrgicas definitivas, com embolização de artéria uterina como alternativa minimamente invasiva em casos selecionados."
       },
       {
+        "titulo": "Adenomiose",
+        "conteudo": "A adenomiose caracteriza-se pela presença de glândulas e estroma endometriais dentro do miométrio, causando hipertrofia e hiperplasia da musculatura uterina adjacente ao tecido ectópico — condição favorecida por multiparidade e cirurgias uterinas prévias (curetagem, cesariana), que rompem a barreira entre endométrio e miométrio. Diferente do mioma (tumor bem delimitado, encapsulado), a adenomiose causa aumento uterino DIFUSO e SIMÉTRICO, sem delimitação nítida entre a área acometida e o miométrio normal.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Mioma (leiomioma)</th><th>Adenomiose</th></tr></thead><tbody><tr><td>Natureza</td><td>Tumor benigno bem delimitado</td><td>Tecido endometrial ectópico difuso dentro do miométrio</td></tr><tr><td>Contorno uterino</td><td>Irregular, \"em batata\" (nodular)</td><td>Aumento difuso e SIMÉTRICO, sem nódulos delimitados</td></tr><tr><td>Dor</td><td>Variável, pode ser assintomático</td><td>Dismenorreia progressiva e intensa é característica</td></tr><tr><td>Exame de imagem de escolha</td><td>Ultrassonografia transvaginal (bom para localizar nódulos)</td><td>Ressonância magnética é mais específica (padrão de zona juncional espessada)</td></tr><tr><td>Tratamento definitivo</td><td>Miomectomia (preserva útero) ou histerectomia</td><td>Histerectomia é o único tratamento definitivo — tratamento hormonal apenas controla sintomas</td></tr></tbody></table></div>\n\nO diagnóstico de certeza da adenomiose é histopatológico (peça de histerectomia), mas a ressonância magnética tem alta acurácia não invasiva, mostrando espessamento da zona juncional (interface endométrio-miométrio). O tratamento hormonal (DIU de levonorgestrel, análogos de GnRH) controla sintomas mas não é curativo — a histerectomia é o único tratamento definitivo, reservada a mulheres sem desejo reprodutivo com sintomas refratários."
+      },
+      {
         "titulo": "Sinais de alerta",
         "conteudo": "Crescimento muito rápido de massa uterina, especialmente em mulher pós-menopausa (quando os miomas tipicamente regridem, não crescem), deve levantar suspeita de leiomiossarcoma, neoplasia maligna rara mas de comportamento agressivo, exigindo investigação mais detalhada em vez de assumir automaticamente natureza benigna."
       },
@@ -9200,7 +9204,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A classificação anatômica dos miomas (submucoso, intramural, subseroso) e sua correlação com o tipo de sintoma predominante (submucoso com sangramento/infertilidade) é cobrança central. A opção de miomectomia (preservação uterina) versus histerectomia conforme o desejo reprodutivo da paciente também é frequentemente exigida em questões de conduta terapêutica."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado pela diferenciação entre mioma (útero irregular/nodular, tratamento pode preservar o útero) e adenomiose (útero aumentado de forma difusa e simétrica, dismenorreia progressiva característica, histerectomia como único tratamento definitivo) — essa distinção costuma aparecer em vinhetas comparativas. A classificação anatômica dos miomas (submucoso, intramural, subseroso) e sua correlação com sangramento/infertilidade, e o crescimento rápido pós-menopausa como sinal de alerta para leiomiossarcoma, também são cobranças recorrentes."
   },
   {
     "id": "abdome-agudo-ginecologico",
