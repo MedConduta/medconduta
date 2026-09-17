@@ -5062,7 +5062,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Doença Hemorroidária",
     "resumo": "Hemorroidas internas x externas, graduação do prolapso e escada terapêutica do tratamento clínico à cirurgia.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Coloproctologia; ASCRS Clinical Practice Guidelines for the Management of Hemorrhoids",
     "mnemonicos": [
       {
@@ -5073,7 +5073,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A doença hemorroidária resulta do ingurgitamento e prolapso dos coxins vasculares anais normais, favorecido por aumento crônico da pressão intra-abdominal/intra-anal (constipação com esforço evacuatório, gestação, obesidade). Hemorroidas internas (acima da linha pectínea, revestidas por mucosa, sem inervação sensitiva somática) são classificadas em graus I a IV conforme o grau de prolapso; hemorroidas externas (abaixo da linha pectínea, revestidas por pele, ricamente inervadas) causam dor quando trombosadas."
+        "conteudo": "A doença hemorroidária resulta do ingurgitamento e prolapso dos coxins vasculares anais normais, favorecido por aumento crônico da pressão intra-abdominal/intra-anal (constipação com esforço evacuatório, gestação, obesidade). Hemorroidas internas (acima da linha pectínea, revestidas por mucosa, sem inervação sensitiva somática) são classificadas em graus I a IV conforme o grau de prolapso; hemorroidas externas (abaixo da linha pectínea, revestidas por pele, ricamente inervadas) causam dor quando trombosadas.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Grau</th><th>Características</th><th>Tratamento típico</th></tr></thead><tbody><tr><td>I</td><td>Sangramento, sem prolapso</td><td>Medidas conservadoras (fibras, hidratação)</td></tr><tr><td>II</td><td>Prolapso à evacuação, redução espontânea</td><td>Conservador ou ligadura elástica</td></tr><tr><td>III</td><td>Prolapso que exige redução manual</td><td>Ligadura elástica (refratários)</td></tr><tr><td>IV</td><td>Prolapso irredutível/permanente</td><td>Hemorroidectomia cirúrgica</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Quadro clínico",
@@ -5099,7 +5099,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre hemorroida interna (indolor, sangramento vermelho vivo) e externa trombosada (dolorosa, nódulo palpável) pela presença ou ausência de dor é cobrança central. A necessidade de excluir neoplasia colorretal antes de atribuir sangramento retal apenas a hemorroidas em pacientes de risco também é ponto frequentemente exigido e considerado de alta relevância de segurança do paciente."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado principalmente pela diferenciação entre hemorroida interna (indolor, sangramento vermelho vivo, pela ausência de inervação sensitiva somática acima da linha pectínea) e hemorroida externa trombosada (dolorosa, nódulo perianal palpável, abaixo da linha pectínea) e, de forma ainda mais recorrente, pela necessidade de excluir neoplasia colorretal com colonoscopia antes de atribuir todo sangramento retal a hemorroidas em pacientes com fatores de risco (idade >45-50 anos, mudança de hábito intestinal, perda de peso) — um erro de segurança do paciente frequentemente testado como distrator."
   },
   {
     "id": "afeccoes-anorretais-benignas",

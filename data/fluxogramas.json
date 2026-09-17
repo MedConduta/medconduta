@@ -12775,5 +12775,72 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-doenca-hemorroidaria-abordagem",
+    "temaId": "doenca-hemorroidaria",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do sangramento retal e suspeita de doença hemorroidária",
+    "revisado": true,
+    "fonte": "Diretrizes de coloproctologia — doença hemorroidária",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com sangramento retal ou sintomas perianais"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há fatores de risco para neoplasia colorretal (idade >45-50 anos, mudança de hábito intestinal, perda de peso, história familiar)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar com colonoscopia antes de atribuir definitivamente o sangramento apenas a hemorroidas, mesmo se hemorroidas forem visualizadas ao exame"
+              }
+            ]
+          },
+          {
+            "label": "Não — baixo risco",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Anuscopia para confirmar e graduar hemorroidas internas (I-IV)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Hemorroida externa trombosada com dor intensa e nódulo palpável?",
+                "ramos": [
+                  {
+                    "label": "Sim, dentro de 72h do início da dor",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Excisão do trombo — alívio rápido quando feita nas primeiras 72h"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — hemorroida interna graus I-III",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Medidas conservadoras (fibras, hidratação, banhos de assento)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Ligadura elástica se refratária às medidas conservadoras; hemorroidectomia reservada a grau IV ou casos refratários"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
