@@ -12376,5 +12376,136 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-trauma-abdominal-abordagem",
+    "temaId": "trauma-abdominal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem do trauma abdominal",
+    "revisado": false,
+    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com trauma abdominal fechado ou penetrante"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente hemodinamicamente instável?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "FAST à beira-leito"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "FAST positivo (líquido livre) ou evisceração/peritonite difusa?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Laparotomia exploradora imediata — sem necessidade de exame de imagem adicional"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não / indeterminado",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar outras causas de instabilidade e reavaliar FAST seriadamente; manter reposição volêmica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não (paciente estável)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Mecanismo é penetrante (arma branca ou arma de fogo)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Ferimento por arma de fogo com penetração peritoneal confirmada?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Laparotomia exploradora imediata"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não / arma branca sem sinais de penetração",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Exploração local da ferida; TC de abdome com contraste para avaliar trajeto e órgãos acometidos"
+                              },
+                              {
+                                "tipo": "end",
+                                "texto": "Observação clínica seriada se sem sinais de penetração peritoneal ou lesão de víscera"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não (trauma fechado)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "TC de abdome com contraste para graduar lesão de órgão sólido (baço/fígado)"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "Sangramento ativo por SNG/toque retal, peritonite ou outra indicação absoluta de cirurgia?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Laparotomia exploradora"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Candidato a manejo não operatório: monitorização seriada em ambiente com UTI/sala cirúrgica disponíveis; conversão para cirurgia se houver instabilidade recorrente"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -71156,5 +71156,113 @@
     ],
     "correta": 1,
     "comentario": "Estridor e rouquidão progressiva são sinais de alerta para obstrução iminente de via aérea, uma das seis lesões com risco imediato de morte avaliadas já na etapa A do ABCDE. A conduta prioritária é obter uma via aérea definitiva (intubação orotraqueal ou via aérea cirúrgica, conforme o caso) antes que ocorra obstrução completa, sem aguardar avaliações especializadas ou postergar para etapas posteriores do atendimento, já que essa lesão compromete diretamente a ventilação e pode evoluir para óbito em minutos."
+  },
+  {
+    "id": "q3913",
+    "temaId": "trauma-abdominal",
+    "tema": "Trauma Abdominal: Avaliação e Conduta",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Homem de 28 anos é trazido ao pronto-socorro após colisão automobilística. À chegada, apresenta PA 78x50 mmHg, FC 132 bpm, pele fria e pegajosa. Após infusão de 1000 mL de cristaloide aquecido, mantém-se hipotenso. O FAST realizado à beira-leito evidencia líquido livre na janela hepatorrenal (bolsa de Morrison). Qual a conduta mais adequada neste momento?",
+    "alternativas": [
+      "Solicitar tomografia de abdome com contraste para graduar a lesão antes de decidir a conduta.",
+      "Encaminhar o paciente imediatamente à laparotomia exploradora, sem aguardar exame de imagem adicional.",
+      "Manter observação clínica com reavaliações seriadas do FAST a cada 30 minutos.",
+      "Iniciar manejo não operatório com repouso absoluto e antibioticoterapia profilática."
+    ],
+    "correta": 1,
+    "comentario": "Paciente hemodinamicamente instável com FAST positivo (líquido livre intraperitoneal) tem indicação de laparotomia exploradora imediata, sem necessidade de exame de imagem adicional como a tomografia. Aguardar TC nesse cenário atrasa o controle cirúrgico do sangramento e aumenta o risco de choque hemorrágico refratário. A tomografia é reservada para pacientes estáveis, e a observação isolada não é apropriada diante de instabilidade persistente com FAST positivo."
+  },
+  {
+    "id": "q3914",
+    "temaId": "trauma-abdominal",
+    "tema": "Trauma Abdominal: Avaliação e Conduta",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Mulher de 34 anos sofre ferimento por arma branca em flanco esquerdo durante agressão. Está hemodinamicamente estável, sem sinais de irritação peritoneal. À exploração local da ferida, não há evidência de penetração da fáscia posterior. Qual a conduta mais apropriada?",
+    "alternativas": [
+      "Laparotomia exploradora imediata, já que todo ferimento penetrante exige exploração cirúrgica da cavidade.",
+      "Observação clínica seriada com exames de imagem complementares, dispensando cirurgia neste momento.",
+      "Alta hospitalar imediata com orientação de retorno se dor.",
+      "Angioembolização profilática do baço, independentemente de achados na tomografia."
+    ],
+    "correta": 1,
+    "comentario": "Ferimento por arma branca sem sinais de penetração peritoneal confirmada à exploração local e em paciente estável não exige laparotomia imediata — a exploração cirúrgica sistemática de todo trauma penetrante foi abandonada em favor de uma conduta seletiva. A observação clínica seriada associada a exames de imagem (como tomografia) permite identificar lesões que eventualmente necessitem de intervenção, evitando laparotomias não terapêuticas desnecessárias."
+  },
+  {
+    "id": "q3915",
+    "temaId": "trauma-abdominal",
+    "tema": "Trauma Abdominal: Avaliação e Conduta",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Adolescente de 16 anos, vítima de queda de bicicleta com trauma direto em hipocôndrio esquerdo, está hemodinamicamente estável. A tomografia de abdome com contraste evidencia laceração esplênica de alto grau, sem sinais de extravasamento ativo de contraste (blush) e sem outras lesões associadas. Qual o principal critério que determina a possibilidade de manejo não operatório neste caso?",
+    "alternativas": [
+      "O grau anatômico da lesão esplênica isoladamente, sendo lesões de alto grau sempre contraindicação ao manejo conservador.",
+      "A estabilidade hemodinâmica do paciente e a ausência de outras indicações de laparotomia, independentemente do grau da lesão.",
+      "A idade do paciente, já que pacientes acima de 12 anos exigem esplenectomia sistemática.",
+      "A presença de dor abdominal à palpação, que por si só indica cirurgia imediata."
+    ],
+    "correta": 1,
+    "comentario": "O fator determinante para o manejo não operatório de lesões de órgão sólido (baço ou fígado) é a estabilidade hemodinâmica do paciente, associada à ausência de outras indicações de laparotomia — e não o grau anatômico da lesão isoladamente. Mesmo lesões de alto grau podem ser conduzidas de forma conservadora em pacientes estáveis, com monitorização seriada em ambiente que disponha de UTI e sala cirúrgica caso haja deterioração clínica."
+  },
+  {
+    "id": "q3916",
+    "temaId": "trauma-abdominal",
+    "tema": "Trauma Abdominal: Avaliação e Conduta",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Homem de 40 anos dá entrada após ferimento por arma de fogo em abdome. Ao exame, encontra-se com alça intestinal exteriorizada através do ferimento na parede abdominal. A PA é 110x70 mmHg e FC 98 bpm. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Reduzir manualmente a alça exteriorizada e liberar o paciente para observação ambulatorial.",
+      "Cobrir a evisceração com curativo úmido e estéril e encaminhar imediatamente à laparotomia exploradora.",
+      "Solicitar tomografia de abdome para definir a extensão da lesão antes de qualquer intervenção.",
+      "Aguardar estabilização hemodinâmica completa por 24 horas antes de indicar cirurgia."
+    ],
+    "correta": 1,
+    "comentario": "Evisceração é indicação absoluta de laparotomia exploradora imediata, independentemente da estabilidade hemodinâmica do paciente. A conduta pré-operatória correta é cobrir a alça exteriorizada com curativo úmido e estéril, evitando manipulação ou redução manual, e encaminhar prontamente à sala cirúrgica, sem necessidade de exames de imagem adicionais que apenas postergariam o tratamento definitivo."
+  },
+  {
+    "id": "q3917",
+    "temaId": "trauma-abdominal",
+    "tema": "Trauma Abdominal: Avaliação e Conduta",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Mulher de 45 anos, vítima de colisão automobilística usando cinto de segurança, é avaliada no pronto-socorro. Está hemodinamicamente estável, com exame abdominal inicialmente sem sinais de irritação peritoneal, mas apresenta equimose transversal na região infraumbilical, compatível com sinal do cinto de segurança. Qual a implicação clínica mais importante desse achado?",
+    "alternativas": [
+      "O achado é apenas estético e não exige nenhuma investigação adicional caso o exame abdominal permaneça normal.",
+      "Indica risco aumentado de lesão oculta de víscera oca e de fratura de coluna lombar, mesmo com exame inicial pouco alterado.",
+      "Confirma automaticamente lesão de baço ou fígado, sendo indicação direta de laparotomia.",
+      "É sinal de gravidade exclusivo de lesão vascular de grandes vasos abdominais."
+    ],
+    "correta": 1,
+    "comentario": "O sinal do cinto de segurança (equimose transversal na parede abdominal) está associado a maior risco de lesão de víscera oca — especialmente de intestino delgado — e de fratura de coluna lombar (fratura de Chance), mesmo quando o exame físico inicial é pouco alterado. Esse achado deve motivar investigação mais cuidadosa e reavaliação seriada, já que lesões de víscera oca podem não se manifestar clinicamente nas primeiras horas após o trauma."
+  },
+  {
+    "id": "q3918",
+    "temaId": "trauma-abdominal",
+    "tema": "Trauma Abdominal: Avaliação e Conduta",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Homem de 52 anos sofre trauma abdominal fechado em acidente motociclístico. Está hemodinamicamente estável. Ao toque retal, observa-se sangue vivo, e a sonda nasogástrica drena conteúdo hemático significativo. O exame físico abdominal revela distensão progressiva e defesa muscular difusa. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Solicitar tomografia de abdome com contraste e aguardar o resultado antes de qualquer decisão terapêutica.",
+      "Iniciar manejo não operatório com observação clínica, já que o paciente está hemodinamicamente estável.",
+      "Encaminhar o paciente à laparotomia exploradora, dado o conjunto de sinais sugestivos de lesão de víscera oca com peritonite.",
+      "Repetir o FAST a cada 6 horas e liberar o paciente caso os exames permaneçam negativos."
+    ],
+    "correta": 2,
+    "comentario": "Sangramento ativo identificado por sonda nasogástrica ou ao toque retal, associado a sinais de peritonite difusa (distensão progressiva e defesa muscular difusa), constitui indicação de laparotomia exploradora, mesmo em paciente hemodinamicamente estável — a estabilidade hemodinâmica não afasta a necessidade de cirurgia quando há evidência clínica de lesão de víscera oca com contaminação peritoneal em curso. Aguardar exames de imagem adicionais nesse contexto atrasaria um tratamento cirúrgico já indicado clinicamente."
   }
 ]
