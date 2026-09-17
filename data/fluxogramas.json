@@ -13138,5 +13138,72 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-hpb-abordagem",
+    "temaId": "hiperplasia-prostatica-benigna",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da hiperplasia prostática benigna sintomática",
+    "revisado": true,
+    "fonte": "Diretrizes de urologia — hiperplasia prostática benigna",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Homem com sintomas do trato urinário inferior (obstrutivos e/ou irritativos)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Retenção urinária aguda completa (incapacidade total de urinar, bexiga distendida e dolorosa)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Cateterismo vesical de alívio IMEDIATO, seguido de investigação e planejamento terapêutico definitivo"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "IPSS, toque retal (avaliar simetria/consistência) e PSA conforme decisão compartilhada com o paciente"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Sintomas leves ou moderados/graves?",
+                "ramos": [
+                  {
+                    "label": "Leves",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Mudanças comportamentais e acompanhamento"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Moderados/graves",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Alfabloqueador (componente dinâmico, alívio rápido); associar inibidor da 5-alfa-redutase se próstata volumosa (componente estático)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Tratamento cirúrgico (RTU de próstata) se refratário ao tratamento clínico ou houver complicação (retenção recorrente, litíase vesical, insuficiência renal obstrutiva)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

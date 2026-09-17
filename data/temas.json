@@ -7634,7 +7634,7 @@
     "categoria": "Urologia",
     "titulo": "Hiperplasia Prostática Benigna e Disfunção Miccional",
     "resumo": "Sintomas obstrutivos e irritativos do trato urinário inferior, escore IPSS e manejo da retenção urinária aguda.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Urologia; American Urological Association Guideline on BPH",
     "mnemonicos": [
       {
@@ -7661,7 +7661,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Sintomas leves podem ser acompanhados apenas com mudanças comportamentais. Alfabloqueadores (tansulosina) proporcionam alívio sintomático rápido ao relaxar a musculatura lisa prostática (componente dinâmico); inibidores da 5-alfa-redutase (finasterida) reduzem o volume prostático a longo prazo (componente estático), sendo mais eficazes em próstatas maiores, e podem ser combinados aos alfabloqueadores em casos moderados/graves. Tratamento cirúrgico (ressecção transuretral de próstata, entre outras técnicas) é reservado a sintomas refratários ao tratamento clínico ou complicações (retenção urinária recorrente, litíase vesical, insuficiência renal obstrutiva)."
+        "conteudo": "Sintomas leves podem ser acompanhados apenas com mudanças comportamentais. Alfabloqueadores (tansulosina) proporcionam alívio sintomático rápido ao relaxar a musculatura lisa prostática (componente dinâmico); inibidores da 5-alfa-redutase (finasterida) reduzem o volume prostático a longo prazo (componente estático), sendo mais eficazes em próstatas maiores, e podem ser combinados aos alfabloqueadores em casos moderados/graves. Tratamento cirúrgico (ressecção transuretral de próstata, entre outras técnicas) é reservado a sintomas refratários ao tratamento clínico ou complicações (retenção urinária recorrente, litíase vesical, insuficiência renal obstrutiva).\n\n<div class=\"table-wrap\"><table><thead><tr><th>Classe</th><th>Fármaco</th><th>Componente tratado</th><th>Características</th></tr></thead><tbody><tr><td>Alfabloqueador</td><td>Tansulosina</td><td>Dinâmico (hipertonia muscular)</td><td>Alívio sintomático rápido</td></tr><tr><td>Inibidor da 5-alfa-redutase</td><td>Finasterida</td><td>Estático (volume prostático)</td><td>Reduz volume a longo prazo; mais eficaz em próstatas maiores</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -7671,7 +7671,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre o componente estático (tratado com inibidor de 5-alfa-redutase, mais eficaz em próstatas grandes) e dinâmico (tratado com alfabloqueador, de ação mais rápida) da obstrução é cobrança certa e recorrente. Os achados de toque retal que diferenciam hiperplasia benigna (simétrica, fibroelástica) de suspeita de câncer (nódulo endurecido, assimétrico) também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a HPB é cobrada principalmente pela distinção entre componente dinâmico (alfabloqueador, ação rápida) e estático (inibidor da 5-alfa-redutase, reduz volume a longo prazo, mais eficaz em próstatas grandes) na escolha terapêutica, pelos achados de toque retal que diferenciam HPB (simétrica, fibroelástica) de suspeita de câncer (nódulo endurecido, assimétrico), e pela conduta imediata na retenção urinária aguda (cateterismo de alívio antes de qualquer planejamento terapêutico definitivo)."
   },
   {
     "id": "nefrolitiase",
