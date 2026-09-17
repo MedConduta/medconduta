@@ -13071,5 +13071,72 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-escroto-agudo-abordagem",
+    "temaId": "torcao-testicular-escroto-agudo",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do escroto agudo",
+    "revisado": true,
+    "fonte": "Diretrizes de urologia de emergência — escroto agudo",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor testicular aguda"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor súbita e intensa, reflexo cremastérico ausente, sinal de Prehn negativo (especialmente em adolescente)?",
+        "ramos": [
+          {
+            "label": "Sim — forte suspeita de torção",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Exploração cirúrgica IMEDIATA, sem aguardar exame de imagem — cada hora de atraso reduz a viabilidade testicular (janela ~6h)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Destorção + orquidopexia bilateral; orquiectomia se necrose já estabelecida"
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro menos típico, tempo disponível",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Ultrassonografia com Doppler colorido testicular"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Fluxo sanguíneo testicular ausente/reduzido?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Exploração cirúrgica de urgência (torção confirmada)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — fluxo normal/aumentado",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Tratar como epididimite: antibioticoterapia dirigida ao agente provável"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
