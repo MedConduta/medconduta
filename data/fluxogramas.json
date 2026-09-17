@@ -11773,5 +11773,114 @@
         "texto": "Diante de suspeita de arterite de células gigantes com sintomas visuais, o tratamento com corticoide NUNCA deve aguardar a confirmação por biópsia — a decisão terapêutica é clínica e imediata"
       }
     ]
+  },
+  {
+    "id": "flow-colagenoses-investigacao",
+    "temaId": "colagenoses-esclerodermia-miopatias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Colagenoses — orientação diagnóstica pelo quadro clínico predominante",
+    "revisado": true,
+    "fonte": "Critérios ACR/EULAR para esclerose sistêmica, miopatias inflamatórias e síndrome de Sjögren",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de colagenose (Raynaud, fraqueza muscular, sicca ou fibrose cutânea)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Achado clínico predominante?",
+        "ramos": [
+          {
+            "label": "Fenômeno de Raynaud + espessamento cutâneo",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Capilaroscopia periungueal (diferenciar Raynaud primário de secundário) + autoanticorpos específicos"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Autoanticorpo e extensão cutânea?",
+                "ramos": [
+                  {
+                    "label": "Anticentrômero, fibrose limitada a face/mãos/antebraços",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Esclerose sistêmica forma limitada — melhor prognóstico geral, mas risco específico de hipertensão pulmonar isolada tardia"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Anti-Scl-70 (antitopoisomerase I), acometimento cutâneo extenso",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Esclerose sistêmica forma difusa — maior risco de doença pulmonar intersticial e mortalidade"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Fraqueza muscular proximal simétrica progressiva",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Dosar CK, eletroneuromiografia (padrão miopático); biópsia muscular se necessário"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Achados associados?",
+                "ramos": [
+                  {
+                    "label": "Heliotropo + pápulas de Gottron",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Dermatomiosite — rastrear neoplasia oculta associada"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Doença pulmonar intersticial + artrite + \"mãos de mecânico\" + anti-Jo-1",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Síndrome antissintetase — maior risco de acometimento pulmonar"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Idoso, fraqueza assimétrica proximal e distal, resposta pobre à imunossupressão",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Considerar miosite por corpúsculo de inclusão — diferencial importante de polimiosite/dermatomiosite"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Xerostomia + xeroftalmia (síndrome sicca) ± aumento parotídeo",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar síndrome de Sjögren: anti-Ro/SSA e anti-La/SSB, teste de Schirmer I, biópsia de glândula salivar menor (critérios ACR/EULAR 2016); vigiar sinais de linfoma (linfadenopatia nova, citopenias, hipocomplementemia)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Hipertensão arterial de início abrupto com piora aguda da função renal em paciente com esclerose sistêmica é crise renal esclerodérmica — IECA deve ser iniciado imediatamente, mesmo diante de piora renal aguda"
+      }
+    ]
   }
 ]
