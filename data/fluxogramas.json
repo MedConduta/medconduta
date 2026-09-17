@@ -13674,5 +13674,56 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-cancer-endometrio-abordagem",
+    "temaId": "cancer-endometrio",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação do sangramento pós-menopausa",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia oncológica — câncer de endométrio",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher na pós-menopausa com sangramento vaginal"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Considerar câncer de endométrio até prova em contrário — investigação obrigatória, nunca atribuir precipitadamente a causa benigna"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia transvaginal (avaliar espessura endometrial)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Biópsia endometrial (aspiração ambulatorial ou histeroscopia com biópsia dirigida) — obrigatória, não substituível apenas pela imagem"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Confirmado câncer de endométrio, aparentemente confinado ao útero?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Histerectomia total + salpingo-ooforectomia bilateral + estadiamento cirúrgico (avaliação linfonodal)"
+              }
+            ]
+          },
+          {
+            "label": "Não — benigno ou hiperplasia sem atipia",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Conduta conforme achado específico (acompanhamento ou tratamento dirigido)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

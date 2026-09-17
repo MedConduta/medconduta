@@ -5620,7 +5620,7 @@
     "categoria": "Ginecologia",
     "titulo": "Câncer de Endométrio",
     "resumo": "Exposição estrogênica não contraposta como principal fator de risco, e sangramento pós-menopausa como sinal de alerta obrigatório.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Instituto Nacional de Câncer (INCA); FEBRASGO; NCCN Guidelines for Uterine Neoplasms",
     "mnemonicos": [
       {
@@ -5631,7 +5631,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "O câncer de endométrio é a neoplasia ginecológica mais comum em países desenvolvidos, com o tipo endometrioide (tipo I) representando a maioria dos casos, associado a exposição estrogênica prolongada e não contraposta por progesterona (obesidade, anovulação crônica/SOP, terapia estrogênica isolada sem progestágeno, tamoxifeno). O tipo II (seroso, células claras), menos comum, não está associado a excesso estrogênico e tem comportamento biológico mais agressivo, geralmente em mulheres mais idosas e com endométrio atrófico."
+        "conteudo": "O câncer de endométrio é a neoplasia ginecológica mais comum em países desenvolvidos, com o tipo endometrioide (tipo I) representando a maioria dos casos, associado a exposição estrogênica prolongada e não contraposta por progesterona (obesidade, anovulação crônica/SOP, terapia estrogênica isolada sem progestágeno, tamoxifeno). O tipo II (seroso, células claras), menos comum, não está associado a excesso estrogênico e tem comportamento biológico mais agressivo, geralmente em mulheres mais idosas e com endométrio atrófico.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Tipo I (endometrioide)</th><th>Tipo II (seroso/células claras)</th></tr></thead><tbody><tr><td>Frequência</td><td>Maioria dos casos</td><td>Minoria</td></tr><tr><td>Associação</td><td>Excesso estrogênico não contraposto (obesidade, anovulação, estrogênio isolado, tamoxifeno)</td><td>NÃO associado a excesso estrogênico</td></tr><tr><td>Perfil típico</td><td>Mulher com fatores de risco metabólicos</td><td>Mulher mais idosa, endométrio atrófico</td></tr><tr><td>Comportamento</td><td>Geralmente menos agressivo</td><td>Mais agressivo</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Quadro clínico",
@@ -5657,7 +5657,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O sangramento pós-menopausa como sinal de alarme obrigatório para investigação de câncer de endométrio é cobrança certíssima e um dos pontos mais importantes de toda a ginecologia em provas de residência. Os fatores de risco relacionados a excesso estrogênico não contraposto (obesidade, anovulação, terapia estrogênica isolada, tamoxifeno) também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, este é um dos sinais de alarme mais categóricos de toda a ginecologia: sangramento vaginal em mulher pós-menopausa deve ser considerado câncer de endométrio até prova em contrário, com investigação obrigatória por ultrassonografia transvaginal seguida de biópsia endometrial (nunca só a imagem isoladamente). Os fatores de risco de excesso estrogênico não contraposto (obesidade, anovulação, estrogênio isolado sem progestágeno, tamoxifeno) também são cobrança certa."
   },
   {
     "id": "cancer-ovario",
