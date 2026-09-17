@@ -2764,7 +2764,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Doença Diverticular dos Cólons e Diverticulite Aguda",
     "resumo": "Classificação de Hinchey e conduta conforme gravidade da diverticulite complicada.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Coloproctologia; WSES Guidelines for the Management of Acute Left-Sided Colonic Diverticulitis",
     "mnemonicos": [
       {
@@ -2787,7 +2787,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A tomografia de abdome com contraste é o exame de escolha, tanto para confirmação diagnóstica quanto para classificação de gravidade (classificação de Hinchey, que estratifica desde inflamação/abscesso pericólico pequeno até peritonite fecal generalizada), informação central para decisão terapêutica entre manejo clínico e cirúrgico. Colonoscopia é contraindicada na fase aguda (risco de perfuração pelo insuflar de ar sob pressão em cólon inflamado), sendo recomendada eletivamente algumas semanas após resolução do episódio agudo para excluir neoplasia associada, especialmente em primeiro episódio."
+        "conteudo": "A tomografia de abdome com contraste é o exame de escolha, tanto para confirmação diagnóstica quanto para classificação de gravidade (classificação de Hinchey, que estratifica desde inflamação/abscesso pericólico pequeno até peritonite fecal generalizada), informação central para decisão terapêutica entre manejo clínico e cirúrgico. Colonoscopia é contraindicada na fase aguda (risco de perfuração pelo insuflar de ar sob pressão em cólon inflamado), sendo recomendada eletivamente algumas semanas após resolução do episódio agudo para excluir neoplasia associada, especialmente em primeiro episódio.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Estágio de Hinchey</th><th>Achado</th><th>Conduta típica</th></tr></thead><tbody><tr><td>I</td><td>Abscesso pericólico pequeno/flegmão</td><td>Clínica (antibiótico se indicado, dieta, analgesia)</td></tr><tr><td>II</td><td>Abscesso pélvico/à distância, maior</td><td>Drenagem percutânea guiada por imagem + antibiótico (geralmente se &gt;4cm)</td></tr><tr><td>III</td><td>Peritonite purulenta generalizada</td><td>Cirurgia de urgência (frequentemente Hartmann)</td></tr><tr><td>IV</td><td>Peritonite fecal generalizada</td><td>Cirurgia de urgência (Hartmann) — maior gravidade</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -2801,7 +2801,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A classificação de Hinchey e sua correlação com a conduta terapêutica (clínica, drenagem percutânea, ou cirurgia conforme o grau) é cobrança central e recorrente. A contraindicação de colonoscopia na fase aguda (risco de perfuração) e sua indicação eletiva posterior para excluir neoplasia também são frequentemente exigidas."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a diverticulite aguda é cobrada sobretudo pela aplicação da classificação de Hinchey na decisão terapêutica (estágios I/II tratados de forma clínica ou com drenagem percutânea; III/IV exigem cirurgia de urgência) e pela contraindicação da colonoscopia na fase aguda pelo risco de perfuração, sendo indicada eletivamente semanas depois para excluir neoplasia — um par de conceitos frequentemente testado em conjunto na mesma vinheta."
   },
   {
     "id": "nodulo-mama-ca-mama",
