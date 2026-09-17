@@ -12011,5 +12011,96 @@
         "texto": "Cuidados paliativos devem ser integrados precocemente ao cuidado oncológico em doença avançada — não são reservados apenas ao final da vida, e sua introdução precoce associa-se a melhora de qualidade de vida e, em alguns estudos, de sobrevida"
       }
     ]
+  },
+  {
+    "id": "flow-intoxicacao-exogena-abordagem-inicial",
+    "temaId": "emergencias-toxicologicas-anafilaxia",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem inicial da intoxicação exógena aguda",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Toxicologia; princípios gerais de toxicologia clínica de emergência",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de intoxicação exógena aguda (história de exposição, achado toxindrômico ou rebaixamento de consciência inexplicado)"
+      },
+      {
+        "tipo": "action",
+        "texto": "ABCDE inicial: via aérea, respiração, circulação — estabilizar antes de qualquer medida diagnóstica ou de descontaminação"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente com rebaixamento do nível de consciência, miose e depressão respiratória (tríade opioide)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Administrar naloxona IV/IM — resposta diagnóstica e terapêutica; repetir/considerar infusão contínua pela meia-vida curta do antídoto frente a opioides de ação prolongada"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Há toxíndrome colinérgica (miose, sialorreia, broncorreia, fasciculações) sugestiva de organofosforado/carbamato?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Atropina titulada até controle das secreções + pralidoxima (reativador da colinesterase) + descontaminação cutânea (remoção de roupas, lavagem com água e sabão)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — toxíndrome não opioide/colinérgica ou agente não identificado",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Investigar história detalhada (agente, dose, tempo de exposição, coingestão), exame físico completo e exames complementares dirigidos (glicemia, eletrólitos, função renal/hepática, ECG, gasometria, paracetamolemia quando indicado)"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "Ingestão oral recente (idealmente <1-2h) de agente com risco de toxicidade grave e via aérea protegida?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Considerar descontaminação gastrointestinal (carvão ativado) conforme o agente, tempo de ingestão e ausência de contraindicações — nunca indicar lavagem gástrica ou êmese induzida de rotina"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Priorizar suporte clínico e monitorização, sem descontaminação gastrointestinal"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Se antídoto específico disponível para o agente identificado (ver tabela de antídotos), administrar precocemente; manter suporte clínico, monitorização e contato com centro de intoxicação/toxicologia conforme disponibilidade local"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
