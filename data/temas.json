@@ -5809,7 +5809,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Hemorragias da 2ª Metade da Gestação",
     "resumo": "Diferenciação entre descolamento prematuro de placenta, placenta prévia e rotura uterina.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO; Ministério da Saúde — Gestação de Alto Risco",
     "mnemonicos": [
       {
@@ -5824,7 +5824,7 @@
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "DPP classicamente causa sangramento vaginal (podendo ser oculto/retroplacentário, sem exteriorização) associado a dor abdominal súbita e intensa, hipertonia uterina e sofrimento fetal agudo. Placenta prévia causa sangramento vaginal indolor, geralmente de início súbito, vermelho vivo, recorrente ao longo da gestação, sem hipertonia uterina associada — essa ausência de dor é o elemento mais valorizado na diferenciação clínica entre as duas condições. Rotura uterina manifesta-se com dor abdominal súbita e intensa durante o trabalho de parto, frequentemente com cessação abrupta das contrações e alteração do padrão de frequência cardíaca fetal."
+        "conteudo": "DPP classicamente causa sangramento vaginal (podendo ser oculto/retroplacentário, sem exteriorização) associado a dor abdominal súbita e intensa, hipertonia uterina e sofrimento fetal agudo. Placenta prévia causa sangramento vaginal indolor, geralmente de início súbito, vermelho vivo, recorrente ao longo da gestação, sem hipertonia uterina associada — essa ausência de dor é o elemento mais valorizado na diferenciação clínica entre as duas condições. Rotura uterina manifesta-se com dor abdominal súbita e intensa durante o trabalho de parto, frequentemente com cessação abrupta das contrações e alteração do padrão de frequência cardíaca fetal.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>DPP</th><th>Placenta prévia</th></tr></thead><tbody><tr><td>Dor</td><td>Súbita e intensa</td><td>Ausente (indolor) — elemento mais valorizado</td></tr><tr><td>Sangramento</td><td>Pode ser oculto (retroplacentário)</td><td>Visível, vermelho vivo, recorrente</td></tr><tr><td>Tônus uterino</td><td>Hipertonia (\"útero em madeira\")</td><td>Normal</td></tr><tr><td>Fator de risco principal</td><td>Hipertensão materna/pré-eclâmpsia</td><td>Cicatriz uterina prévia, multiparidade</td></tr><tr><td>Diagnóstico</td><td>Clínico (USG pouco sensível para hematoma)</td><td>Ultrassonografia (transvaginal segura mesmo com sangramento ativo)</td></tr><tr><td>Toque vaginal</td><td>Não contraindicado por si só</td><td>CONTRAINDICADO antes de excluir por USG</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Exame físico",
@@ -5846,7 +5846,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre DPP (dor intensa, hipertonia, sangramento pode ser oculto) e placenta prévia (indolor, sem hipertonia, sangramento visível recorrente) é cobrança certíssima. A contraindicação absoluta de toque vaginal antes de excluir placenta prévia por imagem também é um dos pontos de segurança mais valorizados e mais recorrentes em toda a especialidade."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado quase sempre pela diferenciação DPP (dor intensa, hipertonia, sangramento pode ser oculto) vs. placenta prévia (indolor, sem hipertonia, sangramento visível recorrente), e pela regra de segurança mais importante da obstetrícia: NUNCA realizar toque vaginal em sangramento de segunda metade da gestação antes de excluir placenta prévia por ultrassonografia. A conduta de cesárea de urgência no DPP com comprometimento e a contraindicação de parto vaginal na placenta prévia total também são cobrança recorrente."
   },
   {
     "id": "cardiotocografia-bem-estar-fetal",

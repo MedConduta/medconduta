@@ -14020,5 +14020,52 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-hemorragia-2a-metade-abordagem",
+    "temaId": "hemorragia-2a-metade-gestacao",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do sangramento vaginal na segunda metade da gestação",
+    "revisado": true,
+    "fonte": "Diretrizes de obstetrícia — hemorragias da segunda metade da gestação",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Gestante com sangramento vaginal após 20 semanas"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "NUNCA realizar toque vaginal antes de excluir placenta prévia por ultrassonografia — risco de hemorragia catastrófica"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia (transvaginal, segura mesmo com sangramento ativo) para localizar a placenta"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor abdominal súbita e intensa, útero hipertônico (\"em madeira\")?",
+        "ramos": [
+          {
+            "label": "Sim — suspeita de DPP",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Interrupção imediata da gestação (cesárea de urgência) se comprometimento fetal/materno significativo — diagnóstico é clínico"
+              }
+            ]
+          },
+          {
+            "label": "Não — sangramento indolor, sem hipertonia",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeita de placenta prévia — confirmar por USG; via de parto conforme localização (cesárea se cobre o orifício interno)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
