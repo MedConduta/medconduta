@@ -13268,5 +13268,52 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-tumores-urologicos-hematuria",
+    "temaId": "tumores-urologicos",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação da hematúria macroscópica indolor",
+    "revisado": true,
+    "fonte": "Diretrizes de urologia oncológica — investigação de hematúria",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente adulto com hematúria macroscópica indolor (especialmente tabagista)"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Considerar neoplasia urotelial (câncer de bexiga) até prova em contrário — a resolução espontânea do sangramento NÃO exclui o diagnóstico"
+      },
+      {
+        "tipo": "action",
+        "texto": "Cistoscopia com biópsia/ressecção transuretral"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Doença invasiva (musculatura detrusora) confirmada?",
+        "ramos": [
+          {
+            "label": "Não — não invasiva",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Ressecção transuretral com instilação intravesical adjuvante (BCG)"
+              }
+            ]
+          },
+          {
+            "label": "Sim — invasiva",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Cistectomia radical"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
