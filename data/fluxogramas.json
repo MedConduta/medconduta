@@ -12657,5 +12657,56 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-isquemia-mesenterica-abordagem",
+    "temaId": "isquemia-mesenterica-abdome-vascular",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem da isquemia mesentérica aguda",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia vascular de emergência — isquemia mesentérica aguda",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor abdominal súbita e intensa, desproporcional ao exame físico, em paciente com fibrilação atrial ou aterosclerose conhecida"
+      },
+      {
+        "tipo": "action",
+        "texto": "ABCDE, acesso venoso, ressuscitação volêmica, NÃO aguardar lactato para investigar"
+      },
+      {
+        "tipo": "action",
+        "texto": "Angiotomografia de abdome urgente — avaliar oclusão vascular e sinais precoces de sofrimento intestinal (pneumatose, gás portal)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de irritação peritoneal franca (defesa, descompressão dolorosa) já presentes?",
+        "ramos": [
+          {
+            "label": "Sim — suspeita de necrose transmural",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Laparotomia de urgência para ressecção do segmento necrótico associada à revascularização"
+              }
+            ]
+          },
+          {
+            "label": "Não — fase inicial, sem sinais peritoneais",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Anticoagulação sistêmica precoce"
+              },
+              {
+                "tipo": "end",
+                "texto": "Revascularização (embolectomia, trombectomia ou terapia endovascular) o mais rápido possível, conforme o mecanismo identificado"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

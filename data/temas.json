@@ -4964,7 +4964,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Abdome Agudo Vascular: Isquemia Mesentérica Aguda",
     "resumo": "Dor desproporcional ao exame físico como pista central, diagnóstico por angiotomografia e revascularização de urgência.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Colégio Brasileiro de Cirurgiões; ESVS Clinical Practice Guidelines on Mesenteric Ischemia",
     "mnemonicos": [
       {
@@ -4975,7 +4975,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A isquemia mesentérica aguda resulta mais comumente de embolia (geralmente de origem cardíaca, como fibrilação atrial) ou trombose de artéria mesentérica superior sobre placa aterosclerótica preexistente, ou, menos frequentemente, de isquemia não oclusiva (baixo fluxo esplâncnico por choque/vasoconstrição em pacientes gravemente enfermos) ou trombose venosa mesentérica. A progressão para infarto intestinal transmural com necrose e perfuração ocorre rapidamente se a perfusão não for restaurada, tornando essa condição uma das emergências abdominais mais letais quando o diagnóstico é tardio."
+        "conteudo": "A isquemia mesentérica aguda resulta mais comumente de embolia (geralmente de origem cardíaca, como fibrilação atrial) ou trombose de artéria mesentérica superior sobre placa aterosclerótica preexistente, ou, menos frequentemente, de isquemia não oclusiva (baixo fluxo esplâncnico por choque/vasoconstrição em pacientes gravemente enfermos) ou trombose venosa mesentérica. A progressão para infarto intestinal transmural com necrose e perfuração ocorre rapidamente se a perfusão não for restaurada, tornando essa condição uma das emergências abdominais mais letais quando o diagnóstico é tardio.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Mecanismo</th><th>Fonte/fator de risco típico</th><th>Perfil de instalação</th></tr></thead><tbody><tr><td>Embolia arterial (mais comum)</td><td>Fibrilação atrial, trombo mural pós-IAM, valvopatia</td><td>Dor súbita e muito intensa, sem história vascular prévia</td></tr><tr><td>Trombose arterial</td><td>Placa aterosclerótica preexistente em artéria mesentérica</td><td>Frequentemente história prévia de \"angina mesentérica\" (dor pós-prandial, emagrecimento)</td></tr><tr><td>Isquemia não oclusiva</td><td>Baixo fluxo esplâncnico em paciente grave (choque, vasoconstritores em altas doses)</td><td>Paciente já internado/grave, quadro insidioso</td></tr><tr><td>Trombose venosa mesentérica</td><td>Estados de hipercoagulabilidade, neoplasia, cirrose com hipertensão porta</td><td>Instalação mais lenta e progressiva</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Quadro clínico",
@@ -5001,7 +5001,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A dissociação entre dor abdominal intensa e exame físico inicialmente pouco alterado é a cobrança mais importante e recorrente do tema, servindo como principal pista para suspeita precoce antes da necrose transmural. A associação com fibrilação atrial como fator de risco embólico predisponente também é frequentemente exigida em questões de caso clínico."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a isquemia mesentérica aguda é cobrada sobretudo através da vinheta clássica de dor abdominal súbita e desproporcional ao exame físico (dor intensa com abdome inicialmente pouco alterado) em paciente com fibrilação atrial ou doença aterosclerótica — essa dissociação é a pista central que o candidato deve reconhecer para suspeitar do diagnóstico antes da instalação de sinais peritoneais francos, que já indicam necrose transmural estabelecida e pior prognóstico. A angiotomografia como exame de escolha (não aguardar elevação de lactato, que é achado tardio) também é frequentemente exigida."
   },
   {
     "id": "colelitiase-coledocolitiase",
