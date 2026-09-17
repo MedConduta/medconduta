@@ -13437,5 +13437,65 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-uroginecologia-incontinencia-abordagem",
+    "temaId": "uroginecologia-incontinencia-prolapso",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem inicial da incontinência urinária feminina",
+    "revisado": true,
+    "fonte": "Diretrizes de uroginecologia — incontinência urinária",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher com queixa de perda urinária involuntária"
+      },
+      {
+        "tipo": "action",
+        "texto": "História detalhada (diário miccional, questionários) e exame físico com teste de esforço"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Perda urinária associada a aumento de pressão abdominal (tosse, esforço) ou precedida de urgência súbita?",
+        "ramos": [
+          {
+            "label": "Associada a esforço",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Fisioterapia do assoalho pélvico (exercícios de Kegel) como primeira linha"
+              },
+              {
+                "tipo": "end",
+                "texto": "Sling suburetral cirúrgico se refratária ou caso mais grave"
+              }
+            ]
+          },
+          {
+            "label": "Precedida de urgência (bexiga hiperativa)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Treinamento vesical associado a anticolinérgico ou beta-3 agonista (mirabegrona)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Toxina botulínica intravesical se refratária ao tratamento farmacológico"
+              }
+            ]
+          },
+          {
+            "label": "Dúvida diagnóstica / discordância clínica",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Estudo urodinâmico para diferenciar objetivamente os subtipos antes de decisão terapêutica, especialmente se cirurgia planejada"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

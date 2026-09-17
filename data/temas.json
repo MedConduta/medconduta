@@ -5436,7 +5436,7 @@
     "categoria": "Ginecologia",
     "titulo": "Uroginecologia: Incontinência Urinária e Prolapsos Genitais",
     "resumo": "Diferenciação entre incontinência de esforço e de urgência, e o manejo escalonado dos prolapsos genitais.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO; International Continence Society (ICS) Terminology and Guidelines",
     "mnemonicos": [
       {
@@ -5451,7 +5451,7 @@
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Incontinência de esforço manifesta-se com perda urinária associada a aumento da pressão abdominal (tosse, espirro, exercício físico). Incontinência de urgência manifesta-se com perda urinária precedida por urgência miccional súbita e difícil de conter, frequentemente associada a polaciúria e noctúria (síndrome de bexiga hiperativa). Prolapso genital manifesta-se com sensação de peso/bola na vagina, que piora ao longo do dia e com esforço, podendo se associar a dificuldade miccional ou evacuatória conforme o compartimento acometido."
+        "conteudo": "Incontinência de esforço manifesta-se com perda urinária associada a aumento da pressão abdominal (tosse, espirro, exercício físico). Incontinência de urgência manifesta-se com perda urinária precedida por urgência miccional súbita e difícil de conter, frequentemente associada a polaciúria e noctúria (síndrome de bexiga hiperativa). Prolapso genital manifesta-se com sensação de peso/bola na vagina, que piora ao longo do dia e com esforço, podendo se associar a dificuldade miccional ou evacuatória conforme o compartimento acometido.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Incontinência de esforço</th><th>Incontinência de urgência</th></tr></thead><tbody><tr><td>Mecanismo</td><td>Hipermobilidade uretral/deficiência esfincteriana</td><td>Contrações involuntárias do detrusor</td></tr><tr><td>Gatilho da perda</td><td>Aumento da pressão abdominal (tosse, espirro, exercício)</td><td>Urgência miccional súbita, difícil de conter</td></tr><tr><td>Sintomas associados</td><td>Geralmente isolada ao esforço</td><td>Polaciúria, noctúria (bexiga hiperativa)</td></tr><tr><td>Tratamento de 1ª linha</td><td>Fisioterapia do assoalho pélvico (Kegel)</td><td>Treinamento vesical + anticolinérgico ou beta-3 agonista (mirabegrona)</td></tr><tr><td>Tratamento refratário</td><td>Cirurgia (sling suburetral)</td><td>Toxina botulínica intravesical</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Exame físico",
@@ -5473,7 +5473,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação clínica entre incontinência de esforço (perda associada a aumento de pressão abdominal) e de urgência (perda precedida de urgência miccional súbita) é cobrança central e recorrente, orientando diretamente a escolha terapêutica inicial (fisioterapia/cirurgia versus tratamento farmacológico anticolinérgico/beta-3 agonista)."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado principalmente pela diferenciação clínica entre incontinência de esforço (perda associada a aumento de pressão abdominal, tratada com fisioterapia/cirurgia) e de urgência (perda precedida de urgência súbita, tratada com anticolinérgico/beta-3 agonista) — essa distinção orienta diretamente a escolha terapêutica e é frequentemente testada em vinhetas que exigem identificar o subtipo antes de escolher a conduta. O reconhecimento de hidronefrose em prolapso avançado como indicação de correção mais urgente também é cobrado."
   },
   {
     "id": "endometriose",
