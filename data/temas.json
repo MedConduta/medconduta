@@ -934,7 +934,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Hemorragias da 1ª Metade da Gestação",
     "resumo": "Diagnóstico diferencial entre abortamento, gravidez ectópica e doença trofoblástica gestacional.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO; Ministério da Saúde — Gestação de Alto Risco",
     "mnemonicos": [
       {
@@ -961,7 +961,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Ameaça de abortamento com colo fechado e embrião viável é conduzida com repouso relativo e observação. Gravidez ectópica não rota, em paciente estável e com critérios apropriados, pode ser tratada com metotrexato; ectópica rota ou paciente instável exige cirurgia de urgência (salpingectomia ou salpingostomia, conforme o caso). Mola hidatiforme é tratada por esvaziamento uterino (aspiração intrauterina), com seguimento rigoroso de beta-hCG seriado por meses para detectar precocemente eventual progressão para neoplasia trofoblástica gestacional."
+        "conteudo": "Ameaça de abortamento com colo fechado e embrião viável é conduzida com repouso relativo e observação. Gravidez ectópica não rota, em paciente estável e com critérios apropriados, pode ser tratada com metotrexato; ectópica rota ou paciente instável exige cirurgia de urgência (salpingectomia ou salpingostomia, conforme o caso). Mola hidatiforme é tratada por esvaziamento uterino (aspiração intrauterina), com seguimento rigoroso de beta-hCG seriado por meses para detectar precocemente eventual progressão para neoplasia trofoblástica gestacional.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Condição</th><th>Achado-chave</th><th>Conduta</th></tr></thead><tbody><tr><td>Ameaça de abortamento</td><td>Colo fechado, embrião viável</td><td>Repouso relativo e observação</td></tr><tr><td>Abortamento inevitável/incompleto</td><td>Colo aberto</td><td>Esvaziamento uterino conforme o caso</td></tr><tr><td>Gravidez ectópica não rota</td><td>Ausência de saco gestacional intrauterino com beta-hCG acima do limiar discriminatório; paciente estável</td><td>Metotrexato (critérios apropriados) ou cirurgia conservadora</td></tr><tr><td>Gravidez ectópica rota</td><td>Dor súbita intensa + choque hipovolêmico</td><td>Cirurgia de urgência (salpingectomia/salpingostomia)</td></tr><tr><td>Mola hidatiforme</td><td>Útero maior que esperado, beta-hCG muito elevado, imagem em \"flocos de neve\"</td><td>Esvaziamento uterino + seguimento seriado de beta-hCG</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -971,7 +971,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O uso do beta-hCG quantitativo seriado combinado à ultrassonografia transvaginal para diagnóstico de gravidez ectópica (ausência de saco gestacional intrauterino acima do limiar discriminatório) é cobrança certa e recorrente. O seguimento obrigatório com beta-hCG seriado após esvaziamento molar (para detectar neoplasia trofoblástica gestacional) também é frequentemente exigido."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado principalmente pelo diagnóstico de gravidez ectópica via beta-hCG quantitativo seriado + ultrassonografia (ausência de saco gestacional acima do limiar discriminatório), pelo reconhecimento imediato de ectópica rota como emergência cirúrgica que não deve aguardar confirmação de imagem em paciente instável, e pelo seguimento obrigatório de beta-hCG seriado após esvaziamento molar para detectar neoplasia trofoblástica gestacional."
   },
   {
     "id": "puericultura-pni",
