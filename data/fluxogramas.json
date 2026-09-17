@@ -14139,5 +14139,56 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-rpm-abordagem",
+    "temaId": "tpp-rpm-gestacao-multipla",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da rotura prematura de membranas pré-termo",
+    "revisado": true,
+    "fonte": "Diretrizes de obstetrícia — trabalho de parto prematuro e RPM",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Gestante pré-termo com perda súbita de líquido claro pela vagina"
+      },
+      {
+        "tipo": "action",
+        "texto": "Confirmar RPM (exame especular, teste de cristalização em lâmina) — evitar toque vaginal digital repetido"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de corioamnionite (febre materna, taquicardia fetal, útero doloroso, líquido fétido)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Resolução do parto independentemente da idade gestacional + antibioticoterapia — conduta expectante contraindicada"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Conduta expectante + antibioticoprofilaxia (prolonga latência, reduz infecção)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Corticoide antenatal para maturação pulmonar fetal"
+              },
+              {
+                "tipo": "end",
+                "texto": "Vigilância seriada para sinais de infecção e reavaliação contínua da necessidade de resolução do parto"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
