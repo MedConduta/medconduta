@@ -12708,5 +12708,72 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-colelitiase-coledocolitiase-abordagem",
+    "temaId": "colelitiase-coledocolitiase",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da colelitíase e coledocolitíase",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia biliar — colelitíase e coledocolitíase",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Cálculo(s) biliar(es) identificado(s) por ultrassonografia abdominal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente sintomático (cólica biliar)?",
+        "ramos": [
+          {
+            "label": "Não — achado incidental assintomático",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Conduta expectante na maioria dos casos (exceto vesícula em porcelana, pólipos grandes associados ou cálculos muito volumosos)"
+              }
+            ]
+          },
+          {
+            "label": "Sim — cólica biliar",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Há icterícia, colúria ou dilatação de via biliar sugerindo coledocolitíase associada?",
+                "ramos": [
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Colecistectomia eletiva (via laparoscópica)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sim — suspeita de coledocolitíase",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Confirmar com colangiorressonância (casos de probabilidade intermediária) ou indicar CPRE diretamente (alta probabilidade pré-teste)"
+                      },
+                      {
+                        "tipo": "action",
+                        "texto": "CPRE com papilotomia e extração do cálculo coledociano"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Colecistectomia (mesma internação ou tempo próximo) para prevenir recorrência a partir de novos cálculos vesiculares"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
