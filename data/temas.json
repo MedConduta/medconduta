@@ -5666,7 +5666,7 @@
     "categoria": "Ginecologia",
     "titulo": "Câncer de Ovário",
     "resumo": "Ausência de rastreamento populacional eficaz, sintomas vagos e o papel limitado do CA-125.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Instituto Nacional de Câncer (INCA); NCCN Guidelines for Ovarian Cancer",
     "mnemonicos": [
       {
@@ -5685,7 +5685,7 @@
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Massa anexial palpável ao toque bimanual pode estar presente, especialmente em doença mais avançada; características sugestivas de malignidade incluem massa sólida ou mista, irregular, fixa, bilateral, associada a ascite. Ascite volumosa e caquexia são achados de doença já disseminada, infelizmente comum ao diagnóstico dado o padrão tardio de apresentação sintomática."
+        "conteudo": "Massa anexial palpável ao toque bimanual pode estar presente, especialmente em doença mais avançada; características sugestivas de malignidade incluem massa sólida ou mista, irregular, fixa, bilateral, associada a ascite. Ascite volumosa e caquexia são achados de doença já disseminada, infelizmente comum ao diagnóstico dado o padrão tardio de apresentação sintomática.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Massa anexial benigna</th><th>Suspeita de malignidade</th></tr></thead><tbody><tr><td>Consistência</td><td>Cística, simples</td><td>Sólida ou mista</td></tr><tr><td>Contorno</td><td>Regular</td><td>Irregular</td></tr><tr><td>Mobilidade</td><td>Móvel</td><td>Fixa</td></tr><tr><td>Lateralidade</td><td>Unilateral</td><td>Bilateral</td></tr><tr><td>Ascite</td><td>Ausente</td><td>Presente</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Diagnóstico",
@@ -5703,7 +5703,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A ausência de método de rastreamento populacional eficaz validado (diferente de colo e mama) é cobrança certa e importante distinção conceitual da oncologia ginecológica. A associação com mutações BRCA1/BRCA2 e a indicação de inibidores de PARP nesse contexto molecular específico também são frequentemente exigidas em provas mais atualizadas."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o câncer de ovário é cobrado principalmente pela ausência de método de rastreamento populacional eficaz validado (diferente do colo uterino e da mama) — uma distinção conceitual central da oncologia ginecológica frequentemente testada. Os sintomas inespecíficos persistentes (distensão, saciedade precoce, dor pélvica) como pista para investigação em mulher de meia-idade, a associação com mutações BRCA, e o papel dos inibidores de PARP como terapia de manutenção também são cobranças recorrentes em provas atualizadas."
   },
   {
     "id": "pre-natal-baixo-alto-risco",

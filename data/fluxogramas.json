@@ -13725,5 +13725,52 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-cancer-ovario-abordagem",
+    "temaId": "cancer-ovario",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação da massa anexial suspeita de malignidade",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia oncológica — câncer de ovário",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher com sintomas persistentes inespecíficos (distensão, saciedade precoce, dor pélvica) ou massa anexial identificada em exame"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Não existe rastreamento populacional eficaz validado — a suspeita depende de reconhecimento clínico dos sintomas"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia transvaginal (características morfológicas da massa) + CA-125"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Características suspeitas (sólida/mista, irregular, fixa, bilateral, com ascite)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Cirurgia citorredutora com confirmação histopatológica — a confirmação definitiva é sempre cirúrgica"
+              }
+            ]
+          },
+          {
+            "label": "Não — características benignas",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguimento conforme achado específico"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
