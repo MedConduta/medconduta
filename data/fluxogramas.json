@@ -13315,5 +13315,60 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-ciclo-menstrual-fases",
+    "temaId": "ciclo-menstrual-normal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Sequência hormonal do ciclo menstrual normal",
+    "revisado": true,
+    "fonte": "Fisiologia do eixo hipotálamo-hipófise-ovário",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Início do ciclo (1º dia da menstruação)"
+      },
+      {
+        "tipo": "action",
+        "texto": "GnRH hipotalâmico pulsátil estimula liberação de FSH e LH pela hipófise"
+      },
+      {
+        "tipo": "action",
+        "texto": "Fase folicular: FSH estimula crescimento e seleção do folículo dominante; estrogênio em ascensão prolifera o endométrio"
+      },
+      {
+        "tipo": "action",
+        "texto": "Pico de LH (feedback positivo do estrogênio em nível alto e sustentado) desencadeia a ovulação"
+      },
+      {
+        "tipo": "action",
+        "texto": "Fase lútea: corpo lúteo produz progesterona, transformando o endométrio em secretor, preparado para implantação"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Ocorreu implantação/gestação?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "hCG do trofoblasto mantém o corpo lúteo, sustentando a produção de progesterona"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Regressão do corpo lúteo, queda de progesterona, descamação endometrial — menstruação, reiniciando o ciclo"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -5344,7 +5344,7 @@
     "categoria": "Ginecologia",
     "titulo": "Ciclo Menstrual Normal: Fisiologia do Eixo Hipotálamo-Hipófise-Ovário",
     "resumo": "Fases do ciclo ovariano e endometrial, e a regulação hormonal pelo eixo hipotálamo-hipófise-ovário.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO — Manual de Ginecologia Endócrina",
     "mnemonicos": [
       {
@@ -5355,7 +5355,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "O ciclo menstrual normal é regulado pelo eixo hipotálamo-hipófise-ovário: o GnRH hipotalâmico estimula a liberação pulsátil de FSH e LH pela hipófise, que por sua vez estimulam o crescimento folicular ovariano e a produção de estrogênio (fase folicular). O pico de LH desencadeia a ovulação, seguida pela formação do corpo lúteo, que produz progesterona (fase lútea), preparando o endométrio para uma eventual implantação — na ausência de gestação, a queda de progesterona pela regressão do corpo lúteo desencadeia a menstruação."
+        "conteudo": "O ciclo menstrual normal é regulado pelo eixo hipotálamo-hipófise-ovário: o GnRH hipotalâmico estimula a liberação pulsátil de FSH e LH pela hipófise, que por sua vez estimulam o crescimento folicular ovariano e a produção de estrogênio (fase folicular). O pico de LH desencadeia a ovulação, seguida pela formação do corpo lúteo, que produz progesterona (fase lútea), preparando o endométrio para uma eventual implantação — na ausência de gestação, a queda de progesterona pela regressão do corpo lúteo desencadeia a menstruação.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Fase</th><th>Hormônio dominante</th><th>Evento central</th><th>Endométrio</th></tr></thead><tbody><tr><td>Folicular</td><td>FSH estimula crescimento folicular; estrogênio em ascensão</td><td>Seleção e maturação do folículo dominante</td><td>Proliferativo</td></tr><tr><td>Ovulação</td><td>Pico de LH (feedback positivo do estrogênio)</td><td>Ruptura folicular e liberação do óvulo</td><td>—</td></tr><tr><td>Lútea</td><td>Progesterona (corpo lúteo)</td><td>Preparo endometrial para implantação; regressão do corpo lúteo se não houver gestação</td><td>Secretor</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Quadro clínico",
@@ -5381,7 +5381,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A sequência hormonal do ciclo (GnRH → FSH/LH → estrogênio → pico de LH → ovulação → progesterona do corpo lúteo) é cobrança certa e fundamental para compreensão de toda a ginecologia endócrina subsequente. A duração normal do ciclo (21-35 dias) como parâmetro de referência para definir irregularidade também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o ciclo menstrual normal é cobrado como base conceitual para todo o restante da ginecologia endócrina — a sequência hormonal (GnRH → FSH/LH → estrogênio → pico de LH → ovulação → progesterona) é frequentemente testada em questões que pedem para identificar em que fase do ciclo determinado achado hormonal ou ultrassonográfico se encaixa. A duração normal (21-35 dias) como parâmetro de referência para definir irregularidade, e o reconhecimento de que mudança persistente do padrão habitual exige investigação (não deve ser atribuída a variação fisiológica), também são cobranças recorrentes."
   },
   {
     "id": "amenorreias",
