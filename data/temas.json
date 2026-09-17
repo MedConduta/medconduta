@@ -2865,7 +2865,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Assistência ao Parto e Partograma",
     "resumo": "Períodos clínicos do parto e uso do partograma para identificar distócias precocemente.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Ministério da Saúde — Diretriz Nacional de Assistência ao Parto Normal; FEBRASGO",
     "mnemonicos": [
       {
@@ -2888,7 +2888,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O partograma, com suas linhas de alerta e ação, permite identificar objetivamente distocias (parada secundária da dilatação, fase ativa prolongada, período pélvico prolongado), situações que exigem reavaliação da conduta obstétrica. A curva de dilatação cervical na fase ativa deve progredir a uma velocidade mínima esperada; sua estagnação além de determinado tempo (definida pelas linhas de alerta/ação no partograma) sinaliza necessidade de intervenção (amniotomia, ocitocina, ou reavaliação da via de parto)."
+        "conteudo": "O partograma, com suas linhas de alerta e ação, permite identificar objetivamente distocias (parada secundária da dilatação, fase ativa prolongada, período pélvico prolongado), situações que exigem reavaliação da conduta obstétrica. A curva de dilatação cervical na fase ativa deve progredir a uma velocidade mínima esperada; sua estagnação além de determinado tempo (definida pelas linhas de alerta/ação no partograma) sinaliza necessidade de intervenção (amniotomia, ocitocina, ou reavaliação da via de parto).\n\n<div class=\"table-wrap\"><table><thead><tr><th>Período clínico</th><th>Definição</th></tr></thead><tbody><tr><td>Dilatação</td><td>Do início das contrações regulares até dilatação cervical completa (10cm) — subdividida em fase latente e fase ativa</td></tr><tr><td>Expulsão</td><td>Da dilatação completa até o nascimento</td></tr><tr><td>Dequitação</td><td>Da saída do feto até a expulsão da placenta</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Distocia</th><th>Achado no partograma</th></tr></thead><tbody><tr><td>Fase ativa prolongada</td><td>Velocidade de dilatação abaixo do mínimo esperado</td></tr><tr><td>Parada secundária da dilatação</td><td>Estagnação da dilatação por tempo além do esperado (cruza linha de ação)</td></tr><tr><td>Período pélvico prolongado</td><td>Descida da apresentação fetal não progride adequadamente no período expulsivo</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -2902,7 +2902,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A interpretação do partograma (identificação de distocias pelas linhas de alerta/ação) é cobrança certa e recorrente, frequentemente cobrada através de gráficos para interpretação direta em questões de caso clínico. Os planos de DeLee/Hodge para avaliação da altura da apresentação fetal também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a assistência ao parto é cobrada sobretudo pela interpretação de partogramas em questões de caso clínico com gráfico (identificar o tipo de distocia pelas linhas de alerta/ação), pela distinção entre trabalho de parto verdadeiro (dilatação progressiva) e falso trabalho de parto (contrações sem progressão cervical), e pela conduta diante de parada secundária da dilatação ou desaceleração fetal não recuperada (reavaliação imediata, considerar cesárea de urgência)."
   },
   {
     "id": "diabetes-gestacional",
