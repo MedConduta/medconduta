@@ -1299,7 +1299,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Obstrução Intestinal",
     "resumo": "Sinais cardinais, causas mais comuns e conduta conforme sinais de estrangulamento.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Colégio Brasileiro de Cirurgiões; WSES Guidelines for Adhesive Small Bowel Obstruction",
     "mnemonicos": [
       {
@@ -1330,13 +1330,14 @@
       },
       {
         "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor contínua (não mais em cólica), febre, taquicardia e sinais de irritação peritoneal</span> em paciente com obstrução intestinal sugerem estrangulamento com sofrimento isquêmico de alça — emergência cirúrgica que não deve ser tratada conservadoramente, pelo risco de necrose, perfuração e peritonite fecal."
+        "conteudo": "<span class=\"red-flag\">Dor contínua (não mais em cólica), febre, taquicardia e sinais de irritação peritoneal</span> em paciente com obstrução intestinal sugerem estrangulamento com sofrimento isquêmico de alça — emergência cirúrgica que não deve ser tratada conservadoramente, pelo risco de necrose, perfuração e peritonite fecal.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Obstrução simples</th><th>Obstrução com estrangulamento</th></tr></thead><tbody><tr><td>Padrão de dor</td><td>Cólica, intermitente</td><td>Dor contínua, não mais em cólica</td></tr><tr><td>Sinais sistêmicos</td><td>Ausentes</td><td>Febre, taquicardia</td></tr><tr><td>Exame abdominal</td><td>Distensão, timpanismo, RHA aumentados (\"de luta\")</td><td>Sinais de irritação peritoneal (defesa, descompressão dolorosa)</td></tr><tr><td>Conduta inicial</td><td>Conservadora: SNG, reposição hidroeletrolítica, observação</td><td>Cirurgia de urgência — nunca conservadora</td></tr><tr><td>Causa mais comum</td><td>Aderências pós-cirúrgicas (delgado); neoplasia (cólon)</td><td>Hérnia encarcerada, volvo, bridas apertando a alça</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre obstrução simples (tratamento inicial conservador possível) e obstrução com estrangulamento (cirurgia de urgência obrigatória) pelos sinais clínicos de mudança do padrão de dor e sinais sistêmicos é cobrança central e recorrente. Aderências como causa mais comum de obstrução de delgado, e neoplasia como causa mais comum de obstrução colônica, também são frequentemente exigidas."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a obstrução intestinal é cobrada sobretudo pela diferenciação entre obstrução simples (dor em cólica, sem sinais sistêmicos, candidata a tratamento conservador inicial) e obstrução com estrangulamento (dor contínua, febre, taquicardia, sinais peritoneais — cirurgia de urgência obrigatória, nunca conservadora), frequentemente através de vinhetas que descrevem a mudança do padrão de dor ao longo do tempo. Aderências como causa mais comum no delgado e neoplasia como causa mais comum no cólon também são cobranças recorrentes."
   },
   {
     "id": "hemorragia-pos-parto",
