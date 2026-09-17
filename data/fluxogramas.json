@@ -13957,5 +13957,68 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-infeccoes-gravidico-sifilis-abordagem",
+    "temaId": "infeccoes-ciclo-gravidico-puerperal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da sífilis na gestação",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para sífilis",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Teste rápido ou sorologia para sífilis positivo em gestante"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Gestante refere alergia à penicilina?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Dessensibilização à penicilina — NUNCA substituir por outro antibiótico, pois é o único tratamento comprovadamente eficaz para prevenir transmissão vertical"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Penicilina benzatina conforme estágio da sífilis"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Tratamento completo e adequado (esquema e tempo corretos) concluído antes do parto?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratamento materno adequado — seguimento habitual do recém-nascido"
+              }
+            ]
+          },
+          {
+            "label": "Não — tratamento inadequado, incompleto ou não realizado",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Tratamento materno inadequado — investigar e tratar o recém-nascido para sífilis congênita, independentemente de sinais clínicos ao nascimento"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

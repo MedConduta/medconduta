@@ -5763,7 +5763,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Infecções no Ciclo Gravídico-Puerperal",
     "resumo": "Rastreamento e tratamento de ITU, toxoplasmose, sífilis e HIV na gestação para prevenção da transmissão vertical.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Ministério da Saúde — Protocolos de Transmissão Vertical (Sífilis, HIV, Toxoplasmose); FEBRASGO",
     "mnemonicos": [
       {
@@ -5790,7 +5790,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Sífilis é tratada com penicilina benzatina (único tratamento comprovadamente eficaz para prevenir transmissão vertical, sem substituto seguro mesmo em caso de alergia relatada, que deve ser manejada por dessensibilização). Toxoplasmose aguda na gestação é tratada com espiramicina (reduz transmissão fetal, mas não trata infecção fetal já estabelecida) ou esquema combinado (sulfadiazina, pirimetamina, ácido folínico) quando há confirmação ou forte suspeita de infecção fetal já estabelecida. Gestantes vivendo com HIV recebem terapia antirretroviral ao longo de toda a gestação, com estratégias adicionais periparto (conforme carga viral) e orientação sobre substituição do aleitamento materno para prevenção da transmissão pós-natal. Bacteriúria assintomática e infecção urinária sintomática são sempre tratadas na gestação."
+        "conteudo": "Sífilis é tratada com penicilina benzatina (único tratamento comprovadamente eficaz para prevenir transmissão vertical, sem substituto seguro mesmo em caso de alergia relatada, que deve ser manejada por dessensibilização). Toxoplasmose aguda na gestação é tratada com espiramicina (reduz transmissão fetal, mas não trata infecção fetal já estabelecida) ou esquema combinado (sulfadiazina, pirimetamina, ácido folínico) quando há confirmação ou forte suspeita de infecção fetal já estabelecida. Gestantes vivendo com HIV recebem terapia antirretroviral ao longo de toda a gestação, com estratégias adicionais periparto (conforme carga viral) e orientação sobre substituição do aleitamento materno para prevenção da transmissão pós-natal. Bacteriúria assintomática e infecção urinária sintomática são sempre tratadas na gestação.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Infecção</th><th>Tratamento na gestação</th><th>Observação-chave</th></tr></thead><tbody><tr><td>Sífilis</td><td>Penicilina benzatina</td><td>Único tratamento comprovadamente eficaz — em alergia, dessensibilizar, NUNCA substituir</td></tr><tr><td>Toxoplasmose aguda</td><td>Espiramicina (reduz transmissão); esquema sulfadiazina+pirimetamina+ácido folínico se infecção fetal confirmada/fortemente suspeita</td><td>Espiramicina não trata infecção fetal já estabelecida</td></tr><tr><td>HIV</td><td>TARV durante toda a gestação + estratégia periparto conforme carga viral</td><td>Substituir aleitamento materno para prevenir transmissão pós-natal</td></tr><tr><td>Bacteriúria assintomática</td><td>SEMPRE tratada na gestação</td><td>Diferente da recomendação de não tratar fora da gestação</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -5800,7 +5800,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O tratamento obrigatório de bacteriúria assintomática na gestação (diferente da recomendação de não tratar fora da gestação) é cobrança certa e recorrente. A obrigatoriedade da penicilina benzatina para sífilis gestacional (com dessensibilização em caso de alergia, jamais substituição) permanece um dos pontos mais importantes de toda a obstetrícia/infectologia em provas de residência."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado quase sempre pela obrigatoriedade da penicilina benzatina para sífilis gestacional, sem substituto seguro mesmo em alergia relatada (conduta correta é dessensibilização) — um dos pontos mais importantes de toda a obstetrícia/infectologia. O tratamento obrigatório de bacteriúria assintomática na gestação (diferente de fora da gestação) e o critério de tratamento materno inadequado exigindo investigação do recém-nascido para sífilis congênita também são cobranças recorrentes."
   },
   {
     "id": "hemorragia-2a-metade-gestacao",
