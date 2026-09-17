@@ -5292,7 +5292,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Insuficiência Venosa Crônica e Varizes de Membros Inferiores",
     "resumo": "Classificação CEAP, quadro clínico da hipertensão venosa e tratamento da úlcera venosa por terapia compressiva.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; Classificação CEAP para Doença Venosa Crônica",
     "mnemonicos": [
       {
@@ -5315,7 +5315,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A ultrassonografia com Doppler venoso é o exame padrão para avaliação da competência valvular e identificação do refluxo venoso, tanto do sistema superficial quanto profundo, orientando a decisão terapêutica. A classificação CEAP (Clínica, Etiológica, Anatômica, Patofisiológica) padroniza a gravidade da doença venosa crônica, desde telangiectasias assintomáticas até úlcera ativa, para fins clínicos e de pesquisa."
+        "conteudo": "A ultrassonografia com Doppler venoso é o exame padrão para avaliação da competência valvular e identificação do refluxo venoso, tanto do sistema superficial quanto profundo, orientando a decisão terapêutica. A classificação CEAP (Clínica, Etiológica, Anatômica, Patofisiológica) padroniza a gravidade da doença venosa crônica, desde telangiectasias assintomáticas até úlcera ativa, para fins clínicos e de pesquisa.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Classe CEAP (\"C\")</th><th>Achado clínico</th></tr></thead><tbody><tr><td>C0</td><td>Sem sinais visíveis/palpáveis de doença venosa</td></tr><tr><td>C1</td><td>Telangiectasias ou veias reticulares</td></tr><tr><td>C2</td><td>Varizes</td></tr><tr><td>C3</td><td>Edema</td></tr><tr><td>C4</td><td>Alterações cutâneas (hiperpigmentação, eczema, lipodermatoesclerose)</td></tr><tr><td>C5</td><td>Úlcera venosa cicatrizada</td></tr><tr><td>C6</td><td>Úlcera venosa ativa</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -5329,7 +5329,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação semiológica entre úlcera venosa (maleolar medial, menos dolorosa, bordas irregulares) e arterial (extremidades, muito dolorosa, bordas definidas) é cobrança central e recorrente. A terapia de compressão como base do tratamento (e a necessidade de excluir doença arterial associada antes de indicá-la, pelo risco de piora isquêmica) também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado principalmente pela diferenciação semiológica entre úlcera venosa (maleolar medial, menos dolorosa, bordas irregulares) e arterial, pela classificação CEAP como padronização de gravidade, e sobretudo pela regra de segurança de excluir doença arterial associada (ITB) antes de indicar terapia de compressão, já que a compressão pode agravar isquemia em membro com componente arterial significativo não identificado — um ponto de segurança do paciente frequentemente cobrado como pegadinha."
   },
   {
     "id": "ciclo-menstrual-normal",

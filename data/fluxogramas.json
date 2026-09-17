@@ -13024,5 +13024,52 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-insuficiencia-venosa-abordagem",
+    "temaId": "insuficiencia-venosa-cronica",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da insuficiência venosa crônica e úlcera venosa",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia vascular — insuficiência venosa crônica",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com varizes, edema vespertino, alterações cutâneas ou úlcera em região maleolar medial"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia com Doppler venoso para avaliar competência valvular e refluxo"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Antes de indicar terapia de compressão: há suspeita ou fatores de risco para doença arterial periférica associada?",
+        "ramos": [
+          {
+            "label": "Sim — investigar antes de comprimir",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Realizar índice tornozelo-braço (ITB) — a compressão pode ser prejudicial/contraindicada em doença arterial significativa não identificada"
+              }
+            ]
+          },
+          {
+            "label": "Não — baixo risco arterial",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Terapia de compressão com meias elásticas graduadas, elevação dos membros e exercício regular como base do tratamento"
+              },
+              {
+                "tipo": "end",
+                "texto": "Procedimento ablativo (escleroterapia, ablação térmica endovenosa ou cirurgia) se varizes sintomáticas/refratárias ao tratamento conservador"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
