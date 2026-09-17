@@ -77,7 +77,7 @@
     "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
     "banca": "Exemplo — MedConduta",
     "ano": 2023,
-    "revisado": false,
+    "revisado": true,
     "fonte": "AHA Guidelines for CPR and ECC 2020 (atualizacao focada 2023); Diretriz de Ressuscitacao Cardiopulmonar - SBC",
     "enunciado": "Durante atendimento de PCR, o monitor mostra fibrilação ventricular. Qual a conduta imediata?",
     "alternativas": [
@@ -64594,6 +64594,963 @@
     "banca": "Banco de questões — Estratégia MED",
     "ano": null,
     "fonte": "Banco de questões — Estratégia MED (caderno Coma e Alterações da Consciência)",
+    "revisado": true
+  },
+  {
+    "id": "q3557",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Paciente de 80 anos foi encontrado em rua pública, e testemunhas disseram que ele estava caminhando quando subitamente caiu no chão, perdendo a consciência. No hospital, ao exame físico, sua pressão arterial era de 80x40mmHg, havia estertores pulmonares em todos os segmentos pulmonares com turgência jugular. Durante seu atendimento, o paciente demonstrou um ritmo cardíaco no monitor. Julgue o item: \"Na ausência de pulso no eletrocardiograma número 2, deve-se realizar cardioversão elétrica sincronizada.\"",
+    "alternativas": [
+      "Certo.",
+      "Errado."
+    ],
+    "correta": 1,
+    "comentario": "Na ausência de pulso, o manejo correto é o algoritmo de PCR (RCP contínua + desfibrilação NÃO sincronizada se o ritmo for chocável) — a cardioversão sincronizada é reservada a taquiarritmias COM pulso e instabilidade hemodinâmica, nunca à ausência de pulso.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3558",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Você está de plantão e recebe um paciente inconsciente na sala de emergência. A família refere que ele foi encontrado assim há 10 minutos. Verifica que o paciente não respira e não possui pulso e inicia as manobras de ressuscitação cardiopulmonar. Quando o desfibrilador chega você posiciona as pás e obtém o traçado. Após a aplicação do choque, qual deve ser sua conduta imediata?",
+    "alternativas": [
+      "Reiniciar ressuscitação cardiopulmonar.",
+      "Verificar o ritmo do paciente.",
+      "Verificar o pulso do paciente.",
+      "Administrar 1mg de epinefrina."
+    ],
+    "correta": 0,
+    "comentario": "Após qualquer choque, a RCP deve ser retomada IMEDIATAMENTE por 2 minutos, sem pausar para checar ritmo ou pulso — essas checagens só ocorrem ao final do próximo ciclo de compressões.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3559",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Homem de idade aparente de 50 anos deu entrada na sala de emergência após desmaio na recepção do local. Está irresponsivo e sem pulso. Você coloca as pás do desfibrilador no tórax do paciente e identifica uma taquicardia ventricular monomórfica. Qual deve ser a estratégia terapêutica prioritária nesse momento?",
+    "alternativas": [
+      "Adenosina, 6mg EV, em bolus rápido, seguida de um \"flash\" de 20 ml de Soro Fisiológico;",
+      "Amiodarona, 300mg EV, seguida de um \"flash\" de 20 ml de Soro Fisiológico;",
+      "Desfibrilação com 200J (desfibrilador bifásico);",
+      "Cardioversão Sincronizada com 100 joules (desfibrilador bifásico)."
+    ],
+    "correta": 2,
+    "comentario": "TV monomórfica SEM PULSO é tratada como ritmo chocável equivalente à FV — a prioridade é a desfibrilação (choque NÃO sincronizado) imediata, com carga máxima do desfibrilador bifásico (geralmente 200J), não cardioversão sincronizada (reservada a TV COM pulso).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3560",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Homem de 76 anos chega à emergência desacordado. Ao avaliá-lo, percebe-se que é portador de marca-passo unicameral por histórico de bloqueio átrio ventricular total prévio e está em parada cardiorrespiratória por fibrilação ventricular. Assinale a alternativa adequada para o atendimento desse paciente.",
+    "alternativas": [
+      "Aplicar um choque não sincronizado com 360J.",
+      "Aplicar um choque sincronizado com 200J.",
+      "Aplicar um choque não sincronizado com 200J.",
+      "Aplicar um choque sincronizado com 360J."
+    ],
+    "correta": 2,
+    "comentario": "FV é ritmo chocável tratado com choque NÃO sincronizado, com carga padrão de 200J em desfibrilador bifásico. A presença de marca-passo prévio não contraindica nem altera a conduta de desfibrilação — apenas deve-se evitar posicionar a pá diretamente sobre o gerador do dispositivo.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3561",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Paciente masculino, de 60 anos, apresentou parada cardiorrespiratória em ambiente extra-hospitalar. A reanimação foi iniciada no local e 3 choques foram aplicados com desfibrilador externo automático (DEA). Quando a equipe do SAMU chegou, o paciente estava irresponsivo, mas apresentava pulso, frequência respiratória de 30 mpm, pressão sistólica de 70 mmHg e saturação de 80% em ar ambiente. Como deve ser a continuidade do cuidado antes de transportá-lo para o hospital?",
+    "alternativas": [
+      "Oferecer oxigênio suplementar por máscara com reservatório e cristaloide gelado intravenoso.",
+      "Oferecer oxigênio suplementar por máscara com reservatório e cristaloide gelado e amiodarona contínua intravenosos.",
+      "Intubar e administrar vasopressor e amiodarona contínua intravenosos.",
+      "Intubar e administrar cristaloide e vasopressor intravenosos."
+    ],
+    "correta": 3,
+    "comentario": "No cuidado pós-ROSC com hipoxemia grave (SatO2 80%) e taquipneia importante, é necessária via aérea definitiva (intubação); a hipotensão (PAS 70) exige reposição volêmica e vasopressor. A infusão de cristaloide GELADO para indução de hipotermia terapêutica não é mais recomendada nas diretrizes atuais.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3562",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Um homem de 63 anos, recebendo medicação para dor epigástrica na sala de observação do pronto atendimento, apresenta um colapso ao levantar-se da poltrona. Qual é a conduta imediata mais adequada nesse caso?",
+    "alternativas": [
+      "Realizar um eletrocardiograma de 12 derivações.",
+      "Checar a responsividade.",
+      "Aplicar 1mg de epinefrina EV.",
+      "Iniciar compressões torácicas.",
+      "Solicitar avaliação da cardiologia."
+    ],
+    "correta": 1,
+    "comentario": "O primeiro passo do suporte básico de vida diante de um colapso testemunhado é sempre checar a responsividade da vítima, antes de qualquer outra medida diagnóstica ou terapêutica.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3563",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Um homem de aproximadamente 50 anos apresenta um colapso na recepção do pronto-socorro e é levado diretamente para a sala de emergência. Após verificar a responsividade, qual é a conduta mais adequada?",
+    "alternativas": [
+      "Iniciar compressões torácicas.",
+      "Aplicar duas ventilações de resgate.",
+      "Acesso venoso calibroso e expansão volêmica.",
+      "Eletrocardiograma de 12 derivações.",
+      "Checar o pulso carotídeo e a respiração."
+    ],
+    "correta": 4,
+    "comentario": "Após checar a responsividade, o próximo passo é checar simultaneamente o pulso carotídeo e a respiração, em no máximo 10 segundos, antes de decidir se compressões torácicas são necessárias.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3564",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Considerando as indicações para desfibrilação/cardioversão, demonstre o item ERRADO:",
+    "alternativas": [
+      "A desfibrilação deverá ser utilizada no tratamento da FV, TV sem pulso e TV polimórfica sustentada.",
+      "A desfibrilação em ritmos chocáveis deve ser priorizada e não retardada frente a outras manobras na PCR.",
+      "A CVE deverá ser utilizada no tratamento das taquiarritmias associadas a sinais de instabilidade.",
+      "A presença de dispneia, associada à congestão pulmonar, dor torácica anginosa ou rebaixamento do nível de consciência, não indica instabilidade."
+    ],
+    "correta": 3,
+    "comentario": "Dispneia com congestão pulmonar, dor torácica anginosa e rebaixamento do nível de consciência são, na verdade, sinais CLÁSSICOS de instabilidade hemodinâmica associada a taquiarritmias — a afirmação de que \"não indicam instabilidade\" é falsa, tornando essa a alternativa errada pedida.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3565",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "O uso da adrenalina na parada cardiorrespiratória tem como objetivo principal:",
+    "alternativas": [
+      "Aumentar a pressão diastólica e automaticidade miocárdica melhorando a perfusão renal.",
+      "Restabelecer a circulação espontânea e melhorar a sobrevida pós parada cardíaca.",
+      "Aumentar o consumo de oxigênio pelo miocárdio e, assim, restabelecer o débito cardíaco.",
+      "Restabelecer a circulação espontânea através do aumento da pressão de perfusão coronária e manter a perfusão cerebral."
+    ],
+    "correta": 3,
+    "comentario": "O efeito alfa-adrenérgico da epinefrina durante a RCP aumenta a pressão de perfusão coronariana e cerebral, mecanismo central pelo qual favorece o retorno da circulação espontânea — não há evidência robusta de que melhore a sobrevida neurológica a longo prazo, o que torna essa alternativa menos precisa que a que cita especificamente o mecanismo de perfusão coronariana/cerebral.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3566",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Você está andando na rua voltando para casa após um dia cansativo, quando encontra um idoso pedindo ajuda com dor no peito. Ao chegar próximo, o idoso cai ao solo, arresponsivo. Ao verificar, nota-se ausência de pulso. Após avaliar a segurança da cena e pedir ajuda, qual deve ser a próxima conduta imediata neste caso?",
+    "alternativas": [
+      "Compressões torácicas de alta qualidade, enquanto se aguarda chegada de ajuda/desfibrilador externo automático - DEA.",
+      "Ventilação boca-a-boca, e então iniciar manobras de ressuscitação cardiopulmonar com 100 movimentos/minuto.",
+      "Aguardar a chegada do desfibrilador externo automático, pela possibilidade de ritmo chocável.",
+      "Promover abertura de via aérea, posicionar e iniciar ventilações pulmonares bolsa-válvula-máscara."
+    ],
+    "correta": 0,
+    "comentario": "Confirmada a ausência de pulso, iniciam-se imediatamente compressões torácicas de alta qualidade, sem aguardar o desfibrilador — o atraso nas compressões reduz drasticamente as chances de retorno da circulação espontânea, sendo a intervenção mais determinante do desfecho.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3567",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Assinale a assertiva correta sobre o atendimento de pacientes em parada cardiorrespiratória (PCR).",
+    "alternativas": [
+      "Intubação orotraqueal é preferível a uso de dispositivos supraglóticos no atendimento de pacientes em PCR intra-hospitalar.",
+      "Vasopressina pode ser utilizada em substituição a adrenalina.",
+      "Adrenalina deve ser administrada assim que possível, independentemente do ritmo da PCR.",
+      "Atropina está indicada nos ritmos não chocáveis da PCR."
+    ],
+    "correta": 1,
+    "comentario": "A vasopressina pode substituir a primeira ou segunda dose de epinefrina no protocolo ACLS. Não há preferência estabelecida entre IOT e dispositivos supraglóticos; a epinefrina é imediata apenas em ritmos NÃO chocáveis (em chocáveis, entra após o 2º choque); e a atropina foi removida do algoritmo de PCR nas diretrizes atuais.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3568",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Não se interrompe a RCP para a laringoscopia, sendo adequado que:",
+    "alternativas": [
+      "Podendo-se interrompê-la, por menos de 50 segundos, para IOT e checagem do posicionamento do dispositivo.",
+      "Podendo-se interrompê-la, por menos de 10 segundos, para IOT e não na checagem do posicionamento do dispositivo.",
+      "Podendo-se interrompê-la, por menos de 30 segundos, para IOT e checagem do posicionamento do dispositivo.",
+      "Podendo-se interrompê-la, por menos de 10 segundos, para IOT e checagem do posicionamento do dispositivo."
+    ],
+    "correta": 3,
+    "comentario": "Interrupções nas compressões torácicas devem ser sempre inferiores a 10 segundos, inclusive para a intubação orotraqueal e para a checagem do posicionamento do tubo — a minimização de interrupções é pilar central da RCP de alta qualidade.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3569",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Um senhor de 54 anos de idade comparece à Unidade Básica de Saúde (UBS), para acompanhar sua esposa à consulta de rotina. Durante a espera, ele sofre um colapso, cai da cadeira e, sem apresentar movimentos respiratórios, deixa de responder. Nesse momento, a recepcionista aciona o SAMU, enquanto o médico e a enfermeira da UBS iniciam as manobras de primeiros socorros realizando compressões torácicas. Na situação descrita, a profundidade e a frequência das compressões torácicas realizadas pelos socorristas deverá ser de:",
+    "alternativas": [
+      "profundidade de 2,0 cm e frequência de 30 a 60 compressões por minuto.",
+      "profundidade de 3,0 cm e frequência de 60 a 80 compressões por minuto.",
+      "profundidade de 4,0 cm e frequência de 60 a 80 compressões por minuto.",
+      "profundidade de 5,0 cm e frequência de 80 a 90 compressões por minuto.",
+      "profundidade de 5,0 cm e frequência de 100 a 120 compressões por minuto."
+    ],
+    "correta": 4,
+    "comentario": "Os parâmetros de compressão torácica de alta qualidade são: profundidade de 5-6 cm e frequência de 100-120 compressões por minuto, permitindo retorno completo do tórax entre as compressões.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3570",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Paciente de 55 anos é encontrado inconsciente. Ele não respira e não tem pulso. Prontamente iniciadas manobras de ressuscitação cardiopulmonar, e, ao monitorizar o paciente, encontra-se uma fibrilação ventricular. A prioridade, nesse instante, deve ser de:",
+    "alternativas": [
+      "submeter o paciente à intubação orotraqueal.",
+      "cardioverter o paciente com 200J.",
+      "providenciar um acesso venoso e prescrever amiodarona 300 mg.",
+      "desfibrilar o paciente com 200J.",
+      "providenciar um acesso venoso e prescrever adrenalina 1 mg, após bolus de 10 mL de soro fisiológico e elevar o braço do paciente."
+    ],
+    "correta": 3,
+    "comentario": "Diante de FV confirmada no monitor, a prioridade absoluta é a desfibrilação precoce (choque NÃO sincronizado) — nenhuma outra medida (IOT, acesso venoso, drogas) deve atrasar esse passo.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3571",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Assinale a alternativa que contém apenas os nomes dos antiarrítmicos usados na Fibrilação Ventricular ou Taquicardia Ventricular sem pulso:",
+    "alternativas": [
+      "Atropina, Amiodarona, Carbonato de cálcio.",
+      "Amiodarona, Epinefrina, Sulfato ferroso.",
+      "Amiodarona, Epinefrina, Lidocaína.",
+      "Amiodarona, Sulfato de Magnésio, Metroprolol.",
+      "Amiodarona, Lidocaína, Sulfato de Magnésio."
+    ],
+    "correta": 4,
+    "comentario": "Os antiarrítmicos usados em FV/TV sem pulso refratária à desfibrilação são amiodarona e lidocaína (alternativas equivalentes), com o sulfato de magnésio reservado especificamente a Torsades de Pointes. As demais alternativas incluem fármacos que não são antiarrítmicos usados nesse contexto (atropina, epinefrina — vasopressor, não antiarrítmico —, sulfato ferroso, metoprolol).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3572",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Homem de 45 anos chega ao pronto-socorro com queixa de palpitação e, logo após realizar o eletrocardiograma, perdeu a consciência. A conduta imediata, de acordo com o ACLS, após checagem de pulso, deve ser, se pulso:",
+    "alternativas": [
+      "Ausente: iniciar massagem cardíaca e proceder desfibrilação assim que possível.",
+      "Presente: não fazer massagem cardíaca e administrar amiodarona assim que possível.",
+      "Ausente: iniciar massagem cardíaca e proceder administração de epinefrina assim que possível.",
+      "Ausente: iniciar massagem cardíaca e proceder cardioversão elétrica assim que possível.",
+      "Presente: não fazer massagem cardíaca e proceder desfibrilação assim que possível."
+    ],
+    "correta": 0,
+    "comentario": "Diante de taquiarritmia com perda de consciência e ausência de pulso confirmada, a conduta é iniciar massagem cardíaca e proceder à desfibrilação (choque não sincronizado) assim que possível, seguindo o algoritmo de PCR por ritmo chocável.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3573",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Qual é a dose cumulativa de amiodarona que utilizamos na fibrilação ventricular em adultos?",
+    "alternativas": [
+      "300 mg",
+      "450 mg",
+      "600 mg",
+      "900 mg"
+    ],
+    "correta": 1,
+    "comentario": "A dose cumulativa de amiodarona no protocolo de FV/TV sem pulso refratária é de 450 mg: 300 mg após o 3º choque, seguidos de 150 mg adicionais após um novo choque, caso a arritmia persista.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3574",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Em uma ressuscitação cardiopulmonar, qual é o local exato que devemos fazer a massagem cardíaca externa?",
+    "alternativas": [
+      "Sob o apêndice xifoide",
+      "No terço médio do esterno",
+      "Na área precordial",
+      "Dois centímetros acima do apêndice xifoide"
+    ],
+    "correta": 3,
+    "comentario": "O local correto para as compressões torácicas é na metade inferior do esterno, cerca de dois centímetros acima do apêndice xifoide, evitando compressão direta sobre o próprio apêndice (risco de laceração hepática) ou posicionamento muito alto.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3575",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Em relação ao atendimento da parada cardiorrespiratória em adulto, de acordo com a Associação Americana do Coração, é CORRETO afirmar que:",
+    "alternativas": [
+      "Apenas nos casos de assistolia devemos iniciar o atendimento com ventilações.",
+      "A correta relação entre compressões torácicas e ventilações é 30:2.",
+      "A frequência das compressões torácicas deve ser de pelo menos 100 por minuto.",
+      "A manobra de Heimlich deve ser realizada em todas as vítimas de afogamento.",
+      "Mesmo quando o paciente já estiver com via aérea definitiva, é necessário interromper as compressões torácicas para realizar as ventilações."
+    ],
+    "correta": 1,
+    "comentario": "A relação padrão de compressões para ventilações no adulto, sem via aérea avançada, é 30:2. Com via aérea definitiva (ex.: tubo orotraqueal), as compressões passam a ser contínuas, sem pausar para ventilar. A frequência correta é uma FAIXA (100-120/min, não \"pelo menos 100\" sem limite superior), e a manobra de Heimlich não é indicada rotineiramente em afogamento.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3576",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Durante o atendimento ao paciente vítima de parada cardiorrespiratória, uma equipe, com o atendimento em curso realizando o suporte básico, aplica o primeiro choque e 2 minutos de RCP. Neste exato momento, ao assumir a liderança, qual o próximo passo que você indica?",
+    "alternativas": [
+      "Checar o pulso",
+      "Protocolo da linha reta",
+      "Checar o ritmo",
+      "Aplicar 1 mg de adrenalina Subcutâneo"
+    ],
+    "correta": 2,
+    "comentario": "Ao final de cada ciclo de 2 minutos de RCP, a conduta é checar o RITMO no monitor/desfibrilador para decidir a próxima ação (novo choque se chocável, ou seguir algoritmo de ritmo não chocável) — a checagem de pulso só ocorre se o ritmo observado for organizado.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3577",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Paciente atendido no PS por síncope. A equipe do resgate constata: paciente sem resposta neurológica e pulso. Iniciada a reanimação, o paciente tem acesso venoso pego e é monitorado em aparelho desfibrilador. Após 2 minutos o ritmo é sinusal, mas não há melhora no nível de consciência, nem presença de pulso. Podemos dizer que:",
+    "alternativas": [
+      "A ressuscitação cardiopulmonar deve ser feita de 1 em 1 minuto, com pausa para checar o ritmo no desfibrilador.",
+      "Devemos administrar desfibrilação com 200 Joules e massagear por 2 minutos, antes de conferir novamente o ritmo.",
+      "Devemos tentar identificar causas reversíveis como hipóxia e hipovolemia, neste paciente.",
+      "O paciente se beneficiaria de amiodarona 300 mg em bolus."
+    ],
+    "correta": 2,
+    "comentario": "Ritmo organizado (sinusal) no monitor SEM pulso palpável caracteriza atividade elétrica sem pulso (AESP) — ritmo NÃO chocável, cujo manejo central é a busca ativa de causas reversíveis (5H/5T: hipovolemia, hipóxia, hidrogênio/acidose, hipo/hipercalemia, hipotermia; tensão torácica, tamponamento, toxinas, trombose coronariana, trombose pulmonar), não desfibrilação ou amiodarona.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3578",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Paciente chega ao pronto-socorro com parada cardíaca em Fibrilação Ventricular (FV). Após o choque, o médico se antecipa e pede à enfermeira para preparar 300 mg de amiodarona. Ela informa que a medicação está em falta no hospital. Segundo o protocolo do ACLS, assinale a alternativa que apresenta, corretamente, a melhor conduta em substituição à amiodarona na parada cardíaca em FV sem pulso.",
+    "alternativas": [
+      "Indicar atropina na dose de 0,5 mg EV em bolus, substituindo a primeira dose de amiodarona.",
+      "Indicar lidocaína na dose de 1 a 1,5 mg/kg EV em intervalo de 5 a 10 minutos até 1 dose máxima de 3 mg/kg.",
+      "Indicar vasopressina na dose de 40,0 mg EV em bolus, substituindo a primeira dose de amiodarona.",
+      "Indicar epinefrina na dose de 1,0 mg a cada 3 a 5 minutos e não intercalar dose com outros fármacos antiarrítmicos.",
+      "Indicar sulfato de magnésio na dose de 1 a 2 g EV diluídos em 10 ml e fazer em 5 a 20 minutos."
+    ],
+    "correta": 1,
+    "comentario": "A lidocaína é a alternativa antiarrítmica equivalente à amiodarona no protocolo ACLS para FV/TV sem pulso refratária à desfibrilação, na dose de 1-1,5 mg/kg EV, podendo repetir doses adicionais até dose máxima cumulativa de 3 mg/kg.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3579",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Durante uma Reanimação Cardiopulmonar (RCP), ao final de um ciclo, é detectado um ritmo organizado no monitor. A frequência é baixa (32 batimentos por minuto) e o complexo QRS alargado (acima de 120ms). Procura-se o pulso central do paciente durante 10 segundos, mas este continua ausente. Qual é a conduta mais adequada a seguir?",
+    "alternativas": [
+      "Administrar 1mg de atropina por via endovenosa e reiniciar as compressões torácicas.",
+      "Aplicar 1mg de epinefrina, reiniciar compressões torácicas e seguir com o algoritmo de Atividade Elétrica Sem Pulso (AESP).",
+      "Aplicar choque de 200J, administrar 1mg de atropina por via endovenosa e verificar a pressão arterial.",
+      "Aplicar 0,5mg de atropina por via endovenosa e instalar marca-passo transcutâneo."
+    ],
+    "correta": 1,
+    "comentario": "Ritmo organizado (bradicárdico, QRS alargado) sem pulso palpável é AESP — ritmo não chocável, cujo manejo é epinefrina, manutenção das compressões torácicas e busca ativa das causas reversíveis (5H/5T), sem desfibrilação, atropina ou marca-passo transcutâneo, que não fazem parte do algoritmo de PCR atual.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3580",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Um homem de aproximadamente 50 anos apresenta um colapso em via pública. Após verificar sua responsividade, qual é a próxima ação recomendada para profissionais de saúde?",
+    "alternativas": [
+      "Checar o pulso carotídeo.",
+      "Chamar ajuda.",
+      "Iniciar compressões torácicas.",
+      "Abrir a via aérea e aplicar duas ventilações de resgate."
+    ],
+    "correta": 1,
+    "comentario": "Após confirmar a ausência de responsividade, o próximo passo é chamar ajuda/acionar o serviço de emergência (e solicitar um desfibrilador), antes de proceder à checagem de pulso e respiração.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3581",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Um paciente de 52 anos chega ao pronto-socorro com dor precordial e, durante o atendimento médico, apresenta parada cardiorrespiratória. Nessa situação, a 1ª conduta a ser tomada deve ser:",
+    "alternativas": [
+      "Diagnóstico de atividade elétrica sem pulso, checar pneumotórax, hipovolemia.",
+      "Administração de adrenalina é ineficaz devido à alteração de receptação de serotonina.",
+      "Massagem cardíaga é tão ou mais importante que administração de adrenalina.",
+      "Desfibrilação com 360 J."
+    ],
+    "correta": 2,
+    "comentario": "As compressões torácicas de alta qualidade são consideradas tão ou mais importantes que a administração de fármacos na PCR — a evidência de benefício em sobrevida das compressões precoces e ininterruptas supera a das medicações, que têm papel complementar.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3582",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "A respeito da massagem cardíaca externa durante uma parada cardiorrespiratória, é correto afirmar:",
+    "alternativas": [
+      "A frequência de compressões deve ser de 80 compressões por minuto.",
+      "A fase de descompressão torácica não é relevante.",
+      "As fraturas de costelas que eventualmente ocorrem facilitam a compressão torácica e o sucesso na reanimação.",
+      "A compressão torácica deve ser em torno de 5 cm de profundidade."
+    ],
+    "correta": 3,
+    "comentario": "A profundidade recomendada das compressões torácicas é de cerca de 5-6 cm. A frequência correta é 100-120/min (não 80); o retorno completo do tórax (descompressão) entre as compressões é essencial para o enchimento cardíaco; e fraturas de costela são complicação a ser minimizada, não um objetivo ou fator que \"facilita\" a reanimação.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3583",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "O médico plantonista da enfermaria de cirurgia é chamado para atendimento de Parada Cardiopulmonar (PCR). Trata-se de paciente, 55 anos, com neoplasia de mama recidivada e metastática, internada para controle de dor e dispneia. A equipe de cuidados paliativos iniciou morfina em infusão contínua e escreveu no prontuário a vontade expressa da paciente de não ser reanimada, nem levada para UTI. A filha, presente na enfermaria, reiterou a vontade da mãe. No momento do atendimento, o exame da paciente indicou pupilas mióticas puntiformes, inconsciência e apneia com pulso carotídeo presente e fino. Qual a conduta imediata mais adequada a ser adotada pelo plantonista?",
+    "alternativas": [
+      "abertura das vias aéreas",
+      "intubação orotraqueal",
+      "compressões torácicas ritmadas",
+      "cardiodesfibrilação",
+      "ventilação com dispositivo bolsa-máscara"
+    ],
+    "correta": 0,
+    "comentario": "A paciente TEM pulso presente — não está em PCR verdadeira, mas em depressão respiratória por opioide, associada a uma diretriz antecipada de não reanimação (DNR) documentada e reafirmada pela família. A conduta apropriada é medida de conforto e manutenção de via aérea básica (abertura das vias aéreas), respeitando a vontade da paciente, sem escalonar para intubação, compressões ou desfibrilação.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3584",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Durante reanimação de um paciente previamente hígido, internado para avaliação pressórica, o quadro evoluiu com parada cardiorrespiratória e ressuscitação por 17 minutos, bem-sucedida. O paciente evolui com estabilidade pressórica sob ventilação mecânica em via aérea definitiva. Intensivista decidiu então fazer hipotermia terapêutica, pois o ritmo inicial era fibrilação ventricular. Assinale a alternativa que equivale a possíveis complicações dessa terapêutica.",
+    "alternativas": [
+      "Nova parada cardíaca pelo resfriamento do sistema nervoso central.",
+      "Crises hipertensivas e convulsivas.",
+      "Coagulopatia e risco do aumento de infecção.",
+      "Quadros álgicos intensos com fratura de ossos instáveis.",
+      "Melhora clínica rápida com menos de oito horas de evolução e extubação acidental."
+    ],
+    "correta": 2,
+    "comentario": "O controle direcionado de temperatura (hipotermia terapêutica) pós-PCR pode causar coagulopatia e aumento do risco infeccioso, entre outras complicações (arritmias, distúrbios eletrolíticos) — riscos que exigem monitorização cuidadosa durante o período de resfriamento e reaquecimento.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3585",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Paciente de 50 anos, hipertenso e diabético foi admitido em leito monitorizado por suspeita de síndrome coronariana aguda. Iniciadas as medidas adequadas, porém paciente evolui para parada cardiorrespiratória em fibrilação ventricular. Imediatamente o paciente recebe desfibrilação. A conduta a ser tomada a seguir:",
+    "alternativas": [
+      "Verificar a presença de pulso.",
+      "Infusão de epinefrina, 1 mg, endovenosa.",
+      "Checar se houve reversão para ritmo sinusal.",
+      "Infusão endovenosa de fibrinolíticos.",
+      "Compressões cardíacas de alta qualidade."
+    ],
+    "correta": 4,
+    "comentario": "Imediatamente após qualquer choque, retomam-se as compressões torácicas de alta qualidade por 2 minutos, sem pausar para checar ritmo, pulso ou administrar medicações nesse momento.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3586",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Paciente de 18 anos, previamente hígida, sofreu acidente automobilístico sem lesões aparentes. Após algumas horas, começou com tontura e sudorese, tendo sido trazida à emergência. À chegada, apresentava-se pálida, sudorética, taquicárdica e hipotensa, sem outras alterações importantes ao exame clínico. Evoluiu para parada cardiorrespiratória (PCR) em atividade elétrica sem pulso. Assinale a alternativa que contempla a mais provável causa e o tratamento adequado a ser realizado durante a PCR.",
+    "alternativas": [
+      "Pneumotórax hipertensivo - drenagem torácica",
+      "Hipovolemia – reposição de volume.",
+      "Tamponamento cardíaco – realização de janela pericárdica.",
+      "Hiperpotassemia – administração de gluconato de cálcio intravenoso.",
+      "Embolia pulmonar – administração de alteplase intravenosa."
+    ],
+    "correta": 1,
+    "comentario": "O contexto de trauma com sinais de choque hemorrágico oculto (palidez, sudorese, taquicardia, hipotensão) evoluindo para AESP é altamente sugestivo de hipovolemia por sangramento interno não aparente — a causa reversível mais provável entre os 5H/5T nesse cenário, tratada com reposição volêmica agressiva e investigação/controle do foco hemorrágico.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3587",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Reanimação Cardiopulmonar (RCP) de alta qualidade inclui:",
+    "alternativas": [
+      "Comprimir o tórax com força, rapidez, permitindo o retorno total após cada compressão e minimizando interrupções nas compressões torácicas.",
+      "Manter a via aérea de pacientes inconscientes por meio de uma via aérea avançada obrigatória, obtida antes de iniciar as compressões torácicas.",
+      "Ventilar excessivamente com Oxigênio suplementar a 100% diante de uma parada cardiopulmonar (PCR).",
+      "Evitar alternar as pessoas que aplicam as compressões torácicas e, em caso de fadiga, a troca deve ser realizada a cada 5 minutos.",
+      "Avaliar as possíveis causas de uma PCR (\"5Hs e 5Ts\") antes de executar as ações de Suporte Avançado de Vida."
+    ],
+    "correta": 0,
+    "comentario": "Os pilares da RCP de alta qualidade são: compressões fortes e rápidas, retorno completo do tórax entre compressões, e minimização de interrupções. A via aérea avançada NÃO é pré-requisito para iniciar compressões (compressões vêm primeiro); ventilação excessiva é deletéria; a troca de socorristas deve ocorrer a cada 2 minutos (não 5, pela fadiga reduzir a qualidade); e as causas reversíveis são buscadas DURANTE a RCP, não antes de iniciar o suporte avançado.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3588",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "A Síndrome do QT longo congênito é considerada a mais antiga das canalopatias estudadas, e representa a principal causa de autópsia negativa em casos de morte súbita em jovens. Sobre isso, assinale a alternativa INADEQUADA:",
+    "alternativas": [
+      "Sua principal característica é o prolongamento do intervalo QT corrigido ao ECG, com valores acima de 460 ms.",
+      "Clinicamente, a presença de síncope ou parada cardiorrespiratória desencadeada por estresse emocional e físico deve aventar a hipótese da síndrome do QT longo.",
+      "A arritmia responsável pelos eventos é o TdP, a qual é altamente específica e geralmente autolimitada, podendo levar à síncope transitória.",
+      "Não pode degenerar para Fibrilação Ventricular."
+    ],
+    "correta": 3,
+    "comentario": "Torsades de Pointes (TdP), a arritmia característica da síndrome do QT longo, PODE degenerar para fibrilação ventricular e morte súbita — a afirmação de que \"não pode degenerar\" é falsa, sendo essa a alternativa inadequada pedida.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3589",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "A parada cardiorrespiratória (PCR) pode ocorrer em qualquer momento da gestação e até o 42º dia de pós-parto. Tem elevado grau de morbimortalidade materno-fetal. Sobre a ressuscitação cardiopulmonar (RCP) na gestação, assinale a alternativa CORRETA:",
+    "alternativas": [
+      "Não usar medicamentos vasopressores na ressuscitação materna devido aos efeitos deletérios fetais.",
+      "A dose dos fármacos utilizados bem como a voltagem do desfibrilador (seja ele monofásico ou bifásico) podem ser mantidas dentro dos valores utilizados para não gestantes.",
+      "A avaliação fetal é de suma importância no atendimento à gestante em parada cardiorrespiratória.",
+      "Manobra de deslocamento manual uterino a partir da 20a semana de gestação não tem se mostrado eficaz.",
+      "Cesárea perimortem deve ser realizada após o quinto minuto de RCP sem sucesso nos casos de gravidez com mais de 20 semanas."
+    ],
+    "correta": 1,
+    "comentario": "As doses de fármacos e a energia de desfibrilação na RCP da gestante são as MESMAS utilizadas em não gestantes — não há ajuste posológico específico. Vasopressores não devem ser evitados quando indicados (a prioridade é a sobrevivência materna, da qual depende a fetal); a prioridade absoluta durante a RCP é a mãe, não uma avaliação fetal simultânea; o deslocamento uterino manual à esquerda a partir de ~20 semanas é medida eficaz e recomendada; e a cesárea perimortem deve ser considerada a partir do 4º minuto (não do 5º) de RCP sem sucesso.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3590",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Sobre a técnica de reanimação, em um paciente de 68 anos em parada cardiorrespiratória, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "As compressões torácicas devem ter profundidade inferior a 5 cm para não causar fraturas de costelas.",
+      "A fração de compressão torácica deve ser de 40 a 60%.",
+      "As compressões torácicas não devem ser interrompidas durante a ventilação com dispositivo bolsa-máscara-valva no paciente não intubado.",
+      "As compressões torácicas devem ser executadas em uma frequência de 100 a 120 compressões por minuto."
+    ],
+    "correta": 3,
+    "comentario": "A frequência recomendada das compressões torácicas é de 100 a 120 por minuto. A profundidade deve ser de 5-6 cm (não inferior a 5); a fração de compressão-alvo é bem maior que 40-60% (idealmente ≥60%, buscando minimizar ao máximo as interrupções); e no paciente SEM via aérea avançada, as compressões DEVEM ser pausadas na relação 30:2 para as ventilações.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3591",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Qual das afirmações a seguir sobre os efeitos da epinefrina durante a tentativa de ressuscitação é verdadeira?",
+    "alternativas": [
+      "a epinefrina reduz a resistência vascular periférica e diminui a pós-carga miocárdica, de modo que as contrações ventriculares são mais eficazes",
+      "a epinefrina melhora a pressão de perfusão da artéria coronária e estimula as contrações espontâneas quando há assistolia",
+      "a epinefrina é contraindicada na fibrilação ventricular, pois aumenta a irritabilidade miocárdica",
+      "a epinefrina reduz o consumo de oxigênio miocárdico",
+      "nenhuma das respostas acima"
+    ],
+    "correta": 1,
+    "comentario": "A epinefrina, por efeito alfa-adrenérgico, AUMENTA (não reduz) a resistência vascular periférica, melhorando a pressão de perfusão coronariana e favorecendo a retomada de atividade elétrica espontânea mesmo em ritmos como a assistolia. Não é contraindicada na FV (é usada após o 2º choque) e não reduz o consumo miocárdico de oxigênio.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3592",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Um homem de 54 anos, portador de doença arterial coronariana crônica, apresenta, após intensa emoção, dor torácica precordial e perda da consciência. Os pulsos periféricos não são perceptíveis, e a pressão arterial não foi percebida. O mecanismo provável da parada é:",
+    "alternativas": [
+      "assistolia",
+      "atividade elétrica sem pulso",
+      "taquicardia supraventricular",
+      "fibrilação ventricular",
+      "fibrilação atrial"
+    ],
+    "correta": 3,
+    "comentario": "A fibrilação ventricular é a causa mais comum de morte súbita cardíaca testemunhada em pacientes com cardiopatia isquêmica estabelecida, frequentemente precipitada por estresse emocional/físico em contexto de instabilidade elétrica miocárdica preexistente.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3593",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Paciente de 55 anos deu entrada no pronto-socorro e foi diagnosticada uma Parada Cardiorrespiratória (PCR) por Fibrilação Ventricular (FV). Qual é o melhor momento para iniciar epinefrina 1 mg?",
+    "alternativas": [
+      "Imediatamente, antes da primeira desfibrilação.",
+      "Imediatamente, depois da primeira desfibrilação.",
+      "Após reiniciada a Ressuscitação Cardiopulmonar (RCP), depois da segunda desfibrilação.",
+      "Durante a RCP e imediatamente antes da segunda desfibrilação."
+    ],
+    "correta": 2,
+    "comentario": "Em ritmos chocáveis (FV/TV sem pulso), a epinefrina entra no algoritmo após o SEGUNDO choque, durante o ciclo de RCP subsequente — diferente dos ritmos não chocáveis, em que é administrada assim que possível, desde o início.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3594",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "A desfibrilação e cardioversão elétrica consistem na aplicação de corrente elétrica de alta energia para reversão de arritmias cardíacas geradas pelo mecanismo de reentrada. Somente apresenta dados considerados inadequados a alternativa:",
+    "alternativas": [
+      "Na desfibrilação, esta corrente elétrica é aplicada em qualquer momento do ciclo cardíaco, enquanto na cardioversão elétrica, esta corrente é sempre sincronizada com os complexos QRS do eletrocardiograma para que não seja administrada durante o período vulnerável da repolarização ventricular (onda T).",
+      "Os desfibriladores/cardioversores podem ser classificados de acordo com o modo de operação em: a) manuais; b) semiautomáticos (DEA).",
+      "Desfibriladores também podem ser classificados em externos e internos.",
+      "Na cardioversão a corrente elétrica é aplicada em qualquer momento do ciclo cardíaco, esta corrente é sempre sincronizada para que não seja administrada durante o período refratário da repolarização ventricular (onda T)."
+    ],
+    "correta": 3,
+    "comentario": "A afirmação é autocontraditória e, portanto, inadequada: a cardioversão NÃO é aplicada \"em qualquer momento do ciclo cardíaco\" — pelo contrário, é justamente SINCRONIZADA ao complexo QRS para evitar o período vulnerável da onda T, ao contrário da desfibrilação (que é aplicada a qualquer momento, sem sincronização).",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3595",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Na reanimação cardiopulmonar:",
+    "alternativas": [
+      "A vasopressina mostrou-se claramente superior à adrenalina, mas seu custo bastante superior inviabiliza seu emprego na maior parte dos hospitais públicos e/ou filantrópicos do Brasil.",
+      "A amiodarona pode ser usada em determinado momento do protocolo de atendimento da fibrilação ventricular (FV), apesar de não haver nenhum estudo que mostre sua real capacidade de prevenção de morte súbita, por exemplo, em pacientes portadores de miocardiopatia isquêmica grave.",
+      "A amiodarona foi abolida na revisão mais recente do protocolo de FV feita pela American Heart Association, visto a falta de evidências claras que dêem suporte ao seu uso.",
+      "A atropina deve ser usada imediatamente após a assistolia ter sido detectada na monitorização cardíaca, uma vez que a demora tornará inútil o emprego nesses casos.",
+      "A intubação orotraqueal não poderá ser realizada em hipótese alguma antes do segundo ciclo de reanimação, independentemente do diagnóstico inicial e causa da parada cardiorrespiratória."
+    ],
+    "correta": 1,
+    "comentario": "A amiodarona permanece no algoritmo de FV/TV sem pulso refratária, embora estudos não tenham demonstrado benefício claro de sobrevida a longo prazo (incluindo em cardiopatas isquêmicos graves) — não foi abolida do protocolo; a vasopressina não demonstrou superioridade sobre a epinefrina; a atropina foi removida do algoritmo de PCR (não é mais indicada na assistolia); e a IOT pode ser realizada a qualquer momento clinicamente indicado, sem essa restrição rígida de ciclos.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3596",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Num dos dias em que a temperatura na madrugada chegou perto dos 1-2°C, foi conduzido, ao pronto-socorro, um paciente, morador de rua, não respondendo a estímulos, sem respirar, e a presença do pulso não foi identificada. A temperatura central encontra-se menor do que 30ºC. Neste momento, a conduta a ser tomada é:",
+    "alternativas": [
+      "Declarar o paciente morto.",
+      "Reaquecimento externo ativo até haver a presença de pulso.",
+      "Reaquecimento interno ativo, por meio de irrigação torácica, até haver a presença de pulso.",
+      "Reaquecimento externo e interno ativo, por meio de circulação extracorpórea, até haver a presença de pulso.",
+      "Desfibrilar, iniciar manobras de RCP, se necessário introduzir epinefrina, e realizar aquecimento agressivo por meio de circulação extracorpórea."
+    ],
+    "correta": 4,
+    "comentario": "Na PCR associada à hipotermia grave, mantém-se RCP e as medidas padrão de ACLS (desfibrilação se indicada, epinefrina) simultaneamente ao reaquecimento agressivo (idealmente por circulação extracorpórea) — o princípio fundamental é \"não está morto até estar quente e morto\", pois a hipotermia profunda pode mimetizar morte e ser parcialmente protetora neurológica.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3597",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Assinale a assertiva INCORRETA sobre o manejo inicial de reanimação cardiorrespiratória em adultos.",
+    "alternativas": [
+      "Ao ser encontrada uma vítima inconsciente, a primeira conduta é chamar por ajuda.",
+      "A frequência das compressões torácicas deve ser de 100-120 compressões por minuto.",
+      "A profundidade das compressões torácicas deve ser de 5-6 cm.",
+      "As compressões torácicas devem ser sempre intercaladas com as ventilações numa proporção de 30/2, independentemente da forma de ventilação utilizada.",
+      "Assim que o desfibrilador estiver disponível, o ritmo cardíaco deve ser verificado imediatamente, independentemente do tempo de início das compressões torácicas."
+    ],
+    "correta": 3,
+    "comentario": "A relação 30:2 é usada apenas quando o paciente NÃO tem via aérea avançada — com via aérea definitiva (ex.: tubo orotraqueal), as compressões tornam-se contínuas e as ventilações são feitas de forma assíncrona, sem pausar as compressões, o que torna a afirmação \"sempre 30:2, independentemente da forma de ventilação\" incorreta.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3598",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "A síndrome do QT longo predispõe ao aparecimento de:",
+    "alternativas": [
+      "Torsades des pointes.",
+      "Flutter atrial.",
+      "BAV total.",
+      "Taquicardia paroxística supraventricular.",
+      "Fibrilação atrial."
+    ],
+    "correta": 0,
+    "comentario": "A síndrome do QT longo (congênita ou adquirida) predispõe classicamente ao desenvolvimento de Torsades de Pointes, uma taquicardia ventricular polimórfica que pode degenerar em fibrilação ventricular e morte súbita.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3599",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "No seu primeiro dia de residência médica você é chamado para avaliar um paciente internado que evolui com parada cardiorrespiratória. Ao monitorizá-lo você faz o diagnóstico de atividade elétrica sem pulso. Levando em consideração as recomendações do Advanced Cardiovascular Life Support da American Heart Association, o que você faz?",
+    "alternativas": [
+      "Mantém compressões torácicas e infusão de adrenalina e busca causas reversíveis de atividade elétrica sem pulso como tamponamento cardíaco, pneumotórax, acidose e hipercalemia.",
+      "Administra desfibrilação elétrica imediata seguida de 5 ciclos (2 minutos) de compressões torácicas, verificando novamente o ritmo após as compressões.",
+      "Mantém compressões torácicas e infusão de adrenalina e de amiodarona por tempo indeterminado, não sendo necessários outros procedimentos.",
+      "Administra cardioversão elétrica sincronizada imediatamente uma vez que a arritmia foi presenciada."
+    ],
+    "correta": 0,
+    "comentario": "A AESP é ritmo NÃO chocável: o manejo correto é manter compressões torácicas de alta qualidade, administrar epinefrina e buscar ativamente as causas reversíveis (5H/5T) — desfibrilação, cardioversão sincronizada e amiodarona não têm papel nesse ritmo.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3600",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Sobre a síndrome Pós-Parada Cardiorrespiratória (PCR), marque a opção CORRETA.",
+    "alternativas": [
+      "Trata-se unicamente de disfunção miocárdica, sendo o tratamento com inotrópicos imperativo.",
+      "Ocorre devido à isquemia global difusa e lesões adicionais durante e após a reperfusão de múltiplos órgãos.",
+      "Ocorre independentemente da duração da PCR, não havendo relação da mesma com a assistência primária prestada durante a reanimação cardiorrespiratória.",
+      "Lesões cerebrais são raras quando a reanimação é rapidamente iniciada, mesmo nos casos em que a parada ocorreu fora do ambiente hospitalar."
+    ],
+    "correta": 1,
+    "comentario": "A síndrome pós-PCR resulta de isquemia global difusa seguida de lesão de reperfusão em múltiplos órgãos (não apenas disfunção miocárdica isolada), com gravidade diretamente relacionada à duração da PCR e à qualidade da reanimação prestada — reanimação rápida e de alta qualidade reduz, mas não elimina, o risco de lesão neurológica.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3601",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Sobre o controle direcionado de temperatura em pacientes após PCR, podemos dizer que:",
+    "alternativas": [
+      "Temperatura alvo entre 32° - 33° e mantida no máximo por 12 horas.",
+      "Temperatura alvo entre 33° - 35° e mantida no máximo por 24 horas.",
+      "Temperatura alvo entre 32° - 36° e mantida no máximo por 12 horas.",
+      "Temperatura alvo entre 31° - 33° e mantida por pelo menos 12 horas.",
+      "Temperatura alvo entre 32° - 36° e mantida por pelo menos 24 horas."
+    ],
+    "correta": 4,
+    "comentario": "O controle direcionado de temperatura pós-PCR utiliza uma faixa-alvo de 32-36°C, mantida por PELO MENOS 24 horas, seguida de prevenção ativa de febre nas horas subsequentes — protocolo com evidência de melhora do desfecho neurológico em sobreviventes de PCR, especialmente com ritmo inicial chocável.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3602",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Mulher de 40 anos está internada na enfermaria de Clínica Médica para investigação de diagnóstico etiológico de Insuficiência Renal Aguda. Nas últimas 24 horas, evolui com oligúria e rebaixamento de nível de consciência. A enfermagem te chama dizendo que a paciente está \"parada\". Você se dirige ao quarto e constata que a paciente está arresponsiva. O pulso carotídeo está ausente. Ao monitorar a paciente você se depara com ritmo de assistolia. Após chamar ajuda, qual seria a conduta correta?",
+    "alternativas": [
+      "Cardioversão sincronizada.",
+      "Desfibrilação.",
+      "Atropina.",
+      "Massagem cardíaca.",
+      "Vasopressina."
+    ],
+    "correta": 3,
+    "comentario": "A assistolia é ritmo NÃO chocável — a conduta é iniciar/manter compressões torácicas (massagem cardíaca) associadas a epinefrina e busca de causas reversíveis (nesse caso, hipercalemia é fortemente suspeita pelo contexto de IRA/oligúria). Desfibrilação, cardioversão e atropina não têm papel na assistolia conforme o algoritmo atual.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3603",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Dentre as opções abaixo, é causa de parada cardiorrespiratória:",
+    "alternativas": [
+      "Hipercalcemia.",
+      "Hiperglicemia.",
+      "Trombose venosa profunda.",
+      "Hipertermia.",
+      "Intoxicação por Organofosforado."
+    ],
+    "correta": 4,
+    "comentario": "A intoxicação por organofosforado (inibidor da acetilcolinesterase) pode causar PCR por crise colinérgica grave (bradicardia extrema, broncorreia/broncoespasmo, insuficiência respiratória) — uma das causas tóxicas específicas incluídas no \"T\" de toxinas dos 5H/5T.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3604",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Idoso de 65 anos de idade é trazido pelo resgate até o Pronto-socorro em parada cardíaca, já sendo realizadas manobras de reanimação na fase pré-hospitalar. Mantendo manobras na sequência de C-A-B é conseguido adequada monitorização do paciente, sendo, então, diagnosticado pelo monitor cardíaco, um quadro de Fibrilação Ventricular. Imediatamente é realizada Desfibrilação com 360 J de corrente monofásica; como não é novamente encontrado pulso central (carotídeo), retornamos às manobras de C-A-B. Podemos considerar como adequadas as condutas tomadas no caso descrito, exceto uma das citadas abaixo. Marque-a:",
+    "alternativas": [
+      "Realizar manobras na fase pré-hospitalar.",
+      "Sequência compressão torácica – via aérea – ventilação.",
+      "Monitorização do paciente.",
+      "Após desfibrilação verificar pulso."
+    ],
+    "correta": 3,
+    "comentario": "Após a desfibrilação, retoma-se IMEDIATAMENTE a RCP (sequência C-A-B) por 2 minutos, sem pausar para checar pulso nesse momento — a checagem de pulso/ritmo só ocorre ao final do ciclo de compressões subsequente, tornando essa a conduta inadequada do caso.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3605",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Paciente feminina, 52 anos, com cardiopatia estrutural e alergia respiratória, está sendo tratada em função de sinusite aguda, fazendo uso de diversos fármacos. Subitamente, a paciente sente-se mal, sofrendo de \"tonteiras\" e palpitações, sendo levada a uma unidade de emergência, onde é constatada, ao exame físico, a presença de uma taquiarritmia. O eletrocardiograma revela a presença de taquicardia ventricular polimórfica do tipo torsades de pointes, sendo a paciente tratada com sulfato de magnésio IV, com reversão de arritmia. Da lista de medicações que a paciente vinha usando, a que pode prolongar o intervalo QT e, portanto, está relacionada à arritmia apresentada, é:",
+    "alternativas": [
+      "Loratadina.",
+      "Amoxicilina.",
+      "Budesonida.",
+      "N-acetilcisteína."
+    ],
+    "correta": 0,
+    "comentario": "Anti-histamínicos como a loratadina estão classicamente entre os fármacos que podem prolongar o intervalo QT e predispor a Torsades de Pointes, especialmente em pacientes com cardiopatia estrutural de base ou uso concomitante de outros fármacos que prolongam o QT — os demais fármacos listados (amoxicilina, budesonida, N-acetilcisteína) não têm esse efeito relevante.",
+    "banca": "Banco de questões — Estratégia MED",
+    "ano": null,
+    "fonte": "Banco de questões — Estratégia MED (caderno Parada Cardiorrespiratória, medicina livre)",
+    "revisado": true
+  },
+  {
+    "id": "q3606",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "A acompanhante de um homem que sofreu um colapso súbito no saguão do aeroporto fez contato com o Serviço de Emergência. Que orientações, dentre as abaixo, devem ser fornecidas nesse momento, considerando que ela não é profissional de saúde?",
+    "alternativas": [
+      "Confirmar a ausência de pulso e orientar o início das compressões torácicas e da ventilação boca a boca.",
+      "Confirmar a irresponsividade e a ausência de movimento respiratório normal e orientar o início das compressões torácicas enquanto aguarda a chegada de uma pessoa treinada para o uso do desfibrilador externo automático (DEA).",
+      "Confirmar a irresponsividade e a ausência de pulso e de qualquer movimento respiratório e orientar o início das compressões torácicas e da ventilação boca a boca.",
+      "Confirmar a irresponsividade e a ausência de movimento respiratório normal e orientar o início das compressões torácicas e o uso do DEA."
+    ],
+    "correta": 3,
+    "comentario": "Para leigos, a orientação telefônica do serviço de emergência foca em sinais simples e observáveis (irresponsividade + ausência de respiração normal, sem exigir checagem de pulso, que é imprecisa para não profissionais) e prioriza compressões torácicas contínuas (RCP somente com as mãos) associadas ao uso do DEA assim que disponível — não se orienta ventilação boca a boca para leigos não treinados nesse contexto.",
+    "banca": "Banco de questões — Eu Médico Residente (EMR)",
+    "ano": 2024,
+    "fonte": "HCPA 2024 (Acesso Direto) — banco de questões EMR (Eu Médico Residente).",
+    "revisado": true
+  },
+  {
+    "id": "q3607",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "Um profissional de saúde observou à sua frente, durante uma caminhada, que uma senhora subitamente parou de andar, agachou-se, bastante pálida e sudorética, e desfaleceu. Em posse de sua máscara para ventilação boca-máscara, ele iniciou o primeiro atendimento à paciente. Ela estava inconsciente, não apresentava movimentos torácicos nem pulso carotídeo palpável. Solicita, então, que alguém de passagem chame o SAMU e que outra pessoa providencie um desfibrilador externo automático (DEA). Considerando a situação apresentada, a conduta desse profissional deve ser iniciar imediatamente:",
+    "alternativas": [
+      "Compressões torácicas de forma contínua, realizando concomitantemente uma ventilação a cada 2 ou 3 segundos, caso haja dois socorristas.",
+      "Compressões torácicas, após a abertura das vias aéreas e ventilação, mantendo a relação de duas ventilações seguidas por 30 compressões.",
+      "Compressões torácicas de forma contínua, interrompendo o procedimento a cada 5 minutos para checar o pulso, revezando com outro socorrista, se possível.",
+      "Compressões torácicas de pelo menos 5 centímetros de profundidade, com frequência de 100 a 120 por minuto, seguidas de abertura das vias aéreas e ventilação."
+    ],
+    "correta": 3,
+    "comentario": "Para um profissional de saúde, a sequência correta é iniciar imediatamente compressões torácicas de alta qualidade (profundidade ≥5cm, frequência 100-120/min), seguidas de abertura de via aérea e ventilação na relação 30:2 (sem via aérea avançada) — as compressões sempre precedem as ventilações na sequência C-A-B.",
+    "banca": "Banco de questões — Eu Médico Residente (EMR)",
+    "ano": 2024,
+    "fonte": "INEP 2024 (Revalida) — banco de questões EMR (Eu Médico Residente).",
+    "revisado": true
+  },
+  {
+    "id": "q3608",
+    "temaId": "pcr-acls",
+    "tema": "Parada Cardiorrespiratória (PCR) / ACLS",
+    "enunciado": "A equipe de resposta rápida (ERR) é acionada para atender a uma intercorrência na Enfermaria de Clínica Médica de um hospital. Um paciente de 47 anos do sexo masculino recuperava-se de um cateterismo cardíaco com implante de stent. Ao chegar ao quarto, o paciente não respira e está sem pulso. É solicitado o carro de parada com desfibrilador e, imediatamente, se dá início às compressões torácicas. Três minutos depois da chegada da equipe, chega o desfibrilador (bifásico), que é conectado ao paciente. O monitor mostra um ritmo chocável. É CORRETO afirmar que a ERR deve, neste momento:",
+    "alternativas": [
+      "Interromper compressões torácicas, desfibrilar usando 360 J e intubar o paciente.",
+      "Manter as compressões torácicas, administrar epinefrina e desfibrilar usando 200 J.",
+      "Interromper as compressões torácicas e desfibrilar usando 200 J.",
+      "Manter as compressões torácicas, intubar, administrar epinefrina e desfibrilar com 360 J."
+    ],
+    "correta": 2,
+    "comentario": "Em desfibrilador bifásico, a carga padrão é de 200J (não 360J, valor de aparelhos monofásicos). As compressões são interrompidas apenas pelo breve instante do choque, sem atrasar a desfibrilação para intubar ou administrar fármacos previamente — a desfibrilação precoce em ritmo chocável tem prioridade absoluta sobre essas outras medidas.",
+    "banca": "Banco de questões — Eu Médico Residente (EMR)",
+    "ano": 2024,
+    "fonte": "SCM-BH 2024 (Residência R3 Clínica Médica) — banco de questões EMR (Eu Médico Residente).",
     "revisado": true
   }
 ]
