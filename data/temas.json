@@ -5246,7 +5246,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Doença Arterial Obstrutiva Periférica (DAOP)",
     "resumo": "Claudicação intermitente, índice tornozelo-braquial e diferenciação da isquemia aguda de membro.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Angiologia e Cirurgia Vascular; ESC/ESVS Guidelines on Peripheral Arterial Diseases",
     "mnemonicos": [
       {
@@ -5269,7 +5269,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O índice tornozelo-braço (ITB, razão entre a PA sistólica do tornozelo e do braço) é o exame de triagem inicial não invasivo, com valores abaixo de 0,9 indicando doença arterial periférica significativa, e valores muito baixos (<0,4) sugerindo isquemia crítica. Angiotomografia ou angiografia por ressonância definem a anatomia vascular detalhada para planejamento de revascularização quando indicada."
+        "conteudo": "O índice tornozelo-braço (ITB, razão entre a PA sistólica do tornozelo e do braço) é o exame de triagem inicial não invasivo, com valores abaixo de 0,9 indicando doença arterial periférica significativa, e valores muito baixos (<0,4) sugerindo isquemia crítica. Angiotomografia ou angiografia por ressonância definem a anatomia vascular detalhada para planejamento de revascularização quando indicada.\n\n<div class=\"table-wrap\"><table><thead><tr><th>ITB</th><th>Interpretação</th></tr></thead><tbody><tr><td>&gt;1,3</td><td>Vasos não compressíveis (calcificação — comum em diabéticos), necessita exame complementar</td></tr><tr><td>0,9 a 1,3</td><td>Normal</td></tr><tr><td>0,7 a 0,89</td><td>Doença arterial periférica leve</td></tr><tr><td>0,4 a 0,69</td><td>Doença arterial periférica moderada</td></tr><tr><td>&lt;0,4</td><td>Doença grave / sugestivo de isquemia crítica</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Úlcera arterial</th><th>Úlcera venosa</th></tr></thead><tbody><tr><td>Localização</td><td>Extremidades dos dedos, calcanhar (pontos de pressão/trauma)</td><td>Região maleolar medial</td></tr><tr><td>Dor</td><td>Intensa</td><td>Menos dolorosa (ou indolor)</td></tr><tr><td>Bordas</td><td>Bem definidas</td><td>Irregulares</td></tr><tr><td>Pele ao redor</td><td>Fria, atrófica, sem pelos</td><td>Hiperpigmentada, com estase/edema</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -5283,7 +5283,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O índice tornozelo-braço e seus pontos de corte (normal, doença leve/moderada, isquemia crítica) são cobrança certa e recorrente. A diferenciação semiológica entre úlcera arterial (dolorosa, bordas definidas, extremidades) e venosa (menos dolorosa, região maleolar medial, associada a estase) também é frequentemente exigida em questões comparativas."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a DAOP é cobrada sobretudo pela interpretação do índice tornozelo-braço (pontos de corte para normal, doença leve/moderada/grave e isquemia crítica) e pela diferenciação semiológica entre úlcera arterial (dolorosa, bordas definidas, extremidades) e úlcera venosa (menos dolorosa, região maleolar medial), frequentemente cobrada em conjunto na mesma questão. O reconhecimento de isquemia crítica de membro (dor em repouso + lesões tróficas) como indicação de revascularização urgente, não apenas otimização clínica, também é ponto central."
   },
   {
     "id": "insuficiencia-venosa-cronica",

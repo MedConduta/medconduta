@@ -12977,5 +12977,52 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-daop-abordagem",
+    "temaId": "doenca-arterial-obstrutiva-periferica",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da doença arterial obstrutiva periférica",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia vascular — doença arterial obstrutiva periférica",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de DAOP (claudicação, dor em repouso, lesão trófica, pulsos reduzidos/ausentes)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Índice tornozelo-braço (ITB) como exame de triagem inicial"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor isquêmica em repouso e/ou lesões tróficas/necrose (isquemia crítica de membro)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Avaliação vascular urgente para revascularização (angioplastia ou bypass) — risco iminente de perda do membro, não tratar apenas com analgesia prolongada"
+              }
+            ]
+          },
+          {
+            "label": "Não — claudicação intermitente estável",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Cessação do tabagismo, exercício físico supervisionado, controle de fatores de risco cardiovascular, antiagregante plaquetário e estatina"
+              },
+              {
+                "tipo": "end",
+                "texto": "Revascularização eletiva se claudicação incapacitante refratária ao tratamento clínico otimizado"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
