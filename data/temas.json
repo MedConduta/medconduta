@@ -2911,7 +2911,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Diabetes Mellitus Gestacional (DMG)",
     "resumo": "Rastreio entre 24-28 semanas, critérios diagnósticos e sequência terapêutica.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO; Sociedade Brasileira de Diabetes; Ministério da Saúde — Gestação de Alto Risco",
     "mnemonicos": [
       {
@@ -2934,7 +2934,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O rastreamento é universal, recomendado entre 24 e 28 semanas de gestação (mais precocemente, ainda no primeiro trimestre, em gestantes de alto risco, para identificar diabetes pré-gestacional não diagnosticado previamente). O teste oral de tolerância à glicose com 75g é o método diagnóstico padrão, com valores de corte específicos para jejum, 1 hora e 2 horas — qualquer valor alterado já confirma o diagnóstico, diferente do critério fora da gestação que exige valores mais elevados."
+        "conteudo": "O rastreamento é universal, recomendado entre 24 e 28 semanas de gestação (mais precocemente, ainda no primeiro trimestre, em gestantes de alto risco, para identificar diabetes pré-gestacional não diagnosticado previamente). O teste oral de tolerância à glicose com 75g é o método diagnóstico padrão, com valores de corte específicos para jejum, 1 hora e 2 horas — qualquer valor alterado já confirma o diagnóstico, diferente do critério fora da gestação que exige valores mais elevados.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Momento (TOTG 75g)</th><th>Valor de corte (mg/dL)</th></tr></thead><tbody><tr><td>Jejum</td><td>≥92</td></tr><tr><td>1 hora</td><td>≥180</td></tr><tr><td>2 horas</td><td>≥153</td></tr></tbody></table></div><p><strong>Basta UM valor alterado</strong> para confirmar o diagnóstico de diabetes gestacional (diferente do critério fora da gestação, que exige valores mais elevados).</p>"
       },
       {
         "titulo": "Tratamento",
@@ -2948,7 +2948,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O protocolo de rastreamento universal entre 24-28 semanas com teste oral de tolerância à glicose de 75g, e seus valores de corte específicos, é cobrança certíssima e recorrente. A insulina como tratamento farmacológico de escolha na gestação (por não atravessar a placenta) também é ponto central e frequentemente exigido."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o diabetes gestacional é cobrado quase sempre pelos valores de corte específicos do TOTG 75g (jejum ≥92, 1h ≥180, 2h ≥153 mg/dL) e pela regra de que basta UM valor alterado para confirmar o diagnóstico — diferente do critério fora da gestação. A insulina como tratamento farmacológico de escolha (por não atravessar a placenta) quando dieta e atividade física são insuficientes, e a macrossomia como principal complicação (risco de distocia de ombro) também são cobranças recorrentes."
   },
   {
     "id": "climaterio",

@@ -73443,5 +73443,59 @@
     ],
     "correta": 1,
     "comentario": "Desaceleração da frequência cardíaca fetal não recuperada após medidas iniciais de ressuscitação intraútero exige reavaliação imediata da conduta obstétrica, incluindo consideração de cesárea de urgência, pelo risco de sofrimento fetal agudo se a situação não for prontamente corrigida ou resolvida."
+  },
+  {
+    "id": "q4040",
+    "temaId": "diabetes-gestacional",
+    "tema": "Diabetes Mellitus Gestacional (DMG)",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base nos critérios diagnósticos de diabetes gestacional (IADPSG).",
+    "enunciado": "Gestante de 26 semanas realiza teste oral de tolerância à glicose com 75g, apresentando glicemia de jejum de 88mg/dL, 1 hora de 185mg/dL e 2 horas de 140mg/dL. Qual a interpretação mais adequada?",
+    "alternativas": [
+      "Resultado normal, já que apenas um valor está alterado.",
+      "Diagnóstico de diabetes mellitus gestacional confirmado, já que basta um valor alterado (neste caso, o de 1 hora, acima de 180mg/dL) para confirmar o diagnóstico.",
+      "Necessário repetir o exame em 4 semanas antes de qualquer conclusão diagnóstica.",
+      "Diagnóstico de diabetes pré-gestacional, não gestacional."
+    ],
+    "correta": 1,
+    "comentario": "No diagnóstico de diabetes mellitus gestacional pelo TOTG 75g, basta UM valor alterado (jejum ≥92, 1h ≥180, 2h ≥153 mg/dL) para confirmar o diagnóstico — nesse caso, o valor de 1 hora (185mg/dL) já está acima do ponto de corte, confirmando o diagnóstico mesmo com os demais valores normais."
+  },
+  {
+    "id": "q4041",
+    "temaId": "diabetes-gestacional",
+    "tema": "Diabetes Mellitus Gestacional (DMG)",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base nos critérios diagnósticos de diabetes gestacional (IADPSG).",
+    "enunciado": "Gestante com diabetes mellitus gestacional não atinge as metas glicêmicas apesar de dieta e atividade física adequadas. Qual o tratamento farmacológico de escolha?",
+    "alternativas": [
+      "Metformina, sempre preferida à insulina em qualquer cenário.",
+      "Insulina, por não atravessar a barreira placentária.",
+      "Sulfonilureia de qualquer classe, como primeira escolha.",
+      "Nenhum tratamento farmacológico deve ser iniciado durante a gestação."
+    ],
+    "correta": 1,
+    "comentario": "Quando as metas glicêmicas não são atingidas com dieta e atividade física, a insulina é o tratamento farmacológico de escolha na gestação, por não atravessar a barreira placentária — a metformina é alternativa em casos selecionados, mas atravessa a placenta em quantidade mensurável, o que motiva cautela e preferência pela insulina em muitos protocolos."
+  },
+  {
+    "id": "q4042",
+    "temaId": "diabetes-gestacional",
+    "tema": "Diabetes Mellitus Gestacional (DMG)",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base nos critérios diagnósticos de diabetes gestacional (IADPSG).",
+    "enunciado": "Qual é a principal complicação fetal associada ao diabetes mellitus gestacional mal controlado, com implicação direta na decisão sobre via de parto?",
+    "alternativas": [
+      "Restrição de crescimento fetal grave.",
+      "Macrossomia fetal, com maior risco de distocia de ombro no parto vaginal.",
+      "Oligodrâmnio acentuado.",
+      "Malformações cardíacas estruturais graves, independentemente do controle glicêmico."
+    ],
+    "correta": 1,
+    "comentario": "A macrossomia fetal (peso fetal muito acima do percentil esperado) é a principal complicação associada ao diabetes gestacional mal controlado, resultante do hiperinsulinismo fetal reativo à hiperglicemia materna — essa complicação aumenta significativamente o risco de distocia de ombro no parto vaginal, devendo ser considerada no planejamento da via de parto."
   }
 ]
