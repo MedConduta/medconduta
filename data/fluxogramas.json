@@ -12842,5 +12842,81 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-afeccoes-anorretais-abordagem",
+    "temaId": "afeccoes-anorretais-benignas",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem das afecções anorretais benignas",
+    "revisado": true,
+    "fonte": "Diretrizes de coloproctologia — fissura, abscesso e fístula anorretal",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com dor anal, sangramento ou drenagem perianal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor perianal constante/progressiva com febre, tumefação e flutuação à palpação?",
+        "ramos": [
+          {
+            "label": "Sim — suspeita de abscesso",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Drenagem cirúrgica imediata — antibiótico isolado não substitui a drenagem; investigar sinais de disseminação profunda (fascite necrosante perineal/Fournier) se toxemia sistêmica"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Dor em queimação relacionada à evacuação, com laceração visível na linha média posterior?",
+                "ramos": [
+                  {
+                    "label": "Sim — fissura anal típica",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Tratamento conservador (fibras, banhos de assento, relaxante tópico do esfíncter interno)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Esfincterotomia lateral interna se crônica e refratária ao tratamento clínico"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Fissura em localização atípica",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Investigar causa secundária (doença de Crohn, tuberculose, neoplasia) antes de tratar como fissura idiopática"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Drenagem intermitente por orifício externo",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Suspeitar de fístula anal — mapear o trajeto (RM pélvica ou USG endoanal em casos complexos) antes do planejamento cirúrgico"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Fistulotomia (trajeto simples) ou técnica poupadora de esfíncter (fístula alta/complexa)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
