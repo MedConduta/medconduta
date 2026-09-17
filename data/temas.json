@@ -5717,7 +5717,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Pré-Natal de Baixo e Alto Risco",
     "resumo": "Calendário mínimo de consultas, exames de rotina, cálculo de idade gestacional e critérios de encaminhamento ao alto risco.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Ministério da Saúde — Manual Técnico de Gestação de Alto Risco e Caderno de Atenção Básica ao Pré-Natal; FEBRASGO",
     "mnemonicos": [
       {
@@ -5740,7 +5740,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O calendário mínimo de exames de rastreamento inclui tipagem sanguínea e Coombs indireto (se Rh negativo), hemograma, glicemia de jejum, sorologias (sífilis, HIV, hepatite B e C, toxoplasmose), urina tipo I e urocultura, repetidos em momentos específicos ao longo da gestação conforme protocolo — a sífilis, em particular, deve ser rastreada com teste rápido idealmente em toda consulta de pré-natal disponível, dada a gravidade da sífilis congênita e a facilidade de tratamento quando detectada precocemente. Ultrassonografia obstétrica é recomendada minimamente uma vez em cada trimestre em gestação de baixo risco."
+        "conteudo": "O calendário mínimo de exames de rastreamento inclui tipagem sanguínea e Coombs indireto (se Rh negativo), hemograma, glicemia de jejum, sorologias (sífilis, HIV, hepatite B e C, toxoplasmose), urina tipo I e urocultura, repetidos em momentos específicos ao longo da gestação conforme protocolo — a sífilis, em particular, deve ser rastreada com teste rápido idealmente em toda consulta de pré-natal disponível, dada a gravidade da sífilis congênita e a facilidade de tratamento quando detectada precocemente. Ultrassonografia obstétrica é recomendada minimamente uma vez em cada trimestre em gestação de baixo risco.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Exame/ação</th><th>Momento</th></tr></thead><tbody><tr><td>Tipagem sanguínea + Coombs indireto (se Rh negativo)</td><td>1ª consulta; Coombs repetido mensalmente a partir de 24 semanas se Rh negativo</td></tr><tr><td>Sorologias (sífilis, HIV, hepatite B/C, toxoplasmose)</td><td>1º e 3º trimestre (sífilis idealmente em toda consulta com teste rápido disponível)</td></tr><tr><td>Glicemia de jejum / TOTG 75g</td><td>1ª consulta (glicemia) e 24-28 semanas (TOTG)</td></tr><tr><td>Urina tipo I + urocultura</td><td>1º e 3º trimestre</td></tr><tr><td>Ultrassonografia obstétrica</td><td>Mínimo 1 vez por trimestre (baixo risco)</td></tr><tr><td>Ácido fólico</td><td>Idealmente antes da concepção, prevenção de defeito de tubo neural</td></tr><tr><td>Sulfato ferroso</td><td>A partir do 2º trimestre</td></tr><tr><td>Vacina dTpa</td><td>A cada gestação</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -5754,7 +5754,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O calendário mínimo de exames e consultas do pré-natal, e os critérios que classificam uma gestação como alto risco, são cobrança certíssima e extremamente recorrente em provas de residência e concursos de saúde pública (ENAMED, SES-PE). A obrigatoriedade e a frequência do rastreamento de sífilis na gestação também são frequentemente exigidas dado seu impacto em saúde pública."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o pré-natal é um dos temas mais decorados de toda a obstetrícia/medicina preventiva: o calendário mínimo de exames e sua periodicidade (sorologias no 1º e 3º trimestre, TOTG entre 24-28 semanas, USG por trimestre) e os critérios de classificação de risco gestacional são cobrança certíssima, especialmente em concursos de saúde pública. O rastreamento obrigatório e frequente de sífilis (teste rápido em toda consulta disponível), pela facilidade de tratamento e gravidade da sífilis congênita, é ponto de altíssima recorrência."
   },
   {
     "id": "infeccoes-ciclo-gravidico-puerperal",

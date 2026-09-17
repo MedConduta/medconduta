@@ -13890,5 +13890,72 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-pre-natal-classificacao-risco",
+    "temaId": "pre-natal-baixo-alto-risco",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Classificação de risco gestacional e conduta no pré-natal",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Manual Técnico de Pré-Natal e Puerpério",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Gestante inicia pré-natal (1ª consulta)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Classificar risco: comorbidades prévias, história obstétrica desfavorável, idade materna extrema"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de fator de risco gestacional (hipertensão, diabetes, cardiopatia, perdas gestacionais recorrentes, pré-eclâmpsia prévia)?",
+        "ramos": [
+          {
+            "label": "Sim — alto risco",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Encaminhar a acompanhamento especializado (pré-natal de alto risco), mantendo vínculo com atenção primária"
+              }
+            ]
+          },
+          {
+            "label": "Não — baixo risco",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Seguir calendário mínimo de consultas e exames de rastreamento na atenção primária"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Ao longo da gestação: ausência de crescimento da altura uterina entre consultas ou nova intercorrência (hipertensão gestacional, diabetes gestacional)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar (USG para restrição de crescimento/oligoâmnio) e reclassificar risco — encaminhar se necessário"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter acompanhamento de rotina conforme classificação de risco vigente"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
