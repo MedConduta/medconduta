@@ -12606,5 +12606,56 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-abdome-agudo-perfurativo-abordagem",
+    "temaId": "abdome-agudo-perfurativo",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do abdome agudo perfurativo",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia de emergência — abdome agudo perfurativo",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor abdominal súbita e intensa, evoluindo para abdome em tábua"
+      },
+      {
+        "tipo": "action",
+        "texto": "ABCDE inicial, acesso venoso, analgesia, sonda nasogástrica, antibioticoterapia de amplo espectro"
+      },
+      {
+        "tipo": "action",
+        "texto": "Radiografia de tórax em ortostase (ou abdome em decúbito lateral esquerdo) buscando pneumoperitônio"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Pneumoperitônio confirmado ou forte suspeita clínica de perfuração de víscera oca?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Laparotomia (ou laparoscopia) de urgência — rafia da perfuração com patch de omento (técnica de Graham) na úlcera péptica perfurada"
+              }
+            ]
+          },
+          {
+            "label": "Não — radiografia inconclusiva",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tomografia de abdome com contraste para confirmar pneumoperitônio em pequena quantidade e localizar o sítio de perfuração"
+              },
+              {
+                "tipo": "end",
+                "texto": "Cirurgia se confirmada perfuração; considerar tratamento não operatório apenas em caso muito selecionado de perfuração contida e paciente estável"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

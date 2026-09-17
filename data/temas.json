@@ -4918,7 +4918,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Abdome Agudo Perfurativo",
     "resumo": "Úlcera péptica perfurada como principal causa, achado de pneumoperitônio e conduta cirúrgica de urgência.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Colégio Brasileiro de Cirurgiões; WSES Guidelines on Perforated Peptic Ulcer",
     "mnemonicos": [
       {
@@ -4941,7 +4941,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Radiografia de tórax em ortostase (ou abdome em decúbito lateral esquerdo, se o paciente não puder ficar em pé) buscando pneumoperitônio (ar livre subdiafragmático) é o exame inicial clássico, rápido e amplamente disponível. Tomografia de abdome é mais sensível para confirmar pneumoperitônio em quantidades menores e para localizar o provável sítio de perfuração quando a radiografia é inconclusiva."
+        "conteudo": "Radiografia de tórax em ortostase (ou abdome em decúbito lateral esquerdo, se o paciente não puder ficar em pé) buscando pneumoperitônio (ar livre subdiafragmático) é o exame inicial clássico, rápido e amplamente disponível. Tomografia de abdome é mais sensível para confirmar pneumoperitônio em quantidades menores e para localizar o provável sítio de perfuração quando a radiografia é inconclusiva.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Achado</th></tr></thead><tbody><tr><td>Causa mais comum</td><td>Úlcera péptica perfurada (gástrica ou duodenal)</td></tr><tr><td>Exame físico clássico</td><td>Abdome em tábua (rigidez muscular generalizada e involuntária) — sinal mais valorizado de peritonite difusa</td></tr><tr><td>Sinal semiológico específico</td><td>Ausência de macicez hepática à percussão (pneumoperitônio interposto entre fígado e parede abdominal)</td></tr><tr><td>Exame de imagem inicial</td><td>Radiografia de tórax em ortostase (ou abdome em decúbito lateral esquerdo) buscando pneumoperitônio subdiafragmático</td></tr><tr><td>Exame confirmatório se RX inconclusivo</td><td>Tomografia de abdome (mais sensível para pneumoperitônio em pequena quantidade e localização do sítio)</td></tr><tr><td>Tratamento padrão</td><td>Laparotomia/laparoscopia de urgência com rafia + patch de omento (técnica de Graham)</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -4955,7 +4955,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O pneumoperitônio na radiografia de tórax em ortostase como achado clássico de perfuração de víscera oca é cobrança certa e recorrente. O abdome em tábua como sinal semiológico central de peritonite difusa, e a técnica de Graham (rafia + patch de omento) como tratamento padrão da úlcera perfurada, também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o abdome agudo perfurativo é cobrado principalmente por meio de vinhetas de dor epigástrica súbita e intensa evoluindo para abdome em tábua, exigindo o reconhecimento do pneumoperitônio na radiografia de tórax em ortostase como exame inicial clássico (não a tomografia, que é reservada para casos inconclusivos) e a indicação de laparotomia de urgência com técnica de Graham (rafia + patch de omento) como tratamento padrão da úlcera perfurada, rejeitando alternativas de tratamento conservador isolado fora do contexto muito seletivo de perfuração contida em paciente estável."
   },
   {
     "id": "isquemia-mesenterica-abdome-vascular",
