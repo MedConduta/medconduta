@@ -70868,5 +70868,77 @@
     "ano": null,
     "fonte": "Banco de questões — Estratégia MED (caderno Intoxicações Exógenas, medicina livre)",
     "revisado": true
+  },
+  {
+    "id": "q3897",
+    "temaId": "politrauma-abcde",
+    "tema": "Trauma — Avaliação Inicial (ABCDE)",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Vítima de acidente automobilístico chega à sala de emergência taquipneica, com desvio de traqueia para a esquerda, turgência jugular e ausência de murmúrio vesicular à direita, além de PA 80x50 mmHg. Qual a conduta imediata?",
+    "alternativas": [
+      "Solicitar radiografia de tórax urgente para confirmar o diagnóstico antes de qualquer intervenção.",
+      "Toracocentese descompressiva imediata no 2º espaço intercostal na linha hemiclavicular direita (ou 4º/5º espaço na linha axilar anterior), sem aguardar exame de imagem.",
+      "Iniciar reposição volêmica agressiva e reavaliar em 15 minutos antes de intervir no tórax.",
+      "Realizar drenagem torácica em selo d'água como primeira medida, sem descompressão prévia."
+    ],
+    "correta": 1,
+    "comentario": "O quadro (desvio de traqueia, turgência jugular, ausência de murmúrio vesicular unilateral e choque obstrutivo) é diagnóstico clínico de pneumotórax hipertensivo, uma das causas de morte evitável mais rápida no trauma. A descompressão torácica com agulha é imediata, feita ainda durante a etapa B do ABCDE, sem aguardar confirmação radiológica — o atraso para exame de imagem é erro grave e potencialmente fatal."
+  },
+  {
+    "id": "q3898",
+    "temaId": "politrauma-abcde",
+    "tema": "Trauma — Avaliação Inicial (ABCDE)",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Durante o atendimento inicial a um politraumatizado, a equipe identifica que o paciente apresenta fratura exposta de fêmur com sangramento ativo, ao mesmo tempo em que se nota leve rebaixamento do nível de consciência (Glasgow 14). Qual deve ser a conduta prioritária?",
+    "alternativas": [
+      "Avaliar imediatamente a escala de coma de Glasgow em detalhe (etapa D), por ser a alteração mais chamativa.",
+      "Conter o sangramento da fratura exposta com compressão direta, ainda na etapa C, antes de avançar para a avaliação neurológica.",
+      "Encaminhar o paciente imediatamente para tomografia de crânio.",
+      "Aguardar a chegada do ortopedista antes de qualquer manejo da fratura."
+    ],
+    "correta": 1,
+    "comentario": "A sequência ABCDE deve ser respeitada mesmo diante de um achado neurológico chamativo: o controle de hemorragia externa é parte da etapa C (circulação) e deve ser resolvido antes de avançar para D (avaliação neurológica). O choque hemorrágico não controlado mata mais rapidamente do que uma alteração leve do nível de consciência, reforçando o princípio de tratar primeiro o que mata mais rápido."
+  },
+  {
+    "id": "q3899",
+    "temaId": "politrauma-abcde",
+    "tema": "Trauma — Avaliação Inicial (ABCDE)",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Paciente vítima de trauma contuso de abdome chega hemodinamicamente instável, com FAST positivo para líquido livre em cavidade peritoneal. Qual a conduta mais adequada?",
+    "alternativas": [
+      "Solicitar tomografia computadorizada de abdome com contraste para melhor caracterização antes de decidir a conduta.",
+      "Manter observação clínica seriada e reavaliar o FAST em 6 horas.",
+      "Indicar laparotomia exploradora de urgência, sem necessidade de aguardar tomografia.",
+      "Iniciar antibioticoterapia profilática e reavaliar a necessidade cirúrgica em 24 horas."
+    ],
+    "correta": 2,
+    "comentario": "Em paciente hemodinamicamente instável com FAST positivo, a indicação de laparotomia exploradora de urgência é direta, sem necessidade de tomografia — o atraso na decisão cirúrgica para obter exames adicionais em paciente instável com hemorragia intracavitária confirmada é uma das principais causas de mortalidade evitável em trauma. A tomografia é reservada para o paciente estável ou que responde transitoriamente à reposição volêmica."
+  },
+  {
+    "id": "q3900",
+    "temaId": "politrauma-abcde",
+    "tema": "Trauma — Avaliação Inicial (ABCDE)",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição.",
+    "enunciado": "Sobre a sequência de atendimento inicial ao politraumatizado (ABCDE), assinale a alternativa correta.",
+    "alternativas": [
+      "A avaliação neurológica (D) deve sempre ser realizada antes do controle de via aérea, quando há suspeita de traumatismo cranioencefálico grave.",
+      "Cada etapa deve ser resolvida antes de se avançar para a próxima, com reavaliação constante de todo o ABCDE diante de qualquer sinal de deterioração clínica.",
+      "A etapa E (exposição) pode ser omitida em pacientes estáveis, para reduzir o tempo de exposição à hipotermia.",
+      "O exame físico direcionado de cada etapa deve ser postergado até a estabilização hemodinâmica completa."
+    ],
+    "correta": 1,
+    "comentario": "O princípio fundamental do ABCDE é a resolução sequencial e completa de cada etapa antes de avançar para a próxima, associada à reavaliação constante de todo o protocolo sempre que houver qualquer deterioração clínica — essa hierarquia (tratar primeiro o que mata mais rápido) nunca deve ser alterada, mesmo diante de lesões neurológicas aparentemente mais graves, e a etapa E (exposição completa com controle ativo de hipotermia) é etapa obrigatória, essencial para não perder lesões ocultas e evitar a tríade letal do trauma."
   }
 ]

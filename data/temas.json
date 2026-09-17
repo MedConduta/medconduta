@@ -522,7 +522,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Trauma — Avaliação Inicial (ABCDE)",
     "resumo": "Sequência sistematizada de avaliação e estabilização inicial do politraumatizado.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "American College of Surgeons — Advanced Trauma Life Support (ATLS), 10ª edição; Sociedade Brasileira de Atendimento Integrado ao Traumatizado",
     "mnemonicos": [
       {
@@ -541,7 +541,7 @@
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Cada etapa do ABCDE tem achados específicos dirigidos: via aérea pérvia com controle de coluna cervical (A); frequência respiratória, ausculta e percussão torácica bilateral (B); pulsos, perfusão periférica, e identificação de fontes de sangramento externo (C); Escala de Coma de Glasgow e exame pupilar (D); exposição completa do paciente com prevenção ativa de hipotermia (E) — a sequência deve ser sempre respeitada, sem pular etapas mesmo diante de lesões aparentemente mais graves em fase posterior."
+        "conteudo": "Cada etapa do ABCDE tem achados específicos dirigidos: via aérea pérvia com controle de coluna cervical (A); frequência respiratória, ausculta e percussão torácica bilateral (B); pulsos, perfusão periférica, e identificação de fontes de sangramento externo (C); Escala de Coma de Glasgow e exame pupilar (D); exposição completa do paciente com prevenção ativa de hipotermia (E) — a sequência deve ser sempre respeitada, sem pular etapas mesmo diante de lesões aparentemente mais graves em fase posterior.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Etapa</th><th>Prioridade / risco de morte</th><th>Ação-chave imediata</th></tr></thead><tbody><tr><td>A — via aérea + coluna cervical</td><td>Mata em minutos — obstrução de via aérea é a prioridade absoluta</td><td>Desobstruir via aérea, proteger coluna cervical, considerar via aérea definitiva se Glasgow ≤8, apneia ou obstrução iminente</td></tr><tr><td>B — respiração/ventilação</td><td>Mata em minutos — pneumotórax hipertensivo, tórax instável</td><td>Inspeção/ausculta/percussão bilateral; descompressão torácica imediata se pneumotórax hipertensivo (não aguardar radiografia)</td></tr><tr><td>C — circulação + controle de hemorragia</td><td>Mata em minutos a horas — choque hemorrágico é a principal causa evitável de morte no trauma</td><td>Compressão direta de hemorragia externa, dois acessos venosos calibrosos, reposição com hemocomponentes em proporção balanceada no choque grave</td></tr><tr><td>D — avaliação neurológica</td><td>Mata em horas — hipertensão intracraniana, herniação</td><td>Escala de Coma de Glasgow, exame pupilar, glicemia capilar</td></tr><tr><td>E — exposição + controle de hipotermia</td><td>Agrava coagulopatia e choque (tríade letal: hipotermia, acidose, coagulopatia)</td><td>Despir completamente o paciente, procurar lesões ocultas, cobrir e aquecer ativamente logo após o exame</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Diagnóstico",
@@ -559,7 +559,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A sequência rígida do ABCDE (nunca avançar para a próxima letra sem resolver a anterior) é cobrança certíssima e o conceito mais fundamental de toda a abordagem ao trauma em provas de residência. O papel do FAST na decisão cirúrgica imediata em paciente instável, dispensando tomografia nesse cenário específico, também é frequentemente exigido."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o ABCDE é cobrado sobretudo através de vinhetas de trauma grave em que o candidato precisa identificar a PRÓXIMA conduta correta na sequência — um erro clássico induzido pelas bancas é oferecer uma alternativa correta, porém fora de ordem (ex.: tratar uma lesão de D antes de resolver B), que deve ser rejeitada mesmo sendo clinicamente relevante. Também é muito cobrado o reconhecimento de quando romper o protocolo padrão para uma ação imediata que não pode esperar (descompressão de pneumotórax hipertensivo durante o próprio B, por exemplo) e o papel do FAST positivo em paciente instável como indicação direta de laparotomia, sem aguardar tomografia."
   },
   {
     "id": "sua",
