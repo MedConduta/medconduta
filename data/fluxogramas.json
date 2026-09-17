@@ -13823,5 +13823,72 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-abdome-agudo-ginecologico-abordagem",
+    "temaId": "abdome-agudo-ginecologico",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do abdome agudo ginecológico",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia de emergência — torção anexial e cisto ovariano roto",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher em idade reprodutiva com dor pélvica súbita e intensa"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Beta-hCG sempre — excluir gravidez ectópica antes de prosseguir"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia transvaginal com Doppler"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Fluxo ovariano reduzido/ausente ao Doppler, com forte suspeita clínica de torção?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Cirurgia de urgência (laparoscopia) — destorção com preservação ovariana sempre que possível, mesmo com aspecto inicialmente comprometido"
+              }
+            ]
+          },
+          {
+            "label": "Não — líquido livre sugestivo de cisto roto",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Instabilidade hemodinâmica ou hemoperitônio volumoso?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Intervenção cirúrgica para controle do sangramento"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — estável",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manejo conservador com analgesia e observação"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
