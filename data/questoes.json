@@ -71264,5 +71264,113 @@
     ],
     "correta": 2,
     "comentario": "Sangramento ativo identificado por sonda nasogástrica ou ao toque retal, associado a sinais de peritonite difusa (distensão progressiva e defesa muscular difusa), constitui indicação de laparotomia exploradora, mesmo em paciente hemodinamicamente estável — a estabilidade hemodinâmica não afasta a necessidade de cirurgia quando há evidência clínica de lesão de víscera oca com contaminação peritoneal em curso. Aguardar exames de imagem adicionais nesse contexto atrasaria um tratamento cirúrgico já indicado clinicamente."
+  },
+  {
+    "id": "q3919",
+    "temaId": "queimaduras",
+    "tema": "Queimaduras: Classificação e Manejo Inicial",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição, e em diretrizes da American Burn Association.",
+    "enunciado": "Paciente do sexo masculino, 70 kg, é admitido no pronto-socorro 2 horas após sofrer queimaduras em incêndio residencial. Ao exame, apresenta queimaduras de 2º grau profunda em 30% da superfície corporal. Segundo a fórmula de Parkland, qual o volume de Ringer Lactato a ser infundido nas primeiras 8 horas contadas a partir do momento da queimadura, e em quanto tempo restante essa infusão deve ser concluída a partir da chegada ao hospital?",
+    "alternativas": [
+      "4200 mL, a serem infundidos em 8 horas a partir da chegada ao hospital.",
+      "8400 mL no total nas 24h, sendo 4200 mL nas primeiras 8h contadas a partir da queimadura — ou seja, restam apenas 6 horas para infundir esse volume a partir da chegada.",
+      "8400 mL no total nas 24h, sendo 4200 mL nas primeiras 8h contadas a partir da chegada ao hospital.",
+      "2100 mL nas primeiras 8h, pois apenas queimaduras de 3º grau entram no cálculo de Parkland."
+    ],
+    "correta": 1,
+    "comentario": "Pela fórmula de Parkland: 4 mL × 70 kg × 30% = 8400 mL nas primeiras 24 horas, sendo metade (4200 mL) nas primeiras 8 horas e a outra metade (4200 mL) nas 16 horas seguintes. O ponto crucial é que essas 8 horas iniciais são contadas a partir do momento da queimadura, não da chegada ao hospital — como o paciente chegou 2 horas após o acidente, restam apenas 6 horas para infundir os 4200 mL iniciais, exigindo ajuste na velocidade de infusão em relação ao cálculo simples de 8 horas completas."
+  },
+  {
+    "id": "q3920",
+    "temaId": "queimaduras",
+    "tema": "Queimaduras: Classificação e Manejo Inicial",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição, e em diretrizes da American Burn Association.",
+    "enunciado": "Um paciente sofre queimadura no dorso da mão. Ao exame, a lesão apresenta-se esbranquiçada, com aspecto de couro, seca, e o paciente refere ausência completa de dor à palpação da área lesada, embora relate dor intensa nas bordas adjacentes, onde a pele está avermelhada e com flictenas. Qual a classificação mais provável da área central indolor da lesão?",
+    "alternativas": [
+      "Queimadura de 1º grau, pois lesões superficiais tendem a ser menos dolorosas.",
+      "Queimadura de 2º grau superficial, já que a ausência de dor indica boa perfusão local.",
+      "Queimadura de 3º grau, na qual a destruição das terminações nervosas na derme explica a ausência de dor apesar da gravidade da lesão.",
+      "Queimadura de 2º grau profunda, que é sempre completamente indolor."
+    ],
+    "correta": 2,
+    "comentario": "O achado descrito — lesão esbranquiçada, com aspecto de couro, seca e indolor — é clássico de queimadura de 3º grau (espessura total). Um erro comum é assumir que menos dor significa lesão mais leve; na verdade, ocorre o oposto: a destruição completa das terminações nervosas na derme torna a área de 3º grau menos dolorosa do que as áreas adjacentes de 2º grau, que preservam terminações nervosas íntegras e por isso são mais dolorosas. Esse padrão contraintuitivo é frequentemente cobrado em provas."
+  },
+  {
+    "id": "q3921",
+    "temaId": "queimaduras",
+    "tema": "Queimaduras: Classificação e Manejo Inicial",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição, e em diretrizes da American Burn Association.",
+    "enunciado": "Vítima de incêndio em ambiente fechado chega à emergência consciente, falando com rouquidão leve, sem sinais de desconforto respiratório no momento. Ao exame, observam-se queimadura facial, chamuscamento de vibrissas nasais e fuligem em orofaringe. A saturação de oxigênio está em 97% em ar ambiente. Qual a conduta mais apropriada em relação à via aérea?",
+    "alternativas": [
+      "Aguardar o surgimento de sinais francos de insuficiência respiratória antes de considerar intubação, já que a saturação está normal.",
+      "Solicitar radiografia de tórax e observar por 24 horas antes de decidir sobre via aérea.",
+      "Proceder à intubação orotraqueal precoce e profilática, mesmo na ausência de insuficiência respiratória atual, pelo risco de evolução para edema de via aérea e obstrução completa.",
+      "Iniciar apenas oxigenoterapia suplementar e reavaliar em 6 horas, pois rouquidão isolada não indica risco significativo."
+    ],
+    "correta": 2,
+    "comentario": "Os achados de queimadura facial, chamuscamento de vibrissas nasais, fuligem em orofaringe e rouquidão são sinais clássicos de lesão por inalação, mesmo com saturação de oxigênio normal e sem insuficiência respiratória franca no momento da avaliação. O edema de via aérea nesses casos é progressivo e pode evoluir para obstrução completa horas depois, tornando a intubação tecnicamente muito mais difícil ou impossível. Por isso, a conduta correta é a intubação precoce e profilática, antecipando a deterioração em vez de aguardá-la."
+  },
+  {
+    "id": "q3922",
+    "temaId": "queimaduras",
+    "tema": "Queimaduras: Classificação e Manejo Inicial",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição, e em diretrizes da American Burn Association.",
+    "enunciado": "Paciente adulto sofre queimadura de 2º grau superficial acometendo 8% da superfície corporal, restrita ao antebraço direito, sem outras lesões associadas. Do ponto de vista dos critérios de encaminhamento a centro de referência em queimados, qual a conduta mais adequada?",
+    "alternativas": [
+      "Encaminhamento obrigatório a centro de queimados, pois toda queimadura de 2º grau exige atendimento especializado.",
+      "Manejo local pode ser considerado, pois a extensão está abaixo de 10% de SCQ em queimadura de 2º grau e não há acometimento de áreas especiais (face, mãos, pés, genitália, períneo, grandes articulações) nem lesão por inalação.",
+      "Encaminhamento obrigatório, pois qualquer queimadura em membro superior exige avaliação especializada por risco de síndrome compartimental.",
+      "Indicação de escarotomia imediata independentemente da circunferência da lesão."
+    ],
+    "correta": 1,
+    "comentario": "Os critérios de encaminhamento a centro de referência em queimados incluem queimaduras de 2º grau acima de 10% da superfície corporal, queimaduras de 3º grau em qualquer extensão, acometimento de face, mãos, pés, genitália, períneo ou grandes articulações, queimaduras elétricas ou químicas, lesão por inalação associada, e queimadura circunferencial de membro ou tórax. No caso descrito, a lesão tem 8% de SCQ (abaixo do limiar de 10%), não é circunferencial e não acomete área especial, permitindo manejo local sem necessidade de encaminhamento obrigatório."
+  },
+  {
+    "id": "q3923",
+    "temaId": "queimaduras",
+    "tema": "Queimaduras: Classificação e Manejo Inicial",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição, e em diretrizes da American Burn Association.",
+    "enunciado": "Paciente apresenta queimadura circunferencial de 3º grau em todo o tórax, evoluindo nas horas seguintes à admissão com piora progressiva da mecânica ventilatória, apesar de via aérea pérvia e reposição volêmica adequada em curso. Qual a explicação fisiopatológica mais provável e a conduta indicada?",
+    "alternativas": [
+      "Broncoespasmo reativo; indicado broncodilatador inalatório.",
+      "Formação de escara inelástica circunferencial restringindo a expansão torácica; indicada escarotomia.",
+      "Edema pulmonar por sobrecarga volêmica; indicada redução imediata da infusão de Ringer Lactato.",
+      "Pneumotórax hipertensivo; indicada toracocentese de alívio."
+    ],
+    "correta": 1,
+    "comentario": "A queimadura de 3º grau circunferencial forma uma escara rígida e inelástica que, ao redor do tórax, restringe mecanicamente a expansão da caixa torácica e compromete a ventilação, mesmo com via aérea pérvia — um mecanismo mecânico, não broncoespástico ou relacionado a sobrecarga hídrica. A conduta correta é a escarotomia, uma incisão que libera a constrição da escara e permite a expansão torácica adequada, prevenindo insuficiência ventilatória progressiva."
+  },
+  {
+    "id": "q3924",
+    "temaId": "queimaduras",
+    "tema": "Queimaduras: Classificação e Manejo Inicial",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "revisado": true,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base no ATLS (Advanced Trauma Life Support), 10ª edição, e em diretrizes da American Burn Association.",
+    "enunciado": "Durante a reposição volêmica pela fórmula de Parkland em um grande queimado, a equipe assistente deseja monitorizar a adequação da infusão além do volume inicialmente calculado. Qual parâmetro clínico é utilizado como meta para ajuste da velocidade de infusão em adultos?",
+    "alternativas": [
+      "Pressão arterial média acima de 100 mmHg de forma isolada.",
+      "Débito urinário-alvo de aproximadamente 0,5 mL/kg/h.",
+      "Frequência cardíaca abaixo de 100 bpm como único parâmetro.",
+      "Saturação venosa central acima de 90%, dispensando outros parâmetros."
+    ],
+    "correta": 1,
+    "comentario": "O volume calculado pela fórmula de Parkland é apenas uma estimativa inicial; a infusão real deve ser titulada de acordo com a resposta clínica do paciente, sendo o débito urinário o parâmetro mais utilizado à beira-leito, com meta de aproximadamente 0,5 mL/kg/h em adultos (valores diferentes se aplicam a crianças). Débito urinário abaixo da meta sugere reposição insuficiente, enquanto débito muito acima do esperado pode indicar excesso de infusão, ambos exigindo ajuste da velocidade de infusão."
   }
 ]

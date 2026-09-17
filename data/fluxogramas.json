@@ -12507,5 +12507,104 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-queimaduras-manejo-inicial",
+    "temaId": "queimaduras",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Manejo inicial da queimadura grave",
+    "revisado": true,
+    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons) e diretrizes da American Burn Association",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente vítima de queimadura extensa chega à emergência"
+      },
+      {
+        "tipo": "action",
+        "texto": "ABCDE inicial do trauma, com atenção especial a sinais de lesão por inalação (queimadura facial, chamuscamento de vibrissas, fuligem em orofaringe, rouquidão)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de lesão por inalação presentes?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Via aérea definitiva precoce (intubação profilática) antes que o edema progressivo torne a via aérea impossível de ser obtida"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter monitorização contínua da via aérea e reavaliação seriada"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Estimar a superfície corporal queimada (regra dos nove ou palma da mão) e classificar a profundidade (1º, 2º superficial, 2º profunda ou 3º grau)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Calcular reposição volêmica pela fórmula de Parkland: 4 mL x peso (kg) x %SCQ de Ringer Lactato, considerando apenas 2º e 3º graus — metade nas primeiras 8h contadas a partir da hora da queimadura, metade nas 16h seguintes"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Preenche critérios de encaminhamento a centro de referência em queimados (2º grau >10% SCQ, 3º grau em qualquer extensão, face/mãos/pés/genitália/períneo/grandes articulações, queimadura elétrica ou química, lesão por inalação)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Estabilizar e providenciar transferência para centro especializado em queimados"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manejo local da ferida (desbridamento, curativos) e monitorização ambulatorial ou internação conforme extensão"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Queimadura circunferencial de tórax ou membro com sinais de comprometimento vascular/ventilatório?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Indicar escarotomia para prevenir síndrome compartimental e restrição ventilatória"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguir reavaliação seriada e cuidados de suporte"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
