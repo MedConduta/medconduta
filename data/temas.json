@@ -615,7 +615,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Pré-eclâmpsia e Eclâmpsia",
     "resumo": "Critérios diagnósticos, sinais de gravidade e manejo da pré-eclâmpsia/eclâmpsia.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO — Diretriz de Pré-eclâmpsia; Ministério da Saúde — Gestação de Alto Risco; ACOG Practice Bulletin on Hypertension in Pregnancy",
     "mnemonicos": [
       {
@@ -630,7 +630,7 @@
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Hipertensão de início após 20 semanas de gestação associada a proteinúria ou disfunção de órgão-alvo (mesmo sem proteinúria) caracteriza a pré-eclâmpsia. Sintomas de gravidade incluem cefaleia intensa persistente, alterações visuais (escotomas, visão turva), dor epigástrica/em hipocôndrio direito (por distensão da cápsula hepática) e dispneia. A eclâmpsia é definida pelo surgimento de convulsões tônico-clônicas em gestante com pré-eclâmpsia, sem outra causa identificável."
+        "conteudo": "Hipertensão de início após 20 semanas de gestação associada a proteinúria ou disfunção de órgão-alvo (mesmo sem proteinúria) caracteriza a pré-eclâmpsia. Sintomas de gravidade incluem cefaleia intensa persistente, alterações visuais (escotomas, visão turva), dor epigástrica/em hipocôndrio direito (por distensão da cápsula hepática) e dispneia. A eclâmpsia é definida pelo surgimento de convulsões tônico-clônicas em gestante com pré-eclâmpsia, sem outra causa identificável.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Critério de gravidade</th><th>Achado</th></tr></thead><tbody><tr><td>Pressão arterial</td><td>≥160/110 mmHg</td></tr><tr><td>Neurológico</td><td>Cefaleia intensa persistente, alterações visuais, hiperreflexia/clônus</td></tr><tr><td>Hepático</td><td>Dor epigástrica/hipocôndrio direito, transaminases elevadas</td></tr><tr><td>Hematológico</td><td>Plaquetopenia</td></tr><tr><td>Renal</td><td>Insuficiência renal</td></tr><tr><td>Pulmonar</td><td>Edema pulmonar, dispneia</td></tr><tr><td>Síndrome HELLP</td><td>Hemólise + enzimas hepáticas elevadas + plaquetopenia — forma grave específica</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Exame físico",
@@ -652,7 +652,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O sulfato de magnésio como droga de escolha para prevenção/tratamento de eclâmpsia (não fenitoína ou benzodiazepínicos como primeira linha) é cobrança certíssima e um dos temas mais importantes de toda a obstetrícia em provas de residência. A síndrome HELLP como forma grave de pré-eclâmpsia, e o parto como único tratamento definitivo, também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a pré-eclâmpsia é cobrada quase sempre pelo sulfato de magnésio como droga de escolha para prevenção/tratamento de eclâmpsia (não fenitoína, não benzodiazepínico como primeira linha) — cobrança certíssima. O reconhecimento dos critérios de gravidade (PA≥160/110, sintomas neurológicos/visuais, dor epigástrica, síndrome HELLP) como indicação de sulfato de magnésio profilático mesmo ANTES da primeira convulsão, e o parto como único tratamento definitivo (indicado independentemente da idade gestacional em quadro grave), também são cobranças recorrentes."
   },
   {
     "id": "ictericia-neonatal",
