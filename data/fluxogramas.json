@@ -11882,5 +11882,79 @@
         "texto": "Hipertensão arterial de início abrupto com piora aguda da função renal em paciente com esclerose sistêmica é crise renal esclerodérmica — IECA deve ser iniciado imediatamente, mesmo diante de piora renal aguda"
       }
     ]
+  },
+  {
+    "id": "flow-avaliacao-geriatrica-delirium",
+    "temaId": "avaliacao-geriatrica-ampla",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Delirium agudo no idoso — investigação de causa reversível",
+    "revisado": true,
+    "fonte": "Diretrizes de avaliação geriátrica ampla — abordagem do delirium",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Idoso com confusão mental de instalação súbita e curso flutuante (delirium)"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "NUNCA atribuir o quadro apenas à idade avançada ou à demência de base, mesmo quando já presente — delirium sempre exige investigação ativa de causa reversível"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Investigação inicial direcionada às causas mais comuns:",
+        "ramos": [
+          {
+            "label": "Infecção (ITU, pneumonia, etc.)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Rastrear e tratar foco infeccioso — apresentação atípica (delirium sem febre exuberante) é comum em idosos"
+              }
+            ]
+          },
+          {
+            "label": "Distúrbio metabólico (hipoglicemia, distúrbio hidroeletrolítico, hipóxia)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Corrigir o distúrbio identificado"
+              }
+            ]
+          },
+          {
+            "label": "Retenção urinária ou fecal (impactação)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Aliviar a retenção — causa frequentemente negligenciada de delirium em idosos hospitalizados"
+              }
+            ]
+          },
+          {
+            "label": "Dor não controlada",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Otimizar analgesia — dor mal controlada é gatilho comum e subdiagnosticado de delirium"
+              }
+            ]
+          },
+          {
+            "label": "Efeito medicamentoso (polifarmácia, medicamento potencialmente inapropriado)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Revisar todos os medicamentos em uso conforme Critérios de Beers; considerar desprescrição"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Após identificação e tratamento da causa reversível: reavaliação estruturada dos demais domínios da avaliação geriátrica ampla (funcional, cognitivo basal, risco de quedas, suporte social) antes da alta"
+      }
+    ]
   }
 ]
