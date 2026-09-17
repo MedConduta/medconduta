@@ -12918,5 +12918,64 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-cancer-colorretal-rastreamento",
+    "temaId": "cancer-colorretal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Rastreamento e investigação inicial do câncer colorretal",
+    "revisado": true,
+    "fonte": "Diretrizes de rastreamento de câncer colorretal — sociedades de gastroenterologia e coloproctologia",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente assintomático de risco médio ou paciente sintomático com sinais de alerta"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente sintomático (sangramento, mudança de hábito intestinal, anemia ferropriva inexplicada, perda de peso)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Colonoscopia com biópsia obrigatória, independentemente da idade — investigação diagnóstica, não apenas rastreamento"
+              }
+            ]
+          },
+          {
+            "label": "Não — assintomático",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Paciente de alto risco (história familiar, síndrome hereditária, DII de longa data)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Rastreamento diferenciado e mais precoce, conforme o risco específico"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — risco médio",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Iniciar rastreamento a partir dos 45-50 anos: pesquisa de sangue oculto fecal anual OU colonoscopia a cada 10 anos"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
