@@ -13370,5 +13370,72 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-amenorreias-secundaria-abordagem",
+    "temaId": "amenorreias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação da amenorreia secundária",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia endócrina — amenorreia secundária",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher previamente menstruada com ausência de menstruação por 3 ciclos ou 6 meses"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Beta-hCG sempre em primeiro lugar — excluir gestação antes de qualquer outra investigação"
+      },
+      {
+        "tipo": "action",
+        "texto": "Se beta-hCG negativo: dosar prolactina, TSH e FSH/LH"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "FSH elevado?",
+        "ramos": [
+          {
+            "label": "Sim — hipergonadotrófica",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar causa ovariana: insuficiência ovariana prematura (considerar cariótipo se jovem)"
+              }
+            ]
+          },
+          {
+            "label": "Não — FSH baixo/normal (hipogonadotrófica)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Prolactina elevada?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar hiperprolactinemia/prolactinoma — RM de sela túrcica se cefaleia/alteração visual associada"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar TSH (disfunção tireoidiana) ou considerar amenorreia hipotalâmica funcional (peso, exercício, estresse)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

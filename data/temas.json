@@ -5390,7 +5390,7 @@
     "categoria": "Ginecologia",
     "titulo": "Amenorreias: Primária e Secundária",
     "resumo": "Investigação sistemática por compartimento etiológico, sempre excluindo gravidez em primeiro lugar.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO — Manual de Ginecologia Endócrina; ASRM Practice Committee Guidelines",
     "mnemonicos": [
       {
@@ -5413,7 +5413,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Beta-hCG é sempre o primeiro exame na amenorreia secundária, excluindo gestação antes de qualquer investigação adicional. A investigação hormonal subsequente (prolactina, TSH, FSH/LH, testosterona) segue algoritmo estruturado: FSH elevado sugere causa ovariana (insuficiência ovariana prematura), FSH baixo/normal sugere causa hipotalâmica-hipofisária. Cariótipo é indicado na investigação de amenorreia primária com suspeita de disgenesia gonadal."
+        "conteudo": "Beta-hCG é sempre o primeiro exame na amenorreia secundária, excluindo gestação antes de qualquer investigação adicional. A investigação hormonal subsequente (prolactina, TSH, FSH/LH, testosterona) segue algoritmo estruturado: FSH elevado sugere causa ovariana (insuficiência ovariana prematura), FSH baixo/normal sugere causa hipotalâmica-hipofisária. Cariótipo é indicado na investigação de amenorreia primária com suspeita de disgenesia gonadal.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Padrão</th><th>FSH</th><th>Significado</th><th>Exemplo</th></tr></thead><tbody><tr><td>Hipergonadotrófica</td><td>Elevado</td><td>Causa ovariana (ovário não responde)</td><td>Insuficiência ovariana prematura, disgenesia gonadal</td></tr><tr><td>Hipogonadotrófica</td><td>Baixo/normal</td><td>Causa central (hipotálamo/hipófise)</td><td>Amenorreia hipotalâmica funcional, hiperprolactinemia</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -5427,7 +5427,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O algoritmo diagnóstico da amenorreia secundária (beta-hCG primeiro, depois investigação hormonal escalonada por FSH/prolactina/TSH) é cobrança central e recorrente. A diferenciação entre amenorreia hipergonadotrófica (FSH alto, causa ovariana) e hipogonadotrófica (FSH baixo, causa central) também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, amenorreias são cobradas principalmente pelo algoritmo diagnóstico escalonado (beta-hCG sempre primeiro, mesmo diante de outra hipótese aparentemente óbvia; depois prolactina, TSH, FSH/LH) e pela diferenciação entre amenorreia hipergonadotrófica (FSH alto, causa ovariana) e hipogonadotrófica (FSH baixo, causa central) — classificação que orienta toda a investigação subsequente. Cefaleia + alteração de campo visual associada a amenorreia como sinal de alerta para macroadenoma hipofisário também é cobrança recorrente."
   },
   {
     "id": "uroginecologia-incontinencia-prolapso",
