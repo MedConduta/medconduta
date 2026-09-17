@@ -12102,5 +12102,279 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-tce-abordagem-inicial",
+    "temaId": "tce",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem inicial do TCE",
+    "revisado": false,
+    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons); Brain Trauma Foundation Guidelines",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Vítima de trauma cranioencefálico chega à sala de emergência"
+      },
+      {
+        "tipo": "action",
+        "texto": "Avaliação inicial: Escala de Coma de Glasgow, exame das pupilas e sinais vitais, dentro do ABCDE do trauma"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Glasgow ≤8?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Via aérea definitiva: intubação orotraqueal para proteção de via aérea"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter monitorização contínua do nível de consciência"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de critérios de risco (Glasgow <15 após 2h, suspeita de fratura de crânio, vômitos repetidos, idade avançada, uso de anticoagulante, amnésia >30min, mecanismo de alta energia ou convulsão pós-trauma)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Solicitar tomografia de crânio sem contraste"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "TC evidencia hematoma/lesão com efeito de massa significativo (desvio de linha média, apagamento de cisternas)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Sinais clínicos de herniação (anisocoria, tríade de Cushing, postura de decorticação/descerebração) ou deterioração do Glasgow?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Terapia hiperosmolar imediata (manitol ou salina hipertônica) + acionamento urgente da neurocirurgia"
+                              },
+                              {
+                                "tipo": "end",
+                                "texto": "Craniotomia/craniectomia de urgência para drenagem do hematoma, conforme avaliação neurocirúrgica"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Avaliação neurocirúrgica eletiva para definir indicação cirúrgica versus conduta conservadora"
+                              },
+                              {
+                                "tipo": "end",
+                                "texto": "Conduta conservadora com TC seriada e monitorização neurológica rigorosa, se hematoma de pequeno volume e paciente estável"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Observação clínica, reavaliação neurológica seriada e orientações de alerta para retorno"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Observação clínica sem necessidade de tomografia, com orientações de sinais de alerta para retorno imediato"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-trauma-toracico-lesoes-fatais",
+    "temaId": "trauma-toracico",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Reconhecimento e manejo imediato das lesões torácicas que ameaçam a vida",
+    "revisado": true,
+    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Trauma torácico na avaliação primária (etapa B/C do ABCDE)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Desvio de traqueia contralateral + turgência jugular + ausência de murmúrio vesicular?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Pneumotórax hipertensivo — diagnóstico clínico"
+              },
+              {
+                "tipo": "end",
+                "texto": "Descompressão torácica imediata com agulha, sem aguardar radiografia"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Abafamento de bulhas + turgência jugular + hipotensão (tríade de Beck)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Tamponamento cardíaco"
+                      },
+                      {
+                        "tipo": "action",
+                        "texto": "FAST/janela pericárdica para confirmação rápida"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Pericardiocentese ou toracotomia de emergência se instável"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Ferida torácica soprante visível ('sucking chest wound')?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Pneumotórax aberto"
+                              },
+                              {
+                                "tipo": "action",
+                                "texto": "Curativo de três pontas (valvulado) sobre a ferida"
+                              },
+                              {
+                                "tipo": "end",
+                                "texto": "Drenagem torácica definitiva em local distante da ferida"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "decisao",
+                                "texto": "Movimento paradoxal da parede torácica (segmento instável)?",
+                                "ramos": [
+                                  {
+                                    "label": "Sim",
+                                    "fluxo": [
+                                      {
+                                        "tipo": "alerta",
+                                        "texto": "Tórax instável (flail chest) — atenção à contusão pulmonar subjacente"
+                                      },
+                                      {
+                                        "tipo": "action",
+                                        "texto": "Analgesia adequada (considerar bloqueio regional)"
+                                      },
+                                      {
+                                        "tipo": "end",
+                                        "texto": "Suporte ventilatório (oxigênio, VNI ou ventilação mecânica) se insuficiência respiratória"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Não",
+                                    "fluxo": [
+                                      {
+                                        "tipo": "decisao",
+                                        "texto": "Ausência de murmúrio vesicular + macicez à percussão + choque hemorrágico?",
+                                        "ramos": [
+                                          {
+                                            "label": "Sim",
+                                            "fluxo": [
+                                              {
+                                                "tipo": "alerta",
+                                                "texto": "Hemotórax maciço"
+                                              },
+                                              {
+                                                "tipo": "action",
+                                                "texto": "Drenagem torácica + reposição volêmica/hemocomponentes"
+                                              },
+                                              {
+                                                "tipo": "end",
+                                                "texto": "Toracotomia se drenagem ≥1500mL imediato ou ≥200mL/h por 2-4h"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "Não",
+                                            "fluxo": [
+                                              {
+                                                "tipo": "end",
+                                                "texto": "Reavaliar ABCDE seriadamente; prosseguir avaliação secundária com radiografia/tomografia de tórax"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
