@@ -64100,5 +64100,113 @@
     "ano": null,
     "fonte": "Banco de questões — Estratégia MED (caderno Pneumonias)",
     "revisado": true
+  },
+  {
+    "id": "q3530",
+    "temaId": "oncologia-principios-basicos",
+    "tema": "Oncologia: Princípios Básicos de Estadiamento e Tratamento",
+    "enunciado": "Paciente com massa pulmonar identificada em tomografia de tórax, com aspecto radiológico altamente sugestivo de neoplasia maligna. Qual a conduta correta antes de iniciar qualquer tratamento oncológico específico?",
+    "alternativas": [
+      "Iniciar quimioterapia empírica imediatamente, já que a imagem é suficientemente sugestiva.",
+      "Obter confirmação histopatológica por biópsia, mesmo diante de imagem muito sugestiva de malignidade.",
+      "Encaminhar diretamente para radioterapia, dispensando confirmação tecidual.",
+      "Solicitar apenas marcadores tumorais séricos para confirmar o diagnóstico."
+    ],
+    "correta": 1,
+    "comentario": "A confirmação histopatológica por biópsia é etapa obrigatória antes de qualquer tratamento oncológico específico, mesmo diante de imagem radiológica altamente sugestiva de malignidade — permite confirmar o diagnóstico, definir o tipo histológico exato e, cada vez mais, o perfil molecular/genético que orienta terapias-alvo. Iniciar tratamento sem essa confirmação expõe o paciente a riscos desnecessários caso o diagnóstico esteja incorreto.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em diretrizes de oncologia.",
+    "revisado": true
+  },
+  {
+    "id": "q3531",
+    "temaId": "oncologia-principios-basicos",
+    "tema": "Oncologia: Princípios Básicos de Estadiamento e Tratamento",
+    "enunciado": "O sistema de estadiamento TNM, amplamente utilizado em oncologia, avalia:",
+    "alternativas": [
+      "Apenas o tamanho do tumor primário.",
+      "Tumor primário, linfonodos regionais e metástases à distância.",
+      "Exclusivamente a presença ou ausência de metástases à distância.",
+      "O grau histológico de diferenciação celular do tumor."
+    ],
+    "correta": 1,
+    "comentario": "O sistema TNM padroniza a extensão anatômica da doença avaliando três componentes: T (Tumor primário — tamanho/extensão local), N (linfoNodos regionais acometidos) e M (Metástases à distância). É determinante central tanto do prognóstico quanto da estratégia terapêutica adotada para cada caso, sendo distinto do grau histológico (que avalia diferenciação celular, não extensão anatômica).",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em diretrizes de oncologia.",
+    "revisado": true
+  },
+  {
+    "id": "q3532",
+    "temaId": "oncologia-principios-basicos",
+    "tema": "Oncologia: Princípios Básicos de Estadiamento e Tratamento",
+    "enunciado": "Paciente oncológico em acompanhamento apresenta dor dorsal de início recente associada a fraqueza progressiva em membros inferiores e retenção urinária. Qual a conduta MAIS apropriada?",
+    "alternativas": [
+      "Solicitar radiografia de coluna ambulatorial e reavaliar em 2 semanas.",
+      "Considerar síndrome de compressão medular: solicitar ressonância magnética e iniciar corticoide imediatamente, seguidos de radioterapia ou cirurgia descompressiva urgente.",
+      "Prescrever apenas analgesia e aguardar evolução espontânea.",
+      "Encaminhar para fisioterapia motora antes de qualquer investigação de imagem."
+    ],
+    "correta": 1,
+    "comentario": "A combinação de dor dorsal com déficit motor/sensitivo progressivo e disfunção esfincteriana em paciente oncológico caracteriza síndrome de compressão medular — emergência oncológica que exige ressonância magnética e corticoide IMEDIATOS, seguidos de radioterapia ou cirurgia descompressiva urgente, pelo risco de paraplegia permanente se o tratamento for postergado.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em diretrizes de oncologia.",
+    "revisado": true
+  },
+  {
+    "id": "q3533",
+    "temaId": "oncologia-principios-basicos",
+    "tema": "Oncologia: Princípios Básicos de Estadiamento e Tratamento",
+    "enunciado": "Paciente em quimioterapia para linfoma de alta carga proliferativa evolui, dias após o início do tratamento, com hipercalemia, hiperfosfatemia, hiperuricemia e hipocalcemia. Esse quadro é compatível com:",
+    "alternativas": [
+      "Síndrome de veia cava superior.",
+      "Síndrome de lise tumoral.",
+      "Síndrome de compressão medular.",
+      "Neutropenia febril."
+    ],
+    "correta": 1,
+    "comentario": "A síndrome de lise tumoral ocorre após destruição maciça de células tumorais (geralmente após início de quimioterapia em tumores de alta carga proliferativa, como linfomas e leucemias), liberando conteúdo intracelular e causando hipercalemia, hiperfosfatemia, hiperuricemia e hipocalcemia secundária. O tratamento inclui hidratação vigorosa, alopurinol ou rasburicase e correção dos distúrbios eletrolíticos, com monitorização renal rigorosa.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em diretrizes de oncologia.",
+    "revisado": true
+  },
+  {
+    "id": "q3534",
+    "temaId": "oncologia-principios-basicos",
+    "tema": "Oncologia: Princípios Básicos de Estadiamento e Tratamento",
+    "enunciado": "Sobre a integração de cuidados paliativos ao tratamento oncológico, é correto afirmar que:",
+    "alternativas": [
+      "Devem ser reservados exclusivamente para os últimos dias de vida do paciente.",
+      "Devem ser integrados precocemente ao cuidado oncológico quando indicado, mesmo em doença avançada ainda em tratamento ativo.",
+      "São incompatíveis com a continuidade de tratamento quimioterápico ativo.",
+      "Têm indicação restrita a pacientes sem qualquer possibilidade de tratamento curativo."
+    ],
+    "correta": 1,
+    "comentario": "Cuidados paliativos devem ser integrados precocemente ao cuidado oncológico quando indicado, e não reservados apenas ao final da vida — evidências mostram melhora de qualidade de vida e, em alguns estudos, até de sobrevida quando iniciados precocemente em doença avançada, podendo coexistir com tratamento oncológico ativo (quimioterapia, radioterapia) voltado ao controle da doença.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em diretrizes de oncologia.",
+    "revisado": true
+  },
+  {
+    "id": "q3535",
+    "temaId": "oncologia-principios-basicos",
+    "tema": "Oncologia: Princípios Básicos de Estadiamento e Tratamento",
+    "enunciado": "Paciente oncológico em quimioterapia apresenta febre de 38,5°C, com neutrófilos de 400/mm³ no hemograma. Qual a conduta MAIS apropriada?",
+    "alternativas": [
+      "Aguardar resultado de culturas antes de iniciar qualquer antibiótico.",
+      "Iniciar antibioticoterapia empírica de amplo espectro imediatamente, sem aguardar confirmação de foco infeccioso.",
+      "Prescrever apenas antitérmico e reavaliar em 24 horas.",
+      "Suspender a quimioterapia e liberar o paciente para acompanhamento ambulatorial."
+    ],
+    "correta": 1,
+    "comentario": "Neutropenia febril (febre em paciente com neutrófilos <500-1000/mm³ após quimioterapia) é emergência oncológica que exige antibioticoterapia empírica de amplo espectro IMEDIATA, sem aguardar confirmação de foco infeccioso ou resultado de culturas, dado o alto risco de deterioração rápida e sepse nesse contexto de imunossupressão.",
+    "banca": "Exemplo — MedConduta",
+    "ano": 2026,
+    "fonte": "Questão original elaborada pela equipe MedConduta com base em diretrizes de oncologia.",
+    "revisado": true
   }
 ]

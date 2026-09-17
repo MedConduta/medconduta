@@ -11956,5 +11956,60 @@
         "texto": "Após identificação e tratamento da causa reversível: reavaliação estruturada dos demais domínios da avaliação geriátrica ampla (funcional, cognitivo basal, risco de quedas, suporte social) antes da alta"
       }
     ]
+  },
+  {
+    "id": "flow-oncologia-abordagem-inicial",
+    "temaId": "oncologia-principios-basicos",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de neoplasia — abordagem diagnóstica inicial e reconhecimento de emergências",
+    "revisado": true,
+    "fonte": "Princípios de oncologia clínica — abordagem diagnóstica e estadiamento",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com suspeita clínica ou radiológica de neoplasia"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há sinais de emergência oncológica associada (déficit neurológico progressivo, edema de face/pescoço, distúrbios eletrolíticos após quimioterapia, febre em neutropenia)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratar a emergência IMEDIATAMENTE (ver tabela de emergências oncológicas) — não aguardar confirmação histológica completa quando há risco iminente de dano irreversível"
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro estável para investigação eletiva",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Biópsia da lesão para confirmação histopatológica — etapa OBRIGATÓRIA antes de qualquer tratamento oncológico definitivo, mesmo com imagem muito sugestiva"
+              },
+              {
+                "tipo": "action",
+                "texto": "Definir tipo histológico e, quando disponível, perfil molecular/genético do tumor"
+              },
+              {
+                "tipo": "action",
+                "texto": "Estadiamento por imagem (TC, RM ou PET-CT conforme o tipo tumoral) após confirmação histológica"
+              },
+              {
+                "tipo": "end",
+                "texto": "Definir estratégia terapêutica (cirurgia, radioterapia, quimioterapia, terapia-alvo, imunoterapia, isolados ou combinados) conforme estádio TNM e objetivo curativo vs. paliativo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Cuidados paliativos devem ser integrados precocemente ao cuidado oncológico em doença avançada — não são reservados apenas ao final da vida, e sua introdução precoce associa-se a melhora de qualidade de vida e, em alguns estudos, de sobrevida"
+      }
+    ]
   }
 ]
