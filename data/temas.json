@@ -477,7 +477,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Abdome Agudo Inflamatório — Apendicite Aguda",
     "resumo": "Quadro clínico, escore de Alvarado e conduta cirúrgica na apendicite aguda.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Colégio Brasileiro de Cirurgiões — Diretriz de Apendicite Aguda; World Society of Emergency Surgery (WSES) Guidelines",
     "mnemonicos": [
       {
@@ -496,7 +496,7 @@
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Dor à palpação e descompressão brusca dolorosa (sinal de Blumberg) no ponto de McBurney (terço distal entre a espinha ilíaca anterossuperior e o umbigo) são os achados centrais. Sinal de Rovsing (dor em fossa ilíaca direita à palpação da fossa ilíaca esquerda), sinal do psoas (dor à extensão passiva do quadril direito) e sinal do obturador (dor à rotação interna da coxa fletida) são achados adicionais que reforçam a suspeita, especialmente úteis em apresentações atípicas (apêndice retrocecal ou pélvico)."
+        "conteudo": "Dor à palpação e descompressão brusca dolorosa (sinal de Blumberg) no ponto de McBurney (terço distal entre a espinha ilíaca anterossuperior e o umbigo) são os achados centrais. Sinal de Rovsing (dor em fossa ilíaca direita à palpação da fossa ilíaca esquerda), sinal do psoas (dor à extensão passiva do quadril direito) e sinal do obturador (dor à rotação interna da coxa fletida) são achados adicionais que reforçam a suspeita, especialmente úteis em apresentações atípicas (apêndice retrocecal ou pélvico).\n\n<div class=\"table-wrap\"><table><thead><tr><th>Sinal</th><th>Técnica</th><th>Significado</th></tr></thead><tbody><tr><td>Blumberg</td><td>Descompressão brusca dolorosa no ponto de McBurney</td><td>Irritação peritoneal parietal — achado central da apendicite</td></tr><tr><td>Rovsing</td><td>Palpação da fossa ilíaca esquerda desencadeia dor em fossa ilíaca direita</td><td>Reforça irritação peritoneal à distância</td></tr><tr><td>Psoas</td><td>Dor à extensão passiva do quadril direito (paciente em decúbito lateral esquerdo)</td><td>Sugere apêndice retrocecal (irritação do músculo psoas)</td></tr><tr><td>Obturador</td><td>Dor à rotação interna passiva da coxa direita fletida</td><td>Sugere apêndice pélvico (irritação do músculo obturador interno)</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Diagnóstico",
@@ -514,7 +514,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A dor migratória (periumbilical → fossa ilíaca direita) é o elemento semiológico mais cobrado e mais valorizado na anamnese de apendicite. Os sinais de Blumberg, Rovsing, psoas e obturador (e suas respectivas técnicas de pesquisa) também são frequentemente exigidos em questões de exame físico dirigido."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a apendicite aguda é cobrada principalmente pelo reconhecimento da dor migratória (periumbilical → fossa ilíaca direita) como elemento semiológico mais valorizado, pela diferenciação entre os sinais de Blumberg/Rovsing (apresentação típica) e psoas/obturador (apresentações atípicas por apêndice retrocecal ou pélvico), e pelo reconhecimento da melhora súbita seguida de piora com peritonite como sinal de perfuração — um padrão evolutivo que candidatos frequentemente interpretam erroneamente como resolução espontânea do quadro."
   },
   {
     "id": "politrauma-abcde",
