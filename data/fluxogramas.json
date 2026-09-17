@@ -13497,5 +13497,56 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-endometriose-abordagem",
+    "temaId": "endometriose",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem diagnóstica e terapêutica da endometriose",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia — endometriose",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher jovem com dismenorreia progressiva, dispareunia de profundidade e/ou infertilidade"
+      },
+      {
+        "tipo": "action",
+        "texto": "Exame físico dirigido (pode ser normal, mesmo em doença significativa) + ultrassonografia transvaginal com preparo intestinal ou RM se disponível"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Diagnóstico clínico presuntivo é suficiente para iniciar tratamento empírico — laparoscopia NÃO é obrigatória antes de tratar"
+      },
+      {
+        "tipo": "action",
+        "texto": "Tratamento hormonal de primeira linha (contraceptivo combinado contínuo, progestágeno, ou análogo de GnRH em casos graves)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Refratária ao tratamento clínico, endometrioma volumoso, ou infertilidade com desejo reprodutivo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Cirurgia laparoscópica com ressecção/ablação dos implantes"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter tratamento hormonal e acompanhamento clínico"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
