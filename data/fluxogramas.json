@@ -13205,5 +13205,68 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-nefrolitiase-abordagem",
+    "temaId": "nefrolitiase",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da cólica renal e nefrolitíase",
+    "revisado": true,
+    "fonte": "Diretrizes de urologia — nefrolitíase e cólica renal",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor em cólica de flanco irradiando para região inguinal, paciente agitado"
+      },
+      {
+        "tipo": "action",
+        "texto": "Analgesia (AINE de escolha, pelo efeito antiespasmódico ureteral) + hidratação; tomografia de abdome sem contraste (ou USG em gestantes)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Febre ou sinais de infecção urinária associados à obstrução?",
+        "ramos": [
+          {
+            "label": "Sim — pielonefrite obstrutiva/pionefrose",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Emergência urológica: desobstrução urgente (cateter duplo J ou nefrostomia percutânea) associada a antibioticoterapia — o rim obstruído infectado não responde ao antibiótico isolado"
+              }
+            ]
+          },
+          {
+            "label": "Não — sem infecção",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Cálculo pequeno (geralmente <5-6mm), sem dor refratária ou comprometimento renal?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Terapia expulsiva medicamentosa (alfabloqueador) e acompanhamento clínico — alta probabilidade de eliminação espontânea"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — cálculo grande, dor refratária ou comprometimento renal",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Intervenção urológica (litotripsia extracorpórea, ureteroscopia ou nefrolitotomia percutânea, conforme tamanho e localização)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

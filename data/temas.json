@@ -7680,7 +7680,7 @@
     "categoria": "Urologia",
     "titulo": "Nefrolitíase (Cólica Renal)",
     "resumo": "Diagnóstico por tomografia sem contraste, fatores que predizem eliminação espontânea e a emergência da pielonefrite obstrutiva.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Urologia; American Urological Association Guideline on Surgical Management of Stones",
     "mnemonicos": [
       {
@@ -7691,7 +7691,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "A nefrolitíase resulta da supersaturação urinária de substâncias formadoras de cálculo, sendo os cálculos de oxalato de cálcio os mais comuns (cerca de 80% dos casos), seguidos por cálculos de ácido úrico (associados a urina cronicamente ácida, mais comuns em obesos e diabéticos), estruvita (associados a infecção urinária por bactérias produtoras de urease, formando os característicos \"cálculos coraliformes\" que preenchem todo o sistema coletor) e cistina (causa genética rara). A dor típica da cólica renal resulta da distensão aguda do sistema coletor e da ativação de vias nociceptivas viscerais quando o cálculo migra e obstrui o ureter."
+        "conteudo": "A nefrolitíase resulta da supersaturação urinária de substâncias formadoras de cálculo, sendo os cálculos de oxalato de cálcio os mais comuns (cerca de 80% dos casos), seguidos por cálculos de ácido úrico (associados a urina cronicamente ácida, mais comuns em obesos e diabéticos), estruvita (associados a infecção urinária por bactérias produtoras de urease, formando os característicos \"cálculos coraliformes\" que preenchem todo o sistema coletor) e cistina (causa genética rara). A dor típica da cólica renal resulta da distensão aguda do sistema coletor e da ativação de vias nociceptivas viscerais quando o cálculo migra e obstrui o ureter.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Tipo de cálculo</th><th>Frequência</th><th>Associação característica</th></tr></thead><tbody><tr><td>Oxalato de cálcio</td><td>~80% (mais comum)</td><td>Idiopático, hipercalciúria</td></tr><tr><td>Ácido úrico</td><td>Minoria</td><td>Urina cronicamente ácida — obesos, diabéticos</td></tr><tr><td>Estruvita</td><td>Minoria</td><td>Infecção urinária por bactérias produtoras de urease — forma cálculos coraliformes</td></tr><tr><td>Cistina</td><td>Rara</td><td>Causa genética (cistinúria)</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Quadro clínico",
@@ -7717,7 +7717,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A associação de febre com cólica renal como emergência urológica (necessidade de desobstrução, não apenas antibiótico) é cobrança certíssima e um dos pontos mais importantes do tema. A agitação do paciente com cólica renal (contrastando com a imobilidade do abdome agudo peritoneal) e o uso preferencial de AINE para analgesia (pelo efeito antiespasmódico ureteral adicional) também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a nefrolitíase é cobrada principalmente pela associação de cólica renal com febre como emergência urológica (pielonefrite obstrutiva/pionefrose exigindo desobstrução urgente, não apenas antibiótico) — esse é o ponto de maior peso do tema. A agitação do paciente (diferencial com abdome agudo peritoneal, onde o paciente busca imobilidade), a tomografia sem contraste como padrão-ouro, e a indicação de terapia expulsiva com alfabloqueador para cálculos pequenos também são cobranças recorrentes."
   },
   {
     "id": "disturbios-acido-basicos",
