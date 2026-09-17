@@ -13548,5 +13548,68 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-dip-abordagem",
+    "temaId": "dip",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da doença inflamatória pélvica",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia infecciosa — doença inflamatória pélvica",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher sexualmente ativa com dor pélvica, corrimento anormal e dor à mobilização do colo/anexos ao exame"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Baixo limiar para tratamento empírico — iniciar antibiótico diante de suspeita clínica razoável, sem aguardar confirmação laboratorial completa"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Abscesso tubo-ovariano, gestação, falha ambulatorial prévia ou intolerância oral?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Sinais de rotura do abscesso (peritonite, toxemia sistêmica)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Emergência cirúrgica + antibioticoterapia endovenosa agressiva"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Internação com antibioticoterapia endovenosa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro leve/moderado",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratamento ambulatorial: ceftriaxona + doxiciclina + metronidazol, associado a tratamento obrigatório da parceria sexual"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -5528,7 +5528,7 @@
     "categoria": "Ginecologia",
     "titulo": "Doença Inflamatória Pélvica (DIP)",
     "resumo": "Diagnóstico clínico com tratamento empírico precoce para reduzir sequelas como infertilidade e gravidez ectópica.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para IST; CDC Sexually Transmitted Infections Treatment Guidelines",
     "mnemonicos": [
       {
@@ -5555,7 +5555,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O esquema antibiótico empírico deve cobrir gonococo, clamídia e anaeróbios simultaneamente (combinação de ceftriaxona, doxiciclina e metronidazol é esquema ambulatorial padrão), iniciado assim que o diagnóstico clínico é considerado provável. Casos graves, com abscesso tubo-ovariano, gestação, ou falha de resposta ao tratamento ambulatorial, exigem internação com antibioticoterapia endovenosa. Tratamento das parcerias sexuais recentes é obrigatório, como em qualquer IST."
+        "conteudo": "O esquema antibiótico empírico deve cobrir gonococo, clamídia e anaeróbios simultaneamente (combinação de ceftriaxona, doxiciclina e metronidazol é esquema ambulatorial padrão), iniciado assim que o diagnóstico clínico é considerado provável. Casos graves, com abscesso tubo-ovariano, gestação, ou falha de resposta ao tratamento ambulatorial, exigem internação com antibioticoterapia endovenosa. Tratamento das parcerias sexuais recentes é obrigatório, como em qualquer IST.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Cenário</th><th>Conduta</th></tr></thead><tbody><tr><td>DIP leve/moderada, sem complicação</td><td>Ambulatorial: ceftriaxona + doxiciclina + metronidazol</td></tr><tr><td>Abscesso tubo-ovariano, gestação, falha ambulatorial ou intolerância oral</td><td>Internação com antibioticoterapia endovenosa</td></tr><tr><td>Abscesso tubo-ovariano ROTO / peritonite / sepse</td><td>Emergência cirúrgica + antibioticoterapia endovenosa agressiva</td></tr><tr><td>Toda paciente tratada</td><td>Tratamento obrigatório das parcerias sexuais recentes</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -5565,7 +5565,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O baixo limiar para tratamento empírico (iniciar antibiótico diante de suspeita clínica razoável, sem aguardar confirmação laboratorial completa) é cobrança certa, pela ênfase em prevenir sequelas reprodutivas através do tratamento precoce. O esquema tríplice cobrindo gonococo, clamídia e anaeróbios simultaneamente também é frequentemente exigido."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a DIP é cobrada quase sempre pelo baixo limiar para tratamento empírico (iniciar antibiótico diante de suspeita clínica razoável, sem aguardar confirmação laboratorial completa, pelo risco de sequelas reprodutivas) e pelo esquema tríplice cobrindo gonococo, clamídia e anaeróbios simultaneamente. O reconhecimento de massa anexial dolorosa com febre alta como abscesso tubo-ovariano (potencialmente roto, emergência cirúrgica) também é cobrança recorrente."
   },
   {
     "id": "cancer-colo-utero-hpv",
