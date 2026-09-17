@@ -569,7 +569,7 @@
     "categoria": "Ginecologia",
     "titulo": "Sangramento Uterino Anormal (SUA)",
     "resumo": "Classificação etiológica (PALM-COEIN) e abordagem inicial do sangramento uterino anormal.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Federação Brasileira de Ginecologia e Obstetrícia (FEBRASGO); Classificação PALM-COEIN (FIGO)",
     "mnemonicos": [
       {
@@ -580,7 +580,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "O sangramento uterino anormal é classificado pela FIGO no sistema PALM-COEIN, dividindo causas estruturais (Pólipo, Adenomiose, Leiomioma, Malignidade/hiperplasia) de causas não estruturais (Coagulopatia, disfunção Ovulatória, disfunção Endometrial, Iatrogênica, Não classificada). Em adolescentes e no período perimenopausa, a anovulação por imaturidade ou declínio do eixo hipotálamo-hipófise-ovariano é causa predominante, resultando em estímulo estrogênico endometrial não contraposto pela progesterona, com proliferação endometrial excessiva e descamação irregular."
+        "conteudo": "O sangramento uterino anormal é classificado pela FIGO no sistema PALM-COEIN, dividindo causas estruturais (Pólipo, Adenomiose, Leiomioma, Malignidade/hiperplasia) de causas não estruturais (Coagulopatia, disfunção Ovulatória, disfunção Endometrial, Iatrogênica, Não classificada). Em adolescentes e no período perimenopausa, a anovulação por imaturidade ou declínio do eixo hipotálamo-hipófise-ovariano é causa predominante, resultando em estímulo estrogênico endometrial não contraposto pela progesterona, com proliferação endometrial excessiva e descamação irregular.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Categoria</th><th>Causas (PALM-COEIN)</th></tr></thead><tbody><tr><td>Estruturais (PALM)</td><td>Pólipo, Adenomiose, Leiomioma, Malignidade/hiperplasia endometrial</td></tr><tr><td>Não estruturais (COEIN)</td><td>Coagulopatia, disfunção Ovulatória, disfunção Endometrial, Iatrogênica, Não classificada</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Quadro clínico",
@@ -606,7 +606,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O sistema PALM-COEIN como estrutura organizadora do diagnóstico diferencial é cobrança certa em provas atuais. A obrigatoriedade de excluir gestação (beta-hCG) antes de qualquer investigação adicional, e os critérios de idade/risco que indicam biópsia endometrial, também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o SUA é cobrado principalmente pela aplicação do sistema PALM-COEIN como estrutura de raciocínio diagnóstico, pela obrigatoriedade de excluir gestação com beta-hCG antes de qualquer outra investigação (mesmo em vinhetas que parecem sugerir causa disfuncional óbvia), e pelos critérios de idade/risco (>45 anos, ou mais jovem com obesidade/SOP/anovulação crônica) que tornam a biópsia endometrial obrigatória antes de assumir causa benigna."
   },
   {
     "id": "pre-eclampsia",
