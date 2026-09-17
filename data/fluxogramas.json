@@ -13611,5 +13611,68 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-cancer-colo-utero-rastreamento",
+    "temaId": "cancer-colo-utero-hpv",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Rastreamento do câncer de colo do útero (protocolo brasileiro)",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Diretrizes brasileiras para rastreamento do câncer do colo do útero",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher de 25 a 64 anos, sexualmente ativa"
+      },
+      {
+        "tipo": "action",
+        "texto": "Citologia oncótica (Papanicolaou) anual"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dois exames anuais consecutivos normais?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Passar para periodicidade TRIENAL"
+              }
+            ]
+          },
+          {
+            "label": "Não — ainda no 1º exame ou resultado alterado",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Resultado citológico alterado?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Colposcopia com biópsia dirigida para confirmação histológica"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — normal, ainda no 1º exame",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Repetir citologia anualmente até completar 2 exames normais consecutivos"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
