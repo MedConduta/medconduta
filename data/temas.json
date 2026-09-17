@@ -2037,7 +2037,7 @@
     "categoria": "Cirurgia Geral",
     "titulo": "Hérnias de Parede Abdominal",
     "resumo": "Tipos mais comuns, diferenciação entre encarceramento/estrangulamento e conduta.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Colégio Brasileiro de Cirurgiões; European Hernia Society Guidelines",
     "mnemonicos": [
       {
@@ -2048,7 +2048,7 @@
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "As hérnias de parede abdominal resultam de um defeito na fáscia/musculatura que permite a protrusão de conteúdo intra-abdominal (geralmente epíplon ou alça intestinal) através do orifício. As hérnias inguinais são as mais comuns, subdivididas em indiretas (mais comuns, congênitas, através do anel inguinal profundo, seguindo o trajeto do funículo espermático) e diretas (adquiridas, por fraqueza da parede posterior do canal inguinal, através do triângulo de Hesselbach). Hérnias podem ser redutíveis (conteúdo retorna à cavidade), encarceradas (presas, sem redução, mas sem comprometimento vascular) ou estranguladas (com comprometimento vascular do conteúdo herniado, configurando emergência)."
+        "conteudo": "As hérnias de parede abdominal resultam de um defeito na fáscia/musculatura que permite a protrusão de conteúdo intra-abdominal (geralmente epíplon ou alça intestinal) através do orifício. As hérnias inguinais são as mais comuns, subdivididas em indiretas (mais comuns, congênitas, através do anel inguinal profundo, seguindo o trajeto do funículo espermático) e diretas (adquiridas, por fraqueza da parede posterior do canal inguinal, através do triângulo de Hesselbach). Hérnias podem ser redutíveis (conteúdo retorna à cavidade), encarceradas (presas, sem redução, mas sem comprometimento vascular) ou estranguladas (com comprometimento vascular do conteúdo herniado, configurando emergência).\n\n<div class=\"table-wrap\"><table><thead><tr><th>Tipo</th><th>Trajeto/localização</th><th>Origem</th></tr></thead><tbody><tr><td>Hérnia inguinal indireta</td><td>Anel inguinal profundo, seguindo o trajeto do funículo espermático</td><td>Congênita (persistência do processo vaginal)</td></tr><tr><td>Hérnia inguinal direta</td><td>Triângulo de Hesselbach (fraqueza da parede posterior do canal inguinal)</td><td>Adquirida</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Classificação</th><th>Definição</th><th>Conduta</th></tr></thead><tbody><tr><td>Redutível</td><td>Conteúdo retorna à cavidade espontaneamente ou com manipulação</td><td>Correção cirúrgica eletiva</td></tr><tr><td>Encarcerada</td><td>Presa, sem redução, mas sem comprometimento vascular</td><td>Tentativa cuidadosa de redução manual seguida de cirurgia eletiva precoce</td></tr><tr><td>Estrangulada</td><td>Comprometimento vascular do conteúdo herniado</td><td>Emergência cirúrgica absoluta — NUNCA tentar redução manual forçada</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Quadro clínico",
@@ -2074,7 +2074,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre hérnia inguinal indireta (congênita, através do anel inguinal profundo) e direta (adquirida, triângulo de Hesselbach) é cobrança certa. A distinção entre hérnia encarcerada (correção eletiva possível após tentativa de redução) e estrangulada (cirurgia de urgência absoluta, sem tentativa de redução manual) também é ponto central e recorrente."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado principalmente pela distinção anatômica entre hérnia inguinal indireta (congênita, anel inguinal profundo) e direta (adquirida, triângulo de Hesselbach), e pela diferenciação crítica entre hérnia encarcerada (pode-se tentar redução manual cuidadosa) e estrangulada (cirurgia de urgência absoluta, redução manual contraindicada pelo risco de reintroduzir segmento necrótico na cavidade) — um par de conceitos que costuma aparecer em vinhetas que testam se o candidato reconhece quando NÃO tentar reduzir a hérnia."
   },
   {
     "id": "pre-pos-operatorio",
