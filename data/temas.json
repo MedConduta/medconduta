@@ -5855,7 +5855,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Cardiotocografia e Avaliação do Bem-Estar Fetal",
     "resumo": "Interpretação de acelerações e desacelerações, classificação em categorias e medidas de ressuscitação intrauterina.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO; ACOG Practice Bulletin on Intrapartum Fetal Heart Rate Monitoring",
     "mnemonicos": [
       {
@@ -5878,7 +5878,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A cardiotocografia é classificada em categorias (I, II, III conforme a nomenclatura mais usada) baseadas em linha de base, variabilidade, presença de acelerações e tipo/padrão de desacelerações: categoria I é normal e tranquilizadora; categoria III é anormal, associada a alto risco de acidose fetal, exigindo intervenção imediata; categoria II é indeterminada, exigindo reavaliação e medidas de ressuscitação intrauterina antes de decisão definitiva. Desacelerações tardias (início após o pico da contração, refletindo insuficiência uteroplacentária) são mais preocupantes que desacelerações precoces (sincronizadas com a contração, refletindo compressão cefálica benigna) ou variáveis (relacionadas a compressão de cordão)."
+        "conteudo": "A cardiotocografia é classificada em categorias (I, II, III conforme a nomenclatura mais usada) baseadas em linha de base, variabilidade, presença de acelerações e tipo/padrão de desacelerações: categoria I é normal e tranquilizadora; categoria III é anormal, associada a alto risco de acidose fetal, exigindo intervenção imediata; categoria II é indeterminada, exigindo reavaliação e medidas de ressuscitação intrauterina antes de decisão definitiva. Desacelerações tardias (início após o pico da contração, refletindo insuficiência uteroplacentária) são mais preocupantes que desacelerações precoces (sincronizadas com a contração, refletindo compressão cefálica benigna) ou variáveis (relacionadas a compressão de cordão).\n\n<div class=\"table-wrap\"><table><thead><tr><th>Tipo de desaceleração</th><th>Relação temporal com a contração</th><th>Mecanismo</th><th>Gravidade</th></tr></thead><tbody><tr><td>Precoce</td><td>Sincronizada, espelha a contração</td><td>Compressão cefálica</td><td>Benigna</td></tr><tr><td>Variável</td><td>Sem relação fixa, início/fim abruptos</td><td>Compressão de cordão</td><td>Depende de intensidade/recorrência</td></tr><tr><td>Tardia</td><td>Início APÓS o pico da contração</td><td>Insuficiência uteroplacentária</td><td>Mais preocupante</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Categoria CTG</th><th>Interpretação</th><th>Conduta</th></tr></thead><tbody><tr><td>I</td><td>Normal, tranquilizadora</td><td>Seguimento de rotina</td></tr><tr><td>II</td><td>Indeterminada</td><td>Ressuscitação intrauterina + reavaliação</td></tr><tr><td>III</td><td>Anormal, alto risco de acidose fetal</td><td>Resolução urgente do parto (não atrasar por ressuscitação intrauterina)</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -5892,7 +5892,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre desacelerações precoces (benignas, compressão cefálica), variáveis (compressão de cordão) e tardias (mais preocupantes, insuficiência uteroplacentária) é cobrança certíssima e um dos temas mais recorrentes de toda a obstetrícia, frequentemente através de traçados de cardiotocografia para interpretação direta. A sequência de medidas de ressuscitação intrauterina antes da decisão cirúrgica também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a cardiotocografia é cobrada quase sempre através de traçados para interpretação direta, exigindo a diferenciação entre desaceleração precoce (benigna, compressão cefálica), variável (compressão de cordão) e tardia (mais preocupante, insuficiência uteroplacentária), e a classificação em categorias I/II/III com a conduta correspondente. A sequência de medidas de ressuscitação intrauterina (decúbito lateral esquerdo, suspender ocitocina, hidratação, O2) antes da decisão cirúrgica — exceto na categoria III, que não deve ter a cesárea atrasada — também é cobrança recorrente."
   },
   {
     "id": "prematuridade-rn-baixo-peso",

@@ -14067,5 +14067,77 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-cardiotocografia-abordagem",
+    "temaId": "cardiotocografia-bem-estar-fetal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem do padrão de cardiotocografia não tranquilizador",
+    "revisado": true,
+    "fonte": "Diretrizes de monitorização fetal intraparto — cardiotocografia",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Cardiotocografia realizada durante o trabalho de parto"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Classificação do traçado?",
+        "ramos": [
+          {
+            "label": "Categoria I — normal",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguimento de rotina, sem intervenção adicional"
+              }
+            ]
+          },
+          {
+            "label": "Categoria II — indeterminada",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Medidas de ressuscitação intrauterina: decúbito lateral esquerdo, suspender ocitocina, hidratação venosa, oxigênio suplementar, corrigir hipotensão"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Padrão se normaliza após as medidas?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Continuar monitorização de rotina"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — refratário",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Resolução do parto (geralmente cesárea de urgência)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Categoria III — anormal",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Resolução IMEDIATA do parto (cesárea de emergência) — não atrasar a decisão por medidas de ressuscitação intrauterina"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
