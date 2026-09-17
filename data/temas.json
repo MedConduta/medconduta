@@ -2816,7 +2816,7 @@
     "categoria": "Ginecologia",
     "titulo": "Nódulo de Mama e Câncer de Mama",
     "resumo": "Classificação BI-RADS, rastreamento populacional e conduta conforme suspeita de malignidade.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Instituto Nacional de Câncer (INCA) — Diretrizes para Detecção Precoce do Câncer de Mama; FEBRASGO",
     "mnemonicos": [
       {
@@ -2835,7 +2835,7 @@
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "Nódulo endurecido, de bordas irregulares, fixo a planos profundos ou à pele sobrejacente, associado a linfadenopatia axilar palpável, é altamente sugestivo de malignidade — contrastando com o fibroadenoma típico (móvel, bem delimitado, consistência elástica, em mulher jovem). Retração cutânea e mamilar, e edema cutâneo em \"casca de laranja\" (peau d'orange, sugerindo carcinoma inflamatório) são achados de alarme adicionais."
+        "conteudo": "Nódulo endurecido, de bordas irregulares, fixo a planos profundos ou à pele sobrejacente, associado a linfadenopatia axilar palpável, é altamente sugestivo de malignidade — contrastando com o fibroadenoma típico (móvel, bem delimitado, consistência elástica, em mulher jovem). Retração cutânea e mamilar, e edema cutâneo em \"casca de laranja\" (peau d'orange, sugerindo carcinoma inflamatório) são achados de alarme adicionais.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Fibroadenoma (benigno)</th><th>Suspeita de malignidade</th></tr></thead><tbody><tr><td>Faixa etária</td><td>Mulheres jovens</td><td>Aumenta com a idade</td></tr><tr><td>Mobilidade</td><td>Móvel</td><td>Fixo a planos profundos/pele</td></tr><tr><td>Bordas</td><td>Bem delimitadas</td><td>Irregulares</td></tr><tr><td>Consistência</td><td>Elástica</td><td>Endurecida/pétrea</td></tr><tr><td>Pele/mamilo</td><td>Sem alteração</td><td>Retração, \"casca de laranja\", inversão mamilar recente</td></tr><tr><td>Linfonodos</td><td>Ausentes</td><td>Linfadenopatia axilar palpável</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Diagnóstico",
@@ -2853,7 +2853,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A abordagem diagnóstica tripla (clínica + imagem + biópsia) para qualquer nódulo suspeito é cobrança certa. A divergência entre a recomendação de rastreamento do Ministério da Saúde (bienal, 50-69 anos) e de sociedades especializadas (anual, a partir dos 40) é ponto frequentemente explorado, exigindo atenção ao contexto da questão (concurso de saúde pública tende a seguir o protocolo do MS)."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado sobretudo pela diferenciação semiológica entre fibroadenoma (móvel, bem delimitado, jovem) e nódulo suspeito de malignidade (fixo, irregular, com alteração cutânea/linfonodal), pela abordagem diagnóstica tripla (clínica + imagem + biópsia) para qualquer nódulo suspeito, e pela recomendação de rastreamento mamográfico do Ministério da Saúde (bienal, 50-69 anos) — em provas de concurso público como SES-PE, a resposta correta costuma seguir o protocolo do MS, não a recomendação de sociedades especializadas (anual, a partir dos 40), sendo essa divergência um ponto de atenção recorrente."
   },
   {
     "id": "assistencia-parto-partograma",
