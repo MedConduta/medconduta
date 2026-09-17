@@ -9314,7 +9314,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Puerpério Patológico: Infecção Puerperal e Mastite",
     "resumo": "Endometrite puerperal como principal causa de febre pós-parto e o manejo da mastite sem interromper a amamentação.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO; Ministério da Saúde — Manual de Atenção ao Puerpério",
     "mnemonicos": [
       {
@@ -9329,7 +9329,7 @@
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Endometrite puerperal manifesta-se com febre, dor abdominal baixa, lóquios fétidos e subinvolução uterina, tipicamente nos primeiros dias após o parto. Mastite lactacional manifesta-se com dor mamária localizada, associada a área de endurecimento, hiperemia e calor local, com febre e mal-estar sistêmico em graus variáveis conforme a intensidade da infecção."
+        "conteudo": "Endometrite puerperal manifesta-se com febre, dor abdominal baixa, lóquios fétidos e subinvolução uterina, tipicamente nos primeiros dias após o parto. Mastite lactacional manifesta-se com dor mamária localizada, associada a área de endurecimento, hiperemia e calor local, com febre e mal-estar sistêmico em graus variáveis conforme a intensidade da infecção.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Condição</th><th>Achado-chave</th><th>Conduta</th></tr></thead><tbody><tr><td>Endometrite puerperal</td><td>Febre + dor abdominal baixa + lóquios fétidos + subinvolução uterina</td><td>Antibiótico amplo espectro (aeróbios+anaeróbios); curetagem se restos placentários</td></tr><tr><td>Mastite lactacional</td><td>Dor mamária localizada + hiperemia/calor (S. aureus mais comum)</td><td>Antibiótico + MANTER amamentação/ordenha (nunca suspender)</td></tr><tr><td>Abscesso mamário</td><td>Flutuação à palpação</td><td>Drenagem — não responde a antibiótico isolado</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Exame físico",
@@ -9351,7 +9351,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A recomendação de manter a amamentação durante o tratamento de mastite (não suspender, pois a estase láctea perpetua a infecção) é cobrança certa e frequentemente testada como pegadinha, já que a intuição de muitos candidatos é suspender a amamentação erroneamente. A cesárea como principal fator de risco para endometrite puerperal (comparada ao parto vaginal) também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, o tema é cobrado quase sempre pela recomendação de MANTER a amamentação/ordenha durante o tratamento de mastite (nunca suspender — a estase láctea perpetua a infecção), frequentemente testada como pegadinha já que a intuição comum é suspender erroneamente. A cesárea como principal fator de risco para endometrite puerperal (comparada ao parto vaginal), e a necessidade de investigar retenção de restos placentários ou abscesso diante de febre persistente apesar de antibiótico adequado, também são cobranças recorrentes."
   },
   {
     "id": "doenca-kawasaki",

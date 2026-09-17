@@ -14190,5 +14190,92 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-puerperio-patologico-abordagem",
+    "temaId": "puerperio-patologico",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem da febre puerperal e da mastite lactacional",
+    "revisado": true,
+    "fonte": "Diretrizes de obstetrícia — infecção puerperal e mastite",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Puérpera com febre ou dor mamária"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Febre + dor abdominal baixa + lóquios fétidos + subinvolução uterina, ou dor mamária localizada com hiperemia?",
+        "ramos": [
+          {
+            "label": "Quadro uterino — suspeita de endometrite",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Antibioticoterapia de amplo espectro (aeróbios + anaeróbios), geralmente endovenosa"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Febre persiste apesar de antibiótico adequado, com subinvolução importante?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Investigar retenção de restos placentários (USG) ou coleção pélvica — curetagem/drenagem conforme o caso, pois não respondem a antibiótico isolado"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter tratamento e reavaliação"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Quadro mamário — suspeita de mastite",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Antibiótico cobrindo Staphylococcus aureus + analgesia + MANTER amamentação/ordenha (nunca suspender)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Flutuação à palpação (sugestivo de abscesso)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Drenagem do abscesso — não responde a antibiótico isolado"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter tratamento clínico com reavaliação"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
