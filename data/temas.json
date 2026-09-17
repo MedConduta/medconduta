@@ -1350,7 +1350,7 @@
     "categoria": "Obstetrícia",
     "titulo": "Hemorragia Pós-Parto (HPP)",
     "resumo": "Causas mais comuns (4 Ts) e sequência de manejo inicial da hemorragia pós-parto.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "FEBRASGO; Ministério da Saúde — Manual de Hemorragia Pós-Parto; ACOG Practice Bulletin on Postpartum Hemorrhage",
     "mnemonicos": [
       {
@@ -1373,7 +1373,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é fundamentalmente clínico e dirigido pela sequência dos \"4 Ts\": primeiro avaliar o tônus uterino (causa mais comum e primeira a ser excluída/tratada), depois inspecionar o trajeto em busca de lacerações, depois avaliar a integridade da placenta/membranas (revisão da cavidade uterina se necessário), e por último considerar coagulopatia caso as causas anteriores tenham sido excluídas ou tratadas sem resposta adequada."
+        "conteudo": "O diagnóstico é fundamentalmente clínico e dirigido pela sequência dos \"4 Ts\": primeiro avaliar o tônus uterino (causa mais comum e primeira a ser excluída/tratada), depois inspecionar o trajeto em busca de lacerações, depois avaliar a integridade da placenta/membranas (revisão da cavidade uterina se necessário), e por último considerar coagulopatia caso as causas anteriores tenham sido excluídas ou tratadas sem resposta adequada.\n\n<div class=\"table-wrap\"><table><thead><tr><th>\"T\"</th><th>Causa</th><th>Frequência</th></tr></thead><tbody><tr><td>Tônus</td><td>Atonia uterina</td><td>~70-80% dos casos (mais comum)</td></tr><tr><td>Trauma</td><td>Lacerações de trajeto (colo, vagina, períneo)</td><td>Segunda mais comum</td></tr><tr><td>Tecido</td><td>Retenção de restos placentários</td><td>Impede contração uterina adequada</td></tr><tr><td>Trombina</td><td>Coagulopatias (primárias ou adquiridas, ex.: CIVD)</td><td>Investigada por último, se as demais causas forem excluídas/tratadas sem resposta</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -1387,7 +1387,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O mnemônico dos \"4 Ts\" (Tônus, Trauma, Tecido, Trombina) com a atonia como causa mais comum é cobrança certíssima e um dos temas mais importantes de toda a obstetrícia em provas de residência. A sequência escalonada de tratamento da atonia (massagem → uterotônicos → medidas mecânicas → cirúrgicas) também é frequentemente exigida em questões de conduta."
       }
-    ]
+    ],
+    "comoCai": "No SES-PE e no ENAMED, a hemorragia pós-parto é cobrada quase sempre pelo mnemônico dos \"4 Ts\" (Tônus, Trauma, Tecido, Trombina) com a atonia uterina como causa mais comum e primeira a ser investigada/tratada, e pela sequência escalonada de tratamento da atonia (massagem bimanual → uterotônicos, ocitocina primeira linha → medidas mecânicas → cirúrgicas, histerectomia como último recurso). O reconhecimento do atraso no tratamento da atonia como principal causa evitável de mortalidade materna também é cobrança recorrente."
   },
   {
     "id": "doencas-exantematicas",
