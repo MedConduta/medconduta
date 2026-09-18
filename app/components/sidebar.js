@@ -9,7 +9,7 @@ export const NAV_ITEMS = [
       { path: "/residencia/revisao", label: "Revisão espaçada", icon: "brain" },
       { path: "/residencia/flashcards", label: "Flashcards", icon: "layers" },
       { path: "/residencia/questoes", label: "Questões", icon: "checklist" },
-      { path: "/residencia/planejador", label: "Planejador do dia", icon: "calendar" },
+      { path: "/residencia/planejador", label: "Hoje", icon: "calendar" },
     ],
   },
   {
@@ -24,7 +24,7 @@ export const NAV_ITEMS = [
 export const BOTTOM_NAV_ITEMS = [
   { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
   { path: "/residencia/revisao", label: "Revisão", icon: "brain" },
-  { path: "/residencia/planejador", label: "Plano", icon: "calendar" },
+  { path: "/residencia/planejador", label: "Hoje", icon: "calendar" },
   { path: "/pratica/prescricao", label: "Prescrição", icon: "pill" },
 ];
 

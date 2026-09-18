@@ -10,9 +10,9 @@ export async function renderPlanejador(container) {
   container.innerHTML = `
     <div class="main__container">
       <div class="page-header">
-        <div class="page-header__eyebrow">Residência — Planejador de estudo do dia</div>
+        <div class="page-header__eyebrow">Residência — Hoje</div>
         <h1>Quanto tempo você tem hoje?</h1>
-        <p class="page-header__desc">Informe as horas disponíveis. A plataforma prioriza revisões espaçadas vencidas, depois temas novos/pendentes, e preenche o restante com questões de reforço.</p>
+        <p class="page-header__desc">Informe as horas disponíveis. A plataforma monta a sequência de maior impacto: revisões espaçadas vencidas primeiro, depois os temas de maior prioridade (peso na prova × seu desempenho), e questões direcionadas ao seu maior gargalo atual.</p>
       </div>
 
       <div class="card" style="margin-bottom:24px;">
@@ -63,6 +63,7 @@ export async function renderPlanejador(container) {
         <div class="stat-tile"><div class="stat-tile__value">${plano.totalTemasPendentes}</div><div class="stat-tile__label">Temas pendentes</div></div>
         <div class="stat-tile"><div class="stat-tile__value">${Math.round((plano.minutosUsados / 60) * 10) / 10}h</div><div class="stat-tile__label">Tempo planejado</div></div>
       </div>
+      ${renderGargalos(plano.principaisGargalos)}
       <h3>Agenda de hoje</h3>
       <div class="plan-queue">
         ${plano.fila
@@ -88,4 +89,29 @@ export async function renderPlanejador(container) {
 
   container.querySelector("#btn-gerar").addEventListener("click", gerar);
   gerar();
+}
+
+function renderGargalos(gargalos) {
+  if (!gargalos || !gargalos.length) return "";
+  return `
+    <div class="card" style="margin-bottom:24px;">
+      <div class="list-card__title" style="margin-bottom:8px;">Seus maiores gargalos agora</div>
+      <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-bottom:12px;">Cruza o peso estimado de cada área na prova com seu desempenho real em questões — por isso o conteúdo e as questões de hoje priorizam essas áreas.</p>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+        ${gargalos
+          .map(
+            (g, i) => `
+          <li style="display:flex;justify-content:space-between;gap:12px;">
+            <span>${i + 1}. ${escapeHtml(g.categoria)}</span>
+            <span style="color:var(--color-text-secondary);">${
+              g.desempenho
+                ? `${Math.round(g.desempenho.taxa * 100)}% de acerto (${g.desempenho.total} ${g.desempenho.total > 1 ? "questões" : "questão"})`
+                : "sem questões respondidas ainda"
+            }</span>
+          </li>`
+          )
+          .join("")}
+      </ul>
+    </div>
+  `;
 }
