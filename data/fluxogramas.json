@@ -14277,5 +14277,3182 @@
         ]
       }
     ]
+  },
+  {
+    "id": "flow-prematuridade-tratamento",
+    "temaId": "prematuridade-rn-baixo-peso",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Prematuridade — Manejo inicial na sala de parto e triagens obrigatórias",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de acompanhamento de Neonatologia (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Recém-nascido pré-termo (<37 semanas) ou baixo peso (<2.500g)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Sala de parto: prevenção de hipotermia (saco plástico + touca), clampeamento oportuno do cordão"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Apresenta desconforto respiratório / FiO2 elevada?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Suspeitar Doença da Membrana Hialina — CPAP precoce / surfactante conforme protocolo"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Observação em incubadora, controle térmico e glicêmico"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Triagens obrigatórias: teste do pezinho, orelhinha, olhinho, coraçãozinho, linguinha"
+      },
+      {
+        "tipo": "end",
+        "texto": "Seguimento ambulatorial: crescimento, DNPM e triagem de retinopatia da prematuridade se <32 sem/<1.500g"
+      }
+    ]
+  },
+  {
+    "id": "flow-dnpm-crescimento-diagnostico",
+    "temaId": "desenvolvimento-neuropsicomotor-crescimento",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "DNPM — Investigação de suspeita de atraso do desenvolvimento",
+    "revisado": true,
+    "fonte": "Caderneta da Criança (Ministério da Saúde) / Estratégia MED (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança em consulta de puericultura de rotina"
+      },
+      {
+        "tipo": "action",
+        "texto": "Aplicar marcos de desenvolvimento esperados para a idade (motor, linguagem, social, cognitivo)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Marco de alarme ausente para a idade (ex.: sem sorriso social aos 2m, sem sustento cefálico aos 4m, sem palavras aos 12m)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar causa (triagem auditiva/visual, avaliação neurológica) e encaminhar para estimulação precoce"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Registrar na curva de crescimento (peso/altura/perímetro cefálico) e reforçar orientações"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Reavaliação na próxima consulta de puericultura programada"
+      }
+    ]
+  },
+  {
+    "id": "flow-aleitamento-tratamento",
+    "temaId": "aleitamento-materno-alimentacao-complementar",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Aleitamento materno — Conduta por faixa etária",
+    "revisado": true,
+    "fonte": "Ministério da Saúde / Estratégia MED (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Recém-nascido a termo, sem contraindicação ao aleitamento"
+      },
+      {
+        "tipo": "action",
+        "texto": "Aleitamento materno exclusivo até os 6 meses de vida"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Criança completou 6 meses?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Iniciar alimentação complementar mantendo o aleitamento materno até os 2 anos ou mais"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter exclusividade — água, chás e outros leites não são recomendados antes dos 6 meses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Aleitamento complementado até pelo menos os 2 anos de idade"
+      }
+    ]
+  },
+  {
+    "id": "flow-desnutricao-diagnostico",
+    "temaId": "desnutricao-deficiencias-vitaminicas",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Desnutrição infantil — Classificação por índices antropométricos",
+    "revisado": true,
+    "fonte": "Ministério da Saúde / OMS — curvas de crescimento (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança com peso/estatura abaixo do esperado para a idade"
+      },
+      {
+        "tipo": "action",
+        "texto": "Calcular escore-Z de peso/altura, altura/idade e peso/idade nas curvas da OMS"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Escore-Z de peso/altura < -3?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Desnutrição grave — avaliar sinais de emergência (edema, complicações) e considerar internação"
+              }
+            ]
+          },
+          {
+            "label": "Não, entre -3 e -2",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Desnutrição moderada — investigar causa e iniciar suplementação/acompanhamento nutricional"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Rastrear deficiências vitamínicas associadas (ferro, vitamina A, zinco) conforme quadro clínico"
+      }
+    ]
+  },
+  {
+    "id": "flow-crupe-tratamento",
+    "temaId": "crupe-laringotraqueite",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Crupe viral — Estratificação de gravidade e conduta",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança com tosse metálica, estridor e rouquidão de início súbito"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Estridor em repouso / desconforto respiratório significativo?",
+        "ramos": [
+          {
+            "label": "Sim (moderado-grave)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Nebulização com adrenalina + corticoide sistêmico (dexametasona) + observação por rebote"
+              }
+            ]
+          },
+          {
+            "label": "Não (leve)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Dose única de dexametasona oral e alta com orientações de sinais de alarme"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Reavaliar em 3-4h se recebeu adrenalina, pelo risco de efeito rebote"
+      }
+    ]
+  },
+  {
+    "id": "flow-convulsao-febril-diagnostico",
+    "temaId": "convulsao-febril",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Convulsão febril — Diferenciação simples x complexa e conduta",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança 6 meses–5 anos com convulsão associada a febre, sem infecção do SNC"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Duração >15min, focal, ou recorrência em 24h?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Convulsão febril COMPLEXA — investigação adicional (considerar neuroimagem/EEG conforme caso)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Convulsão febril SIMPLES — tranquilizar a família, sem necessidade de exames de rotina"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Investigar e tratar o foco febril de base; não indicar anticonvulsivante profilático de rotina"
+      }
+    ]
+  },
+  {
+    "id": "flow-maus-tratos-diagnostico",
+    "temaId": "maus-tratos-infantil",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Maus-tratos infantis — Reconhecimento de sinais de alerta e conduta",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança com lesão ou quadro clínico de mecanismo pouco claro"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "História incompatível com o padrão da lesão, atraso na busca por atendimento, ou lesões em estágios diferentes?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Suspeitar maus-tratos — documentar detalhadamente, notificar ao Conselho Tutelar (notificação compulsória, independe de confirmação)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Seguir investigação conforme hipótese diagnóstica habitual"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Notificação NÃO depende de certeza diagnóstica — suspeita já é suficiente e é obrigação legal do médico"
+      }
+    ]
+  },
+  {
+    "id": "flow-cardiopatias-congenitas-diagnostico",
+    "temaId": "cardiopatias-congenitas-comuns",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Cardiopatias congênitas — Cianóticas x acianóticas",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Recém-nascido/lactente com suspeita de cardiopatia congênita"
+      },
+      {
+        "tipo": "action",
+        "texto": "Teste do coraçãozinho (oximetria de pulso) nas primeiras 48h de vida"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Cianose central presente?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Pensar em cardiopatia cianótica (ex.: Tetralogia de Fallot, Transposição de Grandes Artérias) — ecocardiograma urgente"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Pensar em cardiopatia acianótica (ex.: CIV, PCA) — investigar sopro e sinais de ICC"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Confirmação diagnóstica por ecocardiograma; conduta conforme lesão específica"
+      }
+    ]
+  },
+  {
+    "id": "flow-kawasaki-diagnostico",
+    "temaId": "doenca-kawasaki",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Doença de Kawasaki — Critérios diagnósticos e conduta",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança com febre ≥5 dias sem outra causa identificada"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de ≥4 de: conjuntivite não exsudativa, alterações orais, exantema polimorfo, alterações de extremidades, linfadenopatia cervical?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Kawasaki confirmado — iniciar imunoglobulina IV + AAS em dose alta o quanto antes"
+              },
+              {
+                "tipo": "action",
+                "texto": "Ecocardiograma para rastrear aneurisma de coronárias (complicação mais temida)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar forma incompleta se critérios laboratoriais/ecocardiográficos sugestivos"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Seguimento cardiológico programado pelo risco de aneurisma coronariano"
+      }
+    ]
+  },
+  {
+    "id": "flow-invaginacao-diagnostico",
+    "temaId": "invaginacao-intestinal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Invaginação intestinal — Reconhecimento e conduta",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Lactente com dor abdominal em cólica intermitente + choro + encolhimento das pernas"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de massa abdominal palpável e/ou fezes em \"geleia de framboesa\"?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Alta suspeita de invaginação — USG abdominal confirmatório (sinal do alvo/donut)"
+              }
+            ]
+          },
+          {
+            "label": "Não, mas suspeita clínica persiste",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "USG abdominal para confirmação diagnóstica"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Sem sinais de peritonite/perfuração → redução por enema (pneumático ou hidrostático) guiado por imagem"
+      },
+      {
+        "tipo": "end",
+        "texto": "Peritonite, perfuração ou falha da redução → cirurgia de urgência"
+      }
+    ]
+  },
+  {
+    "id": "flow-coqueluche-diagnostico",
+    "temaId": "coqueluche",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Coqueluche — Fases clínicas e conduta",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança com tosse paroxística, guincho inspiratório ou apneia (lactentes)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Lactente <6 meses com tosse persistente e sinais de gravidade (apneia, cianose)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Maior risco de complicações graves — considerar internação e monitorização"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tratamento ambulatorial com macrolídeo (azitromicina) + isolamento respiratório"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Quimioprofilaxia para contactantes próximos, especialmente lactentes não vacinados"
+      }
+    ]
+  },
+  {
+    "id": "flow-pneumonia-pediatrica-tratamento",
+    "temaId": "pneumonia-pediatrica",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "PAC na infância — Estratificação e escolha do antibiótico",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança com febre, tosse e taquipneia para a idade"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de gravidade (tiragem, gemência, SatO2 baixa, recusa alimentar)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Internação — antibioticoterapia parenteral (ex.: penicilina cristalina/ampicilina)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tratamento ambulatorial — amoxicilina VO como 1ª escolha para pneumonia bacteriana típica"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Reavaliar em 48-72h; sem melhora, revisar diagnóstico/cobertura antimicrobiana"
+      }
+    ]
+  },
+  {
+    "id": "flow-puberdade-diagnostico",
+    "temaId": "puberdade-normal-disturbios",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Puberdade — Reconhecimento de precocidade ou atraso puberal",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Avaliação de estadiamento puberal (Tanner) em consulta de rotina"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Caracteres sexuais secundários antes de 8 anos (meninas) ou 9 anos (meninos)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar puberdade precoce (central x periférica) — dosagens hormonais + idade óssea"
+              }
+            ]
+          },
+          {
+            "label": "Não, mas ausência de caracteres após 13a (meninas) / 14a (meninos)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Investigar atraso puberal — avaliar eixo hipotálamo-hipófise-gonadal"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Encaminhar à endocrinologia pediátrica conforme achados"
+      }
+    ]
+  },
+  {
+    "id": "flow-fibrose-cistica-diagnostico",
+    "temaId": "fibrose-cistica",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Fibrose cística — Triagem e confirmação diagnóstica",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Pediatria (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Recém-nascido com triagem neonatal (teste do pezinho) alterada para tripsinogênio imunorreativo (IRT)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Confirmar com teste do suor (cloro no suor)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Teste do suor positivo (cloro elevado) em duas amostras?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Fibrose cística confirmada — iniciar seguimento multidisciplinar (pneumo, nutrição, fisioterapia)"
+              }
+            ]
+          },
+          {
+            "label": "Não / limítrofe",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar teste genético para mutações do gene CFTR"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Monitorar função pulmonar, estado nutricional e colonização bacteriana (Pseudomonas) ao longo do seguimento"
+      }
+    ]
+  },
+  {
+    "id": "flow-depressao-maior-diagnostico",
+    "temaId": "depressao-maior",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Depressão Maior — Do sintoma ao diagnóstico",
+    "revisado": true,
+    "fonte": "DSM-5-TR / Estratégia MED — RE Transtornos do Humor (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com humor deprimido e/ou anedonia por ≥2 semanas"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "≥5 de 9 sintomas do DSM-5-TR presentes (incluindo humor/anedonia)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Sintomas surgiram até 14 dias pós-parto e são autolimitados?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Blues do puerpério — NÃO é depressão maior, não prescrever antidepressivo"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Avaliar risco de suicídio ativamente em toda consulta"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Episódio Depressivo Maior — iniciar antidepressivo conforme perfil de efeitos colaterais"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar distimia (sintomas leves >2 anos) ou luto (humor reativo, autoestima preservada)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-tab-diagnostico",
+    "temaId": "transtorno-bipolar",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Transtorno Bipolar — Diferenciação tipo I x tipo II e tratamento",
+    "revisado": true,
+    "fonte": "DSM-5-TR / Estratégia MED — RE Transtornos do Humor (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com episódio de humor elevado/expansivo ou irritável"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Preenche critérios de episódio MANÍACO completo (≥1 semana, prejuízo funcional grave)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "TAB tipo I — basta 1 episódio maníaco, mesmo sem depressão prévia"
+              }
+            ]
+          },
+          {
+            "label": "Não, apenas hipomania",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Já teve episódio depressivo maior associado?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "TAB tipo II — hipomania + depressão maior, nunca mania"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Considerar ciclotimia se sintomas leves >2 anos sem critério completo"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Antidepressivos NÃO devem ser rotineiramente prescritos — risco de virada maníaca"
+      }
+    ]
+  },
+  {
+    "id": "flow-transtornos-ansiosos-diagnostico",
+    "temaId": "transtornos-ansiosos",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Transtornos ansiosos — Diferenciação por padrão de ansiedade",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Transtornos de Ansiedade (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com ansiedade clinicamente significativa"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Ansiedade contínua e generalizada por ≥6 meses (sem crises específicas)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "TAG — 1ª linha: ISRS + TCC"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Crises súbitas e recorrentes de medo intenso, inesperadas?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Transtorno de Pânico — ISRS + benzodiazepínico de ação rápida no início"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, medo de julgamento social",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Transtorno de Ansiedade Social — ISRS + TCC combinados"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-toc-diagnostico",
+    "temaId": "toc",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "TOC — Diferenciação de obsessão x delírio",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE TOC/Transtornos Somáticos (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com pensamentos intrusivos recorrentes e/ou rituais compulsivos"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente reconhece o pensamento como absurdo/excessivo (crítica preservada)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "TOC — tratamento com ISRS + TCC (exposição e prevenção de resposta)"
+              }
+            ]
+          },
+          {
+            "label": "Não (crença fixa, sem crítica)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Considerar quadro psicótico (delírio), não TOC"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-esquizofrenia-diagnostico",
+    "temaId": "esquizofrenia-psicoses",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Transtornos psicóticos — Diferenciação pelo tempo de evolução",
+    "revisado": true,
+    "fonte": "DSM-5-TR / Estratégia MED — RE Transtornos Psicóticos (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com sintomas psicóticos (delírios, alucinações, discurso desorganizado)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Duração total dos sintomas (fase ativa+atenuada+prodrômica)?",
+        "ramos": [
+          {
+            "label": "1–30 dias",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Transtorno Psicótico Breve — recuperação completa esperada"
+              }
+            ]
+          },
+          {
+            "label": "1–6 meses",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Transtorno Esquizofreniforme"
+              }
+            ]
+          },
+          {
+            "label": "≥6 meses",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Esquizofrenia — iniciar antipsicótico, manutenção por ~2 anos"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Delírios não bizarros, sem alucinações proeminentes e sem prejuízo funcional → considerar Transtorno Delirante Persistente"
+      }
+    ]
+  },
+  {
+    "id": "flow-uso-substancias-tratamento",
+    "temaId": "transtornos-uso-substancias",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Intoxicação e abstinência alcoólica — Manejo agudo",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Dependência Química (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com uso recente/interrupção de álcool e alteração do estado clínico"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de intoxicação aguda (fala arrastada, incoordenação, nistagmo)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tiamina 300mg parenteral ANTES da glicose; ambiente calmo; evitar benzodiazepínico/antipsicótico de rotina"
+              }
+            ]
+          },
+          {
+            "label": "Não, sinais de abstinência (tremor, ansiedade, hiperatividade autonômica)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Alucinações, convulsões ou febre alta (Delirium Tremens)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Internação — benzodiazepínico em dose adequada, monitorização intensiva"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "SAA leve-moderada — benzodiazepínico ambulatorial/hospital-dia"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-emergencias-psiquiatricas-tratamento",
+    "temaId": "emergencias-psiquiatricas",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Agitação psicomotora — Fluxo de manejo farmacológico",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Psicofarmacologia (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente agitado em emergência psiquiátrica"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente colaborativo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Via oral: haloperidol ± midazolam/prometazina"
+              }
+            ]
+          },
+          {
+            "label": "Não, risco à equipe",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Via IM: haloperidol (seguro cardiovascularmente) + midazolam ou prometazina"
+              },
+              {
+                "tipo": "alerta",
+                "texto": "Evitar diazepam IM (absorção errática) — se benzodiazepínico IM, usar no deltoide"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Contenção mecânica apenas se demais medidas falharem; reavaliação médica a cada 15min"
+      }
+    ]
+  },
+  {
+    "id": "flow-transtornos-alimentares-diagnostico",
+    "temaId": "transtornos-alimentares",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Transtornos alimentares — Diferencial por peso e métodos compensatórios",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Transtornos Alimentares (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com alteração do padrão alimentar e preocupação com peso/forma corporal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Peso corporal significativamente baixo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Anorexia Nervosa — 1ª linha medicamentosa: fluoxetina (+ olanzapina se grave)"
+              }
+            ]
+          },
+          {
+            "label": "Não (peso normal/elevado)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Presença de métodos compensatórios (purgação, jejum, exercício excessivo)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Bulimia Nervosa — ISRS ± topiramato"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "TCAP — TCC + ISRS; lisdexanfetamina se moderado/grave"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-somatoformes-diagnostico",
+    "temaId": "transtornos-somatoformes",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Transtornos somatoformes — Cadeia de raciocínio somatoforme x factício x simulação",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE TOC/Transtornos Somáticos (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com sintomas físicos sem explicação orgânica proporcional"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sintoma é produzido intencionalmente pelo paciente?",
+        "ramos": [
+          {
+            "label": "Não (involuntário)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Transtorno de Sintomas Somáticos / Conversivo — tratamento psicoterápico"
+              }
+            ]
+          },
+          {
+            "label": "Sim, consciente",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Há ganho externo identificável (dinheiro, indenização, fuga de responsabilidade)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Simulação"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não (busca por atenção médica)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Transtorno Factício (Münchhausen)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-tdah-tea-diagnostico",
+    "temaId": "tdah-tea",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "TDAH x TEA — Fluxo diferencial em criança com queixa de desatenção/atraso",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Psiquiatria Infantil (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança encaminhada por desatenção, hiperatividade ou atraso social"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de alarme de TEA presentes (ausência de sorriso social, não responder ao nome, perda de habilidades)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Aplicar M-CHAT-R/F (triagem preferencial aos 18 meses)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Investigação para TEA"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Sintomas de desatenção/hiperatividade antes dos 12 anos, em ≥2 ambientes?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Avaliar ambientes familiar e escolar ANTES de rotular como TDAH"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "TDAH — tratamento com psicoestimulante a partir dos 6 anos"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Considerar outras causas (TOD, TDI, transtorno de aprendizagem)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-vigilancia-epidemiologica-diagnostico",
+    "temaId": "vigilancia-epidemiologica",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Identificação do tipo de vigilância em saúde a partir de uma vinheta",
+    "revisado": true,
+    "fonte": "Lei 8.080/1990 / PNVS 2018 / Estratégia MED (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Enunciado descreve uma ação de fiscalização/monitoramento em saúde"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Envolve doenças/agravos transmissíveis e notificação de casos?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Vigilância Epidemiológica"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Envolve fiscalização de estabelecimentos, produtos ou serviços (restaurante, fábrica)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Vigilância Sanitária"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, é sobre riscos ocupacionais",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Vigilância em Saúde do Trabalhador (VISAT)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Exceção: fiscalização de portos, aeroportos e fronteiras é atribuição da União, mesmo sendo execução predominantemente municipal"
+      }
+    ]
+  },
+  {
+    "id": "flow-principios-sus-diagnostico",
+    "temaId": "principios-sus",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Identificação do princípio do SUS ilustrado por uma vinheta",
+    "revisado": true,
+    "fonte": "Lei 8.080/1990 / Estratégia MED (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Vinheta descreve uma situação de acesso/organização do SUS"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Trata de acesso sem distinção (independe de renda, documentação, origem)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Universalidade"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Trata de oferecer mais recursos a quem tem maior necessidade?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Equidade"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, é sobre participação da comunidade na gestão",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Controle Social / Participação Popular (ex.: Conselho de Saúde)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-indicadores-saude-diagnostico",
+    "temaId": "indicadores-saude",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Escolha do indicador epidemiológico correto a partir dos dados do enunciado",
+    "revisado": true,
+    "fonte": "Estratégia MED — Medidas de Saúde Coletiva (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Enunciado traz número de casos/óbitos em uma população"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Pergunta é sobre proporção de DOENTES que morreram por aquela causa?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Letalidade = óbitos / total de doentes"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Pergunta é sobre casos NOVOS no período?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Incidência"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, é sobre total de casos (novos+antigos) num momento",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Prevalência"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-rastreio-cancer-tratamento",
+    "temaId": "rastreio-cancer",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Rastreio de câncer de colo uterino — Conduta por resultado citológico",
+    "revisado": true,
+    "fonte": "Protocolo MS 2016/2025 / EMR — bases de Rastreio do Câncer de Colo Uterino (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher de 25-64 anos, sexualmente ativa, realiza citologia de rastreio"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Resultado normal em 2 exames anuais consecutivos?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Passar para rastreio trienal"
+              }
+            ]
+          },
+          {
+            "label": "Não, alteração citológica (ex.: LSIL)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Repetir citologia em 6 meses (conforme protocolo INCA-MS)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Lesão de alto grau (ASC-H/HSIL) ou persistência de alteração?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Encaminhar para colposcopia"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter rastreio de rotina"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-etica-medica-diagnostico",
+    "temaId": "etica-medica-bioetica",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Sigilo médico e autonomia — Fluxo de decisão em dilema ético comum",
+    "revisado": true,
+    "fonte": "Código de Ética Médica / Estratégia MED (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Terceiro solicita informações sobre paciente sem autorização deste"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há risco concreto e grave a terceiro identificável (ex.: doença transmissível não revelada ao parceiro)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Dar ao paciente a chance de revelar primeiro"
+              },
+              {
+                "tipo": "end",
+                "texto": "Se não revelar, médico pode quebrar sigilo pelo risco a terceiro"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter sigilo profissional — não informar, nem mesmo o motivo da consulta"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-estudos-epidemiologicos-diagnostico",
+    "temaId": "estudos-epidemiologicos",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Escolha do desenho de estudo e da medida de associação correta",
+    "revisado": true,
+    "fonte": "Estratégia MED — Pesquisa Epidemiológica (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Pergunta de pesquisa a ser respondida"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Doença rara, prioridade de custo/tempo/tamanho amostral?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Caso-controle → medida de associação: Odds Ratio (OR)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Acompanhamento de exposição ao longo do tempo?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Coorte → Risco Relativo (RR) ou Hazard Ratio (HR)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, teste de intervenção",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Ensaio clínico randomizado → NNT (número necessário a tratar)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-testes-diagnosticos-diagnostico",
+    "temaId": "testes-diagnosticos-acuracia",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Sensibilidade/Especificidade x VPP/VPN — Qual medida a pergunta está pedindo",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Testes Diagnósticos (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Pergunta cruza estado de saúde do paciente com resultado do teste"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Eu já conheço o estado de saúde do paciente (doente/sadio) e quero saber o resultado do teste?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Sensibilidade (doentes) ou Especificidade (sadios) — não dependem da prevalência"
+              }
+            ]
+          },
+          {
+            "label": "Não, já sei o resultado do teste e quero saber o estado de saúde",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "VPP (testes positivos) ou VPN (testes negativos) — dependem da prevalência"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-bioestatistica-diagnostico",
+    "temaId": "bioestatistica-testes-hipotese",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Interpretação do valor-p e decisão sobre a hipótese nula",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Estatística Médica (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Estudo compara dois grupos e calcula um valor-p"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Valor-p < nível de significância pré-estabelecido (ex.: 0,05)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Rejeita-se H0 — diferença estatisticamente significativa"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Não se rejeita H0 — sem evidência estatística de diferença"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Valor-p NÃO é a probabilidade de H0 ser verdadeira, nem o nível de significância, nem o tamanho do efeito"
+      }
+    ]
+  },
+  {
+    "id": "flow-aps-esf-diagnostico",
+    "temaId": "aps-esf",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Atributos da APS — Identificação a partir de uma vinheta",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Atenção Básica (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Vinheta descreve uma ação da equipe de Saúde da Família"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Envolve adaptar a comunicação à cultura/vocabulário do paciente?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Competência Cultural"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Envolve articular diferentes níveis/pontos de atenção para o mesmo paciente?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Coordenação do cuidado"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, é facilidade de acesso ao serviço",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Acesso (1º contato)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-mbe-diagnostico",
+    "temaId": "mbe-revisao-sistematica-metanalise",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Nível de evidência — Hierarquia geral (conhecimento consolidado da literatura)",
+    "revisado": true,
+    "fonte": "Conhecimento geral consolidado de Medicina Baseada em Evidências (não específico de curso — ausência de material dedicado registrada no comoCai)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Avaliar a força de evidência de um estudo/publicação"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "É uma revisão sistemática com metanálise de ensaios clínicos randomizados?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Topo da pirâmide de evidência — mas a qualidade depende dos estudos incluídos"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "É um ensaio clínico randomizado isolado?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Alto nível de evidência individual"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, é estudo observacional (coorte/caso-controle)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Nível de evidência intermediário — sujeito a mais vieses de confusão"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-medicina-legal-diagnostico",
+    "temaId": "medicina-legal-fundamentos",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Declaração de Óbito — Quem deve preenchê-la",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Medicina Legal (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente vem a óbito e é necessário emitir a Declaração de Óbito"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há indício de causa violenta/externa ou morte suspeita?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "DO deve ser fornecida pelo médico LEGISTA, nunca pelo assistente"
+              }
+            ]
+          },
+          {
+            "label": "Não (morte natural)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "DO pode/deve ser fornecida pelo médico assistente"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-saude-trabalhador-diagnostico",
+    "temaId": "saude-trabalhador-doencas-ocupacionais",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Classificação de Schilling — Enquadramento da doença ocupacional",
+    "revisado": true,
+    "fonte": "Classificação de Schilling (1984) / Estratégia MED — Saúde do Trabalhador (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Doença associada à exposição ocupacional"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "O trabalho é causa NECESSÁRIA para a doença (ex.: asbestose, saturnismo)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Grupo I de Schilling — doença profissional, nexo causal direto"
+              }
+            ]
+          },
+          {
+            "label": "Não, é fator contributivo (ex.: HAS, varizes)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Grupo II de Schilling"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Grupo III: trabalho provoca/agrava distúrbio latente (ex.: dermatite de contato)"
+      }
+    ]
+  },
+  {
+    "id": "flow-gestao-em-saude-diagnostico",
+    "temaId": "gestao-em-saude",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Financiamento do SUS — Origem tripartite dos recursos",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Financiamento em Saúde (referência geral; mineração aprofundada pendente — ver comoCai)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Questão sobre origem dos recursos de uma ação/serviço do SUS"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Envolve blocos de financiamento definidos por pactuação entre esferas de governo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Financiamento tripartite — União, Estados e Municípios, conforme pactuação"
+              }
+            ]
+          },
+          {
+            "label": "Não, é repasse específico a um programa (ex.: PNAB)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Recurso vinculado ao programa/política específica"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-medicina-familia-diagnostico",
+    "temaId": "medicina-familia-comunidade",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Genograma x Ecomapa — O que cada instrumento registra",
+    "revisado": true,
+    "fonte": "Estratégia MED / EMR — bases de Atenção Básica (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Necessidade de mapear o contexto familiar/social do paciente"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Objetivo é registrar relações e estrutura FAMILIAR (parentesco, gerações)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Genograma — nunca registra diagnósticos de terceiros, apenas relações"
+              }
+            ]
+          },
+          {
+            "label": "Não, objetivo é mapear rede de apoio SOCIAL externa",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Ecomapa"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-calendario-vacinal-diagnostico",
+    "temaId": "calendario-vacinal-adulto-idoso",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Avaliação da situação vacinal do adulto/idoso — Lógica geral",
+    "revisado": true,
+    "fonte": "Conhecimento geral consolidado (ausência de material específico do curso registrada no comoCai)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Adulto/idoso em consulta, situação vacinal desconhecida"
+      },
+      {
+        "tipo": "action",
+        "texto": "Solicitar caderneta de vacinação; se ausente, considerar não vacinado e iniciar esquema"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente é imunossuprimido ou tem comorbidade de risco?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Avaliar indicação de vacinas adicionais/esquemas especiais (ex.: pneumocócica, influenza anual)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguir calendário padrão do adulto/idoso conforme faixa etária"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-incongruencia-genero-tratamento",
+    "temaId": "incongruencia-genero",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Incongruência de gênero — Sequência de intervenções por idade",
+    "revisado": true,
+    "fonte": "Portaria GM/MS 2.803/2013 / Resolução CFM 2.427/2025 / Estratégia MED (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com diagnóstico de disforia/incongruência de gênero"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Está em fase puberal inicial (Tanner 2-4)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Bloqueio puberal com análogo de GnRH CONTRAINDICADO no Brasil desde 2025"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Idade ≥16-18 anos, indicação de hormonioterapie?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Hormonioterapia — 18 anos pelo Protocolo SUS ou 16 anos pelo CFM"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Acompanhamento multiprofissional sem intervenção hormonal ainda"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Cirurgia de redesignação: 21 anos + 2 anos de acompanhamento (SUS) ou critério distinto pela Res. CFM 2.427/2025"
+      }
+    ]
+  },
+  {
+    "id": "flow-otites-tratamento",
+    "temaId": "otites-media-externa",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "OMA — Decisão de tratar ou observar por idade",
+    "revisado": true,
+    "fonte": "AAP 2013 / Estratégia MED — RE IVAS 2 (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança com abaulamento de membrana timpânica (OMA)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Idade <6 meses?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratar sempre com amoxicilina 90mg/kg/dia (dose dobrada)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Sintomas leves, unilateral, sem otorreia?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Observação possível (6m-2a se unilateral leve; >2a se imunocompetente)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Tratar com amoxicilina dose dobrada (ou amoxicilina-clavulanato se fator de risco)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Sinais de mastoidite (abaulamento retroauricular) → internação e ATB empírico imediato, nunca conduta conservadora"
+      }
+    ]
+  },
+  {
+    "id": "flow-rinossinusite-diagnostico",
+    "temaId": "rinossinusite-faringite",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Rinossinusite — Viral x bacteriana pela evolução temporal",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE IVAS 1 e 3 (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança/adulto com sintomas de rinossinusite"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sintomas persistem >10-12 dias, OU pioram após o 5º dia, OU febre ≥39°C por 3 dias seguidos?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Rinossinusite bacteriana — amoxicilina (± clavulanato se fator de risco/gravidade)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Rinossinusite viral (98% dos casos) — lavagem nasal com salina, sintomáticos"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Radiografia de seios da face NÃO define etiologia e NÃO deve orientar a conduta"
+      }
+    ]
+  },
+  {
+    "id": "flow-perda-auditiva-diagnostico",
+    "temaId": "perda-auditiva",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Perda auditiva — Condutiva x neurossensorial",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Otoneurologia (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com queixa de hipoacusia"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Audiometria mostra padrão condutivo (gap ar-osso)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Causa condutiva (ex.: cerume, otite média serosa/crônica)"
+              }
+            ]
+          },
+          {
+            "label": "Não, perda em altas frequências, simétrica e progressiva",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Presbiacusia — neurossensorial, sem tratamento reversor, indicar aparelho auditivo"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-vertigem-diagnostico",
+    "temaId": "vertigem-vppb-meniere",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Vertigem — VPPB x Menière x central",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Otoneurologia (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com queixa de vertigem"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Crise breve (segundos), desencadeada por posição da cabeça, sem sintoma auditivo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "VPPB — Dix-Hallpike confirma; tratamento curativo com manobra de Epley"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Vertigem de minutos a horas + hipoacusia flutuante + zumbido?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Doença de Menière — diuréticos (acetazolamida/HCTZ); EVITAR furosemida"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, sinais neurológicos associados",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Suspeitar vertigem CENTRAL — investigação neurológica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-urgencias-orl-tratamento",
+    "temaId": "urgencias-orl-epistaxe-corpo-estranho",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Epistaxe — Manejo escalonado",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE IVAS 3 (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com sangramento nasal ativo"
+      },
+      {
+        "tipo": "action",
+        "texto": "Compressão digital direta + algodão com oximetazolina 0,05%"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sangramento persiste?",
+        "ramos": [
+          {
+            "label": "Sim, anterior",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tamponamento anterior com gaze + vaselina sobre a zona de Kiesselbach"
+              }
+            ]
+          },
+          {
+            "label": "Sim, posterior/volumoso",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Tamponamento posterior — sangramento mais difícil de controlar"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Cauterização apenas fora do momento de sangramento ativo; nunca usar adrenalina direto na mucosa"
+      }
+    ]
+  },
+  {
+    "id": "flow-olho-vermelho-diagnostico",
+    "temaId": "olho-vermelho-diagnostico-diferencial",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Olho vermelho — Diferencial entre os 3 diagnósticos mais cobrados",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Síndrome do Olho Vermelho (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com olho vermelho"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor à movimentação ocular + exoftalmia?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Celulite orbitária (pós-septal) — TC de órbitas, internação, ATB IV"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Miose + PIO baixa + precipitados ceráticos?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Uveíte anterior aguda"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, média midríase + PIO muito alta + edema de córnea",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Crise aguda de glaucoma de ângulo fechado — emergência oftalmológica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-catarata-tratamento",
+    "temaId": "catarata-erros-refrativos",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Catarata — Do achado à cirurgia",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Córnea e Cristalino (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Teste do reflexo vermelho alterado (leucocoria) em recém-nascido"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Confirmado catarata congênita?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Cirurgia idealmente entre 4-6 semanas de vida (máximo 12 semanas) — risco de ambliopia"
+              }
+            ]
+          },
+          {
+            "label": "Não, paciente idoso com opacificação progressiva",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Catarata senil — tratamento cirúrgico eletivo (facoemulsificação + LIO)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-retinopatia-diagnostico",
+    "temaId": "retinopatia-diabetica-hipertensiva",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Retinopatia diabética — Triagem por tipo de diabetes",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Doenças do Polo Posterior (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente diabético em avaliação oftalmológica"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "DM tipo 1?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Iniciar triagem após a puberdade OU 5 anos de doença; repetir anualmente"
+              }
+            ]
+          },
+          {
+            "label": "Não, DM tipo 2",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Iniciar triagem já no momento do diagnóstico; repetir anualmente"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Neovascularização presente ao exame?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "RD proliferativa — fotocoagulação a laser (padrão-ouro)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "RD não proliferativa — seguimento e controle metabólico"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-trauma-ocular-tratamento",
+    "temaId": "trauma-ocular",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Queimadura ocular química — Conduta emergencial",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Traumatismos Oculares (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com queimadura ocular química (álcali ou ácido)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Irrigação copiosa e imediata com salina/Ringer Lactato por no mínimo 30 minutos"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "NUNCA neutralizar ácido com base ou vice-versa"
+      },
+      {
+        "tipo": "action",
+        "texto": "Everter e irrigar os fórnices conjuntivais"
+      },
+      {
+        "tipo": "end",
+        "texto": "Corticoide tópico apenas se prescrito por oftalmologista (risco de perfuração)"
+      }
+    ]
+  },
+  {
+    "id": "flow-glaucoma-diagnostico",
+    "temaId": "glaucoma-cronico-angulo-aberto",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Glaucoma — Ângulo aberto x fechado",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Glaucoma (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com PIO elevada"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Início súbito, dor intensa, média midríase, PIO >40mmHg?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Crise aguda de ângulo fechado — manitol IV, acetazolamida, pilocarpina/timolol tópicos; definitivo: iridotomia a YAG laser"
+              }
+            ]
+          },
+          {
+            "label": "Não, assintomático, achado em exame de rotina",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "GPAA — tratamento com betabloqueador tópico (1ª escolha) ou análogo de prostaglandina"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-fraturas-luxacoes-diagnostico",
+    "temaId": "fraturas-luxacoes-comuns",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Fêmur proximal x luxação de quadril — Diferencial pela rotação do membro",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Fraturas e Luxações (Nordon) / EMR bases_ortopedia (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente idoso com trauma de quadril, membro encurtado"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Membro rodado EXTERNAMENTE (ENRE)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Fratura de fêmur proximal — operar em até 48h (mortalidade até 25% se atraso)"
+              }
+            ]
+          },
+          {
+            "label": "Não, rodado internamente + flexão + adução (FADRI)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Luxação de quadril — redução urgente"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-joelho-diagnostico",
+    "temaId": "lesoes-ligamentares-joelho",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Lesão ligamentar x meniscal do joelho — Diferencial pelo tempo de hemartrose",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Fraturas e Luxações, seção joelho (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com trauma de joelho e derrame articular"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Hemartrose surgiu IMEDIATAMENTE após o trauma?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Lesão ligamentar aguda — testar gaveta anterior/Lachman (LCA), gaveta posterior (LCP)"
+              }
+            ]
+          },
+          {
+            "label": "Não, hemartrose TARDIA",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Lesão meniscal — testar Apley"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-artrite-septica-diagnostico",
+    "temaId": "artrite-septica-osteomielite",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Pioartrite pediátrica — Critérios de Kocher",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Quadril Pediátrico (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança com dor articular e recusa a apoiar o membro"
+      },
+      {
+        "tipo": "action",
+        "texto": "Avaliar 4 Critérios de Kocher: febre, VHS>40mm/h, incapacidade de apoiar, leucocitose>12.000"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "4 critérios presentes?",
+        "ramos": [
+          {
+            "label": "Sim (99,6% de probabilidade)",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Punção articular de urgência + drenagem cirúrgica + oxacilina empírica"
+              }
+            ]
+          },
+          {
+            "label": "0 critérios (0,2% de probabilidade)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Considerar sinovite transitória — observação"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-quadril-pediatrico-diagnostico",
+    "temaId": "ortopedia-pediatrica-quadril-pe",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Criança claudicante — Fluxo diagnóstico por idade e febre",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Quadril Pediátrico (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Criança claudicante"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor metafisária + febre?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Osteomielite/pioartrite — punção articular"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "IVAS recente + sem sinais flogísticos?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Sinovite transitória — observar"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, adolescente obeso",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Epifisiólise — retirar carga imediatamente, cirurgia de urgência"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "4-8 anos com encurtamento sem febre → Doença de Perthes; recém-nascido → investigar DDQ (Ortolani/Barlow)"
+      }
+    ]
+  },
+  {
+    "id": "flow-lombalgia-diagnostico",
+    "temaId": "lombalgia-hernia-disco",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Lombalgia — Rastreio de sinais de alarme (PITTI, DOC)",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Doenças da Coluna Vertebral (Nordon) (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com dor lombar"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de algum sinal do PITTI-DOC (persistência, idade extrema, trauma, tumor, infecção, déficit neurológico, osteoporose, cauda equina)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar causa secundária (imagem/exames direcionados)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Lombalgia primária/inespecífica (90% dos casos) — tratamento sintomático, evitar repouso prolongado"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-dermatoses-inflamatorias-diagnostico",
+    "temaId": "dermatoses-inflamatorias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Psoríase — Reconhecimento do gatilho de eritrodermia",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Dermatoses Papuloescamosas (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com psoríase em uso de corticoide sistêmico"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Suspendeu o corticoide abruptamente?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Risco de psoríase eritrodérmica — nunca usar corticoide sistêmico na psoríase"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter tratamento tópico (leve) ou sistêmico não-corticoide (moderado/grave)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-infeccoes-cutaneas-diagnostico",
+    "temaId": "infeccoes-cutaneas",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Infecção cutânea — Erisipela x celulite x fasciíte necrotizante",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Piodermites (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com placa eritematosa dolorosa"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor DESPROPORCIONAL ao exame físico?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Suspeitar fasciíte necrotizante — desbridamento cirúrgico + ATB amplo espectro"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Lesão BEM delimitada?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Erisipela (derme papilar, S. pyogenes)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, MAL delimitada",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Celulite (derme reticular/hipoderme, S. pyogenes e S. aureus)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-neoplasias-cutaneas-diagnostico",
+    "temaId": "neoplasias-cutaneas",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Melanoma — Indicação de linfonodo sentinela pelo índice de Breslow",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Oncologia Cutânea (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Melanoma confirmado por biópsia excisional"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Índice de Breslow ≥1mm (ou ≥0,8mm com ulceração/mitoses)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Indicado pesquisa de linfonodo sentinela"
+              }
+            ]
+          },
+          {
+            "label": "Não (<0,8mm sem esses fatores)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Não obrigatório — decisão compartilhada"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Micrometástase no sentinela → imunoterapia + seguimento, SEM linfadenectomia radical"
+      }
+    ]
+  },
+  {
+    "id": "flow-farmacodermias-diagnostico",
+    "temaId": "farmacodermias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Farmacodermia grave — Reconhecimento por frase-gatilho",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Farmacodermias (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com reação cutânea após uso recente de medicamento"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Necrose cutânea + descolamento epidérmico + erosões mucosas?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "SSJ (<10% SC) / NET (>30% SC) — suspender droga, UTI/unidade de queimados"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Exantema + eosinofilia + hepatite, 2-6 semanas após anticonvulsivante?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "DRESS"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, pústulas disseminadas + neutrofilia",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "PEGA"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-escabiose-tratamento",
+    "temaId": "escabiose-pediculose",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Escabiose — Escolha do escabicida por idade/situação",
+    "revisado": true,
+    "fonte": "Estratégia MED — RE Dermatoses Infecciosas (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico clínico de escabiose (prurido noturno + túnel)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Gestante, lactante ou <2 meses?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Enxofre — droga de escolha"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Idade <5 anos ou <15kg?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Permetrina 5% tópica (ivermectina contraindicada)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Permetrina 5% ou ivermectina oral"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Tratar TODOS os contactantes, mesmo assintomáticos"
+      }
+    ]
+  },
+  {
+    "id": "flow-asa-diagnostico",
+    "temaId": "avaliacao-pre-anestesica-asa",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Classificação ASA — Aplicação a partir do quadro clínico",
+    "revisado": true,
+    "fonte": "EMR — bases Princípios da Anestesia / REMIT e Pré-Op (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente em avaliação pré-anestésica"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Doença sistêmica grave com risco iminente de morte (ex.: choque)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "ASA V (+ \"E\" se emergência)"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Comorbidades leves e bem controladas, boa capacidade funcional (>4 METS)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "ASA II — manter anti-hipertensivos, suspender antiglicemiantes orais no pré-op"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não, hígido",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "ASA I"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-via-aerea-dificil-tratamento",
+    "temaId": "via-aerea-dificil",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Via aérea em emergência — Sequência de decisão",
+    "revisado": true,
+    "fonte": "EMR — bases Procedimentos (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com insuficiência respiratória aguda em emergência"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Indicação de via aérea definitiva (rebaixamento, falência respiratória)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Sequência rápida de intubação (ex.: quetamina/etomidato + bloqueador neuromuscular)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Confirmar cuff inflado em traqueia + capnografia"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Suporte com máscara/O2 e reavaliação contínua"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Esmagamento de membro → evitar succinilcolina (risco de hipercalemia); preferir rocurônio"
+      }
+    ]
+  },
+  {
+    "id": "flow-farmacologia-anestesicos-diagnostico",
+    "temaId": "farmacologia-anestesicos-locais-gerais",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Escolha do hipnótico de indução conforme comorbidade cardiovascular",
+    "revisado": true,
+    "fonte": "EMR — bases Princípios da Anestesia (mineração autorizada)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente necessita de indução anestésica"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Coronariopata / baixa fração de ejeção / choque?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Preferir etomidato (estabilidade cardiovascular) ou cetamina no choque hipovolêmico"
+              },
+              {
+                "tipo": "alerta",
+                "texto": "Evitar cetamina isolada no coronariopata — efeito hipertensivo/simpaticomimético"
+              }
+            ]
+          },
+          {
+            "label": "Não, hemodinamicamente estável",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Propofol é opção padrão de indução"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-manejo-dor-tratamento",
+    "temaId": "manejo-dor-aguda-cronica",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Escada analgésica da OMS — Escalonamento por intensidade da dor",
+    "revisado": true,
+    "fonte": "Escala analgésica da OMS (conhecimento geral consolidado — ausência de material específico do curso registrada no comoCai)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com queixa de dor"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor leve?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Degrau 1: analgésico não-opioide (dipirona/paracetamol) ± adjuvante"
+              }
+            ]
+          },
+          {
+            "label": "Não, moderada",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Degrau 2: opioide fraco (codeína/tramadol) + degrau 1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Dor intensa/refratária → Degrau 3: opioide forte (morfina) + degrau 1, ajustado a cada reavaliação"
+      }
+    ]
   }
 ]
