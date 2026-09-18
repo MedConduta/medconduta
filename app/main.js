@@ -15,6 +15,7 @@ import * as cronograma from "./views/cronograma.js";
 import * as erros from "./views/erros.js";
 import * as prontidao from "./views/prontidao.js";
 import * as foco from "./views/foco.js";
+import * as simulados from "./views/simulados.js";
 import * as prescricaoPratica from "./views/prescricaoPratica.js";
 
 const mainEl = document.getElementById("main-content");
@@ -40,6 +41,7 @@ registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "H
 registerRoute("/residencia/cronograma", cronograma.renderCronograma, { title: "Cronograma" });
 registerRoute("/residencia/prontidao", prontidao.renderProntidao, { title: "Prontidão" });
 registerRoute("/residencia/foco", foco.renderFoco, { title: "Modo Foco" });
+registerRoute("/residencia/simulados", simulados.renderSimulados, { title: "Simulados" });
 
 registerRoute("/pratica/prescricao", prescricaoPratica.renderLista, { title: "Guia de Prescrição" });
 registerRoute("/pratica/prescricao/az", prescricaoPratica.renderIndiceMedicamentos, { title: "Medicamentos A-Z" });
