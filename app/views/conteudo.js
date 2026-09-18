@@ -2,7 +2,7 @@ import { fetchJsonCached, escapeHtml, renderMarkdown } from "../utils.js";
 import { getItem, setItem, getAll } from "../db.js";
 import { navigate } from "../router.js";
 import { AREA_POR_CATEGORIA, ORDEM_AREAS, CATEGORIAS_VALIDAS } from "../areas.js";
-import { gerarTemaComIA, gerarFlashcardsComIA, gerarQuestaoComIA, avaliarTemaComIA } from "../iaConteudo.js";
+import { gerarTemaComIA, gerarFlashcardsComIA, gerarFluxogramaComIA, gerarQuestaoComIA, avaliarTemaComIA } from "../iaConteudo.js";
 import { askAI } from "../ai.js";
 import { formatarTemaComoContexto } from "../rag.js";
 import { renderFlowchart } from "../components/flowchart.js";
@@ -35,8 +35,8 @@ async function decksDoTema(temaId) {
 }
 
 async function fluxogramasDoTema(temaId) {
-  const fluxos = await fetchJsonCached("data/fluxogramas.json");
-  return fluxos.filter((f) => f.temaId === temaId);
+  const [curados, gerados] = await Promise.all([fetchJsonCached("data/fluxogramas.json"), getAll("ia_fluxogramas")]);
+  return [...curados, ...gerados].filter((f) => f.temaId === temaId);
 }
 
 /**
@@ -234,6 +234,7 @@ function renderRelacionados({ decks, fluxos }) {
         <details class="card" style="margin-bottom:12px;">
           <summary style="cursor:pointer;font-weight:600;">
             <span class="badge badge--${fluxo.tipo}">${fluxo.tipo === "diagnostico" ? "Diagnóstico" : "Tratamento"}</span>
+            ${fluxo.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
             ${escapeHtml(fluxo.titulo)}
           </summary>
           <div style="margin-top:16px;">
@@ -357,6 +358,10 @@ export async function renderDetalhe(container, { id }) {
           <button class="btn btn--secondary" id="btn-ia-avaliar">Avaliar tema com IA</button>
           <button class="btn btn--secondary" id="btn-ia-flashcards">Gerar flashcards com IA</button>
           <button class="btn btn--secondary" id="btn-ia-questao">Gerar questão de treino</button>
+          <button class="btn btn--secondary" id="btn-ia-fluxograma">Gerar fluxograma com IA</button>
+          <button class="btn btn--secondary" id="btn-ia-pegadinhas">Pegadinhas comuns</button>
+          <button class="btn btn--secondary" id="btn-ia-memorizar">O que memorizar</button>
+          <button class="btn btn--secondary" id="btn-ia-testar">Me testar</button>
         </div>
         <div id="ia-resultado"></div>
       </div>
@@ -374,6 +379,10 @@ export async function renderDetalhe(container, { id }) {
     container.querySelector("#btn-ia-avaliar"),
     container.querySelector("#btn-ia-flashcards"),
     container.querySelector("#btn-ia-questao"),
+    container.querySelector("#btn-ia-fluxograma"),
+    container.querySelector("#btn-ia-pegadinhas"),
+    container.querySelector("#btn-ia-memorizar"),
+    container.querySelector("#btn-ia-testar"),
   ];
 
   container.querySelector("#btn-ia-explicar").addEventListener("click", () =>
@@ -424,6 +433,109 @@ export async function renderDetalhe(container, { id }) {
       botoesIA.forEach((b) => (b.disabled = false));
     }
   });
+
+  container.querySelector("#btn-ia-fluxograma").addEventListener("click", async () => {
+    botoesIA.forEach((b) => (b.disabled = true));
+    iaResultado.innerHTML = `<div class="explanation-box">Gerando fluxograma com IA (rascunho + autocrítica)...</div>`;
+    try {
+      const fluxograma = await gerarFluxogramaComIA(tema);
+      iaResultado.innerHTML = `
+        <div class="explanation-box">
+          <strong>Fluxograma criado:</strong> "${escapeHtml(fluxograma.titulo)}"
+          <div class="chat-msg__aviso">Gerado por IA, ainda não revisado — confira em fonte oficial antes de usar.</div>
+          <div style="margin-top:16px;">${renderFlowchart(fluxograma.fluxo)}</div>
+        </div>
+      `;
+    } catch (err) {
+      iaResultado.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
+    } finally {
+      botoesIA.forEach((b) => (b.disabled = false));
+    }
+  });
+
+  container.querySelector("#btn-ia-pegadinhas").addEventListener("click", () =>
+    executarChamadaLivre(iaResultado, botoesIA, () =>
+      askAI({
+        pergunta: `Quais são as pegadinhas mais comuns de prova sobre "${tema.titulo}"? O que os examinadores costumam usar pra confundir o candidato?`,
+        tarefa: "listar as pegadinhas/armadilhas mais comuns de prova sobre este tema",
+        contexto: formatarTemaComoContexto(tema),
+      })
+    )
+  );
+
+  container.querySelector("#btn-ia-memorizar").addEventListener("click", () =>
+    executarChamadaLivre(iaResultado, botoesIA, () =>
+      askAI({
+        pergunta: `Resuma o que é mais importante memorizar de cor sobre "${tema.titulo}" pra prova — números, critérios diagnósticos, doses, classificações. Seja objetivo, em lista.`,
+        tarefa: "listar os pontos que valem a pena memorizar de cor sobre este tema, de forma objetiva",
+        contexto: formatarTemaComoContexto(tema),
+      })
+    )
+  );
+
+  container.querySelector("#btn-ia-testar").addEventListener("click", () => iniciarQuizIA(iaResultado, botoesIA, tema));
+}
+
+/**
+ * "Me testar" — modo quiz simples: a IA faz uma pergunta (sem revelar a
+ * resposta), o usuário responde em texto livre, a IA corrige. Cada pergunta
+ * e cada correção são chamadas sem cache (semCache) — repetir "Me testar"
+ * tem que poder trazer uma pergunta diferente, é treino, não FAQ.
+ */
+function iniciarQuizIA(resultadoEl, botoes, tema) {
+  botoes.forEach((b) => (b.disabled = true));
+  resultadoEl.innerHTML = `<div class="explanation-box">Preparando uma pergunta...</div>`;
+
+  askAI({
+    pergunta: `Me faça UMA pergunta objetiva, estilo prova de residência, sobre "${tema.titulo}" — sem me dar a resposta, só a pergunta.`,
+    tarefa: "elaborar uma pergunta de treino oral sobre o tema, sem revelar a resposta",
+    contexto: formatarTemaComoContexto(tema),
+    semCache: true,
+  })
+    .then((pergunta) => {
+      resultadoEl.innerHTML = `
+        <div class="explanation-box">
+          <div class="ia-resposta">${renderMarkdown(pergunta)}</div>
+          <form id="form-resposta-quiz" style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
+            <textarea id="resposta-quiz" rows="3" placeholder="Sua resposta..." required></textarea>
+            <button class="btn btn--primary" type="submit" style="align-self:flex-start;">Responder</button>
+          </form>
+        </div>
+      `;
+      botoes.forEach((b) => (b.disabled = false));
+
+      resultadoEl.querySelector("#form-resposta-quiz").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const resposta = resultadoEl.querySelector("#resposta-quiz").value.trim();
+        if (!resposta) return;
+        botoes.forEach((b) => (b.disabled = true));
+        resultadoEl.innerHTML = `<div class="explanation-box">Corrigindo...</div>`;
+        try {
+          const feedback = await askAI({
+            pergunta: `Pergunta feita: "${pergunta}"\nResposta do usuário: "${resposta}"\n\nAvalie a resposta: diga se está correta, o que acertou e o que faltou ou precisa corrigir. Seja direto.`,
+            tarefa: "corrigir a resposta do usuário a uma pergunta de treino, apontando acertos e o que falta",
+            contexto: formatarTemaComoContexto(tema),
+            semCache: true,
+          });
+          resultadoEl.innerHTML = `
+            <div class="explanation-box">
+              <div class="ia-resposta">${renderMarkdown(feedback)}</div>
+              <div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial antes de usar.</div>
+              <button class="btn btn--secondary" id="btn-nova-pergunta" style="margin-top:12px;">Nova pergunta</button>
+            </div>
+          `;
+          resultadoEl.querySelector("#btn-nova-pergunta").addEventListener("click", () => iniciarQuizIA(resultadoEl, botoes, tema));
+        } catch (err) {
+          resultadoEl.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
+        } finally {
+          botoes.forEach((b) => (b.disabled = false));
+        }
+      });
+    })
+    .catch((err) => {
+      resultadoEl.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
+      botoes.forEach((b) => (b.disabled = false));
+    });
 }
 
 async function executarChamadaLivre(resultadoEl, botoes, chamada) {
