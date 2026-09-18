@@ -661,7 +661,7 @@
     "categoria": "Pediatria",
     "titulo": "Icterícia Neonatal",
     "resumo": "Diferenciação fisiológica x patológica e indicação de fototerapia na icterícia do recém-nascido.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Pediatria — Documento Científico de Icterícia Neonatal; AAP Clinical Practice Guideline on Hyperbilirubinemia",
     "mnemonicos": [
       {
@@ -680,7 +680,7 @@
       },
       {
         "titulo": "Exame físico",
-        "conteudo": "A avaliação visual seguindo a progressão craniocaudal (zonas de Kramer) fornece estimativa aproximada do nível de bilirrubina, mas deve sempre ser confirmada por dosagem laboratorial antes de decisões terapêuticas, já que a avaliação visual isolada tem acurácia limitada, especialmente em recém-nascidos de pele mais pigmentada."
+        "conteudo": "A avaliação visual seguindo a progressão craniocaudal (zonas de Kramer) fornece estimativa aproximada do nível de bilirrubina, mas deve sempre ser confirmada por dosagem laboratorial antes de decisões terapêuticas, já que a avaliação visual isolada tem acurácia limitada, especialmente em recém-nascidos de pele mais pigmentada.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Zona de Kramer</th><th>Extensão</th><th>Bilirrubina estimada</th></tr></thead><tbody><tr><td>Zona 1</td><td>Cabeça e pescoço</td><td>≈6 mg/dL</td></tr><tr><td>Zona 2</td><td>Tronco até o umbigo</td><td>≈9 mg/dL</td></tr><tr><td>Zona 3</td><td>Hipogástrio e coxas</td><td>≈12 mg/dL</td></tr><tr><td>Zona 4</td><td>Joelhos/tornozelos até punhos/cotovelos</td><td>≈15 mg/dL</td></tr><tr><td>Zona 5</td><td>Mãos e pés (palmas/plantas)</td><td>&gt;15 mg/dL</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Diagnóstico",
@@ -698,7 +698,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre icterícia fisiológica (após 24h, resolve em 1-2 semanas) e patológica (antes de 24h, ou muito intensa/prolongada) é cobrança certa. O uso de nomogramas específicos por hora de vida (não apenas valor absoluto de bilirrubina) para decidir fototerapia, e a investigação obrigatória de incompatibilidade sanguínea em icterícia precoce, também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "O material do curso preparatório trata a icterícia como um dos assuntos mais frequentes do período neonatal, com regra mnemônica \"passou do umbigo, sinal de perigo\" para lembrar que icterícia além da zona 3 de Kramer (abaixo do umbigo) já corresponde a bilirrubina estimada acima de 12mg/dL, saindo da faixa fisiológica. Uma pegadinha clássica citada explicitamente é a diferenciação entre incompatibilidade Rh (mãe Rh negativo, RN Rh positivo, geralmente a partir da 2ª gestação, Coombs direto e indireto positivos) e incompatibilidade ABO (mãe O, RN A ou B, independe de paridade, Coombs geralmente negativo ou fracamente positivo, tratada apenas com fototerapia, sem indicação de profilaxia). Outra dica de prova é que icterícia em neonato saudável e mais \"velho\" (após a 1ª semana) sugere icterícia do LEITE MATERNO (não confundir com icterícia da amamentação, mais precoce, por baixa oferta láctea). O banho de sol, apesar de crença popular, é contraindicado pela SBP e costuma aparecer como distrator. Uma questão real e verificada da própria banca SES-PE (2019) usa exatamente o raciocínio de reconhecer reabsorção de coleções sanguíneas (como bolsa serossanguinolenta) como causa de icterícia em recém-nascido de parto domiciliar, e outra questão real da SES-PE (2020.2, R3 Pediatria) cobra a indicação de fototerapia por gráfico de idade gestacional, testando se o candidato reconhece que um pré-termo com sinais de hemólise precisa de fototerapia mesmo com bilirrubina numericamente semelhante à de um termo saudável em observação."
   },
   {
     "id": "diarreia-infantil",
@@ -706,7 +707,7 @@
     "categoria": "Pediatria",
     "titulo": "Diarreia Aguda e Desidratação na Infância",
     "resumo": "Classificação do grau de desidratação e planos de hidratação (A, B, C) da OMS.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Pediatria; Organização Mundial da Saúde — Manejo Integrado das Doenças Prevalentes na Infância (AIDPI)",
     "mnemonicos": [
       {
@@ -733,7 +734,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Terapia de reidratação oral com solução de reidratação padronizada é o pilar do tratamento na maioria dos casos (planos A para prevenção em casa e B para desidratação leve/moderada em unidade de saúde), com eficácia comprovada e equivalente à reidratação venosa nos casos não graves, além de menor custo e risco. Reidratação venosa (plano C) é reservada a desidratação grave/choque. Zinco suplementar reduz duração e gravidade dos episódios e é recomendado rotineiramente pela OMS em crianças com diarreia aguda. Antibióticos não são indicados rotineiramente (a maioria é viral), sendo reservados a etiologias bacterianas específicas com indicação formal."
+        "conteudo": "Terapia de reidratação oral com solução de reidratação padronizada é o pilar do tratamento na maioria dos casos (planos A para prevenção em casa e B para desidratação leve/moderada em unidade de saúde), com eficácia comprovada e equivalente à reidratação venosa nos casos não graves, além de menor custo e risco. Reidratação venosa (plano C) é reservada a desidratação grave/choque. Zinco suplementar reduz duração e gravidade dos episódios e é recomendado rotineiramente pela OMS em crianças com diarreia aguda. Antibióticos não são indicados rotineiramente (a maioria é viral), sendo reservados a etiologias bacterianas específicas com indicação formal.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Sinal</th><th>Desidratação</th><th>Desidratação GRAVE (com asterisco)</th></tr></thead><tbody><tr><td>Estado geral</td><td>Irritado/inquieto</td><td>*Comatoso, hipotônico</td></tr><tr><td>Olhos</td><td>Fundos</td><td>Muito fundos e secos</td></tr><tr><td>Sede</td><td>Sedento, bebe rápido/avidamente</td><td>*Bebe mal ou não é capaz de beber</td></tr><tr><td>Sinal da prega</td><td>Desaparece lentamente</td><td>Desaparece muito lentamente (&gt;2s)</td></tr><tr><td>Pulso</td><td>Normal</td><td>*Fraco ou ausente</td></tr><tr><td colspan=\"3\">2 ou mais sinais = desidratação (Plano B); 2 ou mais sinais, sendo ao menos 1 com asterisco = desidratação grave (Plano C)</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -743,7 +744,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A classificação da OMS/AIDPI em planos A, B e C conforme os sinais de desidratação é cobrança certíssima e extremamente recorrente em provas de residência pediátrica e saúde pública (ENAMED). A preferência pela reidratação oral sobre a venosa sempre que possível, e a suplementação de zinco como recomendação da OMS, também são frequentemente exigidas."
       }
-    ]
+    ],
+    "comoCai": "A composição da SRO (osmolaridade 245 mOsm/L, glicose e sódio 75 mEq/L cada) e a diferenciação por planos de desidratação (A/B/C do Ministério da Saúde) são os pontos centrais cobrados. A regra de decisão do plano é objetiva: 2 ou mais sinais alterados já definem desidratação, e 2 ou mais sinais alterados incluindo pelo menos 1 com asterisco (nível de consciência rebaixado, incapacidade de beber, pulso fraco/ausente) definem desidratação GRAVE — regra prática do curso: se o examinador usa a palavra \"muito\" no enunciado ou descreve rebaixamento de consciência, a resposta é sempre grave (Plano C). Os volumes de expansão do Plano C também são cobrados com números exatos: 30 mL/kg de SF0,9%/Ringer lactato na 1ª hora seguidos de 70 mL/kg nas 5 horas seguintes (em maiores de 1 ano, 30 min + 2h30). Uma pegadinha citada com destaque é que a intolerância transitória à lactose (não o próprio rotavírus, que hoje tende a ser autolimitado) é a principal causa de diarreia persistente após quadro agudo viral. Uma questão real e verificada da própria SES-PE (2023.2) descreve exatamente um quadro de desidratação grave (tempo de enchimento capilar de 4 segundos, mucosas secas, olhos fundos, pouco responsiva) cuja conduta correta é hidratação venosa imediata em esquema de Plano C, sem perder tempo tentando via oral."
   },
   {
     "id": "vigilancia-epidemiologica",
@@ -980,7 +982,7 @@
     "categoria": "Pediatria",
     "titulo": "Puericultura e Calendário Vacinal (PNI)",
     "resumo": "Acompanhamento do crescimento/desenvolvimento e principais vacinas do calendário nacional de imunização.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Pediatria; Ministério da Saúde — Calendário Nacional de Vacinação (PNI)",
     "mnemonicos": [
       {
@@ -1007,7 +1009,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Diante de atraso vacinal identificado, deve-se sempre buscar completar o esquema o mais rápido possível (\"vacinação atrasada\" não significa reiniciar o esquema do zero na maioria dos imunobiológicos, mas sim continuar a partir do ponto onde a criança está, respeitando os intervalos mínimos entre doses). Orientações nutricionais (aleitamento materno exclusivo até 6 meses, introdução alimentar adequada) e orientações antecipatórias sobre prevenção de acidentes são parte integrante e essencial da consulta de puericultura em cada faixa etária."
+        "conteudo": "Diante de atraso vacinal identificado, deve-se sempre buscar completar o esquema o mais rápido possível (\"vacinação atrasada\" não significa reiniciar o esquema do zero na maioria dos imunobiológicos, mas sim continuar a partir do ponto onde a criança está, respeitando os intervalos mínimos entre doses). Orientações nutricionais (aleitamento materno exclusivo até 6 meses, introdução alimentar adequada) e orientações antecipatórias sobre prevenção de acidentes são parte integrante e essencial da consulta de puericultura em cada faixa etária.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Combinação de vacinas</th><th>Intervalo mínimo</th></tr></thead><tbody><tr><td>Inativada + inativada</td><td>Mesmo dia ou qualquer intervalo</td></tr><tr><td>Inativada + viva</td><td>Mesmo dia ou qualquer intervalo</td></tr><tr><td>Viva + viva</td><td>Mesmo dia OU pelo menos 4 semanas de intervalo</td></tr><tr><td>Tríplice/tetra viral + febre amarela (&lt;2 anos)</td><td>EXCEÇÃO: nunca no mesmo dia — mínimo 15 dias, idealmente 30 dias</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -1017,7 +1019,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O calendário nacional de vacinação (idades, doses e intervalos mínimos) é cobrança extremamente recorrente e detalhada em provas de residência e concursos de saúde pública brasileiros, exigindo conhecimento preciso das idades-alvo de cada imunobiológico. O conceito de que atraso vacinal não exige reinício do esquema (apenas continuação respeitando intervalos mínimos) também é frequentemente testado."
       }
-    ]
+    ],
+    "comoCai": "O próprio curso afirma que imunizações são \"o assunto mais prevalente em provas\" dentro de toda a Pediatria (1º lugar no ranking de frequência que o curso levanta a partir das provas dos últimos anos). A regra de coadministração de vacinas é ponto certo: duas vacinas inativadas, ou uma inativada com uma viva, podem ser aplicadas no mesmo dia ou com qualquer intervalo; já duas vacinas vivas devem ser aplicadas no mesmo dia OU com pelo menos 4 semanas de intervalo — com uma exceção clássica de pegadinha: tríplice/tetra viral e febre amarela em crianças menores de 2 anos NÃO podem ser aplicadas no mesmo dia, exigindo intervalo mínimo de 15 dias (idealmente 30), por perda de imunogenicidade. Outra regra fechada é que perda de caderneta vacinal exige revacinação completa, EXCETO a BCG, cuja cicatriz já serve como comprovação — e que esquema incompleto deve sempre ser completado com as doses faltantes, nunca reiniciado (\"dose dada não é dose perdida\"). A imunidade de rebanho só é válida para doenças de transmissão interpessoal, ponto que o curso destaca como fonte de confusão. Já do lado da puericultura geral, os parâmetros antropométricos do primeiro ano (peso dobra entre 4-5 meses, triplica com 1 ano) são cobrados com frequência combinados aos marcos de calendário vacinal."
   },
   {
     "id": "sepse-neonatal",
@@ -1025,7 +1028,7 @@
     "categoria": "Pediatria",
     "titulo": "Sepse Neonatal",
     "resumo": "Classificação precoce x tardia, fatores de risco e manejo inicial da sepse no recém-nascido.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Pediatria; AAP Clinical Practice Guideline on Management of Neonates with Suspected Early-Onset Sepsis",
     "mnemonicos": [
       {
@@ -1052,7 +1055,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Antibioticoterapia empírica endovenosa (tipicamente ampicilina associada a aminoglicosídeo, cobrindo os agentes mais prováveis da sepse precoce) deve ser iniciada prontamente diante de suspeita clínica razoável, sem aguardar confirmação laboratorial completa — o atraso terapêutico em sepse neonatal associa-se a rápida deterioração e mortalidade significativamente maior nessa população particularmente vulnerável. Suporte hemodinâmico e respiratório é fornecido conforme a gravidade do quadro."
+        "conteudo": "Antibioticoterapia empírica endovenosa (tipicamente ampicilina associada a aminoglicosídeo, cobrindo os agentes mais prováveis da sepse precoce) deve ser iniciada prontamente diante de suspeita clínica razoável, sem aguardar confirmação laboratorial completa — o atraso terapêutico em sepse neonatal associa-se a rápida deterioração e mortalidade significativamente maior nessa população particularmente vulnerável. Suporte hemodinâmico e respiratório é fornecido conforme a gravidade do quadro.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Classificação</th><th>Início</th><th>Agentes (\"GeLo de COCO\")</th><th>Antibiótico empírico</th></tr></thead><tbody><tr><td>Sepse precoce</td><td>Até 72h de vida</td><td>GBS, Listeria, E. coli, E. coli coagulase-negativo</td><td>Ampicilina + Gentamicina</td></tr><tr><td>Sepse tardia</td><td>Após 72h de vida</td><td>Estafilococo coagulase-negativo, S. aureus, E. coli, fungos (GBS também pode causar)</td><td>Oxacilina + Amicacina</td></tr><tr><td colspan=\"4\">Meningite associada: somar cefalosporina de 3ª/4ª geração. Duração: 7-10 dias.</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -1062,7 +1065,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "Os fatores de risco maternos para sepse neonatal precoce (colonização por estreptococo do grupo B, rotura prolongada de membranas, corioamnionite) e sua relação com a decisão de investigar/tratar o recém-nascido são cobrança certa e recorrente. O esquema antibiótico empírico padrão (ampicilina + aminoglicosídeo) também é frequentemente exigido."
       }
-    ]
+    ],
+    "comoCai": "O curso classifica sepse neonatal como tema de baixa incidência mas alto custo-benefício (\"seu conhecimento pode garantir uma questãozinha a mais\"), destacando explicitamente o cenário do recém-nascido de mãe colonizada por Streptococcus do grupo B (GBS), com ou sem profilaxia intraparto, como \"provavelmente o tópico mais cobrado\" dentro da sepse neonatal. O mnemônico \"GeLo de COCO\" organiza os agentes da sepse precoce (até 72h): GBS, Listeria, E. coli e E. coli coagulase-negativo. A regra de antibioticoterapia é fechada: sepse PRECOCE trata-se com ampicilina + gentamicina; sepse TARDIA (após 72h) com oxacilina + amicacina; se houver meningite associada, soma-se uma cefalosporina de 3ª/4ª geração. Uma pegadinha citada explicitamente é que distress respiratório nas primeiras 6 horas de vida ainda deve ser apenas observado clinicamente, sem já considerar sepse. O curso também alerta que \"o manejo da sepse não é consenso entre os autores\", o que gera questões controversas — reforçando a importância de memorizar a tabela de conduta por cenário clínico (sintomático x assintomático, com ou sem fator de risco) em vez de tentar raciocinar cada caso do zero."
   },
   {
     "id": "fa",
@@ -1396,7 +1400,7 @@
     "categoria": "Pediatria",
     "titulo": "Doenças Exantemáticas da Infância",
     "resumo": "Diagnóstico diferencial entre sarampo, rubéola, exantema súbito, eritema infeccioso e varicela.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Pediatria; Ministério da Saúde — Guia de Vigilância em Saúde",
     "mnemonicos": [
       {
@@ -1433,7 +1437,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O padrão característico de cada exantemática (manchas de Koplik no sarampo, febre que cede quando o exantema surge na roséola, face esbofeteada no eritema infeccioso, polimorfismo lesional na varicela, língua em framboesa na escarlatina) é cobrança certíssima e extremamente recorrente, frequentemente através de descrições clínicas detalhadas ou fotos para reconhecimento direto."
       }
-    ]
+    ],
+    "comoCai": "O próprio curso classifica doenças exantemáticas como \"top 5 da Pediatria\", com o aviso explícito de que \"todas as doenças deste resumo podem ser diagnosticadas com a história clínica e o exame físico\" — ou seja, sem necessidade de exames complementares na maioria dos casos. A maioria das questões, segundo o material, é simples: um caso clínico pedindo diagnóstico e agente etiológico. O padrão mais clássico de prova é o do Exantema Súbito: febre alta por poucos dias que cede espontaneamente e, na defervescência (quando a febre já passou), surge o exantema — padrão que costuma confundir quem espera o exantema durante a febre, como ocorre nas demais exantemáticas. O protocolo de manejo de contactantes de Sarampo também é cobrado: crianças maiores de 6 meses recebem tríplice viral até 3 dias do contato, e menores de 6 meses recebem imunoglobulina até 6 dias do contato."
   },
   {
     "id": "principios-sus",
@@ -2226,7 +2231,7 @@
     "categoria": "Pediatria",
     "titulo": "IVAS e Otite Média Aguda",
     "resumo": "Diagnóstico da otite média aguda e critérios para tratamento antibiótico x observação.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Pediatria; AAP Clinical Practice Guideline for Acute Otitis Media",
     "mnemonicos": [
       {
@@ -2263,7 +2268,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O abaulamento timpânico como achado mais específico de otite média aguda (diferenciando de otite média com efusão) é cobrança certa. A estratégia de observação vigilante versus antibiótico imediato conforme idade e gravidade também é ponto de atualização de diretriz frequentemente exigido em provas mais recentes, que buscam reduzir o uso excessivo de antibióticos em otite leve autolimitada."
       }
-    ]
+    ],
+    "comoCai": "O curso quantifica a distribuição das IVAS nas provas dos últimos anos: faringites lideram com cerca de 33% das questões, seguidas de otites (\"segundo tema mais cobrado das IVAS\") e rinossinusites com incidência praticamente equivalente entre si. Dentro das faringites, a mononucleose infecciosa é chamada de \"a faringite mais cobrada\", sobretudo como diagnóstico diferencial de Kawasaki, amigdalite estreptocócica, leucemias e linfomas — e metade das questões sobre faringite estreptocócica é especificamente sobre tratamento (penicilina/amoxicilina, com penicilina benzatina adicional se história de febre reumática). Na otite média aguda, o tratamento também domina a cobrança (aproximadamente metade das questões do tema), com o \"pódio\" de agentes citado como certo de prova: S. pneumoniae, H. influenzae e M. catarrhalis — os mesmos três agentes centrais da rinossinusite bacteriana. Um critério da Academia Americana de Pediatria cobrado é quando a antibioticoterapia é obrigatória de imediato em OMA (em vez de conduta expectante/\"watchful waiting\"): otorreia, quadro bilateral, ou sintomas graves/prolongados — situações que não permitem esperar 48-72h de observação."
   },
   {
     "id": "asma-infantil",
@@ -2271,7 +2277,7 @@
     "categoria": "Pediatria",
     "titulo": "Asma na Infância",
     "resumo": "Classificação de controle e tratamento de manutenção da asma em crianças.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Pediatria; Global Initiative for Asthma (GINA) — versão pediátrica",
     "mnemonicos": [
       {
@@ -2294,7 +2300,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Em crianças maiores (geralmente acima de 5-6 anos), capazes de realizar espirometria adequadamente, a demonstração de obstrução reversível ao broncodilatador confirma objetivamente o diagnóstico. Em pré-escolares, o diagnóstico é predominantemente clínico, baseado no padrão de sintomas e na resposta terapêutica a um período de tratamento de prova, dada a impossibilidade técnica de realizar espirometria confiável nessa faixa etária."
+        "conteudo": "Em crianças maiores (geralmente acima de 5-6 anos), capazes de realizar espirometria adequadamente, a demonstração de obstrução reversível ao broncodilatador confirma objetivamente o diagnóstico. Em pré-escolares, o diagnóstico é predominantemente clínico, baseado no padrão de sintomas e na resposta terapêutica a um período de tratamento de prova, dada a impossibilidade técnica de realizar espirometria confiável nessa faixa etária.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Parâmetro</th><th>Leve/Moderada</th><th>Grave</th></tr></thead><tbody><tr><td>Saturação de O2</td><td>90-95%</td><td>&lt;90%</td></tr><tr><td>Pico de fluxo expiratório (PFE)</td><td>&gt;50% do previsto</td><td>≤50% do previsto</td></tr><tr><td colspan=\"3\">Alta hospitalar: melhora clínica + PFE ≥60% do previsto por 3-4h sem necessidade de manter SABA</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -2308,7 +2314,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A dificuldade diagnóstica em pré-escolares (diferenciação entre asma verdadeira e sibilância viral transitória, usando fatores preditivos de atopia) é cobrança recorrente em provas de pediatria. O corticoide inalatório como base do tratamento controlador (mesmo em asma persistente leve) e a importância da técnica inalatória adequada também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "O material organiza toda a classificação e o tratamento da asma em duas faixas etárias pediátricas distintas (6-11 anos e menores de 6 anos), refletindo a própria estratificação oficial do GINA — separação que deve orientar a leitura de qualquer questão de prova sobre o tema, já que a conduta muda conforme a faixa. Um dado cobrado com frequência é a inversão do predomínio por sexo entre infância e vida adulta: meninos são mais afetados na infância (8,3% x 6,7% em meninas), padrão que se inverte na vida adulta (mulheres 9,8% x homens 5,5%). Uma atualização recente do GINA, destacada explicitamente pelo curso, mudou o alvo de saturação na exacerbação: antes 94-98%, hoje simplesmente \"maior ou igual a 94%, sem limite superior\" — ponto sensível a pegadinhas de prova desatualizada. A primeira atitude diante de uma crise aguda de asma, segundo o próprio curso, é sempre classificar a gravidade antes de definir a conduta terapêutica."
   },
   {
     "id": "indicadores-saude",
@@ -3003,7 +3010,7 @@
     "categoria": "Pediatria",
     "titulo": "Reanimação Neonatal na Sala de Parto",
     "resumo": "Sequência de avaliação e reanimação do recém-nascido logo após o nascimento.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Pediatria — Programa de Reanimação Neonatal; American Heart Association/American Academy of Pediatrics NRP Guidelines",
     "mnemonicos": [
       {
@@ -3030,7 +3037,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Os passos iniciais (prover calor, posicionar via aérea, aspirar se necessário, secar e estimular) são realizados nos primeiros 30 segundos. Ventilação com pressão positiva é iniciada se apneia, respiração irregular/gasping, ou frequência cardíaca abaixo de 100bpm — sendo a intervenção mais importante de toda a sequência. Compressões torácicas (relação 3:1 com ventilação) são iniciadas se FC <60bpm apesar de ventilação adequada por 30 segundos. Adrenalina é indicada se FC permanecer <60bpm apesar de ventilação e compressões adequadas, sendo etapa final e menos comum do algoritmo."
+        "conteudo": "Os passos iniciais (prover calor, posicionar via aérea, aspirar se necessário, secar e estimular) são realizados nos primeiros 30 segundos. Ventilação com pressão positiva é iniciada se apneia, respiração irregular/gasping, ou frequência cardíaca abaixo de 100bpm — sendo a intervenção mais importante de toda a sequência. Compressões torácicas (relação 3:1 com ventilação) são iniciadas se FC <60bpm apesar de ventilação adequada por 30 segundos. Adrenalina é indicada se FC permanecer <60bpm apesar de ventilação e compressões adequadas, sendo etapa final e menos comum do algoritmo.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Minuto de vida</th><th>Saturação pré-ductal alvo</th></tr></thead><tbody><tr><td>Até 5 min</td><td>70-80%</td></tr><tr><td>5-10 min</td><td>80-90%</td></tr><tr><td>Após 10 min</td><td>85-95%</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -3040,7 +3047,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A sequência do algoritmo de reanimação neonatal (passos iniciais → ventilação com pressão positiva → compressões torácicas → adrenalina, guiados pela frequência cardíaca) é cobrança certíssima e um dos temas mais importantes e mais decorados de toda a pediatria em provas de residência. A ventilação como intervenção mais crítica (\"a via aérea é rainha\" na reanimação neonatal) e os passos corretivos de ventilação antes de progredir para compressões também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "As três perguntas que decidem a conduta inicial em sala de parto são cobradas de forma quase literal: \"RN é maior de 34 semanas? Respira ou chora? Tem bom tônus?\" — o próprio curso frisa que, nesse primeiro momento, cor da pele, aspecto do líquido amniótico, frequência cardíaca inicial e o próprio escore de Apgar NÃO entram nessa decisão (o Apgar demora a ser calculado demais para orientar a conduta imediata). O conceito de \"Golden Minute\" é central: os passos iniciais devem durar no máximo 30 segundos, e a ventilação com pressão positiva deve começar antes dos 60 segundos de vida. A tabela de saturação pré-ductal alvo por minuto de vida é citada como decoreba clássica e armadilha de prova, já que um aluno desatento pode estranhar uma saturação de 70% logo após o nascimento (que é normal até os 5 minutos). Um ponto de atenção explícito é a mudança do corte de frequência cardíaca durante o algoritmo: antes de intubar, reavalia-se a TÉCNICA da ventilação se a FC estiver abaixo de 100bpm; só após intubação e ventilação adequada o corte que indica massagem cardíaca cai para 60bpm — trocar esses dois números é pegadinha citada explicitamente pelo curso."
   },
   {
     "id": "bronquiolite-viral-aguda",
@@ -3048,7 +3056,7 @@
     "categoria": "Pediatria",
     "titulo": "Bronquiolite Viral Aguda",
     "resumo": "Diagnóstico clínico e tratamento essencialmente de suporte na bronquiolite do lactente.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Pediatria; AAP Clinical Practice Guideline for Bronchiolitis",
     "mnemonicos": [
       {
@@ -3085,7 +3093,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A ausência de indicação rotineira de broncodilatador, corticoide e antibiótico na bronquiolite viral típica é cobrança certa e ponto de atualização de diretriz muito valorizado, testando a resistência do candidato à tentação intuitiva de tratar sibilância sempre com broncodilatador como na asma. O caráter fundamentalmente clínico do diagnóstico, dispensando exames de rotina, também é frequentemente exigido."
       }
-    ]
+    ],
+    "comoCai": "O curso dedica uma seção inteira a três condutas frequentemente cobradas como armadilha na bronquiolite: broncodilatadores (não reduzem hospitalização nem tempo de internação — uma prova terapêutica pode ser tentada, mas deve ser suspensa se não houver resposta clara), fisioterapia respiratória (sem benefício comprovado na maioria das diretrizes, exceto em atelectasia/comorbidades específicas) e corticosteroides (contraindicados, sistêmicos ou inalatórios, porque não melhoram sintomas nem previnem evolução para asma). O material introduz esse bloco avisando textualmente: \"preste atenção, isso cai na prova!\" — reforçando que a conduta correta na maioria dos casos típicos é apenas suporte (nebulização com soro fisiológico, hidratação, oxigênio se necessário), sem intervenções medicamentosas de rotina."
   },
   {
     "id": "estenose-hipertrofica-piloro",
@@ -3093,7 +3102,7 @@
     "categoria": "Pediatria",
     "titulo": "Estenose Hipertrófica do Piloro",
     "resumo": "Quadro clínico clássico, distúrbio metabólico associado e tratamento cirúrgico definitivo.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Cirurgia Pediátrica; Sociedade Brasileira de Pediatria",
     "mnemonicos": [
       {
@@ -3130,7 +3139,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A obrigatoriedade de corrigir a alcalose metabólica hipoclorêmica antes da cirurgia (nunca operar em urgência sem essa correção prévia) é cobrança certíssima e um dos pontos de segurança mais importantes de toda a cirurgia pediátrica em provas de residência. A oliva pilórica palpável e o vômito não bilioso em jato com apetite mantido também são achados semiológicos muito valorizados e recorrentes."
       }
-    ]
+    ],
+    "comoCai": "O material disponível confirma o quadro clássico cobrado em prova: lactente entre 2-8 semanas de vida, mais comum em meninos primogênitos, com vômitos NÃO biliosos em jato, cada vez mais frequentes, mas mantendo apetite preservado (\"a criança continua com fome\" logo após vomitar). O achado mais valorizado é a oliva pilórica palpável em quadrante superior direito/epigástrio: quando presente, o próprio material ensina que nenhum exame adicional é necessário para confirmar o diagnóstico — regra de decisão explícita frequentemente usada em pegadinhas que pedem \"qual o próximo exame?\" quando na verdade a resposta é \"nenhum, já se pode operar\". A USG (espessamento muscular acima de 3-4mm, comprimento do canal acima de 15-18mm) é reservada para quando a oliva não é palpável. Outro ponto de atenção citado é que a distorção hidroeletrolítica clássica (alcalose metabólica hipoclorêmica e hipocalêmica, por vômitos repetidos de conteúdo gástrico ácido) precisa ser corrigida ANTES da cirurgia — a estenose pilórica não é uma emergência cirúrgica imediata; a verdadeira urgência é a correção hidroeletrolítica, e só depois vem a piloromiotomia de Fredet-Ramstedt."
   },
   {
     "id": "etica-medica-bioetica",
