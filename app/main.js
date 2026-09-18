@@ -31,7 +31,7 @@ registerRoute("/residencia/revisao", revisao.renderRevisao, { title: "Revisão e
 registerRoute("/residencia/flashcards", flashcards.renderLista, { title: "Flashcards" });
 registerRoute("/residencia/flashcards/:deckId", flashcards.renderEstudo, { title: "Flashcards" });
 registerRoute("/residencia/questoes", questoes.renderLista, { title: "Questões" });
-registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "Planejador do dia" });
+registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "Hoje" });
 
 registerRoute("/pratica/prescricao", prescricaoPratica.renderLista, { title: "Guia de Prescrição" });
 registerRoute("/pratica/prescricao/az", prescricaoPratica.renderIndiceMedicamentos, { title: "Medicamentos A-Z" });

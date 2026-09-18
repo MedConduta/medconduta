@@ -48,7 +48,7 @@ export async function renderRevisao(container) {
           <div class="empty-state">
             <h2>Revisão do dia concluída ✓</h2>
             <p>Você revisou ${vencidos.length} card(s) vencido(s).</p>
-            <a class="btn btn--primary" href="#/residencia/planejador" style="margin-top:12px;">Ver planejador do dia</a>
+            <a class="btn btn--primary" href="#/residencia/planejador" style="margin-top:12px;">Ver Hoje</a>
           </div>
         </div>
       `;

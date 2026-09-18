@@ -1,16 +1,59 @@
 import { fetchJsonCached } from "./utils.js";
 import { getAll } from "./db.js";
 import { estaVencido } from "./sm2.js";
+import { pesoProva } from "./areas.js";
 
 const MIN_POR_REVISAO_VENCIDA = 8; // flashcard/revisão pontual
 const MIN_POR_TEMA_NOVO = 25; // leitura de um tema completo
 const MIN_POR_QUESTOES_BLOCO = 15; // bloco de ~5 questões
 
+// Desempenho (0-1) assumido para uma categoria sem nenhuma questão respondida
+// ainda — nem "dominado" nem "fraco", só sem dado. Assim que o usuário
+// responde questões daquela categoria, o valor real substitui esse padrão.
+const DESEMPENHO_PADRAO_SEM_DADO = 0.6;
+
+/**
+ * Calcula, por categoria (ex.: "Cardiologia"), a taxa de acerto nas questões
+ * já respondidas pelo usuário (histórico salvo em `respostas`, ver Fase 2).
+ * Retorna um Map categoria -> { taxa: 0-1, total: nº de tentativas }.
+ */
+export function calcularDesempenhoPorCategoria(respostas) {
+  const agregados = new Map();
+  for (const r of respostas) {
+    if (!r.categoria) continue;
+    const atual = agregados.get(r.categoria) || { acertos: 0, total: 0 };
+    atual.total += 1;
+    if (r.acertou) atual.acertos += 1;
+    agregados.set(r.categoria, atual);
+  }
+  const resultado = new Map();
+  for (const [categoria, { acertos, total }] of agregados) {
+    resultado.set(categoria, { taxa: acertos / total, total });
+  }
+  return resultado;
+}
+
+/**
+ * Score de prioridade de uma categoria: cresce com o peso da categoria na
+ * prova (incidência estimada, ver areas.js) e com o quanto o desempenho do
+ * usuário nela está abaixo do ideal. Uma categoria de alta incidência com
+ * baixo desempenho fica no topo; uma de baixa incidência já dominada fica
+ * no fim — mesma lógica do "80/20" (alta incidência + baixo domínio =
+ * prioridade máxima).
+ */
+export function calcularScorePrioridade(categoria, desempenhoPorCategoria) {
+  const info = desempenhoPorCategoria.get(categoria);
+  const taxa = info ? info.taxa : DESEMPENHO_PADRAO_SEM_DADO;
+  return pesoProva(categoria) * (1 + (1 - taxa));
+}
+
 /**
  * Monta a fila de estudo do dia priorizando:
- * 1) Revisões espaçadas vencidas (flashcards)
- * 2) Temas novos/pendentes (ainda não marcados como estudados)
- * 3) Bloco de questões de reforço
+ * 1) Revisões espaçadas vencidas (flashcards) — sempre primeiro, nunca some.
+ * 2) Temas novos/pendentes, ordenados pelo score de prioridade da categoria
+ *    (incidência × fragilidade), não pela ordem em que aparecem no arquivo.
+ * 3) Bloco de questões, direcionado para a categoria de maior prioridade que
+ *    ainda tem questões cadastradas.
  * dimensionando a carga ao tempo disponível informado pelo usuário (em horas).
  */
 export async function gerarPlanoDoDia(horasDisponiveis) {
@@ -18,15 +61,26 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   let minutosRestantes = minutosDisponiveis;
   const fila = [];
 
-  const [temas, flashcardsDecks, srsRecords, progresso] = await Promise.all([
+  const [temas, flashcardsDecks, questoes, srsRecords, progresso, respostas] = await Promise.all([
     fetchJsonCached("data/temas.json"),
     fetchJsonCached("data/flashcards.json"),
+    fetchJsonCached("data/questoes.json"),
     getAll("srs"),
     getAll("progresso"),
+    getAll("respostas"),
   ]);
 
   const srsMap = new Map(srsRecords.map((r) => [r.id, r]));
   const progressoSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
+  const desempenhoPorCategoria = calcularDesempenhoPorCategoria(respostas);
+
+  // Ranking de categorias por prioridade (maior score primeiro) — usado para
+  // ordenar temas pendentes e para escolher o foco do bloco de questões.
+  const categorias = [...new Set(temas.map((t) => t.categoria))];
+  const rankingCategorias = categorias
+    .map((categoria) => ({ categoria, score: calcularScorePrioridade(categoria, desempenhoPorCategoria) }))
+    .sort((a, b) => b.score - a.score);
+  const scorePorCategoria = new Map(rankingCategorias.map((r) => [r.categoria, r.score]));
 
   // 1) Revisões vencidas — junta todos os cards de todos os decks e filtra vencidos
   const todosCards = flashcardsDecks.flatMap((deck) =>
@@ -46,8 +100,11 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     minutosRestantes -= MIN_POR_REVISAO_VENCIDA;
   }
 
-  // 2) Temas novos/pendentes — ainda não marcados como concluídos
-  const temasPendentes = temas.filter((t) => !progressoSet.has(t.id));
+  // 2) Temas novos/pendentes — ordenados por prioridade (incidência × fragilidade)
+  const temasPendentes = temas
+    .filter((t) => !progressoSet.has(t.id))
+    .sort((a, b) => (scorePorCategoria.get(b.categoria) ?? 0) - (scorePorCategoria.get(a.categoria) ?? 0));
+
   for (const tema of temasPendentes) {
     if (minutosRestantes < MIN_POR_TEMA_NOVO / 2) break;
     fila.push({
@@ -60,17 +117,27 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     minutosRestantes -= MIN_POR_TEMA_NOVO;
   }
 
-  // 3) Bloco de questões — preenche o tempo restante
-  while (minutosRestantes >= MIN_POR_QUESTOES_BLOCO) {
+  // 3) Bloco de questões — direcionado à categoria de maior prioridade que
+  // ainda tenha questões cadastradas (evita recomendar uma categoria vazia).
+  const temaIdParaCategoria = new Map(temas.map((t) => [t.id, t.categoria]));
+  const categoriasComQuestao = new Set(
+    questoes.map((q) => temaIdParaCategoria.get(q.temaId)).filter(Boolean)
+  );
+  const categoriaFoco = rankingCategorias.find((r) => categoriasComQuestao.has(r.categoria))?.categoria ?? null;
+
+  let blocosQuestoes = 0;
+  while (minutosRestantes >= MIN_POR_QUESTOES_BLOCO && blocosQuestoes < 3) {
     fila.push({
       tipo: "questoes",
       titulo: "Bloco de questões de reforço",
-      detalhe: "Resolva um bloco de questões comentadas para fixar os temas do dia.",
+      detalhe: categoriaFoco
+        ? `Foque em ${categoriaFoco} — é seu maior gargalo agora (alta incidência na prova + desempenho a melhorar).`
+        : "Resolva um bloco de questões comentadas para fixar os temas do dia.",
       duracaoMin: MIN_POR_QUESTOES_BLOCO,
       link: "#/residencia/questoes",
     });
     minutosRestantes -= MIN_POR_QUESTOES_BLOCO;
-    if (fila.filter((f) => f.tipo === "questoes").length >= 3) break; // evita loop excessivo
+    blocosQuestoes += 1;
   }
 
   const minutosUsados = minutosDisponiveis - minutosRestantes;
@@ -81,6 +148,13 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     minutosOciosos: minutosRestantes,
     totalRevisoesVencidas: vencidos.length,
     totalTemasPendentes: temasPendentes.length,
+    // Top 3 categorias de maior prioridade agora, com o "porquê" (peso na
+    // prova × desempenho atual) — não é um dashboard completo (isso é uma
+    // fase futura), só o suficiente para responder "por que isso primeiro?".
+    principaisGargalos: rankingCategorias.slice(0, 3).map((r) => ({
+      categoria: r.categoria,
+      desempenho: desempenhoPorCategoria.get(r.categoria) ?? null,
+    })),
     fila,
   };
 }
