@@ -48,21 +48,23 @@
 }
 
 .sidebar__brand-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: var(--radius-sm);
-  background: var(--color-accent);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-accent);
   color: var(--color-text-on-accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-bold);
   flex-shrink: 0;
+  box-shadow: var(--shadow-accent);
 }
 
 .sidebar__brand-name {
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-bold);
   font-size: var(--fs-md);
+  letter-spacing: -0.01em;
   white-space: nowrap;
 }
 
@@ -96,16 +98,29 @@
 }
 
 .nav-link {
+  position: relative;
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-2) var(--space-3) var(--space-2) calc(var(--space-3) + 6px);
   border-radius: var(--radius-sm);
   color: var(--color-text-secondary);
   font-size: var(--fs-sm);
   font-weight: var(--fw-medium);
   transition: background var(--transition-fast), color var(--transition-fast);
   white-space: nowrap;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 3px;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  transition: background var(--transition-fast);
 }
 
 .nav-link:hover {
@@ -117,6 +132,11 @@
 .nav-link.is-active {
   background: var(--color-accent-soft);
   color: var(--color-accent);
+  font-weight: var(--fw-semibold);
+}
+
+.nav-link.is-active::before {
+  background: var(--color-accent);
 }
 
 .nav-link__icon {
@@ -173,13 +193,31 @@
 .icon-btn {
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-sm);
   color: var(--color-text);
+  overflow: hidden;
 }
 .icon-btn:hover { background: var(--color-surface-hover); }
+
+/* #topbar-theme-btn reaproveita a mesma função de app/theme.js que rotula o
+   botão equivalente da sidebar (ex.: "Tema automático") — dentro do
+   icon-btn, só o ícone importa; o rótulo de texto fica só como contexto
+   pra leitor de tela. */
+.icon-btn .nav-link__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* ---------- Main content ---------- */
 
