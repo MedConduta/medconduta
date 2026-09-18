@@ -48,16 +48,33 @@ function classificarQuadrante(peso, desempenho) {
 /**
  * Diagnóstico completo: Índice de Prontidão (0-100) + o detalhamento por
  * categoria (heatmap de fraquezas / mapa de domínio) que o alimenta.
+ *
+ * `referencia` (opcional) recorta o diagnóstico como ele estaria numa data
+ * passada — considera só progresso/respostas registrados até ali. Serve
+ * pra reconstruir a EVOLUÇÃO do índice ao longo do tempo (ver evolucao.js,
+ * Fase 13) sem precisar guardar snapshots: o histórico já está nos
+ * timestamps de `progresso`/`respostas` que a plataforma sempre gravou.
  */
-export async function gerarDiagnostico() {
+export async function gerarDiagnostico(referencia = new Date()) {
   const [temas, progresso, respostas] = await Promise.all([
     fetchJsonCached("data/temas.json"),
     getAll("progresso"),
     getAll("respostas"),
   ]);
+  return calcularDiagnostico({ temas, progresso, respostas, referencia });
+}
 
-  const concluidosSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
-  const desempenhoPorCategoria = calcularDesempenhoPorCategoria(respostas);
+/**
+ * Mesmo cálculo de gerarDiagnostico, mas recebendo os dados já buscados —
+ * permite montar vários diagnósticos (ex.: um por semana) a partir de uma
+ * única leitura de progresso/respostas, sem repetir chamadas de rede.
+ */
+export function calcularDiagnostico({ temas, progresso, respostas, referencia = new Date() }) {
+  const progressoAteReferencia = progresso.filter((p) => new Date(p.atualizadoEm) <= referencia);
+  const respostasAteReferencia = respostas.filter((r) => new Date(r.respondidoEm) <= referencia);
+
+  const concluidosSet = new Set(progressoAteReferencia.filter((p) => p.concluido).map((p) => p.id));
+  const desempenhoPorCategoria = calcularDesempenhoPorCategoria(respostasAteReferencia);
 
   const categorias = [...new Set(temas.map((t) => t.categoria))];
   const porCategoria = categorias.map((categoria) => {

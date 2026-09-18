@@ -55,6 +55,7 @@ export async function renderMinhaPreparacao(container) {
       <div class="plan-queue">
         ${renderAtalho("/residencia/cronograma", "clipboard", "Cronograma", "Configurar a data da prova e ver suas 4 fases.")}
         ${renderAtalho("/residencia/prontidao", "siren", "Prontidão", "Heatmap de fraquezas e mapa de domínio por área.")}
+        ${renderAtalho("/residencia/desempenho", "flowchart", "Desempenho", "Como sua prontidão evoluiu nas últimas semanas.")}
         ${renderAtalho("/residencia/simulados", "clock", "Simulados", "Prova completa, cronometrada, na proporção real da prova.")}
         ${renderAtalho("/residencia/erros", "alert-circle", "Meus Erros", "Questões erradas em fila de revisão espaçada.")}
         ${renderAtalho("/residencia/foco", "target", "Modo Foco", "Temporizador de estudo sem distração.")}
