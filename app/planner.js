@@ -13,7 +13,9 @@ const MIN_POR_QUESTOES_BLOCO = 15; // bloco de ~5 questões
 // Desempenho (0-1) assumido para uma categoria sem nenhuma questão respondida
 // ainda — nem "dominado" nem "fraco", só sem dado. Assim que o usuário
 // responde questões daquela categoria, o valor real substitui esse padrão.
-const DESEMPENHO_PADRAO_SEM_DADO = 0.6;
+// Exportado porque prontidao.js reaproveita o mesmo padrão ao montar o
+// heatmap de fraquezas (ver Fase 6).
+export const DESEMPENHO_PADRAO_SEM_DADO = 0.6;
 
 /**
  * Calcula, por categoria (ex.: "Cardiologia"), a taxa de acerto nas questões
