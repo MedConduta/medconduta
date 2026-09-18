@@ -28,6 +28,8 @@ const PATHS = {
   target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>',
   home: '<path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"/><path d="M10 20v-6h4v6"/>',
+  "chart-bar": '<path d="M4 20V10M10 20V4M16 20v-7M3 20h18"/>',
+  columns: '<rect x="3" y="4" width="4.5" height="16" rx="1"/><rect x="9.75" y="4" width="4.5" height="16" rx="1"/><rect x="16.5" y="4" width="4.5" height="16" rx="1"/>',
 };
 
 export function icon(name, { size = 20, className = "" } = {}) {

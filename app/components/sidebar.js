@@ -11,9 +11,11 @@ export const NAV_ITEMS = [
     items: [
       { path: "/residencia/minha-preparacao", label: "Minha Preparação", icon: "home" },
       { path: "/residencia/planejador", label: "Hoje", icon: "calendar" },
+      { path: "/residencia/planejamento-semanal", label: "Planejamento Semanal", icon: "columns" },
       { path: "/residencia/cronograma", label: "Cronograma", icon: "clipboard" },
       { path: "/residencia/prontidao", label: "Prontidão", icon: "siren" },
       { path: "/residencia/desempenho", label: "Desempenho", icon: "flowchart" },
+      { path: "/residencia/relatorio-semanal", label: "Relatório Semanal", icon: "chart-bar" },
       { path: "/residencia/foco", label: "Modo Foco", icon: "target" },
     ],
   },

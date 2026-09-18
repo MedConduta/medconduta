@@ -67,6 +67,9 @@ export async function getEvolucaoSemanal() {
       .reduce((acc, s) => acc + (s.duracaoMin || 0), 0);
 
     const simuladosSemana = simulados.filter((s) => dentroDoIntervalo(s.finalizadoEm, inicioSemana, fimSemana));
+    const temasConcluidosSemana = progresso.filter(
+      (p) => p.concluido && dentroDoIntervalo(p.atualizadoEm, inicioSemana, fimSemana)
+    ).length;
 
     semanas.push({
       periodo: formatarPeriodo(inicioSemana, fimSemana),
@@ -74,6 +77,7 @@ export async function getEvolucaoSemanal() {
       indicePreparo,
       percentualAcerto,
       totalQuestoes: respostasSemana.length,
+      temasConcluidos: temasConcluidosSemana,
       horasFoco: Math.round((minutosFoco / 60) * 10) / 10,
       totalSimulados: simuladosSemana.length,
       mediaSimulados: simuladosSemana.length
