@@ -12,7 +12,7 @@
 import { askAI, askAIJson } from "./ai.js";
 import { formatarTemaComoContexto } from "./rag.js";
 import { slugify } from "./utils.js";
-import { setItem } from "./db.js";
+import { setItem, getAll } from "./db.js";
 import { CATEGORIAS_VALIDAS } from "./areas.js";
 
 function idUnico(prefixo) {
@@ -55,8 +55,17 @@ Inclua de 4 a 6 seções cobrindo definição/diagnóstico, conduta/tratamento e
   return tema;
 }
 
-/** Gera um baralho de flashcards para um tema (curado ou de IA), autocriticado. */
+/**
+ * Gera um baralho de flashcards para um tema (curado ou de IA), autocriticado.
+ * Se já existe um baralho de IA para esse tema, devolve o existente em vez
+ * de gerar (e gastar chamadas ao Gemini) de novo — "Gerar flashcards" é uma
+ * ação de "me dê os flashcards deste tema", não "gere mais um baralho".
+ */
 export async function gerarFlashcardsComIA(tema) {
+  const existentes = await getAll("ia_flashcards");
+  const deckExistente = existentes.find((d) => d.temaId === tema.id);
+  if (deckExistente) return deckExistente;
+
   const contexto = formatarTemaComoContexto(tema);
 
   const rascunho = await askAIJson({
@@ -88,7 +97,12 @@ export async function gerarFlashcardsComIA(tema) {
   return deck;
 }
 
-/** Gera uma questão de múltipla escolha para um tema, autocriticada, e salva no banco. */
+/**
+ * Gera uma questão de múltipla escolha para um tema, autocriticada, e salva
+ * no banco. Diferente de flashcards/tema, essa geração é intencionalmente
+ * repetível — cada clique deve poder trazer uma questão nova (mais treino),
+ * então NÃO passa pelo cache anti-duplicação (ver ai.js/iaCache.js).
+ */
 export async function gerarQuestaoComIA(tema) {
   const contexto = formatarTemaComoContexto(tema);
 
@@ -96,12 +110,14 @@ export async function gerarQuestaoComIA(tema) {
     pergunta: `Crie 1 questão de múltipla escolha, estilo prova de residência médica, sobre "${tema.titulo}".`,
     contexto,
     tarefa: `gerar uma questão em JSON: {"enunciado": "string (caso clínico ou pergunta direta)", "alternativas": ["string", "string", "string", "string"], "correta": 0, "comentario": "string explicando por que a alternativa correta está certa e as outras erradas"}. "correta" é o índice (0 a 3) da alternativa certa.`,
+    semCache: true,
   });
 
   const final = await askAIJson({
     pergunta: "Revise criticamente a questão abaixo: confirme que só há uma alternativa correta, que o comentário está tecnicamente correto e claro. Corrija o que for necessário.",
     contexto: JSON.stringify(rascunho),
     tarefa: `autocrítica: devolva a versão final no MESMO formato JSON, adicionando "notaRevisao" (1 frase).`,
+    semCache: true,
   });
 
   const questao = {

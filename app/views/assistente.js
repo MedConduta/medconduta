@@ -1,6 +1,9 @@
-import { escapeHtml, renderMarkdown } from "../utils.js";
+import { escapeHtml, renderMarkdown, fetchJsonCached } from "../utils.js";
 import { askAI } from "../ai.js";
 import { buscarContextoRelevante } from "../rag.js";
+import { getAll } from "../db.js";
+import { calcularDesempenhoPorCategoria, calcularScorePrioridade } from "../planner.js";
+import { getEstadoPreparo } from "../modo.js";
 
 // Histórico da conversa vive só na memória da aba (não persiste entre recargas).
 let historico = [];
@@ -51,7 +54,8 @@ export async function renderAssistente(container) {
     const idCarregando = adicionarMensagem(chatMensagens, "ia", "Pensando...", { carregando: true });
 
     try {
-      const contexto = await buscarContextoRelevante(pergunta);
+      const [contextoTema, contextoAluno] = await Promise.all([buscarContextoRelevante(pergunta), montarContextoAluno()]);
+      const contexto = [contextoAluno, contextoTema].filter(Boolean).join("\n\n---\n\n");
       const resposta = await askAI({ pergunta, contexto, tarefa: "responder à pergunta do usuário usando o contexto de estudo" });
       atualizarMensagem(chatMensagens, idCarregando, resposta || "Não obtive resposta do modelo.");
     } catch (err) {
@@ -62,6 +66,41 @@ export async function renderAssistente(container) {
       chatInput.focus();
     }
   });
+}
+
+/**
+ * Fase 10 — "tutor contextual": monta um resumo curto de onde o aluno está
+ * (fase da preparação, maiores gargalos) usando dados que a plataforma já
+ * calcula (ver planner.js/modo.js), pra IA poder personalizar a resposta
+ * quando fizer sentido — sem precisar de nenhuma chamada extra ao Gemini,
+ * só reaproveitando o que já existe.
+ */
+async function montarContextoAluno() {
+  const [temas, respostas, estado] = await Promise.all([
+    fetchJsonCached("data/temas.json"),
+    getAll("respostas"),
+    getEstadoPreparo(),
+  ]);
+
+  const desempenhoPorCategoria = calcularDesempenhoPorCategoria(respostas);
+  const categorias = [...new Set(temas.map((t) => t.categoria))];
+  const gargalos = categorias
+    .map((categoria) => ({ categoria, score: calcularScorePrioridade(categoria, desempenhoPorCategoria) }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map((r) => {
+      const info = desempenhoPorCategoria.get(r.categoria);
+      return info ? `${r.categoria} (${Math.round(info.taxa * 100)}% de acerto)` : `${r.categoria} (sem questões respondidas ainda)`;
+    });
+
+  if (!estado.fase.id && !gargalos.length) return "";
+
+  const linhaFase = estado.fase.id
+    ? `Fase da preparação: ${estado.fase.nome}${estado.diasRestantes !== null ? ` (${estado.diasRestantes} dias até a prova)` : ""}.`
+    : "";
+  const linhaGargalos = gargalos.length ? `Maiores gargalos atuais (alta incidência na prova + desempenho a melhorar): ${gargalos.join("; ")}.` : "";
+
+  return `CONTEXTO DO ALUNO (uso interno — só personalize a resposta com isso se for natural fazer; não cite estes dados a menos que ajudem a responder):\n${linhaFase}\n${linhaGargalos}`;
 }
 
 let contadorMsg = 0;
