@@ -3,8 +3,10 @@ import { getAll } from "./db.js";
 import { estaVencido } from "./sm2.js";
 import { pesoProva } from "./areas.js";
 import { getFaseAtual } from "./cronograma.js";
+import { getQuestoesEmRevisao } from "./erros.js";
 
 const MIN_POR_REVISAO_VENCIDA = 8; // flashcard/revisão pontual
+const MIN_POR_REVISAO_ERRO = 6; // reler + resolver de novo uma questão já errada
 const MIN_POR_TEMA_NOVO = 25; // leitura de um tema completo
 const MIN_POR_QUESTOES_BLOCO = 15; // bloco de ~5 questões
 
@@ -50,8 +52,9 @@ export function calcularScorePrioridade(categoria, desempenhoPorCategoria) {
 
 /**
  * Monta a fila de estudo do dia priorizando:
- * 1) Revisões espaçadas vencidas (flashcards) — sempre primeiro, nunca some,
- *    independente da fase da preparação (ver Fase 4/cronograma.js).
+ * 1) Revisões espaçadas vencidas — flashcards (SM-2) e questões já erradas
+ *    antes (ver erros.js) — sempre primeiro, nunca somem, independente da
+ *    fase da preparação (ver Fase 4/cronograma.js).
  * 2) Temas novos/pendentes, ordenados pelo score de prioridade da categoria
  *    (incidência × fragilidade), não pela ordem em que aparecem no arquivo.
  * 3) Bloco de questões, direcionado para a categoria de maior prioridade que
@@ -66,7 +69,16 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   let minutosRestantes = minutosDisponiveis;
   const fila = [];
 
-  const [temas, flashcardsDecks, questoes, srsRecords, progresso, respostas, { fase, diasRestantes }] = await Promise.all([
+  const [
+    temas,
+    flashcardsDecks,
+    questoes,
+    srsRecords,
+    progresso,
+    respostas,
+    { fase, diasRestantes },
+    { vencidas: errosVencidos },
+  ] = await Promise.all([
     fetchJsonCached("data/temas.json"),
     fetchJsonCached("data/flashcards.json"),
     fetchJsonCached("data/questoes.json"),
@@ -74,6 +86,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     getAll("progresso"),
     getAll("respostas"),
     getFaseAtual(),
+    getQuestoesEmRevisao(),
   ]);
 
   const srsMap = new Map(srsRecords.map((r) => [r.id, r]));
@@ -104,6 +117,21 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
       link: `#/residencia/flashcards/${card.deckId}`,
     });
     minutosRestantes -= MIN_POR_REVISAO_VENCIDA;
+  }
+
+  // 1b) Questões já erradas antes, vencidas para revisão espaçada (ver erros.js) —
+  // mesma prioridade incondicional das revisões de flashcard.
+  for (const { questao } of errosVencidos) {
+    if (minutosRestantes < MIN_POR_REVISAO_ERRO / 2) break;
+    const resumo = questao.enunciado.length > 100 ? `${questao.enunciado.slice(0, 100)}…` : questao.enunciado;
+    fila.push({
+      tipo: "revisao-erro",
+      titulo: `Revisar erro: ${questao.tema}`,
+      detalhe: resumo,
+      duracaoMin: MIN_POR_REVISAO_ERRO,
+      link: "#/residencia/erros",
+    });
+    minutosRestantes -= MIN_POR_REVISAO_ERRO;
   }
 
   // 2) e 3) — o tempo que sobra após revisões se divide entre conteúdo novo
@@ -163,7 +191,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     minutosDisponiveis,
     minutosUsados,
     minutosOciosos: minutosRestantes,
-    totalRevisoesVencidas: vencidos.length,
+    totalRevisoesVencidas: vencidos.length + errosVencidos.length,
     totalTemasPendentes: temasPendentes.length,
     fase,
     diasRestantes,

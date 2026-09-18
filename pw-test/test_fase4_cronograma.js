@@ -78,6 +78,7 @@ function dataDaquiA(dias) {
     "/residencia/questoes",
     "/residencia/planejador",
     "/residencia/cronograma",
+    "/residencia/erros",
     "/pratica/prescricao",
   ];
   for (const rota of rotas) {
