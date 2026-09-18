@@ -1,11 +1,12 @@
 import { gerarPlanoDoDia } from "../planner.js";
 import { escapeHtml } from "../utils.js";
 import { getPref, setPref } from "../db.js";
+import { getConstancia } from "../constancia.js";
 
 const PREF_HORAS = "planejador_horas";
 
 export async function renderPlanejador(container) {
-  const horasSalvas = await getPref(PREF_HORAS, 2);
+  const [horasSalvas, constancia] = await Promise.all([getPref(PREF_HORAS, 2), getConstancia()]);
 
   container.innerHTML = `
     <div class="main__container">
@@ -13,6 +14,7 @@ export async function renderPlanejador(container) {
         <div class="page-header__eyebrow">Residência — Hoje</div>
         <h1>Quanto tempo você tem hoje?</h1>
         <p class="page-header__desc">Informe as horas disponíveis. A plataforma monta a sequência de maior impacto: revisões espaçadas vencidas primeiro, depois os temas de maior prioridade (peso na prova × seu desempenho), e questões direcionadas ao seu maior gargalo atual.</p>
+        ${constancia.streakAtual > 0 ? `<p style="margin-top:8px;font-size:var(--fs-sm);color:var(--color-text-secondary);">🔥 ${constancia.streakAtual} dia${constancia.streakAtual > 1 ? "s" : ""} seguido${constancia.streakAtual > 1 ? "s" : ""} estudando</p>` : ""}
       </div>
 
       <div class="card" style="margin-bottom:24px;">

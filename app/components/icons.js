@@ -25,6 +25,7 @@ const PATHS = {
   search: '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>',
   "log-out": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/>',
   "alert-circle": '<circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5h.01"/>',
+  target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
 };
 
 export function icon(name, { size = 20, className = "" } = {}) {
