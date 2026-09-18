@@ -13,6 +13,7 @@
 import { fetchJsonCached } from "./utils.js";
 import { getAll } from "./db.js";
 import { calcularDiagnostico } from "./prontidao.js";
+import { getConfiguracaoProva } from "./cronograma.js";
 
 export const SEMANAS_HISTORICO = 8;
 
@@ -35,12 +36,13 @@ function formatarPeriodo(inicio, fim) {
  * cada store — o corte por semana é feito em memória.
  */
 export async function getEvolucaoSemanal() {
-  const [temas, progresso, respostas, sessoes, simulados] = await Promise.all([
+  const [temas, progresso, respostas, sessoes, simulados, { provaAlvo }] = await Promise.all([
     fetchJsonCached("data/temas.json"),
     getAll("progresso"),
     getAll("respostas"),
     getAll("sessoes"),
     getAll("simulados"),
+    getConfiguracaoProva(),
   ]);
 
   const hoje = new Date();
@@ -54,7 +56,7 @@ export async function getEvolucaoSemanal() {
     inicioSemana.setDate(inicioSemana.getDate() - 6);
     inicioSemana.setHours(0, 0, 0, 0);
 
-    const { indicePreparo } = calcularDiagnostico({ temas, progresso, respostas, referencia: fimSemana });
+    const { indicePreparo } = calcularDiagnostico({ temas, progresso, respostas, referencia: fimSemana, provaAlvo });
 
     const respostasSemana = respostas.filter((r) => dentroDoIntervalo(r.respondidoEm, inicioSemana, fimSemana));
     const acertosSemana = respostasSemana.filter((r) => r.acertou).length;

@@ -19,7 +19,7 @@ async function renderTela(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Cronograma</div>
         <h1>Sua preparação até a prova</h1>
-        <p class="page-header__desc">Informe a data da prova-alvo para a plataforma calcular automaticamente em qual fase da preparação você está (Construção → Consolidação → Intensificação → Reta Final) e ajustar o foco das suas sessões em "Hoje" de acordo.</p>
+        <p class="page-header__desc">Informe a data e a prova-alvo (SES-PE ou ENAMED — cada uma pesa as áreas de um jeito um pouco diferente) para a plataforma calcular automaticamente em qual fase da preparação você está (Construção → Consolidação → Intensificação → Reta Final → Pré-prova) e ajustar o foco das suas sessões em "Hoje" de acordo.</p>
       </div>
 
       <div class="card" style="margin-bottom:24px;">
@@ -83,7 +83,7 @@ function renderResumo(resumo, modo) {
       <p style="margin-top:12px;font-size:var(--fs-sm);color:var(--color-text-secondary);">Nesta fase, o tempo de estudo (após revisões vencidas) se divide aproximadamente em <strong>${Math.round(fase.pesoConteudo * 100)}% conteúdo novo</strong> e <strong>${Math.round(fase.pesoQuestoes * 100)}% questões</strong>.</p>
     </div>
 
-    <h3>As 4 fases da preparação</h3>
+    <h3>As ${FASES.length} fases da preparação</h3>
     <div class="plan-queue">
       ${FASES.slice()
         .reverse()

@@ -3,8 +3,9 @@
  *
  * O usuário informa a data da prova-alvo; a partir da contagem de dias
  * restantes, a plataforma classifica automaticamente a preparação em uma
- * de 4 fases (Construção → Consolidação → Intensificação → Reta Final),
- * cada uma com uma proporção diferente de conteúdo novo x questões — usada
+ * de 5 fases (Construção → Consolidação → Intensificação → Reta Final →
+ * Pré-prova, os últimos 7 dias), cada uma com uma proporção diferente de
+ * conteúdo novo x questões — usada
  * pelo motor "O que fazer agora" (app/planner.js) para inclinar a agenda do
  * dia. Sem data de prova configurada, a plataforma continua funcionando
  * normalmente (modo "sem fase definida").
@@ -28,6 +29,15 @@ export const PROVAS_ALVO = ["SES-PE", "ENAMED"];
 // detectar atraso sem precisar saber quando o usuário começou a estudar
 // (a fase já é definida só pelos dias restantes até a prova).
 export const FASES = [
+  {
+    id: "pre-prova",
+    nome: "Pré-prova",
+    ateDias: 7,
+    pesoConteudo: 0,
+    pesoQuestoes: 1,
+    completudeEsperadaMin: 0.85,
+    descricao: "Últimos 7 dias. Sem conteúdo novo — só revisão de erros, questões e os pontos de maior prioridade que ainda pesam. Prioridade também pra descanso: virar a noite estudando às vésperas rende menos do que dormir bem.",
+  },
   {
     id: "reta-final",
     nome: "Reta Final",
@@ -102,9 +112,9 @@ export async function setConfiguracaoProva({ dataProva, provaAlvo }) {
 
 /** Fase vigente já resolvida a partir da configuração salva (uso direto pelo planner). */
 export async function getFaseAtual() {
-  const { dataProva } = await getConfiguracaoProva();
+  const { dataProva, provaAlvo } = await getConfiguracaoProva();
   const diasRestantes = calcularDiasRestantes(dataProva);
-  return { diasRestantes, fase: calcularFase(diasRestantes) };
+  return { diasRestantes, fase: calcularFase(diasRestantes), provaAlvo };
 }
 
 /** Resumo completo para a tela de Cronograma: config da prova + fase + progresso agregado. */

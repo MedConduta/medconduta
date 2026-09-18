@@ -17,6 +17,7 @@ import { fetchJsonCached } from "./utils.js";
 import { getAll } from "./db.js";
 import { pesoProva } from "./areas.js";
 import { calcularDesempenhoPorCategoria, DESEMPENHO_PADRAO_SEM_DADO } from "./planner.js";
+import { getConfiguracaoProva } from "./cronograma.js";
 
 const PESO_INCIDENCIA_ALTA = 4; // escala 1-5 (ver areas.js)
 const DESEMPENHO_BAIXO = 0.6;
@@ -56,12 +57,13 @@ function classificarQuadrante(peso, desempenho) {
  * timestamps de `progresso`/`respostas` que a plataforma sempre gravou.
  */
 export async function gerarDiagnostico(referencia = new Date()) {
-  const [temas, progresso, respostas] = await Promise.all([
+  const [temas, progresso, respostas, { provaAlvo }] = await Promise.all([
     fetchJsonCached("data/temas.json"),
     getAll("progresso"),
     getAll("respostas"),
+    getConfiguracaoProva(),
   ]);
-  return calcularDiagnostico({ temas, progresso, respostas, referencia });
+  return calcularDiagnostico({ temas, progresso, respostas, referencia, provaAlvo });
 }
 
 /**
@@ -69,7 +71,7 @@ export async function gerarDiagnostico(referencia = new Date()) {
  * permite montar vários diagnósticos (ex.: um por semana) a partir de uma
  * única leitura de progresso/respostas, sem repetir chamadas de rede.
  */
-export function calcularDiagnostico({ temas, progresso, respostas, referencia = new Date() }) {
+export function calcularDiagnostico({ temas, progresso, respostas, referencia = new Date(), provaAlvo = "SES-PE" }) {
   const progressoAteReferencia = progresso.filter((p) => new Date(p.atualizadoEm) <= referencia);
   const respostasAteReferencia = respostas.filter((r) => new Date(r.respondidoEm) <= referencia);
 
@@ -83,7 +85,7 @@ export function calcularDiagnostico({ temas, progresso, respostas, referencia = 
     const completude = temasCategoria.length ? concluidos / temasCategoria.length : 0;
     const info = desempenhoPorCategoria.get(categoria) ?? null;
     const desempenho = info ? info.taxa : DESEMPENHO_PADRAO_SEM_DADO;
-    const peso = pesoProva(categoria);
+    const peso = pesoProva(categoria, provaAlvo);
 
     return {
       categoria,
