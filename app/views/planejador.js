@@ -59,6 +59,7 @@ export async function renderPlanejador(container) {
 
     resultadoEl.innerHTML = `
       ${renderFaixaFase(plano.fase, plano.diasRestantes)}
+      ${renderModoEspecial(plano.modo)}
       <div class="stat-row">
         <div class="stat-tile"><div class="stat-tile__value">${plano.totalRevisoesVencidas}</div><div class="stat-tile__label">Revisões vencidas</div></div>
         <div class="stat-tile"><div class="stat-tile__value">${plano.totalTemasPendentes}</div><div class="stat-tile__label">Temas pendentes</div></div>
@@ -112,6 +113,30 @@ function renderFaixaFase(fase, diasRestantes) {
       <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">${escapeHtml(fase.descricao)} <a href="#/residencia/cronograma">Ver cronograma</a></p>
     </div>
   `;
+}
+
+function renderModoEspecial(modo) {
+  if (modo === "recuperacao") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-warning);">
+        <div class="list-card__top">
+          <span class="badge badge--warning">⚠️ Modo Recuperação</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Você está abaixo do conteúdo esperado pra essa altura da preparação. A agenda de hoje priorizou mais conteúdo novo pra ajudar a recuperar o atraso — sem deixar de lado revisões e questões.</p>
+      </div>
+    `;
+  }
+  if (modo === "reta-final") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-danger);">
+        <div class="list-card__top">
+          <span class="badge badge--danger">🔴 Modo Reta Final</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Restam poucos dias até a prova. A agenda agora é quase só questões e revisão de erros — conteúdo novo só aparece se for um gargalo crítico.</p>
+      </div>
+    `;
+  }
+  return "";
 }
 
 function renderGargalos(gargalos) {

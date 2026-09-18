@@ -2,7 +2,7 @@ import { fetchJsonCached } from "./utils.js";
 import { getAll } from "./db.js";
 import { estaVencido } from "./sm2.js";
 import { pesoProva } from "./areas.js";
-import { getFaseAtual } from "./cronograma.js";
+import { getEstadoPreparo, aplicarModoNoPeso } from "./modo.js";
 import { getQuestoesEmRevisao } from "./erros.js";
 
 const MIN_POR_REVISAO_VENCIDA = 8; // flashcard/revisão pontual
@@ -65,6 +65,9 @@ export function calcularScorePrioridade(categoria, desempenhoPorCategoria) {
  * questões segundo o peso da fase atual da preparação: perto da prova,
  * quase tudo vira questões; longe da prova, o conteúdo novo pesa mais. Sem
  * data de prova configurada, usa um peso padrão razoável (ver cronograma.js).
+ * Se o usuário está atrasado em relação ao cronograma, o Modo Recuperação
+ * (ver modo.js, Fase 7) sobrepõe esse peso pra puxar mais conteúdo até o
+ * atraso ser recuperado.
  */
 export async function gerarPlanoDoDia(horasDisponiveis) {
   const minutosDisponiveis = Math.max(0, Math.round(horasDisponiveis * 60));
@@ -78,7 +81,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     srsRecords,
     progresso,
     respostas,
-    { fase, diasRestantes },
+    { fase: faseBase, diasRestantes, modo },
     { vencidas: errosVencidos },
   ] = await Promise.all([
     fetchJsonCached("data/temas.json"),
@@ -87,9 +90,14 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     getAll("srs"),
     getAll("progresso"),
     getAll("respostas"),
-    getFaseAtual(),
+    getEstadoPreparo(),
     getQuestoesEmRevisao(),
   ]);
+
+  // Modo Recuperação (ver modo.js, Fase 7) empurra o peso de volta pra
+  // conteúdo até o atraso em relação ao cronograma ser recuperado — sem
+  // alterar a fase original usada em Cronograma/Prontidão.
+  const fase = aplicarModoNoPeso(faseBase, modo);
 
   const srsMap = new Map(srsRecords.map((r) => [r.id, r]));
   const progressoSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
@@ -197,6 +205,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     totalTemasPendentes: temasPendentes.length,
     fase,
     diasRestantes,
+    modo,
     // Top 3 categorias de maior prioridade agora, com o "porquê" (peso na
     // prova × desempenho atual) — não é um dashboard completo (isso é uma
     // fase futura), só o suficiente para responder "por que isso primeiro?".

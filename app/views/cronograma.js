@@ -5,13 +5,14 @@ import {
   PROVAS_ALVO,
   FASES,
 } from "../cronograma.js";
+import { getEstadoPreparo } from "../modo.js";
 
 export async function renderCronograma(container) {
   await renderTela(container);
 }
 
 async function renderTela(container) {
-  const resumo = await gerarResumoCronograma();
+  const [resumo, { modo }] = await Promise.all([gerarResumoCronograma(), getEstadoPreparo()]);
 
   container.innerHTML = `
     <div class="main__container">
@@ -39,7 +40,7 @@ async function renderTela(container) {
         </form>
       </div>
 
-      ${renderResumo(resumo)}
+      ${renderResumo(resumo, modo)}
     </div>
   `;
 
@@ -52,7 +53,7 @@ async function renderTela(container) {
   });
 }
 
-function renderResumo(resumo) {
+function renderResumo(resumo, modo) {
   const { diasRestantes, fase, dataProva } = resumo;
 
   if (!dataProva) {
@@ -65,6 +66,7 @@ function renderResumo(resumo) {
   }
 
   return `
+    ${renderModoEspecial(modo)}
     <div class="stat-row">
       <div class="stat-tile"><div class="stat-tile__value">${diasRestantes >= 0 ? diasRestantes : 0}</div><div class="stat-tile__label">${diasRestantes >= 0 ? "Dias até a prova" : "Prova já passou"}</div></div>
       <div class="stat-tile"><div class="stat-tile__value">${resumo.percentualConteudo}%</div><div class="stat-tile__label">Conteúdo concluído (${resumo.temasConcluidos}/${resumo.totalTemas})</div></div>
@@ -98,4 +100,28 @@ function renderResumo(resumo) {
         .join("")}
     </div>
   `;
+}
+
+function renderModoEspecial(modo) {
+  if (modo === "recuperacao") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-warning);">
+        <div class="list-card__top">
+          <span class="badge badge--warning">⚠️ Modo Recuperação</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Seu conteúdo concluído está abaixo do esperado pra essa altura da preparação — "Não posso atrasar mais". A aba Hoje já priorizou mais conteúdo novo até você recuperar o atraso.</p>
+      </div>
+    `;
+  }
+  if (modo === "reta-final") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-danger);">
+        <div class="list-card__top">
+          <span class="badge badge--danger">🔴 Modo Reta Final</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Restam poucos dias até a prova. Praticamente todo o tempo em Hoje agora vai pra questões e revisão de erros.</p>
+      </div>
+    `;
+  }
+  return "";
 }
