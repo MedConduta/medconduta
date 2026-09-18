@@ -4,6 +4,7 @@ import {
   TAMANHO_PADRAO,
   MIN_POR_QUESTAO,
   selecionarQuestoesSimulado,
+  selecionarQuestoesSimuladoEstrategico,
   registrarResultadoSimulado,
   getHistoricoSimulados,
 } from "../simulados.js";
@@ -11,6 +12,8 @@ import {
 export async function renderSimulados(container) {
   let estado = "config"; // config | rodando | resultado
   let tamanhoEscolhido = TAMANHO_PADRAO;
+  let tipoEscolhido = "completo"; // completo | estrategico
+  let categoriasEstrategicas = [];
   let questoes = [];
   const respostasPorQuestaoId = new Map();
   let indiceAtual = 0;
@@ -38,6 +41,13 @@ export async function renderSimulados(container) {
 
           <div class="card" style="margin-bottom:24px;">
             <div class="field">
+              <label for="simulado-tipo">Tipo de simulado</label>
+              <select id="simulado-tipo">
+                <option value="completo" ${tipoEscolhido === "completo" ? "selected" : ""}>Completo — proporcional à prova real</option>
+                <option value="estrategico" ${tipoEscolhido === "estrategico" ? "selected" : ""}>Estratégico — só seus maiores gargalos agora</option>
+              </select>
+            </div>
+            <div class="field">
               <label for="simulado-tamanho">Número de questões</label>
               <select id="simulado-tamanho">
                 ${TAMANHOS_DISPONIVEIS.map((t) => `<option value="${t}" ${t === tamanhoEscolhido ? "selected" : ""}>${t} questões (~${Math.round(t * MIN_POR_QUESTAO)} min)</option>`).join("")}
@@ -49,6 +59,9 @@ export async function renderSimulados(container) {
           ${renderHistorico(historico)}
         </div>
       `;
+      container.querySelector("#simulado-tipo").addEventListener("change", (e) => {
+        tipoEscolhido = e.target.value;
+      });
       container.querySelector("#simulado-tamanho").addEventListener("change", (e) => {
         tamanhoEscolhido = Number(e.target.value);
       });
@@ -66,7 +79,14 @@ export async function renderSimulados(container) {
 
   async function iniciarSimulado() {
     container.innerHTML = `<div class="main__container"><div class="empty-state">Montando seu simulado...</div></div>`;
-    questoes = await selecionarQuestoesSimulado(tamanhoEscolhido);
+    if (tipoEscolhido === "estrategico") {
+      const resultado = await selecionarQuestoesSimuladoEstrategico(tamanhoEscolhido);
+      questoes = resultado.questoes;
+      categoriasEstrategicas = resultado.categorias;
+    } else {
+      questoes = await selecionarQuestoesSimulado(tamanhoEscolhido);
+      categoriasEstrategicas = [];
+    }
     respostasPorQuestaoId.clear();
     indiceAtual = 0;
     segundosRestantes = Math.round(tamanhoEscolhido * MIN_POR_QUESTAO * 60);
@@ -93,6 +113,7 @@ export async function renderSimulados(container) {
         <div class="page-header">
           <div class="page-header__eyebrow">Simulado — Questão ${indiceAtual + 1} de ${questoes.length}</div>
           <h1 id="simulado-timer" style="font-variant-numeric:tabular-nums;">${formatarTempo(segundosRestantes)}</h1>
+          ${categoriasEstrategicas.length ? `<p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">🎯 Estratégico — foco em: ${categoriasEstrategicas.map(escapeHtml).join(", ")}</p>` : ""}
         </div>
 
         <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;">
@@ -177,6 +198,7 @@ export async function renderSimulados(container) {
         <div class="page-header">
           <div class="page-header__eyebrow">Residência — Simulados</div>
           <h1>Resultado do simulado</h1>
+          ${categoriasEstrategicas.length ? `<p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">🎯 Simulado estratégico — foco em: ${categoriasEstrategicas.map(escapeHtml).join(", ")}</p>` : ""}
         </div>
 
         <div class="card" style="margin-bottom:24px;text-align:center;">

@@ -23,6 +23,12 @@ export const MIN_POR_QUESTOES_BLOCO = 15; // bloco de ~5 questões
 // próximos dias — nada se perde, só se espalha no tempo.
 const TETO_REVISOES_PCT = 0.4;
 
+// Plano de Emergência (Fase 16, ver modo.js): quando o atraso é severo,
+// além de inclinar o peso pra conteúdo (aplicarModoNoPeso), a fila do dia
+// some com os temas de baixa prioridade — não faz sentido gastar um tempo
+// já escasso em conteúdo de baixo retorno enquanto o essencial ainda falta.
+const TOP_K_CATEGORIAS_EMERGENCIA = 5;
+
 // Desempenho (0-1) assumido para uma categoria sem nenhuma questão respondida
 // ainda — nem "dominado" nem "fraco", só sem dado. Assim que o usuário
 // responde questões daquela categoria, o valor real substitui esse padrão.
@@ -176,8 +182,13 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   let orcamentoConteudo = Math.round(orcamentoPosRevisao * fase.pesoConteudo);
   let orcamentoQuestoes = orcamentoPosRevisao - orcamentoConteudo;
 
+  // Em Plano de Emergência, só os temas das categorias de maior prioridade
+  // entram na fila — o restante fica de fora até o atraso diminuir.
+  const categoriasPermitidas =
+    modo === "emergencia" ? new Set(rankingCategorias.slice(0, TOP_K_CATEGORIAS_EMERGENCIA).map((r) => r.categoria)) : null;
+
   const temasPendentes = temas
-    .filter((t) => !progressoSet.has(t.id))
+    .filter((t) => !progressoSet.has(t.id) && (!categoriasPermitidas || categoriasPermitidas.has(t.categoria)))
     .sort((a, b) => (scorePorCategoria.get(b.categoria) ?? 0) - (scorePorCategoria.get(a.categoria) ?? 0));
 
   for (const tema of temasPendentes) {

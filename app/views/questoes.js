@@ -9,11 +9,17 @@ export async function renderLista(container, _params, query = {}) {
     fetchJsonCached("data/temas.json"),
     getAll("respostas"),
   ]);
-  const questoes = [...curadas, ...geradas];
+  const categoriaPorTemaId = Object.fromEntries(temasCurados.map((t) => [t.id, t.categoria]));
+
+  // Fase 16 — ?categoria=X (ver Revisão de Alto Rendimento) restringe a
+  // página inteira a essa categoria, antes de qualquer outro filtro.
+  let questoes = [...curadas, ...geradas];
+  if (query.categoria) {
+    questoes = questoes.filter((q) => categoriaPorTemaId[q.temaId] === query.categoria);
+  }
   const temas = uniq(questoes.map((q) => q.tema));
   const temaInicial = query.tema && temas.includes(query.tema) ? query.tema : "todos";
   const bancas = uniq(questoes.map((q) => q.banca));
-  const categoriaPorTemaId = Object.fromEntries(temasCurados.map((t) => [t.id, t.categoria]));
   const tentativasPorQuestao = new Map();
   respostasAnteriores.forEach((r) => {
     tentativasPorQuestao.set(r.questaoId, (tentativasPorQuestao.get(r.questaoId) || 0) + 1);
@@ -25,6 +31,7 @@ export async function renderLista(container, _params, query = {}) {
         <div class="page-header__eyebrow">Residência — Questões</div>
         <h1>Banco de questões</h1>
         <p class="page-header__desc">Questões com resolução comentada, filtráveis por tema e banca. Enunciados e comentários são material de estudo próprio, não de provas reais.</p>
+        ${query.categoria ? `<p style="margin-top:8px;font-size:var(--fs-sm);"><span class="badge badge--warning">Filtrado: ${escapeHtml(query.categoria)}</span> <a href="#/residencia/questoes">Ver todas as questões</a></p>` : ""}
       </div>
       <div class="field" style="display:flex;gap:16px;flex-wrap:wrap;">
         <div style="flex:1;min-width:180px;">
