@@ -98,6 +98,53 @@ export async function gerarFlashcardsComIA(tema) {
 }
 
 /**
+ * Gera um fluxograma de conduta (diagnóstico ou tratamento) para um tema,
+ * autocriticado, no MESMO formato JSON dos fluxogramas curados (ver
+ * data/fluxogramas.json e components/flowchart.js — o renderizador é
+ * reaproveitado sem alteração). Fica marcado `revisado: false`, igual a
+ * fluxogramas curados ainda não revisados — fluxograma clínico é conteúdo
+ * de maior risco (uma ramificação errada importa mais que um flashcard
+ * impreciso), por isso o aviso de "gerado por IA, confira em fonte oficial"
+ * é sempre mostrado junto, nunca omitido.
+ * Mesma lógica de "peça os flashcards deste tema" da função acima: se já
+ * existe um fluxograma de IA pra esse tema, devolve o existente.
+ */
+export async function gerarFluxogramaComIA(tema) {
+  const existentes = await getAll("ia_fluxogramas");
+  const existente = existentes.find((f) => f.temaId === tema.id);
+  if (existente) return existente;
+
+  const contexto = formatarTemaComoContexto(tema);
+
+  const rascunho = await askAIJson({
+    pergunta: `Crie um fluxograma de conduta clínica (diagnóstico OU tratamento — o que fizer mais sentido pro tema) para "${tema.titulo}", em formato de árvore de decisão objetiva, do jeito que se vê num fluxograma de prova de residência.`,
+    contexto,
+    tarefa: `gerar um fluxograma em JSON: {"titulo": "string", "tipo": "diagnostico" ou "tratamento", "fluxo": [nós]}. Cada nó é {"tipo": "start"|"action"|"alerta"|"decisao"|"end", "texto": "string curto e direto"}; um nó "decisao" também tem "ramos": [{"label": "string curto (ex.: \\"Sim\\"/\\"Não\\")", "fluxo": [mais nós, podendo aninhar outra decisão]}]. Comece com 1 nó "start", termine cada caminho com "end". Entre 6 e 14 nós no total — objetivo, sem redundância.`,
+  });
+
+  const final = await askAIJson({
+    pergunta: "Revise criticamente o fluxograma abaixo quanto a precisão clínica, se a árvore de decisão faz sentido e se cada caminho termina em \"end\". Corrija o que for necessário.",
+    contexto: JSON.stringify(rascunho),
+    tarefa: `autocrítica: devolva a versão final no MESMO formato JSON, adicionando "notaRevisao" (1 frase).`,
+  });
+
+  const fluxograma = {
+    id: idUnico(`fluxo-ia-${tema.id}`),
+    temaId: tema.id,
+    area: "residencia",
+    tipo: final.tipo === "tratamento" ? "tratamento" : "diagnostico",
+    titulo: final.titulo || `${tema.titulo} — fluxograma (IA)`,
+    origem: "ia",
+    revisado: false,
+    notaRevisaoIA: final.notaRevisao || "",
+    fluxo: Array.isArray(final.fluxo) ? final.fluxo : [],
+  };
+
+  await setItem("ia_fluxogramas", fluxograma);
+  return fluxograma;
+}
+
+/**
  * Gera uma questão de múltipla escolha para um tema, autocriticada, e salva
  * no banco. Diferente de flashcards/tema, essa geração é intencionalmente
  * repetível — cada clique deve poder trazer uma questão nova (mais treino),

@@ -40,6 +40,7 @@ registerRoute("/residencia/assistente", assistente.renderAssistente, { title: "A
 registerRoute("/residencia/revisao", revisao.renderRevisao, { title: "Revisão espaçada" });
 registerRoute("/residencia/flashcards", flashcards.renderLista, { title: "Flashcards" });
 registerRoute("/residencia/flashcards/:deckId", flashcards.renderEstudo, { title: "Flashcards" });
+registerRoute("/residencia/flashcards/:deckId/gerenciar", flashcards.renderGerenciar, { title: "Gerenciar baralho" });
 registerRoute("/residencia/questoes", questoes.renderLista, { title: "Questões" });
 registerRoute("/residencia/erros", erros.renderErros, { title: "Meus Erros" });
 registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "Hoje" });
