@@ -2,7 +2,7 @@ import { fetchJsonCached, escapeHtml, uniq } from "../utils.js";
 import { setItem, getAll } from "../db.js";
 import { registrarResultadoQuestao } from "../erros.js";
 
-export async function renderLista(container) {
+export async function renderLista(container, _params, query = {}) {
   const [curadas, geradas, temasCurados, respostasAnteriores] = await Promise.all([
     fetchJsonCached("data/questoes.json"),
     getAll("ia_questoes"),
@@ -11,6 +11,7 @@ export async function renderLista(container) {
   ]);
   const questoes = [...curadas, ...geradas];
   const temas = uniq(questoes.map((q) => q.tema));
+  const temaInicial = query.tema && temas.includes(query.tema) ? query.tema : "todos";
   const bancas = uniq(questoes.map((q) => q.banca));
   const categoriaPorTemaId = Object.fromEntries(temasCurados.map((t) => [t.id, t.categoria]));
   const tentativasPorQuestao = new Map();
@@ -29,8 +30,8 @@ export async function renderLista(container) {
         <div style="flex:1;min-width:180px;">
           <label for="filtro-tema">Tema</label>
           <select id="filtro-tema">
-            <option value="todos">Todos os temas</option>
-            ${temas.map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`).join("")}
+            <option value="todos" ${temaInicial === "todos" ? "selected" : ""}>Todos os temas</option>
+            ${temas.map((t) => `<option value="${escapeHtml(t)}" ${t === temaInicial ? "selected" : ""}>${escapeHtml(t)}</option>`).join("")}
           </select>
         </div>
         <div style="flex:1;min-width:180px;">

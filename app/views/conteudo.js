@@ -6,6 +6,14 @@ import { gerarTemaComIA, gerarFlashcardsComIA, gerarQuestaoComIA, avaliarTemaCom
 import { askAI } from "../ai.js";
 import { formatarTemaComoContexto } from "../rag.js";
 import { renderFlowchart } from "../components/flowchart.js";
+import { gerarDiagnostico } from "../prontidao.js";
+
+// Fase 12 — ordem de prioridade dos quadrantes (ver prontidao.js): categorias
+// críticas primeiro, tranquilas por último. Curso reordenado pelo mesmo
+// critério que já orienta "O que fazer agora" e o Heatmap de Fraquezas —
+// evita que uma categoria de alta incidência fique perdida no meio de uma
+// lista alfabética.
+const ORDEM_QUADRANTE = ["Crítico", "Atenção", "Secundário fraco", "Dominado", "Tranquilo"];
 
 async function marcarConcluido(temaId, concluido, categoria) {
   await setItem("progresso", { id: temaId, concluido, categoria, atualizadoEm: new Date().toISOString() });
@@ -31,7 +39,14 @@ async function fluxogramasDoTema(temaId) {
   return fluxos.filter((f) => f.temaId === temaId);
 }
 
-function agruparPorAreaECategoria(temas) {
+/**
+ * Agrupa temas por área → categoria e ordena por prioridade: dentro de cada
+ * área, categorias na ordem crítico → tranquilo (ver prontidao.js); dentro
+ * de cada categoria, temas ainda não estudados primeiro. A ordem das ÁREAS
+ * em si (ORDEM_AREAS) não muda — é uma estrutura pedagógica fixa, só o que
+ * está DENTRO de cada área é reordenado por prioridade real.
+ */
+function agruparPorAreaECategoria(temas, infoPorCategoria, concluidosSet) {
   const areas = new Map();
   for (const tema of temas) {
     const area = AREA_POR_CATEGORIA[tema.categoria] || "Outros";
@@ -45,24 +60,37 @@ function agruparPorAreaECategoria(temas) {
     .map(([area, categorias]) => ({
       area,
       categorias: [...categorias.entries()]
-        .sort((a, b) => a[0].localeCompare(b[0], "pt-BR"))
         .map(([categoria, itens]) => ({
           categoria,
-          temas: itens.sort((a, b) => a.titulo.localeCompare(b.titulo, "pt-BR")),
-        })),
+          info: infoPorCategoria.get(categoria) || null,
+          temas: itens.sort((a, b) => {
+            const aPendente = concluidosSet.has(a.id) ? 1 : 0;
+            const bPendente = concluidosSet.has(b.id) ? 1 : 0;
+            if (aPendente !== bPendente) return aPendente - bPendente;
+            return a.titulo.localeCompare(b.titulo, "pt-BR");
+          }),
+        }))
+        .sort((a, b) => {
+          const oa = ORDEM_QUADRANTE.indexOf(a.info?.quadrante?.label);
+          const ob = ORDEM_QUADRANTE.indexOf(b.info?.quadrante?.label);
+          if (oa !== ob) return (oa === -1 ? 99 : oa) - (ob === -1 ? 99 : ob);
+          return a.categoria.localeCompare(b.categoria, "pt-BR");
+        }),
     }));
 }
 
 export async function renderLista(container) {
-  const temas = await todosOsTemas();
-  const grupos = agruparPorAreaECategoria(temas);
+  const [temas, progresso, diagnostico] = await Promise.all([todosOsTemas(), getAll("progresso"), gerarDiagnostico()]);
+  const concluidosSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
+  const infoPorCategoria = new Map(diagnostico.porCategoria.map((c) => [c.categoria, c]));
+  const grupos = agruparPorAreaECategoria(temas, infoPorCategoria, concluidosSet);
 
   container.innerHTML = `
     <div class="main__container">
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Conteúdo</div>
         <h1>Resumos por tema</h1>
-        <p class="page-header__desc">Conteúdo estruturado para prática clínica e provas de residência R1, com mnemônicos destacados.</p>
+        <p class="page-header__desc">Conteúdo estruturado para prática clínica e provas de residência R1, com mnemônicos destacados. Categorias ordenadas por prioridade (🔴 crítico → ⚪ tranquilo, igual ao Heatmap de <a href="#/residencia/prontidao">Prontidão</a>) — dentro de cada uma, temas ainda não estudados aparecem primeiro.</p>
       </div>
 
       <details class="card" id="criar-tema-box" style="margin-bottom:20px;">
@@ -157,10 +185,13 @@ function renderAreaBox({ area, categorias }) {
   `;
 }
 
-function renderCategoriaGroup({ categoria, temas }) {
+function renderCategoriaGroup({ categoria, temas, info }) {
+  const selo = info?.quadrante
+    ? `<span title="${escapeHtml(info.quadrante.label)} — ${escapeHtml(info.quadrante.descricao)}">${info.quadrante.emoji}</span>`
+    : "";
   return `
     <div class="content-group">
-      <h3 class="content-group__title">${escapeHtml(categoria)}</h3>
+      <h3 class="content-group__title">${selo} ${escapeHtml(categoria)}</h3>
       <ul class="content-list">
         ${temas.map(renderTemaListItem).join("")}
       </ul>
@@ -215,6 +246,28 @@ function renderRelacionados({ decks, fluxos }) {
   `;
 }
 
+function renderNavegacaoAdjacente({ anterior, proximo }) {
+  if (!anterior && !proximo) return "";
+  return `
+    <div class="btn-row" style="margin-top:24px;justify-content:space-between;">
+      ${
+        anterior
+          ? `<a class="btn btn--secondary" href="#/residencia/conteudo/${anterior.id}">← ${escapeHtml(anterior.titulo)}</a>`
+          : "<span></span>"
+      }
+      ${proximo ? `<a class="btn btn--secondary" href="#/residencia/conteudo/${proximo.id}">${escapeHtml(proximo.titulo)} →</a>` : ""}
+    </div>
+  `;
+}
+
+/** Temas da mesma categoria, em ordem alfabética estável — usado pra navegação anterior/próximo. */
+async function temaAdjacentes(tema) {
+  const temas = await todosOsTemas();
+  const daCategoria = temas.filter((t) => t.categoria === tema.categoria).sort((a, b) => a.titulo.localeCompare(b.titulo, "pt-BR"));
+  const indice = daCategoria.findIndex((t) => t.id === tema.id);
+  return { anterior: indice > 0 ? daCategoria[indice - 1] : null, proximo: indice >= 0 && indice < daCategoria.length - 1 ? daCategoria[indice + 1] : null };
+}
+
 export async function renderDetalhe(container, { id }) {
   const tema = await encontrarTema(id);
 
@@ -226,13 +279,28 @@ export async function renderDetalhe(container, { id }) {
   const progresso = await getItem("progresso", tema.id);
   const concluido = !!progresso?.concluido;
   const geradoPorIA = tema.origem === "ia";
-  const [decks, fluxos] = await Promise.all([decksDoTema(tema.id), fluxogramasDoTema(tema.id)]);
+  const [decks, fluxos, respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes] = await Promise.all([
+    decksDoTema(tema.id),
+    fluxogramasDoTema(tema.id),
+    getAll("respostas"),
+    fetchJsonCached("data/questoes.json"),
+    getAll("ia_questoes"),
+    gerarDiagnostico(),
+    temaAdjacentes(tema),
+  ]);
+
+  const infoCategoria = diagnostico.porCategoria.find((c) => c.categoria === tema.categoria) || null;
+  const respostasDoTema = respostas.filter((r) => r.temaId === tema.id);
+  const temQuestoes = [...questoesCuradas, ...questoesGeradas].some((q) => q.temaId === tema.id);
 
   container.innerHTML = `
     <div class="main__container">
       <div class="page-header">
         <a class="btn btn--ghost" href="#/residencia/conteudo" style="padding-left:0;margin-bottom:8px;">← Conteúdo</a>
-        <div class="page-header__eyebrow">${escapeHtml(tema.categoria)}</div>
+        <div class="page-header__eyebrow">
+          ${escapeHtml(tema.categoria)}
+          ${infoCategoria?.quadrante ? `<span title="${escapeHtml(infoCategoria.quadrante.label)}">${infoCategoria.quadrante.emoji} ${escapeHtml(infoCategoria.quadrante.label)}</span>` : ""}
+        </div>
         <h1>${escapeHtml(tema.titulo)} ${geradoPorIA ? '<span class="badge badge--ia">✨ IA</span>' : ""}</h1>
         ${geradoPorIA && tema.notaRevisaoIA ? `<p class="page-header__desc"><em>Nota da autocrítica da IA: ${escapeHtml(tema.notaRevisaoIA)}</em></p>` : ""}
         ${
@@ -242,10 +310,17 @@ export async function renderDetalhe(container, { id }) {
         }
       </div>
 
+      ${
+        respostasDoTema.length
+          ? `<p class="page-header__desc">Seu desempenho neste tema: <strong>${Math.round((respostasDoTema.filter((r) => r.acertou).length / respostasDoTema.length) * 100)}% de acerto</strong> (${respostasDoTema.length} questão${respostasDoTema.length > 1 ? "ões" : ""}).</p>`
+          : ""
+      }
+
       <div class="btn-row" style="margin-bottom:24px;">
         <button class="btn ${concluido ? "btn--secondary" : "btn--primary"}" id="btn-concluir">
           ${concluido ? "✓ Marcado como estudado" : "Marcar como estudado"}
         </button>
+        ${temQuestoes ? `<a class="btn btn--secondary" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Praticar questões deste tema</a>` : ""}
       </div>
 
       <div class="prose">
@@ -272,6 +347,8 @@ export async function renderDetalhe(container, { id }) {
       </div>
 
       ${decks.length || fluxos.length ? renderRelacionados({ decks, fluxos }) : ""}
+
+      ${renderNavegacaoAdjacente(adjacentes)}
 
       <div class="card ia-card" style="margin-top:24px;">
         <h3 style="margin-top:0;">Assistente de IA</h3>

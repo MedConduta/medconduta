@@ -26,6 +26,14 @@ function parseHash() {
   return path.replace(/\/+$/, "") || "/residencia/minha-preparacao";
 }
 
+/** Query string do hash atual (ex.: "#/residencia/questoes?tema=X" -> {tema: "X"}). */
+function parseQuery() {
+  const hash = window.location.hash.replace(/^#/, "");
+  const idx = hash.indexOf("?");
+  if (idx === -1) return {};
+  return Object.fromEntries(new URLSearchParams(hash.slice(idx + 1)));
+}
+
 let currentContainer = null;
 let onNavigate = null;
 
@@ -40,10 +48,11 @@ export async function handleRoute() {
     if (match) {
       const params = {};
       route.paramNames.forEach((name, i) => (params[name] = decodeURIComponent(match[i + 1])));
+      const query = parseQuery();
       if (currentContainer) {
         currentContainer.setAttribute("aria-busy", "true");
         try {
-          await route.render(currentContainer, params);
+          await route.render(currentContainer, params, query);
         } finally {
           currentContainer.setAttribute("aria-busy", "false");
           currentContainer.scrollTop = 0;
