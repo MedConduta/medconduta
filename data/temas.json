@@ -6707,7 +6707,7 @@
     "categoria": "Otorrinolaringologia",
     "titulo": "Otite Média Aguda e Otite Externa",
     "resumo": "Diferenciação pela dor à tração do pavilhão, tratamento antibiótico da OMA e a mastoidite como complicação temida.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAP Clinical Practice Guideline for Acute Otitis Media and Otitis Externa",
     "mnemonicos": [
       {
@@ -6734,7 +6734,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Otite externa é tratada com gotas otológicas tópicas (associando antibiótico e corticoide, geralmente cobrindo Pseudomonas), raramente necessitando antibiótico sistêmico exceto em casos com extensão além do conduto ou em imunossuprimidos (risco de otite externa maligna/necrotizante, mais comum em diabéticos, uma infecção grave que pode se estender à base do crânio). Otite média aguda em adultos segue princípios terapêuticos semelhantes aos já descritos na população pediátrica, com amoxicilina como escolha inicial quando indicado antibiótico."
+        "conteudo": "Otite externa é tratada com gotas otológicas tópicas (associando antibiótico e corticoide, geralmente cobrindo Pseudomonas), raramente necessitando antibiótico sistêmico exceto em casos com extensão além do conduto ou em imunossuprimidos (risco de otite externa maligna/necrotizante, mais comum em diabéticos, uma infecção grave que pode se estender à base do crânio). Otite média aguda em adultos segue princípios terapêuticos semelhantes aos já descritos na população pediátrica, com amoxicilina como escolha inicial quando indicado antibiótico.\n\n<div class=\"table-wrap\"><table><tr><th>Idade / cenário</th><th>Conduta na OMA</th></tr><tr><td>&lt;6 meses</td><td>Tratar sempre</td></tr><tr><td>6 meses–2 anos</td><td>Observação só se unilateral e sintomas leves (&lt;48h, T&lt;39°C)</td></tr><tr><td>&gt;2 anos, imunocompetente</td><td>Observação possível se sem otorreia e sintomas leves</td></tr><tr><td>1ª escolha sem fator de risco</td><td>Amoxicilina 90mg/kg/dia (dose dobrada)</td></tr><tr><td>Uso recente de betalactâmico / OMA de repetição</td><td>Amoxicilina-clavulanato 90mg/kg/dia</td></tr></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -6744,7 +6744,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O sinal do trago positivo como diferencial semiológico entre otite externa e média é cobrança certa. A otite externa maligna em diabéticos como complicação grave e potencialmente fatal (osteomielite de base de crânio) também é frequentemente exigida como ponto de alerta em provas de otorrinolaringologia."
       }
-    ]
+    ],
+    "comoCai": "Dentro do bloco de IVAS (o mais cobrado de toda a Otorrinolaringologia), Otites representam 24% das questões, e a OMA sozinha domina 80% desse subtema. O sinal fundamental cobrado é o ABAULAMENTO da membrana timpânica — hiperemia isolada NÃO fecha diagnóstico, é uma pegadinha clássica. No tratamento, a dose de amoxicilina 90mg/kg/dia (dose DOBRADA, não a padrão de 45-50mg/kg/dia) é o ponto mais testado, com amoxicilina-clavulanato reservada a uso recente de betalactâmico, conjuntivite purulenta concomitante ou OMA de repetição — nunca usar azitromicina, claritromicina, sulfametoxazol-trimetoprim ou quinolonas em criança. A complicação mais cobrada é a mastoidite, cuja armadilha de prova mais citada pelo curso é sugerir conduta conservadora quando na verdade a conduta correta é internação com antibioticoterapia empírica imediata. Otite externa maligna (necrotizante), típica de idosos/diabéticos por Pseudomonas aeruginosa, exige tratamento sistêmico com ciprofloxacino associado a betalactâmico antipseudomonas — sem papel para antibiótico tópico, outra armadilha destacada pelo curso."
   },
   {
     "id": "rinossinusite-faringite",
@@ -6752,7 +6753,7 @@
     "categoria": "Otorrinolaringologia",
     "titulo": "Rinossinusite Aguda e Faringite",
     "resumo": "Sinais que sugerem etiologia bacteriana na rinossinusite e os critérios de Centor na faringite estreptocócica.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Otorrinolaringologia; IDSA Clinical Practice Guideline for Acute Bacterial Rhinosinusitis; Centor Score for Pharyngitis",
     "mnemonicos": [
       {
@@ -6775,7 +6776,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Rinossinusite bacteriana é diagnóstico clínico, sem necessidade de imagem rotineira, baseado em critérios temporais (sintomas persistentes além de 10 dias sem melhora, ou piora após melhora inicial, ou sintomas graves de início). Faringite estreptocócica é avaliada pelo escore de Centor modificado (febre, exsudato amigdaliano, linfadenopatia cervical anterior dolorosa, ausência de tosse), que orienta a probabilidade e a necessidade de teste rápido/cultura de orofaringe para confirmação antes de prescrever antibiótico."
+        "conteudo": "Rinossinusite bacteriana é diagnóstico clínico, sem necessidade de imagem rotineira, baseado em critérios temporais (sintomas persistentes além de 10 dias sem melhora, ou piora após melhora inicial, ou sintomas graves de início). Faringite estreptocócica é avaliada pelo escore de Centor modificado (febre, exsudato amigdaliano, linfadenopatia cervical anterior dolorosa, ausência de tosse), que orienta a probabilidade e a necessidade de teste rápido/cultura de orofaringe para confirmação antes de prescrever antibiótico.\n\n<div class=\"table-wrap\"><table><tr><th>Sinal</th><th>Faringite estreptocócica</th><th>Mononucleose</th></tr><tr><td>Linfonodomegalia cervical</td><td>Anterior, dolorosa</td><td>Generalizada, inclui cervical posterior</td></tr><tr><td>Efeito do antibiótico</td><td>Indicado após confirmação</td><td>Amoxicilina EXACERBA o exantema</td></tr><tr><td>Achado associado</td><td>Petéquias em palato, edema de úvula</td><td>Hepatoesplenomegalia, sinal de Hoagland</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -6789,7 +6790,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O escore de Centor para decisão de testar/tratar faringite estreptocócica é cobrança certa e recorrente. Os critérios temporais que diferenciam rinossinusite viral de bacteriana (10 dias sem melhora, ou duplo agravamento) também são frequentemente exigidos como base para racionalizar o uso de antibiótico nessa condição extremamente prevalente."
       }
-    ]
+    ],
+    "comoCai": "Faringites (33%) e Rinossinusites (25%) são os dois maiores subtemas de IVAS, respondendo juntos por mais da metade das questões do bloco. Em mononucleose (39% das questões de faringite), o dado mais cobrado é que o uso de amoxicilina EXACERBA o exantema — nunca tratar empiricamente uma faringite sem excluir esse quadro quando há linfonodomegalia cervical POSTERIOR (diferencial-chave frente ao SBHA, que cursa com linfonodomegalia cervical ANTERIOR). Na faringite estreptocócica, 15% das questões cobram especificamente que NÃO se deve tratar empiricamente sem confirmação por teste rápido de antígeno ou cultura, mesmo com quadro clínico típico. Em rinossinusites, o conceito mais cobrado é a diferenciação viral x bacteriana pela EVOLUÇÃO temporal (persistência >10-12 dias, piora após o 5º dia, ou febre alta por 3 dias seguidos) — não há exame que diferencie, e o curso destaca repetidamente, em caixa alta, que \"COR DA SECREÇÃO NÃO DEFINE ETIOLOGIA\". Outra armadilha central: radiografia de seios da face não tem papel algum no diagnóstico, e qualquer alternativa que a cite deve ser descartada."
   },
   {
     "id": "perda-auditiva",
@@ -6797,7 +6799,7 @@
     "categoria": "Otorrinolaringologia",
     "titulo": "Perdas Auditivas: Condutiva x Neurossensorial",
     "resumo": "Interpretação dos testes de Weber e Rinne, presbiacusia, PAIR e a emergência da surdez súbita.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Otorrinolaringologia; ASHA Guidelines for Audiologic Assessment",
     "mnemonicos": [
       {
@@ -6834,7 +6836,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "Os testes de Weber e Rinne (e sua interpretação combinada para diferenciar perda condutiva de neurossensorial) são cobrança certíssima e extremamente recorrente, frequentemente através de descrições de resultados para interpretação direta. A perda auditiva neurossensorial súbita como emergência otológica também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "Este é um subtema de baixa incidência dentro de Otorrino (audiologia representa uma fração pequena das questões, mesmo ocupando cerca de 30% do e-book de Otoneurologia), mas quando cobrado, a pegadinha mais citada pelo curso é classificar erroneamente a presbiacusia como perda CONDUTIVA (é neurossensorial, progressiva, simétrica, em altas frequências) ou afirmar que ela reverte com bloqueadores de canal de cálcio — não há tratamento reversor, apenas aparelho auditivo. A perda auditiva induzida por ruído tem um achado característico na audiometria (\"entalhe\" ou \"gota acústica\" entre 3kHz e 6kHz) que costuma ser citado em vinhetas ocupacionais. O zumbido, em 90% dos casos, está associado a algum grau de alteração auditiva, mas é um subtema de incidência extremamente baixa em prova — a mineração encontrou apenas uma única questão específica documentada (RMEAP 2017), sem ocorrência confirmada em banca SES-PE."
   },
   {
     "id": "vertigem-vppb-meniere",
@@ -6842,7 +6845,7 @@
     "categoria": "Otorrinolaringologia",
     "titulo": "Vertigem: VPPB e Doença de Menière",
     "resumo": "Diferenciação entre vertigem periférica e central, e entre VPPB, Menière e neurite vestibular.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAO-HNS Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo",
     "mnemonicos": [
       {
@@ -6865,7 +6868,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "VPPB é diagnóstico clínico confirmado pela manobra de Dix-Hallpike positiva, sem necessidade de exames de imagem na apresentação típica. Doença de Menière é diagnóstico clínico baseado na tríade característica associada a padrão episódico recorrente, com audiometria documentando a hipoacusia neurossensorial flutuante (tipicamente de baixas frequências nas fases iniciais) característica da condição."
+        "conteudo": "VPPB é diagnóstico clínico confirmado pela manobra de Dix-Hallpike positiva, sem necessidade de exames de imagem na apresentação típica. Doença de Menière é diagnóstico clínico baseado na tríade característica associada a padrão episódico recorrente, com audiometria documentando a hipoacusia neurossensorial flutuante (tipicamente de baixas frequências nas fases iniciais) característica da condição.\n\n<div class=\"table-wrap\"><table><tr><th></th><th>VPPB</th><th>Doença de Menière</th></tr><tr><td>Duração da crise</td><td>Segundos</td><td>Minutos a horas</td></tr><tr><td>Gatilho</td><td>Mudança de posição da cabeça</td><td>Não exclusivamente posicional</td></tr><tr><td>Sintomas auditivos</td><td>Ausentes</td><td>Hipoacusia flutuante + zumbido tipo assobio</td></tr><tr><td>Diagnóstico</td><td>Manobra de Dix-Hallpike (clínico)</td><td>Eletrococleografia + avaliação metabólica</td></tr><tr><td>Tratamento definitivo</td><td>Manobra de Epley (curativa)</td><td>Diuréticos (acetazolamida/HCTZ); evitar furosemida</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -6879,7 +6882,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A manobra de Dix-Hallpike para diagnóstico e a manobra de Epley para tratamento da VPPB são cobrança certíssima e extremamente recorrente. A tríade da doença de Menière (vertigem episódica, hipoacusia flutuante, zumbido/plenitude aural) também é frequentemente exigida, assim como os sinais de alarme que diferenciam vertigem periférica benigna de causa central mais grave."
       }
-    ]
+    ],
+    "comoCai": "Dentro do capítulo de Vertigens, a VPPB domina com 53% das questões — o próprio curso chama atenção: \"se estiver com pouco tempo, foque nela\". O ponto mais repetido (3 vezes no material) é que o diagnóstico da VPPB é 100% clínico pela manobra de Dix-Hallpike, SEM necessidade de nenhum exame complementar, e o tratamento curativo é a manobra de Epley. A diferenciação entre vertigem periférica (início súbito, sintomas autonômicos, nistagmo unidirecional fadigável, Romberg unilateral) e central (início gradual, sem sintomas autonômicos, nistagmo multidirecional não fadigável, outros sinais neurológicos) é recorrente em vinhetas. Na doença de Menière, o dado mais cobrado é evitar furosemida no tratamento de manutenção pelo risco de ototoxicidade — usar acetazolamida ou hidroclorotiazida. Uma armadilha final destacada pelo curso: vertigem postural fóbica (tontura persistente por mais de 3 meses sem etiologia identificável) deve ser encaminhada para psiquiatria/psicologia, e NÃO para otorrinolaringologia ou neurologia."
   },
   {
     "id": "urgencias-orl-epistaxe-corpo-estranho",
@@ -6887,7 +6891,7 @@
     "categoria": "Otorrinolaringologia",
     "titulo": "Urgências em ORL: Epistaxe e Corpos Estranhos",
     "resumo": "Manejo da epistaxe anterior x posterior e reconhecimento de corpo estranho nasal/auricular em crianças.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Otorrinolaringologia; AAO-HNS Clinical Practice Guideline: Nosebleed (Epistaxis)",
     "mnemonicos": [
       {
@@ -6924,7 +6928,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A técnica correta de compressão nasal para epistaxe anterior (compressão direta e contínua por 10-15 minutos, nas asas nasais, não na ponte óssea do nariz) é cobrança certa. A urgência absoluta de remoção de pilha/bateria como corpo estranho nasal (diferente de outros objetos, que podem aguardar remoção eletiva em contexto controlado) também é frequentemente exigida como ponto de emergência em otorrinolaringologia."
       }
-    ]
+    ],
+    "comoCai": "São dois subtemas de incidência muito baixa em prova — o próprio curso registra que houve apenas quatro questões sobre manejo de epistaxe e uma sobre anatomia em todas as provas do Brasil nos últimos dez anos. Ainda assim, quando cobrado, corpo estranho nasal tem quadro quase patognomônico: rinorreia mucopurulenta UNILATERAL + obstrução nasal UNILATERAL + odor FÉTICO — mesmo secreção purulenta bacteriana bilateral não costuma ter odor fétido, e essa é a diferenciação mais cobrada. Em epistaxe, 90% dos casos em indivíduos hígidos originam-se na região anterior (plexo de Kiesselbach), e o curso destaca em negrito que NÃO se deve usar adrenalina diretamente na mucosa nasal — o vasoconstritor de escolha é a oximetazolina 0,05% em compressa."
   },
   {
     "id": "olho-vermelho-diagnostico-diferencial",
@@ -6932,7 +6937,7 @@
     "categoria": "Oftalmologia",
     "titulo": "Olho Vermelho: Diagnóstico Diferencial",
     "resumo": "Diferenciação entre conjuntivite, ceratite, uveíte anterior e glaucoma agudo de ângulo fechado.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Oftalmologia; AAO Preferred Practice Pattern: Conjunctivitis",
     "mnemonicos": [
       {
@@ -6955,7 +6960,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A medida da pressão intraocular (tonometria) é essencial diante de suspeita de glaucoma agudo, mostrando valores muito elevados. Exame com lâmpada de fenda (biomicroscopia), idealmente por oftalmologista, permite diferenciação definitiva entre as causas através da visualização detalhada de câmara anterior, córnea e conjuntiva. Teste de fluoresceína identifica lesões/úlceras corneanas na suspeita de ceratite."
+        "conteudo": "A medida da pressão intraocular (tonometria) é essencial diante de suspeita de glaucoma agudo, mostrando valores muito elevados. Exame com lâmpada de fenda (biomicroscopia), idealmente por oftalmologista, permite diferenciação definitiva entre as causas através da visualização detalhada de câmara anterior, córnea e conjuntiva. Teste de fluoresceína identifica lesões/úlceras corneanas na suspeita de ceratite.\n\n<div class=\"table-wrap\"><table><tr><th></th><th>Uveíte anterior aguda</th><th>Crise aguda de glaucoma</th></tr><tr><td>Pupila</td><td>Miose</td><td>Média midríase</td></tr><tr><td>PIO</td><td>Baixa</td><td>Muito alta (&gt;40mmHg)</td></tr><tr><td>Córnea</td><td>Precipitados ceráticos</td><td>Edema corneano</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -6969,7 +6974,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A distinção entre hiperemia conjuntival difusa (geralmente benigna) e perilímbica (sinal de alarme para causa mais grave — uveíte, glaucoma agudo, ceratite) é cobrança certa e central do tema. Os achados específicos do glaucoma agudo (dor intensa, halos, pupila em midríase média fixa) também são frequentemente exigidos como reconhecimento de emergência oftalmológica."
       }
-    ]
+    ],
+    "comoCai": "Olho vermelho é o tema de MAIOR incidência de toda a Oftalmologia (~30% das questões), e o curso destaca que aproximadamente 67% dessas questões giram em torno de apenas três diagnósticos: conjuntivites, uveíte anterior e celulite orbitária. O diagnóstico diferencial mais cobrado do capítulo é uveíte anterior aguda (miose, PIO baixa, precipitados ceráticos) x crise aguda de glaucoma (média midríase, PIO muito alta >40, edema de córnea) — o curso chama atenção explícita para esse ponto. Em celulites, o diferencial-chave é a dor à movimentação ocular: ausente na pré-septal (tratamento oral), presente na orbitária/pós-septal (mais grave, exige TC de órbitas e internação com ATB IV). Nas conjuntivites, o achado mais discriminador é a presença ou ausência de linfonodo pré-auricular doloroso (presente na viral, ausente na bacteriana) e a conjuntivite gonocócica hiperaguda exige tratamento imediato com ceftriaxona IM pelo risco de perfuração corneana. Calázio é descrito pelo próprio curso como \"assunto que cai bastante\", diferenciado do hordéolo por ser indolor e sem sinais flogísticos."
   },
   {
     "id": "catarata-erros-refrativos",
@@ -6977,7 +6983,7 @@
     "categoria": "Oftalmologia",
     "titulo": "Catarata e Erros Refrativos",
     "resumo": "Catarata como principal causa de cegueira reversível, e a fisiopatologia de miopia, hipermetropia, astigmatismo e presbiopia.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Oftalmologia; AAO Preferred Practice Pattern: Cataract",
     "mnemonicos": [
       {
@@ -7014,7 +7020,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A ausência de tratamento clínico eficaz para catarata (apenas cirúrgico) e a indicação cirúrgica baseada no impacto funcional (não em um grau específico de opacificação) são cobrança certa. A leucocoria em criança como sinal de alarme para retinoblastoma (diagnóstico diferencial obrigatório de catarata congênita) também é frequentemente exigida em provas que integram oftalmologia e pediatria."
       }
-    ]
+    ],
+    "comoCai": "O próprio curso avisa que este é um tema de baixa incidência (~3% da Oftalmologia), mas \"dominar essas patologias pode garantir aquele ponto precioso na prova\". A catarata senil é a principal causa de CEGUEIRA REVERSÍVEL no mundo, e a associação mais cobrada é por subtipo: tabagismo/álcool associados aos tipos nuclear e subcapsular posterior, radiação UV ao tipo cortical. A catarata congênita é a causa mais frequente de alteração do Teste do Reflexo Vermelho nas maternidades (leucocoria), com cirurgia idealmente entre 4-6 semanas de vida para evitar ambliopia. No ceratocone, o curso reforça repetidamente que o crosslinking corneano é o único tratamento capaz de interferir na progressão da doença — óculos, lentes e anel intracorneano apenas compensam a ectasia, sem travar sua evolução."
   },
   {
     "id": "retinopatia-diabetica-hipertensiva",
@@ -7022,7 +7029,7 @@
     "categoria": "Oftalmologia",
     "titulo": "Retinopatia Diabética e Hipertensiva",
     "resumo": "Classificação da retinopatia diabética, rastreamento anual obrigatório e achados da retinopatia hipertensiva.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Oftalmologia; Sociedade Brasileira de Diabetes; AAO Preferred Practice Pattern: Diabetic Retinopathy",
     "mnemonicos": [
       {
@@ -7045,7 +7052,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico e o acompanhamento são feitos por fundoscopia direta ou, cada vez mais, por retinografia digital (fotografia padronizada do fundo de olho), permitindo documentação objetiva e comparação evolutiva ao longo do tempo. Todo paciente diabético deve realizar exame oftalmológico de rastreamento ao diagnóstico (diabetes tipo 2) ou a partir de 5 anos do diagnóstico (diabetes tipo 1), repetido anualmente ou conforme achados prévios."
+        "conteudo": "O diagnóstico e o acompanhamento são feitos por fundoscopia direta ou, cada vez mais, por retinografia digital (fotografia padronizada do fundo de olho), permitindo documentação objetiva e comparação evolutiva ao longo do tempo. Todo paciente diabético deve realizar exame oftalmológico de rastreamento ao diagnóstico (diabetes tipo 2) ou a partir de 5 anos do diagnóstico (diabetes tipo 1), repetido anualmente ou conforme achados prévios.\n\n<div class=\"table-wrap\"><table><tr><th>Fase da retinopatia hipertensiva</th><th>Achado fundoscópico característico</th></tr><tr><td>Vasoconstritora</td><td>Estreitamento arteriolar difuso (achado mais precoce)</td></tr><tr><td>Exsudativa</td><td>Hemorragias em chama de vela, exsudatos em estrela macular</td></tr><tr><td>Esclerótica</td><td>Cruzamento arteriovenoso patológico (\"fios de cobre/prata\")</td></tr><tr><td>HAS maligna</td><td>Papiledema + hemorragia peridisco</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -7059,7 +7066,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O calendário de rastreamento oftalmológico obrigatório no diabetes (ao diagnóstico no tipo 2, a partir de 5 anos no tipo 1, com repetição anual) é cobrança certíssima e recorrente em provas de saúde pública e endocrinologia. A progressão de não proliferativa para proliferativa (com indicação de fotocoagulação a laser nesta última) também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "Doenças do Polo Posterior é o 2º tema mais cobrado de toda a Oftalmologia (~14%), logo atrás de Olho Vermelho, e o próprio curso chama retinopatia diabética de \"queridinha das bancas\". O fator de risco mais importante é o TEMPO de diabetes (gravidade e edema macular mais frequentes após 20 anos de evolução) — mais até que o controle glicêmico isolado. A maculopatia diabética é destacada como a causa mais comum de deficiência visual em diabéticos, particularmente no tipo 2. Na retinopatia hipertensiva, o achado clássico mais cobrado é o cruzamento arteriovenoso patológico da fase esclerótica (\"fios de cobre/prata\"), e a classificação de Keith-Wagener-Barker é citada como a mais recorrente. HAS maligna tem um achado fundoscópico marca registrada: papiledema, associado a hemorragia em chama de vela peridisco."
   },
   {
     "id": "trauma-ocular",
@@ -7067,7 +7075,7 @@
     "categoria": "Oftalmologia",
     "titulo": "Trauma Ocular",
     "resumo": "Avaliação inicial, sinais de perfuração de globo ocular e a regra de nunca aplicar pressão sobre o olho aberto.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Oftalmologia; American Academy of Ophthalmology — Ocular Trauma Guidelines",
     "mnemonicos": [
       {
@@ -7104,7 +7112,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A contraindicação de manipulação/pressão sobre o globo ocular diante de suspeita de trauma aberto (usar escudo rígido, nunca curativo compressivo) é cobrança certa e ponto de segurança crítico. A contraindicação de ressonância magnética diante de suspeita de corpo estranho metálico intraocular também é frequentemente exigida em questões de conduta de emergência."
       }
-    ]
+    ],
+    "comoCai": "Trauma ocular é tema de baixa incidência (~7% da Oftalmologia), e o curso enfatiza que a banca costuma perguntar especificamente sobre a conduta do médico responsável pelo primeiro atendimento (não do especialista). Em queimaduras químicas, o ponto mais cobrado é que álcalis são mais graves que ácidos (saponificação x coagulação proteica), e a conduta emergencial exige irrigação copiosa por no mínimo 30 minutos — nunca neutralizar ácido com base ou vice-versa (destaque em negrito do curso). Em hifema traumático, deve-se evitar AAS/AINEs pelo risco de sangramento, com atenção ao ressangramento típico entre o 2º e o 5º dia pós-trauma. Na suspeita de ruptura de globo ocular, duas condutas são absolutamente proibidas na urgência não-especializada: aplicar curativo oclusivo com pressão e tentar remover corpo estranho ou tecido — ambas podem extrudir o conteúdo intraocular."
   },
   {
     "id": "fraturas-luxacoes-comuns",
@@ -7112,7 +7121,7 @@
     "categoria": "Ortopedia e Traumatologia",
     "titulo": "Fraturas e Luxações Comuns",
     "resumo": "Fratura de Colles, clavícula e colo femoral, e as regras de Ottawa para radiografia do tornozelo.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; AO Foundation — Princípios de Tratamento de Fraturas",
     "mnemonicos": [
       {
@@ -7135,7 +7144,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A radiografia simples em pelo menos duas incidências (frente e perfil) é o exame padrão para diagnóstico, caracterização do tipo de fratura (traço, desvio, cominuição) e planejamento terapêutico. Tomografia é reservada a fraturas complexas, articulares, ou quando a radiografia simples não esclarece completamente a extensão da lesão."
+        "conteudo": "A radiografia simples em pelo menos duas incidências (frente e perfil) é o exame padrão para diagnóstico, caracterização do tipo de fratura (traço, desvio, cominuição) e planejamento terapêutico. Tomografia é reservada a fraturas complexas, articulares, ou quando a radiografia simples não esclarece completamente a extensão da lesão.\n\n<div class=\"table-wrap\"><table><tr><th>Achado</th><th>Diagnóstico</th></tr><tr><td>Sinal da dragona</td><td>Luxação glenoumeral anterior (95% dos casos)</td></tr><tr><td>Sinal da tecla de piano</td><td>Luxação acromioclavicular</td></tr><tr><td>Membro encurtado e rodado EXTERNAMENTE</td><td>Fratura de fêmur proximal</td></tr><tr><td>Flexão + adução + rotação interna (FADRI)</td><td>Luxação de quadril</td></tr><tr><td>Dor na tabaqueira anatômica</td><td>Fratura de escafoide</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -7149,7 +7158,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A avaliação neurovascular distal obrigatória antes e depois de qualquer manipulação de fratura é cobrança certa. O reconhecimento da síndrome compartimental (dor desproporcional como sinal mais precoce e importante, antes mesmo de alterações de pulso, que são tardias) é ponto crítico e extremamente recorrente em provas de ortopedia/emergência."
       }
-    ]
+    ],
+    "comoCai": "Fratura do fêmur proximal é descrita pelo próprio curso como um tema que \"despenca\" nas provas — mortalidade de até 25% no primeiro ano se a cirurgia for atrasada, com recomendação de operar em até 48h; o membro encurtado e rodado EXTERNAMENTE (mnemônico \"ENRE\") é o diferencial-chave frente à luxação de quadril (\"FADRI\": flexão, adução, rotação interna). Na luxação glenoumeral, o curso é direto: \"o que é cobrado é principalmente o sinal da dragona — se você ler isso, assinale luxação do ombro\". A fratura do escafoide, mesmo sendo um tema infrequente, é \"a fratura da mão mais cobrada\", com a pseudoartrose como complicação mais temida por causa da vascularização retrógrada. Fraturas do rádio distal e antebraço são resumidas pelo curso a puro epônimo: \"tatue na sua medula: Monteggia e Galeazzi\". Uma questão real do ENARE 2022 usou fratura em galho verde (ruptura incompleta da cortical óssea, típica de criança) contra o distrator de fratura em fivela (que atravessa a placa de crescimento — informação incorreta usada de propósito)."
   },
   {
     "id": "lesoes-ligamentares-joelho",
@@ -7157,7 +7167,7 @@
     "categoria": "Ortopedia e Traumatologia",
     "titulo": "Lesões Ligamentares do Joelho",
     "resumo": "Lesão do LCA, LCM e menisco, e os testes clínicos que orientam o diagnóstico inicial.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; AAOS Clinical Practice Guideline on ACL Injuries",
     "mnemonicos": [
       {
@@ -7194,7 +7204,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O teste de Lachman como o mais sensível para lesão de LCA (superando a antiga gaveta anterior em sensibilidade) é cobrança certa. A tríade infeliz (LCA + colateral medial + menisco medial) e a diferenciação de velocidade de instalação do edema (rápida no LCA, mais lenta na lesão meniscal isolada) também são frequentemente exigidas."
       }
-    ]
+    ],
+    "comoCai": "Não existe, em nenhuma das duas fontes mineradas, um e-book dedicado exclusivamente às lesões ligamentares do joelho do adulto — o conteúdo aparece integrado dentro do e-book geral de Fraturas e Luxações, o que é registrado aqui como limitação real do material disponível. Dentro do que foi encontrado, o próprio curso orienta que \"as questões aqui se referem principalmente a mecanismo de trauma e exame físico\": os testes semiológicos cobrados são gaveta anterior e Lachman para o LCA, gaveta posterior para o LCP, estresse em valgo (bocejo medial) para o LCM, estresse em varo (bocejo lateral) para o LCL, e teste de Apley para lesão meniscal. O diferencial temporal mais cobrado é que lesão ligamentar aguda cursa com hemartrose IMEDIATA, enquanto lesão meniscal cursa com hemartrose TARDIA. A artéria poplítea é destacada como a mais sujeita a lesão vascular em luxações de joelho."
   },
   {
     "id": "artrite-septica-osteomielite",
@@ -7202,7 +7213,7 @@
     "categoria": "Ortopedia e Traumatologia",
     "titulo": "Infecções Ortopédicas: Artrite Séptica e Osteomielite",
     "resumo": "Emergência da artrite séptica, tratamento sem aguardar cultura e diferenciação da osteomielite aguda x crônica.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; IDSA Clinical Practice Guidelines for Native Vertebral Osteomyelitis",
     "mnemonicos": [
       {
@@ -7225,7 +7236,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A artrocentese diagnóstica é etapa obrigatória e urgente diante de suspeita de artrite séptica, com análise do líquido sinovial (celularidade muito elevada com predomínio neutrofílico, cultura e Gram) confirmando o diagnóstico e identificando o agente causal. Osteomielite é investigada por ressonância magnética (exame mais sensível para detecção precoce, antes mesmo de alterações radiográficas, que só aparecem cerca de 10-14 dias após o início do processo infeccioso) e hemoculturas, com biópsia óssea confirmando definitivamente em casos de dúvida diagnóstica."
+        "conteudo": "A artrocentese diagnóstica é etapa obrigatória e urgente diante de suspeita de artrite séptica, com análise do líquido sinovial (celularidade muito elevada com predomínio neutrofílico, cultura e Gram) confirmando o diagnóstico e identificando o agente causal. Osteomielite é investigada por ressonância magnética (exame mais sensível para detecção precoce, antes mesmo de alterações radiográficas, que só aparecem cerca de 10-14 dias após o início do processo infeccioso) e hemoculturas, com biópsia óssea confirmando definitivamente em casos de dúvida diagnóstica.\n\n<div class=\"table-wrap\"><table><tr><th>Critérios de Kocher presentes</th><th>Probabilidade de pioartrite</th></tr><tr><td>4 (febre, VHS&gt;40, incapaz de apoiar, leucocitose&gt;12.000)</td><td>99,6%</td></tr><tr><td>0</td><td>0,2%</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -7239,7 +7250,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A obrigatoriedade de artrocentese diagnóstica urgente diante de suspeita de artrite séptica (nunca tratar apenas empiricamente sem confirmação do líquido sinovial) é cobrança certa. A localização metafisária preferencial da osteomielite hematogênica em crianças e a superioridade da ressonância magnética sobre a radiografia para diagnóstico precoce também são frequentemente exigidas."
       }
-    ]
+    ],
+    "comoCai": "Na pioartrite pediátrica, o dado mais cobrado é a aplicação dos Critérios de Kocher — 4 critérios (febre, VHS>40mm/h, incapacidade de apoiar o membro, leucocitose >12.000) presentes elevam a chance de pioartrite para 99,6%, contra apenas 0,2% com nenhum critério, um dado quantitativo explícito do material. O exame diagnóstico de escolha é a PUNÇÃO ARTICULAR (nunca a radiografia, que pode levar até 2 semanas para alterar). O próprio material já entrega o \"spoiler\" da resposta mais cobrada para antibioticoterapia empírica no caso padrão: OXACILINA — exceto se houver menção a vida sexual ativa (pensar em gonorreia/ceftriaxona) ou a gram-negativos. Na osteomielite, o melhor exame de imagem é a ressonância magnética (sinal de \"área de penumbra\"), e o local mais acometido em crianças é a metáfise de ossos longos, com S. aureus como agente mais comum em todas as faixas etárias. O diferencial pista-chave ensinado pelo curso é: \"dor metafisária, febre, claudicação, criança ou adolescente\" aponta para osteomielite."
   },
   {
     "id": "ortopedia-pediatrica-quadril-pe",
@@ -7247,7 +7259,7 @@
     "categoria": "Ortopedia e Traumatologia",
     "titulo": "Ortopedia Pediátrica: Quadril e Pé",
     "resumo": "Displasia do desenvolvimento do quadril, doença de Perthes, epifisiólise femoral proximal e pé torto congênito.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; Sociedade Brasileira de Pediatria",
     "mnemonicos": [
       {
@@ -7270,7 +7282,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Ultrassonografia de quadril é o exame de escolha para DDQ em lactentes até cerca de 4-6 meses (antes da ossificação significativa da cabeça femoral, que limita a avaliação radiográfica nessa fase); radiografia torna-se mais informativa após essa idade. Doença de Legg-Calvé-Perthes é diagnosticada por radiografia de bacia, mostrando alterações características da cabeça femoral conforme o estágio evolutivo da doença (esclerose, fragmentação, reossificação)."
+        "conteudo": "Ultrassonografia de quadril é o exame de escolha para DDQ em lactentes até cerca de 4-6 meses (antes da ossificação significativa da cabeça femoral, que limita a avaliação radiográfica nessa fase); radiografia torna-se mais informativa após essa idade. Doença de Legg-Calvé-Perthes é diagnosticada por radiografia de bacia, mostrando alterações características da cabeça femoral conforme o estágio evolutivo da doença (esclerose, fragmentação, reossificação).\n\n<div class=\"table-wrap\"><table><tr><th>Doença</th><th>Idade típica</th><th>Achado-chave</th></tr><tr><td>DDQ</td><td>Recém-nascido</td><td>Ortolani/Barlow; USG confirmatória &lt;4 meses</td></tr><tr><td>Sinovite transitória</td><td>3–8 anos</td><td>Pós-IVAS, sem sinais flogísticos, autorresolutiva</td></tr><tr><td>Doença de Perthes</td><td>4–8 anos</td><td>Necrose asséptica da cabeça femoral</td></tr><tr><td>Epifisiólise</td><td>10–16 anos, obesos</td><td>Sinal de Drehmann; linha de Klein alterada</td></tr><tr><td>Pioartrite</td><td>Qualquer, pico &lt;2 anos</td><td>Critérios de Kocher; punção articular</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -7284,7 +7296,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "As manobras de Ortolani e Barlow (técnica e significado de cada uma) para rastreamento de DDQ são cobrança certíssima e extremamente recorrente em provas de pediatria/ortopedia. O método de Ponseti como tratamento de escolha atual do pé torto congênito (substituindo a cirurgia extensa como primeira linha) também é frequentemente exigido como atualização de conduta."
       }
-    ]
+    ],
+    "comoCai": "Quadril pediátrico é, segundo o próprio curso, \"o tema mais cobrado dentro da ortopedia pediátrica\", e não existe e-book dedicado ao \"pé pediátrico\" equivalente (ausência registrada). O fluxograma central do curso guia o raciocínio por idade e sinais: recém-nascido → DDQ; IVAS recente + sintomas articulares → sinovite transitória; adolescente com dor → epifisiólise; 4-8 anos com encurtamento → Perthes; dor metafisária+febre → pioartrite/osteomielite. Os números são repetidos à exaustão pelo curso como forma de fixação: \"Ortolani, Barlow, Ultrassonografia e o fluxograma respondem 77% das questões de DDQ\"; o mesmo \"77%\" se aplica ao diagnóstico de sinovite transitória e de epifisiólise; e 72% das questões de Perthes cobram apenas o diagnóstico. Na DDQ, o teste muda conforme a idade (Ortolani/Barlow até 3 meses; Galeazzi/Trendelenburg após a marcha), e a ultrassonografia é o exame confirmatório antes dos 4 meses. Na epifisiólise, o sinal de Drehmann e a linha de Klein (que não cruza o terço lateral da epífise) são os achados centrais, com conduta de retirar carga imediatamente e cirurgia de urgência."
   },
   {
     "id": "dermatoses-inflamatorias",
@@ -7292,7 +7305,7 @@
     "categoria": "Dermatologia",
     "titulo": "Dermatoses Inflamatórias: Dermatite Atópica, Psoríase e Acne",
     "resumo": "Distribuição típica das lesões, sinal de Auspitz na psoríase e tratamento escalonado da acne.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Dermatologia; AAD Guidelines of Care for Atopic Dermatitis, Psoriasis and Acne",
     "mnemonicos": [
       {
@@ -7315,7 +7328,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico das três condições é predominantemente clínico, baseado na morfologia e distribuição características das lesões, sem necessidade de biópsia na maioria dos casos típicos. Biópsia cutânea é reservada a apresentações atípicas ou dúvida diagnóstica relevante que não se esclarece pela avaliação clínica isolada."
+        "conteudo": "O diagnóstico das três condições é predominantemente clínico, baseado na morfologia e distribuição características das lesões, sem necessidade de biópsia na maioria dos casos típicos. Biópsia cutânea é reservada a apresentações atípicas ou dúvida diagnóstica relevante que não se esclarece pela avaliação clínica isolada.\n\n<div class=\"table-wrap\"><table><tr><th>Grau de acne</th><th>Apresentação</th><th>Tratamento</th></tr><tr><td>I — Comedoniana</td><td>Comedões abertos/fechados</td><td>Tópico</td></tr><tr><td>II — Papulopustulosa</td><td>Pápulas e pústulas</td><td>Tópico</td></tr><tr><td>III — Nodulocística</td><td>Nódulos e cistos</td><td>Isotretinoína (padrão-ouro)</td></tr><tr><td>IV — Conglobata</td><td>Abscessos/fístulas</td><td>Sistêmico</td></tr><tr><td>V — Fulminante</td><td>Necrose + sintomas sistêmicos</td><td>Sistêmico + suporte</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -7329,7 +7342,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A distribuição característica das lesões por idade na dermatite atópica (face/extensoras em lactentes, flexuras em crianças maiores/adultos) é cobrança certa. O sinal de Auspitz na psoríase e a isotretinoína (com seu potencial teratogênico exigindo contracepção rigorosa em mulheres) para acne grave também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "Dermatite atópica é, segundo o próprio curso, \"sem dúvida o tema mais cobrado\" dentro do grupo das dermatoses eczematosas, com ênfase especial na diferenciação com a dermatite seborreica em criança pequena. Um dado muito cobrado é que o uso de antibiótico na impetiginização (complicação por S. aureus com crostas melicéricas) deve ser reconhecido quando o examinador descreve crostas sobre placas de eczema. Na psoríase, a prova adora o cenário clássico de eritrodermia por retirada abrupta de corticoide sistêmico — o curso repete que \"nunca se deve usar corticoide sistêmico na psoríase\", justamente pelo risco desse desencadeamento. A psoríase ungueal (mancha em óleo, pitting) tem forte relação com artrite psoriásica de interfalangeanas distais. Na acne, a classificação em 5 graus define a conduta: tratamento tópico até o grau II, e isotretinoína como padrão-ouro a partir do grau III (nodulocística)."
   },
   {
     "id": "infeccoes-cutaneas",
@@ -7337,7 +7351,7 @@
     "categoria": "Dermatologia",
     "titulo": "Infecções Cutâneas: Micoses, Piodermites e Viroses",
     "resumo": "Diferenciação entre impetigo, erisipela/celulite, e o reconhecimento precoce da fasceíte necrotizante.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Dermatologia; IDSA Clinical Practice Guidelines for Skin and Soft Tissue Infections",
     "mnemonicos": [
       {
@@ -7360,7 +7374,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico das infecções cutâneas bacterianas comuns é predominantemente clínico, sem necessidade de cultura de rotina em casos típicos não complicados. Herpes zoster é diagnosticado clinicamente pela distribuição dermatomal característica; testes específicos (PCR, cultura viral) são reservados a casos atípicos ou imunossuprimidos. Dermatofitoses podem ser confirmadas por exame micológico direto (KOH) quando há dúvida diagnóstica."
+        "conteudo": "O diagnóstico das infecções cutâneas bacterianas comuns é predominantemente clínico, sem necessidade de cultura de rotina em casos típicos não complicados. Herpes zoster é diagnosticado clinicamente pela distribuição dermatomal característica; testes específicos (PCR, cultura viral) são reservados a casos atípicos ou imunossuprimidos. Dermatofitoses podem ser confirmadas por exame micológico direto (KOH) quando há dúvida diagnóstica.\n\n<div class=\"table-wrap\"><table><tr><th></th><th>Erisipela</th><th>Celulite</th></tr><tr><td>Delimitação da lesão</td><td>Bem delimitada</td><td>Mal delimitada</td></tr><tr><td>Camada acometida</td><td>Derme papilar + linfáticos</td><td>Derme reticular + hipoderme</td></tr><tr><td>Agente</td><td>S. pyogenes</td><td>S. pyogenes e S. aureus</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -7374,7 +7388,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre erisipela (bordas bem delimitadas e elevadas, mais superficial) e celulite (bordas mal definidas, mais profunda) é cobrança certa. O sinal de Hutchinson no herpes zoster oftálmico como indicador de risco de complicação ocular grave, e a importância do início precoce do antiviral (até 72h) para reduzir neuralgia pós-herpética, também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "O curso é direto: \"atenção especial para o impetigo, que é o assunto mais cobrado\" dentro das piodermites. A distinção erisipela x celulite é destacada como \"outro ponto superimportante\": erisipela tem lesão BEM delimitada (derme papilar, S. pyogenes), celulite tem lesão MAL delimitada (derme reticular/hipoderme, S. pyogenes E S. aureus). Em fasciíte necrotizante, o dado-chave é dor DESPROPORCIONAL ao exame físico. Na escabiose, o prurido NOTURNO é a manifestação clássica mais cobrada, e o acometimento PALMOPLANTAR em recém-nascidos/lactentes é destacado pelo curso como \"muito cobrado nas provas\" — diferente do padrão do adulto, que poupa palmas e plantas. O molusco contagioso tem sua \"informação mais cobrada nas provas de residência\": a pápula com UMBILICAÇÃO CENTRAL. Em micoses, a frase-gatilho do curso é direta: \"quando o examinador descrever descamação furfurácea, quase sempre a resposta será pitiríase versicolor\"."
   },
   {
     "id": "neoplasias-cutaneas",
@@ -7382,7 +7397,7 @@
     "categoria": "Dermatologia",
     "titulo": "Neoplasias Cutâneas: CBC, CEC e Melanoma",
     "resumo": "Diferenciação entre carcinoma basocelular, espinocelular e melanoma, e a regra do ABCDE.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Instituto Nacional de Câncer (INCA); Sociedade Brasileira de Dermatologia — Critério ABCDE para Melanoma",
     "mnemonicos": [
       {
@@ -7409,7 +7424,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "CBC e CEC são tratados predominantemente por excisão cirúrgica com margens oncológicas apropriadas, com excelente prognóstico e alta taxa de cura na grande maioria dos casos diagnosticados precocemente. Melanoma é tratado com excisão ampla com margens determinadas pela espessura de Breslow, associada a pesquisa de linfonodo sentinela quando indicada pelo estadiamento; doença avançada/metastática é tratada com imunoterapia (inibidores de checkpoint) e terapia-alvo (para tumores com mutação BRAF), avanços terapêuticos que mudaram significativamente o prognóstico do melanoma metastático na última década."
+        "conteudo": "CBC e CEC são tratados predominantemente por excisão cirúrgica com margens oncológicas apropriadas, com excelente prognóstico e alta taxa de cura na grande maioria dos casos diagnosticados precocemente. Melanoma é tratado com excisão ampla com margens determinadas pela espessura de Breslow, associada a pesquisa de linfonodo sentinela quando indicada pelo estadiamento; doença avançada/metastática é tratada com imunoterapia (inibidores de checkpoint) e terapia-alvo (para tumores com mutação BRAF), avanços terapêuticos que mudaram significativamente o prognóstico do melanoma metastático na última década.\n\n<div class=\"table-wrap\"><table><tr><th>Índice de Breslow</th><th>Margem cirúrgica</th><th>Linfonodo sentinela</th></tr><tr><td>In situ</td><td>0,5cm</td><td>Não indicado</td></tr><tr><td>≤1mm</td><td>1cm</td><td>Indicado se ≥0,8mm com ulceração/mitoses</td></tr><tr><td>1–2mm</td><td>1–2cm</td><td>Indicado</td></tr><tr><td>&gt;2mm</td><td>2cm</td><td>Indicado</td></tr></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -7419,7 +7434,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A regra ABCDE para melanoma (com ênfase no critério E de evolução como o mais sensível) é cobrança certíssima e extremamente recorrente em provas de dermatologia. A espessura de Breslow como principal fator prognóstico do melanoma, e a diferenciação de comportamento biológico entre CBC (baixíssimo risco metastático) e CEC/melanoma também são frequentemente exigidas."
       }
-    ]
+    ],
+    "comoCai": "O CBC é o câncer de pele mais comum em geral, mas o curso destaca um dado invertido importante: o CEC passa a ser o mais comum em pacientes transplantados de órgão sólido. Na fisiopatologia do CEC, o conceito \"cobrado exaustivamente\" pelo curso é a úlcera de Marjolin: \"tumor sobre uma úlcera/queimadura prévia = carcinoma espinocelular\". No melanoma, o índice de Breslow é o principal fator prognóstico, e a indicação de linfonodo sentinela (Breslow ≥1mm, ou ≥0,8mm com ulceração/mitoses) é ponto central de prova — o curso reforça que melanomas muito finos (<0,8mm) não têm essa indicação por regra. Uma mudança de conduta recentemente cobrada em prova, segundo o próprio material: em micrometástase no linfonodo sentinela, a conduta atual é imunoterapia + seguimento, SEM linfadenectomia radical (reservada apenas a macrometástase palpável)."
   },
   {
     "id": "farmacodermias",
@@ -7427,7 +7443,7 @@
     "categoria": "Dermatologia",
     "titulo": "Farmacodermias: Reações Cutâneas a Medicamentos",
     "resumo": "Do exantema morbiliforme benigno à síndrome de Stevens-Johnson/NET e DRESS, reações graves que exigem suspensão imediata.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Dermatologia; UpToDate — Severe Cutaneous Adverse Reactions",
     "mnemonicos": [
       {
@@ -7450,7 +7466,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é predominantemente clínico, baseado no reconhecimento do padrão e na relação temporal com introdução de medicamento novo (anticonvulsivantes, alopurinol, sulfonamidas e certos antibióticos são causas frequentemente implicadas). Biópsia cutânea confirma o padrão histológico de necrose epidérmica em SSJ/NET quando há dúvida diagnóstica. Investigação laboratorial em DRESS inclui hemograma (eosinofilia característica) e função hepática (frequentemente alterada)."
+        "conteudo": "O diagnóstico é predominantemente clínico, baseado no reconhecimento do padrão e na relação temporal com introdução de medicamento novo (anticonvulsivantes, alopurinol, sulfonamidas e certos antibióticos são causas frequentemente implicadas). Biópsia cutânea confirma o padrão histológico de necrose epidérmica em SSJ/NET quando há dúvida diagnóstica. Investigação laboratorial em DRESS inclui hemograma (eosinofilia característica) e função hepática (frequentemente alterada).\n\n<div class=\"table-wrap\"><table><tr><th>Farmacodermia</th><th>Frase-gatilho</th><th>Letalidade</th></tr><tr><td>SSJ (&lt;10% SC) / NET (&gt;30% SC)</td><td>Necrose cutânea + descolamento + erosões mucosas</td><td>10–20% / 50%</td></tr><tr><td>DRESS</td><td>Exantema + eosinofilia + hepatite, 2–6 semanas após droga</td><td>5–10%</td></tr><tr><td>PEGA</td><td>Pústulas disseminadas + neutrofilia, 1–10 dias após droga</td><td>~2%</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -7464,7 +7480,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A classificação de SSJ versus NET pela porcentagem de superfície corporal descolada (menos de 10% versus mais de 30%) é cobrança certa. A suspensão imediata do medicamento suspeito como medida terapêutica mais importante (antes mesmo de qualquer tratamento farmacológico específico) é ponto central e extremamente recorrente em qualquer farmacodermia grave."
       }
-    ]
+    ],
+    "comoCai": "O curso é explícito: \"metade das questões de farmacodermia são sobre síndrome de Stevens-Johnson (SSJ) e Necrólise Epidérmica Tóxica (NET) — dê uma ênfase maior nesse assunto\". A classificação por porcentagem de superfície corporal com necrólise separa SSJ (<10%) de NET (>30%), com letalidade bem diferente (10-20% x 50%). O material fornece \"frases-gatilho\" literais para reconhecimento rápido de questão: \"uso recente de nova droga + necrose cutânea + descolamento epidérmico + erosões mucosas = SSJ/NET\"; \"uso recente de medicação (principalmente anticonvulsivante) + exantema + eosinofilia + hepatite = DRESS\"; \"uso recente de antibiótico + pústulas disseminadas + neutrofilia = PEGA\". A erupção fixa à droga tem um sinal muito específico e \"fácil de identificar\": reaparece EXATAMENTE no mesmo local a cada reexposição à droga."
   },
   {
     "id": "avaliacao-pre-anestesica-asa",
@@ -7472,7 +7489,7 @@
     "categoria": "Anestesiologia",
     "titulo": "Avaliação Pré-Anestésica e Classificação ASA",
     "resumo": "Objetivos da avaliação pré-anestésica, classificação ASA de estado físico e preditores de via aérea difícil.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Anestesiologia; American Society of Anesthesiologists (ASA) Physical Status Classification",
     "mnemonicos": [
       {
@@ -7509,7 +7526,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A classificação ASA (com seus 6 graus e o sufixo E para urgência) é cobrança certíssima e extremamente recorrente em provas de anestesiologia e cirurgia. A classificação de Mallampati para predição de via aérea difícil, e os tempos de jejum pré-operatório atualizados (2h para líquidos claros), também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "Diferente das demais especialidades mineradas nesta rodada, não existe e-book do Estratégia MED dedicado a Anestesiologia — a única fonte encontrada foi o material EMR, em formato de slides telegráficos com casos clínicos e questões reais de bancas recentes (2022-2024), sem o texto teórico corrido das demais especialidades; essa limitação de formato é registrada explicitamente. Ainda assim, o padrão de cobrança fica claro pelas questões reais citadas: a classificação ASA é aplicada em vinhetas específicas — um politraumatizado em choque hipovolêmico por fraturas expostas é classificado como \"ASA V E\" (V = doença sistêmica grave com risco iminente de morte; E = emergência), enquanto um paciente eletivo hipertenso/diabético/dislipidêmico que sobe 3 lances de escada sem dificuldade é \"ASA II, >4 METS\". No preparo pré-operatório eletivo, a conduta-modelo ensinada é manter anti-hipertensivos e suspender antiglicemiantes orais, com exames de rotina limitados a ECG, hemograma, glicemia, função renal, eletrólitos e radiografia de tórax — sem exigir uma bateria extensa de exames complementares."
   },
   {
     "id": "via-aerea-dificil",
@@ -7517,7 +7535,7 @@
     "categoria": "Anestesiologia",
     "titulo": "Manejo da Via Aérea Difícil",
     "resumo": "Preditores de dificuldade, o algoritmo de via aérea difícil e a prioridade absoluta da oxigenação.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Anestesiologia; American Society of Anesthesiologists Difficult Airway Algorithm",
     "mnemonicos": [
       {
@@ -7554,7 +7572,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O algoritmo de via aérea difícil da ASA (sequência de decisões priorizando sempre a oxigenação do paciente) é cobrança certíssima e um dos temas mais importantes de toda a anestesiologia/emergência em provas de residência. A cricotireoidostomia como medida de resgate final na situação \"não intuba, não ventila\" também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "Assim como no restante da Anestesiologia, este tema é coberto apenas por material EMR em formato de casos clínicos com questões reais, sem descrição textual completa de algoritmos de via aérea difícil ou da escala de Mallampati (apenas referenciada por imagem, sem texto explicativo extraído) — limitação de material registrada explicitamente. Um caso clínico de trauma com SpO2 83% e FR 32 ensina a via aérea definitiva por sequência rápida de intubação, com quetamina e succinilcolina como drogas citadas, e capnografia para confirmação pós-intubação. Uma questão real e confirmada da SES-PE (2020, R3 Cirurgia) — identificada nesta mineração dentro do mesmo arquivo de Procedimentos — trata de acesso venoso central e cateterização arterial em UTI, tema tangencial à via aérea mas registrado aqui pela relevância da banca. Outra questão real (SMS-SP 2020) cobra a ordem correta dos passos da técnica de Seldinger para acesso vascular."
   },
   {
     "id": "farmacologia-anestesicos-locais-gerais",
@@ -7562,7 +7581,7 @@
     "categoria": "Anestesiologia",
     "titulo": "Farmacologia dos Anestésicos Locais e Gerais",
     "resumo": "Mecanismo dos anestésicos locais, toxicidade sistêmica (LAST), agentes gerais e a hipertermia maligna.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Anestesiologia; Miller's Anesthesia — Princípios de Farmacologia Anestésica",
     "mnemonicos": [
       {
@@ -7599,7 +7618,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O dantroleno como antídoto específico da hipertermia maligna e a emulsão lipídica como resgate específico da toxicidade sistêmica por anestésico local são cobranças certíssimas e extremamente recorrentes em provas de anestesiologia. A maior cardiotoxicidade da bupivacaína comparada a outros anestésicos locais também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "Este tema, no material disponível, é coberto quase inteiramente por meio de questões reais de provas recentes (2022-2024) com gabarito, sem texto teórico corrido explicando mecanismos de ação — limitação de formato do material EMR de Anestesiologia, registrada explicitamente. O padrão de cobrança identificado é a escolha do hipnótico/indutor conforme a comorbidade do paciente: uma questão real do UNIFESP 2024 usa um paciente coronariopata com fração de ejeção baixa (32%) para direcionar à escolha do ETOMIDATO, por sua maior estabilidade cardiovascular; já uma questão do ENARE 2024 identifica a CETAMINA como o agente a EVITAR no coronariopata, pelo seu efeito hipertensivo/simpaticomimético — o mesmo fármaco que é preferido no choque hipovolêmico do politraumatizado, ilustrando que a escolha depende do contexto hemodinâmico específico. Uma questão do PSU-MG 2024 compara lidocaína e ropivacaína quanto a toxicidade cardíaca e latência. No caso do politrauma com esmagamento de membro, o próprio curso explicita o raciocínio farmacológico: preferir rocurônio a succinilcolina pelo risco de hipercalemia."
   },
   {
     "id": "manejo-dor-aguda-cronica",
@@ -7607,7 +7627,7 @@
     "categoria": "Anestesiologia",
     "titulo": "Manejo da Dor Aguda e Crônica",
     "resumo": "Escada analgésica da OMS, diferenciação entre dor nociceptiva e neuropática, e analgesia multimodal pós-operatória.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Anestesiologia; Organização Mundial da Saúde — Escada Analgésica",
     "mnemonicos": [
       {
@@ -7644,7 +7664,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A escada analgésica da OMS (os três degraus e os adjuvantes) é cobrança certíssima e extremamente recorrente em praticamente toda prova de residência médica, independente da especialidade. A diferenciação entre dor nociceptiva e neuropática, com a preferência por antidepressivos/anticonvulsivantes (não opioides isoladamente) para esta última, também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "AUSÊNCIA CONFIRMADA: esta rodada de mineração não localizou, em nenhuma das duas plataformas de curso autorizadas (EMR ou Estratégia MED), nenhum módulo específico de Anestesiologia dedicado ao manejo da dor aguda e crônica (analgesia multimodal, escada analgésica da OMS aplicada à anestesiologia, bloqueios para dor, síndromes de dor crônica). Buscas dirigidas por \"Dor\" + \"Aguda\"/\"Crônica\"/\"Analgesia\" retornaram apenas material de outras especialidades (Ginecologia, Reumatologia), sem relação com este tema específico de Anestesiologia. Esta lacuna é registrada de forma honesta, sem invenção de dados de prova ou de percentuais de incidência — a escala analgésica da OMS, embora mencionada pontualmente no material de Ortopedia sobre lombalgia, não substitui um módulo dedicado de Anestesiologia sobre este tema. Recomenda-se buscar novamente caso o usuário adicione material específico de Anestesiologia sobre dor ao Google Drive no futuro."
   },
   {
     "id": "torcao-testicular-escroto-agudo",
@@ -9078,7 +9099,7 @@
     "categoria": "Dermatologia",
     "titulo": "Escabiose e Pediculose",
     "resumo": "Prurido noturno em espaços interdigitais na escabiose, a forma crostosa em imunossuprimidos e o tratamento de todos os contactantes.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Dermatologia; Ministério da Saúde — Guia de Vigilância em Saúde",
     "mnemonicos": [
       {
@@ -9115,7 +9136,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A distribuição típica das lesões de escabiose (interdigital, punhos, axilas — poupando face/couro cabeludo em adultos, mas não em lactentes) e o prurido de piora noturna são cobranças certas. O tratamento obrigatório de todos os contactantes domiciliares simultaneamente (mesmo assintomáticos) também é frequentemente exigido como ponto crítico para sucesso terapêutico e prevenção de reinfestação."
       }
-    ]
+    ],
+    "comoCai": "\"A manifestação mais clássica da escabiose e que você precisa saber é o prurido noturno\", afirma o curso, com a lesão em túnel (2-15mm, serpiginoso) sendo quase patognomônica. O acometimento PALMOPLANTAR em recém-nascidos e lactentes é destacado duas vezes no material como \"muito cobrado nas provas\" — um padrão distinto do adulto, cujas lesões concentram-se em dobras cutâneas e áreas cobertas. O tratamento tem restrições por idade que são frequentemente cobradas: permetrina não deve ser usada antes dos 2 meses, ivermectina não antes dos 5 anos ou 15kg, e enxofre é a droga de escolha em gestantes/lactantes/menores de 2 meses — todos os contactantes devem ser tratados, mesmo assintomáticos. Na pediculose do couro cabeludo, o curso reforça um dado prático explícito: NÃO é necessário afastar a criança da escola."
   },
   {
     "id": "lombalgia-hernia-disco",
@@ -9123,7 +9145,7 @@
     "categoria": "Ortopedia e Traumatologia",
     "titulo": "Lombalgia e Hérnia de Disco",
     "resumo": "Sinais de alarme que indicam investigação de imagem e o reconhecimento da síndrome da cauda equina como emergência cirúrgica.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Ortopedia e Traumatologia; NASS Clinical Guidelines for Diagnosis and Treatment of Lumbar Disc Herniation",
     "mnemonicos": [
       {
@@ -9146,7 +9168,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A maioria dos episódios de lombalgia aguda é diagnosticada clinicamente, sem necessidade de exames de imagem nas primeiras 4-6 semanas, na ausência de sinais de alarme — a grande maioria resolve espontaneamente nesse período com tratamento conservador. Ressonância magnética é indicada diante de sinais de alarme, radiculopatia persistente e incapacitante além de 4-6 semanas apesar de tratamento conservador adequado, ou antes de considerar intervenção cirúrgica."
+        "conteudo": "A maioria dos episódios de lombalgia aguda é diagnosticada clinicamente, sem necessidade de exames de imagem nas primeiras 4-6 semanas, na ausência de sinais de alarme — a grande maioria resolve espontaneamente nesse período com tratamento conservador. Ressonância magnética é indicada diante de sinais de alarme, radiculopatia persistente e incapacitante além de 4-6 semanas apesar de tratamento conservador adequado, ou antes de considerar intervenção cirúrgica.\n\n<div class=\"table-wrap\"><table><tr><th colspan=\"2\">Sinais de alarme na lombalgia — mnemônico \"PITTI, DOC\"</th></tr><tr><td>P</td><td>Persistência (&gt;6 semanas)</td></tr><tr><td>I</td><td>Idade (&lt;20 ou &gt;50 anos)</td></tr><tr><td>T</td><td>Trauma</td></tr><tr><td>T</td><td>Tumor (história/suspeita)</td></tr><tr><td>I</td><td>Infecção</td></tr><tr><td>D</td><td>Déficit neurológico</td></tr><tr><td>O</td><td>Osteoporose</td></tr><tr><td>C</td><td>Cauda equina</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -9160,7 +9182,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A síndrome da cauda equina como emergência cirúrgica (com seus sinais característicos de anestesia em sela e disfunção esfincteriana) é cobrança certíssima e um dos temas de maior relevância prática de toda a ortopedia em provas de residência. O teste de Lasègue para radiculopatia e a recomendação de manter atividade (em vez de repouso prolongado) na lombalgia simples também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "O próprio curso chama este de \"o resumo mais importante de Ortopedia do adulto\", já que lombalgia é o tema mais frequente da subárea, com mais de uma centena de questões catalogadas. O mnemônico de sinais de alarme \"PITTI, DOC\" (Persistência, Idade extrema, Trauma, Tumor, Infecção, Déficit neurológico, Osteoporose, Cauda equina) organiza toda a investigação de causas secundárias, que juntas somam menos de 10% dos casos (90% são lombalgia primária/inespecífica). O \"mantra\" do curso — \"não importa a causa, toda dor lombar é tratada da mesma forma\" (analgésicos, relaxante muscular, atividade física, repouso de no máximo 2-3 dias) — é repetido como resposta-padrão. Na hérnia discal, 60% das questões do capítulo focam exclusivamente na definição do NÍVEL acometido, reforçando a importância de memorizar a tabela de dermátomos. Um contraponto interessante trazido pelo próprio curso: os sintomas mais FREQUENTES na síndrome da cauda equina na prática clínica são lombalgia, dor nas pernas e disfunção vesical — não a anestesia em sela clássica de prova, que é mais rara do que se ensina classicamente."
   },
   {
     "id": "glaucoma-cronico-angulo-aberto",
@@ -9168,7 +9191,7 @@
     "categoria": "Oftalmologia",
     "titulo": "Glaucoma Crônico de Ângulo Aberto",
     "resumo": "A neuropatia óptica silenciosa que causa perda de campo visual periférico, e a importância do rastreamento em grupos de risco.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Sociedade Brasileira de Oftalmologia; AAO Preferred Practice Pattern: Primary Open-Angle Glaucoma",
     "mnemonicos": [
       {
@@ -9195,7 +9218,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "O tratamento visa reduzir a pressão intraocular (único fator de risco modificável comprovadamente eficaz para retardar a progressão), com colírios hipotensores oculares (análogos de prostaglandina como primeira linha na maioria dos protocolos) sendo a primeira linha terapêutica; laser (trabeculoplastia) e cirurgia filtrante são reservados a casos refratários ao tratamento clínico ou como alternativa em situações específicas. O dano ao nervo óptico já estabelecido é irreversível — o tratamento visa impedir a progressão futura, não recuperar a função já perdida."
+        "conteudo": "O tratamento visa reduzir a pressão intraocular (único fator de risco modificável comprovadamente eficaz para retardar a progressão), com colírios hipotensores oculares (análogos de prostaglandina como primeira linha na maioria dos protocolos) sendo a primeira linha terapêutica; laser (trabeculoplastia) e cirurgia filtrante são reservados a casos refratários ao tratamento clínico ou como alternativa em situações específicas. O dano ao nervo óptico já estabelecido é irreversível — o tratamento visa impedir a progressão futura, não recuperar a função já perdida.\n\n<div class=\"table-wrap\"><table><tr><th>Classe</th><th>Mecanismo</th><th>Observação de prova</th></tr><tr><td>Betabloqueadores (timolol)</td><td>Reduzem produção</td><td>1ª escolha; contraindicados em asma/ICC descompensada</td></tr><tr><td>Parassimpaticomiméticos (pilocarpina)</td><td>Aumentam drenagem convencional</td><td>Efeito adverso: miopia induzida</td></tr><tr><td>Agonistas alfa (brimonidina)</td><td>Reduz produção E aumenta via uveoescleral</td><td>\"Questão de prova!\" (dado duplo cobrado)</td></tr><tr><td>Análogos de prostaglandina (latanoprosta)</td><td>Aumentam via uveoescleral</td><td>Maior efeito hipotensor; escurecimento de íris/cílios</td></tr></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -9205,7 +9228,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "O caráter assintomático até fases avançadas (justificando rastreamento ativo, não baseado em sintomas) é cobrança central e recorrente. A irreversibilidade do dano já estabelecido (o tratamento impede progressão, não recupera função perdida) e o glaucoma como principal causa de cegueira irreversível evitável no mundo também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "Glaucoma é tema de grande importância (~12% da Oftalmologia), com destaque para o fato de que o glaucoma agudo de ângulo FECHADO domina 53% das questões do capítulo — o curso alerta que ele deve ser estudado \"com atenção redobrada\", mesmo dentro de um tema nominalmente sobre ângulo aberto. O GPAA é o tipo mais comum (90% dos glaucomas), tipicamente assintomático nas fases iniciais, com perda de campo visual periférica \"de fora para dentro\". O mecanismo de ação das drogas hipotensoras é fortemente cobrado — o curso destaca entre parênteses, como \"questão de prova\", que os agonistas alfa-adrenérgicos (brimonidina) reduzem a produção E aumentam a via uveoescleral simultaneamente. No diferencial com crise aguda de glaucoma de ângulo fechado, a tríade cobrada é pupila em média midríase + PIO muito alta (>40mmHg) + edema de córnea, contrastando com a uveíte anterior (miose, PIO baixa, precipitados ceráticos)."
   },
   {
     "id": "miomatose-uterina",
