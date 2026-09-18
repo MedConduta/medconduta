@@ -33,6 +33,7 @@ export const NAV_ITEMS = [
     items: [
       { path: "/residencia/questoes", label: "Questões", icon: "checklist" },
       { path: "/residencia/erros", label: "Meus Erros", icon: "alert-circle" },
+      { path: "/residencia/revisao-alto-rendimento", label: "Alto Rendimento", icon: "stethoscope" },
       { path: "/residencia/simulados", label: "Simulados", icon: "clock" },
     ],
   },

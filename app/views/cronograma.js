@@ -103,6 +103,16 @@ function renderResumo(resumo, modo) {
 }
 
 function renderModoEspecial(modo) {
+  if (modo === "emergencia") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-danger);">
+        <div class="list-card__top">
+          <span class="badge badge--danger">🆘 Plano de Emergência</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">O atraso está bem maior que o normal pra essa altura da preparação — a aba Hoje foca quase todo o tempo em conteúdo novo, só nos temas de maior prioridade, até você recuperar terreno.</p>
+      </div>
+    `;
+  }
   if (modo === "recuperacao") {
     return `
       <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-warning);">
@@ -120,6 +130,16 @@ function renderModoEspecial(modo) {
           <span class="badge badge--danger">🔴 Modo Reta Final</span>
         </div>
         <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Restam poucos dias até a prova. Praticamente todo o tempo em Hoje agora vai pra questões e revisão de erros.</p>
+      </div>
+    `;
+  }
+  if (modo === "consolidacao") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-accent);">
+        <div class="list-card__top">
+          <span class="badge badge--accent">🧘 Semana de Consolidação</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Sem atraso no momento — a cada 4 semanas entra uma semana pra respirar e fixar o que já foi visto, quase sem conteúdo novo.</p>
       </div>
     `;
   }

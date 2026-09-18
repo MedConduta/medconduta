@@ -43,7 +43,11 @@ const { chromium } = require("playwright");
 
   // --- 2) Reload confirma persistência da prova-alvo ---
   await page.evaluate(() => { location.hash = "/residencia/minha-preparacao"; });
-  await page.waitForSelector(".main__container", { timeout: 10000 });
+  // Espera o render assíncrono terminar de verdade (não só o placeholder de
+  // loading) antes de navegar — senão essa renderização mais lenta pode
+  // terminar depois e sobrescrever a página seguinte (race condition do
+  // roteador entre navegações rápidas e renders lentos concorrentes).
+  await page.waitForFunction(() => document.querySelector(".main__container")?.textContent.includes("Atalhos"), { timeout: 15000 });
   await page.evaluate(() => { location.hash = "/residencia/cronograma"; });
   await page.waitForFunction(() => document.querySelector("#prova-alvo")?.value, { timeout: 10000 });
   console.log("Prova-alvo persiste após navegar (ENAMED):", await page.$eval("#prova-alvo", (el) => el.value) === "ENAMED");

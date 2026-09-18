@@ -5,6 +5,15 @@ import { getConstancia } from "../constancia.js";
 
 const PREF_HORAS = "planejador_horas";
 
+// Fase 16 — Modo dia ruim: um atalho pra quando o usuário não tem tempo/
+// energia nenhuma, mas ainda quer fazer o mínimo. Gera a agenda com um
+// orçamento de tempo minúsculo, sem sobrescrever as horas configuradas —
+// é um "só por hoje", não uma mudança de rotina. 20 min é o menor valor que
+// garante pelo menos 1 item na fila mesmo com o teto de revisões de 40%
+// (ver TETO_REVISOES_PCT em planner.js) — com menos que isso, o teto por si
+// só já bloqueia até a menor revisão possível, e "dia ruim" viraria "nada".
+const MINUTOS_DIA_RUIM = 20;
+
 export async function renderPlanejador(container) {
   const [horasSalvas, constancia] = await Promise.all([getPref(PREF_HORAS, 2), getConstancia()]);
 
@@ -25,7 +34,10 @@ export async function renderPlanejador(container) {
             <output id="horas-output">${horasSalvas}h</output>
           </div>
         </div>
-        <button class="btn btn--primary" id="btn-gerar">Gerar agenda do dia</button>
+        <div class="btn-row">
+          <button class="btn btn--primary" id="btn-gerar">Gerar agenda do dia</button>
+          <button class="btn btn--secondary" id="btn-dia-ruim">😩 Dia ruim — só ${MINUTOS_DIA_RUIM} min</button>
+        </div>
       </div>
 
       <div id="plano-resultado"></div>
@@ -48,7 +60,19 @@ export async function renderPlanejador(container) {
     renderResultado(plano);
   }
 
-  function renderResultado(plano) {
+  async function gerarDiaRuim() {
+    resultadoEl.innerHTML = `<div class="empty-state">Montando o mínimo que vale a pena hoje...</div>`;
+    const plano = await gerarPlanoDoDia(MINUTOS_DIA_RUIM / 60);
+    renderResultado(plano, { diaRuim: true });
+  }
+
+  function renderResultado(plano, { diaRuim = false } = {}) {
+    const avisoDiaRuim = diaRuim
+      ? `<div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-accent);">
+          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);">Tudo bem ter dias ruins — o importante é não zerar. Isso aqui é só o essencial pra manter o ritmo hoje; amanhã a agenda volta ao normal.</p>
+        </div>`
+      : "";
+
     if (!plano.fila.length) {
       resultadoEl.innerHTML = `
         <div class="empty-state">
@@ -60,6 +84,7 @@ export async function renderPlanejador(container) {
     }
 
     resultadoEl.innerHTML = `
+      ${avisoDiaRuim}
       ${renderFaixaFase(plano.fase, plano.diasRestantes)}
       ${renderModoEspecial(plano.modo)}
       <div class="stat-row">
@@ -92,6 +117,7 @@ export async function renderPlanejador(container) {
   }
 
   container.querySelector("#btn-gerar").addEventListener("click", gerar);
+  container.querySelector("#btn-dia-ruim").addEventListener("click", gerarDiaRuim);
   gerar();
 }
 
@@ -118,6 +144,16 @@ function renderFaixaFase(fase, diasRestantes) {
 }
 
 function renderModoEspecial(modo) {
+  if (modo === "emergencia") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-danger);">
+        <div class="list-card__top">
+          <span class="badge badge--danger">🆘 Plano de Emergência</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">O atraso está bem maior que o normal. A agenda de hoje foca quase todo o tempo em conteúdo novo e só nos temas de maior prioridade — os de menor prioridade ficam de fora até você recuperar terreno.</p>
+      </div>
+    `;
+  }
   if (modo === "recuperacao") {
     return `
       <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-warning);">
@@ -135,6 +171,16 @@ function renderModoEspecial(modo) {
           <span class="badge badge--danger">🔴 Modo Reta Final</span>
         </div>
         <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Restam poucos dias até a prova. A agenda agora é quase só questões e revisão de erros — conteúdo novo só aparece se for um gargalo crítico.</p>
+      </div>
+    `;
+  }
+  if (modo === "consolidacao") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-accent);">
+        <div class="list-card__top">
+          <span class="badge badge--accent">🧘 Semana de Consolidação</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Sem atraso no momento — a cada 4 semanas entra uma semana pra respirar e fixar o que já foi visto, quase sem conteúdo novo hoje.</p>
       </div>
     `;
   }

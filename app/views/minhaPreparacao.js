@@ -3,6 +3,7 @@ import { getPref } from "../db.js";
 import { gerarPlanoDoDia } from "../planner.js";
 import { gerarDiagnostico } from "../prontidao.js";
 import { getConstancia } from "../constancia.js";
+import { getMetaDiaria } from "../metaDiaria.js";
 import { icon } from "../components/icons.js";
 
 const PREF_HORAS = "planejador_horas";
@@ -18,10 +19,11 @@ export async function renderMinhaPreparacao(container) {
   container.innerHTML = `<div class="main__container"><div class="empty-state">Carregando sua preparação...</div></div>`;
 
   const horasSalvas = await getPref(PREF_HORAS, 2);
-  const [plano, diagnostico, constancia] = await Promise.all([
+  const [plano, diagnostico, constancia, metaDiaria] = await Promise.all([
     gerarPlanoDoDia(horasSalvas),
     gerarDiagnostico(),
     getConstancia(),
+    getMetaDiaria(),
   ]);
 
   const { fase, diasRestantes, modo, totalRevisoesVencidas } = plano;
@@ -42,6 +44,8 @@ export async function renderMinhaPreparacao(container) {
         <div class="stat-tile"><div class="stat-tile__value">${constancia.streakAtual}${constancia.streakAtual > 0 ? " 🔥" : ""}</div><div class="stat-tile__label">Dias seguidos estudando</div></div>
       </div>
 
+      ${renderMetaDiaria(metaDiaria)}
+
       <div class="card card--interactive" style="margin-bottom:24px;">
         <div class="list-card__top">
           <strong>Agenda de hoje</strong>
@@ -60,8 +64,36 @@ export async function renderMinhaPreparacao(container) {
         ${renderAtalho("/residencia/relatorio-semanal", "chart-bar", "Relatório Semanal", "Resumo automático dos últimos 7 dias.")}
         ${renderAtalho("/residencia/simulados", "clock", "Simulados", "Prova completa, cronometrada, na proporção real da prova.")}
         ${renderAtalho("/residencia/erros", "alert-circle", "Meus Erros", "Questões erradas em fila de revisão espaçada.")}
+        ${renderAtalho("/residencia/revisao-alto-rendimento", "stethoscope", "Alto Rendimento", "Alta incidência + baixo desempenho, direto do heatmap.")}
         ${renderAtalho("/residencia/foco", "target", "Modo Foco", "Temporizador de estudo sem distração.")}
       </div>
+    </div>
+  `;
+}
+
+/**
+ * Fase 16 — meta mínima diária: um piso bem menor que a agenda completa, só
+ * pra não zerar o dia. Basta bater UM dos três sinais (não precisa dos três).
+ */
+function renderMetaDiaria(meta) {
+  if (meta.bateuMeta) {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-success);">
+        <div class="list-card__top">
+          <span class="badge" style="background:var(--color-success-soft);color:var(--color-success);">✅ Meta mínima de hoje batida</span>
+        </div>
+      </div>
+    `;
+  }
+  return `
+    <div class="card" style="margin-bottom:24px;">
+      <div class="list-card__top">
+        <strong>Meta mínima de hoje</strong>
+        <span class="badge">ainda não batida</span>
+      </div>
+      <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">
+        Basta UM destes: ${meta.questoesHoje}/${meta.metaQuestoes} questões, ${meta.minutosFocoHoje}/${meta.metaMinutos} min em Modo Foco, ou concluir 1 tema.
+      </p>
     </div>
   `;
 }
@@ -79,6 +111,16 @@ function renderAtalho(path, iconeNome, titulo, descricao) {
 }
 
 function renderModoEspecial(modo) {
+  if (modo === "emergencia") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-danger);">
+        <div class="list-card__top">
+          <span class="badge badge--danger">🆘 Plano de Emergência</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">O atraso está bem maior que o normal pra essa altura da preparação. A agenda de hoje foca quase todo o tempo em conteúdo novo e só nos temas de maior prioridade — o resto fica de fora até você recuperar terreno.</p>
+      </div>
+    `;
+  }
   if (modo === "recuperacao") {
     return `
       <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-warning);">
@@ -96,6 +138,16 @@ function renderModoEspecial(modo) {
           <span class="badge badge--danger">🔴 Modo Reta Final</span>
         </div>
         <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Restam poucos dias até a prova. Foco quase total em questões e revisão de erros.</p>
+      </div>
+    `;
+  }
+  if (modo === "consolidacao") {
+    return `
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-accent);">
+        <div class="list-card__top">
+          <span class="badge badge--accent">🧘 Semana de Consolidação</span>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Sem atraso no momento — essa é uma semana pra respirar e fixar o que você já viu. Quase sem conteúdo novo, só revisão e questões.</p>
       </div>
     `;
   }

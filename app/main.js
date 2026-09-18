@@ -20,6 +20,7 @@ import * as minhaPreparacao from "./views/minhaPreparacao.js";
 import * as analiseDesempenho from "./views/analiseDesempenho.js";
 import * as relatorioSemanal from "./views/relatorioSemanal.js";
 import * as planejamentoSemanal from "./views/planejamentoSemanal.js";
+import * as revisaoAltoRendimento from "./views/revisaoAltoRendimento.js";
 import * as prescricaoPratica from "./views/prescricaoPratica.js";
 
 const mainEl = document.getElementById("main-content");
@@ -43,6 +44,7 @@ registerRoute("/residencia/flashcards/:deckId", flashcards.renderEstudo, { title
 registerRoute("/residencia/flashcards/:deckId/gerenciar", flashcards.renderGerenciar, { title: "Gerenciar baralho" });
 registerRoute("/residencia/questoes", questoes.renderLista, { title: "Questões" });
 registerRoute("/residencia/erros", erros.renderErros, { title: "Meus Erros" });
+registerRoute("/residencia/revisao-alto-rendimento", revisaoAltoRendimento.renderRevisaoAltoRendimento, { title: "Revisão de Alto Rendimento" });
 registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "Hoje" });
 registerRoute("/residencia/cronograma", cronograma.renderCronograma, { title: "Cronograma" });
 registerRoute("/residencia/prontidao", prontidao.renderProntidao, { title: "Prontidão" });
