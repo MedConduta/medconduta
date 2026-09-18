@@ -840,7 +840,7 @@
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Politrauma — Sequência ABCDE",
-    "revisado": false,
+    "revisado": true,
     "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons)",
     "fluxo": [
       {
@@ -10636,6 +10636,3645 @@
       {
         "tipo": "alerta",
         "texto": "Evitar AAS e AINEs empiricamente até excluir dengue como diagnóstico diferencial, pelo risco de sangramento — tratamento sintomático com paracetamol enquanto aguarda confirmação"
+      }
+    ]
+  },
+  {
+    "id": "flow-chagas-tratamento",
+    "temaId": "doenca-chagas",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Doença de Chagas — indicação de tratamento antiparasitário",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Consenso Brasileiro de Doença de Chagas",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico confirmado de infecção por Trypanosoma cruzi"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Fase aguda ou reativação (imunossupressão, transplante, congênita)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Benznidazol indicado — eficácia comprovada e alta nesta fase"
+              }
+            ]
+          },
+          {
+            "label": "Não — fase crônica",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Cardiopatia chagásica crônica já ESTABELECIDA (miocardiopatia dilatada, arritmias graves)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Benznidazol não reverte o dano estrutural — tratamento de suporte da IC/arritmias (podendo incluir marca-passo)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — forma indeterminada ou crônica recente",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Criança, adolescente ou adulto jovem?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Benznidazol fortemente recomendado"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Adulto na forma crônica indeterminada",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Benznidazol ainda indicado conforme diretrizes atuais, com benefício mais controverso — decisão individualizada"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "O fexinidazol (eficaz na tripanossomíase africana) mostrou-se INEFICAZ para doença de Chagas no estudo FEXI-12 (2024) — não deve ser usado como alternativa ao benznidazol"
+      }
+    ]
+  },
+  {
+    "id": "flow-leishmaniose-visceral-tratamento",
+    "temaId": "leishmaniose",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Leishmaniose visceral — escolha do tratamento inicial",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Manual de Vigilância e Controle da Leishmaniose Visceral",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico confirmado de leishmaniose visceral"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de critérios de gravidade (idade <1 ou >50 anos, sangramento, icterícia, toxemia, leucopenia/plaquetopenia graves, coinfecção HIV) OU grupo de maior risco de toxicidade (gestante, criança pequena, imunossuprimido, disfunção renal/cardíaca)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Anfotericina B lipossomal — primeira escolha, menor toxicidade renal/cardíaca"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Antimoniato de N-metilglucamina — tratamento de primeira linha na ausência de fatores de risco"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Suporte hematológico (transfusões conforme necessidade) e tratamento precoce de infecções bacterianas secundárias, especialmente em casos graves"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Febre prolongada + esplenomegalia maciça + pancitopenia em criança de área endêmica exige investigação e tratamento imediatos — condição potencialmente fatal sem tratamento"
+      }
+    ]
+  },
+  {
+    "id": "flow-esquistossomose-diagnostico",
+    "temaId": "esquistossomose",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Esquistossomose — investigação da forma hepatoesplênica",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde; PCDT Esquistossomose",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente de área endêmica com esplenomegalia e/ou suspeita de hipertensão portal"
+      },
+      {
+        "tipo": "action",
+        "texto": "Exame parasitológico de fezes (Kato-Katz) — padrão para diagnóstico e quantificação da carga parasitária"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Kato-Katz negativo, mas suspeita clínica persistente (forma crônica com baixa eliminação de ovos)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Considerar métodos complementares (sorologia, biópsia retal) e repetir exame de fezes"
+              }
+            ]
+          },
+          {
+            "label": "Kato-Katz positivo",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Diagnóstico confirmado — tratar com praziquantel em dose única"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia abdominal — avalia padrão de fibrose periportal (\"em cano de cachimbo\") e esplenomegalia"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de hipertensão portal (esplenomegalia volumosa, circulação colateral)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Endoscopia digestiva alta para avaliar varizes esofágicas e risco de sangramento"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Forma intestinal/hepatointestinal — tratar e acompanhar"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Função hepatocelular tipicamente preservada mesmo com hipertensão portal estabelecida — icterícia, ascite proeminente e encefalopatia NÃO são esperadas e devem motivar investigação de causa adicional de hepatopatia"
+      }
+    ]
+  },
+  {
+    "id": "flow-hanseniase-classificacao",
+    "temaId": "hanseniase",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Hanseníase — diagnóstico e classificação operacional",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia Prático sobre a Hanseníase",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de hanseníase: lesão de pele e/ou queixa neurológica"
+      },
+      {
+        "tipo": "action",
+        "texto": "Testar sensibilidade térmica, dolorosa e tátil na lesão; palpar nervos periféricos (ulnar, fibular comum, tibial posterior)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de pelo menos um critério cardinal (lesão de pele com alteração de sensibilidade, e/ou espessamento neural com alteração de função, e/ou baciloscopia positiva)?",
+        "ramos": [
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Diagnóstico de hanseníase afastado — investigar diagnósticos diferenciais"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Contar o número de lesões de pele"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Até 5 lesões de pele E baciloscopia negativa (ou não realizada)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Classificação operacional: Paucibacilar (PB) — poliquimioterapia por 6 meses"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — mais de 5 lesões OU baciloscopia positiva",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Classificação operacional: Multibacilar (MB) — poliquimioterapia por 12 meses"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Avaliar ativamente sinais de reação hansênica e neurite silenciosa (perda de função sem dor) em toda consulta, durante e após o tratamento — detecção precoce previne incapacidade neural permanente"
+      }
+    ]
+  },
+  {
+    "id": "flow-malaria-tratamento",
+    "temaId": "malaria",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Malária — classificação de gravidade e escolha terapêutica",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Tratamento da Malária no Brasil",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico confirmado de malária (gota espessa ou teste rápido) — identificar espécie de Plasmodium"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de gravidade (rebaixamento de consciência, icterícia, insuficiência renal, parasitemia muito elevada, distúrbio respiratório)?",
+        "ramos": [
+          {
+            "label": "Sim — malária grave",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Artesunato endovenoso + suporte intensivo hospitalar imediato"
+              }
+            ]
+          },
+          {
+            "label": "Não — malária não complicada",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Qual espécie de Plasmodium?",
+                "ramos": [
+                  {
+                    "label": "P. falciparum",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Terapia combinada com artemisinina (ex.: arteméter + lumefantrina)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "P. vivax ou P. ovale",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Cloroquina (esquizonticida sanguíneo)"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "Gestante, deficiência de G6PD ou criança <2 anos/<10kg?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Primaquina/tafenoquina contraindicadas — seguimento clínico rigoroso para recidiva; conduta individualizada"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Associar primaquina (7-14 dias) ou tafenoquina (dose única, após testagem de G6PD) para eliminar hipnozoítos hepáticos e prevenir recidiva tardia"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "P. malariae",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cloroquina isolada — sem necessidade de primaquina (não forma hipnozoítos)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Testagem de G6PD é etapa obrigatória antes do uso de primaquina ou tafenoquina, pelo risco de hemólise grave em pacientes deficientes"
+      }
+    ]
+  },
+  {
+    "id": "flow-leptospirose-tratamento",
+    "temaId": "leptospirose",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Leptospirose — estratificação de gravidade e escolha terapêutica",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Vigilância em Saúde / Leptospirose",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita ou confirmação de leptospirose (epidemiologia compatível: contato com água/lama de enchente, roedores, atividade ocupacional de risco)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de gravidade (icterícia, oligúria/IRA, dispneia, hemoptise, instabilidade hemodinâmica, alteração do sensório)?",
+        "ramos": [
+          {
+            "label": "Não — forma leve/anictérica",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratamento ambulatorial: doxiciclina oral + reavaliação clínica; orientar sinais de alarme para retorno imediato"
+              }
+            ]
+          },
+          {
+            "label": "Sim — síndrome de Weil / forma grave",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Internação hospitalar (considerar UTI)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Antibioticoterapia endovenosa: penicilina G cristalina ou ceftriaxona"
+              },
+              {
+                "tipo": "action",
+                "texto": "Suporte hemodinâmico, monitorização renal e correção de distúrbios eletrolíticos (hipocalemia)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Insuficiência renal aguda refratária ao suporte clínico?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Diálise (hemodiálise) — reduz significativamente a mortalidade na IRA grave por leptospirose"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter suporte clínico e monitorização intensiva até resolução"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Hemorragia pulmonar maciça é a principal causa de óbito na síndrome de Weil — vigiar dispneia, hemoptise e queda da saturação como sinais de alerta máximo, independentemente da função renal"
+      }
+    ]
+  },
+  {
+    "id": "flow-raiva-profilaxia",
+    "temaId": "acidentes-animais-peconhentos",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Raiva — profilaxia pós-exposição conforme tipo de ferimento e animal agressor",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Guia de Profilaxia da Raiva Humana",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Exposição a possível animal transmissor de raiva (mordedura, arranhadura ou lambedura em mucosa/pele lesada)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Lavar imediatamente o ferimento com água corrente e sabão — reduz a carga viral local"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Tipo de exposição?",
+        "ramos": [
+          {
+            "label": "Contato indireto (sem lesão) ou lambedura de pele íntegra",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Não requer profilaxia específica — apenas lavagem do local"
+              }
+            ]
+          },
+          {
+            "label": "Ferimento superficial único, em tronco/membros (exceto mãos/pés/genitália) OU lambedura em pele com lesão superficial",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Animal doméstico (cão/gato) passível de observação por 10 dias e sem sinais de raiva?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Observar o animal por 10 dias; iniciar esquema vacinal se o animal adoecer, morrer ou desaparecer nesse período — caso contrário, não é necessário completar o esquema"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — animal silvestre, desconhecido, morto ou não observável",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Iniciar esquema vacinal completo (4 doses de vacina antirrábica)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Ferimento grave: múltiplos, profundos, em cabeça/face/mãos/pés/genitália, lambedura de mucosa, OU agressão por morcego ou animal silvestre",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Iniciar imediatamente soro ou imunoglobulina antirrábica (infiltrar ao redor do ferimento) + esquema vacinal completo — independentemente da possibilidade de observação do animal"
+              },
+              {
+                "tipo": "end",
+                "texto": "Manter esquema vacinal completo mesmo se o animal doméstico permanecer sadio na observação de 10 dias"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Uma vez iniciados os sintomas neurológicos da raiva, a mortalidade é praticamente universal — não existe tratamento eficaz para a doença estabelecida, o que torna a profilaxia pós-exposição precoce e correta a intervenção mais decisiva"
+      }
+    ]
+  },
+  {
+    "id": "flow-sindrome-gripal-manejo",
+    "temaId": "sindromes-respiratorias-virais",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Síndrome gripal — estratificação de risco e indicação de antiviral",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Protocolo de Tratamento de Influenza / Manejo Clínico de COVID-19",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com síndrome gripal (febre + tosse ou dor de garganta + mialgia/cefaleia de início agudo)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de síndrome respiratória aguda grave (dispneia, hipoxemia, uso de musculatura acessória, instabilidade hemodinâmica)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Internação hospitalar imediata; iniciar oseltamivir (não aguardar confirmação laboratorial) + suporte de oxigênio; considerar antiviral específico/corticoide conforme etiologia e gravidade"
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro leve/moderado ambulatorial",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Pertence a grupo de risco (gestante, idoso ≥60 anos, criança <5 anos, comorbidade crônica, imunossupressão)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Iniciar oseltamivir o quanto antes, idealmente nas primeiras 48h de sintomas, mesmo sem confirmação laboratorial — não aguardar resultado de teste para iniciar tratamento em paciente de risco"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Tratamento sintomático e orientação de retorno se sinais de alarme; antiviral não é rotineiramente indicado em paciente sem fator de risco e sem gravidade"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Exposição ocupacional a aves ou bovinos leiteiros associada a conjuntivite e sintomas respiratórios sugere influenza aviária H5N1 — notificação compulsória imediata e investigação laboratorial específica, independentemente da gravidade do quadro"
+      }
+    ]
+  },
+  {
+    "id": "flow-parasitoses-diagnostico",
+    "temaId": "parasitoses-intestinais",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Parasitoses intestinais — investigação diagnóstica conforme apresentação clínica",
+    "revisado": true,
+    "fonte": "Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde — Parasitoses Intestinais",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com suspeita de parasitose intestinal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Apresentação clínica predominante?",
+        "ramos": [
+          {
+            "label": "Prurido anal noturno em criança",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Solicitar fita adesiva/swab perianal (método de Graham) pela manhã, antes da higiene — sensibilidade superior ao exame de fezes para enterobíase, pois os ovos raramente são eliminados nas fezes"
+              }
+            ]
+          },
+          {
+            "label": "Quadro digestivo inespecífico (diarreia, dor abdominal, eosinofilia) sem suspeita específica",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Exame parasitológico de fezes seriado, em três amostras coletadas em dias diferentes, pela eliminação intermitente de ovos/cistos"
+              }
+            ]
+          },
+          {
+            "label": "Paciente de área endêmica que será submetido a imunossupressão (corticoide, quimioterapia)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Rastrear e tratar empiricamente Strongyloides stercoralis com ivermectina antes de iniciar a imunossupressão — prevenção da síndrome de hiperinfecção, frequentemente fatal"
+              }
+            ]
+          },
+          {
+            "label": "Crise convulsiva ou quadro neurológico focal, especialmente com fatores epidemiológicos de risco",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar neurocisticercose com neuroimagem (tomografia ou ressonância) evidenciando cistos com/sem escólex, calcificações ou lesões em diferentes estágios; complementar com líquor conforme diretrizes vigentes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Não confundir teníase (verme adulto, por ingestão de carne malcozida) com cisticercose/neurocisticercose (forma larvária tecidual, por ingestão de ovos via fecal-oral) — armadilha clássica de prova"
+      }
+    ]
+  },
+  {
+    "id": "flow-neoplasias-hematologicas-investigacao",
+    "temaId": "neoplasias-hematologicas-leucemia-linfoma",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de neoplasia hematológica — investigação inicial",
+    "revisado": true,
+    "fonte": "Diretrizes de hematologia oncológica (referência clínica geral)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de neoplasia hematológica (citopenias inexplicadas, linfadenopatia persistente, sintomas B)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Apresentação predominante?",
+        "ramos": [
+          {
+            "label": "Pancitopenia/citopenias de instalação rápida, sangramento, infecções de repetição",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Hemograma completo com diferencial + avaliação de blastos em sangue periférico"
+              },
+              {
+                "tipo": "end",
+                "texto": "Mielograma (aspirado de medula óssea) com imunofenotipagem para confirmar leucemia aguda (blastos ≥20%) e definir linhagem linfoide vs. mieloide"
+              }
+            ]
+          },
+          {
+            "label": "Linfadenopatia indolor persistente (>4 semanas) ± sintomas B",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Excluir causas infecciosas/reativas mais comuns antes de prosseguir"
+              },
+              {
+                "tipo": "action",
+                "texto": "Biópsia excisional do linfonodo — NUNCA apenas PAAF, insuficiente para avaliar arquitetura tecidual"
+              },
+              {
+                "tipo": "end",
+                "texto": "Confirmado linfoma: estadiar com PET-CT pela classificação de Ann Arbor antes de definir tratamento"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Leucocitose muito elevada com sinais de leucostase (confusão mental, dispneia, distúrbios visuais) é emergência oncológica — redução urgente da contagem leucocitária (leucaférese ou quimioterapia citorredutora imediata), independentemente da confirmação diagnóstica completa"
+      }
+    ]
+  },
+  {
+    "id": "flow-disturbios-coagulacao-diagnostico",
+    "temaId": "disturbios-coagulacao",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação de distúrbio hemorrágico pelo padrão de sangramento e coagulograma",
+    "revisado": true,
+    "fonte": "Diretrizes ASH/ISTH/NHF/WFH (2021) e consenso ISTH sobre CIVD (2025)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com história de sangramento anormal ou coagulograma alterado"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Padrão de sangramento predominante?",
+        "ramos": [
+          {
+            "label": "Profundo (hemartroses, hematomas musculares), geralmente sexo masculino",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Solicitar TP e TTPa"
+              },
+              {
+                "tipo": "end",
+                "texto": "TTPa prolongado + TP normal → dosar fator VIII e IX para confirmar hemofilia A ou B e definir gravidade"
+              }
+            ]
+          },
+          {
+            "label": "Mucocutâneo (epistaxe, gengivorragia, menorragia) desde infância/adolescência",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Dosar antígeno e atividade funcional do fator de von Willebrand (VWF:GPIbM/GPIbR); aplicar ferramenta padronizada ISTH-BAT para objetivar a história hemorrágica"
+              }
+            ]
+          },
+          {
+            "label": "Múltiplos sítios de sangramento + sinais de disfunção orgânica em paciente criticamente enfermo",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Identificar e tratar a doença de base desencadeante (sepse, trauma maciço, complicação obstétrica)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Aplicar escore diagnóstico de CIVD: plaquetopenia + TP/TTPa prolongados + D-dímero muito elevado + fibrinogênio reduzido, no contexto clínico compatível"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "CIVD é processo simultâneo de trombose microvascular E sangramento, sempre secundário a uma doença de base — nunca uma entidade primária isolada; suporte transfusional deve ser guiado pela clínica, não apenas por valores laboratoriais"
+      }
+    ]
+  },
+  {
+    "id": "flow-hemoterapia-reacao-transfusional",
+    "temaId": "hemoterapia-hemocomponentes",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Suspeita de reação transfusional aguda — conduta imediata",
+    "revisado": true,
+    "fonte": "AABB/ABHH — Diretrizes de Hemoterapia",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente desenvolve sinais/sintomas durante ou logo após transfusão de hemocomponente"
+      },
+      {
+        "tipo": "action",
+        "texto": "Interromper a transfusão IMEDIATAMENTE e manter acesso venoso com solução salina — antes de investigar a causa específica"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Quadro clínico predominante?",
+        "ramos": [
+          {
+            "label": "Febre, calafrios, dor lombar, hipotensão, hemoglobinúria",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar reação hemolítica aguda (incompatibilidade ABO) — reverificar tipagem/prova cruzada no banco de sangue, suporte hemodinâmico e renal agressivo"
+              }
+            ]
+          },
+          {
+            "label": "Apenas febre e calafrios, sem outros sinais",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Provável reação febril não hemolítica — tratamento sintomático com antitérmico após excluir causas mais graves"
+              }
+            ]
+          },
+          {
+            "label": "Dispneia aguda + infiltrado pulmonar bilateral",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Pressão arterial e resposta a diurético?",
+                "ramos": [
+                  {
+                    "label": "Hipotensão, sem resposta a diurético",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "TRALI — suporte respiratório (considerar ventilação mecânica); diurético não traz benefício"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hipertensão, responde bem a diurético",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "TACO (sobrecarga circulatória) — diurético como conduta principal"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "\"Interromper a transfusão primeiro, investigar depois\" é a conduta prioritária diante de qualquer sinal de reação aguda, independentemente da etiologia suspeitada — ponto mais valorizado do tema em prova"
+      }
+    ]
+  },
+  {
+    "id": "flow-espondiloartrites-tratamento",
+    "temaId": "espondiloartrites",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Espondiloartrites — escalonamento terapêutico (ASAS-EULAR 2022)",
+    "revisado": true,
+    "fonte": "ASAS-EULAR recommendations for the management of axial spondyloarthritis (2022)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico confirmado de espondiloartrite (axial ou periférica)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Subtipo: artrite enteropática (associada a doença inflamatória intestinal)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "AINE NÃO é primeira linha (risco de exacerbar a DII) — iniciar com glicocorticoide e sulfassalazina para quadro periférico; anti-TNF reservado para doença axial ou periférica refratária"
+              }
+            ]
+          },
+          {
+            "label": "Não — espondilite anquilosante, artrite psoriásica ou artrite reativa",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "AINE em dose plena e uso regular (não sob demanda) + fisioterapia/exercício regular"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Doença ativa refratária após falha a dois AINEs em dose plena?",
+                "ramos": [
+                  {
+                    "label": "Não — boa resposta ao AINE",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter AINE regular + fisioterapia; reavaliar periodicamente"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sim — refratária",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Comorbidade relevante?",
+                        "ramos": [
+                          {
+                            "label": "Doença inflamatória intestinal associada",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Preferir anti-TNF ou inibidor de JAK — inibidores de IL-17 podem exacerbar a DII"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Uveíte anterior recorrente",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Preferir anti-TNF monoclonal ou inibidor de IL-17"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Sem comorbidade direcionadora",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Anti-TNF, inibidor de IL-17 (secuquinumabe, ixequizumabe, bimekizumabe) e inibidor de JAK (upadacitinibe) são alternativas terapêuticas equivalentes"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "A resposta dramática a AINE em dose plena é quase característica diagnóstica das espondiloartrites — sua ausência deve motivar reconsideração do diagnóstico"
+      }
+    ]
+  },
+  {
+    "id": "flow-osteoartrite-diagnostico-diferencial",
+    "temaId": "osteoartrite",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Dor articular crônica — diferenciação entre padrão mecânico (osteoartrite) e inflamatório",
+    "revisado": true,
+    "fonte": "Diretrizes de reumatologia — abordagem clínica da dor articular crônica",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com dor articular crônica, sem trauma agudo recente"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Padrão da dor e rigidez matinal?",
+        "ramos": [
+          {
+            "label": "Piora com uso/atividade ao longo do dia, melhora com repouso; rigidez matinal <30 min",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Padrão mecânico — considerar osteoartrite"
+              },
+              {
+                "tipo": "end",
+                "texto": "Avaliar distribuição: joelhos, quadris, interfalangeanas distais/proximais e base do polegar; crepitação e aumento de volume ósseo ao exame — diagnóstico predominantemente clínico, radiografia confirma/gradua se necessário"
+              }
+            ]
+          },
+          {
+            "label": "Melhora com uso/exercício, piora com repouso; rigidez matinal >1 hora",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Padrão inflamatório — investigar artrite reumatoide (poupa interfalangeanas distais) ou espondiloartrite (lombalgia inflamatória, entesite) conforme distribuição articular"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Dor articular com características inflamatórias sobrepostas (edema quente, rigidez matinal prolongada, sintomas sistêmicos) em paciente com osteoartrite conhecida deve motivar reavaliação para excluir artrite inflamatória concomitante ou artrite séptica"
+      }
+    ]
+  },
+  {
+    "id": "flow-fibromialgia-diagnostico",
+    "temaId": "fibromialgia",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Fibromialgia — abordagem diagnóstica pelos critérios ACR 2016",
+    "revisado": true,
+    "fonte": "Wolfe F, et al. 2016 Revisions to the 2010/2011 fibromyalgia diagnostic criteria",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com dor musculoesquelética generalizada crônica"
+      },
+      {
+        "tipo": "action",
+        "texto": "Excluir diagnóstico alternativo que explique adequadamente a dor (avaliação clínica direcionada; exames complementares apenas se houver achado objetivo sugestivo)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sintomas presentes de forma similar por ≥3 meses E ausência de achados objetivos (sinovite, provas inflamatórias alteradas, alterações radiográficas)?",
+        "ramos": [
+          {
+            "label": "Não — há achado objetivo ou duração insuficiente",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Reconsiderar diagnóstico diferencial (doença reumatológica inflamatória/autoimune, endocrinopatia, etc.) antes de firmar fibromialgia"
+              }
+            ]
+          },
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Calcular Índice de Dor Generalizada (WPI, 0-19) e Escala de Gravidade de Sintomas (SSS, 0-12: fadiga + sono não reparador + sintomas cognitivos + sintomas somáticos)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "WPI ≥7 e SSS ≥5, OU WPI 4-6 e SSS ≥9?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Critérios ACR 2016 preenchidos — diagnóstico de fibromialgia confirmado, sem necessidade de pesquisa de tender points"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Critérios não preenchidos — reavaliar ao longo do seguimento; considerar outras causas de dor crônica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "A pesquisa de tender points foi abandonada nos critérios diagnósticos atuais — a ausência de achados objetivos ao exame é parte esperada do raciocínio diagnóstico, não motivo para exames adicionais extensos"
+      }
+    ]
+  },
+  {
+    "id": "flow-vasculites-investigacao",
+    "temaId": "vasculites",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de vasculite sistêmica — orientação diagnóstica pelo quadro clínico",
+    "revisado": true,
+    "fonte": "Critérios de classificação ACR/EULAR 2022 para vasculites",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de vasculite sistêmica (sintomas constitucionais + achado sugestivo de isquemia/inflamação vascular)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Perfil clínico predominante?",
+        "ramos": [
+          {
+            "label": "Idoso (>50 anos), cefaleia temporal, claudicação mandibular ± sintomas visuais",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar arterite de células gigantes — iniciar corticoide em altíssima dose IMEDIATAMENTE se sintomas visuais, sem aguardar biópsia de temporal (risco de cegueira irreversível)"
+              }
+            ]
+          },
+          {
+            "label": "Mulher jovem (<40 anos), claudicação de membro, assimetria de pulsos/PA",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar arterite de Takayasu — solicitar PCR/VHS e angioRM/angioTC para mapear extensão do acometimento vascular"
+              }
+            ]
+          },
+          {
+            "label": "Sinusopatia crônica + hemoptise + nefrite (síndrome pulmão-rim)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar vasculite ANCA-associada — solicitar c-ANCA/anti-PR3 (granulomatose com poliangiite) ou p-ANCA/anti-MPO (poliangiite microscópica) + biópsia de tecido acometido"
+              }
+            ]
+          },
+          {
+            "label": "HAS nova + mononeurite múltipla + dor abdominal/orquite, poupando pulmão",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar poliarterite nodosa — investigar hepatite B associada; arteriografia pode mostrar microaneurismas"
+              }
+            ]
+          },
+          {
+            "label": "Asma/rinossinusite de difícil controle + eosinofilia importante + mononeurite múltipla",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeitar GEPA (Churg-Strauss) — complemento tipicamente normal; p-ANCA positivo em cerca de 40% dos casos"
+              }
+            ]
+          },
+          {
+            "label": "Púrpura palpável em membros inferiores ± artrite/dor abdominal/hematúria",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Em criança: suspeitar vasculite por IgA (Henoch-Schönlein), complemento normal. Em adulto: considerar vasculite de pequenos vasos, ampliar investigação sorológica"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Diante de suspeita de arterite de células gigantes com sintomas visuais, o tratamento com corticoide NUNCA deve aguardar a confirmação por biópsia — a decisão terapêutica é clínica e imediata"
+      }
+    ]
+  },
+  {
+    "id": "flow-colagenoses-investigacao",
+    "temaId": "colagenoses-esclerodermia-miopatias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Colagenoses — orientação diagnóstica pelo quadro clínico predominante",
+    "revisado": true,
+    "fonte": "Critérios ACR/EULAR para esclerose sistêmica, miopatias inflamatórias e síndrome de Sjögren",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de colagenose (Raynaud, fraqueza muscular, sicca ou fibrose cutânea)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Achado clínico predominante?",
+        "ramos": [
+          {
+            "label": "Fenômeno de Raynaud + espessamento cutâneo",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Capilaroscopia periungueal (diferenciar Raynaud primário de secundário) + autoanticorpos específicos"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Autoanticorpo e extensão cutânea?",
+                "ramos": [
+                  {
+                    "label": "Anticentrômero, fibrose limitada a face/mãos/antebraços",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Esclerose sistêmica forma limitada — melhor prognóstico geral, mas risco específico de hipertensão pulmonar isolada tardia"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Anti-Scl-70 (antitopoisomerase I), acometimento cutâneo extenso",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Esclerose sistêmica forma difusa — maior risco de doença pulmonar intersticial e mortalidade"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Fraqueza muscular proximal simétrica progressiva",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Dosar CK, eletroneuromiografia (padrão miopático); biópsia muscular se necessário"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Achados associados?",
+                "ramos": [
+                  {
+                    "label": "Heliotropo + pápulas de Gottron",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Dermatomiosite — rastrear neoplasia oculta associada"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Doença pulmonar intersticial + artrite + \"mãos de mecânico\" + anti-Jo-1",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Síndrome antissintetase — maior risco de acometimento pulmonar"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Idoso, fraqueza assimétrica proximal e distal, resposta pobre à imunossupressão",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Considerar miosite por corpúsculo de inclusão — diferencial importante de polimiosite/dermatomiosite"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Xerostomia + xeroftalmia (síndrome sicca) ± aumento parotídeo",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar síndrome de Sjögren: anti-Ro/SSA e anti-La/SSB, teste de Schirmer I, biópsia de glândula salivar menor (critérios ACR/EULAR 2016); vigiar sinais de linfoma (linfadenopatia nova, citopenias, hipocomplementemia)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Hipertensão arterial de início abrupto com piora aguda da função renal em paciente com esclerose sistêmica é crise renal esclerodérmica — IECA deve ser iniciado imediatamente, mesmo diante de piora renal aguda"
+      }
+    ]
+  },
+  {
+    "id": "flow-avaliacao-geriatrica-delirium",
+    "temaId": "avaliacao-geriatrica-ampla",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Delirium agudo no idoso — investigação de causa reversível",
+    "revisado": true,
+    "fonte": "Diretrizes de avaliação geriátrica ampla — abordagem do delirium",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Idoso com confusão mental de instalação súbita e curso flutuante (delirium)"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "NUNCA atribuir o quadro apenas à idade avançada ou à demência de base, mesmo quando já presente — delirium sempre exige investigação ativa de causa reversível"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Investigação inicial direcionada às causas mais comuns:",
+        "ramos": [
+          {
+            "label": "Infecção (ITU, pneumonia, etc.)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Rastrear e tratar foco infeccioso — apresentação atípica (delirium sem febre exuberante) é comum em idosos"
+              }
+            ]
+          },
+          {
+            "label": "Distúrbio metabólico (hipoglicemia, distúrbio hidroeletrolítico, hipóxia)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Corrigir o distúrbio identificado"
+              }
+            ]
+          },
+          {
+            "label": "Retenção urinária ou fecal (impactação)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Aliviar a retenção — causa frequentemente negligenciada de delirium em idosos hospitalizados"
+              }
+            ]
+          },
+          {
+            "label": "Dor não controlada",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Otimizar analgesia — dor mal controlada é gatilho comum e subdiagnosticado de delirium"
+              }
+            ]
+          },
+          {
+            "label": "Efeito medicamentoso (polifarmácia, medicamento potencialmente inapropriado)",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Revisar todos os medicamentos em uso conforme Critérios de Beers; considerar desprescrição"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Após identificação e tratamento da causa reversível: reavaliação estruturada dos demais domínios da avaliação geriátrica ampla (funcional, cognitivo basal, risco de quedas, suporte social) antes da alta"
+      }
+    ]
+  },
+  {
+    "id": "flow-oncologia-abordagem-inicial",
+    "temaId": "oncologia-principios-basicos",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de neoplasia — abordagem diagnóstica inicial e reconhecimento de emergências",
+    "revisado": true,
+    "fonte": "Princípios de oncologia clínica — abordagem diagnóstica e estadiamento",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com suspeita clínica ou radiológica de neoplasia"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há sinais de emergência oncológica associada (déficit neurológico progressivo, edema de face/pescoço, distúrbios eletrolíticos após quimioterapia, febre em neutropenia)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratar a emergência IMEDIATAMENTE (ver tabela de emergências oncológicas) — não aguardar confirmação histológica completa quando há risco iminente de dano irreversível"
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro estável para investigação eletiva",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Biópsia da lesão para confirmação histopatológica — etapa OBRIGATÓRIA antes de qualquer tratamento oncológico definitivo, mesmo com imagem muito sugestiva"
+              },
+              {
+                "tipo": "action",
+                "texto": "Definir tipo histológico e, quando disponível, perfil molecular/genético do tumor"
+              },
+              {
+                "tipo": "action",
+                "texto": "Estadiamento por imagem (TC, RM ou PET-CT conforme o tipo tumoral) após confirmação histológica"
+              },
+              {
+                "tipo": "end",
+                "texto": "Definir estratégia terapêutica (cirurgia, radioterapia, quimioterapia, terapia-alvo, imunoterapia, isolados ou combinados) conforme estádio TNM e objetivo curativo vs. paliativo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Cuidados paliativos devem ser integrados precocemente ao cuidado oncológico em doença avançada — não são reservados apenas ao final da vida, e sua introdução precoce associa-se a melhora de qualidade de vida e, em alguns estudos, de sobrevida"
+      }
+    ]
+  },
+  {
+    "id": "flow-intoxicacao-exogena-abordagem-inicial",
+    "temaId": "emergencias-toxicologicas-anafilaxia",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem inicial da intoxicação exógena aguda",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Toxicologia; princípios gerais de toxicologia clínica de emergência",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita de intoxicação exógena aguda (história de exposição, achado toxindrômico ou rebaixamento de consciência inexplicado)"
+      },
+      {
+        "tipo": "action",
+        "texto": "ABCDE inicial: via aérea, respiração, circulação — estabilizar antes de qualquer medida diagnóstica ou de descontaminação"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente com rebaixamento do nível de consciência, miose e depressão respiratória (tríade opioide)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Administrar naloxona IV/IM — resposta diagnóstica e terapêutica; repetir/considerar infusão contínua pela meia-vida curta do antídoto frente a opioides de ação prolongada"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Há toxíndrome colinérgica (miose, sialorreia, broncorreia, fasciculações) sugestiva de organofosforado/carbamato?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Atropina titulada até controle das secreções + pralidoxima (reativador da colinesterase) + descontaminação cutânea (remoção de roupas, lavagem com água e sabão)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — toxíndrome não opioide/colinérgica ou agente não identificado",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Investigar história detalhada (agente, dose, tempo de exposição, coingestão), exame físico completo e exames complementares dirigidos (glicemia, eletrólitos, função renal/hepática, ECG, gasometria, paracetamolemia quando indicado)"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "Ingestão oral recente (idealmente <1-2h) de agente com risco de toxicidade grave e via aérea protegida?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Considerar descontaminação gastrointestinal (carvão ativado) conforme o agente, tempo de ingestão e ausência de contraindicações — nunca indicar lavagem gástrica ou êmese induzida de rotina"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Priorizar suporte clínico e monitorização, sem descontaminação gastrointestinal"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Se antídoto específico disponível para o agente identificado (ver tabela de antídotos), administrar precocemente; manter suporte clínico, monitorização e contato com centro de intoxicação/toxicologia conforme disponibilidade local"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-tce-abordagem-inicial",
+    "temaId": "tce",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem inicial do TCE",
+    "revisado": false,
+    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons); Brain Trauma Foundation Guidelines",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Vítima de trauma cranioencefálico chega à sala de emergência"
+      },
+      {
+        "tipo": "action",
+        "texto": "Avaliação inicial: Escala de Coma de Glasgow, exame das pupilas e sinais vitais, dentro do ABCDE do trauma"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Glasgow ≤8?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Via aérea definitiva: intubação orotraqueal para proteção de via aérea"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter monitorização contínua do nível de consciência"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de critérios de risco (Glasgow <15 após 2h, suspeita de fratura de crânio, vômitos repetidos, idade avançada, uso de anticoagulante, amnésia >30min, mecanismo de alta energia ou convulsão pós-trauma)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Solicitar tomografia de crânio sem contraste"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "TC evidencia hematoma/lesão com efeito de massa significativo (desvio de linha média, apagamento de cisternas)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Sinais clínicos de herniação (anisocoria, tríade de Cushing, postura de decorticação/descerebração) ou deterioração do Glasgow?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Terapia hiperosmolar imediata (manitol ou salina hipertônica) + acionamento urgente da neurocirurgia"
+                              },
+                              {
+                                "tipo": "end",
+                                "texto": "Craniotomia/craniectomia de urgência para drenagem do hematoma, conforme avaliação neurocirúrgica"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Avaliação neurocirúrgica eletiva para definir indicação cirúrgica versus conduta conservadora"
+                              },
+                              {
+                                "tipo": "end",
+                                "texto": "Conduta conservadora com TC seriada e monitorização neurológica rigorosa, se hematoma de pequeno volume e paciente estável"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Observação clínica, reavaliação neurológica seriada e orientações de alerta para retorno"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Observação clínica sem necessidade de tomografia, com orientações de sinais de alerta para retorno imediato"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-trauma-toracico-lesoes-fatais",
+    "temaId": "trauma-toracico",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Reconhecimento e manejo imediato das lesões torácicas que ameaçam a vida",
+    "revisado": true,
+    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Trauma torácico na avaliação primária (etapa B/C do ABCDE)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Desvio de traqueia contralateral + turgência jugular + ausência de murmúrio vesicular?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Pneumotórax hipertensivo — diagnóstico clínico"
+              },
+              {
+                "tipo": "end",
+                "texto": "Descompressão torácica imediata com agulha, sem aguardar radiografia"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Abafamento de bulhas + turgência jugular + hipotensão (tríade de Beck)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Tamponamento cardíaco"
+                      },
+                      {
+                        "tipo": "action",
+                        "texto": "FAST/janela pericárdica para confirmação rápida"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Pericardiocentese ou toracotomia de emergência se instável"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Ferida torácica soprante visível ('sucking chest wound')?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Pneumotórax aberto"
+                              },
+                              {
+                                "tipo": "action",
+                                "texto": "Curativo de três pontas (valvulado) sobre a ferida"
+                              },
+                              {
+                                "tipo": "end",
+                                "texto": "Drenagem torácica definitiva em local distante da ferida"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "decisao",
+                                "texto": "Movimento paradoxal da parede torácica (segmento instável)?",
+                                "ramos": [
+                                  {
+                                    "label": "Sim",
+                                    "fluxo": [
+                                      {
+                                        "tipo": "alerta",
+                                        "texto": "Tórax instável (flail chest) — atenção à contusão pulmonar subjacente"
+                                      },
+                                      {
+                                        "tipo": "action",
+                                        "texto": "Analgesia adequada (considerar bloqueio regional)"
+                                      },
+                                      {
+                                        "tipo": "end",
+                                        "texto": "Suporte ventilatório (oxigênio, VNI ou ventilação mecânica) se insuficiência respiratória"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Não",
+                                    "fluxo": [
+                                      {
+                                        "tipo": "decisao",
+                                        "texto": "Ausência de murmúrio vesicular + macicez à percussão + choque hemorrágico?",
+                                        "ramos": [
+                                          {
+                                            "label": "Sim",
+                                            "fluxo": [
+                                              {
+                                                "tipo": "alerta",
+                                                "texto": "Hemotórax maciço"
+                                              },
+                                              {
+                                                "tipo": "action",
+                                                "texto": "Drenagem torácica + reposição volêmica/hemocomponentes"
+                                              },
+                                              {
+                                                "tipo": "end",
+                                                "texto": "Toracotomia se drenagem ≥1500mL imediato ou ≥200mL/h por 2-4h"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "Não",
+                                            "fluxo": [
+                                              {
+                                                "tipo": "end",
+                                                "texto": "Reavaliar ABCDE seriadamente; prosseguir avaliação secundária com radiografia/tomografia de tórax"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-trauma-abdominal-abordagem",
+    "temaId": "trauma-abdominal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem do trauma abdominal",
+    "revisado": false,
+    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com trauma abdominal fechado ou penetrante"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente hemodinamicamente instável?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "FAST à beira-leito"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "FAST positivo (líquido livre) ou evisceração/peritonite difusa?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Laparotomia exploradora imediata — sem necessidade de exame de imagem adicional"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não / indeterminado",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar outras causas de instabilidade e reavaliar FAST seriadamente; manter reposição volêmica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não (paciente estável)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Mecanismo é penetrante (arma branca ou arma de fogo)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "decisao",
+                        "texto": "Ferimento por arma de fogo com penetração peritoneal confirmada?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Laparotomia exploradora imediata"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não / arma branca sem sinais de penetração",
+                            "fluxo": [
+                              {
+                                "tipo": "action",
+                                "texto": "Exploração local da ferida; TC de abdome com contraste para avaliar trajeto e órgãos acometidos"
+                              },
+                              {
+                                "tipo": "end",
+                                "texto": "Observação clínica seriada se sem sinais de penetração peritoneal ou lesão de víscera"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não (trauma fechado)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "TC de abdome com contraste para graduar lesão de órgão sólido (baço/fígado)"
+                      },
+                      {
+                        "tipo": "decisao",
+                        "texto": "Sangramento ativo por SNG/toque retal, peritonite ou outra indicação absoluta de cirurgia?",
+                        "ramos": [
+                          {
+                            "label": "Sim",
+                            "fluxo": [
+                              {
+                                "tipo": "alerta",
+                                "texto": "Laparotomia exploradora"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Não",
+                            "fluxo": [
+                              {
+                                "tipo": "end",
+                                "texto": "Candidato a manejo não operatório: monitorização seriada em ambiente com UTI/sala cirúrgica disponíveis; conversão para cirurgia se houver instabilidade recorrente"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-queimaduras-manejo-inicial",
+    "temaId": "queimaduras",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Manejo inicial da queimadura grave",
+    "revisado": true,
+    "fonte": "ATLS - Advanced Trauma Life Support, 10a edicao (American College of Surgeons) e diretrizes da American Burn Association",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente vítima de queimadura extensa chega à emergência"
+      },
+      {
+        "tipo": "action",
+        "texto": "ABCDE inicial do trauma, com atenção especial a sinais de lesão por inalação (queimadura facial, chamuscamento de vibrissas, fuligem em orofaringe, rouquidão)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de lesão por inalação presentes?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Via aérea definitiva precoce (intubação profilática) antes que o edema progressivo torne a via aérea impossível de ser obtida"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manter monitorização contínua da via aérea e reavaliação seriada"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "action",
+        "texto": "Estimar a superfície corporal queimada (regra dos nove ou palma da mão) e classificar a profundidade (1º, 2º superficial, 2º profunda ou 3º grau)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Calcular reposição volêmica pela fórmula de Parkland: 4 mL x peso (kg) x %SCQ de Ringer Lactato, considerando apenas 2º e 3º graus — metade nas primeiras 8h contadas a partir da hora da queimadura, metade nas 16h seguintes"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Preenche critérios de encaminhamento a centro de referência em queimados (2º grau >10% SCQ, 3º grau em qualquer extensão, face/mãos/pés/genitália/períneo/grandes articulações, queimadura elétrica ou química, lesão por inalação)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Estabilizar e providenciar transferência para centro especializado em queimados"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Manejo local da ferida (desbridamento, curativos) e monitorização ambulatorial ou internação conforme extensão"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Queimadura circunferencial de tórax ou membro com sinais de comprometimento vascular/ventilatório?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Indicar escarotomia para prevenir síndrome compartimental e restrição ventilatória"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguir reavaliação seriada e cuidados de suporte"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-abdome-agudo-perfurativo-abordagem",
+    "temaId": "abdome-agudo-perfurativo",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do abdome agudo perfurativo",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia de emergência — abdome agudo perfurativo",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor abdominal súbita e intensa, evoluindo para abdome em tábua"
+      },
+      {
+        "tipo": "action",
+        "texto": "ABCDE inicial, acesso venoso, analgesia, sonda nasogástrica, antibioticoterapia de amplo espectro"
+      },
+      {
+        "tipo": "action",
+        "texto": "Radiografia de tórax em ortostase (ou abdome em decúbito lateral esquerdo) buscando pneumoperitônio"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Pneumoperitônio confirmado ou forte suspeita clínica de perfuração de víscera oca?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Laparotomia (ou laparoscopia) de urgência — rafia da perfuração com patch de omento (técnica de Graham) na úlcera péptica perfurada"
+              }
+            ]
+          },
+          {
+            "label": "Não — radiografia inconclusiva",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tomografia de abdome com contraste para confirmar pneumoperitônio em pequena quantidade e localizar o sítio de perfuração"
+              },
+              {
+                "tipo": "end",
+                "texto": "Cirurgia se confirmada perfuração; considerar tratamento não operatório apenas em caso muito selecionado de perfuração contida e paciente estável"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-isquemia-mesenterica-abordagem",
+    "temaId": "isquemia-mesenterica-abdome-vascular",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem da isquemia mesentérica aguda",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia vascular de emergência — isquemia mesentérica aguda",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor abdominal súbita e intensa, desproporcional ao exame físico, em paciente com fibrilação atrial ou aterosclerose conhecida"
+      },
+      {
+        "tipo": "action",
+        "texto": "ABCDE, acesso venoso, ressuscitação volêmica, NÃO aguardar lactato para investigar"
+      },
+      {
+        "tipo": "action",
+        "texto": "Angiotomografia de abdome urgente — avaliar oclusão vascular e sinais precoces de sofrimento intestinal (pneumatose, gás portal)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de irritação peritoneal franca (defesa, descompressão dolorosa) já presentes?",
+        "ramos": [
+          {
+            "label": "Sim — suspeita de necrose transmural",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Laparotomia de urgência para ressecção do segmento necrótico associada à revascularização"
+              }
+            ]
+          },
+          {
+            "label": "Não — fase inicial, sem sinais peritoneais",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Anticoagulação sistêmica precoce"
+              },
+              {
+                "tipo": "end",
+                "texto": "Revascularização (embolectomia, trombectomia ou terapia endovascular) o mais rápido possível, conforme o mecanismo identificado"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-colelitiase-coledocolitiase-abordagem",
+    "temaId": "colelitiase-coledocolitiase",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da colelitíase e coledocolitíase",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia biliar — colelitíase e coledocolitíase",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Cálculo(s) biliar(es) identificado(s) por ultrassonografia abdominal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente sintomático (cólica biliar)?",
+        "ramos": [
+          {
+            "label": "Não — achado incidental assintomático",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Conduta expectante na maioria dos casos (exceto vesícula em porcelana, pólipos grandes associados ou cálculos muito volumosos)"
+              }
+            ]
+          },
+          {
+            "label": "Sim — cólica biliar",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Há icterícia, colúria ou dilatação de via biliar sugerindo coledocolitíase associada?",
+                "ramos": [
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Colecistectomia eletiva (via laparoscópica)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Sim — suspeita de coledocolitíase",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Confirmar com colangiorressonância (casos de probabilidade intermediária) ou indicar CPRE diretamente (alta probabilidade pré-teste)"
+                      },
+                      {
+                        "tipo": "action",
+                        "texto": "CPRE com papilotomia e extração do cálculo coledociano"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Colecistectomia (mesma internação ou tempo próximo) para prevenir recorrência a partir de novos cálculos vesiculares"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-doenca-hemorroidaria-abordagem",
+    "temaId": "doenca-hemorroidaria",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do sangramento retal e suspeita de doença hemorroidária",
+    "revisado": true,
+    "fonte": "Diretrizes de coloproctologia — doença hemorroidária",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com sangramento retal ou sintomas perianais"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há fatores de risco para neoplasia colorretal (idade >45-50 anos, mudança de hábito intestinal, perda de peso, história familiar)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar com colonoscopia antes de atribuir definitivamente o sangramento apenas a hemorroidas, mesmo se hemorroidas forem visualizadas ao exame"
+              }
+            ]
+          },
+          {
+            "label": "Não — baixo risco",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Anuscopia para confirmar e graduar hemorroidas internas (I-IV)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Hemorroida externa trombosada com dor intensa e nódulo palpável?",
+                "ramos": [
+                  {
+                    "label": "Sim, dentro de 72h do início da dor",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Excisão do trombo — alívio rápido quando feita nas primeiras 72h"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — hemorroida interna graus I-III",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Medidas conservadoras (fibras, hidratação, banhos de assento)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Ligadura elástica se refratária às medidas conservadoras; hemorroidectomia reservada a grau IV ou casos refratários"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-afeccoes-anorretais-abordagem",
+    "temaId": "afeccoes-anorretais-benignas",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem das afecções anorretais benignas",
+    "revisado": true,
+    "fonte": "Diretrizes de coloproctologia — fissura, abscesso e fístula anorretal",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com dor anal, sangramento ou drenagem perianal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor perianal constante/progressiva com febre, tumefação e flutuação à palpação?",
+        "ramos": [
+          {
+            "label": "Sim — suspeita de abscesso",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Drenagem cirúrgica imediata — antibiótico isolado não substitui a drenagem; investigar sinais de disseminação profunda (fascite necrosante perineal/Fournier) se toxemia sistêmica"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Dor em queimação relacionada à evacuação, com laceração visível na linha média posterior?",
+                "ramos": [
+                  {
+                    "label": "Sim — fissura anal típica",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Tratamento conservador (fibras, banhos de assento, relaxante tópico do esfíncter interno)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Esfincterotomia lateral interna se crônica e refratária ao tratamento clínico"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Fissura em localização atípica",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Investigar causa secundária (doença de Crohn, tuberculose, neoplasia) antes de tratar como fissura idiopática"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Drenagem intermitente por orifício externo",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Suspeitar de fístula anal — mapear o trajeto (RM pélvica ou USG endoanal em casos complexos) antes do planejamento cirúrgico"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Fistulotomia (trajeto simples) ou técnica poupadora de esfíncter (fístula alta/complexa)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cancer-colorretal-rastreamento",
+    "temaId": "cancer-colorretal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Rastreamento e investigação inicial do câncer colorretal",
+    "revisado": true,
+    "fonte": "Diretrizes de rastreamento de câncer colorretal — sociedades de gastroenterologia e coloproctologia",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente assintomático de risco médio ou paciente sintomático com sinais de alerta"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Paciente sintomático (sangramento, mudança de hábito intestinal, anemia ferropriva inexplicada, perda de peso)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Colonoscopia com biópsia obrigatória, independentemente da idade — investigação diagnóstica, não apenas rastreamento"
+              }
+            ]
+          },
+          {
+            "label": "Não — assintomático",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Paciente de alto risco (história familiar, síndrome hereditária, DII de longa data)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Rastreamento diferenciado e mais precoce, conforme o risco específico"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — risco médio",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Iniciar rastreamento a partir dos 45-50 anos: pesquisa de sangue oculto fecal anual OU colonoscopia a cada 10 anos"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-daop-abordagem",
+    "temaId": "doenca-arterial-obstrutiva-periferica",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da doença arterial obstrutiva periférica",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia vascular — doença arterial obstrutiva periférica",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de DAOP (claudicação, dor em repouso, lesão trófica, pulsos reduzidos/ausentes)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Índice tornozelo-braço (ITB) como exame de triagem inicial"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor isquêmica em repouso e/ou lesões tróficas/necrose (isquemia crítica de membro)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Avaliação vascular urgente para revascularização (angioplastia ou bypass) — risco iminente de perda do membro, não tratar apenas com analgesia prolongada"
+              }
+            ]
+          },
+          {
+            "label": "Não — claudicação intermitente estável",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Cessação do tabagismo, exercício físico supervisionado, controle de fatores de risco cardiovascular, antiagregante plaquetário e estatina"
+              },
+              {
+                "tipo": "end",
+                "texto": "Revascularização eletiva se claudicação incapacitante refratária ao tratamento clínico otimizado"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-insuficiencia-venosa-abordagem",
+    "temaId": "insuficiencia-venosa-cronica",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da insuficiência venosa crônica e úlcera venosa",
+    "revisado": true,
+    "fonte": "Diretrizes de cirurgia vascular — insuficiência venosa crônica",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com varizes, edema vespertino, alterações cutâneas ou úlcera em região maleolar medial"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia com Doppler venoso para avaliar competência valvular e refluxo"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Antes de indicar terapia de compressão: há suspeita ou fatores de risco para doença arterial periférica associada?",
+        "ramos": [
+          {
+            "label": "Sim — investigar antes de comprimir",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Realizar índice tornozelo-braço (ITB) — a compressão pode ser prejudicial/contraindicada em doença arterial significativa não identificada"
+              }
+            ]
+          },
+          {
+            "label": "Não — baixo risco arterial",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Terapia de compressão com meias elásticas graduadas, elevação dos membros e exercício regular como base do tratamento"
+              },
+              {
+                "tipo": "end",
+                "texto": "Procedimento ablativo (escleroterapia, ablação térmica endovenosa ou cirurgia) se varizes sintomáticas/refratárias ao tratamento conservador"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-escroto-agudo-abordagem",
+    "temaId": "torcao-testicular-escroto-agudo",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do escroto agudo",
+    "revisado": true,
+    "fonte": "Diretrizes de urologia de emergência — escroto agudo",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor testicular aguda"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor súbita e intensa, reflexo cremastérico ausente, sinal de Prehn negativo (especialmente em adolescente)?",
+        "ramos": [
+          {
+            "label": "Sim — forte suspeita de torção",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Exploração cirúrgica IMEDIATA, sem aguardar exame de imagem — cada hora de atraso reduz a viabilidade testicular (janela ~6h)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Destorção + orquidopexia bilateral; orquiectomia se necrose já estabelecida"
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro menos típico, tempo disponível",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Ultrassonografia com Doppler colorido testicular"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Fluxo sanguíneo testicular ausente/reduzido?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Exploração cirúrgica de urgência (torção confirmada)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — fluxo normal/aumentado",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Tratar como epididimite: antibioticoterapia dirigida ao agente provável"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hpb-abordagem",
+    "temaId": "hiperplasia-prostatica-benigna",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da hiperplasia prostática benigna sintomática",
+    "revisado": true,
+    "fonte": "Diretrizes de urologia — hiperplasia prostática benigna",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Homem com sintomas do trato urinário inferior (obstrutivos e/ou irritativos)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Retenção urinária aguda completa (incapacidade total de urinar, bexiga distendida e dolorosa)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Cateterismo vesical de alívio IMEDIATO, seguido de investigação e planejamento terapêutico definitivo"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "IPSS, toque retal (avaliar simetria/consistência) e PSA conforme decisão compartilhada com o paciente"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Sintomas leves ou moderados/graves?",
+                "ramos": [
+                  {
+                    "label": "Leves",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Mudanças comportamentais e acompanhamento"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Moderados/graves",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Alfabloqueador (componente dinâmico, alívio rápido); associar inibidor da 5-alfa-redutase se próstata volumosa (componente estático)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Tratamento cirúrgico (RTU de próstata) se refratário ao tratamento clínico ou houver complicação (retenção recorrente, litíase vesical, insuficiência renal obstrutiva)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-nefrolitiase-abordagem",
+    "temaId": "nefrolitiase",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da cólica renal e nefrolitíase",
+    "revisado": true,
+    "fonte": "Diretrizes de urologia — nefrolitíase e cólica renal",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Dor em cólica de flanco irradiando para região inguinal, paciente agitado"
+      },
+      {
+        "tipo": "action",
+        "texto": "Analgesia (AINE de escolha, pelo efeito antiespasmódico ureteral) + hidratação; tomografia de abdome sem contraste (ou USG em gestantes)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Febre ou sinais de infecção urinária associados à obstrução?",
+        "ramos": [
+          {
+            "label": "Sim — pielonefrite obstrutiva/pionefrose",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Emergência urológica: desobstrução urgente (cateter duplo J ou nefrostomia percutânea) associada a antibioticoterapia — o rim obstruído infectado não responde ao antibiótico isolado"
+              }
+            ]
+          },
+          {
+            "label": "Não — sem infecção",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Cálculo pequeno (geralmente <5-6mm), sem dor refratária ou comprometimento renal?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Terapia expulsiva medicamentosa (alfabloqueador) e acompanhamento clínico — alta probabilidade de eliminação espontânea"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — cálculo grande, dor refratária ou comprometimento renal",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Intervenção urológica (litotripsia extracorpórea, ureteroscopia ou nefrolitotomia percutânea, conforme tamanho e localização)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-tumores-urologicos-hematuria",
+    "temaId": "tumores-urologicos",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação da hematúria macroscópica indolor",
+    "revisado": true,
+    "fonte": "Diretrizes de urologia oncológica — investigação de hematúria",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente adulto com hematúria macroscópica indolor (especialmente tabagista)"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Considerar neoplasia urotelial (câncer de bexiga) até prova em contrário — a resolução espontânea do sangramento NÃO exclui o diagnóstico"
+      },
+      {
+        "tipo": "action",
+        "texto": "Cistoscopia com biópsia/ressecção transuretral"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Doença invasiva (musculatura detrusora) confirmada?",
+        "ramos": [
+          {
+            "label": "Não — não invasiva",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Ressecção transuretral com instilação intravesical adjuvante (BCG)"
+              }
+            ]
+          },
+          {
+            "label": "Sim — invasiva",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Cistectomia radical"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-ciclo-menstrual-fases",
+    "temaId": "ciclo-menstrual-normal",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Sequência hormonal do ciclo menstrual normal",
+    "revisado": true,
+    "fonte": "Fisiologia do eixo hipotálamo-hipófise-ovário",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Início do ciclo (1º dia da menstruação)"
+      },
+      {
+        "tipo": "action",
+        "texto": "GnRH hipotalâmico pulsátil estimula liberação de FSH e LH pela hipófise"
+      },
+      {
+        "tipo": "action",
+        "texto": "Fase folicular: FSH estimula crescimento e seleção do folículo dominante; estrogênio em ascensão prolifera o endométrio"
+      },
+      {
+        "tipo": "action",
+        "texto": "Pico de LH (feedback positivo do estrogênio em nível alto e sustentado) desencadeia a ovulação"
+      },
+      {
+        "tipo": "action",
+        "texto": "Fase lútea: corpo lúteo produz progesterona, transformando o endométrio em secretor, preparado para implantação"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Ocorreu implantação/gestação?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "hCG do trofoblasto mantém o corpo lúteo, sustentando a produção de progesterona"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Regressão do corpo lúteo, queda de progesterona, descamação endometrial — menstruação, reiniciando o ciclo"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-amenorreias-secundaria-abordagem",
+    "temaId": "amenorreias",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação da amenorreia secundária",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia endócrina — amenorreia secundária",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher previamente menstruada com ausência de menstruação por 3 ciclos ou 6 meses"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Beta-hCG sempre em primeiro lugar — excluir gestação antes de qualquer outra investigação"
+      },
+      {
+        "tipo": "action",
+        "texto": "Se beta-hCG negativo: dosar prolactina, TSH e FSH/LH"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "FSH elevado?",
+        "ramos": [
+          {
+            "label": "Sim — hipergonadotrófica",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar causa ovariana: insuficiência ovariana prematura (considerar cariótipo se jovem)"
+              }
+            ]
+          },
+          {
+            "label": "Não — FSH baixo/normal (hipogonadotrófica)",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Prolactina elevada?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar hiperprolactinemia/prolactinoma — RM de sela túrcica se cefaleia/alteração visual associada"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Investigar TSH (disfunção tireoidiana) ou considerar amenorreia hipotalâmica funcional (peso, exercício, estresse)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-uroginecologia-incontinencia-abordagem",
+    "temaId": "uroginecologia-incontinencia-prolapso",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem inicial da incontinência urinária feminina",
+    "revisado": true,
+    "fonte": "Diretrizes de uroginecologia — incontinência urinária",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher com queixa de perda urinária involuntária"
+      },
+      {
+        "tipo": "action",
+        "texto": "História detalhada (diário miccional, questionários) e exame físico com teste de esforço"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Perda urinária associada a aumento de pressão abdominal (tosse, esforço) ou precedida de urgência súbita?",
+        "ramos": [
+          {
+            "label": "Associada a esforço",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Fisioterapia do assoalho pélvico (exercícios de Kegel) como primeira linha"
+              },
+              {
+                "tipo": "end",
+                "texto": "Sling suburetral cirúrgico se refratária ou caso mais grave"
+              }
+            ]
+          },
+          {
+            "label": "Precedida de urgência (bexiga hiperativa)",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Treinamento vesical associado a anticolinérgico ou beta-3 agonista (mirabegrona)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Toxina botulínica intravesical se refratária ao tratamento farmacológico"
+              }
+            ]
+          },
+          {
+            "label": "Dúvida diagnóstica / discordância clínica",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Estudo urodinâmico para diferenciar objetivamente os subtipos antes de decisão terapêutica, especialmente se cirurgia planejada"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-endometriose-abordagem",
+    "temaId": "endometriose",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem diagnóstica e terapêutica da endometriose",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia — endometriose",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher jovem com dismenorreia progressiva, dispareunia de profundidade e/ou infertilidade"
+      },
+      {
+        "tipo": "action",
+        "texto": "Exame físico dirigido (pode ser normal, mesmo em doença significativa) + ultrassonografia transvaginal com preparo intestinal ou RM se disponível"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Diagnóstico clínico presuntivo é suficiente para iniciar tratamento empírico — laparoscopia NÃO é obrigatória antes de tratar"
+      },
+      {
+        "tipo": "action",
+        "texto": "Tratamento hormonal de primeira linha (contraceptivo combinado contínuo, progestágeno, ou análogo de GnRH em casos graves)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Refratária ao tratamento clínico, endometrioma volumoso, ou infertilidade com desejo reprodutivo?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Cirurgia laparoscópica com ressecção/ablação dos implantes"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter tratamento hormonal e acompanhamento clínico"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-dip-abordagem",
+    "temaId": "dip",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da doença inflamatória pélvica",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia infecciosa — doença inflamatória pélvica",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher sexualmente ativa com dor pélvica, corrimento anormal e dor à mobilização do colo/anexos ao exame"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Baixo limiar para tratamento empírico — iniciar antibiótico diante de suspeita clínica razoável, sem aguardar confirmação laboratorial completa"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Abscesso tubo-ovariano, gestação, falha ambulatorial prévia ou intolerância oral?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Sinais de rotura do abscesso (peritonite, toxemia sistêmica)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Emergência cirúrgica + antibioticoterapia endovenosa agressiva"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Internação com antibioticoterapia endovenosa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não — quadro leve/moderado",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratamento ambulatorial: ceftriaxona + doxiciclina + metronidazol, associado a tratamento obrigatório da parceria sexual"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cancer-colo-utero-rastreamento",
+    "temaId": "cancer-colo-utero-hpv",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Rastreamento do câncer de colo do útero (protocolo brasileiro)",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Diretrizes brasileiras para rastreamento do câncer do colo do útero",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher de 25 a 64 anos, sexualmente ativa"
+      },
+      {
+        "tipo": "action",
+        "texto": "Citologia oncótica (Papanicolaou) anual"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dois exames anuais consecutivos normais?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Passar para periodicidade TRIENAL"
+              }
+            ]
+          },
+          {
+            "label": "Não — ainda no 1º exame ou resultado alterado",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Resultado citológico alterado?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Colposcopia com biópsia dirigida para confirmação histológica"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — normal, ainda no 1º exame",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Repetir citologia anualmente até completar 2 exames normais consecutivos"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cancer-endometrio-abordagem",
+    "temaId": "cancer-endometrio",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação do sangramento pós-menopausa",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia oncológica — câncer de endométrio",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher na pós-menopausa com sangramento vaginal"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Considerar câncer de endométrio até prova em contrário — investigação obrigatória, nunca atribuir precipitadamente a causa benigna"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia transvaginal (avaliar espessura endometrial)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Biópsia endometrial (aspiração ambulatorial ou histeroscopia com biópsia dirigida) — obrigatória, não substituível apenas pela imagem"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Confirmado câncer de endométrio, aparentemente confinado ao útero?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Histerectomia total + salpingo-ooforectomia bilateral + estadiamento cirúrgico (avaliação linfonodal)"
+              }
+            ]
+          },
+          {
+            "label": "Não — benigno ou hiperplasia sem atipia",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Conduta conforme achado específico (acompanhamento ou tratamento dirigido)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cancer-ovario-abordagem",
+    "temaId": "cancer-ovario",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Investigação da massa anexial suspeita de malignidade",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia oncológica — câncer de ovário",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher com sintomas persistentes inespecíficos (distensão, saciedade precoce, dor pélvica) ou massa anexial identificada em exame"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Não existe rastreamento populacional eficaz validado — a suspeita depende de reconhecimento clínico dos sintomas"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia transvaginal (características morfológicas da massa) + CA-125"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Características suspeitas (sólida/mista, irregular, fixa, bilateral, com ascite)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Cirurgia citorredutora com confirmação histopatológica — a confirmação definitiva é sempre cirúrgica"
+              }
+            ]
+          },
+          {
+            "label": "Não — características benignas",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguimento conforme achado específico"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-miomatose-adenomiose-diferencial",
+    "temaId": "miomatose-uterina",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Diferencial entre mioma e adenomiose",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia — miomatose uterina e adenomiose",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher com sangramento uterino anormal e/ou dismenorreia, útero aumentado ao exame"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia transvaginal"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Útero com contornos irregulares/nodulares (massa bem delimitada) ou aumento difuso e simétrico?",
+        "ramos": [
+          {
+            "label": "Nodular, bem delimitado",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Suspeitar de leiomioma — classificar por localização (submucoso, intramural, subseroso)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Assintomático: acompanhar. Sintomático: tratamento hormonal, miomectomia (preserva útero) ou histerectomia conforme desejo reprodutivo"
+              }
+            ]
+          },
+          {
+            "label": "Difuso e simétrico, sem nódulo delimitado",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Suspeitar de adenomiose — RM pélvica para confirmar (zona juncional espessada) se dúvida diagnóstica"
+              },
+              {
+                "tipo": "end",
+                "texto": "Tratamento hormonal controla sintomas mas não cura; histerectomia é o único tratamento definitivo"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-abdome-agudo-ginecologico-abordagem",
+    "temaId": "abdome-agudo-ginecologico",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do abdome agudo ginecológico",
+    "revisado": true,
+    "fonte": "Diretrizes de ginecologia de emergência — torção anexial e cisto ovariano roto",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Mulher em idade reprodutiva com dor pélvica súbita e intensa"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Beta-hCG sempre — excluir gravidez ectópica antes de prosseguir"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia transvaginal com Doppler"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Fluxo ovariano reduzido/ausente ao Doppler, com forte suspeita clínica de torção?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Cirurgia de urgência (laparoscopia) — destorção com preservação ovariana sempre que possível, mesmo com aspecto inicialmente comprometido"
+              }
+            ]
+          },
+          {
+            "label": "Não — líquido livre sugestivo de cisto roto",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Instabilidade hemodinâmica ou hemoperitônio volumoso?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Intervenção cirúrgica para controle do sangramento"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — estável",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manejo conservador com analgesia e observação"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-pre-natal-classificacao-risco",
+    "temaId": "pre-natal-baixo-alto-risco",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Classificação de risco gestacional e conduta no pré-natal",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Manual Técnico de Pré-Natal e Puerpério",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Gestante inicia pré-natal (1ª consulta)"
+      },
+      {
+        "tipo": "action",
+        "texto": "Classificar risco: comorbidades prévias, história obstétrica desfavorável, idade materna extrema"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Presença de fator de risco gestacional (hipertensão, diabetes, cardiopatia, perdas gestacionais recorrentes, pré-eclâmpsia prévia)?",
+        "ramos": [
+          {
+            "label": "Sim — alto risco",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Encaminhar a acompanhamento especializado (pré-natal de alto risco), mantendo vínculo com atenção primária"
+              }
+            ]
+          },
+          {
+            "label": "Não — baixo risco",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Seguir calendário mínimo de consultas e exames de rastreamento na atenção primária"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Ao longo da gestação: ausência de crescimento da altura uterina entre consultas ou nova intercorrência (hipertensão gestacional, diabetes gestacional)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Investigar (USG para restrição de crescimento/oligoâmnio) e reclassificar risco — encaminhar se necessário"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Manter acompanhamento de rotina conforme classificação de risco vigente"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-infeccoes-gravidico-sifilis-abordagem",
+    "temaId": "infeccoes-ciclo-gravidico-puerperal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da sífilis na gestação",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Protocolo Clínico e Diretrizes Terapêuticas para sífilis",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Teste rápido ou sorologia para sífilis positivo em gestante"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Gestante refere alergia à penicilina?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Dessensibilização à penicilina — NUNCA substituir por outro antibiótico, pois é o único tratamento comprovadamente eficaz para prevenir transmissão vertical"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Penicilina benzatina conforme estágio da sífilis"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Tratamento completo e adequado (esquema e tempo corretos) concluído antes do parto?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Tratamento materno adequado — seguimento habitual do recém-nascido"
+              }
+            ]
+          },
+          {
+            "label": "Não — tratamento inadequado, incompleto ou não realizado",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Tratamento materno inadequado — investigar e tratar o recém-nascido para sífilis congênita, independentemente de sinais clínicos ao nascimento"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-hemorragia-2a-metade-abordagem",
+    "temaId": "hemorragia-2a-metade-gestacao",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem do sangramento vaginal na segunda metade da gestação",
+    "revisado": true,
+    "fonte": "Diretrizes de obstetrícia — hemorragias da segunda metade da gestação",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Gestante com sangramento vaginal após 20 semanas"
+      },
+      {
+        "tipo": "alerta",
+        "texto": "NUNCA realizar toque vaginal antes de excluir placenta prévia por ultrassonografia — risco de hemorragia catastrófica"
+      },
+      {
+        "tipo": "action",
+        "texto": "Ultrassonografia (transvaginal, segura mesmo com sangramento ativo) para localizar a placenta"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Dor abdominal súbita e intensa, útero hipertônico (\"em madeira\")?",
+        "ramos": [
+          {
+            "label": "Sim — suspeita de DPP",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Interrupção imediata da gestação (cesárea de urgência) se comprometimento fetal/materno significativo — diagnóstico é clínico"
+              }
+            ]
+          },
+          {
+            "label": "Não — sangramento indolor, sem hipertonia",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Suspeita de placenta prévia — confirmar por USG; via de parto conforme localização (cesárea se cobre o orifício interno)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cardiotocografia-abordagem",
+    "temaId": "cardiotocografia-bem-estar-fetal",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem do padrão de cardiotocografia não tranquilizador",
+    "revisado": true,
+    "fonte": "Diretrizes de monitorização fetal intraparto — cardiotocografia",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Cardiotocografia realizada durante o trabalho de parto"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Classificação do traçado?",
+        "ramos": [
+          {
+            "label": "Categoria I — normal",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Seguimento de rotina, sem intervenção adicional"
+              }
+            ]
+          },
+          {
+            "label": "Categoria II — indeterminada",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Medidas de ressuscitação intrauterina: decúbito lateral esquerdo, suspender ocitocina, hidratação venosa, oxigênio suplementar, corrigir hipotensão"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Padrão se normaliza após as medidas?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Continuar monitorização de rotina"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — refratário",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Resolução do parto (geralmente cesárea de urgência)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Categoria III — anormal",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Resolução IMEDIATA do parto (cesárea de emergência) — não atrasar a decisão por medidas de ressuscitação intrauterina"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-rpm-abordagem",
+    "temaId": "tpp-rpm-gestacao-multipla",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Abordagem da rotura prematura de membranas pré-termo",
+    "revisado": true,
+    "fonte": "Diretrizes de obstetrícia — trabalho de parto prematuro e RPM",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Gestante pré-termo com perda súbita de líquido claro pela vagina"
+      },
+      {
+        "tipo": "action",
+        "texto": "Confirmar RPM (exame especular, teste de cristalização em lâmina) — evitar toque vaginal digital repetido"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Sinais de corioamnionite (febre materna, taquicardia fetal, útero doloroso, líquido fétido)?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "alerta",
+                "texto": "Resolução do parto independentemente da idade gestacional + antibioticoterapia — conduta expectante contraindicada"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Conduta expectante + antibioticoprofilaxia (prolonga latência, reduz infecção)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Corticoide antenatal para maturação pulmonar fetal"
+              },
+              {
+                "tipo": "end",
+                "texto": "Vigilância seriada para sinais de infecção e reavaliação contínua da necessidade de resolução do parto"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-puerperio-patologico-abordagem",
+    "temaId": "puerperio-patologico",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Abordagem da febre puerperal e da mastite lactacional",
+    "revisado": true,
+    "fonte": "Diretrizes de obstetrícia — infecção puerperal e mastite",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Puérpera com febre ou dor mamária"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Febre + dor abdominal baixa + lóquios fétidos + subinvolução uterina, ou dor mamária localizada com hiperemia?",
+        "ramos": [
+          {
+            "label": "Quadro uterino — suspeita de endometrite",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Antibioticoterapia de amplo espectro (aeróbios + anaeróbios), geralmente endovenosa"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Febre persiste apesar de antibiótico adequado, com subinvolução importante?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Investigar retenção de restos placentários (USG) ou coleção pélvica — curetagem/drenagem conforme o caso, pois não respondem a antibiótico isolado"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter tratamento e reavaliação"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Quadro mamário — suspeita de mastite",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Antibiótico cobrindo Staphylococcus aureus + analgesia + MANTER amamentação/ordenha (nunca suspender)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Flutuação à palpação (sugestivo de abscesso)?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Drenagem do abscesso — não responde a antibiótico isolado"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Manter tratamento clínico com reavaliação"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
