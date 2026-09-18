@@ -12,6 +12,7 @@ import * as flashcards from "./views/flashcards.js";
 import * as questoes from "./views/questoes.js";
 import * as planejador from "./views/planejador.js";
 import * as cronograma from "./views/cronograma.js";
+import * as erros from "./views/erros.js";
 import * as prescricaoPratica from "./views/prescricaoPratica.js";
 
 const mainEl = document.getElementById("main-content");
@@ -32,6 +33,7 @@ registerRoute("/residencia/revisao", revisao.renderRevisao, { title: "Revisão e
 registerRoute("/residencia/flashcards", flashcards.renderLista, { title: "Flashcards" });
 registerRoute("/residencia/flashcards/:deckId", flashcards.renderEstudo, { title: "Flashcards" });
 registerRoute("/residencia/questoes", questoes.renderLista, { title: "Questões" });
+registerRoute("/residencia/erros", erros.renderErros, { title: "Meus Erros" });
 registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "Hoje" });
 registerRoute("/residencia/cronograma", cronograma.renderCronograma, { title: "Cronograma" });
 

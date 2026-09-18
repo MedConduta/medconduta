@@ -1,5 +1,6 @@
 import { fetchJsonCached, escapeHtml, uniq } from "../utils.js";
 import { setItem, getAll } from "../db.js";
+import { registrarResultadoQuestao } from "../erros.js";
 
 export async function renderLista(container) {
   const [curadas, geradas, temasCurados, respostasAnteriores] = await Promise.all([
@@ -120,6 +121,7 @@ export async function renderLista(container) {
             tentativa,
             respondidoEm: new Date().toISOString(),
           });
+          await registrarResultadoQuestao(questao.id, acertou);
         });
       });
     });
