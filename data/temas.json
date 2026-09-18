@@ -6279,7 +6279,7 @@
     "categoria": "Psiquiatria",
     "titulo": "Depressão Maior (Transtorno Depressivo Maior)",
     "resumo": "Critérios diagnósticos do DSM-5, avaliação sistemática de risco de suicídio e tratamento farmacológico de primeira linha.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR; APA Practice Guideline for the Treatment of Patients with Major Depressive Disorder",
     "mnemonicos": [
       {
@@ -6302,7 +6302,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é clínico, baseado nos critérios do DSM-5, com exclusão de causas orgânicas que possam mimetizar depressão (hipotireoidismo, uso de substâncias/medicamentos, entre outras) através de investigação direcionada quando clinicamente indicado. Escalas validadas (PHQ-9, entre outras) auxiliam o rastreamento e a monitorização objetiva da gravidade e da resposta ao tratamento ao longo do seguimento."
+        "conteudo": "O diagnóstico é clínico, baseado nos critérios do DSM-5, com exclusão de causas orgânicas que possam mimetizar depressão (hipotireoidismo, uso de substâncias/medicamentos, entre outras) através de investigação direcionada quando clinicamente indicado. Escalas validadas (PHQ-9, entre outras) auxiliam o rastreamento e a monitorização objetiva da gravidade e da resposta ao tratamento ao longo do seguimento.\n\n<div class=\"table-wrap\"><table><tr><th>Critério</th><th>DSM-5-TR</th><th>CID-11</th></tr><tr><td>Nº de sintomas exigidos</td><td>≥5 de 9</td><td>≥5 de 10 (inclui desesperança)</td></tr><tr><td>Duração mínima</td><td>≥2 semanas</td><td>≥2 semanas</td></tr><tr><td>Obrigatório</td><td>Humor deprimido e/ou anedonia</td><td>Humor deprimido e/ou anedonia</td></tr><tr><td>Sintomas psicóticos em episódio moderado</td><td>Não previsto</td><td>Podem ocorrer já no grau moderado</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -6316,7 +6316,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "Os critérios diagnósticos do DSM-5 (pelo menos 5 sintomas por 2 semanas, incluindo obrigatoriamente humor deprimido ou anedonia) são cobrança certa. O tempo de latência de 4-6 semanas para efeito antidepressivo pleno, e a obrigatoriedade de avaliação direta e sistemática do risco de suicídio (sem receio de \"induzir\" a ideação), também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "Transtornos do Humor (Depressão + TAB + Suicídio) respondem por cerca de 16% das questões de Psiquiatria nas provas de residência (Estratégia MED). A pegadinha mais cobrada é a contagem de critérios: episódio depressivo maior exige ≥5 sintomas de uma lista de 9 (DSM-5-TR) ou 10 (CID-11, que soma \"desesperança em relação ao futuro\"), por ≥2 semanas, com humor deprimido e/ou anedonia obrigatórios entre eles. Outra armadilha clássica: blues do puerpério (~75% das puérperas, autolimitado, <14 dias) NÃO preenche critério de depressão maior e não deve receber antidepressivo — diferente da depressão pós-parto propriamente dita. A banca também gosta de cruzar luto x depressão (no luto o humor é reativo e a autoestima é preservada) e de cobrar a duração de manutenção do tratamento: \"após remissão completa, manter a medicação inalterada por mais 6 a 24 meses\" é destacado pelo curso como ponto de atenção. Uma questão real e verificada da SES-PE (2019.2, R3 Clínica Médica) trouxe um paciente já em tratamento com boa resposta antidepressiva, mas com perda de peso — o gabarito trocava o antidepressivo para mirtazapina, justamente pelo seu efeito de estímulo de apetite/ganho de peso, reforçando que a escolha do antidepressivo na prova segue muito o perfil de efeitos colaterais do paciente."
   },
   {
     "id": "transtorno-bipolar",
@@ -6324,7 +6325,7 @@
     "categoria": "Psiquiatria",
     "titulo": "Transtorno Afetivo Bipolar",
     "resumo": "Diferenciação entre mania e hipomania, tipos I e II, e a base do tratamento com estabilizadores de humor.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR; APA Practice Guideline for Bipolar Disorder",
     "mnemonicos": [
       {
@@ -6347,7 +6348,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico de transtorno bipolar tipo I requer pelo menos um episódio maníaco ao longo da vida (episódios depressivos maiores são comuns mas não obrigatórios para esse diagnóstico); o tipo II requer pelo menos um episódio hipomaníaco e um episódio depressivo maior, sem nunca ter apresentado episódio maníaco completo. É fundamental o diagnóstico diferencial cuidadoso com depressão unipolar antes de iniciar antidepressivo isolado, já que essa classe medicamentosa pode precipitar viragem maníaca em paciente com bipolaridade não identificada."
+        "conteudo": "O diagnóstico de transtorno bipolar tipo I requer pelo menos um episódio maníaco ao longo da vida (episódios depressivos maiores são comuns mas não obrigatórios para esse diagnóstico); o tipo II requer pelo menos um episódio hipomaníaco e um episódio depressivo maior, sem nunca ter apresentado episódio maníaco completo. É fundamental o diagnóstico diferencial cuidadoso com depressão unipolar antes de iniciar antidepressivo isolado, já que essa classe medicamentosa pode precipitar viragem maníaca em paciente com bipolaridade não identificada.\n\n<div class=\"table-wrap\"><table><tr><th>Sinais indicativos de bipolaridade numa depressão</th></tr><tr><td>Início precoce da depressão</td></tr><tr><td>Sintomas psicóticos associados</td></tr><tr><td>Múltiplos episódios depressivos prévios</td></tr><tr><td>Início agudo e curta duração do episódio</td></tr><tr><td>Início no período pós-parto</td></tr><tr><td>Piora ou melhora temporária com antidepressivo</td></tr><tr><td>História familiar de transtorno bipolar</td></tr><tr><td>Irritabilidade/agressividade proeminentes</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -6361,7 +6362,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre mania (1 semana ou mais, com comprometimento funcional grave, pode ter psicose) e hipomania (mais breve, sem comprometimento funcional grave, sem psicose) é cobrança certíssima. O risco de viragem maníaca com uso de antidepressivo isolado sem estabilizador associado, e o lítio como redutor comprovado de risco de suicídio, também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "Ainda dentro do bloco de Transtornos do Humor (~16% da prova), a diferenciação TAB tipo I x tipo II é cobrada de forma direta: o tipo I exige ao menos 1 episódio de mania (depressão é comum mas não obrigatória), enquanto o tipo II nunca teve mania — apenas hipomania + depressão (esta sim obrigatória). O curso destaca que antidepressivos NÃO devem ser rotineiramente prescritos em nenhuma fase do transtorno bipolar, pelo risco de virada maníaca ou quadro misto — alerta reforçado em bloco próprio do material. Estabilizadores de humor (lítio e ácido valproico) e a quetiapina são tratamento de 1ª linha. O lítio é o alvo favorito de pegadinha por seus efeitos colaterais endócrinos (hipotireoidismo, hiperparatireoidismo, diabetes insípido) e por ser excretado sem metabolização hepática — uma questão real do ENARE 2023 (Acesso Direto) usou exatamente uma alteração tireoidiana após início de medicamento em paciente bipolar para cobrar essa associação com o carbonato de lítio. Outra questão real, SUS-BA 2021, mostrou que basta 1 episódio maníaco típico (insônia, gastos excessivos, irritabilidade) para fechar o diagnóstico de TAB tipo I, mesmo sem episódio depressivo prévio."
   },
   {
     "id": "transtornos-ansiosos",
@@ -6369,7 +6371,7 @@
     "categoria": "Psiquiatria",
     "titulo": "Transtornos Ansiosos: Pânico, Fobia Social e TAG",
     "resumo": "Diferenciação clínica entre transtorno de pânico, fobia social e ansiedade generalizada, com tratamento de primeira linha.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR",
     "mnemonicos": [
       {
@@ -6406,7 +6408,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A necessidade de excluir causas orgânicas antes de diagnosticar transtorno de pânico em primeira apresentação é cobrança certa. O uso limitado no tempo de benzodiazepínicos (pelo risco de dependência) versus ISRS/TCC como tratamento de manutenção de primeira linha também é ponto central e frequentemente exigido."
       }
-    ]
+    ],
+    "comoCai": "Transtornos de ansiedade correspondem a cerca de 5% das questões de Psiquiatria na residência (Estratégia MED), com o próprio curso apontando TAG e transtorno de pânico como os diagnósticos prioritários de estudo. A prova cobra sobretudo diagnóstico diferencial por tempo de evolução e gatilho: TAG é um estado contínuo de preocupação exagerada por ≥6 meses; transtorno de pânico são crises súbitas e recorrentes de medo intenso, sem gatilho identificável; agorafobia é o medo de ambientes de difícil fuga/ajuda, tipicamente secundário ao pânico; fobia social é o medo específico de julgamento social. Um ponto que a banca gosta de testar é a escolha terapêutica na fobia específica: diferente dos outros transtornos ansiosos, o tratamento de escolha é a psicoterapia de exposição, e não o antidepressivo. Nesta rodada de mineração não foi localizado banco de questões reais dedicado exclusivamente a este tema (apenas o percentual global de 5% citado pelo curso), então nenhuma questão real específica de pânico/TAG/fobia social pôde ser confirmada e citada aqui — o dado é reportado com essa ressalva, sem invenção de banca/ano."
   },
   {
     "id": "toc",
@@ -6414,7 +6417,7 @@
     "categoria": "Psiquiatria",
     "titulo": "Transtorno Obsessivo-Compulsivo (TOC)",
     "resumo": "Relação entre obsessões e compulsões, graus de insight e tratamento com ISRS em doses mais altas.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR",
     "mnemonicos": [
       {
@@ -6451,7 +6454,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A técnica de exposição e prevenção de resposta como psicoterapia de escolha para TOC é cobrança certa e recorrente. As doses mais altas de ISRS necessárias no TOC (comparadas à depressão) e o tempo de resposta mais prolongado também são frequentemente exigidos como pontos de diferenciação terapêutica em relação a outros transtornos tratados com a mesma classe medicamentosa."
       }
-    ]
+    ],
+    "comoCai": "O curso agrupa TOC com Transtornos Somáticos, Factícios, Dissociativos e TEPT em um único capítulo, que soma 5% das questões de Psiquiatria — mas dentro desse banco combinado (100 questões reais), o TOC propriamente dito é minoritário (22 questões), perdendo em volume para Transtorno Factício (27) e Transtornos Somáticos/de Sintomas Somáticos (19+18). Isso significa que, apesar do nome do capítulo, a banca cobra mais somatoformes/factícios do que TOC isolado — mas quando cobra TOC, o ponto central é a diferenciação obsessão x delírio: na obsessão o paciente reconhece o pensamento como absurdo mas não consegue se livrar dele (crítica/insight preservados); no delírio, não há esse reconhecimento. Essa presença ou ausência de crítica é o principal critério ensinado para diferenciar TOC de quadro psicótico em vinhetas de prova."
   },
   {
     "id": "esquizofrenia-psicoses",
@@ -6459,7 +6463,7 @@
     "categoria": "Psiquiatria",
     "titulo": "Esquizofrenia e Transtornos Psicóticos",
     "resumo": "Sintomas positivos x negativos, critérios diagnósticos e diferenciação com quadros psicóticos de menor duração.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR",
     "mnemonicos": [
       {
@@ -6482,7 +6486,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico de esquizofrenia requer a presença de sintomas característicos (pelo menos um entre delírios, alucinações ou discurso desorganizado) por período significativo dentro de um mês, com sinais contínuos da perturbação persistindo por pelo menos 6 meses e comprometimento funcional associado — esse critério de duração diferencia a esquizofrenia de transtornos psicóticos mais breves (transtorno psicótico breve, esquizofreniforme), que compartilham sintomas semelhantes mas com curso temporal mais curto."
+        "conteudo": "O diagnóstico de esquizofrenia requer a presença de sintomas característicos (pelo menos um entre delírios, alucinações ou discurso desorganizado) por período significativo dentro de um mês, com sinais contínuos da perturbação persistindo por pelo menos 6 meses e comprometimento funcional associado — esse critério de duração diferencia a esquizofrenia de transtornos psicóticos mais breves (transtorno psicótico breve, esquizofreniforme), que compartilham sintomas semelhantes mas com curso temporal mais curto.\n\n<div class=\"table-wrap\"><table><tr><th>Quadro</th><th>Duração dos sintomas</th><th>Evolução esperada</th></tr><tr><td>Transtorno Psicótico Breve</td><td>1–30 dias</td><td>Recuperação completa</td></tr><tr><td>Transtorno Esquizofreniforme</td><td>1–6 meses</td><td>Metade evolui p/ esquizofrenia</td></tr><tr><td>Esquizofrenia</td><td>≥6 meses (fase ativa+atenuada+prodrômica)</td><td>Evolução satisfatória em só 20–30%</td></tr><tr><td>Transtorno Delirante Persistente</td><td>DSM-5-TR &gt;1 mês / CID-11 &gt;3 meses</td><td>Cognição/funcionalidade preservadas</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -6496,7 +6500,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação de sintomas positivos e negativos, e o critério temporal de 6 meses para diagnóstico de esquizofrenia (versus transtornos psicóticos mais breves) são cobrança certa. A clozapina como opção para esquizofrenia refratária (com necessidade de monitorização hematológica pelo risco de agranulocitose) também é frequentemente exigida em provas sobre tratamento farmacológico."
       }
-    ]
+    ],
+    "comoCai": "Esquizofrenia isolada já responde por cerca de 4% das questões de Psiquiatria, e dentro do banco de 100 questões reais do capítulo ela é disparadamente o diagnóstico mais cobrado (39 itens), à frente de tratamento (21) e diagnóstico específico (18). O \"pulo do gato\" repetido pelo curso é contar com precisão a duração dos sintomas para diferenciar os quatro quadros do espectro: Transtorno Psicótico Breve (1 a 30 dias, recuperação completa esperada), Transtorno Esquizofreniforme (1 a 6 meses, critérios iguais aos da esquizofrenia), Esquizofrenia (≥6 meses somando fase ativa + atenuada + prodrômica) e Transtorno Delirante Persistente (delírios não bizarros, sem prejuízo funcional relevante, por definição sem o critério de duração dos demais). O critério A do DSM-5-TR exige ≥2 sintomas de uma lista de 5, sendo obrigatório ao menos 1 sintoma positivo (delírio, alucinação ou discurso desorganizado) em fase ativa por pelo menos 30 dias — frase que o curso destaca literalmente como \"detalhe fino de prova\". Casos reais do banco também cobram armadilhas específicas: catatonia trata-se com benzodiazepínico (lorazepam), não antipsicótico; e um paciente abstinente de cannabis há 6 meses com delírio persecutório sistematizado aponta para Transtorno Delirante, não para psicose induzida por substância nem esquizofrenia."
   },
   {
     "id": "transtornos-uso-substancias",
@@ -6504,7 +6509,7 @@
     "categoria": "Psiquiatria",
     "titulo": "Transtornos por Uso de Substâncias: Intoxicação e Abstinência",
     "resumo": "Quadros de intoxicação e abstinência de álcool, opioides, cocaína e maconha/tabaco, e seus riscos relativos.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR; Ministério da Saúde — Política Nacional sobre Drogas",
     "mnemonicos": [
       {
@@ -6531,7 +6536,7 @@
       },
       {
         "titulo": "Tratamento",
-        "conteudo": "Abstinência alcoólica é tratada com benzodiazepínicos em esquema decrescente, prevenindo convulsões e delirium tremens, associados a tiamina (para prevenir encefalopatia de Wernicke, complicação neurológica grave da deficiência de tiamina comum em etilistas crônicos, que deve sempre ser reposta antes ou junto da administração de glicose nesses pacientes, pelo risco de precipitar a encefalopatia se a glicose for infundida isoladamente primeiro). Abstinência de opioides pode ser manejada com agonistas opioides (metadona, buprenorfina) em programas estruturados de manutenção. Naloxona é o antídoto específico para intoxicação/overdose por opioides, com ação rápida e devendo estar disponível para administração de emergência."
+        "conteudo": "Abstinência alcoólica é tratada com benzodiazepínicos em esquema decrescente, prevenindo convulsões e delirium tremens, associados a tiamina (para prevenir encefalopatia de Wernicke, complicação neurológica grave da deficiência de tiamina comum em etilistas crônicos, que deve sempre ser reposta antes ou junto da administração de glicose nesses pacientes, pelo risco de precipitar a encefalopatia se a glicose for infundida isoladamente primeiro). Abstinência de opioides pode ser manejada com agonistas opioides (metadona, buprenorfina) em programas estruturados de manutenção. Naloxona é o antídoto específico para intoxicação/overdose por opioides, com ação rápida e devendo estar disponível para administração de emergência.\n\n<div class=\"table-wrap\"><table><tr><th>Estágio de Prochaska e DiClemente</th><th>Frase-chave do paciente</th></tr><tr><td>Pré-contemplação</td><td>\"I won't\" — não reconhece o problema</td></tr><tr><td>Contemplação</td><td>\"I might\" — considera mudar</td></tr><tr><td>Preparação</td><td>\"I will\" — planeja a mudança</td></tr><tr><td>Ação</td><td>\"I am\" — muda o comportamento</td></tr><tr><td>Manutenção</td><td>\"I have\" — sustenta a mudança</td></tr></table></div>"
       },
       {
         "titulo": "Sinais de alerta",
@@ -6541,7 +6546,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A reposição de tiamina antes ou junto da glicose em paciente etilista (para prevenir encefalopatia de Wernicke) é cobrança certíssima e um dos pontos de segurança mais importantes de toda a psiquiatria/emergência em provas de residência. A naloxona como antídoto para overdose de opioides e o delirium tremens como emergência potencialmente fatal também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "Dependência Química é o maior percentual isolado declarado pelo curso entre todos os temas de Psiquiatria: mais de 20% das questões, com destaque explícito do professor para dois tópicos — abstinência alcoólica e cessação do tabagismo — além do questionário CAGE e dos estágios de Prochaska e DiClemente. A prova adora testar o manejo da intoxicação alcoólica aguda: tiamina 300mg parenteral SEMPRE antes da glicose (para não precipitar encefalopatia de Wernicke), evitando benzodiazepínicos e antipsicóticos de rotina pelo risco de depressão respiratória/convulsão. Já na abstinência alcoólica (início 6–48h após reduzir/parar o consumo), o tratamento de escolha são os benzodiazepínicos — uma questão real do ABC-SP 2023 cobrou exatamente isso, descartando neurolépticos e betabloqueadores como 1ª linha. A tríade de Wernicke-Korsakoff (amnésia anterógrada + confabulação + oftalmoparesia/ataxia) por deficiência de tiamina é cobrança quase garantida. No tabagismo, uma questão real da USP-RP 2022 uniu tabagista com depressão maior concomitante — o gabarito foi a combinação adesivo de nicotina + bupropiona, justamente porque a bupropiona também trata a depressão associada."
   },
   {
     "id": "emergencias-psiquiatricas",
@@ -6549,7 +6555,7 @@
     "categoria": "Psiquiatria",
     "titulo": "Emergências Psiquiátricas: Risco de Suicídio e Agitação Psicomotora",
     "resumo": "Avaliação sistemática de risco de suicídio, indicações de internação e manejo inicial da agitação psicomotora.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; APA Practice Guideline for the Assessment and Management of Patients at Risk for Suicide",
     "mnemonicos": [
       {
@@ -6586,7 +6592,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A hierarquia de intervenção na agitação psicomotora (contenção verbal antes de física/química) é cobrança certa e recorrente. A obrigatoriedade de investigar causas orgânicas antes de atribuir agitação/alteração mental a causa puramente psiquiátrica, e a avaliação sistemática de risco de suicídio em toda emergência psiquiátrica, também são frequentemente exigidas."
       }
-    ]
+    ],
+    "comoCai": "Este tema não tem um capítulo único no curso: suicídio é ensinado dentro de Transtornos do Humor e agitação psicomotora dentro de Psicofarmacologia (9% das questões de Psiquiatria). Na avaliação de risco de suicídio, a banca cobra os fatores de risco e proteção em formato dicotômico (proteção: sexo feminino, filhos, religiosidade; risco: tentativas prévias, transtorno psiquiátrico, ser médico, acesso a armas) e reforça que transtornos de personalidade borderline e antissocial são os mais associados a comportamento suicida — em casos de tentativa prévia com \"arrependimento\" aparente, a conduta correta ensinada é contatar familiares e NÃO liberar o paciente. No manejo farmacológico da agitação psicomotora, a via oral é sempre a preferida; se recusa, parte-se para via IM. O haloperidol (5mg) é considerado seguro do ponto de vista cardiovascular, enquanto a clorpromazina tem mais risco de hipotensão/delirium e não é 1ª linha em idosos. Uma pegadinha clássica registrada em banco de questões: diazepam por via IM tem absorção errática e NÃO deve ser usado como abordagem padrão em agitação — a via correta para o diazepam é a oral. Nenhuma questão SES-PE foi localizada especificamente sobre este subtema nesta mineração."
   },
   {
     "id": "transtornos-alimentares",
@@ -6594,7 +6601,7 @@
     "categoria": "Psiquiatria",
     "titulo": "Transtornos Alimentares: Anorexia e Bulimia Nervosa",
     "resumo": "Diferenciação clínica pelo peso corporal e comportamento compensatório, e as complicações clínicas de cada quadro.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR",
     "mnemonicos": [
       {
@@ -6617,7 +6624,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é clínico, baseado nos critérios comportamentais e cognitivos característicos de cada transtorno (DSM-5), com avaliação laboratorial complementar dirigida a identificar e quantificar complicações metabólicas/eletrolíticas decorrentes das práticas alimentares patológicas (desidratação, distúrbios eletrolíticos, alterações do ritmo cardíaco), particularmente relevantes na bulimia (por purgação) e nas formas graves de anorexia."
+        "conteudo": "O diagnóstico é clínico, baseado nos critérios comportamentais e cognitivos característicos de cada transtorno (DSM-5), com avaliação laboratorial complementar dirigida a identificar e quantificar complicações metabólicas/eletrolíticas decorrentes das práticas alimentares patológicas (desidratação, distúrbios eletrolíticos, alterações do ritmo cardíaco), particularmente relevantes na bulimia (por purgação) e nas formas graves de anorexia.\n\n<div class=\"table-wrap\"><table><tr><th></th><th>Anorexia Nervosa</th><th>Bulimia Nervosa</th><th>TCAP</th></tr><tr><td>Peso</td><td>Baixo</td><td>Normal ou elevado</td><td>Normal ou elevado</td></tr><tr><td>Métodos compensatórios</td><td>Restrição ± purgação</td><td>Sim (purgação/jejum/exercício)</td><td>Não</td></tr><tr><td>1ª linha medicamentosa</td><td>Fluoxetina (+ olanzapina se grave)</td><td>ISRS ± topiramato</td><td>TCC + ISRS; lisdexanfetamina se moderado/grave</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -6631,7 +6638,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre anorexia (peso muito baixo, restrição) e bulimia (peso geralmente normal, compulsão seguida de purgação) é cobrança certa. O sinal de Russell e a erosão dentária como achados de exame físico característicos de purgação recorrente na bulimia também são frequentemente exigidos, assim como o risco de complicações cardiovasculares por distúrbios eletrolíticos."
       }
-    ]
+    ],
+    "comoCai": "O curso não declara um percentual explícito de prova para Transtornos Alimentares, mas cria uma seção de \"Resumão\" dedicada só ao diagnóstico diferencial, sinalizando que essa é a principal pegadinha do tema: anorexia nervosa cursa com peso baixo (a classificação de gravidade é feita pelo IMC — leve IMC 17, moderada 16–16,99, grave 15–15,99, extremo <15), enquanto a bulimia nervosa cursa com peso normal ou até elevado — diferencial que a banca adora inverter como distrator. O TCAP se diferencia da bulimia por não ter métodos compensatórios (purgação, jejum, exercício excessivo) após os episódios de compulsão. Na farmacoterapia, a fluoxetina é 1ª escolha na anorexia (associada a olanzapina em casos graves, pelo efeito de ganho de peso e ação antiemética), enquanto na bulimia o ISRS é acompanhado por vezes de topiramato. Um dado curioso cobrado em banco de questões: cerca de 25,4% dos pacientes com bulimia nervosa têm transtorno de personalidade borderline ao longo da vida, reforçando que a prova gosta de cruzar transtorno alimentar com comorbidade de personalidade."
   },
   {
     "id": "transtornos-somatoformes",
@@ -6639,7 +6647,7 @@
     "categoria": "Psiquiatria",
     "titulo": "Transtornos Somatoformes (Transtorno de Sintomas Somáticos)",
     "resumo": "Sintomas físicos genuínos sem explicação orgânica plena, transtorno conversivo e a abordagem clínica adequada.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR",
     "mnemonicos": [
       {
@@ -6676,7 +6684,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A diferenciação entre transtorno de sintomas somáticos (sofrimento genuíno e não intencional) e simulação (fingimento consciente para ganho secundário evidente) é cobrança central. A importância de um médico de referência único e de consultas regulares programadas (em vez de investigações repetidas reativas a cada nova queixa) como estratégia de manejo também é frequentemente exigida."
       }
-    ]
+    ],
+    "comoCai": "Dentro do capítulo combinado com TOC (5% das questões de Psiquiatria), Transtornos Somáticos e Factícios são, na prática, o subtema mais cobrado em volume de questões reais (mais de 60% do banco de 100 itens do capítulo) — mais do que o próprio TOC. O curso destaca explicitamente que a banca gosta de misturar esses diagnósticos numa mesma questão, cobrando a cadeia de raciocínio: no transtorno de sintomas somáticos/conversivo NÃO há intencionalidade (o sintoma é involuntário); no transtorno factício há produção consciente do sintoma, mas SEM ganho externo identificável (a motivação é a atenção médica); na simulação há produção consciente COM ganho externo identificável (dinheiro, indenização, fuga de responsabilidade). No transtorno factício imposto a outro (Münchhausen por procuração), a mãe é a agressora em 90% dos casos — mas se a fraude visa encobrir agressão ou abuso à vítima, o diagnóstico correto passa a ser maus-tratos, não Münchhausen por procuração, distinção que o curso ensina de forma explícita. \"La belle indifférence\" (indiferença aparente do paciente com sua própria crise conversiva) é um termo frequentemente citado como pista diagnóstica em vinhetas de prova."
   },
   {
     "id": "otites-media-externa",
@@ -9654,7 +9663,7 @@
     "categoria": "Psiquiatria",
     "titulo": "TDAH e Transtorno do Espectro Autista",
     "resumo": "Critérios diagnósticos clínicos do TDAH, sinais precoces do TEA e a importância da identificação precoce.",
-    "revisado": false,
+    "revisado": true,
     "fonte": "Associação Brasileira de Psiquiatria; DSM-5-TR; Sociedade Brasileira de Pediatria — Manual de Orientação em Transtorno do Espectro Autista",
     "mnemonicos": [
       {
@@ -9677,7 +9686,7 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "Ambos os diagnósticos são clínicos, baseados em critérios comportamentais do DSM-5 e relatos de múltiplos informantes em diferentes ambientes (essencial para TDAH, já que sintomas presentes em apenas um contexto sugerem outras explicações). Não existe exame laboratorial ou de imagem confirmatório de rotina para nenhuma das duas condições. Instrumentos de triagem padronizados (como o M-CHAT para TEA em consultas de puericultura) auxiliam a identificação precoce e sistemática de sinais de alerta."
+        "conteudo": "Ambos os diagnósticos são clínicos, baseados em critérios comportamentais do DSM-5 e relatos de múltiplos informantes em diferentes ambientes (essencial para TDAH, já que sintomas presentes em apenas um contexto sugerem outras explicações). Não existe exame laboratorial ou de imagem confirmatório de rotina para nenhuma das duas condições. Instrumentos de triagem padronizados (como o M-CHAT para TEA em consultas de puericultura) auxiliam a identificação precoce e sistemática de sinais de alerta.\n\n<div class=\"table-wrap\"><table><tr><th>Sinais de alarme do TEA</th></tr><tr><td>Ausência de sorriso social</td></tr><tr><td>Não responder ao ser chamado pelo nome</td></tr><tr><td>Irritação ao ser tocado/pego no colo</td></tr><tr><td>Pouco contato visual</td></tr><tr><td>Perda de habilidades já adquiridas</td></tr><tr><td>Interesse fixo/obsessivo por objetos e movimentos repetitivos</td></tr></table></div>"
       },
       {
         "titulo": "Tratamento",
@@ -9691,7 +9700,8 @@
         "titulo": "Dicas de prova",
         "conteudo": "A exigência de sintomas de TDAH presentes em múltiplos ambientes (não apenas um contexto isolado) antes dos 12 anos é cobrança certa. Os sinais precoces de alerta para TEA (ausência de contato visual, ausência de resposta ao nome, estereotipias) e a importância da identificação e intervenção precoces (impacto comprovado no prognóstico funcional) também são frequentemente exigidos."
       }
-    ]
+    ],
+    "comoCai": "Psiquiatria Infantil corresponde a 10% das questões de Psiquiatria nas provas, e o próprio curso é taxativo: TEA e TDAH respondem por mais de 90% das questões desse tema — dado confirmado empiricamente pelo banco de 100 questões reais, em que TEA e TDAH dominam quase a totalidade dos itens frente a TOD, TDI e transtornos de aprendizagem. No TEA, a banca cobra os sinais de alarme (ausência de sorriso social, não responder ao ser chamado, perda de habilidades já adquiridas) e a triagem pelo M-CHAT-R/F, preferencialmente aos 18 meses, adotada pelo Ministério da Saúde na Caderneta da Criança desde 2022. Uma questão real do PSU-MG 2023 usou justamente a lógica inversa: ansiedade de separação intensa NÃO é sinal sugestivo de TEA (é o oposto do esperado). No TDAH, os sintomas devem se manifestar antes dos 12 anos em pelo menos 2 ambientes distintos (casa e escola, por exemplo) — uma questão real do ENARE 2023 reforçou que a conduta inicial diante de suspeita de TDAH na Atenção Primária é avaliar os ambientes familiar e escolar da criança antes de encaminhar para especialista, evitando rotular precocemente uma causa ambiental como TDAH."
   },
   {
     "id": "medicina-familia-comunidade",
