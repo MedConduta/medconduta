@@ -1,20 +1,36 @@
 import { icon } from "./icons.js";
 
+// Fase 11 — a navegação cresceu bastante (11 itens numa lista só, fases 3-10)
+// e virou difícil de escanear. Reorganizada por intenção — "onde estou
+// indo" em vez de "quando o recurso foi criado" — com "Minha Preparação"
+// como porta de entrada, já que é a nova tela inicial (ver
+// minhaPreparacao.js e o fallback padrão em router.js).
 export const NAV_ITEMS = [
   {
-    section: "Residência (estudo)",
+    section: "Minha Preparação",
     items: [
-      { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
-      { path: "/residencia/assistente", label: "Assistente IA", icon: "sparkles" },
-      { path: "/residencia/revisao", label: "Revisão espaçada", icon: "brain" },
-      { path: "/residencia/flashcards", label: "Flashcards", icon: "layers" },
-      { path: "/residencia/questoes", label: "Questões", icon: "checklist" },
-      { path: "/residencia/erros", label: "Meus Erros", icon: "alert-circle" },
-      { path: "/residencia/simulados", label: "Simulados", icon: "clock" },
+      { path: "/residencia/minha-preparacao", label: "Minha Preparação", icon: "home" },
       { path: "/residencia/planejador", label: "Hoje", icon: "calendar" },
       { path: "/residencia/cronograma", label: "Cronograma", icon: "clipboard" },
       { path: "/residencia/prontidao", label: "Prontidão", icon: "siren" },
       { path: "/residencia/foco", label: "Modo Foco", icon: "target" },
+    ],
+  },
+  {
+    section: "Estudar",
+    items: [
+      { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
+      { path: "/residencia/assistente", label: "Assistente IA", icon: "sparkles" },
+      { path: "/residencia/flashcards", label: "Flashcards", icon: "layers" },
+      { path: "/residencia/revisao", label: "Revisão espaçada", icon: "brain" },
+    ],
+  },
+  {
+    section: "Praticar",
+    items: [
+      { path: "/residencia/questoes", label: "Questões", icon: "checklist" },
+      { path: "/residencia/erros", label: "Meus Erros", icon: "alert-circle" },
+      { path: "/residencia/simulados", label: "Simulados", icon: "clock" },
     ],
   },
   {
@@ -27,8 +43,8 @@ export const NAV_ITEMS = [
 ];
 
 export const BOTTOM_NAV_ITEMS = [
+  { path: "/residencia/minha-preparacao", label: "Início", icon: "home" },
   { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
-  { path: "/residencia/revisao", label: "Revisão", icon: "brain" },
   { path: "/residencia/planejador", label: "Hoje", icon: "calendar" },
   { path: "/pratica/prescricao", label: "Prescrição", icon: "pill" },
 ];

@@ -16,6 +16,7 @@ import * as erros from "./views/erros.js";
 import * as prontidao from "./views/prontidao.js";
 import * as foco from "./views/foco.js";
 import * as simulados from "./views/simulados.js";
+import * as minhaPreparacao from "./views/minhaPreparacao.js";
 import * as prescricaoPratica from "./views/prescricaoPratica.js";
 
 const mainEl = document.getElementById("main-content");
@@ -29,6 +30,7 @@ function paintNav(path) {
 }
 
 // ---------- Rotas ----------
+registerRoute("/residencia/minha-preparacao", minhaPreparacao.renderMinhaPreparacao, { title: "Minha Preparação" });
 registerRoute("/residencia/conteudo", conteudo.renderLista, { title: "Conteúdo" });
 registerRoute("/residencia/conteudo/:id", conteudo.renderDetalhe, { title: "Conteúdo" });
 registerRoute("/residencia/assistente", assistente.renderAssistente, { title: "Assistente IA" });
@@ -82,7 +84,7 @@ logoutBtn.addEventListener("click", async () => {
 
 // ---------- Boot ----------
 function iniciarApp() {
-  paintNav("/residencia/conteudo");
+  paintNav("/residencia/minha-preparacao");
   initRouter(mainEl);
   initTheme([document.getElementById("theme-toggle"), document.getElementById("topbar-theme-btn")]);
 
