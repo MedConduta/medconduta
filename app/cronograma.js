@@ -22,6 +22,11 @@ export const PROVAS_ALVO = ["SES-PE", "ENAMED"];
 // cobre os dias restantes é a fase vigente. `pesoConteudo`/`pesoQuestoes`
 // somam 1 e definem como o orçamento de tempo (após as revisões vencidas,
 // que têm prioridade sempre) se divide entre conteúdo novo e questões.
+// `completudeEsperadaMin` é o mínimo de conteúdo (% de temas concluídos) que
+// seria razoável já ter visto ao ENTRAR em cada fase — não é uma meta rígida,
+// é o checkpoint usado pelo Modo Recuperação (ver modo.js, Fase 7) pra
+// detectar atraso sem precisar saber quando o usuário começou a estudar
+// (a fase já é definida só pelos dias restantes até a prova).
 export const FASES = [
   {
     id: "reta-final",
@@ -29,6 +34,7 @@ export const FASES = [
     ateDias: 30,
     pesoConteudo: 0.05,
     pesoQuestoes: 0.95,
+    completudeEsperadaMin: 0.85,
     descricao: "Foco quase exclusivo em questões, revisão de erros e pontos de maior prioridade. Praticamente sem conteúdo novo.",
   },
   {
@@ -37,6 +43,7 @@ export const FASES = [
     ateDias: 90,
     pesoConteudo: 0.2,
     pesoQuestoes: 0.8,
+    completudeEsperadaMin: 0.65,
     descricao: "Questões ganham peso forte. Conteúdo novo só nos assuntos de maior prioridade (alta incidência + baixo domínio).",
   },
   {
@@ -45,6 +52,7 @@ export const FASES = [
     ateDias: 180,
     pesoConteudo: 0.4,
     pesoQuestoes: 0.6,
+    completudeEsperadaMin: 0.35,
     descricao: "Equilíbrio entre fechar o conteúdo restante e já praticar bastante em questões.",
   },
   {
@@ -53,6 +61,7 @@ export const FASES = [
     ateDias: Infinity,
     pesoConteudo: 0.7,
     pesoQuestoes: 0.3,
+    completudeEsperadaMin: 0,
     descricao: "Prioridade em avançar no conteúdo, construindo a base antes de intensificar questões.",
   },
 ];
