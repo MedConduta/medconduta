@@ -58,6 +58,7 @@ export async function renderPlanejador(container) {
     }
 
     resultadoEl.innerHTML = `
+      ${renderFaixaFase(plano.fase, plano.diasRestantes)}
       <div class="stat-row">
         <div class="stat-tile"><div class="stat-tile__value">${plano.totalRevisoesVencidas}</div><div class="stat-tile__label">Revisões vencidas</div></div>
         <div class="stat-tile"><div class="stat-tile__value">${plano.totalTemasPendentes}</div><div class="stat-tile__label">Temas pendentes</div></div>
@@ -89,6 +90,28 @@ export async function renderPlanejador(container) {
 
   container.querySelector("#btn-gerar").addEventListener("click", gerar);
   gerar();
+}
+
+function renderFaixaFase(fase, diasRestantes) {
+  if (!fase.id) {
+    return `
+      <div class="card" style="margin-bottom:24px;">
+        <div class="list-card__top">
+          <strong>Fase da preparação não definida</strong>
+        </div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">Configure a data da sua prova no <a href="#/residencia/cronograma">Cronograma</a> para a agenda de hoje se ajustar automaticamente conforme a proximidade da prova.</p>
+      </div>
+    `;
+  }
+  return `
+    <div class="card" style="margin-bottom:24px;">
+      <div class="list-card__top">
+        <span class="badge badge--accent">${escapeHtml(fase.nome)}</span>
+        <span style="color:var(--color-text-secondary);font-size:var(--fs-sm);">${diasRestantes >= 0 ? `${diasRestantes} dias até a prova` : "prova já passou"}</span>
+      </div>
+      <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">${escapeHtml(fase.descricao)} <a href="#/residencia/cronograma">Ver cronograma</a></p>
+    </div>
+  `;
 }
 
 function renderGargalos(gargalos) {

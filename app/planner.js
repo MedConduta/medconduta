@@ -2,6 +2,7 @@ import { fetchJsonCached } from "./utils.js";
 import { getAll } from "./db.js";
 import { estaVencido } from "./sm2.js";
 import { pesoProva } from "./areas.js";
+import { getFaseAtual } from "./cronograma.js";
 
 const MIN_POR_REVISAO_VENCIDA = 8; // flashcard/revisão pontual
 const MIN_POR_TEMA_NOVO = 25; // leitura de um tema completo
@@ -49,25 +50,30 @@ export function calcularScorePrioridade(categoria, desempenhoPorCategoria) {
 
 /**
  * Monta a fila de estudo do dia priorizando:
- * 1) Revisões espaçadas vencidas (flashcards) — sempre primeiro, nunca some.
+ * 1) Revisões espaçadas vencidas (flashcards) — sempre primeiro, nunca some,
+ *    independente da fase da preparação (ver Fase 4/cronograma.js).
  * 2) Temas novos/pendentes, ordenados pelo score de prioridade da categoria
  *    (incidência × fragilidade), não pela ordem em que aparecem no arquivo.
  * 3) Bloco de questões, direcionado para a categoria de maior prioridade que
  *    ainda tem questões cadastradas.
- * dimensionando a carga ao tempo disponível informado pelo usuário (em horas).
+ * O tempo que sobra após as revisões (2+3) é dividido entre conteúdo novo e
+ * questões segundo o peso da fase atual da preparação: perto da prova,
+ * quase tudo vira questões; longe da prova, o conteúdo novo pesa mais. Sem
+ * data de prova configurada, usa um peso padrão razoável (ver cronograma.js).
  */
 export async function gerarPlanoDoDia(horasDisponiveis) {
   const minutosDisponiveis = Math.max(0, Math.round(horasDisponiveis * 60));
   let minutosRestantes = minutosDisponiveis;
   const fila = [];
 
-  const [temas, flashcardsDecks, questoes, srsRecords, progresso, respostas] = await Promise.all([
+  const [temas, flashcardsDecks, questoes, srsRecords, progresso, respostas, { fase, diasRestantes }] = await Promise.all([
     fetchJsonCached("data/temas.json"),
     fetchJsonCached("data/flashcards.json"),
     fetchJsonCached("data/questoes.json"),
     getAll("srs"),
     getAll("progresso"),
     getAll("respostas"),
+    getFaseAtual(),
   ]);
 
   const srsMap = new Map(srsRecords.map((r) => [r.id, r]));
@@ -100,13 +106,21 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     minutosRestantes -= MIN_POR_REVISAO_VENCIDA;
   }
 
-  // 2) Temas novos/pendentes — ordenados por prioridade (incidência × fragilidade)
+  // 2) e 3) — o tempo que sobra após revisões se divide entre conteúdo novo
+  // e questões segundo o peso da fase atual (ver cronograma.js). Se o
+  // conteúdo novo acabar antes de gastar sua fatia (ou a fatia for pequena
+  // demais para um tema inteiro), o restante rola para o bloco de questões
+  // em vez de ficar ocioso.
+  const orcamentoPosRevisao = minutosRestantes;
+  let orcamentoConteudo = Math.round(orcamentoPosRevisao * fase.pesoConteudo);
+  let orcamentoQuestoes = orcamentoPosRevisao - orcamentoConteudo;
+
   const temasPendentes = temas
     .filter((t) => !progressoSet.has(t.id))
     .sort((a, b) => (scorePorCategoria.get(b.categoria) ?? 0) - (scorePorCategoria.get(a.categoria) ?? 0));
 
   for (const tema of temasPendentes) {
-    if (minutosRestantes < MIN_POR_TEMA_NOVO / 2) break;
+    if (orcamentoConteudo < MIN_POR_TEMA_NOVO / 2) break;
     fila.push({
       tipo: "conteudo",
       titulo: `Estudar: ${tema.titulo}`,
@@ -114,10 +128,12 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
       duracaoMin: MIN_POR_TEMA_NOVO,
       link: `#/residencia/conteudo/${tema.id}`,
     });
+    orcamentoConteudo -= MIN_POR_TEMA_NOVO;
     minutosRestantes -= MIN_POR_TEMA_NOVO;
   }
+  if (orcamentoConteudo > 0) orcamentoQuestoes += orcamentoConteudo; // fatia de conteúdo não usada vira questões
 
-  // 3) Bloco de questões — direcionado à categoria de maior prioridade que
+  // Bloco de questões — direcionado à categoria de maior prioridade que
   // ainda tenha questões cadastradas (evita recomendar uma categoria vazia).
   const temaIdParaCategoria = new Map(temas.map((t) => [t.id, t.categoria]));
   const categoriasComQuestao = new Set(
@@ -126,7 +142,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   const categoriaFoco = rankingCategorias.find((r) => categoriasComQuestao.has(r.categoria))?.categoria ?? null;
 
   let blocosQuestoes = 0;
-  while (minutosRestantes >= MIN_POR_QUESTOES_BLOCO && blocosQuestoes < 3) {
+  while (orcamentoQuestoes >= MIN_POR_QUESTOES_BLOCO && minutosRestantes >= MIN_POR_QUESTOES_BLOCO && blocosQuestoes < 24) {
     fila.push({
       tipo: "questoes",
       titulo: "Bloco de questões de reforço",
@@ -136,6 +152,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
       duracaoMin: MIN_POR_QUESTOES_BLOCO,
       link: "#/residencia/questoes",
     });
+    orcamentoQuestoes -= MIN_POR_QUESTOES_BLOCO;
     minutosRestantes -= MIN_POR_QUESTOES_BLOCO;
     blocosQuestoes += 1;
   }
@@ -148,6 +165,8 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     minutosOciosos: minutosRestantes,
     totalRevisoesVencidas: vencidos.length,
     totalTemasPendentes: temasPendentes.length,
+    fase,
+    diasRestantes,
     // Top 3 categorias de maior prioridade agora, com o "porquê" (peso na
     // prova × desempenho atual) — não é um dashboard completo (isso é uma
     // fase futura), só o suficiente para responder "por que isso primeiro?".
