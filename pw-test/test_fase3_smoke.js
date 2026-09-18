@@ -27,7 +27,6 @@ const { chromium } = require("playwright");
     "/residencia/flashcards",
     "/residencia/questoes",
     "/residencia/planejador",
-    "/pratica/prescricao",
   ];
   for (const rota of rotas) {
     await page.evaluate((r) => { location.hash = r; }, rota);

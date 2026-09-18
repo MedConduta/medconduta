@@ -23,7 +23,6 @@ export const NAV_ITEMS = [
     section: "Estudar",
     items: [
       { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
-      { path: "/residencia/assistente", label: "Assistente IA", icon: "sparkles" },
       { path: "/residencia/flashcards", label: "Flashcards", icon: "layers" },
       { path: "/residencia/revisao", label: "Revisão espaçada", icon: "brain" },
     ],
@@ -37,25 +36,17 @@ export const NAV_ITEMS = [
       { path: "/residencia/simulados", label: "Simulados", icon: "clock" },
     ],
   },
-  {
-    section: "Guia de Prescrição (prática)",
-    items: [
-      { path: "/pratica/prescricao", label: "Por doença", icon: "pill" },
-      { path: "/pratica/prescricao/az", label: "Medicamentos A-Z", icon: "search" },
-    ],
-  },
 ];
 
 export const BOTTOM_NAV_ITEMS = [
   { path: "/residencia/minha-preparacao", label: "Início", icon: "home" },
   { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
   { path: "/residencia/planejador", label: "Hoje", icon: "calendar" },
-  { path: "/pratica/prescricao", label: "Prescrição", icon: "pill" },
+  { path: "/residencia/questoes", label: "Questões", icon: "checklist" },
 ];
 
-// Entre itens cujo caminho é prefixo de outro (ex.: "/pratica/prescricao" e
-// "/pratica/prescricao/az"), só o prefixo mais específico (mais longo) que
-// combina com a rota atual fica marcado como ativo.
+// Entre itens cujo caminho é prefixo de outro, só o prefixo mais específico
+// (mais longo) que combina com a rota atual fica marcado como ativo.
 function bestMatch(paths, currentPath) {
   let best = null;
   for (const path of paths) {
