@@ -79,7 +79,6 @@ function dataDaquiA(dias) {
     "/residencia/planejador",
     "/residencia/cronograma",
     "/residencia/erros",
-    "/pratica/prescricao",
   ];
   for (const rota of rotas) {
     await page.evaluate((r) => { location.hash = r; }, rota);

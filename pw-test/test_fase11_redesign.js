@@ -33,10 +33,10 @@ const { chromium } = require("playwright");
   console.log("Mostra atalhos (Cronograma, Prontidão, Simulados, Meus Erros, Modo Foco):",
     ["Cronograma", "Prontidão", "Simulados", "Meus Erros", "Modo Foco"].every((t) => texto.includes(t)));
 
-  // --- 2) Navegação reorganizada: 4 seções na sidebar
+  // --- 2) Navegação reorganizada: 3 seções na sidebar
   const secoes = await page.$$eval(".nav-section__title", (els) => els.map((e) => e.textContent.trim()));
-  console.log("Sidebar tem as 4 seções esperadas:", JSON.stringify(secoes));
-  console.log("Ordem/nomes corretos:", secoes.join("|") === "Minha Preparação|Estudar|Praticar|Guia de Prescrição (prática)");
+  console.log("Sidebar tem as 3 seções esperadas:", JSON.stringify(secoes));
+  console.log("Ordem/nomes corretos:", secoes.join("|") === "Minha Preparação|Estudar|Praticar");
 
   // --- 3) Bottom nav tem "Início" apontando pra Minha Preparação
   const bottomLabels = await page.$$eval(".bottom-nav__link span:last-child", (els) => els.map((e) => e.textContent.trim()));
@@ -68,7 +68,6 @@ const { chromium } = require("playwright");
     "/residencia/cronograma",
     "/residencia/prontidao",
     "/residencia/foco",
-    "/pratica/prescricao",
   ];
   for (const rota of rotas) {
     await page.evaluate((r) => { location.hash = r; }, rota);

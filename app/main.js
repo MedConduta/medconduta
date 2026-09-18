@@ -21,7 +21,6 @@ import * as analiseDesempenho from "./views/analiseDesempenho.js";
 import * as relatorioSemanal from "./views/relatorioSemanal.js";
 import * as planejamentoSemanal from "./views/planejamentoSemanal.js";
 import * as revisaoAltoRendimento from "./views/revisaoAltoRendimento.js";
-import * as prescricaoPratica from "./views/prescricaoPratica.js";
 
 const mainEl = document.getElementById("main-content");
 const sidebarNavEl = document.getElementById("sidebar-nav");
@@ -53,10 +52,6 @@ registerRoute("/residencia/relatorio-semanal", relatorioSemanal.renderRelatorioS
 registerRoute("/residencia/planejamento-semanal", planejamentoSemanal.renderPlanejamentoSemanal, { title: "Planejamento Semanal" });
 registerRoute("/residencia/foco", foco.renderFoco, { title: "Modo Foco" });
 registerRoute("/residencia/simulados", simulados.renderSimulados, { title: "Simulados" });
-
-registerRoute("/pratica/prescricao", prescricaoPratica.renderLista, { title: "Guia de Prescrição" });
-registerRoute("/pratica/prescricao/az", prescricaoPratica.renderIndiceMedicamentos, { title: "Medicamentos A-Z" });
-registerRoute("/pratica/prescricao/:id", prescricaoPratica.renderDetalhe, { title: "Guia de Prescrição" });
 
 // ---------- Navegação / sidebar / mobile ----------
 setNavigateCallback((path, meta) => {

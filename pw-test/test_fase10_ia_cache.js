@@ -94,7 +94,6 @@ const { chromium } = require("playwright");
     "/residencia/cronograma",
     "/residencia/prontidao",
     "/residencia/foco",
-    "/pratica/prescricao",
   ];
   for (const rota of rotas) {
     await page.evaluate((r) => { location.hash = r; }, rota);
