@@ -18,6 +18,8 @@ import * as foco from "./views/foco.js";
 import * as simulados from "./views/simulados.js";
 import * as minhaPreparacao from "./views/minhaPreparacao.js";
 import * as analiseDesempenho from "./views/analiseDesempenho.js";
+import * as relatorioSemanal from "./views/relatorioSemanal.js";
+import * as planejamentoSemanal from "./views/planejamentoSemanal.js";
 import * as prescricaoPratica from "./views/prescricaoPratica.js";
 
 const mainEl = document.getElementById("main-content");
@@ -44,6 +46,8 @@ registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "H
 registerRoute("/residencia/cronograma", cronograma.renderCronograma, { title: "Cronograma" });
 registerRoute("/residencia/prontidao", prontidao.renderProntidao, { title: "Prontidão" });
 registerRoute("/residencia/desempenho", analiseDesempenho.renderAnaliseDesempenho, { title: "Desempenho" });
+registerRoute("/residencia/relatorio-semanal", relatorioSemanal.renderRelatorioSemanal, { title: "Relatório Semanal" });
+registerRoute("/residencia/planejamento-semanal", planejamentoSemanal.renderPlanejamentoSemanal, { title: "Planejamento Semanal" });
 registerRoute("/residencia/foco", foco.renderFoco, { title: "Modo Foco" });
 registerRoute("/residencia/simulados", simulados.renderSimulados, { title: "Simulados" });
 

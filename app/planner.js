@@ -7,8 +7,11 @@ import { getQuestoesEmRevisao } from "./erros.js";
 
 const MIN_POR_REVISAO_VENCIDA = 8; // flashcard/revisão pontual
 const MIN_POR_REVISAO_ERRO = 6; // reler + resolver de novo uma questão já errada
-const MIN_POR_TEMA_NOVO = 25; // leitura de um tema completo
-const MIN_POR_QUESTOES_BLOCO = 15; // bloco de ~5 questões
+// Exportadas porque o Planejamento Semanal (Fase 15) reaproveita a mesma
+// duração-padrão por item pra converter a meta de tempo da semana em nº de
+// temas/blocos de questões — sem duplicar o número em outro arquivo.
+export const MIN_POR_TEMA_NOVO = 25; // leitura de um tema completo
+export const MIN_POR_QUESTOES_BLOCO = 15; // bloco de ~5 questões
 
 // Teto de tempo pro conjunto de revisões vencidas (flashcards + erros) sobre
 // o orçamento do DIA (não o que sobra depois delas) — sem isso, um backlog
