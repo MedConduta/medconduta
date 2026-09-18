@@ -73965,5 +73965,527 @@
     "ano": "2020 (R3 Cirurgia)",
     "revisado": true,
     "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4069",
+    "temaId": "vigilancia-epidemiologica",
+    "tema": "Vigilância Epidemiológica e Notificação Compulsória",
+    "enunciado": "A vigilância sanitária de um município recebe denúncia de múltiplos casos de onicomicose em clientes de um mesmo salão de manicure, por suspeita de falha na esterilização de instrumentos. A fiscalização e eventual interdição do estabelecimento é atribuição de qual tipo de vigilância em saúde?",
+    "alternativas": [
+      "Vigilância Epidemiológica",
+      "Vigilância Sanitária",
+      "Vigilância Ambiental",
+      "Vigilância em Saúde do Trabalhador"
+    ],
+    "correta": 1,
+    "comentario": "Fiscalização de estabelecimentos que prestam serviços à população (salões, restaurantes, fábricas), com poder de autuação e interdição, é atribuição da Vigilância Sanitária — um dos padrões de questão mais recorrentes do tema, segundo o próprio material do curso.",
+    "banca": "UNICAMP",
+    "ano": "2023",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4070",
+    "temaId": "vigilancia-epidemiologica",
+    "tema": "Vigilância Epidemiológica e Notificação Compulsória",
+    "enunciado": "Em relação aos conceitos de vigilância epidemiológica, associe corretamente cada termo à sua definição: (1) presença constante de uma doença numa área, em nível esperado; (2) aumento do número de casos acima do esperado numa área; (3) epidemia com distribuição em vários países/continentes; (4) ocorrência de número incomum de casos numa área restrita e curto período; (5) casos novos de uma doença num período determinado; (6) total de casos existentes num momento. Assinale a sequência que associa corretamente cada definição ao termo (Endemia, Epidemia, Pandemia, Surto, Incidência, Prevalência), na ordem de 1 a 6.",
+    "alternativas": [
+      "Endemia, Epidemia, Pandemia, Surto, Incidência, Prevalência",
+      "Endemia, Epidemia, Pandemia, Surto, Prevalência, Incidência",
+      "Epidemia, Endemia, Pandemia, Surto, Incidência, Prevalência",
+      "Endemia, Surto, Pandemia, Epidemia, Incidência, Prevalência"
+    ],
+    "correta": 0,
+    "comentario": "Endemia é a presença constante e esperada de uma doença numa área; epidemia é o aumento acima do esperado; pandemia é a epidemia com distribuição em múltiplos países/continentes; surto é um número incomum de casos numa área restrita/curto período; incidência são os casos NOVOS num período; prevalência é o total de casos (novos+antigos) num momento.",
+    "banca": "ENARE",
+    "ano": "2023",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4071",
+    "temaId": "estudos-epidemiologicos",
+    "tema": "Desenho de Estudos Epidemiológicos e Medidas de Associação",
+    "enunciado": "Em uma coorte prospectiva com 160 idosos, 70 apresentavam depressão maior no início do estudo e 90 não apresentavam. Ao final do seguimento, ocorreram 46 óbitos no total, sendo 28 entre os idosos com depressão e 18 entre os sem depressão. Qual é o Risco Relativo (RR) de óbito associado à depressão maior nessa coorte?",
+    "alternativas": [
+      "RR = 1,00 (sem associação)",
+      "RR = 1,55",
+      "RR = 2,00",
+      "RR = 2,50"
+    ],
+    "correta": 2,
+    "comentario": "Risco no grupo exposto (com depressão) = 28/70 = 0,40 (40%). Risco no grupo não exposto (sem depressão) = 18/90 = 0,20 (20%). RR = risco exposto / risco não exposto = 0,40/0,20 = 2,00 — idosos com depressão maior tiveram o dobro do risco de óbito no seguimento.",
+    "banca": "FELUMA",
+    "ano": "2023",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4072",
+    "temaId": "estudos-epidemiologicos",
+    "tema": "Desenho de Estudos Epidemiológicos e Medidas de Associação",
+    "enunciado": "Em um estudo caso-controle com 15 casos e 15 controles, 10 dos casos tinham a exposição de interesse, enquanto apenas 1/3 dos controles (5 indivíduos) eram expostos. Qual é a Odds Ratio (OR) estimada para a associação entre a exposição e o desfecho?",
+    "alternativas": [
+      "OR = 1",
+      "OR = 2",
+      "OR = 4",
+      "OR = 10"
+    ],
+    "correta": 2,
+    "comentario": "Tabela 2x2: expostos entre casos (a) = 10; não expostos entre casos (b) = 5; expostos entre controles (c) = 5; não expostos entre controles (d) = 10. OR = (a×d)/(b×c) = (10×10)/(5×5) = 100/25 = 4. Em um estudo caso-controle, a Odds Ratio é a medida de associação de escolha, já que o Risco Relativo não pode ser calculado diretamente nesse desenho.",
+    "banca": "ABC-SP",
+    "ano": "2022",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4073",
+    "temaId": "testes-diagnosticos-acuracia",
+    "tema": "Testes Diagnósticos: Sensibilidade, Especificidade e Valores Preditivos",
+    "enunciado": "Um novo teste para rastreio de câncer de próstata (PSA) apresenta sensibilidade de 72% e especificidade de 46% numa população com prevalência da doença de 10%. Utilizando o Teorema de Bayes, qual é o Valor Preditivo Positivo (VPP) aproximado desse teste nessa população?",
+    "alternativas": [
+      "72%",
+      "46%",
+      "13%",
+      "54%"
+    ],
+    "correta": 2,
+    "comentario": "VPP = (Sensibilidade × Prevalência) / [(Sensibilidade × Prevalência) + ((1-Especificidade) × (1-Prevalência))] = (0,72×0,10) / [(0,72×0,10) + (0,54×0,90)] = 0,072 / (0,072+0,486) = 0,072/0,558 ≈ 0,13 (13%). O exemplo é usado pelo curso como aplicação padrão do Teorema de Bayes: mesmo com sensibilidade razoável, uma baixa prevalência e uma especificidade baixa derrubam o VPP.",
+    "banca": "FARMEP-SP",
+    "ano": "2024",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4074",
+    "temaId": "testes-diagnosticos-acuracia",
+    "tema": "Testes Diagnósticos: Sensibilidade, Especificidade e Valores Preditivos",
+    "enunciado": "Considere as afirmativas sobre validação de testes diagnósticos: I) A sensibilidade mede a proporção de doentes corretamente identificados pelo teste. II) A especificidade é calculada entre os indivíduos SEM a doença, e não entre os que tiveram resultado positivo. III) O Valor Preditivo Positivo é uma propriedade intrínseca do teste, independente da prevalência da doença na população testada. IV) A prevalência da doença altera o Valor Preditivo Positivo e o Valor Preditivo Negativo, mas não a sensibilidade nem a especificidade. Estão corretas:",
+    "alternativas": [
+      "Apenas I e III",
+      "Apenas I, II e III",
+      "Apenas III e IV",
+      "Apenas II e IV"
+    ],
+    "correta": 3,
+    "comentario": "A afirmativa I está incorreta na formulação clássica cobrada pela banca (a pegadinha central do tema): confundir sensibilidade com VPP. A afirmativa III está incorreta — VPP e VPN dependem diretamente da prevalência, diferente de sensibilidade e especificidade, que são propriedades intrínsecas do teste. Corretas são apenas II e IV.",
+    "banca": "SMS-JP",
+    "ano": "2024",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4075",
+    "temaId": "aps-esf",
+    "tema": "Atenção Primária à Saúde e Estratégia Saúde da Família (ESF)",
+    "enunciado": "Durante uma consulta na Atenção Primária, um médico percebe que o paciente, pouco escolarizado, não compreende termos técnicos sobre sua condição de saúde. O médico então adapta sua explicação para uma linguagem mais simples e acessível, usando exemplos do cotidiano do paciente. Essa conduta ilustra diretamente qual atributo da Atenção Primária à Saúde?",
+    "alternativas": [
+      "Coordenação do cuidado",
+      "Integralidade",
+      "Orientação comunitária",
+      "Competência Cultural"
+    ],
+    "correta": 3,
+    "comentario": "Competência Cultural é o atributo da APS relacionado à capacidade de adaptar a comunicação e a abordagem clínica ao contexto sociocultural e ao nível de compreensão do paciente, reconhecendo suas particularidades culturais e de linguagem.",
+    "banca": "SURCE",
+    "ano": "2024",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4076",
+    "temaId": "aps-esf",
+    "tema": "Atenção Primária à Saúde e Estratégia Saúde da Família (ESF)",
+    "enunciado": "Uma equipe de Saúde da Família identifica uma paciente com deficiência física, quadro depressivo e múltiplas vulnerabilidades sociais, cuja mãe também apresenta demência inicial. A conduta mais adequada da equipe de Atenção Primária é:",
+    "alternativas": [
+      "Encaminhar imediatamente a paciente a um especialista em saúde mental, sem discussão prévia com a equipe",
+      "Reunir a equipe multiprofissional (ACS, psicologia, nutrição, fisioterapia), buscar redes de apoio e construir um Projeto Terapêutico Singular",
+      "Solicitar internação psiquiátrica compulsória, dada a gravidade das comorbidades",
+      "Aguardar que a própria família busque ativamente os serviços especializados necessários"
+    ],
+    "correta": 1,
+    "comentario": "Diante de casos complexos com múltiplas vulnerabilidades biopsicossociais, a conduta esperada na Atenção Primária é o manejo interdisciplinar: reunião de equipe multiprofissional, busca de redes de apoio com os Agentes Comunitários de Saúde e construção de um Projeto Terapêutico Singular (PTS), em vez de encaminhamento isolado a um especialista.",
+    "banca": "ENARE",
+    "ano": "2024",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4077",
+    "temaId": "medicina-familia-comunidade",
+    "tema": "Medicina de Família e Comunidade: Abordagem Centrada na Pessoa",
+    "enunciado": "Uma Unidade Básica de Saúde passa por reforma estrutural, incluindo cores mais suaves nas paredes, biombos para preservar a privacidade dos atendimentos e reorganização da recepção para acolhimento mais humanizado dos pacientes. Essa intervenção ilustra qual dispositivo da Política Nacional de Humanização (PNH)?",
+    "alternativas": [
+      "Ambiência",
+      "Clínica Ampliada",
+      "Acolhimento com classificação de risco",
+      "Cogestão"
+    ],
+    "correta": 0,
+    "comentario": "Ambiência é o dispositivo da PNH voltado à criação de espaços de saúde acolhedores, confortáveis e que respeitem a privacidade do usuário — mudanças físicas e organizacionais do ambiente de cuidado, como cores, biombos e fluxo de recepção.",
+    "banca": "PUC-PR",
+    "ano": "2023",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4078",
+    "temaId": "medicina-familia-comunidade",
+    "tema": "Medicina de Família e Comunidade: Abordagem Centrada na Pessoa",
+    "enunciado": "Durante uma consulta de Medicina de Família e Comunidade, o médico residente constrói o genograma da paciente Vanessa, registrando composição familiar, tipos de vínculo e eventos relevantes ao longo de três gerações. Ao revisar o instrumento, qual das informações a seguir NÃO deveria constar em um genograma clássico?",
+    "alternativas": [
+      "Estrutura familiar e relações de parentesco entre os membros",
+      "Tipo de vínculo entre os membros da família (próximo, conflituoso, rompido)",
+      "Histórico familiar de AVCs e outros diagnósticos médicos de parentes",
+      "Composição do domicílio e presença de gerações coabitando"
+    ],
+    "correta": 2,
+    "comentario": "O genograma é um instrumento que registra relações e estrutura familiar (parentesco, tipo de vínculo, composição do domicílio), e não diagnósticos médicos de terceiros — informações de doença familiar, como histórico de AVC, não fazem parte do instrumento clássico.",
+    "banca": "SURCE",
+    "ano": "2022",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4079",
+    "temaId": "medicina-legal-fundamentos",
+    "tema": "Medicina Legal: Traumatologia Forense, Tanatologia e Sexologia Forense",
+    "enunciado": "Paciente idoso sofre queda domiciliar com fratura de fêmur, é operado e evolui com infecção hospitalar, vindo a óbito por choque séptico durante a internação. Em relação ao preenchimento da Declaração de Óbito (DO) nesse caso, é correto afirmar que:",
+    "alternativas": [
+      "A DO só pode ser preenchida pelo ortopedista que realizou a cirurgia",
+      "A causa básica do óbito, na Parte I da DO, deve ser a fratura de fêmur, e não o choque séptico",
+      "A causa imediata do óbito deve constar como fratura de fêmur, já que foi o evento inicial",
+      "A DO não pode ser preenchida em caso de infecção hospitalar, exigindo obrigatoriamente perícia médico-legal"
+    ],
+    "correta": 1,
+    "comentario": "Na Declaração de Óbito, a causa básica é a doença ou lesão que iniciou toda a cadeia de eventos que culminou na morte — nesse caso, a fratura de fêmur. A causa imediata é o evento mais próximo do óbito (o choque séptico). A DO pode ser preenchida pelo médico assistente da internação, não exclusivamente pelo ortopedista.",
+    "banca": "SCM-BH",
+    "ano": "2022",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4080",
+    "temaId": "medicina-legal-fundamentos",
+    "tema": "Medicina Legal: Traumatologia Forense, Tanatologia e Sexologia Forense",
+    "enunciado": "Homem de 63 anos, diabético compensado, em isolamento domiciliar por COVID-19, vem a óbito por ferimento perfuro-contuso cranioencefálico causado por projétil de arma de fogo (\"bala perdida\"). Em relação ao preenchimento da Declaração de Óbito, é correto afirmar que:",
+    "alternativas": [
+      "Na Parte I, deve constar o ferimento perfuro-contuso cranioencefálico por projétil de arma de fogo como causa; COVID-19 e diabetes devem constar na Parte II como condições contribuintes, não como causa da morte",
+      "COVID-19 deve ser registrada como causa básica do óbito, já que o paciente estava em isolamento por essa infecção",
+      "A DO pode ser fornecida pelo médico assistente, já que o paciente já era acompanhado por comorbidades prévias",
+      "Diabetes mellitus compensada deve ser registrada como causa imediata do óbito"
+    ],
+    "correta": 0,
+    "comentario": "A morte por causa externa (projétil de arma de fogo) deve ter na Parte I da DO a sequência de eventos que levou à morte (ferimento perfuro-contuso cranioencefálico por projétil de arma de fogo), enquanto COVID-19 e diabetes mellitus compensada entram na Parte II como condições contribuintes, sem serem apontadas como causa da morte. Por se tratar de morte violenta/suspeita, a DO deve ser fornecida pelo médico legista, não pelo assistente.",
+    "banca": "UNESP",
+    "ano": "2022",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4081",
+    "temaId": "saude-trabalhador-doencas-ocupacionais",
+    "tema": "Saúde do Trabalhador: Doenças Ocupacionais, CAT e NTEP",
+    "enunciado": "Trabalhador exposto ocupacionalmente a mercúrio, tolueno e manganês desenvolve transtornos mentais relacionados à exposição a esses agentes. Em relação à notificação e à saúde ocupacional prevista pela Lei nº 8.080/1990, é correto afirmar que: I) Transtornos mentais relacionados ao trabalho são passíveis de notificação compulsória, quando associados a exposição ocupacional identificada. III) A Comunicação de Acidente de Trabalho (CAT) pode ser emitida pelo médico assistente, não sendo exclusividade do empregador. Estão corretas:",
+    "alternativas": [
+      "Apenas as afirmativas I e III",
+      "Apenas a afirmativa I",
+      "Apenas a afirmativa III",
+      "Nenhuma das afirmativas"
+    ],
+    "correta": 0,
+    "comentario": "Transtornos mentais relacionados ao trabalho constam entre os agravos de notificação compulsória à Vigilância Epidemiológica quando há exposição ocupacional identificada, e a CAT, embora obrigatória ao empregador, também pode ser emitida pelo médico assistente, pelo próprio acidentado, por dependentes, sindicato ou qualquer autoridade pública, caso o empregador não a emita.",
+    "banca": "SMS-JP",
+    "ano": "2022",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4082",
+    "temaId": "saude-trabalhador-doencas-ocupacionais",
+    "tema": "Saúde do Trabalhador: Doenças Ocupacionais, CAT e NTEP",
+    "enunciado": "Trabalhador da construção civil, exposto cronicamente à sílica, é diagnosticado com silicose. Segundo o Caderno de Atenção Básica nº 41 e a Classificação de Schilling, a conduta complementar mais adequada diante desse diagnóstico é:",
+    "alternativas": [
+      "Investigar tuberculose, pela forte associação entre exposição à sílica/silicose e maior risco de tuberculose",
+      "Descartar necessidade de investigação adicional, já que a silicose é autolimitada",
+      "Classificar a silicose como doença do Grupo III de Schilling (trabalho como agravante de doença latente)",
+      "Iniciar corticoterapia sistêmica de rotina, independentemente da gravidade do quadro"
+    ],
+    "correta": 0,
+    "comentario": "A silicose é classificada no Grupo I de Schilling (trabalho como causa necessária), e há forte associação entre exposição à sílica/silicose e maior risco de tuberculose — por isso, diante de um caso de silicose, a investigação de tuberculose associada é conduta complementar obrigatória, conforme orientado pelo Caderno de Atenção Básica nº 41 do Ministério da Saúde.",
+    "banca": "SMS-SP",
+    "ano": "2022",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4083",
+    "temaId": "transtorno-bipolar",
+    "tema": "Transtorno Afetivo Bipolar",
+    "enunciado": "Paciente em acompanhamento por transtorno bipolar, em uso de estabilizador de humor, apresenta alteração em exames tireoidianos de rotina (elevação de TSH). Qual medicamento é mais provavelmente responsável por esse achado?",
+    "alternativas": [
+      "Carbonato de lítio",
+      "Ácido valproico",
+      "Quetiapina",
+      "Lamotrigina"
+    ],
+    "correta": 0,
+    "comentario": "O lítio, estabilizador de humor de 1ª linha no transtorno bipolar, tem como efeito colateral endócrino clássico a disfunção tireoidiana (hipotireoidismo), além de hiperparatireoidismo e diabetes insípido nefrogênico a longo prazo — um dos pontos mais cobrados sobre a droga.",
+    "banca": "ENARE",
+    "ano": "2023",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4084",
+    "temaId": "transtorno-bipolar",
+    "tema": "Transtorno Afetivo Bipolar",
+    "enunciado": "Paciente sem diagnóstico psiquiátrico prévio apresenta, há 1 semana, irritabilidade proeminente, redução da necessidade de sono para cerca de 3 horas por noite e gastos financeiros incompatíveis com sua renda habitual. Não há história prévia de episódio depressivo. Qual é o diagnóstico mais provável?",
+    "alternativas": [
+      "Transtorno Afetivo Bipolar tipo I",
+      "Transtorno Afetivo Bipolar tipo II",
+      "Transtorno de Personalidade Borderline",
+      "Não é possível diagnosticar transtorno bipolar sem episódio depressivo prévio"
+    ],
+    "correta": 0,
+    "comentario": "Basta um único episódio maníaco típico (irritabilidade, insônia, gastos excessivos, prejuízo funcional) para fechar o diagnóstico de Transtorno Afetivo Bipolar tipo I — diferente do que muitos candidatos assumem, NÃO é necessário episódio depressivo prévio para esse diagnóstico.",
+    "banca": "SUS-BA",
+    "ano": "2021",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4085",
+    "temaId": "esquizofrenia-psicoses",
+    "tema": "Esquizofrenia e Transtornos Psicóticos",
+    "enunciado": "Jovem de 22 anos, com isolamento social progressivo há 8 meses, apresenta alucinações auditivas e ideação suicida. Refere uso regular de maconha no passado, mas interrompido há 2 meses. Qual é o diagnóstico mais provável?",
+    "alternativas": [
+      "Transtorno psicótico induzido por substância",
+      "Esquizofrenia paranoide",
+      "Transtorno de humor com sintomas psicóticos induzido por maconha",
+      "Intoxicação aguda por cannabis"
+    ],
+    "correta": 1,
+    "comentario": "Como o consumo de maconha foi interrompido há 2 meses — tempo suficiente para excluir intoxicação ou efeito residual direto da substância — e os sintomas psicóticos persistem e evoluem por 8 meses, o diagnóstico mais provável é esquizofrenia paranoide, não transtorno psicótico induzido por substância.",
+    "banca": "UNIFESPE",
+    "ano": "2022",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4086",
+    "temaId": "transtornos-uso-substancias",
+    "tema": "Transtornos por Uso de Substâncias: Intoxicação e Abstinência",
+    "enunciado": "Paciente em síndrome de abstinência alcoólica apresenta tremor de mãos, hiperatividade autonômica, ansiedade e insônia. Qual é a principal classe medicamentosa indicada no manejo farmacológico dessa síndrome?",
+    "alternativas": [
+      "Antipsicóticos típicos",
+      "Betabloqueadores",
+      "Benzodiazepínicos",
+      "Magnésio parenteral, isoladamente"
+    ],
+    "correta": 2,
+    "comentario": "Os benzodiazepínicos são a principal classe medicamentosa no tratamento da síndrome de abstinência alcoólica, reduzindo o risco de convulsões e progressão para delirium tremens — neurolépticos e betabloqueadores não são 1ª linha de rotina, e o magnésio não substitui o benzodiazepínico como tratamento central.",
+    "banca": "ABC-SP",
+    "ano": "2023",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4087",
+    "temaId": "transtornos-uso-substancias",
+    "tema": "Transtornos por Uso de Substâncias: Intoxicação e Abstinência",
+    "enunciado": "Paciente tabagista com depressão maior concomitante, escore de Fagerström igual a 8 (alta dependência à nicotina), deseja cessar o tabagismo. Qual é a combinação terapêutica mais adequada para esse caso?",
+    "alternativas": [
+      "Terapia de reposição de nicotina isolada",
+      "Vareniclina isolada",
+      "Adesivo de nicotina associado a antidepressivo tricíclico",
+      "Adesivo de nicotina associado a bupropiona"
+    ],
+    "correta": 3,
+    "comentario": "A combinação adesivo de nicotina + bupropiona é a mais adequada nesse caso: além de tratar a dependência de nicotina, a bupropiona também tem ação antidepressiva, tratando simultaneamente a depressão maior concomitante — dupla indicação que orienta a escolha terapêutica.",
+    "banca": "USP-RP",
+    "ano": "2022",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4088",
+    "temaId": "tdah-tea",
+    "tema": "TDAH e Transtorno do Espectro Autista",
+    "enunciado": "Durante consulta de puericultura de uma criança de 18 meses, qual dos achados a seguir NÃO deve ser considerado um sinal de alarme precoce para Transtorno do Espectro Autista?",
+    "alternativas": [
+      "Ausência de sorriso social",
+      "Não responder quando chamada pelo nome",
+      "Ansiedade de separação intensa e indiferença quando os pais se ausentam",
+      "Perda de habilidades de linguagem já adquiridas"
+    ],
+    "correta": 2,
+    "comentario": "Ansiedade de separação intensa é, na verdade, o OPOSTO do esperado em crianças com TEA, que tipicamente não demonstram a ansiedade de separação típica do desenvolvimento normal — não é um sinal precoce sugestivo de autismo, ao contrário dos demais achados listados.",
+    "banca": "PSU-MG",
+    "ano": "2023",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4089",
+    "temaId": "tdah-tea",
+    "tema": "TDAH e Transtorno do Espectro Autista",
+    "enunciado": "Menino de 8 anos é encaminhado à Atenção Primária por desatenção e dificuldade de aprendizado na escola. Qual deve ser a conduta INICIAL do médico de Atenção Primária diante desse caso?",
+    "alternativas": [
+      "Encaminhar diretamente ao psiquiatra infantil para avaliação especializada",
+      "Avaliar os ambientes familiar e escolar da criança antes de outras condutas",
+      "Solicitar exames de neuroimagem de rotina",
+      "Iniciar metilfenidato empiricamente e reavaliar em 30 dias"
+    ],
+    "correta": 1,
+    "comentario": "A conduta inicial recomendada na Atenção Primária diante de suspeita de TDAH é avaliar os ambientes familiar e escolar da criança, descartando causas ambientais/sociais para a desatenção, antes de encaminhar a especialista, pedir exames complementares ou rotular precocemente o quadro como TDAH.",
+    "banca": "ENARE",
+    "ano": "2023",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4090",
+    "temaId": "fraturas-luxacoes-comuns",
+    "tema": "Fraturas e Luxações Comuns",
+    "enunciado": "Paciente vítima de trauma apresenta fratura exposta de tíbia classificada como Gustilo-Anderson grau I (ferida limpa, menor que 1cm). Qual é a conduta inicial mais adequada?",
+    "alternativas": [
+      "Redução fechada ambulatorial, sem necessidade de antibioticoprofilaxia",
+      "Profilaxia com cefalotina, vacina antitetânica, lavagem exaustiva e desbridamento cirúrgico com redução",
+      "Amputação primária, dado o alto risco de infecção em fraturas expostas",
+      "Apenas imobilização gessada, reservando antibiótico para sinais clínicos de infecção"
+    ],
+    "correta": 1,
+    "comentario": "Na fratura exposta, mesmo em grau I de Gustilo-Anderson (ferida limpa <1cm), a conduta padrão inclui profilaxia antibiótica (cefalosporina de 1ª geração, como cefalotina), vacinação antitetânica, lavagem exaustiva da ferida e desbridamento cirúrgico com redução da fratura — nunca conduta puramente ambulatorial ou expectante.",
+    "banca": "ENARE",
+    "ano": "2023",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4091",
+    "temaId": "fraturas-luxacoes-comuns",
+    "tema": "Fraturas e Luxações Comuns",
+    "enunciado": "Diante de suspeita clínica de fratura óssea em membro após trauma, qual é o principal exame de imagem inicial indicado?",
+    "alternativas": [
+      "Tomografia computadorizada",
+      "Ressonância magnética",
+      "Radiografia simples",
+      "Ultrassonografia do segmento"
+    ],
+    "correta": 2,
+    "comentario": "A radiografia simples, em pelo menos duas incidências, é o exame de imagem inicial e principal na suspeita de fratura óssea, sendo suficiente para o diagnóstico na grande maioria dos casos — tomografia e ressonância são reservadas a situações específicas (fraturas complexas, articulares, ou suspeita não confirmada pela radiografia).",
+    "banca": "SMS-RJ",
+    "ano": "2023.2",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4092",
+    "temaId": "fraturas-luxacoes-comuns",
+    "tema": "Fraturas e Luxações Comuns",
+    "enunciado": "Criança de 10 anos sofre queda sobre a mão espalmada e apresenta dor e deformidade no antebraço. A radiografia mostra ruptura incompleta da cortical óssea, sem descontinuidade completa do osso. Esse padrão radiográfico é característico de qual tipo de fratura?",
+    "alternativas": [
+      "Fratura em fivela (torus), que atravessa a placa de crescimento",
+      "Fratura em galho verde, com ruptura incompleta da cortical óssea",
+      "Fratura completa cominutiva",
+      "Descolamento epifisário completo (Salter-Harris V)"
+    ],
+    "correta": 1,
+    "comentario": "A fratura em galho verde é caracterizada por ruptura incompleta da cortical óssea, típica de ossos infantis mais flexíveis — diferente da fratura em fivela (torus), que é uma compressão da metáfise SEM atravessar a placa de crescimento (afirmar que a fratura em fivela atravessa a fise é um distrator clássico usado para testar esse conceito).",
+    "banca": "ENARE",
+    "ano": "2022",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4093",
+    "temaId": "avaliacao-pre-anestesica-asa",
+    "tema": "Avaliação Pré-Anestésica e Classificação ASA",
+    "enunciado": "Paciente submetido a cirurgia de grande porte apresenta, no pós-operatório imediato, resposta endócrino-metabólica ao trauma cirúrgico (REMIT). Em relação às proteínas séricas nesse contexto, é correto afirmar que:",
+    "alternativas": [
+      "Há aumento da síntese hepática de albumina, como parte da resposta de fase aguda",
+      "Há redução da síntese hepática de proteínas de fase aguda negativas, como a albumina, enquanto proteínas de fase aguda positivas (ex.: PCR) aumentam",
+      "A albumina sérica permanece inalterada durante toda a resposta ao trauma cirúrgico",
+      "A resposta endócrino-metabólica ao trauma não envolve alterações na síntese proteica hepática"
+    ],
+    "correta": 1,
+    "comentario": "Na resposta endócrino-metabólica ao trauma (REMIT), o fígado redireciona sua síntese proteica: reduz a produção de proteínas de fase aguda negativas, como a albumina, enquanto aumenta a síntese de proteínas de fase aguda positivas, como a proteína C-reativa — um padrão típico da resposta inflamatória sistêmica pós-trauma/cirurgia de grande porte.",
+    "banca": "PSU-MG",
+    "ano": "2022 (R3 Cirurgia)",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4094",
+    "temaId": "farmacologia-anestesicos-locais-gerais",
+    "tema": "Farmacologia dos Anestésicos Locais e Gerais",
+    "enunciado": "Homem de 75 anos, com infarto agudo do miocárdio prévio e stent coronariano, fração de ejeção de 32% ao ecocardiograma, será submetido a colectomia videolaparoscópica. Qual hipnótico é mais adequado para a indução anestésica desse paciente?",
+    "alternativas": [
+      "Propofol",
+      "Midazolam",
+      "Etomidato",
+      "Cetamina isolada"
+    ],
+    "correta": 2,
+    "comentario": "O etomidato é o hipnótico de escolha para indução em pacientes com instabilidade cardiovascular ou baixa fração de ejeção, por sua maior estabilidade hemodinâmica em comparação a propofol e midazolam, que podem causar hipotensão significativa nesses pacientes.",
+    "banca": "UNIFESP",
+    "ano": "2024",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4095",
+    "temaId": "farmacologia-anestesicos-locais-gerais",
+    "tema": "Farmacologia dos Anestésicos Locais e Gerais",
+    "enunciado": "Paciente com doença arterial coronariana estabelecida necessita de indução anestésica para procedimento cirúrgico. Qual dos agentes de indução a seguir deve ser EVITADO nesse paciente, por seu efeito hipertensivo e simpaticomimético?",
+    "alternativas": [
+      "Tiopental",
+      "Propofol",
+      "Etomidato",
+      "Cetamina"
+    ],
+    "correta": 3,
+    "comentario": "A cetamina tem efeito simpaticomimético indireto, aumentando frequência cardíaca e pressão arterial — por isso deve ser evitada como agente de indução isolado em pacientes coronariopatas, nos quais o aumento do consumo miocárdico de oxigênio é indesejável. É preferida, por outro lado, em pacientes com choque hipovolêmico.",
+    "banca": "ENARE",
+    "ano": "2024",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4096",
+    "temaId": "prematuridade-rn-baixo-peso",
+    "tema": "Prematuridade e Recém-Nascido de Baixo Peso",
+    "enunciado": "Recém-nascido a termo, com 37 semanas e 2 dias de idade gestacional, peso de nascimento de 2.820g, apresenta escore-z de peso de -0,3 pela curva Intergrowth-21st. Como deve ser classificado esse recém-nascido quanto à adequação peso/idade gestacional?",
+    "alternativas": [
+      "Pequeno para a idade gestacional (PIG)",
+      "Termo adequado para a idade gestacional",
+      "Grande para a idade gestacional (GIG)",
+      "Não é possível classificar sem o perímetro cefálico"
+    ],
+    "correta": 1,
+    "comentario": "A classificação peso/idade gestacional considera adequado para a idade gestacional (AIG) todo recém-nascido com escore-z entre -2 e +2. Como o escore-z de -0,3 está dentro dessa faixa, o recém-nascido é classificado como termo adequado para a idade gestacional.",
+    "banca": "HOS-SP",
+    "ano": "2019",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
+  },
+  {
+    "id": "q4097",
+    "temaId": "prematuridade-rn-baixo-peso",
+    "tema": "Prematuridade e Recém-Nascido de Baixo Peso",
+    "enunciado": "Recém-nascido de 38 semanas, na sala de parto, apresenta cianose central, hipoatividade e respiração irregular, com frequência cardíaca de 90bpm. Qual é a conduta inicial mais adequada?",
+    "alternativas": [
+      "Aspiração de vias aéreas superiores antes de qualquer outra medida",
+      "Iniciar Ventilação com Pressão Positiva (VPP) em ar ambiente e observar resposta por 30 segundos",
+      "Iniciar compressões torácicas imediatamente, associadas a oxigênio a 100%",
+      "Administrar adrenalina endotraqueal como primeira medida"
+    ],
+    "correta": 1,
+    "comentario": "Diante de recém-nascido com respiração irregular/apneia e frequência cardíaca abaixo de 100bpm, a conduta inicial na reanimação neonatal é iniciar Ventilação com Pressão Positiva (VPP) em ar ambiente, reavaliando a resposta (frequência cardíaca e respiração) após 30 segundos — compressões torácicas e adrenalina são reservadas a etapas posteriores do algoritmo, caso a VPP inicial seja insuficiente.",
+    "banca": "SCM-BH",
+    "ano": "2017",
+    "revisado": true,
+    "fonte": "Questão real de prova, referenciada em material de curso preparatório de residência médica."
   }
 ]
