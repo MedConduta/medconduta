@@ -85,7 +85,7 @@ async function montarContextoAluno() {
   const desempenhoPorCategoria = calcularDesempenhoPorCategoria(respostas);
   const categorias = [...new Set(temas.map((t) => t.categoria))];
   const gargalos = categorias
-    .map((categoria) => ({ categoria, score: calcularScorePrioridade(categoria, desempenhoPorCategoria) }))
+    .map((categoria) => ({ categoria, score: calcularScorePrioridade(categoria, desempenhoPorCategoria, estado.provaAlvo) }))
     .sort((a, b) => b.score - a.score)
     .slice(0, 3)
     .map((r) => {

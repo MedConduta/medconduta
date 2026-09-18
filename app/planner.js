@@ -10,6 +10,16 @@ const MIN_POR_REVISAO_ERRO = 6; // reler + resolver de novo uma questão já err
 const MIN_POR_TEMA_NOVO = 25; // leitura de um tema completo
 const MIN_POR_QUESTOES_BLOCO = 15; // bloco de ~5 questões
 
+// Teto de tempo pro conjunto de revisões vencidas (flashcards + erros) sobre
+// o orçamento do DIA (não o que sobra depois delas) — sem isso, um backlog
+// grande de revisões vencidas podia consumir 100% do tempo disponível e
+// nunca sobrar nada pra conteúdo novo ou questões. 40% é o teto superior da
+// faixa razoável pro tipo de revisão pontual que este motor gera (o
+// suficiente pra zerar backlogs grandes em poucos dias, sem dominar a
+// agenda todo dia). O que não cabe no teto continua vencido e reaparece nos
+// próximos dias — nada se perde, só se espalha no tempo.
+const TETO_REVISOES_PCT = 0.4;
+
 // Desempenho (0-1) assumido para uma categoria sem nenhuma questão respondida
 // ainda — nem "dominado" nem "fraco", só sem dado. Assim que o usuário
 // responde questões daquela categoria, o valor real substitui esse padrão.
@@ -46,10 +56,10 @@ export function calcularDesempenhoPorCategoria(respostas) {
  * no fim — mesma lógica do "80/20" (alta incidência + baixo domínio =
  * prioridade máxima).
  */
-export function calcularScorePrioridade(categoria, desempenhoPorCategoria) {
+export function calcularScorePrioridade(categoria, desempenhoPorCategoria, provaAlvo = "SES-PE") {
   const info = desempenhoPorCategoria.get(categoria);
   const taxa = info ? info.taxa : DESEMPENHO_PADRAO_SEM_DADO;
-  return pesoProva(categoria) * (1 + (1 - taxa));
+  return pesoProva(categoria, provaAlvo) * (1 + (1 - taxa));
 }
 
 /**
@@ -81,7 +91,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     srsRecords,
     progresso,
     respostas,
-    { fase: faseBase, diasRestantes, modo },
+    { fase: faseBase, diasRestantes, modo, provaAlvo },
     { vencidas: errosVencidos },
   ] = await Promise.all([
     fetchJsonCached("data/temas.json"),
@@ -107,7 +117,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   // ordenar temas pendentes e para escolher o foco do bloco de questões.
   const categorias = [...new Set(temas.map((t) => t.categoria))];
   const rankingCategorias = categorias
-    .map((categoria) => ({ categoria, score: calcularScorePrioridade(categoria, desempenhoPorCategoria) }))
+    .map((categoria) => ({ categoria, score: calcularScorePrioridade(categoria, desempenhoPorCategoria, provaAlvo) }))
     .sort((a, b) => b.score - a.score);
   const scorePorCategoria = new Map(rankingCategorias.map((r) => [r.categoria, r.score]));
 
@@ -117,8 +127,15 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   );
   const vencidos = todosCards.filter((c) => estaVencido(srsMap.get(c.id)));
 
+  // Teto de tempo compartilhado pelas duas filas de revisão (1 e 1b) — ver
+  // TETO_REVISOES_PCT. O que ultrapassar o teto continua vencido e some da
+  // fila de hoje, sem sumir de verdade: volta a aparecer amanhã.
+  const orcamentoRevisoes = Math.round(minutosDisponiveis * TETO_REVISOES_PCT);
+  let minutosGastosRevisoes = 0;
+
   for (const card of vencidos) {
     if (minutosRestantes < MIN_POR_REVISAO_VENCIDA / 2) break;
+    if (minutosGastosRevisoes + MIN_POR_REVISAO_VENCIDA > orcamentoRevisoes) break;
     fila.push({
       tipo: "revisao",
       titulo: `Revisar: ${card.deckTitulo}`,
@@ -127,12 +144,14 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
       link: `#/residencia/flashcards/${card.deckId}`,
     });
     minutosRestantes -= MIN_POR_REVISAO_VENCIDA;
+    minutosGastosRevisoes += MIN_POR_REVISAO_VENCIDA;
   }
 
   // 1b) Questões já erradas antes, vencidas para revisão espaçada (ver erros.js) —
-  // mesma prioridade incondicional das revisões de flashcard.
+  // mesma prioridade incondicional das revisões de flashcard, sujeita ao mesmo teto.
   for (const { questao } of errosVencidos) {
     if (minutosRestantes < MIN_POR_REVISAO_ERRO / 2) break;
+    if (minutosGastosRevisoes + MIN_POR_REVISAO_ERRO > orcamentoRevisoes) break;
     const resumo = questao.enunciado.length > 100 ? `${questao.enunciado.slice(0, 100)}…` : questao.enunciado;
     fila.push({
       tipo: "revisao-erro",
@@ -142,6 +161,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
       link: "#/residencia/erros",
     });
     minutosRestantes -= MIN_POR_REVISAO_ERRO;
+    minutosGastosRevisoes += MIN_POR_REVISAO_ERRO;
   }
 
   // 2) e 3) — o tempo que sobra após revisões se divide entre conteúdo novo

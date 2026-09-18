@@ -13,6 +13,7 @@
 import { fetchJsonCached } from "./utils.js";
 import { getAll, setItem } from "./db.js";
 import { pesoProva } from "./areas.js";
+import { getConfiguracaoProva } from "./cronograma.js";
 
 export const TAMANHOS_DISPONIVEIS = [20, 40, 60, 80];
 export const TAMANHO_PADRAO = 40;
@@ -29,10 +30,11 @@ function embaralhar(lista) {
 
 /** Monta as `tamanho` questões do simulado, distribuídas por peso de incidência das categorias. */
 export async function selecionarQuestoesSimulado(tamanho) {
-  const [curadas, geradas, temas] = await Promise.all([
+  const [curadas, geradas, temas, { provaAlvo }] = await Promise.all([
     fetchJsonCached("data/questoes.json"),
     getAll("ia_questoes"),
     fetchJsonCached("data/temas.json"),
+    getConfiguracaoProva(),
   ]);
 
   const categoriaPorTemaId = new Map(temas.map((t) => [t.id, t.categoria]));
@@ -46,14 +48,14 @@ export async function selecionarQuestoesSimulado(tamanho) {
   }
 
   const categorias = [...porCategoria.keys()];
-  const somaPesos = categorias.reduce((acc, c) => acc + pesoProva(c), 0);
+  const somaPesos = categorias.reduce((acc, c) => acc + pesoProva(c, provaAlvo), 0);
 
   const selecionadas = [];
   const idsUsados = new Set();
 
   for (const categoria of categorias) {
     const disponiveis = embaralhar(porCategoria.get(categoria));
-    const alvo = somaPesos ? Math.round((tamanho * pesoProva(categoria)) / somaPesos) : 0;
+    const alvo = somaPesos ? Math.round((tamanho * pesoProva(categoria, provaAlvo)) / somaPesos) : 0;
     for (const q of disponiveis.slice(0, alvo)) {
       selecionadas.push(q);
       idsUsados.add(q.id);

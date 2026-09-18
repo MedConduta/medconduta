@@ -31,7 +31,7 @@ const PISO_PESO_CONTEUDO_RECUPERACAO = 0.5;
 
 /** Estado atual da preparação: fase, se está atrasada, e qual "modo especial" (se algum) está ativo. */
 export async function getEstadoPreparo() {
-  const [temas, progresso, { fase, diasRestantes }] = await Promise.all([
+  const [temas, progresso, { fase, diasRestantes, provaAlvo }] = await Promise.all([
     fetchJsonCached("data/temas.json"),
     getAll("progresso"),
     getFaseAtual(),
@@ -40,7 +40,10 @@ export async function getEstadoPreparo() {
   const concluidosSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
   const completude = temas.length ? temas.filter((t) => concluidosSet.has(t.id)).length / temas.length : 0;
 
-  const retaFinal = fase.id === "reta-final";
+  // Pré-prova é um estágio ainda mais extremo dentro da mesma lógica da
+  // Reta Final (ver cronograma.js) — reaproveita o mesmo modo/banner, não
+  // precisa de um terceiro estado especial.
+  const retaFinal = fase.id === "reta-final" || fase.id === "pre-prova";
 
   // Na Reta Final não faz sentido tentar "recuperar" conteúdo — com tão
   // pouco tempo restante, forçar mais conteúdo novo é pior que aceitar as
@@ -57,6 +60,7 @@ export async function getEstadoPreparo() {
     fase,
     diasRestantes,
     completude,
+    provaAlvo,
     modo: retaFinal ? "reta-final" : emAtraso ? "recuperacao" : null,
   };
 }
