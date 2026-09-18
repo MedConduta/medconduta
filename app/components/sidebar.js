@@ -10,6 +10,7 @@ export const NAV_ITEMS = [
       { path: "/residencia/flashcards", label: "Flashcards", icon: "layers" },
       { path: "/residencia/questoes", label: "Questões", icon: "checklist" },
       { path: "/residencia/planejador", label: "Hoje", icon: "calendar" },
+      { path: "/residencia/cronograma", label: "Cronograma", icon: "clipboard" },
     ],
   },
   {
