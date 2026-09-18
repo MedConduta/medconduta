@@ -21,9 +21,9 @@ export function registerRoute(pattern, render, meta = {}) {
 }
 
 function parseHash() {
-  const hash = window.location.hash.replace(/^#/, "") || "/residencia/conteudo";
+  const hash = window.location.hash.replace(/^#/, "") || "/residencia/minha-preparacao";
   const [path] = hash.split("?");
-  return path.replace(/\/+$/, "") || "/residencia/conteudo";
+  return path.replace(/\/+$/, "") || "/residencia/minha-preparacao";
 }
 
 let currentContainer = null;
