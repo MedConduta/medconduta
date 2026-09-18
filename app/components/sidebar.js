@@ -45,9 +45,8 @@ export const BOTTOM_NAV_ITEMS = [
   { path: "/residencia/questoes", label: "Questões", icon: "checklist" },
 ];
 
-// Entre itens cujo caminho é prefixo de outro (ex.: "/pratica/prescricao" e
-// "/pratica/prescricao/az"), só o prefixo mais específico (mais longo) que
-// combina com a rota atual fica marcado como ativo.
+// Entre itens cujo caminho é prefixo de outro, só o prefixo mais específico
+// (mais longo) que combina com a rota atual fica marcado como ativo.
 function bestMatch(paths, currentPath) {
   let best = null;
   for (const path of paths) {
