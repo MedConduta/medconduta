@@ -12,6 +12,7 @@ export const NAV_ITEMS = [
       { path: "/residencia/erros", label: "Meus Erros", icon: "alert-circle" },
       { path: "/residencia/planejador", label: "Hoje", icon: "calendar" },
       { path: "/residencia/cronograma", label: "Cronograma", icon: "clipboard" },
+      { path: "/residencia/prontidao", label: "Prontidão", icon: "siren" },
     ],
   },
   {
