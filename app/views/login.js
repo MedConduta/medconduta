@@ -1,5 +1,6 @@
 import { escapeHtml } from "../utils.js";
 import { entrar, registrar } from "../auth.js";
+import { icon } from "../components/icons.js";
 
 /**
  * Tela de entrada/cadastro. Renderizada fora do roteador normal (ver
@@ -14,27 +15,36 @@ export function renderLogin(container, { onAutenticado }) {
     return `
       <div class="login-page">
         <div class="login-card">
-          <div class="sidebar__brand" style="justify-content:center;margin-bottom:24px;">
-            <div class="sidebar__brand-mark" aria-hidden="true">M</div>
-            <span class="sidebar__brand-name">MedConduta</span>
+          <div class="login-brand">
+            <div class="login-brand__mark" aria-hidden="true">M</div>
+            <span class="login-brand__name">MedConduta</span>
+            <span class="login-brand__tagline">Estudo estruturado para residência médica</span>
           </div>
-          <h1 style="text-align:center;">${ehCriar ? "Criar conta" : "Entrar"}</h1>
-          <p class="page-header__desc" style="text-align:center;margin:0 auto 24px;">
-            ${ehCriar ? "Seus dados de estudo ficam salvos na nuvem, acessíveis de qualquer aparelho." : "Acesse sua conta para continuar sua preparação."}
-          </p>
+
+          <div class="login-card__header">
+            <h1>${ehCriar ? "Criar conta" : "Bem-vindo de volta"}</h1>
+            <p>${ehCriar ? "Seus dados de estudo ficam salvos na nuvem, acessíveis de qualquer aparelho." : "Acesse sua conta para continuar sua preparação."}</p>
+          </div>
+
           <form id="login-form">
             <div class="field">
               <label for="login-email">E-mail</label>
-              <input type="email" id="login-email" required autocomplete="email" />
+              <div class="input-icon">
+                ${icon("mail", { size: 18 })}
+                <input type="email" id="login-email" placeholder="voce@email.com" required autocomplete="email" />
+              </div>
             </div>
             <div class="field">
               <label for="login-password">Senha</label>
-              <input type="password" id="login-password" required autocomplete="${ehCriar ? "new-password" : "current-password"}" minlength="8" />
+              <div class="input-icon">
+                ${icon("lock", { size: 18 })}
+                <input type="password" id="login-password" placeholder="••••••••" required autocomplete="${ehCriar ? "new-password" : "current-password"}" minlength="8" />
+              </div>
             </div>
             <p class="explanation-box" id="login-erro" hidden style="border-color:var(--color-danger-border);background:var(--color-danger-soft);color:var(--color-danger);"></p>
             <button type="submit" class="btn btn--primary" style="width:100%;" id="login-submit">${ehCriar ? "Criar conta" : "Entrar"}</button>
           </form>
-          <p style="text-align:center;margin-top:16px;font-size:var(--fs-sm);color:var(--color-text-secondary);">
+          <p class="login-switch">
             ${ehCriar ? "Já tem conta?" : "Ainda não tem conta?"}
             <a href="#" id="login-alternar">${ehCriar ? "Entrar" : "Criar conta"}</a>
           </p>
