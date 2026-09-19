@@ -901,25 +901,27 @@
 }
 
 .login-card__header h1 {
-  font-size: var(--fs-xl);
-  margin-bottom: 4px;
+  font-size: var(--fs-xxl);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.02em;
 }
 
-.login-card__header p {
-  color: var(--color-text-secondary);
-  font-size: var(--fs-sm);
-  margin: 0;
-}
-
+/* Campos e botão em formato pílula (cantos totalmente arredondados) — um
+   visual mais "app de login" moderno, só nesta tela; o resto do app
+   continua com os cantos --radius-sm/md padrão. */
 .input-icon {
   display: flex;
   align-items: center;
   gap: var(--space-2);
-  padding: 0 var(--space-3);
+  padding: 0 var(--space-4);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-pill);
   background: var(--color-surface);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.login-card .btn--primary {
+  border-radius: var(--radius-pill);
 }
 
 .input-icon svg {
