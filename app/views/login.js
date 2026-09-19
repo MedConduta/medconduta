@@ -22,8 +22,7 @@ export function renderLogin(container, { onAutenticado }) {
           </div>
 
           <div class="login-card__header">
-            <h1>${ehCriar ? "Criar conta" : "Bem-vindo de volta"}</h1>
-            <p>${ehCriar ? "Seus dados de estudo ficam salvos na nuvem, acessíveis de qualquer aparelho." : "Acesse sua conta para continuar sua preparação."}</p>
+            <h1>${ehCriar ? "Criar conta" : "Entrar"}</h1>
           </div>
 
           <form id="login-form">
