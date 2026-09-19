@@ -531,6 +531,12 @@
 }
 .field input[type="number"],
 .field input[type="text"],
+.field input[type="email"],
+.field input[type="password"],
+.field input[type="date"],
+.field input[type="tel"],
+.field input[type="search"],
+.field input[type="url"],
 .field select,
 .field textarea {
   width: 100%;
@@ -540,9 +546,13 @@
   background: var(--color-surface);
   color: var(--color-text);
   min-height: 44px;
+  font: inherit;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 .field input:focus, .field select:focus, .field textarea:focus {
   border-color: var(--color-accent);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 18%, transparent);
 }
 
 .range-row {
@@ -789,27 +799,160 @@
 /* ---------- Login / cadastro ---------- */
 
 .login-page {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: var(--space-5);
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+/* Mancha de cor suave atrás do cartão — usa color-mix pra ficar visível tanto
+   no tema claro quanto no escuro (o token --color-accent-soft é bom demais
+   pra badges, mas quase invisível como fundo no escuro). */
+.login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
-    radial-gradient(circle at 15% 10%, var(--color-accent-soft), transparent 45%),
-    radial-gradient(circle at 85% 90%, var(--color-accent-soft), transparent 40%),
-    var(--color-bg-subtle);
+    radial-gradient(circle at 18% 15%, color-mix(in srgb, var(--color-accent) 20%, transparent), transparent 42%),
+    radial-gradient(circle at 85% 20%, color-mix(in srgb, var(--color-accent) 14%, transparent), transparent 38%),
+    radial-gradient(circle at 50% 100%, color-mix(in srgb, var(--color-accent) 12%, transparent), transparent 50%);
+  pointer-events: none;
+}
+
+/* Grade de pontos sutil, só visível perto do centro (mask), pra dar textura
+   sem competir com o cartão. */
+.login-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--color-border-strong) 1px, transparent 1px);
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(circle at 50% 35%, black, transparent 70%);
+  mask-image: radial-gradient(circle at 50% 35%, black, transparent 70%);
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .login-card {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 400px;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-  padding: var(--space-7) var(--space-6);
+  padding: var(--space-7) var(--space-6) var(--space-6);
+  overflow: hidden;
 }
 
-.login-card h1 {
+.login-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-accent);
+}
+
+.login-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  margin-bottom: var(--space-6);
+}
+
+.login-brand__mark {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-accent);
+  color: var(--color-text-on-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lg);
+  box-shadow: var(--shadow-accent);
+  margin-bottom: 4px;
+}
+
+.login-brand__name {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lg);
+  letter-spacing: -0.01em;
+}
+
+.login-brand__tagline {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-sm);
+}
+
+.login-card__header {
+  text-align: center;
+  margin-bottom: var(--space-5);
+}
+
+.login-card__header h1 {
   font-size: var(--fs-xl);
+  margin-bottom: 4px;
+}
+
+.login-card__header p {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-sm);
+  margin: 0;
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.input-icon svg {
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+}
+
+/* Especificidade (.field .input-icon input, 3 classes) de propósito maior
+   que a regra genérica ".field input[type=...]" (2) — o campo real fica sem
+   borda própria porque quem desenha a borda/glow de foco é o .input-icon
+   por fora, senão duplicaria (borda do campo + borda do wrapper). */
+.login-card .field .input-icon input,
+.login-card .field .input-icon input:focus {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: var(--space-3) 0;
+  min-height: 44px;
+  color: var(--color-text);
+  font: inherit;
+  outline: none;
+}
+
+.input-icon:focus-within {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 18%, transparent);
+}
+
+.login-switch {
+  text-align: center;
+  margin-top: var(--space-4);
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
 }
