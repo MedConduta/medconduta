@@ -20,6 +20,9 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "cv11", "ss01";
   transition: background var(--transition-base), color var(--transition-base);
 }
 
@@ -27,10 +30,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 var(--space-3);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
 }
 
-h1 { font-size: var(--fs-xxl); }
+h1 { font-size: var(--fs-xxl); font-weight: var(--fw-bold); letter-spacing: -0.02em; }
 h2 { font-size: var(--fs-xl); }
 h3 { font-size: var(--fs-lg); }
 h4 { font-size: var(--fs-md); }

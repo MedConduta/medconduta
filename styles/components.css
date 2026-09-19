@@ -14,13 +14,13 @@
 
 .card--interactive {
   display: block;
-  transition: box-shadow var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  transition: box-shadow var(--transition-base), border-color var(--transition-fast), transform var(--transition-base);
 }
 .card--interactive:hover {
   box-shadow: var(--shadow-md);
   border-color: var(--color-border-strong);
   text-decoration: none;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .card-grid {
@@ -206,25 +206,28 @@
   gap: var(--space-2);
   padding: 10px 20px;
   border-radius: var(--radius-md);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-semibold);
   font-size: var(--fs-sm);
   border: 1px solid transparent;
-  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast),
+    box-shadow var(--transition-fast), transform var(--transition-fast);
   min-height: 44px;
 }
 
 .btn--primary {
   background: var(--color-accent);
   color: var(--color-text-on-accent);
+  box-shadow: var(--shadow-accent);
 }
-.btn--primary:hover { background: var(--color-accent-hover); text-decoration: none; }
+.btn--primary:hover { background: var(--color-accent-hover); text-decoration: none; transform: translateY(-1px); }
+.btn--primary:active { transform: translateY(0); }
 
 .btn--secondary {
   background: var(--color-surface);
   border-color: var(--color-border);
   color: var(--color-text);
 }
-.btn--secondary:hover { background: var(--color-surface-hover); text-decoration: none; }
+.btn--secondary:hover { background: var(--color-surface-hover); border-color: var(--color-border-strong); text-decoration: none; }
 
 .btn--ghost {
   color: var(--color-text-secondary);
@@ -305,6 +308,20 @@
 .prose .red-flag {
   color: var(--color-danger);
   font-weight: var(--fw-semibold);
+}
+
+/* Alinhamento justificado nos textos de conteúdo (leitura longa) — listas,
+   tabelas e blocos curtos (badges, rótulos) ficam de fora de propósito,
+   já que justificar linha única ou itens de lista deixa espaçamento estranho. */
+.prose p,
+.exam-focus p,
+.mnemonic p,
+.explanation-box p,
+.ia-resposta p,
+.chat-msg__texto p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .prose .table-wrap {
@@ -617,10 +634,12 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
 }
 .stat-tile__value {
   font-size: var(--fs-xl);
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.01em;
 }
 .stat-tile__label {
   color: var(--color-text-secondary);
@@ -775,17 +794,20 @@
   align-items: center;
   justify-content: center;
   padding: var(--space-5);
-  background: var(--color-bg-subtle);
+  background:
+    radial-gradient(circle at 15% 10%, var(--color-accent-soft), transparent 45%),
+    radial-gradient(circle at 85% 90%, var(--color-accent-soft), transparent 40%),
+    var(--color-bg-subtle);
 }
 
 .login-card {
   width: 100%;
-  max-width: 380px;
+  max-width: 400px;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  padding: var(--space-6);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-7) var(--space-6);
 }
 
 .login-card h1 {
