@@ -13,6 +13,7 @@ export const NAV_ITEMS = [
       { path: "/residencia/planejador", label: "Hoje", icon: "calendar" },
       { path: "/residencia/planejamento-semanal", label: "Planejamento Semanal", icon: "columns" },
       { path: "/residencia/cronograma", label: "Cronograma", icon: "clipboard" },
+      { path: "/residencia/curso", label: "Curso", icon: "panel" },
       { path: "/residencia/prontidao", label: "Prontidão", icon: "siren" },
       { path: "/residencia/desempenho", label: "Desempenho", icon: "flowchart" },
       { path: "/residencia/relatorio-semanal", label: "Relatório Semanal", icon: "chart-bar" },
