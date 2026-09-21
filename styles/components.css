@@ -664,18 +664,54 @@
   color: var(--color-text-secondary);
 }
 
+/* ---------- Barra de ações do tema ---------- */
+
+/* Duas ações principais (Marcar como estudado / Praticar questões), uma
+   embaixo da outra, num bloco só à esquerda — e as ferramentas de IA (ver
+   abaixo) num bloco à direita. `align-items: stretch` (padrão do flex em
+   coluna) já deixa os dois botões da esquerda com a mesma largura, a do
+   texto mais longo — sem precisar fixar width. */
+.tema-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+  flex-wrap: nowrap;
+  margin-bottom: var(--space-4);
+}
+
+.tema-toolbar__acoes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+/* Pílula, igual ao tratamento dado aos campos/botão da tela de login — uma
+   pegada mais minimalista que o botão padrão (ainda .btn por baixo). */
+.tema-toolbar__btn {
+  border-radius: var(--radius-pill);
+}
+
+/* Em telas estreitas, os dois blocos empilham (bloco esquerdo primeiro) em
+   vez de espremer as abas de IA numa faixa estreita à direita. */
+@media (max-width: 640px) {
+  .tema-toolbar { flex-wrap: wrap; }
+  .ia-tabbar { justify-content: flex-start; }
+}
+
 /* ---------- Assistente de IA ---------- */
 
-/* Abas de IA de um tema (ver app/views/conteudo.js) — minimalistas, perto
-   do botão "Marcar como estudado". Cada uma gera seu conteúdo sob demanda e
-   fica marcada (::after, o pontinho) quando já existe um resultado salvo
-   pra aquele tema, pra sinalizar que reabrir a aba não custa uma nova
-   chamada de IA. */
+/* Abas de IA de um tema (ver app/views/conteudo.js), no bloco à direita da
+   barra de ações. Cada uma gera seu conteúdo sob demanda e fica marcada
+   (::after, o pontinho) quando já existe um resultado salvo pra aquele
+   tema, pra sinalizar que reabrir a aba não custa uma nova chamada de IA. */
 .ia-tabbar {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: var(--space-2);
-  margin-bottom: var(--space-4);
+  flex: 1 1 auto;
 }
 
 .ia-tab {

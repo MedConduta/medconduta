@@ -389,20 +389,22 @@ export async function renderDetalhe(container, { id }) {
           : ""
       }
 
-      <div class="btn-row" style="margin-bottom:20px;">
-        <button class="btn ${concluido ? "btn--secondary" : "btn--primary"}" id="btn-concluir">
-          ${concluido ? "✓ Marcado como estudado" : "Marcar como estudado"}
-        </button>
-        ${temQuestoes ? `<a class="btn btn--secondary" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Praticar questões deste tema</a>` : ""}
-      </div>
+      <div class="tema-toolbar">
+        <div class="tema-toolbar__acoes">
+          <button class="btn ${concluido ? "btn--secondary" : "btn--primary"} tema-toolbar__btn" id="btn-concluir">
+            ${concluido ? "✓ Marcado como estudado" : "Marcar como estudado"}
+          </button>
+          ${temQuestoes ? `<a class="btn btn--secondary tema-toolbar__btn" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Praticar questões deste tema</a>` : ""}
+        </div>
 
-      <div class="ia-tabbar" id="ia-tabbar" role="tablist" aria-label="Ferramentas de IA para este tema">
-        ${IA_TABS.map(
-          (t) => `
-          <button type="button" class="ia-tab${abasSalvas.has(t.tipo) ? " has-content" : ""}" data-tipo="${t.tipo}" role="tab" aria-selected="false">
-            ${icon(t.icone, { size: 15 })}<span>${t.titulo}</span>
-          </button>`
-        ).join("")}
+        <div class="ia-tabbar" id="ia-tabbar" role="tablist" aria-label="Ferramentas de IA para este tema">
+          ${IA_TABS.map(
+            (t) => `
+            <button type="button" class="ia-tab${abasSalvas.has(t.tipo) ? " has-content" : ""}" data-tipo="${t.tipo}" role="tab" aria-selected="false">
+              ${icon(t.icone, { size: 15 })}<span>${t.titulo}</span>
+            </button>`
+          ).join("")}
+        </div>
       </div>
       <div class="ia-tab-panel" id="ia-tab-panel" hidden></div>
 
