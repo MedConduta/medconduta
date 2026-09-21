@@ -46,10 +46,14 @@ const { chromium } = require("playwright");
   const totalLinks = await page.$$eval(".content-tree .content-list__item", (els) => els.length);
   console.log(`Total de temas listados no Curso bate com temas.json (${totalLinks} === ${totalTemas}):`, totalLinks === totalTemas);
 
-  // --- 4) Nº de semanas = ceil(totalTemas / TEMAS_POR_SEMANA)
-  const numSemanas = await page.$$eval(".content-tree .content-area", (els) => els.length);
-  console.log("Nº de semanas (cards) > 0:", numSemanas > 0);
-  console.log("Nº de semanas bate com ceil(total/6):", numSemanas === Math.ceil(totalTemas / 6));
+  // --- 4) Nº de semanas bate com o alvo (41) e nenhuma semana está vazia
+  const tamanhosSemana = await page.$$eval(".content-tree .content-area", (els) =>
+    els.map((el) => el.querySelectorAll(".content-list__item").length)
+  );
+  console.log("Nº de semanas === 41:", tamanhosSemana.length === 41);
+  console.log("Nenhuma semana vazia:", tamanhosSemana.every((n) => n > 0));
+  console.log("Semanas somam o total de temas:", tamanhosSemana.reduce((a, b) => a + b, 0) === totalTemas);
+  console.log("Largura das semanas varia (não é fixa):", new Set(tamanhosSemana).size > 1);
 
   // --- 5) Marcar um tema como estudado em Conteúdo e conferir que o Curso reflete o progresso
   const primeiroLink = await page.$eval(".content-tree .content-list__item", (el) => el.getAttribute("href"));

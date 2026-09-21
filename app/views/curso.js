@@ -1,5 +1,5 @@
 import { escapeHtml } from "../utils.js";
-import { gerarCurso, TEMAS_POR_SEMANA } from "../curso.js";
+import { gerarCurso } from "../curso.js";
 
 /**
  * Curso completo — a grade curricular inteira (todos os temas), em ordem
@@ -18,7 +18,7 @@ export async function renderCurso(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Curso</div>
         <h1>Curso completo</h1>
-        <p class="page-header__desc">Todos os temas do currículo, na ordem sugerida de estudo, divididos em ${curso.semanas.length} semanas (${TEMAS_POR_SEMANA} temas novos/semana). Marque os temas como estudados em <a href="#/residencia/conteudo">Conteúdo</a> — o progresso aparece aqui automaticamente.</p>
+        <p class="page-header__desc">Todos os temas do currículo, na ordem sugerida de estudo, divididos em ${curso.semanas.length} semanas — cada semana já deixa folga pra revisão espaçada e questões (ver <a href="#/residencia/planejador">Hoje</a>), então temas mais densos aparecem mais isolados e temas mais curtos se agrupam mais. Marque os temas como estudados em <a href="#/residencia/conteudo">Conteúdo</a> — o progresso aparece aqui automaticamente.</p>
       </div>
 
       <div class="card" style="margin-bottom:24px;">
