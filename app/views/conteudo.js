@@ -6,6 +6,7 @@ import { gerarTemaComIA, gerarFlashcardsComIA, gerarFluxogramaComIA, gerarQuesta
 import { askAI } from "../ai.js";
 import { formatarTemaComoContexto } from "../rag.js";
 import { renderFlowchart } from "../components/flowchart.js";
+import { icon } from "../components/icons.js";
 import { gerarDiagnostico } from "../prontidao.js";
 
 // Fase 12 — ordem de prioridade dos quadrantes (ver prontidao.js): categorias
@@ -14,6 +15,38 @@ import { gerarDiagnostico } from "../prontidao.js";
 // evita que uma categoria de alta incidência fique perdida no meio de uma
 // lista alfabética.
 const ORDEM_QUADRANTE = ["Crítico", "Atenção", "Secundário fraco", "Dominado", "Tranquilo"];
+
+// Ferramentas de IA da página de um tema, como abas — cada uma gera seu
+// conteúdo sob demanda (1º clique) e depois só reabre o que já foi gerado
+// (ver carregarAbasSalvas/salvarAbaIA), em vez de recalcular toda vez.
+const IA_TABS = [
+  { tipo: "explicar", titulo: "Explicar", icone: "sparkles" },
+  { tipo: "avaliar", titulo: "Avaliar", icone: "checklist" },
+  { tipo: "flashcards", titulo: "Flashcards", icone: "layers" },
+  { tipo: "questao", titulo: "Questão", icone: "clipboard" },
+  { tipo: "fluxograma", titulo: "Fluxograma", icone: "flowchart" },
+  { tipo: "pegadinhas", titulo: "Pegadinhas", icone: "alert-circle" },
+  { tipo: "memorizar", titulo: "Memorizar", icone: "brain" },
+  { tipo: "testar", titulo: "Me testar", icone: "target" },
+];
+
+function chaveAbaIA(temaId, tipo) {
+  return `${temaId}__${tipo}`;
+}
+
+/** Carrega os resultados de IA já gerados (e salvos) para este tema, por aba — reabrir a página não perde o que já foi gerado antes. */
+async function carregarAbasSalvas(temaId) {
+  const registros = await Promise.all(IA_TABS.map((t) => getItem("ia_abas", chaveAbaIA(temaId, t.tipo))));
+  const mapa = new Map();
+  IA_TABS.forEach((t, i) => {
+    if (registros[i]) mapa.set(t.tipo, registros[i].dados);
+  });
+  return mapa;
+}
+
+async function salvarAbaIA(temaId, tipo, dados) {
+  await setItem("ia_abas", { id: chaveAbaIA(temaId, tipo), temaId, tipo, dados, atualizadoEm: new Date().toISOString() });
+}
 
 async function marcarConcluido(temaId, concluido, categoria) {
   await setItem("progresso", { id: temaId, concluido, categoria, atualizadoEm: new Date().toISOString() });
@@ -269,6 +302,44 @@ async function temaAdjacentes(tema) {
   return { anterior: indice > 0 ? daCategoria[indice - 1] : null, proximo: indice >= 0 && indice < daCategoria.length - 1 ? daCategoria[indice + 1] : null };
 }
 
+function renderPainelTexto(dados) {
+  return `
+    <div class="ia-resposta">${renderMarkdown(dados.texto)}</div>
+    <div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial antes de usar.</div>
+  `;
+}
+
+function renderPainelFlashcards(dados) {
+  return `
+    <p>${dados.totalCards} flashcards criados: <strong>${escapeHtml(dados.deckTitulo)}</strong></p>
+    <a class="btn btn--secondary" href="#/residencia/flashcards/${dados.deckId}">Estudar esse baralho agora</a>
+  `;
+}
+
+function renderPainelQuestao() {
+  return `
+    <p>Questão criada e adicionada ao banco.</p>
+    <a class="btn btn--secondary" href="#/residencia/questoes">Ver em Questões</a>
+  `;
+}
+
+function renderPainelFluxograma(dados) {
+  return `
+    <p><strong>${escapeHtml(dados.titulo)}</strong></p>
+    <div style="margin-top:12px;">${renderFlowchart(dados.fluxo)}</div>
+  `;
+}
+
+const RENDER_PAINEL_IA = {
+  explicar: renderPainelTexto,
+  avaliar: renderPainelTexto,
+  pegadinhas: renderPainelTexto,
+  memorizar: renderPainelTexto,
+  flashcards: renderPainelFlashcards,
+  questao: renderPainelQuestao,
+  fluxograma: renderPainelFluxograma,
+};
+
 export async function renderDetalhe(container, { id }) {
   const tema = await encontrarTema(id);
 
@@ -280,7 +351,7 @@ export async function renderDetalhe(container, { id }) {
   const progresso = await getItem("progresso", tema.id);
   const concluido = !!progresso?.concluido;
   const geradoPorIA = tema.origem === "ia";
-  const [decks, fluxos, respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes] = await Promise.all([
+  const [decks, fluxos, respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes, abasSalvas] = await Promise.all([
     decksDoTema(tema.id),
     fluxogramasDoTema(tema.id),
     getAll("respostas"),
@@ -288,6 +359,7 @@ export async function renderDetalhe(container, { id }) {
     getAll("ia_questoes"),
     gerarDiagnostico(),
     temaAdjacentes(tema),
+    carregarAbasSalvas(tema.id),
   ]);
 
   const infoCategoria = diagnostico.porCategoria.find((c) => c.categoria === tema.categoria) || null;
@@ -317,12 +389,22 @@ export async function renderDetalhe(container, { id }) {
           : ""
       }
 
-      <div class="btn-row" style="margin-bottom:24px;">
+      <div class="btn-row" style="margin-bottom:20px;">
         <button class="btn ${concluido ? "btn--secondary" : "btn--primary"}" id="btn-concluir">
           ${concluido ? "✓ Marcado como estudado" : "Marcar como estudado"}
         </button>
         ${temQuestoes ? `<a class="btn btn--secondary" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Praticar questões deste tema</a>` : ""}
       </div>
+
+      <div class="ia-tabbar" id="ia-tabbar" role="tablist" aria-label="Ferramentas de IA para este tema">
+        ${IA_TABS.map(
+          (t) => `
+          <button type="button" class="ia-tab${abasSalvas.has(t.tipo) ? " has-content" : ""}" data-tipo="${t.tipo}" role="tab" aria-selected="false">
+            ${icon(t.icone, { size: 15 })}<span>${t.titulo}</span>
+          </button>`
+        ).join("")}
+      </div>
+      <div class="ia-tab-panel" id="ia-tab-panel" hidden></div>
 
       <div class="prose">
         ${tema.secoes
@@ -350,21 +432,6 @@ export async function renderDetalhe(container, { id }) {
       ${decks.length || fluxos.length ? renderRelacionados({ decks, fluxos }) : ""}
 
       ${renderNavegacaoAdjacente(adjacentes)}
-
-      <div class="card ia-card" style="margin-top:24px;">
-        <h3 style="margin-top:0;">Assistente de IA</h3>
-        <div class="btn-row">
-          <button class="btn btn--secondary" id="btn-ia-explicar">Explicar mais / dar exemplo clínico</button>
-          <button class="btn btn--secondary" id="btn-ia-avaliar">Avaliar tema com IA</button>
-          <button class="btn btn--secondary" id="btn-ia-flashcards">Gerar flashcards com IA</button>
-          <button class="btn btn--secondary" id="btn-ia-questao">Gerar questão de treino</button>
-          <button class="btn btn--secondary" id="btn-ia-fluxograma">Gerar fluxograma com IA</button>
-          <button class="btn btn--secondary" id="btn-ia-pegadinhas">Pegadinhas comuns</button>
-          <button class="btn btn--secondary" id="btn-ia-memorizar">O que memorizar</button>
-          <button class="btn btn--secondary" id="btn-ia-testar">Me testar</button>
-        </div>
-        <div id="ia-resultado"></div>
-      </div>
     </div>
   `;
 
@@ -373,185 +440,186 @@ export async function renderDetalhe(container, { id }) {
     renderDetalhe(container, { id });
   });
 
-  const iaResultado = container.querySelector("#ia-resultado");
-  const botoesIA = [
-    container.querySelector("#btn-ia-explicar"),
-    container.querySelector("#btn-ia-avaliar"),
-    container.querySelector("#btn-ia-flashcards"),
-    container.querySelector("#btn-ia-questao"),
-    container.querySelector("#btn-ia-fluxograma"),
-    container.querySelector("#btn-ia-pegadinhas"),
-    container.querySelector("#btn-ia-memorizar"),
-    container.querySelector("#btn-ia-testar"),
-  ];
+  // ---------- Abas de IA (Fase 17: movidas pro topo, minimalistas, com resultado salvo por tema) ----------
+  const tabbarEl = container.querySelector("#ia-tabbar");
+  const painelEl = container.querySelector("#ia-tab-panel");
+  const abasEmMemoria = new Map(abasSalvas);
 
-  container.querySelector("#btn-ia-explicar").addEventListener("click", () =>
-    executarChamadaLivre(iaResultado, botoesIA, () =>
-      askAI({
-        pergunta: `Explique o tema "${tema.titulo}" com mais profundidade e traga um breve exemplo de caso clínico ilustrativo.`,
-        tarefa: "explicar o tema em mais profundidade, com um exemplo de caso clínico curto ao final",
-        contexto: formatarTemaComoContexto(tema),
-      })
-    )
-  );
-
-  container.querySelector("#btn-ia-avaliar").addEventListener("click", () =>
-    executarChamadaLivre(iaResultado, botoesIA, () => avaliarTemaComIA(tema))
-  );
-
-  container.querySelector("#btn-ia-flashcards").addEventListener("click", async () => {
-    botoesIA.forEach((b) => (b.disabled = true));
-    iaResultado.innerHTML = `<div class="explanation-box">Gerando flashcards com IA (rascunho + autocrítica)...</div>`;
-    try {
-      const deck = await gerarFlashcardsComIA(tema);
-      iaResultado.innerHTML = `
-        <div class="explanation-box">
-          <strong>${deck.cards.length} flashcards criados:</strong> "${escapeHtml(deck.titulo)}"
-          <br><a href="#/residencia/flashcards/${deck.id}">Estudar esse baralho agora</a>
-        </div>
-      `;
-    } catch (err) {
-      iaResultado.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
-    } finally {
-      botoesIA.forEach((b) => (b.disabled = false));
-    }
-  });
-
-  container.querySelector("#btn-ia-questao").addEventListener("click", async () => {
-    botoesIA.forEach((b) => (b.disabled = true));
-    iaResultado.innerHTML = `<div class="explanation-box">Gerando questão com IA (rascunho + autocrítica)...</div>`;
-    try {
-      await gerarQuestaoComIA(tema);
-      iaResultado.innerHTML = `
-        <div class="explanation-box">
-          Questão criada e adicionada ao banco. <a href="#/residencia/questoes">Ver em Questões</a>
-        </div>
-      `;
-    } catch (err) {
-      iaResultado.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
-    } finally {
-      botoesIA.forEach((b) => (b.disabled = false));
-    }
-  });
-
-  container.querySelector("#btn-ia-fluxograma").addEventListener("click", async () => {
-    botoesIA.forEach((b) => (b.disabled = true));
-    iaResultado.innerHTML = `<div class="explanation-box">Gerando fluxograma com IA (rascunho + autocrítica)...</div>`;
-    try {
-      const fluxograma = await gerarFluxogramaComIA(tema);
-      iaResultado.innerHTML = `
-        <div class="explanation-box">
-          <strong>Fluxograma criado:</strong> "${escapeHtml(fluxograma.titulo)}"
-          <div class="chat-msg__aviso">Gerado por IA, ainda não revisado — confira em fonte oficial antes de usar.</div>
-          <div style="margin-top:16px;">${renderFlowchart(fluxograma.fluxo)}</div>
-        </div>
-      `;
-    } catch (err) {
-      iaResultado.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
-    } finally {
-      botoesIA.forEach((b) => (b.disabled = false));
-    }
-  });
-
-  container.querySelector("#btn-ia-pegadinhas").addEventListener("click", () =>
-    executarChamadaLivre(iaResultado, botoesIA, () =>
-      askAI({
-        pergunta: `Quais são as pegadinhas mais comuns de prova sobre "${tema.titulo}"? O que os examinadores costumam usar pra confundir o candidato?`,
-        tarefa: "listar as pegadinhas/armadilhas mais comuns de prova sobre este tema",
-        contexto: formatarTemaComoContexto(tema),
-      })
-    )
-  );
-
-  container.querySelector("#btn-ia-memorizar").addEventListener("click", () =>
-    executarChamadaLivre(iaResultado, botoesIA, () =>
-      askAI({
-        pergunta: `Resuma o que é mais importante memorizar de cor sobre "${tema.titulo}" pra prova — números, critérios diagnósticos, doses, classificações. Seja objetivo, em lista.`,
-        tarefa: "listar os pontos que valem a pena memorizar de cor sobre este tema, de forma objetiva",
-        contexto: formatarTemaComoContexto(tema),
-      })
-    )
-  );
-
-  container.querySelector("#btn-ia-testar").addEventListener("click", () => iniciarQuizIA(iaResultado, botoesIA, tema));
-}
-
-/**
- * "Me testar" — modo quiz simples: a IA faz uma pergunta (sem revelar a
- * resposta), o usuário responde em texto livre, a IA corrige. Cada pergunta
- * e cada correção são chamadas sem cache (semCache) — repetir "Me testar"
- * tem que poder trazer uma pergunta diferente, é treino, não FAQ.
- */
-function iniciarQuizIA(resultadoEl, botoes, tema) {
-  botoes.forEach((b) => (b.disabled = true));
-  resultadoEl.innerHTML = `<div class="explanation-box">Preparando uma pergunta...</div>`;
-
-  askAI({
-    pergunta: `Me faça UMA pergunta objetiva, estilo prova de residência, sobre "${tema.titulo}" — sem me dar a resposta, só a pergunta.`,
-    tarefa: "elaborar uma pergunta de treino oral sobre o tema, sem revelar a resposta",
-    contexto: formatarTemaComoContexto(tema),
-    semCache: true,
-  })
-    .then((pergunta) => {
-      resultadoEl.innerHTML = `
-        <div class="explanation-box">
-          <div class="ia-resposta">${renderMarkdown(pergunta)}</div>
-          <form id="form-resposta-quiz" style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
-            <textarea id="resposta-quiz" rows="3" placeholder="Sua resposta..." required></textarea>
-            <button class="btn btn--primary" type="submit" style="align-self:flex-start;">Responder</button>
-          </form>
-        </div>
-      `;
-      botoes.forEach((b) => (b.disabled = false));
-
-      resultadoEl.querySelector("#form-resposta-quiz").addEventListener("submit", async (e) => {
-        e.preventDefault();
-        const resposta = resultadoEl.querySelector("#resposta-quiz").value.trim();
-        if (!resposta) return;
-        botoes.forEach((b) => (b.disabled = true));
-        resultadoEl.innerHTML = `<div class="explanation-box">Corrigindo...</div>`;
-        try {
-          const feedback = await askAI({
-            pergunta: `Pergunta feita: "${pergunta}"\nResposta do usuário: "${resposta}"\n\nAvalie a resposta: diga se está correta, o que acertou e o que faltou ou precisa corrigir. Seja direto.`,
-            tarefa: "corrigir a resposta do usuário a uma pergunta de treino, apontando acertos e o que falta",
-            contexto: formatarTemaComoContexto(tema),
-            semCache: true,
-          });
-          resultadoEl.innerHTML = `
-            <div class="explanation-box">
-              <div class="ia-resposta">${renderMarkdown(feedback)}</div>
-              <div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial antes de usar.</div>
-              <button class="btn btn--secondary" id="btn-nova-pergunta" style="margin-top:12px;">Nova pergunta</button>
-            </div>
-          `;
-          resultadoEl.querySelector("#btn-nova-pergunta").addEventListener("click", () => iniciarQuizIA(resultadoEl, botoes, tema));
-        } catch (err) {
-          resultadoEl.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
-        } finally {
-          botoes.forEach((b) => (b.disabled = false));
-        }
-      });
-    })
-    .catch((err) => {
-      resultadoEl.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
-      botoes.forEach((b) => (b.disabled = false));
+  function marcarTabAtiva(tipo) {
+    tabbarEl.querySelectorAll(".ia-tab").forEach((btn) => {
+      const ativo = btn.dataset.tipo === tipo;
+      btn.classList.toggle("is-active", ativo);
+      btn.setAttribute("aria-selected", ativo ? "true" : "false");
     });
-}
+    painelEl.hidden = false;
+  }
 
-async function executarChamadaLivre(resultadoEl, botoes, chamada) {
-  botoes.forEach((b) => (b.disabled = true));
-  resultadoEl.innerHTML = `<div class="explanation-box">Gerando resposta...</div>`;
-  try {
-    const resposta = await chamada();
-    resultadoEl.innerHTML = `
-      <div class="explanation-box">
-        <div class="ia-resposta">${renderMarkdown(resposta)}</div>
+  function marcarTabComConteudo(tipo) {
+    tabbarEl.querySelector(`.ia-tab[data-tipo="${tipo}"]`)?.classList.add("has-content");
+  }
+
+  function travarTabs(trava) {
+    tabbarEl.querySelectorAll(".ia-tab").forEach((b) => (b.disabled = trava));
+  }
+
+  function renderizarPainel(tipo, dados) {
+    if (tipo === "testar") {
+      montarPainelTestar(dados);
+      return;
+    }
+    const rotuloRegerar =
+      tipo === "questao" ? "↻ Gerar outra questão" : tipo === "flashcards" ? "↻ Gerar outro baralho" : tipo === "fluxograma" ? "↻ Gerar outro fluxograma" : "↻ Gerar de novo";
+    painelEl.innerHTML = `
+      <div class="ia-tab-panel__body">${RENDER_PAINEL_IA[tipo](dados)}</div>
+      <button type="button" class="btn btn--ghost ia-tab-panel__regerar" style="margin-top:12px;padding-left:0;">${rotuloRegerar}</button>
+    `;
+    painelEl.querySelector(".ia-tab-panel__regerar").addEventListener("click", () => gerarAba(tipo));
+  }
+
+  async function gerarAba(tipo) {
+    if (tipo === "testar") {
+      await gerarPerguntaTestar();
+      return;
+    }
+    travarTabs(true);
+    painelEl.hidden = false;
+    painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">Gerando...</div></div>`;
+    try {
+      let dados;
+      if (tipo === "explicar") {
+        dados = {
+          texto: await askAI({
+            pergunta: `Explique o tema "${tema.titulo}" com mais profundidade e traga um breve exemplo de caso clínico ilustrativo.`,
+            tarefa: "explicar o tema em mais profundidade, com um exemplo de caso clínico curto ao final",
+            contexto: formatarTemaComoContexto(tema),
+          }),
+        };
+      } else if (tipo === "avaliar") {
+        dados = { texto: await avaliarTemaComIA(tema) };
+      } else if (tipo === "pegadinhas") {
+        dados = {
+          texto: await askAI({
+            pergunta: `Quais são as pegadinhas mais comuns de prova sobre "${tema.titulo}"? O que os examinadores costumam usar pra confundir o candidato?`,
+            tarefa: "listar as pegadinhas/armadilhas mais comuns de prova sobre este tema",
+            contexto: formatarTemaComoContexto(tema),
+          }),
+        };
+      } else if (tipo === "memorizar") {
+        dados = {
+          texto: await askAI({
+            pergunta: `Resuma o que é mais importante memorizar de cor sobre "${tema.titulo}" pra prova — números, critérios diagnósticos, doses, classificações. Seja objetivo, em lista.`,
+            tarefa: "listar os pontos que valem a pena memorizar de cor sobre este tema, de forma objetiva",
+            contexto: formatarTemaComoContexto(tema),
+          }),
+        };
+      } else if (tipo === "flashcards") {
+        const deck = await gerarFlashcardsComIA(tema);
+        dados = { deckId: deck.id, deckTitulo: deck.titulo, totalCards: deck.cards.length };
+      } else if (tipo === "questao") {
+        await gerarQuestaoComIA(tema);
+        dados = { criadoEm: new Date().toISOString() };
+      } else if (tipo === "fluxograma") {
+        const fluxograma = await gerarFluxogramaComIA(tema);
+        dados = { titulo: fluxograma.titulo, fluxo: fluxograma.fluxo };
+      }
+      abasEmMemoria.set(tipo, dados);
+      await salvarAbaIA(tema.id, tipo, dados);
+      marcarTabComConteudo(tipo);
+      renderizarPainel(tipo, dados);
+    } catch (err) {
+      painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">⚠ ${escapeHtml(err.message)}</div></div>`;
+    } finally {
+      travarTabs(false);
+    }
+  }
+
+  /**
+   * "Me testar" — modo quiz simples: a IA faz uma pergunta (sem revelar a
+   * resposta), o usuário responde em texto livre, a IA corrige. Cada pergunta
+   * e cada correção são chamadas sem cache (semCache) — repetir "Me testar"
+   * tem que poder trazer uma pergunta diferente, é treino, não FAQ. Só o que
+   * já tem feedback é salvo (uma pergunta ainda sem resposta é estado
+   * transitório, não "conteúdo gerado" pra consultar depois).
+   */
+  function montarPainelTestar(dados) {
+    const corpo = dados.feedback
+      ? `
+        <div class="ia-resposta" style="margin-top:12px;">${renderMarkdown(dados.feedback)}</div>
         <div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial antes de usar.</div>
+        <button type="button" class="btn btn--secondary" id="btn-testar-nova" style="margin-top:12px;">Nova pergunta</button>
+      `
+      : `
+        <form id="form-resposta-testar" style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
+          <textarea id="resposta-testar" rows="3" placeholder="Sua resposta..." required></textarea>
+          <button class="btn btn--primary" type="submit" style="align-self:flex-start;">Responder</button>
+        </form>
+      `;
+    painelEl.hidden = false;
+    painelEl.innerHTML = `
+      <div class="ia-tab-panel__body">
+        <div class="ia-resposta">${renderMarkdown(dados.pergunta)}</div>
+        ${corpo}
       </div>
     `;
-  } catch (err) {
-    resultadoEl.innerHTML = `<div class="explanation-box">⚠ ${escapeHtml(err.message)}</div>`;
-  } finally {
-    botoes.forEach((b) => (b.disabled = false));
+
+    painelEl.querySelector("#form-resposta-testar")?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const resposta = painelEl.querySelector("#resposta-testar").value.trim();
+      if (!resposta) return;
+      travarTabs(true);
+      painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">Corrigindo...</div></div>`;
+      try {
+        const feedback = await askAI({
+          pergunta: `Pergunta feita: "${dados.pergunta}"\nResposta do usuário: "${resposta}"\n\nAvalie a resposta: diga se está correta, o que acertou e o que faltou ou precisa corrigir. Seja direto.`,
+          tarefa: "corrigir a resposta do usuário a uma pergunta de treino, apontando acertos e o que falta",
+          contexto: formatarTemaComoContexto(tema),
+          semCache: true,
+        });
+        const novoDados = { ...dados, resposta, feedback };
+        abasEmMemoria.set("testar", novoDados);
+        await salvarAbaIA(tema.id, "testar", novoDados);
+        marcarTabComConteudo("testar");
+        montarPainelTestar(novoDados);
+      } catch (err) {
+        painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">⚠ ${escapeHtml(err.message)}</div></div>`;
+      } finally {
+        travarTabs(false);
+      }
+    });
+
+    painelEl.querySelector("#btn-testar-nova")?.addEventListener("click", () => gerarPerguntaTestar());
   }
+
+  async function gerarPerguntaTestar() {
+    travarTabs(true);
+    painelEl.hidden = false;
+    painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">Preparando uma pergunta...</div></div>`;
+    try {
+      const pergunta = await askAI({
+        pergunta: `Me faça UMA pergunta objetiva, estilo prova de residência, sobre "${tema.titulo}" — sem me dar a resposta, só a pergunta.`,
+        tarefa: "elaborar uma pergunta de treino oral sobre o tema, sem revelar a resposta",
+        contexto: formatarTemaComoContexto(tema),
+        semCache: true,
+      });
+      const dados = { pergunta };
+      abasEmMemoria.set("testar", dados);
+      montarPainelTestar(dados);
+    } catch (err) {
+      painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">⚠ ${escapeHtml(err.message)}</div></div>`;
+    } finally {
+      travarTabs(false);
+    }
+  }
+
+  tabbarEl.querySelectorAll(".ia-tab").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tipo = btn.dataset.tipo;
+      marcarTabAtiva(tipo);
+      if (abasEmMemoria.has(tipo)) {
+        renderizarPainel(tipo, abasEmMemoria.get(tipo));
+      } else {
+        gerarAba(tipo);
+      }
+    });
+  });
 }
