@@ -99,57 +99,77 @@ const { chromium } = require("playwright");
   console.log("Baralho curado ainda mostra botões de marcar difícil/dominado:", !!(await page.$('[data-marcar="dificil"]')));
   console.log("Baralho curado NÃO mostra botão de excluir card:", !(await page.$("[data-excluir-card]")));
 
-  // --- 9) IA sob demanda: pegadinhas, o que memorizar, me testar, fluxograma ---
+  // --- 9) IA sob demanda: pegadinhas, o que memorizar, me testar, fluxograma (agora em abas no topo do tema) ---
   await page.evaluate(() => { location.hash = "/residencia/conteudo"; });
   await page.waitForSelector(".content-area", { timeout: 10000 });
   await page.$eval(".content-area", (el) => (el.open = true));
   await page.waitForSelector(".content-list__item", { timeout: 10000 });
   await page.click(".content-list__item");
-  await page.waitForSelector("#btn-ia-pegadinhas", { timeout: 10000 });
+  await page.waitForSelector(".ia-tab", { timeout: 10000 });
 
-  console.log("Botões de IA sob demanda presentes:",
-    !!(await page.$("#btn-ia-fluxograma")) &&
-    !!(await page.$("#btn-ia-pegadinhas")) &&
-    !!(await page.$("#btn-ia-memorizar")) &&
-    !!(await page.$("#btn-ia-testar"))
+  console.log("Abas de IA sob demanda presentes:",
+    !!(await page.$('.ia-tab[data-tipo="fluxograma"]')) &&
+    !!(await page.$('.ia-tab[data-tipo="pegadinhas"]')) &&
+    !!(await page.$('.ia-tab[data-tipo="memorizar"]')) &&
+    !!(await page.$('.ia-tab[data-tipo="testar"]'))
   );
 
-  await page.click("#btn-ia-pegadinhas");
+  await page.click('.ia-tab[data-tipo="pegadinhas"]');
   await page.waitForFunction(() => {
-    const el = document.querySelector("#ia-resultado");
-    return el && el.textContent.trim().length > 20 && !el.textContent.includes("Gerando resposta...");
+    const el = document.querySelector("#ia-tab-panel");
+    return el && el.textContent.trim().length > 20 && !el.textContent.includes("Gerando...");
   }, { timeout: 30000 });
-  let resultado = await page.$eval("#ia-resultado", (el) => el.textContent.trim());
+  let resultado = await page.$eval("#ia-tab-panel", (el) => el.textContent.trim());
   console.log("Pegadinhas retornou conteúdo real da IA:", resultado.length > 20);
+  console.log("Aba 'Pegadinhas' fica marcada como já gerada:", await page.$eval('.ia-tab[data-tipo="pegadinhas"]', (el) => el.classList.contains("has-content")));
 
-  await page.click("#btn-ia-memorizar");
+  await page.click('.ia-tab[data-tipo="memorizar"]');
   await page.waitForFunction(() => {
-    const el = document.querySelector("#ia-resultado");
-    return el && el.textContent.trim().length > 20 && !el.textContent.includes("Gerando resposta...");
+    const el = document.querySelector("#ia-tab-panel");
+    return el && el.textContent.trim().length > 20 && !el.textContent.includes("Gerando...");
   }, { timeout: 30000 });
-  resultado = await page.$eval("#ia-resultado", (el) => el.textContent.trim());
+  resultado = await page.$eval("#ia-tab-panel", (el) => el.textContent.trim());
   console.log("'O que memorizar' retornou conteúdo real da IA:", resultado.length > 20);
 
+  // Voltar pra "Pegadinhas" não deve refazer a chamada de IA — só reabrir o que já foi salvo
+  await page.click('.ia-tab[data-tipo="pegadinhas"]');
+  await page.waitForTimeout(300);
+  const resultadoReaberto = await page.$eval("#ia-tab-panel", (el) => el.textContent.trim());
+  console.log("Reabrir aba já gerada mostra o conteúdo salvo instantaneamente:", !resultadoReaberto.includes("Gerando...") && resultadoReaberto.length > 20);
+
   // --- 10) Me testar (quiz interativo) ---
-  await page.click("#btn-ia-testar");
-  await page.waitForSelector("#form-resposta-quiz", { timeout: 30000 });
-  console.log("Quiz gerou uma pergunta + formulário de resposta:", !!(await page.$("#resposta-quiz")));
-  await page.fill("#resposta-quiz", "Não sei, pode me explicar?");
-  await page.click("#form-resposta-quiz button[type=submit]");
-  await page.waitForSelector("#btn-nova-pergunta", { timeout: 30000 });
-  resultado = await page.$eval("#ia-resultado", (el) => el.textContent.trim());
-  console.log("Quiz corrigiu a resposta e ofereceu nova pergunta:", resultado.length > 20 && !!(await page.$("#btn-nova-pergunta")));
+  await page.click('.ia-tab[data-tipo="testar"]');
+  await page.waitForSelector("#form-resposta-testar", { timeout: 30000 });
+  console.log("Quiz gerou uma pergunta + formulário de resposta:", !!(await page.$("#resposta-testar")));
+  await page.fill("#resposta-testar", "Não sei, pode me explicar?");
+  await page.click("#form-resposta-testar button[type=submit]");
+  await page.waitForSelector("#btn-testar-nova", { timeout: 30000 });
+  resultado = await page.$eval("#ia-tab-panel", (el) => el.textContent.trim());
+  console.log("Quiz corrigiu a resposta e ofereceu nova pergunta:", resultado.length > 20 && !!(await page.$("#btn-testar-nova")));
+  console.log("Aba 'Me testar' fica marcada como já gerada (depois do feedback):", await page.$eval('.ia-tab[data-tipo="testar"]', (el) => el.classList.contains("has-content")));
 
   // --- 11) Gerar fluxograma com IA ---
-  await page.click("#btn-ia-fluxograma");
+  await page.click('.ia-tab[data-tipo="fluxograma"]');
   await page.waitForFunction(() => {
-    const el = document.querySelector("#ia-resultado");
-    return el && (el.textContent.includes("Fluxograma criado") || el.textContent.includes("⚠"));
+    const el = document.querySelector("#ia-tab-panel");
+    if (!el) return false;
+    return el.querySelector(".ia-tab-panel__regerar") || el.textContent.includes("⚠");
   }, { timeout: 40000 });
-  resultado = await page.$eval("#ia-resultado", (el) => el.textContent.trim());
+  resultado = await page.$eval("#ia-tab-panel", (el) => el.textContent.trim());
   console.log("Fluxograma gerado com sucesso (ou erro tratado sem travar):", resultado.length > 0);
   const temFluxogramaVisual = !!(await page.$(".flow-node"));
   console.log("Fluxograma renderizado visualmente (nós do fluxograma presentes):", temFluxogramaVisual);
+
+  // --- 12) Recarregar a página do tema: abas com conteúdo salvo continuam marcadas ---
+  const urlTema = await page.evaluate(() => location.hash);
+  await page.evaluate(() => { location.hash = "/residencia/conteudo"; });
+  await page.waitForTimeout(200);
+  await page.evaluate((h) => { location.hash = h; }, urlTema);
+  await page.waitForSelector(".ia-tab", { timeout: 10000 });
+  const abasComConteudoAoRecarregar = await page.$$eval(".ia-tab.has-content", (els) => els.map((el) => el.dataset.tipo));
+  console.log("Depois de recarregar, abas já geradas continuam marcadas (persistência):",
+    ["pegadinhas", "memorizar", "testar", "fluxograma"].every((t) => abasComConteudoAoRecarregar.includes(t))
+  );
 
   console.log("Erros JS capturados:", erros.length ? erros : "nenhum");
   await browser.close();

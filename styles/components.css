@@ -666,7 +666,61 @@
 
 /* ---------- Assistente de IA ---------- */
 
-.ia-card #ia-resultado:empty { display: none; }
+/* Abas de IA de um tema (ver app/views/conteudo.js) — minimalistas, perto
+   do botão "Marcar como estudado". Cada uma gera seu conteúdo sob demanda e
+   fica marcada (::after, o pontinho) quando já existe um resultado salvo
+   pra aquele tema, pra sinalizar que reabrir a aba não custa uma nova
+   chamada de IA. */
+.ia-tabbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.ia-tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+.ia-tab:hover { background: var(--color-surface-hover); color: var(--color-text); }
+.ia-tab:disabled { opacity: 0.6; }
+
+.ia-tab.is-active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text-on-accent);
+}
+
+.ia-tab.has-content:not(.is-active)::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.ia-tab-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+.ia-tab-panel__body :first-child { margin-top: 0; }
+.ia-tab-panel__body :last-child { margin-bottom: 0; }
 
 .ia-resposta,
 .chat-msg__texto {
