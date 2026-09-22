@@ -12198,5 +12198,597 @@
       }
     ],
     "comoCai": "Cai como caso de perda de consciência transitória, testando classificação da síncope pelo contexto do episódio e reconhecimento de sinais de alarme que indicam causa cardíaca de alto risco."
+  },
+  {
+    "id": "hiperplasia-adrenal-congenita",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Hiperplasia Adrenal Congênita",
+    "resumo": "Deficiência de 21-hidroxilase como causa mais comum de HAC, suas formas clínicas (clássica perdedora de sal, virilizante simples e não clássica) e a abordagem diagnóstica/terapêutica.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; Williams Textbook of Endocrinology",
+    "secoes": [
+      {
+        "titulo": "Definição e fisiopatologia",
+        "conteudo": "A hiperplasia adrenal congênita (HAC) é um grupo de doenças autossômicas recessivas causadas por deficiência de uma das enzimas da esteroidogênese adrenal. Em mais de 90% dos casos, a enzima deficiente é a 21-hidroxilase (CYP21A2), que converte progesterona em desoxicorticosterona (via mineralocorticoide) e 17-OH-progesterona em 11-desoxicortisol (via glicocorticoide). O bloqueio enzimático reduz cortisol e aldosterona, retirando o feedback negativo sobre o ACTH — o ACTH elevado hiperestimula a adrenal, que acumula precursores (17-OH-progesterona) e os desvia para a via dos androgênios, causando virilização."
+      },
+      {
+        "titulo": "Forma clássica perdedora de sal",
+        "conteudo": "A forma mais grave (deficiência enzimática quase total). Meninas nascem com genitália ambígua (virilização intraútero pelo excesso de androgênios) — é a causa mais comum de genitália ambígua em recém-nascidos 46,XX. Meninos têm genitália normal ao nascer (não há como notar o excesso de androgênio), o que atrasa o diagnóstico. Ambos os sexos desenvolvem crise adrenal perdedora de sal entre a 1ª e 4ª semana de vida: vômitos, desidratação, hiponatremia, hipercalemia, hipoglicemia e choque — emergência que pode ser fatal se não reconhecida."
+      },
+      {
+        "titulo": "Forma virilizante simples e forma não clássica",
+        "conteudo": "Virilizante simples: deficiência enzimática parcial, produção mineralocorticoide suficiente para evitar a perda de sal, mas virilização presente (genitália ambígua em meninas; puberdade precoce heterossexual em meninos maiores). Forma não clássica (tardia): deficiência leve, assintomática ao nascimento — manifesta-se na infância/adolescência com pubarca precoce, acne, irregularidade menstrual e hirsutismo em mulheres jovens, simulando síndrome dos ovários policísticos."
+      },
+      {
+        "titulo": "Diagnóstico e triagem neonatal",
+        "conteudo": "O diagnóstico é confirmado pela dosagem de 17-hidroxiprogesterona (17-OHP) muito elevada. A HAC faz parte do teste do pezinho (triagem neonatal) justamente para identificar a forma perdedora de sal antes da crise adrenal grave. Cariótipo confirma o sexo genético em recém-nascidos com genitália ambígua. Dosagens de eletrólitos (hiponatremia/hipercalemia) e renina (elevada na forma perdedora de sal) complementam a avaliação."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Reposição de glicocorticoide (hidrocortisona) em todas as formas clássicas — suprime o ACTH, reduzindo a produção de androgênios, além de repor o cortisol deficiente. Reposição de mineralocorticoide (fludrocortisona) e suplementação de sal na forma perdedora de sal. Na crise adrenal aguda: hidrocortisona IV em dose de estresse, correção agressiva de hipoglicemia e distúrbios hidroeletrolíticos com solução salina/glicosada. Correção cirúrgica da genitália ambígua é considerada em centros especializados, com decisão compartilhada e individualizada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Genitália ambígua em recém-nascido 46,XX + história de vômitos/desidratação/hiponatremia/hipercalemia na 2ª-3ª semana de vida é o quadro clássico de HAC perdedora de sal — armadilha comum é confundir com estenose hipertrófica de piloro (que cursa com alcalose metabólica hipoclorêmica e HIPOcalemia, ao contrário da HAC que cursa com hipercalemia). 17-OH-progesterona elevada fecha o diagnóstico."
+      }
+    ],
+    "comoCai": "Cai como caso de recém-nascido com genitália ambígua ou crise de perda de sal, exigindo diferenciação de estenose hipertrófica de piloro pelo padrão eletrolítico oposto."
+  },
+  {
+    "id": "sistemas-informacao-saude",
+    "area": "residencia",
+    "categoria": "Medicina Preventiva",
+    "titulo": "Sistemas de Informação em Saúde",
+    "resumo": "Os principais sistemas de informação em saúde do SUS (SINAN, SIM, SINASC, SIH, SIAB/e-SUS) e sua função na vigilância epidemiológica e no planejamento.",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — DATASUS; Rouquayrol, Epidemiologia e Saúde",
+    "secoes": [
+      {
+        "titulo": "Função geral dos sistemas de informação em saúde",
+        "conteudo": "Sistemas de Informação em Saúde (SIS) são instrumentos que coletam, processam, analisam e disseminam dados necessários para a vigilância, o planejamento e a avaliação das ações de saúde. No Brasil, são administrados pelo DATASUS (Departamento de Informática do SUS) e alimentam os indicadores de saúde usados em todos os níveis de gestão."
+      },
+      {
+        "titulo": "SINAN — Sistema de Informação de Agravos de Notificação",
+        "conteudo": "Registra os casos de doenças e agravos de notificação compulsória (dengue, tuberculose, hanseníase, sífilis, AIDS, violência interpessoal, entre outras da lista da Portaria de Notificação Compulsória). É a base de dados fundamental para a vigilância epidemiológica de doenças transmissíveis e não transmissíveis de notificação obrigatória."
+      },
+      {
+        "titulo": "SIM — Sistema de Informação sobre Mortalidade",
+        "conteudo": "Registra os óbitos ocorridos no país a partir da Declaração de Óbito (DO). É a fonte de dados para o cálculo de indicadores de mortalidade (mortalidade geral, mortalidade infantil, mortalidade materna, mortalidade proporcional por causas) — essenciais para o perfil epidemiológico e a transição epidemiológica de uma população."
+      },
+      {
+        "titulo": "SINASC — Sistema de Informação sobre Nascidos Vivos",
+        "conteudo": "Registra os nascimentos a partir da Declaração de Nascido Vivo (DNV). Fornece os dados de denominador para os principais indicadores de saúde materno-infantil (coeficiente de mortalidade infantil, taxa de natalidade, proporção de baixo peso ao nascer, cobertura de pré-natal)."
+      },
+      {
+        "titulo": "Outros sistemas: SIH, SIAB/e-SUS",
+        "conteudo": "SIH (Sistema de Informações Hospitalares): registra as internações pagas pelo SUS via Autorização de Internação Hospitalar (AIH), gerando dados de morbidade hospitalar. SIAB/e-SUS Atenção Básica: registra a produção e o acompanhamento das equipes de Saúde da Família na atenção primária, incluindo o cadastro territorial das famílias."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Associar cada sigla à sua fonte primária de dado é o ponto mais cobrado: SIM = Declaração de Óbito, SINASC = Declaração de Nascido Vivo, SINAN = ficha de notificação compulsória, SIH = AIH (internação). Questões costumam pedir qual sistema usar para calcular um indicador específico (ex.: mortalidade materna → SIM + SINASC como denominador)."
+      }
+    ],
+    "comoCai": "Cai pedindo qual sistema de informação é a fonte correta para determinado indicador de saúde, exigindo associar a sigla ao documento/instrumento de coleta primário."
+  },
+  {
+    "id": "eletrocardiograma-interpretacao",
+    "area": "residencia",
+    "categoria": "Cardiologia",
+    "titulo": "Eletrocardiograma: Interpretação Sistemática",
+    "resumo": "Roteiro sistemático de leitura do ECG (ritmo, frequência, eixo, intervalos, ondas) e os principais padrões eletrocardiográficos cobrados em prova.",
+    "revisado": true,
+    "fonte": "Braunwald's Heart Disease; Dubin, Interpretação Rápida do ECG",
+    "secoes": [
+      {
+        "titulo": "Roteiro sistemático de leitura",
+        "conteudo": "1) Ritmo: verificar se é sinusal (onda P positiva em DII, precedendo cada QRS, com PR constante). 2) Frequência cardíaca: regra dos 300/150/100/75/60/50 dividindo pelo número de quadrados grandes entre dois R, ou 1500 dividido pelo número de quadrados pequenos. 3) Eixo elétrico: analisar polaridade do QRS em DI e aVF. 4) Intervalos: PR (normal 120-200ms), QRS (normal <120ms), QT corrigido pela fórmula de Bazett. 5) Análise de onda P, complexo QRS e onda T em cada derivação, buscando alterações de morfologia."
+      },
+      {
+        "titulo": "Intervalo PR e bloqueios atrioventriculares",
+        "conteudo": "PR >200ms = BAV de 1º grau (todos os estímulos conduzem, apenas com atraso). BAV de 2º grau Mobitz I (Wenckebach): PR aumenta progressivamente até bloquear um estímulo — geralmente benigno, nodal. Mobitz II: PR constante com bloqueio súbito e imprevisível de um estímulo — indica doença infra-hissiana, maior risco de progressão para BAVT, geralmente necessita marca-passo. BAVT (3º grau): dissociação completa entre P e QRS, com ritmo de escape."
+      },
+      {
+        "titulo": "QRS largo e bloqueios de ramo",
+        "conteudo": "QRS ≥120ms indica bloqueio de ramo ou distúrbio de condução intraventricular. Bloqueio de ramo direito (BRD): padrão rSR' em V1 (\"orelhas de coelho\") e onda S alargada em DI e V6. Bloqueio de ramo esquerdo (BRE): QRS alargado, predominantemente negativo em V1, com onda R alargada e entalhada em DI, aVL, V5-V6 — mascara a análise de isquemia/infarto no ECG (critérios de Sgarbossa são usados para avaliar IAM na vigência de BRE)."
+      },
+      {
+        "titulo": "QT longo e alterações de repolarização",
+        "conteudo": "QT corrigido (QTc) >450ms (homens) ou >460-470ms (mulheres) define QT longo, que predispõe a Torsades de Pointes (taquicardia ventricular polimórfica). Causas: congênita (síndrome do QT longo), medicamentos (antiarrítmicos, antipsicóticos, macrolídeos), distúrbios eletrolíticos (hipocalemia, hipomagnesemia, hipocalcemia). Onda T apiculada sugere hipercalemia; onda U proeminente sugere hipocalemia."
+      },
+      {
+        "titulo": "Padrões de emergência a reconhecer",
+        "conteudo": "Supradesnivelamento do segmento ST (IAMCSST): convexidade para cima em derivações contíguas correspondendo a um território coronariano. Onda T apiculada simétrica + QRS alargado + achatamento de onda P (em casos graves) = hipercalemia. Padrão S1Q3T3 (onda S em DI, onda Q e T invertida em DIII) sugere sobrecarga aguda de VD, clássico do TEP maciço, embora pouco sensível. Alternância elétrica sugere derrame pericárdico volumoso/tamponamento."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O reconhecimento visual rápido de supradesnível de ST com território coronariano correspondente (ex.: DII/DIII/aVF = parede inferior, V1-V4 = parede anterior) é o item mais cobrado em provas de emergência. Diferenciação entre Mobitz I (benigno, observação) e Mobitz II (grave, indicação de marca-passo) é armadilha clássica."
+      }
+    ],
+    "comoCai": "Cai como imagem de traçado de ECG pedindo identificação de ritmo, bloqueio ou padrão isquêmico, sempre exigindo o raciocínio sistemático de leitura."
+  },
+  {
+    "id": "doencas-neuromusculares",
+    "area": "residencia",
+    "categoria": "Neurologia",
+    "titulo": "Doenças Neuromusculares: Neuropatias, Miopatias e Doença do Neurônio Motor",
+    "resumo": "Diferenciação semiológica entre lesão de neurônio motor superior, neurônio motor inferior, nervo periférico, junção neuromuscular e músculo, e as principais doenças de cada nível.",
+    "revisado": true,
+    "fonte": "Adams and Victor's Principles of Neurology; Harrison's Principles of Internal Medicine",
+    "secoes": [
+      {
+        "titulo": "Localização topográfica da fraqueza muscular",
+        "conteudo": "O primeiro passo diante de fraqueza é localizar o nível da lesão. Neurônio motor superior (piramidal): fraqueza com hiperreflexia, espasticidade, sinal de Babinski presente. Neurônio motor inferior (corno anterior/raiz/nervo): fraqueza com hiporreflexia/arreflexia, atrofia, fasciculações. Junção neuromuscular: fraqueza flutuante, fatigável, sem alteração sensitiva. Músculo (miopatia): fraqueza proximal simétrica, sem alteração sensitiva, reflexos preservados até fases avançadas."
+      },
+      {
+        "titulo": "Neuropatia periférica",
+        "conteudo": "Acomete os nervos periféricos, causando fraqueza de padrão distal (\"em bota e luva\") associada a alterações sensitivas (parestesias, hipoestesia) e hiporreflexia. Causas mais comuns: diabetes mellitus (polineuropatia sensitivo-motora simétrica distal, a causa mais frequente no mundo), alcoolismo, deficiência de B12, uremia, hipotireoidismo, neuropatias tóxicas/medicamentosas (quimioterápicos). Padrão axonal (perda de amplitude no ENMG) vs desmielinizante (perda de velocidade de condução) orienta a etiologia."
+      },
+      {
+        "titulo": "Doenças da junção neuromuscular",
+        "conteudo": "Miastenia gravis: fraqueza flutuante, piora ao esforço repetido e ao longo do dia, com predileção por musculatura ocular (ptose, diplopia) e bulbar — mediada por anticorpos anti-receptor de acetilcolina. Síndrome miastênica de Lambert-Eaton: fraqueza proximal que MELHORA com o esforço repetido (ao contrário da miastenia gravis), associada a neoplasia (paraneoplásica, classicamente carcinoma pulmonar de pequenas células), por anticorpos contra canais de cálcio pré-sinápticos."
+      },
+      {
+        "titulo": "Doença do neurônio motor — ELA",
+        "conteudo": "Esclerose Lateral Amiotrófica (ELA): doença neurodegenerativa progressiva que acomete SIMULTANEAMENTE neurônio motor superior e inferior, sem alteração sensitiva e sem alteração esfincteriana/cognitiva na maioria dos casos — essa combinação (sinais de NMS + NMI, sem déficit sensitivo) é a marca diagnóstica da doença. Cursa com fraqueza progressiva, fasciculações, espasticidade e, eventualmente, disfagia e insuficiência respiratória (causa mais comum de óbito). Não tem cura; riluzol e edaravone têm efeito modesto na sobrevida."
+      },
+      {
+        "titulo": "Miopatias",
+        "conteudo": "Caracterizam-se por fraqueza muscular proximal e simétrica (dificuldade para subir escadas, levantar os braços), sem alteração sensitiva, com CK (creatinoquinase) tipicamente elevada nas formas inflamatórias/distróficas. Incluem as miopatias inflamatórias (polimiosite, dermatomiosite), distrofias musculares (Duchenne, Becker) e miopatias induzidas por estatina."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tríade fraqueza proximal + sem alteração sensitiva + CK elevada aponta para miopatia. Fraqueza que melhora com esforço repetido (Lambert-Eaton) versus piora com esforço repetido (miastenia gravis) é pegadinha clássica. ELA é a doença clássica de prova para combinar sinais de NMS e NMI simultaneamente sem déficit sensitivo."
+      }
+    ],
+    "comoCai": "Cai como caso de fraqueza muscular pedindo a localização topográfica (nervo, junção, músculo ou neurônio motor) a partir do padrão de distribuição, reflexos e presença/ausência de alteração sensitiva."
+  },
+  {
+    "id": "alergia-alimentar",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Alergia Alimentar na Infância",
+    "resumo": "Diferenciação entre alergia alimentar mediada e não mediada por IgE, com destaque para a alergia à proteína do leite de vaca (APLV), diagnóstico e manejo dietético.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; Sociedade Brasileira de Pediatria — Consenso sobre Alergia Alimentar",
+    "secoes": [
+      {
+        "titulo": "Classificação: mediada, não mediada e mista por IgE",
+        "conteudo": "Mediada por IgE: reação imediata (minutos a 2 horas), com urticária, angioedema, vômitos, broncoespasmo e, no extremo, anafilaxia. Não mediada por IgE (mediada por células): reação tardia (horas a dias), predominando manifestações gastrointestinais — proctocolite alérgica (sangue nas fezes em lactente com bom estado geral), enterocolite induzida por proteína alimentar (FPIES), enteropatia induzida por proteína. Mista: combina os dois mecanismos, como na dermatite atópica e esofagite eosinofílica."
+      },
+      {
+        "titulo": "Alergia à Proteína do Leite de Vaca (APLV)",
+        "conteudo": "É a alergia alimentar mais comum no primeiro ano de vida. Manifestações variam desde sintomas gastrointestinais leves (regurgitação, cólica, diarreia) até proctocolite alérgica (sangue vivo nas fezes em lactente em aleitamento materno ou fórmula, com bom estado geral) e, mais raramente, reações IgE-mediadas graves. Diferencia-se de intolerância à lactose por não ser um problema enzimático (deficiência de lactase), mas sim uma reação imunológica à proteína."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "O diagnóstico é primariamente clínico: história alimentar detalhada, correlação temporal entre ingestão e sintomas, e teste de exclusão-reintrodução (padrão-ouro): retirada do alimento suspeito por 2-4 semanas com melhora dos sintomas, seguida de reintrodução com reaparecimento dos sintomas confirma o diagnóstico. Testes cutâneos (prick test) e IgE específica auxiliam nas formas IgE-mediadas, mas têm baixo valor preditivo isolado nas formas não mediadas por IgE."
+      },
+      {
+        "titulo": "Manejo dietético",
+        "conteudo": "Em lactentes amamentados com proctocolite alérgica: manter aleitamento materno exclusivo, com exclusão de leite de vaca e derivados da dieta materna. Em lactentes em uso de fórmula: substituir por fórmula extensamente hidrolisada (primeira escolha) ou fórmula de aminoácidos (casos graves/refratários) — fórmulas à base de soja NÃO são recomendadas como primeira linha pela reatividade cruzada. A maioria das crianças desenvolve tolerância até os 3-5 anos de idade, permitindo reintrodução gradual supervisionada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Sangue nas fezes em lactente com bom estado geral, em aleitamento materno exclusivo, é o quadro clássico de proctocolite alérgica por APLV — armadilha é pedir exclusão de leite de vaca da dieta MATERNA (não suspender a amamentação). Diferenciar de intolerância à lactose (mecanismo enzimático, sem sangue nas fezes, com fezes explosivas e ácidas) é ponto frequente."
+      }
+    ],
+    "comoCai": "Cai como caso de lactente com sangue nas fezes ou sintomas gastrointestinais recorrentes, exigindo diferenciação entre APLV e intolerância à lactose e a conduta dietética correta."
+  },
+  {
+    "id": "abordagem-anemias",
+    "area": "residencia",
+    "categoria": "Hematologia",
+    "titulo": "Introdução ao Estudo das Anemias",
+    "resumo": "Classificação morfológica das anemias pelo VCM (microcítica, normocítica, macrocítica) como primeiro passo do raciocínio diagnóstico, e o papel do índice de reticulócitos.",
+    "revisado": true,
+    "fonte": "Harrison's Principles of Internal Medicine; Hoffbrand, Hematologia Clínica",
+    "secoes": [
+      {
+        "titulo": "Definição e primeira abordagem",
+        "conteudo": "Anemia é definida pela redução da concentração de hemoglobina abaixo do valor de referência para idade e sexo (geralmente <13g/dL em homens e <12g/dL em mulheres, segundo a OMS). A abordagem inicial sistemática usa o VCM (Volume Corpuscular Médio) do hemograma para classificar a anemia morfologicamente, direcionando a investigação etiológica."
+      },
+      {
+        "titulo": "Classificação pelo VCM",
+        "conteudo": "Microcítica (VCM <80fL): sugere deficiência de produção de hemoglobina — anemia ferropriva (a causa mais comum no mundo), talassemias, anemia de doença crônica (fase avançada), anemia sideroblástica. Normocítica (VCM 80-100fL): anemia de doença crônica (fase inicial), anemia hemolítica aguda, anemia por perda aguda de sangue, doença renal crônica (deficiência de eritropoetina), anemia aplásica. Macrocítica (VCM >100fL): deficiência de B12/folato (megaloblástica), hipotireoidismo, doença hepática, uso de álcool, síndromes mielodisplásicas, reticulocitose acentuada (hemólise)."
+      },
+      {
+        "titulo": "Índice de reticulócitos",
+        "conteudo": "Complementa o VCM ao indicar se a medula óssea está respondendo adequadamente à anemia. Reticulocitose (resposta medular adequada) sugere perda/destruição periférica de hemácias (hemorragia aguda, hemólise). Reticulocitopenia (resposta medular inadequada) sugere problema de produção medular (deficiência de ferro/B12/folato, aplasia, infiltração medular, doença renal crônica)."
+      },
+      {
+        "titulo": "Sinais e sintomas gerais",
+        "conteudo": "Fadiga, palidez cutaneomucosa, dispneia aos esforços, taquicardia, sopro sistólico funcional (por hiperfluxo compensatório). A intensidade dos sintomas depende mais da velocidade de instalação do que do grau absoluto de queda da hemoglobina — anemias de instalação lenta e crônica (ex.: ferropriva) podem ser bem toleradas até níveis muito baixos."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O raciocínio VCM + índice de reticulócitos é a espinha dorsal de praticamente toda questão de anemia em prova — sempre classificar primeiro por VCM (micro/normo/macrocítica) antes de pensar em etiologias específicas. Esse tema serve de base introdutória para os temas específicos de cada classe (anemias carenciais, hemolíticas)."
+      }
+    ],
+    "comoCai": "Cai como ponto de partida de casos clínicos de anemia, exigindo a classificação inicial por VCM antes de direcionar a investigação etiológica específica."
+  },
+  {
+    "id": "obesidade-infantil",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Obesidade Infantil e na Adolescência",
+    "resumo": "Diagnóstico da obesidade em pediatria pelas curvas de IMC por idade e sexo, comorbidades associadas e abordagem terapêutica centrada em mudança de estilo de vida.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; Sociedade Brasileira de Pediatria",
+    "secoes": [
+      {
+        "titulo": "Diagnóstico: curvas de IMC por idade",
+        "conteudo": "Diferentemente do adulto, o diagnóstico de sobrepeso/obesidade em crianças e adolescentes NÃO usa pontos de corte fixos de IMC, mas sim o IMC plotado em curvas de referência específicas por idade e sexo (curvas da OMS). Sobrepeso: IMC entre os percentis 85 e 97 (ou escore-z entre +1 e +2). Obesidade: IMC ≥percentil 97 (ou escore-z >+2). Obesidade grave: IMC ≥percentil 99.9 (ou escore-z >+3)."
+      },
+      {
+        "titulo": "Etiologia",
+        "conteudo": "A grande maioria dos casos (>95%) é de obesidade exógena/primária, multifatorial, decorrente de desequilíbrio entre ingesta calórica e gasto energético, com forte componente ambiental e comportamental (sedentarismo, dieta hipercalórica, fatores familiares/socioeconômicos). Causas secundárias (endocrinológicas — hipotireoidismo, síndrome de Cushing; genéticas — síndrome de Prader-Willi) são raras e devem ser suspeitadas quando há baixa estatura associada (a criança obesa exógena tipicamente tem estatura normal ou aumentada) ou dismorfismos."
+      },
+      {
+        "titulo": "Comorbidades associadas",
+        "conteudo": "Metabólicas: resistência insulínica, síndrome metabólica, dislipidemia, esteatose hepática não alcoólica (a doença hepática crônica mais comum em crianças obesas). Ortopédicas: epifisiólise femoral proximal, geno valgo, dor articular. Respiratórias: apneia obstrutiva do sono, asma. Psicossociais: baixa autoestima, bullying, depressão — impacto relevante e frequentemente subestimado."
+      },
+      {
+        "titulo": "Abordagem terapêutica",
+        "conteudo": "Primeira linha é sempre a mudança de estilo de vida: reeducação alimentar (redução de ultraprocessados e açúcares livres), aumento de atividade física, redução de tempo de tela, e envolvimento familiar (mudanças no ambiente doméstico, não apenas na criança isoladamente). Farmacoterapia e cirurgia bariátrica são reservadas para casos graves/refratários em adolescentes selecionados, com critérios rígidos, e não são primeira linha."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O ponto mais cobrado é o uso de curvas de IMC por idade/sexo (não pontos de corte fixos) para o diagnóstico. Obesidade associada a BAIXA estatura é sinal de alarme para causa secundária (endócrina/genética), enquanto obesidade exógena cursa com estatura normal/alta — essa distinção é clássica de prova."
+      }
+    ],
+    "comoCai": "Cai como caso de criança/adolescente com excesso de peso pedindo classificação pela curva de IMC e reconhecimento de sinais de alarme para causa secundária."
+  },
+  {
+    "id": "constipacao-intestinal-infantil",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Constipação Intestinal na Infância",
+    "resumo": "Diferenciação entre constipação funcional (a grande maioria dos casos) e doença de Hirschsprung, usando os critérios de Roma IV e os sinais de alarme.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; Critérios de Roma IV",
+    "secoes": [
+      {
+        "titulo": "Constipação funcional — a causa mais comum",
+        "conteudo": "Responde por mais de 90-95% dos casos de constipação em pediatria. Frequentemente inicia-se em momentos de transição (desfralde, introdução alimentar, início escolar) por comportamento de retenção voluntária das fezes (evitação da evacuação dolorosa), criando um ciclo vicioso: retenção → fezes mais endurecidas e volumosas → evacuação mais dolorosa → mais retenção. Diagnosticada pelos Critérios de Roma IV: presença de pelo menos 2 dos seguintes por ≥1 mês (crianças <4 anos) ou ≥2 meses (≥4 anos): ≤2 evacuações/semana, história de retenção fecal excessiva, história de evacuação dolorosa/endurecida, fezes de grande diâmetro, massa fecal palpável no reto/abdome, escape fecal (encoprese)."
+      },
+      {
+        "titulo": "Doença de Hirschsprung — o principal diagnóstico diferencial",
+        "conteudo": "Causada pela ausência congênita de células ganglionares no plexo mioentérico de um segmento do cólon distal, causando obstrução funcional. Classicamente se manifesta no PERÍODO NEONATAL com atraso na eliminação de mecônio (>48 horas de vida), distensão abdominal e vômitos — diferente da constipação funcional, que raramente se inicia no período neonatal. Ao toque retal, pode haver \"sinal da explosão\" (eliminação explosiva de fezes e gases após a retirada do dedo)."
+      },
+      {
+        "titulo": "Sinais de alarme (red flags) para causa orgânica",
+        "conteudo": "Atraso na eliminação de mecônio (>48h), início da constipação nos primeiros meses de vida, distensão abdominal importante, vômitos biliosos, ampola retal vazia ao toque com fezes explosivas à retirada do dedo, má progressão pondero-estatural, sangue nas fezes (fora do contexto de fissura anal). A presença de qualquer um desses sinais direciona a investigação para doença de Hirschsprung ou outra causa orgânica, e não constipação funcional."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento da constipação funcional",
+        "conteudo": "O diagnóstico é clínico, pelos critérios de Roma IV, sem necessidade de exames complementares na ausência de sinais de alarme. Tratamento: desimpactação fecal inicial (via oral com polietilenoglicol, preferencialmente, ou via retal em casos refratários), seguida de terapia de manutenção prolongada (meses) com laxante osmótico (polietilenoglicol é primeira linha), associada a orientações comportamentais (rotina de ida ao banheiro, dieta rica em fibras)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Atraso na eliminação de mecônio além de 48 horas de vida é o dado mais específico para suspeitar de doença de Hirschsprung e diferenciar de constipação funcional. Biópsia retal (ausência de células ganglionares) é o padrão-ouro diagnóstico para Hirschsprung quando suspeitado."
+      }
+    ],
+    "comoCai": "Cai como caso de criança constipada pedindo diferenciação entre constipação funcional (a regra) e doença de Hirschsprung (exceção, sinalizada por atraso de mecônio e início neonatal)."
+  },
+  {
+    "id": "hipofise-hiperprolactinemia",
+    "area": "residencia",
+    "categoria": "Endocrinologia",
+    "titulo": "Hipófise: Hiperprolactinemia e Prolactinoma",
+    "resumo": "Causas de hiperprolactinemia (fisiológicas, medicamentosas, patológicas), o quadro clínico de prolactinoma e sua abordagem terapêutica com agonistas dopaminérgicos.",
+    "revisado": true,
+    "fonte": "Williams Textbook of Endocrinology; Harrison's Principles of Internal Medicine",
+    "secoes": [
+      {
+        "titulo": "Causas de hiperprolactinemia",
+        "conteudo": "Fisiológicas: gravidez, lactação, estresse, sono, estimulação mamilar. Medicamentosas — a causa mais comum na prática clínica: antipsicóticos (especialmente risperidona, haloperidol), antieméticos (metoclopramida, domperidona), antidepressivos, verapamil — todos por bloqueio dopaminérgico (a dopamina é o principal inibidor tônico da secreção de prolactina). Patológicas: prolactinoma (tumor hipofisário mais comum), hipotireoidismo primário (TRH elevado estimula prolactina), doença renal crônica, lesões que comprimem a haste hipofisária (\"efeito de haste\" — interrompe o transporte de dopamina até a hipófise, mesmo sem o tumor ser produtor de prolactina)."
+      },
+      {
+        "titulo": "Quadro clínico",
+        "conteudo": "Em mulheres: galactorreia, irregularidade menstrual/amenorreia, infertilidade (a prolactina suprime o eixo hipotálamo-hipófise-gonadal). Em homens: diminuição da libido, disfunção erétil, infertilidade, e mais raramente galactorreia — o diagnóstico em homens costuma ser mais tardio, com tumores maiores (macroprolactinomas) já causando sintomas compressivos (cefaleia, alteração de campo visual por compressão do quiasma óptico — hemianopsia bitemporal)."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Dosagem de prolactina sérica (excluir gravidez e causas medicamentosas antes de investigar tumor). Níveis muito elevados (>200-250ng/mL) sugerem fortemente prolactinoma. Ressonância magnética de hipófise confirma e classifica o tumor: microprolactinoma (<10mm) ou macroprolactinoma (≥10mm). Avaliar função tireoidiana (TSH) para excluir hipotireoidismo como causa."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Agonistas dopaminérgicos são a primeira linha (diferente da maioria dos outros tumores hipofisários, que são tratados cirurgicamente): cabergolina (preferida, maior eficácia e melhor tolerância) ou bromocriptina. Reduzem o tamanho tumoral e normalizam a prolactina na maioria dos casos. Cirurgia transesfenoidal é reservada para casos refratários ao tratamento clínico ou intolerância aos agonistas dopaminérgicos."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Prolactinoma é a ÚNICA exceção entre os tumores hipofisários funcionantes em que o tratamento de escolha é clínico (agonista dopaminérgico), não cirúrgico — ponto muito cobrado. Sempre excluir gravidez e causa medicamentosa (antipsicóticos) antes de investigar tumor hipofisário."
+      }
+    ],
+    "comoCai": "Cai como caso de galactorreia/amenorreia ou infertilidade pedindo a investigação escalonada de hiperprolactinemia, com destaque para excluir causas fisiológicas e medicamentosas antes de pensar em prolactinoma."
+  },
+  {
+    "id": "choque-cardiogenico-classificacao",
+    "area": "residencia",
+    "categoria": "Cardiologia",
+    "titulo": "Choque: Classificação e Abordagem Inicial",
+    "resumo": "Os quatro tipos fisiopatológicos de choque (hipovolêmico, cardiogênico, distributivo e obstrutivo), seus parâmetros hemodinâmicos característicos e princípios de manejo.",
+    "revisado": true,
+    "fonte": "Harrison's Principles of Internal Medicine; Braunwald's Heart Disease",
+    "secoes": [
+      {
+        "titulo": "Definição",
+        "conteudo": "Choque é um estado de hipoperfusão tecidual generalizada e inadequada em relação à demanda metabólica, levando a disfunção celular e, se não corrigido, disfunção orgânica progressiva e morte. Manifesta-se clinicamente por hipotensão (nem sempre presente nas fases iniciais compensadas), taquicardia, alteração do nível de consciência, oligúria e pele fria/pegajosa ou, em algumas formas, quente."
+      },
+      {
+        "titulo": "Choque hipovolêmico",
+        "conteudo": "Causado por perda de volume intravascular (hemorragia, desidratação, perdas gastrointestinais). Perfil hemodinâmico: débito cardíaco baixo, resistência vascular sistêmica alta (vasoconstrição compensatória), pressão venosa central baixa. Extremidades frias, tempo de enchimento capilar prolongado. Tratamento: reposição volêmica agressiva (cristaloides) e controle da fonte de perda."
+      },
+      {
+        "titulo": "Choque cardiogênico",
+        "conteudo": "Causado por falha da bomba cardíaca (IAM extenso, miocardiopatia terminal, arritmias graves, complicações mecânicas do IAM como ruptura de septo/músculo papilar). Perfil hemodinâmico: débito cardíaco baixo, resistência vascular sistêmica alta, pressão venosa central/pressão capilar pulmonar ALTA (congestão, diferente do hipovolêmico). Extremidades frias, estertores pulmonares, turgência jugular. Tratamento: inotrópicos, suporte circulatório mecânico (balão intra-aórtico, ECMO) e tratamento da causa de base (revascularização no IAM)."
+      },
+      {
+        "titulo": "Choque distributivo e obstrutivo",
+        "conteudo": "Distributivo (séptico é o protótipo, também anafilático e neurogênico): vasodilatação periférica intensa — débito cardíaco normal/alto, resistência vascular sistêmica BAIXA, extremidades quentes (\"choque quente\") nas fases iniciais. Obstrutivo: obstrução mecânica ao fluxo sanguíneo (tamponamento cardíaco, TEP maciço, pneumotórax hipertensivo) — débito cardíaco baixo por impedimento mecânico ao enchimento/ejeção, com sinais específicos da causa (pulso paradoxal no tamponamento, turgência jugular sem estase pulmonar no TEP)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tabela de perfis hemodinâmicos (débito cardíaco, resistência vascular sistêmica, pressão de enchimento) é o conteúdo mais cobrado para diferenciar os quatro tipos de choque. Extremidades QUENTES apontam para choque distributivo (séptico), enquanto extremidades FRIAS apontam para hipovolêmico, cardiogênico ou obstrutivo — primeira bifurcação do raciocínio em prova."
+      }
+    ],
+    "comoCai": "Cai como caso de paciente hipotenso pedindo a classificação do tipo de choque a partir de dados hemodinâmicos e do exame físico (temperatura de extremidades, turgência jugular, ausculta pulmonar)."
+  },
+  {
+    "id": "hipertensao-arterial-infancia",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Hipertensão Arterial na Criança e no Adolescente",
+    "resumo": "Diagnóstico de HAS pediátrica por tabelas de percentil de PA por idade, sexo e estatura, e a diferença fundamental em relação ao adulto: predomínio de causas secundárias em crianças menores.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; American Academy of Pediatrics — Clinical Practice Guideline for Screening and Management of High Blood Pressure in Children and Adolescents",
+    "secoes": [
+      {
+        "titulo": "Diagnóstico: tabelas de percentil",
+        "conteudo": "Diferente do adulto (que usa valores absolutos fixos), o diagnóstico de hipertensão em crianças <13 anos é feito por tabelas de percentil de PA ajustadas por idade, sexo e percentil de ESTATURA (não apenas idade) — uma criança mais alta tem PA normal mais elevada que uma criança da mesma idade porém mais baixa. PA normal: <percentil 90. PA elevada: percentil 90-95. Hipertensão estágio 1: percentil 95 a 95+12mmHg. Hipertensão estágio 2: acima disso. A partir dos 13 anos, usam-se os mesmos pontos de corte do adulto (≥130/80mmHg)."
+      },
+      {
+        "titulo": "Predomínio de causas secundárias em crianças pequenas",
+        "conteudo": "Ao contrário do adulto (onde >90% é HAS primária/essencial), quanto MENOR a criança e mais GRAVE a hipertensão, maior a probabilidade de causa SECUNDÁRIA. Em lactentes e pré-escolares, a grande maioria dos casos é secundária. Causas mais comuns por faixa etária: recém-nascidos — trombose de artéria renal (relacionada a cateterismo umbilical); lactentes/pré-escolares — doença renal parenquimatosa e coarctação de aorta; escolares/adolescentes — doença renal parenquimatosa ainda predomina, mas a HAS primária (associada a obesidade, história familiar) torna-se progressivamente mais comum."
+      },
+      {
+        "titulo": "Investigação",
+        "conteudo": "Confirmar a hipertensão com medidas repetidas em consultas diferentes antes de rotular a criança. Investigação básica: exame de urina, função renal, eletrólitos, ecografia renal e de vias urinárias. Em crianças pequenas ou com hipertensão grave, investigar causas secundárias (renais, endócrinas — feocromocitoma, hiperaldosteronismo —, coarctação de aorta) mais ativamente do que se faria em adultos."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "Mudança de estilo de vida (controle de peso, atividade física, redução de sódio) é a base do tratamento, especialmente na HAS primária associada a obesidade. Farmacoterapia é indicada para hipertensão sintomática, estágio 2, secundária, com lesão de órgão-alvo, ou refratária a mudanças de estilo de vida — IECA/BRA e bloqueadores de canal de cálcio são frequentemente usados, com escolha guiada pela etiologia (ex.: IECA é preferido quando há proteinúria/doença renal)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O ponto mais cobrado é a relação inversa entre idade e probabilidade de causa secundária: QUANTO MENOR a criança, MAIOR a chance de HAS secundária — em recém-nascido/lactente hipertenso, sempre pensar em causa renal ou coarctação de aorta antes de HAS primária."
+      }
+    ],
+    "comoCai": "Cai como caso de criança com PA elevada pedindo o uso correto das tabelas de percentil e o raciocínio de que, quanto mais nova a criança, maior a probabilidade de causa secundária."
+  },
+  {
+    "id": "iras-infeccao-sitio-cirurgico",
+    "area": "residencia",
+    "categoria": "Infectologia",
+    "titulo": "Infecções Relacionadas à Assistência à Saúde: Infecção de Sítio Cirúrgico e Antibioticoprofilaxia",
+    "resumo": "Classificação das feridas cirúrgicas por potencial de contaminação, definição e fatores de risco para infecção de sítio cirúrgico, e os princípios da antibioticoprofilaxia cirúrgica.",
+    "revisado": true,
+    "fonte": "CDC — Guideline for Prevention of Surgical Site Infection; Sabiston Textbook of Surgery",
+    "secoes": [
+      {
+        "titulo": "Infecções Relacionadas à Assistência à Saúde (IRAS)",
+        "conteudo": "São infecções adquiridas durante a prestação de cuidados de saúde, não presentes nem em incubação no momento da admissão. As principais categorias de vigilância são: infecção do trato urinário associada a cateter vesical, infecção de corrente sanguínea associada a cateter venoso central, pneumonia associada à ventilação mecânica e infecção de sítio cirúrgico (ISC) — cada uma com critérios diagnósticos padronizados de vigilância epidemiológica."
+      },
+      {
+        "titulo": "Classificação das feridas cirúrgicas",
+        "conteudo": "Limpa: cirurgia eletiva, sem penetração em trato respiratório/digestivo/urinário/biliar, sem inflamação (ex.: herniorrafia). Potencialmente contaminada: penetração controlada em um desses tratos, sem contaminação incomum (ex.: colecistectomia eletiva, apendicectomia sem perfuração). Contaminada: quebra da técnica asséptica, contaminação grosseira pelo conteúdo do trato gastrointestinal, ferimento traumático recente. Infectada/suja: infecção clínica já presente, pus, víscera perfurada com conteúdo purulento. Essa classificação determina diretamente o risco de infecção e a indicação de profilaxia/tratamento antibiótico."
+      },
+      {
+        "titulo": "Definição e fatores de risco de infecção de sítio cirúrgico",
+        "conteudo": "ISC é definida como infecção que ocorre no local da cirurgia dentro de 30 dias da operação (ou até 90 dias se houver implante de prótese), classificada em superficial (pele/subcutâneo), profunda (fáscia/músculo) ou de órgão/cavidade. Fatores de risco: classificação da ferida (contaminada/infectada), duração prolongada da cirurgia, diabetes mal controlado, obesidade, tabagismo, imunossupressão, desnutrição, hipotermia perioperatória."
+      },
+      {
+        "titulo": "Princípios da antibioticoprofilaxia cirúrgica",
+        "conteudo": "Indicada em cirurgias limpas com implante de prótese/material sintético, cirurgias potencialmente contaminadas e a maioria das contaminadas. Deve ser administrada na indução anestésica, até 60 minutos antes da incisão (cefalosporinas), com dose única na maioria dos casos — redosagem intraoperatória se a cirurgia ultrapassar 2 meias-vidas do antibiótico ou houver perda sanguínea significativa. Manter por mais de 24 horas no pós-operatório NÃO reduz infecção e aumenta resistência bacteriana — é um erro comum a ser evitado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O timing da profilaxia (30-60 minutos antes da incisão) e a regra de NÃO prolongar além de 24h são os pontos mais cobrados. A classificação da ferida cirúrgica (limpa/potencialmente contaminada/contaminada/infectada) é usada tanto para prever risco de ISC quanto para decidir profilaxia versus tratamento antibiótico terapêutico."
+      }
+    ],
+    "comoCai": "Cai pedindo a classificação de uma ferida cirúrgica descrita no enunciado e/ou o momento e a duração corretos da antibioticoprofilaxia perioperatória."
+  },
+  {
+    "id": "neoplasias-endocrinas-multiplas",
+    "area": "residencia",
+    "categoria": "Endocrinologia",
+    "titulo": "Neoplasias Endócrinas Múltiplas (NEM)",
+    "resumo": "As síndromes de Neoplasia Endócrina Múltipla tipo 1 e tipo 2, seus componentes tumorais característicos e a base genética autossômica dominante.",
+    "revisado": true,
+    "fonte": "Williams Textbook of Endocrinology; Harrison's Principles of Internal Medicine",
+    "secoes": [
+      {
+        "titulo": "Conceito geral",
+        "conteudo": "As síndromes de Neoplasia Endócrina Múltipla (NEM) são doenças genéticas autossômicas dominantes que predispõem ao desenvolvimento de tumores em múltiplas glândulas endócrinas, de forma sincrônica ou metacrônica. O reconhecimento é importante porque a identificação de um componente tumoral deve motivar o rastreamento ativo dos demais órgãos-alvo da síndrome no paciente e em seus familiares."
+      },
+      {
+        "titulo": "NEM tipo 1 (síndrome de Wermer)",
+        "conteudo": "Causada por mutação no gene MEN1 (supressor tumoral). Tríade clássica dos \"3 Ps\": Paratireoide (hiperparatireoidismo primário por hiperplasia/adenoma — é a manifestação mais comum e geralmente a mais precoce), Pâncreas (tumores neuroendócrinos pancreáticos — gastrinoma, causando síndrome de Zollinger-Ellison, é o funcionante mais comum; insulinoma também ocorre), Pituitária/hipófise (adenomas hipofisários, mais comumente prolactinoma)."
+      },
+      {
+        "titulo": "NEM tipo 2A e 2B",
+        "conteudo": "Causadas por mutação no proto-oncogene RET. NEM 2A: carcinoma medular de tireoide (quase 100% dos casos, é o componente mais precoce e definidor), feocromocitoma (geralmente bilateral), hiperparatireoidismo primário. NEM 2B: carcinoma medular de tireoide (mais agressivo e precoce que na NEM 2A), feocromocitoma, e o achado fenotípico característico de neuromas de mucosa (lábios, língua) associados a hábito marfanoide — SEM hiperparatireoidismo, diferenciando-a da NEM 2A."
+      },
+      {
+        "titulo": "Rastreamento e conduta",
+        "conteudo": "Diante do diagnóstico de qualquer componente tumoral dessas síndromes (especialmente em paciente jovem ou com história familiar), deve-se rastrear ativamente os demais órgãos-alvo com dosagens hormonais e exames de imagem direcionados. Teste genético (mutação RET) em familiares de paciente com NEM 2 permite tireoidectomia profilática antes do desenvolvimento do carcinoma medular, que costuma ser precoce e agressivo nessas síndromes."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Decorar os \"3 Ps\" da NEM 1 (Paratireoide, Pâncreas, Pituitária) e associar carcinoma medular de tireoide + feocromocitoma ao RET (NEM 2) é o conteúdo mais cobrado. A presença de neuromas de mucosa e hábito marfanoide sem hiperparatireoidismo aponta especificamente para NEM 2B, diferenciando de 2A."
+      }
+    ],
+    "comoCai": "Cai como caso clínico com dois ou mais tumores endócrinos no mesmo paciente ou em familiares, pedindo o reconhecimento da síndrome de NEM correspondente."
+  },
+  {
+    "id": "henoch-schonlein-vasculite-iga",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Púrpura de Henoch-Schönlein (Vasculite por IgA)",
+    "resumo": "A vasculite sistêmica mais comum da infância, com sua tétrade clássica (púrpura palpável, artrite, dor abdominal, acometimento renal) e o risco de nefropatia por IgA.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; Kliegman, Textbook of Pediatrics",
+    "secoes": [
+      {
+        "titulo": "Definição e epidemiologia",
+        "conteudo": "A Púrpura de Henoch-Schönlein, atualmente denominada vasculite por IgA, é a vasculite sistêmica mais comum na infância, tipicamente acometendo crianças entre 3-10 anos. É mediada por depósito de complexos imunes de IgA nos pequenos vasos, frequentemente precedida (1-3 semanas antes) por infecção de via aérea superior."
+      },
+      {
+        "titulo": "Tétrade clínica clássica",
+        "conteudo": "1) Púrpura palpável: lesão cutânea característica e obrigatória para o diagnóstico, tipicamente distribuída em membros inferiores e nádegas (áreas de maior pressão hidrostática), não relacionada a trombocitopenia (plaquetas normais). 2) Artrite/artralgia: geralmente transitória, acometendo grandes articulações (joelhos, tornozelos), sem sequelas. 3) Dor abdominal: tipo cólica, por vasculite mesentérica, podendo complicar com invaginação intestinal (a complicação gastrointestinal mais temida — diferente da invaginação idiopática da primeira infância, aqui pode ser ileoileal). 4) Acometimento renal: hematúria/proteinúria por nefrite (histologicamente indistinguível da nefropatia por IgA/doença de Berger), determinando o prognóstico a longo prazo."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Eminentemente clínico, baseado na presença de púrpura palpável (critério obrigatório) associada a pelo menos um dos demais achados (dor abdominal, artrite, acometimento renal, ou biópsia mostrando depósito de IgA). Plaquetas e coagulograma são NORMAIS (distinguindo de púrpuras trombocitopênicas). Exame de urina (EAS) deve ser solicitado em todos os casos e repetido periodicamente para monitorar o acometimento renal, mesmo que inicialmente normal."
+      },
+      {
+        "titulo": "Tratamento e prognóstico",
+        "conteudo": "Na maioria dos casos, é uma doença autolimitada (semanas), tratada com suporte (hidratação, analgesia) — corticosteroide é reservado para dor abdominal intensa ou acometimento renal significativo, sem alterar definitivamente o curso da nefrite. O prognóstico a longo prazo é determinado pelo grau de acometimento renal: a maioria recupera completamente, mas uma minoria evolui com doença renal crônica, justificando o seguimento nefrológico prolongado mesmo após resolução dos demais sintomas."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Púrpura palpável em membros inferiores/nádegas + dor abdominal + artrite em criança, com PLAQUETAS NORMAIS, é o quadro clássico — a normalidade das plaquetas é o dado mais usado para descartar diagnósticos diferenciais como PTI. Sempre lembrar de investigar e seguir a função renal, que define o prognóstico."
+      }
+    ],
+    "comoCai": "Cai como caso de criança com púrpura em membros inferiores associada a dor abdominal e/ou artrite, pedindo o reconhecimento da vasculite por IgA e a importância do seguimento renal."
+  },
+  {
+    "id": "doencas-vulva",
+    "area": "residencia",
+    "categoria": "Ginecologia",
+    "titulo": "Doenças da Vulva",
+    "resumo": "As principais dermatoses vulvares não infecciosas (líquen escleroso, líquen simples crônico, líquen plano) e a neoplasia intraepitelial vulvar, diferenciando-as das vulvovaginites infecciosas.",
+    "revisado": true,
+    "fonte": "Williams Gynecology; FEBRASGO — Manual de Ginecologia",
+    "secoes": [
+      {
+        "titulo": "Diferenciação de vulvovaginites infecciosas",
+        "conteudo": "Enquanto as vulvovaginites (candidíase, vaginose bacteriana, tricomoníase) são causadas por desequilíbrio da flora vaginal ou infecção sexualmente transmissível e cursam com corrimento como sintoma central, as doenças dermatológicas da vulva são condições crônicas, não infecciosas, que cursam predominantemente com prurido vulvar crônico e alterações da pele/mucosa vulvar, sem corrimento como achado principal."
+      },
+      {
+        "titulo": "Líquen escleroso",
+        "conteudo": "Dermatose crônica mais associada à vulva, mais comum em mulheres na pós-menopausa (mas pode ocorrer em qualquer idade, inclusive em crianças pré-púberes). Caracteriza-se por placas brancas, atróficas, em \"papel de cigarro\", com possível fusão de pequenos lábios e estreitamento do intróito ao longo do tempo. Prurido intenso é o sintoma predominante. Tem risco aumentado (pequeno, mas relevante) de transformação para carcinoma espinocelular de vulva, justificando biópsia diante de áreas espessadas, ulceradas ou que não respondem ao tratamento. Tratamento: corticosteroide tópico de alta potência."
+      },
+      {
+        "titulo": "Líquen simples crônico e líquen plano",
+        "conteudo": "Líquen simples crônico: resulta do ciclo prurido-coçadura crônica, levando a liquenificação (espessamento e acentuação dos sulcos cutâneos) da pele vulvar — geralmente secundário a outra condição pruriginosa de base (dermatite de contato, candidíase recorrente). Líquen plano: doença mucocutânea inflamatória que pode acometer vulva e vagina, com lesões violáceas, poligonais, podendo causar erosões dolorosas e sinéquias vaginais nas formas erosivas graves."
+      },
+      {
+        "titulo": "Neoplasia intraepitelial vulvar (NIV) e câncer de vulva",
+        "conteudo": "A NIV é a lesão precursora do carcinoma espinocelular de vulva, associada à infecção pelo HPV (tipo usual, mais comum em mulheres jovens) ou não associada ao HPV, mas relacionada a dermatoses crônicas como o líquen escleroso (tipo diferenciado, mais comum em mulheres idosas). Qualquer lesão vulvar suspeita (placa espessada, ulcerada, pigmentada, que não responde ao tratamento clínico) deve ser biopsiada para excluir NIV/carcinoma."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Placas brancas atróficas em \"papel de cigarro\" com prurido intenso em mulher na pós-menopausa é o quadro clássico de líquen escleroso — sempre lembrar do risco (ainda que baixo) de malignização, que justifica biópsia de lesões atípicas. Diferenciar prurido crônico (dermatose) de corrimento (infecção) é o primeiro passo do raciocínio."
+      }
+    ],
+    "comoCai": "Cai como caso de mulher com prurido vulvar crônico e lesão de pele característica, pedindo diferenciação das dermatoses vulvares e reconhecimento de sinais de alarme para malignização."
+  },
+  {
+    "id": "ultrassom-obstetrico",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Ultrassonografia em Obstetrícia",
+    "resumo": "Os três exames ultrassonográficos de rotina no pré-natal (datação/1º trimestre, morfológico de 2º trimestre, avaliação de crescimento no 3º trimestre) e seus principais achados.",
+    "revisado": true,
+    "fonte": "Williams Obstetrics; FEBRASGO — Manual de Assistência Pré-Natal",
+    "secoes": [
+      {
+        "titulo": "Ultrassonografia do primeiro trimestre",
+        "conteudo": "Idealmente realizada entre 11-14 semanas. Principais objetivos: datação da gestação (mais precisa quando feita precocemente, pela medida do comprimento cabeça-nádega — CCN), confirmação de vitalidade e número de fetos (diagnóstico de corionicidade/amnionicidade em gestações múltiplas, fundamental e só confiável nessa janela), e rastreamento de aneuploidias pela medida da translucência nucal (TN) — translucência nucal aumentada (>2,5-3mm ou acima do percentil 95) associa-se a maior risco de trissomias (21, 18, 13) e cardiopatias congênitas, mas não é diagnóstica, apenas de rastreamento."
+      },
+      {
+        "titulo": "Ultrassonografia morfológica do segundo trimestre",
+        "conteudo": "Realizada idealmente entre 20-24 semanas — a janela ideal para avaliação detalhada da anatomia fetal (morfológico de 2º trimestre), pela melhor visibilização das estruturas nesse período. Avalia sistematicamente: estruturas cranianas e da fossa posterior, face, coluna vertebral, coração (4 câmaras e vias de saída), abdome, rins e bexiga, membros, e a placenta (incluindo sua localização, para rastreio de placenta prévia). É o exame mais importante para o diagnóstico de malformações estruturais."
+      },
+      {
+        "titulo": "Ultrassonografia do terceiro trimestre",
+        "conteudo": "Avalia crescimento fetal (comparando biometria com curvas de referência, para diagnóstico de restrição de crescimento fetal ou macrossomia), volume de líquido amniótico (oligoidrâmnio/polidrâmnio), posição fetal e localização placentária definitiva. A dopplervelocimetria (artérias umbilical, cerebral média e ducto venoso) complementa a avaliação em gestações de alto risco ou com suspeita de restrição de crescimento, avaliando o bem-estar fetal e centralização de fluxo."
+      },
+      {
+        "titulo": "Marcadores ultrassonográficos relevantes",
+        "conteudo": "Índice de líquido amniótico (ILA): oligoidrâmnio (<5cm ou maior bolsão <2cm) associa-se a insuficiência placentária, rotura de membranas ou malformações do trato urinário fetal; polidrâmnio associa-se a diabetes materno, malformações do trato gastrointestinal (obstrução) ou anomalias que impedem a deglutição fetal. Placenta prévia é definida pela localização placentária cobrindo ou muito próxima ao orifício interno do colo, idealmente reavaliada no 3º trimestre (pela \"migração placentária\" aparente com o crescimento uterino)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Saber a janela ideal de cada ultrassom (11-14 semanas para TN/datação, 20-24 semanas para morfológico) é o ponto mais cobrado. Translucência nucal aumentada é rastreamento, não diagnóstico — não confundir com exames diagnósticos invasivos (amniocentese, biópsia de vilo corial)."
+      }
+    ],
+    "comoCai": "Cai pedindo a idade gestacional ideal para realização de cada ultrassom de rotina do pré-natal e a interpretação de achados como translucência nucal aumentada ou alteração do líquido amniótico."
+  },
+  {
+    "id": "artrite-idiopatica-juvenil",
+    "area": "residencia",
+    "categoria": "Pediatria",
+    "titulo": "Artrite Idiopática Juvenil",
+    "resumo": "Definição e principais subtipos da artrite idiopática juvenil (oligoarticular, poliarticular e sistêmica/Still), com destaque para a forma sistêmica e suas complicações.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; Kliegman, Textbook of Pediatrics",
+    "secoes": [
+      {
+        "titulo": "Definição",
+        "conteudo": "Artrite Idiopática Juvenil (AIJ) é definida como artrite de início antes dos 16 anos de idade, com duração de pelo menos 6 semanas, após exclusão de outras causas de artrite (infecciosa, reativa, neoplásica). É a doença reumática crônica mais comum na infância."
+      },
+      {
+        "titulo": "Forma oligoarticular",
+        "conteudo": "O subtipo mais comum, definido pelo acometimento de até 4 articulações nos primeiros 6 meses de doença, tipicamente grandes articulações assimétricas (joelho é a mais comum). Predomina em meninas pequenas (2-4 anos). Associação importante: risco elevado de uveíte anterior crônica assintomática — por ser assintomática, exige rastreamento oftalmológico periódico com lâmpada de fenda mesmo sem queixas oculares, já que pode causar sequelas visuais graves se não detectada precocemente. Fator antinuclear (FAN) positivo é comum e correlaciona-se com maior risco de uveíte."
+      },
+      {
+        "titulo": "Forma poliarticular",
+        "conteudo": "Acomete 5 ou mais articulações nos primeiros 6 meses, de forma simétrica, lembrando a artrite reumatoide do adulto. Subdividida conforme fator reumatoide (FR) positivo ou negativo — a forma FR positiva é mais rara, mais comum em adolescentes, e mais próxima clinicamente da artrite reumatoide do adulto, com maior potencial erosivo/destrutivo articular."
+      },
+      {
+        "titulo": "Forma sistêmica (Doença de Still)",
+        "conteudo": "Forma mais distinta e grave, caracterizada por FEBRE alta, cotidiana (\"em picos\", quotidiana, com retorno à normalidade entre os picos), associada a exantema evanescente salmão (que aparece/some com a febre), artrite (pode surgir semanas após os outros sintomas), hepatoesplenomegalia, linfadenopatia e serosite. Complicação temida: síndrome de ativação macrofágica (SAM), uma forma de linfo-histiocitose hemofagocítica secundária, potencialmente fatal, suspeitada por piora clínica súbita com citopenias, hiperferritinemia importante, hipofibrinogenemia e elevação de transaminases/triglicerídeos."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Uveíte anterior assintomática na forma oligoarticular (exigindo rastreamento oftalmológico obrigatório mesmo sem sintomas) e o padrão de febre em picos + rash evanescente salmão na forma sistêmica (Still) são os pontos mais cobrados e mais específicos de cada subtipo."
+      }
+    ],
+    "comoCai": "Cai como caso de criança com artrite crônica pedindo a classificação do subtipo de AIJ e o reconhecimento de complicações associadas (uveíte na oligoarticular, síndrome de ativação macrofágica na sistêmica)."
+  },
+  {
+    "id": "neoplasias-pulmonares",
+    "area": "residencia",
+    "categoria": "Pneumologia",
+    "titulo": "Neoplasias Pulmonares: Nódulo Pulmonar Solitário e Câncer de Pulmão",
+    "resumo": "Abordagem do nódulo pulmonar solitário (características de benignidade vs malignidade) e classificação do câncer de pulmão em pequenas células versus não pequenas células.",
+    "revisado": true,
+    "fonte": "Harrison's Principles of Internal Medicine; Murray & Nadel's Textbook of Respiratory Medicine",
+    "secoes": [
+      {
+        "titulo": "Nódulo pulmonar solitário — características de risco",
+        "conteudo": "Definido como opacidade arredondada ≤3cm, circundada por parênquima pulmonar normal, sem linfadenopatia associada (acima de 3cm é chamado de massa e tem alta probabilidade de malignidade). Fatores que aumentam a suspeita de malignidade: tamanho maior, margens espiculadas/irregulares (versus lisas/regulares nos benignos), crescimento em comparação com exame prévio, idade avançada, história de tabagismo. Padrões de calcificação difusa, central, em \"pipoca\" (hamartoma) ou laminar concêntrica (granuloma cicatrizado) são sugestivos de benignidade."
+      },
+      {
+        "titulo": "Investigação do nódulo pulmonar solitário",
+        "conteudo": "Comparação com exames de imagem prévios é o primeiro passo — estabilidade por ≥2 anos sugere fortemente benignidade. Nódulos de baixo risco em pacientes jovens não fumantes podem ser seguidos com tomografia seriada. Nódulos de risco intermediário/alto são investigados com PET-CT (avalia atividade metabólica) e, conforme o caso, biópsia (transtorácica guiada por imagem ou broncoscópica) ou ressecção cirúrgica diagnóstica/terapêutica direta em nódulos de alta suspeita."
+      },
+      {
+        "titulo": "Classificação do câncer de pulmão",
+        "conteudo": "Dividido em dois grandes grupos com implicações terapêuticas distintas: Carcinoma de pequenas células (CPPC, ~15%): fortemente associado ao tabagismo, comportamento muito agressivo, com metástases precoces — tratado predominantemente com quimioterapia/radioterapia (raramente cirúrgico, pois já é sistêmico ao diagnóstico na maioria dos casos). Carcinoma de não pequenas células (CPNPC, ~85%): inclui adenocarcinoma (o subtipo mais comum atualmente, inclusive em não fumantes, tipicamente periférico), carcinoma epidermoide/escamoso (fortemente ligado ao tabagismo, tipicamente central, associado a cavitação e síndromes paraneoplásicas por PTHrp/hipercalcemia) e carcinoma de grandes células — tratamento inclui cirurgia nos estágios iniciais, além de quimio/radioterapia e terapias-alvo conforme mutações."
+      },
+      {
+        "titulo": "Síndromes paraneoplásicas",
+        "conteudo": "Carcinoma epidermoide: hipercalcemia por secreção de PTHrp (proteína relacionada ao PTH). Carcinoma de pequenas células: SIADH (hiponatremia), síndrome de Cushing ectópico (secreção de ACTH), síndrome miastênica de Lambert-Eaton (fraqueza proximal que melhora com esforço repetido, por anticorpos contra canais de cálcio). Tumor de Pancoast (ápice pulmonar): síndrome de Horner (ptose, miose, anidrose) e dor no território do plexo braquial por invasão local."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Associar cada síndrome paraneoplásica ao subtipo histológico correto é o conteúdo mais cobrado (epidermoide=PTHrp/hipercalcemia; pequenas células=SIADH/Cushing/Lambert-Eaton). No nódulo pulmonar solitário, estabilidade radiológica por 2 anos é o critério mais usado para afastar malignidade sem biópsia."
+      }
+    ],
+    "comoCai": "Cai como caso de nódulo pulmonar em imagem pedindo características de risco, ou caso de câncer de pulmão com manifestação paraneoplásica pedindo associação ao subtipo histológico correto."
   }
 ]
