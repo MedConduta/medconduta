@@ -12790,5 +12790,1085 @@
       }
     ],
     "comoCai": "Cai como caso de nódulo pulmonar em imagem pedindo características de risco, ou caso de câncer de pulmão com manifestação paraneoplásica pedindo associação ao subtipo histológico correto."
+  },
+  {
+    "id": "histologia-fisiologia-pele-lesoes-elementares",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Histologia e Fisiologia da Pele e Lesões Elementares",
+    "resumo": "As camadas da pele e seus anexos, e a nomenclatura semiológica das lesões elementares dermatológicas, base para a descrição e o raciocínio diagnóstico em dermatologia.",
+    "revisado": true,
+    "fonte": "Fitzpatrick's Dermatology; Sampaio & Rivitti, Dermatologia",
+    "secoes": [
+      {
+        "titulo": "Estrutura da pele",
+        "conteudo": "A pele é dividida em três camadas: epiderme (epitélio escamoso estratificado avascular, composto principalmente por queratinócitos, com melanócitos, células de Langerhans e células de Merkel), derme (tecido conjuntivo vascularizado, dividido em derme papilar e reticular, contendo folículos pilosos, glândulas sebáceas e sudoríparas, vasos e nervos) e hipoderme/tecido subcutâneo (tecido adiposo, isolamento térmico e reserva energética). A junção dermoepidérmica (membrana basal) é o local de várias doenças bolhosas autoimunes."
+      },
+      {
+        "titulo": "Lesões elementares primárias",
+        "conteudo": "Mácula: alteração de cor plana, sem relevo, <1cm (mancha se >1cm). Pápula: lesão sólida elevada, <1cm. Nódulo: lesão sólida, com componente mais profundo (derme/hipoderme), geralmente >1cm. Placa: lesão elevada, achatada no topo, geralmente >1cm, pode resultar da coalescência de pápulas. Vesícula: lesão de conteúdo líquido, <1cm. Bolha: lesão de conteúdo líquido, >1cm. Pústula: lesão de conteúdo purulento. Urtica (pápula/placa urticariforme): lesão edematosa, eritematosa, fugaz (desaparece em horas), característica da urticária."
+      },
+      {
+        "titulo": "Lesões elementares secundárias",
+        "conteudo": "Escama: descamação da camada córnea. Crosta: material ressecado (sangue, secreção, pus) sobre uma lesão. Erosão: perda superficial, restrita à epiderme, cicatriza sem cicatriz. Úlcera: perda de substância que atinge a derme, cicatriza com cicatriz. Fissura: fenda linear estreita. Liquenificação: espessamento da pele com acentuação dos sulcos, secundário a coçadura crônica. Cicatriz: tecido fibroso de reparação, substituindo pele previamente lesada."
+      },
+      {
+        "titulo": "Anexos cutâneos",
+        "conteudo": "Folículos pilossebáceos (pelo + glândula sebácea, sede da acne e da foliculite), glândulas sudoríparas écrinas (termorregulação, distribuídas por toda a pele) e apócrinas (odor, restritas a axilas/região genital, ativas após a puberdade), e unhas (leito ungueal, matriz, sede de onicomicoses e alterações sistêmicas como baqueteamento digital e linhas de Beau)."
+      },
+      {
+        "titulo": "Funções da pele",
+        "conteudo": "Barreira física contra agentes externos e perda de água (função primariamente da camada córnea), termorregulação (vasodilatação/vasoconstrição e sudorese), função sensorial (terminações nervosas), síntese de vitamina D (ação da radiação UV sobre precursores na epiderme), e função imunológica (células de Langerhans como células apresentadoras de antígeno)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A distinção entre lesões de conteúdo líquido por tamanho (vesícula <1cm vs bolha >1cm) e a diferenciação entre erosão (superficial, sem cicatriz) e úlcera (profunda, com cicatriz) são a base de praticamente toda descrição de caso dermatológico em prova — dominar essa nomenclatura é pré-requisito para todos os outros temas de dermatologia."
+      }
+    ],
+    "comoCai": "Cai indiretamente em toda questão de dermatologia, exigindo a nomenclatura correta das lesões descritas no enunciado ou na imagem para orientar o raciocínio diagnóstico."
+  },
+  {
+    "id": "introducao-hepatologia",
+    "area": "residencia",
+    "categoria": "Hepatologia",
+    "titulo": "Introdução à Hepatologia: Padrões de Lesão Hepática",
+    "resumo": "A abordagem inicial das provas de função hepática, diferenciando padrão hepatocelular (transaminases) de padrão colestático (fosfatase alcalina/GGT), e a investigação da icterícia.",
+    "revisado": true,
+    "fonte": "Harrison's Principles of Internal Medicine; Sherlock's Diseases of the Liver and Biliary System",
+    "secoes": [
+      {
+        "titulo": "Padrões de lesão hepática",
+        "conteudo": "A primeira etapa da investigação de doença hepática é classificar o padrão de alteração das enzimas: Padrão hepatocelular (citólise): elevação predominante de AST e ALT, refletindo lesão/necrose de hepatócitos (hepatites virais, hepatite medicamentosa, esteato-hepatite, hepatite autoimune). Padrão colestático: elevação predominante de fosfatase alcalina (FA) e gama-GT (GGT), refletindo obstrução ao fluxo biliar, intra ou extra-hepática (colelitíase/coledocolitíase, colangite, cirrose biliar primária, infiltração hepática). Padrão misto combina ambos."
+      },
+      {
+        "titulo": "Interpretação das transaminases",
+        "conteudo": "AST (aspartato aminotransferase) está presente no fígado, mas também em músculo cardíaco/esquelético, sendo menos específica. ALT (alanina aminotransferase) é mais específica de lesão hepática. Relação AST/ALT >2 sugere hepatopatia alcoólica; elevações muito acentuadas (>1000 U/L) sugerem hepatite viral aguda, hepatite isquêmica (\"fígado de choque\") ou lesão medicamentosa/toxicológica grave (ex.: paracetamol)."
+      },
+      {
+        "titulo": "Icterícia: classificação",
+        "conteudo": "Icterícia é a coloração amarelada de pele e mucosas por hiperbilirrubinemia. Pré-hepática: aumento de bilirrubina indireta por hemólise ou eritropoese ineficiente, sem colúria. Hepática: disfunção da captação/conjugação/excreção hepatocelular (hepatites, cirrose), com aumento misto de bilirrubina. Pós-hepática (obstrutiva): obstrução do fluxo biliar (coledocolitíase, neoplasia periampular), com aumento predominante de bilirrubina direta, colúria e acolia fecal."
+      },
+      {
+        "titulo": "Avaliação da função de síntese hepática",
+        "conteudo": "Diferente das transaminases (que reflete lesão), a função de síntese é avaliada pela albumina sérica (meia-vida longa, reflete função crônica) e pelo tempo de protrombina/INR (meia-vida curta dos fatores de coagulação, reflete função aguda — é o marcador mais sensível e precoce de insuficiência hepática aguda grave). Plaquetopenia é um marcador indireto de hipertensão porta (sequestro esplênico)."
+      },
+      {
+        "titulo": "Investigação complementar",
+        "conteudo": "Ultrassonografia abdominal é o exame de imagem inicial para avaliar padrão colestático (dilatação de vias biliares sugere causa obstrutiva) e sinais de doença hepática crônica (fígado heterogêneo, esplenomegalia, ascite). Sorologias virais, autoanticorpos (hepatite autoimune), ferritina/saturação de transferrina (hemocromatose) e ceruloplasmina (doença de Wilson) direcionam a investigação etiológica conforme o padrão encontrado."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Classificar o padrão (hepatocelular vs colestático) pela relação entre transaminases e fosfatase alcalina/GGT é o primeiro passo cobrado em praticamente toda questão de hepatopatia. INR é o marcador mais sensível de insuficiência hepática aguda grave — mais sensível que a albumina, cuja meia-vida longa a torna pouco útil em quadros agudos."
+      }
+    ],
+    "comoCai": "Cai como caso com alteração de enzimas hepáticas pedindo a classificação do padrão de lesão (hepatocelular vs colestático) para direcionar a investigação etiológica."
+  },
+  {
+    "id": "doencas-coluna-vertebral",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Doenças da Coluna Vertebral",
+    "resumo": "Lombalgia mecânica versus lombalgia com sinais de alarme, hérnia de disco lombar e as principais causas de dor cervical e dorsal.",
+    "revisado": true,
+    "fonte": "Campbell's Operative Orthopaedics; Hoppenfeld, Propedêutica Ortopédica",
+    "secoes": [
+      {
+        "titulo": "Lombalgia mecânica (a causa mais comum)",
+        "conteudo": "Responde por mais de 90% dos casos de dor lombar, geralmente autolimitada (melhora em semanas), sem sinais de alarme, relacionada a esforço/postura, sem irradiação radicular verdadeira. Tratamento: analgesia, manutenção de atividade (repouso prolongado no leito é contraindicado, pois piora o desfecho), fisioterapia. Não requer exame de imagem de rotina na ausência de sinais de alarme."
+      },
+      {
+        "titulo": "Sinais de alarme (red flags) em lombalgia",
+        "conteudo": "Idade <20 ou >50 anos com dor de início recente, história de neoplasia, febre/perda de peso inexplicada, dor noturna que não melhora com repouso, déficit neurológico progressivo, trauma significativo, uso de corticoide crônico/imunossupressão (risco de infecção), e SINAIS DE SÍNDROME DA CAUDA EQUINA (anestesia em sela, retenção urinária, incontinência fecal, fraqueza bilateral de membros inferiores) — esta última é emergência cirúrgica, exigindo ressonância magnética e descompressão urgentes para evitar sequela neurológica permanente."
+      },
+      {
+        "titulo": "Hérnia de disco lombar",
+        "conteudo": "Mais comum nos níveis L4-L5 e L5-S1. Causa dor radicular (ciática) que irradia do glúteo até a perna/pé, seguindo o trajeto do dermátomo correspondente, piorada por manobras que aumentam a pressão intra-abdominal (tosse, espirro, Valsalva). Manobra de Lasègue (elevação da perna estendida) positiva reproduz a dor radicular. Hérnia L5-S1 (raiz S1): reflexo aquileu diminuído, fraqueza de flexão plantar. Hérnia L4-L5 (raiz L5): fraqueza de dorsiflexão do hálux/pé, sem alteração significativa de reflexo. Tratamento inicial é conservador (analgesia, fisioterapia) na maioria dos casos; cirurgia é reservada para déficit neurológico progressivo, síndrome da cauda equina, ou dor refratária ao tratamento conservador prolongado."
+      },
+      {
+        "titulo": "Estenose de canal lombar",
+        "conteudo": "Mais comum em idosos, por degeneração osteoartrósica que estreita o canal vertebral. Causa claudicação neurogênica: dor/parestesia em membros inferiores desencadeada pela deambulação e pela extensão da coluna (ficar em pé), que MELHORA com a flexão da coluna (sentar, inclinar-se para frente, \"posição do carrinho de supermercado\") — diferencia-se da claudicação vascular (que não é aliviada pela postura, apenas pelo repouso)."
+      },
+      {
+        "titulo": "Espondilolistese e escoliose",
+        "conteudo": "Espondilolistese: deslizamento anterior de uma vértebra sobre a adjacente, comum em L5-S1, podendo ser ístmica (defeito na pars interarticularis, comum em atletas jovens) ou degenerativa (idosos). Escoliose: desvio lateral da coluna no plano coronal — a forma idiopática do adolescente é a mais comum, rastreada pelo teste de Adams (inclinação anterior do tronco, observando assimetria do gradil costal); tratamento depende do grau da curva (observação, colete ou cirurgia)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Síndrome da cauda equina (anestesia em sela + retenção urinária + fraqueza bilateral) é a emergência cirúrgica mais cobrada em coluna — nunca perder esse diagnóstico. A distinção entre claudicação neurogênica (melhora com flexão) e vascular (melhora só com repouso, independente da postura) é armadilha clássica de prova."
+      }
+    ],
+    "comoCai": "Cai como caso de dor lombar pedindo o reconhecimento de sinais de alarme, especialmente síndrome da cauda equina, e a diferenciação entre hérnia de disco e estenose de canal."
+  },
+  {
+    "id": "tubulopatias-nefrite-intersticial",
+    "area": "residencia",
+    "categoria": "Nefrologia",
+    "titulo": "Doenças Tubulointersticiais Renais",
+    "resumo": "Nefrite intersticial aguda (a maioria por hipersensibilidade medicamentosa) e as principais tubulopatias, distinguindo-as das doenças glomerulares por sua apresentação clínica e laboratorial.",
+    "revisado": true,
+    "fonte": "Brenner and Rector's The Kidney; Harrison's Principles of Internal Medicine",
+    "secoes": [
+      {
+        "titulo": "Diferenciação de doença glomerular",
+        "conteudo": "Enquanto as glomerulopatias cursam classicamente com proteinúria significativa (às vezes em faixa nefrótica) e hematúria dismórfica/cilindros hemáticos, as doenças tubulointersticiais cursam com proteinúria leve (tubular, não seletiva), disfunção tubular específica (perda de concentração urinária, acidose tubular, distúrbios eletrolíticos) e, frequentemente, eosinofilúria (nas formas alérgicas)."
+      },
+      {
+        "titulo": "Nefrite intersticial aguda (NIA)",
+        "conteudo": "Causa importante e subdiagnosticada de lesão renal aguda. A causa mais comum é reação de hipersensibilidade a medicamentos (a mais clássica é aos antibióticos betalactâmicos e às penicilinas, mas também AINEs, inibidores de bomba de prótons, alopurinol, sulfas). Quadro clássico (tríade, presente em menos da metade dos casos): febre, rash cutâneo e eosinofilia, associados a piora da função renal dias a semanas após início da medicação. Eosinofilúria pode auxiliar o diagnóstico, mas tem sensibilidade limitada. Tratamento: suspensão IMEDIATA do agente causador (medida mais importante), com corticoide reservado para casos que não melhoram com a suspensão isolada."
+      },
+      {
+        "titulo": "Necrose tubular aguda (NTA)",
+        "conteudo": "É a causa mais comum de lesão renal aguda intrínseca, geralmente por isquemia (hipotensão prolongada, sepse) ou nefrotoxicidade (aminoglicosídeos, contraste iodado, mioglobina na rabdomiólise). Diferencia-se da lesão pré-renal pelo sódio urinário elevado (FENa >2%, incapacidade de concentrar a urina por lesão tubular) e pela presença de cilindros granulosos pigmentados (\"em lama\") no sedimento urinário."
+      },
+      {
+        "titulo": "Acidose tubular renal (ATR)",
+        "conteudo": "Distúrbio da capacidade tubular de acidificar a urina ou reabsorver bicarbonato, causando acidose metabólica hiperclorêmica com ânion gap normal. ATR tipo 1 (distal): incapacidade de acidificar a urina no ducto coletor, com pH urinário persistentemente >5,5, associada a nefrolitíase e hipocalemia. ATR tipo 2 (proximal): perda de bicarbonato por defeito de reabsorção proximal, associada à Síndrome de Fanconi. ATR tipo 4: por hipoaldosteronismo (comum em diabéticos), cursa com HIPERcalemia (ao contrário dos tipos 1 e 2)."
+      },
+      {
+        "titulo": "Nefrite intersticial crônica",
+        "conteudo": "Resulta de exposição prolongada a nefrotóxicos (uso crônico de AINEs — nefropatia por analgésicos, metais pesados), obstrução urinária crônica, ou doenças sistêmicas infiltrativas. Evolui insidiosamente para doença renal crônica, frequentemente com proteinúria discreta e função renal já comprometida ao diagnóstico, dificultando o reconhecimento precoce."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tríade febre + rash + eosinofilia após introdução de medicamento (especialmente betalactâmico) é o quadro mais cobrado de nefrite intersticial aguda — a conduta correta é SUSPENDER o medicamento, não apenas tratar sintomaticamente. Diferenciar ATR tipo 1/2 (hipocalemia) de tipo 4 (hipercalemia, associada a diabetes) é ponto frequente."
+      }
+    ],
+    "comoCai": "Cai como caso de lesão renal aguda após introdução de nova medicação, associada a febre/rash/eosinofilia, pedindo o reconhecimento de nefrite intersticial e a suspensão do agente causador."
+  },
+  {
+    "id": "cancer-pele-oncologia-cutanea",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Oncologia Cutânea: Câncer de Pele",
+    "resumo": "Os três principais tipos de câncer de pele (carcinoma basocelular, carcinoma espinocelular e melanoma), seus fatores de risco, características clínicas e a regra do ABCDE para lesões pigmentadas suspeitas.",
+    "revisado": true,
+    "fonte": "Fitzpatrick's Dermatology; Sampaio & Rivitti, Dermatologia",
+    "secoes": [
+      {
+        "titulo": "Carcinoma basocelular (CBC)",
+        "conteudo": "É o câncer de pele MAIS COMUM em geral, de crescimento lento e baixíssimo potencial de metástase (mas com capacidade de invasão local destrutiva se não tratado). Fator de risco principal: exposição solar cumulativa/intermitente intensa, pele clara. Apresentação clássica: pápula/nódulo perolado, translúcido, com telangiectasias na superfície e bordas peroladas elevadas, mais comum em áreas fotoexpostas da face. Tratamento: exérese cirúrgica com margens, com excelente prognóstico na maioria dos casos."
+      },
+      {
+        "titulo": "Carcinoma espinocelular (CEC)",
+        "conteudo": "Segundo câncer de pele mais comum, origina-se dos queratinócitos da epiderme, com maior potencial de metástase que o CBC (ainda que globalmente baixo, exceto em lesões de mucosa/lábio/orelha ou imunossuprimidos). Associado a exposição solar cumulativa, lesões pré-malignas (queratose actínica), úlceras crônicas (úlcera de Marjolin — CEC que se desenvolve sobre cicatriz de queimadura antiga) e imunossupressão (transplantados). Apresentação: placa/nódulo eritematoso, com superfície ceratósica, ulcerada ou verrucosa, de crescimento mais rápido que o CBC."
+      },
+      {
+        "titulo": "Melanoma — o mais grave",
+        "conteudo": "Origina-se dos melanócitos, é responsável pela grande maioria das mortes por câncer de pele apesar de ser menos comum que CBC/CEC, pelo seu alto potencial de metástase precoce. Fatores de risco: exposição solar intermitente intensa (especialmente queimaduras solares na infância), pele clara, múltiplos nevos, história familiar/pessoal de melanoma, síndrome do nevo displásico."
+      },
+      {
+        "titulo": "Regra do ABCDE e diagnóstico do melanoma",
+        "conteudo": "Usada para avaliar lesões pigmentadas suspeitas: Assimetria (uma metade não é igual à outra), Bordas irregulares (mal definidas, denteadas), Cor variada/heterogênea (múltiplos tons de marrom, preto, vermelho, branco ou azul na mesma lesão), Diâmetro >6mm, Evolução (mudança de tamanho, forma, cor ou sintomas — o critério mais importante na prática, pois capta lesões que mudam ao longo do tempo). O sinal do \"patinho feio\" (lesão que difere visualmente das demais no mesmo paciente) também levanta suspeita. Diagnóstico confirmado por biópsia excisional com margem estreita; a espessura de Breslow (profundidade de invasão) é o principal fator prognóstico."
+      },
+      {
+        "titulo": "Tratamento e prevenção",
+        "conteudo": "Exérese cirúrgica com margens adequadas conforme a espessura de Breslow é o tratamento primário do melanoma; biópsia de linfonodo sentinela é indicada conforme espessura e ulceração. Doença metastática é tratada com imunoterapia (inibidores de checkpoint) e terapia-alvo (nos casos com mutação BRAF). Prevenção primária (fotoproteção, evitar exposição solar excessiva/queimaduras, especialmente na infância) é a medida mais custo-efetiva de saúde pública contra os três tipos de câncer de pele."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Associar cada tipo histológico à sua apresentação clássica (CBC = pápula perolada com telangiectasias; CEC = lesão ceratósica/ulcerada de crescimento mais rápido; melanoma = lesão pigmentada com ABCDE positivo) é o conteúdo mais cobrado. \"Evolução\" (mudança da lesão) é frequentemente o dado mais valorizado nas questões de melanoma, mais do que os critérios estáticos isolados."
+      }
+    ],
+    "comoCai": "Cai como caso de lesão de pele suspeita pedindo a classificação do tipo de câncer cutâneo mais provável a partir das características morfológicas descritas."
+  },
+  {
+    "id": "doencas-ombro-cotovelo",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Doenças do Ombro e do Cotovelo",
+    "resumo": "Síndrome do impacto/lesão do manguito rotador, capsulite adesiva, instabilidade glenoumeral, e as epicondilites lateral e medial do cotovelo.",
+    "revisado": true,
+    "fonte": "Campbell's Operative Orthopaedics; Hoppenfeld, Propedêutica Ortopédica",
+    "secoes": [
+      {
+        "titulo": "Síndrome do impacto e lesão do manguito rotador",
+        "conteudo": "O manguito rotador (supraespinhoso, infraespinhoso, redondo menor, subescapular) estabiliza a cabeça umeral e permite a rotação do ombro. A síndrome do impacto ocorre pelo atrito do tendão supraespinhoso (o mais frequentemente acometido) contra o acrômio durante a elevação do braço, podendo evoluir para tendinopatia e, eventualmente, ruptura completa do manguito. Testes clínicos: teste de Neer e teste de Hawkins-Kennedy (dor à elevação/rotação interna passiva do ombro) para impacto; teste de Jobe (\"lata vazia\") para lesão do supraespinhoso. Ressonância magnética confirma e caracteriza a extensão da lesão. Tratamento inicial conservador (fisioterapia, anti-inflamatórios); cirurgia reservada para rupturas completas em pacientes jovens/ativos ou falha do tratamento conservador."
+      },
+      {
+        "titulo": "Capsulite adesiva (\"ombro congelado\")",
+        "conteudo": "Caracterizada por perda progressiva e global da amplitude de movimento do ombro (ativa E passiva, diferente das lesões do manguito rotador, onde a limitação é predominantemente ativa), por espessamento e contratura da cápsula articular. Mais comum em diabéticos e em mulheres de meia-idade. Evolui em três fases: fase dolorosa, fase de enrijecimento (rigidez progressiva) e fase de resolução (recuperação gradual, podendo levar meses a anos). Tratamento: fisioterapia, analgesia, infiltração intra-articular de corticoide."
+      },
+      {
+        "titulo": "Instabilidade glenoumeral",
+        "conteudo": "O ombro é a articulação com maior amplitude de movimento e, consequentemente, a mais propensa à instabilidade/luxação. Luxação anterior é a mais comum (>90% dos casos), geralmente por trauma em abdução e rotação externa, podendo lesar o nervo axilar (avaliar sensibilidade da região do \"charuto do deltoide\"). Luxação recorrente em pacientes jovens é comum pela lesão de Bankart (lesão do lábio glenoidal anteroinferior) associada."
+      },
+      {
+        "titulo": "Epicondilite lateral (\"cotovelo de tenista\")",
+        "conteudo": "Tendinopatia de inserção dos músculos extensores do punho no epicôndilo lateral do úmero, por sobrecarga/uso repetitivo (não exclusiva de tenistas — comum em trabalhos manuais repetitivos). Dor à palpação do epicôndilo lateral, piorada pela extensão resistida do punho e pela preensão manual."
+      },
+      {
+        "titulo": "Epicondilite medial (\"cotovelo de golfista\")",
+        "conteudo": "Tendinopatia de inserção dos músculos flexores/pronadores do punho no epicôndilo medial, menos comum que a lateral. Dor à palpação do epicôndilo medial, piorada pela flexão resistida do punho. Ambas as epicondilites são tratadas inicialmente de forma conservadora: repouso relativo, fisioterapia, órteses e anti-inflamatórios, com boa evolução na maioria dos casos."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre limitação ATIVA isolada (sugere lesão do manguito rotador) e limitação GLOBAL ativa e passiva (sugere capsulite adesiva) é o ponto mais cobrado em patologias do ombro. Epicondilite lateral (extensores) versus medial (flexores) é diferenciada pelo movimento que reproduz a dor."
+      }
+    ],
+    "comoCai": "Cai como caso de dor no ombro ou cotovelo relacionada a movimento/esforço, pedindo a diferenciação entre as principais síndromes dolorosas dessas articulações pelos testes clínicos e padrão de limitação funcional."
+  },
+  {
+    "id": "restricao-crescimento-fetal-obito-fetal",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Restrição de Crescimento Fetal e Óbito Fetal",
+    "resumo": "Classificação da restrição de crescimento fetal (simétrica x assimétrica), sua investigação por dopplervelocimetria, e a abordagem do óbito fetal.",
+    "revisado": true,
+    "fonte": "Williams Obstetrics; FEBRASGO — Manual de Assistência Pré-Natal",
+    "secoes": [
+      {
+        "titulo": "Definição e classificação da restrição de crescimento fetal (RCF)",
+        "conteudo": "RCF é definida quando o peso fetal estimado está abaixo do percentil 10 para a idade gestacional, com evidência de que o feto não atingiu seu potencial de crescimento genético. Classificação: RCF simétrica (ou tipo I): acometimento precoce e proporcional de todas as medidas fetais (cabeça, abdome, fêmur), geralmente por causas que atuam desde o início da gestação — infecções congênitas (TORCH), cromossomopatias, exposição a teratógenos. RCF assimétrica (ou tipo II): mais comum, com preservação relativa do perímetro cefálico (\"efeito poupador cerebral\") às custas de redução do crescimento abdominal, tipicamente por insuficiência placentária de início mais tardio (pré-eclâmpsia, doenças vasculares maternas)."
+      },
+      {
+        "titulo": "Etiologia",
+        "conteudo": "Causas maternas: hipertensão/pré-eclâmpsia (a causa mais comum), tabagismo, desnutrição, doenças autoimunes, uso de substâncias. Causas placentárias: insuficiência placentária, infartos placentários, descolamento crônico. Causas fetais: infecções congênitas (TORCH), cromossomopatias, malformações estruturais, gestação múltipla."
+      },
+      {
+        "titulo": "Investigação por dopplervelocimetria",
+        "conteudo": "A dopplervelocimetria das artérias umbilical, cerebral média e do ducto venoso é o principal método de vigilância fetal na RCF, avaliando o grau de comprometimento placentário e a resposta adaptativa fetal (\"centralização\"). Artéria umbilical: aumento da resistência (diástole zero ou reversa) indica comprometimento placentário grave. Artéria cerebral média: redução da resistência (\"efeito Robin Hood\"/centralização) indica redistribuição de fluxo para preservar o cérebro em resposta à hipóxia. Ducto venoso: onda \"a\" ausente/reversa indica descompensação cardíaca fetal avançada, achado tardio e de mau prognóstico, orientando a decisão de antecipar o parto."
+      },
+      {
+        "titulo": "Conduta",
+        "conteudo": "Vigilância seriada com ultrassonografia (crescimento) e dopplervelocimetria, associada a cardiotocografia e perfil biofísico fetal conforme a gravidade. A decisão de antecipar o parto pondera o risco da prematuridade versus o risco de permanência intraútero, sendo geralmente indicada diante de deterioração dopplervelocimétrica (diástole zero/reversa na umbilical, alteração do ducto venoso) ou outros sinais de comprometimento fetal."
+      },
+      {
+        "titulo": "Óbito fetal",
+        "conteudo": "Definido como a morte fetal a partir de 20-22 semanas de gestação (ou peso fetal ≥500g). Principais causas: insuficiência placentária/RCF grave, malformações fetais, infecções, acidentes de cordão, descolamento prematuro de placenta, diabetes/hipertensão maternos mal controlados — em uma proporção relevante dos casos, a causa permanece indeterminada. Diagnóstico confirmado pela ausência de batimentos cardíacos fetais à ultrassonografia. Conduta: indução do parto (a via vaginal é preferida na maioria dos casos, mesmo diante do óbito, salvo contraindicações obstétricas), com investigação etiológica (autópsia fetal quando autorizada, exame da placenta, sorologias, cariótipo) para orientar gestações futuras."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A centralização de fluxo (redução de resistência na cerebral média, \"efeito Robin Hood\") como resposta adaptativa à hipóxia fetal crônica é o conceito mais cobrado da dopplervelocimetria em RCF. Diástole zero/reversa na artéria umbilical e onda \"a\" ausente/reversa no ducto venoso são sinais de gravidade progressiva, usados para timing do parto."
+      }
+    ],
+    "comoCai": "Cai como caso de gestante com crescimento fetal abaixo do esperado, pedindo a interpretação da dopplervelocimetria para definir gravidade e momento do parto."
+  },
+  {
+    "id": "disturbios-sono",
+    "area": "residencia",
+    "categoria": "Neurologia",
+    "titulo": "Distúrbios do Sono",
+    "resumo": "Classificação geral dos distúrbios do sono, com destaque para insônia, apneia obstrutiva do sono e narcolepsia, e a abordagem diagnóstica inicial.",
+    "revisado": true,
+    "fonte": "Harrison's Principles of Internal Medicine; Adams and Victor's Principles of Neurology",
+    "secoes": [
+      {
+        "titulo": "Fisiologia normal do sono",
+        "conteudo": "O sono é dividido em sono NREM (não-REM, subdividido em estágios N1-N3, com N3 sendo o sono de ondas lentas/sono profundo, mais restaurador) e sono REM (movimento rápido dos olhos, associado aos sonhos e atonia muscular). Um ciclo completo NREM-REM dura cerca de 90 minutos, repetindo-se 4-6 vezes por noite, com predomínio de sono profundo (N3) na primeira metade da noite e de sono REM na segunda metade."
+      },
+      {
+        "titulo": "Insônia",
+        "conteudo": "O distúrbio do sono mais prevalente, definido pela dificuldade de iniciar e/ou manter o sono, com impacto no funcionamento diurno, por pelo menos 3 noites/semana durante ≥3 meses (insônia crônica). Pode ser primária ou secundária a condições médicas/psiquiátricas (depressão, ansiedade), uso de substâncias (cafeína, álcool) ou má higiene do sono. Tratamento de primeira linha: terapia cognitivo-comportamental para insônia (TCC-I), mais eficaz e duradoura que a farmacoterapia isolada; hipnóticos são reservados para uso de curto prazo."
+      },
+      {
+        "titulo": "Apneia obstrutiva do sono (AOS)",
+        "conteudo": "Caracterizada por episódios recorrentes de obstrução parcial/completa da via aérea superior durante o sono, causando dessaturação de oxigênio e despertares (fragmentação do sono). Fatores de risco: obesidade (o principal), retrognatia, hipertrofia amigdaliana, circunferência cervical aumentada. Quadro clínico: ronco alto, pausas respiratórias testemunhadas, sonolência diurna excessiva, cefaleia matinal. Complicações: hipertensão arterial (associação bem estabelecida, deve-se suspeitar de AOS em HAS resistente), risco cardiovascular aumentado. Diagnóstico confirmado por polissonografia (índice de apneia-hipopneia ≥5/hora com sintomas, ou ≥15/hora mesmo assintomático). Tratamento de escolha: CPAP (pressão positiva contínua em via aérea) nos casos moderados a graves; perda de peso é medida coadjuvante importante."
+      },
+      {
+        "titulo": "Narcolepsia",
+        "conteudo": "Doença neurológica rara, caracterizada por sonolência diurna excessiva incontrolável, associada classicamente à cataplexia (perda súbita e transitória do tônus muscular desencadeada por emoções fortes, como riso — patognomônica quando presente), paralisia do sono e alucinações hipnagógicas/hipnopômpicas (ao adormecer/despertar). Causada por deficiência de hipocretina/orexina (neurotransmissor hipotalâmico regulador da vigília), frequentemente por processo autoimune. Diagnóstico por polissonografia seguida de teste de latências múltiplas do sono."
+      },
+      {
+        "titulo": "Síndrome das pernas inquietas",
+        "conteudo": "Necessidade urgente e desconfortável de mover as pernas, tipicamente à noite/repouso, aliviada pelo movimento — pode causar insônia inicial significativa. Associada a deficiência de ferro (deve-se dosar ferritina) e doença renal crônica. Tratamento: reposição de ferro se deficiente, agonistas dopaminérgicos nos casos mais intensos."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Ronco + pausas respiratórias testemunhadas + sonolência diurna em paciente obeso, associado a hipertensão resistente, é o quadro clássico de AOS que direciona à polissonografia e ao CPAP. Cataplexia desencadeada por riso/emoção é o achado patognomônico mais cobrado de narcolepsia."
+      }
+    ],
+    "comoCai": "Cai como caso de sonolência diurna excessiva ou queixa de sono ruim, pedindo a diferenciação entre os principais distúrbios do sono pelos achados clínicos característicos de cada um."
+  },
+  {
+    "id": "doencas-mao-sindromes-compressivas",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Doenças da Mão e Síndromes Compressivas",
+    "resumo": "Síndrome do túnel do carpo (a neuropatia compressiva mais comum), dedo em gatilho, contratura de Dupuytren e cisto sinovial.",
+    "revisado": true,
+    "fonte": "Campbell's Operative Orthopaedics; Hoppenfeld, Propedêutica Ortopédica",
+    "secoes": [
+      {
+        "titulo": "Síndrome do túnel do carpo",
+        "conteudo": "É a neuropatia compressiva periférica mais comum, causada pela compressão do nervo mediano no túnel do carpo (entre o retináculo flexor e os ossos do carpo). Fatores de risco: movimentos repetitivos do punho, gravidez, hipotireoidismo, diabetes, obesidade, artrite reumatoide. Quadro clínico: dor/parestesia nos primeiros três dedos e metade radial do 4º dedo (território sensitivo do nervo mediano), tipicamente noturna, podendo acordar o paciente, com melhora ao \"sacudir a mão\" (sinal de Flick). Casos avançados cursam com fraqueza/atrofia da musculatura tenar. Testes clínicos: sinal de Tinel (percussão sobre o túnel do carpo reproduz parestesia) e teste de Phalen (flexão máxima do punho por 60 segundos reproduz sintomas). Tratamento: órtese de imobilização noturna e infiltração de corticoide nos casos leves; liberação cirúrgica do túnel do carpo nos casos moderados/graves ou refratários."
+      },
+      {
+        "titulo": "Dedo em gatilho (tenossinovite estenosante)",
+        "conteudo": "Causado pelo espessamento do tendão flexor ou da polia A1 na base do dedo, dificultando seu deslizamento suave através da bainha tendínea. Manifesta-se por travamento/estalido doloroso à flexão/extensão do dedo, podendo o dedo ficar \"preso\" em flexão, necessitando extensão passiva para destravar. Mais comum em diabéticos. Tratamento: infiltração de corticoide na polia A1 é eficaz na maioria dos casos; liberação cirúrgica da polia é reservada para casos refratários."
+      },
+      {
+        "titulo": "Contratura de Dupuytren",
+        "conteudo": "Espessamento e contratura progressiva da fáscia palmar, formando nódulos e cordões fibrosos que tracionam os dedos (mais comumente 4º e 5º dedos) em flexão fixa progressiva, dificultando a extensão completa da mão. Associada a predisposição genética (mais comum em homens de ascendência do norte europeu), diabetes, alcoolismo, tabagismo. Tratamento cirúrgico (fasciectomia) ou injeção de colagenase é indicado quando há contratura funcionalmente limitante (classicamente quando o paciente não consegue apoiar a mão plana sobre uma mesa — \"teste da mesa\" positivo)."
+      },
+      {
+        "titulo": "Cisto sinovial (gânglio)",
+        "conteudo": "Tumoração cística benigna mais comum da mão/punho, preenchida por líquido sinovial viscoso, geralmente originada de uma articulação ou bainha tendínea adjacente (o dorso do punho é a localização mais comum). Geralmente assintomática ou com desconforto leve; pode variar de tamanho. Tratamento é reservado para casos sintomáticos: aspiração (com alta taxa de recidiva) ou excisão cirúrgica."
+      },
+      {
+        "titulo": "Rizartrose (osteoartrite da base do polegar)",
+        "conteudo": "Osteoartrite da articulação trapeziometacarpal (base do polegar), comum em mulheres de meia-idade, causando dor à preensão e pinça, com deformidade característica em fases avançadas. Diagnóstico clínico e radiográfico; tratamento inicial conservador (órtese, anti-inflamatórios), cirúrgico (artroplastia) nos casos refratários."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Parestesia noturna nos três primeiros dedos que melhora ao sacudir a mão, com Tinel/Phalen positivos, é o quadro mais cobrado de síndrome do túnel do carpo — sempre lembrar da associação com gravidez e hipotireoidismo. \"Teste da mesa\" positivo é o critério mais usado para indicar cirurgia na Dupuytren."
+      }
+    ],
+    "comoCai": "Cai como caso de dor/parestesia na mão relacionada a uso repetitivo ou período noturno, pedindo o reconhecimento da síndrome compressiva correspondente pelos testes clínicos específicos."
+  },
+  {
+    "id": "infeccoes-vias-aereas-superiores-pediatricas",
+    "area": "residencia",
+    "categoria": "Otorrinolaringologia",
+    "titulo": "Infecções de Vias Aéreas Superiores na Infância: Crupe e Epiglotite",
+    "resumo": "Diferenciação entre laringotraqueíte viral aguda (crupe) e epiglotite bacteriana, as duas principais causas de obstrução aguda de via aérea superior em crianças.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; Cummings Otolaryngology",
+    "secoes": [
+      {
+        "titulo": "Laringotraqueíte viral aguda (crupe)",
+        "conteudo": "É a causa mais comum de obstrução aguda de via aérea superior em crianças, tipicamente entre 6 meses e 3 anos, causada principalmente pelo vírus parainfluenza. Quadro clínico de instalação gradual (após pródromo catarral de 1-2 dias): tosse metálica \"de cachorro\", estridor inspiratório, rouquidão, geralmente com piora noturna. Radiografia cervical (quando realizada) mostra o \"sinal da torre\" (estreitamento subglótico). Tratamento: corticoide (dexametasona, dose única, reduz a gravidade e duração dos sintomas mesmo em casos leves) e, nos casos moderados a graves, nebulização com adrenalina racêmica (efeito rápido porém transitório, exigindo observação pelo risco de efeito rebote)."
+      },
+      {
+        "titulo": "Epiglotite aguda — a emergência a não perder",
+        "conteudo": "Infecção bacteriana grave da epiglote e estruturas supraglóticas, causada classicamente por Haemophilus influenzae tipo B (drasticamente reduzida pela vacinação, mas ainda deve ser lembrada; outros agentes incluem Streptococcus pyogenes e S. pneumoniae). Quadro clínico de instalação SÚBITA e rapidamente progressiva (diferente do crupe): febre alta, toxemia, disfagia/sialorreia (dificuldade de deglutir a própria saliva), posição em \"tripé\" (sentado, inclinado para frente, pescoço estendido, para otimizar a via aérea), voz abafada (\"em batata quente\"), estridor de instalação rápida — é EMERGÊNCIA médica com risco de obstrução completa de via aérea."
+      },
+      {
+        "titulo": "Conduta na suspeita de epiglotite",
+        "conteudo": "NÃO examinar a orofaringe com abaixador de língua nem manipular a criança sem necessidade (risco de precipitar obstrução completa por espasmo laríngeo) — a criança deve ser mantida calma, preferencialmente no colo dos pais, evitando qualquer procedimento estressante até que a via aérea esteja garantida em ambiente controlado (centro cirúrgico/UTI, com equipe preparada para via aérea difícil). Diagnóstico confirmado por visualização direta da epiglote edemaciada (\"em cereja\") sob condições controladas, ou radiografia cervical em perfil mostrando o \"sinal do polegar\" (epiglote edemaciada). Tratamento: garantia precoce da via aérea (intubação ou traqueostomia, conforme necessidade) e antibioticoterapia empírica de amplo espectro."
+      },
+      {
+        "titulo": "Traqueíte bacteriana",
+        "conteudo": "Diagnóstico diferencial importante: infecção bacteriana da traqueia (geralmente por Staphylococcus aureus), que pode se apresentar como um crupe que não melhora com o tratamento habitual, com piora clínica progressiva, febre alta e toxemia — deve ser suspeitada quando um quadro inicialmente típico de crupe evolui de forma atípica/grave."
+      },
+      {
+        "titulo": "Abordagem diferencial resumida",
+        "conteudo": "Crupe: início gradual, tosse metálica, estridor, criança com bom estado geral entre os episódios de tosse, responde ao corticoide/adrenalina. Epiglotite: início súbito, toxemia, sialorreia, posição em tripé, recusa em deitar, PIOR estado geral, exige manejo de via aérea em ambiente controlado. Corpo estranho de via aérea: início súbito, sem pródromo infeccioso, história de engasgo/tosse súbita durante alimentação ou brincadeira."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A distinção entre crupe (início gradual, tosse metálica) e epiglotite (início súbito, toxemia, sialorreia, posição em tripé) é o ponto mais cobrado — e a regra de OURO é NUNCA examinar a orofaringe de uma criança com suspeita de epiglotite fora de ambiente controlado, pelo risco de obstrução total da via aérea."
+      }
+    ],
+    "comoCai": "Cai como caso de criança com estridor e dificuldade respiratória, pedindo a diferenciação entre crupe e epiglotite e a conduta correta (incluindo a contraindicação de manipular a orofaringe na suspeita de epiglotite)."
+  },
+  {
+    "id": "infeccoes-congenitas-gestacao-torch",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Infecções Congênitas na Gestação (Síndrome TORCH)",
+    "resumo": "As principais infecções transmitidas verticalmente ao feto (toxoplasmose, rubéola, citomegalovírus, herpes, sífilis e Zika) e seus achados característicos de acometimento fetal/neonatal.",
+    "revisado": true,
+    "fonte": "Williams Obstetrics; Nelson Textbook of Pediatrics",
+    "secoes": [
+      {
+        "titulo": "Conceito de infecção congênita e transmissão vertical",
+        "conteudo": "Infecções congênitas (grupo TORCH: Toxoplasmose, Outras [sífilis, Zika, varicela], Rubéola, Citomegalovírus, Herpes simples) são adquiridas pelo feto por transmissão vertical, transplacentária ou durante o parto, podendo causar aborto, óbito fetal, malformações e sequelas neurológicas/sensoriais permanentes. De forma geral, quanto MAIS PRECOCE a infecção na gestação, maior o risco de malformações estruturais graves; infecções mais tardias tendem a causar mais frequentemente doença sistêmica ativa no recém-nascido."
+      },
+      {
+        "titulo": "Toxoplasmose congênita",
+        "conteudo": "Transmitida por primoinfecção materna (contato com fezes de gato, carne crua/mal cozida). Tétrade clássica (mais evidente quando a infecção ocorre no primeiro trimestre): coriorretinite, hidrocefalia, calcificações intracranianas DIFUSAS e convulsões. Rastreamento sorológico é feito rotineiramente no pré-natal brasileiro; tratamento materno com espiramicina (reduz transmissão) e, se infecção fetal confirmada, esquema tríplice (sulfadiazina + pirimetamina + ácido folínico)."
+      },
+      {
+        "titulo": "Rubéola congênita",
+        "conteudo": "Risco de malformação é maior quando a infecção materna ocorre no primeiro trimestre. Tétrade de Gregg: catarata congênita, surdez neurossensorial, cardiopatia congênita (persistência do canal arterial é a mais clássica) e retardo mental. Prevenção é a principal estratégia (vacinação pré-concepcional), já que não há tratamento específico para a infecção estabelecida."
+      },
+      {
+        "titulo": "Citomegalovírus (CMV) congênito",
+        "conteudo": "É a infecção congênita mais comum globalmente, frequentemente assintomática ao nascimento (mas com risco de sequelas tardias, principalmente surdez neurossensorial progressiva). Quando sintomática: calcificações intracranianas PERIVENTRICULARES (diferente das calcificações difusas da toxoplasmose), microcefalia, petéquias (\"blueberry muffin baby\"), hepatoesplenomegalia, icterícia. Diagnóstico neonatal por PCR de urina/saliva nas primeiras 3 semanas de vida."
+      },
+      {
+        "titulo": "Sífilis congênita, herpes neonatal e Zika congênita",
+        "conteudo": "Sífilis congênita: pode ocorrer em qualquer fase da gestação (diferente de outras TORCH), causando desde aborto/óbito fetal até manifestações precoces (pênfigo palmoplantar, hepatoesplenomegalia, periostite) e tardias (dentes de Hutchinson, tíbia em sabre) — é prevenível e tratável com penicilina, e sua persistência reflete falha de rastreio/tratamento no pré-natal. Herpes neonatal: transmitido principalmente durante o parto (contato com lesões genitais maternas ativas), podendo causar doença localizada (pele/olho/boca), doença do SNC ou doença disseminada grave — cesárea é indicada diante de lesões genitais herpéticas ativas no momento do parto. Zika congênita: associada a microcefalia grave e outras malformações do complexo da síndrome congênita do Zika (calcificações, desproporção craniofacial, artrogripose), quando a infecção materna ocorre principalmente no primeiro trimestre."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Diferenciar o padrão de calcificação intracraniana (DIFUSA na toxoplasmose vs PERIVENTRICULAR no CMV) é ponto clássico de prova. A sífilis congênita se destaca por poder ocorrer em qualquer trimestre e por ser a única do grupo com tratamento materno plenamente eficaz e acessível (penicilina) — sua ocorrência reflete falha assistencial do pré-natal."
+      }
+    ],
+    "comoCai": "Cai como caso de recém-nascido com achados sugestivos de infecção congênita (calcificação intracraniana, microcefalia, surdez, catarata), pedindo a identificação do agente etiológico pelo padrão de acometimento."
+  },
+  {
+    "id": "mieloma-multiplo-gamopatias",
+    "area": "residencia",
+    "categoria": "Hematologia",
+    "titulo": "Mieloma Múltiplo e Gamopatias Monoclonais",
+    "resumo": "O mieloma múltiplo como neoplasia de plasmócitos, seus critérios diagnósticos (CRAB), e a diferenciação com a gamopatia monoclonal de significado indeterminado (MGUS).",
+    "revisado": true,
+    "fonte": "Harrison's Principles of Internal Medicine; Williams Hematology",
+    "secoes": [
+      {
+        "titulo": "Definição e fisiopatologia",
+        "conteudo": "Mieloma múltiplo é uma neoplasia maligna de plasmócitos (células B diferenciadas produtoras de anticorpos) na medula óssea, que produzem uma imunoglobulina monoclonal (\"componente M\") em excesso, geralmente IgG ou IgA, ou apenas cadeias leves livres. Mais comum em idosos (idade mediana ao diagnóstico ao redor de 65-70 anos), discretamente mais frequente em homens e na população negra."
+      },
+      {
+        "titulo": "Manifestações clínicas — mnemônico CRAB",
+        "conteudo": "C (Calcium/Cálcio): hipercalcemia por destruição óssea osteolítica mediada por citocinas dos plasmócitos. R (Renal): lesão renal aguda/crônica, classicamente por \"rim do mieloma\" (nefropatia por cilindros de cadeias leves nos túbulos), além de hipercalcemia e amiloidose. A (Anemia): normocítica normocrômica, por infiltração medular e supressão da hematopoese normal. B (Bone/Ósseo): lesões líticas (\"em saca-bocado\"/punched-out) visíveis em radiografia, causando dor óssea (o sintoma mais comum ao diagnóstico), fraturas patológicas e, eventualmente, compressão medular."
+      },
+      {
+        "titulo": "Outras manifestações e complicações",
+        "conteudo": "Infecções recorrentes (por supressão da produção de imunoglobulinas normais — \"insuficiência imune humoral funcional\"), hiperviscosidade sanguínea (sangramento mucoso, alterações visuais, em casos com componente M muito elevado), amiloidose secundária (deposição de cadeias leves em órgãos, incluindo coração e rins)."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "Eletroforese de proteínas séricas/urinárias identifica o componente monoclonal (pico M). Mielograma/biópsia de medula óssea confirma a infiltração plasmocitária (≥10% de plasmócitos clonais é um dos critérios). Radiografia de esqueleto (ou RM/PET-CT) identifica lesões líticas. O diagnóstico de mieloma múltiplo ativo (que requer tratamento) exige a presença de pelo menos um critério CRAB, ou biomarcadores de malignidade (plasmócitos clonais ≥60%, relação de cadeias leves livres muito alterada, ou mais de uma lesão focal à RM), diferenciando-o das formas assintomáticas."
+      },
+      {
+        "titulo": "Gamopatia monoclonal de significado indeterminado (MGUS)",
+        "conteudo": "Condição pré-maligna, MUITO mais comum que o mieloma múltiplo, caracterizada por componente M presente, porém em baixa quantidade, SEM critérios CRAB e sem infiltração plasmocitária significativa na medula. É assintomática, geralmente achado incidental, e requer apenas seguimento clínico-laboratorial periódico (risco de progressão para mieloma múltiplo de aproximadamente 1% ao ano, ao longo da vida) — NÃO deve ser tratada como mieloma."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O mnemônico CRAB (Cálcio, Renal, Anemia, Bone/lesões ósseas líticas) é a espinha dorsal de toda questão de mieloma múltiplo. A distinção entre MGUS (componente M presente, mas assintomático, sem critérios CRAB — só observar) e mieloma múltiplo ativo (com critérios CRAB — tratar) é a pegadinha mais frequente."
+      }
+    ],
+    "comoCai": "Cai como caso de idoso com dor óssea, anemia, hipercalcemia e/ou lesão renal, pedindo o reconhecimento do mieloma múltiplo pelos critérios CRAB e a diferenciação com MGUS."
+  },
+  {
+    "id": "cirurgia-cabeca-pescoco-laringologia-apneia-sono",
+    "area": "residencia",
+    "categoria": "Otorrinolaringologia",
+    "titulo": "Laringologia Cirúrgica e Cirurgia da Apneia do Sono",
+    "resumo": "Nódulos e pólipos de pregas vocais, paralisia de prega vocal e o papel da cirurgia (adenotonsilectomia e outras técnicas) no tratamento da síndrome da apneia obstrutiva do sono.",
+    "revisado": true,
+    "fonte": "Cummings Otolaryngology; Harrison's Principles of Internal Medicine",
+    "secoes": [
+      {
+        "titulo": "Lesões benignas de pregas vocais",
+        "conteudo": "Nódulos vocais (\"nódulos do cantor\"): lesões bilaterais, simétricas, na junção do terço anterior com os dois terços posteriores da prega vocal, causadas por abuso/uso incorreto crônico da voz (professores, cantores). Tratamento inicial é fonoterapia (a maioria regride sem cirurgia). Pólipos vocais: geralmente unilaterais, únicos, frequentemente associados a um episódio único de esforço vocal intenso ou tabagismo; podem exigir remoção cirúrgica (microcirurgia de laringe) quando não regridem com fonoterapia."
+      },
+      {
+        "titulo": "Paralisia de prega vocal",
+        "conteudo": "Causada por lesão do nervo laríngeo recorrente (ramo do vago), seja por cirurgia cervical/torácica prévia (tireoidectomia é a causa iatrogênica mais comum), neoplasias (pulmão, tireoide, esôfago comprimindo/invadindo o trajeto do nervo), ou idiopática. Manifesta-se por disfonia (voz soprosa/fraca) quando unilateral; a paralisia BILATERAL é mais grave, podendo causar obstrução de via aérea (as pregas ficam paramedianas, estreitando a via aérea) e exigir traqueostomia de urgência. Nasofibrolaringoscopia confirma o diagnóstico e avalia a posição das pregas."
+      },
+      {
+        "titulo": "Câncer de laringe",
+        "conteudo": "Fortemente associado a tabagismo e etilismo (efeito sinérgico entre os dois). Sintoma mais precoce e mais valorizado: rouquidão persistente (>2-3 semanas em paciente tabagista deve sempre ser investigada com nasofibrolaringoscopia). Sintomas mais tardios incluem disfagia, odinofagia, dispneia e linfadenopatia cervical. Tratamento conforme estadiamento: radioterapia, cirurgia (laringectomia parcial ou total) e quimioterapia, isolados ou combinados."
+      },
+      {
+        "titulo": "Indicação cirúrgica na apneia obstrutiva do sono",
+        "conteudo": "Embora o CPAP seja o tratamento de primeira linha para a maioria dos adultos com AOS moderada/grave, a cirurgia tem papel definido em situações específicas: em CRIANÇAS, a adenotonsilectomia é o tratamento de primeira linha para AOS causada por hipertrofia adenoamigdaliana (a causa mais comum de AOS pediátrica), com alta taxa de cura. Em adultos, a cirurgia (uvulopalatofaringoplastia e outras técnicas) é reservada para pacientes com anatomia obstrutiva específica corrigível, intolerância comprovada ao CPAP, ou como terapia adjuvante."
+      },
+      {
+        "titulo": "Traqueostomia",
+        "conteudo": "Via aérea cirúrgica definitiva/prolongada, indicada em obstrução de via aérea superior refratária (tumores, paralisia bilateral de pregas vocais, trauma facial extenso), necessidade de ventilação mecânica prolongada, ou incapacidade de proteção de via aérea a longo prazo (doenças neuromusculares avançadas). Diferencia-se da cricotireoidostomia (via aérea cirúrgica de EMERGÊNCIA, mais rápida, usada em situações agudas de \"não consigo intubar, não consigo ventilar\")."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Rouquidão persistente por mais de 2-3 semanas em paciente tabagista/etilista é o sinal de alarme mais cobrado para investigação de câncer de laringe. Em criança com AOS, adenotonsilectomia é a resposta esperada como primeira linha (diferente do adulto, onde CPAP é a primeira linha)."
+      }
+    ],
+    "comoCai": "Cai como caso de disfonia persistente em tabagista (pedindo investigação de câncer de laringe) ou como caso de criança com apneia obstrutiva do sono por hipertrofia adenoamigdaliana (pedindo a indicação cirúrgica correta)."
+  },
+  {
+    "id": "ombro-joelho-pediatrico",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Ombro e Joelho Pediátrico",
+    "resumo": "As principais causas de dor no joelho na criança/adolescente (doença de Osgood-Schlatter, condromalácia patelar) e as lesões do plexo braquial obstétrico no ombro.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; Campbell's Operative Orthopaedics",
+    "secoes": [
+      {
+        "titulo": "Doença de Osgood-Schlatter",
+        "conteudo": "É a causa mais comum de dor no joelho em crianças/adolescentes ativos, especialmente praticantes de esportes com saltos/corridas (futebol, basquete). Trata-se de uma osteocondrose de tração da tuberosidade tibial anterior, causada por microtraumas repetitivos na inserção do tendão patelar durante a fase de crescimento rápido. Quadro clínico: dor e edema localizados na tuberosidade tibial anterior, piorados pela atividade física (correr, saltar, ajoelhar), com proeminência óssea palpável no local. É autolimitada, resolvendo-se com o fechamento da fise de crescimento; tratamento é conservador (repouso relativo, gelo, analgesia, fisioterapia), reservando-se a redução de atividade física apenas nos períodos de dor mais intensa."
+      },
+      {
+        "titulo": "Condromalácia patelar / síndrome femoropatelar",
+        "conteudo": "Dor anterior no joelho por desalinhamento ou sobrecarga da articulação femoropatelar, comum em adolescentes (mais em meninas), associada a fraqueza do quadríceps (especialmente do vasto medial oblíquo) e desequilíbrio muscular. Dor tipicamente piorada ao subir/descer escadas, agachar, ou após período prolongado sentado com joelhos fletidos (\"sinal do cinema\"). Tratamento: fisioterapia de fortalecimento do quadríceps, sem necessidade de intervenção cirúrgica na maioria dos casos."
+      },
+      {
+        "titulo": "Osteocondrite dissecante do joelho",
+        "conteudo": "Necrose avascular de um fragmento osteocondral (mais comum no côndilo femoral medial), que pode se soltar e formar um corpo livre intra-articular. Manifesta-se com dor vaga, derrame articular intermitente e, se houver soltura do fragmento, episódios de travamento/bloqueio articular. Diagnóstico por radiografia/ressonância magnética; tratamento varia de conservador (lesões estáveis, esqueleto imaturo) a cirúrgico (fixação ou remoção do fragmento, conforme estabilidade)."
+      },
+      {
+        "titulo": "Lesão de plexo braquial obstétrico",
+        "conteudo": "Ocorre por tração excessiva do plexo braquial durante o parto, mais associada a distocia de ombro, macrossomia fetal e parto instrumentalizado. Paralisia de Erb-Duchenne (a mais comum, raízes C5-C6): acomete a musculatura do ombro e braço proximal, com o membro em posição característica de adução/rotação interna do ombro e extensão do cotovelo (\"posição de gorjeta do garçom\"), mas com preensão da mão preservada. Paralisia de Klumpke (raízes C8-T1, mais rara e mais grave): acomete a musculatura da mão/punho, com preensão prejudicada, podendo associar-se à síndrome de Horner (ptose, miose, anidrose) se houver acometimento da cadeia simpática cervical."
+      },
+      {
+        "titulo": "Conduta na lesão de plexo braquial obstétrico",
+        "conteudo": "A maioria dos casos (lesões neuropráxicas, mais leves) recupera espontaneamente nas primeiras semanas a meses de vida, sendo acompanhada com fisioterapia para prevenção de contraturas. Casos sem sinais de recuperação após 3-6 meses, ou com lesões mais graves (avulsão radicular), podem necessitar de avaliação para reconstrução microcirúrgica do plexo."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Dor e proeminência na tuberosidade tibial anterior em adolescente esportista é o quadro clássico de Osgood-Schlatter, tipicamente cobrado como diagnóstico autolimitado que não precisa de cirurgia. A posição \"gorjeta do garçom\" (adução/rotação interna do ombro, cotovelo estendido) é o achado mais associado à paralisia de Erb-Duchenne."
+      }
+    ],
+    "comoCai": "Cai como caso de criança/adolescente com dor no joelho relacionada à atividade física (pedindo Osgood-Schlatter) ou de recém-nascido com assimetria de movimento do braço após parto difícil (pedindo lesão de plexo braquial obstétrico)."
+  },
+  {
+    "id": "reumatologia-miscelanea-pmr-acg",
+    "area": "residencia",
+    "categoria": "Reumatologia",
+    "titulo": "Polimialgia Reumática e Arterite de Células Gigantes",
+    "resumo": "Duas doenças reumatológicas do idoso frequentemente associadas entre si — polimialgia reumática e arterite de células gigantes (temporal) — e o risco de cegueira irreversível na segunda.",
+    "revisado": true,
+    "fonte": "Harrison's Principles of Internal Medicine; Kelley's Textbook of Rheumatology",
+    "secoes": [
+      {
+        "titulo": "Polimialgia reumática (PMR)",
+        "conteudo": "Doença inflamatória que acomete quase exclusivamente pessoas acima de 50 anos, mais comum em mulheres. Caracteriza-se por dor e rigidez matinal (>45 minutos) na cintura escapular e pélvica (ombros, pescoço, quadris), SEM fraqueza muscular verdadeira nem elevação de enzimas musculares (CK normal — diferencia de miopatias inflamatórias verdadeiras). VHS e PCR tipicamente muito elevados. Resposta dramática e rápida (em 24-72h) a baixas doses de corticoide (prednisona) é característica e quase confirmatória do diagnóstico."
+      },
+      {
+        "titulo": "Arterite de células gigantes (arterite temporal)",
+        "conteudo": "Vasculite de grandes/médios vasos, também do idoso, frequentemente coexistindo com PMR (até 50% dos pacientes com arterite de células gigantes têm PMR associada, e uma minoria dos pacientes com PMR isolada desenvolve arterite de células gigantes). Sintomas: cefaleia temporal de início recente, claudicação mandibular (dor à mastigação, muito específica), dor/sensibilidade no couro cabeludo, espessamento/nodularidade da artéria temporal à palpação, sintomas sistêmicos (febre, perda de peso)."
+      },
+      {
+        "titulo": "A complicação mais temida: perda visual",
+        "conteudo": "A complicação mais grave e temida da arterite de células gigantes é a perda visual SÚBITA e IRREVERSÍVEL, por neuropatia óptica isquêmica anterior (oclusão das artérias ciliares posteriores que irrigam o nervo óptico). Diante de suspeita clínica de arterite de células gigantes (especialmente com sintomas visuais associados — amaurose fugaz, diplopia), o tratamento com CORTICOIDE EM ALTA DOSE deve ser iniciado IMEDIATAMENTE, sem aguardar confirmação por biópsia — o risco de perda visual permanente supera o risco de tratar um caso que eventualmente não se confirme."
+      },
+      {
+        "titulo": "Diagnóstico",
+        "conteudo": "VHS e PCR marcadamente elevados são característicos de ambas as condições (achado laboratorial central). O diagnóstico definitivo de arterite de células gigantes é confirmado por biópsia de artéria temporal (mostrando arterite de células gigantes com infiltrado inflamatório granulomatoso), mas a biópsia NUNCA deve atrasar o início do tratamento corticoide diante de suspeita clínica forte, especialmente com sintomas visuais."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "PMR isolada: corticoide em dose baixa a moderada (ex.: prednisona 12,5-25mg/dia), com desmame gradual ao longo de meses a anos, guiado pela resposta clínica e normalização de VHS/PCR. Arterite de células gigantes: corticoide em dose ALTA (prednisona 40-60mg/dia, ou pulsoterapia intravenosa se houver comprometimento visual), com desmame mais lento e prolongado que na PMR isolada, pelo maior risco de recidiva e de complicações graves."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tríade cefaleia temporal + claudicação mandibular + VHS muito elevado em idoso é o quadro mais cobrado de arterite de células gigantes — e a conduta correta diante de suspeita com sintoma visual é iniciar corticoide IMEDIATAMENTE, sem esperar a biópsia. A resposta dramática da PMR a baixas doses de corticoide é frequentemente usada como \"teste diagnóstico\" em prova."
+      }
+    ],
+    "comoCai": "Cai como caso de idoso com cefaleia temporal e VHS muito elevado, pedindo o reconhecimento da arterite de células gigantes e a conduta de iniciar corticoide imediatamente para prevenir cegueira irreversível."
+  },
+  {
+    "id": "transtornos-personalidade",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Transtornos de Personalidade",
+    "resumo": "Os três agrupamentos (clusters) de transtornos de personalidade e as características centrais de cada tipo, com destaque para o transtorno de personalidade borderline e antissocial.",
+    "revisado": true,
+    "fonte": "DSM-5-TR; Kaplan & Sadock's Synopsis of Psychiatry",
+    "secoes": [
+      {
+        "titulo": "Definição geral",
+        "conteudo": "Transtornos de personalidade são padrões duradouros e inflexíveis de percepção, pensamento e comportamento que se desviam acentuadamente das expectativas culturais, com início na adolescência/início da vida adulta, causando sofrimento ou prejuízo funcional significativo. Diferem dos transtornos do Eixo I (como depressão ou psicose) por serem padrões PERSISTENTES e EGOSSINTÔNICOS (o próprio paciente frequentemente não reconhece o comportamento como problemático), em vez de episódicos."
+      },
+      {
+        "titulo": "Cluster A — \"excêntricos/estranhos\"",
+        "conteudo": "Personalidade paranoide: desconfiança e suspeita persistentes e injustificadas em relação aos outros. Personalidade esquizoide: distanciamento das relações sociais, faixa restrita de expressão emocional, preferência por atividades solitárias, sem desejo de proximidade. Personalidade esquizotípica: desconforto agudo em relações íntimas, distorções cognitivo-perceptuais (pensamento mágico, ideias de referência) e excentricidades de comportamento, sem atingir critério de psicose franca."
+      },
+      {
+        "titulo": "Cluster B — \"dramáticos/erráticos/emocionais\"",
+        "conteudo": "Personalidade antissocial: desrespeito e violação persistentes dos direitos alheios, desde os 15 anos, com história de transtorno de conduta na infância — impulsividade, agressividade, ausência de remorso. Personalidade borderline (limítrofe): instabilidade acentuada das relações interpessoais, autoimagem e afetos, impulsividade marcante, medo intenso de abandono, comportamento autolesivo/suicida recorrente, sentimento crônico de vazio. Personalidade histriônica: busca excessiva de atenção, emocionalidade exagerada e teatral, sedução inadequada. Personalidade narcisista: grandiosidade, necessidade de admiração, falta de empatia."
+      },
+      {
+        "titulo": "Cluster C — \"ansiosos/medrosos\"",
+        "conteudo": "Personalidade esquiva (evitativa): inibição social, sentimentos de inadequação, hipersensibilidade à avaliação negativa, evitando relações por medo de rejeição (diferente da esquizoide, que evita por falta de interesse, não por medo). Personalidade dependente: necessidade excessiva de ser cuidado, comportamento submisso e de apego, dificuldade de tomar decisões independentes. Personalidade obsessivo-compulsiva: preocupação com ordem, perfeccionismo e controle, rigidez — DIFERENTE do TOC (transtorno de ansiedade com obsessões/compulsões egodistônicas), pois aqui o padrão é egossintônico (traço de personalidade, não sintoma sofrido como intruso)."
+      },
+      {
+        "titulo": "Manejo geral",
+        "conteudo": "Psicoterapia é o pilar do tratamento (terapia comportamental dialética é a mais estudada e eficaz especificamente para transtorno de personalidade borderline, reduzindo comportamento autolesivo/suicida). Farmacoterapia tem papel limitado e é usada de forma sintomática/coadjuvante para sintomas específicos associados (impulsividade, labilidade afetiva, sintomas depressivos/ansiosos), não havendo medicação que trate o transtorno de personalidade em si."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Os três clusters (A = excêntrico, B = dramático/emocional, C = ansioso) organizam praticamente toda questão sobre o tema — decorar essa estrutura facilita classificar qualquer transtorno descrito. Personalidade borderline (instabilidade + impulsividade + autolesão + medo de abandono) é o mais cobrado do Cluster B; terapia comportamental dialética é a resposta esperada de tratamento mais eficaz."
+      }
+    ],
+    "comoCai": "Cai como caso descrevendo um padrão de comportamento persistente e desadaptativo, pedindo a classificação do transtorno de personalidade e seu cluster correspondente."
+  },
+  {
+    "id": "hepatopatia-cronica-outras-causas",
+    "area": "residencia",
+    "categoria": "Hepatologia",
+    "titulo": "Outras Causas de Hepatopatia Crônica: Hepatite Autoimune, Hemocromatose e Doença de Wilson",
+    "resumo": "As principais hepatopatias crônicas não virais e não alcoólicas — hepatite autoimune, hemocromatose hereditária e doença de Wilson — e seus marcadores diagnósticos característicos.",
+    "revisado": true,
+    "fonte": "Sherlock's Diseases of the Liver and Biliary System; Harrison's Principles of Internal Medicine",
+    "secoes": [
+      {
+        "titulo": "Hepatite autoimune",
+        "conteudo": "Doença hepática crônica de etiologia autoimune, predominante em mulheres, podendo se apresentar de forma insidiosa (fadiga, icterícia intermitente) ou, em uma minoria, como hepatite aguda grave. Frequentemente associada a outras doenças autoimunes (tireoidite, doença celíaca). Marcadores: autoanticorpos — FAN e anti-músculo liso (tipo 1, mais comum) ou anti-LKM1 (tipo 2, mais comum em crianças), hipergamaglobulinemia (IgG elevada). Diagnóstico confirmado por biópsia hepática (hepatite de interface). Tratamento: corticoide, associado a azatioprina para poupar corticoide a longo prazo — resposta geralmente boa, mas recidiva é comum ao suspender o tratamento."
+      },
+      {
+        "titulo": "Hemocromatose hereditária",
+        "conteudo": "Doença genética (mais comumente mutação do gene HFE, autossômica recessiva) que causa absorção intestinal excessiva de ferro, com acúmulo progressivo em múltiplos órgãos. Manifestações clássicas (tardias, quando o acúmulo já é significativo): cirrose hepática, diabetes mellitus (\"diabetes bronzeado\" pela combinação com hiperpigmentação cutânea), cardiomiopatia, hipogonadismo, artropatia (classicamente das 2ª e 3ª articulações metacarpofalângicas). Diagnóstico: saturação de transferrina elevada (o teste de rastreio mais sensível) e ferritina sérica elevada, confirmado por teste genético (mutação HFE) e/ou biópsia hepática. Tratamento: flebotomias terapêuticas repetidas (o tratamento de escolha, removendo ferro progressivamente)."
+      },
+      {
+        "titulo": "Doença de Wilson",
+        "conteudo": "Doença genética autossômica recessiva rara, causada por mutação no gene ATP7B, que compromete a excreção biliar de cobre, levando ao seu acúmulo tóxico progressivo no fígado, cérebro e outros tecidos. Tipicamente se manifesta em pacientes JOVENS (crianças/adultos jovens) com doença hepática (de hepatite assintomática a cirrose/insuficiência hepática fulminante) e/ou manifestações neuropsiquiátricas (tremor, disartria, distonia, alterações de comportamento/psiquiátricas). Achado patognomônico ao exame oftalmológico: anéis de Kayser-Fleischer (depósito de cobre na córnea, visualizado por lâmpada de fenda), presentes na maioria dos casos com manifestação neurológica. Diagnóstico: ceruloplasmina sérica BAIXA (diferente das demais causas, aqui reduzida) e cobre urinário de 24h elevado. Tratamento: quelantes de cobre (D-penicilamina, trientina) ou zinco (reduz absorção intestinal de cobre)."
+      },
+      {
+        "titulo": "Doença hepática gordurosa não alcoólica (esteato-hepatite)",
+        "conteudo": "Causa cada vez mais prevalente de hepatopatia crônica, fortemente associada à síndrome metabólica/obesidade/diabetes. Espectro de gravidade variável, da esteatose simples (acúmulo de gordura sem inflamação significativa) à esteato-hepatite não alcoólica (com inflamação e risco de progressão para fibrose/cirrose). Diagnóstico de exclusão (afastar consumo significativo de álcool e outras causas), auxiliado por ultrassonografia/elastografia hepática; tratamento é primariamente baseado em mudança de estilo de vida (perda de peso, controle metabólico)."
+      },
+      {
+        "titulo": "Raciocínio diagnóstico geral",
+        "conteudo": "Diante de hepatopatia crônica sem etiologia viral/alcoólica evidente, o raciocínio deve incluir: autoanticorpos + IgG (hepatite autoimune), saturação de transferrina/ferritina (hemocromatose), ceruloplasmina (Wilson, especialmente em jovens com sintomas neuropsiquiátricos associados), e avaliação de síndrome metabólica (esteato-hepatite)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Anéis de Kayser-Fleischer + ceruloplasmina baixa em paciente JOVEM com sintomas neuropsiquiátricos é o quadro mais específico de doença de Wilson. Saturação de transferrina elevada associada a diabetes e hiperpigmentação cutânea (\"diabetes bronzeado\") é o quadro clássico de hemocromatose."
+      }
+    ],
+    "comoCai": "Cai como caso de hepatopatia crônica em paciente sem fator de risco viral/alcoólico evidente, pedindo a investigação diferencial entre hepatite autoimune, hemocromatose e doença de Wilson pelos marcadores laboratoriais específicos."
+  },
+  {
+    "id": "dermatoses-vesicobolhosas",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Dermatoses Vesicobolhosas Autoimunes",
+    "resumo": "Diferenciação entre pênfigo vulgar e penfigoide bolhoso, as duas principais doenças bolhosas autoimunes, pelo nível de clivagem cutânea e apresentação clínica.",
+    "revisado": true,
+    "fonte": "Fitzpatrick's Dermatology; Sampaio & Rivitti, Dermatologia",
+    "secoes": [
+      {
+        "titulo": "Classificação pelo nível de clivagem",
+        "conteudo": "As dermatoses bolhosas autoimunes são causadas por autoanticorpos direcionados contra proteínas de adesão da pele, e sua classificação fundamental é pelo nível onde ocorre a clivagem: INTRAEPIDÉRMICA (pênfigos, mais superficial, bolhas frágeis que se rompem facilmente) versus SUBEPIDÉRMICA (penfigoide e outras, mais profunda, bolhas tensas e mais resistentes)."
+      },
+      {
+        "titulo": "Pênfigo vulgar",
+        "conteudo": "Causado por autoanticorpos contra desmogleína (proteína desmossômica que mantém a coesão entre queratinócitos), causando clivagem INTRAEPIDÉRMICA (acantólise). Bolhas FLÁCIDAS, frágeis, que se rompem facilmente, deixando erosões dolorosas extensas — acomete tipicamente mucosa oral (frequentemente o primeiro sítio afetado, podendo preceder as lesões cutâneas em semanas/meses) além da pele. Sinal de Nikolsky positivo (o descolamento da pele aparentemente normal ao ser friccionada lateralmente, revelando a fragilidade epidérmica) é característico. É a forma mais grave dos pênfigos, com risco de complicações infecciosas/distúrbios hidroeletrolíticos pela extensa perda de barreira cutânea, exigindo tratamento imunossupressor sistêmico agressivo (corticoide em alta dose, rituximabe)."
+      },
+      {
+        "titulo": "Penfigoide bolhoso",
+        "conteudo": "Causado por autoanticorpos contra proteínas da membrana basal (hemidesmossomos), causando clivagem SUBEPIDÉRMICA. Mais comum em IDOSOS (diferente do pênfigo, que acomete faixa etária mais ampla). Bolhas TENSAS, maiores, menos frágeis que as do pênfigo, sobre base eritematosa/urticariforme, tipicamente em tronco e superfícies flexoras de membros — acometimento de mucosas é raro e menos grave que no pênfigo. Sinal de Nikolsky NEGATIVO (diferencia do pênfigo). Prognóstico geralmente mais benigno que o pênfigo vulgar; tratamento com corticoide tópico de alta potência (frequentemente suficiente, sem necessidade de imunossupressão sistêmica agressiva) ou corticoide sistêmico em casos extensos."
+      },
+      {
+        "titulo": "Diagnóstico laboratorial",
+        "conteudo": "Biópsia de pele com imunofluorescência direta é o exame confirmatório padrão-ouro para ambas as condições: no pênfigo vulgar, mostra depósito de IgG no espaço intercelular epidérmico (\"em rede de pesca/favo de mel\"); no penfigoide bolhoso, mostra depósito linear de IgG e C3 ao longo da membrana basal. A biópsia deve idealmente incluir uma bolha íntegra recente e pele perilesional para a imunofluorescência."
+      },
+      {
+        "titulo": "Dermatite herpetiforme",
+        "conteudo": "Outra dermatose bolhosa autoimune relevante, fortemente associada à doença celíaca (sensibilidade ao glúten). Caracteriza-se por vesículas/pápulas extremamente pruriginosas, agrupadas, tipicamente em superfícies extensoras (cotovelos, joelhos, região sacral). Imunofluorescência direta mostra depósitos granulares de IgA na papila dérmica. Tratamento: dieta sem glúten (trata a base celíaca) e dapsona (controle sintomático rápido do prurido/lesões)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Sinal de Nikolsky POSITIVO + bolhas flácidas + acometimento de mucosa oral é o quadro mais cobrado de pênfigo vulgar; bolhas TENSAS em idoso, sem acometimento mucoso significativo e Nikolsky negativo, aponta para penfigoide bolhoso. A imunofluorescência direta é sempre a resposta esperada para exame confirmatório."
+      }
+    ],
+    "comoCai": "Cai como caso de paciente com bolhas cutâneas pedindo a diferenciação entre pênfigo vulgar e penfigoide bolhoso pelo sinal de Nikolsky, característica das bolhas e acometimento mucoso."
+  },
+  {
+    "id": "desenvolvimento-ortopedico-crianca",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Desenvolvimento Ortopédico Normal da Criança",
+    "resumo": "As variações fisiológicas do alinhamento dos membros inferiores ao longo do crescimento (geno varo, geno valgo, marcha em rotação interna) e quando encaminhar para investigação especializada.",
+    "revisado": true,
+    "fonte": "Nelson Textbook of Pediatrics; Campbell's Operative Orthopaedics",
+    "secoes": [
+      {
+        "titulo": "Evolução fisiológica do alinhamento dos membros inferiores",
+        "conteudo": "O alinhamento dos membros inferiores muda de forma previsível e FISIOLÓGICA ao longo da infância: recém-nascidos e lactentes apresentam geno varo fisiológico (pernas arqueadas para fora), que progride gradualmente para um alinhamento neutro por volta dos 18-24 meses, seguido de geno valgo fisiológico (joelhos voltados para dentro, \"joelhos em X\") entre 2-4 anos, que se resolve espontaneamente até os 6-7 anos, quando o alinhamento adulto normal (discreto valgo) é atingido. Reconhecer essa sequência evita encaminhamentos e investigações desnecessárias em crianças com desenvolvimento normal."
+      },
+      {
+        "titulo": "Sinais de alarme que diferenciam variação patológica",
+        "conteudo": "Assimetria entre os membros, progressão da deformidade em vez de melhora com a idade, deformidade muito acentuada/fora da faixa etária esperada, baixa estatura associada, dor, e persistência de geno varo além dos 2-3 anos (quando deve-se suspeitar de doença de Blount — deformidade progressiva por alteração do crescimento da fise tibial proximal medial, mais comum em crianças obesas e que iniciaram a marcha precocemente) são sinais de alarme que justificam avaliação ortopédica especializada e investigação radiográfica."
+      },
+      {
+        "titulo": "Marcha em rotação interna (\"pés para dentro\")",
+        "conteudo": "Queixa muito comum nos consultórios pediátricos, geralmente por uma combinação de fatores rotacionais fisiológicos ao longo do eixo do membro: anteversão femoral aumentada (mais comum em pré-escolares, geralmente resolve espontaneamente), torção tibial interna (mais comum em lactentes/crianças pequenas) ou metatarso aduto (deformidade do antepé, presente já ao nascimento, geralmente flexível e autolimitada). A grande maioria dos casos é fisiológica e se resolve espontaneamente com o crescimento, sem necessidade de órteses, calçados especiais ou cirurgia — intervenções desnecessárias eram praticadas no passado, mas a evidência atual não sustenta seu uso na ausência de deformidade rígida/grave."
+      },
+      {
+        "titulo": "Pé plano flexível",
+        "conteudo": "Achado extremamente comum e FISIOLÓGICO em crianças pequenas (o arco longitudinal medial do pé se desenvolve gradualmente até os 6-8 anos), caracterizado por arco plantar reduzido/ausente em apoio, que REAPARECE quando o pé fica sem carga (na ponta dos pés ou suspenso) — essa flexibilidade é o que diferencia o pé plano flexível fisiológico (não requer tratamento) do pé plano RÍGIDO (arco não reaparece mesmo sem carga, sinal de alarme para causas estruturais como coalizão tarsal, exigindo investigação)."
+      },
+      {
+        "titulo": "Displasia do desenvolvimento do quadril (rastreamento)",
+        "conteudo": "Embora seja abordada em maior profundidade em outro tema, cabe reforçar aqui que o exame do quadril (manobras de Ortolani e Barlow) faz parte da avaliação ortopédica de rotina de todo recém-nascido e lactente, sendo a triagem mais importante do desenvolvimento ortopédico precoce pela gravidade das sequelas se não diagnosticada e tratada a tempo."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Reconhecer a sequência fisiológica normal (varo → neutro → valgo → alinhamento adulto) é o ponto mais cobrado, evitando o erro de classificar variações normais do desenvolvimento como patológicas. Pé plano que reaparece sem carga = flexível = fisiológico = tranquilizar; pé plano rígido = investigar."
+      }
+    ],
+    "comoCai": "Cai como caso de pais preocupados com o alinhamento das pernas ou marcha da criança, pedindo o reconhecimento de que a variação descrita é fisiológica para a idade, ou identificação de sinais de alarme que indicam investigação."
+  },
+  {
+    "id": "cirurgia-cabeca-pescoco-tireoide",
+    "area": "residencia",
+    "categoria": "Otorrinolaringologia",
+    "titulo": "Cirurgia de Cabeça e Pescoço: Nódulos e Câncer de Tireoide",
+    "resumo": "Investigação do nódulo tireoidiano pelo sistema TI-RADS e punção aspirativa, e os principais tipos histológicos de câncer de tireoide e a indicação de tireoidectomia.",
+    "revisado": true,
+    "fonte": "Williams Textbook of Endocrinology; Cummings Otolaryngology",
+    "secoes": [
+      {
+        "titulo": "Investigação do nódulo tireoidiano",
+        "conteudo": "Nódulos tireoidianos são achados muito comuns (a maioria benigna), investigados inicialmente com TSH (nódulo hiperfuncionante/\"quente\" tem risco de malignidade muito baixo, geralmente não exige punção) e ultrassonografia cervical, classificada pelo sistema TI-RADS (Thyroid Imaging Reporting and Data System), que estratifica o risco de malignidade conforme composição, ecogenicidade, forma, margens e focos ecogênicos do nódulo, orientando a indicação de punção aspirativa por agulha fina (PAAF) conforme o tamanho e a categoria de risco."
+      },
+      {
+        "titulo": "Punção aspirativa por agulha fina (PAAF) e sistema Bethesda",
+        "conteudo": "A PAAF é o exame mais importante na avaliação de malignidade, com resultado classificado pelo sistema Bethesda: categorias que variam de benigno (conduta expectante) a maligno (indicação cirúrgica), passando por categorias indeterminadas (atipia de significado indeterminado, neoplasia folicular, suspeito para malignidade), que frequentemente exigem repetição da punção, testes moleculares complementares ou cirurgia diagnóstica/terapêutica."
+      },
+      {
+        "titulo": "Carcinoma papilífero de tireoide",
+        "conteudo": "É o tipo histológico MAIS COMUM de câncer de tireoide (cerca de 80% dos casos), com excelente prognóstico geral (sobrevida em 10 anos superior a 90% na maioria dos casos). Dissemina-se preferencialmente por via LINFÁTICA (metástases para linfonodos cervicais são relativamente comuns mesmo em tumores pequenos, sem impactar tanto o prognóstico quanto em outros cânceres). Achados citológicos característicos incluem núcleos \"em vidro fosco\" e corpos psamomatosos."
+      },
+      {
+        "titulo": "Outros tipos histológicos",
+        "conteudo": "Carcinoma folicular: segundo mais comum, dissemina-se preferencialmente por via HEMATOGÊNICA (metástases à distância — pulmão, osso — mais do que linfonodal); seu diagnóstico definitivo de malignidade frequentemente exige a peça cirúrgica completa (invasão capsular/vascular), já que a citologia da PAAF não distingue adenoma de carcinoma folicular. Carcinoma medular: origina-se das células parafoliculares (células C, produtoras de calcitonina), associado às síndromes de Neoplasia Endócrina Múltipla tipo 2 — calcitonina sérica é o marcador tumoral específico. Carcinoma anaplásico: o mais raro e o mais agressivo, tipicamente em idosos, com crescimento rapidamente progressivo e prognóstico sombrio."
+      },
+      {
+        "titulo": "Tireoidectomia",
+        "conteudo": "Tireoidectomia total é indicada na maioria dos carcinomas diferenciados de tireoide (papilífero/folicular) de maior risco, carcinoma medular e anaplásico; lobectomia (tireoidectomia parcial) pode ser suficiente em tumores papilíferos pequenos e de baixo risco. Complicações cirúrgicas importantes a conhecer: lesão do nervo laríngeo recorrente (causando disfonia/paralisia de prega vocal) e hipoparatireoidismo transitório/definitivo (por remoção inadvertida das paratireoides, causando hipocalcemia pós-operatória — deve-se monitorar cálcio sérico no pós-operatório)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Carcinoma papilífero = mais comum, dissemina por via linfática, bom prognóstico — é o tipo histológico mais cobrado. Calcitonina como marcador do carcinoma medular e sua associação com NEM 2 é ponto de conexão frequente entre os temas de endocrinologia e cirurgia de cabeça e pescoço."
+      }
+    ],
+    "comoCai": "Cai como caso de nódulo tireoidiano pedindo a investigação escalonada (TSH → USG/TI-RADS → PAAF) ou como caso de câncer de tireoide pedindo a associação do tipo histológico à sua via de disseminação característica."
+  },
+  {
+    "id": "maos-tortas-congenitas",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Deformidades Congênitas da Mão e do Antebraço (\"Mãos Tortas\")",
+    "resumo": "As principais deformidades congênitas de mão/punho (mão torta radial e mão torta ulnar) e sua associação com síndromes sistêmicas que exigem investigação adicional.",
+    "revisado": true,
+    "fonte": "Campbell's Operative Orthopaedics; Nelson Textbook of Pediatrics",
+    "secoes": [
+      {
+        "titulo": "Mão torta radial (deficiência radial)",
+        "conteudo": "É a mais comum das deformidades congênitas longitudinais do antebraço, caracterizada por hipoplasia/ausência do rádio, causando desvio radial do punho e da mão, frequentemente associada a hipoplasia ou ausência do polegar. Pode ser unilateral ou bilateral. É a deformidade congênita de mão/antebraço mais frequentemente associada a SÍNDROMES SISTÊMICAS, exigindo investigação adicional: síndrome de VACTERL (associação de anomalias Vertebrais, Anais, Cardíacas, Traqueoesofágicas, Renais e de membros — Limb), síndrome de Holt-Oram (defeitos cardíacos associados, tipicamente comunicação interatrial), anemia de Fanconi (falência medular progressiva — importante rastrear, pois tem implicação prognóstica grave se não identificada precocemente) e síndrome TAR (trombocitopenia com ausência de rádio)."
+      },
+      {
+        "titulo": "Mão torta ulnar (deficiência ulnar)",
+        "conteudo": "Muito mais rara que a deficiência radial, caracterizada por hipoplasia/ausência da ulna, causando desvio ulnar do punho. Menos associada a síndromes sistêmicas que a deficiência radial, mas frequentemente associada a outras anomalias musculoesqueléticas localizadas (deformidades de cotovelo, ausência de dedos ulnares)."
+      },
+      {
+        "titulo": "Investigação sistêmica obrigatória",
+        "conteudo": "Diante de qualquer deformidade congênita significativa de mão/antebraço, especialmente a deficiência radial, deve-se investigar ativamente: ecocardiograma (rastreio de cardiopatia congênita), hemograma completo seriado (rastreio de anemia de Fanconi — fundamental, pois a manifestação hematológica pode ser tardia em relação à deformidade de membro, e o diagnóstico precoce muda o prognóstico e o manejo), ultrassonografia renal (rastreio de anomalias renais associadas), e avaliação da coluna vertebral (anomalias vertebrais)."
+      },
+      {
+        "titulo": "Polidactilia e sindactilia",
+        "conteudo": "Polidactilia (dedo(s) supranumerário(s)): a mais comum é a polidactilia pós-axial (dedo extra do lado ulnar/do dedo mínimo), mais frequente em crianças negras e geralmente isolada; a polidactilia pré-axial (lado radial/polegar) tem maior associação com síndromes. Sindactilia (fusão entre dedos, cutânea ou óssea): a deformidade congênita de mão mais comum em geral, mais frequente entre 3º e 4º dedos, geralmente isolada, mas pode fazer parte de síndromes (Apert, Poland)."
+      },
+      {
+        "titulo": "Tratamento",
+        "conteudo": "O manejo das deformidades congênitas de mão é individualizado, multidisciplinar (envolvendo cirurgia da mão pediátrica, e conforme a síndrome associada, outras especialidades), com correção cirúrgica planejada conforme o tipo e a gravidade da deformidade, geralmente realizada nos primeiros anos de vida para otimizar a função e o desenvolvimento de habilidades motoras finas."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Diante de deficiência radial congênita, a associação mais cobrada é com anemia de Fanconi (pela gravidade do diagnóstico tardio) e VACTERL — sempre lembrar de investigar sistemicamente (coração, rins, medula óssea) uma criança com essa deformidade, e não tratá-la como um problema isolado do membro."
+      }
+    ],
+    "comoCai": "Cai como caso de recém-nascido com deformidade de mão/punho, pedindo o reconhecimento da necessidade de investigação sistêmica (cardíaca, renal, hematológica) associada, especialmente na deficiência radial."
+  },
+  {
+    "id": "aloimunizacao-doenca-hemolitica-perinatal",
+    "area": "residencia",
+    "categoria": "Obstetrícia",
+    "titulo": "Aloimunização Materna e Doença Hemolítica Perinatal",
+    "resumo": "A fisiopatologia da aloimunização Rh, sua prevenção com imunoglobulina anti-D e a investigação/conduta na gestação com aloimunização já estabelecida.",
+    "revisado": true,
+    "fonte": "Williams Obstetrics; FEBRASGO — Manual de Assistência Pré-Natal",
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia da aloimunização Rh",
+        "conteudo": "Ocorre quando uma gestante Rh-negativo é exposta a hemácias fetais Rh-positivo (herdadas do pai), geralmente durante o parto, mas também em abortamentos, procedimentos invasivos (amniocentese), sangramentos gestacionais ou gestação ectópica — desenvolvendo anticorpos anti-D. Na PRIMEIRA gestação sensibilizante, geralmente não há repercussão fetal significativa (a sensibilização ocorre tipicamente no momento do parto). Em gestações SUBSEQUENTES com feto Rh-positivo, os anticorpos anti-D maternos (IgG, que atravessa a placenta) atacam as hemácias fetais, causando hemólise progressiva — a doença tende a ser mais grave a cada gestação sucessiva."
+      },
+      {
+        "titulo": "Prevenção com imunoglobulina anti-D",
+        "conteudo": "A principal estratégia é a PREVENÇÃO da sensibilização em gestantes Rh-negativo não sensibilizadas (Coombs indireto negativo), com imunoglobulina anti-D (imunoglobulina Rh) administrada rotineiramente por volta de 28 semanas de gestação, e novamente até 72 horas após o parto se o recém-nascido for Rh-positivo. Também deve ser administrada após qualquer evento potencialmente sensibilizante (abortamento, gestação ectópica, sangramento gestacional, procedimentos invasivos, trauma abdominal). A imunoglobulina anti-D NÃO tem indicação em gestante já sensibilizada (Coombs indireto positivo) — nesse caso, o dano já está estabelecido e a conduta muda para vigilância fetal."
+      },
+      {
+        "titulo": "Investigação da gestante sensibilizada",
+        "conteudo": "Diante de Coombs indireto positivo, deve-se titular o anticorpo materno (título crítico costuma ser 1:16, variável conforme o laboratório) e investigar a genotipagem Rh fetal (paterna, se o pai for heterozigoto, ou por DNA fetal livre no sangue materno) — se o feto for Rh-negativo, não há risco e a gestação segue normalmente. Se o feto for Rh-positivo e o título estiver acima do crítico, inicia-se vigilância seriada com Doppler da artéria cerebral média fetal, que detecta anemia fetal pelo aumento da velocidade de pico sistólico (sangue mais fluido/anêmico flui mais rápido), sem necessidade de procedimento invasivo na maioria dos casos."
+      },
+      {
+        "titulo": "Conduta na doença hemolítica fetal estabelecida",
+        "conteudo": "Anemia fetal grave detectada pelo Doppler indica necessidade de cordocentese para confirmação e, se indicado, transfusão intrauterina de concentrado de hemácias diretamente no cordão umbilical fetal — procedimento de alto risco, mas capaz de salvar fetos com anemia grave antes da viabilidade extrauterina. Após o nascimento, o recém-nascido pode desenvolver hidropsia fetal (forma mais grave, com edema generalizado por insuficiência cardíaca de alto débito e hipoalbuminemia) e icterícia neonatal grave por hemólise continuada, exigindo fototerapia intensiva e, em casos graves, exsanguineotransfusão."
+      },
+      {
+        "titulo": "Outros sistemas de aloimunização",
+        "conteudo": "Além do sistema Rh (antígeno D), outros antígenos eritrocitários (sistema Kell, especialmente) também podem causar aloimunização e doença hemolítica perinatal, com mecanismo semelhante — a aloimunização por anti-Kell tem a particularidade de causar anemia fetal por SUPRESSÃO da eritropoese (não apenas hemólise), tornando o quadro por vezes mais grave e menos previsível pela titulação de anticorpos isolada."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "O momento e a indicação da imunoglobulina anti-D (28 semanas + pós-parto se RN Rh-positivo + após eventos sensibilizantes) é o conteúdo mais cobrado — e a regra fundamental de que a imunoglobulina NÃO deve ser administrada em gestante já sensibilizada (Coombs indireto positivo) é armadilha clássica de prova."
+      }
+    ],
+    "comoCai": "Cai como caso de gestante Rh-negativo pedindo a conduta preventiva correta com imunoglobulina anti-D, ou como caso de gestante já sensibilizada pedindo a investigação por Doppler de artéria cerebral média."
+  },
+  {
+    "id": "psicofarmacologia",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Psicofarmacologia: Principais Classes de Medicamentos Psiquiátricos",
+    "resumo": "Visão geral das classes de psicofármacos (antidepressivos, antipsicóticos, estabilizadores de humor, ansiolíticos), seus mecanismos e efeitos adversos mais relevantes.",
+    "revisado": true,
+    "fonte": "Kaplan & Sadock's Synopsis of Psychiatry; Stahl's Essential Psychopharmacology",
+    "secoes": [
+      {
+        "titulo": "Antidepressivos",
+        "conteudo": "Inibidores seletivos de recaptação de serotonina (ISRS — fluoxetina, sertralina, escitalopram): primeira linha para depressão e transtornos ansiosos, pelo melhor perfil de segurança e tolerabilidade; efeitos colaterais mais comuns incluem náusea, disfunção sexual e, no início do tratamento, piora transitória de ansiedade. Inibidores de recaptação de serotonina e noradrenalina (IRSN — venlafaxina, duloxetina): eficazes também em dor crônica associada (fibromialgia, neuropatia). Tricíclicos (amitriptilina, imipramina): eficazes, porém com mais efeitos anticolinérgicos, cardiotóxicos (risco de arritmia em superdosagem — atenção especial ao risco de intoxicação intencional) e sedativos, hoje mais reservados a casos refratários ou indicações específicas (dor crônica, enurese). Todos os antidepressivos levam de 2 a 6 semanas para efeito terapêutico pleno, e carregam alerta de aumento de risco de ideação suicida em crianças/adolescentes/adultos jovens no início do tratamento, exigindo monitoramento próximo nesse período."
+      },
+      {
+        "titulo": "Antipsicóticos",
+        "conteudo": "Típicos/primeira geração (haloperidol, clorpromazina): bloqueio predominante de receptores dopaminérgicos D2, eficazes principalmente para sintomas POSITIVOS (alucinações, delírios), com maior risco de efeitos extrapiramidais (parkinsonismo, distonia aguda, acatisia, discinesia tardia — esta última, potencialmente irreversível, é a mais temida a longo prazo) e hiperprolactinemia. Atípicos/segunda geração (risperidona, olanzapina, quetiapina, clozapina): também atuam em receptores serotoninérgicos, com menor risco de sintomas extrapiramidais, porém maior risco de efeitos metabólicos (ganho de peso, dislipidemia, diabetes). Clozapina é reservada para esquizofrenia refratária (após falha de pelo menos dois antipsicóticos), pelo risco de agranulocitose, que exige monitoramento hematológico rigoroso e periódico."
+      },
+      {
+        "titulo": "Síndrome neuroléptica maligna",
+        "conteudo": "Complicação rara, porém potencialmente fatal, do uso de antipsicóticos (mais comum com os típicos, mas possível com qualquer classe): tétrade de rigidez muscular \"em cano de chumbo\", hipertermia, instabilidade autonômica (labilidade de PA, taquicardia) e alteração do estado mental, associada a CK muito elevada. Tratamento: suspensão imediata do antipsicótico, suporte clínico intensivo, e agentes específicos (dantrolene, bromocriptina) em casos graves."
+      },
+      {
+        "titulo": "Estabilizadores de humor",
+        "conteudo": "Lítio: padrão-ouro para transtorno bipolar (tratamento agudo e profilático, com efeito comprovado de redução de risco de suicídio), janela terapêutica estreita exigindo monitoramento de níveis séricos, com risco de toxicidade (tremor grosseiro, ataxia, confusão, podendo evoluir para convulsão/coma em intoxicação grave) e efeitos a longo prazo sobre tireoide (hipotireoidismo) e rim (diabetes insipidus nefrogênico). Ácido valproico e carbamazepina: alternativas eficazes, especialmente em episódios mistos/de ciclagem rápida, com necessidade de monitoramento hepático (valproico) e hematológico (carbamazepina, risco de agranulocitose)."
+      },
+      {
+        "titulo": "Ansiolíticos: benzodiazepínicos",
+        "conteudo": "Ação rápida em sintomas ansiosos agudos, por potencialização do GABA. Uso de curto prazo é preferível pelo risco de tolerância, dependência física e síndrome de abstinência (podendo incluir convulsões em casos graves de suspensão abrupta após uso prolongado) — não são primeira linha para tratamento crônico de transtornos ansiosos, sendo reservados a alívio sintomático agudo/curto prazo, enquanto antidepressivos (ISRS) fazem efeito."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A tétrade de rigidez + hipertermia + instabilidade autonômica + alteração mental (síndrome neuroléptica maligna) associada a antipsicótico é o conteúdo mais cobrado de emergência psiquiátrica farmacológica. Discinesia tardia como complicação irreversível de antipsicóticos típicos em uso crônico é ponto frequente."
+      }
+    ],
+    "comoCai": "Cai como caso de paciente em uso de psicofármaco desenvolvendo efeito adverso característico (rigidez + febre em uso de antipsicótico, tremor/confusão em uso de lítio), pedindo o reconhecimento da complicação e a conduta correta."
+  },
+  {
+    "id": "sindromes-verrucosas",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Síndromes Verrucosas: Infecções Cutâneas pelo HPV",
+    "resumo": "As manifestações cutâneas da infecção pelo papilomavírus humano (verrugas vulgares, plantares, planas e condiloma acuminado) e suas opções de tratamento.",
+    "revisado": true,
+    "fonte": "Fitzpatrick's Dermatology; Sampaio & Rivitti, Dermatologia",
+    "secoes": [
+      {
+        "titulo": "Fisiopatologia geral",
+        "conteudo": "As verrugas são lesões cutâneas benignas causadas pela infecção do papilomavírus humano (HPV) nos queratinócitos, com diferentes subtipos virais associados a diferentes apresentações clínicas e localizações. A transmissão ocorre por contato direto (pele a pele ou por fômites/superfícies), com período de incubação variável (semanas a meses)."
+      },
+      {
+        "titulo": "Verruga vulgar",
+        "conteudo": "A forma mais comum, tipicamente em mãos e dedos, apresentando-se como pápulas hiperceratósicas, ásperas, de superfície irregular (\"em couve-flor\"), podendo apresentar pontos escuros característicos (capilares trombosados). Mais comuns em crianças e adultos jovens, e em imunossuprimidos."
+      },
+      {
+        "titulo": "Verruga plantar",
+        "conteudo": "Localizada na planta do pé, sendo achatada pela pressão do peso corporal (diferente da verruga vulgar, que é elevada), podendo causar dor à deambulação, especialmente quando localizada em área de apoio. Diferencia-se do calo/calosidade pela presença de pontos escuros (capilares trombosados) visíveis após debridamento superficial e pela dor à compressão lateral (diferente do calo, mais doloroso à pressão direta)."
+      },
+      {
+        "titulo": "Verruga plana",
+        "conteudo": "Pápulas pequenas, discretamente elevadas, de superfície lisa (diferente das demais, que são hiperceratósicas/ásperas), coloração da pele ou levemente acastanhada, tipicamente múltiplas, em face e dorso das mãos — mais comuns em crianças. O fenômeno de Koebner (disseminação ao longo de linhas de trauma/coçadura) é comum nesse tipo."
+      },
+      {
+        "titulo": "Condiloma acuminado (verruga genital)",
+        "conteudo": "Manifestação da infecção genital pelo HPV, causada predominantemente pelos subtipos de baixo risco oncogênico (6 e 11), apresentando-se como lesões vegetantes, exofíticas, \"em couve-flor\", na região anogenital — é a IST viral mais prevalente. Importante diferenciar dos subtipos de ALTO risco oncogênico (16 e 18, entre outros), que são responsáveis pela maioria dos casos de câncer de colo do útero e não costumam causar lesões verrucosas visíveis, atuando de forma subclínica (por isso a importância do rastreamento citológico, independente da presença de condiloma). Vacinação contra HPV protege contra os subtipos mais associados tanto a condiloma (6, 11) quanto a câncer (16, 18)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A diferenciação entre subtipos de HPV de baixo risco (causam lesões verrucosas visíveis, 6 e 11) e alto risco oncogênico (16 e 18, associados a câncer, geralmente sem lesão verrucosa visível) é o ponto mais cobrado, reforçando por que o rastreamento de câncer de colo uterino é necessário mesmo sem lesões visíveis. Pontos escuros (capilares trombosados) diferenciam verruga plantar de calo comum."
+      }
+    ],
+    "comoCai": "Cai como caso de lesão verrucosa cutânea ou genital pedindo a identificação do tipo de verruga pelo HPV e a diferenciação entre subtipos de baixo e alto risco oncogênico."
+  },
+  {
+    "id": "cirurgia-cabeca-pescoco-neoplasias-traqueostomia",
+    "area": "residencia",
+    "categoria": "Otorrinolaringologia",
+    "titulo": "Neoplasias de Cabeça e Pescoço, Anomalias Cervicofaciais Congênitas e Traqueostomia",
+    "resumo": "Massas cervicais benignas congênitas (cisto tireoglosso, cisto branquial), câncer de cabeça e pescoço e a técnica/indicações da traqueostomia.",
+    "revisado": true,
+    "fonte": "Cummings Otolaryngology; Sabiston Textbook of Surgery",
+    "secoes": [
+      {
+        "titulo": "Cisto do ducto tireoglosso",
+        "conteudo": "A massa cervical congênita mais comum na infância, originada de remanescentes do trajeto embrionário de descida da tireoide (do forame cego da língua até sua posição final). Apresenta-se como massa cística na LINHA MÉDIA do pescoço, tipicamente próxima ao osso hioide, com característica PATOGNOMÔNICA de se MOVER PARA CIMA com a protrusão da língua ou deglutição (pela conexão com o trajeto embrionário lingual). Antes da excisão cirúrgica (técnica de Sistrunk, que remove o cisto junto com a porção central do osso hioide para reduzir recidiva), deve-se confirmar por ultrassonografia a presença de tecido tireoidiano tópico normal, pois em uma minoria de casos o cisto tireoglosso pode conter o único tecido tireoidiano funcionante do paciente."
+      },
+      {
+        "titulo": "Cisto branquial (cisto da fenda branquial)",
+        "conteudo": "Segunda massa cervical congênita mais comum, originada de remanescentes do aparelho branquial embrionário (mais comumente da segunda fenda branquial). Apresenta-se como massa cística LATERAL no pescoço, na borda anterior do músculo esternocleidomastoideo — diferencia-se do cisto tireoglosso pela localização lateral (não medial) e pela ausência de movimento com a deglutição/protrusão lingual."
+      },
+      {
+        "titulo": "Câncer de cabeça e pescoço",
+        "conteudo": "A maioria dos carcinomas de cabeça e pescoço (cavidade oral, orofaringe, laringe, hipofaringe) é do tipo espinocelular, fortemente associada a tabagismo e etilismo (efeito sinérgico). Uma proporção crescente de cânceres de orofaringe está associada à infecção pelo HPV (subtipo 16), tipicamente acometendo pacientes mais jovens e não necessariamente tabagistas, com prognóstico geralmente MELHOR que os casos associados a tabaco/álcool. Sintomas de alarme: lesão/úlcera oral que não cicatriza, disfagia/odinofagia persistente, rouquidão persistente, massa cervical persistente (linfonodo aumentado sem causa infecciosa clara, especialmente em adultos >40 anos, deve sempre ser investigado ativamente até excluir malignidade)."
+      },
+      {
+        "titulo": "Abordagem da massa cervical em adulto",
+        "conteudo": "Em adultos, especialmente acima de 40 anos, uma massa cervical persistente (>2-4 semanas) sem etiologia infecciosa evidente deve ser investigada ativamente para excluir malignidade (metástase linfonodal de tumor primário de cabeça e pescoço, tireoide, ou linfoma) — a regra prática \"massa cervical em adulto é câncer até se provar o contrário\" reflete essa prioridade diagnóstica, contrastando com a criança, onde a causa infecciosa/inflamatória benigna é muito mais provável."
+      },
+      {
+        "titulo": "Traqueostomia: técnica e indicações",
+        "conteudo": "Procedimento cirúrgico (ou percutâneo, à beira leito, em pacientes selecionados) que cria uma via aérea artificial através da parede anterior da traqueia (geralmente entre o 2º e 4º anéis traqueais), indicado para obstrução de via aérea superior refratária, ventilação mecânica prolongada (geralmente considerada após 7-14 dias de intubação orotraqueal, para reduzir lesão laríngea/traqueal e facilitar cuidados), e proteção de via aérea a longo prazo em doenças neuromusculares/neurológicas graves. Complicações precoces incluem sangramento e pneumotórax; complicações tardias incluem estenose traqueal e fístula traqueoesofágica/traqueoinominada (esta última rara, porém potencialmente fatal)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A característica de mover-se com a protrusão lingual é o dado mais específico e mais cobrado para diferenciar cisto tireoglosso (medial, móvel com a língua) de cisto branquial (lateral, sem esse movimento). Massa cervical persistente em adulto >40 anos deve sempre suscitar investigação de malignidade."
+      }
+    ],
+    "comoCai": "Cai como caso de massa cervical congênita em criança pedindo a diferenciação entre cisto tireoglosso e cisto branquial pela localização e mobilidade com a deglutição/protrusão lingual."
+  },
+  {
+    "id": "psicopatologia-semiologia-psiquiatrica",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Psicopatologia: Semiologia do Exame Psíquico",
+    "resumo": "As principais alterações das funções psíquicas (pensamento, sensopercepção, humor, consciência) avaliadas no exame do estado mental, base da semiologia psiquiátrica.",
+    "revisado": true,
+    "fonte": "Dalgalarrondo, Psicopatologia e Semiologia dos Transtornos Mentais; Kaplan & Sadock's Synopsis of Psychiatry",
+    "secoes": [
+      {
+        "titulo": "Alterações do curso e conteúdo do pensamento",
+        "conteudo": "Curso do pensamento (a forma como as ideias se conectam): fuga de ideias (associações rápidas e superficiais entre ideias, típica da mania), afrouxamento de associações/descarrilhamento (perda da conexão lógica entre ideias, típico da esquizofrenia), pensamento tangencial (desvia do assunto sem retornar) versus circunstancial (desvia, mas eventualmente retorna ao ponto), bloqueio do pensamento (interrupção súbita do fluxo de pensamento/fala). Conteúdo do pensamento: delírio (crença falsa, fixa, não compartilhada culturalmente, mantida apesar de evidência contrária — pode ser persecutório, de grandeza, de ciúme, entre outros tipos)."
+      },
+      {
+        "titulo": "Alterações da sensopercepção",
+        "conteudo": "Ilusão: percepção distorcida de um estímulo real existente (ex.: confundir um galho com uma cobra). Alucinação: percepção sem estímulo externo real correspondente, vivida com convicção de realidade — pode ser auditiva (a mais comum em transtornos psicóticos, classicamente vozes que comentam ou comandam), visual (mais sugestiva de causa orgânica/tóxico-metabólica quando isolada), tátil (comum em intoxicação/abstinência de substâncias, como a sensação de insetos sob a pele), olfativa/gustatória (associadas classicamente a crises epilépticas do lobo temporal)."
+      },
+      {
+        "titulo": "Alterações do humor e afeto",
+        "conteudo": "Humor: o tom emocional basal e sustentado do paciente (deprimido, eufórico, irritável, eutímico). Afeto: a expressão emocional observável no momento do exame, podendo ser congruente ou incongruente com o conteúdo do pensamento/humor relatado; embotamento afetivo (redução da expressividade emocional) e afeto plano são achados característicos de esquizofrenia; labilidade afetiva (mudanças rápidas e desproporcionais) pode ocorrer em quadros maníacos ou orgânicos."
+      },
+      {
+        "titulo": "Alterações da consciência e orientação",
+        "conteudo": "Consciência normal (vigília plena) até rebaixamento progressivo (obnubilação, torpor, coma). Delirium (estado confusional agudo): flutuação do nível de consciência e atenção, de início AGUDO, geralmente por causa orgânica identificável (infecção, distúrbio metabólico, abstinência) — é a alteração de consciência mais cobrada em prova, exigindo diferenciação de demência (declínio cognitivo crônico e progressivo, sem flutuação aguda da consciência) e de quadros psiquiátricos primários. Orientação: temporal (data, hora), espacial (local) e autopsíquica (identidade própria) — tipicamente afetadas em quadros orgânicos/delirium, geralmente preservadas em transtornos psiquiátricos primários."
+      },
+      {
+        "titulo": "Julgamento crítico e insight",
+        "conteudo": "Juízo crítico da realidade: capacidade de avaliar corretamente a realidade externa, comprometido nos transtornos psicóticos (o paciente não reconhece o delírio/alucinação como produto de sua própria mente). Insight (crítica sobre a própria doença): capacidade do paciente de reconhecer que está doente — geralmente preservado em transtornos ansiosos/depressivos (o paciente sofre e busca ajuda, reconhecendo o problema) e frequentemente prejudicado em transtornos psicóticos e em episódios maníacos (o paciente não reconhece o comportamento como patológico)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Diferenciar delirium (agudo, flutuante, causa orgânica) de demência (crônico, progressivo, sem flutuação) é o ponto mais cobrado de semiologia psiquiátrica em provas de clínica geral. Alucinação auditiva de comando/comentário é o achado mais associado a esquizofrenia; alucinação visual isolada deve sempre levantar suspeita de causa orgânica."
+      }
+    ],
+    "comoCai": "Cai indiretamente em quase toda questão de psiquiatria, exigindo o uso correto da terminologia semiológica para descrever e classificar o estado mental do paciente apresentado no caso."
+  },
+  {
+    "id": "complicacoes-trauma-ortopedico",
+    "area": "residencia",
+    "categoria": "Ortopedia e Traumatologia",
+    "titulo": "Complicações do Trauma Ortopédico",
+    "resumo": "As complicações mais graves do trauma ortopédico — síndrome compartimental, embolia gordurosa e lesão vascular associada a fratura — que exigem reconhecimento e conduta de emergência.",
+    "revisado": true,
+    "fonte": "Campbell's Operative Orthopaedics; ATLS — Advanced Trauma Life Support",
+    "secoes": [
+      {
+        "titulo": "Síndrome compartimental aguda",
+        "conteudo": "Emergência ortopédica causada pelo aumento da pressão dentro de um compartimento muscular fechado (delimitado por fáscia inextensível), comprometendo a perfusão tecidual e podendo levar a necrose muscular/nervosa irreversível em poucas horas se não tratada. Mais comum em fraturas de tíbia e antebraço, mas pode ocorrer em qualquer compartimento após trauma, esmagamento, ou mesmo sem fratura (reperfusão após isquemia). Sinal mais precoce e mais sensível: dor DESPROPORCIONAL à lesão aparente, que piora com a extensão passiva dos dedos/músculos do compartimento envolvido (o achado clínico mais valorizado). Os \"6 Ps\" (Pain/dor, Paresthesia/parestesia, Pallor/palidez, Pulselessness/ausência de pulso, Paralysis/paralisia, Poikilothermia) representam um espectro de gravidade crescente — pulso ausente é achado TARDIO, e aguardar por ele para o diagnóstico é um erro grave, pois o dano muscular/nervoso já pode ser irreversível nesse ponto."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento da síndrome compartimental",
+        "conteudo": "O diagnóstico é primariamente CLÍNICO (não se deve aguardar confirmação laboratorial/de imagem diante de suspeita forte). Quando disponível e o quadro clínico for duvidoso, a medida da pressão intracompartimental pode auxiliar (pressão >30mmHg, ou diferença <30mmHg entre a pressão diastólica e a pressão compartimental, sugere síndrome compartimental). Tratamento: fasciotomia de EMERGÊNCIA (descompressão cirúrgica dos compartimentos envolvidos) — o atraso no diagnóstico/tratamento é a principal causa de sequela permanente (contratura de Volkmann em membro superior, pé caído em membro inferior)."
+      },
+      {
+        "titulo": "Embolia gordurosa",
+        "conteudo": "Complicação sistêmica de fraturas de ossos longos (fêmur é o mais associado) e cirurgias ortopédicas de grande porte, causada pela liberação de gotículas de gordura da medula óssea para a circulação. Tríade clássica, tipicamente 24-72 horas após o trauma: insuficiência respiratória (dispneia, hipoxemia, padrão semelhante a SDRA), alterações neurológicas (confusão, agitação, podendo progredir a coma) e petéquias características (\"em chuva\", tipicamente em tórax, axilas e conjuntivas). Diagnóstico é clínico; tratamento é de suporte (oxigenoterapia, suporte ventilatório se necessário), sem terapia específica comprovadamente eficaz — a fixação precoce da fratura (nas primeiras 24h) reduz o risco de embolia gordurosa."
+      },
+      {
+        "titulo": "Lesão vascular associada a fratura/luxação",
+        "conteudo": "Certas fraturas/luxações têm risco especialmente elevado de lesão vascular associada, exigindo avaliação de pulsos distais e perfusão em TODA fratura/luxação significativa: luxação posterior de joelho (risco de lesão da artéria poplítea, uma das mais temidas em ortopedia — exige avaliação vascular obrigatória mesmo com pulsos presentes, pela possibilidade de lesão íntima oculta), fratura supracondiliana de úmero em crianças (risco de lesão da artéria braquial), fratura-luxação de tornozelo com grande desvio. Isquemia de membro não corrigida em até 6 horas tem alto risco de lesão irreversível — avaliação vascular e revascularização precoce são prioritárias."
+      },
+      {
+        "titulo": "Tromboembolismo venoso pós-trauma/cirurgia",
+        "conteudo": "Pacientes com fraturas de membros inferiores/pelve e submetidos a grandes cirurgias ortopédicas têm risco aumentado de trombose venosa profunda e tromboembolismo pulmonar, justificando profilaxia farmacológica (heparina de baixo peso molecular) e/ou mecânica (compressão pneumática intermitente) de rotina nesse contexto, conforme o risco individual e o tipo de procedimento."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Dor desproporcional que piora com extensão passiva é o achado mais precoce e mais cobrado de síndrome compartimental — NUNCA esperar pela ausência de pulso para agir. A tríade insuficiência respiratória + confusão + petéquias, 24-72h após fratura de ossos longos, é o quadro clássico de embolia gordurosa."
+      }
+    ],
+    "comoCai": "Cai como caso de paciente com fratura recente desenvolvendo dor desproporcional (pedindo reconhecimento de síndrome compartimental) ou insuficiência respiratória com petéquias 24-72h após trauma (pedindo reconhecimento de embolia gordurosa)."
+  },
+  {
+    "id": "psiquiatria-social-reforma-psiquiatrica",
+    "area": "residencia",
+    "categoria": "Psiquiatria",
+    "titulo": "Psiquiatria Social e Reforma Psiquiátrica Brasileira",
+    "resumo": "O movimento da Reforma Psiquiátrica no Brasil, a Lei 10.216/2001 e a Rede de Atenção Psicossocial (RAPS), com seus dispositivos assistenciais territoriais.",
+    "revisado": true,
+    "fonte": "Ministério da Saúde — Política Nacional de Saúde Mental; Lei 10.216/2001",
+    "secoes": [
+      {
+        "titulo": "Contexto histórico da Reforma Psiquiátrica",
+        "conteudo": "Movimento iniciado no Brasil a partir da década de 1970-1980, inspirado na experiência italiana da psiquiatria democrática (Franco Basaglia), que questionou o modelo hospitalocêntrico/manicomial de tratamento da doença mental — caracterizado por longas internações, isolamento social e violação de direitos humanos — propondo sua substituição progressiva por uma rede de cuidado territorial, comunitária e de base extra-hospitalar."
+      },
+      {
+        "titulo": "Lei 10.216/2001 (Lei da Reforma Psiquiátrica)",
+        "conteudo": "Marco legal da Reforma Psiquiátrica brasileira, também conhecida como \"Lei Paulo Delgado\". Redireciona o modelo assistencial em saúde mental, priorizando o tratamento em serviços comunitários e de base territorial, e garante direitos fundamentais à pessoa com transtorno mental (acesso ao melhor tratamento disponível, proteção contra qualquer forma de abuso/exploração, direito à convivência familiar/comunitária, entre outros). Regulamenta os tipos de internação psiquiátrica: voluntária (com consentimento do paciente), involuntária (sem consentimento, a pedido de terceiro, com notificação obrigatória ao Ministério Público) e compulsória (determinada pela Justiça)."
+      },
+      {
+        "titulo": "Rede de Atenção Psicossocial (RAPS)",
+        "conteudo": "Instituída pela Portaria GM/MS nº 3.088/2011, organiza a assistência em saúde mental no SUS por meio de uma rede articulada e territorial de serviços, com o objetivo de substituir progressivamente o modelo hospitalocêntrico. Os principais componentes incluem: atenção básica (equipes de saúde da família, Consultório na Rua), atenção psicossocial especializada (CAPS, em suas diversas modalidades), atenção de urgência/emergência, atenção residencial de caráter transitório (Unidades de Acolhimento) e atenção hospitalar (leitos de saúde mental em hospital geral, preferíveis aos hospitais psiquiátricos tradicionais)."
+      },
+      {
+        "titulo": "Centros de Atenção Psicossocial (CAPS)",
+        "conteudo": "São o dispositivo central e articulador da rede de saúde mental territorial. Modalidades: CAPS I (municípios menores, atende todas as faixas etárias e transtornos), CAPS II (municípios de maior porte), CAPS III (funcionamento 24 horas, com leitos de acolhimento noturno, para crises), CAPS AD (álcool e outras drogas) e CAPS AD III (com leitos, 24h), CAPS i (infantojuvenil). Os CAPS oferecem cuidado multiprofissional, intensivo ou não, com plano terapêutico singular, buscando a reabilitação psicossocial e a reinserção do paciente em sua comunidade, evitando a internação sempre que possível."
+      },
+      {
+        "titulo": "Outros dispositivos da RAPS",
+        "conteudo": "Residências Terapêuticas: moradias destinadas a pessoas egressas de longas internações psiquiátricas, sem suporte familiar/social para retorno ao domicílio, como parte do processo de desinstitucionalização. Programa De Volta Para Casa: auxílio-reabilitação psicossocial financeiro para pessoas egressas de longa internação psiquiátrica. NASF (Núcleo Ampliado de Saúde da Família): apoio matricial em saúde mental à atenção básica."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "A Lei 10.216/2001 e os três tipos de internação psiquiátrica (voluntária, involuntária — com notificação ao Ministério Público, e compulsória — determinação judicial) são o conteúdo mais cobrado nesse tema. Reconhecer o CAPS como o dispositivo central da rede territorial, substituindo o modelo manicomial, é a ideia-chave por trás de toda a Reforma Psiquiátrica."
+      }
+    ],
+    "comoCai": "Cai pedindo a classificação do tipo de internação psiquiátrica descrita no caso (voluntária, involuntária ou compulsória) ou a identificação do dispositivo correto da RAPS para determinada situação clínica territorial."
+  },
+  {
+    "id": "tumores-hepaticos",
+    "area": "residencia",
+    "categoria": "Hepatologia",
+    "titulo": "Tumores Hepáticos",
+    "resumo": "As principais lesões hepáticas focais benignas (hemangioma, hiperplasia nodular focal, adenoma) e o carcinoma hepatocelular, o tumor primário maligno mais comum do fígado.",
+    "revisado": true,
+    "fonte": "Sherlock's Diseases of the Liver and Biliary System; Sabiston Textbook of Surgery",
+    "secoes": [
+      {
+        "titulo": "Hemangioma hepático",
+        "conteudo": "É a lesão hepática benigna mais comum, frequentemente um achado incidental em exames de imagem, assintomático na maioria dos casos. À ressonância magnética/tomografia com contraste, apresenta padrão característico de realce nodular periférico e progressivo centrípeto (\"em anel\", preenchendo-se de fora para dentro nas fases tardias). Não requer tratamento nem biópsia (a biópsia é inclusive contraindicada pelo risco de sangramento) na maioria dos casos assintomáticos, apenas acompanhamento se houver crescimento/sintomas."
+      },
+      {
+        "titulo": "Hiperplasia nodular focal (HNF)",
+        "conteudo": "Segunda lesão hepática benigna mais comum, mais frequente em mulheres jovens, não associada ao uso de contraceptivos orais (diferente do adenoma). Achado radiológico característico: cicatriz central estrelada com captação de contraste, visível à ressonância magnética. Geralmente assintomática, sem risco de malignização ou de ruptura/sangramento significativo — não requer tratamento na maioria dos casos."
+      },
+      {
+        "titulo": "Adenoma hepatocelular",
+        "conteudo": "Lesão benigna, porém com relevância clínica maior que a HNF, por seu risco de complicações: risco de SANGRAMENTO/RUPTURA (especialmente em lesões grandes, podendo causar hemoperitônio) e um pequeno, mas real, risco de transformação maligna para carcinoma hepatocelular. Fortemente associado ao uso prolongado de CONTRACEPTIVOS ORAIS (a associação mais cobrada) e a esteroides anabolizantes — a suspensão do agente causador pode levar à regressão da lesão. Conduta: lesões grandes (geralmente >5cm) ou sintomáticas têm indicação de ressecção cirúrgica pelo risco de ruptura/malignização; lesões pequenas e assintomáticas podem ser acompanhadas com suspensão do contraceptivo."
+      },
+      {
+        "titulo": "Carcinoma hepatocelular (CHC)",
+        "conteudo": "É o tumor primário maligno mais comum do fígado, fortemente associado à CIRROSE hepática de qualquer etiologia (a cirrose é o principal fator de risco, presente na grande maioria dos casos), particularmente por hepatite B, hepatite C e doença hepática gordurosa. Rastreamento com ultrassonografia (± alfafetoproteína) a cada 6 meses é recomendado em todo paciente cirrótico, justamente pela alta incidência do CHC nesse contexto e pela possibilidade de tratamento curativo quando detectado precocemente."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento do CHC",
+        "conteudo": "Diferente da maioria dos tumores sólidos, o diagnóstico de CHC pode ser feito SEM biópsia em paciente cirrótico, quando a tomografia/ressonância com contraste mostra o padrão radiológico característico (realce arterial intenso seguido de \"washout\"/lavagem no tempo portal-venoso/tardio) em nódulo ≥1cm — esse padrão típico é considerado diagnóstico por si só nesse contexto de alto risco. Tratamento conforme estadiamento: ressecção cirúrgica ou transplante hepático (potencialmente curativos, em lesões restritas e função hepática compatível), ablação percutânea (lesões pequenas), quimioembolização transarterial (doença intermediária) ou terapia sistêmica (doença avançada)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Associar adenoma hepático ao uso de contraceptivos orais (com risco de sangramento) é o ponto mais cobrado entre as lesões benignas. Rastreamento semestral com ultrassonografia em TODO paciente cirrótico é a conduta mais cobrada para CHC, e o diagnóstico radiológico sem necessidade de biópsia em paciente cirrótico com padrão típico é ponto frequentemente testado."
+      }
+    ],
+    "comoCai": "Cai como caso de lesão hepática focal em exame de imagem pedindo a diferenciação entre as principais lesões benignas, ou como caso de paciente cirrótico pedindo a conduta de rastreamento para carcinoma hepatocelular."
+  },
+  {
+    "id": "dermatoses-miscelanea-escabiose-pediculose",
+    "area": "residencia",
+    "categoria": "Dermatologia",
+    "titulo": "Ectoparasitoses Cutâneas: Escabiose e Pediculose",
+    "resumo": "Escabiose (sarna) e pediculose (piolho), suas apresentações clínicas características e o tratamento tópico/sistêmico, incluindo o tratamento simultâneo de contactantes.",
+    "revisado": true,
+    "fonte": "Fitzpatrick's Dermatology; Sampaio & Rivitti, Dermatologia",
+    "secoes": [
+      {
+        "titulo": "Escabiose (sarna)",
+        "conteudo": "Causada pelo ácaro Sarcoptes scabiei, que escava túneis na camada córnea da epiderme para depositar ovos. Transmissão por contato pele a pele prolongado (incluindo contato sexual) ou, menos comumente, por fômites (roupas de cama compartilhadas). Quadro clínico: prurido intenso, tipicamente de PIORA NOTURNA (característica muito valorizada), com lesões papulares eritematosas e o achado patognomônico do TÚNEL/SULCO ACAROIDE (linha sinuosa, acinzentada, de poucos milímetros, mais visível em espaços interdigitais, punhos, região periumbilical e genitália). Poupa classicamente a face e o couro cabeludo em adultos (mas pode acometê-los em lactentes)."
+      },
+      {
+        "titulo": "Escabiose crostosa (norueguesa)",
+        "conteudo": "Forma grave e hiperinfestante da escabiose, ocorrendo em pacientes imunossuprimidos ou com deficiência cognitiva/sensorial que impede a percepção do prurido e a resposta de coçar (ex.: idosos institucionalizados, pacientes com HIV avançado, Down). Caracteriza-se por placas hiperceratósicas extensas, com MILHARES a milhões de ácaros (diferente da escabiose comum, que tem poucas dezenas), sendo altamente contagiosa e exigindo precauções de contato rigorosas em ambiente hospitalar/institucional."
+      },
+      {
+        "titulo": "Tratamento da escabiose",
+        "conteudo": "Permetrina tópica 5% é o tratamento de primeira linha (aplicada em todo o corpo do pescoço para baixo, à noite, por 8-12 horas, repetida em 7 dias). Ivermectina oral é alternativa eficaz, especialmente útil em surtos institucionais ou na forma crostosa (onde o tratamento tópico isolado é insuficiente). PONTO FUNDAMENTAL: todos os contactantes próximos/domiciliares devem ser tratados SIMULTANEAMENTE, mesmo assintomáticos, e roupas de cama/pessoais devem ser lavadas em água quente, para evitar reinfestação em ciclo."
+      },
+      {
+        "titulo": "Pediculose",
+        "conteudo": "Infestação por piolhos (Pediculus humanus), com três formas: pediculose do couro cabeludo (Pediculus humanus capitis) — a mais comum, especialmente em crianças em idade escolar, transmitida por contato direto cabeça a cabeça ou compartilhamento de objetos (pentes, bonés); pediculose do corpo (Pediculus humanus corporis) — associada a más condições de higiene/moradia, o piolho vive nas roupas (não na pele), podendo ser vetor de doenças sistêmicas (tifo epidêmico, febre das trincheiras); pediculose pubiana (\"chato\", Phthirus pubis) — transmitida por contato sexual, considerada IST."
+      },
+      {
+        "titulo": "Diagnóstico e tratamento da pediculose",
+        "conteudo": "Diagnóstico pela visualização do piolho adulto ou, mais comumente, das lêndeas (ovos, firmemente aderidos à haste do cabelo, diferente da caspa que se solta facilmente). Tratamento: permetrina tópica é primeira linha; ivermectina tópica/oral em casos refratários. Recomenda-se pentear os cabelos com pente fino após o tratamento para remoção mecânica das lêndeas, e reavaliar/tratar contactantes próximos e objetos de uso pessoal compartilhados (fervura ou lavagem de roupas de cama/bonés/pentes)."
+      },
+      {
+        "titulo": "Dicas de prova",
+        "conteudo": "Prurido de piora noturna + túneis acaroides em espaços interdigitais é o quadro mais cobrado de escabiose — e o tratamento SIMULTÂNEO de todos os contactantes domiciliares (mesmo assintomáticos) é a conduta mais frequentemente testada e mais frequentemente esquecida pelos candidatos."
+      }
+    ],
+    "comoCai": "Cai como caso de prurido de piora noturna com lesões papulares em espaços interdigitais, pedindo o diagnóstico de escabiose e a conduta correta de tratamento simultâneo dos contactantes domiciliares."
   }
 ]
