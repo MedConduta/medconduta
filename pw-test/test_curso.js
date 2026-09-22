@@ -57,7 +57,7 @@ const { chromium } = require("playwright");
   console.log(`Total de itens no Curso bate com curriculo.json (${totalLinks} === ${totalCurriculo}):`, totalLinks === totalCurriculo);
 
   const numerosSemana = await page.$$eval(".content-tree .content-area summary", (els) => els.map((e) => e.textContent.trim()));
-  console.log("8 semanas renderizadas (piloto):", numerosSemana.length === 8);
+  console.log("16 semanas renderizadas:", numerosSemana.length === 16);
   console.log("Nenhuma semana vazia:", await page.$$eval(".content-tree .content-area", (els) => els.every((el) => el.querySelectorAll("[data-item]").length > 0)));
 
   // --- 4) Busca/filtro client-side
