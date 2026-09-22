@@ -693,31 +693,37 @@
   border-radius: var(--radius-pill);
 }
 
-/* Em telas estreitas, os dois blocos empilham (bloco esquerdo primeiro) em
-   vez de espremer as abas de IA numa faixa estreita à direita. */
-@media (max-width: 640px) {
-  .tema-toolbar { flex-wrap: wrap; }
-  .ia-tabbar { justify-content: flex-start; }
-}
-
 /* ---------- Assistente de IA ---------- */
 
 /* Abas de IA de um tema (ver app/views/conteudo.js), no bloco à direita da
    barra de ações. Cada uma gera seu conteúdo sob demanda e fica marcada
    (::after, o pontinho) quando já existe um resultado salvo pra aquele
-   tema, pra sinalizar que reabrir a aba não custa uma nova chamada de IA. */
+   tema, pra sinalizar que reabrir a aba não custa uma nova chamada de IA.
+   Grade de largura FIXA (4 colunas, 2 no mobile) em vez de flex-wrap: com
+   8 abas ao todo, 4×2 ou 2×4 sempre fecha certinho, sem sobrar uma
+   sozinha numa última linha — o que acontecia com o wrap livre do flex. */
 .ia-tabbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-2);
   flex: 1 1 auto;
+}
+
+/* Em telas estreitas, os dois blocos da barra de ações empilham (bloco
+   esquerdo primeiro) e a grade de abas de IA cai de 4 pra 2 colunas. Fica
+   DEPOIS da regra base de .ia-tabbar de propósito — regra de mesma
+   especificidade, então a ordem no arquivo decide, e a de media query
+   precisa vir por último pra realmente vencer no mobile. */
+@media (max-width: 640px) {
+  .tema-toolbar { flex-wrap: wrap; }
+  .ia-tabbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 .ia-tab {
   position: relative;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   padding: 6px 14px;
   border-radius: var(--radius-pill);
@@ -726,6 +732,7 @@
   color: var(--color-text-secondary);
   font-size: var(--fs-sm);
   font-weight: var(--fw-medium);
+  white-space: nowrap;
   transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
 }
 .ia-tab:hover { background: var(--color-surface-hover); color: var(--color-text); }

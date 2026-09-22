@@ -272,7 +272,13 @@
 @media (max-width: 960px) {
   .app-shell,
   .app-shell.is-collapsed {
-    grid-template-columns: 1fr;
+    /* minmax(0, 1fr), não só 1fr: uma tabela larga dentro do conteúdo (ver
+       .prose .table-wrap, que já tem overflow-x:auto) só rola dentro de si
+       mesma se a coluna do grid puder encolher abaixo do min-content da
+       tabela — com "1fr" puro o grid nunca deixa a coluna ficar mais
+       estreita que o conteúdo, e a página inteira ganhava scroll horizontal
+       no mobile. */
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .topbar { display: flex; }
