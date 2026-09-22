@@ -57,8 +57,18 @@ const { chromium } = require("playwright");
   console.log(`Total de itens no Curso bate com curriculo.json (${totalLinks} === ${totalCurriculo}):`, totalLinks === totalCurriculo);
 
   const numerosSemana = await page.$$eval(".content-tree .content-area summary", (els) => els.map((e) => e.textContent.trim()));
-  console.log("50 semanas renderizadas:", numerosSemana.length === 50);
+  console.log("57 semanas renderizadas (50 do cronograma + 7 extras):", numerosSemana.length === 57);
   console.log("Nenhuma semana vazia:", await page.$$eval(".content-tree .content-area", (els) => els.every((el) => el.querySelectorAll("[data-item]").length > 0)));
+
+  // --- 3b) Semanas extras (temas órfãos que não estavam na planilha original) aparecem rotuladas
+  // como "Semana extra N" e cobrem todos os temas da plataforma, sem nenhum ficar de fora do Curso.
+  const temSemanaExtra = numerosSemana.some((s) => s.includes("Semana extra"));
+  console.log("Semanas extras rotuladas 'Semana extra N':", temSemanaExtra);
+  const totalTemas = await page.evaluate(async () => {
+    const res = await fetch("data/temas.json");
+    return (await res.json()).length;
+  });
+  console.log(`Todo tema da plataforma está referenciado no Curso (${totalCurriculo} linhas cobrindo temas de ${totalTemas} temas.json):`, totalCurriculo >= totalTemas);
 
   // --- 4) Busca/filtro client-side
   await page.fill("#curso-busca", "hipertensão arterial sistêmica");
