@@ -1,5 +1,5 @@
 import { escapeHtml } from "../utils.js";
-import { gerarGradeCurso, getAgendaHoje, getDashboardCurso } from "../curriculo.js";
+import { gerarGradeCurso, getAgendaHoje, getDashboardCurso, setCursoInicio } from "../curriculo.js";
 import { marcarRevisaoConcluida } from "../revisaoCurso.js";
 
 /**
@@ -19,10 +19,11 @@ export async function renderCurso(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Curso</div>
         <h1>Curso</h1>
-        <p class="page-header__desc">O cronograma real de estudo, semana a semana, com revisão espaçada automática por tema. Marque o tema como estudado em <a href="#/residencia/conteudo">Conteúdo</a> — o progresso e as revisões aparecem aqui sozinhos.</p>
+        <p class="page-header__desc">O cronograma real de estudo, semana a semana, com revisão espaçada automática por tema. Marque o tema como estudado em <a href="#/residencia/conteudo">Conteúdo</a> — o progresso e as revisões aparecem aqui sozinhos. A Semana 1 começa na sua data de início (abaixo) — as datas da planilha original só definem o espaçamento entre as semanas, não o calendário absoluto.</p>
       </div>
 
       ${renderDashboard(dashboard)}
+      ${renderInicioCurso(dashboard.inicioReal)}
       ${renderHoje(agenda)}
 
       <div class="card" style="margin-bottom:24px;">
@@ -108,6 +109,18 @@ export async function renderCurso(container) {
       renderCurso(container);
     });
   });
+
+  // ---------- Ajustar a data de início do cronograma ----------
+  const formInicio = container.querySelector("#form-curso-inicio");
+  if (formInicio) {
+    formInicio.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const novaData = container.querySelector("#curso-inicio-data").value;
+      if (!novaData) return;
+      await setCursoInicio(novaData);
+      renderCurso(container);
+    });
+  }
 }
 
 function renderDashboard(d) {
@@ -124,6 +137,21 @@ function renderDashboard(d) {
         <div class="stat-tile"><div class="stat-tile__value">${d.totalQuestoesRespondidas}</div><div class="stat-tile__label">Questões feitas</div></div>
         <div class="stat-tile"><div class="stat-tile__value">${d.percentualAcerto ?? "—"}${d.percentualAcerto !== null ? "%" : ""}</div><div class="stat-tile__label">Taxa de acerto</div></div>
       </div>
+    </div>
+  `;
+}
+
+function renderInicioCurso(inicioReal) {
+  return `
+    <div class="card" style="margin-bottom:24px;">
+      <form id="form-curso-inicio" style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end;">
+        <div class="field" style="flex:1;min-width:180px;">
+          <label for="curso-inicio-data">Início do curso (Semana 1)</label>
+          <input type="date" id="curso-inicio-data" value="${escapeHtml(inicioReal)}" />
+        </div>
+        <button class="btn btn--secondary" type="submit">Salvar</button>
+      </form>
+      <p style="color:var(--color-text-secondary);font-size:var(--fs-xs);margin-top:8px;">Mudar essa data recalcula quando cada semana "deveria" ter sido estudada — útil se você quiser recomeçar o cronograma do zero.</p>
     </div>
   `;
 }

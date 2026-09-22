@@ -12,11 +12,41 @@
  */
 
 import { fetchJsonCached } from "./utils.js";
-import { getAll } from "./db.js";
-import { getAgendaRevisoes, hojeIso } from "./revisaoCurso.js";
+import { getAll, getPref, setPref } from "./db.js";
+import { getAgendaRevisoes, hojeIso, somarDias, diffDias } from "./revisaoCurso.js";
+
+const PREF_CURSO_INICIO = "curso_inicio_real";
+
+/**
+ * Data real de início do curso pro usuário (YYYY-MM-DD) — âncora do
+ * cronograma. A planilha "Estratégia MED - 2025" tem datas absolutas fixas
+ * (semana 1 = 05/01/2026 etc.), mas cada usuário começa a usar a plataforma
+ * num dia diferente — sem isso, um usuário que abre o Curso meses depois da
+ * data da semana 1 veria TUDO como atrasado no primeiro acesso, mesmo sem
+ * nunca ter começado. Na primeira vez que o Curso é montado, fixa a data de
+ * hoje como início (persistido); dali em diante todas as `dataProgramada`
+ * são deslocadas por esse offset, preservando o espaçamento entre semanas
+ * da planilha original — só a âncora muda, não a cadência.
+ */
+async function garantirInicioCurso() {
+  const salvo = await getPref(PREF_CURSO_INICIO, null);
+  if (salvo) return salvo;
+  const hoje = hojeIso();
+  await setPref(PREF_CURSO_INICIO, hoje);
+  return hoje;
+}
+
+export async function getCursoInicio() {
+  return garantirInicioCurso();
+}
+
+/** Permite ao usuário ajustar manualmente a âncora (ex.: quer "recomeçar o relógio" do cronograma). */
+export async function setCursoInicio(dataIso) {
+  await setPref(PREF_CURSO_INICIO, dataIso);
+}
 
 async function carregarDados() {
-  const [curriculo, temas, questoes, flashcardsDecks, progresso, respostas, srsRecords] = await Promise.all([
+  const [curriculoBruto, temas, questoes, flashcardsDecks, progresso, respostas, srsRecords, inicioReal] = await Promise.all([
     fetchJsonCached("data/curriculo.json"),
     fetchJsonCached("data/temas.json"),
     fetchJsonCached("data/questoes.json"),
@@ -24,8 +54,20 @@ async function carregarDados() {
     getAll("progresso"),
     getAll("respostas"),
     getAll("srs"),
+    garantirInicioCurso(),
   ]);
-  return { curriculo, temas, questoes, flashcardsDecks, progresso, respostas, srsRecords };
+
+  const curriculo = deslocarParaInicioReal(curriculoBruto, inicioReal);
+  return { curriculo, temas, questoes, flashcardsDecks, progresso, respostas, srsRecords, inicioReal };
+}
+
+/** Desloca todas as `dataProgramada` da planilha pelo offset entre a data original da semana 1 e `inicioReal`. */
+function deslocarParaInicioReal(curriculoBruto, inicioReal) {
+  if (!curriculoBruto.length) return curriculoBruto;
+  const primeiraData = curriculoBruto.reduce((min, r) => (r.dataProgramada < min ? r.dataProgramada : min), curriculoBruto[0].dataProgramada);
+  const offsetDias = diffDias(primeiraData, inicioReal);
+  if (offsetDias === 0) return curriculoBruto;
+  return curriculoBruto.map((linha) => ({ ...linha, dataProgramada: somarDias(linha.dataProgramada, offsetDias) }));
 }
 
 /** Monta o item de um tema (progresso das 3 etapas — resumo/questões/flashcards), cruzando só sinais que já existem, sem checkbox novo. */
@@ -138,7 +180,7 @@ export async function getAgendaHoje() {
 
 /** Agregados pro topo da página (seção 19 do pedido original). */
 export async function getDashboardCurso() {
-  const [grade, agendaRevisoes, { respostas }] = await Promise.all([gerarGradeCurso(), getAgendaRevisoes(), carregarDados()]);
+  const [grade, agendaRevisoes, { respostas, inicioReal }] = await Promise.all([gerarGradeCurso(), getAgendaRevisoes(), carregarDados()]);
   const acertos = respostas.filter((r) => r.acertou).length;
 
   return {
@@ -149,5 +191,6 @@ export async function getDashboardCurso() {
     revisoesAtrasadas: agendaRevisoes.vencidas.length,
     totalQuestoesRespondidas: respostas.length,
     percentualAcerto: respostas.length ? Math.round((acertos / respostas.length) * 100) : null,
+    inicioReal,
   };
 }

@@ -37,6 +37,17 @@ const { chromium } = require("playwright");
   console.log("Mostra bloco '📅 Hoje':", texto.includes("Hoje"));
   console.log("Mostra 'Semana 1':", texto.includes("Semana 1"));
 
+  // --- 2b) Usuário novo (nunca configurou início) não deve ver nada "atrasado" — a Semana 1 é
+  // ancorada em hoje automaticamente (ver app/curriculo.js:garantirInicioCurso), não na data
+  // absoluta da planilha (jan/2026), que já passou.
+  const zeroAtrasadasTile = await page.$$eval(".stat-tile", (els) =>
+    els.some((el) => el.textContent.includes("Atrasadas") && el.querySelector(".stat-tile__value")?.textContent.trim() === "0")
+  );
+  console.log("Tile 'Atrasadas' mostra 0 para usuário novo:", zeroAtrasadasTile);
+  const campoInicio = await page.$eval("#curso-inicio-data", (el) => el.value);
+  const hojeIsoLocal = new Date().toLocaleDateString("sv-SE"); // YYYY-MM-DD local
+  console.log("Campo 'Início do curso' vem preenchido com hoje:", campoInicio === hojeIsoLocal);
+
   // --- 3) Grade tem exatamente os 49 itens do lote piloto (semanas 1-8), sem duplicar
   const totalCurriculo = await page.evaluate(async () => {
     const res = await fetch("data/curriculo.json");

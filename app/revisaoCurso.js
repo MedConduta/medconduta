@@ -32,10 +32,19 @@ export function hojeIso(referencia = new Date()) {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
 
-function somarDias(dataIso, dias) {
+export function somarDias(dataIso, dias) {
   const [ano, mes, dia] = dataIso.split("-").map(Number);
   const d = new Date(ano, mes - 1, dia + dias);
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+/** Diferença em dias entre duas datas YYYY-MM-DD (b - a). */
+export function diffDias(dataIsoA, dataIsoB) {
+  const [anoA, mesA, diaA] = dataIsoA.split("-").map(Number);
+  const [anoB, mesB, diaB] = dataIsoB.split("-").map(Number);
+  const a = new Date(anoA, mesA - 1, diaA);
+  const b = new Date(anoB, mesB - 1, diaB);
+  return Math.round((b.getTime() - a.getTime()) / (1000 * 60 * 60 * 24));
 }
 
 /** Grava as 5 revisões do ciclo aberto por um estudo em `dataEstudoIso` (YYYY-MM-DD). Idempotente. */
