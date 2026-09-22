@@ -8,6 +8,7 @@ import { formatarTemaComoContexto } from "../rag.js";
 import { renderFlowchart } from "../components/flowchart.js";
 import { icon } from "../components/icons.js";
 import { gerarDiagnostico } from "../prontidao.js";
+import { gerarRevisoesParaTema, hojeIso } from "../revisaoCurso.js";
 
 // Fase 12 — ordem de prioridade dos quadrantes (ver prontidao.js): categorias
 // críticas primeiro, tranquilas por último. Curso reordenado pelo mesmo
@@ -49,7 +50,13 @@ async function salvarAbaIA(temaId, tipo, dados) {
 }
 
 async function marcarConcluido(temaId, concluido, categoria) {
-  await setItem("progresso", { id: temaId, concluido, categoria, atualizadoEm: new Date().toISOString() });
+  const atualizadoEm = new Date().toISOString();
+  await setItem("progresso", { id: temaId, concluido, categoria, atualizadoEm });
+  // Curso (Fase A): estudo concluído abre o ciclo de revisão espaçada do tema
+  // (3/5/7/15/30 dias), ancorado nesta data real — nunca na data programada
+  // do cronograma (ver app/revisaoCurso.js). Idempotente: marcar de novo no
+  // mesmo dia só sobrescreve as mesmas 5 revisões, não duplica.
+  if (concluido) await gerarRevisoesParaTema(temaId, hojeIso(new Date(atualizadoEm)));
 }
 
 async function todosOsTemas() {
