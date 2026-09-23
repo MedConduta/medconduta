@@ -645,6 +645,20 @@
   border-radius: var(--radius-md);
   padding: var(--space-4);
   box-shadow: var(--shadow-sm);
+  text-align: left;
+  font-family: inherit;
+  width: 100%;
+}
+button.stat-tile {
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+button.stat-tile:hover {
+  border-color: var(--color-accent);
+}
+.stat-tile.is-active {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
 }
 .stat-tile__value {
   font-size: var(--fs-xl);

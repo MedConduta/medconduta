@@ -30,10 +30,13 @@ const { chromium } = require("playwright");
 
   // --- 2) Ir para questões e errar deliberadamente uma questão
   await page.evaluate(() => { location.hash = "/residencia/questoes"; });
-  await page.waitForSelector(".card .question-option", { timeout: 10000 });
+  await page.waitForSelector("#questoes-lista .card .question-option", { timeout: 10000 });
 
   // Tenta clicar em alternativas até garantir pelo menos 1 erro (clica sempre na primeira opção de cada questão)
-  const primeiraQuestaoCard = await page.$(".card");
+  // Escopado a #questoes-lista porque a árvore de hierarquia (Grande Área/Especialidade)
+  // também usa a classe .card (mesmo padrão de app/views/curso.js) — sem o escopo, um
+  // seletor ".card" solto pode pegar uma linha da árvore em vez de um card de questão.
+  const primeiraQuestaoCard = await page.$("#questoes-lista .card");
   const primeiraOpcao = await primeiraQuestaoCard.$(".question-option");
   await primeiraOpcao.click();
   await page.waitForTimeout(500);
@@ -45,7 +48,7 @@ const { chromium } = require("playwright");
   if (resultadoTexto.includes("Incorreto")) {
     idQuestaoErrada = await primeiraQuestaoCard.$eval(".opcoes", (el) => el.dataset.qid);
   } else {
-    const cards = await page.$$(".card");
+    const cards = await page.$$("#questoes-lista .card");
     for (const card of cards.slice(1, 6)) {
       const opcoes = await card.$$(".question-option");
       if (opcoes.length < 2) continue;
