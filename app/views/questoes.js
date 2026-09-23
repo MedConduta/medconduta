@@ -58,13 +58,23 @@ export async function renderLista(container, _params, query = {}) {
         <p id="questoes-breadcrumb" style="margin-top:8px;font-size:var(--fs-sm);display:none;"></p>
       </div>
       <div id="questoes-stats" class="stat-row"></div>
-      <div class="field" style="max-width:280px;">
-        <label for="filtro-banca">Banca</label>
-        <select id="filtro-banca">
-          <option value="todas">Todas as bancas</option>
-          ${indice.bancas.map((b) => `<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join("")}
-        </select>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <div class="field" style="max-width:280px;">
+          <label for="filtro-banca">Banca</label>
+          <select id="filtro-banca">
+            <option value="todas">Todas as bancas</option>
+            ${indice.bancas.map((b) => `<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join("")}
+          </select>
+        </div>
+        <div class="field" style="max-width:200px;">
+          <label for="filtro-ano">Ano</label>
+          <select id="filtro-ano">
+            <option value="todos">Todos os anos</option>
+            ${indice.anos.map((a) => `<option value="${a}">${a}</option>`).join("")}
+          </select>
+        </div>
       </div>
+      <div id="questoes-chips" class="tag-filter-bar" style="margin-top:12px;display:none;"></div>
       <div id="questoes-hierarquia" class="content-tree" style="margin-top:16px;"></div>
       <p id="questoes-contagem" class="page-header__desc" style="margin-top:16px;"></p>
       <div id="questoes-lista" class="plan-queue"></div>
@@ -76,17 +86,96 @@ export async function renderLista(container, _params, query = {}) {
   const statsEl = container.querySelector("#questoes-stats");
   const hierarquiaEl = container.querySelector("#questoes-hierarquia");
   const breadcrumbEl = container.querySelector("#questoes-breadcrumb");
+  const chipsEl = container.querySelector("#questoes-chips");
   const listaEl = container.querySelector("#questoes-lista");
   const contagemEl = container.querySelector("#questoes-contagem");
   const carregandoMaisEl = container.querySelector("#questoes-carregando-mais");
   const sentinelaEl = container.querySelector("#questoes-sentinela");
   const filtroBanca = container.querySelector("#filtro-banca");
+  const filtroAno = container.querySelector("#filtro-ano");
+
+  const ROTULOS_STATUS = {
+    [STATUS.NAO_RESPONDIDAS]: "Não respondidas",
+    [STATUS.RESPONDIDAS]: "Respondidas",
+    [STATUS.CORRETAS]: "Acertos",
+    [STATUS.INCORRETAS]: "Erros",
+  };
 
   let idsFiltrados = [];
   let renderizados = 0;
 
   function filtrosBase() {
-    return { banca: filtroBanca.value === "todas" ? undefined : filtroBanca.value, status: filtroStatus };
+    return {
+      banca: filtroBanca.value === "todas" ? undefined : filtroBanca.value,
+      ano: filtroAno.value === "todos" ? undefined : Number(filtroAno.value),
+      status: filtroStatus,
+    };
+  }
+
+  function limparTudo() {
+    filtroGrandeArea = filtroEspecialidade = filtroTemaId = undefined;
+    grandeAreaAberta = especialidadeAberta = null;
+    filtroStatus = STATUS.TODAS;
+    filtroBanca.value = "todas";
+    filtroAno.value = "todos";
+  }
+
+  function renderChips() {
+    const chips = [];
+    if (filtroGrandeArea) {
+      chips.push({
+        label: `Área: ${filtroGrandeArea}`,
+        remover: () => {
+          filtroGrandeArea = filtroEspecialidade = filtroTemaId = undefined;
+          grandeAreaAberta = especialidadeAberta = null;
+        },
+      });
+    }
+    if (filtroEspecialidade) {
+      chips.push({
+        label: `Especialidade: ${filtroEspecialidade}`,
+        remover: () => {
+          filtroEspecialidade = filtroTemaId = undefined;
+          especialidadeAberta = null;
+        },
+      });
+    }
+    if (filtroTemaId) {
+      const titulo = temasDe(indice, filtroEspecialidade).find(([id]) => id === filtroTemaId)?.[1] || filtroTemaId;
+      chips.push({ label: `Tema: ${titulo}`, remover: () => { filtroTemaId = undefined; } });
+    }
+    if (filtroBanca.value !== "todas") {
+      chips.push({ label: `Banca: ${filtroBanca.value}`, remover: () => { filtroBanca.value = "todas"; } });
+    }
+    if (filtroAno.value !== "todos") {
+      chips.push({ label: `Ano: ${filtroAno.value}`, remover: () => { filtroAno.value = "todos"; } });
+    }
+    if (filtroStatus !== STATUS.TODAS) {
+      chips.push({ label: ROTULOS_STATUS[filtroStatus], remover: () => { filtroStatus = STATUS.TODAS; } });
+    }
+
+    if (!chips.length) {
+      chipsEl.style.display = "none";
+      chipsEl.innerHTML = "";
+      return;
+    }
+    chipsEl.style.display = "flex";
+    chipsEl.innerHTML =
+      chips.map((c, i) => `<button type="button" class="tag-filter is-active" data-chip-index="${i}">${escapeHtml(c.label)} ✕</button>`).join("") +
+      `<button type="button" class="tag-filter" id="questoes-limpar-filtros">Limpar filtros</button>`;
+
+    chipsEl.querySelectorAll("[data-chip-index]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        chips[Number(btn.dataset.chipIndex)].remover();
+        renderHierarquia();
+        refazerFiltro();
+      });
+    });
+    container.querySelector("#questoes-limpar-filtros").addEventListener("click", () => {
+      limparTudo();
+      renderHierarquia();
+      refazerFiltro();
+    });
   }
 
   function renderStats() {
@@ -168,6 +257,7 @@ export async function renderLista(container, _params, query = {}) {
 
   function renderHierarquia() {
     renderStats();
+    renderChips();
     const contagemAreas = contarPorNivel(indice, filtrosBase(), "grandeArea");
     hierarquiaEl.innerHTML = indice.grandeAreas
       .filter((area) => contagemAreas.get(area) > 0)
@@ -354,6 +444,11 @@ export async function renderLista(container, _params, query = {}) {
   ).observe(sentinelaEl);
 
   filtroBanca.addEventListener("change", () => {
+    renderHierarquia();
+    refazerFiltro();
+  });
+
+  filtroAno.addEventListener("change", () => {
     renderHierarquia();
     refazerFiltro();
   });
