@@ -13,8 +13,6 @@ import {
   STATUS,
 } from "../questoesIndex.js";
 
-const TAMANHO_LOTE = 20;
-
 export async function renderLista(container, _params, query = {}) {
   container.innerHTML = `
     <div class="main__container">
@@ -58,7 +56,11 @@ export async function renderLista(container, _params, query = {}) {
         <p id="questoes-breadcrumb" style="margin-top:8px;font-size:var(--fs-sm);display:none;"></p>
       </div>
       <div id="questoes-stats" class="stat-row"></div>
-      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <div class="field" style="margin-top:16px;">
+        <label for="filtro-busca">Buscar por tema ou enunciado</label>
+        <input type="search" id="filtro-busca" placeholder="Ex.: hipertensão, IAM, dengue..." />
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
         <div class="field" style="max-width:280px;">
           <label for="filtro-banca">Banca</label>
           <select id="filtro-banca">
@@ -71,6 +73,23 @@ export async function renderLista(container, _params, query = {}) {
           <select id="filtro-ano">
             <option value="todos">Todos os anos</option>
             ${indice.anos.map((a) => `<option value="${a}">${a}</option>`).join("")}
+          </select>
+        </div>
+        <div class="field" style="max-width:220px;">
+          <label for="filtro-ordenacao">Ordenar por</label>
+          <select id="filtro-ordenacao">
+            <option value="${ORDENACAO.RECENTES}">Mais recentes</option>
+            <option value="${ORDENACAO.ANTIGAS}">Mais antigas</option>
+            <option value="${ORDENACAO.ACERTO_ASC}">Meu % de acerto (menor primeiro)</option>
+            <option value="${ORDENACAO.ACERTO_DESC}">Meu % de acerto (maior primeiro)</option>
+            <option value="${ORDENACAO.ALEATORIO}">Aleatório</option>
+          </select>
+        </div>
+        <div class="field" style="max-width:160px;">
+          <label for="filtro-quantidade">Por página</label>
+          <select id="filtro-quantidade">
+            ${[10, 20, 30, 40, 50, 100].map((n) => `<option value="${n}" ${n === 20 ? "selected" : ""}>${n}</option>`).join("")}
+            <option value="todas">Todas</option>
           </select>
         </div>
       </div>
@@ -93,6 +112,9 @@ export async function renderLista(container, _params, query = {}) {
   const sentinelaEl = container.querySelector("#questoes-sentinela");
   const filtroBanca = container.querySelector("#filtro-banca");
   const filtroAno = container.querySelector("#filtro-ano");
+  const filtroBusca = container.querySelector("#filtro-busca");
+  const filtroOrdenacao = container.querySelector("#filtro-ordenacao");
+  const filtroQuantidade = container.querySelector("#filtro-quantidade");
 
   const ROTULOS_STATUS = {
     [STATUS.NAO_RESPONDIDAS]: "Não respondidas",
@@ -103,12 +125,14 @@ export async function renderLista(container, _params, query = {}) {
 
   let idsFiltrados = [];
   let renderizados = 0;
+  let tamanhoLote = 20;
 
   function filtrosBase() {
     return {
       banca: filtroBanca.value === "todas" ? undefined : filtroBanca.value,
       ano: filtroAno.value === "todos" ? undefined : Number(filtroAno.value),
       status: filtroStatus,
+      busca: filtroBusca.value.trim() || undefined,
     };
   }
 
@@ -118,6 +142,7 @@ export async function renderLista(container, _params, query = {}) {
     filtroStatus = STATUS.TODAS;
     filtroBanca.value = "todas";
     filtroAno.value = "todos";
+    filtroBusca.value = "";
   }
 
   function renderChips() {
@@ -149,6 +174,9 @@ export async function renderLista(container, _params, query = {}) {
     }
     if (filtroAno.value !== "todos") {
       chips.push({ label: `Ano: ${filtroAno.value}`, remover: () => { filtroAno.value = "todos"; } });
+    }
+    if (filtroBusca.value.trim()) {
+      chips.push({ label: `Busca: "${filtroBusca.value.trim()}"`, remover: () => { filtroBusca.value = ""; } });
     }
     if (filtroStatus !== STATUS.TODAS) {
       chips.push({ label: ROTULOS_STATUS[filtroStatus], remover: () => { filtroStatus = STATUS.TODAS; } });
@@ -212,7 +240,7 @@ export async function renderLista(container, _params, query = {}) {
       grandeArea: filtroGrandeArea,
       especialidade: filtroEspecialidade,
       temaId: filtroTemaId,
-      ordenacao: ORDENACAO.RECENTES,
+      ordenacao: filtroOrdenacao.value,
     };
   }
 
@@ -415,7 +443,7 @@ export async function renderLista(container, _params, query = {}) {
       carregandoMaisEl.style.display = "none";
       return;
     }
-    const lote = idsFiltrados.slice(renderizados, renderizados + TAMANHO_LOTE);
+    const lote = idsFiltrados.slice(renderizados, renderizados + tamanhoLote);
     listaEl.insertAdjacentHTML("beforeend", lote.map(renderCard).join(""));
     lote.forEach(ligarEventosCard);
     renderizados += lote.length;
@@ -451,6 +479,24 @@ export async function renderLista(container, _params, query = {}) {
   filtroAno.addEventListener("change", () => {
     renderHierarquia();
     refazerFiltro();
+  });
+
+  filtroOrdenacao.addEventListener("change", () => {
+    refazerFiltro();
+  });
+
+  filtroQuantidade.addEventListener("change", () => {
+    tamanhoLote = filtroQuantidade.value === "todas" ? 100 : Number(filtroQuantidade.value);
+    refazerFiltro();
+  });
+
+  let temporizadorBusca = null;
+  filtroBusca.addEventListener("input", () => {
+    clearTimeout(temporizadorBusca);
+    temporizadorBusca = setTimeout(() => {
+      renderHierarquia();
+      refazerFiltro();
+    }, 300);
   });
 
   renderHierarquia();
