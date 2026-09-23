@@ -1,7 +1,15 @@
 import { escapeHtml } from "../utils.js";
 import { setItem } from "../db.js";
 import { registrarResultadoQuestao } from "../erros.js";
-import { carregarIndice, filtrar, registrarRespostaNoIndice, ORDENACAO } from "../questoesIndex.js";
+import {
+  carregarIndice,
+  filtrar,
+  contarPorNivel,
+  especialidadesDe,
+  temasDe,
+  registrarRespostaNoIndice,
+  ORDENACAO,
+} from "../questoesIndex.js";
 
 const TAMANHO_LOTE = 20;
 
@@ -19,72 +27,189 @@ export async function renderLista(container, _params, query = {}) {
   const indice = await carregarIndice();
 
   // Fase 16 (Revisão de Alto Rendimento) — ?categoria=X restringe a página inteira
-  // a essa especialidade antes de qualquer outro filtro, como já funcionava.
-  const especialidadeInicial = query.categoria || "todas";
-  const temas = [...new Set([...indice.questoesPorId.values()].filter((q) => especialidadeInicial === "todas" || q.especialidade === especialidadeInicial).map((q) => q.tema))].sort(
-    (a, b) => a.localeCompare(b, "pt-BR")
-  );
-  const temaInicial = query.tema && temas.includes(query.tema) ? query.tema : "todos";
+  // a essa especialidade antes de qualquer outro filtro, como já funcionava (agora
+  // via hierarquia real: a especialidade já vem selecionada/expandida).
+  let filtroGrandeArea;
+  let filtroEspecialidade;
+  let filtroTemaId;
+  let grandeAreaAberta = null;
+  let especialidadeAberta = null;
+
+  if (query.categoria && especialidadesDe(indice).includes(query.categoria)) {
+    filtroEspecialidade = query.categoria;
+    filtroGrandeArea = [...indice.questoesPorId.values()].find((q) => q.especialidade === query.categoria)?.grandeArea;
+    grandeAreaAberta = filtroGrandeArea;
+    especialidadeAberta = filtroEspecialidade;
+    if (query.tema) {
+      const match = temasDe(indice, filtroEspecialidade).find(([, titulo]) => titulo === query.tema);
+      if (match) filtroTemaId = match[0];
+    }
+  }
 
   container.innerHTML = `
     <div class="main__container">
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Questões</div>
         <h1>Banco de questões</h1>
-        <p class="page-header__desc">Questões com resolução comentada, filtráveis por tema e banca. Enunciados e comentários são material de estudo próprio, não de provas reais.</p>
-        ${especialidadeInicial !== "todas" ? `<p style="margin-top:8px;font-size:var(--fs-sm);"><span class="badge badge--warning">Filtrado: ${escapeHtml(especialidadeInicial)}</span> <a href="#/residencia/questoes">Ver todas as questões</a></p>` : ""}
+        <p class="page-header__desc">Navegue por Grande Área › Especialidade › Tema, ou combine com a busca por banca. Enunciados e comentários são material de estudo próprio, não de provas reais.</p>
+        <p id="questoes-breadcrumb" style="margin-top:8px;font-size:var(--fs-sm);display:none;"></p>
       </div>
-      <div class="field" style="display:flex;gap:16px;flex-wrap:wrap;">
-        <div style="flex:1;min-width:180px;">
-          <label for="filtro-tema">Tema</label>
-          <select id="filtro-tema">
-            <option value="todos" ${temaInicial === "todos" ? "selected" : ""}>Todos os temas</option>
-            ${temas.map((t) => `<option value="${escapeHtml(t)}" ${t === temaInicial ? "selected" : ""}>${escapeHtml(t)}</option>`).join("")}
-          </select>
-        </div>
-        <div style="flex:1;min-width:180px;">
-          <label for="filtro-banca">Banca</label>
-          <select id="filtro-banca">
-            <option value="todas">Todas as bancas</option>
-            ${indice.bancas.map((b) => `<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join("")}
-          </select>
-        </div>
+      <div class="field" style="max-width:280px;">
+        <label for="filtro-banca">Banca</label>
+        <select id="filtro-banca">
+          <option value="todas">Todas as bancas</option>
+          ${indice.bancas.map((b) => `<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join("")}
+        </select>
       </div>
-      <p id="questoes-contagem" class="page-header__desc" style="margin-top:4px;"></p>
+      <div id="questoes-hierarquia" class="content-tree" style="margin-top:16px;"></div>
+      <p id="questoes-contagem" class="page-header__desc" style="margin-top:16px;"></p>
       <div id="questoes-lista" class="plan-queue"></div>
       <div id="questoes-sentinela" style="height:1px;"></div>
       <p id="questoes-carregando-mais" class="empty-state" style="display:none;">Carregando mais questões...</p>
     </div>
   `;
 
+  const hierarquiaEl = container.querySelector("#questoes-hierarquia");
+  const breadcrumbEl = container.querySelector("#questoes-breadcrumb");
   const listaEl = container.querySelector("#questoes-lista");
   const contagemEl = container.querySelector("#questoes-contagem");
   const carregandoMaisEl = container.querySelector("#questoes-carregando-mais");
   const sentinelaEl = container.querySelector("#questoes-sentinela");
-  const filtroTema = container.querySelector("#filtro-tema");
   const filtroBanca = container.querySelector("#filtro-banca");
 
   let idsFiltrados = [];
   let renderizados = 0;
-  let observer = null;
+
+  function filtrosBase() {
+    return { banca: filtroBanca.value === "todas" ? undefined : filtroBanca.value };
+  }
 
   function filtrosAtuais() {
     return {
-      especialidade: especialidadeInicial === "todas" ? undefined : especialidadeInicial,
-      temaId: undefined, // filtramos por título de tema (compat com o select atual), não por id
-      banca: filtroBanca.value === "todas" ? undefined : filtroBanca.value,
+      ...filtrosBase(),
+      grandeArea: filtroGrandeArea,
+      especialidade: filtroEspecialidade,
+      temaId: filtroTemaId,
       ordenacao: ORDENACAO.RECENTES,
     };
   }
 
-  function questaoPorTemaSelecionado(q) {
-    return filtroTema.value === "todos" || q.tema === filtroTema.value;
+  function renderTemas(area, esp) {
+    const filtros = { ...filtrosBase(), grandeArea: area, especialidade: esp };
+    const contagem = contarPorNivel(indice, filtros, "temaId");
+    const itens = temasDe(indice, esp).filter(([id]) => contagem.get(id) > 0);
+    if (!itens.length) return `<p class="empty-state" style="margin:8px 0 0 16px;">Nenhuma questão nesse recorte.</p>`;
+    return `
+      <div class="content-list" style="margin-left:16px;">
+        ${itens
+          .map(
+            ([id, titulo]) => `
+          <button type="button" class="content-list__item" data-tema-id="${escapeHtml(id)}">
+            <span>${id === filtroTemaId ? "✓ " : ""}${escapeHtml(titulo)}</span>
+            <span class="badge">${contagem.get(id)}</span>
+          </button>`
+          )
+          .join("")}
+      </div>`;
+  }
+
+  function renderEspecialidades(area) {
+    const filtros = { ...filtrosBase(), grandeArea: area };
+    const contagem = contarPorNivel(indice, filtros, "especialidade");
+    const itens = especialidadesDe(indice, area).filter((esp) => contagem.get(esp) > 0);
+    if (!itens.length) return `<p class="empty-state" style="margin:8px 0 0 16px;">Nenhuma questão nesse recorte.</p>`;
+    return itens
+      .map((esp) => {
+        const aberta = esp === especialidadeAberta;
+        return `
+        <div class="content-group">
+          <button type="button" class="content-list__item" data-especialidade="${escapeHtml(esp)}">
+            <span>${esp === filtroEspecialidade ? "✓ " : ""}${escapeHtml(esp)}</span>
+            <span class="badge">${contagem.get(esp)}</span>
+          </button>
+          ${aberta ? renderTemas(area, esp) : ""}
+        </div>`;
+      })
+      .join("");
+  }
+
+  function renderHierarquia() {
+    const contagemAreas = contarPorNivel(indice, filtrosBase(), "grandeArea");
+    hierarquiaEl.innerHTML = indice.grandeAreas
+      .filter((area) => contagemAreas.get(area) > 0)
+      .map((area) => {
+        const aberta = area === grandeAreaAberta;
+        return `
+        <details class="card content-area" data-grande-area="${escapeHtml(area)}" ${aberta ? "open" : ""}>
+          <summary class="content-area__title">
+            <span>${area === filtroGrandeArea ? "✓ " : ""}${escapeHtml(area)}</span>
+            <span class="badge content-area__count">${contagemAreas.get(area)}</span>
+          </summary>
+          <div data-especialidades>${aberta ? renderEspecialidades(area) : ""}</div>
+        </details>`;
+      })
+      .join("");
+
+    const partes = [filtroGrandeArea, filtroEspecialidade, filtroTemaId ? temasDe(indice, filtroEspecialidade).find(([id]) => id === filtroTemaId)?.[1] : null].filter(Boolean);
+    if (partes.length) {
+      breadcrumbEl.style.display = "block";
+      breadcrumbEl.innerHTML = `<span class="badge badge--warning">${partes.map(escapeHtml).join(" › ")}</span> <a href="#" id="questoes-limpar-hierarquia">Ver todas as questões</a>`;
+      container.querySelector("#questoes-limpar-hierarquia").addEventListener("click", (e) => {
+        e.preventDefault();
+        filtroGrandeArea = filtroEspecialidade = filtroTemaId = undefined;
+        grandeAreaAberta = especialidadeAberta = null;
+        renderHierarquia();
+        refazerFiltro();
+      });
+    } else {
+      breadcrumbEl.style.display = "none";
+    }
+  }
+
+  hierarquiaEl.addEventListener("click", (e) => {
+    const summaryEl = e.target.closest(".content-area__title");
+    if (summaryEl) {
+      e.preventDefault();
+      const area = summaryEl.closest("[data-grande-area]").dataset.grandeArea;
+      const reabrir = grandeAreaAberta !== area;
+      grandeAreaAberta = reabrir ? area : null;
+      filtroGrandeArea = reabrir ? area : undefined;
+      especialidadeAberta = null;
+      filtroEspecialidade = undefined;
+      filtroTemaId = undefined;
+      renderHierarquia();
+      refazerFiltro();
+      return;
+    }
+    const espBtn = e.target.closest("[data-especialidade]");
+    if (espBtn) {
+      const esp = espBtn.dataset.especialidade;
+      const reabrir = especialidadeAberta !== esp;
+      especialidadeAberta = reabrir ? esp : null;
+      filtroEspecialidade = reabrir ? esp : undefined;
+      filtroTemaId = undefined;
+      renderHierarquia();
+      refazerFiltro();
+      return;
+    }
+    const temaBtn = e.target.closest("[data-tema-id]");
+    if (temaBtn) {
+      const id = temaBtn.dataset.temaId;
+      filtroTemaId = filtroTemaId === id ? undefined : id;
+      renderHierarquia();
+      refazerFiltro();
+    }
+  });
+
+  function breadcrumbCard(q) {
+    return `${escapeHtml(q.grandeArea)} › ${escapeHtml(q.especialidade)}`;
   }
 
   function renderCard(id) {
     const q = indice.questoesPorId.get(id);
     return `
       <div class="card">
+        <p style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-bottom:6px;">${breadcrumbCard(q)}</p>
         <div class="list-card__top">
           <span class="badge badge--accent">${escapeHtml(q.tema)}</span>
           <span class="badge">${escapeHtml(q.banca)} · ${q.ano}</span>
@@ -150,7 +275,7 @@ export async function renderLista(container, _params, query = {}) {
   }
 
   function atualizarContagem() {
-    contagemEl.textContent = `${idsFiltrados.length} questão${idsFiltrados.length === 1 ? "" : "ões"} encontrada${idsFiltrados.length === 1 ? "" : "s"}${idsFiltrados.length ? ` · ${renderizados} exibida${renderizados === 1 ? "" : "s"}` : ""}`;
+    contagemEl.textContent = `${idsFiltrados.length} quest${idsFiltrados.length === 1 ? "ão" : "ões"} encontrada${idsFiltrados.length === 1 ? "" : "s"}${idsFiltrados.length ? ` · ${renderizados} exibida${renderizados === 1 ? "" : "s"}` : ""}`;
   }
 
   function carregarProximoLote() {
@@ -167,10 +292,7 @@ export async function renderLista(container, _params, query = {}) {
   }
 
   function refazerFiltro() {
-    // Reaplica os filtros combinando o índice (especialidade/banca) com o filtro por
-    // título de tema, que ainda não está no shape de `filtrar()` (chega na Fase 2 da
-    // reformulação, quando o filtro de tema passa a usar temaId via hierarquia real).
-    idsFiltrados = filtrar(indice, filtrosAtuais()).filter((id) => questaoPorTemaSelecionado(indice.questoesPorId.get(id)));
+    idsFiltrados = filtrar(indice, filtrosAtuais());
     listaEl.innerHTML = "";
     renderizados = 0;
     if (!idsFiltrados.length) {
@@ -182,15 +304,18 @@ export async function renderLista(container, _params, query = {}) {
     carregarProximoLote();
   }
 
-  observer = new IntersectionObserver(
+  new IntersectionObserver(
     (entries) => {
       if (entries.some((e) => e.isIntersecting)) carregarProximoLote();
     },
     { rootMargin: "600px" }
-  );
-  observer.observe(sentinelaEl);
+  ).observe(sentinelaEl);
 
-  filtroTema.addEventListener("change", refazerFiltro);
-  filtroBanca.addEventListener("change", refazerFiltro);
+  filtroBanca.addEventListener("change", () => {
+    renderHierarquia();
+    refazerFiltro();
+  });
+
+  renderHierarquia();
   refazerFiltro();
 }
