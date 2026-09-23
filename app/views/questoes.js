@@ -13,6 +13,16 @@ import {
   STATUS,
 } from "../questoesIndex.js";
 
+function skeletonCard() {
+  return `
+    <div class="skeleton-card">
+      <div class="skeleton skeleton-line skeleton-line--short"></div>
+      <div class="skeleton skeleton-line skeleton-line--tall"></div>
+      <div class="skeleton skeleton-line"></div>
+      <div class="skeleton skeleton-line"></div>
+    </div>`;
+}
+
 export async function renderLista(container, _params, query = {}) {
   container.innerHTML = `
     <div class="main__container">
@@ -21,20 +31,45 @@ export async function renderLista(container, _params, query = {}) {
         <h1>Banco de questões</h1>
         <p class="page-header__desc">Carregando banco de questões...</p>
       </div>
+      <div class="skeleton skeleton-line" style="height:80px;margin-bottom:16px;"></div>
+      ${Array.from({ length: 3 }, skeletonCard).join("")}
     </div>
   `;
 
-  const indice = await carregarIndice();
+  let indice;
+  try {
+    indice = await carregarIndice();
+  } catch (err) {
+    container.innerHTML = `
+      <div class="main__container">
+        <div class="empty-state">
+          <h2>Não foi possível carregar o banco de questões</h2>
+          <p>Verifique sua conexão e tente novamente.</p>
+          <button type="button" class="btn btn--primary" id="questoes-tentar-novamente" style="margin-top:16px;">Tentar novamente</button>
+        </div>
+      </div>
+    `;
+    container.querySelector("#questoes-tentar-novamente").addEventListener("click", () => renderLista(container, _params, query));
+    return;
+  }
 
   // Fase 16 (Revisão de Alto Rendimento) — ?categoria=X restringe a página inteira
   // a essa especialidade antes de qualquer outro filtro, como já funcionava (agora
   // via hierarquia real: a especialidade já vem selecionada/expandida).
+  // Fase 6 (reformulação de Questões) — o restante dos filtros (?area=, ?temaId=,
+  // ?banca=, ?ano=, ?status=, ?busca=, ?ordenacao=, ?qtd=) também é restaurado da
+  // URL, para o estado sobreviver a um refresh/voltar sem precisar re-clicar tudo.
   let filtroGrandeArea;
   let filtroEspecialidade;
   let filtroTemaId;
   let filtroStatus = STATUS.TODAS;
   let grandeAreaAberta = null;
   let especialidadeAberta = null;
+  let bancaInicial = "todas";
+  let anoInicial = "todos";
+  let buscaInicial = "";
+  let ordenacaoInicial = ORDENACAO.RECENTES;
+  let qtdInicial = "20";
 
   if (query.categoria && especialidadesDe(indice).includes(query.categoria)) {
     filtroEspecialidade = query.categoria;
@@ -46,6 +81,26 @@ export async function renderLista(container, _params, query = {}) {
       if (match) filtroTemaId = match[0];
     }
   }
+  if (query.temaId) {
+    const q = [...indice.questoesPorId.values()].find((qq) => qq.temaId === query.temaId);
+    if (q) {
+      filtroTemaId = query.temaId;
+      filtroEspecialidade = q.especialidade;
+      filtroGrandeArea = q.grandeArea;
+      grandeAreaAberta = filtroGrandeArea;
+      especialidadeAberta = filtroEspecialidade;
+    }
+  }
+  if (!filtroGrandeArea && query.area && indice.grandeAreas.includes(query.area)) {
+    filtroGrandeArea = query.area;
+    grandeAreaAberta = query.area;
+  }
+  if (query.banca && indice.bancas.includes(query.banca)) bancaInicial = query.banca;
+  if (query.ano && indice.anos.includes(Number(query.ano))) anoInicial = query.ano;
+  if (query.status && Object.values(STATUS).includes(query.status)) filtroStatus = query.status;
+  if (query.busca) buscaInicial = query.busca;
+  if (query.ordenacao && Object.values(ORDENACAO).includes(query.ordenacao)) ordenacaoInicial = query.ordenacao;
+  if (query.qtd && ["10", "20", "30", "40", "50", "100", "todas"].includes(query.qtd)) qtdInicial = query.qtd;
 
   container.innerHTML = `
     <div class="main__container">
@@ -56,44 +111,49 @@ export async function renderLista(container, _params, query = {}) {
         <p id="questoes-breadcrumb" style="margin-top:8px;font-size:var(--fs-sm);display:none;"></p>
       </div>
       <div id="questoes-stats" class="stat-row"></div>
-      <div class="field" style="margin-top:16px;">
-        <label for="filtro-busca">Buscar por tema ou enunciado</label>
-        <input type="search" id="filtro-busca" placeholder="Ex.: hipertensão, IAM, dengue..." />
+      <button type="button" id="questoes-filtros-toggle" class="btn btn--secondary filtros-toggle">Filtros</button>
+      <div id="questoes-filtros-overlay" class="filtros-overlay"></div>
+      <div id="questoes-filtros-painel" class="filtros-painel">
+        <div class="field">
+          <label for="filtro-busca">Buscar por tema ou enunciado</label>
+          <input type="search" id="filtro-busca" placeholder="Ex.: hipertensão, IAM, dengue..." value="${escapeHtml(buscaInicial)}" />
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
+          <div class="field" style="max-width:280px;">
+            <label for="filtro-banca">Banca</label>
+            <select id="filtro-banca">
+              <option value="todas" ${bancaInicial === "todas" ? "selected" : ""}>Todas as bancas</option>
+              ${indice.bancas.map((b) => `<option value="${escapeHtml(b)}" ${b === bancaInicial ? "selected" : ""}>${escapeHtml(b)}</option>`).join("")}
+            </select>
+          </div>
+          <div class="field" style="max-width:200px;">
+            <label for="filtro-ano">Ano</label>
+            <select id="filtro-ano">
+              <option value="todos" ${anoInicial === "todos" ? "selected" : ""}>Todos os anos</option>
+              ${indice.anos.map((a) => `<option value="${a}" ${String(a) === anoInicial ? "selected" : ""}>${a}</option>`).join("")}
+            </select>
+          </div>
+          <div class="field" style="max-width:220px;">
+            <label for="filtro-ordenacao">Ordenar por</label>
+            <select id="filtro-ordenacao">
+              <option value="${ORDENACAO.RECENTES}" ${ordenacaoInicial === ORDENACAO.RECENTES ? "selected" : ""}>Mais recentes</option>
+              <option value="${ORDENACAO.ANTIGAS}" ${ordenacaoInicial === ORDENACAO.ANTIGAS ? "selected" : ""}>Mais antigas</option>
+              <option value="${ORDENACAO.ACERTO_ASC}" ${ordenacaoInicial === ORDENACAO.ACERTO_ASC ? "selected" : ""}>Meu % de acerto (menor primeiro)</option>
+              <option value="${ORDENACAO.ACERTO_DESC}" ${ordenacaoInicial === ORDENACAO.ACERTO_DESC ? "selected" : ""}>Meu % de acerto (maior primeiro)</option>
+              <option value="${ORDENACAO.ALEATORIO}" ${ordenacaoInicial === ORDENACAO.ALEATORIO ? "selected" : ""}>Aleatório</option>
+            </select>
+          </div>
+          <div class="field" style="max-width:160px;">
+            <label for="filtro-quantidade">Por página</label>
+            <select id="filtro-quantidade">
+              ${[10, 20, 30, 40, 50, 100].map((n) => `<option value="${n}" ${String(n) === qtdInicial ? "selected" : ""}>${n}</option>`).join("")}
+              <option value="todas" ${qtdInicial === "todas" ? "selected" : ""}>Todas</option>
+            </select>
+          </div>
+        </div>
+        <div id="questoes-chips" class="tag-filter-bar" style="margin-top:12px;display:none;"></div>
+        <button type="button" class="btn btn--secondary filtros-painel__fechar" id="questoes-filtros-fechar">Fechar</button>
       </div>
-      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
-        <div class="field" style="max-width:280px;">
-          <label for="filtro-banca">Banca</label>
-          <select id="filtro-banca">
-            <option value="todas">Todas as bancas</option>
-            ${indice.bancas.map((b) => `<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join("")}
-          </select>
-        </div>
-        <div class="field" style="max-width:200px;">
-          <label for="filtro-ano">Ano</label>
-          <select id="filtro-ano">
-            <option value="todos">Todos os anos</option>
-            ${indice.anos.map((a) => `<option value="${a}">${a}</option>`).join("")}
-          </select>
-        </div>
-        <div class="field" style="max-width:220px;">
-          <label for="filtro-ordenacao">Ordenar por</label>
-          <select id="filtro-ordenacao">
-            <option value="${ORDENACAO.RECENTES}">Mais recentes</option>
-            <option value="${ORDENACAO.ANTIGAS}">Mais antigas</option>
-            <option value="${ORDENACAO.ACERTO_ASC}">Meu % de acerto (menor primeiro)</option>
-            <option value="${ORDENACAO.ACERTO_DESC}">Meu % de acerto (maior primeiro)</option>
-            <option value="${ORDENACAO.ALEATORIO}">Aleatório</option>
-          </select>
-        </div>
-        <div class="field" style="max-width:160px;">
-          <label for="filtro-quantidade">Por página</label>
-          <select id="filtro-quantidade">
-            ${[10, 20, 30, 40, 50, 100].map((n) => `<option value="${n}" ${n === 20 ? "selected" : ""}>${n}</option>`).join("")}
-            <option value="todas">Todas</option>
-          </select>
-        </div>
-      </div>
-      <div id="questoes-chips" class="tag-filter-bar" style="margin-top:12px;display:none;"></div>
       <div id="questoes-hierarquia" class="content-tree" style="margin-top:16px;"></div>
       <p id="questoes-contagem" class="page-header__desc" style="margin-top:16px;"></p>
       <div id="questoes-lista" class="plan-queue"></div>
@@ -115,6 +175,10 @@ export async function renderLista(container, _params, query = {}) {
   const filtroBusca = container.querySelector("#filtro-busca");
   const filtroOrdenacao = container.querySelector("#filtro-ordenacao");
   const filtroQuantidade = container.querySelector("#filtro-quantidade");
+  const filtrosToggleEl = container.querySelector("#questoes-filtros-toggle");
+  const filtrosOverlayEl = container.querySelector("#questoes-filtros-overlay");
+  const filtrosPainelEl = container.querySelector("#questoes-filtros-painel");
+  const filtrosFecharEl = container.querySelector("#questoes-filtros-fechar");
 
   const ROTULOS_STATUS = {
     [STATUS.NAO_RESPONDIDAS]: "Não respondidas",
@@ -125,7 +189,18 @@ export async function renderLista(container, _params, query = {}) {
 
   let idsFiltrados = [];
   let renderizados = 0;
-  let tamanhoLote = 20;
+  let tamanhoLote = qtdInicial === "todas" ? 100 : Number(qtdInicial);
+
+  function fecharPainelFiltros() {
+    filtrosPainelEl.classList.remove("is-open");
+    filtrosOverlayEl.classList.remove("is-open");
+  }
+  filtrosToggleEl.addEventListener("click", () => {
+    filtrosPainelEl.classList.add("is-open");
+    filtrosOverlayEl.classList.add("is-open");
+  });
+  filtrosOverlayEl.addEventListener("click", fecharPainelFiltros);
+  filtrosFecharEl.addEventListener("click", fecharPainelFiltros);
 
   function filtrosBase() {
     return {
@@ -181,6 +256,8 @@ export async function renderLista(container, _params, query = {}) {
     if (filtroStatus !== STATUS.TODAS) {
       chips.push({ label: ROTULOS_STATUS[filtroStatus], remover: () => { filtroStatus = STATUS.TODAS; } });
     }
+
+    filtrosToggleEl.textContent = chips.length ? `Filtros (${chips.length})` : "Filtros";
 
     if (!chips.length) {
       chipsEl.style.display = "none";
@@ -451,12 +528,42 @@ export async function renderLista(container, _params, query = {}) {
     carregandoMaisEl.style.display = renderizados < idsFiltrados.length ? "block" : "none";
   }
 
+  // Fase 6 — reflete os filtros ativos na URL via history.replaceState direto
+  // (sem passar pelo router/navigate(), que forçaria um re-render completo da
+  // view a cada mudança de filtro). Permite refresh/voltar sem perder o filtro.
+  function atualizarURL() {
+    const params = new URLSearchParams();
+    if (filtroGrandeArea) params.set("area", filtroGrandeArea);
+    if (filtroEspecialidade) params.set("categoria", filtroEspecialidade);
+    if (filtroTemaId) params.set("temaId", filtroTemaId);
+    if (filtroBanca.value !== "todas") params.set("banca", filtroBanca.value);
+    if (filtroAno.value !== "todos") params.set("ano", filtroAno.value);
+    if (filtroStatus !== STATUS.TODAS) params.set("status", filtroStatus);
+    if (filtroBusca.value.trim()) params.set("busca", filtroBusca.value.trim());
+    if (filtroOrdenacao.value !== ORDENACAO.RECENTES) params.set("ordenacao", filtroOrdenacao.value);
+    if (filtroQuantidade.value !== "20") params.set("qtd", filtroQuantidade.value);
+    const caminho = window.location.hash.split("?")[0] || "#/residencia/questoes";
+    const queryStr = params.toString();
+    const novaURL = `${caminho}${queryStr ? `?${queryStr}` : ""}`;
+    if (novaURL !== window.location.hash) history.replaceState(null, "", novaURL);
+  }
+
   function refazerFiltro() {
+    atualizarURL();
     idsFiltrados = filtrar(indice, filtrosAtuais());
     listaEl.innerHTML = "";
     renderizados = 0;
     if (!idsFiltrados.length) {
-      listaEl.innerHTML = `<div class="empty-state">Nenhuma questão encontrada com esses filtros.</div>`;
+      listaEl.innerHTML = `
+        <div class="empty-state">
+          <p>Nenhuma questão encontrada com esses filtros.</p>
+          <button type="button" class="btn btn--secondary" id="questoes-limpar-vazio" style="margin-top:12px;">Limpar filtros</button>
+        </div>`;
+      container.querySelector("#questoes-limpar-vazio").addEventListener("click", () => {
+        limparTudo();
+        renderHierarquia();
+        refazerFiltro();
+      });
       contagemEl.textContent = "0 questões encontradas";
       carregandoMaisEl.style.display = "none";
       return;
