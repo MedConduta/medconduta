@@ -1,29 +1,30 @@
-import { fetchJsonCached, escapeHtml, uniq } from "../utils.js";
-import { setItem, getAll } from "../db.js";
+import { escapeHtml } from "../utils.js";
+import { setItem } from "../db.js";
 import { registrarResultadoQuestao } from "../erros.js";
+import { carregarIndice, filtrar, registrarRespostaNoIndice, ORDENACAO } from "../questoesIndex.js";
+
+const TAMANHO_LOTE = 20;
 
 export async function renderLista(container, _params, query = {}) {
-  const [curadas, geradas, temasCurados, respostasAnteriores] = await Promise.all([
-    fetchJsonCached("data/questoes.json"),
-    getAll("ia_questoes"),
-    fetchJsonCached("data/temas.json"),
-    getAll("respostas"),
-  ]);
-  const categoriaPorTemaId = Object.fromEntries(temasCurados.map((t) => [t.id, t.categoria]));
+  container.innerHTML = `
+    <div class="main__container">
+      <div class="page-header">
+        <div class="page-header__eyebrow">Residência — Questões</div>
+        <h1>Banco de questões</h1>
+        <p class="page-header__desc">Carregando banco de questões...</p>
+      </div>
+    </div>
+  `;
 
-  // Fase 16 — ?categoria=X (ver Revisão de Alto Rendimento) restringe a
-  // página inteira a essa categoria, antes de qualquer outro filtro.
-  let questoes = [...curadas, ...geradas];
-  if (query.categoria) {
-    questoes = questoes.filter((q) => categoriaPorTemaId[q.temaId] === query.categoria);
-  }
-  const temas = uniq(questoes.map((q) => q.tema));
+  const indice = await carregarIndice();
+
+  // Fase 16 (Revisão de Alto Rendimento) — ?categoria=X restringe a página inteira
+  // a essa especialidade antes de qualquer outro filtro, como já funcionava.
+  const especialidadeInicial = query.categoria || "todas";
+  const temas = [...new Set([...indice.questoesPorId.values()].filter((q) => especialidadeInicial === "todas" || q.especialidade === especialidadeInicial).map((q) => q.tema))].sort(
+    (a, b) => a.localeCompare(b, "pt-BR")
+  );
   const temaInicial = query.tema && temas.includes(query.tema) ? query.tema : "todos";
-  const bancas = uniq(questoes.map((q) => q.banca));
-  const tentativasPorQuestao = new Map();
-  respostasAnteriores.forEach((r) => {
-    tentativasPorQuestao.set(r.questaoId, (tentativasPorQuestao.get(r.questaoId) || 0) + 1);
-  });
 
   container.innerHTML = `
     <div class="main__container">
@@ -31,7 +32,7 @@ export async function renderLista(container, _params, query = {}) {
         <div class="page-header__eyebrow">Residência — Questões</div>
         <h1>Banco de questões</h1>
         <p class="page-header__desc">Questões com resolução comentada, filtráveis por tema e banca. Enunciados e comentários são material de estudo próprio, não de provas reais.</p>
-        ${query.categoria ? `<p style="margin-top:8px;font-size:var(--fs-sm);"><span class="badge badge--warning">Filtrado: ${escapeHtml(query.categoria)}</span> <a href="#/residencia/questoes">Ver todas as questões</a></p>` : ""}
+        ${especialidadeInicial !== "todas" ? `<p style="margin-top:8px;font-size:var(--fs-sm);"><span class="badge badge--warning">Filtrado: ${escapeHtml(especialidadeInicial)}</span> <a href="#/residencia/questoes">Ver todas as questões</a></p>` : ""}
       </div>
       <div class="field" style="display:flex;gap:16px;flex-wrap:wrap;">
         <div style="flex:1;min-width:180px;">
@@ -45,31 +46,44 @@ export async function renderLista(container, _params, query = {}) {
           <label for="filtro-banca">Banca</label>
           <select id="filtro-banca">
             <option value="todas">Todas as bancas</option>
-            ${bancas.map((b) => `<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join("")}
+            ${indice.bancas.map((b) => `<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join("")}
           </select>
         </div>
       </div>
+      <p id="questoes-contagem" class="page-header__desc" style="margin-top:4px;"></p>
       <div id="questoes-lista" class="plan-queue"></div>
+      <div id="questoes-sentinela" style="height:1px;"></div>
+      <p id="questoes-carregando-mais" class="empty-state" style="display:none;">Carregando mais questões...</p>
     </div>
   `;
 
   const listaEl = container.querySelector("#questoes-lista");
+  const contagemEl = container.querySelector("#questoes-contagem");
+  const carregandoMaisEl = container.querySelector("#questoes-carregando-mais");
+  const sentinelaEl = container.querySelector("#questoes-sentinela");
   const filtroTema = container.querySelector("#filtro-tema");
   const filtroBanca = container.querySelector("#filtro-banca");
 
-  function renderFiltradas() {
-    const tema = filtroTema.value;
-    const banca = filtroBanca.value;
-    const filtradas = questoes.filter(
-      (q) => (tema === "todos" || q.tema === tema) && (banca === "todas" || q.banca === banca)
-    );
-    if (!filtradas.length) {
-      listaEl.innerHTML = `<div class="empty-state">Nenhuma questão encontrada com esses filtros.</div>`;
-      return;
-    }
-    listaEl.innerHTML = filtradas
-      .map(
-        (q) => `
+  let idsFiltrados = [];
+  let renderizados = 0;
+  let observer = null;
+
+  function filtrosAtuais() {
+    return {
+      especialidade: especialidadeInicial === "todas" ? undefined : especialidadeInicial,
+      temaId: undefined, // filtramos por título de tema (compat com o select atual), não por id
+      banca: filtroBanca.value === "todas" ? undefined : filtroBanca.value,
+      ordenacao: ORDENACAO.RECENTES,
+    };
+  }
+
+  function questaoPorTemaSelecionado(q) {
+    return filtroTema.value === "todos" || q.tema === filtroTema.value;
+  }
+
+  function renderCard(id) {
+    const q = indice.questoesPorId.get(id);
+    return `
       <div class="card">
         <div class="list-card__top">
           <span class="badge badge--accent">${escapeHtml(q.tema)}</span>
@@ -89,53 +103,94 @@ export async function renderLista(container, _params, query = {}) {
             .join("")}
         </div>
         <div class="resultado" data-qid="${q.id}"></div>
-      </div>`
-      )
-      .join("");
+      </div>`;
+  }
 
+  function ligarEventosCard(id) {
+    const q = indice.questoesPorId.get(id);
+    const opcoesEl = listaEl.querySelector(`.opcoes[data-qid="${CSS.escape(id)}"]`);
+    if (!opcoesEl) return;
     const exibidoEm = Date.now();
 
-    listaEl.querySelectorAll(".opcoes").forEach((opcoesEl) => {
-      const qid = opcoesEl.dataset.qid;
-      const questao = filtradas.find((q) => q.id === qid);
-      opcoesEl.querySelectorAll(".question-option").forEach((btn) => {
-        btn.addEventListener("click", async () => {
-          const escolhida = Number(btn.dataset.i);
-          const acertou = escolhida === questao.correta;
-          opcoesEl.querySelectorAll(".question-option").forEach((b, i) => {
-            b.classList.add("is-disabled");
-            if (i === questao.correta) b.classList.add("is-correct");
-            if (i === escolhida && !acertou) b.classList.add("is-incorrect");
-          });
-          const resultadoEl = listaEl.querySelector(`.resultado[data-qid="${qid}"]`);
-          resultadoEl.innerHTML = `
-            <div class="explanation-box">
-              <strong style="color:${acertou ? "var(--color-success)" : "var(--color-danger)"}">${acertou ? "Correto!" : "Incorreto."}</strong>
-              <p style="margin-top:8px;">${escapeHtml(questao.comentario)}</p>
-            </div>
-          `;
-          const tentativa = (tentativasPorQuestao.get(questao.id) || 0) + 1;
-          tentativasPorQuestao.set(questao.id, tentativa);
-          await setItem("respostas", {
-            id: `${questao.id}-${Date.now()}`,
-            questaoId: questao.id,
-            temaId: questao.temaId,
-            tema: questao.tema,
-            categoria: categoriaPorTemaId[questao.temaId] || null,
-            banca: questao.banca,
-            ano: questao.ano,
-            acertou,
-            tempoMs: Date.now() - exibidoEm,
-            tentativa,
-            respondidoEm: new Date().toISOString(),
-          });
-          await registrarResultadoQuestao(questao.id, acertou);
+    opcoesEl.querySelectorAll(".question-option").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const escolhida = Number(btn.dataset.i);
+        const acertou = escolhida === q.correta;
+        opcoesEl.querySelectorAll(".question-option").forEach((b, i) => {
+          b.classList.add("is-disabled");
+          if (i === q.correta) b.classList.add("is-correct");
+          if (i === escolhida && !acertou) b.classList.add("is-incorrect");
         });
+        const resultadoEl = listaEl.querySelector(`.resultado[data-qid="${CSS.escape(id)}"]`);
+        resultadoEl.innerHTML = `
+          <div class="explanation-box">
+            <strong style="color:${acertou ? "var(--color-success)" : "var(--color-danger)"}">${acertou ? "Correto!" : "Incorreto."}</strong>
+            <p style="margin-top:8px;">${escapeHtml(q.comentario)}</p>
+          </div>
+        `;
+        const respondidoEm = new Date().toISOString();
+        await setItem("respostas", {
+          id: `${q.id}-${Date.now()}`,
+          questaoId: q.id,
+          temaId: q.temaId,
+          tema: q.tema,
+          categoria: q.especialidade,
+          banca: q.banca,
+          ano: q.ano,
+          acertou,
+          tempoMs: Date.now() - exibidoEm,
+          tentativa: (indice.statusPorQuestao.get(q.id)?.tentativas || 0) + 1,
+          respondidoEm,
+        });
+        await registrarResultadoQuestao(q.id, acertou);
+        registrarRespostaNoIndice(indice, q.id, acertou, respondidoEm);
+        atualizarContagem();
       });
     });
   }
 
-  filtroTema.addEventListener("change", renderFiltradas);
-  filtroBanca.addEventListener("change", renderFiltradas);
-  renderFiltradas();
+  function atualizarContagem() {
+    contagemEl.textContent = `${idsFiltrados.length} questão${idsFiltrados.length === 1 ? "" : "ões"} encontrada${idsFiltrados.length === 1 ? "" : "s"}${idsFiltrados.length ? ` · ${renderizados} exibida${renderizados === 1 ? "" : "s"}` : ""}`;
+  }
+
+  function carregarProximoLote() {
+    if (renderizados >= idsFiltrados.length) {
+      carregandoMaisEl.style.display = "none";
+      return;
+    }
+    const lote = idsFiltrados.slice(renderizados, renderizados + TAMANHO_LOTE);
+    listaEl.insertAdjacentHTML("beforeend", lote.map(renderCard).join(""));
+    lote.forEach(ligarEventosCard);
+    renderizados += lote.length;
+    atualizarContagem();
+    carregandoMaisEl.style.display = renderizados < idsFiltrados.length ? "block" : "none";
+  }
+
+  function refazerFiltro() {
+    // Reaplica os filtros combinando o índice (especialidade/banca) com o filtro por
+    // título de tema, que ainda não está no shape de `filtrar()` (chega na Fase 2 da
+    // reformulação, quando o filtro de tema passa a usar temaId via hierarquia real).
+    idsFiltrados = filtrar(indice, filtrosAtuais()).filter((id) => questaoPorTemaSelecionado(indice.questoesPorId.get(id)));
+    listaEl.innerHTML = "";
+    renderizados = 0;
+    if (!idsFiltrados.length) {
+      listaEl.innerHTML = `<div class="empty-state">Nenhuma questão encontrada com esses filtros.</div>`;
+      contagemEl.textContent = "0 questões encontradas";
+      carregandoMaisEl.style.display = "none";
+      return;
+    }
+    carregarProximoLote();
+  }
+
+  observer = new IntersectionObserver(
+    (entries) => {
+      if (entries.some((e) => e.isIntersecting)) carregarProximoLote();
+    },
+    { rootMargin: "600px" }
+  );
+  observer.observe(sentinelaEl);
+
+  filtroTema.addEventListener("change", refazerFiltro);
+  filtroBanca.addEventListener("change", refazerFiltro);
+  refazerFiltro();
 }
