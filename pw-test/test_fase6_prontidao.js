@@ -34,10 +34,11 @@ const { chromium } = require("playwright");
 
   // --- 2) Responder algumas questões de Cardiologia (peso alto) corretamente e errando outras
   await page.evaluate(() => { location.hash = "/residencia/questoes"; });
-  await page.waitForSelector(".card .question-option", { timeout: 10000 });
-  await page.selectOption("#filtro-tema", { index: 1 }).catch(() => {});
+  await page.waitForSelector("#questoes-lista .card .question-option", { timeout: 10000 });
   await page.waitForTimeout(400);
-  const cards = await page.$$(".card");
+  // Escopado a #questoes-lista porque a árvore de hierarquia (Grande Área/Especialidade)
+  // também usa a classe .card (mesmo padrão de app/views/curso.js).
+  const cards = await page.$$("#questoes-lista .card");
   for (const card of cards.slice(0, 3)) {
     const opcoes = await card.$$(".question-option");
     if (!opcoes.length) continue;

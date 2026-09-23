@@ -5,10 +5,12 @@ import {
   carregarIndice,
   filtrar,
   contarPorNivel,
+  contadores,
   especialidadesDe,
   temasDe,
   registrarRespostaNoIndice,
   ORDENACAO,
+  STATUS,
 } from "../questoesIndex.js";
 
 const TAMANHO_LOTE = 20;
@@ -32,6 +34,7 @@ export async function renderLista(container, _params, query = {}) {
   let filtroGrandeArea;
   let filtroEspecialidade;
   let filtroTemaId;
+  let filtroStatus = STATUS.TODAS;
   let grandeAreaAberta = null;
   let especialidadeAberta = null;
 
@@ -54,6 +57,7 @@ export async function renderLista(container, _params, query = {}) {
         <p class="page-header__desc">Navegue por Grande Área › Especialidade › Tema, ou combine com a busca por banca. Enunciados e comentários são material de estudo próprio, não de provas reais.</p>
         <p id="questoes-breadcrumb" style="margin-top:8px;font-size:var(--fs-sm);display:none;"></p>
       </div>
+      <div id="questoes-stats" class="stat-row"></div>
       <div class="field" style="max-width:280px;">
         <label for="filtro-banca">Banca</label>
         <select id="filtro-banca">
@@ -69,6 +73,7 @@ export async function renderLista(container, _params, query = {}) {
     </div>
   `;
 
+  const statsEl = container.querySelector("#questoes-stats");
   const hierarquiaEl = container.querySelector("#questoes-hierarquia");
   const breadcrumbEl = container.querySelector("#questoes-breadcrumb");
   const listaEl = container.querySelector("#questoes-lista");
@@ -81,8 +86,36 @@ export async function renderLista(container, _params, query = {}) {
   let renderizados = 0;
 
   function filtrosBase() {
-    return { banca: filtroBanca.value === "todas" ? undefined : filtroBanca.value };
+    return { banca: filtroBanca.value === "todas" ? undefined : filtroBanca.value, status: filtroStatus };
   }
+
+  function renderStats() {
+    const c = contadores(indice, filtrosAtuais());
+    const tile = (status, valor, rotulo) => `
+      <button type="button" class="stat-tile ${filtroStatus === status ? "is-active" : ""}" data-status="${status}">
+        <span class="stat-tile__value">${valor}</span>
+        <span class="stat-tile__label">${rotulo}</span>
+      </button>`;
+    statsEl.innerHTML = `
+      ${tile(STATUS.TODAS, c.total, "Total")}
+      ${tile(STATUS.NAO_RESPONDIDAS, c.naoRespondidas, "Não respondidas")}
+      ${tile(STATUS.RESPONDIDAS, c.respondidas, "Respondidas")}
+      ${tile(STATUS.CORRETAS, c.acertos, "Acertos")}
+      ${tile(STATUS.INCORRETAS, c.erros, "Erros")}
+      <div class="stat-tile">
+        <span class="stat-tile__value">${c.percentualAcerto.toFixed(1)}%</span>
+        <span class="stat-tile__label">Aproveitamento</span>
+      </div>`;
+  }
+
+  statsEl.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-status]");
+    if (!btn) return;
+    const status = btn.dataset.status;
+    filtroStatus = filtroStatus === status ? STATUS.TODAS : status;
+    renderHierarquia();
+    refazerFiltro();
+  });
 
   function filtrosAtuais() {
     return {
@@ -134,6 +167,7 @@ export async function renderLista(container, _params, query = {}) {
   }
 
   function renderHierarquia() {
+    renderStats();
     const contagemAreas = contarPorNivel(indice, filtrosBase(), "grandeArea");
     hierarquiaEl.innerHTML = indice.grandeAreas
       .filter((area) => contagemAreas.get(area) > 0)
@@ -207,6 +241,12 @@ export async function renderLista(container, _params, query = {}) {
 
   function renderCard(id) {
     const q = indice.questoesPorId.get(id);
+    const status = indice.statusPorQuestao.get(id);
+    const badgeStatus = !status?.respondida
+      ? ""
+      : status.acertouUltima
+        ? '<span class="badge" style="color:var(--color-success);border-color:var(--color-success-soft);">✓ Já acertou</span>'
+        : '<span class="badge" style="color:var(--color-danger);border-color:var(--color-danger-border);">✕ Já errou</span>';
     return `
       <div class="card">
         <p style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-bottom:6px;">${breadcrumbCard(q)}</p>
@@ -214,6 +254,7 @@ export async function renderLista(container, _params, query = {}) {
           <span class="badge badge--accent">${escapeHtml(q.tema)}</span>
           <span class="badge">${escapeHtml(q.banca)} · ${q.ano}</span>
           ${q.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
+          ${badgeStatus}
         </div>
         <p style="font-weight:500;margin:12px 0;">${escapeHtml(q.enunciado)}</p>
         <div class="opcoes" data-qid="${q.id}">
@@ -270,6 +311,7 @@ export async function renderLista(container, _params, query = {}) {
         await registrarResultadoQuestao(q.id, acertou);
         registrarRespostaNoIndice(indice, q.id, acertou, respondidoEm);
         atualizarContagem();
+        renderStats();
       });
     });
   }
