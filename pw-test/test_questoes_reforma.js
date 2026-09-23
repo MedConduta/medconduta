@@ -56,19 +56,11 @@ const { chromium } = require("playwright");
   const resultadoApareceu = await page.$eval("#questoes-lista .card .resultado", (el) => el.innerHTML.trim().length > 0);
   console.log("Responder uma questão exibe o resultado (correto/incorreto):", resultadoApareceu);
 
-  // --- 4) Filtro por tema reduz a lista corretamente (sem re-render de tudo de novo).
-  const temaOpcao = await page.$eval("#filtro-tema", (el) => el.options[1]?.value);
-  if (temaOpcao) {
-    await page.selectOption("#filtro-tema", temaOpcao);
-    await page.waitForTimeout(300);
-    const cardsAposFiltroTema = await page.$$eval("#questoes-lista .card", (els) => els.length);
-    const todosDoTema = await page.$$eval("#questoes-lista .card .badge--accent", (els, tema) => els.every((e) => e.textContent === tema), temaOpcao);
-    console.log(`Filtro por tema '${temaOpcao}' renderiza apenas esse tema:`, todosDoTema && cardsAposFiltroTema > 0);
-  }
+  // --- 4) Filtro por tema (hierarquia Grande Área › Especialidade › Tema) tem teste
+  // próprio e mais completo em test_questoes_hierarquia.js — o filtro plano por
+  // <select> foi substituído pela árvore na Fase 2, ver esse arquivo.
 
-  // --- 5) Filtro por banca também funciona combinado.
-  await page.selectOption("#filtro-tema", "todos");
-  await page.waitForTimeout(200);
+  // --- 5) Filtro por banca também funciona.
   const bancaOpcao = await page.$eval("#filtro-banca", (el) => el.options[1]?.value);
   if (bancaOpcao) {
     await page.selectOption("#filtro-banca", bancaOpcao);
