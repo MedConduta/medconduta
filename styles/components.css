@@ -1063,6 +1063,82 @@ button.stat-tile:hover {
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 18%, transparent);
 }
 
+/* ---------- Skeleton (carregamento) ---------- */
+
+.skeleton {
+  background: linear-gradient(90deg, var(--color-bg-subtle) 25%, var(--color-surface-hover) 50%, var(--color-bg-subtle) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  border-radius: var(--radius-md);
+}
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.skeleton-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.skeleton-line {
+  height: 14px;
+  margin-bottom: var(--space-3);
+}
+.skeleton-line--short { width: 40%; }
+.skeleton-line--tall { height: 20px; width: 80%; }
+
+/* ---------- Painel de filtros mobile (bottom sheet) ---------- */
+
+.filtros-toggle {
+  display: none;
+}
+.filtros-overlay {
+  display: none;
+}
+.filtros-painel__fechar {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .filtros-toggle {
+    display: inline-flex;
+    margin-bottom: var(--space-3);
+  }
+  .filtros-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 24, 27, 0.4);
+    z-index: 90;
+  }
+  .filtros-overlay:not(.is-open) {
+    display: none;
+  }
+  .filtros-painel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    box-shadow: var(--shadow-lg);
+    max-height: 82vh;
+    overflow-y: auto;
+    padding: var(--space-4);
+    transform: translateY(100%);
+    transition: transform var(--transition-base);
+  }
+  .filtros-painel.is-open {
+    transform: translateY(0);
+  }
+  .filtros-painel__fechar {
+    display: block;
+    width: 100%;
+    margin-top: var(--space-4);
+  }
+}
+
 .login-switch {
   text-align: center;
   margin-top: var(--space-4);
