@@ -171,7 +171,7 @@ export async function renderLista(container, _params, query = {}) {
         </div>
         <div id="questoes-chips" class="tag-filter-bar" style="margin-top:12px;display:none;"></div>
         <div class="filtros-salvos">
-          <div class="field" style="flex:1;min-width:180px;">
+          <div class="field" style="flex:1;min-width:180px;margin-bottom:0;">
             <label for="filtros-salvos-select">Filtros salvos</label>
             <select id="filtros-salvos-select">
               <option value="">Selecionar um filtro salvo...</option>
