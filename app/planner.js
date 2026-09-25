@@ -4,6 +4,7 @@ import { estaVencido } from "./sm2.js";
 import { pesoProva } from "./areas.js";
 import { getEstadoPreparo, aplicarModoNoPeso } from "./modo.js";
 import { getQuestoesEmRevisao } from "./erros.js";
+import { getAgendaHoje, cursoJaIniciado } from "./curriculo.js";
 
 const MIN_POR_REVISAO_VENCIDA = 8; // flashcard/revisão pontual
 const MIN_POR_REVISAO_ERRO = 6; // reler + resolver de novo uma questão já errada
@@ -76,10 +77,16 @@ export function calcularScorePrioridade(categoria, desempenhoPorCategoria, prova
  * 1) Revisões espaçadas vencidas — flashcards (SM-2) e questões já erradas
  *    antes (ver erros.js) — sempre primeiro, nunca somem, independente da
  *    fase da preparação (ver Fase 4/cronograma.js).
- * 2) Temas novos/pendentes, ordenados pelo score de prioridade da categoria
- *    (incidência × fragilidade), não pela ordem em que aparecem no arquivo.
+ * 2) Temas novos/pendentes. Se o usuário já usa o Curso (cronograma
+ *    semanal, ver curriculo.js), os temas atrasados/programados pra hoje
+ *    nesse cronograma entram primeiro (mais atrasado primeiro) — "Hoje"
+ *    fica amarrado à semana do Curso em que o usuário está, em vez de só
+ *    seguir um ranking de prioridade solto. O que sobra (sem usuário no
+ *    Curso, ou depois de cobrir a semana) cai no score de prioridade da
+ *    categoria (incidência × fragilidade), como antes.
  * 3) Bloco de questões, direcionado para a categoria de maior prioridade que
- *    ainda tem questões cadastradas.
+ *    ainda tem questões cadastradas — também preferindo, quando existir,
+ *    uma categoria da semana atual do Curso.
  * O tempo que sobra após as revisões (2+3) é dividido entre conteúdo novo e
  * questões segundo o peso da fase atual da preparação: perto da prova,
  * quase tudo vira questões; longe da prova, o conteúdo novo pesa mais. Sem
@@ -93,6 +100,12 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   let minutosRestantes = minutosDisponiveis;
   const fila = [];
 
+  // Só busca a agenda do Curso se o usuário já o usa (ver cursoJaIniciado) —
+  // chamar getAgendaHoje() incondicionalmente ancoraria o cronograma do
+  // Curso na primeira vez que "Hoje" é aberto, mesmo por quem nunca usou o
+  // Curso, criando atraso artificial depois.
+  const cursoAtivo = await cursoJaIniciado();
+
   const [
     temas,
     flashcardsDecks,
@@ -102,6 +115,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     respostas,
     { fase: faseBase, diasRestantes, modo, provaAlvo },
     { vencidas: errosVencidos },
+    agendaCurso,
   ] = await Promise.all([
     fetchJsonCached("data/temas.json"),
     fetchJsonCached("data/flashcards.json"),
@@ -111,7 +125,14 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     getAll("respostas"),
     getEstadoPreparo(),
     getQuestoesEmRevisao(),
+    cursoAtivo ? getAgendaHoje() : Promise.resolve(null),
   ]);
+
+  // Itens do cronograma do Curso atrasados ou programados pra hoje, ainda
+  // não concluídos — Map temaId -> item (dataProgramada, categoria, semana).
+  const itensCronogramaHoje = agendaCurso
+    ? new Map([...agendaCurso.atrasadas.conteudo, ...agendaCurso.hoje.conteudo].map((i) => [i.temaId, i]))
+    : new Map();
 
   // Modo Recuperação (ver modo.js, Fase 7) empurra o peso de volta pra
   // conteúdo até o atraso em relação ao cronograma ser recuperado — sem
@@ -187,18 +208,29 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   const categoriasPermitidas =
     modo === "emergencia" ? new Set(rankingCategorias.slice(0, TOP_K_CATEGORIAS_EMERGENCIA).map((r) => r.categoria)) : null;
 
+  // Temas do cronograma do Curso (atrasados/hoje) vêm primeiro — mais
+  // atrasado primeiro, já que é o que mais precisa ser recuperado; o resto
+  // cai no score de prioridade de sempre (incidência × fragilidade).
   const temasPendentes = temas
     .filter((t) => !progressoSet.has(t.id) && (!categoriasPermitidas || categoriasPermitidas.has(t.categoria)))
-    .sort((a, b) => (scorePorCategoria.get(b.categoria) ?? 0) - (scorePorCategoria.get(a.categoria) ?? 0));
+    .sort((a, b) => {
+      const dataA = itensCronogramaHoje.get(a.id)?.dataProgramada;
+      const dataB = itensCronogramaHoje.get(b.id)?.dataProgramada;
+      if (dataA && dataB) return dataA < dataB ? -1 : dataA > dataB ? 1 : 0;
+      if (dataA || dataB) return dataA ? -1 : 1;
+      return (scorePorCategoria.get(b.categoria) ?? 0) - (scorePorCategoria.get(a.categoria) ?? 0);
+    });
 
   for (const tema of temasPendentes) {
     if (orcamentoConteudo < MIN_POR_TEMA_NOVO / 2) break;
+    const itemCronograma = itensCronogramaHoje.get(tema.id);
     fila.push({
       tipo: "conteudo",
       titulo: `Estudar: ${tema.titulo}`,
       detalhe: tema.resumo,
       duracaoMin: MIN_POR_TEMA_NOVO,
       link: `#/residencia/conteudo/${tema.id}`,
+      semanaCurso: itemCronograma?.semana ?? null,
     });
     orcamentoConteudo -= MIN_POR_TEMA_NOVO;
     minutosRestantes -= MIN_POR_TEMA_NOVO;
@@ -206,19 +238,26 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   if (orcamentoConteudo > 0) orcamentoQuestoes += orcamentoConteudo; // fatia de conteúdo não usada vira questões
 
   // Bloco de questões — direcionado à categoria de maior prioridade que
-  // ainda tenha questões cadastradas (evita recomendar uma categoria vazia).
+  // ainda tenha questões cadastradas (evita recomendar uma categoria vazia),
+  // preferindo uma categoria da semana atual do Curso quando existir uma.
   const temaIdParaCategoria = new Map(temas.map((t) => [t.id, t.categoria]));
   const categoriasComQuestao = new Set(
     questoes.map((q) => temaIdParaCategoria.get(q.temaId)).filter(Boolean)
   );
-  const categoriaFoco = rankingCategorias.find((r) => categoriasComQuestao.has(r.categoria))?.categoria ?? null;
+  const categoriasDoCronogramaHoje = new Set([...itensCronogramaHoje.values()].map((i) => i.categoria));
+  const categoriaFocoCronograma =
+    rankingCategorias.find((r) => categoriasDoCronogramaHoje.has(r.categoria) && categoriasComQuestao.has(r.categoria))
+      ?.categoria ?? null;
+  const categoriaFoco = categoriaFocoCronograma ?? (rankingCategorias.find((r) => categoriasComQuestao.has(r.categoria))?.categoria ?? null);
 
   let blocosQuestoes = 0;
   while (orcamentoQuestoes >= MIN_POR_QUESTOES_BLOCO && minutosRestantes >= MIN_POR_QUESTOES_BLOCO && blocosQuestoes < 24) {
     fila.push({
       tipo: "questoes",
       titulo: "Bloco de questões de reforço",
-      detalhe: categoriaFoco
+      detalhe: categoriaFocoCronograma
+        ? `Foque em ${categoriaFoco} — é o tema da sua semana atual no Curso.`
+        : categoriaFoco
         ? `Foque em ${categoriaFoco} — é seu maior gargalo agora (alta incidência na prova + desempenho a melhorar).`
         : "Resolva um bloco de questões comentadas para fixar os temas do dia.",
       duracaoMin: MIN_POR_QUESTOES_BLOCO,

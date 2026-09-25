@@ -102,6 +102,7 @@ export async function renderPlanejador(container) {
             <span class="plan-item__duration">${i + 1}. ${item.duracaoMin} min</span>
             <span>
               <strong>${escapeHtml(item.titulo)}</strong>
+              ${item.semanaCurso ? `<span class="badge badge--accent" style="margin-left:6px;">📘 Semana ${item.semanaCurso} do Curso</span>` : ""}
               <br /><span style="color:var(--color-text-secondary);font-size:var(--fs-sm);">${escapeHtml(item.detalhe)}</span>
             </span>
           </a>`
