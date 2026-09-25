@@ -6,6 +6,7 @@ import { getConstancia } from "../constancia.js";
 import { getMetaDiaria } from "../metaDiaria.js";
 import { gerarGradeCurso, encontrarSemanaAtual } from "../curriculo.js";
 import { hojeIso, getAgendaRevisoes } from "../revisaoCurso.js";
+import { AREA_POR_CATEGORIA, ORDEM_AREAS } from "../areas.js";
 
 const PREF_HORAS = "planejador_horas";
 
@@ -81,6 +82,8 @@ export async function renderMinhaPreparacao(container) {
       ${renderSemanaAtual(semanaAtual, hoje)}
 
       ${renderGraficoSemanas(grade.semanas, semanaAtual?.numero, hoje)}
+
+      ${renderDesempenhoPorArea(agruparDesempenhoPorArea(respostas))}
 
       <div class="card card--interactive" style="margin-bottom:24px;">
         <div class="list-card__top">
@@ -294,6 +297,64 @@ function corPorTaxaAcerto(pct) {
   if (pct < 50) return "var(--color-danger)";
   if (pct < 70) return "var(--color-warning)";
   return "var(--color-success)";
+}
+
+/**
+ * Desempenho agregado por GRANDE área (Clínica Médica, Cirurgia Geral,
+ * Ginecologia e Obstetrícia, Pediatria, Saúde Mental, Medicina Preventiva,
+ * Especialidades) — rollup de `respostas.categoria` (subespecialidade) via
+ * AREA_POR_CATEGORIA (mesmo mapa usado em Conteúdo/IA), na ordem fixa de
+ * ORDEM_AREAS. Visão mais macro que "Seus maiores gargalos agora" (que é
+ * por subespecialidade) — responde "como estou indo em cada grande área da
+ * prova", não só "qual categoria específica está mais fraca".
+ */
+function agruparDesempenhoPorArea(respostas) {
+  const porArea = new Map();
+  for (const r of respostas) {
+    if (!r.categoria) continue;
+    const area = AREA_POR_CATEGORIA[r.categoria] || "Outros";
+    const atual = porArea.get(area) || { acertos: 0, total: 0 };
+    atual.total += 1;
+    if (r.acertou) atual.acertos += 1;
+    porArea.set(area, atual);
+  }
+  return ORDEM_AREAS.filter((area) => porArea.has(area)).map((area) => {
+    const { acertos, total } = porArea.get(area);
+    return { area, total, acertos, taxa: Math.round((acertos / total) * 100) };
+  });
+}
+
+function renderDesempenhoPorArea(dados) {
+  if (!dados.length) {
+    return `
+      <div class="card" style="margin-bottom:24px;">
+        <div class="list-card__title" style="margin-bottom:4px;">Desempenho por grande área</div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Responda questões pra essa análise aparecer — taxa de acerto por Clínica Médica, Cirurgia Geral, GO, Pediatria etc.</p>
+      </div>
+    `;
+  }
+  return `
+    <div class="card" style="margin-bottom:24px;">
+      <div class="list-card__title" style="margin-bottom:4px;">Desempenho por grande área</div>
+      <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-bottom:16px;">Taxa de acerto agregada por grande área da prova (Clínica Médica, Cirurgia Geral, GO, Pediatria, Saúde Mental, Medicina Preventiva, Especialidades).</p>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        ${dados
+          .map(
+            (d) => `
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:var(--fs-sm);margin-bottom:6px;">
+              <span>${escapeHtml(d.area)}</span>
+              <span style="color:var(--color-text-secondary);">${d.taxa}% de acerto (${d.total} ${d.total > 1 ? "questões" : "questão"})</span>
+            </div>
+            <div style="height:8px;border-radius:999px;background:var(--color-bg-subtle);overflow:hidden;">
+              <div style="height:100%;width:${d.taxa}%;background:${corPorTaxaAcerto(d.taxa)};border-radius:999px;"></div>
+            </div>
+          </div>`
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
 }
 
 function renderGargalos(gargalos) {

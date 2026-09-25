@@ -48,7 +48,49 @@ const { chromium } = require("playwright");
   // --- 5) Agenda de hoje continua presente (não é um "atalho", é a ação central).
   console.log("Card 'Agenda de hoje' continua presente:", texto.includes("Agenda de hoje"));
 
-  // --- 6) Nenhum erro de JS.
+  // --- 6) Desempenho por grande área — usuário novo mostra estado vazio.
+  console.log("Mostra título 'Desempenho por grande área':", texto.includes("Desempenho por grande área"));
+  console.log("Usuário novo (sem respostas) mostra estado vazio:", texto.includes("Responda questões pra essa análise aparecer"));
+
+  // --- 7) Após semear respostas de áreas diferentes, a seção agrega por GRANDE área
+  // (rollup de subespecialidade via AREA_POR_CATEGORIA), não por categoria específica.
+  await page.evaluate(async () => {
+    const { setItem } = await import("/app/db.js");
+    const registros = [
+      { categoria: "Cardiologia", acertou: true }, // Clínica Médica
+      { categoria: "Cardiologia", acertou: false },
+      { categoria: "Cirurgia Geral", acertou: true }, // Cirurgia Geral
+      { categoria: "Obstetrícia", acertou: false }, // Ginecologia e Obstetrícia
+    ];
+    for (let i = 0; i < registros.length; i++) {
+      const r = registros[i];
+      await setItem("respostas", {
+        id: `resp-seed-area-${i}`,
+        questaoId: `q-seed-area-${i}`,
+        temaId: `tema-seed-area-${i}`,
+        tema: "Tema de teste",
+        categoria: r.categoria,
+        banca: "Teste",
+        ano: 2026,
+        acertou: r.acertou,
+        respondidoEm: new Date().toISOString(),
+      });
+    }
+  });
+  // Navega pra outra rota antes de voltar — o roteador (hash-based) não
+  // re-renderiza numa navegação pro MESMO hash (hashchange não dispara).
+  await page.evaluate(() => { location.hash = "/residencia/cronograma"; });
+  await page.waitForTimeout(300);
+  await page.evaluate(() => { location.hash = "/residencia/minha-preparacao"; });
+  await page.waitForFunction(() => document.querySelector(".main__container")?.textContent.includes("Agenda de hoje"), { timeout: 15000 });
+  await page.waitForTimeout(300);
+  const textoComRespostas = await page.$eval(".main__container", (el) => el.textContent);
+  console.log("Após respostas, mostra 'Clínica Médica' (rollup de Cardiologia):", textoComRespostas.includes("Clínica Médica"));
+  console.log("Após respostas, mostra 'Cirurgia Geral':", textoComRespostas.includes("Cirurgia Geral"));
+  console.log("Após respostas, mostra 'Ginecologia e Obstetrícia' (rollup de Obstetrícia):", textoComRespostas.includes("Ginecologia e Obstetrícia"));
+  console.log("Não mostra mais o estado vazio da seção:", !textoComRespostas.includes("Responda questões pra essa análise aparecer"));
+
+  // --- 8) Nenhum erro de JS.
   console.log("Erros JS capturados:", erros.length ? erros : "nenhum");
 
   await page.screenshot({ path: "/tmp/claude-0/-home-user-medconduta/189a7ed4-3170-599a-adb3-6689b402ef7e/scratchpad/minha_preparacao_dashboard.png", fullPage: true });
