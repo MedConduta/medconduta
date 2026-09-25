@@ -49,11 +49,14 @@ const { chromium } = require("playwright");
   const badgeFlashcards = await page.$eval('a[href="#/residencia/revisao"] .badge', (el) => el.textContent.trim());
   console.log("Planejamento Semanal — contagem de flashcards vencendo é 158 (banco completo, usuário novo):", badgeFlashcards === "158");
 
-  // --- Atalhos em Minha Preparação ---
+  // Minha Preparação virou um dashboard analítico (sem lista de atalhos) —
+  // Planejamento Semanal e Relatório Semanal ficam descobríveis só pela
+  // sidebar (já testado acima), então só confirmamos que a página em si
+  // renderiza sem quebrar.
   await page.evaluate(() => { location.hash = "/residencia/minha-preparacao"; });
   await page.waitForSelector(".main__container", { timeout: 10000 });
-  console.log("Atalho 'Planejamento Semanal' presente em Minha Preparação:", !!(await page.$('a[href="#/residencia/planejamento-semanal"]')));
-  console.log("Atalho 'Relatório Semanal' presente em Minha Preparação:", !!(await page.$('a[href="#/residencia/relatorio-semanal"]')));
+  await page.waitForFunction(() => document.querySelector(".main__container")?.textContent.includes("Agenda de hoje"), { timeout: 15000 });
+  console.log("Minha Preparação (dashboard) renderiza sem quebrar:", true);
 
   // --- Testa o botão de comentário IA (real, via Worker local + Gemini) ---
   await page.evaluate(() => { location.hash = "/residencia/relatorio-semanal"; });

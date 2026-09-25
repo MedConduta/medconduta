@@ -22,23 +22,14 @@ const { chromium } = require("playwright");
   await page.waitForSelector("#sidebar-nav a", { timeout: 15000 });
   await page.waitForTimeout(800);
 
-  // --- 1) Usuário que NUNCA abriu o Curso: "Hoje" não amarra nada ao Curso
-  // (sem badge "Semana X do Curso") — comportamento de antes preservado.
-  await page.evaluate(() => { location.hash = "/residencia/planejador"; });
-  await page.waitForSelector("#plano-resultado .plan-item, #plano-resultado .empty-state", { timeout: 15000 });
-  await page.waitForTimeout(500);
-  const badgesAntesDoCurso = await page.$$eval(".plan-item .badge--accent", (els) => els.length);
-  console.log("Sem o Curso iniciado, nenhum item mostra badge de semana do Curso:", badgesAntesDoCurso === 0);
-
-  // --- 2) Abrir o Curso pela 1ª vez ancora o cronograma em hoje (semana 1
-  // alinhada com a data de hoje).
-  await page.evaluate(() => { location.hash = "/residencia/curso"; });
-  await page.waitForSelector(".card", { timeout: 20000 });
-  await page.waitForTimeout(500);
-
-  // --- 3) Voltar em "Hoje": agora deve mostrar pelo menos um item de
-  // conteúdo com a badge "Semana 1 do Curso" (curriculo.json começa na
-  // semana 1, ancorada em hoje pela abertura do Curso no passo 2).
+  // Minha Preparação (a página inicial padrão após login, ver #1 acima) virou
+  // um dashboard do Curso — ela mesma já ancora o cronograma do usuário
+  // (garantirInicioCurso) assim que renderiza, então não existe mais um
+  // estado real de "usuário logado que nunca tocou no Curso": o próprio boot
+  // do app já o faz. O guard cursoJaIniciado() em planner.js continua correto
+  // e defensivo (protege qualquer fluxo futuro que não passe pela home), mas
+  // não é mais observável via a UI normal — por isso o teste vai direto pro
+  // caso real: "Hoje" já nasce amarrado à semana do Curso.
   await page.evaluate(() => { location.hash = "/residencia/planejador"; });
   await page.waitForSelector("#plano-resultado .plan-item, #plano-resultado .empty-state", { timeout: 15000 });
   await page.waitForTimeout(500);
