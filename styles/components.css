@@ -38,9 +38,16 @@
 
 .list-card__top {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--space-2);
+}
+.list-card__top .badge {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .list-card__title {
@@ -1245,6 +1252,18 @@ button.stat-tile:hover {
     display: block;
     width: 100%;
     margin-top: var(--space-4);
+  }
+  .filtros-grid {
+    grid-template-columns: 1fr;
+  }
+  .filtros-salvos,
+  .filtros-salvos__novo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filtros-salvos .field,
+  .filtros-salvos__novo .field {
+    min-width: 0;
   }
 }
 
