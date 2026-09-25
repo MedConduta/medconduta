@@ -40,6 +40,19 @@ export async function getCursoInicio() {
   return garantirInicioCurso();
 }
 
+/**
+ * Diz se o usuário já abriu o Curso alguma vez (âncora já gravada), sem o
+ * efeito colateral de `garantirInicioCurso`/`getCursoInicio` de fixar a
+ * âncora na primeira chamada. Usado por `planner.js` para só amarrar a
+ * agenda de "Hoje" à semana do Curso quando o usuário já usa o Curso de
+ * fato — chamar `getAgendaHoje()` incondicionalmente a partir de "Hoje"
+ * (a página mais visitada do app) ancoraria o cronograma do Curso cedo
+ * demais para quem nunca abriu essa aba, gerando atraso artificial depois.
+ */
+export async function cursoJaIniciado() {
+  return (await getPref(PREF_CURSO_INICIO, null)) !== null;
+}
+
 /** Permite ao usuário ajustar manualmente a âncora (ex.: quer "recomeçar o relógio" do cronograma). */
 export async function setCursoInicio(dataIso) {
   await setPref(PREF_CURSO_INICIO, dataIso);
@@ -90,6 +103,7 @@ function montarItem(linha, contexto) {
     titulo: tema.titulo,
     categoria: tema.categoria,
     disciplina: linha.disciplina,
+    semana: linha.semana,
     dataProgramada: linha.dataProgramada,
     resumoConcluido,
     temQuestoes,
