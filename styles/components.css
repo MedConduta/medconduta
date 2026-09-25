@@ -1088,6 +1088,39 @@ button.stat-tile:hover {
 .skeleton-line--short { width: 40%; }
 .skeleton-line--tall { height: 20px; width: 80%; }
 
+/* ---------- Atalhos de estudo, grid de filtros e filtros salvos ---------- */
+
+.atalhos-estudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.filtros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.filtros-salvos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+.filtros-salvos__novo {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-2);
+  flex: 1;
+  min-width: 220px;
+}
+
 /* ---------- Painel de filtros mobile (bottom sheet) ---------- */
 
 .filtros-toggle {

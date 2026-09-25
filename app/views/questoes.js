@@ -1,5 +1,5 @@
 import { escapeHtml } from "../utils.js";
-import { setItem } from "../db.js";
+import { setItem, getAll, removeItem } from "../db.js";
 import { registrarResultadoQuestao } from "../erros.js";
 import {
   carregarIndice,
@@ -114,26 +114,31 @@ export async function renderLista(container, _params, query = {}) {
       <button type="button" id="questoes-filtros-toggle" class="btn btn--secondary filtros-toggle">Filtros</button>
       <div id="questoes-filtros-overlay" class="filtros-overlay"></div>
       <div id="questoes-filtros-painel" class="filtros-painel">
+        <div class="atalhos-estudo">
+          <button type="button" class="btn btn--secondary atalho-estudo" data-atalho="novas">Fazer questões novas</button>
+          <button type="button" class="btn btn--secondary atalho-estudo" data-atalho="erros">Revisar erros</button>
+          <button type="button" class="btn btn--secondary atalho-estudo" data-atalho="recentes">Questões recentes</button>
+        </div>
         <div class="field">
           <label for="filtro-busca">Buscar por tema ou enunciado</label>
           <input type="search" id="filtro-busca" placeholder="Ex.: hipertensão, IAM, dengue..." value="${escapeHtml(buscaInicial)}" />
         </div>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
-          <div class="field" style="max-width:280px;">
+        <div class="filtros-grid">
+          <div class="field">
             <label for="filtro-banca">Banca</label>
             <select id="filtro-banca">
               <option value="todas" ${bancaInicial === "todas" ? "selected" : ""}>Todas as bancas</option>
               ${indice.bancas.map((b) => `<option value="${escapeHtml(b)}" ${b === bancaInicial ? "selected" : ""}>${escapeHtml(b)}</option>`).join("")}
             </select>
           </div>
-          <div class="field" style="max-width:200px;">
+          <div class="field">
             <label for="filtro-ano">Ano</label>
             <select id="filtro-ano">
               <option value="todos" ${anoInicial === "todos" ? "selected" : ""}>Todos os anos</option>
               ${indice.anos.map((a) => `<option value="${a}" ${String(a) === anoInicial ? "selected" : ""}>${a}</option>`).join("")}
             </select>
           </div>
-          <div class="field" style="max-width:220px;">
+          <div class="field">
             <label for="filtro-ordenacao">Ordenar por</label>
             <select id="filtro-ordenacao">
               <option value="${ORDENACAO.RECENTES}" ${ordenacaoInicial === ORDENACAO.RECENTES ? "selected" : ""}>Mais recentes</option>
@@ -143,7 +148,7 @@ export async function renderLista(container, _params, query = {}) {
               <option value="${ORDENACAO.ALEATORIO}" ${ordenacaoInicial === ORDENACAO.ALEATORIO ? "selected" : ""}>Aleatório</option>
             </select>
           </div>
-          <div class="field" style="max-width:160px;">
+          <div class="field">
             <label for="filtro-quantidade">Por página</label>
             <select id="filtro-quantidade">
               ${[10, 20, 30, 40, 50, 100].map((n) => `<option value="${n}" ${String(n) === qtdInicial ? "selected" : ""}>${n}</option>`).join("")}
@@ -152,6 +157,22 @@ export async function renderLista(container, _params, query = {}) {
           </div>
         </div>
         <div id="questoes-chips" class="tag-filter-bar" style="margin-top:12px;display:none;"></div>
+        <div class="filtros-salvos">
+          <div class="field" style="flex:1;min-width:180px;">
+            <label for="filtros-salvos-select">Filtros salvos</label>
+            <select id="filtros-salvos-select">
+              <option value="">Selecionar um filtro salvo...</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn--secondary" id="filtros-salvos-remover" style="display:none;" title="Remover filtro salvo selecionado">Remover</button>
+          <div class="filtros-salvos__novo">
+            <div class="field" style="flex:1;min-width:220px;margin-bottom:0;">
+              <label for="filtros-salvos-nome">Salvar filtro atual</label>
+              <input type="text" id="filtros-salvos-nome" placeholder="Nome para o filtro" maxlength="60" />
+            </div>
+            <button type="button" class="btn btn--secondary" id="filtros-salvos-criar">Salvar</button>
+          </div>
+        </div>
         <button type="button" class="btn btn--secondary filtros-painel__fechar" id="questoes-filtros-fechar">Fechar</button>
       </div>
       <div id="questoes-hierarquia" class="content-tree" style="margin-top:16px;"></div>
@@ -179,6 +200,11 @@ export async function renderLista(container, _params, query = {}) {
   const filtrosOverlayEl = container.querySelector("#questoes-filtros-overlay");
   const filtrosPainelEl = container.querySelector("#questoes-filtros-painel");
   const filtrosFecharEl = container.querySelector("#questoes-filtros-fechar");
+  const atalhosEstudoEl = container.querySelector(".atalhos-estudo");
+  const filtrosSalvosSelect = container.querySelector("#filtros-salvos-select");
+  const filtrosSalvosRemoverBtn = container.querySelector("#filtros-salvos-remover");
+  const filtrosSalvosNomeInput = container.querySelector("#filtros-salvos-nome");
+  const filtrosSalvosCriarBtn = container.querySelector("#filtros-salvos-criar");
 
   const ROTULOS_STATUS = {
     [STATUS.NAO_RESPONDIDAS]: "Não respondidas",
@@ -201,6 +227,89 @@ export async function renderLista(container, _params, query = {}) {
   });
   filtrosOverlayEl.addEventListener("click", fecharPainelFiltros);
   filtrosFecharEl.addEventListener("click", fecharPainelFiltros);
+
+  // Fase 7 — atalhos de estudo: só aplicam os filtros já existentes (status/
+  // ordenação), sem nenhuma lógica paralela de seleção de questões.
+  atalhosEstudoEl.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-atalho]");
+    if (!btn) return;
+    const atalho = btn.dataset.atalho;
+    if (atalho === "novas") filtroStatus = STATUS.NAO_RESPONDIDAS;
+    else if (atalho === "erros") filtroStatus = STATUS.INCORRETAS;
+    else if (atalho === "recentes") filtroOrdenacao.value = ORDENACAO.RECENTES;
+    renderHierarquia();
+    refazerFiltro();
+  });
+
+  // Fase 7 — filtros salvos: store genérico "filtros_salvos" (mesmo padrão
+  // getItem/setItem/getAll/removeItem já usado por respostas/progresso/prefs).
+  function estadoFiltrosAtual() {
+    return {
+      grandeArea: filtroGrandeArea,
+      especialidade: filtroEspecialidade,
+      temaId: filtroTemaId,
+      banca: filtroBanca.value,
+      ano: filtroAno.value,
+      status: filtroStatus,
+      busca: filtroBusca.value.trim(),
+      ordenacao: filtroOrdenacao.value,
+      qtd: filtroQuantidade.value,
+    };
+  }
+
+  function aplicarEstadoFiltros(estado) {
+    filtroGrandeArea = estado.grandeArea || undefined;
+    filtroEspecialidade = estado.especialidade || undefined;
+    filtroTemaId = estado.temaId || undefined;
+    grandeAreaAberta = filtroGrandeArea || null;
+    especialidadeAberta = filtroEspecialidade || null;
+    filtroBanca.value = estado.banca || "todas";
+    filtroAno.value = estado.ano || "todos";
+    filtroStatus = estado.status || STATUS.TODAS;
+    filtroBusca.value = estado.busca || "";
+    filtroOrdenacao.value = estado.ordenacao || ORDENACAO.RECENTES;
+    filtroQuantidade.value = estado.qtd || "20";
+    tamanhoLote = filtroQuantidade.value === "todas" ? 100 : Number(filtroQuantidade.value);
+    renderHierarquia();
+    refazerFiltro();
+  }
+
+  let filtrosSalvos = [];
+  async function carregarFiltrosSalvos() {
+    filtrosSalvos = await getAll("filtros_salvos");
+    filtrosSalvosSelect.innerHTML =
+      `<option value="">Selecionar um filtro salvo...</option>` +
+      filtrosSalvos.map((f) => `<option value="${escapeHtml(f.id)}">${escapeHtml(f.nome)}</option>`).join("");
+  }
+
+  filtrosSalvosSelect.addEventListener("change", () => {
+    const escolhido = filtrosSalvos.find((f) => f.id === filtrosSalvosSelect.value);
+    filtrosSalvosRemoverBtn.style.display = escolhido ? "inline-flex" : "none";
+    if (escolhido) aplicarEstadoFiltros(escolhido.filtros);
+  });
+
+  filtrosSalvosRemoverBtn.addEventListener("click", async () => {
+    const id = filtrosSalvosSelect.value;
+    if (!id) return;
+    await removeItem("filtros_salvos", id);
+    await carregarFiltrosSalvos();
+    filtrosSalvosRemoverBtn.style.display = "none";
+  });
+
+  filtrosSalvosCriarBtn.addEventListener("click", async () => {
+    const nome = filtrosSalvosNomeInput.value.trim();
+    if (!nome) return;
+    await setItem("filtros_salvos", {
+      id: `fs-${Date.now()}`,
+      nome,
+      criadoEm: new Date().toISOString(),
+      filtros: estadoFiltrosAtual(),
+    });
+    filtrosSalvosNomeInput.value = "";
+    await carregarFiltrosSalvos();
+  });
+
+  carregarFiltrosSalvos();
 
   function filtrosBase() {
     return {
