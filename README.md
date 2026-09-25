@@ -56,25 +56,24 @@ MedConduta/
 │   ├── ai.js                     # cliente do assistente de IA (fala com o Worker)
 │   ├── rag.js                     # busca de contexto por palavra-chave (RAG simples)
 │   ├── areas.js                   # mapa subespecialidade → grande área (Conteúdo + IA)
-│   ├── iaConteudo.js               # geração de temas/flashcards/questões por IA (com autocrítica)
+│   ├── iaConteudo.js               # geração de temas/fluxogramas/questões por IA (com autocrítica)
 │   ├── components/
 │   │   ├── sidebar.js            # navegação lateral e bottom-nav mobile
 │   │   ├── icons.js               # ícones SVG inline
 │   │   └── flowchart.js             # renderização de fluxogramas a partir de JSON
 │   └── views/                        # uma view por seção da navegação
-│       └── conteudo.js (mostra também flashcards e fluxogramas do tema,
-│           via components/flowchart.js), assistente.js, revisao.js,
-│           flashcards.js, questoes.js, planejador.js  → Residência
+│       └── conteudo.js (mostra também fluxogramas do tema,
+│           via components/flowchart.js), assistente.js,
+│           questoes.js, planejador.js  → Residência
 ├── data/                    # todo o conteúdo em JSON, separado do código
 │   ├── temas.json             # resumos de residência + mnemônicos
-│   ├── flashcards.json          # baralhos frente/verso
 │   ├── fluxogramas.json           # fluxos de diagnóstico e tratamento
 │   └── questoes.json                # banco de questões com comentário
 ├── styles/
 │   ├── tokens.css   # cores, tipografia, espaçamento, forma (claro + escuro)
 │   ├── base.css      # reset e tipografia base
 │   ├── layout.css     # sidebar, topbar, bottom-nav, grids responsivos
-│   └── components.css  # cards, badges, flashcards, fluxogramas, etc.
+│   └── components.css  # cards, badges, fluxogramas, etc.
 ├── icons/
 │   ├── icon.svg           # ícone padrão do PWA
 │   └── icon-maskable.svg    # variante com área de segurança para ícones "maskable"
@@ -109,15 +108,15 @@ constante.
   conteúdo do MedConduta (RAG por busca de palavra-chave em `data/temas.json`).
 - **Por tema** (botões na tela de cada tema): "Explicar mais / dar exemplo clínico",
   "Avaliar tema com IA" (crítica do conteúdo existente, aponta desatualizações), "Gerar
-  flashcards com IA" e "Gerar questão de treino".
+  fluxograma com IA" e "Gerar questão de treino".
 - **Criar tema novo com IA** (botão no topo da lista de Conteúdo): gera um tema
   completo (seções, mnemônico, fonte sugerida) a partir de um tópico livre.
 
-Os três últimos (criar tema, gerar flashcards, gerar questão) fazem **duas chamadas**
+Os três últimos (criar tema, gerar fluxograma, gerar questão) fazem **duas chamadas**
 à IA: um rascunho, e uma segunda chamada pedindo que a própria IA revise/corrija
 criticamente o rascunho antes de salvar — por isso demoram uns 10-25 segundos. O
 resultado final é salvo no **IndexedDB do navegador** (não no repositório) e aparece
-mesclado com o conteúdo curado nas telas de Conteúdo/Flashcards/Questões, sempre com
+mesclado com o conteúdo curado nas telas de Conteúdo/Questões, sempre com
 uma etiqueta **"✨ IA"** e, quando houver, a nota da autocrítica. Como fica só no
 IndexedDB, esse conteúdo é local a cada navegador/dispositivo — não é sincronizado nem
 vai para o GitHub Pages automaticamente.
@@ -172,7 +171,7 @@ de prescrição/resumos de cursinho que você adicionar (hoje o RAG busca só em
 ## Backend e login (Cloudflare D1)
 
 A partir desta versão, o MedConduta exige uma conta (e-mail + senha) para usar o app —
-os dados de estudo (progresso, respostas, flashcards, preferências, conteúdo gerado por
+os dados de estudo (progresso, respostas, preferências, conteúdo gerado por
 IA) deixaram de ficar só no IndexedDB do navegador e passaram a ser salvos num banco
 compartilhado, acessível de qualquer aparelho. Isso usa o mesmo Worker Cloudflare do
 assistente de IA, agora também com um banco **D1** (SQLite gerenciado, plano gratuito) e
@@ -205,9 +204,9 @@ conexão — o app não abre além dela, já que agora a autenticação é obrig
 
 Cada usuário tem sua própria senha (hash PBKDF2 com salt aleatório, nunca salva em
 texto puro) e seus próprios dados — os mesmos "compartimentos" que já existiam no
-IndexedDB (`srs`, `prefs`, `progresso`, `respostas`, `ia_temas`, `ia_flashcards`,
+IndexedDB (`srs_questoes`, `prefs`, `progresso`, `respostas`, `ia_temas`, `ia_fluxogramas`,
 `ia_questoes`) viraram linhas de uma tabela `records` no D1, uma por usuário. O
-restante do app (telas de Conteúdo, Flashcards, Questões, Revisão, IA) não muda: continua
+restante do app (telas de Conteúdo, Questões, IA) não muda: continua
 chamando as mesmas funções de `app/db.js`, que por baixo agora fala com o Worker em vez
 do IndexedDB.
 
@@ -245,12 +244,10 @@ Depois acesse `http://localhost:PORTA/`.
 ## Como adicionar conteúdo novo
 
 Todo o conteúdo vive em `/data/*.json` — não é necessário mexer em JavaScript para
-adicionar um tema, flashcard, fluxograma ou questão.
+adicionar um tema, fluxograma ou questão.
 
 - **Novo tema de residência**: adicione um objeto em `data/temas.json` seguindo o
   formato existente (`secoes`, `mnemonicos`, `revisado`, `fonte`).
-- **Novo baralho/flashcards**: adicione em `data/flashcards.json`, associando
-  `temaId` ao tema correspondente quando fizer sentido.
 - **Novo fluxograma**: em `data/fluxogramas.json`. Cada nó tem um `tipo`
   (`start`, `action`, `decisao`, `alerta`, `end`); nós do tipo `decisao` têm um
   array `ramos`, cada ramo com seu próprio sub-fluxo (`fluxo`), permitindo
@@ -263,7 +260,7 @@ Em todos os casos com relevância clínica, **sempre inclua `"revisado": false` 
 
 ## Persistência local
 
-Todo o progresso do usuário (estado de repetição espaçada por flashcard, temas
+Todo o progresso do usuário (estado de repetição espaçada por questão errada, temas
 marcados como estudados, respostas de questões, preferência de tema) é salvo
 localmente via IndexedDB (com fallback automático em `localStorage` caso o navegador
 não suporte). Nada é enviado a servidor algum — o app funciona 100% no dispositivo do

@@ -4,7 +4,7 @@
  * Nada de pontos, níveis ou moedas — só o essencial pra reforçar o hábito
  * de estudar todo dia: sequência de dias ativos (streak) e tempo total em
  * sessões de foco. "Dia ativo" conta qualquer estudo real (responder
- * questão, concluir tema, revisar flashcard/erro, ou uma sessão de Modo
+ * questão, concluir tema, revisar erro, ou uma sessão de Modo
  * Foco) — não exige ter usado o temporizador.
  */
 

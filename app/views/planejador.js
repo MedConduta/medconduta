@@ -111,7 +111,7 @@ export async function renderPlanejador(container) {
       </div>
       ${
         plano.minutosOciosos >= 10
-          ? `<p class="page-header__desc" style="margin-top:16px;">Sobraram ~${plano.minutosOciosos} min no seu tempo disponível — aproveite para revisar flashcards já estudados ou ler um fluxograma.</p>`
+          ? `<p class="page-header__desc" style="margin-top:16px;">Sobraram ~${plano.minutosOciosos} min no seu tempo disponível — aproveite para revisar um tema do Curso ou ler um fluxograma.</p>`
           : ""
       }
     `;

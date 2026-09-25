@@ -113,9 +113,9 @@ const { chromium } = require("playwright");
     Array.isArray(revisoesApos2Ciclos) && ["3d", "5d", "7d", "15d", "30d"].every((t) => revisoesApos2Ciclos.some((r) => r.tipo === t))
   );
 
-  // --- 6) Voltar ao Curso: a etapa "Resumo" do item marcado aparece concluída (as 3 etapas —
-  // resumo/questões/flashcards — são independentes: só marcar o resumo não fecha o tema em 100%
-  // se ele também tiver questões/flashcards vinculados, por design — ver seção 6/10 do pedido).
+  // --- 6) Voltar ao Curso: a etapa "Resumo" do item marcado aparece concluída (as 2 etapas —
+  // resumo/questões — são independentes: só marcar o resumo não fecha o tema em 100%
+  // se ele também tiver questões vinculadas, por design — ver seção 6/10 do pedido).
   await page.evaluate(() => { location.hash = "/residencia/curso"; });
   await page.waitForFunction(() => document.querySelector(".main__container")?.textContent.includes("Progresso do curso"), { timeout: 15000 });
   const primeiroItemTexto = await page.$eval(".content-tree [data-item]", (el) => el.textContent);

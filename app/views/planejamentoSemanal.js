@@ -1,18 +1,18 @@
-import { escapeHtml } from "../utils.js";
 import { getPlanejamentoSemanal } from "../planejamentoSemanal.js";
 
 /**
- * Fase 15 — Planejamento Semanal: visão intermediária entre "Hoje" (a fila
- * de um dia) e o Cronograma (as fases até a prova) — quanto dá pra avançar
- * nos próximos 7 dias, no ritmo já configurado em "Hoje", e o quanto já foi
- * feito.
+ * Planejamento Semanal: o que fazer NESTA semana, direto do cronograma real
+ * do Curso — aulas a ler/ver, questões dos temas da semana e revisões do
+ * ciclo do Curso agendadas pra cair dentro dela (ver planejamentoSemanal.js).
  */
 export async function renderPlanejamentoSemanal(container) {
   container.innerHTML = `<div class="main__container"><div class="empty-state">Montando seu planejamento da semana...</div></div>`;
 
   const p = await getPlanejamentoSemanal();
-  const progressoTemas = p.metaTemasNovos ? Math.min(100, Math.round((p.temasConcluidosSemana / p.metaTemasNovos) * 100)) : null;
-  const progressoQuestoes = p.metaBlocosQuestoes ? Math.min(100, Math.round((p.questoesRespondidasSemana / (p.metaBlocosQuestoes * 5)) * 100)) : null;
+  const progressoAulas = p.aulasTotal ? Math.round((p.aulasConcluidas / p.aulasTotal) * 100) : null;
+  const progressoQuestoes = p.questoesMetaTemas ? Math.round((p.questoesFeitasTemas / p.questoesMetaTemas) * 100) : null;
+
+  const periodo = p.semana?.dataInicio ? formatarPeriodo(p.semana.dataInicio) : null;
 
   container.innerHTML = `
     <div class="main__container">
@@ -20,44 +20,43 @@ export async function renderPlanejamentoSemanal(container) {
         <div class="page-header__eyebrow">Residência — Planejamento Semanal</div>
         <h1>Sua semana</h1>
         <p class="page-header__desc">
-          ${p.fase.id ? `Fase atual: <strong>${escapeHtml(p.fase.nome)}</strong>. ` : ""}
-          Meta projetada com base nas ${p.horasSalvas}h/dia configuradas em <a href="#/residencia/planejador">Hoje</a> — não é uma cobrança, é só um norte pra semana.
+          ${
+            p.semana
+              ? `Semana ${p.semana.numero} do <a href="#/residencia/curso">Curso</a>${periodo ? ` (${periodo})` : ""} — o que falta ler, praticar e revisar até ela fechar.`
+              : `Ainda sem cronograma do Curso disponível — veja o <a href="#/residencia/curso">Curso</a> pra começar.`
+          }
         </p>
       </div>
 
-      <h3>Meta da semana × já feito</h3>
+      <h3>Sua semana × já feito</h3>
       <div class="plan-queue" style="margin-bottom:24px;">
         <div class="card">
           <div class="list-card__top">
-            <strong>Temas novos</strong>
-            <span class="badge badge--accent">${p.temasConcluidosSemana} / ${p.metaTemasNovos}</span>
+            <strong>Aulas</strong>
+            <span class="badge badge--accent">${p.aulasConcluidas} / ${p.aulasTotal}</span>
           </div>
-          ${renderBarraProgresso(progressoTemas)}
+          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">Temas programados pra esta semana no Curso.</p>
+          ${renderBarraProgresso(progressoAulas)}
         </div>
         <div class="card">
           <div class="list-card__top">
             <strong>Questões</strong>
-            <span class="badge badge--accent">${p.questoesRespondidasSemana} / ${p.metaBlocosQuestoes * 5}</span>
+            <span class="badge badge--accent">${p.questoesFeitasTemas} / ${p.questoesMetaTemas}</span>
           </div>
+          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">Temas da semana com questões já praticadas.</p>
           ${renderBarraProgresso(progressoQuestoes)}
         </div>
-        <div class="card">
+        <a class="card card--interactive" href="#/residencia/curso" style="text-decoration:none;color:inherit;">
           <div class="list-card__top">
-            <strong>Modo Foco</strong>
+            <strong>Revisões</strong>
+            <span class="badge${p.revisoesCursoSemana > 0 ? " badge--warning" : ""}">${p.revisoesCursoSemana}</span>
           </div>
-          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">${p.horasFocoSemana}h nos últimos 7 dias.</p>
-        </div>
+          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">Ciclo de revisão do Curso (3/5/7/15/30 dias) agendado pra cair nesta semana.</p>
+        </a>
       </div>
 
       <h3>Vencendo esta semana</h3>
       <div class="plan-queue">
-        <a class="card card--interactive" href="#/residencia/revisao" style="text-decoration:none;color:inherit;">
-          <div class="list-card__top">
-            <strong>Flashcards</strong>
-            <span class="badge${p.flashcardsVencendoSemana > 0 ? " badge--warning" : ""}">${p.flashcardsVencendoSemana}</span>
-          </div>
-          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">Já vencidos ou vencendo nos próximos 7 dias.</p>
-        </a>
         <a class="card card--interactive" href="#/residencia/erros" style="text-decoration:none;color:inherit;">
           <div class="list-card__top">
             <strong>Questões erradas (revisão)</strong>
@@ -76,10 +75,18 @@ export async function renderPlanejamentoSemanal(container) {
 }
 
 function renderBarraProgresso(percentual) {
-  if (percentual === null) return `<p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Sem meta nesta fase.</p>`;
+  if (percentual === null) return `<p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">Nada programado nesta semana.</p>`;
   return `
     <div style="background:var(--color-border);border-radius:999px;height:8px;margin-top:12px;overflow:hidden;">
-      <div style="background:var(--color-accent);height:100%;width:${percentual}%;border-radius:999px;"></div>
+      <div style="background:var(--color-accent);height:100%;width:${Math.min(100, percentual)}%;border-radius:999px;"></div>
     </div>
   `;
+}
+
+function formatarPeriodo(dataInicioIso) {
+  const [ano, mes, dia] = dataInicioIso.split("-").map(Number);
+  const inicio = new Date(ano, mes - 1, dia);
+  const fim = new Date(ano, mes - 1, dia + 6);
+  const fmt = (d) => `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}`;
+  return `${fmt(inicio)} – ${fmt(fim)}`;
 }

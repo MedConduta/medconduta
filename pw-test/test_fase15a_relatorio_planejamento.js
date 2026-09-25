@@ -40,20 +40,21 @@ const { chromium } = require("playwright");
   await page.waitForFunction(() => document.querySelector(".main__container")?.textContent.includes("Sua semana"), { timeout: 15000 });
   texto = await page.$eval(".main__container", (el) => el.textContent);
   console.log("Planejamento Semanal — usuário novo carrega sem quebrar:", texto.includes("Sua semana"));
-  console.log("Planejamento Semanal — mostra meta de temas novos:", texto.includes("Temas novos"));
-  console.log("Planejamento Semanal — mostra meta de questões:", texto.includes("Questões"));
-  console.log("Planejamento Semanal — mostra vencendo esta semana (flashcards):", texto.includes("Flashcards"));
+  console.log("Planejamento Semanal — amarrado à semana do Curso:", texto.includes("do Curso"));
+  console.log("Planejamento Semanal — mostra card de Aulas:", texto.includes("Aulas"));
+  console.log("Planejamento Semanal — mostra card de Questões:", texto.includes("Questões"));
+  console.log("Planejamento Semanal — mostra card de Revisões (ciclo do Curso):", texto.includes("Revisões"));
+  console.log("Planejamento Semanal — não menciona mais flashcards:", !texto.includes("Flashcard") && !texto.includes("flashcard"));
   console.log("Item 'Planejamento Semanal' presente na sidebar:", !!(await page.$('a[href="#/residencia/planejamento-semanal"].nav-link')));
 
-  // Usuário novo: os 158 flashcards do banco (todos "vencidos" por falta de SRS) devem aparecer na contagem de vencendo
-  const badgeFlashcards = await page.$eval('a[href="#/residencia/revisao"] .badge', (el) => el.textContent.trim());
-  console.log("Planejamento Semanal — contagem de flashcards vencendo é 158 (banco completo, usuário novo):", badgeFlashcards === "158");
-
-  // --- Atalhos em Minha Preparação ---
+  // Minha Preparação virou um dashboard analítico (sem lista de atalhos) —
+  // Planejamento Semanal e Relatório Semanal ficam descobríveis só pela
+  // sidebar (já testado acima), então só confirmamos que a página em si
+  // renderiza sem quebrar.
   await page.evaluate(() => { location.hash = "/residencia/minha-preparacao"; });
   await page.waitForSelector(".main__container", { timeout: 10000 });
-  console.log("Atalho 'Planejamento Semanal' presente em Minha Preparação:", !!(await page.$('a[href="#/residencia/planejamento-semanal"]')));
-  console.log("Atalho 'Relatório Semanal' presente em Minha Preparação:", !!(await page.$('a[href="#/residencia/relatorio-semanal"]')));
+  await page.waitForFunction(() => document.querySelector(".main__container")?.textContent.includes("Agenda de hoje"), { timeout: 15000 });
+  console.log("Minha Preparação (dashboard) renderiza sem quebrar:", true);
 
   // --- Testa o botão de comentário IA (real, via Worker local + Gemini) ---
   await page.evaluate(() => { location.hash = "/residencia/relatorio-semanal"; });

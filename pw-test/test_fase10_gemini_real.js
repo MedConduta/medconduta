@@ -58,38 +58,38 @@ const { chromium } = require("playwright");
   console.log("Total de respostas de IA no chat:", respostasIA.length);
   console.log("As duas respostas são idênticas (veio do cache):", respostasIA.length === 2 && respostasIA[0] === respostasIA[1]);
 
-  // --- 4) gerarFlashcardsComIA real: gera uma vez, gera de novo, confirma que é o MESMO deck (sem duplicar)
-  const resultadoFlashcards = await page.evaluate(async () => {
-    const { gerarFlashcardsComIA } = await import("/app/iaConteudo.js");
+  // --- 4) gerarFluxogramaComIA real: gera uma vez, gera de novo, confirma que é o MESMO fluxograma (sem duplicar)
+  const resultadoFluxograma = await page.evaluate(async () => {
+    const { gerarFluxogramaComIA } = await import("/app/iaConteudo.js");
     const { getAll } = await import("/app/db.js");
     const temaTeste = {
       id: "tema-teste-fase10-real",
       titulo: "Hipertensão Arterial Sistêmica (teste Fase 10)",
       categoria: "Cardiologia",
-      resumo: "Tema de teste pra validar dedup de geração de flashcards.",
+      resumo: "Tema de teste pra validar dedup de geração de fluxograma.",
       secoes: [{ titulo: "Definição", conteudo: "PA >= 140/90 mmHg em duas medidas." }],
       mnemonicos: [],
     };
     const t0 = Date.now();
-    const deck1 = await gerarFlashcardsComIA(temaTeste);
+    const fluxo1 = await gerarFluxogramaComIA(temaTeste);
     const t1 = Date.now();
-    const deck2 = await gerarFlashcardsComIA(temaTeste);
+    const fluxo2 = await gerarFluxogramaComIA(temaTeste);
     const t2 = Date.now();
-    const todos = await getAll("ia_flashcards");
-    const decksDoTema = todos.filter((d) => d.temaId === temaTeste.id);
+    const todos = await getAll("ia_fluxogramas");
+    const fluxosDoTema = todos.filter((f) => f.temaId === temaTeste.id);
     return {
       duracao1: t1 - t0,
       duracao2: t2 - t1,
-      mesmoId: deck1.id === deck2.id,
-      totalCards1: deck1.cards.length,
-      decksDoTemaNoStore: decksDoTema.length,
+      mesmoId: fluxo1.id === fluxo2.id,
+      totalNos1: fluxo1.fluxo.length,
+      fluxosDoTemaNoStore: fluxosDoTema.length,
     };
   });
-  console.log(`Gerar flashcards 1ª vez: ${resultadoFlashcards.duracao1}ms (chamada real, gera ${resultadoFlashcards.totalCards1} cards)`);
-  console.log(`Gerar flashcards 2ª vez (mesmo tema): ${resultadoFlashcards.duracao2}ms (deve ser quase instantâneo)`);
-  console.log("2ª chamada devolveu o MESMO deck (id idêntico):", resultadoFlashcards.mesmoId);
-  console.log("Só existe 1 deck de IA pra esse tema no store (sem duplicar):", resultadoFlashcards.decksDoTemaNoStore === 1);
-  console.log("2ª chamada foi muito mais rápida (não recriou, não chamou Gemini de novo):", resultadoFlashcards.duracao2 < resultadoFlashcards.duracao1 / 3);
+  console.log(`Gerar fluxograma 1ª vez: ${resultadoFluxograma.duracao1}ms (chamada real, gera ${resultadoFluxograma.totalNos1} nós)`);
+  console.log(`Gerar fluxograma 2ª vez (mesmo tema): ${resultadoFluxograma.duracao2}ms (deve ser quase instantâneo)`);
+  console.log("2ª chamada devolveu o MESMO fluxograma (id idêntico):", resultadoFluxograma.mesmoId);
+  console.log("Só existe 1 fluxograma de IA pra esse tema no store (sem duplicar):", resultadoFluxograma.fluxosDoTemaNoStore === 1);
+  console.log("2ª chamada foi muito mais rápida (não recriou, não chamou Gemini de novo):", resultadoFluxograma.duracao2 < resultadoFluxograma.duracao1 / 3);
 
   // --- 5) gerarQuestaoComIA real: gera duas vezes pro MESMO tema, confirma que são questões DIFERENTES
   const resultadoQuestoes = await page.evaluate(async () => {

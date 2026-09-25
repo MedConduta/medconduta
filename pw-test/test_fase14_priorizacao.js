@@ -47,7 +47,7 @@ const { chromium } = require("playwright");
   // loading) antes de navegar — senão essa renderização mais lenta pode
   // terminar depois e sobrescrever a página seguinte (race condition do
   // roteador entre navegações rápidas e renders lentos concorrentes).
-  await page.waitForFunction(() => document.querySelector(".main__container")?.textContent.includes("Atalhos"), { timeout: 15000 });
+  await page.waitForFunction(() => document.querySelector(".main__container")?.textContent.includes("Agenda de hoje"), { timeout: 15000 });
   await page.evaluate(() => { location.hash = "/residencia/cronograma"; });
   await page.waitForFunction(() => document.querySelector("#prova-alvo")?.value, { timeout: 10000 });
   console.log("Prova-alvo persiste após navegar (ENAMED):", await page.$eval("#prova-alvo", (el) => el.value) === "ENAMED");

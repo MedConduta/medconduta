@@ -6,7 +6,7 @@ import { marcarRevisaoConcluida } from "../revisaoCurso.js";
  * Curso — gerenciador de estudos sobre o cronograma real (ver app/curriculo.js
  * e app/revisaoCurso.js): dashboard, agenda de Hoje (atrasadas/hoje/conteúdo
  * novo) e a grade por semana, com busca/filtro. Cada tema aqui é só um link
- * pro conteúdo que já existe em Conteúdo/Questões/Flashcards — nada é
+ * pro conteúdo que já existe em Conteúdo/Questões — nada é
  * duplicado, só organizado.
  */
 export async function renderCurso(container) {
@@ -61,7 +61,7 @@ export async function renderCurso(container) {
 
   function statusDoItem(item) {
     if (item.percentual === 100) return "concluido";
-    if (item.resumoConcluido || item.questoesFeitas || item.flashcardsEstudados) return "em-andamento";
+    if (item.resumoConcluido || item.questoesFeitas) return "em-andamento";
     return "nao-iniciado";
   }
 
@@ -251,7 +251,6 @@ function renderItem(item) {
         <span style="display:flex;gap:10px;font-size:var(--fs-xs);color:var(--color-text-secondary);white-space:nowrap;">
           ${etapa(true, item.resumoConcluido, "Resumo")}
           ${etapa(item.temQuestoes, item.questoesFeitas, "Questões")}
-          ${etapa(item.temFlashcards, item.flashcardsEstudados, "Flashcards")}
         </span>
       </a>
     </li>

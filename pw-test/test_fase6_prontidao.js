@@ -56,8 +56,6 @@ const { chromium } = require("playwright");
   // --- 4) Smoke test geral
   const rotas = [
     "/residencia/conteudo",
-    "/residencia/revisao",
-    "/residencia/flashcards",
     "/residencia/questoes",
     "/residencia/erros",
     "/residencia/planejador",

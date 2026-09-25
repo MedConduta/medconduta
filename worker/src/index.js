@@ -11,7 +11,7 @@
  *    combinados com o usuário): registro/login por e-mail+senha, sessão via
  *    token opaco, e um armazenamento chave-valor por usuário (tabela
  *    `records`) que espelha os mesmos "stores" que existiam no IndexedDB do
- *    navegador (srs, prefs, progresso, respostas, ia_temas, ia_flashcards,
+ *    navegador (srs_questoes, prefs, progresso, respostas, ia_temas, ia_fluxogramas,
  *    ia_questoes) — troca só *onde* o dado mora (agora no D1, multi-
  *    dispositivo), não o formato do dado. Um modelo de dados mais rico
  *    (cronograma, tentativas de questão, metadados de prioridade dos temas)
@@ -34,7 +34,7 @@ clínica. Você tem dois papéis, conforme a TAREFA indicada:
    diga isso explicitamente e recomende conferir a fonte oficial — nunca invente doses, condutas ou
    referências bibliográficas.
 
-2) Criador de conteúdo: quando a TAREFA pedir para gerar um tema, flashcards ou uma questão, produza
+2) Criador de conteúdo: quando a TAREFA pedir para gerar um tema, fluxograma ou uma questão, produza
    conteúdo tecnicamente correto e atualizado, no formato JSON exato solicitado no prompt, sem texto fora
    do JSON. Quando pedirem uma autocrítica de um rascunho já gerado, revise com rigor (precisão clínica,
    atualidade, clareza) e devolva a versão corrigida no mesmo formato.

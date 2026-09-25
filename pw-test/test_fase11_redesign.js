@@ -30,8 +30,12 @@ const { chromium } = require("playwright");
   console.log("Tela inicial mostra 'Minha Preparação':", texto.includes("Minha Preparação"));
   console.log("Mostra Índice de Prontidão:", texto.includes("Índice de Prontidão"));
   console.log("Mostra 'Agenda de hoje' com CTA:", texto.includes("Agenda de hoje") && texto.includes("Ver agenda de hoje"));
-  console.log("Mostra atalhos (Cronograma, Prontidão, Simulados, Meus Erros, Modo Foco):",
-    ["Cronograma", "Prontidão", "Simulados", "Meus Erros", "Modo Foco"].every((t) => texto.includes(t)));
+  // Minha Preparação virou um dashboard analítico (sem lista de atalhos) —
+  // a navegação pras demais telas fica só pela sidebar/bottom-nav.
+  console.log("Não mostra mais a lista de atalhos (Cronograma/Simulados/Meus Erros/Modo Foco como cards):",
+    !["Cronograma", "Simulados", "Meus Erros", "Modo Foco"].every((t) => texto.includes(t)));
+  console.log("Mostra o dashboard analítico (Progresso do Curso, semana atual, gráfico semanal):",
+    texto.includes("Progresso do Curso") && texto.includes("sua semana atual") && texto.includes("Progresso semana a semana"));
 
   // --- 2) Navegação reorganizada: 3 seções na sidebar
   const secoes = await page.$$eval(".nav-section__title", (els) => els.map((e) => e.textContent.trim()));
@@ -59,8 +63,6 @@ const { chromium } = require("playwright");
     "/residencia/minha-preparacao",
     "/residencia/conteudo",
     "/residencia/assistente",
-    "/residencia/revisao",
-    "/residencia/flashcards",
     "/residencia/questoes",
     "/residencia/erros",
     "/residencia/simulados",

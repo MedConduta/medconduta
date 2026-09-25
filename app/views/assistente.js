@@ -17,7 +17,7 @@ export async function renderAssistente(container) {
         <div class="page-header__eyebrow">Residência — Assistente IA</div>
         <h1>Assistente de estudo</h1>
         <p class="page-header__desc">
-          Responde com base no conteúdo do MedConduta (RAG). Também é quem gera temas, flashcards e
+          Responde com base no conteúdo do MedConduta (RAG). Também é quem gera temas, fluxogramas e
           questões novas (veja os botões de IA em cada tema, em <a href="#/residencia/conteudo">Conteúdo</a>).
           <strong>Sempre confira respostas em fonte oficial</strong> — é uma ferramenta de apoio, não uma
           fonte de verdade clínica.

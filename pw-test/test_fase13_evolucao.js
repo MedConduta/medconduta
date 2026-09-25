@@ -34,7 +34,11 @@ const { chromium } = require("playwright");
 
   // --- 1) Link de acesso a partir de "Minha Preparação"
   await page.evaluate(() => { location.hash = "/residencia/minha-preparacao"; });
-  await page.waitForSelector(".main__container", { timeout: 10000 });
+  // Espera o render assíncrono terminar de verdade (não só o placeholder de
+  // loading) antes de interagir — senão essa renderização mais lenta pode
+  // terminar depois e sobrescrever a página seguinte (race condition do
+  // roteador entre navegações rápidas e renders lentos concorrentes).
+  await page.waitForFunction(() => document.querySelector(".main__container")?.textContent.includes("Agenda de hoje"), { timeout: 15000 });
   const linkDesempenho = await page.$('a[href="#/residencia/desempenho"]');
   console.log("Atalho 'Desempenho' presente em Minha Preparação:", !!linkDesempenho);
   await linkDesempenho.click();

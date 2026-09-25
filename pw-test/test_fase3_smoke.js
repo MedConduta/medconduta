@@ -23,8 +23,6 @@ const { chromium } = require("playwright");
 
   const rotas = [
     "/residencia/conteudo",
-    "/residencia/revisao",
-    "/residencia/flashcards",
     "/residencia/questoes",
     "/residencia/planejador",
   ];

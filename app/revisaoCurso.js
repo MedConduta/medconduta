@@ -1,6 +1,6 @@
 /**
- * MedConduta — Curso: revisão espaçada por TEMA (não por flashcard/questão,
- * ver sm2.js/erros.js), ancorada na data real em que o usuário marcou o tema
+ * MedConduta — Curso: revisão espaçada por TEMA (não por questão, ver
+ * sm2.js/erros.js), ancorada na data real em que o usuário marcou o tema
  * como estudado (progresso.atualizadoEm, já gravado por marcarConcluido em
  * app/views/conteudo.js) — nunca na data programada do cronograma.
  *
