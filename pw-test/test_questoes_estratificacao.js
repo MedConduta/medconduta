@@ -23,33 +23,32 @@ const { chromium } = require("playwright");
   await page.waitForTimeout(800);
 
   await page.evaluate(() => { location.hash = "/residencia/questoes"; });
-  await page.waitForSelector("#questoes-hierarquia .content-area", { timeout: 20000 });
+  await page.waitForSelector("#filtro-grande-area", { timeout: 20000 });
   await page.waitForTimeout(300);
 
-  // --- 1) Nenhuma grande área "Outros" aparece mais na árvore (estratificação corrigida).
-  const areas = await page.$$eval("#questoes-hierarquia .content-area__title span:first-child", (els) => els.map((e) => e.textContent.trim()));
-  console.log("Grande áreas reais na árvore:", areas);
+  // --- 1) Nenhuma grande área "Outros" aparece mais no select (estratificação corrigida).
+  const areas = await page.$$eval("#filtro-grande-area option", (els) => els.map((e) => e.textContent.trim()).filter(Boolean));
+  console.log("Grande áreas reais no select:", areas);
   console.log("Nenhuma área é 'Outros':", !areas.some((a) => a.includes("Outros")));
 
-  // --- 2) O total de questões na árvore bate com o total geral (nenhuma questão "perdida").
+  // --- 2) O total de questões bate com o total geral (nenhuma questão "perdida").
   const totalGeral = await page.$eval('#questoes-stats [data-status="todas"] .stat-tile__value', (el) => Number(el.textContent));
   console.log("Total geral de questões:", totalGeral);
   console.log("Total é bem maior que antes da correção (>27000):", totalGeral > 27000);
 
   // --- 3) Hepatologia agora aparece dentro de Clínica Médica (antes caía em "Outros").
-  // "Clínica Médica" é a primeira grande área na ordem definida em app/areas.js.
-  await page.click("#questoes-hierarquia .content-area__title");
+  const rotuloClinica = areas.find((a) => a.includes("Clínica Médica"));
+  await page.selectOption("#filtro-grande-area", { label: rotuloClinica });
   await page.waitForTimeout(300);
-  const especialidadesClinica = await page.$$eval("#questoes-hierarquia .content-list__item span:first-child", (els) => els.map((e) => e.textContent.trim()));
+  const especialidadesClinica = await page.$$eval("#filtro-especialidade option", (els) => els.map((e) => e.textContent.trim()).filter(Boolean));
   console.log("Hepatologia aparece dentro de Clínica Médica:", especialidadesClinica.some((e) => e.includes("Hepatologia")));
 
   // --- 4) Um tema recém-criado (ex.: Parada Cardiorrespiratória) tem questões de verdade associadas.
-  const idxCardio = especialidadesClinica.findIndex((e) => e.includes("Cardiologia"));
-  if (idxCardio >= 0) {
-    const botoesEspecialidade = await page.$$("#questoes-hierarquia .content-list__item");
-    await botoesEspecialidade[idxCardio].click();
+  const rotuloCardio = especialidadesClinica.find((e) => e.includes("Cardiologia"));
+  if (rotuloCardio) {
+    await page.selectOption("#filtro-especialidade", { label: rotuloCardio });
     await page.waitForTimeout(300);
-    const temas = await page.$$eval("#questoes-hierarquia .content-list .content-list__item span:first-child", (els) => els.map((e) => e.textContent.trim()));
+    const temas = await page.$$eval("#filtro-tema option", (els) => els.map((e) => e.textContent.trim()).filter(Boolean));
     console.log("Tema novo 'Parada Cardiorrespiratória' aparece com questões:", temas.some((t) => t.includes("Parada Cardiorrespiratória")));
   }
 

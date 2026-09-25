@@ -88,7 +88,9 @@ const { chromium } = require("playwright");
   await page.waitForTimeout(200);
   await page.click('#questoes-stats [data-status="respondidas"]');
   await page.waitForTimeout(200);
-  const areaComRespondida = await page.$$eval("#questoes-hierarquia .content-area", (els) => els.filter((el) => Number(el.querySelector(".content-area__count").textContent) > 0).length);
+  const areaComRespondida = await page.$$eval("#filtro-grande-area option", (els) =>
+    els.filter((el) => el.value && Number((el.textContent.match(/\((\d+)\)$/) || [])[1] || 0) > 0).length
+  );
   console.log("Contagem por grande área respeita o filtro de status (só 1 área com >0):", areaComRespondida === 1);
 
   console.log("Erros JS capturados:", erros.length ? erros : "nenhum");

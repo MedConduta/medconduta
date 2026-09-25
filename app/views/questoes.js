@@ -63,8 +63,6 @@ export async function renderLista(container, _params, query = {}) {
   let filtroEspecialidade;
   let filtroTemaId;
   let filtroStatus = STATUS.TODAS;
-  let grandeAreaAberta = null;
-  let especialidadeAberta = null;
   let bancaInicial = "todas";
   let anoInicial = "todos";
   let buscaInicial = "";
@@ -74,8 +72,6 @@ export async function renderLista(container, _params, query = {}) {
   if (query.categoria && especialidadesDe(indice).includes(query.categoria)) {
     filtroEspecialidade = query.categoria;
     filtroGrandeArea = [...indice.questoesPorId.values()].find((q) => q.especialidade === query.categoria)?.grandeArea;
-    grandeAreaAberta = filtroGrandeArea;
-    especialidadeAberta = filtroEspecialidade;
     if (query.tema) {
       const match = temasDe(indice, filtroEspecialidade).find(([, titulo]) => titulo === query.tema);
       if (match) filtroTemaId = match[0];
@@ -87,13 +83,10 @@ export async function renderLista(container, _params, query = {}) {
       filtroTemaId = query.temaId;
       filtroEspecialidade = q.especialidade;
       filtroGrandeArea = q.grandeArea;
-      grandeAreaAberta = filtroGrandeArea;
-      especialidadeAberta = filtroEspecialidade;
     }
   }
   if (!filtroGrandeArea && query.area && indice.grandeAreas.includes(query.area)) {
     filtroGrandeArea = query.area;
-    grandeAreaAberta = query.area;
   }
   if (query.banca && indice.bancas.includes(query.banca)) bancaInicial = query.banca;
   if (query.ano && indice.anos.includes(Number(query.ano))) anoInicial = query.ano;
@@ -101,6 +94,8 @@ export async function renderLista(container, _params, query = {}) {
   if (query.busca) buscaInicial = query.busca;
   if (query.ordenacao && Object.values(ORDENACAO).includes(query.ordenacao)) ordenacaoInicial = query.ordenacao;
   if (query.qtd && ["10", "20", "30", "40", "50", "100", "todas"].includes(query.qtd)) qtdInicial = query.qtd;
+  let paginaInicial = 1;
+  if (query.pagina && /^\d+$/.test(query.pagina) && Number(query.pagina) > 0) paginaInicial = Number(query.pagina);
 
   container.innerHTML = `
     <div class="main__container">
@@ -124,6 +119,24 @@ export async function renderLista(container, _params, query = {}) {
           <input type="search" id="filtro-busca" placeholder="Ex.: hipertensão, IAM, dengue..." value="${escapeHtml(buscaInicial)}" />
         </div>
         <div class="filtros-grid">
+          <div class="field">
+            <label for="filtro-grande-area">Área</label>
+            <select id="filtro-grande-area">
+              <option value="">Todas as áreas</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="filtro-especialidade">Especialidade</label>
+            <select id="filtro-especialidade" disabled>
+              <option value="">Todas as especialidades</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="filtro-tema">Tema</label>
+            <select id="filtro-tema" disabled>
+              <option value="">Todos os temas</option>
+            </select>
+          </div>
           <div class="field">
             <label for="filtro-banca">Banca</label>
             <select id="filtro-banca">
@@ -175,22 +188,21 @@ export async function renderLista(container, _params, query = {}) {
         </div>
         <button type="button" class="btn btn--secondary filtros-painel__fechar" id="questoes-filtros-fechar">Fechar</button>
       </div>
-      <div id="questoes-hierarquia" class="content-tree" style="margin-top:16px;"></div>
       <p id="questoes-contagem" class="page-header__desc" style="margin-top:16px;"></p>
       <div id="questoes-lista" class="plan-queue"></div>
-      <div id="questoes-sentinela" style="height:1px;"></div>
-      <p id="questoes-carregando-mais" class="empty-state" style="display:none;">Carregando mais questões...</p>
+      <div id="questoes-paginacao" class="paginacao"></div>
     </div>
   `;
 
   const statsEl = container.querySelector("#questoes-stats");
-  const hierarquiaEl = container.querySelector("#questoes-hierarquia");
   const breadcrumbEl = container.querySelector("#questoes-breadcrumb");
   const chipsEl = container.querySelector("#questoes-chips");
   const listaEl = container.querySelector("#questoes-lista");
   const contagemEl = container.querySelector("#questoes-contagem");
-  const carregandoMaisEl = container.querySelector("#questoes-carregando-mais");
-  const sentinelaEl = container.querySelector("#questoes-sentinela");
+  const paginacaoEl = container.querySelector("#questoes-paginacao");
+  const selectGrandeArea = container.querySelector("#filtro-grande-area");
+  const selectEspecialidade = container.querySelector("#filtro-especialidade");
+  const selectTema = container.querySelector("#filtro-tema");
   const filtroBanca = container.querySelector("#filtro-banca");
   const filtroAno = container.querySelector("#filtro-ano");
   const filtroBusca = container.querySelector("#filtro-busca");
@@ -214,7 +226,7 @@ export async function renderLista(container, _params, query = {}) {
   };
 
   let idsFiltrados = [];
-  let renderizados = 0;
+  let paginaAtual = paginaInicial;
   let tamanhoLote = qtdInicial === "todas" ? 100 : Number(qtdInicial);
 
   function fecharPainelFiltros() {
@@ -261,8 +273,6 @@ export async function renderLista(container, _params, query = {}) {
     filtroGrandeArea = estado.grandeArea || undefined;
     filtroEspecialidade = estado.especialidade || undefined;
     filtroTemaId = estado.temaId || undefined;
-    grandeAreaAberta = filtroGrandeArea || null;
-    especialidadeAberta = filtroEspecialidade || null;
     filtroBanca.value = estado.banca || "todas";
     filtroAno.value = estado.ano || "todos";
     filtroStatus = estado.status || STATUS.TODAS;
@@ -322,7 +332,6 @@ export async function renderLista(container, _params, query = {}) {
 
   function limparTudo() {
     filtroGrandeArea = filtroEspecialidade = filtroTemaId = undefined;
-    grandeAreaAberta = especialidadeAberta = null;
     filtroStatus = STATUS.TODAS;
     filtroBanca.value = "todas";
     filtroAno.value = "todos";
@@ -336,7 +345,6 @@ export async function renderLista(container, _params, query = {}) {
         label: `Área: ${filtroGrandeArea}`,
         remover: () => {
           filtroGrandeArea = filtroEspecialidade = filtroTemaId = undefined;
-          grandeAreaAberta = especialidadeAberta = null;
         },
       });
     }
@@ -345,7 +353,6 @@ export async function renderLista(container, _params, query = {}) {
         label: `Especialidade: ${filtroEspecialidade}`,
         remover: () => {
           filtroEspecialidade = filtroTemaId = undefined;
-          especialidadeAberta = null;
         },
       });
     }
@@ -430,63 +437,44 @@ export async function renderLista(container, _params, query = {}) {
     };
   }
 
-  function renderTemas(area, esp) {
-    const filtros = { ...filtrosBase(), grandeArea: area, especialidade: esp };
-    const contagem = contarPorNivel(indice, filtros, "temaId");
-    const itens = temasDe(indice, esp).filter(([id]) => contagem.get(id) > 0);
-    if (!itens.length) return `<p class="empty-state" style="margin:8px 0 0 16px;">Nenhuma questão nesse recorte.</p>`;
-    return `
-      <div class="content-list" style="margin-left:16px;">
-        ${itens
-          .map(
-            ([id, titulo]) => `
-          <button type="button" class="content-list__item" data-tema-id="${escapeHtml(id)}">
-            <span>${id === filtroTemaId ? "✓ " : ""}${escapeHtml(titulo)}</span>
-            <span class="badge">${contagem.get(id)}</span>
-          </button>`
-          )
-          .join("")}
-      </div>`;
-  }
-
-  function renderEspecialidades(area) {
-    const filtros = { ...filtrosBase(), grandeArea: area };
-    const contagem = contarPorNivel(indice, filtros, "especialidade");
-    const itens = especialidadesDe(indice, area).filter((esp) => contagem.get(esp) > 0);
-    if (!itens.length) return `<p class="empty-state" style="margin:8px 0 0 16px;">Nenhuma questão nesse recorte.</p>`;
-    return itens
-      .map((esp) => {
-        const aberta = esp === especialidadeAberta;
-        return `
-        <div class="content-group">
-          <button type="button" class="content-list__item" data-especialidade="${escapeHtml(esp)}">
-            <span>${esp === filtroEspecialidade ? "✓ " : ""}${escapeHtml(esp)}</span>
-            <span class="badge">${contagem.get(esp)}</span>
-          </button>
-          ${aberta ? renderTemas(area, esp) : ""}
-        </div>`;
-      })
-      .join("");
-  }
-
   function renderHierarquia() {
     renderStats();
     renderChips();
+
     const contagemAreas = contarPorNivel(indice, filtrosBase(), "grandeArea");
-    hierarquiaEl.innerHTML = indice.grandeAreas
-      .filter((area) => contagemAreas.get(area) > 0)
-      .map((area) => {
-        const aberta = area === grandeAreaAberta;
-        return `
-        <details class="card content-area" data-grande-area="${escapeHtml(area)}" ${aberta ? "open" : ""}>
-          <summary class="content-area__title">
-            <span>${area === filtroGrandeArea ? "✓ " : ""}${escapeHtml(area)}</span>
-            <span class="badge content-area__count">${contagemAreas.get(area)}</span>
-          </summary>
-          <div data-especialidades>${aberta ? renderEspecialidades(area) : ""}</div>
-        </details>`;
-      })
-      .join("");
+    selectGrandeArea.innerHTML =
+      `<option value="">Todas as áreas</option>` +
+      indice.grandeAreas
+        .filter((area) => contagemAreas.get(area) > 0)
+        .map((area) => `<option value="${escapeHtml(area)}">${escapeHtml(area)} (${contagemAreas.get(area)})</option>`)
+        .join("");
+    selectGrandeArea.value = filtroGrandeArea || "";
+
+    if (filtroGrandeArea) {
+      const contagemEsp = contarPorNivel(indice, { ...filtrosBase(), grandeArea: filtroGrandeArea }, "especialidade");
+      const itensEsp = especialidadesDe(indice, filtroGrandeArea).filter((esp) => contagemEsp.get(esp) > 0);
+      selectEspecialidade.disabled = false;
+      selectEspecialidade.innerHTML =
+        `<option value="">Todas as especialidades</option>` +
+        itensEsp.map((esp) => `<option value="${escapeHtml(esp)}">${escapeHtml(esp)} (${contagemEsp.get(esp)})</option>`).join("");
+      selectEspecialidade.value = filtroEspecialidade || "";
+    } else {
+      selectEspecialidade.disabled = true;
+      selectEspecialidade.innerHTML = `<option value="">Todas as especialidades</option>`;
+    }
+
+    if (filtroGrandeArea && filtroEspecialidade) {
+      const contagemTema = contarPorNivel(indice, { ...filtrosBase(), grandeArea: filtroGrandeArea, especialidade: filtroEspecialidade }, "temaId");
+      const itensTema = temasDe(indice, filtroEspecialidade).filter(([id]) => contagemTema.get(id) > 0);
+      selectTema.disabled = false;
+      selectTema.innerHTML =
+        `<option value="">Todos os temas</option>` +
+        itensTema.map(([id, titulo]) => `<option value="${escapeHtml(id)}">${escapeHtml(titulo)} (${contagemTema.get(id)})</option>`).join("");
+      selectTema.value = filtroTemaId || "";
+    } else {
+      selectTema.disabled = true;
+      selectTema.innerHTML = `<option value="">Todos os temas</option>`;
+    }
 
     const partes = [filtroGrandeArea, filtroEspecialidade, filtroTemaId ? temasDe(indice, filtroEspecialidade).find(([id]) => id === filtroTemaId)?.[1] : null].filter(Boolean);
     if (partes.length) {
@@ -495,7 +483,6 @@ export async function renderLista(container, _params, query = {}) {
       container.querySelector("#questoes-limpar-hierarquia").addEventListener("click", (e) => {
         e.preventDefault();
         filtroGrandeArea = filtroEspecialidade = filtroTemaId = undefined;
-        grandeAreaAberta = especialidadeAberta = null;
         renderHierarquia();
         refazerFiltro();
       });
@@ -504,39 +491,25 @@ export async function renderLista(container, _params, query = {}) {
     }
   }
 
-  hierarquiaEl.addEventListener("click", (e) => {
-    const summaryEl = e.target.closest(".content-area__title");
-    if (summaryEl) {
-      e.preventDefault();
-      const area = summaryEl.closest("[data-grande-area]").dataset.grandeArea;
-      const reabrir = grandeAreaAberta !== area;
-      grandeAreaAberta = reabrir ? area : null;
-      filtroGrandeArea = reabrir ? area : undefined;
-      especialidadeAberta = null;
-      filtroEspecialidade = undefined;
-      filtroTemaId = undefined;
-      renderHierarquia();
-      refazerFiltro();
-      return;
-    }
-    const espBtn = e.target.closest("[data-especialidade]");
-    if (espBtn) {
-      const esp = espBtn.dataset.especialidade;
-      const reabrir = especialidadeAberta !== esp;
-      especialidadeAberta = reabrir ? esp : null;
-      filtroEspecialidade = reabrir ? esp : undefined;
-      filtroTemaId = undefined;
-      renderHierarquia();
-      refazerFiltro();
-      return;
-    }
-    const temaBtn = e.target.closest("[data-tema-id]");
-    if (temaBtn) {
-      const id = temaBtn.dataset.temaId;
-      filtroTemaId = filtroTemaId === id ? undefined : id;
-      renderHierarquia();
-      refazerFiltro();
-    }
+  selectGrandeArea.addEventListener("change", () => {
+    filtroGrandeArea = selectGrandeArea.value || undefined;
+    filtroEspecialidade = undefined;
+    filtroTemaId = undefined;
+    renderHierarquia();
+    refazerFiltro();
+  });
+
+  selectEspecialidade.addEventListener("change", () => {
+    filtroEspecialidade = selectEspecialidade.value || undefined;
+    filtroTemaId = undefined;
+    renderHierarquia();
+    refazerFiltro();
+  });
+
+  selectTema.addEventListener("change", () => {
+    filtroTemaId = selectTema.value || undefined;
+    renderHierarquia();
+    refazerFiltro();
   });
 
   function breadcrumbCard(q) {
@@ -621,21 +594,65 @@ export async function renderLista(container, _params, query = {}) {
   }
 
   function atualizarContagem() {
-    contagemEl.textContent = `${idsFiltrados.length} quest${idsFiltrados.length === 1 ? "ão" : "ões"} encontrada${idsFiltrados.length === 1 ? "" : "s"}${idsFiltrados.length ? ` · ${renderizados} exibida${renderizados === 1 ? "" : "s"}` : ""}`;
-  }
-
-  function carregarProximoLote() {
-    if (renderizados >= idsFiltrados.length) {
-      carregandoMaisEl.style.display = "none";
+    if (!idsFiltrados.length) {
+      contagemEl.textContent = "0 questões encontradas";
       return;
     }
-    const lote = idsFiltrados.slice(renderizados, renderizados + tamanhoLote);
-    listaEl.insertAdjacentHTML("beforeend", lote.map(renderCard).join(""));
-    lote.forEach(ligarEventosCard);
-    renderizados += lote.length;
-    atualizarContagem();
-    carregandoMaisEl.style.display = renderizados < idsFiltrados.length ? "block" : "none";
+    const totalPaginas = Math.max(1, Math.ceil(idsFiltrados.length / tamanhoLote));
+    const inicio = (paginaAtual - 1) * tamanhoLote + 1;
+    const fim = Math.min(idsFiltrados.length, paginaAtual * tamanhoLote);
+    contagemEl.textContent = `${idsFiltrados.length} quest${idsFiltrados.length === 1 ? "ão" : "ões"} encontrada${idsFiltrados.length === 1 ? "" : "s"} · exibindo ${inicio}–${fim} (página ${paginaAtual} de ${totalPaginas})`;
   }
+
+  function numerosPagina(atual, total) {
+    const paginas = [];
+    for (let p = 1; p <= total; p++) {
+      if (p === 1 || p === total || (p >= atual - 1 && p <= atual + 1)) paginas.push(p);
+      else if (paginas[paginas.length - 1] !== "...") paginas.push("...");
+    }
+    return paginas;
+  }
+
+  function renderPaginacao(totalPaginas) {
+    if (totalPaginas <= 1) {
+      paginacaoEl.innerHTML = "";
+      return;
+    }
+    paginacaoEl.innerHTML = `
+      <button type="button" class="pag-btn" data-pagina="${paginaAtual - 1}" ${paginaAtual <= 1 ? "disabled" : ""}>‹ Anterior</button>
+      ${numerosPagina(paginaAtual, totalPaginas)
+        .map((p) =>
+          p === "..."
+            ? `<span class="pag-reticencias">…</span>`
+            : `<button type="button" class="pag-btn ${p === paginaAtual ? "is-active" : ""}" data-pagina="${p}">${p}</button>`
+        )
+        .join("")}
+      <button type="button" class="pag-btn" data-pagina="${paginaAtual + 1}" ${paginaAtual >= totalPaginas ? "disabled" : ""}>Próxima ›</button>
+    `;
+  }
+
+  function renderPagina() {
+    const totalPaginas = Math.max(1, Math.ceil(idsFiltrados.length / tamanhoLote));
+    if (paginaAtual > totalPaginas) paginaAtual = totalPaginas;
+    if (paginaAtual < 1) paginaAtual = 1;
+    const inicio = (paginaAtual - 1) * tamanhoLote;
+    const lote = idsFiltrados.slice(inicio, inicio + tamanhoLote);
+    listaEl.innerHTML = lote.map(renderCard).join("");
+    lote.forEach(ligarEventosCard);
+    atualizarContagem();
+    renderPaginacao(totalPaginas);
+    atualizarURL();
+  }
+
+  paginacaoEl.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-pagina]");
+    if (!btn || btn.disabled) return;
+    const p = Number(btn.dataset.pagina);
+    if (!p || p < 1) return;
+    paginaAtual = p;
+    renderPagina();
+    listaEl.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 
   // Fase 6 — reflete os filtros ativos na URL via history.replaceState direto
   // (sem passar pelo router/navigate(), que forçaria um re-render completo da
@@ -651,17 +668,16 @@ export async function renderLista(container, _params, query = {}) {
     if (filtroBusca.value.trim()) params.set("busca", filtroBusca.value.trim());
     if (filtroOrdenacao.value !== ORDENACAO.RECENTES) params.set("ordenacao", filtroOrdenacao.value);
     if (filtroQuantidade.value !== "20") params.set("qtd", filtroQuantidade.value);
+    if (paginaAtual > 1) params.set("pagina", String(paginaAtual));
     const caminho = window.location.hash.split("?")[0] || "#/residencia/questoes";
     const queryStr = params.toString();
     const novaURL = `${caminho}${queryStr ? `?${queryStr}` : ""}`;
     if (novaURL !== window.location.hash) history.replaceState(null, "", novaURL);
   }
 
-  function refazerFiltro() {
-    atualizarURL();
+  function refazerFiltro(resetarPagina = true) {
     idsFiltrados = filtrar(indice, filtrosAtuais());
-    listaEl.innerHTML = "";
-    renderizados = 0;
+    if (resetarPagina) paginaAtual = 1;
     if (!idsFiltrados.length) {
       listaEl.innerHTML = `
         <div class="empty-state">
@@ -674,18 +690,12 @@ export async function renderLista(container, _params, query = {}) {
         refazerFiltro();
       });
       contagemEl.textContent = "0 questões encontradas";
-      carregandoMaisEl.style.display = "none";
+      paginacaoEl.innerHTML = "";
+      atualizarURL();
       return;
     }
-    carregarProximoLote();
+    renderPagina();
   }
-
-  new IntersectionObserver(
-    (entries) => {
-      if (entries.some((e) => e.isIntersecting)) carregarProximoLote();
-    },
-    { rootMargin: "600px" }
-  ).observe(sentinelaEl);
 
   filtroBanca.addEventListener("change", () => {
     renderHierarquia();
@@ -716,5 +726,5 @@ export async function renderLista(container, _params, query = {}) {
   });
 
   renderHierarquia();
-  refazerFiltro();
+  refazerFiltro(false);
 }

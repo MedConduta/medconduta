@@ -25,41 +25,47 @@ const { chromium } = require("playwright");
   await page.evaluate(() => {
     location.hash = "/residencia/questoes";
   });
-  await page.waitForSelector("#questoes-hierarquia .content-area", { timeout: 20000 });
+  await page.waitForSelector("#filtro-grande-area", { timeout: 20000 });
   await page.waitForTimeout(300);
 
-  // --- 1) Grande área "Clínica Médica" aparece com contador, e é a soma real do banco.
+  // --- 1) Contagem geral aparece no topo (sem erro de pluralização).
   const totalGeral = await page.$eval("#questoes-contagem", (el) => el.textContent);
   console.log("Contagem geral aparece no topo (sem erro de pluralização):", /^\d+ quest(ão|ões) encontradas?/.test(totalGeral));
 
-  const areasVisiveis = await page.$$eval("#questoes-hierarquia .content-area summary", (els) => els.map((e) => e.textContent.trim()));
-  console.log("Grandes áreas reais aparecem (ex.: Clínica Médica):", areasVisiveis.some((t) => t.includes("Clínica Médica")));
+  const areasVisiveis = await page.$$eval("#filtro-grande-area option", (els) => els.map((e) => e.textContent.trim()));
+  console.log("Grandes áreas reais aparecem no select (ex.: Clínica Médica):", areasVisiveis.some((t) => t.includes("Clínica Médica")));
   console.log("Nenhuma grande área fictícia (ex.: 'Subtema' não é nível de área):", !areasVisiveis.some((t) => t.toLowerCase().includes("subtema")));
 
-  // --- 2) Clicar em uma grande área expande, filtra os resultados e mostra especialidades com contagem.
-  await page.click("#questoes-hierarquia .content-area summary");
+  // --- 2) Selecionar uma grande área filtra os resultados, habilita o select de especialidade e mostra o breadcrumb.
+  await page.selectOption("#filtro-grande-area", { label: areasVisiveis.find((t) => t.includes("Clínica Médica")) });
   await page.waitForTimeout(300);
-  const especialidadesVisiveis = await page.$$eval("#questoes-hierarquia [data-especialidade]", (els) => els.length);
-  console.log("Especialidades aparecem ao abrir a grande área:", especialidadesVisiveis > 0);
+  const especialidadeHabilitada = await page.$eval("#filtro-especialidade", (el) => !el.disabled);
+  console.log("Select de especialidade habilita ao escolher a grande área:", especialidadeHabilitada);
 
-  const breadcrumbApos1Clique = await page.$eval("#questoes-breadcrumb", (el) => el.textContent);
-  console.log("Breadcrumb reflete a grande área selecionada:", breadcrumbApos1Clique.length > 0);
+  const breadcrumbApos1Selecao = await page.$eval("#questoes-breadcrumb", (el) => el.textContent);
+  console.log("Breadcrumb reflete a grande área selecionada:", breadcrumbApos1Selecao.includes("Clínica Médica"));
 
-  const contagemApos1Clique = await page.$eval("#questoes-contagem", (el) => el.textContent);
-  console.log("Contagem de resultados mudou ao filtrar por grande área:", contagemApos1Clique !== totalGeral);
+  const contagemApos1Selecao = await page.$eval("#questoes-contagem", (el) => el.textContent);
+  console.log("Contagem de resultados mudou ao filtrar por grande área:", contagemApos1Selecao !== totalGeral);
 
-  // --- 3) Clicar em uma especialidade expande temas com contagem, e filtra ainda mais.
-  const primeiraEspecialidade = await page.$eval("#questoes-hierarquia [data-especialidade]", (el) => el.dataset.especialidade);
-  await page.click("#questoes-hierarquia [data-especialidade]");
+  // --- 3) Selecionar uma especialidade habilita o select de tema com opções, e filtra ainda mais.
+  const especialidadesVisiveis = await page.$$eval("#filtro-especialidade option[value]:not([value=''])", (els) => els.map((e) => e.textContent.trim()));
+  console.log("Especialidades aparecem ao selecionar a grande área:", especialidadesVisiveis.length > 0);
+
+  const primeiraEspecialidade = especialidadesVisiveis[0];
+  await page.selectOption("#filtro-especialidade", { label: primeiraEspecialidade });
   await page.waitForTimeout(300);
-  const temasVisiveis = await page.$$eval("#questoes-hierarquia [data-tema-id]", (els) => els.length);
-  console.log(`Temas aparecem ao abrir a especialidade '${primeiraEspecialidade}':`, temasVisiveis > 0);
+  const temaHabilitado = await page.$eval("#filtro-tema", (el) => !el.disabled);
+  console.log(`Select de tema habilita ao escolher a especialidade '${primeiraEspecialidade}':`, temaHabilitado);
 
-  const contagemApos2Cliques = await page.$eval("#questoes-contagem", (el) => el.textContent);
-  console.log("Contagem muda de novo ao filtrar por especialidade:", contagemApos2Cliques !== contagemApos1Clique);
+  const temasVisiveis = await page.$$eval("#filtro-tema option[value]:not([value=''])", (els) => els.map((e) => e.textContent.trim()));
+  console.log("Temas aparecem ao selecionar a especialidade:", temasVisiveis.length > 0);
 
-  // --- 4) Clicar em um tema filtra para exatamente aquele tema (todos os cards com a mesma badge).
-  await page.click("#questoes-hierarquia [data-tema-id]");
+  const contagemApos2Selecoes = await page.$eval("#questoes-contagem", (el) => el.textContent);
+  console.log("Contagem muda de novo ao filtrar por especialidade:", contagemApos2Selecoes !== contagemApos1Selecao);
+
+  // --- 4) Selecionar um tema filtra para exatamente aquele tema (todos os cards com a mesma badge).
+  await page.selectOption("#filtro-tema", { label: temasVisiveis[0] });
   await page.waitForTimeout(300);
   const cardsMesmoTema = await page.$$eval("#questoes-lista .card .badge--accent", (els) => new Set(els.map((e) => e.textContent)).size);
   console.log("Filtrar por tema mostra cards de um único tema:", cardsMesmoTema === 1);
@@ -68,13 +74,15 @@ const { chromium } = require("playwright");
   const temBreadcrumbNoCard = await page.$eval("#questoes-lista .card p", (el) => el.textContent.includes("›"));
   console.log("Cada card mostra a hierarquia (Grande Área › Especialidade):", temBreadcrumbNoCard);
 
-  // --- 6) "Ver todas as questões" limpa a hierarquia e volta ao total geral.
+  // --- 6) "Ver todas as questões" limpa a hierarquia, reseta os selects e volta ao total geral.
   await page.click("#questoes-limpar-hierarquia");
   await page.waitForTimeout(300);
   const contagemFinal = await page.$eval("#questoes-contagem", (el) => el.textContent);
   console.log("'Ver todas as questões' restaura a contagem total:", contagemFinal === totalGeral);
   const breadcrumbSumiu = await page.$eval("#questoes-breadcrumb", (el) => el.style.display === "none");
   console.log("Breadcrumb some após limpar:", breadcrumbSumiu);
+  const selectsResetados = await page.$eval("#filtro-especialidade", (el) => el.disabled) && (await page.$eval("#filtro-tema", (el) => el.disabled));
+  console.log("Selects de especialidade e tema voltam a ficar desabilitados:", selectsResetados);
 
   // --- 7) Compat ?categoria=Cardiologia continua funcionando com a hierarquia real.
   await page.evaluate(() => {
@@ -84,10 +92,10 @@ const { chromium } = require("playwright");
   await page.evaluate(() => {
     location.hash = "/residencia/questoes?categoria=Cardiologia";
   });
-  await page.waitForSelector("#questoes-hierarquia .content-area[open]", { timeout: 15000 });
+  await page.waitForSelector("#filtro-especialidade:not([disabled])", { timeout: 15000 });
   await page.waitForTimeout(300);
-  const especialidadeAberta = await page.$eval("#questoes-hierarquia [data-especialidade]", (el) => el.textContent);
-  console.log("?categoria=Cardiologia abre a hierarquia já na especialidade certa:", especialidadeAberta.includes("Cardiologia"));
+  const especialidadeSelecionada = await page.$eval("#filtro-especialidade", (el) => el.selectedOptions[0]?.textContent || "");
+  console.log("?categoria=Cardiologia abre a hierarquia já na especialidade certa:", especialidadeSelecionada.includes("Cardiologia"));
 
   console.log("Erros JS capturados:", erros.length ? erros : "nenhum");
   await browser.close();
