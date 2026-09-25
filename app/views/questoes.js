@@ -1,6 +1,7 @@
-import { escapeHtml } from "../utils.js";
+import { escapeHtml, renderMarkdown } from "../utils.js";
 import { setItem, getAll, removeItem } from "../db.js";
 import { registrarResultadoQuestao } from "../erros.js";
+import { askAI } from "../ai.js";
 import {
   carregarIndice,
   filtrar,
@@ -569,8 +570,12 @@ export async function renderLista(container, _params, query = {}) {
           <div class="explanation-box">
             <strong style="color:${acertou ? "var(--color-success)" : "var(--color-danger)"}">${acertou ? "Correto!" : "Incorreto."}</strong>
             <p style="margin-top:8px;">${escapeHtml(q.comentario)}</p>
+            <div class="comentario-extra">
+              <button type="button" class="btn btn--ghost" style="padding:4px 0;min-height:auto;font-size:var(--fs-xs);">Comentário</button>
+            </div>
           </div>
         `;
+        ligarBotaoComentarioExtra(resultadoEl.querySelector(".comentario-extra"), q);
         const respondidoEm = new Date().toISOString();
         await setItem("respostas", {
           id: `${q.id}-${Date.now()}`,
@@ -590,6 +595,32 @@ export async function renderLista(container, _params, query = {}) {
         atualizarContagem();
         renderStats();
       });
+    });
+  }
+
+  function ligarBotaoComentarioExtra(wrapEl, q) {
+    const btn = wrapEl?.querySelector("button");
+    if (!btn) return;
+    btn.addEventListener("click", async () => {
+      wrapEl.querySelector(".comentario-extra__erro")?.remove();
+      btn.disabled = true;
+      btn.textContent = "Gerando...";
+      try {
+        const letras = q.alternativas.map((_, i) => String.fromCharCode(65 + i));
+        const texto = await askAI({
+          pergunta: `Traga um comentário atualizado e mais aprofundado sobre esta questão, reforçando por que a alternativa correta está certa e apontando qualquer ponto do comentário original que esteja desatualizado ou mereça mais destaque frente às diretrizes atuais.`,
+          contexto: `Tema: ${q.tema} (${q.especialidade})\nEnunciado: ${q.enunciado}\nAlternativas:\n${q.alternativas.map((a, i) => `${letras[i]}) ${a}`).join("\n")}\nCorreta: ${letras[q.correta]}\nComentário original: ${q.comentario}`,
+          tarefa: "gerar um comentário atualizado e aprofundado sobre esta questão de residência médica, complementando a explicação já existente",
+        });
+        wrapEl.innerHTML = `<div class="ia-resposta" style="margin-top:8px;">${renderMarkdown(texto)}</div>`;
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = "Comentário";
+        wrapEl.insertAdjacentHTML(
+          "beforeend",
+          `<p class="comentario-extra__erro" style="margin-top:8px;color:var(--color-danger);font-size:var(--fs-xs);">${escapeHtml(err.message)}</p>`
+        );
+      }
     });
   }
 
