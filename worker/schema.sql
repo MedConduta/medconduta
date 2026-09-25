@@ -1,8 +1,8 @@
 -- MedConduta — schema do banco D1 (Fase 1: backend + autenticação)
 --
 -- `records` é um armazenamento genérico chave-valor por usuário, que espelha
--- exatamente os "stores" que já existiam no IndexedDB do navegador (srs,
--- prefs, progresso, respostas, ia_temas, ia_flashcards, ia_questoes) — a
+-- exatamente os "stores" que já existiam no IndexedDB do navegador (srs_questoes,
+-- prefs, progresso, respostas, ia_temas, ia_fluxogramas, ia_questoes) — a
 -- Fase 2 é que vai desenhar um modelo relacional mais rico (cronograma,
 -- tentativas de questão com tempo/banca, metadados de prioridade dos temas).
 -- Por ora o objetivo é só trocar "onde o dado mora" (do navegador para o

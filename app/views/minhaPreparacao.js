@@ -4,7 +4,7 @@ import { gerarPlanoDoDia } from "../planner.js";
 import { gerarDiagnostico } from "../prontidao.js";
 import { getConstancia } from "../constancia.js";
 import { getMetaDiaria } from "../metaDiaria.js";
-import { gerarGradeCurso } from "../curriculo.js";
+import { gerarGradeCurso, encontrarSemanaAtual } from "../curriculo.js";
 import { hojeIso, getAgendaRevisoes } from "../revisaoCurso.js";
 
 const PREF_HORAS = "planejador_horas";
@@ -30,7 +30,7 @@ export async function renderMinhaPreparacao(container) {
   // e carregarDados() de novo internamente, e essa página já busca a grade
   // (abaixo) e já dispara gerarPlanoDoDia (que também toca no cronograma do
   // Curso quando o usuário já o usa) — evita duplicar o fetch pesado de
-  // temas/questões/flashcards/curriculo numa única carga de página, o que
+  // temas/questões/curriculo numa única carga de página, o que
   // deixava "Minha Preparação" lenta o bastante pra sofrer da race condition
   // conhecida do roteador (navegar embora antes do render assíncrono
   // terminar deixa o render antigo sobrescrever a página seguinte).
@@ -96,17 +96,10 @@ export async function renderMinhaPreparacao(container) {
   `;
 }
 
-/** A última semana do cronograma cuja data de início já chegou — ver o mesmo critério usado por getAgendaHoje em curriculo.js. */
-function encontrarSemanaAtual(semanas, hoje) {
-  const jaComecaram = semanas.filter((s) => s.dataInicio && s.dataInicio <= hoje);
-  if (!jaComecaram.length) return semanas[0] ?? null;
-  return jaComecaram.reduce((maisRecente, s) => (s.dataInicio > maisRecente.dataInicio ? s : maisRecente));
-}
-
 /** Mesmo critério de status por item usado em app/views/curso.js — mantém as duas telas consistentes. */
 function statusDoItem(item) {
   if (item.percentual === 100) return "concluido";
-  if (item.resumoConcluido || item.questoesFeitas || item.flashcardsEstudados) return "em-andamento";
+  if (item.resumoConcluido || item.questoesFeitas) return "em-andamento";
   return "nao-iniciado";
 }
 

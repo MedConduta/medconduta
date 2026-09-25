@@ -10,7 +10,7 @@ Prioridade de adição segue temas de alta prevalência e alta incidência em pr
 cruzando análise de questões recentes do ENAMED com o programa típico dos principais
 cursinhos de residência médica (Medcurso, SanarFlix, Medcof, Estratégia MED, Medway).
 
-Legenda: ✅ implementado (tema + fluxograma* + flashcards + questão) · *exceto temas
+Legenda: ✅ implementado (tema + fluxograma* + questão) · *exceto temas
 puramente teóricos (ex.: indicadores de saúde, ética médica), sem fluxo clínico aplicável.
 
 ## Referências bibliográficas

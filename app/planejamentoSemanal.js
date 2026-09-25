@@ -1,66 +1,47 @@
 /**
- * MedConduta — Fase 15: Planejamento Semanal.
- *
- * Visão intermediária entre "Hoje" (a fila de um único dia, ver planner.js)
- * e o Cronograma (as fases até a prova, ver cronograma.js): quanto dá pra
- * avançar NESTA semana, no ritmo que o usuário já configurou em "Hoje"
- * (horas/dia), e o quanto disso já foi feito. Não duplica lógica de
- * priorização — a meta é só a mesma proporção conteúdo×questões da fase
- * atual (ver cronograma.js/FASES) espalhada pelos 7 dias, e o progresso já
- * feito vem direto da Fase 13 (evolucao.js).
+ * MedConduta — Planejamento Semanal: o que fazer NESTA semana, derivado
+ * direto do cronograma real do Curso (app/curriculo.js) — não mais de uma
+ * projeção horas/dia × peso da fase (ver histórico da Fase 15). A semana
+ * atual é a mesma que "Hoje" e "Minha Preparação" usam (encontrarSemanaAtual):
+ * aulas (temas) a ler/ver, questões a fazer nos temas da semana, e revisões
+ * do ciclo do Curso (ver revisaoCurso.js) agendadas pra cair dentro dela.
  */
 
-import { fetchJsonCached } from "./utils.js";
-import { getAll, getPref } from "./db.js";
-import { diasAteVencer, estaVencido } from "./sm2.js";
-import { getEstadoPreparo } from "./modo.js";
-import { getEvolucaoSemanal } from "./evolucao.js";
+import { gerarGradeCurso, encontrarSemanaAtual } from "./curriculo.js";
+import { getAgendaRevisoes, hojeIso, somarDias } from "./revisaoCurso.js";
 import { getQuestoesEmRevisao } from "./erros.js";
-import { MIN_POR_TEMA_NOVO, MIN_POR_QUESTOES_BLOCO } from "./planner.js";
+import { diasAteVencer } from "./sm2.js";
 
-const PREF_HORAS = "planejador_horas"; // mesma chave usada em views/planejador.js (Fase 3)
 const DIAS_JANELA_VENCENDO = 7;
 
 export async function getPlanejamentoSemanal() {
-  const [horasSalvas, flashcardsDecks, srsRecords, estado, semanas, { vencidas: errosVencidos, proximas: errosProximos }] = await Promise.all([
-    getPref(PREF_HORAS, 2),
-    fetchJsonCached("data/flashcards.json"),
-    getAll("srs"),
-    getEstadoPreparo(),
-    getEvolucaoSemanal(),
+  const [grade, agendaRevisoes, { vencidas: errosVencidos, proximas: errosProximos }] = await Promise.all([
+    gerarGradeCurso(),
+    getAgendaRevisoes(),
     getQuestoesEmRevisao(),
   ]);
 
-  const { fase, diasRestantes } = estado;
-  const semanaAtual = semanas[semanas.length - 1];
+  const hoje = hojeIso();
+  const semana = encontrarSemanaAtual(grade.semanas, hoje);
+  const semanaFim = semana?.dataInicio ? somarDias(semana.dataInicio, 6) : null;
 
-  const srsMap = new Map(srsRecords.map((r) => [r.id, r]));
-  const todosCards = flashcardsDecks.flatMap((deck) => deck.cards.map((c) => c.id));
-  const flashcardsVencendoSemana = todosCards.filter((id) => {
-    const estadoSrs = srsMap.get(id);
-    return estaVencido(estadoSrs) || diasAteVencer(estadoSrs) <= DIAS_JANELA_VENCENDO;
-  }).length;
+  const itens = semana?.itens ?? [];
+  const itensComQuestoes = itens.filter((i) => i.temQuestoes);
+
+  const pendentesRevisaoCurso = [...agendaRevisoes.vencidas, ...agendaRevisoes.hoje, ...agendaRevisoes.futuras];
+  const revisoesCursoSemana = semana?.dataInicio
+    ? pendentesRevisaoCurso.filter((r) => r.dataAgendada >= semana.dataInicio && r.dataAgendada <= semanaFim).length
+    : 0;
 
   const errosVencendoSemana = errosVencidos.length + errosProximos.filter((i) => diasAteVencer(i.estado) <= DIAS_JANELA_VENCENDO).length;
 
-  // Meta da semana: assume o mesmo ritmo diário já configurado em "Hoje" (ver
-  // planejador.js) todos os 7 dias — uma projeção simples, não uma promessa;
-  // faltar um dia não "atrasa" nada aqui (quem cuida de atraso de verdade é o
-  // Modo Recuperação, ver modo.js).
-  const minutosSemana = Math.round(horasSalvas * 60 * 7);
-  const metaTemasNovos = Math.round((minutosSemana * fase.pesoConteudo) / MIN_POR_TEMA_NOVO);
-  const metaBlocosQuestoes = Math.round((minutosSemana * fase.pesoQuestoes) / MIN_POR_QUESTOES_BLOCO);
-
   return {
-    fase,
-    diasRestantes,
-    horasSalvas,
-    metaTemasNovos,
-    metaBlocosQuestoes,
-    temasConcluidosSemana: semanaAtual.temasConcluidos,
-    questoesRespondidasSemana: semanaAtual.totalQuestoes,
-    horasFocoSemana: semanaAtual.horasFoco,
-    flashcardsVencendoSemana,
+    semana,
+    aulasTotal: itens.length,
+    aulasConcluidas: itens.filter((i) => i.resumoConcluido).length,
+    questoesMetaTemas: itensComQuestoes.length,
+    questoesFeitasTemas: itensComQuestoes.filter((i) => i.questoesFeitas).length,
+    revisoesCursoSemana,
     errosVencendoSemana,
   };
 }

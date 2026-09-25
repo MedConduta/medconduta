@@ -22,11 +22,7 @@ export const NAV_ITEMS = [
   },
   {
     section: "Estudar",
-    items: [
-      { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
-      { path: "/residencia/flashcards", label: "Flashcards", icon: "layers" },
-      { path: "/residencia/revisao", label: "Revisão espaçada", icon: "brain" },
-    ],
+    items: [{ path: "/residencia/conteudo", label: "Conteúdo", icon: "book" }],
   },
   {
     section: "Praticar",

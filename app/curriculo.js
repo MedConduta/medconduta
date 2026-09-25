@@ -5,10 +5,10 @@
  *
  * Camada de ORGANIZAÇÃO sobre o conteúdo que já existe — não duplica nada:
  * resumo/progresso vem de `progresso` (já gravado por marcarConcluido em
- * views/conteudo.js), questões feitas vem de `respostas`, flashcards
- * estudados vem de `srs` (SM-2). A semana de um tema nunca muda — é a
- * organização fixa do cronograma; o que muda com o tempo é só o progresso e
- * as revisões (ver revisaoCurso.js), calculadas à parte.
+ * views/conteudo.js), questões feitas vem de `respostas`. A semana de um
+ * tema nunca muda — é a organização fixa do cronograma; o que muda com o
+ * tempo é só o progresso e as revisões (ver revisaoCurso.js), calculadas
+ * à parte.
  */
 
 import { fetchJsonCached } from "./utils.js";
@@ -59,19 +59,17 @@ export async function setCursoInicio(dataIso) {
 }
 
 async function carregarDados() {
-  const [curriculoBruto, temas, questoes, flashcardsDecks, progresso, respostas, srsRecords, inicioReal] = await Promise.all([
+  const [curriculoBruto, temas, questoes, progresso, respostas, inicioReal] = await Promise.all([
     fetchJsonCached("data/curriculo.json"),
     fetchJsonCached("data/temas.json"),
     fetchJsonCached("data/questoes.json"),
-    fetchJsonCached("data/flashcards.json"),
     getAll("progresso"),
     getAll("respostas"),
-    getAll("srs"),
     garantirInicioCurso(),
   ]);
 
   const curriculo = deslocarParaInicioReal(curriculoBruto, inicioReal);
-  return { curriculo, temas, questoes, flashcardsDecks, progresso, respostas, srsRecords, inicioReal };
+  return { curriculo, temas, questoes, progresso, respostas, inicioReal };
 }
 
 /** Desloca todas as `dataProgramada` da planilha pelo offset entre a data original da semana 1 e `inicioReal`. */
@@ -83,20 +81,18 @@ function deslocarParaInicioReal(curriculoBruto, inicioReal) {
   return curriculoBruto.map((linha) => ({ ...linha, dataProgramada: somarDias(linha.dataProgramada, offsetDias) }));
 }
 
-/** Monta o item de um tema (progresso das 3 etapas — resumo/questões/flashcards), cruzando só sinais que já existem, sem checkbox novo. */
+/** Monta o item de um tema (progresso das 2 etapas — resumo/questões), cruzando só sinais que já existem, sem checkbox novo. */
 function montarItem(linha, contexto) {
-  const { temaPorId, progressoSet, temaIdsComQuestao, temaIdsComQuestaoRespondida, temaIdsComDeck, temaIdsComFlashcardEstudado } = contexto;
+  const { temaPorId, progressoSet, temaIdsComQuestao, temaIdsComQuestaoRespondida } = contexto;
   const tema = temaPorId.get(linha.temaId);
   if (!tema) return null; // temaId ainda não criado (ver Fase A) — linha fica de fora até o tema existir
 
   const resumoConcluido = progressoSet.has(tema.id);
   const temQuestoes = temaIdsComQuestao.has(tema.id);
   const questoesFeitas = temaIdsComQuestaoRespondida.has(tema.id);
-  const temFlashcards = temaIdsComDeck.has(tema.id);
-  const flashcardsEstudados = temaIdsComFlashcardEstudado.has(tema.id);
 
-  const etapasAplicaveis = [true, temQuestoes, temFlashcards].filter(Boolean).length;
-  const etapasConcluidas = [resumoConcluido, temQuestoes && questoesFeitas, temFlashcards && flashcardsEstudados].filter(Boolean).length;
+  const etapasAplicaveis = [true, temQuestoes].filter(Boolean).length;
+  const etapasConcluidas = [resumoConcluido, temQuestoes && questoesFeitas].filter(Boolean).length;
 
   return {
     temaId: tema.id,
@@ -108,25 +104,17 @@ function montarItem(linha, contexto) {
     resumoConcluido,
     temQuestoes,
     questoesFeitas,
-    temFlashcards,
-    flashcardsEstudados,
     percentual: etapasAplicaveis ? Math.round((etapasConcluidas / etapasAplicaveis) * 100) : 0,
   };
 }
 
-function construirContexto({ temas, questoes, flashcardsDecks, progresso, respostas, srsRecords }) {
+function construirContexto({ temas, questoes, progresso, respostas }) {
   const temaPorId = new Map(temas.map((t) => [t.id, t]));
   const progressoSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
   const temaIdsComQuestao = new Set(questoes.map((q) => q.temaId));
   const temaIdsComQuestaoRespondida = new Set(respostas.map((r) => r.temaId));
-  const temaIdsComDeck = new Set(flashcardsDecks.map((d) => d.temaId));
 
-  const srsIdsComRegistro = new Set(srsRecords.map((r) => r.id));
-  const temaIdsComFlashcardEstudado = new Set(
-    flashcardsDecks.filter((d) => d.cards.some((c) => srsIdsComRegistro.has(c.id))).map((d) => d.temaId)
-  );
-
-  return { temaPorId, progressoSet, temaIdsComQuestao, temaIdsComQuestaoRespondida, temaIdsComDeck, temaIdsComFlashcardEstudado };
+  return { temaPorId, progressoSet, temaIdsComQuestao, temaIdsComQuestaoRespondida };
 }
 
 /** Grade completa do curso: semanas na ordem fixa do cronograma, cada uma com seus temas e progresso. */
@@ -190,6 +178,18 @@ export async function getAgendaHoje() {
     hoje: { conteudo: conteudoHoje, revisoes: agendaRevisoes.hoje.map(enriquecerRevisao) },
     totalPendenteHoje: conteudoAtrasado.length + conteudoHoje.length + agendaRevisoes.vencidas.length + agendaRevisoes.hoje.length,
   };
+}
+
+/**
+ * A última semana do cronograma cuja data de início já chegou — usada por
+ * "Minha Preparação" e "Planejamento Semanal" pra saber em que semana do
+ * Curso o usuário está agora. Mesmo critério de `getAgendaHoje` (uma linha
+ * é "de hoje/atrasada" quando `dataProgramada <= hoje`).
+ */
+export function encontrarSemanaAtual(semanas, hoje) {
+  const jaComecaram = semanas.filter((s) => s.dataInicio && s.dataInicio <= hoje);
+  if (!jaComecaram.length) return semanas[0] ?? null;
+  return jaComecaram.reduce((maisRecente, s) => (s.dataInicio > maisRecente.dataInicio ? s : maisRecente));
 }
 
 /** Agregados pro topo da página (seção 19 do pedido original). */

@@ -1,12 +1,10 @@
 import { fetchJsonCached } from "./utils.js";
 import { getAll } from "./db.js";
-import { estaVencido } from "./sm2.js";
 import { pesoProva } from "./areas.js";
 import { getEstadoPreparo, aplicarModoNoPeso } from "./modo.js";
 import { getQuestoesEmRevisao } from "./erros.js";
 import { getAgendaHoje, cursoJaIniciado } from "./curriculo.js";
 
-const MIN_POR_REVISAO_VENCIDA = 8; // flashcard/revisão pontual
 const MIN_POR_REVISAO_ERRO = 6; // reler + resolver de novo uma questão já errada
 // Exportadas porque o Planejamento Semanal (Fase 15) reaproveita a mesma
 // duração-padrão por item pra converter a meta de tempo da semana em nº de
@@ -14,7 +12,7 @@ const MIN_POR_REVISAO_ERRO = 6; // reler + resolver de novo uma questão já err
 export const MIN_POR_TEMA_NOVO = 25; // leitura de um tema completo
 export const MIN_POR_QUESTOES_BLOCO = 15; // bloco de ~5 questões
 
-// Teto de tempo pro conjunto de revisões vencidas (flashcards + erros) sobre
+// Teto de tempo pro conjunto de revisões vencidas (questões já erradas) sobre
 // o orçamento do DIA (não o que sobra depois delas) — sem isso, um backlog
 // grande de revisões vencidas podia consumir 100% do tempo disponível e
 // nunca sobrar nada pra conteúdo novo ou questões. 40% é o teto superior da
@@ -74,9 +72,9 @@ export function calcularScorePrioridade(categoria, desempenhoPorCategoria, prova
 
 /**
  * Monta a fila de estudo do dia priorizando:
- * 1) Revisões espaçadas vencidas — flashcards (SM-2) e questões já erradas
- *    antes (ver erros.js) — sempre primeiro, nunca somem, independente da
- *    fase da preparação (ver Fase 4/cronograma.js).
+ * 1) Revisões espaçadas vencidas — questões já erradas antes (ver erros.js,
+ *    SM-2) — sempre primeiro, nunca somem, independente da fase da
+ *    preparação (ver Fase 4/cronograma.js).
  * 2) Temas novos/pendentes. Se o usuário já usa o Curso (cronograma
  *    semanal, ver curriculo.js), os temas atrasados/programados pra hoje
  *    nesse cronograma entram primeiro (mais atrasado primeiro) — "Hoje"
@@ -108,9 +106,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
 
   const [
     temas,
-    flashcardsDecks,
     questoes,
-    srsRecords,
     progresso,
     respostas,
     { fase: faseBase, diasRestantes, modo, provaAlvo },
@@ -118,9 +114,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     agendaCurso,
   ] = await Promise.all([
     fetchJsonCached("data/temas.json"),
-    fetchJsonCached("data/flashcards.json"),
     fetchJsonCached("data/questoes.json"),
-    getAll("srs"),
     getAll("progresso"),
     getAll("respostas"),
     getEstadoPreparo(),
@@ -139,7 +133,6 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   // alterar a fase original usada em Cronograma/Prontidão.
   const fase = aplicarModoNoPeso(faseBase, modo);
 
-  const srsMap = new Map(srsRecords.map((r) => [r.id, r]));
   const progressoSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
   const desempenhoPorCategoria = calcularDesempenhoPorCategoria(respostas);
 
@@ -151,34 +144,13 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     .sort((a, b) => b.score - a.score);
   const scorePorCategoria = new Map(rankingCategorias.map((r) => [r.categoria, r.score]));
 
-  // 1) Revisões vencidas — junta todos os cards de todos os decks e filtra vencidos
-  const todosCards = flashcardsDecks.flatMap((deck) =>
-    deck.cards.map((c) => ({ ...c, deckId: deck.id, deckTitulo: deck.titulo }))
-  );
-  const vencidos = todosCards.filter((c) => estaVencido(srsMap.get(c.id)));
-
-  // Teto de tempo compartilhado pelas duas filas de revisão (1 e 1b) — ver
-  // TETO_REVISOES_PCT. O que ultrapassar o teto continua vencido e some da
-  // fila de hoje, sem sumir de verdade: volta a aparecer amanhã.
+  // 1) Questões já erradas antes, vencidas para revisão espaçada (ver erros.js) —
+  // teto de tempo sobre o orçamento do dia — ver TETO_REVISOES_PCT. O que
+  // ultrapassar o teto continua vencido e some da fila de hoje, sem sumir de
+  // verdade: volta a aparecer amanhã.
   const orcamentoRevisoes = Math.round(minutosDisponiveis * TETO_REVISOES_PCT);
   let minutosGastosRevisoes = 0;
 
-  for (const card of vencidos) {
-    if (minutosRestantes < MIN_POR_REVISAO_VENCIDA / 2) break;
-    if (minutosGastosRevisoes + MIN_POR_REVISAO_VENCIDA > orcamentoRevisoes) break;
-    fila.push({
-      tipo: "revisao",
-      titulo: `Revisar: ${card.deckTitulo}`,
-      detalhe: card.frente,
-      duracaoMin: MIN_POR_REVISAO_VENCIDA,
-      link: `#/residencia/flashcards/${card.deckId}`,
-    });
-    minutosRestantes -= MIN_POR_REVISAO_VENCIDA;
-    minutosGastosRevisoes += MIN_POR_REVISAO_VENCIDA;
-  }
-
-  // 1b) Questões já erradas antes, vencidas para revisão espaçada (ver erros.js) —
-  // mesma prioridade incondicional das revisões de flashcard, sujeita ao mesmo teto.
   for (const { questao } of errosVencidos) {
     if (minutosRestantes < MIN_POR_REVISAO_ERRO / 2) break;
     if (minutosGastosRevisoes + MIN_POR_REVISAO_ERRO > orcamentoRevisoes) break;
@@ -274,7 +246,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     minutosDisponiveis,
     minutosUsados,
     minutosOciosos: minutosRestantes,
-    totalRevisoesVencidas: vencidos.length + errosVencidos.length,
+    totalRevisoesVencidas: errosVencidos.length,
     totalTemasPendentes: temasPendentes.length,
     fase,
     diasRestantes,

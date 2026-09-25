@@ -2,8 +2,8 @@
  * MedConduta — Fase 5: revisão adaptativa de questões erradas ("Meus Erros").
  *
  * Toda questão que o usuário já errou pelo menos uma vez entra numa fila de
- * revisão espaçada própria (reaproveitando o mesmo algoritmo SM-2 usado nos
- * flashcards, ver sm2.js, mas com estado guardado à parte por questão). A
+ * revisão espaçada própria (algoritmo SM-2, ver sm2.js, com estado guardado
+ * à parte por questão). A
  * cada acerto o intervalo até a próxima revisão cresce; a cada erro, volta a
  * ser curto — a questão só "sai" da fila por muito tempo depois de vários
  * acertos seguidos, nunca é esquecida de vez.

@@ -2,7 +2,7 @@ import { fetchJsonCached, escapeHtml, renderMarkdown } from "../utils.js";
 import { getItem, setItem, getAll } from "../db.js";
 import { navigate } from "../router.js";
 import { AREA_POR_CATEGORIA, ORDEM_AREAS, CATEGORIAS_VALIDAS } from "../areas.js";
-import { gerarTemaComIA, gerarFlashcardsComIA, gerarFluxogramaComIA, gerarQuestaoComIA, avaliarTemaComIA } from "../iaConteudo.js";
+import { gerarTemaComIA, gerarFluxogramaComIA, gerarQuestaoComIA, avaliarTemaComIA } from "../iaConteudo.js";
 import { askAI } from "../ai.js";
 import { formatarTemaComoContexto } from "../rag.js";
 import { renderFlowchart } from "../components/flowchart.js";
@@ -23,7 +23,6 @@ const ORDEM_QUADRANTE = ["Crítico", "Atenção", "Secundário fraco", "Dominado
 const IA_TABS = [
   { tipo: "explicar", titulo: "Explicar", icone: "sparkles" },
   { tipo: "avaliar", titulo: "Avaliar", icone: "checklist" },
-  { tipo: "flashcards", titulo: "Flashcards", icone: "layers" },
   { tipo: "questao", titulo: "Questão", icone: "clipboard" },
   { tipo: "fluxograma", titulo: "Fluxograma", icone: "flowchart" },
   { tipo: "pegadinhas", titulo: "Pegadinhas", icone: "alert-circle" },
@@ -67,11 +66,6 @@ async function todosOsTemas() {
 async function encontrarTema(id) {
   const temas = await todosOsTemas();
   return temas.find((t) => t.id === id) || null;
-}
-
-async function decksDoTema(temaId) {
-  const [curados, gerados] = await Promise.all([fetchJsonCached("data/flashcards.json"), getAll("ia_flashcards")]);
-  return [...curados, ...gerados].filter((d) => d.temaId === temaId);
 }
 
 async function fluxogramasDoTema(temaId) {
@@ -252,22 +246,10 @@ function renderTemaListItem(tema) {
   `;
 }
 
-function renderRelacionados({ decks, fluxos }) {
+function renderRelacionados({ fluxos }) {
   return `
     <div class="section-block" style="margin-top:24px;">
-      <h3>Flashcards e fluxogramas relacionados</h3>
-      ${decks
-        .map(
-          (deck) => `
-        <a class="card card--interactive list-card" href="#/residencia/flashcards/${deck.id}" style="margin-bottom:12px;">
-          <div class="list-card__top">
-            <span class="badge badge--accent">${deck.cards.length} cards</span>
-            ${deck.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
-          </div>
-          <div class="list-card__title">${escapeHtml(deck.titulo)}</div>
-        </a>`
-        )
-        .join("")}
+      <h3>Fluxogramas relacionados</h3>
       ${fluxos
         .map(
           (fluxo) => `
@@ -316,13 +298,6 @@ function renderPainelTexto(dados) {
   `;
 }
 
-function renderPainelFlashcards(dados) {
-  return `
-    <p>${dados.totalCards} flashcards criados: <strong>${escapeHtml(dados.deckTitulo)}</strong></p>
-    <a class="btn btn--secondary" href="#/residencia/flashcards/${dados.deckId}">Estudar esse baralho agora</a>
-  `;
-}
-
 function renderPainelQuestao() {
   return `
     <p>Questão criada e adicionada ao banco.</p>
@@ -342,7 +317,6 @@ const RENDER_PAINEL_IA = {
   avaliar: renderPainelTexto,
   pegadinhas: renderPainelTexto,
   memorizar: renderPainelTexto,
-  flashcards: renderPainelFlashcards,
   questao: renderPainelQuestao,
   fluxograma: renderPainelFluxograma,
 };
@@ -358,8 +332,7 @@ export async function renderDetalhe(container, { id }) {
   const progresso = await getItem("progresso", tema.id);
   const concluido = !!progresso?.concluido;
   const geradoPorIA = tema.origem === "ia";
-  const [decks, fluxos, respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes, abasSalvas] = await Promise.all([
-    decksDoTema(tema.id),
+  const [fluxos, respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes, abasSalvas] = await Promise.all([
     fluxogramasDoTema(tema.id),
     getAll("respostas"),
     fetchJsonCached("data/questoes.json"),
@@ -438,7 +411,7 @@ export async function renderDetalhe(container, { id }) {
           .join("")}
       </div>
 
-      ${decks.length || fluxos.length ? renderRelacionados({ decks, fluxos }) : ""}
+      ${fluxos.length ? renderRelacionados({ fluxos }) : ""}
 
       ${renderNavegacaoAdjacente(adjacentes)}
     </div>
@@ -477,7 +450,7 @@ export async function renderDetalhe(container, { id }) {
       return;
     }
     const rotuloRegerar =
-      tipo === "questao" ? "↻ Gerar outra questão" : tipo === "flashcards" ? "↻ Gerar outro baralho" : tipo === "fluxograma" ? "↻ Gerar outro fluxograma" : "↻ Gerar de novo";
+      tipo === "questao" ? "↻ Gerar outra questão" : tipo === "fluxograma" ? "↻ Gerar outro fluxograma" : "↻ Gerar de novo";
     painelEl.innerHTML = `
       <div class="ia-tab-panel__body">${RENDER_PAINEL_IA[tipo](dados)}</div>
       <button type="button" class="btn btn--ghost ia-tab-panel__regerar" style="margin-top:12px;padding-left:0;">${rotuloRegerar}</button>
@@ -521,9 +494,6 @@ export async function renderDetalhe(container, { id }) {
             contexto: formatarTemaComoContexto(tema),
           }),
         };
-      } else if (tipo === "flashcards") {
-        const deck = await gerarFlashcardsComIA(tema);
-        dados = { deckId: deck.id, deckTitulo: deck.titulo, totalCards: deck.cards.length };
       } else if (tipo === "questao") {
         await gerarQuestaoComIA(tema);
         dados = { criadoEm: new Date().toISOString() };

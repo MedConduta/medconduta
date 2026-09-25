@@ -1,5 +1,5 @@
 /**
- * MedConduta — geração de conteúdo por IA (temas, flashcards, questões) e
+ * MedConduta — geração de conteúdo por IA (temas, fluxogramas, questões) e
  * avaliação crítica de temas existentes.
  *
  * Todo conteúdo criado passa por duas chamadas: um rascunho, e uma segunda
@@ -56,58 +56,16 @@ Inclua de 4 a 6 seções cobrindo definição/diagnóstico, conduta/tratamento e
 }
 
 /**
- * Gera um baralho de flashcards para um tema (curado ou de IA), autocriticado.
- * Se já existe um baralho de IA para esse tema, devolve o existente em vez
- * de gerar (e gastar chamadas ao Gemini) de novo — "Gerar flashcards" é uma
- * ação de "me dê os flashcards deste tema", não "gere mais um baralho".
- */
-export async function gerarFlashcardsComIA(tema) {
-  const existentes = await getAll("ia_flashcards");
-  const deckExistente = existentes.find((d) => d.temaId === tema.id);
-  if (deckExistente) return deckExistente;
-
-  const contexto = formatarTemaComoContexto(tema);
-
-  const rascunho = await askAIJson({
-    pergunta: `Crie de 4 a 6 flashcards (frente/verso) para estudar o tema "${tema.titulo}", cobrindo os pontos mais cobrados em prova de residência.`,
-    contexto,
-    tarefa: `gerar flashcards em JSON: {"titulo": "string", "cards": [{"frente": "string (pergunta objetiva)", "verso": "string (resposta direta)"}]}`,
-  });
-
-  const final = await askAIJson({
-    pergunta: "Revise criticamente os flashcards abaixo quanto a precisão e clareza. Corrija o que for necessário.",
-    contexto: JSON.stringify(rascunho),
-    tarefa: `autocrítica: devolva a versão final no MESMO formato JSON, adicionando "notaRevisao" (1 frase).`,
-  });
-
-  const deck = {
-    id: idUnico(`deck-ia-${tema.id}`),
-    temaId: tema.id,
-    titulo: final.titulo || `${tema.titulo} (gerado por IA)`,
-    origem: "ia",
-    notaRevisaoIA: final.notaRevisao || "",
-    cards: (Array.isArray(final.cards) ? final.cards : []).map((c, i) => ({
-      id: `${idUnico("card-ia")}-${i}`,
-      frente: c.frente || "",
-      verso: c.verso || "",
-    })),
-  };
-
-  await setItem("ia_flashcards", deck);
-  return deck;
-}
-
-/**
  * Gera um fluxograma de conduta (diagnóstico ou tratamento) para um tema,
  * autocriticado, no MESMO formato JSON dos fluxogramas curados (ver
  * data/fluxogramas.json e components/flowchart.js — o renderizador é
  * reaproveitado sem alteração). Fica marcado `revisado: false`, igual a
  * fluxogramas curados ainda não revisados — fluxograma clínico é conteúdo
- * de maior risco (uma ramificação errada importa mais que um flashcard
+ * de maior risco (uma ramificação errada importa mais que um texto
  * impreciso), por isso o aviso de "gerado por IA, confira em fonte oficial"
  * é sempre mostrado junto, nunca omitido.
- * Mesma lógica de "peça os flashcards deste tema" da função acima: se já
- * existe um fluxograma de IA pra esse tema, devolve o existente.
+ * Se já existe um fluxograma de IA pra esse tema, devolve o existente em vez
+ * de gerar (e gastar chamadas ao Gemini) de novo.
  */
 export async function gerarFluxogramaComIA(tema) {
   const existentes = await getAll("ia_fluxogramas");
@@ -146,7 +104,7 @@ export async function gerarFluxogramaComIA(tema) {
 
 /**
  * Gera uma questão de múltipla escolha para um tema, autocriticada, e salva
- * no banco. Diferente de flashcards/tema, essa geração é intencionalmente
+ * no banco. Diferente de tema/fluxograma, essa geração é intencionalmente
  * repetível — cada clique deve poder trazer uma questão nova (mais treino),
  * então NÃO passa pelo cache anti-duplicação (ver ai.js/iaCache.js).
  */

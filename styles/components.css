@@ -357,90 +357,6 @@
   border-top: 1px solid var(--color-border);
 }
 
-/* ---------- Flashcards ---------- */
-
-.flashcard-stage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-5);
-}
-
-.flashcard {
-  width: 100%;
-  max-width: 520px;
-  min-height: 260px;
-  perspective: 1200px;
-  cursor: pointer;
-}
-
-.flashcard__inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 260px;
-  transition: transform 0.45s;
-  transform-style: preserve-3d;
-}
-
-.flashcard.is-flipped .flashcard__inner {
-  transform: rotateY(180deg);
-}
-
-.flashcard__face {
-  position: absolute;
-  inset: 0;
-  backface-visibility: hidden;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  box-shadow: var(--shadow-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: var(--space-6);
-  font-size: var(--fs-md);
-}
-
-.flashcard__face--back {
-  transform: rotateY(180deg);
-  background: var(--color-accent-soft);
-  border-color: var(--color-accent-soft-border);
-}
-
-.flashcard__hint {
-  color: var(--color-text-muted);
-  font-size: var(--fs-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.quality-scale {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--space-2);
-  width: 100%;
-  max-width: 560px;
-}
-
-.quality-btn {
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
-  padding: var(--space-3) var(--space-1);
-  background: var(--color-surface);
-  font-size: var(--fs-xs);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.quality-btn strong { font-size: var(--fs-md); }
-.quality-btn:hover { border-color: var(--color-border-strong); background: var(--color-surface-hover); }
-.quality-btn[data-q="0"] strong, .quality-btn[data-q="1"] strong { color: var(--color-danger); }
-.quality-btn[data-q="2"] strong, .quality-btn[data-q="3"] strong { color: var(--color-warning); }
-.quality-btn[data-q="4"] strong, .quality-btn[data-q="5"] strong { color: var(--color-success); }
-
 /* ---------- Fluxogramas ---------- */
 
 .flowchart {
@@ -927,10 +843,6 @@ button.stat-tile:hover {
   transition: opacity var(--transition-fast);
 }
 .copy-toast.is-visible { opacity: 1; }
-
-@media (max-width: 640px) {
-  .quality-scale { grid-template-columns: repeat(3, 1fr); }
-}
 
 /* ---------- Login / cadastro ---------- */
 

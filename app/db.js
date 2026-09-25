@@ -1,8 +1,8 @@
 /**
  * MedConduta — camada de persistência (Fase 1: backend via Worker + D1).
- * Guarda: estado de repetição espaçada (SM-2) por flashcard, preferências
+ * Guarda: estado de repetição espaçada (SM-2) por questão errada, preferências
  * (tema), progresso de temas lidos, histórico de respostas de questões, e o
- * conteúdo (temas/flashcards/questões) que a IA cria.
+ * conteúdo (temas/fluxogramas/questões) que a IA cria.
  *
  * Antes esses dados viviam só no IndexedDB do navegador (um aparelho só, sem
  * login). Agora vivem no servidor, por conta — mesmo formato de dado, mesma

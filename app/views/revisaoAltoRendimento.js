@@ -9,7 +9,7 @@ import { QUADRANTES } from "../prontidao.js";
 export async function renderRevisaoAltoRendimento(container) {
   container.innerHTML = `<div class="main__container"><div class="empty-state">Calculando seus maiores gargalos...</div></div>`;
 
-  const { categorias, decks, totalCards } = await getRevisaoAltoRendimento();
+  const { categorias } = await getRevisaoAltoRendimento();
 
   if (!categorias.length) {
     container.innerHTML = `
@@ -50,26 +50,6 @@ export async function renderRevisaoAltoRendimento(container) {
           )
           .join("")}
       </div>
-
-      ${
-        decks.length
-          ? `
-        <h3>Flashcards dessas categorias (${totalCards} cards)</h3>
-        <div class="plan-queue">
-          ${decks
-            .map(
-              (d) => `
-            <a class="card card--interactive" href="#/residencia/flashcards/${d.id}" style="text-decoration:none;color:inherit;">
-              <div class="list-card__top">
-                <span class="badge badge--accent">${d.cards.length} cards</span>
-              </div>
-              <div class="list-card__title">${escapeHtml(d.titulo)}</div>
-            </a>`
-            )
-            .join("")}
-        </div>`
-          : ""
-      }
     </div>
   `;
 }

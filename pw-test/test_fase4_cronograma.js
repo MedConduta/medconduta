@@ -73,8 +73,6 @@ function dataDaquiA(dias) {
   // --- 4) Smoke test de todas as rotas (incluindo /residencia/cronograma)
   const rotas = [
     "/residencia/conteudo",
-    "/residencia/revisao",
-    "/residencia/flashcards",
     "/residencia/questoes",
     "/residencia/planejador",
     "/residencia/cronograma",

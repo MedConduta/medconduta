@@ -63,17 +63,17 @@ const { chromium } = require("playwright");
   });
   console.log("Pergunta nova tenta a rede e falha por falta de GEMINI_API_KEY local (esperado):", (testeSemCache.erro || "").includes("GEMINI_API_KEY"));
 
-  // --- 4) gerarFlashcardsComIA: dedup por temaId (não deve tentar Gemini se já existe deck)
-  const testeDedupFlashcards = await page.evaluate(async () => {
+  // --- 4) gerarFluxogramaComIA: dedup por temaId (não deve tentar Gemini se já existe fluxograma)
+  const testeDedupFluxograma = await page.evaluate(async () => {
     const { setItem } = await import("/app/db.js");
-    const deckFake = { id: "deck-ia-fake", temaId: "tema-fake-123", titulo: "Deck existente", origem: "ia", cards: [{ id: "c1", frente: "F", verso: "V" }] };
-    await setItem("ia_flashcards", deckFake);
+    const fluxoFake = { id: "fluxo-ia-fake", temaId: "tema-fake-123", titulo: "Fluxograma existente", origem: "ia", tipo: "diagnostico", fluxo: [{ tipo: "start", texto: "Início" }] };
+    await setItem("ia_fluxogramas", fluxoFake);
 
-    const { gerarFlashcardsComIA } = await import("/app/iaConteudo.js");
-    const resultado = await gerarFlashcardsComIA({ id: "tema-fake-123", titulo: "Tema Fake", categoria: "Cardiologia", secoes: [], mnemonicos: [] });
+    const { gerarFluxogramaComIA } = await import("/app/iaConteudo.js");
+    const resultado = await gerarFluxogramaComIA({ id: "tema-fake-123", titulo: "Tema Fake", categoria: "Cardiologia", secoes: [], mnemonicos: [] });
     return resultado;
   });
-  console.log("gerarFlashcardsComIA devolve o deck já existente sem chamar o Gemini:", testeDedupFlashcards?.id === "deck-ia-fake");
+  console.log("gerarFluxogramaComIA devolve o fluxograma já existente sem chamar o Gemini:", testeDedupFluxograma?.id === "fluxo-ia-fake");
 
   // --- 5) montarContextoAluno (via assistente.js) produz texto sensato
   await page.evaluate(() => { location.hash = "/residencia/assistente"; });
@@ -85,8 +85,6 @@ const { chromium } = require("playwright");
   const rotas = [
     "/residencia/conteudo",
     "/residencia/assistente",
-    "/residencia/revisao",
-    "/residencia/flashcards",
     "/residencia/questoes",
     "/residencia/erros",
     "/residencia/simulados",

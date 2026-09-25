@@ -63,8 +63,6 @@ const { chromium } = require("playwright");
     "/residencia/minha-preparacao",
     "/residencia/conteudo",
     "/residencia/assistente",
-    "/residencia/revisao",
-    "/residencia/flashcards",
     "/residencia/questoes",
     "/residencia/erros",
     "/residencia/simulados",

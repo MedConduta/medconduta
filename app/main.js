@@ -7,8 +7,6 @@ import { icon } from "./components/icons.js";
 
 import * as conteudo from "./views/conteudo.js";
 import * as assistente from "./views/assistente.js";
-import * as revisao from "./views/revisao.js";
-import * as flashcards from "./views/flashcards.js";
 import * as questoes from "./views/questoes.js";
 import * as planejador from "./views/planejador.js";
 import * as cronograma from "./views/cronograma.js";
@@ -38,10 +36,6 @@ registerRoute("/residencia/minha-preparacao", minhaPreparacao.renderMinhaPrepara
 registerRoute("/residencia/conteudo", conteudo.renderLista, { title: "Conteúdo" });
 registerRoute("/residencia/conteudo/:id", conteudo.renderDetalhe, { title: "Conteúdo" });
 registerRoute("/residencia/assistente", assistente.renderAssistente, { title: "Assistente IA" });
-registerRoute("/residencia/revisao", revisao.renderRevisao, { title: "Revisão espaçada" });
-registerRoute("/residencia/flashcards", flashcards.renderLista, { title: "Flashcards" });
-registerRoute("/residencia/flashcards/:deckId", flashcards.renderEstudo, { title: "Flashcards" });
-registerRoute("/residencia/flashcards/:deckId/gerenciar", flashcards.renderGerenciar, { title: "Gerenciar baralho" });
 registerRoute("/residencia/questoes", questoes.renderLista, { title: "Questões" });
 registerRoute("/residencia/erros", erros.renderErros, { title: "Meus Erros" });
 registerRoute("/residencia/revisao-alto-rendimento", revisaoAltoRendimento.renderRevisaoAltoRendimento, { title: "Revisão de Alto Rendimento" });
