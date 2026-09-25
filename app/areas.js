@@ -10,6 +10,7 @@ export const AREA_POR_CATEGORIA = {
   Pneumologia: "Clínica Médica",
   Nefrologia: "Clínica Médica",
   Gastroenterologia: "Clínica Médica",
+  Hepatologia: "Clínica Médica",
   Neurologia: "Clínica Médica",
   Infectologia: "Clínica Médica",
   Hematologia: "Clínica Médica",
