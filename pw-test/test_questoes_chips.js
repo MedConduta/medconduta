@@ -31,7 +31,7 @@ const { chromium } = require("playwright");
   console.log("Sem filtros ativos, chips ficam ocultos:", chipsOcultosInicio);
 
   // --- 2) Selecionar uma grande área mostra um chip "Área: X" + botão "Limpar filtros".
-  await page.click(".content-area__title");
+  await page.selectOption("#filtro-grande-area", { index: 1 });
   await page.waitForTimeout(300);
   let textoChips = await page.$eval("#questoes-chips", (el) => el.textContent);
   console.log("Chip de área aparece:", /Área:/.test(textoChips));

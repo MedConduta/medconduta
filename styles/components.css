@@ -670,6 +670,24 @@ button.stat-tile:hover {
   font-size: var(--fs-sm);
 }
 
+/* ---------- Dashboard minimalista (Questões) ---------- */
+
+#questoes-stats.stat-row {
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+#questoes-stats .stat-tile {
+  padding: var(--space-3);
+  box-shadow: none;
+  border-radius: var(--radius-sm);
+}
+#questoes-stats .stat-tile__value {
+  font-size: var(--fs-lg);
+}
+#questoes-stats .stat-tile__label {
+  font-size: var(--fs-xs);
+}
+
 /* ---------- Empty state ---------- */
 
 .empty-state {
@@ -1119,6 +1137,64 @@ button.stat-tile:hover {
   gap: var(--space-2);
   flex: 1;
   min-width: 220px;
+}
+
+/* ---------- Botões minimalistas (Questões) ---------- */
+
+.atalhos-estudo .btn,
+.filtros-salvos .btn,
+.filtros-painel__fechar {
+  padding: 6px 14px;
+  min-height: auto;
+  font-weight: var(--fw-medium);
+  background: transparent;
+  box-shadow: none;
+}
+.atalhos-estudo .btn:hover,
+.filtros-salvos .btn:hover,
+.filtros-painel__fechar:hover {
+  background: var(--color-bg-subtle);
+}
+
+/* ---------- Paginação (Questões) ---------- */
+
+.paginacao {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+.pag-btn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+.pag-btn:hover:not(:disabled) {
+  border-color: var(--color-border-strong);
+  background: var(--color-surface-hover);
+}
+.pag-btn.is-active {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+.pag-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.pag-reticencias {
+  color: var(--color-text-muted);
+  padding: 0 4px;
 }
 
 /* ---------- Painel de filtros mobile (bottom sheet) ---------- */

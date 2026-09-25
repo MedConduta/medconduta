@@ -42,12 +42,20 @@ const { chromium } = require("playwright");
   const contagemTexto = await page.$eval("#questoes-contagem", (el) => el.textContent);
   console.log("Contador mostra total de questões encontradas:", contagemTexto.includes(String(totalCuradas)));
 
-  // --- 2) Scroll até o fim da lista carrega o próximo lote via IntersectionObserver.
-  await page.evaluate(() => document.querySelector("#questoes-sentinela").scrollIntoView());
-  await page.waitForTimeout(600);
-  const cardsAposScroll = await page.$$eval("#questoes-lista .card", (els) => els.length);
-  console.log(`Cards após 1 scroll até o fim (deve ser 40):`, cardsAposScroll);
-  console.log("Scroll infinito carrega o próximo lote:", cardsAposScroll === 40);
+  // --- 2) Paginação numerada: clicar na página 2 troca o lote de cards (sem acumular)
+  // e mostra a página ativa destacada, em vez de scroll infinito.
+  await page.click('#questoes-paginacao [data-pagina="2"]');
+  await page.waitForTimeout(400);
+  const cardsPagina2 = await page.$$eval("#questoes-lista .card", (els) => els.length);
+  console.log(`Cards na página 2 (deve ser <= 20, sem acumular com a página 1):`, cardsPagina2);
+  console.log("Paginação troca o lote em vez de acumular:", cardsPagina2 > 0 && cardsPagina2 <= 20);
+  const paginaAtivaMarcada = await page.$eval('#questoes-paginacao .pag-btn.is-active', (el) => el.textContent.trim());
+  console.log("Página 2 fica destacada como ativa:", paginaAtivaMarcada === "2");
+  const urlComPagina = await page.evaluate(() => location.hash.includes("pagina=2"));
+  console.log("URL reflete a página atual (pagina=2):", urlComPagina);
+
+  await page.click('#questoes-paginacao [data-pagina="1"]');
+  await page.waitForTimeout(400);
 
   // --- 3) Responder uma questão mostra o resultado e não trava a página.
   const primeiraOpcao = await page.$("#questoes-lista .card .question-option");
