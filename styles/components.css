@@ -357,6 +357,32 @@
   border-top: 1px solid var(--color-border);
 }
 
+.imagem-estudo {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-3);
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.imagem-estudo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+.imagem-estudo figcaption {
+  margin-top: var(--space-2);
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+  text-align: left;
+}
+.imagem-estudo__fonte {
+  display: block;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
 /* ---------- Fluxogramas ---------- */
 
 .flowchart {

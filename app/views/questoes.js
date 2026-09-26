@@ -1,4 +1,4 @@
-import { escapeHtml, renderMarkdown } from "../utils.js";
+import { escapeHtml, renderMarkdown, renderImagemEstudo } from "../utils.js";
 import { setItem, getAll, removeItem } from "../db.js";
 import { registrarResultadoQuestao } from "../erros.js";
 import { askAI } from "../ai.js";
@@ -535,6 +535,7 @@ export async function renderLista(container, _params, query = {}) {
           ${badgeStatus}
         </div>
         <p style="font-weight:500;margin:12px 0;">${escapeHtml(q.enunciado)}</p>
+        ${renderImagemEstudo(q.imagem)}
         <div class="opcoes" data-qid="${q.id}">
           ${q.alternativas
             .map(
