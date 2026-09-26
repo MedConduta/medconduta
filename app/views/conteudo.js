@@ -389,7 +389,7 @@ export async function renderDetalhe(container, { id }) {
       <div class="ia-tab-panel" id="ia-tab-panel" hidden></div>
 
       <div class="prose">
-        ${tema.secoes
+        ${(tema.secoes || [])
           .map(
             (s) => `
           <div class="section-block">
