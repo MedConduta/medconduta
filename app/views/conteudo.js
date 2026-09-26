@@ -399,7 +399,7 @@ export async function renderDetalhe(container, { id }) {
           )
           .join("")}
 
-        ${tema.mnemonicos
+        ${(tema.mnemonicos || [])
           .map(
             (m) => `
           <div class="mnemonic">
