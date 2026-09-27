@@ -11,16 +11,19 @@
  * chamada nova.
  */
 
+import { getAll } from "./db.js";
 import { getEvolucaoSemanal } from "./evolucao.js";
 import { getConstancia } from "./constancia.js";
 import { gerarDiagnostico, QUADRANTES } from "./prontidao.js";
+import { MOTIVOS_ERRO } from "./motivoErro.js";
 
 /** Dados da semana atual + anterior, constância e maiores gargalos — tudo que o relatório precisa. */
 export async function getRelatorioSemanal() {
-  const [semanas, constancia, diagnostico] = await Promise.all([
+  const [semanas, constancia, diagnostico, motivosErro] = await Promise.all([
     getEvolucaoSemanal(),
     getConstancia(),
     gerarDiagnostico(),
+    getMotivosErroSemana(),
   ]);
 
   const semanaAtual = semanas[semanas.length - 1];
@@ -30,7 +33,51 @@ export async function getRelatorioSemanal() {
     .filter((c) => c.quadrante === QUADRANTES.critico || c.quadrante === QUADRANTES.atencao)
     .slice(0, 3);
 
-  return { semanaAtual, semanaAnterior, constancia, maioresGargalos, narrativa: gerarNarrativa({ semanaAtual, semanaAnterior, constancia, maioresGargalos }) };
+  return {
+    semanaAtual,
+    semanaAnterior,
+    constancia,
+    maioresGargalos,
+    motivosErro,
+    narrativa: gerarNarrativa({ semanaAtual, semanaAnterior, constancia, maioresGargalos }),
+  };
+}
+
+/**
+ * Agrega, entre os erros dos últimos 7 dias, quantos têm cada motivo
+ * registrado (ver app/motivoErro.js) — mesma janela de "semana atual" usada
+ * em getEvolucaoSemanal(). Campo `motivoErro` é opcional em `respostas`, então
+ * erros de antes dessa funcionalidade simplesmente não entram na contagem.
+ */
+async function getMotivosErroSemana() {
+  const respostas = await getAll("respostas");
+
+  const fimSemana = new Date();
+  fimSemana.setHours(23, 59, 59, 999);
+  const inicioSemana = new Date(fimSemana);
+  inicioSemana.setDate(inicioSemana.getDate() - 6);
+  inicioSemana.setHours(0, 0, 0, 0);
+
+  const errosSemana = respostas.filter((r) => {
+    if (r.acertou || !r.respondidoEm) return false;
+    const t = new Date(r.respondidoEm).getTime();
+    return t >= inicioSemana.getTime() && t <= fimSemana.getTime();
+  });
+
+  const contagem = new Map();
+  let comMotivo = 0;
+  for (const r of errosSemana) {
+    if (!r.motivoErro || !MOTIVOS_ERRO[r.motivoErro]) continue;
+    comMotivo += 1;
+    contagem.set(r.motivoErro, (contagem.get(r.motivoErro) || 0) + 1);
+  }
+
+  const porMotivo = Object.keys(MOTIVOS_ERRO)
+    .map((chave) => ({ chave, rotulo: MOTIVOS_ERRO[chave], quantidade: contagem.get(chave) || 0 }))
+    .filter((m) => m.quantidade > 0)
+    .sort((a, b) => b.quantidade - a.quantidade);
+
+  return { totalErros: errosSemana.length, comMotivo, porMotivo };
 }
 
 function gerarNarrativa({ semanaAtual, semanaAnterior, constancia, maioresGargalos }) {

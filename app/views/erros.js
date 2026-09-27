@@ -2,6 +2,7 @@ import { escapeHtml } from "../utils.js";
 import { setItem } from "../db.js";
 import { getQuestoesEmRevisao, registrarResultadoQuestao } from "../erros.js";
 import { diasAteVencer } from "../sm2.js";
+import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
 
 export async function renderErros(container) {
   await renderTela(container);
@@ -97,10 +98,12 @@ async function renderTela(container) {
           acertou ? "Correto! Intervalo de revisão aumentou." : "Incorreto — volta para revisão em breve."
         }</strong>
             <p style="margin-top:8px;">${escapeHtml(questao.comentario)}</p>
+            ${!acertou ? renderSeletorMotivoErro() : ""}
           </div>
         `;
+        const respostaId = `${questao.id}-${Date.now()}`;
         await setItem("respostas", {
-          id: `${questao.id}-${Date.now()}`,
+          id: respostaId,
           questaoId: questao.id,
           temaId: questao.temaId,
           tema: questao.tema,
@@ -112,6 +115,7 @@ async function renderTela(container) {
           origemRevisaoErro: true,
           respondidoEm: new Date().toISOString(),
         });
+        if (!acertou) ligarSeletorMotivoErro(resultadoEl, (motivo) => registrarMotivoErro(respostaId, motivo));
         await registrarResultadoQuestao(questao.id, acertou);
       });
     });

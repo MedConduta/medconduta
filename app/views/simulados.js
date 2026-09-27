@@ -10,6 +10,7 @@ import {
 } from "../simulados.js";
 import { carregarFavoritos, alternarFavorito } from "../favoritos.js";
 import { icon } from "../components/icons.js";
+import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
 
 export async function renderSimulados(container) {
   let estado = "config"; // config | rodando | resultado
@@ -250,7 +251,10 @@ export async function renderSimulados(container) {
                   })
                   .join("")}
               </div>
-              <div class="explanation-box" style="margin-top:12px;">${escapeHtml(questao.comentario)}</div>
+              <div class="explanation-box" style="margin-top:12px;">
+                ${escapeHtml(questao.comentario)}
+                ${!acertou ? renderSeletorMotivoErro() : ""}
+              </div>
             </div>`;
             })
             .join("")}
@@ -273,6 +277,11 @@ export async function renderSimulados(container) {
         btn.setAttribute("aria-pressed", String(novoEstado));
         btn.title = novoEstado ? "Remover dos favoritos" : "Marcar pra revisar depois";
       });
+    });
+    container.querySelectorAll(".card").forEach((cardEl) => {
+      const qid = cardEl.querySelector(".favorito-btn[data-favorito-id]")?.dataset.favoritoId;
+      const respostaId = qid && resultado.respostaIdPorQuestaoId?.get(qid);
+      if (respostaId) ligarSeletorMotivoErro(cardEl, (motivo) => registrarMotivoErro(respostaId, motivo));
     });
   }
 

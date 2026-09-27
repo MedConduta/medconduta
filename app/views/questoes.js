@@ -15,6 +15,7 @@ import {
   STATUS,
 } from "../questoesIndex.js";
 import { icon } from "../components/icons.js";
+import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
 
 function skeletonCard() {
   return `
@@ -612,12 +613,14 @@ export async function renderLista(container, _params, query = {}) {
             <div class="comentario-extra">
               <button type="button" class="btn btn--ghost" style="padding:4px 0;min-height:auto;font-size:var(--fs-xs);">Comentário</button>
             </div>
+            ${!acertou ? renderSeletorMotivoErro() : ""}
           </div>
         `;
         ligarBotaoComentarioExtra(resultadoEl.querySelector(".comentario-extra"), q);
         const respondidoEm = new Date().toISOString();
+        const respostaId = `${q.id}-${Date.now()}`;
         await setItem("respostas", {
-          id: `${q.id}-${Date.now()}`,
+          id: respostaId,
           questaoId: q.id,
           temaId: q.temaId,
           tema: q.tema,
@@ -629,6 +632,7 @@ export async function renderLista(container, _params, query = {}) {
           tentativa: (indice.statusPorQuestao.get(q.id)?.tentativas || 0) + 1,
           respondidoEm,
         });
+        if (!acertou) ligarSeletorMotivoErro(resultadoEl, (motivo) => registrarMotivoErro(respostaId, motivo));
         await registrarResultadoQuestao(q.id, acertou);
         registrarRespostaNoIndice(indice, q.id, acertou, respondidoEm);
         atualizarContagem();

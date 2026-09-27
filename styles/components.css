@@ -644,6 +644,44 @@ button.stat-tile:hover {
   fill: currentColor;
 }
 
+/* ---------- Motivo do erro ---------- */
+
+.motivo-erro {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+}
+.motivo-erro__label {
+  display: block;
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+.motivo-erro__opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.motivo-erro__btn {
+  font-family: inherit;
+  font-size: var(--fs-xs);
+  padding: 5px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+}
+.motivo-erro__btn:hover {
+  border-color: var(--color-accent);
+}
+.motivo-erro__btn.is-selected {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-text);
+}
+
 /* ---------- Dashboard minimalista (Questões) ---------- */
 
 #questoes-stats.stat-row {
