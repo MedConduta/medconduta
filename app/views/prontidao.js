@@ -1,5 +1,6 @@
 import { escapeHtml } from "../utils.js";
 import { gerarDiagnostico, QUADRANTES } from "../prontidao.js";
+import { icon } from "../components/icons.js";
 
 export async function renderProntidao(container) {
   container.innerHTML = `
@@ -46,6 +47,7 @@ export async function renderProntidao(container) {
 function renderIndice(indicePreparo) {
   return `
     <div class="card" style="margin-bottom:24px;text-align:center;">
+      <span class="icon-badge icon-badge--accent" style="margin-bottom:12px;">${icon("siren", { size: 20 })}</span>
       <div style="font-size:48px;font-weight:700;line-height:1;color:var(--color-accent);">${indicePreparo}</div>
       <div class="list-card__title" style="margin-top:4px;">Índice de Prontidão</div>
       <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;max-width:520px;margin-left:auto;margin-right:auto;">Equilíbrio entre conteúdo estudado e desempenho em questões, ponderado pelo peso estimado de cada área na prova. Sobe conforme você estuda E acerta mais questões nas áreas de maior incidência.</p>

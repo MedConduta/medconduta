@@ -1350,3 +1350,178 @@ button.stat-tile:hover {
   color: var(--color-text-secondary);
   white-space: nowrap;
 }
+
+/* ---------- Identidade visual: badges de ícone, acervo/hero, decks ---------- */
+
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+.icon-badge--sm {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+}
+.icon-badge--accent { background: var(--color-accent-soft); color: var(--color-accent); }
+.icon-badge--success { background: var(--color-success-soft); color: var(--color-success); }
+.icon-badge--warning { background: var(--color-warning-soft); color: var(--color-warning); }
+.icon-badge--danger { background: var(--color-danger-soft); color: var(--color-danger); }
+.icon-badge--muted { background: var(--color-bg-subtle); color: var(--color-text-muted); }
+
+.stat-tile--icon {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Hero de acervo (visão geral do banco) — número grande + barra segmentada. */
+.acervo-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-bottom: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+.acervo-hero__principal {
+  flex: 1;
+  min-width: 240px;
+}
+.acervo-hero__eyebrow {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.acervo-hero__numero {
+  font-size: var(--fs-xxl);
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+  margin: 4px 0 14px;
+}
+.acervo-hero__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.acervo-pill {
+  background: var(--color-bg-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  text-align: center;
+  min-width: 88px;
+}
+.acervo-pill.is-destaque {
+  background: var(--color-warning-soft);
+  border: 1px solid var(--color-warning-border);
+}
+.acervo-pill__valor {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-md);
+  display: block;
+}
+.acervo-pill__label {
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+}
+
+/* Barra segmentada (proporção de estados sobre o total). */
+.progress-segmented {
+  display: flex;
+  height: 10px;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  background: var(--color-border);
+  min-width: 220px;
+}
+.progress-segmented__seg {
+  height: 100%;
+}
+.progress-segmented__legenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+}
+.progress-segmented__legenda .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+/* Decks — atalhos de prática em formato de card (favoritas, erros, filtros salvos...). */
+.deck-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+.deck-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.deck-card.is-destaque {
+  border-color: var(--color-warning-border);
+  background: var(--color-warning-soft);
+}
+.deck-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.deck-card__count {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+  line-height: 1;
+}
+.deck-card__title {
+  font-weight: var(--fw-semibold);
+  margin: 0;
+}
+.deck-card__desc {
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+  flex: 1;
+  margin: 0;
+}
+.deck-card__acoes {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.deck-card__acoes .btn {
+  flex: 1;
+}
+.deck-card__remover {
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+.deck-card__remover:hover {
+  color: var(--color-danger);
+}

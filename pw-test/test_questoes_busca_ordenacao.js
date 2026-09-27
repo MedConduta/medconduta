@@ -30,7 +30,7 @@ const { chromium } = require("playwright");
   await page.fill("#filtro-busca", "hipertensão");
   await page.waitForTimeout(600);
   const temasAposBusca = await page.$$eval("#questoes-lista .card .badge--accent", (els) => els.map((e) => e.textContent.toLowerCase()));
-  const enunciadosAposBusca = await page.$$eval("#questoes-lista .card > p:nth-of-type(2)", (els) => els.map((e) => e.textContent.toLowerCase()));
+  const enunciadosAposBusca = await page.$$eval("#questoes-lista .card .card-enunciado", (els) => els.map((e) => e.textContent.toLowerCase()));
   const todosBatem = temasAposBusca.every((t, i) => t.includes("hipertens") || (enunciadosAposBusca[i] || "").includes("hipertens"));
   console.log("Busca por 'hipertensão' retorna resultados relevantes:", temasAposBusca.length > 0 && todosBatem);
   const chipBusca = await page.$eval("#questoes-chips", (el) => el.textContent);

@@ -8,6 +8,7 @@ import { gerarGradeCurso, encontrarSemanaAtual } from "../curriculo.js";
 import { hojeIso, getAgendaRevisoes } from "../revisaoCurso.js";
 import { AREA_POR_CATEGORIA, ORDEM_AREAS } from "../areas.js";
 import { renderStreak } from "../components/streak.js";
+import { statTile } from "../components/statTile.js";
 
 const PREF_HORAS = "planejador_horas";
 
@@ -93,8 +94,13 @@ export async function renderMinhaPreparacao(container) {
       ${renderModoEspecial(modo)}
 
       <div class="stat-row">
-        <div class="stat-tile"><div class="stat-tile__value">${diagnostico.indicePreparo}</div><div class="stat-tile__label">Índice de Prontidão</div></div>
-        <div class="stat-tile"><div class="stat-tile__value">${fase.id ? escapeHtml(fase.nome) : "—"}</div><div class="stat-tile__label">${diasRestantes !== null ? `${diasRestantes} dias até a prova` : "Prova não configurada"}</div></div>
+        ${statTile({ value: diagnostico.indicePreparo, label: "Índice de Prontidão", icone: "target", tom: "accent" })}
+        ${statTile({
+          value: fase.id ? escapeHtml(fase.nome) : "—",
+          label: diasRestantes !== null ? `${diasRestantes} dias até a prova` : "Prova não configurada",
+          icone: "calendar",
+          tom: "warning",
+        })}
       </div>
 
       ${renderMetaDiaria(metaDiaria)}
@@ -175,10 +181,10 @@ function renderCardCurso(d) {
       <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:center;">
         ${renderAnelProgresso(d.percentualGeral)}
         <div class="stat-row" style="flex:1;min-width:220px;margin-bottom:0;">
-          <div class="stat-tile"><div class="stat-tile__value">${d.revisoesHoje}</div><div class="stat-tile__label">Revisões hoje</div></div>
-          <div class="stat-tile"><div class="stat-tile__value">${d.revisoesAtrasadas}</div><div class="stat-tile__label">Revisões atrasadas</div></div>
-          <div class="stat-tile"><div class="stat-tile__value">${d.totalQuestoesRespondidas}</div><div class="stat-tile__label">Questões feitas</div></div>
-          <div class="stat-tile"><div class="stat-tile__value">${d.percentualAcerto ?? "—"}${d.percentualAcerto !== null ? "%" : ""}</div><div class="stat-tile__label">Taxa de acerto</div></div>
+          ${statTile({ value: d.revisoesHoje, label: "Revisões hoje", icone: "clock", tom: "accent" })}
+          ${statTile({ value: d.revisoesAtrasadas, label: "Revisões atrasadas", icone: "alert-circle", tom: "danger" })}
+          ${statTile({ value: d.totalQuestoesRespondidas, label: "Questões feitas", icone: "checklist", tom: "accent" })}
+          ${statTile({ value: `${d.percentualAcerto ?? "—"}${d.percentualAcerto !== null ? "%" : ""}`, label: "Taxa de acerto", icone: "chart-bar", tom: "success" })}
         </div>
       </div>
     </div>
