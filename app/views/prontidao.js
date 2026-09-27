@@ -9,7 +9,7 @@ export async function renderProntidao(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Prontidão</div>
         <h1>Painel de prontidão</h1>
-        <p class="page-header__desc">Cruza a incidência estimada de cada área na prova com o que você já estudou e seu desempenho real em questões. Ajuda a enxergar onde focar — não é uma previsão de nota nem de aprovação.</p>
+        <p class="page-header__desc">Cruza incidência estimada, estudo e desempenho real — ajuda a enxergar onde focar. Não é previsão de nota nem de aprovação.</p>
       </div>
 
       ${renderIndice(indicePreparo)}

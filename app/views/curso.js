@@ -20,7 +20,7 @@ export async function renderCurso(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Curso</div>
         <h1>Curso</h1>
-        <p class="page-header__desc">O cronograma real de estudo, semana a semana, com revisão espaçada automática por tema. Marque o tema como estudado em <a href="#/residencia/conteudo">Conteúdo</a> — o progresso e as revisões aparecem aqui sozinhos. A Semana 1 começa na sua data de início (abaixo) — as datas da planilha original só definem o espaçamento entre as semanas, não o calendário absoluto.</p>
+        <p class="page-header__desc">Cronograma de estudo semana a semana, com revisão espaçada automática. Marque o tema como estudado em <a href="#/residencia/conteudo">Conteúdo</a> — progresso e revisões aparecem aqui sozinhos.</p>
       </div>
 
       ${renderDashboard(dashboard)}

@@ -36,7 +36,7 @@ export async function renderSimulados(container) {
           <div class="page-header">
             <div class="page-header__eyebrow">Residência — Simulados</div>
             <h1>Prova simulada</h1>
-            <p class="page-header__desc">Questões sorteadas na mesma proporção de incidência estimada das áreas na prova real, com tempo cronometrado e sem feedback imediato — só no final, como numa prova de verdade.</p>
+            <p class="page-header__desc">Questões na proporção de incidência das áreas na prova real, com tempo cronometrado e feedback só no final.</p>
           </div>
 
           <div class="card" style="margin-bottom:24px;">

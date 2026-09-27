@@ -240,12 +240,14 @@
   font-weight: var(--fw-semibold);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--color-accent);
+  color: var(--color-text-muted);
   margin-bottom: var(--space-1);
 }
 
 .page-header__desc {
   color: var(--color-text-secondary);
+  font-size: var(--fs-sm);
+  text-align: justify;
   max-width: 60ch;
 }
 
