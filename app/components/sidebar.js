@@ -25,6 +25,7 @@ export const NAV_ITEMS = [
     items: [
       { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },
       { path: "/residencia/questoes", label: "Questões", icon: "checklist" },
+      { path: "/residencia/flashcards", label: "Flashcards", icon: "layers" },
     ],
   },
   {

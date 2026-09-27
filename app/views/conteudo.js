@@ -10,6 +10,7 @@ import { icon } from "../components/icons.js";
 import { gerarDiagnostico } from "../prontidao.js";
 import { gerarRevisoesParaTema, hojeIso } from "../revisaoCurso.js";
 import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
+import { contarFlashcardsDoTema } from "../flashcards.js";
 
 // Fase 12 — ordem de prioridade dos quadrantes (ver prontidao.js): categorias
 // críticas primeiro, tranquilas por último. Curso reordenado pelo mesmo
@@ -350,6 +351,7 @@ export async function renderDetalhe(container, { id }) {
   const infoCategoria = diagnostico.porCategoria.find((c) => c.categoria === tema.categoria) || null;
   const respostasDoTema = respostas.filter((r) => r.temaId === tema.id);
   const temQuestoes = [...questoesCuradas, ...questoesGeradas].some((q) => q.temaId === tema.id);
+  const qtdFlashcards = await contarFlashcardsDoTema(tema.id);
   const prioridade = infoPrioridade(tema.prioridadeProva);
 
   container.innerHTML = `
@@ -381,6 +383,7 @@ export async function renderDetalhe(container, { id }) {
             ${concluido ? "✓ Marcado como estudado" : "Marcar como estudado"}
           </button>
           ${temQuestoes ? `<a class="btn btn--secondary tema-toolbar__btn" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Praticar questões deste tema</a>` : ""}
+          ${qtdFlashcards ? `<a class="btn btn--secondary tema-toolbar__btn" href="#/residencia/flashcards?tema=${encodeURIComponent(tema.id)}">Flashcards deste tema (${qtdFlashcards})</a>` : ""}
         </div>
 
         <div class="ia-tabbar" id="ia-tabbar" role="tablist" aria-label="Ferramentas de IA para este tema">
