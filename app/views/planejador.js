@@ -2,6 +2,7 @@ import { gerarPlanoDoDia } from "../planner.js";
 import { escapeHtml } from "../utils.js";
 import { getPref, setPref } from "../db.js";
 import { getConstancia } from "../constancia.js";
+import { renderStreak } from "../components/streak.js";
 
 const PREF_HORAS = "planejador_horas";
 
@@ -19,11 +20,13 @@ export async function renderPlanejador(container) {
 
   container.innerHTML = `
     <div class="main__container">
-      <div class="page-header">
-        <div class="page-header__eyebrow">Residência — Hoje</div>
-        <h1>Quanto tempo você tem hoje?</h1>
-        <p class="page-header__desc">Informe as horas disponíveis. Montamos a sequência de maior impacto: revisões vencidas, temas prioritários e questões do seu maior gargalo.</p>
-        ${constancia.streakAtual > 0 ? `<p style="margin-top:8px;font-size:var(--fs-sm);color:var(--color-text-secondary);">🔥 ${constancia.streakAtual} dia${constancia.streakAtual > 1 ? "s" : ""} seguido${constancia.streakAtual > 1 ? "s" : ""} estudando</p>` : ""}
+      <div class="page-header" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:16px;">
+        <div>
+          <div class="page-header__eyebrow">Residência — Hoje</div>
+          <h1>Quanto tempo você tem hoje?</h1>
+          <p class="page-header__desc">Informe as horas disponíveis. Montamos a sequência de maior impacto: revisões vencidas, temas prioritários e questões do seu maior gargalo.</p>
+        </div>
+        ${renderStreak(constancia.streakAtual)}
       </div>
 
       <div class="card" style="margin-bottom:24px;">

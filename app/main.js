@@ -20,6 +20,7 @@ import * as relatorioSemanal from "./views/relatorioSemanal.js";
 import * as planejamentoSemanal from "./views/planejamentoSemanal.js";
 import * as revisaoAltoRendimento from "./views/revisaoAltoRendimento.js";
 import * as curso from "./views/curso.js";
+import * as flashcards from "./views/flashcards.js";
 
 const mainEl = document.getElementById("main-content");
 const sidebarNavEl = document.getElementById("sidebar-nav");
@@ -42,6 +43,7 @@ registerRoute("/residencia/revisao-alto-rendimento", revisaoAltoRendimento.rende
 registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "Hoje" });
 registerRoute("/residencia/cronograma", cronograma.renderCronograma, { title: "Cronograma" });
 registerRoute("/residencia/curso", curso.renderCurso, { title: "Curso" });
+registerRoute("/residencia/flashcards", flashcards.renderFlashcards, { title: "Flashcards" });
 registerRoute("/residencia/prontidao", prontidao.renderProntidao, { title: "Prontidão" });
 registerRoute("/residencia/desempenho", analiseDesempenho.renderAnaliseDesempenho, { title: "Desempenho" });
 registerRoute("/residencia/relatorio-semanal", relatorioSemanal.renderRelatorioSemanal, { title: "Relatório Semanal" });

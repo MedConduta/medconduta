@@ -2,6 +2,7 @@ import { escapeHtml } from "../utils.js";
 import { gerarGradeCurso, getAgendaHoje, getDashboardCurso, setCursoInicio } from "../curriculo.js";
 import { marcarRevisaoConcluida } from "../revisaoCurso.js";
 import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
+import { statTile } from "../components/statTile.js";
 
 /**
  * Curso — gerenciador de estudos sobre o cronograma real (ver app/curriculo.js
@@ -11,7 +12,25 @@ import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
  * duplicado, só organizado.
  */
 export async function renderCurso(container) {
-  container.innerHTML = `<div class="main__container"><div class="empty-state">Montando o curso...</div></div>`;
+  container.innerHTML = `
+    <div class="main__container">
+      <div class="page-header">
+        <div class="skeleton skeleton-line skeleton-line--short" style="height:12px;width:200px;"></div>
+        <div class="skeleton skeleton-line" style="height:28px;width:50%;margin-top:8px;"></div>
+      </div>
+      <div class="stat-row">
+        ${Array.from({ length: 4 }, () => `<div class="skeleton" style="height:76px;"></div>`).join("")}
+      </div>
+      ${Array.from(
+        { length: 3 },
+        () => `
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-line skeleton-line--short"></div>
+          <div class="skeleton skeleton-line"></div>
+        </div>`
+      ).join("")}
+    </div>
+  `;
 
   const [grade, agenda, dashboard] = await Promise.all([gerarGradeCurso(), getAgendaHoje(), getDashboardCurso()]);
 
@@ -133,10 +152,10 @@ function renderDashboard(d) {
       </div>
       ${renderBarraProgresso(d.percentualGeral)}
       <div class="stat-row" style="margin-top:16px;">
-        <div class="stat-tile"><div class="stat-tile__value">${d.revisoesHoje}</div><div class="stat-tile__label">Revisões hoje</div></div>
-        <div class="stat-tile"><div class="stat-tile__value">${d.revisoesAtrasadas}</div><div class="stat-tile__label">Revisões atrasadas</div></div>
-        <div class="stat-tile"><div class="stat-tile__value">${d.totalQuestoesRespondidas}</div><div class="stat-tile__label">Questões feitas</div></div>
-        <div class="stat-tile"><div class="stat-tile__value">${d.percentualAcerto ?? "—"}${d.percentualAcerto !== null ? "%" : ""}</div><div class="stat-tile__label">Taxa de acerto</div></div>
+        ${statTile({ value: d.revisoesHoje, label: "Revisões hoje", icone: "clock", tom: "accent" })}
+        ${statTile({ value: d.revisoesAtrasadas, label: "Revisões atrasadas", icone: "alert-circle", tom: "danger" })}
+        ${statTile({ value: d.totalQuestoesRespondidas, label: "Questões feitas", icone: "checklist", tom: "accent" })}
+        ${statTile({ value: `${d.percentualAcerto ?? "—"}${d.percentualAcerto !== null ? "%" : ""}`, label: "Taxa de acerto", icone: "chart-bar", tom: "success" })}
       </div>
     </div>
   `;

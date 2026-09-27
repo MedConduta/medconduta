@@ -1,7 +1,26 @@
 import { escapeHtml } from "../utils.js";
 import { gerarDiagnostico, QUADRANTES } from "../prontidao.js";
+import { icon } from "../components/icons.js";
 
 export async function renderProntidao(container) {
+  container.innerHTML = `
+    <div class="main__container">
+      <div class="page-header">
+        <div class="skeleton skeleton-line skeleton-line--short" style="height:12px;width:200px;"></div>
+        <div class="skeleton skeleton-line" style="height:28px;width:50%;margin-top:8px;"></div>
+      </div>
+      <div class="skeleton" style="height:120px;margin-bottom:20px;"></div>
+      ${Array.from(
+        { length: 4 },
+        () => `
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-line skeleton-line--short"></div>
+          <div class="skeleton skeleton-line"></div>
+        </div>`
+      ).join("")}
+    </div>
+  `;
+
   const { indicePreparo, porCategoria } = await gerarDiagnostico();
 
   container.innerHTML = `
@@ -28,6 +47,7 @@ export async function renderProntidao(container) {
 function renderIndice(indicePreparo) {
   return `
     <div class="card" style="margin-bottom:24px;text-align:center;">
+      <span class="icon-badge icon-badge--accent" style="margin-bottom:12px;">${icon("siren", { size: 20 })}</span>
       <div style="font-size:48px;font-weight:700;line-height:1;color:var(--color-accent);">${indicePreparo}</div>
       <div class="list-card__title" style="margin-top:4px;">Índice de Prontidão</div>
       <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;max-width:520px;margin-left:auto;margin-right:auto;">Equilíbrio entre conteúdo estudado e desempenho em questões, ponderado pelo peso estimado de cada área na prova. Sobe conforme você estuda E acerta mais questões nas áreas de maior incidência.</p>

@@ -152,6 +152,7 @@ export async function selecionarQuestoesSimuladoEstrategico(tamanho) {
  */
 export async function registrarResultadoSimulado({ questoes, respostasPorQuestaoId, iniciadoEm, duracaoUsadaMin }) {
   const agregadoPorCategoria = new Map();
+  const respostaIdPorQuestaoId = new Map();
   let acertos = 0;
 
   for (const questao of questoes) {
@@ -166,8 +167,10 @@ export async function registrarResultadoSimulado({ questoes, respostasPorQuestao
       agregadoPorCategoria.set(questao.categoria, atual);
     }
 
+    const respostaId = `${questao.id}-simulado-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
+    respostaIdPorQuestaoId.set(questao.id, respostaId);
     await setItem("respostas", {
-      id: `${questao.id}-simulado-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+      id: respostaId,
       questaoId: questao.id,
       temaId: questao.temaId,
       tema: questao.tema,
@@ -191,7 +194,7 @@ export async function registrarResultadoSimulado({ questoes, respostasPorQuestao
     porCategoria: [...agregadoPorCategoria.entries()].map(([categoria, v]) => ({ categoria, ...v })),
   };
   await setItem("simulados", resumo);
-  return resumo;
+  return { ...resumo, respostaIdPorQuestaoId };
 }
 
 /** Histórico de simulados já feitos, mais recente primeiro. */

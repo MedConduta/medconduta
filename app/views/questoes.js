@@ -10,9 +10,12 @@ import {
   especialidadesDe,
   temasDe,
   registrarRespostaNoIndice,
+  alternarFavoritoNoIndice,
   ORDENACAO,
   STATUS,
 } from "../questoesIndex.js";
+import { icon } from "../components/icons.js";
+import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
 
 function skeletonCard() {
   return `
@@ -64,6 +67,7 @@ export async function renderLista(container, _params, query = {}) {
   let filtroEspecialidade;
   let filtroTemaId;
   let filtroStatus = STATUS.TODAS;
+  let filtroFavoritas = query.favoritas === "1";
   let bancaInicial = "todas";
   let anoInicial = "todos";
   let buscaInicial = "";
@@ -106,6 +110,8 @@ export async function renderLista(container, _params, query = {}) {
         <p class="page-header__desc">Navegue por Grande Área › Especialidade › Tema, ou busque por banca. Material de estudo próprio, não de provas reais.</p>
         <p id="questoes-breadcrumb" style="margin-top:8px;font-size:var(--fs-sm);display:none;"></p>
       </div>
+      <div id="questoes-acervo"></div>
+      <div id="questoes-decks"></div>
       <div id="questoes-stats" class="stat-row"></div>
       <button type="button" id="questoes-filtros-toggle" class="btn btn--secondary filtros-toggle">Filtros</button>
       <div id="questoes-filtros-overlay" class="filtros-overlay"></div>
@@ -195,6 +201,8 @@ export async function renderLista(container, _params, query = {}) {
     </div>
   `;
 
+  const acervoEl = container.querySelector("#questoes-acervo");
+  const decksEl = container.querySelector("#questoes-decks");
   const statsEl = container.querySelector("#questoes-stats");
   const breadcrumbEl = container.querySelector("#questoes-breadcrumb");
   const chipsEl = container.querySelector("#questoes-chips");
@@ -264,6 +272,7 @@ export async function renderLista(container, _params, query = {}) {
       banca: filtroBanca.value,
       ano: filtroAno.value,
       status: filtroStatus,
+      favoritas: filtroFavoritas,
       busca: filtroBusca.value.trim(),
       ordenacao: filtroOrdenacao.value,
       qtd: filtroQuantidade.value,
@@ -277,6 +286,7 @@ export async function renderLista(container, _params, query = {}) {
     filtroBanca.value = estado.banca || "todas";
     filtroAno.value = estado.ano || "todos";
     filtroStatus = estado.status || STATUS.TODAS;
+    filtroFavoritas = !!estado.favoritas;
     filtroBusca.value = estado.busca || "";
     filtroOrdenacao.value = estado.ordenacao || ORDENACAO.RECENTES;
     filtroQuantidade.value = estado.qtd || "20";
@@ -291,6 +301,7 @@ export async function renderLista(container, _params, query = {}) {
     filtrosSalvosSelect.innerHTML =
       `<option value="">Selecionar um filtro salvo...</option>` +
       filtrosSalvos.map((f) => `<option value="${escapeHtml(f.id)}">${escapeHtml(f.nome)}</option>`).join("");
+    renderDecks();
   }
 
   filtrosSalvosSelect.addEventListener("change", () => {
@@ -334,6 +345,7 @@ export async function renderLista(container, _params, query = {}) {
   function limparTudo() {
     filtroGrandeArea = filtroEspecialidade = filtroTemaId = undefined;
     filtroStatus = STATUS.TODAS;
+    filtroFavoritas = false;
     filtroBanca.value = "todas";
     filtroAno.value = "todos";
     filtroBusca.value = "";
@@ -373,6 +385,9 @@ export async function renderLista(container, _params, query = {}) {
     if (filtroStatus !== STATUS.TODAS) {
       chips.push({ label: ROTULOS_STATUS[filtroStatus], remover: () => { filtroStatus = STATUS.TODAS; } });
     }
+    if (filtroFavoritas) {
+      chips.push({ label: "Favoritas", remover: () => { filtroFavoritas = false; } });
+    }
 
     filtrosToggleEl.textContent = chips.length ? `Filtros (${chips.length})` : "Filtros";
 
@@ -400,26 +415,164 @@ export async function renderLista(container, _params, query = {}) {
     });
   }
 
+  function iconeStatTile(nomeIcone, tom) {
+    return `<span class="icon-badge icon-badge--sm icon-badge--${tom}">${icon(nomeIcone, { size: 16 })}</span>`;
+  }
+
   function renderStats() {
     const c = contadores(indice, filtrosAtuais());
-    const tile = (status, valor, rotulo) => `
-      <button type="button" class="stat-tile ${filtroStatus === status ? "is-active" : ""}" data-status="${status}">
-        <span class="stat-tile__value">${valor}</span>
-        <span class="stat-tile__label">${rotulo}</span>
+    const tile = (status, valor, rotulo, nomeIcone, tom) => `
+      <button type="button" class="stat-tile stat-tile--icon ${filtroStatus === status ? "is-active" : ""}" data-status="${status}">
+        ${iconeStatTile(nomeIcone, tom)}
+        <span>
+          <span class="stat-tile__value">${valor}</span>
+          <span class="stat-tile__label">${rotulo}</span>
+        </span>
       </button>`;
     statsEl.innerHTML = `
-      ${tile(STATUS.TODAS, c.total, "Total")}
-      ${tile(STATUS.NAO_RESPONDIDAS, c.naoRespondidas, "Não respondidas")}
-      ${tile(STATUS.RESPONDIDAS, c.respondidas, "Respondidas")}
-      ${tile(STATUS.CORRETAS, c.acertos, "Acertos")}
-      ${tile(STATUS.INCORRETAS, c.erros, "Erros")}
-      <div class="stat-tile">
-        <span class="stat-tile__value">${c.percentualAcerto.toFixed(1)}%</span>
-        <span class="stat-tile__label">Aproveitamento</span>
+      ${tile(STATUS.TODAS, c.total, "Total", "layers", "accent")}
+      ${tile(STATUS.NAO_RESPONDIDAS, c.naoRespondidas, "Não respondidas", "eye", "muted")}
+      ${tile(STATUS.RESPONDIDAS, c.respondidas, "Respondidas", "checklist", "accent")}
+      ${tile(STATUS.CORRETAS, c.acertos, "Acertos", "target", "success")}
+      ${tile(STATUS.INCORRETAS, c.erros, "Erros", "alert-circle", "danger")}
+      <button type="button" class="stat-tile stat-tile--icon ${filtroFavoritas ? "is-active" : ""}" data-favoritas="1">
+        ${iconeStatTile("bookmark", "warning")}
+        <span>
+          <span class="stat-tile__value">${c.favoritas}</span>
+          <span class="stat-tile__label">Favoritas</span>
+        </span>
+      </button>
+      <div class="stat-tile stat-tile--icon">
+        ${iconeStatTile("chart-bar", "accent")}
+        <span>
+          <span class="stat-tile__value">${c.percentualAcerto.toFixed(1)}%</span>
+          <span class="stat-tile__label">Aproveitamento</span>
+        </span>
+      </div>`;
+    renderAcervoHero(c);
+    renderDecks();
+  }
+
+  // ---------- Personalização visual (acervo + decks) ----------
+  // Camada puramente visual/aditiva: reaproveita os mesmos contadores() e as
+  // mesmas variáveis de filtro já existentes (filtroStatus/filtroFavoritas) —
+  // nenhum dado novo, nenhuma contagem inventada. "Treinar" num deck só seta
+  // esses filtros e chama renderHierarquia()/refazerFiltro(), exatamente como
+  // os atalhos de estudo e os cliques nos stat-tiles já fazem.
+  function renderAcervoHero(c) {
+    const segmentos = [
+      { valor: c.acertos, cor: "var(--color-success)" },
+      { valor: c.erros, cor: "var(--color-danger)" },
+      { valor: c.naoRespondidas, cor: "var(--color-border-strong)" },
+    ].filter((s) => s.valor > 0);
+
+    acervoEl.innerHTML = `
+      <div class="acervo-hero">
+        <div class="acervo-hero__principal">
+          <div class="acervo-hero__eyebrow">Seu acervo</div>
+          <div class="acervo-hero__numero">${c.total.toLocaleString("pt-BR")} questõe${c.total === 1 ? "" : "s"}</div>
+          <div class="progress-segmented">
+            ${segmentos.map((s) => `<div class="progress-segmented__seg" style="width:${(s.valor / c.total) * 100}%;background:${s.cor};"></div>`).join("")}
+          </div>
+          <div class="progress-segmented__legenda">
+            <span><span class="dot" style="background:var(--color-success);"></span>${c.acertos} acertos</span>
+            <span><span class="dot" style="background:var(--color-danger);"></span>${c.erros} erros</span>
+            <span><span class="dot" style="background:var(--color-border-strong);"></span>${c.naoRespondidas} nunca vistas</span>
+          </div>
+        </div>
+        <div class="acervo-hero__pills">
+          <div class="acervo-pill"><span class="acervo-pill__valor">${c.naoRespondidas}</span><span class="acervo-pill__label">nunca vistas</span></div>
+          <div class="acervo-pill"><span class="acervo-pill__valor">${c.erros}</span><span class="acervo-pill__label">erros abertos</span></div>
+          <div class="acervo-pill is-destaque"><span class="acervo-pill__valor">${c.favoritas}</span><span class="acervo-pill__label">favoritas</span></div>
+        </div>
+      </div>
+    `;
+  }
+
+  function deckCard({ id, icone, tom, count, titulo, desc, destaque, removivel }) {
+    return `
+      <div class="deck-card ${destaque ? "is-destaque" : ""}" data-deck="${id}">
+        <div class="deck-card__top">
+          <span class="icon-badge icon-badge--${tom}">${icon(icone, { size: 18 })}</span>
+          <span class="deck-card__count">${count}</span>
+        </div>
+        <p class="deck-card__title">${escapeHtml(titulo)}</p>
+        <p class="deck-card__desc">${escapeHtml(desc)}</p>
+        <div class="deck-card__acoes">
+          <button type="button" class="btn ${destaque ? "btn--primary" : "btn--secondary"}" data-deck-treinar="${id}">Treinar</button>
+          ${removivel ? `<button type="button" class="deck-card__remover" data-deck-remover="${id}" title="Remover filtro salvo">${icon("close", { size: 16 })}</button>` : ""}
+        </div>
       </div>`;
   }
 
+  function renderDecks() {
+    const c = contadores(indice, {});
+    const decks = [
+      { id: "nao-respondidas", icone: "eye", tom: "muted", count: c.naoRespondidas, titulo: "Nunca vistas", desc: "Estão no acervo e você ainda não respondeu" },
+      { id: "erros", icone: "alert-circle", tom: "danger", count: c.erros, titulo: "Feridas abertas", desc: "Errou e ainda não revisou" },
+      { id: "favoritas", icone: "bookmark", tom: "warning", count: c.favoritas, titulo: "Favoritas", desc: "As que você marcou pra guardar", destaque: true },
+    ];
+    const decksSalvos = filtrosSalvos.map((f) => ({
+      id: `salvo-${f.id}`,
+      icone: "layers",
+      tom: "accent",
+      count: filtrar(indice, f.filtros).length,
+      titulo: f.nome,
+      desc: "Filtro salvo por você",
+      removivel: true,
+    }));
+
+    decksEl.innerHTML = `
+      <h3 style="margin-bottom:4px;">Decks</h3>
+      <p class="page-header__desc" style="margin-top:0;">Cada deck é um filtro salvo — a contagem muda sozinha conforme você responde.</p>
+      <div class="deck-grid">
+        ${[...decks, ...decksSalvos].map(deckCard).join("")}
+      </div>
+      <div class="card" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;">
+        <div>
+          <strong>Montar do zero</strong>
+          <p class="deck-card__desc" style="margin-top:4px;">Escolher assunto, banca, ano e quantidade — os filtros completos, abaixo.</p>
+        </div>
+        <button type="button" class="btn btn--secondary" id="questoes-montagem-avancada">Abrir montagem avançada</button>
+      </div>
+    `;
+
+    decksEl.querySelectorAll("[data-deck-treinar]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.deckTreinar;
+        if (id.startsWith("salvo-")) {
+          const salvo = filtrosSalvos.find((f) => `salvo-${f.id}` === id);
+          if (salvo) aplicarEstadoFiltros(salvo.filtros);
+        } else {
+          limparTudo();
+          if (id === "nao-respondidas") filtroStatus = STATUS.NAO_RESPONDIDAS;
+          else if (id === "erros") filtroStatus = STATUS.INCORRETAS;
+          else if (id === "favoritas") filtroFavoritas = true;
+          renderHierarquia();
+          refazerFiltro();
+        }
+        statsEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+    decksEl.querySelectorAll("[data-deck-remover]").forEach((btn) => {
+      btn.addEventListener("click", async (e) => {
+        e.stopPropagation();
+        const id = btn.dataset.deckRemover.replace(/^salvo-/, "");
+        await removeItem("filtros_salvos", id);
+        await carregarFiltrosSalvos();
+      });
+    });
+    document.getElementById("questoes-montagem-avancada")?.addEventListener("click", () => filtrosToggleEl.click());
+  }
+
   statsEl.addEventListener("click", (e) => {
+    const btnFavoritas = e.target.closest("[data-favoritas]");
+    if (btnFavoritas) {
+      filtroFavoritas = !filtroFavoritas;
+      renderHierarquia();
+      refazerFiltro();
+      return;
+    }
     const btn = e.target.closest("[data-status]");
     if (!btn) return;
     const status = btn.dataset.status;
@@ -435,6 +588,7 @@ export async function renderLista(container, _params, query = {}) {
       especialidade: filtroEspecialidade,
       temaId: filtroTemaId,
       ordenacao: filtroOrdenacao.value,
+      apenasFavoritas: filtroFavoritas,
     };
   }
 
@@ -520,6 +674,7 @@ export async function renderLista(container, _params, query = {}) {
   function renderCard(id) {
     const q = indice.questoesPorId.get(id);
     const status = indice.statusPorQuestao.get(id);
+    const favoritada = indice.favoritos.has(id);
     const badgeStatus = !status?.respondida
       ? ""
       : status.acertouUltima
@@ -527,14 +682,19 @@ export async function renderLista(container, _params, query = {}) {
         : '<span class="badge" style="color:var(--color-danger);border-color:var(--color-danger-border);">✕ Já errou</span>';
     return `
       <div class="card">
-        <p style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-bottom:6px;">${breadcrumbCard(q)}</p>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
+          <p style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-bottom:6px;">${breadcrumbCard(q)}</p>
+          <button type="button" class="favorito-btn ${favoritada ? "is-ativo" : ""}" data-favorito-id="${q.id}" title="${favoritada ? "Remover dos favoritos" : "Marcar pra revisar depois"}" aria-pressed="${favoritada}">
+            ${icon("bookmark", { size: 18 })}
+          </button>
+        </div>
         <div class="list-card__top">
           <span class="badge badge--accent">${escapeHtml(q.tema)}</span>
           <span class="badge">${escapeHtml(q.banca)} · ${q.ano}</span>
           ${q.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
           ${badgeStatus}
         </div>
-        <p style="font-weight:500;margin:12px 0;">${escapeHtml(q.enunciado)}</p>
+        <p class="card-enunciado" style="font-weight:500;margin:12px 0;">${escapeHtml(q.enunciado)}</p>
         ${renderImagemEstudo(q.imagem)}
         <div class="opcoes" data-qid="${q.id}">
           ${q.alternativas
@@ -553,6 +713,17 @@ export async function renderLista(container, _params, query = {}) {
 
   function ligarEventosCard(id) {
     const q = indice.questoesPorId.get(id);
+
+    const favoritoBtn = listaEl.querySelector(`.favorito-btn[data-favorito-id="${CSS.escape(id)}"]`);
+    favoritoBtn?.addEventListener("click", async () => {
+      const novoEstado = await alternarFavoritoNoIndice(indice, id);
+      favoritoBtn.classList.toggle("is-ativo", novoEstado);
+      favoritoBtn.setAttribute("aria-pressed", String(novoEstado));
+      favoritoBtn.title = novoEstado ? "Remover dos favoritos" : "Marcar pra revisar depois";
+      renderStats();
+      if (filtroFavoritas && !novoEstado) refazerFiltro(false);
+    });
+
     const opcoesEl = listaEl.querySelector(`.opcoes[data-qid="${CSS.escape(id)}"]`);
     if (!opcoesEl) return;
     const exibidoEm = Date.now();
@@ -574,12 +745,14 @@ export async function renderLista(container, _params, query = {}) {
             <div class="comentario-extra">
               <button type="button" class="btn btn--ghost" style="padding:4px 0;min-height:auto;font-size:var(--fs-xs);">Comentário</button>
             </div>
+            ${!acertou ? renderSeletorMotivoErro() : ""}
           </div>
         `;
         ligarBotaoComentarioExtra(resultadoEl.querySelector(".comentario-extra"), q);
         const respondidoEm = new Date().toISOString();
+        const respostaId = `${q.id}-${Date.now()}`;
         await setItem("respostas", {
-          id: `${q.id}-${Date.now()}`,
+          id: respostaId,
           questaoId: q.id,
           temaId: q.temaId,
           tema: q.tema,
@@ -591,6 +764,7 @@ export async function renderLista(container, _params, query = {}) {
           tentativa: (indice.statusPorQuestao.get(q.id)?.tentativas || 0) + 1,
           respondidoEm,
         });
+        if (!acertou) ligarSeletorMotivoErro(resultadoEl, (motivo) => registrarMotivoErro(respostaId, motivo));
         await registrarResultadoQuestao(q.id, acertou);
         registrarRespostaNoIndice(indice, q.id, acertou, respondidoEm);
         atualizarContagem();
@@ -697,6 +871,7 @@ export async function renderLista(container, _params, query = {}) {
     if (filtroBanca.value !== "todas") params.set("banca", filtroBanca.value);
     if (filtroAno.value !== "todos") params.set("ano", filtroAno.value);
     if (filtroStatus !== STATUS.TODAS) params.set("status", filtroStatus);
+    if (filtroFavoritas) params.set("favoritas", "1");
     if (filtroBusca.value.trim()) params.set("busca", filtroBusca.value.trim());
     if (filtroOrdenacao.value !== ORDENACAO.RECENTES) params.set("ordenacao", filtroOrdenacao.value);
     if (filtroQuantidade.value !== "20") params.set("qtd", filtroQuantidade.value);

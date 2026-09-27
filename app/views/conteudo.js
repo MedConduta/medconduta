@@ -10,6 +10,8 @@ import { icon } from "../components/icons.js";
 import { gerarDiagnostico } from "../prontidao.js";
 import { gerarRevisoesParaTema, hojeIso } from "../revisaoCurso.js";
 import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
+import { contarFlashcardsDoTema } from "../flashcards.js";
+import { getAnotacao, salvarAnotacao } from "../anotacoes.js";
 
 // Fase 12 — ordem de prioridade dos quadrantes (ver prontidao.js): categorias
 // críticas primeiro, tranquilas por último. Curso reordenado pelo mesmo
@@ -115,6 +117,23 @@ function agruparPorAreaECategoria(temas, infoPorCategoria, concluidosSet) {
 }
 
 export async function renderLista(container) {
+  container.innerHTML = `
+    <div class="main__container">
+      <div class="page-header">
+        <div class="skeleton skeleton-line skeleton-line--short" style="height:12px;width:200px;"></div>
+        <div class="skeleton skeleton-line" style="height:28px;width:50%;margin-top:8px;"></div>
+      </div>
+      ${Array.from(
+        { length: 4 },
+        () => `
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-line skeleton-line--short"></div>
+          <div class="skeleton skeleton-line"></div>
+        </div>`
+      ).join("")}
+    </div>
+  `;
+
   const [temas, progresso, diagnostico] = await Promise.all([todosOsTemas(), getAll("progresso"), gerarDiagnostico()]);
   const concluidosSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
   const infoPorCategoria = new Map(diagnostico.porCategoria.map((c) => [c.categoria, c]));
@@ -337,7 +356,7 @@ export async function renderDetalhe(container, { id }) {
   const progresso = await getItem("progresso", tema.id);
   const concluido = !!progresso?.concluido;
   const geradoPorIA = tema.origem === "ia";
-  const [fluxos, respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes, abasSalvas] = await Promise.all([
+  const [fluxos, respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes, abasSalvas, anotacaoSalva] = await Promise.all([
     fluxogramasDoTema(tema.id),
     getAll("respostas"),
     fetchJsonCached("data/questoes.json"),
@@ -345,11 +364,13 @@ export async function renderDetalhe(container, { id }) {
     gerarDiagnostico(),
     temaAdjacentes(tema),
     carregarAbasSalvas(tema.id),
+    getAnotacao(tema.id),
   ]);
 
   const infoCategoria = diagnostico.porCategoria.find((c) => c.categoria === tema.categoria) || null;
   const respostasDoTema = respostas.filter((r) => r.temaId === tema.id);
   const temQuestoes = [...questoesCuradas, ...questoesGeradas].some((q) => q.temaId === tema.id);
+  const qtdFlashcards = await contarFlashcardsDoTema(tema.id);
   const prioridade = infoPrioridade(tema.prioridadeProva);
 
   container.innerHTML = `
@@ -381,6 +402,7 @@ export async function renderDetalhe(container, { id }) {
             ${concluido ? "✓ Marcado como estudado" : "Marcar como estudado"}
           </button>
           ${temQuestoes ? `<a class="btn btn--secondary tema-toolbar__btn" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Praticar questões deste tema</a>` : ""}
+          ${qtdFlashcards ? `<a class="btn btn--secondary tema-toolbar__btn" href="#/residencia/flashcards?tema=${encodeURIComponent(tema.id)}">Flashcards deste tema (${qtdFlashcards})</a>` : ""}
         </div>
 
         <div class="ia-tabbar" id="ia-tabbar" role="tablist" aria-label="Ferramentas de IA para este tema">
@@ -418,6 +440,15 @@ export async function renderDetalhe(container, { id }) {
           .join("")}
       </div>
 
+      <div class="card" style="margin-top:24px;">
+        <h3 style="margin-top:0;">Suas anotações sobre ${escapeHtml(tema.titulo)}</h3>
+        <p class="page-header__desc" style="margin-top:0;">Livre pra anotar o macete que você mesmo descobriu — só fica salvo aqui, não é usado pela IA.</p>
+        <div class="field" style="margin-bottom:0;">
+          <textarea id="anotacao-tema" rows="5" placeholder="Ex.: lembrar de sempre pensar em X antes de Y...">${escapeHtml(anotacaoSalva)}</textarea>
+        </div>
+        <p id="anotacao-status" style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-top:6px;min-height:1em;"></p>
+      </div>
+
       ${fluxos.length ? renderRelacionados({ fluxos }) : ""}
 
       ${renderNavegacaoAdjacente(adjacentes)}
@@ -427,6 +458,18 @@ export async function renderDetalhe(container, { id }) {
   container.querySelector("#btn-concluir").addEventListener("click", async () => {
     await marcarConcluido(tema.id, !concluido, tema.categoria);
     renderDetalhe(container, { id });
+  });
+
+  const anotacaoEl = container.querySelector("#anotacao-tema");
+  const anotacaoStatusEl = container.querySelector("#anotacao-status");
+  let temporizadorAnotacao = null;
+  anotacaoEl.addEventListener("input", () => {
+    anotacaoStatusEl.textContent = "Salvando...";
+    clearTimeout(temporizadorAnotacao);
+    temporizadorAnotacao = setTimeout(async () => {
+      await salvarAnotacao(tema.id, anotacaoEl.value);
+      anotacaoStatusEl.textContent = "Salvo ✓";
+    }, 600);
   });
 
   // ---------- Abas de IA (Fase 17: movidas pro topo, minimalistas, com resultado salvo por tema) ----------

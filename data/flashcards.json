@@ -1,0 +1,950 @@
+[
+  {
+    "id": "fc-has-1",
+    "temaId": "has",
+    "frente": "Qual o limiar de PA no consultório para diagnóstico de HAS (medidas em consultas diferentes)?",
+    "verso": "PA ≥ 140/90 mmHg, confirmada em pelo menos 2 ocasiões."
+  },
+  {
+    "id": "fc-has-2",
+    "temaId": "has",
+    "frente": "Qual a meta de PA para a maioria dos hipertensos segundo a diretriz brasileira 2025?",
+    "verso": "< 130/80 mmHg (metas mais individualizadas em idosos frágeis)."
+  },
+  {
+    "id": "fc-has-3",
+    "temaId": "has",
+    "frente": "Quais as duas causas secundárias de HAS mais cobradas em prova?",
+    "verso": "Hiperaldosteronismo primário e estenose de artéria renal."
+  },
+  {
+    "id": "fc-has-4",
+    "temaId": "has",
+    "frente": "Qual exame diferencia HAS verdadeira de efeito do jaleco branco?",
+    "verso": "MAPA (Monitorização Ambulatorial da Pressão Arterial) ou MRPA."
+  },
+  {
+    "id": "fc-dm2-1",
+    "temaId": "dm2",
+    "frente": "Quais os 4 critérios diagnósticos de Diabetes Mellitus?",
+    "verso": "Glicemia jejum ≥126, glicemia 2h pós-TOTG ≥200, HbA1c ≥6,5%, ou glicemia aleatória ≥200 com sintomas clássicos."
+  },
+  {
+    "id": "fc-dm2-2",
+    "temaId": "dm2",
+    "frente": "Qual a droga de primeira linha para DM2, independente do peso?",
+    "verso": "Metformina (salvo contraindicação, ex.: TFG muito baixa)."
+  },
+  {
+    "id": "fc-dm2-3",
+    "temaId": "dm2",
+    "frente": "Em qual faixa de HbA1c geralmente se indica insulinização já no diagnóstico?",
+    "verso": "HbA1c ≥ 10% ou sintomas de descompensação franca (perda de peso, poliúria intensa)."
+  },
+  {
+    "id": "fc-dengue-1",
+    "temaId": "dengue",
+    "frente": "Qual sinal de alarme na dengue indica extravasamento plasmático iminente?",
+    "verso": "Dor abdominal intensa e contínua."
+  },
+  {
+    "id": "fc-dengue-2",
+    "temaId": "dengue",
+    "frente": "O que a prova do laço positiva sugere na suspeita de dengue?",
+    "verso": "Fragilidade capilar aumentada — reforça a suspeita clínica, mesmo sem confirmação laboratorial."
+  },
+  {
+    "id": "fc-dengue-3",
+    "temaId": "dengue",
+    "frente": "Por que evitar AAS e AINEs na suspeita de dengue?",
+    "verso": "Risco de sangramento (efeito antiagregante/irritação gástrica) em paciente com plaquetopenia e fragilidade capilar."
+  },
+  {
+    "id": "fc-iam-1",
+    "temaId": "iam",
+    "frente": "Qual o critério laboratorial que define IAM na definição universal?",
+    "verso": "Elevação e/ou queda de troponina com pelo menos 1 valor acima do percentil 99, associada a evidência clínica de isquemia."
+  },
+  {
+    "id": "fc-iam-2",
+    "temaId": "iam",
+    "frente": "Qual o tempo porta-balão ideal para angioplastia primária no IAMCSST?",
+    "verso": "Menos de 90 minutos (até 120 min se necessário transferir para outro serviço)."
+  },
+  {
+    "id": "fc-iam-3",
+    "temaId": "iam",
+    "frente": "Qual a cinética da troponina (início de elevação, pico e duração)?",
+    "verso": "Eleva em 3-4h, pico em 24-48h, permanece elevada por 7-14 dias."
+  },
+  {
+    "id": "fc-iam-4",
+    "temaId": "iam",
+    "frente": "Por que evitar nitrato no IAM de parede inferior com supra em D2, D3, aVF?",
+    "verso": "Suspeita de infarto de ventrículo direito, que é dependente de pré-carga — nitrato pode causar hipotensão grave."
+  },
+  {
+    "id": "fc-pcr-acls-1",
+    "temaId": "pcr-acls",
+    "frente": "Quais são os ritmos chocáveis na PCR?",
+    "verso": "Fibrilação Ventricular (FV) e Taquicardia Ventricular sem pulso (TV sem pulso)."
+  },
+  {
+    "id": "fc-pcr-acls-2",
+    "temaId": "pcr-acls",
+    "frente": "Quais são os ritmos não chocáveis na PCR?",
+    "verso": "Assistolia e Atividade Elétrica Sem Pulso (AESP)."
+  },
+  {
+    "id": "fc-pcr-acls-3",
+    "temaId": "pcr-acls",
+    "frente": "Qual a dose e intervalo de adrenalina no ACLS?",
+    "verso": "1 mg IV/IO a cada 3-5 minutos."
+  },
+  {
+    "id": "fc-pcr-acls-4",
+    "temaId": "pcr-acls",
+    "frente": "Qual o antiarrítmico de escolha em FV/TV sem pulso refratária ao choque?",
+    "verso": "Amiodarona 300 mg IV (pode repetir 150 mg)."
+  },
+  {
+    "id": "fc-abdome-agudo-1",
+    "temaId": "abdome-agudo",
+    "frente": "Como é a migração clássica da dor na apendicite aguda?",
+    "verso": "Começa periumbilical (dor visceral) e migra para a fossa ilíaca direita (dor somática, parietal)."
+  },
+  {
+    "id": "fc-abdome-agudo-2",
+    "temaId": "abdome-agudo",
+    "frente": "Onde fica o ponto de McBurney?",
+    "verso": "No terço distal da linha entre a espinha ilíaca ântero-superior e a cicatriz umbilical."
+  },
+  {
+    "id": "fc-abdome-agudo-3",
+    "temaId": "abdome-agudo",
+    "frente": "O que é o sinal de Blumberg?",
+    "verso": "Dor à descompressão brusca da parede abdominal em fossa ilíaca direita — indica irritação peritoneal."
+  },
+  {
+    "id": "fc-abdome-agudo-4",
+    "temaId": "abdome-agudo",
+    "frente": "Qual o exame de imagem inicial preferido em crianças e gestantes com suspeita de apendicite?",
+    "verso": "Ultrassonografia (evita radiação); em adultos não gestantes, TC de abdome tem maior acurácia."
+  },
+  {
+    "id": "fc-politrauma-abcde-1",
+    "temaId": "politrauma-abcde",
+    "frente": "Qual a sequência do ABCDE no atendimento inicial ao trauma?",
+    "verso": "A — via aérea com controle cervical, B — respiração, C — circulação e controle de hemorragia, D — disfunção neurológica, E — exposição/controle de hipotermia."
+  },
+  {
+    "id": "fc-politrauma-abcde-2",
+    "temaId": "politrauma-abcde",
+    "frente": "Quais os limites e componentes da Escala de Coma de Glasgow?",
+    "verso": "Varia de 3 a 15: abertura ocular (até 4) + resposta verbal (até 5) + resposta motora (até 6)."
+  },
+  {
+    "id": "fc-politrauma-abcde-3",
+    "temaId": "politrauma-abcde",
+    "frente": "Quais sinais sugerem obstrução de via aérea no trauma?",
+    "verso": "Estridor, rouquidão, uso de musculatura acessória, dispneia importante."
+  },
+  {
+    "id": "fc-politrauma-abcde-4",
+    "temaId": "politrauma-abcde",
+    "frente": "O que caracteriza o choque hemorrágico classe III?",
+    "verso": "Perda de 30-40% da volemia — taquicardia, hipotensão e alteração do estado mental (confusão)."
+  },
+  {
+    "id": "fc-pre-eclampsia-1",
+    "temaId": "pre-eclampsia",
+    "frente": "Como se define pré-eclâmpsia?",
+    "verso": "PA ≥140/90 mmHg após 20 semanas de gestação, associada a proteinúria ou outra disfunção orgânica."
+  },
+  {
+    "id": "fc-pre-eclampsia-2",
+    "temaId": "pre-eclampsia",
+    "frente": "Quais são critérios de gravidade na pré-eclâmpsia?",
+    "verso": "PA ≥160/110, plaquetopenia, elevação de transaminases, cefaleia/escotomas persistentes, edema agudo de pulmão."
+  },
+  {
+    "id": "fc-pre-eclampsia-3",
+    "temaId": "pre-eclampsia",
+    "frente": "Qual a droga usada para prevenção/tratamento de eclâmpsia e sua dose de ataque?",
+    "verso": "Sulfato de magnésio, dose de ataque de 4-6 g IV."
+  },
+  {
+    "id": "fc-pre-eclampsia-4",
+    "temaId": "pre-eclampsia",
+    "frente": "Qual o tratamento definitivo da pré-eclâmpsia?",
+    "verso": "Interrupção da gestação (parto), ajustada ao risco materno-fetal e à idade gestacional."
+  },
+  {
+    "id": "fc-ictericia-neonatal-1",
+    "temaId": "ictericia-neonatal",
+    "frente": "Como diferenciar icterícia fisiológica da patológica pelo início?",
+    "verso": "Fisiológica aparece após 24h de vida (pico 3º-5º dia); patológica aparece nas primeiras 24h de vida."
+  },
+  {
+    "id": "fc-ictericia-neonatal-2",
+    "temaId": "ictericia-neonatal",
+    "frente": "Qual o principal tratamento da icterícia neonatal por bilirrubina indireta?",
+    "verso": "Fototerapia, indicada conforme nomograma por idade em horas e nível de bilirrubina; exsanguineotransfusão nos casos graves."
+  },
+  {
+    "id": "fc-ictericia-neonatal-3",
+    "temaId": "ictericia-neonatal",
+    "frente": "O que é kernicterus?",
+    "verso": "Encefalopatia bilirrubínica causada por depósito de bilirrubina indireta em núcleos da base — complicação grave e permanente."
+  },
+  {
+    "id": "fc-diarreia-infantil-1",
+    "temaId": "diarreia-infantil",
+    "frente": "Quais sinais indicam desidratação grave pela classificação da OMS?",
+    "verso": "Letargia/inconsciência, olhos fundos, sinal da prega cutânea muito lento (>2s), incapacidade de beber."
+  },
+  {
+    "id": "fc-diarreia-infantil-2",
+    "temaId": "diarreia-infantil",
+    "frente": "Quais são os planos de tratamento da diarreia aguda (OMS/MS)?",
+    "verso": "Plano A (em casa, TRO), Plano B (TRO supervisionada na unidade), Plano C (hidratação venosa para desidratação grave)."
+  },
+  {
+    "id": "fc-diarreia-infantil-3",
+    "temaId": "diarreia-infantil",
+    "frente": "Qual a base da terapia de reidratação oral (TRO)?",
+    "verso": "Solução de reidratação oral com glicose e eletrólitos, que aproveita o cotransporte sódio-glicose intacto no intestino."
+  },
+  {
+    "id": "fc-colecistite-colangite-1",
+    "temaId": "colecistite-colangite",
+    "frente": "O que é o sinal de Murphy?",
+    "verso": "Dor e interrupção da inspiração à palpação do hipocôndrio direito — sugestivo de colecistite aguda."
+  },
+  {
+    "id": "fc-colecistite-colangite-2",
+    "temaId": "colecistite-colangite",
+    "frente": "Qual a tríade de Charcot e o que ela sugere?",
+    "verso": "Febre + icterícia + dor em hipocôndrio direito — sugere colangite aguda."
+  },
+  {
+    "id": "fc-colecistite-colangite-3",
+    "temaId": "colecistite-colangite",
+    "frente": "O que é a pêntade de Reynolds?",
+    "verso": "Tríade de Charcot + hipotensão + confusão mental — indica colangite supurativa, emergência médica."
+  },
+  {
+    "id": "fc-colecistite-colangite-4",
+    "temaId": "colecistite-colangite",
+    "frente": "Qual o tratamento da colangite aguda além do antibiótico?",
+    "verso": "Descompressão da via biliar, geralmente por CPRE."
+  },
+  {
+    "id": "fc-hemorragia-1a-metade-1",
+    "temaId": "hemorragia-1a-metade",
+    "frente": "Quais as 3 principais causas de sangramento na 1ª metade da gestação?",
+    "verso": "Abortamento, gravidez ectópica e doença trofoblástica gestacional (mola hidatiforme)."
+  },
+  {
+    "id": "fc-hemorragia-1a-metade-2",
+    "temaId": "hemorragia-1a-metade",
+    "frente": "Como suspeitar de gravidez ectópica?",
+    "verso": "Atraso menstrual + dor abdominal + sangramento vaginal, com beta-hCG que não dobra adequadamente e USG sem saco gestacional intraútero."
+  },
+  {
+    "id": "fc-hemorragia-1a-metade-3",
+    "temaId": "hemorragia-1a-metade",
+    "frente": "Qual achado ultrassonográfico é clássico da mola hidatiforme?",
+    "verso": "Imagem em \"flocos de neve\" ou \"cachos de uva\", com beta-hCG muito elevado."
+  },
+  {
+    "id": "fc-puericultura-pni-1",
+    "temaId": "puericultura-pni",
+    "frente": "Quais vacinas são dadas ao nascimento no calendário nacional?",
+    "verso": "BCG e a 1ª dose de Hepatite B."
+  },
+  {
+    "id": "fc-puericultura-pni-2",
+    "temaId": "puericultura-pni",
+    "frente": "Em que idades é feita a vacina pentavalente?",
+    "verso": "2, 4 e 6 meses de vida."
+  },
+  {
+    "id": "fc-puericultura-pni-3",
+    "temaId": "puericultura-pni",
+    "frente": "Quando é aplicada a tríplice viral (SCR) pela primeira vez?",
+    "verso": "Aos 12 meses de idade."
+  },
+  {
+    "id": "fc-sepse-neonatal-1",
+    "temaId": "sepse-neonatal",
+    "frente": "Como se diferencia sepse neonatal precoce de tardia?",
+    "verso": "Precoce: início <72h de vida, ligada a germes maternos (ex.: Streptococcus agalactiae/GBS, E. coli); tardia: >72h, germes hospitalares/comunitários."
+  },
+  {
+    "id": "fc-sepse-neonatal-2",
+    "temaId": "sepse-neonatal",
+    "frente": "Quais fatores de risco maternos aumentam o risco de sepse neonatal precoce?",
+    "verso": "Rotura prematura de membranas >18h, corioamnionite e colonização materna por Streptococcus agalactiae (GBS)."
+  },
+  {
+    "id": "fc-sepse-neonatal-3",
+    "temaId": "sepse-neonatal",
+    "frente": "Qual o esquema antibiótico empírico inicial na sepse neonatal precoce?",
+    "verso": "Ampicilina associada a um aminoglicosídeo (geralmente gentamicina)."
+  },
+  {
+    "id": "fc-fa-1",
+    "temaId": "fa",
+    "frente": "Quais os achados clássicos de fibrilação atrial no ECG?",
+    "verso": "Ausência de onda P e intervalo RR irregularmente irregular."
+  },
+  {
+    "id": "fc-fa-2",
+    "temaId": "fa",
+    "frente": "Qual escore avalia o risco de AVC na FA e guia a decisão de anticoagular?",
+    "verso": "CHA2DS2-VASc."
+  },
+  {
+    "id": "fc-fa-3",
+    "temaId": "fa",
+    "frente": "Qual escore avalia risco de sangramento em pacientes anticoagulados?",
+    "verso": "HAS-BLED."
+  },
+  {
+    "id": "fc-fa-4",
+    "temaId": "fa",
+    "frente": "Qual a conduta na FA com instabilidade hemodinâmica?",
+    "verso": "Cardioversão elétrica sincronizada imediata."
+  },
+  {
+    "id": "fc-cetoacidose-diabetica-1",
+    "temaId": "cetoacidose-diabetica",
+    "frente": "Qual a tríade diagnóstica da cetoacidose diabética?",
+    "verso": "Hiperglicemia (geralmente >250 mg/dL), acidose metabólica (pH <7,3, HCO3 <18) e cetonemia/cetonúria."
+  },
+  {
+    "id": "fc-cetoacidose-diabetica-2",
+    "temaId": "cetoacidose-diabetica",
+    "frente": "Qual a primeira medida terapêutica na cetoacidose diabética, antes da insulina?",
+    "verso": "Hidratação venosa vigorosa com solução salina isotônica."
+  },
+  {
+    "id": "fc-cetoacidose-diabetica-3",
+    "temaId": "cetoacidose-diabetica",
+    "frente": "Por que não iniciar insulina se o potássio sérico estiver abaixo de 3,3 mEq/L?",
+    "verso": "A insulina desloca potássio para dentro da célula e pode precipitar arritmia grave por hipocalemia — repor K+ antes."
+  },
+  {
+    "id": "fc-cetoacidose-diabetica-4",
+    "temaId": "cetoacidose-diabetica",
+    "frente": "Qual a complicação temida do tratamento da CAD, mais comum em crianças?",
+    "verso": "Edema cerebral."
+  },
+  {
+    "id": "fc-obstrucao-intestinal-1",
+    "temaId": "obstrucao-intestinal",
+    "frente": "Qual a causa mais comum de obstrução de intestino delgado?",
+    "verso": "Bridas/aderências pós-cirúrgicas."
+  },
+  {
+    "id": "fc-obstrucao-intestinal-2",
+    "temaId": "obstrucao-intestinal",
+    "frente": "Qual a causa mais comum de obstrução de cólon?",
+    "verso": "Neoplasia colorretal."
+  },
+  {
+    "id": "fc-obstrucao-intestinal-3",
+    "temaId": "obstrucao-intestinal",
+    "frente": "Quais achados radiográficos sugerem obstrução intestinal?",
+    "verso": "Distensão de alças e níveis hidroaéreos (imagem em \"escada\")."
+  },
+  {
+    "id": "fc-obstrucao-intestinal-4",
+    "temaId": "obstrucao-intestinal",
+    "frente": "Quando a obstrução intestinal exige cirurgia de urgência?",
+    "verso": "Quando há sinais de estrangulamento/isquemia (dor desproporcional, peritonite, sinais sistêmicos de sepse)."
+  },
+  {
+    "id": "fc-doencas-exantematicas-1",
+    "temaId": "doencas-exantematicas",
+    "frente": "Quais são as manchas de Koplik e em qual doença aparecem?",
+    "verso": "Manchas brancas na mucosa oral, patognomônicas do sarampo, que precedem o exantema."
+  },
+  {
+    "id": "fc-doencas-exantematicas-2",
+    "temaId": "doencas-exantematicas",
+    "frente": "Qual doença exantemática cursa com linfadenopatia retroauricular e exantema rendilhado?",
+    "verso": "Rubéola."
+  },
+  {
+    "id": "fc-doencas-exantematicas-3",
+    "temaId": "doencas-exantematicas",
+    "frente": "Como é o padrão típico do exantema súbito (roséola)?",
+    "verso": "Febre alta por 3 dias que cede subitamente, seguida do surgimento do exantema (causada pelo herpesvírus 6)."
+  },
+  {
+    "id": "fc-doencas-exantematicas-4",
+    "temaId": "doencas-exantematicas",
+    "frente": "Quais achados caracterizam a escarlatina?",
+    "verso": "Exantema com textura em lixa e língua em framboesa, causados pelo Streptococcus pyogenes."
+  },
+  {
+    "id": "fc-tuberculose-1",
+    "temaId": "tuberculose",
+    "frente": "Qual o esquema básico de tratamento da tuberculose (RIPE) e sua duração?",
+    "verso": "Rifampicina, Isoniazida, Pirazinamida e Etambutol por 2 meses, seguidos de Rifampicina e Isoniazida por mais 4 meses (total 6 meses)."
+  },
+  {
+    "id": "fc-tuberculose-2",
+    "temaId": "tuberculose",
+    "frente": "Qual o achado radiográfico clássico da tuberculose pulmonar pós-primária?",
+    "verso": "Cavitação em lobos superiores."
+  },
+  {
+    "id": "fc-tuberculose-3",
+    "temaId": "tuberculose",
+    "frente": "A vacina BCG previne o quê especificamente?",
+    "verso": "As formas graves da tuberculose na infância (miliar e meníngea) — não previne a infecção pulmonar do adulto."
+  },
+  {
+    "id": "fc-tuberculose-4",
+    "temaId": "tuberculose",
+    "frente": "Qual o teste rápido molecular recomendado para diagnóstico de TB?",
+    "verso": "Teste rápido molecular (GeneXpert MTB/RIF), que também detecta resistência à rifampicina."
+  },
+  {
+    "id": "fc-hernias-parede-abdominal-1",
+    "temaId": "hernias-parede-abdominal",
+    "frente": "Como se diferencia hérnia inguinal indireta de direta pela relação com os vasos epigástricos?",
+    "verso": "Indireta: lateral aos vasos epigástricos inferiores (sai pelo anel inguinal profundo, geralmente congênita); direta: medial aos vasos (triângulo de Hesselbach, adquirida)."
+  },
+  {
+    "id": "fc-hernias-parede-abdominal-2",
+    "temaId": "hernias-parede-abdominal",
+    "frente": "Qual hérnia de parede abdominal tem maior risco de encarceramento/estrangulamento?",
+    "verso": "Hérnia femoral (mais comum em mulheres)."
+  },
+  {
+    "id": "fc-hernias-parede-abdominal-3",
+    "temaId": "hernias-parede-abdominal",
+    "frente": "Qual o tratamento das hérnias de parede abdominal sintomáticas?",
+    "verso": "Herniorrafia/hernioplastia, geralmente com uso de tela."
+  },
+  {
+    "id": "fc-pre-pos-operatorio-1",
+    "temaId": "pre-pos-operatorio",
+    "frente": "Qual o tempo de jejum pré-operatório recomendado para sólidos e líquidos claros?",
+    "verso": "Sólidos: 6-8 horas; líquidos claros: até 2 horas antes da cirurgia."
+  },
+  {
+    "id": "fc-pre-pos-operatorio-2",
+    "temaId": "pre-pos-operatorio",
+    "frente": "Qual classificação avalia o risco cirúrgico/anestésico do paciente?",
+    "verso": "Classificação ASA (American Society of Anesthesiologists), de I a V."
+  },
+  {
+    "id": "fc-pre-pos-operatorio-3",
+    "temaId": "pre-pos-operatorio",
+    "frente": "Qual a causa mais comum de febre no pós-operatório precoce (24-48h)?",
+    "verso": "Atelectasia pulmonar."
+  },
+  {
+    "id": "fc-pre-pos-operatorio-4",
+    "temaId": "pre-pos-operatorio",
+    "frente": "Qual a profilaxia padrão para TVP no perioperatório?",
+    "verso": "Heparina de baixo peso molecular associada a medidas mecânicas (compressão pneumática/meias elásticas)."
+  },
+  {
+    "id": "fc-planejamento-familiar-1",
+    "temaId": "planejamento-familiar",
+    "frente": "Qual o método contraceptivo reversível mais eficaz?",
+    "verso": "DIU (de cobre ou hormonal)."
+  },
+  {
+    "id": "fc-planejamento-familiar-2",
+    "temaId": "planejamento-familiar",
+    "frente": "Quais são contraindicações absolutas ao uso de estrogênio em anticoncepcionais?",
+    "verso": "Tabagismo em mulheres >35 anos, história de tromboembolismo e enxaqueca com aura."
+  },
+  {
+    "id": "fc-planejamento-familiar-3",
+    "temaId": "planejamento-familiar",
+    "frente": "Qual o método de escolha para contracepção durante a amamentação exclusiva?",
+    "verso": "Progestagênio isolado (minipílula) ou o método LAM (lactação e amenorreia), nos primeiros 6 meses."
+  },
+  {
+    "id": "fc-indicadores-saude-1",
+    "temaId": "indicadores-saude",
+    "frente": "Como se calcula o coeficiente de mortalidade infantil?",
+    "verso": "Número de óbitos em menores de 1 ano dividido pelo número de nascidos vivos, multiplicado por 1000."
+  },
+  {
+    "id": "fc-indicadores-saude-2",
+    "temaId": "indicadores-saude",
+    "frente": "Qual a diferença entre prevalência e incidência?",
+    "verso": "Prevalência mede todos os casos (novos + antigos) existentes num momento; incidência mede apenas os casos novos surgidos num período, na população em risco."
+  },
+  {
+    "id": "fc-indicadores-saude-3",
+    "temaId": "indicadores-saude",
+    "frente": "O que mede a mortalidade proporcional por causa?",
+    "verso": "O percentual de óbitos por uma causa específica em relação ao total de óbitos no período."
+  },
+  {
+    "id": "fc-assistencia-parto-partograma-1",
+    "temaId": "assistencia-parto-partograma",
+    "frente": "O que é o partograma e o que ele registra?",
+    "verso": "Registro gráfico da evolução do trabalho de parto — dilatação cervical e descida da apresentação ao longo do tempo, com linhas de alerta e de ação."
+  },
+  {
+    "id": "fc-assistencia-parto-partograma-2",
+    "temaId": "assistencia-parto-partograma",
+    "frente": "Quando se considera que a paciente está na fase ativa do trabalho de parto?",
+    "verso": "Dilatação cervical ≥6 cm com contrações uterinas regulares e efetivas."
+  },
+  {
+    "id": "fc-assistencia-parto-partograma-3",
+    "temaId": "assistencia-parto-partograma",
+    "frente": "Qual manobra é utilizada na distocia de ombro?",
+    "verso": "Manobra de McRoberts (associada à pressão suprapúbica)."
+  },
+  {
+    "id": "fc-bronquiolite-viral-aguda-1",
+    "temaId": "bronquiolite-viral-aguda",
+    "frente": "Qual o agente etiológico mais comum da bronquiolite viral aguda?",
+    "verso": "Vírus Sincicial Respiratório (VSR)."
+  },
+  {
+    "id": "fc-bronquiolite-viral-aguda-2",
+    "temaId": "bronquiolite-viral-aguda",
+    "frente": "Em qual faixa etária a bronquiolite é mais comum e mais grave?",
+    "verso": "Lactentes menores de 2 anos, com pico de gravidade abaixo de 6 meses."
+  },
+  {
+    "id": "fc-bronquiolite-viral-aguda-3",
+    "temaId": "bronquiolite-viral-aguda",
+    "frente": "Qual o tratamento recomendado na bronquiolite viral aguda?",
+    "verso": "Suporte clínico (oxigênio se necessário, hidratação) — broncodilatadores e corticoides não são recomendados rotineiramente."
+  },
+  {
+    "id": "fc-etica-medica-bioetica-1",
+    "temaId": "etica-medica-bioetica",
+    "frente": "Quais são os 4 princípios clássicos da bioética?",
+    "verso": "Autonomia, beneficência, não maleficência e justiça."
+  },
+  {
+    "id": "fc-etica-medica-bioetica-2",
+    "temaId": "etica-medica-bioetica",
+    "frente": "Em quais situações o sigilo médico pode ser quebrado?",
+    "verso": "Justa causa, dever legal (ex.: doenças de notificação compulsória) ou autorização expressa do paciente."
+  },
+  {
+    "id": "fc-etica-medica-bioetica-3",
+    "temaId": "etica-medica-bioetica",
+    "frente": "O que é ortotanásia e ela é permitida no Brasil?",
+    "verso": "É permitir a morte natural sem obstinação terapêutica (sem prolongar artificialmente o sofrimento) — é eticamente permitida."
+  },
+  {
+    "id": "fc-estudos-epidemiologicos-1",
+    "temaId": "estudos-epidemiologicos",
+    "frente": "O que caracteriza um estudo de coorte e qual medida de associação ele calcula?",
+    "verso": "Observacional, acompanha expostos e não expostos ao longo do tempo até o desfecho; calcula incidência e risco relativo."
+  },
+  {
+    "id": "fc-estudos-epidemiologicos-2",
+    "temaId": "estudos-epidemiologicos",
+    "frente": "O que caracteriza um estudo caso-controle e qual medida de associação ele calcula?",
+    "verso": "Parte do desfecho (casos vs. controles) e investiga exposições passadas; calcula odds ratio (razão de chances)."
+  },
+  {
+    "id": "fc-estudos-epidemiologicos-3",
+    "temaId": "estudos-epidemiologicos",
+    "frente": "Por que o ensaio clínico randomizado é considerado padrão-ouro para inferir causalidade?",
+    "verso": "A randomização distribui igualmente os fatores de confusão conhecidos e desconhecidos entre os grupos."
+  },
+  {
+    "id": "fc-aps-esf-1",
+    "temaId": "aps-esf",
+    "frente": "Quais são os atributos essenciais da Atenção Primária à Saúde?",
+    "verso": "Acesso de primeiro contato, longitudinalidade, integralidade e coordenação do cuidado."
+  },
+  {
+    "id": "fc-aps-esf-2",
+    "temaId": "aps-esf",
+    "frente": "Qual a composição mínima de uma equipe de Saúde da Família?",
+    "verso": "Médico, enfermeiro, técnico de enfermagem e agentes comunitários de saúde (ACS)."
+  },
+  {
+    "id": "fc-aps-esf-3",
+    "temaId": "aps-esf",
+    "frente": "O que é o território adscrito na Estratégia Saúde da Família?",
+    "verso": "A área geográfica definida pela qual a equipe de ESF é responsável, com população cadastrada."
+  },
+  {
+    "id": "fc-doenca-arterial-coronariana-cronica-1",
+    "temaId": "doenca-arterial-coronariana-cronica",
+    "frente": "Como se caracteriza a dor da angina estável?",
+    "verso": "Dor precordial desencadeada por esforço físico, previsível, aliviada com repouso ou nitrato em minutos."
+  },
+  {
+    "id": "fc-doenca-arterial-coronariana-cronica-2",
+    "temaId": "doenca-arterial-coronariana-cronica",
+    "frente": "Qual o exame inicial de escolha para avaliar angina estável em paciente com ECG basal interpretável?",
+    "verso": "Teste ergométrico."
+  },
+  {
+    "id": "fc-doenca-arterial-coronariana-cronica-3",
+    "temaId": "doenca-arterial-coronariana-cronica",
+    "frente": "Quais fármacos compõem o tratamento clínico otimizado da DAC crônica?",
+    "verso": "AAS, estatina de alta potência e betabloqueador, associando nitrato se sintomas persistirem."
+  },
+  {
+    "id": "fc-angina-instavel-iamssst-1",
+    "temaId": "angina-instavel-iamssst",
+    "frente": "Qual a principal diferença laboratorial entre angina instável e IAMSSST?",
+    "verso": "No IAMSSST há elevação de troponina (necrose miocárdica); na angina instável a troponina é negativa."
+  },
+  {
+    "id": "fc-angina-instavel-iamssst-2",
+    "temaId": "angina-instavel-iamssst",
+    "frente": "Qual o padrão de ECG esperado nas síndromes coronarianas sem supra de ST?",
+    "verso": "Infradesnivelamento do segmento ST e/ou inversão de onda T, sem supradesnivelamento."
+  },
+  {
+    "id": "fc-angina-instavel-iamssst-3",
+    "temaId": "angina-instavel-iamssst",
+    "frente": "Quais escores estratificam risco nas SCA sem supra de ST?",
+    "verso": "TIMI e GRACE."
+  },
+  {
+    "id": "fc-arritmias-cardiacas-gerais-1",
+    "temaId": "arritmias-cardiacas-gerais",
+    "frente": "Qual a droga de primeira linha para bradicardia sintomática?",
+    "verso": "Atropina 0,5 mg IV."
+  },
+  {
+    "id": "fc-arritmias-cardiacas-gerais-2",
+    "temaId": "arritmias-cardiacas-gerais",
+    "frente": "Qual a conduta em taquicardia com pulso e instabilidade hemodinâmica?",
+    "verso": "Cardioversão elétrica sincronizada imediata."
+  },
+  {
+    "id": "fc-arritmias-cardiacas-gerais-3",
+    "temaId": "arritmias-cardiacas-gerais",
+    "frente": "Qual o tratamento específico de torsades de pointes?",
+    "verso": "Sulfato de magnésio intravenoso."
+  },
+  {
+    "id": "fc-emergencia-hipertensiva-1",
+    "temaId": "emergencia-hipertensiva",
+    "frente": "Qual a diferença entre emergência e urgência hipertensiva?",
+    "verso": "Emergência: PA elevada com lesão aguda de órgão-alvo, exige redução em minutos-horas por via parenteral; urgência: PA elevada sem lesão aguda, redução em 24-48h por via oral."
+  },
+  {
+    "id": "fc-emergencia-hipertensiva-2",
+    "temaId": "emergencia-hipertensiva",
+    "frente": "Qual a meta de redução da PA na primeira hora da emergência hipertensiva (regra geral)?",
+    "verso": "Reduzir a PA média em até 25% na primeira hora (exceto em dissecção de aorta e alguns AVCs, que têm metas específicas)."
+  },
+  {
+    "id": "fc-emergencia-hipertensiva-3",
+    "temaId": "emergencia-hipertensiva",
+    "frente": "Por que iniciar betabloqueador antes de vasodilatador na dissecção de aorta?",
+    "verso": "Vasodilatador isolado pode causar taquicardia reflexa e aumentar o estresse de cisalhamento na parede aórtica — betabloqueador controla a frequência e a força de contração primeiro."
+  },
+  {
+    "id": "fc-arboviroses-zika-chikungunya-febre-amarela-1",
+    "temaId": "arboviroses-zika-chikungunya-febre-amarela",
+    "frente": "Qual a principal complicação congênita associada ao Zika vírus?",
+    "verso": "Microcefalia e outras malformações do sistema nervoso central."
+  },
+  {
+    "id": "fc-arboviroses-zika-chikungunya-febre-amarela-2",
+    "temaId": "arboviroses-zika-chikungunya-febre-amarela",
+    "frente": "Qual característica clínica diferencia a chikungunya das demais arboviroses?",
+    "verso": "Artralgia intensa e incapacitante, que pode se tornar crônica."
+  },
+  {
+    "id": "fc-arboviroses-zika-chikungunya-febre-amarela-3",
+    "temaId": "arboviroses-zika-chikungunya-febre-amarela",
+    "frente": "O que é o sinal de Faget e em qual doença ele aparece?",
+    "verso": "Bradicardia relativa apesar de febre alta — clássico da febre amarela."
+  },
+  {
+    "id": "fc-trauma-toracico-1",
+    "temaId": "trauma-toracico",
+    "frente": "Quais são as 5 lesões torácicas que ameaçam a vida imediatamente?",
+    "verso": "Pneumotórax hipertensivo, pneumotórax aberto, hemotórax maciço, tamponamento cardíaco e tórax instável (flail chest)."
+  },
+  {
+    "id": "fc-trauma-toracico-2",
+    "temaId": "trauma-toracico",
+    "frente": "Qual a conduta imediata no pneumotórax hipertensivo?",
+    "verso": "Descompressão torácica por agulha, seguida de drenagem torácica definitiva."
+  },
+  {
+    "id": "fc-trauma-toracico-3",
+    "temaId": "trauma-toracico",
+    "frente": "Qual a tríade de Beck e o que ela indica?",
+    "verso": "Hipotensão + turgência jugular + abafamento de bulhas cardíacas — sugere tamponamento cardíaco."
+  },
+  {
+    "id": "fc-trauma-toracico-4",
+    "temaId": "trauma-toracico",
+    "frente": "O que define o tórax instável (flail chest)?",
+    "verso": "Fratura de 2 ou mais arcos costais em 2 ou mais pontos cada, causando movimento paradoxal da parede torácica."
+  },
+  {
+    "id": "fc-abdome-agudo-perfurativo-1",
+    "temaId": "abdome-agudo-perfurativo",
+    "frente": "Qual a causa mais comum de abdome agudo perfurativo?",
+    "verso": "Úlcera péptica perfurada."
+  },
+  {
+    "id": "fc-abdome-agudo-perfurativo-2",
+    "temaId": "abdome-agudo-perfurativo",
+    "frente": "Qual achado radiográfico clássico sugere perfuração de víscera oca?",
+    "verso": "Pneumoperitônio — ar livre sob o diafragma na radiografia de abdome em pé/tórax em pé."
+  },
+  {
+    "id": "fc-abdome-agudo-perfurativo-3",
+    "temaId": "abdome-agudo-perfurativo",
+    "frente": "O que é o sinal de Jobert?",
+    "verso": "Timpanismo à percussão do hipocôndrio direito por desaparecimento da macicez hepática — sugere pneumoperitônio."
+  },
+  {
+    "id": "fc-colelitiase-coledocolitiase-1",
+    "temaId": "colelitiase-coledocolitiase",
+    "frente": "Como costuma se apresentar a cólica biliar da colelitíase não complicada?",
+    "verso": "Dor em hipocôndrio direito após refeições gordurosas, sem febre e sem leucocitose."
+  },
+  {
+    "id": "fc-colelitiase-coledocolitiase-2",
+    "temaId": "colelitiase-coledocolitiase",
+    "frente": "Qual achado sugere coledocolitíase na ultrassonografia?",
+    "verso": "Dilatação das vias biliares, frequentemente com icterícia obstrutiva associada."
+  },
+  {
+    "id": "fc-colelitiase-coledocolitiase-3",
+    "temaId": "colelitiase-coledocolitiase",
+    "frente": "Qual o tratamento padrão da coledocolitíase associada a colelitíase?",
+    "verso": "CPRE para retirada do cálculo da via biliar, seguida de colecistectomia."
+  },
+  {
+    "id": "fc-cancer-colo-utero-hpv-1",
+    "temaId": "cancer-colo-utero-hpv",
+    "frente": "Quais subtipos de HPV são os mais oncogênicos para câncer de colo uterino?",
+    "verso": "16 e 18."
+  },
+  {
+    "id": "fc-cancer-colo-utero-hpv-2",
+    "temaId": "cancer-colo-utero-hpv",
+    "frente": "Qual o esquema de rastreamento do câncer de colo do útero no Brasil?",
+    "verso": "Papanicolau dos 25 aos 64 anos, anual nos 2 primeiros exames e depois a cada 3 anos se normais."
+  },
+  {
+    "id": "fc-cancer-colo-utero-hpv-3",
+    "temaId": "cancer-colo-utero-hpv",
+    "frente": "Em que faixa etária a vacina HPV é aplicada no calendário nacional?",
+    "verso": "Preferencialmente entre 9 e 14 anos, antes do início da vida sexual."
+  },
+  {
+    "id": "fc-pre-natal-baixo-alto-risco-1",
+    "temaId": "pre-natal-baixo-alto-risco",
+    "frente": "Qual o número mínimo de consultas de pré-natal recomendado pelo Ministério da Saúde?",
+    "verso": "6 consultas."
+  },
+  {
+    "id": "fc-pre-natal-baixo-alto-risco-2",
+    "temaId": "pre-natal-baixo-alto-risco",
+    "frente": "Quais suplementações de rotina são recomendadas no pré-natal?",
+    "verso": "Ácido fólico (idealmente antes/início da gestação) e sulfato ferroso (a partir de 20 semanas)."
+  },
+  {
+    "id": "fc-pre-natal-baixo-alto-risco-3",
+    "temaId": "pre-natal-baixo-alto-risco",
+    "frente": "Cite 3 critérios que classificam uma gestação como alto risco.",
+    "verso": "Hipertensão, diabetes e gestação múltipla (entre outros: idade materna extrema, cardiopatia)."
+  },
+  {
+    "id": "fc-pneumonia-pediatrica-1",
+    "temaId": "pneumonia-pediatrica",
+    "frente": "Qual o agente etiológico mais comum de PAC bacteriana em crianças maiores de 5 anos?",
+    "verso": "Streptococcus pneumoniae."
+  },
+  {
+    "id": "fc-pneumonia-pediatrica-2",
+    "temaId": "pneumonia-pediatrica",
+    "frente": "Qual o sinal mais sensível de gravidade em pneumonia em lactentes, segundo a OMS?",
+    "verso": "Taquipneia, conforme os limiares de frequência respiratória por faixa etária."
+  },
+  {
+    "id": "fc-pneumonia-pediatrica-3",
+    "temaId": "pneumonia-pediatrica",
+    "frente": "Qual o tratamento ambulatorial de primeira escolha para PAC típica em crianças?",
+    "verso": "Amoxicilina."
+  },
+  {
+    "id": "fc-medicina-familia-comunidade-1",
+    "temaId": "medicina-familia-comunidade",
+    "frente": "O que caracteriza a abordagem centrada na pessoa?",
+    "verso": "Considerar o contexto biopsicossocial do paciente, não apenas a doença isoladamente."
+  },
+  {
+    "id": "fc-medicina-familia-comunidade-2",
+    "temaId": "medicina-familia-comunidade",
+    "frente": "O que é o genograma e para que serve?",
+    "verso": "Representação gráfica da estrutura e relações familiares, usada para entender o contexto do paciente."
+  },
+  {
+    "id": "fc-medicina-familia-comunidade-3",
+    "temaId": "medicina-familia-comunidade",
+    "frente": "O que caracteriza o vínculo longitudinal na Medicina de Família?",
+    "verso": "Acompanhamento continuado do paciente ao longo do tempo, e não apenas por episódios isolados de doença."
+  },
+  {
+    "id": "fc-historia-sus-1",
+    "temaId": "historia-sus",
+    "frente": "Qual marco legal fundou o SUS como direito universal?",
+    "verso": "A Constituição Federal de 1988, que definiu saúde como direito de todos e dever do Estado."
+  },
+  {
+    "id": "fc-historia-sus-2",
+    "temaId": "historia-sus",
+    "frente": "Qual evento é considerado a base para a criação do SUS?",
+    "verso": "A 8ª Conferência Nacional de Saúde, em 1986."
+  },
+  {
+    "id": "fc-historia-sus-3",
+    "temaId": "historia-sus",
+    "frente": "Como era organizada a saúde no Brasil antes do SUS?",
+    "verso": "De forma fragmentada: o INAMPS atendia trabalhadores formais (contribuintes), e a filantropia atendia os demais."
+  },
+  {
+    "id": "fc-marcos-legais-sus-1",
+    "temaId": "marcos-legais-sus",
+    "frente": "O que estabelece a Lei 8.080/1990?",
+    "verso": "Organiza o funcionamento do SUS, definindo seus princípios (universalidade, equidade, integralidade) e as competências das esferas de gestão."
+  },
+  {
+    "id": "fc-marcos-legais-sus-2",
+    "temaId": "marcos-legais-sus",
+    "frente": "O que estabelece a Lei 8.142/1990?",
+    "verso": "A participação social no SUS (Conferências e Conselhos de Saúde) e as transferências intergovernamentais de recursos financeiros."
+  },
+  {
+    "id": "fc-marcos-legais-sus-3",
+    "temaId": "marcos-legais-sus",
+    "frente": "Quais são os princípios organizativos (não doutrinários) do SUS?",
+    "verso": "Descentralização, regionalização, hierarquização e participação social."
+  },
+  {
+    "id": "fc-diabetes-classificacao-diagnostico-1",
+    "temaId": "diabetes-classificacao-diagnostico",
+    "frente": "Qual a diferença fisiopatológica central entre DM tipo 1 e tipo 2?",
+    "verso": "DM1: destruição autoimune das células beta, com insulinodependência desde o diagnóstico; DM2: resistência à insulina associada a deficiência relativa de secreção."
+  },
+  {
+    "id": "fc-diabetes-classificacao-diagnostico-2",
+    "temaId": "diabetes-classificacao-diagnostico",
+    "frente": "Quais os valores que definem pré-diabetes?",
+    "verso": "Glicemia de jejum entre 100-125 mg/dL ou HbA1c entre 5,7-6,4%."
+  },
+  {
+    "id": "fc-diabetes-classificacao-diagnostico-3",
+    "temaId": "diabetes-classificacao-diagnostico",
+    "frente": "Quais são os 4 critérios diagnósticos possíveis para diabetes mellitus?",
+    "verso": "Glicemia de jejum ≥126, TOTG 2h ≥200, HbA1c ≥6,5%, ou glicemia aleatória ≥200 com sintomas clássicos."
+  },
+  {
+    "id": "fc-abdome-agudo-classificacao-1",
+    "temaId": "abdome-agudo-classificacao",
+    "frente": "Quais são as 5 categorias clássicas de abdome agudo?",
+    "verso": "Inflamatório, obstrutivo, perfurativo, vascular (isquêmico) e hemorrágico."
+  },
+  {
+    "id": "fc-abdome-agudo-classificacao-2",
+    "temaId": "abdome-agudo-classificacao",
+    "frente": "Qual achado clínico é clássico do abdome agudo vascular (isquemia mesentérica)?",
+    "verso": "Dor abdominal desproporcional aos achados do exame físico."
+  },
+  {
+    "id": "fc-abdome-agudo-classificacao-3",
+    "temaId": "abdome-agudo-classificacao",
+    "frente": "O que caracteriza um sinal de irritação peritoneal ao exame físico?",
+    "verso": "Dor à descompressão brusca (sinal de Blumberg), sugerindo peritonite."
+  },
+  {
+    "id": "fc-infeccoes-congenitas-torch-1",
+    "temaId": "infeccoes-congenitas-torch",
+    "frente": "O que representa a sigla TORCH?",
+    "verso": "Toxoplasmose, Outras (sífilis), Rubéola, Citomegalovírus e Herpes — principais infecções congênitas."
+  },
+  {
+    "id": "fc-infeccoes-congenitas-torch-2",
+    "temaId": "infeccoes-congenitas-torch",
+    "frente": "Qual a tríade de Sabin na toxoplasmose congênita?",
+    "verso": "Coriorretinite + hidrocefalia + calcificações intracranianas difusas."
+  },
+  {
+    "id": "fc-infeccoes-congenitas-torch-3",
+    "temaId": "infeccoes-congenitas-torch",
+    "frente": "Qual a principal causa infecciosa de surdez congênita?",
+    "verso": "Citomegalovírus (CMV) congênito, também associado a calcificações periventriculares e microcefalia."
+  },
+  {
+    "id": "fc-resposta-endocrino-metabolica-trauma-1",
+    "temaId": "resposta-endocrino-metabolica-trauma",
+    "frente": "Quais hormônios são liberados na resposta metabólica ao trauma e qual seu efeito glicêmico?",
+    "verso": "Catecolaminas, cortisol e glucagon — todos hiperglicemiantes, levando a um estado catabólico."
+  },
+  {
+    "id": "fc-resposta-endocrino-metabolica-trauma-2",
+    "temaId": "resposta-endocrino-metabolica-trauma",
+    "frente": "Qual eixo hormonal é ativado na resposta ao trauma?",
+    "verso": "Eixo hipotálamo-hipófise-adrenal."
+  },
+  {
+    "id": "fc-resposta-endocrino-metabolica-trauma-3",
+    "temaId": "resposta-endocrino-metabolica-trauma",
+    "frente": "O que ocorre com o ADH (hormônio antidiurético) após o trauma?",
+    "verso": "Aumenta, promovendo retenção de água livre."
+  },
+  {
+    "id": "fc-sincope-1",
+    "temaId": "sincope",
+    "frente": "Qual o tipo mais comum de síncope e como costuma se apresentar?",
+    "verso": "Síncope vasovagal — precedida de pródromos como náusea, sudorese e palidez."
+  },
+  {
+    "id": "fc-sincope-2",
+    "temaId": "sincope",
+    "frente": "Quais sinais de alarme sugerem causa cardíaca na síncope?",
+    "verso": "Síncope durante esforço físico, ausência de pródromos, história familiar de morte súbita ou ECG alterado."
+  },
+  {
+    "id": "fc-sincope-3",
+    "temaId": "sincope",
+    "frente": "Qual exame é usado para investigar síncope vasovagal recorrente?",
+    "verso": "Teste de inclinação (tilt test)."
+  },
+  {
+    "id": "fc-parada-cardiorrespiratoria-rcp-1",
+    "temaId": "parada-cardiorrespiratoria-rcp",
+    "frente": "Qual a sequência de prioridade no atendimento da PCR (C-A-B)?",
+    "verso": "Compressões torácicas primeiro, depois via aérea (Airway) e ventilação (Breathing)."
+  },
+  {
+    "id": "fc-parada-cardiorrespiratoria-rcp-2",
+    "temaId": "parada-cardiorrespiratoria-rcp",
+    "frente": "Qual a frequência e a relação compressão-ventilação recomendadas na RCP de adulto (1 socorrista)?",
+    "verso": "100-120 compressões/minuto, na relação 30:2."
+  },
+  {
+    "id": "fc-parada-cardiorrespiratoria-rcp-3",
+    "temaId": "parada-cardiorrespiratoria-rcp",
+    "frente": "Por que a desfibrilação precoce é tão importante na PCR?",
+    "verso": "É o tratamento definitivo dos ritmos chocáveis (FV/TV sem pulso) e sua eficácia cai rapidamente a cada minuto sem desfibrilação."
+  }
+]

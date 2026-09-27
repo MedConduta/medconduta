@@ -7,6 +7,8 @@ import { getMetaDiaria } from "../metaDiaria.js";
 import { gerarGradeCurso, encontrarSemanaAtual } from "../curriculo.js";
 import { hojeIso, getAgendaRevisoes } from "../revisaoCurso.js";
 import { AREA_POR_CATEGORIA, ORDEM_AREAS } from "../areas.js";
+import { renderStreak } from "../components/streak.js";
+import { statTile } from "../components/statTile.js";
 
 const PREF_HORAS = "planejador_horas";
 
@@ -24,7 +26,26 @@ const JANELA_SEMANAS = 8;
  * 100% dos cálculos já existentes (nenhuma lógica de negócio nova).
  */
 export async function renderMinhaPreparacao(container) {
-  container.innerHTML = `<div class="main__container"><div class="empty-state">Carregando sua preparação...</div></div>`;
+  container.innerHTML = `
+    <div class="main__container">
+      <div class="page-header">
+        <div class="skeleton skeleton-line skeleton-line--short" style="height:12px;width:200px;"></div>
+        <div class="skeleton skeleton-line" style="height:28px;width:60%;margin-top:8px;"></div>
+      </div>
+      <div class="stat-row">
+        ${Array.from({ length: 3 }, () => `<div class="skeleton" style="height:76px;"></div>`).join("")}
+      </div>
+      ${Array.from(
+        { length: 2 },
+        () => `
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-line skeleton-line--short"></div>
+          <div class="skeleton skeleton-line skeleton-line--tall"></div>
+          <div class="skeleton skeleton-line"></div>
+        </div>`
+      ).join("")}
+    </div>
+  `;
 
   const horasSalvas = await getPref(PREF_HORAS, 2);
   // Note: não chama getDashboardCurso() aqui — ela recalcula gerarGradeCurso()
@@ -61,18 +82,25 @@ export async function renderMinhaPreparacao(container) {
 
   container.innerHTML = `
     <div class="main__container">
-      <div class="page-header">
-        <div class="page-header__eyebrow">Residência</div>
-        <h1>Minha Preparação</h1>
-        <p class="page-header__desc">O retrato de onde você está agora, com foco na semana corrente do seu cronograma.</p>
+      <div class="page-header" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:16px;">
+        <div>
+          <div class="page-header__eyebrow">Residência</div>
+          <h1>Minha Preparação</h1>
+          <p class="page-header__desc">O retrato de onde você está agora, com foco na semana corrente do seu cronograma.</p>
+        </div>
+        ${renderStreak(constancia.streakAtual)}
       </div>
 
       ${renderModoEspecial(modo)}
 
       <div class="stat-row">
-        <div class="stat-tile"><div class="stat-tile__value">${diagnostico.indicePreparo}</div><div class="stat-tile__label">Índice de Prontidão</div></div>
-        <div class="stat-tile"><div class="stat-tile__value">${fase.id ? escapeHtml(fase.nome) : "—"}</div><div class="stat-tile__label">${diasRestantes !== null ? `${diasRestantes} dias até a prova` : "Prova não configurada"}</div></div>
-        <div class="stat-tile"><div class="stat-tile__value">${constancia.streakAtual}${constancia.streakAtual > 0 ? " 🔥" : ""}</div><div class="stat-tile__label">Dias seguidos estudando</div></div>
+        ${statTile({ value: diagnostico.indicePreparo, label: "Índice de Prontidão", icone: "target", tom: "accent" })}
+        ${statTile({
+          value: fase.id ? escapeHtml(fase.nome) : "—",
+          label: diasRestantes !== null ? `${diasRestantes} dias até a prova` : "Prova não configurada",
+          icone: "calendar",
+          tom: "warning",
+        })}
       </div>
 
       ${renderMetaDiaria(metaDiaria)}
@@ -153,10 +181,10 @@ function renderCardCurso(d) {
       <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:center;">
         ${renderAnelProgresso(d.percentualGeral)}
         <div class="stat-row" style="flex:1;min-width:220px;margin-bottom:0;">
-          <div class="stat-tile"><div class="stat-tile__value">${d.revisoesHoje}</div><div class="stat-tile__label">Revisões hoje</div></div>
-          <div class="stat-tile"><div class="stat-tile__value">${d.revisoesAtrasadas}</div><div class="stat-tile__label">Revisões atrasadas</div></div>
-          <div class="stat-tile"><div class="stat-tile__value">${d.totalQuestoesRespondidas}</div><div class="stat-tile__label">Questões feitas</div></div>
-          <div class="stat-tile"><div class="stat-tile__value">${d.percentualAcerto ?? "—"}${d.percentualAcerto !== null ? "%" : ""}</div><div class="stat-tile__label">Taxa de acerto</div></div>
+          ${statTile({ value: d.revisoesHoje, label: "Revisões hoje", icone: "clock", tom: "accent" })}
+          ${statTile({ value: d.revisoesAtrasadas, label: "Revisões atrasadas", icone: "alert-circle", tom: "danger" })}
+          ${statTile({ value: d.totalQuestoesRespondidas, label: "Questões feitas", icone: "checklist", tom: "accent" })}
+          ${statTile({ value: `${d.percentualAcerto ?? "—"}${d.percentualAcerto !== null ? "%" : ""}`, label: "Taxa de acerto", icone: "chart-bar", tom: "success" })}
         </div>
       </div>
     </div>

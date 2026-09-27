@@ -13,7 +13,7 @@ export async function renderRelatorioSemanal(container) {
   container.innerHTML = `<div class="main__container"><div class="empty-state">Montando seu relatório...</div></div>`;
 
   const relatorio = await getRelatorioSemanal();
-  const { semanaAtual, semanaAnterior, maioresGargalos } = relatorio;
+  const { semanaAtual, semanaAnterior, maioresGargalos, motivosErro } = relatorio;
   const delta = semanaAnterior ? semanaAtual.indicePreparo - semanaAnterior.indicePreparo : null;
 
   container.innerHTML = `
@@ -54,6 +54,27 @@ export async function renderRelatorioSemanal(container) {
             </div>`
             )
             .join("")}
+        </div>`
+          : ""
+      }
+
+      ${
+        motivosErro.comMotivo > 0
+          ? `
+        <h3>Por que você errou (últimos 7 dias)</h3>
+        <div class="card" style="margin-bottom:24px;">
+          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-bottom:12px;">${motivosErro.comMotivo} de ${motivosErro.totalErros} erro${motivosErro.totalErros === 1 ? "" : "s"} com motivo registrado.</p>
+          <div class="plan-queue">
+            ${motivosErro.porMotivo
+              .map(
+                (m) => `
+              <div class="plan-item">
+                <span class="plan-item__duration">${m.quantidade}</span>
+                <span>${escapeHtml(m.rotulo)}</span>
+              </div>`
+              )
+              .join("")}
+          </div>
         </div>`
           : ""
       }
