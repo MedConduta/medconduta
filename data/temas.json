@@ -414,7 +414,12 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A tomografia de crânio sem contraste é o exame inicial obrigatório e urgente, cujo principal objetivo não é confirmar a isquemia (que pode não aparecer nas primeiras horas) mas sim excluir hemorragia, contraindicação absoluta à trombólise. Uma tomografia sem sangramento em paciente com déficit focal agudo e janela temporal adequada já autoriza a trombólise, mesmo sem alterações isquêmicas visíveis ainda. Angiotomografia é utilizada para identificar oclusão de grande vaso, elegível a trombectomia mecânica."
+        "conteudo": "A tomografia de crânio sem contraste é o exame inicial obrigatório e urgente, cujo principal objetivo não é confirmar a isquemia (que pode não aparecer nas primeiras horas) mas sim excluir hemorragia, contraindicação absoluta à trombólise. Uma tomografia sem sangramento em paciente com déficit focal agudo e janela temporal adequada já autoriza a trombólise, mesmo sem alterações isquêmicas visíveis ainda. Angiotomografia é utilizada para identificar oclusão de grande vaso, elegível a trombectomia mecânica.",
+        "imagem": {
+          "url": "imagens/neuroimagem/avc-isquemico.jpg",
+          "legenda": "TC de crânio sem contraste em AVC isquêmico agudo: área de hipodensidade no território acometido (setas), com perda da diferenciação córtico-subcortical — sinal precoce de infarto.",
+          "fonte": "Wikimedia Commons — File:CT of cerebral infarction.png"
+        }
       },
       {
         "titulo": "Tratamento",
@@ -1904,7 +1909,12 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A tomografia de crânio sem contraste é o exame padrão-ouro inicial, com altíssima sensibilidade para detecção de sangue tanto intraparenquimatoso quanto subaracnóideo nas primeiras 6-24 horas. Quando a tomografia é negativa mas a suspeita clínica de hemorragia subaracnóidea permanece alta (especialmente após 6h do início da cefaleia), a punção lombar buscando xantocromia (pigmento amarelado do líquor pela degradação de hemácias, distinguindo de punção traumática) é o próximo passo. Angiotomografia ou angiografia digital são indicadas para identificar aneurisma ou malformação vascular subjacente na hemorragia subaracnóidea."
+        "conteudo": "A tomografia de crânio sem contraste é o exame padrão-ouro inicial, com altíssima sensibilidade para detecção de sangue tanto intraparenquimatoso quanto subaracnóideo nas primeiras 6-24 horas. Quando a tomografia é negativa mas a suspeita clínica de hemorragia subaracnóidea permanece alta (especialmente após 6h do início da cefaleia), a punção lombar buscando xantocromia (pigmento amarelado do líquor pela degradação de hemácias, distinguindo de punção traumática) é o próximo passo. Angiotomografia ou angiografia digital são indicadas para identificar aneurisma ou malformação vascular subjacente na hemorragia subaracnóidea.",
+        "imagem": {
+          "url": "imagens/neuroimagem/avc-hemorragico.jpg",
+          "legenda": "TC de crânio sem contraste em AVC hemorrágico: composição com múltiplos cortes mostrando área hiperdensa (sangue agudo) intraparenquimatosa, característica de hemorragia intracerebral.",
+          "fonte": "Wikimedia Commons — File:Intracerebral hemorrhage.jpg"
+        }
       },
       {
         "titulo": "Tratamento",
@@ -2547,7 +2557,12 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A confirmação laboratorial de hemólise combina reticulocitose (resposta medular compensatória), aumento de bilirrubina indireta e desidrogenase lática (LDH), e redução de haptoglobina (consumida ao se ligar à hemoglobina livre, sendo mais sensível para hemólise intravascular). O teste de Coombs direto diferencia causas imunomediadas (positivo) de não imunomediadas (negativo), sendo etapa fundamental do algoritmo diagnóstico. O esfregaço de sangue periférico frequentemente revela pistas morfológicas específicas (esferócitos, esquizócitos, células falciformes) que direcionam a etiologia.\n\n<div class=\"table-wrap\"><table>\n<thead><tr><th>Categoria</th><th>Exemplos</th><th>Coombs direto</th><th>Pista no esfregaço/quadro</th></tr></thead>\n<tbody>\n<tr><td>Defeito de membrana (intrínseca)</td><td>Esferocitose hereditária</td><td>Negativo</td><td>Esferócitos; esplenomegalia; teste de fragilidade osmótica alterado</td></tr>\n<tr><td>Enzimopatia (intrínseca)</td><td>Deficiência de G6PD</td><td>Negativo</td><td>Hemólise desencadeada por agentes oxidantes (infecção, alguns fármacos, favismo); corpos de Heinz</td></tr>\n<tr><td>Hemoglobinopatia (intrínseca)</td><td>Anemia falciforme, talassemias</td><td>Negativo</td><td>Hemácias falcizadas (drepanócitos) ou em alvo; eletroforese de hemoglobina confirmatória</td></tr>\n<tr><td>Autoimune (extrínseca)</td><td>Anticorpos quentes (IgG) ou frios (IgM)</td><td>Positivo</td><td>Esferócitos (nos casos por anticorpos quentes); pode estar associada a LES ou fármacos</td></tr>\n<tr><td>Mecânica (extrínseca)</td><td>Prótese valvar, microangiopatias (PTT/SHU, CIVD)</td><td>Negativo</td><td>Esquizócitos (hemácias fragmentadas)</td></tr>\n<tr><td>Infecciosa (extrínseca)</td><td>Malária, sepse</td><td>Geralmente negativo</td><td>Contexto epidemiológico/clínico direciona a investigação</td></tr>\n</tbody>\n</table></div>"
+        "conteudo": "A confirmação laboratorial de hemólise combina reticulocitose (resposta medular compensatória), aumento de bilirrubina indireta e desidrogenase lática (LDH), e redução de haptoglobina (consumida ao se ligar à hemoglobina livre, sendo mais sensível para hemólise intravascular). O teste de Coombs direto diferencia causas imunomediadas (positivo) de não imunomediadas (negativo), sendo etapa fundamental do algoritmo diagnóstico. O esfregaço de sangue periférico frequentemente revela pistas morfológicas específicas (esferócitos, esquizócitos, células falciformes) que direcionam a etiologia.\n\n<div class=\"table-wrap\"><table>\n<thead><tr><th>Categoria</th><th>Exemplos</th><th>Coombs direto</th><th>Pista no esfregaço/quadro</th></tr></thead>\n<tbody>\n<tr><td>Defeito de membrana (intrínseca)</td><td>Esferocitose hereditária</td><td>Negativo</td><td>Esferócitos; esplenomegalia; teste de fragilidade osmótica alterado</td></tr>\n<tr><td>Enzimopatia (intrínseca)</td><td>Deficiência de G6PD</td><td>Negativo</td><td>Hemólise desencadeada por agentes oxidantes (infecção, alguns fármacos, favismo); corpos de Heinz</td></tr>\n<tr><td>Hemoglobinopatia (intrínseca)</td><td>Anemia falciforme, talassemias</td><td>Negativo</td><td>Hemácias falcizadas (drepanócitos) ou em alvo; eletroforese de hemoglobina confirmatória</td></tr>\n<tr><td>Autoimune (extrínseca)</td><td>Anticorpos quentes (IgG) ou frios (IgM)</td><td>Positivo</td><td>Esferócitos (nos casos por anticorpos quentes); pode estar associada a LES ou fármacos</td></tr>\n<tr><td>Mecânica (extrínseca)</td><td>Prótese valvar, microangiopatias (PTT/SHU, CIVD)</td><td>Negativo</td><td>Esquizócitos (hemácias fragmentadas)</td></tr>\n<tr><td>Infecciosa (extrínseca)</td><td>Malária, sepse</td><td>Geralmente negativo</td><td>Contexto epidemiológico/clínico direciona a investigação</td></tr>\n</tbody>\n</table></div>",
+        "imagem": {
+          "url": "imagens/hematologia/anemia-falciforme.jpg",
+          "legenda": "Esquema comparando hemácias normais fluindo livremente no vaso (A) com hemácias falcizadas obstruindo o fluxo sanguíneo (B) — ilustra o mecanismo de vaso-oclusão da anemia falciforme (não é uma foto de esfregaço de sangue periférico).",
+          "fonte": "Wikimedia Commons / NHLBI"
+        }
       },
       {
         "titulo": "Tratamento",
@@ -7164,7 +7179,12 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A radiografia simples em pelo menos duas incidências (frente e perfil) é o exame padrão para diagnóstico, caracterização do tipo de fratura (traço, desvio, cominuição) e planejamento terapêutico. Tomografia é reservada a fraturas complexas, articulares, ou quando a radiografia simples não esclarece completamente a extensão da lesão.\n\n<div class=\"table-wrap\"><table><tr><th>Achado</th><th>Diagnóstico</th></tr><tr><td>Sinal da dragona</td><td>Luxação glenoumeral anterior (95% dos casos)</td></tr><tr><td>Sinal da tecla de piano</td><td>Luxação acromioclavicular</td></tr><tr><td>Membro encurtado e rodado EXTERNAMENTE</td><td>Fratura de fêmur proximal</td></tr><tr><td>Flexão + adução + rotação interna (FADRI)</td><td>Luxação de quadril</td></tr><tr><td>Dor na tabaqueira anatômica</td><td>Fratura de escafoide</td></tr></table></div>"
+        "conteudo": "A radiografia simples em pelo menos duas incidências (frente e perfil) é o exame padrão para diagnóstico, caracterização do tipo de fratura (traço, desvio, cominuição) e planejamento terapêutico. Tomografia é reservada a fraturas complexas, articulares, ou quando a radiografia simples não esclarece completamente a extensão da lesão.\n\n<div class=\"table-wrap\"><table><tr><th>Achado</th><th>Diagnóstico</th></tr><tr><td>Sinal da dragona</td><td>Luxação glenoumeral anterior (95% dos casos)</td></tr><tr><td>Sinal da tecla de piano</td><td>Luxação acromioclavicular</td></tr><tr><td>Membro encurtado e rodado EXTERNAMENTE</td><td>Fratura de fêmur proximal</td></tr><tr><td>Flexão + adução + rotação interna (FADRI)</td><td>Luxação de quadril</td></tr><tr><td>Dor na tabaqueira anatômica</td><td>Fratura de escafoide</td></tr></table></div>",
+        "imagem": {
+          "url": "imagens/radiografia/fratura-colles.jpg",
+          "legenda": "Radiografias de punho mostrando fratura da extremidade distal do rádio com desvio dorsal (fratura de Colles) — áreas circuladas destacam o traço de fratura e a angulação.",
+          "fonte": "Wikimedia Commons — File:Colles fracture.JPG"
+        }
       },
       {
         "titulo": "Tratamento",
@@ -7394,7 +7414,12 @@
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico das infecções cutâneas bacterianas comuns é predominantemente clínico, sem necessidade de cultura de rotina em casos típicos não complicados. Herpes zoster é diagnosticado clinicamente pela distribuição dermatomal característica; testes específicos (PCR, cultura viral) são reservados a casos atípicos ou imunossuprimidos. Dermatofitoses podem ser confirmadas por exame micológico direto (KOH) quando há dúvida diagnóstica.\n\n<div class=\"table-wrap\"><table><tr><th></th><th>Erisipela</th><th>Celulite</th></tr><tr><td>Delimitação da lesão</td><td>Bem delimitada</td><td>Mal delimitada</td></tr><tr><td>Camada acometida</td><td>Derme papilar + linfáticos</td><td>Derme reticular + hipoderme</td></tr><tr><td>Agente</td><td>S. pyogenes</td><td>S. pyogenes e S. aureus</td></tr></table></div>"
+        "conteudo": "O diagnóstico das infecções cutâneas bacterianas comuns é predominantemente clínico, sem necessidade de cultura de rotina em casos típicos não complicados. Herpes zoster é diagnosticado clinicamente pela distribuição dermatomal característica; testes específicos (PCR, cultura viral) são reservados a casos atípicos ou imunossuprimidos. Dermatofitoses podem ser confirmadas por exame micológico direto (KOH) quando há dúvida diagnóstica.\n\n<div class=\"table-wrap\"><table><tr><th></th><th>Erisipela</th><th>Celulite</th></tr><tr><td>Delimitação da lesão</td><td>Bem delimitada</td><td>Mal delimitada</td></tr><tr><td>Camada acometida</td><td>Derme papilar + linfáticos</td><td>Derme reticular + hipoderme</td></tr><tr><td>Agente</td><td>S. pyogenes</td><td>S. pyogenes e S. aureus</td></tr></table></div>",
+        "imagem": {
+          "url": "imagens/dermatologia/herpes-zoster.jpg",
+          "legenda": "Lesões vesiculares e papulares agrupadas sobre base eritematosa na coxa, distribuição em faixa — padrão característico do herpes-zóster.",
+          "fonte": "Wikimedia Commons — File:Shingles rash, thigh. Caused by the herpes zoster virus.jpg"
+        }
       },
       {
         "titulo": "Tratamento",
@@ -14382,7 +14407,12 @@
       },
       {
         "titulo": "Papiledema e Hipertensão Intracraniana",
-        "conteudo": "O papiledema é o edema do disco óptico bilateral secundário à transmissão da pressão intracraniana elevada através do espaço subaracnóideo que envolve o nervo óptico, causando estase do fluxo axoplasmático. Caracteriza-se por bordas do disco borradas e elevadas, hiperemia, obscurecimento dos vasos que cruzam a borda do disco, hemorragias em chama de vela peripapilares e, em casos avançados, exsudatos. Diferente da papilite (neurite óptica com edema de disco), o papiledema tipicamente preserva a acuidade visual e a resposta pupilar nas fases iniciais (pode haver apenas aumento da mancha cega e obscurecimentos visuais transitórios de segundos, relacionados a mudanças posturais), sendo bilateral na maioria dos casos. É achado de alerta que exige investigação urgente de causa de hipertensão intracraniana (tumor, hidrocefalia, trombose de seio venoso, hipertensão intracraniana idiopática/pseudotumor cerebral — mais comum em mulheres jovens obesas) com neuroimagem antes de qualquer punção lombar, pelo risco de herniação cerebral em massas com efeito compressivo."
+        "conteudo": "O papiledema é o edema do disco óptico bilateral secundário à transmissão da pressão intracraniana elevada através do espaço subaracnóideo que envolve o nervo óptico, causando estase do fluxo axoplasmático. Caracteriza-se por bordas do disco borradas e elevadas, hiperemia, obscurecimento dos vasos que cruzam a borda do disco, hemorragias em chama de vela peripapilares e, em casos avançados, exsudatos. Diferente da papilite (neurite óptica com edema de disco), o papiledema tipicamente preserva a acuidade visual e a resposta pupilar nas fases iniciais (pode haver apenas aumento da mancha cega e obscurecimentos visuais transitórios de segundos, relacionados a mudanças posturais), sendo bilateral na maioria dos casos. É achado de alerta que exige investigação urgente de causa de hipertensão intracraniana (tumor, hidrocefalia, trombose de seio venoso, hipertensão intracraniana idiopática/pseudotumor cerebral — mais comum em mulheres jovens obesas) com neuroimagem antes de qualquer punção lombar, pelo risco de herniação cerebral em massas com efeito compressivo.",
+        "imagem": {
+          "url": "imagens/oftalmologia/papiledema.jpg",
+          "legenda": "Fundoscopia mostrando papiledema: disco óptico com bordas borradas/elevadas e ingurgitamento vascular, achado de hipertensão intracraniana.",
+          "fonte": "Wikimedia Commons — File:Papilledema.jpg"
+        }
       },
       {
         "titulo": "Dicas de prova",
