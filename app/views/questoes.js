@@ -10,9 +10,11 @@ import {
   especialidadesDe,
   temasDe,
   registrarRespostaNoIndice,
+  alternarFavoritoNoIndice,
   ORDENACAO,
   STATUS,
 } from "../questoesIndex.js";
+import { icon } from "../components/icons.js";
 
 function skeletonCard() {
   return `
@@ -64,6 +66,7 @@ export async function renderLista(container, _params, query = {}) {
   let filtroEspecialidade;
   let filtroTemaId;
   let filtroStatus = STATUS.TODAS;
+  let filtroFavoritas = query.favoritas === "1";
   let bancaInicial = "todas";
   let anoInicial = "todos";
   let buscaInicial = "";
@@ -264,6 +267,7 @@ export async function renderLista(container, _params, query = {}) {
       banca: filtroBanca.value,
       ano: filtroAno.value,
       status: filtroStatus,
+      favoritas: filtroFavoritas,
       busca: filtroBusca.value.trim(),
       ordenacao: filtroOrdenacao.value,
       qtd: filtroQuantidade.value,
@@ -277,6 +281,7 @@ export async function renderLista(container, _params, query = {}) {
     filtroBanca.value = estado.banca || "todas";
     filtroAno.value = estado.ano || "todos";
     filtroStatus = estado.status || STATUS.TODAS;
+    filtroFavoritas = !!estado.favoritas;
     filtroBusca.value = estado.busca || "";
     filtroOrdenacao.value = estado.ordenacao || ORDENACAO.RECENTES;
     filtroQuantidade.value = estado.qtd || "20";
@@ -334,6 +339,7 @@ export async function renderLista(container, _params, query = {}) {
   function limparTudo() {
     filtroGrandeArea = filtroEspecialidade = filtroTemaId = undefined;
     filtroStatus = STATUS.TODAS;
+    filtroFavoritas = false;
     filtroBanca.value = "todas";
     filtroAno.value = "todos";
     filtroBusca.value = "";
@@ -372,6 +378,9 @@ export async function renderLista(container, _params, query = {}) {
     }
     if (filtroStatus !== STATUS.TODAS) {
       chips.push({ label: ROTULOS_STATUS[filtroStatus], remover: () => { filtroStatus = STATUS.TODAS; } });
+    }
+    if (filtroFavoritas) {
+      chips.push({ label: "Favoritas", remover: () => { filtroFavoritas = false; } });
     }
 
     filtrosToggleEl.textContent = chips.length ? `Filtros (${chips.length})` : "Filtros";
@@ -413,6 +422,10 @@ export async function renderLista(container, _params, query = {}) {
       ${tile(STATUS.RESPONDIDAS, c.respondidas, "Respondidas")}
       ${tile(STATUS.CORRETAS, c.acertos, "Acertos")}
       ${tile(STATUS.INCORRETAS, c.erros, "Erros")}
+      <button type="button" class="stat-tile ${filtroFavoritas ? "is-active" : ""}" data-favoritas="1">
+        <span class="stat-tile__value">${c.favoritas}</span>
+        <span class="stat-tile__label">Favoritas</span>
+      </button>
       <div class="stat-tile">
         <span class="stat-tile__value">${c.percentualAcerto.toFixed(1)}%</span>
         <span class="stat-tile__label">Aproveitamento</span>
@@ -420,6 +433,13 @@ export async function renderLista(container, _params, query = {}) {
   }
 
   statsEl.addEventListener("click", (e) => {
+    const btnFavoritas = e.target.closest("[data-favoritas]");
+    if (btnFavoritas) {
+      filtroFavoritas = !filtroFavoritas;
+      renderHierarquia();
+      refazerFiltro();
+      return;
+    }
     const btn = e.target.closest("[data-status]");
     if (!btn) return;
     const status = btn.dataset.status;
@@ -435,6 +455,7 @@ export async function renderLista(container, _params, query = {}) {
       especialidade: filtroEspecialidade,
       temaId: filtroTemaId,
       ordenacao: filtroOrdenacao.value,
+      apenasFavoritas: filtroFavoritas,
     };
   }
 
@@ -520,6 +541,7 @@ export async function renderLista(container, _params, query = {}) {
   function renderCard(id) {
     const q = indice.questoesPorId.get(id);
     const status = indice.statusPorQuestao.get(id);
+    const favoritada = indice.favoritos.has(id);
     const badgeStatus = !status?.respondida
       ? ""
       : status.acertouUltima
@@ -527,7 +549,12 @@ export async function renderLista(container, _params, query = {}) {
         : '<span class="badge" style="color:var(--color-danger);border-color:var(--color-danger-border);">✕ Já errou</span>';
     return `
       <div class="card">
-        <p style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-bottom:6px;">${breadcrumbCard(q)}</p>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
+          <p style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-bottom:6px;">${breadcrumbCard(q)}</p>
+          <button type="button" class="favorito-btn ${favoritada ? "is-ativo" : ""}" data-favorito-id="${q.id}" title="${favoritada ? "Remover dos favoritos" : "Marcar pra revisar depois"}" aria-pressed="${favoritada}">
+            ${icon("bookmark", { size: 18 })}
+          </button>
+        </div>
         <div class="list-card__top">
           <span class="badge badge--accent">${escapeHtml(q.tema)}</span>
           <span class="badge">${escapeHtml(q.banca)} · ${q.ano}</span>
@@ -553,6 +580,17 @@ export async function renderLista(container, _params, query = {}) {
 
   function ligarEventosCard(id) {
     const q = indice.questoesPorId.get(id);
+
+    const favoritoBtn = listaEl.querySelector(`.favorito-btn[data-favorito-id="${CSS.escape(id)}"]`);
+    favoritoBtn?.addEventListener("click", async () => {
+      const novoEstado = await alternarFavoritoNoIndice(indice, id);
+      favoritoBtn.classList.toggle("is-ativo", novoEstado);
+      favoritoBtn.setAttribute("aria-pressed", String(novoEstado));
+      favoritoBtn.title = novoEstado ? "Remover dos favoritos" : "Marcar pra revisar depois";
+      renderStats();
+      if (filtroFavoritas && !novoEstado) refazerFiltro(false);
+    });
+
     const opcoesEl = listaEl.querySelector(`.opcoes[data-qid="${CSS.escape(id)}"]`);
     if (!opcoesEl) return;
     const exibidoEm = Date.now();
@@ -697,6 +735,7 @@ export async function renderLista(container, _params, query = {}) {
     if (filtroBanca.value !== "todas") params.set("banca", filtroBanca.value);
     if (filtroAno.value !== "todos") params.set("ano", filtroAno.value);
     if (filtroStatus !== STATUS.TODAS) params.set("status", filtroStatus);
+    if (filtroFavoritas) params.set("favoritas", "1");
     if (filtroBusca.value.trim()) params.set("busca", filtroBusca.value.trim());
     if (filtroOrdenacao.value !== ORDENACAO.RECENTES) params.set("ordenacao", filtroOrdenacao.value);
     if (filtroQuantidade.value !== "20") params.set("qtd", filtroQuantidade.value);

@@ -14,6 +14,7 @@
 import { fetchJsonCached, uniq } from "./utils.js";
 import { getAll } from "./db.js";
 import { AREA_POR_CATEGORIA, ORDEM_AREAS } from "./areas.js";
+import { carregarFavoritos, alternarFavorito } from "./favoritos.js";
 
 export const STATUS = {
   TODAS: "todas",
@@ -33,11 +34,12 @@ export const ORDENACAO = {
 
 /** Monta o índice completo. Chamar uma vez por sessão da página; filtros/contagens depois não re-fazem fetch. */
 export async function carregarIndice() {
-  const [curadas, geradas, temas, respostas] = await Promise.all([
+  const [curadas, geradas, temas, respostas, favoritos] = await Promise.all([
     fetchJsonCached("data/questoes.json"),
     getAll("ia_questoes"),
     fetchJsonCached("data/temas.json"),
     getAll("respostas"),
+    carregarFavoritos(),
   ]);
 
   const temaPorId = new Map(temas.map((t) => [t.id, t]));
@@ -69,7 +71,7 @@ export async function carregarIndice() {
   const bancas = uniq([...questoesPorId.values()].map((q) => q.banca)).sort((a, b) => a.localeCompare(b, "pt-BR"));
   const anos = uniq([...questoesPorId.values()].map((q) => q.ano)).sort((a, b) => b - a);
 
-  return { questoesPorId, statusPorQuestao, grandeAreas, bancas, anos };
+  return { questoesPorId, statusPorQuestao, favoritos, grandeAreas, bancas, anos };
 }
 
 /** true se a questão bate com os filtros. `ignorarCampo` exclui um campo do filtro (usado por contarPorNivel). */
@@ -93,6 +95,8 @@ function corresponde(indice, questao, filtros, ignorarCampo) {
     const alvo = `${questao.tema} ${questao.enunciado}`.toLowerCase();
     if (!alvo.includes(f.busca.trim().toLowerCase())) return false;
   }
+
+  if (f.apenasFavoritas && !indice.favoritos.has(questao.id)) return false;
 
   return true;
 }
@@ -143,21 +147,23 @@ export function contarPorNivel(indice, filtros, campo) {
 
 /** Contadores agregados (topo da página), respeitando os filtros ativos exceto o próprio status. */
 export function contadores(indice, filtros = {}) {
-  const ids = filtrar(indice, { ...filtros, status: STATUS.TODAS });
+  const ids = filtrar(indice, { ...filtros, status: STATUS.TODAS, apenasFavoritas: false });
   let respondidas = 0;
   let acertos = 0;
+  let favoritas = 0;
   for (const id of ids) {
     const st = indice.statusPorQuestao.get(id);
     if (st?.respondida) {
       respondidas += 1;
       if (st.acertouUltima) acertos += 1;
     }
+    if (indice.favoritos.has(id)) favoritas += 1;
   }
   const total = ids.length;
   const naoRespondidas = total - respondidas;
   const erros = respondidas - acertos;
   const percentualAcerto = respondidas > 0 ? (acertos / respondidas) * 100 : 0;
-  return { total, naoRespondidas, respondidas, acertos, erros, percentualAcerto };
+  return { total, naoRespondidas, respondidas, acertos, erros, favoritas, percentualAcerto };
 }
 
 /** Especialidades existentes dentro de uma grande área (ou todas, se grandeArea for omitida). */
@@ -176,6 +182,14 @@ export function temasDe(indice, especialidade) {
     if (!especialidade || q.especialidade === especialidade) map.set(q.temaId, q.tema);
   }
   return [...map.entries()].sort((a, b) => a[1].localeCompare(b[1], "pt-BR"));
+}
+
+/** Alterna o favorito de uma questão, persiste e atualiza o índice em memória. Retorna o novo estado. */
+export async function alternarFavoritoNoIndice(indice, questaoId) {
+  const novoEstado = await alternarFavorito(questaoId, indice.favoritos.has(questaoId));
+  if (novoEstado) indice.favoritos.add(questaoId);
+  else indice.favoritos.delete(questaoId);
+  return novoEstado;
 }
 
 /** Atualiza o índice em memória após uma nova resposta, sem re-fetch de rede. */

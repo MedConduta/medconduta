@@ -8,6 +8,8 @@ import {
   registrarResultadoSimulado,
   getHistoricoSimulados,
 } from "../simulados.js";
+import { carregarFavoritos, alternarFavorito } from "../favoritos.js";
+import { icon } from "../components/icons.js";
 
 export async function renderSimulados(container) {
   let estado = "config"; // config | rodando | resultado
@@ -74,7 +76,7 @@ export async function renderSimulados(container) {
       return;
     }
 
-    renderResultado();
+    await renderResultado();
   }
 
   async function iniciarSimulado() {
@@ -192,7 +194,8 @@ export async function renderSimulados(container) {
     await montar();
   }
 
-  function renderResultado() {
+  async function renderResultado() {
+    const favoritos = await carregarFavoritos();
     container.innerHTML = `
       <div class="main__container">
         <div class="page-header">
@@ -232,6 +235,9 @@ export async function renderSimulados(container) {
               <div class="list-card__top">
                 <span class="badge badge--accent">${escapeHtml(questao.tema)}</span>
                 <strong style="color:${acertou ? "var(--color-success)" : "var(--color-danger)"};">${i + 1}. ${acertou ? "Correto" : escolhida === undefined ? "Não respondida" : "Incorreto"}</strong>
+                <button type="button" class="favorito-btn ${favoritos.has(questao.id) ? "is-ativo" : ""}" data-favorito-id="${questao.id}" style="margin-left:auto;" title="${favoritos.has(questao.id) ? "Remover dos favoritos" : "Marcar pra revisar depois"}" aria-pressed="${favoritos.has(questao.id)}">
+                  ${icon("bookmark", { size: 18 })}
+                </button>
               </div>
               <p style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
               <div class="opcoes">
@@ -256,6 +262,17 @@ export async function renderSimulados(container) {
     container.querySelector("#btn-novo-simulado").addEventListener("click", () => {
       estado = "config";
       montar();
+    });
+    container.querySelectorAll(".favorito-btn[data-favorito-id]").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const id = btn.dataset.favoritoId;
+        const novoEstado = await alternarFavorito(id, favoritos.has(id));
+        if (novoEstado) favoritos.add(id);
+        else favoritos.delete(id);
+        btn.classList.toggle("is-ativo", novoEstado);
+        btn.setAttribute("aria-pressed", String(novoEstado));
+        btn.title = novoEstado ? "Remover dos favoritos" : "Marcar pra revisar depois";
+      });
     });
   }
 
