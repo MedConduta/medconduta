@@ -65,6 +65,35 @@ export function uniq(arr) {
   return [...new Set(arr)];
 }
 
+const SIMBOLOS_LATEX = {
+  alpha: "α", beta: "β", gamma: "γ", Gamma: "Γ", delta: "δ", Delta: "Δ",
+  epsilon: "ε", zeta: "ζ", eta: "η", theta: "θ", Theta: "Θ", iota: "ι",
+  kappa: "κ", lambda: "λ", Lambda: "Λ", mu: "μ", nu: "ν", xi: "ξ",
+  pi: "π", Pi: "Π", rho: "ρ", sigma: "σ", Sigma: "Σ", tau: "τ",
+  phi: "φ", Phi: "Φ", chi: "χ", psi: "ψ", omega: "ω", Omega: "Ω",
+  times: "×", div: "÷", pm: "±", mp: "∓", cdot: "·", sqrt: "√",
+  leq: "≤", le: "≤", geq: "≥", ge: "≥", neq: "≠", approx: "≈", equiv: "≡",
+  rightarrow: "→", to: "→", leftarrow: "←", infty: "∞", circ: "°", degree: "°",
+};
+
+/**
+ * Sanitiza resíduos de notação LaTeX que a IA às vezes gera (ex.: "$\beta$-hCG")
+ * mesmo com instrução em contrário — o app não tem renderizador de LaTeX/MathJax,
+ * então isso apareceria literal na tela. Remove os delimitadores de matemática
+ * ($...$, \(...\), \[...\]) e converte comandos de símbolo (\beta, \times, \geq...)
+ * no caractere Unicode equivalente; comandos desconhecidos são deixados como estão.
+ */
+export function limparNotacaoMatematica(texto) {
+  if (typeof texto !== "string" || (!texto.includes("\\") && !texto.includes("$"))) return texto;
+  return texto
+    .replace(/\$\$([\s\S]+?)\$\$/g, "$1")
+    .replace(/\\\[([\s\S]+?)\\\]/g, "$1")
+    .replace(/\\\(([\s\S]+?)\\\)/g, "$1")
+    .replace(/\$([^$\n]+?)\$/g, "$1")
+    .replace(/\\([A-Za-z]+)(\{\})?/g, (match, comando) => SIMBOLOS_LATEX[comando] ?? match)
+    .replace(/\{\}/g, "");
+}
+
 function aplicarMarkdownInline(texto) {
   return texto
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
