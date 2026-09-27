@@ -22,7 +22,7 @@ export async function renderPlanejador(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Hoje</div>
         <h1>Quanto tempo você tem hoje?</h1>
-        <p class="page-header__desc">Informe as horas disponíveis. A plataforma monta a sequência de maior impacto: revisões espaçadas vencidas primeiro, depois os temas de maior prioridade (peso na prova × seu desempenho), e questões direcionadas ao seu maior gargalo atual.</p>
+        <p class="page-header__desc">Informe as horas disponíveis. Montamos a sequência de maior impacto: revisões vencidas, temas prioritários e questões do seu maior gargalo.</p>
         ${constancia.streakAtual > 0 ? `<p style="margin-top:8px;font-size:var(--fs-sm);color:var(--color-text-secondary);">🔥 ${constancia.streakAtual} dia${constancia.streakAtual > 1 ? "s" : ""} seguido${constancia.streakAtual > 1 ? "s" : ""} estudando</p>` : ""}
       </div>
 

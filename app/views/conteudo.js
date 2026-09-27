@@ -125,7 +125,7 @@ export async function renderLista(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Conteúdo</div>
         <h1>Resumos por tema</h1>
-        <p class="page-header__desc">Conteúdo estruturado para prática clínica e provas de residência R1, com mnemônicos destacados. Categorias ordenadas por prioridade (🔴 crítico → 🟢 tranquilo, igual ao Heatmap de <a href="#/residencia/prontidao">Prontidão</a>) — dentro de cada uma, temas ainda não estudados aparecem primeiro.</p>
+        <p class="page-header__desc">Categorias ordenadas por prioridade (🔴 crítico → 🟢 tranquilo, igual ao Heatmap de <a href="#/residencia/prontidao">Prontidão</a>) — temas ainda não estudados aparecem primeiro.</p>
       </div>
 
       <details class="card" id="criar-tema-box" style="margin-bottom:20px;">

@@ -32,7 +32,7 @@ async function renderTela(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Meus Erros</div>
         <h1>Revisão de erros</h1>
-        <p class="page-header__desc">Toda questão que você erra entra aqui numa fila de revisão espaçada: erre de novo e ela volta rápido; acerte e o intervalo até a próxima revisão cresce — até sumir da fila por bastante tempo, mas nunca ser esquecida de vez.</p>
+        <p class="page-header__desc">Toda questão que você erra entra numa fila de revisão espaçada: erre de novo e ela volta rápido; acerte e o intervalo cresce, até sumir da fila.</p>
       </div>
       <div class="stat-row">
         <div class="stat-tile"><div class="stat-tile__value">${vencidas.length}</div><div class="stat-tile__label">Para revisar agora</div></div>

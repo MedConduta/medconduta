@@ -19,7 +19,7 @@ async function renderTela(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Cronograma</div>
         <h1>Sua preparação até a prova</h1>
-        <p class="page-header__desc">Informe a data e a prova-alvo (SES-PE ou ENAMED — cada uma pesa as áreas de um jeito um pouco diferente) para a plataforma calcular automaticamente em qual fase da preparação você está (Construção → Consolidação → Intensificação → Reta Final → Pré-prova) e ajustar o foco das suas sessões em "Hoje" de acordo.</p>
+        <p class="page-header__desc">Informe a data e a prova-alvo para calcular sua fase de preparação (Construção → Consolidação → Intensificação → Reta Final → Pré-prova) e ajustar o foco das sessões em "Hoje".</p>
       </div>
 
       <div class="card" style="margin-bottom:24px;">
