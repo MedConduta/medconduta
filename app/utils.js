@@ -9,6 +9,25 @@ export function escapeHtml(str = "") {
     .replace(/'/g, "&#39;");
 }
 
+/**
+ * Renderiza uma imagem de estudo (ECG, radiografia etc.) com legenda e fonte.
+ * `imagem` é o objeto opcional {url, legenda, fonte} usado em secoes de
+ * data/temas.json e em questoes de data/questoes.json. Carregamento é lazy
+ * (não entra no precache do Service Worker) para não pesar o app inteiro.
+ */
+export function renderImagemEstudo(imagem) {
+  if (!imagem?.url) return "";
+  return `
+    <figure class="imagem-estudo">
+      <img src="${escapeHtml(imagem.url)}" alt="${escapeHtml(imagem.legenda || "")}" loading="lazy" />
+      <figcaption>
+        ${escapeHtml(imagem.legenda || "")}
+        ${imagem.fonte ? `<span class="imagem-estudo__fonte">${escapeHtml(imagem.fonte)}</span>` : ""}
+      </figcaption>
+    </figure>
+  `;
+}
+
 export async function fetchJson(path) {
   const res = await fetch(path);
   if (!res.ok) throw new Error(`Falha ao carregar ${path}: ${res.status}`);
