@@ -117,6 +117,23 @@ function agruparPorAreaECategoria(temas, infoPorCategoria, concluidosSet) {
 }
 
 export async function renderLista(container) {
+  container.innerHTML = `
+    <div class="main__container">
+      <div class="page-header">
+        <div class="skeleton skeleton-line skeleton-line--short" style="height:12px;width:200px;"></div>
+        <div class="skeleton skeleton-line" style="height:28px;width:50%;margin-top:8px;"></div>
+      </div>
+      ${Array.from(
+        { length: 4 },
+        () => `
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-line skeleton-line--short"></div>
+          <div class="skeleton skeleton-line"></div>
+        </div>`
+      ).join("")}
+    </div>
+  `;
+
   const [temas, progresso, diagnostico] = await Promise.all([todosOsTemas(), getAll("progresso"), gerarDiagnostico()]);
   const concluidosSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
   const infoPorCategoria = new Map(diagnostico.porCategoria.map((c) => [c.categoria, c]));

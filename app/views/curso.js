@@ -11,7 +11,25 @@ import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
  * duplicado, só organizado.
  */
 export async function renderCurso(container) {
-  container.innerHTML = `<div class="main__container"><div class="empty-state">Montando o curso...</div></div>`;
+  container.innerHTML = `
+    <div class="main__container">
+      <div class="page-header">
+        <div class="skeleton skeleton-line skeleton-line--short" style="height:12px;width:200px;"></div>
+        <div class="skeleton skeleton-line" style="height:28px;width:50%;margin-top:8px;"></div>
+      </div>
+      <div class="stat-row">
+        ${Array.from({ length: 4 }, () => `<div class="skeleton" style="height:76px;"></div>`).join("")}
+      </div>
+      ${Array.from(
+        { length: 3 },
+        () => `
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-line skeleton-line--short"></div>
+          <div class="skeleton skeleton-line"></div>
+        </div>`
+      ).join("")}
+    </div>
+  `;
 
   const [grade, agenda, dashboard] = await Promise.all([gerarGradeCurso(), getAgendaHoje(), getDashboardCurso()]);
 

@@ -2,6 +2,24 @@ import { escapeHtml } from "../utils.js";
 import { gerarDiagnostico, QUADRANTES } from "../prontidao.js";
 
 export async function renderProntidao(container) {
+  container.innerHTML = `
+    <div class="main__container">
+      <div class="page-header">
+        <div class="skeleton skeleton-line skeleton-line--short" style="height:12px;width:200px;"></div>
+        <div class="skeleton skeleton-line" style="height:28px;width:50%;margin-top:8px;"></div>
+      </div>
+      <div class="skeleton" style="height:120px;margin-bottom:20px;"></div>
+      ${Array.from(
+        { length: 4 },
+        () => `
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-line skeleton-line--short"></div>
+          <div class="skeleton skeleton-line"></div>
+        </div>`
+      ).join("")}
+    </div>
+  `;
+
   const { indicePreparo, porCategoria } = await gerarDiagnostico();
 
   container.innerHTML = `

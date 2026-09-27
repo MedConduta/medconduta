@@ -24,7 +24,26 @@ const JANELA_SEMANAS = 8;
  * 100% dos cálculos já existentes (nenhuma lógica de negócio nova).
  */
 export async function renderMinhaPreparacao(container) {
-  container.innerHTML = `<div class="main__container"><div class="empty-state">Carregando sua preparação...</div></div>`;
+  container.innerHTML = `
+    <div class="main__container">
+      <div class="page-header">
+        <div class="skeleton skeleton-line skeleton-line--short" style="height:12px;width:200px;"></div>
+        <div class="skeleton skeleton-line" style="height:28px;width:60%;margin-top:8px;"></div>
+      </div>
+      <div class="stat-row">
+        ${Array.from({ length: 3 }, () => `<div class="skeleton" style="height:76px;"></div>`).join("")}
+      </div>
+      ${Array.from(
+        { length: 2 },
+        () => `
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-line skeleton-line--short"></div>
+          <div class="skeleton skeleton-line skeleton-line--tall"></div>
+          <div class="skeleton skeleton-line"></div>
+        </div>`
+      ).join("")}
+    </div>
+  `;
 
   const horasSalvas = await getPref(PREF_HORAS, 2);
   // Note: não chama getDashboardCurso() aqui — ela recalcula gerarGradeCurso()
