@@ -29,12 +29,16 @@ const DESEMPENHO_ALTO = 0.8;
 const PESO_COMPLETUDE_NO_INDICE = 0.4;
 const PESO_DESEMPENHO_NO_INDICE = 0.6;
 
+// Só 3 cores (vermelho/amarelo/verde), as mesmas da prioridade de prova (ver
+// app/prioridadeProva.js) — mesma sinalização visual em todo o app, mesmo
+// esses dois sistemas medindo coisas diferentes (aqui é desempenho pessoal
+// cruzado com incidência; lá é a incidência estatística nas bancas).
 export const QUADRANTES = {
   critico: { emoji: "🔴", label: "Crítico", descricao: "Alta incidência na prova, desempenho abaixo do esperado — prioridade máxima." },
-  atencao: { emoji: "🟠", label: "Atenção", descricao: "Alta incidência, desempenho mediano — vale reforçar." },
+  atencao: { emoji: "🟡", label: "Atenção", descricao: "Alta incidência, desempenho mediano — vale reforçar." },
   dominado: { emoji: "🟢", label: "Dominado", descricao: "Alta incidência e bom desempenho — manter com revisões espaçadas." },
   secundarioFraco: { emoji: "🟡", label: "Secundário fraco", descricao: "Baixa incidência e desempenho a melhorar — atenção só depois dos críticos." },
-  tranquilo: { emoji: "⚪", label: "Tranquilo", descricao: "Baixa incidência — baixa prioridade." },
+  tranquilo: { emoji: "🟢", label: "Tranquilo", descricao: "Baixa incidência — baixa prioridade." },
 };
 
 function classificarQuadrante(peso, desempenho) {

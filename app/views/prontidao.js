@@ -15,7 +15,7 @@ export async function renderProntidao(container) {
       ${renderIndice(indicePreparo)}
 
       <h3>Heatmap de fraquezas</h3>
-      <p class="page-header__desc" style="margin-top:-8px;">Incidência × desempenho, em 5 níveis de prioridade — do que precisa de atenção agora ao que já está tranquilo.</p>
+      <p class="page-header__desc" style="margin-top:-8px;">Incidência × desempenho, sinalizado em 3 cores (🔴 crítico, 🟡 atenção, 🟢 tranquilo) — do que precisa de atenção agora ao que já está tranquilo.</p>
       ${renderHeatmap(porCategoria)}
 
       <h3 style="margin-top:32px;">Mapa de domínio</h3>
