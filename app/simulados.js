@@ -16,7 +16,7 @@ import { pesoProva } from "./areas.js";
 import { getConfiguracaoProva } from "./cronograma.js";
 import { calcularDesempenhoPorCategoria, calcularScorePrioridade } from "./planner.js";
 
-export const TAMANHOS_DISPONIVEIS = [20, 40, 60, 80];
+export const TAMANHOS_DISPONIVEIS = [20, 40, 60, 80, 100];
 export const TAMANHO_PADRAO = 40;
 export const MIN_POR_QUESTAO = 1.5; // ritmo de prova real (~90s/questão)
 
