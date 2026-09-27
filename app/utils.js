@@ -83,6 +83,12 @@ export function renderMarkdown(texto) {
   const linhas = escapeHtml(texto).split("\n");
   const blocos = [];
   let listaAtual = null;
+  // Linhas soltas de um mesmo parágrafo (sem linha em branco entre elas) são
+  // acumuladas aqui e só viram <p> quando o parágrafo fecha — juntar antes de
+  // aplicar o markdown inline evita que um **negrito**/*itálico* que a IA
+  // quebrou em duas linhas (quebra de linha "solta" no meio da frase) fique
+  // com os asteriscos literais, já que cada linha isolada nunca fecha o par.
+  let paragrafoAtual = [];
 
   function fecharLista() {
     if (listaAtual) {
@@ -92,10 +98,18 @@ export function renderMarkdown(texto) {
     }
   }
 
+  function fecharParagrafo() {
+    if (paragrafoAtual.length) {
+      blocos.push(`<p>${aplicarMarkdownInline(paragrafoAtual.join(" "))}</p>`);
+      paragrafoAtual = [];
+    }
+  }
+
   for (const linhaRaw of linhas) {
     const linha = linhaRaw.trim();
 
     if (/^-{3,}$/.test(linha) || /^\*{3,}$/.test(linha)) {
+      fecharParagrafo();
       fecharLista();
       blocos.push("<hr>");
       continue;
@@ -106,6 +120,7 @@ export function renderMarkdown(texto) {
     const cabecalho = linha.match(/^(#{1,4})\s+(.*)/);
 
     if (marcadorLista) {
+      fecharParagrafo();
       if (!listaAtual || listaAtual.tipo !== "ul") {
         fecharLista();
         listaAtual = { tipo: "ul", itens: [] };
@@ -114,6 +129,7 @@ export function renderMarkdown(texto) {
       continue;
     }
     if (marcadorNumerado) {
+      fecharParagrafo();
       if (!listaAtual || listaAtual.tipo !== "ol") {
         fecharLista();
         listaAtual = { tipo: "ol", itens: [] };
@@ -123,14 +139,19 @@ export function renderMarkdown(texto) {
     }
     fecharLista();
 
-    if (!linha) continue;
+    if (!linha) {
+      fecharParagrafo();
+      continue;
+    }
     if (cabecalho) {
+      fecharParagrafo();
       blocos.push(`<h4 class="ia-markdown-titulo">${aplicarMarkdownInline(cabecalho[2])}</h4>`);
       continue;
     }
-    blocos.push(`<p>${aplicarMarkdownInline(linha)}</p>`);
+    paragrafoAtual.push(linha);
   }
   fecharLista();
+  fecharParagrafo();
 
   return blocos.join("");
 }
