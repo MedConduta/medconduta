@@ -9,6 +9,7 @@ import { renderFlowchart } from "../components/flowchart.js";
 import { icon } from "../components/icons.js";
 import { gerarDiagnostico } from "../prontidao.js";
 import { gerarRevisoesParaTema, hojeIso } from "../revisaoCurso.js";
+import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
 
 // Fase 12 — ordem de prioridade dos quadrantes (ver prontidao.js): categorias
 // críticas primeiro, tranquilas por último. Curso reordenado pelo mesmo
@@ -236,11 +237,15 @@ function renderCategoriaGroup({ categoria, temas, info }) {
 function renderTemaListItem(tema) {
   const busca = `${tema.titulo} ${tema.categoria} ${tema.resumo}`.toLowerCase();
   const badgeIA = tema.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : "";
+  const prioridade = infoPrioridade(tema.prioridadeProva);
   return `
-    <li>
+    <li class="${prioridade.bordaClasse}">
       <a class="content-list__item" href="#/residencia/conteudo/${tema.id}" data-busca="${escapeHtml(busca)}">
         <span class="content-list__title">${escapeHtml(tema.titulo)}</span>
-        ${badgeIA}
+        <span style="display:flex;gap:8px;align-items:center;">
+          ${badgeIA}
+          ${badgePrioridade(tema.prioridadeProva)}
+        </span>
       </a>
     </li>
   `;
@@ -345,16 +350,17 @@ export async function renderDetalhe(container, { id }) {
   const infoCategoria = diagnostico.porCategoria.find((c) => c.categoria === tema.categoria) || null;
   const respostasDoTema = respostas.filter((r) => r.temaId === tema.id);
   const temQuestoes = [...questoesCuradas, ...questoesGeradas].some((q) => q.temaId === tema.id);
+  const prioridade = infoPrioridade(tema.prioridadeProva);
 
   container.innerHTML = `
-    <div class="main__container">
+    <div class="main__container ${prioridade.fundoClasse}">
       <div class="page-header">
         <a class="btn btn--ghost" href="#/residencia/conteudo" style="padding-left:0;margin-bottom:8px;">← Conteúdo</a>
         <div class="page-header__eyebrow">
           ${escapeHtml(tema.categoria)}
           ${infoCategoria?.quadrante ? `<span title="${escapeHtml(infoCategoria.quadrante.label)}">${infoCategoria.quadrante.emoji} ${escapeHtml(infoCategoria.quadrante.label)}</span>` : ""}
         </div>
-        <h1>${escapeHtml(tema.titulo)} ${geradoPorIA ? '<span class="badge badge--ia">✨ IA</span>' : ""}</h1>
+        <h1>${escapeHtml(tema.titulo)} ${geradoPorIA ? '<span class="badge badge--ia">✨ IA</span>' : ""} ${badgePrioridade(tema.prioridadeProva)}</h1>
         ${geradoPorIA && tema.notaRevisaoIA ? `<p class="page-header__desc"><em>Nota da autocrítica da IA: ${escapeHtml(tema.notaRevisaoIA)}</em></p>` : ""}
         ${
           tema.comoCai

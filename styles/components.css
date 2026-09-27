@@ -1211,3 +1211,27 @@ button.stat-tile:hover {
   font-size: var(--fs-sm);
   color: var(--color-text-secondary);
 }
+
+/* ---------- Prioridade de prova (SES-PE / ENAMED) ---------- */
+/* Fundo "clarinho" da página de um tema — usa os mesmos tokens dos badges
+   (--color-danger-soft etc.), então já respeita dark mode automaticamente. */
+.bg-prioridade-alta {
+  background: var(--color-danger-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+.bg-prioridade-media {
+  background: var(--color-warning-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+.bg-prioridade-baixa {
+  background: var(--color-success-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+/* Borda lateral no item do Curso / lista de Conteúdo — mesma cor do badge correspondente. */
+.borda-prioridade-alta { border-left: 3px solid var(--color-danger); }
+.borda-prioridade-media { border-left: 3px solid var(--color-warning); }
+.borda-prioridade-baixa { border-left: 3px solid var(--color-success); }

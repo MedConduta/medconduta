@@ -105,6 +105,7 @@ function montarItem(linha, contexto) {
     temQuestoes,
     questoesFeitas,
     percentual: etapasAplicaveis ? Math.round((etapasConcluidas / etapasAplicaveis) * 100) : 0,
+    prioridadeProva: tema.prioridadeProva || "media",
   };
 }
 

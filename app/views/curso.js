@@ -1,6 +1,7 @@
 import { escapeHtml } from "../utils.js";
 import { gerarGradeCurso, getAgendaHoje, getDashboardCurso, setCursoInicio } from "../curriculo.js";
 import { marcarRevisaoConcluida } from "../revisaoCurso.js";
+import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
 
 /**
  * Curso — gerenciador de estudos sobre o cronograma real (ver app/curriculo.js
@@ -244,13 +245,15 @@ function renderSemana(semana) {
 
 function renderItem(item) {
   const etapa = (aplicavel, feito, label) => (aplicavel ? `<span style="opacity:${feito ? 1 : 0.45};">${feito ? "✓" : "○"} ${label}</span>` : "");
+  const prioridade = infoPrioridade(item.prioridadeProva);
   return `
-    <li data-item data-tema-id="${item.temaId}" data-titulo="${escapeHtml(item.titulo.toLowerCase())}" data-categoria="${escapeHtml(item.categoria)}">
+    <li data-item data-tema-id="${item.temaId}" data-titulo="${escapeHtml(item.titulo.toLowerCase())}" data-categoria="${escapeHtml(item.categoria)}" class="${prioridade.bordaClasse}">
       <a class="content-list__item" href="#/residencia/conteudo/${item.temaId}">
         <span class="content-list__title">${item.percentual === 100 ? "✓ " : ""}${escapeHtml(item.titulo)}</span>
-        <span style="display:flex;gap:10px;font-size:var(--fs-xs);color:var(--color-text-secondary);white-space:nowrap;">
+        <span style="display:flex;gap:10px;align-items:center;font-size:var(--fs-xs);color:var(--color-text-secondary);white-space:nowrap;">
           ${etapa(true, item.resumoConcluido, "Resumo")}
           ${etapa(item.temQuestoes, item.questoesFeitas, "Questões")}
+          ${badgePrioridade(item.prioridadeProva)}
         </span>
       </a>
     </li>
