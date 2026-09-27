@@ -7,6 +7,7 @@ import { getMetaDiaria } from "../metaDiaria.js";
 import { gerarGradeCurso, encontrarSemanaAtual } from "../curriculo.js";
 import { hojeIso, getAgendaRevisoes } from "../revisaoCurso.js";
 import { AREA_POR_CATEGORIA, ORDEM_AREAS } from "../areas.js";
+import { renderStreak } from "../components/streak.js";
 
 const PREF_HORAS = "planejador_horas";
 
@@ -80,10 +81,13 @@ export async function renderMinhaPreparacao(container) {
 
   container.innerHTML = `
     <div class="main__container">
-      <div class="page-header">
-        <div class="page-header__eyebrow">Residência</div>
-        <h1>Minha Preparação</h1>
-        <p class="page-header__desc">O retrato de onde você está agora, com foco na semana corrente do seu cronograma.</p>
+      <div class="page-header" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:16px;">
+        <div>
+          <div class="page-header__eyebrow">Residência</div>
+          <h1>Minha Preparação</h1>
+          <p class="page-header__desc">O retrato de onde você está agora, com foco na semana corrente do seu cronograma.</p>
+        </div>
+        ${renderStreak(constancia.streakAtual)}
       </div>
 
       ${renderModoEspecial(modo)}
@@ -91,7 +95,6 @@ export async function renderMinhaPreparacao(container) {
       <div class="stat-row">
         <div class="stat-tile"><div class="stat-tile__value">${diagnostico.indicePreparo}</div><div class="stat-tile__label">Índice de Prontidão</div></div>
         <div class="stat-tile"><div class="stat-tile__value">${fase.id ? escapeHtml(fase.nome) : "—"}</div><div class="stat-tile__label">${diasRestantes !== null ? `${diasRestantes} dias até a prova` : "Prova não configurada"}</div></div>
-        <div class="stat-tile"><div class="stat-tile__value">${constancia.streakAtual}${constancia.streakAtual > 0 ? " 🔥" : ""}</div><div class="stat-tile__label">Dias seguidos estudando</div></div>
       </div>
 
       ${renderMetaDiaria(metaDiaria)}
