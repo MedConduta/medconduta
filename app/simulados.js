@@ -18,7 +18,7 @@ import { calcularDesempenhoPorCategoria, calcularScorePrioridade } from "./plann
 
 export const TAMANHOS_DISPONIVEIS = [20, 40, 60, 80, 100];
 export const TAMANHO_PADRAO = 40;
-export const MIN_POR_QUESTAO = 1.5; // ritmo de prova real (~90s/questão)
+export const MIN_POR_QUESTAO = 2.4; // 100 questões = 4h, proporcional para os demais tamanhos
 
 // Fase 16 — Simulados estratégicos: em vez de puxar de toda a prova na
 // proporção real (selecionarQuestoesSimulado), foca só nas categorias de

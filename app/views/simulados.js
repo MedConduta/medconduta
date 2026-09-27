@@ -50,7 +50,7 @@ export async function renderSimulados(container) {
             <div class="field">
               <label for="simulado-tamanho">Número de questões</label>
               <select id="simulado-tamanho">
-                ${TAMANHOS_DISPONIVEIS.map((t) => `<option value="${t}" ${t === tamanhoEscolhido ? "selected" : ""}>${t} questões (~${Math.round(t * MIN_POR_QUESTAO)} min)</option>`).join("")}
+                ${TAMANHOS_DISPONIVEIS.map((t) => `<option value="${t}" ${t === tamanhoEscolhido ? "selected" : ""}>${t} questões (~${formatarDuracaoAprox(t * MIN_POR_QUESTAO)})</option>`).join("")}
               </select>
             </div>
             <button class="btn btn--primary" id="btn-iniciar">Iniciar simulado</button>
@@ -204,7 +204,7 @@ export async function renderSimulados(container) {
         <div class="card" style="margin-bottom:24px;text-align:center;">
           <div style="font-size:48px;font-weight:700;line-height:1;color:var(--color-accent);">${resultado.percentual}%</div>
           <div class="list-card__title" style="margin-top:4px;">${resultado.acertos} de ${resultado.tamanho} questões</div>
-          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">${resultado.duracaoUsadaMin} min usados de ~${Math.round(resultado.tamanho * MIN_POR_QUESTAO)} min disponíveis.</p>
+          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">${formatarDuracaoAprox(resultado.duracaoUsadaMin)} usados de ~${formatarDuracaoAprox(resultado.tamanho * MIN_POR_QUESTAO)} disponíveis.</p>
         </div>
 
         <h3>Desempenho por área</h3>
@@ -270,6 +270,16 @@ function formatarTempo(segundosTotais) {
   const mm = String(min).padStart(2, "0");
   const ss = String(seg).padStart(2, "0");
   return horas > 0 ? `${horas}:${mm}:${ss}` : `${mm}:${ss}`;
+}
+
+/** "48 min", "1h36" ou "4h" — evita mostrar durações longas só em minutos (ex.: "240 min"). */
+function formatarDuracaoAprox(minutosTotais) {
+  const min = Math.round(minutosTotais);
+  const h = Math.floor(min / 60);
+  const m = min % 60;
+  if (h === 0) return `${m} min`;
+  if (m === 0) return `${h}h`;
+  return `${h}h${String(m).padStart(2, "0")}`;
 }
 
 function renderHistorico(historico) {
