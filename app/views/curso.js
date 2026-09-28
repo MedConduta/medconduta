@@ -165,7 +165,7 @@ function renderInicioCurso(inicioReal) {
   return `
     <div class="card" style="margin-bottom:24px;">
       <form id="form-curso-inicio" style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end;">
-        <div class="field" style="flex:1;min-width:180px;">
+        <div class="field" style="width:220px;max-width:100%;">
           <label for="curso-inicio-data">Início do curso (Semana 1)</label>
           <input type="date" id="curso-inicio-data" value="${escapeHtml(inicioReal)}" />
         </div>
