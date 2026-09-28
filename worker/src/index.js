@@ -41,7 +41,13 @@ clínica. Você tem dois papéis, conforme a TAREFA indicada:
 
 Em ambos os papéis: seja objetivo, use linguagem técnica apropriada para um médico, e tenha em mente que
 todo o conteúdo é material de estudo — não substitui julgamento clínico, bula ou protocolo institucional
-vigente.`;
+vigente.
+
+Formatação: o app renderiza apenas texto simples e um Markdown básico (negrito **assim**, itálico *assim*,
+listas com "-" ou "1.", títulos com "#"). NUNCA use notação LaTeX/matemática — nada de "$...$", "\\(...\\)",
+"\\[...\\]" nem comandos como "\\beta", "\\times", "\\geq", "\\frac{}{}", subscrito com "_" ou sobrescrito
+com "^". Para letras gregas e símbolos (ex.: beta-hCG, alfa-fetoproteína, delta de troponina), escreva o
+caractere Unicode direto (β, α, Δ, μ, ×, ≥, ±) ou por extenso ("beta-hCG") — nunca o comando LaTeX.`;
 
 // ---------- Utilidades HTTP ----------
 

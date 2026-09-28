@@ -9,6 +9,7 @@
  */
 
 import { buscarNoCache, salvarNoCache } from "./iaCache.js";
+import { limparNotacaoMatematica } from "./utils.js";
 
 const ENDPOINT_PADRAO = "https://medconduta-ai.medcondutaa.workers.dev";
 
@@ -26,7 +27,9 @@ export async function askAI({ pergunta, contexto = "", tarefa = "responder à pe
   const paramsCache = { pergunta, contexto, tarefa, formatoJson };
   if (!semCache) {
     const cacheada = await buscarNoCache(paramsCache);
-    if (cacheada !== null) return cacheada;
+    // Saneamento aplicado na leitura (não na gravação do cache) para que uma
+    // melhoria futura no sanitizador beneficie também respostas já cacheadas.
+    if (cacheada !== null) return formatoJson ? cacheada : limparNotacaoMatematica(cacheada);
   }
 
   let res;
@@ -46,7 +49,18 @@ export async function askAI({ pergunta, contexto = "", tarefa = "responder à pe
   }
   const resposta = dados.resposta || "";
   if (!semCache && resposta) await salvarNoCache(paramsCache, resposta);
-  return resposta;
+  return formatoJson ? resposta : limparNotacaoMatematica(resposta);
+}
+
+function limparValoresRecursivo(valor) {
+  if (typeof valor === "string") return limparNotacaoMatematica(valor);
+  if (Array.isArray(valor)) return valor.map(limparValoresRecursivo);
+  if (valor && typeof valor === "object") {
+    const limpo = {};
+    for (const [chave, v] of Object.entries(valor)) limpo[chave] = limparValoresRecursivo(v);
+    return limpo;
+  }
+  return valor;
 }
 
 /**
@@ -55,9 +69,11 @@ export async function askAI({ pergunta, contexto = "", tarefa = "responder à pe
  */
 export async function askAIJson(params) {
   const texto = await askAI({ ...params, formatoJson: true });
+  let dados;
   try {
-    return JSON.parse(texto);
+    dados = JSON.parse(texto);
   } catch {
     throw new Error("A IA não devolveu um JSON válido. Tente novamente.");
   }
+  return limparValoresRecursivo(dados);
 }
