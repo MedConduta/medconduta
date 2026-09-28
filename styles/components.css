@@ -504,6 +504,19 @@
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 18%, transparent);
 }
 
+/* input[type=date] no Chrome precisa de mais altura interna que os outros
+   tipos pro próprio seletor nativo de data — com o padding padrão do .field
+   ele estoura o min-height de 44px e fica maior que o botão ao lado (ver
+   #form-curso-inicio). Reduzir o padding vertical aqui mantém os 44px sem
+   afetar nenhum outro input[type=date] fora deste form. */
+#form-curso-inicio input[type="date"] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#form-curso-inicio .field {
+  margin-bottom: 0;
+}
+
 .range-row {
   display: flex;
   align-items: center;
