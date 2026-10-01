@@ -92,10 +92,11 @@ async function renderTela(container) {
           if (i === escolhida && !acertou) b.classList.add("is-incorrect");
         });
         const resultadoEl = listaEl.querySelector(`.resultado[data-qid="${qid}"]`);
+        const letraCorreta = String.fromCharCode(65 + questao.correta);
         resultadoEl.innerHTML = `
-          <div class="explanation-box">
+          <div class="explanation-box explanation-box--${acertou ? "correta" : "incorreta"}">
             <strong style="color:${acertou ? "var(--color-success)" : "var(--color-danger)"}">${
-          acertou ? "Correto! Intervalo de revisão aumentou." : "Incorreto — volta para revisão em breve."
+          acertou ? "✓ Correta! Intervalo de revisão aumentou." : `✕ Incorreta — gabarito ${letraCorreta}. Volta para revisão em breve.`
         }</strong>
             <p style="margin-top:8px;">${escapeHtml(questao.comentario)}</p>
             ${!acertou ? renderSeletorMotivoErro() : ""}

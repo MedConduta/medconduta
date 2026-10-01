@@ -738,9 +738,10 @@ export async function renderLista(container, _params, query = {}) {
           if (i === escolhida && !acertou) b.classList.add("is-incorrect");
         });
         const resultadoEl = listaEl.querySelector(`.resultado[data-qid="${CSS.escape(id)}"]`);
+        const letraCorreta = String.fromCharCode(65 + q.correta);
         resultadoEl.innerHTML = `
-          <div class="explanation-box">
-            <strong style="color:${acertou ? "var(--color-success)" : "var(--color-danger)"}">${acertou ? "Correto!" : "Incorreto."}</strong>
+          <div class="explanation-box explanation-box--${acertou ? "correta" : "incorreta"}">
+            <strong style="color:${acertou ? "var(--color-success)" : "var(--color-danger)"}">${acertou ? `✓ Correta!` : `✕ Incorreta — gabarito ${letraCorreta}.`}</strong>
             <p style="margin-top:8px;">${escapeHtml(q.comentario)}</p>
             <div class="comentario-extra">
               <button type="button" class="btn btn--ghost" style="padding:4px 0;min-height:auto;font-size:var(--fs-xs);">Comentário</button>
