@@ -486,7 +486,6 @@
 .field input[type="tel"],
 .field input[type="search"],
 .field input[type="url"],
-.field select,
 .field textarea {
   width: 100%;
   padding: var(--space-3);
@@ -503,6 +502,31 @@
   outline: none;
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 18%, transparent);
 }
+
+/* Selects em formato "chip"/pill — chevron próprio no lugar da seta nativa
+   do navegador, visual mais moderno e consistente em toda a plataforma
+   (todo <select> do app vive dentro de um .field). */
+.field select {
+  width: 100%;
+  padding: var(--space-3) 38px var(--space-3) var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888a94' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px;
+  color: var(--color-text);
+  min-height: 44px;
+  font: inherit;
+  font-weight: var(--fw-medium);
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.field select:hover { border-color: var(--color-border-strong); background-color: var(--color-surface-hover); }
+.field select:disabled { cursor: not-allowed; opacity: 0.6; }
 
 /* input[type=date] no Chrome precisa de mais altura interna que os outros
    tipos pro próprio seletor nativo de data — com o padding padrão do .field
@@ -532,7 +556,7 @@
 .question-option {
   display: flex;
   gap: var(--space-3);
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   text-align: left;
   padding: var(--space-3) var(--space-4);
@@ -540,23 +564,33 @@
   border-radius: var(--radius-md);
   background: var(--color-surface);
   margin-bottom: var(--space-2);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
-.question-option:hover { border-color: var(--color-border-strong); background: var(--color-surface-hover); }
+.question-option:hover:not(.is-disabled) {
+  border-color: var(--color-accent);
+  background: var(--color-surface-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
 .question-option__letter {
   flex-shrink: 0;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: var(--color-bg-subtle);
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: var(--fs-sm);
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-bold);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 .question-option.is-correct { border-color: var(--color-success); background: var(--color-success-soft); }
+.question-option.is-correct .question-option__letter { background: var(--color-success); color: var(--color-text-on-accent); }
 .question-option.is-incorrect { border-color: var(--color-danger); background: var(--color-danger-soft); }
-.question-option.is-disabled { opacity: 0.75; }
+.question-option.is-incorrect .question-option__letter { background: var(--color-danger); color: var(--color-text-on-accent); }
+.question-option.is-disabled { opacity: 0.85; cursor: default; }
 
 .explanation-box {
   margin-top: var(--space-4);
@@ -564,6 +598,17 @@
   border-radius: var(--radius-md);
   background: var(--color-bg-subtle);
   border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-border-strong);
+}
+.explanation-box--correta {
+  background: var(--color-success-soft);
+  border-color: var(--color-success-soft);
+  border-left-color: var(--color-success);
+}
+.explanation-box--incorreta {
+  background: var(--color-danger-soft);
+  border-color: var(--color-danger-soft);
+  border-left-color: var(--color-danger);
 }
 
 /* ---------- Planejador ---------- */
