@@ -4,7 +4,7 @@
  * pré-cacheadas são armazenadas em runtime na primeira visita.
  */
 
-const CACHE_VERSION = "medconduta-v104";
+const CACHE_VERSION = "medconduta-v105";
 
 const PRECACHE_URLS = [
   "./",
@@ -28,6 +28,7 @@ const PRECACHE_URLS = [
   "./app/favoritos.js",
   "./app/anotacoes.js",
   "./app/motivoErro.js",
+  "./app/backup.js",
   "./app/theme.js",
   "./app/utils.js",
   "./app/ai.js",
@@ -48,6 +49,7 @@ const PRECACHE_URLS = [
   "./app/views/planejador.js",
   "./app/views/curso.js",
   "./app/views/flashcards.js",
+  "./app/views/backup.js",
 
   "./data/temas.json",
   "./data/fluxogramas.json",
