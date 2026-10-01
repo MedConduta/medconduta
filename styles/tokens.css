@@ -2,44 +2,64 @@
    MedConduta — Design tokens
    Tema claro por padrão; suporte a prefers-color-scheme e alternância manual
    via atributo [data-theme] na tag <html>.
+   Paleta e tipografia alinhadas ao material de estudo IGEDUC (simulados
+   gerados nesta conta): fundo azulado, acento azul/roxo, destaque amarelo
+   e cores categóricas (g1-g5) para dar identidade visual mais viva.
    ========================================================================== */
 
 :root {
   /* Cor — neutros */
-  --color-bg: #ffffff;
-  --color-bg-subtle: #f6f7f8;
+  --color-bg: #eef2f9;
+  --color-bg-subtle: #e4eaf7;
   --color-surface: #ffffff;
-  --color-surface-hover: #f0f2f3;
-  --color-border: #e4e7ea;
-  --color-border-strong: #d3d8dc;
+  --color-surface-hover: #eef2fb;
+  --color-border: #d5ddec;
+  --color-border-strong: #bcc8e0;
 
   /* Cor — texto */
-  --color-text: #1f2933;
-  --color-text-secondary: #5b6670;
-  --color-text-muted: #8994a0;
+  --color-text: #13203a;
+  --color-text-secondary: #56637d;
+  --color-text-muted: #8491ac;
   --color-text-on-accent: #ffffff;
 
-  /* Cor — acento (sálvia-petróleo dessaturado) */
-  --color-accent: #3d6f68;
-  --color-accent-hover: #325c56;
-  --color-accent-soft: #e7f0ee;
-  --color-accent-soft-border: #cfe1dd;
-  --gradient-accent: linear-gradient(135deg, #3d6f68, #6a9990);
-  --shadow-accent: 0 6px 16px rgba(61, 111, 104, 0.28);
+  /* Cor — acento (azul, cor g1 da paleta IGEDUC) */
+  --color-accent: #2457d6;
+  --color-accent-hover: #1c46b3;
+  --color-accent-soft: #e3ebfc;
+  --color-accent-soft-border: #c3d6f7;
+  --gradient-accent: linear-gradient(135deg, #2457d6, #7a3fd0);
+  --shadow-accent: 0 6px 16px rgba(36, 87, 214, 0.28);
+
+  /* Cor — destaque de atenção (equivalente ao "mark" dos simulados) */
+  --color-mark: #ffe066;
+  --color-mark-fg: #3a2e00;
+
+  /* Cor — categórica (g1-g5): identifica grupos/áreas sem usar o acento */
+  --color-cat-1: #2457d6;
+  --color-cat-1-soft: #e3ebfc;
+  --color-cat-2: #7a3fd0;
+  --color-cat-2-soft: #efe7fb;
+  --color-cat-3: #0c8a8a;
+  --color-cat-3-soft: #dcf3f3;
+  --color-cat-4: #c25a00;
+  --color-cat-4-soft: #fce8d9;
+  --color-cat-5: #b8267a;
+  --color-cat-5-soft: #fbe3ee;
 
   /* Cor — sinais clínicos (uso reservado: red flags, contraindicações) */
-  --color-danger: #b3413e;
-  --color-danger-soft: #f7e9e8;
-  --color-danger-border: #e6c3c1;
-  --color-warning: #b8791b;
-  --color-warning-soft: #faf1e1;
-  --color-warning-border: #eeddb8;
-  --color-success: #3f7a5c;
-  --color-success-soft: #e9f3ee;
+  --color-danger: #bf2a2a;
+  --color-danger-soft: #fde3e3;
+  --color-danger-border: #f3bcbc;
+  --color-warning: #c25a00;
+  --color-warning-soft: #fce8d9;
+  --color-warning-border: #f0c99e;
+  --color-success: #0f7b45;
+  --color-success-soft: #dcf5e6;
 
   /* Tipografia */
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --font-display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --font-sans: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
@@ -74,9 +94,9 @@
   --radius-pill: 999px;
 
   /* Sombra */
-  --shadow-sm: 0 1px 2px rgba(31, 41, 51, 0.06);
-  --shadow-md: 0 4px 12px rgba(31, 41, 51, 0.08);
-  --shadow-lg: 0 12px 32px rgba(31, 41, 51, 0.12);
+  --shadow-sm: 0 1px 2px rgba(19, 32, 58, 0.08);
+  --shadow-md: 0 4px 12px rgba(19, 32, 58, 0.1);
+  --shadow-lg: 0 12px 32px rgba(19, 32, 58, 0.14);
 
   /* Layout */
   --sidebar-width: 264px;
@@ -95,32 +115,46 @@
 /* Tema escuro automático (respeita o sistema) */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --color-bg: #14181b;
-    --color-bg-subtle: #191e21;
-    --color-surface: #1c2226;
-    --color-surface-hover: #232a2e;
-    --color-border: #2a3136;
-    --color-border-strong: #384047;
+    --color-bg: #0c1220;
+    --color-bg-subtle: #0f1729;
+    --color-surface: #151e33;
+    --color-surface-hover: #1b2740;
+    --color-border: #27324f;
+    --color-border-strong: #34415f;
 
-    --color-text: #e7ebee;
-    --color-text-secondary: #aab4bd;
-    --color-text-muted: #7c878f;
+    --color-text: #e8eefc;
+    --color-text-secondary: #9aa8c7;
+    --color-text-muted: #7b88a8;
 
-    --color-accent: #6fa89f;
-    --color-accent-hover: #83b8af;
-    --color-accent-soft: #1f2d2b;
-    --color-accent-soft-border: #2c3f3c;
-    --gradient-accent: linear-gradient(135deg, #4d8a81, #6fa89f);
-    --shadow-accent: 0 6px 18px rgba(111, 168, 159, 0.25);
+    --color-accent: #7ea2ff;
+    --color-accent-hover: #9ab6ff;
+    --color-accent-soft: #1b2a4d;
+    --color-accent-soft-border: #2d3f66;
+    --gradient-accent: linear-gradient(135deg, #7ea2ff, #b99aff);
+    --shadow-accent: 0 6px 18px rgba(126, 162, 255, 0.25);
 
-    --color-danger: #d97b78;
-    --color-danger-soft: #2c2020;
-    --color-danger-border: #4a2f2d;
-    --color-warning: #d9a24d;
-    --color-warning-soft: #2b2416;
-    --color-warning-border: #4a3c22;
-    --color-success: #7cb897;
-    --color-success-soft: #1c2921;
+    --color-mark: #ffd43b;
+    --color-mark-fg: #241c00;
+
+    --color-cat-1: #7ea2ff;
+    --color-cat-1-soft: #1b2a4d;
+    --color-cat-2: #b99aff;
+    --color-cat-2-soft: #2a2050;
+    --color-cat-3: #4fd6d6;
+    --color-cat-3-soft: #103535;
+    --color-cat-4: #ffa24d;
+    --color-cat-4-soft: #3a2412;
+    --color-cat-5: #ff7ac0;
+    --color-cat-5-soft: #3d1830;
+
+    --color-danger: #ff8a8a;
+    --color-danger-soft: #42191c;
+    --color-danger-border: #5c2a2e;
+    --color-warning: #ffa24d;
+    --color-warning-soft: #3a2412;
+    --color-warning-border: #5c3d1f;
+    --color-success: #5fe0a0;
+    --color-success-soft: #12382a;
 
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
     --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
@@ -132,32 +166,46 @@
 
 /* Alternância manual — força tema independentemente do sistema */
 :root[data-theme="dark"] {
-  --color-bg: #14181b;
-  --color-bg-subtle: #191e21;
-  --color-surface: #1c2226;
-  --color-surface-hover: #232a2e;
-  --color-border: #2a3136;
-  --color-border-strong: #384047;
+  --color-bg: #0c1220;
+  --color-bg-subtle: #0f1729;
+  --color-surface: #151e33;
+  --color-surface-hover: #1b2740;
+  --color-border: #27324f;
+  --color-border-strong: #34415f;
 
-  --color-text: #e7ebee;
-  --color-text-secondary: #aab4bd;
-  --color-text-muted: #7c878f;
+  --color-text: #e8eefc;
+  --color-text-secondary: #9aa8c7;
+  --color-text-muted: #7b88a8;
 
-  --color-accent: #6fa89f;
-  --color-accent-hover: #83b8af;
-  --color-accent-soft: #1f2d2b;
-  --color-accent-soft-border: #2c3f3c;
-  --gradient-accent: linear-gradient(135deg, #4d8a81, #6fa89f);
-  --shadow-accent: 0 6px 18px rgba(111, 168, 159, 0.25);
+  --color-accent: #7ea2ff;
+  --color-accent-hover: #9ab6ff;
+  --color-accent-soft: #1b2a4d;
+  --color-accent-soft-border: #2d3f66;
+  --gradient-accent: linear-gradient(135deg, #7ea2ff, #b99aff);
+  --shadow-accent: 0 6px 18px rgba(126, 162, 255, 0.25);
 
-  --color-danger: #d97b78;
-  --color-danger-soft: #2c2020;
-  --color-danger-border: #4a2f2d;
-  --color-warning: #d9a24d;
-  --color-warning-soft: #2b2416;
-  --color-warning-border: #4a3c22;
-  --color-success: #7cb897;
-  --color-success-soft: #1c2921;
+  --color-mark: #ffd43b;
+  --color-mark-fg: #241c00;
+
+  --color-cat-1: #7ea2ff;
+  --color-cat-1-soft: #1b2a4d;
+  --color-cat-2: #b99aff;
+  --color-cat-2-soft: #2a2050;
+  --color-cat-3: #4fd6d6;
+  --color-cat-3-soft: #103535;
+  --color-cat-4: #ffa24d;
+  --color-cat-4-soft: #3a2412;
+  --color-cat-5: #ff7ac0;
+  --color-cat-5-soft: #3d1830;
+
+  --color-danger: #ff8a8a;
+  --color-danger-soft: #42191c;
+  --color-danger-border: #5c2a2e;
+  --color-warning: #ffa24d;
+  --color-warning-soft: #3a2412;
+  --color-warning-border: #5c3d1f;
+  --color-success: #5fe0a0;
+  --color-success-soft: #12382a;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
