@@ -1004,6 +1004,15 @@ button.stat-tile:hover {
   background: var(--color-bg);
 }
 
+.login-theme-toggle {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  z-index: 1;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
 /* Mancha de cor suave atrás do cartão — usa color-mix pra ficar visível tanto
    no tema claro quanto no escuro (o token --color-accent-soft é bom demais
    pra badges, mas quase invisível como fundo no escuro). */
