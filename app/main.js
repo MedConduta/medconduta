@@ -21,7 +21,6 @@ import * as planejamentoSemanal from "./views/planejamentoSemanal.js";
 import * as revisaoAltoRendimento from "./views/revisaoAltoRendimento.js";
 import * as curso from "./views/curso.js";
 import * as flashcards from "./views/flashcards.js";
-import * as backup from "./views/backup.js";
 import { rodarBackupDiarioSeNecessario } from "./backup.js";
 
 const mainEl = document.getElementById("main-content");
@@ -52,7 +51,6 @@ registerRoute("/residencia/relatorio-semanal", relatorioSemanal.renderRelatorioS
 registerRoute("/residencia/planejamento-semanal", planejamentoSemanal.renderPlanejamentoSemanal, { title: "Planejamento Semanal" });
 registerRoute("/residencia/foco", foco.renderFoco, { title: "Modo Foco" });
 registerRoute("/residencia/simulados", simulados.renderSimulados, { title: "Simulados" });
-registerRoute("/residencia/backup", backup.renderBackup, { title: "Backup" });
 
 // ---------- Navegação / sidebar / mobile ----------
 setNavigateCallback((path, meta) => {
