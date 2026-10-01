@@ -68,6 +68,19 @@
   overflow: hidden;
 }
 
+/* Cada Grande Área ganha uma cor categórica própria (ciclo de 5, paleta
+   IGEDUC), reforçando a identidade visual colorida pedida pelo usuário. */
+.content-area:nth-of-type(5n+1) { border-left: 4px solid var(--color-cat-1); }
+.content-area:nth-of-type(5n+2) { border-left: 4px solid var(--color-cat-2); }
+.content-area:nth-of-type(5n+3) { border-left: 4px solid var(--color-cat-3); }
+.content-area:nth-of-type(5n+4) { border-left: 4px solid var(--color-cat-4); }
+.content-area:nth-of-type(5n+5) { border-left: 4px solid var(--color-cat-5); }
+.content-area:nth-of-type(5n+1) .content-area__count { color: var(--color-cat-1); background: var(--color-cat-1-soft); }
+.content-area:nth-of-type(5n+2) .content-area__count { color: var(--color-cat-2); background: var(--color-cat-2-soft); }
+.content-area:nth-of-type(5n+3) .content-area__count { color: var(--color-cat-3); background: var(--color-cat-3-soft); }
+.content-area:nth-of-type(5n+4) .content-area__count { color: var(--color-cat-4); background: var(--color-cat-4-soft); }
+.content-area:nth-of-type(5n+5) .content-area__count { color: var(--color-cat-5); background: var(--color-cat-5-soft); }
+
 .content-area > :not(summary) {
   padding: 0 var(--space-5) var(--space-2);
 }
