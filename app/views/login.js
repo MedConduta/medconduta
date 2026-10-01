@@ -1,6 +1,7 @@
 import { escapeHtml } from "../utils.js";
 import { entrar, registrar } from "../auth.js";
 import { icon } from "../components/icons.js";
+import { initThemeLocal } from "../theme.js";
 
 /**
  * Tela de entrada/cadastro. Renderizada fora do roteador normal (ver
@@ -14,6 +15,7 @@ export function renderLogin(container, { onAutenticado }) {
     const ehCriar = modo === "criar";
     return `
       <div class="login-page">
+        <button class="icon-btn login-theme-toggle" id="login-theme-toggle" type="button"></button>
         <div class="login-card">
           <div class="login-brand">
             <div class="login-brand__mark" aria-hidden="true">M</div>
@@ -54,6 +56,7 @@ export function renderLogin(container, { onAutenticado }) {
 
   function render() {
     container.innerHTML = template();
+    initThemeLocal(container.querySelector("#login-theme-toggle"));
 
     container.querySelector("#login-alternar").addEventListener("click", (e) => {
       e.preventDefault();
