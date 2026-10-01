@@ -17,6 +17,7 @@ export const NAV_ITEMS = [
       { path: "/residencia/desempenho", label: "Desempenho", icon: "flowchart" },
       { path: "/residencia/relatorio-semanal", label: "Relatório Semanal", icon: "chart-bar" },
       { path: "/residencia/foco", label: "Modo Foco", icon: "target" },
+      { path: "/residencia/backup", label: "Backup", icon: "cloud" },
     ],
   },
   {
