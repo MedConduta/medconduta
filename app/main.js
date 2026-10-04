@@ -1,7 +1,7 @@
 import { registerRoute, initRouter, setNavigateCallback } from "./router.js";
-import { renderSidebarNav, renderBottomNav, updateActiveNav } from "./components/sidebar.js";
+import { renderSidebarNav, renderBottomNav, updateActiveNav, habilitarSecaoAdmin } from "./components/sidebar.js";
 import { initTheme } from "./theme.js";
-import { isAuthenticated, sair } from "./auth.js";
+import { isAuthenticated, sair, buscarPerfil } from "./auth.js";
 import { renderLogin } from "./views/login.js";
 import { icon } from "./components/icons.js";
 
@@ -21,6 +21,7 @@ import * as planejamentoSemanal from "./views/planejamentoSemanal.js";
 import * as revisaoAltoRendimento from "./views/revisaoAltoRendimento.js";
 import * as curso from "./views/curso.js";
 import * as flashcards from "./views/flashcards.js";
+import * as admin from "./views/admin.js";
 import { rodarBackupDiarioSeNecessario } from "./backup.js";
 
 const mainEl = document.getElementById("main-content");
@@ -51,6 +52,7 @@ registerRoute("/residencia/relatorio-semanal", relatorioSemanal.renderRelatorioS
 registerRoute("/residencia/planejamento-semanal", planejamentoSemanal.renderPlanejamentoSemanal, { title: "Planejamento Semanal" });
 registerRoute("/residencia/foco", foco.renderFoco, { title: "Modo Foco" });
 registerRoute("/residencia/simulados", simulados.renderSimulados, { title: "Simulados" });
+registerRoute("/residencia/admin", admin.renderAdmin, { title: "Administração" });
 
 // ---------- Navegação / sidebar / mobile ----------
 setNavigateCallback((path, meta) => {
@@ -90,6 +92,13 @@ function iniciarApp() {
   paintNav("/residencia/minha-preparacao");
   initRouter(mainEl);
   initTheme([document.getElementById("theme-toggle"), document.getElementById("topbar-theme-btn")]);
+
+  buscarPerfil().then((perfil) => {
+    if (!perfil?.admin) return;
+    habilitarSecaoAdmin();
+    const caminhoAtual = window.location.hash.replace(/^#/, "").split("?")[0] || "/residencia/minha-preparacao";
+    paintNav(caminhoAtual);
+  });
 
   // Atrasado de propósito: o backup dispara ~15 chamadas de rede em paralelo
   // (um getAll por store) — rodar isso no exato instante do boot competiria

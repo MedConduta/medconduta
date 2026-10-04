@@ -9,7 +9,10 @@ import { initThemeLocal } from "../theme.js";
  * topbar, bottom-nav) fica oculto até o login funcionar.
  */
 export function renderLogin(container, { onAutenticado }) {
-  let modo = "entrar"; // "entrar" | "criar"
+  // Link de convite gerado na tela de admin: ?convite=XXXX-XXXX abre direto no
+  // modo "Criar conta" com o código preenchido.
+  const conviteDaUrl = new URLSearchParams(window.location.search).get("convite") || "";
+  let modo = conviteDaUrl ? "criar" : "entrar"; // "entrar" | "criar"
 
   function template() {
     const ehCriar = modo === "criar";
@@ -42,6 +45,18 @@ export function renderLogin(container, { onAutenticado }) {
                 <input type="password" id="login-password" placeholder="••••••••" required autocomplete="${ehCriar ? "new-password" : "current-password"}" minlength="8" />
               </div>
             </div>
+            ${
+              ehCriar
+                ? `<div class="field">
+              <label for="login-convite">Código de convite</label>
+              <div class="input-icon">
+                ${icon("bookmark", { size: 18 })}
+                <input type="text" id="login-convite" placeholder="ABCD-EFGH" autocomplete="off" autocapitalize="characters" spellcheck="false" value="${escapeHtml(conviteDaUrl)}" />
+              </div>
+              <p class="login-hint">Peça o código a quem te convidou para a plataforma.</p>
+            </div>`
+                : ""
+            }
             <p class="explanation-box" id="login-erro" hidden style="border-color:var(--color-danger-border);background:var(--color-danger-soft);color:var(--color-danger);"></p>
             <button type="submit" class="btn btn--primary" style="width:100%;" id="login-submit">${ehCriar ? "Criar conta" : "Entrar"}</button>
           </form>
@@ -79,10 +94,11 @@ export function renderLogin(container, { onAutenticado }) {
 
       try {
         if (modo === "criar") {
-          await registrar(email, password);
+          await registrar(email, password, container.querySelector("#login-convite").value.trim());
         } else {
           await entrar(email, password);
         }
+        if (conviteDaUrl) history.replaceState(null, "", window.location.pathname + window.location.hash);
         onAutenticado();
       } catch (err) {
         erroEl.textContent = escapeHtml(err.message);
