@@ -38,6 +38,15 @@ export const NAV_ITEMS = [
   },
 ];
 
+/** Só é chamada depois que o Worker confirma (via /auth/me) que a conta é admin. */
+export function habilitarSecaoAdmin() {
+  if (NAV_ITEMS.some((g) => g.section === "Administração")) return;
+  NAV_ITEMS.push({
+    section: "Administração",
+    items: [{ path: "/residencia/admin", label: "Usuários e convites", icon: "lock" }],
+  });
+}
+
 export const BOTTOM_NAV_ITEMS = [
   { path: "/residencia/minha-preparacao", label: "Início", icon: "home" },
   { path: "/residencia/conteudo", label: "Conteúdo", icon: "book" },

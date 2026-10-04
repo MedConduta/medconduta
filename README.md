@@ -200,6 +200,33 @@ rotas de autenticação (`/auth/register`, `/auth/login`, `/auth/logout`) e dado
 **Sem esses passos, a tela de login aparece mas registrar/entrar falha** com erro de
 conexão — o app não abre além dela, já que agora a autenticação é obrigatória.
 
+### Convites e tela de administrador
+
+O cadastro exige um **código de convite** de uso único. Os convites são gerados na tela
+**Administração → Usuários e convites** (só aparece para contas de administrador), que
+também lista todas as contas, quando cada uma foi usada pela última vez e quantas
+questões respondeu. O botão "Copiar link" gera um link que já abre o cadastro com o
+código preenchido.
+
+Para ativar (dentro de `worker/`, nesta ordem):
+
+1. Crie a tabela de convites no banco remoto (o comando é idempotente):
+   ```bash
+   npx wrangler d1 execute medconduta --remote --file=schema.sql
+   ```
+2. Defina quem é administrador — e-mails separados por vírgula, iguais aos usados no login:
+   ```bash
+   npx wrangler secret put ADMIN_EMAILS
+   ```
+3. Publique o Worker:
+   ```bash
+   npx wrangler deploy
+   ```
+
+Administradores conseguem criar conta sem convite (para o primeiro acesso). Contas que
+já existiam continuam funcionando normalmente. Para testar localmente, adicione
+`ADMIN_EMAILS="seu@email"` ao `worker/.dev.vars`.
+
 ### O que fica salvo e como
 
 Cada usuário tem sua própria senha (hash PBKDF2 com salt aleatório, nunca salva em

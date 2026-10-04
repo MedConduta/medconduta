@@ -24,6 +24,17 @@ CREATE TABLE IF NOT EXISTS sessions (
 
 CREATE INDEX IF NOT EXISTS idx_sessions_user ON sessions(user_id);
 
+-- Convites de uso único: o cadastro só é aceito com um código ainda não usado
+-- (exceto para e-mails listados no secret ADMIN_EMAILS do Worker).
+CREATE TABLE IF NOT EXISTS invites (
+  code TEXT PRIMARY KEY,
+  note TEXT,
+  created_by TEXT NOT NULL REFERENCES users(id),
+  created_at TEXT NOT NULL,
+  used_by TEXT REFERENCES users(id),
+  used_at TEXT
+);
+
 CREATE TABLE IF NOT EXISTS records (
   user_id TEXT NOT NULL REFERENCES users(id),
   store TEXT NOT NULL,

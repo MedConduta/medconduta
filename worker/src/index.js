@@ -132,13 +132,49 @@ function emailValido(email) {
   return typeof email === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
+// ---------- Administração e convites ----------
+
+// Lista de e-mails de administrador vem do secret ADMIN_EMAILS (separados por
+// vírgula), para não deixar e-mail pessoal versionado no repositório.
+function ehAdmin(env, email) {
+  if (!email) return false;
+  const admins = String(env.ADMIN_EMAILS || "")
+    .split(",")
+    .map((e) => e.trim().toLowerCase())
+    .filter(Boolean);
+  return admins.includes(email.toLowerCase());
+}
+
+// Sem 0/O/1/I para não confundir quem digita o código. 32 símbolos dividem 256
+// exatamente, então `byte % 32` não enviesa a distribuição.
+const ALFABETO_CONVITE = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+
+function gerarCodigoConvite() {
+  const chars = Array.from(crypto.getRandomValues(new Uint8Array(8)), (b) => ALFABETO_CONVITE[b % 32]).join("");
+  return `${chars.slice(0, 4)}-${chars.slice(4)}`;
+}
+
+function normalizarConvite(codigo) {
+  const limpo = String(codigo || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+  if (limpo.length !== 8) return null;
+  return `${limpo.slice(0, 4)}-${limpo.slice(4)}`;
+}
+
 async function handleRegister(request, env, origin) {
   const corpo = await readJson(request);
   if (!corpo) return jsonResponse({ erro: "JSON inválido no corpo da requisição." }, 400, origin);
-  const { email, password } = corpo;
+  const { email, password, convite } = corpo;
   if (!emailValido(email)) return jsonResponse({ erro: "E-mail inválido." }, 400, origin);
   if (typeof password !== "string" || password.length < 8) {
     return jsonResponse({ erro: "Senha precisa ter pelo menos 8 caracteres." }, 400, origin);
+  }
+
+  const admin = ehAdmin(env, email);
+  const codigo = normalizarConvite(convite);
+  if (!admin) {
+    if (!codigo) return jsonResponse({ erro: "Informe um código de convite válido." }, 403, origin);
+    const livre = await env.DB.prepare("SELECT code FROM invites WHERE code = ? AND used_by IS NULL").bind(codigo).first();
+    if (!livre) return jsonResponse({ erro: "Código de convite inválido ou já utilizado." }, 403, origin);
   }
 
   const existente = await env.DB.prepare("SELECT id FROM users WHERE email = ?").bind(email).first();
@@ -150,6 +186,19 @@ async function handleRegister(request, env, origin) {
   await env.DB.prepare("INSERT INTO users (id, email, password_hash, created_at) VALUES (?, ?, ?, ?)")
     .bind(id, email, passwordHash, agora)
     .run();
+
+  if (!admin) {
+    // O usuário precisa existir antes por causa da FK em invites.used_by. A
+    // condição `used_by IS NULL` garante uso único mesmo com dois cadastros
+    // simultâneos: quem perder a corrida tem a conta desfeita.
+    const { meta } = await env.DB.prepare("UPDATE invites SET used_by = ?, used_at = ? WHERE code = ? AND used_by IS NULL")
+      .bind(id, agora, codigo)
+      .run();
+    if (!meta.changes) {
+      await env.DB.prepare("DELETE FROM users WHERE id = ?").bind(id).run();
+      return jsonResponse({ erro: "Código de convite inválido ou já utilizado." }, 403, origin);
+    }
+  }
 
   const token = await criarSessao(env, id);
   return jsonResponse({ token, email }, 201, origin);
@@ -205,6 +254,60 @@ async function autenticar(request, env) {
     return null;
   }
   return sessao.user_id;
+}
+
+async function usuarioAutenticado(request, env) {
+  const userId = await autenticar(request, env);
+  if (!userId) return null;
+  return env.DB.prepare("SELECT id, email FROM users WHERE id = ?").bind(userId).first();
+}
+
+async function handleMe(request, env, origin) {
+  const usuario = await usuarioAutenticado(request, env);
+  if (!usuario) return jsonResponse({ erro: "Não autenticado." }, 401, origin);
+  return jsonResponse({ email: usuario.email, admin: ehAdmin(env, usuario.email) }, 200, origin);
+}
+
+async function handleAdminUsuarios(env, origin) {
+  // "Última atividade" = último dado salvo (qualquer store). Sessões não servem
+  // sozinhas porque o logout apaga a linha da sessão.
+  const { results } = await env.DB.prepare(
+    `SELECT u.email, u.created_at,
+       (SELECT MAX(updated_at) FROM records r WHERE r.user_id = u.id) AS ultima_atividade,
+       (SELECT MAX(created_at) FROM sessions s WHERE s.user_id = u.id) AS ultimo_login,
+       (SELECT COUNT(*) FROM records r WHERE r.user_id = u.id AND r.store = 'respostas') AS respostas,
+       (SELECT code FROM invites i WHERE i.used_by = u.id) AS convite
+     FROM users u ORDER BY u.created_at DESC`
+  ).all();
+  return jsonResponse(results, 200, origin);
+}
+
+async function handleAdminConvites(env, origin) {
+  const { results } = await env.DB.prepare(
+    `SELECT i.code, i.note, i.created_at, i.used_at, u.email AS usado_por
+     FROM invites i LEFT JOIN users u ON u.id = i.used_by
+     ORDER BY i.created_at DESC`
+  ).all();
+  return jsonResponse(results, 200, origin);
+}
+
+async function handleAdminCriarConvite(request, env, origin, adminId) {
+  const corpo = (await readJson(request)) || {};
+  const nota = typeof corpo.nota === "string" ? corpo.nota.trim().slice(0, 120) : "";
+  const codigo = gerarCodigoConvite();
+  const agora = new Date().toISOString();
+  await env.DB.prepare("INSERT INTO invites (code, note, created_by, created_at) VALUES (?, ?, ?, ?)")
+    .bind(codigo, nota || null, adminId, agora)
+    .run();
+  return jsonResponse({ code: codigo, note: nota || null, created_at: agora, used_at: null, usado_por: null }, 201, origin);
+}
+
+async function handleAdminRevogarConvite(env, origin, codigoBruto) {
+  const codigo = normalizarConvite(decodeURIComponent(codigoBruto));
+  if (!codigo) return jsonResponse({ erro: "Código inválido." }, 400, origin);
+  const { meta } = await env.DB.prepare("DELETE FROM invites WHERE code = ? AND used_by IS NULL").bind(codigo).run();
+  if (!meta.changes) return jsonResponse({ erro: "Convite não encontrado ou já utilizado." }, 404, origin);
+  return jsonResponse({ ok: true }, 200, origin);
 }
 
 // ---------- Dados (armazenamento chave-valor por usuário) ----------
@@ -375,6 +478,27 @@ export default {
     }
     if (path === "/auth/logout" && request.method === "POST") {
       return handleLogout(request, env, origin);
+    }
+    if (path === "/auth/me" && request.method === "GET") {
+      return handleMe(request, env, origin);
+    }
+
+    const adminMatch = path.match(/^\/admin\/(usuarios|convites)(?:\/([^/]+))?$/);
+    if (adminMatch) {
+      const usuario = await usuarioAutenticado(request, env);
+      if (!usuario) return jsonResponse({ erro: "Não autenticado." }, 401, origin);
+      if (!ehAdmin(env, usuario.email)) return jsonResponse({ erro: "Acesso restrito ao administrador." }, 403, origin);
+
+      const [, recurso, codigo] = adminMatch;
+      if (recurso === "usuarios" && !codigo && request.method === "GET") return handleAdminUsuarios(env, origin);
+      if (recurso === "convites" && !codigo && request.method === "GET") return handleAdminConvites(env, origin);
+      if (recurso === "convites" && !codigo && request.method === "POST") {
+        return handleAdminCriarConvite(request, env, origin, usuario.id);
+      }
+      if (recurso === "convites" && codigo && request.method === "DELETE") {
+        return handleAdminRevogarConvite(env, origin, codigo);
+      }
+      return jsonResponse({ erro: "Método não suportado nessa rota." }, 405, origin);
     }
 
     const dataMatch = path.match(/^\/data\/([^/]+)(?:\/(.+))?$/);
