@@ -175,10 +175,30 @@ function iniciarApp() {
   }, 5000);
 
   if ("serviceWorker" in navigator) {
+    // Quando uma versão nova do service worker assume a página, recarrega uma
+    // vez para trocar o código antigo em cache pelo novo — sem isso, quem
+    // estava com o app aberto continuava vendo a versão anterior.
+    const tinhaControlador = Boolean(navigator.serviceWorker.controller);
+    let recarregando = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (!tinhaControlador || recarregando) return;
+      recarregando = true;
+      window.location.reload();
+    });
+
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("sw.js").catch(() => {
-        /* offline-first é best-effort; app continua funcional sem SW */
-      });
+      navigator.serviceWorker
+        .register("sw.js")
+        .then((registro) => {
+          // App instalado no celular costuma ficar dias aberto em segundo
+          // plano: procura atualização sempre que volta para a tela.
+          document.addEventListener("visibilitychange", () => {
+            if (document.visibilityState === "visible") registro.update().catch(() => {});
+          });
+        })
+        .catch(() => {
+          /* offline-first é best-effort; app continua funcional sem SW */
+        });
     });
   }
 }
