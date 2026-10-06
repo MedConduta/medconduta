@@ -32,59 +32,61 @@ export async function renderAnaliseDesempenho(container) {
         <div class="stat-tile"><div class="stat-tile__value">${atual.percentualAcerto !== null ? `${atual.percentualAcerto}%` : "—"}</div><div class="stat-tile__label">Acerto nesta semana</div></div>
       </div>
 
-      <h3>Índice de Prontidão por semana</h3>
+      <h3 style="margin-top:32px;">Índice de Prontidão por semana</h3>
       ${renderGraficoBarras(semanas)}
 
       <h3 style="margin-top:32px;">Detalhamento semanal</h3>
-      <div class="plan-queue">
+      <ul class="card semana-lista">
         ${semanas
           .slice()
           .reverse()
           .map(renderLinhaSemana)
           .join("")}
-      </div>
+      </ul>
     </div>
   `;
 }
 
 function renderGraficoBarras(semanas) {
-  const alturaMax = 120;
+  const ultima = semanas.length - 1;
   return `
-    <div class="card" style="margin-bottom:24px;">
-      <div style="display:flex;align-items:flex-end;gap:8px;height:${alturaMax}px;">
+    <div class="card evolucao-grafico" role="img" aria-label="Índice de Prontidão nas últimas ${semanas.length} semanas, de 0 a 100">
+      <div class="evolucao-grafico__barras">
         ${semanas
-          .map((s) => {
-            const altura = Math.max(4, Math.round((s.indicePreparo / 100) * alturaMax));
+          .map((s, i) => {
+            const altura = Math.max(3, Math.round(s.indicePreparo));
             return `
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;" title="${escapeHtml(s.periodo)}: ${s.indicePreparo}/100">
-              <div style="width:100%;max-width:32px;height:${altura}px;background:var(--color-accent);border-radius:4px 4px 0 0;"></div>
+            <div class="evolucao-grafico__coluna${i === ultima ? " is-atual" : ""}" title="${escapeHtml(s.periodo)}: ${s.indicePreparo}/100">
+              <span class="evolucao-grafico__valor">${s.indicePreparo}</span>
+              <div class="evolucao-grafico__barra" style="height:${altura}%;"></div>
             </div>`;
           })
           .join("")}
       </div>
-      <div style="display:flex;gap:8px;margin-top:8px;">
+      <div class="evolucao-grafico__rotulos">
         ${semanas
-          .map(
-            (s) => `<div style="flex:1;text-align:center;font-size:var(--fs-sm);color:var(--color-text-secondary);">${escapeHtml(s.periodo)}</div>`
-          )
+          .map((s, i) => `<span class="${i === ultima ? "is-atual" : ""}">${i === ultima ? "Atual" : escapeHtml(s.periodo.split("–")[0])}</span>`)
           .join("")}
       </div>
+      <p class="evolucao-grafico__legenda">Data de início de cada semana · índice de 0 a 100</p>
     </div>
   `;
 }
 
-function renderLinhaSemana(s) {
+function renderLinhaSemana(s, i) {
+  const detalhes = [
+    `${s.totalQuestoes} ${s.totalQuestoes === 1 ? "questão" : "questões"}${s.percentualAcerto !== null ? ` · ${s.percentualAcerto}% de acerto` : ""}`,
+    s.horasFoco ? `${s.horasFoco}h de foco` : "",
+    s.totalSimulados ? `${s.totalSimulados} simulado${s.totalSimulados > 1 ? "s" : ""} (média ${s.mediaSimulados}%)` : "",
+  ].filter(Boolean);
   return `
-    <div class="card">
-      <div class="list-card__top">
+    <li class="semana-linha">
+      <div class="semana-linha__periodo">
         <strong>${escapeHtml(s.periodo)}</strong>
-        <span class="badge badge--accent">Prontidão ${s.indicePreparo}</span>
+        ${i === 0 ? '<span class="semana-linha__atual">esta semana</span>' : ""}
       </div>
-      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:var(--fs-sm);color:var(--color-text-secondary);">
-        <span>${s.totalQuestoes} questão${s.totalQuestoes === 1 ? "" : "ões"}${s.percentualAcerto !== null ? ` (${s.percentualAcerto}% de acerto)` : ""}</span>
-        <span>${s.horasFoco}h em Modo Foco</span>
-        ${s.totalSimulados ? `<span>${s.totalSimulados} simulado${s.totalSimulados > 1 ? "s" : ""} (média ${s.mediaSimulados}%)</span>` : ""}
-      </div>
-    </div>
+      <div class="semana-linha__detalhes">${detalhes.map((d) => `<span>${d}</span>`).join("")}</div>
+      <span class="badge badge--accent semana-linha__indice">Prontidão ${s.indicePreparo}</span>
+    </li>
   `;
 }

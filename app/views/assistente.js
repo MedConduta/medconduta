@@ -19,8 +19,6 @@ export async function renderAssistente(container) {
         <p class="page-header__desc">
           Responde com base no conteúdo do MedConduta (RAG). Também é quem gera temas, fluxogramas e
           questões novas (veja os botões de IA em cada tema, em <a href="#/residencia/conteudo">Conteúdo</a>).
-          <strong>Sempre confira respostas em fonte oficial</strong> — é uma ferramenta de apoio, não uma
-          fonte de verdade clínica.
         </p>
       </div>
 
@@ -132,7 +130,6 @@ function atualizarMensagem(container, id, texto, { erro = false } = {}) {
 
 function renderConteudoMensagem(autor, texto, { erro = false } = {}) {
   const rotulo = autor === "usuario" ? "Você" : autor === "sistema" ? "Sistema" : "IA";
-  const aviso = autor === "ia" && !erro ? '<div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial.</div>' : "";
   const corpo = autor === "ia" && !erro ? renderMarkdown(texto) : `<p>${escapeHtml(texto)}</p>`;
-  return `<div class="chat-msg__autor">${rotulo}</div><div class="chat-msg__texto">${corpo}</div>${aviso}`;
+  return `<div class="chat-msg__autor">${rotulo}</div><div class="chat-msg__texto">${corpo}</div>`;
 }
