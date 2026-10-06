@@ -517,12 +517,14 @@ export async function renderDetalhe(container, { id }) {
       </div>
 
       <div class="tema-acoes-fixas">
-        <button class="btn ${concluido ? "btn--secondary" : "btn--primary"}" id="btn-concluir">
-          ${concluido ? "✓ Estudado" : 'Marcar <span class="rotulo-longo">como </span>estudado'}
+        <button type="button" class="acao-mini${concluido ? " is-feito" : ""}" id="btn-concluir" aria-pressed="${concluido}">
+          <span class="acao-mini__check" aria-hidden="true">${concluido ? "✓" : ""}</span>
+          ${concluido ? "Estudado" : "Marcar estudado"}
         </button>
         ${
           temQuestoes
-            ? `<a class="btn ${concluido ? "btn--primary" : "btn--secondary"}" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Fazer questões<span class="rotulo-longo"> deste tema</span> →</a>`
+            ? `<span class="acao-mini__divisor" aria-hidden="true"></span>
+        <a class="acao-mini acao-mini--link" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Questões →</a>`
             : ""
         }
       </div>
