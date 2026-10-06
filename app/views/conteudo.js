@@ -365,7 +365,6 @@ async function temaAdjacentes(tema) {
 function renderPainelTexto(dados) {
   return `
     <div class="ia-resposta">${renderMarkdown(dados.texto)}</div>
-    <div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial antes de usar.</div>
   `;
 }
 
@@ -437,7 +436,6 @@ export async function renderDetalhe(container, { id }) {
           ${infoCategoria?.quadrante ? `<span title="${escapeHtml(infoCategoria.quadrante.label)}">${infoCategoria.quadrante.emoji} ${escapeHtml(infoCategoria.quadrante.label)}</span>` : ""}
         </div>
         <h1>${escapeHtml(tema.titulo)} ${geradoPorIA ? '<span class="badge badge--ia">✨ IA</span>' : ""} ${badgePrioridade(tema.prioridadeProva)}</h1>
-        ${geradoPorIA && tema.notaRevisaoIA ? `<p class="page-header__desc"><em>Nota da autocrítica da IA: ${escapeHtml(tema.notaRevisaoIA)}</em></p>` : ""}
         ${
           tema.comoCai
             ? `<div class="exam-focus"><div class="exam-focus__label">📌 Cai na prova — SES-PE e ENAMED</div><p>${tema.comoCai}</p></div>`
@@ -652,7 +650,6 @@ export async function renderDetalhe(container, { id }) {
     const corpo = dados.feedback
       ? `
         <div class="ia-resposta" style="margin-top:12px;">${renderMarkdown(dados.feedback)}</div>
-        <div class="chat-msg__aviso">Gerado por IA — confira em fonte oficial antes de usar.</div>
         <button type="button" class="btn btn--secondary" id="btn-testar-nova" style="margin-top:12px;">Nova pergunta</button>
       `
       : `

@@ -107,7 +107,7 @@ export async function renderLista(container, _params, query = {}) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Questões</div>
         <h1>Banco de questões</h1>
-        <p class="page-header__desc">Navegue por Grande Área › Especialidade › Tema, ou busque por banca. Material de estudo próprio, não de provas reais.</p>
+        <p class="page-header__desc">Navegue por Grande Área › Especialidade › Tema, ou busque por banca.</p>
         <p id="questoes-breadcrumb" style="margin-top:8px;font-size:var(--fs-sm);display:none;"></p>
       </div>
       <div id="questoes-acervo"></div>
