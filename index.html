@@ -34,22 +34,37 @@
       <nav id="sidebar-nav"><!-- injetado por app/components/sidebar.js --></nav>
 
       <div class="sidebar__footer">
-        <button class="nav-link" id="theme-toggle" type="button"></button>
-        <button class="nav-link" id="logout-btn" type="button"></button>
         <button class="sidebar__collapse-btn" id="sidebar-collapse" type="button" aria-label="Recolher menu">
           ⟨⟩ <span>Recolher menu</span>
         </button>
       </div>
     </aside>
 
-    <div>
+    <div class="app-content">
       <header class="topbar">
-        <button class="icon-btn" id="topbar-menu-btn" aria-label="Abrir menu">☰</button>
+        <button class="icon-btn topbar__menu" id="topbar-menu-btn" aria-label="Abrir menu">☰</button>
         <div class="topbar__brand">
           <div class="sidebar__brand-mark" aria-hidden="true" style="width:28px;height:28px;font-size:14px;">M</div>
           MedConduta
         </div>
-        <button class="icon-btn" id="topbar-theme-btn" aria-label="Alternar tema">◐</button>
+        <button type="button" class="topbar-busca" id="topbar-busca" aria-label="Buscar (Ctrl+K)">
+          <span class="topbar-busca__icone" id="topbar-busca-icone"></span>
+          <span class="topbar-busca__texto">Buscar temas e telas…</span>
+          <kbd class="topbar-busca__atalho">Ctrl K</kbd>
+        </button>
+        <div class="topbar__acoes">
+          <a class="topbar-streak" id="topbar-streak" href="#/residencia/minha-preparacao" title="Dias seguidos estudando" hidden></a>
+          <a class="btn btn--secondary btn--sm topbar-foco" id="topbar-foco" href="#/residencia/foco" title="Modo Foco"></a>
+          <div class="perfil">
+            <button type="button" class="perfil__avatar" id="perfil-btn" aria-haspopup="true" aria-expanded="false" aria-label="Menu do perfil"></button>
+            <div class="perfil__menu" id="perfil-menu" hidden>
+              <div class="perfil__email" id="perfil-email"></div>
+              <button class="nav-link" id="theme-toggle" type="button"></button>
+              <a class="nav-link" id="perfil-admin" href="#/residencia/admin" hidden></a>
+              <button class="nav-link" id="logout-btn" type="button"></button>
+            </div>
+          </div>
+        </div>
       </header>
 
       <main class="main" id="main-content" tabindex="-1" aria-live="polite" aria-busy="false"></main>
