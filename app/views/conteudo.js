@@ -307,6 +307,53 @@ function renderNavegacaoAdjacente({ anterior, proximo }) {
   `;
 }
 
+let pararLeituraAnterior = null;
+
+/**
+ * Sumário (rola até a seção sem mexer no hash, que é do roteador), destaque
+ * da seção visível e barra de progresso de leitura. Os listeners de rolagem
+ * da tela anterior são desligados ao abrir outra.
+ */
+function ligarLeitura(container) {
+  pararLeituraAnterior?.();
+  const barra = container.querySelector(".leitura-progresso__barra");
+  const links = [...container.querySelectorAll(".tema-sumario__link")];
+  const alvos = [...new Set(links.map((l) => l.dataset.alvo))].map((id) => container.querySelector(`#${id}`)).filter(Boolean);
+
+  links.forEach((link) =>
+    link.addEventListener("click", () => {
+      const alvo = container.querySelector(`#${link.dataset.alvo}`);
+      if (!alvo) return;
+      const topo = alvo.getBoundingClientRect().top + window.scrollY - 90;
+      window.scrollTo({ top: topo, behavior: "smooth" });
+    })
+  );
+
+  function aoRolar() {
+    if (!document.body.contains(container)) {
+      parar();
+      return;
+    }
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    barra.style.width = `${max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0}%`;
+
+    let atual = alvos[0]?.id;
+    for (const alvo of alvos) {
+      if (alvo.getBoundingClientRect().top < 140) atual = alvo.id;
+    }
+    links.forEach((l) => l.classList.toggle("is-active", l.dataset.alvo === atual));
+  }
+
+  function parar() {
+    window.removeEventListener("scroll", aoRolar);
+    if (pararLeituraAnterior === parar) pararLeituraAnterior = null;
+  }
+
+  window.addEventListener("scroll", aoRolar, { passive: true });
+  pararLeituraAnterior = parar;
+  aoRolar();
+}
+
 /** Temas da mesma categoria, em ordem alfabética estável — usado pra navegação anterior/próximo. */
 async function temaAdjacentes(tema) {
   const temas = await todosOsTemas();
@@ -373,8 +420,16 @@ export async function renderDetalhe(container, { id }) {
   const qtdFlashcards = await contarFlashcardsDoTema(tema.id);
   const prioridade = infoPrioridade(tema.prioridadeProva);
 
+  const secoes = tema.secoes || [];
+  const itensSumario = [
+    ...secoes.map((sec, i) => ({ id: `secao-${i}`, titulo: sec.titulo })),
+    ...((tema.mnemonicos || []).length ? [{ id: "secao-mnemonicos", titulo: "Mnemônicos" }] : []),
+    { id: "secao-anotacoes", titulo: "Suas anotações" },
+  ];
+
   container.innerHTML = `
-    <div class="main__container ${prioridade.fundoClasse}">
+    <div class="leitura-progresso" aria-hidden="true"><div class="leitura-progresso__barra"></div></div>
+    <div class="main__container main__container--largo tema-leitura ${prioridade.fundoClasse}">
       <div class="page-header">
         <a class="btn btn--ghost" href="#/residencia/conteudo" style="padding-left:0;margin-bottom:8px;">← Conteúdo</a>
         <div class="page-header__eyebrow">
@@ -385,7 +440,7 @@ export async function renderDetalhe(container, { id }) {
         ${geradoPorIA && tema.notaRevisaoIA ? `<p class="page-header__desc"><em>Nota da autocrítica da IA: ${escapeHtml(tema.notaRevisaoIA)}</em></p>` : ""}
         ${
           tema.comoCai
-            ? `<div class="exam-focus"><div class="exam-focus__label">Como cai no SES-PE e no ENAMED</div><p>${tema.comoCai}</p></div>`
+            ? `<div class="exam-focus"><div class="exam-focus__label">📌 Cai na prova — SES-PE e ENAMED</div><p>${tema.comoCai}</p></div>`
             : ""
         }
       </div>
@@ -398,10 +453,6 @@ export async function renderDetalhe(container, { id }) {
 
       <div class="tema-toolbar">
         <div class="tema-toolbar__acoes">
-          <button class="btn ${concluido ? "btn--secondary" : "btn--primary"} tema-toolbar__btn" id="btn-concluir">
-            ${concluido ? "✓ Marcado como estudado" : "Marcar como estudado"}
-          </button>
-          ${temQuestoes ? `<a class="btn btn--secondary tema-toolbar__btn" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Praticar questões deste tema</a>` : ""}
           ${qtdFlashcards ? `<a class="btn btn--secondary tema-toolbar__btn" href="#/residencia/flashcards?tema=${encodeURIComponent(tema.id)}">Flashcards deste tema (${qtdFlashcards})</a>` : ""}
         </div>
 
@@ -416,11 +467,17 @@ export async function renderDetalhe(container, { id }) {
       </div>
       <div class="ia-tab-panel" id="ia-tab-panel" hidden></div>
 
+      <nav class="tema-sumario tema-sumario--chips" aria-label="Neste tema">
+        ${itensSumario.map((item) => `<button type="button" class="tema-sumario__link" data-alvo="${item.id}">${escapeHtml(item.titulo)}</button>`).join("")}
+      </nav>
+
+      <div class="tema-leitura__grid">
+      <div class="tema-leitura__texto">
       <div class="prose">
-        ${(tema.secoes || [])
+        ${secoes
           .map(
-            (s) => `
-          <div class="section-block">
+            (s, i) => `
+          <div class="section-block" id="secao-${i}">
             <h3>${escapeHtml(s.titulo)}</h3>
             <p>${s.conteudo}</p>
             ${renderImagemEstudo(s.imagem)}
@@ -428,6 +485,7 @@ export async function renderDetalhe(container, { id }) {
           )
           .join("")}
 
+        ${(tema.mnemonicos || []).length ? '<div id="secao-mnemonicos"></div>' : ""}
         ${(tema.mnemonicos || [])
           .map(
             (m) => `
@@ -440,7 +498,7 @@ export async function renderDetalhe(container, { id }) {
           .join("")}
       </div>
 
-      <div class="card" style="margin-top:24px;">
+      <div class="card" style="margin-top:24px;" id="secao-anotacoes">
         <h3 style="margin-top:0;">Suas anotações sobre ${escapeHtml(tema.titulo)}</h3>
         <p class="page-header__desc" style="margin-top:0;">Livre pra anotar o macete que você mesmo descobriu — só fica salvo aqui, não é usado pela IA.</p>
         <div class="field" style="margin-bottom:0;">
@@ -452,6 +510,24 @@ export async function renderDetalhe(container, { id }) {
       ${fluxos.length ? renderRelacionados({ fluxos }) : ""}
 
       ${renderNavegacaoAdjacente(adjacentes)}
+      </div>
+
+      <aside class="tema-sumario tema-sumario--lateral" aria-label="Neste tema">
+        <div class="tema-sumario__titulo">Neste tema</div>
+        ${itensSumario.map((item) => `<button type="button" class="tema-sumario__link" data-alvo="${item.id}">${escapeHtml(item.titulo)}</button>`).join("")}
+      </aside>
+      </div>
+
+      <div class="tema-acoes-fixas">
+        <button class="btn ${concluido ? "btn--secondary" : "btn--primary"}" id="btn-concluir">
+          ${concluido ? "✓ Estudado" : 'Marcar <span class="rotulo-longo">como </span>estudado'}
+        </button>
+        ${
+          temQuestoes
+            ? `<a class="btn ${concluido ? "btn--primary" : "btn--secondary"}" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Fazer questões<span class="rotulo-longo"> deste tema</span> →</a>`
+            : ""
+        }
+      </div>
     </div>
   `;
 
@@ -459,6 +535,8 @@ export async function renderDetalhe(container, { id }) {
     await marcarConcluido(tema.id, !concluido, tema.categoria);
     renderDetalhe(container, { id });
   });
+
+  ligarLeitura(container);
 
   const anotacaoEl = container.querySelector("#anotacao-tema");
   const anotacaoStatusEl = container.querySelector("#anotacao-status");

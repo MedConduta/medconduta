@@ -1,10 +1,22 @@
-import { registerRoute, initRouter, setNavigateCallback } from "./router.js";
-import { renderSidebarNav, renderBottomNav, updateActiveNav, habilitarSecaoAdmin } from "./components/sidebar.js";
+import { registerRoute, initRouter, setNavigateCallback, setRenderedCallback } from "./router.js";
+import {
+  renderSidebarNav,
+  renderBottomNav,
+  updateActiveNav,
+  habilitarSecaoAdmin,
+  definirContador,
+  comAbas,
+} from "./components/sidebar.js";
+import { initTopbar, mostrarAdminNoPerfil, atualizarStreakTopbar } from "./components/topbar.js";
+import { initBusca } from "./components/busca.js";
 import { initTheme } from "./theme.js";
 import { isAuthenticated, sair, buscarPerfil } from "./auth.js";
 import { renderLogin } from "./views/login.js";
-import { icon } from "./components/icons.js";
+import { registrarAtividade } from "./ultimaAtividade.js";
+import { getRevisarHoje } from "./revisarHoje.js";
+import { getConstancia } from "./constancia.js";
 
+import * as inicio from "./views/inicio.js";
 import * as conteudo from "./views/conteudo.js";
 import * as assistente from "./views/assistente.js";
 import * as questoes from "./views/questoes.js";
@@ -14,13 +26,13 @@ import * as erros from "./views/erros.js";
 import * as prontidao from "./views/prontidao.js";
 import * as foco from "./views/foco.js";
 import * as simulados from "./views/simulados.js";
-import * as minhaPreparacao from "./views/minhaPreparacao.js";
 import * as analiseDesempenho from "./views/analiseDesempenho.js";
 import * as relatorioSemanal from "./views/relatorioSemanal.js";
 import * as planejamentoSemanal from "./views/planejamentoSemanal.js";
 import * as revisaoAltoRendimento from "./views/revisaoAltoRendimento.js";
 import * as curso from "./views/curso.js";
 import * as flashcards from "./views/flashcards.js";
+import * as revisar from "./views/revisar.js";
 import * as admin from "./views/admin.js";
 import { rodarBackupDiarioSeNecessario } from "./backup.js";
 
@@ -29,29 +41,48 @@ const sidebarNavEl = document.getElementById("sidebar-nav");
 const bottomNavEl = document.getElementById("bottom-nav");
 const appShell = document.getElementById("app-shell");
 
+function caminhoAtual() {
+  return window.location.hash.replace(/^#/, "").split("?")[0] || "/residencia/minha-preparacao";
+}
+
 function paintNav(path) {
   sidebarNavEl.innerHTML = renderSidebarNav(path);
   bottomNavEl.innerHTML = renderBottomNav(path);
 }
 
 // ---------- Rotas ----------
-registerRoute("/residencia/minha-preparacao", minhaPreparacao.renderMinhaPreparacao, { title: "Minha Preparação" });
+// Os caminhos antigos são mantidos (links internos, favoritos e o manifest
+// apontam para eles); o que mudou é como são agrupados no menu e nas abas.
+registerRoute("/residencia/minha-preparacao", comAbas("inicio", inicio.renderInicio), { title: "Início" });
+registerRoute("/residencia/planejador", comAbas("inicio", planejador.renderPlanejador), { title: "Agenda do dia" });
+
+registerRoute("/residencia/curso", comAbas("curso", curso.renderCurso), { title: "Curso" });
+registerRoute("/residencia/cronograma", comAbas("curso", cronograma.renderCronograma), { title: "Cronograma" });
+registerRoute("/residencia/planejamento-semanal", comAbas("curso", planejamentoSemanal.renderPlanejamentoSemanal), {
+  title: "Planejamento Semanal",
+});
+
 registerRoute("/residencia/conteudo", conteudo.renderLista, { title: "Conteúdo" });
 registerRoute("/residencia/conteudo/:id", conteudo.renderDetalhe, { title: "Conteúdo" });
-registerRoute("/residencia/assistente", assistente.renderAssistente, { title: "Assistente IA" });
 registerRoute("/residencia/questoes", questoes.renderLista, { title: "Questões" });
-registerRoute("/residencia/erros", erros.renderErros, { title: "Meus Erros" });
-registerRoute("/residencia/revisao-alto-rendimento", revisaoAltoRendimento.renderRevisaoAltoRendimento, { title: "Revisão de Alto Rendimento" });
-registerRoute("/residencia/planejador", planejador.renderPlanejador, { title: "Hoje" });
-registerRoute("/residencia/cronograma", cronograma.renderCronograma, { title: "Cronograma" });
-registerRoute("/residencia/curso", curso.renderCurso, { title: "Curso" });
-registerRoute("/residencia/flashcards", flashcards.renderFlashcards, { title: "Flashcards" });
-registerRoute("/residencia/prontidao", prontidao.renderProntidao, { title: "Prontidão" });
-registerRoute("/residencia/desempenho", analiseDesempenho.renderAnaliseDesempenho, { title: "Desempenho" });
-registerRoute("/residencia/relatorio-semanal", relatorioSemanal.renderRelatorioSemanal, { title: "Relatório Semanal" });
-registerRoute("/residencia/planejamento-semanal", planejamentoSemanal.renderPlanejamentoSemanal, { title: "Planejamento Semanal" });
-registerRoute("/residencia/foco", foco.renderFoco, { title: "Modo Foco" });
+
+registerRoute("/residencia/revisar", comAbas("revisar", revisar.renderRevisar), { title: "Revisar" });
+registerRoute("/residencia/erros", comAbas("revisar", erros.renderErros), { title: "Meus Erros" });
+registerRoute("/residencia/flashcards", comAbas("revisar", flashcards.renderFlashcards), { title: "Flashcards" });
+registerRoute("/residencia/revisao-alto-rendimento", comAbas("revisar", revisaoAltoRendimento.renderRevisaoAltoRendimento), {
+  title: "Revisão de Alto Rendimento",
+});
+
 registerRoute("/residencia/simulados", simulados.renderSimulados, { title: "Simulados" });
+
+registerRoute("/residencia/desempenho", comAbas("desempenho", analiseDesempenho.renderAnaliseDesempenho), { title: "Desempenho" });
+registerRoute("/residencia/prontidao", comAbas("desempenho", prontidao.renderProntidao), { title: "Prontidão" });
+registerRoute("/residencia/relatorio-semanal", comAbas("desempenho", relatorioSemanal.renderRelatorioSemanal), {
+  title: "Relatório Semanal",
+});
+
+registerRoute("/residencia/foco", foco.renderFoco, { title: "Modo Foco" });
+registerRoute("/residencia/assistente", assistente.renderAssistente, { title: "Assistente IA" });
 registerRoute("/residencia/admin", admin.renderAdmin, { title: "Administração" });
 
 // ---------- Navegação / sidebar / mobile ----------
@@ -59,6 +90,15 @@ setNavigateCallback((path, meta) => {
   updateActiveNav(path);
   document.title = meta?.title ? `${meta.title} · MedConduta` : "MedConduta";
   closeMobileNav();
+});
+
+setRenderedCallback((path, meta, alvo) => {
+  const h1 = alvo.querySelector("h1");
+  const tituloH1 = h1 ? [...h1.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join("").trim() : "";
+  const titulo = path.startsWith("/residencia/conteudo/") ? tituloH1 : meta?.title;
+  registrarAtividade(path, window.location.hash, titulo).catch(() => {
+    /* best-effort */
+  });
 });
 
 function closeMobileNav() {
@@ -78,32 +118,56 @@ document.getElementById("sidebar-collapse").addEventListener("click", () => {
 sidebarNavEl.addEventListener("click", (e) => {
   if (e.target.closest("a")) closeMobileNav();
 });
-bottomNavEl.addEventListener("click", () => closeMobileNav());
-
-const logoutBtn = document.getElementById("logout-btn");
-logoutBtn.innerHTML = `${icon("log-out")}<span class="nav-link__label">Sair</span>`;
-logoutBtn.addEventListener("click", async () => {
-  await sair();
-  boot();
+bottomNavEl.addEventListener("click", (e) => {
+  if (e.target.closest("#bottom-nav-mais")) {
+    appShell.classList.toggle("nav-open");
+    return;
+  }
+  closeMobileNav();
 });
 
+async function atualizarContadorRevisar() {
+  try {
+    const { total } = await getRevisarHoje();
+    definirContador("revisar", total);
+  } catch {
+    /* best-effort — o contador só fica oculto */
+  }
+}
+
 // ---------- Boot ----------
+let appIniciado = false;
+
 function iniciarApp() {
-  paintNav("/residencia/minha-preparacao");
+  paintNav(caminhoAtual());
+  if (!appIniciado) {
+    appIniciado = true;
+    initTopbar({
+      onSair: async () => {
+        await sair();
+        window.location.reload();
+      },
+    });
+    initBusca(document.getElementById("topbar-busca"));
+    initTheme([document.getElementById("theme-toggle")]);
+  }
   initRouter(mainEl);
-  initTheme([document.getElementById("theme-toggle"), document.getElementById("topbar-theme-btn")]);
 
   buscarPerfil().then((perfil) => {
     if (!perfil?.admin) return;
     habilitarSecaoAdmin();
-    const caminhoAtual = window.location.hash.replace(/^#/, "").split("?")[0] || "/residencia/minha-preparacao";
-    paintNav(caminhoAtual);
+    mostrarAdminNoPerfil();
+    paintNav(caminhoAtual());
   });
 
-  // Atrasado de propósito: o backup dispara ~15 chamadas de rede em paralelo
-  // (um getAll por store) — rodar isso no exato instante do boot competiria
-  // com a navegação/carregamento que o usuário já está fazendo. Alguns
-  // segundos de atraso não tem impacto perceptível (é só um snapshot diário).
+  getConstancia()
+    .then((c) => atualizarStreakTopbar(c.streakAtual))
+    .catch(() => {});
+
+  // Atrasados de propósito: tanto o contador de revisões quanto o backup
+  // disparam várias chamadas de rede — rodar no exato instante do boot
+  // competiria com o carregamento da tela que o usuário abriu.
+  setTimeout(atualizarContadorRevisar, 2500);
   setTimeout(() => {
     rodarBackupDiarioSeNecessario().catch(() => {
       /* best-effort — falha de rede aqui não deve afetar o restante do app */
