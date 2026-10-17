@@ -90,6 +90,14 @@ export async function renderPlanejador(container) {
       ${avisoDiaRuim}
       ${renderFaixaFase(plano.fase, plano.diasRestantes)}
       ${renderModoEspecial(plano.modo)}
+      ${
+        plano.focoCurso
+          ? `<div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-accent);">
+          <strong>📘 Foco no Curso — semana ${plano.focoCurso.semana}</strong>
+          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">Revisões, flashcards e questões de hoje giram em torno dos temas do Curso: ${escapeHtml(plano.focoCurso.temas.join(" · "))}.</p>
+        </div>`
+          : ""
+      }
       <div class="stat-row">
         <div class="stat-tile"><div class="stat-tile__value">${plano.totalRevisoesVencidas}</div><div class="stat-tile__label">Revisões vencidas</div></div>
         <div class="stat-tile"><div class="stat-tile__value">${plano.totalTemasPendentes}</div><div class="stat-tile__label">Temas pendentes</div></div>

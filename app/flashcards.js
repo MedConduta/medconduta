@@ -29,6 +29,8 @@ export async function registrarRevisaoFlashcard(cardId, qualidade) {
 
 /** Baralho dos cards feitos a partir das questões IAUPE/SES-PE (campo `banca` no JSON). */
 export const BARALHO_SESPE = "sespe";
+/** Baralho do Curso: temas da semana atual + temas do Curso já estudados (ver focoCurso.js). */
+export const BARALHO_CURSO = "curso";
 
 function ehDoBaralhoSesPe(card) {
   return card.banca === "IAUPE/SES-PE";
@@ -54,11 +56,12 @@ function rankingDeTemas(cards) {
  * restringe aos cards das questões IAUPE/SES-PE. `novos` traz só os nunca
  * vistos, do tema mais cobrado para o menos.
  */
-export async function getFilaRevisao({ temaId, baralho } = {}) {
+export async function getFilaRevisao({ temaId, baralho, temaIdsCurso, temaIdsPrioritarios } = {}) {
   const [cards, srsRecords] = await Promise.all([todosOsFlashcards(), getAll(STORE_SRS_FLASHCARDS)]);
   const srsMap = new Map(srsRecords.map((r) => [r.id, r]));
   let filtrados = temaId ? cards.filter((c) => c.temaId === temaId) : cards;
   if (baralho === BARALHO_SESPE) filtrados = filtrados.filter(ehDoBaralhoSesPe);
+  if (baralho === BARALHO_CURSO && temaIdsCurso) filtrados = filtrados.filter((c) => temaIdsCurso.has(c.temaId));
 
   const itens = filtrados.map((card) => ({ card, estado: srsMap.get(card.id) ?? null }));
   const vencidos = itens.filter((i) => estaVencido(i.estado));
@@ -75,7 +78,12 @@ export async function getFilaRevisao({ temaId, baralho } = {}) {
       posicaoNoTema.set(i.card.temaId, k + 1);
       return { ...i, k };
     })
-    .sort((a, b) => a.k - b.k || ranking.get(a.card.temaId) - ranking.get(b.card.temaId))
+    // Temas prioritários (semana atual do Curso) entram antes de qualquer outro.
+    .sort((a, b) => {
+      const pa = temaIdsPrioritarios?.has(a.card.temaId) ? 0 : 1;
+      const pb = temaIdsPrioritarios?.has(b.card.temaId) ? 0 : 1;
+      return pa - pb || a.k - b.k || ranking.get(a.card.temaId) - ranking.get(b.card.temaId);
+    })
     .map(({ k, ...i }) => i);
   const revisoes = vencidos.filter((i) => i.estado);
 

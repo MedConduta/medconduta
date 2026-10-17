@@ -51,7 +51,7 @@ export async function renderInicio(container) {
     gerarDiagnostico(),
     getConstancia(),
     getMetaDiaria(),
-    gerarGradeCurso(),
+    gerarGradeCurso({ ancorar: false }),
     getAll("respostas"),
     getAll("progresso"),
     getUltimaAtividade(),

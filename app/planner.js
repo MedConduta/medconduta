@@ -4,8 +4,13 @@ import { pesoProva } from "./areas.js";
 import { getEstadoPreparo, aplicarModoNoPeso } from "./modo.js";
 import { getQuestoesEmRevisao } from "./erros.js";
 import { getAgendaHoje, cursoJaIniciado } from "./curriculo.js";
+import { getFocoCurso } from "./focoCurso.js";
+import { getFilaRevisao, BARALHO_CURSO } from "./flashcards.js";
 
 const MIN_POR_REVISAO_ERRO = 6; // reler + resolver de novo uma questão já errada
+const MIN_POR_REVISAO_TEMA = 10; // revisão espaçada de um tema do Curso (reler pontos-chave)
+const MIN_POR_FLASHCARDS = 10; // sessão de flashcards
+const MAX_TEMAS_REVISAO_DIA = 4; // mais que isso vira "veja todos em Revisar"
 // Exportadas porque o Planejamento Semanal (Fase 15) reaproveita a mesma
 // duração-padrão por item pra converter a meta de tempo da semana em nº de
 // temas/blocos de questões — sem duplicar o número em outro arquivo.
@@ -122,6 +127,13 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     cursoAtivo ? getAgendaHoje() : Promise.resolve(null),
   ]);
 
+  // Curso ativo: a revisão do dia (flashcards e questões) se volta para os
+  // temas da semana atual do Curso e os já estudados nele (ver focoCurso.js).
+  const focoCurso = cursoAtivo ? await getFocoCurso().catch(() => null) : null;
+  const flashcardsCurso = focoCurso
+    ? await getFilaRevisao({ baralho: BARALHO_CURSO, temaIdsCurso: focoCurso.temaIdsCurso, temaIdsPrioritarios: focoCurso.temaIdsSemana }).catch(() => null)
+    : null;
+
   // Itens do cronograma do Curso atrasados ou programados pra hoje, ainda
   // não concluídos — Map temaId -> item (dataProgramada, categoria, semana).
   const itensCronogramaHoje = agendaCurso
@@ -150,6 +162,45 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
   // verdade: volta a aparecer amanhã.
   const orcamentoRevisoes = Math.round(minutosDisponiveis * TETO_REVISOES_PCT);
   let minutosGastosRevisoes = 0;
+  const temaPorIdGeral = new Map(temas.map((t) => [t.id, t]));
+
+  // 0a) Revisões espaçadas dos temas do Curso (3, 5, 7, 15, 30 dias) — vêm
+  // antes de tudo, atrasadas primeiro.
+  if (agendaCurso) {
+    const revisoesTema = [...agendaCurso.atrasadas.revisoes, ...agendaCurso.hoje.revisoes];
+    for (const r of revisoesTema.slice(0, MAX_TEMAS_REVISAO_DIA)) {
+      if (minutosGastosRevisoes + MIN_POR_REVISAO_TEMA > orcamentoRevisoes || minutosRestantes < MIN_POR_REVISAO_TEMA) break;
+      const titulo = r.tema?.titulo || temaPorIdGeral.get(r.temaId)?.titulo || r.temaId;
+      fila.push({
+        tipo: "revisao-tema",
+        titulo: `Revisar tema: ${titulo}`,
+        detalhe: `Revisão de ${r.tipo} do Curso — releia os pontos-chave e o "Cai na prova".`,
+        duracaoMin: MIN_POR_REVISAO_TEMA,
+        link: `#/residencia/conteudo/${r.temaId}`,
+      });
+      minutosRestantes -= MIN_POR_REVISAO_TEMA;
+      minutosGastosRevisoes += MIN_POR_REVISAO_TEMA;
+    }
+  }
+
+  // 0b) Flashcards dos temas do Curso (revisões vencidas + novos da semana).
+  if (flashcardsCurso && (flashcardsCurso.revisoes.length || flashcardsCurso.novos.length)) {
+    if (minutosGastosRevisoes + MIN_POR_FLASHCARDS <= orcamentoRevisoes && minutosRestantes >= MIN_POR_FLASHCARDS) {
+      const partes = [
+        flashcardsCurso.revisoes.length ? `${flashcardsCurso.revisoes.length} para revisar` : "",
+        flashcardsCurso.novos.length ? `${flashcardsCurso.novos.length} novos` : "",
+      ].filter(Boolean);
+      fila.push({
+        tipo: "flashcards",
+        titulo: `Flashcards do Curso — semana ${focoCurso.semana}`,
+        detalhe: `${partes.join(" · ")} dos temas do Curso.`,
+        duracaoMin: MIN_POR_FLASHCARDS,
+        link: `#/residencia/flashcards?baralho=${BARALHO_CURSO}`,
+      });
+      minutosRestantes -= MIN_POR_FLASHCARDS;
+      minutosGastosRevisoes += MIN_POR_FLASHCARDS;
+    }
+  }
 
   for (const { questao } of errosVencidos) {
     if (minutosRestantes < MIN_POR_REVISAO_ERRO / 2) break;
@@ -222,8 +273,30 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
       ?.categoria ?? null;
   const categoriaFoco = categoriaFocoCronograma ?? (rankingCategorias.find((r) => categoriasComQuestao.has(r.categoria))?.categoria ?? null);
 
+  // Curso ativo: os blocos de questões percorrem os temas da semana (um bloco
+  // por tema, com link já filtrado), depois "questões da semana" em geral.
+  const temaIdsComQuestao = new Set(questoes.map((q) => q.temaId));
+  const temasSemanaComQuestao = focoCurso ? focoCurso.temasSemana.filter((t) => temaIdsComQuestao.has(t.temaId)) : [];
+
   let blocosQuestoes = 0;
   while (orcamentoQuestoes >= MIN_POR_QUESTOES_BLOCO && minutosRestantes >= MIN_POR_QUESTOES_BLOCO && blocosQuestoes < 24) {
+    if (temasSemanaComQuestao.length) {
+      const temaBloco = blocosQuestoes < temasSemanaComQuestao.length ? temasSemanaComQuestao[blocosQuestoes] : null;
+      fila.push({
+        tipo: "questoes",
+        titulo: temaBloco ? `Questões: ${temaBloco.titulo}` : `Questões da semana ${focoCurso.semana} do Curso`,
+        detalhe: temaBloco
+          ? `Tema da semana ${focoCurso.semana} do Curso — fixe o que estudou resolvendo questões dele.`
+          : "Misture os temas da semana para treinar como na prova.",
+        duracaoMin: MIN_POR_QUESTOES_BLOCO,
+        link: temaBloco ? `#/residencia/questoes?temaId=${encodeURIComponent(temaBloco.temaId)}` : "#/residencia/questoes?curso=1",
+        semanaCurso: focoCurso.semana,
+      });
+      orcamentoQuestoes -= MIN_POR_QUESTOES_BLOCO;
+      minutosRestantes -= MIN_POR_QUESTOES_BLOCO;
+      blocosQuestoes += 1;
+      continue;
+    }
     fila.push({
       tipo: "questoes",
       titulo: "Bloco de questões de reforço",
@@ -247,6 +320,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     minutosUsados,
     minutosOciosos: minutosRestantes,
     totalRevisoesVencidas: errosVencidos.length,
+    focoCurso: focoCurso ? { semana: focoCurso.semana, temas: focoCurso.temasSemana.map((t) => t.titulo) } : null,
     totalTemasPendentes: temasPendentes.length,
     fase,
     diasRestantes,

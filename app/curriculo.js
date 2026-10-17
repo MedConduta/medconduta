@@ -58,14 +58,20 @@ export async function setCursoInicio(dataIso) {
   await setPref(PREF_CURSO_INICIO, dataIso);
 }
 
-async function carregarDados() {
+/**
+ * `ancorar: false` monta a grade sem gravar a âncora — para telas que só
+ * mostram o Curso de passagem (Início, Planejamento Semanal). Sem isso, abrir
+ * o Início no primeiro acesso já "ligava" o Curso e todo o foco de revisão
+ * (ver focoCurso.js) mudava sem o usuário ter começado o Curso de fato.
+ */
+async function carregarDados({ ancorar = true } = {}) {
   const [curriculoBruto, temas, questoes, progresso, respostas, inicioReal] = await Promise.all([
     fetchJsonCached("data/curriculo.json"),
     fetchJsonCached("data/temas.json"),
     fetchJsonCached("data/questoes.json"),
     getAll("progresso"),
     getAll("respostas"),
-    garantirInicioCurso(),
+    ancorar ? garantirInicioCurso() : getPref(PREF_CURSO_INICIO, null).then((salvo) => salvo || hojeIso()),
   ]);
 
   const curriculo = deslocarParaInicioReal(curriculoBruto, inicioReal);
@@ -119,8 +125,8 @@ function construirContexto({ temas, questoes, progresso, respostas }) {
 }
 
 /** Grade completa do curso: semanas na ordem fixa do cronograma, cada uma com seus temas e progresso. */
-export async function gerarGradeCurso() {
-  const dados = await carregarDados();
+export async function gerarGradeCurso(opcoes) {
+  const dados = await carregarDados(opcoes);
   const contexto = construirContexto(dados);
 
   const porSemana = new Map();

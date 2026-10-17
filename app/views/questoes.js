@@ -15,6 +15,7 @@ import {
   STATUS,
 } from "../questoesIndex.js";
 import { icon } from "../components/icons.js";
+import { getFocoCurso } from "../focoCurso.js";
 import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
 
 function skeletonCard() {
@@ -57,6 +58,10 @@ export async function renderLista(container, _params, query = {}) {
     return;
   }
 
+  // Curso ativo: deck "Semana N do Curso" e filtro ?curso=1 com os temas da
+  // semana atual do cronograma (ver focoCurso.js).
+  const focoCurso = await getFocoCurso().catch(() => null);
+
   // Fase 16 (Revisão de Alto Rendimento) — ?categoria=X restringe a página inteira
   // a essa especialidade antes de qualquer outro filtro, como já funcionava (agora
   // via hierarquia real: a especialidade já vem selecionada/expandida).
@@ -68,6 +73,7 @@ export async function renderLista(container, _params, query = {}) {
   let filtroTemaId;
   let filtroStatus = STATUS.TODAS;
   let filtroFavoritas = query.favoritas === "1";
+  let filtroCurso = query.curso === "1" && Boolean(focoCurso);
   let bancaInicial = "todas";
   let anoInicial = "todos";
   let buscaInicial = "";
@@ -273,6 +279,7 @@ export async function renderLista(container, _params, query = {}) {
       ano: filtroAno.value,
       status: filtroStatus,
       favoritas: filtroFavoritas,
+      curso: filtroCurso,
       busca: filtroBusca.value.trim(),
       ordenacao: filtroOrdenacao.value,
       qtd: filtroQuantidade.value,
@@ -287,6 +294,7 @@ export async function renderLista(container, _params, query = {}) {
     filtroAno.value = estado.ano || "todos";
     filtroStatus = estado.status || STATUS.TODAS;
     filtroFavoritas = !!estado.favoritas;
+    filtroCurso = !!estado.curso && Boolean(focoCurso);
     filtroBusca.value = estado.busca || "";
     filtroOrdenacao.value = estado.ordenacao || ORDENACAO.RECENTES;
     filtroQuantidade.value = estado.qtd || "20";
@@ -339,6 +347,7 @@ export async function renderLista(container, _params, query = {}) {
       ano: filtroAno.value === "todos" ? undefined : Number(filtroAno.value),
       status: filtroStatus,
       busca: filtroBusca.value.trim() || undefined,
+      temaIds: filtroCurso ? focoCurso.temaIdsSemana : undefined,
     };
   }
 
@@ -346,6 +355,7 @@ export async function renderLista(container, _params, query = {}) {
     filtroGrandeArea = filtroEspecialidade = filtroTemaId = undefined;
     filtroStatus = STATUS.TODAS;
     filtroFavoritas = false;
+    filtroCurso = false;
     filtroBanca.value = "todas";
     filtroAno.value = "todos";
     filtroBusca.value = "";
@@ -387,6 +397,9 @@ export async function renderLista(container, _params, query = {}) {
     }
     if (filtroFavoritas) {
       chips.push({ label: "Favoritas", remover: () => { filtroFavoritas = false; } });
+    }
+    if (filtroCurso) {
+      chips.push({ label: `Semana ${focoCurso.semana} do Curso`, remover: () => { filtroCurso = false; } });
     }
 
     filtrosToggleEl.textContent = chips.length ? `Filtros (${chips.length})` : "Filtros";
@@ -507,10 +520,25 @@ export async function renderLista(container, _params, query = {}) {
 
   function renderDecks() {
     const c = contadores(indice, {});
+    const deckCurso = focoCurso
+      ? [{
+          id: "curso",
+          icone: "book",
+          tom: "accent",
+          count: filtrar(indice, { temaIds: focoCurso.temaIdsSemana }).length,
+          titulo: `Semana ${focoCurso.semana} do Curso`,
+          desc:
+            focoCurso.temasSemana.length > 3
+              ? `${focoCurso.temasSemana.slice(0, 3).map((t) => t.titulo).join(" · ")} e mais ${focoCurso.temasSemana.length - 3}`
+              : focoCurso.temasSemana.map((t) => t.titulo).join(" · ") || "Temas da semana atual do Curso",
+          destaque: true,
+        }]
+      : [];
     const decks = [
+      ...deckCurso,
       { id: "nao-respondidas", icone: "eye", tom: "muted", count: c.naoRespondidas, titulo: "Nunca vistas", desc: "Estão no acervo e você ainda não respondeu" },
       { id: "erros", icone: "alert-circle", tom: "danger", count: c.erros, titulo: "Feridas abertas", desc: "Errou e ainda não revisou" },
-      { id: "favoritas", icone: "bookmark", tom: "warning", count: c.favoritas, titulo: "Favoritas", desc: "As que você marcou pra guardar", destaque: true },
+      { id: "favoritas", icone: "bookmark", tom: "warning", count: c.favoritas, titulo: "Favoritas", desc: "As que você marcou pra guardar", destaque: !focoCurso },
     ];
     const decksSalvos = filtrosSalvos.map((f) => ({
       id: `salvo-${f.id}`,
@@ -548,6 +576,7 @@ export async function renderLista(container, _params, query = {}) {
           if (id === "nao-respondidas") filtroStatus = STATUS.NAO_RESPONDIDAS;
           else if (id === "erros") filtroStatus = STATUS.INCORRETAS;
           else if (id === "favoritas") filtroFavoritas = true;
+          else if (id === "curso") filtroCurso = true;
           renderHierarquia();
           refazerFiltro();
         }
@@ -873,6 +902,7 @@ export async function renderLista(container, _params, query = {}) {
     if (filtroAno.value !== "todos") params.set("ano", filtroAno.value);
     if (filtroStatus !== STATUS.TODAS) params.set("status", filtroStatus);
     if (filtroFavoritas) params.set("favoritas", "1");
+    if (filtroCurso) params.set("curso", "1");
     if (filtroBusca.value.trim()) params.set("busca", filtroBusca.value.trim());
     if (filtroOrdenacao.value !== ORDENACAO.RECENTES) params.set("ordenacao", filtroOrdenacao.value);
     if (filtroQuantidade.value !== "20") params.set("qtd", filtroQuantidade.value);
