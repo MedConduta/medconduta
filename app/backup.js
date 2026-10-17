@@ -38,12 +38,23 @@ export function hojeIso() {
   return new Date().toISOString().slice(0, 10);
 }
 
+/**
+ * Imagens das anotações ficam fora do backup: o backup do dia é um único
+ * registro e é guardado por 30 dias — com imagens ele multiplicaria o espaço
+ * por 30 e passaria do tamanho máximo de um registro. Texto e formatação
+ * continuam no backup; a anotação original (com as imagens) não é afetada.
+ */
+function semImagens(anotacao) {
+  if (!anotacao?.html || !anotacao.html.includes("<img")) return anotacao;
+  return { ...anotacao, html: anotacao.html.replace(/<img\b[^>]*>/gi, "[imagem]") };
+}
+
 async function montarSnapshot() {
   const resultados = await Promise.all(STORES_BACKUP.map((s) => getAll(s)));
   const snapshot = {};
   let totalRegistros = 0;
   STORES_BACKUP.forEach((s, i) => {
-    snapshot[s] = resultados[i];
+    snapshot[s] = s === "anotacoes" ? resultados[i].map(semImagens) : resultados[i];
     totalRegistros += resultados[i].length;
   });
   return { snapshot, totalRegistros };
