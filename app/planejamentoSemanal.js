@@ -16,7 +16,7 @@ const DIAS_JANELA_VENCENDO = 7;
 
 export async function getPlanejamentoSemanal() {
   const [grade, agendaRevisoes, { vencidas: errosVencidos, proximas: errosProximos }] = await Promise.all([
-    gerarGradeCurso(),
+    gerarGradeCurso({ ancorar: false }),
     getAgendaRevisoes(),
     getQuestoesEmRevisao(),
   ]);

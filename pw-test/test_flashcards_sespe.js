@@ -27,6 +27,9 @@ const ok = (cond, msg) => console.log(`${cond ? "✓" : "✗ FALHOU:"} ${msg}`);
 
   await page.evaluate(() => { location.hash = "/residencia/flashcards"; });
   await page.waitForSelector("[data-baralho]", { timeout: 15000 });
+  // Com o Curso ativo o baralho padrão é o do Curso — este teste mede o baralho completo.
+  await page.click('[data-baralho="todos"]');
+  await page.waitForFunction(() => document.querySelector('[data-baralho="todos"]').classList.contains("is-active"));
   const valores = async () => page.$$eval(".stat-tile__value", (els) => els.map((e) => Number(e.textContent)));
   const [, , , totalTodos] = await valores();
   ok(totalTodos >= 800, `baralho completo com ${totalTodos} cards`);

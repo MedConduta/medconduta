@@ -80,6 +80,7 @@ function corresponde(indice, questao, filtros, ignorarCampo) {
   if (f.grandeArea && ignorarCampo !== "grandeArea" && questao.grandeArea !== f.grandeArea) return false;
   if (f.especialidade && ignorarCampo !== "especialidade" && questao.especialidade !== f.especialidade) return false;
   if (f.temaId && ignorarCampo !== "temaId" && questao.temaId !== f.temaId) return false;
+  if (f.temaIds && !f.temaIds.has(questao.temaId)) return false; // ex.: temas da semana do Curso
   if (f.banca && ignorarCampo !== "banca" && questao.banca !== f.banca) return false;
   if (f.ano && ignorarCampo !== "ano" && questao.ano !== f.ano) return false;
 

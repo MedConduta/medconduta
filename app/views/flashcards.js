@@ -1,5 +1,6 @@
 import { escapeHtml, fetchJsonCached } from "../utils.js";
-import { getFilaRevisao, registrarRevisaoFlashcard, QUALIDADE, BARALHO_SESPE } from "../flashcards.js";
+import { getFilaRevisao, registrarRevisaoFlashcard, QUALIDADE, BARALHO_SESPE, BARALHO_CURSO } from "../flashcards.js";
+import { getFocoCurso } from "../focoCurso.js";
 
 const CHAVE_NOVOS_POR_SESSAO = "medconduta:flashcards_novos_por_sessao";
 const OPCOES_NOVOS = [10, 20, 30, 50];
@@ -24,7 +25,10 @@ function salvarNovosPorSessao(valor) {
 export async function renderFlashcards(container, params, query = {}) {
   let estado = "config"; // config | revisando | resumo
   const temaIdFiltro = query.tema || null;
-  let baralho = query.baralho === BARALHO_SESPE ? BARALHO_SESPE : "todos";
+  // Com o Curso ativo, o baralho padrão é o do Curso (temas da semana + já estudados).
+  const focoCurso = temaIdFiltro ? null : await getFocoCurso().catch(() => null);
+  const baralhosValidos = [BARALHO_SESPE, ...(focoCurso ? [BARALHO_CURSO] : [])];
+  let baralho = baralhosValidos.includes(query.baralho) ? query.baralho : focoCurso ? BARALHO_CURSO : "todos";
   let novosPorSessao = lerNovosPorSessao();
   let fila = [];
   let indiceAtual = 0;
@@ -40,12 +44,17 @@ export async function renderFlashcards(container, params, query = {}) {
 
   async function montarConfig() {
     const [{ revisoes, novos, futuros, total }, temas] = await Promise.all([
-      getFilaRevisao({ temaId: temaIdFiltro || undefined, baralho }),
+      getFilaRevisao({
+        temaId: temaIdFiltro || undefined,
+        baralho,
+        temaIdsCurso: focoCurso?.temaIdsCurso,
+        temaIdsPrioritarios: focoCurso?.temaIdsSemana,
+      }),
       fetchJsonCached("data/temas.json"),
     ]);
     temaPorId = new Map(temas.map((t) => [t.id, t]));
 
-    if (!total && baralho !== BARALHO_SESPE) {
+    if (!total && baralho === "todos") {
       container.innerHTML = `
         <div class="main__container">
           <div class="page-header">
@@ -71,10 +80,15 @@ export async function renderFlashcards(container, params, query = {}) {
         <div class="page-header">
           <div class="page-header__eyebrow">Residência — Flashcards</div>
           <h1>${tema ? `Flashcards — ${escapeHtml(tema.titulo)}` : "Flashcards"}</h1>
-          <p class="page-header__desc">Frente e verso com repetição espaçada — erre e o card volta rápido; acerte e o intervalo cresce. Os cards novos entram aos poucos, começando pelos temas que mais caem na prova.</p>
+          <p class="page-header__desc">${
+            baralho === BARALHO_CURSO
+              ? `Foco no Curso: cards dos temas da semana ${focoCurso.semana} primeiro, e revisão dos temas do Curso que você já estudou.`
+              : "Frente e verso com repetição espaçada — erre e o card volta rápido; acerte e o intervalo cresce. Os cards novos entram aos poucos, começando pelos temas que mais caem na prova."
+          }</p>
         </div>
 
         <div class="tag-filter-bar" role="group" aria-label="Baralho" style="margin-bottom:16px;">
+          ${focoCurso ? `<button type="button" class="tag-filter${baralho === BARALHO_CURSO ? " is-active" : ""}" data-baralho="${BARALHO_CURSO}" aria-pressed="${baralho === BARALHO_CURSO}">📘 Curso — semana ${focoCurso.semana}</button>` : ""}
           <button type="button" class="tag-filter${baralho === "todos" ? " is-active" : ""}" data-baralho="todos" aria-pressed="${baralho === "todos"}">Todos os cards</button>
           <button type="button" class="tag-filter${baralho === BARALHO_SESPE ? " is-active" : ""}" data-baralho="${BARALHO_SESPE}" aria-pressed="${baralho === BARALHO_SESPE}">Mais cobrados IAUPE/SES-PE</button>
         </div>
@@ -106,6 +120,8 @@ export async function renderFlashcards(container, params, query = {}) {
           ]
             .filter(Boolean)
             .join(" + ")}</p>`
+            : baralho === BARALHO_CURSO && !total
+            ? `<div class="empty-state"><h2>Sem flashcards para os temas do Curso ainda</h2><p>Os temas da semana ${focoCurso.semana} ainda não têm cards. Use "Todos os cards" enquanto isso.</p></div>`
             : `<div class="empty-state"><h2>Tudo revisado por hoje ✓</h2><p>Nenhum card vencido agora. Volte mais tarde.</p></div>`
         }
         ${tema ? `<a class="btn btn--ghost" href="#/residencia/conteudo/${tema.id}" style="margin-top:12px;">← Voltar para ${escapeHtml(tema.titulo)}</a>` : ""}

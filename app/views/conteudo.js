@@ -524,7 +524,7 @@ export async function renderDetalhe(container, { id }) {
         ${
           temQuestoes
             ? `<span class="acao-mini__divisor" aria-hidden="true"></span>
-        <a class="acao-mini acao-mini--link" href="#/residencia/questoes?tema=${encodeURIComponent(tema.titulo)}">Questões →</a>`
+        <a class="acao-mini acao-mini--link" href="#/residencia/questoes?temaId=${encodeURIComponent(tema.id)}">Questões →</a>`
             : ""
         }
       </div>
