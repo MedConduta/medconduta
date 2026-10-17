@@ -2177,3 +2177,18 @@ button.stat-tile:hover {
   margin: 8px 0;
   border-radius: 8px;
 }
+
+/* Curso: filtros de disciplina e status lado a lado (empilham no celular). */
+.curso-filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+.curso-filtros .field { margin-bottom: 0; }
+
+/* Lista aberta dos selects nativos acompanha o tema (claro/escuro). */
+.field select option {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
