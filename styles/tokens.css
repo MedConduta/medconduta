@@ -217,3 +217,8 @@
 :root[data-theme="light"] {
   color-scheme: light;
 }
+
+/* Telas largas de computador: a coluna de 880px deixava metade da tela vazia. */
+@media (min-width: 1400px) {
+  :root { --content-max-width: 1120px; }
+}

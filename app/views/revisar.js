@@ -34,6 +34,8 @@ export async function renderRevisar(container) {
           numero: dados.revisoesCurso.length,
           descricao: "Revisões espaçadas (3, 5, 7, 15 e 30 dias) dos temas que você estudou.",
           cor: 1,
+          link: "#/residencia/curso",
+          acao: dados.revisoesCurso.length ? "Ver no Curso" : "Ir para o Curso",
         })}
         ${cartao({
           titulo: "Questões erradas",
