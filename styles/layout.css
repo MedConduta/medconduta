@@ -218,6 +218,19 @@
 .topbar .topbar__menu,
 .topbar .topbar__brand { display: none; }
 
+/* Computador: busca centralizada na barra, ações à direita. As colunas
+   laterais têm a mesma largura mínima (≥ largura das ações), senão a busca
+   desliza para a esquerda. Em telas mais estreitas fica o layout em linha. */
+@media (min-width: 1200px) {
+  .topbar {
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr) minmax(220px, 520px) minmax(280px, 1fr);
+  }
+  .topbar .topbar-busca { grid-column: 2; width: 100%; }
+  .topbar .topbar__acoes { grid-column: 3; justify-self: end; }
+}
+.topbar__acoes { white-space: nowrap; }
+
 .topbar-busca {
   display: flex;
   align-items: center;
