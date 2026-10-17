@@ -51,14 +51,20 @@ export async function renderCurso(container) {
           <label for="curso-busca">Buscar tema</label>
           <input type="search" id="curso-busca" placeholder="Ex.: hipertensão, DRC..." />
         </div>
-        <div class="btn-row" style="margin-top:12px;">
-          <select id="curso-filtro-categoria" class="field" style="flex:1;min-width:160px;"></select>
-          <select id="curso-filtro-status" class="field" style="flex:1;min-width:160px;">
-            <option value="todos">Todos os status</option>
-            <option value="nao-iniciado">Não iniciado</option>
-            <option value="em-andamento">Em andamento</option>
-            <option value="concluido">Concluído</option>
-          </select>
+        <div class="curso-filtros">
+          <div class="field">
+            <label for="curso-filtro-categoria">Disciplina</label>
+            <select id="curso-filtro-categoria"></select>
+          </div>
+          <div class="field">
+            <label for="curso-filtro-status">Status</label>
+            <select id="curso-filtro-status">
+              <option value="todos">Todos os status</option>
+              <option value="nao-iniciado">Não iniciado</option>
+              <option value="em-andamento">Em andamento</option>
+              <option value="concluido">Concluído</option>
+            </select>
+          </div>
         </div>
       </div>
 
