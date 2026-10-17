@@ -20,6 +20,8 @@
 
 const ALLOWED_ORIGINS = [
   "https://medconduta.github.io",
+  "https://medconduta.app.br",
+  "https://www.medconduta.app.br",
   "http://localhost:8744",
   "http://127.0.0.1:8744",
 ];
