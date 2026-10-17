@@ -12,6 +12,7 @@ import { gerarRevisoesParaTema, hojeIso } from "../revisaoCurso.js";
 import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
 import { contarFlashcardsDoTema } from "../flashcards.js";
 import { getAnotacao, salvarAnotacao } from "../anotacoes.js";
+import { montarEditorAnotacao } from "../components/editorAnotacao.js";
 
 // Fase 12 — ordem de prioridade dos quadrantes (ver prontidao.js): categorias
 // críticas primeiro, tranquilas por último. Curso reordenado pelo mesmo
@@ -498,10 +499,8 @@ export async function renderDetalhe(container, { id }) {
 
       <div class="card" style="margin-top:24px;" id="secao-anotacoes">
         <h3 style="margin-top:0;">Suas anotações sobre ${escapeHtml(tema.titulo)}</h3>
-        <p class="page-header__desc" style="margin-top:0;">Livre pra anotar o macete que você mesmo descobriu — só fica salvo aqui, não é usado pela IA.</p>
-        <div class="field" style="margin-bottom:0;">
-          <textarea id="anotacao-tema" rows="5" placeholder="Ex.: lembrar de sempre pensar em X antes de Y...">${escapeHtml(anotacaoSalva)}</textarea>
-        </div>
+        <p class="page-header__desc" style="margin-top:0;">Livre pra anotar o macete que você mesmo descobriu — dá para usar negrito, marca-texto, listas e colar imagens. Só fica salvo aqui, não é usado pela IA.</p>
+        <div id="anotacao-tema"></div>
         <p id="anotacao-status" style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-top:6px;min-height:1em;"></p>
       </div>
 
@@ -538,16 +537,14 @@ export async function renderDetalhe(container, { id }) {
 
   ligarLeitura(container);
 
-  const anotacaoEl = container.querySelector("#anotacao-tema");
   const anotacaoStatusEl = container.querySelector("#anotacao-status");
-  let temporizadorAnotacao = null;
-  anotacaoEl.addEventListener("input", () => {
-    anotacaoStatusEl.textContent = "Salvando...";
-    clearTimeout(temporizadorAnotacao);
-    temporizadorAnotacao = setTimeout(async () => {
-      await salvarAnotacao(tema.id, anotacaoEl.value);
-      anotacaoStatusEl.textContent = "Salvo ✓";
-    }, 600);
+  montarEditorAnotacao(container.querySelector("#anotacao-tema"), {
+    html: anotacaoSalva,
+    placeholder: "Ex.: lembrar de sempre pensar em X antes de Y...",
+    onSalvar: (html, texto) => salvarAnotacao(tema.id, html, texto),
+    onStatus: (msg) => {
+      anotacaoStatusEl.textContent = msg;
+    },
   });
 
   // ---------- Abas de IA (Fase 17: movidas pro topo, minimalistas, com resultado salvo por tema) ----------

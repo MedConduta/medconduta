@@ -2120,3 +2120,60 @@ button.stat-tile:hover {
   .semana-linha__indice { grid-column: 2; grid-row: 1; justify-self: end; }
   .semana-linha__detalhes { grid-column: 1 / -1; grid-row: 2; }
 }
+
+/* ---------- Editor das anotações do tema ---------- */
+.editor-anotacao {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 12px);
+  background: var(--color-bg);
+  overflow: hidden;
+}
+.editor-anotacao:focus-within { border-color: var(--color-accent); }
+.editor-anotacao__barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  padding: 6px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+.editor-anotacao__btn {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+.editor-anotacao__btn:hover { background: var(--color-surface-hover); color: var(--color-text); }
+.editor-anotacao__btn.is-ativo { background: var(--color-accent-soft); color: var(--color-accent); }
+.editor-anotacao__btn:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+.editor-anotacao__sep { width: 1px; height: 20px; margin: 0 4px; background: var(--color-border); }
+.editor-anotacao__area {
+  min-height: 140px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 12px 14px;
+  color: var(--color-text);
+  line-height: 1.6;
+  outline: none;
+  overflow-wrap: anywhere;
+}
+.editor-anotacao__area:empty::before {
+  content: attr(data-placeholder);
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+.editor-anotacao__area mark { background: var(--color-mark); color: var(--color-mark-fg); border-radius: 2px; padding: 0 2px; }
+.editor-anotacao__area ul, .editor-anotacao__area ol { padding-left: 1.4em; margin: 4px 0; }
+.editor-anotacao__area img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 8px 0;
+  border-radius: 8px;
+}
