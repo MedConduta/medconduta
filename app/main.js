@@ -110,13 +110,41 @@ document.getElementById("topbar-menu-btn").addEventListener("click", () => {
 });
 document.getElementById("sidebar-overlay").addEventListener("click", closeMobileNav);
 
-document.getElementById("sidebar-collapse").addEventListener("click", () => {
-  appShell.classList.toggle("is-collapsed");
+// Menu lateral: recolhido por padrão no computador (abre ao passar o mouse);
+// "Fixar menu aberto" deixa sempre expandido. Preferência só deste aparelho.
+const CHAVE_MENU_FIXO = "medconduta:menu_fixo";
+const botaoFixarMenu = document.getElementById("sidebar-collapse");
+function aplicarMenuFixo(fixo) {
+  appShell.classList.toggle("is-pinned", fixo);
+  botaoFixarMenu.setAttribute("aria-pressed", String(fixo));
+  botaoFixarMenu.querySelector(".sidebar__collapse-texto").textContent = fixo ? "Recolher menu" : "Fixar menu aberto";
+}
+let menuFixo = false;
+try {
+  menuFixo = localStorage.getItem(CHAVE_MENU_FIXO) === "1";
+} catch {
+  /* sem localStorage: fica o padrão (recolhido) */
+}
+aplicarMenuFixo(menuFixo);
+botaoFixarMenu.addEventListener("click", () => {
+  menuFixo = !menuFixo;
+  aplicarMenuFixo(menuFixo);
+  try {
+    localStorage.setItem(CHAVE_MENU_FIXO, menuFixo ? "1" : "0");
+  } catch {
+    /* preferência só desta sessão */
+  }
+  // Ao recolher, tira o foco do botão para o menu fechar já (senão :focus-within o mantém aberto).
+  if (!menuFixo) botaoFixarMenu.blur();
 });
 
 // Delegação de clique para fechar o drawer mobile ao navegar por um link do menu
 sidebarNavEl.addEventListener("click", (e) => {
-  if (e.target.closest("a")) closeMobileNav();
+  const link = e.target.closest("a");
+  if (!link) return;
+  closeMobileNav();
+  // Menu recolhível: solta o foco do link para o menu fechar ao tirar o mouse.
+  if (!appShell.classList.contains("is-pinned")) link.blur();
 });
 bottomNavEl.addEventListener("click", (e) => {
   if (e.target.closest("#bottom-nav-mais")) {
