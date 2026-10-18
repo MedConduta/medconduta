@@ -5,6 +5,8 @@ import {
   MIN_POR_QUESTAO,
   selecionarQuestoesSimulado,
   selecionarQuestoesSimuladoEstrategico,
+  listarProvasCompletas,
+  selecionarProvaCompleta,
   registrarResultadoSimulado,
   getHistoricoSimulados,
 } from "../simulados.js";
@@ -15,7 +17,9 @@ import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } 
 export async function renderSimulados(container) {
   let estado = "config"; // config | rodando | resultado
   let tamanhoEscolhido = TAMANHO_PADRAO;
-  let tipoEscolhido = "completo"; // completo | estrategico
+  let tipoEscolhido = "completo"; // completo | estrategico | prova
+  let provaEscolhida = null; // chave da prova real (instituição|edição|prova) no tipo "prova"
+  let provaAtual = null; // { instituicao, edicao, anuladas } da prova em andamento
   let categoriasEstrategicas = [];
   let questoes = [];
   const respostasPorQuestaoId = new Map();
@@ -33,7 +37,8 @@ export async function renderSimulados(container) {
 
   async function montar() {
     if (estado === "config") {
-      const historico = await getHistoricoSimulados();
+      const [historico, provas] = await Promise.all([getHistoricoSimulados(), listarProvasCompletas().catch(() => [])]);
+      if (!provaEscolhida && provas.length) provaEscolhida = provas[0].chave;
       container.innerHTML = `
         <div class="main__container">
           <div class="page-header">
@@ -48,15 +53,30 @@ export async function renderSimulados(container) {
               <select id="simulado-tipo">
                 <option value="completo" ${tipoEscolhido === "completo" ? "selected" : ""}>Completo — proporcional à prova real</option>
                 <option value="estrategico" ${tipoEscolhido === "estrategico" ? "selected" : ""}>Estratégico — só seus maiores gargalos agora</option>
+                <option value="prova" ${tipoEscolhido === "prova" ? "selected" : ""}>Prova completa — refazer uma prova real, na ordem</option>
               </select>
             </div>
-            <div class="field">
+            ${
+              tipoEscolhido === "prova"
+                ? provas.length
+                  ? `<div class="field">
+              <label for="simulado-prova">Prova</label>
+              <select id="simulado-prova">
+                ${provas
+                  .map((p) => `<option value="${escapeHtml(p.chave)}" ${p.chave === provaEscolhida ? "selected" : ""}>${escapeHtml(p.instituicao)} ${escapeHtml(p.edicao)} — ${p.total - p.anuladas} questões${p.anuladas ? ` (${p.anuladas} anulada${p.anuladas > 1 ? "s" : ""} fora)` : ""} · ~${formatarDuracaoAprox((p.total - p.anuladas) * MIN_POR_QUESTAO)}</option>`)
+                  .join("")}
+              </select>
+            </div>`
+                  : `<p style="color:var(--color-text-secondary);margin-bottom:12px;">Nenhuma prova completa disponível ainda. As provas aparecem aqui conforme forem importadas com a numeração original.</p>`
+                : ""
+            }
+            <div class="field" ${tipoEscolhido === "prova" ? "hidden" : ""}>
               <label for="simulado-tamanho">Número de questões</label>
               <select id="simulado-tamanho">
                 ${TAMANHOS_DISPONIVEIS.map((t) => `<option value="${t}" ${t === tamanhoEscolhido ? "selected" : ""}>${t} questões (~${formatarDuracaoAprox(t * MIN_POR_QUESTAO)})</option>`).join("")}
               </select>
             </div>
-            <button class="btn btn--primary" id="btn-iniciar">Iniciar simulado</button>
+            <button class="btn btn--primary" id="btn-iniciar" ${tipoEscolhido === "prova" && !provas.length ? "disabled" : ""}>Iniciar simulado</button>
           </div>
 
           ${renderHistorico(historico)}
@@ -64,6 +84,10 @@ export async function renderSimulados(container) {
       `;
       container.querySelector("#simulado-tipo").addEventListener("change", (e) => {
         tipoEscolhido = e.target.value;
+        montar();
+      });
+      container.querySelector("#simulado-prova")?.addEventListener("change", (e) => {
+        provaEscolhida = e.target.value;
       });
       container.querySelector("#simulado-tamanho").addEventListener("change", (e) => {
         tamanhoEscolhido = Number(e.target.value);
@@ -82,7 +106,15 @@ export async function renderSimulados(container) {
 
   async function iniciarSimulado() {
     container.innerHTML = `<div class="main__container"><div class="empty-state">Montando seu simulado...</div></div>`;
-    if (tipoEscolhido === "estrategico") {
+    provaAtual = null;
+    if (tipoEscolhido === "prova") {
+      const { questoes: daProva, anuladas } = await selecionarProvaCompleta(provaEscolhida);
+      questoes = daProva;
+      categoriasEstrategicas = [];
+      const [instituicao, edicao] = provaEscolhida.split("|");
+      provaAtual = { instituicao, edicao, anuladas };
+      tamanhoEscolhido = questoes.length;
+    } else if (tipoEscolhido === "estrategico") {
       const resultado = await selecionarQuestoesSimuladoEstrategico(tamanhoEscolhido);
       questoes = resultado.questoes;
       categoriasEstrategicas = resultado.categorias;
@@ -114,8 +146,13 @@ export async function renderSimulados(container) {
     container.innerHTML = `
       <div class="main__container">
         <div class="page-header">
-          <div class="page-header__eyebrow">Simulado — Questão ${indiceAtual + 1} de ${questoes.length}</div>
+          <div class="page-header__eyebrow">${
+            provaAtual
+              ? `Prova completa ${escapeHtml(provaAtual.instituicao)} ${escapeHtml(provaAtual.edicao)} — Questão ${questao.numero} (${indiceAtual + 1} de ${questoes.length})`
+              : `Simulado — Questão ${indiceAtual + 1} de ${questoes.length}`
+          }</div>
           <h1 id="simulado-timer" style="font-variant-numeric:tabular-nums;">${formatarTempo(segundosRestantes)}</h1>
+          ${provaAtual?.anuladas.length ? `<p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">Anuladas pela banca (fora da correção): ${provaAtual.anuladas.join(", ")}</p>` : ""}
           ${categoriasEstrategicas.length ? `<p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">🎯 Estratégico — foco em: ${categoriasEstrategicas.map(escapeHtml).join(", ")}</p>` : ""}
         </div>
 
@@ -124,7 +161,7 @@ export async function renderSimulados(container) {
             .map((q, i) => {
               const marcada = respostasPorQuestaoId.has(q.id);
               const atual = i === indiceAtual;
-              return `<button class="btn ${atual ? "btn--primary" : "btn--secondary"}" data-nav="${i}" style="min-width:36px;padding:6px;${marcada && !atual ? "border-color:var(--color-accent);" : ""}">${i + 1}</button>`;
+              return `<button class="btn ${atual ? "btn--primary" : "btn--secondary"}" data-nav="${i}" style="min-width:36px;padding:6px;${marcada && !atual ? "border-color:var(--color-accent);" : ""}">${provaAtual ? q.numero : i + 1}</button>`;
             })
             .join("")}
         </div>
