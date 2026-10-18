@@ -45,6 +45,28 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 | Lote | Instituição | Provas | Questões extraídas | Novas | Revisão | Status |
 |---|---|---|---|---|---|---|
 | 1 | ENARE | 2021, 2022, 2023, 2024, 2025 (10 simulados MedCof e 1 "FGV 2024" sem rótulo excluídos) | 500 (23 anuladas) | 360 novas (q29516–q29875) + 118 já existiam (ganham instituição/ano/número e o texto oficial) | conferido pelo usuário | publicado |
+| 2–6 | SES-RJ, SURCE, HIAE-SP, UERJ, UFRJ (R1 e R+) | — | — | PRs #126–#130 | sem conferência do usuário (filtro de qualidade + minha revisão) | publicado |
+| 7 | UNESP | R1 e R+ | 2.511 | 2.225 novas, 279 enriquecidas | idem | publicado (#132) |
+| 8 | ABC-SP | R1 e R+ | — | 3.128 novas (prévia), 283 enriquecidas | preparado por agente, revisado | publicado (#134) |
+| 9 | FAMERP | R1 e R+ | — | 2.188 novas (prévia), 131 enriquecidas | idem | publicado (#135) |
+| 10 | PSU-MG | R1 e R+ (inclui 2025.2) | — | 1.365 novas (prévia); 21 excluídas (caso compartilhado do formato 2025, gabaritos divergentes) | idem | publicado (#136) |
+| 11 | SCM-SP | R1 e R+ | 3.390 | 2.396 novas, 248 enriquecidas | 757 de baixa confiança classificadas à mão | publicado (#137) |
+
+Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
+
+### Melhorias do pipeline (18/10)
+- `repetidaDe`: questão da R+ que repete a da R1 da mesma instituição (às vezes com alternativas embaralhadas) sai do banco/sorteios e fica só na prova completa (PR #133). `scratchpad/imp/marcar_repetidas.py` roda a cada publicação; pares com resposta correta diferente ficam em `conflitos_repetidas.json` para revisão.
+- Trava "adulto em tema pediátrico" no `aplicar_lote.py` (bloqueia a publicação até decidir com `forcar`); 24 questões já publicadas corrigidas (PR #132).
+- `decisoes.json` aceita `"excluir": true` (+ `motivo`) para tirar uma questão específica do lote.
+- Filtro de qualidade reprova "cita imagem/tabela que não veio"; o regex `CITA_IMAGEM` do extrator estava quebrado (`b(` em vez de `(`). 7 questões publicadas sem a imagem citada foram removidas.
+- Corretor: "l" no lugar de "I" maiúsculo ("lsoimunização").
+- `tipo_pela_capa` ignora a capa quando ela traz o começo da 1ª questão em vez do programa.
+
+### Pendências
+- Extrator: caso compartilhado do formato PSU-MG 2025 ("Atenção: o enunciado abaixo corresponde às questões X e Y").
+- 43 pares "parecidos com resposta diferente" (`conflitos_repetidas.json`) para revisar.
+- IA: a rota do Gemini no Worker não exige login. Proposta (adiada pelo usuário): login para usar a IA, cota diária por pessoa (~20), teto global (~800/dia) e cache compartilhado de respostas.
+- Admin: ADMIN_EMAILS definido (2 contas); tabela `invites` criada no D1 — o cadastro agora exige convite.
 
 ## Pré-processamento (só automático, nada publicado) — 20 instituições
 `scratchpad/imp/pre_lotes.py` → `scratchpad/imp/status.json` e `lotes/<SIGLA>/`. Total ≈ 19,9 mil extraídas; ≈ 14,6 mil novas; ≈ 4,3 mil já existiam.
