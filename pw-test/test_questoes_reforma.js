@@ -23,8 +23,8 @@ const { chromium } = require("playwright");
   await page.waitForTimeout(800);
 
   const totalCuradas = await page.evaluate(async () => {
-    const res = await fetch("data/questoes.json");
-    return (await res.json()).length;
+    const res = await fetch("data/questoes/indice.json");
+    return (await res.json()).total;
   });
 
   await page.evaluate(() => {

@@ -11,6 +11,7 @@
  */
 
 import { fetchJsonCached } from "./utils.js";
+import { carregarIndiceBanco, obterQuestoes } from "./bancoQuestoes.js";
 import { getAll, setItem } from "./db.js";
 import { pesoProva } from "./areas.js";
 import { getConfiguracaoProva } from "./cronograma.js";
@@ -35,17 +36,26 @@ function embaralhar(lista) {
   return copia;
 }
 
+/** Troca os registros leves do índice pelas questões completas (as geradas por IA já vêm completas). */
+async function completarConteudo(lista) {
+  const completas = await obterQuestoes(lista.filter((q) => q.arquivo).map((q) => q.id));
+  return lista.map((q) => (q.arquivo ? completas.get(q.id) : q)).filter(Boolean);
+}
+
 /** Monta as `tamanho` questões do simulado, distribuídas por peso de incidência das categorias. */
 export async function selecionarQuestoesSimulado(tamanho) {
-  const [curadas, geradas, temas, { provaAlvo }] = await Promise.all([
-    fetchJsonCached("data/questoes.json"),
+  const [banco, geradas, temas, { provaAlvo }] = await Promise.all([
+    carregarIndiceBanco(),
     getAll("ia_questoes"),
     fetchJsonCached("data/temas.json"),
     getConfiguracaoProva(),
   ]);
 
   const categoriaPorTemaId = new Map(temas.map((t) => [t.id, t.categoria]));
-  const todasQuestoes = [...curadas, ...geradas].map((q) => ({ ...q, categoria: categoriaPorTemaId.get(q.temaId) ?? null }));
+  const todasQuestoes = [
+    ...banco.registros.filter((r) => !r.anulada), // registros leves do índice: o conteúdo é baixado só para as sorteadas
+    ...geradas.map((q) => ({ ...q, categoria: categoriaPorTemaId.get(q.temaId) ?? null })),
+  ];
 
   const porCategoria = new Map();
   for (const q of todasQuestoes) {
@@ -80,7 +90,7 @@ export async function selecionarQuestoesSimulado(tamanho) {
     }
   }
 
-  return embaralhar(selecionadas.slice(0, tamanho));
+  return completarConteudo(embaralhar(selecionadas.slice(0, tamanho)));
 }
 
 /**
@@ -92,8 +102,8 @@ export async function selecionarQuestoesSimulado(tamanho) {
  * não uma amostra da prova inteira.
  */
 export async function selecionarQuestoesSimuladoEstrategico(tamanho) {
-  const [curadas, geradas, temas, respostas, { provaAlvo }] = await Promise.all([
-    fetchJsonCached("data/questoes.json"),
+  const [banco, geradas, temas, respostas, { provaAlvo }] = await Promise.all([
+    carregarIndiceBanco(),
     getAll("ia_questoes"),
     fetchJsonCached("data/temas.json"),
     getAll("respostas"),
@@ -101,7 +111,10 @@ export async function selecionarQuestoesSimuladoEstrategico(tamanho) {
   ]);
 
   const categoriaPorTemaId = new Map(temas.map((t) => [t.id, t.categoria]));
-  const todasQuestoes = [...curadas, ...geradas].map((q) => ({ ...q, categoria: categoriaPorTemaId.get(q.temaId) ?? null }));
+  const todasQuestoes = [
+    ...banco.registros.filter((r) => !r.anulada), // registros leves do índice: o conteúdo é baixado só para as sorteadas
+    ...geradas.map((q) => ({ ...q, categoria: categoriaPorTemaId.get(q.temaId) ?? null })),
+  ];
 
   const desempenhoPorCategoria = calcularDesempenhoPorCategoria(respostas);
   const categorias = [...new Set(temas.map((t) => t.categoria))];
@@ -142,7 +155,7 @@ export async function selecionarQuestoesSimuladoEstrategico(tamanho) {
     }
   }
 
-  return { questoes: embaralhar(selecionadas.slice(0, tamanho)), categorias: ranking.map((r) => r.categoria) };
+  return { questoes: await completarConteudo(embaralhar(selecionadas.slice(0, tamanho))), categorias: ranking.map((r) => r.categoria) };
 }
 
 /**

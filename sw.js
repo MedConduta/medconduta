@@ -4,7 +4,7 @@
  * pré-cacheadas são armazenadas em runtime na primeira visita.
  */
 
-const CACHE_VERSION = "medconduta-v125";
+const CACHE_VERSION = "medconduta-v126";
 
 const PRECACHE_URLS = [
   "./",
@@ -36,6 +36,7 @@ const PRECACHE_URLS = [
   "./app/areas.js",
   "./app/iaConteudo.js",
   "./app/questoesIndex.js",
+  "./app/bancoQuestoes.js",
 
   "./app/components/sidebar.js",
   "./app/components/flowchart.js",
@@ -61,7 +62,9 @@ const PRECACHE_URLS = [
 
   "./data/temas.json",
   "./data/fluxogramas.json",
-  "./data/questoes.json",
+  // banco de questões: só o índice leve; os arquivos por especialidade entram no cache
+  // quando a pessoa abre uma questão daquela especialidade (ver fetch abaixo)
+  "./data/questoes/indice.json",
   "./data/curriculo.json",
   "./data/flashcards.json",
 

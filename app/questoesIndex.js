@@ -1,17 +1,21 @@
 /**
  * MedConduta — engine de indexação/filtro/contagem do banco de questões.
  *
- * Carrega o banco curado (data/questoes.json) + gerado por IA (store
- * "ia_questoes") + temas (data/temas.json, para a hierarquia grande
- * área/especialidade/tema) + histórico de respostas do usuário (store
- * "respostas") UMA VEZ, e monta índices em memória (Map) para que filtrar,
- * contar e ordenar sejam operações síncronas em milissegundos — sem re-fetch
- * de rede a cada mudança de filtro. Separado de app/views/questoes.js para
+ * Carrega o índice leve do banco curado (data/questoes/indice.json, via
+ * bancoQuestoes.js) + gerado por IA (store "ia_questoes") + temas
+ * (data/temas.json, para a hierarquia grande área/especialidade/tema) +
+ * histórico de respostas do usuário (store "respostas") UMA VEZ, e monta
+ * índices em memória (Map) para que filtrar, contar e ordenar sejam operações
+ * síncronas em milissegundos — sem re-fetch de rede a cada mudança de filtro.
+ * O conteúdo das questões (enunciado, alternativas...) só é baixado, por
+ * especialidade, para as que vão aparecer na tela (garantirConteudo) ou
+ * quando há busca por texto (garantirConteudoParaBusca). Separado de app/views/questoes.js para
  * ficar testável isoladamente e reutilizável por outras views no futuro
  * (erros.js, simulados.js etc. já fazem a mesma junção "questões + respostas"
  * de forma independente e não são tocados aqui).
  */
 import { fetchJsonCached, uniq } from "./utils.js";
+import { carregarIndiceBanco, obterQuestoes, carregarEspecialidades } from "./bancoQuestoes.js";
 import { getAll } from "./db.js";
 import { AREA_POR_CATEGORIA, ORDEM_AREAS } from "./areas.js";
 import { carregarFavoritos, alternarFavorito } from "./favoritos.js";
@@ -34,8 +38,8 @@ export const ORDENACAO = {
 
 /** Monta o índice completo. Chamar uma vez por sessão da página; filtros/contagens depois não re-fazem fetch. */
 export async function carregarIndice() {
-  const [curadas, geradas, temas, respostas, favoritos] = await Promise.all([
-    fetchJsonCached("data/questoes.json"),
+  const [banco, geradas, temas, respostas, favoritosBrutos] = await Promise.all([
+    carregarIndiceBanco(),
     getAll("ia_questoes"),
     fetchJsonCached("data/temas.json"),
     getAll("respostas"),
@@ -43,9 +47,14 @@ export async function carregarIndice() {
   ]);
 
   const temaPorId = new Map(temas.map((t) => [t.id, t]));
+  const { resolverId } = banco;
+  // anuladas não entram na prática do dia a dia (só na "Prova completa")
+  const curadas = banco.registros.filter((r) => !r.anulada);
+  const favoritos = new Set([...favoritosBrutos].map(resolverId));
 
   const statusPorQuestao = new Map(); // questaoId -> { respondida, acertouUltima, tentativas, ultimaEm }
-  for (const r of respostas) {
+  for (const resposta of respostas) {
+    const r = { ...resposta, questaoId: resolverId(resposta.questaoId) };
     const atual = statusPorQuestao.get(r.questaoId);
     if (!atual || (r.respondidoEm || "") > atual.ultimaEm) {
       statusPorQuestao.set(r.questaoId, {
@@ -60,18 +69,53 @@ export async function carregarIndice() {
   }
 
   const questoesPorId = new Map();
-  for (const q of [...curadas, ...geradas]) {
+  for (const q of curadas) questoesPorId.set(q.id, { ...q, completa: false });
+  for (const q of geradas) {
     const tema = temaPorId.get(q.temaId);
     const especialidade = tema?.categoria || "Outros";
     const grandeArea = AREA_POR_CATEGORIA[especialidade] || "Outros";
-    questoesPorId.set(q.id, { ...q, grandeArea, especialidade });
+    questoesPorId.set(q.id, { ...q, grandeArea, especialidade, completa: true });
   }
 
   const grandeAreas = ORDEM_AREAS.filter((a) => [...questoesPorId.values()].some((q) => q.grandeArea === a));
   const bancas = uniq([...questoesPorId.values()].map((q) => q.banca)).sort((a, b) => a.localeCompare(b, "pt-BR"));
   const anos = uniq([...questoesPorId.values()].map((q) => q.ano)).sort((a, b) => b - a);
 
-  return { questoesPorId, statusPorQuestao, favoritos, grandeAreas, bancas, anos };
+  return { questoesPorId, statusPorQuestao, favoritos, grandeAreas, bancas, anos, resolverId };
+}
+
+/** Baixa o conteúdo das questões indicadas (as que vão ser exibidas) e completa o índice em memória. */
+export async function garantirConteudo(indice, ids) {
+  const faltando = ids.filter((id) => indice.questoesPorId.get(id)?.completa === false);
+  if (!faltando.length) return;
+  const mapa = await obterQuestoes(faltando);
+  for (const [id, q] of mapa) {
+    const leve = indice.questoesPorId.get(id);
+    if (leve) indice.questoesPorId.set(id, { ...leve, ...q, completa: true });
+  }
+}
+
+/**
+ * Para a busca por texto: baixa o conteúdo só das especialidades que os
+ * filtros atuais permitem (todas, se nenhum filtro de área/especialidade/tema
+ * estiver ativo). Retorna true se precisou baixar algo.
+ */
+export async function garantirConteudoParaBusca(indice, filtros = {}) {
+  const especialidades = new Set();
+  for (const q of indice.questoesPorId.values()) {
+    if (q.completa !== false) continue;
+    if (filtros.grandeArea && q.grandeArea !== filtros.grandeArea) continue;
+    if (filtros.especialidade && q.especialidade !== filtros.especialidade) continue;
+    if (filtros.temaId && q.temaId !== filtros.temaId) continue;
+    especialidades.add(q.especialidade);
+  }
+  if (!especialidades.size) return false;
+  const completas = await carregarEspecialidades([...especialidades]);
+  for (const q of completas) {
+    const leve = indice.questoesPorId.get(q.id);
+    if (leve && leve.completa === false) indice.questoesPorId.set(q.id, { ...leve, ...q, completa: true });
+  }
+  return true;
 }
 
 /** true se a questão bate com os filtros. `ignorarCampo` exclui um campo do filtro (usado por contarPorNivel). */
@@ -93,7 +137,7 @@ function corresponde(indice, questao, filtros, ignorarCampo) {
   }
 
   if (f.busca && f.busca.trim()) {
-    const alvo = `${questao.tema} ${questao.enunciado}`.toLowerCase();
+    const alvo = `${questao.tema} ${questao.enunciado || ""}`.toLowerCase();
     if (!alvo.includes(f.busca.trim().toLowerCase())) return false;
   }
 

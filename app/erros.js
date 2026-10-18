@@ -11,6 +11,7 @@
 
 import { getAll, getItem, setItem } from "./db.js";
 import { fetchJsonCached } from "./utils.js";
+import { carregarIndiceBanco, obterQuestoes } from "./bancoQuestoes.js";
 import { revisar, estaVencido, diasAteVencer } from "./sm2.js";
 
 const STORE_SRS_QUESTOES = "srs_questoes";
@@ -34,8 +35,7 @@ export async function registrarResultadoQuestao(questaoId, acertou) {
  * agora; `proximas` as que ainda não venceram, ordenadas pela mais próxima.
  */
 export async function getQuestoesEmRevisao() {
-  const [curadas, geradas, temas, srsRecords, respostas] = await Promise.all([
-    fetchJsonCached("data/questoes.json"),
+  const [geradas, temas, srsRecords, respostas] = await Promise.all([
     getAll("ia_questoes"),
     fetchJsonCached("data/temas.json"),
     getAll(STORE_SRS_QUESTOES),
@@ -43,16 +43,18 @@ export async function getQuestoesEmRevisao() {
   ]);
 
   const categoriaPorTemaId = new Map(temas.map((t) => [t.id, t.categoria]));
-  const questaoPorId = new Map(
-    [...curadas, ...geradas].map((q) => [q.id, { ...q, categoria: categoriaPorTemaId.get(q.temaId) ?? null }])
-  );
-  const srsMap = new Map(srsRecords.map((r) => [r.id, r]));
+  const geradaPorId = new Map(geradas.map((q) => [q.id, { ...q, categoria: categoriaPorTemaId.get(q.temaId) ?? null }]));
+  const { resolverId } = await carregarIndiceBanco();
+  const srsMap = new Map(srsRecords.map((r) => [resolverId(r.id), r]));
 
-  const jaErrouAlgumaVez = new Set(respostas.filter((r) => !r.acertou).map((r) => r.questaoId));
+  const jaErrouAlgumaVez = [...new Set(respostas.filter((r) => !r.acertou).map((r) => r.questaoId))];
+  // só baixa as especialidades das questões que a pessoa errou (ids antigos de cópias mescladas são resolvidos)
+  const curadaPorId = await obterQuestoes(jaErrouAlgumaVez.filter((id) => !geradaPorId.has(id)));
 
-  const itens = [...jaErrouAlgumaVez]
-    .map((questaoId) => questaoPorId.get(questaoId))
-    .filter(Boolean)
+  const vistos = new Set();
+  const itens = jaErrouAlgumaVez
+    .map((questaoId) => geradaPorId.get(questaoId) || curadaPorId.get(resolverId(questaoId)))
+    .filter((q) => q && !vistos.has(q.id) && vistos.add(q.id))
     .map((questao) => ({ questao, estado: srsMap.get(questao.id) ?? null }));
 
   // Uma questão "em relearning" (a tentativa mais recente foi errada, então

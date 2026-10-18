@@ -57,7 +57,7 @@ async function renderTela(container) {
       <div class="card">
         <div class="list-card__top">
           <span class="badge badge--accent">${escapeHtml(questao.tema)}</span>
-          <span class="badge">${escapeHtml(questao.banca)} · ${questao.ano}</span>
+          <span class="badge">${escapeHtml(questao.banca)} · ${questao.ano ?? "s/ ano"}</span>
         </div>
         <p style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
         ${renderImagensQuestao(questao.imagens)}
