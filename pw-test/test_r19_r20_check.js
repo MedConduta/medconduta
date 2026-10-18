@@ -12,7 +12,7 @@ const { chromium } = require("playwright");
   await page.goto("http://localhost:8744");
   await page.waitForSelector("#login-email", { timeout: 10000 });
   const heading = await page.textContent("h1");
-  if (!heading.includes("Criar")) await page.click("#login-alternar");
+  if (!heading.includes("Criar")) await page.click(".login-switch a[data-modo=criar]");
   await page.fill("#login-email", email);
   await page.fill("#login-password", "senha12345");
   await page.click("#login-submit");
