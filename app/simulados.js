@@ -36,6 +36,42 @@ function embaralhar(lista) {
   return copia;
 }
 
+/** Mínimo de questões numeradas para uma prova aparecer como "Prova completa". */
+const MIN_QUESTOES_PROVA_COMPLETA = 30;
+
+function chaveProva(r) {
+  return `${r.instituicao}|${r.edicao || r.ano}|${r.prova || ""}`;
+}
+
+/**
+ * Provas reais disponíveis para refazer como simulado (instituição + ano/edição),
+ * a partir do índice: só questões com instituição e número da questão na prova.
+ */
+export async function listarProvasCompletas() {
+  const { registros } = await carregarIndiceBanco();
+  const grupos = new Map();
+  for (const r of registros) {
+    if (!r.instituicao || !r.numero) continue;
+    const chave = chaveProva(r);
+    const g = grupos.get(chave) || { chave, instituicao: r.instituicao, edicao: String(r.edicao || r.ano), ano: r.ano, prova: r.prova, total: 0, anuladas: 0 };
+    g.total += 1;
+    if (r.anulada) g.anuladas += 1;
+    grupos.set(chave, g);
+  }
+  return [...grupos.values()]
+    .filter((g) => g.total >= MIN_QUESTOES_PROVA_COMPLETA)
+    .sort((a, b) => a.instituicao.localeCompare(b.instituicao, "pt-BR") || b.edicao.localeCompare(a.edicao));
+}
+
+/** Questões de uma prova completa, na ordem da prova. Anuladas ficam de fora (não contam na correção). */
+export async function selecionarProvaCompleta(chave) {
+  const { registros } = await carregarIndiceBanco();
+  const daProva = registros.filter((r) => r.instituicao && r.numero && chaveProva(r) === chave).sort((a, b) => a.numero - b.numero);
+  const validas = daProva.filter((r) => !r.anulada);
+  const questoes = await completarConteudo(validas);
+  return { questoes, anuladas: daProva.filter((r) => r.anulada).map((r) => r.numero) };
+}
+
 /** Troca os registros leves do índice pelas questões completas (as geradas por IA já vêm completas). */
 async function completarConteudo(lista) {
   const completas = await obterQuestoes(lista.filter((q) => q.arquivo).map((q) => q.id));
