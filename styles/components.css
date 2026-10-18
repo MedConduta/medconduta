@@ -824,6 +824,85 @@ button.stat-tile:hover {
   fill: currentColor;
 }
 
+/* ---------- Reportar questão (⚠️ ao lado do favorito) ---------- */
+
+.card-acoes {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.reportar-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 2px 4px;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  opacity: 0.55;
+  transition: opacity var(--transition-fast);
+}
+.reportar-btn:hover,
+.reportar-btn[aria-expanded="true"],
+.reportar-btn.is-ativo {
+  opacity: 1;
+}
+.reportar-painel {
+  margin: 8px 0 4px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-hover);
+  display: grid;
+  gap: 10px;
+}
+.reportar-painel__titulo {
+  margin: 0;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
+.reportar-painel__opcoes {
+  display: grid;
+  gap: 6px;
+}
+.reportar-painel__opcao {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+.reportar-painel__detalhe {
+  display: grid;
+  gap: 4px;
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+}
+.reportar-painel__detalhe textarea {
+  width: 100%;
+  font: inherit;
+  font-size: var(--fs-sm);
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  resize: vertical;
+}
+.reportar-painel__status,
+.reportar-painel__ok {
+  margin: 0;
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+}
+.reportar-painel__ok {
+  color: var(--color-success);
+}
+
 /* ---------- Motivo do erro ---------- */
 
 .motivo-erro {
