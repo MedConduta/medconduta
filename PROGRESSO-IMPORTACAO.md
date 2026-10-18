@@ -39,3 +39,36 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 | Lote | Instituição | Provas | Questões extraídas | Novas | Revisão | Status |
 |---|---|---|---|---|---|---|
 | 1 | ENARE | 2021, 2022, 2023, 2024, 2025 (10 simulados MedCof e 1 "FGV 2024" sem rótulo excluídos) | 500 (23 anuladas) | 382 novas + 116 já existiam (ganham instituição/ano/número) | 52 temas duvidosos; 2 conflitos de gabarito (2022 q91, 2023 q16) | aguardando conferência |
+
+## Pré-processamento (só automático, nada publicado) — 20 instituições
+`scratchpad/imp/pre_lotes.py` → `scratchpad/imp/status.json` e `lotes/<SIGLA>/`. Total ≈ 19,9 mil extraídas; ≈ 14,6 mil novas; ≈ 4,3 mil já existiam.
+| Instituição | Aprovadas | Revisão (formato) | Novas | Já existiam | Conflitos | Baixa confiança |
+|---|---|---|---|---|---|---|
+| UNICAMP | 1039 | 601 (provas em formato não suportado) | 658 | 360 | 21 | ~437 |
+| SUS-SP | 1696 | 4 | 1362 | 318 | 16 | 861 |
+| UNITAU | 320 | 240 (sem gabarito) | 270 | 44 | 6 | 143 |
+| USP-SP | 879 | 205 (formato) | 665 | 207 | 7 | ~420 |
+| UNIFESP | 1320 | 202 (formato) | 921 | 276 | 123 | ~570 |
+| ABC-SP | 1393 | 7 | 1067 | 302 | 24 | ~660 |
+| HIAE-SP | 925 | 0 | 725 | 171 | 29 | 470 |
+| SES-RJ | 1099 | 1 | 860 | 212 | 27 | 524 |
+| SUS-BA | 255 | 420 (formato) | 209 | 46 | 0 | 160 |
+| SES-DF | 267 | 953 (itens Certo/Errado) | 260 | 0 | 7 | 145 |
+| UERJ | 890 | 0 | 654 | 227 | 9 | 435 |
+| UFRJ | 1199 | 1 | 868 | 326 | 5 | 562 |
+| UNESP | 1008 | 2 | 699 | 300 | 9 | 409 |
+| USP-RP | 1117 | 3 | 837 | 275 | 5 | 558 |
+| AMRIGS | 1000 | 0 | 661 | 189 | 150 (86 gabaritos ≠: investigar alinhamento) | 444 |
+| SURCE | 600 | 0 | 425 | 168 | 7 | 293 |
+| IAMSPE-SP | 719 | 121 (formato) | 537 | 174 | 8 | 329 |
+| PSU-MG | 810 | 0 | 612 | 185 | 13 | 412 |
+| SCM-SP | 999 | 1 | 733 | 252 | 14 | 491 |
+| FAMERP | 558 | 2 | 418 | 131 | 9 | 263 |
+
+Pendências técnicas antes desses lotes: suportar os formatos que falharam (UNICAMP, SUS-BA, UNITAU, USP-SP, UNIFESP, IAMSPE); itens Certo/Errado (SES-DF); conferir gabarito da AMRIGS.
+
+## Dúvidas para o usuário
+1. Classificação: no limiar atual (margem 0,5; ~84% de acerto) cerca de 60% das novas caem para decisão manual (~9 mil nas 20 instituições). Opções: (a) manter e classificar à mão (lento/caro); (b) aceitar automaticamente acima de 0,2 (~79% de acerto no tema exato) marcando como "automática — conferir", e só abaixo disso manual; (c) outra.
+2. Flashcards "usando as questões novas": link "praticar questões deste tema" no card, ou gerar cards a partir das questões?
+3. Questões itens Certo/Errado (SES-DF e 698 já no banco com 2 alternativas): manter como questões de 2 alternativas?
+4. Conflitos de gabarito do ENARE (2022 q91 e 2023 q16) — na página de conferência.
