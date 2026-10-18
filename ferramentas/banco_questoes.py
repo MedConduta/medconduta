@@ -19,6 +19,8 @@ Formato de cada questão:
   grandeArea, especialidade, temaId, tema, subtema, palavrasChave
   anulada       true quando a banca anulou a questão
   aliases       ids antigos de cópias que foram mescladas nesta questão
+  repetidaDe    id da questão original quando esta é a mesma questão reaproveitada em outro caderno da
+                instituição (R+ que repete a R1): fica fora do banco/sorteios, mas aparece na prova completa
   revisado, fonte
 """
 import hashlib, json, os, re, sys, unicodedata
@@ -225,12 +227,13 @@ def gerar_indice():
             q["id"], cod("arquivo", nome), cod("temaId", q["temaId"]), cod("instituicao", q.get("instituicao")),
             q.get("ano"), cod("prova", q.get("prova")), q.get("numero"), 1 if q.get("anulada") else 0,
             len(q.get("imagens") or []), cod("origem", q.get("origem")), q.get("edicao"),
+            1 if q.get("repetidaDe") else 0,
         ])
         for a in q.get("aliases") or []:
             aliases[a] = q["id"]
     indice = {
         "versao": 1, "total": len(linhas),
-        "campos": ["id", "arquivo", "temaId", "instituicao", "ano", "prova", "numero", "anulada", "nImagens", "origem", "edicao"],
+        "campos": ["id", "arquivo", "temaId", "instituicao", "ano", "prova", "numero", "anulada", "nImagens", "origem", "edicao", "repetida"],
         "dicionarios": dic, "linhas": linhas, "aliases": aliases,
     }
     salvar_json(os.path.join(DIR, "indice.json"), indice)
