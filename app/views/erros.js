@@ -1,4 +1,4 @@
-import { escapeHtml } from "../utils.js";
+import { escapeHtml, renderImagensQuestao } from "../utils.js";
 import { setItem } from "../db.js";
 import { getQuestoesEmRevisao, registrarResultadoQuestao } from "../erros.js";
 import { diasAteVencer } from "../sm2.js";
@@ -60,6 +60,7 @@ async function renderTela(container) {
           <span class="badge">${escapeHtml(questao.banca)} · ${questao.ano}</span>
         </div>
         <p style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
+        ${renderImagensQuestao(questao.imagens)}
         <div class="opcoes" data-qid="${questao.id}">
           ${questao.alternativas
             .map(

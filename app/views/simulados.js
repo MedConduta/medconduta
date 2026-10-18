@@ -1,4 +1,4 @@
-import { escapeHtml } from "../utils.js";
+import { escapeHtml, renderImagensQuestao } from "../utils.js";
 import {
   TAMANHOS_DISPONIVEIS,
   TAMANHO_PADRAO,
@@ -135,6 +135,7 @@ export async function renderSimulados(container) {
             <span class="badge">${escapeHtml(questao.banca)} · ${questao.ano}</span>
           </div>
           <p style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
+          ${renderImagensQuestao(questao.imagens)}
           <div class="opcoes">
             ${questao.alternativas
               .map(
@@ -241,6 +242,7 @@ export async function renderSimulados(container) {
                 </button>
               </div>
               <p style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
+              ${renderImagensQuestao(questao.imagens)}
               <div class="opcoes">
                 ${questao.alternativas
                   .map((alt, ai) => {

@@ -28,6 +28,90 @@ export function renderImagemEstudo(imagem) {
   `;
 }
 
+/**
+ * Renderiza as imagens de uma questão (campo opcional `imagens` de
+ * data/questoes.json: lista de caminhos, ex. "imagens/questoes/sespe/2024-q026-1.webp").
+ * Cada imagem é um botão: tocar abre a visualização ampliada (ver instalarZoomImagens).
+ */
+export function renderImagensQuestao(imagens) {
+  if (!Array.isArray(imagens) || !imagens.length) return "";
+  const total = imagens.length;
+  return `
+    <div class="questao-imagens">
+      ${imagens
+        .map((url, i) => {
+          const alt = total > 1 ? `Imagem ${i + 1} de ${total} da questão` : "Imagem da questão";
+          return `
+        <button type="button" class="questao-imagem" data-zoom-src="${escapeHtml(url)}" aria-label="${alt} — tocar para ampliar">
+          <img src="${escapeHtml(url)}" alt="${alt}" loading="lazy" />
+        </button>`;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
+/**
+ * Liga (uma vez, por delegação) o zoom das imagens de questão: tocar na
+ * imagem abre em tela cheia; dentro dela, tocar alterna entre "caber na tela"
+ * e tamanho ampliado (com rolagem). Fecha com o botão, Esc ou tocando fora.
+ */
+export function instalarZoomImagens() {
+  if (document.body.dataset.zoomImagens) return;
+  document.body.dataset.zoomImagens = "1";
+
+  let overlay = null;
+  let origem = null;
+
+  function fechar() {
+    if (!overlay) return;
+    overlay.remove();
+    overlay = null;
+    document.body.classList.remove("zoom-imagem-aberto");
+    origem?.focus();
+  }
+
+  function abrir(src, alt, botao) {
+    fechar();
+    origem = botao;
+    overlay = document.createElement("div");
+    overlay.className = "zoom-imagem";
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.setAttribute("aria-label", "Imagem ampliada");
+    overlay.innerHTML = `
+      <button type="button" class="zoom-imagem__fechar" aria-label="Fechar">✕</button>
+      <div class="zoom-imagem__area">
+        <img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" />
+      </div>
+      <p class="zoom-imagem__dica">Toque na imagem para ampliar · toque fora para fechar</p>
+    `;
+    const img = overlay.querySelector("img");
+    overlay.addEventListener("click", (e) => {
+      if (e.target === img) {
+        // ampliar = dobrar a largura em que a imagem está sendo exibida
+        const ampliar = !overlay.classList.contains("is-ampliada");
+        img.style.width = ampliar ? `${img.clientWidth * 2}px` : "";
+        overlay.classList.toggle("is-ampliada", ampliar);
+        return;
+      }
+      fechar();
+    });
+    document.body.appendChild(overlay);
+    document.body.classList.add("zoom-imagem-aberto");
+    overlay.querySelector(".zoom-imagem__fechar").focus();
+  }
+
+  document.addEventListener("click", (e) => {
+    const botao = e.target.closest("[data-zoom-src]");
+    if (!botao) return;
+    abrir(botao.dataset.zoomSrc, botao.querySelector("img")?.alt || "", botao);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay) fechar();
+  });
+}
+
 export async function fetchJson(path) {
   const res = await fetch(path);
   if (!res.ok) throw new Error(`Falha ao carregar ${path}: ${res.status}`);
