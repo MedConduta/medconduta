@@ -20,6 +20,7 @@ import { icon } from "../components/icons.js";
 import { getFocoCurso } from "../focoCurso.js";
 import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
 import { renderBotaoCriarCard, ligarBotaoCriarCard } from "../flashcards.js";
+import { renderBotaoReportar, ligarBotaoReportar } from "../reportarQuestao.js";
 
 function skeletonCard() {
   return `
@@ -716,9 +717,12 @@ export async function renderLista(container, _params, query = {}) {
       <div class="card">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
           <p style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-bottom:6px;">${breadcrumbCard(q)}</p>
-          <button type="button" class="favorito-btn ${favoritada ? "is-ativo" : ""}" data-favorito-id="${q.id}" title="${favoritada ? "Remover dos favoritos" : "Marcar pra revisar depois"}" aria-pressed="${favoritada}">
-            ${icon("bookmark", { size: 18 })}
-          </button>
+          <span class="card-acoes">
+            ${renderBotaoReportar(q.id)}
+            <button type="button" class="favorito-btn ${favoritada ? "is-ativo" : ""}" data-favorito-id="${q.id}" title="${favoritada ? "Remover dos favoritos" : "Marcar pra revisar depois"}" aria-pressed="${favoritada}">
+              ${icon("bookmark", { size: 18 })}
+            </button>
+          </span>
         </div>
         <div class="list-card__top">
           <span class="badge badge--accent">${escapeHtml(q.tema)}</span>
@@ -748,6 +752,8 @@ export async function renderLista(container, _params, query = {}) {
     const q = indice.questoesPorId.get(id);
 
     const favoritoBtn = listaEl.querySelector(`.favorito-btn[data-favorito-id="${CSS.escape(id)}"]`);
+    const cardEl = favoritoBtn?.closest(".card");
+    ligarBotaoReportar(cardEl, favoritoBtn?.closest("div"), q);
     favoritoBtn?.addEventListener("click", async () => {
       const novoEstado = await alternarFavoritoNoIndice(indice, id);
       favoritoBtn.classList.toggle("is-ativo", novoEstado);

@@ -1,5 +1,6 @@
 import { escapeHtml } from "../utils.js";
 import { chamarApiAutenticada } from "../auth.js";
+import { CATEGORIAS_REPORTE } from "../reportarQuestao.js";
 
 /**
  * Tela de administrador: quem tem conta, quando usou pela última vez, e os
@@ -9,9 +10,10 @@ import { chamarApiAutenticada } from "../auth.js";
 export async function renderAdmin(container) {
   container.innerHTML = `<div class="main__container"><div class="empty-state">Carregando...</div></div>`;
 
-  const [usuariosRes, convitesRes] = await Promise.all([
+  const [usuariosRes, convitesRes, reportesRes] = await Promise.all([
     chamarApiAutenticada("GET", "/admin/usuarios"),
     chamarApiAutenticada("GET", "/admin/convites"),
+    chamarApiAutenticada("GET", "/admin/reportes"),
   ]);
 
   if (!usuariosRes.ok || !convitesRes.ok) {
@@ -28,6 +30,8 @@ export async function renderAdmin(container) {
 
   let usuarios = usuariosRes.dados;
   let convites = convitesRes.dados;
+  // reportes de questões (botão ⚠️); se o Worker ainda não tiver a rota, a seção avisa
+  const reportes = reportesRes.ok && Array.isArray(reportesRes.dados) ? reportesRes.dados : null;
 
   function render() {
     const livres = convites.filter((c) => !c.usado_por).length;
@@ -44,6 +48,17 @@ export async function renderAdmin(container) {
           <div class="stat-tile"><div class="stat-tile__value">${usuarios.filter((u) => ativoNosUltimosDias(u, 7)).length}</div><div class="stat-tile__label">Ativas nos últimos 7 dias</div></div>
           <div class="stat-tile"><div class="stat-tile__value">${livres}</div><div class="stat-tile__label">Convites disponíveis</div></div>
         </div>
+
+        <section class="card" style="margin-bottom:24px;">
+          <h2 style="font-size:var(--fs-lg);">Reportes de questões${reportes ? ` (${reportes.length})` : ""}</h2>
+          ${
+            !reportes
+              ? `<div class="empty-state">Não foi possível carregar os reportes (o Worker precisa da versão com a rota /admin/reportes).</div>`
+              : reportes.length
+              ? `<ul class="admin-list">${reportes.map(renderReporte).join("")}</ul>`
+              : `<div class="empty-state">Nenhuma questão reportada até agora.</div>`
+          }
+        </section>
 
         <section class="card" style="margin-bottom:24px;">
           <h2 style="font-size:var(--fs-lg);">Convites</h2>
@@ -137,6 +152,23 @@ function renderConvite(c) {
             : `<button type="button" class="btn btn--secondary btn--sm" data-copiar="${escapeHtml(c.code)}">Copiar link</button>
                <button type="button" class="btn btn--ghost btn--sm" data-revogar="${escapeHtml(c.code)}">Revogar</button>`
         }
+      </div>
+    </li>`;
+}
+
+const ROTULO_CATEGORIA = new Map(CATEGORIAS_REPORTE.map((c) => [c.id, c.rotulo]));
+
+function renderReporte(r) {
+  const origem = [r.instituicao, r.ano].filter(Boolean).join(" ");
+  return `
+    <li class="admin-list__item">
+      <div class="admin-list__main">
+        <span class="admin-list__title">${escapeHtml(ROTULO_CATEGORIA.get(r.categoria) || r.categoria || "Reporte")} · questão ${escapeHtml(r.questaoId || "?")}</span>
+        <span class="admin-list__meta">${escapeHtml([origem, r.tema].filter(Boolean).join(" · "))}${r.detalhe ? ` — “${escapeHtml(r.detalhe)}”` : ""}</span>
+      </div>
+      <div class="admin-list__actions">
+        <span class="badge">${escapeHtml(r.email || "")}</span>
+        <span class="badge">${r.criadoEm ? formatarData(r.criadoEm) : ""}</span>
       </div>
     </li>`;
 }

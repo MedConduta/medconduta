@@ -4,6 +4,7 @@ import { getQuestoesEmRevisao, registrarResultadoQuestao } from "../erros.js";
 import { diasAteVencer } from "../sm2.js";
 import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
 import { renderBotaoCriarCard, ligarBotaoCriarCard } from "../flashcards.js";
+import { renderBotaoReportar, ligarBotaoReportar } from "../reportarQuestao.js";
 
 export async function renderErros(container) {
   await renderTela(container);
@@ -56,9 +57,12 @@ async function renderTela(container) {
     .map(
       ({ questao }) => `
       <div class="card">
-        <div class="list-card__top">
-          <span class="badge badge--accent">${escapeHtml(questao.tema)}</span>
-          <span class="badge">${escapeHtml(questao.banca)} · ${questao.ano ?? "s/ ano"}</span>
+        <div class="list-card__top" style="justify-content:space-between;">
+          <span style="display:flex;flex-wrap:wrap;gap:6px;">
+            <span class="badge badge--accent">${escapeHtml(questao.tema)}</span>
+            <span class="badge">${escapeHtml(questao.banca)} · ${questao.ano ?? "s/ ano"}</span>
+          </span>
+          <span class="card-acoes">${renderBotaoReportar(questao.id)}</span>
         </div>
         <p class="enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
         ${renderImagensQuestao(questao.imagens)}
@@ -83,6 +87,8 @@ async function renderTela(container) {
     const item = vencidas.find((i) => i.questao.id === qid);
     const questao = item.questao;
     const exibidoEm = Date.now();
+    const cardEl = opcoesEl.closest(".card");
+    ligarBotaoReportar(cardEl, cardEl.querySelector(".list-card__top"), questao);
 
     opcoesEl.querySelectorAll(".question-option").forEach((btn) => {
       btn.addEventListener("click", async () => {

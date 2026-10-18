@@ -284,6 +284,27 @@ async function handleAdminUsuarios(env, origin) {
   return jsonResponse(results, 200, origin);
 }
 
+// Reportes de questões (botão ⚠️ no app): ficam no store "reportes_questoes" de
+// cada usuário; o administrador vê todos, do mais recente para o mais antigo.
+async function handleAdminReportes(env, origin) {
+  const { results } = await env.DB.prepare(
+    `SELECT r.value, r.updated_at, u.email
+     FROM records r JOIN users u ON u.id = r.user_id
+     WHERE r.store = 'reportes_questoes'
+     ORDER BY r.updated_at DESC LIMIT 1000`
+  ).all();
+  const reportes = results.map((row) => {
+    let dado = {};
+    try {
+      dado = JSON.parse(row.value);
+    } catch {
+      /* registro corrompido: mostra só e-mail e data */
+    }
+    return { ...dado, email: row.email, atualizadoEm: row.updated_at };
+  });
+  return jsonResponse(reportes, 200, origin);
+}
+
 async function handleAdminConvites(env, origin) {
   const { results } = await env.DB.prepare(
     `SELECT i.code, i.note, i.created_at, i.used_at, u.email AS usado_por
@@ -485,7 +506,7 @@ export default {
       return handleMe(request, env, origin);
     }
 
-    const adminMatch = path.match(/^\/admin\/(usuarios|convites)(?:\/([^/]+))?$/);
+    const adminMatch = path.match(/^\/admin\/(usuarios|convites|reportes)(?:\/([^/]+))?$/);
     if (adminMatch) {
       const usuario = await usuarioAutenticado(request, env);
       if (!usuario) return jsonResponse({ erro: "Não autenticado." }, 401, origin);
@@ -494,6 +515,7 @@ export default {
       const [, recurso, codigo] = adminMatch;
       if (recurso === "usuarios" && !codigo && request.method === "GET") return handleAdminUsuarios(env, origin);
       if (recurso === "convites" && !codigo && request.method === "GET") return handleAdminConvites(env, origin);
+      if (recurso === "reportes" && !codigo && request.method === "GET") return handleAdminReportes(env, origin);
       if (recurso === "convites" && !codigo && request.method === "POST") {
         return handleAdminCriarConvite(request, env, origin, usuario.id);
       }
