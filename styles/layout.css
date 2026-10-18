@@ -72,7 +72,7 @@
   .app-shell:not(.is-logged-out):not(.is-pinned) {
     grid-template-columns: var(--sidebar-width-collapsed) minmax(0, 1fr);
   }
-  .app-shell:not(.is-pinned) .app-content { grid-column: 2; }
+  .app-shell:not(.is-logged-out):not(.is-pinned) .app-content { grid-column: 2; }
   .app-shell:not(.is-pinned) .sidebar {
     position: fixed;
     left: 0;
