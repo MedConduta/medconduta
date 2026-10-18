@@ -560,13 +560,6 @@ export async function renderLista(container, _params, query = {}) {
       <div class="deck-grid">
         ${[...decks, ...decksSalvos].map(deckCard).join("")}
       </div>
-      <div class="card" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;">
-        <div>
-          <strong>Montar do zero</strong>
-          <p class="deck-card__desc" style="margin-top:4px;">Escolher assunto, banca, ano e quantidade — os filtros completos, abaixo.</p>
-        </div>
-        <button type="button" class="btn btn--secondary" id="questoes-montagem-avancada">Abrir montagem avançada</button>
-      </div>
     `;
 
     decksEl.querySelectorAll("[data-deck-treinar]").forEach((btn) => {
@@ -595,7 +588,6 @@ export async function renderLista(container, _params, query = {}) {
         await carregarFiltrosSalvos();
       });
     });
-    document.getElementById("questoes-montagem-avancada")?.addEventListener("click", () => filtrosToggleEl.click());
   }
 
   statsEl.addEventListener("click", (e) => {

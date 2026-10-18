@@ -261,13 +261,13 @@ async function autenticar(request, env) {
 async function usuarioAutenticado(request, env) {
   const userId = await autenticar(request, env);
   if (!userId) return null;
-  return env.DB.prepare("SELECT id, email FROM users WHERE id = ?").bind(userId).first();
+  return env.DB.prepare("SELECT id, email, created_at FROM users WHERE id = ?").bind(userId).first();
 }
 
 async function handleMe(request, env, origin) {
   const usuario = await usuarioAutenticado(request, env);
   if (!usuario) return jsonResponse({ erro: "Não autenticado." }, 401, origin);
-  return jsonResponse({ email: usuario.email, admin: ehAdmin(env, usuario.email) }, 200, origin);
+  return jsonResponse({ email: usuario.email, admin: ehAdmin(env, usuario.email), criadoEm: usuario.created_at }, 200, origin);
 }
 
 async function handleAdminUsuarios(env, origin) {
@@ -331,6 +331,144 @@ async function handleAdminRevogarConvite(env, origin, codigoBruto) {
   const { meta } = await env.DB.prepare("DELETE FROM invites WHERE code = ? AND used_by IS NULL").bind(codigo).run();
   if (!meta.changes) return jsonResponse({ erro: "Convite não encontrado ou já utilizado." }, 404, origin);
   return jsonResponse({ ok: true }, 200, origin);
+}
+
+// ---------- Senha: troca e redefinição ----------
+//
+// Não há envio de e-mail: quem esqueceu a senha faz um pedido, o administrador
+// vê o pedido em "Usuários e convites", gera um código de uso único (vale 24h)
+// e manda para a pessoa, que o usa na tela de login para criar a senha nova.
+
+const REDEFINICAO_HORAS = 24;
+let tabelasSenhaProntas = false;
+
+// Tabelas criadas sob demanda para não exigir migração manual no D1.
+async function garantirTabelasSenha(env) {
+  if (tabelasSenhaProntas) return;
+  await env.DB.batch([
+    env.DB.prepare(
+      "CREATE TABLE IF NOT EXISTS password_reset_requests (email TEXT PRIMARY KEY, requested_at TEXT NOT NULL)"
+    ),
+    env.DB.prepare(
+      `CREATE TABLE IF NOT EXISTS password_reset_codes (
+        code_hash TEXT PRIMARY KEY,
+        user_id TEXT NOT NULL REFERENCES users(id),
+        created_at TEXT NOT NULL,
+        expires_at TEXT NOT NULL,
+        used_at TEXT
+      )`
+    ),
+  ]);
+  tabelasSenhaProntas = true;
+}
+
+async function sha256Hex(texto) {
+  return bufferParaHex(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(texto)));
+}
+
+function senhaValida(senha) {
+  return typeof senha === "string" && senha.length >= 8;
+}
+
+async function handleTrocarSenha(request, env, origin) {
+  const usuario = await usuarioAutenticado(request, env);
+  if (!usuario) return jsonResponse({ erro: "Não autenticado." }, 401, origin);
+  const corpo = await readJson(request);
+  if (!corpo) return jsonResponse({ erro: "JSON inválido no corpo da requisição." }, 400, origin);
+  const { senhaAtual, novaSenha } = corpo;
+  if (!senhaValida(novaSenha)) return jsonResponse({ erro: "A nova senha precisa ter pelo menos 8 caracteres." }, 400, origin);
+
+  const { password_hash } = await env.DB.prepare("SELECT password_hash FROM users WHERE id = ?").bind(usuario.id).first();
+  if (typeof senhaAtual !== "string" || !(await verificarSenha(senhaAtual, password_hash))) {
+    return jsonResponse({ erro: "Senha atual incorreta." }, 403, origin);
+  }
+
+  const token = tokenDoCabecalho(request);
+  await env.DB.batch([
+    env.DB.prepare("UPDATE users SET password_hash = ? WHERE id = ?").bind(await criarHashSenha(novaSenha), usuario.id),
+    // Encerra as sessões dos outros aparelhos; a atual continua.
+    env.DB.prepare("DELETE FROM sessions WHERE user_id = ? AND token != ?").bind(usuario.id, token),
+  ]);
+  return jsonResponse({ ok: true }, 200, origin);
+}
+
+async function handlePedirRedefinicao(request, env, origin) {
+  const corpo = await readJson(request);
+  const email = String(corpo?.email || "").trim();
+  if (!emailValido(email)) return jsonResponse({ erro: "E-mail inválido." }, 400, origin);
+  await garantirTabelasSenha(env);
+  const usuario = await env.DB.prepare("SELECT id FROM users WHERE email = ?").bind(email).first();
+  if (usuario) {
+    await env.DB.prepare(
+      "INSERT INTO password_reset_requests (email, requested_at) VALUES (?, ?) ON CONFLICT(email) DO UPDATE SET requested_at = excluded.requested_at"
+    )
+      .bind(email, new Date().toISOString())
+      .run();
+  }
+  // Mesma resposta exista ou não a conta, para não revelar quem está cadastrado.
+  return jsonResponse({ ok: true }, 200, origin);
+}
+
+async function handleConfirmarRedefinicao(request, env, origin) {
+  const corpo = await readJson(request);
+  if (!corpo) return jsonResponse({ erro: "JSON inválido no corpo da requisição." }, 400, origin);
+  const email = String(corpo.email || "").trim();
+  const codigo = normalizarConvite(corpo.codigo);
+  if (!emailValido(email) || !codigo) return jsonResponse({ erro: "E-mail ou código inválido." }, 400, origin);
+  if (!senhaValida(corpo.novaSenha)) return jsonResponse({ erro: "A nova senha precisa ter pelo menos 8 caracteres." }, 400, origin);
+  await garantirTabelasSenha(env);
+
+  const usuario = await env.DB.prepare("SELECT id FROM users WHERE email = ?").bind(email).first();
+  const agora = new Date().toISOString();
+  const valido =
+    usuario &&
+    (await env.DB.prepare(
+      "SELECT code_hash FROM password_reset_codes WHERE code_hash = ? AND user_id = ? AND used_at IS NULL AND expires_at > ?"
+    )
+      .bind(await sha256Hex(codigo), usuario.id, agora)
+      .first());
+  if (!valido) return jsonResponse({ erro: "Código inválido, expirado ou já usado." }, 403, origin);
+
+  await env.DB.batch([
+    env.DB.prepare("UPDATE users SET password_hash = ? WHERE id = ?").bind(await criarHashSenha(corpo.novaSenha), usuario.id),
+    env.DB.prepare("UPDATE password_reset_codes SET used_at = ? WHERE code_hash = ?").bind(agora, valido.code_hash),
+    env.DB.prepare("DELETE FROM password_reset_requests WHERE email = ?").bind(email),
+    env.DB.prepare("DELETE FROM sessions WHERE user_id = ?").bind(usuario.id),
+  ]);
+  const token = await criarSessao(env, usuario.id);
+  return jsonResponse({ token, email }, 200, origin);
+}
+
+async function handleAdminRedefinicoes(env, origin) {
+  await garantirTabelasSenha(env);
+  const { results } = await env.DB.prepare(
+    "SELECT email, requested_at FROM password_reset_requests ORDER BY requested_at DESC"
+  ).all();
+  return jsonResponse(results, 200, origin);
+}
+
+async function handleAdminGerarRedefinicao(request, env, origin) {
+  const corpo = await readJson(request);
+  const email = String(corpo?.email || "").trim();
+  await garantirTabelasSenha(env);
+  const usuario = emailValido(email) && (await env.DB.prepare("SELECT id FROM users WHERE email = ?").bind(email).first());
+  if (!usuario) return jsonResponse({ erro: "Conta não encontrada." }, 404, origin);
+
+  const codigo = gerarCodigoConvite();
+  const agora = new Date();
+  const expira = new Date(agora.getTime() + REDEFINICAO_HORAS * 60 * 60 * 1000);
+  await env.DB.batch([
+    // Só o código mais recente vale.
+    env.DB.prepare("DELETE FROM password_reset_codes WHERE user_id = ? AND used_at IS NULL").bind(usuario.id),
+    env.DB.prepare("INSERT INTO password_reset_codes (code_hash, user_id, created_at, expires_at) VALUES (?, ?, ?, ?)").bind(
+      await sha256Hex(codigo),
+      usuario.id,
+      agora.toISOString(),
+      expira.toISOString()
+    ),
+    env.DB.prepare("DELETE FROM password_reset_requests WHERE email = ?").bind(email),
+  ]);
+  return jsonResponse({ email, codigo, expiraEm: expira.toISOString() }, 201, origin);
 }
 
 // ---------- Dados (armazenamento chave-valor por usuário) ----------
@@ -505,8 +643,17 @@ export default {
     if (path === "/auth/me" && request.method === "GET") {
       return handleMe(request, env, origin);
     }
+    if (path === "/auth/senha" && request.method === "POST") {
+      return handleTrocarSenha(request, env, origin);
+    }
+    if (path === "/auth/redefinicao/pedir" && request.method === "POST") {
+      return handlePedirRedefinicao(request, env, origin);
+    }
+    if (path === "/auth/redefinicao/confirmar" && request.method === "POST") {
+      return handleConfirmarRedefinicao(request, env, origin);
+    }
 
-    const adminMatch = path.match(/^\/admin\/(usuarios|convites|reportes)(?:\/([^/]+))?$/);
+    const adminMatch = path.match(/^\/admin\/(usuarios|convites|reportes|redefinicoes)(?:\/([^/]+))?$/);
     if (adminMatch) {
       const usuario = await usuarioAutenticado(request, env);
       if (!usuario) return jsonResponse({ erro: "Não autenticado." }, 401, origin);
@@ -516,6 +663,8 @@ export default {
       if (recurso === "usuarios" && !codigo && request.method === "GET") return handleAdminUsuarios(env, origin);
       if (recurso === "convites" && !codigo && request.method === "GET") return handleAdminConvites(env, origin);
       if (recurso === "reportes" && !codigo && request.method === "GET") return handleAdminReportes(env, origin);
+      if (recurso === "redefinicoes" && !codigo && request.method === "GET") return handleAdminRedefinicoes(env, origin);
+      if (recurso === "redefinicoes" && !codigo && request.method === "POST") return handleAdminGerarRedefinicao(request, env, origin);
       if (recurso === "convites" && !codigo && request.method === "POST") {
         return handleAdminCriarConvite(request, env, origin, usuario.id);
       }

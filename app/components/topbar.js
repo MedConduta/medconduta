@@ -9,8 +9,10 @@ export function initTopbar({ onSair }) {
   const email = getEmail() || "";
   const avatar = document.getElementById("perfil-btn");
   const menu = document.getElementById("perfil-menu");
-  avatar.textContent = (email[0] || "M").toUpperCase();
+  atualizarAvatar("");
   document.getElementById("perfil-email").textContent = email;
+
+  document.getElementById("perfil-conta").innerHTML = `${icon("user")}<span class="nav-link__label">Meus dados</span>`;
 
   const admin = document.getElementById("perfil-admin");
   admin.innerHTML = `${icon("lock")}<span class="nav-link__label">Usuários e convites</span>`;
@@ -37,6 +39,12 @@ export function initTopbar({ onSair }) {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") fechar();
   });
+}
+
+/** Inicial do avatar: do nome escolhido em "Meus dados", senão do e-mail. */
+export function atualizarAvatar(nome) {
+  const base = (nome || "").trim() || getEmail() || "M";
+  document.getElementById("perfil-btn").textContent = base[0].toUpperCase();
 }
 
 export function mostrarAdminNoPerfil() {

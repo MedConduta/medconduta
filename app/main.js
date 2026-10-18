@@ -7,7 +7,7 @@ import {
   definirContador,
   comAbas,
 } from "./components/sidebar.js";
-import { initTopbar, mostrarAdminNoPerfil, atualizarStreakTopbar } from "./components/topbar.js";
+import { initTopbar, mostrarAdminNoPerfil, atualizarStreakTopbar, atualizarAvatar } from "./components/topbar.js";
 import { initBusca } from "./components/busca.js";
 import { initTheme } from "./theme.js";
 import { isAuthenticated, sair, buscarPerfil } from "./auth.js";
@@ -34,6 +34,7 @@ import * as curso from "./views/curso.js";
 import * as flashcards from "./views/flashcards.js";
 import * as revisar from "./views/revisar.js";
 import * as admin from "./views/admin.js";
+import * as conta from "./views/conta.js";
 import { rodarBackupDiarioSeNecessario } from "./backup.js";
 import { instalarZoomImagens } from "./utils.js";
 
@@ -85,6 +86,7 @@ registerRoute("/residencia/relatorio-semanal", comAbas("desempenho", relatorioSe
 registerRoute("/residencia/foco", foco.renderFoco, { title: "Modo Foco" });
 registerRoute("/residencia/assistente", assistente.renderAssistente, { title: "Assistente IA" });
 registerRoute("/residencia/admin", admin.renderAdmin, { title: "Administração" });
+registerRoute("/residencia/conta", conta.renderConta, { title: "Meus dados" });
 
 // ---------- Navegação / sidebar / mobile ----------
 setNavigateCallback((path, meta) => {
@@ -189,6 +191,11 @@ function iniciarApp() {
     mostrarAdminNoPerfil();
     paintNav(caminhoAtual());
   });
+
+  conta
+    .getNomeUsuario()
+    .then((nome) => nome && atualizarAvatar(nome))
+    .catch(() => {});
 
   getConstancia()
     .then((c) => atualizarStreakTopbar(c.streakAtual))

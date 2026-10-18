@@ -43,3 +43,18 @@ CREATE TABLE IF NOT EXISTS records (
   updated_at TEXT NOT NULL,
   PRIMARY KEY (user_id, store, record_id)
 );
+
+-- Redefinição de senha sem e-mail: pedidos ("esqueci minha senha") e códigos
+-- de uso único gerados pelo administrador (o Worker também cria sob demanda).
+CREATE TABLE IF NOT EXISTS password_reset_requests (
+  email TEXT PRIMARY KEY,
+  requested_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS password_reset_codes (
+  code_hash TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL REFERENCES users(id),
+  created_at TEXT NOT NULL,
+  expires_at TEXT NOT NULL,
+  used_at TEXT
+);

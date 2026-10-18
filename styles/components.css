@@ -851,6 +851,10 @@ button.stat-tile:hover {
 .reportar-btn.is-ativo {
   opacity: 1;
 }
+.reportar-painel[hidden],
+.reportar-painel [hidden] {
+  display: none;
+}
 .reportar-painel {
   margin: 8px 0 4px;
   padding: 12px;
@@ -1801,6 +1805,41 @@ button.stat-tile:hover {
   font-size: var(--fs-xs);
   color: var(--color-text-muted);
 }
+.login-hint--ok {
+  margin-bottom: var(--space-4);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-success-soft, var(--color-surface-hover));
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+}
+.login-esqueci {
+  margin: 0 0 var(--space-3);
+  text-align: right;
+  font-size: var(--fs-sm);
+}
+.login-esqueci[hidden] { display: none; }
+
+/* ---------- Meus dados ---------- */
+
+.conta-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  align-items: start;
+}
+.conta-dados {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+}
+.conta-dados div { display: grid; gap: 2px; }
+.conta-dados dt { font-size: var(--fs-xs); color: var(--color-text-muted); }
+.conta-dados dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+.conta-form { display: grid; gap: var(--space-3); margin-top: var(--space-3); }
+.conta-form .btn { justify-self: start; }
+.conta-feedback { margin: 0; font-size: var(--fs-sm); color: var(--color-text-secondary); min-height: 1.2em; }
+.conta-feedback.is-erro { color: var(--color-danger); }
 
 .admin-convite-form {
   display: flex;

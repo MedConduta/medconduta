@@ -10,10 +10,11 @@ import { CATEGORIAS_REPORTE } from "../reportarQuestao.js";
 export async function renderAdmin(container) {
   container.innerHTML = `<div class="main__container"><div class="empty-state">Carregando...</div></div>`;
 
-  const [usuariosRes, convitesRes, reportesRes] = await Promise.all([
+  const [usuariosRes, convitesRes, reportesRes, redefinicoesRes] = await Promise.all([
     chamarApiAutenticada("GET", "/admin/usuarios"),
     chamarApiAutenticada("GET", "/admin/convites"),
     chamarApiAutenticada("GET", "/admin/reportes"),
+    chamarApiAutenticada("GET", "/admin/redefinicoes"),
   ]);
 
   if (!usuariosRes.ok || !convitesRes.ok) {
@@ -32,6 +33,9 @@ export async function renderAdmin(container) {
   let convites = convitesRes.dados;
   // reportes de questões (botão ⚠️); se o Worker ainda não tiver a rota, a seção avisa
   const reportes = reportesRes.ok && Array.isArray(reportesRes.dados) ? reportesRes.dados : null;
+  // pedidos de "esqueci minha senha"; null se o Worker ainda não tiver a rota
+  let redefinicoes = redefinicoesRes.ok && Array.isArray(redefinicoesRes.dados) ? redefinicoesRes.dados : null;
+  let codigoGerado = null; // { email, codigo, expiraEm } do último código gerado
 
   function render() {
     const livres = convites.filter((c) => !c.usado_por).length;
@@ -57,6 +61,23 @@ export async function renderAdmin(container) {
               : reportes.length
               ? `<ul class="admin-list">${reportes.map(renderReporte).join("")}</ul>`
               : `<div class="empty-state">Nenhuma questão reportada até agora.</div>`
+          }
+        </section>
+
+        <section class="card" style="margin-bottom:24px;">
+          <h2 style="font-size:var(--fs-lg);">Redefinição de senha${redefinicoes?.length ? ` (${redefinicoes.length})` : ""}</h2>
+          <p class="page-header__desc" style="margin-top:0;">Quem esqueceu a senha pede pela tela de login. Gere o código e mande para a pessoa: ela usa em “Já tenho o código” para criar a senha nova (vale 24 horas, uma vez só). Também dá para gerar pela lista de contas.</p>
+          ${
+            codigoGerado
+              ? `<div class="explanation-box" style="margin-bottom:12px;">Código para <strong>${escapeHtml(codigoGerado.email)}</strong>: <span class="mono" style="font-size:var(--fs-lg);">${escapeHtml(codigoGerado.codigo)}</span> · vale até ${formatarDataHora(codigoGerado.expiraEm)} <button type="button" class="btn btn--secondary btn--sm" id="copiar-redefinicao">Copiar mensagem</button></div>`
+              : ""
+          }
+          ${
+            !redefinicoes
+              ? `<div class="empty-state">Não foi possível carregar os pedidos (o Worker precisa da versão com a rota /admin/redefinicoes).</div>`
+              : redefinicoes.length
+              ? `<ul class="admin-list">${redefinicoes.map(renderRedefinicao).join("")}</ul>`
+              : `<div class="empty-state">Nenhum pedido de redefinição pendente.</div>`
           }
         </section>
 
@@ -115,6 +136,28 @@ export async function renderAdmin(container) {
         feedbackEl.textContent = ok ? `Link do convite ${btn.dataset.copiar} copiado.` : linkConvite(btn.dataset.copiar);
       })
     );
+
+    container.querySelectorAll("[data-redefinir]").forEach((btn) =>
+      btn.addEventListener("click", async () => {
+        const email = btn.dataset.redefinir;
+        if (!confirm(`Gerar um código de redefinição de senha para ${email}? A senha atual continua valendo até a pessoa usar o código.`)) return;
+        btn.disabled = true;
+        const { ok, dados } = await chamarApiAutenticada("POST", "/admin/redefinicoes", { email });
+        if (!ok) {
+          btn.disabled = false;
+          feedbackEl.textContent = dados.erro || "Não foi possível gerar o código (o Worker está atualizado?).";
+          return;
+        }
+        codigoGerado = dados;
+        redefinicoes = (redefinicoes || []).filter((r) => r.email !== email);
+        render();
+      })
+    );
+
+    container.querySelector("#copiar-redefinicao")?.addEventListener("click", async (e) => {
+      const msg = `Seu código para criar uma nova senha no MedConduta: ${codigoGerado.codigo} (vale 24 horas). Na tela de login, toque em "Esqueci minha senha" → "Já tenho o código". ${window.location.origin}${window.location.pathname}`;
+      e.currentTarget.textContent = (await copiar(msg)) ? "Copiado!" : "Copie o código acima";
+    });
 
     container.querySelectorAll("[data-revogar]").forEach((btn) =>
       btn.addEventListener("click", async () => {
@@ -184,8 +227,26 @@ function renderUsuario(u) {
       <div class="admin-list__actions">
         <span class="badge${ativoNosUltimosDias(u, 7) ? " badge--tratamento" : ""}">${ultimoUso ? `Último uso ${tempoRelativo(ultimoUso)}` : "Nunca usou"}</span>
         <span class="badge">${u.respostas} ${u.respostas === 1 ? "questão" : "questões"}</span>
+        <button type="button" class="btn btn--ghost btn--sm" data-redefinir="${escapeHtml(u.email)}">Código de senha</button>
       </div>
     </li>`;
+}
+
+function renderRedefinicao(r) {
+  return `
+    <li class="admin-list__item">
+      <div class="admin-list__main">
+        <span class="admin-list__title">${escapeHtml(r.email)}</span>
+        <span class="admin-list__meta">Pediu em ${formatarDataHora(r.requested_at)}</span>
+      </div>
+      <div class="admin-list__actions">
+        <button type="button" class="btn btn--primary btn--sm" data-redefinir="${escapeHtml(r.email)}">Gerar código</button>
+      </div>
+    </li>`;
+}
+
+function formatarDataHora(iso) {
+  return iso ? new Date(iso).toLocaleString("pt-BR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) : "";
 }
 
 function linkConvite(codigo) {
