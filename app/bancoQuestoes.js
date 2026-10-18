@@ -11,6 +11,11 @@
  * Cópias mescladas de uma mesma questão deixam o id antigo em `aliases`;
  * resolverId() traduz esses ids para que respostas e favoritos gravados antes
  * da mescla continuem apontando para a questão certa.
+ *
+ * Questões repetidas entre cadernos da mesma instituição (a R+ que reaproveita
+ * a questão da R1, às vezes com as alternativas em outra ordem) têm `repetidaDe`:
+ * ficam fora do banco, das contagens e dos sorteios (`registros`), mas continuam
+ * na prova completa de origem (`registrosProvas`).
  */
 import { fetchJsonCached } from "./utils.js";
 import { AREA_POR_CATEGORIA } from "./areas.js";
@@ -37,6 +42,7 @@ function linhaParaRegistro(linha, campos, dic, temaPorId) {
   });
   const tema = temaPorId.get(r.temaId);
   r.anulada = Boolean(r.anulada);
+  r.repetida = Boolean(r.repetida);
   r.tema = tema?.titulo || r.temaId;
   r.especialidade = tema?.categoria || "Outros";
   r.categoria = r.especialidade;
@@ -47,17 +53,18 @@ function linhaParaRegistro(linha, campos, dic, temaPorId) {
 
 /**
  * Carrega (uma vez por sessão) o índice leve. Retorna
- * { registros, porId: Map(id -> registro leve), resolverId(id) }.
+ * { registros, registrosProvas, porId: Map(id -> registro leve), resolverId(id) }.
  */
 export function carregarIndiceBanco() {
   if (!indicePromise) {
     indicePromise = Promise.all([fetchJsonCached(`${BASE}indice.json`), fetchJsonCached("data/temas.json")])
       .then(([indice, temas]) => {
         const temaPorId = new Map(temas.map((t) => [t.id, t]));
-        const registros = indice.linhas.map((l) => linhaParaRegistro(l, indice.campos, indice.dicionarios, temaPorId));
-        const porId = new Map(registros.map((r) => [r.id, r]));
+        const registrosProvas = indice.linhas.map((l) => linhaParaRegistro(l, indice.campos, indice.dicionarios, temaPorId));
+        const registros = registrosProvas.filter((r) => !r.repetida);
+        const porId = new Map(registrosProvas.map((r) => [r.id, r]));
         const aliases = new Map(Object.entries(indice.aliases || {}));
-        return { registros, porId, resolverId: (id) => aliases.get(id) || id };
+        return { registros, registrosProvas, porId, resolverId: (id) => aliases.get(id) || id };
       })
       .catch((err) => {
         indicePromise = null; // permite tentar de novo (ex.: voltou a conexão)
@@ -113,7 +120,7 @@ export async function carregarEspecialidades(especialidades) {
   const alvo = especialidades ? new Set(especialidades) : null;
   const arquivos = [...new Set(registros.filter((r) => !alvo || alvo.has(r.especialidade)).map((r) => r.arquivo))];
   const mapas = await Promise.all(arquivos.map(carregarArquivo));
-  return mapas.flatMap((m) => [...m.values()]);
+  return mapas.flatMap((m) => [...m.values()]).filter((q) => !q.repetidaDe);
 }
 
 /** Completa registros leves (do índice) com o conteúdo, preservando a ordem. */

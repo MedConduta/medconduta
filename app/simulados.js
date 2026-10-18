@@ -48,9 +48,9 @@ function chaveProva(r) {
  * a partir do índice: só questões com instituição e número da questão na prova.
  */
 export async function listarProvasCompletas() {
-  const { registros } = await carregarIndiceBanco();
+  const { registrosProvas } = await carregarIndiceBanco();
   const grupos = new Map();
-  for (const r of registros) {
+  for (const r of registrosProvas) {
     if (!r.instituicao || !r.numero) continue;
     const chave = chaveProva(r);
     const g = grupos.get(chave) || { chave, instituicao: r.instituicao, edicao: String(r.edicao || r.ano), ano: r.ano, prova: r.prova, total: 0, anuladas: 0 };
@@ -65,8 +65,8 @@ export async function listarProvasCompletas() {
 
 /** Questões de uma prova completa, na ordem da prova. Anuladas ficam de fora (não contam na correção). */
 export async function selecionarProvaCompleta(chave) {
-  const { registros } = await carregarIndiceBanco();
-  const daProva = registros.filter((r) => r.instituicao && r.numero && chaveProva(r) === chave).sort((a, b) => a.numero - b.numero);
+  const { registrosProvas } = await carregarIndiceBanco();
+  const daProva = registrosProvas.filter((r) => r.instituicao && r.numero && chaveProva(r) === chave).sort((a, b) => a.numero - b.numero);
   const validas = daProva.filter((r) => !r.anulada);
   const questoes = await completarConteudo(validas);
   return { questoes, anuladas: daProva.filter((r) => r.anulada).map((r) => r.numero) };
