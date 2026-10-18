@@ -35,6 +35,7 @@ import * as flashcards from "./views/flashcards.js";
 import * as revisar from "./views/revisar.js";
 import * as admin from "./views/admin.js";
 import { rodarBackupDiarioSeNecessario } from "./backup.js";
+import { instalarZoomImagens } from "./utils.js";
 
 const mainEl = document.getElementById("main-content");
 const sidebarNavEl = document.getElementById("sidebar-nav");
@@ -178,6 +179,7 @@ function iniciarApp() {
     });
     initBusca(document.getElementById("topbar-busca"));
     initTheme([document.getElementById("theme-toggle")]);
+    instalarZoomImagens();
   }
   initRouter(mainEl);
 
