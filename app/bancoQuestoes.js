@@ -15,7 +15,8 @@
  * Questões repetidas entre cadernos da mesma instituição (a R+ que reaproveita
  * a questão da R1, às vezes com as alternativas em outra ordem) têm `repetidaDe`:
  * ficam fora do banco, das contagens e dos sorteios (`registros`), mas continuam
- * na prova completa de origem (`registrosProvas`).
+ * na prova completa de origem (`registrosProvas`). O mesmo vale para `soNaProva`
+ * (questão que depende do caso da questão anterior).
  */
 import { fetchJsonCached } from "./utils.js";
 import { AREA_POR_CATEGORIA } from "./areas.js";
@@ -120,7 +121,7 @@ export async function carregarEspecialidades(especialidades) {
   const alvo = especialidades ? new Set(especialidades) : null;
   const arquivos = [...new Set(registros.filter((r) => !alvo || alvo.has(r.especialidade)).map((r) => r.arquivo))];
   const mapas = await Promise.all(arquivos.map(carregarArquivo));
-  return mapas.flatMap((m) => [...m.values()]).filter((q) => !q.repetidaDe);
+  return mapas.flatMap((m) => [...m.values()]).filter((q) => !q.repetidaDe && !q.soNaProva);
 }
 
 /** Completa registros leves (do índice) com o conteúdo, preservando a ordem. */

@@ -21,6 +21,8 @@ Formato de cada questão:
   aliases       ids antigos de cópias que foram mescladas nesta questão
   repetidaDe    id da questão original quando esta é a mesma questão reaproveitada em outro caderno da
                 instituição (R+ que repete a R1): fica fora do banco/sorteios, mas aparece na prova completa
+  soNaProva     true quando a questão depende do caso da questão anterior ("paciente da questão anterior"):
+                também fica fora do banco/sorteios e só aparece na prova completa, logo depois da anterior
   revisado, fonte
 """
 import hashlib, json, os, re, sys, unicodedata
@@ -227,7 +229,7 @@ def gerar_indice():
             q["id"], cod("arquivo", nome), cod("temaId", q["temaId"]), cod("instituicao", q.get("instituicao")),
             q.get("ano"), cod("prova", q.get("prova")), q.get("numero"), 1 if q.get("anulada") else 0,
             len(q.get("imagens") or []), cod("origem", q.get("origem")), q.get("edicao"),
-            1 if q.get("repetidaDe") else 0,
+            1 if q.get("repetidaDe") or q.get("soNaProva") else 0,
         ])
         for a in q.get("aliases") or []:
             aliases[a] = q["id"]
