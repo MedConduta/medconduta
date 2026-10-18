@@ -37,7 +37,11 @@ async function chamarAuth(caminho, corpo) {
     throw new Error("Não foi possível conectar ao servidor. Verifique sua internet.");
   }
   const dados = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(dados.erro || `Erro ao autenticar (HTTP ${res.status}).`);
+  if (!res.ok) {
+    const erro = new Error(dados.erro || `Erro ao autenticar (HTTP ${res.status}).`);
+    erro.status = res.status;
+    throw erro;
+  }
   return dados;
 }
 
@@ -70,7 +74,24 @@ export async function chamarApiAutenticada(method, caminho, corpo) {
   return { ok: res.ok, status: res.status, dados };
 }
 
-/** { email, admin } da sessão atual, ou null se indisponível. */
+/** Troca a senha da conta logada (exige a senha atual). */
+export async function trocarSenha(senhaAtual, novaSenha) {
+  const { ok, dados } = await chamarApiAutenticada("POST", "/auth/senha", { senhaAtual, novaSenha });
+  if (!ok) throw new Error(dados.erro || "Não foi possível trocar a senha.");
+}
+
+/** "Esqueci minha senha": registra o pedido para o administrador gerar um código. */
+export async function pedirRedefinicaoSenha(email) {
+  await chamarAuth("/auth/redefinicao/pedir", { email });
+}
+
+/** Cria a senha nova com o código recebido do administrador e já entra. */
+export async function redefinirSenha(email, codigo, novaSenha) {
+  const dados = await chamarAuth("/auth/redefinicao/confirmar", { email, codigo, novaSenha });
+  salvarSessao(dados.token, dados.email);
+}
+
+/** { email, admin, criadoEm } da sessão atual, ou null se indisponível. */
 export async function buscarPerfil() {
   const { ok, dados } = await chamarApiAutenticada("GET", "/auth/me");
   return ok ? dados : null;
