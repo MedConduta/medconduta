@@ -14,7 +14,7 @@ const { chromium } = require("playwright");
 
   await page.goto("http://localhost:8744");
   await page.waitForSelector("#login-email", { timeout: 10000 });
-  await page.click("#login-alternar");
+  await page.click(".login-switch a[data-modo=criar]");
   await page.fill("#login-email", `teste.cards.${Date.now()}@example.com`);
   await page.fill("#login-password", "senha12345");
   await page.click("#login-submit");

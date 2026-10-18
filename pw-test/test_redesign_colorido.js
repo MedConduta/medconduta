@@ -23,7 +23,7 @@ const { chromium } = require("playwright");
   await page.screenshot({ path: "/tmp/claude-0/-home-user-medconduta/189a7ed4-3170-599a-adb3-6689b402ef7e/scratchpad/shot_login.png" });
 
   const email = `teste.cores.${Date.now()}@example.com`;
-  await page.click("#login-alternar");
+  await page.click(".login-switch a[data-modo=criar]");
   await page.fill("#login-email", email);
   await page.fill("#login-password", "senha12345");
   await page.click("#login-submit");

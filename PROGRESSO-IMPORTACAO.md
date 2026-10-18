@@ -51,6 +51,10 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 | 9 | FAMERP | R1 e R+ | — | 2.188 novas (prévia), 131 enriquecidas | idem | publicado (#135) |
 | 10 | PSU-MG | R1 e R+ (inclui 2025.2) | — | 1.365 novas (prévia); 21 excluídas (caso compartilhado do formato 2025, gabaritos divergentes) | idem | publicado (#136) |
 | 11 | SCM-SP | R1 e R+ | 3.390 | 2.396 novas, 248 enriquecidas | 757 de baixa confiança classificadas à mão | publicado (#137) |
+| 12 | SUS-SP | R1 e R+ | 4.064 | 2.902 novas | 960 de baixa confiança à mão | publicado (#138) |
+| 13 | IAMSPE-SP | R1 e R+ | 2.962 | 2.292 novas | 790 à mão | publicado (#139) |
+| 14 | USP-RP | R1 e R+ | 4.275 | 3.793 novas (555 viraram `repetidaDe`) | 1.276 à mão | publicado (#140) |
+| 15 | AMRIGS | R1 e R+ | 2.648 | 1.938 novas, 197 enriquecidas | 608 à mão; 11 reprovadas (7 lacunas perdidas) | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
@@ -60,9 +64,15 @@ Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do
 - `decisoes.json` aceita `"excluir": true` (+ `motivo`) para tirar uma questão específica do lote.
 - Filtro de qualidade reprova "cita imagem/tabela que não veio"; o regex `CITA_IMAGEM` do extrator estava quebrado (`b(` em vez de `(`). 7 questões publicadas sem a imagem citada foram removidas.
 - Corretor: "l" no lugar de "I" maiúsculo ("lsoimunização").
+- `montar_lote.py`: com alternativas genéricas ("Apenas I", "I, II e III") só o enunciado decide o casamento (havia casado questões diferentes); 6 questões publicadas sobrescritas por engano restauradas.
+- Filtro reprova "preencha as lacunas" sem a lacuna no texto (o "____" se perdeu); 8 publicadas removidas.
+- `depende.py`: enunciado curto que só remete ao caso ("Em relação ao quadro clínico, qual a conduta?").
+- Testes de navegador (`pw-test`): seletor de "Criar conta" atualizado para a tela de login nova (#141).
 - `tipo_pela_capa` ignora a capa quando ela traz o começo da 1ª questão em vez do programa.
 
 ### Pendências
+- O filtro "parênteses desbalanceados" tinha falso positivo ("(figura A)"); corrigido no lote 14. Nos lotes 1–13 algumas questões boas ficaram de fora por isso (ver `lotes/<SIGLA>/reprovadas.json`) — reprocessar.
+- Questões que dependem da anterior: `soNaProva` (só na prova completa); detector em `scratchpad/imp/depende.py`.
 - Extrator: caso compartilhado do formato PSU-MG 2025 ("Atenção: o enunciado abaixo corresponde às questões X e Y").
 - 43 pares "parecidos com resposta diferente" (`conflitos_repetidas.json`) para revisar.
 - IA: a rota do Gemini no Worker não exige login. Proposta (adiada pelo usuário): login para usar a IA, cota diária por pessoa (~20), teto global (~800/dia) e cache compartilhado de respostas.
