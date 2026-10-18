@@ -57,7 +57,8 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 | 15 | AMRIGS | R1 e R+ | 2.648 | 1.938 novas, 197 enriquecidas | 608 à mão; 11 reprovadas (7 lacunas perdidas) | publicado (#142) |
 | 16 | UNIFESP | R1 e R+ (discursivas de fora) | 3.919 | 3.086 novas (138 cópias R1/R+ entram como novas e viram `repetidaDe`), 330 enriquecidas | 910 à mão; 8 reprovadas | publicado (#143) |
 | 17 | SES-DF | R1 e R+ (Certo/Errado como 2 alternativas) | 6.056 | 4.800 novas (2.941 Certo/Errado), 189 enriquecidas | 1.635 à mão; 21 reprovadas | publicado (#144) |
-| 18 | SUS-BA | R1 e R+ objetivas (provas discursivas de fora) | 2.097 | 1.467 novas, 45 enriquecidas | 532 à mão; 13 reprovadas | publicado |
+| 18 | SUS-BA | R1 e R+ objetivas (provas discursivas de fora) | 2.097 | 1.467 novas, 45 enriquecidas | 532 à mão; 13 reprovadas | publicado (#145) |
+| 19 | UNICAMP | R1 e R+ objetivas (2ª fase e provas discursivas de fora) | 3.788 | 3.036 novas, 360 enriquecidas | 1.036 à mão; 11 reprovadas | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
@@ -79,6 +80,7 @@ Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do
 - Extrator: gabarito procurado também antes das páginas de respostas discursivas (SUS-BA); caso compartilhado no formato "Situação-Problema: Questões de 4 a 6".
 - Filtro: "pergunta sem o caso" (caso perdido no próprio PDF, ex.: "Indique o diagnóstico desse caso.").
 - `quase_dup`: itens Certo/Errado comparados pela assertiva — o `marcar_repetidas` travava (todos têm as mesmas alternativas).
+- Extrator: grade de gabarito pequena (< 20 questões) aceita quando a página traz "GABARITO"; letra levemente acima da caixa do número (fontes grandes) reconhecida.
 - Testes de navegador (`pw-test`): seletor de "Criar conta" atualizado para a tela de login nova (#141).
 - `tipo_pela_capa` ignora a capa quando ela traz o começo da 1ª questão em vez do programa.
 
