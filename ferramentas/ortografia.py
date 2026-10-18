@@ -98,6 +98,8 @@ class Corretor:
         t = re.sub(r"(\w+)-\s+([a-zà-ú]\w*)", self._hifen, t)
         t = self._pares(t)
         t = re.sub(r"(^|[\s(“\"])([a-zà-ÿ]{3,})\b", self._ligadura_inicio, t)
+        # "I" maiúsculo lido como "l" no OCR ("lsoimunização", "lnvestigar"): não há palavra com "ls"/"ln" no início
+        t = re.sub(r"\bl(?=[sn][a-zà-ú]{2,})", "I", t)
         t = re.sub(r"[ \t]{2,}", " ", t)
         t = re.sub(r"(?<!\() +([,.;:?!)])", r"\1", t)
         return t.strip() if t != orig else orig
