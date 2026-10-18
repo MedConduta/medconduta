@@ -51,6 +51,11 @@ const { chromium } = require("playwright");
   // --- 2) A questão da curva de Langfitt (SES-PE 2019) mostra a imagem no card.
   await page.fill("#filtro-busca", "curva de Langfitt");
   await page.waitForTimeout(500);
+  // sem filtro de especialidade, a busca no enunciado do banco todo é um clique explícito
+  if (await page.$("#questoes-busca-global-btn")) {
+    await page.click("#questoes-busca-global-btn");
+    await page.waitForSelector("#questoes-lista .card .questao-imagem img", { timeout: 30000 });
+  }
   const imgsNoCard = await page.$$eval("#questoes-lista .card .questao-imagem img", (els) => els.length);
   console.log("Card mostra a imagem da questão:", imgsNoCard >= 1);
   await page.waitForFunction(() => {

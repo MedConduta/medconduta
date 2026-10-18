@@ -3,10 +3,13 @@
 Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 - IDs de questões nunca mudam; cópias mescladas guardam os ids absorvidos em `aliases`.
 - `origem` (MedCof/Medway/…) é só interno: sem filtro e sem aparecer na tela.
-- Importação por instituição, **SES-PE por último**. Nenhum lote é publicado sem o usuário conferir a amostra (~30 questões, página HTML).
-- Classificação: classificador TF-IDF (scikit-learn) treinado no banco; só os de baixa confiança vêm para revisão manual.
+- Importação por instituição, **SES-PE por último**. Provas **R1/acesso direto e R+** (Cirurgia, Clínica, Pediatria, GO, Mastologia, Endoscopia); **sem** título de especialista, Revalida, certificados de área e "Autoral" (pedido do usuário, 18/10).
+- Classificação **sem depender do usuário** (pedido de 18/10): classificador automático + a revisão das de baixa confiança feita por mim; o usuário não confere mais tema.
+- Textos passam pelo corretor `ferramentas/ortografia.py` (ligaduras fi/fl perdidas, hifenização, marca-d'água vazada, quebras de linha no meio da frase). Nas questões que já existiam, o texto da prova oficial substitui o do banco.
+- Número da questão não aparece no banco (só serve para ordenar a "Prova completa"); `fonte` não cita o número.
+- Itens Certo/Errado entram como questões de 2 alternativas (decisão do usuário, 18/10).
 - Validação automática por script (gabarito, 4–5 alternativas, imagem citada encontrada, sem duplicata); reprovados → lista de revisão.
-- Service worker: só o índice no pré-cache; especialidades e imagens entram no cache ao abrir. Versão atual: **v126**.
+- Service worker: só o índice no pré-cache; especialidades e imagens entram no cache ao abrir. Versão atual: **v128**.
 - Limites: nenhum arquivo > 50 MB; repositório < 1 GB; se imagens passarem de algumas centenas de MB, avisar antes (Cloudflare R2).
 
 ## Etapa 0 — banco particionado (branch `claude/banco-particionado`)
@@ -25,20 +28,23 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 - Decisão: primeiro lote = ENARE (prova nacional; SES-PE por último)
 - [x] Pipeline em `scratchpad/imp/`: `extrair.py` (formatos "1 -", "1)", número sozinho; alternativas "A)", "(A)", "A-"; páginas em 2 colunas; gabarito em grade) → `montar_lote.py` (cruza com o banco; novas/enriquecer/revisar; classificador) → `decidir.py` (temas manuais) → `aplicar_lote.py` (prévia; `--publicar` grava) → `amostra.py` (página de conferência)
 - Regras: PDFs com "SIMULADO"/"AUTORAL" na capa são excluídos (MedCof mistura simulados próprios com provas reais)
-- [x] Lote 1 ENARE preparado; página de conferência: https://claude.ai/artifact/3a5WUUXF6Ci8ocv5KYAsm4 (veredictos na coleção `veredictos`)
-- [ ] **Aguardando conferência do usuário** para `python aplicar_lote.py ENARE --publicar`
+- [x] Lote 1 ENARE conferido pelo usuário (84 marcações: 18 trocas de tema aplicadas com subtema; 2 conflitos → fica o gabarito do banco; anuladas novas não entram) e publicado
+- [x] Extrator: detecção de 2 colunas pela margem real da coluna direita (corrigiu palavras soltas fora de ordem no ENARE 2024), linha visual reordenada por x, hifenização, ligaduras, palavra solta no fim
+- [x] Corretor aplicado ao banco inteiro: 21.277 questões com alguma correção (3.187 tinham marca-d'água "venda proibida" vazada no texto); ids e demais campos intactos
 
 ## Plataforma
 - [x] Filtro por instituição (tela de Questões) e por ano (já existia)
 - [x] Imagem dentro da questão com zoom (PR #120)
 - [x] "Prova completa" em Simulados: provas reais com numeração (instituição + ano/edição), na ordem, anuladas fora da correção — `pw-test/test_prova_completa.js` (testado com o ENARE aplicado só localmente)
 - [x] Foco no Curso: usa as questões novas automaticamente (filtra por tema via índice)
-- [ ] Flashcards: são um baralho à parte (data/flashcards.json), não leem o banco. **Dúvida para o usuário**: link "praticar questões deste tema" no card, ou gerar cards a partir das questões?
+- [x] Flashcards a partir das questões: botão "Criar flashcard" depois de responder (Questões e Meus Erros; usa a IA para um card enxuto, sem IA monta frente = caso, verso = resposta + comentário); em Flashcards, baralho "Das minhas questões" e "Gerar cards dos meus erros" / "Gerar cards deste tema" (até 20) — `pw-test/test_flashcards_questoes.js`
+- [x] Enunciado respeita quebras de linha que sobraram (itens I, II, III)
+- [x] Prova completa mostra "· R+ Cirurgia" etc. nas provas de R+
 
 ## Lotes
 | Lote | Instituição | Provas | Questões extraídas | Novas | Revisão | Status |
 |---|---|---|---|---|---|---|
-| 1 | ENARE | 2021, 2022, 2023, 2024, 2025 (10 simulados MedCof e 1 "FGV 2024" sem rótulo excluídos) | 500 (23 anuladas) | 382 novas + 116 já existiam (ganham instituição/ano/número) | 52 temas duvidosos; 2 conflitos de gabarito (2022 q91, 2023 q16) | aguardando conferência |
+| 1 | ENARE | 2021, 2022, 2023, 2024, 2025 (10 simulados MedCof e 1 "FGV 2024" sem rótulo excluídos) | 500 (23 anuladas) | 360 novas (q29516–q29875) + 118 já existiam (ganham instituição/ano/número e o texto oficial) | conferido pelo usuário | publicado |
 
 ## Pré-processamento (só automático, nada publicado) — 20 instituições
 `scratchpad/imp/pre_lotes.py` → `scratchpad/imp/status.json` e `lotes/<SIGLA>/`. Total ≈ 19,9 mil extraídas; ≈ 14,6 mil novas; ≈ 4,3 mil já existiam.
@@ -67,8 +73,9 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 
 Pendências técnicas antes desses lotes: suportar os formatos que falharam (UNICAMP, SUS-BA, UNITAU, USP-SP, UNIFESP, IAMSPE); itens Certo/Errado (SES-DF); conferir gabarito da AMRIGS.
 
-## Dúvidas para o usuário
-1. Classificação: no limiar atual (margem 0,5; ~84% de acerto) cerca de 60% das novas caem para decisão manual (~9 mil nas 20 instituições). Opções: (a) manter e classificar à mão (lento/caro); (b) aceitar automaticamente acima de 0,2 (~79% de acerto no tema exato) marcando como "automática — conferir", e só abaixo disso manual; (c) outra.
-2. Flashcards "usando as questões novas": link "praticar questões deste tema" no card, ou gerar cards a partir das questões?
-3. Questões itens Certo/Errado (SES-DF e 698 já no banco com 2 alternativas): manter como questões de 2 alternativas?
-4. Conflitos de gabarito do ENARE (2022 q91 e 2023 q16) — na página de conferência.
+## Decisões do usuário (18/10)
+1. Classificação: não depender dele → automático + minha revisão das de baixa confiança.
+2. Flashcards: gerar cards a partir das questões (feito).
+3. Certo/Errado: manter como 2 alternativas.
+4. Conflitos ENARE: fica o gabarito do banco nos dois.
+5. Sem número da questão no banco; incluir R+; sem título de especialista; atenção a erros de digitação/formatação.

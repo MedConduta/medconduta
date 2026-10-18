@@ -1,6 +1,26 @@
 import { escapeHtml, fetchJsonCached } from "../utils.js";
-import { getFilaRevisao, registrarRevisaoFlashcard, QUALIDADE, BARALHO_SESPE, BARALHO_CURSO } from "../flashcards.js";
+import { getFilaRevisao, registrarRevisaoFlashcard, gerarCardsDeQuestoes, QUALIDADE, BARALHO_SESPE, BARALHO_CURSO, BARALHO_QUESTOES } from "../flashcards.js";
 import { getFocoCurso } from "../focoCurso.js";
+import { getQuestoesEmRevisao } from "../erros.js";
+import { carregarIndiceBanco, obterQuestoes } from "../bancoQuestoes.js";
+
+const CARDS_POR_TEMA = 20;
+
+/** Questões que a pessoa errou (todas) ou, com tema, até 20 do tema — erradas primeiro, depois as mais recentes. */
+async function questoesParaGerarCards(temaId) {
+  const { vencidas, proximas } = await getQuestoesEmRevisao();
+  const erradas = [...vencidas, ...proximas].map((i) => i.questao);
+  if (!temaId) return erradas;
+  const doTema = erradas.filter((q) => q.temaId === temaId);
+  const { registros } = await carregarIndiceBanco();
+  const ids = registros
+    .filter((r) => r.temaId === temaId && !r.anulada && !doTema.some((q) => q.id === r.id))
+    .sort((a, b) => (b.ano || 0) - (a.ano || 0))
+    .slice(0, Math.max(0, CARDS_POR_TEMA - doTema.length))
+    .map((r) => r.id);
+  const porId = await obterQuestoes(ids);
+  return [...doTema, ...ids.map((id) => porId.get(id)).filter(Boolean)];
+}
 
 const CHAVE_NOVOS_POR_SESSAO = "medconduta:flashcards_novos_por_sessao";
 const OPCOES_NOVOS = [10, 20, 30, 50];
@@ -27,7 +47,7 @@ export async function renderFlashcards(container, params, query = {}) {
   const temaIdFiltro = query.tema || null;
   // Com o Curso ativo, o baralho padrão é o do Curso (temas da semana + já estudados).
   const focoCurso = temaIdFiltro ? null : await getFocoCurso().catch(() => null);
-  const baralhosValidos = [BARALHO_SESPE, ...(focoCurso ? [BARALHO_CURSO] : [])];
+  const baralhosValidos = [BARALHO_SESPE, BARALHO_QUESTOES, ...(focoCurso ? [BARALHO_CURSO] : [])];
   let baralho = baralhosValidos.includes(query.baralho) ? query.baralho : focoCurso ? BARALHO_CURSO : "todos";
   let novosPorSessao = lerNovosPorSessao();
   let fila = [];
@@ -91,6 +111,17 @@ export async function renderFlashcards(container, params, query = {}) {
           ${focoCurso ? `<button type="button" class="tag-filter${baralho === BARALHO_CURSO ? " is-active" : ""}" data-baralho="${BARALHO_CURSO}" aria-pressed="${baralho === BARALHO_CURSO}">📘 Curso — semana ${focoCurso.semana}</button>` : ""}
           <button type="button" class="tag-filter${baralho === "todos" ? " is-active" : ""}" data-baralho="todos" aria-pressed="${baralho === "todos"}">Todos os cards</button>
           <button type="button" class="tag-filter${baralho === BARALHO_SESPE ? " is-active" : ""}" data-baralho="${BARALHO_SESPE}" aria-pressed="${baralho === BARALHO_SESPE}">Mais cobrados IAUPE/SES-PE</button>
+          <button type="button" class="tag-filter${baralho === BARALHO_QUESTOES ? " is-active" : ""}" data-baralho="${BARALHO_QUESTOES}" aria-pressed="${baralho === BARALHO_QUESTOES}">Das minhas questões</button>
+        </div>
+
+        <div class="card" style="margin-bottom:20px;display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between;">
+          <p style="margin:0;font-size:var(--fs-sm);color:var(--color-text-secondary);min-width:0;flex:1 1 240px;">${
+            tema
+              ? `Gere cards a partir das questões deste tema: as que você errou primeiro, depois as provas mais recentes (até ${CARDS_POR_TEMA}).`
+              : "Gere cards a partir das questões que você errou: a frente é o caso, o verso é a resposta com o comentário. Também dá para criar um card de qualquer questão logo depois de responder."
+          }</p>
+          <button type="button" class="btn btn--secondary" id="btn-gerar-cards">${tema ? "Gerar cards deste tema" : "Gerar cards dos meus erros"}</button>
+          <p id="gerar-cards-status" role="status" style="margin:0;width:100%;font-size:var(--fs-xs);color:var(--color-text-muted);" hidden></p>
         </div>
 
         <div class="stat-row" style="margin-bottom:24px;">
@@ -120,6 +151,8 @@ export async function renderFlashcards(container, params, query = {}) {
           ]
             .filter(Boolean)
             .join(" + ")}</p>`
+            : baralho === BARALHO_QUESTOES && !total
+            ? `<div class="empty-state"><h2>Nenhum card gerado de questões ainda</h2><p>Use o botão acima, ou "Criar flashcard" depois de responder uma questão.</p></div>`
             : baralho === BARALHO_CURSO && !total
             ? `<div class="empty-state"><h2>Sem flashcards para os temas do Curso ainda</h2><p>Os temas da semana ${focoCurso.semana} ainda não têm cards. Use "Todos os cards" enquanto isso.</p></div>`
             : `<div class="empty-state"><h2>Tudo revisado por hoje ✓</h2><p>Nenhum card vencido agora. Volte mais tarde.</p></div>`
@@ -135,6 +168,30 @@ export async function renderFlashcards(container, params, query = {}) {
         montar();
       })
     );
+
+    container.querySelector("#btn-gerar-cards")?.addEventListener("click", async (e) => {
+      const botao = e.currentTarget;
+      const status = container.querySelector("#gerar-cards-status");
+      botao.disabled = true;
+      status.hidden = false;
+      status.textContent = "Gerando cards...";
+      try {
+        const criados = await gerarCardsDeQuestoes(await questoesParaGerarCards(temaIdFiltro));
+        if (!criados) {
+          status.textContent = temaIdFiltro ? "Essas questões já viraram card." : "Nenhuma questão errada nova para virar card.";
+          botao.disabled = false;
+          return;
+        }
+        baralho = BARALHO_QUESTOES;
+        await montar();
+        const novoStatus = container.querySelector("#gerar-cards-status");
+        novoStatus.hidden = false;
+        novoStatus.textContent = `${criados} card${criados > 1 ? "s" : ""} criado${criados > 1 ? "s" : ""}.`;
+      } catch {
+        status.textContent = "Não foi possível gerar os cards agora. Tente de novo.";
+        botao.disabled = false;
+      }
+    });
 
     container.querySelector("#novos-por-sessao")?.addEventListener("change", (e) => {
       novosPorSessao = Number(e.target.value);
@@ -168,10 +225,10 @@ export async function renderFlashcards(container, params, query = {}) {
         </div>
 
         <div class="card" style="min-height:220px;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:32px;">
-          <p style="font-size:var(--fs-md);font-weight:500;margin:0;">${escapeHtml(card.frente)}</p>
+          <p class="enunciado-texto" style="font-size:var(--fs-md);font-weight:500;margin:0;${card.origem === "questao" && !card.geradoPorIA ? "text-align:left;" : ""}">${escapeHtml(card.frente)}</p>
           ${
             mostrandoVerso
-              ? `<div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--color-border);"><p style="color:var(--color-text-secondary);margin:0;">${escapeHtml(card.verso)}</p></div>`
+              ? `<div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--color-border);"><p class="enunciado-texto" style="color:var(--color-text-secondary);margin:0;${card.origem === "questao" && !card.geradoPorIA ? "text-align:left;" : ""}">${escapeHtml(card.verso)}</p></div>`
               : ""
           }
         </div>
