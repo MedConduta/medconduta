@@ -13,7 +13,8 @@ import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
 import { contarFlashcardsDoTema } from "../flashcards.js";
 import { getAnotacao, salvarAnotacao } from "../anotacoes.js";
 import { montarEditorAnotacao } from "../components/editorAnotacao.js";
-
+
+import { carregarIndiceBanco } from "../bancoQuestoes.js";
 // Fase 12 — ordem de prioridade dos quadrantes (ver prontidao.js): categorias
 // críticas primeiro, tranquilas por último. Curso reordenado pelo mesmo
 // critério que já orienta "O que fazer agora" e o Heatmap de Fraquezas —
@@ -406,7 +407,7 @@ export async function renderDetalhe(container, { id }) {
   const [fluxos, respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes, abasSalvas, anotacaoSalva] = await Promise.all([
     fluxogramasDoTema(tema.id),
     getAll("respostas"),
-    fetchJsonCached("data/questoes.json"),
+    carregarIndiceBanco().then((banco) => banco.registros), // índice leve: aqui só importa o temaId
     getAll("ia_questoes"),
     gerarDiagnostico(),
     temaAdjacentes(tema),

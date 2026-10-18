@@ -28,7 +28,9 @@ const { chromium } = require("playwright");
 
   // --- 1) Busca textual filtra por tema/enunciado (debounce de 300ms).
   await page.fill("#filtro-busca", "hipertensão");
-  await page.waitForTimeout(600);
+  // o conteúdo das questões é baixado por especialidade: espera os cards da busca aparecerem
+  await page.waitForFunction(() => document.querySelector("#questoes-chips")?.textContent.includes("hipertensão") && document.querySelector("#questoes-lista .card .card-enunciado"), null, { timeout: 15000 });
+  await page.waitForTimeout(300);
   const temasAposBusca = await page.$$eval("#questoes-lista .card .badge--accent", (els) => els.map((e) => e.textContent.toLowerCase()));
   const enunciadosAposBusca = await page.$$eval("#questoes-lista .card .card-enunciado", (els) => els.map((e) => e.textContent.toLowerCase()));
   const todosBatem = temasAposBusca.every((t, i) => t.includes("hipertens") || (enunciadosAposBusca[i] || "").includes("hipertens"));

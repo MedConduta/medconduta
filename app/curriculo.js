@@ -14,7 +14,8 @@
 import { fetchJsonCached } from "./utils.js";
 import { getAll, getPref, setPref } from "./db.js";
 import { getAgendaRevisoes, hojeIso, somarDias, diffDias } from "./revisaoCurso.js";
-
+
+import { carregarIndiceBanco } from "./bancoQuestoes.js";
 const PREF_CURSO_INICIO = "curso_inicio_real";
 
 /**
@@ -68,7 +69,7 @@ async function carregarDados({ ancorar = true } = {}) {
   const [curriculoBruto, temas, questoes, progresso, respostas, inicioReal] = await Promise.all([
     fetchJsonCached("data/curriculo.json"),
     fetchJsonCached("data/temas.json"),
-    fetchJsonCached("data/questoes.json"),
+    carregarIndiceBanco().then((banco) => banco.registros), // índice leve: aqui só importa o temaId
     getAll("progresso"),
     getAll("respostas"),
     ancorar ? garantirInicioCurso() : getPref(PREF_CURSO_INICIO, null).then((salvo) => salvo || hojeIso()),

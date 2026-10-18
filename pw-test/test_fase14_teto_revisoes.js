@@ -29,7 +29,8 @@ const { chromium } = require("playwright");
   const totalSeedado = await page.evaluate(async () => {
     const { fetchJsonCached } = await import("/app/utils.js");
     const { setItem } = await import("/app/db.js");
-    const questoes = await fetchJsonCached("data/questoes.json");
+    const { carregarEspecialidades } = await import("/app/bancoQuestoes.js");
+    const questoes = await carregarEspecialidades(["Cardiologia"]);
     const amostra = questoes.slice(0, 30);
     for (const q of amostra) {
       await setItem("respostas", {

@@ -12,7 +12,7 @@ export function escapeHtml(str = "") {
 /**
  * Renderiza uma imagem de estudo (ECG, radiografia etc.) com legenda e fonte.
  * `imagem` é o objeto opcional {url, legenda, fonte} usado em secoes de
- * data/temas.json e em questoes de data/questoes.json. Carregamento é lazy
+ * data/temas.json e em questões do banco (data/questoes/). Carregamento é lazy
  * (não entra no precache do Service Worker) para não pesar o app inteiro.
  */
 export function renderImagemEstudo(imagem) {
@@ -30,7 +30,7 @@ export function renderImagemEstudo(imagem) {
 
 /**
  * Renderiza as imagens de uma questão (campo opcional `imagens` de
- * data/questoes.json: lista de caminhos, ex. "imagens/questoes/sespe/2024-q026-1.webp").
+ * data/questoes/<especialidade>.json: lista de caminhos, ex. "imagens/questoes/sespe/2024-q026-1.webp").
  * Cada imagem é um botão: tocar abre a visualização ampliada (ver instalarZoomImagens).
  */
 export function renderImagensQuestao(imagens) {

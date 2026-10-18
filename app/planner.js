@@ -6,7 +6,8 @@ import { getQuestoesEmRevisao } from "./erros.js";
 import { getAgendaHoje, cursoJaIniciado } from "./curriculo.js";
 import { getFocoCurso } from "./focoCurso.js";
 import { getFilaRevisao, BARALHO_CURSO } from "./flashcards.js";
-
+
+import { carregarIndiceBanco } from "./bancoQuestoes.js";
 const MIN_POR_REVISAO_ERRO = 6; // reler + resolver de novo uma questão já errada
 const MIN_POR_REVISAO_TEMA = 10; // revisão espaçada de um tema do Curso (reler pontos-chave)
 const MIN_POR_FLASHCARDS = 10; // sessão de flashcards
@@ -119,7 +120,7 @@ export async function gerarPlanoDoDia(horasDisponiveis) {
     agendaCurso,
   ] = await Promise.all([
     fetchJsonCached("data/temas.json"),
-    fetchJsonCached("data/questoes.json"),
+    carregarIndiceBanco().then((banco) => banco.registros), // índice leve: aqui só importa o temaId
     getAll("progresso"),
     getAll("respostas"),
     getEstadoPreparo(),

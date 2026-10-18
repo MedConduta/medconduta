@@ -28,7 +28,8 @@ const { chromium } = require("playwright");
 
   // --- 1) Dados: toda questão com "imagens" aponta para arquivos que existem.
   const dados = await page.evaluate(async () => {
-    const qs = await (await fetch("data/questoes.json")).json();
+    const { carregarEspecialidades } = await import("/app/bancoQuestoes.js");
+    const qs = await carregarEspecialidades();
     const comImagem = qs.filter((q) => Array.isArray(q.imagens) && q.imagens.length);
     const faltando = [];
     for (const q of comImagem) {

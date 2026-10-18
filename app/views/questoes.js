@@ -4,6 +4,8 @@ import { registrarResultadoQuestao } from "../erros.js";
 import { askAI } from "../ai.js";
 import {
   carregarIndice,
+  garantirConteudo,
+  garantirConteudoParaBusca,
   filtrar,
   contarPorNivel,
   contadores,
@@ -151,9 +153,9 @@ export async function renderLista(container, _params, query = {}) {
             </select>
           </div>
           <div class="field">
-            <label for="filtro-banca">Banca</label>
+            <label for="filtro-banca">Instituição</label>
             <select id="filtro-banca">
-              <option value="todas" ${bancaInicial === "todas" ? "selected" : ""}>Todas as bancas</option>
+              <option value="todas" ${bancaInicial === "todas" ? "selected" : ""}>Todas as instituições</option>
               ${indice.bancas.map((b) => `<option value="${escapeHtml(b)}" ${b === bancaInicial ? "selected" : ""}>${escapeHtml(b)}</option>`).join("")}
             </select>
           </div>
@@ -384,7 +386,7 @@ export async function renderLista(container, _params, query = {}) {
       chips.push({ label: `Tema: ${titulo}`, remover: () => { filtroTemaId = undefined; } });
     }
     if (filtroBanca.value !== "todas") {
-      chips.push({ label: `Banca: ${filtroBanca.value}`, remover: () => { filtroBanca.value = "todas"; } });
+      chips.push({ label: `Instituição: ${filtroBanca.value}`, remover: () => { filtroBanca.value = "todas"; } });
     }
     if (filtroAno.value !== "todos") {
       chips.push({ label: `Ano: ${filtroAno.value}`, remover: () => { filtroAno.value = "todos"; } });
@@ -719,7 +721,7 @@ export async function renderLista(container, _params, query = {}) {
         </div>
         <div class="list-card__top">
           <span class="badge badge--accent">${escapeHtml(q.tema)}</span>
-          <span class="badge">${escapeHtml(q.banca)} · ${q.ano}</span>
+          <span class="badge">${escapeHtml(q.banca)} · ${q.ano ?? "s/ ano"}</span>
           ${q.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
           ${badgeStatus}
         </div>
@@ -868,12 +870,28 @@ export async function renderLista(container, _params, query = {}) {
     `;
   }
 
-  function renderPagina() {
+  // Cada renderização tem um número; se o usuário mudar de filtro/página
+  // enquanto o conteúdo baixa, a renderização antiga é descartada.
+  let renderAtual = 0;
+
+  async function renderPagina() {
+    const meu = ++renderAtual;
     const totalPaginas = Math.max(1, Math.ceil(idsFiltrados.length / tamanhoLote));
     if (paginaAtual > totalPaginas) paginaAtual = totalPaginas;
     if (paginaAtual < 1) paginaAtual = 1;
     const inicio = (paginaAtual - 1) * tamanhoLote;
     const lote = idsFiltrados.slice(inicio, inicio + tamanhoLote);
+    if (lote.some((id) => indice.questoesPorId.get(id)?.completa === false)) {
+      listaEl.innerHTML = Array.from({ length: Math.min(3, lote.length) }, skeletonCard).join("");
+      try {
+        await garantirConteudo(indice, lote);
+      } catch {
+        if (meu !== renderAtual) return;
+        listaEl.innerHTML = `<div class="empty-state"><p>Não foi possível carregar estas questões. Verifique sua conexão.</p></div>`;
+        return;
+      }
+      if (meu !== renderAtual) return;
+    }
     listaEl.innerHTML = lote.map(renderCard).join("");
     lote.forEach(ligarEventosCard);
     atualizarContagem();
@@ -914,8 +932,46 @@ export async function renderLista(container, _params, query = {}) {
     if (novaURL !== window.location.hash) history.replaceState(null, "", novaURL);
   }
 
-  function refazerFiltro(resetarPagina = true) {
-    idsFiltrados = filtrar(indice, filtrosAtuais());
+  // Busca por texto: com especialidade/tema escolhido, baixa só aquela especialidade e
+  // procura também no enunciado. Sem esse filtro, procura no nome do tema e nas questões
+  // já abertas; baixar o banco inteiro para buscar no enunciado é uma escolha explícita.
+  let buscaGlobalLiberada = false;
+  const buscaGlobalEl = document.createElement("div");
+  buscaGlobalEl.className = "questoes-busca-global";
+  contagemEl.after(buscaGlobalEl);
+
+  function renderAvisoBusca(filtros) {
+    const escopoRestrito = Boolean(filtros.especialidade || filtros.temaId);
+    if (!filtros.busca || escopoRestrito || buscaGlobalLiberada) {
+      buscaGlobalEl.innerHTML = "";
+      return;
+    }
+    buscaGlobalEl.innerHTML = `
+      <p style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-top:4px;">
+        Buscando no nome do tema e nas questões já abertas. Escolha uma especialidade para buscar no enunciado dela, ou
+        <button type="button" class="btn btn--ghost" id="questoes-busca-global-btn" style="padding:0;min-height:auto;font-size:inherit;">buscar no enunciado de todo o banco</button>.
+      </p>`;
+    buscaGlobalEl.querySelector("#questoes-busca-global-btn").addEventListener("click", () => {
+      buscaGlobalLiberada = true;
+      refazerFiltro();
+    });
+  }
+
+  async function refazerFiltro(resetarPagina = true) {
+    const filtros = filtrosAtuais();
+    const escopoRestrito = Boolean(filtros.especialidade || filtros.temaId);
+    if (filtros.busca && (escopoRestrito || buscaGlobalLiberada)) {
+      const meu = ++renderAtual;
+      contagemEl.textContent = "Carregando questões para a busca...";
+      try {
+        await garantirConteudoParaBusca(indice, escopoRestrito ? filtros : {});
+      } catch {
+        /* sem conexão: busca só no que já foi baixado (e no nome do tema) */
+      }
+      if (meu !== renderAtual) return;
+    }
+    renderAvisoBusca(filtros);
+    idsFiltrados = filtrar(indice, filtros);
     if (resetarPagina) paginaAtual = 1;
     if (!idsFiltrados.length) {
       listaEl.innerHTML = `
