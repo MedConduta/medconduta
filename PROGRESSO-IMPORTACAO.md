@@ -55,7 +55,8 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 | 13 | IAMSPE-SP | R1 e R+ | 2.962 | 2.292 novas | 790 à mão | publicado (#139) |
 | 14 | USP-RP | R1 e R+ | 4.275 | 3.793 novas (555 viraram `repetidaDe`) | 1.276 à mão | publicado (#140) |
 | 15 | AMRIGS | R1 e R+ | 2.648 | 1.938 novas, 197 enriquecidas | 608 à mão; 11 reprovadas (7 lacunas perdidas) | publicado (#142) |
-| 16 | UNIFESP | R1 e R+ (discursivas de fora) | 3.919 | 3.086 novas (138 cópias R1/R+ entram como novas e viram `repetidaDe`), 330 enriquecidas | 910 à mão; 8 reprovadas | publicado |
+| 16 | UNIFESP | R1 e R+ (discursivas de fora) | 3.919 | 3.086 novas (138 cópias R1/R+ entram como novas e viram `repetidaDe`), 330 enriquecidas | 910 à mão; 8 reprovadas | publicado (#143) |
+| 17 | SES-DF | R1 e R+ (Certo/Errado como 2 alternativas) | 6.056 | 4.800 novas (2.941 Certo/Errado), 189 enriquecidas | 1.635 à mão; 21 reprovadas | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
@@ -70,13 +71,17 @@ Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do
 - `depende.py`: enunciado curto que só remete ao caso ("Em relação ao quadro clínico, qual a conduta?").
 - `montar_lote.py`: questão do banco casada com várias do lote (mesmo caderno na R1 e na R+): se todas são cópias fiéis, a 1ª (R1, ano mais antigo) enriquece e as demais entram como novas com o tema do banco (`marcar_repetidas` as deixa só na prova completa); antes iam todas para revisão.
 - Filtro: "mostrada em anexo" sem imagem; `depende.py`: "caso clínico anterior".
+- Itens Certo/Errado (Cebraspe): alternativas "Certo." / "Errado." (formato dos 698 já existentes) e a assertiva em linha própria; no casamento com o banco, na deduplicação do lote e no `marcar_repetidas` o fim do enunciado (a assertiva) decide, porque vários itens dividem o mesmo caso.
+- Extrator: caso compartilhado ("Atenção: Caso clínico para responder às questões de 6 a 8.") vai para o início de cada questão do grupo, em vez de grudar na última alternativa da anterior; quando o caso está escrito dentro da 1ª questão, as seguintes recebem esse texto sem a pergunta final. Resolve também o formato PSU-MG 2025 (reprocessar).
+- Filtro: "dois casos no mesmo enunciado" e "trecho repetido" (PDFs da SES-DF 2024 com casos colados); `depende.py`: perguntas curtas que remetem a "caso clínico mencionado", "dessa paciente".
+- SES-DF R+ Medicina Paliativa 2021/2022 (229 itens Certo/Errado sem alternativas impressas e com o caso deslocado) ficou de fora.
 - Testes de navegador (`pw-test`): seletor de "Criar conta" atualizado para a tela de login nova (#141).
 - `tipo_pela_capa` ignora a capa quando ela traz o começo da 1ª questão em vez do programa.
 
 ### Pendências
 - O filtro "parênteses desbalanceados" tinha falso positivo ("(figura A)"); corrigido no lote 14. Nos lotes 1–13 algumas questões boas ficaram de fora por isso (ver `lotes/<SIGLA>/reprovadas.json`) — reprocessar.
 - Questões que dependem da anterior: `soNaProva` (só na prova completa); detector em `scratchpad/imp/depende.py`.
-- Extrator: caso compartilhado do formato PSU-MG 2025 ("Atenção: o enunciado abaixo corresponde às questões X e Y").
+- PSU-MG: reprocessar com o extrator novo (caso compartilhado do formato 2025) para recuperar as 21 excluídas.
 - 43 pares "parecidos com resposta diferente" (`conflitos_repetidas.json`) para revisar.
 - IA: a rota do Gemini no Worker não exige login. Proposta (adiada pelo usuário): login para usar a IA, cota diária por pessoa (~20), teto global (~800/dia) e cache compartilhado de respostas.
 - Admin: ADMIN_EMAILS definido (2 contas); tabela `invites` criada no D1 — o cadastro agora exige convite.
