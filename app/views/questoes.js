@@ -19,6 +19,7 @@ import {
 import { icon } from "../components/icons.js";
 import { getFocoCurso } from "../focoCurso.js";
 import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
+import { renderBotaoCriarCard, ligarBotaoCriarCard } from "../flashcards.js";
 
 function skeletonCard() {
   return `
@@ -725,7 +726,7 @@ export async function renderLista(container, _params, query = {}) {
           ${q.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
           ${badgeStatus}
         </div>
-        <p class="card-enunciado" style="font-weight:500;margin:12px 0;">${escapeHtml(q.enunciado)}</p>
+        <p class="card-enunciado enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtml(q.enunciado)}</p>
         ${renderImagemEstudo(q.imagem)}
         ${renderImagensQuestao(q.imagens)}
         <div class="opcoes" data-qid="${q.id}">
@@ -778,10 +779,12 @@ export async function renderLista(container, _params, query = {}) {
             <div class="comentario-extra">
               <button type="button" class="btn btn--ghost" style="padding:4px 0;min-height:auto;font-size:var(--fs-xs);">Comentário</button>
             </div>
+            ${renderBotaoCriarCard()}
             ${!acertou ? renderSeletorMotivoErro() : ""}
           </div>
         `;
         ligarBotaoComentarioExtra(resultadoEl.querySelector(".comentario-extra"), q);
+        ligarBotaoCriarCard(resultadoEl, q);
         const respondidoEm = new Date().toISOString();
         const respostaId = `${q.id}-${Date.now()}`;
         await setItem("respostas", {

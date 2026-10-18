@@ -670,6 +670,11 @@ body.zoom-imagem-aberto { overflow: hidden; }
 
 /* ---------- Questões ---------- */
 
+/* Enunciado: respeita as quebras de linha que sobraram (itens I, II, III; parágrafos) */
+.enunciado-texto {
+  white-space: pre-line;
+}
+
 .question-option {
   display: flex;
   gap: var(--space-3);

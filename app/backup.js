@@ -27,6 +27,7 @@ const STORES_BACKUP = [
   "simulados", // simulados.js
   "srs_questoes", // erros.js
   "srs_flashcards", // flashcards.js
+  "flashcards_questoes", // flashcards.js — cards gerados a partir das questões
   "anotacoes", // anotacoes.js
   "questoes_favoritas", // favoritos.js
   "revisoes_curso", // revisaoCurso.js

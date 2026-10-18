@@ -22,9 +22,10 @@ const { chromium } = require("playwright");
   await page.waitForSelector("#sidebar-nav a", { timeout: 15000 });
   await page.waitForTimeout(800);
 
+  // anuladas ficam fora da lista de Questões
   const totalCuradas = await page.evaluate(async () => {
-    const res = await fetch("data/questoes/indice.json");
-    return (await res.json()).total;
+    const { carregarIndiceBanco } = await import("/app/bancoQuestoes.js");
+    return (await carregarIndiceBanco()).registros.filter((r) => !r.anulada).length;
   });
 
   await page.evaluate(() => {

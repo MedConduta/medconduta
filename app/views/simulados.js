@@ -14,6 +14,11 @@ import { carregarFavoritos, alternarFavorito } from "../favoritos.js";
 import { icon } from "../components/icons.js";
 import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
 
+/** " · R+ Cirurgia" para provas de R+; nada para R1/acesso direto (o padrão). */
+function rotuloRMais(prova) {
+  return prova && prova.startsWith("R+") ? ` · ${escapeHtml(prova.replace(" — ", " "))}` : "";
+}
+
 export async function renderSimulados(container) {
   let estado = "config"; // config | rodando | resultado
   let tamanhoEscolhido = TAMANHO_PADRAO;
@@ -63,7 +68,7 @@ export async function renderSimulados(container) {
               <label for="simulado-prova">Prova</label>
               <select id="simulado-prova">
                 ${provas
-                  .map((p) => `<option value="${escapeHtml(p.chave)}" ${p.chave === provaEscolhida ? "selected" : ""}>${escapeHtml(p.instituicao)} ${escapeHtml(p.edicao)} — ${p.total - p.anuladas} questões${p.anuladas ? ` (${p.anuladas} anulada${p.anuladas > 1 ? "s" : ""} fora)` : ""} · ~${formatarDuracaoAprox((p.total - p.anuladas) * MIN_POR_QUESTAO)}</option>`)
+                  .map((p) => `<option value="${escapeHtml(p.chave)}" ${p.chave === provaEscolhida ? "selected" : ""}>${escapeHtml(p.instituicao)} ${escapeHtml(p.edicao)}${rotuloRMais(p.prova)} — ${p.total - p.anuladas} questões${p.anuladas ? ` (${p.anuladas} anulada${p.anuladas > 1 ? "s" : ""} fora)` : ""} · ~${formatarDuracaoAprox((p.total - p.anuladas) * MIN_POR_QUESTAO)}</option>`)
                   .join("")}
               </select>
             </div>`
@@ -111,8 +116,8 @@ export async function renderSimulados(container) {
       const { questoes: daProva, anuladas } = await selecionarProvaCompleta(provaEscolhida);
       questoes = daProva;
       categoriasEstrategicas = [];
-      const [instituicao, edicao] = provaEscolhida.split("|");
-      provaAtual = { instituicao, edicao, anuladas };
+      const [instituicao, edicao, prova] = provaEscolhida.split("|");
+      provaAtual = { instituicao, edicao, prova, anuladas };
       tamanhoEscolhido = questoes.length;
     } else if (tipoEscolhido === "estrategico") {
       const resultado = await selecionarQuestoesSimuladoEstrategico(tamanhoEscolhido);
@@ -148,7 +153,7 @@ export async function renderSimulados(container) {
         <div class="page-header">
           <div class="page-header__eyebrow">${
             provaAtual
-              ? `Prova completa ${escapeHtml(provaAtual.instituicao)} ${escapeHtml(provaAtual.edicao)} — Questão ${questao.numero} (${indiceAtual + 1} de ${questoes.length})`
+              ? `Prova completa ${escapeHtml(provaAtual.instituicao)} ${escapeHtml(provaAtual.edicao)}${rotuloRMais(provaAtual.prova)} — Questão ${questao.numero} (${indiceAtual + 1} de ${questoes.length})`
               : `Simulado — Questão ${indiceAtual + 1} de ${questoes.length}`
           }</div>
           <h1 id="simulado-timer" style="font-variant-numeric:tabular-nums;">${formatarTempo(segundosRestantes)}</h1>
@@ -171,7 +176,7 @@ export async function renderSimulados(container) {
             <span class="badge badge--accent">${escapeHtml(questao.tema)}</span>
             <span class="badge">${escapeHtml(questao.banca)} · ${questao.ano ?? "s/ ano"}</span>
           </div>
-          <p style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
+          <p class="enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
           ${renderImagensQuestao(questao.imagens)}
           <div class="opcoes">
             ${questao.alternativas
@@ -278,7 +283,7 @@ export async function renderSimulados(container) {
                   ${icon("bookmark", { size: 18 })}
                 </button>
               </div>
-              <p style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
+              <p class="enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
               ${renderImagensQuestao(questao.imagens)}
               <div class="opcoes">
                 ${questao.alternativas

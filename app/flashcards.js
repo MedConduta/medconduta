@@ -7,6 +7,7 @@
 import { getAll, getItem, setItem } from "./db.js";
 import { fetchJsonCached } from "./utils.js";
 import { revisar, estaVencido, diasAteVencer } from "./sm2.js";
+import { askAIJson } from "./ai.js";
 
 const STORE_SRS_FLASHCARDS = "srs_flashcards";
 
@@ -16,8 +17,102 @@ export const QUALIDADE = {
   facil: 5,
 };
 
+/** Cards que a pessoa gerou a partir de questões (por conta, no servidor). */
+const STORE_CARDS_QUESTOES = "flashcards_questoes";
+
+/** Baralho fixo (data/flashcards.json) + cards gerados a partir das questões. */
 export async function todosOsFlashcards() {
-  return fetchJsonCached("data/flashcards.json");
+  const [fixos, gerados] = await Promise.all([fetchJsonCached("data/flashcards.json"), getAll(STORE_CARDS_QUESTOES)]);
+  return [...fixos, ...gerados];
+}
+
+const ENUNCIADO_NEGATIVO = /\b(incorreta|errada|falsa|exceto|n[ãa]o\s+(?:[ée]|est[áa]|corresponde|representa|se\s+aplica))\b/i;
+
+/**
+ * Card "de bolso" montado só com os dados da questão, sem IA: frente = enunciado
+ * (avisando quando a pergunta pede a alternativa INCORRETA); verso = alternativa
+ * correta + comentário original, quando ele diz algo além do gabarito.
+ */
+export function montarCardDeQuestao(q) {
+  const letra = String.fromCharCode(65 + q.correta);
+  const negativa = ENUNCIADO_NEGATIVO.test(q.enunciado.slice(-220));
+  const comentario = (q.comentario || "").trim();
+  const comentarioUtil = comentario && !/^gabarito:?\s*alternativa\s*[a-e]\.?$/i.test(comentario) && !/^quest[ãa]o anulada/i.test(comentario);
+  return {
+    id: `q:${q.id}`,
+    questaoId: q.id,
+    temaId: q.temaId,
+    banca: q.banca && q.ano ? `${q.banca} ${q.ano}` : q.banca || undefined,
+    frente: negativa ? `${q.enunciado}\n\n(Qual alternativa é a exceção/incorreta?)` : q.enunciado,
+    verso: `${letra}) ${q.alternativas[q.correta]}${comentarioUtil ? `\n\n${comentario.slice(0, 600)}` : ""}`,
+    origem: "questao",
+    criadoEm: new Date().toISOString(),
+  };
+}
+
+/**
+ * Pede à IA um card enxuto (o ponto-chave que a questão cobra); se a IA falhar,
+ * fica o card montado com os dados da questão.
+ */
+export async function gerarCardDeQuestaoComIA(q) {
+  const base = montarCardDeQuestao(q);
+  try {
+    const letras = q.alternativas.map((_, i) => String.fromCharCode(65 + i));
+    const r = await askAIJson({
+      pergunta:
+        'Transforme esta questão de residência médica em UM flashcard de revisão. A frente é uma pergunta curta e direta sobre o conceito-chave que a questão cobra (sem copiar o caso inteiro); o verso é a resposta objetiva, em até 3 linhas. Responda só com JSON: {"frente": "...", "verso": "..."}',
+      contexto: `Tema: ${q.tema}\nEnunciado: ${q.enunciado}\nAlternativas:\n${q.alternativas.map((a, i) => `${letras[i]}) ${a}`).join("\n")}\nCorreta: ${letras[q.correta]}\nComentário: ${q.comentario || ""}`,
+      tarefa: "gerar um flashcard de revisão a partir de uma questão de residência médica",
+    });
+    if (r && typeof r.frente === "string" && typeof r.verso === "string" && r.frente.trim() && r.verso.trim()) {
+      return { ...base, frente: r.frente.trim(), verso: r.verso.trim(), geradoPorIA: true };
+    }
+  } catch {
+    /* sem IA (offline/limite): vale o card montado com os dados da questão */
+  }
+  return base;
+}
+
+export async function salvarCardDeQuestao(card) {
+  await setItem(STORE_CARDS_QUESTOES, card);
+  return card;
+}
+
+/** Botão "Criar flashcard" mostrado depois de responder uma questão (Questões, Meus Erros). */
+export function renderBotaoCriarCard() {
+  return `<div class="criar-card"><button type="button" class="btn btn--ghost" style="padding:4px 0;min-height:auto;font-size:var(--fs-xs);">＋ Criar flashcard</button></div>`;
+}
+
+export function ligarBotaoCriarCard(rootEl, q) {
+  const wrap = rootEl?.querySelector(".criar-card");
+  const btn = wrap?.querySelector("button");
+  if (!btn) return;
+  btn.addEventListener("click", async () => {
+    btn.disabled = true;
+    btn.textContent = "Criando card...";
+    try {
+      const card = await salvarCardDeQuestao(await gerarCardDeQuestaoComIA(q));
+      wrap.innerHTML = `<p style="margin:4px 0 0;font-size:var(--fs-xs);color:var(--color-success);">✓ Card criado no baralho "Das minhas questões" — <a href="#/residencia/flashcards?baralho=questoes">ver flashcards</a></p>`;
+      return card;
+    } catch {
+      btn.disabled = false;
+      btn.textContent = "＋ Criar flashcard";
+    }
+  });
+}
+
+/** Ids das questões que já viraram card — para não duplicar. */
+export async function questoesComCard() {
+  const gerados = await getAll(STORE_CARDS_QUESTOES);
+  return new Set(gerados.map((c) => c.questaoId));
+}
+
+/** Gera (sem IA, para caber em lote) cards das questões que ainda não têm; devolve quantos criou. */
+export async function gerarCardsDeQuestoes(questoes) {
+  const jaTem = await questoesComCard();
+  const novas = questoes.filter((q) => q && !jaTem.has(q.id) && Number.isInteger(q.correta));
+  for (const q of novas) await salvarCardDeQuestao(montarCardDeQuestao(q));
+  return novas.length;
 }
 
 export async function registrarRevisaoFlashcard(cardId, qualidade) {
@@ -31,6 +126,8 @@ export async function registrarRevisaoFlashcard(cardId, qualidade) {
 export const BARALHO_SESPE = "sespe";
 /** Baralho do Curso: temas da semana atual + temas do Curso já estudados (ver focoCurso.js). */
 export const BARALHO_CURSO = "curso";
+/** Baralho dos cards gerados a partir das questões que a pessoa escolheu ou errou. */
+export const BARALHO_QUESTOES = "questoes";
 
 function ehDoBaralhoSesPe(card) {
   return card.banca === "IAUPE/SES-PE";
@@ -62,6 +159,7 @@ export async function getFilaRevisao({ temaId, baralho, temaIdsCurso, temaIdsPri
   let filtrados = temaId ? cards.filter((c) => c.temaId === temaId) : cards;
   if (baralho === BARALHO_SESPE) filtrados = filtrados.filter(ehDoBaralhoSesPe);
   if (baralho === BARALHO_CURSO && temaIdsCurso) filtrados = filtrados.filter((c) => temaIdsCurso.has(c.temaId));
+  if (baralho === BARALHO_QUESTOES) filtrados = filtrados.filter((c) => c.origem === "questao");
 
   const itens = filtrados.map((card) => ({ card, estado: srsMap.get(card.id) ?? null }));
   const vencidos = itens.filter((i) => estaVencido(i.estado));
