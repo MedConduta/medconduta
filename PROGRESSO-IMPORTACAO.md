@@ -79,7 +79,8 @@ Reextração + `montar_lote`; só entram as questões que ainda não estavam pub
 | UERJ | 7 novas | 111 itens de PDFs sem gabarito/alternativas legíveis continuam de fora | publicado (#160) |
 | UFRJ | 21 novas | 1 excluída (alternativas embaralhadas) | publicado (#161) |
 | HIAE-SP | 13 novas | — | publicado (#162) |
-| SES-RJ | 31 novas | itens "analise as assertivas… Quais estão corretas?" que o filtro antigo reprovava | publicado |
+| SES-RJ | 31 novas | itens "analise as assertivas… Quais estão corretas?" que o filtro antigo reprovava | publicado (#163) |
+| ENARE | ~3.225 novas: as provas R+ (2022–2026) nunca tinham sido importadas — o lote 1 só tinha R1 | 1.062 temas classificados à mão; rótulos de programa padronizados ("Neuro Pediatria" → "Neuropediatria" etc.); filtro passa a reprovar "preencha a lacuna" sem a lacuna | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
