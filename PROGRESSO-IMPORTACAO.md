@@ -88,7 +88,8 @@ Escolha do usuário: só as maiores. Corte: HCPA-RS, AMP, UEPA, PUC-SP Sorocaba,
 | Instituição | Extraídas | Novas | À mão | Status |
 |---|---|---|---|---|
 | HCPA-RS | 2.094 | 1.507 novas, 233 enriquecidas | 484 | publicado (#166) |
-| AMP-PR | 2.248 | 1.612 novas, 200 enriquecidas (25 conflitos para revisão; 373 duplicadas no próprio acervo) | 550 | publicado |
+| AMP-PR | 2.248 | 1.612 novas, 200 enriquecidas (25 conflitos para revisão; 373 duplicadas no próprio acervo) | 550 | publicado (#167) |
+| UEPA | 2.439 | 1.863 novas, 99 enriquecidas (46 conflitos para revisão; 378 duplicadas no próprio acervo); 433 palavras grudadas do PDF separadas (`grudadas.py`) | 525 | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
