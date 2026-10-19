@@ -72,7 +72,8 @@ Reextração + `montar_lote`; só entram as questões que ainda não estavam pub
 | ABC-SP | 24 novas | 2 com OCR corrigido (hepatite "6"→B; "1-1"→"1-I"); 1 excluída (lacunas perdidas) | publicado (#153) |
 | UNESP | 21 novas | 1 excluída (depende do caso anterior, alternativa com lixo) | publicado (#154) |
 | SCM-SP | 17 novas | — | publicado (#155) |
-| SUS-SP | 16 novas | — | publicado |
+| SUS-SP | 16 novas | — | publicado (#156) |
+| IAMSPE-SP | 17 novas | 120 itens de PDFs sem gabarito/alternativas legíveis continuam de fora | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
