@@ -75,7 +75,8 @@ Reextração + `montar_lote`; só entram as questões que ainda não estavam pub
 | SUS-SP | 16 novas | — | publicado (#156) |
 | IAMSPE-SP | 17 novas | 120 itens de PDFs sem gabarito/alternativas legíveis continuam de fora | publicado (#157) |
 | PSU-MG | ~148 novas (provas R+ 2019–2023 que tinham ficado de fora; 17 das 21 excluídas do formato 2025 agora vêm com o caso completo) | 4 seguem excluídas: gabarito divergente entre R1 e R+ (2), gabarito duvidoso (1), caso de outra questão colado (1); 134 das recuperadas são cópias entre provas e viraram `repetidaDe` | publicado (#158) |
-| SURCE | 4 novas | — | publicado |
+| SURCE | 4 novas | — | publicado (#159) |
+| UERJ | 7 novas | 111 itens de PDFs sem gabarito/alternativas legíveis continuam de fora | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
