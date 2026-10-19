@@ -78,7 +78,8 @@ Reextração + `montar_lote`; só entram as questões que ainda não estavam pub
 | SURCE | 4 novas | — | publicado (#159) |
 | UERJ | 7 novas | 111 itens de PDFs sem gabarito/alternativas legíveis continuam de fora | publicado (#160) |
 | UFRJ | 21 novas | 1 excluída (alternativas embaralhadas) | publicado (#161) |
-| HIAE-SP | 13 novas | — | publicado |
+| HIAE-SP | 13 novas | — | publicado (#162) |
+| SES-RJ | 31 novas | itens "analise as assertivas… Quais estão corretas?" que o filtro antigo reprovava | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
