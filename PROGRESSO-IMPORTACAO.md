@@ -69,7 +69,8 @@ Reextração + `montar_lote`; só entram as questões que ainda não estavam pub
 | Lote | Recuperadas | Observação | Status |
 |---|---|---|---|
 | FAMERP | 39 novas | 14 itens que dependem da questão anterior entram só na prova completa; 1 excluída (texto duplicado no PDF) | publicado (#152) |
-| ABC-SP | 23 novas | 2 com OCR corrigido (hepatite "6"→B; "1-1"→"1-I") | publicado |
+| ABC-SP | 24 novas | 2 com OCR corrigido (hepatite "6"→B; "1-1"→"1-I"); 1 excluída (lacunas perdidas) | publicado (#153) |
+| UNESP | 21 novas | 1 excluída (depende do caso anterior, alternativa com lixo) | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
