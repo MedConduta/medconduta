@@ -59,11 +59,14 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 | 17 | SES-DF | R1 e R+ (Certo/Errado como 2 alternativas) | 6.056 | 4.800 novas (2.941 Certo/Errado), 189 enriquecidas | 1.635 à mão; 21 reprovadas | publicado (#144) |
 | 18 | SUS-BA | R1 e R+ objetivas (provas discursivas de fora) | 2.097 | 1.467 novas, 45 enriquecidas | 532 à mão; 13 reprovadas | publicado (#145) |
 | 19 | UNICAMP | R1 e R+ objetivas (2ª fase e provas discursivas de fora) | 3.788 | 3.036 novas, 360 enriquecidas | 1.036 à mão; 11 reprovadas | publicado (#146) |
-| 20 | UNITAU | R1 e R+ | 1.105 | 831 novas, 64 enriquecidas | 265 à mão; 5 reprovadas | publicado |
+| 20 | UNITAU | R1 e R+ | 1.105 | 831 novas, 64 enriquecidas | 265 à mão; 5 reprovadas | publicado (#147) |
+| 21 | USP-SP | R1 e R+ (provas só de gabarito/discursivas de fora) | 7.150 | 5.088 novas, 211 enriquecidas | 1.908 à mão; 29 reprovadas; 26 excluídas na revisão (questão que depende de caso/lista ausente) | publicado |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
 ### Melhorias do pipeline (18/10)
+- Extrator remove o aviso da MedCof "Obs.: a foto apresentada também está com baixa resolução…" e a marca "MedCof" no fim do texto (11 publicadas corrigidas).
+- Rótulos de prova padronizados (`rotulo_padrao` no extrator): "Prova Ii" → "(prova II)", "Pediatrica" → "Pediátrica", "Médula" → "Medula" etc.; 518 publicadas corrigidas.
 - `repetidaDe`: questão da R+ que repete a da R1 da mesma instituição (às vezes com alternativas embaralhadas) sai do banco/sorteios e fica só na prova completa (PR #133). `scratchpad/imp/marcar_repetidas.py` roda a cada publicação; pares com resposta correta diferente ficam em `conflitos_repetidas.json` para revisão.
 - Trava "adulto em tema pediátrico" no `aplicar_lote.py` (bloqueia a publicação até decidir com `forcar`); 24 questões já publicadas corrigidas (PR #132).
 - `decisoes.json` aceita `"excluir": true` (+ `motivo`) para tirar uma questão específica do lote.
