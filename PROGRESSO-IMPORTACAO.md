@@ -61,7 +61,7 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 | 19 | UNICAMP | R1 e R+ objetivas (2ª fase e provas discursivas de fora) | 3.788 | 3.036 novas, 360 enriquecidas | 1.036 à mão; 11 reprovadas | publicado (#146) |
 | 20 | UNITAU | R1 e R+ | 1.105 | 831 novas, 64 enriquecidas | 265 à mão; 5 reprovadas | publicado (#147) |
 | 21 | USP-SP | R1 e R+ (provas só de gabarito/discursivas de fora) | 7.150 | 5.088 novas, 211 enriquecidas | 1.908 à mão; 29 reprovadas; 26 excluídas na revisão (questão que depende de caso/lista ausente) | publicado (#148) |
-| 22 | SES-PE | R1 e R+ | 3.871 | 2.239 novas, 1.039 enriquecidas | 662 à mão; 20 reprovadas; 2 excluídas na revisão; 63 com gabarito divergente do banco ficaram de fora | publicado |
+| 22 | SES-PE | R1 e R+ | 3.871 | 2.239 novas, 1.039 enriquecidas | 662 à mão; 20 reprovadas; 2 excluídas na revisão; 63 com gabarito divergente do banco ficaram de fora | publicado (#149) |
 
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
