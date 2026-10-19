@@ -82,6 +82,13 @@ Reextração + `montar_lote`; só entram as questões que ainda não estavam pub
 | SES-RJ | 31 novas | itens "analise as assertivas… Quais estão corretas?" que o filtro antigo reprovava | publicado (#163) |
 | ENARE | ~3.225 novas: as provas R+ (2022–2026) nunca tinham sido importadas — o lote 1 só tinha R1 | 1.062 temas classificados à mão; rótulos de programa padronizados ("Neuro Pediatria" → "Neuropediatria" etc.); filtro passa a reprovar "preencha a lacuna" sem a lacuna | publicado (#164) |
 
+### Instituições adicionais (as 10 maiores restantes do acervo MedCof)
+Escolha do usuário: só as maiores. Corte: HCPA-RS, AMP, UEPA, PUC-SP Sorocaba, UFCSPA, CERMAM, Aliança Saúde (PUC-PR), SES-GO, GHC-RS, HC-UFPR.
+
+| Instituição | Extraídas | Novas | À mão | Status |
+|---|---|---|---|---|
+| HCPA-RS | 2.094 | 1.507 novas, 233 enriquecidas | 484 | publicado |
+
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
 ### Melhorias do pipeline (18/10)
