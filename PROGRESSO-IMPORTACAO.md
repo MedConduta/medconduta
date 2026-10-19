@@ -63,6 +63,13 @@ Arquivo de retomada (atualizado a cada etapa). Regras combinadas:
 | 21 | USP-SP | R1 e R+ (provas só de gabarito/discursivas de fora) | 7.150 | 5.088 novas, 211 enriquecidas | 1.908 à mão; 29 reprovadas; 26 excluídas na revisão (questão que depende de caso/lista ausente) | publicado (#148) |
 | 22 | SES-PE | R1 e R+ | 3.871 | 2.239 novas, 1.039 enriquecidas | 662 à mão; 20 reprovadas; 2 excluídas na revisão; 63 com gabarito divergente do banco ficaram de fora | publicado (#149) |
 
+### Reprocessamento dos lotes 1–13 com o extrator atual
+Reextração + `montar_lote`; só entram as questões que ainda não estavam publicadas (falso positivo de parênteses, gabarito não lido, caso compartilhado). `atualizar_textos.py` corrige texto de publicadas apenas em casos inequívocos (caso compartilhado grudado).
+
+| Lote | Recuperadas | Observação | Status |
+|---|---|---|---|
+| FAMERP | 39 novas | 14 itens que dependem da questão anterior entram só na prova completa; 1 excluída (texto duplicado no PDF) | publicado |
+
 Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do banco e mantidas na prova completa).
 
 ### Melhorias do pipeline (18/10)
