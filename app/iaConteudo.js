@@ -144,12 +144,3 @@ export async function gerarQuestaoComIA(tema) {
   await setItem("ia_questoes", questao);
   return questao;
 }
-
-/** Pede uma avaliação crítica (texto livre) de um tema existente — não persiste. */
-export async function avaliarTemaComIA(tema) {
-  return askAI({
-    pergunta: `Avalie criticamente o tema "${tema.titulo}" quanto a possíveis desatualizações, imprecisões ou pontos que merecem mais atenção, considerando o conhecimento médico mais atual disponível para você. Seja específico: cite o que está desatualizado ou fraco, se houver, e o que já está adequado.`,
-    contexto: formatarTemaComoContexto(tema),
-    tarefa: "avaliação crítica de um tema de estudo já existente na plataforma",
-  });
-}
