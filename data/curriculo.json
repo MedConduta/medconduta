@@ -820,7 +820,13 @@
     "aula": "Introdução à Reumatologia + Artrites (Artrite Reumatoide, Espondiloartropatias Soronegativas)",
     "aulaOrdem": 15,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Artrite idiopática juvenil",
+      "Artrite psoriásica",
+      "Artrite reativa",
+      "Artrite reumatoide",
+      "Espondilite anquilosante"
+    ],
     "dataProgramada": "2026-02-23",
     "temaId": "introducao-reumatologia"
   },
@@ -831,7 +837,13 @@
     "aula": "Introdução à Reumatologia + Artrites (Artrite Reumatoide, Espondiloartropatias Soronegativas)",
     "aulaOrdem": 15,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Artrite idiopática juvenil",
+      "Artrite psoriásica",
+      "Artrite reativa",
+      "Artrite reumatoide",
+      "Espondilite anquilosante"
+    ],
     "dataProgramada": "2026-02-23",
     "temaId": "artrite-reumatoide"
   },
@@ -842,7 +854,13 @@
     "aula": "Introdução à Reumatologia + Artrites (Artrite Reumatoide, Espondiloartropatias Soronegativas)",
     "aulaOrdem": 15,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Artrite idiopática juvenil",
+      "Artrite psoriásica",
+      "Artrite reativa",
+      "Artrite reumatoide",
+      "Espondilite anquilosante"
+    ],
     "dataProgramada": "2026-02-23",
     "temaId": "espondiloartrites"
   },
@@ -853,18 +871,13 @@
     "aula": "Introdução à Reumatologia + Artrites (Artrite Reumatoide, Espondiloartropatias Soronegativas)",
     "aulaOrdem": 15,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-02-23",
-    "temaId": "osteoartrite"
-  },
-  {
-    "semana": 8,
-    "disciplina": "Reumatologia",
-    "temaRaw": "Introdução à Reumatologia + Artrites (Artrite Reumatoide, Espondiloartropatias Soronegativas)",
-    "aula": "Introdução à Reumatologia + Artrites (Artrite Reumatoide, Espondiloartropatias Soronegativas)",
-    "aulaOrdem": 15,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Artrite idiopática juvenil",
+      "Artrite psoriásica",
+      "Artrite reativa",
+      "Artrite reumatoide",
+      "Espondilite anquilosante"
+    ],
     "dataProgramada": "2026-02-23",
     "temaId": "artrite-idiopatica-juvenil"
   },
@@ -875,7 +888,11 @@
     "aula": "Neonatologia II",
     "aulaOrdem": 16,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Icterícia neonatal",
+      "Outras infecções congênitas",
+      "Sífilis congênita"
+    ],
     "dataProgramada": "2026-02-23",
     "temaId": "ictericia-neonatal"
   },
@@ -886,31 +903,13 @@
     "aula": "Neonatologia II",
     "aulaOrdem": 16,
     "area": "Pediatria",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-02-23",
-    "temaId": "sepse-neonatal"
-  },
-  {
-    "semana": 8,
-    "disciplina": "Pediatria",
-    "temaRaw": "Neonatologia II",
-    "aula": "Neonatologia II",
-    "aulaOrdem": 16,
-    "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Icterícia neonatal",
+      "Outras infecções congênitas",
+      "Sífilis congênita"
+    ],
     "dataProgramada": "2026-02-23",
     "temaId": "infeccoes-congenitas-torch"
-  },
-  {
-    "semana": 8,
-    "disciplina": "Pediatria",
-    "temaRaw": "Neonatologia II",
-    "aula": "Neonatologia II",
-    "aulaOrdem": 16,
-    "area": "Pediatria",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-02-23",
-    "temaId": "disturbios-metabolicos-neonatais"
   },
   {
     "semana": 9,
@@ -919,7 +918,11 @@
     "aula": "Gota; Febre Reumática",
     "aulaOrdem": 17,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Febre reumática",
+      "Gota",
+      "Osteoartrite"
+    ],
     "dataProgramada": "2026-03-02",
     "temaId": "gota"
   },
@@ -930,9 +933,28 @@
     "aula": "Gota; Febre Reumática",
     "aulaOrdem": 17,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Febre reumática",
+      "Gota",
+      "Osteoartrite"
+    ],
     "dataProgramada": "2026-03-02",
     "temaId": "febre-reumatica"
+  },
+  {
+    "semana": 9,
+    "disciplina": "Reumatologia",
+    "temaRaw": "Gota; Febre Reumática",
+    "aula": "Gota; Febre Reumática",
+    "aulaOrdem": 17,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Febre reumática",
+      "Gota",
+      "Osteoartrite"
+    ],
+    "dataProgramada": "2026-03-02",
+    "temaId": "osteoartrite"
   },
   {
     "semana": 9,
@@ -941,7 +963,11 @@
     "aula": "Epidemiologia Clínica",
     "aulaOrdem": 18,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Bloco 01 - acurácia, sensibilidade e especificidade",
+      "Bloco 02 - valores preditivos",
+      "Epidemiologia clínica - revisão"
+    ],
     "dataProgramada": "2026-03-02",
     "temaId": "testes-diagnosticos-acuracia"
   },
@@ -952,7 +978,11 @@
     "aula": "Queimadura e Cirurgia Plástica",
     "aulaOrdem": 19,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cicatrização de feridas",
+      "Queimaduras",
+      "REMIT (aula especial)"
+    ],
     "dataProgramada": "2026-03-09",
     "temaId": "queimaduras"
   },
@@ -963,7 +993,11 @@
     "aula": "Queimadura e Cirurgia Plástica",
     "aulaOrdem": 19,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cicatrização de feridas",
+      "Queimaduras",
+      "REMIT (aula especial)"
+    ],
     "dataProgramada": "2026-03-09",
     "temaId": "cirurgia-plastica-geral"
   },
@@ -974,9 +1008,28 @@
     "aula": "Queimadura e Cirurgia Plástica",
     "aulaOrdem": 19,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cicatrização de feridas",
+      "Queimaduras",
+      "REMIT (aula especial)"
+    ],
     "dataProgramada": "2026-03-09",
     "temaId": "cicatrizacao-feridas"
+  },
+  {
+    "semana": 10,
+    "disciplina": "Cirurgia Geral",
+    "temaRaw": "Queimadura e Cirurgia Plástica",
+    "aula": "Queimadura e Cirurgia Plástica",
+    "aulaOrdem": 19,
+    "area": "Cirurgia",
+    "aulaTopicos": [
+      "Cicatrização de feridas",
+      "Queimaduras",
+      "REMIT (aula especial)"
+    ],
+    "dataProgramada": "2026-03-09",
+    "temaId": "resposta-endocrino-metabolica-trauma"
   },
   {
     "semana": 10,
@@ -985,7 +1038,14 @@
     "aula": "Assistência Clínica ao Parto e Parto Prematuro",
     "aulaOrdem": 20,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Amniorrexe prematura (bolsa rota)",
+      "Assistência e fases clínicas do parto",
+      "Estática fetal e trajeto",
+      "Indução de parto",
+      "Introdução e trabalho de parto prematuro",
+      "Partograma"
+    ],
     "dataProgramada": "2026-03-09",
     "temaId": "assistencia-parto-partograma"
   },
@@ -996,7 +1056,14 @@
     "aula": "Assistência Clínica ao Parto e Parto Prematuro",
     "aulaOrdem": 20,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Amniorrexe prematura (bolsa rota)",
+      "Assistência e fases clínicas do parto",
+      "Estática fetal e trajeto",
+      "Indução de parto",
+      "Introdução e trabalho de parto prematuro",
+      "Partograma"
+    ],
     "dataProgramada": "2026-03-09",
     "temaId": "bacia-obstetrica-pelvimetria"
   },
@@ -1007,7 +1074,14 @@
     "aula": "Assistência Clínica ao Parto e Parto Prematuro",
     "aulaOrdem": 20,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Amniorrexe prematura (bolsa rota)",
+      "Assistência e fases clínicas do parto",
+      "Estática fetal e trajeto",
+      "Indução de parto",
+      "Introdução e trabalho de parto prematuro",
+      "Partograma"
+    ],
     "dataProgramada": "2026-03-09",
     "temaId": "inducao-parto-pos-datismo"
   },
@@ -1018,7 +1092,14 @@
     "aula": "Assistência Clínica ao Parto e Parto Prematuro",
     "aulaOrdem": 20,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Amniorrexe prematura (bolsa rota)",
+      "Assistência e fases clínicas do parto",
+      "Estática fetal e trajeto",
+      "Indução de parto",
+      "Introdução e trabalho de parto prematuro",
+      "Partograma"
+    ],
     "dataProgramada": "2026-03-09",
     "temaId": "tpp-rpm"
   },
@@ -1029,7 +1110,11 @@
     "aula": "Vigilância da Saúde",
     "aulaOrdem": 21,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Notificação compulsória",
+      "Prevenção de doenças",
+      "Vigilância da saúde"
+    ],
     "dataProgramada": "2026-03-16",
     "temaId": "vigilancia-epidemiologica"
   },
@@ -1040,9 +1125,28 @@
     "aula": "Vigilância da Saúde",
     "aulaOrdem": 21,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Notificação compulsória",
+      "Prevenção de doenças",
+      "Vigilância da saúde"
+    ],
     "dataProgramada": "2026-03-16",
     "temaId": "epidemiologia-doencas-infecciosas"
+  },
+  {
+    "semana": 11,
+    "disciplina": "Medicina Preventiva",
+    "temaRaw": "Vigilância da Saúde",
+    "aula": "Vigilância da Saúde",
+    "aulaOrdem": 21,
+    "area": "Preventiva",
+    "aulaTopicos": [
+      "Notificação compulsória",
+      "Prevenção de doenças",
+      "Vigilância da saúde"
+    ],
+    "dataProgramada": "2026-03-16",
+    "temaId": "processo-saude-doenca"
   },
   {
     "semana": 11,
@@ -1051,7 +1155,11 @@
     "aula": "Colagenoses",
     "aulaOrdem": 22,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Colagenose",
+      "Esclerodermia / esclerose sistêmica",
+      "Síndrome do anticorpo antifosfolípide"
+    ],
     "dataProgramada": "2026-03-16",
     "temaId": "les"
   },
@@ -1062,7 +1170,11 @@
     "aula": "Colagenoses",
     "aulaOrdem": 22,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Colagenose",
+      "Esclerodermia / esclerose sistêmica",
+      "Síndrome do anticorpo antifosfolípide"
+    ],
     "dataProgramada": "2026-03-16",
     "temaId": "colagenoses-esclerodermia-miopatias"
   },
@@ -1073,7 +1185,11 @@
     "aula": "Saúde do Trabalhador + Ética Médica",
     "aulaOrdem": 23,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Declaração de óbito",
+      "Saúde do trabalhador",
+      "Ética médica"
+    ],
     "dataProgramada": "2026-03-23",
     "temaId": "saude-trabalhador-doencas-ocupacionais"
   },
@@ -1084,20 +1200,13 @@
     "aula": "Saúde do Trabalhador + Ética Médica",
     "aulaOrdem": 23,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Declaração de óbito",
+      "Saúde do trabalhador",
+      "Ética médica"
+    ],
     "dataProgramada": "2026-03-23",
     "temaId": "etica-medica-bioetica"
-  },
-  {
-    "semana": 12,
-    "disciplina": "Medicina Preventiva",
-    "temaRaw": "Saúde do Trabalhador + Ética Médica",
-    "aula": "Saúde do Trabalhador + Ética Médica",
-    "aulaOrdem": 23,
-    "area": "Preventiva",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-03-23",
-    "temaId": "medicina-legal-fundamentos"
   },
   {
     "semana": 12,
@@ -1106,7 +1215,10 @@
     "aula": "Cirurgia Pediátrica",
     "aulaOrdem": 24,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Afecções da região cervical, parede abdominal e gastroenterológica i",
+      "Afecções da região cervical, parede abdominal, gastroenterológica II e geniturinária"
+    ],
     "dataProgramada": "2026-03-23",
     "temaId": "cirurgia-pediatrica-malformacoes"
   },
@@ -1117,7 +1229,10 @@
     "aula": "Cirurgia Pediátrica",
     "aulaOrdem": 24,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Afecções da região cervical, parede abdominal e gastroenterológica i",
+      "Afecções da região cervical, parede abdominal, gastroenterológica II e geniturinária"
+    ],
     "dataProgramada": "2026-03-23",
     "temaId": "estenose-hipertrofica-piloro"
   },
@@ -1128,9 +1243,26 @@
     "aula": "Cirurgia Pediátrica",
     "aulaOrdem": 24,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Afecções da região cervical, parede abdominal e gastroenterológica i",
+      "Afecções da região cervical, parede abdominal, gastroenterológica II e geniturinária"
+    ],
     "dataProgramada": "2026-03-23",
     "temaId": "invaginacao-intestinal"
+  },
+  {
+    "semana": 12,
+    "disciplina": "Cirurgia Geral",
+    "temaRaw": "Cirurgia Pediátrica",
+    "aula": "Cirurgia Pediátrica",
+    "aulaOrdem": 24,
+    "area": "Cirurgia",
+    "aulaTopicos": [
+      "Afecções da região cervical, parede abdominal e gastroenterológica i",
+      "Afecções da região cervical, parede abdominal, gastroenterológica II e geniturinária"
+    ],
+    "dataProgramada": "2026-03-23",
+    "temaId": "torcao-testicular-escroto-agudo"
   },
   {
     "semana": 13,
@@ -1139,7 +1271,10 @@
     "aula": "Vasculites",
     "aulaOrdem": 25,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Vasculites - parte 1",
+      "Vasculites - parte 2"
+    ],
     "dataProgramada": "2026-03-30",
     "temaId": "vasculites"
   },
@@ -1150,7 +1285,10 @@
     "aula": "Vasculites",
     "aulaOrdem": 25,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Vasculites - parte 1",
+      "Vasculites - parte 2"
+    ],
     "dataProgramada": "2026-03-30",
     "temaId": "reumatologia-miscelanea-pmr-acg"
   },
@@ -1161,7 +1299,10 @@
     "aula": "Vasculites",
     "aulaOrdem": 25,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Vasculites - parte 1",
+      "Vasculites - parte 2"
+    ],
     "dataProgramada": "2026-03-30",
     "temaId": "henoch-schonlein-vasculite-iga"
   },
@@ -1172,7 +1313,10 @@
     "aula": "Vasculites",
     "aulaOrdem": 25,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Vasculites - parte 1",
+      "Vasculites - parte 2"
+    ],
     "dataProgramada": "2026-03-30",
     "temaId": "doenca-kawasaki"
   },
@@ -1183,7 +1327,11 @@
     "aula": "Aleitamento Materno",
     "aulaOrdem": 26,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Aleitamento materno - parte 1",
+      "Aleitamento materno - parte 2",
+      "Aleitamento materno - parte 3"
+    ],
     "dataProgramada": "2026-03-30",
     "temaId": "aleitamento-materno-alimentacao-complementar"
   },
@@ -1194,7 +1342,12 @@
     "aula": "Anemias I - Introdução, Ferropriva, Doença Crônica, Megaloblástica",
     "aulaOrdem": 27,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anemia de doença crônica",
+      "Anemia ferropriva",
+      "Anemia megaloblástica",
+      "Introdução às anemias"
+    ],
     "dataProgramada": "2026-04-06",
     "temaId": "abordagem-anemias"
   },
@@ -1205,7 +1358,12 @@
     "aula": "Anemias I - Introdução, Ferropriva, Doença Crônica, Megaloblástica",
     "aulaOrdem": 27,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anemia de doença crônica",
+      "Anemia ferropriva",
+      "Anemia megaloblástica",
+      "Introdução às anemias"
+    ],
     "dataProgramada": "2026-04-06",
     "temaId": "anemias-carenciais"
   },
@@ -1216,7 +1374,12 @@
     "aula": "Crescimento e Desenvolvimento Normais; Puberdade Normal",
     "aulaOrdem": 28,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Crescimento",
+      "Desenvolvimento",
+      "Distúrbios puberais (aula especial)",
+      "Puberdade"
+    ],
     "dataProgramada": "2026-04-06",
     "temaId": "desenvolvimento-neuropsicomotor-crescimento"
   },
@@ -1227,7 +1390,12 @@
     "aula": "Crescimento e Desenvolvimento Normais; Puberdade Normal",
     "aulaOrdem": 28,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Crescimento",
+      "Desenvolvimento",
+      "Distúrbios puberais (aula especial)",
+      "Puberdade"
+    ],
     "dataProgramada": "2026-04-06",
     "temaId": "puberdade-normal-disturbios"
   },
@@ -1238,7 +1406,10 @@
     "aula": "Anemia II - Introdução às Anemias Hemolíticas / Anemia Falciforme e Outras Hemoglobinopatias",
     "aulaOrdem": 29,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anemias hemolíticas parte I",
+      "Anemias hemolíticas parte II"
+    ],
     "dataProgramada": "2026-04-13",
     "temaId": "anemias-hemoliticas"
   },
@@ -1249,7 +1420,15 @@
     "aula": "Leucemias Agudas e Crônicas",
     "aulaOrdem": 30,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Introdução às leucemias",
+      "Leucemia crônica",
+      "Leucemia linfoide aguda",
+      "Leucemia linfoide crônica",
+      "Leucemia mieloide aguda",
+      "Leucemia mieloide crônica",
+      "Leucemias agudas"
+    ],
     "dataProgramada": "2026-04-13",
     "temaId": "leucemias"
   },
@@ -1260,7 +1439,10 @@
     "aula": "Linfomas e Mieloma Múltiplo",
     "aulaOrdem": 31,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Linfomas",
+      "Mieloma múltiplo"
+    ],
     "dataProgramada": "2026-04-20",
     "temaId": "linfomas"
   },
@@ -1271,7 +1453,10 @@
     "aula": "Linfomas e Mieloma Múltiplo",
     "aulaOrdem": 31,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Linfomas",
+      "Mieloma múltiplo"
+    ],
     "dataProgramada": "2026-04-20",
     "temaId": "mieloma-multiplo-gamopatias"
   },
@@ -1282,7 +1467,11 @@
     "aula": "Preparo Pré-Operatório, Risco Cirúrgico e Complicações em Cirurgia",
     "aulaOrdem": 32,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anestesiologia (aula especial)",
+      "Complicações cirúrgicas",
+      "Pré-operatório"
+    ],
     "dataProgramada": "2026-04-20",
     "temaId": "pre-pos-operatorio"
   },
@@ -1293,7 +1482,11 @@
     "aula": "Preparo Pré-Operatório, Risco Cirúrgico e Complicações em Cirurgia",
     "aulaOrdem": 32,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anestesiologia (aula especial)",
+      "Complicações cirúrgicas",
+      "Pré-operatório"
+    ],
     "dataProgramada": "2026-04-20",
     "temaId": "avaliacao-pre-anestesica-asa"
   },
@@ -1304,7 +1497,41 @@
     "aula": "Preparo Pré-Operatório, Risco Cirúrgico e Complicações em Cirurgia",
     "aulaOrdem": 32,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anestesiologia (aula especial)",
+      "Complicações cirúrgicas",
+      "Pré-operatório"
+    ],
+    "dataProgramada": "2026-04-20",
+    "temaId": "farmacologia-anestesicos-locais-gerais"
+  },
+  {
+    "semana": 16,
+    "disciplina": "Cirurgia Geral",
+    "temaRaw": "Preparo Pré-Operatório, Risco Cirúrgico e Complicações em Cirurgia",
+    "aula": "Preparo Pré-Operatório, Risco Cirúrgico e Complicações em Cirurgia",
+    "aulaOrdem": 32,
+    "area": "Cirurgia",
+    "aulaTopicos": [
+      "Anestesiologia (aula especial)",
+      "Complicações cirúrgicas",
+      "Pré-operatório"
+    ],
+    "dataProgramada": "2026-04-20",
+    "temaId": "via-aerea-dificil"
+  },
+  {
+    "semana": 16,
+    "disciplina": "Cirurgia Geral",
+    "temaRaw": "Preparo Pré-Operatório, Risco Cirúrgico e Complicações em Cirurgia",
+    "aula": "Preparo Pré-Operatório, Risco Cirúrgico e Complicações em Cirurgia",
+    "aulaOrdem": 32,
+    "area": "Cirurgia",
+    "aulaTopicos": [
+      "Anestesiologia (aula especial)",
+      "Complicações cirúrgicas",
+      "Pré-operatório"
+    ],
     "dataProgramada": "2026-04-20",
     "temaId": "iras-infeccao-sitio-cirurgico"
   },
@@ -1315,7 +1542,11 @@
     "aula": "Preparo Pré-Operatório, Risco Cirúrgico e Complicações em Cirurgia",
     "aulaOrdem": 32,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anestesiologia (aula especial)",
+      "Complicações cirúrgicas",
+      "Pré-operatório"
+    ],
     "dataProgramada": "2026-04-20",
     "temaId": "perioperatorio-controle-glicemico"
   },
@@ -1326,7 +1557,11 @@
     "aula": "Distúrbios da Hemostasia",
     "aulaOrdem": 33,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Hemofilias (aula especial)",
+      "Hemostasia primária",
+      "Hemostasia secundária"
+    ],
     "dataProgramada": "2026-04-27",
     "temaId": "disturbios-coagulacao"
   },
@@ -1337,7 +1572,12 @@
     "aula": "Hérnias da Parede Abdominal",
     "aulaOrdem": 34,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Hérnias - abordagem videolaparoscópica (aula especial)",
+      "Hérnias da virilha inguinal e femoral",
+      "Hérnias de parede abdominal",
+      "Outras hérnias"
+    ],
     "dataProgramada": "2026-04-27",
     "temaId": "hernias-parede-abdominal"
   },
@@ -1348,7 +1588,10 @@
     "aula": "Doenças do Esôfago",
     "aulaOrdem": 35,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doenças do esôfago - parte 01",
+      "Doenças do esôfago - parte 02"
+    ],
     "dataProgramada": "2026-05-04",
     "temaId": "doenca-refluxo-gastroesofagico"
   },
@@ -1359,7 +1602,10 @@
     "aula": "Doenças do Esôfago",
     "aulaOrdem": 35,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doenças do esôfago - parte 01",
+      "Doenças do esôfago - parte 02"
+    ],
     "dataProgramada": "2026-05-04",
     "temaId": "sindrome-disfagica"
   },
@@ -1370,7 +1616,10 @@
     "aula": "Doenças do Esôfago",
     "aulaOrdem": 35,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doenças do esôfago - parte 01",
+      "Doenças do esôfago - parte 02"
+    ],
     "dataProgramada": "2026-05-04",
     "temaId": "cancer-esofago"
   },
@@ -1381,7 +1630,14 @@
     "aula": "Sangramento Uterino Anormal, Endometriose e Infertilidade",
     "aulaOrdem": 36,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Adenomiose",
+      "Endometriose",
+      "Infertilidade (aula especial)",
+      "Introdução e investigação inicial",
+      "Mioma",
+      "Pólipo uterino"
+    ],
     "dataProgramada": "2026-05-04",
     "temaId": "sua"
   },
@@ -1392,7 +1648,14 @@
     "aula": "Sangramento Uterino Anormal, Endometriose e Infertilidade",
     "aulaOrdem": 36,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Adenomiose",
+      "Endometriose",
+      "Infertilidade (aula especial)",
+      "Introdução e investigação inicial",
+      "Mioma",
+      "Pólipo uterino"
+    ],
     "dataProgramada": "2026-05-04",
     "temaId": "miomatose-uterina"
   },
@@ -1403,7 +1666,32 @@
     "aula": "Sangramento Uterino Anormal, Endometriose e Infertilidade",
     "aulaOrdem": 36,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Adenomiose",
+      "Endometriose",
+      "Infertilidade (aula especial)",
+      "Introdução e investigação inicial",
+      "Mioma",
+      "Pólipo uterino"
+    ],
+    "dataProgramada": "2026-05-04",
+    "temaId": "polipos-uterinos"
+  },
+  {
+    "semana": 18,
+    "disciplina": "Ginecologia",
+    "temaRaw": "Sangramento Uterino Anormal, Endometriose e Infertilidade",
+    "aula": "Sangramento Uterino Anormal, Endometriose e Infertilidade",
+    "aulaOrdem": 36,
+    "area": "G.O",
+    "aulaTopicos": [
+      "Adenomiose",
+      "Endometriose",
+      "Infertilidade (aula especial)",
+      "Introdução e investigação inicial",
+      "Mioma",
+      "Pólipo uterino"
+    ],
     "dataProgramada": "2026-05-04",
     "temaId": "endometriose"
   },
@@ -1414,7 +1702,14 @@
     "aula": "Sangramento Uterino Anormal, Endometriose e Infertilidade",
     "aulaOrdem": 36,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Adenomiose",
+      "Endometriose",
+      "Infertilidade (aula especial)",
+      "Introdução e investigação inicial",
+      "Mioma",
+      "Pólipo uterino"
+    ],
     "dataProgramada": "2026-05-04",
     "temaId": "infertilidade-conjugal"
   },
@@ -1425,7 +1720,12 @@
     "aula": "Doenças do Estômago",
     "aulaOrdem": 37,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Câncer gástrico",
+      "Doença ulcerosa péptica",
+      "Doença ulcerosa péptica - tratamento cirúrgico",
+      "Hemorragia digestiva alta (aula especial)"
+    ],
     "dataProgramada": "2026-05-11",
     "temaId": "doenca-ulcerosa-peptica"
   },
@@ -1436,7 +1736,12 @@
     "aula": "Doenças do Estômago",
     "aulaOrdem": 37,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Câncer gástrico",
+      "Doença ulcerosa péptica",
+      "Doença ulcerosa péptica - tratamento cirúrgico",
+      "Hemorragia digestiva alta (aula especial)"
+    ],
     "dataProgramada": "2026-05-11",
     "temaId": "gastrite-dispepsia-funcional"
   },
@@ -1447,9 +1752,14 @@
     "aula": "Doenças do Estômago",
     "aulaOrdem": 37,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Câncer gástrico",
+      "Doença ulcerosa péptica",
+      "Doença ulcerosa péptica - tratamento cirúrgico",
+      "Hemorragia digestiva alta (aula especial)"
+    ],
     "dataProgramada": "2026-05-11",
-    "temaId": "cancer-gastrico"
+    "temaId": "hda"
   },
   {
     "semana": 19,
@@ -1458,9 +1768,14 @@
     "aula": "Doenças do Estômago",
     "aulaOrdem": 37,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Câncer gástrico",
+      "Doença ulcerosa péptica",
+      "Doença ulcerosa péptica - tratamento cirúrgico",
+      "Hemorragia digestiva alta (aula especial)"
+    ],
     "dataProgramada": "2026-05-11",
-    "temaId": "cirurgia-bariatrica-metabolica"
+    "temaId": "cancer-gastrico"
   },
   {
     "semana": 19,
@@ -1469,7 +1784,10 @@
     "aula": "Doenças Clínicas do Intestino",
     "aulaOrdem": 38,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doenças inflamatórias intestinais - Crohn e RCU",
+      "Síndromes disabsortivas, Whipple e celíaca"
+    ],
     "dataProgramada": "2026-05-11",
     "temaId": "sindromes-disabsortivas"
   },
@@ -1480,7 +1798,10 @@
     "aula": "Doenças Clínicas do Intestino",
     "aulaOrdem": 38,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doenças inflamatórias intestinais - Crohn e RCU",
+      "Síndromes disabsortivas, Whipple e celíaca"
+    ],
     "dataProgramada": "2026-05-11",
     "temaId": "doenca-inflamatoria-intestinal"
   },
@@ -1491,7 +1812,10 @@
     "aula": "Doenças Cirúrgicas do Intestino I - Vascular e Obstrução",
     "aulaOrdem": 39,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença vascular intestinal",
+      "Obstrução intestinal"
+    ],
     "dataProgramada": "2026-05-18",
     "temaId": "isquemia-mesenterica-abdome-vascular"
   },
@@ -1502,7 +1826,10 @@
     "aula": "Doenças Cirúrgicas do Intestino I - Vascular e Obstrução",
     "aulaOrdem": 39,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença vascular intestinal",
+      "Obstrução intestinal"
+    ],
     "dataProgramada": "2026-05-18",
     "temaId": "obstrucao-intestinal"
   },
@@ -1513,7 +1840,11 @@
     "aula": "Sangramentos na Gravidez - Parte I",
     "aulaOrdem": 40,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença trofoblástica",
+      "Gravidez ectópica",
+      "Introdução e abortamento"
+    ],
     "dataProgramada": "2026-05-18",
     "temaId": "hemorragia-1a-metade"
   },
@@ -1524,7 +1855,11 @@
     "aula": "Sangramentos na Gravidez - Parte I",
     "aulaOrdem": 40,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença trofoblástica",
+      "Gravidez ectópica",
+      "Introdução e abortamento"
+    ],
     "dataProgramada": "2026-05-18",
     "temaId": "abortamento-repeticao"
   },
@@ -1535,18 +1870,13 @@
     "aula": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
     "aulaOrdem": 41,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-05-25",
-    "temaId": "abdome-agudo-classificacao"
-  },
-  {
-    "semana": 21,
-    "disciplina": "Gastroenterologia",
-    "temaRaw": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
-    "aula": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
-    "aulaOrdem": 41,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Apendicite aguda",
+      "Câncer colorretal",
+      "Diverticulite aguda",
+      "Hemorragia digestiva baixa (aula especial)",
+      "Pólipos e polipose"
+    ],
     "dataProgramada": "2026-05-25",
     "temaId": "abdome-agudo"
   },
@@ -1557,29 +1887,13 @@
     "aula": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
     "aulaOrdem": 41,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-05-25",
-    "temaId": "abdome-agudo-perfurativo"
-  },
-  {
-    "semana": 21,
-    "disciplina": "Gastroenterologia",
-    "temaRaw": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
-    "aula": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
-    "aulaOrdem": 41,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-05-25",
-    "temaId": "abdome-agudo-hemorragico"
-  },
-  {
-    "semana": 21,
-    "disciplina": "Gastroenterologia",
-    "temaRaw": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
-    "aula": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
-    "aulaOrdem": 41,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Apendicite aguda",
+      "Câncer colorretal",
+      "Diverticulite aguda",
+      "Hemorragia digestiva baixa (aula especial)",
+      "Pólipos e polipose"
+    ],
     "dataProgramada": "2026-05-25",
     "temaId": "diverticulite"
   },
@@ -1590,7 +1904,13 @@
     "aula": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
     "aulaOrdem": 41,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Apendicite aguda",
+      "Câncer colorretal",
+      "Diverticulite aguda",
+      "Hemorragia digestiva baixa (aula especial)",
+      "Pólipos e polipose"
+    ],
     "dataProgramada": "2026-05-25",
     "temaId": "polipos-colonicos-rastreamento"
   },
@@ -1601,9 +1921,32 @@
     "aula": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
     "aulaOrdem": 41,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Apendicite aguda",
+      "Câncer colorretal",
+      "Diverticulite aguda",
+      "Hemorragia digestiva baixa (aula especial)",
+      "Pólipos e polipose"
+    ],
     "dataProgramada": "2026-05-25",
     "temaId": "cancer-colorretal"
+  },
+  {
+    "semana": 21,
+    "disciplina": "Gastroenterologia",
+    "temaRaw": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
+    "aula": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda",
+    "aulaOrdem": 41,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Apendicite aguda",
+      "Câncer colorretal",
+      "Diverticulite aguda",
+      "Hemorragia digestiva baixa (aula especial)",
+      "Pólipos e polipose"
+    ],
+    "dataProgramada": "2026-05-25",
+    "temaId": "hemorragia-digestiva-baixa"
   },
   {
     "semana": 21,
@@ -1612,7 +1955,12 @@
     "aula": "Sangramentos na Gravidez - Parte II e Doença Hemolítica Perinatal",
     "aulaOrdem": 42,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença hemolítica perinatal",
+      "Introdução e DPP",
+      "Placenta prévia e acretismo",
+      "Rotura de seio marginal, rotura de vasa prévia e uterina"
+    ],
     "dataProgramada": "2026-05-25",
     "temaId": "hemorragia-2a-metade-gestacao"
   },
@@ -1623,7 +1971,12 @@
     "aula": "Sangramentos na Gravidez - Parte II e Doença Hemolítica Perinatal",
     "aulaOrdem": 42,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença hemolítica perinatal",
+      "Introdução e DPP",
+      "Placenta prévia e acretismo",
+      "Rotura de seio marginal, rotura de vasa prévia e uterina"
+    ],
     "dataProgramada": "2026-05-25",
     "temaId": "aloimunizacao-doenca-hemolitica-perinatal"
   },
@@ -1634,7 +1987,10 @@
     "aula": "Pancreatite Aguda e Crônica / Câncer de Pâncreas",
     "aulaOrdem": 43,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Pancreatite aguda",
+      "Pancreatite crônica e câncer de pâncreas"
+    ],
     "dataProgramada": "2026-06-01",
     "temaId": "pancreatite-aguda"
   },
@@ -1645,7 +2001,10 @@
     "aula": "Pancreatite Aguda e Crônica / Câncer de Pâncreas",
     "aulaOrdem": 43,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Pancreatite aguda",
+      "Pancreatite crônica e câncer de pâncreas"
+    ],
     "dataProgramada": "2026-06-01",
     "temaId": "anatomia-fisiologia-pancreas-neoplasias"
   },
@@ -1656,7 +2015,12 @@
     "aula": "Doença das Vias Biliares",
     "aulaOrdem": 44,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Colangite aguda",
+      "Colecistite aguda",
+      "Coledocolitíase",
+      "Colelitíase"
+    ],
     "dataProgramada": "2026-06-01",
     "temaId": "colelitiase-coledocolitiase"
   },
@@ -1667,20 +2031,14 @@
     "aula": "Doença das Vias Biliares",
     "aulaOrdem": 44,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Colangite aguda",
+      "Colecistite aguda",
+      "Coledocolitíase",
+      "Colelitíase"
+    ],
     "dataProgramada": "2026-06-01",
     "temaId": "colecistite-colangite"
-  },
-  {
-    "semana": 22,
-    "disciplina": "Gastroenterologia",
-    "temaRaw": "Doença das Vias Biliares",
-    "aula": "Doença das Vias Biliares",
-    "aulaOrdem": 44,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-06-01",
-    "temaId": "sindrome-ictericia-colestase"
   },
   {
     "semana": 23,
@@ -1689,7 +2047,13 @@
     "aula": "Introdução à Hepatologia; Hepatites Virais",
     "aulaOrdem": 45,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Hepatite a e e",
+      "Hepatite b aguda",
+      "Hepatite b crônica",
+      "Hepatite c crônica",
+      "Introdução à hepatologia"
+    ],
     "dataProgramada": "2026-06-08",
     "temaId": "introducao-hepatologia"
   },
@@ -1700,7 +2064,13 @@
     "aula": "Introdução à Hepatologia; Hepatites Virais",
     "aulaOrdem": 45,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Hepatite a e e",
+      "Hepatite b aguda",
+      "Hepatite b crônica",
+      "Hepatite c crônica",
+      "Introdução à hepatologia"
+    ],
     "dataProgramada": "2026-06-08",
     "temaId": "hepatites-virais"
   },
@@ -1711,7 +2081,13 @@
     "aula": "Cirrose e suas Causas",
     "aulaOrdem": 46,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cirrose hepática",
+      "Doença hepática relacionada ao álcool",
+      "Esteatose hepática metabólica",
+      "Hepatopatias autoimunes",
+      "Hepatopatias hereditárias"
+    ],
     "dataProgramada": "2026-06-08",
     "temaId": "hepatopatia-cronica-outras-causas"
   },
@@ -1722,7 +2098,10 @@
     "aula": "Cirrose e suas Complicações / Hipertensão Porta (Tratamento Clínico e Cirúrgico); Ascite; Encefalopatia",
     "aulaOrdem": 47,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cirrose e suas complicações - parte 1",
+      "Cirrose e suas complicações - parte 2"
+    ],
     "dataProgramada": "2026-06-15",
     "temaId": "cirrose-complicacoes"
   },
@@ -1733,7 +2112,10 @@
     "aula": "Cirrose e suas Complicações / Hipertensão Porta (Tratamento Clínico e Cirúrgico); Ascite; Encefalopatia",
     "aulaOrdem": 47,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cirrose e suas complicações - parte 1",
+      "Cirrose e suas complicações - parte 2"
+    ],
     "dataProgramada": "2026-06-15",
     "temaId": "sindrome-hepatorrenal-hepatopulmonar"
   },
@@ -1744,7 +2126,12 @@
     "aula": "Climatério, Distopia e Incontinência Urinária",
     "aulaOrdem": 48,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Climatério",
+      "Distopia",
+      "Incontinência urinária",
+      "Osteoporose (aula especial)"
+    ],
     "dataProgramada": "2026-06-15",
     "temaId": "climaterio"
   },
@@ -1755,9 +2142,30 @@
     "aula": "Climatério, Distopia e Incontinência Urinária",
     "aulaOrdem": 48,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Climatério",
+      "Distopia",
+      "Incontinência urinária",
+      "Osteoporose (aula especial)"
+    ],
     "dataProgramada": "2026-06-15",
     "temaId": "uroginecologia-incontinencia-prolapso"
+  },
+  {
+    "semana": 24,
+    "disciplina": "Ginecologia",
+    "temaRaw": "Climatério, Distopia e Incontinência Urinária",
+    "aula": "Climatério, Distopia e Incontinência Urinária",
+    "aulaOrdem": 48,
+    "area": "G.O",
+    "aulaTopicos": [
+      "Climatério",
+      "Distopia",
+      "Incontinência urinária",
+      "Osteoporose (aula especial)"
+    ],
+    "dataProgramada": "2026-06-15",
+    "temaId": "osteoporose-doenca-paget"
   },
   {
     "semana": 25,
@@ -1766,7 +2174,13 @@
     "aula": "Arritmias I (Taquiarritmias)",
     "aulaOrdem": 49,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Conduta da fibrilação e flutter atrial",
+      "Conduta taqui supraventricular",
+      "Conduta taqui ventricular",
+      "Diagnóstico das taquiarritmias",
+      "Introdução ao ecg"
+    ],
     "dataProgramada": "2026-06-22",
     "temaId": "eletrocardiograma-interpretacao"
   },
@@ -1777,7 +2191,13 @@
     "aula": "Arritmias I (Taquiarritmias)",
     "aulaOrdem": 49,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Conduta da fibrilação e flutter atrial",
+      "Conduta taqui supraventricular",
+      "Conduta taqui ventricular",
+      "Diagnóstico das taquiarritmias",
+      "Introdução ao ecg"
+    ],
     "dataProgramada": "2026-06-22",
     "temaId": "taquiarritmias"
   },
@@ -1788,7 +2208,13 @@
     "aula": "Arritmias I (Taquiarritmias)",
     "aulaOrdem": 49,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Conduta da fibrilação e flutter atrial",
+      "Conduta taqui supraventricular",
+      "Conduta taqui ventricular",
+      "Diagnóstico das taquiarritmias",
+      "Introdução ao ecg"
+    ],
     "dataProgramada": "2026-06-22",
     "temaId": "fa"
   },
@@ -1799,7 +2225,12 @@
     "aula": "Distúrbios do Crescimento: Desnutrição e Baixa Estatura",
     "aulaOrdem": 50,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Avaliação nutricional",
+      "Baixa estatura",
+      "Desnutrição grave",
+      "Obesidade"
+    ],
     "dataProgramada": "2026-06-22",
     "temaId": "desnutricao-deficiencias-vitaminicas"
   },
@@ -1810,7 +2241,12 @@
     "aula": "Distúrbios do Crescimento: Desnutrição e Baixa Estatura",
     "aulaOrdem": 50,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Avaliação nutricional",
+      "Baixa estatura",
+      "Desnutrição grave",
+      "Obesidade"
+    ],
     "dataProgramada": "2026-06-22",
     "temaId": "diagnostico-nutricional-pediatria"
   },
@@ -1821,7 +2257,12 @@
     "aula": "Distúrbios do Crescimento: Desnutrição e Baixa Estatura",
     "aulaOrdem": 50,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Avaliação nutricional",
+      "Baixa estatura",
+      "Desnutrição grave",
+      "Obesidade"
+    ],
     "dataProgramada": "2026-06-22",
     "temaId": "obesidade-infantil"
   },
@@ -1832,7 +2273,10 @@
     "aula": "Arritmias II (Bradiarritmias) + PCR",
     "aulaOrdem": 51,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Bradiarritmias",
+      "PCR"
+    ],
     "dataProgramada": "2026-06-29",
     "temaId": "bradiarritmias"
   },
@@ -1843,7 +2287,10 @@
     "aula": "Arritmias II (Bradiarritmias) + PCR",
     "aulaOrdem": 51,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Bradiarritmias",
+      "PCR"
+    ],
     "dataProgramada": "2026-06-29",
     "temaId": "parada-cardiorrespiratoria-rcp"
   },
@@ -1854,7 +2301,12 @@
     "aula": "Imunização",
     "aulaOrdem": 52,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Calendários vacinais",
+      "Imunizações",
+      "Vacinas - parte 1",
+      "Vacinas - parte 2"
+    ],
     "dataProgramada": "2026-06-29",
     "temaId": "imunizacoes"
   },
@@ -1865,9 +2317,32 @@
     "aula": "Insuficiência Cardíaca",
     "aulaOrdem": 53,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Choque - monitorização hemodinâmica e perfusional (aula especial)",
+      "Choque - tratamento (aula especial)",
+      "Insuficiência cardíaca - parte 1",
+      "Insuficiência cardíaca - parte 2",
+      "Insuficiência cardíaca aguda (aula especial)"
+    ],
     "dataProgramada": "2026-07-06",
     "temaId": "ic"
+  },
+  {
+    "semana": 27,
+    "disciplina": "Cardiologia",
+    "temaRaw": "Insuficiência Cardíaca",
+    "aula": "Insuficiência Cardíaca",
+    "aulaOrdem": 53,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Choque - monitorização hemodinâmica e perfusional (aula especial)",
+      "Choque - tratamento (aula especial)",
+      "Insuficiência cardíaca - parte 1",
+      "Insuficiência cardíaca - parte 2",
+      "Insuficiência cardíaca aguda (aula especial)"
+    ],
+    "dataProgramada": "2026-07-06",
+    "temaId": "choque-cardiogenico-classificacao"
   },
   {
     "semana": 27,
@@ -1876,7 +2351,11 @@
     "aula": "Doença das Mamas e Ovários",
     "aulaOrdem": 54,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença das mamas - parte 1",
+      "Doença dos ovários - parte 2",
+      "Torção anexial (aula especial)"
+    ],
     "dataProgramada": "2026-07-06",
     "temaId": "nodulo-mama-ca-mama"
   },
@@ -1887,7 +2366,11 @@
     "aula": "Doença das Mamas e Ovários",
     "aulaOrdem": 54,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença das mamas - parte 1",
+      "Doença dos ovários - parte 2",
+      "Torção anexial (aula especial)"
+    ],
     "dataProgramada": "2026-07-06",
     "temaId": "cancer-ovario"
   },
@@ -1898,7 +2381,11 @@
     "aula": "Doença das Mamas e Ovários",
     "aulaOrdem": 54,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença das mamas - parte 1",
+      "Doença dos ovários - parte 2",
+      "Torção anexial (aula especial)"
+    ],
     "dataProgramada": "2026-07-06",
     "temaId": "abdome-agudo-ginecologico"
   },
@@ -1909,7 +2396,11 @@
     "aula": "Hipertensão Arterial Sistêmica; Crise Hipertensiva",
     "aulaOrdem": 55,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Crise hipertensiva",
+      "Hipertensão arterial sistêmica",
+      "Hipertensão secundária"
+    ],
     "dataProgramada": "2026-07-13",
     "temaId": "has"
   },
@@ -1920,20 +2411,13 @@
     "aula": "Hipertensão Arterial Sistêmica; Crise Hipertensiva",
     "aulaOrdem": 55,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Crise hipertensiva",
+      "Hipertensão arterial sistêmica",
+      "Hipertensão secundária"
+    ],
     "dataProgramada": "2026-07-13",
     "temaId": "emergencia-hipertensiva"
-  },
-  {
-    "semana": 28,
-    "disciplina": "Cardiologia",
-    "temaRaw": "Hipertensão Arterial Sistêmica; Crise Hipertensiva",
-    "aula": "Hipertensão Arterial Sistêmica; Crise Hipertensiva",
-    "aulaOrdem": 55,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-07-13",
-    "temaId": "disseccao-aorta"
   },
   {
     "semana": 28,
@@ -1942,7 +2426,13 @@
     "aula": "Valvopatias",
     "aulaOrdem": 56,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Conceitos iniciais",
+      "Estenose aórtica",
+      "Estenose mitral",
+      "Insuficiência aórtica",
+      "Insuficiência mitral"
+    ],
     "dataProgramada": "2026-07-13",
     "temaId": "semiologia-cardiaca"
   },
@@ -1953,7 +2443,13 @@
     "aula": "Valvopatias",
     "aulaOrdem": 56,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Conceitos iniciais",
+      "Estenose aórtica",
+      "Estenose mitral",
+      "Insuficiência aórtica",
+      "Insuficiência mitral"
+    ],
     "dataProgramada": "2026-07-13",
     "temaId": "valvopatias"
   },
@@ -1964,7 +2460,10 @@
     "aula": "Doença Arterial Coronariana: IAM e Angina",
     "aulaOrdem": 57,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença arterial coronariana",
+      "Síndromes coronarianas agudas"
+    ],
     "dataProgramada": "2026-07-20",
     "temaId": "doenca-arterial-coronariana-cronica"
   },
@@ -1975,7 +2474,10 @@
     "aula": "Doença Arterial Coronariana: IAM e Angina",
     "aulaOrdem": 57,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença arterial coronariana",
+      "Síndromes coronarianas agudas"
+    ],
     "dataProgramada": "2026-07-20",
     "temaId": "angina-instavel-iamssst"
   },
@@ -1986,7 +2488,10 @@
     "aula": "Doença Arterial Coronariana: IAM e Angina",
     "aulaOrdem": 57,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doença arterial coronariana",
+      "Síndromes coronarianas agudas"
+    ],
     "dataProgramada": "2026-07-20",
     "temaId": "iam"
   },
@@ -1997,31 +2502,12 @@
     "aula": "Diarreia Aguda e Desidratação na Infância",
     "aulaOrdem": 58,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Diarreia aguda - parte 1",
+      "Diarreia aguda - parte 2"
+    ],
     "dataProgramada": "2026-07-20",
     "temaId": "diarreia-infantil"
-  },
-  {
-    "semana": 29,
-    "disciplina": "Pediatria",
-    "temaRaw": "Diarreia Aguda e Desidratação na Infância",
-    "aula": "Diarreia Aguda e Desidratação na Infância",
-    "aulaOrdem": 58,
-    "area": "Pediatria",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-07-20",
-    "temaId": "drge-pediatrica"
-  },
-  {
-    "semana": 29,
-    "disciplina": "Pediatria",
-    "temaRaw": "Diarreia Aguda e Desidratação na Infância",
-    "aula": "Diarreia Aguda e Desidratação na Infância",
-    "aulaOrdem": 58,
-    "area": "Pediatria",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-07-20",
-    "temaId": "alergia-alimentar"
   },
   {
     "semana": 30,
@@ -2030,7 +2516,11 @@
     "aula": "SUS I - Evolução Histórica e Legislação",
     "aulaOrdem": 59,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "SUS - financiamento",
+      "SUS - o que veio antes e seus princípios",
+      "SUS - o que veio depois"
+    ],
     "dataProgramada": "2026-07-27",
     "temaId": "historia-sus"
   },
@@ -2041,7 +2531,11 @@
     "aula": "SUS I - Evolução Histórica e Legislação",
     "aulaOrdem": 59,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "SUS - financiamento",
+      "SUS - o que veio antes e seus princípios",
+      "SUS - o que veio depois"
+    ],
     "dataProgramada": "2026-07-27",
     "temaId": "marcos-legais-sus"
   },
@@ -2052,7 +2546,11 @@
     "aula": "SUS I - Evolução Histórica e Legislação",
     "aulaOrdem": 59,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "SUS - financiamento",
+      "SUS - o que veio antes e seus princípios",
+      "SUS - o que veio depois"
+    ],
     "dataProgramada": "2026-07-27",
     "temaId": "principios-sus"
   },
@@ -2063,7 +2561,11 @@
     "aula": "SUS I - Evolução Histórica e Legislação",
     "aulaOrdem": 59,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "SUS - financiamento",
+      "SUS - o que veio antes e seus princípios",
+      "SUS - o que veio depois"
+    ],
     "dataProgramada": "2026-07-27",
     "temaId": "descentralizacao-regionalizacao-sus"
   },
@@ -2074,9 +2576,28 @@
     "aula": "SUS I - Evolução Histórica e Legislação",
     "aulaOrdem": 59,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "SUS - financiamento",
+      "SUS - o que veio antes e seus princípios",
+      "SUS - o que veio depois"
+    ],
     "dataProgramada": "2026-07-27",
     "temaId": "politica-saude"
+  },
+  {
+    "semana": 30,
+    "disciplina": "Medicina Preventiva",
+    "temaRaw": "SUS I - Evolução Histórica e Legislação",
+    "aula": "SUS I - Evolução Histórica e Legislação",
+    "aulaOrdem": 59,
+    "area": "Preventiva",
+    "aulaTopicos": [
+      "SUS - financiamento",
+      "SUS - o que veio antes e seus princípios",
+      "SUS - o que veio depois"
+    ],
+    "dataProgramada": "2026-07-27",
+    "temaId": "financiamento-saude"
   },
   {
     "semana": 30,
@@ -2085,7 +2606,10 @@
     "aula": "Lesões Precursoras, Câncer de Colo Uterino e Endométrio",
     "aulaOrdem": 60,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Câncer de endométrio",
+      "Neoplasias ginecológicas, colo e endométrio"
+    ],
     "dataProgramada": "2026-07-27",
     "temaId": "cancer-colo-utero-hpv"
   },
@@ -2096,20 +2620,12 @@
     "aula": "Lesões Precursoras, Câncer de Colo Uterino e Endométrio",
     "aulaOrdem": 60,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Câncer de endométrio",
+      "Neoplasias ginecológicas, colo e endométrio"
+    ],
     "dataProgramada": "2026-07-27",
     "temaId": "cancer-endometrio"
-  },
-  {
-    "semana": 30,
-    "disciplina": "Ginecologia",
-    "temaRaw": "Lesões Precursoras, Câncer de Colo Uterino e Endométrio",
-    "aula": "Lesões Precursoras, Câncer de Colo Uterino e Endométrio",
-    "aulaOrdem": 60,
-    "area": "G.O",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-07-27",
-    "temaId": "rastreio-cancer"
   },
   {
     "semana": 31,
@@ -2118,9 +2634,32 @@
     "aula": "Tireoide",
     "aulaOrdem": 61,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Hiperparatireoidismo primário (aula especial)",
+      "Hipertireoidismo",
+      "Hipotireoidismo",
+      "Nódulo e câncer de tireoide",
+      "Tireoide - fisiologia"
+    ],
     "dataProgramada": "2026-08-03",
     "temaId": "tireoidopatias"
+  },
+  {
+    "semana": 31,
+    "disciplina": "Endocrinologia",
+    "temaRaw": "Tireoide",
+    "aula": "Tireoide",
+    "aulaOrdem": 61,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Hiperparatireoidismo primário (aula especial)",
+      "Hipertireoidismo",
+      "Hipotireoidismo",
+      "Nódulo e câncer de tireoide",
+      "Tireoide - fisiologia"
+    ],
+    "dataProgramada": "2026-08-03",
+    "temaId": "disturbios-calcio-paratireoide"
   },
   {
     "semana": 31,
@@ -2129,7 +2668,10 @@
     "aula": "SUS II – Atenção Básica e Financiamento",
     "aulaOrdem": 62,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Estratégia da saúde da família e princípios da APS",
+      "Instrumentos e humanização"
+    ],
     "dataProgramada": "2026-08-03",
     "temaId": "aps-esf"
   },
@@ -2140,53 +2682,12 @@
     "aula": "SUS II – Atenção Básica e Financiamento",
     "aulaOrdem": 62,
     "area": "Preventiva",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Estratégia da saúde da família e princípios da APS",
+      "Instrumentos e humanização"
+    ],
     "dataProgramada": "2026-08-03",
     "temaId": "medicina-familia-comunidade"
-  },
-  {
-    "semana": 31,
-    "disciplina": "Medicina Preventiva",
-    "temaRaw": "SUS II – Atenção Básica e Financiamento",
-    "aula": "SUS II – Atenção Básica e Financiamento",
-    "aulaOrdem": 62,
-    "area": "Preventiva",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-03",
-    "temaId": "processo-saude-doenca"
-  },
-  {
-    "semana": 31,
-    "disciplina": "Medicina Preventiva",
-    "temaRaw": "SUS II – Atenção Básica e Financiamento",
-    "aula": "SUS II – Atenção Básica e Financiamento",
-    "aulaOrdem": 62,
-    "area": "Preventiva",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-03",
-    "temaId": "financiamento-saude"
-  },
-  {
-    "semana": 31,
-    "disciplina": "Medicina Preventiva",
-    "temaRaw": "SUS II – Atenção Básica e Financiamento",
-    "aula": "SUS II – Atenção Básica e Financiamento",
-    "aulaOrdem": 62,
-    "area": "Preventiva",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-03",
-    "temaId": "gestao-em-saude"
-  },
-  {
-    "semana": 31,
-    "disciplina": "Medicina Preventiva",
-    "temaRaw": "SUS II – Atenção Básica e Financiamento",
-    "aula": "SUS II – Atenção Básica e Financiamento",
-    "aulaOrdem": 62,
-    "area": "Preventiva",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-03",
-    "temaId": "saude-idoso-pnspi"
   },
   {
     "semana": 32,
@@ -2195,7 +2696,11 @@
     "aula": "Infecções Respiratórias Agudas - Parte I",
     "aulaOrdem": 63,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Epiglotite aguda e laringotraqueíte viral aguda",
+      "Resfriado e otite média aguda",
+      "Sinusite bacteriana aguda e faringites agudas"
+    ],
     "dataProgramada": "2026-08-10",
     "temaId": "infeccoes-vias-aereas-superiores-pediatricas"
   },
@@ -2206,7 +2711,11 @@
     "aula": "Infecções Respiratórias Agudas - Parte I",
     "aulaOrdem": 63,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Epiglotite aguda e laringotraqueíte viral aguda",
+      "Resfriado e otite média aguda",
+      "Sinusite bacteriana aguda e faringites agudas"
+    ],
     "dataProgramada": "2026-08-10",
     "temaId": "otites-media-externa"
   },
@@ -2217,7 +2726,11 @@
     "aula": "Infecções Respiratórias Agudas - Parte I",
     "aulaOrdem": 63,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Epiglotite aguda e laringotraqueíte viral aguda",
+      "Resfriado e otite média aguda",
+      "Sinusite bacteriana aguda e faringites agudas"
+    ],
     "dataProgramada": "2026-08-10",
     "temaId": "rinossinusite-faringite"
   },
@@ -2228,7 +2741,9 @@
     "aula": "Doenças da Suprarrenal",
     "aulaOrdem": 64,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doenças da suprarrenal"
+    ],
     "dataProgramada": "2026-08-10",
     "temaId": "disturbios-adrenais"
   },
@@ -2239,31 +2754,11 @@
     "aula": "Doenças da Suprarrenal",
     "aulaOrdem": 64,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Doenças da suprarrenal"
+    ],
     "dataProgramada": "2026-08-10",
     "temaId": "hiperplasia-adrenal-congenita"
-  },
-  {
-    "semana": 32,
-    "disciplina": "Endocrinologia",
-    "temaRaw": "Doenças da Suprarrenal",
-    "aula": "Doenças da Suprarrenal",
-    "aulaOrdem": 64,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-10",
-    "temaId": "disturbios-calcio-paratireoide"
-  },
-  {
-    "semana": 32,
-    "disciplina": "Endocrinologia",
-    "temaRaw": "Doenças da Suprarrenal",
-    "aula": "Doenças da Suprarrenal",
-    "aulaOrdem": 64,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-10",
-    "temaId": "neoplasias-endocrinas-multiplas"
   },
   {
     "semana": 33,
@@ -2272,7 +2767,12 @@
     "aula": "Diabetes Mellitus",
     "aulaOrdem": 65,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Diabetes mellitus - parte 1",
+      "Diabetes mellitus - parte 2",
+      "Diabetes mellitus - parte 3",
+      "Dislipidemia (aula especial)"
+    ],
     "dataProgramada": "2026-08-17",
     "temaId": "diabetes-classificacao-diagnostico"
   },
@@ -2283,7 +2783,12 @@
     "aula": "Diabetes Mellitus",
     "aulaOrdem": 65,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Diabetes mellitus - parte 1",
+      "Diabetes mellitus - parte 2",
+      "Diabetes mellitus - parte 3",
+      "Dislipidemia (aula especial)"
+    ],
     "dataProgramada": "2026-08-17",
     "temaId": "dm2"
   },
@@ -2294,7 +2799,12 @@
     "aula": "Diabetes Mellitus",
     "aulaOrdem": 65,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Diabetes mellitus - parte 1",
+      "Diabetes mellitus - parte 2",
+      "Diabetes mellitus - parte 3",
+      "Dislipidemia (aula especial)"
+    ],
     "dataProgramada": "2026-08-17",
     "temaId": "cetoacidose-diabetica"
   },
@@ -2305,7 +2815,12 @@
     "aula": "Diabetes Mellitus",
     "aulaOrdem": 65,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Diabetes mellitus - parte 1",
+      "Diabetes mellitus - parte 2",
+      "Diabetes mellitus - parte 3",
+      "Dislipidemia (aula especial)"
+    ],
     "dataProgramada": "2026-08-17",
     "temaId": "hiperglicemia-hospitalar"
   },
@@ -2316,20 +2831,14 @@
     "aula": "Diabetes Mellitus",
     "aulaOrdem": 65,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Diabetes mellitus - parte 1",
+      "Diabetes mellitus - parte 2",
+      "Diabetes mellitus - parte 3",
+      "Dislipidemia (aula especial)"
+    ],
     "dataProgramada": "2026-08-17",
-    "temaId": "obesidade"
-  },
-  {
-    "semana": 33,
-    "disciplina": "Endocrinologia",
-    "temaRaw": "Diabetes Mellitus",
-    "aula": "Diabetes Mellitus",
-    "aulaOrdem": 65,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-17",
-    "temaId": "sindrome-metabolica"
+    "temaId": "dislipidemias"
   },
   {
     "semana": 33,
@@ -2338,7 +2847,10 @@
     "aula": "Infecções Respiratórias Agudas - Parte II",
     "aulaOrdem": 66,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Pneumonia atípica e bronquiolite",
+      "Pneumonia bacteriana"
+    ],
     "dataProgramada": "2026-08-17",
     "temaId": "bronquiolite-viral-aguda"
   },
@@ -2349,42 +2861,12 @@
     "aula": "Infecções Respiratórias Agudas - Parte II",
     "aulaOrdem": 66,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Pneumonia atípica e bronquiolite",
+      "Pneumonia bacteriana"
+    ],
     "dataProgramada": "2026-08-17",
     "temaId": "pneumonia-pediatrica"
-  },
-  {
-    "semana": 33,
-    "disciplina": "Pediatria",
-    "temaRaw": "Infecções Respiratórias Agudas - Parte II",
-    "aula": "Infecções Respiratórias Agudas - Parte II",
-    "aulaOrdem": 66,
-    "area": "Pediatria",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-17",
-    "temaId": "asma-infantil"
-  },
-  {
-    "semana": 33,
-    "disciplina": "Pediatria",
-    "temaRaw": "Infecções Respiratórias Agudas - Parte II",
-    "aula": "Infecções Respiratórias Agudas - Parte II",
-    "aulaOrdem": 66,
-    "area": "Pediatria",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-17",
-    "temaId": "coqueluche"
-  },
-  {
-    "semana": 33,
-    "disciplina": "Pediatria",
-    "temaRaw": "Infecções Respiratórias Agudas - Parte II",
-    "aula": "Infecções Respiratórias Agudas - Parte II",
-    "aulaOrdem": 66,
-    "area": "Pediatria",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-17",
-    "temaId": "tuberculose-pediatrica"
   },
   {
     "semana": 34,
@@ -2393,7 +2875,10 @@
     "aula": "Asma e DPOC",
     "aulaOrdem": 67,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "DPOC",
+      "Noções de espirometria e asma"
+    ],
     "dataProgramada": "2026-08-24",
     "temaId": "introducao-pneumologia"
   },
@@ -2404,7 +2889,10 @@
     "aula": "Asma e DPOC",
     "aulaOrdem": 67,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "DPOC",
+      "Noções de espirometria e asma"
+    ],
     "dataProgramada": "2026-08-24",
     "temaId": "asma-exacerbada"
   },
@@ -2415,7 +2903,10 @@
     "aula": "Asma e DPOC",
     "aulaOrdem": 67,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "DPOC",
+      "Noções de espirometria e asma"
+    ],
     "dataProgramada": "2026-08-24",
     "temaId": "dpoc-exacerbado"
   },
@@ -2426,7 +2917,11 @@
     "aula": "Distúrbios Hipertensivos da Gestação, Diabetes e Gemelaridade",
     "aulaOrdem": 68,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Diabetes gestacional",
+      "Gestação gemelar",
+      "Hipertensão arterial na gestação"
+    ],
     "dataProgramada": "2026-08-24",
     "temaId": "pre-eclampsia"
   },
@@ -2437,7 +2932,11 @@
     "aula": "Distúrbios Hipertensivos da Gestação, Diabetes e Gemelaridade",
     "aulaOrdem": 68,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Diabetes gestacional",
+      "Gestação gemelar",
+      "Hipertensão arterial na gestação"
+    ],
     "dataProgramada": "2026-08-24",
     "temaId": "diabetes-gestacional"
   },
@@ -2448,7 +2947,11 @@
     "aula": "Distúrbios Hipertensivos da Gestação, Diabetes e Gemelaridade",
     "aulaOrdem": 68,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Diabetes gestacional",
+      "Gestação gemelar",
+      "Hipertensão arterial na gestação"
+    ],
     "dataProgramada": "2026-08-24",
     "temaId": "gestacao-multipla"
   },
@@ -2459,7 +2962,11 @@
     "aula": "Câncer de Pulmão, TEP",
     "aulaOrdem": 69,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Câncer de pulmão",
+      "Nódulo pulmonar solitário (aula especial)",
+      "TEP"
+    ],
     "dataProgramada": "2026-08-31",
     "temaId": "neoplasias-pulmonares"
   },
@@ -2470,7 +2977,11 @@
     "aula": "Câncer de Pulmão, TEP",
     "aulaOrdem": 69,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Câncer de pulmão",
+      "Nódulo pulmonar solitário (aula especial)",
+      "TEP"
+    ],
     "dataProgramada": "2026-08-31",
     "temaId": "tep"
   },
@@ -2481,20 +2992,13 @@
     "aula": "Câncer de Pulmão, TEP",
     "aulaOrdem": 69,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Câncer de pulmão",
+      "Nódulo pulmonar solitário (aula especial)",
+      "TEP"
+    ],
     "dataProgramada": "2026-08-31",
     "temaId": "tvp"
-  },
-  {
-    "semana": 35,
-    "disciplina": "Pneumologia",
-    "temaRaw": "Câncer de Pulmão, TEP",
-    "aula": "Câncer de Pulmão, TEP",
-    "aulaOrdem": 69,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-08-31",
-    "temaId": "cirurgia-toracica-geral"
   },
   {
     "semana": 35,
@@ -2503,9 +3007,52 @@
     "aula": "Nefrologia Pediátrica",
     "aulaOrdem": 70,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cardiopatias congênitas - parte 1 (aula especial)",
+      "Cardiopatias congênitas - parte 2 (aula especial)",
+      "Cardiopatias congênitas - parte 3 (aula especial)",
+      "Infecção do trato urinário",
+      "Outros distúrbios urológicos",
+      "PCR na infância (aula especial)"
+    ],
     "dataProgramada": "2026-08-31",
     "temaId": "itu-pediatrica"
+  },
+  {
+    "semana": 35,
+    "disciplina": "Pediatria",
+    "temaRaw": "Nefrologia Pediátrica",
+    "aula": "Nefrologia Pediátrica",
+    "aulaOrdem": 70,
+    "area": "Pediatria",
+    "aulaTopicos": [
+      "Cardiopatias congênitas - parte 1 (aula especial)",
+      "Cardiopatias congênitas - parte 2 (aula especial)",
+      "Cardiopatias congênitas - parte 3 (aula especial)",
+      "Infecção do trato urinário",
+      "Outros distúrbios urológicos",
+      "PCR na infância (aula especial)"
+    ],
+    "dataProgramada": "2026-08-31",
+    "temaId": "cardiopatias-congenitas-comuns"
+  },
+  {
+    "semana": 35,
+    "disciplina": "Pediatria",
+    "temaRaw": "Nefrologia Pediátrica",
+    "aula": "Nefrologia Pediátrica",
+    "aulaOrdem": 70,
+    "area": "Pediatria",
+    "aulaTopicos": [
+      "Cardiopatias congênitas - parte 1 (aula especial)",
+      "Cardiopatias congênitas - parte 2 (aula especial)",
+      "Cardiopatias congênitas - parte 3 (aula especial)",
+      "Infecção do trato urinário",
+      "Outros distúrbios urológicos",
+      "PCR na infância (aula especial)"
+    ],
+    "dataProgramada": "2026-08-31",
+    "temaId": "emergencias-pediatricas-geral"
   },
   {
     "semana": 36,
@@ -2514,9 +3061,32 @@
     "aula": "Tuberculose",
     "aulaOrdem": 71,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Controle da tubeRCUlose",
+      "História natural",
+      "Paracoccidioidomicose (aula especial)",
+      "TubeRCUlose extrapulmonar",
+      "TubeRCUlose pulmonar - clínica, diagnóstico e tratamento"
+    ],
     "dataProgramada": "2026-09-07",
     "temaId": "tuberculose"
+  },
+  {
+    "semana": 36,
+    "disciplina": "Pneumologia",
+    "temaRaw": "Tuberculose",
+    "aula": "Tuberculose",
+    "aulaOrdem": 71,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Controle da tubeRCUlose",
+      "História natural",
+      "Paracoccidioidomicose (aula especial)",
+      "TubeRCUlose extrapulmonar",
+      "TubeRCUlose pulmonar - clínica, diagnóstico e tratamento"
+    ],
+    "dataProgramada": "2026-09-07",
+    "temaId": "micoses-invasivas"
   },
   {
     "semana": 36,
@@ -2525,7 +3095,10 @@
     "aula": "Pneumonia e Complicações",
     "aulaOrdem": 72,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Pneumonias comunitárias",
+      "Pneumonias hospitalares"
+    ],
     "dataProgramada": "2026-09-07",
     "temaId": "pac"
   },
@@ -2536,7 +3109,10 @@
     "aula": "Pneumonia e Complicações",
     "aulaOrdem": 72,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Pneumonias comunitárias",
+      "Pneumonias hospitalares"
+    ],
     "dataProgramada": "2026-09-07",
     "temaId": "antibioticoterapia-principios"
   },
@@ -2547,7 +3123,12 @@
     "aula": "AIDS",
     "aulaOrdem": 73,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Conceitos iniciais e história natural",
+      "Diagnóstico e tratamento",
+      "Pneumoaids e neuroaids",
+      "Profilaxias"
+    ],
     "dataProgramada": "2026-09-14",
     "temaId": "hiv-aids"
   },
@@ -2558,7 +3139,10 @@
     "aula": "Parasitoses Intestinais",
     "aulaOrdem": 74,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Parasitose intestinal - parte 1",
+      "Parasitose intestinal - parte 2"
+    ],
     "dataProgramada": "2026-09-14",
     "temaId": "parasitoses-intestinais"
   },
@@ -2569,7 +3153,12 @@
     "aula": "Endocardite Infecciosa / Meningite",
     "aulaOrdem": 75,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Endocardite infecciosa",
+      "ITU (aula especial)",
+      "Meningite",
+      "Sepse e choque séptico (aula especial)"
+    ],
     "dataProgramada": "2026-09-21",
     "temaId": "endocardite-infecciosa"
   },
@@ -2580,7 +3169,12 @@
     "aula": "Endocardite Infecciosa / Meningite",
     "aulaOrdem": 75,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Endocardite infecciosa",
+      "ITU (aula especial)",
+      "Meningite",
+      "Sepse e choque séptico (aula especial)"
+    ],
     "dataProgramada": "2026-09-21",
     "temaId": "meningite"
   },
@@ -2591,9 +3185,30 @@
     "aula": "Endocardite Infecciosa / Meningite",
     "aulaOrdem": 75,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Endocardite infecciosa",
+      "ITU (aula especial)",
+      "Meningite",
+      "Sepse e choque séptico (aula especial)"
+    ],
     "dataProgramada": "2026-09-21",
-    "temaId": "neutropenia-febril"
+    "temaId": "itu-pielonefrite"
+  },
+  {
+    "semana": 38,
+    "disciplina": "Infectologia",
+    "temaRaw": "Endocardite Infecciosa / Meningite",
+    "aula": "Endocardite Infecciosa / Meningite",
+    "aulaOrdem": 75,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Endocardite infecciosa",
+      "ITU (aula especial)",
+      "Meningite",
+      "Sepse e choque séptico (aula especial)"
+    ],
+    "dataProgramada": "2026-09-21",
+    "temaId": "sepse"
   },
   {
     "semana": 38,
@@ -2602,7 +3217,13 @@
     "aula": "Sofrimento Fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério",
     "aulaOrdem": 76,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Fórcipe e vacuoextrator",
+      "Introdução",
+      "Puerpério",
+      "Sofrimento fetal agudo",
+      "Sofrimento fetal crônico"
+    ],
     "dataProgramada": "2026-09-21",
     "temaId": "cardiotocografia-bem-estar-fetal"
   },
@@ -2613,7 +3234,13 @@
     "aula": "Sofrimento Fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério",
     "aulaOrdem": 76,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Fórcipe e vacuoextrator",
+      "Introdução",
+      "Puerpério",
+      "Sofrimento fetal agudo",
+      "Sofrimento fetal crônico"
+    ],
     "dataProgramada": "2026-09-21",
     "temaId": "restricao-crescimento-fetal-obito-fetal"
   },
@@ -2624,7 +3251,13 @@
     "aula": "Sofrimento Fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério",
     "aulaOrdem": 76,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Fórcipe e vacuoextrator",
+      "Introdução",
+      "Puerpério",
+      "Sofrimento fetal agudo",
+      "Sofrimento fetal crônico"
+    ],
     "dataProgramada": "2026-09-21",
     "temaId": "parto-vaginal-operatorio"
   },
@@ -2635,7 +3268,13 @@
     "aula": "Sofrimento Fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério",
     "aulaOrdem": 76,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Fórcipe e vacuoextrator",
+      "Introdução",
+      "Puerpério",
+      "Sofrimento fetal agudo",
+      "Sofrimento fetal crônico"
+    ],
     "dataProgramada": "2026-09-21",
     "temaId": "hemorragia-pos-parto"
   },
@@ -2646,20 +3285,15 @@
     "aula": "Sofrimento Fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério",
     "aulaOrdem": 76,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Fórcipe e vacuoextrator",
+      "Introdução",
+      "Puerpério",
+      "Sofrimento fetal agudo",
+      "Sofrimento fetal crônico"
+    ],
     "dataProgramada": "2026-09-21",
     "temaId": "puerperio-patologico"
-  },
-  {
-    "semana": 38,
-    "disciplina": "Obstetrícia",
-    "temaRaw": "Sofrimento Fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério",
-    "aula": "Sofrimento Fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério",
-    "aulaOrdem": 76,
-    "area": "G.O",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-09-21",
-    "temaId": "infeccoes-ciclo-gravidico-puerperal"
   },
   {
     "semana": 39,
@@ -2668,7 +3302,11 @@
     "aula": "Síndromes Febris",
     "aulaOrdem": 77,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Dengue, chikungunya e zika",
+      "Febre amarela e leptospirose",
+      "Leishmaniose visceral (calazar) (aula especial)"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "dengue"
   },
@@ -2679,7 +3317,11 @@
     "aula": "Síndromes Febris",
     "aulaOrdem": 77,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Dengue, chikungunya e zika",
+      "Febre amarela e leptospirose",
+      "Leishmaniose visceral (calazar) (aula especial)"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "arboviroses-zika-chikungunya-febre-amarela"
   },
@@ -2690,7 +3332,11 @@
     "aula": "Síndromes Febris",
     "aulaOrdem": 77,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Dengue, chikungunya e zika",
+      "Febre amarela e leptospirose",
+      "Leishmaniose visceral (calazar) (aula especial)"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "leptospirose"
   },
@@ -2701,7 +3347,11 @@
     "aula": "Síndromes Febris",
     "aulaOrdem": 77,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Dengue, chikungunya e zika",
+      "Febre amarela e leptospirose",
+      "Leishmaniose visceral (calazar) (aula especial)"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "sindrome-febril-ictero-hemorragica"
   },
@@ -2712,9 +3362,13 @@
     "aula": "Síndromes Febris",
     "aulaOrdem": 77,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Dengue, chikungunya e zika",
+      "Febre amarela e leptospirose",
+      "Leishmaniose visceral (calazar) (aula especial)"
+    ],
     "dataProgramada": "2026-09-28",
-    "temaId": "hepatoesplenomegalias-infecciosas"
+    "temaId": "leishmaniose"
   },
   {
     "semana": 39,
@@ -2723,7 +3377,12 @@
     "aula": "IST",
     "aulaOrdem": 78,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cervicite e dip",
+      "Introdução e vulvovaginites",
+      "Violência sexual",
+      "Úlceras genitais"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "ists-sifilis"
   },
@@ -2734,7 +3393,12 @@
     "aula": "IST",
     "aulaOrdem": 78,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cervicite e dip",
+      "Introdução e vulvovaginites",
+      "Violência sexual",
+      "Úlceras genitais"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "ists-gonorreia-clamidia-outras"
   },
@@ -2745,7 +3409,12 @@
     "aula": "IST",
     "aulaOrdem": 78,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cervicite e dip",
+      "Introdução e vulvovaginites",
+      "Violência sexual",
+      "Úlceras genitais"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "ulceras-genitais"
   },
@@ -2756,7 +3425,12 @@
     "aula": "IST",
     "aulaOrdem": 78,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cervicite e dip",
+      "Introdução e vulvovaginites",
+      "Violência sexual",
+      "Úlceras genitais"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "cervicites"
   },
@@ -2767,7 +3441,12 @@
     "aula": "IST",
     "aulaOrdem": 78,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cervicite e dip",
+      "Introdução e vulvovaginites",
+      "Violência sexual",
+      "Úlceras genitais"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "vulvovaginites"
   },
@@ -2778,7 +3457,12 @@
     "aula": "IST",
     "aulaOrdem": 78,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cervicite e dip",
+      "Introdução e vulvovaginites",
+      "Violência sexual",
+      "Úlceras genitais"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "dip"
   },
@@ -2789,7 +3473,12 @@
     "aula": "IST",
     "aulaOrdem": 78,
     "area": "G.O",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cervicite e dip",
+      "Introdução e vulvovaginites",
+      "Violência sexual",
+      "Úlceras genitais"
+    ],
     "dataProgramada": "2026-09-28",
     "temaId": "violencia-sexual-assistencia"
   },
@@ -2800,7 +3489,10 @@
     "aula": "Neurologia I (Cefaleias, Epilepsias)",
     "aulaOrdem": 79,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cefaleias",
+      "Epilepsias"
+    ],
     "dataProgramada": "2026-10-05",
     "temaId": "cefaleias-primarias"
   },
@@ -2811,7 +3503,10 @@
     "aula": "Neurologia I (Cefaleias, Epilepsias)",
     "aulaOrdem": 79,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cefaleias",
+      "Epilepsias"
+    ],
     "dataProgramada": "2026-10-05",
     "temaId": "crise-convulsiva-epilepsia"
   },
@@ -2822,20 +3517,12 @@
     "aula": "Neurologia I (Cefaleias, Epilepsias)",
     "aulaOrdem": 79,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cefaleias",
+      "Epilepsias"
+    ],
     "dataProgramada": "2026-10-05",
     "temaId": "convulsao-febril"
-  },
-  {
-    "semana": 40,
-    "disciplina": "Neurologia",
-    "temaRaw": "Neurologia I (Cefaleias, Epilepsias)",
-    "aula": "Neurologia I (Cefaleias, Epilepsias)",
-    "aulaOrdem": 79,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-05",
-    "temaId": "disturbios-sono"
   },
   {
     "semana": 40,
@@ -2844,7 +3531,12 @@
     "aula": "Neurologia II (Síndromes Neurológicas e AVE)",
     "aulaOrdem": 80,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "AVE hemorrágico",
+      "AVE isquêmico",
+      "Neuroanatomia",
+      "Síndromes neurológicas"
+    ],
     "dataProgramada": "2026-10-05",
     "temaId": "anatomia-fisiologia-semiologia-neurologica"
   },
@@ -2855,7 +3547,12 @@
     "aula": "Neurologia II (Síndromes Neurológicas e AVE)",
     "aulaOrdem": 80,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "AVE hemorrágico",
+      "AVE isquêmico",
+      "Neuroanatomia",
+      "Síndromes neurológicas"
+    ],
     "dataProgramada": "2026-10-05",
     "temaId": "avc-isquemico"
   },
@@ -2866,7 +3563,12 @@
     "aula": "Neurologia II (Síndromes Neurológicas e AVE)",
     "aulaOrdem": 80,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "AVE hemorrágico",
+      "AVE isquêmico",
+      "Neuroanatomia",
+      "Síndromes neurológicas"
+    ],
     "dataProgramada": "2026-10-05",
     "temaId": "avc-hemorragico"
   },
@@ -2877,7 +3579,11 @@
     "aula": "Neurologia III (Polineuropatias, Demência, Parkinson)",
     "aulaOrdem": 81,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Demências",
+      "Doença de Parkinson",
+      "Fraqueza muscular"
+    ],
     "dataProgramada": "2026-10-12",
     "temaId": "guillain-barre"
   },
@@ -2888,7 +3594,11 @@
     "aula": "Neurologia III (Polineuropatias, Demência, Parkinson)",
     "aulaOrdem": 81,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Demências",
+      "Doença de Parkinson",
+      "Fraqueza muscular"
+    ],
     "dataProgramada": "2026-10-12",
     "temaId": "doencas-neuromusculares"
   },
@@ -2899,18 +3609,11 @@
     "aula": "Neurologia III (Polineuropatias, Demência, Parkinson)",
     "aulaOrdem": 81,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-12",
-    "temaId": "doencas-desmielinizantes"
-  },
-  {
-    "semana": 41,
-    "disciplina": "Neurologia",
-    "temaRaw": "Neurologia III (Polineuropatias, Demência, Parkinson)",
-    "aula": "Neurologia III (Polineuropatias, Demência, Parkinson)",
-    "aulaOrdem": 81,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Demências",
+      "Doença de Parkinson",
+      "Fraqueza muscular"
+    ],
     "dataProgramada": "2026-10-12",
     "temaId": "demencias"
   },
@@ -2921,20 +3624,13 @@
     "aula": "Neurologia III (Polineuropatias, Demência, Parkinson)",
     "aulaOrdem": 81,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Demências",
+      "Doença de Parkinson",
+      "Fraqueza muscular"
+    ],
     "dataProgramada": "2026-10-12",
     "temaId": "doenca-parkinson"
-  },
-  {
-    "semana": 41,
-    "disciplina": "Neurologia",
-    "temaRaw": "Neurologia III (Polineuropatias, Demência, Parkinson)",
-    "aula": "Neurologia III (Polineuropatias, Demência, Parkinson)",
-    "aulaOrdem": 81,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-12",
-    "temaId": "avaliacao-geriatrica-ampla"
   },
   {
     "semana": 41,
@@ -2943,7 +3639,10 @@
     "aula": "Doenças Exantemáticas na Infância",
     "aulaOrdem": 82,
     "area": "Pediatria",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Sarampo, rubéola, exantema súbito e eritema infeccioso",
+      "Varicela, doença mão-pé-boca, escarlatina e mononucleose infecciosa"
+    ],
     "dataProgramada": "2026-10-12",
     "temaId": "doencas-exantematicas"
   },
@@ -2954,95 +3653,10 @@
     "aula": "Psiquiatria I",
     "aulaOrdem": 83,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "psicopatologia-semiologia-psiquiatrica"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria I",
-    "aula": "Psiquiatria I",
-    "aulaOrdem": 83,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "depressao-maior"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria I",
-    "aula": "Psiquiatria I",
-    "aulaOrdem": 83,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "transtorno-bipolar"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria I",
-    "aula": "Psiquiatria I",
-    "aulaOrdem": 83,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "transtornos-ansiosos"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria I",
-    "aula": "Psiquiatria I",
-    "aulaOrdem": 83,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "toc"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria I",
-    "aula": "Psiquiatria I",
-    "aulaOrdem": 83,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "psicofarmacologia"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria I",
-    "aula": "Psiquiatria I",
-    "aulaOrdem": 83,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "emergencias-psiquiatricas"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria II",
-    "aula": "Psiquiatria II",
-    "aulaOrdem": 84,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "esquizofrenia-psicoses"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria II",
-    "aula": "Psiquiatria II",
-    "aulaOrdem": 84,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Delirium",
+      "Transtornos relacionados ao uso de substâncias"
+    ],
     "dataProgramada": "2026-10-19",
     "temaId": "transtornos-uso-substancias"
   },
@@ -3053,7 +3667,76 @@
     "aula": "Psiquiatria II",
     "aulaOrdem": 84,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "TOC, TEPT e transtornos alimentares",
+      "Transtornos de ansiedade",
+      "Transtornos do humor",
+      "Transtornos psicóticos"
+    ],
+    "dataProgramada": "2026-10-19",
+    "temaId": "depressao-maior"
+  },
+  {
+    "semana": 42,
+    "disciplina": "Psiquiatria",
+    "temaRaw": "Psiquiatria II",
+    "aula": "Psiquiatria II",
+    "aulaOrdem": 84,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "TOC, TEPT e transtornos alimentares",
+      "Transtornos de ansiedade",
+      "Transtornos do humor",
+      "Transtornos psicóticos"
+    ],
+    "dataProgramada": "2026-10-19",
+    "temaId": "transtorno-bipolar"
+  },
+  {
+    "semana": 42,
+    "disciplina": "Psiquiatria",
+    "temaRaw": "Psiquiatria II",
+    "aula": "Psiquiatria II",
+    "aulaOrdem": 84,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "TOC, TEPT e transtornos alimentares",
+      "Transtornos de ansiedade",
+      "Transtornos do humor",
+      "Transtornos psicóticos"
+    ],
+    "dataProgramada": "2026-10-19",
+    "temaId": "transtornos-ansiosos"
+  },
+  {
+    "semana": 42,
+    "disciplina": "Psiquiatria",
+    "temaRaw": "Psiquiatria II",
+    "aula": "Psiquiatria II",
+    "aulaOrdem": 84,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "TOC, TEPT e transtornos alimentares",
+      "Transtornos de ansiedade",
+      "Transtornos do humor",
+      "Transtornos psicóticos"
+    ],
+    "dataProgramada": "2026-10-19",
+    "temaId": "toc"
+  },
+  {
+    "semana": 42,
+    "disciplina": "Psiquiatria",
+    "temaRaw": "Psiquiatria II",
+    "aula": "Psiquiatria II",
+    "aulaOrdem": 84,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "TOC, TEPT e transtornos alimentares",
+      "Transtornos de ansiedade",
+      "Transtornos do humor",
+      "Transtornos psicóticos"
+    ],
     "dataProgramada": "2026-10-19",
     "temaId": "transtornos-alimentares"
   },
@@ -3064,31 +3747,14 @@
     "aula": "Psiquiatria II",
     "aulaOrdem": 84,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "TOC, TEPT e transtornos alimentares",
+      "Transtornos de ansiedade",
+      "Transtornos do humor",
+      "Transtornos psicóticos"
+    ],
     "dataProgramada": "2026-10-19",
-    "temaId": "transtornos-somatoformes"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria II",
-    "aula": "Psiquiatria II",
-    "aulaOrdem": 84,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "psiquiatria-social-reforma-psiquiatrica"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Psiquiatria",
-    "temaRaw": "Psiquiatria II",
-    "aula": "Psiquiatria II",
-    "aulaOrdem": 84,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "saude-mental-ab"
+    "temaId": "esquizofrenia-psicoses"
   },
   {
     "semana": 42,
@@ -3097,7 +3763,14 @@
     "aula": "Oftalmologia",
     "aulaOrdem": 85,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anatomia",
+      "Catarata",
+      "Conjuntivite e diagnósticos diferenciais",
+      "Glaucoma",
+      "Retinoblastoma",
+      "Retinopatias"
+    ],
     "dataProgramada": "2026-10-19",
     "temaId": "anatomia-semiologia-ocular"
   },
@@ -3108,7 +3781,14 @@
     "aula": "Oftalmologia",
     "aulaOrdem": 85,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anatomia",
+      "Catarata",
+      "Conjuntivite e diagnósticos diferenciais",
+      "Glaucoma",
+      "Retinoblastoma",
+      "Retinopatias"
+    ],
     "dataProgramada": "2026-10-19",
     "temaId": "olho-vermelho-diagnostico-diferencial"
   },
@@ -3119,7 +3799,14 @@
     "aula": "Oftalmologia",
     "aulaOrdem": 85,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anatomia",
+      "Catarata",
+      "Conjuntivite e diagnósticos diferenciais",
+      "Glaucoma",
+      "Retinoblastoma",
+      "Retinopatias"
+    ],
     "dataProgramada": "2026-10-19",
     "temaId": "glaucoma-cronico-angulo-aberto"
   },
@@ -3130,7 +3817,14 @@
     "aula": "Oftalmologia",
     "aulaOrdem": 85,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anatomia",
+      "Catarata",
+      "Conjuntivite e diagnósticos diferenciais",
+      "Glaucoma",
+      "Retinoblastoma",
+      "Retinopatias"
+    ],
     "dataProgramada": "2026-10-19",
     "temaId": "catarata-erros-refrativos"
   },
@@ -3141,42 +3835,30 @@
     "aula": "Oftalmologia",
     "aulaOrdem": 85,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Anatomia",
+      "Catarata",
+      "Conjuntivite e diagnósticos diferenciais",
+      "Glaucoma",
+      "Retinoblastoma",
+      "Retinopatias"
+    ],
     "dataProgramada": "2026-10-19",
     "temaId": "retinopatia-diabetica-hipertensiva"
   },
   {
-    "semana": 42,
-    "disciplina": "Oftalmologia",
-    "temaRaw": "Oftalmologia",
-    "aula": "Oftalmologia",
-    "aulaOrdem": 85,
-    "area": "Cirurgia",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "neuroftalmologia-basica"
-  },
-  {
-    "semana": 42,
-    "disciplina": "Oftalmologia",
-    "temaRaw": "Oftalmologia",
-    "aula": "Oftalmologia",
-    "aulaOrdem": 85,
-    "area": "Cirurgia",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-19",
-    "temaId": "trauma-ocular"
-  },
-  {
     "semana": 43,
     "disciplina": "Especialidades Cirúrgicas",
     "temaRaw": "Especialidade Cirúrgica - Parte I",
     "aula": "Especialidade Cirúrgica - Parte I",
     "aulaOrdem": 86,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Vascular: aneurismas",
+      "Vascular: membros inferiores"
+    ],
     "dataProgramada": "2026-10-26",
-    "temaId": "perda-auditiva"
+    "temaId": "doenca-arterial-obstrutiva-periferica"
   },
   {
     "semana": 43,
@@ -3185,18 +3867,66 @@
     "aula": "Especialidade Cirúrgica - Parte I",
     "aulaOrdem": 86,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Vascular: aneurismas",
+      "Vascular: membros inferiores"
+    ],
+    "dataProgramada": "2026-10-26",
+    "temaId": "insuficiencia-venosa-cronica"
+  },
+  {
+    "semana": 43,
+    "disciplina": "Especialidades Cirúrgicas",
+    "temaRaw": "Especialidade Cirúrgica - Parte I",
+    "aula": "Especialidade Cirúrgica - Parte I",
+    "aulaOrdem": 86,
+    "area": "Cirurgia",
+    "aulaTopicos": [
+      "Vascular: aneurismas",
+      "Vascular: membros inferiores"
+    ],
+    "dataProgramada": "2026-10-26",
+    "temaId": "disseccao-aorta"
+  },
+  {
+    "semana": 43,
+    "disciplina": "Especialidades Cirúrgicas",
+    "temaRaw": "Especialidade Cirúrgica - Parte II",
+    "aula": "Especialidade Cirúrgica - Parte II",
+    "aulaOrdem": 87,
+    "area": "Cirurgia",
+    "aulaTopicos": [
+      "Cirurgia bariátrica",
+      "Proctologia"
+    ],
+    "dataProgramada": "2026-10-26",
+    "temaId": "cirurgia-bariatrica-metabolica"
+  },
+  {
+    "semana": 43,
+    "disciplina": "Especialidades Cirúrgicas",
+    "temaRaw": "Especialidade Cirúrgica - Parte II",
+    "aula": "Especialidade Cirúrgica - Parte II",
+    "aulaOrdem": 87,
+    "area": "Cirurgia",
+    "aulaTopicos": [
+      "Cirurgia bariátrica",
+      "Proctologia"
+    ],
     "dataProgramada": "2026-10-26",
     "temaId": "afeccoes-anorretais-benignas"
   },
   {
     "semana": 43,
     "disciplina": "Especialidades Cirúrgicas",
-    "temaRaw": "Especialidade Cirúrgica - Parte I",
-    "aula": "Especialidade Cirúrgica - Parte I",
-    "aulaOrdem": 86,
+    "temaRaw": "Especialidade Cirúrgica - Parte II",
+    "aula": "Especialidade Cirúrgica - Parte II",
+    "aulaOrdem": 87,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cirurgia bariátrica",
+      "Proctologia"
+    ],
     "dataProgramada": "2026-10-26",
     "temaId": "doenca-hemorroidaria"
   },
@@ -3207,9 +3937,12 @@
     "aula": "Especialidade Cirúrgica - Parte II",
     "aulaOrdem": 87,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cirurgia bariátrica",
+      "Proctologia"
+    ],
     "dataProgramada": "2026-10-26",
-    "temaId": "doenca-arterial-obstrutiva-periferica"
+    "temaId": "cirurgia-cabeca-pescoco-tireoide"
   },
   {
     "semana": 43,
@@ -3218,20 +3951,12 @@
     "aula": "Especialidade Cirúrgica - Parte II",
     "aulaOrdem": 87,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Cirurgia bariátrica",
+      "Proctologia"
+    ],
     "dataProgramada": "2026-10-26",
-    "temaId": "insuficiencia-venosa-cronica"
-  },
-  {
-    "semana": 43,
-    "disciplina": "Especialidades Cirúrgicas",
-    "temaRaw": "Especialidade Cirúrgica - Parte II",
-    "aula": "Especialidade Cirúrgica - Parte II",
-    "aulaOrdem": 87,
-    "area": "Cirurgia",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-10-26",
-    "temaId": "oncologia-principios-basicos"
+    "temaId": "cirurgia-cabeca-pescoco-neoplasias-traqueostomia"
   },
   {
     "semana": 44,
@@ -3240,9 +3965,13 @@
     "aula": "Dermatologia I",
     "aulaOrdem": 88,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Hanseníase",
+      "Outras doenças infectoparasitárias",
+      "Piodermites (aula especial)"
+    ],
     "dataProgramada": "2026-11-02",
-    "temaId": "histologia-fisiologia-pele-lesoes-elementares"
+    "temaId": "piodermites-infeccoes-bacterianas-pele"
   },
   {
     "semana": 44,
@@ -3251,75 +3980,99 @@
     "aula": "Dermatologia I",
     "aulaOrdem": 88,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-11-02",
-    "temaId": "dermatoses-inflamatorias"
-  },
-  {
-    "semana": 44,
-    "disciplina": "Dermatologia",
-    "temaRaw": "Dermatologia I",
-    "aula": "Dermatologia I",
-    "aulaOrdem": 88,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-11-02",
-    "temaId": "dermatoses-vesicobolhosas"
-  },
-  {
-    "semana": 44,
-    "disciplina": "Dermatologia",
-    "temaRaw": "Dermatologia I",
-    "aula": "Dermatologia I",
-    "aulaOrdem": 88,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-11-02",
-    "temaId": "farmacodermias"
-  },
-  {
-    "semana": 44,
-    "disciplina": "Dermatologia",
-    "temaRaw": "Dermatologia I",
-    "aula": "Dermatologia I",
-    "aulaOrdem": 88,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-11-02",
-    "temaId": "infeccoes-cutaneas"
-  },
-  {
-    "semana": 44,
-    "disciplina": "Dermatologia",
-    "temaRaw": "Dermatologia II",
-    "aula": "Dermatologia II",
-    "aulaOrdem": 89,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
-    "dataProgramada": "2026-11-02",
-    "temaId": "cancer-pele-oncologia-cutanea"
-  },
-  {
-    "semana": 44,
-    "disciplina": "Dermatologia",
-    "temaRaw": "Dermatologia II",
-    "aula": "Dermatologia II",
-    "aulaOrdem": 89,
-    "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Hanseníase",
+      "Outras doenças infectoparasitárias",
+      "Piodermites (aula especial)"
+    ],
     "dataProgramada": "2026-11-02",
     "temaId": "hanseniase"
   },
   {
     "semana": 44,
     "disciplina": "Dermatologia",
+    "temaRaw": "Dermatologia I",
+    "aula": "Dermatologia I",
+    "aulaOrdem": 88,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Hanseníase",
+      "Outras doenças infectoparasitárias",
+      "Piodermites (aula especial)"
+    ],
+    "dataProgramada": "2026-11-02",
+    "temaId": "infeccoes-cutaneas"
+  },
+  {
+    "semana": 44,
+    "disciplina": "Dermatologia",
+    "temaRaw": "Dermatologia I",
+    "aula": "Dermatologia I",
+    "aulaOrdem": 88,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Hanseníase",
+      "Outras doenças infectoparasitárias",
+      "Piodermites (aula especial)"
+    ],
+    "dataProgramada": "2026-11-02",
+    "temaId": "dermatoses-miscelanea-escabiose-pediculose"
+  },
+  {
+    "semana": 44,
+    "disciplina": "Dermatologia",
     "temaRaw": "Dermatologia II",
     "aula": "Dermatologia II",
     "aulaOrdem": 89,
     "area": "Clínica Médica",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Farmacodermias e eczemas",
+      "Psoríase, buloses e neoplasias"
+    ],
     "dataProgramada": "2026-11-02",
-    "temaId": "dermatoses-miscelanea-escabiose-pediculose"
+    "temaId": "farmacodermias"
+  },
+  {
+    "semana": 44,
+    "disciplina": "Dermatologia",
+    "temaRaw": "Dermatologia II",
+    "aula": "Dermatologia II",
+    "aulaOrdem": 89,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Farmacodermias e eczemas",
+      "Psoríase, buloses e neoplasias"
+    ],
+    "dataProgramada": "2026-11-02",
+    "temaId": "dermatoses-inflamatorias"
+  },
+  {
+    "semana": 44,
+    "disciplina": "Dermatologia",
+    "temaRaw": "Dermatologia II",
+    "aula": "Dermatologia II",
+    "aulaOrdem": 89,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Farmacodermias e eczemas",
+      "Psoríase, buloses e neoplasias"
+    ],
+    "dataProgramada": "2026-11-02",
+    "temaId": "dermatoses-vesicobolhosas"
+  },
+  {
+    "semana": 44,
+    "disciplina": "Dermatologia",
+    "temaRaw": "Dermatologia II",
+    "aula": "Dermatologia II",
+    "aulaOrdem": 89,
+    "area": "Clínica Médica",
+    "aulaTopicos": [
+      "Farmacodermias e eczemas",
+      "Psoríase, buloses e neoplasias"
+    ],
+    "dataProgramada": "2026-11-02",
+    "temaId": "cancer-pele-oncologia-cutanea"
   },
   {
     "semana": 45,
@@ -3328,7 +4081,10 @@
     "aula": "Ortopedia I",
     "aulaOrdem": 90,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia clínica",
+      "Traumato-ortopedia e ortopedia clínica"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "fraturas-luxacoes-comuns"
   },
@@ -3339,7 +4095,10 @@
     "aula": "Ortopedia I",
     "aulaOrdem": 90,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia clínica",
+      "Traumato-ortopedia e ortopedia clínica"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "complicacoes-trauma-ortopedico"
   },
@@ -3350,7 +4109,10 @@
     "aula": "Ortopedia I",
     "aulaOrdem": 90,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia clínica",
+      "Traumato-ortopedia e ortopedia clínica"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "doencas-ombro-cotovelo"
   },
@@ -3361,7 +4123,10 @@
     "aula": "Ortopedia I",
     "aulaOrdem": 90,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia clínica",
+      "Traumato-ortopedia e ortopedia clínica"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "doencas-mao-sindromes-compressivas"
   },
@@ -3372,7 +4137,10 @@
     "aula": "Ortopedia I",
     "aulaOrdem": 90,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia clínica",
+      "Traumato-ortopedia e ortopedia clínica"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "lesoes-ligamentares-joelho"
   },
@@ -3383,7 +4151,10 @@
     "aula": "Ortopedia I",
     "aulaOrdem": 90,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia clínica",
+      "Traumato-ortopedia e ortopedia clínica"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "lombalgia-hernia-disco"
   },
@@ -3394,7 +4165,10 @@
     "aula": "Ortopedia I",
     "aulaOrdem": 90,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia clínica",
+      "Traumato-ortopedia e ortopedia clínica"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "doencas-coluna-vertebral"
   },
@@ -3405,7 +4179,10 @@
     "aula": "Ortopedia I",
     "aulaOrdem": 90,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia clínica",
+      "Traumato-ortopedia e ortopedia clínica"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "artrite-septica-osteomielite"
   },
@@ -3416,7 +4193,11 @@
     "aula": "Ortopedia II",
     "aulaOrdem": 91,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia pediátrica doenças do quadril",
+      "Ortopedia pediátrica membros inferiores",
+      "Ortopedia pediátrica membros superiores"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "ortopedia-pediatrica-quadril-pe"
   },
@@ -3427,7 +4208,11 @@
     "aula": "Ortopedia II",
     "aulaOrdem": 91,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia pediátrica doenças do quadril",
+      "Ortopedia pediátrica membros inferiores",
+      "Ortopedia pediátrica membros superiores"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "desenvolvimento-ortopedico-crianca"
   },
@@ -3438,7 +4223,11 @@
     "aula": "Ortopedia II",
     "aulaOrdem": 91,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia pediátrica doenças do quadril",
+      "Ortopedia pediátrica membros inferiores",
+      "Ortopedia pediátrica membros superiores"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "ombro-joelho-pediatrico"
   },
@@ -3449,7 +4238,11 @@
     "aula": "Ortopedia II",
     "aulaOrdem": 91,
     "area": "Cirurgia",
-    "aulaTopicos": [],
+    "aulaTopicos": [
+      "Ortopedia pediátrica doenças do quadril",
+      "Ortopedia pediátrica membros inferiores",
+      "Ortopedia pediátrica membros superiores"
+    ],
     "dataProgramada": "2026-11-09",
     "temaId": "maos-tortas-congenitas"
   }
