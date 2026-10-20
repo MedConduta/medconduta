@@ -2,7 +2,7 @@ import { fetchJsonCached, escapeHtml, renderMarkdown, renderImagemEstudo } from 
 import { getItem, setItem, getAll } from "../db.js";
 import { navigate } from "../router.js";
 import { AREA_POR_CATEGORIA, ORDEM_AREAS, CATEGORIAS_VALIDAS } from "../areas.js";
-import { gerarTemaComIA, gerarFluxogramaComIA, gerarQuestaoComIA, avaliarTemaComIA } from "../iaConteudo.js";
+import { gerarTemaComIA, gerarFluxogramaComIA, gerarQuestaoComIA } from "../iaConteudo.js";
 import { askAI } from "../ai.js";
 import { formatarTemaComoContexto } from "../rag.js";
 import { renderFlowchart } from "../components/flowchart.js";
@@ -28,12 +28,10 @@ const ORDEM_QUADRANTE = ["Crítico", "Atenção", "Secundário fraco", "Dominado
 // (ver carregarAbasSalvas/salvarAbaIA), em vez de recalcular toda vez.
 const IA_TABS = [
   { tipo: "explicar", titulo: "Explicar", icone: "sparkles" },
-  { tipo: "avaliar", titulo: "Avaliar", icone: "checklist" },
   { tipo: "questao", titulo: "Questão", icone: "clipboard" },
   { tipo: "fluxograma", titulo: "Fluxograma", icone: "flowchart" },
   { tipo: "pegadinhas", titulo: "Pegadinhas", icone: "alert-circle" },
   { tipo: "memorizar", titulo: "Memorizar", icone: "brain" },
-  { tipo: "testar", titulo: "Me testar", icone: "target" },
 ];
 
 function chaveAbaIA(temaId, tipo) {
@@ -387,7 +385,6 @@ function renderPainelFluxograma(dados) {
 
 const RENDER_PAINEL_IA = {
   explicar: renderPainelTexto,
-  avaliar: renderPainelTexto,
   pegadinhas: renderPainelTexto,
   memorizar: renderPainelTexto,
   questao: renderPainelQuestao,
@@ -586,10 +583,6 @@ export async function renderDetalhe(container, { id }) {
   }
 
   function renderizarPainel(tipo, dados) {
-    if (tipo === "testar") {
-      montarPainelTestar(dados);
-      return;
-    }
     const rotuloRegerar =
       tipo === "questao" ? "↻ Gerar outra questão" : tipo === "fluxograma" ? "↻ Gerar outro fluxograma" : "↻ Gerar de novo";
     painelEl.innerHTML = `
@@ -600,10 +593,6 @@ export async function renderDetalhe(container, { id }) {
   }
 
   async function gerarAba(tipo) {
-    if (tipo === "testar") {
-      await gerarPerguntaTestar();
-      return;
-    }
     travarTabs(true);
     painelEl.hidden = false;
     painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">Gerando...</div></div>`;
@@ -617,8 +606,6 @@ export async function renderDetalhe(container, { id }) {
             contexto: formatarTemaComoContexto(tema),
           }),
         };
-      } else if (tipo === "avaliar") {
-        dados = { texto: await avaliarTemaComIA(tema) };
       } else if (tipo === "pegadinhas") {
         dados = {
           texto: await askAI({
@@ -646,83 +633,6 @@ export async function renderDetalhe(container, { id }) {
       await salvarAbaIA(tema.id, tipo, dados);
       marcarTabComConteudo(tipo);
       renderizarPainel(tipo, dados);
-    } catch (err) {
-      painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">⚠ ${escapeHtml(err.message)}</div></div>`;
-    } finally {
-      travarTabs(false);
-    }
-  }
-
-  /**
-   * "Me testar" — modo quiz simples: a IA faz uma pergunta (sem revelar a
-   * resposta), o usuário responde em texto livre, a IA corrige. Cada pergunta
-   * e cada correção são chamadas sem cache (semCache) — repetir "Me testar"
-   * tem que poder trazer uma pergunta diferente, é treino, não FAQ. Só o que
-   * já tem feedback é salvo (uma pergunta ainda sem resposta é estado
-   * transitório, não "conteúdo gerado" pra consultar depois).
-   */
-  function montarPainelTestar(dados) {
-    const corpo = dados.feedback
-      ? `
-        <div class="ia-resposta" style="margin-top:12px;">${renderMarkdown(dados.feedback)}</div>
-        <button type="button" class="btn btn--secondary" id="btn-testar-nova" style="margin-top:12px;">Nova pergunta</button>
-      `
-      : `
-        <form id="form-resposta-testar" style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
-          <textarea id="resposta-testar" rows="3" placeholder="Sua resposta..." required></textarea>
-          <button class="btn btn--primary" type="submit" style="align-self:flex-start;">Responder</button>
-        </form>
-      `;
-    painelEl.hidden = false;
-    painelEl.innerHTML = `
-      <div class="ia-tab-panel__body">
-        <div class="ia-resposta">${renderMarkdown(dados.pergunta)}</div>
-        ${corpo}
-      </div>
-    `;
-
-    painelEl.querySelector("#form-resposta-testar")?.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const resposta = painelEl.querySelector("#resposta-testar").value.trim();
-      if (!resposta) return;
-      travarTabs(true);
-      painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">Corrigindo...</div></div>`;
-      try {
-        const feedback = await askAI({
-          pergunta: `Pergunta feita: "${dados.pergunta}"\nResposta do usuário: "${resposta}"\n\nAvalie a resposta: diga se está correta, o que acertou e o que faltou ou precisa corrigir. Seja direto.`,
-          tarefa: "corrigir a resposta do usuário a uma pergunta de treino, apontando acertos e o que falta",
-          contexto: formatarTemaComoContexto(tema),
-          semCache: true,
-        });
-        const novoDados = { ...dados, resposta, feedback };
-        abasEmMemoria.set("testar", novoDados);
-        await salvarAbaIA(tema.id, "testar", novoDados);
-        marcarTabComConteudo("testar");
-        montarPainelTestar(novoDados);
-      } catch (err) {
-        painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">⚠ ${escapeHtml(err.message)}</div></div>`;
-      } finally {
-        travarTabs(false);
-      }
-    });
-
-    painelEl.querySelector("#btn-testar-nova")?.addEventListener("click", () => gerarPerguntaTestar());
-  }
-
-  async function gerarPerguntaTestar() {
-    travarTabs(true);
-    painelEl.hidden = false;
-    painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">Preparando uma pergunta...</div></div>`;
-    try {
-      const pergunta = await askAI({
-        pergunta: `Me faça UMA pergunta objetiva, estilo prova de residência, sobre "${tema.titulo}" — sem me dar a resposta, só a pergunta.`,
-        tarefa: "elaborar uma pergunta de treino oral sobre o tema, sem revelar a resposta",
-        contexto: formatarTemaComoContexto(tema),
-        semCache: true,
-      });
-      const dados = { pergunta };
-      abasEmMemoria.set("testar", dados);
-      montarPainelTestar(dados);
     } catch (err) {
       painelEl.innerHTML = `<div class="ia-tab-panel__body"><div class="explanation-box">⚠ ${escapeHtml(err.message)}</div></div>`;
     } finally {
