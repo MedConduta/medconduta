@@ -39,7 +39,7 @@ export async function renderCurso(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Curso</div>
         <h1>Curso</h1>
-        <p class="page-header__desc">Cronograma de estudo semana a semana, com revisão espaçada automática. Marque o tema como estudado em <a href="#/residencia/conteudo">Conteúdo</a> — progresso e revisões aparecem aqui sozinhos.</p>
+        <p class="page-header__desc">Cronograma do MEDCURSO 2026 semana a semana (45 semanas, aulas com seus resumos), com revisão espaçada automática. Marque o tema como estudado em <a href="#/residencia/conteudo">Conteúdo</a> — progresso e revisões aparecem aqui sozinhos.</p>
       </div>
 
       ${renderDashboard(dashboard)}
@@ -105,6 +105,9 @@ export async function renderCurso(container) {
         const visivel = matchTexto && matchCategoria && matchStatus;
         li.hidden = !visivel;
         if (visivel) algumVisivel = true;
+      });
+      card.querySelectorAll("[data-aula-grupo]").forEach((grupo) => {
+        grupo.hidden = ![...grupo.querySelectorAll("[data-item]")].some((li) => !li.hidden);
       });
       card.hidden = !algumVisivel;
     });
@@ -254,6 +257,14 @@ function renderAgendaBloco(titulo, bloco) {
 }
 
 function renderSemana(semana) {
+  // Agrupa os temas da semana pela aula do MEDCURSO (ordem do cronograma).
+  const grupos = [];
+  for (const item of semana.itens) {
+    const chave = item.aula || "";
+    let grupo = grupos.find((g) => g.aula === chave);
+    if (!grupo) grupos.push((grupo = { aula: chave, topicos: item.aulaTopicos || [], itens: [] }));
+    grupo.itens.push(item);
+  }
   return `
     <details class="card content-area" data-semana-card ${semana.numero <= 2 ? "open" : ""}>
       <summary class="content-area__title">
@@ -261,9 +272,18 @@ function renderSemana(semana) {
         <span class="content-area__count">${semana.concluidos}/${semana.total}</span>
       </summary>
       ${renderBarraProgresso(semana.percentual)}
-      <ul class="content-list" style="margin-top:12px;">
-        ${semana.itens.map(renderItem).join("")}
-      </ul>
+      ${grupos
+        .map(
+          (g) => `
+        <div class="curso-aula" data-aula-grupo>
+          ${g.aula ? `<h3 class="curso-aula__titulo">${escapeHtml(g.aula)}</h3>` : ""}
+          ${g.topicos.length ? `<p class="curso-aula__topicos">${g.topicos.map(escapeHtml).join(" · ")}</p>` : ""}
+          <ul class="content-list">
+            ${g.itens.map(renderItem).join("")}
+          </ul>
+        </div>`
+        )
+        .join("")}
     </details>
   `;
 }
@@ -272,7 +292,7 @@ function renderItem(item) {
   const etapa = (aplicavel, feito, label) => (aplicavel ? `<span style="opacity:${feito ? 1 : 0.45};">${feito ? "✓" : "○"} ${label}</span>` : "");
   const prioridade = infoPrioridade(item.prioridadeProva);
   return `
-    <li data-item data-tema-id="${item.temaId}" data-titulo="${escapeHtml(item.titulo.toLowerCase())}" data-categoria="${escapeHtml(item.categoria)}" class="${prioridade.bordaClasse}">
+    <li data-item data-tema-id="${item.temaId}" data-titulo="${escapeHtml(item.titulo.toLowerCase())}" data-categoria="${escapeHtml(item.categoria)}" class="curso-item ${prioridade.bordaClasse}">
       <a class="content-list__item" href="#/residencia/conteudo/${item.temaId}">
         <span class="content-list__title">${item.percentual === 100 ? "✓ " : ""}${escapeHtml(item.titulo)}</span>
         <span style="display:flex;gap:10px;align-items:center;font-size:var(--fs-xs);color:var(--color-text-secondary);white-space:nowrap;">
@@ -281,6 +301,7 @@ function renderItem(item) {
           ${badgePrioridade(item.prioridadeProva)}
         </span>
       </a>
+      ${item.temQuestoes ? `<a class="acao-mini acao-mini--link" href="#/residencia/questoes?temaId=${encodeURIComponent(item.temaId)}" aria-label="Questões de ${escapeHtml(item.titulo)}">Questões →</a>` : ""}
     </li>
   `;
 }

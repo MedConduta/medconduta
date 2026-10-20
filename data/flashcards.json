@@ -85,25 +85,25 @@
   },
   {
     "id": "fc-pcr-acls-1",
-    "temaId": "pcr-acls",
+    "temaId": "parada-cardiorrespiratoria-rcp",
     "frente": "Quais são os ritmos chocáveis na PCR?",
     "verso": "Fibrilação Ventricular (FV) e Taquicardia Ventricular sem pulso (TV sem pulso)."
   },
   {
     "id": "fc-pcr-acls-2",
-    "temaId": "pcr-acls",
+    "temaId": "parada-cardiorrespiratoria-rcp",
     "frente": "Quais são os ritmos não chocáveis na PCR?",
     "verso": "Assistolia e Atividade Elétrica Sem Pulso (AESP)."
   },
   {
     "id": "fc-pcr-acls-3",
-    "temaId": "pcr-acls",
+    "temaId": "parada-cardiorrespiratoria-rcp",
     "frente": "Qual a dose e intervalo de adrenalina no ACLS?",
     "verso": "1 mg IV/IO a cada 3-5 minutos."
   },
   {
     "id": "fc-pcr-acls-4",
-    "temaId": "pcr-acls",
+    "temaId": "parada-cardiorrespiratoria-rcp",
     "frente": "Qual o antiarrítmico de escolha em FV/TV sem pulso refratária ao choque?",
     "verso": "Amiodarona 300 mg IV (pode repetir 150 mg)."
   },
@@ -259,19 +259,19 @@
   },
   {
     "id": "fc-puericultura-pni-1",
-    "temaId": "puericultura-pni",
+    "temaId": "imunizacoes",
     "frente": "Quais vacinas são dadas ao nascimento no calendário nacional?",
     "verso": "BCG e a 1ª dose de Hepatite B."
   },
   {
     "id": "fc-puericultura-pni-2",
-    "temaId": "puericultura-pni",
+    "temaId": "imunizacoes",
     "frente": "Em que idades é feita a vacina pentavalente?",
     "verso": "2, 4 e 6 meses de vida."
   },
   {
     "id": "fc-puericultura-pni-3",
-    "temaId": "puericultura-pni",
+    "temaId": "imunizacoes",
     "frente": "Quando é aplicada a tríplice viral (SCR) pela primeira vez?",
     "verso": "Aos 12 meses de idade."
   },
@@ -619,19 +619,19 @@
   },
   {
     "id": "fc-arritmias-cardiacas-gerais-1",
-    "temaId": "arritmias-cardiacas-gerais",
+    "temaId": "bradiarritmias",
     "frente": "Qual a droga de primeira linha para bradicardia sintomática?",
     "verso": "Atropina 0,5 mg IV."
   },
   {
     "id": "fc-arritmias-cardiacas-gerais-2",
-    "temaId": "arritmias-cardiacas-gerais",
+    "temaId": "taquiarritmias",
     "frente": "Qual a conduta em taquicardia com pulso e instabilidade hemodinâmica?",
     "verso": "Cardioversão elétrica sincronizada imediata."
   },
   {
     "id": "fc-arritmias-cardiacas-gerais-3",
-    "temaId": "arritmias-cardiacas-gerais",
+    "temaId": "taquiarritmias",
     "frente": "Qual o tratamento específico de torsades de pointes?",
     "verso": "Sulfato de magnésio intravenoso."
   },
@@ -1516,105 +1516,105 @@
   },
   {
     "id": "fc-cancer-gastrico-esofago-1",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-esofago",
     "frente": "Classificação de Siewert para tumores da junção esofagogástrica e conduta cirúrgica.",
     "verso": "I: 1–5 cm acima da JEG (esofagectomia); II: 1 cm acima a 2 cm abaixo (esofagectomia distal ou gastrectomia total ampliada); III: 2–5 cm abaixo (gastrectomia total com esofagectomia distal).",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-cancer-gastrico-esofago-2",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-gastrico",
     "frente": "Qual o esquema de neoadjuvância no adenocarcinoma gástrico localmente avançado?",
     "verso": "FLOT perioperatório (5-FU, leucovorin, oxaliplatina, docetaxel) — não indicado na doença metastática.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-cancer-gastrico-esofago-3",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-esofago",
     "frente": "Qual o esquema CROSS no câncer de esôfago?",
     "verso": "Quimiorradioterapia neoadjuvante (carboplatina + paclitaxel + 41,4 Gy) seguida de esofagectomia.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-cancer-gastrico-esofago-4",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-esofago",
     "frente": "Qual o melhor exame para estadiamento T/N e para metástases à distância no câncer de esôfago?",
     "verso": "Ultrassom endoscópico para T e N; PET-CT para metástases à distância.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-cancer-gastrico-esofago-5",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-gastrico",
     "frente": "Qual o número mínimo de linfonodos para estadiamento adequado no câncer gástrico?",
     "verso": "Pelo menos 15 linfonodos (linfadenectomia D2 em tumores avançados).",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-cancer-gastrico-esofago-6",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-gastrico",
     "frente": "Diferencie os tipos histológicos de Lauren no câncer gástrico.",
     "verso": "Intestinal: mais comum, idosos/homens, associado a H. pylori e gastrite atrófica/metaplasia, melhor prognóstico. Difuso: jovens/mulheres, células em anel de sinete, mutação CDH1 (E-caderina), pior prognóstico.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-cancer-gastrico-esofago-7",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-gastrico",
     "frente": "O que é a prateleira de Blumer?",
     "verso": "Implante metastático no fundo de saco de Douglas (palpável ao toque retal) — indica carcinomatose peritoneal.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-cancer-gastrico-esofago-8",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-gastrico",
     "frente": "GIST: marcador, local mais comum e tratamento adjuvante.",
     "verso": "Marcador CD117 (c-KIT) e DOG-1; local mais comum: estômago; origem nas células intersticiais de Cajal; ressecção com margens livres SEM linfadenectomia; imatinibe adjuvante/metastático.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-cancer-gastrico-esofago-9",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-gastrico",
     "frente": "Qual alvo molecular e droga no adenocarcinoma gástrico metastático HER2 positivo?",
     "verso": "HER2 → trastuzumabe associado à quimioterapia.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-puericultura-pni-4",
-    "temaId": "puericultura-pni",
+    "temaId": "imunizacoes",
     "frente": "Esquema da vacina pneumocócica conjugada no PNI e na SBP.",
     "verso": "PNI: VPC10 aos 2 e 4 meses + reforço aos 12 meses. SBP (2025): 3+1 (2, 4, 6 meses + reforço 12–15 meses) com VPC13, VPC15 ou VPC20.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-puericultura-pni-5",
-    "temaId": "puericultura-pni",
+    "temaId": "imunizacoes",
     "frente": "Febre amarela e tríplice viral: qual intervalo exigir em menores de 2 anos?",
     "verso": "Em < 2 anos, não aplicar no mesmo dia; respeitar intervalo de 30 dias entre febre amarela e tríplice viral (interferência na resposta).",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-puericultura-pni-6",
-    "temaId": "puericultura-pni",
+    "temaId": "imunizacoes",
     "frente": "Quantas doses de HPV para imunossuprimidos (HIV, transplantados, oncológicos)?",
     "verso": "Três doses (0, 2 e 6 meses), de 9 a 45 anos, independentemente da idade.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-puericultura-pni-7",
-    "temaId": "puericultura-pni",
+    "temaId": "imunizacoes",
     "frente": "Quais vacinas o PNI aplica aos 15 meses?",
     "verso": "DTP (1º reforço), VOPb/VIP reforço, hepatite A (dose única) e tetra viral (SCR + varicela). Meningocócica B não está no PNI de rotina.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-puericultura-pni-8",
-    "temaId": "puericultura-pni",
+    "temaId": "imunizacoes",
     "frente": "Vacina conjugada: qual o princípio?",
     "verso": "Polissacarídeo ligado a proteína carreadora → resposta T-dependente, eficaz em menores de 2 anos e com memória imunológica.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-puericultura-pni-9",
-    "temaId": "puericultura-pni",
+    "temaId": "imunizacoes",
     "frente": "Criança em corticoterapia ≥ 2 mg/kg/dia por > 14 dias: o que pode vacinar?",
     "verso": "Apenas vacinas inativadas (ex.: pentavalente, pneumocócica). Vacinas vivas só após 1 mês do fim da corticoterapia em dose imunossupressora.",
     "banca": "IAUPE/SES-PE"
@@ -1922,56 +1922,56 @@
   },
   {
     "id": "fc-tpp-rpm-gestacao-multipla-1",
-    "temaId": "tpp-rpm-gestacao-multipla",
+    "temaId": "tpp-rpm",
     "frente": "Quando indicar progesterona vaginal na prevenção do parto prematuro?",
     "verso": "Colo curto ≤ 25 mm (USG transvaginal entre 18–24 semanas) ou parto prematuro espontâneo prévio: progesterona vaginal 200 mg/dia, iniciada no 2º trimestre até 36 semanas.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tpp-rpm-gestacao-multipla-2",
-    "temaId": "tpp-rpm-gestacao-multipla",
+    "temaId": "tpp-rpm",
     "frente": "Qual o rastreamento recomendado para predição de parto prematuro?",
     "verso": "Medida do colo uterino por USG transvaginal entre 18 e 24 semanas.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tpp-rpm-gestacao-multipla-3",
-    "temaId": "tpp-rpm-gestacao-multipla",
+    "temaId": "tpp-rpm",
     "frente": "Quais testes confirmam a rotura prematura de membranas?",
     "verso": "Exame especular com saída de líquido, papel de nitrazina (pH > 6,0–6,5), cristalização em samambaia, testes de Ianetta e Kittrich, IGFBP-1 (Amnisure®/PAMG-1) e USG com oligoâmnio.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tpp-rpm-gestacao-multipla-4",
-    "temaId": "tpp-rpm-gestacao-multipla",
+    "temaId": "tpp-rpm",
     "frente": "Condutas na RPM pré-termo (< 34 semanas) sem infecção.",
     "verso": "Internação, conduta expectante, corticoide (betametasona 12 mg IM 2 doses), antibiótico de latência (ampicilina + azitromicina/amoxicilina), profilaxia para GBS, MgSO4 se < 32 sem com parto iminente; interromper com 34 semanas ou se corioamnionite.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tpp-rpm-gestacao-multipla-5",
-    "temaId": "tpp-rpm-gestacao-multipla",
+    "temaId": "tpp-rpm",
     "frente": "Qual medicação faz neuroproteção fetal no parto prematuro?",
     "verso": "Sulfato de magnésio (< 32 semanas) — reduz paralisia cerebral.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tpp-rpm-gestacao-multipla-6",
-    "temaId": "tpp-rpm-gestacao-multipla",
+    "temaId": "gestacao-multipla",
     "frente": "Quais sinais ultrassonográficos diferenciam corionicidade em gemelares?",
     "verso": "Sinal do lambda (λ, “twin peak”): dicoriônica. Sinal do T: monocoriônica diamniótica. Ausência de membrana: monocoriônica monoamniótica.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tpp-rpm-gestacao-multipla-7",
-    "temaId": "tpp-rpm-gestacao-multipla",
+    "temaId": "gestacao-multipla",
     "frente": "Gestação dizigótica: qual a corionicidade?",
     "verso": "Sempre dicoriônica e diamniótica.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tpp-rpm-gestacao-multipla-8",
-    "temaId": "tpp-rpm-gestacao-multipla",
+    "temaId": "gestacao-multipla",
     "frente": "Qual a via de parto e o momento na gestação monocoriônica monoamniótica?",
     "verso": "Cesariana entre 32 e 34 semanas (risco de entrelaçamento de cordões).",
     "banca": "IAUPE/SES-PE"
@@ -2314,42 +2314,42 @@
   },
   {
     "id": "fc-sindrome-nefrotica-nefritica-1",
-    "temaId": "sindrome-nefrotica-nefritica",
+    "temaId": "sindrome-nefritica",
     "frente": "GNPE: complemento e tempo de normalização.",
     "verso": "Consumo de C3 (via alternativa) com C4 normal; normaliza em até 6–8 semanas. C3 baixo persistente > 8 semanas → biópsia (GN membranoproliferativa).",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-sindrome-nefrotica-nefritica-2",
-    "temaId": "sindrome-nefrotica-nefritica",
+    "temaId": "sindrome-nefritica",
     "frente": "Tratamento da glomerulonefrite pós-estreptocócica.",
     "verso": "Suporte: restrição hidrossalina, furosemida, anti-hipertensivo (hidralazina/nifedipino se necessário). Penicilina benzatina para erradicar a cepa (não altera o curso renal).",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-sindrome-nefrotica-nefritica-3",
-    "temaId": "sindrome-nefrotica-nefritica",
+    "temaId": "sindrome-nefritica",
     "frente": "Hematúria macroscópica 1–3 dias após IVAS em adulto jovem: diagnóstico?",
     "verso": "Nefropatia por IgA (Berger) — hematúria sinfaringítica; complemento normal; depósitos mesangiais de IgA na biópsia. GNPE tem latência de 1–3 semanas.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-sindrome-nefrotica-nefritica-4",
-    "temaId": "sindrome-nefrotica-nefritica",
+    "temaId": "sindrome-nefritica",
     "frente": "Quais glomerulopatias cursam com complemento baixo?",
     "verso": "GNPE, nefrite lúpica, GN membranoproliferativa, crioglobulinemia (hepatite C) e endocardite/nefrite de shunt.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-sindrome-nefrotica-nefritica-5",
-    "temaId": "sindrome-nefrotica-nefritica",
+    "temaId": "sindrome-nefrotica",
     "frente": "Quais as principais complicações da síndrome nefrótica?",
     "verso": "Infecções (peritonite por pneumococo — perda de imunoglobulinas), tromboembolismo (perda de antitrombina III, hipercoagulabilidade), dislipidemia, IRA e desnutrição.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-sindrome-nefrotica-nefritica-6",
-    "temaId": "sindrome-nefrotica-nefritica",
+    "temaId": "sindrome-nefrotica",
     "frente": "Antes de iniciar corticoide na síndrome nefrótica infantil, qual cuidado parasitário?",
     "verso": "Tratamento empírico de estrongiloidíase (ivermectina/albendazol; antes tiabendazol) para evitar hiperinfecção.",
     "banca": "IAUPE/SES-PE"
@@ -3350,28 +3350,28 @@
   },
   {
     "id": "fc-calendario-vacinal-adulto-idoso-1",
-    "temaId": "calendario-vacinal-adulto-idoso",
+    "temaId": "imunizacoes",
     "frente": "Vacinas do calendário do adulto (20–59 anos) no PNI.",
     "verso": "Hepatite B (3 doses se não vacinado), dT a cada 10 anos, tríplice viral (2 doses até 29 anos; 1 dose de 30–59 anos), febre amarela (dose única), influenza para grupos prioritários e COVID-19 conforme orientação vigente.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-calendario-vacinal-adulto-idoso-2",
-    "temaId": "calendario-vacinal-adulto-idoso",
+    "temaId": "imunizacoes",
     "frente": "Vacinas do idoso (≥ 60 anos) no PNI.",
     "verso": "Influenza anual, dT a cada 10 anos, hepatite B, COVID-19 periódica e pneumocócica 23-valente para institucionalizados/acamados (dose única com reforço único após 5 anos — não a cada 10 anos).",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-calendario-vacinal-adulto-idoso-3",
-    "temaId": "calendario-vacinal-adulto-idoso",
+    "temaId": "imunizacoes",
     "frente": "Vacinas versus toxoides: tipo de imunidade conferida.",
     "verso": "Ambos conferem imunidade ativa artificial. Soros e imunoglobulinas conferem imunidade passiva artificial; anticorpos transplacentários/leite, passiva natural.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-calendario-vacinal-adulto-idoso-4",
-    "temaId": "calendario-vacinal-adulto-idoso",
+    "temaId": "imunizacoes",
     "frente": "Quais vacinas o RN recebe ao nascer no PNI?",
     "verso": "BCG e hepatite B (preferencialmente nas primeiras 12–24 horas).",
     "banca": "IAUPE/SES-PE"
@@ -3441,28 +3441,28 @@
   },
   {
     "id": "fc-ivas-otite-1",
-    "temaId": "ivas-otite",
+    "temaId": "otites-media-externa",
     "frente": "Antibiótico na OMA e quando usar amoxicilina-clavulanato.",
     "verso": "Amoxicilina 80–90 mg/kg/dia por 10 dias (< 2 anos). Amoxicilina-clavulanato se amoxicilina nos últimos 30 dias, síndrome otite-conjuntivite (H. influenzae) ou falha terapêutica.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-ivas-otite-2",
-    "temaId": "ivas-otite",
+    "temaId": "rinossinusite-faringite",
     "frente": "Faringoamigdalite estreptocócica: antibióticos adequados e inadequado.",
     "verso": "Penicilina benzatina IM dose única ou amoxicilina 10 dias; alérgicos: macrolídeo ou cefalosporina. Sulfametoxazol-trimetoprima NÃO erradica o estreptococo.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-ivas-otite-3",
-    "temaId": "ivas-otite",
+    "temaId": "rinossinusite-faringite",
     "frente": "Quando suspeitar de rinossinusite bacteriana aguda na criança?",
     "verso": "Sintomas persistentes > 10 dias sem melhora, piora após melhora inicial (dupla piora) ou início grave (febre ≥ 39 °C + secreção purulenta ≥ 3 dias).",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-ivas-otite-4",
-    "temaId": "ivas-otite",
+    "temaId": "rinossinusite-faringite",
     "frente": "Rinite alérgica persistente versus intermitente.",
     "verso": "Persistente: sintomas ≥ 4 dias/semana E ≥ 4 semanas consecutivas. Intermitente: < 4 dias/semana ou < 4 semanas.",
     "banca": "IAUPE/SES-PE"
@@ -4379,56 +4379,56 @@
   },
   {
     "id": "fc-neoplasias-hematologicas-leucemia-linfoma-1",
-    "temaId": "neoplasias-hematologicas-leucemia-linfoma",
+    "temaId": "leucemias",
     "frente": "Criança com dor óssea, febre, palidez, artrite e citopenias: hipótese e exame.",
     "verso": "Leucemia linfoide aguda (câncer mais comum da infância) — mielograma com imunofenotipagem; diferencial importante com artrite idiopática juvenil (não iniciar corticoide antes de excluir LLA).",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-neoplasias-hematologicas-leucemia-linfoma-2",
-    "temaId": "neoplasias-hematologicas-leucemia-linfoma",
+    "temaId": "leucemias",
     "frente": "Leucemia promielocítica aguda (M3): complicação e tratamento.",
     "verso": "CIVD com sangramentos graves (t(15;17), PML-RARA). Tratamento urgente com ácido transretinoico (ATRA) ± trióxido de arsênio, mesmo antes da confirmação genética.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-neoplasias-hematologicas-leucemia-linfoma-3",
-    "temaId": "neoplasias-hematologicas-leucemia-linfoma",
+    "temaId": "linfomas",
     "frente": "Linfoma de Hodgkin: subtipo mais comum e achado histológico.",
     "verso": "Esclerose nodular (adultos jovens, massa mediastinal). Células de Reed-Sternberg (CD15+, CD30+). Sintomas B: febre, sudorese noturna, perda > 10% do peso.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-neoplasias-hematologicas-leucemia-linfoma-4",
-    "temaId": "neoplasias-hematologicas-leucemia-linfoma",
+    "temaId": "linfomas",
     "frente": "Causa mais frequente de linfonodomegalia na infância.",
     "verso": "Hiperplasia linfoide reacional a infecções. Sinais de alerta: > 2 cm, endurecido, aderido, supraclavicular, crescimento progressivo ou sintomas B → biópsia.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tce-1",
-    "temaId": "tce",
+    "temaId": "tce-avaliacao-neurologica",
     "frente": "O que é a tríade de Cushing?",
     "verso": "Hipertensão arterial, bradicardia e alteração do padrão respiratório (bradipneia/irregular) — sinal de hipertensão intracraniana grave com herniação iminente.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tce-2",
-    "temaId": "tce",
+    "temaId": "tce-avaliacao-neurologica",
     "frente": "Sinais de fratura de base de crânio.",
     "verso": "Sinal de Battle (equimose retroauricular), olhos de guaxinim (equimose periorbitária), hemotímpano, otorreia/rinorreia liquórica e paralisia facial. Contraindica sonda nasogástrica.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tce-3",
-    "temaId": "tce",
+    "temaId": "tce-avaliacao-neurologica",
     "frente": "Manejo da hipertensão intracraniana no TCE grave.",
     "verso": "Cabeceira 30°, sedação/analgesia, normocapnia (PaCO2 35–40; hiperventilação só como ponte breve), PAS ≥ 100–110, osmoterapia (manitol ou salina hipertônica), evitar hipóxia, hipotensão e hipertermia.",
     "banca": "IAUPE/SES-PE"
   },
   {
     "id": "fc-tce-4",
-    "temaId": "tce",
+    "temaId": "tce-avaliacao-neurologica",
     "frente": "Morte encefálica: exames complementares aceitos.",
     "verso": "Angiografia cerebral, EEG, Doppler transcraniano, cintilografia de perfusão cerebral (RM não é aceita). Exame clínico: coma não perceptivo, ausência de reflexos de tronco e teste de apneia, por 2 médicos.",
     "banca": "IAUPE/SES-PE"

@@ -353,7 +353,7 @@
   },
   {
     "id": "flow-pcr-tratamento",
-    "temaId": "pcr-acls",
+    "temaId": "parada-cardiorrespiratoria-rcp",
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "PCR — Algoritmo ACLS simplificado",
@@ -1336,7 +1336,7 @@
   },
   {
     "id": "flow-puericultura-desenvolvimento",
-    "temaId": "puericultura-pni",
+    "temaId": "desenvolvimento-neuropsicomotor-crescimento",
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Puericultura — Fluxo de avaliação do desenvolvimento",
@@ -3058,7 +3058,7 @@
   },
   {
     "id": "flow-otite-media-tratamento",
-    "temaId": "ivas-otite",
+    "temaId": "otites-media-externa",
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Otite média aguda — Fluxo de tratamento",
@@ -3372,7 +3372,7 @@
   },
   {
     "id": "flow-sindrome-nefrotica-nefritica-diagnostico",
-    "temaId": "sindrome-nefrotica-nefritica",
+    "temaId": "sindrome-nefritica",
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Síndrome glomerular — fluxo diagnóstico diferencial (nefrótica x nefrítica)",
@@ -4762,7 +4762,7 @@
   },
   {
     "id": "flow-arritmias-atendimento",
-    "temaId": "arritmias-cardiacas-gerais",
+    "temaId": "taquiarritmias",
     "area": "residencia",
     "tipo": "atendimento",
     "titulo": "Taquiarritmia e bradiarritmia — Algoritmo ACLS de estabilidade",
@@ -6477,7 +6477,7 @@
   },
   {
     "id": "flow-cancer-pulmao-diagnostico",
-    "temaId": "cancer-pulmao",
+    "temaId": "neoplasias-pulmonares",
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Câncer de pulmão — do nódulo suspeito à confirmação histológica",
@@ -6549,7 +6549,7 @@
   },
   {
     "id": "flow-cancer-pulmao-tratamento",
-    "temaId": "cancer-pulmao",
+    "temaId": "neoplasias-pulmonares",
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Câncer de pulmão de não pequenas células — decisão terapêutica por estágio",
@@ -6692,7 +6692,7 @@
   },
   {
     "id": "flow-nefropatia-iga-tratamento",
-    "temaId": "sindrome-nefrotica-nefritica",
+    "temaId": "sindrome-nefritica",
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Nefropatia por IgA — tratamento conforme KDIGO 2025",
@@ -8579,7 +8579,7 @@
   },
   {
     "id": "flow-cancer-gastrico-esofago-diagnostico",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-gastrico",
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Suspeita de câncer gástrico/esofágico — diagnóstico e estadiamento",
@@ -8650,7 +8650,7 @@
   },
   {
     "id": "flow-cancer-gastrico-esofago-tratamento",
-    "temaId": "cancer-gastrico-esofago",
+    "temaId": "cancer-gastrico",
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Câncer gástrico/esofágico — tratamento por estágio e perfil molecular",
@@ -11292,7 +11292,7 @@
   },
   {
     "id": "flow-neoplasias-hematologicas-investigacao",
-    "temaId": "neoplasias-hematologicas-leucemia-linfoma",
+    "temaId": "leucemias",
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Suspeita de neoplasia hematológica — investigação inicial",
@@ -12105,7 +12105,7 @@
   },
   {
     "id": "flow-tce-abordagem-inicial",
-    "temaId": "tce",
+    "temaId": "tce-avaliacao-neurologica",
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Abordagem inicial do TCE",
@@ -14142,7 +14142,7 @@
   },
   {
     "id": "flow-rpm-abordagem",
-    "temaId": "tpp-rpm-gestacao-multipla",
+    "temaId": "tpp-rpm",
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Abordagem da rotura prematura de membranas pré-termo",
@@ -14472,7 +14472,7 @@
   },
   {
     "id": "flow-crupe-tratamento",
-    "temaId": "crupe-laringotraqueite",
+    "temaId": "infeccoes-vias-aereas-superiores-pediatricas",
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Crupe viral — Estratificação de gravidade e conduta",
@@ -16191,7 +16191,7 @@
   },
   {
     "id": "flow-calendario-vacinal-diagnostico",
-    "temaId": "calendario-vacinal-adulto-idoso",
+    "temaId": "imunizacoes",
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Avaliação da situação vacinal do adulto/idoso — Lógica geral",
@@ -17100,7 +17100,7 @@
   },
   {
     "id": "flow-neoplasias-cutaneas-diagnostico",
-    "temaId": "neoplasias-cutaneas",
+    "temaId": "cancer-pele-oncologia-cutanea",
     "area": "residencia",
     "tipo": "diagnostico",
     "titulo": "Melanoma — Indicação de linfonodo sentinela pelo índice de Breslow",
@@ -17202,7 +17202,7 @@
   },
   {
     "id": "flow-escabiose-tratamento",
-    "temaId": "escabiose-pediculose",
+    "temaId": "dermatoses-miscelanea-escabiose-pediculose",
     "area": "residencia",
     "tipo": "tratamento",
     "titulo": "Escabiose — Escolha do escabicida por idade/situação",
@@ -17452,6 +17452,410 @@
       {
         "tipo": "end",
         "texto": "Dor intensa/refratária → Degrau 3: opioide forte (morfina) + degrau 1, ajustado a cada reavaliação"
+      }
+    ]
+  },
+  {
+    "id": "flow-sindrome-nefrotica-diagnostico",
+    "temaId": "sindrome-nefrotica",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Síndrome glomerular — fluxo diagnóstico diferencial (nefrótica x nefrítica)",
+    "revisado": true,
+    "fonte": "KDIGO Clinical Practice Guideline for the Management of Glomerular Diseases (2021)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Proteinúria e/ou hematúria identificadas no exame de urina"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Proteinúria maciça (>3,5g/24h) com hipoalbuminemia, edema importante e hiperlipidemia, sem hematúria proeminente?",
+        "ramos": [
+          {
+            "label": "Sim — síndrome nefrótica",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Investigar causa: em criança, boa resposta a corticoide é quase diagnóstica de lesões mínimas (dispensa biópsia na maioria dos casos típicos)"
+              },
+              {
+                "tipo": "action",
+                "texto": "Em adulto com suspeita de nefropatia membranosa: dosar anti-PLA2R sérico (positivo em 70-80% das formas primárias) — auxilia diagnóstico não invasivo e diferenciação de formas secundárias (neoplasia, lúpus, hepatite B)"
+              },
+              {
+                "tipo": "end",
+                "texto": "Biópsia renal reservada para casos sem causa clinicamente evidente ou resposta atípica ao tratamento inicial"
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Avaliar hematúria dismórfica + cilindros hemáticos + hipertensão + redução da TFG/oligúria"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Criança com infecção estreptocócica (faringite/piodermite) 1-3 semanas antes?",
+                "ramos": [
+                  {
+                    "label": "Sim",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Glomerulonefrite pós-estreptocócica típica — quadro autolimitado, geralmente dispensa biópsia"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Não — sem causa evidente",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Síndrome nefrítica de outra etiologia (ex.: nefropatia por IgA, a glomerulonefrite primária mais comum globalmente) → biópsia renal para definição etiológica"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Edema agudo de pulmão, sinais de trombose (TVP/veia renal) ou perda rápida de função renal → investigação e tratamento urgentes"
+      }
+    ]
+  },
+  {
+    "id": "flow-bradiarritmias-atendimento",
+    "temaId": "bradiarritmias",
+    "area": "residencia",
+    "tipo": "atendimento",
+    "titulo": "Taquiarritmia e bradiarritmia — Algoritmo ACLS de estabilidade",
+    "revisado": true,
+    "fonte": "ACLS Guidelines (American Heart Association, atualização 2020/2025); Diretrizes de Arritmias Cardíacas SBC",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Paciente com arritmia (bradi ou taquiarritmia) identificada no ECG/monitor"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Há instabilidade hemodinâmica (hipotensão, rebaixamento de consciência, dor torácica isquêmica, sinais de choque/congestão aguda)?",
+        "ramos": [
+          {
+            "label": "Sim — instável",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "Bradiarritmia ou taquiarritmia?",
+                "ramos": [
+                  {
+                    "label": "Bradiarritmia",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Atropina 0,5mg IV (repetível até 3mg)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Sem resposta: marca-passo transcutâneo/transvenoso imediato"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Taquiarritmia com pulso",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Cardioversão elétrica SINCRONIZADA imediata"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "FV / TV sem pulso",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Equivale a PCR — protocolo de RCP"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Desfibrilação NÃO sincronizada + epinefrina + amiodarona/lidocaína conforme algoritmo de PCR"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não — estável",
+            "fluxo": [
+              {
+                "tipo": "decisao",
+                "texto": "QRS estreito ou largo (na taquiarritmia) / tipo de bloqueio (na bradiarritmia)?",
+                "ramos": [
+                  {
+                    "label": "TSV por reentrada nodal (QRS estreito, regular)",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Manobra vagal"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Sem resposta: adenosina 6mg IV em bolus rápido (repetir 12mg se necessário)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "QRS largo (assumir origem ventricular até prova em contrário)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Antiarrítmico específico (amiodarona/procainamida) conforme diagnóstico — avaliação especializada"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Bradiarritmia assintomática (ex.: Mobitz I, BAV 1º grau)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Observação clínica — sem intervenção imediata"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Bradiarritmia de alto risco (Mobitz II, BAVT)",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Indicação de marca-passo definitivo, mesmo assintomático"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cancer-esofago-diagnostico",
+    "temaId": "cancer-esofago",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de câncer gástrico/esofágico — diagnóstico e estadiamento",
+    "revisado": true,
+    "fonte": "NCCN Guidelines — Gastric Cancer / Esophageal and Esophagogastric Junction Cancers",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Disfagia progressiva, perda de peso, saciedade precoce, dor epigástrica ou anemia — sobretudo em >50 anos com fatores de risco"
+      },
+      {
+        "tipo": "action",
+        "texto": "Endoscopia digestiva alta com biópsia (exame padrão-ouro)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Biópsia confirma neoplasia?",
+        "ramos": [
+          {
+            "label": "Sim",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Estadiamento: tomografia de tórax/abdome + ecoendoscopia (profundidade de invasão e linfonodos regionais)"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Doença localizada/ressecável ou localmente avançada/metastática?",
+                "ramos": [
+                  {
+                    "label": "Localizada/ressecável",
+                    "fluxo": [
+                      {
+                        "tipo": "end",
+                        "texto": "Seguir para tratamento com intenção curativa (cirurgia ± terapia perioperatória)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Localmente avançada/metastática",
+                    "fluxo": [
+                      {
+                        "tipo": "alerta",
+                        "texto": "Caracterização molecular obrigatória: HER2 (IHQ/FISH), PD-L1 (CPS), Claudina 18.2 (CLDN18.2)"
+                      },
+                      {
+                        "tipo": "end",
+                        "texto": "Definir terapia sistêmica guiada pelo perfil molecular do tumor"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Não",
+            "fluxo": [
+              {
+                "tipo": "end",
+                "texto": "Investigar diagnósticos diferenciais de disfagia/dispepsia/perda de peso"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-cancer-esofago-tratamento",
+    "temaId": "cancer-esofago",
+    "area": "residencia",
+    "tipo": "tratamento",
+    "titulo": "Câncer gástrico/esofágico — tratamento por estágio e perfil molecular",
+    "revisado": true,
+    "fonte": "NCCN Guidelines; Estudos FLOT4, CROSS, SPOTLIGHT, GLOW",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Diagnóstico e estadiamento confirmados"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Doença localizada e ressecável?",
+        "ramos": [
+          {
+            "label": "Sim — câncer gástrico",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Quimioterapia perioperatória (esquema FLOT) + gastrectomia com linfadenectomia"
+              }
+            ]
+          },
+          {
+            "label": "Sim — câncer de esôfago localmente avançado",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Quimiorradioterapia neoadjuvante (protocolo CROSS) + esofagectomia; se doença residual, nivolumabe adjuvante"
+              }
+            ]
+          },
+          {
+            "label": "Não — doença metastática/irressecável",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Tratamento sistêmico guiado pelo perfil molecular"
+              },
+              {
+                "tipo": "decisao",
+                "texto": "Perfil molecular do tumor?",
+                "ramos": [
+                  {
+                    "label": "HER2 positivo",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Trastuzumabe + quimioterapia (± imunoterapia)"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "HER2 negativo, PD-L1 CPS ≥5",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Nivolumabe (ou tislelizumabe) + quimioterapia de 1ª linha"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "HER2 negativo, CLDN18.2 positivo",
+                    "fluxo": [
+                      {
+                        "tipo": "action",
+                        "texto": "Zolbetuximabe + quimioterapia"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "end",
+        "texto": "Reavaliação periódica da resposta e ajuste terapêutico conforme evolução clínica/radiológica"
+      }
+    ]
+  },
+  {
+    "id": "flow-linfomas-investigacao",
+    "temaId": "linfomas",
+    "area": "residencia",
+    "tipo": "diagnostico",
+    "titulo": "Suspeita de neoplasia hematológica — investigação inicial",
+    "revisado": true,
+    "fonte": "Diretrizes de hematologia oncológica (referência clínica geral)",
+    "fluxo": [
+      {
+        "tipo": "start",
+        "texto": "Suspeita clínica de neoplasia hematológica (citopenias inexplicadas, linfadenopatia persistente, sintomas B)"
+      },
+      {
+        "tipo": "decisao",
+        "texto": "Apresentação predominante?",
+        "ramos": [
+          {
+            "label": "Pancitopenia/citopenias de instalação rápida, sangramento, infecções de repetição",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Hemograma completo com diferencial + avaliação de blastos em sangue periférico"
+              },
+              {
+                "tipo": "end",
+                "texto": "Mielograma (aspirado de medula óssea) com imunofenotipagem para confirmar leucemia aguda (blastos ≥20%) e definir linhagem linfoide vs. mieloide"
+              }
+            ]
+          },
+          {
+            "label": "Linfadenopatia indolor persistente (>4 semanas) ± sintomas B",
+            "fluxo": [
+              {
+                "tipo": "action",
+                "texto": "Excluir causas infecciosas/reativas mais comuns antes de prosseguir"
+              },
+              {
+                "tipo": "action",
+                "texto": "Biópsia excisional do linfonodo — NUNCA apenas PAAF, insuficiente para avaliar arquitetura tecidual"
+              },
+              {
+                "tipo": "end",
+                "texto": "Confirmado linfoma: estadiar com PET-CT pela classificação de Ann Arbor antes de definir tratamento"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "alerta",
+        "texto": "Leucocitose muito elevada com sinais de leucostase (confusão mental, dispneia, distúrbios visuais) é emergência oncológica — redução urgente da contagem leucocitária (leucaférese ou quimioterapia citorredutora imediata), independentemente da confirmação diagnóstica completa"
       }
     ]
   }

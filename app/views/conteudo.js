@@ -13,7 +13,8 @@ import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
 import { contarFlashcardsDoTema } from "../flashcards.js";
 import { getAnotacao, salvarAnotacao } from "../anotacoes.js";
 import { montarEditorAnotacao } from "../components/editorAnotacao.js";
-
+
+
 import { carregarIndiceBanco } from "../bancoQuestoes.js";
 // Fase 12 — ordem de prioridade dos quadrantes (ver prontidao.js): categorias
 // críticas primeiro, tranquilas por último. Curso reordenado pelo mesmo
@@ -421,10 +422,15 @@ export async function renderDetalhe(container, { id }) {
   const qtdFlashcards = await contarFlashcardsDoTema(tema.id);
   const prioridade = infoPrioridade(tema.prioridadeProva);
 
-  const secoes = tema.secoes || [];
+  // O aviso de aulas bônus do MEDCURSO fecha o resumo: vem depois dos mnemônicos.
+  const TITULO_BONUS = "Aulas bônus no MEDCURSO";
+  const todasSecoes = (tema.secoes || []).map((sec, i) => ({ ...sec, idDom: `secao-${i}` }));
+  const secoes = todasSecoes.filter((s) => s.titulo !== TITULO_BONUS);
+  const secaoBonus = todasSecoes.find((s) => s.titulo === TITULO_BONUS) || null;
   const itensSumario = [
-    ...secoes.map((sec, i) => ({ id: `secao-${i}`, titulo: sec.titulo })),
+    ...secoes.map((sec) => ({ id: sec.idDom, titulo: sec.titulo })),
     ...((tema.mnemonicos || []).length ? [{ id: "secao-mnemonicos", titulo: "Mnemônicos" }] : []),
+    ...(secaoBonus ? [{ id: secaoBonus.idDom, titulo: secaoBonus.titulo }] : []),
     { id: "secao-anotacoes", titulo: "Suas anotações" },
   ];
 
@@ -476,8 +482,8 @@ export async function renderDetalhe(container, { id }) {
       <div class="prose">
         ${secoes
           .map(
-            (s, i) => `
-          <div class="section-block" id="secao-${i}">
+            (s) => `
+          <div class="section-block" id="${s.idDom}">
             <h3>${escapeHtml(s.titulo)}</h3>
             <p>${s.conteudo}</p>
             ${renderImagemEstudo(s.imagem)}
@@ -496,6 +502,15 @@ export async function renderDetalhe(container, { id }) {
           </div>`
           )
           .join("")}
+
+        ${
+          secaoBonus
+            ? `<div class="section-block" id="${secaoBonus.idDom}">
+            <h3>${escapeHtml(secaoBonus.titulo)}</h3>
+            <p>${secaoBonus.conteudo}</p>
+          </div>`
+            : ""
+        }
       </div>
 
       <div class="card" style="margin-top:24px;" id="secao-anotacoes">
