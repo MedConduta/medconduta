@@ -1,7 +1,7 @@
 /**
- * MedConduta — Curso: gerenciador de estudos sobre o cronograma real de
- * residência (planilha "Estratégia MED - 2025", 50 semanas + semanas extras
- * pro que não está na planilha — ver data/curriculo.json).
+ * MedConduta — Curso: gerenciador de estudos sobre o cronograma do MEDCURSO
+ * 2026 (45 semanas, 91 aulas; cada aula agrupa os temas/resumos que cobrem o
+ * seu conteúdo — ver data/curriculo.json, campos `aula` e `aulaOrdem`).
  *
  * Camada de ORGANIZAÇÃO sobre o conteúdo que já existe — não duplica nada:
  * resumo/progresso vem de `progresso` (já gravado por marcarConcluido em
@@ -14,7 +14,8 @@
 import { fetchJsonCached } from "./utils.js";
 import { getAll, getPref, setPref } from "./db.js";
 import { getAgendaRevisoes, hojeIso, somarDias, diffDias } from "./revisaoCurso.js";
-
+
+
 import { carregarIndiceBanco } from "./bancoQuestoes.js";
 const PREF_CURSO_INICIO = "curso_inicio_real";
 
@@ -106,6 +107,9 @@ function montarItem(linha, contexto) {
     titulo: tema.titulo,
     categoria: tema.categoria,
     disciplina: linha.disciplina,
+    aula: linha.aula || null,
+    aulaOrdem: linha.aulaOrdem ?? null,
+    aulaTopicos: linha.aulaTopicos || [],
     semana: linha.semana,
     dataProgramada: linha.dataProgramada,
     resumoConcluido,

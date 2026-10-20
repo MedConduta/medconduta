@@ -2403,3 +2403,25 @@ button.stat-tile:hover {
   background-color: var(--color-surface);
   color: var(--color-text);
 }
+
+/* ---------- Curso: aulas do MEDCURSO dentro da semana ---------- */
+.curso-aula { margin-top: var(--space-3); }
+.curso-aula__titulo {
+  margin: 0 0 2px;
+  padding: 0 var(--space-3);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+.curso-aula__topicos {
+  margin: 0 0 6px;
+  padding: 0 var(--space-3);
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--color-text-secondary);
+}
+.curso-item { display: flex; align-items: center; gap: 4px; }
+.curso-item > .content-list__item { flex: 1 1 auto; min-width: 0; }
+.curso-item > .acao-mini { flex-shrink: 0; }
