@@ -72,11 +72,6 @@ async function encontrarTema(id) {
   return temas.find((t) => t.id === id) || null;
 }
 
-async function fluxogramasDoTema(temaId) {
-  const [curados, gerados] = await Promise.all([fetchJsonCached("data/fluxogramas.json"), getAll("ia_fluxogramas")]);
-  return [...curados, ...gerados].filter((f) => f.temaId === temaId);
-}
-
 /**
  * Agrupa temas por área → categoria e ordena por prioridade: dentro de cada
  * área, categorias na ordem crítico → tranquilo (ver prontidao.js); dentro
@@ -271,29 +266,6 @@ function renderTemaListItem(tema) {
   `;
 }
 
-function renderRelacionados({ fluxos }) {
-  return `
-    <div class="section-block" style="margin-top:24px;">
-      <h3>Fluxogramas relacionados</h3>
-      ${fluxos
-        .map(
-          (fluxo) => `
-        <details class="card" style="margin-bottom:12px;">
-          <summary style="cursor:pointer;font-weight:600;">
-            <span class="badge badge--${fluxo.tipo}">${fluxo.tipo === "diagnostico" ? "Diagnóstico" : "Tratamento"}</span>
-            ${fluxo.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
-            ${escapeHtml(fluxo.titulo)}
-          </summary>
-          <div style="margin-top:16px;">
-            ${renderFlowchart(fluxo.fluxo)}
-          </div>
-        </details>`
-        )
-        .join("")}
-    </div>
-  `;
-}
-
 function renderNavegacaoAdjacente({ anterior, proximo }) {
   if (!anterior && !proximo) return "";
   return `
@@ -402,8 +374,7 @@ export async function renderDetalhe(container, { id }) {
   const progresso = await getItem("progresso", tema.id);
   const concluido = !!progresso?.concluido;
   const geradoPorIA = tema.origem === "ia";
-  const [fluxos, respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes, abasSalvas, anotacaoSalva] = await Promise.all([
-    fluxogramasDoTema(tema.id),
+  const [respostas, questoesCuradas, questoesGeradas, diagnostico, adjacentes, abasSalvas, anotacaoSalva] = await Promise.all([
     getAll("respostas"),
     carregarIndiceBanco().then((banco) => banco.registros), // índice leve: aqui só importa o temaId
     getAll("ia_questoes"),
@@ -516,8 +487,6 @@ export async function renderDetalhe(container, { id }) {
         <div id="anotacao-tema"></div>
         <p id="anotacao-status" style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-top:6px;min-height:1em;"></p>
       </div>
-
-      ${fluxos.length ? renderRelacionados({ fluxos }) : ""}
 
       ${renderNavegacaoAdjacente(adjacentes)}
       </div>
