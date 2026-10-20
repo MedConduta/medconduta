@@ -38,6 +38,12 @@ const IDS = ["rastreio-cancer", "medicina-familia-comunidade", "saude-mental-ab"
   await page.evaluate(() => { location.hash = "/residencia/conteudo/politrauma-abcde"; });
   await page.waitForTimeout(1200);
   await page.screenshot({ path: "pw-test/resumo_politrauma.png" });
+  // Fim do resumo sem "Fluxogramas relacionados" (a aba Fluxograma do topo continua).
+  await page.evaluate(() => { location.hash = "/residencia/conteudo/has"; });
+  await page.waitForSelector(".prose h3", { timeout: 15000 });
+  await page.waitForTimeout(600);
+  const fim = await page.evaluate(() => ({ lista: /Fluxogramas relacionados/.test(document.body.innerText), aba: !!document.querySelector("[data-tipo=fluxograma], [data-aba=fluxograma]") || /Fluxograma/.test(document.querySelector(".ia-tabs, [role=tablist]")?.innerText || "") }));
+  console.log("sem fluxogramas no fim:", !fim.lista, "aba Fluxograma no topo:", fim.aba);
   console.log("sem erros de página:", erros.length === 0, erros.slice(0, 3));
   await browser.close();
 })();
