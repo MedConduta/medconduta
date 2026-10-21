@@ -335,6 +335,13 @@
   color: var(--color-mark-fg);
   font-weight: var(--fw-medium);
 }
+.exam-focus ul {
+  margin: 0;
+  padding-left: 1.2em;
+  color: var(--color-mark-fg);
+  font-weight: var(--fw-medium);
+}
+.exam-focus li + li { margin-top: var(--space-1); }
 
 /* ---------- Conteúdo de tema (prose) ---------- */
 
