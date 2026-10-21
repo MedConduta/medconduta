@@ -19,7 +19,9 @@ export function renderImagemEstudo(imagem) {
   if (!imagem?.url) return "";
   return `
     <figure class="imagem-estudo">
-      <img src="${escapeHtml(imagem.url)}" alt="${escapeHtml(imagem.legenda || "")}" loading="lazy" />
+      <button type="button" class="imagem-estudo__zoom" data-zoom-src="${escapeHtml(imagem.url)}" aria-label="Ampliar imagem">
+        <img src="${escapeHtml(imagem.url)}" alt="${escapeHtml(imagem.legenda || "")}" loading="lazy" />
+      </button>
       <figcaption>
         ${escapeHtml(imagem.legenda || "")}
         ${imagem.fonte ? `<span class="imagem-estudo__fonte">${escapeHtml(imagem.fonte)}</span>` : ""}
