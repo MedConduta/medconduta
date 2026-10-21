@@ -455,6 +455,7 @@ export async function renderDetalhe(container, { id }) {
             <h3>${escapeHtml(s.titulo)}</h3>
             <p>${s.conteudo}</p>
             ${renderImagemEstudo(s.imagem)}
+            ${(s.imagens || []).map(renderImagemEstudo).join("")}
           </div>`
           )
           .join("")}

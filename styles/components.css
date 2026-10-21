@@ -394,8 +394,18 @@
   border-radius: var(--radius-md);
   text-align: center;
 }
+.imagem-estudo__zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
 .imagem-estudo img {
   max-width: 100%;
+  max-height: 420px;
+  object-fit: contain;
   height: auto;
   border-radius: var(--radius-sm);
   background: #fff;
