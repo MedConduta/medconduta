@@ -414,7 +414,7 @@ export async function renderDetalhe(container, { id }) {
         <h1>${escapeHtml(tema.titulo)} ${geradoPorIA ? '<span class="badge badge--ia">✨ IA</span>' : ""} ${badgePrioridade(tema.prioridadeProva)}</h1>
         ${
           tema.comoCai
-            ? `<div class="exam-focus"><div class="exam-focus__label">📌 Cai na prova — SES-PE e ENAMED</div><p>${tema.comoCai}</p></div>`
+            ? `<div class="exam-focus"><div class="exam-focus__label">📌 Cai na prova — SES-PE e ENAMED</div>${Array.isArray(tema.comoCai) ? `<ul>${tema.comoCai.map((item) => `<li>${item}</li>`).join("")}</ul>` : `<p>${tema.comoCai}</p>`}</div>`
             : ""
         }
       </div>

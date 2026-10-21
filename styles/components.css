@@ -335,6 +335,13 @@
   color: var(--color-mark-fg);
   font-weight: var(--fw-medium);
 }
+.exam-focus ul {
+  margin: 0;
+  padding-left: 1.2em;
+  color: var(--color-mark-fg);
+  font-weight: var(--fw-medium);
+}
+.exam-focus li + li { margin-top: var(--space-1); }
 
 /* ---------- Conteúdo de tema (prose) ---------- */
 
@@ -2486,3 +2493,20 @@ button.stat-tile:hover {
   margin-bottom: var(--space-1);
 }
 .prose .quadro-chave ul { margin: 0; padding-left: 1.2em; }
+.prose .divergencia-nota {
+  margin: var(--space-3) 0;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-warning-border);
+  border-left-width: 4px;
+  border-radius: var(--radius-md);
+  background: var(--color-warning-soft);
+  font-size: var(--fs-sm);
+  text-align: left;
+}
+.prose .divergencia-nota__titulo {
+  display: block;
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-1);
+}
+.prose .divergencia-nota p { margin: 0 0 var(--space-1); text-align: left; hyphens: auto; }
+.prose .divergencia-nota p:last-child { margin-bottom: 0; }
