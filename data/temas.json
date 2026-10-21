@@ -2549,51 +2549,200 @@
     "area": "residencia",
     "categoria": "Cirurgia Geral",
     "titulo": "Hérnias de Parede Abdominal",
-    "resumo": "Tipos mais comuns, diferenciação entre encarceramento/estrangulamento e conduta.",
+    "resumo": "Hérnias inguinais, femorais e ventrais: anatomia do canal inguinal e da visão laparoscópica (Hesselbach, Y invertido, triângulos da desgraça e da dor), classificação de Nyhus, técnicas (Lichtenstein, Shouldice, McVay, Stoppa, TAPP/TEP), complicações (recidiva, inguinodinia, orquite isquêmica), hérnia incisional com separação de componentes e pneumoperitônio progressivo, umbilical, epigástrica e hérnias de epônimo.",
     "revisado": true,
-    "fonte": "Colégio Brasileiro de Cirurgiões; European Hernia Society Guidelines",
+    "fonte": "Colégio Brasileiro de Cirurgiões; European Hernia Society Guidelines; HerniaSurge Group. International guidelines for groin hernia management. Hernia 2018;22:1-165; Stabilini C, et al. Update of the international HerniaSurge guidelines for groin hernia management. BJS Open 2023;7(5):zrad080 (doi 10.1093/bjsopen/zrad080); Henriksen NA, et al. Guidelines for treatment of umbilical and epigastric hernias from the European Hernia Society and Americas Hernia Society. Br J Surg 2020;107:171-90; Tzanis AA, et al. Parastomal hernia prevention — EHS, ESCP and EAES collaborative systematic review and GRADE. J Abdom Wall Surg 2023;2:11550 (doi 10.3389/jaws.2023.11550); Estratégia MED — Resumo Estratégico 2026: Hérnias da Parede Abdominal",
     "mnemonicos": [
       {
         "palavra": "REDUTÍVEL → ENCARCERADA → ESTRANGULADA",
         "explicacao": "Progressão de gravidade de uma hérnia: redutível (retorna à cavidade), encarcerada (irredutível, sem sofrimento vascular) e estrangulada (irredutível com comprometimento vascular — emergência cirúrgica)."
+      },
+      {
+        "palavra": "meDIRETA",
+        "explicacao": "Hérnia MEDIAL aos vasos epigástricos inferiores é DIRETA; lateral é indireta."
+      },
+      {
+        "palavra": "McVay = Cooper = Crural",
+        "explicacao": "McVay sutura no ligamento de Cooper e é a técnica sem tela que corrige a hérnia femoral (crural)."
+      },
+      {
+        "palavra": "Amyand Inguinal, Garengeot femoral",
+        "explicacao": "Apêndice no saco: Amyand se inguinal, Garengeot se femoral; Littré = Meckel."
       }
     ],
     "secoes": [
       {
         "titulo": "Fisiopatologia",
-        "conteudo": "As hérnias de parede abdominal resultam de um defeito na fáscia/musculatura que permite a protrusão de conteúdo intra-abdominal (geralmente epíplon ou alça intestinal) através do orifício. As hérnias inguinais são as mais comuns, subdivididas em indiretas (mais comuns, congênitas, através do anel inguinal profundo, seguindo o trajeto do funículo espermático) e diretas (adquiridas, por fraqueza da parede posterior do canal inguinal, através do triângulo de Hesselbach). Hérnias podem ser redutíveis (conteúdo retorna à cavidade), encarceradas (presas, sem redução, mas sem comprometimento vascular) ou estranguladas (com comprometimento vascular do conteúdo herniado, configurando emergência).\n\n<div class=\"table-wrap\"><table><thead><tr><th>Tipo</th><th>Trajeto/localização</th><th>Origem</th></tr></thead><tbody><tr><td>Hérnia inguinal indireta</td><td>Anel inguinal profundo, seguindo o trajeto do funículo espermático</td><td>Congênita (persistência do processo vaginal)</td></tr><tr><td>Hérnia inguinal direta</td><td>Triângulo de Hesselbach (fraqueza da parede posterior do canal inguinal)</td><td>Adquirida</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Classificação</th><th>Definição</th><th>Conduta</th></tr></thead><tbody><tr><td>Redutível</td><td>Conteúdo retorna à cavidade espontaneamente ou com manipulação</td><td>Correção cirúrgica eletiva</td></tr><tr><td>Encarcerada</td><td>Presa, sem redução, mas sem comprometimento vascular</td><td>Tentativa cuidadosa de redução manual seguida de cirurgia eletiva precoce</td></tr><tr><td>Estrangulada</td><td>Comprometimento vascular do conteúdo herniado</td><td>Emergência cirúrgica absoluta — NUNCA tentar redução manual forçada</td></tr></tbody></table></div>"
+        "conteudo": "As hérnias de parede abdominal resultam de um defeito na fáscia/musculatura que permite a protrusão de conteúdo intra-abdominal (geralmente epíplon ou alça intestinal) através do orifício. As hérnias inguinais são as mais comuns, subdivididas em indiretas (mais comuns, congênitas, através do anel inguinal profundo, seguindo o trajeto do funículo espermático) e diretas (adquiridas, por fraqueza da parede posterior do canal inguinal, através do triângulo de Hesselbach). Hérnias podem ser redutíveis (conteúdo retorna à cavidade), encarceradas (presas, sem redução, mas sem comprometimento vascular) ou estranguladas (com comprometimento vascular do conteúdo herniado, configurando emergência).\n\n<div class=\"table-wrap\"><table><thead><tr><th>Tipo</th><th>Trajeto/localização</th><th>Origem</th></tr></thead><tbody><tr><td>Hérnia inguinal indireta</td><td>Anel inguinal profundo, seguindo o trajeto do funículo espermático</td><td>Congênita (persistência do processo vaginal)</td></tr><tr><td>Hérnia inguinal direta</td><td>Triângulo de Hesselbach (fraqueza da parede posterior do canal inguinal)</td><td>Adquirida</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Classificação</th><th>Definição</th><th>Conduta</th></tr></thead><tbody><tr><td>Redutível</td><td>Conteúdo retorna à cavidade espontaneamente ou com manipulação</td><td>Correção cirúrgica eletiva</td></tr><tr><td>Encarcerada</td><td>Presa, sem redução, mas sem comprometimento vascular</td><td>Tentativa cuidadosa de redução manual seguida de cirurgia eletiva precoce</td></tr><tr><td>Estrangulada</td><td>Comprometimento vascular do conteúdo herniado</td><td>Emergência cirúrgica absoluta — NUNCA tentar redução manual forçada</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Dado</th><th>O que a prova quer</th></tr></thead><tbody><tr><td>Hérnia mais comum (homem e mulher)</td><td><b>Inguinal indireta</b> — inclusive na mulher a inguinal é mais comum que a femoral</td></tr><tr><td>Femoral</td><td>Proporção 10 mulheres : 1 homem; <b>maior risco de encarceramento/estrangulamento (15–20%)</b> × inguinal 1–3% (SES-PE)</td></tr><tr><td>Indireta</td><td>Congênita: persistência do conduto peritônio-vaginal; anel inguinal profundo; lateral aos vasos epigástricos</td></tr><tr><td>Direta e femoral</td><td>Adquiridas: fraqueza da fáscia transversal (tabagismo, colágeno, tosse crônica, prostatismo, constipação)</td></tr><tr><td>Lado</td><td>Direita mais comum (descida mais tardia do testículo direito)</td></tr></tbody></table></div><p><b>Encarcerada</b> = irredutível, sem sofrimento vascular. <b>Estrangulada</b> = irredutível com isquemia do conteúdo (dor intensa, hiperemia, febre, leucocitose, obstrução). <b>Hérnia de Richter</b>: só a borda antimesentérica é pinçada; pode necrosar e perfurar <b>sem obstrução completa</b>.</p>"
       },
       {
-        "titulo": "Quadro clínico",
-        "conteudo": "Abaulamento na região inguinal, umbilical ou em cicatriz cirúrgica prévia (hérnia incisional), que aumenta com manobras de Valsalva (tosse, esforço) e geralmente reduz espontaneamente ao deitar-se, é a apresentação típica das hérnias redutíveis não complicadas. Dor súbita e intensa associada a abaulamento que não reduz mais, com náuseas/vômitos, sugere encarceramento ou estrangulamento."
+        "titulo": "Anatomia que cai: canal inguinal, Hesselbach e visão laparoscópica",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Estrutura</th><th>Limites / conteúdo</th></tr></thead><tbody><tr><td>Triângulo de Hesselbach</td><td>Medial: borda lateral do reto abdominal · lateral: vasos epigástricos inferiores · inferior: ligamento inguinal. Local da hérnia <b>direta</b></td></tr><tr><td>Canal inguinal</td><td>Anterior: aponeurose do oblíquo externo · posterior: <b>fáscia transversal</b> (+ tendão conjunto) · superior: oblíquo interno e transverso · inferior: ligamento inguinal (e lacunar)</td></tr><tr><td>Cordão espermático</td><td>Ducto deferente, artéria testicular, plexo pampiniforme, ramo genital do genitofemoral, cremaster, processo vaginal. O <b>nervo ilioinguinal corre FORA</b> do cordão (pegadinha)</td></tr><tr><td>Canal femoral</td><td>Anterior: ligamento inguinal · posterior: ligamento pectíneo (Cooper) · medial: <b>ligamento lacunar</b> · lateral: veia femoral</td></tr><tr><td>Orifício miopectíneo de Fruchaud</td><td>Área única que contém os 3 sítios (direto, indireto, femoral) — é o que a tela pré-peritoneal cobre (SES-PE 2025)</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Visão laparoscópica (Y invertido)</th><th>O que há ali</th></tr></thead><tbody><tr><td>Hesselbach (medial aos epigástricos)</td><td>Hérnia direta</td></tr><tr><td>Anel inguinal profundo (lateral aos epigástricos)</td><td>Hérnia indireta</td></tr><tr><td><b>Triângulo da desgraça (doom)</b>: entre ducto deferente e vasos espermáticos</td><td>Vasos ilíacos externos — não grampear</td></tr><tr><td><b>Triângulo da dor</b>: lateral aos vasos espermáticos, abaixo do trato iliopúbico</td><td>N. cutâneo femoral lateral e ramo femoral do genitofemoral — não grampear</td></tr><tr><td>Abaixo do trato iliopúbico, medial à veia ilíaca</td><td>Anel femoral (hérnia femoral)</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/resumos/cirurgia/inguinal-visao-posterior.png",
+            "legenda": "Visão laparoscópica da região inguinal direita: o Y invertido (epigástricos, deferente, vasos espermáticos) separa Hesselbach, anel profundo, triângulos da desgraça e da dor e o anel femoral.",
+            "fonte": "Esquema elaborado para o MedConduta"
+          },
+          {
+            "url": "imagens/questoes/scm-sp/2023/2023-c8378c20-q007-1.webp",
+            "legenda": "Os 5 espaços na TAPP (SCM-SP 2023): 1 Hesselbach, 2 anel inguinal profundo, 3 nervos (triângulo da dor), 4 vasos ilíacos (desgraça), 5 hérnia femoral.",
+            "fonte": "Imagem de questão de prova — SCM-SP 2023"
+          },
+          {
+            "url": "imagens/questoes/sespe/2025-1-q032-1.webp",
+            "legenda": "SES-PE 2025: a linha pontilhada demarca o orifício miopectíneo de Fruchaud, área que a tela pré-peritoneal precisa cobrir.",
+            "fonte": "Imagem de questão de prova — SES-PE 2025"
+          },
+          {
+            "url": "imagens/questoes/unesp/2021/2021-07188240-q066-1.webp",
+            "legenda": "Visão posterior (UNESP 2021): 1 vasos epigástricos inferiores, 2 ligamento inguinal, 3 vasos espermáticos.",
+            "fonte": "Imagem de questão de prova — UNESP 2021"
+          },
+          {
+            "url": "imagens/questoes/ses-df/2025/2025-504499e4-q005-1.webp",
+            "legenda": "Hernioplastia laparoscópica (SES-DF 2025): o espaço destacado em preto, abaixo do trato iliopúbico e medial, é onde ocorrem as hérnias femorais.",
+            "fonte": "Imagem de questão de prova — SES-DF 2025"
+          }
+        ]
       },
       {
-        "titulo": "Exame físico",
-        "conteudo": "Abaulamento palpável que se exacerba com manobra de Valsalva e reduz com pressão manual suave caracteriza hérnia não complicada. Massa herniária dolorosa, tensa, não redutível, com sinais de irritação da pele sobrejacente (eritema) sugere estrangulamento — emergência cirúrgica que não deve ser tentada redução manual forçada pelo risco de reintroduzir conteúdo já necrótico na cavidade abdominal."
+        "titulo": "Inervação e lesões nervosas",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Nervo</th><th>Território / reflexo</th><th>Em risco em</th></tr></thead><tbody><tr><td>Ílio-hipogástrico</td><td>Pele suprapúbica</td><td>Técnica aberta (Lichtenstein)</td></tr><tr><td><b>Ilioinguinal</b></td><td>Face medial da coxa, raiz do pênis e porção anterior do escroto/grande lábio; perda do reflexo cremastérico</td><td>Técnica aberta — o mais lesado no Lichtenstein</td></tr><tr><td>Genitofemoral — ramo genital</td><td>Escroto lateral, cremaster (reflexo cremastérico)</td><td>Aberta e laparoscópica (ENARE 2026: dormência do escroto lateral)</td></tr><tr><td>Genitofemoral — ramo femoral</td><td>Pele do triângulo femoral</td><td>Laparoscopia (triângulo da dor)</td></tr><tr><td>Cutâneo femoral lateral</td><td>Face lateral da coxa (meralgia parestésica)</td><td>Laparoscopia (triângulo da dor)</td></tr></tbody></table></div><p><b>Inguinodinia</b> = dor crônica &gt; 3 meses após a herniorrafia: dor em queimação/choque no trajeto de um nervo, alteração de sensibilidade e alívio com bloqueio anestésico. Conduta escalonada: analgesia e bloqueio → neurectomia (tripla, se refratária). Menor com laparoscopia. A técnica pré-peritoneal aberta não dá mais dor crônica que o Lichtenstein.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2025/2025-ab075b9d-q010-1.webp",
+            "legenda": "Dor em queimação após Lichtenstein irradiando para a área marcada (USP-SP 2025): territórios dos nervos da região; resposta da questão: nervo genitofemoral.",
+            "fonte": "Imagem de questão de prova — USP-SP 2025"
+          }
+        ]
       },
       {
-        "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é predominantemente clínico pela inspeção e palpação dirigida, incluindo a manobra de Valsalva para evidenciar hérnias de menor volume. Ultrassonografia ou tomografia são reservadas a casos de dúvida diagnóstica (obesidade dificultando o exame físico, ou suspeita de complicação não totalmente esclarecida pela clínica).\n\n<div class=\"table-wrap\"><table><thead><tr><th colspan=\"2\">Classificação de Nyhus (dicas de decorar)</th></tr></thead><tbody><tr><td>Tipo I</td><td>Indireta, anel interno normal — típica da hérnia pediátrica</td></tr><tr><td>Tipo II</td><td>Indireta, anel dilatado, mas parede posterior íntegra</td></tr><tr><td>Tipo IIIA</td><td>Direta (sempre) — defeito da parede posterior</td></tr><tr><td>Tipo IIIB</td><td>Indireta com anel dilatado + destruição da parede posterior/Hesselbach (ex.: inguinoescrotal grande)</td></tr><tr><td>Tipo IIIC</td><td>Femoral (sempre)</td></tr><tr><td>Tipo IV</td><td>Recidivada (IVA direta, IVB indireta, IVC femoral, IVD combinada)</td></tr></tbody></table></div>"
+        "titulo": "Quadro clínico e exame físico",
+        "conteudo": "<p>Abaulamento na região inguinal, umbilical ou em cicatriz cirúrgica prévia (hérnia incisional), que aumenta com manobras de Valsalva (tosse, esforço) e geralmente reduz espontaneamente ao deitar-se, é a apresentação típica das hérnias redutíveis não complicadas. Dor súbita e intensa associada a abaulamento que não reduz mais, com náuseas/vômitos, sugere encarceramento ou estrangulamento.</p><p>Abaulamento palpável que se exacerba com manobra de Valsalva e reduz com pressão manual suave caracteriza hérnia não complicada. Massa herniária dolorosa, tensa, não redutível, com sinais de irritação da pele sobrejacente (eritema) sugere estrangulamento — emergência cirúrgica que não deve ser tentada redução manual forçada pelo risco de reintroduzir conteúdo já necrótico na cavidade abdominal.</p><div class=\"table-wrap\"><table><thead><tr><th>Manobra / dado</th><th>Interpretação</th></tr></thead><tbody><tr><td>Valsalva em pé</td><td>Evidencia hérnias pequenas</td></tr><tr><td><b>Landivar</b> (dedo no anel externo pelo escroto)</td><td>Impulso na <b>ponta</b> do dedo = indireta; na <b>polpa</b> = direta</td></tr><tr><td>Abaulamento abaixo do ligamento inguinal, lateral ao tubérculo púbico</td><td>Femoral (mulher idosa, irredutível com frequência)</td></tr><tr><td>Hérnia gigante inguinoescrotal, crônica, sem dor aguda</td><td>Domiciliada: cirurgia eletiva com preparo (SES-PE 2022)</td></tr><tr><td>Dor na face medial da coxa, sinal de <b>Howship-Romberg</b></td><td>Hérnia obturadora (mulher idosa e emagrecida; ENARE 2026)</td></tr></tbody></table></div><p><b>Diagnóstico é clínico.</b> Ultrassom (manobra dinâmica) só na dúvida (dor sem abaulamento, obeso); TC na hérnia ventral complexa ou suspeita de complicação; ressonância para dor inguinal sem hérnia evidente (pubalgia).</p><p><span class=\"red-flag\">Hérnia dolorosa, não redutível, com sinais inflamatórios locais e comprometimento sistêmico (náuseas, vômitos, febre)</span> caracteriza estrangulamento herniário, emergência cirúrgica absoluta — a tentativa de redução manual forçada é contraindicada nesse cenário pelo risco de reintroduzir segmento intestinal necrótico na cavidade peritoneal.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/sespe/2022-q028-1.webp",
+            "legenda": "SES-PE 2022: homem de 68 anos com hérnia inguinoescrotal volumosa, antiga e irredutível, sem sinais de sofrimento: cirurgia eletiva programada com preparo.",
+            "fonte": "Imagem de questão de prova — SES-PE 2022"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2021/2021-d0a615b4-q083-1.webp",
+            "legenda": "Mulher com abaulamento inguinocrural à direita (USP-SP 2021): hérnia femoral — quando operada de urgência tem alta mortalidade, por isso opera-se mesmo assintomática.",
+            "fonte": "Imagem de questão de prova — USP-SP 2021"
+          }
+        ]
       },
       {
-        "titulo": "Tratamento",
-        "conteudo": "Hérnias sintomáticas ou de risco significativo de complicação têm indicação de correção cirúrgica eletiva (herniorrafia, geralmente com uso de tela para reforço da parede, reduzindo taxa de recidiva comparado à sutura primária isolada). Hérnia encarcerada sem sinais de estrangulamento pode ser submetida a tentativa cuidadosa de redução manual seguida de cirurgia eletiva precoce; hérnia estrangulada é emergência cirúrgica absoluta, com avaliação da viabilidade do conteúdo herniado (e eventual ressecção se necrótico) no momento da correção."
+        "titulo": "Classificação de Nyhus",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th colspan=\"2\">Classificação de Nyhus (dicas de decorar)</th></tr></thead><tbody><tr><td>Tipo I</td><td>Indireta, anel interno normal — típica da hérnia pediátrica</td></tr><tr><td>Tipo II</td><td>Indireta, anel dilatado, mas parede posterior íntegra</td></tr><tr><td>Tipo IIIA</td><td>Direta (sempre) — defeito da parede posterior</td></tr><tr><td>Tipo IIIB</td><td>Indireta com anel dilatado + destruição da parede posterior/Hesselbach (ex.: inguinoescrotal grande)</td></tr><tr><td>Tipo IIIC</td><td>Femoral (sempre)</td></tr><tr><td>Tipo IV</td><td>Recidivada (IVA direta, IVB indireta, IVC femoral, IVD combinada)</td></tr></tbody></table></div><p>Mnemônico das bancas: <b>III é parede posterior</b> — IIIa direta, IIIb indireta que destruiu a parede, <b>IIIc femoral</b>. Recidiva é sempre IV. Femoral = Nyhus IIIc, corrigida por McVay ou tela, e <b>nunca</b> conduta expectante (SES-PE).</p>"
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Hérnia dolorosa, não redutível, com sinais inflamatórios locais e comprometimento sistêmico (náuseas, vômitos, febre)</span> caracteriza estrangulamento herniário, emergência cirúrgica absoluta — a tentativa de redução manual forçada é contraindicada nesse cenário pelo risco de reintroduzir segmento intestinal necrótico na cavidade peritoneal."
+        "titulo": "Tratamento da hérnia inguinal e femoral",
+        "conteudo": "<p>Hérnias sintomáticas ou de risco significativo de complicação têm indicação de correção cirúrgica eletiva (herniorrafia, geralmente com uso de tela para reforço da parede, reduzindo taxa de recidiva comparado à sutura primária isolada). Hérnia encarcerada sem sinais de estrangulamento pode ser submetida a tentativa cuidadosa de redução manual seguida de cirurgia eletiva precoce; hérnia estrangulada é emergência cirúrgica absoluta, com avaliação da viabilidade do conteúdo herniado (e eventual ressecção se necrótico) no momento da correção.</p><div class=\"table-wrap\"><table><thead><tr><th>Técnica</th><th>Ideia</th><th>Quando cai</th></tr></thead><tbody><tr><td><b>Lichtenstein</b></td><td>Tela anterior sem tensão, aberta</td><td>Padrão-ouro aberto; hérnia primária unilateral; recidiva junto ao tubérculo púbico e ao anel interno</td></tr><tr><td>TAPP</td><td>Laparoscopia transabdominal, tela pré-peritoneal; usa pneumoperitônio</td><td>Bilateral, recidiva após via anterior, mulher, avaliar o lado contralateral</td></tr><tr><td>TEP</td><td>Totalmente extraperitoneal</td><td>Igual à TAPP sem entrar na cavidade</td></tr><tr><td>Stoppa (Rives-Stoppa)</td><td>Tela gigante pré-peritoneal aberta, incisão única</td><td>Bilateral e recidivada bilateral (USP-RP 2020)</td></tr><tr><td><b>Shouldice</b></td><td>Imbricação em 4 planos da fáscia transversal</td><td>Melhor técnica <b>sem tela</b></td></tr><tr><td>Bassini</td><td>Tendão conjunto ao ligamento inguinal</td><td>Histórica</td></tr><tr><td><b>McVay</b></td><td>Tendão conjunto ao ligamento de <b>Cooper</b></td><td>Única técnica aberta sem tela que corrige a <b>femoral</b></td></tr><tr><td>Marcy</td><td>Só fecha o anel profundo</td><td>Criança (herniotomia, sem tela)</td></tr></tbody></table></div><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Conduta na hérnia inguinal/femoral</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Assintomática ou pouco sintomática, homem</b>: operar eletivamente (ou observar com retorno, se o paciente preferir — HerniaSurge)</div><div class=\"fluxo-resumo__passo\"><b>Femoral (mesmo assintomática)</b>: operar sempre: alto risco de estrangular</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Encarcerada sem sinais de sofrimento, &lt; 6–8 h</b>: tentar redução manual delicada (analgesia, Trendelenburg) e operar na mesma internação</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Dolorosa, irredutível, hiperemia, febre, obstrução</b>: <b>cirurgia de urgência</b>, sem tentar reduzir; avaliar a viabilidade da alça</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Alça viável</b>: reparo com tela</div><div class=\"fluxo-resumo__passo\"><b>Alça necrótica</b>: ressecção e anastomose; tela sintética é aceita sem contaminação grosseira (USP-SP 2026)</div></div></div><p>Na femoral encarcerada, pode ser preciso <b>seccionar o ligamento lacunar</b> (medial) para liberar a alça — nunca lateralmente (veia femoral). Recidiva após via anterior: operar por <b>via posterior</b> (território virgem) e vice-versa. Telas leves de poro grande têm menos dor e rigidez.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2026/2026-7948eb79-q034-1.webp",
+            "legenda": "USP-SP 2026: mulher com abaulamento inguinal irredutível e hiperemiado; alça necrótica no saco femoral: hérnia femoral estrangulada, ressecção da alça e reparo com tela pela incisão inguinal.",
+            "fonte": "Imagem de questão de prova — USP-SP 2026"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2020/2020-225eed03-q031-1.webp",
+            "legenda": "Hérnia inguinal recidivada bilateral, operada antes sem tela (USP-RP 2020): técnica de Stoppa por incisão única.",
+            "fonte": "Imagem de questão de prova — USP-RP 2020"
+          }
+        ]
+      },
+      {
+        "titulo": "Complicações da herniorrafia",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Complicação</th><th>Causa / conduta</th></tr></thead><tbody><tr><td>Recidiva</td><td>Lichtenstein: tubérculo púbico e anel interno. Reoperar pela via não usada antes</td></tr><tr><td>Inguinodinia</td><td>Lesão/aprisionamento nervoso (ilioinguinal, ílio-hipogástrico, ramo genital; na laparoscopia, cutâneo femoral lateral e genitofemoral)</td></tr><tr><td><b>Orquite isquêmica</b></td><td>Trombose do <b>plexo pampiniforme</b> (dissecção extensa do cordão); testículo doloroso e endurecido em 2–5 dias; pode atrofiar. Tratamento sintomático</td></tr><tr><td>Seroma</td><td>Comum, sobretudo após laparoscopia; observar</td></tr><tr><td>Infecção da tela</td><td>Rara; tela de polipropileno macroporosa muitas vezes pode ser mantida com drenagem e antibiótico</td></tr><tr><td>Lesão do deferente / vesical</td><td>Hérnia por deslizamento (bexiga, cólon sigmoide, ceco) — cuidado ao abrir o saco</td></tr></tbody></table></div>"
+      },
+      {
+        "titulo": "Hérnias ventrais: incisional, umbilical, epigástrica e diástase",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Hérnia</th><th>Pontos de prova</th></tr></thead><tbody><tr><td><b>Incisional</b></td><td>A mais cobrada das ventrais. Fatores: infecção de ferida (principal), obesidade, tabagismo, DPOC, desnutrição, corticoide, incisão mediana. Fechamento em <b>pequenas mordidas</b> (5 mm × 5 mm, relação fio:ferida 4:1) previne</td></tr><tr><td>Umbilical no adulto</td><td>Mulher multípara, cirrótico com ascite (controlar a ascite antes). Tela se defeito ≥ 1 cm (EHS/AHS 2020); Estratégia usa &gt; 3 cm</td></tr><tr><td>Umbilical na criança</td><td>Fecha espontaneamente até 4–5 anos: operar se &gt; 1,5–2 cm, persistir após 4–5 anos ou complicar. Inguinal na criança/RN: operar sempre (e cedo)</td></tr><tr><td>Epigástrica</td><td>Linha alba acima do umbigo, pequena, dolorosa, gordura pré-peritoneal; tela se &gt; 1 cm</td></tr><tr><td>Diástase dos retos</td><td><b>Não é hérnia</b> (aponeurose íntegra): puérpera com abaulamento da linha média ao contrair os retos → fisioterapia e observar (SURCE 2023)</td></tr></tbody></table></div><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Hérnia incisional grande</div><div class=\"fluxo-resumo__passo\"><b>Defeito &gt; 10 cm ou perda de domínio</b>: <b>TC</b> para medir o defeito e o volume do saco</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Perda de domínio &gt; 20–30%</b>: <b>pneumoperitônio progressivo pré-operatório</b> e/ou toxina botulínica nos oblíquos</div><div class=\"fluxo-resumo__passo\"><b>Defeito largo sem perda de domínio importante</b>: <b>separação de componentes</b> (anterior — Ramirez; posterior — TAR)</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Reparo</b>: tela <b>retromuscular (Rives-Stoppa)</b> é a posição preferida; onlay tem mais seroma</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Pós-operatório de hérnia gigante</b>: medir <b>pressão intravesical</b>: síndrome compartimental abdominal (USP-SP 2018)</div></div><div class=\"table-wrap\"><table><thead><tr><th>Classificação EHS da hérnia incisional (linha média)</th><th></th></tr></thead><tbody><tr><td>M1 subxifoide · M2 epigástrica · M3 umbilical · M4 infraumbilical · M5 suprapúbica</td><td>W1 &lt; 4 cm · W2 4–10 cm · W3 &gt; 10 cm (largura)</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/ses-df/2025/2025-f85e4ef1-q038-1.webp",
+            "legenda": "Hérnia incisional com defeito de 14,3 cm na TC (SES-DF 2025): pela relação volume do saco/cavidade, separação de componentes sem necessidade de pneumoperitônio.",
+            "fonte": "Imagem de questão de prova — SES-DF 2025"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2018/2018-62b91bff-q051-1.webp",
+            "legenda": "Hérnia incisional gigante há 18 anos (USP-SP 2018): após o reparo, oligúria e aumento da pressão ventilatória — medir a pressão intravesical (síndrome compartimental).",
+            "fonte": "Imagem de questão de prova — USP-SP 2018"
+          },
+          {
+            "url": "imagens/questoes/iamspe-sp/2026/2026-0c8b7ba5-q037-1.webp",
+            "legenda": "IAMSPE-SP 2026: as setas mostram a incisão relaxadora sobre a bainha do reto abdominal (separação de componentes).",
+            "fonte": "Imagem de questão de prova — IAMSPE-SP 2026"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2020/2020-14b1a9e3-q041-1.webp",
+            "legenda": "Hérnia incisional após histerectomia (USP-RP 2020): classificação EHS M3–M4, 10 × 7 cm.",
+            "fonte": "Imagem de questão de prova — USP-RP 2020"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2024/2024-86dc0e53-q045-1.webp",
+            "legenda": "Multípara com hérnias umbilical e inguinal (USP-SP 2024): umbilical &gt; 4 cm com tela (recidiva &lt; 3%) e inguinal por Lichtenstein.",
+            "fonte": "Imagem de questão de prova — USP-SP 2024"
+          },
+          {
+            "url": "imagens/questoes/surce/2023/2023-3fa62e6b-q004-1.webp",
+            "legenda": "Puérpera com abaulamento da linha média ao contrair os retos (SURCE 2023): diástase, não hérnia — atividade física e observação.",
+            "fonte": "Imagem de questão de prova — SURCE 2023"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2025/2025-ab075b9d-q025-1.webp",
+            "legenda": "Seroma crônico encapsulado após tela onlay (USP-SP 2025), recorrente após punções: ressecção do cisto e da tela com nova tela no mesmo ato.",
+            "fonte": "Imagem de questão de prova — USP-SP 2025"
+          }
+        ]
+      },
+      {
+        "titulo": "Hérnias incomuns e de epônimo",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Nome</th><th>O que é</th></tr></thead><tbody><tr><td><b>Littré</b></td><td>Divertículo de Meckel no saco</td></tr><tr><td><b>Amyand</b></td><td>Apêndice no saco de hérnia <b>inguinal</b></td></tr><tr><td><b>Garengeot</b></td><td>Apêndice no saco de hérnia <b>femoral</b></td></tr><tr><td><b>Richter</b></td><td>Pinçamento da borda antimesentérica; necrose sem obstrução</td></tr><tr><td>Deslizamento</td><td>Víscera forma parte da parede do saco (bexiga, sigmoide, ceco)</td></tr><tr><td>Pantalona</td><td>Direta + indireta ao mesmo tempo, dos dois lados dos epigástricos</td></tr><tr><td><b>Spiegel</b></td><td>Linha semilunar (borda lateral do reto), quase sempre <b>abaixo da linha arqueada</b>; interparietal, difícil de palpar → TC</td></tr><tr><td>Lombar</td><td>Triângulo superior de <b>Grynfelt</b> (mais comum) e inferior de <b>Petit</b></td></tr><tr><td>Obturadora</td><td>Mulher idosa emagrecida, obstrução intestinal + Howship-Romberg</td></tr><tr><td>Paraestomal</td><td>Muito comum após colostomia terminal; tela no reparo (não é contraindicada)</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/ses-df/2024/2024-febb8790-q069-1.webp",
+            "legenda": "TC com hérnia lateral ao reto, entre os músculos largos (SES-DF 2024): hérnia de Spiegel.",
+            "fonte": "Imagem de questão de prova — SES-DF 2024"
+          },
+          {
+            "url": "imagens/questoes/abc-sp/2016/2016-ea5ea1e5-q010-1.webp",
+            "legenda": "Tumoração progressiva no flanco esquerdo (ABC-SP 2016): hérnia da linha semilunar de Spiegel na TC.",
+            "fonte": "Imagem de questão de prova — ABC-SP 2016"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2018/2018-a6ea23d2-q066-1.webp",
+            "legenda": "Obesa com abaulamento bilateral na linha semilunar (USP-SP 2018): os defeitos de Spiegel são mais frequentes na transição com a linha arqueada.",
+            "fonte": "Imagem de questão de prova — USP-SP 2018"
+          }
+        ]
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Hérnia inguinal assintomática no homem</td><td>Estratégia e bancas: operar (cirurgia eletiva)</td><td>HerniaSurge 2018/2023: observação vigilante é segura para homem com hérnia assintomática ou pouco sintomática; boa parte acaba operada em 5–10 anos. Femoral e mulher: operar</td><td>Resposta padrão: operar; aceite a observação se a alternativa a trouxer como opção compartilhada</td></tr><tr><td>Tamanho para usar tela em umbilical/epigástrica</td><td>Estratégia: tela se &gt; 3 cm; USP-SP 2024: &gt; 4 cm</td><td>EHS/AHS 2020: tela em defeitos ≥ 1 cm (menos recidiva); sutura só nos muito pequenos</td><td>Siga o corte da questão; na dúvida, tela reduz recidiva</td></tr><tr><td>Tela profilática na colostomia terminal</td><td>Provas: tela não é contraindicada; profilaxia “discutível”</td><td>EHS/ESCP/EAES 2023: tela sintética profilática reduz hérnia paraestomal (OR 0,33) sem mais complicações graves, mas sem diferença em reoperação ou qualidade de vida; recomendação fraca</td><td>Marque que a tela profilática pode ser usada e reduz a incidência</td></tr><tr><td>Laparoscopia × Lichtenstein</td><td>Estratégia: Lichtenstein é o padrão-ouro</td><td>HerniaSurge: recidiva semelhante em mãos treinadas; laparoscopia com menos dor crônica e retorno mais rápido; preferida em bilateral, recidiva anterior e mulher</td><td>Lichtenstein = padrão-ouro aberto; TAPP/TEP nas indicações clássicas</td></tr><tr><td>Tela em campo contaminado (hérnia estrangulada com ressecção)</td><td>Tradicional: evitar tela, fazer McVay/Bassini</td><td>HerniaSurge e USP-SP 2026: tela sintética é aceitável em campo limpo-contaminado (ressecção sem contaminação grosseira)</td><td>Contaminação grosseira/peritonite: sem tela sintética; ressecção limpa: tela aceita</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A diferenciação entre hérnia inguinal indireta (congênita, através do anel inguinal profundo) e direta (adquirida, triângulo de Hesselbach) é cobrança certa. A distinção entre hérnia encarcerada (correção eletiva possível após tentativa de redução) e estrangulada (cirurgia de urgência absoluta, sem tentativa de redução manual) também é ponto central e recorrente."
+        "conteudo": "<p>A diferenciação entre hérnia inguinal indireta (congênita, através do anel inguinal profundo) e direta (adquirida, triângulo de Hesselbach) é cobrança certa. A distinção entre hérnia encarcerada (correção eletiva possível após tentativa de redução) e estrangulada (cirurgia de urgência absoluta, sem tentativa de redução manual) também é ponto central e recorrente.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">O que mais cai</span><ul><li>Medial aos epigástricos = direta (Hesselbach); lateral = indireta; abaixo do ligamento inguinal = femoral.</li><li>Femoral: mulher, maior risco de estrangular, Nyhus IIIc, McVay (ligamento de Cooper), operar sempre; secção do ligamento lacunar se encarcerada.</li><li>Nervo ilioinguinal fica fora do cordão; lesão = parestesia da face medial da coxa e raiz do pênis.</li><li>Triângulo da desgraça (deferente × vasos espermáticos) = vasos ilíacos; triângulo da dor = nervos.</li><li>Shouldice = melhor sem tela; Lichtenstein = padrão-ouro aberto; TAPP/TEP para bilateral, recidiva anterior e mulher.</li><li>Incisional grande: TC, separação de componentes, pneumoperitônio se perda de domínio; tela retromuscular.</li><li>Spiegel abaixo da linha arqueada; obturadora com Howship-Romberg; Amyand (inguinal) × Garengeot (femoral).</li></ul></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Hérnias da Parede Abdominal</b> (semana 17 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Abordagem Laparoscópica</li><li>Hérnias na Infância</li><li>Tipos de tela</li><li>Hérnia incisional</li></ul>"
       }
     ],
-    "comoCai": "O material chama a classificação de Nyhus de \"um dos temas que mais caem\" dentro de hérnias, e ensina um mnemônico direto para diferenciar os tipos na anatomia: hérnia LATERAL aos vasos epigástricos inferiores é INDIRETA, e hérnia MEDIAL é \"meDIRETA\" = DIRETA. Uma pegadinha citada explicitamente é que o nervo ilioinguinal às vezes é colocado erroneamente como parte do cordão espermático nas alternativas — na verdade ele corre por fora do cordão. Outro ponto central é o contraste de risco: hérnia FEMORAL tem alto risco de encarceramento/estrangulamento (15-20%), enquanto a inguinal tem baixo risco (1-3%), apesar de a indireta ser a mais comum em ambos os sexos. Também são citadas como favoritas de banca as hérnias com epônimos raros: Littré (divertículo de Meckel no saco), Amyand (apêndice cecal em hérnia inguinal), Garengeot (apêndice cecal em hérnia femoral) e Richter (pinçamento da borda antimesentérica, que pode necrosar e perfurar sem sinais de obstrução completa). Nas hérnias ventrais, o material dá as frequências reais de cada uma nas provas: incisional 60,9%, epigástrica 21,7%, umbilical 17,4%. Por fim, a inguinodinia (dor crônica pós-herniorrafia, definida como dor persistente por mais de 3 meses) é cobrada com sua tríade diagnóstica: dor em queimação/facada no trajeto de um nervo, alteração de sensibilidade e alívio com bloqueio anestésico do nervo envolvido.",
-    "prioridadeProva": "alta"
+    "comoCai": [
+      "Anatomia: Hesselbach, canal inguinal, conteúdo do cordão, visão laparoscópica (Y invertido, triângulos da desgraça e da dor)",
+      "Classificação de Nyhus (IIIa direta, IIIc femoral, IV recidiva)",
+      "Hérnia femoral: risco de estrangulamento, McVay, secção do ligamento lacunar",
+      "Escolha da técnica: Lichtenstein, Shouldice, Stoppa, TAPP/TEP",
+      "Lesões nervosas e inguinodinia (ilioinguinal, genitofemoral)",
+      "Hérnia incisional: TC, separação de componentes, pneumoperitônio progressivo",
+      "Epônimos: Richter, Littré, Amyand, Garengeot, Spiegel, obturadora"
+    ],
+    "prioridadeProva": "alta",
+    "revisaoProvas": true
   },
   {
     "id": "pre-pos-operatorio",
