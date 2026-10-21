@@ -7974,58 +7974,116 @@
     "area": "residencia",
     "categoria": "Ginecologia",
     "titulo": "Endometriose",
-    "resumo": "Dismenorreia progressiva, dispareunia profunda e infertilidade como tripé clínico clássico.",
+    "resumo": "Endometriose para ENAMED e SES-PE: teorias (Sampson), fatores de risco e proteção, os 4 Ds, exame físico, imagem × laparoscopia, CA-125, classificações de Acosta (a favorita da SES-PE) e ASRM, tratamento clínico escalonado, quando operar, endometrioma, infertilidade e formas profundas (intestino, bexiga, parede).",
     "revisado": true,
-    "fonte": "FEBRASGO; ESHRE Guideline on the Management of Endometriosis",
+    "fonte": "FEBRASGO; ESHRE Guideline on the Management of Endometriosis; Becker CM, et al. ESHRE guideline: endometriosis. Hum Reprod Open 2022;2022(2):hoac009; Acosta AA, et al. A proposed classification of pelvic endometriosis. Obstet Gynecol 1973;42:19-25; American Society for Reproductive Medicine. Revised classification of endometriosis: 1996. Fertil Steril 1997;67:817-21; Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas da Endometriose (versão vigente); Estratégia MED — Resumo Estratégico 2026: Endometriose",
     "mnemonicos": [
       {
         "palavra": "Dismenorreia que piora com o tempo",
         "explicacao": "Diferente da dismenorreia primária (que tende a ser estável ao longo dos anos), a dor da endometriose classicamente é progressiva, piorando ciclo após ciclo — essa progressão é uma pista diagnóstica importante."
+      },
+      {
+        "palavra": "4 Ds",
+        "explicacao": "Dismenorreia, Dispareunia, Dor pélvica crônica, Dificuldade para engravidar."
+      },
+      {
+        "palavra": "Acosta: Leve sem Lesão Lá dentro",
+        "explicacao": "Leve = implantes recentes sem endometrioma, cicatriz ou aderência; moderada = pequenos endometriomas e aderências mínimas; grave = endometrioma > 2 cm, aderências densas, intestino/bexiga."
       }
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia",
-        "conteudo": "A endometriose caracteriza-se pela presença de tecido endometrial funcionante fora da cavidade uterina (mais comumente em ovários, peritônio pélvico e ligamentos uterossacros), que responde aos hormônios do ciclo menstrual causando sangramento cíclico nesses implantes ectópicos, com consequente inflamação crônica, formação de aderências e fibrose progressiva. A teoria da menstruação retrógrada (refluxo de tecido endometrial pelas trompas durante a menstruação) é a hipótese fisiopatológica mais aceita, embora não explique todos os casos."
+        "titulo": "Fisiopatologia e epidemiologia",
+        "conteudo": "A endometriose caracteriza-se pela presença de tecido endometrial funcionante fora da cavidade uterina (mais comumente em ovários, peritônio pélvico e ligamentos uterossacros), que responde aos hormônios do ciclo menstrual causando sangramento cíclico nesses implantes ectópicos, com consequente inflamação crônica, formação de aderências e fibrose progressiva. A teoria da menstruação retrógrada (refluxo de tecido endometrial pelas trompas durante a menstruação) é a hipótese fisiopatológica mais aceita, embora não explique todos os casos.<p>Prevalência de 5–10% no menacme, ~70% nas mulheres com dor pélvica e ~50% nas inférteis. Formas: <b>peritoneal</b> (implantes superficiais), <b>ovariana</b> (endometrioma, “cisto de chocolate”) e <b>profunda</b> (&gt; 5 mm: septo retovaginal, uterossacros, reto-sigmoide, bexiga, ureter).</p><div class=\"table-wrap\"><table><thead><tr><th>Teoria</th><th>Ideia (o que cai)</th></tr></thead><tbody><tr><td><b>Sampson</b> — menstruação retrógrada/implantação</td><td>A mais aceita (SES-PE 2025): tecido endometrial reflui pelas tubas e implanta no peritônio</td></tr><tr><td>Imunológica</td><td>Completa Sampson: defeito de NK/macrófagos deixa os implantes sobreviverem</td></tr><tr><td>Metaplasia celômica</td><td>Peritônio vira endométrio; explica casos sem menstruação retrógrada</td></tr><tr><td>Disseminação linfática/vascular</td><td>Explica pulmão, cérebro</td></tr><tr><td>Iatrogênica</td><td>Cicatriz de cesárea, episiotomia, trocarte umbilical</td></tr><tr><td>Menstruação neonatal</td><td>Casos antes da menarca</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Fatores de risco</th><th>Fatores de proteção</th></tr></thead><tbody><tr><td><b>Menarca precoce</b> (SES-PE 2024), menopausa tardia, ciclos curtos e fluxo intenso, nuliparidade, obstrução ao fluxo (malformação mülleriana, estenose cervical), história familiar, IMC baixo</td><td>Multiparidade, amamentação prolongada, menarca tardia, uso de anticoncepcional, ômega-3</td></tr></tbody></table></div>"
       },
       {
-        "titulo": "Quadro clínico",
-        "conteudo": "Dismenorreia progressiva e intensa (piorando ao longo do tempo, diferente da dismenorreia primária que tende a ser estável), dispareunia de profundidade, dor pélvica crônica não cíclica e infertilidade são as manifestações cardinais. A intensidade da dor não se correlaciona necessariamente com a extensão anatômica da doença — pacientes com doença mínima podem ter dor intensa, e vice-versa, o que dificulta a suspeita clínica baseada apenas na gravidade sintomática.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Manifestação cardinal</th><th>Característica-chave</th></tr></thead><tbody><tr><td>Dismenorreia</td><td>Progressiva e intensa — piora ao longo do tempo (diferente da primária, que é estável)</td></tr><tr><td>Dispareunia</td><td>De profundidade</td></tr><tr><td>Dor pélvica crônica</td><td>Não cíclica</td></tr><tr><td>Infertilidade</td><td>Frequentemente associada</td></tr></tbody></table></div><p><strong>Ponto-chave:</strong> a intensidade da dor NÃO se correlaciona com a extensão anatômica da doença.</p>"
-      },
-      {
-        "titulo": "Exame físico",
-        "conteudo": "Dor à palpação de fundo de saco posterior e nodularidade em ligamentos uterossacros ao toque bimanual são achados sugestivos, especialmente quando a paciente refere piora da dor durante o próprio exame. Endometrioma ovariano pode se manifestar como massa anexial cística palpável, geralmente dolorosa. O exame físico pode ser completamente normal mesmo em doença significativa, não devendo sua normalidade excluir o diagnóstico diante de história clínica sugestiva."
+        "titulo": "Quadro clínico e exame físico",
+        "conteudo": "Dismenorreia progressiva e intensa (piorando ao longo do tempo, diferente da dismenorreia primária que tende a ser estável), dispareunia de profundidade, dor pélvica crônica não cíclica e infertilidade são as manifestações cardinais. A intensidade da dor não se correlaciona necessariamente com a extensão anatômica da doença — pacientes com doença mínima podem ter dor intensa, e vice-versa, o que dificulta a suspeita clínica baseada apenas na gravidade sintomática.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Manifestação cardinal</th><th>Característica-chave</th></tr></thead><tbody><tr><td>Dismenorreia</td><td>Progressiva e intensa — piora ao longo do tempo (diferente da primária, que é estável)</td></tr><tr><td>Dispareunia</td><td>De profundidade</td></tr><tr><td>Dor pélvica crônica</td><td>Não cíclica</td></tr><tr><td>Infertilidade</td><td>Frequentemente associada</td></tr></tbody></table></div><p><strong>Ponto-chave:</strong> a intensidade da dor NÃO se correlaciona com a extensão anatômica da doença.</p><p>Os <b>4 Ds</b>: <b>D</b>ismenorreia secundária e progressiva, <b>D</b>ispareunia de profundidade, <b>D</b>or pélvica crônica e <b>D</b>ificuldade para engravidar; mais disquezia e disúria cíclicas (lesão intestinal/vesical). Endometriose <b>não</b> aumenta o fluxo menstrual (adenomiose e mioma aumentam).</p><p>Dor à palpação de fundo de saco posterior e nodularidade em ligamentos uterossacros ao toque bimanual são achados sugestivos, especialmente quando a paciente refere piora da dor durante o próprio exame. Endometrioma ovariano pode se manifestar como massa anexial cística palpável, geralmente dolorosa. O exame físico pode ser completamente normal mesmo em doença significativa, não devendo sua normalidade excluir o diagnóstico diante de história clínica sugestiva.</p><div class=\"table-wrap\"><table><thead><tr><th>Achado</th><th>Sugere</th></tr></thead><tbody><tr><td>Nodularidade e dor nos <b>ligamentos uterossacros</b>, fundo de saco posterior doloroso</td><td>Endometriose profunda</td></tr><tr><td>Útero retrovertido fixo</td><td>Aderências</td></tr><tr><td>Massa anexial fixa</td><td>Endometrioma</td></tr><tr><td>Lesão violácea no fundo vaginal (ENARE 2024)</td><td>Endometriose do fórnice/septo</td></tr><tr><td>Colo desviado lateralmente</td><td>Retração de um uterossacro</td></tr><tr><td>Nódulo doloroso na cicatriz de cesárea que cresce na menstruação (ENARE 2023)</td><td>Endometrioma de parede → exérese</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/famerp/2026/2026-5470fa0b-q020-1.webp",
+            "legenda": "Nódulo endurecido no fórnice posterior e ultrassom com cistos de conteúdo homogêneo em vidro fosco nos dois ovários (FAMERP 2026): endometriose profunda e endometrioma bilateral.",
+            "fonte": "Imagem de questão de prova — FAMERP 2026"
+          }
+        ]
       },
       {
         "titulo": "Diagnóstico",
-        "conteudo": "A laparoscopia com biópsia e confirmação histológica é tradicionalmente considerada o padrão-ouro diagnóstico, mas as diretrizes atuais reconhecem que o diagnóstico clínico presuntivo (baseado em sintomas característicos, exame físico e imagem sugestiva) é suficiente para iniciar tratamento empírico, sem necessidade obrigatória de confirmação cirúrgica antes de tratar — mudança de paradigma relevante que evita atraso terapêutico. Ultrassonografia transvaginal com preparo intestinal e ressonância magnética são úteis para identificar endometriomas e endometriose profunda infiltrativa.",
+        "conteudo": "A laparoscopia com biópsia e confirmação histológica é tradicionalmente considerada o padrão-ouro diagnóstico, mas as diretrizes atuais reconhecem que o diagnóstico clínico presuntivo (baseado em sintomas característicos, exame físico e imagem sugestiva) é suficiente para iniciar tratamento empírico, sem necessidade obrigatória de confirmação cirúrgica antes de tratar — mudança de paradigma relevante que evita atraso terapêutico. Ultrassonografia transvaginal com preparo intestinal e ressonância magnética são úteis para identificar endometriomas e endometriose profunda infiltrativa.<div class=\"table-wrap\"><table><thead><tr><th>Exame</th><th>Papel</th></tr></thead><tbody><tr><td>Ultrassom transvaginal <b>com preparo intestinal</b> (examinador treinado)</td><td>1ª linha para endometriose profunda e endometrioma; nas provas, superior à RM para lesão retrocervical</td></tr><tr><td>Ressonância magnética</td><td>Mapeamento pré-operatório; padrão de imagem para endometrioma; não depende do examinador</td></tr><tr><td>Videolaparoscopia</td><td>Padrão-ouro clássico (visão ± biópsia); hoje reservada a quem precisa de cirurgia ou tem imagem negativa e falha clínica</td></tr><tr><td>CA-125</td><td>Pode subir nas formas avançadas (ENARE 2023: CA-125 350 com US normal → endometriose infiltrativa); <b>não</b> diagnostica, serve para seguimento</td></tr><tr><td>Tomografia</td><td>Não serve, exceto tórax/cérebro</td></tr><tr><td>Cistoscopia</td><td>Lesão vesical (biópsia)</td></tr></tbody></table></div><p>Diagnóstico diferencial: adenomiose, mioma, DIP (dismenorreia não é critério de DIP), cisto hemorrágico, síndrome do intestino irritável, cistite intersticial, dismenorreia primária.</p>",
         "imagens": [
           {
             "url": "imagens/questoes/amrigs/2022/2022-4e452744-q022-1.webp",
             "legenda": "Laparoscopia: cisto ovariano com conteúdo espesso e escuro, \"achocolatado\" — endometrioma.",
             "fonte": "Imagem de questão de prova — AMRIGS 2022"
+          },
+          {
+            "url": "imagens/questoes/ses-pe/2024/2024-2be0af03-q046-1.webp",
+            "legenda": "SES-PE 2024: cisto ovariano volumoso, unilocular, em vidro fosco e sem fluxo ao Doppler em mulher sintomática — endometrioma; resposta da prova: tratar cirurgicamente.",
+            "fonte": "Imagem de questão de prova — SES-PE 2024"
           }
         ]
       },
       {
-        "titulo": "Tratamento",
-        "conteudo": "Tratamento hormonal (contraceptivos combinados contínuos, progestágenos, ou análogos de GnRH em casos mais graves) é a primeira linha para controle sintomático, suprimindo a atividade cíclica dos implantes endometrióticos. Cirurgia laparoscópica com ressecção/ablação dos implantes é reservada a casos refratários ao tratamento clínico, endometriomas volumosos, ou quando há desejo reprodutivo com infertilidade associada à doença."
+        "titulo": "Classificações: Acosta e ASRM",
+        "conteudo": "<p>A <b>SES-PE cobra Acosta quase todo ano</b> (2019, 2020 ×2): lesões recentes disseminadas no fundo de saco, sem endometrioma, cicatriz ou aderência = <b>leve</b>.</p><div class=\"table-wrap\"><table><thead><tr><th>Acosta (1973)</th><th>Achados</th></tr></thead><tbody><tr><td><b>Leve</b></td><td>Lesões recentes, disseminadas, no peritônio pélvico (fundo de saco anterior ou posterior) ou superfície ovariana, <b>sem</b> endometrioma, cicatriz, retração ou aderências periovarianas/peritubárias</td></tr><tr><td><b>Moderada</b></td><td>Endometriose em um ou ambos ovários com lesões superficiais, cicatriz e retração ou <b>pequenos endometriomas</b>; aderências periovarianas/peritubárias <b>mínimas</b>; implantes no fundo de saco com cicatriz/retração, sem invadir o sigmoide</td></tr><tr><td><b>Grave</b></td><td>Endometrioma &gt; 2 × 2 cm; aderências periovarianas/peritubárias <b>densas</b>; tuba obstruída; obliteração do fundo de saco; acometimento de intestino, septo retovaginal ou trato urinário</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>ASRM revisada (1996) — pontos</th><th>Estádio</th></tr></thead><tbody><tr><td>1–5</td><td>I — mínima</td></tr><tr><td>6–15</td><td>II — leve</td></tr><tr><td>16–40</td><td>III — moderada (SES-PE 2021: endometrioma pequeno + aderências envolvendo totalmente as fímbrias)</td></tr><tr><td>&gt; 40</td><td>IV — grave</td></tr></tbody></table></div><p>O estádio <b>não</b> se correlaciona com a dor nem com a idade (AMRIGS 2024); a dor depende da profundidade e da inervação do local.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/amrigs/2024/2024-054592b9-q048-1.webp",
+            "legenda": "Idade × estádio ASRM em 500 casos (AMRIGS 2024): sem correlação entre idade e estadiamento.",
+            "fonte": "Imagem de questão de prova — AMRIGS 2024"
+          }
+        ]
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "Dor pélvica crônica progressiva associada a infertilidade em mulher jovem deve levantar suspeita ativa de endometriose, mesmo sem confirmação cirúrgica prévia — o atraso diagnóstico histórico dessa condição (frequentemente de anos) tem impacto significativo na qualidade de vida e no potencial reprodutivo futuro da paciente."
+        "titulo": "Tratamento clínico",
+        "conteudo": "<p>Tratamento hormonal (contraceptivos combinados contínuos, progestágenos, ou análogos de GnRH em casos mais graves) é a primeira linha para controle sintomático, suprimindo a atividade cíclica dos implantes endometrióticos. Cirurgia laparoscópica com ressecção/ablação dos implantes é reservada a casos refratários ao tratamento clínico, endometriomas volumosos, ou quando há desejo reprodutivo com infertilidade associada à doença.</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Dor por endometriose sem desejo de gestar</div><div class=\"fluxo-resumo__passo\"><b>1ª linha</b>: <b>AINE</b> + <b>anticoncepcional combinado</b> (contínuo) ou <b>progestágeno</b> (dienogeste, desogestrel, SIU-LNG, acetato de medroxiprogesterona) — tratamento empírico sem laparoscopia</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>2ª linha</b>: <b>análogo agonista do GnRH</b> (flare-up nos primeiros 14 dias; até 6–12 meses com <b>add-back</b>) ou antagonista oral do GnRH; inibidor da aromatase</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Falha / contraindicação / lesão obstrutiva</b>: cirurgia laparoscópica</div></div><p>Tratamento clínico melhora a dor mas <b>não reduz endometrioma</b> nem trata infertilidade. SIU-LNG alivia a dor como o GnRH-a sem hipoestrogenismo (AMRIGS 2022). Danazol e gestrinona: efeitos androgênicos, em desuso. ENARE 2021: o tratamento pode ser feito promovendo amenorreia.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/amrigs/2022/2022-c37d569c-q058-1.webp",
+            "legenda": "Ensaio SIU-LNG × GnRH-a na dor da endometriose (AMRIGS 2022): eficácia igual; prefere-se o SIU-LNG por não causar hipoestrogenismo.",
+            "fonte": "Imagem de questão de prova — AMRIGS 2022"
+          }
+        ]
+      },
+      {
+        "titulo": "Tratamento cirúrgico e situações especiais",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Indicação de cirurgia</th><th></th></tr></thead><tbody><tr><td>Dor refratária ou contraindicação ao tratamento clínico</td><td></td></tr><tr><td>Endometrioma &gt; 4–6 cm, sintomático ou com dúvida de malignidade</td><td><b>Cistectomia</b> (retirar a cápsula), não punção/drenagem (recidiva); ENARE 2023: endometrioma de 18 mm → tratamento clínico</td></tr><tr><td>Obstrução intestinal ou urinária (hidronefrose)</td><td>Cirurgia obrigatória</td></tr><tr><td>Infertilidade em mulher jovem, boa reserva, dor importante</td><td>Laparoscopia</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Local</th><th>Conduta</th></tr></thead><tbody><tr><td>Intestino</td><td>Shaving (superficial), ressecção discoide, <b>ressecção segmentar</b> se &gt; 3 cm, &gt; 50% da circunferência, estenosante ou multifocal</td></tr><tr><td>Bexiga</td><td>Exérese laparoscópica da lesão (UNICAMP 2021)</td></tr><tr><td>Ureter com hidronefrose</td><td>Cirurgia (ureterólise ou ressecção com reimplante)</td></tr><tr><td>Parede / umbigo</td><td>Exérese com margem</td></tr><tr><td>Prole constituída, refratária</td><td>Histerectomia ± ooforectomia (menor recidiva sem ovários) e excisão das lesões (USP-RP 2026: adenomiose + nódulo retossigmoide → histerectomia, salpingectomia e retossigmoidectomia segmentar)</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Infertilidade: laparoscopia × reprodução assistida</th><th>Favorece laparoscopia</th><th>Favorece FIV</th></tr></thead><tbody><tr><td>Idade</td><td>&lt; 35 anos</td><td>&gt; 35 anos</td></tr><tr><td>Reserva ovariana</td><td>Boa</td><td>Baixa</td></tr><tr><td>Dor</td><td>Intensa</td><td>Leve</td></tr><tr><td>Outros fatores (masculino, tubário), cirurgia prévia, endometrioma bilateral, adenomiose</td><td>Ausentes</td><td>Presentes</td></tr></tbody></table></div><p>Risco de câncer de ovário (endometrioide e de células claras) é baixo (~1–2,5%); não se rastreia.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unicamp/2021/2021-943b4be3-q002-1.webp",
+            "legenda": "Lesão vesical na cistoscopia e na laparoscopia (UNICAMP 2021): endometriose vesical — exérese laparoscópica.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2021"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2026/2026-42a7aa8f-q098-2.webp",
+            "legenda": "Útero heterogêneo com adenomiose e nódulo profundo em mulher com prole constituída (USP-RP 2026): histerectomia, salpingectomia e retossigmoidectomia segmentar.",
+            "fonte": "Imagem de questão de prova — USP-RP 2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Padrão-ouro diagnóstico</td><td>Estratégia e maioria das provas: videolaparoscopia (com ou sem biópsia)</td><td>ESHRE 2022: imagem (US com preparo/RM) e clínica bastam para diagnosticar e tratar; laparoscopia só se imagem negativa e falha clínica ou necessidade cirúrgica</td><td>Se pedir “padrão-ouro”, laparoscopia; se pedir conduta inicial, tratar empiricamente</td></tr><tr><td>Cirurgia do endometrioma antes da FIV</td><td>Estratégia: operar endometrioma &gt; 5–6 cm</td><td>ESHRE 2022: não operar rotineiramente antes da FIV só para melhorar a gestação (perda de reserva ovariana); operar por dor, tamanho ou dúvida diagnóstica</td><td>Operar se sintomático/volumoso; endometrioma pequeno → clínico</td></tr><tr><td>Classificação</td><td>SES-PE: Acosta; outras bancas: ASRM</td><td>ESHRE 2022 e grupos atuais preferem #Enzian (profunda) e EFI (fertilidade); Acosta é histórica</td><td>Saiba Acosta para a SES-PE</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A ausência de correlação entre extensão anatômica da doença e intensidade da dor é ponto conceitual central e frequentemente cobrado. A aceitação atual do diagnóstico clínico presuntivo para início de tratamento empírico, sem exigir confirmação laparoscópica obrigatória, é atualização de diretriz muito valorizada em provas recentes."
+        "conteudo": "<p>A ausência de correlação entre extensão anatômica da doença e intensidade da dor é ponto conceitual central e frequentemente cobrado. A aceitação atual do diagnóstico clínico presuntivo para início de tratamento empírico, sem exigir confirmação laparoscópica obrigatória, é atualização de diretriz muito valorizada em provas recentes.</p><p>Dor pélvica crônica progressiva associada a infertilidade em mulher jovem deve levantar suspeita ativa de endometriose, mesmo sem confirmação cirúrgica prévia — o atraso diagnóstico histórico dessa condição (frequentemente de anos) tem impacto significativo na qualidade de vida e no potencial reprodutivo futuro da paciente.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">O que mais cai</span><ul><li>Sampson (menstruação retrógrada) é a teoria mais aceita; menarca precoce e nuliparidade aumentam o risco.</li><li>4 Ds: dismenorreia progressiva, dispareunia profunda, dor pélvica crônica, dificuldade para engravidar.</li><li>Acosta leve = lesões recentes sem endometrioma, cicatriz ou aderência.</li><li>Padrão-ouro: laparoscopia; imagem: US com preparo intestinal/RM; CA-125 não diagnostica.</li><li>1ª linha: AINE + ACO ou progestágeno; GnRH-a com add-back na falha.</li><li>Endometrioma: cistectomia (não punção) se grande/sintomático; tratamento clínico não o reduz.</li><li>Hidronefrose ou suboclusão intestinal = cirurgia.</li></ul></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Sangramento Uterino Anormal, Endometriose e Infertilidade</b> (semana 18 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Infertilidade</li><li>Dismenorreia e os Pólipos Endometriais</li></ul>"
       }
     ],
-    "comoCai": "O mnemônico dos \"4 D's\" (Dismenorreia progressiva, Dispareunia, Dor pélvica crônica e infertilidade) é o quadro clínico central cobrado, com um ponto de atenção explícito: NÃO existe correlação entre o estadiamento ASRM (I a IV) e a intensidade dos sintomas — a dor depende da localização e profundidade do implante, não do estádio. A videolaparoscopia é tratada como padrão-ouro clássico, mas o material já atualiza que, segundo ESHRE/ASRM, a visualização direta dos implantes já é suficiente sem biópsia obrigatória. Para o endometrioma (cisto de \"chocolate\"), a regra mais repetida é operar somente se sintomático E maior que 5-6cm, sempre por exérese completa — nunca apenas punção, pelo altíssimo risco de recidiva. Um ponto de diferenciação central com adenomiose e mioma é que a endometriose NÃO aumenta o fluxo menstrual (diferente das outras duas). Uma questão real da própria SES-PE (2023, R4-GO), mencionada no material de endometriose por vir do mesmo arquivo integrador, reforça que útero difusamente aumentado com bordas REGULARES e consistência amolecida aponta para adenomiose, não mioma.",
-    "prioridadeProva": "media"
+    "comoCai": [
+      "Teoria de Sampson e fatores de risco (menarca precoce, nuliparidade)",
+      "Classificação de Acosta (SES-PE) e ASRM",
+      "Exame de imagem × laparoscopia; papel do CA-125",
+      "Tratamento clínico escalonado (AINE, ACO, progestágeno, GnRH com add-back)",
+      "Endometrioma: quando operar e por que cistectomia",
+      "Endometriose profunda: intestino, bexiga, ureter, parede"
+    ],
+    "prioridadeProva": "media",
+    "revisaoProvas": true
   },
   {
     "id": "dip",
