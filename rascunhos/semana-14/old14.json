@@ -1,0 +1,196 @@
+[
+ {
+  "id": "anemias-carenciais",
+  "area": "residencia",
+  "categoria": "Hematologia",
+  "titulo": "Anemias Carenciais (Ferropriva e Megaloblástica)",
+  "resumo": "Diagnóstico diferencial pelo VCM e reposição nas anemias por deficiência de ferro, B12 e folato.",
+  "revisado": true,
+  "fonte": "Sociedade Brasileira de Hematologia e Hemoterapia; Ministério da Saúde — Manual de Condutas Gerais de Anemia Ferropriva; Conitec — incorporação de ferripolimaltose e carboximaltose férrica no SUS (2024-2025); NICE — diagnóstico e manejo da deficiência de vitamina B12 (2024); Consenso internacional sobre diagnóstico e tratamento da deficiência de B12 (2024)",
+  "mnemonicos": [
+   {
+    "palavra": "VCM: MICRO x MACRO",
+    "explicacao": "O volume corpuscular médio (VCM) orienta o diagnóstico diferencial inicial: anemia ferropriva é microcítica (VCM baixo); anemia megaloblástica (B12/folato) é macrocítica (VCM alto)."
+   }
+  ],
+  "secoes": [
+   {
+    "titulo": "Fisiopatologia",
+    "conteudo": "A anemia ferropriva resulta de balanço negativo de ferro, por perda sanguínea crônica (a causa mais comum em adultos, exigindo sempre investigação da origem — digestiva no homem/mulher pós-menopausa, ginecológica na mulher em idade fértil), ingesta inadequada ou má absorção, comprometendo a síntese de hemoglobina e gerando hemácias microcíticas e hipocrômicas. A anemia megaloblástica resulta de deficiência de vitamina B12 e/ou ácido fólico, comprometendo a síntese de DNA nas células hematopoiéticas em replicação, gerando hemácias macrocíticas com maturação nuclear assincrônica em relação ao citoplasma."
+   },
+   {
+    "titulo": "Quadro clínico",
+    "conteudo": "Fadiga, palidez, dispneia aos esforços e taquicardia compõem o quadro geral de qualquer anemia, de instalação insidiosa e proporcional à velocidade de queda da hemoglobina. Na deficiência de B12, sintomas neurológicos específicos (parestesias, ataxia sensitiva, degeneração combinada subaguda da medula espinhal) podem preceder ou ocorrer independentemente da anemia, sendo achado que a diferencia da deficiência isolada de folato."
+   },
+   {
+    "titulo": "Exame físico",
+    "conteudo": "Palidez cutaneomucosa é o achado mais comum e inespecífico. Coiloníquia (unhas em colher) e queilite angular sugerem ferropenia de longa duração. Glossite atrófica (língua lisa e dolorida) é achado compartilhado por deficiência de ferro e de B12/folato. Alterações de propriocepção e sinal de Romberg positivo sugerem acometimento medular pela deficiência de B12."
+   },
+   {
+    "titulo": "Diagnóstico",
+    "conteudo": "Anemia ferropriva é confirmada por ferritina sérica baixa (o parâmetro mais específico, embora seja reagente de fase aguda e possa estar falsamente normal/elevada em inflamação concomitante), associada a índice de saturação de transferrina reduzido; o hemograma mostra microcitose e hipocromia com aumento do RDW. Anemia megaloblástica é confirmada por dosagem sérica de B12 e/ou folato reduzidos, com hemograma mostrando macrocitose e neutrófilos hipersegmentados no esfregaço periférico — achado morfológico característico e bastante específico dessa condição. Achados adicionais no esfregaço periférico da anemia megaloblástica incluem anisocitose, poiquilocitose, macro-ovalócitos e corpos de Howell-Jolly; marcadores indiretos como homocisteína e ácido metilmalônico elevados auxiliam a confirmar a deficiência de B12 em casos de dosagem sérica limítrofe.\n\n<div class=\"table-wrap\"><table>\n<thead><tr><th>Parâmetro</th><th>Anemia ferropriva</th><th>Anemia megaloblástica (B12/folato)</th></tr></thead>\n<tbody>\n<tr><td>VCM</td><td>Reduzido (microcítica)</td><td>Aumentado (macrocítica)</td></tr>\n<tr><td>Ferritina</td><td>Baixa (parâmetro mais específico)</td><td>Normal ou elevada</td></tr>\n<tr><td>Saturação de transferrina</td><td>Reduzida</td><td>Normal</td></tr>\n<tr><td>RDW</td><td>Aumentado</td><td>Aumentado</td></tr>\n<tr><td>Esfregaço periférico</td><td>Hipocromia, microcitose, anisopoiquilocitose</td><td>Neutrófilos hipersegmentados, macro-ovalócitos, corpos de Howell-Jolly</td></tr>\n<tr><td>Marcadores indiretos</td><td>Não aplicável</td><td>Homocisteína e ácido metilmalônico elevados (auxiliam quando dosagem sérica de B12 é limítrofe)</td></tr>\n<tr><td>Sintomas neurológicos</td><td>Ausentes</td><td>Podem preceder a anemia na deficiência de B12 (parestesias, ataxia sensitiva, degeneração combinada subaguda) — ausentes na deficiência isolada de folato</td></tr>\n</tbody>\n</table></div>",
+    "imagens": [
+     {
+      "url": "imagens/questoes/usp-rp/2012/2012-5d9e55f0-q008-1.webp",
+      "legenda": "Esfregaço de sangue periférico: neutrófilo hipersegmentado (6 ou mais lobos) entre macrócitos — anemia megaloblástica (no caso, anemia perniciosa).",
+      "fonte": "Imagem de questão de prova — USP-RP 2012"
+     }
+    ]
+   },
+   {
+    "titulo": "Tratamento",
+    "conteudo": "Reposição de ferro oral (sulfato ferroso) é o tratamento de escolha na ferropenia, mantida por vários meses além da normalização da hemoglobina para repletar os estoques corporais — a investigação e correção da causa da perda de ferro (geralmente sangramento oculto) é etapa obrigatória e não deve ser negligenciada. Deficiência de B12 é tratada com reposição parenteral (intramuscular) nas causas de má absorção (como a anemia perniciosa, por deficiência de fator intrínseco), enquanto reposição de folato oral trata a deficiência isolada dessa vitamina — jamais repor apenas folato em paciente com possível deficiência de B12 não excluída, pelo risco de mascarar a anemia e permitir progressão da lesão neurológica. O ferro intravenoso (ferripolimaltose, carboximaltose férrica) é indicado quando há intolerância ou má absorção do ferro oral, sangramento ativo significativo ou necessidade de correção mais rápida da hemoglobina — a carboximaltose férrica permite reposição de até 1.000 mg em infusão única de cerca de 15 minutos, com elevação de 2 g/dL de hemoglobina em cerca de 7 dias (versus 14 dias com sulfato ferroso oral); a Conitec recomendou a incorporação de ambas as formulações ao SUS (2024-2025), ampliando o acesso a essa via de reposição. Quanto à deficiência de B12, consensos recentes (NICE 2024; consenso internacional 2024) reforçam que a reposição oral em altas doses (1.000-2.000 mcg/dia) pode ser eficaz mesmo em causas de má absorção (incluindo anemia perniciosa), pela absorção passiva independente de fator intrínseco (cerca de 1% da dose oral), sendo alternativa à via intramuscular clássica em pacientes selecionados, sobretudo quando há dificuldade de acesso a injeções regulares — a via parenteral permanece preferencial em quadros neurológicos graves ou quando a adesão à via oral é incerta.\n\n<div class=\"table-wrap\"><table>\n<thead><tr><th>Situação</th><th>Conduta</th></tr></thead>\n<tbody>\n<tr><td>Ferropenia, via oral tolerada</td><td>Sulfato ferroso oral, mantido por vários meses além da normalização da Hb para repletar estoques; sempre investigar e tratar a causa da perda de ferro</td></tr>\n<tr><td>Ferropenia com intolerância/má absorção oral, sangramento ativo ou necessidade de correção rápida</td><td>Ferro intravenoso (ferripolimaltose, carboximaltose férrica) — carboximaltose permite até 1.000 mg em infusão única de ~15 min, com elevação de 2 g/dL de Hb em ~7 dias (incorporação ao SUS recomendada pela Conitec, 2024-2025)</td></tr>\n<tr><td>Deficiência de B12 por má absorção (ex.: anemia perniciosa)</td><td>Reposição parenteral (intramuscular) classicamente; reposição oral em altas doses (1.000-2.000 mcg/dia) é alternativa eficaz em pacientes selecionados (absorção passiva ~1% da dose, independente de fator intrínseco) — via parenteral permanece preferencial em quadro neurológico grave ou adesão oral incerta</td></tr>\n<tr><td>Deficiência isolada de folato</td><td>Reposição de folato oral — NUNCA repor apenas folato sem excluir deficiência de B12, pelo risco de mascarar a anemia e permitir progressão do dano neurológico</td></tr>\n</tbody>\n</table></div>"
+   },
+   {
+    "titulo": "Sinais de alerta",
+    "conteudo": "<span class=\"red-flag\">Anemia ferropriva em homem adulto ou mulher pós-menopausa sem causa ginecológica evidente</span> exige investigação obrigatória do trato gastrointestinal (endoscopia e colonoscopia) para exclusão de neoplasia oculta como causa da perda sanguínea crônica, mesmo na ausência de sintomas digestivos evidentes."
+   },
+   {
+    "titulo": "Dicas de prova",
+    "conteudo": "A obrigatoriedade de investigar a causa da ferropenia (não apenas repor ferro) em adulto, especialmente investigação digestiva em homens, é cobrança certíssima. O risco de mascarar/piorar dano neurológico ao repor apenas folato sem excluir deficiência de B12 concomitante é uma das armadilhas mais clássicas e recorrentes do tema em provas de residência."
+   },
+   {
+    "titulo": "Aulas bônus no MEDCURSO",
+    "conteudo": "Este resumo corresponde à aula <b>Anemias I - Introdução, Ferropriva, Doença Crônica, Megaloblástica</b> (semana 14 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Mielodisplasia</li><li>Anemia Aplásica</li></ul>"
+   }
+  ],
+  "comoCai": "No SES-PE e no ENAMED, o diagnóstico diferencial pelo VCM (microcítica x macrocítica) e a obrigatoriedade de investigar a causa da ferropenia — especialmente investigação digestiva (endoscopia/colonoscopia) em homens adultos e mulheres pós-menopausa, para excluir neoplasia oculta — são cobranças certíssimas. A armadilha mais clássica e recorrente é repor apenas ácido fólico em paciente com possível deficiência de B12 não excluída, mascarando a anemia e permitindo progressão do dano neurológico (degeneração combinada subaguda da medula). Achados morfológicos específicos (neutrófilos hipersegmentados na deficiência de B12/folato, RDW aumentado na ferropenia) também são cobrados. Um ponto emergente é o uso crescente do ferro intravenoso (carboximaltose férrica), hoje incorporado ao SUS, como alternativa de reposição mais rápida em casos selecionados.",
+  "prioridadeProva": "media"
+ },
+ {
+  "id": "desenvolvimento-neuropsicomotor-crescimento",
+  "area": "residencia",
+  "categoria": "Pediatria",
+  "titulo": "Desenvolvimento Neuropsicomotor e Curvas de Crescimento",
+  "resumo": "Marcos do desenvolvimento esperados por idade, sinais de alarme e uso das curvas de crescimento da OMS.",
+  "revisado": true,
+  "fonte": "Sociedade Brasileira de Pediatria; Caderneta de Saúde da Criança (Ministério da Saúde); Curvas de Crescimento da OMS",
+  "mnemonicos": [
+   {
+    "palavra": "Regressão nunca é normal",
+    "explicacao": "Perder uma habilidade do desenvolvimento já adquirida (por exemplo, uma criança que já andava e para de andar) NUNCA é considerado uma variação normal — é sempre sinal de alarme que exige investigação."
+   }
+  ],
+  "secoes": [
+   {
+    "titulo": "Crescimento e curvas da OMS",
+    "conteudo": "O crescimento é mais rápido no primeiro ano e na puberdade. As curvas da OMS (0 a 5 anos: padrão de crescimento; 5 a 19 anos: referência) avaliam peso, comprimento/estatura, perímetro cefálico e IMC por idade e sexo, em escore-z ou percentis; cruzamento de dois ou mais canais, valores extremos isolados ou desaceleração da velocidade de crescimento exigem investigação. A estatura-alvo familiar estima o potencial genético (média das estaturas dos pais, somando 6,5 cm para meninos e subtraindo 6,5 cm para meninas).\n\n<div class=\"table-wrap\"><table><thead><tr><th>Parâmetro</th><th>Referência prática</th></tr></thead><tbody><tr><td>Peso</td><td>Perda fisiológica de até 10% na primeira semana, recuperada até 10–15 dias; dobra aos 4–5 meses e triplica com 1 ano</td></tr><tr><td>Comprimento</td><td>Cerca de 50 cm ao nascer; cresce cerca de 25 cm no 1º ano e 12 cm no 2º; depois 5–7 cm/ano até a puberdade</td></tr><tr><td>Perímetro cefálico</td><td>Cerca de 35 cm ao nascer; aumenta 2 cm/mês no 1º trimestre, 1 cm/mês no 2º e 0,5 cm/mês no 2º semestre</td></tr><tr><td>Fontanelas</td><td>Posterior fecha até 2 meses; anterior entre 9 e 18 meses</td></tr><tr><td>Dentição</td><td>Primeiros dentes entre 6 e 8 meses; 20 dentes decíduos até 2,5–3 anos</td></tr></tbody></table></div>"
+   },
+   {
+    "titulo": "Marcos do desenvolvimento neuropsicomotor",
+    "conteudo": "O desenvolvimento segue sequência previsível, céfalo-caudal e próximo-distal, refletindo a mielinização do sistema nervoso. Marcos mais cobrados (com margem de variação): sorriso social com 1–2 meses; sustento cefálico com 3–4 meses; rolar com 4–5 meses; pinça inferior e transferência de objetos com 6 meses; sentar sem apoio com 6–8 meses; engatinhar e ficar em pé com apoio com 9–10 meses; pinça superior e primeiras palavras com significado com 10–12 meses; andar sem apoio com 12–15 meses (atraso se não anda aos 18 meses); torre de 3–4 cubos e cerca de 20 palavras com 18 meses; frases de duas palavras com 2 anos; frases completas e controle esfincteriano diurno entre 2 e 3 anos. Prematuros são avaliados pela idade corrigida até 2 anos."
+   },
+   {
+    "titulo": "Reflexos primitivos",
+    "conteudo": "Presentes ao nascer, desaparecem com a maturação cortical; tanto a ausência no RN quanto a persistência além da idade esperada sugerem disfunção neurológica.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Reflexo primitivo</th><th>Desaparece</th></tr></thead><tbody><tr><td>Marcha reflexa</td><td>1-2 meses</td></tr><tr><td>Preensão palmar</td><td>2-4 meses</td></tr><tr><td>Tônico-cervical assimétrico (Magnus-Kleijn)</td><td>2º-3º mês</td></tr><tr><td>Sucção</td><td>3-4 meses (vigília); 6 meses (sono)</td></tr><tr><td>Voracidade/pontos cardeais</td><td>3-4 meses</td></tr><tr><td>Moro</td><td>6º mês</td></tr><tr><td>Preensão plantar</td><td>12-15 meses</td></tr><tr><td>Cutâneo-plantar em extensão</td><td>Até 18 meses (depois vira flexão, para toda a vida)</td></tr></tbody></table></div>\n\nReações posturais que surgem com a maturação: Landau (3 meses), proteção lateral (6–7 meses) e paraquedas (9 meses, persiste por toda a vida)."
+   },
+   {
+    "titulo": "Triagem do desenvolvimento e sinais de alerta",
+    "conteudo": "Usar instrumentos estruturados (marcos da Caderneta da Criança, Denver II, M-CHAT para autismo entre 16 e 30 meses) em vez de impressão clínica isolada. Sinais de alerta: não sustentar a cabeça aos 4 meses, não sentar aos 9 meses, não andar aos 18 meses, ausência de balbucio aos 12 meses, de palavras aos 16 meses ou de frases aos 2 anos, ausência de contato visual ou de apontar, assimetria motora, macro ou microcefalia e, sobretudo, regressão de habilidades já adquiridas — sempre grave, exige investigação neurológica prioritária. Diante de atraso, encaminhar para avaliação e estimulação precoce (fisioterapia, fonoaudiologia, terapia ocupacional) sem aguardar, pois a intervenção precoce melhora os desfechos; avaliar audição em todo atraso de linguagem."
+   },
+   {
+    "titulo": "Puericultura: consultas e acompanhamento da criança",
+    "conteudo": "A puericultura é o acompanhamento programado da criança saudável. O Ministério da Saúde recomenda no mínimo 7 consultas no primeiro ano (1ª semana, 1, 2, 4, 6, 9 e 12 meses), 2 no segundo ano (18 e 24 meses) e depois anuais; a Sociedade Brasileira de Pediatria propõe calendário mais frequente (consultas mensais até os 6 meses). A primeira consulta deve ocorrer na primeira semana de vida (\"Primeira Semana Saúde Integral\"), com avaliação da amamentação, do coto umbilical, da icterícia, dos testes de triagem neonatal e da vacinação. Em cada consulta: antropometria plotada nas curvas da OMS (peso, comprimento/estatura, perímetro cefálico e IMC), avaliação do desenvolvimento, revisão da caderneta vacinal, orientação alimentar, suplementação de ferro e vitaminas, prevenção de acidentes e de maus-tratos, saúde bucal (escovação com creme dental fluoretado desde o primeiro dente, em quantidade de um grão de arroz até 3 anos e de ervilha depois) e triagem visual e auditiva.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Parâmetro</th><th>Referência prática</th></tr></thead><tbody><tr><td>Peso</td><td>Perda fisiológica de até 10% na primeira semana, recuperada até 10–15 dias; dobra aos 4–5 meses e triplica com 1 ano</td></tr><tr><td>Comprimento</td><td>Cresce cerca de 25 cm no 1º ano e 12 cm no 2º; depois 5–7 cm/ano até a puberdade</td></tr><tr><td>Perímetro cefálico</td><td>Cerca de 35 cm ao nascer; aumenta 2 cm/mês no 1º trimestre, 1 cm/mês no 2º e 0,5 cm/mês no 2º semestre</td></tr><tr><td>Dentição</td><td>Primeiros dentes entre 6 e 8 meses; 20 dentes decíduos até 2,5–3 anos</td></tr></tbody></table></div>\n\nOrientações frequentes em prova: tempo de tela — evitar telas antes dos 2 anos, até 1 hora/dia dos 2 aos 5 anos e até 2 horas/dia dos 6 aos 10 anos, sempre com supervisão e nunca durante refeições ou antes de dormir (SBP); atividade física — crianças e adolescentes de 5 a 17 anos devem fazer pelo menos 60 minutos diários de atividade moderada a vigorosa (OMS); sono seguro do lactente em decúbito dorsal, em berço próprio e sem objetos soltos. O Estatuto da Criança e do Adolescente considera criança até 12 anos incompletos e adolescente de 12 a 18 anos; o Marco Legal da Primeira Infância abrange do nascimento aos 6 anos. Os primeiros 1.000 dias (gestação somada aos 2 primeiros anos) são a janela de maior impacto das intervenções. Na consulta do adolescente, garantir privacidade e sigilo (com as exceções legais) e abordar a avaliação psicossocial (por exemplo, o roteiro HEEADSSS)."
+   },
+   {
+    "titulo": "Dicas de prova",
+    "conteudo": "As janelas etárias esperadas dos principais marcos do desenvolvimento neuropsicomotor (sustento cefálico, sentar, andar, primeiras palavras) são cobrança certíssima e extremamente recorrente em provas de pediatria. A diferenciação entre atraso de aquisição (menos grave, aguarda-se dentro de margem de variação) e regressão de habilidades já adquiridas (sempre sinal de alarme grave) também é frequentemente exigida."
+   },
+   {
+    "titulo": "Aulas bônus no MEDCURSO",
+    "conteudo": "Este resumo corresponde à aula <b>Crescimento e Desenvolvimento Normais; Puberdade Normal</b> (semana 14 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Distúrbios Puberais</li></ul>"
+   }
+  ],
+  "comoCai": "O curso classifica DNPM como 8º lugar no ranking \"TOP 10 Pediatria\" de temas mais cobrados. A fórmula de alvo genético é citada como \"chove nas provas\": para meninas, (estatura do pai + estatura da mãe − 13) ÷ 2, ±5cm; para meninos, (estatura do pai + estatura da mãe + 13) ÷ 2, ±5cm. A diferenciação entre Baixa Estatura Familiar (pais baixos, idade óssea compatível com a idade cronológica, puberdade normal) e Atraso Constitucional do Crescimento e Puberdade (idade óssea atrasada, puberdade também atrasada, história familiar de atraso puberal) é descrita como tema que \"despenca nas provas\". Os marcos de desenvolvimento até os 18 meses são citados como os mais cobrados — pinça inferior aos 9 meses evoluindo para pinça superior aos 12 meses, marcha sem apoio aos 15 meses. Os reflexos primitivos e sua idade de desaparecimento (Moro some ao 6º mês, preensão palmar entre 2-4 meses) são \"muito cobrados\", com os examinadores frequentemente perguntando até quando cada reflexo permanece presente.",
+  "prioridadeProva": "media"
+ },
+ {
+  "id": "puberdade-normal-disturbios",
+  "area": "residencia",
+  "categoria": "Pediatria",
+  "titulo": "Puberdade Normal e seus Distúrbios",
+  "resumo": "Sequência normal dos eventos puberais, estadiamento de Tanner, e a diferenciação entre puberdade precoce central e periférica.",
+  "revisado": true,
+  "fonte": "Sociedade Brasileira de Pediatria/Endocrinologia Pediátrica; Sociedade Brasileira de Endocrinologia e Metabologia",
+  "mnemonicos": [
+   {
+    "palavra": "Telarca abre, menarca fecha",
+    "explicacao": "Na puberdade feminina normal, o broto mamário (telarca) é geralmente o primeiro sinal a aparecer, e a menarca é um dos últimos eventos, ocorrendo cerca de 2-3 anos depois."
+   }
+  ],
+  "secoes": [
+   {
+    "titulo": "Fisiologia da puberdade",
+    "conteudo": "A puberdade decorre da reativação do eixo hipotálamo-hipófise-gonadal após a quiescência da infância: pulsos de GnRH, inicialmente noturnos, estimulam LH e FSH e a produção de esteroides sexuais, responsáveis pelos caracteres sexuais secundários, pelo estirão de crescimento e pela maturação óssea. A adrenarca (produção de androgênios adrenais, como o DHEA-S) é processo independente que contribui para pelos pubianos e axilares, odor e acne."
+   },
+   {
+    "titulo": "Puberdade normal: sequência e estadiamento de Tanner",
+    "conteudo": "Meninas: o primeiro sinal é a telarca (broto mamário, entre 8 e 13 anos), seguida de pubarca, estirão de crescimento (precoce, no estágio M2–M3) e menarca cerca de 2 a 2,5 anos após a telarca (média de 12–13 anos, no estágio M4, quando o crescimento já desacelera). Meninos: o primeiro sinal é o aumento do volume testicular para 4 mL ou mais (orquidômetro de Prader), entre 9 e 14 anos, seguido de pelos pubianos, crescimento peniano e estirão mais tardio (G4) e mais intenso. O estadiamento de Tanner descreve 5 estágios de mamas (M) e pelos pubianos (P) nas meninas e de genitália (G) e pelos (P) nos meninos. Ginecomastia puberal transitória é comum nos meninos."
+   },
+   {
+    "titulo": "Puberdade precoce",
+    "conteudo": "Definida pelo aparecimento de caracteres sexuais secundários antes dos 8 anos nas meninas ou dos 9 anos nos meninos. Central (dependente de gonadotrofinas): ativação precoce do eixo, sequência normal e aumento testicular bilateral no menino; nas meninas é a forma mais comum e geralmente idiopática, enquanto nos meninos é mais frequentemente causada por lesão do SNC (hamartoma hipotalâmico, tumores, hidrocefalia) — ressonância de crânio é obrigatória nos meninos e nas meninas pequenas ou com sinais neurológicos. Periférica (independente de gonadotrofinas): produção autônoma de esteroides (tumores ovarianos como o de células da granulosa, testiculares ou adrenais, hiperplasia adrenal congênita, síndrome de McCune-Albright, exposição exógena). Variantes benignas: telarca precoce isolada (menores de 2 anos, sem aceleração do crescimento) e pubarca precoce isolada (adrenarca precoce).\n\n<div class=\"table-wrap\"><table><thead><tr><th>Achado</th><th>Diagnóstico provável</th></tr></thead><tbody><tr><td>Sinais de androgenização</td><td>Patologia adrenal</td></tr><tr><td>Assimetria testicular</td><td>Tumor de testículo</td></tr><tr><td>Manchas café-com-leite</td><td>Síndrome de McCune-Albright</td></tr><tr><td>Puberdade precoce com ATRASO de idade óssea</td><td>Hipotireoidismo (Van Wyk-Grumbach)</td></tr><tr><td>Aumento testicular BILATERAL</td><td>Ativação do eixo hipotálamo-hipófise-gonadal (PPC)</td></tr><tr><td>Precocidade no menino SEM aumento testicular</td><td>Patologia adrenal</td></tr></tbody></table></div>"
+   },
+   {
+    "titulo": "Avaliação e tratamento da puberdade precoce",
+    "conteudo": "Idade óssea (radiografia de mão e punho) avançada, curva de crescimento acelerada, LH basal (valores puberais em ensaio ultrassensível sugerem forma central) e teste de estímulo com GnRH ou análogo (resposta puberal de LH na central; suprimida na periférica), além de ultrassom pélvico ou de testículos e dosagem de androgênios conforme o caso. A puberdade precoce central progressiva é tratada com análogos de GnRH (leuprorrelina, triptorrelina), que preservam a estatura final e adequam o desenvolvimento psicossocial; a periférica é tratada conforme a causa."
+   },
+   {
+    "titulo": "Puberdade atrasada",
+    "conteudo": "Ausência de caracteres sexuais secundários aos 13 anos nas meninas ou aos 14 anos nos meninos (ou ausência de menarca até 15 anos). A causa mais comum é o atraso constitucional do crescimento e da puberdade (baixa estatura com idade óssea atrasada e história familiar), diagnóstico de exclusão, em geral apenas acompanhado. Hipogonadismo hipogonadotrófico: deficiência de GnRH (síndrome de Kallmann, com anosmia), doenças crônicas, desnutrição, anorexia, exercício intenso, tumores. Hipogonadismo hipergonadotrófico: falência gonadal (síndrome de Turner nas meninas, Klinefelter nos meninos)."
+   },
+   {
+    "titulo": "Pontos de atenção",
+    "conteudo": "Puberdade precoce central em menino, de progressão rápida ou com sinais neurológicos (cefaleia, alterações visuais) exige ressonância magnética de crânio."
+   },
+   {
+    "titulo": "Dicas de prova",
+    "conteudo": "A sequência normal dos eventos puberais (telarca antes de menarca nas meninas; aumento de volume testicular como primeiro sinal nos meninos) e o estadiamento de Tanner são cobrança certa e recorrente. A maior probabilidade de causa orgânica identificável na puberdade precoce em meninos (comparada a meninas, mais frequentemente idiopática) também é frequentemente exigida."
+   },
+   {
+    "titulo": "Aulas bônus no MEDCURSO",
+    "conteudo": "Este resumo corresponde à aula <b>Crescimento e Desenvolvimento Normais; Puberdade Normal</b> (semana 14 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Distúrbios Puberais</li></ul>"
+   }
+  ],
+  "comoCai": "Este é o tema com o maior dado de incidência encontrado em toda a mineração de Pediatria: o próprio curso afirma que \"o tema Puberdade está presente em 40% das provas de Residência Médica\". Uma pegadinha citada com destaque é o estadiamento de Tanner: NÃO existe estágio M0P0 ou G0P0 — o primeiro estágio pré-púbere já é M1P1/G1P1. A sequência puberal feminina é telarca → pubarca → menarca (2-3 anos após a telarca, tipicamente no estágio M4); nos meninos, o primeiro sinal é o aumento do volume testicular a partir de 4mL. A ginecomastia puberal é \"extremamente cobrada\": fisiológica em 40-60% dos meninos entre 13-14 anos (Tanner G3-G4), resolve espontaneamente em 70-90% dos casos em até 3 anos. Na puberdade precoce central, há uma assimetria de causa por sexo que o curso destaca como ponto-chave: em meninas, a causa mais comum é idiopática (80-90%); em meninos, 60-70% têm causa neurológica central identificável — por isso a ressonância de sela túrcica é recomendada para TODOS os meninos com puberdade precoce central. Duas dicas diretas: puberdade precoce periférica no menino com ASSIMETRIA testicular sugere tumor testicular, e puberdade precoce COM ATRASO da idade óssea (ao invés de aceleração) sugere hipotireoidismo — única causa de puberdade precoce periférica com esse padrão invertido.",
+  "prioridadeProva": "media"
+ },
+ {
+  "id": "abordagem-anemias",
+  "area": "residencia",
+  "categoria": "Hematologia",
+  "titulo": "Introdução ao Estudo das Anemias",
+  "resumo": "Classificação morfológica das anemias pelo VCM (microcítica, normocítica, macrocítica) como primeiro passo do raciocínio diagnóstico, e o papel do índice de reticulócitos.",
+  "revisado": true,
+  "fonte": "Harrison's Principles of Internal Medicine; Hoffbrand, Hematologia Clínica",
+  "secoes": [
+   {
+    "titulo": "Definição e primeira abordagem",
+    "conteudo": "Anemia é definida pela redução da concentração de hemoglobina abaixo do valor de referência para idade e sexo (geralmente <13g/dL em homens e <12g/dL em mulheres, segundo a OMS). A abordagem inicial sistemática usa o VCM (Volume Corpuscular Médio) do hemograma para classificar a anemia morfologicamente, direcionando a investigação etiológica."
+   },
+   {
+    "titulo": "Classificação pelo VCM",
+    "conteudo": "Microcítica (VCM <80fL): sugere deficiência de produção de hemoglobina — anemia ferropriva (a causa mais comum no mundo), talassemias, anemia de doença crônica (fase avançada), anemia sideroblástica. Normocítica (VCM 80-100fL): anemia de doença crônica (fase inicial), anemia hemolítica aguda, anemia por perda aguda de sangue, doença renal crônica (deficiência de eritropoetina), anemia aplásica. Macrocítica (VCM >100fL): deficiência de B12/folato (megaloblástica), hipotireoidismo, doença hepática, uso de álcool, síndromes mielodisplásicas, reticulocitose acentuada (hemólise)."
+   },
+   {
+    "titulo": "Índice de reticulócitos",
+    "conteudo": "Complementa o VCM ao indicar se a medula óssea está respondendo adequadamente à anemia. Reticulocitose (resposta medular adequada) sugere perda/destruição periférica de hemácias (hemorragia aguda, hemólise). Reticulocitopenia (resposta medular inadequada) sugere problema de produção medular (deficiência de ferro/B12/folato, aplasia, infiltração medular, doença renal crônica)."
+   },
+   {
+    "titulo": "Sinais e sintomas gerais",
+    "conteudo": "Fadiga, palidez cutaneomucosa, dispneia aos esforços, taquicardia, sopro sistólico funcional (por hiperfluxo compensatório). A intensidade dos sintomas depende mais da velocidade de instalação do que do grau absoluto de queda da hemoglobina — anemias de instalação lenta e crônica (ex.: ferropriva) podem ser bem toleradas até níveis muito baixos."
+   },
+   {
+    "titulo": "Dicas de prova",
+    "conteudo": "O raciocínio VCM + índice de reticulócitos é a espinha dorsal de praticamente toda questão de anemia em prova — sempre classificar primeiro por VCM (micro/normo/macrocítica) antes de pensar em etiologias específicas. Esse tema serve de base introdutória para os temas específicos de cada classe (anemias carenciais, hemolíticas)."
+   },
+   {
+    "titulo": "Aulas bônus no MEDCURSO",
+    "conteudo": "Este resumo corresponde à aula <b>Anemias I - Introdução, Ferropriva, Doença Crônica, Megaloblástica</b> (semana 14 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Mielodisplasia</li><li>Anemia Aplásica</li></ul>"
+   }
+  ],
+  "comoCai": "Cai como ponto de partida de casos clínicos de anemia, exigindo a classificação inicial por VCM antes de direcionar a investigação etiológica específica.",
+  "mnemonicos": [],
+  "prioridadeProva": "media"
+ }
+]
