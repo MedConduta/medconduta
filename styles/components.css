@@ -2435,3 +2435,54 @@ button.stat-tile:hover {
 .curso-item { display: flex; align-items: center; gap: 4px; }
 .curso-item > .content-list__item { flex: 1 1 auto; min-width: 0; }
 .curso-item > .acao-mini { flex-shrink: 0; }
+
+/* Fluxogramas e quadros-resumo dentro dos resumos (data/temas.json) */
+.prose .fluxo-resumo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: var(--space-4) 0;
+}
+.prose .fluxo-resumo__titulo {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-secondary);
+}
+.prose .fluxo-resumo__passo {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-subtle);
+  font-size: var(--fs-sm);
+  text-align: left;
+}
+.prose .fluxo-resumo__seta {
+  text-align: center;
+  color: var(--color-text-muted);
+  line-height: 1;
+}
+.prose .fluxo-resumo__ramos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: var(--space-2);
+}
+.prose .fluxo-resumo__ramos .fluxo-resumo__passo { border-left-color: var(--color-text-muted); }
+.prose .fluxo-resumo__passo b { color: var(--color-text); }
+.prose .quadro-chave {
+  margin: var(--space-4) 0;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-accent-soft-border);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  font-size: var(--fs-sm);
+  text-align: left;
+}
+.prose .quadro-chave__titulo {
+  display: block;
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-1);
+}
+.prose .quadro-chave ul { margin: 0; padding-left: 1.2em; }
