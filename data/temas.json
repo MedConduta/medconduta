@@ -23551,56 +23551,212 @@
     "area": "residencia",
     "categoria": "Hepatologia",
     "titulo": "Tumores Hepáticos",
-    "resumo": "As principais lesões hepáticas focais benignas (hemangioma, hiperplasia nodular focal, adenoma) e o carcinoma hepatocelular, o tumor primário maligno mais comum do fígado.",
+    "resumo": "Nódulo hepático como cai: hemangioma (o mais comum, realce globuliforme centrípeto), hiperplasia nodular focal (cicatriz central, capta na fase hepatobiliar), adenoma (anticoncepcional, sangramento, beta-catenina), cistos e abscessos (piogênico × amebiano, hidatidose), carcinoma hepatocelular (rastreio com USG + alfafetoproteína a cada 6 meses, realce arterial com washout dispensa biópsia no cirrótico, BCLC e critérios de Milão) e metástases.",
     "revisado": true,
-    "fonte": "Sherlock's Diseases of the Liver and Biliary System; Sabiston Textbook of Surgery",
+    "fonte": "Sherlock's Diseases of the Liver and Biliary System; Sabiston Textbook of Surgery; EASL Clinical Practice Guidelines on the management of benign liver tumours. J Hepatol 2016;65:386-98; Marrero JA, et al. ACG Clinical Guideline: The Diagnosis and Management of Focal Liver Lesions. Am J Gastroenterol 2014;109:1328-47; Reig M, et al. BCLC strategy for prognosis prediction and treatment recommendation: The 2022 update. J Hepatol 2022;76:681-93; Singal AG, et al. AASLD Practice Guidance on prevention, diagnosis, and treatment of hepatocellular carcinoma. Hepatology 2023;78:1922-65; Finn RS, et al. Atezolizumab plus Bevacizumab in Unresectable Hepatocellular Carcinoma (IMbrave150). N Engl J Med 2020;382:1894-905; Abou-Alfa GK, et al. Tremelimumab plus Durvalumab in Unresectable Hepatocellular Carcinoma (HIMALAYA). NEJM Evid 2022;1(8); American College of Radiology. LI-RADS CT/MRI v2018; Estratégia MED — Resumo Estratégico 2026: Tumores Hepáticos",
     "secoes": [
       {
-        "titulo": "Hemangioma hepático",
-        "conteudo": "É a lesão hepática benigna mais comum, frequentemente um achado incidental em exames de imagem, assintomático na maioria dos casos. À ressonância magnética/tomografia com contraste, apresenta padrão característico de realce nodular periférico e progressivo centrípeto (\"em anel\", preenchendo-se de fora para dentro nas fases tardias). Não requer tratamento nem biópsia (a biópsia é inclusive contraindicada pelo risco de sangramento) na maioria dos casos assintomáticos, apenas acompanhamento se houver crescimento/sintomas."
+        "titulo": "Abordagem do nódulo hepático",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Pergunta de prova</th><th>Resposta</th></tr></thead><tbody><tr><td>Tumor (lesão sólida) mais comum do fígado, benigno ou maligno</td><td><b>Hemangioma</b> (SES-PE 2021; SES-PE 2025; ENARE 2021)</td></tr><tr><td>Neoplasia maligna mais comum no fígado</td><td><b>Metástase</b> (principalmente colorretal)</td></tr><tr><td>Neoplasia maligna <b>primária</b> mais comum</td><td><b>Carcinoma hepatocelular</b> (≈ 90%); depois o colangiocarcinoma intra-hepático</td></tr><tr><td>Tumor benigno que mais sangra e que malignifica</td><td><b>Adenoma</b> (ENARE 2022; ENARE 2026)</td></tr><tr><td>Tumor diagnosticado só por imagem, sem anatomopatológico</td><td><b>CHC no cirrótico</b> (SES-PE 2026)</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Lesão</th><th>Fase arterial</th><th>Portal / equilíbrio</th><th>Pista que fecha</th></tr></thead><tbody><tr><td>Hemangioma</td><td>Realce <b>periférico nodular (globuliforme)</b></td><td>Preenchimento <b>centrípeto</b>, homogeneíza</td><td>T2 muito brilhante (\"lâmpada acesa\")</td></tr><tr><td>Hiperplasia nodular focal</td><td>Hiperrealce homogêneo</td><td>Isodensa ao parênquima</td><td><b>Cicatriz central</b>; <b>capta na fase hepatobiliar</b></td></tr><tr><td>Adenoma</td><td>Hiperrealce, heterogêneo</td><td>Variável</td><td><b>Gordura</b> intralesional (cai no fora de fase), sangramento; <b>não capta</b> na fase hepatobiliar</td></tr><tr><td>Carcinoma hepatocelular</td><td>Hiperrealce (APHE)</td><td><b>Washout</b> + cápsula</td><td>Fígado cirrótico ou hepatite B</td></tr><tr><td>Metástase colorretal</td><td><b>Hipovascular</b> (realce em anel)</td><td>Hipodensa</td><td>Múltiplas; CEA alto</td></tr><tr><td>Metástase neuroendócrina, de rim, mama, melanoma</td><td>Hipervascular</td><td>Variável</td><td>Tumor primário conhecido</td></tr><tr><td>Colangiocarcinoma intra-hepático</td><td><b>Não</b> é hipervascular (SES-PE 2025)</td><td>Realce tardio progressivo (fibrose)</td><td>Retração capsular, dilatação biliar a montante</td></tr><tr><td>Esteatose focal</td><td>Sem realce</td><td>Sem efeito de massa</td><td>Perto do ligamento falciforme e da vesícula; vasos atravessam</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">LI-RADS (só vale para quem tem alto risco: cirrose, hepatite B crônica ou CHC prévio)</span><ul><li>LR-1 benigno, LR-2 provavelmente benigno, LR-3 intermediário, LR-4 provavelmente CHC, <b>LR-5 = CHC definitivo</b> (realce arterial + washout e/ou cápsula, ≥ 10 mm).</li><li><b>LR-M</b> = maligno, mas não específico de CHC (colangiocarcinoma, metástase) (SES-PE 2024): pede biópsia.</li><li>LR-TIV = tumor em veia.</li><li>Aplicar o LI-RADS em fígado normal está <b>errado</b> (SES-PE 2025).</li></ul></div><p>Para distinguir adenoma de hiperplasia nodular focal, o melhor exame é a <b>ressonância com contraste hepatoespecífico</b> (ácido gadoxético) (SES-PE 2026; SES-PE 2019).</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unicamp/2022/2022-cf2c535f-q078-1.webp",
+            "legenda": "USG com imagem hiperecogênica bem delimitada e TC sem hipercaptação arterial, permanecendo hipodensa nas demais fases, em mulher diabética assintomática (UNICAMP 2022): esteatose focal.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2022"
+          }
+        ]
       },
       {
-        "titulo": "Hiperplasia nodular focal (HNF)",
-        "conteudo": "Segunda lesão hepática benigna mais comum, mais frequente em mulheres jovens, não associada ao uso de contraceptivos orais (diferente do adenoma). Achado radiológico característico: cicatriz central estrelada com captação de contraste, visível à ressonância magnética. Geralmente assintomática, sem risco de malignização ou de ruptura/sangramento significativo — não requer tratamento na maioria dos casos."
+        "titulo": "Hemangioma",
+        "conteudo": "<p>É a lesão hepática benigna mais comum, frequentemente um achado incidental em exames de imagem, assintomático na maioria dos casos. À ressonância magnética/tomografia com contraste, apresenta padrão característico de realce nodular periférico e progressivo centrípeto (\"em anel\", preenchendo-se de fora para dentro nas fases tardias). Não requer tratamento nem biópsia (a biópsia é inclusive contraindicada pelo risco de sangramento) na maioria dos casos assintomáticos, apenas acompanhamento se houver crescimento/sintomas.</p><p>Prevalência de cerca de 8%; mais comum em mulheres de 30–50 anos, geralmente único. Pode crescer com estrogênio e na gestação. Na USG é <b>hiperecoico homogêneo</b>, com reforço acústico posterior; lesão típica &lt; 3 cm em fígado sem cirrose e sem câncer conhecido pode ser diagnosticada só pela USG. Fora disso, TC ou RM com contraste. <b>Não precisa de arteriografia</b>, nem no gigante (SES-PE 2020 considerou errada essa afirmação).</p><div class=\"table-wrap\"><table><thead><tr><th>Situação</th><th>Conduta</th></tr></thead><tbody><tr><td>Assintomático, típico</td><td>Orientar benignidade; sem tratamento; sem restrição a anticoncepcional ou gestação (SES-PE 2020)</td></tr><tr><td>Gigante (&gt; 10 cm) sintomático ou com complicação</td><td>Ressecção (enucleação) ou embolização arterial (ENARE 2021)</td></tr><tr><td>Ruptura com sangramento</td><td>Embolização arterial (rara)</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Síndrome de Kasabach-Merritt</span><ul><li>Hemangioma gigante + plaquetopenia + coagulopatia de consumo.</li><li>Mais típica do hemangioendotelioma kaposiforme da criança; no adulto é rara.</li></ul></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Seguimento do hemangioma</span><p><b>Provas/Estratégia:</b> Estratégia e ENARE 2023: imagem a cada 6–12 meses, sobretudo se &gt; 5 cm</p><p><b>Evidência atual:</b> EASL 2016 e ACG 2014: hemangioma típico não precisa de seguimento, qualquer que seja o tamanho (como no SES-PE 2020)</p><p><b>Na prova:</b> SES-PE: sem monitorização; se a alternativa for de vigilância no &gt; 5 cm (ENARE), aceite</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/ufrj/2025/2025-59b36862-q049-1.webp",
+            "legenda": "TC em quatro fases com nódulo de realce periférico nodular que preenche de fora para dentro nas fases tardias (setas) (UFRJ 2025): hemangioma.",
+            "fonte": "Imagem de questão de prova — UFRJ 2025"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2019/2019-e6131934-q071-1.webp",
+            "legenda": "Nódulo hiperecogênico de 6 cm com enchimento globuliforme da periferia na fase arterial e preenchimento na fase portal (USP-SP 2019): hemangioma hepático.",
+            "fonte": "Imagem de questão de prova — USP-SP 2019"
+          }
+        ]
+      },
+      {
+        "titulo": "Hiperplasia nodular focal",
+        "conteudo": "<p>Segunda lesão hepática benigna mais comum, mais frequente em mulheres jovens, não associada ao uso de contraceptivos orais (diferente do adenoma). Achado radiológico característico: cicatriz central estrelada com captação de contraste, visível à ressonância magnética. Geralmente assintomática, sem risco de malignização ou de ruptura/sangramento significativo — não requer tratamento na maioria dos casos.</p><p>Segunda lesão benigna mais comum. É uma resposta hiperplásica a uma artéria anômala: por isso a <b>cicatriz central</b> com vaso (≈ 60% dos casos), hiperintensa em T2 e com realce tardio. Sinal semelhante ao parênquima sem contraste; sem gordura, sem calcificação, não sangra e não malignifica. Alfafetoproteína normal.</p><div class=\"table-wrap\"><table><thead><tr><th>Conduta</th><th>Detalhe</th></tr></thead><tbody><tr><td>Assintomática</td><td><b>Expectante</b> (SES-PE 2019; UNICAMP 2021; USP-SP 2024), mesmo se grande (PSU-MG 2017: 10 cm)</td></tr><tr><td>Anticoncepcional e gestação</td><td>Não precisa suspender nem contraindicar</td></tr><tr><td>Sintomática (rara)</td><td>Ressecção, embolização ou ablação</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2023/2023-925fa0ec-q110-1.webp",
+            "legenda": "TC sem contraste, arterial, portal e de equilíbrio: nódulo hipervascular com cicatriz central, menor que 5 cm, em mulher de 40 anos assintomática (USP-SP 2023): hiperplasia nodular focal.",
+            "fonte": "Imagem de questão de prova — USP-SP 2023"
+          },
+          {
+            "url": "imagens/questoes/psu-mg/2017/2017-dc28349e-q034-1.webp",
+            "legenda": "RM com ácido gadoxético: lesão de 10,3 cm hipervascular sem washout, com cicatriz central e <b>retenção de contraste na fase hepatobiliar</b>, em usuária de anticoncepcional (PSU-MG 2017): hiperplasia nodular focal, sem cirurgia.",
+            "fonte": "Imagem de questão de prova — PSU-MG 2017"
+          },
+          {
+            "url": "imagens/questoes/sus-sp/2025/2025-4c1ab213-q026-1.webp",
+            "legenda": "RM com lesão de cicatriz central de sinal maior que o restante da lesão (seta) (SUS-SP 2025): hiperplasia nodular focal.",
+            "fonte": "Imagem de questão de prova — SUS-SP 2025"
+          }
+        ]
       },
       {
         "titulo": "Adenoma hepatocelular",
-        "conteudo": "Lesão benigna, porém com relevância clínica maior que a HNF, por seu risco de complicações: risco de SANGRAMENTO/RUPTURA (especialmente em lesões grandes, podendo causar hemoperitônio) e um pequeno, mas real, risco de transformação maligna para carcinoma hepatocelular. Fortemente associado ao uso prolongado de CONTRACEPTIVOS ORAIS (a associação mais cobrada) e a esteroides anabolizantes — a suspensão do agente causador pode levar à regressão da lesão. Conduta: lesões grandes (geralmente >5cm) ou sintomáticas têm indicação de ressecção cirúrgica pelo risco de ruptura/malignização; lesões pequenas e assintomáticas podem ser acompanhadas com suspensão do contraceptivo."
-      },
-      {
-        "titulo": "Carcinoma hepatocelular (CHC)",
-        "conteudo": "É o tumor primário maligno mais comum do fígado, fortemente associado à CIRROSE hepática de qualquer etiologia (a cirrose é o principal fator de risco, presente na grande maioria dos casos), particularmente por hepatite B, hepatite C e doença hepática gordurosa. Rastreamento com ultrassonografia (± alfafetoproteína) a cada 6 meses é recomendado em todo paciente cirrótico, justamente pela alta incidência do CHC nesse contexto e pela possibilidade de tratamento curativo quando detectado precocemente.",
+        "conteudo": "<p>Lesão benigna, porém com relevância clínica maior que a HNF, por seu risco de complicações: risco de SANGRAMENTO/RUPTURA (especialmente em lesões grandes, podendo causar hemoperitônio) e um pequeno, mas real, risco de transformação maligna para carcinoma hepatocelular. Fortemente associado ao uso prolongado de CONTRACEPTIVOS ORAIS (a associação mais cobrada) e a esteroides anabolizantes — a suspensão do agente causador pode levar à regressão da lesão. Conduta: lesões grandes (geralmente >5cm) ou sintomáticas têm indicação de ressecção cirúrgica pelo risco de ruptura/malignização; lesões pequenas e assintomáticas podem ser acompanhadas com suspensão do contraceptivo.</p><div class=\"table-wrap\"><table><thead><tr><th>Subtipo</th><th>Perfil</th><th>Risco</th></tr></thead><tbody><tr><td>Inflamatório (o mais comum)</td><td>Obesidade, álcool; hiperintenso em T2 (\"sinal do atol\")</td><td>Maior risco de <b>sangramento</b></td></tr><tr><td>HNF-1α inativado</td><td>Quase só mulheres; <b>gordura</b> difusa (cai no fora de fase)</td><td>Menor risco de malignização</td></tr><tr><td><b>Beta-catenina</b> ativada</td><td>Mais comum em <b>homens</b>, anabolizante, glicogenose</td><td><b>Maior risco de malignização</b> (SES-PE 2025; SES-PE 2023)</td></tr></tbody></table></div><p>Fatores de risco: anticoncepcional com estrogênio (risco cerca de 30 vezes maior), <b>anabolizantes</b> (ENARE 2021), glicogenose, obesidade. Os anabolizantes e o sexo masculino predispõem <b>mais</b> à malignização que o anticoncepcional (SES-PE 2026). Quadro clássico de prova: mulher jovem usando anticoncepcional com dor súbita no hipocôndrio direito e <b>choque</b> por hemoperitônio (SES-PE 2022; ENARE 2023).</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Conduta no adenoma</div><div class=\"fluxo-resumo__passo\"><b>Sangramento com instabilidade</b>: <b>Embolização arterial</b> e depois ressecção eletiva</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Homem (qualquer tamanho) ou beta-catenina</b>: <b>Ressecção</b> (SES-PE 2026: fisiculturista com 4,3 cm)</div><div class=\"fluxo-resumo__passo\"><b>Mulher, &lt; 5 cm</b>: Suspender anticoncepcional, perder peso; imagem em 6 meses a 1 ano</div><div class=\"fluxo-resumo__passo\"><b>Mulher, ≥ 5 cm</b>: Suspender anticoncepcional e reavaliar em 6 meses (USP-SP 2025); ressecar se continuar ≥ 5 cm, crescer ou se planeja gestar (ENARE 2024: 7 cm)</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Cirurgia contraindicada</b>: Embolização ou ablação</div></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Adenoma ≥ 5 cm em mulher</span><p><b>Provas/Estratégia:</b> Estratégia: ressecar todo adenoma ≥ 5 cm</p><p><b>Evidência atual:</b> EASL 2016: suspender anticoncepcional, perder peso e reavaliar em 6 meses; ressecar se continuar ≥ 5 cm ou crescer (USP-SP 2025)</p><p><b>Na prova:</b> Homem = ressecção sempre; mulher = suspende e reavalia</p></div>",
         "imagens": [
           {
-            "url": "imagens/questoes/unesp/2022/2022-e5970336-q078-1.webp",
-            "legenda": "Fígado (necropsia) com múltiplos nódulos de tamanhos variados — metástases hepáticas por disseminação hematogênica, as neoplasias malignas mais comuns do fígado.",
-            "fonte": "Imagem de questão de prova — UNESP 2022"
+            "url": "imagens/questoes/sespe/2020-2-q030-1.webp",
+            "legenda": "TC de mulher de 36 anos com dor súbita no hipocôndrio direito, palidez e hipotensão (SES-PE 2020): a lesão benigna que leva a essa complicação é o adenoma.",
+            "fonte": "Imagem de questão de prova — SES-PE 2020"
+          },
+          {
+            "url": "imagens/questoes/sespe/2024-q039-1.webp",
+            "legenda": "TC coronal de mulher de 38 anos com dor forte no hipocôndrio direito irradiada para o dorso, sudorese e taquicardia (SES-PE 2024): adenoma hepático com sangramento subcapsular.",
+            "fonte": "Imagem de questão de prova — SES-PE 2024"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2025/2025-1829581b-q010-1.webp",
+            "legenda": "RM com contraste hepatoespecífico: lesão de 5,3 cm no segmento 7 com realce arterial e <b>hipossinal na fase hepatobiliar</b>, em usuária de anticoncepcional (USP-SP 2025): adenoma; suspender o anticoncepcional e reavaliar em 6 meses.",
+            "fonte": "Imagem de questão de prova — USP-SP 2025"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2026/2026-9120fb7e-q119-1.webp",
+            "legenda": "RM de nódulo hipervascular de 7 cm no setor posterior direito, com sequências em fase e fora de fase, em mulher com IMC 27 usando anticoncepcional (USP-SP 2026): adenoma do subtipo inflamatório; suspender o anticoncepcional e perder peso.",
+            "fonte": "Imagem de questão de prova — USP-SP 2026"
           }
         ]
       },
       {
-        "titulo": "Diagnóstico e tratamento do CHC",
-        "conteudo": "Diferente da maioria dos tumores sólidos, o diagnóstico de CHC pode ser feito SEM biópsia em paciente cirrótico, quando a tomografia/ressonância com contraste mostra o padrão radiológico característico (realce arterial intenso seguido de \"washout\"/lavagem no tempo portal-venoso/tardio) em nódulo ≥1cm — esse padrão típico é considerado diagnóstico por si só nesse contexto de alto risco. Tratamento conforme estadiamento: ressecção cirúrgica ou transplante hepático (potencialmente curativos, em lesões restritas e função hepática compatível), ablação percutânea (lesões pequenas), quimioembolização transarterial (doença intermediária) ou terapia sistêmica (doença avançada).",
+        "titulo": "Lesões císticas e abscessos",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Lesão</th><th>Imagem</th><th>Conduta</th></tr></thead><tbody><tr><td>Cisto simples</td><td>Anecoico, sem septos, parede fina, reforço posterior</td><td>Assintomático: <b>nada</b>, mesmo se gigante (USP-SP 2024: 16 cm); sintomático: destelhamento laparoscópico</td></tr><tr><td>Doença policística (associada à renal)</td><td>Múltiplos cistos</td><td>Sintomático: <b>destelhamento</b> do maior (HIAE-SP 2020); casos graves: transplante</td></tr><tr><td>Cisto infectado</td><td>Parede espessa, conteúdo heterogêneo, febre e leucocitose</td><td>Punção + antibiótico (UNICAMP 2021)</td></tr><tr><td>Neoplasia cística mucinosa (cistoadenoma biliar)</td><td><b>Septos com realce</b>, parede irregular; mulheres</td><td><b>Ressecção completa</b> (hepatectomia), não destelhamento: pode ser cistoadenocarcinoma (USP-SP 2024; USP-SP 2025)</td></tr><tr><td>Cisto hidático (<i>Echinococcus granulosus</i>; RS e fronteira)</td><td>Cistos-filhos, membrana flutuante (sinal do lírio), calcificação</td><td><b>Albendazol</b> antes e depois; pericistectomia ou PAIR; <b>não puncionar</b> sem cobertura (anafilaxia) (HCPA-RS 2018; USP-SP 2026)</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th></th><th>Abscesso piogênico</th><th>Abscesso amebiano</th></tr></thead><tbody><tr><td>Perfil</td><td>Idoso, <b>diabético</b>, doença biliar (colangite é a principal causa), pileflebite (diverticulite, apendicite)</td><td>Homem jovem de área endêmica</td></tr><tr><td>Germes</td><td><b>E. coli e Klebsiella</b> (ENARE 2023), anaeróbios; S. aureus/estreptococo isolado → pensar em endocardite</td><td><i>Entamoeba histolytica</i> via porta</td></tr><tr><td>Clínica</td><td>Febre (90%) e dor (ENARE 2023), icterícia em 50%; FA alta</td><td>Febre e dor no hipocôndrio direito/ombro; icterícia em 10%; único em 70–80%</td></tr><tr><td>Aspirado</td><td>Pus fétido amarelo-esverdeado</td><td>\"Pasta de anchova\" sem cheiro</td></tr><tr><td>Tratamento</td><td><b>Drenagem percutânea</b> (pigtail, ENARE 2023) + ceftriaxona + metronidazol ou piperacilina-tazobactam (ENARE 2026: gás + E. coli)</td><td><b>Metronidazol</b> 7–10 dias; drenar só se dúvida, falha em 5 dias ou &gt; 10 cm/lobo esquerdo</td></tr></tbody></table></div><p>Abscesso por contiguidade de colecistite aguda atinge os segmentos <b>IVb e V</b> (leito da vesícula) (SES-PE 2017).</p><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Abscesso piogênico grande</span><p><b>Provas/Estratégia:</b> ENARE 2024: abscesso de 7 cm tratado só com antibiótico</p><p><b>Evidência atual:</b> Diretrizes: abscesso piogênico &gt; 3–5 cm → drenagem percutânea + antibiótico; só antibiótico no pequeno ou no amebiano</p><p><b>Na prova:</b> Em geral, piogênico grande = drenar</p></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Abscesso amebiano</span><p><b>Provas/Estratégia:</b> Estratégia: metronidazol isolado</p><p><b>Evidência atual:</b> CDC/IDSA: metronidazol seguido de amebicida luminal (paromomicina, teclozana) para eliminar os cistos intestinais</p><p><b>Na prova:</b> Droga de escolha = metronidazol</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2026/2026-7948eb79-q017-1.webp",
+            "legenda": "RM de mulher boliviana com lesão cística complexa de 15 cm, paredes espessas, septos grosseiros e cistos-filhos no lobo direito (USP-SP 2026): cisto hidático, tratado com pericistectomia.",
+            "fonte": "Imagem de questão de prova — USP-SP 2026"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2024/2024-b7193737-q007-1.webp",
+            "legenda": "RM de lesão cística de 6,8 cm no segmento 4 em mulher de 62 anos com dor no hipocôndrio direito (USP-SP 2024): neoplasia cística mucinosa (cistoadenoma biliar), tratada com hepatectomia esquerda.",
+            "fonte": "Imagem de questão de prova — USP-SP 2024"
+          },
+          {
+            "url": "imagens/questoes/hiae-sp/2020/2020-6ee6757a-q012-1.webp",
+            "legenda": "TC de mulher com rins policísticos e dor no hipocôndrio direito por cisto hepático volumoso (HIAE-SP 2020): destelhamento (marsupialização) do cisto maior.",
+            "fonte": "Imagem de questão de prova — HIAE-SP 2020"
+          },
+          {
+            "url": "imagens/questoes/unicamp/2021/2021-2ac5dfcb-q069-1.webp",
+            "legenda": "RM de homem com cistos simples conhecidos que evoluiu com desconforto, adinamia, perda de peso e leucocitose (UNICAMP 2021): cisto hepático infectado; punção e antibiótico de largo espectro.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2021"
+          }
+        ]
+      },
+      {
+        "titulo": "Carcinoma hepatocelular: risco, rastreio e diagnóstico",
+        "conteudo": "<p>É o tumor primário maligno mais comum do fígado, fortemente associado à CIRROSE hepática de qualquer etiologia (a cirrose é o principal fator de risco, presente na grande maioria dos casos), particularmente por hepatite B, hepatite C e doença hepática gordurosa. Rastreamento com ultrassonografia (± alfafetoproteína) a cada 6 meses é recomendado em todo paciente cirrótico, justamente pela alta incidência do CHC nesse contexto e pela possibilidade de tratamento curativo quando detectado precocemente.</p><div class=\"table-wrap\"><table><thead><tr><th>Fator de risco</th><th>Observação</th></tr></thead><tbody><tr><td>Cirrose de qualquer causa</td><td>Principal; inclui álcool, hemocromatose, esteatose metabólica</td></tr><tr><td><b>Hepatite B crônica, mesmo sem cirrose</b></td><td>Vírus oncogênico; rastrear asiáticos (homem &gt; 40, mulher &gt; 50), africanos e história familiar</td></tr><tr><td>Hepatite C com fibrose F3–F4</td><td><b>A cura virológica não elimina o risco</b> no cirrótico: manter o rastreio (SES-PE 2026)</td></tr><tr><td>Aflatoxina</td><td>Mutação do p53</td></tr></tbody></table></div><p><b>Rastreio: USG de abdome + alfafetoproteína a cada 6 meses</b> (ENARE 2026). Se só a USG aparecer nas alternativas, ela é o exame mais importante. Tratar a hepatite não faz o nódulo regredir (PSU-MG 2018 considerou errada essa ideia).</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Nódulo no rastreio do cirrótico</div><div class=\"fluxo-resumo__passo\"><b>&lt; 1 cm</b>: Repetir USG em 3 meses</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>≥ 1 cm ou AFP subindo</b>: TC ou RM <b>multifásica</b></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Realce arterial + washout (LR-5)</b>: <b>CHC definido sem biópsia</b> (SES-PE 2022; SES-PE 2026); AFP &gt; 400 reforça</div><div class=\"fluxo-resumo__passo\"><b>Atípico (LR-3/4) ou LR-M</b>: Outro exame de imagem ou biópsia</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Fígado sem cirrose e sem hepatite B</b>: <b>Biópsia</b> mesmo com padrão típico (SES-PE 2026; SES-PE 2024)</div></div><p>Diferente da maioria dos tumores sólidos, o diagnóstico de CHC pode ser feito SEM biópsia em paciente cirrótico, quando a tomografia/ressonância com contraste mostra o padrão radiológico característico (realce arterial intenso seguido de \"washout\"/lavagem no tempo portal-venoso/tardio) em nódulo ≥1cm — esse padrão típico é considerado diagnóstico por si só nesse contexto de alto risco. </p><p>Alfafetoproteína normal não exclui CHC (até 40% não produzem). O CHC dissemina por via <b>hematogênica</b> e invade a veia porta (trombose tumoral = pior prognóstico); invasão biliar é rara.</p><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Alfafetoproteína no rastreio</span><p><b>Provas/Estratégia:</b> Estratégia e ENARE 2026: USG + AFP a cada 6 meses</p><p><b>Evidência atual:</b> AASLD 2023 mantém USG + AFP; EASL 2018 usa só USG</p><p><b>Na prova:</b> USG + AFP semestral; se não houver essa opção, USG</p></div>",
         "imagens": [
           {
             "url": "imagens/questoes/psu-mg/2021/2021-8482976f-q050-1.webp",
-            "legenda": "Tomografia de abdome trifásica: nódulo hepático com realce na fase arterial e lavagem (\"washout\") na fase portal, em fígado cirrótico — carcinoma hepatocelular (dispensa biópsia).",
+            "legenda": "TC em fase arterial e venosa portal de nódulo de 4 cm em etilista: realce arterial com lavagem na fase portal (PSU-MG 2021): carcinoma hepatocelular.",
             "fonte": "Imagem de questão de prova — PSU-MG 2021"
+          },
+          {
+            "url": "imagens/questoes/unifesp/2011/2011-b5f894fd-q022-1.webp",
+            "legenda": "TC nas fases pré-contraste, arterial, portal e de equilíbrio (A a D) com hipercaptação arterial e washout (UNIFESP 2011): carcinoma hepatocelular.",
+            "fonte": "Imagem de questão de prova — UNIFESP 2011"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2023/2023-3680be42-q011-1.webp",
+            "legenda": "Fases arterial e portal em homem com hepatite B e nódulo de 3,1 cm no segmento 7 (USP-SP 2023): nódulo hipervascular com washout e cápsula, critério de CHC.",
+            "fonte": "Imagem de questão de prova — USP-SP 2023"
+          },
+          {
+            "url": "imagens/questoes/sespe/2021-q033-1.webp",
+            "legenda": "Cirrótica Child A com alfafetoproteína de 56 ng/mL no rastreio semestral (SES-PE 2021): lesão no lobo de Spiegel (caudado), diagnóstico ainda indefinido, pedindo exame multifásico.",
+            "fonte": "Imagem de questão de prova — SES-PE 2021"
           }
         ]
       },
       {
-        "titulo": "Dicas de prova",
-        "conteudo": "Associar adenoma hepático ao uso de contraceptivos orais (com risco de sangramento) é o ponto mais cobrado entre as lesões benignas. Rastreamento semestral com ultrassonografia em TODO paciente cirrótico é a conduta mais cobrada para CHC, e o diagnóstico radiológico sem necessidade de biópsia em paciente cirrótico com padrão típico é ponto frequentemente testado."
+        "titulo": "Carcinoma hepatocelular: estadiamento e tratamento",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>BCLC 2022</th><th>Critério</th><th>Tratamento</th></tr></thead><tbody><tr><td>0 — muito precoce</td><td>Único ≤ 2 cm, função preservada, PS 0</td><td>Ablação ou ressecção</td></tr><tr><td>A — precoce</td><td>Único (qualquer tamanho) ou até 3 nódulos ≤ 3 cm, PS 0</td><td><b>Ressecção</b> se único sem hipertensão portal e bilirrubina normal; senão <b>transplante</b> (Milão) ou ablação</td></tr><tr><td>B — intermediário</td><td>Multinodular, função preservada, PS 0</td><td><b>Quimioembolização (TACE)</b>; transplante se critérios ampliados; sistêmico se difuso</td></tr><tr><td>C — avançado</td><td><b>Invasão portal</b> ou metástase, PS 1–2</td><td><b>Terapia sistêmica</b>: atezolizumabe + bevacizumabe ou durvalumabe + tremelimumabe; sorafenibe/lenvatinibe como alternativas</td></tr><tr><td>D — terminal</td><td>Child C não transplantável ou PS 3–4</td><td>Suporte</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Critérios de Milão (transplante)</span><ul><li><b>1 nódulo ≤ 5 cm ou até 3 nódulos ≤ 3 cm</b>, sem invasão vascular e sem metástase.</li><li>Ex.: dois tumores de 2,3 e 1,9 cm (SES-PE 2023); Child B com nódulos de 2,5 e 2 cm (ENARE 2025); cirrose com hipertensão portal e nódulo de 2,8–4,5 cm (USP-RP 2014); cirrose por hepatite B descompensada com nódulo de 4,2 cm (USP-RP 2025).</li><li>Transplante trata o tumor <b>e</b> a cirrose. Fora de Milão: TACE para <b>downstaging</b>; dentro, TACE/ablação como ponte para evitar o drop-out da fila.</li></ul></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Paciente ideal para ressecção (SES-PE adora)</span><ul><li>Nódulo <b>único</b>, sem invasão vascular, Child A, sem hipertensão portal (plaquetas &gt; 100.000), bilirrubina normal, bom PS.</li><li>O tamanho não impede: Child A com tumor de 6 cm (SES-PE 2020) ou 7,5 cm (SES-PE 2024); nódulo único de 2,5 ou 4 cm em Child A e ECOG 0 (ENARE 2026; HCPA-RS 2024).</li><li>Ablação (radiofrequência, etanol): tumores &lt; 3 cm longe de vasos e vias biliares, sem condição cirúrgica.</li><li>TACE: não fazer em Child C nem com trombose tumoral. Radioterapia externa com gencitabina não é tratamento de CHC (SES-PE 2022).</li></ul></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Terapia sistêmica do CHC</span><p><b>Provas/Estratégia:</b> Estratégia: sorafenibe</p><p><b>Evidência atual:</b> BCLC 2022 e AASLD 2023: atezolizumabe + bevacizumabe ou durvalumabe + tremelimumabe em primeira linha; sorafenibe e lenvatinibe se a imunoterapia for contraindicada</p><p><b>Na prova:</b> Se só houver sorafenibe, ele é a resposta</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-rp/2014/2014-246a5ca5-q003-1.webp",
+            "legenda": "Fase arterial (A, seta) e de equilíbrio (B) de nódulo de 4,5 cm em cirrótica Child A com plaquetas de 70.000 (USP-RP 2014): CHC dentro de Milão com hipertensão portal → transplante hepático.",
+            "fonte": "Imagem de questão de prova — USP-RP 2014"
+          },
+          {
+            "url": "imagens/questoes/hcpa-rs/2024/2024-e81a0aeb-q050-1.webp",
+            "legenda": "TC de cirrótica Child A por hepatite C, ECOG 0, sem hipertensão portal e AFP normal (HCPA-RS 2024): nódulo único → ressecção cirúrgica.",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2024"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2026/2026-7948eb79-q007-1.webp",
+            "legenda": "RM de homem com hepatite C curada, Child A6, nódulo de 4,5 cm no lobo direito (USP-SP 2026): carcinoma hepatocelular no segmento 8, tratado com setorectomia anterior direita.",
+            "fonte": "Imagem de questão de prova — USP-SP 2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Metástases, outros tumores e vias biliares",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Tumor</th><th>O que cai</th></tr></thead><tbody><tr><td>Metástase colorretal</td><td>Ressecar se der para tirar tudo com remanescente suficiente (≥ 20–30% em fígado normal, ≥ 40% se cirrose ou após quimioterapia); <b>colectomia + hepatectomia</b> no sincrônico (ENARE 2023); remanescente pequeno → <b>embolização da veia porta</b> do lado a ressecar (SES-PE 2025); lesão no segmento lateral esquerdo → segmentectomia lateral esquerda (SES-PE 2019)</td></tr><tr><td>Metástase neuroendócrina</td><td>Hipervascular, realce periférico; glucagonoma com eritema necrolítico migratório, diabetes e TVP (UNICAMP 2023)</td></tr><tr><td>Carcinoma fibrolamelar</td><td>Jovem (5–35 anos) <b>sem cirrose</b>, massa grande com cicatriz central e <b>calcificação</b> (a HNF não calcifica); AFP normal, neurotensina alta; melhor prognóstico</td></tr><tr><td>Hepatoblastoma</td><td>Criança &lt; 3 anos, AFP muito alta, quimioterapia + ressecção conforme PRETEXT (USP-SP 2024)</td></tr><tr><td>Hemangioendotelioma epitelioide</td><td>Múltiplas lesões em adulto jovem; transplante (UNICAMP 2022)</td></tr><tr><td>Colangiocarcinoma hilar (Klatskin)</td><td>Icterícia indolor, CA 19-9 alto; Bismuth-Corlette I (abaixo da confluência) → ressecção da via biliar + hepaticojejunostomia (SES-PE 2019); II → + hepatectomia parcial (ENARE 2024); IIIa = ducto direito (ENARE 2021); distal → duodenopancreatectomia (ENARE 2023)</td></tr><tr><td>Câncer de vesícula achado na colecistectomia</td><td>T1a → nada; <b>T1b ou mais</b> → reabordar com ressecção dos segmentos <b>IVb e V</b> + linfadenectomia do hilo (ENARE 2025; SES-PE 2023); não precisa ressecar via biliar se o cístico estiver livre</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Dicas de prova</span><ul><li>Associar adenoma hepático ao uso de contraceptivos orais (com risco de sangramento) é o ponto mais cobrado entre as lesões benignas. Rastreamento semestral com ultrassonografia em TODO paciente cirrótico é a conduta mais cobrada para CHC, e o diagnóstico radiológico sem necessidade de biópsia em paciente cirrótico com padrão típico é ponto frequentemente testado.</li><li>A regeneração hepática depende mais do fluxo <b>portal</b> (fatores hepatotróficos) que do arterial (SES-PE 2010).</li><li>Lesão adjacente ao leito da vesícula, à direita do falciforme = segmento <b>IVb</b> (SES-PE 2017).</li></ul></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unesp/2022/2022-e5970336-q078-1.webp",
+            "legenda": "Fígado de necropsia com múltiplos nódulos esbranquiçados em ambos os lobos (UNESP 2022): metástases, de disseminação hematogênica, o achado maligno mais comum no fígado.",
+            "fonte": "Imagem de questão de prova — UNESP 2022"
+          },
+          {
+            "url": "imagens/questoes/sespe/2019-2-q031-1.webp",
+            "legenda": "TC de mulher com metástase colorretal um ano após colectomia e quimioterapia adjuvante (SES-PE 2019): segmentectomia lateral esquerda.",
+            "fonte": "Imagem de questão de prova — SES-PE 2019"
+          },
+          {
+            "url": "imagens/questoes/unicamp/2023/2023-ad190336-q015-1.webp",
+            "legenda": "Lesões de pele e TC arterial com várias lesões hepáticas de captação periférica e centro hipodenso em homem com diabetes recente, diarreia e TVP (UNICAMP 2023): metástases de tumor neuroendócrino.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2023"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2023/2023-3680be42-q014-1.webp",
+            "legenda": "TC de mulher de 72 anos com icterícia, acolia, CA 19-9 de 123 e dilatação das vias intra-hepáticas (USP-SP 2023): colangiocarcinoma hilar tratado com hepatectomia esquerda, ressecção da via biliar e linfadenectomia hilar.",
+            "fonte": "Imagem de questão de prova — USP-SP 2023"
+          }
+        ]
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Seguimento do hemangioma</td><td>Estratégia e ENARE 2023: imagem a cada 6–12 meses, sobretudo se &gt; 5 cm</td><td>EASL 2016 e ACG 2014: hemangioma típico não precisa de seguimento, qualquer que seja o tamanho (como no SES-PE 2020)</td><td>SES-PE: sem monitorização; se a alternativa for de vigilância no &gt; 5 cm (ENARE), aceite</td></tr><tr><td>Adenoma ≥ 5 cm em mulher</td><td>Estratégia: ressecar todo adenoma ≥ 5 cm</td><td>EASL 2016: suspender anticoncepcional, perder peso e reavaliar em 6 meses; ressecar se continuar ≥ 5 cm ou crescer (USP-SP 2025)</td><td>Homem = ressecção sempre; mulher = suspende e reavalia</td></tr><tr><td>Terapia sistêmica do CHC</td><td>Estratégia: sorafenibe</td><td>BCLC 2022 e AASLD 2023: atezolizumabe + bevacizumabe ou durvalumabe + tremelimumabe em primeira linha; sorafenibe e lenvatinibe se a imunoterapia for contraindicada</td><td>Se só houver sorafenibe, ele é a resposta</td></tr><tr><td>Alfafetoproteína no rastreio</td><td>Estratégia e ENARE 2026: USG + AFP a cada 6 meses</td><td>AASLD 2023 mantém USG + AFP; EASL 2018 usa só USG</td><td>USG + AFP semestral; se não houver essa opção, USG</td></tr><tr><td>Abscesso piogênico grande</td><td>ENARE 2024: abscesso de 7 cm tratado só com antibiótico</td><td>Diretrizes: abscesso piogênico &gt; 3–5 cm → drenagem percutânea + antibiótico; só antibiótico no pequeno ou no amebiano</td><td>Em geral, piogênico grande = drenar</td></tr><tr><td>Abscesso amebiano</td><td>Estratégia: metronidazol isolado</td><td>CDC/IDSA: metronidazol seguido de amebicida luminal (paromomicina, teclozana) para eliminar os cistos intestinais</td><td>Droga de escolha = metronidazol</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "No MEDCURSO, este tema é aula bônus da aula <b>Cirrose e suas Complicações / Hipertensão Porta (Tratamento Clínico e Cirúrgico); Ascite; Encefalopatia</b> (semana 24 do cronograma); não é aula principal. Aulas bônus dessa aula: <ul><li>Tumores Hepáticos Malignos</li><li>Transplante Hepático</li></ul>"
       }
     ],
-    "comoCai": "Cai como caso de lesão hepática focal em exame de imagem pedindo a diferenciação entre as principais lesões benignas, ou como caso de paciente cirrótico pedindo a conduta de rastreamento para carcinoma hepatocelular.",
-    "mnemonicos": [],
-    "prioridadeProva": "media"
+    "comoCai": [
+      "Hemangioma: tumor mais comum; realce periférico globuliforme centrípeto; sem biópsia e sem tratamento.",
+      "Hiperplasia nodular focal: cicatriz central, capta na fase hepatobiliar, conduta expectante.",
+      "Adenoma: anticoncepcional/anabolizante, sangra (choque em mulher jovem), beta-catenina malignifica; homem = ressecar.",
+      "Adenoma × HNF: RM com contraste hepatoespecífico.",
+      "Rastreio de CHC: USG + alfafetoproteína a cada 6 meses em cirrose e hepatite B.",
+      "Realce arterial + washout em cirrótico = CHC sem biópsia; fígado normal = biópsia.",
+      "Milão: 1 nódulo ≤ 5 cm ou até 3 ≤ 3 cm, sem invasão vascular → transplante.",
+      "Ressecção: único, Child A, sem hipertensão portal, qualquer tamanho.",
+      "Abscesso piogênico: E. coli e Klebsiella, drenagem + antibiótico; amebiano: metronidazol.",
+      "Metástase é a neoplasia maligna mais comum do fígado; colorretal ressecável tem cura."
+    ],
+    "mnemonicos": [
+      {
+        "palavra": "MILÃO 5-3-3",
+        "explicacao": "Um nódulo até 5 cm ou até 3 nódulos de até 3 cm, sem invasão vascular nem metástase."
+      }
+    ],
+    "prioridadeProva": "media",
+    "revisaoProvas": true
   },
   {
     "id": "dermatoses-miscelanea-escabiose-pediculose",
