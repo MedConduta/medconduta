@@ -1286,27 +1286,35 @@
     "area": "residencia",
     "categoria": "Obstetrícia",
     "titulo": "Hemorragias da 1ª Metade da Gestação",
-    "resumo": "Diagnóstico diferencial entre abortamento, gravidez ectópica e doença trofoblástica gestacional.",
+    "resumo": "Sangramento antes de 20 semanas como cai: abortamento (formas clínicas, critérios de gestação não evolutiva, misoprostol, AMIU, abortamento infectado), gestação ectópica (β-hCG + USTV, zona discriminatória, critérios de expectante, metotrexato e cirurgia, localizações atípicas como a cicatriz de cesárea) e doença trofoblástica (mola completa × parcial, regra do HIPER, esvaziamento, seguimento pós-molar e neoplasia trofoblástica), com anti-D em todas as Rh negativo.",
     "revisado": true,
-    "fonte": "FEBRASGO; Ministério da Saúde — Gestação de Alto Risco",
+    "fonte": "FEBRASGO; Ministério da Saúde — Gestação de Alto Risco; Ministério da Saúde. Manual de Gestação de Alto Risco, 2022; FEBRASGO. Protocolos: Abortamento espontâneo, Gravidez ectópica e Doença trofoblástica gestacional, 2021; ACOG Practice Bulletin 193: Tubal Ectopic Pregnancy. Obstet Gynecol 2018;131:e91-103; NICE NG126: Ectopic pregnancy and miscarriage: diagnosis and initial management, atualização 2023; Doubilet PM, et al. Diagnostic criteria for nonviable pregnancy early in the first trimester. N Engl J Med 2013;369:1443-51; Coomarasamy A, et al. A randomized trial of progesterone in women with bleeding in early pregnancy (PRISM). N Engl J Med 2019;380:1815-24; Schreiber CA, et al. Mifepristone pretreatment for the medical management of early pregnancy loss. N Engl J Med 2018;378:2161-70; Mol F, et al. Salpingotomy versus salpingectomy in women with tubal pregnancy (ESEP). Lancet 2014;383:1483-9; OMS. Abortion care guideline, 2022; Ngan HYS, et al. FIGO Cancer Report 2021: Diagnosis and management of gestational trophoblastic disease. Int J Gynaecol Obstet 2021;155 Suppl 1:86-93; ACOG Clinical Practice Update: Rh D Immune Globulin Administration After Abortion or Pregnancy Loss at Less Than 12 Weeks of Gestation, 2024; Kangatharan C, et al. Interpregnancy interval following miscarriage and adverse pregnancy outcomes. Hum Reprod Update 2017;23:221-31; Estratégia MED — Resumo Estratégico 2026: Sangramento da Primeira Metade da Gestação",
     "mnemonicos": [
       {
         "palavra": "AEM",
         "explicacao": "As 3 principais causas de sangramento no primeiro trimestre: Abortamento, gravidez Ectópica e doença trofoblástica gestacional/Mola — diferenciadas por beta-hCG seriado e ultrassonografia transvaginal."
+      },
+      {
+        "palavra": "Mola CD / PT",
+        "explicacao": "Completa = Diploide; Parcial = Triploide."
+      },
+      {
+        "palavra": "HIPER",
+        "explicacao": "Mola: HIPERêmese, HIPERtireoidismo, HIPERtensão &lt; 20 semanas, HIPER-hCG, HIPERcistos tecaluteínicos, HIPERaltura uterina."
+      },
+      {
+        "palavra": "7 e 25",
+        "explicacao": "CCN ≥ 7 mm sem BCF ou saco ≥ 25 mm sem embrião = gestação não evolutiva."
+      },
+      {
+        "palavra": "Regra do 3,5 – 5",
+        "explicacao": "Metotrexato na ectópica: massa &lt; 3,5 cm e β-hCG &lt; 5.000."
       }
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia",
-        "conteudo": "O abortamento (perda gestacional antes de 20-22 semanas) tem como causa mais comum anomalias cromossômicas embrionárias, especialmente em perdas precoces do primeiro trimestre. A gravidez ectópica resulta da implantação do embrião fora da cavidade uterina (mais comumente na trompa de Falópio), incapaz de sustentar gestação viável e com risco de ruptura tubária e hemorragia interna maciça conforme o trofoblasto invade a parede tubária. A doença trofoblástica gestacional (mola hidatiforme) resulta de proliferação trofoblástica anormal, com potencial, embora raro, de evolução para neoplasia trofoblástica gestacional maligna."
-      },
-      {
-        "titulo": "Quadro clínico",
-        "conteudo": "Sangramento vaginal no primeiro trimestre é o sintoma comum a todas essas condições, exigindo diferenciação cuidadosa. Gravidez ectópica classicamente associa sangramento a dor pélvica unilateral, podendo evoluir com dor súbita e intensa associada a sinais de choque hipovolêmico em caso de ruptura tubária. Mola hidatiforme frequentemente cursa com sangramento associado a útero maior que o esperado para a idade gestacional e hiperêmese gravídica exacerbada (pelos níveis muito elevados de beta-hCG)."
-      },
-      {
-        "titulo": "Exame físico",
-        "conteudo": "No abortamento, o exame especular e o toque avaliam se o colo está aberto (abortamento inevitável/incompleto) ou fechado (ameaça de abortamento). Na gravidez ectópica rota, sinais de irritação peritoneal e instabilidade hemodinâmica podem estar presentes, exigindo reconhecimento imediato como emergência cirúrgica. Na mola hidatiforme, o útero é tipicamente maior que o esperado pela data da última menstruação.",
+        "titulo": "Visão geral: os três diagnósticos",
+        "conteudo": "<p>O abortamento (perda gestacional antes de 20-22 semanas) tem como causa mais comum anomalias cromossômicas embrionárias, especialmente em perdas precoces do primeiro trimestre. A gravidez ectópica resulta da implantação do embrião fora da cavidade uterina (mais comumente na trompa de Falópio), incapaz de sustentar gestação viável e com risco de ruptura tubária e hemorragia interna maciça conforme o trofoblasto invade a parede tubária. A doença trofoblástica gestacional (mola hidatiforme) resulta de proliferação trofoblástica anormal, com potencial, embora raro, de evolução para neoplasia trofoblástica gestacional maligna.</p><p>Sangramento vaginal no primeiro trimestre é o sintoma comum a todas essas condições, exigindo diferenciação cuidadosa. Gravidez ectópica classicamente associa sangramento a dor pélvica unilateral, podendo evoluir com dor súbita e intensa associada a sinais de choque hipovolêmico em caso de ruptura tubária. Mola hidatiforme frequentemente cursa com sangramento associado a útero maior que o esperado para a idade gestacional e hiperêmese gravídica exacerbada (pelos níveis muito elevados de beta-hCG).</p><p>No abortamento, o exame especular e o toque avaliam se o colo está aberto (abortamento inevitável/incompleto) ou fechado (ameaça de abortamento). Na gravidez ectópica rota, sinais de irritação peritoneal e instabilidade hemodinâmica podem estar presentes, exigindo reconhecimento imediato como emergência cirúrgica. Na mola hidatiforme, o útero é tipicamente maior que o esperado pela data da última menstruação.</p><p>É o 3º tema mais cobrado de obstetrícia. As questões misturam os três diagnósticos nas alternativas, por isso compare sempre colo, tamanho do útero, β-hCG e ultrassom.</p><div class=\"table-wrap\"><table><thead><tr><th></th><th>Abortamento</th><th>Gestação ectópica</th><th>Mola hidatiforme</th></tr></thead><tbody><tr><td>Sangramento</td><td>Vermelho, com cólica, pode eliminar restos</td><td>Discreto, escuro</td><td>Escuro, indolor, pode eliminar <b>vesículas</b> (patognomônico)</td></tr><tr><td>Dor</td><td>Cólica em hipogástrio</td><td>Unilateral; súbita e lancinante se rota</td><td>Pouca</td></tr><tr><td>Útero</td><td>Compatível ou menor que a IG</td><td>Menor que a IG, vazio</td><td><b>Maior que a IG</b></td></tr><tr><td>β-hCG</td><td>Compatível ou caindo</td><td>Sobe menos de 50% em 48 h ou platô</td><td><b>Muito alto</b> (&gt; 100.000–200.000)</td></tr><tr><td>USTV</td><td>Saco tópico, restos ou endométrio fino</td><td>Útero vazio + massa anexial, líquido livre</td><td>Flocos de neve / cacho de uva; cistos tecaluteínicos</td></tr></tbody></table></div><p><span class=\"red-flag\">Dor pélvica súbita e intensa associada a sinais de choque hipovolêmico em mulher com atraso menstrual e teste de gravidez positivo</span> caracteriza gravidez ectópica rota, emergência cirúrgica absoluta que exige laparotomia/laparoscopia imediata, sem aguardar confirmação ultrassonográfica completa em paciente instável.</p>",
         "imagens": [
           {
             "url": "imagens/questoes/amrigs/2025/2025-6f2412a5-q055-1.webp",
@@ -1316,35 +1324,167 @@
         ]
       },
       {
-        "titulo": "Diagnóstico",
-        "conteudo": "Beta-hCG quantitativo seriado associado à ultrassonografia transvaginal é a base diagnóstica: ausência de saco gestacional intrauterino com beta-hCG acima do limiar discriminatório sugere fortemente gravidez ectópica. Mola hidatiforme apresenta padrão ultrassonográfico característico (\"flocos de neve\" ou \"cacho de uvas\") associado a beta-hCG muito elevado, desproporcional à idade gestacional esperada.",
+        "titulo": "Abortamento: conceito, causas e formas clínicas",
+        "conteudo": "<p>Perda antes de <b>20 semanas</b> ou feto &lt; 500 g (OMS). Precoce até 12 semanas (80% das perdas; causa principal: <b>alteração cromossômica</b>, sobretudo trissomia do 16; depois monossomia X) e tardio entre 12 e 20 semanas (causa principal: <b>insuficiência istmocervical</b>). É a complicação mais comum da gestação: 15–20% das gestações clínicas. O aborto esporádico <b>não aumenta</b> o risco de nova perda.</p><div class=\"table-wrap\"><table><thead><tr><th>Grupo de causas</th><th>Exemplos</th></tr></thead><tbody><tr><td>Genéticas</td><td>Trissomias (16), monossomia X, triploidia; aumentam com a idade materna</td></tr><tr><td>Endócrinas</td><td>DM descompensado (HbA1c &lt; 7% antes de engravidar), hipotireoidismo, anticorpos antitireoidianos, SOP</td></tr><tr><td>Uterinas</td><td>Sinéquias (Asherman), mioma <b>submucoso</b> (a localização importa mais que o tamanho), útero <b>septado</b> (pior prognóstico), insuficiência cervical</td></tr><tr><td>Imunológicas</td><td>Síndrome antifosfolípide (principal causa autoimune)</td></tr><tr><td>Infecções</td><td>Sífilis, clamídia, gonococo, herpes, CMV, Listeria</td></tr><tr><td>Outras</td><td>Tabagismo &gt; 10 cigarros/dia, álcool, trauma</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Forma</th><th>Sangramento e dor</th><th>Colo</th><th>Ultrassom</th><th>Conduta</th></tr></thead><tbody><tr><td><b>Ameaça</b></td><td>Discreto, cólica leve</td><td><b>Fechado</b></td><td>Embrião vivo; pode haver hematoma subcoriônico</td><td>Expectante, analgesia, anti-D se Rh negativo; repetir USG em 7–10 dias se gestação incipiente</td></tr><tr><td><b>Inevitável / em curso</b></td><td>Moderado a intenso, cólica forte</td><td><b>Pérvio</b></td><td>Saco baixo, descolamento, com ou sem BCF</td><td>Internar, estabilizar, esvaziar se não resolver</td></tr><tr><td><b>Completo</b></td><td>Diminuiu após eliminar material</td><td>Fechado / fechando</td><td>Endométrio <b>≤ 15 mm</b></td><td>Alta com orientação</td></tr><tr><td><b>Incompleto</b></td><td>Persiste, moderado</td><td>Geralmente pérvio</td><td>Material heterogêneo, endométrio <b>&gt; 15 mm</b></td><td>Esvaziamento (misoprostol, AMIU) ou expectante</td></tr><tr><td><b>Retido / anembrionado</b></td><td>Discreto ou ausente; somem os sintomas de gravidez</td><td>Fechado</td><td>CCN ≥ 7 mm sem BCF; saco ≥ 25 mm sem embrião</td><td>Expectante até 4 semanas, misoprostol ou AMIU</td></tr><tr><td><b>Infectado</b></td><td>Febre, secreção fétida, útero doloroso</td><td>Pérvio</td><td>Restos, endométrio heterogêneo</td><td><b>Antibiótico + esvaziamento</b></td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-rp/2021/2021-3a83a5ad-q053-1.webp",
+            "legenda": "Teste imunológico de gravidez positivo em gestante de 9 semanas com sangramento moderado e colo pérvio (USP-RP 2021): abortamento em curso, conduta aspiração manual intrauterina.",
+            "fonte": "Imagem de questão de prova — USP-RP 2021"
+          },
+          {
+            "url": "imagens/questoes/amrigs/2024/2024-054592b9-q051-1.webp",
+            "legenda": "Queda rápida e contínua do hCG após o evento (AMRIGS 2024): abortamento completo.",
+            "fonte": "Imagem de questão de prova — AMRIGS 2024"
+          }
+        ]
+      },
+      {
+        "titulo": "Abortamento: ultrassom e esvaziamento",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Gestação não evolutiva (certeza)</th><th>Suspeita (repetir USG em 7–14 dias)</th></tr></thead><tbody><tr><td>CCN <b>≥ 7 mm</b> sem batimento cardíaco</td><td>CCN &lt; 7 mm sem batimento</td></tr><tr><td>Diâmetro médio do saco <b>≥ 25 mm</b> sem embrião (ENARE 2024)</td><td>Saco de 16–24 mm sem embrião</td></tr><tr><td>Saco sem vesícula e sem embrião com BCF após 2 semanas</td><td>Ausência de embrião ≥ 6 semanas após a DUM</td></tr><tr><td>Saco com vesícula e sem embrião com BCF após 11 dias</td><td>Vesícula vitelínica &gt; 7 mm; âmnio vazio; saco pequeno para o embrião</td></tr></tbody></table></div><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Esvaziamento uterino na prova</div><div class=\"fluxo-resumo__passo\"><b>Expectante</b>: Estável, pouco sangramento, sem infecção, desejo da paciente; reavaliar a cada 1–2 semanas, por até 4 semanas</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Misoprostol</b>: 1º trimestre: <b>800 µg vaginal</b> a cada 3–12 h; 2º trimestre: 200–400 µg a cada 3–6 h (máx. 200 µg a cada 6 h com cicatriz uterina); preparo do colo: 400 µg 3 h antes do procedimento. Preferido no aborto retido e após 12 semanas</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Até 12 semanas</b>: <b>Aspiração (AMIU ou elétrica)</b>: tão eficaz quanto a curetagem, com menos perfuração e sinéquia; curetagem é a opção <b>menos recomendada</b> (SES-PE 2023)</div><div class=\"fluxo-resumo__passo\"><b>Acima de 12 semanas</b>: Espículas ósseas: misoprostol (ocitocina) até expulsar o feto e depois curetagem dos restos</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Sempre</b>: Tipagem sanguínea e <b>imunoglobulina anti-D</b> na Rh negativo não sensibilizada (ENARE 2024)</div></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Abortamento infectado</span><ul><li>Febre, útero doloroso, secreção purulenta; pode evoluir a pelviperitonite e choque séptico.</li><li><b>Clindamicina 900 mg IV 8/8 h + gentamicina 5 mg/kg/dia</b>; alternativas: ampicilina + gentamicina + metronidazol, ou ceftriaxona + clindamicina.</li><li>Esvaziar após iniciar o antibiótico (SES-PE 2017); manter IV até 48 h afebril, sem antibiótico oral depois.</li><li>Perfuração na curetagem: parar; laparotomia se instabilidade.</li></ul></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/hcpa-rs/2021/2021-aceef06b-q001-1.webp",
+            "legenda": "Embrião com CCN de 15,7 mm (8 semanas) sem batimento cardíaco (HCPA-RS 2021): gestação interrompida, considerar esvaziamento.",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2021"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2025/2025-3e0771c0-q090-1.webp",
+            "legenda": "Embrião com CCN de 6,6 mm sem batimentos (USP-RP 2025): abaixo de 7 mm é só suspeita, repetir a ultrassonografia em uma semana.",
+            "fonte": "Imagem de questão de prova — USP-RP 2025"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2024/2024-6957e96c-q007-1.webp",
+            "legenda": "Gestação não evolutiva com colo impérvio em paciente estável que deseja tratamento (USP-SP 2024): misoprostol para preparar o colo e AMIU após cerca de 4 horas.",
+            "fonte": "Imagem de questão de prova — USP-SP 2024"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2023/2023-3be5e11e-q006-1.webp",
+            "legenda": "Doppler com vascularização intensa no miométrio 2 meses após curetagem (USP-RP 2023): malformação arteriovenosa uterina, causa de sangramento persistente pós-esvaziamento.",
+            "fonte": "Imagem de questão de prova — USP-RP 2023"
+          }
+        ]
+      },
+      {
+        "titulo": "Gestação ectópica: clínica e diagnóstico",
+        "conteudo": "<p>Principal causa de <b>morte materna no 1º trimestre</b>. Tubária em 90–95%, sobretudo na <b>ampola</b> (ENARE 2024); depois istmo, fímbria, intersticial, ovário (a não tubária mais comum), colo, cicatriz de cesárea e abdome. Heterotópica ≈ 1% após FIV.</p><div class=\"table-wrap\"><table><thead><tr><th>Fatores de risco</th><th>Observação</th></tr></thead><tbody><tr><td>Ectópica prévia</td><td>Recorrência de cerca de 15%</td></tr><tr><td>Cirurgia tubária, laqueadura</td><td>Inclusive reanastomose</td></tr><tr><td>DIP / clamídia</td><td>SES-PE 2022</td></tr><tr><td>Reprodução assistida, infertilidade, endometriose</td><td></td></tr><tr><td>DIU, contracepção de emergência</td><td>Falha do método → maior proporção de ectópica</td></tr><tr><td>Tabagismo</td><td>ENARE 2022</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Clínica</span><ul><li>Tríade: <b>atraso menstrual + dor abdominal + sangramento</b>.</li><li>Rota: dor súbita, choque sem sangramento visível, Blumberg, <b>grito de Douglas (Proust)</b>, dor no ombro (<b>Laffont</b>), Cullen.</li><li>Abortamento tubário: sangramento discreto e β-hCG em queda; conduta expectante.</li><li>Reação de Arias-Stella no endométrio sugere ectópica.</li><li>Choque no 1º trimestre com teste positivo = <b>laparotomia</b> (ENARE 2025, ENARE 2026).</li></ul></div><p>Beta-hCG quantitativo seriado associado à ultrassonografia transvaginal é a base diagnóstica: ausência de saco gestacional intrauterino com beta-hCG acima do limiar discriminatório sugere fortemente gravidez ectópica. Mola hidatiforme apresenta padrão ultrassonográfico característico (\"flocos de neve\" ou \"cacho de uvas\") associado a beta-hCG muito elevado, desproporcional à idade gestacional esperada.</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Atraso + sangramento + dor</div><div class=\"fluxo-resumo__passo\"><b>β-hCG quantitativo + USTV</b>: Saco tópico = gestação tópica; útero vazio → avaliar anexos</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Massa anexial extraovariana ou β-hCG ≥ 3.500 com útero vazio</b>: <b>Gestação ectópica</b></div><div class=\"fluxo-resumo__passo\"><b>β-hCG &lt; 3.500 e nada visível</b>: Gestação de localização desconhecida: repetir β-hCG em 48 h</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Sobe ≥ 50% (dobra)</b>: Provável tópica: repetir USG ao atingir a zona discriminatória (ENARE 2023)</div><div class=\"fluxo-resumo__passo\"><b>Sobe &lt; 50% ou platô</b>: Ectópica ou gestação inviável</div><div class=\"fluxo-resumo__passo\"><b>Cai</b>: Abortamento ou ectópica em resolução</div></div></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2022/2022-1eca3bfa-q095-2.webp",
+            "legenda": "Útero vazio com imagem anexial e líquido livre em paciente com dor, anemia e β-hCG de 1.820 (USP-SP 2022): gravidez ectópica.",
+            "fonte": "Imagem de questão de prova — USP-SP 2022"
+          },
+          {
+            "url": "imagens/questoes/hcpa-rs/2024/2024-7c877eb2-q016-2.webp",
+            "legenda": "Variação do hCG em 48 h (HCPA-RS 2024): zona 1 = gestação tópica viável (sobe), zona 2 = ectópica (subida ou queda pequena), zona 3 = abortamento (queda importante).",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2024"
+          },
+          {
+            "url": "imagens/questoes/amrigs/2024/2024-b85124f7-q018-1.webp",
+            "legenda": "Segmentos da tuba (AMRIGS 2024): a ampola (B) é o local mais comum da gestação ectópica.",
+            "fonte": "Imagem de questão de prova — AMRIGS 2024"
+          }
+        ]
+      },
+      {
+        "titulo": "Gestação ectópica: tratamento",
+        "conteudo": "<p>Ameaça de abortamento com colo fechado e embrião viável é conduzida com repouso relativo e observação. Gravidez ectópica não rota, em paciente estável e com critérios apropriados, pode ser tratada com metotrexato; ectópica rota ou paciente instável exige cirurgia de urgência (salpingectomia ou salpingostomia, conforme o caso). Mola hidatiforme é tratada por esvaziamento uterino (aspiração intrauterina), com seguimento rigoroso de beta-hCG seriado por meses para detectar precocemente eventual progressão para neoplasia trofoblástica gestacional.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Condição</th><th>Achado-chave</th><th>Conduta</th></tr></thead><tbody><tr><td>Ameaça de abortamento</td><td>Colo fechado, embrião viável</td><td>Repouso relativo e observação</td></tr><tr><td>Abortamento inevitável/incompleto</td><td>Colo aberto</td><td>Esvaziamento uterino conforme o caso</td></tr><tr><td>Gravidez ectópica não rota</td><td>Ausência de saco gestacional intrauterino com beta-hCG acima do limiar discriminatório; paciente estável</td><td>Metotrexato (critérios apropriados) ou cirurgia conservadora</td></tr><tr><td>Gravidez ectópica rota</td><td>Dor súbita intensa + choque hipovolêmico</td><td>Cirurgia de urgência (salpingectomia/salpingostomia)</td></tr><tr><td>Mola hidatiforme</td><td>Útero maior que esperado, beta-hCG muito elevado, imagem em \"flocos de neve\"</td><td>Esvaziamento uterino + seguimento seriado de beta-hCG</td></tr></tbody></table></div></p><div class=\"table-wrap\"><table><thead><tr><th>Conduta</th><th>Critérios (Estratégia / MS)</th></tr></thead><tbody><tr><td><b>Expectante</b></td><td>Estável, β-hCG <b>&lt; 2.000</b> e em <b>queda</b> em 24–48 h, massa &lt; 5 cm, sem embrião vivo (ENARE 2026: 870 → 690 = expectante)</td></tr><tr><td><b>Metotrexato</b></td><td>Estável, sem dor intensa (ENARE 2024), massa <b>&lt; 3,5 cm</b>, β-hCG <b>&lt; 5.000</b>, sem embrião vivo, desejo de gestar, seguimento possível (SES-PE 2020, 2026)</td></tr><tr><td><b>Cirurgia</b></td><td>Rota ou instável, massa &gt; 5 cm, β-hCG alto, embrião vivo, contraindicação ao MTX, falha</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Metotrexato</span><ul><li>Dose única: <b>50 mg/m² IM</b>; β-hCG nos dias 4 e 7: queda ≥ 15% = sucesso, seguir semanal até negativar; &lt; 15% = 2ª dose; sem queda = cirurgia.</li><li>Múltiplas doses: 1 mg/kg nos dias 1, 3, 5, 7 + ácido folínico 0,1 mg/kg nos dias 2, 4, 6, 8.</li><li>Antes: hemograma, função hepática e renal, tipagem. Contraindicações: heterotópica, amamentação, citopenias, doença hepática, renal ou pulmonar.</li><li>Pode subir o β-hCG e doer nos primeiros dias; USG seriada não avalia resposta.</li><li>MTX local guiado por USG ou KCl: embrião vivo e localizações atípicas; na <b>heterotópica, KCl sem MTX</b>.</li></ul></div><div class=\"table-wrap\"><table><thead><tr><th>Salpingectomia</th><th>Salpingostomia</th></tr></thead><tbody><tr><td>Prole constituída ou laqueadura desejada (SES-PE 2023), tuba rota ou destruída, recidiva na mesma tuba, sangramento persistente, β-hCG muito alto</td><td>Desejo de gestar com tuba contralateral doente; incisão na borda antimesentérica sem sutura; risco de trofoblasto persistente (seguir β-hCG)</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Localização atípica</th><th>Pista e conduta</th></tr></thead><tbody><tr><td><b>Cicatriz de cesárea</b></td><td>Saco na istmocele, parede anterior fina (SES-PE 2024); risco de rotura e acretismo; MTX/KCl local, ressecção histeroscópica ou laparoscópica</td></tr><tr><td>Cervical</td><td>Colo em ampulheta, saco abaixo do orifício interno; MTX, embolização, histerectomia se hemorragia</td></tr><tr><td>Intersticial / cornual</td><td>Rotura tardia e grave; MTX ou ressecção cornual</td></tr><tr><td>Ovariana</td><td>A não tubária mais comum; ressecção ovariana parcial</td></tr><tr><td>Abdominal</td><td>Mortalidade alta; laparotomia, placenta pode ficar in situ</td></tr><tr><td>Heterotópica</td><td>Tópica + ectópica; KCl ou cirurgia, <b>sem MTX</b></td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/ses-pe/2024/2024-2be0af03-q002-1.webp",
+            "legenda": "Saco gestacional na istmocele, com vascularização ao Doppler (SES-PE 2024): gestação em cicatriz de cesárea.",
+            "fonte": "Imagem de questão de prova — SES-PE 2024"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2019/2019-e6131934-q020-1.webp",
+            "legenda": "Pequena imagem para-ovariana com líquido livre e endométrio espesso em paciente estável (USP-SP 2019): suspeita de ectópica, conduta curva de β-hCG.",
+            "fonte": "Imagem de questão de prova — USP-SP 2019"
+          }
+        ]
+      },
+      {
+        "titulo": "Doença trofoblástica: mola hidatiforme",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th></th><th>Mola completa</th><th>Mola parcial</th></tr></thead><tbody><tr><td>Genética</td><td><b>Diploide 46,XX</b>, só paterna (óvulo vazio + 1 espermatozoide que duplica; 10% dispérmica 46,XY)</td><td><b>Triploide 69,XXY/XXX</b> (óvulo normal + 2 espermatozoides) (ENARE 2024)</td></tr><tr><td>Embrião</td><td>Ausente</td><td>Presente, malformado, com restrição</td></tr><tr><td>hCG</td><td>Muito alto</td><td>Mais baixo</td></tr><tr><td>Histologia</td><td>Hiperplasia difusa, degeneração hidrópica das vilosidades (SES-PE 2020, 2023)</td><td>Hiperplasia focal</td></tr><tr><td>p57</td><td><b>Negativo</b> (falta alelo materno)</td><td>Positivo</td></tr><tr><td>Evolução para NTG</td><td><b>15–20%</b> (SES-PE 2023)</td><td>≈ 5%</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Regra do HIPER (mola completa)</span><ul><li><b>Sangramento</b> escuro e indolor (sintoma mais comum), às vezes com eliminação de vesículas.</li><li>HIPER-hCG (&gt; 100.000–200.000), HIPERaltura uterina (útero maior que a IG; útero <b>menor</b> não é mola: SES-PE 2021), HIPERêmese.</li><li><b>HIPERtireoidismo</b> (hCG estimula o receptor de TSH; o menos frequente dos sinais: SES-PE 2023), HIPERtensão antes de 20 semanas, cistos tecaluteínicos.</li><li>Fatores de risco: mola prévia e <b>extremos de idade</b> (sobretudo &gt; 40 anos) (SES-PE 2020).</li></ul></div><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Conduta na mola</div><div class=\"fluxo-resumo__passo\"><b>Antes</b>: Internar; hCG, hemograma, coagulograma, TSH/T4L, tipagem, <b>radiografia de tórax</b>; estabilizar PA, tireoide e anemia</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Esvaziamento</b>: <b>Aspiração a vácuo</b> (AMIU nas pequenas, elétrica nas grandes), ocitocina só após iniciar a aspiração; histerectomia se &gt; 40 anos e prole completa</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Depois</b>: Anti-D se Rh negativo; cistos tecaluteínicos regridem sozinhos (não operar); seguir hCG</div></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/ses-pe/2023/2023-e12ffc11-q011-1.webp",
+            "legenda": "Múltiplas imagens anecoicas intrauterinas em flocos de neve, com útero maior que o atraso (SES-PE 2023): doença trofoblástica, conduta aspiração manual intrauterina.",
+            "fonte": "Imagem de questão de prova — SES-PE 2023"
+          },
+          {
+            "url": "imagens/questoes/ses-rj/2019/2019-001d5d00-q078-1.webp",
+            "legenda": "Vesículas em cacho de uva eliminadas pelo colo, com útero de 16 cm em 10 semanas (SES-RJ 2019): doença trofoblástica gestacional.",
+            "fonte": "Imagem de questão de prova — SES-RJ 2019"
+          },
+          {
+            "url": "imagens/questoes/amrigs/2019/2019-7e96bd5e-q053-1.webp",
+            "legenda": "Padrão em flocos de neve com útero na cicatriz umbilical e sem BCF (AMRIGS 2019): mola hidatiforme.",
+            "fonte": "Imagem de questão de prova — AMRIGS 2019"
+          },
+          {
+            "url": "imagens/questoes/unifesp/2017/2017-8cf9f587-q048-1.webp",
+            "legenda": "Cavidade preenchida por vesículas após suposto aborto espontâneo (UNIFESP 2017): mola completa, esvaziamento por vácuo-aspiração.",
+            "fonte": "Imagem de questão de prova — UNIFESP 2017"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2021/2021-3a83a5ad-q048-1.webp",
+            "legenda": "Conteúdo intrauterino vesicular com colo fechado (USP-RP 2021): dilatar o colo e fazer vácuo-aspiração.",
+            "fonte": "Imagem de questão de prova — USP-RP 2021"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2025/2025-3e0771c0-q050-1.webp",
+            "legenda": "Ovários aumentados com múltiplos cistos após esvaziamento molar (USP-RP 2025): cistos tecaluteínicos, manter vigilância pós-molar sem cirurgia.",
+            "fonte": "Imagem de questão de prova — USP-RP 2025"
+          }
+        ]
+      },
+      {
+        "titulo": "Seguimento pós-molar e neoplasia trofoblástica",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Seguimento pós-molar</th><th>O que fazer</th></tr></thead><tbody><tr><td>hCG</td><td><b>Semanal</b> até indetectável (3 dosagens negativas), depois mensal por 6 meses (Estratégia/MS)</td></tr><tr><td>Contracepção</td><td><b>Hormonal</b> (oral, injetável, implante, adesivo) é permitida (ENARE 2024); <b>DIU contraindicado</b> até remissão</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Critérios de NTG pós-molar (FIGO)</th><th></th></tr></thead><tbody><tr><td>Platô</td><td>Variação &lt; 10% em <b>4 valores</b> ao longo de 3 semanas (dias 1, 7, 14, 21) (ENARE 2022)</td></tr><tr><td>Ascensão</td><td>Subida ≥ 10% em <b>3 valores</b> ao longo de 2 semanas (dias 1, 7, 14)</td></tr><tr><td>Outros</td><td>Diagnóstico histológico de coriocarcinoma; metástases</td></tr></tbody></table></div><p><b>Não precisa de biópsia</b> para tratar a NTG (risco de sangramento): basta o critério de hCG (ENARE 2026). Estadiar com exame ginecológico, radiografia/TC de tórax, USG/TC de abdome e RM de crânio se pulmão positivo. Pulmão é o sítio mais comum de metástase (SES-PE 2020); metástase vaginal é nódulo violáceo que sangra (não biopsiar).</p><div class=\"table-wrap\"><table><thead><tr><th>FIGO / OMS</th><th>Tratamento</th></tr></thead><tbody><tr><td>Baixo risco (escore ≤ 6)</td><td>Agente único: <b>metotrexato</b> ou actinomicina D</td></tr><tr><td>Alto risco (≥ 7)</td><td><b>EMA-CO</b> (etoposídeo, metotrexato, actinomicina D; ciclofosfamida e vincristina no dia 8) (ENARE 2025)</td></tr><tr><td>Ultra-alto risco (≥ 13)</td><td>EP/EMA ou indução com etoposídeo-cisplatina em baixa dose</td></tr><tr><td>Sítio placentário / epitelioide</td><td>hCG baixo, pouco quimiossensível: <b>histerectomia</b></td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>NTG</th><th>Pista</th></tr></thead><tbody><tr><td>Mola invasora</td><td>A mais comum; vilosidades no miométrio; após mola completa</td></tr><tr><td>Coriocarcinoma</td><td>A mais agressiva; sem vilosidades, hemorragia e necrose; metástase pulmonar, vaginal, hepática e cerebral; 50% após mola, 25% após gestação normal</td></tr><tr><td>Tumor do sítio placentário / epitelioide</td><td>Trofoblasto intermediário, <b>hCG baixo</b>, lactogênio placentário alto; após gestação a termo</td></tr></tbody></table></div><p>O uso do beta-hCG quantitativo seriado combinado à ultrassonografia transvaginal para diagnóstico de gravidez ectópica (ausência de saco gestacional intrauterino acima do limiar discriminatório) é cobrança certa e recorrente. O seguimento obrigatório com beta-hCG seriado após esvaziamento molar (para detectar neoplasia trofoblástica gestacional) também é frequentemente exigido.</p>",
         "imagens": [
           {
             "url": "imagens/questoes/unifesp/2016/2016-d47d44e8-q056-1.webp",
             "legenda": "Curva de hCG após esvaziamento molar com platô e nova elevação, em vez da queda progressiva — neoplasia trofoblástica gestacional.",
             "fonte": "Imagem de questão de prova — UNIFESP 2016"
+          },
+          {
+            "url": "imagens/questoes/ufcspa/2022/2022-4b733bd8-q016-1.webp",
+            "legenda": "hCG pós-mola que cai de 20.400 para 17.200 e 16.900 nas semanas 4 a 6 (UFCSPA 2022): suspeita de platô, manter dosagens semanais para confirmar.",
+            "fonte": "Imagem de questão de prova — UFCSPA 2022"
           }
         ]
       },
       {
-        "titulo": "Tratamento",
-        "conteudo": "Ameaça de abortamento com colo fechado e embrião viável é conduzida com repouso relativo e observação. Gravidez ectópica não rota, em paciente estável e com critérios apropriados, pode ser tratada com metotrexato; ectópica rota ou paciente instável exige cirurgia de urgência (salpingectomia ou salpingostomia, conforme o caso). Mola hidatiforme é tratada por esvaziamento uterino (aspiração intrauterina), com seguimento rigoroso de beta-hCG seriado por meses para detectar precocemente eventual progressão para neoplasia trofoblástica gestacional.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Condição</th><th>Achado-chave</th><th>Conduta</th></tr></thead><tbody><tr><td>Ameaça de abortamento</td><td>Colo fechado, embrião viável</td><td>Repouso relativo e observação</td></tr><tr><td>Abortamento inevitável/incompleto</td><td>Colo aberto</td><td>Esvaziamento uterino conforme o caso</td></tr><tr><td>Gravidez ectópica não rota</td><td>Ausência de saco gestacional intrauterino com beta-hCG acima do limiar discriminatório; paciente estável</td><td>Metotrexato (critérios apropriados) ou cirurgia conservadora</td></tr><tr><td>Gravidez ectópica rota</td><td>Dor súbita intensa + choque hipovolêmico</td><td>Cirurgia de urgência (salpingectomia/salpingostomia)</td></tr><tr><td>Mola hidatiforme</td><td>Útero maior que esperado, beta-hCG muito elevado, imagem em \"flocos de neve\"</td><td>Esvaziamento uterino + seguimento seriado de beta-hCG</td></tr></tbody></table></div>"
-      },
-      {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor pélvica súbita e intensa associada a sinais de choque hipovolêmico em mulher com atraso menstrual e teste de gravidez positivo</span> caracteriza gravidez ectópica rota, emergência cirúrgica absoluta que exige laparotomia/laparoscopia imediata, sem aguardar confirmação ultrassonográfica completa em paciente instável."
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Repouso na ameaça de abortamento</td><td>SES-PE 2024 e resumo antigo: repouso e abstinência sexual.</td><td>Sem benefício comprovado (Estratégia, MS, NICE): conduta expectante com analgesia.</td><td>Se só uma alternativa trouxer repouso junto do diagnóstico certo, marcar; sozinho, repouso não muda o desfecho.</td></tr><tr><td>Progesterona na ameaça</td><td>Estratégia e ENARE 2025: nenhum tratamento impede a evolução.</td><td>PRISM (NEJM 2019): progesterona vaginal 400 mg 2x/dia ajuda quem sangra e já teve aborto prévio; NICE 2021 recomenda nesse grupo.</td><td>Na prova, sem tratamento eficaz; lembrar a exceção do aborto prévio.</td></tr><tr><td>Mifepristona no aborto retido</td><td>Provas: misoprostol isolado.</td><td>Mifepristona 200 mg + misoprostol 24–48 h depois é mais eficaz (Schreiber NEJM 2018; OMS 2022), mas a mifepristona não é comercializada no Brasil.</td><td>Responder misoprostol; mifepristona + misoprostol se aparecer como mais eficaz.</td></tr><tr><td>Curetagem × aspiração</td><td>Estratégia e ENARE 2025: curetagem como resposta clássica.</td><td>OMS 2022 recomenda aspiração a vácuo e desaconselha a curetagem com cureta cortante até 14 semanas.</td><td>Se perguntarem a menos recomendada, é curetagem (SES-PE 2023).</td></tr><tr><td>Zona discriminatória</td><td>Estratégia e MS: 3.500 mUI/mL (antes 1.500–2.000).</td><td>ACOG 2018: até 3.500 para não interromper gestação tópica desejada; NICE usa a evolução em 48 h, não um valor isolado.</td><td>Use 3.500; se a questão trouxer 1.500 ou 2.000, segue a lógica de útero vazio acima do limite.</td></tr><tr><td>Laparotomia × laparoscopia</td><td>SES-PE 2021: ectópica de 4 cm, β-hCG 5.000, estável → laparotomia.</td><td>Na paciente estável, laparoscopia é a via preferida; laparotomia se instável ou sem acesso.</td><td>Instável = laparotomia; estável e cirúrgica = laparoscopia se houver a opção.</td></tr><tr><td>Salpingostomia × salpingectomia</td><td>Estratégia: salpingostomia quando se quer preservar a fertilidade.</td><td>ESEP (Lancet 2014): fertilidade igual quando a outra tuba é normal; salpingectomia preferida nesse caso.</td><td>Tuba contralateral normal = salpingectomia; doente = salpingostomia.</td></tr><tr><td>Anti-D antes de 12 semanas</td><td>MS, Estratégia e ENARE 2024: anti-D em toda Rh negativo.</td><td>ACOG 2024 permite omitir antes de 12 semanas (risco de aloimunização muito baixo).</td><td>No Brasil, prescrever anti-D.</td></tr><tr><td>Seguimento pós-molar</td><td>Estratégia: hCG semanal até negativar e mensal por 6 meses.</td><td>FIGO 2021: mola completa, mensal por 3 meses após normalizar; mola parcial, uma dosagem normal confirmatória basta.</td><td>Na prova brasileira, 6 meses.</td></tr><tr><td>hCG elevado por 6 meses</td><td>Estratégia lista como critério de NTG.</td><td>FIGO 2018 retirou esse critério (muitas normalizam sozinhas).</td><td>Usar platô (4 valores/3 semanas) e ascensão (3 valores/2 semanas).</td></tr><tr><td>Esperar 6 meses após aborto</td><td>Orientação antiga: esperar 6 meses para nova gestação.</td><td>Metanálise (Kangatharan 2017): intervalo &lt; 6 meses tem menos aborto e prematuridade (HCPA-RS 2018).</td><td>Após aborto espontâneo não molar, não é preciso esperar.</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/hcpa-rs/2018/2018-e64d9fca-q096-1.webp",
+            "legenda": "Metanálise sobre intervalo após aborto (HCPA-RS 2018): engravidar antes de 6 meses reduz o risco de novo abortamento.",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2018"
+          }
+        ]
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O uso do beta-hCG quantitativo seriado combinado à ultrassonografia transvaginal para diagnóstico de gravidez ectópica (ausência de saco gestacional intrauterino acima do limiar discriminatório) é cobrança certa e recorrente. O seguimento obrigatório com beta-hCG seriado após esvaziamento molar (para detectar neoplasia trofoblástica gestacional) também é frequentemente exigido."
+        "conteudo": "<div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">O que mais cai</span><ul><li>Colo fechado + embrião vivo = ameaça; colo pérvio = inevitável/incompleto; endométrio ≤ 15 mm = completo.</li><li>CCN ≥ 7 mm sem BCF ou saco ≥ 25 mm sem embrião = não evolutiva.</li><li>Infectado: clindamicina + gentamicina e esvaziar.</li><li>Ectópica: ampola; útero vazio com β-hCG ≥ 3.500; choque = laparotomia; MTX 50 mg/m² se &lt; 5.000, &lt; 3,5 cm, sem BCF, sem dor.</li><li>Cicatriz de cesárea: saco na istmocele.</li><li>Mola completa: 46,XX paterna, p57 negativo, mais NTG; parcial: triploide, com embrião.</li><li>Pós-mola: hCG semanal, contraceptivo hormonal (não DIU); platô 4 valores ou subida 3 valores = NTG, tratar sem biópsia.</li><li>Anti-D em toda Rh negativo.</li></ul></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Sangramentos na Gravidez - Parte I</b> (semana 20 do cronograma MEDCURSO). No MEDCURSO, essa aula não tem aulas bônus."
       }
     ],
-    "comoCai": "O material classifica sangramento da 1ª metade como o 3º tema mais cobrado de Obstetrícia (atrás só de síndromes hipertensivas e assistência ao pré-natal), avisando que \"as questões misturam os diagnósticos diferenciais nas alternativas\" entre abortamento, ectópica e doença trofoblástica. Na gestação ectópica, a tríade clássica (dor abdominal + atraso menstrual + sangramento genital) é cobrada junto de sinais de rotura como o sinal de Laffont (dor escapular) e o sinal de Cullen (equimose periumbilical); o tratamento com metotrexato dose única exige critérios fechados (paciente estável, massa <3,5cm, β-hCG <5000, sem dor intensa). Na mola hidatiforme, os mnemônicos são centrais: \"CD\" para mola completa (diploide, sem embrião, hCG muito alto, risco de neoplasia trofoblástica 15-20%) e \"PT\" para mola parcial (triploide, com embrião malformado, risco de neoplasia 5%) — além do mnemônico \"HIPER\" (hiperêmese, cistos tecaluteínicos, hCG elevado, altura uterina maior, tireoide/hipertireoidismo, cachos de uva à USG, eliminar vesículas, DHEG antes de 20 semanas). Os critérios ultrassonográficos de gestação não evolutiva (saco gestacional ≥25mm sem vesícula/embrião; CCN ≥7mm sem batimento cardíaco) são cobrados com números exatos como \"diagnóstico de certeza\".",
-    "prioridadeProva": "alta"
+    "comoCai": [
+      "Formas clínicas do abortamento e conduta (SES-PE 2015, 2017, 2019, 2024; ENARE 2021, 2025)",
+      "Critérios de gestação não evolutiva e esvaziamento com misoprostol/AMIU (ENARE 2024, SES-PE 2023)",
+      "Ectópica: diagnóstico, MTX e cirurgia (SES-PE 2020, 2021, 2023, 2026; ENARE 2024–2026)",
+      "Gestação em cicatriz de cesárea (SES-PE 2024)",
+      "Mola: genética, clínica e esvaziamento (SES-PE 2020, 2021, 2023; ENARE 2023, 2024)",
+      "Seguimento pós-molar e NTG (ENARE 2022, 2024, 2025, 2026)",
+      "Anti-D na Rh negativo (ENARE 2024)"
+    ],
+    "prioridadeProva": "alta",
+    "revisaoProvas": true
   },
   {
     "id": "imunizacoes",
