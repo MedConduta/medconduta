@@ -12107,51 +12107,158 @@
     "area": "residencia",
     "categoria": "Gastroenterologia",
     "titulo": "Câncer de Esôfago e da Junção Esofagogástrica",
-    "resumo": "Carcinoma epidermoide x adenocarcinoma, fatores de risco, disfagia progressiva, estadiamento, classificação de Siewert, tratamento (CROSS, esofagectomias) e tumores benignos do esôfago.",
-    "revisado": false,
-    "fonte": "Instituto Nacional de Câncer (INCA); Sociedade Brasileira de Cirurgia Oncológica; NCCN Guidelines for Esophageal and Esophagogastric Junction Cancers; AJCC 8ª edição",
+    "resumo": "Câncer de esôfago e da JEG do jeito que cai: carcinoma epidermoide × adenocarcinoma (local e fator de risco), disfagia progressiva com emagrecimento, estadiamento (EDA, ecoendoscopia, TC, PET-CT, broncoscopia), TNM, Siewert, câncer precoce e ressecção endoscópica, neoadjuvância (CROSS × FLOT), técnicas de esofagectomia e substitutos, complicações, paliação e tumores benignos.",
+    "revisado": true,
+    "fonte": "Instituto Nacional de Câncer (INCA); Sociedade Brasileira de Cirurgia Oncológica; NCCN Guidelines for Esophageal and Esophagogastric Junction Cancers; AJCC 8ª edição; van Hagen P, et al. Preoperative chemoradiotherapy for esophageal or junctional cancer (CROSS). N Engl J Med 2012;366:2074-84; Hoeppner J, et al. Perioperative chemotherapy or preoperative chemoradiotherapy in esophageal cancer (ESOPEC). N Engl J Med 2025;392:323-35; Kelly RJ, et al. Adjuvant nivolumab in resected esophageal or gastroesophageal junction cancer (CheckMate 577). N Engl J Med 2021;384:1191-203; Pimentel-Nunes P, et al. Endoscopic submucosal dissection for superficial GI lesions: ESGE Guideline update 2022. Endoscopy 2022;54:591-622; NCCN Guidelines Esophageal and Esophagogastric Junction Cancers (versão vigente); Estratégia MED — Resumo Estratégico 2026: Neoplasias de Estômago e Esôfago",
     "mnemonicos": [
       {
         "palavra": "Barrett vira adenocarcinoma",
         "explicacao": "O esôfago de Barrett (metaplasia intestinal por DRGE crônica) é o principal fator de risco para o adenocarcinoma do esôfago distal; tabagismo e etilismo, para o carcinoma epidermoide dos terços médio e superior."
+      },
+      {
+        "palavra": "CEC = Cigarro, Etanol, Cáustico (e aCalasia)",
+        "explicacao": "Os principais fatores do carcinoma epidermoide, que nasce no terço médio."
+      },
+      {
+        "palavra": "EUS vê a parede, PET vê o corpo",
+        "explicacao": "Ecoendoscopia estadia T e N; PET-CT procura metástase a distância (M)."
+      },
+      {
+        "palavra": "Ivor Lewis = I(ntratorácica)",
+        "explicacao": "Laparotomia + toracotomia direita com anastomose intratorácica; McKeown e trans-hiatal levam a anastomose ao pescoço."
       }
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia",
-        "conteudo": "Há dois tipos histológicos principais. Carcinoma epidermoide (espinocelular): associado a tabagismo e etilismo (efeito sinérgico), bebidas muito quentes (chimarrão), dieta pobre em frutas, acalasia/megaesôfago chagásico, estenose cáustica, tilose palmoplantar e síndrome de Plummer-Vinson; predomina nos terços médio e superior e, no Brasil, ainda é muito frequente. Adenocarcinoma: associado a DRGE crônica, esôfago de Barrett e obesidade; predomina no terço distal e na junção esofagogástrica (JEG), e sua incidência cresce nos países ocidentais. Os tumores da JEG são classificados por Siewert pelo epicentro: tipo I de 1 a 5 cm acima da JEG (esôfago distal), tipo II de 1 cm acima a 2 cm abaixo (cárdia verdadeira) e tipo III de 2 a 5 cm abaixo (subcárdico). A disseminação linfática é precoce porque o esôfago não tem serosa e tem rica rede linfática submucosa. O tumor benigno mais comum é o leiomioma (submucoso, tratado por enucleação quando sintomático)."
+        "titulo": "Epidemiologia e fatores de risco",
+        "conteudo": "Há dois tipos histológicos principais. Carcinoma epidermoide (espinocelular): associado a tabagismo e etilismo (efeito sinérgico), bebidas muito quentes (chimarrão), dieta pobre em frutas, acalasia/megaesôfago chagásico, estenose cáustica, tilose palmoplantar e síndrome de Plummer-Vinson; predomina nos terços médio e superior e, no Brasil, ainda é muito frequente. Adenocarcinoma: associado a DRGE crônica, esôfago de Barrett e obesidade; predomina no terço distal e na junção esofagogástrica (JEG), e sua incidência cresce nos países ocidentais. Os tumores da JEG são classificados por Siewert pelo epicentro: tipo I de 1 a 5 cm acima da JEG (esôfago distal), tipo II de 1 cm acima a 2 cm abaixo (cárdia verdadeira) e tipo III de 2 a 5 cm abaixo (subcárdico). A disseminação linfática é precoce porque o esôfago não tem serosa e tem rica rede linfática submucosa. O tumor benigno mais comum é o leiomioma (submucoso, tratado por enucleação quando sintomático).<div class=\"table-wrap\"><table><thead><tr><th></th><th><b>Carcinoma epidermoide (CEC)</b></th><th><b>Adenocarcinoma</b></th></tr></thead><tbody><tr><td>Onde</td><td>Terço <b>médio</b> (e superior/cervical)</td><td>Terço <b>distal</b> e JEG</td></tr><tr><td>Fatores</td><td><b>Tabaco + álcool</b> (sinérgicos), bebidas muito quentes (chimarrão), nitrosaminas, <b>acalasia/megaesôfago chagásico</b>, estenose <b>cáustica</b> (décadas depois), <b>tilose</b> palmoplantar, <b>Plummer-Vinson</b>, HPV, câncer de cabeça e pescoço, radioterapia prévia</td><td><b>DRGE → esôfago de Barrett</b>, <b>obesidade</b> central, tabagismo, sexo masculino, raça branca; H. pylori e AINE/AAS parecem <b>proteger</b></td></tr><tr><td>Quem é</td><td>Homem negro, pobre, tabagista e etilista</td><td>Homem branco, obeso, com refluxo de longa data</td></tr><tr><td>Tendência</td><td>Mais comum no mundo e no Brasil; estável/caindo</td><td>Cresce no Ocidente; já é o mais comum nos EUA (linha B, SES-PE 2023)</td></tr></tbody></table></div><p><b>SES-PE 2023</b> mostrou um gráfico de incidência 1975–2001: a linha A (caindo) é o CEC, a linha B (subindo) é o adenocarcinoma, que pode ser <b>Siewert I</b> (gabarito); HPV é fator do CEC, não do adeno. Na <b>tilose</b> (ceratodermia palmoplantar hereditária) o risco de CEC chega a 90% aos 65 anos (SES-DF 2022: jovem com disfagia e mãos/pés descamativos = CEC, não adenocarcinoma). <b>USP-SP 2026</b>: o adenocarcinoma tem bom prognóstico quando precoce, mas a maioria é diagnosticada avançada, por isso a letalidade é alta.</p><p>O esôfago <b>não tem serosa</b> e tem rede linfática submucosa rica: a disseminação local e linfática é precoce e a maioria chega avançada. Adenocarcinoma <b>não</b> metastatiza para linfonodos mais cedo que o CEC (item falso em prova).</p>",
+        "imagens": [
+          {
+            "url": "imagens/resumos/gastro/esofago-tipos-siewert.png",
+            "legenda": "Onde nasce o CEC e o adenocarcinoma, e a classificação de Siewert dos tumores da JEG com a cirurgia de cada tipo.",
+            "fonte": "Esquema elaborado para o MedConduta"
+          },
+          {
+            "url": "imagens/questoes/sespe/2023-q026-1.webp",
+            "legenda": "Incidência dos tumores esofágicos de 1975 a 2001 (SES-PE 2023): A = CEC em queda, B = adenocarcinoma em ascensão (pode ser Siewert I), C = outros.",
+            "fonte": "Imagem de questão de prova — SES-PE 2023"
+          },
+          {
+            "url": "imagens/questoes/ses-df/2022/2022-c2bb15a9-q041-1.webp",
+            "legenda": "Tilose palmoplantar em jovem com disfagia progressiva e massa esofágica (SES-DF 2022): síndrome hereditária com alto risco de carcinoma epidermoide.",
+            "fonte": "Imagem de questão de prova — SES-DF 2022"
+          }
+        ]
       },
       {
         "titulo": "Quadro clínico",
-        "conteudo": "Disfagia progressiva, primeiro para sólidos e depois para pastosos e líquidos (surge quando há obstrução importante da luz), com perda de peso acentuada, odinofagia e dor retroesternal. Rouquidão indica invasão do nervo laríngeo recorrente; tosse ao deglutir e pneumonias de repetição sugerem fístula traqueoesofágica; hematêmese, invasão vascular. A apresentação costuma ser tardia."
+        "conteudo": "<p>Disfagia progressiva, primeiro para sólidos e depois para pastosos e líquidos (surge quando há obstrução importante da luz), com perda de peso acentuada, odinofagia e dor retroesternal. Rouquidão indica invasão do nervo laríngeo recorrente; tosse ao deglutir e pneumonias de repetição sugerem fístula traqueoesofágica; hematêmese, invasão vascular. A apresentação costuma ser tardia.</p><p>Frequentemente normal; caquexia, linfonodos supraclaviculares ou cervicais palpáveis e hepatomegalia indicam doença avançada.</p><div class=\"table-wrap\"><table><thead><tr><th>Achado</th><th>Significa</th></tr></thead><tbody><tr><td>Disfagia progressiva sólidos → pastosos → líquidos + emagrecimento</td><td>Tumor que já ocupa grande parte da luz (cerca de 2/3 da circunferência); é <b>tardia</b></td></tr><tr><td><b>Rouquidão</b></td><td>Invasão do nervo laríngeo recorrente (mais o esquerdo)</td></tr><tr><td><b>Tosse ao deglutir</b>, pneumonias de repetição</td><td><b>Fístula traqueo/broncoesofágica</b> = T4b, irressecável</td></tr><tr><td>Hematêmese maciça</td><td>Fístula para a aorta</td></tr><tr><td>Linfonodo supraclavicular, hepatomegalia</td><td>Doença metastática</td></tr></tbody></table></div><p>SES-DF 2022 considerou <b>errado</b> dizer que disfagia para sólidos indica perda de pelo menos 70% da luz: o número clássico é cerca de 50–60% da luz (2/3 da circunferência).</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2024/2024-b7193737-q011-1.webp",
+            "legenda": "EDA de tabagista e etilista de 55 anos com disfagia e perda de 15 kg (USP-SP 2024): lesão ulcerada e infiltrativa no esôfago médio, 25 a 29 cm da ADS — CEC, fator tabaco + álcool.",
+            "fonte": "Imagem de questão de prova — USP-SP 2024"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2026/2026-9120fb7e-q101-1.webp",
+            "legenda": "EDA de tabagista com refluxo de longa data (USP-SP 2026): lesão vegetante, friável e estenosante a 36 cm da ADS — adenocarcinoma distal.",
+            "fonte": "Imagem de questão de prova — USP-SP 2026"
+          }
+        ]
       },
       {
-        "titulo": "Exame físico",
-        "conteudo": "Frequentemente normal; caquexia, linfonodos supraclaviculares ou cervicais palpáveis e hepatomegalia indicam doença avançada."
+        "titulo": "Diagnóstico e estadiamento",
+        "conteudo": "<p>Endoscopia digestiva alta com biópsias (cromoscopia com lugol aumenta a detecção do epidermoide precoce); o esofagograma pode mostrar estenose irregular (\"maçã mordida\"). Estadiamento: tomografia de tórax e abdome (e pescoço nos tumores altos), PET-CT para metástases a distância, ecoendoscopia para T e N (melhor método locorregional) e broncoscopia nos tumores dos terços superior e médio (invasão da via aérea). São sinais de irressecabilidade: invasão de traqueia/brônquios, aorta ou corpos vertebrais (T4b), fístula traqueoesofágica e metástases a distância. Câncer precoce: restrito a mucosa e submucosa (T1).</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Disfagia progressiva + emagrecimento</div><div class=\"fluxo-resumo__passo\"><b>1. EDA com biópsia</b>: diagnóstico; <b>lugol</b> (área iodo-negativa) ajuda a achar CEC precoce; esofagograma mostra \"maçã mordida\" e fístula, mas não confirma</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>2. TC de tórax e abdome (± pescoço)</b>: primeiro exame de estadiamento: invasão local grosseira, linfonodos e metástases (fígado, pulmão)</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>3. PET-CT</b>: <b>M</b>: melhor para metástase a distância oculta (ENARE 2025); evita toracotomia inútil</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>4. Ecoendoscopia (EUS)</b>: <b>T e N</b>: melhor método locorregional (SES-PE); linfonodo metastático é <b>redondo, hipoecoico, &gt; 1 cm e de bordas nítidas</b>; permite punção</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Tumor em terço superior/médio, junto à carina</b>: <b>broncoscopia</b> (invasão de via aérea)</div><div class=\"fluxo-resumo__passo\"><b>Tumor da JEG/Siewert II–III</b>: <b>laparoscopia</b> diagnóstica (carcinomatose)</div></div></div><p><b>SES-PE</b>: o exame <b>menos</b> indicado para estadiar tumor de esôfago <b>médio</b> é a laparoscopia (reservada à JEG). Na SES-PE 2022, homem com disfagia, <b>tosse</b> e esofagograma com contraste passando para a árvore brônquica tem fístula: irressecável, a conduta é <b>endoprótese</b>.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/hcpa-rs/2022/2022-4c1910c0-q049-1.webp",
+            "legenda": "Esofagograma de homem de 57 anos com disfagia para sólidos e perda de 9 kg (HCPA-RS 2022): estenose irregular, de bordas \"em maçã mordida\" — carcinoma do esôfago.",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2022"
+          },
+          {
+            "url": "imagens/questoes/sespe/2022-q037-1.webp",
+            "legenda": "Esofagograma de homem de 66 anos com disfagia, tosse e perda de 13 kg (SES-PE 2022): contraste para a árvore brônquica = fístula esofagorrespiratória, irressecável, endoprótese.",
+            "fonte": "Imagem de questão de prova — SES-PE 2022"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2023/2023-3680be42-q002-1.webp",
+            "legenda": "Ecoendoscopia e EDA com lugol de CEC a 25 cm da ADS (USP-SP 2023): invade a muscular própria com 1 linfonodo suspeito, cT2N1 → quimiorradioterapia neoadjuvante e cirurgia.",
+            "fonte": "Imagem de questão de prova — USP-SP 2023"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2024/2024-b7193737-q012-2.webp",
+            "legenda": "PET-CT com captação no tumor do esôfago médio (SUV 13) e em linfonodos periesofágicos (USP-SP 2024): doença locorregional, sem metástase — neoadjuvância e esofagectomia transtorácica.",
+            "fonte": "Imagem de questão de prova — USP-SP 2024"
+          }
+        ]
       },
       {
-        "titulo": "Diagnóstico",
-        "conteudo": "Endoscopia digestiva alta com biópsias (cromoscopia com lugol aumenta a detecção do epidermoide precoce); o esofagograma pode mostrar estenose irregular (\"maçã mordida\"). Estadiamento: tomografia de tórax e abdome (e pescoço nos tumores altos), PET-CT para metástases a distância, ecoendoscopia para T e N (melhor método locorregional) e broncoscopia nos tumores dos terços superior e médio (invasão da via aérea). São sinais de irressecabilidade: invasão de traqueia/brônquios, aorta ou corpos vertebrais (T4b), fístula traqueoesofágica e metástases a distância. Câncer precoce: restrito a mucosa e submucosa (T1)."
+        "titulo": "TNM e classificação de Siewert",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>T (AJCC 8ª)</th><th>Invade</th></tr></thead><tbody><tr><td>Tis</td><td>Displasia de alto grau</td></tr><tr><td>T1a</td><td>Lâmina própria ou muscular da mucosa</td></tr><tr><td>T1b</td><td>Submucosa</td></tr><tr><td>T2</td><td><b>Muscular própria</b></td></tr><tr><td>T3</td><td><b>Adventícia</b> (o esôfago não tem serosa)</td></tr><tr><td>T4a</td><td>Ressecável: pleura, pericárdio, ázigos, diafragma, peritônio</td></tr><tr><td>T4b</td><td><b>Irressecável</b>: aorta, corpo vertebral, traqueia/brônquio (fístula)</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>N</th><th>Linfonodos regionais</th></tr></thead><tbody><tr><td>N1</td><td>1–2</td></tr><tr><td>N2</td><td>3–6</td></tr><tr><td>N3</td><td>≥ 7</td></tr></tbody></table></div><p>Questão clássica: tumor que ultrapassa a muscular (adventícia) com 4 linfonodos = <b>T3N2</b>. Siewert usa o <b>epicentro</b> do adenocarcinoma: I = 1–5 cm acima da JEG; II = 1 cm acima a 2 cm abaixo; III = 2–5 cm abaixo (ver figura na primeira seção).</p>"
       },
       {
-        "titulo": "Tratamento",
-        "conteudo": "Lesões T1a selecionadas: ressecção endoscópica (mucosectomia ou dissecção submucosa). Doença localmente avançada (T2 ou mais, ou N+): quimiorradioterapia neoadjuvante pelo protocolo CROSS (carboplatina + paclitaxel com radioterapia) seguida de esofagectomia; o epidermoide é mais radiossensível e pode atingir resposta patológica completa. Para o adenocarcinoma da JEG, a quimioterapia perioperatória (FLOT) é alternativa. Doença residual após CROSS e cirurgia: nivolumabe adjuvante. Técnicas: Ivor Lewis (laparotomia + toracotomia direita, anastomose intratorácica), McKeown (três campos: abdome, tórax e pescoço, anastomose cervical) e trans-hiatal (abdome e pescoço, sem toracotomia); o estômago tubulizado é o substituto preferido, irrigado pela artéria gastroepiploica direita. Siewert I e II: esofagectomia (ou esofagogastrectomia no II); Siewert III: gastrectomia total com esofagectomia distal. Complicação temida: fístula da anastomose (mais grave quando intratorácica). Paliação da disfagia: prótese metálica autoexpansível, radioterapia, quimioterapia e via alimentar (gastrostomia ou jejunostomia)."
+        "titulo": "Câncer precoce e ressecção endoscópica",
+        "conteudo": "<p>Câncer precoce = restrito a mucosa e submucosa (T1), com qualquer N na definição clássica; o risco de linfonodo é baixo em T1a (&lt; 5%) e sobe muito em T1b (20–40%).</p><div class=\"table-wrap\"><table><thead><tr><th>Critério de ressecção endoscópica curativa</th><th>CEC</th><th>Adenocarcinoma (Barrett)</th></tr></thead><tbody><tr><td>Profundidade</td><td>Até m2 (lâmina própria); m3/sm1 = relativa</td><td>Até <b>submucosa superficial &lt; 500 µm</b> (sm1)</td></tr><tr><td>Grau</td><td>Bem ou moderadamente diferenciado</td><td>Bem ou moderadamente diferenciado</td></tr><tr><td>Invasão linfovascular</td><td>Ausente</td><td>Ausente</td></tr><tr><td>Margem profunda</td><td>Livre (R0)</td><td>Livre (R0)</td></tr></tbody></table></div><p>Estratégia (simplificado): T1a, bem diferenciado, &lt; 2 cm, plano, sem invasão linfovascular → mucosectomia/dissecção submucosa; fora disso → esofagectomia. <b>USP-SP 2024</b>: Barrett M5C2 com nódulo e displasia de alto grau ressecado, laudo de adenocarcinoma — critério de cura é invasão submucosa <b>&lt; 500 µm</b>; indiferenciado, invasão angiolinfática ou margem profunda acometida = não curativo → cirurgia. Displasia de alto grau no Barrett: ressecção dos nódulos + ablação por radiofrequência (não esofagectomia).</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2024/2024-1c2529be-q116-1.webp",
+            "legenda": "Barrett longo com lesão nodular e displasia de alto grau em obeso com história familiar (USP-SP 2024): ressecção endoscópica, curativa se adenocarcinoma com invasão submucosa < 500 µm, bem diferenciado, sem invasão angiolinfática e margens livres.",
+            "fonte": "Imagem de questão de prova — USP-SP 2024"
+          }
+        ]
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Disfagia progressiva com perda de peso em paciente acima de 45–50 anos</span>, sobretudo tabagista, etilista ou com DRGE de longa data, exige endoscopia prioritária. Tosse ao deglutir sugere fístula traqueoesofágica (contraindica cirurgia curativa e radioterapia isolada; tratar com prótese)."
+        "titulo": "Tratamento do câncer localmente avançado",
+        "conteudo": "<div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Estadiado sem metástase</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>T1a selecionado</b>: ressecção endoscópica</div><div class=\"fluxo-resumo__passo\"><b>T1b–T2 N0 pequeno (&lt; 2 cm, bem diferenciado)</b>: esofagectomia direta com linfadenectomia</div><div class=\"fluxo-resumo__passo\"><b>T2 maior, T3–T4a ou N+</b>: <b>neoadjuvância + esofagectomia</b></div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>CEC</b>: <b>CROSS</b>: carboplatina + paclitaxel + RT 41,4 Gy, cirurgia 6–8 semanas depois (ENARE 2026: CEC T3N1; USP-SP 2023: cT2N1)</div><div class=\"fluxo-resumo__passo\"><b>Adenocarcinoma</b>: <b>FLOT</b> perioperatório (ENARE 2025: cT3N0) ou CROSS</div><div class=\"fluxo-resumo__passo\"><b>CEC cervical</b>: <b>quimiorradioterapia definitiva</b> (cirurgia mutilante; até 25% de resposta completa)</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Doença residual na peça após CROSS + cirurgia</b>: <b>nivolumabe adjuvante</b> por 1 ano (CheckMate 577)</div></div><p>Lesões T1a selecionadas: ressecção endoscópica (mucosectomia ou dissecção submucosa). Doença localmente avançada (T2 ou mais, ou N+): quimiorradioterapia neoadjuvante pelo protocolo CROSS (carboplatina + paclitaxel com radioterapia) seguida de esofagectomia; o epidermoide é mais radiossensível e pode atingir resposta patológica completa. Para o adenocarcinoma da JEG, a quimioterapia perioperatória (FLOT) é alternativa. Doença residual após CROSS e cirurgia: nivolumabe adjuvante. Técnicas: Ivor Lewis (laparotomia + toracotomia direita, anastomose intratorácica), McKeown (três campos: abdome, tórax e pescoço, anastomose cervical) e trans-hiatal (abdome e pescoço, sem toracotomia); o estômago tubulizado é o substituto preferido, irrigado pela artéria gastroepiploica direita. Siewert I e II: esofagectomia (ou esofagogastrectomia no II); Siewert III: gastrectomia total com esofagectomia distal. Complicação temida: fístula da anastomose (mais grave quando intratorácica). Paliação da disfagia: prótese metálica autoexpansível, radioterapia, quimioterapia e via alimentar (gastrostomia ou jejunostomia).</p><div class=\"table-wrap\"><table><thead><tr><th>Siewert</th><th>Cirurgia</th></tr></thead><tbody><tr><td>I</td><td>Neoadjuvância → esofagectomia subtotal transtorácica com gastrectomia proximal (tubo gástrico) e linfadenectomia em 2 campos — USP-SP 2017 e 2026</td></tr><tr><td>II</td><td>Esofagectomia (Ivor Lewis) ou gastrectomia total + esofagectomia distal, conforme extensão no esôfago</td></tr><tr><td>III</td><td><b>Gastrectomia total D2 + esofagectomia distal</b> transhiatal — não é indicação de esofagectomia (SES-PE 2024)</td></tr></tbody></table></div><p><b>Nutrição</b>: disfágico desnutrido em neoadjuvância recebe <b>jejunostomia</b> (ENARE 2023), não gastrostomia, para preservar o estômago que será o substituto. <b>USP-SP 2026</b>: adenocarcinoma distal com linfonodos regionais e sem metástase → neoadjuvância seguida de esofagectomia em dois campos.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2017/2017-9c7ab2e1-q002-1.webp",
+            "legenda": "TC de adenocarcinoma distal com linfonodomegalia periesofágica e sem metástase (USP-SP 2017): tratamento neoadjuvante seguido de esofagectomia transtorácica.",
+            "fonte": "Imagem de questão de prova — USP-SP 2017"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2026/2026-9120fb7e-q101-3.webp",
+            "legenda": "PET-CT com hipercaptação no esôfago distal e em linfonodos regionais (USP-SP 2026): adenocarcinoma localmente avançado → neoadjuvância + esofagectomia.",
+            "fonte": "Imagem de questão de prova — USP-SP 2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Técnicas de esofagectomia, substitutos e complicações",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Técnica</th><th>Acessos</th><th>Anastomose</th><th>Prova</th></tr></thead><tbody><tr><td><b>Ivor Lewis</b></td><td>Laparotomia + <b>toracotomia direita</b></td><td>Intratorácica</td><td>Tumores de terço médio/distal; fístula rara porém grave (mediastinite)</td></tr><tr><td><b>McKeown</b> (3 campos)</td><td>Toracotomia direita + laparotomia + cervicotomia</td><td>Cervical</td><td>Tumores mais altos; linfadenectomia mais ampla</td></tr><tr><td><b>Trans-hiatal</b> (Orringer)</td><td>Laparotomia + cervicotomia, sem toracotomia</td><td>Cervical</td><td>Distal/JEG, pacientes frágeis; linfadenectomia mediastinal limitada</td></tr><tr><td>Minimamente invasiva</td><td>Videotoracoscopia + laparoscopia</td><td>Ambas</td><td>Menos pneumonia; hoje preferida em centros experientes</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Substituto</th><th>Detalhe</th></tr></thead><tbody><tr><td><b>Estômago tubulizado</b> (1ª escolha)</td><td>Irrigado pela <b>gastroepiploica direita</b> (e gástrica direita); liga-se a gástrica esquerda e retira-se a pequena curvatura; o fundo, na grande curvatura alta, é a ponta que sobe — não se resseca</td></tr><tr><td>Cólon (interposição)</td><td>Quando o estômago não serve (gastrectomia prévia, cáustico)</td></tr><tr><td>Jejuno / íleo livre com anastomose microvascular</td><td><b>Menos usado</b>; reconstruções curtas, sobretudo cervicais</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Complicação</th><th>Pista</th></tr></thead><tbody><tr><td>Pneumonia</td><td>A mais comum</td></tr><tr><td>Fístula da anastomose</td><td>Cervical: mais frequente e benigna (drena no pescoço); intratorácica: rara e grave</td></tr><tr><td>Quilotórax</td><td>Lesão do ducto torácico: derrame leitoso com triglicerídeos &gt; 110 mg/dL</td></tr><tr><td>Lesão do recorrente</td><td>Rouquidão e aspiração, mais na anastomose cervical</td></tr><tr><td>Estenose da anastomose / necrose do tubo</td><td>Disfagia tardia; febre e choque precoces</td></tr></tbody></table></div>"
+      },
+      {
+        "titulo": "Doença irressecável e paliação",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Critério de irressecabilidade</th><th>Conduta</th></tr></thead><tbody><tr><td>Metástase a distância (fígado, pulmão, linfonodo não regional)</td><td>QT sistêmica (platina + fluoropirimidina) ± imunoterapia (nivolumabe/pembrolizumabe conforme PD-L1)</td></tr><tr><td>T4b: aorta, vértebra, via aérea</td><td>Quimiorradioterapia definitiva/paliativa</td></tr><tr><td><b>Fístula traqueoesofágica</b></td><td><b>Prótese metálica autoexpansível recoberta</b> (esofágica ± traqueal); não operar, não irradiar isoladamente</td></tr><tr><td>Disfagia grave</td><td>Prótese, braquiterapia ou RT; via alimentar alternativa</td></tr></tbody></table></div><p><span class=\"red-flag\">Disfagia progressiva com perda de peso em paciente acima de 45–50 anos</span>, sobretudo tabagista, etilista ou com DRGE de longa data, exige endoscopia prioritária. Tosse ao deglutir sugere fístula traqueoesofágica (contraindica cirurgia curativa e radioterapia isolada; tratar com prótese).</p>"
+      },
+      {
+        "titulo": "Tumores benignos do esôfago",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Tumor</th><th>Pistas</th><th>Conduta</th></tr></thead><tbody><tr><td><b>Leiomioma</b> (mais comum)</td><td>Subepitelial, terço médio/distal; EUS: hipoecoico da muscular própria; mucosa normal — não biopsiar se típico</td><td>Observar se pequeno e assintomático; <b>enucleação</b> se sintomático ou crescendo</td></tr><tr><td>Pólipo fibrovascular</td><td>Esôfago cervical, pediculado; pode ser regurgitado à boca e causar asfixia</td><td>Ressecção</td></tr><tr><td>Tumor de células granulares (Abrikossoff)</td><td>Placa amarelada, S-100 +</td><td>Ressecção endoscópica se sintomático</td></tr><tr><td>GIST</td><td>Raro no esôfago; CD117/DOG1</td><td>Ressecção</td></tr><tr><td>Papiloma escamoso</td><td>HPV, pequeno, verrucoso</td><td>Ressecção endoscópica</td></tr></tbody></table></div><p>Lesão subepitelial: a <b>ecoendoscopia</b> é o exame-chave (camada de origem, ecogenicidade, punção).</p>"
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Neoadjuvância no adenocarcinoma</td><td>Estratégia e muitas provas: CROSS para todos</td><td>ESOPEC (NEJM 2025): FLOT perioperatório aumentou a sobrevida em 3 anos (57% × 51%) frente ao CROSS; NCCN prefere FLOT em paciente apto</td><td>CEC → CROSS; adenocarcinoma → FLOT se for opção (ENARE 2025), CROSS se for a única</td></tr><tr><td>CEC do esôfago cervical</td><td>Estratégia: neoadjuvância, tentando poupar a cirurgia</td><td>NCCN: quimiorradioterapia definitiva é o padrão; cirurgia só no resgate</td><td>Quimiorradioterapia (definitiva)</td></tr><tr><td>Adjuvância após CROSS</td><td>Estratégia: não aborda</td><td>CheckMate 577: nivolumabe por 1 ano se houver doença residual na peça dobra a sobrevida livre de doença</td><td>Doença residual → nivolumabe</td></tr><tr><td>Critério de cura endoscópica</td><td>Estratégia: T1a, &lt; 2 cm, plano</td><td>ESGE 2022: adenocarcinoma até sm1 (&lt; 500 µm), bem/moderadamente diferenciado, sem invasão linfovascular, margem profunda livre; tamanho não é limite na ESD</td><td>&lt; 500 µm (USP-SP 2024)</td></tr><tr><td>Siewert II</td><td>Estratégia: gastrectomia total + esofagectomia distal preferida</td><td>JCOG 9502: via abdominal transhiatal se invasão esofágica &lt; 3 cm; extensão maior → Ivor Lewis</td><td>Gastrectomia total ampliada; esofagectomia se invadir muito o esôfago</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "Epidermoide: tabaco/álcool, terços médio e superior. Adenocarcinoma: Barrett/DRGE/obesidade, terço distal. Ecoendoscopia para T/N e PET-CT para metástases. CROSS = quimiorradioterapia neoadjuvante + cirurgia. Saber Siewert e as técnicas de esofagectomia (Ivor Lewis, McKeown, trans-hiatal). Tumor benigno mais comum: leiomioma."
+        "conteudo": "<p>Epidermoide: tabaco/álcool, terços médio e superior. Adenocarcinoma: Barrett/DRGE/obesidade, terço distal. Ecoendoscopia para T/N e PET-CT para metástases. CROSS = quimiorradioterapia neoadjuvante + cirurgia. Saber Siewert e as técnicas de esofagectomia (Ivor Lewis, McKeown, trans-hiatal). Tumor benigno mais comum: leiomioma.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">O que mais cai</span><ul><li>Tabagista e etilista com disfagia progressiva = CEC de terço médio; DRGE/Barrett/obeso = adenocarcinoma distal.</li><li>Acalasia, cáustico, tilose e Plummer-Vinson são fatores de CEC.</li><li>EUS para T e N; PET-CT para M; broncoscopia no terço médio/superior; laparoscopia só na JEG.</li><li>Tosse ao deglutir = fístula = irressecável → prótese (SES-PE 2022).</li><li>T2 = muscular própria; T3 = adventícia; N1 1–2, N2 3–6, N3 ≥ 7.</li><li>CROSS = carboplatina + paclitaxel + RT antes da cirurgia; FLOT perioperatório no adenocarcinoma.</li><li>Ivor Lewis = laparotomia + toracotomia direita; McKeown = 3 campos; trans-hiatal sem tórax.</li><li>Tubo gástrico vive da gastroepiploica direita; jejunostomia para nutrir na neoadjuvância.</li><li>Siewert III = gastrectomia total + esofagectomia distal (SES-PE 2024).</li></ul></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Doenças do Esôfago</b> (semana 18 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Perfuração Esofágica (Boerhaave)</li><li>Esofagites</li></ul>"
       }
     ],
-    "comoCai": "Cai muito o paciente tabagista e etilista com disfagia progressiva (epidermoide), o portador de DRGE/Barrett com tumor distal (adenocarcinoma), o estadiamento (ecoendoscopia, PET-CT, broncoscopia), a classificação de Siewert e a neoadjuvância (CROSS) seguida de esofagectomia.",
-    "prioridadeProva": "media"
+    "comoCai": [
+      "CEC × adenocarcinoma: local e fatores de risco (gráfico de incidência na SES-PE 2023)",
+      "Estadiamento: EUS para T/N, PET-CT para M, broncoscopia; TNM (T3N2)",
+      "Siewert e a cirurgia de cada tipo (SES-PE 2024)",
+      "Fístula traqueoesofágica = irressecável → prótese (SES-PE 2022)",
+      "Neoadjuvância: CROSS no CEC, FLOT no adenocarcinoma (ENARE 2025 e 2026)",
+      "Esofagectomias, tubo gástrico e gastroepiploica direita",
+      "Ressecção endoscópica do câncer precoce e critérios de cura"
+    ],
+    "prioridadeProva": "media",
+    "revisaoProvas": true
   },
   {
     "id": "cancer-gastrico",
