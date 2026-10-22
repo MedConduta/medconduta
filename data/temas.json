@@ -21382,30 +21382,71 @@
     "area": "residencia",
     "categoria": "Cardiologia",
     "titulo": "Eletrocardiograma: Interpretação Sistemática",
-    "resumo": "Roteiro sistemático de leitura do ECG (ritmo, frequência, eixo, intervalos, ondas) e os principais padrões eletrocardiográficos cobrados em prova.",
+    "resumo": "ECG como cai: roteiro em 9 passos (ritmo, eixo, FC, P, PR, QRS, ST, QT, T), valores normais (P 2,5 × 2,5 mm; PR 120–200 ms; QRS ≤ 120 ms; QT ≤ ~450 ms), sobrecargas (P mitrale, índice de Morris, Sokolow-Lyon &gt; 35 mm, strain), bloqueios de ramo pela polaridade de V1, BRD + BDAS no Chagas, causas de QRS largo, baixa voltagem e alternância elétrica, onda Q patológica, supra de ST e diferenciais (pericardite, repolarização precoce, Brugada, aneurisma, BRE, marca-passo), hipercalemia (T apiculada → QRS largo → P some) e hipocalemia (onda U), cálcio e QT, S1Q3T3 no TEP e síndrome de Wellens.",
     "revisado": true,
-    "fonte": "Braunwald's Heart Disease; Dubin, Interpretação Rápida do ECG",
+    "fonte": "Braunwald's Heart Disease; Dubin, Interpretação Rápida do ECG; Samesima N, et al. Diretriz da Sociedade Brasileira de Cardiologia sobre a análise e emissão de laudos eletrocardiográficos — 2022. Arq Bras Cardiol 2022;119:638-80; Thygesen K, et al. Fourth universal definition of myocardial infarction (2018). Circulation 2018;138:e618-51; Byrne RA, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720-826; Estratégia MED — Resumo Estratégico 2026: Eletrocardiograma",
     "secoes": [
       {
-        "titulo": "Roteiro sistemático de leitura",
-        "conteudo": "1) Ritmo: verificar se é sinusal (onda P positiva em DII, precedendo cada QRS, com PR constante). 2) Frequência cardíaca: regra dos 300/150/100/75/60/50 dividindo pelo número de quadrados grandes entre dois R, ou 1500 dividido pelo número de quadrados pequenos. 3) Eixo elétrico: analisar polaridade do QRS em DI e aVF. 4) Intervalos: PR (normal 120-200ms), QRS (normal <120ms), QT corrigido pela fórmula de Bazett. 5) Análise de onda P, complexo QRS e onda T em cada derivação, buscando alterações de morfologia.",
-        "imagem": {
-          "url": "imagens/ecg/ecg-ondas-intervalos.png",
-          "legenda": "Esquema das ondas e intervalos do ECG (P, complexo QRS, segmento ST, onda T, intervalos PR e QT), base do roteiro sistemático de leitura.",
-          "fonte": "Diagrama esquemático (ilustração)"
-        }
+        "titulo": "Papel, ondas e valores normais",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Elemento</th><th>Significado</th><th>Normal</th></tr></thead><tbody><tr><td>Papel</td><td>25 mm/s; calibração 10 mm = 1 mV</td><td>1 quadradinho = 40 ms e 0,1 mV; 1 quadradão = 200 ms</td></tr><tr><td><b>Onda P</b></td><td>Despolarização atrial (AD inicia, AE termina)</td><td>≤ 2,5 quadradinhos de duração e altura; positiva em DI, DII e aVF</td></tr><tr><td><b>Intervalo PR</b></td><td>Atraso no nó AV (filtro)</td><td><b>120–200 ms</b> (3–5 quadradinhos)</td></tr><tr><td><b>QRS</b></td><td>Despolarização ventricular</td><td>≤ 100–120 ms (≤ 3 quadradinhos)</td></tr><tr><td>Segmento ST</td><td>Do ponto J ao início da T</td><td>Isoelétrico</td></tr><tr><td><b>QT</b></td><td>Sístole elétrica (despolarização + repolarização)</td><td>QTc ≤ ~450 ms (homem) / 460–470 ms (mulher); curto &lt; 300–340 ms</td></tr><tr><td><b>Onda T</b></td><td>Repolarização; assimétrica (\"montanha-russa\"), mesma polaridade do QRS</td><td>&lt; 5 mm nos membros, &lt; 10 mm nas precordiais</td></tr><tr><td>Onda U</td><td>Inconstante, 10–20% da T</td><td>Aumenta em hipocalemia, bradicardia, hipotermia</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/resumos/cardio/ecg-intervalos-normais.png",
+            "legenda": "Ondas e intervalos do ECG normal com os valores de referência e a conversão do papel.",
+            "fonte": "Esquema elaborado para o MedConduta"
+          }
+        ]
       },
       {
-        "titulo": "Intervalo PR e bloqueios atrioventriculares",
-        "conteudo": "PR >200ms = BAV de 1º grau (todos os estímulos conduzem, apenas com atraso). BAV de 2º grau Mobitz I (Wenckebach): PR aumenta progressivamente até bloquear um estímulo — geralmente benigno, nodal. Mobitz II: PR constante com bloqueio súbito e imprevisível de um estímulo — indica doença infra-hissiana, maior risco de progressão para BAVT, geralmente necessita marca-passo. BAVT (3º grau): dissociação completa entre P e QRS, com ritmo de escape."
+        "titulo": "Roteiro de leitura: ritmo, eixo e frequência",
+        "conteudo": "<p>1) Ritmo: verificar se é sinusal (onda P positiva em DII, precedendo cada QRS, com PR constante). 2) Frequência cardíaca: regra dos 300/150/100/75/60/50 dividindo pelo número de quadrados grandes entre dois R, ou 1500 dividido pelo número de quadrados pequenos. 3) Eixo elétrico: analisar polaridade do QRS em DI e aVF. 4) Intervalos: PR (normal 120-200ms), QRS (normal <120ms), QT corrigido pela fórmula de Bazett. 5) Análise de onda P, complexo QRS e onda T em cada derivação, buscando alterações de morfologia.</p><div class=\"table-wrap\"><table><thead><tr><th>Passo</th><th>Como fazer</th></tr></thead><tbody><tr><td><b>Ritmo sinusal</b></td><td>P positiva em DI, DII e aVF, cada P gerando um QRS. P negativa em DI com aVR positivo = <b>troca de eletrodos dos braços</b>; P negativa antes do QRS em DII = ritmo atrial ectópico; P ausente/retrógrada = juncional</td></tr><tr><td><b>Eixo</b> (normal −30° a +90°)</td><td>Método dos quadrantes: DI e aVF positivos = normal. DI + e aVF − = desvio para a esquerda (BDAS, HVE, infarto inferior); DI − e aVF + = desvio para a direita (HVD, DPOC, TEP, infarto lateral, BDPI, dextrocardia). Ou ache a derivação isoelétrica: o eixo é perpendicular a ela</td></tr><tr><td><b>Frequência</b></td><td>Regular: 1.500 ÷ quadradinhos ou 300 ÷ quadradões entre dois R (300-150-100-75-60-50). Irregular: nº de QRS em 30 quadradões (6 s) × 10. Taquicardia &gt; 100; bradicardia &lt; 50 bpm (SBC)</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Como cai</span><ul><li>SES-RJ 2014: calcular a FC (resposta 75 bpm = 4 quadradões entre os R).</li><li>UNICAMP 2020: eixo da onda P em −120° = ritmo atrial ectópico baixo (P negativa em DII, DIII e aVF).</li></ul></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Definição de bradicardia</span><p><b>Provas/Estratégia:</b> Muitas questões: &lt; 60 bpm</p><p><b>Evidência atual:</b> Diretriz da SBC (laudos 2022): bradicardia sinusal &lt; 50 bpm</p><p><b>Na prova:</b> Veja a referência; a SBC usa 50</p></div>"
       },
       {
-        "titulo": "QRS largo e bloqueios de ramo",
-        "conteudo": "QRS ≥120ms indica bloqueio de ramo ou distúrbio de condução intraventricular. Bloqueio de ramo direito (BRD): padrão rSR' em V1 (\"orelhas de coelho\") e onda S alargada em DI e V6. Bloqueio de ramo esquerdo (BRE): QRS alargado, predominantemente negativo em V1, com onda R alargada e entalhada em DI, aVL, V5-V6 — mascara a análise de isquemia/infarto no ECG (critérios de Sgarbossa são usados para avaliar IAM na vigência de BRE)."
+        "titulo": "Sobrecargas e QRS: amplitude e duração",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Achado</th><th>Critério</th></tr></thead><tbody><tr><td>Sobrecarga atrial esquerda</td><td>P alargada (&gt; 120 ms) e bífida em DII (<b>P mitrale</b>, \"corcova de camelo\"); <b>índice de Morris</b> (componente negativo da P em V1 ≥ 1 mm × 40 ms) — estenose mitral (USP-SP 2021)</td></tr><tr><td>Sobrecarga atrial direita</td><td>P apiculada &gt; 2,5 mm em DII (<b>P pulmonale</b>) — DPOC, hipertensão pulmonar</td></tr><tr><td><b>HVE</b></td><td><b>Sokolow-Lyon</b>: S de V1 ou V2 + R de V5 ou V6 &gt; 35 mm; R em aVL alto; padrão <b>strain</b> (infra de ST e T invertida em V5–V6)</td></tr><tr><td><b>HVD</b></td><td>R dominante em V1 com QRS estreito, desvio do eixo para a direita, P pulmonale, strain de VD (T invertida V1–V4)</td></tr><tr><td>Baixa voltagem</td><td>QRS &lt; 5 mm em todas as derivações dos membros e &lt; 10 mm nas precordiais: <b>derrame pericárdico</b>, obesidade, DPOC, amiloidose, miocardiopatia terminal</td></tr><tr><td><b>Alternância elétrica</b></td><td>QRS alternando de amplitude = derrame pericárdico volumoso (coração \"sambando\"), sugere tamponamento</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Causas de QRS largo (&gt; 120 ms)</th><th>Causas de V1/V2 positivo (R dominante)</th></tr></thead><tbody><tr><td>Bloqueio de ramo (principal)</td><td>BRD</td></tr><tr><td><b>Hipercalemia</b></td><td>HVD / sobrecarga de VD</td></tr><tr><td>Intoxicação por tricíclicos (bloqueio de Na+)</td><td>Infarto <b>posterior</b> (infra de ST em V1–V3 = imagem em espelho)</td></tr><tr><td>Pré-excitação (WPW)</td><td>Cardiomiopatia hipertrófica, pré-excitação lateral esquerda</td></tr><tr><td>Marca-passo, hipotermia, ritmo ventricular</td><td>Dextrocardia, erro de eletrodo</td></tr></tbody></table></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Limite do QRS normal</span><p><b>Provas/Estratégia:</b> Estratégia: 100 ms; outras fontes: 120 ms</p><p><b>Evidência atual:</b> SBC 2022: QRS ≥ 120 ms = bloqueio de ramo completo; 110–119 ms = atraso/bloqueio incompleto</p><p><b>Na prova:</b> QRS &gt; 3 quadradinhos = largo</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/ufrj/2020/2020-b2e1c6ef-q018-1.webp",
+            "legenda": "UFRJ 2020: complexos de baixa amplitude difusamente — baixa voltagem, compatível com derrame pericárdico (hipofonese de bulhas).",
+            "fonte": "Imagem de questão de prova — UFRJ 2020"
+          },
+          {
+            "url": "imagens/questoes/hiae-sp/2014/2014-71139902-q008-1.webp",
+            "legenda": "HIAE-SP 2014: tabagista com DPOC — QRS largo com rSR' em V1 e S empastada em DI e V6: bloqueio de ramo direito.",
+            "fonte": "Imagem de questão de prova — HIAE-SP 2014"
+          }
+        ]
       },
       {
-        "titulo": "QT longo e alterações de repolarização",
-        "conteudo": "QT corrigido (QTc) >450ms (homens) ou >460-470ms (mulheres) define QT longo, que predispõe a Torsades de Pointes (taquicardia ventricular polimórfica). Causas: congênita (síndrome do QT longo), medicamentos (antiarrítmicos, antipsicóticos, macrolídeos), distúrbios eletrolíticos (hipocalemia, hipomagnesemia, hipocalcemia). Onda T apiculada sugere hipercalemia; onda U proeminente sugere hipocalemia.",
+        "titulo": "Bloqueios de ramo, bloqueios AV e extrassístoles",
+        "conteudo": "<p>QRS ≥120ms indica bloqueio de ramo ou distúrbio de condução intraventricular. Bloqueio de ramo direito (BRD): padrão rSR' em V1 (\"orelhas de coelho\") e onda S alargada em DI e V6. Bloqueio de ramo esquerdo (BRE): QRS alargado, predominantemente negativo em V1, com onda R alargada e entalhada em DI, aVL, V5-V6 — mascara a análise de isquemia/infarto no ECG (critérios de Sgarbossa são usados para avaliar IAM na vigência de BRE).</p><p>PR >200ms = BAV de 1º grau (todos os estímulos conduzem, apenas com atraso). BAV de 2º grau Mobitz I (Wenckebach): PR aumenta progressivamente até bloquear um estímulo — geralmente benigno, nodal. Mobitz II: PR constante com bloqueio súbito e imprevisível de um estímulo — indica doença infra-hissiana, maior risco de progressão para BAVT, geralmente necessita marca-passo. BAVT (3º grau): dissociação completa entre P e QRS, com ritmo de escape.</p><div class=\"table-wrap\"><table><thead><tr><th></th><th>BRD</th><th>BRE</th></tr></thead><tbody><tr><td>Dica rápida</td><td><b>V1 positivo</b> (rSR', \"orelha de coelho\")</td><td><b>V1 negativo</b> (QS ou rS)</td></tr><tr><td>Laterais (DI, aVL, V5–V6)</td><td>S larga e empastada</td><td>R larga, entalhada, sem q</td></tr><tr><td>Significado</td><td>Pode ser normal; TEP, Chagas, cardiopatia congênita</td><td>Sempre cardiopatia (HAS, isquemia, miocardiopatia); impede ler isquemia (usar Sgarbossa)</td></tr><tr><td>Chagas</td><td><b>BRD + BDAS</b> (desvio do eixo para a esquerda, DII/DIII/aVF negativos) — ~50% dos chagásicos; também BAV e TV</td><td>—</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Extrassístole</th><th>QRS</th><th>Onda P</th><th>Pausa</th></tr></thead><tbody><tr><td>Atrial</td><td>Estreito</td><td>Precoce, morfologia diferente</td><td>Não compensatória</td></tr><tr><td>Juncional</td><td>Estreito</td><td>Ausente ou retrógrada</td><td>Compensatória</td></tr><tr><td><b>Ventricular</b></td><td><b>Largo</b>, ST/T discordantes</td><td>Sem P</td><td><b>Compensatória</b> (UNIFESP 2020)</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/enare/2021/2021-ed0d3918-q059-1.webp",
+            "legenda": "ENARE 2021: FC 24 bpm com ondas P sem relação com os QRS (dissociação AV) e escape largo — bloqueio atrioventricular total.",
+            "fonte": "Imagem de questão de prova — ENARE 2021"
+          }
+        ]
+      },
+      {
+        "titulo": "Segmento ST, onda Q e diferenciais do supradesnível",
+        "conteudo": "<p>Supra isquêmico: ponto J ≥ 1 mm em duas derivações contíguas; em V2–V3, ≥ 2 mm em homem ≥ 40 anos, ≥ 2,5 mm em homem &lt; 40 anos e ≥ 1,5 mm na mulher. Infra isquêmico: ≥ 0,5 mm, horizontal ou descendente. <b>Onda Q patológica</b>: &gt; 40 ms, &gt; 2 mm ou &gt; 25% do QRS, ou qualquer Q em V1–V3, no território de uma coronária (necrose/área inativa).</p><div class=\"table-wrap\"><table><thead><tr><th>Parede</th><th>Derivações</th></tr></thead><tbody><tr><td>Anterosseptal / anterior</td><td>V1–V2 / V3–V4 (descendente anterior)</td></tr><tr><td>Lateral</td><td>DI, aVL, V5–V6 (circunflexa/diagonal)</td></tr><tr><td>Inferior</td><td>DII, DIII, aVF (coronária direita na maioria)</td></tr><tr><td>Posterior (dorsal)</td><td>Infra em V1–V3 com R alta; confirmar em V7–V9</td></tr><tr><td>VD</td><td>V3R–V4R (no infarto inferior)</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Supra de ST não isquêmico</th><th>Pistas</th></tr></thead><tbody><tr><td><b>Pericardite</b></td><td>Supra difuso côncavo (\"sorriso\") sem imagem em espelho + <b>infra de PR</b>; dor pleurítica que melhora sentado (UNICAMP 2021; USP-SP 2022)</td></tr><tr><td><b>Repolarização precoce</b></td><td>Jovem, assintomático; entalhe no ponto J (\"anzol\"), V2–V5, T concordante (UNIFESP 2020)</td></tr><tr><td><b>Brugada</b></td><td>Supra côncavo ≥ 2 mm em V1–V3 + T negativa, padrão de BRD</td></tr><tr><td>Aneurisma de VE</td><td>Supra persistente com onda Q após infarto anterior</td></tr><tr><td>BRE, HVE, marca-passo</td><td>Supra secundário, discordante do QRS</td></tr><tr><td>Hipercalemia, hipotermia (onda J de Osborn), TEP</td><td>Contexto clínico</td></tr></tbody></table></div><p>SES-PE 2013: hipocalcemia <b>não</b> causa supra de ST (alonga o ST e o QT).</p><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — BRE novo com dor torácica</span><p><b>Provas/Estratégia:</b> \"BRE novo = equivalente de IAM com supra\"</p><p><b>Evidência atual:</b> AHA 2013/ESC 2023: BRE isolado não é equivalente automático; usar Sgarbossa (ou Smith-Sgarbossa); com instabilidade ou sintomas persistentes, estratégia de angioplastia primária (ESC 2023)</p><p><b>Na prova:</b> Na prova, BRE novo + dor clássica ainda costuma ser tratado como IAMCSST</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unicamp/2021/2021-6bc5f73f-q019-1.webp",
+            "legenda": "UNICAMP 2021: dor torácica pleurítica com febre — supradesnível de ST difuso e côncavo com infra de PR: pericardite aguda.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2021"
+          },
+          {
+            "url": "imagens/questoes/unifesp/2020/2020-815558d6-q001-1.webp",
+            "legenda": "UNIFESP 2020: homem de 40 anos assintomático — supra de ST discreto com entalhe no ponto J nas precordiais: repolarização precoce.",
+            "fonte": "Imagem de questão de prova — UNIFESP 2020"
+          }
+        ]
+      },
+      {
+        "titulo": "Onda T: potássio, cálcio e isquemia",
+        "conteudo": "<p>QT corrigido (QTc) >450ms (homens) ou >460-470ms (mulheres) define QT longo, que predispõe a Torsades de Pointes (taquicardia ventricular polimórfica). Causas: congênita (síndrome do QT longo), medicamentos (antiarrítmicos, antipsicóticos, macrolídeos), distúrbios eletrolíticos (hipocalemia, hipomagnesemia, hipocalcemia). Onda T apiculada sugere hipercalemia; onda U proeminente sugere hipocalemia.</p><div class=\"table-wrap\"><table><thead><tr><th>Distúrbio</th><th>ECG</th></tr></thead><tbody><tr><td><b>Hipercalemia</b> (o mais cobrado)</td><td>\"A T sobe com o K\": <b>T apiculada, simétrica, de base estreita</b> (em tenda) → PR longo e <b>P achatada/ausente</b> → <b>QRS largo</b> → padrão sinusoidal → FV/assistolia. Conduta urgente: <b>gluconato de cálcio</b> (USP-SP 2022)</td></tr><tr><td><b>Hipocalemia</b></td><td>T achatada, <b>onda U proeminente</b>, infra de ST, P aumentada, QT(U) longo</td></tr><tr><td>Hipocalcemia</td><td><b>ST alongado → QT longo</b>, T normal</td></tr><tr><td>Hipercalcemia</td><td><b>QT curto</b> (SCM-SP 2023)</td></tr><tr><td>Hipotermia</td><td><b>Onda J de Osborn</b>, bradicardia, QT longo</td></tr><tr><td>Digoxina</td><td>Infra de ST \"em colher\", QT curto</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Onda T e isquemia</th><th>Pontos</th></tr></thead><tbody><tr><td>T hiperaguda</td><td>Primeira alteração do IAMCSST: alta, simétrica e larga — repetir ECG em 30 min se dor persiste</td></tr><tr><td>T invertida isquêmica</td><td>&gt; 1 mm, em ≥ 2 derivações contíguas. Outras causas: criança (padrão juvenil), bloqueio de ramo, strain de HVE/HVD, TEP</td></tr><tr><td><b>Síndrome de Wellens</b></td><td>T bifásica (positiva-negativa) ou profundamente invertida em <b>V2–V3</b> em paciente <b>sem dor no momento</b>, após angina: estenose crítica da <b>descendente anterior</b> → cateterismo, não teste de esforço (PUC-PR 2024)</td></tr><tr><td>T bifásica</td><td>Positiva → negativa = isquemia; negativa → positiva = hipocalemia</td></tr></tbody></table></div>",
         "imagens": [
           {
             "url": "imagens/questoes/usp-sp/2025/2025-85907cec-q015-1.webp",
@@ -21416,25 +21457,70 @@
             "url": "imagens/questoes/usp-sp/2025/2025-85907cec-q058-1.webp",
             "legenda": "ECG: segmento ST prolongado com intervalo QT longo e onda T normal — hipocalcemia.",
             "fonte": "Imagem de questão de prova — USP-SP 2025"
+          },
+          {
+            "url": "imagens/questoes/ufrj/2025/2025-aee29aee-q049-1.webp",
+            "legenda": "UFRJ 2025: (A) T apiculada = hipercalemia; (B) onda U após a T = hipocalemia; (C) onda J de Osborn (setas) = hipotermia.",
+            "fonte": "Imagem de questão de prova — UFRJ 2025"
+          },
+          {
+            "url": "imagens/questoes/puc-pr/2024/2024-4914a432-q006-1.webp",
+            "legenda": "PUC-PR 2024: após angina já resolvida, ondas T profundamente invertidas e simétricas em V2–V4 — síndrome de Wellens (lesão crítica da descendente anterior).",
+            "fonte": "Imagem de questão de prova — PUC-PR 2024"
           }
         ]
       },
       {
-        "titulo": "Padrões de emergência a reconhecer",
-        "conteudo": "Supradesnivelamento do segmento ST (IAMCSST): convexidade para cima em derivações contíguas correspondendo a um território coronariano. Onda T apiculada simétrica + QRS alargado + achatamento de onda P (em casos graves) = hipercalemia. Padrão S1Q3T3 (onda S em DI, onda Q e T invertida em DIII) sugere sobrecarga aguda de VD, clássico do TEP maciço, embora pouco sensível. Alternância elétrica sugere derrame pericárdico volumoso/tamponamento."
+        "titulo": "Intervalo QT e padrões de emergência",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>QT longo (&gt; 460 ms)</th><th>QT curto (&lt; 300 ms)</th></tr></thead><tbody><tr><td>Hipocalcemia, hipocalemia, hipomagnesemia</td><td><b>Hipercalcemia</b></td></tr><tr><td>Antiarrítmicos (amiodarona, sotalol), macrolídeos, quinolonas, antipsicóticos, antieméticos, antimaláricos</td><td><b>Digitálicos</b></td></tr><tr><td>QT longo congênito, hipotireoidismo, HIC, hipotermia</td><td>QT curto congênito, hipertermia, acidose</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Medir rápido</span><ul><li>Trace uma linha no meio do intervalo R–R: se a T não passa dessa linha, o QT é normal.</li><li>QT &gt; 500 ms = alto risco de <b>torsades de pointes</b> (ENARE 2026: entre as drogas, a <b>digoxina</b> é a que não se associa isoladamente à torsades).</li></ul></div><p>Supradesnivelamento do segmento ST (IAMCSST): convexidade para cima em derivações contíguas correspondendo a um território coronariano. Onda T apiculada simétrica + QRS alargado + achatamento de onda P (em casos graves) = hipercalemia. Padrão S1Q3T3 (onda S em DI, onda Q e T invertida em DIII) sugere sobrecarga aguda de VD, clássico do TEP maciço, embora pouco sensível. Alternância elétrica sugere derrame pericárdico volumoso/tamponamento.</p><div class=\"table-wrap\"><table><thead><tr><th>ECG no TEP</th><th>Frequência</th></tr></thead><tbody><tr><td><b>Taquicardia sinusal</b></td><td>Achado <b>mais comum</b> (~44%)</td></tr><tr><td>Inversão de T em V1–V4 + parede inferior simultânea</td><td>Mais específico (raro)</td></tr><tr><td>S1Q3T3</td><td>~20%; sensibilidade 54% e especificidade 62% — mas em prova \"S1Q3T3 = TEP\"</td></tr><tr><td>BRD novo, P pulmonale, desvio do eixo para a direita, rotação horária, FA/flutter</td><td>Sinais de sobrecarga aguda de VD</td></tr></tbody></table></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — S1Q3T3 no TEP</span><p><b>Provas/Estratégia:</b> Padrão clássico de TEP</p><p><b>Evidência atual:</b> Pouco sensível e específico; o achado mais comum é a taquicardia sinusal</p><p><b>Na prova:</b> \"Mais comum\" = taquicardia sinusal; \"clássico\" = S1Q3T3</p></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Correção do QT</span><p><b>Provas/Estratégia:</b> Bazett</p><p><b>Evidência atual:</b> Bazett superestima o QTc em FC alta; Fridericia ou Framingham são mais precisas</p><p><b>Na prova:</b> Prova usa Bazett</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/enare/2026/2026-54afcddf-q022-1.webp",
+            "legenda": "ENARE 2026: TV polimórfica com QRS mudando de amplitude ciclicamente — torsades de pointes, ligada a drogas que prolongam o QT.",
+            "fonte": "Imagem de questão de prova — ENARE 2026"
+          }
+        ]
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "O reconhecimento visual rápido de supradesnível de ST com território coronariano correspondente (ex.: DII/DIII/aVF = parede inferior, V1-V4 = parede anterior) é o item mais cobrado em provas de emergência. Diferenciação entre Mobitz I (benigno, observação) e Mobitz II (grave, indicação de marca-passo) é armadilha clássica."
+        "conteudo": "<p>O reconhecimento visual rápido de supradesnível de ST com território coronariano correspondente (ex.: DII/DIII/aVF = parede inferior, V1-V4 = parede anterior) é o item mais cobrado em provas de emergência. Diferenciação entre Mobitz I (benigno, observação) e Mobitz II (grave, indicação de marca-passo) é armadilha clássica.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Mnemônicos</span><ul><li>\"O potássio e a onda T andam juntos; a P é do contra.\"</li><li>Hipercalemia: \"uma mão puxa a T para cima — o QRS alarga e a P some\".</li><li>V1 para cima = BRD; V1 para baixo = BRE.</li></ul></div>"
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Limite do QRS normal</td><td>Estratégia: 100 ms; outras fontes: 120 ms</td><td>SBC 2022: QRS ≥ 120 ms = bloqueio de ramo completo; 110–119 ms = atraso/bloqueio incompleto</td><td>QRS &gt; 3 quadradinhos = largo</td></tr><tr><td>Definição de bradicardia</td><td>Muitas questões: &lt; 60 bpm</td><td>Diretriz da SBC (laudos 2022): bradicardia sinusal &lt; 50 bpm</td><td>Veja a referência; a SBC usa 50</td></tr><tr><td>BRE novo com dor torácica</td><td>\"BRE novo = equivalente de IAM com supra\"</td><td>AHA 2013/ESC 2023: BRE isolado não é equivalente automático; usar Sgarbossa (ou Smith-Sgarbossa); com instabilidade ou sintomas persistentes, estratégia de angioplastia primária (ESC 2023)</td><td>Na prova, BRE novo + dor clássica ainda costuma ser tratado como IAMCSST</td></tr><tr><td>S1Q3T3 no TEP</td><td>Padrão clássico de TEP</td><td>Pouco sensível e específico; o achado mais comum é a taquicardia sinusal</td><td>\"Mais comum\" = taquicardia sinusal; \"clássico\" = S1Q3T3</td></tr><tr><td>Correção do QT</td><td>Bazett</td><td>Bazett superestima o QTc em FC alta; Fridericia ou Framingham são mais precisas</td><td>Prova usa Bazett</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Arritmias I (Taquiarritmias)</b> (semana 25 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Bloqueios de Ramo</li></ul>"
       }
     ],
-    "comoCai": "Cai como imagem de traçado de ECG pedindo identificação de ritmo, bloqueio ou padrão isquêmico, sempre exigindo o raciocínio sistemático de leitura.",
-    "mnemonicos": [],
-    "prioridadeProva": "media"
+    "comoCai": [
+      "Ritmo sinusal: P positiva em DI, DII, aVF",
+      "FC = 1.500 ÷ quadradinhos; 300 ÷ quadradões",
+      "Eixo por DI e aVF",
+      "PR 120–200 ms; QRS ≤ 120 ms",
+      "V1 positivo = BRD; negativo = BRE",
+      "Chagas: BRD + BDAS",
+      "Sokolow-Lyon > 35 mm e strain na HVE",
+      "Baixa voltagem e alternância: derrame pericárdico",
+      "Pericardite: supra difuso côncavo + infra de PR",
+      "Hipercalemia: T apiculada, QRS largo, P some",
+      "Hipocalemia: onda U; cálcio mexe no QT",
+      "TEP: taquicardia sinusal (comum), S1Q3T3 (clássico)",
+      "Wellens: T em V2–V3 sem dor = descendente anterior crítica"
+    ],
+    "mnemonicos": [
+      {
+        "palavra": "K e T andam juntos; P é do contra",
+        "explicacao": "Na hipercalemia a T sobe e a P some; na hipocalemia a T achata, aparece a onda U e a P aumenta."
+      },
+      {
+        "palavra": "300-150-100-75-60-50",
+        "explicacao": "FC pelo número de quadradões entre dois R (1, 2, 3, 4, 5, 6)."
+      }
+    ],
+    "prioridadeProva": "media",
+    "revisaoProvas": true
   },
   {
     "id": "doencas-neuromusculares",
