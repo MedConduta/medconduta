@@ -7899,31 +7899,27 @@
     "area": "residencia",
     "categoria": "Cirurgia Geral",
     "titulo": "Abdome Agudo Vascular: Isquemia Mesentérica Aguda",
-    "resumo": "Dor desproporcional ao exame físico como pista central, diagnóstico por angiotomografia e revascularização de urgência.",
+    "resumo": "Abdome agudo vascular como cai: anatomia mesentérica (tronco celíaco, AMS, AMI, arcada de Riolan, pontos de Griffiths e Sudeck), as quatro causas de isquemia mesentérica aguda (embolia, trombose arterial, trombose venosa, não oclusiva) com a dor desproporcional ao exame, angiotomografia e conduta (heparina, revascularização, ressecção e second look), colite isquêmica e angina mesentérica.",
     "revisado": true,
-    "fonte": "Colégio Brasileiro de Cirurgiões; ESVS Clinical Practice Guidelines on Mesenteric Ischemia",
+    "fonte": "Colégio Brasileiro de Cirurgiões; ESVS Clinical Practice Guidelines on Mesenteric Ischemia; Björck M, et al. Editor's Choice — Management of the Diseases of Mesenteric Arteries and Veins: Clinical Practice Guidelines of the ESVS. Eur J Vasc Endovasc Surg 2017;53:460-510; Bala M, et al. Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery. World J Emerg Surg 2022;17:54; Brandt LJ, et al. ACG Clinical Guideline: Epidemiology, Risk Factors, Patterns of Presentation, Diagnosis, and Management of Colon Ischemia. Am J Gastroenterol 2015;110:18-44; Clair DG, Beach JM. Mesenteric Ischemia. N Engl J Med 2016;374:959-68; Estratégia MED — Resumo Estratégico 2026: Abdome Agudo Vascular",
     "mnemonicos": [
       {
         "palavra": "Dor desproporcional",
         "explicacao": "Na isquemia mesentérica aguda, a dor relatada pelo paciente é desproporcionalmente intensa em relação aos achados discretos do exame físico abdominal — essa dissociação é a principal pista clínica na fase inicial, antes da necrose transmural."
+      },
+      {
+        "palavra": "EM-TO-NO-VE",
+        "explicacao": "Causas de isquemia mesentérica aguda em ordem de frequência: EMbolia, Trombose arterial, Não Oclusiva, VEnosa."
+      },
+      {
+        "palavra": "Angina mesentérica: dor, medo e magreza",
+        "explicacao": "Dor pós-prandial, medo de comer e emagrecimento."
       }
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia",
-        "conteudo": "A isquemia mesentérica aguda resulta mais comumente de embolia (geralmente de origem cardíaca, como fibrilação atrial) ou trombose de artéria mesentérica superior sobre placa aterosclerótica preexistente, ou, menos frequentemente, de isquemia não oclusiva (baixo fluxo esplâncnico por choque/vasoconstrição em pacientes gravemente enfermos) ou trombose venosa mesentérica. A progressão para infarto intestinal transmural com necrose e perfuração ocorre rapidamente se a perfusão não for restaurada, tornando essa condição uma das emergências abdominais mais letais quando o diagnóstico é tardio.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Mecanismo</th><th>Fonte/fator de risco típico</th><th>Perfil de instalação</th></tr></thead><tbody><tr><td>Embolia arterial (mais comum)</td><td>Fibrilação atrial, trombo mural pós-IAM, valvopatia</td><td>Dor súbita e muito intensa, sem história vascular prévia</td></tr><tr><td>Trombose arterial</td><td>Placa aterosclerótica preexistente em artéria mesentérica</td><td>Frequentemente história prévia de \"angina mesentérica\" (dor pós-prandial, emagrecimento)</td></tr><tr><td>Isquemia não oclusiva</td><td>Baixo fluxo esplâncnico em paciente grave (choque, vasoconstritores em altas doses)</td><td>Paciente já internado/grave, quadro insidioso</td></tr><tr><td>Trombose venosa mesentérica</td><td>Estados de hipercoagulabilidade, neoplasia, cirrose com hipertensão porta</td><td>Instalação mais lenta e progressiva</td></tr></tbody></table></div>"
-      },
-      {
-        "titulo": "Quadro clínico",
-        "conteudo": "Dor abdominal de início súbito, intensa e desproporcional aos achados do exame físico (que inicialmente pode ser relativamente benigno, sem sinais evidentes de irritação peritoneal apesar da dor intensa) é a apresentação clássica e a pista clínica mais valorizada — essa dissociação entre dor intensa e exame físico pouco alterado nas fases iniciais é a chave para o diagnóstico precoce, antes que a necrose transmural se instale."
-      },
-      {
-        "titulo": "Exame físico",
-        "conteudo": "Nas fases iniciais, o abdome pode estar apenas discretamente distendido e sem sinais de irritação peritoneal significativos, apesar da dor intensa relatada pelo paciente — essa dissociação clínica (dor desproporcional ao exame) é o achado semiológico mais valorizado do tema. Sinais de irritação peritoneal franca (defesa, descompressão dolorosa) surgem apenas em fases mais avançadas, já com necrose transmural estabelecida, indicando pior prognóstico."
-      },
-      {
-        "titulo": "Diagnóstico",
-        "conteudo": "A angiotomografia de abdome é o exame de escolha, permitindo visualizar a oclusão vascular e sinais precoces de sofrimento intestinal (pneumatose intestinal, gás em sistema porta, redução de captação de contraste pela parede intestinal). O lactato sérico elevado é marcador de isquemia tecidual em curso, mas sua elevação é achado tardio e não deve ser aguardado para iniciar a investigação diante de forte suspeita clínica.",
+        "titulo": "Anatomia vascular que cai",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Artéria</th><th>Ramos</th><th>Território</th></tr></thead><tbody><tr><td><b>Tronco celíaco</b></td><td>Gástrica esquerda, hepática comum, esplênica (ENARE 2022)</td><td>Intestino anterior: estômago, fígado, vesícula, pâncreas, duodeno proximal</td></tr><tr><td><b>Mesentérica superior (AMS)</b></td><td>Pancreaticoduodenal inferior, jejunais e ileais, ileocólica, cólica direita, <b>cólica média</b></td><td>Intestino médio: duodeno distal, todo o delgado, até 2/3 do transverso</td></tr><tr><td><b>Mesentérica inferior (AMI)</b></td><td><b>Cólica esquerda, sigmoideas, retal superior</b> (ENARE 2021)</td><td>Intestino posterior: 1/3 distal do transverso ao reto alto</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Pegadinhas de anatomia</span><ul><li><b>Arcada de Riolan</b>: liga a AMS (cólica média) à AMI (cólica esquerda) (SES-PE 2017; ENARE 2022 diz que deriva da AMS).</li><li>Zonas de transição: <b>Griffiths</b> (flexura esplênica, a mais sensível à isquemia: SES-PE 2019) e <b>Sudeck</b> (retossigmoide).</li><li>Entre a AMS e a aorta passam a <b>veia renal esquerda</b> e a 3ª porção do duodeno (SES-PE 2021; a questão de 2017 trouxe 2ª porção) → quebra-nozes e síndrome de Wilkie.</li><li>O íleo tem mais arcadas e vasos retos mais curtos que o jejuno (SES-PE 2012).</li><li>Ligamento arqueado mediano passa <b>acima</b> do tronco celíaco; quando baixo, comprime o tronco (síndrome de Dunbar) (SES-PE 2021).</li><li>Ligadura da AMI na correção de aneurisma de aorta → isquemia do sigmoide.</li></ul></div>",
         "imagens": [
           {
             "url": "imagens/questoes/unicamp/2025/2025-40c8550e-q036-1.webp",
@@ -7933,24 +7929,92 @@
         ]
       },
       {
-        "titulo": "Tratamento",
-        "conteudo": "O tratamento definitivo depende do mecanismo: revascularização (embolectomia, trombectomia, ou terapia endovascular) para restaurar o fluxo mesentérico o mais rápido possível, associada a ressecção do segmento intestinal já necrótico quando presente. Anticoagulação sistêmica é iniciada precocemente na maioria dos casos. O atraso no diagnóstico e tratamento é o principal determinante de mortalidade, que permanece elevada mesmo com tratamento adequado quando o reconhecimento não é precoce."
+        "titulo": "Isquemia mesentérica aguda: causas e clínica",
+        "conteudo": "<p>A isquemia mesentérica aguda resulta mais comumente de embolia (geralmente de origem cardíaca, como fibrilação atrial) ou trombose de artéria mesentérica superior sobre placa aterosclerótica preexistente, ou, menos frequentemente, de isquemia não oclusiva (baixo fluxo esplâncnico por choque/vasoconstrição em pacientes gravemente enfermos) ou trombose venosa mesentérica. A progressão para infarto intestinal transmural com necrose e perfuração ocorre rapidamente se a perfusão não for restaurada, tornando essa condição uma das emergências abdominais mais letais quando o diagnóstico é tardio.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Mecanismo</th><th>Fonte/fator de risco típico</th><th>Perfil de instalação</th></tr></thead><tbody><tr><td>Embolia arterial (mais comum)</td><td>Fibrilação atrial, trombo mural pós-IAM, valvopatia</td><td>Dor súbita e muito intensa, sem história vascular prévia</td></tr><tr><td>Trombose arterial</td><td>Placa aterosclerótica preexistente em artéria mesentérica</td><td>Frequentemente história prévia de \"angina mesentérica\" (dor pós-prandial, emagrecimento)</td></tr><tr><td>Isquemia não oclusiva</td><td>Baixo fluxo esplâncnico em paciente grave (choque, vasoconstritores em altas doses)</td><td>Paciente já internado/grave, quadro insidioso</td></tr><tr><td>Trombose venosa mesentérica</td><td>Estados de hipercoagulabilidade, neoplasia, cirrose com hipertensão porta</td><td>Instalação mais lenta e progressiva</td></tr></tbody></table></div></p><div class=\"table-wrap\"><table><thead><tr><th></th><th>Embolia (≈ 50%)</th><th>Trombose arterial (15–25%)</th><th>Não oclusiva (20–30%)</th><th>Trombose venosa (≈ 5%)</th></tr></thead><tbody><tr><td>Quem</td><td><b>FA</b>, IAM recente, valvopatia, endocardite</td><td>Aterosclerose difusa: tabagista, DM, coronariopata, claudicação (SUS-BA 2021)</td><td>Paciente grave: choque, IC, vasopressor, digoxina, diálise, cocaína, pós-CEC</td><td>Jovem com trombofilia, ACO, neoplasia, cirrose/hipertensão porta, pancreatite</td></tr><tr><td>Onde</td><td>AMS 3–10 cm da origem, após a cólica média (poupa jejuno proximal)</td><td><b>Origem</b> da AMS ou tronco celíaco, com colaterais</td><td>Vasoespasmo difuso de ramos da AMS</td><td>Veia mesentérica superior, porta; delgado distal</td></tr><tr><td>Início</td><td>Súbito, dor desproporcional</td><td>Súbito sobre angina mesentérica prévia (dor pós-prandial, medo de comer, emagrecimento)</td><td>Insidioso, mascarado por sedação; distensão, sangue nas fezes (ENARE 2025)</td><td>Lento, 5–14 dias, dor surda</td></tr><tr><td>Prognóstico</td><td>Mortalidade alta</td><td>Pior que embolia</td><td><b>Maior mortalidade</b> (70–90%)</td><td>Melhor (10–20%)</td></tr></tbody></table></div><p>Dor abdominal de início súbito, intensa e desproporcional aos achados do exame físico (que inicialmente pode ser relativamente benigno, sem sinais evidentes de irritação peritoneal apesar da dor intensa) é a apresentação clássica e a pista clínica mais valorizada — essa dissociação entre dor intensa e exame físico pouco alterado nas fases iniciais é a chave para o diagnóstico precoce, antes que a necrose transmural se instale.</p><p>Nas fases iniciais, o abdome pode estar apenas discretamente distendido e sem sinais de irritação peritoneal significativos, apesar da dor intensa relatada pelo paciente — essa dissociação clínica (dor desproporcional ao exame) é o achado semiológico mais valorizado do tema. Sinais de irritação peritoneal franca (defesa, descompressão dolorosa) surgem apenas em fases mais avançadas, já com necrose transmural estabelecida, indicando pior prognóstico.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Laboratório (alterações tardias)</span><ul><li>Leucocitose, <b>acidose metabólica</b> (PSU-MG 2023), lactato alto, hemoconcentração, amilase, fosfato, LDH, CK e D-dímero elevados.</li><li>Abdome flácido, quase indolor, com taquicardia e lactato alto = pensar em isquemia (SES-PE 2014, 2017).</li><li>Lactato normal não exclui; D-dímero normal torna o diagnóstico pouco provável.</li></ul></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2024/2024-6c3b1a7a-q038-1.webp",
+            "legenda": "Alças com parede espessada e pouco realce em paciente grave, sem oclusão de grandes vasos (USP-SP 2024): isquemia mesentérica não oclusiva.",
+            "fonte": "Imagem de questão de prova — USP-SP 2024"
+          }
+        ]
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor abdominal intensa e desproporcional ao exame físico em paciente com fibrilação atrial ou doença aterosclerótica conhecida</span> deve levantar suspeita imediata de isquemia mesentérica aguda, com investigação de imagem urgente — o retardo diagnóstico até o surgimento de sinais peritoneais francos já reflete necrose intestinal estabelecida e pior prognóstico."
+        "titulo": "Diagnóstico por imagem",
+        "conteudo": "<p>A angiotomografia de abdome é o exame de escolha, permitindo visualizar a oclusão vascular e sinais precoces de sofrimento intestinal (pneumatose intestinal, gás em sistema porta, redução de captação de contraste pela parede intestinal). O lactato sérico elevado é marcador de isquemia tecidual em curso, mas sua elevação é achado tardio e não deve ser aguardado para iniciar a investigação diante de forte suspeita clínica.</p><div class=\"table-wrap\"><table><thead><tr><th>Exame</th><th>Papel</th><th>Achados</th></tr></thead><tbody><tr><td><b>Angiotomografia</b></td><td>Exame inicial de escolha (ENARE 2022), com fase arterial e venosa</td><td>Embolia: falha arredondada (menisco) distal, sem colaterais; trombose: oclusão calcificada na origem, com colaterais; venosa: falha na VMS e grande espessamento de parede</td></tr><tr><td>Arteriografia</td><td>Padrão-ouro clássico; diagnóstico e tratamento da não oclusiva (papaverina)</td><td>Não oclusiva: ramos em <b>colar de contas</b>, sem blush</td></tr><tr><td>Radiografia</td><td>Inespecífica e tardia</td><td>Íleo, alças espessadas (impressões digitais), pneumatose, pneumoperitônio</td></tr><tr><td>Doppler</td><td>Rastreio da isquemia crônica, não da aguda</td><td>Não é padrão-ouro (SES-PE 2018)</td></tr><tr><td>Colonoscopia</td><td>Colite isquêmica</td><td>Mucosa segmentar, nódulos azulados, reto poupado</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Sinais de isquemia avançada (= laparotomia)</span><ul><li><b>Pneumatose intestinal</b>, <b>gás no sistema porta</b> (aeroportograma), pneumoperitônio, ausência de realce da parede.</li><li>Peritonite e instabilidade.</li></ul></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/ufrj/2021/2021-3e078460-q041-1.webp",
+            "legenda": "Gás nos ramos portais intra-hepáticos em idoso com dor súbita (UFRJ 2021): aeroportograma, sinal de isquemia mesentérica avançada.",
+            "fonte": "Imagem de questão de prova — UFRJ 2021"
+          },
+          {
+            "url": "imagens/questoes/ufrj/2021/2021-3e078460-q041-2.webp",
+            "legenda": "Ar na parede das alças (UFRJ 2021): pneumatose intestinal por isquemia mesentérica.",
+            "fonte": "Imagem de questão de prova — UFRJ 2021"
+          },
+          {
+            "url": "imagens/questoes/sus-ba/2021/2021-2eae5a67-q022-1.webp",
+            "legenda": "Cortes de TC com falha de enchimento da AMS em idosa aterosclerótica sem peritonite (SUS-BA 2021): isquemia mesentérica aguda, revascularização.",
+            "fonte": "Imagem de questão de prova — SUS-BA 2021"
+          },
+          {
+            "url": "imagens/questoes/hcpa-rs/2022/2022-5117f1d9-q010-1.webp",
+            "legenda": "Angiotomografia com interrupção abrupta da AMS após procedimento endovascular (HCPA-RS 2022): isquemia mesentérica aguda embólica.",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2022"
+          }
+        ]
+      },
+      {
+        "titulo": "Tratamento da isquemia mesentérica aguda",
+        "conteudo": "<p>O tratamento definitivo depende do mecanismo: revascularização (embolectomia, trombectomia, ou terapia endovascular) para restaurar o fluxo mesentérico o mais rápido possível, associada a ressecção do segmento intestinal já necrótico quando presente. Anticoagulação sistêmica é iniciada precocemente na maioria dos casos. O atraso no diagnóstico e tratamento é o principal determinante de mortalidade, que permanece elevada mesmo com tratamento adequado quando o reconhecimento não é precoce.</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Conduta</div><div class=\"fluxo-resumo__passo\"><b>Para todos</b>: Jejum, SNG, hidratação, correção de acidose, antibiótico de amplo espectro, <b>heparina não fracionada plena</b></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Peritonite, instabilidade, pneumatose/gás portal</b>: <b>Laparotomia imediata</b> (ENARE 2026): revascularizar e ressecar o inviável; se dúvida, controle de danos sem anastomose e <b>second look</b> em 24–48 h</div><div class=\"fluxo-resumo__passo\"><b>Estável, sem sinais de necrose</b>: Revascularização: embolia → embolectomia (aberta) ou aspiração/trombólise endovascular; trombose → stent endovascular ou bypass</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Trombose venosa</b>: <b>Anticoagulação plena</b> (USP-SP 2021) e manter anticoagulante oral 3–6 meses (indefinido se trombofilia); cirurgia só se necrose</div><div class=\"fluxo-resumo__passo\"><b>Não oclusiva</b>: Tratar o choque, tirar vasoconstritor, <b>papaverina intra-arterial</b>; cirurgia se necrose</div></div></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Na laparotomia</span><ul><li>Viabilidade da alça: cor, peristalse, pulso mesentérico, sangramento da borda; Doppler e fluoresceína/ICG ajudam; punção venosa não é recomendada (SES-PE 2021).</li><li>Paciente estável e segmento bem delimitado: ressecção com anastomose.</li><li>Instável ou viabilidade duvidosa: grampear, sem anastomose, peritoneostomia e reabordagem.</li></ul></div><p><span class=\"red-flag\">Dor abdominal intensa e desproporcional ao exame físico em paciente com fibrilação atrial ou doença aterosclerótica conhecida</span> deve levantar suspeita imediata de isquemia mesentérica aguda, com investigação de imagem urgente — o retardo diagnóstico até o surgimento de sinais peritoneais francos já reflete necrose intestinal estabelecida e pior prognóstico.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2021/2021-d0a615b4-q074-1.webp",
+            "legenda": "Trombose da veia mesentérica superior com espessamento de alças de delgado (USP-SP 2021): conduta anticoagulação plena.",
+            "fonte": "Imagem de questão de prova — USP-SP 2021"
+          },
+          {
+            "url": "imagens/questoes/unicamp/2022/2022-cf2c535f-q056-1.webp",
+            "legenda": "Cólon esquerdo necrosado na laparotomia após cirurgia aórtica (UNICAMP 2022): ligadura da artéria mesentérica inferior.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2022"
+          }
+        ]
+      },
+      {
+        "titulo": "Colite isquêmica e isquemia mesentérica crônica",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th></th><th>Isquemia mesentérica aguda</th><th>Colite isquêmica</th></tr></thead><tbody><tr><td>Frequência</td><td>Menos comum</td><td><b>A isquemia intestinal mais comum</b> (&gt; 50%)</td></tr><tr><td>Causa</td><td>Embolia e trombose</td><td>Não oclusiva, transitória, vasos pequenos</td></tr><tr><td>Quem</td><td>Variável</td><td>Idosa, DM, hemodiálise, cirurgia de aorta, cocaína, maratonista, constipação</td></tr><tr><td>Clínica</td><td>Dor intensa desproporcional, paciente grave</td><td>Dor leve à esquerda + <b>diarreia com sangue</b>, paciente bem</td></tr><tr><td>Onde</td><td>Delgado (AMS)</td><td>Flexura esplênica e retossigmoide; espontânea predomina no ângulo esplênico, pós-aneurisma no sigmoide (SES-PE 2017)</td></tr><tr><td>Exame</td><td>Angiotomografia</td><td><b>Colonoscopia</b> (segmentar, reto poupado)</td></tr><tr><td>Tratamento</td><td>Heparina e revascularização</td><td>Suporte; 85% resolvem; cirurgia (Hartmann) se gangrena, peritonite ou falha; <b>sem</b> heparina ou revascularização</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Isquemia mesentérica crônica (angina mesentérica)</th><th></th></tr></thead><tbody><tr><td>Quem</td><td>Mulher &gt; 60 anos, tabagista, com doença coronariana ou periférica</td></tr><tr><td>Tríade</td><td><b>Dor pós-prandial</b> (30–60 min), <b>medo de comer</b>, <b>emagrecimento</b>; sopro epigástrico em metade</td></tr><tr><td>Diagnóstico</td><td>Angiotomografia (inicial, ENARE 2024): estenose de alto grau em ≥ 2 vasos com colaterais; Doppler para rastreio; arteriografia se dúvida</td></tr><tr><td>Tratamento</td><td>Antiplaquetário, estatina, parar de fumar, nutrição; <b>angioplastia com stent</b> (escolha, mais reestenose) ou bypass aortomesentérico</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-rp/2023/2023-7124c5f4-q015-1.webp",
+            "legenda": "Corte sagital com placas na origem do tronco celíaco e da AMS em paciente com dor pós-prandial, emagrecimento e sopro em mesogástrio (USP-RP 2023): isquemia mesentérica crônica.",
+            "fonte": "Imagem de questão de prova — USP-RP 2023"
+          }
+        ]
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Trombose arterial: bypass × endovascular</td><td>Estratégia: bypass mesentérico é o tratamento de escolha.</td><td>ESVS 2017 e WSES 2022: endovascular (stent, inclusive retrógrado aberto) como primeira opção na trombose aguda, com menor mortalidade; bypass se falhar.</td><td>Se aparecer endovascular como preferido, aceitar; senão, bypass.</td></tr><tr><td>Janela de 6–8 h</td><td>Estratégia: revascularização só até 6–8 h.</td><td>As diretrizes revascularizam sempre que o intestino for potencialmente viável e ressecam o necrosado; tempo é prognóstico, não contraindicação.</td><td>Quanto mais cedo melhor; não negar revascularização só pelo tempo.</td></tr><tr><td>Angiotomografia e creatinina</td><td>Estratégia: angio-TC só no estável.</td><td>ESVS e WSES: angio-TC imediata na suspeita, sem esperar função renal; na instabilidade com peritonite, laparotomia direto.</td><td>Suspeita = angio-TC já; peritonite/choque = cirurgia.</td></tr><tr><td>Arteriografia padrão-ouro</td><td>Provas: arteriografia é o padrão-ouro.</td><td>Na prática a angio-TC multidetector é o exame diagnóstico de referência; a arteriografia ficou para terapia e para a não oclusiva.</td><td>Padrão-ouro = arteriografia; exame inicial = angio-TC.</td></tr><tr><td>Antibiótico na colite isquêmica</td><td>Estratégia: antibiótico empírico para todos.</td><td>ACG 2015: antibiótico só nas formas moderadas e graves.</td><td>Na prova, suporte com antibiótico é aceito; na colite leve não é obrigatório.</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A dissociação entre dor abdominal intensa e exame físico inicialmente pouco alterado é a cobrança mais importante e recorrente do tema, servindo como principal pista para suspeita precoce antes da necrose transmural. A associação com fibrilação atrial como fator de risco embólico predisponente também é frequentemente exigida em questões de caso clínico."
+        "conteudo": "<p>A dissociação entre dor abdominal intensa e exame físico inicialmente pouco alterado é a cobrança mais importante e recorrente do tema, servindo como principal pista para suspeita precoce antes da necrose transmural. A associação com fibrilação atrial como fator de risco embólico predisponente também é frequentemente exigida em questões de caso clínico.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">O que mais cai</span><ul><li>Dor intensa e abdome inocente = isquemia mesentérica.</li><li>FA = embolia; aterosclerose com angina mesentérica = trombose; UTI com vasopressor = não oclusiva; jovem com trombofilia = venosa.</li><li>Angio-TC para diagnosticar; heparina para todos; pneumatose ou gás portal = laparotomia.</li><li>Venosa: anticoagular. Não oclusiva: papaverina.</li><li>Colite isquêmica: idosa, diarreia com sangue, flexura esplênica, colonoscopia, suporte.</li><li>Riolan liga cólica média e cólica esquerda; Griffiths na flexura esplênica.</li></ul></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Doenças Cirúrgicas do Intestino I - Vascular e Obstrução</b> (semana 20 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Ingestão de Corpo Estranho</li></ul>"
       }
     ],
-    "comoCai": "O curso adverte que abdome agudo vascular não é um tema muito cobrado, mas que a isquemia mesentérica aguda é a apresentação mais frequente dentro dele, e que a maioria das questões gira em torno do diagnóstico clínico de cada etiologia — não apenas do tratamento. A frase mais repetida como pista de prova é \"dor abdominal desproporcional ao exame físico\", usada tanto para embolia quanto para trombose arterial mesentérica. O diferencial-chave entre essas duas é temporal: a embolia é súbita, sem história prévia (fator de risco: fibrilação atrial, trombo cardioembólico), enquanto a trombose arterial ocorre sobre estenose aterosclerótica pré-existente, com histórico de dor pós-prandial e emagrecimento (\"medo de comer\") antes do evento agudo. A trombose venosa mesentérica se diferencia por uma dor mais opaca e insidiosa, evoluindo em 5 a 14 dias, sendo a causa mais comum de isquemia aguda de delgado em jovens sem doença cardiovascular. Um dado de prova citado com destaque é que a isquemia mesentérica NÃO OCLUSIVA tem a maior mortalidade entre todas as etiologias (70-90%), apesar de uma clínica mais branda e frequentemente mascarada por sedação/ventilação mecânica. Por fim, uma regra de contraste central: diferentemente da isquemia mesentérica, NÃO se indica anticoagulação nem revascularização na isquemia colônica isolada, que é tratada de forma predominantemente conservadora.",
-    "prioridadeProva": "media"
+    "comoCai": [
+      "Dor desproporcional, acidose e lactato alto (SES-PE 2014, 2017; ENARE 2022)",
+      "Angio-TC como exame inicial e laparotomia se pneumatose (ENARE 2022, 2026)",
+      "Isquemia não oclusiva no paciente grave (ENARE 2025)",
+      "Trombose venosa e isquemia crônica (SES-PE 2018, 2020; ENARE 2024)",
+      "Anatomia: Riolan, ramos do tronco celíaco e da AMI, ângulo aortomesentérico (SES-PE 2012–2022; ENARE 2021, 2022)",
+      "Colite isquêmica: flexura esplênica (SES-PE 2017, 2019)"
+    ],
+    "prioridadeProva": "media",
+    "revisaoProvas": true
   },
   {
     "id": "colelitiase-coledocolitiase",
