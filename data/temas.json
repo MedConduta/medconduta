@@ -1883,51 +1883,171 @@
     "area": "residencia",
     "categoria": "Cirurgia Geral",
     "titulo": "Obstrução Intestinal",
-    "resumo": "Sinais cardinais, causas mais comuns e conduta conforme sinais de estrangulamento.",
+    "resumo": "Abdome agudo obstrutivo como cai: classificação (mecânica × funcional, alta × baixa, simples × estrangulada, alça fechada), clínica e radiografia (empilhamento de moedas, grão de café, miolo de pão, tríade de Rigler), medidas de suporte e quando operar, e as causas que mais caem: bridas, carcinomatose, hérnias, íleo biliar, intussuscepção, câncer colorretal, volvos, fecaloma, íleo paralítico e síndrome de Ogilvie.",
     "revisado": true,
-    "fonte": "Colégio Brasileiro de Cirurgiões; WSES Guidelines for Adhesive Small Bowel Obstruction",
+    "fonte": "Colégio Brasileiro de Cirurgiões; WSES Guidelines for Adhesive Small Bowel Obstruction; ten Broek RPG, et al. Bologna guidelines for diagnosis and management of adhesive small bowel obstruction (ASBO): 2017 update of the WSES. World J Emerg Surg 2018;13:24; Ceresoli M, et al. Water-soluble contrast agent in adhesive small bowel obstruction: a systematic review and meta-analysis. Am J Surg 2016;211:1114-25; Pisano M, et al. 2017 WSES guidelines on colon and rectal cancer emergencies: obstruction and perforation. World J Emerg Surg 2018;13:36; van Hooft JE, et al. Colonic stenting as bridge to surgery or palliation: ESGE Guideline Update 2020. Endoscopy 2020;52:389-407; Alavi K, et al. ASCRS Clinical Practice Guidelines for the Management of Colonic Volvulus and Acute Colonic Pseudo-Obstruction. Dis Colon Rectum 2021;64:1046-57; Naveed M, et al. ASGE guideline on the role of endoscopy in the management of acute colonic pseudo-obstruction and colonic volvulus. Gastrointest Endosc 2020;91:228-35; Estratégia MED — Resumo Estratégico 2026: Abdome Agudo Obstrutivo",
     "mnemonicos": [
       {
         "palavra": "4 SINAIS CARDINAIS",
         "explicacao": "Dor abdominal em cólica, Distensão abdominal, Vômitos e Parada de eliminação de gases e fezes — os 4 sinais cardinais da obstrução intestinal mecânica."
+      },
+      {
+        "palavra": "Rigler do íleo biliar: OAC",
+        "explicacao": "Obstrução de delgado, Aerobilia e Cálculo ectópico."
+      },
+      {
+        "palavra": "Sigmoide Sobe o escopo; Ceco Corta",
+        "explicacao": "Volvo de sigmoide estável: descompressão endoscópica; volvo de ceco: cirurgia."
+      },
+      {
+        "palavra": "Ogilvie: 12 e Neo",
+        "explicacao": "Ceco acima de 12 cm ou falha do suporte: neostigmina (com monitor)."
       }
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia",
-        "conteudo": "A obstrução intestinal mecânica resulta de bloqueio físico ao trânsito intestinal, sendo aderências pós-cirúrgicas a causa mais comum de obstrução de intestino delgado, e neoplasias a causa mais comum de obstrução colônica em adultos. A distensão progressiva das alças proximais à obstrução compromete a perfusão da parede intestinal, podendo evoluir para isquemia, necrose e perfuração se a obstrução for de alça fechada ou prolongada sem resolução."
+        "titulo": "Classificação e fisiopatologia",
+        "conteudo": "<p>A obstrução intestinal mecânica resulta de bloqueio físico ao trânsito intestinal, sendo aderências pós-cirúrgicas a causa mais comum de obstrução de intestino delgado, e neoplasias a causa mais comum de obstrução colônica em adultos. A distensão progressiva das alças proximais à obstrução compromete a perfusão da parede intestinal, podendo evoluir para isquemia, necrose e perfuração se a obstrução for de alça fechada ou prolongada sem resolução.</p><div class=\"table-wrap\"><table><thead><tr><th>Critério</th><th>Tipos</th><th>O que importa</th></tr></thead><tbody><tr><td>Mecanismo</td><td><b>Mecânica</b> (brida, tumor, hérnia, volvo) × <b>funcional</b> (íleo paralítico, Ogilvie)</td><td>Funcional = tratamento clínico</td></tr><tr><td>Grau</td><td>Total × parcial (suboclusão, ainda elimina gases)</td><td>Parcial por brida resolve sem cirurgia na maioria</td></tr><tr><td>Gravidade</td><td>Simples × <b>estrangulada</b> (isquemia)</td><td>Estrangulada = cirurgia</td></tr><tr><td>Nível</td><td>Alta (delgado) × baixa (cólon)</td><td>Muda clínica, radiografia e causa</td></tr><tr><td><b>Alça fechada</b></td><td>Dois pontos ocluídos: hérnia encarcerada, volvo, tumor de cólon com <b>válvula ileocecal competente</b> (SES-PE 2017)</td><td>Maior risco de isquemia e perfuração; geralmente cirurgia</td></tr></tbody></table></div><p>Pela <b>lei de Laplace</b> (T = P × r), o segmento de maior diâmetro rompe primeiro: na obstrução colônica com válvula competente, o <b>ceco</b> perfura (ENARE 2022, 2023), com risco alto acima de 12 cm. Válvula incompetente descomprime para o delgado, com mais distensão e vômito fecaloide.</p>"
       },
       {
-        "titulo": "Quadro clínico",
-        "conteudo": "Dor abdominal em cólica, distensão abdominal, vômitos (mais precoces e biliosos em obstruções altas, mais tardios e fecaloides em obstruções baixas) e parada de eliminação de gases e fezes compõem o quadro clássico. A intensidade e a velocidade de instalação variam conforme o nível e o grau (parcial ou completo) da obstrução."
+        "titulo": "Clínica e exames",
+        "conteudo": "<p>Dor abdominal em cólica, distensão abdominal, vômitos (mais precoces e biliosos em obstruções altas, mais tardios e fecaloides em obstruções baixas) e parada de eliminação de gases e fezes compõem o quadro clássico. A intensidade e a velocidade de instalação variam conforme o nível e o grau (parcial ou completo) da obstrução.</p><p>Distensão abdominal difusa, timpanismo à percussão e ruídos hidroaéreos podem estar aumentados (\"de luta\", em fases iniciais) ou ausentes/diminuídos (em fases mais avançadas ou com comprometimento vascular associado). Sinais de irritação peritoneal (defesa, descompressão dolorosa) associados a febre e taquicardia sugerem estrangulamento com sofrimento de alça, mudando a conduta de observação para intervenção cirúrgica urgente.</p><p>Radiografia de abdome simples pode mostrar níveis hidroaéreos e distensão de alças, sendo exame inicial rápido e amplamente disponível. Tomografia de abdome com contraste é mais sensível e específica, permitindo identificar o ponto e a causa da obstrução, além de sinais precoces de sofrimento vascular de alça (pneumatose intestinal, redução da captação de contraste pela parede) antes mesmo de sinais clínicos evidentes de estrangulamento.\n\n<div class=\"table-wrap\"><table><thead><tr><th></th><th>Obstrução ALTA (delgado)</th><th>Obstrução BAIXA (cólon)</th></tr></thead><tbody><tr><td>Dor</td><td>Precoce, periumbilical, em cólica</td><td>Tardia, infraumbilical, contínua</td></tr><tr><td>Vômitos</td><td>Precoces, frequentes, biliosos</td><td>Tardios, fecaloides</td></tr><tr><td>Constipação</td><td>Tardia</td><td>Precoce</td></tr><tr><td>Padrão radiológico</td><td>Distribuição central, pregas coniventes (\"empilhamento de moedas\"), níveis hidroaéreos</td><td>Distribuição periférica, haustrações colônicas, ausência de ar retal</td></tr><tr><td>Causa mais comum</td><td>Bridas/aderências (60%)</td><td>Neoplasia de cólon esquerdo (50%)</td></tr></tbody></table></div></p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Exame físico que cai</span><ul><li>Procurar <b>cicatrizes</b> (G4 A1 C2 = cesáreas = bridas) e examinar a região inguinocrural (hérnia).</li><li>Ruídos de luta com timbre metálico no início; abafados ou ausentes na isquemia (ENARE 2026).</li><li>Perda da macicez hepática (sinal de Jobert) = pneumoperitônio.</li><li><b>Toque retal sempre</b>: fecaloma, tumor, ampola vazia (obstrução mecânica) ou com fezes.</li><li>Sinal de Gersuny (crepitação ao descomprimir massa) = fecaloma.</li></ul></div><div class=\"table-wrap\"><table><thead><tr><th>Exame</th><th>Achado</th></tr></thead><tbody><tr><td>Gasometria e eletrólitos</td><td><b>Alcalose metabólica hipoclorêmica e hipocalêmica</b> (vômitos); acidose e lactato alto sugerem isquemia</td></tr><tr><td>Hemograma</td><td>Leucocitose com desvio = complicação; anemia = tumor de cólon direito, Crohn</td></tr><tr><td>Rotina de abdome agudo</td><td>Tórax PA em pé + abdome em pé e deitado: <b>primeiro exame</b>. Delgado normal tem até 2,5 cm; ceco até 9 cm</td></tr><tr><td>TC com contraste</td><td>Ponto de transição, causa e sinais de isquemia (pouca captação da parede, pneumatose, gás portal, líquido livre, redemoinho mesentérico)</td></tr><tr><td>Enema contrastado</td><td>Maçã mordida (tumor), bico de pássaro (volvo); diferencia Ogilvie de obstrução</td></tr><tr><td>USG</td><td>Ruim pelo gás; gestante, criança (invaginação: alvo, pseudorrim) e beira de leito</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Sinal radiológico</th><th>Doença</th></tr></thead><tbody><tr><td>Empilhamento de moedas (pregas coniventes), níveis hidroaéreos, distribuição central</td><td>Obstrução de delgado</td></tr><tr><td>Haustrações, distribuição periférica, ausência de ar no reto</td><td>Obstrução colônica</td></tr><tr><td><b>Grão de café / U invertido / tubo dobrado</b></td><td>Volvo de sigmoide</td></tr><tr><td>Ceco em vírgula no quadrante superior esquerdo</td><td>Volvo de ceco</td></tr><tr><td><b>Miolo de pão</b></td><td>Fecaloma (também bolo de áscaris)</td></tr><tr><td><b>Tríade de Rigler</b>: obstrução de delgado + aerobilia + cálculo ectópico</td><td>Íleo biliar</td></tr><tr><td>Sinal de Rigler (parede dupla)</td><td>Pneumoperitônio</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unesp/2019/2019-8a89deec-q071-1.webp",
+            "legenda": "Radiografia em pé com alças de delgado centrais, pregas coniventes em empilhamento de moedas e níveis hidroaéreos (UNESP 2019): obstrução de delgado.",
+            "fonte": "Imagem de questão de prova — UNESP 2019"
+          },
+          {
+            "url": "imagens/questoes/sespe/2024-q026-1.webp",
+            "legenda": "Alça distendida com pregas que cruzam toda a luz, apontada pela seta, em paciente com retossigmoidectomia prévia (SES-PE 2024): a alça é de delgado, obstrução por brida.",
+            "fonte": "Imagem de questão de prova — SES-PE 2024"
+          },
+          {
+            "url": "imagens/questoes/hcpa-rs/2022/2022-4c1910c0-q050-1.webp",
+            "legenda": "Distensão de delgado com níveis hidroaéreos e ampola vazia em paciente operado (HCPA-RS 2022): obstrução por bridas.",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2022"
+          }
+        ]
       },
       {
-        "titulo": "Exame físico",
-        "conteudo": "Distensão abdominal difusa, timpanismo à percussão e ruídos hidroaéreos podem estar aumentados (\"de luta\", em fases iniciais) ou ausentes/diminuídos (em fases mais avançadas ou com comprometimento vascular associado). Sinais de irritação peritoneal (defesa, descompressão dolorosa) associados a febre e taquicardia sugerem estrangulamento com sofrimento de alça, mudando a conduta de observação para intervenção cirúrgica urgente."
+        "titulo": "Conduta inicial e quando operar",
+        "conteudo": "<p>Obstrução parcial sem sinais de estrangulamento pode ser inicialmente tratada de forma conservadora com descompressão por sonda nasogástrica, reposição hidroeletrolítica e observação clínica rigorosa, com resolução espontânea em boa parte dos casos por aderências. Obstrução completa, refratária ao tratamento conservador, ou com qualquer sinal de estrangulamento/isquemia exige intervenção cirúrgica de urgência para lise de aderências, ressecção de segmento inviável, ou tratamento da causa obstrutiva subjacente (neoplasia, hérnia encarcerada).</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Abdome agudo obstrutivo</div><div class=\"fluxo-resumo__passo\"><b>Medidas de suporte para todos</b>: Jejum, <b>sonda nasogástrica</b>, hidratação venosa, correção de K⁺ e Cl⁻, analgesia, sonda vesical (ENARE 2024, 2025). Antibiótico só se for operar ou houver complicação</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Sinais de estrangulamento</b>: Dor contínua, febre, taquicardia, peritonite, leucocitose, acidose/lactato, sinais de isquemia na TC, alça fechada, hérnia estrangulada → <b>cirurgia de urgência</b> (FAMERP 2021, ENARE 2023)</div><div class=\"fluxo-resumo__passo\"><b>Brida sem sinais de isquemia</b>: Tratamento conservador com reavaliações seriadas; contraste hidrossolúvel (diagnóstico e terapêutico) (SES-PE 2026, ENARE 2026)</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Sem resolução em 48–72 h</b>: Laparoscopia ou laparotomia para lise de bridas (ENARE 2026)</div></div><p><span class=\"red-flag\">Dor contínua (não mais em cólica), febre, taquicardia e sinais de irritação peritoneal</span> em paciente com obstrução intestinal sugerem estrangulamento com sofrimento isquêmico de alça — emergência cirúrgica que não deve ser tratada conservadoramente, pelo risco de necrose, perfuração e peritonite fecal.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Obstrução simples</th><th>Obstrução com estrangulamento</th></tr></thead><tbody><tr><td>Padrão de dor</td><td>Cólica, intermitente</td><td>Dor contínua, não mais em cólica</td></tr><tr><td>Sinais sistêmicos</td><td>Ausentes</td><td>Febre, taquicardia</td></tr><tr><td>Exame abdominal</td><td>Distensão, timpanismo, RHA aumentados (\"de luta\")</td><td>Sinais de irritação peritoneal (defesa, descompressão dolorosa)</td></tr><tr><td>Conduta inicial</td><td>Conservadora: SNG, reposição hidroeletrolítica, observação</td><td>Cirurgia de urgência — nunca conservadora</td></tr><tr><td>Causa mais comum</td><td>Aderências pós-cirúrgicas (delgado); neoplasia (cólon)</td><td>Hérnia encarcerada, volvo, bridas apertando a alça</td></tr></tbody></table></div></p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Nutrição</span><ul><li>Obstrução que não resolve em poucos dias em paciente desnutrido (NRS-2002 ≥ 3): pensar em nutrição parenteral, porque o trato não pode ser usado (ENARE 2026).</li></ul></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/hcpa-rs/2018/2018-e64d9fca-q048-1.webp",
+            "legenda": "Radiografias após contraste hidrossolúvel na obstrução por brida (HCPA-RS 2018): o contraste encurta a internação; chegada ao cólon em 24 h prevê resolução sem cirurgia.",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2018"
+          }
+        ]
       },
       {
-        "titulo": "Diagnóstico",
-        "conteudo": "Radiografia de abdome simples pode mostrar níveis hidroaéreos e distensão de alças, sendo exame inicial rápido e amplamente disponível. Tomografia de abdome com contraste é mais sensível e específica, permitindo identificar o ponto e a causa da obstrução, além de sinais precoces de sofrimento vascular de alça (pneumatose intestinal, redução da captação de contraste pela parede) antes mesmo de sinais clínicos evidentes de estrangulamento.\n\n<div class=\"table-wrap\"><table><thead><tr><th></th><th>Obstrução ALTA (delgado)</th><th>Obstrução BAIXA (cólon)</th></tr></thead><tbody><tr><td>Dor</td><td>Precoce, periumbilical, em cólica</td><td>Tardia, infraumbilical, contínua</td></tr><tr><td>Vômitos</td><td>Precoces, frequentes, biliosos</td><td>Tardios, fecaloides</td></tr><tr><td>Constipação</td><td>Tardia</td><td>Precoce</td></tr><tr><td>Padrão radiológico</td><td>Distribuição central, pregas coniventes (\"empilhamento de moedas\"), níveis hidroaéreos</td><td>Distribuição periférica, haustrações colônicas, ausência de ar retal</td></tr><tr><td>Causa mais comum</td><td>Bridas/aderências (60%)</td><td>Neoplasia de cólon esquerdo (50%)</td></tr></tbody></table></div>"
+        "titulo": "Obstrução de delgado: causas",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Causa</th><th>Pistas</th><th>Conduta</th></tr></thead><tbody><tr><td><b>Bridas (≈ 60%)</b></td><td>Cirurgia prévia, sobretudo de abdome inferior (apendicectomia, colorretal, ginecológica, cesárea) (ENARE 2022, 2024)</td><td>Conservador; operar se estrangulamento ou falha</td></tr><tr><td><b>Neoplasia extrínseca (≈ 20%, 2ª causa)</b></td><td>Carcinomatose: cólon, <b>ovário</b>, pâncreas, estômago (SES-PE 2025); hematogênica: <b>melanoma</b>, pulmão, mama</td><td>Individualizar pela expectativa de vida: cirurgia, derivação, ostomia, gastrostomia descompressiva</td></tr><tr><td><b>Hérnias (≈ 10%)</b></td><td>Femoral estrangula mais (mulher); <b>Richter</b> (só a borda antimesentérica: isquemia sem obstrução completa, ENARE 2026); interna após Y de Roux</td><td>Encarcerada &lt; 6–8 h: tentar Taxe; estrangulada: cirurgia, sem tela se contaminada</td></tr><tr><td>Doença de Crohn</td><td>Estenoses; obstrução é a principal indicação cirúrgica</td><td>Curta: dilatação ou ressecção; longas e múltiplas: estenoplastia</td></tr><tr><td><b>Íleo biliar</b></td><td>Idosa, cálculo &gt; 2,5 cm por fístula colecistoduodenal, impacta no <b>íleo terminal</b>; aerobilia (SES-PE 2017, 2025); icterícia não faz parte (ENARE 2021)</td><td><b>Enterolitotomia</b> proximal ao cálculo (ENARE 2026); colecistectomia e fístula só no estável de baixo risco; Bouveret (piloro/duodeno): litotripsia endoscópica</td></tr><tr><td>Intussuscepção no adulto</td><td>Cabeça de invaginação: tumor (GIST, adenoma, lipoma), Meckel; alvo/salsicha na TC; não ocorre no duodeno (SES-PE 2011)</td><td><b>Ressecção</b> (não fazer enema como na criança)</td></tr><tr><td>Síndrome da artéria mesentérica superior (Wilkie)</td><td>Perda de peso importante, cirurgia de escoliose; compressão da 3ª porção do duodeno</td><td>Sonda, nutrição enteral; se falhar, duodenojejunostomia</td></tr><tr><td>Volvo gástrico</td><td><b>Tríade de Borchardt</b>: dor epigástrica súbita, vômito ineficaz, impossível passar a SNG; associado à <b>hérnia paraesofágica</b> (SES-PE 2023)</td><td>Descompressão e cirurgia</td></tr><tr><td>Volvo de delgado / hérnia interna</td><td>Redemoinho dos vasos mesentéricos na TC; bariátrica prévia</td><td>Cirurgia de urgência</td></tr><tr><td>Outras</td><td>Bezoar, áscaris (criança), corpo estranho (agulha: seguir com radiografia se assintomático), Meckel, tuberculose (íleo)</td><td></td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/abc-sp/2023/2023-7b2416f7-q028-1.webp",
+            "legenda": "Distensão de delgado com níveis em idosa com colelitíase (ABC-SP 2023): íleo biliar.",
+            "fonte": "Imagem de questão de prova — ABC-SP 2023"
+          },
+          {
+            "url": "imagens/questoes/surce/2023/2023-e500fb7b-q022-1.webp",
+            "legenda": "Cálculo laminado dentro de alça ileal na fossa ilíaca direita, com aerobilia (SURCE 2023): íleo biliar, enterotomia proximal à válvula ileocecal.",
+            "fonte": "Imagem de questão de prova — SURCE 2023"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2026/2026-2839ab5f-q085-1.webp",
+            "legenda": "TC coronal com alças de delgado agrupadas em torno do mesentério torcido (USP-RP 2026): volvo de delgado com sofrimento vascular, cirurgia de urgência.",
+            "fonte": "Imagem de questão de prova — USP-RP 2026"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2026/2026-9120fb7e-q118-2.webp",
+            "legenda": "Rotação dos vasos mesentéricos e alças acumuladas no hipocôndrio direito após bariátrica (USP-SP 2026): hérnia interna.",
+            "fonte": "Imagem de questão de prova — USP-SP 2026"
+          },
+          {
+            "url": "imagens/questoes/unicamp/2021/2021-2ac5dfcb-q028-1.webp",
+            "legenda": "Obstrução de delgado com níveis hidroaéreos em jovem sem cirurgia prévia (UNICAMP 2021): divertículo de Meckel com obstrução.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2021"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2017/2017-9c7ab2e1-q061-1.webp",
+            "legenda": "Abaulamento inguinocrural e distensão de delgado com ampola vazia (USP-SP 2017): hérnia estrangulada da região inguinocrural.",
+            "fonte": "Imagem de questão de prova — USP-SP 2017"
+          },
+          {
+            "url": "imagens/questoes/famerp/2025/2025-c96ce712-q019-1.webp",
+            "legenda": "TC com alça herniada pelo forame obturador e dor na face medial da coxa (FAMERP 2025): hérnia obturadora; o sinal de Howship-Romberg com obstrução indica cirurgia.",
+            "fonte": "Imagem de questão de prova — FAMERP 2025"
+          }
+        ]
       },
       {
-        "titulo": "Tratamento",
-        "conteudo": "Obstrução parcial sem sinais de estrangulamento pode ser inicialmente tratada de forma conservadora com descompressão por sonda nasogástrica, reposição hidroeletrolítica e observação clínica rigorosa, com resolução espontânea em boa parte dos casos por aderências. Obstrução completa, refratária ao tratamento conservador, ou com qualquer sinal de estrangulamento/isquemia exige intervenção cirúrgica de urgência para lise de aderências, ressecção de segmento inviável, ou tratamento da causa obstrutiva subjacente (neoplasia, hérnia encarcerada)."
+        "titulo": "Obstrução colônica: câncer, volvos e fecaloma",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Câncer colorretal obstrutivo (≈ 50% das baixas)</th><th></th></tr></thead><tbody><tr><td>Quem</td><td>60–80 anos, alteração do hábito, fezes em fita, emagrecimento, sangramento; cólon esquerdo e flexura esplênica obstruem mais</td></tr><tr><td>Exame</td><td>TC com contraste; <b>colonoscopia contraindicada</b> na obstrução completa</td></tr><tr><td>Cólon direito</td><td>Estável: hemicolectomia direita com <b>ileotransverso anastomose</b>; instável/peritonite: hemicolectomia + ileostomia</td></tr><tr><td>Cólon esquerdo</td><td>Instável/peritonite: <b>Hartmann</b> (ENARE 2026); estável: ressecção com anastomose primária (± ostomia de proteção); ceco isquêmico/perfurado: <b>colectomia total</b> com ileostomia (ENARE 2022)</td></tr><tr><td>Reto médio e baixo</td><td>Só desviar (colostomia em alça), depois neoadjuvância e ressecção</td></tr><tr><td>Paliação</td><td>Colostomia em alça ou <b>stent metálico</b> no cólon esquerdo</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th></th><th>Volvo de sigmoide</th><th>Volvo de ceco</th></tr></thead><tbody><tr><td>Quem</td><td>Idoso, homem, institucionalizado, constipado, <b>Chagas</b> (megacólon), psicotrópicos</td><td>Mais jovem, mulher, ceco móvel</td></tr><tr><td>Imagem</td><td><b>Grão de café</b>, U invertido; TC com redemoinho; enema com bico de pássaro</td><td>Ceco em vírgula no QSE; redemoinho na TC</td></tr><tr><td>Estável, sem isquemia</td><td><b>Descompressão endoscópica</b> (retossigmoidoscopia/colonoscopia) e <b>sigmoidectomia na mesma internação</b> (recidiva até 70%) (ENARE 2022, 2023, 2026)</td><td><b>Cirurgia</b>: hemicolectomia direita com anastomose (endoscopia funciona em &lt; 5% e perfura; SES-PE 2017)</td></tr><tr><td>Peritonite, perfuração, falha</td><td>Laparotomia e <b>Hartmann</b> (ENARE 2022)</td><td>Hemicolectomia direita com ileostomia</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Fecaloma</span><ul><li>Idoso acamado, megacólon chagásico (complicação mais comum), Hirschsprung.</li><li>Toque retal confirma; radiografia em miolo de pão; Gersuny.</li><li>Fragmentação digital + enema morno com glicerina; anestesia se preciso; cirurgia se alto, com isquemia ou perfuração.</li></ul></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/sus-sp/2014/2014-9e66a0e4-q025-1.webp",
+            "legenda": "Alça sigmoide muito dilatada em U invertido, sem fezes na ampola (SUS-SP 2014): volvo de sigmoide, colonoscopia descompressiva.",
+            "fonte": "Imagem de questão de prova — SUS-SP 2014"
+          },
+          {
+            "url": "imagens/questoes/abc-sp/2026/2026-f71bceaa-q039-1.webp",
+            "legenda": "Alça em grão de café (ABC-SP 2026): sinal clássico de volvo, mais típico do sigmoide.",
+            "fonte": "Imagem de questão de prova — ABC-SP 2026"
+          },
+          {
+            "url": "imagens/questoes/hiae-sp/2024/2024-5ed5ecab-q025-1.webp",
+            "legenda": "Cólon muito distendido após 7 dias sem evacuar, estável (HIAE-SP 2024): primeiro passo é retossigmoidoscopia flexível.",
+            "fonte": "Imagem de questão de prova — HIAE-SP 2024"
+          },
+          {
+            "url": "imagens/questoes/sus-sp/2015/2015-65563149-q037-1.webp",
+            "legenda": "Distensão colônica com parada no retossigmoide e ampola vazia (SUS-SP 2015): tumor de reto/sigmoide, cirurgia de Hartmann.",
+            "fonte": "Imagem de questão de prova — SUS-SP 2015"
+          }
+        ]
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Dor contínua (não mais em cólica), febre, taquicardia e sinais de irritação peritoneal</span> em paciente com obstrução intestinal sugerem estrangulamento com sofrimento isquêmico de alça — emergência cirúrgica que não deve ser tratada conservadoramente, pelo risco de necrose, perfuração e peritonite fecal.\n\n<div class=\"table-wrap\"><table><thead><tr><th>Aspecto</th><th>Obstrução simples</th><th>Obstrução com estrangulamento</th></tr></thead><tbody><tr><td>Padrão de dor</td><td>Cólica, intermitente</td><td>Dor contínua, não mais em cólica</td></tr><tr><td>Sinais sistêmicos</td><td>Ausentes</td><td>Febre, taquicardia</td></tr><tr><td>Exame abdominal</td><td>Distensão, timpanismo, RHA aumentados (\"de luta\")</td><td>Sinais de irritação peritoneal (defesa, descompressão dolorosa)</td></tr><tr><td>Conduta inicial</td><td>Conservadora: SNG, reposição hidroeletrolítica, observação</td><td>Cirurgia de urgência — nunca conservadora</td></tr><tr><td>Causa mais comum</td><td>Aderências pós-cirúrgicas (delgado); neoplasia (cólon)</td><td>Hérnia encarcerada, volvo, bridas apertando a alça</td></tr></tbody></table></div>"
+        "titulo": "Obstrução funcional: íleo paralítico e Ogilvie",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th></th><th>Íleo paralítico</th><th>Pseudo-obstrução colônica aguda (Ogilvie)</th></tr></thead><tbody><tr><td>Quando</td><td><b>Pós-operatório</b> de cirurgia abdominal (ENARE 2022), opioide, anticolinérgico, hipocalemia, uremia, cetoacidose, sepse</td><td>Paciente internado e grave: trauma, cirurgia ortopédica, <b>cesárea</b>, IAM, sepse, ventilação mecânica, Parkinson, demência</td></tr><tr><td>Clínica</td><td>Distensão sem cólica, RHA diminuídos ou ausentes, intolerância à dieta</td><td>Distensão súbita, pouco dolorosa, timpanismo à direita, RHA presentes</td></tr><tr><td>Imagem</td><td>Distensão difusa de delgado e cólon, com ar no reto</td><td>Distensão do <b>ceco e cólon direito</b> (não do esquerdo: SES-PE 2021), sem ponto de obstrução</td></tr><tr><td>Tratamento</td><td>Suporte, corrigir K⁺ e Mg²⁺, tirar opioide, SNG se vômitos; prevenção com laparoscopia, dieta precoce e deambulação</td><td>Suporte (jejum, SNG, sonda retal, tirar opioide e anticolinérgico, mudar decúbito) → <b>neostigmina</b> 2 mg IV se ceco &gt; 12 cm ou falha (ENARE 2025) → colonoscopia descompressiva (SES-PE 2025) → cecostomia; ressecção se isquemia ou perfuração</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Neostigmina</span><ul><li>Inibidor da acetilcolinesterase: <b>monitorização cardíaca contínua</b> e atropina à mão pelo risco de bradicardia (ENARE 2025).</li><li>Contraindicada em obstrução mecânica, bradicardia, broncoespasmo e insuficiência renal grave.</li><li>Atropina e opioides <b>não</b> tratam Ogilvie (SES-PE 2017, 2023).</li><li>Complicações mais temidas: isquemia e perfuração do ceco (ENARE 2024).</li></ul></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Síndrome compartimental abdominal</span><ul><li>Pressão intra-abdominal &gt; 20 mmHg com nova disfunção orgânica; medida pela sonda vesical.</li><li>Medidas: sedação, bloqueio neuromuscular, descompressão gástrica e retal, balanço negativo; cabeceira <b>não</b> deve ficar acima de 30° (SES-PE 2023).</li><li>Refratária: laparotomia descompressiva com peritoneostomia (SES-DF 2025).</li></ul></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-rp/2020/2020-32417d4e-q026-1.webp",
+            "legenda": "Colograma aéreo difuso sem ponto de obstrução na TC (USP-RP 2020): pseudo-obstrução colônica, sondagem descompressiva.",
+            "fonte": "Imagem de questão de prova — USP-RP 2020"
+          },
+          {
+            "url": "imagens/questoes/puc-pr/2024/2024-7b5d95ab-q092-1.webp",
+            "legenda": "Grande dilatação colônica em paciente de UTI com drogas vasoativas (PUC-PR 2024): síndrome de Ogilvie, neostigmina ou colonoscopia descompressiva.",
+            "fonte": "Imagem de questão de prova — PUC-PR 2024"
+          }
+        ]
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Contraste hidrossolúvel na brida</td><td>Estratégia não cita; provas tratam só com SNG e observação.</td><td>WSES/Bologna 2017: contraste hidrossolúvel (Gastrografin) prevê a resolução se chegar ao cólon em 24 h e reduz cirurgia e internação (HCPA-RS 2018).</td><td>Se aparecer como conduta na brida sem isquemia, é correto.</td></tr><tr><td>TC na obstrução</td><td>Estratégia: TC só se a rotina radiológica deixar dúvida.</td><td>WSES e ACR: TC com contraste é o exame de escolha para causa, ponto de transição e isquemia.</td><td>Primeiro exame = rotina de abdome agudo; melhor exame = TC.</td></tr><tr><td>Tempo de conservador</td><td>Estratégia: operar se não resolver em 48 h.</td><td>WSES: até 72 h sem sinais de isquemia (ENARE 2026: 48–72 h).</td><td>Usar 48–72 h.</td></tr><tr><td>Câncer de cólon esquerdo obstrutivo</td><td>Estratégia e ENARE 2026: Hartmann na urgência.</td><td>WSES 2017 e ESGE 2020: no estável, ressecção com anastomose primária (± ileostomia de proteção) ou <b>stent como ponte</b> para cirurgia eletiva em centros com experiência.</td><td>Instável ou peritonite = Hartmann; estável = anastomose se a alternativa existir.</td></tr><tr><td>Ogilvie: exame</td><td>Estratégia (Sabiston): enema com contraste hidrossolúvel.</td><td>ASGE 2020 e ASCRS 2021: TC com contraste é o exame preferido para excluir obstrução mecânica.</td><td>Responder TC se for opção; enema se for a única.</td></tr><tr><td>Íleo biliar: tempo único</td><td>Estratégia: no estável de baixo risco, colecistectomia e fechamento da fístula junto.</td><td>Séries e revisões mostram mais mortalidade no tempo único; a enterolitotomia isolada é a conduta padrão para a maioria.</td><td>Enterolitotomia é a resposta (ENARE 2026).</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A diferenciação entre obstrução simples (tratamento inicial conservador possível) e obstrução com estrangulamento (cirurgia de urgência obrigatória) pelos sinais clínicos de mudança do padrão de dor e sinais sistêmicos é cobrança central e recorrente. Aderências como causa mais comum de obstrução de delgado, e neoplasia como causa mais comum de obstrução colônica, também são frequentemente exigidas."
+        "conteudo": "<p>A diferenciação entre obstrução simples (tratamento inicial conservador possível) e obstrução com estrangulamento (cirurgia de urgência obrigatória) pelos sinais clínicos de mudança do padrão de dor e sinais sistêmicos é cobrança central e recorrente. Aderências como causa mais comum de obstrução de delgado, e neoplasia como causa mais comum de obstrução colônica, também são frequentemente exigidas.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">O que mais cai</span><ul><li>Delgado: bridas &gt; neoplasia (carcinomatose) &gt; hérnia. Cólon: câncer &gt; volvo de sigmoide.</li><li>Alta: vômito precoce e bilioso, empilhamento de moedas. Baixa: constipação precoce, haustrações, ceco perfura.</li><li>Alcalose metabólica hipoclorêmica e hipocalêmica.</li><li>Brida sem isquemia: SNG, hidratação, observar 48–72 h.</li><li>Íleo biliar: aerobilia, cálculo &gt; 2,5 cm no íleo terminal, enterolitotomia.</li><li>Volvo de sigmoide: grão de café, descompressão endoscópica e sigmoidectomia na mesma internação; ceco: cirurgia.</li><li>Ogilvie: cólon direito, ceco &gt; 12 cm, neostigmina com monitor.</li></ul></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Doenças Cirúrgicas do Intestino I - Vascular e Obstrução</b> (semana 20 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Ingestão de Corpo Estranho</li></ul>"
       }
     ],
-    "comoCai": "O material classifica abdome agudo obstrutivo como \"tema recorrente nas provas de residência de todo o país\", com forte tendência a apresentar apenas a imagem radiográfica isolada, exigindo diagnóstico e conduta só por ela. Uma regra citada com exclamação no próprio curso é que a tomografia só deve ser pedida se persistir dúvida diagnóstica após a radiografia simples — nunca deve ser o primeiro exame. A alcalose metabólica hipoclorêmica e hipocalêmica é apontada como a principal alteração metabólica fixa da obstrução (por vômitos repetidos). Entre as causas de obstrução alta, bridas/aderências respondem por 60% dos casos, sendo a sigla obstétrica de cesárea prévia (ex.: G4A1C2) citada como pista indireta clássica de enunciado; já a hérnia femoral encarcerada é descrita como quase sempre acometendo mulheres. Na obstrução baixa, o padrão de imagem diferencia claramente volvo de sigmoide (sinal do \"grão de café\"/\"U invertido\") de volvo de ceco (sinal do \"giro\"/\"redemoinho\", patognomônico) — e a colonoscopia é contraindicada sempre que houver suspeita de obstrução completa, pelo risco de perfuração. Por fim, o curso destaca que alunos costumam confundir íleo paralítico (ruídos hidroaéreos ausentes, distensão universal de alças) com a síndrome de Ogilvie/pseudo-obstrução colônica aguda (ruídos hidroaéreos presentes, distensão concentrada no ceco e cólon direito, diâmetro cecal de 12cm como limiar de risco de perfuração).",
-    "prioridadeProva": "alta"
+    "comoCai": [
+      "Causa mais comum de obstrução de delgado e a 2ª causa (ENARE 2022, 2024; SES-PE 2025)",
+      "Conduta na brida sem isquemia (SES-PE 2026, ENARE 2026)",
+      "Íleo biliar: TC com aerobilia e enterolitotomia (SES-PE 2017, 2025; ENARE 2021, 2026)",
+      "Radiografia: delgado × cólon, grão de café (SES-PE 2024, ENARE 2023)",
+      "Volvo de sigmoide × ceco (SES-PE 2017, ENARE 2022, 2026)",
+      "Ogilvie: cólon direito, neostigmina e descompressão (SES-PE 2017, 2021, 2023, 2025; ENARE 2025)",
+      "Alça fechada, válvula ileocecal e perfuração do ceco (SES-PE 2017, ENARE 2022, 2023)"
+    ],
+    "prioridadeProva": "alta",
+    "revisaoProvas": true
   },
   {
     "id": "hemorragia-pos-parto",
