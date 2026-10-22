@@ -6615,32 +6615,53 @@
     "area": "residencia",
     "categoria": "Cardiologia",
     "titulo": "Taquiarritmias: Supraventriculares, Ventriculares e Síndromes de Pré-Excitação",
-    "resumo": "Arritmias I: abordagem da taquicardia pela estabilidade hemodinâmica, QRS estreito x largo, TPSV, flutter, taquicardia ventricular, Wolff-Parkinson-White, QT longo e antiarrítmicos.",
-    "revisado": false,
-    "fonte": "Sociedade Brasileira de Cardiologia — Diretrizes de Arritmias Cardíacas; ACLS Guidelines (American Heart Association, 2020/2025)",
+    "resumo": "Taquiarritmias como caem: três perguntas — instável? QRS estreito ou largo? regular ou irregular? Instável → cardioversão elétrica sincronizada (desfibrilação se QRS largo irregular/polimórfica); TPSV estável → Valsalva modificada, adenosina 6 mg e 12 mg; QRS largo = TV até prova em contrário (amiodarona ou cardioversão); flutter 2:1 a 150 bpm; taquicardia atrial multifocal no DPOC; WPW (PR curto + onda delta) e FA pré-excitada sem bloqueador do nó AV; torsades com sulfato de magnésio; Brugada e QT longo como causas de morte súbita; Vaughan-Williams e toxicidade da amiodarona.",
+    "revisado": true,
+    "fonte": "Sociedade Brasileira de Cardiologia — Diretrizes de Arritmias Cardíacas; ACLS Guidelines (American Heart Association, 2020/2025); 2025 American Heart Association Guidelines for CPR and Emergency Cardiovascular Care — Adult Advanced Life Support. Circulation 2025; Brugada J, et al. 2019 ESC Guidelines for the management of patients with supraventricular tachycardia. Eur Heart J 2020;41:655-720; Zeppenfeld K, et al. 2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Eur Heart J 2022;43:3997-4126; Appelboam A, et al. Postural modification to the standard Valsalva manoeuvre for emergency treatment of supraventricular tachycardias (REVERT). Lancet 2015;386:1747-53; Estratégia MED — Resumo Estratégico 2026: Outras Taquiarritmias",
     "mnemonicos": [
       {
         "palavra": "Instável = Choque",
         "explicacao": "Hipotensão, alteração do nível de consciência, dor torácica isquêmica ou congestão pulmonar: cardioversão elétrica sincronizada imediata, qualquer que seja o ritmo (exceto FV/TV sem pulso, que recebem desfibrilação)."
+      },
+      {
+        "palavra": "OSASCO",
+        "explicacao": "Orientar, Sedar, Aporte de O2, Sincronizar, Cardioverter, Observar — sequência da cardioversão elétrica."
+      },
+      {
+        "palavra": "SOBE Kaká de CAbeça",
+        "explicacao": "Classes de Vaughan-Williams: I SÓdio, II BEtabloqueador, III K+ (potássio), IV CÁlcio."
       }
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia",
-        "conteudo": "As taquiarritmias decorrem de reentrada (mecanismo da maioria das taquicardias paroxísticas supraventriculares e do flutter), automatismo anormal ou atividade deflagrada (pós-potenciais, como no QT longo). São classificadas pela origem (supraventricular ou ventricular) e pelo QRS (estreito < 120 ms ou largo). A taquicardia por reentrada nodal é a TPSV mais comum em adultos; a taquicardia por reentrada atrioventricular usa uma via acessória (feixe de Kent), ortodrômica (QRS estreito) ou antidrômica (QRS largo). Na síndrome de Wolff-Parkinson-White, a pré-excitação gera PR curto, onda delta e QRS alargado em ritmo sinusal; fibrilação atrial pré-excitada pode degenerar em fibrilação ventricular. A taquicardia ventricular (TV) associa-se principalmente a cardiopatia estrutural (cicatriz de infarto, miocardiopatia chagásica); o QT longo (congênito ou por fármacos e distúrbios eletrolíticos) predispõe a torsades de pointes."
+        "titulo": "Mecanismos e classificação",
+        "conteudo": "<p>As taquiarritmias decorrem de reentrada (mecanismo da maioria das taquicardias paroxísticas supraventriculares e do flutter), automatismo anormal ou atividade deflagrada (pós-potenciais, como no QT longo). São classificadas pela origem (supraventricular ou ventricular) e pelo QRS (estreito < 120 ms ou largo). A taquicardia por reentrada nodal é a TPSV mais comum em adultos; a taquicardia por reentrada atrioventricular usa uma via acessória (feixe de Kent), ortodrômica (QRS estreito) ou antidrômica (QRS largo). Na síndrome de Wolff-Parkinson-White, a pré-excitação gera PR curto, onda delta e QRS alargado em ritmo sinusal; fibrilação atrial pré-excitada pode degenerar em fibrilação ventricular. A taquicardia ventricular (TV) associa-se principalmente a cardiopatia estrutural (cicatriz de infarto, miocardiopatia chagásica); o QT longo (congênito ou por fármacos e distúrbios eletrolíticos) predispõe a torsades de pointes.</p><div class=\"table-wrap\"><table><thead><tr><th></th><th>QRS estreito (&lt; 120 ms)</th><th>QRS largo (≥ 120 ms)</th></tr></thead><tbody><tr><td><b>Regular</b></td><td>Taquicardia sinusal, <b>reentrada nodal (TRN)</b>, reentrada AV ortodrômica, taquicardia atrial focal, <b>flutter</b>, juncional</td><td><b>TV monomórfica</b>, TSV com aberrância, reentrada AV antidrômica</td></tr><tr><td><b>Irregular</b></td><td><b>Fibrilação atrial</b>, taquicardia atrial multifocal, flutter com BAV variável</td><td><b>TV polimórfica / torsades</b>, <b>FA pré-excitada</b>, FA com bloqueio de ramo</td></tr></tbody></table></div><p>ECG de 12 derivações define o ritmo. QRS estreito regular: TPSV (FC 150–250 bpm, sem P visível ou P retrógrada), flutter com condução 2:1 (FC ≈ 150 bpm, ondas F em dente de serra em DII, DIII e aVF) e taquicardia sinusal ou atrial; irregular: fibrilação atrial, flutter com condução variável e taquicardia atrial multifocal (três ou mais morfologias de P, típica do DPOC descompensado). QRS largo: considerar TV até prova em contrário, sobretudo em cardiopata (dissociação AV, batimentos de captura e de fusão, concordância precordial e critérios de Brugada favorecem TV). Holter, monitor de eventos e estudo eletrofisiológico investigam arritmias paroxísticas e síncope. Brugada: padrão de BRD com supra de ST côncavo em V1–V2, risco de morte súbita em repouso/sono.</p><p>ENARE 2022: taquicardia atrial é exemplo de QRS estreito e regular.</p>"
       },
       {
-        "titulo": "Quadro clínico",
-        "conteudo": "Palpitações de início e término súbitos (TPSV), \"sinal do sapo\" (pulsação cervical), dispneia, dor torácica, pré-síncope ou síncope. A gravidade depende da repercussão hemodinâmica, da frequência e da cardiopatia de base, mais do que do tipo de arritmia isoladamente. Morte súbita pode ser a primeira manifestação de TV/FV, Brugada, QT longo e cardiomiopatia hipertrófica."
-      },
-      {
-        "titulo": "Exame físico",
-        "conteudo": "Avaliar pulso, perfusão e pressão arterial e procurar sinais de instabilidade (hipotensão, rebaixamento de consciência, dor torácica isquêmica, congestão). Ondas \"a\" em canhão no pulso venoso jugular indicam dissociação atrioventricular, que favorece TV numa taquicardia de QRS largo."
-      },
-      {
-        "titulo": "Diagnóstico",
-        "conteudo": "ECG de 12 derivações define o ritmo. QRS estreito regular: TPSV (FC 150–250 bpm, sem P visível ou P retrógrada), flutter com condução 2:1 (FC ≈ 150 bpm, ondas F em dente de serra em DII, DIII e aVF) e taquicardia sinusal ou atrial; irregular: fibrilação atrial, flutter com condução variável e taquicardia atrial multifocal (três ou mais morfologias de P, típica do DPOC descompensado). QRS largo: considerar TV até prova em contrário, sobretudo em cardiopata (dissociação AV, batimentos de captura e de fusão, concordância precordial e critérios de Brugada favorecem TV). Holter, monitor de eventos e estudo eletrofisiológico investigam arritmias paroxísticas e síncope. Brugada: padrão de BRD com supra de ST côncavo em V1–V2, risco de morte súbita em repouso/sono.",
+        "titulo": "Quadro clínico e paciente instável",
+        "conteudo": "<p>Palpitações de início e término súbitos (TPSV), \"sinal do sapo\" (pulsação cervical), dispneia, dor torácica, pré-síncope ou síncope. A gravidade depende da repercussão hemodinâmica, da frequência e da cardiopatia de base, mais do que do tipo de arritmia isoladamente. Morte súbita pode ser a primeira manifestação de TV/FV, Brugada, QT longo e cardiomiopatia hipertrófica.</p><p>Avaliar pulso, perfusão e pressão arterial e procurar sinais de instabilidade (hipotensão, rebaixamento de consciência, dor torácica isquêmica, congestão). Ondas \"a\" em canhão no pulso venoso jugular indicam dissociação atrioventricular, que favorece TV numa taquicardia de QRS largo.</p><div class=\"table-wrap\"><table><thead><tr><th>Ritmo instável</th><th>Conduta</th><th>Carga bifásica (ACLS 2025)</th></tr></thead><tbody><tr><td>QRS estreito regular (TPSV)</td><td>Cardioversão sincronizada</td><td>50–100 J</td></tr><tr><td>FA e flutter</td><td>Cardioversão sincronizada</td><td><b>200 J</b></td></tr><tr><td>QRS largo regular (TV monomórfica)</td><td>Cardioversão sincronizada</td><td>100 J</td></tr><tr><td>QRS largo irregular (TV polimórfica, FV)</td><td><b>Desfibrilação</b> (não sincroniza)</td><td>200 J</td></tr><tr><td>Criança</td><td>Cardioversão sincronizada</td><td><b>0,5–1 J/kg</b>, depois 2 J/kg (ENARE 2024)</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Sequência da cardioversão — \"OSASCO\"</span><ul><li><b>O</b>rientar o paciente; <b>S</b>edação e analgesia; <b>A</b>porte de oxigênio; <b>S</b>incronizar; <b>C</b>ardioverter afastando a equipe; <b>O</b>bservar ritmo e sinais vitais.</li><li>Instabilidade = hipotensão/choque, rebaixamento de consciência, dor torácica isquêmica, congestão pulmonar.</li><li>ENARE 2021: taquicardia de QRS estreito instável após indução anestésica → cardioversão sincronizada; ENARE 2022 e 2023: TV com PA 60–70 mmHg e dor → cardioversão sincronizada.</li><li>SES-PE 2025: lactente com FC 280 bpm, TEC 4 s e pulsos finos (TSV instável) → <b>cardioversão</b>.</li></ul></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Carga para FA/flutter instável</span><p><b>Provas/Estratégia:</b> Flutter 50–100 J; FA 120–200 J</p><p><b>Evidência atual:</b> ACLS 2025: 200 J para ambos</p><p><b>Na prova:</b> Provas antigas usam as cargas menores</p></div>",
         "imagens": [
+          {
+            "url": "imagens/questoes/enare/2023/2023-927c09cb-q038-1.webp",
+            "legenda": "ENARE 2023: taquicardia regular de QRS largo a 190 bpm com hipotensão e dor torácica — TV instável: cardioversão elétrica sincronizada.",
+            "fonte": "Imagem de questão de prova — ENARE 2023"
+          },
+          {
+            "url": "imagens/questoes/sespe/2025-2-q069-1.webp",
+            "legenda": "SES-PE 2025: lactente de 13 meses com taquicardia regular de QRS estreito a ~280 bpm, sem onda P visível, e má perfusão — TSV instável: cardioversão sincronizada (0,5–1 J/kg).",
+            "fonte": "Imagem de questão de prova — SES-PE 2025"
+          }
+        ]
+      },
+      {
+        "titulo": "Taquicardia regular de QRS estreito (TPSV)",
+        "conteudo": "<div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">TPSV estável</div><div class=\"fluxo-resumo__passo\"><b>1. <b>Manobra vagal</b></b>: <b>Valsalva modificada</b> (soprar seringa de 10 mL por 15 s e, deitado, elevar as pernas) reverte ~43% (REVERT); massagem do seio carotídeo após auscultar a carótida</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>2. <b>Adenosina</b></b>: <b>6 mg</b> IV em bólus rápido + flush de 20 mL; se não reverter, <b>12 mg</b> (ENARE 2022). Criança 0,1 mg/kg (máx. 6) → 0,2 mg/kg (máx. 12). Efeitos: flush, dor torácica, broncoespasmo, assistolia breve. Pode usar na gestante (USP-SP 2023)</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>3. Refratária</b>: Betabloqueador ou verapamil/diltiazem IV (verapamil evitado em lactente); se falhar, cardioversão sincronizada</div></div><div class=\"table-wrap\"><table><thead><tr><th>Arritmia</th><th>ECG</th><th>Resposta à adenosina / definitivo</th></tr></thead><tbody><tr><td><b>Reentrada nodal (TRN)</b></td><td>FC 150–250, P ausente ou retrógrada logo após o QRS (pseudo-r' em V1, pseudo-S em DII); mais comum, mulheres 20–50 anos, \"sinal do sapo\"</td><td>Reverte; ablação (sucesso ~97%) se recorrente</td></tr><tr><td>Reentrada AV ortodrômica (via acessória)</td><td>QRS estreito, P retrógrada mais afastada do QRS</td><td>Reverte; ablação da via</td></tr><tr><td>Flutter 2:1</td><td>FC ~150 fixa, ondas F</td><td><b>Não reverte</b>, mas o bloqueio transitório revela as ondas F</td></tr><tr><td>Taquicardia atrial focal</td><td>P de morfologia diferente da sinusal antes do QRS</td><td>Pode reduzir a condução sem reverter</td></tr><tr><td><b>Taquicardia atrial multifocal</b></td><td>Irregular, ≥ 3 morfologias de P, FC &gt; 100</td><td>Tratar a causa: <b>DPOC</b>, hipoxemia, hipomagnesemia, teofilina; não cardioverter</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unesp/2017/2017-c1e4d916-q034-1.webp",
+            "legenda": "UNESP 2017: taquicardia regular de QRS estreito a 150 bpm sem onda P visível — TPSV; após manobra vagal, adenosina.",
+            "fonte": "Imagem de questão de prova — UNESP 2017"
+          },
           {
             "url": "imagens/questoes/scm-sp/2026/2026-662441fd-q035-1.webp",
             "legenda": "ECG: ondas F em \"dente de serra\" (cerca de 300/min) com condução atrioventricular regular — flutter atrial.",
@@ -6649,24 +6670,86 @@
         ]
       },
       {
-        "titulo": "Tratamento",
-        "conteudo": "Instável: cardioversão elétrica sincronizada (sob sedação quando possível); FV e TV sem pulso: desfibrilação e algoritmo de PCR. Estável com QRS estreito regular: manobra vagal (Valsalva modificada — soprar seringa e elevar membros inferiores —, massagem do seio carotídeo após ausculta), depois adenosina 6 mg em bolus rápido seguida de 12 mg (efeitos: flush, dor torácica, breve assistolia; cautela na asma); se refratária, betabloqueador ou bloqueador de canal de cálcio (verapamil/diltiazem). Adenosina também desmascara flutter. Estável com QRS largo: amiodarona (ou procainamida); TV com instabilidade, cardioversão. Torsades de pointes: sulfato de magnésio 1–2 g IV e correção da causa (suspender drogas que prolongam o QT, corrigir hipocalemia/hipomagnesemia). FA pré-excitada (WPW): evitar bloqueadores do nó AV (adenosina, verapamil, digoxina, betabloqueador); usar procainamida ou cardioversão. Prevenção: ablação por radiofrequência (TPSV recorrente, WPW sintomático, flutter típico), CDI para prevenção secundária de TV/FV e em canalopatias de alto risco. Antiarrítmicos (Vaughan-Williams): classe I bloqueadores de sódio (IA quinidina/procainamida, IB lidocaína, IC propafenona/flecainida), II betabloqueadores, III bloqueadores de potássio (amiodarona, sotalol), IV bloqueadores de cálcio (verapamil, diltiazem). Amiodarona: disfunção tireoidiana (hipo e hiper), fibrose pulmonar, hepatotoxicidade, microdepósitos corneanos e fotossensibilidade."
+        "titulo": "Taquicardia de QRS largo e taquicardia ventricular",
+        "conteudo": "<p>QRS largo = <b>TV até prova em contrário</b> (80%), sobretudo com cardiopatia estrutural (infarto prévio, Chagas). Favorecem TV: dissociação AV (ondas a em canhão), batimentos de captura e de fusão, concordância precordial, QRS muito largo, eixo extremo (critérios de Brugada). ENARE 2026: TV fascicular e ramo a ramo podem imitar bloqueio de ramo e passar por TSV com aberrância.</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">QRS largo regular estável</div><div class=\"fluxo-resumo__passo\"><b>Primeira opção</b>: <b>Amiodarona</b> 150 mg IV em 10 min (procainamida onde houver; lidocaína alternativa — só age em arritmia ventricular)</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>ESC 2022</b>: considerar <b>cardioversão elétrica</b> já no estável com baixo risco anestésico</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Adenosina</b>: só se monomórfica, regular e com dúvida de TSV com aberrância (nunca se irregular)</div></div><div class=\"table-wrap\"><table><thead><tr><th>Situação</th><th>Conduta crônica</th></tr></thead><tbody><tr><td>TV monomórfica sustentada com cardiopatia (cicatriz de infarto)</td><td>Betabloqueador + <b>CDI</b> (prevenção secundária); amiodarona ou ablação se choques recorrentes</td></tr><tr><td>Sobrevivente de PCR por TV/FV sem causa reversível</td><td><b>CDI</b></td></tr><tr><td>TV não sustentada sem cardiopatia</td><td>Pouca importância</td></tr><tr><td>Extrassístoles ventriculares isoladas e baixa densidade em assintomático (ENARE 2025)</td><td>Tranquilizar; reduzir cafeína/álcool/estimulantes</td></tr></tbody></table></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — TV monomórfica estável</span><p><b>Provas/Estratégia:</b> Provas: amiodarona IV</p><p><b>Evidência atual:</b> ESC 2022: cardioversão elétrica como 1ª opção se baixo risco anestésico; procainamida superior à amiodarona (PROCAMIO)</p><p><b>Na prova:</b> Na prova brasileira, amiodarona (procainamida indisponível)</p></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Adenosina no QRS largo</span><p><b>Provas/Estratégia:</b> Algumas referências proíbem</p><p><b>Evidência atual:</b> ACLS permite adenosina apenas se QRS largo <b>regular e monomórfico</b>, como teste diagnóstico; nunca se irregular (FA pré-excitada)</p><p><b>Na prova:</b> Veja a referência da banca; na dúvida, trate como TV</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/enare/2022/2022-47d1cc86-q022-1.webp",
+            "legenda": "ENARE 2022: taquicardia regular de QRS largo monomórfica com hipotensão (PA 60/40) — TV instável: cardioversão sincronizada.",
+            "fonte": "Imagem de questão de prova — ENARE 2022"
+          },
+          {
+            "url": "imagens/questoes/unesp/2019/2019-0078d954-q017-1.webp",
+            "legenda": "UNESP 2019: infarto inferior evoluindo com taquicardia de QRS largo — taquicardia ventricular sustentada.",
+            "fonte": "Imagem de questão de prova — UNESP 2019"
+          }
+        ]
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Taquicardia com instabilidade hemodinâmica</span> exige cardioversão elétrica imediata, sem aguardar o diagnóstico do ritmo. <span class=\"red-flag\">Síncope ao esforço ou durante o sono, e morte súbita familiar</span> sugerem canalopatia ou cardiopatia estrutural e exigem investigação especializada."
+        "titulo": "Wolff-Parkinson-White e FA pré-excitada",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th></th><th>Pontos</th></tr></thead><tbody><tr><td>Padrão WPW</td><td><b>PR curto (&lt; 120 ms) + onda delta + QRS alargado</b> em ritmo sinusal (via acessória, feixe de Kent)</td></tr><tr><td>Síndrome WPW</td><td>Padrão + taquiarritmia sintomática</td></tr><tr><td>Ortodrômica (mais comum)</td><td>Desce pelo nó AV, sobe pela via: QRS estreito → vagal/adenosina</td></tr><tr><td>Antidrômica</td><td>Desce pela via: QRS largo com delta → <b>não</b> bloquear o nó; propafenona (sem cardiopatia) ou cardioversão</td></tr><tr><td><b>FA pré-excitada</b></td><td>Irregular, QRS largos e variáveis, FC muito alta (&gt; 200–250) → risco de <b>FV</b>. <b>Proibido</b> adenosina, betabloqueador, verapamil/diltiazem, digoxina (e evitar amiodarona). Conduta: <b>cardioversão elétrica</b> (procainamida se disponível)</td></tr><tr><td>Definitivo</td><td><b>Ablação</b> da via acessória; padrão WPW com palpitações → estudo eletrofisiológico (UNICAMP 2020/2023)</td></tr></tbody></table></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Amiodarona na FA pré-excitada</span><p><b>Provas/Estratégia:</b> Alguns livros a sugerem</p><p><b>Evidência atual:</b> AHA/ESC: evitar amiodarona IV (bloqueia o nó AV e pode acelerar a via, com relatos de FV); usar cardioversão ou procainamida/ibutilida</p><p><b>Na prova:</b> Responda cardioversão elétrica</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unicamp/2020/2020-6d500baf-q074-1.webp",
+            "legenda": "UNICAMP 2020: ECG em ritmo sinusal com PR curto e onda delta — padrão de Wolff-Parkinson-White; com palpitações: estudo eletrofisiológico e ablação.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2020"
+          },
+          {
+            "url": "imagens/questoes/sus-sp/2023/2023-35919d8a-q049-1.webp",
+            "legenda": "SUS-SP 2023: taquicardia irregular de QRS largo com morfologias variáveis em jovem — FA pré-excitada; a adenosina dada como \"TSV\" precipitou fibrilação ventricular.",
+            "fonte": "Imagem de questão de prova — SUS-SP 2023"
+          }
+        ]
+      },
+      {
+        "titulo": "QT longo, torsades e Brugada",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Condição</th><th>Pontos</th></tr></thead><tbody><tr><td><b>QT longo</b></td><td>QTc &gt; 450 ms (homem) / 470 ms (mulher). Adquirido: amiodarona, sotalol, macrolídeos, quinolonas, antipsicóticos (haloperidol), antidepressivos, ondansetrona, metoclopramida; <b>hipocalemia, hipomagnesemia, hipocalcemia</b>; bradicardia. ENARE 2026: hipercalcemia <b>não</b> prolonga (encurta) o QT</td></tr><tr><td>QT curto (ENARE 2021)</td><td>Hipercalcemia, hipercalemia, acidose, digoxina, hipertermia, congênito</td></tr><tr><td><b>Torsades de pointes</b></td><td>TV polimórfica com QRS \"torcendo\" em torno da linha de base, sobre QT longo (R sobre T). Instável/sem pulso: <b>desfibrilação 200 J</b>. <b>Sulfato de magnésio 1–2 g IV</b> mesmo com Mg normal; repor K; suspender drogas; marca-passo ou isoproterenol se bradicárdico</td></tr><tr><td><b>Brugada</b></td><td>Canalopatia do sódio (SCN5A), homem jovem, síncope/morte súbita no sono; tipo 1: <b>supra de ST côncavo ≥ 2 mm em V1–V3 com T negativa</b>, padrão de BRD; desmascarado por <b>febre</b>, drogas, hipocalemia. CDI se síncope arrítmica ou PCR; tratar febre</td></tr></tbody></table></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — TV polimórfica</span><p><b>Provas/Estratégia:</b> Cardioversão se houver pulso</p><p><b>Evidência atual:</b> ACLS 2025: toda TV polimórfica deve ser tratada como instável, com desfibrilação 200 J</p><p><b>Na prova:</b> Polimórfica → desfibrilar</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/ufrj/2024/2024-484264d5-q049-1.webp",
+            "legenda": "UFRJ 2024: torsades de pointes — QRS largo polimórfico que muda de amplitude ciclicamente; condição pré-existente: QT prolongado.",
+            "fonte": "Imagem de questão de prova — UFRJ 2024"
+          },
+          {
+            "url": "imagens/questoes/enare/2026/2026-54afcddf-q009-1.webp",
+            "legenda": "ENARE 2026: homem de 38 anos com síncope durante quadro febril e pai com morte súbita — supra de ST em V1–V2 com padrão de BRD: síndrome de Brugada.",
+            "fonte": "Imagem de questão de prova — ENARE 2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Antiarrítmicos (Vaughan-Williams)",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Classe</th><th>Mecanismo</th><th>Drogas</th></tr></thead><tbody><tr><td>Ia</td><td>Bloqueio moderado de Na+</td><td>Procainamida, quinidina, disopiramida</td></tr><tr><td>Ib</td><td>Bloqueio fraco de Na+</td><td>Lidocaína, fenitoína, mexiletina</td></tr><tr><td><b>Ic</b></td><td>Bloqueio intenso de Na+</td><td><b>Propafenona</b> (ENARE 2026), flecainida</td></tr><tr><td>II</td><td>Betabloqueio</td><td>Metoprolol, propranolol, esmolol</td></tr><tr><td>III</td><td>Bloqueio de K+</td><td><b>Amiodarona</b>, sotalol, dronedarona</td></tr><tr><td><b>IV</b></td><td>Bloqueio de Ca2+</td><td><b>Verapamil, diltiazem</b> (ENARE 2022)</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Amiodarona</span><ul><li>Toxicidade crônica (\"PPONHA Tireoide\"): pulmão (fibrose), pele (cinza-azulada, fotossensibilidade), olho (microdepósitos corneanos), neurológica, hepática, arritmias (QT longo, bradicardia), tireoide (hipo e hiper).</li><li>SES-PE 2020: <b>hipotensão</b> é efeito da amiodarona <b>venosa</b>, não do uso oral prolongado.</li><li>Mnemônico das classes: \"SOBE Kaká de CAbeça\" — SÓdio, BEta, K+, CÁlcio.</li></ul></div><p>Instável: cardioversão elétrica sincronizada (sob sedação quando possível); FV e TV sem pulso: desfibrilação e algoritmo de PCR. Estável com QRS estreito regular: manobra vagal (Valsalva modificada — soprar seringa e elevar membros inferiores —, massagem do seio carotídeo após ausculta), depois adenosina 6 mg em bolus rápido seguida de 12 mg (efeitos: flush, dor torácica, breve assistolia; cautela na asma); se refratária, betabloqueador ou bloqueador de canal de cálcio (verapamil/diltiazem). Adenosina também desmascara flutter. Estável com QRS largo: amiodarona (ou procainamida); TV com instabilidade, cardioversão. Torsades de pointes: sulfato de magnésio 1–2 g IV e correção da causa (suspender drogas que prolongam o QT, corrigir hipocalemia/hipomagnesemia). FA pré-excitada (WPW): evitar bloqueadores do nó AV (adenosina, verapamil, digoxina, betabloqueador); usar procainamida ou cardioversão. Prevenção: ablação por radiofrequência (TPSV recorrente, WPW sintomático, flutter típico), CDI para prevenção secundária de TV/FV e em canalopatias de alto risco. Antiarrítmicos (Vaughan-Williams): classe I bloqueadores de sódio (IA quinidina/procainamida, IB lidocaína, IC propafenona/flecainida), II betabloqueadores, III bloqueadores de potássio (amiodarona, sotalol), IV bloqueadores de cálcio (verapamil, diltiazem). Amiodarona: disfunção tireoidiana (hipo e hiper), fibrose pulmonar, hepatotoxicidade, microdepósitos corneanos e fotossensibilidade.</p>"
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "Sequência na TPSV estável: manobra vagal, adenosina 6 mg e depois 12 mg. Cardioversão sincronizada nas taquicardias instáveis com pulso; desfibrilação em FV/TV sem pulso. QRS largo em cardiopata = TV. Magnésio na torsades. Na FA com WPW, nunca bloquear o nó AV. Saber a classificação de Vaughan-Williams e os efeitos adversos da amiodarona."
+        "conteudo": "<p>Sequência na TPSV estável: manobra vagal, adenosina 6 mg e depois 12 mg. Cardioversão sincronizada nas taquicardias instáveis com pulso; desfibrilação em FV/TV sem pulso. QRS largo em cardiopata = TV. Magnésio na torsades. Na FA com WPW, nunca bloquear o nó AV. Saber a classificação de Vaughan-Williams e os efeitos adversos da amiodarona.</p><p><b>Sinais de alerta:</b> <span class=\"red-flag\">Taquicardia com instabilidade hemodinâmica</span> exige cardioversão elétrica imediata, sem aguardar o diagnóstico do ritmo. <span class=\"red-flag\">Síncope ao esforço ou durante o sono, e morte súbita familiar</span> sugerem canalopatia ou cardiopatia estrutural e exigem investigação especializada.</p>"
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>TV monomórfica estável</td><td>Provas: amiodarona IV</td><td>ESC 2022: cardioversão elétrica como 1ª opção se baixo risco anestésico; procainamida superior à amiodarona (PROCAMIO)</td><td>Na prova brasileira, amiodarona (procainamida indisponível)</td></tr><tr><td>Adenosina no QRS largo</td><td>Algumas referências proíbem</td><td>ACLS permite adenosina apenas se QRS largo <b>regular e monomórfico</b>, como teste diagnóstico; nunca se irregular (FA pré-excitada)</td><td>Veja a referência da banca; na dúvida, trate como TV</td></tr><tr><td>Amiodarona na FA pré-excitada</td><td>Alguns livros a sugerem</td><td>AHA/ESC: evitar amiodarona IV (bloqueia o nó AV e pode acelerar a via, com relatos de FV); usar cardioversão ou procainamida/ibutilida</td><td>Responda cardioversão elétrica</td></tr><tr><td>Carga para FA/flutter instável</td><td>Flutter 50–100 J; FA 120–200 J</td><td>ACLS 2025: 200 J para ambos</td><td>Provas antigas usam as cargas menores</td></tr><tr><td>TV polimórfica</td><td>Cardioversão se houver pulso</td><td>ACLS 2025: toda TV polimórfica deve ser tratada como instável, com desfibrilação 200 J</td><td>Polimórfica → desfibrilar</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Arritmias I (Taquiarritmias)</b> (semana 25 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Bloqueios de Ramo</li></ul>"
       }
     ],
-    "comoCai": "O núcleo do que cai é o algoritmo do ACLS: instabilidade define a conduta (cardioversão), e no paciente estável a conduta é guiada pelo QRS. Aparecem com frequência TPSV com manobra vagal/adenosina, flutter 2:1, TV pós-infarto, FA pré-excitada no WPW, torsades com magnésio e efeitos adversos da amiodarona.",
-    "prioridadeProva": "alta"
+    "comoCai": [
+      "Instável → cardioversão sincronizada; QRS largo irregular → desfibrilação",
+      "Cargas: estreito regular 50–100 J; FA/flutter 200 J; largo regular 100 J",
+      "Criança: 0,5–1 J/kg",
+      "TPSV: Valsalva modificada, adenosina 6 mg e 12 mg",
+      "QRS largo = TV até prova em contrário; amiodarona",
+      "Flutter 2:1 = 150 bpm; adenosina revela ondas F",
+      "Taquicardia atrial multifocal: ≥ 3 morfologias de P, DPOC",
+      "WPW: PR curto + onda delta; ablação",
+      "FA pré-excitada: nada que bloqueie o nó AV; cardioversão",
+      "Torsades: sulfato de magnésio",
+      "Brugada: supra de ST em V1–V3, febre desmascara",
+      "Vaughan-Williams e toxicidade da amiodarona"
+    ],
+    "prioridadeProva": "alta",
+    "revisaoProvas": true
   },
   {
     "id": "bradiarritmias",
