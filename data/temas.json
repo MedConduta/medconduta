@@ -30446,25 +30446,71 @@
     "area": "residencia",
     "categoria": "Dermatologia",
     "titulo": "Oncologia Cutânea: Câncer de Pele",
-    "resumo": "Os três principais tipos de câncer de pele (carcinoma basocelular, carcinoma espinocelular e melanoma), seus fatores de risco, características clínicas e a regra do ABCDE para lesões pigmentadas suspeitas.",
+    "resumo": "Câncer de pele: fatores de risco (UVB, fototipo, imunossupressão, genodermatoses), prevenção e rastreamento; carcinoma basocelular (subtipos, alto risco, margens, Mohs, Hedgehog); lesões pré-malignas (ceratose e queilite actínica, Bowen, ceratoacantoma) e carcinoma espinocelular (úlcera de Marjolin, transplantados, metástase linfonodal, cemiplimabe); melanoma (fatores de risco, ABCDE, subtipos, biópsia excisional, Breslow, AJCC 8, ampliação de margens, linfonodo sentinela, adjuvância e doença metastática); Merkel, dermatofibrossarcoma e Kaposi.",
     "revisado": true,
-    "fonte": "Fitzpatrick's Dermatology; Sampaio & Rivitti, Dermatologia",
+    "fonte": "Estratégia MED 2026 (Oncologia cutânea, Prof. Bruno Souza); INCA, Estimativa 2023 e câncer de pele; NCCN Guidelines: Melanoma: Cutaneous, Basal Cell and Squamous Cell Skin Cancers (2024–2025); AJCC Cancer Staging Manual, 8ª ed. (Gershenwald et al., CA Cancer J Clin 2017); Faries et al., MSLT-II, N Engl J Med 2017; Leiter et al., DeCOG-SLT, Lancet Oncol 2016; Eggermont et al., KEYNOTE-054, N Engl J Med 2018; Weber et al., CheckMate 238, N Engl J Med 2017; Long et al., COMBI-AD, N Engl J Med 2017; Migden et al., cemiplimabe no CEC cutâneo, N Engl J Med 2018; USPSTF, Skin cancer screening, JAMA 2023; Sociedade Brasileira de Dermatologia",
     "secoes": [
       {
-        "titulo": "Carcinoma basocelular (CBC)",
-        "conteudo": "É o câncer de pele MAIS COMUM em geral, de crescimento lento e baixíssimo potencial de metástase (mas com capacidade de invasão local destrutiva se não tratado). Fator de risco principal: exposição solar cumulativa/intermitente intensa, pele clara. Apresentação clássica: pápula/nódulo perolado, translúcido, com telangiectasias na superfície e bordas peroladas elevadas, mais comum em áreas fotoexpostas da face. Tratamento: exérese cirúrgica com margens, com excelente prognóstico na maioria dos casos.",
+        "titulo": "Visão geral, fatores de risco e prevenção",
+        "conteudo": "<p>Câncer de pele é o câncer mais comum no Brasil e no mundo (o não melanoma responde por cerca de 30% de todos os tumores malignos registrados; INCA). Divide-se em <b>câncer de pele não melanoma</b> (CPNM: carcinoma basocelular e espinocelular) e <b>melanoma</b>. Ordem de frequência: <b>CBC &gt; CEC &gt; melanoma</b> (UNICAMP 2026); o melanoma é o menos comum e o que mais mata.</p><div class=\"table-wrap\"><table><thead><tr><th>Fator</th><th>Comentário</th></tr></thead><tbody><tr><td>Radiação ultravioleta</td><td><b>UVB</b> (290–320 nm): queimadura solar e carcinogênese; <b>UVA</b> (320–400 nm): fotoenvelhecimento, atravessa vidro, também carcinogênica. O espectro varia com hora, estação e altitude (ABC-SP 2019). Câmaras de bronzeamento são proibidas no Brasil (Anvisa) e aumentam o risco</td></tr><tr><td>Fototipo</td><td>Pele, olhos e cabelos claros (Fitzpatrick I e II), efélides, queimaduras na infância</td></tr><tr><td>Imunossupressão</td><td><b>Transplantados de órgão sólido</b>: o CEC passa a ser o mais comum (risco 65 a 250 vezes maior; FAMERP 2023); HIV, LLC</td></tr><tr><td>Genodermatoses</td><td><b>Xeroderma pigmentoso</b> (defeito de reparo do DNA: CBC, CEC e melanoma na infância), <b>albinismo</b> (sobretudo CEC; USP-SP 2025), síndrome de Gorlin (CBC múltiplos)</td></tr><tr><td>Outros</td><td>Arsênico, radiação ionizante, HPV, cicatrizes e úlceras crônicas (CEC), nevo congênito gigante e múltiplos nevos (melanoma); história pessoal de CPNM aumenta o risco de novo câncer de pele (UFCSPA 2023)</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Prevenção e rastreamento</span><ul><li>Fotoproteção: evitar sol entre 10 e 16 horas, roupas, chapéu, filtro com FPS ≥ 30 reaplicado a cada 2 horas (CERMAM 2022). Bronzeamento artificial não é preferível ao natural.</li><li>Criança: evitar filtro antes dos 6 meses (sombra e roupas); de 6 meses a 2 anos, preferir filtros físicos (inorgânicos); acima de 2 anos, filtros químicos podem ser usados (SBP).</li><li><b>Rastreamento populacional</b> com exame de pele não tem evidência de redução de mortalidade (USPSTF 2023, grau I; ENARE 2021); examinar a pele de quem tem fatores de risco e orientar autoexame.</li><li>Prevenção primária (fotoproteção, sobretudo na infância) é a medida mais custo-efetiva.</li></ul></div><p>Ceratose seborreica é <b>benigna</b> e não é precursora de câncer (ABC-SP 2015; PUC-Sorocaba 2026): placa acastanhada “colada”, verrucosa, em idosos. Surgimento súbito de muitas ceratoses seborreicas (sinal de Leser-Trélat) sugere neoplasia interna, sobretudo gástrica.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unicamp/2026/2026-781904bb-q006-1.webp",
+            "legenda": "UNICAMP 2026: nódulo perolado (CBC), lesão ulcerada e crostosa no lábio (CEC) e lesão pigmentada heterogênea (melanoma): do mais para o menos frequente.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Carcinoma basocelular",
+        "conteudo": "<p>É o câncer de pele MAIS COMUM em geral, de crescimento lento e baixíssimo potencial de metástase (mas com capacidade de invasão local destrutiva se não tratado). Fator de risco principal: exposição solar cumulativa/intermitente intensa, pele clara. Apresentação clássica: pápula/nódulo perolado, translúcido, com telangiectasias na superfície e bordas peroladas elevadas, mais comum em áreas fotoexpostas da face. Tratamento: exérese cirúrgica com margens, com excelente prognóstico na maioria dos casos.</p><p>Deriva das células da camada basal e do folículo piloso; <b>não tem lesão precursora</b>; associa-se à exposição solar intermitente intensa. Localiza-se sobretudo no terço superior da face (nariz, canto interno do olho, pálpebra inferior). É a neoplasia maligna mais comum da pálpebra (ABC-SP 2018). Metástase é raríssima (&lt; 0,1%), mas a invasão local destrói cartilagem e osso (“úlcera roedora”).</p><div class=\"table-wrap\"><table><thead><tr><th>Subtipo</th><th>Clínica</th><th>Comportamento</th></tr></thead><tbody><tr><td><b>Nodular</b> (sólido)</td><td>~50%; <b>pápula ou nódulo perolado</b>, brilhante, com <b>telangiectasias arboriformes</b>; ulcera no centro com bordas peroladas e crosta (ENARE 2023)</td><td>Baixo risco se pequeno e fora da face central</td></tr><tr><td>Superficial</td><td>Placa eritematosa descamativa no tronco, borda perolada fina; confunde com doença de Bowen e eczema</td><td>Baixo risco; aceita tratamentos não cirúrgicos</td></tr><tr><td><b>Esclerodermiforme</b> (morfeiforme, infiltrativo)</td><td>Placa branco-amarelada, endurecida, parecida com <b>cicatriz</b>, limites imprecisos (ENARE 2026)</td><td>Agressivo, extensão subclínica; Mohs</td></tr><tr><td>Pigmentado</td><td>Nódulo perolado com pigmento</td><td>Diferencial com melanoma (USP-SP 2023)</td></tr><tr><td>Fibroepitelioma de Pinkus</td><td>Pápula rósea pedunculada na região lombossacra</td><td>Baixo risco</td></tr><tr><td>Micronodular e basoescamoso</td><td></td><td>Alto risco de recidiva</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Situação</th><th>Tratamento</th></tr></thead><tbody><tr><td>Diagnóstico</td><td>Clínico e dermatoscopia; confirmar com <b>biópsia incisional</b> (punch) antes de cirurgia ampla, ou excisional se pequena</td></tr><tr><td>Baixo risco (tronco e membros, &lt; 2 cm, bem delimitado, nodular ou superficial, primário)</td><td><b>Excisão com margem de 4 mm</b> (cura &gt; 95%); superficial: curetagem e eletrocoagulação, crioterapia, imiquimode, 5-fluoruracila tópica, terapia fotodinâmica</td></tr><tr><td><b>Alto risco</b>: localização na face central (“zona H”: nariz, pálpebras, orelhas, lábios; a localização decide a margem, HCPA-RS 2023), &gt; 2 cm no tronco, limites imprecisos, recidivado, esclerodermiforme, infiltrativo, micronodular, basoescamoso, invasão perineural, imunossuprimido</td><td><b>Cirurgia micrográfica de Mohs</b> (ENARE 2026; USP-RP 2021 e 2026) ou excisão com margens maiores (≥ 4–5 mm na face, maiores no esclerodermiforme) com controle de margens; radioterapia adjuvante se invasão perineural extensa (UNICAMP 2025)</td></tr><tr><td>Sem condição cirúrgica</td><td>Radioterapia</td></tr><tr><td>Localmente avançado, metastático ou múltiplo inoperável</td><td><b>Inibidores da via Hedgehog</b> (vismodegibe, sonidegibe; ENARE 2026); síndrome de Gorlin tem mutação PTCH1 da mesma via</td></tr></tbody></table></div>",
         "imagens": [
           {
             "url": "imagens/questoes/unitau/2026/2026-a1ba202a-q010-1.webp",
             "legenda": "Pápula perolada, brilhante, com bordas peroladas e telangiectasias no canto interno do olho — carcinoma basocelular nodular.",
             "fonte": "Imagem de questão de prova — UNITAU 2026"
+          },
+          {
+            "url": "imagens/questoes/unesp/2021/2021-07188240-q051-1.webp",
+            "legenda": "UNESP 2021: nódulo eritematoperláceo com telangiectasias na região zigomática de pescador idoso: carcinoma basocelular nodular.",
+            "fonte": "Imagem de questão de prova — UNESP 2021"
+          },
+          {
+            "url": "imagens/questoes/unesp/2024/2024-b25873ac-q096-1.webp",
+            "legenda": "UNESP 2024: lesão ulcerada com crosta e bordas peroladas no dorso nasal de trabalhador rural: carcinoma basocelular (zona de alto risco).",
+            "fonte": "Imagem de questão de prova — UNESP 2024"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2022/2022-970bd5ad-q068-1.webp",
+            "legenda": "USP-RP 2022: nódulo pigmentado de crescimento lento na região malar: carcinoma basocelular, variante pigmentada, diferencial de melanoma.",
+            "fonte": "Imagem de questão de prova — USP-RP 2022"
           }
         ]
       },
       {
-        "titulo": "Carcinoma espinocelular (CEC)",
-        "conteudo": "Segundo câncer de pele mais comum, origina-se dos queratinócitos da epiderme, com maior potencial de metástase que o CBC (ainda que globalmente baixo, exceto em lesões de mucosa/lábio/orelha ou imunossuprimidos). Associado a exposição solar cumulativa, lesões pré-malignas (queratose actínica), úlceras crônicas (úlcera de Marjolin — CEC que se desenvolve sobre cicatriz de queimadura antiga) e imunossupressão (transplantados). Apresentação: placa/nódulo eritematoso, com superfície ceratósica, ulcerada ou verrucosa, de crescimento mais rápido que o CBC.",
+        "titulo": "Lesões pré-malignas e carcinoma espinocelular",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Lesão</th><th>Pistas</th><th>Conduta</th></tr></thead><tbody><tr><td><b>Ceratose actínica</b></td><td>Precursora mais comum de CEC e lesão pré-maligna mais prevalente (ABC-SP 2024); pápulas eritematosas ásperas, “mais palpáveis que visíveis”, múltiplas em área fotoexposta (sinal da vizinhança)</td><td>Crioterapia; tratamento de campo com 5-fluoruracila, imiquimode ou terapia fotodinâmica</td></tr><tr><td><b>Queilite actínica</b></td><td>Ceratose actínica do <b>lábio inferior</b>: perda da nitidez do contorno labial e apagamento do limite entre vermelhão e pele (UNESP 2018)</td><td>Fotoproteção labial, tratamento de campo, biópsia se infiltrada ou ulcerada</td></tr><tr><td>Corno cutâneo</td><td>Projeção ceratósica em chifre; na base pode haver ceratose, CEC ou verruga</td><td>Excisão com análise da base</td></tr><tr><td><b>Doença de Bowen</b></td><td><b>CEC in situ</b>: placa eritematosa bem delimitada com áreas ceratósicas; parece CBC superficial; na glande, eritroplasia de Queyrat; biópsia confirma</td><td>Excisão, curetagem, crioterapia, imiquimode, 5-FU, terapia fotodinâmica</td></tr><tr><td>Ceratoacantoma</td><td>Pápula que cresce em semanas para nódulo com <b>cratera central de queratina</b> e pode regredir</td><td>Variante de CEC bem diferenciado: tratar como CEC (excisão)</td></tr></tbody></table></div><p>Segundo câncer de pele mais comum, origina-se dos queratinócitos da epiderme, com maior potencial de metástase que o CBC (ainda que globalmente baixo, exceto em lesões de mucosa/lábio/orelha ou imunossuprimidos). Associado a exposição solar cumulativa, lesões pré-malignas (queratose actínica), úlceras crônicas (úlcera de Marjolin — CEC que se desenvolve sobre cicatriz de queimadura antiga) e imunossupressão (transplantados). Apresentação: placa/nódulo eritematoso, com superfície ceratósica, ulcerada ou verrucosa, de crescimento mais rápido que o CBC.</p><p>Deriva dos <b>queratinócitos</b> da camada espinhosa (USP-RP 2024), em idosos com fotodano crônico (exposição solar <b>cumulativa</b>; HCPA-RS 2025). Clínica: placa ou nódulo eritematoceratósico, infiltrado, ulcerado ou vegetante, crescimento mais rápido que o CBC, sem brilho perolado. Na face, o local mais acometido é o <b>lábio inferior</b> (ENARE 2025). Metástase em cerca de 5%, pela via <b>linfática</b>: tumores de orelha, têmpora e região malar drenam para a <b>parótida</b> (USP-RP 2024).</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Úlcera de Marjolin</span><ul><li>CEC sobre <b>cicatriz de queimadura</b>, úlcera venosa crônica (UNIFESP 2022), osteomielite com fístula (USP-SP 2025), radiodermite, lúpus discoide, hidradenite ou cicatrizes cirúrgicas (SURCE 2022).</li><li>Ferida antiga que muda de aspecto, vegeta ou sangra: biópsia de borda (ENARE 2024; USP-RP 2026).</li><li>Pior prognóstico e maior risco de metástase linfonodal que o CEC comum.</li></ul></div><div class=\"table-wrap\"><table><thead><tr><th></th><th>Carcinoma basocelular</th><th>Carcinoma espinocelular</th></tr></thead><tbody><tr><td>Epidemiologia</td><td>Tumor maligno mais comum</td><td>2º mais comum; o mais comum em transplantados</td></tr><tr><td>Clínica</td><td>Brilho perolado e telangiectasias</td><td>Mais ceratósico e infiltrado</td></tr><tr><td>Exposição solar</td><td>Intermitente</td><td>Crônica, com intenso fotodano</td></tr><tr><td>Precursora</td><td>Não tem</td><td>Ceratose actínica, úlceras, queimaduras, cicatrizes</td></tr><tr><td>Metástase</td><td>Muito rara</td><td>Rara (~5%); maior em lábio, orelha, cicatriz e imunossuprimido</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>CEC</th><th>Tratamento</th></tr></thead><tbody><tr><td>Baixo risco</td><td>Excisão com margem de 4–6 mm</td></tr><tr><td>Alto risco: &gt; 2 cm, profundidade &gt; 6 mm ou além do subcutâneo, pouco diferenciado, <b>invasão perineural</b> (ABC-SP 2020), lábio ou orelha, recidivado, cicatriz, imunossuprimido</td><td>Mohs ou margens amplas com controle intraoperatório (USP-SP 2023); avaliar linfonodos; radioterapia adjuvante se perineural</td></tr><tr><td>Localmente avançado ou metastático</td><td><b>Cemiplimabe</b> (anti-PD-1; USP-SP 2025) ou pembrolizumabe</td></tr></tbody></table></div>",
         "imagens": [
+          {
+            "url": "imagens/questoes/surce/2014/2014-831f3cf7-q002-1.webp",
+            "legenda": "SURCE 2014: nódulo ceratósico com cratera no dorso da mão de transplantada renal e tabagista: carcinoma espinocelular.",
+            "fonte": "Imagem de questão de prova — SURCE 2014"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2021/2021-83e26555-q055-1.webp",
+            "legenda": "USP-RP 2021: couro cabeludo com fotodano, ceratoses actínicas e tumor ceratósico ulcerado em transplantado renal: carcinoma espinocelular.",
+            "fonte": "Imagem de questão de prova — USP-RP 2021"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2024/2024-96c6400f-q031-1.webp",
+            "legenda": "USP-RP 2024: nódulo ulcerado e crostoso no pavilhão auricular: carcinoma espinocelular, derivado do queratinócito.",
+            "fonte": "Imagem de questão de prova — USP-RP 2024"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2024/2024-966ffa55-q043-1.webp",
+            "legenda": "USP-RP 2024: CEC ulcerovegetante extenso na região pré-auricular, de rápida evolução: a parótida é sítio importante de metástase regional.",
+            "fonte": "Imagem de questão de prova — USP-RP 2024"
+          },
           {
             "url": "imagens/questoes/usp-rp/2026/2026-0a3b1810-q009-1.webp",
             "legenda": "Lesão ulcerovegetante e crostosa sobre cicatriz antiga de queimadura não enxertada — úlcera de Marjolin (carcinoma espinocelular em cicatriz).",
@@ -30473,29 +30519,126 @@
         ]
       },
       {
-        "titulo": "Melanoma — o mais grave",
-        "conteudo": "Origina-se dos melanócitos, é responsável pela grande maioria das mortes por câncer de pele apesar de ser menos comum que CBC/CEC, pelo seu alto potencial de metástase precoce. Fatores de risco: exposição solar intermitente intensa (especialmente queimaduras solares na infância), pele clara, múltiplos nevos, história familiar/pessoal de melanoma, síndrome do nevo displásico."
+        "titulo": "Melanoma: fatores de risco e subtipos",
+        "conteudo": "<p>Origina-se dos melanócitos, é responsável pela grande maioria das mortes por câncer de pele apesar de ser menos comum que CBC/CEC, pelo seu alto potencial de metástase precoce. Fatores de risco: exposição solar intermitente intensa (especialmente queimaduras solares na infância), pele clara, múltiplos nevos, história familiar/pessoal de melanoma, síndrome do nevo displásico.</p><p>Neoplasia dos melanócitos, mais comum entre 20 e 50 anos (mas a incidência cresce com a idade). Nos homens predomina no <b>tronco</b> e nas mulheres nos <b>membros inferiores</b>. Cerca de 70% surgem em <b>pele normal</b> (de novo) e 30% sobre nevo preexistente (é falso que 70% venham de nevo prévio).</p><div class=\"table-wrap\"><table><thead><tr><th>Fator de risco</th><th>Comentário</th></tr></thead><tbody><tr><td>Queimaduras solares com bolhas, sobretudo na infância</td><td>Exposição intermitente intensa</td></tr><tr><td>Nevos</td><td>&gt; 50–100 nevos comuns, &gt; 5 nevos atípicos (síndrome do nevo displásico), <b>nevo congênito gigante</b> (&gt; 20 cm na vida adulta; USP-SP 2024)</td></tr><tr><td>História pessoal ou familiar</td><td>Melanoma prévio; 10% familiares (CDKN2A)</td></tr><tr><td>Genético</td><td>Xeroderma pigmentoso, fototipo claro, albinismo (ENARE 2021)</td></tr><tr><td>Imunossupressão</td><td>Transplante, HIV</td></tr></tbody></table></div><div class=\"table-wrap\"><table><thead><tr><th>Subtipo</th><th>Clínica</th><th>Comentário</th></tr></thead><tbody><tr><td><b>Extensivo superficial</b></td><td>Placa enegrecida, assimétrica, várias cores</td><td><b>Mais comum</b> (~70%); fase de crescimento radial prolongada; tronco e pernas</td></tr><tr><td><b>Nodular</b></td><td>Nódulo preto (ou amelanótico) simétrico de <b>crescimento rápido</b>, pode sangrar (UNESP 2026)</td><td>2º mais comum; <b>sem fase radial</b>, crescimento vertical desde o início (IAMSPE 2020), pior prognóstico e escapa do ABCDE</td></tr><tr><td><b>Lentigo maligno</b> melanoma</td><td>Mancha acastanhada irregular, grande, de crescimento lento na <b>face</b> de idosos (melanose de Hutchinson)</td><td>Exclusivo de área fotoexposta, exposição crônica (UNICAMP 2022; USP-RP 2016)</td></tr><tr><td><b>Lentiginoso acral</b></td><td>Mancha escura em <b>planta</b>, palma ou <b>subungueal</b>: melanoníquia estriada e <b>sinal de Hutchinson</b> (pigmento na dobra periungueal)</td><td><b>Mais comum em negros e asiáticos</b> (AMRIGS 2019; ENARE 2026; SES-GO 2025); não relacionado ao sol; diagnóstico tardio</td></tr><tr><td>Amelanótico</td><td>Nódulo róseo sem pigmento</td><td>Diagnóstico tardio (USP-SP 2026)</td></tr></tbody></table></div><p>Melanoma também ocorre em mucosas, olho (úvea; metástase hepática) e meninges. Nevo de Ota: mancha azul-acinzentada periorbital no território do trigêmeo (ENARE 2025), benigna, com pequeno risco de melanoma ocular.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/puc-sorocaba/2023/2023-5424dddf-q014-1.webp",
+            "legenda": "PUC-Sorocaba 2023: placa pigmentada assimétrica, de bordas irregulares e várias cores (marrom, preto, rosado): melanoma extensivo superficial.",
+            "fonte": "Imagem de questão de prova — PUC-SOROCABA 2023"
+          },
+          {
+            "url": "imagens/questoes/unicamp/2022/2022-224a6f8d-q068-1.webp",
+            "legenda": "UNICAMP 2022: mancha acastanhada extensa na face de idosa, com área mais escura e irregular: lentigo maligno evoluindo para melanoma.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2022"
+          },
+          {
+            "url": "imagens/questoes/unesp/2021/2021-07188240-q059-1.webp",
+            "legenda": "UNESP 2021: melanoníquia estriada larga com pigmento na dobra periungueal (sinal de Hutchinson) em mulher oriental: melanoma lentiginoso acral.",
+            "fonte": "Imagem de questão de prova — UNESP 2021"
+          },
+          {
+            "url": "imagens/questoes/sus-sp/2010/2010-cc25e22d-q083-1.webp",
+            "legenda": "SUS-SP 2010: lesão enegrecida irregular na planta do pé: melanoma acral; o principal dado prognóstico do laudo é a espessura.",
+            "fonte": "Imagem de questão de prova — SUS-SP 2010"
+          }
+        ]
       },
       {
-        "titulo": "Regra do ABCDE e diagnóstico do melanoma",
-        "conteudo": "Usada para avaliar lesões pigmentadas suspeitas: Assimetria (uma metade não é igual à outra), Bordas irregulares (mal definidas, denteadas), Cor variada/heterogênea (múltiplos tons de marrom, preto, vermelho, branco ou azul na mesma lesão), Diâmetro >6mm, Evolução (mudança de tamanho, forma, cor ou sintomas — o critério mais importante na prática, pois capta lesões que mudam ao longo do tempo). O sinal do \"patinho feio\" (lesão que difere visualmente das demais no mesmo paciente) também levanta suspeita. Diagnóstico confirmado por biópsia excisional com margem estreita; a espessura de Breslow (profundidade de invasão) é o principal fator prognóstico."
+        "titulo": "Melanoma: suspeita e biópsia",
+        "conteudo": "<p>Usada para avaliar lesões pigmentadas suspeitas: Assimetria (uma metade não é igual à outra), Bordas irregulares (mal definidas, denteadas), Cor variada/heterogênea (múltiplos tons de marrom, preto, vermelho, branco ou azul na mesma lesão), Diâmetro >6mm, Evolução (mudança de tamanho, forma, cor ou sintomas — o critério mais importante na prática, pois capta lesões que mudam ao longo do tempo). O sinal do \"patinho feio\" (lesão que difere visualmente das demais no mesmo paciente) também levanta suspeita. Diagnóstico confirmado por biópsia excisional com margem estreita; a espessura de Breslow (profundidade de invasão) é o principal fator prognóstico.</p><div class=\"table-wrap\"><table><thead><tr><th>ABCDE</th><th>Significado</th></tr></thead><tbody><tr><td>A</td><td>Assimetria</td></tr><tr><td>B</td><td>Bordas irregulares</td></tr><tr><td>C</td><td>Cores variadas (coloração heterogênea é o achado mais sugestivo em ABC-SP 2021)</td></tr><tr><td>D</td><td>Diâmetro &gt; 6 mm (PUC-Sorocaba 2020)</td></tr><tr><td>E</td><td>Evolução: mudança de tamanho, forma, cor, relevo, sangramento ou prurido; o critério mais valorizado</td></tr></tbody></table></div><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Lesão pigmentada suspeita</div><div class=\"fluxo-resumo__passo\">ABCDE, patinho feio, dermatoscopia (na APS, encaminhar ao dermatologista; SURCE 2022)</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b><b>Biópsia excisional</b></b>: Margens laterais de <b>1–3 mm</b>, profundidade até o <b>subcutâneo</b>, incisão <b>longitudinal</b> ao eixo do membro (no sentido da drenagem linfática), fechamento primário; evitar margens amplas e retalhos que alterem a drenagem para o linfonodo sentinela (UNICAMP 2022; USP-SP 2025)</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__ramos\"><div class=\"fluxo-resumo__passo\"><b>Lesão grande, face, palma, planta ou subungueal</b>: <b>Biópsia incisional</b> ou punch na área mais espessa ou escura (USP-SP 2018; SURCE 2023)</div><div class=\"fluxo-resumo__passo\"><b>Nunca</b>: <b>Shaving</b> (impede medir Breslow), <b>PAAF</b> do primário, congelação intraoperatória para Breslow</div></div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\">Anatomopatológico: in situ ou invasivo, Breslow, ulceração, mitoses, margens, microssatelitose</div></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/hcpa-rs/2022/2022-4c1910c0-q051-1.webp",
+            "legenda": "HCPA-RS 2022: lesão pigmentada assimétrica no dorso, com bordas irregulares e várias tonalidades, em crescimento: biópsia excisional com margem mínima de pele normal.",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2022"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2022/2022-970bd5ad-q070-1.webp",
+            "legenda": "USP-RP 2022: lesão enegrecida de bordas irregulares no braço de mulher jovem: suspeita de melanoma, conduta inicial é biópsia excisional.",
+            "fonte": "Imagem de questão de prova — USP-RP 2022"
+          }
+        ]
       },
       {
-        "titulo": "Tratamento e prevenção",
-        "conteudo": "Exérese cirúrgica com margens adequadas conforme a espessura de Breslow é o tratamento primário do melanoma; biópsia de linfonodo sentinela é indicada conforme espessura e ulceração. Doença metastática é tratada com imunoterapia (inibidores de checkpoint) e terapia-alvo (nos casos com mutação BRAF). Prevenção primária (fotoproteção, evitar exposição solar excessiva/queimaduras, especialmente na infância) é a medida mais custo-efetiva de saúde pública contra os três tipos de câncer de pele."
+        "titulo": "Melanoma: estadiamento e prognóstico",
+        "conteudo": "<p>O <b>índice de Breslow</b> mede, em milímetros, da camada granulosa até a célula tumoral mais profunda; é o <b>principal fator prognóstico do melanoma localizado</b> (SES-GO 2022; FAMERP 2020 e 2024; UNIFESP 2020). A <b>ulceração</b> é o segundo e muda o estadiamento (UNESP 2019; UNICAMP 2023, 2024 e 2026). Quando há doença regional, o comprometimento do <b>linfonodo sentinela</b> é o fator de maior risco de morte (USP-SP 2022).</p><div class=\"table-wrap\"><table><thead><tr><th>T (AJCC 8)</th><th>Breslow</th><th>a / b</th></tr></thead><tbody><tr><td>Tis</td><td>In situ</td><td></td></tr><tr><td>T1</td><td>≤ 1,0 mm</td><td>T1a: &lt; 0,8 mm sem ulceração; <b>T1b</b>: 0,8–1,0 mm, ou &lt; 0,8 mm com ulceração (SES-DF 2025; ABC-SP 2019)</td></tr><tr><td>T2</td><td>&gt; 1,0–2,0 mm</td><td>a sem / b com ulceração</td></tr><tr><td>T3</td><td>&gt; 2,0–4,0 mm</td><td>a sem / b com ulceração</td></tr><tr><td>T4</td><td>&gt; 4,0 mm</td><td>a sem / b com ulceração</td></tr></tbody></table></div><p>O T é definido pela <b>profundidade</b>, nunca pelo diâmetro (SES-DF 2025). N: linfonodos e metástases em trânsito, satélites e <b>microssatélites</b> (USP-SP 2017). M: local da metástase e <b>LDH</b> elevada (pior prognóstico; FAMERP 2023). Micrometástase linfonodal: depósitos de 0,2 a 2 mm (SCM-SP 2022).</p><div class=\"table-wrap\"><table><thead><tr><th>Nível de Clark (histórico)</th><th>Profundidade</th></tr></thead><tbody><tr><td>I</td><td>Intraepidérmico (in situ)</td></tr><tr><td>II</td><td>Derme papilar</td></tr><tr><td>III</td><td>Interface derme papilar e reticular</td></tr><tr><td>IV</td><td>Derme reticular</td></tr><tr><td>V</td><td>Subcutâneo</td></tr></tbody></table></div><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Outros fatores de pior prognóstico</span><ul><li>Índice mitótico elevado, invasão angiolinfática, regressão extensa.</li><li>Sexo masculino, idade avançada, localização em tronco, cabeça e pescoço e acral.</li><li>Subtipo nodular por crescimento vertical precoce (a lesão progride para metástase na fase de crescimento vertical; SES-RJ 2019).</li><li>Metástases extranodais mais comuns: pulmão, fígado, cérebro, pele.</li></ul></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Mitoses e Clark no estadiamento</span><p><b>Provas/Estratégia:</b> ABC-SP 2022 indica sentinela por Breslow ≥ 0,75 mm com mitoses ≥ 5/mm²; o Estratégia ainda lista Clark e mitoses</p><p><b>Evidência atual:</b> AJCC 8 (2018) retirou índice mitótico e nível de Clark do T; T1b é 0,8–1,0 mm ou ulcerado</p><p><b>Na prova:</b> Use Breslow e ulceração; mitoses ficam como fator prognóstico, não como critério de T</p></div>"
+      },
+      {
+        "titulo": "Melanoma: tratamento",
+        "conteudo": "<p>Exérese cirúrgica com margens adequadas conforme a espessura de Breslow é o tratamento primário do melanoma; biópsia de linfonodo sentinela é indicada conforme espessura e ulceração. Doença metastática é tratada com imunoterapia (inibidores de checkpoint) e terapia-alvo (nos casos com mutação BRAF). Prevenção primária (fotoproteção, evitar exposição solar excessiva/queimaduras, especialmente na infância) é a medida mais custo-efetiva de saúde pública contra os três tipos de câncer de pele.</p><div class=\"table-wrap\"><table><thead><tr><th>Breslow</th><th>Ampliação de margem</th></tr></thead><tbody><tr><td>In situ</td><td><b>0,5–1 cm</b> (USP-SP 2023 e 2025); lentigo maligno pode exigir mais ou Mohs</td></tr><tr><td>≤ 1 mm</td><td><b>1 cm</b> (ABC-SP 2022; UERJ 2023; USP-RP 2023)</td></tr><tr><td>&gt; 1–2 mm</td><td><b>1–2 cm</b> (SES-RJ 2025; USP-SP 2023 e 2026)</td></tr><tr><td>&gt; 2 mm</td><td><b>2 cm</b> (UFRJ 2020; UNIFESP 2018)</td></tr></tbody></table></div><p>A ampliação inclui pele e subcutâneo até a fáscia; fechamento primário é preferível a retalhos extensos. Melanoma subungueal: amputação do dedo (no nível da interfalangiana distal ou proximal à lesão; IAMSPE 2019); hálux com linfonodo sentinela (USP-RP 2025).</p><div class=\"table-wrap\"><table><thead><tr><th>Linfonodo sentinela (NCCN)</th><th>Conduta</th></tr></thead><tbody><tr><td>T1a (&lt; 0,8 mm sem ulceração)</td><td>Não indicado</td></tr><tr><td><b>T1b</b> (0,8–1,0 mm ou ulcerado)</td><td>Discutir e oferecer (SES-DF 2026)</td></tr><tr><td><b>&gt; 1 mm</b> (T2 a T4)</td><td><b>Indicado</b> (UEPA 2025; UNIFESP 2023; USP-SP 2026), junto com a ampliação</td></tr><tr><td>Linfonodo clinicamente palpável</td><td>Não faz sentinela: <b>PAAF ou core biópsia</b> do linfonodo (USP-SP 2019; USP-RP 2021; UNIFESP 2024; HCPA-RS 2020 e 2026), estadiamento e linfadenectomia terapêutica</td></tr></tbody></table></div><p>Técnica: linfocintilografia com <b>tecnécio-99m</b> (IAMSPE 2025) e injeção intradérmica de <b>azul patente</b> ao redor da cicatriz (USP-SP 2022). O principal benefício é estadiar e evitar dissecções desnecessárias (UFRJ 2024).</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Sentinela positivo (micrometástase)</div><div class=\"fluxo-resumo__passo\"><b>Não fazer linfadenectomia de rotina</b>: <b>Seguimento com ultrassonografia</b> da cadeia (MSLT-II, DeCOG-SLT: sem ganho de sobrevida; USP-RP 2020 e 2025; UNICAMP 2020)</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Adjuvância sistêmica (estádio III e IIB/IIC)</b>: <b>Anti-PD-1</b> (nivolumabe, pembrolizumabe) ou, se <b>BRAF V600</b>, dabrafenibe + trametinibe (SES-RJ 2025)</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\">Linfadenectomia: macrometástase palpável ou recidiva nodal (UNICAMP 2019)</div></div><div class=\"table-wrap\"><table><thead><tr><th>Doença metastática</th><th>Opções</th></tr></thead><tbody><tr><td>Estadiamento</td><td>TC de tórax, abdome e pelve (USP-SP 2026) ou PET-CT e RM de crânio nos estádios III e IV; melanoma in situ e estádio I não precisam de imagem</td></tr><tr><td>Imunoterapia</td><td><b>Anti-PD-1</b> (pembrolizumabe, nivolumabe; HIAE-SP 2026), isolado ou com <b>anti-CTLA-4</b> (ipilimumabe); efeitos imunomediados (colite, tireoidite, hipofisite); <b>vitiligo induzido</b> indica resposta (UNESP 2026)</td></tr><tr><td>Terapia-alvo</td><td><b>BRAF V600</b> (mutação mais comum, ~50%; SES-DF 2025): inibidor de BRAF + MEK (vemurafenibe ou dabrafenibe + trametinibe)</td></tr><tr><td>Quimioterapia</td><td>Dacarbazina: resultados pobres, apenas sem outras opções; interferon abandonado</td></tr><tr><td>Metástase única ressecável</td><td>Cirurgia (pulmão, cérebro) com biópsia de confirmação</td></tr></tbody></table></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Linfonodo sentinela positivo</span><p><b>Provas/Estratégia:</b> USP-RP 2021 marca que se esvazia a cadeia correspondente</p><p><b>Evidência atual:</b> MSLT-II e DeCOG-SLT: a linfadenectomia completa não aumenta a sobrevida; NCCN recomenda vigilância ultrassonográfica e adjuvância sistêmica</p><p><b>Na prova:</b> Sem linfadenectomia de rotina (como o Estratégia e as provas recentes da USP-RP)</p></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Adjuvância no estádio III</span><p><b>Provas/Estratégia:</b> USP-SP 2018 marca “quimioterapia adjuvante”</p><p><b>Evidência atual:</b> Quimioterapia e interferon não são usados; padrão atual é anti-PD-1 ou dabrafenibe + trametinibe se BRAF V600 (KEYNOTE-054, CheckMate 238, COMBI-AD)</p><p><b>Na prova:</b> Leia “quimioterapia” como terapia sistêmica; a resposta moderna é imunoterapia ou terapia-alvo</p></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Margem no melanoma in situ</span><p><b>Provas/Estratégia:</b> Estratégia e provas antigas: 0,5 cm</p><p><b>Evidência atual:</b> NCCN atual: 0,5–1 cm; lentigo maligno pode precisar de margem maior ou Mohs</p><p><b>Na prova:</b> Responda 0,5 a 1 cm quando houver a opção</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-sp/2022/2022-332f643d-q010-1.webp",
+            "legenda": "USP-SP 2022: injeção intradérmica de azul patente ao redor da cicatriz da biópsia para identificar o linfonodo sentinela.",
+            "fonte": "Imagem de questão de prova — USP-SP 2022"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2021/2021-f00d1ecb-q068-1.webp",
+            "legenda": "USP-RP 2021: linfonodo sentinela corado em azul após injeção do corante na biópsia de melanoma.",
+            "fonte": "Imagem de questão de prova — USP-RP 2021"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2023/2023-7124c5f4-q005-1.webp",
+            "legenda": "USP-RP 2023: melanoma acral ulcerado e enegrecido no calcanhar: ampliação de margens e avaliação linfonodal.",
+            "fonte": "Imagem de questão de prova — USP-RP 2023"
+          }
+        ]
+      },
+      {
+        "titulo": "Outros tumores cutâneos",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Tumor</th><th>Pistas</th><th>Conduta</th></tr></thead><tbody><tr><td><b>Carcinoma de Merkel</b></td><td>Nódulo róseo-violáceo indolor de crescimento rápido em idoso, imunossuprimido, área fotoexposta; poliomavírus; <b>CK-20 positivo</b> (padrão perinuclear) e <b>TTF-1 negativo</b> (ENARE 2025)</td><td>Agressivo; excisão com margem 1–2 cm, linfonodo sentinela, radioterapia; avançado: anti-PD-L1 (avelumabe) ou anti-PD-1</td></tr><tr><td><b>Dermatofibrossarcoma protuberante</b></td><td>Placa endurecida e multinodular no tronco de adulto jovem, CD34 positivo, t(17;22)</td><td>Recidiva local frequente, metástase rara (IAMSPE 2019); Mohs ou margens de 2–3 cm; imatinibe</td></tr><tr><td>Sarcoma de Kaposi</td><td>Máculas, placas e nódulos violáceos em membros inferiores (clássico em idosos), mucosa e vísceras (aids); <b>HHV-8</b>; também em imunossuprimidos (USP-RP 2022, paciente com LLC)</td><td>Clássico localizado: observação, excisão, radioterapia; aids: terapia antirretroviral</td></tr><tr><td>Sarcoma de partes moles recidivado</td><td>Margem profunda comprometida (ABC-SP 2021)</td><td>Ressecção com margens e radioterapia adjuvante</td></tr><tr><td>Metástase cutânea</td><td>Nódulos sobre área de câncer prévio (mama)</td><td>Biópsia para definir a origem (USP-RP 2010)</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/usp-rp/2022/2022-cfdb47c8-q022-1.webp",
+            "legenda": "USP-RP 2022: máculas e placas violáceas no pé e tornozelo de paciente com leucemia linfocítica crônica: sarcoma de Kaposi.",
+            "fonte": "Imagem de questão de prova — USP-RP 2022"
+          }
+        ]
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "Associar cada tipo histológico à sua apresentação clássica (CBC = pápula perolada com telangiectasias; CEC = lesão ceratósica/ulcerada de crescimento mais rápido; melanoma = lesão pigmentada com ABCDE positivo) é o conteúdo mais cobrado. \"Evolução\" (mudança da lesão) é frequentemente o dado mais valorizado nas questões de melanoma, mais do que os critérios estáticos isolados."
+        "conteudo": "<p>Associar cada tipo histológico à sua apresentação clássica (CBC = pápula perolada com telangiectasias; CEC = lesão ceratósica/ulcerada de crescimento mais rápido; melanoma = lesão pigmentada com ABCDE positivo) é o conteúdo mais cobrado. \"Evolução\" (mudança da lesão) é frequentemente o dado mais valorizado nas questões de melanoma, mais do que os critérios estáticos isolados.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Frases-gatilho do Estratégia</span><ul><li>Pápula perolada com telangiectasias na face = CBC; biópsia e exérese com margem (4 mm; maior ou Mohs na zona H).</li><li>Lesão ceratósica ulcerada em lábio inferior, transplantado ou cicatriz = CEC.</li><li>Tumor sobre queimadura ou úlcera crônica = úlcera de Marjolin (CEC).</li><li>Lesão pigmentada suspeita = biópsia excisional com margem de 1–3 mm.</li><li>Breslow ≥ 1 mm = linfonodo sentinela; positivo = sem linfadenectomia, com adjuvância.</li><li>Melanoma em negros e asiáticos = lentiginoso acral; na face de idoso = lentigo maligno.</li><li>Fator prognóstico principal = Breslow; segundo = ulceração.</li></ul></div>"
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Linfonodo sentinela positivo</td><td>USP-RP 2021 marca que se esvazia a cadeia correspondente</td><td>MSLT-II e DeCOG-SLT: a linfadenectomia completa não aumenta a sobrevida; NCCN recomenda vigilância ultrassonográfica e adjuvância sistêmica</td><td>Sem linfadenectomia de rotina (como o Estratégia e as provas recentes da USP-RP)</td></tr><tr><td>Adjuvância no estádio III</td><td>USP-SP 2018 marca “quimioterapia adjuvante”</td><td>Quimioterapia e interferon não são usados; padrão atual é anti-PD-1 ou dabrafenibe + trametinibe se BRAF V600 (KEYNOTE-054, CheckMate 238, COMBI-AD)</td><td>Leia “quimioterapia” como terapia sistêmica; a resposta moderna é imunoterapia ou terapia-alvo</td></tr><tr><td>Mitoses e Clark no estadiamento</td><td>ABC-SP 2022 indica sentinela por Breslow ≥ 0,75 mm com mitoses ≥ 5/mm²; o Estratégia ainda lista Clark e mitoses</td><td>AJCC 8 (2018) retirou índice mitótico e nível de Clark do T; T1b é 0,8–1,0 mm ou ulcerado</td><td>Use Breslow e ulceração; mitoses ficam como fator prognóstico, não como critério de T</td></tr><tr><td>Margem no melanoma in situ</td><td>Estratégia e provas antigas: 0,5 cm</td><td>NCCN atual: 0,5–1 cm; lentigo maligno pode precisar de margem maior ou Mohs</td><td>Responda 0,5 a 1 cm quando houver a opção</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Dermatologia II</b> (semana 44 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Anafilaxia</li><li>Piodermites</li><li>Acne vulgar</li><li>Mpox</li><li>Herpes-Zóster</li><li>Angioedema Hereditário</li></ul>"
       }
     ],
-    "comoCai": "Cai como caso de lesão de pele suspeita pedindo a classificação do tipo de câncer cutâneo mais provável a partir das características morfológicas descritas.",
-    "mnemonicos": [],
-    "prioridadeProva": "media"
+    "comoCai": [
+      "Ordem de frequência: CBC, CEC, melanoma",
+      "CBC nodular: pápula perolada e telangiectasias",
+      "Zona H e Mohs no CBC",
+      "Úlcera de Marjolin = CEC",
+      "CEC no transplantado e no lábio inferior",
+      "ABCDE e biópsia excisional de 1–3 mm",
+      "Subtipos de melanoma (acral em negros)",
+      "Breslow e ulceração no prognóstico",
+      "Margens de ampliação por Breslow",
+      "Indicação de linfonodo sentinela",
+      "Sentinela positivo sem linfadenectomia",
+      "Anti-PD-1 e BRAF/MEK"
+    ],
+    "mnemonicos": [
+      {
+        "palavra": "ABCDE",
+        "explicacao": "Assimetria, Bordas irregulares, Cores variadas, Diâmetro > 6 mm, Evolução."
+      },
+      {
+        "palavra": "Meio, um, um a dois, dois",
+        "explicacao": "Margens de ampliação do melanoma: in situ 0,5–1 cm; ≤ 1 mm 1 cm; 1–2 mm 1–2 cm; > 2 mm 2 cm."
+      },
+      {
+        "palavra": "Basocelular brilha, espinocelular descama",
+        "explicacao": "CBC é perolado com telangiectasias; CEC é ceratósico, infiltrado e ulcerado."
+      }
+    ],
+    "prioridadeProva": "media",
+    "revisaoProvas": true
   },
   {
     "id": "doencas-ombro-cotovelo",
