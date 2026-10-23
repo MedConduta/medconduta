@@ -17178,58 +17178,144 @@
     "area": "residencia",
     "categoria": "Dermatologia",
     "titulo": "Farmacodermias: Reações Cutâneas a Medicamentos",
-    "resumo": "Do exantema morbiliforme benigno à síndrome de Stevens-Johnson/NET e DRESS, reações graves que exigem suspensão imediata.",
+    "resumo": "Farmacodermias: Gell e Coombs (tipo IV a–d), exantema simples (inclusive amoxicilina no EBV), urticária e anafilaxia, alergia a penicilina, reação de infusão à vancomicina (homem vermelho), erupção fixa, eritema multiforme, SSJ/NET (drogas, mucosas, Nikolsky, SCORTEN, unidade de queimados, ciclosporina), DRESS (anticonvulsivantes aromáticos, alopurinol, sulfas, vancomicina; eosinofilia, hepatite, HHV-6, corticoide, alternativa anticonvulsivante), PEGA, eritrodermia, necrose cumarínica, mão-pé por quimioterapia e doença do soro.",
     "revisado": true,
-    "fonte": "Sociedade Brasileira de Dermatologia; UpToDate — Severe Cutaneous Adverse Reactions",
+    "fonte": "Estratégia MED 2026 (Farmacodermias, Prof. Bruno Souza); Sociedade Brasileira de Dermatologia; Creamer et al., UK guidelines for SJS/TEN, Br J Dermatol 2016; Zimmermann et al., JAMA Dermatol 2017 (metanálise de terapias na SJS/NET); Wang et al., J Clin Invest 2018 (etanercepte); Kardaun et al., RegiSCAR (DRESS), Br J Dermatol 2013; Pichler, classificação tipo IV a–d; Khan et al., Drug allergy practice parameter (AAAAI/ACAAI 2022); Alvarez-Arango, Vancomycin infusion reaction, 2021",
     "mnemonicos": [
       {
         "palavra": "Nikolsky descola",
         "explicacao": "O sinal de Nikolsky (descolamento da epiderme à leve pressão tangencial da pele aparentemente normal) é achado de alerta para farmacodermias graves com comprometimento da junção dermoepidérmica, como SSJ/NET."
+      },
+      {
+        "palavra": "10 e 30",
+        "explicacao": "SSJ < 10% de descolamento, sobreposição 10–30%, NET > 30%."
+      },
+      {
+        "palavra": "DRESS demora, PEGA corre",
+        "explicacao": "DRESS começa 2–8 semanas após a droga; PEGA em 1–10 dias (às vezes 48 h); SSJ/NET em 4–28 dias."
       }
     ],
     "secoes": [
       {
-        "titulo": "Fisiopatologia",
-        "conteudo": "As farmacodermias graves incluem a síndrome de Stevens-Johnson (SSJ) e a necrólise epidérmica tóxica (NET), consideradas um espectro contínuo de gravidade da mesma reação de hipersensibilidade grave mediada por células T citotóxicas contra queratinócitos, causando necrose epidérmica extensa e descolamento da pele — a distinção entre SSJ e NET é feita pela extensão da superfície corporal acometida (SSJ <10%, NET >30%, com uma zona de sobreposição intermediária entre 10-30%). A síndrome DRESS (Drug Reaction with Eosinophilia and Systemic Symptoms) é reação de hipersensibilidade tardia com acometimento sistêmico multiorgânico."
+        "titulo": "Mecanismos e visão geral",
+        "conteudo": "<p>As farmacodermias graves incluem a síndrome de Stevens-Johnson (SSJ) e a necrólise epidérmica tóxica (NET), consideradas um espectro contínuo de gravidade da mesma reação de hipersensibilidade grave mediada por células T citotóxicas contra queratinócitos, causando necrose epidérmica extensa e descolamento da pele — a distinção entre SSJ e NET é feita pela extensão da superfície corporal acometida (SSJ <10%, NET >30%, com uma zona de sobreposição intermediária entre 10-30%). A síndrome DRESS (Drug Reaction with Eosinophilia and Systemic Symptoms) é reação de hipersensibilidade tardia com acometimento sistêmico multiorgânico.</p><div class=\"table-wrap\"><table><thead><tr><th>Gell e Coombs</th><th>Mediador</th><th>Exemplo</th></tr></thead><tbody><tr><td>I imediata</td><td><b>IgE</b> e mastócitos (UFRJ 2014)</td><td>Urticária, angioedema, anafilaxia (penicilina; SES-DF 2026)</td></tr><tr><td>II citotóxica</td><td>IgG e IgM contra células</td><td>Anemia hemolítica, trombocitopenia por droga</td></tr><tr><td>III imunocomplexos</td><td>IgG/IgM + complemento</td><td>Vasculite leucocitoclástica, <b>doença do soro</b> (AMP-PR 2026)</td></tr><tr><td>IVa</td><td>Th1, macrófagos</td><td>Dermatite de contato</td></tr><tr><td>IVb</td><td>Th2, <b>eosinófilos</b></td><td><b>DRESS</b> (ENARE 2026: IVb, CD8, reativação viral)</td></tr><tr><td>IVc</td><td><b>CD8 citotóxico</b>, granulisina</td><td><b>SSJ/NET</b>, erupção fixa</td></tr><tr><td>IVd</td><td>Células T + <b>neutrófilos</b> (IL-8)</td><td><b>PEGA</b></td></tr></tbody></table></div><p>Drogas pequenas ligam-se a proteínas como <b>haptenos</b> (betalactâmicos, como meropenem; ENARE 2024). Fatores de risco: mulher, HIV, idoso, polifarmácia, lúpus, infecções virais; em criança, antimicrobianos e anticonvulsivantes. Antiácidos quase não causam (questão de drogas implicadas). Mesmo drogas típicas de reação tipo I podem causar reação tipo IV grave.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Sinais de gravidade (suspeitar de SCAR)</span><ul><li>Febre alta, dor cutânea (mais que prurido; UFCSPA 2023: prurido não é sinal de gravidade), edema facial, linfonodomegalia.</li><li>Bolhas, <b>Nikolsky</b>, necrose, púrpura, erosões mucosas.</li><li>Eosinofilia, linfócitos atípicos, transaminases, creatinina elevadas.</li></ul></div>"
       },
       {
-        "titulo": "Quadro clínico",
-        "conteudo": "SSJ/NET manifestam-se com pródromo semelhante a gripe, seguido de exantema doloroso que evolui rapidamente para bolhas e descolamento epidérmico extenso, com acometimento mucoso característico (oral, ocular, genital) em praticamente todos os casos — esse acometimento mucoso é achado quase universal e ajuda a diferenciar de outras farmacodermias menos graves. DRESS manifesta-se com exantema extenso, febre, linfadenopatia e acometimento visceral (hepatite sendo a manifestação orgânica mais comum), com início tipicamente mais tardio (2-8 semanas após início da droga causadora), diferente de SSJ/NET, que costumam surgir mais precocemente.",
+        "titulo": "Farmacodermias leves e reações imediatas",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Quadro</th><th>Pistas</th><th>Conduta</th></tr></thead><tbody><tr><td>Exantema simples (morbiliforme)</td><td><b>Mais comum</b> (até 95%; AMRIGS 2016), 7–14 dias após a droga, antibióticos (betalactâmicos, sulfas); amoxicilina na mononucleose (UNICAMP 2021: rash pela amoxicilina na infecção por EBV, não alergia verdadeira)</td><td>Suspender; anti-histamínico, corticoide tópico; some em 1–2 semanas</td></tr><tr><td>Urticária e angioedema</td><td>Minutos a horas; IgE ou ativação direta de mastócitos (AINE, contraste, opioide); IECA causa angioedema por bradicinina</td><td>Anti-histamínico; anafilaxia: adrenalina IM 0,5 mg na coxa</td></tr><tr><td>Reação de infusão à vancomicina (homem vermelho)</td><td>Eritema e prurido em face, pescoço e tronco <b>durante infusão rápida</b>; liberação direta de histamina, <b>não IgE</b> (ABC 2018)</td><td>Parar a infusão, anti-histamínico; <b>reiniciar mais lento</b> (≥ 60 min/g) com pré-medicação (UFRJ 2024)</td></tr><tr><td>Erupção (eritema) pigmentar fixa</td><td>Placa(s) ovalada(s) eritematoviolácea(s), às vezes bolhosa, que <b>recorre no mesmo lugar</b> a cada exposição e deixa hiperpigmentação; lábios, genitais, mãos; <b>dipirona</b>, AINE, sulfas, tetraciclinas (USP-RP 2026; HCPA 2025)</td><td>Suspender e evitar a droga</td></tr></tbody></table></div><p>Alergia a penicilina: mais de 80–90% dos que relatam alergia têm testes negativos (ENARE 2026); avaliar e “desrotular” amplia opções. Reação prévia com anafilaxia: sensibilização e risco de reatividade cruzada (SES-DF 2026).</p><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Nome “síndrome do homem vermelho”</span><p><b>Provas/Estratégia:</b> Estratégia e provas usam “síndrome do homem vermelho”</p><p><b>Evidência atual:</b> Desde 2021 recomenda-se “reação de infusão à vancomicina” (termo neutro); mecanismo não IgE, permite reexposição lenta</p><p><b>Na prova:</b> Reconheça os dois nomes</p></div>",
         "imagens": [
           {
-            "url": "imagens/questoes/unicamp/2019/2019-09b4053b-q060-1.webp",
-            "legenda": "Exantema morbiliforme extenso e confluente no tronco, com febre, eosinofilia e lesão hepática e renal — DRESS (reação a drogas com eosinofilia e sintomas sistêmicos).",
-            "fonte": "Imagem de questão de prova — UNICAMP 2019"
+            "url": "imagens/questoes/usp-rp/2026/2026-b19152ca-q029-1.webp",
+            "legenda": "USP-RP 2026: mancha violácea a acastanhada bem delimitada no lábio, recorrente no mesmo local após dipirona: erupção medicamentosa fixa.",
+            "fonte": "Imagem de questão de prova — USP-RP 2026"
           }
         ]
       },
       {
-        "titulo": "Exame físico",
-        "conteudo": "O sinal de Nikolsky (descolamento da epiderme com pressão lateral suave sobre pele aparentemente normal adjacente às lesões) é achado característico de SSJ/NET, refletindo a fragilidade da junção dermoepidérmica nessas condições. Edema facial e linfadenopatia generalizada são achados de apoio na síndrome DRESS."
+        "titulo": "Eritema multiforme × SSJ",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th></th><th>Eritema multiforme</th><th>SSJ/NET</th></tr></thead><tbody><tr><td>Causa</td><td><b>Herpes simples</b> (UNICAMP 2022), <i>Mycoplasma</i></td><td><b>Drogas</b> (&gt; 80%; AMP-PR 2025)</td></tr><tr><td>Lesão</td><td><b>Alvo típico</b> com 3 zonas, elevado, acral (palmas, dorso das mãos)</td><td>Máculas purpúricas e <b>alvos atípicos planos</b>, confluentes, tronco e face</td></tr><tr><td>Mucosa</td><td>Leve ou ausente (menor); oral no maior</td><td>Grave em &gt; 90%: oral, ocular, genital</td></tr><tr><td>Descolamento</td><td>&lt; 10%, sem Nikolsky extenso</td><td>Necrólise com Nikolsky</td></tr><tr><td>Curso</td><td>Autolimitado em 2 semanas; recorre com o herpes</td><td>Grave, mortalidade 10–50%</td></tr></tbody></table></div><p>Diagnóstico de eritema multiforme é clínico, sem biópsia obrigatória (UFCSPA 2022). Eritema fixo e urticária são diferenciais, não formas de EM. Em criança com pneumonia atípica, mucosite intensa e poucas lesões cutâneas: erupção mucocutânea induzida por <i>Mycoplasma</i>.</p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unicamp/2022/2022-224a6f8d-q020-1.webp",
+            "legenda": "UNICAMP 2022: lesões em alvo típicas nas palmas e no tronco, sem mucosa: eritema polimorfo associado ao herpes vírus.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2022"
+          },
+          {
+            "url": "imagens/questoes/hcpa-rs/2020/2020-2e15316c-q012-1.webp",
+            "legenda": "HCPA-RS 2020: lesões em alvo confluentes e violáceas em paciente de terapia intensiva: farmacodermia grave do espectro SSJ.",
+            "fonte": "Imagem de questão de prova — HCPA-RS 2020"
+          }
+        ]
       },
       {
-        "titulo": "Diagnóstico",
-        "conteudo": "O diagnóstico é predominantemente clínico, baseado no reconhecimento do padrão e na relação temporal com introdução de medicamento novo (anticonvulsivantes, alopurinol, sulfonamidas e certos antibióticos são causas frequentemente implicadas). Biópsia cutânea confirma o padrão histológico de necrose epidérmica em SSJ/NET quando há dúvida diagnóstica. Investigação laboratorial em DRESS inclui hemograma (eosinofilia característica) e função hepática (frequentemente alterada).\n\n<div class=\"table-wrap\"><table><tr><th>Farmacodermia</th><th>Frase-gatilho</th><th>Letalidade</th></tr><tr><td>SSJ (&lt;10% SC) / NET (&gt;30% SC)</td><td>Necrose cutânea + descolamento + erosões mucosas</td><td>10–20% / 50%</td></tr><tr><td>DRESS</td><td>Exantema + eosinofilia + hepatite, 2–6 semanas após droga</td><td>5–10%</td></tr><tr><td>PEGA</td><td>Pústulas disseminadas + neutrofilia, 1–10 dias após droga</td><td>~2%</td></tr></table></div>"
+        "titulo": "Síndrome de Stevens-Johnson e necrólise epidérmica tóxica",
+        "conteudo": "<p>SSJ/NET manifestam-se com pródromo semelhante a gripe, seguido de exantema doloroso que evolui rapidamente para bolhas e descolamento epidérmico extenso, com acometimento mucoso característico (oral, ocular, genital) em praticamente todos os casos — esse acometimento mucoso é achado quase universal e ajuda a diferenciar de outras farmacodermias menos graves. DRESS manifesta-se com exantema extenso, febre, linfadenopatia e acometimento visceral (hepatite sendo a manifestação orgânica mais comum), com início tipicamente mais tardio (2-8 semanas após início da droga causadora), diferente de SSJ/NET, que costumam surgir mais precocemente.</p><p>O sinal de Nikolsky (descolamento da epiderme com pressão lateral suave sobre pele aparentemente normal adjacente às lesões) é achado característico de SSJ/NET, refletindo a fragilidade da junção dermoepidérmica nessas condições. Edema facial e linfadenopatia generalizada são achados de apoio na síndrome DRESS.</p><div class=\"table-wrap\"><table><thead><tr><th>Forma</th><th>Área de descolamento</th><th>Letalidade</th></tr></thead><tbody><tr><td>SSJ</td><td>&lt; 10%</td><td>10–20% (até 5–10% em séries recentes)</td></tr><tr><td>Sobreposição</td><td>10–30%</td><td>Intermediária</td></tr><tr><td>NET (Lyell)</td><td>&gt; 30%</td><td>≈ 30–50%</td></tr></tbody></table></div><p>Drogas: <b>anticonvulsivantes aromáticos</b> (carbamazepina, fenitoína, fenobarbital, <b>lamotrigina</b>: escalonar a dose lentamente; ENARE 2026), <b>alopurinol</b> (ABC 2023), <b>sulfas</b> (sulfametoxazol, sulfadiazina), AINE oxicam, nevirapina, betalactâmicos. Início em 4–28 dias, com pródromo febril, odinofagia, conjuntivite (USP-SP 2021: avaliar olhos), depois pele dolorosa. HLA-B*15:02 (carbamazepina, asiáticos) e B*58:01 (alopurinol). SCORTEN prediz mortalidade.</p><div class=\"fluxo-resumo\"><div class=\"fluxo-resumo__titulo\">Conduta na SSJ/NET</div><div class=\"fluxo-resumo__passo\"><b>Suspender todas as drogas suspeitas</b>: É a medida de maior impacto; nunca trocar por outro anticonvulsivante aromático</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Internar em UTI ou <b>unidade de queimados</b></b>: (questão de SSJ por sulfa após cistite); aquecimento, curativos não aderentes, sem desbridamento agressivo</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Hidratação guiada por parâmetros</b>: Menos volume que no queimado; diurese 0,5–1 mL/kg/h (PSU-MG 2021); nutrição; dor</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Mucosas</b>: Oftalmologia diária (sinéquias, cegueira), cuidados orais, urológicos e genitais</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Imunomodulação</b>: {'ramos': ['<b>Ciclosporina</b> 3–5 mg/kg/dia (SURCE 2023; UNICAMP 2025)', 'Etanercepte, IVIG ou corticoide conforme protocolo do serviço']}</div><div class=\"fluxo-resumo__seta\">↓</div><div class=\"fluxo-resumo__passo\"><b>Antibiótico só com infecção</b>: Sem profilaxia; vigiar sepse por <i>S. aureus</i> e <i>Pseudomonas</i></div></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Corticoide sistêmico na SSJ/NET</span><p><b>Provas/Estratégia:</b> Provas divergem: HCPA 2020 considera errado dizer que corticoide não está indicado; outras marcam que corticoide não é o tratamento de escolha</p><p><b>Evidência atual:</b> Metanálise (Zimmermann 2017) e diretriz britânica: ciclosporina com melhor sinal de benefício; corticoide em pulso precoce é aceitável; nenhum tratamento com ensaio definitivo</p><p><b>Na prova:</b> Ciclosporina é a melhor resposta; corticoide é possível, não “de escolha”</p></div><div class=\"divergencia-nota\"><span class=\"divergencia-nota__titulo\">⚖️ Divergência — Imunoglobulina na SSJ/NET</span><p><b>Provas/Estratégia:</b> Questões e Estratégia citam IVIG como benéfica</p><p><b>Evidência atual:</b> Metanálises não mostram redução de mortalidade com IVIG; ciclosporina e etanercepte têm resultados melhores</p><p><b>Na prova:</b> IVIG é opção, não padrão</p></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unicamp/2023/2023-17aed0d6-q007-1.webp",
+            "legenda": "UNICAMP 2023: crostas hemorrágicas labiais e grandes áreas de descolamento epidérmico: necrólise epidérmica tóxica.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2023"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2024/2024-ee7986e6-q095-1.webp",
+            "legenda": "USP-RP 2024: descolamento extenso (30% da superfície) após alopurinol: NET; prioridade é hidratação endovenosa e suporte.",
+            "fonte": "Imagem de questão de prova — USP-RP 2024"
+          },
+          {
+            "url": "imagens/questoes/usp-sp/2021/2021-5b8a1037-q118-1.webp",
+            "legenda": "USP-SP 2021: lesões em alvo atípicas e bolhas em criança com lamotrigina: SSJ; avaliar mucosas e olhos.",
+            "fonte": "Imagem de questão de prova — USP-SP 2021"
+          }
+        ]
       },
       {
-        "titulo": "Tratamento",
-        "conteudo": "A suspensão imediata do medicamento suspeito é a medida terapêutica mais importante e urgente em qualquer farmacodermia grave, com impacto direto no prognóstico — quanto mais precoce a suspensão, melhor o desfecho. SSJ/NET exigem manejo em unidade especializada (frequentemente unidade de queimados, pela extensão do dano cutâneo e necessidade de cuidados similares), com suporte intensivo de fluidos, nutricional e prevenção de infecção secundária; imunoglobulina endovenosa e ciclosporina são opções terapêuticas específicas consideradas em alguns protocolos. DRESS é tratada com corticoide sistêmico, além da suspensão do agente causador."
+        "titulo": "DRESS (síndrome de hipersensibilidade a drogas)",
+        "conteudo": "<p>Início <b>2–8 semanas</b> após a droga: febre, <b>exantema morbiliforme</b> que vira eritrodermia, <b>edema facial</b>, linfonodomegalia, <b>eosinofilia</b> e linfócitos atípicos, <b>hepatite</b> (órgão mais acometido e principal causa de morte), nefrite, pneumonite, miocardite, tireoidite tardia. Reativação de <b>HHV-6</b>, EBV, CMV (UEPA 2026). Drogas: <b>anticonvulsivantes aromáticos</b> (carbamazepina, fenitoína, fenobarbital; mais comuns; UEPA 2021; SCM-SP 2024), <b>alopurinol</b> (USP-RP 2025; ABC 2020; PUC-PR 2018), sulfas (sulfassalazina, USP-RP 2021; <b>dapsona</b> = síndrome da sulfona, ABC 2024; sulfadiazina), <b>vancomicina</b> (SUS-SP 2023; PUC-PR 2026), minociclina, nevirapina. Nikolsky negativo; pode ter pústulas e lesões em alvo (UNICAMP 2019).</p><div class=\"table-wrap\"><table><thead><tr><th>Etapa</th><th>Conduta</th></tr></thead><tbody><tr><td>Diagnóstico</td><td>Escore RegiSCAR ou critérios J-SCAR (o exantema não é imediato, começa após semanas; ABC 2018); hemograma (USP-RP 2021), função hepática e renal, urina, TSH, ECG/troponina, sorologias virais</td></tr><tr><td>Tratamento</td><td><b>Suspender</b> a droga (UNIFESP 2018; UFRJ 2023: suspender fenitoína e iniciar prednisona) + <b>prednisona 0,5–1 mg/kg/dia</b> com desmame lento de 6–8 semanas (recaída); casos leves: corticoide tópico potente; refratário: ciclosporina, IVIG</td></tr><tr><td>Anticonvulsivante substituto</td><td>Não aromático: <b>valproato, levetiracetam</b>, gabapentina, <b>pregabalina</b> (ABC 2019); <b>nunca</b> trocar fenobarbital por carbamazepina ou fenitoína (reação cruzada)</td></tr></tbody></table></div><p>O diagnóstico é predominantemente clínico, baseado no reconhecimento do padrão e na relação temporal com introdução de medicamento novo (anticonvulsivantes, alopurinol, sulfonamidas e certos antibióticos são causas frequentemente implicadas). Biópsia cutânea confirma o padrão histológico de necrose epidérmica em SSJ/NET quando há dúvida diagnóstica. Investigação laboratorial em DRESS inclui hemograma (eosinofilia característica) e função hepática (frequentemente alterada).\n\n<div class=\"table-wrap\"><table><tr><th>Farmacodermia</th><th>Frase-gatilho</th><th>Letalidade</th></tr><tr><td>SSJ (&lt;10% SC) / NET (&gt;30% SC)</td><td>Necrose cutânea + descolamento + erosões mucosas</td><td>10–20% / 50%</td></tr><tr><td>DRESS</td><td>Exantema + eosinofilia + hepatite, 2–6 semanas após droga</td><td>5–10%</td></tr><tr><td>PEGA</td><td>Pústulas disseminadas + neutrofilia, 1–10 dias após droga</td><td>~2%</td></tr></table></div></p>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unesp/2024/2024-b25873ac-q094-1.webp",
+            "legenda": "UNESP 2024: eritema morbiliforme confluente com descamação e edema facial em cirrótico com fenitoína e norfloxacino: DRESS; suspender ambos e iniciar corticoide.",
+            "fonte": "Imagem de questão de prova — UNESP 2024"
+          },
+          {
+            "url": "imagens/questoes/unicamp/2019/2019-09b4053b-q060-1.webp",
+            "legenda": "UNICAMP 2019: exantema morbiliforme extenso no tronco com edema facial, febre e linfonodomegalia após carbamazepina: DRESS com lesões em alvo.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2019"
+          },
+          {
+            "url": "imagens/questoes/usp-rp/2021/2021-83e26555-q018-1.webp",
+            "legenda": "USP-RP 2021: exantema morbiliforme e edema facial 40 dias após sulfassalazina: suspeita de DRESS, pedir hemograma (eosinofilia).",
+            "fonte": "Imagem de questão de prova — USP-RP 2021"
+          }
+        ]
       },
       {
-        "titulo": "Sinais de alerta",
-        "conteudo": "<span class=\"red-flag\">Sinal de Nikolsky positivo associado a acometimento mucoso extenso em paciente com exantema recente após introdução de novo medicamento</span> caracteriza SSJ/NET, emergência dermatológica com alta morbimortalidade que exige suspensão imediata do medicamento suspeito e manejo intensivo em unidade especializada."
+        "titulo": "PEGA, eritrodermia e outras reações",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Quadro</th><th>Pistas</th><th>Conduta</th></tr></thead><tbody><tr><td>PEGA (pustulose exantemática generalizada aguda)</td><td><b>1–10 dias</b> (às vezes &lt; 48 h), centenas de <b>pústulas não foliculares</b> sobre eritema, começando nas dobras, febre e <b>neutrofilia</b>; betalactâmicos, macrolídeos, hidroxicloroquina, diltiazem</td><td>Suspender; corticoide tópico; resolve em ~2 semanas com descamação; letalidade ~2%</td></tr><tr><td>Eritrodermia medicamentosa</td><td>&gt; 90% da pele eritematosa e descamativa; idoso com droga nova (fenitoína; UNICAMP 2018)</td><td>Suspender suspeitas, biópsia para excluir linfoma T, suporte</td></tr><tr><td>Necrose cutânea por varfarina</td><td>Primeiros dias de varfarina, queda rápida da proteína C; placas purpúricas e bolhas hemorrágicas que necrosam em mamas, coxas e nádegas (AMRIGS 2020)</td><td>Suspender varfarina, <b>vitamina K</b>, anticoagular com heparina ou DOAC, concentrado de proteína C</td></tr><tr><td>Síndrome mão-pé</td><td>Eritema doloroso e descamação palmoplantar por <b>capecitabina</b>, 5-FU, doxorrubicina lipossomal (UNESP 2023)</td><td>Reduzir dose, emolientes, ureia</td></tr><tr><td>Toxicidade do metotrexato</td><td>Mucosite com úlceras, sangramento gengival, pancitopenia, diarreia (UNICAMP 2025)</td><td><b>Ácido folínico</b></td></tr><tr><td>Doença do soro</td><td>Febre, urticária, artralgia, linfadenopatia 1–2 semanas após soros heterólogos ou drogas; tipo III</td><td>Suspender, anti-histamínico, corticoide</td></tr><tr><td>Corticoide sistêmico crônico</td><td>Estrias, atrofia, acne monomorfa, hipertricose, púrpura, cicatrização ruim</td><td>—</td></tr></tbody></table></div>",
+        "imagens": [
+          {
+            "url": "imagens/questoes/unicamp/2018/2018-06466a15-q097-1.webp",
+            "legenda": "UNICAMP 2018: eritema e descamação em mais de 90% da pele há dois meses em idoso com fenitoína e sinvastatina: eritrodermia; suspender e biopsiar.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2018"
+          },
+          {
+            "url": "imagens/questoes/unicamp/2025/2025-8f645c66-q060-1.webp",
+            "legenda": "UNICAMP 2025: mucosite com úlceras labiais e crostas hemorrágicas em paciente com artrite reumatoide e perda de peso: intoxicação por metotrexato; ácido folínico.",
+            "fonte": "Imagem de questão de prova — UNICAMP 2025"
+          }
+        ]
+      },
+      {
+        "titulo": "Tratamento geral e sinais de alerta",
+        "conteudo": "<p>A suspensão imediata do medicamento suspeito é a medida terapêutica mais importante e urgente em qualquer farmacodermia grave, com impacto direto no prognóstico — quanto mais precoce a suspensão, melhor o desfecho. SSJ/NET exigem manejo em unidade especializada (frequentemente unidade de queimados, pela extensão do dano cutâneo e necessidade de cuidados similares), com suporte intensivo de fluidos, nutricional e prevenção de infecção secundária; imunoglobulina endovenosa e ciclosporina são opções terapêuticas específicas consideradas em alguns protocolos. DRESS é tratada com corticoide sistêmico, além da suspensão do agente causador.</p><p><span class=\"red-flag\">Sinal de Nikolsky positivo associado a acometimento mucoso extenso em paciente com exantema recente após introdução de novo medicamento</span> caracteriza SSJ/NET, emergência dermatológica com alta morbimortalidade que exige suspensão imediata do medicamento suspeito e manejo intensivo em unidade especializada.</p>"
       },
       {
         "titulo": "Dicas de prova",
-        "conteudo": "A classificação de SSJ versus NET pela porcentagem de superfície corporal descolada (menos de 10% versus mais de 30%) é cobrança certa. A suspensão imediata do medicamento suspeito como medida terapêutica mais importante (antes mesmo de qualquer tratamento farmacológico específico) é ponto central e extremamente recorrente em qualquer farmacodermia grave."
+        "conteudo": "<p>A classificação de SSJ versus NET pela porcentagem de superfície corporal descolada (menos de 10% versus mais de 30%) é cobrança certa. A suspensão imediata do medicamento suspeito como medida terapêutica mais importante (antes mesmo de qualquer tratamento farmacológico específico) é ponto central e extremamente recorrente em qualquer farmacodermia grave.</p><div class=\"quadro-chave\"><span class=\"quadro-chave__titulo\">Frases-gatilho do Estratégia</span><ul><li>Droga nova + necrose cutânea + descolamento + mucosas = SSJ/NET.</li><li>Droga nova (anticonvulsivante) + exantema + eosinofilia + hepatite = DRESS.</li><li>Antibiótico + pústulas disseminadas + neutrofilia = PEGA.</li><li>Mesma lesão no mesmo lugar a cada dose = erupção fixa.</li><li>Eritema durante infusão rápida de vancomicina = homem vermelho; infundir devagar.</li></ul></div>"
+      },
+      {
+        "titulo": "Divergências: provas × evidência atual",
+        "conteudo": "<div class=\"table-wrap\"><table><thead><tr><th>Ponto</th><th>Estratégia / provas</th><th>Evidência atual</th><th>Na prova</th></tr></thead><tbody><tr><td>Corticoide sistêmico na SSJ/NET</td><td>Provas divergem: HCPA 2020 considera errado dizer que corticoide não está indicado; outras marcam que corticoide não é o tratamento de escolha</td><td>Metanálise (Zimmermann 2017) e diretriz britânica: ciclosporina com melhor sinal de benefício; corticoide em pulso precoce é aceitável; nenhum tratamento com ensaio definitivo</td><td>Ciclosporina é a melhor resposta; corticoide é possível, não “de escolha”</td></tr><tr><td>Imunoglobulina na SSJ/NET</td><td>Questões e Estratégia citam IVIG como benéfica</td><td>Metanálises não mostram redução de mortalidade com IVIG; ciclosporina e etanercepte têm resultados melhores</td><td>IVIG é opção, não padrão</td></tr><tr><td>Nome “síndrome do homem vermelho”</td><td>Estratégia e provas usam “síndrome do homem vermelho”</td><td>Desde 2021 recomenda-se “reação de infusão à vancomicina” (termo neutro); mecanismo não IgE, permite reexposição lenta</td><td>Reconheça os dois nomes</td></tr></tbody></table></div>"
       },
       {
         "titulo": "Aulas bônus no MEDCURSO",
         "conteudo": "Este resumo corresponde à aula <b>Dermatologia II</b> (semana 44 do cronograma MEDCURSO). No MEDCURSO, essa aula tem aulas bônus: <ul><li>Anafilaxia</li><li>Piodermites</li><li>Acne vulgar</li><li>Mpox</li><li>Herpes-Zóster</li><li>Angioedema Hereditário</li></ul>"
       }
     ],
-    "comoCai": "O curso é explícito: \"metade das questões de farmacodermia são sobre síndrome de Stevens-Johnson (SSJ) e Necrólise Epidérmica Tóxica (NET) — dê uma ênfase maior nesse assunto\". A classificação por porcentagem de superfície corporal com necrólise separa SSJ (<10%) de NET (>30%), com letalidade bem diferente (10-20% x 50%). O material fornece \"frases-gatilho\" literais para reconhecimento rápido de questão: \"uso recente de nova droga + necrose cutânea + descolamento epidérmico + erosões mucosas = SSJ/NET\"; \"uso recente de medicação (principalmente anticonvulsivante) + exantema + eosinofilia + hepatite = DRESS\"; \"uso recente de antibiótico + pústulas disseminadas + neutrofilia = PEGA\". A erupção fixa à droga tem um sinal muito específico e \"fácil de identificar\": reaparece EXATAMENTE no mesmo local a cada reexposição à droga.",
-    "prioridadeProva": "baixa"
+    "comoCai": [
+      "SSJ × NET pela área descolada",
+      "Drogas de SSJ/NET e DRESS",
+      "DRESS: eosinofilia, hepatite, corticoide",
+      "Trocar anticonvulsivante aromático",
+      "Unidade de queimados e ciclosporina",
+      "Eritema multiforme × SSJ",
+      "Erupção fixa no mesmo local",
+      "Homem vermelho: infusão lenta",
+      "PEGA: pústulas e neutrofilia",
+      "Gell e Coombs"
+    ],
+    "prioridadeProva": "baixa",
+    "revisaoProvas": true
   },
   {
     "id": "avaliacao-pre-anestesica-asa",
