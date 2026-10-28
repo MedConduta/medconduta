@@ -14815,5 +14815,530 @@
     "temaId": "psiquiatria-social-reforma-psiquiatrica",
     "frente": "Moradia para egressos de longas internações psiquiátricas.",
     "verso": "Serviço Residencial Terapêutico (com o Programa De Volta para Casa)."
+  },
+  {
+    "id": "fc-taquiarritmias-1",
+    "temaId": "taquiarritmias",
+    "frente": "Ritmo do traçado e conduta se o paciente estiver hipotenso.",
+    "verso": "Taquicardia ventricular monomórfica (QRS largo, regular). Instável: cardioversão elétrica sincronizada.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2022/2022-47d1cc86-q022-1.webp",
+      "legenda": "Traçado de monitor",
+      "fonte": "Imagem da prova ENARE 2022"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2022"
+  },
+  {
+    "id": "fc-taquiarritmias-2",
+    "temaId": "taquiarritmias",
+    "frente": "Qual o ritmo?",
+    "verso": "Flutter atrial: ondas F em dente de serra (melhor em DII, DIII e aVF), ~300/min, com condução AV variável.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2021/2021-6f342cfe-q021-1.webp",
+      "legenda": "ECG de 12 derivações",
+      "fonte": "Imagem da prova ENARE 2021"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2021"
+  },
+  {
+    "id": "fc-fa-5",
+    "temaId": "fa",
+    "frente": "Paciente com PA 80/50 mmHg e este ECG: diagnóstico e conduta.",
+    "verso": "Fibrilação atrial (RR irregular, sem onda P) com instabilidade: sedação e cardioversão elétrica sincronizada.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2024/2024-c267364e-q016-1.webp",
+      "legenda": "ECG de 12 derivações",
+      "fonte": "Imagem da prova ENARE 2024"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2024"
+  },
+  {
+    "id": "fc-bradiarritmias-1",
+    "temaId": "bradiarritmias",
+    "frente": "FC de 24 bpm com tontura. Qual o ritmo?",
+    "verso": "BAV total: ondas P e QRS sem relação, com escape de QRS largo. Marcapasso (transcutâneo, depois definitivo).",
+    "imagem": {
+      "url": "imagens/questoes/enare/2021/2021-ed0d3918-q059-1.webp",
+      "legenda": "ECG de 12 derivações",
+      "fonte": "Imagem da prova ENARE 2021"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2021"
+  },
+  {
+    "id": "fc-taquiarritmias-3",
+    "temaId": "taquiarritmias",
+    "frente": "Jovem com síncope e este ECG. Diagnóstico e prevenção da morte súbita.",
+    "verso": "Síndrome de Brugada (supra de ST em V1–V2 com padrão em sela ou côncavo). CDI nos de alto risco (síncope ou morte súbita abortada).",
+    "imagem": {
+      "url": "imagens/questoes/enare/2026/2026-54afcddf-q009-1.webp",
+      "legenda": "ECG de 12 derivações",
+      "fonte": "Imagem da prova ENARE 2026"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2026"
+  },
+  {
+    "id": "fc-eletrocardiograma-interpretacao-13",
+    "temaId": "eletrocardiograma-interpretacao",
+    "frente": "Qual a arritmia e o que a predispõe?",
+    "verso": "Torsades de pointes (TV polimórfica com torção do eixo) por QT longo: hipocalemia, hipomagnesemia e drogas (antiarrítmicos, macrolídeos, antipsicóticos). Tratamento: sulfato de magnésio.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2026/2026-54afcddf-q022-1.webp",
+      "legenda": "ECG de 12 derivações",
+      "fonte": "Imagem da prova ENARE 2026"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2026"
+  },
+  {
+    "id": "fc-pericardite-tamponamento-8",
+    "temaId": "pericardite-tamponamento",
+    "frente": "Dor torácica que melhora ao inclinar o tronco para frente. Qual o diagnóstico pelo ECG?",
+    "verso": "Pericardite aguda: supra de ST difuso côncavo com infra de PR. AINE (ibuprofeno) + colchicina.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2026/2026-54afcddf-q027-1.webp",
+      "legenda": "ECG de 12 derivações",
+      "fonte": "Imagem da prova ENARE 2026"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2026"
+  },
+  {
+    "id": "fc-parada-cardiorrespiratoria-rcp-4",
+    "temaId": "parada-cardiorrespiratoria-rcp",
+    "frente": "Paciente sem pulso com este traçado. Conduta imediata.",
+    "verso": "Taquicardia ventricular sem pulso: ritmo chocável. Desfibrilação (bifásico 200 J) e RCP.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2026/2026-54afcddf-q030-1.webp",
+      "legenda": "Traçado de monitor",
+      "fonte": "Imagem da prova ENARE 2026"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2026"
+  },
+  {
+    "id": "fc-taquiarritmias-4",
+    "temaId": "taquiarritmias",
+    "frente": "Lactente com taquidispneia e este traçado, sem febre. Qual o ritmo?",
+    "verso": "Taquicardia supraventricular (QRS estreito, regular, sem P visível, FC muito alta). Instável: cardioversão sincronizada; estável: manobra vagal e adenosina.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2025-2-q069-1.webp",
+      "legenda": "Traçado de ECG",
+      "fonte": "Imagem da prova SES-PE 2025"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2025"
+  },
+  {
+    "id": "fc-emergencias-pediatricas-geral-5",
+    "temaId": "emergencias-pediatricas-geral",
+    "frente": "Criança sem pulso com este ritmo. Conduta.",
+    "verso": "Ritmo chocável (TV sem pulso): desfibrilação com 2 J/kg (depois 4 J/kg) e RCP.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2025-1-q064-1.webp",
+      "legenda": "Traçado de monitor",
+      "fonte": "Imagem da prova SES-PE 2025"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2025"
+  },
+  {
+    "id": "fc-pancreatite-aguda-7",
+    "temaId": "pancreatite-aguda",
+    "frente": "Terceira semana de pancreatite aguda. O que a TC mostra?",
+    "verso": "Necrose pancreática com gás (bolhas no interior da coleção): necrose infectada. Antibiótico (carbapenêmico) e abordagem step-up, de preferência após 4 semanas.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2019-2-q035-1.webp",
+      "legenda": "TC de abdome com contraste",
+      "fonte": "Imagem da prova SES-PE 2019"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2019"
+  },
+  {
+    "id": "fc-diverticulite-5",
+    "temaId": "diverticulite",
+    "frente": "Dor em fossa ilíaca esquerda, febre e leucocitose. O que a TC mostra?",
+    "verso": "Diverticulite aguda do sigmoide: espessamento da parede com divertículos e densificação da gordura pericólica.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2024-2-q036-1.webp",
+      "legenda": "TC de abdome",
+      "fonte": "Imagem da prova SES-PE 2024"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2024"
+  },
+  {
+    "id": "fc-trauma-abdominal-5",
+    "temaId": "trauma-abdominal",
+    "frente": "Qual janela do FAST é esta?",
+    "verso": "Espaço hepatorrenal (de Morrison), no quadrante superior direito: o local mais sensível para líquido livre.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2021-q028-1.webp",
+      "legenda": "Ultrassonografia (FAST)",
+      "fonte": "Imagem da prova SES-PE 2021"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2021"
+  },
+  {
+    "id": "fc-colelitiase-coledocolitiase-9",
+    "temaId": "colelitiase-coledocolitiase",
+    "frente": "Qual o diagnóstico?",
+    "verso": "Síndrome de Mirizzi: cálculo impactado no infundíbulo ou ducto cístico comprimindo o hepático comum.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2025-1-q031-1.webp",
+      "legenda": "Colangiorressonância",
+      "fonte": "Imagem da prova SES-PE 2025"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2025"
+  },
+  {
+    "id": "fc-tumores-hepaticos-7",
+    "temaId": "tumores-hepaticos",
+    "frente": "Mulher jovem em uso de anticoncepcional com dor súbita. O que a TC mostra?",
+    "verso": "Adenoma hepatocelular com sangramento subcapsular. Suspender o ACO; ressecar se > 5 cm, homem ou sangramento.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2024-q039-1.webp",
+      "legenda": "TC de abdome com contraste",
+      "fonte": "Imagem da prova SES-PE 2024"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2024"
+  },
+  {
+    "id": "fc-hiv-aids-11",
+    "temaId": "hiv-aids",
+    "frente": "HIV com CD4 baixo, déficit focal e esta imagem. Diagnóstico e tratamento.",
+    "verso": "Neurotoxoplasmose: lesão com realce anelar e edema nos núcleos da base. Sulfadiazina + pirimetamina + ácido folínico (alternativa: clindamicina).",
+    "imagem": {
+      "url": "imagens/questoes/enare/2026/2026-6b8d54ed-q022-1.webp",
+      "legenda": "TC de crânio com contraste",
+      "fonte": "Imagem da prova ENARE 2026"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2026"
+  },
+  {
+    "id": "fc-meningite-6",
+    "temaId": "meningite",
+    "frente": "Múltiplas lesões císticas com ponto central. Diagnóstico.",
+    "verso": "Neurocisticercose (cistos com escólex). Causa importante de epilepsia; albendazol com corticoide nas formas viáveis.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2024/2024-0a926f1d-q034-1.webp",
+      "legenda": "Ressonância de crânio (T2)",
+      "fonte": "Imagem da prova ENARE 2024"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2024"
+  },
+  {
+    "id": "fc-tce-avaliacao-neurologica-1",
+    "temaId": "tce-avaliacao-neurologica",
+    "frente": "Qual o hematoma?",
+    "verso": "Hematoma subdural agudo: coleção hiperdensa em crescente, que cruza as suturas, com desvio da linha média (veias ponte).",
+    "imagem": {
+      "url": "imagens/questoes/enare/2024/2024-b0ab604d-q052-1.webp",
+      "legenda": "TC de crânio sem contraste",
+      "fonte": "Imagem da prova ENARE 2024"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2024"
+  },
+  {
+    "id": "fc-tce-avaliacao-neurologica-2",
+    "temaId": "tce-avaliacao-neurologica",
+    "frente": "Qual o hematoma e a conduta?",
+    "verso": "Hematoma epidural: coleção biconvexa (lente) que não cruza suturas (artéria meníngea média). Com efeito de massa: cirurgia de emergência.",
+    "imagem": {
+      "url": "imagens/questoes/enamed/2026/2026-1638732b-q053-1.webp",
+      "legenda": "TC de crânio sem contraste",
+      "fonte": "Imagem da prova ENAMED 2026"
+    },
+    "provas": [
+      "ENAMED"
+    ],
+    "fonteQuestao": "ENAMED 2026"
+  },
+  {
+    "id": "fc-tce-avaliacao-neurologica-3",
+    "temaId": "tce-avaliacao-neurologica",
+    "frente": "Qual a lesão?",
+    "verso": "Contusão cerebral: focos hiperdensos de hemorragia no parênquima (lobos frontais e temporais, golpe e contragolpe).",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2018-q025-1.webp",
+      "legenda": "TC de crânio sem contraste",
+      "fonte": "Imagem da prova SES-PE 2018"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2018"
+  },
+  {
+    "id": "fc-tuberculose-6",
+    "temaId": "tuberculose",
+    "frente": "Cavidade antiga de tuberculose com esta imagem. Diagnóstico.",
+    "verso": "Aspergiloma (bola fúngica) dentro da cavidade, com crescente aéreo (sinal de Monod). Causa hemoptise.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2026/2026-6b8d54ed-q014-1.webp",
+      "legenda": "TC de tórax",
+      "fonte": "Imagem da prova ENARE 2026"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2026"
+  },
+  {
+    "id": "fc-asma-exacerbada-10",
+    "temaId": "asma-exacerbada",
+    "frente": "Imunossuprimido febril com nódulos de halo em vidro fosco. Diagnóstico.",
+    "verso": "Aspergilose invasiva (sinal do halo). Galactomanana e voriconazol.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2024/2024-0a926f1d-q002-1.webp",
+      "legenda": "TC de tórax",
+      "fonte": "Imagem da prova ENARE 2024"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2024"
+  },
+  {
+    "id": "fc-disturbios-respiratorios-periodo-neonatal-5",
+    "temaId": "disturbios-respiratorios-periodo-neonatal",
+    "frente": "Prematuro com desconforto respiratório desde o nascimento. Diagnóstico.",
+    "verso": "Síndrome do desconforto respiratório (doença da membrana hialina): vidro moído difuso e broncogramas, volumes baixos. Surfactante e CPAP.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2026-q061-1.webp",
+      "legenda": "Radiografia de tórax do RN",
+      "fonte": "Imagem da prova SES-PE 2026"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2026"
+  },
+  {
+    "id": "fc-gestacao-multipla-1",
+    "temaId": "gestacao-multipla",
+    "frente": "Gemelar: qual sinal e o que ele indica?",
+    "verso": "Sinal do lambda (λ): gestação dicoriônica. O sinal do T indica monocoriônica.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2026-2-q047-1.webp",
+      "legenda": "Ultrassonografia de 1º trimestre",
+      "fonte": "Imagem da prova SES-PE 2026"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2026"
+  },
+  {
+    "id": "fc-hemorragia-1a-metade-5",
+    "temaId": "hemorragia-1a-metade",
+    "frente": "Sangramento no 1º trimestre, útero maior que a idade gestacional e beta-hCG muito alto. Diagnóstico e conduta.",
+    "verso": "Mola hidatiforme (imagem em flocos de neve ou cacho de uva). Esvaziamento por aspiração (AMIU) e seguimento com beta-hCG.",
+    "imagem": {
+      "url": "imagens/questoes/ses-pe/2023/2023-e12ffc11-q011-1.webp",
+      "legenda": "Ultrassonografia transvaginal",
+      "fonte": "Imagem da prova SES-PE 2023"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2023"
+  },
+  {
+    "id": "fc-hemorragia-1a-metade-6",
+    "temaId": "hemorragia-1a-metade",
+    "frente": "Saco gestacional na região ístmica anterior em mulher com cesárea prévia.",
+    "verso": "Gravidez em cicatriz de cesariana: alto risco de rotura e hemorragia.",
+    "imagem": {
+      "url": "imagens/questoes/ses-pe/2024/2024-2be0af03-q002-1.webp",
+      "legenda": "Ultrassonografia transvaginal com Doppler",
+      "fonte": "Imagem da prova SES-PE 2024"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2024"
+  },
+  {
+    "id": "fc-cancer-endometrio-10",
+    "temaId": "cancer-endometrio",
+    "frente": "Pós-menopausa com sangramento e este endométrio. O que fazer?",
+    "verso": "Endométrio espessado (> 4 mm): biópsia (histeroscopia) para excluir câncer de endométrio.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2025-1-q060-1.webp",
+      "legenda": "Ultrassonografia transvaginal",
+      "fonte": "Imagem da prova SES-PE 2025"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2025"
+  },
+  {
+    "id": "fc-endometriose-5",
+    "temaId": "endometriose",
+    "frente": "Cisto ovariano com conteúdo homogêneo de baixa ecogenicidade. Diagnóstico.",
+    "verso": "Endometrioma (aspecto em vidro fosco, \"cisto de chocolate\").",
+    "imagem": {
+      "url": "imagens/questoes/ses-pe/2024/2024-2be0af03-q046-1.webp",
+      "legenda": "Ultrassonografia transvaginal",
+      "fonte": "Imagem da prova SES-PE 2024"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2024"
+  },
+  {
+    "id": "fc-obesidade-infantil-8",
+    "temaId": "obesidade-infantil",
+    "frente": "Adolescente com sobrepeso e esta lesão. O que é e o que indica?",
+    "verso": "Acantose nigricans: marcador de resistência insulínica.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2024-q074-1.webp",
+      "legenda": "Foto de pescoço",
+      "fonte": "Imagem da prova SES-PE 2024"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2024"
+  },
+  {
+    "id": "fc-infeccoes-cutaneas-10",
+    "temaId": "infeccoes-cutaneas",
+    "frente": "Lesões nodulares e úlcera após arranhadura de gato. Diagnóstico e tratamento.",
+    "verso": "Esporotricose cutânea; itraconazol (cerca de 3 a 6 meses).",
+    "imagem": {
+      "url": "imagens/questoes/enamed/2026/2026-1638732b-q005-1.webp",
+      "legenda": "Foto de lesão cutânea",
+      "fonte": "Imagem da prova ENAMED 2026"
+    },
+    "provas": [
+      "ENAMED"
+    ],
+    "fonteQuestao": "ENAMED 2026"
+  },
+  {
+    "id": "fc-anemias-hemoliticas-5",
+    "temaId": "anemias-hemoliticas",
+    "frente": "Qual o achado e o diagnóstico?",
+    "verso": "Hemácias em foice (drepanócitos): doença falciforme.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2026/2026-48b9897d-q022-1.webp",
+      "legenda": "Esfregaço de sangue periférico",
+      "fonte": "Imagem da prova ENARE 2026"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2026"
+  },
+  {
+    "id": "fc-linfomas-1",
+    "temaId": "linfomas",
+    "frente": "Qual a célula e o diagnóstico?",
+    "verso": "Célula de Reed-Sternberg (binucleada, \"olhos de coruja\"): linfoma de Hodgkin.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2026/2026-48b9897d-q018-1.webp",
+      "legenda": "Histologia de linfonodo",
+      "fonte": "Imagem da prova ENARE 2026"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2026"
+  },
+  {
+    "id": "fc-sindromes-geneticas-erros-inatos-5",
+    "temaId": "sindromes-geneticas-erros-inatos",
+    "frente": "O que o exame mostra e qual síndrome pensar?",
+    "verso": "Hipermobilidade articular (polegar toca o antebraço): síndrome de Ehlers-Danlos.",
+    "imagem": {
+      "url": "imagens/questoes/enare/2021/2021-ed0d3918-q080-1.webp",
+      "legenda": "Foto da mão",
+      "fonte": "Imagem da prova ENARE 2021"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2021"
+  },
+  {
+    "id": "fc-cardiotocografia-bem-estar-fetal-5",
+    "temaId": "cardiotocografia-bem-estar-fetal",
+    "frente": "Que desaceleração é esta e qual o mecanismo?",
+    "verso": "DIP I (desaceleração precoce): coincide com a contração, por compressão do polo cefálico (reflexo vagal). Benigna: manter vigilância.",
+    "imagem": {
+      "url": "imagens/questoes/sespe/2022-q045-1.webp",
+      "legenda": "Cardiotocografia",
+      "fonte": "Imagem da prova SES-PE 2022"
+    },
+    "provas": [
+      "SES-PE"
+    ],
+    "fonteQuestao": "SES-PE 2022"
+  },
+  {
+    "id": "fc-anatomia-fisiologia-semiologia-neurologica-10",
+    "temaId": "anatomia-fisiologia-semiologia-neurologica",
+    "frente": "Massa selar com extensão suprasselar. Qual alteração de campo visual esperar?",
+    "verso": "Hemianopsia bitemporal (compressão do quiasma por macroadenoma hipofisário).",
+    "imagem": {
+      "url": "imagens/questoes/enare/2023/2023-968808b8-q006-1.webp",
+      "legenda": "Ressonância de crânio com contraste",
+      "fonte": "Imagem da prova ENARE 2023"
+    },
+    "provas": [
+      "ENARE"
+    ],
+    "fonteQuestao": "ENARE 2023"
   }
 ]
