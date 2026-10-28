@@ -58,3 +58,14 @@ CREATE TABLE IF NOT EXISTS password_reset_codes (
   expires_at TEXT NOT NULL,
   used_at TEXT
 );
+
+-- Comentário aprofundado de questão gerado por IA, compartilhado entre todos
+-- os usuários e válido por ~6 meses (o Worker também cria sob demanda).
+-- prompt_hash muda se a questão for corrigida, o que força gerar de novo.
+CREATE TABLE IF NOT EXISTS comentarios_ia (
+  questao_id TEXT PRIMARY KEY,
+  prompt_hash TEXT NOT NULL,
+  resposta TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  expires_at TEXT NOT NULL
+);
