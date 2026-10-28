@@ -11,7 +11,7 @@ import { statTile } from "../components/statTile.js";
  * pro conteúdo que já existe em Conteúdo/Questões — nada é
  * duplicado, só organizado.
  */
-export async function renderCurso(container) {
+export async function renderCurso(container, _params = {}, query = {}) {
   container.innerHTML = `
     <div class="main__container">
       <div class="page-header">
@@ -123,6 +123,15 @@ export async function renderCurso(container) {
     li.dataset.status = statusDoItem(grade.todosOsItens.find((i) => i.temaId === li.dataset.temaId));
   });
 
+  // ---------- Volta de um tema aberto pela grade: reabre e mostra a mesma semana ----------
+  if (query.semana) {
+    const card = semanasEl.querySelector(`[data-semana="${CSS.escape(query.semana)}"]`);
+    if (card) {
+      card.open = true;
+      requestAnimationFrame(() => card.scrollIntoView({ block: "start" }));
+    }
+  }
+
   // ---------- Botão "Começar" — leva ao primeiro item pendente da agenda ----------
   const btnComecar = container.querySelector("#btn-curso-comecar");
   if (btnComecar) {
@@ -210,7 +219,7 @@ function renderHoje(agenda) {
     <div class="card" style="margin-bottom:24px;border-left:4px solid var(--color-accent);">
       <div class="list-card__top">
         <span class="badge badge--accent">📅 Hoje, ${hoje}</span>
-        ${primeiroLink ? `<button class="btn btn--primary" id="btn-curso-comecar" data-href="#/residencia/conteudo/${primeiroLink}">Começar</button>` : ""}
+        ${primeiroLink ? `<button class="btn btn--primary" id="btn-curso-comecar" data-href="#/residencia/conteudo/${primeiroLink}?de=curso">Começar</button>` : ""}
       </div>
       <div class="stat-row" style="margin-top:12px;">
         <div class="stat-tile"><div class="stat-tile__value">${totalAtrasadas}</div><div class="stat-tile__label">🔴 Atrasadas</div></div>
@@ -231,7 +240,7 @@ function renderAgendaBloco(titulo, bloco) {
         ${bloco.conteudo
           .map(
             (item) => `
-          <a class="plan-item card--interactive" href="#/residencia/conteudo/${item.temaId}" style="text-decoration:none;color:inherit;">
+          <a class="plan-item card--interactive" href="#/residencia/conteudo/${item.temaId}?de=curso" style="text-decoration:none;color:inherit;">
             <span class="plan-item__duration">📚</span>
             <span><strong>${escapeHtml(item.titulo)}</strong><br /><span style="color:var(--color-text-secondary);font-size:var(--fs-sm);">${escapeHtml(item.categoria)} — conteúdo novo</span></span>
           </a>`
@@ -242,7 +251,7 @@ function renderAgendaBloco(titulo, bloco) {
             r.tema
               ? `
           <div class="plan-item" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
-            <a href="#/residencia/conteudo/${r.temaId}" style="text-decoration:none;color:inherit;flex:1;">
+            <a href="#/residencia/conteudo/${r.temaId}?de=curso" style="text-decoration:none;color:inherit;flex:1;">
               <span class="plan-item__duration">🔄 ${r.tipo}</span>
               <span><strong>${escapeHtml(r.tema.titulo)}</strong><br /><span style="color:var(--color-text-secondary);font-size:var(--fs-sm);">Revisão — estudado em ${formatarData(r.dataEstudo)}</span></span>
             </a>
@@ -266,7 +275,7 @@ function renderSemana(semana) {
     grupo.itens.push(item);
   }
   return `
-    <details class="card content-area" data-semana-card ${semana.numero <= 2 ? "open" : ""}>
+    <details class="card content-area" data-semana-card data-semana="${semana.numero}" ${semana.numero <= 2 ? "open" : ""}>
       <summary class="content-area__title">
         ${semana.extra ? `Semana extra ${semana.numero - 50}` : `Semana ${semana.numero}`}
         <span class="content-area__count">${semana.concluidos}/${semana.total}</span>
@@ -279,7 +288,7 @@ function renderSemana(semana) {
           ${g.aula ? `<h3 class="curso-aula__titulo">${escapeHtml(g.aula)}</h3>` : ""}
           ${g.topicos.length ? `<p class="curso-aula__topicos">${g.topicos.map(escapeHtml).join(" · ")}</p>` : ""}
           <ul class="content-list">
-            ${g.itens.map(renderItem).join("")}
+            ${g.itens.map((item) => renderItem(item, semana.numero)).join("")}
           </ul>
         </div>`
         )
@@ -288,12 +297,12 @@ function renderSemana(semana) {
   `;
 }
 
-function renderItem(item) {
+function renderItem(item, semanaNumero) {
   const etapa = (aplicavel, feito, label) => (aplicavel ? `<span style="opacity:${feito ? 1 : 0.45};">${feito ? "✓" : "○"} ${label}</span>` : "");
   const prioridade = infoPrioridade(item.prioridadeProva);
   return `
     <li data-item data-tema-id="${item.temaId}" data-titulo="${escapeHtml(item.titulo.toLowerCase())}" data-categoria="${escapeHtml(item.categoria)}" class="curso-item ${prioridade.bordaClasse}">
-      <a class="content-list__item" href="#/residencia/conteudo/${item.temaId}">
+      <a class="content-list__item" href="#/residencia/conteudo/${item.temaId}?de=curso&semana=${semanaNumero}">
         <span class="content-list__title">${item.percentual === 100 ? "✓ " : ""}${escapeHtml(item.titulo)}</span>
         <span style="display:flex;gap:10px;align-items:center;font-size:var(--fs-xs);color:var(--color-text-secondary);white-space:nowrap;">
           ${etapa(true, item.resumoConcluido, "Resumo")}

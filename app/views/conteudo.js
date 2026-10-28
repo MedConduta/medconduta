@@ -266,16 +266,16 @@ function renderTemaListItem(tema) {
   `;
 }
 
-function renderNavegacaoAdjacente({ anterior, proximo }) {
+function renderNavegacaoAdjacente({ anterior, proximo }, sufixo = "") {
   if (!anterior && !proximo) return "";
   return `
     <div class="btn-row" style="margin-top:24px;justify-content:space-between;">
       ${
         anterior
-          ? `<a class="btn btn--secondary" href="#/residencia/conteudo/${anterior.id}">← ${escapeHtml(anterior.titulo)}</a>`
+          ? `<a class="btn btn--secondary" href="#/residencia/conteudo/${anterior.id}${sufixo}">← ${escapeHtml(anterior.titulo)}</a>`
           : "<span></span>"
       }
-      ${proximo ? `<a class="btn btn--secondary" href="#/residencia/conteudo/${proximo.id}">${escapeHtml(proximo.titulo)} →</a>` : ""}
+      ${proximo ? `<a class="btn btn--secondary" href="#/residencia/conteudo/${proximo.id}${sufixo}">${escapeHtml(proximo.titulo)} →</a>` : ""}
     </div>
   `;
 }
@@ -363,11 +363,28 @@ const RENDER_PAINEL_IA = {
   fluxograma: renderPainelFluxograma,
 };
 
-export async function renderDetalhe(container, { id }) {
+/**
+ * Para onde o "←" do tema volta: quem abre pelo Curso passa ?de=curso
+ * (e &semana=N quando vem da grade), e a volta cai na mesma semana do Curso.
+ * Sem isso, volta para a lista de Conteúdo.
+ */
+function origemDoTema(query = {}) {
+  if (query.de !== "curso") return { href: "#/residencia/conteudo", label: "Conteúdo", sufixo: "" };
+  const semana = Number(query.semana) || null;
+  const params = new URLSearchParams({ de: "curso", ...(semana ? { semana: String(semana) } : {}) });
+  return {
+    href: `#/residencia/curso${semana ? `?semana=${semana}` : ""}`,
+    label: semana ? `Curso · ${semana > 50 ? `Semana extra ${semana - 50}` : `Semana ${semana}`}` : "Curso",
+    sufixo: `?${params}`,
+  };
+}
+
+export async function renderDetalhe(container, { id }, query = {}) {
+  const origem = origemDoTema(query);
   const tema = await encontrarTema(id);
 
   if (!tema) {
-    container.innerHTML = `<div class="empty-state"><h2>Tema não encontrado</h2><a class="btn btn--secondary" href="#/residencia/conteudo">Voltar</a></div>`;
+    container.innerHTML = `<div class="empty-state"><h2>Tema não encontrado</h2><a class="btn btn--secondary" href="${origem.href}">Voltar</a></div>`;
     return;
   }
 
@@ -406,7 +423,7 @@ export async function renderDetalhe(container, { id }) {
     <div class="leitura-progresso" aria-hidden="true"><div class="leitura-progresso__barra"></div></div>
     <div class="main__container main__container--largo tema-leitura ${prioridade.fundoClasse}">
       <div class="page-header">
-        <a class="btn btn--ghost" href="#/residencia/conteudo" style="padding-left:0;margin-bottom:8px;">← Conteúdo</a>
+        <a class="btn btn--ghost" href="${origem.href}" style="padding-left:0;margin-bottom:8px;">← ${escapeHtml(origem.label)}</a>
         <div class="page-header__eyebrow">
           ${escapeHtml(tema.categoria)}
           ${infoCategoria?.quadrante ? `<span title="${escapeHtml(infoCategoria.quadrante.label)}">${infoCategoria.quadrante.emoji} ${escapeHtml(infoCategoria.quadrante.label)}</span>` : ""}
@@ -489,7 +506,7 @@ export async function renderDetalhe(container, { id }) {
         <p id="anotacao-status" style="font-size:var(--fs-xs);color:var(--color-text-muted);margin-top:6px;min-height:1em;"></p>
       </div>
 
-      ${renderNavegacaoAdjacente(adjacentes)}
+      ${renderNavegacaoAdjacente(adjacentes, origem.sufixo)}
       </div>
 
       <aside class="tema-sumario tema-sumario--lateral" aria-label="Neste tema">
@@ -515,7 +532,7 @@ export async function renderDetalhe(container, { id }) {
 
   container.querySelector("#btn-concluir").addEventListener("click", async () => {
     await marcarConcluido(tema.id, !concluido, tema.categoria);
-    renderDetalhe(container, { id });
+    renderDetalhe(container, { id }, query);
   });
 
   ligarLeitura(container);
