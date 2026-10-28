@@ -31,14 +31,15 @@ const ok = (cond, msg) => console.log(`${cond ? "✓" : "✗ FALHOU:"} ${msg}`);
   await page.click('[data-baralho="todos"]');
   await page.waitForFunction(() => document.querySelector('[data-baralho="todos"]').classList.contains("is-active"));
   const valores = async () => page.$$eval(".stat-tile__value", (els) => els.map((e) => Number(e.textContent)));
-  const [, , , totalTodos] = await valores();
+  const totalBaralho = async () => Number((await page.textContent(".stat-row .stat-tile:last-child .stat-tile__label")).match(/de (\d+)/)[1]);
+  const totalTodos = await totalBaralho();
   ok(totalTodos >= 800, `baralho completo com ${totalTodos} cards`);
   const botao = await page.textContent("#btn-revisar");
   ok(/Estudar (\d+)/.test(botao) && Number(botao.match(/\d+/)[0]) <= 20 + (await valores())[0], `sessão limitada: "${botao.trim()}"`);
 
   await page.click(`[data-baralho="sespe"]`);
   await page.waitForFunction(() => document.querySelector('[data-baralho="sespe"]').classList.contains("is-active"));
-  const [, , , totalSespe] = await valores();
+  const totalSespe = await totalBaralho();
   ok(totalSespe >= 600 && totalSespe < totalTodos, `baralho IAUPE/SES-PE com ${totalSespe} cards`);
   await page.selectOption("#novos-por-sessao", "10");
   await page.waitForFunction(() => /Estudar \d+/.test(document.querySelector("#btn-revisar")?.textContent || ""));
