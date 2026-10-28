@@ -7,7 +7,6 @@
 import { getAll, getItem, setItem } from "./db.js";
 import { fetchJsonCached } from "./utils.js";
 import { revisar, estaVencido, diasAteVencer } from "./sm2.js";
-import { askAIJson } from "./ai.js";
 
 const STORE_SRS_FLASHCARDS = "srs_flashcards";
 
@@ -50,55 +49,9 @@ export function montarCardDeQuestao(q) {
   };
 }
 
-/**
- * Pede à IA um card enxuto (o ponto-chave que a questão cobra); se a IA falhar,
- * fica o card montado com os dados da questão.
- */
-export async function gerarCardDeQuestaoComIA(q) {
-  const base = montarCardDeQuestao(q);
-  try {
-    const letras = q.alternativas.map((_, i) => String.fromCharCode(65 + i));
-    const r = await askAIJson({
-      pergunta:
-        'Transforme esta questão de residência médica em UM flashcard de revisão. A frente é uma pergunta curta e direta sobre o conceito-chave que a questão cobra (sem copiar o caso inteiro); o verso é a resposta objetiva, em até 3 linhas. Responda só com JSON: {"frente": "...", "verso": "..."}',
-      contexto: `Tema: ${q.tema}\nEnunciado: ${q.enunciado}\nAlternativas:\n${q.alternativas.map((a, i) => `${letras[i]}) ${a}`).join("\n")}\nCorreta: ${letras[q.correta]}\nComentário: ${q.comentario || ""}`,
-      tarefa: "gerar um flashcard de revisão a partir de uma questão de residência médica",
-    });
-    if (r && typeof r.frente === "string" && typeof r.verso === "string" && r.frente.trim() && r.verso.trim()) {
-      return { ...base, frente: r.frente.trim(), verso: r.verso.trim(), geradoPorIA: true };
-    }
-  } catch {
-    /* sem IA (offline/limite): vale o card montado com os dados da questão */
-  }
-  return base;
-}
-
 export async function salvarCardDeQuestao(card) {
   await setItem(STORE_CARDS_QUESTOES, card);
   return card;
-}
-
-/** Botão "Criar flashcard" mostrado depois de responder uma questão (Questões, Meus Erros). */
-export function renderBotaoCriarCard() {
-  return `<div class="criar-card"><button type="button" class="btn btn--ghost" style="padding:4px 0;min-height:auto;font-size:var(--fs-xs);">＋ Criar flashcard</button></div>`;
-}
-
-export function ligarBotaoCriarCard(rootEl, q) {
-  const wrap = rootEl?.querySelector(".criar-card");
-  const btn = wrap?.querySelector("button");
-  if (!btn) return;
-  btn.addEventListener("click", async () => {
-    btn.disabled = true;
-    btn.textContent = "Criando card...";
-    try {
-      const card = await salvarCardDeQuestao(await gerarCardDeQuestaoComIA(q));
-      wrap.innerHTML = `<p style="margin:4px 0 0;font-size:var(--fs-xs);color:var(--color-success);">✓ Card criado no baralho "Das minhas questões" — <a href="#/residencia/flashcards?baralho=questoes">ver flashcards</a></p>`;
-      return card;
-    } catch {
-      btn.disabled = false;
-      btn.textContent = "＋ Criar flashcard";
-    }
-  });
 }
 
 /** Ids das questões que já viraram card — para não duplicar. */
