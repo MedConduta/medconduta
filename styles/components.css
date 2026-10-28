@@ -2545,3 +2545,89 @@ button.stat-tile:hover {
   .fc-sessao kbd { display: none; }
   .fc-dica { display: block; }
 }
+
+/* ---------- Celebração do Modo Foco ---------- */
+.celebracao {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  background: rgba(12, 18, 32, 0.55);
+  overflow: hidden;
+  animation: celebracao-fundo 0.25s ease-out;
+}
+.celebracao__chuva { position: absolute; inset: 0; pointer-events: none; }
+.celebracao__confete {
+  position: absolute;
+  top: -16px;
+  width: 9px;
+  height: 14px;
+  border-radius: 2px;
+  opacity: 0.9;
+  animation-name: celebracao-confete;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+}
+.celebracao__painel {
+  position: relative;
+  width: min(440px, 100%);
+  max-height: calc(100vh - 2 * var(--space-4));
+  overflow-y: auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-6, 32px) var(--space-5, 24px) var(--space-5, 24px);
+  text-align: center;
+  animation: celebracao-entrada 0.45s cubic-bezier(0.2, 1.4, 0.4, 1);
+}
+.celebracao__trofeu { font-size: 64px; line-height: 1; animation: celebracao-pulo 1.2s ease-in-out infinite; }
+.celebracao__titulo { font-family: var(--font-display); font-size: var(--fs-xl); margin: var(--space-2) 0 0; }
+.celebracao__sub { color: var(--color-text-secondary); margin: 4px 0 0; }
+.celebracao__tempo {
+  margin: var(--space-4) auto 0;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft, var(--color-bg-subtle));
+  color: var(--color-accent);
+  font-weight: var(--fw-bold);
+}
+.celebracao__tempo span { font-size: 32px; font-variant-numeric: tabular-nums; margin-right: 4px; }
+.celebracao__stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; margin-top: var(--space-3); font-size: var(--fs-sm); color: var(--color-text-secondary); }
+.celebracao__figurinhas-titulo { margin-top: var(--space-4); font-size: var(--fs-sm); font-weight: var(--fw-bold); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.celebracao__figurinhas { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-2); }
+.celebracao__figurinhas .figurinha { flex: 0 1 calc(50% - var(--space-2) / 2); }
+.figurinha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px 8px;
+  border: 2px dashed var(--color-border-strong);
+  border-radius: 16px;
+  background: var(--color-bg-subtle);
+  opacity: 0;
+  animation: celebracao-figurinha 0.5s cubic-bezier(0.2, 1.5, 0.4, 1) forwards;
+}
+.figurinha:nth-child(odd) { --inclina: -4deg; }
+.figurinha:nth-child(even) { --inclina: 3deg; }
+.figurinha__emoji { font-size: 34px; line-height: 1.1; }
+.figurinha__nome { font-weight: var(--fw-bold); font-size: var(--fs-sm); }
+.figurinha__detalhe { font-size: 12px; color: var(--color-text-muted); }
+.celebracao__acoes { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-2); margin-top: var(--space-5, 24px); }
+
+@keyframes celebracao-fundo { from { opacity: 0; } to { opacity: 1; } }
+@keyframes celebracao-entrada { from { opacity: 0; transform: scale(0.8) translateY(20px); } to { opacity: 1; transform: none; } }
+@keyframes celebracao-pulo { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-8px) rotate(-6deg); } }
+@keyframes celebracao-figurinha { from { opacity: 0; transform: scale(0.3) rotate(-20deg); } to { opacity: 1; transform: rotate(var(--inclina, 0deg)); } }
+@keyframes celebracao-confete { to { transform: translateY(105vh) rotate(var(--giro, 360deg)); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .celebracao, .celebracao__painel, .celebracao__trofeu { animation: none; }
+  .celebracao__chuva { display: none; }
+  .figurinha { animation: none; opacity: 1; transform: rotate(var(--inclina, 0deg)); }
+}

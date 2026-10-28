@@ -78,6 +78,12 @@ const { chromium } = require("playwright");
   await page.waitForTimeout(3500);
   const fim = await page.$eval("#topbar-foco", (el) => el.textContent);
   console.log("Ao zerar fora da tela, topbar avisa 'Concluída':", fim.includes("Concluída"));
+  const cel = await page.$$eval(".celebracao", (els) => els.map((el) => ({ texto: el.textContent, figurinhas: el.querySelectorAll(".figurinha").length })));
+  console.log("Aviso de parabéns por cima da tela, com tempo e figurinhas:", cel.length === 1 && cel[0].texto.includes("Parabéns") && cel[0].texto.includes("25 min de foco") && cel[0].figurinhas >= 3, cel[0]?.figurinhas);
+  await page.waitForTimeout(1200);
+  await page.screenshot({ path: process.env.SHOT_CEL || "pw-test/foco_celebracao.png" });
+  await page.click(".celebracao [data-acao=fechar]");
+  console.log("Botão 'Continuar estudando' fecha o aviso:", (await page.$(".celebracao")) === null);
   const sessoes = await page.evaluate(async () => (await import("/app/db.js")).getAll("sessoes"));
   console.log("Sessão concluída registrada:", sessoes.some((s) => s.concluida && s.duracaoMin === 25));
 
@@ -98,5 +104,6 @@ const { chromium } = require("playwright");
   await page.click("#btn-encerrar");
 
   console.log("Sem erros de página:", erros.length === 0, erros);
+  await page.unrouteAll({ behavior: "ignoreErrors" });
   await browser.close();
 })().catch((e) => { console.error("ERRO:", e); process.exit(1); });
