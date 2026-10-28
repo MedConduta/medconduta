@@ -87,7 +87,7 @@ const ok = (cond, msg) => console.log(`${cond ? "✓" : "✗ FALHOU:"} ${msg}`);
   ok((await d.textContent(".nav-link.is-active .nav-link__label")) === "Revisar", "menu acende Revisar em /erros");
   ok(!(await d.textContent(".page-tabs")).includes("Flashcards"), "Flashcards saiu das abas de Revisar");
   await d.evaluate(() => { location.hash = "/residencia/flashcards"; });
-  await d.waitForSelector("#btn-gerar-cards", { timeout: 20000 });
+  await d.waitForSelector("#fc-config", { timeout: 20000 });
   ok((await d.textContent(".nav-link.is-active .nav-link__label")) === "Flashcards", "menu acende Flashcards em /flashcards");
   ok(!(await d.$(".page-tabs")), "Flashcards é página própria, sem abas de Revisar");
   await d.evaluate(() => { location.hash = "/residencia/cronograma"; });

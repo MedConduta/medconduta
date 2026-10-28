@@ -2512,3 +2512,36 @@ button.stat-tile:hover {
 }
 .prose .divergencia-nota p { margin: 0 0 var(--space-1); text-align: left; hyphens: auto; }
 .prose .divergencia-nota p:last-child { margin-bottom: 0; }
+
+/* ---------- Flashcards ---------- */
+.fc-area { max-width: 320px; margin-bottom: 0; }
+.fc-painel { margin-top: 20px; }
+.fc-painel summary { cursor: pointer; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.fc-painel__dica { font-size: var(--fs-xs); color: var(--color-text-muted); }
+.fc-dominio, .fc-dificeis { list-style: none; margin: 12px 0; padding: 0; display: grid; gap: 10px; }
+.fc-dominio__linha { display: flex; justify-content: space-between; gap: 12px; font-size: var(--fs-sm); }
+.fc-dominio__titulo { min-width: 0; overflow-wrap: anywhere; }
+.fc-dominio__num { flex: none; color: var(--color-text-muted); font-size: var(--fs-xs); }
+.fc-barra, .fc-progresso { height: 6px; border-radius: 999px; background: var(--color-border); overflow: hidden; margin-top: 4px; }
+.fc-barra span, .fc-progresso span { display: block; height: 100%; background: var(--color-success); border-radius: inherit; }
+.fc-progresso { margin: 0 0 16px; }
+.fc-progresso span { background: var(--color-accent); }
+.fc-dificeis li { display: grid; gap: 2px; font-size: var(--fs-sm); padding-bottom: 8px; border-bottom: 1px solid var(--color-border); }
+.fc-dificeis__meta { font-size: var(--fs-xs); color: var(--color-text-muted); }
+.fc-card { min-height: 220px; display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 32px; gap: 16px; }
+.fc-card--frente { cursor: pointer; }
+.fc-card .imagem-estudo { margin: 0 auto; max-width: 520px; }
+.fc-card__frente { font-size: var(--fs-md); font-weight: 500; margin: 0; }
+.fc-card__verso { padding-top: 20px; border-top: 1px solid var(--color-border); }
+.fc-card__verso p { color: var(--color-text-secondary); margin: 0; }
+.fc-card__resumo { font-size: var(--fs-sm); align-self: center; }
+.fc-lacuna { letter-spacing: 1px; color: var(--color-text-muted); }
+.fc-lacuna--revelada { background: var(--color-success-soft); color: var(--color-success); padding: 0 4px; border-radius: 4px; letter-spacing: 0; font-weight: 700; }
+.fc-botoes { margin-top: 20px; justify-content: center; }
+.fc-mostrar { margin: 20px auto 0; display: block; }
+.fc-sessao kbd { font-family: inherit; font-size: var(--fs-xs); opacity: .65; border: 1px solid currentColor; border-radius: 4px; padding: 0 4px; margin-left: 6px; }
+.fc-dica { display: none; font-size: var(--fs-xs); color: var(--color-text-muted); text-align: center; margin-top: 12px; }
+@media (hover: none) {
+  .fc-sessao kbd { display: none; }
+  .fc-dica { display: block; }
+}

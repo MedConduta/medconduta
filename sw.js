@@ -4,7 +4,7 @@
  * pré-cacheadas são armazenadas em runtime na primeira visita.
  */
 
-const CACHE_VERSION = "medconduta-v218";
+const CACHE_VERSION = "medconduta-v219";
 
 const PRECACHE_URLS = [
   "./",
