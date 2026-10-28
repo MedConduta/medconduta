@@ -152,7 +152,7 @@ export async function renderFlashcards(container, params, query = {}) {
             .filter(Boolean)
             .join(" + ")}</p>`
             : baralho === BARALHO_QUESTOES && !total
-            ? `<div class="empty-state"><h2>Nenhum card gerado de questões ainda</h2><p>Use o botão acima, ou "Criar flashcard" depois de responder uma questão.</p></div>`
+            ? `<div class="empty-state"><h2>Nenhum card gerado de questões ainda</h2><p>Use o botão acima para gerar cards das questões que você errou.</p></div>`
             : baralho === BARALHO_CURSO && !total
             ? `<div class="empty-state"><h2>Sem flashcards para os temas do Curso ainda</h2><p>Os temas da semana ${focoCurso.semana} ainda não têm cards. Use "Todos os cards" enquanto isso.</p></div>`
             : `<div class="empty-state"><h2>Tudo revisado por hoje ✓</h2><p>Nenhum card vencido agora. Volte mais tarde.</p></div>`

@@ -19,7 +19,6 @@ import {
 import { icon } from "../components/icons.js";
 import { getFocoCurso } from "../focoCurso.js";
 import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
-import { renderBotaoCriarCard, ligarBotaoCriarCard } from "../flashcards.js";
 import { renderBotaoReportar, ligarBotaoReportar } from "../reportarQuestao.js";
 
 function skeletonCard() {
@@ -777,12 +776,10 @@ export async function renderLista(container, _params, query = {}) {
             <div class="comentario-extra">
               <button type="button" class="btn btn--ghost" style="padding:4px 0;min-height:auto;font-size:var(--fs-xs);">Comentário</button>
             </div>
-            ${renderBotaoCriarCard()}
             ${!acertou ? renderSeletorMotivoErro() : ""}
           </div>
         `;
         ligarBotaoComentarioExtra(resultadoEl.querySelector(".comentario-extra"), q);
-        ligarBotaoCriarCard(resultadoEl, q);
         const respondidoEm = new Date().toISOString();
         const respostaId = `${q.id}-${Date.now()}`;
         await setItem("respostas", {
