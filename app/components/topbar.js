@@ -2,6 +2,7 @@ import { icon } from "./icons.js";
 import { getEmail } from "../auth.js";
 import { getSessaoAtiva, onSessaoFoco, encerrarSessaoAoSair, formatarMMSS } from "../foco.js";
 import { getConstancia } from "../constancia.js";
+import { mostrarCelebracaoFoco } from "./celebracaoFoco.js";
 
 /** Liga os elementos estáticos da barra superior (index.html): perfil, Modo Foco e ícones. */
 export function initTopbar({ onSair }) {
@@ -101,6 +102,7 @@ function initFocoTopbar() {
       tempo.hidden = false;
       label.hidden = true;
       tempo.textContent = "Concluída ✓";
+      mostrarCelebracaoFoco(fim).catch(() => {});
       btn.title = `Sessão de foco concluída: ${fim.minutos} min registrados`;
       avisoTimeout = setTimeout(() => {
         btn.classList.remove("is-concluido");
