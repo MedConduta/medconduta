@@ -70,7 +70,7 @@ registerRoute("/residencia/questoes", questoes.renderLista, { title: "Questões"
 
 registerRoute("/residencia/revisar", comAbas("revisar", revisar.renderRevisar), { title: "Revisar" });
 registerRoute("/residencia/erros", comAbas("revisar", erros.renderErros), { title: "Meus Erros" });
-registerRoute("/residencia/flashcards", comAbas("revisar", flashcards.renderFlashcards), { title: "Flashcards" });
+registerRoute("/residencia/flashcards", flashcards.renderFlashcards, { title: "Flashcards" });
 registerRoute("/residencia/revisao-alto-rendimento", comAbas("revisar", revisaoAltoRendimento.renderRevisaoAltoRendimento), {
   title: "Revisão de Alto Rendimento",
 });

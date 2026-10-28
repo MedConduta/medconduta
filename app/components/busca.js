@@ -17,7 +17,7 @@ const PAGINAS = [
   { titulo: "Questões", detalhe: "Banco de questões", path: "/residencia/questoes" },
   { titulo: "Revisar", detalhe: "O que revisar hoje", path: "/residencia/revisar" },
   { titulo: "Meus erros", detalhe: "Revisar", path: "/residencia/erros" },
-  { titulo: "Flashcards", detalhe: "Revisar", path: "/residencia/flashcards" },
+  { titulo: "Flashcards", detalhe: "Flashcards", path: "/residencia/flashcards" },
   { titulo: "Alto rendimento", detalhe: "Revisar", path: "/residencia/revisao-alto-rendimento" },
   { titulo: "Simulados", detalhe: "Provas cronometradas", path: "/residencia/simulados" },
   { titulo: "Desempenho", detalhe: "Estatísticas", path: "/residencia/desempenho" },

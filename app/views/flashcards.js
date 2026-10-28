@@ -118,7 +118,7 @@ export async function renderFlashcards(container, params, query = {}) {
           <p style="margin:0;font-size:var(--fs-sm);color:var(--color-text-secondary);min-width:0;flex:1 1 240px;">${
             tema
               ? `Gere cards a partir das questões deste tema: as que você errou primeiro, depois as provas mais recentes (até ${CARDS_POR_TEMA}).`
-              : "Gere cards a partir das questões que você errou: a frente é o caso, o verso é a resposta com o comentário. Também dá para criar um card de qualquer questão logo depois de responder."
+              : "Gere cards a partir das questões que você errou: a frente é o caso, o verso é a resposta com o comentário."
           }</p>
           <button type="button" class="btn btn--secondary" id="btn-gerar-cards">${tema ? "Gerar cards deste tema" : "Gerar cards dos meus erros"}</button>
           <p id="gerar-cards-status" role="status" style="margin:0;width:100%;font-size:var(--fs-xs);color:var(--color-text-muted);" hidden></p>
