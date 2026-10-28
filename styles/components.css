@@ -66,6 +66,8 @@
 .content-area {
   padding: 0;
   overflow: hidden;
+  /* Volta do tema para o Curso (?semana=N): a semana não fica sob a barra do topo. */
+  scroll-margin-top: calc(var(--topbar-height) + var(--space-4));
 }
 
 /* Cada Grande Área ganha uma cor categórica própria (ciclo de 5, paleta
