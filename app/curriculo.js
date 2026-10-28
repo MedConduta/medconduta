@@ -12,7 +12,7 @@
  */
 
 import { fetchJsonCached } from "./utils.js";
-import { getAll, getPref, setPref } from "./db.js";
+import { getAll, getPref, setPref, removeItem } from "./db.js";
 import { getAgendaRevisoes, hojeIso, somarDias, diffDias } from "./revisaoCurso.js";
 
 
@@ -58,6 +58,31 @@ export async function cursoJaIniciado() {
 /** Permite ao usuário ajustar manualmente a âncora (ex.: quer "recomeçar o relógio" do cronograma). */
 export async function setCursoInicio(dataIso) {
   await setPref(PREF_CURSO_INICIO, dataIso);
+}
+
+/**
+ * Stores que guardam o andamento do Curso: temas marcados como estudados
+ * (`progresso`, de onde saem as semanas/aulas concluídas) e o ciclo de
+ * revisões espaçadas por tema (`revisoes_curso`). Questões (`respostas`,
+ * `srs_questoes`) e flashcards (`srs_flashcards`) ficam de fora de propósito:
+ * são progresso do banco de questões/baralho, não do cronograma.
+ */
+const STORES_PROGRESSO_CURSO = ["progresso", "revisoes_curso"];
+
+/**
+ * Nova data de início = recomeçar o Curso do zero: grava a nova âncora e apaga
+ * todo o andamento do cronograma, mantendo questões e flashcards. O Worker só
+ * apaga registro por registro, então vai em lotes pequenos pra não abrir
+ * centenas de requisições de uma vez.
+ */
+export async function recomecarCurso(novaDataIso) {
+  for (const store of STORES_PROGRESSO_CURSO) {
+    const ids = (await getAll(store)).map((r) => r.id);
+    for (let i = 0; i < ids.length; i += 10) {
+      await Promise.all(ids.slice(i, i + 10).map((id) => removeItem(store, id)));
+    }
+  }
+  await setCursoInicio(novaDataIso);
 }
 
 /**
@@ -179,8 +204,11 @@ export async function getAgendaHoje() {
   const hoje = hojeIso();
 
   const conteudoPendente = grade.todosOsItens.filter((i) => i.dataProgramada && i.dataProgramada <= hoje && i.percentual < 100);
-  const conteudoAtrasado = conteudoPendente.filter((i) => i.dataProgramada < hoje);
-  const conteudoHoje = conteudoPendente.filter((i) => i.dataProgramada === hoje);
+  // Toda a semana do cronograma tem a mesma `dataProgramada` (a segunda da
+  // semana) — o conteúdo vale pra semana inteira e só fica atrasado depois que
+  // ela termina; antes disso aparece como "para hoje".
+  const conteudoAtrasado = conteudoPendente.filter((i) => somarDias(i.dataProgramada, 6) < hoje);
+  const conteudoHoje = conteudoPendente.filter((i) => somarDias(i.dataProgramada, 6) >= hoje);
 
   const temaPorId = new Map(grade.todosOsItens.map((i) => [i.temaId, i]));
   const enriquecerRevisao = (r) => ({ ...r, tema: temaPorId.get(r.temaId) ?? null });
