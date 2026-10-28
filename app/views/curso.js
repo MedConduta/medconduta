@@ -1,5 +1,5 @@
 import { escapeHtml } from "../utils.js";
-import { gerarGradeCurso, getAgendaHoje, getDashboardCurso, setCursoInicio } from "../curriculo.js";
+import { gerarGradeCurso, getAgendaHoje, getDashboardCurso, recomecarCurso } from "../curriculo.js";
 import { marcarRevisaoConcluida } from "../revisaoCurso.js";
 import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
 import { statTile } from "../components/statTile.js";
@@ -154,8 +154,18 @@ export async function renderCurso(container, _params = {}, query = {}) {
     formInicio.addEventListener("submit", async (e) => {
       e.preventDefault();
       const novaData = container.querySelector("#curso-inicio-data").value;
-      if (!novaData) return;
-      await setCursoInicio(novaData);
+      if (!novaData || novaData === dashboard.inicioReal) return;
+      const confirmou = confirm(
+        `Mudar o início do curso para ${formatarData(novaData)} recomeça o Curso do zero: apaga os temas marcados como estudados, as semanas concluídas e as revisões do cronograma.\n\nSeu progresso em questões e flashcards continua intacto.\n\nDeseja continuar?`
+      );
+      if (!confirmou) {
+        container.querySelector("#curso-inicio-data").value = dashboard.inicioReal;
+        return;
+      }
+      const botao = formInicio.querySelector("button[type=submit]");
+      botao.disabled = true;
+      botao.textContent = "Recomeçando...";
+      await recomecarCurso(novaData);
       renderCurso(container);
     });
   }
@@ -189,7 +199,7 @@ function renderInicioCurso(inicioReal) {
         </div>
         <button class="btn btn--secondary" type="submit">Salvar</button>
       </form>
-      <p style="color:var(--color-text-secondary);font-size:var(--fs-xs);margin-top:8px;">Mudar essa data recalcula quando cada semana "deveria" ter sido estudada — útil se você quiser recomeçar o cronograma do zero.</p>
+      <p style="color:var(--color-text-secondary);font-size:var(--fs-xs);margin-top:8px;">Mudar essa data recomeça o Curso do zero: zera temas estudados, semanas concluídas e revisões do cronograma. Questões e flashcards não são afetados.</p>
     </div>
   `;
 }
