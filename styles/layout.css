@@ -320,6 +320,11 @@
 .topbar-streak[hidden] { display: none; }
 
 .topbar-foco { gap: 6px; }
+.topbar-foco__tempo { font-variant-numeric: tabular-nums; font-weight: var(--fw-bold); }
+.topbar-foco [hidden] { display: none; }
+.topbar-foco.is-ativo { border-color: var(--color-accent); color: var(--color-accent); }
+.topbar-foco.is-pausado { border-color: var(--color-border-strong); color: var(--color-text-secondary); }
+.topbar-foco.is-concluido { border-color: var(--color-success, var(--color-accent)); color: var(--color-success, var(--color-accent)); }
 
 .perfil { position: relative; }
 .perfil__avatar {
