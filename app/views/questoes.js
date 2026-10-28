@@ -1,7 +1,7 @@
 import { escapeHtml, renderMarkdown, renderImagemEstudo, renderImagensQuestao } from "../utils.js";
 import { setItem, getAll, removeItem } from "../db.js";
 import { registrarResultadoQuestao } from "../erros.js";
-import { askAI } from "../ai.js";
+import { comentarioIAQuestao } from "../ai.js";
 import {
   carregarIndice,
   garantirConteudo,
@@ -816,7 +816,8 @@ export async function renderLista(container, _params, query = {}) {
       btn.textContent = "Gerando...";
       try {
         const letras = q.alternativas.map((_, i) => String.fromCharCode(65 + i));
-        const texto = await askAI({
+        const texto = await comentarioIAQuestao({
+          questaoId: q.id,
           pergunta: `Traga um comentário atualizado e mais aprofundado sobre esta questão, reforçando por que a alternativa correta está certa e apontando qualquer ponto do comentário original que esteja desatualizado ou mereça mais destaque frente às diretrizes atuais.`,
           contexto: `Tema: ${q.tema} (${q.especialidade})\nEnunciado: ${q.enunciado}\nAlternativas:\n${q.alternativas.map((a, i) => `${letras[i]}) ${a}`).join("\n")}\nCorreta: ${letras[q.correta]}\nComentário original: ${q.comentario}`,
           tarefa: "gerar um comentário atualizado e aprofundado sobre esta questão de residência médica, complementando a explicação já existente",

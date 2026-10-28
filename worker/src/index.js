@@ -520,23 +520,16 @@ async function handleDataDelete(env, origin, userId, store, recordId) {
   return jsonResponse({ ok: true }, 200, origin);
 }
 
-// ---------- Proxy Gemini (inalterado) ----------
+// ---------- Proxy Gemini ----------
 
-async function handleGeminiProxy(request, env, origin) {
+/**
+ * Chama o Gemini com pergunta+contexto+tarefa. Devolve { texto } em caso de
+ * sucesso ou { erro, status, detalhe? } pronto para virar resposta HTTP —
+ * compartilhado entre o proxy (POST /) e o comentário de questão em cache.
+ */
+async function chamarGemini(env, { pergunta, contexto, tarefa, formatoJson }) {
   if (!env.GEMINI_API_KEY) {
-    return jsonResponse(
-      { erro: "GEMINI_API_KEY não configurada no Worker. Rode: wrangler secret put GEMINI_API_KEY" },
-      500,
-      origin
-    );
-  }
-
-  const corpo = await readJson(request);
-  if (!corpo) return jsonResponse({ erro: "JSON inválido no corpo da requisição." }, 400, origin);
-
-  const { pergunta, contexto, tarefa, formatoJson } = corpo;
-  if (!pergunta || typeof pergunta !== "string" || !pergunta.trim()) {
-    return jsonResponse({ erro: "Campo 'pergunta' é obrigatório." }, 400, origin);
+    return { erro: "GEMINI_API_KEY não configurada no Worker. Rode: wrangler secret put GEMINI_API_KEY", status: 500 };
   }
 
   const partesPrompt = [];
@@ -579,7 +572,7 @@ async function handleGeminiProxy(request, env, origin) {
         body: corpoRequisicaoGemini,
       });
     } catch (e) {
-      return jsonResponse({ erro: "Falha de rede ao chamar o Gemini.", detalhe: String(e) }, 502, origin);
+      return { erro: "Falha de rede ao chamar o Gemini.", detalhe: String(e), status: 502 };
     }
 
     if (respostaGemini.ok) break;
@@ -591,21 +584,99 @@ async function handleGeminiProxy(request, env, origin) {
   }
 
   if (!respostaGemini.ok) {
-    return jsonResponse(
-      { erro: "O modelo de IA recusou ou falhou a requisição.", detalhe: ultimoErro.slice(0, 800) },
-      502,
-      origin
-    );
+    return { erro: "O modelo de IA recusou ou falhou a requisição.", detalhe: ultimoErro.slice(0, 800), status: 502 };
   }
 
   const dados = await respostaGemini.json();
   const texto = (dados?.candidates?.[0]?.content?.parts || []).map((p) => p.text || "").join("");
 
   if (!texto) {
-    return jsonResponse({ erro: "O modelo não retornou texto (pode ter sido bloqueado por segurança)." }, 502, origin);
+    return { erro: "O modelo não retornou texto (pode ter sido bloqueado por segurança).", status: 502 };
+  }
+  return { texto };
+}
+
+function respostaDeErroGemini(resultado, origin) {
+  const corpo = { erro: resultado.erro };
+  if (resultado.detalhe) corpo.detalhe = resultado.detalhe;
+  return jsonResponse(corpo, resultado.status, origin);
+}
+
+async function handleGeminiProxy(request, env, origin) {
+  const corpo = await readJson(request);
+  if (!corpo) return jsonResponse({ erro: "JSON inválido no corpo da requisição." }, 400, origin);
+
+  const { pergunta, contexto, tarefa, formatoJson } = corpo;
+  if (!pergunta || typeof pergunta !== "string" || !pergunta.trim()) {
+    return jsonResponse({ erro: "Campo 'pergunta' é obrigatório." }, 400, origin);
   }
 
-  return jsonResponse({ resposta: texto }, 200, origin);
+  const resultado = await chamarGemini(env, { pergunta, contexto, tarefa, formatoJson });
+  if (resultado.erro) return respostaDeErroGemini(resultado, origin);
+  return jsonResponse({ resposta: resultado.texto }, 200, origin);
+}
+
+// ---------- Comentário de questão gerado por IA (cache compartilhado) ----------
+//
+// O comentário aprofundado de uma questão é o mesmo para todo mundo, então é
+// gerado uma vez e guardado no D1 por COMENTARIO_IA_DIAS — qualquer usuário
+// que pedir o comentário da mesma questão nesse período recebe o texto pronto,
+// sem nova chamada ao Gemini. A linha guarda também um hash do prompt (que
+// inclui enunciado, alternativas, gabarito e comentário original): se a
+// questão for corrigida no banco, o hash muda e o comentário é refeito.
+// Exige sessão válida para que só usuários do app possam gravar no cache.
+
+const COMENTARIO_IA_DIAS = 183; // ~6 meses
+const QUESTAO_ID_RE = /^[A-Za-z0-9._:-]{1,128}$/;
+let tabelaComentariosPronta = false;
+
+async function garantirTabelaComentarios(env) {
+  if (tabelaComentariosPronta) return;
+  await env.DB.prepare(
+    `CREATE TABLE IF NOT EXISTS comentarios_ia (
+      questao_id TEXT PRIMARY KEY,
+      prompt_hash TEXT NOT NULL,
+      resposta TEXT NOT NULL,
+      created_at TEXT NOT NULL,
+      expires_at TEXT NOT NULL
+    )`
+  ).run();
+  tabelaComentariosPronta = true;
+}
+
+async function handleComentarioQuestao(request, env, origin, questaoId) {
+  if (!QUESTAO_ID_RE.test(questaoId)) return jsonResponse({ erro: "Id de questão inválido." }, 400, origin);
+
+  const corpo = await readJson(request);
+  if (!corpo) return jsonResponse({ erro: "JSON inválido no corpo da requisição." }, 400, origin);
+  const { pergunta, contexto, tarefa } = corpo;
+  if (!pergunta || typeof pergunta !== "string" || !pergunta.trim()) {
+    return jsonResponse({ erro: "Campo 'pergunta' é obrigatório." }, 400, origin);
+  }
+
+  await garantirTabelaComentarios(env);
+  const promptHash = await sha256Hex(JSON.stringify({ pergunta, contexto: contexto || "", tarefa: tarefa || "" }));
+  const agora = new Date();
+
+  const salvo = await env.DB.prepare("SELECT prompt_hash, resposta, created_at, expires_at FROM comentarios_ia WHERE questao_id = ?")
+    .bind(questaoId)
+    .first();
+  if (salvo && salvo.prompt_hash === promptHash && new Date(salvo.expires_at).getTime() > agora.getTime()) {
+    return jsonResponse({ resposta: salvo.resposta, cache: true, geradoEm: salvo.created_at }, 200, origin);
+  }
+
+  const resultado = await chamarGemini(env, { pergunta, contexto, tarefa, formatoJson: false });
+  if (resultado.erro) return respostaDeErroGemini(resultado, origin);
+
+  const expira = new Date(agora.getTime() + COMENTARIO_IA_DIAS * 24 * 60 * 60 * 1000);
+  await env.DB.prepare(
+    `INSERT INTO comentarios_ia (questao_id, prompt_hash, resposta, created_at, expires_at) VALUES (?, ?, ?, ?, ?)
+     ON CONFLICT(questao_id) DO UPDATE SET prompt_hash = excluded.prompt_hash, resposta = excluded.resposta,
+       created_at = excluded.created_at, expires_at = excluded.expires_at`
+  )
+    .bind(questaoId, promptHash, resultado.texto, agora.toISOString(), expira.toISOString())
+    .run();
+  return jsonResponse({ resposta: resultado.texto, cache: false, geradoEm: agora.toISOString() }, 200, origin);
 }
 
 // ---------- Roteador ----------
@@ -624,6 +695,14 @@ export default {
 
     const url = new URL(request.url);
     const path = url.pathname.replace(/\/+$/, "") || "/";
+
+    const comentarioMatch = path.match(/^\/ia\/comentario-questao\/([^/]+)$/);
+    if (comentarioMatch) {
+      if (request.method !== "POST") return jsonResponse({ erro: "Use POST." }, 405, origin);
+      const userId = await autenticar(request, env);
+      if (!userId) return jsonResponse({ erro: "Não autenticado." }, 401, origin);
+      return handleComentarioQuestao(request, env, origin, decodeURIComponent(comentarioMatch[1]));
+    }
 
     // Proxy do Gemini — comportamento inalterado (POST na raiz).
     if (path === "/") {

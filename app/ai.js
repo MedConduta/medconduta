@@ -10,6 +10,7 @@
 
 import { buscarNoCache, salvarNoCache } from "./iaCache.js";
 import { limparNotacaoMatematica } from "./utils.js";
+import { getToken } from "./auth.js";
 
 const ENDPOINT_PADRAO = "https://medconduta-ai.medcondutaa.workers.dev";
 
@@ -50,6 +51,31 @@ export async function askAI({ pergunta, contexto = "", tarefa = "responder à pe
   const resposta = dados.resposta || "";
   if (!semCache && resposta) await salvarNoCache(paramsCache, resposta);
   return formatoJson ? resposta : limparNotacaoMatematica(resposta);
+}
+
+/**
+ * Comentário aprofundado de uma questão do banco, gerado pela IA. Diferente
+ * de askAI, o cache aqui é compartilhado no servidor (D1, ~6 meses): o
+ * primeiro usuário que pede gera o comentário e todos os outros que abrirem a
+ * mesma questão recebem o texto pronto, sem nova chamada ao Gemini.
+ */
+export async function comentarioIAQuestao({ questaoId, pergunta, contexto = "", tarefa }) {
+  let res;
+  try {
+    res = await fetch(`${ENDPOINT_PADRAO}/ia/comentario-questao/${encodeURIComponent(questaoId)}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${getToken() || ""}` },
+      body: JSON.stringify({ pergunta, contexto, tarefa }),
+    });
+  } catch {
+    throw new Error("Não foi possível conectar ao assistente de IA. Verifique sua internet.");
+  }
+
+  const dados = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    throw new Error(dados.erro || `Erro ao consultar o assistente de IA (HTTP ${res.status}).`);
+  }
+  return limparNotacaoMatematica(dados.resposta || "");
 }
 
 function limparValoresRecursivo(valor) {
