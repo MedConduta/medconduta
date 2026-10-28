@@ -154,7 +154,7 @@ export async function renderCurso(container, _params = {}, query = {}) {
     formInicio.addEventListener("submit", async (e) => {
       e.preventDefault();
       const novaData = container.querySelector("#curso-inicio-data").value;
-      if (!novaData || novaData === dashboard.inicioReal) return;
+      if (!novaData) return;
       const confirmou = confirm(
         `Mudar o início do curso para ${formatarData(novaData)} recomeça o Curso do zero: apaga os temas marcados como estudados, as semanas concluídas e as revisões do cronograma.\n\nSeu progresso em questões e flashcards continua intacto.\n\nDeseja continuar?`
       );
