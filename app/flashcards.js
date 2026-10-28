@@ -52,7 +52,7 @@ export async function registrarRevisaoFlashcard(cardId, qualidade) {
 
 /** Baralho do Curso: temas da semana atual + temas do Curso já estudados (ver focoCurso.js). */
 export const BARALHO_CURSO = "curso";
-/** Cards escritos a partir das questões IAUPE/SES-PE (campo `banca` ou `provas`). */
+/** Cards escritos a partir das questões IAUPE/SES-PE (campo `banca` ou `provas`) e os dos temas que a banca mais cobra. */
 export const BARALHO_SESPE = "sespe";
 /** Cards dos temas mais cobrados no ENAMED e no ENARE (mesma matriz). */
 export const BARALHO_ENAMED = "enamed";
@@ -67,6 +67,8 @@ const PROVAS_ENAMED = new Set(["ENAMED", "ENARE"]);
 const PROVAS_SESPE = new Set(["SES-PE"]);
 /** Mínimo de questões ENAMED/ENARE no tema para os cards dele entrarem no baralho ENAMED. */
 const MIN_QUESTOES_ENAMED = 10;
+/** Mínimo de questões SES-PE no tema para os cards sem banca entrarem no baralho SES-PE. */
+const MIN_QUESTOES_SESPE = 5;
 
 function ehCardSesPe(card) {
   return card.banca === "IAUPE/SES-PE" || card.provas?.includes("SES-PE");
@@ -124,7 +126,7 @@ async function cardsDoBaralho(cards, srsMap, { baralho, temaIdsCurso }) {
     const sespe = baralho === BARALHO_SESPE;
     const contagem = await incidenciaPorTema(sespe ? PROVAS_SESPE : PROVAS_ENAMED);
     const doBaralho = sespe
-      ? ehCardSesPe
+      ? (c) => ehCardSesPe(c) || (c.origem !== "questao" && (contagem.get(c.temaId) || 0) >= MIN_QUESTOES_SESPE)
       : (c) => c.origem !== "questao" && (c.provas?.some((p) => PROVAS_ENAMED.has(p)) || (contagem.get(c.temaId) || 0) >= MIN_QUESTOES_ENAMED);
     return { cards: cards.filter(doBaralho), ranking: rankingPorContagem(contagem) };
   }

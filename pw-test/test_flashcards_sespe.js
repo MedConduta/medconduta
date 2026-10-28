@@ -40,7 +40,7 @@ const ok = (cond, msg) => console.log(`${cond ? "✓" : "✗ FALHOU:"} ${msg}`);
   await page.click(`[data-baralho="sespe"]`);
   await page.waitForFunction(() => document.querySelector('[data-baralho="sespe"]').classList.contains("is-active"));
   const totalSespe = await totalBaralho();
-  ok(totalSespe >= 600 && totalSespe < totalTodos, `baralho IAUPE/SES-PE com ${totalSespe} cards`);
+  ok(totalSespe >= 1200 && totalSespe < totalTodos, `baralho SES-PE com ${totalSespe} cards`);
   await page.selectOption("#novos-por-sessao", "10");
   await page.waitForFunction(() => /Estudar \d+/.test(document.querySelector("#btn-revisar")?.textContent || ""));
   await page.screenshot({ path: `${SHOTS}/flashcards_config.png` });
@@ -50,7 +50,7 @@ const ok = (cond, msg) => console.log(`${cond ? "✓" : "✗ FALHOU:"} ${msg}`);
   const temas = [];
   for (let i = 0; i < 3; i++) {
     temas.push((await page.textContent(".page-header__desc")).trim());
-    if (i === 0) ok(/IAUPE\/SES-PE/.test(temas[0]), `card mostra tema e banca: ${temas[0]}`);
+    if (i === 0) ok(temas[0].length > 3, `card mostra o tema: ${temas[0]}`);
     await page.click("#btn-mostrar");
     await page.click("#btn-lembrei");
     await page.waitForTimeout(300);
