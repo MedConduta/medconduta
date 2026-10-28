@@ -20,7 +20,7 @@ const { chromium } = require("playwright");
   await page.click("#login-submit");
   await page.waitForSelector("#sidebar-nav a", { timeout: 15000 });
 
-  // --- 1) Responder (errando) uma questão mostra "Criar flashcard"; criar gera o card.
+  // --- 1) Responder (errando) uma questão NÃO mostra mais "Criar flashcard".
   await page.evaluate(() => {
     location.hash = "/residencia/questoes";
   });
@@ -32,28 +32,13 @@ const { chromium } = require("playwright");
   });
   const errada = correta === 0 ? 1 : 0;
   await page.click(`#questoes-lista .card >> nth=0 >> .question-option >> nth=${errada}`);
-  await page.waitForSelector("#questoes-lista .resultado .criar-card button", { timeout: 15000 });
-  console.log("Botão 'Criar flashcard' aparece depois de responder:", true);
-  await page.click("#questoes-lista .resultado .criar-card button");
-  await page.waitForSelector("#questoes-lista .resultado .criar-card a", { timeout: 30000 });
-  console.log("Card criado com link para os flashcards:", true);
+  await page.waitForSelector("#questoes-lista .resultado .explanation-box", { timeout: 15000 });
+  const temBotao = await page.$("#questoes-lista .resultado .criar-card");
+  console.log("Botão 'Criar flashcard' não aparece no comentário:", !temBotao);
 
-  // --- 2) Baralho "Das minhas questões" mostra o card; a frente é o enunciado e o verso traz a resposta.
+  // --- 2) "Gerar cards dos meus erros" cria o card da questão errada; o verso traz a resposta.
   await page.evaluate(() => {
     location.hash = "/residencia/flashcards?baralho=questoes";
-  });
-  await page.waitForSelector("#btn-gerar-cards", { timeout: 20000 });
-  const totalBaralho = await page.$eval(".stat-row .stat-tile:last-child .stat-tile__value", (el) => Number(el.textContent));
-  console.log("Baralho 'Das minhas questões' tem o card criado:", totalBaralho === 1, totalBaralho);
-  await page.click("#btn-revisar");
-  await page.waitForSelector("#btn-mostrar", { timeout: 10000 });
-  await page.click("#btn-mostrar");
-  const verso = await page.$eval(".card .enunciado-texto + *, .card div .enunciado-texto", (el) => el.textContent);
-  console.log("Verso começa pela letra da alternativa correta:", verso.trim().startsWith(`${String.fromCharCode(65 + correta)})`), verso.slice(0, 60));
-
-  // --- 3) "Gerar cards dos meus erros" não duplica a questão que já virou card.
-  await page.evaluate(() => {
-    location.hash = "/residencia/flashcards?baralho=questoes&_=" + Date.now();
   });
   await page.waitForSelector("#btn-gerar-cards", { timeout: 20000 });
   await page.click("#btn-gerar-cards");
@@ -61,8 +46,17 @@ const { chromium } = require("playwright");
     const s = document.querySelector("#gerar-cards-status");
     return s && !s.hidden && !/Gerando/.test(s.textContent);
   }, null, { timeout: 30000 });
-  const status = await page.$eval("#gerar-cards-status", (el) => el.textContent);
-  console.log("Gerar dos erros não duplica o card já criado:", /Nenhuma questão errada nova/.test(status), status);
+  await page.evaluate(() => {
+    location.hash = "/residencia/flashcards?baralho=questoes&_=" + Date.now();
+  });
+  await page.waitForSelector("#btn-revisar", { timeout: 20000 });
+  const totalBaralho = await page.$eval(".stat-row .stat-tile:last-child .stat-tile__value", (el) => Number(el.textContent));
+  console.log("Baralho 'Das minhas questões' tem o card da questão errada:", totalBaralho === 1, totalBaralho);
+  await page.click("#btn-revisar");
+  await page.waitForSelector("#btn-mostrar", { timeout: 10000 });
+  await page.click("#btn-mostrar");
+  const verso = await page.$eval(".card .enunciado-texto + *, .card div .enunciado-texto", (el) => el.textContent);
+  console.log("Verso começa pela letra da alternativa correta:", verso.trim().startsWith(`${String.fromCharCode(65 + correta)})`), verso.slice(0, 60));
 
   // --- 4) Com tema, gera até 20 cards das questões do tema.
   const temaId = await page.evaluate(async () => {

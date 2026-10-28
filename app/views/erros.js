@@ -3,7 +3,6 @@ import { setItem } from "../db.js";
 import { getQuestoesEmRevisao, registrarResultadoQuestao } from "../erros.js";
 import { diasAteVencer } from "../sm2.js";
 import { renderSeletorMotivoErro, ligarSeletorMotivoErro, registrarMotivoErro } from "../motivoErro.js";
-import { renderBotaoCriarCard, ligarBotaoCriarCard } from "../flashcards.js";
 import { renderBotaoReportar, ligarBotaoReportar } from "../reportarQuestao.js";
 
 export async function renderErros(container) {
@@ -107,11 +106,9 @@ async function renderTela(container) {
           acertou ? "✓ Correta! Intervalo de revisão aumentou." : `✕ Incorreta — gabarito ${letraCorreta}. Volta para revisão em breve.`
         }</strong>
             <p style="margin-top:8px;">${escapeHtml(questao.comentario)}</p>
-            ${renderBotaoCriarCard()}
             ${!acertou ? renderSeletorMotivoErro() : ""}
           </div>
         `;
-        ligarBotaoCriarCard(resultadoEl, questao);
         const respostaId = `${questao.id}-${Date.now()}`;
         await setItem("respostas", {
           id: respostaId,
