@@ -129,6 +129,13 @@ Banco após o lote 11: 47.031 questões (789 marcadas como `repetidaDe`, fora do
 - Testes de navegador (`pw-test`): seletor de "Criar conta" atualizado para a tela de login nova (#141).
 - `tipo_pela_capa` ignora a capa quando ela traz o começo da 1ª questão em vez do programa.
 
+### Provas mais recentes (pedido de 27/10: até 100 mil questões)
+Ordem: ano mais recente primeiro (2026, 2025…); dentro do ano, instituições com mais provas primeiro. Temas automáticos revisados um a um.
+
+| Lote | Instituições | Novas | Índice após | Status |
+|---|---|---|---|---|
+| 2026-A | 2026: GHC-RS, HEVV-ES, SCM-BH, HU-UEL, HNMD-RJ, FAMEMA, HPP-PR, HMMG-SP, HECI-ES, HAC-PR, HSL-SP, IDOR, IPSEMG, PSU-GO, SCM-RP, UNOESTE, HPEV-SP, HAOC-SP, SES-PB, HUJBB-PA, CMC-SP, PSU-AL, SCM-MACEIO, UNESC-ES, SMS-CURITIBA, FELUMA, IFF-RJ | 4189 | 96796 | publicado |
+
 ### Pendências
 - O filtro "parênteses desbalanceados" tinha falso positivo ("(figura A)"); corrigido no lote 14. Nos lotes 1–13 algumas questões boas ficaram de fora por isso (ver `lotes/<SIGLA>/reprovadas.json`) — reprocessar.
 - Questões que dependem da anterior: `soNaProva` (só na prova completa); detector em `scratchpad/imp/depende.py`.
