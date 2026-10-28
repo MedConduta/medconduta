@@ -1,7 +1,7 @@
 import { icon } from "./icons.js";
 
 /**
- * Navegação principal: 7 destinos. As telas secundárias (Cronograma,
+ * Navegação principal: 8 destinos. As telas secundárias (Cronograma,
  * Prontidão, Meus Erros etc.) continuam existindo, mas são alcançadas pelas
  * abas de cada destino (ver ABAS) — `match` diz quais rotas acendem cada item.
  */
@@ -20,12 +20,13 @@ export const NAV_ITEMS = [
   },
   { path: "/residencia/conteudo", label: "Conteúdo", icon: "book", match: ["/residencia/conteudo"] },
   { path: "/residencia/questoes", label: "Questões", icon: "checklist", match: ["/residencia/questoes"] },
+  { path: "/residencia/flashcards", label: "Flashcards", icon: "cards", match: ["/residencia/flashcards"] },
   {
     path: "/residencia/revisar",
     label: "Revisar",
     icon: "layers",
     contador: "revisar",
-    match: ["/residencia/revisar", "/residencia/erros", "/residencia/flashcards", "/residencia/revisao-alto-rendimento"],
+    match: ["/residencia/revisar", "/residencia/erros", "/residencia/revisao-alto-rendimento"],
   },
   { path: "/residencia/simulados", label: "Simulados", icon: "clock", match: ["/residencia/simulados"] },
   {
@@ -52,7 +53,6 @@ export const ABAS = {
   revisar: [
     { path: "/residencia/revisar", label: "Para hoje" },
     { path: "/residencia/erros", label: "Meus erros" },
-    { path: "/residencia/flashcards", label: "Flashcards" },
     { path: "/residencia/revisao-alto-rendimento", label: "Alto rendimento" },
   ],
   desempenho: [
@@ -71,7 +71,7 @@ export const BOTTOM_NAV_ITEMS = [
     match: [...NAV_ITEMS[1].match, "/residencia/conteudo"],
   },
   { path: "/residencia/questoes", label: "Questões", icon: "checklist", match: ["/residencia/questoes", "/residencia/simulados"] },
-  { path: "/residencia/revisar", label: "Revisar", icon: "layers", contador: "revisar", match: NAV_ITEMS[4].match },
+  { path: "/residencia/revisar", label: "Revisar", icon: "layers", contador: "revisar", match: [...NAV_ITEMS[5].match, "/residencia/flashcards"] },
 ];
 
 let adminHabilitado = false;
