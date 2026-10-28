@@ -1,28 +1,47 @@
-import { DURACAO_PADRAO_MIN, DURACAO_MIN_MIN, DURACAO_MAX_MIN, MIN_MINUTOS_PARA_REGISTRAR, registrarSessao } from "../foco.js";
+import {
+  DURACAO_PADRAO_MIN,
+  DURACAO_MIN_MIN,
+  DURACAO_MAX_MIN,
+  MIN_MINUTOS_PARA_REGISTRAR,
+  getSessaoAtiva,
+  onSessaoFoco,
+  iniciarSessao,
+  alternarPausaSessao,
+  encerrarSessao,
+  formatarMMSS,
+} from "../foco.js";
 import { getConstancia } from "../constancia.js";
 
+// O cronômetro em si vive em foco.js e continua contando fora desta tela
+// (a barra superior mostra o tempo). Aqui é só o painel de controle.
+let duracaoMinEscolhida = DURACAO_PADRAO_MIN;
+
 export async function renderFoco(container) {
-  let estado = "ocioso"; // ocioso | rodando | pausado | concluido
-  let duracaoMinEscolhida = DURACAO_PADRAO_MIN;
-  let segundosRestantes = 0;
-  let inicioEm = null;
-  let intervalId = null;
+  let concluidaMin = null; // minutos da sessão que acabou de terminar (tela "concluída")
+  let ultimoEstado = getSessaoAtiva()?.estado || "ocioso";
 
-  function limpar() {
-    if (intervalId) clearInterval(intervalId);
-    intervalId = null;
-    window.removeEventListener("hashchange", aoSairDaTela);
-  }
-
-  // Se o usuário navegar pra outra tela no meio de uma sessão, ainda
-  // registra o tempo já estudado (se passou do mínimo) em vez de descartar.
-  function aoSairDaTela() {
-    if (estado === "rodando" || estado === "pausado") {
-      const minutosDecorridos = duracaoMinEscolhida - Math.ceil(segundosRestantes / 60);
-      registrarSessao({ inicioEm, duracaoMin: minutosDecorridos, concluida: false });
+  const desligar = onSessaoFoco((atual, fim) => {
+    if (!container.querySelector("#foco-timer")) return desligar();
+    if (fim) {
+      concluidaMin = fim.minutos >= MIN_MINUTOS_PARA_REGISTRAR ? fim.minutos : null;
+      ultimoEstado = "ocioso";
+      montar();
+      return;
     }
-    limpar();
-  }
+    const estado = atual?.estado || "ocioso";
+    if (estado !== ultimoEstado) {
+      ultimoEstado = estado;
+      renderTimer();
+      return;
+    }
+    const el = container.querySelector("#foco-relogio");
+    if (el && atual) el.textContent = formatarMMSS(atual.segundosRestantes);
+  });
+  const aoSair = () => {
+    desligar();
+    window.removeEventListener("hashchange", aoSair);
+  };
+  window.addEventListener("hashchange", aoSair);
 
   async function montar() {
     const constancia = await getConstancia();
@@ -31,7 +50,7 @@ export async function renderFoco(container) {
         <div class="page-header">
           <div class="page-header__eyebrow">Residência — Modo Foco</div>
           <h1>Sessão de estudo com foco</h1>
-          <p class="page-header__desc">Escolha um tempo, comece o cronômetro e estude sem distração até ele zerar. Cada sessão concluída conta pra sua constância.</p>
+          <p class="page-header__desc">Escolha um tempo e comece o cronômetro. Ele continua contando enquanto você estuda em outras telas — o tempo fica visível ao lado do relógio, no alto da página. Cada sessão concluída conta pra sua constância.</p>
         </div>
 
         <div id="foco-timer"></div>
@@ -45,8 +64,24 @@ export async function renderFoco(container) {
   function renderTimer() {
     const el = container.querySelector("#foco-timer");
     if (!el) return;
+    const atual = getSessaoAtiva();
 
-    if (estado === "ocioso") {
+    if (!atual && concluidaMin !== null) {
+      el.innerHTML = `
+        <div class="card" style="margin-bottom:24px;text-align:center;">
+          <div class="list-card__title">Sessão concluída ✓</div>
+          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">${concluidaMin} min de foco registrados.</p>
+          <button class="btn btn--primary" id="btn-nova" style="margin-top:12px;">Nova sessão</button>
+        </div>
+      `;
+      el.querySelector("#btn-nova").addEventListener("click", () => {
+        concluidaMin = null;
+        renderTimer();
+      });
+      return;
+    }
+
+    if (!atual) {
       el.innerHTML = `
         <div class="card" style="margin-bottom:24px;">
           <div class="field">
@@ -65,84 +100,24 @@ export async function renderFoco(container) {
         duracaoMinEscolhida = Number(range.value);
         output.textContent = `${duracaoMinEscolhida} min`;
       });
-      el.querySelector("#btn-iniciar").addEventListener("click", iniciar);
-      return;
-    }
-
-    if (estado === "concluido") {
-      el.innerHTML = `
-        <div class="card" style="margin-bottom:24px;text-align:center;">
-          <div class="list-card__title">Sessão concluída ✓</div>
-          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:8px;">${duracaoMinEscolhida} min de foco registrados.</p>
-          <button class="btn btn--primary" id="btn-nova" style="margin-top:12px;">Nova sessão</button>
-        </div>
-      `;
-      el.querySelector("#btn-nova").addEventListener("click", () => {
-        estado = "ocioso";
-        renderTimer();
-      });
+      el.querySelector("#btn-iniciar").addEventListener("click", () => iniciarSessao(duracaoMinEscolhida));
       return;
     }
 
     // rodando | pausado
-    const min = String(Math.floor(segundosRestantes / 60)).padStart(2, "0");
-    const seg = String(segundosRestantes % 60).padStart(2, "0");
+    const pausado = atual.estado === "pausado";
     el.innerHTML = `
       <div class="card" style="margin-bottom:24px;text-align:center;">
-        <div style="font-size:56px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--color-accent);">${min}:${seg}</div>
-        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">${estado === "pausado" ? "Pausado" : "Em andamento — foco total."}</p>
+        <div id="foco-relogio" style="font-size:56px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--color-accent);">${formatarMMSS(atual.segundosRestantes)}</div>
+        <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">${pausado ? "Pausado" : "Em andamento — pode ir estudar em outras telas, o tempo continua contando."}</p>
         <div style="display:flex;gap:12px;justify-content:center;margin-top:16px;flex-wrap:wrap;">
-          <button class="btn btn--secondary" id="btn-pausar">${estado === "pausado" ? "Retomar" : "Pausar"}</button>
+          <button class="btn btn--secondary" id="btn-pausar">${pausado ? "Retomar" : "Pausar"}</button>
           <button class="btn btn--secondary" id="btn-encerrar">Encerrar sessão</button>
         </div>
       </div>
     `;
-    el.querySelector("#btn-pausar").addEventListener("click", alternarPausa);
-    el.querySelector("#btn-encerrar").addEventListener("click", () => encerrar(false));
-  }
-
-  function iniciar() {
-    estado = "rodando";
-    segundosRestantes = duracaoMinEscolhida * 60;
-    inicioEm = new Date().toISOString();
-    window.addEventListener("hashchange", aoSairDaTela);
-    renderTimer();
-    intervalId = setInterval(tick, 1000);
-  }
-
-  function tick() {
-    if (estado !== "rodando") return;
-    segundosRestantes -= 1;
-    if (segundosRestantes <= 0) {
-      encerrar(true);
-      return;
-    }
-    const el = container.querySelector("#foco-timer div[style*='font-size:56px']");
-    if (el) {
-      const min = String(Math.floor(segundosRestantes / 60)).padStart(2, "0");
-      const seg = String(segundosRestantes % 60).padStart(2, "0");
-      el.textContent = `${min}:${seg}`;
-    }
-  }
-
-  function alternarPausa() {
-    estado = estado === "pausado" ? "rodando" : "pausado";
-    renderTimer();
-  }
-
-  async function encerrar(concluidaNaturalmente) {
-    clearInterval(intervalId);
-    intervalId = null;
-    window.removeEventListener("hashchange", aoSairDaTela);
-    const minutosDecorridos = concluidaNaturalmente ? duracaoMinEscolhida : duracaoMinEscolhida - Math.ceil(segundosRestantes / 60);
-    await registrarSessao({ inicioEm, duracaoMin: minutosDecorridos, concluida: concluidaNaturalmente });
-    if (minutosDecorridos >= MIN_MINUTOS_PARA_REGISTRAR) {
-      duracaoMinEscolhida = minutosDecorridos;
-      estado = "concluido";
-    } else {
-      estado = "ocioso";
-    }
-    await montar();
+    el.querySelector("#btn-pausar").addEventListener("click", alternarPausaSessao);
+    el.querySelector("#btn-encerrar").addEventListener("click", () => encerrarSessao(false));
   }
 
   await montar();
