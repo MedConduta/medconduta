@@ -1,4 +1,4 @@
-import { fetchJsonCached, escapeHtml, renderMarkdown, renderImagemEstudo } from "../utils.js";
+import { fetchJsonCached, escapeHtml, escapeHtmlInline, renderMarkdown, renderImagemEstudo } from "../utils.js";
 import { getItem, setItem, getAll } from "../db.js";
 import { navigate } from "../router.js";
 import { AREA_POR_CATEGORIA, ORDEM_AREAS, CATEGORIAS_VALIDAS } from "../areas.js";
@@ -484,7 +484,7 @@ export async function renderDetalhe(container, { id }, query = {}) {
           <div class="mnemonic">
             <div class="mnemonic__label">Mnemônico</div>
             <div class="mnemonic__word">${escapeHtml(m.palavra)}</div>
-            <p style="margin:0;color:var(--color-text-secondary);">${escapeHtml(m.explicacao)}</p>
+            <p style="margin:0;color:var(--color-text-secondary);">${escapeHtmlInline(m.explicacao)}</p>
           </div>`
           )
           .join("")}

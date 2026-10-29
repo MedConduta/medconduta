@@ -10,6 +10,32 @@ export function escapeHtml(str = "") {
 }
 
 /**
+ * Texto curto (legenda/fonte de imagem) com formatação inline segura: escapa
+ * tudo e devolve só as tags simples, sem atributos (<b>, <i>, <em>, <strong>,
+ * <sub>, <sup>). Entidades já escritas no dado (&gt;, &amp;) são decodificadas
+ * antes para não aparecerem literalmente.
+ */
+const TAGS_INLINE = /&lt;(\/?)(b|i|em|strong|sub|sup)&gt;/gi;
+
+function decodeEntidades(str = "") {
+  return String(str)
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, "&");
+}
+
+export function escapeHtmlInline(str = "") {
+  return escapeHtml(decodeEntidades(str)).replace(TAGS_INLINE, (_, fecha, tag) => `<${fecha}${tag.toLowerCase()}>`);
+}
+
+/** Versão em texto puro (sem tags), para atributos como alt. */
+export function textoSemTags(str = "") {
+  return decodeEntidades(str).replace(/<\/?(b|i|em|strong|sub|sup)>/gi, "");
+}
+
+/**
  * Renderiza uma imagem de estudo (ECG, radiografia etc.) com legenda e fonte.
  * `imagem` é o objeto opcional {url, legenda, fonte} usado em secoes de
  * data/temas.json e em questões do banco (data/questoes/). Carregamento é lazy
@@ -20,11 +46,11 @@ export function renderImagemEstudo(imagem) {
   return `
     <figure class="imagem-estudo">
       <button type="button" class="imagem-estudo__zoom" data-zoom-src="${escapeHtml(imagem.url)}" aria-label="Ampliar imagem">
-        <img src="${escapeHtml(imagem.url)}" alt="${escapeHtml(imagem.legenda || "")}" loading="lazy" />
+        <img src="${escapeHtml(imagem.url)}" alt="${escapeHtml(textoSemTags(imagem.legenda || ""))}" loading="lazy" />
       </button>
       <figcaption>
-        ${escapeHtml(imagem.legenda || "")}
-        ${imagem.fonte ? `<span class="imagem-estudo__fonte">${escapeHtml(imagem.fonte)}</span>` : ""}
+        ${escapeHtmlInline(imagem.legenda || "")}
+        ${imagem.fonte ? `<span class="imagem-estudo__fonte">${escapeHtmlInline(imagem.fonte)}</span>` : ""}
       </figcaption>
     </figure>
   `;
