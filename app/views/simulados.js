@@ -1,4 +1,4 @@
-import { escapeHtml, renderImagensQuestao } from "../utils.js";
+import { escapeHtml, escapeHtmlInline, renderImagensQuestao } from "../utils.js";
 import {
   TAMANHOS_DISPONIVEIS,
   TAMANHO_PADRAO,
@@ -176,7 +176,7 @@ export async function renderSimulados(container) {
             <span class="badge badge--accent">${escapeHtml(questao.tema)}</span>
             <span class="badge">${escapeHtml(questao.banca)} · ${questao.ano ?? "s/ ano"}</span>
           </div>
-          <p class="enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
+          <p class="enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtmlInline(questao.enunciado)}</p>
           ${renderImagensQuestao(questao.imagens)}
           <div class="opcoes">
             ${questao.alternativas
@@ -184,7 +184,7 @@ export async function renderSimulados(container) {
                 (alt, i) => `
               <button class="question-option${respondida === i ? " is-selected" : ""}" data-i="${i}" style="${respondida === i ? "border-color:var(--color-accent);background:var(--color-accent-soft);" : ""}">
                 <span class="question-option__letter">${String.fromCharCode(65 + i)}</span>
-                <span>${escapeHtml(alt)}</span>
+                <span>${escapeHtmlInline(alt)}</span>
               </button>`
               )
               .join("")}
@@ -283,7 +283,7 @@ export async function renderSimulados(container) {
                   ${icon("bookmark", { size: 18 })}
                 </button>
               </div>
-              <p class="enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtml(questao.enunciado)}</p>
+              <p class="enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtmlInline(questao.enunciado)}</p>
               ${renderImagensQuestao(questao.imagens)}
               <div class="opcoes">
                 ${questao.alternativas
@@ -291,7 +291,7 @@ export async function renderSimulados(container) {
                     let estilo = "";
                     if (ai === questao.correta) estilo = "border-color:var(--color-success);background:var(--color-success-soft);";
                     else if (ai === escolhida) estilo = "border-color:var(--color-danger);background:var(--color-danger-soft);";
-                    return `<div class="question-option is-disabled" style="${estilo}"><span class="question-option__letter">${String.fromCharCode(65 + ai)}</span><span>${escapeHtml(alt)}</span></div>`;
+                    return `<div class="question-option is-disabled" style="${estilo}"><span class="question-option__letter">${String.fromCharCode(65 + ai)}</span><span>${escapeHtmlInline(alt)}</span></div>`;
                   })
                   .join("")}
               </div>

@@ -1,4 +1,4 @@
-import { escapeHtml, renderMarkdown, renderImagemEstudo, renderImagensQuestao } from "../utils.js";
+import { escapeHtml, escapeHtmlInline, renderMarkdown, renderImagemEstudo, renderImagensQuestao } from "../utils.js";
 import { setItem, getAll, removeItem } from "../db.js";
 import { registrarResultadoQuestao } from "../erros.js";
 import { comentarioIAQuestao } from "../ai.js";
@@ -721,7 +721,7 @@ export async function renderLista(container, _params, query = {}) {
           ${q.origem === "ia" ? '<span class="badge badge--ia">✨ IA</span>' : ""}
           ${badgeStatus}
         </div>
-        <p class="card-enunciado enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtml(q.enunciado)}</p>
+        <p class="card-enunciado enunciado-texto" style="font-weight:500;margin:12px 0;">${escapeHtmlInline(q.enunciado)}</p>
         ${renderImagemEstudo(q.imagem)}
         ${renderImagensQuestao(q.imagens)}
         <div class="opcoes" data-qid="${q.id}">
@@ -730,7 +730,7 @@ export async function renderLista(container, _params, query = {}) {
               (alt, i) => `
             <button class="question-option" data-i="${i}">
               <span class="question-option__letter">${String.fromCharCode(65 + i)}</span>
-              <span>${escapeHtml(alt)}</span>
+              <span>${escapeHtmlInline(alt)}</span>
             </button>`
             )
             .join("")}
