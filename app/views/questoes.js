@@ -81,7 +81,7 @@ export async function renderLista(container, _params, query = {}) {
   let anoInicial = "todos";
   let buscaInicial = "";
   let ordenacaoInicial = ORDENACAO.RECENTES;
-  let qtdInicial = "20";
+  let qtdInicial = "10";
 
   if (query.categoria && especialidadesDe(indice).includes(query.categoria)) {
     filtroEspecialidade = query.categoria;
@@ -300,7 +300,7 @@ export async function renderLista(container, _params, query = {}) {
     filtroCurso = !!estado.curso && Boolean(focoCurso);
     filtroBusca.value = estado.busca || "";
     filtroOrdenacao.value = estado.ordenacao || ORDENACAO.RECENTES;
-    filtroQuantidade.value = estado.qtd || "20";
+    filtroQuantidade.value = estado.qtd || "10";
     tamanhoLote = filtroQuantidade.value === "todas" ? 100 : Number(filtroQuantidade.value);
     renderHierarquia();
     refazerFiltro();
@@ -728,10 +728,15 @@ export async function renderLista(container, _params, query = {}) {
           ${q.alternativas
             .map(
               (alt, i) => `
-            <button class="question-option" data-i="${i}">
-              <span class="question-option__letter">${String.fromCharCode(65 + i)}</span>
-              <span>${escapeHtmlInline(alt)}</span>
-            </button>`
+            <div class="question-option-linha">
+              <button class="question-option" data-i="${i}">
+                <span class="question-option__letter">${String.fromCharCode(65 + i)}</span>
+                <span class="question-option__texto">${escapeHtmlInline(alt)}</span>
+              </button>
+              <button type="button" class="question-option__tesoura" data-eliminar="${i}" title="Eliminar alternativa ${String.fromCharCode(65 + i)}" aria-label="Eliminar alternativa ${String.fromCharCode(65 + i)}" aria-pressed="false">
+                ${icon("scissors", { size: 18 })}
+              </button>
+            </div>`
             )
             .join("")}
         </div>
@@ -758,8 +763,25 @@ export async function renderLista(container, _params, query = {}) {
     if (!opcoesEl) return;
     const exibidoEm = Date.now();
 
+    // Tesourinha: risca/desrisca a alternativa enquanto a questão não foi respondida.
+    // Alternativa riscada não conta como resposta se tocada por engano.
+    opcoesEl.querySelectorAll(".question-option__tesoura").forEach((tesoura) => {
+      tesoura.addEventListener("click", () => {
+        const opcao = opcoesEl.querySelector(`.question-option[data-i="${tesoura.dataset.eliminar}"]`);
+        if (!opcao || opcao.classList.contains("is-disabled")) return;
+        const eliminada = opcao.classList.toggle("is-eliminada");
+        tesoura.classList.toggle("is-ativa", eliminada);
+        tesoura.setAttribute("aria-pressed", String(eliminada));
+        const letra = String.fromCharCode(65 + Number(tesoura.dataset.eliminar));
+        const rotulo = eliminada ? `Restaurar alternativa ${letra}` : `Eliminar alternativa ${letra}`;
+        tesoura.title = rotulo;
+        tesoura.setAttribute("aria-label", rotulo);
+      });
+    });
+
     opcoesEl.querySelectorAll(".question-option").forEach((btn) => {
       btn.addEventListener("click", async () => {
+        if (btn.classList.contains("is-eliminada") || btn.classList.contains("is-disabled")) return;
         const escolhida = Number(btn.dataset.i);
         const acertou = escolhida === q.correta;
         opcoesEl.querySelectorAll(".question-option").forEach((b, i) => {
@@ -767,6 +789,7 @@ export async function renderLista(container, _params, query = {}) {
           if (i === q.correta) b.classList.add("is-correct");
           if (i === escolhida && !acertou) b.classList.add("is-incorrect");
         });
+        opcoesEl.querySelectorAll(".question-option__tesoura").forEach((t) => (t.disabled = true));
         const resultadoEl = listaEl.querySelector(`.resultado[data-qid="${CSS.escape(id)}"]`);
         const letraCorreta = String.fromCharCode(65 + q.correta);
         resultadoEl.innerHTML = `
@@ -923,7 +946,7 @@ export async function renderLista(container, _params, query = {}) {
     if (filtroCurso) params.set("curso", "1");
     if (filtroBusca.value.trim()) params.set("busca", filtroBusca.value.trim());
     if (filtroOrdenacao.value !== ORDENACAO.RECENTES) params.set("ordenacao", filtroOrdenacao.value);
-    if (filtroQuantidade.value !== "20") params.set("qtd", filtroQuantidade.value);
+    if (filtroQuantidade.value !== "10") params.set("qtd", filtroQuantidade.value);
     if (paginaAtual > 1) params.set("pagina", String(paginaAtual));
     const caminho = window.location.hash.split("?")[0] || "#/residencia/questoes";
     const queryStr = params.toString();
