@@ -21104,5 +21104,49 @@
    "fonte": "Prova de Residência Médica SCM-SP 2026 — R1 — Acesso Direto",
    "classificacao": "automática"
   }
+ },
+ {
+  "motivos": [
+   "dado ausente: pede o volume pela fórmula de Brooke sem informar o peso do paciente"
+  ],
+  "arquivo": "cirurgia-geral.json",
+  "questao": {
+   "id": "q52730",
+   "codigo": "IAMSPE-SP|2026|R+CIR|003",
+   "instituicao": "IAMSPE-SP",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R+ — Cirurgia",
+   "numero": 3,
+   "origem": "MedCof",
+   "enunciado": "Um homem de 62 anos é internado na emergência após sofrer queimadura por chama envolvendo ambos os membros inferiores, região glútea e face posterior do tronco. Pela Regra dos Nove, a extensão estimada de queimadura é de 54% da superfície corporal total. O paciente apresenta frequência cardíaca de 128 bpm, pressão arterial de 88/54 mmHg e débito urinário de 0,3 ml/kg/h. Utilizando a Fórmula de Brooke para reanimação volêmica, qual o volume aproximado de cristaloide que deve ser administrado nas primeiras 24 horas?",
+   "alternativas": [
+    "1.620 ml de cristaloide no total das 24 horas.",
+    "4.050 ml de cristaloide no total das 24 horas.",
+    "11.340 ml de cristaloide no total das 24 horas.",
+    "12.150 ml de cristaloide no total das 24 horas.",
+    "16.200 ml de cristaloide no total das 24 horas."
+   ],
+   "gabarito": "C",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa C.",
+   "grandeArea": "Cirurgia Geral",
+   "especialidade": "Cirurgia Geral",
+   "temaId": "queimaduras",
+   "tema": "Queimaduras: Classificação e Manejo Inicial",
+   "subtema": null,
+   "palavrasChave": [
+    "cristaloide",
+    "queimadura",
+    "total",
+    "utilizando fórmula",
+    "inferiores região"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica IAMSPE-SP 2026 — R+ — Cirurgia",
+   "classificacao": "automática"
+  }
  }
 ]
