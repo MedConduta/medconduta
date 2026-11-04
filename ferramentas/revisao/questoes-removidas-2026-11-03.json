@@ -21322,5 +21322,48 @@
    "fonte": "Prova de Residência Médica FAMERP 2026 — R+ — Clínica Médica",
    "classificacao": "automática"
   }
+ },
+ {
+  "motivos": [
+   "enunciado incompleto: falta a pergunta (termina nos exames e as alternativas são alimentos)"
+  ],
+  "arquivo": "hematologia.json",
+  "questao": {
+   "id": "q99035",
+   "codigo": "DANTE-SP|2026|R+PED|021",
+   "instituicao": "DANTE-SP",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R+ — Pediatria",
+   "numero": 21,
+   "origem": "MedCof",
+   "enunciado": "Menino, de 1 ano de idade, comparece à Unidade Básica de Saúde com irritabilidade e fraqueza. A família adota alimentação vegana há cerca de três anos, sem acompanhamento regular no serviço de saúde e sem suplementação de micronutrientes. A mãe utilizou apenas ácido fólico no primeiro trimestre da gestação. O lactente foi amamentado exclusivamente até 6 meses, iniciando alimentação complementar vegana posteriormente, com baixa aceitação. Ao exame clínico, apresenta palidez cutaneomucosa, hipotonia global e reflexos tendinosos profundos diminuídos. O restante do exame físico normal. Traz exames realizados em outros serviços, que revelam: hemácias 1.400.000/mm3 (VR 3.700.000 - 5.300.000/mm3); hemoglobina 6,9g/dL (VR 10,5 - 13,5g/dL); hematócrito 20,1% (VR 33 - 39%); VCM 140fL (VR 70 - 86fL); CHCM 30g/dL (VR 32 - 36g/dL); HCM 38pg (VR 23 - 31pg); leucometria 2.800/mm3 (VR 6.000 - 17.000/mm3) com 3% de eosinófilos, 1% de bastões, 62% de segmentados, 29% de linfócitos e 5% de monócitos; plaquetas 90.000/mm3(VR 150.000 - 450.000/mm3).",
+   "alternativas": [
+    "Leguminosas e cereais germinados.",
+    "Sucos de frutas.",
+    "Ovo.",
+    "Oleaginosas."
+   ],
+   "gabarito": "C",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa C.",
+   "grandeArea": "Clínica Médica",
+   "especialidade": "Hematologia",
+   "temaId": "anemias-carenciais",
+   "tema": "Anemias Carenciais (Ferropriva e Megaloblástica)",
+   "subtema": null,
+   "palavrasChave": [
+    "hipotonia global",
+    "outros serviços",
+    "alimentação",
+    "baixa aceitação",
+    "leguminosas"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica DANTE-SP 2026 — R+ — Pediatria",
+   "classificacao": "automática"
+  }
  }
 ]
