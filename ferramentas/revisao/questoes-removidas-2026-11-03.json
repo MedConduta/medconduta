@@ -21148,5 +21148,93 @@
    "fonte": "Prova de Residência Médica IAMSPE-SP 2026 — R+ — Cirurgia",
    "classificacao": "automática"
   }
+ },
+ {
+  "motivos": [
+   "enunciado cortado: faltam o exame especular, a ultrassonografia e o beta-hCG, dos quais a conduta depende"
+  ],
+  "arquivo": "obstetricia.json",
+  "questao": {
+   "id": "q53781",
+   "codigo": "IAMSPE-SP|2026|R+MAST|059",
+   "instituicao": "IAMSPE-SP",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R+ — Mastologia",
+   "numero": 59,
+   "origem": "MedCof",
+   "enunciado": "Mulher de 31 anos procura o pronto-socorro ginecológico com queixa de atraso menstrual de 6 semanas, associado a sangramento vaginal discreto de cor vermelho-escuro há 3 dias e dor em baixo ventre à esquerda de intensidade leve a moderada, tipo \"fisgada\", com piora nas últimas 12 horas. Nega tonturas, síncope ou sangramento volumoso. Refere teste de gravidez de farmácia positivo há 1 semana. Última menstruação há 45 dias (DUM confiável, ciclos regulares de 28-30 dias). G2POA1: gestação anterior há 3 anos resultou em aborto espontâneo com 8 semanas, tratado com curetagem uterina sem intercorrências. Antecedente de salpingite tratada há 5 anos (internação hospitalar, antibioticoterapia EV por 7 dias). Nega DIU atual ou prévio. Parceiro fixo há 2 anos. Nega alergias medicamentosas conhecidas. Ao exame físico: patrz significativa. PA: 115x70 mmHg, FC: 82 bpm, Tax: 36,5 °C. Abdome: plano, ruídos hidroaéreos presentes, levemente doloroso à palpação profunda em fossa ilíaca esquerda, sem sinais de irritação peritoneal (Blumberg negativo), sem massas palpáveis. Exame especular: sangramento vaginal discreto em pequena quantidade, vermelho-escuro, sem coágulos, colo fechado. Toque vaginal: útero de volume normal, amolecido, colo fechado, anexo esquerdo discretamente doloroso à mobilização, sem massas palpáveis definidas, fundo de saco posterior livre (sem abaulamento ou dor intensa). Exames laboratoriais: B- hCG quantitativo: 2.850 mUI/mL Hemograma: Hb 12,8 g/dL, Ht 38%, leucocitos 8.200/mm3, plaquetas 268.000/mm3 Tipagem sanguínea: A negativo Progesterona sérica: 8,2 ng/mL Ultrassonografia transvaginal: Útero: volume normal (60 cm3), endométrio espessado (12 mm, trilaminar), cavidade uterina vazia, sem saco gestacional intrauterino visível Anexo direito: ovário direito normal (8 cm3), sem massas. Anexo esquerdo: imagem anecoica arredondada para-anexial esquerda medindo 2,8 x 2,2 cm, com halo hiperêmico ao Doppler colorido, sem embrião visível no interior (compatível com saco gestacional extra-uterino). Líquido livre na cavidade pélvica: ausente Fundo de saco de Douglas: livre. Considerando o diagnóstico de gravidez ectópica íntegra e as opções terapêuticas disponíveis, qual a melhor conduta?",
+   "alternativas": [
+    "Conduta expectante com seguimento ambulatorial semanal de B-hCG até negativação, considerando que B-hCG < 5.000 mUI/mL, ausência de líquido livre e estabilidade hemodinâmica indicam alta probabilidade de resolução espontânea sem necessidade de intervenção.",
+    "Laparoscopia imediata com salpingectomia (ressecção completa da tuba uterina esquerda), considerando que é o tratamento definitivo com menor risco de persistência de trofoblasto e permite diagnóstico histopatológico confirmatório.",
+    "Tratamento clínico com metotrexato 50 mg/m2 IM dose única (protocolo de dose única), administrar imunoglobulina anti-D (mãe Rh negativo), seguimento ambulatorial rigoroso com BhCG seriado nos dias 4 e 7, e semanalmente até negativação, orientar sinais de alerta.",
+    "Laparoscopia com salpingostomia linear (incisão na tuba e remoção do saco gestacional preservando a tuba), considerando que a paciente deseja preservar fertilidade e a massa ectópica é pequena (< 3 cm).",
+    "Tratamento expectante inicial por 48 horas com dosagens seriadas de B-hCG (0, 48h); se BhCG em ascensão (aumento > 50%), indicar laparotomia exploradora de urgência; se B-hCG estável ou em queda, manter seguimento ambulatorial."
+   ],
+   "gabarito": "C",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa C.",
+   "grandeArea": "Ginecologia e Obstetrícia",
+   "especialidade": "Obstetrícia",
+   "temaId": "hemorragia-1a-metade",
+   "tema": "Hemorragias da 1ª Metade da Gestação",
+   "subtema": null,
+   "palavrasChave": [
+    "vermelho escuro",
+    "anexo",
+    "seguimento ambulatorial",
+    "vaginal discreto",
+    "negativação"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica IAMSPE-SP 2026 — R+ — Mastologia",
+   "classificacao": "automática"
+  }
+ },
+ {
+  "motivos": [
+   "enunciado cortado: a evolução após 72 h de antibiótico ('paciente ma...') some, e a conduta depende dela"
+  ],
+  "arquivo": "ginecologia.json",
+  "questao": {
+   "id": "q53761",
+   "codigo": "IAMSPE-SP|2026|R+MAST|038",
+   "instituicao": "IAMSPE-SP",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R+ — Mastologia",
+   "numero": 38,
+   "origem": "MedCof",
+   "enunciado": "Paciente de 29 anos, previamente hígida, deu entrada no pronto-socorro com quadro de dor pélvica intensa há 3 dias, febre (38,5 °C), náuseas e corrimento vaginal fétido há 1 semana. Relata novo parceiro sexual há 2 meses, não usa preservativo. Nega gestações prévias, usa anticoncepcional oral combinado. Ao exame físico: regular estado geral, descorada +/4, PA: 100x60 mmHg, FC: 110 bpm, Tax: 38,2 °C. Exame especular: corrimento mucopurulento em grande quantidade. Toque vaginal: colo uterino amolecido com dor à mobilização, útero doloroso, massa palpável e extremamente dolorosa em anexo direito de aproximadamente 8 cm. Exames laboratoriais: Leucocitos: 18.500/mm3 (bastões 12%), PCR: 156 mg/L, VHS: 68 mm. Ultrassonografia transvaginal: imagem cística complexa em anexo direito medindo 7,5 x 6,2 cm, com debris internos e septações grosseiras, sugestiva de abscesso tubo-ovariano. Anexo esquerdo normal. Teste de gravidez negativo. Foi iniciado tratamento com ceftriaxona 2g IV/dia + doxiciclina 100 mg VO 12/12 h + metronidazol 500 mg IV 8/8 h. Após 72 horas de antibioticoterapia, paciente mantém febre (38 °C), dor pélvica intensa (EVA 8/10), sem melhora clínica. Nova ultrassonografia: abscesso com 8 cm, sem redução dimensional. Qual a conduta mais adequada neste momento?",
+   "alternativas": [
+    "Manter antibioticoterapia atual por mais 5-7 dias, associando anticoagulação profilática e suporte nutricional, com reavaliação diária.",
+    "Substituir esquema antibiótico por imipenem + vancomicina considerando possível resistência bacteriana, mantendo tratamento clínico.",
+    "Drenagem do abscesso guiada por ultrassonografia via transvaginal e manutenção da antibioticoterapia endovenosa.",
+    "Laparotomia exploradora com salpingo- ooforectomia direita unilateral.",
+    "Videolaparoscopia com drenagem do abscesso, lavagem exaustiva da cavidade e salpingectomia direita, preservando ovário se viável."
+   ],
+   "gabarito": "C",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa C.",
+   "grandeArea": "Ginecologia e Obstetrícia",
+   "especialidade": "Ginecologia",
+   "temaId": "dip",
+   "tema": "Doença Inflamatória Pélvica (DIP)",
+   "subtema": null,
+   "palavrasChave": [
+    "pélvica intensa",
+    "anexo",
+    "abscesso",
+    "corrimento",
+    "reavaliação diária"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica IAMSPE-SP 2026 — R+ — Mastologia",
+   "classificacao": "automática"
+  }
  }
 ]
