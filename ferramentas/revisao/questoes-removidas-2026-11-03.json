@@ -21236,5 +21236,48 @@
    "fonte": "Prova de Residência Médica IAMSPE-SP 2026 — R+ — Mastologia",
    "classificacao": "automática"
   }
+ },
+ {
+  "motivos": [
+   "dado errado no enunciado: glicemia de 15 mg/dL incompatível com o quadro (cetoacidose euglicêmica por iSGLT2); valor original provavelmente truncado"
+  ],
+  "arquivo": "endocrinologia.json",
+  "questao": {
+   "id": "q44298",
+   "codigo": "FAMERP|2026|R+CM|004",
+   "instituicao": "FAMERP",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R+ — Clínica Médica",
+   "numero": 4,
+   "origem": "MedCof",
+   "enunciado": "Paciente 78 anos, gênero masculino, é trazido à unidade de emergência por quadro iniciado há 10 horas caracterizado por dores abdominais difusas associado a vômitos. Evoluiu com sonolência 30 minutos após sua admissão. Ao exame físico apresenta-se desidratado, taquicárdico, taquipneico e com abdome doloroso, porém sem visceromegalias e com ruídos hidroaéreos presentes. Família relata que paciente faz tratamento apenas para diabetes e hipertensão. O resultado dos exames colhidos mostrou:\n• Gasometria arterial: o ph = 7,15; o pO2 = 88; o pCO2 = 20; o HCO3 = 8; o Tactato = 1,5; o Na = 135 mEq/l; o K = 3,8 mEq/l; o Glicemia = 15 mg/dL; o Creatinina = 2,0 mg/dL.\n• Urina I: o Proteínas +1/+4; o Glicose +4/+4; o Corpos cetônicos +3/+4; o Ausência de leucocitúria.\nDentre os potenciais fármacos utilizados pelo paciente, qual poderia ter causado o quadro clínico apresentado?",
+   "alternativas": [
+    "Metformina",
+    "Pioglitazona.",
+    "Dapaglifozina.",
+    "Hidrocloratiazida."
+   ],
+   "gabarito": "C",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa C.",
+   "grandeArea": "Clínica Médica",
+   "especialidade": "Endocrinologia",
+   "temaId": "diabetes-complicacoes-cronicas",
+   "tema": "Diabetes Mellitus: Complicações Crônicas",
+   "subtema": null,
+   "palavrasChave": [
+    "fármacos utilizados",
+    "hidrocloratiazida",
+    "abdominais difusas",
+    "dapaglifozina",
+    "associado vômitos"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica FAMERP 2026 — R+ — Clínica Médica",
+   "classificacao": "automática"
+  }
  }
 ]
