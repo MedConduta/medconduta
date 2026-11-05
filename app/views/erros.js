@@ -105,7 +105,7 @@ async function renderTela(container) {
             <strong style="color:${acertou ? "var(--color-success)" : "var(--color-danger)"}">${
           acertou ? "✓ Correta! Intervalo de revisão aumentou." : `✕ Incorreta — gabarito ${letraCorreta}. Volta para revisão em breve.`
         }</strong>
-            <p style="margin-top:8px;">${escapeHtml(questao.comentario)}</p>
+            <p style="margin-top:8px;white-space:pre-line;">${escapeHtml(questao.comentario)}</p>
             ${!acertou ? renderSeletorMotivoErro() : ""}
           </div>
         `;
