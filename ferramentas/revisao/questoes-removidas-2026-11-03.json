@@ -21410,5 +21410,91 @@
    "fonte": "Prova de Residência Médica SES-GO 2026 — R1 — Acesso Direto",
    "classificacao": "manual"
   }
+ },
+ {
+  "motivos": [
+   "alternativa D é texto de outra questão (citação sobre vancomicina) e o enunciado traz um trecho de outra questão colado"
+  ],
+  "arquivo": "endocrinologia.json",
+  "questao": {
+   "id": "q95526",
+   "codigo": "HPP-PR|2026|R+PED|024",
+   "instituicao": "HPP-PR",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R+ — Pediatria",
+   "numero": 24,
+   "origem": "MedCof",
+   "enunciado": "Paciente escolar (8 anos 30Kg) é admitido em setor de Pronto Atendimento por quadro de cetoacidose diabética. Após período de estabilização clínica em infusão de insulina contínua, o paciente apresenta subitamente sintomas de tremor de extremidades associado a náusea, palidez de pele e sudorese. Optado pela realização de bolus (endovenoso - em acesso venoso periférico) de solução glicosada para reversão do sintoma na seguinte prescrição:\nÁgua destilada - 80ml + Glicose 50% - 20ml Considerando a concentração de glicose máxima permitida em acesso venoso periférico em 12,5%, com objetivo de evitar eventos de tromboflebite, qual a porcentagem de glicose nesta solução prescrita?",
+   "alternativas": [
+    "10%.",
+    "11,5%.",
+    "8%.",
+    "“A vancomicina é um antibiótico glicopeptídeo (...) prescrita para tratar e prevenir diversas infecções bacterianas causadas por bactérias gram-positivas, incluindo Staphylococcus aureus resistente à meticilina (MRSA) (...) Para pacientes pediátricos, cada dose deve ser administrada durante pelo menos 60 minutos pelo risco de reações adversas incluindo hipotensão e reações de hipersensibilidade (por exemplo, anafilaxia)”.\nPatel S, Preuss CV, Bernice F. Vancomycin. 2024 Oct 29. In: StatPearls Vancomicina (frasco 500mg pó para injetável) Sugestão recomendada para reconstituição em diluente próprio: 50mg/ml Sugestão recomendada para diluição em soro glicosado 5% = 5mg/ml"
+   ],
+   "gabarito": "A",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa A.",
+   "grandeArea": "Clínica Médica",
+   "especialidade": "Endocrinologia",
+   "temaId": "cetoacidose-diabetica",
+   "tema": "Cetoacidose Diabética (CAD)",
+   "subtema": null,
+   "palavrasChave": [
+    "sugestão",
+    "venoso periférico",
+    "prescrita",
+    "reações",
+    "acesso venoso"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica HPP-PR 2026 — R+ — Pediatria",
+   "classificacao": "manual"
+  }
+ },
+ {
+  "motivos": [
+   "enunciado incompleto: pergunta a vazão \"deste esquema\" sem trazer a prescrição nem os dados de diluição"
+  ],
+  "arquivo": "infectologia.json",
+  "questao": {
+   "id": "q95527",
+   "codigo": "HPP-PR|2026|R+PED|025",
+   "instituicao": "HPP-PR",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R+ — Pediatria",
+   "numero": 25,
+   "origem": "MedCof",
+   "enunciado": "Qual a vazão deste esquema antimicrobiano a ser prescrita para infusão (a cada 6 horas) em equipo de soro (gotas/minuto), conforme o tempo estipulado de 1hora e 40 minutos?",
+   "alternativas": [
+    "25 gotas/minuto.",
+    "15 gotas/minuto.",
+    "22 gotas/minuto.",
+    "20 gotas/minuto."
+   ],
+   "gabarito": "C",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa C.",
+   "grandeArea": "Clínica Médica",
+   "especialidade": "Infectologia",
+   "temaId": "antibioticoterapia-principios",
+   "tema": "Antibioticoterapia: Princípios e Principais Classes",
+   "subtema": null,
+   "palavrasChave": [
+    "gotas",
+    "minuto",
+    "estipulado",
+    "conforme tempo",
+    "esquema antimicrobiano"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica HPP-PR 2026 — R+ — Pediatria",
+   "classificacao": "manual"
+  }
  }
 ]
