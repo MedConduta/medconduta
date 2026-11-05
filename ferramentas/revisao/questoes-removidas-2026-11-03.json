@@ -21583,5 +21583,49 @@
    "fonte": "Prova de Residência Médica UESPI 2026 — R+ — Clínica Médica",
    "classificacao": "manual"
   }
+ },
+ {
+  "motivos": [
+   "enunciado cita \"Os exames foram:\" mas os exames não vieram; itens dependem deles"
+  ],
+  "arquivo": "nefrologia.json",
+  "questao": {
+   "id": "q101956",
+   "codigo": "UESPI|2026|R+CM|039",
+   "instituicao": "UESPI",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R+ — Clínica Médica",
+   "numero": 39,
+   "origem": "MedCof",
+   "enunciado": "José da Silva, 66 anos, sabidamente portador de hipertensão e diabetes há cerca de 15 anos, comparece para primeira consulta no ambulatório de nefrologia, encaminhado por médica da atenção primária devido a “alterações nos exames dos rins”. Ele nega qualquer tipo de queixa. Acompanhante refere que os exames dos rins foram repetidos 2 vezes. Faz uso diário de: Enalapril 10mg 12/12h; Anlodipino 10mg/dia e Metformina 1.000mg 2x/dia. Nega alergias. Os exames foram: Calculada a taxa de filtração glomerular pelo CKD-EPI que evidenciou taxa estimada de 38ml/mim/1,73m2. No exame físico, ele apresentou sobrepeso (IMC 28), PA: 145/92mmHg em membro superior direito e 148/94mmHg em membro inferior esquerdo. Sem edemas em membros inferiores. Para complementar a avaliação clínica e condutas do paciente é necessário:\n1. Solicitar ultrassonografia de rins e vias urinárias e próstata.\n2. Solicitar dosagem de PTH, cálcio e fósforo e já iniciar reposição de colecalciferol devido a hipovitaminose D.\n3. Solicitar pesquisa de proteinúria de 24h para melhor avaliar esse marcador.\n4. Aguardar próxima consulta para fazer ajustes em anti-hipertensivos.\nEstá (ão) CORRETOS apenas o (s) item (ns):",
+   "alternativas": [
+    "1 e 2.",
+    "1, 2 e 3.",
+    "1, 2 e 4.",
+    "1, 2, 3 e 4.",
+    "1."
+   ],
+   "gabarito": "A",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa A.",
+   "grandeArea": "Clínica Médica",
+   "especialidade": "Nefrologia",
+   "temaId": "drc",
+   "tema": "Doença Renal Crônica (DRC)",
+   "subtema": null,
+   "palavrasChave": [
+    "primária devido",
+    "acompanhante refere",
+    "colecalciferol",
+    "complementar avaliação",
+    "devido alterações"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica UESPI 2026 — R+ — Clínica Médica",
+   "classificacao": "automática"
+  }
  }
 ]
