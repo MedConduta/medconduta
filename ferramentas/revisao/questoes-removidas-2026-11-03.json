@@ -21627,5 +21627,48 @@
    "fonte": "Prova de Residência Médica UESPI 2026 — R+ — Clínica Médica",
    "classificacao": "automática"
   }
+ },
+ {
+  "motivos": [
+   "alternativas trocadas: pergunta sobre exame para confirmar DM2, mas as opções são de lesões císticas do pâncreas (copiadas de outra questão)"
+  ],
+  "arquivo": "endocrinologia.json",
+  "questao": {
+   "id": "q46007",
+   "codigo": "PSU-MG|2026|R+CLINICAMEDICATIPO2|015",
+   "instituicao": "PSU-MG",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R+ — Clínica Médica Tipo 2",
+   "numero": 15,
+   "origem": "MedCof",
+   "enunciado": "Mulher de 60 anos realiza exame periódico de saúde. Não apresenta queixas. É obesa desde a adolescência, nega tabagismo, etilismo e desconhece outras comorbidades. Não faz uso contínuo de medicamentos. Ao exame físico, PA 124x84 mmHg; sem alterações. EXAMES DE LABORATÓRIO: glicemia de jejum 117mg/dL; hemoglobina glicada A1c 6,7%, triglicérides 398mg/dL; colesterol total 210mg/dL; HDL 35mg/dL; LDL 154mg/dL. Assinale a alternativa que apresenta o exame sérico MAIS ADEQUADO para a confirmação do diagnóstico de diabetes melito 2 nessa paciente:",
+   "alternativas": [
+    "Cistoadenoma mucinoso.",
+    "Cistoadenoma seroso.",
+    "Neoplasia mucinosa papilar intraductal (IPMN).",
+    "Pseudocisto do pâncreas."
+   ],
+   "gabarito": "B",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa B.",
+   "grandeArea": "Clínica Médica",
+   "especialidade": "Endocrinologia",
+   "temaId": "diabetes-classificacao-diagnostico",
+   "tema": "Diabetes Mellitus: Classificação e Diagnóstico",
+   "subtema": null,
+   "palavrasChave": [
+    "cistoadenoma",
+    "desconhece outras",
+    "neoplasia mucinosa",
+    "laboratório glicemia",
+    "pseudocisto"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica PSU-MG 2026 — R+ — Clínica Médica Tipo 2",
+   "classificacao": "automática"
+  }
  }
 ]
