@@ -21846,5 +21846,49 @@
    "fonte": "Prova de Residência Médica FAMENE 2026 — R1 — Acesso Direto",
    "classificacao": "automática"
   }
+ },
+ {
+  "motivos": [
+   "pede a interpretação de um traçado de cardiotocografia que não foi incluído (sem imagem)"
+  ],
+  "arquivo": "obstetricia.json",
+  "questao": {
+   "id": "q102225",
+   "codigo": "UNIP|2026|R1|067",
+   "instituicao": "UNIP",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R1 — Acesso Direto",
+   "numero": 67,
+   "origem": "MedCof",
+   "enunciado": "M.L.P., 30 anos, G1POAO, 39 semanas e 2 dias, consulta para CTG de rotina. Movimentação fetal preservada, nega contrações, perda de líquido ou sangramento. Pré-natal sem intercorrências. PA: 110/70 mmHg. Exame: AU: 37 cm; útero normotenso; dorso à direita; BCF sonar: 142 bpm. Como o médico deve interpretar esse traçado e qual deve ser a conduta adequada?",
+   "alternativas": [
+    "CTG categoria I (normal/reativo) - liberar com retorno em 3-4 dias.",
+    "CTG categoria II (não reativo) - estímulo sonoro/vibratório e repetir; se persistir, complementar com perfil biofísico fetal.",
+    "CTG categoria III (anormal) - internar e resolver por sofrimento fetal.",
+    "CTG inconclusivo - repetir por mais 40 min após deambulação.",
+    "CTG categoria II com variabilidade mínima - internação para vigilância, resolução em 24h."
+   ],
+   "gabarito": "C",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa C.",
+   "grandeArea": "Ginecologia e Obstetrícia",
+   "especialidade": "Obstetrícia",
+   "temaId": "cardiotocografia-bem-estar-fetal",
+   "tema": "Cardiotocografia e Avaliação do Bem-Estar Fetal",
+   "subtema": null,
+   "palavrasChave": [
+    "categoria",
+    "reativo",
+    "dorso direita",
+    "fetal preservada",
+    "estímulo sonoro"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica UNIP 2026 — R1 — Acesso Direto",
+   "classificacao": "automática"
+  }
  }
 ]
