@@ -21714,5 +21714,49 @@
    "fonte": "Prova de Residência Médica UNESC-ES 2026 — R1 — Acesso Direto",
    "classificacao": "automática"
   }
+ },
+ {
+  "motivos": [
+   "questão de associação com a ordem das descrições embaralhada na importação: a sequência correta (E, A, C, D, B, F) não corresponde a nenhuma alternativa, e o gabarito B não bate com o texto"
+  ],
+  "arquivo": "cirurgia-geral.json",
+  "questao": {
+   "id": "q95820",
+   "codigo": "HAC-PR|2026|R1|004",
+   "instituicao": "HAC-PR",
+   "ano": 2026,
+   "edicao": null,
+   "prova": "R1 — Acesso Direto",
+   "numero": 4,
+   "origem": "MedCof",
+   "enunciado": "Correlacione os termos relacionados ao metabolismo com suas respectivas descrições, conforme o texto apresentado:\n() Processo que converte lactato produzido pelo músculo de volta em glicose no fígado, dependente de ATP. B. Gliconeogênese. () Forma de armazenamento de carboidratos no fígado e músculo esquelético, esgotando-se com 48 horas de jejum. C. Lipólise. () Processo de decomposição de triglicerídeos em ácidos graxos livres e glicerol, iniciado por lipases nos adipócitos D. Aminoácidos essenciais. () Aminoácidos que não podem ser sintetizados de novo a partir de outros aminoácidos e devem ser obtidos pela dieta E. Ciclo de Cori. () Via metabólica que converte substratos não carboidratos, como aminoácidos e glicerol, em glicose, ocorrendo principalmente no fígado F. Ciclo da Uréia. () Série de reações que converte amônia, produzida pelo metabolismo de compostos nitrogenados, em ureia, uma substância menos tóxica.",
+   "alternativas": [
+    "B, C, E, F, D, A.",
+    "B, E, C, D, A, F.",
+    "E, B, C, D, A, F.",
+    "E, C, B, A, D, F.",
+    "C, B, E, D, F, A."
+   ],
+   "gabarito": "B",
+   "imagens": [],
+   "comentario": "Gabarito: alternativa B.",
+   "grandeArea": "Cirurgia Geral",
+   "especialidade": "Cirurgia Geral",
+   "temaId": "resposta-endocrino-metabolica-trauma",
+   "tema": "Resposta Endócrino-Metabólica ao Trauma",
+   "subtema": null,
+   "palavrasChave": [
+    "converte",
+    "aminoácidos",
+    "glicerol",
+    "metabolismo",
+    "carboidratos"
+   ],
+   "anulada": false,
+   "aliases": [],
+   "revisado": false,
+   "fonte": "Prova de Residência Médica HAC-PR 2026 — R1 — Acesso Direto",
+   "classificacao": "manual"
+  }
  }
 ]
