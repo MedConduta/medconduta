@@ -296,7 +296,7 @@ export async function renderSimulados(container) {
                   .join("")}
               </div>
               <div class="explanation-box" style="margin-top:12px;">
-                ${escapeHtml(questao.comentario)}
+                <div style="white-space:pre-line;">${escapeHtml(questao.comentario)}</div>
                 ${!acertou ? renderSeletorMotivoErro() : ""}
               </div>
             </div>`;

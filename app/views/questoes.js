@@ -795,7 +795,7 @@ export async function renderLista(container, _params, query = {}) {
         resultadoEl.innerHTML = `
           <div class="explanation-box explanation-box--${acertou ? "correta" : "incorreta"}">
             <strong style="color:${acertou ? "var(--color-success)" : "var(--color-danger)"}">${acertou ? `✓ Correta!` : `✕ Incorreta — gabarito ${letraCorreta}.`}</strong>
-            <p style="margin-top:8px;">${escapeHtml(q.comentario)}</p>
+            <p style="margin-top:8px;white-space:pre-line;">${escapeHtml(q.comentario)}</p>
             <div class="comentario-extra">
               <button type="button" class="btn btn--ghost" style="padding:4px 0;min-height:auto;font-size:var(--fs-xs);">Comentário</button>
             </div>
