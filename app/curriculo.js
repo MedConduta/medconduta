@@ -17,6 +17,8 @@ import { getAgendaRevisoes, hojeIso, somarDias, diffDias } from "./revisaoCurso.
 
 
 import { carregarIndiceBanco } from "./bancoQuestoes.js";
+import { getPlanoEstudo, cargaTema, cargaVideosAula, planejarSemanas, semanasAteRevisao } from "./cargaCurso.js";
+import { PREF_PROVA_DATA } from "./cronograma.js";
 const PREF_CURSO_INICIO = "curso_inicio_real";
 
 /**
@@ -92,40 +94,126 @@ export async function recomecarCurso(novaDataIso) {
  * (ver focoCurso.js) mudava sem o usuário ter começado o Curso de fato.
  */
 async function carregarDados({ ancorar = true } = {}) {
-  const [curriculoBruto, temas, questoes, progresso, respostas, inicioReal] = await Promise.all([
+  const [curriculoBruto, temas, questoes, progresso, respostas, inicioReal, videoaulas, plano, dataProva] = await Promise.all([
     fetchJsonCached("data/curriculo.json"),
     fetchJsonCached("data/temas.json"),
     carregarIndiceBanco().then((banco) => banco.registros), // índice leve: aqui só importa o temaId
     getAll("progresso"),
     getAll("respostas"),
     ancorar ? garantirInicioCurso() : getPref(PREF_CURSO_INICIO, null).then((salvo) => salvo || hojeIso()),
+    fetchJsonCached("data/videoaulas.json").catch(() => ({ aulas: {} })),
+    getPlanoEstudo(),
+    getPref(PREF_PROVA_DATA, null),
   ]);
 
-  const curriculo = deslocarParaInicioReal(curriculoBruto, inicioReal);
-  return { curriculo, temas, questoes, progresso, respostas, inicioReal };
+  const { curriculo, distribuicao } = distribuirCurriculo({ curriculoBruto, temas, questoes, inicioReal, videoaulas, plano, dataProva });
+  return { curriculo, distribuicao, temas, questoes, progresso, respostas, inicioReal, plano, dataProva };
 }
 
-/** Desloca todas as `dataProgramada` da planilha pelo offset entre a data original da semana 1 e `inicioReal`. */
-function deslocarParaInicioReal(curriculoBruto, inicioReal) {
-  if (!curriculoBruto.length) return curriculoBruto;
-  const primeiraData = curriculoBruto.reduce((min, r) => (r.dataProgramada < min ? r.dataProgramada : min), curriculoBruto[0].dataProgramada);
-  const offsetDias = diffDias(primeiraData, inicioReal);
-  if (offsetDias === 0) return curriculoBruto;
-  return curriculoBruto.map((linha) => ({ ...linha, dataProgramada: somarDias(linha.dataProgramada, offsetDias) }));
+/**
+ * Redistribui as aulas da planilha pelas semanas que cabem no tempo do
+ * usuário (horas por dia × dias por semana) e até a data da prova — ver
+ * cargaCurso.js. A ORDEM das aulas nunca muda; só quantas cabem em cada
+ * semana. `dataProgramada` passa a ser a segunda-feira (ou o dia de início)
+ * de cada semana a partir de `inicioReal`.
+ */
+function distribuirCurriculo({ curriculoBruto, temas, questoes, inicioReal, videoaulas, plano, dataProva }) {
+  const temaPorId = new Map(temas.map((t) => [t.id, t]));
+  const disponiveisPorTema = new Map();
+  for (const q of questoes) {
+    if (q.anulada || q.repetida) continue;
+    disponiveisPorTema.set(q.temaId, (disponiveisPorTema.get(q.temaId) || 0) + 1);
+  }
+
+  const ordens = [...new Set(curriculoBruto.map((l) => l.aulaOrdem))].sort((a, b) => a - b);
+  const aulas = ordens.map((ordem) => {
+    const linhas = curriculoBruto.filter((l) => l.aulaOrdem === ordem);
+    const video = cargaVideosAula(videoaulas.aulas?.[String(ordem)] || [], plano.velocidadeVideo);
+    const temasCarga = linhas
+      .filter((l) => temaPorId.has(l.temaId))
+      .map((l) => ({ temaId: l.temaId, ...cargaTema(temaPorId.get(l.temaId), disponiveisPorTema.get(l.temaId) || 0) }));
+    const estudoMin = video.videoMin + temasCarga.reduce((s, t) => s + t.leituraMin + t.questoesEstudoMin, 0);
+    const revisoesMin = temasCarga.reduce((s, t) => s + t.revisoesMin, 0);
+    const revisoes = temasCarga.flatMap((t) => t.revisoesDias.map((dias) => ({ dias, min: t.minPorRevisao })));
+    return { ordem, video, temasCarga, estudoMin, revisoes, revisoesMin, totalMin: estudoMin + revisoesMin };
+  });
+
+  const totalMin = aulas.reduce((s, a) => s + a.totalMin, 0);
+  const horasSemana = plano.horasDia * plano.diasSemana;
+  const semanasAteProva = dataProva ? Math.floor(diffDias(inicioReal, dataProva) / 7) : null;
+  const calc = planejarSemanas(aulas, { horasSemana, semanasAteProva });
+  const semanaDaAula = new Map(calc.semanaDaAula.map((s, i) => [aulas[i].ordem, s]));
+
+  // Carga por semana: estudo da própria semana + revisões que vencem nela
+  // (estudo suposto no meio da semana; revisão em +dias depois).
+  const porSemana = new Map();
+  const semanaCarga = (n) => {
+    if (!porSemana.has(n)) porSemana.set(n, { numero: n, videoMin: 0, leituraMin: 0, questoesMin: 0, revisoesMin: 0, questoesEstudo: 0, revisoes: 0 });
+    return porSemana.get(n);
+  };
+  for (const aula of aulas) {
+    const n = semanaDaAula.get(aula.ordem);
+    const c = semanaCarga(n);
+    c.videoMin += aula.video.videoMin;
+    for (const t of aula.temasCarga) {
+      c.leituraMin += t.leituraMin;
+      c.questoesMin += t.questoesEstudoMin;
+      c.questoesEstudo += t.questoesEstudo;
+      for (const dias of t.revisoesDias) {
+        const r = semanaCarga(n + semanasAteRevisao(dias));
+        r.revisoesMin += t.minPorRevisao;
+        r.revisoes += 1;
+      }
+    }
+  }
+  for (const c of porSemana.values()) c.totalMin = c.videoMin + c.leituraMin + c.questoesMin + c.revisoesMin;
+
+  const aulaPorOrdem = new Map(aulas.map((a) => [a.ordem, a]));
+  const curriculo = curriculoBruto.map((linha) => {
+    const semana = semanaDaAula.get(linha.aulaOrdem) ?? linha.semana;
+    const aula = aulaPorOrdem.get(linha.aulaOrdem);
+    return {
+      ...linha,
+      semanaPlanilha: linha.semana,
+      semana,
+      dataProgramada: somarDias(inicioReal, (semana - 1) * 7),
+      carga: aula?.temasCarga.find((t) => t.temaId === linha.temaId) || null,
+      videosAula: aula?.video || null,
+    };
+  });
+
+  return {
+    curriculo,
+    distribuicao: {
+      semanas: calc.semanas,
+      limite: calc.limite,
+      necessarias: calc.necessarias,
+      cabe: calc.cabe,
+      orcamentoMin: calc.orcamentoMin,
+      totalMin,
+      horasSemana,
+      semanasAteProva,
+      dataProva,
+      fimPrevisto: somarDias(inicioReal, calc.semanas * 7 - 1),
+      cargaPorSemana: [...porSemana.values()].sort((a, b) => a.numero - b.numero),
+    },
+  };
 }
 
 /** Monta o item de um tema (progresso das 2 etapas — resumo/questões), cruzando só sinais que já existem, sem checkbox novo. */
 function montarItem(linha, contexto) {
-  const { temaPorId, progressoSet, temaIdsComQuestao, temaIdsComQuestaoRespondida } = contexto;
+  const { temaPorId, progressoSet, questoesRespondidasPorTema } = contexto;
   const tema = temaPorId.get(linha.temaId);
   if (!tema) return null; // temaId ainda não criado (ver Fase A) — linha fica de fora até o tema existir
 
   const resumoConcluido = progressoSet.has(tema.id);
-  const temQuestoes = temaIdsComQuestao.has(tema.id);
-  const questoesFeitas = temaIdsComQuestaoRespondida.has(tema.id);
+  const questoesMeta = linha.carga?.questoesEstudo ?? 0;
+  const questoesRespondidas = questoesRespondidasPorTema.get(tema.id)?.size || 0;
+  const temQuestoes = questoesMeta > 0;
+  const questoesFeitas = temQuestoes && questoesRespondidas >= questoesMeta;
 
   const etapasAplicaveis = [true, temQuestoes].filter(Boolean).length;
-  const etapasConcluidas = [resumoConcluido, temQuestoes && questoesFeitas].filter(Boolean).length;
+  const etapasConcluidas = [resumoConcluido, questoesFeitas].filter(Boolean).length;
 
   return {
     temaId: tema.id,
@@ -135,23 +223,32 @@ function montarItem(linha, contexto) {
     aula: linha.aula || null,
     aulaOrdem: linha.aulaOrdem ?? null,
     aulaTopicos: linha.aulaTopicos || [],
+    videosAula: linha.videosAula,
+    carga: linha.carga,
     semana: linha.semana,
     dataProgramada: linha.dataProgramada,
     resumoConcluido,
     temQuestoes,
+    questoesMeta,
+    questoesRespondidas: Math.min(questoesRespondidas, questoesMeta || questoesRespondidas),
     questoesFeitas,
     percentual: etapasAplicaveis ? Math.round((etapasConcluidas / etapasAplicaveis) * 100) : 0,
     prioridadeProva: tema.prioridadeProva || "media",
   };
 }
 
-function construirContexto({ temas, questoes, progresso, respostas }) {
+function construirContexto({ temas, progresso, respostas }) {
   const temaPorId = new Map(temas.map((t) => [t.id, t]));
   const progressoSet = new Set(progresso.filter((p) => p.concluido).map((p) => p.id));
-  const temaIdsComQuestao = new Set(questoes.map((q) => q.temaId));
-  const temaIdsComQuestaoRespondida = new Set(respostas.map((r) => r.temaId));
+  // Questões DIFERENTES respondidas por tema (refazer a mesma não conta duas vezes pra meta).
+  const questoesRespondidasPorTema = new Map();
+  for (const r of respostas) {
+    if (!r.temaId) continue;
+    if (!questoesRespondidasPorTema.has(r.temaId)) questoesRespondidasPorTema.set(r.temaId, new Set());
+    questoesRespondidasPorTema.get(r.temaId).add(r.questaoId || r.id);
+  }
 
-  return { temaPorId, progressoSet, temaIdsComQuestao, temaIdsComQuestaoRespondida };
+  return { temaPorId, progressoSet, questoesRespondidasPorTema };
 }
 
 /** Grade completa do curso: semanas na ordem fixa do cronograma, cada uma com seus temas e progresso. */
@@ -167,12 +264,14 @@ export async function gerarGradeCurso(opcoes) {
     porSemana.get(linha.semana).push(item);
   }
 
+  const cargaPorNumero = new Map(dados.distribuicao.cargaPorSemana.map((c) => [c.numero, c]));
   const semanas = [...porSemana.entries()]
     .sort((a, b) => a[0] - b[0])
     .map(([numero, itens]) => {
       const concluidos = itens.filter((i) => i.percentual === 100).length;
       return {
         numero,
+        carga: cargaPorNumero.get(numero) || null,
         extra: numero > 50,
         dataInicio: itens.map((i) => i.dataProgramada).sort()[0] ?? null,
         itens,
@@ -187,6 +286,9 @@ export async function gerarGradeCurso(opcoes) {
 
   return {
     semanas,
+    distribuicao: dados.distribuicao,
+    plano: dados.plano,
+    respostas: dados.respostas,
     todosOsItens,
     totalTemas: todosOsItens.length,
     totalConcluidos,
@@ -211,7 +313,16 @@ export async function getAgendaHoje() {
   const conteudoHoje = conteudoPendente.filter((i) => somarDias(i.dataProgramada, 6) >= hoje);
 
   const temaPorId = new Map(grade.todosOsItens.map((i) => [i.temaId, i]));
-  const enriquecerRevisao = (r) => ({ ...r, tema: temaPorId.get(r.temaId) ?? null });
+  // Cada revisão pede 10 questões do tema: contam as questões diferentes
+  // respondidas a partir do dia em que a revisão venceu.
+  const enriquecerRevisao = (r) => {
+    const tema = temaPorId.get(r.temaId) ?? null;
+    const feitas = new Set(
+      grade.respostas.filter((x) => x.temaId === r.temaId && (x.respondidoEm || "").slice(0, 10) >= r.dataAgendada).map((x) => x.questaoId || x.id)
+    ).size;
+    const meta = tema?.carga?.questoesRevisao ?? 0;
+    return { ...r, tema, questoesMeta: meta, questoesFeitas: Math.min(feitas, meta) };
+  };
 
   return {
     atrasadas: { conteudo: conteudoAtrasado, revisoes: agendaRevisoes.vencidas.map(enriquecerRevisao) },

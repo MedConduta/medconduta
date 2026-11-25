@@ -1,4 +1,5 @@
 import { gerarPlanoDoDia } from "../planner.js";
+import { getPlanoEstudo } from "../cargaCurso.js";
 import { escapeHtml } from "../utils.js";
 import { getPref, setPref } from "../db.js";
 import { getConstancia } from "../constancia.js";
@@ -16,7 +17,8 @@ const PREF_HORAS = "planejador_horas";
 const MINUTOS_DIA_RUIM = 20;
 
 export async function renderPlanejador(container) {
-  const [horasSalvas, constancia] = await Promise.all([getPref(PREF_HORAS, 2), getConstancia()]);
+  const [horasPref, constancia, plano] = await Promise.all([getPref(PREF_HORAS, null), getConstancia(), getPlanoEstudo()]);
+  const horasSalvas = horasPref ?? plano.horasDia;
 
   container.innerHTML = `
     <div class="main__container">

@@ -1,4 +1,5 @@
 import { escapeHtml } from "../utils.js";
+import { getPlanoEstudo } from "../cargaCurso.js";
 import { getAll, getPref } from "../db.js";
 import { gerarPlanoDoDia } from "../planner.js";
 import { gerarDiagnostico } from "../prontidao.js";
@@ -45,7 +46,7 @@ export async function renderInicio(container) {
     </div>
   `;
 
-  const horasSalvas = await getPref(PREF_HORAS, 2);
+  const horasSalvas = (await getPref(PREF_HORAS, null)) ?? (await getPlanoEstudo()).horasDia;
   const [plano, diagnostico, constancia, metaDiaria, grade, respostas, progresso, ultima, revisar, simulados] = await Promise.all([
     gerarPlanoDoDia(horasSalvas),
     gerarDiagnostico(),

@@ -29,8 +29,10 @@ const { chromium } = require("playwright");
     topicos: el.querySelector(".curso-aula__topicos")?.textContent.trim() || "",
     links: [...el.querySelectorAll("a.acao-mini--link")].map((a) => a.getAttribute("href")),
   }));
-  console.log("45 semanas:", semanas === 45, semanas);
-  console.log("semana 1 com 2 aulas:", sem1.aulas.length === 2, sem1.aulas.join(" | "));
+  // Com o plano padrão (4,5 h/dia, 6 dias) e sem data de prova, o curso cabe nas 45 semanas;
+  // quantas aulas entram em cada semana depende da carga real (ver app/cargaCurso.js).
+  console.log("até 45 semanas:", semanas <= 45 && semanas >= 40, semanas);
+  console.log("semana 1 começa pela 1ª aula do MEDCURSO:", sem1.aulas[0]?.startsWith("Glomerulopatias I"), sem1.aulas.join(" | "));
   console.log("subtópicos da aula:", sem1.topicos.includes("Doença de Berger"), sem1.topicos.slice(0, 90));
   console.log("links de questões por tema:", sem1.links.length > 0 && sem1.links.every((h) => h.includes("temaId=")), sem1.links[0]);
   await page.screenshot({ path: "pw-test/curso_semana1.png", clip: { x: 0, y: 0, width: 1280, height: 900 } });

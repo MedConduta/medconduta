@@ -4,8 +4,9 @@
  * como estudado (progresso.atualizadoEm, já gravado por marcarConcluido em
  * app/views/conteudo.js) — nunca na data programada do cronograma.
  *
- * Ao marcar um tema como estudado, gera de uma vez as 5 revisões do ciclo
- * (3/5/7/15/30 dias). `cicloId` é a própria data do estudo: uma nova data de
+ * Ao marcar um tema como estudado, gera de uma vez as revisões do ciclo
+ * (3/5/7/15/30 dias nos temas de prioridade alta; menos nos demais, ver
+ * intervalosDoTema). `cicloId` é a própria data do estudo: uma nova data de
  * estudo (re-estudar o tema depois) abre um novo ciclo automaticamente, sem
  * precisar de contador à parte — o ciclo anterior fica registrado no
  * histórico, nunca é apagado. O id de cada revisão é determinístico
@@ -15,6 +16,8 @@
  */
 
 import { getAll, setItem } from "./db.js";
+import { fetchJsonCached } from "./utils.js";
+import { metasDoTema } from "./cargaCurso.js";
 
 const STORE_REVISOES = "revisoes_curso";
 
@@ -47,10 +50,24 @@ export function diffDias(dataIsoA, dataIsoB) {
   return Math.round((b.getTime() - a.getTime()) / (1000 * 60 * 60 * 24));
 }
 
-/** Grava as 5 revisões do ciclo aberto por um estudo em `dataEstudoIso` (YYYY-MM-DD). Idempotente. */
+/**
+ * Intervalos do ciclo de um tema conforme a prioridade dele na prova (ver
+ * METAS_PRIORIDADE em cargaCurso.js): alta = 3/5/7/15/30 dias; média =
+ * 7/15/30; baixa = 7/30. Tema que não está em temas.json usa o ciclo completo.
+ */
+export async function intervalosDoTema(temaId) {
+  const temas = await fetchJsonCached("data/temas.json").catch(() => []);
+  const tema = temas.find((t) => t.id === temaId);
+  if (!tema) return REVIEW_INTERVALS;
+  const dias = new Set(metasDoTema(tema.prioridadeProva).revisoesDias);
+  return REVIEW_INTERVALS.filter((i) => dias.has(i.dias));
+}
+
+/** Grava as revisões do ciclo aberto por um estudo em `dataEstudoIso` (YYYY-MM-DD). Idempotente. */
 export async function gerarRevisoesParaTema(temaId, dataEstudoIso) {
+  const intervalos = await intervalosDoTema(temaId);
   await Promise.all(
-    REVIEW_INTERVALS.map(({ tipo, dias }) =>
+    intervalos.map(({ tipo, dias }) =>
       setItem(STORE_REVISOES, {
         id: `${temaId}__${dataEstudoIso}__${tipo}`,
         temaId,
