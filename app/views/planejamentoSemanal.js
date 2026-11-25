@@ -10,7 +10,7 @@ export async function renderPlanejamentoSemanal(container) {
 
   const p = await getPlanejamentoSemanal();
   const progressoAulas = p.aulasTotal ? Math.round((p.aulasConcluidas / p.aulasTotal) * 100) : null;
-  const progressoQuestoes = p.questoesMetaTemas ? Math.round((p.questoesFeitasTemas / p.questoesMetaTemas) * 100) : null;
+  const progressoQuestoes = p.questoesMetaTotal ? Math.round((p.questoesFeitasTotal / p.questoesMetaTotal) * 100) : null;
 
   const periodo = p.semana?.dataInicio ? formatarPeriodo(p.semana.dataInicio) : null;
 
@@ -28,6 +28,8 @@ export async function renderPlanejamentoSemanal(container) {
         </p>
       </div>
 
+      ${renderHorasSemana(p.carga)}
+
       <h3>Sua semana × já feito</h3>
       <div class="plan-queue" style="margin-bottom:24px;">
         <div class="card">
@@ -41,9 +43,9 @@ export async function renderPlanejamentoSemanal(container) {
         <div class="card">
           <div class="list-card__top">
             <strong>Questões</strong>
-            <span class="badge badge--accent">${p.questoesFeitasTemas} / ${p.questoesMetaTemas}</span>
+            <span class="badge badge--accent">${p.questoesFeitasTotal} / ${p.questoesMetaTotal}</span>
           </div>
-          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">Temas da semana com questões já praticadas.</p>
+          <p style="color:var(--color-text-secondary);font-size:var(--fs-sm);margin-top:4px;">Questões de estudo dos temas da semana (meta de 30 por tema; 20 nos de prioridade baixa). ${p.questoesFeitasTemas} de ${p.questoesMetaTemas} temas já bateram a meta.</p>
           ${renderBarraProgresso(progressoQuestoes)}
         </div>
         <a class="card card--interactive" href="#/residencia/curso" style="text-decoration:none;color:inherit;">
@@ -89,4 +91,29 @@ function formatarPeriodo(dataInicioIso) {
   const fim = new Date(ano, mes - 1, dia + 6);
   const fmt = (d) => `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}`;
   return `${fmt(inicio)} – ${fmt(fim)}`;
+}
+
+function formatarHoras(minutos) {
+  const m = Math.round(minutos);
+  const h = Math.floor(m / 60);
+  const resto = m % 60;
+  if (!h) return `${resto} min`;
+  return resto ? `${h}h${String(resto).padStart(2, "0")}` : `${h}h`;
+}
+
+/** Quanto tempo a semana pede, por tipo de atividade (ver cargaCurso.js). */
+function renderHorasSemana(c) {
+  if (!c) return "";
+  const linha = (rotulo, min, desc) =>
+    min > 0 ? `<div class="list-card__top" style="margin-top:6px;"><span>${rotulo}<br /><span style="color:var(--color-text-secondary);font-size:var(--fs-xs);">${desc}</span></span><strong>${formatarHoras(min)}</strong></div>` : "";
+  return `
+    <div class="card" style="margin-bottom:24px;">
+      <div class="list-card__top"><strong>Tempo desta semana</strong><span class="badge badge--accent">~${formatarHoras(c.totalMin)}</span></div>
+      ${linha("▶ Videoaulas", c.videoMin, "Aulas e atualizações, na velocidade do seu plano")}
+      ${linha("📖 Leitura dos resumos", c.leituraMin, "200 palavras por minuto, mais as figuras")}
+      ${linha("✍ Questões de estudo", c.questoesMin, `${c.questoesEstudo} questões, 3 min cada`)}
+      ${linha("🔄 Revisões", c.revisoesMin, `${c.revisoes} revisões vencendo, cada uma com releitura e 10 questões`)}
+      <p style="color:var(--color-text-secondary);font-size:var(--fs-xs);margin-top:8px;">Ajuste horas por dia, dias por semana e velocidade dos vídeos no <a href="#/residencia/curso">Curso</a>.</p>
+    </div>
+  `;
 }

@@ -2471,6 +2471,29 @@ button.stat-tile:hover {
   line-height: 1.45;
   color: var(--color-text-secondary);
 }
+.curso-plano__form { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; }
+.curso-plano__form .field { flex: 1 1 150px; min-width: 0; }
+.curso-plano__aviso, .curso-plano__ok {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm, 6px);
+  font-size: var(--fs-sm);
+  border-left: 4px solid var(--color-warning);
+  background: var(--color-surface-hover);
+}
+.curso-plano__ok { border-left-color: var(--color-success); }
+.curso-semana__carga {
+  margin: 8px 0 0;
+  padding: 0 var(--space-3);
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+}
+.curso-videos { margin: 0 var(--space-3) 6px; font-size: var(--fs-xs); color: var(--color-text-secondary); }
+.curso-videos summary { cursor: pointer; }
+.curso-videos ul { list-style: none; margin: 4px 0 0; padding: 0; }
+.curso-videos li { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; border-bottom: 1px solid var(--color-border); }
+.curso-videos li span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.curso-videos li span:last-child { white-space: nowrap; }
 .curso-item { display: flex; align-items: center; gap: 4px; }
 .curso-item > .content-list__item { flex: 1 1 auto; min-width: 0; }
 .curso-item > .acao-mini { flex-shrink: 0; }

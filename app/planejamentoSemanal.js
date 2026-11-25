@@ -37,9 +37,13 @@ export async function getPlanejamentoSemanal() {
 
   return {
     semana,
+    carga: semana?.carga ?? null,
+    distribuicao: grade.distribuicao,
     aulasTotal: itens.length,
     aulasConcluidas: itens.filter((i) => i.resumoConcluido).length,
     questoesMetaTemas: itensComQuestoes.length,
+    questoesMetaTotal: itensComQuestoes.reduce((s, i) => s + i.questoesMeta, 0),
+    questoesFeitasTotal: itensComQuestoes.reduce((s, i) => s + i.questoesRespondidas, 0),
     questoesFeitasTemas: itensComQuestoes.filter((i) => i.questoesFeitas).length,
     revisoesCursoSemana,
     errosVencendoSemana,

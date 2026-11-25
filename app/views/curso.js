@@ -3,6 +3,7 @@ import { gerarGradeCurso, getAgendaHoje, getDashboardCurso, recomecarCurso } fro
 import { marcarRevisaoConcluida } from "../revisaoCurso.js";
 import { infoPrioridade, badgePrioridade } from "../prioridadeProva.js";
 import { statTile } from "../components/statTile.js";
+import { setPlanoEstudo, SEMANAS_RESERVA_PROVA, PALAVRAS_POR_MIN, MIN_POR_QUESTAO } from "../cargaCurso.js";
 
 /**
  * Curso — gerenciador de estudos sobre o cronograma real (ver app/curriculo.js
@@ -39,11 +40,11 @@ export async function renderCurso(container, _params = {}, query = {}) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Curso</div>
         <h1>Curso</h1>
-        <p class="page-header__desc">Cronograma do MEDCURSO 2026 semana a semana (45 semanas, aulas com seus resumos), com revisão espaçada automática. Marque o tema como estudado em <a href="#/residencia/conteudo">Conteúdo</a> — progresso e revisões aparecem aqui sozinhos.</p>
+        <p class="page-header__desc">Cronograma do MEDCURSO 2026 com as videoaulas, os resumos e as questões de cada tema, distribuído pelas semanas conforme as horas que você tem e a data da sua prova. Marque o tema como estudado em <a href="#/residencia/conteudo">Conteúdo</a> — progresso e revisões aparecem aqui sozinhos.</p>
       </div>
 
       ${renderDashboard(dashboard)}
-      ${renderInicioCurso(dashboard.inicioReal)}
+      ${renderPlano(dashboard.inicioReal, grade)}
       ${renderHoje(agenda)}
 
       <div class="card" style="margin-bottom:24px;">
@@ -148,13 +149,21 @@ export async function renderCurso(container, _params = {}, query = {}) {
     });
   });
 
-  // ---------- Ajustar a data de início do cronograma ----------
+  // ---------- Ajustar o plano (horas, dias, velocidade) e a data de início ----------
   const formInicio = container.querySelector("#form-curso-inicio");
   if (formInicio) {
     formInicio.addEventListener("submit", async (e) => {
       e.preventDefault();
+      await setPlanoEstudo({
+        horasDia: container.querySelector("#plano-horas").value,
+        diasSemana: container.querySelector("#plano-dias").value,
+        velocidadeVideo: container.querySelector("#plano-velocidade").value,
+      });
       const novaData = container.querySelector("#curso-inicio-data").value;
-      if (!novaData) return;
+      if (!novaData || novaData === dashboard.inicioReal) {
+        renderCurso(container);
+        return;
+      }
       const confirmou = confirm(
         `Mudar o início do curso para ${formatarData(novaData)} recomeça o Curso do zero: apaga os temas marcados como estudados, as semanas concluídas e as revisões do cronograma.\n\nSeu progresso em questões e flashcards continua intacto.\n\nDeseja continuar?`
       );
@@ -189,18 +198,80 @@ function renderDashboard(d) {
   `;
 }
 
-function renderInicioCurso(inicioReal) {
+function renderPlano(inicioReal, grade) {
+  const d = grade.distribuicao;
+  const p = grade.plano;
+  const opcoes = (valores, atual, rotulo) => valores.map((v) => `<option value="${v}" ${Number(v) === Number(atual) ? "selected" : ""}>${rotulo(v)}</option>`).join("");
+  const horasMedias = d.orcamentoMin / 60;
+
+  let situacao;
+  if (!d.dataProva) {
+    situacao = `<p class="curso-plano__aviso">Sem data de prova: o curso usa até ${d.limite} semanas. Informe a data em <a href="#/residencia/cronograma">Cronograma</a> para ele se ajustar a ela.</p>`;
+  } else if (d.cabe) {
+    const folga = d.limite - d.semanas;
+    situacao = `<p class="curso-plano__ok">Prova em ${formatarData(d.dataProva)}. O curso termina em ${formatarData(d.fimPrevisto)} e sobram ${folga + SEMANAS_RESERVA_PROVA} semanas antes da prova para simulados e revisão final.</p>`;
+  } else {
+    const horasNecessarias = horasMedias / p.diasSemana;
+    situacao = `<p class="curso-plano__aviso">Prova em ${formatarData(d.dataProva)}: até lá cabem ${d.limite} semanas de curso (as ${SEMANAS_RESERVA_PROVA} últimas ficam para simulados e revisão final). Com ${formatarHoras(p.horasDia * 60)} por dia o curso precisaria de ${d.necessarias} semanas, então ele foi comprimido em ${d.semanas}, com até <strong>${formatarHoras(horasMedias * 60)} por semana</strong>. Para dar conta, seriam cerca de ${formatarHoras(horasNecessarias * 60)} por dia.</p>`;
+  }
+
   return `
     <div class="card" style="margin-bottom:24px;">
-      <form id="form-curso-inicio" style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end;">
-        <div class="field" style="width:220px;max-width:100%;">
+      <div class="list-card__top" style="margin-bottom:8px;"><strong>Seu plano de estudo</strong><span class="badge badge--accent">${d.semanas} semanas · até ${formatarHoras(horasMedias * 60)}/semana</span></div>
+      <form id="form-curso-inicio" class="curso-plano__form">
+        <div class="field">
           <label for="curso-inicio-data">Início do curso (Semana 1)</label>
           <input type="date" id="curso-inicio-data" value="${escapeHtml(inicioReal)}" />
         </div>
+        <div class="field">
+          <label for="plano-horas">Horas por dia</label>
+          <select id="plano-horas">${opcoes([2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 7, 8, 10], p.horasDia, (v) => formatarHoras(v * 60))}</select>
+        </div>
+        <div class="field">
+          <label for="plano-dias">Dias por semana</label>
+          <select id="plano-dias">${opcoes([5, 6, 7], p.diasSemana, (v) => (v === 6 ? "6 (domingo livre)" : v === 5 ? "5 (fim de semana livre)" : "7"))}</select>
+        </div>
+        <div class="field">
+          <label for="plano-velocidade">Velocidade dos vídeos</label>
+          <select id="plano-velocidade">${opcoes([1, 1.25, 1.5, 1.75, 2], p.velocidadeVideo, (v) => `${String(v).replace(".", ",")}x`)}</select>
+        </div>
         <button class="btn btn--secondary" type="submit">Salvar</button>
       </form>
-      <p style="color:var(--color-text-secondary);font-size:var(--fs-xs);margin-top:8px;">Mudar essa data recomeça o Curso do zero: zera temas estudados, semanas concluídas e revisões do cronograma. Questões e flashcards não são afetados.</p>
+      ${situacao}
+      <p style="color:var(--color-text-secondary);font-size:var(--fs-xs);margin-top:8px;">O tempo de cada semana soma as videoaulas (aula + atualização), a leitura dos resumos (${PALAVRAS_POR_MIN} palavras por minuto), as questões de estudo (30 por tema; 20 nos de prioridade baixa) e as revisões que vencem nela (10 questões cada; 5 revisões nos temas de prioridade alta, 3 nos de média e 2 nos de baixa), a ${MIN_POR_QUESTAO} min por questão. A ordem das aulas nunca muda. Mudar a data de início recomeça o Curso do zero (zera temas estudados e revisões do cronograma; questões e flashcards ficam).</p>
     </div>
+  `;
+}
+
+function formatarHoras(minutos) {
+  const m = Math.round(minutos);
+  const h = Math.floor(m / 60);
+  const resto = m % 60;
+  if (!h) return `${resto} min`;
+  return resto ? `${h}h${String(resto).padStart(2, "0")}` : `${h}h`;
+}
+
+function renderCargaSemana(c) {
+  if (!c) return "";
+  const partes = [
+    ["▶", "vídeo", c.videoMin],
+    ["📖", "leitura", c.leituraMin],
+    ["✍", "questões", c.questoesMin],
+    ["🔄", `${c.revisoes} revis${c.revisoes === 1 ? "ão" : "ões"}`, c.revisoesMin],
+  ].filter(([, , min]) => min > 0);
+  return `<p class="curso-semana__carga"><strong>~${formatarHoras(c.totalMin)}</strong> nesta semana · ${partes.map(([i, rotulo, min]) => `${i} ${rotulo} ${formatarHoras(min)}`).join(" · ")}</p>`;
+}
+
+function renderVideosAula(v) {
+  if (!v || !v.videos?.length) return "";
+  const rotuloTipo = { aula: "Aula", atualizacao: "Atualização", miniaula: "Miniaula", podcast: "Podcast", extra: "Extra" };
+  return `
+    <details class="curso-videos">
+      <summary>▶ Videoaulas: ${formatarHoras(v.videoMin)} na sua velocidade${v.videoRevisaoMin ? ` · revisão em vídeo (miniaula e podcast): ${formatarHoras(v.videoRevisaoMin)}` : ""}</summary>
+      <ul>
+        ${v.videos.map((x) => `<li><span>${escapeHtml(rotuloTipo[x.tipo] || x.tipo)} · ${escapeHtml(x.titulo)}</span><span>${formatarHoras(x.min)}</span></li>`).join("")}
+      </ul>
+    </details>
   `;
 }
 
@@ -263,8 +334,9 @@ function renderAgendaBloco(titulo, bloco) {
           <div class="plan-item" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
             <a href="#/residencia/conteudo/${r.temaId}?de=curso" style="text-decoration:none;color:inherit;flex:1;">
               <span class="plan-item__duration">🔄 ${r.tipo}</span>
-              <span><strong>${escapeHtml(r.tema.titulo)}</strong><br /><span style="color:var(--color-text-secondary);font-size:var(--fs-sm);">Revisão — estudado em ${formatarData(r.dataEstudo)}</span></span>
+              <span><strong>${escapeHtml(r.tema.titulo)}</strong><br /><span style="color:var(--color-text-secondary);font-size:var(--fs-sm);">Revisão — estudado em ${formatarData(r.dataEstudo)}${r.questoesMeta ? ` · questões ${r.questoesFeitas}/${r.questoesMeta}` : ""}</span></span>
             </a>
+            ${r.questoesMeta ? `<a class="btn btn--secondary" href="#/residencia/questoes?temaId=${encodeURIComponent(r.temaId)}&qtd=10&status=nao-respondidas" style="white-space:nowrap;">${r.questoesMeta} questões</a>` : ""}
             <button class="btn btn--secondary" data-concluir-revisao="${r.id}" style="white-space:nowrap;">✓ Concluir</button>
           </div>`
               : ""
@@ -281,7 +353,7 @@ function renderSemana(semana) {
   for (const item of semana.itens) {
     const chave = item.aula || "";
     let grupo = grupos.find((g) => g.aula === chave);
-    if (!grupo) grupos.push((grupo = { aula: chave, topicos: item.aulaTopicos || [], itens: [] }));
+    if (!grupo) grupos.push((grupo = { aula: chave, topicos: item.aulaTopicos || [], videos: item.videosAula, itens: [] }));
     grupo.itens.push(item);
   }
   return `
@@ -291,12 +363,14 @@ function renderSemana(semana) {
         <span class="content-area__count">${semana.concluidos}/${semana.total}</span>
       </summary>
       ${renderBarraProgresso(semana.percentual)}
+      ${renderCargaSemana(semana.carga)}
       ${grupos
         .map(
           (g) => `
         <div class="curso-aula" data-aula-grupo>
           ${g.aula ? `<h3 class="curso-aula__titulo">${escapeHtml(g.aula)}</h3>` : ""}
           ${g.topicos.length ? `<p class="curso-aula__topicos">${g.topicos.map(escapeHtml).join(" · ")}</p>` : ""}
+          ${renderVideosAula(g.videos)}
           <ul class="content-list">
             ${g.itens.map((item) => renderItem(item, semana.numero)).join("")}
           </ul>
@@ -316,11 +390,11 @@ function renderItem(item, semanaNumero) {
         <span class="content-list__title">${item.percentual === 100 ? "✓ " : ""}${escapeHtml(item.titulo)}</span>
         <span style="display:flex;gap:10px;align-items:center;font-size:var(--fs-xs);color:var(--color-text-secondary);white-space:nowrap;">
           ${etapa(true, item.resumoConcluido, "Resumo")}
-          ${etapa(item.temQuestoes, item.questoesFeitas, "Questões")}
+          ${etapa(item.temQuestoes, item.questoesFeitas, `Questões ${item.questoesRespondidas}/${item.questoesMeta}`)}
           ${badgePrioridade(item.prioridadeProva)}
         </span>
       </a>
-      ${item.temQuestoes ? `<a class="acao-mini acao-mini--link" href="#/residencia/questoes?temaId=${encodeURIComponent(item.temaId)}" aria-label="Questões de ${escapeHtml(item.titulo)}">Questões →</a>` : ""}
+      ${item.temQuestoes ? `<a class="acao-mini acao-mini--link" href="#/residencia/questoes?temaId=${encodeURIComponent(item.temaId)}&qtd=${item.questoesMeta >= 30 ? 30 : 20}&status=nao-respondidas" aria-label="Questões de ${escapeHtml(item.titulo)}">Questões →</a>` : ""}
     </li>
   `;
 }

@@ -19,7 +19,7 @@ async function renderTela(container) {
       <div class="page-header">
         <div class="page-header__eyebrow">Residência — Cronograma</div>
         <h1>Sua preparação até a prova</h1>
-        <p class="page-header__desc">Informe a data e a prova-alvo para calcular sua fase de preparação (Construção → Consolidação → Intensificação → Reta Final → Pré-prova) e ajustar o foco das sessões em "Hoje".</p>
+        <p class="page-header__desc">Informe a data e a prova-alvo para calcular sua fase de preparação (Construção → Consolidação → Intensificação → Reta Final → Pré-prova) e ajustar o foco das sessões em "Hoje". O <a href="#/residencia/curso">Curso</a> também se reorganiza sozinho para terminar antes dessa data, deixando as últimas semanas para simulados e revisão final.</p>
       </div>
 
       <div class="card" style="margin-bottom:24px;">
